@@ -1,0 +1,10 @@
+## <a name="learn-more"></a><span data-ttu-id="5334d-101">Дополнительные сведения</span><span class="sxs-lookup"><span data-stu-id="5334d-101">Learn more</span></span>
+
+<span data-ttu-id="5334d-102">Попробуйте это в кратком руководстве:</span><span class="sxs-lookup"><span data-stu-id="5334d-102">Try it out in a quickstart:</span></span>
+
+* <span data-ttu-id="5334d-103">Примеры использования C #</span><span class="sxs-lookup"><span data-stu-id="5334d-103">Quickstarts for C#</span></span>
+  * [<span data-ttu-id="5334d-104">Расширение системы обмена сообщениями с помощью команд на основе действий</span><span class="sxs-lookup"><span data-stu-id="5334d-104">Messaging extension with action-based commands</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)
+  * [<span data-ttu-id="5334d-105">Расширение системы обмена сообщениями с помощью команд на основе поиска</span><span class="sxs-lookup"><span data-stu-id="5334d-105">Messaging extension with search-based commands</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)
+* <span data-ttu-id="5334d-106">Примеры использования JavaScript</span><span class="sxs-lookup"><span data-stu-id="5334d-106">Quickstarts for JavaScript</span></span>
+  * [<span data-ttu-id="5334d-107">Расширение системы обмена сообщениями с помощью команд на основе действий</span><span class="sxs-lookup"><span data-stu-id="5334d-107">Messaging extension with action-based commands</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action)
+  * [<span data-ttu-id="5334d-108">Расширение системы обмена сообщениями с помощью команд на основе поиска</span><span class="sxs-lookup"><span data-stu-id="5334d-108">Messaging extension with search-based commands</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)

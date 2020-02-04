@@ -1,0 +1,33 @@
+---
+title: Руководство по процессу утверждения приложений Microsoft Teams
+description: Описание процесса утверждения приложения, опубликованного в магазине приложений Microsoft Teams
+keywords: Публикация Teams в магазине Office AppSource
+ms.openlocfilehash: 21089e17ca2bd9dfa5cb068d4f592e1c8ef930d3
+ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41675498"
+---
+# <a name="submit-your-app-to-appsource"></a><span data-ttu-id="51bea-104">Передача приложения в AppSource</span><span class="sxs-lookup"><span data-stu-id="51bea-104">Submit your app to AppSource</span></span>
+
+## <a name="teams-app-submission"></a><span data-ttu-id="51bea-105">Отправка приложений Teams</span><span class="sxs-lookup"><span data-stu-id="51bea-105">Teams app submission</span></span>
+
+<span data-ttu-id="51bea-106">Публикация приложения в [AppSource](https://appsource.microsoft.com) делает его доступным в каталоге приложений Teams и в Интернете.</span><span class="sxs-lookup"><span data-stu-id="51bea-106">Publishing  your app to [AppSource](https://appsource.microsoft.com) makes it available in the Teams app catalog and on the web.</span></span> <span data-ttu-id="51bea-107">На высоком уровне процесс отправки приложения в AppSource:</span><span class="sxs-lookup"><span data-stu-id="51bea-107">At a high level, the process for submitting your app to AppSource is:</span></span>
+
+1. <span data-ttu-id="51bea-108">Разработайте приложение, следуя нашим [рекомендациям по проектированию](~/concepts/design/understand-use-cases.md).</span><span class="sxs-lookup"><span data-stu-id="51bea-108">Develop your app following our [design guidelines](~/concepts/design/understand-use-cases.md).</span></span> <span data-ttu-id="51bea-109">Вкладки должны следовать [рекомендациям по проектированию вкладок](~/tabs/design/tabs.md).</span><span class="sxs-lookup"><span data-stu-id="51bea-109">Tabs should follow our [tab design guidelines](~/tabs/design/tabs.md).</span></span> <span data-ttu-id="51bea-110">Боты должны следовать [рекомендациям по созданию ленты](~/bots/design/bots.md).</span><span class="sxs-lookup"><span data-stu-id="51bea-110">Bots should follow the [bot design guidelines](~/bots/design/bots.md).</span></span>
+1. <span data-ttu-id="51bea-111">[Настройте учетную запись разработчика](/office/dev/store/open-a-developer-account) в [центре партнеров](https://support.microsoft.com/help/4499930/partner-center-overview).</span><span class="sxs-lookup"><span data-stu-id="51bea-111">[Set up a developer account](/office/dev/store/open-a-developer-account) in [Partner Center](https://support.microsoft.com/help/4499930/partner-center-overview).</span></span>
+1. <span data-ttu-id="51bea-112">Подготовьте приложение к отправке, следуя нашим [контрольному списку отправки](~/concepts/deploy-and-publish/appsource/prepare/overview.md).</span><span class="sxs-lookup"><span data-stu-id="51bea-112">Prepare your app for submission by following our [submission checklist](~/concepts/deploy-and-publish/appsource/prepare/overview.md).</span></span>
+1. <span data-ttu-id="51bea-113">Ознакомьтесь [с нашими советами по успешной отправке приложений](~/concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md).</span><span class="sxs-lookup"><span data-stu-id="51bea-113">Review our [tips for a successful app submission](~/concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md).</span></span>
+1. <span data-ttu-id="51bea-114">Отправляйте свои пакеты в [AppSource через центр партнеров](/office/dev/store/use-partner-center-to-submit-to-appsource).</span><span class="sxs-lookup"><span data-stu-id="51bea-114">Submit your package to [AppSource through Partner Center](/office/dev/store/use-partner-center-to-submit-to-appsource).</span></span>
+1. <span data-ttu-id="51bea-115">Отслеживайте процесс утверждения на панели мониторинга партнерского центра.</span><span class="sxs-lookup"><span data-stu-id="51bea-115">Track the approval process on your Partner Center dashboard.</span></span> <span data-ttu-id="51bea-116">*Ознакомьтесь* со статьей [Обзор центра партнеров](https://support.microsoft.com/help/4499930/partner-center-overview).</span><span class="sxs-lookup"><span data-stu-id="51bea-116">*See* [Partner Center Overview](https://support.microsoft.com/help/4499930/partner-center-overview).</span></span>
+1. <span data-ttu-id="51bea-117">POST POST — ознакомьтесь с нашими рекомендациями по [обслуживанию и поддержке опубликованного приложения](~/concepts/deploy-and-publish/appsource/post-publish/overview.md).</span><span class="sxs-lookup"><span data-stu-id="51bea-117">Post submission — review our guidance for [Maintaining and supporting your published app](~/concepts/deploy-and-publish/appsource/post-publish/overview.md).</span></span>
+
+>[!NOTE]
+>
+> * <span data-ttu-id="51bea-118">Если ваше приложение Teams содержит Bot, необходимо соблюдать [кодекс поведения](https://aka.ms/bf-conduct), написанный с помощью программы Bot Developer.</span><span class="sxs-lookup"><span data-stu-id="51bea-118">If your Teams app contains a bot, you must comply with the Bot Developer Framework [Code of Conduct](https://aka.ms/bf-conduct).</span></span>
+> * <span data-ttu-id="51bea-119">Если ваше приложение содержит соединитель Office 365, могут применяться дополнительные условия.</span><span class="sxs-lookup"><span data-stu-id="51bea-119">If your app contains an Office 365 Connector, additional terms may apply.</span></span> <span data-ttu-id="51bea-120">*Ознакомьтесь* с [разработкой](https://aka.ms/connectorsdashboard) и [соглашением о разработке приложений](https://sellerdashboard.microsoft.com/Assets/Content/Agreements/Office_Store_Seller_Agreement_20120927.htm)для соединителей.</span><span class="sxs-lookup"><span data-stu-id="51bea-120">*See* [Connectors Developer Dashboard](https://aka.ms/connectorsdashboard) and [App Developer Agreement](https://sellerdashboard.microsoft.com/Assets/Content/Agreements/Office_Store_Seller_Agreement_20120927.htm).</span></span>
+
+## <a name="learn-more"></a><span data-ttu-id="51bea-121">Подробнее</span><span class="sxs-lookup"><span data-stu-id="51bea-121">Learn More</span></span>
+
+[<span data-ttu-id="51bea-122">Политики проверки для приложений Microsoft Teams, отправленные в AppSource (версия 2,2)</span><span class="sxs-lookup"><span data-stu-id="51bea-122">Validation policies for Microsoft Teams apps submitted to AppSource (version 2.2)</span></span>](/office/dev/store/validation-policies#14-microsoft-teams-apps)
