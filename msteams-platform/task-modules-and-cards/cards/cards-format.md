@@ -3,12 +3,12 @@ title: Форматирование текста в карточках
 description: Описание форматирования текста карточки в Microsoft Teams
 keywords: формат карточек Боты Teams
 ms.date: 03/29/2018
-ms.openlocfilehash: 4a467c5b0b21cc3c19977bf7caa25e6790904b10
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: eb8aa13b9e75d08dadd5e615029a9d418c6c7892
+ms.sourcegitcommit: 44ac886c0ca34a16222d3991a61606f8483b8481
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675609"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41783971"
 ---
 # <a name="card-formatting"></a>Форматирование карточки
 
@@ -105,14 +105,16 @@ ms.locfileid: "41675609"
     ]
 }
 ```
+
 ## <a name="mention-support-within-adaptive-cards"></a>Упоминание поддержки в адаптивных картах 
 
 > [!NOTE]
-> Упоминание поддержки в карточках в настоящее время поддерживается только в [режиме предварительного просмотра разработчика](~/resources/dev-preview/developer-preview-intro) .
+> Упоминание поддержки в карточках в настоящее время поддерживается только в [режиме предварительного просмотра разработчика](~/resources/dev-preview/developer-preview-intro.md) .
 
 Теперь расширения Боты и обмена сообщениями могут включать упоминания в содержимом карточки в элементах text и Block. 
 
 ### <a name="constructing-mentions"></a>Создание упоминаний
+
 Чтобы включить в адаптивную карточку упоминание, необходимо, чтобы приложение включало следующие элементы:
 
 * `<at>username</at>`в поддерживаемых элементах адаптивной карточки
@@ -121,6 +123,7 @@ ms.locfileid: "41675609"
 Обратите внимание, что карточки со упоминанием в мобильных клиентах в настоящее время не поддерживаются.
 
 ### <a name="sample-adaptive-card-with-a-mention"></a>Пример адаптивной карточки с упоминанием
+
 ``` json
 {
   "contentType": "application/vnd.microsoft.card.adaptive",
