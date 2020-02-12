@@ -2,12 +2,12 @@
 title: Создание привлекательной страницы сведений о приложении
 description: Сведения о том, какие страницы сведений о приложении необходимы
 keywords: Публикация Teams в магазине Office Publishing Policy AppSource Content
-ms.openlocfilehash: 4a98cca7b1ddd87d79e38d863fd3868171b7749e
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: a7ccacb89e330e55db986595d083790d07e46a53
+ms.sourcegitcommit: 060b486c38b72a3e6b63b4d617b759174082a508
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675263"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953518"
 ---
 # <a name="build-a-great-app-details-page"></a>Создание привлекательной страницы сведений о приложении
 
@@ -41,7 +41,7 @@ ms.locfileid: "41675263"
 
 ## <a name="outline-icon"></a>Значок структуры
 
-Он используется в расширениях обмена сообщениями, помеченных пользователем в качестве избранного, а также в левом меню навигации. Убедитесь, что он простой и распознаваемый.
+Он используется в расширениях обмена сообщениями, помеченных пользователем в качестве избранного, а также в левом меню навигации. Убедитесь, что он простой и распознаваемый. Значок структуры должен содержать только белый цвет и прозрачность (без других цветов). Для получения требуемых спецификаций, *Ознакомьтесь* [со статьей Создание пакета приложения для значков приложения Microsoft Teams](../../../build-and-test/apps-package.md#icons).
 
 ![Значок приложения в представлении](~/assets/images/store-detail-page/AppIconOutline-02.png)
 !["хранилище структуры приложения" значок структуры аппстудио View](~/assets/images/store-detail-page/AppIconOutline-01.png)
