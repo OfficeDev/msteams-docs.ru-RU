@@ -1,4 +1,4 @@
-- name: Общие сведения
+- name: Обзор
   expanded: true
   items:
     - name: Что такое приложения Microsoft Teams?
@@ -79,7 +79,7 @@
             - name: Подготовка приложения
               items:
                 - name: Контрольный список перед отправкой
-                  href: concepts/deploy-and-publish/appsource/prepare/overview.md
+                  href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
                 - name: Контрольный список для страницы сведений о приложении
                   href: concepts/deploy-and-publish/appsource/prepare/detail-page-checklist.md
                 - name: Контрольный список манифеста приложения
@@ -98,7 +98,7 @@
           href: concepts/authentication/authentication.md
         - name: Настройка поставщиков удостоверений
           href: concepts/authentication/configure-identity-provider.md
-- name: 'Взаимодействия, ориентированные на задачи, с расширениями обмена сообщениями'
+- name: Целенаправленные взаимодействия с использованием расширений для обмена сообщениями
   items:
     - name: Что такое расширения обмена сообщениями?
       href: messaging-extensions/what-are-messaging-extensions.md
@@ -162,11 +162,11 @@
       items:
         - name: Создание почтового робота для Teams
           href: bots/how-to/create-a-bot-for-teams.md
-        - name: Conversations
+        - name: Беседы
           items:
             - name: Общие сведения о беседах
               href: bots/how-to/conversations/conversation-basics.md
-            - name: Подписаться на события беседы
+            - name: Подписка на события беседы
               href: bots/how-to/conversations/subscribe-to-conversation-events.md
             - name: Беседы по каналам и группам
               href: bots/how-to/conversations/channel-and-group-conversations.md
@@ -308,7 +308,7 @@
           href: webhooks-and-connectors/how-to/add-outgoing-webhook.md
         - name: Создание соединителя O365
           href: webhooks-and-connectors/how-to/connectors-creating.md
-        - name: Отправка сообщений в соединители и веб-перехватчики
+        - name: Отправка сообщений соединителям и веб-перехватчикам
           href: webhooks-and-connectors/how-to/connectors-using.md
 - name: Ресурсы
   items:
@@ -317,7 +317,7 @@
       items:
         - name: Создание бота
           href: resources/bot-v3/bots-create.md
-        - name: Conversations
+        - name: Беседы
           href: resources/bot-v3/bot-conversations/bots-conversations.md
           items:
             - name: Личные беседы с Боты
@@ -342,6 +342,8 @@
           href: resources/bot-v3/bots-menus.md
         - name: Боты с вкладками
           href: resources/bot-v3/bots-with-tabs.md
+        - name: Форматирование сообщений Bot
+          href: resources/bot-v3/bots-text-formats.md
         - name: Тестирование ленты
           href: resources/bot-v3/bots-test.md
     - name: Расширения системы обмена сообщениями — v3 SDK
