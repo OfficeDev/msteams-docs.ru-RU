@@ -2,12 +2,12 @@
 title: Использование модулей задач в Microsoft Teams Боты
 description: Использование модулей задач с Microsoft Teams Боты, в том числе карточек, карты, адаптивные карты и ссылки на Bot Framework.
 keywords: модули задач Teams Боты
-ms.openlocfilehash: 3a0e4591dbb26ff4afa8cc06edc0a03365da0eca
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 09b0ede85c613d5724c6ecddbccd2a59c43cad74
+ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675368"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228096"
 ---
 # <a name="using-task-modules-from-microsoft-teams-bots"></a>Использование модулей задач из Microsoft Teams Боты
 
@@ -76,8 +76,6 @@ ms.locfileid: "41675368"
 | `value`  | Полезные данные, определенные разработчиком. Как правило, структура `value` объекта отражается на том, что было отправлено из Teams. В этом случае, однако, это отличается, так как мы хотим`task/fetch`поддерживать динамическую выборку () из обеих действий`value`: Bot Framework ( `Action.Submit` ) и`data`адаптивных карт (), и нам нужен способ `context` для обмена командами с Bot в дополнение к тому `value` / `data`, что было включено в.<br/><br/>Для этого необходимо объединить два объекта в родительский.<br/><br/><pre>{<br/>  "context": {<br/>    "theme": "default" &vert; "dark" &vert; "contrast",<br/>  },<br/>  "data": [value field from Bot Framework card] &vert; [data field from Adaptive Card] <br/>}</pre>  |
 
 ## <a name="example-receiving-and-responding-to-taskfetch-and-tasksubmit-invoke-messages---nodejs"></a>Пример: получение и ответ на сообщения о задачах, получении и задачах и вызываемых запросах — Node. js
-
-Работа с `invoke` сообщениями в среде Bot может быть немного сложнее, так как в пакет SDK для ленты нет формальной поддержки. Для простоты в Teams были созданы `onInvoke()` вспомогательные функции в [пакете ботбуилдер-Teams NPM (для Node. js)](https://www.npmjs.com/package/botbuilder-teams). В этом примере ниже показано, как это сделать:
 
 > [!NOTE]
 > Приведенный ниже пример кода был изменен между техническим и окончательным выпуском этой функции: схема `task/fetch` запроса изменилась [на следующий пример.](#payload-of-taskfetch-and-tasksubmit-messages) Это значит, что документация была правильной, но не была реализована. Ознакомьтесь с `// for Technical Preview [...]` комментариями, которые вы изменили.
@@ -159,6 +157,8 @@ private async onInvoke(event: builder.IEvent, cb: (err: Error, body: any, status
     }
 }
 ```
+
+** [Пример кода для модуля задач Microsoft Teams — примеры кода NodeJS](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs/blob/master/src/TeamsBot.ts) и [Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).
 
 ## <a name="example-receiving-and-responding-to-taskfetch-and-tasksubmit-invoke-messages---c"></a>Пример: получение и ответ на сообщения о задачах, выдачах и задачах и запросах Invoke-C #
 

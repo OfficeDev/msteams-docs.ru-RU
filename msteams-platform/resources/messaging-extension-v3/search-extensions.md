@@ -2,13 +2,13 @@
 title: Поиск с расширениями обмена сообщениями
 description: Описание разработки расширений для обмена сообщениями на основе поиска
 keywords: службы расширения обмена сообщениями Teams.
-ms.date: 05/20/2019
-ms.openlocfilehash: 7baf55d7184784a436ac5a3d6b82db233389bca7
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.date: 07/20/2019
+ms.openlocfilehash: c220d976fa3e9920c8d4bb332a793b23d9b294c4
+ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675454"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228047"
 ---
 # <a name="search-with-messaging-extensions"></a>Поиск с расширениями обмена сообщениями
 
@@ -135,7 +135,7 @@ ms.locfileid: "41675454"
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.channel.id`| Идентификатор канала (если запрос был сделан в канале). |
 |`channelData.team.id`| Идентификатор группы (если запрос был сделан в канале). |
-|`clientInfo`лицо | Дополнительные метаданные о клиенте, такие как языковой стандарт/язык и тип клиента. |
+|`clientInfo`|Необязательные метаданные о клиентском программном обеспечении, используемом для отправки сообщения пользователя. Сущность может содержать два свойства:<br>В `country` этом поле содержится обнаруженное пользователем расположение.<br>`platform` Поле описывает клиентскую платформу обмена сообщениями. <br>Дополнительную информацию можно *узнать* в статье [типы не-IRI, клиентинфо](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#clientinfo).|
 
 Собственно параметры запроса находятся в объекте value, который включает следующие свойства:
 
@@ -183,11 +183,9 @@ ms.locfileid: "41675454"
   },
   "entities": [
     {
-      "locale": "en-US",
+    "type": "clientInfo",
       "country": "US",
-      "platform": "Windows",
-      "timezone": "America/Los_Angeles",
-      "type": "clientInfo"
+      "platform": "Windows"
     }
   ]
 }
@@ -524,10 +522,10 @@ ms.locfileid: "41675454"
     "timestamp": "2017-04-26T05:18:25.629Z",
     "localTimestamp": "2017-04-25T22:18:25.629-07:00",
     "entities": [{
-        "locale": "en-US",
+        "type": "clientInfo",
         "country": "US",
         "platform": "Web",
-        "type": "clientInfo"
+        
     }],
     "text": "",
     "attachments": [],
@@ -602,8 +600,6 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 
 ### <a name="nodejs"></a>Node.js
 
-[Расширения Teams](https://www.npmjs.com/package/botbuilder-teams) для пакета SDK построителя для Node. js предоставляют вспомогательные объекты и методы для упрощения приема, обработки и реагирования на запросы расширения системы обмена сообщениями.
-
 #### <a name="example-code-in-nodejs"></a>Пример кода в Node. js
 
 ```javascript
@@ -659,3 +655,4 @@ class App {
 const app = new App();
 app.run();
 ```
+В этой статье *также приведены* [примеры кода Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).

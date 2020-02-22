@@ -2,12 +2,12 @@
 title: Запуск действий с расширениями обмена сообщениями
 description: Создайте расширения для обмена сообщениями на основе действий, чтобы разрешить пользователям запускать внешние службы.
 keywords: службы расширения обмена сообщениями Teams.
-ms.openlocfilehash: 9b7d3bd53ba45d55e80f858a3c89be265c13482b
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 1a38b4f7bfb413defd28950ca9b97f7411cf9c09
+ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675457"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228033"
 ---
 # <a name="initiate-actions-with-messaging-extensions"></a>Запуск действий с расширениями обмена сообщениями
 
@@ -496,9 +496,7 @@ Bot также может отвечать с ответом на запрос �
 
 При ответе на `edit` запрос необходимо ответить на `task` отклик со значениями, заполненными данными, которые уже были отправлены пользователем. При ответе на `send` запрос необходимо отправить сообщение каналу, содержащему завершенную адаптивную карту.
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
-
-В приведенном ниже примере показано, как это сделать с помощью [пакета SDK построителя для Team. js](https://www.npmjs.com/package/botbuilder-teams).
+# <a name="typescriptnodejs"></a>[TypeScript/Node. js](#tab/typescript)
 
 ```typescript
 teamChatConnector.onComposeExtensionSubmitAction((
@@ -558,7 +556,9 @@ teamChatConnector.onComposeExtensionSubmitAction((
     });
 ```
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+В этой статье *также приведены* [примеры кода Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).
+
+# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
 
 В этом примере показан этот процесс с помощью [пакета SDK Microsoft. Bot. Connector. Teams (v3)](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams).
 

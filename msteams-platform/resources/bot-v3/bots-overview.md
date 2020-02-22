@@ -3,12 +3,12 @@ title: Добавление боты в приложения Microsoft Teams
 description: В этой статье описывается, как приступить к разработке боты в Microsoft Teams.
 keywords: Разработка Teams Боты
 ms.date: 05/20/2018
-ms.openlocfilehash: 0ecb268c34275e958103c9905b2ed1f0858cafda
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 58221e94520ef6e748bbd6c17fa7933813874c56
+ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675202"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228054"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление боты в приложения Microsoft Teams
 
@@ -42,9 +42,9 @@ Microsoft Teams поддерживает большинство [Microsoft Bot F
 
 Расширения пакета SDK устанавливают зависимости, в том числе пакет SDK для программы "Bot Builder".
 
-* **.NET** Чтобы использовать расширения Microsoft Teams для пакета SDK построителя построителя для .NET, установите пакет NuGet [Microsoft. Bot. Connector. Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) в проекте Visual Studio.
-* **Node. js** для использования расширений Microsoft Teams для пакета SDK построителя для Node. js добавьте пакет [ботбуилдер (Teams NPM)](https://www.npmjs.com/package/botbuilder-teams) .
-* **Исходный код** Полный исходный код для расширений можно найти в репозитории [ботбуилдер — MicrosoftTeams](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams) на сайте GitHub.
+* **.NET** Чтобы использовать расширения Microsoft Teams для пакета SDK построителя построителя для .NET, установите пакет NuGet [Microsoft. Bot. Connector. Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) в проекте Visual Studio. Для разработки Node. js функция Ботбуилдер для Microsoft Teams встроена в [пакет SDK для Bot Framework](https://github.com/microsoft/botframework-sdk) версии 4.6.
+
+В этой статье *также приведены* [примеры кода Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).
 
 > [!IMPORTANT]
 > Вы можете разрабатывать приложения Teams в любой другой технологии веб-программирования и напрямую вызывать [API REST для REST Framework](/bot-framework/rest-api/bot-framework-rest-overview) , но вы должны выполнить всю обработку маркеров самостоятельно.

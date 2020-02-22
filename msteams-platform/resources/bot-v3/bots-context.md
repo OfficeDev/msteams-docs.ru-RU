@@ -3,12 +3,12 @@ title: Получение контекста для ленты
 description: Сведения о том, как получить контекст для боты в Microsoft Teams
 keywords: контекст Боты Teams
 ms.date: 05/20/2019
-ms.openlocfilehash: 2dea6fd51e7274fa899d9ae882441a21618d7e09
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 8f054661664850ffb843714230e209c8e4737f0a
+ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675653"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228006"
 ---
 # <a name="get-context-for-your-microsoft-teams-bot"></a>Получение контекста для ленты Microsoft Teams
 
@@ -17,7 +17,7 @@ ms.locfileid: "41675653"
 Ваш робот может получить доступ к дополнительному контексту для команды или чата, например для профиля пользователя. Эти сведения можно использовать, чтобы расширить функциональные возможности Bot и предоставить более персонализированный интерфейс.
 
 > [!NOTE]
-> Для этих специальных&ndash;API-интерфейсов ленты Microsoft Teams можно получить доступ через свои расширения для пакета SDK для Bot Builder. Для C#/.нет Скачайте наш пакет NuGet [Microsoft. Bot. Connector. Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) . Для разработки Node. js можно установить пакет NPM [ботбуилдер — Teams](https://www.npmjs.com/package/botbuilder-teams) . Оба комплекта предназначены для целевого построителя ленты v3.
+> Для этих специальных&ndash;API-интерфейсов ленты Microsoft Teams можно получить доступ через свои расширения для пакета SDK для Bot Builder. Для C#/.нет Скачайте наш пакет NuGet [Microsoft. Bot. Connector. Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) . Для разработки Node. js функция Ботбуилдер для Microsoft Teams встроена в [пакет SDK для Bot Framework](https://github.com/microsoft/botframework-sdk) версии 4.6.
 
 ## <a name="fetching-the-team-roster"></a>Получение списка команд
 
@@ -90,8 +90,6 @@ await context.PostAsync($"People in this conversation: {sb.ToString()}");
 
 ### <a name="nodejstypescript-example"></a>Пример Node. js/TypeScript
 
-В следующем примере используются [расширения Microsoft Teams для пакета SDK построителя ленты для Node. js](https://www.npmjs.com/package/botbuilder-teams).
-
 ```typescript
 
 [...]
@@ -112,6 +110,8 @@ connector.fetchMembers(
   }
 );
 ```
+
+В этой статье *также приведены* [примеры кода Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).
 
 ## <a name="fetching-user-profile-or-roster-in-personal-or-group-chat"></a>Получение профиля пользователя или списка в личном или группом чате
 

@@ -3,12 +3,12 @@ title: Беседы в каналах и группах для общения с
 description: Описывает сквозной сценарий, в котором беседа с Bot в канале в Microsoft Teams
 keywords: сценарии команд каналы ленты
 ms.date: 06/25/2019
-ms.openlocfilehash: 168abd1e3894b95983eec01541d470f1b5384a66
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: d2d72bdba43de6ebb10c7504dd309459cb09d56c
+ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675220"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228007"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-microsoft-teams-bot"></a>Беседы в каналах и группах для общения с помощью робота Microsoft Teams
 
@@ -136,8 +136,6 @@ await client.Conversations.ReplyToActivityAsync(replyActivity);
 
 #### <a name="nodejs-example"></a>Пример Node. js
 
-В этом примере используется пакет NPM [ботбуилдер — Teams](https://www.npmjs.com/package/botbuilder-teams) .
-
 ```javascript
 // User to mention
 var toMention: builder.IIdentity = {
@@ -199,3 +197,5 @@ session.send(generalMessage);
 ## <a name="accessing-groupchat-or-channel-scope"></a>Доступ к области groupChat или канала
 
 Ваш робот может выполнять больше, чем отправлять и получать сообщения в группах и в Teams. Например, он также может получить список элементов, включая сведения о их профилях, а также список каналов. Чтобы узнать больше, ознакомьтесь со [статьей получение контекста для робота Microsoft Teams](~/resources/bot-v3/bots-context.md) .
+
+В этой статье *также приведены* [примеры кода Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).
