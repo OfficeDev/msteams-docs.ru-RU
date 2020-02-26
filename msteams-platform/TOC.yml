@@ -369,5 +369,7 @@
       href: resources/schema/manifest-schema.md
     - name: Схема JSON файла локализации
       href: resources/schema/localization-schema.md
+    - name: Руководство по участнику Teams
+      href: resources/teams-contributor-reference.md
 - name: Поддержка и обратная связь
   href: feedback.md
