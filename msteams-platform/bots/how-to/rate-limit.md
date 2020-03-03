@@ -2,12 +2,12 @@
 title: Ограничение скорости
 description: Ограничения скорости и рекомендации в Microsoft Teams
 keywords: ограничения скорости Боты Teams
-ms.openlocfilehash: 4e9efab539ec7817d259fd6c149c438ba02e3ce5
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 145f65a7e17b833e11631dfc219d9f5732f43bc6
+ms.sourcegitcommit: 6c692734a382865531a83b9ebd6f604212f484fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675293"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42371767"
 ---
 # <a name="optimize-your-bot-rate-limiting-and-best-practices-in-microsoft-teams"></a>Оптимизация ограничения скорости и рекомендаций в Microsoft Teams.
 
@@ -46,26 +46,29 @@ catch (HttpOperationException ex)
 
 Ниже приведен пример с использованием экспоненциального переработки через временный блок обработки сбоев.
 
-Вы можете выполнять операции перегрузки и повторных попыток, используя [временные библиотеки обработки ошибок](/previous-versions/msp-n-p/hh680901(v=pandp.50)). Рекомендации по получению и установке пакета NuGet приведены в статье [Добавление временного блока обработки сбоев в решение](/previous-versions/msp-n-p/hh680891(v=pandp.50))
+Вы можете выполнять операции перегрузки и повторных попыток, используя [временную обработку сбоев](/previous-versions/msp-n-p/hh675232%28v%3dpandp.10%29). Рекомендации по получению и установке пакета NuGet приведены в статье [Добавление временного блока обработки сбоев в решение](/previous-versions/msp-n-p/dn440719(v=pandp.60)?redirectedfrom=MSDN). *См. также* [временная обработка сбоев](/azure/architecture/best-practices/transient-faults).
 
 ```csharp
 public class BotSdkTransientExceptionDetectionStrategy : ITransientErrorDetectionStrategy
-{
-    // List of error codes to retry on
-    List<int> transientErrorStatusCodes = new List<int>() { 429 };
-
-    public bool IsTransient(Exception ex)
     {
-        var httpOperationException = ex as HttpOperationException;
-        if (httpOperationException != null)
-        {
-            return httpOperationException.Response != null &&
-                    transientErrorStatusCodes.Contains((int) httpOperationException.Response.StatusCode);
-        }
+        // List of error codes to retry on
+        List<int> transientErrorStatusCodes = new List<int>() { 429 };
 
-        return false;
+        public bool IsTransient(Exception ex)
+        {
+            if (ex.Message.Contains("429"))
+                return true;
+
+            var httpOperationException = ex as HttpOperationException;
+            if (httpOperationException != null)
+            {
+                return httpOperationException.Response != null &&
+                        transientErrorStatusCodes.Contains((int)httpOperationException.Response.StatusCode);
+            }
+
+            return false;
+        }
     }
-}
 ```
 
 ## <a name="example-backoff"></a>Пример: отход
@@ -83,10 +86,10 @@ var exponentialBackoffRetryStrategy = new ExponentialBackoff(3, TimeSpan.FromSec
 
 
 // Define the Retry Policy
-var retryPolicy = new RetryPolicy(new BotSdkTransientExceptionDetectionStrategy(), fixedIntervalRetryStrategy);
+var retryPolicy = new RetryPolicy(new BotSdkTransientExceptionDetectionStrategy(), exponentialBackoffRetryStrategy);
 
 //Execute any bot sdk action
-await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsync((Activity)reply)).ConfigureAwait(false);
+await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsync( (Activity)reply) ).ConfigureAwait(false);
 ```
 
 Выполнение `System.Action` метода также можно выполнить с помощью политики повторных попыток, описанной выше. Указанная библиотека также позволяет указать фиксированный интервал или линейный механизм отрезков.
@@ -104,26 +107,22 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 
 | **Сценарий** | **Период времени (с)** | **Максимальное число разрешенных операций** |
 | --- | --- | --- |
-| NewMessage | 1  | 7  |
-| NewMessage | 2  | 8  |
-| NewMessage | более | 60 |
-| NewMessage | 3600 | 1800 |
-| упдатемессаже | 1  | 7  |
-| упдатемессаже | 2  | 8  |
-| упдатемессаже | более | 60 |
-| упдатемессаже | 3600 | 1800 |
-| невсреад | 1  | 7  |
-| невсреад | 2  | 8  |
-| невсреад | более | 60 |
-| невсреад | 3600 | 1800 |
-| жетсреадмемберс | 1  | 14  |
-| жетсреадмемберс | 2  | 16  |
-| жетсреадмемберс | более | 120 |
-| жетсреадмемберс | 3600 | 3600 |
-| Поток | 1  | 14  |
-| Поток | 2  | 16  |
-| Поток | более | 120 |
-| Поток | 3600 | 3600 |
+|| 1,1 | см |
+| Отправить беседу | 2 | 8,5 |
+| Отправить беседу | более | 60 |
+| Отправить беседу | 3600 | 1800 |
+| Создание беседы | 1,1 | см |
+| Создание беседы | 2 | 8,5 |
+| Создание беседы | более | 60 |
+| Создание беседы | 3600 | 1800 |
+| Получение участников беседы| 1,1 | 14  |
+| Получение участников беседы| 2 | 16  |
+| Получение участников беседы| более | 120 |
+| Получение участников беседы| 3600 | 3600 |
+| Получение бесед | 1,1 | 14  |
+| Получение бесед | 2 | 16  |
+| Получение бесед | более | 120 |
+| Получение бесед | 3600 | 3600 |
 
 ## <a name="per-thread-limit-for-all-bots"></a>Предельное количество потоков для всех Боты
 
@@ -131,16 +130,16 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 
 | **Сценарий** | **Период времени (с)** | **Максимальное число разрешенных операций** |
 | --- | --- | --- |
-| NewMessage | 1  | 14  |
-| NewMessage | 2  | 16  |
-| упдатемессаже | 1  | 14  |
-| упдатемессаже | 2  | 16  |
-| невсреад | 1  | 14  |
-| невсреад | 2  | 16  |
-| жетсреадмемберс | 1  | 8 |
-| жетсреадмемберс | 2  | 32 |
-| Поток | 1  | 8 |
-| Поток | 2  | 32 |
+| Отправить беседу | 1,1 | 14  |
+| Отправить беседу | 2 | 16  |
+| Создание беседы | 1,1 | 14  |
+| Создание беседы | 2 | 16  |
+| креатеконверсатион| 1,1 | 14  |
+| креатеконверсатион| 2 | 16  |
+| Получение участников беседы| 1,1 | 8 |
+| Получение участников беседы| 2 | 32 |
+| Получение бесед | 1,1 | 8 |
+| Получение бесед | 2 | 32 |
 
 ## <a name="bot-per-data-center-limit"></a>Предельное значение для ленты в центре обработки данных
 
@@ -148,6 +147,6 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 
 |**Период времени (с)** | **Максимальное число разрешенных операций** |
 | --- | --- |
-| 1  | двадцать |
+| 1,1 | двадцать |
 | 1800 | 8000 |
 | 3600 | 15000 |
