@@ -2,12 +2,12 @@
 title: Шаблоны приложений Microsoft Teams
 description: Ссылки и описания шаблонов приложений для платформы Microsoft Teams
 keywords: Демонстрация примеров шаблонов Microsoft Teams
-ms.openlocfilehash: 36f04727828b3bfa3be9b808cafcd33c11bf2c0d
-ms.sourcegitcommit: 646a8224523be7db96f9686e22d420d62d55d4b4
+ms.openlocfilehash: 7bbd1093a7d3d2ed29498ce79051549621784b57
+ms.sourcegitcommit: a955121927090ee01173d70628c388991f53d23b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42365271"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42416854"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "42365271"
 
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-company-communicator-app)
 
-![Вопросы и ответы в формате GIF](~/assets/images/CompanyCommunicatorCompose.png)
+![Вопросы и ответы в формате GIF](../assets/images/CompanyCommunicatorCompose.png)
 
 ## <a name="faq-plus"></a>Вопросы и ответы плюс
 
@@ -61,7 +61,7 @@ ms.locfileid: "42365271"
 >
 >
 
-![Вопросы и ответы в формате GIF](~/assets/images/FAQPlusEndUser.gif)
+![Вопросы и ответы в формате GIF](../assets/images/FAQPlusEndUser.gif)
 
 ## <a name="hr-support"></a>Поддержка управления персоналом
 
@@ -69,7 +69,7 @@ ms.locfileid: "42365271"
 
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-hrsupport-app)
 
-![Поддержка управления персоналом](~/assets/images/expert-user.png)
+![Поддержка управления персоналом](../assets/images/expert-user.png)
 
 ## <a name="list-search"></a>Поиск в списке
 
@@ -79,7 +79,7 @@ ms.locfileid: "42365271"
 
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-list-search-app)
 
-![Список приложений поиска](~/assets/images/list-search-template.png)
+![Список приложений поиска](../assets/images/list-search-template.png)
 
 ## <a name="custom-stickers"></a>Пользовательские наклейки
 
@@ -89,7 +89,7 @@ ms.locfileid: "42365271"
 
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-stickers-app)
 
-![Приложение для наклеек](~/assets/images/stickers.png)
+![Приложение для наклеек](../assets/images/stickers.png)
 
 ## <a name="icebreaker"></a>Точки соприкосновения
 
@@ -99,13 +99,13 @@ ms.locfileid: "42365271"
 
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-icebreaker-app)
 
-![Приложение ицебреакер](~/assets/images/icebreaker.png)
+![Приложение ицебреакер](../assets/images/icebreaker.png)
 
 ## <a name="scrum-status-bot"></a>Scrum Status Bot
 
 Scrum-Bot состояния — это простой робот с помощником по Scrum, который позволит пользователям выполнять асинхронные предварительные собрания и предоставлять пользователям возможность совместного использования своих ежедневных обновлений. Он предназначен для работы с участниками группы в Teams и всеми участниками, которые могут участвовать в Scrum-связи. Один может запускать и завершать Scrum, а также просматривать обновления, внесенные другими пользователями в работающем Scrum.
 
-[Git на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-app-scrumstatus/)
+[Git на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-app-scrumstatus)
 
 ![Scrum Status Bot](https://raw.githubusercontent.com/wiki/OfficeDev/microsoft-teams-app-scrumstatus/images/StartScrum.jpg)
 
@@ -135,10 +135,27 @@ Book-a-комната — это [робот Microsoft Teams](../bots/what-are-b
 
 ## <a name="attendance-app"></a>Приложение для посещения
 
-Приложение для посещения — это вкладка " [Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/embed-teams-appdesigned) ", которую можно закрепить в команде. Он предназначен для записи сведений о присутствии, как правило, в настройках, таких как среды обучения и обучения. Пользователи могут пометить или изменить сведения о присутствии в течение 30 дней, а также просмотреть обобщенные отчеты о посещаемости для целой группы или отдельных участников.
+Приложение для посещения — это вкладка " [Power Apps](/powerapps/maker/canvas-apps/embed-teams-app) ", которую можно закрепить в команде. Он предназначен для записи сведений о присутствии, как правило, в настройках, таких как среды обучения и обучения. Пользователи могут пометить или изменить сведения о присутствии в течение 30 дней, а также просмотреть обобщенные отчеты о посещаемости для целой группы или отдельных участников.
 
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-attendance)
 
 ![Демонстрация приложения для посещения](../assets/images/attendance-app.png)
+
+## <a name="associate-insights-app"></a>Приложение, связанное с аналитическими сведениями
+
+Сопоставить Insights — это шаблон [Power Apps](/powerapps/maker/canvas-apps/embed-teams-app) , который позволяет сотрудникам задействование напрямую собирать и передавать мнения пользователей, мнений и восприятия. Задействование сотрудники часто являются первым представителем компании для общения с клиентами из одной точки контакта "один к одному". Собранные данные можно совместно использовать и совместно использовать в бизнес-группах, например, с помощью вкладки Power BI Teams, чтобы улучшить продукт и улучшить взаимодействие с пользователем.
+
+[Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-associateinsights)
+
+:::row:::
+  :::column span="2":::
+    ![Представление отзывов о созданном приложении](../assets/images/associate-insights-app.png)  
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
+    ![Представление Power BI, созданное приложением](../assets/images/associate-insights-app2.png)
+:::column-end:::
+:::row-end:::
 
 Есть ли идея для шаблона приложения, который вы хотели бы увидеть? Сообщите [нам о своих возможностях](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2_7qFm_lcZAr4eqEhnLsZ9UMVZGT1lCT0FXUDdZMUM0RkpBS1BESTAwWC4u).
