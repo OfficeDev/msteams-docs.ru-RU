@@ -2,12 +2,12 @@
 title: Создание привлекательной страницы сведений о приложении
 description: Сведения о том, какие страницы сведений о приложении необходимы
 keywords: Публикация Teams в магазине Office Publishing Policy AppSource Content
-ms.openlocfilehash: a7ccacb89e330e55db986595d083790d07e46a53
-ms.sourcegitcommit: 060b486c38b72a3e6b63b4d617b759174082a508
+ms.openlocfilehash: 741bc7b623e97b338c54c4dcfec5b1ca75201867
+ms.sourcegitcommit: 2a84a3c8b10771e37ce51bf603a967633947a3e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953518"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42582869"
 ---
 # <a name="build-a-great-app-details-page"></a>Создание привлекательной страницы сведений о приложении
 
@@ -29,22 +29,22 @@ ms.locfileid: "41953518"
 
 * Не используйте универсальные термины или имена, аналогичные существующим именам приложений.
 * Не используйте "Teams", "Microsoft" или "App" в имени приложения.
-![Представление имени приложения в](~/assets/images/store-detail-page/AppName-02.png)
-![хранилище имен приложений аппстудио View](~/assets/images/store-detail-page/AppName-01.png)
+![Имя приложения для представления](~/assets/images/store-detail-page/AppName-02.png)
+!["имя приложения" представление App Studio](~/assets/images/store-detail-page/AppName-01.png)
 
 ## <a name="color-icon"></a>Значок цвета
 
 Это один из первых элементов, которые видят пользователи. Он должен быть привлекательным и глазным при прокрутке в магазине приложений. Убедитесь, что он является хорошим первым впечатлением, а также передает изображение и цель вашей торговой марки. В AppSource есть дополнительные советы по [созданию согласованного визуального идентификатора](/office/dev/store/create-effective-office-store-listings#create-a-consistent-visual-identity).
 
-![Значок приложения представления](~/assets/images/store-detail-page/AppIcon-02.png)
-![хранилища значков приложений аппстудио View](~/assets/images/store-detail-page/AppIcon-01.png)
+![Приложение представления](~/assets/images/store-detail-page/AppIcon-02.png)
+![хранилища значков приложений значок представления App Studio](~/assets/images/store-detail-page/AppIcon-01.png)
 
 ## <a name="outline-icon"></a>Значок структуры
 
 Он используется в расширениях обмена сообщениями, помеченных пользователем в качестве избранного, а также в левом меню навигации. Убедитесь, что он простой и распознаваемый. Значок структуры должен содержать только белый цвет и прозрачность (без других цветов). Для получения требуемых спецификаций, *Ознакомьтесь* [со статьей Создание пакета приложения для значков приложения Microsoft Teams](../../../build-and-test/apps-package.md#icons).
 
 ![Значок приложения в представлении](~/assets/images/store-detail-page/AppIconOutline-02.png)
-!["хранилище структуры приложения" значок структуры аппстудио View](~/assets/images/store-detail-page/AppIconOutline-01.png)
+!["хранилище структуры приложения" значок приложения структура представление](~/assets/images/store-detail-page/AppIconOutline-01.png)
 
 ## <a name="short-description"></a>Краткое описание
 
@@ -64,7 +64,7 @@ ms.locfileid: "41953518"
 
 Ниже представлено представление в [app Studio](https://aka.ms/InstallTeamsAppStudio):
 
-![Представление "краткое описание аппстудио"](~/assets/images/store-detail-page/ShortDescription-01.png)
+![Краткое описание представления App Studio](~/assets/images/store-detail-page/ShortDescription-01.png)
 
 ## <a name="long-description"></a>Подробное описание
 
@@ -80,6 +80,22 @@ ms.locfileid: "41953518"
 * Используйте Active Voice и говорите пользователям напрямую.
 * Используйте точки маркеров для перечисления своих функций.
 * Добавьте ссылку справки или поддержки, чтобы пользователи могли узнать, как связаться с вами, если у них возникнут вопросы.
+* Убедитесь, что вы вызвоните ограничения или ограничения для улучшения рекомендаций пользователя.
+
+
+>[!NOTE]
+>Teams поддерживает следующий синтаксис Markdown:  
+> **Ссылки**. `[title](url/address/here)`.  
+>**Изображения**. `![alt text](url/address/here)`.  
+> **Полужирный**. `**bold text**`   `__bold text__`.  
+> **Курсив**. `*italicized text*`  `_italicized text`.  
+>**[Упорядоченные списки](https://www.markdownguide.org/basic-syntax/#ordered-lists)**<br>
+>`1. first`  <br>` 1. second `  <br>`1.third`<br>
+>**[Неупорядоченный список](https://www.markdownguide.org/basic-syntax/#unordered-lists)**<br>
+` - short` <br>`- bulleted` <br>`- list`<br>
+>**Новая строка**. `Place two empty spaces or a backslash \`  \
+`at the end of a line.`<br>
+ >**Переключен.** Используйте встроенную обратную косую черту для экранирования специальных символов.. `\*asterisk`.
 
 **Запреты**
 
@@ -89,11 +105,11 @@ ms.locfileid: "41953518"
 
 Ниже представлено представление в [app Studio](https://aka.ms/InstallTeamsAppStudio):
 
-![Представление аппстудио для подробного описания приложения](~/assets/images/store-detail-page/LongDescription-01.png)
+![Представление App Studio для подробного описания приложения](~/assets/images/store-detail-page/LongDescription-01.png)
 
 ## <a name="screenshots"></a>Снимки экрана
 
-Снимки экрана, которые передаются на [панель мониторинга](https://sellerdashboard.microsoft.com/Registration) продаж, отображаются как в [AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) , так и в списке приложения в клиенте Teams. Они предоставляют визуальный обзор приложения вместе с описанием приложения.
+Снимки экрана, которые передаются в [центре партнеров](https://partner.microsoft.com) , отображаются как в [AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) , так и в списке приложения в клиенте Teams. Они предоставляют визуальный обзор приложения вместе с описанием приложения.
 Можно предоставить от одного до пяти снимков изображения в формате PNG, JPG или GIF. Размер снимков экрана должен быть 1366 x 768 пикселей с максимальным размером 1024 КБ.
 
 **Сделайте следующее:**
@@ -118,7 +134,7 @@ ms.locfileid: "41953518"
 
 Если изображение стоит тысячи слов, то в видеоролике стоит тысячи изображений. Видео — самый эффективный способ общения с преимуществами использования вашего приложения. Он будет размещаться перед всеми снимками экрана на странице "сведения о приложении". Ознакомьтесь с информацией о том, как работает ваше приложение, какие преимущества он может использовать, а также о преимуществах его использования, а также о том, для кого он предназначен. Помните, что ваша презентация должна быть короткой и упрощенной в промежутке между 30-90 секунд.
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 [Контрольный список для отправки приложения](~/concepts/deploy-and-publish/appsource/publish.md).  
 [Создайте пакет приложения для приложения Microsoft Teams](~/concepts/build-and-test/apps-package.md).  
