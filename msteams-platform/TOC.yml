@@ -19,6 +19,8 @@
       href: samples/code-samples.md
     - name: Готовые к использованию рабочие шаблоны приложений
       href: samples/app-templates.md
+    - name: Пошаговые сменные соединители для производства
+      href: samples/shifts-wfm-connectors.md
 - name: Концепции
   expanded: true
   items:
@@ -162,7 +164,7 @@
       items:
         - name: Создание почтового робота для Teams
           href: bots/how-to/create-a-bot-for-teams.md
-        - name: Беседы
+        - name: Conversations
           items:
             - name: Общие сведения о беседах
               href: bots/how-to/conversations/conversation-basics.md
@@ -317,7 +319,7 @@
       items:
         - name: Создание бота
           href: resources/bot-v3/bots-create.md
-        - name: Беседы
+        - name: Conversations
           href: resources/bot-v3/bot-conversations/bots-conversations.md
           items:
             - name: Личные беседы с Боты
