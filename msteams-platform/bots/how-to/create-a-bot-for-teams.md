@@ -5,12 +5,12 @@ description: Как создать бота для Microsoft Teams
 ms.topic: conceptual
 localization_priority: Priority
 ms.author: anclear
-ms.openlocfilehash: 9e0bd603772cf4da8465a638c4a7f5b426a1fbfb
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: b9999fb8fcb39b4cd70789d909fecd9cad13e5d7
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675564"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635300"
 ---
 # <a name="create-a-bot-for-microsoft-teams"></a>Создание бота для Microsoft Teams
 
@@ -62,9 +62,9 @@ ms.locfileid: "41675564"
 
 #### <a name="using-app-studio"></a>Использование App Studio
 
-*App Studio* — это приложение Teams, помогающее создавать приложения Teams, включая регистрацию вашей веб-службы в виде бота, создание манифеста приложения и пакета приложения. Оно также содержит библиотеку элементов управления React и настраиваемые примеры для карточек. См. статью [Начало работы с Teams App Studio](../../concepts/build-and-test/app-studio-overview.md).
+*App Studio* — это приложение Teams, помогающее создавать приложения Teams, включая регистрацию вашей веб-службы в виде бота, создание манифеста приложения и пакета приложения, а также обновление параметров и настроек. Оно также содержит библиотеку элементов управления React и настраиваемые примеры для карточек. См. статью [Начало работы с Teams App Studio](../../concepts/build-and-test/app-studio-overview.md).
 
-Помните, что если вы используете App Studio для регистрации веб-службы, вам потребуется перейти на сайт https://dev.botframework.com/bots для управления регистрацией. Некоторые параметры, например конечная точка обмена сообщениями, могут быть также обновлены в App Studio.
+Помните, что если вы используете App Studio для регистрации веб-службы, вам потребуется перейти на сайт https://dev.botframework.com/bots для управления регистрацией.
 
 #### <a name="in-the-legacy-portal"></a>На портале прежней версии
 
