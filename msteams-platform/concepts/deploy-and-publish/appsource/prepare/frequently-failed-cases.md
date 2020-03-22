@@ -4,12 +4,12 @@ description: Содержит советы по отправке и больши
 author: laujan
 ms.author: lajanuar
 ms.topic: how to
-ms.openlocfilehash: 75ac2a01f1ccd8e38977e1cd099544e7dd160733
-ms.sourcegitcommit: 67c021fa20eb5ea70c059fcc35be1c19c6c97c95
+ms.openlocfilehash: 12d0f39da24fc6850d74c9c78728b6a9b6de587a
+ms.sourcegitcommit: 576a4768b835422545cb6b6b3f75dce8318ea02d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42279790"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42896522"
 ---
 # <a name="tips-for-a-successful-app-submission"></a>Советы по успешной отправке приложения
 
@@ -22,7 +22,7 @@ ms.locfileid: "42279790"
 
 ### <a name="9989-general-considerations"></a>Общие сведения о &#9989;
 
-** [Раздел 100 — общие](/legal/marketplace/certification-policies#100-general) сведения
+*See also* [Раздел 100 — общие](/legal/marketplace/certification-policies#100-general) сведения
 
 * Убедитесь, что вы используете [пакет SDK для Microsoft Teams](https://www.npmjs.com/package/@microsoft/teams-js)версии 1.4.1 или более поздней версии.
 * Не вносите изменения в свое приложение во время выполнения процесса проверки. Для этого потребуется полная повторная проверка приложения.
@@ -33,7 +33,7 @@ ms.locfileid: "42279790"
 
 ### <a name="9989--provide-a-clear-and-simple-sign-insign-out-and-sign-up-experience"></a>&#9989; предоставляют простой и простой вход/выход и регистрацию
 
-** [Раздел 1100,5 — элемент управления Customer](/legal/marketplace/certification-policies#11005-customer-control)
+*See also* [Раздел 1100,5 — элемент управления Customer](/legal/marketplace/certification-policies#11005-customer-control)
 
 * Если приложение или надстройка зависят от внешних учетных записей или служб, то функция входа в систему, выхода из нее и входа в систему должна быть очевидна и достижима во всех возможностях приложения.
 * Если для пользователя предоставлен явный параметр входа, должен быть установлен соответствующий параметр Sign-Out (даже если приложение использует[проверку подлинности](~/tabs/how-to/authentication/auth-silent-aad.md)SSO/Silent).
@@ -51,7 +51,7 @@ ms.locfileid: "42279790"
 
 Дополнительные сведения о проверке подлинности содержатся в следующих статьях:
 
-* [Документация по проверке подлинности](/concepts/authentication/authentication.md)
+* [Документация по проверке подлинности](../../../authentication/authentication.md)
 * [Пример односерверной проверки подлинности в узле](https://github.com/OfficeDev/microsoft-teams-sample-auth-node)
 * [Пример проверки подлинности на вкладке "узел"](https://github.com/OfficeDev/microsoft-teams-sample-complete-node)
 * [Проверка подлинности с помощью вкладок и ленты в C#/.нет](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp)
