@@ -4,12 +4,12 @@ author: laujan
 description: Использование пакета SDK клиента Teams для добавления функциональных возможностей, поддерживающих Teams, на пользовательские вкладки
 keywords: вкладки Teams канал группы настраиваемый статический пакет SDK JavaScript персональный
 ms.topic: conceptual
-ms.openlocfilehash: eac5a8ec03ba12d926346afb40ca9bc6e9dda8d6
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 66d44617b897e44268ae2cee53f7ea64743ad821
+ms.sourcegitcommit: c4a7bc638e848a702cce92798cba84917fcecc35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675647"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928512"
 ---
 # <a name="using-the-teams-client-sdk"></a>Использование пакета SDK клиента Teams
 
@@ -23,6 +23,8 @@ ms.locfileid: "41675647"
 | -----     | -----     | -----    | -----        |
 | `microsoftTeams.initialize()` | Инициализирует библиотеку Teams. Эту функцию необходимо вызвать перед любыми вызовами SDK.|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#initialize-any-)|
 |`microsoftTeams.getContext(callback: (context: Context)`| Получает текущее состояние, в котором выполняется страница. Обратный вызов извлекает объект **context** .|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#getcontext--context--context-----void-)<br/>[obj-obj](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest)|
+| `microsoftTeams.initializeWithContext({contentUrl: string, websiteUrl: string})` | Инициализирует библиотеку Teams и задает [контекст](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest) вкладки в зависимости от параметров ContentUrl и вебситеурл. Это гарантирует, что функция "перезагрузка" между веб-сайтами и перезагрузками работает с правильным URL-адресом.|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#initializewithframecontext-framecontext--------void--string---)|
+| `microsoftTeams.setFrameContext({contentUrl: string, websiteUrl: string})` | Задает [контекст](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest) вкладки в зависимости от ContentUrl и вебситеурл. Это гарантирует, что функция "перезагрузка" между веб-сайтами и перезагрузками работает с правильным URL-адресом.|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#setframecontext-framecontext-)|
 | `microsoftTeams.registerFullScreenHandler(handler: (isFullScreen: boolean)` |Обработчик, который регистрируется, когда пользователь переключает полноэкранное и оконное представление вкладки.|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#registerfullscreenhandler--isfullscreen--boolean-----void-)<br/>[boolean](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest#isfullscreen)|
 |`microsoftTeams.registerChangeSettingsHandler()` |Обработчик, который регистрируется, когда пользователь нажимает кнопку Enabled Settings (включить **Параметры** ), чтобы изменить конфигурацию вкладки.|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#registerchangesettingshandler-------void-)|
 | `microsoftTeams.getTabInstances(callback: (tabInfo: TabInformation),tabInstanceParameters?: TabInstanceParameters,)` |Получает вкладки, принадлежащие приложению. Обратный вызов получает объект **табинформатион** . Объект **табинстанцепараметерс** является необязательным параметром.|[function](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#gettabinstances--tabinfo--tabinformation-----void--tabinstanceparameters-)<br/>[Табинфо obj](/javascript/api/@microsoft/teams-js/microsoftteams.tabinformation?view=msteams-client-js-latest)|
