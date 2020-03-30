@@ -6,12 +6,12 @@ layout: LandingPage
 ms.topic: landing-page
 localization_priority: Priority
 ms.author: lajanuar
-ms.openlocfilehash: 4bfbef38bdafac6afc6c19b01666d2df111f8d17
-ms.sourcegitcommit: 301be564aabaa7e1437a436053805cb9abecda21
+ms.openlocfilehash: 85fb1f4f3112da1022613ac7d9a9cd5f64081abd
+ms.sourcegitcommit: b13b38a104946c32cd5245a7af706070e534927d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42949472"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035596"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -354,7 +354,7 @@ ms.locfileid: "42949472"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Присутствие</h3>
+                                                    <h3>Приложение "Посещаемость"</h3>
                                                     <p>Помогает команде фиксировать присутствие и создавать итоговые отчеты.</p>
                                                 </div>
                                             </div>
@@ -373,7 +373,7 @@ ms.locfileid: "42949472"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Вспомогательная аналитика</h3>
+                                                    <h3>Приложение "Вспомогательная аналитика"</h3>
                                                     <p>Позволяет сотрудникам без компьютеров получать отзывы клиентов.</p>
                                                 </div>
                                             </div>
@@ -394,6 +394,44 @@ ms.locfileid: "42949472"
                                                 <div class="cardText">
                                                     <h3>Приложение поощрений</h3>
                                                     <p>Управляйте поощряемым участием в действиях и событиях, а также отслеживайте его.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/microsoft-teams-apps-openbadges">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/illustrations/dynamics-gdpr-center.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Приложение "Создание эмблем"</h3>
+                                                    <p>Присуждайте эмблемы, подтверждающие прохождение цифрового обучения, а также отслеживайте их.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/microsoft-teams-apps-groupactivities">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/illustrations/team-services-agile-customize.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Приложение "Групповые действия"</h3>
+                                                    <p>Быстро создавайте группы действий и рабочие процессы совместной работы, а также управляйте ими.</p>
                                                 </div>
                                             </div>
                                         </div>
