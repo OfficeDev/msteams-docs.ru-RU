@@ -3,12 +3,12 @@ title: Локализация для групповых приложений
 description: Описание проблем, связанных с локализацией приложения
 keywords: Teams Publishing Store Office Publishing AppSource Language Localization
 ms.date: 05/15/2018
-ms.openlocfilehash: 0affa61ee1967a0e1bc19e423f05049bad750ce7
-ms.sourcegitcommit: 67c021fa20eb5ea70c059fcc35be1c19c6c97c95
+ms.openlocfilehash: c7d8ff47d370badcc75e3ad5d10a2ca298b80195
+ms.sourcegitcommit: 058b7bbd817af5f513e0e018f2ef562dc3086a84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42279764"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43120285"
 ---
 # <a name="localization-for-microsoft-teams-apps"></a>Локализация приложений Microsoft Teams
 
@@ -78,7 +78,7 @@ ms.locfileid: "42279764"
 Если для языка пользователя задано значение "en-CA": 
 
 1. Клиент Teams получит строки "fr", заменяя их строками "en".
-2. Поскольку локалазатион не указан, будут использоваться локализации "en".
+2. Так как не указана локализация "en-CA", будут использоваться локализации "en".
 
 Если для языка пользователя задано значение "es-ES", клиент Teams будет принимать строки "fr" и не будет переопределять их с помощью языковых файлов.
 

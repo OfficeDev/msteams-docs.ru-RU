@@ -1,4 +1,4 @@
-- name: Обзор
+- name: Общие сведения
   expanded: true
   items:
     - name: Что такое приложения Microsoft Teams?
@@ -15,12 +15,12 @@
       href: tutorials/get-started-yeoman.md
 - name: Примеры и шаблоны
   items:
-    - name: Примеры приложений
-      href: samples/code-samples.md
     - name: Готовые к использованию рабочие шаблоны приложений
       href: samples/app-templates.md
     - name: Пошаговые сменные соединители для производства
       href: samples/shifts-wfm-connectors.md
+    - name: Примеры приложений
+      href: samples/code-samples.md
 - name: Концепции
   expanded: true
   items:

@@ -4,12 +4,12 @@ author: clearab
 description: Обзор бесед в боты в Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: e10275cba97f835cd59e572b48d2db7cb902d096
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+ms.openlocfilehash: 132b71a4da7462c426468c7fc2f79b26b6fbb03b
+ms.sourcegitcommit: 058b7bbd817af5f513e0e018f2ef562dc3086a84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635307"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43120292"
 ---
 # <a name="what-are-conversational-bots"></a>Что такое боты для общения?
 
@@ -92,7 +92,7 @@ BOT: в какой день?
 
 ### <a name="maintaining-a-large-retrieval-knowledge-base-with-unranked-responses"></a>Ведение большой базы знаний для получения с неранжированными ответами
 
-Боты лучше всего подходит для коротких и быстрых взаимодействий, а не сифтинг, несмотря на то, что в длинных списках требуется ответить.
+Боты лучше всего подходит для коротких и быстрых взаимодействий, а не сифтинг с помощью длинных списков, в которых поиск отвечает.
 
 ## <a name="get-started"></a>Начало работы
 

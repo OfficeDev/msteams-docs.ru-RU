@@ -4,12 +4,12 @@ author: clearab
 description: В этой статье описывается, как реагировать на действия по отправке модуля задач из команды действия расширения системы обмена сообщениями
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 33a9388ee84dcf03a5bda59c5a5139c6f49bde6c
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 6372a683a7c9f08551a9c0d126a0db2ab9212e66
+ms.sourcegitcommit: 058b7bbd817af5f513e0e018f2ef562dc3086a84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675482"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43120264"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправить модуль задач
 
@@ -39,7 +39,7 @@ ms.locfileid: "41675482"
 
 Ниже приводятся примеры получения сообщения вызова.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(
@@ -48,7 +48,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node. js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -61,7 +61,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 Пример объекта JSON, который вы получите. `commandContext` Параметр указывает, откуда было инициировано расширение обмена сообщениями. `data` Объект содержит поля формы в качестве параметров и значения, которые пользователь отправил. Объект JSON в этом разделе сокращается, чтобы выделить наиболее релевантные поля.
 
@@ -95,7 +95,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 Наиболее распространенным способом ответа на `composeExtension/submitAction` запрос является карта, вставленная в область сообщения создать. Затем пользователь может послать карточку в беседу. Дополнительные сведения об использовании [карт см.](~/task-modules-and-cards/cards/cards-actions.md)
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(
@@ -132,7 +132,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node. js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -155,7 +155,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -204,7 +204,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 Вы также можете ответить на действие Отправить, вставив сообщение с адаптивной картой в канал с помощью ленты. Пользователь сможет просмотреть сообщение перед его отправкой и потенциально редактировать/взаимодействовать с ним. Это может быть очень удобно в тех случаях, когда необходимо собрать информацию от пользователей перед созданием ответа на адаптивную карту или при необходимости обновления карточки после того, как пользователь взаимодействует с ней. В приведенном ниже сценарии показано, как приложение Полли использует этот процесс для настройки опроса без включения действий по настройке в беседе канала.
 
 1. Пользователь выбирает расширение системы обмена сообщениями для запуска модуля задачи.
-2. Пользователь настраивает опрос с помощью задачи маудуле.
+2. Пользователь настраивает опрос с помощью модуля задач.
 3. После отправки модуля задачи приложение использует сведения, предоставленные для создания опроса в качестве адаптивной карты, и отправляет его в `botMessagePreview` качестве ответа клиенту.
 4. После этого пользователь может просмотреть сообщение адаптивной карточки перед вставкой ленты в канал. Если приложение еще не является участником канала, его Нажатие `Send` будет добавлено.
    1. Пользователь также может выбрать `Edit` сообщение, которое возвращает их в исходный модуль задач.
@@ -215,7 +215,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 Чтобы включить этот рабочий процесс, модуль задачи должен отвечать исходному `composeExtension/submitAction` сообщению с предварительным просмотром карты, отправляемой с канала в канале Bot. Это дает пользователю возможность проверить карточку перед отправкой, а также попытаться установить Bot в беседе, если она еще не установлена.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(
@@ -256,7 +256,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node. js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -295,7 +295,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 >[!Note]
 >`activityPreview` Должен содержать `message` действие с ровно 1 вложенной картой. `<< Card Payload >>` Значение — это заполнитель для карточки, которую вы хотите отправить.
@@ -323,7 +323,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 Теперь ваше расширение сообщения должно реагировать на два новых вида `composeExtension/submitAction` вызова, где `value.botMessagePreviewAction = "send"`и. `value.botMessagePreviewAction = "edit"`
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionBotMessagePreviewEditAsync(
@@ -340,7 +340,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node. js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -357,7 +357,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -400,7 +400,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 Когда пользователь нажимает кнопку **Отправить** , вы получите `composeExtension/submitAction` вызов с помощью `value.botMessagePreviewAction = send`команды. Веб-службе потребуется создать и отправить упреждающее сообщение с помощью адаптивной карточки в беседу, а также ответить на вызов.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionBotMessagePreviewSendAsync(
@@ -427,7 +427,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node. js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -476,7 +476,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 Появится новое `composeExtension/submitAction` сообщение, аналогичное следующему:
 
