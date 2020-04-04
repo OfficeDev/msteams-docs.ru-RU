@@ -6,12 +6,12 @@ layout: LandingPage
 ms.topic: landing-page
 localization_priority: Priority
 ms.author: lajanuar
-ms.openlocfilehash: 85fb1f4f3112da1022613ac7d9a9cd5f64081abd
-ms.sourcegitcommit: b13b38a104946c32cd5245a7af706070e534927d
+ms.openlocfilehash: d73bfe89ba2cc8a62c912572786bd81ab9e641fe
+ms.sourcegitcommit: 058b7bbd817af5f513e0e018f2ef562dc3086a84
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035596"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43120829"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -478,8 +478,27 @@ ms.locfileid: "43035596"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Соединитель Kronos-"Смены"</h3>
+                                                    <h3>Соединитель Kronos-Смены</h3>
                                                     <p>Обеспечение беспроблемной интеграции из системы Kronos WFM в приложение "Смены" Teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors/tree/master/JDA_v17.2-Shifts-Connector">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/illustrations/biztalk-get-started-scenarios.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Соединитель JDA-Смены</h3>
+                                                    <p>Обеспечение беспроблемной интеграции из системы JDA (BlueYonder) WFM в приложение "Смены" Teams.</p>
                                                 </div>
                                             </div>
                                         </div>
