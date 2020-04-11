@@ -4,12 +4,12 @@ author: clearab
 description: Обзор расширений обмена сообщениями на платформе Microsoft Teams
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 01a038d57368826345a55358b1d628447b21f772
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: dd68f2005cbb3ed119a9aadfafd6066db221000b
+ms.sourcegitcommit: a08f1c7eb9fca11f44842773ab669c69d4af40db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675476"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225793"
 ---
 # <a name="what-are-messaging-extensions"></a>Что такое расширения обмена сообщениями?
 
@@ -64,10 +64,10 @@ ms.locfileid: "41675476"
 
 Готовы приступить к построению? Попробуйте один из наших примеров:
 
-* Примеры использования C #
+* **C#**
   * [Расширение системы обмена сообщениями с помощью команд на основе действий](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)
   * [Расширение системы обмена сообщениями с помощью команд на основе поиска](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)
-* Примеры использования JavaScript
+* **JavaScript**
   * [Расширение системы обмена сообщениями с помощью команд на основе действий](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action)
   * [Расширение системы обмена сообщениями с помощью команд на основе поиска](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)
 

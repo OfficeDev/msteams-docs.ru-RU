@@ -3,12 +3,12 @@ title: Отправка сообщений соединителям и веб-п
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 localization_priority: Priority
 keywords: соединитель teams o365
-ms.openlocfilehash: 56ef6adc7731eadc0a799f489867d8e056248e03
-ms.sourcegitcommit: 060b486c38b72a3e6b63b4d617b759174082a508
+ms.openlocfilehash: df91dfc68dbafb5e32d8c0e5732eb820c21a51b0
+ms.sourcegitcommit: a08f1c7eb9fca11f44842773ab669c69d4af40db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953469"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225779"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -148,7 +148,13 @@ ms.locfileid: "41953469"
 1. Введите в командной строке следующую команду cURL:
 
    ```bash
-   curl -H "Content-Type: application/json" -d "{\"text\": \"Hello World\"}" <YOUR WEBHOOK URL>
+   // on macOS or Linux
+   curl -H 'Content-Type: application/json' -d '{\"text\": \"Hello World\"}' <YOUR WEBHOOK URL>
+   ```
+
+   ```bash
+   // on Windows
+   curl.exe -H 'Content-Type: application/json' -d '{\"text\": \"Hello World\"}' <YOUR WEBHOOK URL>
    ```
 
 2. В случае успешного выполнения запроса POST команда `curl` должна возвращать простой отклик **1**.
