@@ -1,44 +1,44 @@
-- name: Общие сведения
+- name: Обзор
   expanded: true
   items:
     - name: Что такое приложения Microsoft Teams?
       href: overview.md
-    - name: Новые возможности
+    - name: Какие новые возможности в нем появились?
       href: whats-new.md
 - name: Начало работы
   items:
-    - name: 'Создание приложения с помощью C #'
+    - name: 'Создайте приложение, используя C#'
       href: tutorials/get-started-dotnet-app-studio.md
-    - name: Создание приложения с помощью node
+    - name: Создайте приложение с помощью Node
       href: tutorials/get-started-nodejs-app-studio.md
-    - name: Создание приложения с помощью генератора Yeoman
+    - name: Создать приложение с генератором Yeoman
       href: tutorials/get-started-yeoman.md
-- name: Примеры и шаблоны
+- name: Образцы и шаблоны
   items:
-    - name: Готовые к использованию рабочие шаблоны приложений
+    - name: Готовые шаблоны приложений
       href: samples/app-templates.md
-    - name: Пошаговые сменные соединители для производства
+    - name: Готовые к работе соединители
       href: samples/shifts-wfm-connectors.md
     - name: Примеры приложений
       href: samples/code-samples.md
 - name: Концепции
   expanded: true
   items:
-    - name: Создание приложений для Microsoft Teams
+    - name: Разработка приложений для Microsoft Teams
       href: concepts/building-an-app.md
     - name: Точки расширения в клиенте Teams
       href: concepts/extensibility-points.md
-    - name: Проектирование приложения
+    - name: Создайте свое приложение
       items:
-        - name: Общие сведения о вариантах использования
+        - name: Поймите ваши варианты использования
           href: concepts/design/understand-use-cases.md
-        - name: Сопоставление вариантов использования с функциями
+        - name: Сопоставить варианты использования с функциями
           href: concepts/design/map-use-cases.md
         - name: Персональные приложения
           href: concepts/design/personal-apps.md
         - name: Компоненты пользовательского интерфейса
           items:
-            - name: цвета;
+            - name: Цвета
               href: concepts/design/components/color.md
             - name: 'Кнопки, ссылки и элементы управления'
               href: concepts/design/components/buttons.md
@@ -46,169 +46,169 @@
               href: concepts/design/components/typography.md
             - name: Поля и всплывающие окна
               href: concepts/design/components/fields.md
-            - name: Диалоги
+            - name: Диалоговые окна
               href: concepts/design/components/dialogs.md
-    - name: Создание и тестирование приложения
+    - name: Создайте и протестируйте свое приложение
       items:
-        - name: Подготовка клиента Office 365
+        - name: Подготовьте своего клиента Office 365
           href: concepts/build-and-test/prepare-your-o365-tenant.md
-        - name: Использование App Studio для создания приложения
+        - name: Используйте App Studio для создания вашего приложения
           href: concepts/build-and-test/app-studio-overview.md
-        - name: Создание пакета приложений
+        - name: Создайте свой пакет приложений
           href: concepts/build-and-test/apps-package.md
-        - name: Тестирование и отладка приложения
+        - name: Протестируйте и отладьте ваше приложение
           href: concepts/build-and-test/debug.md
-        - name: Добавление тестовых данных в среду
+        - name: Добавить тестовые данные в вашу среду
           href: concepts/build-and-test/test-data.md
-        - name: Использование глубоких ссылок для навигации
+        - name: Используйте глубокие ссылки для навигации
           href: concepts/build-and-test/deep-links.md
-        - name: Локализация приложения
+        - name: Локализация вашего приложения
           href: concepts/build-and-test/apps-localization.md
-        - name: Создание кнопки Share-to-Teams для веб-сайта
+        - name: Создайте кнопку «Поделиться в Teams» для своего сайта
           href: concepts/build-and-test/share-to-teams.md
-    - name: Развертывание и публикация приложения
+    - name: Разверните и опубликуйте свое приложение
       items:
-        - name: Выбор методов распространения
+        - name: Выберите методы распространения
           href: concepts/deploy-and-publish/overview.md
-        - name: Отправка приложения для группы или пользователя
+        - name: Загрузите ваше приложение для команды или пользователя
           href: concepts/deploy-and-publish/apps-upload.md
-        - name: Публикация приложения в Организации
+        - name: Опубликуйте свое приложение в своей организации
           href: /MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json
-        - name: Публикация приложения в AppSource
+        - name: Опубликуйте свое приложение на AppSource
           items:
-            - name: Общие сведения о отправке AppSource
+            - name: Понимание представления AppSource
               href: concepts/deploy-and-publish/appsource/publish.md
-            - name: Подготовка приложения
+            - name: Подготовьте ваше приложение
               items:
-                - name: Контрольный список перед отправкой
+                - name: Контрольный список перед подачей
                   href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
-                - name: Контрольный список для страницы сведений о приложении
+                - name: Контрольный список страниц сведений о приложении
                   href: concepts/deploy-and-publish/appsource/prepare/detail-page-checklist.md
                 - name: Контрольный список манифеста приложения
                   href: concepts/deploy-and-publish/appsource/prepare/app-manifest-checklist.md
-                - name: Часто неудачные случаи
+                - name: Часто провальные случаи
                   href: concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md
-            - name: После публикации приложения
+            - name: После публикации вашего приложения
               items:
-                - name: Что делать после публикации приложения
+                - name: Что делать после публикации вашего приложения
                   href: concepts/deploy-and-publish/appsource/post-publish/overview.md
                 - name: Программа сертификации приложений
                   href: concepts/deploy-and-publish/appsource/post-publish/application-certification.md
-    - name: Потоки проверки подлинности в ваших приложениях
+    - name: Аутентификация в ваших приложениях
       items:
         - name: Обзор проверки подлинности
           href: concepts/authentication/authentication.md
-        - name: Настройка поставщиков удостоверений
+        - name: Настроить поставщиков удостоверений
           href: concepts/authentication/configure-identity-provider.md
-- name: Расширения обмена сообщениями
+- name: Расширения для сообщений
   items:
     - name: Что такое расширения обмена сообщениями?
       href: messaging-extensions/what-are-messaging-extensions.md
-    - name: Quickstarts
+    - name: Примеры использования
       items:
-        - name: Команда "с действием"
+        - name: С командой действия
           items:
-            - name: 'ЯЗЫК C#/.НЕТ'
+            - name: 'C#/.NET'
               href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action'
-            - name: TypeScript/Node. js
+            - name: TypeScript/Node.js
               href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action'
-        - name: С помощью команды Search
+        - name: С командой поиска
           items:
-            - name: 'ЯЗЫК C#/.НЕТ'
+            - name: 'C#/.NET'
               href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search'
-            - name: TypeScript/Node. js
+            - name: TypeScript/Node.js
               href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search'
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создание расширения обмена сообщениями
+        - name: Создать расширение для обмена сообщениями
           href: messaging-extensions/how-to/create-messaging-extension.md
         - name: Команды на основе действий
           items:
-            - name: Определение команд действий
+            - name: Определить команды действий
               href: messaging-extensions/how-to/action-commands/define-action-command.md
-            - name: Создание и отправка модуля задач
+            - name: Создать и отправить модуль задачи
               href: messaging-extensions/how-to/action-commands/create-task-module.md
-            - name: Отправка ответа на действие отправки
+            - name: Отправить ответ на действие отправки
               href: messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md
-        - name: Команды на основе поиска
+        - name: Поисковые команды
           items:
-            - name: Определение команд поиска
+            - name: Определить команды поиска
               href: messaging-extensions/how-to/search-commands/define-search-command.md
-            - name: Получение и ответ на поисковые запросы
+            - name: Получать и отвечать на поисковые запросы
               href: messaging-extensions/how-to/search-commands/respond-to-search.md
-        - name: Ссылка унфурлинг
+        - name: Развернуть ссылку
           href: messaging-extensions/how-to/link-unfurling.md
-        - name: Добавление проверки подлинности
+        - name: Добавить аутентификацию
           href: messaging-extensions/how-to/add-authentication.md
-        - name: Добавление страницы конфигурации
+        - name: Добавить страницу конфигурации
           href: messaging-extensions/how-to/add-configuration-page.md
-- name: боты;
+- name: Боты
   items:
     - name: Что такое боты в Microsoft Teams?
       href: bots/what-are-bots.md
-    - name: Принцип работы Боты
+    - name: Как работают боты
       href: bots/bot-basics.md
-    - name: Quickstarts
+    - name: Примеры использования
       items:
-        - name: 'Bot для бесед в Teams в C #'
+        - name: 'Бот для беседы в Teams на C#'
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot'
-        - name: Bot для бесед в Teams в JavaScript
+        - name: Бот для беседы в Teams на JavaScript
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot'
-        - name: Командная ленты для бесед в Python
+        - name: Бот для беседы в Teams на Python
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/57.teams-conversation-bot'
-    - name: Проектирование ленты
+    - name: Создайте свой бот
       items:
-        - name: Общие сведения о проектировании
+        - name: Обзор дизайна
           href: bots/design/bots.md
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создание почтового робота для Teams
+        - name: Создать бота для Teams
           href: bots/how-to/create-a-bot-for-teams.md
-        - name: Conversations
+        - name: Беседы
           items:
-            - name: Общие сведения о беседах
+            - name: Основы разговора
               href: bots/how-to/conversations/conversation-basics.md
-            - name: Подписка на события беседы
+            - name: Подписаться на события разговора
               href: bots/how-to/conversations/subscribe-to-conversation-events.md
-            - name: Беседы по каналам и группам
+            - name: Канал и групповые разговоры
               href: bots/how-to/conversations/channel-and-group-conversations.md
-            - name: Отправка упреждающих сообщений
+            - name: Отправлять активные сообщения
               href: bots/how-to/conversations/send-proactive-messages.md
-            - name: Отправка и получение файлов
+            - name: Отправлять и получать файлы
               href: bots/how-to/conversations/send-and-receive-files.md
-        - name: Отладка Bot
+        - name: Отладка вашего бота
           items:
-            - name: Локальная отладка с помощью IDE
+            - name: Отладка локально с IDE
               href: bots/how-to/debug/locally-with-an-ide.md
-            - name: Отладка с промежуточного слоя проверки
+            - name: Отладка с помощью промежуточного программного обеспечения для проверки
               href: /azure/bot-service/bot-service-debug-inspection-middleware
         - name: Проверка подлинности
           items:
-            - name: Процесс проверки подлинности в Боты
+            - name: Поток аутентификации в ботах
               href: bots/how-to/authentication/auth-flow-bot.md
-            - name: Добавление проверки подлинности в Bot
+            - name: Добавить аутентификацию для вашего бота
               href: bots/how-to/authentication/add-authentication.md
-        - name: Форматирование сообщения Bot
+        - name: Отформатируйте сообщение бота
           href: bots/how-to/format-your-bot-messages.md
-        - name: Обновление и удаление сообщений Bot
+        - name: Обновлять и удалять сообщения ботов
           href: bots/how-to/update-and-delete-bot-messages.md
-        - name: Получение контекста команд для ленты
+        - name: Получите контекст Teams для вашего бота
           href: bots/how-to/get-teams-context.md
-        - name: Создание меню команд для ленты
+        - name: Создать меню команд для вашего бота
           href: bots/how-to/create-a-bot-commands-menu.md
-        - name: Обработка ограничения скорости для ленты
+        - name: Обрабатывать ограничение скорости бота
           href: bots/how-to/rate-limit.md
-    - name: Боты звонков и собраний
+    - name: Вызов и встреча ботов
       items:
-        - name: Общие сведения о Боты звонков и собраний
+        - name: Обзор ботов и ботов
           href: bots/calls-and-meetings/calls-meetings-bots-overview.md
-        - name: Основные понятия мультимедиа в реальном времени
+        - name: Медиа концепции в реальном времени
           href: bots/calls-and-meetings/real-time-media-concepts.md
-        - name: Регистрация абонентской ленты
+        - name: Регистрация вызывающего бота
           href: bots/calls-and-meetings/registering-calling-bot.md
-        - name: Уведомления о входящем звонке
+        - name: Уведомления о входящих звонках
           href: bots/calls-and-meetings/call-notifications.md
         - name: Отладка и локальное тестирование
           href: bots/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md
@@ -216,68 +216,68 @@
           href: bots/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md
 - name: Вкладки
   items:
-    - name: Что такое настраиваемые вкладки?
+    - name: Что такое пользовательские вкладки?
       href: tabs/what-are-tabs.md
-    - name: Quickstarts
+    - name: Примеры использования
       items:
-        - name: Node. js и реагирует
+        - name: Node.js и React
           items:
-            - name: Создание вкладки "канал" и "Группа"
+            - name: Создать канал и вкладку группы
               href: tabs/quickstarts/create-channel-group-tab-node-yeoman.md
-            - name: Создание вкладки "Личное"
+            - name: Создать личную вкладку
               href: tabs/quickstarts/create-personal-tab-node-yeoman.md
-        - name: 'Базовый язык C#/АСП.нет'
+        - name: 'C#/ASP.NET Core'
           items:
-            - name: Создание вкладки "канал" и "Группа"
+            - name: Создать канал и вкладку группы
               href: tabs/quickstarts/create-channel-group-tab-dotnet-core.md
-            - name: Создание вкладки "Личное"
+            - name: Создать личную вкладку
               href: tabs/quickstarts/create-personal-tab-dotnet-core.md
-        - name: 'C#/АСП.НЕТ MVC'
+        - name: 'C#/ASP.NET MVC'
           items:
-            - name: Создание вкладки "канал" и "Группа"
+            - name: Создать канал и вкладку группы
               href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
-            - name: Создание вкладки "Личное"
+            - name: Создать личную вкладку
               href: tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md
-    - name: Создание вкладок
+    - name: Создайте свои вкладки
       items:
-        - name: Общие сведения о проектировании
+        - name: Обзор дизайна
           href: tabs/design/tabs.md
         - name: Вкладки на мобильных клиентах
           href: tabs/design/tabs-mobile.md
     - name: Практические руководства
       expanded: true
       items:
-        - name: Добавление вкладок в приложение
+        - name: Добавить вкладки в ваше приложение
           href: tabs/how-to/add-tab.md
-        - name: Создание страниц вкладок
+        - name: Создать страницы вкладок
           items:
-            - name: Создание страницы контента
+            - name: Создать страницу контента
               href: tabs/how-to/create-tab-pages/content-page.md
-            - name: Создание страницы конфигурации
+            - name: Создать страницу конфигурации
               href: tabs/how-to/create-tab-pages/configuration-page.md
-            - name: Создание страницы удаления вкладок
+            - name: Создать страницу удаления вкладки
               href: tabs/how-to/create-tab-pages/removal-page.md
-        - name: Добавление проверки подлинности на вкладки
+        - name: Добавить аутентификацию на ваши вкладки
           items:
             - name: Последовательность аутентификации
               href: tabs/how-to/authentication/auth-flow-tab.md
-            - name: Использование проверки подлинности Azure AD
+            - name: Использование аутентификации Azure AD
               href: tabs/how-to/authentication/auth-tab-aad.md
-            - name: Использование автоматической проверки подлинности
+            - name: Использование тихой аутентификации
               href: tabs/how-to/authentication/auth-silent-aad.md
-            - name: Использование проверки подлинности с единым входом
+            - name: Использование единой регистрации
               href: tabs/how-to/authentication/auth-aad-sso.md
-        - name: Использование пакета SDK клиента Teams
+        - name: Использование клиентского SDK для Teams
           href: tabs/how-to/using-teams-client-sdk.md
-        - name: Как получает дополнительные контексты команд
+        - name: Получение дополнительного контекста Teams
           href: tabs/how-to/access-teams-context.md
-        - name: Девтулс для вкладок Microsoft Teams
+        - name: Вкладки DevTools для Microsoft Teams
           href: tabs/how-to/developer-tools.md
-        - name: Добавление настраиваемой вкладки в SharePoint
+        - name: Добавление пользовательской вкладки в SharePoint
           href: tabs/how-to/tabs-in-sharepoint.md
-        - name: Запрос разрешений для устройства
+        - name: Запросить разрешение устройства
           href: tabs/how-to/native-device-permissions.md
-- name: Модули задач и карты
+- name: Модули задач и карточки
   items:
     - name: Что такое модули задач?
       href: task-modules-and-cards/what-are-task-modules.md
@@ -285,23 +285,23 @@
       href: task-modules-and-cards/what-are-cards.md
     - name: Карточки
       items:
-        - name: Разработка эффективных карточек
+        - name: Проектирование эффективных карточек
           href: task-modules-and-cards/cards/design-effective-cards.md
         - name: Форматирование текста карточки
           href: task-modules-and-cards/cards/cards-format.md
-        - name: Добавление действий карты и ответ на них
+        - name: Добавление и ответ на действия с карточкой
           href: task-modules-and-cards/cards/cards-actions.md
-        - name: Справочник по карточкам
+        - name: Ссылки на карточки
           href: task-modules-and-cards/cards/cards-reference.md
     - name: Модули задач
       items:
-        - name: Из Bot
+        - name: От бота
           href: task-modules-and-cards/task-modules/task-modules-bots.md
         - name: Из вкладки
           href: task-modules-and-cards/task-modules/task-modules-tabs.md
-- name: Веб-перехватчики и соединители
+- name: Веб-перехватчики и соединительные линии
   items:
-    - name: Что такое веб-перехватчики и соединители?
+    - name: Что такое веб-перехватчики и соединительные линии?
       href: webhooks-and-connectors/what-are-webhooks-and-connectors.md
     - name: Практические руководства
       expanded: true
@@ -310,72 +310,72 @@
           href: webhooks-and-connectors/how-to/add-incoming-webhook.md
         - name: Создание исходящего веб-перехватчика
           href: webhooks-and-connectors/how-to/add-outgoing-webhook.md
-        - name: Создание соединителя O365
+        - name: Создание соединительной линии Office 365
           href: webhooks-and-connectors/how-to/connectors-creating.md
         - name: Отправка сообщений соединителям и веб-перехватчикам
           href: webhooks-and-connectors/how-to/connectors-using.md
 - name: Ресурсы
   items:
-    - name: Пакет SDK для Боты – v3
+    - name: Боты - v3 SDK
       href: resources/bot-v3/bots-overview.md
       items:
-        - name: Создание бота
+        - name: Создать бота
           href: resources/bot-v3/bots-create.md
-        - name: Conversations
+        - name: Беседы
           href: resources/bot-v3/bot-conversations/bots-conversations.md
           items:
-            - name: Личные беседы с Боты
+            - name: Личные разговоры с ботами
               href: resources/bot-v3/bot-conversations/bots-conv-personal.md
-            - name: Беседы по каналам и группам с Боты
+            - name: Канал и групповые разговоры с ботами
               href: resources/bot-v3/bot-conversations/bots-conv-channel.md
-            - name: Начало беседы
+            - name: Начиная разговор
               href: resources/bot-v3/bot-conversations/bots-conv-proactive.md
-        - name: Действия с карточками и карточками
+        - name: Карты и действия карт
           href: resources/bot-v3/bots-cards.md
-        - name: Форматирование сообщений
+        - name: Форматирование сообщения
           href: resources/bot-v3/bots-message-format.md
-        - name: События Bot
+        - name: Бот события
           href: resources/bot-v3/bots-notifications.md
-        - name: Контекст для Боты
+        - name: Контекст для ботов
           href: resources/bot-v3/bots-context.md
         - name: Отправка и получение файлов
           href: resources/bot-v3/bots-files.md
-        - name: Только уведомления Боты
+        - name: Боты только для уведомлений
           href: resources/bot-v3/bots-notification-only.md
-        - name: Меню "bot"
+        - name: Бот меню
           href: resources/bot-v3/bots-menus.md
         - name: Боты с вкладками
           href: resources/bot-v3/bots-with-tabs.md
-        - name: Форматирование сообщений Bot
+        - name: Форматирование сообщений бота
           href: resources/bot-v3/bots-text-formats.md
-        - name: Тестирование ленты
+        - name: Проверить бота
           href: resources/bot-v3/bots-test.md
-    - name: Расширения системы обмена сообщениями — v3 SDK
+    - name: Расширения обмена сообщениями - v3 SDK
       href: resources/messaging-extension-v3/messaging-extensions-overview.md
       items:
-        - name: Расширения поиска
+        - name: Поиск расширений
           href: resources/messaging-extension-v3/search-extensions.md
         - name: Расширения действий
           href: resources/messaging-extension-v3/create-extensions.md
-    - name: Предварительная версия для общедоступного разработчика
+    - name: Предварительная версия общедоступный для разработчиков
       items:
         - name: Обзор предварительной версии для разработчиков
           href: resources/dev-preview/developer-preview-intro.md
-        - name: Схема манифеста для предварительного просмотра для разработчиков
+        - name: Схема манифеста предварительного просмотра разработчика
           href: resources/schema/manifest-schema-dev-preview.md
-        - name: Компоненты в предварительной версии для разработчиков
+        - name: Возможности предварительного просмотра
           href: resources/dev-preview/developer-preview-features.md
-    - name: Поддерживаемые форматы мультимедиа для Боты
+    - name: Поддерживаемые форматы медиа для ботов
       href: resources/media-formats.md
-    - name: Атрибут cookie Самесите (обновление 2020)
+    - name: Атрибут cookie SameSite (обновление 2020)
       href: resources/samesite-cookie-update.md
     - name: Изменения API-интерфейса Bot для участников группы или чата
       href: resources/team-chat-member-api-changes.md
     - name: Схема манифеста
       href: resources/schema/manifest-schema.md
-    - name: Схема JSON файла локализации
+    - name: Схема файла локализации JSON
       href: resources/schema/localization-schema.md
-    - name: Руководство по участнику Teams
+    - name: Руководство для участников Teams
       href: resources/teams-contributor-reference.md
 - name: Поддержка и обратная связь
   href: feedback.md
