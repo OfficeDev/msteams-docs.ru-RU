@@ -5,12 +5,12 @@ keywords: Начало работы с .NET c# CSharp
 ms.custom: scenarios:getting-started; languages:ASP.NET,C#
 ms.topic: tutorial
 ms.date: 11/09/2018
-ms.openlocfilehash: d38491ec1d152e8710e52530e3903a4bad3e1459
-ms.sourcegitcommit: b13b38a104946c32cd5245a7af706070e534927d
+ms.openlocfilehash: 61237cd3178fcb41357230536827f732faf65ee4
+ms.sourcegitcommit: 510ae42f72798fb24ddef0afa771ecd9d38e5348
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034059"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43550961"
 ---
 # <a name="get-started-on-the-microsoft-teams-platform-with-cnet-and-app-studio"></a>Начало работы на платформе Microsoft Teams с C#/.нет и App Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "43034059"
 Для выполнения этого руководства необходимо получить следующие инструменты:
 
 - [Установка Git](https://git-scm.com/downloads)
-- [Установите Visual Studio 2017](https://www.visualstudio.com/downloads/). Вы можете установить бесплатную версию сообщества.
+- [Установите Visual Studio](https://www.visualstudio.com/downloads/). Вы можете установить бесплатную версию сообщества.
 
 Если вы видите параметр, который будет `git` добавлен к пути во время установки, нажмите эту кнопку. Это будет удобно.
 
@@ -43,7 +43,7 @@ git version 2.17.1.windows.2
 
 ```
 
-Обязательно запустите Visual Studio 2017 и установите все обновления, если они отображаются.
+Обязательно запустите последнюю версию Visual Studio и установите все обновления, если они отображаются.
 
 Вы можете продолжить использование этого окна терминала для выполнения команд, приведенных в этом руководстве.
 

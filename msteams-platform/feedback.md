@@ -1,17 +1,19 @@
 ---
-title: Поддержка и обратная связь
-description: Поддержка и обратная связь для разработчиков Microsoft Teams
+title: Поддержка и обратная связь для разработчиков Microsoft Teams
+description: Группа разработчиков продуктов Microsoft Teams реагирует на сообщество разработчиков по нескольким каналам обратной связи и поддержки.
 keywords: вопросы и ответы для разработчиков Microsoft Teams вопросы и ответы об ошибках запросов в службу поддержки
-ms.openlocfilehash: 9bec08dc1c40267445a54f31013a8ea9456ccb56
-ms.sourcegitcommit: a08f1c7eb9fca11f44842773ab669c69d4af40db
+ms.openlocfilehash: dc152fc9445e3fc9583638d522c03e9f2052bcd9
+ms.sourcegitcommit: 510ae42f72798fb24ddef0afa771ecd9d38e5348
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225786"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43550947"
 ---
-# <a name="microsoft-teams-developer-support-and-feedback"></a>Поддержка и обратная связь для разработчиков Microsoft Teams  
+# <a name="microsoft-teams-developer-support-and-feedback"></a>Поддержка и обратная связь для разработчиков Microsoft Teams
 
-Группа разработчиков продуктов Майкрософт реагирует на сообщество разработчиков по нескольким каналам.
+Группа разработчиков продуктов Microsoft Teams реагирует на сообщество разработчиков по нескольким каналам обратной связи и поддержки.
+
+## <a name="support-and-feedback-channels"></a>Каналы поддержки и обратной связи
 
 - **Общие вопросы о платформе разработчика Microsoft teams:** Отправьте электронную почту в [службу поддержки разработчиков Microsoft Teams](mailto:microsoftteamsdev@microsoft.com). Этот адрес электронной почты _не_ предназначен для комментариев или предложений в Microsoft Teams, относящихся к не относящимся к платформе функциям. Кроме того, во время чтения всех сообщений электронной почты, отправленных на этот адрес, мы не ответим на каждый из них.
 

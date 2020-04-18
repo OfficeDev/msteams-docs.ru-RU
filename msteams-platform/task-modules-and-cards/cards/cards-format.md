@@ -3,12 +3,12 @@ title: Форматирование текста в карточках
 description: Описание форматирования текста карточки в Microsoft Teams
 keywords: формат карточек Боты Teams
 ms.date: 03/29/2018
-ms.openlocfilehash: 0c723c436346498ed2e5704db6f6401204530165
-ms.sourcegitcommit: 646a8224523be7db96f9686e22d420d62d55d4b4
+ms.openlocfilehash: 9ced8a8956265322e91b9d40dc7dc7064ee4659f
+ms.sourcegitcommit: 510ae42f72798fb24ddef0afa771ecd9d38e5348
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42365250"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43550954"
 ---
 # <a name="format-cards-in-teams"></a>Форматирование карточек в Teams
 
@@ -61,15 +61,15 @@ ms.locfileid: "42365250"
 
 На рабочем столе Адаптивное форматирование карточки Markdown выглядит так же, как в веб-браузерах и в клиентском приложении teams:
 
-![Адаптивное форматирование карточки Markdown в клиенте для настольных ПК](/assets/images/cards/Adaptive-markdown-desktop-client.png)
+![Адаптивное форматирование карточки Markdown в клиенте для настольных ПК](../../assets/images/cards/Adaptive-markdown-desktop-client.png)
 
 В iOS форматирование адаптивной карточки Markdown выглядит следующим образом:
 
-![Адаптивное форматирование карточки Markdown в iOS](/assets/images/cards/Adaptive-markdown-iOS-75.png)
+![Адаптивное форматирование карточки Markdown в iOS](../../assets/images/cards/Adaptive-markdown-iOS-75.png)
 
 В Android Адаптивное форматирование карточки Markdown выглядит следующим образом:
 
-![Адаптивное форматирование карточки Markdown в Android](/assets/images/cards/Adaptive-markdown-Android.png)
+![Адаптивное форматирование карточки Markdown в Android](../../assets/images/cards/Adaptive-markdown-Android.png)
 
 ### <a name="more-information-on-adaptive-cards"></a>Дополнительные сведения о адаптивных картах
 
@@ -179,11 +179,11 @@ ms.locfileid: "42365250"
 
 На рабочем столе Markdown форматирование карт для соединителей выглядит следующим образом:
 
-![Markdown форматирование карт подключателя в клиенте для настольных ПК](/assets/images/cards/connector-desktop-markdown-combined.png)
+![Markdown форматирование карт подключателя в клиенте для настольных ПК](../../assets/images/cards/connector-desktop-markdown-combined.png)
 
 В iOS форматирование Markdown для карт подключателя выглядит следующим образом:
 
-![Markdown форматирование карт подключателя в клиенте iOS](/assets/images/cards/connector-iphone-markdown-combined-80.png)
+![Markdown форматирование карт подключателя в клиенте iOS](../../assets/images/cards/connector-iphone-markdown-combined-80.png)
 
 Вопросы:
 
@@ -192,7 +192,7 @@ ms.locfileid: "42365250"
 
 На Android Markdown форматирование карт для соединителей выглядит следующим образом:
 
-![Markdown форматирование карт подключателя в клиенте Android](/assets/images/cards/connector-android-markdown-combined.png)
+![Markdown форматирование карт подключателя в клиенте Android](../../assets/images/cards/connector-android-markdown-combined.png)
 
 ### <a name="formatting-example-for-markdown-connector-cards"></a>Пример форматирования для карточек соединителей Markdown
 
@@ -268,11 +268,11 @@ ms.locfileid: "42365250"
 
 На рабочем столе форматирование HTML-карт для соединителей выглядит следующим образом:
 
-![Формат HTML для соединителей карт в клиенте для настольных ПК](/assets/images/cards/Connector-desktop-html-combined.png)
+![Формат HTML для соединителей карт в клиенте для настольных ПК](../../assets/images/cards/Connector-desktop-html-combined.png)
 
 В iOS форматирование HTML выглядит следующим образом:
 
-![Формат HTML для соединителей карт в клиенте iOS](/assets/images/cards/connector-iphone-html-combined-80.png)
+![Формат HTML для соединителей карт в клиенте iOS](../../assets/images/cards/connector-iphone-html-combined-80.png)
 
 Вопросы:
 
@@ -281,7 +281,7 @@ ms.locfileid: "42365250"
 
 На Android форматирование HTML выглядит следующим образом:
 
-![Форматирование HTML-карт для соединителей в клиенте Android](/assets/images/cards/connector-android-html-combined.png)
+![Форматирование HTML-карт для соединителей в клиенте Android](../../assets/images/cards/connector-android-html-combined.png)
 
 ### <a name="formatting-sample-for-html-connector-cards"></a>Пример форматирования для карточек соединителей HTML
 
@@ -356,11 +356,11 @@ ms.locfileid: "42365250"
 
 На настольном компьютере форматирование HTML выглядит следующим образом:
 
-![Форматирование HTML в клиенте для настольных ПК](/assets/images/cards/card-formatting-xml-desktop-v2.png)
+![Форматирование HTML в клиенте для настольных ПК](../../assets/images/cards/card-formatting-xml-desktop-v2.png)
 
 В iOS форматирование HTML выглядит следующим образом:
 
-![Форматирование HTML в клиенте iOS](/assets/images/cards/card-formatting-xml-mobile-v2.png)
+![Форматирование HTML в клиенте iOS](../../assets/images/cards/card-formatting-xml-mobile-v2.png)
 
 Вопросы:
 
@@ -368,7 +368,7 @@ ms.locfileid: "42365250"
 
 На Android форматирование HTML выглядит следующим образом:
 
-![Форматирование HTML в клиенте Android](/assets/images/cards/card-formatting-xml-android-60.png)
+![Форматирование HTML в клиенте Android](../../assets/images/cards/card-formatting-xml-android-60.png)
 
 Правильное форматирование знаков, как полужирное и курсивное отображение на Android.
 
