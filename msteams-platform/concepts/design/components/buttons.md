@@ -2,12 +2,12 @@
 title: Справочные материалы по проектированию
 description: Описывает рекомендации по использованию кнопок, ссылок и элементов управления в приложениях
 keywords: рекомендации по разработке Teams ссылки на компоненты кнопки ссылки на цвета
-ms.openlocfilehash: 09dad651fee9c97fd52e672ea055e2c24b549a59
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: b9325980c38048ee250ace6b00f1ed29c6cbea8d
+ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675495"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914590"
 ---
 # <a name="buttons-links-and-controls"></a>Кнопки, ссылки и элементы управления
 
@@ -18,6 +18,10 @@ ms.locfileid: "41675495"
 Способ оформления кнопок позволяет сообщить, какие действия они вызывают. Мы поддерживаем широкий спектр кнопок, отформатированных для отображения различных уровней выделения.
 
 У кнопок может быть текст, значок или комбинация текста и значок. Для связи разных уровней в иерархии мы разработали основные и дополнительные кнопки в каждой категории.
+
+### <a name="fluent-design-system"></a>Система дизайна Fluent
+
+Пользовательский интерфейс Fluent предоставляет рекомендации по состояниям веб-компонентов, стилей и специальных возможностей для веб-компонентов. Кнопки на платформе Teams можно отформатировать для отображения различных уровней выделения. В этом *разделе представлены*[цвета кнопок пользовательского интерфейса Fluent](https://fluentsite.z22.web.core.windows.net/components/button/definition?showCode=false&showRtl=false&showTransparent=false&showVariables=true#types-emphasis) для HTML и шестнадцатеричных значений CSS.  
 
 ### <a name="text-buttons"></a>Текстовые кнопки
 
@@ -55,7 +59,7 @@ ms.locfileid: "41675495"
 
 ---
 
-## <a name="links"></a>Ссылки
+## <a name="links"></a>Links
 
 Ниже приведены утвержденные стили для ссылок на внутренние текстовые ссылки.
 [!include[Approved link styles](~/includes/design/links-image-text.html)]

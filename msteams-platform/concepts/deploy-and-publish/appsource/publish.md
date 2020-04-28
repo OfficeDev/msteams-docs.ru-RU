@@ -2,12 +2,12 @@
 title: Руководство по процессу утверждения приложений Microsoft Teams
 description: Описание процесса утверждения приложения, опубликованного в магазине приложений Microsoft Teams
 keywords: Публикация Teams в магазине Office AppSource
-ms.openlocfilehash: e0b8c7d1b98747019a096924de395a7ccf608a0c
-ms.sourcegitcommit: ebd653e0646c8ddf0b0f4f2da55831c5acbad5d3
+ms.openlocfilehash: 70f81f40ff424ab28e7129da7b947be0b1fcf469
+ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43509332"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914548"
 ---
 # <a name="submit-your-app-to-appsource"></a>Передача приложения в AppSource
 
@@ -28,7 +28,7 @@ ms.locfileid: "43509332"
 > * Если ваше приложение Teams содержит Bot, необходимо соблюдать [кодекс поведения](https://aka.ms/bf-conduct), написанный с помощью программы Bot Developer.
 > * Если ваше приложение содержит соединитель Office 365, могут применяться дополнительные условия. *Ознакомьтесь* с [разработкой](https://aka.ms/connectorsdashboard) и [соглашением о разработке приложений](https://sellerdashboard.microsoft.com/Assets/Content/Agreements/Office_Store_Seller_Agreement_20120927.htm)для соединителей.
 
-## <a name="faqs--teams-apps-and-partner-accounts"></a>**Вопросы и ответы: приложения Teams и учетные записи партнеров**
+## <a name="faqs--teams-apps-and-partner-accounts"></a>Вопросы и ответы: приложения Teams и учетные записи партнеров
 
 ## <a name="how-do-i-create-a-partner-center-account"></a>Как создать учетную запись центра партнера?
 
@@ -96,4 +96,4 @@ ms.locfileid: "43509332"
     * Снимок экрана, на котором возникла ошибка.
 
 > [!div class="nextstepaction"]
-> [Дополнительные сведения о политиках проверки приложений для Microsoft Teams](/office/dev/store/validation-policies#14-microsoft-teams-apps)
+> [Дополнительные сведения о политиках проверки приложений для Microsoft Teams](https://docs.microsoft.com/legal/marketplace/certification-policies)

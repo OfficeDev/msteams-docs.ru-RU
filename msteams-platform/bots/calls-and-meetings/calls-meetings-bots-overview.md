@@ -2,12 +2,12 @@
 title: Звонки и собрания по сети Боты
 description: Узнайте, как приложения Microsoft Teams могут взаимодействовать с пользователями с помощью голосовых и видеоконференций с помощью API Microsoft Graph для звонков и собраний по сети.
 keywords: звонки по голосовым видео IVR голосовых собраний
-ms.openlocfilehash: 03bd7e085908a49f070fe84aba87138ecabafb83
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: e89fc576a0688a65e86c03696619569c41b6a3a2
+ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675335"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914618"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Звонки и собрания по сети Боты
 
@@ -37,7 +37,7 @@ ms.locfileid: "41675335"
 
 * [Справочник по API Graph](/graph/api/resources/communications-api-overview?view=graph-rest-beta)
 * [Примеры приложений](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
-* [Регистрация Bot, поддерживающего звонки и собрания по сети](./registering-calling-bot.md) и [разрешения Microsoft Graph на звонки и собрания по сети Боты](/registering-calling-bot.md#add-microsoft-graph-permissions)
+* [Регистрация Bot, поддерживающего звонки и собрания по сети](./registering-calling-bot.md) и [разрешения Microsoft Graph на звонки и собрания по сети Боты](./registering-calling-bot.md#add-microsoft-graph-permissions)
 * [Как разрабатывать звонки на Боты и собраний по сети на локальном компьютере](./debugging-local-testing-calling-meeting-bots.md)
 * [Дополнительные сведения об обработке мультимедиа в режиме реального времени](./real-time-media-concepts.md)и [о том, что необходимо для поддержки мультимедиа, размещаемого в приложении](./requirements-considerations-application-hosted-media-bots.md)
 * [Технические сведения об обработке уведомлений о входящем звонке](./call-notifications.md)

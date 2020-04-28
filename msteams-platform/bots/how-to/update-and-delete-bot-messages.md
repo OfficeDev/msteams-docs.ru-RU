@@ -4,12 +4,12 @@ author: WashingtonKayaker
 description: Обновление и удаление сообщений, отправленных с ленты Microsoft Teams
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 012a6edb77f75c43cff01c58fb94e03fd4f61a85
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 222409fa0d02a571b7295dedb0c60b1ca3f90cca
+ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675552"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914611"
 ---
 # <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновление и удаление сообщений, отправленных с ленты.
 
@@ -21,7 +21,7 @@ ms.locfileid: "41675552"
 
 Новое сообщение не должно быть соответствующим исходному типу. Например, если исходное сообщение содержит вложение, новое сообщение может быть простым текстовым сообщением.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 Чтобы обновить существующее сообщение, передайте новый `Activity` объект с существующим идентификатором действия в `UpdateActivityAsync` метод `TurnContext` класса. *Просмотр* [турнконтексткласс](/dotnet/api/microsoft.bot.builder.turncontext?view=botbuilder-dotnet-stable)
 
@@ -31,7 +31,7 @@ newActivity.Id = activityId;
 await turnContext.UpdateActivityAsync(newActivity, cancellationToken);
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 Чтобы обновить существующее сообщение, передайте новый `Activity` объект с существующим идентификатором действия в `updateActivity` метод `TurnContext` объекта. *Просмотр* [упдатеактивити](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#updateactivity-partial-activity--)
 
@@ -41,7 +41,7 @@ newActivity.id = activityId;
 await turnContext.updateActivity(newActivity);
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 Чтобы обновить существующее сообщение, передайте новый `Activity` объект с существующим идентификатором действия в `update_activity` метод `TurnContext` класса. Обратитесь к разделу [турнконтексткласс](link to Python API ref docs).
 
@@ -60,7 +60,7 @@ update_result = await context.update_activity(new_activity)
 В Bot Framework каждое сообщение имеет собственный уникальный идентификатор действия.
 Сообщения можно удалять с помощью `DeleteActivity` метода Bot Framework, как показано ниже.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 Чтобы удалить это сообщение, передайте идентификатор действия `DeleteActivityAsync` методу `TurnContext` класса. *Просмотр* [метода турнконтекст. делетеактивитясинк](/dotnet/api/microsoft.bot.builder.turncontext.deleteactivityasync?view=botbuilder-dotnet-stable)
 
@@ -71,7 +71,7 @@ foreach (var activityId in _list)
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 Чтобы удалить это сообщение, передайте идентификатор действия `deleteActivity` методу `TurnContext` объекта. *Просмотр* [делетеактивити](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#deleteactivity-string---partial-conversationreference--)
 
@@ -81,9 +81,9 @@ for (let i = 0; i < activityIds.length; i++) {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
-Чтобы удалить это сообщение, передайте идентификатор действия `delete_activity` методу `TurnContext` объекта. Просмотрите [delete_activity](link to Python API ref docs).
+Чтобы удалить это сообщение, передайте идентификатор действия `delete_activity` методу `TurnContext` объекта. См. [действие действия — обновление и удаление](https://github.com/microsoft/botbuilder-python/blob/c04ecacb22c1f4b43a671fe2f1e4782218391975/tests/teams/scenarios/activity-update-and-delete/bots/activity_update_and_delete_bot.py).
 
 ```python
 for each activity_id in _list:

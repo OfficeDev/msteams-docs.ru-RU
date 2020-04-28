@@ -2,12 +2,12 @@
 title: Рекомендации по проектированию вкладок
 description: Описывает рекомендации по созданию вкладок для контента и совместной работы
 keywords: рекомендации по разработке Teams Справочник по настройке вкладок платформы
-ms.openlocfilehash: 409c8994b4266e37146038df054c0da6fb887607
-ms.sourcegitcommit: 576a4768b835422545cb6b6b3f75dce8318ea02d
+ms.openlocfilehash: 342e01e348c74eb143391a7d238396a2d866766a
+ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896501"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914555"
 ---
 # <a name="content-and-conversations-all-at-once-using-tabs"></a>Контент и беседы, все сразу с помощью вкладок
 
@@ -42,7 +42,7 @@ ms.locfileid: "42896501"
 
 ### <a name="integration"></a>Интеграция
 
-Узнайте о том, как уведомлять пользователей об активности вкладок путем разноски карточек в беседу, например.
+Узнайте, как уведомлять пользователей об активности вкладок путем отправки [адаптивных карточек](../../task-modules-and-cards/what-are-cards.md#adaptive-cards) в беседу.
 
 ### <a name="conversational"></a>Разговорному
 

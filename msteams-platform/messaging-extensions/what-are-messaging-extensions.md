@@ -4,12 +4,12 @@ author: clearab
 description: Обзор расширений обмена сообщениями на платформе Microsoft Teams
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: dd68f2005cbb3ed119a9aadfafd6066db221000b
-ms.sourcegitcommit: a08f1c7eb9fca11f44842773ab669c69d4af40db
+ms.openlocfilehash: 2a9fcdbcdda6bb85b6f5edc21253d05327ca5157
+ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225793"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914604"
 ---
 # <a name="what-are-messaging-extensions"></a>Что такое расширения обмена сообщениями?
 
@@ -56,7 +56,7 @@ ms.locfileid: "43225793"
 
 ![команда поиска для расширения системы обмена сообщениями](~/assets/images/search-extension.png)
 
-### <a name="link-unfurling"></a>Ссылка унфурлинг
+### <a name="link-unfurling"></a>Развернуть ссылку
 
 Кроме того, необходимо выполнить команду, чтобы вызвать службу при вставке URL-адреса в область "Создание сообщения". Эта функция, называемая **Link унфурлинг**, позволяет подписываться на получение вызова, когда URL-адреса, содержащие определенный домен, вставляются в область сообщения создание. Веб-служба может "унфурл" URL-адрес на детализированную карточку, предоставляя дополнительные сведения, чем стандартная карта предварительного просмотра веб-сайта. Вы можете даже добавить кнопки, чтобы пользователи могли сразу же предпринять действия, не выходя из клиента Microsoft Teams.
 
@@ -71,10 +71,10 @@ ms.locfileid: "43225793"
   * [Расширение системы обмена сообщениями с помощью команд на основе действий](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action)
   * [Расширение системы обмена сообщениями с помощью команд на основе поиска](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 Создание расширения для обмена сообщениями:
 
-* [Создание расширения обмена сообщениями](~/messaging-extensions/how-to/create-messaging-extension.md)
+* [Создать расширение для обмена сообщениями](~/messaging-extensions/how-to/create-messaging-extension.md)
 * [Команда определения расширения для обмена сообщениями о действиях](~/messaging-extensions/how-to/action-commands/define-action-command.md)
 * [Команда определения расширения поисковых сообщений](~/messaging-extensions/how-to/search-commands/define-search-command.md)
