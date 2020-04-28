@@ -3,9 +3,9 @@
   items:
     - name: Что такое приложения Microsoft Teams?
       href: overview.md
-    - name: Какие новые возможности в нем появились?
+    - name: Новые возможности
       href: whats-new.md
-- name: Начало работы
+- name: Руководства и примеры кода
   items:
     - name: 'Создайте приложение, используя C#'
       href: tutorials/get-started-dotnet-app-studio.md
@@ -13,15 +13,15 @@
       href: tutorials/get-started-nodejs-app-studio.md
     - name: Создать приложение с генератором Yeoman
       href: tutorials/get-started-yeoman.md
-- name: Образцы и шаблоны
+    - name: Расширение возможностей клиента Teams с помощью пользовательских приложений
+      href: tutorials/code-samples.md
+- name: Шаблоны и интеграция приложений
   items:
     - name: Готовые шаблоны приложений
       href: samples/app-templates.md
     - name: Готовые к работе соединители
       href: samples/shifts-wfm-connectors.md
-    - name: Примеры приложений
-      href: samples/code-samples.md
-- name: Концепции
+- name: Понятия
   expanded: true
   items:
     - name: Разработка приложений для Microsoft Teams
@@ -80,7 +80,7 @@
               href: concepts/deploy-and-publish/appsource/publish.md
             - name: Подготовьте ваше приложение
               items:
-                - name: Контрольный список перед подачей
+                - name: Контрольный список перед отправкой
                   href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
                 - name: Контрольный список страниц сведений о приложении
                   href: concepts/deploy-and-publish/appsource/prepare/detail-page-checklist.md
@@ -104,6 +104,10 @@
   items:
     - name: Что такое расширения обмена сообщениями?
       href: messaging-extensions/what-are-messaging-extensions.md
+    - name: Разработка
+      items:
+        - name: Рекомендации по разработке расширений для обмена сообщениями
+          href: messaging-extensions/design/messaging-extension-design.md
     - name: Примеры использования
       items:
         - name: С командой действия
