@@ -4,12 +4,12 @@ author: WashingtonKayaker
 description: Обновление и удаление сообщений, отправленных с ленты Microsoft Teams
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 222409fa0d02a571b7295dedb0c60b1ca3f90cca
-ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
+ms.openlocfilehash: 46994c6810197002ef1c108af4f725426395b37f
+ms.sourcegitcommit: 2b1fd50466d807869fd173371ba7dfd82a0064ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43914611"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43957189"
 ---
 # <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновление и удаление сообщений, отправленных с ленты.
 
@@ -53,6 +53,22 @@ update_result = await context.update_activity(new_activity)
 
 ```
 
+# <a name="rest-api"></a>[REST API](#tab/rest)
+
+>[!NOTE]
+>Вы можете разрабатывать приложения Teams в любой технологии веб-программирования и напрямую вызывать [API REST службы соединителя Bot](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0). Для этого необходимо реализовать процедуры безопасности [проверки подлинности](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0) с помощью запросов API.
+
+Чтобы обновить существующее действие в беседе, включите в конечную точку запроса `conversationId` и `activityId` . Для выполнения этого сценария необходимо кэшировать идентификатор действия, возвращенный исходным вызовом POST.
+
+```http
+PUT /v3/conversations/{conversationId}/activities/{activityId}
+```
+
+| | |
+|----|----|
+| **Основной текст запроса** | Объект [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object) |
+| **Возвращаемое значение** | Объект [ресаурцереспонсе](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#resourceresponse-object) |
+
 ---
 
 ## <a name="deleting-messages"></a>Удаление сообщений
@@ -90,5 +106,17 @@ for each activity_id in _list:
     await TurnContext.delete_activity(activity_id)
 ```
 
----
+# <a name="rest-api"></a>[REST API](#tab/rest)
 
+ Чтобы удалить существующее действие в беседе, включите в конечную точку запроса `conversationId` и `activityId` .
+
+```http
+DELETE /v3/conversations/{conversationId}/activities/{activityId}
+```
+
+| | |
+|----|----|
+| **Основной текст запроса** | н/д |
+| **Возвращаемое значение** | Код состояния HTTP, указывающий результат операции. В тексте ответа ничего не указывается. |
+
+---
