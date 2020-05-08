@@ -100,54 +100,70 @@
           href: concepts/authentication/authentication.md
         - name: Настроить поставщиков удостоверений
           href: concepts/authentication/configure-identity-provider.md
-- name: Расширения для сообщений
+- name: Вкладки — встроенные веб-интерфейсы
   items:
-    - name: Что такое расширения обмена сообщениями?
-      href: messaging-extensions/what-are-messaging-extensions.md
-    - name: Разработка
-      items:
-        - name: Рекомендации по разработке расширений для обмена сообщениями
-          href: messaging-extensions/design/messaging-extension-design.md
+    - name: Что такое пользовательские вкладки?
+      href: tabs/what-are-tabs.md
     - name: Примеры использования
       items:
-        - name: С командой действия
+        - name: Node.js и React
           items:
-            - name: 'C#/.NET'
-              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action'
-            - name: TypeScript/Node.js
-              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action'
-        - name: С командой поиска
+            - name: Создать канал и вкладку группы
+              href: tabs/quickstarts/create-channel-group-tab-node-yeoman.md
+            - name: Создать личную вкладку
+              href: tabs/quickstarts/create-personal-tab-node-yeoman.md
+        - name: 'C#/ASP.NET Core'
           items:
-            - name: 'C#/.NET'
-              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search'
-            - name: TypeScript/Node.js
-              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search'
+            - name: Создать канал и вкладку группы
+              href: tabs/quickstarts/create-channel-group-tab-dotnet-core.md
+            - name: Создать личную вкладку
+              href: tabs/quickstarts/create-personal-tab-dotnet-core.md
+        - name: 'C#/ASP.NET MVC'
+          items:
+            - name: Создать канал и вкладку группы
+              href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
+            - name: Создать личную вкладку
+              href: tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md
+    - name: Создайте свои вкладки
+      items:
+        - name: Обзор дизайна
+          href: tabs/design/tabs.md
+        - name: Вкладки на мобильных клиентах
+          href: tabs/design/tabs-mobile.md
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создать расширение для обмена сообщениями
-          href: messaging-extensions/how-to/create-messaging-extension.md
-        - name: Команды на основе действий
+        - name: Добавить вкладки в ваше приложение
+          href: tabs/how-to/add-tab.md
+        - name: Создать страницы вкладок
           items:
-            - name: Определить команды действий
-              href: messaging-extensions/how-to/action-commands/define-action-command.md
-            - name: Создать и отправить модуль задачи
-              href: messaging-extensions/how-to/action-commands/create-task-module.md
-            - name: Отправить ответ на действие отправки
-              href: messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md
-        - name: Поисковые команды
+            - name: Создать страницу контента
+              href: tabs/how-to/create-tab-pages/content-page.md
+            - name: Создать страницу конфигурации
+              href: tabs/how-to/create-tab-pages/configuration-page.md
+            - name: Создать страницу удаления вкладки
+              href: tabs/how-to/create-tab-pages/removal-page.md
+        - name: Добавить аутентификацию на ваши вкладки
           items:
-            - name: Определить команды поиска
-              href: messaging-extensions/how-to/search-commands/define-search-command.md
-            - name: Получать и отвечать на поисковые запросы
-              href: messaging-extensions/how-to/search-commands/respond-to-search.md
-        - name: Развернуть ссылку
-          href: messaging-extensions/how-to/link-unfurling.md
-        - name: Добавить аутентификацию
-          href: messaging-extensions/how-to/add-authentication.md
-        - name: Добавить страницу конфигурации
-          href: messaging-extensions/how-to/add-configuration-page.md
-- name: Боты
+            - name: Последовательность аутентификации
+              href: tabs/how-to/authentication/auth-flow-tab.md
+            - name: Использование аутентификации Azure AD
+              href: tabs/how-to/authentication/auth-tab-aad.md
+            - name: Использование тихой аутентификации
+              href: tabs/how-to/authentication/auth-silent-aad.md
+            - name: Использование единой регистрации
+              href: tabs/how-to/authentication/auth-aad-sso.md
+        - name: Использование клиентского SDK для Teams
+          href: tabs/how-to/using-teams-client-sdk.md
+        - name: Получение дополнительного контекста Teams
+          href: tabs/how-to/access-teams-context.md
+        - name: Вкладки DevTools для Microsoft Teams
+          href: tabs/how-to/developer-tools.md
+        - name: Добавление пользовательской вкладки в SharePoint
+          href: tabs/how-to/tabs-in-sharepoint.md
+        - name: Запросить разрешение устройства
+          href: tabs/how-to/native-device-permissions.md
+- name: Боты — взаимодействие на основе беседы
   items:
     - name: Что такое боты в Microsoft Teams?
       href: bots/what-are-bots.md
@@ -218,70 +234,54 @@
           href: bots/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md
         - name: 'Мультимедиа, размещенные в приложении'
           href: bots/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md
-- name: Вкладки
+- name: Расширения для обмена сообщениями — взаимодействие для решения задач
   items:
-    - name: Что такое пользовательские вкладки?
-      href: tabs/what-are-tabs.md
+    - name: Что такое расширения обмена сообщениями?
+      href: messaging-extensions/what-are-messaging-extensions.md
+    - name: Разработка
+      items:
+        - name: Рекомендации по разработке расширений для обмена сообщениями
+          href: messaging-extensions/design/messaging-extension-design.md
     - name: Примеры использования
       items:
-        - name: Node.js и React
+        - name: С командой действия
           items:
-            - name: Создать канал и вкладку группы
-              href: tabs/quickstarts/create-channel-group-tab-node-yeoman.md
-            - name: Создать личную вкладку
-              href: tabs/quickstarts/create-personal-tab-node-yeoman.md
-        - name: 'C#/ASP.NET Core'
+            - name: 'C#/.NET'
+              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action'
+            - name: TypeScript/Node.js
+              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action'
+        - name: С командой поиска
           items:
-            - name: Создать канал и вкладку группы
-              href: tabs/quickstarts/create-channel-group-tab-dotnet-core.md
-            - name: Создать личную вкладку
-              href: tabs/quickstarts/create-personal-tab-dotnet-core.md
-        - name: 'C#/ASP.NET MVC'
-          items:
-            - name: Создать канал и вкладку группы
-              href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
-            - name: Создать личную вкладку
-              href: tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md
-    - name: Создайте свои вкладки
-      items:
-        - name: Обзор дизайна
-          href: tabs/design/tabs.md
-        - name: Вкладки на мобильных клиентах
-          href: tabs/design/tabs-mobile.md
+            - name: 'C#/.NET'
+              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search'
+            - name: TypeScript/Node.js
+              href: 'https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search'
     - name: Практические руководства
       expanded: true
       items:
-        - name: Добавить вкладки в ваше приложение
-          href: tabs/how-to/add-tab.md
-        - name: Создать страницы вкладок
+        - name: Создать расширение для обмена сообщениями
+          href: messaging-extensions/how-to/create-messaging-extension.md
+        - name: Команды на основе действий
           items:
-            - name: Создать страницу контента
-              href: tabs/how-to/create-tab-pages/content-page.md
-            - name: Создать страницу конфигурации
-              href: tabs/how-to/create-tab-pages/configuration-page.md
-            - name: Создать страницу удаления вкладки
-              href: tabs/how-to/create-tab-pages/removal-page.md
-        - name: Добавить аутентификацию на ваши вкладки
+            - name: Определить команды действий
+              href: messaging-extensions/how-to/action-commands/define-action-command.md
+            - name: Создать и отправить модуль задачи
+              href: messaging-extensions/how-to/action-commands/create-task-module.md
+            - name: Отправить ответ на действие отправки
+              href: messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md
+        - name: Поисковые команды
           items:
-            - name: Последовательность аутентификации
-              href: tabs/how-to/authentication/auth-flow-tab.md
-            - name: Использование аутентификации Azure AD
-              href: tabs/how-to/authentication/auth-tab-aad.md
-            - name: Использование тихой аутентификации
-              href: tabs/how-to/authentication/auth-silent-aad.md
-            - name: Использование единой регистрации
-              href: tabs/how-to/authentication/auth-aad-sso.md
-        - name: Использование клиентского SDK для Teams
-          href: tabs/how-to/using-teams-client-sdk.md
-        - name: Получение дополнительного контекста Teams
-          href: tabs/how-to/access-teams-context.md
-        - name: Вкладки DevTools для Microsoft Teams
-          href: tabs/how-to/developer-tools.md
-        - name: Добавление пользовательской вкладки в SharePoint
-          href: tabs/how-to/tabs-in-sharepoint.md
-        - name: Запросить разрешение устройства
-          href: tabs/how-to/native-device-permissions.md
-- name: Модули задач и карточки
+            - name: Определить команды поиска
+              href: messaging-extensions/how-to/search-commands/define-search-command.md
+            - name: Получать и отвечать на поисковые запросы
+              href: messaging-extensions/how-to/search-commands/respond-to-search.md
+        - name: Развернуть ссылку
+          href: messaging-extensions/how-to/link-unfurling.md
+        - name: Добавить аутентификацию
+          href: messaging-extensions/how-to/add-authentication.md
+        - name: Добавить страницу конфигурации
+          href: messaging-extensions/how-to/add-configuration-page.md
+- name: Модули задач и карты — широкие возможности обмена сообщениями и уведомлений
   items:
     - name: Что такое модули задач?
       href: task-modules-and-cards/what-are-task-modules.md
@@ -303,7 +303,7 @@
           href: task-modules-and-cards/task-modules/task-modules-bots.md
         - name: Из вкладки
           href: task-modules-and-cards/task-modules/task-modules-tabs.md
-- name: Веб-перехватчики и соединительные линии
+- name: Веб-перехватчики и соединители — запрограммированные сообщения и уведомления
   items:
     - name: Что такое веб-перехватчики и соединительные линии?
       href: webhooks-and-connectors/what-are-webhooks-and-connectors.md
