@@ -6,12 +6,12 @@ layout: LandingPage
 ms.topic: landing-page
 localization_priority: Priority
 ms.author: lajanuar
-ms.openlocfilehash: d73bfe89ba2cc8a62c912572786bd81ab9e641fe
-ms.sourcegitcommit: 058b7bbd817af5f513e0e018f2ef562dc3086a84
+ms.openlocfilehash: 66bc048e3507326d8a330f8d8c1e698e0fdb0576
+ms.sourcegitcommit: 214eccbadb7f3a67236b79a041ef487b7bf6dfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43120829"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44163318"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -38,17 +38,21 @@ ms.locfileid: "43120829"
                                         <h3 style="font-size: 1.15rem">Изучите нашу документацию</h3>
                                         <hr />
                                         <p><a class="barLink" style="font-size: 0.95rem"
-                                                href="/microsoftteams/platform/overview">Создание приложений на платформе Microsoft Teams</a></p>
+                                              href="/microsoftteams/platform/overview">Создание приложений на платформе Microsoft Teams</a></p>
+                                        <p ><a class="barLink" style="font-size: 0.95rem"
+                                                href="/microsoftteams/platform/tabs/what-are-tabs"><img src="/microsoftteams/platform/assets/icons/tab-icon-2.svg" height="16" width="16" alt="tab icon">Вкладки - встроенный веб-интерфейс</a></p>
                                         <p><a class="barLink" style="font-size: 0.95rem"
-                                                href="/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions">Целенаправленные взаимодействия с использованием расширений для обмена сообщениями</a></p>
+                                                href="/microsoftteams/platform/bots/what-are-bots"><img src="/microsoftteams/platform/assets/icons/bot-icon-2.svg" height="16" width="16"  alt="bot icon">Боты - общение на основе взаимодействий</a></p>
                                         <p><a class="barLink" style="font-size: 0.95rem"
-                                                href="/microsoftteams/platform/tabs/what-are-tabs">Встроенные веб-интерфейсы с вкладками</a></p>
+                                                href="/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions"><img src="/microsoftteams/platform/assets/icons/messaging-icon-2.svg" height="16" width="16" alt="messaging icon">Расширения обмена сообщениями — задачи, ориентированные на взаимодействия</a></p>
+                                         <p><a class="barLink" style="font-size: 0.95rem"
+                                                href="/microsoftteams/platform/task-modules-and-cards/what-are-task-modules"><img src="https://docs.microsoft.com/media/common/i_queries.svg" height="16" width="16" alt="task module icon">Модули задач и карты — широкие возможности обмена сообщениями и уведомлениями</a></p>
                                         <p><a class="barLink" style="font-size: 0.95rem"
-                                                href="/microsoftteams/platform/bots/what-are-bots">Боты в Microsoft Teams</a></p>
+                                                href="/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors"><img src="https://docs.microsoft.com/media/common/i_service-hooks.svg" height="16" width="16" alt="webhooks connectors icon">Веб-перехватчики и соединительные линии — запрограммированные сообщения и уведомления</a></p>
                                         <p><a class="barLink" style="font-size: 0.95rem"
-                                                href="/graph/teams-concept-overview">Microsoft Teams + Graph</a></p>
+                                                href="https://docs.microsoft.com/graph/teams-concept-overview"><img src="/microsoftteams/platform/assets/icons/graph-icon-1.svg" height="16" width="16" alt="graph icon">Microsoft Teams + Graph</a></p>
                                         <p><a class="barLink" style="font-size: 0.95rem"
-                                                href="/MicrosoftTeams/Microsoft-Teams">Администрирование Microsoft Teams</a></p>
+                                                href="https://docs.microsoft.com/microsoftteams/"><img src="https://docs.microsoft.com/media/common/i_identity-protection.svg" height="16" width="16" alt="teams admin icon"> Администрирование Microsoft Teams</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -432,6 +436,82 @@ ms.locfileid: "43120829"
                                                 <div class="cardText">
                                                     <h3>Приложение "Групповые действия"</h3>
                                                     <p>Быстро создавайте группы действий и рабочие процессы совместной работы, а также управляйте ими.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/microsoft-teams-apps-quickresponses">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/illustrations/teams-troubleshoot.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Приложение для быстрых ответов</h3>
+                                                    <p>Эффективно отвечайте на часто задаваемые вопросы пользователей и создавайте динамическую библиотеку ответов.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/microsoft-teams-apps-remotesupport">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-technical-support-4.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Бот для удаленной поддержки</h3>
+                                                    <p>Обеспечьте целенаправленный интерфейс между заказчиками в вашей организации и внутренней службой поддержки.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/microsoft-teams-apps-incidentreport">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/illustrations/system-center-service-manager.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Бот для отчетов об инцидентах</h3>
+                                                    <p>Оптимизируйте управление инцидентами в вашей организации.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/OfficeDev/microsoft-teams-apps-requestateam">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com//media/illustrations/teams-fast-track.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Приложение «Запрос команды»</h3>
+                                                    <p>Усовершенствуйте новый процесс создания команды вашей организации.</p>
                                                 </div>
                                             </div>
                                         </div>
