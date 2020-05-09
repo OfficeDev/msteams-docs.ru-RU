@@ -3,12 +3,12 @@ title: Сертификация приложений
 description: Описание программы самооценки из Store Apps
 keywords: Teams для обеспечения соответствия требованиям в appsource Store App Partner Center
 ms.date: 05/06/2019
-ms.openlocfilehash: 11c69527e60290f908e8fd3c781a02cd26bbbe14
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: ff159f39061dd7073a93d3270d254365db4b2228
+ms.sourcegitcommit: 950e5f9c2a58d3856d026a251c5fe112d4d6121a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675508"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170509"
 ---
 # <a name="microsoft-teams-app-certification"></a>Сертификация приложений Microsoft Teams
 
@@ -26,7 +26,7 @@ ms.locfileid: "41675508"
 
 ### <a name="for-existing-store-apps"></a>Для существующих приложений Магазина
 
-Если у вас уже есть приложение в магазине приложений, и вы хотите присоединиться к программе, вы можете связаться с нами, заполнив [эту форму](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3oKPRKv815GlRdzCCYPJGZUOUgzSUtFNU8yOFpYR0oyWElHVkxHODhQUyQlQCN0PWcu). Кто-то из нашей команды получит доступ к началу работы.
+Если у вас уже есть приложение в магазине приложений, и вы хотите присоединиться к программе, вы можете связаться с нами, заполнив [эту форму](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3oKPRKv815GlRdzCCYPJGZUMzlXMVVIRkhXQUVXT0paQVQ0UUdRWEZSSCQlQCN0PWcu). Кто-то из нашей команды получит доступ к началу работы.
 
 ### <a name="for-new-or-updated-store-apps"></a>Для новых или обновленных приложений Магазина
 
