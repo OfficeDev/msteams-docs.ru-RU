@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: f8550070ed010d99c0c33202ada95b64c05cdc4f
-ms.sourcegitcommit: 68aeac34a2e585b985eabfae5d160b6b26d43b1a
+ms.openlocfilehash: de3366594d58996b689fc3d50f41a70ff80facee
+ms.sourcegitcommit: 28af65730884b788ff77a4ec4032219380df8b70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982146"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44281834"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -17,9 +17,9 @@ ms.locfileid: "42982146"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
-| 03/24/2020 | Добавлена поддержка получения одного участника беседы и дополнительная поддержка извлечения элементов, на которых выполняется страница. | [Получение контекста команд для ленты](~/bots/how-to/get-teams-context.md)
-| 12/26/2019 | `replyToId` Параметр в полезных данных, отправляемых на Bot, больше не шифруется, что позволяет использовать это значение для создания диплинкс к этим сообщениям. Полезные данные сообщений включают в себя зашифрованные значения в `legacy.replyToId`параметре.  |
-| 11/5/2019 | Единый вход с использованием пакета SDK для JavaScript в Teams на странице веб-контента находится в предварительной версии для разработчиков | [Единый вход](~/tabs/how-to/authentication/auth-aad-sso.md) |
+| 03/24/2020 | Добавлена поддержка получения одного участника беседы и дополнительная поддержка извлечения элементов, на которых выполняется страница. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md)
+| 12/26/2019 | `replyToId`Параметр в полезных данных, отправляемых на Bot, больше не шифруется, что позволяет использовать это значение для создания диплинкс к этим сообщениям. Полезные данные сообщений включают в себя зашифрованные значения в параметре `legacy.replyToId` .  |
+| 11/5/2019 | Единый вход с использованием пакета SDK для JavaScript в Teams на странице веб-контента находится в предварительной версии для разработчиков | [Единый вход](tabs/how-to/authentication/auth-aad-sso.md) |
 | 10/31/2019 | Документация по расширению Боты и обмену сообщениями обновлена, чтобы отразить пакет SDK 4,6 Bot. Документация по пакету SDK v3 доступна в разделе Resources. | Документация по добавочному номеру ленты и почтовой службе. |
 | 10/31/2019 | Новая структура документации и оптимизация кода основной статьи. Сообщите о недоставленных ссылках или 404, создав вопрос GitHub | Все из них! |
 | 9/13/2019 | Запрос Bot устанавливается из расширения обмена сообщениями на основе действий | [Запуск действий с расширениями обмена сообщениями](resources/messaging-extension-v3/create-extensions.md#request-to-install-your-conversational-bot)
@@ -29,7 +29,7 @@ ms.locfileid: "42982146"
 | 05/25/2019 | Боты в беседах групп | [Взаимодействие с каналом "bot" в группе "чат" или "канал"](~/concepts/bots/bot-conversations/bots-conv-channel.md) |
 | 05/20/2019 | Локализация манифеста приложения | [Локализация приложений](~/publishing/apps-localization.md) |
 | 05/20/2019 | Действия с сообщениями | [Действия с сообщениями](resources/messaging-extension-v3/create-extensions.md#action-type-message-extensions) |
-| 05/20/2019 | Link унфурлинг (пользовательский Просмотр URL-адресов) | [Ссылка унфурлинг](messaging-extensions/how-to/link-unfurling.md)|
+| 05/20/2019 | Link унфурлинг (пользовательский Просмотр URL-адресов) | [Развернуть ссылку](messaging-extensions/how-to/link-unfurling.md)|
 | 05/06/2019 | Программа сертификации приложений для приложений Магазина | [Сертификация приложений](~/publishing/application-certification.md) |
 | 05/06/2019 | Шаблоны приложений теперь доступны. | [Шаблоны приложений](~/samples/app-templates.md) |
 | 04/23/2019 | Теперь доступны расширения обмена сообщениями на основе действий | [Расширения сообщений на основе действий](~/concepts/messaging-extensions/create-extensions.md) |
@@ -39,7 +39,7 @@ ms.locfileid: "42982146"
 | 11/11/2018 | Начало работы с узлом JS и .NET/C# было обновлено для использования App Studio в Teams, а новый раздел добавлен в приложения Teams на базе узла для хостинга в Azure. | [Начало работы на платформе Microsoft Teams с C#/.нет и App Studio](~/get-started/get-started-dotnet-app-studio.md), Приступая к [работе на платформе Microsoft Teams с узлом JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [разместите приложение Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
 | 11/09/2018 | Теперь вы можете создавать глубокие ссылки на частные беседы между пользователями. | [Глубокая ссылка на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
 | 11/08/2018 | SharePoint Framework 1,7 поставляется с новым компонентом для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
-| 11/05/2018 | Был выпущен компонент "модуль задач". Модуль задачи позволяет создавать Модальные всплывающие окна в приложении Teams, как с боты, так и с помощью вкладок. Во всплывающем окне можно запустить собственный код HTML/JavaScript, показать мини-приложение `<iframe>`, например YouTube или Microsoft Stream Stream, или отобразить [адаптивную карту](https://docs.microsoft.com/adaptive-cards/). | [Обзор модуля задачи](~/concepts/task-modules/task-modules-overview.md), [модуль задачи на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задачи в Боты](~/concepts/task-modules/task-modules-bots.md) |
+| 11/05/2018 | Был выпущен компонент "модуль задач". Модуль задачи позволяет создавать Модальные всплывающие окна в приложении Teams, как с боты, так и с помощью вкладок. Во всплывающем окне можно запустить собственный код HTML/JavaScript, показать мини-приложение, `<iframe>` например YouTube или Microsoft Stream Stream, или отобразить [адаптивную карту](https://docs.microsoft.com/adaptive-cards/). | [Обзор модуля задачи](~/concepts/task-modules/task-modules-overview.md), [модуль задачи на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задачи в Боты](~/concepts/task-modules/task-modules-bots.md) |
 | 10/05/2018 | Сведения о форматировании карточек обновлены и протестированы в клиентах для настольных ПК, iOS и Android для Teams. | [Карточки](~/concepts/cards/cards.md), [Форматирование карточек](~/concepts/cards/cards-format.md) |
 | 09/24/2018 | Звонки и API собраний по сети для Microsoft Graph были выпущены для бета-версии, а приложения Teams теперь могут взаимодействовать с пользователями с помощью голосовых и видеоконференций. | [Звонки и собрания по сети Боты](~/concepts/calls-and-meetings/registering-calling-bot.md), [Основные понятия мультимедиа в реальном времени](~/concepts/calls-and-meetings/real-time-media-concepts.md), [регистрация абонентского робота](~/concepts/calls-and-meetings/registering-calling-bot.md), [Отладка и локальное тестирование](~/concepts/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md), работа с [размещенными в приложении носителями](~/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md), [обработка уведомлений о входящих вызовах](~/concepts/calls-and-meetings/call-notifications.md) |
 | 09/11/2018 | Страницы настройки вкладок теперь имеют значительно больше времени. | [Конструктор вкладок](tabs/design/tabs.md) |
@@ -56,12 +56,12 @@ ms.locfileid: "42982146"
 | 05/31/2018 | Бета-версия разработчиков Teams (Ring 3,6) была обновлена и добавлена возможность добавлять Боты и вкладки в групповой чат. | [Функции в предварительной версии для разработчиков](~/resources/dev-preview/developer-preview-features.md), [схема предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md)|
 | 05/29/2018 | Адаптивные карты теперь поддерживаются в Teams в [действиях адаптивной карточки в Teams](task-modules-and-cards/cards/cards-reference.md) |
 | 05/29/2018 | Если вы используете [Предварительный просмотр для разработчиков](~/resources/dev-preview/developer-preview-intro.md), пользователь Bot теперь может отправлять и получать файлы.| [Отправка и получение файлов через Bot](~/concepts/bots/bots-files.md), [функции в общедоступной предварительной версии для разработчиков Microsoft Teams](~/resources/dev-preview/developer-preview-features.md)|
-| 04/17/2018 | в полезные данные для действий `Invoke` и `MessageBack` карт добавлена реплитоид. Это особенно полезно, если вам нужно обновить сообщение, из которого поступило действие карточки. | [Действия с картой](~/concepts/cards/cards-actions.md)|
+| 04/17/2018 | в полезные данные для `Invoke` действий и карт добавлена реплитоид `MessageBack` . Это особенно полезно, если вам нужно обновить сообщение, из которого поступило действие карточки. | [Действия с картой](~/concepts/cards/cards-actions.md)|
 | 04/12/2018 | Добавлена эта тема для отслеживания изменений в программном интерфейсе Teams и этом наборе документации. | [Новые возможности](~/whats-new.md)|
 | 04/10/2018 | Изменены URL-адреса проверки подлинности для согласованного использования идентификатора клиента в пути. | [Процесс проверки](~/concepts/authentication/auth-flow-tab.md)подлинности вкладок [AAD](~/concepts/authentication/auth-tab-AAD.md) на вкладках|
 | 04/06/2018 | Добавлены рекомендации по проектированию для использования поля "команда". |[Поле "команда"](~/resources/design/framework/command-box.md)|
-| 04/02/2018 | Использование боты для отправки уведомлений для вашего приложения. |[Только уведомления Боты](~/concepts/bots/bots-notification-only.md)|
-| 03/27/2018 | Расширенная документация для упреждающего обмена сообщениями. |[Начало беседы](./concepts/bots/bot-conversations/bots-conv-proactive.md)|
+| 04/02/2018 | Использование боты для отправки уведомлений для вашего приложения. |[Боты только для уведомлений](~/concepts/bots/bots-notification-only.md)|
+| 03/27/2018 | Расширенная документация для упреждающего обмена сообщениями. |[Начиная разговор](./concepts/bots/bot-conversations/bots-conv-proactive.md)|
 | 03/15/2018 | Переструктурированная документация для карточек. |[Карточки](~/concepts/cards/cards.md), [действия карточек](~/concepts/cards/cards-actions.md), [Форматирование карточек](~/concepts/cards/cards-format.md), [Справочник по карточкам](~/concepts/cards/cards-reference.md)|
 | 03/03/2018 | Добавлена документация для Teams Studio App Studio. |[Быстрая разработка приложений с помощью Team Studio App Studio](~/get-started/get-started-app-studio.md) [с помощью библиотеки элементов управления в App Studio](~/get-started/app-studio-component-library.md)|
 | 02/27/2018 | Добавлен пример кода, демонстрирующий метод Астеамсчаннелаккаунтс (). |[Получение контекста для ленты](~/concepts/bots/bots-context.md)|
@@ -69,4 +69,4 @@ ms.locfileid: "42982146"
 
 ## <a name="submit-your-questions-bugs-feature-requests-and-contributions"></a>Отправляйте свои вопросы, сообщения об ошибках, функции и публикации
 
-Мы будем слушать сообщество разработчиков по [нескольким каналам](~/feedback.md).
+Мы будем слушать сообщество разработчиков по [нескольким каналам](feedback.md).
