@@ -184,8 +184,10 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создать бота для Teams
+        - name: Сборка бота для Teams
           href: bots/how-to/create-a-bot-for-teams.md
+        - name: Интегрируйте чат-агента Power Virtual Agent с Teams
+          href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
         - name: Беседы
           items:
             - name: Основы разговора
@@ -318,6 +320,14 @@
           href: webhooks-and-connectors/how-to/connectors-creating.md
         - name: Отправка сообщений соединителям и веб-перехватчикам
           href: webhooks-and-connectors/how-to/connectors-using.md
+- name: Разрешения API Graph
+  items:
+    - name: Согласие с определением ресурсов (RSC)
+      href: graph-permissions/resource-specific-consent.md
+    - name: Проверка разрешений для конкретных ресурсов
+      href: graph-permissions/test-resource-specific-consent.md
+    - name: Тестовый файл RSC JSON
+      href: graph-permissions/test-rsc-json-file.md
 - name: Ресурсы
   items:
     - name: Боты - v3 SDK
