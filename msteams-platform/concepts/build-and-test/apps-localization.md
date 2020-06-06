@@ -3,12 +3,12 @@ title: Локализация для групповых приложений
 description: Описание проблем, связанных с локализацией приложения
 keywords: Teams Publishing Store Office Publishing AppSource Language Localization
 ms.date: 05/15/2018
-ms.openlocfilehash: c7d8ff47d370badcc75e3ad5d10a2ca298b80195
-ms.sourcegitcommit: 058b7bbd817af5f513e0e018f2ef562dc3086a84
+ms.openlocfilehash: 30e4a2589bf5c1093723406c78cff2258554c486
+ms.sourcegitcommit: 6c786434b56cc8c2765a14aa1f6149870245f309
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43120285"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44590860"
 ---
 # <a name="localization-for-microsoft-teams-apps"></a>Локализация приложений Microsoft Teams
 
@@ -40,13 +40,13 @@ ms.locfileid: "43120285"
 
 ## <a name="localizing-the-strings-in-your-app-manifest"></a>Локализация строк в манифесте приложения
 
-Для правильной локализации приложения необходимо использовать схему приложения Microsoft Teams версии 1.5 +. Это можно сделать, присвоив `$schema` атрибуту в файле manifest. JSON значение 'https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json' и обновив свойство ' версия манифеста ' на ' 1,5 '.
+Для правильной локализации приложения необходимо использовать схему приложения Microsoft Teams версии 1.5 +. Это можно сделать, присвоив `$schema` атрибуту в файле manifest. JSON значение ' https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json ' и обновив свойство ' версия манифеста ' на ' 1,5 '.
 
 ### <a name="example-manifestjson-change"></a>Пример изменения манифеста. JSON
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   ...
 }
@@ -66,7 +66,7 @@ ms.locfileid: "43120285"
 }
 ```
 
-Вы можете предоставить дополнительные файлы JSON с переводом всех строк, отличных от пользователя, в манифесте. Эти файлы должны соответствовать [схеме JSON файла локализации](../../resources/schema/localization-schema.md) , и их необходимо добавить в свойство "локализатионинфо" манифеста. Каждый файл соответствует тегу языка, который клиент Teams использует для выбора соответствующих строк. Тег Language <language> - <region> имеет форму, но мы не рекомендуем опустить <region> часть для всех регионов, поддерживающих нужный язык.
+Вы можете предоставить дополнительные файлы JSON с переводом всех строк, отличных от пользователя, в манифесте. Эти файлы должны соответствовать [схеме JSON файла локализации](../../resources/schema/localization-schema.md) , и их необходимо добавить в свойство "локализатионинфо" манифеста. Каждый файл соответствует тегу языка, который клиент Teams использует для выбора соответствующих строк. Тег Language имеет форму, <language> - <region> но мы не рекомендуем опустить <region> часть для всех регионов, поддерживающих нужный язык.
 
 Клиент Teams будет применять строки в указанном порядке: строки языка по умолчанию — строки языка по умолчанию — > только строки > язык пользователя и строки области пользователя.
 
@@ -114,7 +114,7 @@ ms.locfileid: "43120285"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
   "name.short": "Le App",
   "name.full": "App pour Microsoft Teams",
   "description.short": "Créez d'excellentes applications pour Microsoft Teams avec App.",
@@ -129,4 +129,4 @@ ms.locfileid: "43120285"
 
 ## <a name="handling-localized-text-submissions-from-your-users"></a>Обработка локализованных текстов, отправленных пользователями
 
-Если вы предоставляете локализованные версии вашего приложения, то, скорее всего, ваши пользователи будут отвечать на один и тот же язык. Команды не переводятся обратно на язык по умолчанию, поэтому ваше приложение должно их обработать. Например, если вы задаете локализованные `commandList`сообщения, ответы на ваш Bot будут иметь локализованный текст команды, а не язык по умолчанию. Ваше приложение должно будет отвечать соответствующим образом.
+Если вы предоставляете локализованные версии вашего приложения, то, скорее всего, ваши пользователи будут отвечать на один и тот же язык. Команды не переводятся обратно на язык по умолчанию, поэтому ваше приложение должно их обработать. Например, если вы задаете локализованные сообщения `commandList` , ответы на ваш Bot будут иметь локализованный текст команды, а не язык по умолчанию. Ваше приложение должно будет отвечать соответствующим образом.
