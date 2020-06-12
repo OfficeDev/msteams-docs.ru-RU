@@ -4,12 +4,12 @@ author: clearab
 description: Обзор бесед в боты в Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: a88d516c57faa96e29de3e786910a13c4d65ac84
-ms.sourcegitcommit: 61c93b22490526b1de87c0b14a3c7eb6e046caf6
+ms.openlocfilehash: 140be426ac789efbf044130b0683f60af9f617d6
+ms.sourcegitcommit: b822584b643e003d12d2e9b5b02a0534b2d57d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44453870"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44704469"
 ---
 # <a name="what-are-conversational-bots"></a>Что такое боты для общения?
 
@@ -21,7 +21,7 @@ ms.locfileid: "44453870"
 
 ## <a name="build--a-bot-for-teams-with-the-microsoft-bot-framework"></a>Создание почтового робота для Teams с помощью Microsoft Bot Framework
 
-Microsoft Bot Framework] ( https://dev.botframework.com/) это полнофункциональный пакет SDK для создания боты с помощью C#, Java, Python и JavaScript. Если у вас уже есть Bot, основанный на Bot Framework, вы можете легко адаптировать его для работы в Microsoft Teams. Мы рекомендуем использовать язык C# или Node. js, чтобы воспользоваться преимуществами наших [пакетов SDK](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK для Bot построителя следующим образом:
+[Microsoft Bot Framework](https://dev.botframework.com/) — это ПОЛНОФУНКЦИОНАЛЬНЫЙ пакет SDK для создания боты с помощью C#, Java, Python и JavaScript. Если у вас уже есть Bot, основанный на Bot Framework, вы можете легко адаптировать его для работы в Microsoft Teams. Мы рекомендуем использовать язык C# или Node.js, чтобы воспользоваться преимуществами наших [пакетов SDK](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK для Bot построителя следующим образом:
 
 * Используйте специализированные типы карточек, такие как соединительная карта Office 365.
 * Использование и Настройка данных о каналах в действиях, характерных для Teams.
@@ -103,7 +103,7 @@ BOT: в какой день?
 * [Командная ленты для бесед в C#/дотнет](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)
 * [Бот для беседы в Teams на JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 > [!div class="nextstepaction"]
 > [Основы боты в Teams](~/bots/bot-basics.md)

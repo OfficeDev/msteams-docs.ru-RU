@@ -2,12 +2,12 @@
 title: Руководство по процессу утверждения приложений Microsoft Teams
 description: Описание процесса утверждения приложения, опубликованного в магазине приложений Microsoft Teams
 keywords: Публикация Teams в магазине Office AppSource
-ms.openlocfilehash: 0f4a93f6c93ab0dd4147d7e6b8dce0beac26ed95
-ms.sourcegitcommit: 5207af18a032763fecf2b932d7e29ced1ee11ccd
+ms.openlocfilehash: e93a17453e514b1e89f3f7070ff1f31000719260
+ms.sourcegitcommit: b822584b643e003d12d2e9b5b02a0534b2d57d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43937352"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44704490"
 ---
 # <a name="submit-your-app-to-appsource"></a>Передача приложения в AppSource
 
@@ -16,7 +16,8 @@ ms.locfileid: "43937352"
 Публикация приложения в [AppSource](https://appsource.microsoft.com) делает его доступным в каталоге приложений Teams и в Интернете. На высоком уровне процесс отправки приложения в AppSource:
 
 1. Разработайте приложение, следуя нашим [рекомендациям по проектированию](~/concepts/design/understand-use-cases.md). Вкладки должны следовать [рекомендациям по проектированию вкладок](~/tabs/design/tabs.md). Боты должны следовать [рекомендациям по созданию ленты](~/bots/design/bots.md).
-1. [Настройте учетную запись разработчика](/office/dev/store/open-a-developer-account) в [центре партнеров](https://support.microsoft.com/help/4499930/partner-center-overview).
+1. Убедитесь, что приложение соответствует [политикам проверки](/legal/marketplace/certification-policies) приложений для Microsoft Teams.
+1. [Настройте учетную запись разработчика](/office/dev/store/open-a-developer-account) в [центре партнеров](https://support.microsoft.com/help/4499930/partner-center-overview). *Сведения* [о том, как создать учетную запись центра партнеров](#how-do-i-create-a-partner-center-account) в разделе вопросы и ответы, приведенные ниже.
 1. Подготовьте приложение к отправке, следуя нашим [контрольному списку отправки](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md).
 1. Ознакомьтесь [с нашими советами по успешной отправке приложений](~/concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md).
 1. Отправляйте свои пакеты в [AppSource через центр партнеров](/office/dev/store/use-partner-center-to-submit-to-appsource).
@@ -37,33 +38,35 @@ ms.locfileid: "43937352"
 - Если вы не знакомы с центром партнеров и у вас нет учетной записи в сети Microsoft, [Создайте учетную запись с помощью страницы "регистрация центра партнеров"](/office/dev/store/open-a-developer-account#create-an-account-using-an-existing-partner-center-enrollment).
 - Если вы уже зарегистрированы в партнерской сети, [Создайте учетную запись непосредственно в центре партнеров, используя существующую регистрацию](/office/dev/store/).
 
-## <a name="how-do-i-add-my-phone-number-to-the-partner-profile-contact-section"></a>Как добавить номер телефона в раздел контактного профиля партнера?
-
-Номер телефона состоит из трех частей — кода страны, кода города и номера телефона. Если номер телефона не содержит код города, оставьте второе поле пустым и заполните третье поле.
-
 ## <a name="what-if-i-cannot-find-my-office-store-account-in-partner-center"></a>Что делать, если не удается найти учетную запись магазина Office в центре партнеров?
 
-Откройте [билет поддержки партнера](https://partner.microsoft.com/en-US/support/v2/?stage=1) и в раскрывающихся меню выберите следующую команду:
+Откройте [билет центра поддержки партнеров](https://partner.microsoft.com/en-US/support/v2/?stage=1) и в раскрывающихся меню выберите следующую команду:
 
-| Меню | Параметр |
+| Меню | Вариант |
 | -------   | -------  |
 |Категория| Коммерческий рынок|
 | Тема | Общие вопросы и Справка по Marketplace Marketplace |
 | Подраздел| Надстройка Office |
 
-*Сведения* [о том, как открыть билет поддержки центра партнеров](/azure/marketplace/partner-center-portal/support#how-to-open-a-support-ticket).
+## <a name="where-can-i-get-support-for-my-partner-center-issues"></a>Где можно получить поддержку по вопросам, связанным с центром партнеров?
 
-## <a name="how-do-i-manage-my-account-settings-and-partner-profile-in-partner-center"></a>Как управлять параметрами учетной записи и вашим профилем в центре партнеров?
-
-Посетите страницу [Управление параметрами учетной записи и сведениями о профилях,](/windows/uwp/publish/manage-account-settings-and-profile#additional-settings-and-info) чтобы получить рекомендации по управлению параметрами учетной записи вашего центра-партнера.
+Посетите [страницу поддержки издателей](https://aka.ms/marketplacepublishersupport) , чтобы найти раздел о возникшей статье и найти рекомендации. Если предоставленные рекомендации не помогли, [откройте билет центра поддержки партнеров](/azure/marketplace/partner-center-portal/support#how-to-open-a-support-ticket).
 
 ## <a name="how-do-i-manage-my-office-store-account"></a>Как управлять учетной записью Магазина Office?
 
 Посетите страницу [Управление учетной записью Магазина Office в центре партнеров](/office/dev/store/manage-account-settings-and-profile) , чтобы получить рекомендации по управлению учетной записью Магазина Office в центре партнеров.
 
+## <a name="how-do-i-add-my-phone-number-to-the-partner-profile-contact-section"></a>Как добавить номер телефона в раздел контактного профиля партнера?
+
+Номер телефона состоит из трех частей — кода страны, кода города и номера телефона. Если номер телефона не содержит код города, оставьте второе поле пустым и заполните третье поле.
+
+## <a name="how-do-i-manage-my-account-settings-and-partner-profile-in-partner-center"></a>Как управлять параметрами учетной записи и вашим профилем в центре партнеров?
+
+Посетите страницу [Управление параметрами учетной записи и сведениями о профилях,](/windows/uwp/publish/manage-account-settings-and-profile#additional-settings-and-info) чтобы получить рекомендации по управлению параметрами учетной записи вашего центра-партнера.
+
 ## <a name="why-do-i-receive-the-message-this-account-is-not-publish-eligible-when-i-try-to-submit-my-add-in-through-partner-center"></a>Почему я получаю сообщение: "Эта учетная запись не подходит для публикации" при попытке отправить надстройку через центр партнеров?
 
-Если [состояние проверки учетной записи](/partner-center/verification-responses) находится в состоянии ожидания, появится сообщение об ошибке. Вы можете проверить состояние проверки учетной записи в [панели мониторинга](https://partner.microsoft.com/dashboard) партнеров центра, выбрав параметр **Параметры** (значок шестеренки) в правом верхнем углу консоли заголовка страницы и выбрав параметры **разработчика** => **Account**  => учетная**запись.**
+Если [состояние проверки учетной записи](/partner-center/verification-responses) находится в состоянии ожидания, появится сообщение об ошибке. Вы можете проверить состояние проверки учетной записи в [панели мониторинга](https://partner.microsoft.com/dashboard) партнеров центра, выбрав параметр **Параметры** (значок шестеренки) в правом верхнем углу консоли заголовка страницы и выбрав параметры **разработчика**учетная запись  =>  **Account**   =>  **Account settings** .
 
 ![Страница параметров учетной записи центра партнеров](../../../assets/images/partner-center-accts-page.png)
 
@@ -92,7 +95,7 @@ ms.locfileid: "43937352"
 1. Очистите кэш браузера, перейдите на панель мониторинга учетной записи центра партнеров и выберите ссылку повторно **Отправить проверочную** почту, чтобы отправить сообщение электронной почты с подтверждением на адрес электронной почты.
 1. Попытайтесь получить доступ к ссылке повторно **Отправить проверочную почту** из другого браузера.
 1. Работа с ИТ подразделением, чтобы убедиться, что электронные письма не блокируются сервером электронной почты.
-1. Настройте фильтр нежелательной почты сервера, чтобы разрешить или белом все сообщения электронной почты от **maccount@microsoft.<span> </span> com**.
+1. Настройте фильтр нежелательной почты сервера, чтобы разрешить или белом все сообщения электронной почты от **maccount@microsoft. <span></span> com**.
 
 ## <a name="how-long-does-the-employment-verification-process-usually-take"></a>Сколько времени обычно занимает процесс проверки занятости?
 
@@ -102,9 +105,13 @@ ms.locfileid: "43937352"
 
 Для выполнения проверки бизнеса требуется от 1 до 2 рабочих дней при условии, что все необходимые документы отправлены.
 
-## <a name="if-ive-already-reached-out-to-the-support-team-will-my-ticket-be-expedited"></a>Если вы уже приступили к работе в группе поддержки, ваш билет будет срочным?
+## <a name="if-i-reach-out-to-the-support-team-will-my-ticket-be-expedited"></a>Если у вас есть доступ к группе поддержки, будет ли получен билет?
 
 Билеты поддержки будут устранены в течение недели. Ознакомьтесь с обновлениями, которые будут отправлены в электронное сообщение, предоставленное при возникновении билета в службу поддержки.
+
+## <a name="my-issue-is-not-listed-here--are-there-other-pages-i-can-reference-for-partner-center-issues"></a>Мой вопрос не указан здесь.  Есть ли другие страницы, на которые можно ссылаться для проблем с центром партнеров?
+
+Для получения дополнительной помощи обратитесь к [документации по коммерческой Marketplace](/azure/marketplace/) .
 
 ## <a name="ive-created-a-support-ticket-it-has-been-7-business-days-and-i-havent-received-an-update-where-can-i-get-additional-help"></a>Я создал билет поддержки, он был 7 рабочими днями, и я не получал обновление. Где можно получить дополнительную справку?
 
@@ -118,4 +125,4 @@ ms.locfileid: "43937352"
 
 >
 > [!div class="nextstepaction"]
-> [Дополнительные сведения о политиках проверки приложений для Microsoft Teams](https://docs.microsoft.com/legal/marketplace/certification-policies)
+> [Дополнительные сведения о политиках проверки приложений для Microsoft Teams](/legal/marketplace/certification-policies)

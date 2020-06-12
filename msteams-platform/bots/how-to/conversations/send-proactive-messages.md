@@ -1,17 +1,17 @@
 ---
-title: Отправка упреждающих сообщений
+title: Отправлять активные сообщения
 author: clearab
 description: Отправка активных сообщений с помощью робота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 566b93f519001cbc2470b43e4729fa8b4aa0a9d2
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+ms.openlocfilehash: 6e387dcf0e73124d57996a56c835f5a99fc6f1c6
+ms.sourcegitcommit: b822584b643e003d12d2e9b5b02a0534b2d57d71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635279"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44704462"
 ---
-# <a name="send-proactive-messages"></a>Отправка упреждающих сообщений
+# <a name="send-proactive-messages"></a>Отправлять активные сообщения
 
 > [!Note]
 > В примерах кода, приведенных в этой статье, используются расширения пакета SDK для v3 и 3 для Teams построителя. Концептуально сведения применяются при использовании версий пакета v4 SDK V4, но код слегка отличается.
@@ -28,7 +28,12 @@ ms.locfileid: "42635279"
 1. [Получение уникального идентификатора пользователя и идентификатора клиента](#obtain-necessary-user-information)
 1. [Отправка сообщения](#examples)
 
-При создании упреждающего сообщения **необходимо** вызвать `MicrosoftAppCredentials.TrustServiceUrl`и передать URL-адрес службы перед созданием `ConnectorClient` , который будет использоваться для отправки сообщения. В противном случае ваше приложение получит `401: Unauthorized` ответ. 
+При создании упреждающего сообщения **необходимо** вызвать `MicrosoftAppCredentials.TrustServiceUrl` и передать URL-адрес службы перед созданием, который [`ConnectorClient`](/azure/bot-service/dotnet/bot-builder-dotnet-connector) будет использоваться для отправки сообщения. В противном случае ваше приложение получит `401: Unauthorized` ответ.
+
+> [!Tip]
+> Дополнительные сведения о настройке `ConnectorClient` клиентов .NET приведены в разделе [действия по отправке и получению](/azure/bot-service/dotnet/bot-builder-dotnet-connector#create-a-connector-client)
+>
+> Дополнительные примеры отправки упреждающего сообщения можно найти в документации по [.NET](/azure/bot-service/dotnet/bot-builder-dotnet-proactive-messages) и [Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-proactive-messages) в службе Azure Bot
 
 ## <a name="best-practices-for-proactive-messaging"></a>Рекомендации по использованию упреждающего обмена сообщениями
 
@@ -68,7 +73,7 @@ ms.locfileid: "42635279"
 > [!Note]
 > Активная установка приложений с помощью Graph в настоящее время находится на стадии бета-тестирования.
 
-Иногда это может потребоваться для упреждающего сообщения пользователей, которые ранее не устанавливали приложение или не работали с ним. Например, вы хотите использовать [Communicator компании](~/samples/app-templates.md#company-communicator-app) для отправки сообщений во всю организацию. В этом сценарии можно использовать API Graph для профилактической установки приложения для пользователей, а затем кэшировать необходимые значения из события, которое `conversationUpdate` получит ваше приложение после установки.
+Иногда это может потребоваться для упреждающего сообщения пользователей, которые ранее не устанавливали приложение или не работали с ним. Например, вы хотите использовать [Communicator компании](~/samples/app-templates.md#company-communicator) для отправки сообщений во всю организацию. В этом сценарии можно использовать API Graph для профилактической установки приложения для пользователей, а затем кэшировать необходимые значения из события, которое `conversationUpdate` получит ваше приложение после установки.
 
 Вы можете устанавливать только приложения, которые находятся в каталоге организационных приложений или в магазине приложений Teams.
 
@@ -76,7 +81,7 @@ ms.locfileid: "42635279"
 
 ## <a name="examples"></a>Примеры
 
-Перед созданием новой беседы с помощью REST API обязательно проверьте подлинность и наличие маркера носителя. `members.id` Поле в расположенном ниже объекте является уникальным в сочетании с пользователем. Вы не можете получить его с помощью любого другого метода, чем описано выше.
+Перед созданием новой беседы с помощью REST API обязательно проверьте подлинность и наличие маркера носителя. `members.id`Поле в расположенном ниже объекте является уникальным в сочетании с пользователем. Вы не можете получить его с помощью любого другого метода, чем описано выше.
 
 ```json
 POST /v3/conversations
@@ -108,9 +113,9 @@ POST /v3/conversations
 
 Этот идентификатор является уникальным ИДЕНТИФИКАТОРом беседы личного чата. Сохраните это значение и повторно используйте его для последующего взаимодействия с пользователем.
 
-# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
-В этом примере используется пакет NuGet [Microsoft. Bot. Connector. Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) .
+В этом примере используется пакет NuGet [Microsoft. Bot. Connector. Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) . В этом примере это `client` `ConnectorClient` экземпляр, который уже был создан и прошел проверку подлинности, как описано в [действиях по отправке и получению](/azure/bot-service/dotnet/bot-builder-dotnet-connector) .
 
 ```csharp
 // Create or get existing chat conversation with user
@@ -174,11 +179,11 @@ async def _send_proactive_message():
 
 ## <a name="creating-a-channel-conversation"></a>Создание беседы канала
 
-Добавленная командой Bot может отправляться в канал для создания новой цепочки ответа. Если вы используете пакет SDK для Teams. js, используйте `startReplyChain()` его, который предоставляет полностью заполненный адрес с правильным идентификатором действия и идентификатором диалога. Если вы используете C#, обратитесь к представленному ниже примеру.
+Добавленная командой Bot может отправляться в канал для создания новой цепочки ответа. Если вы используете пакет SDK для Node.js Teams, используйте его, чтобы `startReplyChain()` полностью заполнить адрес, соответствующий идентификатору действия и идентификатору беседы. Если вы используете C#, обратитесь к представленному ниже примеру.
 
 Кроме того, вы можете использовать REST API и отправить запрос POST [`/conversations`](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?#start-a-conversation) ресурсу.
 
-# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 В [этом примере](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp/blob/32c39268d60078ef54f21fb3c6f42d122b97da22/template-bot-master-csharp/src/dialogs/examples/teams/ProactiveMsgTo1to1Dialog.cs)показан следующий фрагмент кода.
 
@@ -228,7 +233,7 @@ namespace Microsoft.Teams.TemplateBotCSharp.Dialogs
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
-Приведенный ниже фрагмент кода относится к [теамсконверсатионбот. js](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/57.teams-conversation-bot/bots/teamsConversationBot.js).
+Приведенный ниже фрагмент кода относится к [teamsConversationBot.js](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/57.teams-conversation-bot/bots/teamsConversationBot.js).
 
 [!code-javascript[messageAllMembersAsync](~/../botbuilder-samples/samples/javascript_nodejs/57.teams-conversation-bot/bots/teamsConversationBot.js?range=115-134&highlight=13-15)]
 
