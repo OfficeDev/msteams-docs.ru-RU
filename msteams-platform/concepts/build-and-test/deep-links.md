@@ -3,11 +3,11 @@ title: Создание глубоких ссылок
 description: Описание глубоких ссылок и способов их использования в приложениях
 keywords: Прямая ссылка на ссылку Teams
 ms.openlocfilehash: 03580c4d15c82da70402d68d85b0d28f8afa670e
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675532"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "44801245"
 ---
 # <a name="create-deep-links-to-content-and-features-in-microsoft-teams"></a>Создание глубоких ссылок на контент и функции в Microsoft Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "41675532"
 
 ## <a name="deep-linking-to-your-tab"></a>Глубокая ссылка на вкладку
 
-Можно создавать глубокие ссылки на объекты в Teams. Обычно это используется для создания ссылок, которые позволяют перейти к содержимому и сведениям на вкладке. Например, если вкладка содержит список задач, участники группы могут создавать ссылки на отдельные задачи и предоставлять к ним общий доступ. При нажатии ссылка переходит на вкладку, которая специализируется на определенном элементе. Чтобы реализовать эту возможность, вы можете добавить действие "Копировать ссылку" для каждого элемента, как угодно лучше всего подходит вашему пользовательскому интерфейсу. Когда пользователь выполняет это действие, вызывается `shareDeepLink()` отображение диалогового окна, содержащего ссылку, которую пользователь может скопировать в буфер обмена. При совершении этого вызова вы также передаете идентификатор элемента, который возвращается в [контексте](~/tabs/how-to/access-teams-context.md) , когда ссылка соблюдается, а вкладка перегружается.
+Можно создавать глубокие ссылки на объекты в Teams. Обычно это используется для создания ссылок, которые позволяют перейти к содержимому и сведениям на вкладке. Например, если вкладка содержит список задач, участники группы могут создавать ссылки на отдельные задачи и предоставлять к ним общий доступ. При нажатии ссылка переходит на вкладку, которая специализируется на определенном элементе. Чтобы реализовать эту возможность, вы можете добавить действие "Копировать ссылку" для каждого элемента, как угодно лучше всего подходит вашему пользовательскому интерфейсу. Когда пользователь выполняет это действие, вызывается `shareDeepLink()` Отображение диалогового окна, содержащего ссылку, которую пользователь может скопировать в буфер обмена. При совершении этого вызова вы также передаете идентификатор элемента, который возвращается в [контексте](~/tabs/how-to/access-teams-context.md) , когда ссылка соблюдается, а вкладка перегружается.
 
 Кроме того, вы также можете создавать глубокие ссылки программным способом, используя формат, указанный далее в этом разделе. Их можно использовать в сообщениях [Bot](~/bots/what-are-bots.md) и [соединителей](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md) , которые сообщают пользователям об изменениях вкладки или элементах в ней.
 
@@ -50,8 +50,8 @@ ms.locfileid: "41675532"
 
 * `appId`&emsp;ИДЕНТИФИКАТОР из манифеста; Например, "fe4a8eba-2a31-4737-8e33-e5fae6fee194"
 * `entityId`&emsp;Идентификатор элемента на вкладке, который был указан при [настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md); Например, "tasklist123"
-* `entityWebUrl`или `subEntityWebUrl` &emsp;необязательное поле с резервным URL-адресом, которое будет использоваться, если клиент не поддерживает отрисовку вкладки; Например, "https://tasklist.example.com/123" или "https://tasklist.example.com/list123/task456"
-* `entityLabel`или `subEntityLabel` &emsp;метка для элемента на вкладке, которая будет использоваться при отображении глубокой ссылки; Например, "Task List 123" или "Task 456"
+* `entityWebUrl`или `subEntityWebUrl` &emsp; необязательное поле с резервным URL-адресом, которое будет использоваться, если клиент не поддерживает отрисовку вкладки, например, " https://tasklist.example.com/123 " или " https://tasklist.example.com/list123/task456 "
+* `entityLabel`или `subEntityLabel` &emsp; метку для элемента на вкладке, который будет использоваться при отображении глубокой ссылки, например "task List 123" или "Task 456"
 * `context`&emsp;Объект JSON, содержащий следующие поля:
   * `subEntityId`&emsp;Идентификатор _элемента на_ вкладке; Например, "task456"
   * `channelId`&emsp;Идентификатор канала Microsoft Teams (доступен в [контексте](~/tabs/how-to/access-teams-context.md)вкладки, например "19: cbe3683f25094106b826c9cada3afbe0@thread. Skype". Это свойство доступно только в настраиваемых вкладках с областью "Team". Она недоступна в статических вкладках, имеющих область "персональный".
@@ -75,7 +75,7 @@ ms.locfileid: "41675532"
 
 При переходе к глубокой ссылке Microsoft Teams просто переходит на вкладку и предоставляет механизм с помощью библиотеки JavaScript Microsoft Teams для получения идентификатора вложенного объекта (если он существует).
 
-При [`microsoftTeams.getContext`](/javascript/api/@microsoft/teams-js#getcontext--context--context-----void-) вызове возвращается контекст, включающий `subEntityId` в себя поле, если перейти к вкладке с помощью глубокой ссылки.
+[`microsoftTeams.getContext`](/javascript/api/@microsoft/teams-js#getcontext--context--context-----void-)При вызове возвращается контекст, включающий в себя `subEntityId` поле, если перейти к вкладке с помощью глубокой ссылки.
 
 ## <a name="deep-linking-from-your-tab"></a>Глубокая компоновка на вкладке
 
@@ -107,7 +107,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 `https://teams.microsoft.com/l/chat/0/0?users=<user1>,<user2>,...&topicName=<chat name>&message=<precanned text>`
 
-Пример: `https://teams.microsoft.com/l/chat/0/0?users=joe@contoso.com,bob@contoso.com&topicName=Prep%20For%20Meeting%20Tomorrow&message=Hi%20folks%2C%20kicking%20off%20a%20chat%20about%20our%20meeting%20tomorrow`.
+Пример: `https://teams.microsoft.com/l/chat/0/0?users=joe@contoso.com,bob@contoso.com&topicName=Prep%20For%20Meeting%20Tomorrow&message=Hi%20folks%2C%20kicking%20off%20a%20chat%20about%20our%20meeting%20tomorrow`
 
 Параметры запроса:
 
@@ -128,7 +128,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 Используйте этот формат для глубокой ссылки, которую можно использовать в карточке почтовых роботов, соединителей или модулей обмена сообщениями:`https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
 
-Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`.
+Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
 
 Параметры запроса:
 

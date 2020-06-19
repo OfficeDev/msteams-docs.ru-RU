@@ -4,11 +4,11 @@ description: Описывает сквозной сценарий, в котор
 keywords: сценарии команд каналы ленты
 ms.date: 06/25/2019
 ms.openlocfilehash: d2d72bdba43de6ebb10c7504dd309459cb09d56c
-ms.sourcegitcommit: 6c5c0574228310f844c81df0d57f11e2037e90c8
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228007"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "44801281"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-microsoft-teams-bot"></a>Беседы в каналах и группах для общения с помощью робота Microsoft Teams
 
@@ -47,15 +47,15 @@ Microsoft Teams позволяет пользователям перенести
 
 ### <a name="replying-to-messages"></a>Ответ на сообщения
 
-Чтобы ответить на существующее сообщение, вызовите [`ReplyToActivity`](/bot-framework/dotnet/bot-builder-dotnet-connector#send-a-reply) его в .NET [`session.send`](/bot-framework/nodejs/bot-builder-nodejs-use-default-message-handler) или Node. js. Пакет SDK построителя построителя обрабатывает все подробные сведения.
+Чтобы ответить на существующее сообщение, звоните [`ReplyToActivity`](/bot-framework/dotnet/bot-builder-dotnet-connector#send-a-reply) в .NET или [`session.send`](/bot-framework/nodejs/bot-builder-nodejs-use-default-message-handler) в Node.js. Пакет SDK построителя построителя обрабатывает все подробные сведения.
 
 Если вы решили использовать REST API, вы также можете вызвать [`/conversations/{conversationId}/activities/{activityId}`](/bot-framework/rest-api/bot-framework-rest-connector-send-and-receive-messages#send-the-reply) конечную точку.
 
-В канале ответ на сообщение отображается как ответ на инициированную цепь ответа. `conversation.id` Содержит канал и идентификатор сообщения верхнего уровня. Несмотря на то, что `conversation.id` у Bot Framework есть сведения, вы можете кэшировать их для будущих ответов на этот поток беседы по мере необходимости.
+В канале ответ на сообщение отображается как ответ на инициированную цепь ответа. `conversation.id`Содержит канал и идентификатор сообщения верхнего уровня. Несмотря на то, что у Bot Framework есть сведения, вы можете кэшировать их `conversation.id` для будущих ответов на этот поток беседы по мере необходимости.
 
 ### <a name="best-practice-welcome-messages-in-teams"></a>Советы и рекомендации: приветственные сообщения в Teams
 
-При первом добавлении ленты в группу или команду, как правило, полезно отправить приветственное сообщение для всех пользователей. Приветственное сообщение должно содержать описание функции и преимуществ пользователя Bot. В идеале сообщение также должно включать команды для взаимодействия пользователя с приложением. Для этого необходимо убедиться, что в `conversationUpdate` `teamsAddMembers` `channelData` объекте Bot реагирует на сообщение с параметром EventType в объекте. Убедитесь, что `memberAdded` идентификатор является СОБСТВЕНно идентификатором приложения-робота, так как при добавлении пользователя в команду отправляется то же самое событие. Дополнительные сведения см. в разделе " [участник группы" или "Добавление ленты](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) ".
+При первом добавлении ленты в группу или команду, как правило, полезно отправить приветственное сообщение для всех пользователей. Приветственное сообщение должно содержать описание функции и преимуществ пользователя Bot. В идеале сообщение также должно включать команды для взаимодействия пользователя с приложением. Для этого необходимо убедиться, что в объекте Bot реагирует на `conversationUpdate` сообщение с параметром `teamsAddMembers` EventType в `channelData` объекте. Убедитесь, что `memberAdded` идентификатор является собственно идентификатором приложения-робота, так как при добавлении пользователя в команду отправляется то же самое событие. Дополнительные сведения см. в разделе " [участник группы" или "Добавление ленты](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) ".
 
 Кроме того, вы можете отправить личное сообщение каждому участнику команды при добавлении ленты. Для этого вы можете получить список [команд](~/resources/bot-v3/bots-context.md#fetching-the-team-roster) и отправить каждому пользователю [прямое сообщение](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md).
 
@@ -93,9 +93,9 @@ for (int i = 0;i < m.Length;i++)
 ```
 
 > [!NOTE]
-> Вы также можете использовать функцию `GetTextWithoutMentions`расширения Teams, которая выполнит все упоминания, включая Bot.
+> Вы также можете использовать функцию расширения Teams `GetTextWithoutMentions` , которая выполнит все упоминания, включая Bot.
 
-#### <a name="nodejs-example-code-check-for-and-strip-bot-mention"></a>Пример кода Node. js: Поиск и чередование @bot упоминаний
+#### <a name="nodejs-example-code-check-for-and-strip-bot-mention"></a>Node.js пример кода: Поиск и чередование @bot упоминаний
 
 ```javascript
 var text = message.text;
@@ -109,7 +109,7 @@ if (message.entities) {
 }
 ```
 
-Вы также можете использовать функцию `getTextWithoutMentions`расширения Teams, которая выполнит все упоминания, включая Bot.
+Вы также можете использовать функцию расширения Teams `getTextWithoutMentions` , которая выполнит все упоминания, включая Bot.
 
 ### <a name="constructing-mentions"></a>Создание упоминаний
 
@@ -134,7 +134,7 @@ replyActivity.AddMentionToText(activity.From, MentionTextLocation.AppendText);
 await client.Conversations.ReplyToActivityAsync(replyActivity);
 ```
 
-#### <a name="nodejs-example"></a>Пример Node. js
+#### <a name="nodejs-example"></a>Пример Node.js
 
 ```javascript
 // User to mention

@@ -4,11 +4,11 @@ description: Описывает сквозной сценарий для бес�
 keywords: сценарии Teams 1on1 1to1 CONVERSATION Bot
 ms.date: 05/20/2019
 ms.openlocfilehash: e23bb98160125d7fdbb4521467e2f522d6b6ce40
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675661"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "44801240"
 ---
 # <a name="have-a-personal-one-on-one-conversation-with-a-microsoft-teams-bot"></a>У вас есть личная беседа (одна-на одну) с роботом Microsoft Teams
 

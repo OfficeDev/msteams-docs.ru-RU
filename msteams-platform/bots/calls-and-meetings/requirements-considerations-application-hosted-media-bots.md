@@ -4,11 +4,11 @@ description: Важные требования и вопросы, связанн
 keywords: Виртуальная машина Windows Server Azure с размещением в приложении
 ms.date: 11/16/2018
 ms.openlocfilehash: f5b721edacb11e867d05c8213b74036cb51f419c
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675329"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "44801209"
 ---
 # <a name="requirements-and-considerations-for-application-hosted-media-bots"></a>Требования и рекомендации для Боты мультимедиа, размещаемых в приложении
 
@@ -19,7 +19,7 @@ ms.locfileid: "41675329"
 
 ## <a name="application-hosted-media-bot-development-requires-cnet-and-windows-server"></a>Для разработки почтовых приложений, размещаемых в приложении, требуется C#/.нет и Windows Server
 
-- Для почтовых роботов, размещаемых в приложении, требуется библиотека `Microsoft.Graph.Communications.Calls.Media` .NET ([доступная здесь](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/) для доступа к потокам аудио-и видеоданных, а программа-Bot должна быть развернута на компьютере с Windows Server (или в гостевой ОС Windows Server в Azure). Таким образом, для начала необходимо разработать язык C#, а также стандартную платформу .NET Framework и развернуть ее в Microsoft Azure. Вы не можете использовать API C++ или Node. js для доступа к мультимедиа в реальном времени и .NET Core не поддерживается для размещаемого в приложении робота-робота.
+- Для почтовых роботов, размещаемых в приложении `Microsoft.Graph.Communications.Calls.Media` , требуется библиотека .NET ([доступная здесь](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/) для доступа к потокам аудио-и видеоданных, а программа-Bot должна быть развернута на компьютере с Windows Server (или в гостевой ОС Windows Server в Azure). Таким образом, для начала необходимо разработать язык C#, а также стандартную платформу .NET Framework и развернуть ее в Microsoft Azure. Вы не можете использовать C++ или Node.js API для доступа к мультимедиа в реальном времени, а среда .NET Core не поддерживается для приложения-робота с размещением в приложении.
 
 - Размещаемая в приложении Bot робота может быть размещена в одной из следующих сред службы Azure:
   - Облачная служба.
@@ -28,7 +28,7 @@ ms.locfileid: "41675329"
   
 - Размещаемый в приложении робот не может быть развернут в качестве веб-приложения Azure.
 
-- Размещенный на размещенном приложении робот должен работать на последней версии библиотеки `Microsoft.Graph.Communications.Calls.Media` .NET. В интерфейсе робота должен использоваться либо последняя доступная версия [пакета NuGet](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/), либо версия, не превышающая три месяца. Более ранние версии библиотеки станут устаревшими и могут не работать по истечении нескольких месяцев. Поддержание актуальности `Microsoft.Graph.Communications.Calls.Media` библиотеки обеспечит оптимальное взаимодействие между Bot и Microsoft Teams.
+- Размещенный на размещенном приложении робот должен работать на последней версии `Microsoft.Graph.Communications.Calls.Media` библиотеки .NET. В интерфейсе робота должен использоваться либо последняя доступная версия [пакета NuGet](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/), либо версия, не превышающая три месяца. Более ранние версии библиотеки станут устаревшими и могут не работать по истечении нескольких месяцев. Поддержание `Microsoft.Graph.Communications.Calls.Media` актуальности библиотеки обеспечит оптимальное взаимодействие между Bot и Microsoft Teams.
 
 ## <a name="real-time-media-calls-stay-on-the-machine-where-they-were-created"></a>Звонки мультимедиа реального времени остаются на том компьютере, на котором они были созданы.
 

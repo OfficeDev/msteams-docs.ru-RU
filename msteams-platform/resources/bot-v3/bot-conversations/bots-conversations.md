@@ -3,12 +3,12 @@ title: Отправка и получение сообщений с помощь
 description: Сведения о том, как отправлять и получать сообщения с помощью боты в Microsoft Teams
 keywords: Боты сообщения Teams
 ms.date: 05/20/2019
-ms.openlocfilehash: 864473c7f502d96987a48e5837840236c45f59c7
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 4a15bb9b4ae8c0ede3214d3a534649e2769baf6e
+ms.sourcegitcommit: 2b1fd50466d807869fd173371ba7dfd82a0064ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675656"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "44801509"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с роботом Microsoft Teams
 
@@ -35,9 +35,9 @@ ms.locfileid: "41675656"
 * Уведомления о событиях
 * Опрос сообщений
 
-## <a name="conversation-basics"></a>Общие сведения о беседах
+## <a name="conversation-basics"></a>Основы разговора
 
-Каждое сообщение является `Activity` объектом типа `messageType: message`. Когда пользователь отправляет сообщение, Teams отправляет сообщение на сервер почтовых роботов; в частности, он отправляет объект JSON в конечную точку обмена сообщениями ленты. Ваш почтовый робот просматривает сообщение, чтобы определить его тип и ответить соответствующим образом.
+Каждое сообщение является `Activity` объектом типа `messageType: message` . Когда пользователь отправляет сообщение, Teams отправляет сообщение на сервер почтовых роботов; в частности, он отправляет объект JSON в конечную точку обмена сообщениями ленты. Ваш почтовый робот просматривает сообщение, чтобы определить его тип и ответить соответствующим образом.
 
 Боты также поддерживает сообщения в стиле события. Более подробную информацию можно узнать [в статье обработка событий Bot в Microsoft Teams](~/resources/bot-v3/bots-notifications.md) . В настоящее время речь не поддерживается.
 
@@ -57,9 +57,9 @@ ms.locfileid: "41675656"
 | Эмодзи | ✖ | ✔ | В настоящее время Teams поддерживает эмодзи, используя кодировку UTF-16 (например, U + 1F600 для гриннинг Face) |
 |
 
-Для получения дополнительных сведений о типах взаимодействий с Bot, поддерживаемых с помощью Bot Framework (которые основаны на Боты в Teams), ознакомьтесь с документацией по среде Bot по [цепочке обсуждений](/azure/bot-service/dotnet/bot-builder-dotnet-manage-conversation-flow?view=azure-bot-service-3.0) и связанными понятиями, изложенными в документации по [пакету SDK для программы Bot Builder для .NET](/azure/bot-service/dotnet/bot-builder-dotnet-overview?view=azure-bot-service-3.0) и [пакету SDK построителя для Node. js](/azure/bot-service/nodejs/bot-builder-nodejs-overview?view=azure-bot-service-3.0).
+Для получения дополнительных сведений о типах взаимодействий с Bot, поддерживаемых с помощью Bot Framework (которые основаны на Боты в Teams), ознакомьтесь с документацией по [разработке для ленты и](/azure/bot-service/dotnet/bot-builder-dotnet-manage-conversation-flow?view=azure-bot-service-3.0) связанными понятиями, изложенными в документации по [пакету SDK построителя для .NET](/azure/bot-service/dotnet/bot-builder-dotnet-overview?view=azure-bot-service-3.0) и [пакету SDK построителя для Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-overview?view=azure-bot-service-3.0).
 
-## <a name="message-formatting"></a>Форматирование сообщений
+## <a name="message-formatting"></a>Форматирование сообщения
 
 Можно задать необязательное [`TextFormat`](/azure/bot-service/dotnet/bot-builder-dotnet-create-messages?view=azure-bot-service-3.0#customizing-a-message) свойство элемента, `message` чтобы управлять отображением текстового контента сообщения. В статье [Форматирование сообщений](~/resources/bot-v3/bots-message-format.md) представлено подробное описание поддерживаемого форматирования в сообщениях Bot.
 Можно задать необязательное [`TextFormat`](/azure/bot-service/dotnet/bot-builder-dotnet-create-messages?view=azure-bot-service-3.0#customizing-a-message) свойство, чтобы управлять отображением текстового контента сообщения.
@@ -74,10 +74,10 @@ ms.locfileid: "41675656"
 
 Рисунки могут иметь не более 1024 × 1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF-файл не поддерживается.
 
-Рекомендуем указать высоту и ширину каждого изображения с помощью XML. Если вы используете Markdown, размер изображения по умолчанию равен 256 × 256. Пример:
+Рекомендуем указать высоту и ширину каждого изображения с помощью XML. Если вы используете Markdown, размер изображения по умолчанию равен 256 × 256. Например:
 
 * Используйте`<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
-* Не используйте `![Duck on a rock](http://aka.ms/Fo983c)`
+* Не используйте`![Duck on a rock](http://aka.ms/Fo983c)`
 
 ## <a name="receiving-messages"></a>Получение сообщений
 
@@ -86,9 +86,9 @@ ms.locfileid: "41675656"
 * **Личный чат** Пользователи могут общаться в частном разговоре с помощью ленты, просто выбрав добавленного элемента Bot в журнале чата или введя его имя или идентификатор приложения в поле Кому: в новом сеансе разговора.
 * **Каналы** Вы можете упомянуть в канале ("@_ботнаме_"), если она была добавлена в команду. Обратите внимание, что для дополнительных ответов на канале Bot в канале требуется упоминание Bot. Он не реагирует на ответы, где он не упоминается.
 
-Для входящих сообщений Bot получает [`Activity`](/azure/bot-service/rest-api/bot-framework-rest-connector-activities?view=azure-bot-service-3.0) объект типа. `messageType: message` Несмотря на `Activity` то, что объект может содержать другие типы информации, например [обновления канала](~/resources/bot-v3/bots-notifications.md#channel-updates) , отправляемые в `message` Bot, тип представляет связь между Bot и пользователем.
+Для входящих сообщений Bot получает [`Activity`](/azure/bot-service/rest-api/bot-framework-rest-connector-activities?view=azure-bot-service-3.0) объект типа `messageType: message` . Несмотря на то `Activity` , что объект может содержать другие типы информации, например [обновления канала](~/resources/bot-v3/bots-notifications.md#channel-updates) , отправляемые в Bot, `message` тип представляет связь между Bot и пользователем.
 
-Ваш Bot получает полезные данные, содержащие сообщение `Text` пользователя, а также другие сведения о пользователе, источник сообщения и сведения о Teams. Примечание:
+Ваш Bot получает полезные данные, содержащие сообщение пользователя `Text` , а также другие сведения о пользователе, источник сообщения и сведения о Teams. Примечание:
 
 * `timestamp`Дата и время сообщения в формате всемирного координированного времени (UTC).
 * `localTimestamp`Дата и время сообщения в часовом поясе отправителя
@@ -154,7 +154,7 @@ ms.locfileid: "41675656"
 
 ## <a name="teams-channel-data"></a>Данные канала Teams
 
-`channelData` Объект содержит сведения, зависящие от команды, и является основным источником для идентификаторов команд и каналов. Вы должны кэшировать и использовать эти идентификаторы в качестве ключей для локального хранилища.
+`channelData`Объект содержит сведения, зависящие от команды, и является основным источником для идентификаторов команд и каналов. Вы должны кэшировать и использовать эти идентификаторы в качестве ключей для локального хранилища.
 
 Этот `channelData` объект не включается в сообщения в личных беседах, так как они выполняются вне какого-либо канала.
 
@@ -200,13 +200,13 @@ string tenantId = channelData.Tenant.Id;
 
 ## <a name="sending-replies-to-messages"></a>Отправка ответов на сообщения
 
-Чтобы ответить на существующее сообщение, вызовите [`ReplyToActivity`](/dotnet/api/microsoft.bot.connector.conversationsextensions.replytoactivityasync?view=botbuilder-dotnet-3.0#Microsoft_Bot_Connector_ConversationsExtensions_ReplyToActivityAsync_Microsoft_Bot_Connector_IConversations_System_String_System_String_Microsoft_Bot_Connector_Activity_System_Threading_CancellationToken_) его в .NET [`session.send`](/javascript/api/botbuilder-core/TurnContext?view=botbuilder-ts-latest&viewFallbackFrom=botbuilder-ts-3.0#sendactivities) или Node. js. Пакет SDK построителя построителя обрабатывает все подробные сведения.
+Чтобы ответить на существующее сообщение, звоните [`ReplyToActivity`](/dotnet/api/microsoft.bot.connector.conversationsextensions.replytoactivityasync?view=botbuilder-dotnet-3.0#Microsoft_Bot_Connector_ConversationsExtensions_ReplyToActivityAsync_Microsoft_Bot_Connector_IConversations_System_String_System_String_Microsoft_Bot_Connector_Activity_System_Threading_CancellationToken_) в .NET или [`session.send`](/javascript/api/botbuilder-core/TurnContext?view=botbuilder-ts-latest&viewFallbackFrom=botbuilder-ts-3.0#sendactivities) в Node.js. Пакет SDK построителя построителя обрабатывает все подробные сведения.
 
 Если вы решили использовать REST API, вы также можете вызвать [`/v3/conversations/{conversationId}/activities/{activityId}`](/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?view=azure-bot-service-3.0) конечную точку.
 
 Само содержимое сообщения может содержать простой текст или некоторые [карточки и действия карточки с](~/task-modules-and-cards/cards/cards-actions.md)Bot Framework.
 
-Обратите внимание, что в используемой схеме исходящей почты следует `serviceUrl` всегда использовать ту же информацию, что и в полученном виде. Имейте в виду, что значение `serviceUrl` является стабильным, но может измениться. Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение `serviceUrl`.
+Обратите внимание, что в используемой схеме исходящей почты следует всегда использовать ту же информацию, что и `serviceUrl` в полученном виде. Имейте в виду, что значение `serviceUrl` является стабильным, но может измениться. Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение `serviceUrl` .
 
 ## <a name="updating-messages"></a>Обновление сообщений
 
@@ -231,7 +231,7 @@ PUT /v3/conversations/19%3Aja0cu120i1jod12j%40skype.net/activities/012ujdo0128
 
 ### <a name="net-example"></a>Пример .NET
 
-С помощью `UpdateActivityAsync` метода в пакете SDK построителя построителя можно обновить существующее сообщение.
+`UpdateActivityAsync`С помощью метода в пакете SDK построителя построителя можно обновить существующее сообщение.
 
 ```csharp
 public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
@@ -247,9 +247,9 @@ public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
 }
 ```
 
-### <a name="nodejs-example"></a>Пример Node. js
+### <a name="nodejs-example"></a>Пример Node.js
 
-С помощью `session.connector.update` метода в пакете SDK построителя построителя можно обновить существующее сообщение.
+`session.connector.update`С помощью метода в пакете SDK построителя построителя можно обновить существующее сообщение.
 
 ```javascript
 function sendCardUpdate(bot, session, originalMessage, address) {

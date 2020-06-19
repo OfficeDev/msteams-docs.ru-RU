@@ -4,12 +4,12 @@ author: clearab
 description: Сведения о том, как получить определенный контекст Microsoft Team для ленты, включая список бесед, сведения и список каналов.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 9f70e3e052903365f03c541db83f196f33fc2322
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: a29fc192a88534620a463e7e14d383999a7783e7
+ms.sourcegitcommit: 68aeac34a2e585b985eabfae5d160b6b26d43b1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675554"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "44801287"
 ---
 # <a name="get-teams-specific-context-for-your-bot"></a>Получение конкретного контекста для ленты
 
@@ -19,21 +19,30 @@ ms.locfileid: "41675554"
 
 ## <a name="fetching-the-roster-or-user-profile"></a>Получение списка или профиля пользователя
 
-Ваш Bot может запрашивать список участников и их базовые профили, в том числе идентификаторы пользователей Teams и Azure Active Directory (Azure AD), такие как Name и objectId. Вы можете использовать эти сведения для корреляции удостоверений пользователей, например, для проверки того, вошел ли пользователь в вкладку с помощью учетных данных Azure AD, является участником команды. Вы также можете использовать этот вызов в беседе "один к одному", чтобы получить дополнительные сведения о пользователе.
+Ваш Bot может запрашивать список участников и их базовые профили, в том числе идентификаторы пользователей Teams и Azure Active Directory (Azure AD), такие как Name и objectId. Вы можете использовать эти сведения для корреляции удостоверений пользователей, например, для проверки того, вошел ли пользователь в вкладку с помощью учетных данных Azure AD, является участником команды. Приведенный ниже пример кода использует конечную точку с страничной проверкой для получения списка. Несмотря на то, что вы по-прежнему можете использовать нестраничную версию, оно будет ненадежным в крупных командах и не должно использоваться. В [этой статье](~/resources/team-chat-member-api-changes.md) представлены дополнительные сведения.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 public class MyBot : TeamsActivityHandler
 {
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
     {
-        IEnumerable<TeamsChannelAccount> members = await TeamsInfo.GetMembersAsync(turnContext, cancellationToken);
+        var members = new List<TeamsChannelAccount>();
+        string continuationToken = null;
+
+        do
+        {
+            var currentPage = await TeamsInfo.GetPagedMembersAsync(turnContext, 100, continuationToken, cancellationToken);
+            continuationToken = currentPage.ContinuationToken;
+            members = members.Concat(currentPage.Members).ToList();
+        }
+        while (continuationToken != null);
     }
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -42,7 +51,15 @@ export class MyBot extends TeamsActivityHandler {
 
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         this.onMessage(async (turnContext, next) => {
-            const members = await TeamsInfo.getMembers(turnContext);
+            var continuationToken;
+            var members = [];
+
+            do {
+                var pagedMembers = await TeamsInfo.getPagedMembers(context, 100, continuationToken);
+                continuationToken = pagedMembers.continuationToken;
+                members.push(...pagedMembers.members);
+            }
+            while(continuationToken !== undefined)
 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
@@ -51,38 +68,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
-Вы можете отправить запрос GET напрямую `/v3/conversations/{teamId}/members/`, используя значение в `serviceUrl` качестве конечной точки. Значение `serviceUrl` "является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl`.
-
-```http
-GET /v3/conversations/19:ja0cu120i1jod12j@skype.net/members
-
-Response body
-[{
-    "id": "29:1GcS4EyB_oSI8A88XmWBN7NJFyMqe3QGnJdgLfFGkJnVelzRGos0bPbpsfJjcbAD22bmKc4GMbrY2g4JDrrA8vM06X1-cHHle4zOE6U4ttcc",
-    "objectId": "9d3e08f9-a7ae-43aa-a4d3-de3f319a8a9c",
-    "givenName": "Larry",
-    "surname": "Brown",
-    "email": "Larry.Brown@fabrikam.com",
-    "userPrincipalName": "labrown@fabrikam.com"
-}, {
-    "id": "29:1bSnHZ7Js2STWrgk6ScEErLk1Lp2zQuD5H2qQ960rtvstKp8tKLl-3r8b6DoW0QxZimuTxk_kupZ1DBMpvIQQUAZL-PNj0EORDvRZXy8kvWk",
-    "objectId": "76b0b09f-d410-48fd-993e-84da521a597b",
-    "givenName": "John",
-    "surname": "Patterson",
-    "email": "johnp@fabrikam.com",
-    "userPrincipalName": "johnp@fabrikam.com"
-}, {
-    "id": "29:1URzNQM1x1PNMr1D7L5_lFe6qF6gEfAbkdG8_BUxOW2mTKryQqEZtBTqDt10-MghkzjYDuUj4KG6nvg5lFAyjOLiGJ4jzhb99WrnI7XKriCs",
-    "objectId": "6b7b3b2a-2c4b-4175-8582-41c9e685c1b5",
-    "givenName": "Rick",
-    "surname": "Stevens",
-    "email": "Rick.Stevens@fabrikam.com",
-    "userPrincipalName": "rstevens@fabrikam.com"
-}]
-```
-
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def _show_members(
@@ -91,13 +77,111 @@ async def _show_members(
     members = await TeamsInfo.get_team_members(turn_context)
 ```
 
+# <a name="json"></a>[JSON](#tab/json)
+
+Вы можете отправить запрос GET напрямую `/v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continuationToken={continuationToken}` , используя значение в `serviceUrl` качестве конечной точки. Значение " `serviceUrl` является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl` .
+
+```http
+GET /v3/conversations/19:ja0cu120i1jod12j@skype.net/pagedmembers?pageSize=100&continuationToken=asdfasdfalkdsjfalksjdf
+
+Response body
+{
+    "continuationToken": "asdfqwerueiqpiewr",
+    "members":
+        [{
+            "id": "29:1GcS4EyB_oSI8A88XmWBN7NJFyMqe3QGnJdgLfFGkJnVelzRGos0bPbpsfJjcbAD22bmKc4GMbrY2g4JDrrA8vM06X1-cHHle4zOE6U4ttcc",
+            "objectId": "9d3e08f9-a7ae-43aa-a4d3-de3f319a8a9c",
+            "givenName": "Larry",
+            "surname": "Brown",
+            "email": "Larry.Brown@fabrikam.com",
+            "userPrincipalName": "labrown@fabrikam.com"
+        }, {
+            "id": "29:1bSnHZ7Js2STWrgk6ScEErLk1Lp2zQuD5H2qQ960rtvstKp8tKLl-3r8b6DoW0QxZimuTxk_kupZ1DBMpvIQQUAZL-PNj0EORDvRZXy8kvWk",
+            "objectId": "76b0b09f-d410-48fd-993e-84da521a597b",
+            "givenName": "John",
+            "surname": "Patterson",
+            "email": "johnp@fabrikam.com",
+            "userPrincipalName": "johnp@fabrikam.com"
+        }, {
+            "id": "29:1URzNQM1x1PNMr1D7L5_lFe6qF6gEfAbkdG8_BUxOW2mTKryQqEZtBTqDt10-MghkzjYDuUj4KG6nvg5lFAyjOLiGJ4jzhb99WrnI7XKriCs",
+            "objectId": "6b7b3b2a-2c4b-4175-8582-41c9e685c1b5",
+            "givenName": "Rick",
+            "surname": "Stevens",
+            "email": "Rick.Stevens@fabrikam.com",
+            "userPrincipalName": "rstevens@fabrikam.com"
+        }]
+}
+```
+
+* * *
+
+## <a name="get-single-member-details"></a>Получение сведений об отдельных участниках
+
+Вы также можете получить сведения об определенном пользователе, используя идентификатор пользователя, имя участника-пользователя или идентификатор объекта AAD.
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+
+```csharp
+public class MyBot : TeamsActivityHandler
+{
+    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+    {
+        var member = await TeamsInfo.GetMemberAsync(turnContext, turnContext.Activity.From.Id, cancellationToken);
+    }
+}
+```
+
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
+
+```typescript
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+
+        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+        const member = await TeamsInfo.getMember(context, encodeURI('someone@somecompany.com'));
+
+        // By calling next() you ensure that the next BotHandler is run.
+        await next();
+        });
+    }
+}
+```
+
+# <a name="python"></a>[Python](#tab/python)
+
+```python
+async def _show_members(
+    self, turn_context: TurnContext
+):
+    member = TeamsInfo.get_member(turn_context, turn_context.activity.from_property.id)
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+Вы можете отправить запрос GET напрямую `/v3/conversations/{conversationId}/members/{userId}` , используя значение в `serviceUrl` качестве конечной точки. Значение " `serviceUrl` является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl` .
+
+```http
+GET /v3/conversations/19:ja0cu120i1jod12j@skype.net/members/labrown@fabrikam.com"
+
+Response body
+{
+    "id": "29:1GcS4EyB_oSI8A88XmWBN7NJFyMqe3QGnJdgLfFGkJnVelzRGos0bPbpsfJjcbAD22bmKc4GMbrY2g4JDrrA8vM06X1-cHHle4zOE6U4ttcc",
+    "objectId": "9d3e08f9-a7ae-43aa-a4d3-de3f319a8a9c",
+    "givenName": "Larry",
+    "surname": "Brown",
+    "email": "Larry.Brown@fabrikam.com",
+    "userPrincipalName": "labrown@fabrikam.com"
+}
+```
+
 * * *
 
 ## <a name="get-teams-details"></a>Получение сведений о группе
 
 При установке в команде Bot может запрашивать метаданные о команде, включая Azure AD groupId.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 public class MyBot : TeamsActivityHandler
@@ -115,7 +199,7 @@ public class MyBot : TeamsActivityHandler
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -138,9 +222,18 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="python"></a>[Python](#tab/python)
 
-Вы можете отправить запрос GET напрямую `/v3/teams/{teamId}`, используя значение в `serviceUrl` качестве конечной точки. Значение `serviceUrl` "является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl`.
+```python
+async def _show_details(self, turn_context: TurnContext):
+    team_details = await TeamsInfo.get_team_details(turn_context)
+    reply = MessageFactory.text(f"The team name is {team_details.name}. The team ID is {team_details.id}. The AADGroupID is {team_details.aad_group_id}.")
+    await turn_context.send_activity(reply)
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+Вы можете отправить запрос GET напрямую `/v3/teams/{teamId}` , используя значение в `serviceUrl` качестве конечной точки. Значение " `serviceUrl` является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl` .
 
 ```http
 GET /v3/teams/19:ja0cu120i1jod12j@skype.net
@@ -153,15 +246,6 @@ Response body
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
-
-```python
-async def _show_details(self, turn_context: TurnContext):
-    team_details = await TeamsInfo.get_team_details(turn_context)
-    reply = MessageFactory.text(f"The team name is {team_details.name}. The team ID is {team_details.id}. The AADGroupID is {team_details.aad_group_id}.")
-    await turn_context.send_activity(reply)
-```
-
 * * *
 
 ## <a name="get-the-list-of-channels-in-a-team"></a>Получение списка каналов в команде
@@ -170,10 +254,10 @@ async def _show_details(self, turn_context: TurnContext):
 
 > [!NOTE]
 >
->* По умолчанию возвращается `null` имя общего канала, позволяющее выполнять локализацию.
+>* По умолчанию возвращается имя общего канала, `null` позволяющее выполнять локализацию.
 >* Идентификатор канала для общего канала всегда соответствует ИДЕНТИФИКАТОРу группы.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 public class MyBot : TeamsActivityHandler
@@ -187,7 +271,7 @@ public class MyBot : TeamsActivityHandler
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -207,9 +291,20 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="python"></a>[Python](#tab/python)
 
-Вы можете отправить запрос GET напрямую `/v3/teams/{teamId}/conversations`, используя значение в `serviceUrl` качестве конечной точки. Значение `serviceUrl` "является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl`.
+```python
+async def _show_channels(
+    self, turn_context: TurnContext
+):
+    channels = await TeamsInfo.get_team_channels(turn_context)
+    reply = MessageFactory.text(f"Total of {len(channels)} channels are currently in team")
+    await turn_context.send_activity(reply)
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+Вы можете отправить запрос GET напрямую `/v3/teams/{teamId}/conversations` , используя значение в `serviceUrl` качестве конечной точки. Значение " `serviceUrl` является стабильным, но может измениться". Когда поступает новое сообщение, ваш робот должен проверить сохраненное значение для `serviceUrl` .
 
 ```http
 GET /v3/teams/19%3A033451497ea84fcc83d17ed7fb08a1b6%40thread.skype/conversations
@@ -230,18 +325,6 @@ Response body
         "name": "Marketing"
     }]
 }
-```
-
-
-# <a name="pythontabpython"></a>[Python](#tab/python)
-
-```python
-async def _show_channels(
-    self, turn_context: TurnContext
-):
-    channels = await TeamsInfo.get_team_channels(turn_context)
-    reply = MessageFactory.text(f"Total of {len(channels)} channels are currently in team")
-    await turn_context.send_activity(reply)
 ```
 
 * * *

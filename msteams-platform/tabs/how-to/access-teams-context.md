@@ -3,11 +3,11 @@ title: Получение контекста для вкладки
 description: Сведения о получении контекста пользователя для вкладок
 keywords: контекст пользователя вкладок Teams
 ms.openlocfilehash: 01919999e38d6b659f014b0f05b76d3f332db9ab
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675177"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "44801222"
 ---
 # <a name="get-context-for-your-microsoft-teams-tab"></a>Получение контекста для вкладки Microsoft Teams
 
@@ -43,15 +43,15 @@ ms.locfileid: "41675177"
 * {Логинхинт}: значение, которое подходит как подсказка для входа для Azure AD. Как правило, это имя входа текущего пользователя в его домашнем клиенте.
 * {userPrincipalName}: имя участника пользователя текущего пользователя в текущем клиенте.
 * {Усеробжектид}: идентификатор объекта Azure AD текущего пользователя в текущем клиенте.
-* {Theme}: текущие темы пользовательского интерфейса, такие `default`как `dark`, или `contrast`.
+* {Theme}: текущие темы пользовательского интерфейса, такие как `default` , `dark` или `contrast` .
 * {groupId}: идентификатор группы Office 365, в которой находится вкладка.
 * {TID}: идентификатор клиента Azure AD для текущего пользователя.
 * {locale}: текущий языковой стандарт пользователя, отформатированный как languageId-Каунтрид (например, EN-US).
 
 >[!NOTE]
->Предыдущий `{upn}` заполнитель теперь не является устаревшим. Для обратной совместимости он в настоящее время является синонимом `{loginHint}`.
+>Предыдущий `{upn}` заполнитель теперь не является устаревшим. Для обратной совместимости он в настоящее время является синонимом `{loginHint}` .
 
-Например, предположим, что в манифесте вкладки `configURL` атрибуту присвоено значение
+Например, предположим, что в манифесте вкладки атрибуту присвоено значение `configURL`
 
 `"https://www.contoso.com/config?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}"`
 
@@ -68,7 +68,7 @@ ms.locfileid: "41675177"
 
 ### <a name="getting-context-by-using-the-microsoft-teams-javascript-library"></a>Извлечение контекста с помощью библиотеки JavaScript для Microsoft Teams
 
-Вы также можете получить приведенные выше сведения с помощью [пакета SDK для JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) , вызвав `microsoftTeams.getContext(function(context) { /* ... */ })`.
+Вы также можете получить приведенные выше сведения с помощью [пакета SDK для JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) , вызвав `microsoftTeams.getContext(function(context) { /* ... */ })` .
 
 Переменная контекста будет выглядеть так, как показано в следующем примере.
 
@@ -111,6 +111,6 @@ ms.locfileid: "41675177"
 
 ## <a name="theme-change-handling"></a>Обработка изменений темы
 
-Вы можете зарегистрировать свое приложение, чтобы сообщить, изменяется ли тема с помощью `microsoftTeams.registerOnThemeChangeHandler(function(theme) { /* ... */ })`вызова.
+Вы можете зарегистрировать свое приложение, чтобы сообщить, изменяется ли тема с помощью вызова `microsoftTeams.registerOnThemeChangeHandler(function(theme) { /* ... */ })` .
 
-`theme` Аргумент в функции будет строкой со значением `default`, `dark`или `contrast`.
+`theme`Аргумент в функции будет строкой со значением `default` , `dark` или `contrast` .

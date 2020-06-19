@@ -1,17 +1,17 @@
 ---
-title: Подписаться на события беседы
+title: Подписаться на события разговора
 author: WashingtonKayaker
 description: Как подписаться на события бесед из робота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
 ms.openlocfilehash: a8c6c39989a7d09a325412438f0d2ace78259cb7
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675565"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "44801216"
 ---
-# <a name="subscribe-to-conversation-events"></a>Подписаться на события беседы
+# <a name="subscribe-to-conversation-events"></a>Подписаться на события разговора
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -26,7 +26,7 @@ Microsoft Teams отправляет уведомления в Bot для соб
 
 Элемент Bot получает `conversationUpdate` событие, когда оно было добавлено в беседу, другие элементы были добавлены в беседу или удалены из нее, а метаданные беседы изменились.
 
-`conversationUpdate` Событие отправляется в Bot при получении сведений об обновлениях членства для Teams, где она была добавлена. Он также получает обновление, когда оно добавляется в первый раз специально для личных бесед.
+`conversationUpdate`Событие отправляется в Bot при получении сведений об обновлениях членства для Teams, где она была добавлена. Он также получает обновление, когда оно добавляется в первый раз специально для личных бесед.
 
 В следующей таблице приведен список событий обновления бесед в Teams со ссылками на дополнительные сведения.
 
@@ -43,7 +43,7 @@ Microsoft Teams отправляет уведомления в Bot для соб
 
 Событие созданного канала отправляется на ваш робот при создании нового канала в группе, в которой установлен почтовый робот.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsChannelCreatedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -53,7 +53,7 @@ protected override async Task OnTeamsChannelCreatedAsync(ChannelInfo channelInfo
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 <!-- From sample: botbuilder-js\libraries\botbuilder\tests\teams\conversationUpdate\src\conversationUpdateBot.ts -->
 
@@ -73,7 +73,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -111,7 +111,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_teams_channel_created_activity(
@@ -130,7 +130,7 @@ async def on_teams_channel_created_activity(
 
 Событие переименования канала передается в Bot при переименовании канала в группе, в которой установлен почтовый робот.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -140,7 +140,7 @@ protected override async Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -155,7 +155,7 @@ export class MyBot extends TeamsActivityHandler {
     }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -193,7 +193,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_teams_channel_renamed_activity(
@@ -210,7 +210,7 @@ async def on_teams_channel_renamed_activity(
 
 Событие Deleted Channel отправляется на ваш Bot при удалении канала в группе, в которой установлен почтовый робот.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsChannelDeletedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -220,7 +220,7 @@ protected override async Task OnTeamsChannelDeletedAsync(ChannelInfo channelInfo
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -237,7 +237,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -275,7 +275,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_teams_channel_deleted_activity(
@@ -290,9 +290,9 @@ async def on_teams_channel_deleted_activity(
 
 ### <a name="team-members-added"></a>Добавленные участники группы
 
-`teamMemberAdded` Событие отправляется на почтовый робот при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или группу чата, в которой установлена программа-робот. Сведения о пользователе (ID) уникальны для почтового робота и могут кэшироваться для последующего использования службой (например, для отправки сообщения определенному пользователю).
+`teamMemberAdded`Событие отправляется на почтовый робот при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или группу чата, в которой установлена программа-робот. Сведения о пользователе (ID) уникальны для почтового робота и могут кэшироваться для последующего использования службой (например, для отправки сообщения определенному пользователю).
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsMembersAddedAsync(IList<ChannelAccount> membersAdded, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -314,7 +314,7 @@ protected override async Task OnTeamsMembersAddedAsync(IList<ChannelAccount> mem
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -337,7 +337,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 Это сообщение, которое будет получать ваш почтовый робот при добавлении в **команду**ленты.
 
@@ -415,7 +415,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_teams_members_added_activity(
@@ -432,9 +432,9 @@ async def on_teams_members_added_activity(
 
 ### <a name="team-members-removed"></a>Удалены участники группы
 
-`teamMemberRemoved` Событие отправляется в Bot, если оно удалено из команды и каждый раз, когда какой-либо пользователь удаляется из команды, участником которой является пользователь Bot. Вы можете определить, был ли удаленный участник участником "bot" или пользователем, изучив `Activity` объект. `turnContext`  Если `Id` поле `MembersRemoved` объекта совпадает с `Id` полем `Recipient` объекта, то член удален, а в противном случае — пользователь.  Как правило, `Id` в качестве ленты будет использоваться:`28:<MicrosoftAppId>`
+`teamMemberRemoved`Событие отправляется в Bot, если оно удалено из команды и каждый раз, когда какой-либо пользователь удаляется из команды, участником которой является пользователь Bot. Вы можете определить, был ли удаленный участник участником "bot" или пользователем, изучив `Activity` объект `turnContext` .  Если `Id` поле объекта совпадает с `MembersRemoved` `Id` полем `Recipient` объекта, то член удален, а в противном случае — пользователь.  Как правило, в качестве ленты `Id` будет использоваться:`28:<MicrosoftAppId>`
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsMembersRemovedAsync(IList<ChannelAccount> membersRemoved, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -455,7 +455,7 @@ protected override async Task OnTeamsMembersRemovedAsync(IList<ChannelAccount> m
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 
@@ -479,7 +479,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -520,7 +520,7 @@ export class MyBot extends TeamsActivityHandler {
 ```
 
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_teams_members_removed_activity(
@@ -539,7 +539,7 @@ async def on_teams_members_removed_activity(
 
 Ваш робот получает уведомление, когда группа, в которую она находится, была переименована. Он получает `conversationUpdate` событие `eventType.teamRenamed` в `channelData` объекте.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -549,7 +549,7 @@ protected override async Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnCo
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -565,7 +565,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 { 
@@ -601,7 +601,7 @@ export class MyBot extends TeamsActivityHandler {
 ```
 
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_teams_team_renamed_activity(
@@ -616,7 +616,7 @@ async def on_teams_team_renamed_activity(
 
 ## <a name="message-reaction-events"></a>События реакции сообщений
 
-`messageReaction` Событие отправляется, когда пользователь добавляет или удаляет реакции на сообщение, отправленное вашим роботом. `replyToId` Содержит идентификатор определенного сообщения, а также `Type` тип реакции в текстовом формате.  К типам реакции относятся: "Ангри", "сердце", "лаугх", "Like", "грустный", "удивленный". Это событие не содержит содержимое исходного сообщения, поэтому если обработка реакции на сообщения очень важна для ленты, необходимо сохранить сообщения при их отправке.
+`messageReaction`Событие отправляется, когда пользователь добавляет или удаляет реакции на сообщение, отправленное вашим роботом. `replyToId`Содержит идентификатор определенного сообщения, а также `Type` тип реакции в текстовом формате.  К типам реакции относятся: "Ангри", "сердце", "лаугх", "Like", "грустный", "удивленный". Это событие не содержит содержимое исходного сообщения, поэтому если обработка реакции на сообщения очень важна для ленты, необходимо сохранить сообщения при их отправке.
 
 | EventType       | Объект полезных данных   | Описание                                                             | Область |
 | --------------- | ---------------- | ----------------------------------------------------------------------- | ----- |
@@ -625,7 +625,7 @@ async def on_teams_team_renamed_activity(
 
 ### <a name="reactions-to-a-bot-message"></a>Реакции на сообщение Bot
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnReactionsAddedAsync(IList<MessageReaction> messageReactions, ITurnContext<IMessageReactionActivity> turnContext, CancellationToken cancellationToken)
@@ -639,7 +639,7 @@ protected override async Task OnReactionsAddedAsync(IList<MessageReaction> messa
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 <!-- Verify -->
 
@@ -664,7 +664,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -709,7 +709,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_reactions_added(
@@ -734,7 +734,7 @@ async def on_reactions_added(
 
 ### <a name="reactions-removed-from-bot-message"></a>Реакции, удаленные из сообщения Bot
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnReactionsRemovedAsync(IList<MessageReaction> messageReactions, ITurnContext<IMessageReactionActivity> turnContext, CancellationToken cancellationToken)
@@ -748,7 +748,7 @@ protected override async Task OnReactionsRemovedAsync(IList<MessageReaction> mes
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 <!-- Verify -->
 
@@ -771,7 +771,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -816,7 +816,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 async def on_reactions_removed(
