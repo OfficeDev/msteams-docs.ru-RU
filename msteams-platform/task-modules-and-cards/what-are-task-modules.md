@@ -4,12 +4,12 @@ author: clearab
 description: Добавление модальных контекстных окон для сбора и отображения информации для пользователей из приложений Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 22fdc7a9dab1ff6f27e2b0d144e54676b6cca50e
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+ms.openlocfilehash: adf8f3a6fdbf5976296a58d9ffbae5de950ce64c
+ms.sourcegitcommit: fdc50183f3f4bec9e4b83bcfe5e016b591402f7c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "44801258"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44867120"
 ---
 # <a name="what-are-task-modules"></a>Что такое модули задач?
 
