@@ -1,13 +1,13 @@
 ---
 title: Руководство по процессу утверждения приложений Microsoft Teams
 description: Описание процесса утверждения приложения, опубликованного в магазине приложений Microsoft Teams
-keywords: Публикация Teams в магазине Office AppSource
-ms.openlocfilehash: e93a17453e514b1e89f3f7070ff1f31000719260
-ms.sourcegitcommit: b822584b643e003d12d2e9b5b02a0534b2d57d71
+keywords: Публикация Teams Store Office Publishing AppSource Partner Center Account Verification
+ms.openlocfilehash: 00266101f2c417a192ac97daaaa73f397f1bbdf6
+ms.sourcegitcommit: 1525db0515ab310a91939d85dbbfb7e887537849
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44704490"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091307"
 ---
 # <a name="submit-your-app-to-appsource"></a>Передача приложения в AppSource
 
@@ -45,7 +45,7 @@ ms.locfileid: "44704490"
 | Меню | Вариант |
 | -------   | -------  |
 |Категория| Коммерческий рынок|
-| Тема | Общие вопросы и Справка по Marketplace Marketplace |
+| Раздел | Общие вопросы и Справка по Marketplace Marketplace |
 | Подраздел| Надстройка Office |
 
 ## <a name="where-can-i-get-support-for-my-partner-center-issues"></a>Где можно получить поддержку по вопросам, связанным с центром партнеров?

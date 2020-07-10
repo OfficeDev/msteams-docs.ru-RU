@@ -1,19 +1,19 @@
 ---
-title: Использование пакета SDK клиента Teams
+title: Использование клиентского SDK для Teams
 author: laujan
 description: Использование пакета SDK клиента Teams для добавления функциональных возможностей, поддерживающих Teams, на пользовательские вкладки
 keywords: вкладки Teams канал группы настраиваемый статический пакет SDK JavaScript персональный
 ms.topic: conceptual
-ms.openlocfilehash: 66d44617b897e44268ae2cee53f7ea64743ad821
-ms.sourcegitcommit: c4a7bc638e848a702cce92798cba84917fcecc35
+ms.openlocfilehash: 07903d766ac67f2dbc9fc09268618ac5c2ae33c2
+ms.sourcegitcommit: 1525db0515ab310a91939d85dbbfb7e887537849
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928512"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091300"
 ---
-# <a name="using-the-teams-client-sdk"></a>Использование пакета SDK клиента Teams
+# <a name="using-the-teams-client-sdk"></a>Использование клиентского SDK для Teams
 
-**Клиентский пакет SDK Teams для JavaScript** и **Библиотека JavaScript** для Teams являются частью [платформы разработчика Microsoft Teams](https://msdn.microsoft.com/microsoft-teams) и предоставляют средства и процессы для упрощения создания приложений Teams. Клиентский пакет SDK для Teams распространяется в виде пакета NPM. Последнюю версию можно найти здесь: <https://www.npmjs.com/package/@microsoft/teams-js>. Библиотека Teams расположена по адресу <https://github.com/OfficeDev/microsoft-teams-library-js>.
+**Клиентский пакет SDK Teams для JavaScript** и **Библиотека JavaScript** для Teams являются частью [платформы разработчика Microsoft Teams](/microsoftteams/platform/) и предоставляют средства и процессы для упрощения создания приложений Teams. Клиентский пакет SDK для Teams распространяется в виде пакета NPM. Последнюю версию можно найти здесь: <https://www.npmjs.com/package/@microsoft/teams-js> . Библиотека Teams расположена по адресу <https://github.com/OfficeDev/microsoft-teams-library-js> .
 
 В следующей таблице приведены функции библиотеки Teams, которые обычно используются при разработке вкладок:
 
