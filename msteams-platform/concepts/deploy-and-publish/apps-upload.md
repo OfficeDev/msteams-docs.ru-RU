@@ -2,12 +2,12 @@
 title: Отправка настраиваемого приложения в Microsoft Teams
 description: Сведения о том, как отправить приложение в Microsoft Teams
 keywords: Отправка приложений Teams
-ms.openlocfilehash: 256a9bea48ed816f2e9912006dd2fe7301743919
-ms.sourcegitcommit: 61c93b22490526b1de87c0b14a3c7eb6e046caf6
+ms.openlocfilehash: c130ef48d3ad7476de9ca5afeb7b613197c43f18
+ms.sourcegitcommit: 3ba5a5a7d9d9d906abc3ee1df9c2177de0cfd767
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44453884"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45103028"
 ---
 # <a name="upload-an-app-package-to-microsoft-teams"></a>Отправка пакета приложения в Microsoft Teams
 
@@ -100,7 +100,7 @@ ms.locfileid: "44453884"
 
 1. Перейдите к каналу в группе. Нажмите кнопку *Дополнительные параметры* (*&#8943;*) и выберите пункт *соединители*.
 
-2. Выберите соединитель из раздела **Отправленные** внизу.
+2. Выберите свой соединитель из раздела **Неопубликованные** в нижней части страницы.
 
 3. Настройте соединитель с помощью [страницы конфигурации](../../webhooks-and-connectors/how-to/connectors-creating.md) и нажмите кнопку *сохранить*.
 

@@ -4,12 +4,12 @@ author: clearab
 description: В этой статье описывается, как реагировать на действия по отправке модуля задач из команды действия расширения системы обмена сообщениями
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 82dad570bac096a9b2fb0d1fbada4ee70ca2a662
-ms.sourcegitcommit: fdc50183f3f4bec9e4b83bcfe5e016b591402f7c
+ms.openlocfilehash: a876275f5f4f9c3a7c1fea275eecb9c26b780fd0
+ms.sourcegitcommit: 3ba5a5a7d9d9d906abc3ee1df9c2177de0cfd767
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44867113"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45103017"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправить модуль задач
 
@@ -451,7 +451,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
       const attachmentContent = activityPreview.attachments[0].content;
       const userText = attachmentContent.body[1].text;
       const choiceSet = attachmentContent.body[3];
-      
+
       const submitData = {
         MultiSelect: choiceSet.isMultiSelect ? 'true' : 'false',
         Option1: choiceSet.choices[0].title,
@@ -459,7 +459,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
         Option3: choiceSet.choices[2].title,
         Question: userText
       };
-    
+
       const adaptiveCard = CardFactory.adaptiveCard({
         actions: [
           { type: 'Action.Submit', title: 'Submit', data: { submitLocation: 'messagingExtensionSubmit' } }
@@ -488,7 +488,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
               { itemId: 0, mentionType: 'person', mri: context.activity.from.id, displayname: context.activity.from.name }
           ]
       }};
-    
+
       await context.sendActivity(responseActivity);
     }
 }
@@ -529,6 +529,61 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
+### <a name="user-attribution-for-bots-messages"></a>Атрибуты пользователей для сообщений Боты 
+
+В сценариях, где Bot отправляет сообщения от имени пользователя, применяя к сообщению этого пользователя, вы можете помочь в задействовании и продемонстрировать более естественный процесс взаимодействия. Эта функция позволяет отправлять сообщения от имени пользователя, инициирующего сообщение.
+
+На изображении внизу слева отображается сообщение с картой, отправленное с помощью элемента "Bot *без* атрибутов пользователя", а справа — карта, отправленная *с помощью атрибутов пользователя.*
+
+![Снимок экрана](../../../assets/images/messaging-extension/user-attribution-bots.png)
+
+Чтобы использовать атрибуты пользователей в Teams, необходимо добавить `OnBehalfOf` сущность "упоминание" в `ChannelData` `Activity` полезные данные, отправляемые в Teams.
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet-1)
+
+```csharp
+    OnBehalfOf = new []
+    {
+      new
+      {
+        ItemId = 0,
+        MentionType = "person",
+        Mri = turnContext.Activity.From.Id,
+        DisplayName = turnContext.Activity.From.Name
+      }  
+    }
+
+```
+
+# <a name="json"></a>[JSON](#tab/json-1)
+
+```json
+{
+    "text": "Hello World!",
+    "ChannelData": {
+        "OnBehalfOf": [{
+            "itemid": 0,
+            "mentionType": "person",
+            "mri": "29:orgid:89e6508d-6c0f-4ffe-9f6a-b58416d965ae",
+            "displayName": "Sowrabh N R S"
+        }]
+    }
+}
+```
+
+* * *
+
+Ниже приведено описание сущностей в `OnBehalfOf` массиве.
+
+#### <a name="details-of--onbehalfof-entity-schema"></a>Сведения о `OnBehalfOf` схеме объекта
+
+|Поле|Тип|Описание|
+|:---|:---|:---|
+|`itemId`|Integer|Должно быть равно 0|
+|`mentionType`|String|Должно быть "Person"|
+|`mri`|String|Идентификатор ресурса сообщения (МРИ) пользователя, от имени которого отправляется сообщение. В качестве имени отправителя сообщения будет использоваться " \<user\> Via \<bot name\> ".|
+|`displayName`|String|Имя пользователя. Используется в качестве резервного при разрешении имени в случае недоступности.|
+  
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Добавление команды поиска
