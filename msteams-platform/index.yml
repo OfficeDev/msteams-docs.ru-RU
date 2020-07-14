@@ -10,16 +10,16 @@ metadata:
   author: laujan
   ms.author: lajanuar
   ms.date: 05/29/2020
-  ms.openlocfilehash: f0cd5ae499497dad227a62f2938df2449a09dc81
-  ms.sourcegitcommit: 6c786434b56cc8c2765a14aa1f6149870245f309
+  ms.openlocfilehash: bca90313836aa8cad55a99009ac99042ca5062d3
+  ms.sourcegitcommit: 3b24514f33cd01634620cfa94529b2e0e2a7d434
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/06/2020
-  ms.locfileid: "44801544"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "45117828"
 highlightedContent:
   items:
-  - title: Приложения Microsoft Teams
-    itemType: overview
+  - title: "Новая возможность разработки Microsoft Teams? \U0001F680Начните отсюда!"
+    itemType: get-started
     url: /microsoftteams/platform/overview
   - title: Вкладки — встроенные веб-интерфейсы
     itemType: overview
@@ -58,7 +58,7 @@ conceptualContent:
       text: Сопоставление вариантов использования с возможностями Microsoft Teams
     - url: /microsoftteams/platform/whats-new
       itemType: whats-new
-      text: Новые возможности
+      text: Что нового
   - title: Узнать
     links:
     - url: /learn/modules/intro-microsoft-teams-apps
