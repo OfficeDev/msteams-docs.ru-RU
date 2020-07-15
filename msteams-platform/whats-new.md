@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: eede16c65faa2366b8c0734a39d84b558b1d68ed
-ms.sourcegitcommit: 61c93b22490526b1de87c0b14a3c7eb6e046caf6
+ms.openlocfilehash: 527f8fa9a029936f62203136a0891f3815db7ee2
+ms.sourcegitcommit: d0ca6a4856ffd03d197d47338e633126723fa78a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44453856"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45137642"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -17,6 +17,7 @@ ms.locfileid: "44453856"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+| 07/01/2020 |Приступите к созданию приложений Teams с помощью Visual Studio Code Toolkit.|[Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio](toolkit/visual-studio-code-overview.md) |
 | 05/20/2020 | Разрешения на согласие с определенными ресурсами с помощью API Microsoft Graph — в предварительной версии для разработчиков. |[Согласие для определенных ресурсов (RSC) — Предварительная версия для разработчиков](graph-api/rsc/resource-specific-consent.md) |
 | 03/24/2020 | Добавлена поддержка получения одного участника беседы и дополнительная поддержка извлечения элементов, на которых выполняется страница. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md)
 | 12/26/2019 | `replyToId`Параметр в полезных данных, отправляемых на Bot, больше не шифруется, что позволяет использовать это значение для создания диплинкс к этим сообщениям. Полезные данные сообщений включают в себя зашифрованные значения в параметре. `legacy.replyToId`.  |

@@ -1,16 +1,16 @@
 ---
-title: Создание страницы контента
+title: Создать страницу контента
 author: laujan
 description: ''
 keywords: вкладки Teams канал группы, настраиваемый статически
 ms.topic: conceptual
 ms.author: v-laujan
-ms.openlocfilehash: ac85e000c9bdaebf28cb33143a7c82a348d3771e
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: a9f1fa407c6377daa8bce6a6a6c63b47d50d8100
+ms.sourcegitcommit: d0ca6a4856ffd03d197d47338e633126723fa78a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675418"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45137638"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -28,7 +28,7 @@ ms.locfileid: "41675418"
 
 ## <a name="integrate-your-code-with-teams"></a>Интеграция кода с Teams
 
-Чтобы страница отображалась в Teams, необходимо включить [клиентский пакет SDK Microsoft Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) для `microsoftTeams.initialize()` JavaScript и включить вызов после загрузки страницы. Способ общения страницы и клиента teams:
+Чтобы страница отображалась в Teams, необходимо включить [клиентский пакет SDK Microsoft Teams для JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) и включить вызов `microsoftTeams.initialize()` после загрузки страницы. Способ общения страницы и клиента teams:
 
 ```html
 <!DOCTYPE html>
@@ -64,4 +64,28 @@ ms.locfileid: "41675418"
 
 ### <a name="valid-domains"></a>Допустимые домены
 
-Убедитесь, что все домены URL-адресов, используемые в вкладках `validDomains` , включены в массив в [манифесте](~/concepts/build-and-test/apps-package.md). Дополнительные сведения см. в статье [валиддомаинс](~/resources/schema/manifest-schema.md#validdomains) в справочнике по схеме манифеста. Однако осторожным, что основные функциональные возможности вкладки находятся в Teams, а не вне Teams.
+Убедитесь, что все домены URL-адресов, используемые в вкладках, включены в `validDomains` массив в [манифесте](~/concepts/build-and-test/apps-package.md). Дополнительные сведения см. в статье [валиддомаинс](~/resources/schema/manifest-schema.md#validdomains) в справочнике по схеме манифеста. Однако осторожным, что основные функциональные возможности вкладки находятся в Teams, а не вне Teams.
+
+## <a name="showing-a-native-loading-indicator"></a>Индикатор загрузки машинного кода
+
+Начиная с [схемы манифеста версии 1.7](../../../resources/schema/manifest-schema.md), вы можете предоставить [встроенный индикатор загрузки](../../../resources/schema/manifest-schema.md#showloadingindicator) везде, где веб-содержимое загружено в Teams, например, [Страница "содержимое вкладки"](#integrate-your-code-with-teams), [Страница конфигурации](configuration-page.md), страница [удаления](removal-page.md) и [модули задач на вкладках](../../../task-modules-and-cards/task-modules/task-modules-tabs.md).
+
+> [!NOTE]
+> Если вы указываете `"showLoadingIndicator : true` в манифесте приложения, все страницы настройки вкладок, контента и удаления и все модули задач на основе IFRAME должны соответствовать обязательному протоколу ниже:
+
+1. Чтобы показать индикатор загрузки, добавьте `"showLoadingIndicator": true` его в манифест. 
+2. Не забудьте позвонить `microsoftTeams.initialize();` .
+3. **Необязательный**параметр. Если вы готовы к печати на экране и хотите выполнить отложенную загрузку оставшейся части содержимого приложения, можно вручную скрыть индикатор загрузки, вызвав`microsoftTeams.appInitialization.notifyAppLoaded();`
+4. **Обязательный**параметр. Наконец, вызовите `microsoftTeams.appInitialization.notifySuccess()` Teams, чтобы уведомить Teams о том, что приложение успешно загружено. Затем команды скрывают индикатор загрузки, если это необходимо. Если оно `notifySuccess` не вызвано в течение 30 секунд, будет считаться, что время ожидания вашего приложения истекло, и появится экран с сообщением об ошибке с параметром Retry.
+5. Если приложение не удается загрузить, вы можете позвонить, `microsoftTeams.appInitialization.notifyFailure(reason);` чтобы разрешить Teams знать об ошибке. Затем пользователю будет показан экран ошибки:
+
+```typescript
+``
+/* List of failure reasons */
+export const enum FailedReason {
+    AuthFailed = "AuthFailed",
+    Timeout = "Timeout",
+    Other = "Other"
+}
+```
+>

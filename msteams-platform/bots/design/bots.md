@@ -2,12 +2,12 @@
 title: Рекомендации по проектированию для Боты
 description: Описывает рекомендации по созданию Боты
 keywords: рекомендации по проектированию Teams Справочник по платформе Боты
-ms.openlocfilehash: 731e36ac3437e22435ea6054ad359d0c6bc2ead3
-ms.sourcegitcommit: 61c93b22490526b1de87c0b14a3c7eb6e046caf6
+ms.openlocfilehash: 4f474278b37058f61886a620af634780d2e3cb19
+ms.sourcegitcommit: d0ca6a4856ffd03d197d47338e633126723fa78a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44453891"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45137677"
 ---
 # <a name="start-talking-with-bots"></a>Начало беседы с Боты
 
