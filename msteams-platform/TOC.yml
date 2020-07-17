@@ -13,7 +13,7 @@
       href: tutorials/get-started-nodejs-app-studio.md
     - name: Создать приложение с генератором Yeoman
       href: tutorials/get-started-yeoman.md
-    - name: Расширение возможностей клиента Teams с помощью пользовательских приложений
+    - name: Сведения о пользовательских приложениях для Teams
       href: tutorials/code-samples.md
 - name: Шаблоны и интеграция
   items:
