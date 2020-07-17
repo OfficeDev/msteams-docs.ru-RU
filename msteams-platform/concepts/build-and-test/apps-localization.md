@@ -3,12 +3,12 @@ title: Локализация для групповых приложений
 description: Описание проблем, связанных с локализацией приложения
 keywords: Teams Publishing Store Office Publishing AppSource Language Localization
 ms.date: 05/15/2018
-ms.openlocfilehash: 138b6d66808fc5ed212f1cb0eed8579faea6f764
-ms.sourcegitcommit: bac0226d9048c363d96bbaf6f5395388c5f5c45a
+ms.openlocfilehash: 8d14da5c773bcc422081b50fc530a32163260b4a
+ms.sourcegitcommit: 81ac2a1070d16e20ae0e4cb6137dce09b31914af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039274"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45152681"
 ---
 # <a name="localization-for-microsoft-teams-apps"></a>Локализация приложений Microsoft Teams
 
@@ -20,9 +20,9 @@ ms.locfileid: "45039274"
 
 ## <a name="localizing-your-appsource-listing"></a>Локализация списка AppSource
 
-Если вы публикуете в магазине приложений, вам необходимо знать, что локализация вашего списка AppSource пока не поддерживается. Однако в процессе подготовки к поддержке локализованных вхождений в магазине App можно добавить в список дополнительные языки. В настоящее время только сведения о языке по умолчанию (Английская версия), которые вы предоставляете в [центре партнеров](/dev/store/use-partner-center-to-submit-to-appsource) для вашего списка, будут отображаться в списке [веб-сайтов AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) для вашего приложения.
+Если вы публикуете в магазине приложений, вам необходимо знать, что локализация вашего списка AppSource пока не поддерживается. Однако в процессе подготовки к поддержке локализованных вхождений в магазине App можно добавить в список дополнительные языки. В настоящее время только сведения о языке по умолчанию (Английская версия), которые вы предоставляете в [центре партнеров](/office/dev/store/submit-to-appsource-via-partner-center) для вашего списка, будут отображаться в списке [веб-сайтов AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) для вашего приложения.
 
-Чтобы настроить дополнительный язык для приложения, в [центре партнеров](/dev/store/use-partner-center-to-submit-to-appsource)выберите английский и дополнительный язык приложения. В этом примере используется французский язык.
+Чтобы настроить дополнительный язык для приложения, в [центре партнеров](/office/dev/store/submit-to-appsource-via-partner-center)выберите английский и дополнительный язык приложения. В этом примере используется французский язык.
 
 1. Добавление английского языка
     * Введите имя приложения.
