@@ -5,7 +5,7 @@ keywords: набор средств Visual Studio Code Toolkit для Teams
 ms.date: 06/30/2020
 ms.openlocfilehash: 17f21d1656b32074318030b9df9e643200f58f80
 ms.sourcegitcommit: ecf7ca8e77e77fe3f4cad1b13e3d31a825155555
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45054254"
