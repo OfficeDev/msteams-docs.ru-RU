@@ -21,6 +21,10 @@
       href: samples/app-templates.md
     - name: Готовые к работе соединители
       href: samples/shifts-wfm-connectors.md
+    - name: Создание виртуального помощника для Teams
+      href: samples/virtual-assistant.md
+    - name: Интеграция чат-бота виртуального агента Power с Teams
+      href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
     - name: Расширение набора средств Microsoft Teams
       items:
         - name: "Расширение набора средств Teams для Visual\_Studio\_Code"
