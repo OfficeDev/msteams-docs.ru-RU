@@ -2,14 +2,17 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: 527f8fa9a029936f62203136a0891f3815db7ee2
-ms.sourcegitcommit: d0ca6a4856ffd03d197d47338e633126723fa78a
+ms.openlocfilehash: 28e83375ecbfec7f2adac14a4b5419a6cc40c61e
+ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45137642"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434533"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
+
+>[!TIP]
+> Ознакомьтесь с рабочими шаблонами, готовыми к работе, в [**каталоге шаблонов приложений Teams**](samples/app-templates.md). Каталог имеет алфавитный алфавит, а последние добавленные помечаются звездочкой **&#9734;**.
 
 ## <a name="change-log"></a>Журнал изменений
 
@@ -17,8 +20,15 @@ ms.locfileid: "45137642"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+| 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](~/tabs/how-to/native-device-permissions.md) |
+|07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
+|07/14/2020|Отображение собственная документация по индикатору загрузки|[Индикатор загрузки машинного кода](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
 | 07/01/2020 |Приступите к созданию приложений Teams с помощью Visual Studio Code Toolkit.|[Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio](toolkit/visual-studio-code-overview.md) |
+|07/01/2020|Единый вход для вкладок "GA" для веб-клиентов Teams и настольных компьютеров|[Единый вход (SSO)](tabs/how-to/authentication/auth-aad-sso.md)|
+|06/05/2020| Схема манифеста обновлена до версии 1,7| [Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 | 05/20/2020 | Разрешения на согласие с определенными ресурсами с помощью API Microsoft Graph — в предварительной версии для разработчиков. |[Согласие для определенных ресурсов (RSC) — Предварительная версия для разработчиков](graph-api/rsc/resource-specific-consent.md) |
+|5/18/2020|Интеграция виртуальных агентов Power в Teams|[Интеграция виртуальных агентов Power чатбот с Microsoft Teams](bots/how-to/add-power-virtual-agents-bot-to-teams.md)|
+|04/01/2020|Интеграция систем WFM с соединителем смен для Teams|[Microsoft Teams смещается соединители WFM](samples/shifts-wfm-connectors.md)
 | 03/24/2020 | Добавлена поддержка получения одного участника беседы и дополнительная поддержка извлечения элементов, на которых выполняется страница. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md)
 | 12/26/2019 | `replyToId`Параметр в полезных данных, отправляемых на Bot, больше не шифруется, что позволяет использовать это значение для создания диплинкс к этим сообщениям. Полезные данные сообщений включают в себя зашифрованные значения в параметре. `legacy.replyToId`.  |
 | 11/5/2019 | Единый вход с помощью пакета SDK для JavaScript в Teams на странице веб-контента находится в области предварительного просмотра для разработчиков. | [Единый вход](tabs/how-to/authentication/auth-aad-sso.md) |

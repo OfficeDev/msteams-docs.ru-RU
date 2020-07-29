@@ -6,43 +6,44 @@ author: laujan
 ms.author: lajanuar
 ms.topic: Overview
 keywords: Авторизация в Teams единого входа OAuth RSC Graph
-ms.openlocfilehash: a9380081e7694a7eae8e2c131e091b108acb051f
-ms.sourcegitcommit: 26b7404142706290810064f8216abaa1c262d1e5
+ms.openlocfilehash: bf449b338e8c0f42dfef776e533fb6b5ff591529
+ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45145916"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434505"
 ---
 # <a name="resource-specific-consent-rsc--developer-preview"></a>Согласие для определенных ресурсов (RSC) — Предварительная версия для разработчиков
 
 >[!NOTE]
+
 >Разрешения на доступ к ресурсам на настольных компьютерах и веб-клиентах доступны в режиме предварительной версии для разработчиков. Узнайте, [как включить предварительный просмотр для разработчиков](../../resources/dev-preview/developer-preview-intro.md) для получения дополнительных сведений.
 
 Согласие с конкретными ресурсами (RSC) — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными командами в Организации. Модель разрешений согласия для определенных ресурсов (RSC) позволяет *владельцам групп* предоставлять согласие на доступ к данным приложения и/или изменять их. Детализация, зависящие от Teams, разрешения RSC определяют, что приложение может выполнять в определенной команде:
 
 ## <a name="resource-specific-permissions"></a>Разрешения для определенных ресурсов
 
-|Разрешение приложения| Action |
+|Разрешение приложения| Действие |
 | ----- | ----- |
-|Теамсеттингс. Read. Group | Получение параметров для этой команды.|
+|TeamSettings.Read.Group | Получение параметров для этой команды.|
 |Теамсеттингс. Edit. Group|Обновление параметров для этой команды.|
-|Чаннелсеттингс. Read. Group|Получите имена каналов, описания каналов и параметры канала для этой команды.|
-|Чаннелсеттингс. Edit. Group|Обновите имена каналов, описания каналов и параметры канала для этой команды.|
-|Channel. Create. Group|Создание каналов в этой команде.|
-|Channel. Delete. Group|Удаление каналов в этой команде.|
-|Чаннелмессаже. Read. Group |Получение сообщений о каналах этой группы.|
-|TeamsApp. Read. Group|Получение списка установленных приложений этой группы.|
-|TeamsTab. Read. Group|Получение списка вкладок этой группы.|
-|TeamsTab. Create. Group|Создание вкладок в этой команде.|
-|TeamsTab. Edit. Group|Обновите вкладки этой группы.|
-|TeamsTab. Delete. Group|Удаление вкладок этой группы.|
-|Member. Read. Group|Получение сведений о членах этой группы.|
-|Владелец. чтение. Группа|Получение сведений о владельцах этой группы.|
+|ChannelSettings.Read.Group|Получите имена каналов, описания каналов и параметры канала для этой команды.|
+|ChannelSettings.Edit.Group|Обновите имена каналов, описания каналов и параметры канала для этой команды.|
+|Channel.Create.Group|Создание каналов в этой команде.|
+|Channel.Delete.Group|Удаление каналов в этой команде.|
+|ChannelMessage.Read.Group |Получение сообщений о каналах этой группы.|
+|TeamsApp.Read.Group|Получение списка установленных приложений этой группы.|
+|TeamsTab.Read.Group|Получение списка вкладок этой группы.|
+|TeamsTab.Create.Group|Создание вкладок в этой команде.|
+|TeamsTab.Edit.Group|Обновите вкладки этой группы.|
+|TeamsTab.Delete.Group|Удаление вкладок этой команды.|
+|Member.Read.Group|Получение сведений о членах этой группы.|
+|Owner.Read.Group|Получение сведений о владельцах этой группы.|
 
 >[!NOTE]
 >Разрешения, связанные с ресурсами, доступны только для приложений Teams, установленных в клиенте Teams и в настоящее время не входят в состав портала Azure Active Directory.
 
-## <a name="enabling-resource-specific-consent-in-your-application"></a>Включение согласия, зависящей от ресурса, в приложении
+## <a name="enable-resource-specific-consent-in-your-application"></a>Включение согласия, зависящей от ресурса, в приложении
 
 Ниже приведены действия по включению RSC в приложении.
 
@@ -160,6 +161,14 @@ ms.locfileid: "45145916"
 > - Выполните вызов **Get** для следующей конечной точки: `https://graph.microsoft.com/beta/groups/{teamGroupId}/permissionGrants` . Поле Клиентаппид в отклике будет сопоставляться с appId, указанным в манифесте приложения Teams.
 
  ![Ответ в проводнике Graph для получения вызова.](../../assets/images/graph-permissions.png)
+ 
+## <a name="test-resource-specific-consent"></a>Проверка согласия, зависящей от ресурса
+ 
+> [!div class="nextstepaction"]
+> [**Проверка разрешений согласия для определенных ресурсов в Teams**](test-resource-specific-consent.md)
+ 
+## <a name="related-topic-for-teams-administrators"></a>Раздел, посвященный администраторам Teams
 
- > [!div class="nextstepaction"]
-> [Проверка разрешений согласия для определенных ресурсов в Teams](test-resource-specific-consent.md)
+> [!div class="nextstepaction"]
+> [**Согласие с определенными ресурсами в Microsoft Teams для администраторов**](/MicrosoftTeams/resource-specific-consent)
+> 

@@ -5,12 +5,12 @@ description: ''
 keywords: вкладки Teams канал группы, настраиваемый статически
 ms.topic: conceptual
 ms.author: v-laujan
-ms.openlocfilehash: a9f1fa407c6377daa8bce6a6a6c63b47d50d8100
-ms.sourcegitcommit: d0ca6a4856ffd03d197d47338e633126723fa78a
+ms.openlocfilehash: 49cd771c45bc3c4f91a7ab5f38beaf01da712544
+ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45137638"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434491"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -66,7 +66,7 @@ ms.locfileid: "45137638"
 
 Убедитесь, что все домены URL-адресов, используемые в вкладках, включены в `validDomains` массив в [манифесте](~/concepts/build-and-test/apps-package.md). Дополнительные сведения см. в статье [валиддомаинс](~/resources/schema/manifest-schema.md#validdomains) в справочнике по схеме манифеста. Однако осторожным, что основные функциональные возможности вкладки находятся в Teams, а не вне Teams.
 
-## <a name="showing-a-native-loading-indicator"></a>Индикатор загрузки машинного кода
+## <a name="show-a-native-loading-indicator"></a>Отображение индикатора загрузки в машинном коде
 
 Начиная с [схемы манифеста версии 1.7](../../../resources/schema/manifest-schema.md), вы можете предоставить [встроенный индикатор загрузки](../../../resources/schema/manifest-schema.md#showloadingindicator) везде, где веб-содержимое загружено в Teams, например, [Страница "содержимое вкладки"](#integrate-your-code-with-teams), [Страница конфигурации](configuration-page.md), страница [удаления](removal-page.md) и [модули задач на вкладках](../../../task-modules-and-cards/task-modules/task-modules-tabs.md).
 

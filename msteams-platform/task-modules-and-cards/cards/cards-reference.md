@@ -2,12 +2,12 @@
 title: Справочник по карточкам
 description: Описывает все карточки и действия карточки, доступные боты в Teams.
 keywords: Справочник по карточкам Боты
-ms.openlocfilehash: 9cd868e504e426cbe56ed1c5d05c8e6adc1e1ddf
-ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
+ms.openlocfilehash: 7bd1cbea0aec03913c9bce205ae68eedba284637
+ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "44801489"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434547"
 ---
 # <a name="cards-reference"></a>Справочник по карточкам
 
@@ -52,7 +52,7 @@ ms.locfileid: "44801489"
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
 | url | URL-адрес | URL-адрес HTTPS для изображения |
-| alt | String | Доступное описание изображения |
+| alt | Строка | Доступное описание изображения |
 
 ### <a name="buttons"></a>Кнопки
 
@@ -74,6 +74,9 @@ ms.locfileid: "44801489"
 | --- | --- | --- | --- |
 | ✔ | ✔ | ✖ | ✔ |
 |
+
+> [!NOTE]
+> В настоящее время элементы мультимедиа в настоящее время не поддерживаются в адаптивных картах версии 1.2 на платформе Teams.
 
 ### <a name="example-adaptive-card"></a>Пример адаптивной карточки
 

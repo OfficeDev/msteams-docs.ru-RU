@@ -2,12 +2,12 @@
 title: Руководство по процессу утверждения приложений Microsoft Teams
 description: Описание процесса утверждения приложения, опубликованного в магазине приложений Microsoft Teams
 keywords: Публикация Teams Store Office Publishing AppSource Partner Center Account Verification
-ms.openlocfilehash: 00266101f2c417a192ac97daaaa73f397f1bbdf6
-ms.sourcegitcommit: 1525db0515ab310a91939d85dbbfb7e887537849
+ms.openlocfilehash: cafbffff46417d692f3b587dda7269ab4b82f6cd
+ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091307"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434477"
 ---
 # <a name="submit-your-app-to-appsource"></a>Передача приложения в AppSource
 
@@ -40,11 +40,11 @@ ms.locfileid: "45091307"
 
 ## <a name="what-if-i-cannot-find-my-office-store-account-in-partner-center"></a>Что делать, если не удается найти учетную запись магазина Office в центре партнеров?
 
-Откройте [билет центра поддержки партнеров](https://partner.microsoft.com/en-US/support/v2/?stage=1) и в раскрывающихся меню выберите следующую команду:
+Откройте [билет центра поддержки партнеров](https://partner.microsoft.com/support/v2/?stage=1) и в раскрывающихся меню выберите следующую команду:
 
 | Меню | Вариант |
 | -------   | -------  |
-|Категория| Коммерческий рынок|
+|Category| Коммерческий рынок|
 | Раздел | Общие вопросы и Справка по Marketplace Marketplace |
 | Подраздел| Надстройка Office |
 
