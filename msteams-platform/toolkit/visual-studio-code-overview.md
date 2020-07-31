@@ -3,12 +3,12 @@ title: Создание приложений с помощью набора ин
 description: Приступая к созданию привлекательных пользовательских приложений непосредственно в Visual Studio Code с помощью набора инструментов Microsoft Teams
 keywords: набор средств Visual Studio Code Toolkit для Teams
 ms.date: 06/30/2020
-ms.openlocfilehash: 17f21d1656b32074318030b9df9e643200f58f80
-ms.sourcegitcommit: ecf7ca8e77e77fe3f4cad1b13e3d31a825155555
-ms.translationtype: Auto
+ms.openlocfilehash: 96293a2166e56495a8f775cb0142f721605cfdae
+ms.sourcegitcommit: 3e94edba28e9e1252b6a6ba35d4df32710dfc5d4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45054254"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531261"
 ---
 # <a name="build-apps-with-the-microsoft-teams-toolkit-and-visual-studio-code"></a>Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio
 
@@ -87,7 +87,7 @@ ms.locfileid: "45054254"
 
 * Построение и запуск приложения
   * Следуйте инстуктионс в разделе **Build and run** файла Readme проекта, чтобы он был обслужен https://localhost:3000/tab . Как правило, в этом случае `npm install` будет выполняться`npm start`
-  * Переход https://localhost:3000/tab из Google Chrome
+  * Перейдите в https://localhost:3000/tab Google Chrome или пограничный чромиум.
 
 * Получение SSL-сертификата:
   * Откройте окно инструменты разработчика Chrome ( `ctrl + shift + i`  /  `cmd + option + i` ).

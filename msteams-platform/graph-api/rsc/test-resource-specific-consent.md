@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: How-to
 keywords: Диаграмма Microsoft Teams SSO единого входа OAuth RSC POST
-ms.openlocfilehash: c1c02c2ba0051193aa459d0df26fadfc9fa55550
-ms.sourcegitcommit: fdc50183f3f4bec9e4b83bcfe5e016b591402f7c
-ms.translationtype: Auto
+ms.openlocfilehash: a7384222e5e4cba164f918186ce53b4c1b702016
+ms.sourcegitcommit: 3e94edba28e9e1252b6a6ba35d4df32710dfc5d4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44867104"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531268"
 ---
 # <a name="test-resource-specific-consent-permissions--in-teams"></a>Проверка разрешений согласия для определенных ресурсов в Teams
 
@@ -29,19 +29,20 @@ ms.locfileid: "44867104"
       "id":"XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
       "resource":"https://AnyString",
       "applicationPermissions":[
-         "TeamSettings.Read.Group",
-         "ChannelMessage.Read.Group",
-         "TeamSettings.Edit.Group",
-         "ChannelSettings.Edit.Group",
          "Channel.Create.Group",
          "Channel.Delete.Group",
+         "ChannelMessage.Read.Group",
+         "ChannelSettings.Read.Group",
+         "ChannelSettings.Edit.Group",
+         "Member.Read.Group",
+         "Owner.Read.Group",
          "TeamsApp.Read.Group",
          "TeamsTab.Read.Group",
          "TeamsTab.Create.Group",
          "TeamsTab.Edit.Group",
          "TeamsTab.Delete.Group",
-         "Member.Read.Group",
-         "Owner.Read.Group"
+         "TeamSettings.Read.Group",
+         "TeamSettings.Edit.Group"
       ]
    }
 ```
@@ -55,6 +56,7 @@ ms.locfileid: "44867104"
 
 1. `azureADAppId`— Идентификатор приложения Azure AD в приложении.
 1. `azureADAppSecret`— ваш секрет приложения Azure AD (пароль)
+1. `token_scope`— область требуется для получения маркера, чтобы задать значениеhttps://graph.microsoft.com/.default
 1. `teamGroupId`— Идентификатор группы Teams можно получить из клиента Teams следующим образом:
 
 > [!div class="checklist"]

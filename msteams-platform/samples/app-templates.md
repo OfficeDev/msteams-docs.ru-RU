@@ -3,12 +3,12 @@ title: Шаблоны приложений Microsoft Teams
 description: Ссылки и описания шаблонов приложений для платформы Microsoft Teams
 ms.topic: reference
 keywords: Демонстрация примеров шаблонов Microsoft Teams
-ms.openlocfilehash: c244a95c81a6bfd2475648d6578d92f40af407e1
-ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
+ms.openlocfilehash: 5ecad6586d4bbe114d732869981d25b3305fa940
+ms.sourcegitcommit: 3e94edba28e9e1252b6a6ba35d4df32710dfc5d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434540"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531287"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -110,6 +110,23 @@ Book-a-комната — это [робот Microsoft Teams](../bots/what-are-b
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-stickers-app)
 
 ![Приложение для наклеек](../assets/images/stickers.png)
+
+## <a name="e-prescriptions-9734"></a>&#9734; для создания отделой электронной почты 
+
+E-сценарии — это приложение на основе [Power Apps](/powerapps/maker/canvas-apps/embed-teams-app), расширяющее телемедиЦине и виртуальную осторожность путем автоматизации процесса выдачи электронных данных в пострадавшие. Медицинские специалисты могут быстро просматривать встречи, создавать электронную расправку и отправлять электронные сообщения с вложениями e-рецептов непосредственно в платформу Teams.
+
+[Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-eprescription) 
+
+:::row:::
+:::column span="2":::
+    ![Снимок экрана приложения "электронное письмо". Показывает, как поставщик средств контроля работоспособности может выбрать команду "создать", чтобы заказать рецепт для пациента.](../assets/images/e-prescriptions-app-template.png)  
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
+    ![Снимок экрана приложения "электронное письмо". Показывает, как администраторы могут управлять поставщиками средств здравоохранения, которые используют приложение.](../assets/images/e-prescriptions-app-template-admin.png)
+:::column-end:::
+:::row-end:::
 
 ## <a name="expert-finder"></a>Экспертный поиск
 
