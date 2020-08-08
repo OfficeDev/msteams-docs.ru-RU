@@ -1,21 +1,24 @@
 ---
-title: Ссылка унфурлинг
+title: Развернуть ссылку
 author: clearab
 description: Порядок выполнения ссылок унфурлинг с расширением обмена сообщениями в приложении Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: ccc23f06fbe759dc4c38dfc63dfa356d38352c27
-ms.sourcegitcommit: 67c021fa20eb5ea70c059fcc35be1c19c6c97c95
+ms.openlocfilehash: 32d19fcd44f2475047539350706d2745aeec3691
+ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42279776"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587806"
 ---
-# <a name="link-unfurling"></a>Ссылка унфурлинг
+# <a name="link-unfurling"></a>Развернуть ссылку
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-С помощью Link унфурлинг приложение может зарегистрироваться для получения `invoke` действия при вставке URL-адресов с определенным доменом в область "Создание сообщения". В `invoke` нем будет содержаться полный URL-адрес, который был вставлен в область сообщений, и вы можете ответить на карточку, которая может *унфурл*пользователь, предоставляя дополнительные сведения или действия. Это аналогично [команде поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)с URL-адресом в качестве условия поиска.
+> [!NOTE]
+> В настоящее время ссылки унфурлинг не поддерживаются на мобильных клиентах.
+
+С помощью Link унфурлинг приложение может зарегистрироваться для получения `invoke` действия при вставке URL-адресов с определенным доменом в область "Создание сообщения". В нем `invoke` будет содержаться полный URL-адрес, который был вставлен в область сообщений, и вы можете ответить на карточку, которая может *унфурл*пользователь, предоставляя дополнительные сведения или действия. Это аналогично [команде поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)с URL-адресом в качестве условия поиска.
 
 Модуль обмена сообщениями Azure DevOps использует Link унфурлинг для поиска URL-адресов, вставленных в область сообщений, указывающую на рабочий элемент. На снимке экрана ниже пользователь вставил в URL-адрес рабочего элемента в Azure DevOps, который разрешал расширение обмена сообщениями в карточке.
 
@@ -23,7 +26,7 @@ ms.locfileid: "42279776"
 
 ## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление ссылки унфурлинг к манифесту приложения
 
-Для этого мы добавим новый `messageHandlers` массив в `composeExtensions` раздел JSON манифеста приложения. Это можно сделать с помощью App Studio или вручную. Примеры доменов могут включать подстановочные знаки `*.example.com`. Это соответствует только одному сегменту домена; Если вам нужно использовать `a.b.example.com` `*.*.example.com`этот параметр.
+Для этого мы добавим новый `messageHandlers` массив в `composeExtensions` раздел JSON манифеста приложения. Это можно сделать с помощью App Studio или вручную. Примеры доменов могут включать подстановочные знаки `*.example.com` . Это соответствует только одному сегменту домена; Если вам нужно использовать этот параметр `a.b.example.com` `*.*.example.com` .
 
 ### <a name="using-app-studio"></a>Использование App Studio
 
@@ -69,7 +72,7 @@ ms.locfileid: "42279776"
 
 Посмотрите [, что представляют собой карточки](~/task-modules-and-cards/what-are-cards.md) для обзора.
 
-# <a name="cnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionResponse> OnTeamsAppBasedLinkQueryAsync(ITurnContext<IInvokeActivity> turnContext, AppBasedLinkQuery query, CancellationToken cancellationToken)
@@ -89,7 +92,7 @@ protected override async Task<MessagingExtensionResponse> OnTeamsAppBasedLinkQue
 }
 ```
 
-# <a name="javascriptnodejs"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node.js](#tab/javascript)
 
 ```javascript
 class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
@@ -114,7 +117,7 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Это пример сообщения, `invoke` отправленного в Bot.
+Это пример `invoke` сообщения, отправленного в Bot.
 
 ```json
 {

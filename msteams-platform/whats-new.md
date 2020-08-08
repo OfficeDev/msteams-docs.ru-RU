@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: 28e83375ecbfec7f2adac14a4b5419a6cc40c61e
-ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
+ms.openlocfilehash: 83fe01f5a34ae0d1f3f3f86699f47139bb630b3e
+ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434533"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587729"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -21,9 +21,10 @@ ms.locfileid: "45434533"
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
 | 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](~/tabs/how-to/native-device-permissions.md) |
+|07/20/2020|Средство проверки приложений Teams для отправки AppSource.|[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#teams-app-validation-tool)
 |07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
 |07/14/2020|Отображение собственная документация по индикатору загрузки|[Индикатор загрузки машинного кода](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
-| 07/01/2020 |Приступите к созданию приложений Teams с помощью Visual Studio Code Toolkit.|[Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio](toolkit/visual-studio-code-overview.md) |
+|07/01/2020|Приступите к созданию приложений Teams с помощью Visual Studio Code Toolkit.|[Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio](toolkit/visual-studio-code-overview.md) |
 |07/01/2020|Единый вход для вкладок "GA" для веб-клиентов Teams и настольных компьютеров|[Единый вход (SSO)](tabs/how-to/authentication/auth-aad-sso.md)|
 |06/05/2020| Схема манифеста обновлена до версии 1,7| [Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 | 05/20/2020 | Разрешения на согласие с определенными ресурсами с помощью API Microsoft Graph — в предварительной версии для разработчиков. |[Согласие для определенных ресурсов (RSC) — Предварительная версия для разработчиков](graph-api/rsc/resource-specific-consent.md) |

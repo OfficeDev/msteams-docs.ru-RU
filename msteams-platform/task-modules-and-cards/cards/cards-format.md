@@ -3,12 +3,12 @@ title: Форматирование текста в карточках
 description: Описание форматирования текста карточки в Microsoft Teams
 keywords: формат карточек Боты Teams
 ms.date: 03/29/2018
-ms.openlocfilehash: e857a1250593c135aa23ad38a571a5561bb91431
-ms.sourcegitcommit: b9e8839858ea8e9e33fe5e20e14bbe86c75fd510
+ms.openlocfilehash: 944e6a69c68d284b3a7309063587bd4b75319bc7
+ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210689"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587813"
 ---
 # <a name="format-cards-in-teams"></a>Форматирование карточек в Teams
 
@@ -116,7 +116,8 @@ ms.locfileid: "44210689"
 Расширения Боты и обмена сообщениями могут включать упоминание в содержимом карточки в элементах [TextBlock](https://adaptivecards.io/explorer/TextBlock.html) и в элементах [фактов](https://adaptivecards.io/explorer/FactSet.html) .
 
 > [!NOTE]
->В настоящее время [элементы мультимедиа](https://adaptivecards.io/explorer/Media.html) в настоящее время не поддерживаются в адаптивных картах версии 1.2 на платформе Teams.
+> * В настоящее время [элементы мультимедиа](https://adaptivecards.io/explorer/Media.html) в настоящее время не поддерживаются в адаптивных картах версии 1.2 на платформе Teams.
+> * Упоминание каналов & участников группы не поддерживаются в сообщениях Bot.
 
 ### <a name="constructing-mentions"></a>Создание упоминаний
 
@@ -164,7 +165,7 @@ ms.locfileid: "44210689"
 | --- | --- | --- |
 | bold | **text** | `**text**` |
 | italic | *text* | `*text*` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `### Text`|
+| Верхний колонтитул (уровни 1 &ndash; 3) | **Текст** | `### Text`|
 | strikethrough | ~~text~~ | `~~text~~` |
 | неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | ```- Item 1\r- Item 2\r- Item 3``` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | ```1. Green\r2. Orange\r3. Blue``` |
@@ -253,7 +254,7 @@ ms.locfileid: "44210689"
 | --- | --- | --- |
 | bold | **text** | `<strong>text</strong>` |
 | italic | *text* | `<em>text</em>` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
+| Верхний колонтитул (уровни 1 &ndash; 3) | **Текст** | `<h3>Text</h3>` |
 | strikethrough | ~~text~~ | `<strike>text</strike>` |
 | неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | `<ol><li>text</li><li>text</li></ol>` |
@@ -341,7 +342,7 @@ ms.locfileid: "44210689"
 | --- | --- | --- |
 | bold | **text** | `<strong>text</strong>` |
 | italic | *text* | `<em>text</em>` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
+| Верхний колонтитул (уровни 1 &ndash; 3) | **Текст** | `<h3>Text</h3>` |
 | strikethrough | ~~text~~ | `<strike>text</strike>` |
 | неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | `<ol><li>text</li><li>text</li></ol>` |
