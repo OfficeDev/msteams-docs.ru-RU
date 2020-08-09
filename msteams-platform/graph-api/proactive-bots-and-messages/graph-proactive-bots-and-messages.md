@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: Overview
 keywords: установочный график чата активных сообщений в Teams
-ms.openlocfilehash: 735dbfa39222f312b4f3714b5c009dfd1bf28b05
-ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
+ms.openlocfilehash: f1d2c51957eefbc548918210b843e408eb1107c8
+ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434498"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587743"
 ---
 # <a name="enable-proactive-bot-installation-and-proactive-messaging-in-teams-with-microsoft-graph-public-preview"></a>Включение активной установки и упреждающего обмена сообщениями в Teams с помощью Microsoft Graph (общедоступная Предварительная версия)
 
@@ -20,7 +20,7 @@ ms.locfileid: "45434498"
 
 ## <a name="proactive-messaging-in-teams"></a>Активная система обмена сообщениями в Teams
 
-Активные сообщения инициируются боты для запуска бесед с пользователями. Они позволяют выполнять различные задачи, включая отправку приветственных сообщений, проведение опросов и опросов, а также трансляцию уведомлений в масштабах Организации.  Интерактивные сообщения в Teams могут доставляться как беседы на основе **специальных** или **диалоговых окон** .
+Активные сообщения инициируются Боты, чтобы начать беседу с пользователем. Они позволяют выполнять различные задачи, включая отправку приветственных сообщений, проведение опросов и опросов, а также трансляцию уведомлений в масштабах Организации.  Интерактивные сообщения в Teams могут доставляться как беседы на основе **специальных** или **диалоговых окон** .
 
 |Тип сообщения | Описание |
 |----------------|-------------- |
@@ -79,7 +79,7 @@ ms.locfileid: "45434498"
 **Http-запрос Get** :
 
 ```http
-GET https://graph.microsoft.com/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
 ```
 
 Запрос возвратит `teamsApp` объект. Возвращаемый объект `id` — это идентификатор приложения, создаваемый каталогом приложения, который отличается от идентификатора "ID:", указанного в манифесте приложения teams:
@@ -156,7 +156,7 @@ POST https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps
 
 **Справка по Microsoft Graph:** [Получение чата](/graph/api/chat-get?view=graph-rest-beta&tabs=http)
 
-**1.** вам потребуется ваше приложение `{teamsAppInstallationId}` , если у вас его нет, выполните указанные ниже действия.
+**1.** вам потребуются приложения `{teamsAppInstallationId}` . Если у вас его нет, выполните указанные ниже действия.
 
 **Http-запрос Get** :
 
