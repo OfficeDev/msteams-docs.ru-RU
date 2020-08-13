@@ -2,12 +2,12 @@
 title: Знакомство с карточками
 description: Описывает карточки и способы их использования в Боты, соединителях и расширениях обмена сообщениями.
 keywords: соединители Боты карточки обмен сообщениями
-ms.openlocfilehash: a260313c6e9442ce7bd76524e41e6465617bafb5
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 6d850f83183f12fa0c228a7a89b23e58f523e15b
+ms.sourcegitcommit: 9fbc701a9a039ecdc360aefbe86df52b9c3593f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675367"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46651658"
 ---
 # <a name="cards"></a>Карточки
 
@@ -29,6 +29,15 @@ ms.locfileid: "41675367"
 * Соединители
 * боты;
 * расширения для обмена сообщениями;
+
+## <a name="adaptive-cards-and-incoming-webhooks"></a>Адаптивные карты и входящие веб-перехватчики
+
+> [!NOTE]
+> Адаптивные карты поддерживаются во входящих веб-перехватчиках в рамках [программы общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md). Общедоступные предварительные просмотры доступны для раннего доступа и обратной связи. Хотя выпуск является стабильным и тщательно тестируется, он не предназначен для использования в рабочей среде.
+>
+> ✔ В предварительной версии для разработчиков все встроенные элементы схемы адаптивной карты, кроме `Action.Submit` , полностью поддерживаются.
+>
+> ✔ Поддерживаемые действия — [**Action. OpenURL**](https://adaptivecards.io/explorer/Action.OpenUrl.html), [**Action. ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html)и [**Action. примером togglevisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html).
 
 ## <a name="cards-in-connectors"></a>Карты в соединителях
 

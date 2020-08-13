@@ -2,13 +2,12 @@
 title: Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio
 description: Приступая к созданию привлекательных пользовательских приложений непосредственно в Visual Studio Code с помощью набора инструментов Microsoft Teams
 keywords: набор средств Visual Studio Code Toolkit для Teams
-ms.date: 06/30/2020
-ms.openlocfilehash: 96293a2166e56495a8f775cb0142f721605cfdae
-ms.sourcegitcommit: 3e94edba28e9e1252b6a6ba35d4df32710dfc5d4
+ms.openlocfilehash: 7b8a32c099d85bec2584da2b42dcf5a524ecddbc
+ms.sourcegitcommit: 9fbc701a9a039ecdc360aefbe86df52b9c3593f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531261"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46651665"
 ---
 # <a name="build-apps-with-the-microsoft-teams-toolkit-and-visual-studio-code"></a>Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio
 
@@ -71,7 +70,7 @@ ms.locfileid: "46531261"
 
 ## <a name="package-your-app"></a>Упаковка приложения
 
-Изменение страницы **сведений о приложении** или обновление **манифеста**, или **env** -файлов в папке **публикации** приложения автоматически создаст файл **Development.zip** . Необходимо включить [два значка](../concepts/build-and-test/apps-package.md#icons) в одну и ту же папку.
+Изменение страницы **сведений о приложении** или обновление **манифеста**, или **env** -файлов в папке  **публикации** приложения автоматически создаст файл **Development.zip** . Необходимо включить [два значка](../concepts/build-and-test/apps-package.md#icons) в одну и ту же папку.
 
 ## <a name="install-and-run-your-app-locally"></a>Установка и запуск приложения на локальном компьютере
 
@@ -86,21 +85,21 @@ ms.locfileid: "46531261"
   <summary>Разверните здесь</summary>
 
 * Построение и запуск приложения
-  * Следуйте инстуктионс в разделе **Build and run** файла Readme проекта, чтобы он был обслужен https://localhost:3000/tab . Как правило, в этом случае `npm install` будет выполняться`npm start`
+  * Следуйте инстуктионс в разделе **Build and run** файла Readme проекта, чтобы он был обслужен https://localhost:3000/tab . Как правило, в этом случае `npm install` будет выполняться `npm start`
   * Перейдите в https://localhost:3000/tab Google Chrome или пограничный чромиум.
 
 * Получение SSL-сертификата:
   * Откройте окно инструменты разработчика Chrome ( `ctrl + shift + i`  /  `cmd + option + i` ).
   * Щелкните `Security` вкладку
-  * Нажмите кнопку включить `View certificate` , чтобы скачать сертификат, перетащив его на Рабочий стол в OS X или щелкнув `Details` вкладку в Windows, а затем щелкнув`Copy to File…`
+  * Нажмите кнопку включить `View certificate` , чтобы скачать сертификат, перетащив его на Рабочий стол в OS X или щелкнув `Details` вкладку в Windows, а затем щелкнув `Copy to File…`
   * Назовите файл <*что-либо*>. cer и сохраните его в папку, не требующую согласия администратора для выполнения действия Write.
   
 * Установка сертификата в **Windows**
   * Выберите `DER encoded binary X.509 (.CER)` параметр (первый) и сохраните его.
   * Дважды щелкните сертификат и установите его.
-  * Задать`Local Machine`
-  * Перейдите`Place all certificates in the following store`
-  * Задать`Trusted Root Certification Authorities`
+  * Задать `Local Machine`
+  * Перейдите `Place all certificates in the following store`
+  * Задать `Trusted Root Certification Authorities`
   * Подтверждение установки
   
 * Установка **Mac OS X OS X**
