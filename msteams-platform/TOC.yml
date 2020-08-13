@@ -29,7 +29,9 @@
       items:
         - name: "Расширение набора средств Teams для Visual\_Studio\_Code"
           href: toolkit/visual-studio-code-overview.md
-- name: Понятия
+        - name: "Расширение набора средств Teams для Visual\_Studio"
+          href: toolkit/visual-studio-overview.md
+- name: Концепции
   expanded: true
   items:
     - name: Разработка приложений для Microsoft Teams
