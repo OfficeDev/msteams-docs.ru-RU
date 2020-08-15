@@ -3,12 +3,12 @@ title: Отправка сообщений соединителям и веб-п
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 localization_priority: Priority
 keywords: соединитель teams o365
-ms.openlocfilehash: f3b89161a908af8709334c300a8ee6218817c21f
-ms.sourcegitcommit: b822584b643e003d12d2e9b5b02a0534b2d57d71
+ms.openlocfilehash: 16dbb99add82c26930baf22bfc2c5153fd47b2f1
+ms.sourcegitcommit: 9fbc701a9a039ecdc360aefbe86df52b9c3593f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44704497"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46651651"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -220,6 +220,55 @@ ms.locfileid: "44704497"
   "needsIdentity": "true"
 }
 ```
+
+## <a name="send-adaptive-cards-using-an-incoming-webhook"></a>Отправка адаптивных карточек с помощью входящего веб-перехватчика
+
+> [!NOTE]
+>
+> ✔ Все встроенные элементы схемы адаптивной карточки, кроме `Action.Submit`, полностью поддерживаются.
+>
+> ✔ Поддерживаемые действия: [**Action.OpenURL**](https://adaptivecards.io/explorer/Action.OpenUrl.html), [**Action.ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html) и [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html).
+
+### <a name="the-flow-for-sending-adaptive-cards-via-an-incoming-webhook-is-as-follows"></a>Для отправки [адаптивных карточек](../../task-modules-and-cards/cards/cards-reference.md#adaptive-card) через входящий веб-перехватчик используется следующий поток:
+
+**1.** [Настройка пользовательского веб-перехватчика](#setting-up-a-custom-incoming-webhook) в Teams.</br></br>
+**2.** Создание файла JSON адаптивной карточки:
+
+```json
+{
+   "type":"message",
+   "attachments":[
+      {
+         "contentType":"application/vnd.microsoft.card.adaptive",
+         "contentUrl":null,
+         "content":{
+            "$schema":"http://adaptivecards.io/schemas/adaptive-card.json",
+            "type":"AdaptiveCard",
+            "version":"1.2",
+            "body":[
+               {
+                  "For Samples and Templates, see":"https://adaptivecards.io/samples"
+               }
+            ]
+         }
+      }
+   ]
+}
+```
+
+> [!div class="checklist"]
+>
+> - Поле `"type"` должно иметь значение `"message"`.
+> - Массив `"attachments"` содержит набор объектов card.
+> - В поле `"contentType"` следует задать тип "Адаптивная карточка".
+> - Объект `"content"` — это карточка, отформатированная в JSON.
+
+**3.** Тестирование адаптивной карточки с помощью Postman
+
+Вы можете протестировать адаптивную карточку с помощью [Postman](https://www.postman.com), чтобы отправить запрос POST на URL-адрес, который вы создали при настройке входящего веб-перехватчика. Вставьте файл JSON в текст запроса и просмотрите сообщение адаптивной карточки в Teams.
+
+>[!TIP]
+> В тексте запроса проверки POST можно использовать [образцы и шаблоны](https://adaptivecards.io/samples) кода адаптивной карточки.
 
 ## <a name="testing-your-connector"></a>Тестирование соединителя
 
