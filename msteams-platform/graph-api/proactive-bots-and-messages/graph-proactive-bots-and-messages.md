@@ -1,88 +1,88 @@
 ---
-title: Использование Microsoft Graph для включения активной установки и обмена мгновенными сообщениями в Teams
-description: Описание упреждающего обмена сообщениями в Teams и способов их реализации.
+title: Использование Microsoft Graph для включения упреждающие установки и обмена сообщениями ботов в Teams
+description: Описывает упреждающие сообщения в Teams и как реализовать их.
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: Overview
-keywords: установочный график чата активных сообщений в Teams
-ms.openlocfilehash: f1d2c51957eefbc548918210b843e408eb1107c8
-ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
+keywords: графический клиент, применяемый в упреждающем сообщении teams
+ms.openlocfilehash: b601c5858e5141ce81985dca62968b1713e1d2ba
+ms.sourcegitcommit: 9fd61042e8be513c2b2bd8a33ab5e9e6498d65c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46587743"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819163"
 ---
-# <a name="enable-proactive-bot-installation-and-proactive-messaging-in-teams-with-microsoft-graph-public-preview"></a><span data-ttu-id="d696c-104">Включение активной установки и упреждающего обмена сообщениями в Teams с помощью Microsoft Graph (общедоступная Предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="d696c-104">Enable proactive bot installation and proactive messaging in Teams with Microsoft Graph (Public Preview)</span></span>
+# <a name="enable-proactive-bot-installation-and-proactive-messaging-in-teams-with-microsoft-graph-public-preview"></a><span data-ttu-id="db790-104">Включение упреждающей установки бота и упреждающие сообщения в Teams с помощью Microsoft Graph (общедоступная предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="db790-104">Enable proactive bot installation and proactive messaging in Teams with Microsoft Graph (Public Preview)</span></span>
 
 >[!IMPORTANT]
-> <span data-ttu-id="d696c-105">Общедоступные предварительные обзоры Microsoft Graph доступны для раннего доступа и обратной связи.</span><span class="sxs-lookup"><span data-stu-id="d696c-105">Microsoft Graph public previews are available for early-access and feedback.</span></span> <span data-ttu-id="d696c-106">Несмотря на то что этот выпуск протестировался, он не предназначен для использования в рабочей среде.</span><span class="sxs-lookup"><span data-stu-id="d696c-106">Although this release has undergone extensive testing, it is not intended for use in production.</span></span>
+> <span data-ttu-id="db790-105">Для раннего доступа и получения отзывов доступны общедоступные предварительные версии Microsoft Graph и Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="db790-105">Microsoft Graph and Microsoft Teams public previews are available for early-access and feedback.</span></span> <span data-ttu-id="db790-106">Хотя в этом выпуске прошло обширное тестирование, он не предназначен для использования в рабочей среде.</span><span class="sxs-lookup"><span data-stu-id="db790-106">Although this release has undergone extensive testing, it is not intended for use in production.</span></span>
 
-## <a name="proactive-messaging-in-teams"></a><span data-ttu-id="d696c-107">Активная система обмена сообщениями в Teams</span><span class="sxs-lookup"><span data-stu-id="d696c-107">Proactive messaging in Teams</span></span>
+## <a name="proactive-messaging-in-teams"></a><span data-ttu-id="db790-107">Заранее обмен сообщениями в Teams</span><span class="sxs-lookup"><span data-stu-id="db790-107">Proactive messaging in Teams</span></span>
 
-<span data-ttu-id="d696c-108">Активные сообщения инициируются Боты, чтобы начать беседу с пользователем.</span><span class="sxs-lookup"><span data-stu-id="d696c-108">Proactive messages are initiated by bots to start conversations with a user.</span></span> <span data-ttu-id="d696c-109">Они позволяют выполнять различные задачи, включая отправку приветственных сообщений, проведение опросов и опросов, а также трансляцию уведомлений в масштабах Организации.</span><span class="sxs-lookup"><span data-stu-id="d696c-109">They serve many purposes including sending welcome messages, conducting surveys or polls, and broadcasting organization-wide notifications.</span></span>  <span data-ttu-id="d696c-110">Интерактивные сообщения в Teams могут доставляться как беседы на основе **специальных** или **диалоговых окон** .</span><span class="sxs-lookup"><span data-stu-id="d696c-110">Proactive messages in Teams can be delivered as either **ad-hoc** or **dialog-based** conversations:</span></span>
+<span data-ttu-id="db790-108">Заблаговременное сообщение инициируется ботами для начала беседы с пользователем.</span><span class="sxs-lookup"><span data-stu-id="db790-108">Proactive messages are initiated by bots to start conversations with a user.</span></span> <span data-ttu-id="db790-109">Они служат многими целями, в том числе отправка приветственных сообщений, проведение опросов или опросов, а также трансформация уведомлений для всей организации.</span><span class="sxs-lookup"><span data-stu-id="db790-109">They serve many purposes including sending welcome messages, conducting surveys or polls, and broadcasting organization-wide notifications.</span></span>  <span data-ttu-id="db790-110">Заранее упреждающие сообщения в Teams можно доставлять в виде **нерегламентированных** или **диалоговых** бесед.</span><span class="sxs-lookup"><span data-stu-id="db790-110">Proactive messages in Teams can be delivered as either **ad-hoc** or **dialog-based** conversations:</span></span>
 
-|<span data-ttu-id="d696c-111">Тип сообщения</span><span class="sxs-lookup"><span data-stu-id="d696c-111">Message Type</span></span> | <span data-ttu-id="d696c-112">Описание</span><span class="sxs-lookup"><span data-stu-id="d696c-112">Description</span></span> |
+|<span data-ttu-id="db790-111">Тип сообщения</span><span class="sxs-lookup"><span data-stu-id="db790-111">Message Type</span></span> | <span data-ttu-id="db790-112">Description</span><span class="sxs-lookup"><span data-stu-id="db790-112">Description</span></span> |
 |----------------|-------------- |
-|<span data-ttu-id="d696c-113">Прямое упреждающее сообщение</span><span class="sxs-lookup"><span data-stu-id="d696c-113">Ad-hoc proactive message</span></span>| <span data-ttu-id="d696c-114">Элемент Bot интержектс сообщение, не прерывая потоки бесед.</span><span class="sxs-lookup"><span data-stu-id="d696c-114">The bot interjects a message without interrupting the conversation flow.</span></span>|
-|<span data-ttu-id="d696c-115">Упреждающее сообщение на основе диалоговых окон</span><span class="sxs-lookup"><span data-stu-id="d696c-115">Dialog-based proactive message</span></span> | <span data-ttu-id="d696c-116">Bot создает новый поток диалоговых окон, получает Управление беседами, доставляет упреждающее сообщение, закрывает и возвращает управление предыдущему диалоговому окну.</span><span class="sxs-lookup"><span data-stu-id="d696c-116">The bot creates a new dialog thread, takes control of a conversation, delivers the proactive message, closes, and returns control to the previous dialog.</span></span>|
+|<span data-ttu-id="db790-113">Нерегулярное сообщение</span><span class="sxs-lookup"><span data-stu-id="db790-113">Ad-hoc proactive message</span></span>| <span data-ttu-id="db790-114">Бот интерпретирует сообщение, не прерывая поток беседы.</span><span class="sxs-lookup"><span data-stu-id="db790-114">The bot interjects a message without interrupting the conversation flow.</span></span>|
+|<span data-ttu-id="db790-115">Заблаговорное сообщение на основе диалогового окна</span><span class="sxs-lookup"><span data-stu-id="db790-115">Dialog-based proactive message</span></span> | <span data-ttu-id="db790-116">Бот создает новую цепочку диалоговых окон, получает управление беседой, превращает заблаговремяное сообщение, закрывает и возвращает управление в предыдущее диалоговое окно.</span><span class="sxs-lookup"><span data-stu-id="db790-116">The bot creates a new dialog thread, takes control of a conversation, delivers the proactive message, closes, and returns control to the previous dialog.</span></span>|
 
-<span data-ttu-id="d696c-117">*Просмотр*, [Отправка упреждающего уведомления пользователям пакет SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp)</span><span class="sxs-lookup"><span data-stu-id="d696c-117">*See*, [Send proactive notifications to users SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp)</span></span>
+<span data-ttu-id="db790-117">*Просмотр:* [отправка упреждающие уведомлений SDK 4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp)</span><span class="sxs-lookup"><span data-stu-id="db790-117">*See*, [Send proactive notifications to users SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp)</span></span>
 
-## <a name="proactive-app-installation-in-teams"></a><span data-ttu-id="d696c-118">Упреждающее установка приложений в Teams</span><span class="sxs-lookup"><span data-stu-id="d696c-118">Proactive app installation in Teams</span></span>
+## <a name="proactive-app-installation-in-teams"></a><span data-ttu-id="db790-118">Упреждающая установка приложений в Teams</span><span class="sxs-lookup"><span data-stu-id="db790-118">Proactive app installation in Teams</span></span>
 
-<span data-ttu-id="d696c-119">Прежде чем приступить к отправку сообщений пользователю Bot, его необходимо установить либо в качестве личного приложения, либо в группу, в которую входит пользователь.</span><span class="sxs-lookup"><span data-stu-id="d696c-119">Before your bot can proactively message a user, it needs to be installed either as a personal app, or in a team where the user is a member.</span></span> <span data-ttu-id="d696c-120">Иногда может потребоваться упреждающее сообщение о том, что приложение не было установлено или _не_ было взаимодействовать с ним ранее.</span><span class="sxs-lookup"><span data-stu-id="d696c-120">At times,  you may need to proactively message users that have _not_ installed or previously interacted with your app.</span></span> <span data-ttu-id="d696c-121">Например, необходимо получить важную информацию для всех пользователей в Организации.</span><span class="sxs-lookup"><span data-stu-id="d696c-121">For instance, the need to message vital information to everyone in your organization.</span></span> <span data-ttu-id="d696c-122">Для таких сценариев можно использовать API Microsoft Graph для профилактической установки программы-робота для пользователей.</span><span class="sxs-lookup"><span data-stu-id="d696c-122">For such scenarios, you can use the Microsoft Graph API to proactively install your bot for your users.</span></span>
+<span data-ttu-id="db790-119">Прежде чем ваш бот сможет заблагоена отдать сообщение о пользователе, его необходимо установить в виде личного приложения или в команде, в которой пользователь является участником.</span><span class="sxs-lookup"><span data-stu-id="db790-119">Before your bot can proactively message a user, it needs to be installed either as a personal app, or in a team where the user is a member.</span></span> <span data-ttu-id="db790-120">Иногда может потребоваться заблаговременно профилактиковать пользователей, _которые_ не работали или ранее не взаимодействовали с вашим приложением.</span><span class="sxs-lookup"><span data-stu-id="db790-120">At times,  you may need to proactively message users that have _not_ installed or previously interacted with your app.</span></span> <span data-ttu-id="db790-121">Например, необходимость сообщения о пользователе сообщения о пользователе всех пользователей в организации.</span><span class="sxs-lookup"><span data-stu-id="db790-121">For instance, the need to message vital information to everyone in your organization.</span></span> <span data-ttu-id="db790-122">В таких случаях можно использовать API Microsoft Graph, чтобы заблагообразовать свой бот для пользователей.</span><span class="sxs-lookup"><span data-stu-id="db790-122">For such scenarios, you can use the Microsoft Graph API to proactively install your bot for your users.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d696c-123">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d696c-123">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="db790-123">Разрешения</span><span class="sxs-lookup"><span data-stu-id="db790-123">Permissions</span></span>
 
-<span data-ttu-id="d696c-124">Разрешения [типа ресурса](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) Microsoft Graph теамсаппинсталлатион позволяют управлять жизненным циклом установки приложения для всех областей пользователя (персональных) или группы (каналов) на платформе Microsoft teams:</span><span class="sxs-lookup"><span data-stu-id="d696c-124">Microsoft Graph [teamsAppInstallation resource type](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) permissions allow you to manage your app's installation lifecycle for all user (personal) or team (channel) scopes within the Microsoft Teams platform:</span></span>
+<span data-ttu-id="db790-124">Разрешения [типа ресурса teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) в Microsoft Graph позволяют управлять жизненным циклом установки приложения для всех пользователей (личных) или областей команд (канала) в платформе Microsoft Teams:</span><span class="sxs-lookup"><span data-stu-id="db790-124">Microsoft Graph [teamsAppInstallation resource type](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) permissions allow you to manage your app's installation lifecycle for all user (personal) or team (channel) scopes within the Microsoft Teams platform:</span></span>
 
-|<span data-ttu-id="d696c-125">Разрешение приложения</span><span class="sxs-lookup"><span data-stu-id="d696c-125">Application permission</span></span> | <span data-ttu-id="d696c-126">Описание</span><span class="sxs-lookup"><span data-stu-id="d696c-126">Description</span></span>|
+|<span data-ttu-id="db790-125">Разрешение приложения</span><span class="sxs-lookup"><span data-stu-id="db790-125">Application permission</span></span> | <span data-ttu-id="db790-126">Description</span><span class="sxs-lookup"><span data-stu-id="db790-126">Description</span></span>|
 |------------------|---------------------|
-|`TeamsAppInstallation.ReadWriteSelfForUser.All`|<span data-ttu-id="d696c-127">Позволяет приложению Teams читать, устанавливать, обновлять и удалять себя для любого **пользователя**без предварительного входа или использования.</span><span class="sxs-lookup"><span data-stu-id="d696c-127">Allows a Teams app to read, install, upgrade, and uninstall itself for any **user**, without prior sign in or use.</span></span>|
-|`TeamsAppInstallation.ReadWriteSelfForTeam.All`|<span data-ttu-id="d696c-128">Позволяет приложению Teams читать, устанавливать, обновлять и удалять себя в любой **команде**без предварительного входа или использования.</span><span class="sxs-lookup"><span data-stu-id="d696c-128">Allows a Teams app to read, install, upgrade, and uninstall itself in any **team**, without prior sign in or use.</span></span>|
+|`TeamsAppInstallation.ReadWriteSelfForUser.All`|<span data-ttu-id="db790-127">Позволяет приложению Teams читать, устанавливать, обновлять и удалить себя для **любого пользователя,** не предыдущие вход или использование.</span><span class="sxs-lookup"><span data-stu-id="db790-127">Allows a Teams app to read, install, upgrade, and uninstall itself for any **user**, without prior sign in or use.</span></span>|
+|`TeamsAppInstallation.ReadWriteSelfForTeam.All`|<span data-ttu-id="db790-128">Позволяет приложению Teams читать, устанавливать, обновлять и удалить себя в любой **команде**без предварительного входа или использования.</span><span class="sxs-lookup"><span data-stu-id="db790-128">Allows a Teams app to read, install, upgrade, and uninstall itself in any **team**, without prior sign in or use.</span></span>|
 
-<span data-ttu-id="d696c-129">Чтобы использовать эти разрешения, необходимо добавить в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:</span><span class="sxs-lookup"><span data-stu-id="d696c-129">To use these permissions, you must add a [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) key to your app manifest with the following values:</span></span>
+<span data-ttu-id="db790-129">Чтобы использовать эти разрешения, добавьте ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:</span><span class="sxs-lookup"><span data-stu-id="db790-129">To use these permissions, you must add a [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) key to your app manifest with the following values:</span></span>
 > [!div class="checklist"]
 > [!div class="checklist"]
 >
-> * <span data-ttu-id="d696c-130">**ID** — идентификатор приложения Azure AD.</span><span class="sxs-lookup"><span data-stu-id="d696c-130">**id**  — your Azure AD app id.</span></span>
-> * <span data-ttu-id="d696c-131">**ресурс** — URL-адрес ресурса для приложения.</span><span class="sxs-lookup"><span data-stu-id="d696c-131">**resource** — the resource URL for the app.</span></span>
+> * <span data-ttu-id="db790-130">**id**  — идентификатор приложения Azure AD.</span><span class="sxs-lookup"><span data-stu-id="db790-130">**id**  — your Azure AD app id.</span></span>
+> * <span data-ttu-id="db790-131">**resource** — URL-адрес ресурса для приложения.</span><span class="sxs-lookup"><span data-stu-id="db790-131">**resource** — the resource URL for the app.</span></span>
 >
 
 >[!NOTE]
 >
-> * <span data-ttu-id="d696c-132">Для работы с Bot требуются _приложения_ , не являющиеся _делегированными пользователями_ , так как установка не предназначена для других пользователей.</span><span class="sxs-lookup"><span data-stu-id="d696c-132">Your bot requires _application_ not _user delegated_ permissions because the installation is not for yourself but for others.</span></span>
+> * <span data-ttu-id="db790-132">Вашему боту _требуются разрешения приложения,_ _которые не_ делегированы пользователям, поскольку установка предназначена не для себя, а для других.</span><span class="sxs-lookup"><span data-stu-id="db790-132">Your bot requires _application_ not _user delegated_ permissions because the installation is not for yourself but for others.</span></span>
 >
-> * <span data-ttu-id="d696c-133">Администратор клиента Azure AD должен [явным образом предоставить разрешения приложению](/graph/security-authorization#grant-permissions-to-an-application).</span><span class="sxs-lookup"><span data-stu-id="d696c-133">An Azure AD tenant administrator must [explicitly grant permissions to an application](/graph/security-authorization#grant-permissions-to-an-application).</span></span> <span data-ttu-id="d696c-134">После получения разрешений для приложения _все_ участники клиента Azure AD получат предоставленные разрешения.</span><span class="sxs-lookup"><span data-stu-id="d696c-134">After an application is granted permissions, _all_ members of the Azure AD tenant will gain the granted permissions.</span></span>
+> * <span data-ttu-id="db790-133">Администратор клиента Azure AD должен [явным образом предоставить разрешения для приложения.](/graph/security-authorization#grant-permissions-to-an-application)</span><span class="sxs-lookup"><span data-stu-id="db790-133">An Azure AD tenant administrator must [explicitly grant permissions to an application](/graph/security-authorization#grant-permissions-to-an-application).</span></span> <span data-ttu-id="db790-134">После получения приложением разрешений _все члены_ клиента Azure AD полбадят предоставленные разрешения.</span><span class="sxs-lookup"><span data-stu-id="db790-134">After an application is granted permissions, _all_ members of the Azure AD tenant will gain the granted permissions.</span></span>
 
-## <a name="enable-proactive-app-installation-and-messaging"></a><span data-ttu-id="d696c-135">Включение упреждающего установки и обмена сообщениями для приложения</span><span class="sxs-lookup"><span data-stu-id="d696c-135">Enable proactive app installation and messaging</span></span>
+## <a name="enable-proactive-app-installation-and-messaging"></a><span data-ttu-id="db790-135">Включение упреждающие установки приложений и обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="db790-135">Enable proactive app installation and messaging</span></span>
 
  > [!IMPORTANT]
-><span data-ttu-id="d696c-136">Microsoft Graph будет устанавливать только приложения, опубликованные в [каталоге приложений](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) вашей организации или в [AppSource](https://appsource.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="d696c-136">Microsoft Graph will only install apps published within your organization's [app catalog](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) or in [AppSource](https://appsource.microsoft.com/).</span></span>
+><span data-ttu-id="db790-136">Microsoft Graph устанавливает только приложения, опубликованные в каталоге [приложений организации](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) или [в AppSource.](https://appsource.microsoft.com/)</span><span class="sxs-lookup"><span data-stu-id="db790-136">Microsoft Graph will only install apps published within your organization's [app catalog](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) or in [AppSource](https://appsource.microsoft.com/).</span></span>
 
-### <a name="-create-and-publish-your-proactive-messaging-bot-for-teams"></a><span data-ttu-id="d696c-137">✔ Создания и публикации робота для работы с системой обмена сообщениями для Teams</span><span class="sxs-lookup"><span data-stu-id="d696c-137">✔ Create and publish your proactive messaging bot for Teams</span></span>
+### <a name="-create-and-publish-your-proactive-messaging-bot-for-teams"></a><span data-ttu-id="db790-137">✔ и публикация бота для сообщений, упреждающем в Teams</span><span class="sxs-lookup"><span data-stu-id="db790-137">✔ Create and publish your proactive messaging bot for Teams</span></span>
 
-<span data-ttu-id="d696c-138">Чтобы приступить к работе, вам потребуются [Bot для Teams](../../bots/how-to/create-a-bot-for-teams.md) с возможностями [упреждающего обмена сообщениями](../../concepts/bots/bot-conversations/bots-conv-proactive.md) и [опубликованы](../../concepts/deploy-and-publish/overview.md) в [каталоге приложений](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) организации или в [AppSource](https://appsource.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="d696c-138">To get started, you will need a [bot for Teams](../../bots/how-to/create-a-bot-for-teams.md) with [proactive messaging](../../concepts/bots/bot-conversations/bots-conv-proactive.md) capabilities and  [published](../../concepts/deploy-and-publish/overview.md) in your organization's [app catalog](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) or in [AppSource](https://appsource.microsoft.com/).</span></span>
+<span data-ttu-id="db790-138">Для начала вам потребуется [бот](../../bots/how-to/create-a-bot-for-teams.md) для Teams со возможностями [заблаговорного](../../concepts/bots/bot-conversations/bots-conv-proactive.md) обмена сообщениями, который [опубликован](../../concepts/deploy-and-publish/overview.md) в каталоге приложений вашей [организации](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) [или в AppSource.](https://appsource.microsoft.com/)</span><span class="sxs-lookup"><span data-stu-id="db790-138">To get started, you will need a [bot for Teams](../../bots/how-to/create-a-bot-for-teams.md) with [proactive messaging](../../concepts/bots/bot-conversations/bots-conv-proactive.md) capabilities and  [published](../../concepts/deploy-and-publish/overview.md) in your organization's [app catalog](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) or in [AppSource](https://appsource.microsoft.com/).</span></span>
 
 >[!TIP]
-> <span data-ttu-id="d696c-139">Шаблон приложения [**Communicator компании Communicator**](../..//samples/app-templates.md#company-communicator) включает обмен сообщениями и является хорошим фундаментом для создания упреждающего приложения-Bot.</span><span class="sxs-lookup"><span data-stu-id="d696c-139">The production-ready [**Company Communicator**](../..//samples/app-templates.md#company-communicator) app template enables broadcast messaging and is a good foundation for building your proactive bot application.</span></span>
+> <span data-ttu-id="db790-139">Готовый для [**рабочей Communicator**](../..//samples/app-templates.md#company-communicator) шаблон приложения "Готово к работе" обеспечивает передачу сообщений и является хорошей основой для создания проактивного приложения бота.</span><span class="sxs-lookup"><span data-stu-id="db790-139">The production-ready [**Company Communicator**](../..//samples/app-templates.md#company-communicator) app template enables broadcast messaging and is a good foundation for building your proactive bot application.</span></span>
 
-### <a name="-get-the-teamsappid-for-your-app"></a><span data-ttu-id="d696c-140">✔ Получить `teamsAppId` ваше приложение</span><span class="sxs-lookup"><span data-stu-id="d696c-140">✔ Get the `teamsAppId` for your app</span></span>
+### <a name="-get-the-teamsappid-for-your-app"></a><span data-ttu-id="db790-140">✔Получение `teamsAppId` приложения</span><span class="sxs-lookup"><span data-stu-id="db790-140">✔ Get the `teamsAppId` for your app</span></span>
 
-<span data-ttu-id="d696c-141">**1.** вам потребуется выполнить `teamsAppId` дальнейшие действия.</span><span class="sxs-lookup"><span data-stu-id="d696c-141">**1.** You will need the `teamsAppId`  for the next steps.</span></span>
+<span data-ttu-id="db790-141">**1.** Он `teamsAppId`  понадобится на последующих этапах.</span><span class="sxs-lookup"><span data-stu-id="db790-141">**1.** You will need the `teamsAppId`  for the next steps.</span></span>
 
-<span data-ttu-id="d696c-142">`teamsAppId`Можно получить из каталога приложений вашей организации:</span><span class="sxs-lookup"><span data-stu-id="d696c-142">The `teamsAppId` can be retrieved from your organization's app catalog:</span></span>
+<span data-ttu-id="db790-142">Его `teamsAppId` можно получить из каталога приложений вашей организации:</span><span class="sxs-lookup"><span data-stu-id="db790-142">The `teamsAppId` can be retrieved from your organization's app catalog:</span></span>
 
-<span data-ttu-id="d696c-143">**Справочник по страницам Microsoft Graph:** [тип ресурса teamsApp](/graph/api/resources/teamsapp?view=graph-rest-1.0)</span><span class="sxs-lookup"><span data-stu-id="d696c-143">**Microsoft Graph page reference:** [teamsApp resource type](/graph/api/resources/teamsapp?view=graph-rest-1.0)</span></span>
+<span data-ttu-id="db790-143">**Справочник по страницам Microsoft Graph:** [тип ресурса teamsApp](/graph/api/resources/teamsapp?view=graph-rest-1.0)</span><span class="sxs-lookup"><span data-stu-id="db790-143">**Microsoft Graph page reference:** [teamsApp resource type](/graph/api/resources/teamsapp?view=graph-rest-1.0)</span></span>
 
-<span data-ttu-id="d696c-144">**Http-запрос Get** :</span><span class="sxs-lookup"><span data-stu-id="d696c-144">**HTTP GET** request:</span></span>
+<span data-ttu-id="db790-144">**HTTP-запрос GET:**</span><span class="sxs-lookup"><span data-stu-id="db790-144">**HTTP GET** request:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
 ```
 
-<span data-ttu-id="d696c-145">Запрос возвратит `teamsApp` объект.</span><span class="sxs-lookup"><span data-stu-id="d696c-145">The request will return a `teamsApp`  object.</span></span> <span data-ttu-id="d696c-146">Возвращаемый объект `id` — это идентификатор приложения, создаваемый каталогом приложения, который отличается от идентификатора "ID:", указанного в манифесте приложения teams:</span><span class="sxs-lookup"><span data-stu-id="d696c-146">The returned object's `id`  is the app's catalog generated app id and is different from the "id:" that you provided in your Teams app manifest:</span></span>
+<span data-ttu-id="db790-145">Запрос возвратит `teamsApp`  объект.</span><span class="sxs-lookup"><span data-stu-id="db790-145">The request will return a `teamsApp`  object.</span></span> <span data-ttu-id="db790-146">Возвращаемый объект — это идентификатор `id`  приложения, сгенерированный каталогом приложения и отличается от идентификатора "id:", который вы указали в манифесте приложения Teams.</span><span class="sxs-lookup"><span data-stu-id="db790-146">The returned object's `id`  is the app's catalog generated app id and is different from the "id:" that you provided in your Teams app manifest:</span></span>
 
 ```json
 {
@@ -98,46 +98,46 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId eq
 }
 ```
 
-<span data-ttu-id="d696c-147">**2.** если ваше приложение уже было отправлено или неопубликованные для пользователя в личной области, вы можете получить `teamsAppId` следующее:</span><span class="sxs-lookup"><span data-stu-id="d696c-147">**2.**  If your app has already been uploaded/sideloaded for a user in the personal scope, you can retrieve the `teamsAppId` as follows:</span></span>
+<span data-ttu-id="db790-147">**2.**  Если ваше приложение уже отправлено или неопубликовано для пользователя в личной области, вы можете получить `teamsAppId` следующие сведения:</span><span class="sxs-lookup"><span data-stu-id="db790-147">**2.**  If your app has already been uploaded/sideloaded for a user in the personal scope, you can retrieve the `teamsAppId` as follows:</span></span>
 
-<span data-ttu-id="d696c-148">**Справочник по страницам Microsoft Graph:** [список приложений, установленных для пользователя](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="d696c-148">**Microsoft Graph page reference:** [List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span></span>
+<span data-ttu-id="db790-148">**Справочник по страницам Microsoft Graph: список** [установленных для пользователя приложений](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="db790-148">**Microsoft Graph page reference:** [List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span></span>
 
-<span data-ttu-id="d696c-149">**Http-запрос Get** :</span><span class="sxs-lookup"><span data-stu-id="d696c-149">**HTTP GET** request:</span></span>
+<span data-ttu-id="db790-149">**HTTP-запрос GET:**</span><span class="sxs-lookup"><span data-stu-id="db790-149">**HTTP GET** request:</span></span>
 
 ```http
-GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
+GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
 ```
 
-<span data-ttu-id="d696c-150">**3.** если ваше приложение уже было отправлено или неопубликованные для канала в области группы, вы можете получить `teamsAppId` следующее:</span><span class="sxs-lookup"><span data-stu-id="d696c-150">**3.** If your app has already been uploaded/sideloaded for a channel in the team scope, you can retrieve the `teamsAppId` as follows:</span></span>
+<span data-ttu-id="db790-150">**3.** Если ваше приложение уже отправлено или неопубликовано для канала в области действия команды, вы можете получить `teamsAppId` указанные ниже разрешения.</span><span class="sxs-lookup"><span data-stu-id="db790-150">**3.** If your app has already been uploaded/sideloaded for a channel in the team scope, you can retrieve the `teamsAppId` as follows:</span></span>
 
-<span data-ttu-id="d696c-151">**Справочник по страницам Microsoft Graph:** [список приложений в команде](/graph/api/teamsappinstallation-list?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="d696c-151">**Microsoft Graph page reference:** [List apps in team](/graph/api/teamsappinstallation-list?view=graph-rest-beta&tabs=http)</span></span>
+<span data-ttu-id="db790-151">**Справочник по страницам Microsoft Graph: список** [приложений в команде](/graph/api/teamsappinstallation-list?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="db790-151">**Microsoft Graph page reference:** [List apps in team](/graph/api/teamsappinstallation-list?view=graph-rest-beta&tabs=http)</span></span>
 
-<span data-ttu-id="d696c-152">**Http-запрос Get** :</span><span class="sxs-lookup"><span data-stu-id="d696c-152">**HTTP GET** request:</span></span>
+<span data-ttu-id="db790-152">**HTTP-запрос GET:**</span><span class="sxs-lookup"><span data-stu-id="db790-152">**HTTP GET** request:</span></span>
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{team-id}/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{manifestId}'
+GET https://graph.microsoft.com/beta/teams/{team-id}/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
 ```
 
 >[!TIP]
-> <span data-ttu-id="d696c-153">Для сужения списка результатов можно выполнить фильтрацию по любому из полей объекта [**teamsApp**](/graph/api/resources/teamsapp?view=graph-rest-1.0) .</span><span class="sxs-lookup"><span data-stu-id="d696c-153">You can filter on any of the fields of the [**teamsApp**](/graph/api/resources/teamsapp?view=graph-rest-1.0) object to narrow the list of results.</span></span>
+> <span data-ttu-id="db790-153">Вы можете фильтровать данные по любому из полей [**объекта teamsApp,**](/graph/api/resources/teamsapp?view=graph-rest-1.0) чтобы сузить список результатов.</span><span class="sxs-lookup"><span data-stu-id="db790-153">You can filter on any of the fields of the [**teamsApp**](/graph/api/resources/teamsapp?view=graph-rest-1.0) object to narrow the list of results.</span></span>
 
-### <a name="-determine-whether-your-bot-is-currently-installed-for-a-message-recipient"></a><span data-ttu-id="d696c-154">✔ Определить, установлен ли в данный момент ваш Bot для получателя сообщения</span><span class="sxs-lookup"><span data-stu-id="d696c-154">✔ Determine whether your bot is currently installed for a message recipient</span></span>
+### <a name="-determine-whether-your-bot-is-currently-installed-for-a-message-recipient"></a><span data-ttu-id="db790-154">✔ Определение того, установлен ли ваш бот для получателя сообщения</span><span class="sxs-lookup"><span data-stu-id="db790-154">✔ Determine whether your bot is currently installed for a message recipient</span></span>
 
-<span data-ttu-id="d696c-155">**Справочник по страницам Microsoft Graph:** [список приложений, установленных для пользователя](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="d696c-155">**Microsoft Graph page reference:** [List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span></span>
+<span data-ttu-id="db790-155">**Справочник по страницам Microsoft Graph: список** [установленных для пользователя приложений](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="db790-155">**Microsoft Graph page reference:** [List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&tabs=http)</span></span>
 
-<span data-ttu-id="d696c-156">**Http-запрос Get** :</span><span class="sxs-lookup"><span data-stu-id="d696c-156">**HTTP GET** request:</span></span>
+<span data-ttu-id="db790-156">**HTTP-запрос GET:**</span><span class="sxs-lookup"><span data-stu-id="db790-156">**HTTP GET** request:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
 ```
 
-<span data-ttu-id="d696c-157">Этот запрос возвратит пустой массив, если приложение не установлено, или массив с одним объектом [теамсаппинсталлатион](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) , если он был установлен.</span><span class="sxs-lookup"><span data-stu-id="d696c-157">This request will return an empty array if the app is not installed, or an array with a single [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) object if it has been installed.</span></span>
+<span data-ttu-id="db790-157">Если приложение не установлено, этот запрос вернет пустой массив или массив с одним объектом [teamsAppInstallation,](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) если оно установлено.</span><span class="sxs-lookup"><span data-stu-id="db790-157">This request will return an empty array if the app is not installed, or an array with a single [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) object if it has been installed.</span></span>
 
-### <a name="-install-your-app"></a><span data-ttu-id="d696c-158">✔ Установить приложение</span><span class="sxs-lookup"><span data-stu-id="d696c-158">✔ Install your app</span></span>
+### <a name="-install-your-app"></a><span data-ttu-id="db790-158">✔ установка приложения</span><span class="sxs-lookup"><span data-stu-id="db790-158">✔ Install your app</span></span>
 
-<span data-ttu-id="d696c-159">**Справка по Microsoft Graph:** [Установка приложения для пользователя](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="d696c-159">**Microsoft Graph reference:** [Install app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&tabs=http)</span></span>
+<span data-ttu-id="db790-159">**Справка по Microsoft Graph:** [установка приложения для пользователя](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="db790-159">**Microsoft Graph reference:** [Install app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&tabs=http)</span></span>
 
-<span data-ttu-id="d696c-160">**Http-запрос POST** :</span><span class="sxs-lookup"><span data-stu-id="d696c-160">**HTTP POST** request:</span></span>
+<span data-ttu-id="db790-160">**HTTP-запрос POST:**</span><span class="sxs-lookup"><span data-stu-id="db790-160">**HTTP POST** request:</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps
@@ -146,51 +146,51 @@ POST https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps
 }
 ```
 
-<span data-ttu-id="d696c-161">Если у пользователя установлена служба Microsoft Teams, вы можете сразу же увидеть установку приложения.</span><span class="sxs-lookup"><span data-stu-id="d696c-161">If the user has Microsoft Teams running, they may see the app install immediately.</span></span> <span data-ttu-id="d696c-162">Кроме того, для просмотра установленного приложения может потребоваться перезагрузка.</span><span class="sxs-lookup"><span data-stu-id="d696c-162">Alternatively,  a  restart may be necessary to see the installed app.</span></span>
+<span data-ttu-id="db790-161">Если пользователь работает под управлением Microsoft Teams, он может сразу увидеть установку приложения.</span><span class="sxs-lookup"><span data-stu-id="db790-161">If the user has Microsoft Teams running, they may see the app install immediately.</span></span> <span data-ttu-id="db790-162">Или же может потребоваться перезагрузка, чтобы увидеть установленное приложение.</span><span class="sxs-lookup"><span data-stu-id="db790-162">Alternatively,  a  restart may be necessary to see the installed app.</span></span>
 
-### <a name="-retrieve-the-conversation-chatid"></a><span data-ttu-id="d696c-163">✔ Получить **чатид** беседы</span><span class="sxs-lookup"><span data-stu-id="d696c-163">✔ Retrieve the conversation **chatId**</span></span>
+### <a name="-retrieve-the-conversation-chatid"></a><span data-ttu-id="db790-163">✔ получение идентификатора **чата**</span><span class="sxs-lookup"><span data-stu-id="db790-163">✔ Retrieve the conversation **chatId**</span></span>
 
-<span data-ttu-id="d696c-164">Когда приложение устанавливается для пользователя, Bot получит `conversationUpdate` [уведомление о событии](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) , в котором будут содержаться необходимые сведения для отправки упреждающего сообщения.</span><span class="sxs-lookup"><span data-stu-id="d696c-164">When your app is installed for the user, the bot will receive a `conversationUpdate` [event notification](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) that will contain the necessary information to send the proactive message.</span></span>
+<span data-ttu-id="db790-164">Если ваше приложение установлено для пользователя, бот получит уведомление о событии, которое будет содержать необходимые сведения `conversationUpdate` [event notification](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) для отправки проактивного сообщения.</span><span class="sxs-lookup"><span data-stu-id="db790-164">When your app is installed for the user, the bot will receive a `conversationUpdate` [event notification](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) that will contain the necessary information to send the proactive message.</span></span>
 
-<span data-ttu-id="d696c-165">`chatId`Кроме того, можно получить следующие значения:</span><span class="sxs-lookup"><span data-stu-id="d696c-165">The `chatId` can also be retrieved as follows:</span></span>
+<span data-ttu-id="db790-165">Его `chatId` также можно получить следующим образом:</span><span class="sxs-lookup"><span data-stu-id="db790-165">The `chatId` can also be retrieved as follows:</span></span>
 
-<span data-ttu-id="d696c-166">**Справка по Microsoft Graph:** [Получение чата](/graph/api/chat-get?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="d696c-166">**Microsoft Graph reference:** [Get chat](/graph/api/chat-get?view=graph-rest-beta&tabs=http)</span></span>
+<span data-ttu-id="db790-166">**Справка по Microsoft Graph: получение** [чатов](/graph/api/chat-get?view=graph-rest-beta&tabs=http)</span><span class="sxs-lookup"><span data-stu-id="db790-166">**Microsoft Graph reference:** [Get chat](/graph/api/chat-get?view=graph-rest-beta&tabs=http)</span></span>
 
-<span data-ttu-id="d696c-167">**1.** вам потребуются приложения `{teamsAppInstallationId}` .</span><span class="sxs-lookup"><span data-stu-id="d696c-167">**1.** You will need your app's `{teamsAppInstallationId}`.</span></span> <span data-ttu-id="d696c-168">Если у вас его нет, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="d696c-168">If you don't have it, use the following:</span></span>
+<span data-ttu-id="db790-167">**1.** Вам понадобится ваше `{teamsAppInstallationId}` приложение.</span><span class="sxs-lookup"><span data-stu-id="db790-167">**1.** You will need your app's `{teamsAppInstallationId}`.</span></span> <span data-ttu-id="db790-168">Если это не так, используйте следующую команду:</span><span class="sxs-lookup"><span data-stu-id="db790-168">If you don't have it, use the following:</span></span>
 
-<span data-ttu-id="d696c-169">**Http-запрос Get** :</span><span class="sxs-lookup"><span data-stu-id="d696c-169">**HTTP GET** request:</span></span>
+<span data-ttu-id="db790-169">**HTTP-запрос GET:**</span><span class="sxs-lookup"><span data-stu-id="db790-169">**HTTP GET** request:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
 ```
 
-<span data-ttu-id="d696c-170">Свойство **ID** ответа имеет значение `teamsAppInstallationId` .</span><span class="sxs-lookup"><span data-stu-id="d696c-170">The **id** property of the response is the `teamsAppInstallationId`.</span></span>
+<span data-ttu-id="db790-170">Свойство **id** отклика — `teamsAppInstallationId` это.</span><span class="sxs-lookup"><span data-stu-id="db790-170">The **id** property of the response is the `teamsAppInstallationId`.</span></span>
 
-<span data-ttu-id="d696c-171">**2.** сделайте следующий запрос для получения `chatId` :</span><span class="sxs-lookup"><span data-stu-id="d696c-171">**2.** Make the following request to fetch the `chatId`:</span></span>
+<span data-ttu-id="db790-171">**2.** Отправьте приведенный ниже запрос для `chatId` получения.</span><span class="sxs-lookup"><span data-stu-id="db790-171">**2.** Make the following request to fetch the `chatId`:</span></span>
 
-<span data-ttu-id="d696c-172">**Http-запрос Get** (разрешение `TeamsAppInstallation.ReadWriteSelfForUser.All` ):</span><span class="sxs-lookup"><span data-stu-id="d696c-172">**HTTP GET** request (permission — `TeamsAppInstallation.ReadWriteSelfForUser.All`):</span></span>  
+<span data-ttu-id="db790-172">**HTTP-запрос GET** (разрешение `TeamsAppInstallation.ReadWriteSelfForUser.All` — ):</span><span class="sxs-lookup"><span data-stu-id="db790-172">**HTTP GET** request (permission — `TeamsAppInstallation.ReadWriteSelfForUser.All`):</span></span>  
 
 ```http
  GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps/{teamsAppInstallationId}/chat
 ```
 
-<span data-ttu-id="d696c-173">Свойство **ID** ответа имеет значение `chatId` .</span><span class="sxs-lookup"><span data-stu-id="d696c-173">The **id** property of the response is the `chatId`.</span></span>
+<span data-ttu-id="db790-173">Свойство **id** отклика — `chatId` это.</span><span class="sxs-lookup"><span data-stu-id="db790-173">The **id** property of the response is the `chatId`.</span></span>
 
-<span data-ttu-id="d696c-174">Кроме того, вы можете получить `chatId` запрос с запросом ниже, но для этого потребуется более широкое `Chat.Read.All` разрешение:</span><span class="sxs-lookup"><span data-stu-id="d696c-174">Alternately, you can retrieve the `chatId`  with the request below, but it will require the broader `Chat.Read.All` permission:</span></span>
+<span data-ttu-id="db790-174">Кроме того, запрос можно `chatId`  получить с помощью запроса ниже, но для него требуется более широкий `Chat.Read.All` уровень разрешений:</span><span class="sxs-lookup"><span data-stu-id="db790-174">Alternately, you can retrieve the `chatId`  with the request below, but it will require the broader `Chat.Read.All` permission:</span></span>
 
-<span data-ttu-id="d696c-175">**Http-запрос Get** (разрешение `Chat.Read.All` ):</span><span class="sxs-lookup"><span data-stu-id="d696c-175">**HTTP GET** request (permission — `Chat.Read.All`):</span></span>
+<span data-ttu-id="db790-175">**HTTP-запрос GET** (разрешение `Chat.Read.All` — ):</span><span class="sxs-lookup"><span data-stu-id="db790-175">**HTTP GET** request (permission — `Chat.Read.All`):</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppId}')
 ```
 
-### <a name="-send-proactive-messages"></a><span data-ttu-id="d696c-176">✔ Отправки упреждающих сообщений</span><span class="sxs-lookup"><span data-stu-id="d696c-176">✔ Send proactive messages</span></span>
+### <a name="-send-proactive-messages"></a><span data-ttu-id="db790-176">✔ отправка упреждающих сообщений</span><span class="sxs-lookup"><span data-stu-id="db790-176">✔ Send proactive messages</span></span>
 
-<span data-ttu-id="d696c-177">После добавления ленты для пользователя или группы и получения необходимых сведений о пользователе он может начать [отправку активных сообщений](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp).</span><span class="sxs-lookup"><span data-stu-id="d696c-177">Once your bot has been added for a user or team and has acquired the necessary user  information, it can begin to [send proactive messages](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp).</span></span>
+<span data-ttu-id="db790-177">После того как ваш бот будет добавлен для пользователя или группы и получить необходимые сведения, можно начинать [отправку заблагоприятных сообщений.](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp)</span><span class="sxs-lookup"><span data-stu-id="db790-177">Once your bot has been added for a user or team and has acquired the necessary user  information, it can begin to [send proactive messages](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp).</span></span>
 
-# <a name="c--net"></a>[<span data-ttu-id="d696c-178">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="d696c-178">C# / .NET</span></span>](#tab/csharp)
+# <a name="c--net"></a>[<span data-ttu-id="db790-178">C# / .NET</span><span class="sxs-lookup"><span data-stu-id="db790-178">C# / .NET</span></span>](#tab/csharp)
 
-<span data-ttu-id="d696c-179">Приведенный ниже фрагмент кода относится к [примерам Microsoft Bot Framework для C#.](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages)</span><span class="sxs-lookup"><span data-stu-id="d696c-179">The following code snippet is from the [Microsoft Bot Framework Samples for C#.](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages)</span></span>
+<span data-ttu-id="db790-179">Фрагмент кода ниже взят [из примеров Microsoft Bot Framework для C#.](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages)</span><span class="sxs-lookup"><span data-stu-id="db790-179">The following code snippet is from the [Microsoft Bot Framework Samples for C#.](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages)</span></span>
 
 ```csharp
 using System.Collections.Concurrent;
@@ -251,9 +251,9 @@ namespace Microsoft.BotBuilderSamples
 }
 ```
 
-# <a name="javascript"></a>[<span data-ttu-id="d696c-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d696c-180">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="db790-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db790-180">JavaScript</span></span>](#tab/javascript)
 
-<span data-ttu-id="d696c-181">Приведенный ниже фрагмент кода относится к [примерам Microsoft Bot Framework для JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages).</span><span class="sxs-lookup"><span data-stu-id="d696c-181">The following code snippet is from the [Microsoft Bot Framework Samples for JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages).</span></span>
+<span data-ttu-id="db790-181">Фрагмент кода приведен ниже в [примерах Microsoft Bot Framework для JavaScript.](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages)</span><span class="sxs-lookup"><span data-stu-id="db790-181">The following code snippet is from the [Microsoft Bot Framework Samples for JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages).</span></span>
 
 ```javascript
 const { ActivityHandler, TurnContext } = require('botbuilder');
@@ -304,13 +304,13 @@ module.exports.ProactiveBot = ProactiveBot;
 ```
 ---
 
-## <a name="related-topic-for-teams-administrators"></a><span data-ttu-id="d696c-182">Раздел, посвященный администраторам Teams</span><span class="sxs-lookup"><span data-stu-id="d696c-182">Related topic for Teams administrators</span></span>
+## <a name="related-topic-for-teams-administrators"></a><span data-ttu-id="db790-182">Статья по теме для администраторов Teams</span><span class="sxs-lookup"><span data-stu-id="db790-182">Related topic for Teams administrators</span></span>
 >
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="d696c-183">**Управление политиками установки приложений в Microsoft Teams**</span><span class="sxs-lookup"><span data-stu-id="d696c-183">**Manage app setup policies in Microsoft Teams**</span></span>](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
+> [<span data-ttu-id="db790-183">**Управление политиками настройки приложений в Microsoft Teams**</span><span class="sxs-lookup"><span data-stu-id="db790-183">**Manage app setup policies in Microsoft Teams**</span></span>](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
 
-## <a name="view-additional-code-samples"></a><span data-ttu-id="d696c-184">Просмотр дополнительных примеров кода</span><span class="sxs-lookup"><span data-stu-id="d696c-184">View additional code samples</span></span>
+## <a name="view-additional-code-samples"></a><span data-ttu-id="db790-184">Просмотр дополнительных примеров кода</span><span class="sxs-lookup"><span data-stu-id="db790-184">View additional code samples</span></span>
 >
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="d696c-185">**Примеры кода для активных сообщений Teams**</span><span class="sxs-lookup"><span data-stu-id="d696c-185">**Teams proactive messaging code samples**</span></span>](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
+> [<span data-ttu-id="db790-185">**Примеры упреждающего кода обмена сообщениями Teams**</span><span class="sxs-lookup"><span data-stu-id="db790-185">**Teams proactive messaging code samples**</span></span>](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
 >
