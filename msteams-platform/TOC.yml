@@ -344,6 +344,10 @@
       items:
         - name: Включение установки упреждающего бота и упреждающих сообщений
           href: graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md
+    - name: Импорт сообщений
+      items:
+        - name: Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
+          href: graph-api/import-messages/import-external-messages-to-teams.md
 - name: Ресурсы
   items:
     - name: Боты - v3 SDK
