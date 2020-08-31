@@ -2,17 +2,17 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: 83fe01f5a34ae0d1f3f3f86699f47139bb630b3e
-ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
+ms.openlocfilehash: 46e18dbe385680fea38c98f4396047a8d10a2b9c
+ms.sourcegitcommit: b3962a7b36f260aef1af9124d14d71ae08b01ac4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46587729"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47303719"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
 >[!TIP]
-> Ознакомьтесь с рабочими шаблонами, готовыми к работе, в [**каталоге шаблонов приложений Teams**](samples/app-templates.md). Каталог имеет алфавитный алфавит, а последние добавленные помечаются звездочкой **&#9734;**.
+> Ознакомьтесь с рабочими шаблонами, готовыми к работе, в   [**каталоге шаблонов приложений Teams**](samples/app-templates.md). Каталог имеет алфавитный алфавит, а последние добавленные помечаются звездочкой **&#9734;**.
 
 ## <a name="change-log"></a>Журнал изменений
 
@@ -20,6 +20,7 @@ ms.locfileid: "46587729"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+| 08/12/2020 |Поддержка адаптивных карточек в входящем веб-перехватчике, перемещенном в "GA".|[Отправка адаптивных карточек с помощью входящего веб-перехватчика](~/webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook) |
 | 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](~/tabs/how-to/native-device-permissions.md) |
 |07/20/2020|Средство проверки приложений Teams для отправки AppSource.|[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#teams-app-validation-tool)
 |07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
@@ -49,10 +50,10 @@ ms.locfileid: "46587729"
 | 02/18/2019 | Создание глубоких ссылок на частное чат — это недоступная Предварительная версия и доступная версия для разработчиков. | [Глубокая ссылка на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
 | 01/23/2019 | Отображение SKU и Лиценцетипе сведения в контексте Tab. | [Контекст вкладки](~/concepts/tabs/tabs-context.md) |
 | 11/12/2018 | Вкладки группового чата теперь доступны в выпущенной версии Teams и были перемещены из области предварительного просмотра разработчика. В рамках этой работы раздел "вкладки" был изменен для ясности.| [Настраиваемые вкладки](~/concepts/tabs/tabs-configurable.md) |
-| 11/11/2018 | Начало работы с узлом JS и .NET/C# было обновлено для использования App Studio в Teams, а новый раздел добавлен в приложения Teams на базе узла для хостинга в Azure. | [Начало работы на платформе Microsoft Teams с C#/.нет и App Studio](~/get-started/get-started-dotnet-app-studio.md), Приступая к [работе на платформе Microsoft Teams с узлом JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [разместите приложение Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
+| 11/11/2018 | Начало работы с узлом JS и .NET/C# было обновлено для использования App Studio в Teams, а новый раздел добавлен в приложения Teams на базе узла для хостинга в Azure. | [Начало работы на платформе Microsoft Teams с C#/.нет и App Studio](~/get-started/get-started-dotnet-app-studio.md), Приступая к  [работе на платформе Microsoft Teams с узлом JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [разместите приложение Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
 | 11/09/2018 | Теперь вы можете создавать глубокие ссылки на частные беседы между пользователями. | [Глубокая ссылка на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
 | 11/08/2018 | SharePoint Framework 1,7 поставляется с новым компонентом для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
-| 11/05/2018 | Был выпущен компонент "модуль задач". Модуль задачи позволяет создавать Модальные всплывающие окна в приложении Teams, как с боты, так и с помощью вкладок. Во всплывающем окне можно запустить собственный код HTML/JavaScript, показать мини-приложение, `<iframe>` например YouTube или Microsoft Stream Stream, или отобразить [адаптивную карту](https://docs.microsoft.com/adaptive-cards/). | [Обзор модуля задачи](~/concepts/task-modules/task-modules-overview.md), [модуль задачи на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задачи в Боты](~/concepts/task-modules/task-modules-bots.md) |
+| 11/05/2018 | Был выпущен компонент "модуль задач". Модуль задачи позволяет создавать Модальные всплывающие окна в приложении Teams, как с боты, так и с помощью вкладок. Во всплывающем окне можно запустить собственный код HTML/JavaScript, показать мини-приложение, `<iframe>` например YouTube или Microsoft Stream Stream, или отобразить [адаптивную карту](https://docs.microsoft.com/adaptive-cards/). | [Обзор модуля задачи](~/concepts/task-modules/task-modules-overview.md), [модуль задачи на вкладках](~/concepts/task-modules/task-modules-tabs.md),  [модуль задачи в Боты](~/concepts/task-modules/task-modules-bots.md) |
 | 10/05/2018 | Сведения о форматировании карточек обновлены и протестированы в клиентах для настольных ПК, iOS и Android для Teams. | [Карточки](~/concepts/cards/cards.md), [Форматирование карточек](~/concepts/cards/cards-format.md) |
 | 09/24/2018 | Звонки и API собраний по сети для Microsoft Graph были выпущены для бета-версии, а приложения Teams теперь могут взаимодействовать с пользователями с помощью голосовых и видеоконференций. | [Звонки и собрания по сети Боты](~/concepts/calls-and-meetings/registering-calling-bot.md), [Основные понятия мультимедиа в реальном времени](~/concepts/calls-and-meetings/real-time-media-concepts.md), [регистрация абонентского робота](~/concepts/calls-and-meetings/registering-calling-bot.md), [Отладка и локальное тестирование](~/concepts/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md), работа с [размещенными в приложении носителями](~/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md), [обработка уведомлений о входящих вызовах](~/concepts/calls-and-meetings/call-notifications.md) |
 | 09/11/2018 | Страницы настройки вкладок теперь имеют значительно больше времени. | [Конструктор вкладок](tabs/design/tabs.md) |
