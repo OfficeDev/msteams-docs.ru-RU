@@ -1,16 +1,16 @@
 ---
 title: POST внешние запросы в Microsoft Teams с входящими веб-перехватчиками
 author: laujan
-description: ''
+description: Добавление входящего веб-перехватчика в приложение Teams
 keywords: исходящий веб-перехватчик для вкладок Teams *
 ms.topic: conceptual
-ms.author: laujan
-ms.openlocfilehash: c2b3f5dd581441f89aff344c35fe7e110d4d2e68
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.author: lajanuar
+ms.openlocfilehash: 3aa795170af9695fc375043c94e794f814b38646
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675601"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47819069"
 ---
 # <a name="post-external-requests-to-teams-with-incoming-webhooks"></a>POST внешние запросы в Teams с входящими веб-перехватчиками
 
@@ -38,7 +38,7 @@ ms.locfileid: "41675601"
 ## <a name="add-an-incoming-webhook-to-a-teams-channel"></a>Добавление входящего веб-перехватчика в канал Teams
 
 > [!Important]  
-> Если выбраны**разрешения** => члена группы **Параметры** => **, позволяющие создавать, обновлять и удалять соединители** , любой участник команды может добавить, изменить или удалить соединитель.
+> Если **Settings**  =>  выбраны**разрешения члена**группы параметры  =>  **, позволяющие создавать, обновлять и удалять соединители** , любой участник команды может добавить, изменить или удалить соединитель.
 
 1. Перейдите к каналу, в который нужно добавить веб-перехватчик, и выберите (&#8226;&#8226;&#8226;) *Дополнительные параметры* из верхней панели навигации.
 1. В раскрывающемся меню выберите пункт **соединители** и выполните поиск **входящего веб-перехватчика**.
@@ -64,6 +64,6 @@ ms.locfileid: "41675601"
 * Добавление страницы конфигурации и перенос входящего веб-перехватчика в [соединитель O365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * Упакуйте и опубликуйте соединитель в составе отправку [AppSource](~/concepts/deploy-and-publish/office-store-guidance.md) .
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 * [Отправка сообщений в соединители и веб-перехватчики](~/webhooks-and-connectors/how-to/connectors-using.md)

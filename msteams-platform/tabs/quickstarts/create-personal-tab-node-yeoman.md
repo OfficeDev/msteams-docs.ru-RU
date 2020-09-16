@@ -1,17 +1,17 @@
 ---
-title: 'Краткое руководство: Создание настраиваемой вкладки личных настроек с Node. js и генератором Yeoman для Microsoft Teams'
+title: 'Краткое руководство: Создание настраиваемой вкладки личных настроек с Node.js и генератором Yeoman для Microsoft Teams'
 author: laujan
 description: Руководство по созданию личных вкладок с генератором Yeoman для Microsoft Teams.
 ms.topic: quickstart
-ms.author: laujan
-ms.openlocfilehash: 2d1b17360b92a161179091c1f6ba06ffa194e958
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.author: lajanuar
+ms.openlocfilehash: e39878d117b0b1b1f8c0e2450021d9238f5b7877
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675161"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47818887"
 ---
-# <a name="quickstart-create-a-custom-personal-tab-with-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Краткое руководство: Создание настраиваемой вкладки личных настроек с Node. js и генератором Yeoman для Microsoft Teams
+# <a name="quickstart-create-a-custom-personal-tab-with-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Краткое руководство: Создание настраиваемой вкладки личных настроек с Node.js и генератором Yeoman для Microsoft Teams
 
 >[!NOTE]
 >Это руководство соответствует действиям, описанным в статье [Создание первого вики-сайта приложения Microsoft Teams](https://github.com/OfficeDev/generator-teams/wiki/Build-Your-First-Microsoft-Teams-App) , который находится в репозитории Microsoft OfficeDev GitHub.
@@ -27,13 +27,13 @@ ms.locfileid: "41675161"
 >[!IMPORTANT]
 >Компонент Path *йоурдефаулттабнаметаб*, указанный в этом кратком руководстве, — это значение, введенное в генератор для *имени вкладки по умолчанию* , а также для *вкладки*Word.
 >
->Пример: дефаулттабнаме: *митаб* => */митабтаб/*
+>Пример: дефаулттабнаме: *митаб*  =>  */митабтаб/*
 
 ## <a name="create-your-personal-tab"></a>Создание вкладки "личные"
 
 Чтобы добавить в это приложение вкладку Личные, вы создадите страницу контента и обновите существующие файлы:
 
-- В редакторе кода создайте новый HTML-файл **Personal. HTML** и добавьте следующую разметку:
+- В редакторе кода создайте новый HTML-файл **personal.html** и добавьте следующую разметку:
 
 ```html
 <!DOCTYPE html>
@@ -55,19 +55,19 @@ ms.locfileid: "41675161"
 </html>
 ```
 
-- Сохраните **личный. HTML** в **веб-** папке приложения:
+- Сохраните **personal.html** в **веб-** папке приложения:
 
 ```bash
 ./src/app/web/<yourDefaultTabNameTab>/personal.html
 ```
 
-- Откройте **манифест. JSON** в редакторе кода.
+- Откройте **manifest.js** в редакторе кода.
 
 ```bash
 ./src/manifest/manifest.json/
 ```
 
-Добавьте следующий код в пустой `staticTabs` массив (`staticTabs":[]`) и добавьте следующий объект JSON:
+Добавьте следующий код в пустой `staticTabs` массив ( `staticTabs":[]` ) и добавьте следующий объект JSON:
 
 ```json
 {
@@ -82,7 +82,7 @@ ms.locfileid: "41675161"
 
 Не забудьте обновить компонент пути **"contentURL"** **йоурдефаулттабнаметаб** с именем текущей вкладки.
 
-- Сохраните обновленный **манифест. JSON**.
+- Сохраните обновленный **manifest.jsв**.
 
 - Страница контента должна обслуживаться в IFrame. Откройте **вкладку "TS"** в редакторе кода.
 
@@ -104,7 +104,7 @@ ms.locfileid: "41675161"
 
 [!INCLUDE [node-js-yeoman-gulp-tasks](~/includes/tabs/node-js-yeoman-gulp-tasks.md)]
 
-Чтобы просмотреть вкладку Личные, перейдите на страницу`http://localhost:3007/<yourDefaultAppNameTab>/personal.html`
+Чтобы просмотреть вкладку Личные, перейдите на страницу `http://localhost:3007/<yourDefaultAppNameTab>/personal.html`
 
 >![снимок экрана: вкладка "личные"](/microsoftteams/platform/assets/images/tab-images/personalTab.PNG)
 

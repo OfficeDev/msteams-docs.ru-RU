@@ -1,15 +1,15 @@
 ---
 title: Общие сведения о возможностях приложений Teams
 author: heath-hamilton
-description: ''
+description: Общие сведения о возможностях и точках расширения Teams
 ms.topic: overview
-ms.author: heath-hamilton
-ms.openlocfilehash: 580d75b648bde1caf0e85647c89635804c91fb70
-ms.sourcegitcommit: 9fbc701a9a039ecdc360aefbe86df52b9c3593f3
+ms.author: v-heha
+ms.openlocfilehash: f83cf0240b32d35028135b48e7d4c56b939777a9
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652153"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47819083"
 ---
 # <a name="understanding-teams-app-capabilities"></a>Общие сведения о возможностях приложений Teams
 
@@ -36,6 +36,6 @@ ms.locfileid: "46652153"
 
 Чтобы [понять варианты использования аудитории](../concepts/design/understand-use-cases.md), необходимо выбрать правильное сочетание возможностей и правил пользовательского интерфейса, элементов управления и элементов.
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 * [Начало планирования приложения](../concepts/extensibility-points.md)

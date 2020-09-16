@@ -3,13 +3,13 @@ title: Создайте личную вкладку с ASP. NET Core MVC
 author: laujan
 description: Краткое руководство по созданию настраиваемой вкладки личных настроек с ASP. NET Core MVC.
 ms.topic: quickstart
-ms.author: laujan
-ms.openlocfilehash: 3bdd23692eca5ff3f6fc3f82cdaa233d34d4c69f
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.author: lajanuar
+ms.openlocfilehash: 7fcb0862647dec15bc93eecf9ce637d52892825c
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675166"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47818915"
 ---
 # <a name="create-a-custom-personal-tab-with-asp-net-core-mvc"></a>Создайте настраиваемую вкладку личного кода с помощью ASP. NET Core MVC
 
@@ -37,7 +37,7 @@ git clone https://github.com/OfficeDev/microsoft-teams-sample-tabs.git
 
 ### <a name="startupcs"></a>Startup.cs
 
-Этот проект был создан на основе ASP. Веб-приложение NET Core 2,2 пустой шаблон с установленным флажком *Расширенная настройка для HTTPS* . Службы MVC регистрируются `ConfigureServices()` методом платформы внедрения зависимостей. Кроме того, по умолчанию в пустом шаблоне не включается возможность обслуживания статического содержимого, поэтому в `Configure()` метод добавляется промежуточное по промежуточным файлам.
+Этот проект был создан на основе ASP. Веб-приложение NET Core 2,2 пустой шаблон с установленным флажком *Расширенная настройка для HTTPS* . Службы MVC регистрируются методом платформы внедрения зависимостей `ConfigureServices()` . Кроме того, по умолчанию в пустом шаблоне не включается возможность обслуживания статического содержимого, поэтому в метод добавляется промежуточное по промежуточным файлам `Configure()` .
 
 ``` csharp
 public void ConfigureServices(IServiceCollection services)
@@ -61,7 +61,7 @@ public void Configure(IApplicationBuilder app)
 
 * **Значок с полным цветом** , измеряющий 192 x 192 пикселей.
 * **Прозрачный значок структуры** , измеряющий 32 x 32 пикселей.
-* Файл **manifest. JSON** , задающий атрибуты приложения.
+* **manifest.js** файла, определяющего атрибуты приложения.
 
 Эти файлы необходимо заархивировать в пакете приложения для использования при загрузке вкладки в Teams. Microsoft Teams загрузит `contentUrl` указанное в манифесте, внедрите его в IFRAME и откроет его на вкладке.
 
@@ -93,7 +93,7 @@ public void Configure(IApplicationBuilder app)
 
 ### <a name="views"></a>Представления
 
-#### <a name="home"></a>Главная
+#### <a name="home"></a>Домашняя
 
 Стилей. NET Core рассматривает файлы с именем *index* как страницу по умолчанию или домашнюю страницу сайта. Если URL-адрес браузера указывает на корневой сайт сайта, в качестве домашней страницы для приложения будет отображаться *index. cshtml* .
 
@@ -115,7 +115,7 @@ public void Configure(IApplicationBuilder app)
 ngrok http https://localhost:44345 -host-header="localhost:44345"
 ```
 
-* Ngrok прослушивает запросы из Интернета и направляет их в ваше приложение, когда оно выполняется на порте 44325.  Он должен выглядеть примерно `https://y8rPrT2b.ngrok.io/` так, где *y8rPrT2b* заменяется URL-адресом https ngrok, сооснованным на цифровом алфавите.
+* Ngrok прослушивает запросы из Интернета и направляет их в ваше приложение, когда оно выполняется на порте 44325.  Он должен выглядеть примерно так `https://y8rPrT2b.ngrok.io/` , где *y8rPrT2b* ЗАМЕНЯЕТСЯ URL-адресом https ngrok, сооснованным на цифровом алфавите.
 
 * Убедитесь, что Командная строка ngrok запущена, и запишите URL-адрес, он понадобится позже.
 

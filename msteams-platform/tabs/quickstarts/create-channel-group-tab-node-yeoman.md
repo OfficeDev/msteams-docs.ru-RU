@@ -1,17 +1,17 @@
 ---
-title: Создание настраиваемой вкладки каналов и групп с Node. js и генератором Yeoman для Microsoft Teams
+title: Создание настраиваемой вкладки каналов и групп с Node.js и генератором Yeoman для Microsoft Teams
 author: laujan
 description: Краткое руководство по созданию вкладки каналов и групп с помощью генератора Yeoman для Microsoft Teams.
 ms.topic: quickstart
-ms.author: laujan
-ms.openlocfilehash: c5e028dcc117d729f2bf366923d03568b7f557a4
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.author: lajanuar
+ms.openlocfilehash: 77081f83c753f812032ccfebe2accd3cb8859f99
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675376"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47818936"
 ---
-# <a name="create-a-custom-channel-and-group-tab-with-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Создание настраиваемой вкладки каналов и групп с Node. js и генератором Yeoman для Microsoft Teams
+# <a name="create-a-custom-channel-and-group-tab-with-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Создание настраиваемой вкладки каналов и групп с Node.js и генератором Yeoman для Microsoft Teams
 
 >[!NOTE]
 >Это руководство соответствует действиям, описанным в статье [Создание первого вики-сайта приложения Microsoft Teams](https://github.com/OfficeDev/generator-teams/wiki/Build-Your-First-Microsoft-Teams-App) , который находится в репозитории Microsoft OfficeDev GitHub.
@@ -35,7 +35,7 @@ ms.locfileid: "41675376"
 >[!IMPORTANT]
 >Компонент Path **йоурдефаулттабнаметаб**, указанный в этом кратком руководстве, — это значение, введенное в генератор для **имени вкладки по умолчанию** , а также для **вкладки**Word.
 >
->Пример: дефаулттабнаме: **митаб** => **/митабтаб/**
+>Пример: дефаулттабнаме: **митаб**  =>  **/митабтаб/**
 
 В каталоге проекта перейдите к следующему:
 
@@ -43,7 +43,7 @@ ms.locfileid: "41675376"
 ./src/app/scripts/<yourDefaultTabNameTab>/<yourDefaultTabNameTab>.tsx
 ```
 
-Здесь вы найдете логику вкладки. Нахождение `render()` метода и добавление следующего `<div>` тега и содержимого в начало кода `<PanelBody>` контейнера:
+Здесь вы найдете логику вкладки. Нахождение `render()` метода и добавление следующего `<div>` тега и содержимого в начало `<PanelBody>` кода контейнера:
 
 ```html
     <PanelBody>
@@ -61,7 +61,7 @@ ms.locfileid: "41675376"
 
 [!INCLUDE [node-js-yeoman-gulp-tasks](~/includes/tabs/node-js-yeoman-gulp-tasks.md)]
 
-Чтобы просмотреть страницу настройки вкладки, перейдите на `https://localhost:3007/<yourDefaultAppNameTab>/config.html`страницу. Должны отображаться следующие сведения:
+Чтобы просмотреть страницу настройки вкладки, перейдите на страницу `https://localhost:3007/<yourDefaultAppNameTab>/config.html` . Должны отображаться следующие сведения:
 
 ![снимок экрана страницы конфигурации](~/assets/images/tab-images/configurationPage.png)
 
@@ -87,5 +87,5 @@ gulp ngrok-serve
 - В главной панели выберите **приложения** из панели вкладок и нажмите кнопку **Отправить пользовательское приложение** , расположенное в правом нижнем углу страницы.
 - Откройте каталог проекта, перейдите в папку **./паккаже** , выберите папку ZIP пакет приложения и нажмите кнопку **Открыть**. Вкладка будет загружена в Teams.
 - Вернитесь к команде, выберите канал, в котором необходимо отобразить вкладку, нажмите ➕ на панели вкладок и выберите вкладку в коллекции.
-- Следуйте указаниям по добавлению вкладки. Обратите внимание на то, что существует настраиваемое диалоговое окно настройки для вкладки канал/группа.
+- Следуйте инструкциям по добавлению вкладки. Обратите внимание, что для вкладки канал/группа существует настраиваемое диалоговое окно настройки.
 - Нажмите кнопку **сохранить** , и вкладка будет добавлена на панель вкладок канала.

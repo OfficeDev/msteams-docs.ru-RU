@@ -4,13 +4,13 @@ author: laujan
 description: Сведения о том, как развернуть существующую вкладку Teams в SharePoint в качестве веб-части SharePoint Framework.
 keywords: разработка SharePoint Framework для вкладок Teams
 ms.topic: conceptual
-ms.author: ''
-ms.openlocfilehash: b29cd29891779a69a0342f10d383792b3818590a
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.author: lajanuar
+ms.openlocfilehash: 2bdc7ab578be485eee33020b3b0c1a4099fd8ade
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675402"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47818943"
 ---
 # <a name="adding-a-microsoft-teams-tab-in-sharepoint-as-an-spfx-web-part"></a>Добавление вкладки Microsoft Teams в SharePoint в качестве веб-части SPFx
 
@@ -29,7 +29,7 @@ ms.locfileid: "41675402"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="~/assets/images/tabs/tabs-in-sharepoint/image084.png" />
+                            <img src="~/assets/images/tabs/tabs-in-sharepoint/image084.png" alt="tab-in-sharepoint view"/>
                         </div>
                     </div>
                     <div class="cardText">
@@ -48,7 +48,7 @@ ms.locfileid: "41675402"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="~/assets/images/tabs/tabs-in-sharepoint/SharePoint-web-part-exposed-as-a-Tab-in-Microsoft-Teams.png" />
+                            <img src="~/assets/images/tabs/tabs-in-sharepoint/SharePoint-web-part-exposed-as-a-Tab-in-Microsoft-Teams.png" alt="web-part-exposed-as-a-tab" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -87,37 +87,37 @@ ms.locfileid: "41675402"
 
 Скачайте пример манифеста приложения [**отсюда**](https://github.com/MicrosoftDocs/msteams-docs/raw/master/msteams-platform/assets/downloads/TalentMgmt-Azure.zip).
 
-В Microsoft Teams щелкните значок магазин в левом нижнем углу, а затем "Отправить настраиваемое приложение" в нижнем левом углу. Файл, который требуется отправить, будет размещен в папке "загрузки"; Он называется Талентмгмт-Азуре. zip. Если все правильно, вы увидите экран Установка/согласие для приложения управления. Выберите группу, в которую вы хотите установить, и нажмите кнопку установить. Теперь вы можете поэкспериментировать с приложением.
+В Microsoft Teams щелкните значок магазин в левом нижнем углу, а затем "Отправить настраиваемое приложение" в нижнем левом углу. Файл, который требуется отправить, будет размещен в папке "загрузки"; Он называется TalentMgmt-Azure.zip. Если все правильно, вы увидите экран Установка/согласие для приложения управления. Выберите группу, в которую вы хотите установить, и нажмите кнопку установить. Теперь вы можете поэкспериментировать с приложением.
 
 ## <a name="step-2-using-the-teams-tab-in-sharepoint"></a>Шаг 2: Использование вкладки "команды" в SharePoint
 
-Отправьте и разверните пакет приложения Teams в каталоге приложений SharePoint, посетив `https://YOUR_TENANT_NAME.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx`, например,. `https://contoso.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx`
+Отправьте и разверните пакет приложения Teams в каталоге приложений SharePoint, посетив `https://YOUR_TENANT_NAME.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx` , например, `https://contoso.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx` .
 
 При появлении соответствующего запроса включите параметр "сделать это решение доступным для всех сайтов в организации":
 
-![](~/assets/images/tabs/tabs-in-sharepoint/image065.png)
+![Вкладки в представлении SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image065.png)
 
 На сайте создайте новую страницу, нажав кнопку шестеренки в верхнем правом углу, а затем "добавить страницу".
 
-![](~/assets/images/tabs/tabs-in-sharepoint/image066.png)
+![Представление SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image066.png)
 
 Вы увидите процесс создания страниц SharePoint. Присвойте странице имя "Моя группа".
 
 Откройте панель элементов веб-частей, нажав кнопку +, и выберите вкладку группы (с именем "Contoso HR"). Веб-части сортируются по алфавиту; Если это длинный список, его можно найти с помощью панели поиска. При этом на холсте, содержащем вкладку Teams, будет создана веб-часть:
 
-![](~/assets/images/tabs/tabs-in-sharepoint/image071.png)
+![Режим вкладки](~/assets/images/tabs/tabs-in-sharepoint/image071.png)
 
 После завершения редактирования нажмите кнопку "опубликовать".
 
 Можно нажать кнопку "добавить страницу в навигацию", чтобы получить краткую ссылку на страницу в левой панели навигации:
 
-![](~/assets/images/tabs/tabs-in-sharepoint/image073.png)
+![Вкладка в изображении SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image073.png)
 
 ## <a name="step-3-explore-app-pages-in-sharepoint"></a>Шаг 3: изучение страниц приложения в SharePoint
 
 После публикации страницы вы можете изучить [возможности приложения Teams в среде SharePoint полностью](/sharepoint/dev/spfx/web-parts/single-part-app-pages). При этом текущая страница преобразуется в страницу приложения с обычным макетом страницы SharePoint с использованием полноэкранной среды для вкладки teams:
 
-![](~/assets/images/tabs/tabs-in-sharepoint/image085.png)
+![Изображение вкладок в SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image085.png)
 
 ## <a name="more-information"></a>Дополнительные сведения
 

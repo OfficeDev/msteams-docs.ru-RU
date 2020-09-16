@@ -1,16 +1,16 @@
 ---
 title: Добавление настраиваемых боты в Microsoft Teams с исходящими веб-перехватчиками
 author: laujan
-description: ''
+description: Добавление исходящего веб-перехватчика
 keywords: исходящий веб-перехватчик для вкладок Teams *
 ms.topic: conceptual
-ms.author: laujan
-ms.openlocfilehash: 4881dc8768c7c51947f6a80a55affe78c28874d3
-ms.sourcegitcommit: 3ba5a5a7d9d9d906abc3ee1df9c2177de0cfd767
+ms.author: lajanuar
+ms.openlocfilehash: 04fc86fc3df7601235cb7f6bb7e53da59777f49f
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103000"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47819062"
 ---
 # <a name="add-custom-bots-to-microsoft-teams-with-outgoing-webhooks"></a>Добавление настраиваемых боты в Microsoft Teams с исходящими веб-перехватчиками
 
@@ -44,7 +44,7 @@ ms.locfileid: "45103000"
 
 Код должен всегда проверять подпись HMAC, включенную в запрос:
 
-* *Создание* маркера HMAC из текста запроса сообщения. Для выполнения этой задачи на большинстве платформ используются стандартные библиотеки (*Дополнительные* сведения: [криптография](https://nodejs.org/api/crypto.html#crypto_crypto) для *Node.js и* [Пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C \# ). Microsoft Teams использует стандартную криптографию HMAC. Необходимо преобразовать текст в массив байтов в кодировке UTF8.
+* *Создание* маркера HMAC из текста запроса сообщения. Для выполнения этой задачи на большинстве платформ используются стандартные библиотеки (*Дополнительные* сведения: [криптография](https://nodejs.org/api/crypto.html#crypto_crypto) для  *Node.js и* [Пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C \# ). Microsoft Teams использует стандартную криптографию HMAC. Необходимо преобразовать текст в массив байтов в кодировке UTF8.
 * *Вычислить* хэш из байтового массива маркера безопасности **, предоставляемого Teams,** при регистрации исходящего веб-перехватчика в клиенте Teams]. Ниже *приведено* [Создание исходящего веб-перехватчика](#create-an-outgoing-webhook).
 * *Преобразуйте* хэш в строку, используя кодировку UTF-8.
 * *Сравните* строковое значение созданного хэша со значением, указанным в HTTP-запросе.

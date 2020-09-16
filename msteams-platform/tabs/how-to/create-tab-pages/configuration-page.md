@@ -1,16 +1,16 @@
 ---
 title: Создать страницу конфигурации
 author: laujan
-description: ''
+description: Создание страницы конфигурации
 keywords: вкладки Teams канал группы настраиваемого канала
 ms.topic: conceptualF
-ms.author: laujan
-ms.openlocfilehash: 55fe1efca4defacf10b9be34f788704b7b4491f5
-ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
+ms.author: lajanuar
+ms.openlocfilehash: 6288fc8c296ebf0aa85ffe8e08234e5faf22a1ef
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434484"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47819027"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -102,7 +102,7 @@ ms.locfileid: "45434484"
 
 1. Используйте метод [Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) `microsoftTeams.getContext((context) =>{}` .
 
-#### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте заполнители в поле`configurationURL`
+#### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте заполнители в поле `configurationURL`
 
 Заполнители интерфейса контекста можно добавлять к базе `configurationUrl` . Например:
 
@@ -162,7 +162,7 @@ document.write(getId());
 
 ## <a name="modify-or-remove-a-tab"></a>Изменение или удаление вкладки
 
-Поддерживаемые варианты удаления могут дополнительно улучшить взаимодействие с пользователем. Вы можете разрешить пользователям изменять, перенастраивать или переименовывать вкладки группа и канал, устанавливая для свойства манифеста значение `canUpdateConfiguration` `true` .  Кроме того, вы можете указать, что происходит с содержимым при удалении вкладки, включив страницу параметров удаления в свое приложение и задав значение для `removeUrl` свойства в `setSettings()` конфигурации (см. ниже). Личные вкладки нельзя изменить, но можно удалить пользователя. Дополнительные сведения можно найти [в разделе Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md).
+Поддерживаемые варианты удаления могут дополнительно улучшить взаимодействие с пользователем. Вы можете разрешить пользователям изменять, перенастраивать или переименовывать вкладки группа и канал, устанавливая для свойства манифеста значение `canUpdateConfiguration` `true` .  Кроме того, вы можете указать, что происходит с содержимым при удалении вкладки, включив страницу параметров удаления в свое приложение и задав значение для `removeUrl` свойства в  `setSettings()` конфигурации (см. ниже). Личные вкладки нельзя изменить, но можно удалить пользователя. Дополнительные сведения можно найти [в разделе Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md).
 
 ## <a name="mobile-clients"></a>Мобильные приложения
 

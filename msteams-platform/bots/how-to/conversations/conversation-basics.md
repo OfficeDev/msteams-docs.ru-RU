@@ -1,25 +1,25 @@
 ---
-title: Общие сведения о беседах
+title: Основы разговора
 author: clearab
 description: Как создать беседу с роботом Microsoft Teams
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 2d241ad04509c596e97647138bab2a749fa0f74c
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: bc016a8f0dcce474f80898dc93e309692ba20471
+ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675311"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47819055"
 ---
-# <a name="conversation-basics"></a>Общие сведения о беседах
+# <a name="conversation-basics"></a>Основы разговора
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
 Беседа — это серия сообщений, отправляемых между Bot и одним или несколькими пользователями. В Teams существует три вида бесед (также называемых областями):
 
-* `teams`Также называется каналы каналов, видимых всем участникам канала.
-* `personal`Беседы между Боты и одним пользователем.
-* `groupChat`Чат между Bot и двумя или несколькими пользователями. Кроме того, в конференциях можно включить робота.
+* `teams` Также называется каналы каналов, видимых всем участникам канала.
+* `personal` Беседы между Боты и одним пользователем.
+* `groupChat` Чат между Bot и двумя или несколькими пользователями. Кроме того, в конференциях можно включить робота.
 
 В зависимости от типа беседы, в которой она участвует, программа-робота немного ведет себя по-разному.
 
@@ -30,17 +30,17 @@ ms.locfileid: "41675311"
 
 ## <a name="activities"></a>Действия
 
-Каждое сообщение является `Activity` объектом типа `messageType: message`. Когда пользователь отправляет сообщение, Teams отправляет сообщение на сервер почтовых роботов; в частности, он отправляет объект JSON в конечную точку обмена сообщениями ленты. Ваш почтовый робот просматривает сообщение, чтобы определить его тип и ответить соответствующим образом.
+Каждое сообщение является `Activity` объектом типа `messageType: message` . Когда пользователь отправляет сообщение, Teams отправляет сообщение на сервер почтовых роботов; в частности, он отправляет объект JSON в конечную точку обмена сообщениями ленты. Ваш почтовый робот просматривает сообщение, чтобы определить его тип и ответить соответствующим образом.
 
 Основная беседа обрабатывается через соединитель Bot Framework, один REST API, позволяющий роботам общаться с Teams и другими каналами. Пакет SDK построителя позволяет легко получить доступ к этому API, дополнительные функции для управления движением и состоянием беседы, а также простые способы внедрения таких служб, как естественный язык (НЛП).
 
 ## <a name="receive-a-message"></a>Получение сообщения
 
-Для получения текстового сообщения используйте `Text` свойство `Activity` объекта. В обработчике действий Bot используйте объект "переключить контекст" `Activity` , чтобы считать один запрос сообщения.
+Для получения текстового сообщения используйте `Text` свойство `Activity` объекта. В обработчике действий Bot используйте объект "переключить контекст", `Activity` чтобы считать один запрос сообщения.
 
 Ниже приведен пример кода.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
@@ -50,7 +50,7 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 
@@ -66,7 +66,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 <!-- Verify -->
 ```python
@@ -76,7 +76,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -123,19 +123,19 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 ## <a name="send-a-message"></a>Отправка сообщения
 
-Чтобы отправить текстовое сообщение, укажите строку, которую необходимо отправить как действие. В обработчиках действий Bot используйте `SendActivityAsync` метод "переключить контекстный объект" для отправки одного ответа на сообщение. Кроме того, можно использовать `SendActivitiesAsync` метод объекта для отправки нескольких ответов одновременно. В приведенном ниже коде показан пример отправки сообщения, когда кто-то добавляется в беседу.  
+Чтобы отправить текстовое сообщение, укажите строку, которую необходимо отправить как действие. В обработчиках действий Bot используйте метод "переключить контекстный объект" `SendActivityAsync` для отправки одного ответа на сообщение. Кроме того, можно использовать метод объекта `SendActivitiesAsync` для отправки нескольких ответов одновременно. В приведенном ниже коде показан пример отправки сообщения, когда кто-то добавляется в беседу.  
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
-protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
 {
   await turnContext.SendActivityAsync(MessageFactory.Text($"Hello and welcome!"), cancellationToken);
 }
 
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 
@@ -150,7 +150,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 <!-- Verify -->
 
@@ -165,7 +165,7 @@ async def on_members_added_activity(
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -212,22 +212,22 @@ async def on_members_added_activity(
 
 ## <a name="teams-channel-data"></a>Данные канала Teams
 
-`channelData` Объект содержит сведения, зависящие от команды, и является основным источником для идентификаторов команд и каналов. Возможно, вам потребуется кэшировать и использовать эти идентификаторы в качестве ключей для локального хранилища. `TeamsActivityHandler` В пакете SDK обычно запрашиваются важные сведения из `channelData` объекта, чтобы сделать его более легко доступным, но вы всегда можете получить доступ к исходным данным из `turnContext` объекта.
+`channelData`Объект содержит сведения, зависящие от команды, и является основным источником для идентификаторов команд и каналов. Возможно, вам потребуется кэшировать и использовать эти идентификаторы в качестве ключей для локального хранилища. `TeamsActivityHandler`В пакете SDK обычно запрашиваются важные сведения из `channelData` объекта, чтобы сделать его более легко доступным, но вы всегда можете получить доступ к исходным данным из `turnContext` объекта.
 
 Этот `channelData` объект не включается в сообщения в личных беседах, так как они выполняются вне какого-либо канала.
 
 Типичный объект Чаннелдата в действии, отправляемом на почтовый робот, содержит следующие сведения:
 
-* `eventType`Тип события Teams; передается только в случае [событий изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
-* `tenant.id`Идентификатор клиента Azure Active Directory; передается во всех контекстах
-* `team`Передается только в контекстах канала, а не в личном сеансе чата.
-  * `id`GUID для канала
-  * `name`Имя команды; передается только в случае [событий переименования команды](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
-* `channel`Передается только в контекстах канала при упоминании Bot или для событий в каналах в Microsoft Teams, где добавлен Bot
-  * `id`GUID для канала
-  * `name`Имя канала; передается только в случае [событий изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
-* `channelData.teamsTeamId`Устаревшие. Это свойство включено только для обеспечения обратной совместимости.
-* `channelData.teamsChannelId`Устаревшие. Это свойство включено только для обеспечения обратной совместимости.
+* `eventType` Тип события Teams; передается только в случае [событий изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+* `tenant.id` Идентификатор клиента Azure Active Directory; передается во всех контекстах
+* `team` Передается только в контекстах канала, а не в личном сеансе чата.
+  * `id` GUID для канала
+  * `name` Имя команды; передается только в случае [событий переименования команды](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+* `channel` Передается только в контекстах канала при упоминании Bot или для событий в каналах в Microsoft Teams, где добавлен Bot
+  * `id` GUID для канала
+  * `name` Имя канала; передается только в случае [событий изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
+* `channelData.teamsTeamId` Устаревшие. Это свойство включено только для обеспечения обратной совместимости.
+* `channelData.teamsChannelId` Устаревшие. Это свойство включено только для обеспечения обратной совместимости.
 
 ### <a name="example-channeldata-object-channelcreated-event"></a>Пример объекта Чаннелдата (событие Чаннелкреатед)
 
@@ -260,9 +260,9 @@ async def on_members_added_activity(
 
 ## <a name="adding-notifications-to-your-message"></a>Добавление уведомлений в сообщение
 
-Уведомления уведомляют пользователей о новых задачах, упоминании и комментариях, связанных с тем, над чем они работают, или необходимо просмотреть, вставив уведомление в свой канал активности. Вы можете настроить уведомления для запуска из сообщения Bot, задав для свойства `TeamsChannelData` Objects `Notification.Alert` значение true. Если уведомление не будет вызвано, в конечном итоге зависит от параметров Teams отдельного пользователя, и вы не сможете программно переопределить эти параметры. Типом уведомления будет либо баннер, либо баннер и электронная почта.
+Уведомления уведомляют пользователей о новых задачах, упоминании и комментариях, связанных с тем, над чем они работают, или необходимо просмотреть, вставив уведомление в свой канал активности. Вы можете настроить уведомления для запуска из сообщения Bot, задав `TeamsChannelData` `Notification.Alert` для свойства Objects значение true. Если уведомление не будет вызвано, в конечном итоге зависит от параметров Teams отдельного пользователя, и вы не сможете программно переопределить эти параметры. Типом уведомления будет либо баннер, либо баннер и электронная почта.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
@@ -274,7 +274,7 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 this.onMessage(async (turnContext, next) => {
@@ -288,7 +288,7 @@ this.onMessage(async (turnContext, next) => {
 });
 ```
 
-# <a name="pythontabpython"></a>[Python](#tab/python)
+# <a name="python"></a>[Python](#tab/python)
 
 ```python
 
@@ -300,7 +300,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -339,12 +339,12 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Рисунки могут иметь не более 1024 × 1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF-файл не поддерживается.
 
-Рекомендуем указать высоту и ширину каждого изображения с помощью XML. Если вы используете Markdown, размер изображения по умолчанию равен 256 × 256. Пример:
+Рекомендуем указать высоту и ширину каждого изображения с помощью XML. Если вы используете Markdown, размер изображения по умолчанию равен 256 × 256. Например:
 
-* Используйте`<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
-* Не используйте —`![Duck on a rock](http://aka.ms/Fo983c)`
+* Используйте `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
+* Не используйте — `![Duck on a rock](http://aka.ms/Fo983c)`
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
-* [Подписаться на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+* [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
