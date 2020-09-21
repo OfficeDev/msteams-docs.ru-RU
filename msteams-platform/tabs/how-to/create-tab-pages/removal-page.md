@@ -5,12 +5,12 @@ description: Создание страницы удаления вкладок
 keywords: вкладки Teams. Группа настраиваемого канала удалить удаление
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: a8b40911de3e2519d8194415e2d8e467d0766ef2
-ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
+ms.openlocfilehash: 4ee060b8ef1f439ed4f8e4007e63606ce34c3d24
+ms.sourcegitcommit: d3bb4bbcdff9545c9869647dcdbe563a2db868be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47818901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47964594"
 ---
 # <a name="modify-or-remove-a-channel-group-tab"></a>Изменение или удаление вкладки группы каналов
 
@@ -39,7 +39,7 @@ ms.locfileid: "47818901"
 
 ### <a name="register-a-remove-handler"></a>Регистрация обработчика удаления
 
-Кроме того, в логике страницы удаления можно вызвать `registerOnRemoveHandler((RemoveEvent) => {}` обработчик события, когда пользователь удаляет существующую конфигурацию вкладки. Метод принимает в [`RemoveEvent`](/javascript/api/@microsoft/teams-js/microsoftteams.settings.removeevent?view=msteams-client-js-latest) интерфейсе код и выполняет код в обработчике при попытке пользователя удалить контент. Он используется для выполнения таких операций очистки, как удаление базового ресурса с содержимым вкладки. За один раз можно зарегистрировать только один обработчик удаления.
+Кроме того, в логике страницы удаления можно вызвать `registerOnRemoveHandler((RemoveEvent) => {}` обработчик события, когда пользователь удаляет существующую конфигурацию вкладки. Метод принимает в [`RemoveEvent`](/javascript/api/@microsoft/teams-js/microsoftteams.settings.removeevent?view=msteams-client-js-latest&preserve-view=true) интерфейсе код и выполняет код в обработчике при попытке пользователя удалить контент. Он используется для выполнения таких операций очистки, как удаление базового ресурса с содержимым вкладки. За один раз можно зарегистрировать только один обработчик удаления.
 
 `RemoveEvent`Интерфейс описывает объект с двумя методами:
 
@@ -49,11 +49,11 @@ ms.locfileid: "47818901"
 
 #### <a name="use-the-getsettings-function"></a>Использование `getSettings()` функции
 
-Можно использовать `getSettings()` для указания удаляемого содержимого вкладки. `getSettings((Settings) =>{})`Функция принимает в себя [`Settings interface`](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) и предоставляет допустимые значения свойств параметров, которые можно получить.
+Можно использовать `getSettings()` для указания удаляемого содержимого вкладки. `getSettings((Settings) =>{})`Функция принимает в себя [`Settings interface`](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true) и предоставляет допустимые значения свойств параметров, которые можно получить.
 
 #### <a name="use-the-getcontext-function"></a>Использование `getContext()` функции
 
-Можно использовать `getContext()` для получения текущего контекста, в котором выполняется кадр. `getContext((Context) =>{})`Функция принимает в себя [`Context interface`](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest) и предоставляет допустимые `Context` значения свойств, которые можно использовать в логике страницы удаления для определения контента, отображаемого на странице удаления.
+Можно использовать `getContext()` для получения текущего контекста, в котором выполняется кадр. `getContext((Context) =>{})`Функция принимает в себя [`Context interface`](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest&preserve-view=true) и предоставляет допустимые `Context` значения свойств, которые можно использовать в логике страницы удаления для определения контента, отображаемого на странице удаления.
 
 #### <a name="include-authentication"></a>Включение проверки подлинности
 

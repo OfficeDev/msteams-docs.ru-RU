@@ -3,14 +3,14 @@ title: Создать страницу конфигурации
 author: laujan
 description: Создание страницы конфигурации
 keywords: вкладки Teams канал группы настраиваемого канала
-ms.topic: conceptualF
+ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 6288fc8c296ebf0aa85ffe8e08234e5faf22a1ef
-ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
+ms.openlocfilehash: 591e1aa91bd33d1a61e9d70b35fd1561368fcda4
+ms.sourcegitcommit: d3bb4bbcdff9545c9869647dcdbe563a2db868be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47819027"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47964608"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -22,7 +22,7 @@ ms.locfileid: "47819027"
 
 ## <a name="configuring-a-channel-or-group-chat-tab"></a>Настройка вкладки канала или группового чата
 
-Страница конфигурации информирует страницу содержимого о том, как она должна отображаться. Ваше приложение должно ссылаться на [клиентский пакет SDK и вызов Microsoft Teams JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) `microsoft.initialize()` . Кроме того, ваш URL-адрес должен быть защищенными конечными точками HTTPS и доступен в облаке. Ниже приведен пример страницы конфигурации.
+Страница конфигурации информирует страницу содержимого о том, как она должна отображаться. Ваше приложение должно ссылаться на [клиентский пакет SDK и вызов Microsoft Teams JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) `microsoft.initialize()` . Кроме того, ваш URL-адрес должен быть защищенными конечными точками HTTPS и доступен в облаке. Ниже приведен пример страницы конфигурации.
 
 ```html
 <head>
@@ -85,7 +85,7 @@ ms.locfileid: "47819027"
 1. `microsoftTeams.settings.registerOnSaveHandler()`Запускается обработчик событий.
 1. Кнопка **сохранить** на странице настройки приложения, отправленная в Teams, включена.
 
-С помощью этого кода Teams вы узнаете, что требования к конфигурации выполнены, и установка может быть продолжена. При **сохранении**параметры `settings.setSettings()` задаются, как определено `Settings` интерфейсом, для текущего экземпляра (см. [интерфейс параметров](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) ). Finally `saveEvent.notifySuccess()` вызывается, чтобы показать, что URL-адрес контента успешно разрешен.
+С помощью этого кода Teams вы узнаете, что требования к конфигурации выполнены, и установка может быть продолжена. При **сохранении**параметры `settings.setSettings()` задаются, как определено `Settings` интерфейсом, для текущего экземпляра (см. [интерфейс параметров](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true) ). Finally `saveEvent.notifySuccess()` вызывается, чтобы показать, что URL-адрес контента успешно разрешен.
 
 >[!NOTE]
 >
@@ -96,11 +96,11 @@ ms.locfileid: "47819027"
 
 Для отображения соответствующего контента на вкладке может потребоваться Контекстная информация. Контекстные сведения могут улучшить внешний вид вкладки, обеспечивая более настраиваемое взаимодействие с пользователем.
 
-[Интерфейс контекста](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest) Teams определяет свойства, которые можно использовать для настройки вкладки. Вы можете собирать значения переменных контекстных данных двумя способами:
+[Интерфейс контекста](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest&preserve-view=true) Teams определяет свойства, которые можно использовать для настройки вкладки. Вы можете собирать значения переменных контекстных данных двумя способами:
 
 1. Вставьте в манифесте заполнители строки запроса URL-адреса `configurationURL` .
 
-1. Используйте метод [Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) `microsoftTeams.getContext((context) =>{}` .
+1. Используйте метод [Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) `microsoftTeams.getContext((context) =>{}` .
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте заполнители в поле `configurationURL`
 
@@ -139,7 +139,7 @@ document.write(getId());
 
 ### <a name="use-the-getcontext-function-to-retrieve-context"></a>Использование `getContext()` функции для получения контекста
 
-При вызове `microsoftTeams.getContext((context) => {})` функция получает [интерфейс контекста](/javascript/api/@microsoft/teams-js//microsoftteams.context?view=msteams-client-js-latest). Вы можете добавить эту функцию на страницу конфигурации для получения значений контекста:
+При вызове `microsoftTeams.getContext((context) => {})` функция получает [интерфейс контекста](/javascript/api/@microsoft/teams-js//microsoftteams.context?view=msteams-client-js-latest&preserve-view=true). Вы можете добавить эту функцию на страницу конфигурации для получения значений контекста:
 
 ```html
 <!-- `userPrincipalName` will render in the span with the id "user". -->

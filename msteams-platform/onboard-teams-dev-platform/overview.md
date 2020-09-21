@@ -1,89 +1,157 @@
 ---
-title: Платформа для разработчиков Teams
+title: Платформа для разработчиков Microsoft Teams
 author: clearab
 description: Общие сведения о том, как разработчики могут расширять и настраивать функции Microsoft Teams с помощью платформы Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 4af4d34ffa4581be6e69f6233d3eb356aa6a2a08
-ms.sourcegitcommit: 52732714105fac07c331cd31e370a9685f45d3e1
+ms.openlocfilehash: 73cbd4f68d8878872147bd412972495de1b5de6e
+ms.sourcegitcommit: d3bb4bbcdff9545c9869647dcdbe563a2db868be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46874886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47964573"
 ---
 # <a name="building-for-microsoft-teams"></a>Создание для Microsoft Teams
 
 Приложения Microsoft Teams обеспечивают ключевые сведения, общие инструменты и надежные процессы, где люди все еще собирают, изученируют и работают.
 
-Приложения — это то, как вы расширяете Teams в соответствии со своими потребностями. Вы можете создать новую фирменную символику для Teams или просто интегрировать функции в избранные приложения и службы.
+Приложения — это то, как вы расширяете Teams в соответствии со своими потребностями. Создание новой фирменной символики для Teams или интеграция существующего приложения.
 
-## <a name="what-can-teams-apps-do"></a>Что могут делать приложения Teams?
+## <a name="what-are-teams-apps"></a>Что такое приложения Teams?
 
 Люди обнаруживают и используют приложения Teams через набор [возможностей](capabilities-overview.md)платформы.
 
 Некоторые приложения просты (уведомления об отправке), а другие — сложным (Просмотр записей пациента). При планировании приложения помните, что Teams — это центр для совместной работы. Лучшие приложения Teams помогают людям выразить себя и лучше работают вместе.
 
-### <a name="get-information-more-conveniently"></a>Более удобное получение информации
+:::row:::
+   :::column span="":::
 
-Иногда вам нужно просто упростить поиск. Отображение важной веб-страницы на [вкладке](doc-links/what-are-tabs.md), которая предоставляет полноэкранный веб-интерфейс для статического и динамического контента в Teams.
+### <a name="tabs"></a>Вкладки
 
-![Концептуальное представление вкладок, которые выглядят как в клиенте Teams.](doc-links/images/overview-tabs.png)
+**Более удобное для получения сведений**: иногда вам нужно просто упростить поиск. Отображение важной веб-страницы на [вкладке](../tabs/what-are-tabs.md), которая предоставляет полноэкранный веб-интерфейс для статического и динамического контента в Teams.
 
-### <a name="share-links-without-switching-context"></a>Совместное использование ссылок без переключения контекста
+:::image type="content" source="doc-links/images/overview-tabs.png" alt-text="Концептуальное представление вкладок, которые выглядят как в клиенте Teams." border="false":::
 
-Извлекать информацию в беседу и никогда не оставлять Teams. Например, с [расширениями обмена сообщениями](doc-links/what-are-messaging-extensions.md) вы можете поделиться богатыми и легко дижестибле контентом из внешней системы с помощью поля "Создание сообщения".
+   :::column-end:::
+   :::column span="":::
 
-![Концептуальное представление расширений обмена сообщениями, которые выглядят как в клиенте Teams](doc-links\images\overview-messaging.png)
+### <a name="messaging-extensions"></a>расширения для обмена сообщениями;
 
-### <a name="turn-words-into-actions"></a>Включение слов в действия
+**Упрощение задач**: благодаря [расширениям обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)вы можете быстро поделиться внешними сведениями в беседе. Кроме того, можно выполнить действия с сообщением, например создать билет справки на основе контента канала POST.
 
-Беседы часто приводят к необходимости выполнения каких-либо действий (создание заказа, просмотр кода и т. д.). С помощью [Bot](doc-links/what-are-bots.md) можно запускать эти рабочие процессы прямо в Teams.
+:::image type="content" source="doc-links/images/overview-messaging.png" alt-text="Концептуальное представление расширений обмена сообщениями в клиенте Teams выглядит как." border="false":::
 
-![Концептуальное представление того, как боты выглядит в клиенте Teams](doc-links/images/overview-bots.png)
+   :::column-end:::
+:::row-end:::
 
-### <a name="communicate-with-external-apps-and-services"></a>Обмен данными с внешними приложениями и службами
+:::row:::
+   :::column span="":::
 
-[Входящие веб-перехватчики](doc-links/what-are-webhooks-and-connectors.md#incoming-webhooks) это простой способ автоматически отправлять оповещения из другого приложения в канал команд или чат. С помощью [исходящих веб-перехватчиков](doc-links/what-are-webhooks-and-connectors.md#outgoing-webhooks)вы можете отправить сообщение в веб-службу с помощью @mention.
+### <a name="bots"></a>Боты
 
-![Концептуальное представление соединителей, имеющих вид в клиенте Teams.](doc-links/images/overview-connectors.png)
+**Включение слов в действия**: беседы часто приводят к необходимости выполнять какие-либо действия (создание заказа, просмотр кода, проверка состояния билета и т. д.). С помощью [Bot](../bots/what-are-bots.md) можно запускать эти рабочие процессы прямо в Teams.
 
-### <a name="utilize-teams-data"></a>Использование данных Teams
+:::image type="content" source="doc-links/images/overview-bots.png" alt-text="Концептуальное представление того, как боты выглядит в клиенте Teams." border="false":::
 
-[REST API Microsoft Graph для Teams](https://docs.microsoft.com/graph/teams-concept-overview) предоставляет доступ к сведениям о командах, каналах, пользователях и сообщениях, которые помогут вам создать или улучшить возможности приложения.
+   :::column-end:::
+   :::column span="":::
 
-!["Концептуальное представление REST API Microsoft Graph для Teams](doc-links/images/overview-graph.png)
-  
-## <a name="start-building"></a>Начало создания
+### <a name="webhooks"></a>веб-перехватчики
 
-   Быстро ознакомьтесь со сборкой для Teams, создав простое приложение и добавив пару часто используемых возможностей.
+**Обмен данными с внешними приложениями**: [Входящие веб-перехватчики](../webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) это простой способ автоматически отправлять уведомления из другого приложения в канал Teams. С [исходящими веб-перехватчиками](../webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks)запросите у веб-службы @mention.
+
+:::image type="content" source="doc-links/images/overview-connectors.png" alt-text="Концептуальное представление соединителей, имеющих вид в клиенте Teams." border="false":::
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+
+### <a name="microsoft-graph-for-teams"></a>Microsoft Graph для Teams
+
+**Использование данных Teams**: [REST API Microsoft Graph для Teams](https://docs.microsoft.com/graph/teams-concept-overview) предоставляет доступ к сведениям о Teams, каналах, пользователях и сообщениях, которые помогут вам создать или улучшить возможности приложения.
+
+:::image type="content" source="doc-links/images/overview-graph.png" alt-text="Концептуальное представление REST API Microsoft Graph для Teams." border="false":::
+
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
+
+## <a name="get-started"></a>Начало работы
+
+Вы можете перейти непосредственно к нашим первым руководствам по приложениям, узнать, как интегрировать и импортировать существующие приложения, или познакомиться со временем жизненного цикла разработки приложений Teams.
+
+:::row:::
+   :::column span="2":::
+
+### <a name="start-building"></a>Начало создания
+
+   Быстро ознакомьтесь со сборкой для Teams, создав простое приложение и добавив некоторые часто используемые возможности.
 
    > [!div class="nextstepaction"]
-   > [Создайте свое первое приложение сейчас](build-your-first-app/build-real-world-app.md)
+   > [Создайте свое первое приложение сейчас](build-your-first-app/building-real-world-app.md)
 
-### <a name="bring-it-all-together"></a>Совместное объединение
+   :::column-end:::
+   :::column span="":::
 
-   Упрощение процессов и рабочих процессов для пользователей путем перехода к избранным веб-приложениям, службам и системам Организации с помощью функций совместной работы в Teams.
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+
+### <a name="integrate-with-teams"></a>Интеграция с Teams
+
+   Функция смешения пользователи любовь о существующем веб-приложении, службе или системе с функциями совместной работы Teams.
 
    > [!div class="nextstepaction"]
-   > [Интеграция существующего приложения](doc-links/integrating-web-apps.md)
+   > [Интеграция существующего приложения](migrating-web-apps.md)
+
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+
+### <a name="a-little-code-goes-a-long-way"></a>Небольшой код проходит много времени
+
+   Вам не нужно быть экспертным программистом, чтобы создать удобное приложение Teams. Попробуйте одно из нескольких решений с небольшим кодом.
+
+   > [!div class="nextstepaction"]
+   > [Создание приложения с небольшим кодом](low-code-solutions.md)
+
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
 
 ### <a name="trust-the-process"></a>Доверие процессу
 
    Узнайте, как весь процесс разработки платформы Teams для эффективного планирования, проектирования, построения и публикации приложения для вашей организации или для любого пользователя.
 
    > [!div class="nextstepaction"]
-   > [Начало планирования приложения](doc-links/extensibility-points.md)
+   > [Начало планирования приложения](../concepts/extensibility-points.md)
 
-### <a name="no-code-no-worries"></a>Нет кода, нет проблем
+   :::column-end:::
+   :::column span="":::
 
-   Вам не нужно быть программистом, чтобы создать отличное приложение. Создайте приложение Teams с минимальным количеством кода, используя платформу Microsoft Power.
-
-   > [!div class="nextstepaction"]
-   > [Импорт приложения Power Platform](doc-links/importing-custom-microsoft-apps.md)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="resources"></a>Ресурсы
 
-* [Добавление на веб-сайт кнопки "общий доступ" в Teams](doc-links/share-to-teams.md)
-* [Система дизайна пользовательского интерфейса Fluent](https://fluentsite.z22.web.core.windows.net/)
-* [Пакет SDK для клиента Microsoft Teams JavaScript](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest)
+* [Добавление на веб-сайт кнопки "общий доступ" в Teams](../concepts/build-and-test/share-to-teams.md)
+* [Система дизайна Fluent](https://fluentsite.z22.web.core.windows.net/)
+* [Пакет SDK для JavaScript Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest&preserve-view=true)
 * [Пакет SDK Bot Framework для JavaScript](https://github.com/Microsoft/botbuilder-js) и [пакет SDK для Bot Framework для .NET](https://github.com/Microsoft/botbuilder-dotnet/)
+* [Публикация приложения в организации или AppSource](../concepts/deploy-and-publish/overview.md)

@@ -1,6 +1,16 @@
 ---
-Title: "Создание личной вкладки с ASP.NET Core" author: лаужан Description: Краткое руководство по созданию настраиваемой вкладки с ядром ASP.NET.
-MS. раздел: Краткое руководство по MS. author: лажануар
+title: Создание личной вкладки с ядром ASP.NET
+author: laujan
+description: Руководство по созданию настраиваемой личной вкладки с ядром ASP.NET.
+ms.topic: quickstart
+ms.author: lajanuar
+ms.openlocfilehash: 21d1de18bfa8b7959cbecfe6eb50430ed8d3f3ec
+ms.sourcegitcommit: d3bb4bbcdff9545c9869647dcdbe563a2db868be
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47964580"
+---
 # <a name="create-a-custom-personal-tab-with-aspnet-core"></a>Создание настраиваемой вкладки личных компонентов с ASP.NET
 
 В этом руководстве мы рассмотрим создание настраиваемой вкладки личного уровня с основными страницами Razor для C# и ASP.Net. Мы также используем [Приложение App Studio для Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) , чтобы завершить манифест приложения и развернуть вкладку в Teams.
