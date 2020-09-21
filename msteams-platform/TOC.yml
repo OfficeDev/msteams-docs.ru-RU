@@ -330,6 +330,14 @@
           href: webhooks-and-connectors/how-to/connectors-creating.md
         - name: Отправка сообщений соединителям и веб-перехватчикам
           href: webhooks-and-connectors/how-to/connectors-using.md
+- name: Приложения на собраниях
+  items:
+    - name: Создание приложения
+      items:
+        - name: Диалоговое окно собрания
+          href: apps-in-teams-meetings/designing-in-meeting-dialog.md
+        - name: Вкладка собрания
+          href: apps-in-teams-meetings/designing-in-meeting-tab.md
 - name: REST API Graph для Teams
   items:
     - name: Согласие с определением ресурсов
