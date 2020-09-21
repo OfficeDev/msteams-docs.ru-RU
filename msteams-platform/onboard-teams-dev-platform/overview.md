@@ -1,89 +1,157 @@
 ---
-title: Платформа для разработчиков Teams
+title: Платформа для разработчиков Microsoft Teams
 author: clearab
 description: Общие сведения о том, как разработчики могут расширять и настраивать функции Microsoft Teams с помощью платформы Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 4af4d34ffa4581be6e69f6233d3eb356aa6a2a08
-ms.sourcegitcommit: 52732714105fac07c331cd31e370a9685f45d3e1
+ms.openlocfilehash: 73cbd4f68d8878872147bd412972495de1b5de6e
+ms.sourcegitcommit: d3bb4bbcdff9545c9869647dcdbe563a2db868be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46874886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47964573"
 ---
-# <a name="building-for-microsoft-teams"></a><span data-ttu-id="fec4d-103">Создание для Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="fec4d-103">Building for Microsoft Teams</span></span>
+# <a name="building-for-microsoft-teams"></a><span data-ttu-id="cbdc1-103">Создание для Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="cbdc1-103">Building for Microsoft Teams</span></span>
 
-<span data-ttu-id="fec4d-104">Приложения Microsoft Teams обеспечивают ключевые сведения, общие инструменты и надежные процессы, где люди все еще собирают, изученируют и работают.</span><span class="sxs-lookup"><span data-stu-id="fec4d-104">Microsoft Teams apps bring key information, common tools, and trusted processes to where people increasingly gather, learn, and work.</span></span>
+<span data-ttu-id="cbdc1-104">Приложения Microsoft Teams обеспечивают ключевые сведения, общие инструменты и надежные процессы, где люди все еще собирают, изученируют и работают.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-104">Microsoft Teams apps bring key information, common tools, and trusted processes to where people increasingly gather, learn, and work.</span></span>
 
-<span data-ttu-id="fec4d-105">Приложения — это то, как вы расширяете Teams в соответствии со своими потребностями.</span><span class="sxs-lookup"><span data-stu-id="fec4d-105">Apps are how you extend Teams to fit your needs.</span></span> <span data-ttu-id="fec4d-106">Вы можете создать новую фирменную символику для Teams или просто интегрировать функции в избранные приложения и службы.</span><span class="sxs-lookup"><span data-stu-id="fec4d-106">You can create something brand new for Teams or simply integrate features in your favorite apps and services.</span></span>
+<span data-ttu-id="cbdc1-105">Приложения — это то, как вы расширяете Teams в соответствии со своими потребностями.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-105">Apps are how you extend Teams to fit your needs.</span></span> <span data-ttu-id="cbdc1-106">Создание новой фирменной символики для Teams или интеграция существующего приложения.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-106">Create something brand new for Teams or integrate an existing app.</span></span>
 
-## <a name="what-can-teams-apps-do"></a><span data-ttu-id="fec4d-107">Что могут делать приложения Teams?</span><span class="sxs-lookup"><span data-stu-id="fec4d-107">What can Teams apps do?</span></span>
+## <a name="what-are-teams-apps"></a><span data-ttu-id="cbdc1-107">Что такое приложения Teams?</span><span class="sxs-lookup"><span data-stu-id="cbdc1-107">What are Teams apps?</span></span>
 
-<span data-ttu-id="fec4d-108">Люди обнаруживают и используют приложения Teams через набор [возможностей](capabilities-overview.md)платформы.</span><span class="sxs-lookup"><span data-stu-id="fec4d-108">People discover and use Teams apps through a set of platform [capabilities](capabilities-overview.md).</span></span>
+<span data-ttu-id="cbdc1-108">Люди обнаруживают и используют приложения Teams через набор [возможностей](capabilities-overview.md)платформы.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-108">People discover and use Teams apps through a set of platform [capabilities](capabilities-overview.md).</span></span>
 
-<span data-ttu-id="fec4d-109">Некоторые приложения просты (уведомления об отправке), а другие — сложным (Просмотр записей пациента).</span><span class="sxs-lookup"><span data-stu-id="fec4d-109">Some apps are simple (send notifications), while others are complex (view patient records).</span></span> <span data-ttu-id="fec4d-110">При планировании приложения помните, что Teams — это центр для совместной работы.</span><span class="sxs-lookup"><span data-stu-id="fec4d-110">When planning your app, remember that Teams is a collaboration hub.</span></span> <span data-ttu-id="fec4d-111">Лучшие приложения Teams помогают людям выразить себя и лучше работают вместе.</span><span class="sxs-lookup"><span data-stu-id="fec4d-111">The best Teams apps help people express themselves and work better together.</span></span>
+<span data-ttu-id="cbdc1-109">Некоторые приложения просты (уведомления об отправке), а другие — сложным (Просмотр записей пациента).</span><span class="sxs-lookup"><span data-stu-id="cbdc1-109">Some apps are simple (send notifications), while others are complex (view patient records).</span></span> <span data-ttu-id="cbdc1-110">При планировании приложения помните, что Teams — это центр для совместной работы.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-110">When planning your app, remember that Teams is a collaboration hub.</span></span> <span data-ttu-id="cbdc1-111">Лучшие приложения Teams помогают людям выразить себя и лучше работают вместе.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-111">The best Teams apps help people express themselves and work better together.</span></span>
 
-### <a name="get-information-more-conveniently"></a><span data-ttu-id="fec4d-112">Более удобное получение информации</span><span class="sxs-lookup"><span data-stu-id="fec4d-112">Get information more conveniently</span></span>
+:::row:::
+   :::column span="":::
 
-<span data-ttu-id="fec4d-113">Иногда вам нужно просто упростить поиск.</span><span class="sxs-lookup"><span data-stu-id="fec4d-113">Sometimes you just need to make things easier to find.</span></span> <span data-ttu-id="fec4d-114">Отображение важной веб-страницы на [вкладке](doc-links/what-are-tabs.md), которая предоставляет полноэкранный веб-интерфейс для статического и динамического контента в Teams.</span><span class="sxs-lookup"><span data-stu-id="fec4d-114">Display an important webpage in a [tab](doc-links/what-are-tabs.md), which provides a full-screen web experience for static and dynamic content in Teams.</span></span>
+### <a name="tabs"></a><span data-ttu-id="cbdc1-112">Вкладки</span><span class="sxs-lookup"><span data-stu-id="cbdc1-112">Tabs</span></span>
 
-![Концептуальное представление вкладок, которые выглядят как в клиенте Teams.](doc-links/images/overview-tabs.png)
+<span data-ttu-id="cbdc1-113">**Более удобное для получения сведений**: иногда вам нужно просто упростить поиск.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-113">**Get information more conveniently**: Sometimes you just need to make things easier to find.</span></span> <span data-ttu-id="cbdc1-114">Отображение важной веб-страницы на [вкладке](../tabs/what-are-tabs.md), которая предоставляет полноэкранный веб-интерфейс для статического и динамического контента в Teams.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-114">Display an important webpage in a [tab](../tabs/what-are-tabs.md), which provides a full-screen web experience for static and dynamic content in Teams.</span></span>
 
-### <a name="share-links-without-switching-context"></a><span data-ttu-id="fec4d-116">Совместное использование ссылок без переключения контекста</span><span class="sxs-lookup"><span data-stu-id="fec4d-116">Share links without switching context</span></span>
+:::image type="content" source="doc-links/images/overview-tabs.png" alt-text="Концептуальное представление вкладок, которые выглядят как в клиенте Teams." border="false":::
 
-<span data-ttu-id="fec4d-117">Извлекать информацию в беседу и никогда не оставлять Teams.</span><span class="sxs-lookup"><span data-stu-id="fec4d-117">Pull information into a conversation and never leave Teams.</span></span> <span data-ttu-id="fec4d-118">Например, с [расширениями обмена сообщениями](doc-links/what-are-messaging-extensions.md) вы можете поделиться богатыми и легко дижестибле контентом из внешней системы с помощью поля "Создание сообщения".</span><span class="sxs-lookup"><span data-stu-id="fec4d-118">For example, with [messaging extensions](doc-links/what-are-messaging-extensions.md) you can share rich, easily digestible content from an external system using the message compose box.</span></span>
+   :::column-end:::
+   :::column span="":::
 
-![Концептуальное представление расширений обмена сообщениями, которые выглядят как в клиенте Teams](doc-links\images\overview-messaging.png)
+### <a name="messaging-extensions"></a><span data-ttu-id="cbdc1-116">расширения для обмена сообщениями;</span><span class="sxs-lookup"><span data-stu-id="cbdc1-116">Messaging extensions</span></span>
 
-### <a name="turn-words-into-actions"></a><span data-ttu-id="fec4d-120">Включение слов в действия</span><span class="sxs-lookup"><span data-stu-id="fec4d-120">Turn words into actions</span></span>
+<span data-ttu-id="cbdc1-117">**Упрощение задач**: благодаря [расширениям обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)вы можете быстро поделиться внешними сведениями в беседе.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-117">**Make it easier to multitask**: With [messaging extensions](../messaging-extensions/what-are-messaging-extensions.md), you can quickly share external information in a conversation.</span></span> <span data-ttu-id="cbdc1-118">Кроме того, можно выполнить действия с сообщением, например создать билет справки на основе контента канала POST.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-118">You also can act on a message, such as creating a help ticket based on the content of a channel post.</span></span>
 
-<span data-ttu-id="fec4d-121">Беседы часто приводят к необходимости выполнения каких-либо действий (создание заказа, просмотр кода и т. д.).</span><span class="sxs-lookup"><span data-stu-id="fec4d-121">Conversations often result in the need to do something (create an order, review my code, etc.).</span></span> <span data-ttu-id="fec4d-122">С помощью [Bot](doc-links/what-are-bots.md) можно запускать эти рабочие процессы прямо в Teams.</span><span class="sxs-lookup"><span data-stu-id="fec4d-122">A [bot](doc-links/what-are-bots.md) can kick off these kinds of workflows right inside Teams.</span></span>
+:::image type="content" source="doc-links/images/overview-messaging.png" alt-text="Концептуальное представление расширений обмена сообщениями в клиенте Teams выглядит как." border="false":::
 
-![Концептуальное представление того, как боты выглядит в клиенте Teams](doc-links/images/overview-bots.png)
+   :::column-end:::
+:::row-end:::
 
-### <a name="communicate-with-external-apps-and-services"></a><span data-ttu-id="fec4d-124">Обмен данными с внешними приложениями и службами</span><span class="sxs-lookup"><span data-stu-id="fec4d-124">Communicate with external apps and services</span></span>
+:::row:::
+   :::column span="":::
 
-<span data-ttu-id="fec4d-125">[Входящие веб-перехватчики](doc-links/what-are-webhooks-and-connectors.md#incoming-webhooks) это простой способ автоматически отправлять оповещения из другого приложения в канал команд или чат.</span><span class="sxs-lookup"><span data-stu-id="fec4d-125">[Incoming webhooks](doc-links/what-are-webhooks-and-connectors.md#incoming-webhooks) are a simple way to automatically send alerts from another app to a Teams channel or chat.</span></span> <span data-ttu-id="fec4d-126">С помощью [исходящих веб-перехватчиков](doc-links/what-are-webhooks-and-connectors.md#outgoing-webhooks)вы можете отправить сообщение в веб-службу с помощью @mention.</span><span class="sxs-lookup"><span data-stu-id="fec4d-126">With [outgoing webhooks](doc-links/what-are-webhooks-and-connectors.md#outgoing-webhooks), you can send a message to your web service with an @mention.</span></span>
+### <a name="bots"></a><span data-ttu-id="cbdc1-120">Боты</span><span class="sxs-lookup"><span data-stu-id="cbdc1-120">Bots</span></span>
 
-![Концептуальное представление соединителей, имеющих вид в клиенте Teams.](doc-links/images/overview-connectors.png)
+<span data-ttu-id="cbdc1-121">**Включение слов в действия**: беседы часто приводят к необходимости выполнять какие-либо действия (создание заказа, просмотр кода, проверка состояния билета и т. д.).</span><span class="sxs-lookup"><span data-stu-id="cbdc1-121">**Turn words into actions**: Conversations often result in the need to do something (generate an order, review my code, check ticket status, etc.).</span></span> <span data-ttu-id="cbdc1-122">С помощью [Bot](../bots/what-are-bots.md) можно запускать эти рабочие процессы прямо в Teams.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-122">A [bot](../bots/what-are-bots.md) can kick off these kinds of workflows right inside Teams.</span></span>
 
-### <a name="utilize-teams-data"></a><span data-ttu-id="fec4d-128">Использование данных Teams</span><span class="sxs-lookup"><span data-stu-id="fec4d-128">Utilize Teams data</span></span>
+:::image type="content" source="doc-links/images/overview-bots.png" alt-text="Концептуальное представление того, как боты выглядит в клиенте Teams." border="false":::
 
-<span data-ttu-id="fec4d-129">[REST API Microsoft Graph для Teams](https://docs.microsoft.com/graph/teams-concept-overview) предоставляет доступ к сведениям о командах, каналах, пользователях и сообщениях, которые помогут вам создать или улучшить возможности приложения.</span><span class="sxs-lookup"><span data-stu-id="fec4d-129">The [Microsoft Graph REST API for Teams](https://docs.microsoft.com/graph/teams-concept-overview) provides access to information about teams, channels, users, and messages that can help you create or enhance features for your app.</span></span>
+   :::column-end:::
+   :::column span="":::
 
-!["Концептуальное представление REST API Microsoft Graph для Teams](doc-links/images/overview-graph.png)
-  
-## <a name="start-building"></a><span data-ttu-id="fec4d-131">Начало создания</span><span class="sxs-lookup"><span data-stu-id="fec4d-131">Start building</span></span>
+### <a name="webhooks"></a><span data-ttu-id="cbdc1-124">веб-перехватчики</span><span class="sxs-lookup"><span data-stu-id="cbdc1-124">Webhooks</span></span>
 
-   <span data-ttu-id="fec4d-132">Быстро ознакомьтесь со сборкой для Teams, создав простое приложение и добавив пару часто используемых возможностей.</span><span class="sxs-lookup"><span data-stu-id="fec4d-132">Quickly familiarize yourself with building for Teams by creating a simple app and adding a couple commonly used capabilities.</span></span>
+<span data-ttu-id="cbdc1-125">**Обмен данными с внешними приложениями**: [Входящие веб-перехватчики](../webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) это простой способ автоматически отправлять уведомления из другого приложения в канал Teams.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-125">**Communicate with external apps**: [Incoming webhooks](../webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) are a simple way to automatically send notifications from another app to a Teams channel.</span></span> <span data-ttu-id="cbdc1-126">С [исходящими веб-перехватчиками](../webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks)запросите у веб-службы @mention.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-126">With [outgoing webhooks](../webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks), message your web service with an @mention.</span></span>
+
+:::image type="content" source="doc-links/images/overview-connectors.png" alt-text="Концептуальное представление соединителей, имеющих вид в клиенте Teams." border="false":::
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+
+### <a name="microsoft-graph-for-teams"></a><span data-ttu-id="cbdc1-128">Microsoft Graph для Teams</span><span class="sxs-lookup"><span data-stu-id="cbdc1-128">Microsoft Graph for Teams</span></span>
+
+<span data-ttu-id="cbdc1-129">**Использование данных Teams**: [REST API Microsoft Graph для Teams](https://docs.microsoft.com/graph/teams-concept-overview) предоставляет доступ к сведениям о Teams, каналах, пользователях и сообщениях, которые помогут вам создать или улучшить возможности приложения.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-129">**Utilize Teams data**: The [Microsoft Graph REST API for Teams](https://docs.microsoft.com/graph/teams-concept-overview) provides access to information about teams, channels, users, and messages that can help you create or enhance features for your app.</span></span>
+
+:::image type="content" source="doc-links/images/overview-graph.png" alt-text="Концептуальное представление REST API Microsoft Graph для Teams." border="false":::
+
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
+
+## <a name="get-started"></a><span data-ttu-id="cbdc1-131">Начало работы</span><span class="sxs-lookup"><span data-stu-id="cbdc1-131">Get started</span></span>
+
+<span data-ttu-id="cbdc1-132">Вы можете перейти непосредственно к нашим первым руководствам по приложениям, узнать, как интегрировать и импортировать существующие приложения, или познакомиться со временем жизненного цикла разработки приложений Teams.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-132">Jump right in with our first app tutorials, find out how to integrate and import existing apps, or take your time to learn about the Teams app development lifecycle.</span></span>
+
+:::row:::
+   :::column span="2":::
+
+### <a name="start-building"></a><span data-ttu-id="cbdc1-133">Начало создания</span><span class="sxs-lookup"><span data-stu-id="cbdc1-133">Start building</span></span>
+
+   <span data-ttu-id="cbdc1-134">Быстро ознакомьтесь со сборкой для Teams, создав простое приложение и добавив некоторые часто используемые возможности.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-134">Quickly familiarize yourself with building for Teams by creating a simple app and adding some commonly used capabilities.</span></span>
 
    > [!div class="nextstepaction"]
-   > [<span data-ttu-id="fec4d-133">Создайте свое первое приложение сейчас</span><span class="sxs-lookup"><span data-stu-id="fec4d-133">Build your first app now</span></span>](build-your-first-app/build-real-world-app.md)
+   > [<span data-ttu-id="cbdc1-135">Создайте свое первое приложение сейчас</span><span class="sxs-lookup"><span data-stu-id="cbdc1-135">Build your first app now</span></span>](build-your-first-app/building-real-world-app.md)
 
-### <a name="bring-it-all-together"></a><span data-ttu-id="fec4d-134">Совместное объединение</span><span class="sxs-lookup"><span data-stu-id="fec4d-134">Bring it all together</span></span>
+   :::column-end:::
+   :::column span="":::
 
-   <span data-ttu-id="fec4d-135">Упрощение процессов и рабочих процессов для пользователей путем перехода к избранным веб-приложениям, службам и системам Организации с помощью функций совместной работы в Teams.</span><span class="sxs-lookup"><span data-stu-id="fec4d-135">Simplify processes and workflows for users by blending your organization's favorite web apps, services, and systems with Teams collaborative features.</span></span>
+   :::column-end:::
+:::row-end:::
 
-   > [!div class="nextstepaction"]
-   > [<span data-ttu-id="fec4d-136">Интеграция существующего приложения</span><span class="sxs-lookup"><span data-stu-id="fec4d-136">Integrate an existing app</span></span>](doc-links/integrating-web-apps.md)
+:::row:::
+   :::column span="2":::
 
-### <a name="trust-the-process"></a><span data-ttu-id="fec4d-137">Доверие процессу</span><span class="sxs-lookup"><span data-stu-id="fec4d-137">Trust the process</span></span>
+### <a name="integrate-with-teams"></a><span data-ttu-id="cbdc1-136">Интеграция с Teams</span><span class="sxs-lookup"><span data-stu-id="cbdc1-136">Integrate with Teams</span></span>
 
-   <span data-ttu-id="fec4d-138">Узнайте, как весь процесс разработки платформы Teams для эффективного планирования, проектирования, построения и публикации приложения для вашей организации или для любого пользователя.</span><span class="sxs-lookup"><span data-stu-id="fec4d-138">Understand the entire Teams platform development process to effectively plan, design, build, and publish an app for your organization or anyone.</span></span>
-
-   > [!div class="nextstepaction"]
-   > [<span data-ttu-id="fec4d-139">Начало планирования приложения</span><span class="sxs-lookup"><span data-stu-id="fec4d-139">Start planning your app</span></span>](doc-links/extensibility-points.md)
-
-### <a name="no-code-no-worries"></a><span data-ttu-id="fec4d-140">Нет кода, нет проблем</span><span class="sxs-lookup"><span data-stu-id="fec4d-140">No code, no worries</span></span>
-
-   <span data-ttu-id="fec4d-141">Вам не нужно быть программистом, чтобы создать отличное приложение.</span><span class="sxs-lookup"><span data-stu-id="fec4d-141">You don't need to be a programmer to build a great app.</span></span> <span data-ttu-id="fec4d-142">Создайте приложение Teams с минимальным количеством кода, используя платформу Microsoft Power.</span><span class="sxs-lookup"><span data-stu-id="fec4d-142">Create a Teams app with little to no code using the Microsoft Power Platform.</span></span>
+   <span data-ttu-id="cbdc1-137">Функция смешения пользователи любовь о существующем веб-приложении, службе или системе с функциями совместной работы Teams.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-137">Blend the features users love about an existing web app, service, or system with the collaborative features of Teams.</span></span>
 
    > [!div class="nextstepaction"]
-   > [<span data-ttu-id="fec4d-143">Импорт приложения Power Platform</span><span class="sxs-lookup"><span data-stu-id="fec4d-143">Import a Power Platform app</span></span>](doc-links/importing-custom-microsoft-apps.md)
+   > [<span data-ttu-id="cbdc1-138">Интеграция существующего приложения</span><span class="sxs-lookup"><span data-stu-id="cbdc1-138">Integrate an existing app</span></span>](migrating-web-apps.md)
 
-## <a name="resources"></a><span data-ttu-id="fec4d-144">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="fec4d-144">Resources</span></span>
+   :::column-end:::
+   :::column span="":::
 
-* [<span data-ttu-id="fec4d-145">Добавление на веб-сайт кнопки "общий доступ" в Teams</span><span class="sxs-lookup"><span data-stu-id="fec4d-145">Add a Share to Teams button to your website</span></span>](doc-links/share-to-teams.md)
-* [<span data-ttu-id="fec4d-146">Система дизайна пользовательского интерфейса Fluent</span><span class="sxs-lookup"><span data-stu-id="fec4d-146">Fluent UI Design System</span></span>](https://fluentsite.z22.web.core.windows.net/)
-* [<span data-ttu-id="fec4d-147">Пакет SDK для клиента Microsoft Teams JavaScript</span><span class="sxs-lookup"><span data-stu-id="fec4d-147">Microsoft Teams JavaScript client SDK</span></span>](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest)
-* <span data-ttu-id="fec4d-148">[Пакет SDK Bot Framework для JavaScript](https://github.com/Microsoft/botbuilder-js) и [пакет SDK для Bot Framework для .NET](https://github.com/Microsoft/botbuilder-dotnet/)</span><span class="sxs-lookup"><span data-stu-id="fec4d-148">[Bot Framework SDK for JavaScript](https://github.com/Microsoft/botbuilder-js) and [Bot Framework SDK for .NET](https://github.com/Microsoft/botbuilder-dotnet/)</span></span>
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+
+### <a name="a-little-code-goes-a-long-way"></a><span data-ttu-id="cbdc1-139">Небольшой код проходит много времени</span><span class="sxs-lookup"><span data-stu-id="cbdc1-139">A little code goes a long way</span></span>
+
+   <span data-ttu-id="cbdc1-140">Вам не нужно быть экспертным программистом, чтобы создать удобное приложение Teams.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-140">You don't need to be an expert programmer to build a great Teams app.</span></span> <span data-ttu-id="cbdc1-141">Попробуйте одно из нескольких решений с небольшим кодом.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-141">Try one of several low-code solutions.</span></span>
+
+   > [!div class="nextstepaction"]
+   > [<span data-ttu-id="cbdc1-142">Создание приложения с небольшим кодом</span><span class="sxs-lookup"><span data-stu-id="cbdc1-142">Create a low-code app</span></span>](low-code-solutions.md)
+
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+
+### <a name="trust-the-process"></a><span data-ttu-id="cbdc1-143">Доверие процессу</span><span class="sxs-lookup"><span data-stu-id="cbdc1-143">Trust the process</span></span>
+
+   <span data-ttu-id="cbdc1-144">Узнайте, как весь процесс разработки платформы Teams для эффективного планирования, проектирования, построения и публикации приложения для вашей организации или для любого пользователя.</span><span class="sxs-lookup"><span data-stu-id="cbdc1-144">Learn the entire Teams platform development process to effectively plan, design, build, and publish an app for your organization or anyone.</span></span>
+
+   > [!div class="nextstepaction"]
+   > [<span data-ttu-id="cbdc1-145">Начало планирования приложения</span><span class="sxs-lookup"><span data-stu-id="cbdc1-145">Start planning your app</span></span>](../concepts/extensibility-points.md)
+
+   :::column-end:::
+   :::column span="":::
+
+   :::column-end:::
+:::row-end:::
+
+## <a name="resources"></a><span data-ttu-id="cbdc1-146">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="cbdc1-146">Resources</span></span>
+
+* [<span data-ttu-id="cbdc1-147">Добавление на веб-сайт кнопки "общий доступ" в Teams</span><span class="sxs-lookup"><span data-stu-id="cbdc1-147">Add a Share to Teams button to your website</span></span>](../concepts/build-and-test/share-to-teams.md)
+* [<span data-ttu-id="cbdc1-148">Система дизайна Fluent</span><span class="sxs-lookup"><span data-stu-id="cbdc1-148">Fluent Design System</span></span>](https://fluentsite.z22.web.core.windows.net/)
+* [<span data-ttu-id="cbdc1-149">Пакет SDK для JavaScript Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="cbdc1-149">Microsoft Teams JavaScript SDK</span></span>](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest&preserve-view=true)
+* <span data-ttu-id="cbdc1-150">[Пакет SDK Bot Framework для JavaScript](https://github.com/Microsoft/botbuilder-js) и [пакет SDK для Bot Framework для .NET](https://github.com/Microsoft/botbuilder-dotnet/)</span><span class="sxs-lookup"><span data-stu-id="cbdc1-150">[Bot Framework SDK for JavaScript](https://github.com/Microsoft/botbuilder-js) and [Bot Framework SDK for .NET](https://github.com/Microsoft/botbuilder-dotnet/)</span></span>
+* [<span data-ttu-id="cbdc1-151">Публикация приложения в организации или AppSource</span><span class="sxs-lookup"><span data-stu-id="cbdc1-151">Publish your app to an organization or AppSource</span></span>](../concepts/deploy-and-publish/overview.md)
