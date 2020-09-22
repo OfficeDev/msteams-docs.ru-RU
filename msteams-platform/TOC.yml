@@ -31,6 +31,16 @@
           href: toolkit/visual-studio-code-overview.md
         - name: "Расширение набора средств Teams для Visual\_Studio"
           href: toolkit/visual-studio-overview.md
+- name: Приложения на собраниях
+  items:
+    - name: Приложения Teams на собраниях
+      href: apps-in-teams-meetings/teams-apps-in-meetings.md
+    - name: Создание приложений для собраний групп
+      href: apps-in-teams-meetings/create-apps-for-teams-meetings.md
+    - name: Создание диалогового окна собрания
+      href: apps-in-teams-meetings/designing-in-meeting-dialog.md
+    - name: Создание вкладки собрания
+      href: apps-in-teams-meetings/designing-in-meeting-tab.md
 - name: Концепции
   expanded: true
   items:
