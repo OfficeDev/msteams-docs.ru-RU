@@ -1,17 +1,17 @@
 ---
-title: Разработка диалогового окна собраний Microsoft Teams
+title: Создание диалогового окна собраний Microsoft Teams
 author: heath-hamilton
 description: Рекомендации и рекомендации по разработке диалогового окна для собраний в Microsoft Teams.
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 449e6cdf9aecefba9fe70099c961ab56955306f8
-ms.sourcegitcommit: aabfd65a67e1889ec16f09476bc757dd4a46ec5b
+ms.openlocfilehash: 8e9671d8d284311d3d0a299573d3f0e08b195e97
+ms.sourcegitcommit: b01986739a05c65094618fbe76aeb53d038b1c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48098112"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48178332"
 ---
-# <a name="designing-an-in-meeting-dialog"></a>Разработка диалогового окна для собраний
+# <a name="design-an-in-meeting-dialog"></a>Создание диалогового окна для собраний
 
 Диалоговые окна для собраний отображаются на этапе собрания Teams. Для них требуется вмешательство пользователя, подтверждение или участие, но они не прерывают собрание.
 

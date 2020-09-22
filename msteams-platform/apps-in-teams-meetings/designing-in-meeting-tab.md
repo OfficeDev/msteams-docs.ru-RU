@@ -1,17 +1,17 @@
 ---
-title: Разработка вкладки Microsoft Teams на собрании
+title: Создание вкладки Microsoft Teams на собрании
 author: heath-hamilton
 description: Рекомендации и рекомендации по разработке вкладки "в собрании" для Microsoft Teams.
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: ec095654f4a0816478b1b32a45c931d74dbb3209
-ms.sourcegitcommit: aabfd65a67e1889ec16f09476bc757dd4a46ec5b
+ms.openlocfilehash: 91981ab79c8e50483568dd0dc750b4e9b3fdef24
+ms.sourcegitcommit: b01986739a05c65094618fbe76aeb53d038b1c74
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48098076"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48178325"
 ---
-# <a name="designing-an-in-meeting-tab"></a>Разработка вкладки "на собрание"
+# <a name="design-an-in-meeting-tab"></a>Создание вкладки "на собрание"
 
 Вкладка "в собрании" это холст для расширения совместной работы во время собраний. В зависимости от возможности вкладки Teams участники могут просматривать содержимое приложения и взаимодействовать с ним в выделенном пространстве за пределами этапа собрания с помощью общих представлений или представлений на основе ролей.
 
