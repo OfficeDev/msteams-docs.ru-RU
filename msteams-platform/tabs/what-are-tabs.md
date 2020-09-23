@@ -4,12 +4,12 @@ author: laujan
 description: Обзор настраиваемых вкладок на платформе Teams
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: c9e76d13c96c48f88b555b3d740912017a8b2d0a
-ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
+ms.openlocfilehash: 67b509e7d4f71fe6b597a22bb9141f51dc8284ab
+ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47818880"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48209776"
 ---
 # <a name="what-are-microsoft-teams-custom-tabs"></a>Что такое настраиваемые вкладки Microsoft Teams?
 
@@ -55,4 +55,4 @@ ms.locfileid: "47818880"
 
 ## <a name="mobile-clients"></a>Мобильные приложения
 
-Если вы хотите, чтобы вкладка "ваш канал/группа" или "личные" отображались в клиентах Teams, `setSettings()` конфигурация должна иметь значение `websiteUrl` Свойства. Чтобы обеспечить оптимальное взаимодействие с пользователем, при создании вкладок следуйте указаниям [для вкладок на странице Мобильный телефон](~/tabs/design/tabs-mobile.md) .
+Если вкладка канал и группа отображается в клиентах Teams для мобильных устройств, то `setSettings()` для свойства должно быть задано значение `websiteUrl` . Чтобы обеспечить оптимальное взаимодействие с пользователем, при создании вкладок следуйте указаниям [для вкладок на странице Мобильный телефон](~/tabs/design/tabs-mobile.md) .

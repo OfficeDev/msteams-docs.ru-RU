@@ -1,15 +1,15 @@
 ---
-title: Разработка эффективных карточек
+title: Проектирование эффективных карточек
 description: Описывает рекомендации по проектированию для создания карточек.
 keywords: рекомендации по проектированию Teams ссылаются на карточки платформы, адаптируемые к легковесным
-ms.openlocfilehash: 33ee0b59a3a5a1490d6e2106f8532094ed852598
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 4ec410820e0288d99dacb6944a8096f4f61b9d34
+ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675608"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48209839"
 ---
-# <a name="designing-effective-cards"></a>Разработка эффективных карточек
+# <a name="design-effective-cards"></a>Проектирование эффективных карточек
 
 Карточки — это фрагменты контента, которые можно добавить в беседу с помощью ленты, соединителя или приложения. С помощью карточек с текстом, рисунками и кнопками можно общаться с аудиторией.
 

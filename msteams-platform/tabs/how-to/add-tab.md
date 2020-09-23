@@ -1,16 +1,16 @@
 ---
 title: Расширение приложения Teams с помощью настраиваемой вкладки
 author: laujan
-description: Руководство по созданию вкладки
+description: Создание вкладки для Microsoft Teams с помощью App Studio или вручную.
 keywords: вкладки Teams канал группы настраиваемого канала
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 0434aabc39900e8f8232ae307a5854b2eb3a756d
-ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
+ms.openlocfilehash: 78077a19c8597826ca6d10a7c1c6240fae3f3fbd
+ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47819034"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48209720"
 ---
 # <a name="extend-your-teams-app-with-a-custom-tab"></a>Расширение приложения Teams с помощью настраиваемой вкладки
 
@@ -84,7 +84,7 @@ ms.locfileid: "47819034"
 |`name`|String|128 символов|✔|Отображаемое имя вкладки в интерфейсе канала.|
 |`contentUrl`|String|2048 символов|✔|URL-адрес https://, указывающий на пользовательский интерфейс сущности, который будет отображаться в полотне Teams.|
 |`websiteUrl`|String|2048 символов||URL-адрес https://, указывающий, когда пользователь попытается просмотреть его в браузере.|
-|`scopes`|Массив перечислений|1 |✔|Статические вкладки поддерживают только `personal` область, что означает, что ее можно подготовить только в составе личного приложения.|
+|`scopes`|Массив перечислений|1,1|✔|Статические вкладки поддерживают только `personal` область, что означает, что ее можно подготовить только в составе личного приложения.|
 
 #### <a name="simple-personal-tab-manifest-example"></a>Пример манифеста простой личной вкладки
 
@@ -111,7 +111,7 @@ ms.locfileid: "47819034"
 |---|---|---|---|---|
 |`configurationUrl`|String|2048 символов|✔|Https://URL-адрес страницы конфигурации.|
 |`canUpdateConfiguration`|Boolean|||Значение, указывающее, может ли пользователь обновлять экземпляр конфигурации вкладки после создания. Умолчани `true`|
-|`scopes`|Массив перечислений|1 |✔|Настраиваемые вкладки поддерживают только `team` `groupchat` области и области. |
+|`scopes`|Массив перечислений|1,1|✔|Настраиваемые вкладки поддерживают только `team` `groupchat` области и области. |
 
 #### <a name="simple-channelgroup-tab-manifest-example"></a>Пример манифеста простого канала/группы вкладок
 
