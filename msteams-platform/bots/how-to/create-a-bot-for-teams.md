@@ -5,12 +5,12 @@ description: Как создать бота для Microsoft Teams
 ms.topic: conceptual
 localization_priority: Priority
 ms.author: anclear
-ms.openlocfilehash: b9999fb8fcb39b4cd70789d909fecd9cad13e5d7
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+ms.openlocfilehash: eab1d5b76c4fa534e7a5bbab8572004b9f737a1b
+ms.sourcegitcommit: b01986739a05c65094618fbe76aeb53d038b1c74
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635300"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48178318"
 ---
 # <a name="create-a-bot-for-microsoft-teams"></a>Создание бота для Microsoft Teams
 
@@ -171,7 +171,14 @@ ms.locfileid: "42635300"
 
 ## <a name="upload-your-package-to-microsoft-teams"></a>Отправка пакета в Microsoft Teams
 
+> [!NOTE]
+> Чтобы успешно загрузить бота, ваш администратор клиента должен [разрешить загрузку](/microsoftteams/manage-apps#manage-org-wide-app-settings) сторонних или пользовательских приложений в Teams.
+
 Если вы используете App Studio, можно установить приложение из вкладки **Тестирование и распространение** раздела **Редактор манифеста**. Или можно установить пакет приложения, открыв меню переполнения `...` на панели навигации слева, выбрав **Другие приложения** и щелкнув ссылку **Загрузить пользовательское приложение**. Чтобы внести дополнительные изменения перед отправкой, можно также импортировать манифест или пакет приложения в App Studio.
+
+## <a name="bots-in-teams-meetings"></a>Боты на собраниях Teams
+
+В собраниях в Teams поддерживаются боты. Когда бот получает сообщение вызова, он может определить пользователя и клиента по двум деталям: `userId` и `tenantId`. `meetingId` может быть частью объекта `channelData`. Вы можете использовать `userId` и `meetingId` для запроса к API `GetParticipant`, чтобы получить роли пользователей.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
