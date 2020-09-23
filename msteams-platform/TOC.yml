@@ -1,10 +1,25 @@
 - name: Обзор
   expanded: true
   items:
-    - name: Что такое приложения Microsoft Teams?
+    - name: Создание приложений для Microsoft Teams
       href: overview.md
     - name: Новые возможности
       href: whats-new.md
+- name: Создание первого приложения
+  expanded: true
+  items:
+    - name: Обзор и необходимые условия
+      href: build-your-first-app/build-first-app-overview.md
+    - name: Создание приложения "Hello World!" приложение
+      href: build-your-first-app/build-and-run.md
+    - name: Создание личной вкладки
+      href: build-your-first-app/build-personal-tab.md
+    - name: Создание вкладки канала
+      href: build-your-first-app/build-channel-tab.md
+    - name: Создание бота
+      href: build-your-first-app/build-bot.md
+    - name: Создание расширения для сообщений
+      href: build-your-first-app/build-messaging-extension.md
 - name: Руководства и примеры кода
   items:
     - name: 'Создайте приложение, используя C#'
@@ -15,8 +30,12 @@
       href: tutorials/get-started-yeoman.md
     - name: Сведения о пользовательских приложениях для Teams
       href: tutorials/code-samples.md
-- name: Шаблоны и интеграция
+- name: Интеграция и шаблоны
   items:
+    - name: Интеграция веб-приложений
+      href: samples/integrating-web-apps.md
+    - name: Создание приложений с малым использованием кода
+      href: samples/teams-low-code-solutions.md
     - name: Готовые шаблоны приложений
       href: samples/app-templates.md
     - name: Готовые к работе соединители
@@ -44,11 +63,11 @@
 - name: Концепции
   expanded: true
   items:
-    - name: Разработка приложений для Microsoft Teams
-      href: concepts/building-an-app.md
-    - name: Точки расширения в клиенте Teams
+    - name: Возможности приложений
+      href: concepts/capabilities-overview.md
+    - name: Точки входа приложения
       href: concepts/extensibility-points.md
-    - name: Создайте свое приложение
+    - name: Создание приложения
       items:
         - name: Поймите ваши варианты использования
           href: concepts/design/understand-use-cases.md
@@ -167,17 +186,17 @@
           items:
             - name: Последовательность аутентификации
               href: tabs/how-to/authentication/auth-flow-tab.md
-            - name: Использование аутентификации Azure AD
+            - name: Использование проверки подлинности Azure AD
               href: tabs/how-to/authentication/auth-tab-aad.md
-            - name: Использование тихой аутентификации
+            - name: Использование автоматической проверки подлинности
               href: tabs/how-to/authentication/auth-silent-aad.md
-            - name: Использование единой регистрации
+            - name: Использование проверки подлинности при едином входе
               href: tabs/how-to/authentication/auth-aad-sso.md
         - name: Использование клиентского SDK для Teams
           href: tabs/how-to/using-teams-client-sdk.md
         - name: Получение дополнительного контекста Teams
           href: tabs/how-to/access-teams-context.md
-        - name: Вкладки DevTools для Microsoft Teams
+        - name: DevTools для вкладок Microsoft Teams
           href: tabs/how-to/developer-tools.md
         - name: Добавление пользовательской вкладки в SharePoint
           href: tabs/how-to/tabs-in-sharepoint.md
@@ -248,7 +267,7 @@
           href: bots/calls-and-meetings/calls-meetings-bots-overview.md
         - name: Медиа концепции в реальном времени
           href: bots/calls-and-meetings/real-time-media-concepts.md
-        - name: Регистрация вызывающего бота
+        - name: Регистрация бота вызовов
           href: bots/calls-and-meetings/registering-calling-bot.md
         - name: Уведомления о входящих звонках
           href: bots/calls-and-meetings/call-notifications.md
@@ -311,7 +330,7 @@
       href: task-modules-and-cards/what-are-cards.md
     - name: Карточки
       items:
-        - name: Проектирование эффективных карточек
+        - name: Разработка эффективных карточек
           href: task-modules-and-cards/cards/design-effective-cards.md
         - name: Форматирование текста карточки
           href: task-modules-and-cards/cards/cards-format.md
