@@ -2,12 +2,12 @@
 title: Примеры кода Microsoft Teams
 description: Ссылки и описания примеров приложений для платформы разработчика Microsoft Teams
 keywords: Примеры разработчиков Microsoft Teams
-ms.openlocfilehash: 955588608fde694b163104d0a9e9e94289719003
-ms.sourcegitcommit: 61edf47c9dd1dbc1df03d0d9fb83bfedca4c423b
+ms.openlocfilehash: 7a81494d7808c27c495c660b5d58f7779ba87c83
+ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "44801488"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48237960"
 ---
 # <a name="tutorials-and-code-samples-for-the-microsoft-teams-developer-platform"></a>Учебники и примеры кода для платформы разработчика Microsoft Teams
 
@@ -30,7 +30,7 @@ ms.locfileid: "44801488"
 1. Выберите один из перечисленных ниже проектов и откройте проект в GitHub.
 2. Нажмите кнопку **клонировать или скачать** и скопируйте URL-адрес.
 3. Откройте командную строку в родительском каталоге, в который необходимо установить пример проекта.
-4. Выполняем`git clone <pasted url>`
+4. Выполняем `git clone <pasted url>`
 
 ### <a name="for-netc-samples"></a>Примеры для .NET и C#
 
@@ -55,10 +55,12 @@ ms.locfileid: "44801488"
 
 | Пример | Описание | .NET Core | JavaScript | Python|
 |--------|------------- |---|---|----|
-| Команда поиска | Расширение простого обмена сообщениями с помощью команды поиска | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/50.teams-messaging-extension-search)|
-| Команда Action | Расширение простой системы обмена сообщениями с помощью команды Action. Отклик, вставленный в область сообщения "создание". | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/51.teams-messaging-extensions-action)|
-| Команда Action с откликом от ленты | Расширение системы обмена сообщениями с помощью команды Action. Отклик, вставленный в беседу в беседе с помощью Bot. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/53.teams-messaging-extensions-action-preview)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/53.teams-messaging-extensions-action-preview)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/53.teams-messaging-extensions-action-preview)|
-| Команда поиска | расширение системы обмена сообщениями с помощью команды поиска и проверки подлинности и конфигурации | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/52.teams-messaging-extensions-search-auth-config)|
+| Расширения обмена сообщениями — Поиск | Расширение системы обмена сообщениями, принимающее запросы поиска и возвращающее результаты. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
+| Расширения обмена сообщениями — действие | Расширение системы обмена сообщениями, принимающее параметры и возвращающее карту. Кроме того, способ получения переадресованного сообщения в качестве параметра в расширении обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
+| Расширения обмена сообщениями — проверка подлинности и настройка | Расширение системы обмена сообщениями, имеющее страницу конфигурации, принимает поисковые запросы и возвращает результаты после того, как пользователь выполнил вход. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) |
+| Расширения обмена сообщениями — предварительный просмотр действий | Показано, как создать процесс просмотра и редактирования для расширения обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/53.teams-messaging-extensions-action-preview) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/53.teams-messaging-extensions-action-preview) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/53.teams-messaging-extensions-action-preview) |
+| Развернуть ссылку | Расширение системы обмена сообщениями, выполняющее Link унфурлинг. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/55.teams-link-unfurling) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/55.teams-link-unfurling) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/55.teams-link-unfurling) |
+
 
 ## <a name="outgoing-webhooks"></a>Исходящие веб-перехватчики
 

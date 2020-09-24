@@ -1,16 +1,16 @@
 ---
-title: Создание приложений для собраний в Teams
+title: Создание приложений для собраний групп
 author: laujan
 description: Создание приложений для собраний в Teams
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: 83e0a5b53e363a090935b4afa9840dd96c5f7381
-ms.sourcegitcommit: b01986739a05c65094618fbe76aeb53d038b1c74
+ms.openlocfilehash: 9ead77e3573510bc9c9415c6f3ac9a6e83f23ece
+ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48182037"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48237988"
 ---
 # <a name="create-apps-for-teams-meetings-preview"></a>Создание приложений для собраний в Teams (Предварительная версия)
 
@@ -27,11 +27,11 @@ ms.locfileid: "48182037"
 
 1. Некоторые API собраний, например, `GetParticipant` требуют [регистрации Bot и идентификатора приложения Bot](../bots/how-to/create-a-bot-for-teams.md#with-an-azure-subscription) для создания маркеров проверки подлинности.
 
-1. Разработчикам следует соблюдать общие [рекомендации по проектированию вкладок Teams](../tabs/design/tabs.md) для сценариев, выполняемых перед и после собраний, а также [указания по диалоговому](designing-in-meeting-dialog.md) окну для собраний в диалоговом окне для собраний, инициированном во время собрания Teams.
+1. Разработчикам следует соблюдать общие [рекомендации по проектированию вкладок групп](../tabs/design/tabs.md) для сценариев, выполняемых перед и после собраний, а также во время собраний (см. рекомендации по проектированию [в диалоговых окнах для собраний](../apps-in-teams-meetings/design/designing-in-meeting-dialog.md) и [на вкладках на вкладке собрания](../apps-in-teams-meetings/design/designing-in-meeting-tab.md) ).
 
 ## <a name="meeting-apps-api-reference"></a>Справочные материалы по API приложений для собраний
 
-|API|Описание|Запрос|Source|
+|API|Описание|Запрос|Источник|
 |---|---|----|---|
 |**жетусерконтекст**| Получение контекстной информации для отображения релевантного контента на вкладке "команды". |_**microsoftTeams. SPContext (() => {/*...* / } )**_|Пакет SDK для клиента Microsoft Teams|
 |**В качестве имени участника**|Этот API позволяет интерфейсу Bot получать сведения об участниках по идентификатору собрания и идентификатору участника.|**Получение** _ **/v1/meetings/{meetingId}/Participants/{participantId}? tenantId = {tenantId}**_ |Пакет SDK Microsoft Bot Framework|
@@ -269,7 +269,7 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 
 #### <a name="in-meeting-dialog"></a>**диалоговое окно "в собрании"**
 
-✔ Необходимо следовать [рекомендациям по разработке диалоговых окон для собраний](designing-in-meeting-dialog.md).
+✔ Необходимо следовать [рекомендациям по разработке диалоговых окон для собраний](../apps-in-teams-meetings/design/designing-in-meeting-dialog.md).
 
 ✔ Ссылаться на [процесс проверки подлинности Teams для вкладок](../tabs/how-to/authentication/auth-flow-tab.md).
 

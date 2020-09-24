@@ -5,12 +5,12 @@ description: Обзор приложений в собраниях Teams на о
 ms.topic: overview
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: c1cb894f066ac82b49fe327a3bbf10acf0d750dd
-ms.sourcegitcommit: 71b12e346c43853a99341b13837a44ff9555a5d6
+ms.openlocfilehash: 6af9cac2040a9301ba2bdf64ddbd7857490a679f
+ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204026"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48237890"
 ---
 # <a name="apps-in-teams-meetings-preview"></a>Приложения в собраниях Teams (Предварительная версия)
 
@@ -62,7 +62,9 @@ ms.locfileid: "48204026"
 ✔ Для приложения могут быть видны в собрании Teams в двух областях:
 
 &emsp;&emsp;&#9679; **боковой панели**. </br>
-> **Note**: Если _манифест приложения_ указывает, что вкладка [оптимизирована для боковой панели](create-apps-for-teams-meetings.md#in-meeting), то она будет отображаться. Она также может быть частью интерфейса подающего лоток, в соответствии с указанными рекомендациями по проектированию.
+
+> [!NOTE]
+> Если _манифест приложения_ указывает, что вкладка [оптимизирована для боковой панели](create-apps-for-teams-meetings.md#in-meeting), здесь будет отображаться эта вкладка. Она также может быть частью интерфейса подающего лоток, в соответствии с указанными рекомендациями по проектированию.
 
 &emsp;&emsp;&#9679; **диалоговое окно собраний**. Используйте диалоговое окно "в собрании" для демонстрации действий, выполняемых участниками собрания. *Ознакомьтесь* с разделом [Создание приложений для собраний Teams](create-apps-for-teams-meetings.md).
 
