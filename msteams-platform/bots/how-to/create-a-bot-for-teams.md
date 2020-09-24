@@ -1,16 +1,16 @@
 ---
 title: Создание бота для Microsoft Teams
 author: clearab
-description: Как создать бота для Microsoft Teams
+description: Как создать бота для Microsoft Teams с помощью App Studio, генератора Yeoman и других средств.
 ms.topic: conceptual
 localization_priority: Priority
 ms.author: anclear
-ms.openlocfilehash: eab1d5b76c4fa534e7a5bbab8572004b9f737a1b
-ms.sourcegitcommit: b01986739a05c65094618fbe76aeb53d038b1c74
+ms.openlocfilehash: 03196c32e5e1a4b2714a4c916a71c80fc10a5edc
+ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48178318"
+ms.locfileid: "48209832"
 ---
 # <a name="create-a-bot-for-microsoft-teams"></a>Создание бота для Microsoft Teams
 
@@ -106,7 +106,7 @@ ms.locfileid: "48178318"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`botId`|Строка|64 символа|✔|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Он может совпадать с общим идентификатором приложения.|
+|`botId`|String|64 символа|✔|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Он может совпадать с общим идентификатором приложения.|
 |`needsChannelSelector`|Логический|||Описывает, использует ли бот пользовательское указание для добавления бота в определенный канал. Значение по умолчанию: `false`.|
 |`isNotificationOnly`|Логический|||Указывает, является ли бот односторонним и только для уведомлений, в отличие от бота для беседы. Значение по умолчанию: `false`.|
 |`supportsFiles`|Логический|||Указывает, поддерживает ли бот возможность отправки и скачивания файлов в личном чате. Значение по умолчанию: `false`.|
