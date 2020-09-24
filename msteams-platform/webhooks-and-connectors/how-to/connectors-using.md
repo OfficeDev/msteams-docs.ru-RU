@@ -3,12 +3,12 @@ title: Отправка сообщений соединителям и веб-п
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 localization_priority: Priority
 keywords: соединитель teams o365
-ms.openlocfilehash: 16dbb99add82c26930baf22bfc2c5153fd47b2f1
-ms.sourcegitcommit: 9fbc701a9a039ecdc360aefbe86df52b9c3593f3
+ms.openlocfilehash: bfcee2c00d30517522621f61142324b4f81a93f8
+ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46651651"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48237967"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -154,7 +154,7 @@ ms.locfileid: "46651651"
 
    ```bash
    // on Windows
-   curl.exe -H 'Content-Type: application/json' -d '{"text": "Hello World"}' <YOUR WEBHOOK URL>
+   curl.exe -H "Content-Type:application/json" -d "{'text':'Hello World'}" <YOUR WEBHOOK URL>
    ```
 
 2. В случае успешного выполнения запроса POST команда `curl` должна возвращать простой отклик **1**.
@@ -246,9 +246,10 @@ ms.locfileid: "46651651"
             "type":"AdaptiveCard",
             "version":"1.2",
             "body":[
-               {
-                  "For Samples and Templates, see":"https://adaptivecards.io/samples"
-               }
+                {
+                "type": "TextBlock",
+                "text": "For Samples and Templates, see https://adaptivecards.io/samples](https://adaptivecards.io/samples)",
+                }
             ]
          }
       }
