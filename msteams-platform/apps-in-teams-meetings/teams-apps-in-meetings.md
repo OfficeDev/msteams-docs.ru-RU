@@ -5,12 +5,12 @@ description: Обзор приложений в собраниях Teams на о
 ms.topic: overview
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: 6af9cac2040a9301ba2bdf64ddbd7857490a679f
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+ms.openlocfilehash: b5e649f1630ff6c4a120c4b7aefbac1f5f6df06f
+ms.sourcegitcommit: b51a4982842948336cfabedb63bdf8f72703585e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237890"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279719"
 ---
 # <a name="apps-in-teams-meetings-preview"></a>Приложения в собраниях Teams (Предварительная версия)
 
@@ -129,4 +129,4 @@ _Просмотр_ [ **ролей в собрании Teams**](https://support.m
 ## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
-> [Включение приложений в собраниях Teams] (приложения-в-Teams-meetings/Enable-App-in-Meetings. md
+> [Создание приложений для собраний групп](create-apps-for-teams-meetings.md)

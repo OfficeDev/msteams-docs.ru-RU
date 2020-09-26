@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: 46e18dbe385680fea38c98f4396047a8d10a2b9c
-ms.sourcegitcommit: b3962a7b36f260aef1af9124d14d71ae08b01ac4
+ms.openlocfilehash: dde75b3d8ca921d15f3a24145035d96a7aca86b8
+ms.sourcegitcommit: b51a4982842948336cfabedb63bdf8f72703585e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47303719"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279663"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -18,9 +18,15 @@ ms.locfileid: "47303719"
 
 В журнале изменений перечисляются изменения платформы Microsoft Teams и этого набора документов. Иногда записи можно использовать для привлечения внимания к новой функции, которая представляет собой простой интерес для разработчиков Teams.
 
-| **Date** | **Примечания** | **Измененные разделы** |
+| **Date** | **Notes** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+|09/22/2020|Новое руководство "Приступая к работе с Teams"|[Создание обзора первого приложения Teams](build-your-first-app/build-first-app-overview.md)|
+|9/18/2020|Поддержка для приложений для проведения собраний в Teams (общедоступная Предварительная версия)|[Создание приложений для собраний и приложений для Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) [в собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
+|8/19/2020|Импорт сообщений Teams с помощью Microsoft Graph|[Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](graph-api/import-messages/import-external-messages-to-teams.md)
 | 08/12/2020 |Поддержка адаптивных карточек в входящем веб-перехватчике, перемещенном в "GA".|[Отправка адаптивных карточек с помощью входящего веб-перехватчика](~/webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook) |
+|08/10/2020|Приступите к созданию приложений Teams с помощью набора инструментов Visual Studio.|[Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio](toolkit/visual-studio-overview.md) |
+|08/06/2020|Поддержка проверки подлинности с помощью единого входа|[Разработка вкладки Microsoft Teams единого входа](tabs/how-to/authentication/auth-aad-sso.md#develop-an-sso-microsoft-teams-tab) |
+|07/27/2020 | Активные Боты и сообщения (общедоступная Предварительная версия)|[Включение активной установки и упреждающего обмена сообщениями в Teams с помощью Microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
 | 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](~/tabs/how-to/native-device-permissions.md) |
 |07/20/2020|Средство проверки приложений Teams для отправки AppSource.|[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#teams-app-validation-tool)
 |07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
