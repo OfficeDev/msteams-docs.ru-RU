@@ -157,7 +157,7 @@
       items:
         - name: Обзор дизайна
           href: tabs/design/tabs.md
-        - name: Вкладки на мобильных клиентах
+        - name: Вкладки на мобильных устройствах
           href: tabs/design/tabs-mobile.md
     - name: Практические руководства
       expanded: true
