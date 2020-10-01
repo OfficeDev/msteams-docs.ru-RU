@@ -3,12 +3,12 @@ title: Шаблоны приложений Microsoft Teams
 description: Ссылки и описания шаблонов приложений для платформы Microsoft Teams
 ms.topic: reference
 keywords: Демонстрация примеров шаблонов Microsoft Teams
-ms.openlocfilehash: 1ac0bdcd5e52681ea42483cac04d5da9c34bab12
-ms.sourcegitcommit: b51a4982842948336cfabedb63bdf8f72703585e
+ms.openlocfilehash: a3f9090526a92fba3f6cebe13a973cebeb056889
+ms.sourcegitcommit: e92408e751a8f51028908ab7e2415a8051a536c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279797"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326368"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -67,6 +67,21 @@ Book-a-комната — это [робот Microsoft Teams](../bots/what-are-b
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-bookaroom)
 
 ![Пример книги "a – комната"](../assets/images/book-a-room.png)
+
+## <a name="building-access-9734"></a>&#9734; доступа для построения
+
+Сборка Access — это приложение на основе Microsoft [Power Platform](https://powerapps.microsoft.com/blog/now-in-preview-customize-teams-with-built-in-power-platform-capabilities/), которое поддерживает администрирование пороговых значений для заполнения и норм дистанЦинг, позволяя директорам по управлению, отслеживать и сообщать о присутствии на сайтах сотрудников. Приложение, созданное с помощью Microsoft [Power Apps](/powerapps/powerapps-overview)и [Автоматизация управления питанием](/power-automate/getting-started), глубоко интегрируется с Microsoft Teams и позволяет организациям определять готовность к построению, устанавливать критерии приемлемости для доступа на уровне сайта и собирать ценные сведения для будущего планирования.
+
+[Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-buildingaccess)
+
+:::row:::
+   :::column span="":::
+     ![Построение карточки резервирования Access](../assets/images/building-access-reservation.png)
+   :::column-end:::
+   :::column span="":::
+      ![Представление ключа доступа для построения](../assets/images/building-access-access-key.png)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="celebrations"></a>Праздники
 

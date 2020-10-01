@@ -5,17 +5,17 @@ description: Создание приложений для собраний в Te
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: a489a2a439c8aaacc2900e4c62084f13b34b3e30
-ms.sourcegitcommit: b51a4982842948336cfabedb63bdf8f72703585e
+ms.openlocfilehash: 847e79d188a52892cda8732a2b58cee068cb5e95
+ms.sourcegitcommit: e92408e751a8f51028908ab7e2415a8051a536c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279677"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326307"
 ---
-# <a name="create-apps-for-teams-meetings-preview"></a>Создание приложений для собраний в Teams (Предварительная версия)
+# <a name="create-apps-for-teams-meetings-release-preview"></a>Создание приложений для собраний в Teams (Предварительная версия)
 
 >[!IMPORTANT]
-> Функции, включенные в Microsoft Teams Preview, предоставляются только для целей раннего доступа, тестирования и обратной связи. Они могут быть подвергнуты изменениям, прежде чем стать доступными в общедоступном выпуске и не должны использоваться в рабочих приложениях.
+> Функции, выделенные в выпуске Microsoft Teams Preview, предоставляются только для более ранних целей и отзывов. Они могут быть подвергнуты изменениям, прежде чем их можно будет включить.
 
 ## <a name="prerequisites-and-considerations"></a>Необходимые условия и рекомендации
 
@@ -27,7 +27,7 @@ ms.locfileid: "48279677"
 
 1. Некоторые API собраний, например, `GetParticipant` требуют [регистрации Bot и идентификатора приложения Bot](../bots/how-to/create-a-bot-for-teams.md#with-an-azure-subscription) для создания маркеров проверки подлинности.
 
-1. Разработчикам следует соблюдать общие [рекомендации по проектированию вкладок групп](../tabs/design/tabs.md) для сценариев, выполняемых перед и после собраний, а также во время собраний (см. рекомендации по проектированию [в диалоговых окнах для собраний](../apps-in-teams-meetings/design/designing-in-meeting-dialog.md) и [на вкладках на вкладке собрания](../apps-in-teams-meetings/design/designing-in-meeting-tab.md) ).
+1. Разработчикам следует соблюдать общие [рекомендации по проектированию вкладок Teams](../tabs/design/tabs.md) для сценариев, выполняемых перед и после собраний, а также [указания по диалоговому](design/designing-in-meeting-dialog.md) окну для собраний в диалоговом окне для собраний, инициированном во время собрания Teams.
 
 ## <a name="meeting-apps-api-reference"></a>Справочные материалы по API приложений для собраний
 
@@ -98,11 +98,11 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 
 ```json
 {
-   "meetingRole":"Presenter",
-   "conversation":{
-      "isGroup":true,
-      "id":"19:meeting_NDQxMzg1YjUtMGIzNC00Yjc1LWFmYWYtYzk1MGY2MTMwNjE0@thread.v2"
-   }
+    "meetingRole":"Presenter",
+    "conversation":{
+            "isGroup": true,
+            "id": "19:meeting_NDQxMzg1YjUtMGIzNC00Yjc1LWFmYWYtYzk1MGY2MTMwNjE0@thread.v2"
+        }
 }
 ```
 
@@ -112,10 +112,10 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 
 ```json
 {
-   "meetingRole":"Attendee",
+   "meetingRole":"Presenter",
    "conversation":{
       "isGroup":true,
-      "id":"19:meeting_OWIyYWVhZWMtM2ExMi00ZTc2LTg0OGEtYWNhMTM4MmZlZTNj@thread.v2"
+      "id":"19:meeting_NDQxMzg1YjUtMGIzNC00Yjc1LWFmYWYtYzk1MGY2MTMwNjE0@thread.v2"
    }
 }
 ```
@@ -141,7 +141,7 @@ POST /v3/conversations/{conversationId}/activities
 
 #### <a name="query-parameters"></a>Параметры запроса
 
-**conversationId**: идентификатор беседы. Обязательный
+**conversationId**: идентификатор беседы. Обязательно
 
 #### <a name="request-payload"></a>Полезные данные запроса
 
@@ -149,17 +149,17 @@ POST /v3/conversations/{conversationId}/activities
 
 ```json
 {
-   "type":"message",
-   "text":"John Phillips assigned you a weekly todo",
-   "summary":"Don't forget to meet with Marketing next week",
-   "channelData":{
-      "notification":{
-         "alert":true,
-         "externalResourceUrl":"https://teams.microsoft.com/l/bubble/APP_ID?url=&height=&width=&title=<TaskInfo.title>"
-      }
-   },
-   "replyToId":"1493070356924"
-}
+    "type": "message",
+    "text": "John Phillips assigned you a weekly todo",
+    "summary": "Don't forget to meet with Marketing next week",
+    "channelData": {
+    "notification": {
+    "alertInMeeting": true,
+    "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=&height=&width=&title=<TaskInfo.title>"
+    }
+},
+    "replyToId": "1493070356924"
+    }
 ```
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
@@ -210,6 +210,9 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 
 Возможности приложений для собраний объявляются в манифесте приложения с **configurableTabs**помощью  ->  **областей** конфигураблетабс и **контекстных** массивов. *Область* определяет, для кого и *контекст* определяет, где будет доступно ваше приложение.
 
+> [!NOTE]
+> Используйте [схему манифеста Preview для разработчиков](../resources/schema/manifest-schema-dev-preview.md) , чтобы попробовать это в манифесте приложения.
+
 ```json
 "configurableTabs": [
     {
@@ -232,7 +235,7 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 
 ### <a name="context-property"></a>Свойство Context
 
-Вкладка `context` и `scopes` свойства работают по гармонии, чтобы определить, где должно отображаться ваше приложение. Несмотря на то, `personal` что вкладки в области могут иметь только один контекст, например, `personalTab`  `team` или `groupchat` вкладки с ограниченной областью действия могут иметь несколько контекстов. Для свойства Context возможны следующие значения:
+Вкладка `context` и `scopes` свойства работают по гармонии, чтобы определить, где должно отображаться ваше приложение. Вкладки в `team` `groupchat` области действия могут иметь более одного контекста. Для свойства Context возможны следующие значения:
 
 * **чаннелтаб**: вкладка в заголовке канала команды.
 * **приватечаттаб**: вкладка в заголовке группового чата между набором пользователей, которых нет в контексте команды или собрания.
@@ -257,9 +260,9 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 
 ### <a name="in-meeting"></a>На собрании
 
-#### <a name="side-panel"></a>**Боковая панель**
+#### <a name="sidepanel"></a>**сидепанел**
 
-✔ В манифесте приложения добавьте **сидепанел** в массив **митингсурфацес** , как описано выше.
+✔ В манифесте приложения добавьте **сидепанел** в массив **контекста** , как описано выше.
 
 ✔ На собрании, так же, как и во всех сценариях, приложение будет отображаться на вкладке, расположенной в собрании, 320 пикселей по ширине. Для этого необходимо оптимизировать вкладку. *Просмотр*, [интерфейс фрамеконтекст](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest&preserve-view=true)
 
@@ -269,7 +272,7 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 
 #### <a name="in-meeting-dialog"></a>**диалоговое окно "в собрании"**
 
-✔ Необходимо следовать [рекомендациям по разработке диалоговых окон для собраний](../apps-in-teams-meetings/design/designing-in-meeting-dialog.md).
+✔ Необходимо следовать [рекомендациям по разработке диалоговых окон для собраний](design/designing-in-meeting-dialog.md).
 
 ✔ Ссылаться на [процесс проверки подлинности Teams для вкладок](../tabs/how-to/authentication/auth-flow-tab.md).
 
@@ -278,7 +281,10 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 ✔ Как часть полезных данных запроса уведомления, укажите URL-адрес, по которому размещается контент, предназначенный для демонстрации.
 
 > [!NOTE]
-> Эти уведомления постоянны. Необходимо вызвать функцию [**субмиттаск ()**](../task-modules-and-cards/task-modules/task-modules-bots.md#submitting-the-result-of-a-task-module) для автоматического закрытия после того, как пользователь выполняет действие в веб-представлении. Это требование для отправки приложения. *Раздел* [пакет SDK для teams: Task module](/javascript/api/@microsoft/teams-js/microsoftteams.tasks?view=msteams-client-js-latest#submittask-string---object--string---string---&preserve-view=true).
+>
+> * Эти уведомления постоянны. Необходимо вызвать функцию [**субмиттаск ()**](../task-modules-and-cards/task-modules/task-modules-bots.md#submitting-the-result-of-a-task-module) для автоматического закрытия после того, как пользователь выполняет действие в веб-представлении. Это требование для отправки приложения. *Раздел* [пакет SDK для teams: Task module](/javascript/api/@microsoft/teams-js/microsoftteams.tasks?view=msteams-client-js-latest#submittask-string---object--string---string---&preserve-view=true).
+>
+> * Если вы хотите, чтобы приложение поддерживало анонимных пользователей, полезные данные начального запроса вызова должны полагаться на `from.id`  метаданные запроса (ID пользователя) в `from` объекте, а не на `from.aadObjectId` метаданные запроса (идентификатор Azure Active Directory для пользователя). *Просмотрите раздел* [Использование модулей задач на вкладках](../task-modules-and-cards/task-modules/task-modules-tabs.md) и [Создайте и отправьте модуль задач](../messaging-extensions/how-to/action-commands/create-task-module.md?tabs=dotnet#the-initial-invoke-request).
 
 ### <a name="post-meeting"></a>Завершающее собрание
 
