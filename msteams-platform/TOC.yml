@@ -103,6 +103,8 @@
           href: concepts/deploy-and-publish/apps-upload.md
         - name: Опубликуйте свое приложение в своей организации
           href: /MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json
+        - name: Создание предложения SaaS для приложения Teams
+          href: concepts/deploy-and-publish/add-saas-offer.md
         - name: Опубликуйте свое приложение на AppSource
           items:
             - name: Понимание представления AppSource
