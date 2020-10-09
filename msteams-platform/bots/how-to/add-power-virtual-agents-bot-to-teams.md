@@ -4,12 +4,12 @@ author: laujan
 description: Интеграция агентов чатбот в платформу Teams
 ms.topic: how-to
 ms.author: lajanuar
-ms.openlocfilehash: 0a85738857015e4bce9627333ed6f1a74e489c43
-ms.sourcegitcommit: b51a4982842948336cfabedb63bdf8f72703585e
+ms.openlocfilehash: 125a114cb4775dfe2c9265afefae0257f57282df
+ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279695"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48397689"
 ---
 # <a name="integrate-a-power-virtual-agents-chatbot-with-microsoft-teams"></a>Интеграция виртуальных агентов Power чатбот с Microsoft Teams
 
@@ -39,11 +39,12 @@ ms.locfileid: "48279695"
 
   * Выберите значок магазин приложений в нижней части левой панели навигации в экземпляре Teams и найдите **Приложение App Studio**.
 >
-&emsp;&emsp; <img  width="450px" title="Поиск App Studio в магазине" src="../../assets/images/get-started/app-studio-store.png" alt="app in studio store view"/>    
+
+&emsp;&emsp; <img  width="450px" alt="Finding App Studio in the Store" src="/msteams-docs/msteams-platform/assets/images/get-started/app-studio-store.png"/>   
 
   * Выберите плитку **app Studio** и нажмите кнопку **установить** во всплывающем диалоговом окне.
 >
-&emsp;&emsp; <img  width="450px" title="Установка App Studio" src="../../assets/images/get-started/app-studio-install.png" alt="install app studio view"/>
+&emsp;&emsp; <img  width="450px" alt="Installing App Studio" src="../../assets/images/get-started/app-studio-install.png"/>
 
 2. **Создайте манифест приложения Teams в App Studio**.  Боты в Teams определяются с помощью файла манифеста приложения (JSON), в котором представлены основные сведения о интерфейсе робота и его возможностях. В **app Studio** выберите **редактор манифеста**   =>  **, чтобы создать новое приложение**.
 3. **Добавьте сведения о почтовом роботе**. Полное описание каждого поля представлено в статье [Определение схемы манифеста](../../resources/schema/manifest-schema.md). Обязательно заполните все обязательные поля.

@@ -4,12 +4,12 @@ author: WashingtonKayaker
 description: Как подписаться на события бесед из робота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: a8c6c39989a7d09a325412438f0d2ace78259cb7
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+ms.openlocfilehash: c678690b1dc2c948cceacdf42c95f169fff753bb
+ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "44801216"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48397682"
 ---
 # <a name="subscribe-to-conversation-events"></a>Подписаться на события разговора
 
@@ -432,7 +432,9 @@ async def on_teams_members_added_activity(
 
 ### <a name="team-members-removed"></a>Удалены участники группы
 
-`teamMemberRemoved`Событие отправляется в Bot, если оно удалено из команды и каждый раз, когда какой-либо пользователь удаляется из команды, участником которой является пользователь Bot. Вы можете определить, был ли удаленный участник участником "bot" или пользователем, изучив `Activity` объект `turnContext` .  Если `Id` поле объекта совпадает с `MembersRemoved` `Id` полем `Recipient` объекта, то член удален, а в противном случае — пользователь.  Как правило, в качестве ленты `Id` будет использоваться:`28:<MicrosoftAppId>`
+`teamMemberRemoved`Событие отправляется в Bot, если оно удалено из команды и каждый раз, когда какой-либо пользователь удаляется из команды, участником которой является пользователь Bot. Вы можете определить, был ли удаленный участник участником "bot" или пользователем, изучив `Activity` объект `turnContext` .  Если `Id` поле объекта совпадает с `MembersRemoved` `Id` полем `Recipient` объекта, то член удален, а в противном случае — пользователь.  Как правило, в качестве ленты `Id` будет использоваться: `28:<MicrosoftAppId>`
+
+[!Note] Когда пользователь безвозвратно удален из клиента, `membersRemoved conversationUpdate` инициируется событие.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 

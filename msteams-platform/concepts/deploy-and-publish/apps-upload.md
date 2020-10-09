@@ -2,12 +2,12 @@
 title: Отправка настраиваемого приложения в Microsoft Teams
 description: Сведения о том, как отправить приложение в Microsoft Teams
 keywords: Отправка приложений Teams
-ms.openlocfilehash: c130ef48d3ad7476de9ca5afeb7b613197c43f18
-ms.sourcegitcommit: 3ba5a5a7d9d9d906abc3ee1df9c2177de0cfd767
+ms.openlocfilehash: 6fbcd7a81c113d25a26ee6db15865929a53def0d
+ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103028"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48397710"
 ---
 # <a name="upload-an-app-package-to-microsoft-teams"></a>Отправка пакета приложения в Microsoft Teams
 
@@ -40,9 +40,11 @@ ms.locfileid: "45103028"
 
 1. В левом нижнем углу Teams выберите значок магазин. На странице Store выберите "Отправить настраиваемое приложение".
 
-   ![Просмотр команды](../../assets/images/store-upload-a-custom-app.png)
+  ![Просмотр команды](../../assets/images/store-upload-a-custom-app2.png)
 
 2. В диалоговом окне *Открыть* перейдите к пакету, который требуется отправить, и нажмите кнопку *Открыть*.
+
+   ![Меню "Добавить"](../../assets/images/NewappAddmenudropdown.png)
 
 Переданный пакет теперь должен быть доступен для использования в команде или беседе, указанной в диалоговом окне согласия. Если ваше приложение не отображается, наиболее распространенной причиной является ошибка в манифесте, особенно идентификаторы для расширений приложения, Bot и сообщений. Если приложение не ограничено для бесед, этот параметр не будет отображаться.
 
