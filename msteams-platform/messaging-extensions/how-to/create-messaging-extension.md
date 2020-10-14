@@ -1,17 +1,20 @@
 ---
-title: Создать расширение для обмена сообщениями
+title: Создание расширения обмена сообщениями для Teams
 author: clearab
-description: Создание расширения обмена сообщениями для приложения Microsoft Teams.
+description: Узнайте, как создать расширение системы обмена сообщениями в Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: ca03469b04c9696b26db3512790e03be26ca63af
-ms.sourcegitcommit: b01986739a05c65094618fbe76aeb53d038b1c74
+ms.openlocfilehash: 03fe4463f7e7af0874af4ce4f487f1a01fdd5fe6
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48178311"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452598"
 ---
-# <a name="create-a-messaging-extension-in-microsoft-teams"></a>Создание расширения обмена сообщениями в Microsoft Teams
+# <a name="create-a-messaging-extension-for-microsoft-teams"></a>Создание расширения обмена сообщениями для Microsoft Teams
+
+> [!TIP]
+> Хотите быстрее приступить к работе? Создайте [расширение системы обмена сообщениями](../../build-your-first-app/build-messaging-extension.md) с помощью набора инструментов Microsoft Teams.
 
 На высоком уровне необходимо выполнить следующие действия, чтобы создать расширение системы обмена сообщениями.
 
@@ -128,13 +131,13 @@ ms.locfileid: "48178311"
 
 1. **Location**. Ваш модуль обмена сообщениями можно вызвать из области создание сообщения, команды или @mentioned в чате для собрания.
 
-1. **Metadata (метаданные**). При вызове расширения обмена сообщениями он может идентифицировать пользователя и клиента из `userId` и `tenantId` . `meetingId`Может быть найдена как часть `channelData` объекта. Приложение может использовать `userId` `meetingId` `GetParticipant` запрос API и для получения ролей пользователей.
+1. **Metadata (метаданные**). При вызове расширения обмена сообщениями он может идентифицировать пользователя и клиента из `userId` и `tenantId` . `meetingId` может быть частью объекта `channelData`. Приложение может использовать `userId` `meetingId` `GetParticipant` запрос API и для получения ролей пользователей.
 
-1. **Тип команды**. Если расширение сообщения использует [команды на основе действий](../../messaging-extensions/what-are-messaging-extensions.md#action-commands), оно должно соответствовать вкладкам проверки подлинности [с единым входом](../../tabs/how-to/authentication/auth-aad-sso.md) . 
+1. **Тип команды**. Если расширение сообщения использует [команды на основе действий](../../messaging-extensions/what-are-messaging-extensions.md#action-commands), оно должно соответствовать вкладкам проверки подлинности [с единым входом](../../tabs/how-to/authentication/auth-aad-sso.md) .
 
 1. **Взаимодействие с пользователем**. Необходимо определить предполагаемый пользовательский интерфейс для расширений обмена сообщениями, вызываемых во время разговора.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Создание команд действий](~/messaging-extensions/how-to/action-commands/define-action-command.md)
 * [Создание команд поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)

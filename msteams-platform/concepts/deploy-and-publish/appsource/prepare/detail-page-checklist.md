@@ -2,12 +2,12 @@
 title: Создание привлекательной страницы сведений о приложении
 description: Описание требований к странице "сведения о приложении"
 keywords: Публикация Teams в магазине Office Publishing Policy AppSource Content
-ms.openlocfilehash: 90ce6962668c6a7a66bb10d33b1315340de29b4d
-ms.sourcegitcommit: e92408e751a8f51028908ab7e2415a8051a536c0
+ms.openlocfilehash: 103f57ba99404b8d7d5fb28c7aeaa0b770db6969
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326328"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452773"
 ---
 # <a name="build-a-great-app-details-page"></a>Создание привлекательной страницы сведений о приложении
 
@@ -31,7 +31,7 @@ ms.locfileid: "48326328"
 >* Воспользуйтесь приведенными ниже ресурсами для получения рекомендаций.
 
 * [Руководство по имени приложения](https://docs.microsoft.com/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/detail-page-checklist#app-name)
-* [Рекомендации по использованию товарных знаков и торговых марок корпорации Майкрософт](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general)
+* [Рекомендации по использованию товарных знаков и торговых марок корпорации Майкрософт](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general)
 
 **Сделайте следующее:**
 

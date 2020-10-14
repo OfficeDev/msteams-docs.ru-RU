@@ -1,18 +1,18 @@
 ---
-title: Создание расширения для обмена сообщениями в Teams
+title: Начало работы — создание расширения обмена сообщениями
 author: heath-hamilton
-description: Узнайте, как создать расширение для обмена сообщениями для первого приложения Microsoft Teams.
+description: Быстро Создайте расширение системы обмена сообщениями Microsoft Teams с помощью набора инструментов Microsoft Teams.
 ms.author: lajanuar
 ms.date: 09/22/2020
 ms.topic: tutorial
-ms.openlocfilehash: 4fd35f6d5cc4b4ba202cb4276386918a5d88d692
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+ms.openlocfilehash: b19856eacee866ebbc89f21ac12575f1392918b3
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237820"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452836"
 ---
-# <a name="build-a-teams-messaging-extension"></a>Создание расширения для обмена сообщениями в Teams
+# <a name="build-a-messaging-extension-for-microsoft-teams"></a>Создание расширения обмена сообщениями для Microsoft Teams
 
 Существует два типа *расширений для обмена сообщениями*в teams: [команды поиска](../messaging-extensions/how-to/search-commands/define-search-command.md) и [команды действий](../messaging-extensions/how-to/action-commands/define-action-command.md).
 
@@ -173,15 +173,15 @@ ms.locfileid: "48237820"
 Узнайте, как работают расширения обмена сообщениями в чате Teams.
 
 1. Начните новый сеанс разговора. В поле создать **, а затем выберите** :::image type="icon" source="../assets/icons/teams-client-more.png"::: приложение расширения обмена сообщениями, которое вы только что неопубликованныее.<br/>
-   :::image type="content" source="../assets/images/build-your-first-app/me-teams-access.png" alt-text="Иллюстрация, на которой показано, как получить доступ к расширению системы обмена сообщениями на основе поиска в поле "Создание Teams".":::
+   :::image type="content" source="../assets/images/build-your-first-app/me-teams-access.png" alt-text="Иллюстрация, на которой показано, как в наборе инструментов Teams войти в свою учетную запись Microsoft 365, чтобы создать новый почтовый робот для расширения обмена сообщениями.":::
 1. Попробуйте выполнить поиск чего-либо (например, "билеты"). Если ваше приложение работает, вы увидите пример результатов поиска (вы можете добавить его позже).<br/>
-   :::image type="content" source="../assets/images/build-your-first-app/me-teams-test.png" alt-text="Снимок экрана, демонстрирующий использование расширения обмена сообщениями на основе поиска в поле "Создание Teams".":::
+   :::image type="content" source="../assets/images/build-your-first-app/me-teams-test.png" alt-text="Иллюстрация, на которой показано, как в наборе инструментов Teams войти в свою учетную запись Microsoft 365, чтобы создать новый почтовый робот для расширения обмена сообщениями.":::
 
 ## <a name="well-done"></a>Прекрасно
 
 Поздравляем! У вас есть основные расширения системы обмена сообщениями Teams, которые задают поиск внешнего контента в поле "создать" или "команда".
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Чтобы продолжить и создать полнофункциональное расширение системы обмена сообщениями, ознакомьтесь со следующими страницами:
 

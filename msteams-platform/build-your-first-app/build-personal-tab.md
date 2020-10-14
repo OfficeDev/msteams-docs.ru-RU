@@ -1,18 +1,18 @@
 ---
-title: Создание вкладки группы "Личное"
+title: Начало работы — Создание вкладки "Личное"
 author: heath-hamilton
-description: Узнайте, как создать личную вкладку для первого приложения Microsoft Teams.
+description: Быстрое создание личной вкладки Microsoft Teams с помощью набора инструментов Microsoft Teams.
 ms.author: lajanuar
-ms.date: 09/22/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: a86c9e1e46b97c6b265bfa9ad2f618655c524ee4
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+ms.openlocfilehash: 7c12c87fff5126662f9473ecb0c5838b61f5faf2
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237806"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452745"
 ---
-# <a name="build-a-teams-personal-tab"></a>Создание вкладки группы "Личное"
+# <a name="build-a-personal-tab-for-microsoft-teams"></a>Создание вкладки "Личное" для Microsoft Teams
 
 Вкладки — это простой способ отображения контента в приложении, по сути внедряя веб-страницу в Teams.
 
@@ -181,7 +181,7 @@ if (isTheme === "default") {
 
 Проверьте вкладку в Teams. Внешний вид должен точно соответствовать темной теме.
 
-:::image type="content" source="../assets/images/tabs/personal-tab-tutorial-updated-theme.png" alt-text="Снимок экрана со вкладкой "Личное" и представлением статического содержимого.":::
+:::image type="content" source="../assets/images/tabs/personal-tab-tutorial-updated-theme.png" alt-text="Снимок экрана: личная вкладка со статическим содержимым.":::
 
 ## <a name="well-done"></a>Прекрасно
 

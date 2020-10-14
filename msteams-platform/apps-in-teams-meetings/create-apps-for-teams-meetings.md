@@ -5,17 +5,17 @@ description: Создание приложений для собраний в Te
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: 847e79d188a52892cda8732a2b58cee068cb5e95
-ms.sourcegitcommit: e92408e751a8f51028908ab7e2415a8051a536c0
+ms.openlocfilehash: e80dd50590d9e0828ab094c691a6b8e07ace3b0c
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326307"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452626"
 ---
-# <a name="create-apps-for-teams-meetings-release-preview"></a>Создание приложений для собраний в Teams (Предварительная версия)
+# <a name="create-apps-for-teams-meetings-developer-preview"></a>Создание приложений для собраний в Teams (Предварительная версия для разработчиков)
 
 >[!IMPORTANT]
-> Функции, выделенные в выпуске Microsoft Teams Preview, предоставляются только для более ранних целей и отзывов. Они могут быть подвергнуты изменениям, прежде чем их можно будет включить.
+> Функции, включенные в Microsoft Teams Preview, предоставляются только для раннего доступа, тестирования и создания отзывов. Они могут быть подвергнуты изменениям, прежде чем стать доступными в общедоступном выпуске и не должны использоваться в рабочих приложениях.
 
 ## <a name="prerequisites-and-considerations"></a>Необходимые условия и рекомендации
 
@@ -80,6 +80,7 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 {
     var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
     var theObject = Rest.Serialization.SafeJsonConvert.DeserializeObject<WhateverObjectIsReturned>(content, connectorClient.DeserializationSettings);
+}
 ```
 
 * * *
@@ -94,32 +95,34 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 #### <a name="response-payload"></a>Полезные данные ответа
 <!-- markdownlint-disable MD036 -->
 
+**митингроле** может быть *организатором*, *докладчиком*или *участником*.
+
 **Пример 1**
 
 ```json
 {
-    "meetingRole":"Presenter",
-    "conversation":{
-            "isGroup": true,
-            "id": "19:meeting_NDQxMzg1YjUtMGIzNC00Yjc1LWFmYWYtYzk1MGY2MTMwNjE0@thread.v2"
-        }
+  "user":
+  {
+      "id": "29:1JKiJGPAX9TTxtGxhVo0wLx_zwzo-gG8Z-X03306vBwi9p-xMTEbDXsT6KH7-0kkTS8cD-2zkrsoV6f5WJ6_aYw",
+      "aadObjectId": "6aebbad0-e5a5-424a-834a-20fb051f3c1a",
+      "name": "Allan Deyoung",
+      "givenName": "Allan",
+      "surname": "Deyoung",
+      "email": "Allan.Deyoung@microsoft.com",
+      "userPrincipalName": "Allan.Deyoung@microsoft.com",
+      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  },
+  "meeting":
+  {
+      "role ": "Presenter",
+      "inMeeting":true
+  },
+  "conversation":
+  {
+      "id": "<conversation id>"
+  }
 }
 ```
-
-**митингроле** может быть *организатором*, *докладчиком*или *участником*.
-
-**Пример 2**
-
-```json
-{
-   "meetingRole":"Presenter",
-   "conversation":{
-      "isGroup":true,
-      "id":"19:meeting_NDQxMzg1YjUtMGIzNC00Yjc1LWFmYWYtYzk1MGY2MTMwNjE0@thread.v2"
-   }
-}
-```
-
 #### <a name="response-codes"></a>Коды ответов
 
 **403**: приложению не разрешено получать сведения об участнике. Это наиболее распространенный ответ об ошибке, который активируется, когда приложение не установлено в собрании, например, когда приложение отключено администратором клиента или блокируется во время снижения риска для Live сайта.  
@@ -143,6 +146,8 @@ POST /v3/conversations/{conversationId}/activities
 
 **conversationId**: идентификатор беседы. Обязательно
 
+**комплетионботид**: идентификатор Bot. Необязательный
+
 #### <a name="request-payload"></a>Полезные данные запроса
 
 # <a name="json"></a>[JSON](#tab/json)
@@ -153,13 +158,13 @@ POST /v3/conversations/{conversationId}/activities
     "text": "John Phillips assigned you a weekly todo",
     "summary": "Don't forget to meet with Marketing next week",
     "channelData": {
-    "notification": {
-    "alertInMeeting": true,
-    "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=&height=&width=&title=<TaskInfo.title>"
-    }
-},
+        "notification": {
+            "alertInMeeting": true,
+            "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID"
+        }
+    },
     "replyToId": "1493070356924"
-    }
+}
 ```
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
@@ -167,14 +172,14 @@ POST /v3/conversations/{conversationId}/activities
 ```csharp
 Activity activity = MessageFactory.Text("This is a meeting signal test");
 MeetingNotification notification = new MeetingNotification
-{
+  {
     AlertInMeeting = true,
-    ExternalResourceUrl = "https://teams.microsoft.com/l/bubble/APP_ID?url=&height=&width=&title=<TaskInfo.title>"
-};
+    ExternalResourceUrl = "https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID"
+  };
 activity.ChannelData = new TeamsChannelData
-{
+  {
     Notification = notification
-};
+  };
 await turnContext.SendActivityAsync(activity).ConfigureAwait(false);
 ```
 
@@ -186,10 +191,10 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
         replyActivity.channelData = {
             notification: {
                 alertInMeeting: true,
-                externalResourceUrl: 'https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>’
+                externalResourceUrl: 'https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID’
             }
         };
-        await context.sendActivity(replyActivity);
+await context.sendActivity(replyActivity);
 ```
 
 * * *
@@ -211,7 +216,9 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 Возможности приложений для собраний объявляются в манифесте приложения с **configurableTabs**помощью  ->  **областей** конфигураблетабс и **контекстных** массивов. *Область* определяет, для кого и *контекст* определяет, где будет доступно ваше приложение.
 
 > [!NOTE]
-> Используйте [схему манифеста Preview для разработчиков](../resources/schema/manifest-schema-dev-preview.md) , чтобы попробовать это в манифесте приложения.
+> * Используйте [схему манифеста Preview для разработчиков](../resources/schema/manifest-schema-dev-preview.md) , чтобы попробовать это в манифесте приложения.
+> * Мобильная платформа в настоящее время поддерживает схему манифеста 1,6
+> * Платформа для мобильных устройств поддерживает вкладки только на поверхностях предварительных и посылаемых собраний. Скоро будет доступен интерфейс для собраний (диалоговое окно и вкладка на собрании) на мобильном устройстве.
 
 ```json
 "configurableTabs": [

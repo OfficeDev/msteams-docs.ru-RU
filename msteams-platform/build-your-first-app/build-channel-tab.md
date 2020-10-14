@@ -1,18 +1,18 @@
 ---
+title: Начало работы — Создание вкладки "канал" и "Группа"
 author: heath-hamilton
-description: Узнайте, как создать вкладку канал и группу для первого приложения Microsoft Teams.
+description: Быстро создайте вкладку "канал и группа Microsoft Teams" с помощью набора инструментов Microsoft Teams.
 ms.author: lajanuar
-ms.date: 09/22/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-title: Создание вкладки "канал и группа Teams"
-ms.openlocfilehash: d97d8c13404077bff999db48b24b773aa4bc04ca
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+ms.openlocfilehash: f890754cdf4ca43f39c25e3ba24fcf47b08c5a9f
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237813"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452857"
 ---
-# <a name="build-a-teams-channel-and-group-tab"></a>Создание вкладки "канал и группа Teams"
+# <a name="build-a-channel-and-group-tab-for-microsoft-teams"></a>Создание вкладки "канал" и "Группа" для Microsoft Teams
 
 В этом руководстве описывается создание простой *вкладки канала* (также известной как *вкладка группы*), которая является полноэкранной страницей для канала команды или чата. В отличие от вкладки личных сведений, пользователи могут настроить некоторые аспекты вкладки такого типа (например, переименовать вкладку, чтобы она была осмысленной для канала).
 
@@ -210,7 +210,7 @@ microsoftTeams.settings.setSettings({
 1. Выберите **Настройка вкладки**. Отобразится страница Конфигурация.<br/>
    :::image type="content" source="../assets/images/tabs/channel-tab-tutorial-content.png" alt-text="Снимок экрана: страница настройки вкладки каналов.":::
 1. Нажмите кнопку **сохранить** , чтобы настроить вкладку. Содержимое отображается.<br/>
-   :::image type="content" source="../assets/images/tabs/channel-tab-tutorial-content-installed.png" alt-text="Снимок экрана: вкладка "канал" со статическим представлением контента.":::
+   :::image type="content" source="../assets/images/tabs/channel-tab-tutorial-content-installed.png" alt-text="Снимок экрана: страница настройки вкладки каналов.":::
 
 ## <a name="well-done"></a>Прекрасно
 

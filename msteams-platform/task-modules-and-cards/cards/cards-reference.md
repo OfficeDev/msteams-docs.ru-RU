@@ -2,12 +2,12 @@
 title: Справочник по карточкам
 description: Описывает все карточки и действия карточки, доступные боты в Teams.
 keywords: Справочник по карточкам Боты
-ms.openlocfilehash: 7bd1cbea0aec03913c9bce205ae68eedba284637
-ms.sourcegitcommit: 1b909fb9ccf6cdd84ed0d8f9ea0463243a802a23
+ms.openlocfilehash: 0bcc905f3d5b678700a396ff3e5b8b5f0232046f
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452612"
 ---
 # <a name="cards-reference"></a>Справочник по карточкам
 
@@ -52,7 +52,7 @@ ms.locfileid: "45434547"
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
 | url | URL-адрес | URL-адрес HTTPS для изображения |
-| alt | Строка | Доступное описание изображения |
+| alt | String | Доступное описание изображения |
 
 ### <a name="buttons"></a>Кнопки
 
@@ -235,8 +235,8 @@ ms.locfileid: "45434547"
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
-| title | Форматированный текст  | Название карточки. Максимум 2 строки; форматирование в настоящее время не поддерживается |
-| Подзаголовок | Форматированный текст  | Подзаголовок карточки. Максимум 2 строки; форматирование в настоящее время не поддерживается |
+| title | Форматированный текст  | Название карточки. Не более 2 строк. |
+| Подзаголовок | Форматированный текст  | Подзаголовок карточки. Не более 2 строк.|
 | текст | Форматированный текст  | Текст отображается сразу под подназванием; сведения о [форматировании карточек](~/task-modules-and-cards/cards/cards-format.md) для параметров форматирования |
 | изображения | Массив изображений | Изображение, отображаемое в верхней части карточки. Пропорции 16:9 |
 | Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Максимум 6 |
@@ -281,7 +281,7 @@ ms.locfileid: "45434547"
 Справочные материалы по платформе Bot:
 
 * [Узел карточки главный Имиджевый баннер](https://docs.microsoft.com/javascript/api/botframework-schema/herocard)
-* [Карточка главный Имиджевый баннер C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-dotnet-3.0)
+* [Карточка главный Имиджевый баннер C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
 ## <a name="list-card"></a>Карточка списка
 
@@ -298,10 +298,9 @@ ms.locfileid: "45434547"
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
-| title | Форматированный текст  | Название карточки. Максимум 2 строки; форматирование в настоящее время не поддерживается |
-| items | Массив элементов списка  ||
-| Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Не более 6. Не отображается на мобильном устройстве. |
-|
+| title | Форматированный текст  | Название карточки. Не более 2 строк.|
+| элементы | Массив элементов списка  ||
+| Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Не более 6. |
 
 ### <a name="example-list-card"></a>Пример карточки списка
 
@@ -374,8 +373,8 @@ ms.locfileid: "45434547"
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
-| title | Форматированный текст  | Название карточки. Максимум 2 строки; форматирование в настоящее время не поддерживается |
-| summary | Форматированный текст  | Сводка по карточке. Максимум 2 строки; форматирование в настоящее время не поддерживается |
+| title | Форматированный текст  | Название карточки. Не более 2 строк. |
+| summary | Форматированный текст  | Сводка по карточке. Не более 2 строк. |
 | текст | Форматированный текст  | Текст отображается сразу под подназванием; сведения о [форматировании карточек](~/task-modules-and-cards/cards/cards-format.md) для параметров форматирования |
 | themeColor | ШЕСТНАДЦАТЕРИЧная строка | цвет, переопределяющий Акцентколор, предоставленный в манифесте приложения |
 
@@ -401,14 +400,14 @@ ms.locfileid: "45434547"
 
 | Значение | Описание |
 | --- | --- |
-| `avatar` | Умолчани `activityImage`будет обрезан как круг |
-| `article` | `activityImage`будет отображаться как прямоугольник и сохранять пропорции |
+| `avatar` | Умолчани `activityImage` будет обрезан как круг |
+| `article` | `activityImage` будет отображаться как прямоугольник и сохранять пропорции |
 
 Дополнительные сведения о свойствах карт соединителей можно узнать в статье [Справочник по карточкам сообщений с действиями](/outlook/actionable-messages/card-reference). В настоящее время в Microsoft Teams в настоящее время не поддерживаются следующие свойства карточки соединителя:
 
 * `heroImage`
 * `hideOriginalBody`
-* `startGroup`(всегда обрабатываются как `true` в Teams)
+* `startGroup` (всегда обрабатываются как `true` в Teams)
 * `originator`
 * `correlationId`
 
@@ -492,8 +491,8 @@ ms.locfileid: "45434547"
 
 Справочные материалы по платформе Bot:
 
-* [Узел карточки чеков](https://docs.microsoft.com/javascript/api/botframework-schema/receiptcard?view=botbuilder-ts-latest)
-* [Карточка прихода C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-dotnet-3.0)
+* [Узел карточки чеков](https://docs.microsoft.com/javascript/api/botframework-schema/receiptcard?view=botbuilder-ts-latest&preserve-view=true)
+* [Карточка прихода C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
 ## <a name="signin-card"></a>Карточка входа
 
@@ -512,8 +511,8 @@ ms.locfileid: "45434547"
 
 Справочные материалы по платформе Bot:
 
-* [Узел карточки входа](/javascript/api/botframework-schema/signincard?view=botbuilder-ts-latest)
-* [Карточка входа в систему C #](/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-dotnet-3.0)
+* [Узел карточки входа](/javascript/api/botframework-schema/signincard?view=botbuilder-ts-latest&preserve-view=true)
+* [Карточка входа в систему C #](/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
 ## <a name="thumbnail-card"></a>Карточка эскиза
 
@@ -532,8 +531,8 @@ ms.locfileid: "45434547"
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
-| title | Форматированный текст  | Название карточки. Максимум 2 строки; форматирование в настоящее время не поддерживается |
-| Подзаголовок | Форматированный текст  | Подзаголовок карточки. Максимум 2 строки; форматирование в настоящее время не поддерживается |
+| title | Форматированный текст  | Название карточки. Не более 2 строк.|
+| Подзаголовок | Форматированный текст  | Подзаголовок карточки. Не более 2 строк.|
 | текст | Форматированный текст  | Текст отображается сразу под подназванием; сведения о [форматировании карточек](~/task-modules-and-cards/cards/cards-format.md) для параметров форматирования |
 | изображения | Массив изображений | Изображение, отображаемое в верхней части карточки. Пропорции 1:1 (квадрат) |
 | Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Максимум 6 |
@@ -587,8 +586,8 @@ ms.locfileid: "45434547"
 
 Справочные материалы по платформе Bot:
 
-* [Узел карточки эскиза](https://docs.microsoft.com/javascript/api/botframework-schema/thumbnailcard?view=botbuilder-ts-latest)
-* [Карта с эскизом C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-dotnet-3.0)
+* [Узел карточки эскиза](https://docs.microsoft.com/javascript/api/botframework-schema/thumbnailcard?view=botbuilder-ts-latest&preserve-view=true)
+* [Карта с эскизом C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
 ## <a name="card-collections"></a>Коллекции карточек
 
@@ -598,7 +597,7 @@ ms.locfileid: "45434547"
 
 ## <a name="carousel-collection"></a>Коллекция обойм
 
-[Макет обоймы](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) отображает обойму карточек (при необходимости) с соответствующими кнопками действия.
+[Макет обоймы](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0&preserve-view=true) отображает обойму карточек (при необходимости) с соответствующими кнопками действия.
 
 ### <a name="support-for-carousel-collections"></a>Поддержка коллекций обойм
 

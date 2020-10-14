@@ -1,18 +1,18 @@
 ---
-title: Приступая к созданию первого приложения Teams
+title: Начало работы — создание первого обзорного приложения и предварительных условий
 author: heath-hamilton
-description: Обзор и предварительные требования для создания первого приложения Microsoft Teams
+description: Узнайте, как начать разработку приложений Microsoft Teams и настроить среду.
 ms.author: lajanuar
-ms.date: 09/22/2020
+ms.date: 10/09/2020
 ms.topic: quickstart
-ms.openlocfilehash: 14776b147309877212f710677ae5941238cf5c0d
-ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
+ms.openlocfilehash: c158b7ad925e05e4056769536f5e0d212763942a
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48397696"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452605"
 ---
-# <a name="build-your-first-teams-app-overview"></a>Создание обзора первого приложения Teams
+# <a name="build-your-first-microsoft-teams-app-overview"></a>Общие сведения о создании первого приложения Microsoft Teams
 
 В разделе **Создание первых** приложений вы создадите базовые приложения Teams. В каждом учебном курсе описывается создание простого приложения Teams, а также общие инструменты, основные понятия и дополнительные функции.
 

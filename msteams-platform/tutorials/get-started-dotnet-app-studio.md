@@ -5,12 +5,12 @@ keywords: Начало работы с .NET c# CSharp
 ms.custom: scenarios:getting-started; languages:ASP.NET,C#
 ms.topic: tutorial
 ms.date: 11/09/2018
-ms.openlocfilehash: c29fdde23ff6ff0e8269ccaf256c5154c0145a7b
-ms.sourcegitcommit: b9e8839858ea8e9e33fe5e20e14bbe86c75fd510
+ms.openlocfilehash: 3aca72a43765036c0014a9e16fa585575fe97b2e
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210696"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452846"
 ---
 # <a name="get-started-on-the-microsoft-teams-platform-with-cnet-and-app-studio"></a>Начало работы на платформе Microsoft Teams с C#/.нет и App Studio
 
@@ -107,17 +107,17 @@ Microsoft Azure позволяет размещать приложение .NET 
 
 В Visual Studio есть встроенная поддержка развертывания приложений для разных поставщиков, в том числе Azure.
 
-<img width="530px" src="~/assets/images/get-started/publishtoazure1.png" title="Visual Studio"/>
+<img width="530px" alt="Visual Studio" src="~/assets/images/get-started/publishtoazure1.png"/>
 
-[!include[Use App Studio to configure the app package](~/includes/get-started/get-started-use-app-studio.md)]
+[!include [Use App Studio to configure the app package](~/includes/get-started/get-started-use-app-studio.md)]
 
 ## <a name="update-the-credentials-for-your-hosted-app"></a>Обновление учетных данных для размещаемого приложения
 
 Для примера приложения требуются следующие переменные среды, чтобы задать значения, которые вы захотите заметку ранее.
 
-Откройте файл appSettings. JSON. Обновите значение *микрософтаппид* с помощью идентификатора ленты, сохраненного ранее. Обновите *микрософтапппассворд* с помощью сохраненного ранее пароля Bot.
+Откройте appsettings.jsфайла. Обновите значение *микрософтаппид* с помощью идентификатора ленты, сохраненного ранее. Обновите *микрософтапппассворд* с помощью сохраненного ранее пароля Bot.
 
-<img width="560px" src="~/assets/images/get-started/get-started-net-azure-add-keys.png" title="Настройка ключей"/>
+<img width="560px" alt="Setting the keys" src="~/assets/images/get-started/get-started-net-azure-add-keys.png"/>
 
 После внесения этих изменений Перестройте приложение. Если вы используете ngrok, запустите приложение локально и, если вы размещаете в Azure, повторно разверните приложение.
 
@@ -125,22 +125,22 @@ Microsoft Azure позволяет размещать приложение .NET 
 
 После установки приложения в команду его необходимо настроить для отображения контента. Перейдите к каналу в группе, где вы установили пример приложения, и нажмите кнопку **"+"** , чтобы добавить новую вкладку. Затем можно выбрать в `Hello World` списке **Добавить вкладку** . После этого появится диалоговое окно настройки. Это диалоговое окно позволит выбрать вкладку для отображения в этом канале. После выбора вкладки и нажатия на эту вкладку `Save` вы увидите вкладку, `Hello World` загруженную с выбранной вкладкой.
 
-<img width="530px" src="~/assets/images/samples-hello-world-tab-configure.png" title="Снимок экрана: Настройка" />
+<img width="530px" alt="Screenshot of configure" src="~/assets/images/samples-hello-world-tab-configure.png" />
 
 ### <a name="test-your-bot-in-teams"></a>Тестирование ленты в Teams
 
 Теперь вы можете взаимодействовать с роботом в Teams. Выберите канал в группе, в которой вы зарегистрировали свое приложение, и введите `@your-bot-name` . Это называется ** \@ упоминанием**. Любое сообщение, отправляемое в Bot, будет отправлено вам в качестве ответа.
 
-<img width="450px" title="Ответы от Bot" src="~/assets/images/samples-hello-world-bot.png" />
+<img width="450px" alt="Bot responses" src="~/assets/images/samples-hello-world-bot.png" />
 
 ### <a name="test-your-messaging-extension"></a>Проверка расширения системы обмена сообщениями
 
 Чтобы проверить расширение системы обмена сообщениями, щелкните три точки под полем ввода в представлении беседы. В меню появится приложение **"Hello World"** . При нажатии на нее отображается множество случайных текстов на экране. Вы можете выбрать один из них и вставить его в беседу.
 
-<img width="530px" title="Меню расширения для обмена сообщениями" src="~/assets/images/samples-hello-world-messaging-extensions-menu.png" />
+<img width="530px" alt="Messaging extension menu" src="~/assets/images/samples-hello-world-messaging-extensions-menu.png" />
 
-<img width="530px" title="Результат расширения системы обмена сообщениями" src="~/assets/images/samples-hello-world-messaging-extensions-result.png" />
+<img width="530px" alt="Messaging extension result" src="~/assets/images/samples-hello-world-messaging-extensions-result.png" />
 
 Выберите один из случайных текстов, и вы увидите карту, отформатированную и готовую к отправке сообщения в нижней части.
 
-<img width="530px" title="Отправка расширения обмена сообщениями" src="~/assets/images/samples-hello-world-messaging-extensions-send.png" />
+<img width="530px" alt="Messaging extension send" src="~/assets/images/samples-hello-world-messaging-extensions-send.png" />

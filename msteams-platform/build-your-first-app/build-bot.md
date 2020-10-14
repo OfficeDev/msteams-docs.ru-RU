@@ -1,18 +1,18 @@
 ---
-title: Создание ленты Teams
+title: Начало работы — Создание ленты
 author: heath-hamilton
-description: Узнайте, как создать робота для первого приложения Microsoft Teams.
+description: Быстро создайте робот Microsoft Teams с помощью набора инструментов Microsoft Teams.
 ms.author: lajanuar
-ms.date: 09/22/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: cc004bd0d86eca1e4e63c2a96a72f9c11d2269db
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+ms.openlocfilehash: 78fe535137864a72dcacf20857572599a7c2409a
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452794"
 ---
-# <a name="build-a-teams-bot"></a>Создание ленты Teams
+# <a name="build-a-bot-for-microsoft-teams"></a>Создание почтового робота для Microsoft Teams
 
 В этом руководстве вы создадите базовое приложение для *ленты* . Bot выступает в качестве посредника между пользователями Teams и веб-службой. Люди могут общаться с программой-роботом, чтобы быстро получить сведения или инициировать рабочие процессы и задачи, выполняемые службой.
 
@@ -136,7 +136,7 @@ ms.locfileid: "48237827"
 1. Перейдите к элементу **управления Bot > существующих регистраций ленты** и выберите элемент управления Bot, созданный во время установки.
 1. В поле **адрес конечной точки Bot** введите локальный веб-сервер, на котором размещается Bot ( `baseUrl10` значение), и добавьте `/api/messages` к нему.
 
-    :::image type="content" source="../assets/images/build-your-first-app/bot-config-endpoint-url.png" alt-text="Иллюстрация, на которой показано, как настроить URL-адрес конечной точки Bot в наборе инструментов Teams.":::
+    :::image type="content" source="../assets/images/build-your-first-app/bot-config-endpoint-url.png" alt-text="Иллюстрация, на которой показано, как с помощью набора инструментов Teams войти в свою учетную запись Microsoft 365, чтобы создать новый робот.":::
 
 Ваш робот сможет отвечать на сообщения в Teams.
 
@@ -169,12 +169,12 @@ ms.locfileid: "48237827"
 
 1. В группе Teams выберите в левой части элемент **Дополнительно** :::image type="icon" source="../assets/icons/teams-client-more.png"::: .
 1. Перейдите к простому неопубликованные и выберите его.<br/>
-   :::image type="content" source="../assets/images/build-your-first-app/bot-teams-access.png" alt-text="Иллюстрация, на которой показано, как получить доступ к панели роботов в Teams.":::
+   :::image type="content" source="../assets/images/build-your-first-app/bot-teams-access.png" alt-text="Иллюстрация, на которой показано, как с помощью набора инструментов Teams войти в свою учетную запись Microsoft 365, чтобы создать новый робот.":::
 1. В поле создать отправьте `Hello` сообщение.
 
 Ваш робот отправляется примерно следующим сообщениям.
 
-:::image type="content" source="../assets/images/build-your-first-app/contoso-chatbot.png" alt-text="Снимок экрана, на котором показано, как пользователь наводит "Hello" на робот команд и получает ответ.":::
+:::image type="content" source="../assets/images/build-your-first-app/contoso-chatbot.png" alt-text="Иллюстрация, на которой показано, как с помощью набора инструментов Teams войти в свою учетную запись Microsoft 365, чтобы создать новый робот.":::
 
 ## <a name="well-done"></a>Прекрасно
 

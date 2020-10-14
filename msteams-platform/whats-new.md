@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: 87fa50bc374310c2fe5d8081b18268c6298fb515
-ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
+ms.openlocfilehash: b4e36ab00a784017cef20657e9ee548ed90f3efa
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48397668"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452815"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -20,6 +20,7 @@ ms.locfileid: "48397668"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+|9/30/2020|Теперь поддерживается отправка и получение файлов в боты на мобильных устройствах.|[Отправка и получение файлов через Bot](resources/bot-v3/bots-files.md)|
 |09/22/2020|Новое руководство "Приступая к работе с Teams"|[Создание обзора первого приложения Teams](build-your-first-app/build-first-app-overview.md)|
 |9/18/2020|Поддержка приложений для собраний в Teams (ознакомительная версия)|[Создание приложений для собраний и приложений для Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) [в собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
 |8/19/2020|Импорт сообщений Teams с помощью Microsoft Graph|[Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](graph-api/import-messages/import-external-messages-to-teams.md)
