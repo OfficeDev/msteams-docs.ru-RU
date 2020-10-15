@@ -1,13 +1,13 @@
 ---
 title: Создание привлекательной страницы сведений о приложении
 description: Описание требований к странице "сведения о приложении"
-keywords: Публикация Teams в магазине Office Publishing Policy AppSource Content
-ms.openlocfilehash: 103f57ba99404b8d7d5fb28c7aeaa0b770db6969
-ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
+keywords: Служба Teams Publish Store Store Office Policy AppSource содержимого снимок экрана с метаданными имя приложения значки краткое описание
+ms.openlocfilehash: 98c6ccedb20f43a0bc1a34f5c4ecb30f98150d9a
+ms.sourcegitcommit: 25afe104d10c9a6a2849decf5ec1d08969d827c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48452773"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48465945"
 ---
 # <a name="build-a-great-app-details-page"></a>Создание привлекательной страницы сведений о приложении
 
@@ -91,7 +91,7 @@ ms.locfileid: "48452773"
 **Запреты**
 
 * Не повторяйте название.
-* Не сокращайте Майкрософт до "MS".
+* Не сокращайте Майкрософт до "MS" или "MSFT".
 * Не используйте жаргон или специализированную терминологию, вы не можете предположить, что пользователи знают, что искать.
 * Избегайте ненужных ссылок на названия продуктов Майкрософт, если это не является обязательным условием.
 * Не следует указывать на то, что приложение является предложением от корпорации Майкрософт.

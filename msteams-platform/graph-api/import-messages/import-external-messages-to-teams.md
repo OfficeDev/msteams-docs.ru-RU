@@ -5,13 +5,13 @@ localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: Overview
-keywords: временной резерв команды импорта сообщений API Graph перенесите запись миграции
-ms.openlocfilehash: 0e0aa96373d29f07893456adf54986ec23bdec3c
-ms.sourcegitcommit: 02ab2cb7820dc8665bb4ec6a1a40c3b8b8f29d66
+keywords: Microsoft Teams Import messages API Graph перенесите запись миграции
+ms.openlocfilehash: 0f53e27ec849e18be49f233a754658587343f68b
+ms.sourcegitcommit: 25afe104d10c9a6a2849decf5ec1d08969d827c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340951"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48465910"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -36,8 +36,8 @@ ms.locfileid: "47340951"
 
 ✔ Проанализируйте сторонние данные, чтобы определить, что будет перенесено.  
 ✔ Извлечения выбранных данных из сторонней системы чата.  
+✔ Сопоставить структуру чата сторонним разработчикам со структурой Teams.  
 ✔ Преобразовать данные импорта в формат, необходимый для миграции.  
-✔ Сопоставить структуру чата сторонним разработчикам со структурой Teams.
 
 ### <a name="set-up-your-office-365-tenant"></a>Настройка клиента Office 365
 
@@ -48,9 +48,9 @@ ms.locfileid: "47340951"
 
 Так как существующие данные переносятся, поддержание исходных меток времени и предотвращение активности сообщений в процессе миграции является ключом к повторному созданию существующего процесса обработки сообщений пользователя в Teams. Это достигается следующим образом:
 
-1. [Создайте новую команду](/graph/api/team-post?view=graph-rest-beta&tabs=http) с обратной меткой времени, используя свойство ресурса Team  `createdDateTime`  .  
+> [Создайте новую команду](/graph/api/team-post?view=graph-rest-beta&tabs=http&preserve-view=true) с обратной меткой времени, используя свойство ресурса Team  `createdDateTime`  . Поместите новую команду в `migration mode` специальное состояние, которое откладывает пользователей от большинства действий в группе до завершения процесса миграции. Добавьте `teamCreationMode` атрибут экземпляра со `migration` значением в запросе POST, чтобы явным образом определить новую команду в качестве ее создания для миграции.  
 
-1. Поместите новую команду в `migration mode` специальное состояние, которое откладывает пользователей от большинства действий в группе до завершения процесса миграции. Добавьте `teamCreationMode` атрибут экземпляра со `migration` значением в запросе POST, чтобы явным образом определить новую команду в качестве ее создания для миграции.  
+> **Note**: `createdDateTime` поле будет заполнено только для тех экземпляров группы или канала, которые были перенесены.
 
 <!-- markdownlint-disable MD001 -->
 
@@ -70,8 +70,8 @@ Content-Type: application/json
   "@microsoft.graph.teamCreationMode": "migration",
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "createdDateTime": "2020-03-14T11:22:17.067Z"
+  "description": "My Sample Team’s Description"
+  "createdDateTime": "2020-03-14T11:22:17.043Z"
 }
 ```
 
@@ -94,11 +94,9 @@ Content-Location: /teams/{teamId}
 
 ## <a name="step-two-create-a-channel"></a>Шаг 2: создание канала
 
-Создание канала для импортированных сообщений похоже на сценарий создания группы: 
+Создание канала для импортированных сообщений похоже на сценарий создания группы:
 
-1. [Создайте новый канал](/graph/api/channel-post?view=graph-rest-beta&tabs=http) с обратной меткой времени, используя свойство Resource Channel `createdDateTime` .
-
-1. Поместите новый канал в `migration mode` особое состояние, которое откладывает пользователей от большинства действий чата в канал до завершения процесса миграции.  Добавьте `channelCreationMode` атрибут экземпляра со `migration` значением в запросе POST, чтобы явным образом определить новую команду в качестве ее создания для миграции.  
+> [Создайте новый канал](/graph/api/channel-post?view=graph-rest-beta&tabs=http&preserve-view=true) с обратной меткой времени, используя свойство Resource Channel `createdDateTime` . Поместите новый канал в `migration mode` особое состояние, которое откладывает пользователей от большинства действий чата в канал до завершения процесса миграции.  Добавьте `channelCreationMode` атрибут экземпляра со `migration` значением в запросе POST, чтобы явным образом определить новую команду в качестве ее создания для миграции.  
 <!-- markdownlint-disable MD024 -->
 #### <a name="permissions"></a>Разрешения
 
@@ -117,7 +115,7 @@ Content-Type: application/json
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans",
   "membershipType": "standard",
-  "createdDateTime": "2020-03-14T11:22:17.067Z"
+  "createdDateTime": "2020-03-14T11:22:17.047Z"
 }
 ```
 
@@ -125,11 +123,21 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
-Content-Location: /teams/{teamId}/channels/{channelId}
-```
 
-#### <a name="error-message"></a>Сообщение об ошибке
+{
+   "@odata.context":"https://canary.graph.microsoft.com/testprodbetateamsgraphsvcncus/$metadata#teams('9cc6d6ab-07d8-4d14-bc2b-7db8995d6d23')/channels/$entity",
+   "id":"19:e90f6814ce674072a4126206e7de485e@thread.tacv2",
+   "createdDateTime":null,
+   "displayName":"Architecture Discussion",
+   "description":"This channel is where we debate all future architecture plans",
+   "isFavoriteByDefault":null,
+   "email":null,
+   "webUrl":null,
+   "membershipType":null,
+   "moderationSettings":null
+}
+
+#### Error message
 
 ```http
 400 Bad Request
@@ -140,7 +148,10 @@ Content-Location: /teams/{teamId}/channels/{channelId}
 
 ## <a name="step-three-import-messages"></a>Этап 3: Импорт сообщений
 
-После создания группы и канала можно начать отправку сообщений в обратном времени, используя `createdDateTime` `from`  ключи и в теле запроса.
+После создания группы и канала можно начать отправку сообщений в обратном времени, используя `createdDateTime` `from`  ключи и в теле запроса. **Note**: сообщения, импортированные `createdDateTime` раньше, чем цепочка сообщений `createdDateTime` , не поддерживаются.
+
+> [!NOTE]
+> createdDateTime должны быть уникальными для всех сообщений в одном потоке.
 
 #### <a name="request-post-message-that-is-text-only"></a>Request (сообщение POST, которое является текстовым)
 
@@ -148,33 +159,18 @@ Content-Location: /teams/{teamId}/channels/{channelId}
 POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 
 {
-    "replyToId": null,
-    "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
-    "deleted": false,
-    "subject": null,
-    "summary": null,
-    "importance": "normal",
-    "locale": "en-us",
-    "policyViolation": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "conversation": null,
-        "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
-            "userIdentityType": "aadUser"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "Hello World"
-    },
-    "attachments": [],
-    "mentions": [],
-    "reactions": []
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "from":{
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   }
 }
 ```
 
@@ -184,37 +180,46 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
-    "id": "id-value",
-    "replyToId": null,
-    "etag": "id-value",
-    "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
-    "deleted": false,
-    "subject": null,
-    "summary": null,
-    "importance": "normal",
-    "locale": "en-us",
-    "policyViolation": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "conversation": null,
-        "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
-            "userIdentityType": "aadUser"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "Hello World"
-    },
-    "attachments": [],
-    "mentions": [],
-    "reactions": []
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "id":"id-value",
+   "replyToId":null,
+   "etag":"id-value",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.58Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[
+   ],
+   "mentions":[
+   ],
+   "reactions":[
+   ]
 }
+```
+
+#### <a name="error-messages"></a>Сообщения об ошибках
+
+```http
+400 Bad Request
 ```
 
 #### <a name="request-post-a-message-with-inline-image"></a>Запрос (публикация сообщения с встроенным изображением)
@@ -268,7 +273,6 @@ HTTP/1.1 200 OK
             "userIdentityType": "aadUser"
         }
     },
-    {
       "body": {
         "contentType": "html",
         "content": "<div><div>\n<div><span><img height=\"250\" src=\"https://graph.microsoft.com/teams/teamId/channels/channelId/messages/id-value/hostedContents/hostedContentId/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"
@@ -319,17 +323,18 @@ HTTP/1.1 204 NoContent
 
 ## <a name="step-five-add-team-members"></a>Шаг 5: Добавление участников группы
 
-Добавить участника в команду можно [с помощью пользовательского интерфейса](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9) Teams или API [добавления элементов](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) Microsoft Graph:
+Добавить участника в команду можно [с помощью пользовательского интерфейса](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9) Teams или API [добавления элементов](/graph/api/group-post-members?view=graph-rest-beta&tabs=http&preserve-view=true) Microsoft Graph:
 
 #### <a name="request-add-member"></a>Запрос (Добавление члена)
 
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/teams/{id}/members
 Content-type: application/json
 Content-length: 30
-
 {
-  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
+"@odata.type": "#microsoft.graph.aadUserConversationMember",
+"roles": [],
+"user@odata.bind": "https://graph.microsoft.com/beta/users/{user-id}"
 }
 ```
 
@@ -344,7 +349,7 @@ HTTP/1.1 204 No Content
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD026 -->
 
-* Вы можете импортировать сообщения от пользователей, не включенных в Teams.
+* Вы можете импортировать сообщения от пользователей, не включенных в Teams. **Note**: сообщения, импортированные для пользователей, отсутствующих в клиенте, не будут поддерживать поиск в клиенте Teams или порталах соответствия требованиям во время общедоступной предварительной версии.
 
 * Когда `completeMigration` запрос будет выполнен, вы не сможете импортировать дальнейшие сообщения в команду.
 
@@ -362,7 +367,7 @@ HTTP/1.1 204 No Content
 |В области | На данный момент вне области|
 |----------|--------------------------|
 |Сообщения группы и канала|1:1 и сообщения группового чата|
-|Время создания исходного сообщения|Частные каналы|
+|Время создания исходного сообщения|Закрытые каналы|
 |Встроенные изображения в составе сообщения|С упоминаниями|
 |Ссылки на существующие файлы в SPO и OneDrive|Реакция|
 |Сообщения с форматированным текстом|Видео|
