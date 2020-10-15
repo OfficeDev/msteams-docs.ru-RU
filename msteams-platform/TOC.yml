@@ -164,7 +164,7 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Добавить вкладки в ваше приложение
+        - name: Создание вкладки для Teams
           href: tabs/how-to/add-tab.md
         - name: Создать страницы вкладок
           items:
@@ -215,7 +215,7 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Сборка бота для Teams
+        - name: Создать бота для Teams
           href: bots/how-to/create-a-bot-for-teams.md
         - name: Интегрируйте чат-агента Power Virtual Agent с Teams
           href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
@@ -292,7 +292,7 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создать расширение для обмена сообщениями
+        - name: Создание расширения для сообщений в Teams
           href: messaging-extensions/how-to/create-messaging-extension.md
         - name: Команды на основе действий
           items:

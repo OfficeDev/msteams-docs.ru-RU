@@ -1,18 +1,21 @@
 ---
-title: Создание бота для Microsoft Teams
+title: Создание бота для Teams
 author: clearab
-description: Как создать бота для Microsoft Teams с помощью App Studio, генератора Yeoman и других средств.
+description: Узнайте, как создать бота Teams
 ms.topic: conceptual
 localization_priority: Priority
 ms.author: anclear
-ms.openlocfilehash: 03196c32e5e1a4b2714a4c916a71c80fc10a5edc
-ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
+ms.openlocfilehash: 86ef162ceee07b1f66992d6943b22336d717c9f7
+ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48209832"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48452801"
 ---
 # <a name="create-a-bot-for-microsoft-teams"></a>Создание бота для Microsoft Teams
+
+> [!TIP]
+> Ищете быстрый способ приступить к работе? Создайте [бота](../../build-your-first-app/build-bot.md), используя набор средств Microsoft Teams.
 
 Чтобы создать бота для беседы, вам потребуется выполнить следующие действия:
 
