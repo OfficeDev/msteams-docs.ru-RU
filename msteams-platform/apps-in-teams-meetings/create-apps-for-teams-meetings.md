@@ -5,12 +5,12 @@ description: Создание приложений для собраний в Te
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: e80dd50590d9e0828ab094c691a6b8e07ace3b0c
-ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
+ms.openlocfilehash: 74f04ce9420110f721d95045fccee1d455cc7ea8
+ms.sourcegitcommit: b0b2f148add54ccd17fdf863c2f1973a615f8657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48452626"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487842"
 ---
 # <a name="create-apps-for-teams-meetings-developer-preview"></a>Создание приложений для собраний в Teams (Предварительная версия для разработчиков)
 
@@ -88,9 +88,11 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 
 #### <a name="query-parameters"></a>Параметры запроса
 
-**meetingId**. Необходимо указать идентификатор собрания.  
-**партиЦипантид**. Необходимо указать идентификатор участника.  
-**tenantId**. [Идентификатор клиента](/onedrive/find-your-office-365-tenant-id) участника. Обязательный для пользователя клиента.
+|Значение|Тип|Обязательный|Описание|
+|---|---|----|---|
+|**meetingId**| string | Да | Идентификатор собрания можно получить с помощью вызова Bot и клиента Teams SDK Teams.|
+|**партиЦипантид**| string | Да | Это поле является ИДЕНТИФИКАТОРом пользователя и доступно в разделе SSO, вызове Bot и пакете SDK Teams. Настоятельно рекомендуется использовать единый вход.|
+|**tenantId**| string | Да | Это необходимо для пользователей клиента. Он доступен при вводе-вызываемой клавишей TAB, с использованием ленты и клиента Teams SDK. Настоятельно рекомендуется использовать единый вход.|
 
 #### <a name="response-payload"></a>Полезные данные ответа
 <!-- markdownlint-disable MD036 -->
@@ -144,9 +146,10 @@ POST /v3/conversations/{conversationId}/activities
 
 #### <a name="query-parameters"></a>Параметры запроса
 
-**conversationId**: идентификатор беседы. Обязательно
-
-**комплетионботид**: идентификатор Bot. Необязательный
+|Значение|Тип|Обязательный|Описание|
+|---|---|----|---|
+|**conversationId**| string | Да | Идентификатор конвдерсатион доступен в составе вызова по методу Bot |
+|**комплетионботид**| string | Нет | Это поле является ИДЕНТИФИКАТОРом Bot, объявленным в манифесте. Объект Bot получит объект Result |
 
 #### <a name="request-payload"></a>Полезные данные запроса
 
@@ -188,12 +191,12 @@ await turnContext.SendActivityAsync(activity).ConfigureAwait(false);
 ```javascript
 
 const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive card instead
-        replyActivity.channelData = {
-            notification: {
-                alertInMeeting: true,
-                externalResourceUrl: 'https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID’
-            }
-        };
+replyActivity.channelData = {
+    notification: {
+        alertInMeeting: true,
+        externalResourceUrl: 'https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID’
+    }
+};
 await context.sendActivity(replyActivity);
 ```
 

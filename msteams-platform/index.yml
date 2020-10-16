@@ -10,12 +10,12 @@ metadata:
   author: laujan
   ms.author: lajanuar
   ms.date: 05/29/2020
-  ms.openlocfilehash: 0595dff854382c2a5e95c551f93d76ca3b8616fa
-  ms.sourcegitcommit: b51a4982842948336cfabedb63bdf8f72703585e
+  ms.openlocfilehash: b49635a0bfc927e4c9323985842ef470fa895340
+  ms.sourcegitcommit: b0b2f148add54ccd17fdf863c2f1973a615f8657
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/25/2020
-  ms.locfileid: "48279722"
+  ms.lasthandoff: 10/16/2020
+  ms.locfileid: "48487849"
 highlightedContent:
   items:
   - title: "Новая возможность разработки Microsoft Teams? \U0001F680Начните отсюда!"
@@ -117,6 +117,12 @@ conceptualContent:
 tools:
   title: Средства & SDK
   items:
+  - title: Расширение набора средств Microsoft Teams для Visual Studio Code
+    imageSrc: /media/logos/logo_vs-code.svg
+    url: /microsoftteams/platform/toolkit/visual-studio-code-overview
+  - title: Расширение набора средств Microsoft Teams для Visual Studio
+    imageSrc: /media/logos/logo_vs-ide.svg
+    url: /microsoftteams/platform/toolkit/visual-studio-overview
   - title: Пакеты SDK JavaScript для вкладок
     imageSrc: ./assets/icons/logo_js.png
     url: /javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest
@@ -135,71 +141,3 @@ tools:
   - title: Генератор Yeoman для Microsoft Teams
     imageSrc: ./assets/icons/Yeoman.png
     url: https://github.com/OfficeDev/generator-teams
-additionalContent:
-  sections:
-  - title: Шаблоны приложений A – H
-    summary: Готовые к использованию приложения
-    items:
-    - title: Вспомогательная аналитика
-      url: https://github.com/OfficeDev/microsoft-teams-apps-associateinsights
-      summary: Позволяет сотрудникам без компьютеров получать отзывы клиентов.
-    - title: Присутствие
-      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
-      summary: Разрешите команде записывать сведения о присутствии и создавать сводные отчеты.
-    - title: Книга — a — комната
-      url: https://github.com/OfficeDev/microsoft-teams-apps-bookaroom
-      summary: Помогает команде быстро найти и зарезервировать конференц-зал
-    - title: Праздники
-      url: https://github.com/OfficeDev/microsoft-teams-celebrations-app
-      summary: Упростите празднование дни рождения, годовщины и другие повторяющиеся события.
-    - title: Корпоративный Communicator
-      url: https://github.com/OfficeDev/microsoft-teams-company-communicator-app
-      summary: Разрешите корпоративным командам создавать и отправлять сообщения чата для сотрудников.
-    - title: Источник кровд
-      url: https://github.com/OfficeDev/microsoft-teams-crowdsourcer-app
-      summary: Предоставьте ответы на запросы группы от совместного использования информации.
-    - title: Пользовательские наклейки
-      url: https://github.com/OfficeDev/microsoft-teams-stickers-app
-      summary: Добавление настраиваемых наклеек в группе или организации.
-    - title: Экспертный поиск
-      url: https://github.com/OfficeDev/microsoft-teams-apps-expertfinder
-      summary: Разрешите команде определить внутренних экспертов на основе навыков, интересов и образовательных учреждений.
-    - title: Вопросы и ответы плюс
-      url: https://github.com/OfficeDev/microsoft-teams-faqplusplus-app
-      summary: Улучшите производительность команды с помощью ленты и ответа.
-    - title: Групповые действия
-      url: https://github.com/OfficeDev/microsoft-teams-apps-groupactivities
-      summary: Быстро создавайте группы действий и рабочие процессы совместной работы, а также управляйте ими.
-    - title: Поддержка управления персоналом
-      url: https://github.com/OfficeDev/microsoft-teams-faqplusplus-app
-      summary: Предоставить поддержку отдела кадров для ленты и ответа.
-  - title: Шаблоны приложений I – Z
-    summary: Готовые к использованию приложения
-    items:
-    - title: Точки соприкосновения
-      url: https://github.com/OfficeDev/microsoft-teams-icebreaker-app
-      summary: Повышение совместной работы с помощью случайного связывания участников группы для еженедельных митупс.
-    - title: Стимул
-      url: https://github.com/OfficeDev/microsoft-teams-apps-incentives
-      summary: Управляйте поощряемым участием в действиях и событиях, а также отслеживайте его.
-    - title: Средство отчетов об инцидентах
-      url: https://github.com/OfficeDev/microsoft-teams-apps-incidentreport
-      summary: Оптимизируйте управление инцидентами в вашей организации.
-    - title: Открытые эмблемы
-      url: https://github.com/OfficeDev/microsoft-teams-apps-openbadges
-      summary: Отслеживание эмблем цифровых обучений и премий.
-    - title: Быстрые ответы
-      url: https://github.com/OfficeDev/microsoft-teams-apps-quickresponses
-      summary: Эффективно отвечать на часто задаваемые вопросы и создавать динамическую библиотеку ответов.
-    - title: Удаленная поддержка
-      url: https://github.com/OfficeDev/microsoft-teams-apps-remotesupport
-      summary: Предоставление отсортированного интерфейса с помощью группы внутренней поддержки.
-    - title: Запрос от a до команды
-      url: https://github.com/OfficeDev/microsoft-teams-apps-requestateam
-      summary: Улучшите процесс создания группы в Организации.
-    - title: Состояние Scrum
-      url: https://github.com/OfficeDev/microsoft-teams-app-scrumstatus
-      summary: Разрешает команде проводить асинхронные собрания Scrum и делиться обновлениями.
-    - title: Поиск в списке SharePoint
-      url: https://github.com/OfficeDev/microsoft-teams-list-search-app
-      summary: Поиск в списке SharePoint и вставка элемента в виде адаптивной карточки в Teams.
