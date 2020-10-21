@@ -30,7 +30,7 @@ ms.locfileid: "48279767"
 
 <span data-ttu-id="ba2c3-116">На следующем рисунке показано, как получить доступ к вкладке канала на мобильном устройстве.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-116">The following illustration shows how you access a channel tab on mobile.</span></span>
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab.png" alt-text="Иллюстрация, на которой показана вкладка Teams Mobile." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 ## <a name="design-considerations"></a><span data-ttu-id="ba2c3-118">Особенности дизайна</span><span class="sxs-lookup"><span data-stu-id="ba2c3-118">Design considerations</span></span>
 
@@ -48,25 +48,25 @@ ms.locfileid: "48279767"
 
 <span data-ttu-id="ba2c3-130">Это одна большая область, в которой выполняется работу.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-130">This is one large area where work gets done.</span></span> <span data-ttu-id="ba2c3-131">Приложение Teams соответствует этому шаблону.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-131">The Teams Wiki app follows this pattern.</span></span> <span data-ttu-id="ba2c3-132">Если у вас есть приложение, не разделяее контент на небольшие компоненты, это будет очень полезно.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-132">If you have an app that doesn’t separate content into smaller components this would be a good fit.</span></span>
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-single-canvas.png" alt-text="Иллюстрация, на которой показана вкладка "один холст для мобильных устройств"." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-single-canvas.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 #### <a name="list"></a><span data-ttu-id="ba2c3-134">Список</span><span class="sxs-lookup"><span data-stu-id="ba2c3-134">List</span></span>
 
 <span data-ttu-id="ba2c3-135">Списки отлично подходят для сортировки и фильтрации больших объемов данных и прекрасно подходят для наиболее важных вещей в верхней части.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-135">Lists are great for sorting and filtering large quantities of data and are great at keeping the most important things at the top.</span></span> <span data-ttu-id="ba2c3-136">Рекомендуется использовать сортируемый столбцы.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-136">It is helpful to use sortable columns.</span></span> <span data-ttu-id="ba2c3-137">Действия можно добавлять к каждому элементу списка в меню с многоточием.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-137">Actions can be added to each list item under the ellipsis menu.</span></span>
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-list.png" alt-text="Иллюстрация, на которой показана вкладка списка для мобильных устройств Teams." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-list.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 #### <a name="grid"></a><span data-ttu-id="ba2c3-139">Таблице</span><span class="sxs-lookup"><span data-stu-id="ba2c3-139">Grid</span></span>
 
 <span data-ttu-id="ba2c3-140">Сетки удобно использовать для отображения элементов, которые являются очень визуальными.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-140">Grids are useful for showing elements which are highly visual.</span></span> <span data-ttu-id="ba2c3-141">В верхней части можно включить фильтр или элемент управления поиском.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-141">It helps to include a filter or search control at the top.</span></span>
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-grid.png" alt-text="Иллюстрация вкладки Teams Mobile с макетом сетки." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-grid.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 ### <a name="tabs-with-bots-on-mobile"></a><span data-ttu-id="ba2c3-143">Вкладки с боты на мобильных устройствах</span><span class="sxs-lookup"><span data-stu-id="ba2c3-143">Tabs with bots on mobile</span></span>
 
 <span data-ttu-id="ba2c3-144">Ниже приведен пример личного приложения с вкладками и Bot.</span><span class="sxs-lookup"><span data-stu-id="ba2c3-144">The following example is a personal app that has tabs and a bot.</span></span>
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-with-bot.png" alt-text="Иллюстрация, на которой показано, как приложение для мобильных устройств имеет вкладки и Bot." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-with-bot.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 ## <a name="ui-components"></a><span data-ttu-id="ba2c3-146">Компоненты пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="ba2c3-146">UI components</span></span>
 
