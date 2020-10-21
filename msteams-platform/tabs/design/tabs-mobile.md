@@ -30,7 +30,7 @@ ms.locfileid: "48279767"
 
 На следующем рисунке показано, как получить доступ к вкладке канала на мобильном устройстве.
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab.png" alt-text="Иллюстрация, на которой показана вкладка Teams Mobile." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 ## <a name="design-considerations"></a>Особенности дизайна
 
@@ -48,25 +48,25 @@ ms.locfileid: "48279767"
 
 Это одна большая область, в которой выполняется работу. Приложение Teams соответствует этому шаблону. Если у вас есть приложение, не разделяее контент на небольшие компоненты, это будет очень полезно.
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-single-canvas.png" alt-text="Иллюстрация, на которой показана вкладка "один холст для мобильных устройств"." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-single-canvas.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 #### <a name="list"></a>Список
 
 Списки отлично подходят для сортировки и фильтрации больших объемов данных и прекрасно подходят для наиболее важных вещей в верхней части. Рекомендуется использовать сортируемый столбцы. Действия можно добавлять к каждому элементу списка в меню с многоточием.
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-list.png" alt-text="Иллюстрация, на которой показана вкладка списка для мобильных устройств Teams." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-list.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 #### <a name="grid"></a>Таблице
 
 Сетки удобно использовать для отображения элементов, которые являются очень визуальными. В верхней части можно включить фильтр или элемент управления поиском.
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-grid.png" alt-text="Иллюстрация вкладки Teams Mobile с макетом сетки." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-grid.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 ### <a name="tabs-with-bots-on-mobile"></a>Вкладки с боты на мобильных устройствах
 
 Ниже приведен пример личного приложения с вкладками и Bot.
 
-:::image type="content" source="../../assets/images/tabs/mobile-tab-with-bot.png" alt-text="Иллюстрация, на которой показано, как приложение для мобильных устройств имеет вкладки и Bot." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-tab-with-bot.png" alt-text="Иллюстрация, на которой показан входной ящик приложений Teams." border="false":::
 
 ## <a name="ui-components"></a>Компоненты пользовательского интерфейса
 
