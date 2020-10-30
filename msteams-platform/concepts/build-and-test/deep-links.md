@@ -3,11 +3,11 @@ title: Создание глубоких ссылок
 description: Описание глубоких ссылок и способов их использования в приложениях
 keywords: Прямая ссылка на ссылку Teams
 ms.openlocfilehash: 03580c4d15c82da70402d68d85b0d28f8afa670e
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "44801245"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796332"
 ---
 # <a name="create-deep-links-to-content-and-features-in-microsoft-teams"></a>Создание глубоких ссылок на контент и функции в Microsoft Teams
 
@@ -27,7 +27,7 @@ ms.locfileid: "44801245"
 
 ### <a name="showing-a-deep-link-to-an-item-within-your-tab"></a>Как показать ссылку на элемент на вкладке
 
-Чтобы отобразить диалоговое окно, содержащее детальную ссылку на элемент на вкладке, вызовите метод`microsoftTeams.shareDeepLink({ subEntityId: <subEntityId>, subEntityLabel: <subEntityLabel>, subEntityWebUrl: <subEntityWebUrl> })`
+Чтобы отобразить диалоговое окно, содержащее детальную ссылку на элемент на вкладке, вызовите метод `microsoftTeams.shareDeepLink({ subEntityId: <subEntityId>, subEntityLabel: <subEntityLabel>, subEntityWebUrl: <subEntityWebUrl> })`
 
 Предоставьте следующие поля:
 
@@ -58,10 +58,10 @@ ms.locfileid: "44801245"
 
 Примеры:
 
-* Ссылка на настраиваемую вкладку:`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123&context={"channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
-* Ссылка на элемент задачи в настраиваемой вкладке:`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456","channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
-* Ссылка на статическую вкладку:`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123`
-* Ссылка на элемент задачи в статической вкладке:`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456"}`
+* Ссылка на настраиваемую вкладку: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123&context={"channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
+* Ссылка на элемент задачи в настраиваемой вкладке: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456","channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
+* Ссылка на статическую вкладку: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123`
+* Ссылка на элемент задачи в статической вкладке: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456"}`
 
 > [!IMPORTANT]
 > Убедитесь, что все параметры запроса правильно кодируются в URI. В целях удобства чтения приведенные выше примеры не являются допустимыми, но это необходимо. В последнем примере:
@@ -126,7 +126,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 ### <a name="generating-a-deep-link-to-the-scheduling-dialog"></a>Создание глубокой ссылки на диалоговое окно планирования
 
-Используйте этот формат для глубокой ссылки, которую можно использовать в карточке почтовых роботов, соединителей или модулей обмена сообщениями:`https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
+Используйте этот формат для глубокой ссылки, которую можно использовать в карточке почтовых роботов, соединителей или модулей обмена сообщениями: `https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
 
 Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
 

@@ -3,12 +3,13 @@ title: Обработка событий Bot
 description: Описание способов обработки событий в боты для Microsoft Teams
 keywords: события Боты Teams
 ms.date: 05/20/2019
-ms.openlocfilehash: 06da5e6b0668e86012d87af3184493cdeb70aecd
-ms.sourcegitcommit: fdcd91b270d4c2e98ab2b2c1029c76c49bb807fa
+author: laujan
+ms.openlocfilehash: 5ef37a931d421f245cca4fbb984b69217f779785
+ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "44801233"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796178"
 ---
 # <a name="handle-bot-events-in-microsoft-teams"></a>Обработка событий Bot в Microsoft Teams
 
@@ -154,11 +155,11 @@ bot.on('conversationUpdate', (msg) => {
   "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/",
   "from": {
     "id": "29:<USERID>",
-    "aadObjectId": "***"
+    "aadObjectId": "**_"
   },
   "conversation": {
     "conversationType": "personal",
-    "id": "***"
+    "id": "_*_"
   },
   "recipient": {
     "id": "28:<BOT ID>",
@@ -260,11 +261,11 @@ bot.on('conversationUpdate', (msg) => {
 
 ## <a name="channel-updates"></a>Обновления канала
 
-Ваш робот получает уведомление о создании, переименовании или удалении канала в группе, в которой он был добавлен. Опять же, `conversationUpdate` получается событие, а идентификатор события, зависящий от Teams, отправляется в составе `channelData.eventType` объекта, где данные канала `channel.id` являются идентификатором GUID канала, и `channel.name` содержит само имя канала.
+Ваш робот получает уведомление о создании, переименовании или удалении канала в группе, в которой он был добавлен. Опять же, `conversationUpdate` получается событие, а идентификатор события, зависящий от Teams, отправляется в составе `channelData.eventType` объекта, где данные канала  `channel.id` являются идентификатором GUID канала, и `channel.name` содержит само имя канала.
 
 Ниже приведены события канала.
 
-* **чаннелкреатед** &emsp; Пользователь добавляет новый канал в команду.
+_ **чаннелкреатед** &emsp; пользователь добавляет новый канал в команду.
 * **чаннелренамед** &emsp; Пользователь переименовывает существующий канал
 * **чаннелделетед** &emsp; Пользователь удаляет канал
 
@@ -348,7 +349,7 @@ bot.on('conversationUpdate', (msg) => {
 
 ## <a name="reactions"></a>Реакция
 
-`messageReaction`Событие отправляется, когда пользователь добавляет или удаляет его реакцию на сообщение, которое изначально было отправлено с помощью робота. `replyToId`содержит идентификатор определенного сообщения.
+`messageReaction`Событие отправляется, когда пользователь добавляет или удаляет его реакцию на сообщение, которое изначально было отправлено с помощью робота. `replyToId` содержит идентификатор определенного сообщения.
 
 ### <a name="schema-example-a-user-likes-a-message"></a>Пример схемы: пользователю нравится сообщение
 

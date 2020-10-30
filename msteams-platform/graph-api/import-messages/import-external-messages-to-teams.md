@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: Overview
 keywords: Microsoft Teams Import messages API Graph перенесите запись миграции
-ms.openlocfilehash: 0f53e27ec849e18be49f233a754658587343f68b
-ms.sourcegitcommit: 25afe104d10c9a6a2849decf5ec1d08969d827c3
+ms.openlocfilehash: 934e00541773140c90c270a616d6bc50aacac6e1
+ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48465910"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796297"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -41,7 +41,7 @@ ms.locfileid: "48465910"
 
 ### <a name="set-up-your-office-365-tenant"></a>Настройка клиента Office 365
 
-✔ Убедиться, что клиент Office 365 существует для импорта данных. Для получения дополнительных сведений о настройке Office 365 для Teams, *Ознакомьтесь*со статьей [подготовка клиента Office 365](../../concepts/build-and-test/prepare-your-o365-tenant.md).  
+✔ Убедиться, что клиент Office 365 существует для импорта данных. Для получения дополнительных сведений о настройке Office 365 для Teams, *Ознакомьтесь* со статьей [подготовка клиента Office 365](../../concepts/build-and-test/prepare-your-o365-tenant.md).  
 ✔ Убедитесь, что участники группы находятся в Azure Active Directory (AAD).  Дополнительные сведения *см* . в статье [Добавление нового пользователя](/azure/active-directory/fundamentals/add-users-azure-active-directory) в Azure Active Directory.
 
 ## <a name="step-one-create-a-team"></a>Шаг 1: создание группы
@@ -50,7 +50,7 @@ ms.locfileid: "48465910"
 
 > [Создайте новую команду](/graph/api/team-post?view=graph-rest-beta&tabs=http&preserve-view=true) с обратной меткой времени, используя свойство ресурса Team  `createdDateTime`  . Поместите новую команду в `migration mode` специальное состояние, которое откладывает пользователей от большинства действий в группе до завершения процесса миграции. Добавьте `teamCreationMode` атрибут экземпляра со `migration` значением в запросе POST, чтобы явным образом определить новую команду в качестве ее создания для миграции.  
 
-> **Note**: `createdDateTime` поле будет заполнено только для тех экземпляров группы или канала, которые были перенесены.
+> **Note** : `createdDateTime` поле будет заполнено только для тех экземпляров группы или канала, которые были перенесены.
 
 <!-- markdownlint-disable MD001 -->
 
@@ -70,7 +70,7 @@ Content-Type: application/json
   "@microsoft.graph.teamCreationMode": "migration",
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description"
+  "description": "My Sample Team’s Description",
   "createdDateTime": "2020-03-14T11:22:17.043Z"
 }
 ```
@@ -136,8 +136,9 @@ HTTP/1.1 202 Accepted
    "membershipType":null,
    "moderationSettings":null
 }
+```
 
-#### Error message
+#### <a name="error-message"></a>Сообщение об ошибке
 
 ```http
 400 Bad Request
@@ -148,7 +149,7 @@ HTTP/1.1 202 Accepted
 
 ## <a name="step-three-import-messages"></a>Этап 3: Импорт сообщений
 
-После создания группы и канала можно начать отправку сообщений в обратном времени, используя `createdDateTime` `from`  ключи и в теле запроса. **Note**: сообщения, импортированные `createdDateTime` раньше, чем цепочка сообщений `createdDateTime` , не поддерживаются.
+После создания группы и канала можно начать отправку сообщений в обратном времени, используя `createdDateTime` `from`  ключи и в теле запроса. **Note** : сообщения, импортированные `createdDateTime` раньше, чем цепочка сообщений `createdDateTime` , не поддерживаются.
 
 > [!NOTE]
 > createdDateTime должны быть уникальными для всех сообщений в одном потоке.
@@ -224,7 +225,7 @@ HTTP/1.1 200 OK
 
 #### <a name="request-post-a-message-with-inline-image"></a>Запрос (публикация сообщения с встроенным изображением)
 
-> **Note**: в этом сценарии нет особых областей разрешений, так как запрос является частью chatMessage; Здесь также применяются области для chatMessage.
+> **Note** : в этом сценарии нет особых областей разрешений, так как запрос является частью chatMessage; Здесь также применяются области для chatMessage.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
@@ -349,7 +350,7 @@ HTTP/1.1 204 No Content
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD026 -->
 
-* Вы можете импортировать сообщения от пользователей, не включенных в Teams. **Note**: сообщения, импортированные для пользователей, отсутствующих в клиенте, не будут поддерживать поиск в клиенте Teams или порталах соответствия требованиям во время общедоступной предварительной версии.
+* Вы можете импортировать сообщения от пользователей, не включенных в Teams. **Note** : сообщения, импортированные для пользователей, отсутствующих в клиенте, не будут поддерживать поиск в клиенте Teams или порталах соответствия требованиям во время общедоступной предварительной версии.
 
 * Когда `completeMigration` запрос будет выполнен, вы не сможете импортировать дальнейшие сообщения в команду.
 
@@ -367,7 +368,7 @@ HTTP/1.1 204 No Content
 |В области | На данный момент вне области|
 |----------|--------------------------|
 |Сообщения группы и канала|1:1 и сообщения группового чата|
-|Время создания исходного сообщения|Закрытые каналы|
+|Время создания исходного сообщения|Частные каналы|
 |Встроенные изображения в составе сообщения|С упоминаниями|
 |Ссылки на существующие файлы в SPO и OneDrive|Реакция|
 |Сообщения с форматированным текстом|Видео|

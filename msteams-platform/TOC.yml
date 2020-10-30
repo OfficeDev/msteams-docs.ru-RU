@@ -164,7 +164,7 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создание вкладки для Teams
+        - name: Создание вкладки с помощью App Studio
           href: tabs/how-to/add-tab.md
         - name: Создать страницы вкладок
           items:
@@ -215,7 +215,7 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создать бота для Teams
+        - name: Создание бота с помощью App Studio
           href: bots/how-to/create-a-bot-for-teams.md
         - name: Интегрируйте чат-агента Power Virtual Agent с Teams
           href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
@@ -292,7 +292,7 @@
     - name: Практические руководства
       expanded: true
       items:
-        - name: Создание расширения для сообщений в Teams
+        - name: Создание расширения для сообщений с помощью App Studio
           href: messaging-extensions/how-to/create-messaging-extension.md
         - name: Команды на основе действий
           items:
@@ -363,7 +363,7 @@
           href: apps-in-teams-meetings/design/designing-in-meeting-dialog.md
         - name: Вкладка собрания
           href: apps-in-teams-meetings/design/designing-in-meeting-tab.md
-- name: REST API Graph для Teams
+- name: Интеграция REST API Microsoft Graph
   items:
     - name: Согласие с определением ресурсов
       items:

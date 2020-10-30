@@ -5,12 +5,12 @@ description: Создание страницы контента
 keywords: вкладки Teams канал группы, настраиваемый статически
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 91a7d643d3a631610989e31eae14265cd725dbd0
-ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
+ms.openlocfilehash: 62a398c87b681013c89e540d2bdc463c97877307
+ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47818908"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796318"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -28,7 +28,7 @@ ms.locfileid: "47818908"
 
 ## <a name="integrate-your-code-with-teams"></a>Интеграция кода с Teams
 
-Чтобы страница отображалась в Teams, необходимо включить [клиентский пакет SDK Microsoft Teams для JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) и включить вызов `microsoftTeams.initialize()` после загрузки страницы. Способ общения страницы и клиента teams:
+Чтобы страница отображалась в Teams, необходимо включить [клиентский пакет SDK Microsoft Teams для JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latestadd &preserve-view=true) и включить вызов `microsoftTeams.initialize()` после загрузки страницы. Способ общения страницы и клиента teams:
 
 ```html
 <!DOCTYPE html>
@@ -52,7 +52,7 @@ ms.locfileid: "47818908"
 
 ### <a name="using-the-sdk-to-interact-with-teams"></a>Использование пакета SDK для взаимодействия с Teams
 
-[Клиентский пакет SDK для JavaScript для Teams](~/tabs/how-to/using-teams-client-sdk.md) предоставляет множество дополнительных функций, которые могут оказаться полезны при разработке контента.
+[Пакет SDK JavaScript для клиента Teams](~/tabs/how-to/using-teams-client-sdk.md) предоставляет множество дополнительных функций, которые могут оказаться полезны при разработке страницы контента.
 
 ### <a name="deep-links"></a>Прямые ссылки
 
@@ -75,8 +75,8 @@ ms.locfileid: "47818908"
 
 1. Чтобы показать индикатор загрузки, добавьте `"showLoadingIndicator": true` его в манифест. 
 2. Не забудьте позвонить `microsoftTeams.initialize();` .
-3. **Необязательный**параметр. Если вы готовы к печати на экране и хотите выполнить отложенную загрузку оставшейся части содержимого приложения, можно вручную скрыть индикатор загрузки, вызвав `microsoftTeams.appInitialization.notifyAppLoaded();`
-4. **Обязательный**параметр. Наконец, вызовите `microsoftTeams.appInitialization.notifySuccess()` Teams, чтобы уведомить Teams о том, что приложение успешно загружено. Затем команды скрывают индикатор загрузки, если это необходимо. Если оно  `notifySuccess`  не вызвано в течение 30 секунд, будет считаться, что время ожидания вашего приложения истекло, и появится экран с сообщением об ошибке с параметром Retry.
+3. **Необязательный** параметр. Если вы готовы к печати на экране и хотите выполнить отложенную загрузку оставшейся части содержимого приложения, можно вручную скрыть индикатор загрузки, вызвав `microsoftTeams.appInitialization.notifyAppLoaded();`
+4. **Обязательный** параметр. Наконец, вызовите `microsoftTeams.appInitialization.notifySuccess()` Teams, чтобы уведомить Teams о том, что приложение успешно загружено. Затем команды скрывают индикатор загрузки, если это необходимо. Если оно  `notifySuccess`  не вызвано в течение 30 секунд, будет считаться, что время ожидания вашего приложения истекло, и появится экран с сообщением об ошибке с параметром Retry.
 5. Если приложение не удается загрузить, вы можете позвонить, `microsoftTeams.appInitialization.notifyFailure(reason);` чтобы разрешить Teams знать об ошибке. Затем пользователю будет показан экран ошибки:
 
 ```typescript
