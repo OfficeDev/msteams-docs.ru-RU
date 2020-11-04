@@ -243,6 +243,8 @@
               href: bots/how-to/authentication/auth-flow-bot.md
             - name: Добавить аутентификацию для вашего бота
               href: bots/how-to/authentication/add-authentication.md
+            - name: Поддержка единого входа для ботов
+              href: bots/how-to/authentication/auth-aad-sso-bots.md
         - name: Отформатируйте сообщение бота
           href: bots/how-to/format-your-bot-messages.md
         - name: Обновлять и удалять сообщения ботов
