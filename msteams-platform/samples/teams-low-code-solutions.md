@@ -4,12 +4,12 @@ author: laujan
 description: Сведения о доступных решениях Microsoft для Microsoft Teams и без кода
 ms.author: lajanuar
 ms.topic: overview
-ms.openlocfilehash: 4b112a674df76d0bd33e1b461d6b2f194f764f7b
-ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
+ms.openlocfilehash: 2dc9f6ed17a11407efbd4496439848266fc0a604
+ms.sourcegitcommit: 99c35de7e2c604bd8bce392242c2c2fa709cd50b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48210348"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931759"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание приложений с небольшим объемом кода для Microsoft Teams
 
@@ -68,7 +68,7 @@ Virtual Assistant — это шаблон Microsoft Open-Source, который 
 
 ### <a name="-power-platform-learn-modules"></a>Модули для изучения ✔ной платформы
 
-|Раздел|
+|Тема|
 |-----|
 |**Power BI**|
 |[Power BI для студии приложений](/learn/browse/?expanded=power-platform&products=power-bi&roles=maker)|
@@ -94,3 +94,8 @@ Virtual Assistant — это шаблон Microsoft Open-Source, который 
 [Объявление о платформе управления питанием и обновлениях Teams, чтобы помочь клиентам адаптироваться к удаленным работам](https://cloudblogs.microsoft.com/powerplatform/2020/05/19/announcing-power-platform-and-teams-updates-to-help-customers-adapt-to-remote-work/)
 
 [Teams — это будущая работа с недостаточными функциями кода для расширения вашей цифровой рабочей области.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/teams-is-shaping-the-future-of-work-with-low-code-features-to/ba-p/1507180)
+
+### <a name="-managing-power-platform-apps"></a>✔ Управление приложениями Power Platform
+
+> [!div class="nextstepaction"]
+> [Управление приложениями платформы энергопотребления Майкрософт в центре администрирования Microsoft Teams](/microsoftteams/manage-power-platform-apps)
