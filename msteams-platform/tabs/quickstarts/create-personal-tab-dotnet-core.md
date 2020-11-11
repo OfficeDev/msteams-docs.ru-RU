@@ -4,14 +4,14 @@ author: laujan
 description: Руководство по созданию настраиваемой личной вкладки с ядром ASP.NET.
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: c6b58ffd09f952a6237b765e5457fe7a8e943390
-ms.sourcegitcommit: aabfd65a67e1889ec16f09476bc757dd4a46ec5b
+ms.openlocfilehash: 3eb0c42bb81ec8b2d906863051bd551c88c35f57
+ms.sourcegitcommit: fdb53284a20285f7e8a7daf25e85cb5d06c52b95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48097881"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48992633"
 ---
-# <a name="create-a-custom-personal-tab-with-aspnet-core"></a>Создание настраиваемой вкладки личных компонентов с ASP.NET
+# <a name="create-a-personal-tab-with-aspnet-core"></a>Создание личной вкладки с ядром ASP.NET
 
 В этом руководстве мы рассмотрим создание настраиваемой вкладки личного уровня с основными страницами Razor для C# и ASP.Net. Мы также используем [Приложение App Studio для Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) , чтобы завершить манифест приложения и развернуть вкладку в Teams.
 
@@ -109,7 +109,7 @@ ngrok http https://localhost:44325 -host-header="localhost:44325"
 - Убедитесь, что *ngrok* работает и правильно работает, открыв браузер и перейдя на страницу содержимого с помощью URL-адреса ngrok HTTPS, который был предоставлен в окне командной строки.
 
 >[!TIP]
->Для выполнения этого краткого руководства необходимо одновременное выполнение приложения в Visual Studio и ngrok. Если вам нужно остановить работу приложения в Visual Studio для работы с ним, **Держите ngrok**в рабочем процессе. Он будет продолжать прослушивать и возобновить маршрутизацию запроса приложения при его перезапуске в Visual Studio. Если необходимо перезапустить службу ngrok, будет возвращен новый URL-адрес, и вам потребуется обновить все место, где используется этот URL-адрес.
+>Для выполнения этого краткого руководства необходимо одновременное выполнение приложения в Visual Studio и ngrok. Если вам нужно остановить работу приложения в Visual Studio для работы с ним, **Держите ngrok** в рабочем процессе. Он будет продолжать прослушивать и возобновить маршрутизацию запроса приложения при его перезапуске в Visual Studio. Если необходимо перезапустить службу ngrok, будет возвращен новый URL-адрес, и вам потребуется обновить все место, где используется этот URL-адрес.
 
 ### <a name="run-your-application"></a>Запуск приложения
 
