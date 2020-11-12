@@ -3,22 +3,22 @@ title: Справочные материалы по схеме JSON файла �
 description: Описывает схему локализации, поддерживаемую файлом локализации для Microsoft Teams.
 keywords: Локализация схемы манифеста Teams
 ms.date: 05/20/2019
-ms.openlocfilehash: 061729ecb5110c99d8f85f144796f1a78b266c3d
-ms.sourcegitcommit: bac0226d9048c363d96bbaf6f5395388c5f5c45a
+ms.openlocfilehash: 2c0f449ef0b018e0ed377ea8f5d79b285b36e829
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039281"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997967"
 ---
 # <a name="reference-localization-file-json-schema"></a>Ссылка: Схема файла локализации JSON
 
-Файл локализации Microsoft Teams описывает переводы языка, которые будут обрабатываться в соответствии с языковыми параметрами клиента. Файл должен соответствовать схеме, размещенной на сайте [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json) . Дополнительные сведения см. в разделе [локализация приложений](~/concepts/build-and-test/apps-localization.md).
+Файл локализации Microsoft Teams описывает переводы языка, которые будут обрабатываться в соответствии с языковыми параметрами клиента. Файл должен соответствовать схеме, размещенной на сайте [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json) . Дополнительные сведения см. в разделе [локализация приложений](~/concepts/build-and-test/apps-localization.md).
 
 ## <a name="sample"></a>Пример
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "name.short": "Le App Studio",
   "name.full": "App Studio pour Microsoft Teams",
   "description.short": "Créez d'excellentes applications pour Microsoft Teams avec App Studio.",
@@ -40,7 +40,7 @@ ms.locfileid: "45039281"
 URL-адрес https://, ссылающийся на схему JSON для манифеста.
 
 > [!TIP]
-> Укажите схему в начале манифеста, чтобы включить поддержку IntelliSense или аналогичную поддержку в редакторе кода:`"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",`
+> Укажите схему в начале манифеста, чтобы включить поддержку IntelliSense или аналогичную поддержку в редакторе кода: `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
 
 ## <a name="nameshort"></a>Name. Short
 

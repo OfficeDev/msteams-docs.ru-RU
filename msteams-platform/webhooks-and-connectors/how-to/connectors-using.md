@@ -3,12 +3,12 @@ title: Отправка сообщений соединителям и веб-п
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 localization_priority: Priority
 keywords: соединитель teams o365
-ms.openlocfilehash: bfcee2c00d30517522621f61142324b4f81a93f8
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+ms.openlocfilehash: 913e441e6953102eeef2295625ce3e0734934bd9
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237967"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48998009"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -135,7 +135,7 @@ ms.locfileid: "48237967"
 
 Выполните указанные ниже действия, чтобы отправить простую карточку в соединитель.
 
-1. В Microsoft Teams нажмите **Дополнительные параметры** (**&#8943;**) рядом с названием канала и выберите **Соединители**.
+1. В Microsoft Teams нажмите **Дополнительные параметры** ( **&#8943;** ) рядом с названием канала и выберите **Соединители**.
 2. Прокрутите список соединителей до пункта **Входящий веб-перехватчик** и нажмите кнопку **Добавить**.
 3. Введите имя веб-перехватчика, отправьте изображение, которое следует связать с данными от веб-перехватчика, и нажмите кнопку **Создать**.
 4. Скопируйте веб-перехватчик в буфер обмена и сохраните его. Для отправки информации в Microsoft Teams вам потребуется URL-адрес веб-перехватчика.
@@ -185,7 +185,7 @@ ms.locfileid: "48237967"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "id": "e9343a03-0a5e-4c1f-95a8-263a565505a5",
   "version": "1.0",
@@ -297,7 +297,7 @@ ms.locfileid: "48237967"
 | 7200 | 150  |
 | 86 400  | 1800  |
 
-*Также см. * [Соединители Office 365 — Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
+*Также см.* [Соединители Office 365 — Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
 
 [Логика повторных попыток с экспоненциальной задержкой](/azure/architecture/patterns/retry), подобная приведенной ниже, поможет избежать ограничения скорости в тех случаях, когда число запросов за секунду превышает пределы. Следуйте [рекомендациям](../../bots/how-to/rate-limit.md#best-practices), чтобы предотвратить достижение пределов скорости.
 

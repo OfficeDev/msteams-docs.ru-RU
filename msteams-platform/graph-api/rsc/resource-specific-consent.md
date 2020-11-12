@@ -4,14 +4,14 @@ description: В этой статье описывается согласие с
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
-ms.topic: Overview
+ms.topic: reference
 keywords: Авторизация в Teams единого входа OAuth RSC Graph
-ms.openlocfilehash: e7a59497b77b303b6ef06582828f7c5cb36dbb58
-ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
+ms.openlocfilehash: cbeb1069f7f80608ec3a65710543b429e6f2908b
+ms.sourcegitcommit: f6029c8ff0c5315613a3efcd86777aa4cede39e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796195"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995025"
 ---
 # <a name="resource-specific-consent-rsc"></a>Согласие с конкретным ресурсом (RSC)
 
@@ -22,21 +22,21 @@ ms.locfileid: "48796195"
 
 ## <a name="resource-specific-permissions"></a>Разрешения для определенных ресурсов
 
-|Разрешение приложения| Action |
+|Разрешение приложения| Действие |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получение параметров для этой команды.|
-|Теамсеттингс. ReadWrite. Group|Обновление параметров для этой команды.|
+|TeamSettings.ReadWrite.Group|Обновление параметров для команды.|
 |ChannelSettings.Read.Group|Получите имена каналов, описания каналов и параметры канала для этой команды.|
-|Чаннелсеттингс. ReadWrite. Group|Обновите имена каналов, описания каналов и параметры канала для этой команды.|
+|ChannelSettings.ReadWrite.Group|Обновите имена каналов, описания каналов и параметры канала для этой команды.|
 |Channel.Create.Group|Создание каналов в этой команде.|
 |Channel.Delete.Group|Удаление каналов в этой команде.|
 |ChannelMessage.Read.Group |Получение сообщений о каналах этой группы.|
-|Теамсаппинсталлатион. Read. Group|Получение списка установленных приложений этой группы.|
+|TeamsAppInstallation.Read.Group|Получение списка установленных приложений этой группы.|
 |TeamsTab.Read.Group|Получение списка вкладок этой группы.|
 |TeamsTab.Create.Group|Создание вкладок в этой команде.|
-|TeamsTab. ReadWrite. Group|Обновите вкладки этой группы.|
+|TeamsTab.ReadWrite.Group|Обновление вкладок этой команды.|
 |TeamsTab.Delete.Group|Удаление вкладок этой команды.|
-|Теаммембер. Read. Group|Получение сведений о членах этой группы.|
+|TeamMember.Read.Group|Получение сведений о членах этой группы.|
 
 >[!NOTE]
 >Разрешения, связанные с ресурсами, доступны только для приложений Teams, установленных в клиенте Teams и в настоящее время не входят в состав портала Azure Active Directory.
@@ -60,7 +60,7 @@ ms.locfileid: "48796195"
 > [!div class="checklist"]
 >
 >- Войдите на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md#global-administrator--company-administrator).  
- > - [Выберите](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings) параметры разрешения пользователей для корпоративных приложений **Azure Active Directory**  =>  **Enterprise applications**  =>  **и соответствующие разрешения**  =>  **User consent settings** .
+ > - [Выберите](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings) параметры разрешения пользователей для корпоративных приложений **Azure Active Directory**  =>  **Enterprise applications**  =>  **и соответствующие разрешения**  =>  **User consent settings**.
 > - Разрешите, запретите или ограничьте согласие пользователя с помощью элемента управления " **согласие владельца группы" для приложений, обращающихся к данным** (по умолчанию **разрешено согласие владельца группы всем владельцам группы** ). Чтобы владелец команды установил приложение с помощью RSC, для него должно быть включено согласие владельца группы.
 
 ![Конфигурация Azure RSC](../../assets/images/azure-rsc-configuration.png)
@@ -147,9 +147,9 @@ ms.locfileid: "48796195"
 > - В клиенте Teams выберите **Teams (Teams** ) в крайней левой панели навигации.
 > - В раскрывающемся меню выберите команду, в которой установлено приложение.
 > - Выберите значок **Дополнительные параметры** (&#8943;).
-> - Выберите команду **получить ссылку на команду** .
+> - Выберите команду **получить ссылку на команду**.
 > - Скопируйте и сохраните значение **groupId** из строки.
-> - Войдите в **проводник Graph** .
+> - Войдите в **проводник Graph**.
 > - Выполните вызов **Get** для следующей конечной точки: `https://graph.microsoft.com/beta/groups/{teamGroupId}/permissionGrants` . Поле Клиентаппид в отклике будет сопоставляться с appId, указанным в манифесте приложения Teams.
   ![Ответ в проводнике Graph для получения вызова.](../../assets/images/graph-permissions.png)
  

@@ -4,12 +4,12 @@ author: clearab
 description: Добавление проверки подлинности OAuth для почтового робота в Microsoft Teams.
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 8e396842cb514eb3d3df6b71cafe9e79d9c2957a
-ms.sourcegitcommit: df9448681d2a81f1029aad5a5e1989cd438d1ae0
+ms.openlocfilehash: f79a87dbea74a696965614c1d60c37d282a39659
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877094"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48998016"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для ленты Teams
 
@@ -151,7 +151,7 @@ Note: для поставщиков услуг здесь доступны дв�
 
     ![представление adv1 боты в Teams для проверки подлинности приложения Teams](../../../assets/images/authentication/auth-bot-identity-connection-adv1.png)
 
-1. Выберите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 #### <a name="azure-ad-v2"></a>Azure AD v2
 
@@ -174,7 +174,7 @@ Note: для поставщиков услуг здесь доступны дв�
 
     1. Для **областей** введите разделенный пробелами список разрешений диаграммы, необходимых для этого приложения, например: User. Read User. ReadBasic. ALL mail. Read 
 
-1. Выберите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 ### <a name="test-the-connection"></a>Проверка подключения
 
@@ -418,7 +418,7 @@ Microsoft Teams — это полностью облачный продукт, �
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "version": "1.0.0",
   "id": "",
@@ -569,10 +569,10 @@ protected virtual Task OnSigninVerifyStateAsync(ITurnContext<IInvokeActivity> tu
 
 [azure-portal]: https://ms.portal.azure.com
 
-[concept-basics]: https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0
-[concept-state]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0
-[concept-dialogs]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0
-[simple-dialog]: https://docs.microsoft.com/azure/bot-service/bot-builder-dialog-manage-conversation-flow?view=azure-bot-service-4.0
+[concept-basics]: https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&preserve-view=true
+[concept-state]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0&preserve-view=true
+[concept-dialogs]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0&preserve-view=true
+[simple-dialog]: https://docs.microsoft.com/azure/bot-service/bot-builder-dialog-manage-conversation-flow?view=azure-bot-service-4.0&preserve-view=true
 
 [teams-auth-bot-cs]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth
 

@@ -3,17 +3,17 @@ title: Документация по Microsoft Teams
 description: действия по созданию и публикации документации по Teams
 author: laujan
 ms.author: lajanuar
-ms.topic: how to
-ms.openlocfilehash: 5e76c6521792d7db1b589d7e6ad3fe0ac2bd8479
-ms.sourcegitcommit: 6c692734a382865531a83b9ebd6f604212f484fc
+ms.topic: contributor-guide
+ms.openlocfilehash: 80aaf7795a226c0437140fe72e1d74b07fa66775
+ms.sourcegitcommit: f6029c8ff0c5315613a3efcd86777aa4cede39e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "44801194"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995018"
 ---
 # <a name="contributing-to-microsoft-teams-documentation"></a>Документация по Microsoft Teams
 
-[Документация по Teams](/microsoftteams/platform/overview) входит в состав библиотеки документов в технической документации [корпорации Майкрософт](https://docs.microsoft.com/) . Содержимое организовано в группы под названием доксетс, каждый из которых представляет группу связанных документов, управляемых как единый объект. В статьях с одинаковыми Доксет по URL-адресам после файла * <span></span> microsoft.com.*.  Например, `/docs.microsoft.com/microsoftteams/...` это начало пути к файлу Teams Доксет. Статьи в Teams написаны на основе синтаксиса [MarkDown](#markdown-reference) и размещены на сайте [GitHub](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform).
+[Документация по Teams](/microsoftteams/platform/overview) входит в состав библиотеки документов в технической документации [корпорации Майкрософт](https://docs.microsoft.com/) . Содержимое организовано в группы под названием доксетс, каждый из которых представляет группу связанных документов, управляемых как единый объект. В статьях с одинаковыми Доксет по URL-адресам после файла *<span></span> microsoft.com.*.  Например,  `/docs.microsoft.com/microsoftteams/...`   это начало пути к файлу Teams Доксет. Статьи в Teams написаны на основе синтаксиса  [MarkDown](#markdown-reference) и размещены на сайте [GitHub](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform).
 
 ## <a name="set-up-your-workspace"></a>Настройка рабочей области
 
@@ -22,7 +22,7 @@ ms.locfileid: "44801194"
 > * Установите [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 > * Установите [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 > * Установка [пакета разработки документов](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) непосредственно из VS Code Marketplace
-<br>&emsp;&emsp;также
+<br>&emsp;&emsp; также
 
 > [!div class="checklist"]
 >
@@ -58,10 +58,10 @@ ms.locfileid: "44801194"
 > Чтобы сослаться на статью, которая является *частью* платформы Teams Доксет, выполните следующие действия:<br>
 > &emsp;&#x2714; использовать относительный путь без предшествующей косой черты.<br>
 > &emsp;&#x2714; включить расширение файла Markdown.<br>
->Пример: **родительский каталог/каталог/путь к статье. md** — >`[Building an app for Microsoft Teams](../concepts/building-an-app.md)` <br><br>
+>Пример:  **родительский каталог/каталог/путь к статье. md** — > `[Building an app for Microsoft Teams](../concepts/building-an-app.md)` <br><br>
 > Чтобы сослаться на статью Microsoft документов Library ( <https://docs.microsoft.com/> ), которая *не входит* в платформу Teams Доксет:<br>
 > &emsp;&#x2714; использовать относительный путь, начинающийся со знака косой черты.<br>
-> &emsp;&#x2714; не включайте расширение файла. <br> Пример: **/Доксет/Аддресс-то-филе-локатион** — >`[Use the Microsoft Graph API to work with Microsoft Teams](/graph/api/resources/teams-api-overview)`
+> &emsp;&#x2714; не включайте расширение файла. <br> Пример:  **/Доксет/Аддресс-то-филе-локатион** — > `[Use the Microsoft Graph API to work with Microsoft Teams](/graph/api/resources/teams-api-overview)`
 >
 
 ## <a name="code-samples-and-snippets"></a>Примеры кода и фрагменты кода

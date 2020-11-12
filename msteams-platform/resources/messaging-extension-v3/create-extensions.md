@@ -2,12 +2,12 @@
 title: Запуск действий с расширениями обмена сообщениями
 description: Создайте расширения для обмена сообщениями на основе действий, чтобы разрешить пользователям запускать внешние службы.
 keywords: службы расширения обмена сообщениями Teams.
-ms.openlocfilehash: 4eb5984f4a75f185accfe7ba87e9389361946959
-ms.sourcegitcommit: 6c786434b56cc8c2765a14aa1f6149870245f309
+ms.openlocfilehash: dd88360e342788fc0505809c6c8281c64fb7afbb
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44801549"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997995"
 ---
 # <a name="initiate-actions-with-messaging-extensions"></a>Запуск действий с расширениями обмена сообщениями
 
@@ -29,7 +29,7 @@ ms.locfileid: "44801549"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "version": "1.0",
   "id": "57a3c29f-1fc5-4d97-a142-35bb662b7b23",
@@ -226,7 +226,7 @@ ms.locfileid: "44801549"
 
 Вы можете проверить расширение системы обмена сообщениями, отправив свое приложение. Сведения о [том, как загрузить ваше приложение в группу,](~/concepts/deploy-and-publish/apps-upload.md) можно найти в разделе.
 
-Чтобы открыть расширение системы обмена сообщениями, перейдите к любому из бесед или каналов. Нажмите кнопку **Дополнительные параметры** (**&#8943;**) в поле создать и выберите ваш добавочный номер для обмена сообщениями.
+Чтобы открыть расширение системы обмена сообщениями, перейдите к любому из бесед или каналов. Нажмите кнопку **Дополнительные параметры** ( **&#8943;** ) в поле создать и выберите ваш добавочный номер для обмена сообщениями.
 
 ## <a name="collecting-input-from-users"></a>Сбор данных, вводимых пользователями
 

@@ -5,12 +5,12 @@ description: Создание приложений для собраний в Te
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: cf42d660c9b4a82f8e28d4d4379194c1bcc681e1
-ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
+ms.openlocfilehash: d7dc812f715b6a7edbcc706946b8d80dd692daee
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796171"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997974"
 ---
 # <a name="create-apps-for-teams-meetings-developer-preview"></a>Создание приложений для собраний в Teams (Предварительная версия для разработчиков)
 
@@ -29,9 +29,11 @@ ms.locfileid: "48796171"
 
 1. Разработчикам следует соблюдать общие [рекомендации по проектированию вкладок Teams](../tabs/design/tabs.md) для сценариев, выполняемых перед и после собраний, а также [указания по диалоговому](design/designing-in-meeting-dialog.md) окну для собраний в диалоговом окне для собраний, инициированном во время собрания Teams.
 
+1. Обратите внимание, что чтобы приложение обновлялось в режиме реального времени, оно должно быть актуальным в соответствии с действиями событий в собрании. Эти события могут находиться в диалоговом окне собрания (обратитесь к `bot Id` параметру завершения в `Notification Signal API` ) и другим поверхностям во время жизненного цикла собрания.
+
 ## <a name="meeting-apps-api-reference"></a>Справочные материалы по API приложений для собраний
 
-|API|Описание|Запрос|Источник|
+|API|Описание|Запрос|Source|
 |---|---|----|---|
 |**жетусерконтекст**| Получение контекстной информации для отображения релевантного контента на вкладке "команды". |_**microsoftTeams. SPContext (() => {/ *...* / } )**_|Пакет SDK для клиента Microsoft Teams|
 |**В качестве имени участника**|Этот API позволяет интерфейсу Bot получать сведения об участниках по идентификатору собрания и идентификатору участника.|**Получение** _**/v1/meetings/{meetingId}/Participants/{participantId}? tenantId = {tenantId}**_ |Пакет SDK Microsoft Bot Framework|
@@ -52,6 +54,7 @@ ms.locfileid: "48796171"
 > * В настоящее время Teams не поддерживает большие списки рассылки или размеры списков, более 350 участников для `GetParticipant` API.
 >
 > * Поддержка пакет SDK для ленты скоро будет доступна.
+
 
 #### <a name="request"></a>Запрос
 
@@ -97,7 +100,7 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 #### <a name="response-payload"></a>Полезные данные ответа
 <!-- markdownlint-disable MD036 -->
 
-**роль** в разделе "собрание" может быть *организатором* , *докладчиком* или *участником* .
+**роль** в разделе "собрание" может быть *организатором* , *докладчиком* или *участником*.
 
 **Пример 1**
 
@@ -128,10 +131,15 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 ```
 #### <a name="response-codes"></a>Коды ответов
 
-**403** : приложению не разрешено получать сведения об участнике. Это наиболее распространенный ответ об ошибке, который активируется, когда приложение не установлено в собрании, например, когда приложение отключено администратором клиента или блокируется во время снижения риска для Live сайта.  
-**200** : сведения о участниках успешно получены  
-**401** : недопустимый маркер  
-**404** : собрание не существует или не удается найти его участника.
+**403** : приложению не разрешено получать сведения об участнике. Это наиболее распространенный ответ об ошибке, который активируется, когда приложение не установлено на собрании, например, когда оно отключено администратором клиента или блокируется во время миграции Live site.  
+**200** : сведения о участниках успешно получены.  
+**401** : недопустимый маркер.  
+**404** : не удается найти участника. 
+**500** : срок действия собрания истечет (более 60 дней с момента завершения собрания), или у участника нет разрешений на основе их роли.
+
+**Ожидается в ближайшее время**
+
+**404** : срок действия собрания истек или участник не может быть найден. 
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="notificationsignal-api"></a>API Нотификатионсигнал
@@ -155,7 +163,10 @@ POST /v3/conversations/{conversationId}/activities
 
 > [!NOTE]
 >
-> Комплетионботид в Екстерналресаурцеурл в полезных данных запроса является необязательным параметром. Это идентификатор Bot, объявленный в манифесте. Bot получит объект Result.
+> *  В приведенных ниже полезных полезных данных `completionBotId` параметр `externalResourceUrl` является необязательным. Это то `Bot ID` , что объявлено в манифесте. Bot получит объект Result.
+> * Параметры ширины и высоты Екстерналресаурцеурл должны находиться в точках. Ознакомьтесь с [рекомендациями по проектированию](design/designing-in-meeting-dialog.md) , чтобы убедиться в том, что размеры находятся в пределах допустимых пределов.
+> * URL-адрес — это страница, загруженная в `<iframe>` диалоговом окне для собраний. Домен URL-адреса должен находиться в `validDomains` массиве приложения в манифесте приложения.
+
 
 # <a name="json"></a>[JSON](#tab/json)
 
@@ -167,7 +178,7 @@ POST /v3/conversations/{conversationId}/activities
     "channelData": {
         "notification": {
             "alertInMeeting": true,
-            "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID"
+            "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=<url>&height=<height>&width=<width>&title=<title>&completionBotId=BOT_APP_ID"
         }
     },
     "replyToId": "1493070356924"
@@ -181,7 +192,7 @@ Activity activity = MessageFactory.Text("This is a meeting signal test");
 MeetingNotification notification = new MeetingNotification
   {
     AlertInMeeting = true,
-    ExternalResourceUrl = "https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID"
+    ExternalResourceUrl = "https://teams.microsoft.com/l/bubble/APP_ID?url=<url>&height=<height>&width=<width>&title=<title>&completionBotId=BOT_APP_ID"
   };
 activity.ChannelData = new TeamsChannelData
   {
@@ -198,7 +209,7 @@ const replyActivity = MessageFactory.text('Hi'); // this could be an adaptive ca
 replyActivity.channelData = {
     notification: {
         alertInMeeting: true,
-        externalResourceUrl: 'https://teams.microsoft.com/l/bubble/APP_ID?url=<TaskInfo.url>&height=<TaskInfo.height>&width=<TaskInfo.width>&title=<TaskInfo.title>&completionBotId=BOT_APP_ID’
+        externalResourceUrl: 'https://teams.microsoft.com/l/bubble/APP_ID?url=<url>&height=<height>&width=<width>&title=<title>&completionBotId=BOT_APP_ID’
     }
 };
 await context.sendActivity(replyActivity);
@@ -261,13 +272,13 @@ await context.sendActivity(replyActivity);
 ## <a name="configure-your-app-for-meeting-scenarios"></a>Настройка приложения для сценариев собраний
 
 > [!NOTE]
-> * Чтобы ваше приложение отображалось в коллекции вкладок, оно должно **поддерживать настраиваемые вкладки** и **область применения группового чата** .
+> * Чтобы ваше приложение отображалось в коллекции вкладок, оно должно **поддерживать настраиваемые вкладки** и **область применения группового чата**.
 >
 > * Мобильные клиенты поддерживают вкладки только на поверхностях предварительных и посылаемых собраний. Скоро будет доступен интерфейс для собраний (диалоговое окно и панель на собрании) на мобильном устройстве. Следуйте [указаниям по использованию вкладок на мобильном устройстве](../tabs/design/tabs-mobile.md) при создании вкладок для мобильного устройства. 
 
 ### <a name="pre-meeting"></a>Предварительное собрание
 
-Пользователи с ролями органайзера и докладчика добавляют вкладки на собрание с помощью кнопки "плюс ➕" в разделе " **беседы** для собраний" и " **сведения о** собрании". Расширения обмена сообщениями добавляются в меню "многоточия/переполнение" &#x25CF;&#x25CF;&#x25CF; , расположенного под областью создание сообщения в чате. Боты добавляются в чат для собрания с помощью **@** ключа "" и выбора **Get Боты** .
+Пользователи с ролями органайзера и докладчика добавляют вкладки на собрание с помощью кнопки "плюс ➕" в разделе " **беседы** для собраний" и " **сведения о** собрании". Расширения обмена сообщениями добавляются в меню "многоточия/переполнение" &#x25CF;&#x25CF;&#x25CF; , расположенного под областью создание сообщения в чате. Боты добавляются в чат для собрания с помощью **@** ключа "" и выбора **Get Боты**.
 
 ✔ Удостоверение пользователя *должно* быть подтверждено с помощью [единого входа вкладок](../tabs/how-to/authentication/auth-aad-sso.md). После проверки подлинности приложение может получить роль пользователя через API-участник.
 

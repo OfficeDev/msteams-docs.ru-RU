@@ -4,24 +4,24 @@ description: Details проверка согласия конкретного р
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
-ms.topic: How-to
+ms.topic: tutorial
 keywords: Диаграмма Microsoft Teams SSO единого входа OAuth RSC POST
-ms.openlocfilehash: a7384222e5e4cba164f918186ce53b4c1b702016
-ms.sourcegitcommit: 3e94edba28e9e1252b6a6ba35d4df32710dfc5d4
+ms.openlocfilehash: f780829100e47ad04a588106e83843876b8d7932
+ms.sourcegitcommit: f6029c8ff0c5315613a3efcd86777aa4cede39e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531268"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995011"
 ---
 # <a name="test-resource-specific-consent-permissions--in-teams"></a>Проверка разрешений согласия для определенных ресурсов в Teams
 
-Согласие с конкретными ресурсами (RSC) — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными командами в Организации. *Ознакомьтесь*с разделом[согласия для определенных ресурсов (RSC) — API Microsoft Teams Graph](resource-specific-consent.md).  
+Согласие с конкретными ресурсами (RSC) — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными командами в Организации. *Ознакомьтесь* с разделом [согласия для определенных ресурсов (RSC) — API Microsoft Teams Graph](resource-specific-consent.md).  
 
 > [!NOTE]
 >Для тестирования разрешений RSC файл манифеста приложения Teams должен содержать ключ **webApplicationInfo** , заполненный следующими полями:
 >
-> - **ID** — идентификатор приложения Azure AD, *см* . [Регистрация приложения на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).
-> - **ресурс** — любая строка, *просмотрев* заметку в [статье обновление манифеста приложения Teams](resource-specific-consent.md#update-your-teams-app-manifest)
+> - **ID**  — идентификатор приложения Azure AD, *см* . [Регистрация приложения на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).
+> - **ресурс**  — любая строка, *просмотрев* заметку в  [статье обновление манифеста приложения Teams](resource-specific-consent.md#update-your-teams-app-manifest)
 > - **разрешения приложения** — сведения о разрешениях RSC для вашего *приложения: сведения* о разрешениях для [ресурсов](resource-specific-consent.md#resource-specific-permissions).
 
 ```json
@@ -54,10 +54,10 @@ ms.locfileid: "46531268"
 
 Чтобы проверить, учитываются ли разрешения RSC в полезных данных запроса API, необходимо скопировать [код теста RSC JSON](test-rsc-json-file.md) в локальную среду и обновить следующие значения:
 
-1. `azureADAppId`— Идентификатор приложения Azure AD в приложении.
-1. `azureADAppSecret`— ваш секрет приложения Azure AD (пароль)
-1. `token_scope`— область требуется для получения маркера, чтобы задать значениеhttps://graph.microsoft.com/.default
-1. `teamGroupId`— Идентификатор группы Teams можно получить из клиента Teams следующим образом:
+1. `azureADAppId`  — Идентификатор приложения Azure AD в приложении.
+1. `azureADAppSecret`  — ваш секрет приложения Azure AD (пароль)
+1. `token_scope`  — область требуется для получения маркера, чтобы задать значение https://graph.microsoft.com/.default
+1. `teamGroupId` — Идентификатор группы Teams можно получить из клиента Teams следующим образом:
 
 > [!div class="checklist"]
 >

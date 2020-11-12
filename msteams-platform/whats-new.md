@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: b4e36ab00a784017cef20657e9ee548ed90f3efa
-ms.sourcegitcommit: d61f14053fc695bc1956bf50e83956613c19ccca
+ms.openlocfilehash: 69dec453483ec9edab3ad07abf57044ac93c2dee
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48452815"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997960"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -20,6 +20,7 @@ ms.locfileid: "48452815"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+|11/11/2020| Схема манифеста обновлена до версии 1,8| [Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 |9/30/2020|Теперь поддерживается отправка и получение файлов в боты на мобильных устройствах.|[Отправка и получение файлов через Bot](resources/bot-v3/bots-files.md)|
 |09/22/2020|Новое руководство "Приступая к работе с Teams"|[Создание обзора первого приложения Teams](build-your-first-app/build-first-app-overview.md)|
 |9/18/2020|Поддержка приложений для собраний в Teams (ознакомительная версия)|[Создание приложений для собраний и приложений для Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) [в собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|

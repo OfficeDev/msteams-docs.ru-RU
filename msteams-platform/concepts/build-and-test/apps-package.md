@@ -3,12 +3,12 @@ title: Упаковка приложения
 description: Узнайте, как упаковать приложение для тестирования, отправки и публикации в Microsoft Teams.
 keywords: Упаковка приложений Teams
 ms.topic: conceptual
-ms.openlocfilehash: d2d49dcc5c4ccada0a75de5df6fda29a60e809f6
-ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
+ms.openlocfilehash: aec25d3346a93e15f704435f3c6aa3ddca9fd435
+ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48397703"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997988"
 ---
 # <a name="create-an-app-package-for-your-microsoft-teams-app"></a>Создание пакета приложений для приложения Microsoft Teams
 
@@ -28,7 +28,7 @@ ms.locfileid: "48397703"
 > [!TIP]
 > Укажите схему в начале манифеста, чтобы включить поддержку IntelliSense или аналогичную поддержку в редакторе кода:
 >
-> `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",`
+> `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
 
 ## <a name="icons"></a>Значки
 
