@@ -3,12 +3,14 @@ title: Шаблоны приложений Microsoft Teams
 description: Ссылки и описания шаблонов приложений для платформы Microsoft Teams
 ms.topic: reference
 keywords: Демонстрация примеров шаблонов Microsoft Teams
-ms.openlocfilehash: 9bb93ab55d520265645cf999250bfdf6fae75ea6
-ms.sourcegitcommit: 560bf433129c16888135879e2703dbdeb38ec99f
+ms.author: lajanuar
+author: laujan
+ms.openlocfilehash: 5ab38f28cab22011fdcd7109f88663f4159a6356
+ms.sourcegitcommit: 03efdfb2feb115702c40adcd71d6e96eb5888cc7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48397731"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49019620"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -302,6 +304,23 @@ E-сценарии — это приложение на основе [Power Apps
 :::row:::
 :::column span="2":::
     ![Представление "личная область инцидентов"](../assets/images/incident-reporter-01.jpg)
+:::column-end:::
+:::row-end:::
+
+## <a name="new-employee-onboarding9734"></a>&#9734; нового входящей миграции сотрудников
+
+Новое решение входящей миграции сотрудников Microsoft Teams и SharePoint — это встроенное решение для входящей миграции [сотрудников](https://lookbook.microsoft.com/details/75e60a32-9849-4ed4-b83e-b2b08983ad19) , которое позволяет Организации обеспечивать согласованный и высококачественный процесс входящей миграции для сотрудников в ходе нового путешествия по найму. Приложение может использовать группы управления персоналом и менеджеры по найму для предоставления релевантной информации на протяжении всего процесса, а также с помощью новых сотрудников для обмена отзывами, предоставления введенных данных и выполнения задач по обеспечению входящей миграции.
+
+[Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-newemployeeonboarding)
+
+:::row:::
+  :::column span="2":::
+    Карточка приветствия **нового сотрудника** ![ Изображение карточки приветствия нового сотрудника](../assets/images/new-employee-welcome-card.png)
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
+    **Контрольный список** ![ нового сотрудника Изображение контрольного списка нового сотрудника](../assets/images/new-employee-checklist.png)  
 :::column-end:::
 :::row-end:::
 
