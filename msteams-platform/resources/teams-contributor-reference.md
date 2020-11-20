@@ -4,12 +4,12 @@ description: действия по созданию и публикации до
 author: laujan
 ms.author: lajanuar
 ms.topic: contributor-guide
-ms.openlocfilehash: 80aaf7795a226c0437140fe72e1d74b07fa66775
-ms.sourcegitcommit: f6029c8ff0c5315613a3efcd86777aa4cede39e6
+ms.openlocfilehash: 18aae61a674cf9c4c94831f22149cd4b9e7ebeda
+ms.sourcegitcommit: 43e1be9d9e3651ce73a8d2139e44d75550a0ca60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995018"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49366898"
 ---
 # <a name="contributing-to-microsoft-teams-documentation"></a>Документация по Microsoft Teams
 
@@ -34,7 +34,7 @@ ms.locfileid: "48995018"
 
 ## <a name="review-the-microsoft-docs-contributors-guide"></a>Обзор руководства по работе с документами Майкрософт
 
-[Руководство по участникам](/contribute) предлагает направление создания, публикации и обновления технического содержимого в Microsoft/Докс. *Кроме того, вы можете ознакомиться* [со стилем документов и кратким началом голоса](/contribute/style-quick-start) .
+Руководство по работе с [участниками](/contribute) предлагает направление создания, публикации и обновления технического содержимого на платформе документов Microsoft. *Кроме того, вы можете ознакомиться* [со стилем документов и кратким началом голоса](/contribute/style-quick-start) .
 
 ## <a name="microsoft-writing-style-and-content-guides"></a>Руководства по написанию, стилю и содержимому корпорации Майкрософт
 
@@ -59,10 +59,10 @@ ms.locfileid: "48995018"
 > &emsp;&#x2714; использовать относительный путь без предшествующей косой черты.<br>
 > &emsp;&#x2714; включить расширение файла Markdown.<br>
 >Пример:  **родительский каталог/каталог/путь к статье. md** — > `[Building an app for Microsoft Teams](../concepts/building-an-app.md)` <br><br>
-> Чтобы сослаться на статью Microsoft документов Library ( <https://docs.microsoft.com/> ), которая *не входит* в платформу Teams Доксет:<br>
+> Чтобы сослаться на статью, посвященную библиотеке документов Microsoft, которая *не является частью* платформы Teams Доксет:<br>
 > &emsp;&#x2714; использовать относительный путь, начинающийся со знака косой черты.<br>
-> &emsp;&#x2714; не включайте расширение файла. <br> Пример:  **/Доксет/Аддресс-то-филе-локатион** — > `[Use the Microsoft Graph API to work with Microsoft Teams](/graph/api/resources/teams-api-overview)`
->
+> &emsp;&#x2714; не включайте расширение файла. <br> Пример:  **/Доксет/Аддресс-то-филе-локатион** — > `[Use the Microsoft Graph API to work with Microsoft Teams](/graph/api/resources/teams-api-overview)`<br><br>
+> Чтобы сослаться на страницу за прев библиотеке документов Microsoft, например GitHub, используйте полный `https` путь к файлу.<br>
 
 ## <a name="code-samples-and-snippets"></a>Примеры кода и фрагменты кода
 

@@ -1,17 +1,17 @@
 ---
-title: Тестирование согласия конкретного ресурса в Teams
+title: Проверка согласия конкретного ресурса в Teams
 description: Details проверка согласия конкретного ресурса в Teams с использованием POST
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: Диаграмма Microsoft Teams SSO единого входа OAuth RSC POST
-ms.openlocfilehash: f780829100e47ad04a588106e83843876b8d7932
-ms.sourcegitcommit: f6029c8ff0c5315613a3efcd86777aa4cede39e6
+ms.openlocfilehash: f50f61e7eb62e3bcc6af2dafc1c7c781ff2145de
+ms.sourcegitcommit: 43e1be9d9e3651ce73a8d2139e44d75550a0ca60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995011"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49366856"
 ---
 # <a name="test-resource-specific-consent-permissions--in-teams"></a>Проверка разрешений согласия для определенных ресурсов в Teams
 
@@ -91,4 +91,5 @@ ms.locfileid: "48995011"
 
 > [!div class="nextstepaction"]
 >
-> [Дополнительные сведения о API Graph и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+> [Дополнительные сведения: API Microsoft Graph и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+

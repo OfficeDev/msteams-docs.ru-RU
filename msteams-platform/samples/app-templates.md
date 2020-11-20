@@ -5,12 +5,12 @@ ms.topic: reference
 keywords: Демонстрация примеров шаблонов Microsoft Teams
 ms.author: lajanuar
 author: laujan
-ms.openlocfilehash: 5ab38f28cab22011fdcd7109f88663f4159a6356
-ms.sourcegitcommit: 03efdfb2feb115702c40adcd71d6e96eb5888cc7
+ms.openlocfilehash: 3bf038b2d62a0805ae3f16fd879664d755108acf
+ms.sourcegitcommit: e70d41ae793a407fdbb71bc79ef7b67b40386c96
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49019620"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49358030"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -307,7 +307,7 @@ E-сценарии — это приложение на основе [Power Apps
 :::column-end:::
 :::row-end:::
 
-## <a name="new-employee-onboarding9734"></a>&#9734; нового входящей миграции сотрудников
+## <a name="new-employee-onboarding-9734"></a>&#9734; нового входящей миграции сотрудников
 
 Новое решение входящей миграции сотрудников Microsoft Teams и SharePoint — это встроенное решение для входящей миграции [сотрудников](https://lookbook.microsoft.com/details/75e60a32-9849-4ed4-b83e-b2b08983ad19) , которое позволяет Организации обеспечивать согласованный и высококачественный процесс входящей миграции для сотрудников в ходе нового путешествия по найму. Приложение может использовать группы управления персоналом и менеджеры по найму для предоставления релевантной информации на протяжении всего процесса, а также с помощью новых сотрудников для обмена отзывами, предоставления введенных данных и выполнения задач по обеспечению входящей миграции.
 
@@ -360,6 +360,20 @@ Poll — это приложение для [расширения системы
 [Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-quickresponses)
 
 ![Пример представления ответов](../assets/images/quick-responses.png)
+
+## <a name="reflect-9734"></a>Отражение &#9734;
+
+Отражение это пользовательское приложение для [расширения системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md) Microsoft Teams, которое предоставляет членам группы надежный и включающий ресурс для совместного использования емотионал и/или руководителей групп непосредственно в Teams. Приложение доступно в каналах, группах, собраниях и конференциях 1:1, а ответ на возврат можно установить как общедоступный, частный для отправителю или полностью анонимный.
+
+[Получение на сайте GitHub](https://github.com/OfficeDev/Microsoft-Teams-App-Reflect)
+
+:::row:::
+    :::column:::
+    **Хорошо идет опрос**
+    
+    ![Отражать опрос пользователя приложения](../assets/images/reflect-app-user-poll.png)
+    :::column-end:::
+:::row-end:::
 
 ## <a name="remote-support"></a>Удаленная поддержка
 

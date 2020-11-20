@@ -3,12 +3,12 @@ title: Форматирование текста в карточках
 description: Описание форматирования текста карточки в Microsoft Teams
 keywords: формат карточек Боты Teams
 ms.date: 03/29/2018
-ms.openlocfilehash: 944e6a69c68d284b3a7309063587bd4b75319bc7
-ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
+ms.openlocfilehash: fcf0692fe033cd3c30ea1e3ac7bda8ddd06297ca
+ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46587813"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49346709"
 ---
 # <a name="format-cards-in-teams"></a>Форматирование карточек в Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "46587813"
 
 Поддержка форматирования различается для разных типов карточек, а отображение карты может незначительно отличаться между настольным компьютером и мобильными клиентами Teams, а также с Teams в браузере настольного компьютера.
 
-Встроенное изображение можно добавить с помощью любой карточки Teams. Изображения в формате " `.png` ," `.jpg` или " `.gif` файлы" не должны превышать 1024 × 1024 px или 1 МБ. Анимированный GIF-файл не поддерживается официально. *См* . [Справочник по карточкам](./cards-reference.md#inline-card-images)
+Встроенное изображение можно добавить с помощью любой карточки Teams. Изображения в формате "  `.png` ," `.jpg` или " `.gif` файлы" не должны превышать 1024 × 1024 px или 1 МБ. Анимированный GIF-файл не поддерживается официально. *См* . [Справочник по карточкам](./cards-reference.md#inline-card-images)
 
 ## <a name="formatting-cards-with-markdown"></a>Форматирование карточек с помощью Markdown
 
@@ -32,7 +32,7 @@ ms.locfileid: "46587813"
 
  Поддерживаются следующие стили `Textblock` `Fact.Title` `Fact.Value` :
 
-| Стиль | Пример | Markdown |
+| Style | Пример | Markdown |
 | --- | --- | --- |
 | bold | **Bold** | ```**Bold**``` |
 | italic | _Italic_ | ```_Italic_``` |
@@ -79,7 +79,7 @@ ms.locfileid: "46587813"
 
 ``` json
 {
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
     "type": "AdaptiveCard",
     "version": "1.0",
     "body": [
@@ -103,7 +103,7 @@ ms.locfileid: "46587813"
         },
         {
             "type": "TextBlock",
-            "text": "Check out [Adaptive Cards](http://adaptivecards.io)"
+            "text": "Check out [Adaptive Cards](https://adaptivecards.io)"
         }
     ]
 }
@@ -123,7 +123,7 @@ ms.locfileid: "46587813"
 
 Чтобы включить в адаптивную карточку упоминание, необходимо, чтобы приложение включало следующие элементы:
 
-* `<at>username</at>`в поддерживаемых элементах адаптивной карточки
+* `<at>username</at>` в поддерживаемых элементах адаптивной карточки
 * `mention`Объект внутри `msteams` свойства в содержимом карточки, включающий идентификатор пользователя Teams для указанного пользователя.
 
 ### <a name="sample-adaptive-card-with-a-mention"></a>Пример адаптивной карточки с упоминанием
@@ -139,7 +139,7 @@ ms.locfileid: "46587813"
         "text": "Hi <at>John Doe</at>"
       }
     ],
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.0",
     "msteams": {
       "entities": [
@@ -161,11 +161,11 @@ ms.locfileid: "46587813"
 
 Карты соединителей поддерживают ограниченные Markdown и форматирование HTML. Поддержка HTML описана в предыдущем разделе.
 
-| Стиль | Пример | Markdown |
+| Style | Пример | Markdown |
 | --- | --- | --- |
 | bold | **text** | `**text**` |
 | italic | *text* | `*text*` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Текст** | `### Text`|
+| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `### Text`|
 | strikethrough | ~~text~~ | `~~text~~` |
 | неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | ```- Item 1\r- Item 2\r- Item 3``` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | ```1. Green\r2. Orange\r3. Blue``` |
@@ -202,7 +202,7 @@ ms.locfileid: "46587813"
   "contentType": "application/vnd.microsoft.teams.card.o365connector",
   "content": {
     "@type": "MessageCard",
-    "@context": "http://schema.org/extensions",
+    "@context": "https://schema.org/extensions",
     "summary": "Summary",
     "title": "Connector Card Markdown formatting",
     "sections": [
@@ -225,7 +225,7 @@ ms.locfileid: "46587813"
             "text": "Link: [Bing](https://www.bing.com)"
         },
         {
-            "text": "embedded image link: ![Duck on a rock](http://aka.ms/Fo983c)"
+            "text": "embedded image link: ![Duck on a rock](https://aka.ms/Fo983c)"
         },
         {
             "text": "`preformatted text`"
@@ -250,18 +250,18 @@ ms.locfileid: "46587813"
 
 Карты соединителей поддерживают ограниченные Markdown и форматирование HTML. Markdown описывается в следующем разделе.
 
-| Стиль | Пример | HTML |
+| Style | Пример | HTML |
 | --- | --- | --- |
 | bold | **text** | `<strong>text</strong>` |
 | italic | *text* | `<em>text</em>` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Текст** | `<h3>Text</h3>` |
+| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
 | strikethrough | ~~text~~ | `<strike>text</strike>` |
 | неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | `<ol><li>text</li><li>text</li></ol>` |
 | предварительно отформатированный текст | `text` | `<pre>text</pre>` |
 | blockquote | <blockquote>текст</blockquote> | `<blockquote>text</blockquote>` |
 | гиперссылка | [Bing](https://www.bing.com/) | `<a href="https://www.bing.com/">Bing</a>` |
-| Ссылка на изображение | <img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img> | `<img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
+| Ссылка на изображение | <img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img> | `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
 
 В соединительных карточках строки новой строки отображаются в HTML-коде с помощью `<p>` тега.
 
@@ -291,7 +291,7 @@ ms.locfileid: "46587813"
   "contentType": "application/vnd.microsoft.teams.card.o365connector",
   "content": {
     "@type": "MessageCard",
-    "@context": "http://schema.org/extensions",
+    "@context": "https://schema.org/extensions",
     "summary": "Summary",
     "title": "Connector Card HTML formatting",
     "sections": [
@@ -317,7 +317,7 @@ ms.locfileid: "46587813"
             "text": "hyperlink <a href=\"https://www.bing.com/\">Bing</a>"
         },
         {
-            "text": "embedded image <img src=\"http://aka.ms/Fo983c\" alt=\"Duck on a rock\"></img>"
+            "text": "embedded image <img src=\"https://aka.ms/Fo983c\" alt=\"Duck on a rock\"></img>"
         },
         {
             "text": "preformatted text <pre>text</pre>"
@@ -338,18 +338,18 @@ ms.locfileid: "46587813"
 
 Теги HTML поддерживаются для простых карточек, таких как карта главный Имиджевый баннер и эскиза. Markdown не поддерживается.
 
-| Стиль | Пример | HTML |
+| Style | Пример | HTML |
 | --- | --- | --- |
 | bold | **text** | `<strong>text</strong>` |
 | italic | *text* | `<em>text</em>` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Текст** | `<h3>Text</h3>` |
+| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
 | strikethrough | ~~text~~ | `<strike>text</strike>` |
 | неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | `<ol><li>text</li><li>text</li></ol>` |
 | предварительно отформатированный текст | `text` | `<pre>text</pre>` |
 | blockquote | <blockquote>текст</blockquote> | `<blockquote>text</blockquote>` |
 | гиперссылка | [Bing](https://www.bing.com/) | `<a href="https://www.bing.com/">Bing</a>` |
-| Ссылка на изображение |<img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img>| `<img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
+| Ссылка на изображение |<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>| `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
 
 ### <a name="mobile-and-desktop-differences-for-simple-cards"></a>Различия между мобильными и рабочими столами для простых карточек
 
@@ -377,6 +377,6 @@ ms.locfileid: "46587813"
 
 Эти снимки создаются с помощью Teams Аппстудио, где для свойства Text карточки главный Имиджевый баннер задано значение, равное следующей строке. Вы можете проверить форматирование в собственных карточках, изменив этот код.
 
-`<p>bold: <strong>Bold Text</strong></p><p>italic: <em>Italic Text</em></p><p>strikethrough: <strike>Strikethrough text</strike></p><h1>Header 1</h1><h2>Header 2</h2><h3>Header 3</h3><p>bullet list: <ul><li>text</li><li>text</li></ul></p><p>ordered list: <ol><li>text</li><li>text</li></ol></p><pre>preformatted text</pre><blockquote>blockquote text</blockquote></p><p>hyperlink: <a href=\"https://www.bing.com/\">Bing</a></p><p>embedded image: <img src=\"http://aka.ms/Fo983c\" alt=\"Duck on a rock\"></img></p>`
+`<p>bold: <strong>Bold Text</strong></p><p>italic: <em>Italic Text</em></p><p>strikethrough: <strike>Strikethrough text</strike></p><h1>Header 1</h1><h2>Header 2</h2><h3>Header 3</h3><p>bullet list: <ul><li>text</li><li>text</li></ul></p><p>ordered list: <ol><li>text</li><li>text</li></ol></p><pre>preformatted text</pre><blockquote>blockquote text</blockquote></p><p>hyperlink: <a href=\"https://www.bing.com/\">Bing</a></p><p>embedded image: <img src=\"https://aka.ms/Fo983c\" alt=\"Duck on a rock\"></img></p>`
 
 ---

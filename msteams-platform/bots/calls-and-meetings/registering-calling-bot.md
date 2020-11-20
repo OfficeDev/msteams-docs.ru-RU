@@ -2,12 +2,12 @@
 title: Регистрация абонентского абонента и ленты для Microsoft Teams
 description: Сведения о регистрации нового телефонного и видеоабонента для Microsoft Teams
 keywords: вызов медиа-данных аудио-и видеороликов Bot
-ms.openlocfilehash: 4db6c29352aa117e0dd1959826d0560359864d8a
-ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
+ms.openlocfilehash: d38b9584440bcff664bd3a2d4b57e52bc695f1b5
+ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48209755"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49346849"
 ---
 # <a name="register-a-calling-bot-for-microsoft-teams"></a>Регистрация абонентской ленты для Microsoft Teams
 
@@ -66,7 +66,7 @@ Microsoft Graph предоставляет детальные разрешени
 
 ### <a name="assigning-permissions"></a>Назначение разрешений
 
-Необходимо предварительно настроить разрешения приложения для ленты. Мы рекомендуем использовать [портал регистрации приложений (Майкрософт](https://apps.dev.microsoft.com/) ), как описано [здесь](/graph/auth_register_app_v2) , так как в этом случае вы настроили ваш Bot; Тем не менее, вы по-прежнему можете использовать [портал Azure](https://aka.ms/aadapplist) , если вы предпочитаете использовать [конечную точку Azure AD](/azure/active-directory/develop/azure-ad-endpoint-comparison)версии 1.
+Чтобы использовать [конечную точку Azure AD](/azure/active-directory/develop/azure-ad-endpoint-comparison)версии 1, необходимо предварительно настроить разрешения на доступ к приложениям для пользователя Bot с помощью [портала Azure](https://aka.ms/aadapplist) .
 
 ### <a name="getting-tenant-administrator-consent"></a>Обеспечение согласия администратора клиента
 

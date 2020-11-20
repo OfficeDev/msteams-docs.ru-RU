@@ -5,18 +5,18 @@ description: Быстрое создание личной вкладки Microso
 ms.author: lajanuar
 ms.date: 11/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: 17153b9b7cd7e6dd9052fc40073fec60a4d51f81
-ms.sourcegitcommit: 99c35de7e2c604bd8bce392242c2c2fa709cd50b
+ms.openlocfilehash: a82d3dcfd9529d88160c4193d27105c3468fe654
+ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931731"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49346807"
 ---
 # <a name="build-a-personal-tab-for-microsoft-teams"></a>Создание вкладки "Личное" для Microsoft Teams
 
 Вкладки — это простой способ отображения контента в приложении, по сути внедряя веб-страницу в Teams.
 
-В Teams есть два типа вкладок. В этом руководстве вы создадите базовую *вкладку личное* , страницу содержимого на полном экране для отдельных пользователей. (Личные вкладки — это ближайшее к традиционному интерфейсу веб-сайта в Teams.)
+В Teams есть два типа вкладок. В этом руководстве вы создадите базовую *вкладку личное*, страницу содержимого на полном экране для отдельных пользователей. (Личные вкладки — это ближайшее к традиционному интерфейсу веб-сайта в Teams.)
 
 ## <a name="before-you-begin"></a>Перед началом работы
 
@@ -106,7 +106,7 @@ a {
 
 ### <a name="get-context-about-the-teams-client"></a>Получение контекста о клиенте Teams
 
-В `Tab.js` файле существует `microsoftTeams.getContext()` вызов, который предоставляет некоторые сведения [`context`](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest&preserve-view=true) о настроенной клиентской теме (помимо других сведений). Благодаря формированию шаблонов приложений используйте этот код, чтобы получить доступ к `context` интерфейсу и его свойствам.
+В `Tab.js` файле существует `microsoftTeams.getContext()` вызов, который предоставляет некоторые сведения [`context`](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/context?view=msteams-client-js-latest&preserve-view=true) о настроенной клиентской теме (помимо других сведений). Благодаря формированию шаблонов приложений используйте этот код, чтобы получить доступ к `context` интерфейсу и его свойствам.
 
 ```JavaScript
 componentDidMount(){

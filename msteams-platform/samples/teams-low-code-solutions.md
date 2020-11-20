@@ -4,31 +4,31 @@ author: laujan
 description: Сведения о доступных решениях Microsoft для Microsoft Teams и без кода
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 089e436d43819f9aabe3ceb47760f521b014d93f
-ms.sourcegitcommit: f6029c8ff0c5315613a3efcd86777aa4cede39e6
+ms.openlocfilehash: 1166de0ae6e5512f4943ca1a3a7e74c62a0d5cf1
+ms.sourcegitcommit: 43e1be9d9e3651ce73a8d2139e44d75550a0ca60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995004"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49366891"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание приложений с небольшим объемом кода для Microsoft Teams
 
 [Microsoft Teams](/microsoftteams/platform) является расширяемым и адаптивным. Это означает, что у вас есть свобода создавать пользовательские приложения для Teams, которые удовлетворяют особым потребностям ваших пользователей. Несмотря на то, что вы можете создавать приложения "с нуля", с сегодняшней потребностью в быстрых решениях, можно использовать только те возможности, которые необходимы для создания элегантных приложений в сжатом промежутке времени.
 
-Недорогие платформы кода предоставляют интуитивно понятный подход к разработке программного обеспечения и практически не требуют написания кода для создания приложений и процессов. Разработчики, работающие с сотрудниками, могут легко создавать пользовательские приложения и профессиональные разработчики, что экспоненциально ускоряет процесс разработки и развертывания приложений. Большинство непроизводительных платформ состоят из визуального интерфейса, соединителей для внутренних служб и встроенной системы управления жизненным циклом приложений для создания, отладки, развертывания и обслуживания приложений. Корпорация Майкрософт предоставляет несколько инновационных шлюзов для быстрого создания приложений, совместимых с Teams, с помощью атрибутов с небольшим кодом:
+Недорогие платформы кода предоставляют интуитивно понятный подход к разработке программного обеспечения и практически не требуют написания кода для создания приложений и процессов. Разработчикам новичков разрешается легко создавать пользовательские приложения и профессиональные разработчики, что экспоненциально ускоряет процесс разработки и развертывания приложений. Большинство непроизводительных платформ состоят из визуального интерфейса, соединителей для внутренних служб и встроенной системы управления жизненным циклом приложений для создания, отладки, развертывания и обслуживания приложений. Корпорация Майкрософт предоставляет несколько инновационных шлюзов для быстрого создания приложений, совместимых с Teams, с помощью атрибутов с небольшим кодом:
 
 1. [Microsoft Power Platform](#teams-and-microsoft-power-platform)
 1. [Шаблоны приложений Microsoft Teams](#teams-app-templates)
 
 ## <a name="teams-and-microsoft-power-platform"></a>Teams и Microsoft Power Platform
 
-Microsoft Power Platform (/повер-платформ) сочетает в себе четыре надежные технологии Майкрософт на одной мощной платформе приложений. Power BI, Power Apps, Power Автоматизация (раньше) и виртуальные агенты энергопотребления позволяют создавать решения, автоматизировать процессы, анализировать данные и создавать виртуальные агенты в единой и интегрированной среде:
+[Microsoft Power Platform](/power-platform) сочетает в себе четыре надежные технологии Майкрософт на одной мощной платформе приложений. Power BI, Power Apps, Power Автоматизация (раньше) и виртуальные агенты энергопотребления позволяют создавать решения, автоматизировать процессы, анализировать данные и создавать виртуальные агенты в единой и интегрированной среде:
 
 :::image type="content" source="../assets/images/power-platform-and-teams/ms-power-platform.png" alt-text="Службы Power Platform":::
 
 ### <a name="-teams-and-power-bi"></a>✔ Teams и Power BI
 
-На [вкладке Power BI для Microsoft Teams](https://powerbi.microsoft.com/blog/announcing-new-power-bi-tab-for-microsoft-teams/) добавлена поддержка отчетов в рабочей области Teams и пользователи могут [совместно использовать интерактивное содержимое Power BI](/power-bi/collaborate-share/service-embed-report-microsoft-teams) , а также [совместно работать с другими](/power-bi/collaborate-share/service-collaborate-microsoft-teams) каналами и обсуждениями для групп. Вы можете создавать упакованное содержимое [приложения Power BI](/power-bi/collaborate-share/service-create-distribute-apps) с нуля и распространять его как приложение или можно [создать шаблонное приложение в Power BI](/connect-data/service-template-apps-create). Кроме того, вы можете использовать новое [приложение Power BI в Teams](https://go.microsoft.com/fwlink/?linkid=2143643) , чтобы обеспечить в Teams всю базовую среду Power BI Service.
+На [вкладке Power BI для Microsoft Teams](https://powerbi.microsoft.com/blog/announcing-new-power-bi-tab-for-microsoft-teams/) добавлена поддержка отчетов в рабочей области Teams и пользователи могут [совместно использовать интерактивное содержимое Power BI](/power-bi/collaborate-share/service-embed-report-microsoft-teams) и [работать совместно с другими пользователями в](/power-bi/collaborate-share/service-collaborate-microsoft-teams) каналах и обсуждениях Teams. Вы можете создать упакованный контент [приложения Power BI](/power-bi/collaborate-share/service-create-distribute-apps) с нуля и распространить его как приложение или вы можете [создать шаблонное приложение в Power BI](/connect-data/service-template-apps-create). Кроме того, вы можете использовать новое [приложение Power BI в Teams](https://go.microsoft.com/fwlink/?linkid=2143643) , чтобы обеспечить в Teams всю базовую среду Power BI Service.
 
 ### <a name="-teams-and-power-apps"></a>✔ Teams и Power Apps
 
@@ -52,7 +52,7 @@ Microsoft Power Platform (/повер-платформ) сочетает в се
 
 ### <a name="-app-template-catalog"></a>Каталог шаблонов приложений ✔
 
-[Шаблоны приложений](../samples/app-templates.md) — это готовые к работе приложения для Microsoft Teams, которые основаны на сообществах, Открытый источник и доступны на сайте GitHub. Каждый шаблон содержит подробные инструкции по развертыванию и установке этого приложения для вашей организации, предоставляя готовые к использованию приложение, которое можно установить и приступить к работе немедленно. Полный исходный код также доступен, поэтому вы можете изучить его подробно или разветвление кода и измените его в соответствии с вашими потребностями.
+[Шаблоны приложений](../samples/app-templates.md) — это готовые к работе приложения для Microsoft Teams, которые основаны на сообществах, Открытый источник и доступны на сайте GitHub. Каждый шаблон содержит подробные инструкции по развертыванию и установке приложения для Организации, предоставляя готовые к использованию приложение, которое можно установить и приступить к работе немедленно. Полный исходный код также доступен, поэтому вы можете изучить его подробно или разветвление кода и измените его в соответствии с вашими потребностями.
 
 ### <a name="-virtual-assistant-for-teams"></a>✔ Virtual Assistant для Teams
 
@@ -75,8 +75,8 @@ Virtual Assistant — это шаблон Microsoft Open-Source, который 
 |[Power BI для разработчиков](/learn/browse/?expanded=power-platform&products=power-bi&roles=developer)|
 |**Power Apps**|
 |[Power Apps для App Maker](/learn/browse/?products=power-apps&roles=maker)|
-|[Приложения для опытных разработчиков приложений](/learn/browse/?products=power-apps)|
-|**Power Automate**|
+|[Приложения для опытных разработчиков](/learn/browse/?products=power-apps)|
+|**Автоматизация управления питанием**|
 |[Автоматизация управления питанием для студии приложений](/learn/browse/?expanded=power-platform&products=power-automate&roles=maker)|
 |[Автоматизация управления для разработчиков](/learn/browse/?expanded=power-platform&products=power-automate&roles=developer)|
 |**Виртуальные агенты Power**|
@@ -85,7 +85,7 @@ Virtual Assistant — это шаблон Microsoft Open-Source, который 
 ### <a name="-project-oakdale-preview"></a>✔ Оакдале Project (Предварительная версия)
 
 [Project оакдале](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/teams-is-shaping-the-future-of-work-with-low-code-features-to/ba-p/1507180
-) — это новая платформа с недорогими данными, которая вскоре поступает в Microsoft Teams. Он позволит разработчикам создавать решения для платформы управления питанием в Teams непосредственно в Teams. Для получения дополнительных сведений *посетите* веб [-страницу Microsoft Project оакдале](https://powerapps.microsoft.com/blog/introducing-project-oakdale-a-new-low-code-data-platform-for-microsoft-teams) .
+) — это новая платформа с недорогими данными, которая вскоре поступает в Microsoft Teams. Он позволит разработчикам создавать решения для платформы управления питанием в Teams непосредственно в Teams. *Просмотрите* [блог Teams Microsoft Project оакдале](https://powerapps.microsoft.com/blog/introducing-project-oakdale-a-new-low-code-data-platform-for-microsoft-teams).
 
 ### <a name="-microsoft-blog-insights"></a>✔Ное представление блога Майкрософт
 
