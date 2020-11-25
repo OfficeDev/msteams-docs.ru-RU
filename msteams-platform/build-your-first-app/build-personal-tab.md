@@ -5,12 +5,12 @@ description: Быстрое создание личной вкладки Microso
 ms.author: lajanuar
 ms.date: 11/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: a82d3dcfd9529d88160c4193d27105c3468fe654
-ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
+ms.openlocfilehash: 89d9a2109a863402dd7641d0882c530a0c2e6f66
+ms.sourcegitcommit: aca9990e1f84b07b9e77c08bfeca4440eb4e64f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49346807"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409073"
 ---
 # <a name="build-a-personal-tab-for-microsoft-teams"></a>Создание вкладки "Личное" для Microsoft Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "49346807"
 
 В Teams есть два типа вкладок. В этом руководстве вы создадите базовую *вкладку личное*, страницу содержимого на полном экране для отдельных пользователей. (Личные вкладки — это ближайшее к традиционному интерфейсу веб-сайта в Teams.)
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Прежде чем начать
 
 Для начала необходимо создать базовую вкладку выполнение личных настроек. Если у вас его нет, ознакомьтесь [со статьей Создание и запуск первого приложения Teams](../build-your-first-app/build-and-run.md).
 

@@ -2,12 +2,12 @@
 title: Справочные материалы по проектированию
 description: Описывает рекомендации по использованию цвета в приложениях
 keywords: рекомендации по проектированию Teams на цвете компонентов
-ms.openlocfilehash: c6c0a421abbfc23959c7873d95aa89ca7cc685f2
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: dab223891e88615b52386d3692d4a98607d6d449
+ms.sourcegitcommit: aca9990e1f84b07b9e77c08bfeca4440eb4e64f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675276"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409066"
 ---
 # <a name="color"></a>Цвет
 
@@ -52,6 +52,9 @@ ms.locfileid: "41675276"
 
 <iframe height='798' scrolling='no' title='Рекомендации по проектированию Microsoft Teams — Темная цветовая шкала темы' src='//codepen.io/msteams/embed/BmBwjx/?height=846&theme-id=31655&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Ознакомьтесь с разделом "перо <a href='https://codepen.io/msteams/pen/BmBwjx/'>по проектированию Microsoft Teams — Темная цветовая шкала</a> " Microsoft Teams (<a href='https://codepen.io/msteams'>@msteams</a>) на <a href='https://codepen.io'>кодепен</a>.
 </iframe>
+
+> **Примечание:** В библиотеке мстеамс – UI – Styles — Core имеются фактические значения, закодированные как переменные. Эти переменные будут полезны, если цвета когда-либо обновляются.
+
 
 ### <a name="other-dark-theme-colors"></a>Другие темные цвета темы
 

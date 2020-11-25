@@ -2,12 +2,12 @@
 title: Поддержка единого входа для ботов
 description: Описывается получение маркера пользователя. В настоящее время для самостоятельного разработчика можно использовать карточку входа или службу Azure Bot с поддержкой карточки OAuth.
 keywords: маркер, маркер пользователя, поддержка единого входа для Боты
-ms.openlocfilehash: a056ce1a8bf0e59c9f4f30392df3bce7e8c63e00
-ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
+ms.openlocfilehash: f2f04cefdea874c42961404339f54b8eb581c7ee
+ms.sourcegitcommit: aca9990e1f84b07b9e77c08bfeca4440eb4e64f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49346856"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409101"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входа (SSO) для Боты
 
@@ -48,13 +48,16 @@ OAuth 2,0 — это открытый стандарт проверки подл
 
 Этот шаг аналогичен последующему [входу в табуляцию](../../../tabs/how-to/authentication/auth-aad-sso.md):
 
-1. Получение [идентификатора приложения Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in).
+1. Получение [идентификатора приложения Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in) для настольных, Интернет-и мобильных клиентов Teams.
 2. Укажите разрешения, необходимые вашему приложению для конечной точки Azure AD, и (при необходимости) Microsoft Graph.
 3. [Предоставление разрешений](/azure/active-directory/develop/howto-create-service-principal-portal#configure-access-policies-on-resources) для настольных приложений, веб-приложений и мобильных приложений Teams.
-4. Предварительная авторизация Teams, нажав кнопку **Добавить область** и на открывшейся панели, введите `access_as_user` **имя области**.
+4. Добавьте клиентское приложение, нажав кнопку **Добавить область** и на открывшейся панели, введите `access_as_user` **имя области**.
+
+>[!NOTE]
+> Область "access_as_user", используемая для добавления клиентского приложения, — "Администраторы и пользователи".
 
 > [!IMPORTANT]
-> * При создании автономной программы Bot задайте для идентификатора URI идентификатор приложения `api://botid-{YourBotId}` .
+> * Если вы создаете автономную программу Bot, задайте здесь идентификатор URI идентификатора приложения `api://botid-{YourBotId}` , **йоурботид** ссылается на идентификатор приложения Azure AD.
 > * Если вы создаете приложение с помощью ленты и вкладки, задайте для идентификатора URI идентификатор приложения `api://fully-qualified-domain-name.com/botid-{YourBotId}` .
 
 ### <a name="update-your-app-manifest"></a>Обновление манифеста приложения
@@ -78,6 +81,9 @@ OAuth 2,0 — это открытый стандарт проверки подл
 ### <a name="request-a-bot-token"></a>Запрос маркера Bot
 
 Запрос на получение маркера является обычным запросом POST Message (с использованием существующей схемы сообщения). Он включен в вложения объекта Оаускард. Схема для класса Оаускард определена в [схеме Microsoft Bot 4,0](/dotnet/api/microsoft.bot.schema.oauthcard?view=botbuilder-dotnet-stable&preserve-view=true) , и она очень похожа на карточку входа. Если `TokenExchangeResource` свойство заполнено на карточке, Teams будет обрабатывать этот запрос как необъявляемый токен. Для канала Teams мы соблюдаем только `Id` свойство, которое уникально идентифицирует запрос маркера.
+
+>[!NOTE]
+> `OAuthPrompt` `MultiProviderAuthDialog` Для проверки подлинности с использованием единого входа (Bot) или платформы.
 
 Если вы впервые используете приложение, а пользователь не дойдет согласие пользователя, в диалоговом окне будет отображаться диалоговое окно, в котором будет выполняться согласие, аналогичный приведенному ниже. Когда пользователь выбирает **Continue (продолжить**), выполняются два различных действия в зависимости от того, определен ли Bot или нет, и кнопку входа на оаускард.
 
@@ -116,14 +122,14 @@ var attachment = new Attachment
 **Код C#, реагирующий на обработку действия Invoke**:
 
 ```csharp
-protected override async Task<InvokeResponse> OnInvokeActivity
+protected override async Task<InvokeResponse> OnInvokeActivityAsync
   (ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
         {
             try
             {
                 if (turnContext.Activity.Name == SignInConstants.TokenExchangeOperationName && turnContext.Activity.ChannelId == Channels.Msteams)
                 {
-                    await OnTokenResponse(turnContext, cancellationToken);
+                    await OnTokenResponseEventAsync(turnContext, cancellationToken);
                     return new InvokeResponse() { Status = 200 };
                 }
                 else
@@ -155,6 +161,10 @@ protected override async Task<InvokeResponse> OnInvokeActivity
 > * Введите имя для нового параметра подключения. Это имя, которое будет указываться в ссылках внутри параметров кода службы Bot в **действии 5**.
 > * В раскрывающемся списке Поставщик услуг выберите **Azure Active Directory v2**.
 >* Введите учетные данные клиента для приложения AAD.
+
+>[!NOTE]
+> В приложении AAD может потребоваться **неявное предоставление** .
+
 >* Для URL-адреса обмена маркерами используйте значение Scope, определенное на предыдущем шаге приложения AAD. Присутствие URL-адреса Exchange маркера указывает пакету SDK, что это приложение AAD настроено для единого входа.
 >* Укажите "Common" в качестве **идентификатора клиента**.
 >* Добавьте все области, настроенные при указании разрешений на доступ к подчиненным API для приложения AAD. Если указан идентификатор клиента и секрет клиента, хранилище маркеров будет обмениваться маркером для маркера графа с определенными разрешениями.

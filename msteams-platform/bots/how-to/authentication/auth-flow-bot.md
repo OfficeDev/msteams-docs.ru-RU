@@ -1,20 +1,20 @@
 ---
-title: Процесс проверки подлинности для Боты
-description: Описание процесса проверки подлинности в Боты
+title: Процесс проверки подлинности Microsoft Teams для Боты
+description: Описание процесса проверки подлинности Microsoft Teams в Боты
 keywords: Боты процесса проверки подлинности Teams
-ms.date: 03/01/2018
-ms.openlocfilehash: 40f34a3b51349cc1d11f819a92b479a92ebac149
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.topic: overview
+ms.openlocfilehash: b9e72a0e1064779d9a2e49deda24e5e2eaed5962
+ms.sourcegitcommit: aca9990e1f84b07b9e77c08bfeca4440eb4e64f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675576"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409087"
 ---
-# <a name="microsoft-teams-authentication-flow-for-bots"></a>Процесс проверки подлинности Microsoft Teams для Боты
+# <a name="authentication-flow-for-bots-in-microsoft-teams"></a>Процесс проверки подлинности для боты в Microsoft Teams
 
 OAuth 2,0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory (Azure AD) и многими другими поставщиками удостоверений. Основное понимание OAuth 2,0 является необходимым условием для работы с проверкой подлинности в Teams; [Вот хороший обзор](https://aaronparecki.com/oauth-2-simplified/) , который легче следовать, чем [формальное описание](https://oauth.net/2/). Процесс проверки подлинности для вкладок и боты немного отличается — вкладки очень похожи на веб-сайты, поэтому они могут использовать OAuth 2,0 напрямую, в то время как боты не так и не должны выполнять несколько действий по-разному, но основные понятия идентичны.
 
-Пример [проверки подлинности Microsoft Teams](https://github.com/OfficeDev/microsoft-teams-sample-auth-node) , который демонстрирует процесс проверки подлинности для боты с помощью Node. js и [Тип предоставления кода авторизации OAuth 2,0](https://oauth.net/2/grant-types/authorization-code/), представлен в репозитории GitHub Microsoft Teams.
+Пример [проверки подлинности Microsoft Teams](https://github.com/OfficeDev/microsoft-teams-sample-auth-node) в репозитории GitHub, демонстрирующий процесс проверки подлинности для боты с помощью Node.js и [типа предоставления кода авторизации OAuth 2,0](https://oauth.net/2/grant-types/authorization-code/).
 
 ![Схема последовательности проверки подлинности на Bot](../../../assets/images/authentication/bot_auth_sequence_diagram.png)
 
@@ -22,10 +22,12 @@ OAuth 2,0 — это открытый стандарт проверки подл
 2. Элемент Bot определяет, нужно ли выполнять вход в систему.
     * В этом примере элемент Bot хранит маркер доступа в хранилище данных пользователя. Он просит пользователя выполнить вход, если у него нет проверенного маркера для выбранного поставщика удостоверений. ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/469952a26d618dbf884a3be53c7d921cc580b1e2/src/utils/AuthenticationUtils.ts#L58-L76))
 3. Элемент Bot создает URL-адрес начальной страницы для процесса проверки подлинности и отправляет карточку пользователю с `signin` действием. ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/469952a26d618dbf884a3be53c7d921cc580b1e2/src/dialogs/BaseIdentityDialog.ts#L160-L190))
-    * Как и в случае с другими потоками проверки подлинности приложений в Teams, начальная страница `validDomains` должна находиться в домене, который находится в списке, и в том же домене, что и страница перенаправления после входа.
+    * Как и в случае с другими потоками проверки подлинности приложений в Teams, начальная страница должна находиться в домене, который находится в `validDomains` списке, и в том же домене, что и страница перенаправления после входа.
     * **Важно!** код авторизации OAuth 2,0 вызывает для `state` параметра в запросе на проверку подлинности, который содержит уникальный маркер сеанса для предотвращения атаки на [межсайтовый запрос на межсайтовую подделку](https://en.wikipedia.org/wiki/Cross-site_request_forgery). В этом примере используется идентификатор GUID, созданный случайным образом.
 4. Когда пользователь нажимает кнопку *Signing (войти* ), Teams открывает всплывающее окно и переходит на начальную страницу.
-5. Начальная страница перенаправляет пользователя на `authorize` конечную точку поставщика удостоверений. ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/469952a26d618dbf884a3be53c7d921cc580b1e2/public/html/auth-start.html#L51-L56))
+> [!NOTE]
+> Размер всплывающего окна можно контролировать с помощью параметров строки запроса Width и Height в URL-адресе. Например, если вы добавите ширину = 500 и высота = 500, вы получите всплывающее окно, 500x500 Пиксели. В Teams будет отображаться всплывающее окно с заданным размером в пикселах, до максимального значения в процентах от размера основного окна.
+5. Начальная страница перенаправляет пользователя на конечную точку поставщика удостоверений `authorize` . ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/469952a26d618dbf884a3be53c7d921cc580b1e2/public/html/auth-start.html#L51-L56))
 6. На сайте поставщика пользователь входит в систему и предоставляет доступ к Bot.
 7. Поставщик переводит пользователя на страницу переадресации OAuth на Bot с кодом авторизации.
 8. Bot пополняет код авторизации для маркера доступа **, а затем** связывает маркер с пользователем, который инициировал процесс входа. Ниже мы вызываем этот *описатель подготовки*.
@@ -33,8 +35,8 @@ OAuth 2,0 — это открытый стандарт проверки подл
     * **Важно!** элемент Bot хранит маркер, который он получает от поставщика удостоверений, и связывает его с определенным пользователем, но отмечено как "Ожидание проверки". Вы пока не можете использовать предварительный маркер. необходимо выполнить дальнейшую проверку:
       1. **Проверка того, что получено от поставщика удостоверений.** Значение `state` параметра должно быть подтверждено относительно того, что было сохранено ранее. 
       1. **Проверка того, что получено от Teams.** Проверка [подлинности выполняется в два этапа](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) с учетом того, что пользователь, уполномоченный с помощью поставщика удостоверений, — это тот же пользователь, что и в чате. Это защищает от атак ["злоумышленник в середине"](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) и " [Фишинг](https://en.wikipedia.org/wiki/Phishing) ". Bot создает код проверки и сохраняет его, связанный с пользователем. Код проверки автоматически отправляется Teams, как описано ниже. ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/469952a26d618dbf884a3be53c7d921cc580b1e2/src/AuthBot.ts#L100-L113))
-9. Обратный вызов OAuth отображает страницу, которая вызывается `notifySuccess("<verification code>")`. ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/master/src/views/oauth-callback-success.hbs))
-10. Teams закрывает всплывающее окно и отправляет `<verification code>` `notifySuccess()` ответ на задний план. Bot получает сообщение о [вызове](/bot-framework/dotnet/bot-builder-dotnet-activities#invoke) `name = signin/verifyState`.
+9. Обратный вызов OAuth отображает страницу, которая вызывается `notifySuccess("<verification code>")` . ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/master/src/views/oauth-callback-success.hbs))
+10. Teams закрывает всплывающее окно и отправляет `<verification code>` `notifySuccess()` ответ на задний план. Bot получает сообщение о [вызове](/bot-framework/dotnet/bot-builder-dotnet-activities#invoke) `name = signin/verifyState` .
 11. Bot проверяет входящий код проверки относительно кода проверки, хранящегося в пользовательском маркере подготовки. ([Перейти к коду](https://github.com/OfficeDev/microsoft-teams-sample-auth-node/blob/469952a26d618dbf884a3be53c7d921cc580b1e2/src/dialogs/BaseIdentityDialog.ts#L127-L140))
 12. Если они совпадают, элемент Bot помечает маркер как проверенный и готовый к использованию. В противном случае произойдет сбой процесса проверки подлинности, а Bot будет удален.
 
@@ -45,7 +47,7 @@ OAuth 2,0 — это открытый стандарт проверки подл
 
 Пример кода, демонстрирующий процесс создания подлинности на Bot, см.
 
-* [Пример проверки подлинности с помощью Microsoft Teams (Node. js)](https://github.com/OfficeDev/microsoft-teams-sample-auth-node)
+* [Пример проверки подлинности с помощью Microsoft Teams (Node.js)](https://github.com/OfficeDev/microsoft-teams-sample-auth-node)
 
 ## <a name="more-details"></a>Дополнительные сведения
 

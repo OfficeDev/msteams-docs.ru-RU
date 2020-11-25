@@ -5,12 +5,12 @@ description: Создание приложений для собраний в Te
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: 30c7a2d6bc3afed28fe0f24a9dd54b67f9b1223c
-ms.sourcegitcommit: e70d41ae793a407fdbb71bc79ef7b67b40386c96
+ms.openlocfilehash: f448885e3664209858eb90fa9f0853c3d31e015a
+ms.sourcegitcommit: aca9990e1f84b07b9e77c08bfeca4440eb4e64f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49358016"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409115"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний групп
 
@@ -30,7 +30,7 @@ ms.locfileid: "49358016"
 
 ## <a name="meeting-apps-api-reference"></a>Справочные материалы по API приложений для собраний
 
-|API|Description|Запрос|Source|
+|API|Описание|Запрос|Source|
 |---|---|----|---|
 |**жетусерконтекст**| Получение контекстной информации для отображения релевантного контента на вкладке "команды". |_**microsoftTeams. SPContext (() => {/*...* / } )**_|Пакет SDK для клиента Microsoft Teams|
 |**В качестве имени участника**|Этот API позволяет интерфейсу Bot получать сведения об участниках по идентификатору собрания и идентификатору участника.|**Получение** _**/v1/meetings/{meetingId}/Participants/{participantId}? tenantId = {tenantId}**_ |Пакет SDK Microsoft Bot Framework|
@@ -88,7 +88,7 @@ if (response.StatusCode == System.Net.HttpStatusCode.OK)
 
 #### <a name="query-parameters"></a>Параметры запроса
 
-|Значение|Тип|Обязательный|Описание|
+|Value|Тип|Обязательный|Описание|
 |---|---|----|---|
 |**meetingId**| string | Да | Идентификатор собрания можно получить с помощью вызова Bot и клиента Teams SDK Teams.|
 |**партиЦипантид**| string | Да | Это поле является ИДЕНТИФИКАТОРом пользователя и доступно в разделе SSO, вызове Bot и пакете SDK Teams. Настоятельно рекомендуется использовать единый вход.|
@@ -152,7 +152,7 @@ POST /v3/conversations/{conversationId}/activities
 
 #### <a name="query-parameters"></a>Параметры запроса
 
-|Значение|Тип|Обязательный|Описание|
+|Value|Тип|Обязательный|Описание|
 |---|---|----|---|
 |**conversationId**| string | Да | Идентификатор беседы доступен в составе вызова по методу Bot |
 
@@ -289,7 +289,8 @@ await context.sendActivity(replyActivity);
 
 ✔ В манифесте приложения добавьте **сидепанел** в массив **контекста** , как описано выше.
 
-✔ На собрании, так же, как и во всех сценариях, приложение будет отображаться на вкладке, расположенной в собрании, 320 пикселей по ширине. Для этого необходимо оптимизировать вкладку. *Просмотр*, [интерфейс фрамеконтекст](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest&preserve-view=true)
+✔ На собрании, так же, как и во всех сценариях, приложение будет отображаться на вкладке, расположенной в собрании, 320 пикселей по ширине. Для этого необходимо оптимизировать вкладку. *Просмотр*, [интерфейс фрамеконтекст](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/framecontext?view=msteams-client-js-latest&preserve-view=true
+)
 
 ✔ Ссылаться на [пакет SDK Teams](../tabs/how-to/access-teams-context.md#user-context) , чтобы использовать API **UserContext** для соответствующей маршрутизации запросов.
 
