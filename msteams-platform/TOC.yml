@@ -229,8 +229,6 @@
               href: bots/how-to/conversations/channel-and-group-conversations.md
             - name: Отправлять активные сообщения
               href: bots/how-to/conversations/send-proactive-messages.md
-            - name: Отправлять и получать файлы
-              href: bots/how-to/conversations/send-and-receive-files.md
         - name: Отладка вашего бота
           items:
             - name: Отладка локально с IDE
