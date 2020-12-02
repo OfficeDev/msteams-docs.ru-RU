@@ -5,12 +5,12 @@ description: Создание страницы контента
 keywords: вкладки Teams канал группы, настраиваемый статически
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 62a398c87b681013c89e540d2bdc463c97877307
-ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
+ms.openlocfilehash: ad1e1a015526fd723670ea7eda735ebf88f85bf8
+ms.sourcegitcommit: bfdcd122b6b4ffc52d92320d4741f870c07f0542
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796318"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552537"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -71,7 +71,9 @@ ms.locfileid: "48796318"
 Начиная с [схемы манифеста версии 1.7](../../../resources/schema/manifest-schema.md), вы можете предоставить [встроенный индикатор загрузки](../../../resources/schema/manifest-schema.md#showloadingindicator) везде, где веб-содержимое загружено в Teams, например, [Страница "содержимое вкладки"](#integrate-your-code-with-teams), [Страница конфигурации](configuration-page.md), страница [удаления](removal-page.md) и [модули задач на вкладках](../../../task-modules-and-cards/task-modules/task-modules-tabs.md).
 
 > [!NOTE]
-> Если вы указываете  `"showLoadingIndicator : true`  в манифесте приложения, все страницы настройки вкладок, контента и удаления и все модули задач на основе IFRAME должны соответствовать обязательному протоколу ниже:
+> 1. Встроенный индикатор загрузки пока не поддерживается на мобильных устройствах.
+> 2. Если вы указываете  `"showLoadingIndicator : true`  в манифесте приложения, все страницы настройки вкладок, контента и удаления и все модули задач на основе IFRAME должны соответствовать обязательному протоколу ниже:
+
 
 1. Чтобы показать индикатор загрузки, добавьте `"showLoadingIndicator": true` его в манифест. 
 2. Не забудьте позвонить `microsoftTeams.initialize();` .

@@ -5,12 +5,12 @@ ms.topic: reference
 keywords: Демонстрация примеров шаблонов Microsoft Teams
 ms.author: lajanuar
 author: laujan
-ms.openlocfilehash: 3bf038b2d62a0805ae3f16fd879664d755108acf
-ms.sourcegitcommit: e70d41ae793a407fdbb71bc79ef7b67b40386c96
+ms.openlocfilehash: 87361e8c6be068b932400d97379db8f182afd499
+ms.sourcegitcommit: bfdcd122b6b4ffc52d92320d4741f870c07f0542
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49358030"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552579"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -166,6 +166,23 @@ E-сценарии — это приложение на основе [Power Apps
 :::row:::
 :::column span="2":::
     ![Снимок экрана приложения "электронное письмо". Показывает, как администраторы могут управлять поставщиками средств здравоохранения, которые используют приложение.](../assets/images/e-prescriptions-app-template-admin.png)
+:::column-end:::
+:::row-end:::
+
+## <a name="employee-training-9734"></a>Обучение сотрудников &#9734;
+
+Обучение сотрудников — это приложение Microsoft Teams, которое позволяет организаторов легко публиковать, отслеживать и рекламировать обучающие и обучающие события для вашей организации.  С помощью приложения планировщики событий могут отправлять напоминания и уведомления о событиях регистрантс, а сотрудники могут указывать интересующие вас события, оставаться обновленными по актуальным событиям и делиться сведениями о событиях с коллегами через расширение системы обмена сообщениями Teams.
+
+[Получение на сайте GitHub](https://github.com/OfficeDev/microsoft-teams-apps-employeetraining)
+
+:::row:::
+:::column span="2":::
+    **Просмотр обучающих событий сотрудников** ![ Изображение вкладки "обучение сотрудников"](../assets/images/employee-training-discover-tab.png)  
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
+    **Создание учебного события** ![ для сотрудников Форма события "обучение для сотрудников"](../assets/images/employee-training-create-event.jpg)
 :::column-end:::
 :::row-end:::
 

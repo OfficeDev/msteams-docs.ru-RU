@@ -2,12 +2,12 @@
 title: Создание глубоких ссылок
 description: Описание глубоких ссылок и способов их использования в приложениях
 keywords: Прямая ссылка на ссылку Teams
-ms.openlocfilehash: 03580c4d15c82da70402d68d85b0d28f8afa670e
-ms.sourcegitcommit: 3fc7ad33e2693f07170c3cb1a0d396261fc5c619
+ms.openlocfilehash: a3d5dac3fc83510ae47d91bd70390b9ca2860120
+ms.sourcegitcommit: bfdcd122b6b4ffc52d92320d4741f870c07f0542
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796332"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552565"
 ---
 # <a name="create-deep-links-to-content-and-features-in-microsoft-teams"></a>Создание глубоких ссылок на контент и функции в Microsoft Teams
 
@@ -15,6 +15,22 @@ ms.locfileid: "48796332"
 
 * Переходить от пользователя к содержимому на одной из вкладок приложения. Например, ваше приложение может иметь Bot, который отправляет сообщения, уведомляющие пользователя о важном действии. Когда пользователь насматривает уведомление, ссылка глубоко переходит на вкладку, чтобы пользователь мог просмотреть дополнительные сведения о действии.
 * Приложение автоматизирует или упрощает выполнение определенных задач пользователя, например создание разговора или планирование собрания, предварительно заполнив ссылки с необходимыми параметрами. Это позволяет избежать необходимости вручную вводить данные вручную.
+
+> [!NOTE]
+>
+> Прямой прямой просмотр открывает браузер, прежде чем переходить к содержимому и информации следующим образом:
+>
+> **Вкладка**:  
+> ✔ Непосредственно переходит на URL-адрес прямой ссылки.
+>
+> **Bot**:  
+> В тексте карточки ✔ прямой ссылки — сначала открывается браузер.  
+> ✔ Прямой ссылки добавляется к действию OpenURL в функции адаптивной карточки — напрямую переходит по URL-адресу ссылки.  
+> ✔ Гиперссылка Markdown текст в карточке сначала открывается в браузере.  
+>
+> **Чат**:  
+> ✔ Гиперссылки на текстовые сообщения Markdown: непосредственно переходит на URL-адрес прямой ссылки.  
+> ✔ Ссылка, вставленная в общем разговоре, напрямую переходит на URL-адрес прямой ссылки.
 
 ## <a name="deep-linking-to-your-tab"></a>Глубокая ссылка на вкладку
 
@@ -24,6 +40,9 @@ ms.locfileid: "48796332"
 
 > [!NOTE]
 > Это отличается от ссылок, предоставленных элементом меню **Копировать ссылку на вкладку** , что только создает глубокую ссылку, указывающую на эту вкладку.
+
+>[!NOTE]
+> В настоящее время Шаредиплинк не работает на мобильных платформах.
 
 ### <a name="showing-a-deep-link-to-an-item-within-your-tab"></a>Как показать ссылку на элемент на вкладке
 
@@ -45,6 +64,10 @@ ms.locfileid: "48796332"
 Используйте этот формат для глубокой ссылки, которую можно использовать в карточке почтовых роботов, соединителей или модулей обмена сообщениями:
 
 `https://teams.microsoft.com/l/entity/<appId>/<entityId>?webUrl=<entityWebUrl>&label=<entityLabel>&context=<context>`
+
+> [!NOTE]
+> Если Bot отправляет сообщение `TextBlock` , содержащее детальную ссылку, открывается новая вкладка браузера, когда пользователь выбирает эту ссылку. Это происходит в Chrome и в классическом приложении Microsoft Teams, работающем под управлением Linux.
+> Если элемент Bot отправляет такой же URL-адрес ссылки `Action.OpenUrl` , то при переходе пользователя на эту ссылку вкладка команды открывается на текущей вкладке браузера. Не открывается новая вкладка браузера.
 
 Параметры запроса:
 
@@ -107,7 +130,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 `https://teams.microsoft.com/l/chat/0/0?users=<user1>,<user2>,...&topicName=<chat name>&message=<precanned text>`
 
-Пример: `https://teams.microsoft.com/l/chat/0/0?users=joe@contoso.com,bob@contoso.com&topicName=Prep%20For%20Meeting%20Tomorrow&message=Hi%20folks%2C%20kicking%20off%20a%20chat%20about%20our%20meeting%20tomorrow`
+Пример: `https://teams.microsoft.com/l/chat/0/0?users=joe@contoso.com,bob@contoso.com&topicName=Prep%20For%20Meeting%20Tomorrow&message=Hi%20folks%2C%20kicking%20off%20a%20chat%20about%20our%20meeting%20tomorrow`.
 
 Параметры запроса:
 
@@ -128,7 +151,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 Используйте этот формат для глубокой ссылки, которую можно использовать в карточке почтовых роботов, соединителей или модулей обмена сообщениями: `https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
 
-Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
+Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`.
 
 Параметры запроса:
 

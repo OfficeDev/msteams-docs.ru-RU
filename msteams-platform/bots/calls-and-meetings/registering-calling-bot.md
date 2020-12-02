@@ -2,12 +2,12 @@
 title: Регистрация абонентского абонента и ленты для Microsoft Teams
 description: Сведения о регистрации нового телефонного и видеоабонента для Microsoft Teams
 keywords: вызов медиа-данных аудио-и видеороликов Bot
-ms.openlocfilehash: d38b9584440bcff664bd3a2d4b57e52bc695f1b5
-ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
+ms.openlocfilehash: 5a832646d4fa622f746f88a3a969ae4ad3ce69a6
+ms.sourcegitcommit: bfdcd122b6b4ffc52d92320d4741f870c07f0542
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49346849"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552446"
 ---
 # <a name="register-a-calling-bot-for-microsoft-teams"></a>Регистрация абонентской ленты для Microsoft Teams
 
@@ -55,7 +55,7 @@ Microsoft Graph предоставляет детальные разрешени
 |_Calls. акцессмедиа. ALL_ <sup> _см_ .</sup>|Доступ к потокам мультимедиа в ходе звонка в качестве приложения (предварительная версия)|Позволяет приложению получить прямой доступ к потокам мультимедиа в ходе звонка без необходимости входа пользователя.|Да|
 
 > [!IMPORTANT]
-> Вы **не можете** использовать API Microsoft. Graph. Calls. Media для записи или сохранения мультимедийного контента из вызовов или собраний, к которым подают доступ Bot.
+> Вы **не можете** использовать API-интерфейс для записи или сохранения мультимедийного содержимого из вызовов или собраний, к которым обращается приложение, или данных, полученных из этого контента ("запись" или "запись"), без предварительного вызова [ `updateRecordingStatus` API](/graph/api/call-updaterecordingstatus) , чтобы указать, что запись началась, и получить ответ об успешном выполнении от этого API. Если ваше приложение начинает запись собраний и вызовов, оно должно закончить запись перед вызовом API, `updateRecordingStatus` чтобы указать, что запись завершена.
 
 ### <a name="application-permissions-online-meetings"></a>Разрешения приложений: собрания по сети
 

@@ -20,6 +20,17 @@
       href: build-your-first-app/build-bot.md
     - name: Создание расширения для сообщений
       href: build-your-first-app/build-messaging-extension.md
+- name: Расширение набора средств Microsoft Teams
+  expanded: true
+  items:
+    - name: "Расширение набора средств Teams для Visual\_Studio\_Code"
+      href: toolkit/visual-studio-code-overview.md
+    - name: "Расширение набора средств Teams для Visual\_Studio"
+      href: toolkit/visual-studio-overview.md
+    - name: "Единый вход вкладок с использованием расширения набора средств для Visual\_Studio\_Code"
+      href: toolkit/visual-studio-code-tab-sso.md
+- name: Готовые шаблоны приложений
+  href: samples/app-templates.md
 - name: Руководства и примеры кода
   items:
     - name: 'Создайте приложение, используя C#'
@@ -36,20 +47,12 @@
       href: samples/integrating-web-apps.md
     - name: Создание приложений с малым использованием кода
       href: samples/teams-low-code-solutions.md
-    - name: Готовые шаблоны приложений
-      href: samples/app-templates.md
-    - name: Готовые к работе соединители
+    - name: Готовые к работе соединители приложения "Смены"
       href: samples/shifts-wfm-connectors.md
     - name: Создание виртуального помощника для Teams
       href: samples/virtual-assistant.md
     - name: Интеграция чат-бота виртуального агента Power с Teams
       href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
-    - name: Расширение набора средств Microsoft Teams
-      items:
-        - name: "Расширение набора средств Teams для Visual\_Studio\_Code"
-          href: toolkit/visual-studio-code-overview.md
-        - name: "Расширение набора средств Teams для Visual\_Studio"
-          href: toolkit/visual-studio-overview.md
 - name: Концепции
   expanded: true
   items:
