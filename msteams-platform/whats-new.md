@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: 69dec453483ec9edab3ad07abf57044ac93c2dee
-ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
+ms.openlocfilehash: acd02c9765fbbf2e4e1d93d48cb1287936940dee
+ms.sourcegitcommit: 50571f5c6afc86177c4fe1032fe13366a7b706dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997960"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49576836"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -20,7 +20,10 @@ ms.locfileid: "48997960"
 
 | **Date** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
+|11/30/2020|Новый: интеграция платформы удостоверений с набором средств для Teams и Visual Studio Code для вкладок|[Проверка подлинности единого входа с помощью набора инструментов Teams и кода Visual Studio для вкладок](toolkit/visual-studio-code-tab-sso.md)|
+|11/16/2020|Манифест приложения Teams обновлен до версии 1,8|Ссылка: схема манифеста для Microsoft Teams|[Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 |11/11/2020| Схема манифеста обновлена до версии 1,8| [Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
+|11/10/2020|Рекомендации по проектированию Bot для Teams|[Рекомендации по созданию Bot](bots/design/bots.md#bot-design-guidelines)|
 |9/30/2020|Теперь поддерживается отправка и получение файлов в боты на мобильных устройствах.|[Отправка и получение файлов через Bot](resources/bot-v3/bots-files.md)|
 |09/22/2020|Новое руководство "Приступая к работе с Teams"|[Создание обзора первого приложения Teams](build-your-first-app/build-first-app-overview.md)|
 |9/18/2020|Поддержка приложений для собраний в Teams (ознакомительная версия)|[Создание приложений для собраний и приложений для Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) [в собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
@@ -29,7 +32,7 @@ ms.locfileid: "48997960"
 |08/10/2020|Приступите к созданию приложений Teams с помощью набора инструментов Visual Studio.|[Создание приложений с помощью набора инструментов Microsoft Teams и кода Visual Studio](toolkit/visual-studio-overview.md) |
 |08/06/2020|Поддержка проверки подлинности с помощью единого входа|[Разработка вкладки Microsoft Teams единого входа](tabs/how-to/authentication/auth-aad-sso.md#develop-an-sso-microsoft-teams-tab) |
 |07/27/2020 | Активные Боты и сообщения (общедоступная Предварительная версия)|[Включение активной установки и упреждающего обмена сообщениями в Teams с помощью Microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
-| 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](~/tabs/how-to/native-device-permissions.md) |
+| 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](concepts/device-capabilities/native-device-permissions.md) |
 |07/20/2020|Средство проверки приложений Teams для отправки AppSource.|[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#teams-app-validation-tool)
 |07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
 |07/14/2020|Отображение собственная документация по индикатору загрузки|[Индикатор загрузки машинного кода](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
