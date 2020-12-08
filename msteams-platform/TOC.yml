@@ -132,8 +132,14 @@
       items:
         - name: Обзор проверки подлинности
           href: concepts/authentication/authentication.md
-        - name: Настроить поставщиков удостоверений
+        - name: Настройка поставщиков удостоверений
           href: concepts/authentication/configure-identity-provider.md
+    - name: Включение возможностей устройства
+      items:
+        - name: Запрос разрешений устройства
+          href: concepts/device-capabilities/native-device-permissions.md
+        - name: Камера и галерея
+          href: concepts/device-capabilities/mobile-camera-image-permissions.md
 - name: Вкладки — встроенные веб-интерфейсы
   items:
     - name: Что такое пользовательские вкладки?
@@ -195,8 +201,6 @@
           href: tabs/how-to/developer-tools.md
         - name: Добавление пользовательской вкладки в SharePoint
           href: tabs/how-to/tabs-in-sharepoint.md
-        - name: Запросить разрешение устройства
-          href: tabs/how-to/native-device-permissions.md
 - name: Боты — взаимодействие на основе беседы
   items:
     - name: Что такое боты в Microsoft Teams?
