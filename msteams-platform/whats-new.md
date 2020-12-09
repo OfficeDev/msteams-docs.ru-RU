@@ -2,12 +2,12 @@
 title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 keywords: новые версии Teams
-ms.openlocfilehash: acd02c9765fbbf2e4e1d93d48cb1287936940dee
-ms.sourcegitcommit: 50571f5c6afc86177c4fe1032fe13366a7b706dd
+ms.openlocfilehash: 29101e45a317268d1eacf00273a98bc30593d5bd
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49576836"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604468"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -23,7 +23,7 @@ ms.locfileid: "49576836"
 |11/30/2020|Новый: интеграция платформы удостоверений с набором средств для Teams и Visual Studio Code для вкладок|[Проверка подлинности единого входа с помощью набора инструментов Teams и кода Visual Studio для вкладок](toolkit/visual-studio-code-tab-sso.md)|
 |11/16/2020|Манифест приложения Teams обновлен до версии 1,8|Ссылка: схема манифеста для Microsoft Teams|[Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 |11/11/2020| Схема манифеста обновлена до версии 1,8| [Ссылка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
-|11/10/2020|Рекомендации по проектированию Bot для Teams|[Рекомендации по созданию Bot](bots/design/bots.md#bot-design-guidelines)|
+|11/10/2020|Рекомендации по проектированию Bot для Teams|[Рекомендации по созданию Bot](bots/design/bots.md)|
 |9/30/2020|Теперь поддерживается отправка и получение файлов в боты на мобильных устройствах.|[Отправка и получение файлов через Bot](resources/bot-v3/bots-files.md)|
 |09/22/2020|Новое руководство "Приступая к работе с Teams"|[Создание обзора первого приложения Teams](build-your-first-app/build-first-app-overview.md)|
 |9/18/2020|Поддержка приложений для собраний в Teams (ознакомительная версия)|[Создание приложений для собраний и приложений для Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) [в собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
@@ -75,7 +75,7 @@ ms.locfileid: "49576836"
 | 08/06/2018 | Теперь ваш Bot может отправлять и получать файлы.| [Отправка и получение файлов через Bot](~/concepts/bots/bots-files.md)|
 | 07/27/2018 | Предварительная версия для разработчиков теперь поддерживает несколько команд в расширениях обмена сообщениями. | [Расширения для обмена сообщениями расширены](~/resources/dev-preview/developer-preview-features.md)|
 | 07/23/2018 | Сведения о повторной сертификации приложений добавлены в раздел "публикация". |[Разрешения для манифеста](resources/schema/manifest-schema.md#permissions)|
-| 07/16/2018 | В предварительной версии для разработчиков на странице Настройка вкладки выделено больше места. | [Страница настройки вкладок значительно превышает высоту](tabs/design/tabs.md#configuration-page-height)|
+| 07/16/2018 | В предварительной версии для разработчиков на странице Настройка вкладки выделено больше места. | [Страница настройки вкладок значительно превышает высоту](tabs/design/tabs.md)|
 | 07/12/2018 | Сведения о гостевом доступе. | [Гостевой доступ в Microsoft Teams](https://docs.microsoft.com/microsoftteams/guest-access#guest-access-overview)|
 | 06/07/2018 | Добавлены сведения о предварительном выпуске каталога приложений клиента Microsoft Teams. | [Публикация приложения Microsoft Teams](~/publishing/apps-publish.md)|
 | 05/31/2018 | Бета-версия разработчиков Teams (Ring 3,6) была обновлена и добавлена возможность добавлять Боты и вкладки в групповой чат. | [Функции в предварительной версии для разработчиков](~/resources/dev-preview/developer-preview-features.md), [схема предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md)|

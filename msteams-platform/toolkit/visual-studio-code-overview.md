@@ -4,12 +4,12 @@ description: Приступая к созданию привлекательны
 keywords: набор средств Visual Studio Code Toolkit для Teams
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 41b0eeaeef1c7094fc9c8cbdc05c2db899245fc6
-ms.sourcegitcommit: 7e47bf158249050c36d97509eea00e77089a54e6
+ms.openlocfilehash: 350da030d15e72e2cad51c5967afab9b6f29fe9e
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49476932"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604475"
 ---
 # <a name="build-apps-with-the-teams-toolkit-and-visual-studio-code"></a>Создание приложений с помощью набора инструментов Teams и кода Visual Studio
 
@@ -70,7 +70,9 @@ ms.locfileid: "49476932"
 
 ## <a name="package-your-app"></a>Упаковка приложения
 
-Изменение страницы **сведений о приложении** или обновление **манифеста** или файлов **env** в папке  **публикации** приложения автоматически создаст файл **Development.zip** . Необходимо включить [два значка](../concepts/build-and-test/apps-package.md#icons) в одну и ту же папку.
+Изменение страницы **сведений о приложении** , **манифеста** или файлов **env** в папке  **публикации** приложения автоматически создаст файл **Development.zip** . Необходимо включить [два значка](../concepts/build-and-test/apps-package.md#app-icons) в одну и ту же папку.
+
+## <a name="install-and-run-your-app-locally"></a>Установка и запуск приложения на локальном компьютере
 
 ## <a name="run-your-app"></a>Запуск приложения
 

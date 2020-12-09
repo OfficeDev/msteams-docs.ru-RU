@@ -3,12 +3,12 @@ title: Соединители Office 365
 description: В этой статье описывается начало работы с соединителями Office 365 в Microsoft Teams
 keywords: соединитель teams o365
 ms.date: 04/19/2019
-ms.openlocfilehash: dcd9f7e68dfe834fbcac245941944007beedf478
-ms.sourcegitcommit: 0aeb60027f423d8ceff3b377db8c3efbb6da4d17
+ms.openlocfilehash: 374e5058d2041d43f675d643e5b830bf72ad79c2
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48998023"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49605344"
 ---
 # <a name="creating-office-365-connectors-for-microsoft-teams"></a>Создание соединителей Office 365 для Microsoft Teams
 
@@ -79,7 +79,7 @@ ms.locfileid: "48998023"
 
 Вы можете скачать автоматически созданный манифест приложения Teams с портала. Тем не менее, прежде чем использовать его для тестирования или публикации приложения, необходимо выполнить следующие действия:
 
-- Включите два значка, следуя инструкциям из раздела [Значки](~/concepts/build-and-test/apps-package.md#icons).
+- [Включите два значка](../../concepts/build-and-test/apps-package.md#app-icons).
 - Измените раздел `icons` манифеста, чтобы он ссылался на имена файлов значков, а не на их URL-адреса.
 
 Приведенный ниже файл manifest.json содержит основные элементы, необходимые для тестирования и отправки приложения.

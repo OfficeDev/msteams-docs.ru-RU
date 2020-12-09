@@ -5,12 +5,12 @@ description: Создание страницы конфигурации
 keywords: вкладки Teams канал группы настраиваемого канала
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 591e1aa91bd33d1a61e9d70b35fd1561368fcda4
-ms.sourcegitcommit: d3bb4bbcdff9545c9869647dcdbe563a2db868be
+ms.openlocfilehash: f217ce39f234b3058607d81f418fa29da318ff21
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47964608"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49605327"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -85,7 +85,7 @@ ms.locfileid: "47964608"
 1. `microsoftTeams.settings.registerOnSaveHandler()`Запускается обработчик событий.
 1. Кнопка **сохранить** на странице настройки приложения, отправленная в Teams, включена.
 
-С помощью этого кода Teams вы узнаете, что требования к конфигурации выполнены, и установка может быть продолжена. При **сохранении**параметры `settings.setSettings()` задаются, как определено `Settings` интерфейсом, для текущего экземпляра (см. [интерфейс параметров](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true) ). Finally `saveEvent.notifySuccess()` вызывается, чтобы показать, что URL-адрес контента успешно разрешен.
+С помощью этого кода Teams вы узнаете, что требования к конфигурации выполнены, и установка может быть продолжена. При **сохранении** параметры `settings.setSettings()` задаются, как определено `Settings` интерфейсом, для текущего экземпляра (см. [интерфейс параметров](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true) ). Finally `saveEvent.notifySuccess()` вызывается, чтобы показать, что URL-адрес контента успешно разрешен.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ ms.locfileid: "47964608"
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте заполнители в поле `configurationURL`
 
-Заполнители интерфейса контекста можно добавлять к базе `configurationUrl` . Например:
+Заполнители интерфейса контекста можно добавлять к базе `configurationUrl` . Примеры:
 
 ##### <a name="base-url"></a>Базовый URL-адрес
 
@@ -166,7 +166,7 @@ document.write(getId());
 
 ## <a name="mobile-clients"></a>Мобильные приложения
 
-Если вкладка канал и группа отображается в клиентах Teams для мобильных устройств, то `setSettings()` конфигурация должна иметь значение для `websiteUrl` Свойства (см. ниже). В ближайшее время будет выпущена полная поддержка вкладок на мобильных клиентах. Чтобы подготовиться к обновлению, следуйте [указаниям для вкладок на странице Mobile](~/tabs/design/tabs-mobile.md) при создании вкладок.
+Если вкладка канал и группа отображается в клиентах Teams для мобильных устройств, то `setSettings()` конфигурация должна иметь значение для `websiteUrl` Свойства (см. ниже). Ознакомьтесь [с рекомендациями для вкладок на мобильных устройствах](~/tabs/design/tabs-mobile.md).
 
 Настройка Microsoft Teams Сетсеттингс () для страницы удаления и/или мобильных клиентов:
 

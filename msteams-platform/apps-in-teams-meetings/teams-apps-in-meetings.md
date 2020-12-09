@@ -5,12 +5,12 @@ description: Обзор приложений в собраниях Teams на о
 ms.topic: overview
 ms.author: lajanuar
 keywords: API роли участника для собраний приложений Teams
-ms.openlocfilehash: db14049d3150eaaa9634b4fa535a989528b1c6a2
-ms.sourcegitcommit: e70d41ae793a407fdbb71bc79ef7b67b40386c96
+ms.openlocfilehash: 8a1b5b7d95e91273c794a2aa86a51e0ddeb1c610
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49358023"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49605186"
 ---
 # <a name="apps-in-teams-meetings"></a>Приложения в собраниях Teams
 
@@ -68,7 +68,7 @@ ms.locfileid: "49358023"
 &emsp;&emsp;&#9679; **боковой панели**. </br>
 
 > [!NOTE]
-> Если _манифест приложения_ указывает, что вкладка [оптимизирована для боковой панели](create-apps-for-teams-meetings.md#in-meeting), здесь будет отображаться эта вкладка. Она также может быть частью интерфейса подающего лоток, в соответствии с указанными рекомендациями по проектированию.
+> Если _манифест приложения_ указывает, что вкладка [оптимизирована для боковой панели](create-apps-for-teams-meetings.md#during-a-meeting), здесь будет отображаться эта вкладка. Она также может быть частью интерфейса подающего лоток, в соответствии с указанными рекомендациями по проектированию.
 
 &emsp;&emsp;&#9679; **диалоговое окно собраний**. Используйте диалоговое окно "в собрании" для демонстрации действий, выполняемых участниками собрания. *Ознакомьтесь* с разделом [Создание приложений для собраний Teams](create-apps-for-teams-meetings.md).
 

@@ -5,18 +5,21 @@ description: Общие сведения о том, как разработчи�
 ms.topic: overview
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: c430add71e7c23a44a552270c5e3c1bacbe650e4
-ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
+ms.openlocfilehash: 6f5f3454885320669ef42383529d39fcfcfdfee8
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48209815"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604789"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
 Приложения Microsoft Teams обеспечивают ключевые сведения, общие инструменты и надежные процессы, где люди все еще собирают, изученируют и работают.
 
 Приложения — это то, как вы расширяете Teams в соответствии со своими потребностями. Создание новой фирменной символики для Teams или интеграция существующего приложения.
+
+> [!div class="nextstepaction"]
+> [Начните отсюда](build-your-first-app/build-first-app-overview.md)
 
 ## <a name="what-are-teams-apps"></a>Что такое приложения Teams?
 
@@ -139,7 +142,7 @@ ms.locfileid: "48209815"
 ## <a name="resources"></a>Ресурсы
 
 * [Добавление на веб-сайт кнопки "общий доступ" в Teams](concepts/build-and-test/share-to-teams.md)
-* [Система дизайна Fluent](https://fluentsite.z22.web.core.windows.net/)
+* <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Пользовательский интерфейс Fluent</a>
 * [Пакет SDK для клиента Microsoft Teams JavaScript](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest&preserve-view=true)
 * [Пакет SDK Bot Framework для JavaScript](https://github.com/Microsoft/botbuilder-js) и [пакет SDK для Bot Framework для .NET](https://github.com/Microsoft/botbuilder-dotnet/)
 * [Публикация приложения в организации или AppSource](concepts/deploy-and-publish/overview.md)
