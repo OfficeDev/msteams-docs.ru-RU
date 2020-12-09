@@ -1,73 +1,178 @@
 ---
-title: Справочные материалы по проектированию
-description: Описывает рекомендации по проектированию личного приложения
-keywords: рекомендации по проектированию Teams Справочник по платформам личные приложения
-ms.openlocfilehash: f66691234149afa56a6753dd51379c9f2355318e
-ms.sourcegitcommit: 61c93b22490526b1de87c0b14a3c7eb6e046caf6
+title: Разработка личного приложения
+description: Узнайте, как разработать личное приложение Teams и получить набор пользовательских интерфейсов Microsoft Teams.
+author: heath-hamilton
+ms.topic: conceptual
+ms.author: lajanuar
+ms.openlocfilehash: 971071be9f345815f5461646d7970efdf05fd5c4
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44455501"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49605022"
 ---
-# <a name="personal-apps"></a><span data-ttu-id="1ea7a-104">Персональные приложения</span><span class="sxs-lookup"><span data-stu-id="1ea7a-104">Personal apps</span></span>
+# <a name="designing-your-personal-app-for-microsoft-teams"></a><span data-ttu-id="972fe-103">Разработка личного приложения для Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="972fe-103">Designing your personal app for Microsoft Teams</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="1ea7a-105">Полная поддержка вкладок на мобильных клиентах поддерживается в Teams.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-105">Full support for tabs on mobile clients is supported in Teams.</span></span> <span data-ttu-id="1ea7a-106">При создании вкладок для мобильных платформ следуйте [рекомендациям по использованию вкладок на мобильных устройствах](../../tabs/design/tabs-mobile.md) .</span><span class="sxs-lookup"><span data-stu-id="1ea7a-106">You should follow the [guidance for tabs on mobile](../../tabs/design/tabs-mobile.md) when creating tabs for mobile platforms.</span></span>
+<span data-ttu-id="972fe-104">Личное приложение может представлять собой Bot, частные рабочие области или и то, и другое.</span><span class="sxs-lookup"><span data-stu-id="972fe-104">A personal app can be a bot, private workspace, or both.</span></span> <span data-ttu-id="972fe-105">Иногда она работает так же, как место для создания или просмотра контента, а также в других случаях, когда приложение настроено как вкладка в нескольких каналах.</span><span class="sxs-lookup"><span data-stu-id="972fe-105">Sometimes it functions like a place to create or view content, other times it offers the user a bird’s eye view of everything that’s theirs when the app has been configured as a tab in multiple channels.</span></span>
 
-<span data-ttu-id="1ea7a-107">Личное приложение — это приложение Teams с личной областью.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-107">A personal app is a Teams application with a personal scope.</span></span>  <span data-ttu-id="1ea7a-108">Разработчик приложения может предоставить версию приложения, которая специализируется на взаимодействии с одним пользователем.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-108">As an app developer, you have the option to provide a version of your app that focuses on interactions with a single user.</span></span> <span data-ttu-id="1ea7a-109">Он может быть участником [Bot](../../bots/what-are-bots.md) для общения в беседах "один к одному" с пользователем или [личной вкладкой](../../tabs/what-are-tabs.md) , предоставляющей встроенный веб-интерфейс.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-109">It can be a [conversational bot](../../bots/what-are-bots.md) to engage in one-to-one conversations with a user or a [personal tab](../../tabs/what-are-tabs.md) providing an embedded web experience.</span></span> <span data-ttu-id="1ea7a-110">Персональные приложения позволяют пользователям просматривать их содержимое в одном месте.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-110">Personal apps enable users to view their select content in one place.</span></span> <span data-ttu-id="1ea7a-111">На следующем снимке экрана Contoso — личное приложение в всплывающем меню личных приложений.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-111">In the following screenshot, Contoso is a personal app in the personal app flyout.</span></span>
+<span data-ttu-id="972fe-106">В следующей статье описываются и демонстрируются способы добавления и использования персональных приложений в Teams, а также управления ими.</span><span class="sxs-lookup"><span data-stu-id="972fe-106">To guide your app design, the following information describes and illustrates how people can add, use, and manage personal apps in Teams.</span></span>
 
-![изображение меню переполнения приложения](~/assets/images/Personal-apps-App-flyout.png)
+## <a name="microsoft-teams-ui-kit"></a><span data-ttu-id="972fe-107">Набор элементов пользовательского интерфейса Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="972fe-107">Microsoft Teams UI Kit</span></span>
 
----
+<span data-ttu-id="972fe-108">Вы можете найти подробные рекомендации по проектированию личных приложений, в том числе элементы, которые можно изменять и изменять при необходимости, в наборе UI Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="972fe-108">You can find comprehensive personal app design guidelines, including elements that you can grab and modify as needed, in the Microsoft Teams UI Kit.</span></span> <span data-ttu-id="972fe-109">Кроме того, в наборе элементов пользовательского интерфейса есть важные темы, такие как специальные возможности и размеры отклика, которые не рассматриваются здесь.</span><span class="sxs-lookup"><span data-stu-id="972fe-109">The UI kit also has essential topics such as accessibility and responsive sizing that aren't covered here.</span></span>
 
-## <a name="guidelines"></a><span data-ttu-id="1ea7a-113">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="1ea7a-113">Guidelines</span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="972fe-110">Получение набора элементов пользовательского интерфейса Microsoft Teams (фигма)</span><span class="sxs-lookup"><span data-stu-id="972fe-110">Get the Microsoft Teams UI Kit (Figma)</span></span>](https://www.figma.com/community/file/916836509871353159)
 
-<span data-ttu-id="1ea7a-114">Личное приложение обычно содержит следующие вкладки:</span><span class="sxs-lookup"><span data-stu-id="1ea7a-114">A personal app typically contains the following tabs:</span></span>
+## <a name="add-a-personal-app"></a><span data-ttu-id="972fe-111">Добавление личного приложения</span><span class="sxs-lookup"><span data-stu-id="972fe-111">Add a personal app</span></span>
 
-### <a name="your-tab"></a><span data-ttu-id="1ea7a-115">Вкладка</span><span class="sxs-lookup"><span data-stu-id="1ea7a-115">Your tab</span></span>
+<span data-ttu-id="972fe-112">Вы можете добавить личное приложение из приложения Store (AppSource) или из всплывающего меню приложения, щелкнув значок **More (дополнительно** ) в левой части Teams (показано в следующем примере).</span><span class="sxs-lookup"><span data-stu-id="972fe-112">You can add a personal app from the Teams store (AppSource) or the app flyout by selecting the **More** icon on the left side of Teams (shown in the following example).</span></span>
 
-<span data-ttu-id="1ea7a-116">Именно здесь пользователи увидят все свои материалы.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-116">This is where your users will see all their stuff.</span></span> <span data-ttu-id="1ea7a-117">Это личное место.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-117">It's their personal space.</span></span> <span data-ttu-id="1ea7a-118">Вкладка может быть упорядочена в виде списка, сетки, столбцов или одного холста... все, что лучше всего подходит для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-118">The tab can be arranged as a list, a grid, columns, or a single canvas...whatever works best for your application.</span></span> <span data-ttu-id="1ea7a-119">Дополнительную информацию по проектированию эффективных вкладок можно узнать в статье [создание вкладок](../../tabs/design/tabs.md).</span><span class="sxs-lookup"><span data-stu-id="1ea7a-119">For additional information on designing effective tabs see: [Tabs design](../../tabs/design/tabs.md).</span></span>
+:::image type="content" source="../../assets/images/personal-apps/add-from-app-flyout.png" alt-text="Пример показывает, как добавить личное приложение из всплывающего меню приложения." border="false":::
 
-<span data-ttu-id="1ea7a-120">Так как на этой вкладке могут отображаться элементы из нескольких каналов, каждый из них должен отображать свою группу, канал и вкладку, чтобы пользователь мог легко понять, где она была создана.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-120">Since this tab can show items from multiple channels, each item should display its own team, channel, and tab so the user can easily see where it originated.</span></span>
+## <a name="use-a-personal-app-private-workspace"></a><span data-ttu-id="972fe-114">Использование личного приложения (личная рабочая область)</span><span class="sxs-lookup"><span data-stu-id="972fe-114">Use a personal app (private workspace)</span></span>
 
-![Вкладка личных задач](~/assets/images/Personal-apps-MY-tab.png)
+<span data-ttu-id="972fe-115">С помощью частной рабочей области вы можете просматривать контент приложений, который имеет смысл в централизованном расположении, не выходя из Teams.</span><span class="sxs-lookup"><span data-stu-id="972fe-115">With a private workspace, you can view app content that's meaningful to you in a central location without leaving Teams.</span></span>
 
-### <a name="recent"></a><span data-ttu-id="1ea7a-122">Последних</span><span class="sxs-lookup"><span data-stu-id="1ea7a-122">Recent</span></span>
+<span data-ttu-id="972fe-116">(Примечание о реализации. Частная Рабочая область основана на возможности [*вкладки "личные"*](../../build-your-first-app/build-personal-tab.md) .)</span><span class="sxs-lookup"><span data-stu-id="972fe-116">(Implementation note: The private workspace is based on the [*personal tab*](../../build-your-first-app/build-personal-tab.md) capability.)</span></span>
 
-<span data-ttu-id="1ea7a-123">Вкладка " **последние** " позволяет пользователям просматривать все, что недавно просматривалось в вашем приложении.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-123">The **Recent** tab lets someone browse everything they've recently viewed in your app.</span></span> <span data-ttu-id="1ea7a-124">Он указан в хронологическом порядке (от наиболее частого к наиболее позднему).</span><span class="sxs-lookup"><span data-stu-id="1ea7a-124">It's listed in chronological order (from most to least recent).</span></span> <span data-ttu-id="1ea7a-125">При выборе элемента в этом списке пользователь переходит к каналу и вкладке этого элемента.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-125">Clicking on an item in this list will navigate the user to that item's channel and tab.</span></span>
+### <a name="anatomy-personal-app-private-workspace"></a><span data-ttu-id="972fe-117">Структура: личное приложение (личная рабочая область)</span><span class="sxs-lookup"><span data-stu-id="972fe-117">Anatomy: Personal app (private workspace)</span></span>
 
-![Вкладка "последние"](~/assets/images/Personal-apps-Recent-tab.png)
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-component-anatomy.png" alt-text="В примере показана структура компонента личной вкладки." border="false":::
 
-### <a name="all"></a><span data-ttu-id="1ea7a-127">Все</span><span class="sxs-lookup"><span data-stu-id="1ea7a-127">All</span></span>
+|<span data-ttu-id="972fe-119">Счетчик</span><span class="sxs-lookup"><span data-stu-id="972fe-119">Counter</span></span>|<span data-ttu-id="972fe-120">Описание</span><span class="sxs-lookup"><span data-stu-id="972fe-120">Description</span></span>|
+|----------|-----------|
+|<span data-ttu-id="972fe-121">A</span><span class="sxs-lookup"><span data-stu-id="972fe-121">A</span></span>|<span data-ttu-id="972fe-122">**Атрибуты приложений**: ваш логотип и имя приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-122">**App attribution**: Your app logo and name.</span></span>|
+|<span data-ttu-id="972fe-123">B</span><span class="sxs-lookup"><span data-stu-id="972fe-123">B</span></span>|<span data-ttu-id="972fe-124">**Вкладки**: предоставляет навигацию для личного приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-124">**Tabs**: Provides navigation for your personal app.</span></span> <span data-ttu-id="972fe-125">Например, включите вкладку " **о программе** " или " **Справка** ".</span><span class="sxs-lookup"><span data-stu-id="972fe-125">For example, include an **About** or **Help** tab.</span></span>|
+|<span data-ttu-id="972fe-126">C</span><span class="sxs-lookup"><span data-stu-id="972fe-126">C</span></span>|<span data-ttu-id="972fe-127">**Всплывающем окне View**: помещение контента приложения из родительского окна в автономное дочернее окно.</span><span class="sxs-lookup"><span data-stu-id="972fe-127">**Popout view**: Pushes your app content from a parent window to a standalone child window.</span></span>|
+|<span data-ttu-id="972fe-128">D</span><span class="sxs-lookup"><span data-stu-id="972fe-128">D</span></span>|<span data-ttu-id="972fe-129">**Другое меню**: включает дополнительные сведения о приложении и другие параметры.</span><span class="sxs-lookup"><span data-stu-id="972fe-129">**More menu**: Includes additional app information and options.</span></span> <span data-ttu-id="972fe-130">(Можно также сделать **Параметры** вкладкой.)</span><span class="sxs-lookup"><span data-stu-id="972fe-130">(You could alternatively make **Settings** a tab.)</span></span>|
 
-<span data-ttu-id="1ea7a-128">Это список всех вкладок в организации пользователя (у тех, у которых есть доступ к ним, в любом случае).</span><span class="sxs-lookup"><span data-stu-id="1ea7a-128">This is a list of all your tabs in the person's organization (the ones they have access to, anyway).</span></span> <span data-ttu-id="1ea7a-129">Другими словами, в нем отображаются все, что используется в приложении.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-129">In other words, it shows them everywhere the app is being used.</span></span> <span data-ttu-id="1ea7a-130">Как и на вкладке " **последние** ", при выборе какого-либо элемента списка пользователь будет непосредственно на соответствующем канале и на вкладке.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-130">As with the **Recent** tab, selecting something in the list will bring the user straight to the relevant channel and tab.</span></span>
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-structural-anatomy.png" alt-text="В примере показана структура структуры личной вкладки." border="false":::
 
-### <a name="bot"></a><span data-ttu-id="1ea7a-131">Bot</span><span class="sxs-lookup"><span data-stu-id="1ea7a-131">Bot</span></span>
+|<span data-ttu-id="972fe-132">Счетчик</span><span class="sxs-lookup"><span data-stu-id="972fe-132">Counter</span></span>|<span data-ttu-id="972fe-133">Описание</span><span class="sxs-lookup"><span data-stu-id="972fe-133">Description</span></span>|
+|----------|-----------|
+|<span data-ttu-id="972fe-134">A</span><span class="sxs-lookup"><span data-stu-id="972fe-134">A</span></span>|<span data-ttu-id="972fe-135">**Вкладки**: предоставляет навигацию для личного приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-135">**Tabs**: Provides navigation for your personal app.</span></span>|
+|<span data-ttu-id="972fe-136">1 </span><span class="sxs-lookup"><span data-stu-id="972fe-136">1</span></span>|<span data-ttu-id="972fe-137">**IFRAME**: отображение контента приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-137">**iframe**: Displays your app content.</span></span>|
 
-<span data-ttu-id="1ea7a-132">Он не требуется, но это отличный способ общаться с пользователями напрямую и лично.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-132">A bot isn't required, but it's a great way to communicate directly and privately with your users.</span></span> <span data-ttu-id="1ea7a-133">Уведомление является одной из наиболее важных функций личного приложения и как лучше уведомлять о прямой связи?</span><span class="sxs-lookup"><span data-stu-id="1ea7a-133">Notification is one of the most important functions of a personal app, and what better way to notify than with direct communication?</span></span>
+### <a name="designing-with-ui-templates"></a><span data-ttu-id="972fe-138">Разработка с помощью шаблонов пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="972fe-138">Designing with UI templates</span></span>
 
-<span data-ttu-id="1ea7a-134">Боты доставлять сообщения в виде карточек, которые могут содержать определенные сведения (например, оповещение о доступности нового контента) или большое количество обновлений (например, для ежедневного списка дел).</span><span class="sxs-lookup"><span data-stu-id="1ea7a-134">Bots deliver messages in the form of cards, which can provide specific information (like an alert that new content is available) or broad updates (like a daily to-do list).</span></span> <span data-ttu-id="1ea7a-135">Дополнительные сведения о проектировании эффективных Боты: [Bot Design](../../bots/design/bots.md).</span><span class="sxs-lookup"><span data-stu-id="1ea7a-135">For additional information on designing effective bots see: [Bot design](../../bots/design/bots.md).</span></span>
+<span data-ttu-id="972fe-139">Используйте один из следующих шаблонов пользовательского интерфейса Teams для создания личной вкладки:</span><span class="sxs-lookup"><span data-stu-id="972fe-139">Use one of the following Teams UI templates to help design your personal tab:</span></span>
 
-![Приветствие в Bot](~/assets/images/Personal-apps-Bot.png)
+* <span data-ttu-id="972fe-140">[Список](../../concepts/design/design-teams-app-ui-templates.md#list): списки могут отображать связанные элементы в формате с возможностью записи, а пользователи выполнять действия для всего списка или отдельных элементов.</span><span class="sxs-lookup"><span data-stu-id="972fe-140">[List](../../concepts/design/design-teams-app-ui-templates.md#list): Lists can display related items in a scannable format and allow users to take actions on an entire list or individual items.</span></span>
+* <span data-ttu-id="972fe-141">[Доска задач](../../concepts/design/design-teams-app-ui-templates.md#task-board): доска задач, иногда называемая доской Канбан или свим желобами, — это коллекция карточек, часто используемых для отслеживания состояния рабочих элементов или билетов.</span><span class="sxs-lookup"><span data-stu-id="972fe-141">[Task board](../../concepts/design/design-teams-app-ui-templates.md#task-board): A task board, sometimes called a kanban board or swim lanes, is a collection of cards often used to track the status of work items or tickets.</span></span>
+* <span data-ttu-id="972fe-142">[Панель мониторинга](../../concepts/design/design-teams-app-ui-templates.md#dashboard): панель мониторинга — это холст, содержащий несколько карточек, которые предоставляют обзор данных или контента.</span><span class="sxs-lookup"><span data-stu-id="972fe-142">[Dashboard](../../concepts/design/design-teams-app-ui-templates.md#dashboard): A dashboard is a canvas containing multiple cards that provide an overview of data or content.</span></span>
+* <span data-ttu-id="972fe-143">[Форма](../../concepts/design/design-teams-app-ui-templates.md#form): формы предназначены для сбора, проверки и отправки пользовательских данных структурированным способом.</span><span class="sxs-lookup"><span data-stu-id="972fe-143">[Form](../../concepts/design/design-teams-app-ui-templates.md#form): Forms are for collecting, validating, and submitting user input in a structured way.</span></span>
+* <span data-ttu-id="972fe-144">[Пустое состояние](../../concepts/design/design-teams-app-ui-templates.md#empty-state): шаблон пустое состояние можно использовать для многих сценариев, в том числе входа в систему, первого запуска, сообщений об ошибках и многого другого.</span><span class="sxs-lookup"><span data-stu-id="972fe-144">[Empty state](../../concepts/design/design-teams-app-ui-templates.md#empty-state): The empty state template can be used for many scenarios, including sign in, first-run experiences, error messages, and more.</span></span>
+* <span data-ttu-id="972fe-145">[Левая панель навигации](../../concepts/design/design-teams-app-ui-templates.md#left-nav): левая панель навигации может помочь вам, если на вкладке требуется выполнить некоторую навигацию.</span><span class="sxs-lookup"><span data-stu-id="972fe-145">[Left nav](../../concepts/design/design-teams-app-ui-templates.md#left-nav): The left nav template can help if your tab requires some navigation.</span></span> <span data-ttu-id="972fe-146">Как правило, переход по клавише Tab должен быть минимальным.</span><span class="sxs-lookup"><span data-stu-id="972fe-146">In general, you should keep tab navigation to a minimum.</span></span>
 
-### <a name="help-and-settings"></a><span data-ttu-id="1ea7a-137">Справка и параметры</span><span class="sxs-lookup"><span data-stu-id="1ea7a-137">Help and Settings</span></span>
+## <a name="use-a-personal-app-bot"></a><span data-ttu-id="972fe-147">Использование личного приложения (Bot)</span><span class="sxs-lookup"><span data-stu-id="972fe-147">Use a personal app (bot)</span></span>
 
-<span data-ttu-id="1ea7a-138">Контент справки позволяет пользователям находить особенности своего приложения.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-138">Help content enables users to discover the nuances of your app.</span></span> <span data-ttu-id="1ea7a-139">Добавьте вкладку **Параметры** , чтобы предоставить им возможность дальнейшей настройки.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-139">Add a **Settings** tab to give them the ability to further customize it.</span></span>
+<span data-ttu-id="972fe-148">Персональные приложения могут включать робота для однообъектных бесед и частных уведомлений (например, когда коллега публикует комментарий в монтажной области).</span><span class="sxs-lookup"><span data-stu-id="972fe-148">Personal apps can include a bot for one-on-one conversations and private notifications (for instance, when a colleague posts a comment on your artboard).</span></span> <span data-ttu-id="972fe-149">Элемент Bot доступен на заданной вкладке.</span><span class="sxs-lookup"><span data-stu-id="972fe-149">The bot is available in a tab you specify.</span></span>
 
-### <a name="about"></a><span data-ttu-id="1ea7a-140">О программе</span><span class="sxs-lookup"><span data-stu-id="1ea7a-140">About</span></span>
+### <a name="anatomy-personal-app-bot"></a><span data-ttu-id="972fe-150">Структура: личное приложение (Bot)</span><span class="sxs-lookup"><span data-stu-id="972fe-150">Anatomy: Personal app (bot)</span></span>
 
-<span data-ttu-id="1ea7a-141">Включение вкладки " **о программе** " для предоставления таких сведений, как номер версии, возможности, конфиденциальность и ссылки на разрешения.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-141">Include an **About** tab to provide information like version number, capabilities, privacy, and permissions links.</span></span>
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-anatomy.png" alt-text="В примере показана структура персональных компонентов Bot." border="false":::
 
-## <a name="best-practices"></a><span data-ttu-id="1ea7a-142">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="1ea7a-142">Best practices</span></span>
+|<span data-ttu-id="972fe-152">Счетчик</span><span class="sxs-lookup"><span data-stu-id="972fe-152">Counter</span></span>|<span data-ttu-id="972fe-153">Описание</span><span class="sxs-lookup"><span data-stu-id="972fe-153">Description</span></span>|
+|----------|-----------|
+|<span data-ttu-id="972fe-154">A</span><span class="sxs-lookup"><span data-stu-id="972fe-154">A</span></span>|<span data-ttu-id="972fe-155">**Вкладка "bot"**: например, включите вкладку **Chat** , чтобы получить доступ к беседам и уведомлениям в Bot.</span><span class="sxs-lookup"><span data-stu-id="972fe-155">**Bot tab**: For example, include a **Chat** tab to access bot conversations and notifications.</span></span>|
+|<span data-ttu-id="972fe-156">B</span><span class="sxs-lookup"><span data-stu-id="972fe-156">B</span></span>|<span data-ttu-id="972fe-157">**Сообщение Bot**: Боты часто отправляет сообщения и уведомления в виде карточки (например, адаптивной карты).</span><span class="sxs-lookup"><span data-stu-id="972fe-157">**Bot message**: Bots often send messages and notifications in the form of a card (such as an Adaptive Card).</span></span>|
+|<span data-ttu-id="972fe-158">C</span><span class="sxs-lookup"><span data-stu-id="972fe-158">C</span></span>|<span data-ttu-id="972fe-159">**Поле создания**: поле ввода для отправки сообщений в Bot.</span><span class="sxs-lookup"><span data-stu-id="972fe-159">**Compose box**: Input field for sending messages to the bot.</span></span>|
 
-### <a name="communicate-directly-with-your-users"></a><span data-ttu-id="1ea7a-143">Непосредственное взаимодействие с пользователями</span><span class="sxs-lookup"><span data-stu-id="1ea7a-143">Communicate directly with your users</span></span>
+## <a name="best-practices"></a><span data-ttu-id="972fe-160">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="972fe-160">Best practices</span></span>
 
-<span data-ttu-id="1ea7a-144">Используйте Bot для уведомления пользователей об изменениях и новых возможностях.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-144">Use a bot to notify users of changes and new features.</span></span>
+### <a name="tab-priority"></a><span data-ttu-id="972fe-161">Приоритет вкладки</span><span class="sxs-lookup"><span data-stu-id="972fe-161">Tab priority</span></span>
 
-### <a name="customize-your-tabs"></a><span data-ttu-id="1ea7a-145">Настройка вкладок...</span><span class="sxs-lookup"><span data-stu-id="1ea7a-145">Customize your tabs...</span></span>
+#### <a name="do-show-the-most-relevant-content-in-the-first-tab"></a><span data-ttu-id="972fe-162">Do: отображение наиболее релевантного содержимого на первой вкладке</span><span class="sxs-lookup"><span data-stu-id="972fe-162">Do: Show the most relevant content in the first tab</span></span>
 
-<span data-ttu-id="1ea7a-146">Вы можете добавить другие вкладки, которые помогут пользователям выполнять определенные задачи.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-146">Feel free to add other tabs that will help your users accomplish specific tasks.</span></span>
+<span data-ttu-id="972fe-163">При быстром масштабировании вкладки справа могут быть усечены или отображаться.</span><span class="sxs-lookup"><span data-stu-id="972fe-163">With responsive sizing, tabs on the right may become truncated or out of view.</span></span>
 
-### <a name="and-make-them-relevant-to-every-user"></a><span data-ttu-id="1ea7a-147">... и сделайте их релевантными для каждого пользователя</span><span class="sxs-lookup"><span data-stu-id="1ea7a-147">...and make them relevant to every user</span></span>
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-priority-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
 
-<span data-ttu-id="1ea7a-148">Все вкладки, объявляемые в манифесте приложения, будут видны всем пользователям.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-148">Every tab you declare in your app manifest will be visible to all users.</span></span> <span data-ttu-id="1ea7a-149">Например, если личное приложение является средством составления отчетов о расходах, которое используется обоими руководителями и сотрудниками, вкладка **утверждения** должна предоставлять содержимое, которое является значимым для обеих ролей.</span><span class="sxs-lookup"><span data-stu-id="1ea7a-149">For example, if your personal app is an expense reporting tool that is used by both managers and employees, an **Approval** tab should provide content that is meaningful to both roles.</span></span>
+#### <a name="dont-lead-with-secondary-content-or-metadata"></a><span data-ttu-id="972fe-165">Не: интерес с дополнительным содержимым или метаданными</span><span class="sxs-lookup"><span data-stu-id="972fe-165">Don’t: Lead with secondary content or metadata</span></span>
+
+<span data-ttu-id="972fe-166">Как и в случае со стандартным веб-приложением, Навигация по табуляции должна быть продолжена в порядке, позволяющем понять основные функции приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-166">Like a standard web app, tab navigation should progress in an order that helps make sense of your app’s primary features.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-priority-dont.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+### <a name="tab-hierarchy"></a><span data-ttu-id="972fe-168">Иерархия вкладок</span><span class="sxs-lookup"><span data-stu-id="972fe-168">Tab hierarchy</span></span>
+
+#### <a name="do-tabs-should-be-of-equal-hierarchy-and-represent-key-app-pages"></a><span data-ttu-id="972fe-169">Do: вкладки должны иметь одинаковую иерархию и представлять ключевые страницы приложений</span><span class="sxs-lookup"><span data-stu-id="972fe-169">Do: Tabs should be of equal hierarchy and represent key app pages</span></span>
+
+<span data-ttu-id="972fe-170">Вкладки должны классифицировать основные компоненты и содержимое приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-170">Your tabs should categorize your app’s primary features and content.</span></span> <span data-ttu-id="972fe-171">При быстром масштабировании содержимое в правой части может быть усечено или не отображаться.</span><span class="sxs-lookup"><span data-stu-id="972fe-171">With responsive sizing, content on the right may become truncated or out of view.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-hierarchy-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+#### <a name="dont-include-different-levels-of-hierarchy"></a><span data-ttu-id="972fe-173">Не используйте разные уровни иерархии.</span><span class="sxs-lookup"><span data-stu-id="972fe-173">Don't: Include different levels of hierarchy</span></span>
+
+<span data-ttu-id="972fe-174">Контент должен продвигается в логическом порядке, который поможет пользователям понять его.</span><span class="sxs-lookup"><span data-stu-id="972fe-174">Your content should progress in a logical order that helps users make sense of it.</span></span> <span data-ttu-id="972fe-175">Если у вас есть две вкладки, которые тесно связаны друг с другом, рассмотрите их объединение на одной вкладке.</span><span class="sxs-lookup"><span data-stu-id="972fe-175">If you have two tabs that are closely related, consider combining them into one tab.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-hierarchy-dont.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+### <a name="first-run-experience"></a><span data-ttu-id="972fe-177">Интерфейс при первом запуске</span><span class="sxs-lookup"><span data-stu-id="972fe-177">First-run experience</span></span>
+
+#### <a name="do-include-a-first-run-experience"></a><span data-ttu-id="972fe-178">Do: Включение интерфейса первого запуска</span><span class="sxs-lookup"><span data-stu-id="972fe-178">Do: Include a first-run experience</span></span>
+
+<span data-ttu-id="972fe-179">При первом использовании личного приложения должен отображаться по крайней мере экран приветствия.</span><span class="sxs-lookup"><span data-stu-id="972fe-179">There should be at least a welcome screen the first time you use a personal app.</span></span> <span data-ttu-id="972fe-180">В Боты опишите действия, которые может выполнять Bot, и предоставляя быстрые действия, такие как кнопка входа.</span><span class="sxs-lookup"><span data-stu-id="972fe-180">For bots, describe what your bot can do and provide quick actions, such as a sign-in button.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-fre-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-fre-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+#### <a name="dont-start-with-a-blank-screen"></a><span data-ttu-id="972fe-183">Не совсем: начало с пустого экрана</span><span class="sxs-lookup"><span data-stu-id="972fe-183">Don't: Start with a blank screen</span></span>
+
+<span data-ttu-id="972fe-184">Пользователи могут запутаться, если при первом запуске приложения ничего не отображается.</span><span class="sxs-lookup"><span data-stu-id="972fe-184">Users might be confused if nothing displays the first time they run your app.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-fre-dont.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+### <a name="personalized-content"></a><span data-ttu-id="972fe-186">Персонализированное содержимое</span><span class="sxs-lookup"><span data-stu-id="972fe-186">Personalized content</span></span>
+
+#### <a name="do-aggregate-app-content-relevant-to-a-user"></a><span data-ttu-id="972fe-187">Do: Объединение контента приложения, относящегося к пользователю</span><span class="sxs-lookup"><span data-stu-id="972fe-187">Do: Aggregate app content relevant to a user</span></span>
+
+<span data-ttu-id="972fe-188">Независимо от того, является ли это личная вкладка или Bot, отображается содержимое, связанное только с действиями пользователя в вашем приложении.</span><span class="sxs-lookup"><span data-stu-id="972fe-188">Whether it's a personal tab or bot, display content related to only a user's activity in your app.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-personalized-content-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-personalized-content-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+#### <a name="dont-show-unrelated-or-overly-broad-content"></a><span data-ttu-id="972fe-191">Не: показывать несвязанный или слишком большой контент</span><span class="sxs-lookup"><span data-stu-id="972fe-191">Don’t: Show unrelated or overly broad content</span></span>
+
+<span data-ttu-id="972fe-192">В личных контекстах не отображать контент для Teams, не входящих в состав.</span><span class="sxs-lookup"><span data-stu-id="972fe-192">In personal contexts, don’t display content for teams a user isn't part of.</span></span> <span data-ttu-id="972fe-193">Личное содержимое Bot должно сосредоточиться на индивидуальной, а не группе.</span><span class="sxs-lookup"><span data-stu-id="972fe-193">Personal bot content should focus on the individual—not a group.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-personalized-content-dont.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-personalized-content-dont.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+### <a name="complex-app-features"></a><span data-ttu-id="972fe-196">Функции сложных приложений</span><span class="sxs-lookup"><span data-stu-id="972fe-196">Complex app features</span></span>
+
+#### <a name="do-allow-users-to-access-complex-features-in-a-browser"></a><span data-ttu-id="972fe-197">Do: разрешает пользователям получать доступ к сложным функциям в браузере</span><span class="sxs-lookup"><span data-stu-id="972fe-197">Do: Allow users to access complex features in a browser</span></span>
+
+<span data-ttu-id="972fe-198">Ваше приложение должно сосредоточиться на основных задачах в Teams, но вы по-прежнему можете просматривать полное автономное приложение в браузере.</span><span class="sxs-lookup"><span data-stu-id="972fe-198">Your app should focus on core tasks in Teams, but you can still view the full, standalone app in a browser.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-feature-do.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+#### <a name="dont-include-your-entire-app"></a><span data-ttu-id="972fe-200">Не включайте свое приложение целиком.</span><span class="sxs-lookup"><span data-stu-id="972fe-200">Don’t: Include your entire app</span></span>
+
+<span data-ttu-id="972fe-201">Если вы не создали приложение специально для Teams, вероятно, у вас есть функции, которые не имеют смысла в средстве совместной работы.</span><span class="sxs-lookup"><span data-stu-id="972fe-201">Unless you created your app specifically for Teams, you probably have features that don’t make sense in a collaboration tool.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-feature-dont.png" alt-text="В примере показана Рекомендуемая Настройка личных приложений." border="false":::
+
+## <a name="manage-a-personal-tab"></a><span data-ttu-id="972fe-203">Управление вкладкой "личные"</span><span class="sxs-lookup"><span data-stu-id="972fe-203">Manage a personal tab</span></span>
+
+<span data-ttu-id="972fe-204">В левой части Teams пользователи могут щелкнуть личное приложение, чтобы закрепить, удалить и настроить другие параметры приложения.</span><span class="sxs-lookup"><span data-stu-id="972fe-204">On the left side of Teams, users can right click the personal app to pin, remove, and configure other app options.</span></span>
+
+:::image type="content" source="../../assets/images/personal-apps/manage-personal-tab.png" alt-text="В примере показаны параметры для управления личным приложением." border="false":::
+
+## <a name="learn-more"></a><span data-ttu-id="972fe-206">Дополнительные сведения</span><span class="sxs-lookup"><span data-stu-id="972fe-206">Learn more</span></span>
+
+<span data-ttu-id="972fe-207">Другие рекомендации по проектированию могут пригодиться в зависимости от области личных приложений:</span><span class="sxs-lookup"><span data-stu-id="972fe-207">These other design guidelines may help depending on the scope of your personal app:</span></span>
+
+* [<span data-ttu-id="972fe-208">Разработка вкладки</span><span class="sxs-lookup"><span data-stu-id="972fe-208">Designing your tab</span></span>](../../tabs/design/tabs.md)
+* [<span data-ttu-id="972fe-209">Разработка ленты</span><span class="sxs-lookup"><span data-stu-id="972fe-209">Designing you bot</span></span>](../../bots/design/bots.md)
+
+## <a name="validate-your-design"></a><span data-ttu-id="972fe-210">Проверка проекта</span><span class="sxs-lookup"><span data-stu-id="972fe-210">Validate your design</span></span>
+
+<span data-ttu-id="972fe-211">Если вы планируете опубликовать свое приложение в AppSource, следует изучить проблемы, которые обычно приводят к сбою приложений во время отправки.</span><span class="sxs-lookup"><span data-stu-id="972fe-211">If you plan to publish your app to AppSource, you should understand the design issues that commonly cause apps to fail during submission.</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="972fe-212">Проверка рекомендаций по проверке макета</span><span class="sxs-lookup"><span data-stu-id="972fe-212">Check design validation guidelines</span></span>](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#validation-guidelines--most-failed-test-cases)

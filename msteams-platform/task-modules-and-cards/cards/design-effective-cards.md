@@ -1,135 +1,138 @@
 ---
-title: Проектирование эффективных карточек
-description: Описывает рекомендации по проектированию для создания карточек.
-keywords: рекомендации по проектированию Teams ссылаются на карточки платформы, адаптируемые к легковесным
-ms.openlocfilehash: 4ec410820e0288d99dacb6944a8096f4f61b9d34
-ms.sourcegitcommit: 1aa0b172931d0f81db346452788c41dc4a6717b9
+title: Разработка адаптивных карточек для приложения
+description: Узнайте, как разрабатывать адаптивные карты для Teams и как получить набор пользовательских интерфейсов Microsoft Teams.
+ms.topic: conceptual
+ms.author: lajanuar
+ms.openlocfilehash: bd48846284620415cc8cadabc59f2ab7b61d5189
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48209839"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604556"
 ---
-# <a name="design-effective-cards"></a><span data-ttu-id="6d51b-104">Проектирование эффективных карточек</span><span class="sxs-lookup"><span data-stu-id="6d51b-104">Design effective cards</span></span>
+# <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a><span data-ttu-id="7d215-103">Разработка адаптивных карточек для приложения Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="7d215-103">Designing Adaptive Cards for your Microsoft Teams app</span></span>
 
-<span data-ttu-id="6d51b-105">Карточки — это фрагменты контента, которые можно добавить в беседу с помощью ленты, соединителя или приложения.</span><span class="sxs-lookup"><span data-stu-id="6d51b-105">Cards are actionable snippets of content that you can add to a conversation through a bot, a connector, or app.</span></span> <span data-ttu-id="6d51b-106">С помощью карточек с текстом, рисунками и кнопками можно общаться с аудиторией.</span><span class="sxs-lookup"><span data-stu-id="6d51b-106">Using text, graphics, and buttons, cards allow you to communicate with an audience.</span></span>
+<span data-ttu-id="7d215-104">Адаптивная карта содержит основной текст элементов карточки и необязательный набор действий.</span><span class="sxs-lookup"><span data-stu-id="7d215-104">An Adaptive Card contains a freeform body of card elements and optional set of actions.</span></span> <span data-ttu-id="7d215-105">Адаптивные карты — это фрагменты контента, которые можно добавить в беседу с помощью расширения Bot или системы обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="7d215-105">Adaptive Cards are actionable snippets of content that you can add to a conversation through a bot or messaging extension.</span></span> <span data-ttu-id="7d215-106">С помощью текста, рисунков и кнопок эти карточки предоставляют широкие возможности для общения с аудиторией.</span><span class="sxs-lookup"><span data-stu-id="7d215-106">Using text, graphics, and buttons, these cards provide rich communication to your audience.</span></span>
 
-<span data-ttu-id="6d51b-107">Наша инфраструктура позволяет избежать затрат на разработку полностью функционального UX.</span><span class="sxs-lookup"><span data-stu-id="6d51b-107">Our card framework eliminates the burden of designing a fully functional UX.</span></span> <span data-ttu-id="6d51b-108">Мы разработали несколько стандартных типов карточек, каждая из которых соответствует поддерживаемым платформам.</span><span class="sxs-lookup"><span data-stu-id="6d51b-108">We developed several standard card types and each one fits within our supported platforms.</span></span> <span data-ttu-id="6d51b-109">Это означает, что макет полностью учитывается, и вам не придется разрабатывать разные итерации карты на разных платформах.</span><span class="sxs-lookup"><span data-stu-id="6d51b-109">This means layout is completely taken care of, and you won’t need to develop different card iterations across platforms.</span></span> <span data-ttu-id="6d51b-110">Вместо этого вы можете сосредоточиться на наборе содержимого.</span><span class="sxs-lookup"><span data-stu-id="6d51b-110">Instead, you can focus on dialing in your content.</span></span>
+<span data-ttu-id="7d215-107">Инфраструктура адаптивной карточки используется во многих продуктах Майкрософт, в том числе в Teams.</span><span class="sxs-lookup"><span data-stu-id="7d215-107">The Adaptive Card framework is used across many Microsoft products, including Teams.</span></span> <span data-ttu-id="7d215-108">Вы можете отправлять карточки внутри сообщений пользователям с помощью боты или расширений системы обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="7d215-108">You can send cards inside messages to users via bots or messaging extensions.</span></span> <span data-ttu-id="7d215-109">Пользователи могут выполнять действия с карточками, если они есть.</span><span class="sxs-lookup"><span data-stu-id="7d215-109">Users can take actions on cards when present.</span></span>
 
----
+:::image type="content" source="../../assets/images/adaptive-cards/adaptive-card-overview.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-## <a name="guidelines"></a><span data-ttu-id="6d51b-111">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="6d51b-111">Guidelines</span></span>
+## <a name="microsoft-teams-ui-kit"></a><span data-ttu-id="7d215-111">Набор элементов пользовательского интерфейса Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="7d215-111">Microsoft Teams UI Kit</span></span>
 
-<span data-ttu-id="6d51b-112">Представьте карточку в ответ на вопрос пользователя или параметр.</span><span class="sxs-lookup"><span data-stu-id="6d51b-112">Think of a card as a response to a user question or a setting.</span></span> <span data-ttu-id="6d51b-113">Карточка может отвечать на прямые вопросы (например, «сколько открытых ошибок?») или к условию (например, "отправлять список моих открытых ошибок в 9 сразу каждый день").</span><span class="sxs-lookup"><span data-stu-id="6d51b-113">A card can respond to a direct question (like, “How many open bugs do I have?”) or to a condition (like, “Send a list of my open bugs at 9 am every day”).</span></span>
+<span data-ttu-id="7d215-112">Вы можете найти более подробные рекомендации по проектированию адаптивных карточек в Teams, в том числе элементы, которые можно изменять и изменять по мере необходимости, в наборе UI Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="7d215-112">You can find more comprehensive design guidelines for Adaptive Cards in Teams, including elements that you can grab and modify as needed, in the Microsoft Teams UI Kit.</span></span> <span data-ttu-id="7d215-113">Кроме того, в набор элементов пользовательского интерфейса посвящены важные темы, такие как такие как, Специальные возможности, Специальные возможности и масштабирование.</span><span class="sxs-lookup"><span data-stu-id="7d215-113">The UI kit also covers essential topics such as theming, accessibility, and responsive sizing.</span></span>
 
-> [!TIP]
-> <span data-ttu-id="6d51b-114">С помощью одного из наших стандартных типов карточек вы уже знаете, что все ваши ответы будут хорошо отрисовываться на всех поддерживаемых платформах.</span><span class="sxs-lookup"><span data-stu-id="6d51b-114">Using one of our standard card types means you’ll already know that all your responses will render nicely across each supported platform.</span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="7d215-114">Получение набора элементов пользовательского интерфейса Microsoft Teams (фигма)</span><span class="sxs-lookup"><span data-stu-id="7d215-114">Get the Microsoft Teams UI Kit (Figma)</span></span>](https://www.figma.com/community/file/916836509871353159)
 
-<span data-ttu-id="6d51b-115">Карточка может содержать любой из следующих элементов:</span><span class="sxs-lookup"><span data-stu-id="6d51b-115">A card could include any of the following elements:</span></span><br />
+## <a name="adaptive-cards-designer"></a><span data-ttu-id="7d215-115">Конструктор адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="7d215-115">Adaptive Cards designer</span></span>
 
-[!include[Card anatomy](~/includes/design/card-image-anatomy.html)]
+<span data-ttu-id="7d215-116">Вы также можете начать разработку адаптивных карт непосредственно в браузере.</span><span class="sxs-lookup"><span data-stu-id="7d215-116">You also can start designing your Adaptive Cards directly in the browser.</span></span>
 
-1. <span data-ttu-id="6d51b-116">**Текст конверта**: лучше всего подходит для сообщений чата.</span><span class="sxs-lookup"><span data-stu-id="6d51b-116">**Envelope text**: Best used for chat messages.</span></span> <span data-ttu-id="6d51b-117">Например, если вы хотите сказать: "Вот что я нашел!"</span><span class="sxs-lookup"><span data-stu-id="6d51b-117">For example, if you want a bot to say: “Here’s what I found!”</span></span> <span data-ttu-id="6d51b-118">или "время для дайджеста новостей 1:00", это сообщение лучше всего отображать в тексте конверта.</span><span class="sxs-lookup"><span data-stu-id="6d51b-118">or “Time for your 1:00 news digest”, that message is best displayed in envelope text.</span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="7d215-117">Попробуйте конструктор адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="7d215-117">Try the Adaptive Cards designer</span></span>](https://adaptivecards.io/designer/)
 
-   <span data-ttu-id="6d51b-119">Текст конверта — это отличный способ вставить в службу небольшое индивидуальность, просто не забывайте, что это довольно короткий.</span><span class="sxs-lookup"><span data-stu-id="6d51b-119">Envelope text is a great way to inject a little personality into your service—just remember to keep it relatively short.</span></span>
+## <a name="types-of-adaptive-cards"></a><span data-ttu-id="7d215-118">Типы адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="7d215-118">Types of Adaptive Cards</span></span>
 
-2. <span data-ttu-id="6d51b-120">**Название**: ваш заголовок всегда будет самым большим в карточке текстом.</span><span class="sxs-lookup"><span data-stu-id="6d51b-120">**Title**: Your title will always be the largest text in your card.</span></span> <span data-ttu-id="6d51b-121">Он также выступает в качестве «обработчика», поэтому попробуйте оставить название коротким, запоминающим и легким для сканирования.</span><span class="sxs-lookup"><span data-stu-id="6d51b-121">It also serves as your “hook”, so try to keep the title short, memorable, and easy to scan.</span></span>
+### <a name="hero"></a><span data-ttu-id="7d215-119">Главный имиджевый баннер</span><span class="sxs-lookup"><span data-stu-id="7d215-119">Hero</span></span>
 
-3. <span data-ttu-id="6d51b-122">Подзаголовок: лучше всего подходит для присвоения атрибутов, рекламных **заголовков**или дополнительной директивы.</span><span class="sxs-lookup"><span data-stu-id="6d51b-122">**Subtitle**: Best used for attribution, taglines, or as a secondary directive.</span></span> <span data-ttu-id="6d51b-123">Этот компонент отображается непосредственно под заголовком.</span><span class="sxs-lookup"><span data-stu-id="6d51b-123">This component appears just below your title.</span></span>
+<span data-ttu-id="7d215-120">Самая крупная карточка.</span><span class="sxs-lookup"><span data-stu-id="7d215-120">Our largest card.</span></span> <span data-ttu-id="7d215-121">Используйте для предоставления общего доступа к статьям или сценариям, в которых изображение покажет большую часть статьи.</span><span class="sxs-lookup"><span data-stu-id="7d215-121">Use for sharing articles or scenarios where an image tells most of the story.</span></span>
 
-4. <span data-ttu-id="6d51b-124">**Image**: изображения масштабируются в соответствии с их контейнером.</span><span class="sxs-lookup"><span data-stu-id="6d51b-124">**Image**: Images scale to fit their container.</span></span> <span data-ttu-id="6d51b-125">Для карточек главный Имиджевый баннер задана максимальная ширина 420px, эскизы имеют максимальную ширину 100px, а представления списков разрешены только для интервалами по 32 в режиме рабочего стола.</span><span class="sxs-lookup"><span data-stu-id="6d51b-125">Hero cards have a max width of 420px, thumbnails have a max width of 100px, and list views only allow for 32px in desktop mode.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/hero-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-5. <span data-ttu-id="6d51b-126">**Text**: наиболее подходящий для обычного текста в тексте карточки.</span><span class="sxs-lookup"><span data-stu-id="6d51b-126">**Text**: Best used for plain text in the body of your card.</span></span> <span data-ttu-id="6d51b-127">Максимальная длина зависит от выбранного типа карты.</span><span class="sxs-lookup"><span data-stu-id="6d51b-127">Your max length depends on the card type you’ve selected.</span></span>
+### <a name="thumbnail"></a><span data-ttu-id="7d215-123">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7d215-123">Thumbnail</span></span>
 
-6. <span data-ttu-id="6d51b-128">**Кнопки**: наилучшим образом использовать для открытия веб-страниц, вкладок или дополнительного содержимого чата.</span><span class="sxs-lookup"><span data-stu-id="6d51b-128">**Buttons**: Best used to open web pages, tabs, or additional chat content.</span></span> <span data-ttu-id="6d51b-129">Не забудьте оставить текст кнопки короче и в точке.</span><span class="sxs-lookup"><span data-stu-id="6d51b-129">Make sure to keep your button text short and to the point.</span></span>
+<span data-ttu-id="7d215-124">Используется для отправки простого сообщения с действиями.</span><span class="sxs-lookup"><span data-stu-id="7d215-124">Use for sending a simple actionable message.</span></span>
 
-   <span data-ttu-id="6d51b-130">Вы можете включить до 6 кнопок на карточку, но мы рекомендуем использовать следующую философскую философию.</span><span class="sxs-lookup"><span data-stu-id="6d51b-130">You can include up to 6 buttons per card, but we’d recommend following a ‘less is more’ philosophy here.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/thumbnail-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-7. <span data-ttu-id="6d51b-131">**Коснитесь области**: это доступная для щелчка область карточки.</span><span class="sxs-lookup"><span data-stu-id="6d51b-131">**Tap region**: This is the clickable region of your card.</span></span> <span data-ttu-id="6d51b-132">Большинству пользователей будет необходимо автоматически щелкать изображения, поэтому постарайтесь и создавать текст, чтобы они знали, где они должны быть нажаты или нажаты.</span><span class="sxs-lookup"><span data-stu-id="6d51b-132">Most users will want to click on images automatically, so try and craft your text so they know where they should tap or click.</span></span>
+### <a name="list"></a><span data-ttu-id="7d215-126">Список</span><span class="sxs-lookup"><span data-stu-id="7d215-126">List</span></span>
 
-> [!TIP]
-> <span data-ttu-id="6d51b-133">Нет необходимости включать каждый элемент в каждую создаваемую карточку.</span><span class="sxs-lookup"><span data-stu-id="6d51b-133">There’s no need to include every element in each card you create.</span></span> <span data-ttu-id="6d51b-134">Разрешите вашему контенту задиктовать свои элементы.</span><span class="sxs-lookup"><span data-stu-id="6d51b-134">Let your content dictate your elements.</span></span>
+<span data-ttu-id="7d215-127">Используйте в сценариях, где пользователь должен выбрать элемент из списка, но для этих элементов не требуется много объяснений.</span><span class="sxs-lookup"><span data-stu-id="7d215-127">Use in scenarios where you want the user to pick an item from a list, but the items don’t need a lot of explanation.</span></span>
 
----
+:::image type="content" source="../../assets/images/adaptive-cards/list-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-## <a name="types-of-cards"></a><span data-ttu-id="6d51b-135">Типы карточек</span><span class="sxs-lookup"><span data-stu-id="6d51b-135">Types of cards</span></span>
+### <a name="digest"></a><span data-ttu-id="7d215-129">Digest</span><span class="sxs-lookup"><span data-stu-id="7d215-129">Digest</span></span>
 
-### <a name="hero"></a><span data-ttu-id="6d51b-136">Главный имиджевый баннер</span><span class="sxs-lookup"><span data-stu-id="6d51b-136">Hero</span></span>
+<span data-ttu-id="7d215-130">Используется для дайджестов новостей и сообщений округления.</span><span class="sxs-lookup"><span data-stu-id="7d215-130">Use for news digests and round-up posts.</span></span> <span data-ttu-id="7d215-131">Примечание: рекомендуем использовать карточку эскиза для одного обновления или элемента новостей.</span><span class="sxs-lookup"><span data-stu-id="7d215-131">Note: We recommend the thumbnail card for a single update or news item.</span></span>
 
-<span data-ttu-id="6d51b-137">Самая крупная карточка.</span><span class="sxs-lookup"><span data-stu-id="6d51b-137">Our largest card.</span></span> <span data-ttu-id="6d51b-138">Лучше всего подходит для статей, длинных описаний или сценариев, в которых изображение относится к большинству материала.</span><span class="sxs-lookup"><span data-stu-id="6d51b-138">Best used for articles, long descriptions, or scenarios where your image is telling most of the story.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-[!include[Card anatomy](~/includes/design/card-image-hero.html)]
+### <a name="media"></a><span data-ttu-id="7d215-133">СМИ</span><span class="sxs-lookup"><span data-stu-id="7d215-133">Media</span></span>
 
-### <a name="thumbnail"></a><span data-ttu-id="6d51b-139">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="6d51b-139">Thumbnail</span></span>
+<span data-ttu-id="7d215-134">Используется, когда требуется объединить текст и мультимедиа, например, аудио или видео.</span><span class="sxs-lookup"><span data-stu-id="7d215-134">Use when you want to combine text and media, like audio or video.</span></span>
 
-<span data-ttu-id="6d51b-140">Короткие и неблагоприятные.</span><span class="sxs-lookup"><span data-stu-id="6d51b-140">Short and sweet.</span></span> <span data-ttu-id="6d51b-141">Эти карты идеально подходят для коротких ответов, или если вы хотите вернуть сразу несколько карточек, чтобы пользователь мог выбрать один из вариантов.</span><span class="sxs-lookup"><span data-stu-id="6d51b-141">These cards are ideal for short answers, or if you want to return several cards at once so the user can choose from a bunch of options.</span></span> <span data-ttu-id="6d51b-142">Мы думаем, что это отличный способ глубокой ссылки на другую вкладку или веб-службу.</span><span class="sxs-lookup"><span data-stu-id="6d51b-142">We think these are a great way to deep link to another tab or a web service.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/media-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-[!include[Card anatomy](~/includes/design/card-image-thumbnail.html)]
+### <a name="people"></a><span data-ttu-id="7d215-136">Люди</span><span class="sxs-lookup"><span data-stu-id="7d215-136">People</span></span>
 
-### <a name="sign-in"></a><span data-ttu-id="6d51b-143">Вход</span><span class="sxs-lookup"><span data-stu-id="6d51b-143">Sign in</span></span>
+<span data-ttu-id="7d215-137">Лучше всего подходит для эффективной передачи сведений о том, кто участвует в задаче.</span><span class="sxs-lookup"><span data-stu-id="7d215-137">Best used when you to efficiently convey who's involved with a task.</span></span>
 
-<span data-ttu-id="6d51b-144">Некоторые службы требуют, чтобы пользователи выполняли вход независимо от нашей проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="6d51b-144">Some services require users to sign in independently of our authentication.</span></span> <span data-ttu-id="6d51b-145">В этом событии Вы хотите представить карточку входа, прежде чем пользователь сможет подключиться к службе.</span><span class="sxs-lookup"><span data-stu-id="6d51b-145">In that event, you would present a sign-in card before the user can connect to your service.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/people-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-[!include[Card anatomy](~/includes/design/card-image-signin.html)]
+### <a name="request-ticket"></a><span data-ttu-id="7d215-139">Билет запроса</span><span class="sxs-lookup"><span data-stu-id="7d215-139">Request ticket</span></span>
 
-> [!TIP]
-> <span data-ttu-id="6d51b-146">Ограничьте дополнительные карты входа, так как они значительно замедлены для новых пользователей.</span><span class="sxs-lookup"><span data-stu-id="6d51b-146">Limit the occurrences of an additional sign-in card since they pose a significant speed bump for new users.</span></span>
+<span data-ttu-id="7d215-140">Используется для получения быстрых входных данных пользователя для автоматического создания задачи или билета.</span><span class="sxs-lookup"><span data-stu-id="7d215-140">Use to get quick inputs from a user to automatically create a task or ticket.</span></span>
 
----
+:::image type="content" source="../../assets/images/adaptive-cards/request-ticket-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-## <a name="card-collections"></a><span data-ttu-id="6d51b-147">Коллекции карточек</span><span class="sxs-lookup"><span data-stu-id="6d51b-147">Card collections</span></span>
+### <a name="imageset"></a><span data-ttu-id="7d215-142">Image</span><span class="sxs-lookup"><span data-stu-id="7d215-142">ImageSet</span></span>
 
-<span data-ttu-id="6d51b-148">Кроме того, у нас есть стандартные типы карточек, которые лучше всего подходят для одновременного отображения нескольких фрагментов контента или быстрого выполнения.</span><span class="sxs-lookup"><span data-stu-id="6d51b-148">We also have standard card types that are best used when you want to present several pieces of content at once or in quick succession.</span></span> <span data-ttu-id="6d51b-149">Для этой цели у нас есть обойма, дайджест, список и то, что мы вызываем с помощью функции объединения с подходящей копией.</span><span class="sxs-lookup"><span data-stu-id="6d51b-149">For that purpose, we have a carousel, a digest, a list, and what we call a ‘bubble merge’.</span></span>
+<span data-ttu-id="7d215-143">Используется для отправки нескольких эскизов изображений.</span><span class="sxs-lookup"><span data-stu-id="7d215-143">Use to send multiple image thumbnails.</span></span>
 
-### <a name="carousel"></a><span data-ttu-id="6d51b-150">Карусель</span><span class="sxs-lookup"><span data-stu-id="6d51b-150">Carousel</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/image-set-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-<span data-ttu-id="6d51b-151">Лучше всего подходит для статей, покупок и обзора карточек.</span><span class="sxs-lookup"><span data-stu-id="6d51b-151">Best used for articles, shopping, and browsing through cards.</span></span>
+### <a name="actionset"></a><span data-ttu-id="7d215-145">ActionSet</span><span class="sxs-lookup"><span data-stu-id="7d215-145">ActionSet</span></span>
 
-[!include[Card anatomy](~/includes/design/card-image-carousel.html)]
+<span data-ttu-id="7d215-146">Используйте, когда вы хотите, чтобы пользователь выберет кнопку, а затем собирает данные, вводимые пользователем, из одной карточки.</span><span class="sxs-lookup"><span data-stu-id="7d215-146">Use when you want to the user to select a button, then gather addition user input from the same card.</span></span>
 
-> [!TIP]
-> <span data-ttu-id="6d51b-152">Обойма будет максимальной высотой самой большой карточки.</span><span class="sxs-lookup"><span data-stu-id="6d51b-152">The carousel will be the max height of your largest card.</span></span> <span data-ttu-id="6d51b-153">Рекомендуется использовать одни и те же типы карточек и поля контента по всему.</span><span class="sxs-lookup"><span data-stu-id="6d51b-153">We recommend using the same card type and content fields throughout.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/action-set-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-### <a name="digest"></a><span data-ttu-id="6d51b-154">Digest</span><span class="sxs-lookup"><span data-stu-id="6d51b-154">Digest</span></span>
+### <a name="choiceset"></a><span data-ttu-id="7d215-148">Выбор</span><span class="sxs-lookup"><span data-stu-id="7d215-148">ChoiceSet</span></span>
 
-<span data-ttu-id="6d51b-155">Лучше всего подходит для новостей, дайджестов и всякий раз, когда необходимо, чтобы пользователь одновременно просматривает несколько карточек.</span><span class="sxs-lookup"><span data-stu-id="6d51b-155">Best used for news, digests, and whenever you want the user to view multiple cards at once.</span></span> <span data-ttu-id="6d51b-156">Рекомендуется использовать карты эскизов для дайджестов.</span><span class="sxs-lookup"><span data-stu-id="6d51b-156">We recommend using thumbnail cards for digests.</span></span>
+<span data-ttu-id="7d215-149">Используется для сбора нескольких входных данных от пользователя.</span><span class="sxs-lookup"><span data-stu-id="7d215-149">Use to gather multiple inputs from the user.</span></span>
 
-[!include[Card anatomy](~/includes/design/card-image-digest.html)]
+:::image type="content" source="../../assets/images/adaptive-cards/choice-set-card.png" alt-text="В примере показана Адаптивная карта." border="false":::
 
-### <a name="lists"></a><span data-ttu-id="6d51b-157">Списки</span><span class="sxs-lookup"><span data-stu-id="6d51b-157">Lists</span></span>
+## <a name="anatomy"></a><span data-ttu-id="7d215-151">Составляющие</span><span class="sxs-lookup"><span data-stu-id="7d215-151">Anatomy</span></span>
 
-<span data-ttu-id="6d51b-158">Списки — это отличный способ представить прочитаемым набор объектов в сценарии "Выбор одного из этих элементов".</span><span class="sxs-lookup"><span data-stu-id="6d51b-158">Lists are a great way to present a scannable set of objects in a “pick one of these” scenario.</span></span> <span data-ttu-id="6d51b-159">Списки лучше всего использовать для элементов, для которых не требуется много объяснений.</span><span class="sxs-lookup"><span data-stu-id="6d51b-159">Lists are best used for items that don’t need a lot of explanation.</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/anatomy.png" alt-text="Иллюстрация, демонстрирующая пользовательский интерфейс для адаптивной карточки." border="false":::
 
-[!include[Card anatomy](~/includes/design/card-image-list.html)]
+<span data-ttu-id="7d215-153">Адаптивные карты имеют множество гибкости.</span><span class="sxs-lookup"><span data-stu-id="7d215-153">Adaptive Cards have a lot of flexibility.</span></span> <span data-ttu-id="7d215-154">Но как минимум, настоятельно рекомендуется включить следующие компоненты в каждую карточку:</span><span class="sxs-lookup"><span data-stu-id="7d215-154">But at a minimum, we strongly suggest including the following components in every card:</span></span>
 
-### <a name="bubble-merge"></a><span data-ttu-id="6d51b-160">Слияние пузырьков</span><span class="sxs-lookup"><span data-stu-id="6d51b-160">Bubble merge</span></span>
+|<span data-ttu-id="7d215-155">Счетчик</span><span class="sxs-lookup"><span data-stu-id="7d215-155">Counter</span></span>|<span data-ttu-id="7d215-156">Описание</span><span class="sxs-lookup"><span data-stu-id="7d215-156">Description</span></span>|
+|----------|-----------|
+|<span data-ttu-id="7d215-157">A</span><span class="sxs-lookup"><span data-stu-id="7d215-157">A</span></span>|<span data-ttu-id="7d215-158">**Верхний колонтитул**: Сделайте заголовки четкими и краткими, но с описанием.</span><span class="sxs-lookup"><span data-stu-id="7d215-158">**Header**: Make headers clear and concise, yet descriptive.</span></span>|
+|<span data-ttu-id="7d215-159">B</span><span class="sxs-lookup"><span data-stu-id="7d215-159">B</span></span>|<span data-ttu-id="7d215-160">**Копия текста**: используется для передачи сведений, которые слишком длинны или не имеют достаточного значения для включения в заголовок.</span><span class="sxs-lookup"><span data-stu-id="7d215-160">**Body copy**: Use to convey detail that is either too long or not important enough to include in the header.</span></span>|
+|<span data-ttu-id="7d215-161">C</span><span class="sxs-lookup"><span data-stu-id="7d215-161">C</span></span>|<span data-ttu-id="7d215-162">**Основные действия**: рекомендуется включить основные действия 1-3.</span><span class="sxs-lookup"><span data-stu-id="7d215-162">**Primary actions**: As a best practice, include 1-3 primary actions.</span></span> <span data-ttu-id="7d215-163">Разрешено не более шести.</span><span class="sxs-lookup"><span data-stu-id="7d215-163">A maximum of six are allowed.</span></span>|
 
-<span data-ttu-id="6d51b-161">Некоторые интересные эффекты можно достигнуть, отправив один главный Имиджевый баннер и несколько эскизов в быструю удачную отправку.</span><span class="sxs-lookup"><span data-stu-id="6d51b-161">Some interesting effects can be achieved by sending one hero and several thumbnails in quick succession.</span></span> <span data-ttu-id="6d51b-162">Рекомендуется использовать этот подход, если вы хотите обслуживать основной результат, но добавить еще несколько связанных элементов.</span><span class="sxs-lookup"><span data-stu-id="6d51b-162">We recommend this approach when you want to serve a main result but include a few more related items.</span></span>
+## <a name="best-practices"></a><span data-ttu-id="7d215-164">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="7d215-164">Best practices</span></span>
 
-[!include[Card anatomy](~/includes/design/card-image-bubble-merge.html)]
+### <a name="primary-and-secondary-actions"></a><span data-ttu-id="7d215-165">Основные и дополнительные действия</span><span class="sxs-lookup"><span data-stu-id="7d215-165">Primary and secondary actions</span></span>
 
----
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/adaptive-cards/actions-do.png" alt-text="Пример, в котором показано, как добиться адаптивных карт." border="false":::
 
-## <a name="best-practices"></a><span data-ttu-id="6d51b-163">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="6d51b-163">Best practices</span></span>
+#### <a name="do-use-up-to-six-primary-actions"></a><span data-ttu-id="7d215-167">Do: использование до шести основных действий</span><span class="sxs-lookup"><span data-stu-id="7d215-167">Do: Use up to six primary actions</span></span>
 
-### <a name="keep-the-noise-down"></a><span data-ttu-id="6d51b-164">Оставить шум вниз</span><span class="sxs-lookup"><span data-stu-id="6d51b-164">Keep the noise down</span></span>
+<span data-ttu-id="7d215-168">Хотя адаптивные карты могут поддерживать шесть основных действий, большинство карт это не требуется.</span><span class="sxs-lookup"><span data-stu-id="7d215-168">While Adaptive Cards can support six primary actions, most cards don’t need that.</span></span> <span data-ttu-id="7d215-169">Действия должны быть ясными, краткими и прямыми вперед.</span><span class="sxs-lookup"><span data-stu-id="7d215-169">Actions should be clear, concise, and straight forward.</span></span> <span data-ttu-id="7d215-170">Меньше.</span><span class="sxs-lookup"><span data-stu-id="7d215-170">Less is more.</span></span>
 
-<span data-ttu-id="6d51b-165">Вы можете легко отправить несколько карточек в беседу, но после того, как карточки пропрокручиваются из представления, они становятся менее удобными.</span><span class="sxs-lookup"><span data-stu-id="6d51b-165">It’s easy to send multiple cards into a conversation, but once cards scroll out of view, they become less useful.</span></span> <span data-ttu-id="6d51b-166">Попробуйте ограничиться основными сведениями.</span><span class="sxs-lookup"><span data-stu-id="6d51b-166">Try to limit yourself to the essentials.</span></span> <span data-ttu-id="6d51b-167">Это особенно справедливо в канале, где пользователи имеют меньшую отклонения для того, что они считают "шумом".</span><span class="sxs-lookup"><span data-stu-id="6d51b-167">This is especially true in a channel where users have less tolerance for what they perceive as “noise”.</span></span>
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/adaptive-cards/actions-dont.png" alt-text="Пример, в котором показано, как добиться адаптивных карт." border="false":::
 
-### <a name="test-on-mobile"></a><span data-ttu-id="6d51b-168">Проверка на мобильных устройствах</span><span class="sxs-lookup"><span data-stu-id="6d51b-168">Test on mobile</span></span>
+#### <a name="dont-use-more-than-six-primary-actions"></a><span data-ttu-id="7d215-172">Не используйте более шести основных действий.</span><span class="sxs-lookup"><span data-stu-id="7d215-172">Don't: Use more than six primary actions</span></span>
 
-<span data-ttu-id="6d51b-169">Мобильные среды имеют ограниченный объем и пропускную способность, поэтому следует соблюдать осторожность, включая изображения с превышением размера и большие наборы данных в списках и лентах.</span><span class="sxs-lookup"><span data-stu-id="6d51b-169">Mobile environments are space- and bandwidth-constrained, so be cautious about including oversized images and large data sets in lists and carousels.</span></span> <span data-ttu-id="6d51b-170">Кроме того, ширина и длина заголовка будут обрезаны на мобильном устройстве, поэтому необходимо проследить за другим делом.</span><span class="sxs-lookup"><span data-stu-id="6d51b-170">Also, title widths and text lengths will truncate on mobile, so that’s another thing to keep an eye on.</span></span>
+<span data-ttu-id="7d215-173">Адаптивные карты должны представлять собой быстро выполняемое интерактивное содержимое.</span><span class="sxs-lookup"><span data-stu-id="7d215-173">Adaptive Cards should present quick, actionable content.</span></span> <span data-ttu-id="7d215-174">Слишком много действий может перегрузить пользователя.</span><span class="sxs-lookup"><span data-stu-id="7d215-174">Too many actions can overwhelm a user.</span></span>
 
-### <a name="check-your-graphics"></a><span data-ttu-id="6d51b-171">Проверка графики</span><span class="sxs-lookup"><span data-stu-id="6d51b-171">Check your graphics</span></span>
+   :::column-end:::
+:::row-end:::
 
-<span data-ttu-id="6d51b-172">Графические объекты будут масштабироваться, поэтому не забудьте просмотреть их на всех платформах.</span><span class="sxs-lookup"><span data-stu-id="6d51b-172">Graphics are going to scale, so be sure to preview them on all platforms.</span></span>
+### <a name="frequency"></a><span data-ttu-id="7d215-175">Частота</span><span class="sxs-lookup"><span data-stu-id="7d215-175">Frequency</span></span>
 
-### <a name="avoid-including-text-in-a-graphic"></a><span data-ttu-id="6d51b-173">Избегайте включения текста в графику</span><span class="sxs-lookup"><span data-stu-id="6d51b-173">Avoid including text in a graphic</span></span>
+:::image type="content" source="../../assets/images/adaptive-cards/frequency-do.png" alt-text="Пример, в котором показано, как добиться адаптивных карт." border="false":::
 
-<span data-ttu-id="6d51b-174">Все, что должно быть прочитано пользователем, должно быть включено в текстовое поле.</span><span class="sxs-lookup"><span data-stu-id="6d51b-174">Anything that needs to be read by a user should be included in a text field.</span></span> <span data-ttu-id="6d51b-175">После динамического масштабирования изображения любой текст, добавляемый к рисунку, может стать нечитаемым.</span><span class="sxs-lookup"><span data-stu-id="6d51b-175">Once an image is dynamically scaled, any text you add to a graphic may become unintelligible.</span></span>
+#### <a name="do-be-concise"></a><span data-ttu-id="7d215-177">Do: будет кратким</span><span class="sxs-lookup"><span data-stu-id="7d215-177">Do: Be concise</span></span>
 
-### <a name="use-mentions-if-you-want-the-attention-of-specific-users"></a><span data-ttu-id="6d51b-176">Используйте упоминания, если вы хотите уделить особое внимание определенным пользователям.</span><span class="sxs-lookup"><span data-stu-id="6d51b-176">Use mentions if you want the attention of specific users</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="6d51b-177">Упоминание поддержки в карточках в настоящее время поддерживается только в [режиме предварительного просмотра разработчика](~/resources/dev-preview/developer-preview-intro.md) .</span><span class="sxs-lookup"><span data-stu-id="6d51b-177">Mention support in cards is currently supported in [Developer Preview](~/resources/dev-preview/developer-preview-intro.md) only.</span></span>
-
-<span data-ttu-id="6d51b-178">Упоминание — это отличный способ уведомления определенных пользователей в команде или группе чата.</span><span class="sxs-lookup"><span data-stu-id="6d51b-178">Mentions are a great way to notify specific users in a Team or group chat.</span></span> <span data-ttu-id="6d51b-179">Вы можете включить упоминание в карточку в таких сценариях, как задача, назначенная пользователю или предоставляющая благодарностью участнику.</span><span class="sxs-lookup"><span data-stu-id="6d51b-179">You can include a mention in card in scenarios like, a task thats assigned to a user or giving Kudos to a teammate.</span></span> <span data-ttu-id="6d51b-180">Сведения о том, как включить упоминание в карточки на [странице форматирования карты](~/task-modules-and-cards/cards/cards-format.md).</span><span class="sxs-lookup"><span data-stu-id="6d51b-180">Learn how to include mentions in cards in the [card formatting page](~/task-modules-and-cards/cards/cards-format.md).</span></span> 
+<span data-ttu-id="7d215-178">Вы можете легко отправить несколько карточек в беседу, но после того, как карточки пропрокручиваются из представления, они становятся менее удобными.</span><span class="sxs-lookup"><span data-stu-id="7d215-178">It's easy to send multiple cards into a conversation, but once cards scroll out of view, they become less useful.</span></span> <span data-ttu-id="7d215-179">Попробуйте ограничиться основными сведениями.</span><span class="sxs-lookup"><span data-stu-id="7d215-179">Try to limit yourself to the essentials.</span></span> <span data-ttu-id="7d215-180">Это особенно справедливо в канале, где пользователи имеют меньшую отклонения для того, что они считают "шумом".</span><span class="sxs-lookup"><span data-stu-id="7d215-180">This is especially true in a channel where users have less tolerance for what they perceive as "noise".</span></span>

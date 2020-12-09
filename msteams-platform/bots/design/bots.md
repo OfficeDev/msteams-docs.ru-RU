@@ -1,183 +1,323 @@
 ---
-title: Рекомендации по проектированию для Боты
-description: Описывает рекомендации по созданию Боты
-keywords: рекомендации по проектированию Teams Справочник по платформе Боты
-ms.openlocfilehash: 0691c483d12e537772b74abc015d71e1704f88c8
-ms.sourcegitcommit: fdb53284a20285f7e8a7daf25e85cb5d06c52b95
+title: Разработка ленты
+description: Узнайте, как разработать робот команд и получить набор UI Microsoft Teams.
+author: heath-hamilton
+ms.topic: conceptual
+ms.author: lajanuar
+ms.openlocfilehash: d1a7470f4986de22ecca7071823b620cb0234abb
+ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992640"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49605495"
 ---
-# <a name="start-talking-with-bots"></a><span data-ttu-id="4a087-104">Начало беседы с Боты</span><span class="sxs-lookup"><span data-stu-id="4a087-104">Start talking with bots</span></span>
+# <a name="designing-your-microsoft-teams-bot"></a><span data-ttu-id="4cc72-103">Разработка ленты Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="4cc72-103">Designing your Microsoft Teams bot</span></span>
 
-<span data-ttu-id="4a087-105">Боты — это беседы, которые выполняют узкий или определенный набор задач.</span><span class="sxs-lookup"><span data-stu-id="4a087-105">Bots are conversational apps that perform a narrow or specific set of tasks.</span></span> <span data-ttu-id="4a087-106">Они предоставляют возможность общаться с пользователями, отвечать на них, отвечать на свои вопросы и заблаговременно уведомлять об изменениях.</span><span class="sxs-lookup"><span data-stu-id="4a087-106">They give you an opportunity to communicate with users, respond to their questions, and proactively notify them about changes.</span></span> <span data-ttu-id="4a087-107">Это отличный способ достигать.</span><span class="sxs-lookup"><span data-stu-id="4a087-107">They’re a great way to reach out.</span></span>
+<span data-ttu-id="4cc72-104">Боты — это беседы, которые выполняют определенный набор задач.</span><span class="sxs-lookup"><span data-stu-id="4cc72-104">Bots are conversational apps that perform a specific set of tasks.</span></span> <span data-ttu-id="4cc72-105">С учетом <a href="https://dev.botframework.com/" target="_blank">Microsoft Bot Framework</a>, Боты общаться с пользователями, отвечать на свои вопросы и заблаговременно уведомлять об изменениях и событиях.</span><span class="sxs-lookup"><span data-stu-id="4cc72-105">Based on the <a href="https://dev.botframework.com/" target="_blank">Microsoft Bot Framework</a>, bots communicate with users, respond to their questions, and proactively notify them about changes and other events.</span></span> <span data-ttu-id="4cc72-106">Это отличный способ достигать.</span><span class="sxs-lookup"><span data-stu-id="4cc72-106">They're a great way to reach out.</span></span>
 
----
+<span data-ttu-id="4cc72-107">В следующей статье описываются способы добавления, использования и управления боты в Teams, а также сведения по разработке приложений.</span><span class="sxs-lookup"><span data-stu-id="4cc72-107">To guide your app design, the following information describes and illustrates how people can add, use, and manage bots in Teams.</span></span>
 
-## <a name="guidelines"></a><span data-ttu-id="4a087-108">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="4a087-108">Guidelines</span></span>
+## <a name="microsoft-teams-ui-kit"></a><span data-ttu-id="4cc72-108">Набор элементов пользовательского интерфейса Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="4cc72-108">Microsoft Teams UI Kit</span></span>
 
-### <a name="bot-design-guidelines"></a><span data-ttu-id="4a087-109">Рекомендации по созданию Bot</span><span class="sxs-lookup"><span data-stu-id="4a087-109">Bot design guidelines</span></span>
+<span data-ttu-id="4cc72-109">В наборе UI Microsoft Teams вы найдете более исчерпывающие инструкции для Bot, в том числе элементы, которые можно изменять и изменять по мере необходимости.</span><span class="sxs-lookup"><span data-stu-id="4cc72-109">You can find more comprehensive bot design guidelines, including elements that you can grab and modify as needed, in the Microsoft Teams UI Kit.</span></span>
 
-* <span data-ttu-id="4a087-110">Боты должны предоставлять подходящие уведомления при наличии действий.</span><span class="sxs-lookup"><span data-stu-id="4a087-110">Bots should provide relevant notifications when there has been activity.</span></span>
-* <span data-ttu-id="4a087-111">Боты не должно помещать конфиденциальные данные в команду, группу чата 1:1 или участие в беседе с аудиторией, которая не должна просматривать эти данные.</span><span class="sxs-lookup"><span data-stu-id="4a087-111">Bots must not push sensitive data to a team, group chat, or 1:1 conversation to an audience that should not view that data.</span></span>
-* <span data-ttu-id="4a087-112">В уведомлениях Bot должны содержаться осмысленные данные, чтобы сообщить пользователям о релевантности уведомления.</span><span class="sxs-lookup"><span data-stu-id="4a087-112">Bot notifications should include meaningful data to inform the relevance of the notification to users.</span></span>
-* <span data-ttu-id="4a087-113">Тон линии ленты должен отражать голосовые команды команды, как определено в рекомендациях.</span><span class="sxs-lookup"><span data-stu-id="4a087-113">The bot's tone should reflect the Teams voice, as defined in the guidelines.</span></span>
-* <span data-ttu-id="4a087-114">Боты должен предоставить приветственное сообщение первого запуска, которое выделит значение Bot и основные функции, это может быть представлено в виде "ознакомления", интерактивного руководства с карточками обоймы, а также кнопками "попробовать".</span><span class="sxs-lookup"><span data-stu-id="4a087-114">Bots should provide an first-run-experience welcome message that highlights the value of the bot and what its primary functions are, this might be in the form of "take a tour", an interactive tutorial with carousel cards, or "try it" buttons.</span></span>
-* <span data-ttu-id="4a087-115">В тексте Bot не должно быть орфографических ошибок или грамматических ошибок.</span><span class="sxs-lookup"><span data-stu-id="4a087-115">Bot text must not have any spelling mistakes or grammatical errors.</span></span>
-* <span data-ttu-id="4a087-116">Боты должен предоставлять набор предопределенных команд Bot, которые являются действиями.</span><span class="sxs-lookup"><span data-stu-id="4a087-116">Bots must provide a set of predefined bot commands that are actionable.</span></span>
-* <span data-ttu-id="4a087-117">Сообщения Bot должны быть легко понятными и действиями.</span><span class="sxs-lookup"><span data-stu-id="4a087-117">Bot messages should be easy to understand and actionable.</span></span>
-* <span data-ttu-id="4a087-118">Боты должен предоставлять команды резервной справки, если сообщение не распознано.</span><span class="sxs-lookup"><span data-stu-id="4a087-118">Bots must provide fallback help commands when a message is not understood.</span></span>
-* <span data-ttu-id="4a087-119">Формы, встроенные в карточки, отправляемые с помощью робота, должны предоставлять детерминированные входные данные, которые не требуют обновления по порядку.</span><span class="sxs-lookup"><span data-stu-id="4a087-119">Forms, embedded in cards, sent by a bot should provide deterministic inputs that do not require sequential updating.</span></span>
-* <span data-ttu-id="4a087-120">Уведомления о Bot должны быть ограничены группой, коллективным чат 1:1 или сообщаться с релевантным содержимым для аудитории.</span><span class="sxs-lookup"><span data-stu-id="4a087-120">Bot notifications should be scoped to a team, group chat, or 1:1 conversation with relevant content for the audience.</span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="4cc72-110">Получение набора элементов пользовательского интерфейса Microsoft Teams (фигма)</span><span class="sxs-lookup"><span data-stu-id="4cc72-110">Get the Microsoft Teams UI Kit (Figma)</span></span>](https://www.figma.com/community/file/916836509871353159)
 
-### <a name="avatars"></a><span data-ttu-id="4a087-121">Аватаров</span><span class="sxs-lookup"><span data-stu-id="4a087-121">Avatars</span></span>
+## <a name="add-a-bot"></a><span data-ttu-id="4cc72-111">Добавление ленты</span><span class="sxs-lookup"><span data-stu-id="4cc72-111">Add a bot</span></span>
 
-<span data-ttu-id="4a087-122">Аватары в Teams создаются в виде шестиугольников, поэтому люди могут быстро сказать, что они говорят на Bot, а не человека.</span><span class="sxs-lookup"><span data-stu-id="4a087-122">Bot avatars in Teams are shaped like hexagons so people can quickly tell that they’re talking to a bot instead of a person.</span></span> <span data-ttu-id="4a087-123">Вы отправите свой аватар в виде квадрата, и мы обрезать его.</span><span class="sxs-lookup"><span data-stu-id="4a087-123">You’ll submit your avatar as a square and we’ll crop it for you.</span></span> <span data-ttu-id="4a087-124">Когда речь идет о аватарах, мы рекомендуем сделать их разборчиво от 2 метров и использовать более высокую контрастность.</span><span class="sxs-lookup"><span data-stu-id="4a087-124">When it comes to avatars, we recommend making yours legible from 2 feet away and using a higher contrast.</span></span>
+<span data-ttu-id="4cc72-112">Боты доступны в беседах, каналах и персональных приложениях.</span><span class="sxs-lookup"><span data-stu-id="4cc72-112">Bots are available in chats, channels, and personal apps.</span></span> <span data-ttu-id="4cc72-113">Вы можете добавить элемент Bot одним из следующих способов:</span><span class="sxs-lookup"><span data-stu-id="4cc72-113">You can add a bot one of the following ways:</span></span>
 
-[!include[Avatar image](~/includes/design/bot-avatar-image.html)]
+* <span data-ttu-id="4cc72-114">Из хранилища Teams (AppSource).</span><span class="sxs-lookup"><span data-stu-id="4cc72-114">From the Teams store (AppSource).</span></span>
+* <span data-ttu-id="4cc72-115">С помощью всплывающего меню приложения выберите значок **больше** в левой части Teams.</span><span class="sxs-lookup"><span data-stu-id="4cc72-115">Using the app flyout by selecting the **More** icon on the left side of Teams.</span></span>
+* <span data-ttu-id="4cc72-116">С @mention в новом поле чата или создания (в приведенном ниже примере показано, как это можно сделать в разделе групповой чат).</span><span class="sxs-lookup"><span data-stu-id="4cc72-116">With an @mention in the new chat or compose box (the following example shows how you can do this in a group chat).</span></span>
 
-### <a name="buttons"></a><span data-ttu-id="4a087-125">Кнопки</span><span class="sxs-lookup"><span data-stu-id="4a087-125">Buttons</span></span>
+:::image type="content" source="../../assets/images/bots/add-bot-chat-at-mention.png" alt-text="В примере показано, как добавить Bot в чат группы с помощью @mention." border="false":::
 
-<span data-ttu-id="4a087-126">Поддерживается до шести кнопок для одной карточки.</span><span class="sxs-lookup"><span data-stu-id="4a087-126">We support up to six buttons per card.</span></span> <span data-ttu-id="4a087-127">Будьте лаконичны при написании текста на кнопке и имейте в виду, что большинство кнопок должно только самостоятельно обращаться к задачам.</span><span class="sxs-lookup"><span data-stu-id="4a087-127">Be concise when writing button text, and keep in mind that most buttons should only address the task at hand.</span></span>
+## <a name="introduce-a-bot"></a><span data-ttu-id="4cc72-118">Введение ленты</span><span class="sxs-lookup"><span data-stu-id="4cc72-118">Introduce a bot</span></span>
 
-### <a name="graphics"></a><span data-ttu-id="4a087-128">Картин</span><span class="sxs-lookup"><span data-stu-id="4a087-128">Graphics</span></span>
+<span data-ttu-id="4cc72-119">Крайне важно, чтобы ваш робот появилось в самом коде, и описывает его возможности.</span><span class="sxs-lookup"><span data-stu-id="4cc72-119">It’s critical that your bot introduces itself and describes what it can do.</span></span> <span data-ttu-id="4cc72-120">Этот первоначальный сервер Exchange помогает людям разобраться, что делать с роботом, узнать об его ограничениях и, что самое важное, получить удобное взаимодействие с ИТ.</span><span class="sxs-lookup"><span data-stu-id="4cc72-120">This initial exchange helps people understand what to do with the bot, find out its limitations and, most importantly, get comfortable interacting with it.</span></span>
 
-<span data-ttu-id="4a087-129">Рисунки — это хороший способ сказать, что не все роботы для ленты должны иметь графический объект, поэтому их следует использовать для достижения максимальной влияния.</span><span class="sxs-lookup"><span data-stu-id="4a087-129">Graphics are a good way to tell a story, but not all bot conversations require graphics, so use them for maximum impact.</span></span>
+### <a name="welcome-message-in-a-one-on-one-chat"></a><span data-ttu-id="4cc72-121">Приветственное сообщение в беседе "один к одному"</span><span class="sxs-lookup"><span data-stu-id="4cc72-121">Welcome message in a one-on-one chat</span></span>
 
-### <a name="onboarding-users"></a><span data-ttu-id="4a087-130">Встроенные пользователи</span><span class="sxs-lookup"><span data-stu-id="4a087-130">Onboarding users</span></span>
+<span data-ttu-id="4cc72-122">В личных контекстах приветственные сообщения задают тон для Bot.</span><span class="sxs-lookup"><span data-stu-id="4cc72-122">In personal contexts, welcome messages set your bot's tone.</span></span> <span data-ttu-id="4cc72-123">Сообщение включает приветствие, действия, которые может выполнять Bot, и некоторые предложения по взаимодействию (например, "попытаться запрашивать о...").</span><span class="sxs-lookup"><span data-stu-id="4cc72-123">The message includes a greeting, what the bot can do, and some suggestions for how to interact (for example, “Try asking me about …”).</span></span> <span data-ttu-id="4cc72-124">Если это возможно, эти предложения должны возвращать сохраненные ответы, не входя в систему.</span><span class="sxs-lookup"><span data-stu-id="4cc72-124">If possible, these suggestions should return stored responses without having to sign in.</span></span>
 
-<span data-ttu-id="4a087-131">Очень важно, чтобы Боты представлю себя и преддавала возможности для пользователей.</span><span class="sxs-lookup"><span data-stu-id="4a087-131">It is critical that bots introduce themselves and convey what they can do for users.</span></span> <span data-ttu-id="4a087-132">Это *значение* помогает пользователям разобралось, что делать с Bot, где ограничения могут надержаться, и, что самое важное, помогает пользователям обеспечить взаимодействие с компьютером, который не будет интуитивно интуитивно понятен для реальных людей.</span><span class="sxs-lookup"><span data-stu-id="4a087-132">This *value exchange* helps users understand what to do with the bot, where the limitations may lie, and, most importantly, helps users tolerate the interaction with a machine that won’t be as intuitive as a real person .</span></span> <span data-ttu-id="4a087-133">Кроме того, он предоставляет разрешения на доступ к данным пользователя в Exchange для фактического значения, предоставляемого службой.</span><span class="sxs-lookup"><span data-stu-id="4a087-133">Additionally, it grants permission to user data in exchange for the real value the service provides.</span></span>
+:::image type="content" source="../../assets/images/bots/bot-personal-welcome.png" alt-text="В примере показано введение в личное приложение." border="false":::
 
-#### <a name="welcome-messages"></a><span data-ttu-id="4a087-134">Приветственные сообщения</span><span class="sxs-lookup"><span data-stu-id="4a087-134">Welcome messages</span></span>
+### <a name="introductions-in-group-chats-and-channels"></a><span data-ttu-id="4cc72-126">Введение в групповых беседах и каналах</span><span class="sxs-lookup"><span data-stu-id="4cc72-126">Introductions in group chats and channels</span></span>
 
-<span data-ttu-id="4a087-135">Приветственные сообщения — это лучший способ задать тон для Bot и использовать их в личных и коллективных и групповых сценариях.</span><span class="sxs-lookup"><span data-stu-id="4a087-135">Welcome messages are the best way to set your bot's tone and should be used in personal and team or group scenarios.</span></span> <span data-ttu-id="4a087-136">В сообщении указывается, что делает Bot, и некоторые распространенные способы взаимодействия с ним.</span><span class="sxs-lookup"><span data-stu-id="4a087-136">The message states what the bot does and some common ways to interact with it.</span></span> <span data-ttu-id="4a087-137">Использование определенных возможностей например, " *попробовать запрашивать....* "</span><span class="sxs-lookup"><span data-stu-id="4a087-137">Use specific capability examples like,  “ *Try asking ….* ”</span></span> <span data-ttu-id="4a087-138">в маркированном списке.</span><span class="sxs-lookup"><span data-stu-id="4a087-138">in a bulleted list.</span></span> <span data-ttu-id="4a087-139">По мере возможности эти предложения должны возвращать сохраненные ответы.</span><span class="sxs-lookup"><span data-stu-id="4a087-139">Whenever possible, these suggestions should return stored responses.</span></span> <span data-ttu-id="4a087-140">Очень важно, чтобы примеры возможностей работали без необходимости входа пользователей.</span><span class="sxs-lookup"><span data-stu-id="4a087-140">It's critical that the capability examples work without requiring users to sign in.</span></span>
-<span data-ttu-id="4a087-141">Дополнительные рекомендации можно *найти в разделе* [требования к приветственному сообщению](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#-personal-bots-must-always-send-a-welcome-message-on-first-launch) .</span><span class="sxs-lookup"><span data-stu-id="4a087-141">Please *see* [welcome message requirements](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#-personal-bots-must-always-send-a-welcome-message-on-first-launch) for additional guidance.</span></span>
+<span data-ttu-id="4cc72-127">Введение в групповые беседы и каналы в сравнении с персональным контекстом (например, личное приложение) должно быть немного отличаться.</span><span class="sxs-lookup"><span data-stu-id="4cc72-127">Your bot's introduction should be slightly little different in group chats and channels compared to a personal context (like a personal app).</span></span> <span data-ttu-id="4cc72-128">В реальной жизни, если вы ввели комнату, заполненную пользователями; Вы не велкоминг всех пользователей, которые уже есть.</span><span class="sxs-lookup"><span data-stu-id="4cc72-128">In real life, if you entered a room full of people; you’d introduce yourself instead of welcoming everyone who’s already there.</span></span> <span data-ttu-id="4cc72-129">Подумаем, что вы подумываете в своем botном дизайне.</span><span class="sxs-lookup"><span data-stu-id="4cc72-129">Carry that thinking into your bot design.</span></span>
 
-#### <a name="tours"></a><span data-ttu-id="4a087-142">Обзоры</span><span class="sxs-lookup"><span data-stu-id="4a087-142">Tours</span></span>
+:::image type="content" source="../../assets/images/bots/bot-group-welcome.png" alt-text="В примере показано введение в контексте для коллективной работы." border="false":::
 
-<span data-ttu-id="4a087-143">Включите атрибут " *Обзор* " с приветственными сообщениями и ответами на пользовательский ввод в " *Справка* ".</span><span class="sxs-lookup"><span data-stu-id="4a087-143">Include a *Take a tour* attribute with welcome messages and responses to user input equivalent to “ *help* ”.</span></span> <span data-ttu-id="4a087-144">Это самый эффективный способ, позволяющий пользователям узнать, что можно сделать с помощью Bot.</span><span class="sxs-lookup"><span data-stu-id="4a087-144">This is the most effective way to let users learn what a bot can do.</span></span> <span data-ttu-id="4a087-145">Почтовые точки в одном-одном интерфейсе — это отличный способ сообщить эту историю и включить *попытаться связать ее* с примерами возможных ответов.</span><span class="sxs-lookup"><span data-stu-id="4a087-145">Carousels in one-to-one experiences are an excellent way to tell this story and including *Try it* buttons linking to  examples of possible responses is encouraged.</span></span> <span data-ttu-id="4a087-146">Обзоры также являются отличными местами для общения с другими функциями приложения.</span><span class="sxs-lookup"><span data-stu-id="4a087-146">Tours are also great places to talk about an app’s other features.</span></span> <span data-ttu-id="4a087-147">Например, вы можете включить снимки экрана расширения для обмена сообщениями и вкладок Teams.</span><span class="sxs-lookup"><span data-stu-id="4a087-147">For example, you can include screenshots of messaging extensions and Teams tabs.</span></span>  <span data-ttu-id="4a087-148">Пользователям не нужно выполнять вход в систему для доступа и использовать обзор.</span><span class="sxs-lookup"><span data-stu-id="4a087-148">Users shouldn't have to sign in to access and use a tour.</span></span>
+### <a name="bot-authentication-with-single-sign-on"></a><span data-ttu-id="4cc72-131">Однократная проверка подлинности с единым входом</span><span class="sxs-lookup"><span data-stu-id="4cc72-131">Bot authentication with single sign-on</span></span>
 
-<span data-ttu-id="4a087-149">Когда обзоры используются в сценариях группы или групп, они должны открываться в модуле задач, чтобы не добавим в текущие связи между пользователями больше шума карты.</span><span class="sxs-lookup"><span data-stu-id="4a087-149">When tours are used in team or group scenarios, they should open in a task module so as not to add more card noise to the ongoing conversations between users.</span></span>
+<span data-ttu-id="4cc72-132">Когда пользователь почтовы почтовых роботов, для входа может потребоваться использовать все его функции.</span><span class="sxs-lookup"><span data-stu-id="4cc72-132">When a person messages a bot, sign in may be required use all its features.</span></span> <span data-ttu-id="4cc72-133">Вы можете упростить процесс проверки подлинности с помощью единого входа (SSO).</span><span class="sxs-lookup"><span data-stu-id="4cc72-133">You can simplify the authentication process using single sign-on (SSO).</span></span>
 
-### <a name="responding-to-users-and-failing-gracefully"></a><span data-ttu-id="4a087-150">Реагирование на пользователей и неправильное отработка отказа</span><span class="sxs-lookup"><span data-stu-id="4a087-150">Responding to users and failing gracefully</span></span>
+<span data-ttu-id="4cc72-134">Не забывайте: в меню команд Bot (**что можно делать?**) также необходимо указать команду для выхода.</span><span class="sxs-lookup"><span data-stu-id="4cc72-134">Don’t forget: In the bot command menu (**What can I do?**), you must also provide a command to sign out.</span></span>
 
-<span data-ttu-id="4a087-151">Ваш робот также должен иметь возможность отвечать на такие вещи, как " *Привет* ", " *Справка* " и " *спасибо* ", при этом учитывается типичные опечатки и коллокуиалисмс.</span><span class="sxs-lookup"><span data-stu-id="4a087-151">Your bot should also be able to respond to things like " *Hi* ", " *Help* ", and " *Thanks* " while taking common misspellings and colloquialisms into account.</span></span> <span data-ttu-id="4a087-152">Например:</span><span class="sxs-lookup"><span data-stu-id="4a087-152">For example:</span></span>
+:::image type="content" source="../../assets/images/bots/bot-sso-example.png" alt-text="Пример: Bot с кнопкой входа." border="false":::
 
-#### <a name="x2713-hello"></a><span data-ttu-id="4a087-153">&#x2713; Hello</span><span class="sxs-lookup"><span data-stu-id="4a087-153">&#x2713; Hello</span></span>
+### <a name="tours"></a><span data-ttu-id="4cc72-136">Обзоры</span><span class="sxs-lookup"><span data-stu-id="4cc72-136">Tours</span></span>
 
-<span data-ttu-id="4a087-154">`"Hi"`  `"How are you"`  `"Howdy"`</span><span class="sxs-lookup"><span data-stu-id="4a087-154">`"Hi"`  `"How are you"`  `"Howdy"`</span></span>
+<span data-ttu-id="4cc72-137">Вы можете включить учебник с приветственными сообщениями и, если она отвечает на что-то вроде команды "Справка".</span><span class="sxs-lookup"><span data-stu-id="4cc72-137">You can include a tour with welcome messages and if the bot responds to something like a “help” command.</span></span> <span data-ttu-id="4cc72-138">Обзор — это наиболее эффективный способ описать действия, которые может выполнять Bot.</span><span class="sxs-lookup"><span data-stu-id="4cc72-138">A tour is the most effective way to describe what your bot can do.</span></span> <span data-ttu-id="4cc72-139">Если это возможно, они также прекрасно подходят для описания других функций приложения (например, для включения снимков экрана расширения обмена сообщениями).</span><span class="sxs-lookup"><span data-stu-id="4cc72-139">If applicable, they’re also great for describing your app’s other features (for example, include screenshots of your messaging extension).</span></span>
 
-#### <a name="x2713-help"></a><span data-ttu-id="4a087-155">Справка по &#x2713;</span><span class="sxs-lookup"><span data-stu-id="4a087-155">&#x2713; Help</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="4cc72-140">Обзоры должны быть доступны без входа в систему.</span><span class="sxs-lookup"><span data-stu-id="4cc72-140">Tours should be accessible without having to sign in.</span></span>
 
-<span data-ttu-id="4a087-156">`"What do you do?"`  `"How does this work?"`  `"What the heck?"`</span><span class="sxs-lookup"><span data-stu-id="4a087-156">`"What do you do?"`  `"How does this work?"`  `"What the heck?"`</span></span>
+#### <a name="one-on-one-chats"></a><span data-ttu-id="4cc72-141">Беседы "один к одному"</span><span class="sxs-lookup"><span data-stu-id="4cc72-141">One-on-one chats</span></span>
 
-#### <a name="x2713-thanks"></a><span data-ttu-id="4a087-157">&#x2713; Спасибо</span><span class="sxs-lookup"><span data-stu-id="4a087-157">&#x2713; Thanks</span></span>
+<span data-ttu-id="4cc72-142">В персональном приложении обойма может быть эффективным обзором ленты и другими функциями приложения.</span><span class="sxs-lookup"><span data-stu-id="4cc72-142">In a personal app, a carousel can provide an effective overview of your bot and any other features of your app.</span></span> <span data-ttu-id="4cc72-143">В том числе кнопки Разрешить пользователям попытаться выполнить команды Bot (например, **создать задачу**).</span><span class="sxs-lookup"><span data-stu-id="4cc72-143">Including buttons the let users try bot commands is encouraged (for example, **Create a task**).</span></span>
 
-<span data-ttu-id="4a087-158">`"Thank you"`  `"Thankyou"`  `"Thx"`</span><span class="sxs-lookup"><span data-stu-id="4a087-158">`"Thank you"`  `"Thankyou"`  `"Thx"`</span></span>
+:::image type="content" source="../../assets/images/bots/bot-tour-personal.png" alt-text="В примере показан обзор ленты в одном сеансе." border="false":::
 
-<span data-ttu-id="4a087-159">Ваш робот должен иметь возможность обрабатывать следующие типы запросов и входных данных:</span><span class="sxs-lookup"><span data-stu-id="4a087-159">Your bot should be able to handle the following types of queries and inputs:</span></span>
+#### <a name="channels-and-group-chats"></a><span data-ttu-id="4cc72-145">Каналы и беседы групп</span><span class="sxs-lookup"><span data-stu-id="4cc72-145">Channels and group chats</span></span>
 
-> [!div class="checklist"]
->
-> * <span data-ttu-id="4a087-160">**Распознанные вопросы**.</span><span class="sxs-lookup"><span data-stu-id="4a087-160">**Recognized questions**.</span></span> <span data-ttu-id="4a087-161">Это наиболее подходящие вопросы, которые могут ожидать пользователи.</span><span class="sxs-lookup"><span data-stu-id="4a087-161">These are the “best case scenario” questions you would expect from users.</span></span>
-> * <span data-ttu-id="4a087-162">**Распознаваемые несвязанные вопросы**.</span><span class="sxs-lookup"><span data-stu-id="4a087-162">**Recognized non-questions**.</span></span> <span data-ttu-id="4a087-163">Запросы о неподдерживаемых функциях и/или случайных, несвязанных или ненормативных записях.</span><span class="sxs-lookup"><span data-stu-id="4a087-163">Queries about unsupported functionality and/or random, unrelated , or profane entries.</span></span>
-> * <span data-ttu-id="4a087-164">**Неизвестные вопросы** : нечитаемые входные или нечитаемые элементы или нонсенсе.</span><span class="sxs-lookup"><span data-stu-id="4a087-164">**Unrecognized questions** : Input or entries that are unintelligible, meaningless, or nonsense.</span></span>
+<span data-ttu-id="4cc72-146">В каналах и беседах групп обзор должен быть открыт в модальном (также называемом [модуле задачи](../../task-modules-and-cards/task-modules/design-teams-task-modules.md) ), чтобы не прерывать текущие беседы.</span><span class="sxs-lookup"><span data-stu-id="4cc72-146">In channels and group chats, a tour should open in a modal (also known as a [task module](../../task-modules-and-cards/task-modules/design-teams-task-modules.md) so it doesn’t interrupt ongoing conversations.</span></span> <span data-ttu-id="4cc72-147">Это также дает возможность реализовать представления, основанные на ролях, для обзора.</span><span class="sxs-lookup"><span data-stu-id="4cc72-147">This also gives you the option to implement role-based views for your tour.</span></span>
 
-<span data-ttu-id="4a087-165">Примеры типов индивидуальной и отклика для ленты:</span><span class="sxs-lookup"><span data-stu-id="4a087-165">Examples of bot personality and response types:</span></span>
+:::image type="content" source="../../assets/images/bots/bot-tour-channel.png" alt-text="В примере показан обзор канала." border="false":::
 
-[!include[Bot responses](~/includes/design/bot-responses-table.html)]
+## <a name="chat-with-a-bot"></a><span data-ttu-id="4cc72-149">Чат с Bot</span><span class="sxs-lookup"><span data-stu-id="4cc72-149">Chat with a bot</span></span>
 
-> [!TIP]
-> <span data-ttu-id="4a087-166">Когда вы пишете свой сценарий, запросите себя: "будет ли моя фирма извредна, если ответ будет получен и общий?"</span><span class="sxs-lookup"><span data-stu-id="4a087-166">When writing your bot script, ask yourself: “Will my company be embarrassed if a response is screen captured and shared?”</span></span>
+<span data-ttu-id="4cc72-150">Боты интегрируются непосредственно в среду обмена сообщениями группы.</span><span class="sxs-lookup"><span data-stu-id="4cc72-150">Bots integrate directly into Team’s messaging framework.</span></span> <span data-ttu-id="4cc72-151">Пользователи могут обмениваться сообщениями с помощью программы Bot, чтобы получить ответы на свои вопросы или команды ввода, чтобы они могли выполнять задачи с узким или определенным набором задач.</span><span class="sxs-lookup"><span data-stu-id="4cc72-151">Users can chat with a bot to get their questions answered or type commands to have the bot perform a narrow or specific set of tasks.</span></span> <span data-ttu-id="4cc72-152">Боты может заблаговременно уведомлять пользователей об изменениях и обновлениях приложения с помощью чата.</span><span class="sxs-lookup"><span data-stu-id="4cc72-152">Bots can proactively notify users about changes or updates to your app via chat.</span></span>
 
-### <a name="understanding-what-users-are-trying-to-say"></a><span data-ttu-id="4a087-167">Общие сведения о том, что пользователи пытаются сказать</span><span class="sxs-lookup"><span data-stu-id="4a087-167">Understanding what users are trying to say</span></span>
+### <a name="chat-with-a-bot-in-different-contexts"></a><span data-ttu-id="4cc72-153">Чат с помощью программы Bot в различных контекстах</span><span class="sxs-lookup"><span data-stu-id="4cc72-153">Chat with a bot in different contexts</span></span>
 
-#### <a name="use-a-thesaurus-for-synonyms"></a><span data-ttu-id="4a087-168">Использование тезауруса для синонимов</span><span class="sxs-lookup"><span data-stu-id="4a087-168">Use a thesaurus for synonyms</span></span>
+<span data-ttu-id="4cc72-154">Боты можно использовать в следующих контекстах:</span><span class="sxs-lookup"><span data-stu-id="4cc72-154">You can use bots in the following contexts:</span></span>
 
-<span data-ttu-id="4a087-169">При мозговых задолженностей Используйте тезаурус и получите людей от максимально возможного количества фоновых рисунков, чтобы вы могли создавать различные интерпретации каждого запроса.</span><span class="sxs-lookup"><span data-stu-id="4a087-169">When brainstorming variants, use a thesaurus and get people from as many different backgrounds as possible to help you generate different interpretations of each query.</span></span>
+* <span data-ttu-id="4cc72-155">**Персональные приложения**: в личном приложении у пользователя Bot есть выделенная вкладка Chat.</span><span class="sxs-lookup"><span data-stu-id="4cc72-155">**Personal apps**: In a personal app, a bot has a dedicated chat tab.</span></span>
+* <span data-ttu-id="4cc72-156">**Беседа одним** из следующих пользователей: пользователь может инициировать частные беседы с помощью Bot.</span><span class="sxs-lookup"><span data-stu-id="4cc72-156">**One-on-one chat**: A user can initiate a private conversation with a bot.</span></span> <span data-ttu-id="4cc72-157">Это то же самое, что и использование программы Bot в личном приложении.</span><span class="sxs-lookup"><span data-stu-id="4cc72-157">It's the same experience as using a bot in a personal app.</span></span>
+* <span data-ttu-id="4cc72-158">**Групповой чат**: люди могут взаимодействовать с программой Bot в разделе chat, @mentioning с помощью ленты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-158">**Group chat**: People can interact with a bot in a group chat by @mentioning the bot.</span></span>
+* <span data-ttu-id="4cc72-159">**Канал**: люди могут взаимодействовать с роботом в канале.</span><span class="sxs-lookup"><span data-stu-id="4cc72-159">**Channel**: People can interact with a bot in a channel.</span></span> <span data-ttu-id="4cc72-160">, @mentioning имя Bot в поле Создать.</span><span class="sxs-lookup"><span data-stu-id="4cc72-160">by @mentioning the bot name in the compose box.</span></span> <span data-ttu-id="4cc72-161">Помните, что в этом контексте Bot доступен для всей команды, а не только для канала.</span><span class="sxs-lookup"><span data-stu-id="4cc72-161">Remember, in this context, the bot is available to the entire team, not just the channel.</span></span>
 
-#### <a name="make-use-of-telemetry-and-interviews"></a><span data-ttu-id="4a087-170">Использование телеметрии и интервью</span><span class="sxs-lookup"><span data-stu-id="4a087-170">Make use of telemetry and interviews</span></span>
+### <a name="anatomy"></a><span data-ttu-id="4cc72-162">Составляющие</span><span class="sxs-lookup"><span data-stu-id="4cc72-162">Anatomy</span></span>
 
-<span data-ttu-id="4a087-171">Сведения о том, что говорят пользователи, и каковы их цели при опросе ленты.</span><span class="sxs-lookup"><span data-stu-id="4a087-171">Find out what users are saying and what was their intent when querying your bot.</span></span> <span data-ttu-id="4a087-172">Это будет непрерывный процесс, когда вы получаете пользователей в различных местоположениях и типах компаний.</span><span class="sxs-lookup"><span data-stu-id="4a087-172">This will be an ongoing process as you get users in different locations and types of companies.</span></span> <span data-ttu-id="4a087-173">Вы можете выполнить тонкую настройку распознавания языка и соответствия намерения языку интеллектуальной службы ([Луис](/azure/cognitive-services/luis/what-is-luis)).</span><span class="sxs-lookup"><span data-stu-id="4a087-173">You can fine-tune language recognition and intent mapping with Language Understanding Intelligent Service ([LUIS](/azure/cognitive-services/luis/what-is-luis)).</span></span>
+:::image type="content" source="../../assets/images/bots/bot-anatomy.png" alt-text="В примере показана структурная структура Bot." border="false":::
 
-### <a name="how-often-should-you-use-your-bot-to-reach-out-to-a-user"></a><span data-ttu-id="4a087-174">Как часто следует использовать ваш Bot для доступа к пользователю?</span><span class="sxs-lookup"><span data-stu-id="4a087-174">How often should you use your bot to reach out to a user?</span></span>
+|<span data-ttu-id="4cc72-164">Счетчик</span><span class="sxs-lookup"><span data-stu-id="4cc72-164">Counter</span></span>|<span data-ttu-id="4cc72-165">Описание</span><span class="sxs-lookup"><span data-stu-id="4cc72-165">Description</span></span>|
+|----------|-----------|
+|<span data-ttu-id="4cc72-166">1</span><span class="sxs-lookup"><span data-stu-id="4cc72-166">1</span></span>|<span data-ttu-id="4cc72-167">**Имя и значок приложения**</span><span class="sxs-lookup"><span data-stu-id="4cc72-167">**App name and icon**</span></span>|
+|<span data-ttu-id="4cc72-168">2 </span><span class="sxs-lookup"><span data-stu-id="4cc72-168">2</span></span>|<span data-ttu-id="4cc72-169">**Вкладка "чат**": открывает пространство для взаимодействия с Bot (применяется только к личным приложениям).</span><span class="sxs-lookup"><span data-stu-id="4cc72-169">**Chat tab**: Opens the space to talk with your bot (applicable only to personal apps).</span></span>|
+|<span data-ttu-id="4cc72-170">3 </span><span class="sxs-lookup"><span data-stu-id="4cc72-170">3</span></span>|<span data-ttu-id="4cc72-171">**Настраиваемые вкладки**: открывает другое содержимое, связанное с вашим приложением.</span><span class="sxs-lookup"><span data-stu-id="4cc72-171">**Custom tabs**: Opens other content related to your app.</span></span>|
+|<span data-ttu-id="4cc72-172">4 </span><span class="sxs-lookup"><span data-stu-id="4cc72-172">4</span></span>|<span data-ttu-id="4cc72-173">**Сведения о вкладке**: отображение основных сведений о приложении.</span><span class="sxs-lookup"><span data-stu-id="4cc72-173">**About tab**: Displays basic information about your app.</span></span>|
+|<span data-ttu-id="4cc72-174">5 </span><span class="sxs-lookup"><span data-stu-id="4cc72-174">5</span></span>|<span data-ttu-id="4cc72-175">Подсистема **чата**: беседы в Bot используют платформу обмена сообщениями Teams.</span><span class="sxs-lookup"><span data-stu-id="4cc72-175">**Chat bubble**: Bot conversations use the Teams messaging framework.</span></span>|
+|<span data-ttu-id="4cc72-176">6 </span><span class="sxs-lookup"><span data-stu-id="4cc72-176">6</span></span>|<span data-ttu-id="4cc72-177">**Адаптивная карта**: Если в качестве ответов для ленты используются адаптивные карты, карточка занимает всю ширину пузырька.</span><span class="sxs-lookup"><span data-stu-id="4cc72-177">**Adaptive Card**: If your bot’s responses include Adaptive Cards, the card takes up the full width of the chat bubble.</span></span>|
+|<span data-ttu-id="4cc72-178">7 </span><span class="sxs-lookup"><span data-stu-id="4cc72-178">7</span></span>|<span data-ttu-id="4cc72-179">**Командное меню**: отображает стандартные команды ленты (определенные пользователем).</span><span class="sxs-lookup"><span data-stu-id="4cc72-179">**Command menu**: Displays your bot's standard commands (defined by you).</span></span>
 
-#### <a name="x2713-when-a-state-has-changed"></a><span data-ttu-id="4a087-175">&#x2713; при изменении состояния</span><span class="sxs-lookup"><span data-stu-id="4a087-175">&#x2713; When a state has changed</span></span>
+### <a name="command-menu"></a><span data-ttu-id="4cc72-180">Меню команд</span><span class="sxs-lookup"><span data-stu-id="4cc72-180">Command menu</span></span>
 
-<span data-ttu-id="4a087-176">Например, если назначение помечено как завершенное, при изменении ошибки, при появления новых социальных сетей или при завершении опроса.</span><span class="sxs-lookup"><span data-stu-id="4a087-176">For example, if an assignment is marked as complete, when a bug changes, when new social media is available, or when a poll has been completed.</span></span>
+<span data-ttu-id="4cc72-181">Меню команд содержит список слов или фраз, на которые должен отвечать пользователь с помощью ленты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-181">The command menu provides a list of words or phrases you want your bot to always respond to.</span></span> <span data-ttu-id="4cc72-182">Меню команды отображается над полем "создание", когда кто-то работает с роботом.</span><span class="sxs-lookup"><span data-stu-id="4cc72-182">The command menu displays above the compose box when someone is conversing with a bot.</span></span> <span data-ttu-id="4cc72-183">При выборе команды она вставляется в сообщение.</span><span class="sxs-lookup"><span data-stu-id="4cc72-183">When a command is selected, it gets inserted into a message.</span></span>
 
-#### <a name="x2713-when-the-timing-is-right"></a><span data-ttu-id="4a087-177">&#x2713;, когда выполняется правильная продолжительность</span><span class="sxs-lookup"><span data-stu-id="4a087-177">&#x2713; When the timing is right</span></span>
+<span data-ttu-id="4cc72-184">Список команд должен быть кратким.</span><span class="sxs-lookup"><span data-stu-id="4cc72-184">The list of commands should be brief.</span></span> <span data-ttu-id="4cc72-185">Меню предназначено только для выделения основных компонентов для ленты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-185">The menu is only meant to highlight your bot’s primary features.</span></span> <span data-ttu-id="4cc72-186">Отследите, чтобы команды были краткими.</span><span class="sxs-lookup"><span data-stu-id="4cc72-186">Keep commands concise, too.</span></span> <span data-ttu-id="4cc72-187">Например, вместо того, **чтобы помочь вам**, создайте команду **Help** (Справка).</span><span class="sxs-lookup"><span data-stu-id="4cc72-187">For example, create a command called **Help** instead of **Can you please help me**?</span></span>
+<span data-ttu-id="4cc72-188">Меню команд всегда должно быть доступно независимо от состояния беседы.</span><span class="sxs-lookup"><span data-stu-id="4cc72-188">The command menu must always be available regardless of the state of the conversation.</span></span>
 
-<span data-ttu-id="4a087-178">Ваш Bot может вести себя как ежедневный дайджест, отправляя уведомление пользователю или каналу по определенной частоте.</span><span class="sxs-lookup"><span data-stu-id="4a087-178">Your bot can act like a daily digest, sending a notification to the user or channel at a specific frequency.</span></span>
+:::image type="content" source="../../assets/images/bots/bot-command-menu.png" alt-text="В примере показана Командная меню Bot." border="false":::
 
-<span data-ttu-id="4a087-179">Оставить пользователя в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="4a087-179">Leave the user in control.</span></span> <span data-ttu-id="4a087-180">Предоставьте параметры уведомлений, которые включают частоту и приоритет.</span><span class="sxs-lookup"><span data-stu-id="4a087-180">Provide notification settings that include frequency and priority.</span></span>
+## <a name="understand-what-people-are-saying"></a><span data-ttu-id="4cc72-190">Сведения о том, что говорят люди</span><span class="sxs-lookup"><span data-stu-id="4cc72-190">Understand what people are saying</span></span>
 
-[!include[Bot notification](~/includes/design/bot-notification-image.html)]
+<span data-ttu-id="4cc72-191">Используйте тезаурус и получайте людей от максимально возможного количества фоновых рисунков, чтобы вы могли создавать различные интерпретации стандартных запросов.</span><span class="sxs-lookup"><span data-stu-id="4cc72-191">Use a thesaurus and get people from as many different backgrounds as possible to help you generate different interpretations of standard queries.</span></span>
 
----
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-understanding-hello.png" alt-text="Иллюстрация, на которой показано, как Bot может интерпретировать &quot;Hello&quot;." border="false":::
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-understanding-help.png" alt-text="Иллюстрация, на которой показано, как робот может интерпретировать &quot;Help&quot;." border="false":::
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-understanding-thanks.png" alt-text="Иллюстрация, на которой показано, как с помощью Bot можно интерпретировать &quot;Спасибо&quot;." border="false":::
+   :::column-end:::
+:::row-end:::
 
-## <a name="using-tabs"></a><span data-ttu-id="4a087-181">Использование вкладок</span><span class="sxs-lookup"><span data-stu-id="4a087-181">Using tabs</span></span>
+### <a name="extract-intent-and-data-from-messages"></a><span data-ttu-id="4cc72-195">Извлечение намерения и данных из сообщений</span><span class="sxs-lookup"><span data-stu-id="4cc72-195">Extract intent and data from messages</span></span>
 
-<span data-ttu-id="4a087-182">С помощью вкладок вы намерены, чтобы использовать роботы.</span><span class="sxs-lookup"><span data-stu-id="4a087-182">Tabs make your bot much more functional.</span></span> <span data-ttu-id="4a087-183">С помощью вкладок можно создавать следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="4a087-183">With tabs, you can create the following:</span></span>
+<span data-ttu-id="4cc72-196">Разработайте Bot для распознавания намерения, в результате чего в ответе на сообщение или запрос записывается кто-то из них.</span><span class="sxs-lookup"><span data-stu-id="4cc72-196">Design your bot to recognize intent, which captures what someone wants from a bot in response to a message or query.</span></span> <span data-ttu-id="4cc72-197">Назначение классифицирует сообщение или запрос как одно действие с одним или несколькими объектами данных, на которые влияет действие.</span><span class="sxs-lookup"><span data-stu-id="4cc72-197">Intent classifies a message or query as a single action with one or more data objects that are affected by the action.</span></span> 
 
-### <a name="x2713-a-place-to-host-standing-queries"></a><span data-ttu-id="4a087-184">&#x2713; места для размещения зафиксированных запросов</span><span class="sxs-lookup"><span data-stu-id="4a087-184">&#x2713; A place to host standing queries</span></span>
+<span data-ttu-id="4cc72-198">В приведенных ниже примерах описаны намерения пользователя и данные в сообщениях, отправляемых в Боты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-198">The following examples outline the user intent and data in messages sent to bots.</span></span>
 
-<span data-ttu-id="4a087-185">В личных беседах между Bot и одним человеком вкладки могут содержать сведения и списки, относящиеся к пользователю.</span><span class="sxs-lookup"><span data-stu-id="4a087-185">In personal conversations between a bot and a single person, tabs can contain user-specific information and lists.</span></span> <span data-ttu-id="4a087-186">Кроме того, они хорошо подходят для обслуживания ответов от Bot к часто задаваемым вопросам (FAQ), поэтому пользователям не нужно запрашивать.</span><span class="sxs-lookup"><span data-stu-id="4a087-186">They’re also a good place to maintain bot responses to frequently-asked questions (FAQs) — so users don’t need to keep asking.</span></span>
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-intent-1.png" alt-text="Пример, отображаемый в предложении &quot;Book a Flight to Сиэтл&quot;, цель пользователя — &quot;книга&quot;, а данные &quot;Москва&quot;." border="false":::
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-intent-2.png" alt-text="Пример, отображаемый в предложении &quot;при открытии хранилища&quot;, цель пользователя — &quot;when&quot;, а данные — &quot;Open&quot;." border="false":::
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-intent-3.png" alt-text="Пример, отображаемый в предложении &quot;планирование собрания на 1pm с Бобом в дистрибутиве&quot;, цель пользователя — &quot;планирование собрания&quot;, а данные — &quot;1pm&quot; и &quot;Bob в рассылке&quot;." border="false":::
+   :::column-end:::
+:::row-end:::
 
-### <a name="x2713-a-place-to-finish-a-conversation"></a><span data-ttu-id="4a087-187">&#x2713; места для завершения беседы</span><span class="sxs-lookup"><span data-stu-id="4a087-187">&#x2713; A place to finish a conversation</span></span>
+### <a name="analyze-and-improve"></a><span data-ttu-id="4cc72-202">Анализ и усовершенствование</span><span class="sxs-lookup"><span data-stu-id="4cc72-202">Analyze and improve</span></span>
 
-<span data-ttu-id="4a087-188">Вы можете создать ссылку на вкладку в карточке.</span><span class="sxs-lookup"><span data-stu-id="4a087-188">You can link to a tab from a card.</span></span> <span data-ttu-id="4a087-189">Если у ленты есть ответ, для выполнения которого требуется еще несколько действий, можно создать ссылку на вкладку для выполнения задачи или процесса.</span><span class="sxs-lookup"><span data-stu-id="4a087-189">If your bot provides an answer that requires a few more steps, it can link to a tab to complete the task or flow.</span></span> <span data-ttu-id="4a087-190">Например, в ответ на "как форматировать iPhone?" хорошим ответом может быть карточка, которая описывает первые несколько шагов и имеет кнопку для *большего числа* действий, а затем предоставляет пользователю доступ к вкладке " *Справка* " ленты и детальным ссылкам на конкретные инструкции.</span><span class="sxs-lookup"><span data-stu-id="4a087-190">For instance, in response to, "How do I format my iPhone?", a good response might be a card which outlines the first few steps and has a button for *Show more* that then takes the user to the bot's *Help* tab and deep links to the specific instructions.</span></span>
+<span data-ttu-id="4cc72-203">Сведения о том, что говорят пользователи при разговоре с Bot.</span><span class="sxs-lookup"><span data-stu-id="4cc72-203">Learn what users say when chatting with your bot.</span></span> <span data-ttu-id="4cc72-204">Это непрерывный, итеративный процесс, при котором пользовательская база растет в разных местах и организаций.</span><span class="sxs-lookup"><span data-stu-id="4cc72-204">This will be an ongoing, iterative process as your user base grows in different locations and orgs.</span></span> <span data-ttu-id="4cc72-205">Вы можете настроить распознавание языка и назначения языка для Bot с помощью средства понимания языка Майкрософт (Луис).</span><span class="sxs-lookup"><span data-stu-id="4cc72-205">You can tune your bot's language recognition and intent mapping with Microsoft Language Understanding (LUIS).</span></span>
 
-### <a name="x2713-a-place-to-host-a-settings-page"></a><span data-ttu-id="4a087-191">&#x2713; места для размещения страницы параметров</span><span class="sxs-lookup"><span data-stu-id="4a087-191">&#x2713; A place to host a settings page</span></span>
+* <span data-ttu-id="4cc72-206">[Общие сведения о Луис](https://docs.microsoft.com/azure/cognitive-services/luis/artificial-intelligence): сведения о том, как Луис использует AI для обеспечения естественного понимания языка (НЛУ) данных приложения.</span><span class="sxs-lookup"><span data-stu-id="4cc72-206">[Understanding LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/artificial-intelligence): Find out how LUIS uses AI to provide natural language understanding (NLU) to your app data.</span></span>
+* <span data-ttu-id="4cc72-207">[Интеграция с Луис](https://www.luis.ai/): Добавление функций естественных языков в Bot без сложного процесса создания моделей машинного обучения.</span><span class="sxs-lookup"><span data-stu-id="4cc72-207">[Integrating with LUIS](https://www.luis.ai/): Add natural language capabilities to your bot without the complex process of creating machine learning models.</span></span>
 
-<span data-ttu-id="4a087-192">Боты должен иметь некоторый пользовательский элемент управления.</span><span class="sxs-lookup"><span data-stu-id="4a087-192">Bots should have some user control.</span></span> <span data-ttu-id="4a087-193">Для многих Боты это разрешено через интерфейс Chat; Тем не менее, трудно запомнить эти параметры.</span><span class="sxs-lookup"><span data-stu-id="4a087-193">For many bots it is allowed through a chat interface; however, it's hard to remember those settings.</span></span> <span data-ttu-id="4a087-194">На вкладке Параметры можно отображать параметры пользователей, позволять пользователям менять их все одновременно, а также может быть хорошей точкой для более сложных пользовательских поведений.</span><span class="sxs-lookup"><span data-stu-id="4a087-194">A settings tab can display users settings, allow users to change them all at once, and may also be a good hand-off point for more complex bot custom behaviors.</span></span>
+## <a name="use-cases"></a><span data-ttu-id="4cc72-208">Варианты использования</span><span class="sxs-lookup"><span data-stu-id="4cc72-208">Use cases</span></span>
 
-### <a name="x2713-a-place-to-provide-some-help"></a><span data-ttu-id="4a087-195">&#x2713; место для предоставления справки</span><span class="sxs-lookup"><span data-stu-id="4a087-195">&#x2713; A place to provide some help</span></span>
+### <a name="simple-queries"></a><span data-ttu-id="4cc72-209">Простые запросы</span><span class="sxs-lookup"><span data-stu-id="4cc72-209">Simple queries</span></span>
 
-<span data-ttu-id="4a087-196">Добавление вкладки, в которой пользователи посвящены обмену данными с Bot.</span><span class="sxs-lookup"><span data-stu-id="4a087-196">Add a tab that educates users about how to communicate with your bot.</span></span> <span data-ttu-id="4a087-197">Вы можете предоставить некоторый контекст для того, что он делает или часто задаваемые вопросы.</span><span class="sxs-lookup"><span data-stu-id="4a087-197">You can provide some context for what it does or FAQs.</span></span>
+<span data-ttu-id="4cc72-210">Боты может обеспечить точное соответствие запросу или группе связанных соответствий для упрощения устранения неоднозначности.</span><span class="sxs-lookup"><span data-stu-id="4cc72-210">Bots can deliver an exact match to a query or a group of related matches to help with disambiguation.</span></span> <span data-ttu-id="4cc72-211">Для связанных совпадений сгруппируйте контент с помощью карточки списка.</span><span class="sxs-lookup"><span data-stu-id="4cc72-211">For related matches, group the content using a list card.</span></span>
 
-![Предоставление справки](~/assets/images/framework/framework_bots_tbot-help.png)
+:::image type="content" source="../../assets/images/bots/bot-simple-query.png" alt-text="В примере показан простой запрос взаимодействия с роботом." border="false":::
 
-> [!TIP]
-> <span data-ttu-id="4a087-199">Внедрение частей сайта на вкладку поможет пользователям сохранить контекст беседы, когда они используют вашу службу.</span><span class="sxs-lookup"><span data-stu-id="4a087-199">Embedding parts of your site in a tab will help users maintain the context of a conversation as they use your service.</span></span> <span data-ttu-id="4a087-200">Он устраняет потребность в запуске службы в браузере и переключение между приложениями.</span><span class="sxs-lookup"><span data-stu-id="4a087-200">It removes the need to launch your service in a browser and switch back and forth between apps.</span></span>
+### <a name="multi-turn-interactions"></a><span data-ttu-id="4cc72-213">Взаимодействие с несколькими переворотами</span><span class="sxs-lookup"><span data-stu-id="4cc72-213">Multi-turn interactions</span></span>
 
----
+<span data-ttu-id="4cc72-214">В то время как ваш робот может поддерживать полные запросы и вопросы, он также должен иметь возможность управлять несколькими интерактивными взаимодействиями.</span><span class="sxs-lookup"><span data-stu-id="4cc72-214">While your bot can support complete requests and questions, it should also be able to handle multi-turn interactions.</span></span> <span data-ttu-id="4cc72-215">Ожидаемые дальнейшие действия значительно облегчают для людей весь рабочий процесс (а не предоставляя им исчерпывающий запрос).</span><span class="sxs-lookup"><span data-stu-id="4cc72-215">Anticipating possible next steps makes it much easier for people to a complete task flow (rather than expecting them to craft a comprehensive request).</span></span>
 
-## <a name="bots-in-channels"></a><span data-ttu-id="4a087-201">Боты в каналах</span><span class="sxs-lookup"><span data-stu-id="4a087-201">Bots in channels</span></span>
+<span data-ttu-id="4cc72-216">В следующем примере Bot реагирует на каждое сообщение с вариантами, которые могут потребоваться далее.</span><span class="sxs-lookup"><span data-stu-id="4cc72-216">In the following example, the bot responds to each message with options for what might want to do next.</span></span>
 
-<span data-ttu-id="4a087-202">Вызов ленты в канале может осуществляться с помощью `@mention` .</span><span class="sxs-lookup"><span data-stu-id="4a087-202">Invoking a bot in a channel can be accomplished by `@mention`.</span></span> <span data-ttu-id="4a087-203">Диалоговое окно "bot" должно быть уникальным в случае каналов и групп vs. сценарии "один к одному", и в основном рекомендуется рассмотреть отдельные подходы.</span><span class="sxs-lookup"><span data-stu-id="4a087-203">Bot dialog should be unique in channels and groups vs. one-to-one scenarios and it's generally a good idea to consider separate approaches.</span></span> <span data-ttu-id="4a087-204">Это особенно справедливо в следующих случаях:</span><span class="sxs-lookup"><span data-stu-id="4a087-204">This is especially true in the following cases:</span></span>
+:::image type="content" source="../../assets/images/bots/bot-multi-turn.png" alt-text="Пример многофакторного взаимодействия с Bot." border="false":::
 
-### <a name="sensitive-data-sent-by-a-bot"></a><span data-ttu-id="4a087-205">Конфиденциальные данные, отправленные с помощью Bot</span><span class="sxs-lookup"><span data-stu-id="4a087-205">Sensitive data sent by a bot</span></span>
+### <a name="reach-out-to-users"></a><span data-ttu-id="4cc72-218">Доступ к пользователям</span><span class="sxs-lookup"><span data-stu-id="4cc72-218">Reach out to users</span></span>
 
-<span data-ttu-id="4a087-206">Хотя пользователи в команде могут быть известны службе, фактические роли пользователей не могут.</span><span class="sxs-lookup"><span data-stu-id="4a087-206">While the users in a team can be known to the service, the actual user roles cannot.</span></span> <span data-ttu-id="4a087-207">Это означает, что, например, в сценарии образования, включающем Буллинг, родительские контактные данные и контактные данные учащегося, не будут совместно использоваться в параметрах группы.</span><span class="sxs-lookup"><span data-stu-id="4a087-207">This means that, for example, in an education scenario involving bullying, parent and student contact information wouldn't be shared in a team setting.</span></span> <span data-ttu-id="4a087-208">Вместо этого сообщением в роботе может быть "два происшествия Буллинг сегодня", а также кнопка для отображения сведений.</span><span class="sxs-lookup"><span data-stu-id="4a087-208">Instead the bot's message might be,"Two bullying incidents occurred today" along with a button to show details.</span></span>
+<span data-ttu-id="4cc72-219">С помощью упреждающего обмена сообщениями Bot могут выполнять функции, которые отправляют уведомления, относящиеся к отдельному, групповому разговору или каналу с определенной частотой.</span><span class="sxs-lookup"><span data-stu-id="4cc72-219">With proactive messaging, your bot can act like a digest that sends notifications relevant to an individual, group chat, or channel at a specific frequency.</span></span> <span data-ttu-id="4cc72-220">С помощью ленты Bot можно отправить сообщение, когда в документе изменилось какое-либо изменение или закрыть рабочий элемент.</span><span class="sxs-lookup"><span data-stu-id="4cc72-220">A bot may send a message when something has changed in a document or a work item is closed.</span></span>
 
-<span data-ttu-id="4a087-209">Запуск сведений на веб-странице или модуль задачи может запрашивать учетные данные пользователя или запросы к индексу для ролей пользователей, связанных с учетными записями AAD.</span><span class="sxs-lookup"><span data-stu-id="4a087-209">Launching details in a web page, or a task module can prompt for user credentials or query against an index for user roles paired with AAD accounts.</span></span> <span data-ttu-id="4a087-210">В обоих этих параметрах данные находятся в области личных представлений, и утечки данных не будут.</span><span class="sxs-lookup"><span data-stu-id="4a087-210">In both of these options the data is in a private view scope and there will be no data leakage.</span></span> <span data-ttu-id="4a087-211">Если одни и те же данные отправляются в сеансе "один к одному" между пользователем и Bot, данные отображаются только для пользователя в этом контексте и, таким образом, безопасны для полного отображения в сообщении Bot.</span><span class="sxs-lookup"><span data-stu-id="4a087-211">If the same data is sent in a one-to-one chat between a user and the bot, the data is only visible to the user in that context and is, therefore safe, to fully display in the bot message.</span></span> <span data-ttu-id="4a087-212">Следует избегать перехода от канала к разговору "один к одному", так как такая принудительная Навигация очень сильно нарушена.</span><span class="sxs-lookup"><span data-stu-id="4a087-212">Taking users from a channel to a one-to-one chat should be avoided however as that forced navigation is highly disruptive.</span></span>
+<span data-ttu-id="4cc72-221">В следующем примере пользователь получает всплывающее уведомление о том, что в канале с сообщением Bot помещается в другом канале.</span><span class="sxs-lookup"><span data-stu-id="4cc72-221">In the following example, a user gets a toast notification that a bot messaged them in another channel.</span></span>
 
-### <a name="sending-cards-as-a-response-to-interactions"></a><span data-ttu-id="4a087-213">Отправка карточек в качестве ответа на диалоги</span><span class="sxs-lookup"><span data-stu-id="4a087-213">Sending cards as a response to interactions</span></span>
+:::image type="content" source="../../assets/images/bots/bot-proactive-message-toast.png" alt-text="В примере показано всплывающее уведомление о неактивном обмене сообщениями с пользователем из другого канала." border="false":::
 
-<span data-ttu-id="4a087-214">При отправке карточки обоймы в ответ на ознакомление с одним и тем же разговором по принципу "один к одному" в активном канале могут *воздействовать* десятки или сотни *обзоров* в активном канале с большим количеством пользователей.</span><span class="sxs-lookup"><span data-stu-id="4a087-214">While sending a carousel card in response to *Take a tour* in a one-to-one chat is perfectly acceptable, the same pattern could yield tens or hundreds of *tour carousels* in an active channel with lots of users.</span></span> <span data-ttu-id="4a087-215">Чтобы избежать этого, вторичные карточки должны размещаться в модуле задачи.</span><span class="sxs-lookup"><span data-stu-id="4a087-215">To avoid this, secondary cards should be hosted in a task module.</span></span> <span data-ttu-id="4a087-216">Этот шаблон позволяет пользователям в контексте канала поддерживать очистку канала от лишних откликов ленты и при необходимости рассматривает различные роли пользователей при отображении *обзора* .</span><span class="sxs-lookup"><span data-stu-id="4a087-216">This pattern keeps users in context with the channel, keeps the channel clean of excessive bot responses, and can optionally consider different user roles when the *tour* is shown.</span></span>
+<span data-ttu-id="4cc72-223">Теперь пользователь может прочитать сообщение из Bot-канала.</span><span class="sxs-lookup"><span data-stu-id="4cc72-223">Now in that channel, the user can read their message from the bot.</span></span>
 
-## <a name="useful-tips"></a><span data-ttu-id="4a087-217">Полезные советы</span><span class="sxs-lookup"><span data-stu-id="4a087-217">Useful tips</span></span>
+:::image type="content" source="../../assets/images/bots/bot-proactive-message.png" alt-text="Пример показывает, что пользователь просматривает упреждающее сообщение." border="false":::
 
-### <a name="x2713-remember-bots-arent-assistants"></a><span data-ttu-id="4a087-218">&#x2713; Помните, что боты не помощники</span><span class="sxs-lookup"><span data-stu-id="4a087-218">&#x2713; Remember, bots aren’t assistants</span></span>
+### <a name="use-tabs-with-bots"></a><span data-ttu-id="4cc72-225">Использование вкладок с Боты</span><span class="sxs-lookup"><span data-stu-id="4cc72-225">Use tabs with bots</span></span>
 
-<span data-ttu-id="4a087-219">В отличие от агентов, например Кортаны, Боты выступает специалистами.</span><span class="sxs-lookup"><span data-stu-id="4a087-219">Unlike agents, e.g., Cortana, bots act as specialists.</span></span>
+<span data-ttu-id="4cc72-226">С помощью вкладки можно упростить использование ленты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-226">A tab can make your bot easier to use.</span></span> <span data-ttu-id="4cc72-227">Например, если ваш Bot может создавать рабочие элементы, было бы неплохо Показать все эти элементы в центральном расположении внутри вкладки. Подробнее о [проектировании вкладок](../../tabs/design/tabs.md).</span><span class="sxs-lookup"><span data-stu-id="4cc72-227">For example, if your bot can create work items, it would be nice to show all those items in a central location inside a tab. See more about [designing tabs](../../tabs/design/tabs.md).</span></span>
 
-### <a name="x2713-discourage-chitchat"></a><span data-ttu-id="4a087-220">&#x2713; препятствовать читчат</span><span class="sxs-lookup"><span data-stu-id="4a087-220">&#x2713; Discourage chitchat</span></span>
+:::image type="content" source="../../assets/images/bots/bot-with-tab.png" alt-text="В примере показано, как можно управлять контентом Bot с помощью вкладки." border="false":::
 
-<span data-ttu-id="4a087-221">Если ваш Bot не создан для беседы, Узнайте о способах перенаправления читчат к завершению задачи.</span><span class="sxs-lookup"><span data-stu-id="4a087-221">Unless your bot is built for conversation, find ways to redirect chitchat toward task completion.</span></span>
+## <a name="manage-a-bot"></a><span data-ttu-id="4cc72-229">Управление Bot</span><span class="sxs-lookup"><span data-stu-id="4cc72-229">Manage a bot</span></span>
 
-### <a name="x2713-introduce-some-personality"></a><span data-ttu-id="4a087-222">&#x2713; ввести некоторые личные данные</span><span class="sxs-lookup"><span data-stu-id="4a087-222">&#x2713; Introduce some personality</span></span>
+<span data-ttu-id="4cc72-230">Пользователи должны иметь возможность изменять параметры ленты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-230">Users should be able to change a bot's settings.</span></span> <span data-ttu-id="4cc72-231">Вы можете предоставить эту функцию с помощью команд Bot, но обычно более эффективно включать все параметры в [модуль задач](../../task-modules-and-cards/task-modules/design-teams-task-modules.md) (как показано в следующем примере).</span><span class="sxs-lookup"><span data-stu-id="4cc72-231">You can provide this functionality with bot commands, but it's usually more efficient to include all settings in a [task module](../../task-modules-and-cards/task-modules/design-teams-task-modules.md) (as shown in the following example).</span></span>
 
-<span data-ttu-id="4a087-223">Следите за тем, чтобы вы поделились с голосовым прозначением продукта.</span><span class="sxs-lookup"><span data-stu-id="4a087-223">Keep your bot personality consistent with the voice of your product.</span></span> <span data-ttu-id="4a087-224">Представьте себе, что вы говорите в своей компании.</span><span class="sxs-lookup"><span data-stu-id="4a087-224">Think of your bot as speaking for your company.</span></span>
+:::image type="content" source="../../assets/images/bots/manage-bot-task-module.png" alt-text="В примере показан модуль задачи для настройки параметров Bot." border="false":::
 
-### <a name="x2713-maintain-tone"></a><span data-ttu-id="4a087-225">&#x2713; обслуживание тонового набора</span><span class="sxs-lookup"><span data-stu-id="4a087-225">&#x2713; Maintain tone</span></span>
+## <a name="best-practices"></a><span data-ttu-id="4cc72-233">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="4cc72-233">Best practices</span></span>
 
-<span data-ttu-id="4a087-226">Определите, что ваш тон должен быть понятным и светлым, "только факты" или "супер случай".</span><span class="sxs-lookup"><span data-stu-id="4a087-226">Determine whether you want your tone to be friendly and light, “just the facts”, or super quirky.</span></span>
+### <a name="content"></a><span data-ttu-id="4cc72-234">Содержимое</span><span class="sxs-lookup"><span data-stu-id="4cc72-234">Content</span></span>
 
-### <a name="x2713-encourage-easy-task-flow"></a><span data-ttu-id="4a087-227">&#x2713; упрощения процесса упрощения задач</span><span class="sxs-lookup"><span data-stu-id="4a087-227">&#x2713; Encourage easy task flow</span></span>
+:::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
 
-<span data-ttu-id="4a087-228">Поддержка взаимодействия с несколькими переворотами в то же время и разрешение на полностью сформированные вопросы.</span><span class="sxs-lookup"><span data-stu-id="4a087-228">Support multi-turn interactions while still allowing for fully formed questions.</span></span> <span data-ttu-id="4a087-229">Если предполагается, что следующий шаг позволит пользователям значительно упростить процесс перехода между потоками задач.</span><span class="sxs-lookup"><span data-stu-id="4a087-229">Anticipating the next step will help users get through task flows much easier.</span></span>
+#### <a name="do-establish-a-clear-persona"></a><span data-ttu-id="4cc72-236">Do: создание понятного пользователя</span><span class="sxs-lookup"><span data-stu-id="4cc72-236">Do: Establish a clear persona</span></span>
 
-<span data-ttu-id="4a087-230">Если для выполнения задачи пользователь выполняет несколько действий, разрешите ему выполнить все действия, но закончите их быстрее.</span><span class="sxs-lookup"><span data-stu-id="4a087-230">If a user takes several steps to complete a task, allow your bot to take them through each step, but finish by having it suggest a quicker path.</span></span> <span data-ttu-id="4a087-231">Например, если пользователь запустил несколько бесед для установки собрания (сначала укажите собрание, а затем укажите, кому присвоено время, а затем — Дата дня), закончите беседу следующим предложением: в следующий раз попробуйте указать, можно ли планировать собрание с Бобом по адресу 1:00 завтра.</span><span class="sxs-lookup"><span data-stu-id="4a087-231">For example, if a user has taken several conversational turns to set a meeting (by first specifying a meeting, then identifying with whom, then stating the time, then stating the day), finish the conversation with the following suggestion: Next time, try asking if you can ‘schedule a meeting with Bob at 1:00 tomorrow’.</span></span>
+<span data-ttu-id="4cc72-237">Является ли ваш Bot понятным и светлым, "только факты", или очень тонкой?</span><span class="sxs-lookup"><span data-stu-id="4cc72-237">Is your bot's tone friendly and light, “just the facts”, or super quirky?</span></span> <span data-ttu-id="4cc72-238">Как он должен реагировать в различных сценариях?</span><span class="sxs-lookup"><span data-stu-id="4cc72-238">How should it respond in different scenarios?</span></span> <span data-ttu-id="4cc72-239">Планирование и документирование персонажа пользователя с пользовательским роботом упрощает написание откликов, которые кажутся естественными и взаимосвязаны.</span><span class="sxs-lookup"><span data-stu-id="4cc72-239">Planning and documenting your bot's persona makes it easier to write responses that seem natural and cohesive.</span></span>
+
+<span data-ttu-id="4cc72-240">Дополнительные сведения о написании для боты можно найти в <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">наборе элементов Microsoft Teams Kit (фигма).</a></span><span class="sxs-lookup"><span data-stu-id="4cc72-240">See more about writing for bots in the <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Microsoft Teams UI Kit (Figma).</a></span></span>
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="do-clearly-convey-what-your-bot-can-do"></a><span data-ttu-id="4cc72-242">Сделать: ясно укажите действия, которые может выполнять Bot</span><span class="sxs-lookup"><span data-stu-id="4cc72-242">Do: Clearly convey what your bot can do</span></span>
+
+<span data-ttu-id="4cc72-243">Приветственные сообщения и обзоры помогают людям узнать, что можно делать с помощью программы Bot.</span><span class="sxs-lookup"><span data-stu-id="4cc72-243">Welcome messages and tours help people understand what they can do with your bot.</span></span>
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="dont-obscure-your-bots-features"></a><span data-ttu-id="4cc72-245">Не закрывать функции для ленты.</span><span class="sxs-lookup"><span data-stu-id="4cc72-245">Don't: Obscure your bot's features</span></span>
+
+<span data-ttu-id="4cc72-246">Первое впечатление.</span><span class="sxs-lookup"><span data-stu-id="4cc72-246">First impressions matter.</span></span> <span data-ttu-id="4cc72-247">Пользователи, скорее всего, будут путать или подозрительны, если вы увидите сообщение для входа в нондескрипт.</span><span class="sxs-lookup"><span data-stu-id="4cc72-247">People will likely be confused or suspicious when presented with a nondescript sign-in message.</span></span>
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="do-recognize-non-questions"></a><span data-ttu-id="4cc72-249">Do: распознать несвязанные вопросы</span><span class="sxs-lookup"><span data-stu-id="4cc72-249">Do: Recognize non-questions</span></span>
+
+<span data-ttu-id="4cc72-250">Ваш робот должен иметь возможность отвечать на такие сообщения, как "Привет", "Справка" и "Спасибо", а также учет типичных ошибок и коллокуиалисмс.</span><span class="sxs-lookup"><span data-stu-id="4cc72-250">Your bot should be able to respond to messages like "Hi", "Help", and "Thanks" while also accounting for common misspellings and colloquialisms.</span></span>
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="dont-miss-out-on-opportunities-to-delight"></a><span data-ttu-id="4cc72-252">Не: пропустите возможности сведения</span><span class="sxs-lookup"><span data-stu-id="4cc72-252">Don't: Miss out on opportunities to delight</span></span>
+
+<span data-ttu-id="4cc72-253">Некоторые люди ожидают, что беседы работают естественным образом с реальным человеком.</span><span class="sxs-lookup"><span data-stu-id="4cc72-253">Some people expect conversations to flow naturally like they would with a real person.</span></span> <span data-ttu-id="4cc72-254">Постарайтесь избежать ответов клумси на простые сообщения.</span><span class="sxs-lookup"><span data-stu-id="4cc72-254">Try to avoid clumsy responses to simple messages.</span></span>
+
+   :::column-end:::
+:::row-end:::
+
+### <a name="troubleshooting"></a><span data-ttu-id="4cc72-255">Устранение неполадок</span><span class="sxs-lookup"><span data-stu-id="4cc72-255">Troubleshooting</span></span>
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="do-provide-help"></a><span data-ttu-id="4cc72-257">Do: предоставление справки</span><span class="sxs-lookup"><span data-stu-id="4cc72-257">Do: Provide help</span></span>
+
+<span data-ttu-id="4cc72-258">Если ваш робот не может удовлетворить запрос, предоставьте пользователю способы взаимодействия с роботом.</span><span class="sxs-lookup"><span data-stu-id="4cc72-258">If your bot can’t satisfy a request, provide ways for a user to educate themselves about interacting with your bot.</span></span>
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="dont-leave-users-stranded"></a><span data-ttu-id="4cc72-260">Не: оставляйте потерянных пользователей</span><span class="sxs-lookup"><span data-stu-id="4cc72-260">Don't: Leave users stranded</span></span>
+
+<span data-ttu-id="4cc72-261">Пользователи смогут быстро отказаться от работы с роботом, если они не могут устранить неполадки.</span><span class="sxs-lookup"><span data-stu-id="4cc72-261">People will quickly abandon your bot if they can’t troubleshoot issues.</span></span>
+
+   :::column-end:::
+:::row-end:::
+
+### <a name="complex-interactions"></a><span data-ttu-id="4cc72-262">Сложные взаимодействия</span><span class="sxs-lookup"><span data-stu-id="4cc72-262">Complex interactions</span></span>
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="do-use-task-modules-or-tabs"></a><span data-ttu-id="4cc72-264">Do: использование модулей задач или вкладок</span><span class="sxs-lookup"><span data-stu-id="4cc72-264">Do: Use task modules or tabs</span></span>
+
+<span data-ttu-id="4cc72-265">Если у ленты есть ответ, требующий еще несколько действий, можно создать ссылку на модуль задачи или вкладку для завершения задачи или процесса.</span><span class="sxs-lookup"><span data-stu-id="4cc72-265">If your bot provides an answer that requires a few more steps, you can link to a task module or tab to complete the task or flow.</span></span>
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="dont-make-multi-turn-interactions-tedious"></a><span data-ttu-id="4cc72-267">Не: утомительные взаимодействия с несколькими переворотами</span><span class="sxs-lookup"><span data-stu-id="4cc72-267">Don't: Make multi-turn interactions tedious</span></span>
+
+<span data-ttu-id="4cc72-268">Обширная беседа для выполнения одной задачи очень мала и слишком сложна.</span><span class="sxs-lookup"><span data-stu-id="4cc72-268">An extensive conversation to complete a single task is slow and overly complex.</span></span> <span data-ttu-id="4cc72-269">Кроме того, необходимо, чтобы разработчик заменил изменения состояний (например, время ожидания беседы или отправка сообщения "Отмена").</span><span class="sxs-lookup"><span data-stu-id="4cc72-269">It also requires the developer to account for state changes (such as the conversation timing out or you sending a “Cancel” message).</span></span>
+
+   :::column-end:::
+:::row-end:::
+
+### <a name="privacy"></a><span data-ttu-id="4cc72-270">Конфиденциальность</span><span class="sxs-lookup"><span data-stu-id="4cc72-270">Privacy</span></span>
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="do-only-show-sensitive-info-in-a-personal-context"></a><span data-ttu-id="4cc72-272">Do: показывать только конфиденциальные данные в личном контексте</span><span class="sxs-lookup"><span data-stu-id="4cc72-272">Do: Only show sensitive info in a personal context</span></span>
+
+<span data-ttu-id="4cc72-273">Если в качестве ленты используется групповой чат или канал, рекомендуется направить пользователей в частное расположение (например, модуль задачи, вкладку или браузер) для просмотра конфиденциальной информации.</span><span class="sxs-lookup"><span data-stu-id="4cc72-273">If your bot is in a group chat or channel, we recommend directing users to a private location (such as a task module, tab, or browser) to view sensitive information.</span></span>
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="Пример, в котором показана рекомендуемая практика." border="false":::
+
+#### <a name="dont-some-content-isnt-meant-to-be-seen-by-everyone"></a><span data-ttu-id="4cc72-275">Не так: часть контента не должна отображаться для всех пользователей</span><span class="sxs-lookup"><span data-stu-id="4cc72-275">Don't: Some content isn’t meant to be seen by everyone</span></span>
+
+<span data-ttu-id="4cc72-276">Ваш робот не должен раскрывать конфиденциальную информацию группе людей.</span><span class="sxs-lookup"><span data-stu-id="4cc72-276">Your bot shouldn’t reveal sensitive information to a group of people.</span></span>
+
+   :::column-end:::
+:::row-end:::
+
+## <a name="learn-more"></a><span data-ttu-id="4cc72-277">Дополнительные сведения</span><span class="sxs-lookup"><span data-stu-id="4cc72-277">Learn more</span></span>
+
+<span data-ttu-id="4cc72-278">Следующие рекомендации могут помочь вам в работе с Bot:</span><span class="sxs-lookup"><span data-stu-id="4cc72-278">These other guidelines may help with your bot design:</span></span>
+
+* [<span data-ttu-id="4cc72-279">Разработка личного приложения</span><span class="sxs-lookup"><span data-stu-id="4cc72-279">Designing your personal app</span></span>](../../concepts/design/personal-apps.md)
+* [<span data-ttu-id="4cc72-280">Разработка адаптивных карточек</span><span class="sxs-lookup"><span data-stu-id="4cc72-280">Designing Adaptive Cards</span></span>](../../task-modules-and-cards/cards/design-effective-cards.md)
+* [<span data-ttu-id="4cc72-281">Разработка модулей задач</span><span class="sxs-lookup"><span data-stu-id="4cc72-281">Designing task modules</span></span>](../../task-modules-and-cards/task-modules/design-teams-task-modules.md)
+
+## <a name="validate-your-design"></a><span data-ttu-id="4cc72-282">Проверка проекта</span><span class="sxs-lookup"><span data-stu-id="4cc72-282">Validate your design</span></span>
+
+<span data-ttu-id="4cc72-283">Если вы планируете опубликовать свое приложение в AppSource, следует изучить проблемы, которые обычно приводят к сбою приложений во время отправки.</span><span class="sxs-lookup"><span data-stu-id="4cc72-283">If you plan to publish your app to AppSource, you should understand the design issues that commonly cause apps to fail during submission.</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="4cc72-284">Проверка рекомендаций по проверке макета</span><span class="sxs-lookup"><span data-stu-id="4cc72-284">Check design validation guidelines</span></span>](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#validation-guidelines--most-failed-test-cases)
