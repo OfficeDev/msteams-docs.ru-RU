@@ -60,26 +60,10 @@
       href: concepts/capabilities-overview.md
     - name: Точки входа приложения
       href: concepts/extensibility-points.md
-    - name: Создание приложения
-      items:
-        - name: Поймите ваши варианты использования
-          href: concepts/design/understand-use-cases.md
-        - name: Сопоставить варианты использования с функциями
-          href: concepts/design/map-use-cases.md
-        - name: Персональные приложения
-          href: concepts/design/personal-apps.md
-        - name: Компоненты пользовательского интерфейса
-          items:
-            - name: Цвета
-              href: concepts/design/components/color.md
-            - name: 'Кнопки, ссылки и элементы управления'
-              href: concepts/design/components/buttons.md
-            - name: Шрифтовое оформление
-              href: concepts/design/components/typography.md
-            - name: Поля и всплывающие окна
-              href: concepts/design/components/fields.md
-            - name: Диалоговые окна
-              href: concepts/design/components/dialogs.md
+    - name: Проанализируйте варианты использования
+      href: concepts/design/understand-use-cases.md
+    - name: Сопоставьте варианты использования с функциями
+      href: concepts/design/map-use-cases.md
     - name: Создайте и протестируйте свое приложение
       items:
         - name: Подготовьте своего клиента Office 365
@@ -140,6 +124,34 @@
           href: concepts/device-capabilities/native-device-permissions.md
         - name: Камера и галерея
           href: concepts/device-capabilities/mobile-camera-image-permissions.md
+- name: Создание приложения
+  items:
+    - name: Обзор
+      href: concepts/design/design-teams-app-overview.md
+    - name: Основы
+      href: concepts/design/design-teams-app-fundamentals.md
+    - name: Основные компоненты пользовательского интерфейса
+      href: concepts/design/design-teams-app-basic-ui-components.md
+    - name: Шаблоны пользовательского интерфейса
+      href: concepts/design/design-teams-app-ui-templates.md
+    - name: Персональные приложения
+      href: concepts/design/personal-apps.md
+    - name: Вкладки
+      items:
+        - name: Классические и веб-приложения
+          href: tabs/design/tabs.md
+        - name: Для мобильных устройств
+          href: tabs/design/tabs-mobile.md
+    - name: Расширения для обмена сообщениями
+      href: messaging-extensions/design/messaging-extension-design.md
+    - name: Боты
+      href: bots/design/bots.md
+    - name: Расширения для собраний
+      href: apps-in-teams-meetings/design/designing-apps-in-meetings.md
+    - name: Модули задач
+      href: task-modules-and-cards/task-modules/design-teams-task-modules.md
+    - name: Адаптивные карточки
+      href: task-modules-and-cards/cards/design-effective-cards.md
 - name: Вкладки — встроенные веб-интерфейсы
   items:
     - name: Что такое пользовательские вкладки?
@@ -164,12 +176,6 @@
               href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
             - name: Создать личную вкладку
               href: tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md
-    - name: Создайте свои вкладки
-      items:
-        - name: Обзор дизайна
-          href: tabs/design/tabs.md
-        - name: Вкладки на мобильных устройствах
-          href: tabs/design/tabs-mobile.md
     - name: Практические руководства
       expanded: true
       items:
@@ -215,10 +221,6 @@
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot'
         - name: Бот для беседы в Teams на Python
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot'
-    - name: Создайте свой бот
-      items:
-        - name: Обзор дизайна
-          href: bots/design/bots.md
     - name: Практические руководства
       expanded: true
       items:
@@ -276,12 +278,8 @@
           href: bots/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md
 - name: Расширения для обмена сообщениями — взаимодействие для решения задач
   items:
-    - name: Что такое расширения обмена сообщениями?
+    - name: Что такое расширения для обмена сообщениями?
       href: messaging-extensions/what-are-messaging-extensions.md
-    - name: Разработка
-      items:
-        - name: Рекомендации по разработке расширений для обмена сообщениями
-          href: messaging-extensions/design/messaging-extension-design.md
     - name: Примеры использования
       items:
         - name: С командой действия
@@ -329,8 +327,6 @@
       href: task-modules-and-cards/what-are-cards.md
     - name: Карточки
       items:
-        - name: Разработка эффективных карточек
-          href: task-modules-and-cards/cards/design-effective-cards.md
         - name: Форматирование текста карточки
           href: task-modules-and-cards/cards/cards-format.md
         - name: Добавление и ответ на действия с карточкой
@@ -362,14 +358,8 @@
   items:
     - name: Приложения Teams на собраниях
       href: apps-in-teams-meetings/teams-apps-in-meetings.md
-    - name: Создание приложений для собраний групп
+    - name: Создание приложений для собраний Teams
       href: apps-in-teams-meetings/create-apps-for-teams-meetings.md
-    - name: Разработайте свое собственное приложение для собраний
-      items:
-        - name: Диалоговое окно собрания
-          href: apps-in-teams-meetings/design/designing-in-meeting-dialog.md
-        - name: Вкладка собрания
-          href: apps-in-teams-meetings/design/designing-in-meeting-tab.md
 - name: Интеграция REST API Microsoft Graph
   items:
     - name: Согласие с определением ресурсов
