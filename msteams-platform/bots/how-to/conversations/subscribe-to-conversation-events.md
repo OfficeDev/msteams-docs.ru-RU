@@ -1,47 +1,55 @@
 ---
 title: Подписаться на события разговора
 author: WashingtonKayaker
-description: Как подписаться на события бесед из робота Microsoft Teams.
+description: Как подписаться на события бесед из бота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: d6a385d4608239029a943c0a1365cfcb56b21b6b
-ms.sourcegitcommit: df9448681d2a81f1029aad5a5e1989cd438d1ae0
+ms.openlocfilehash: f0da861834bbf221fe715d35c0beea6c3bd08f26
+ms.sourcegitcommit: 5f1d6c12d80d48f403b73586f68bacf15785c855
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877038"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739037"
 ---
 # <a name="subscribe-to-conversation-events"></a>Подписаться на события разговора
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-Microsoft Teams отправляет уведомления в Bot для событий, происходящих в областях действия ленты. Вы можете записать эти события в код и выполнить действия с ними, как показано ниже:
+Microsoft Teams отправляет вашему боту уведомления о событиях, которые происходят в тех случаях, когда бот активен. Вы можете зафиксировать эти события в коде и принять с ними меры, например:
 
-* Инициация приветственного сообщения при добавлении ленты в группу
-* Инициация приветственного сообщения при добавлении или удалении нового участника группы
-* Запуск уведомления при создании, переименовании или удалении канала
-* Когда пользователю понравится сообщение Bot
+* Запуск приветствия при добавлении бота в команду
+* Запуск приветствия при добавлении или удалении нового участника группы
+* Запуск уведомления при его запуске, переименовании или удалении
+* Если сообщение бота нравится пользователю
 
 ## <a name="conversation-update-events"></a>События обновления беседы
 
-Элемент Bot получает `conversationUpdate` событие, когда оно было добавлено в беседу, другие элементы были добавлены в беседу или удалены из нее, а метаданные беседы изменились.
+> [!Important]
+> Новые события можно добавлять в любое время, и ваш бот начнет их получать.
+> Необходимо проработать возможность получения непредвиденных событий.
+> Если вы используете SDK Bot Framework, бот автоматически ответит на любые события, которые вы `200 - OK` не решите обработать.
 
-`conversationUpdate`Событие отправляется в Bot при получении сведений об обновлениях членства для Teams, где она была добавлена. Он также получает обновление, когда оно добавляется в первый раз специально для личных бесед.
+Бот получает событие при добавлении в беседу, добавлении или удалении других участников беседы или изменения метаданных `conversationUpdate` беседы.
 
-В следующей таблице приведен список событий обновления бесед в Teams со ссылками на дополнительные сведения.
+Это событие отправляется боту, когда он получает сведения об обновлениях членства для `conversationUpdate` команд, в которые оно было добавлено. Кроме того, он получает обновление при первом добавлении специально для личных бесед.
 
-| Выполняемое действие        | EventType         | Метод с именем              | Описание                | Область |
+В следующей таблице показан список событий обновления бесед Teams со ссылками на дополнительные сведения.
+
+| Предпринятые действия        | EventType         | Вызван метод              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
-| канал создан     | чаннелкреатед    | онтеамсчаннелкреатедасинк | [Создан канал](#channel-created) | Команда |
-| канал переименован     | чаннелренамед    | онтеамсчаннелренамедасинк | [Канал переименован](#channel-renamed) | Команда |
-| канал удален     | чаннелделетед    | онтеамсчаннелделетедасинк | [Канал удален](#channel-deleted) | Команда |
-| добавленные участники группы   | теаммембераддед   | онтеамсмемберсаддедасинк   | [Участник, добавленный в группу](#team-members-added)   | Все |
-| удалены участники группы | теаммемберремовед | онтеамсмемберсремоведасинк | [Участник удален из группы](#team-members-removed) | Группа & groupChat |
-| Команда переименована        | теамренамед       | онтеамстеамренамедасинк    | [Команда была переименована](#team-renamed)       | Команда |
+| канал создан     | channelCreated    | OnTeamsChannelCreatedAsync | [Канал создан](#channel-created) | Команда |
+| channel renamed     | channelRenamed    | OnTeamsChannelRenamedAsync | [Канал был переименован](#channel-renamed) | Команда |
+| канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал был удален](#channel-deleted) | Команда |
+| восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал был восстановлен](#channel-deleted) | Команда |
+| добавлены члены   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен участник](#team-members-added)   | Все |
+| members removed | membersRemoved | OnTeamsMembersRemovedAsync | [Член был удален](#team-members-removed) | groupChat & команды |
+| команда переименована        | teamRenamed       | OnTeamsTeamRenamedAsync    | [Команда была переименована](#team-renamed)       | Команда |
+| team archived        | teamArchived       | OnTeamsTeamArchivedAsync    | [Архивировать команду](#team-archived)       | Команда |
+| команда восстановлена        | teamRestored      | OnTeamsTeamRestoredAsync    | [Команда была переименована](#team-renamed)       | Команда |
 
 ### <a name="channel-created"></a>Канал создан
 
-Событие созданного канала отправляется на ваш робот при создании нового канала в группе, в которой установлен почтовый робот.
+Событие, созданное каналом, отправляется вашему боту всякий раз, когда в команде создается новый канал, в который устанавливается бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -128,7 +136,7 @@ async def on_teams_channel_created(
 
 ### <a name="channel-renamed"></a>Канал переименован
 
-Событие переименования канала передается в Bot при переименовании канала в группе, в которой установлен почтовый робот.
+Событие переименования канала отправляется вашему боту при переименовании канала в команде, в которая установлен бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -208,7 +216,7 @@ async def on_teams_channel_renamed(
 
 ### <a name="channel-deleted"></a>Канал удален
 
-Событие Deleted Channel отправляется на ваш Bot при удалении канала в группе, в которой установлен почтовый робот.
+Событие удаления канала отправляется вашему боту при удалении канала в команде, в которая установлен этот бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -288,16 +296,103 @@ async def on_teams_channel_deleted(
 
 * * *
 
-### <a name="team-members-added"></a>Добавленные участники группы
+### <a name="channel-restored"></a>Канал восстановлен
 
-`teamMemberAdded`Событие отправляется на почтовый робот при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или группу чата, в которой установлена программа-робот. Сведения о пользователе (ID) уникальны для почтового робота и могут кэшироваться для последующего использования службой (например, для отправки сообщения определенному пользователю).
+Событие восстановления канала отправляется боту при восстановлении ранее удаленного канала в команде, в которую уже установлен бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
-protected override async Task OnTeamsMembersAddedAsync(IList<ChannelAccount> membersAdded, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+protected override async Task OnTeamsChannelRestoredAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
 {
-    foreach (TeamsChannelAccount member in membersAdded)
+    var heroCard = new HeroCard(text: $"{channelInfo.Name} is the Channel restored.");
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(heroCard.ToAttachment()), cancellationToken);
+}
+```
+
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
+
+<!-- From sample: botbuilder-js\libraries\botbuilder\tests\teams\conversationUpdate\src\conversationUpdateBot.ts -->
+
+```typescript
+
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+        this.onTeamsChannelRestoredEvent(async (channelInfo: ChannelInfo, teamInfo: TeamInfo, turnContext: TurnContext, next: () => Promise<void>): Promise<void> => {
+            const card = CardFactory.heroCard('Channel Restored', `${channelInfo.name} is the Channel restored`);
+            const message = MessageFactory.attachment(card);
+            await turnContext.sendActivity(message);
+            await next();
+        });
+    }
+}
+
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+```json
+{
+    "type": "conversationUpdate",
+    "timestamp": "2017-02-23T19:34:07.478Z",
+    "localTimestamp": "2017-02-23T12:34:07.478-07:00",
+    "id": "f:dd6ec311",
+    "channelId": "msteams",
+    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/",
+    "from": {
+        "id": "29:1wR7IdIRIoerMIWbewMi75JA3scaMuxvFon9eRQW2Nix5loMDo0362st2IaRVRirPZBv1WdXT8TIFWWmlQCizZQ"
+    },
+    "conversation": {
+        "isGroup": true,
+        "conversationType": "channel",
+        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+    },
+    "recipient": {
+        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
+        "name": "SongsuggesterBot"
+    },
+    "channelData": {
+        "channel": {
+            "id": "19:6d97d816470f481dbcda38244b98689a@thread.skype",
+            "name": "FunDiscussions"
+        },
+        "team": {
+            "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+        },
+        "eventType": "channelRestored",
+        "tenant": {
+            "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    }
+}
+```
+
+# <a name="python"></a>[Python](#tab/python)
+
+```python
+async def on_teams_channel_restored(
+    self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
+):
+    return await turn_context.send_activity(
+        MessageFactory.text(
+            f"The restored channel is {channel_info.name}. The channel id is {channel_info.id}"
+        )
+    )
+```
+
+* * *
+
+### <a name="team-members-added"></a>Добавлены участники команды
+
+Это событие отправляется боту при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или групповой чат, в который устанавливается `teamMemberAdded` бот. Сведения о пользователе (ID) уникальны для вашего бота и могут кэшться для дальнейшего использования вашей службой (например, отправки сообщения определенному пользователю).
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+
+```csharp
+protected override async Task OnTeamsMembersAddedAsync(IList<TeamsChannelAccount> teamsMembersAdded , TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    foreach (TeamsChannelAccount member in teamsMembersAdded)
     {
         if (member.Id == turnContext.Activity.Recipient.Id)
         {
@@ -339,7 +434,7 @@ export class MyBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Это сообщение, которое будет получать ваш почтовый робот при добавлении в **команду** ленты.
+Это сообщение, которое ваш бот получит при добавлении бота **в команду.**
 
 ```json
 {
@@ -378,7 +473,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-Это сообщение, которое будет получать ваш почтовый робот при добавлении ленты * *в чат "один к одному* ".
+Это сообщение, которое ваш бот получит при добавлении бота * в один *к одному чату.*
 
 ```json
 {
@@ -430,11 +525,11 @@ async def on_teams_members_added(
 
 _ * *
 
-### <a name="team-members-removed"></a>Удалены участники группы
+### <a name="team-members-removed"></a>Участники команды удалены
 
-`teamMemberRemoved`Событие отправляется в Bot, если оно удалено из команды и каждый раз, когда какой-либо пользователь удаляется из команды, участником которой является пользователь Bot. Вы можете определить, был ли удаленный участник участником "bot" или пользователем, изучив `Activity` объект `turnContext` .  Если `Id` поле объекта совпадает с `MembersRemoved` `Id` полем `Recipient` объекта, то член удален, а в противном случае — пользователь.  Как правило, в качестве ленты `Id` будет использоваться: `28:<MicrosoftAppId>`
+Это событие отправляется вашему боту, если оно удаляется из команды и каждый раз, когда любой пользователь удаляется из команды, участником которую является `teamMemberRemoved` ваш бот. Вы можете определить, был ли новый член удален самим ботом или пользователем, посмотрев на `Activity` объект `turnContext` .  Если поле объекта такое же, как и поле объекта, удаляемая член является ботом, в противном случае `Id` `MembersRemoved` это `Id` `Recipient` пользователь.  Бот, как `Id` правило, будет: `28:<MicrosoftAppId>`
 
-[!Note] Когда пользователь безвозвратно удален из клиента, `membersRemoved conversationUpdate` инициируется событие.
+[!Note] Когда пользователь окончательно удаляется из клиента, `membersRemoved conversationUpdate` инициирует событие.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -483,6 +578,8 @@ export class MyBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
+Объект в следующем примере полезной нагрузки основан на добавлении участника в команду вместо группового чата или инициировании новой беседы "один `channelData` к одному":
+
 ```json
 {
     "membersRemoved": [
@@ -530,7 +627,7 @@ async def on_teams_members_removed(
 ):
     for member in teams_members_removed:
         await turn_context.send_activity(
-            MessageFactory.text(f"Say goodbye to your team member {member.id}")
+            MessageFactory.text(f"Say goodbye to {member.id}")
         )
     return
 ```
@@ -539,7 +636,7 @@ async def on_teams_members_removed(
 
 ### <a name="team-renamed"></a>Команда переименована
 
-Ваш робот получает уведомление, когда группа, в которую она находится, была переименована. Он получает `conversationUpdate` событие `eventType.teamRenamed` в `channelData` объекте.
+Бот будет уведомлен о переименовании команды. Он получает событие `conversationUpdate` в `eventType.teamRenamed` `channelData` объекте.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -602,7 +699,6 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-
 # <a name="python"></a>[Python](#tab/python)
 
 ```python
@@ -616,16 +712,172 @@ async def on_teams_team_renamed(
 
 * * *
 
-## <a name="message-reaction-events"></a>События реакции сообщений
+### <a name="team-archived"></a>Архивная группа
 
-`messageReaction`Событие отправляется, когда пользователь добавляет или удаляет реакции на сообщение, отправленное вашим роботом. `replyToId`Содержит идентификатор определенного сообщения, а также `Type` тип реакции в текстовом формате.  К типам реакции относятся: "Ангри", "сердце", "лаугх", "Like", "грустный", "удивленный". Это событие не содержит содержимое исходного сообщения, поэтому если обработка реакции на сообщения очень важна для ленты, необходимо сохранить сообщения при их отправке.
+Бот получает уведомление о том, что установленная в нем команда архивна. Он получает событие `conversationUpdate` в `eventType.teamarchived` `channelData` объекте.
 
-| EventType       | Объект полезных данных   | Описание                                                             | Область |
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+
+```csharp
+protected override async Task OnTeamsTeamArchivedAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    var heroCard = new HeroCard(text: $"{teamInfo.Name} is the team name");
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(heroCard.ToAttachment()), cancellationToken);
+}
+```
+
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
+
+```typescript
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+        this.onTeamsTeamArchivedEvent(async (teamInfo: TeamInfo, turnContext: TurnContext, next: () => Promise<void>): Promise<void> => {
+            const card = CardFactory.heroCard('Team archived', `${teamInfo.name} is the team name`);
+            const message = MessageFactory.attachment(card);
+            await turnContext.sendActivity(message);
+            await next();
+        });
+    }
+}
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+```json
+{ 
+    "type": "conversationUpdate",
+    "timestamp": "2017-02-23T19:35:56.825Z",
+    "localTimestamp": "2017-02-23T12:35:56.825-07:00",
+    "id": "f:1406033e",
+    "channelId": "msteams",
+    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/", 
+    "from": { 
+        "id": "29:1I9Is_Sx0O-Iy2rQ7Xz1lcaPKlO9eqmBRTBuW6XzkFtcjqxTjPaCMij8BVMdBcL9L_RwWNJyAHFQb0TRzXgyQvA"
+    }, 
+    "conversation": {
+        "isGroup": true,
+        "conversationType": "channel",
+        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+    },
+    "recipient": { 
+        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
+        "name": "SongsuggesterLocal"
+    },
+    "channelData": {
+        "team": {
+            "id": "19:efa9296d959346209fea44151c742e73@thread.skype",
+            "name": "Team Name"
+        },
+        "eventType": "teamArchived",
+        "tenant": { 
+           "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    }
+}
+```
+
+# <a name="python"></a>[Python](#tab/python)
+
+```python
+async def on_teams_team_archived(
+    self, team_info: TeamInfo, turn_context: TurnContext
+):
+    return await turn_context.send_activity(
+        MessageFactory.text(f"The team name is {team_info.name}")
+    )
+```
+
+* * *
+
+### <a name="team-restored"></a>Команда восстановлена
+
+Бот получает уведомление о восстановлении команды, в которая он установлен. Он получает событие `conversationUpdate` в `eventType.teamrestored` `channelData` объекте.
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+
+```csharp
+protected override async Task OnTeamsTeamrestoredAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    var heroCard = new HeroCard(text: $"{teamInfo.Name} is the team name");
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(heroCard.ToAttachment()), cancellationToken);
+}
+```
+
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
+
+```typescript
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+        this.onTeamsTeamrestoredEvent(async (teamInfo: TeamInfo, turnContext: TurnContext, next: () => Promise<void>): Promise<void> => {
+            const card = CardFactory.heroCard('Team restored', `${teamInfo.name} is the team name`);
+            const message = MessageFactory.attachment(card);
+            await turnContext.sendActivity(message);
+            await next();
+        });
+    }
+}
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+```json
+{ 
+    "type": "conversationUpdate",
+    "timestamp": "2017-02-23T19:35:56.825Z",
+    "localTimestamp": "2017-02-23T12:35:56.825-07:00",
+    "id": "f:1406033e",
+    "channelId": "msteams",
+    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/", 
+    "from": { 
+        "id": "29:1I9Is_Sx0O-Iy2rQ7Xz1lcaPKlO9eqmBRTBuW6XzkFtcjqxTjPaCMij8BVMdBcL9L_RwWNJyAHFQb0TRzXgyQvA"
+    }, 
+    "conversation": {
+        "isGroup": true,
+        "conversationType": "channel",
+        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+    },
+    "recipient": { 
+        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
+        "name": "SongsuggesterLocal"
+    },
+    "channelData": {
+        "team": {
+            "id": "19:efa9296d959346209fea44151c742e73@thread.skype",
+            "name": "Team Name"
+        },
+        "eventType": "teamrestored",
+        "tenant": { 
+           "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    }
+}
+```
+
+# <a name="python"></a>[Python](#tab/python)
+
+```python
+async def on_teams_team_restored(
+    self, team_info: TeamInfo, turn_context: TurnContext
+):
+    return await turn_context.send_activity(
+        MessageFactory.text(f"The team name is {team_info.name}")
+    )
+```
+
+* * *
+
+## <a name="message-reaction-events"></a>События реакции на сообщения
+
+Событие отправляется, когда пользователь добавляет или удаляет реакции на сообщение, `messageReaction` отправленное вашим ботом. Содержит ИД конкретного сообщения и тип реакции в `replyToId` `Type` текстовом формате.  К типам реакции относятся : "за", "heart", "в", "like", "Прил", "удивитесь". Это событие не содержит содержимого исходного сообщения, поэтому если обработка реакции на ваши сообщения важна для вашего бота, вам потребуется сохранить сообщения при их отправке.
+
+| EventType       | Объект Payload   | Описание                                                             | Область |
 | --------------- | ---------------- | ----------------------------------------------------------------------- | ----- |
-| мессажереактион | реактионсаддед   | [Реакция на сообщение Bot](#reactions-to-a-bot-message)                   | Все   |
-| мессажереактион | реактионсремовед | [Реакция, удаленная из сообщения Bot](#reactions-removed-from-bot-message) | Все   |
+| messageReaction | reactionsAdded   | [Реакция на сообщение бота](#reactions-to-a-bot-message)                   | Все   |
+| messageReaction | reactionsRemoved | [Реакция, удаленная из сообщения бота](#reactions-removed-from-bot-message) | Все   |
 
-### <a name="reactions-to-a-bot-message"></a>Реакции на сообщение Bot
+### <a name="reactions-to-a-bot-message"></a>Реакции на сообщение бота
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -734,7 +986,7 @@ async def on_reactions_added(
 
 * * *
 
-### <a name="reactions-removed-from-bot-message"></a>Реакции, удаленные из сообщения Bot
+### <a name="reactions-removed-from-bot-message"></a>Реакции удалены из сообщения бота
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
