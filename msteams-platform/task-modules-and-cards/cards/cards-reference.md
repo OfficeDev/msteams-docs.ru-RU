@@ -1,74 +1,74 @@
 ---
 title: Справочник по карточкам
-description: Описывает все карточки и действия карточки, доступные боты в Teams.
-keywords: Справочник по карточкам Боты
-ms.openlocfilehash: 7c37d05ae4cfd07049eaec6dec5eda0f3312cefa
-ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
+description: Описание всех карточек и действий карточек, доступных ботам в Teams
+keywords: bots cards reference
+ms.openlocfilehash: 22a4faa932173387cbefe900e30106d063c49e50
+ms.sourcegitcommit: 5739245903278d521ec920427248b6b48676e637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49346744"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49778396"
 ---
 # <a name="cards-reference"></a>Справочник по карточкам
 
-Карточки, перечисленные в этом разделе, поддерживаются в боты для Teams. Они основаны на карточках, определенных с помощью Bot Framework, но в Teams не поддерживаются все карточки с интерфейсом Bot и добавлены некоторые из них. Различия вызываемы в приведенных ниже ссылках.
+Карточки, перечисленные в этом разделе, поддерживаются в ботах для Teams. Они основаны на карточках, определенных в Bot Framework, но Teams не поддерживает все карточки Bot Framework и добавил некоторые из них. Различия вызваны в ссылках ниже.
 
-## <a name="card-examples"></a>Примеры карточек
+## <a name="card-examples"></a>Примеры карт
 
-Дополнительные сведения об использовании карточек можно найти в документации по пакету SDK для Bot Builder (v3). Кроме того, вы можете найти примеры кода в репозитории Microsoft/Ботбуилдер-Samples на сайте GitHub.
+Дополнительные сведения об использовании карточек можно найти в документации для SDK построитель ботов (v3). Кроме того, примеры кода доступны в репозитории Microsoft/BotBuilder-Samples на GitHub.
 
 * .NET
-  * [Добавление карточек в качестве вложений в сообщения](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
-  * [Пример кода карточек (построитель построителя)](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/cards-RichCards)
+  * [Добавление карточек в виде вложений в сообщения](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
+  * [Пример кода карточек (построитель ботов 3)](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/cards-RichCards)
 * Node.js
-  * [Добавление карточек в качестве вложений в сообщения](/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
-  * [Пример кода карточек (построитель построителя)](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/cards-RichCards)
+  * [Добавление карточек в виде вложений в сообщения](/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
+  * [Пример кода карточек (построитель ботов 3)](https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/cards-RichCards)
 
 ## <a name="types-of-cards"></a>Типы карточек
 
-В этой таблице перечислены доступные типы карт.
+В этой таблице показаны типы доступных карточек.
 
-| Тип карточки | Description |
+| Тип карточки | Описание |
 | --- | --- |
-| [Адаптивная карта](#adaptive-card) | Карточка с широкими возможностями настройки, которая может содержать любую комбинацию текста, речи, изображений, кнопок и полей ввода. |
-| [Карточка главный Имиджевый баннер](#hero-card) | Обычно содержит одно крупное изображение, одну или несколько кнопок и небольшое количество текста. |
-| [Карточка списка](#list-card) | Прокручиваемый список элементов. |
-| [Соединительная карта Office 365](#office-365-connector-card) | Гибкий макет с несколькими разделами, полями, изображениями и действиями. |
-| [Карточка приходной накладной](#receipt-card) | Предоставляет пользователю уведомление. |
-| [Карточка входа](#signin-card) | Позволяет роботу отправить запрос на вход пользователя. |
-| [Карточка эскиза](#thumbnail-card) | Обычно содержит одно эскизное изображение, некоторый короткий текст, а также одну или несколько кнопок. |
-| [Коллекции карточек](#card-collections) | Используется для возвращения нескольких элементов в едином ответе |
+| [Адаптивная карточка](#adaptive-card) | Карточка с высокой настройкой, которая может содержать любое сочетание текста, речи, изображений, кнопок и полей ввода. |
+| [Hero Card](#hero-card) | Обычно содержит одно большое изображение, одну или несколько кнопок и небольшой объем текста. |
+| [Карточка списка](#list-card) | Список прокрутки элементов. |
+| [Карточка соединители Office 365](#office-365-connector-card) | Гибкий макет с несколькими разделами, полями, изображениями и действиями. |
+| [Чековая карта](#receipt-card) | Предоставляет пользователю квитанцию. |
+| [Карточка для подписи](#signin-card) | Позволяет боту запрашивать вход пользователя. |
+| [Thumbnail Card](#thumbnail-card) | Обычно содержит один эскиз, короткий текст и одну или несколько кнопок. |
+| [Коллекции карт](#card-collections) | Используется для возврата нескольких элементов в одном ответе |
 
 ## <a name="common-properties-for-all-cards"></a>Общие свойства для всех карточек
 
-### <a name="inline-card-images"></a>Изображения в виде встроенных карточек
+### <a name="inline-card-images"></a>Inline card images
 
-Ваша карточка может содержать встроенное изображение, включив ссылку на общедоступное изображение. В целях повышения производительности мы настоятельно рекомендуем размещать образ в общедоступной сети обмена контентом (CDN).
+Карточка может содержать в себе изображение, включив ссылку на общедоступный образ. В целях производительности мы настоятельно рекомендуем вам проводить образ в общедоступных сетях доставки содержимого (CDN).
 
-Изображения масштабируются вверх или вниз, сохраняя пропорции изображения, а затем обрезаются из центра для достижения соответствующих пропорций карточки.
+Изображения масштабются вверх или вниз по размеру, сохраняя пропорции для покрытия области изображения, а затем обрезаются от центра, чтобы добиться соответствующего пропорций карточки.
 
-Изображения должны быть не менее 1024 × 1024 в формате PNG, JPEG или GIF; анимированный GIF-файл не поддерживается официально.
+Изображения должны иметь не более 1024×1024 в формате PNG, JPEG или GIF; анимированное GIF официально не поддерживается.
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
-| url | URL-адрес | URL-адрес HTTPS для изображения |
-| alt | Строка | Доступное описание изображения |
+| url | URL-адрес | URL-адрес ИЗОБРАЖЕНИЯ ПО HTTPS |
+| alt | String | Доступное описание изображения |
 
 ### <a name="buttons"></a>Кнопки
 
-Кнопки отображаются в нижней части карточки. Текст на кнопке всегда находится в одной строке и будет обрезан, если текст превышает ширину кнопки. Все дополнительные кнопки, превышающие максимальное число, поддерживаемое картой, не будут отображаться.
+Кнопки показаны в нижней части карточки. Текст кнопки всегда находится в одной строке и будет усечен, если текст превышает ширину кнопки. Дополнительные кнопки, которые выходят за пределы максимального числа, поддерживаемого картой, не будут показаны.
 
-Для получения дополнительных сведений просмотрите [действия с картой](~/task-modules-and-cards/cards/cards-actions.md) .
+Дополнительные [сведения см.](~/task-modules-and-cards/cards/cards-actions.md) в действиях карточки.
 
-### <a name="card-formatting"></a>Форматирование карточки
+### <a name="card-formatting"></a>Форматирование карт
 
-Дополнительные сведения о форматировании текста [в карточках см.](~/task-modules-and-cards/cards/cards-format.md)
+Дополнительные [сведения о форматирование](~/task-modules-and-cards/cards/cards-format.md) текста в карточках см. в документе "Форматирование карточек".
 
-## <a name="adaptive-card"></a>Адаптивная карта
+## <a name="adaptive-card"></a>Адаптивная карточка
 
-Настраиваемая карточка, которая может содержать любую комбинацию текста, речи, изображений, кнопок и полей ввода. *Просмотрите раздел* [адаптивные карточки v 1.2.0](https://github.com/microsoft/AdaptiveCards/releases/tag/v1.2.0).
+Настраиваемая карточка, которая может содержать любое сочетание текста, речи, изображений, кнопок и полей ввода. *См.* ["Адаптивные карточки" 1.2.0.](https://github.com/microsoft/AdaptiveCards/releases/tag/v1.2.0)
 
-### <a name="support-for-adaptive-cards"></a>Поддержка адаптивных карт
+### <a name="support-for-adaptive-cards"></a>Поддержка адаптивных карточек
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
@@ -76,11 +76,11 @@ ms.locfileid: "49346744"
 |
 
 > [!NOTE]
-> В настоящее время элементы мультимедиа в настоящее время не поддерживаются в адаптивных картах версии 1.2 на платформе Teams.
-
+> * Платформа Teams поддерживает функции адаптивной карточки 1.2 или более ранней.
+> * Элементы мультимедиа в настоящее время не поддерживаются в адаптивной карточке 1.2 на платформе Teams.
 ### <a name="example-adaptive-card"></a>Пример адаптивной карточки
 
-![Пример адаптивной карточки карты](~/assets/images/cards/adaptivecard.png)
+![Пример адаптивной карточки](~/assets/images/cards/adaptivecard.png)
 
 ```json
 {
@@ -215,37 +215,37 @@ ms.locfileid: "49346744"
 }
 ```
 
-#### <a name="for-more-information-on-adaptive-cards"></a>Дополнительные сведения о адаптивных картах
+#### <a name="for-more-information-on-adaptive-cards"></a>Дополнительные сведения об адаптивных карточках
 
 * [Обзор адаптивных карточек](/adaptive-cards/)
 * [Действия адаптивной карточки в Teams](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions)
 
-## <a name="hero-card"></a>Карточка главный Имиджевый баннер
+## <a name="hero-card"></a>Карточка "Главного"
 
-Карточка, которая обычно содержит одно крупное изображение, одну или несколько кнопок и текста.
+Карточка, которая обычно содержит одно большое изображение, одну или несколько кнопок и текста.
 
-### <a name="support-for-hero-cards"></a>Поддержка карточек главный Имиджевый баннер
+### <a name="support-for-hero-cards"></a>Поддержка карточек "Главного"
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
 | ✔ | ✔ | ✖ | ✔ |
 |
 
-### <a name="properties-of-a-hero-card"></a>Свойства карточки главный Имиджевый баннер
+### <a name="properties-of-a-hero-card"></a>Свойства карточки "Hero"
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
 | title | Форматированный текст  | Название карточки. Не более 2 строк. |
-| Подзаголовок | Форматированный текст  | Подзаголовок карточки. Не более 2 строк.|
-| текст | Форматированный текст  | Текст отображается сразу под подназванием; сведения о [форматировании карточек](~/task-modules-and-cards/cards/cards-format.md) для параметров форматирования |
-| изображения | Массив изображений | Изображение, отображаемое в верхней части карточки. Пропорции 16:9 |
-| Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Максимум 6 |
-| тематическ | Объект Action | Это действие активируется, когда пользователь найдет на саму карточку |
+| subtitle | Форматированный текст  | Субтитры на карточке. Не более 2 строк.|
+| текст | Форматированный текст  | Текст отображается сразу под субтитром; См. [параметры форматирования](~/task-modules-and-cards/cards/cards-format.md) карточки |
+| images | Массив изображений | Изображение, отображаемого в верхней части карточки. Пропорции 16:9 |
+| buttons | Массив объектов действий | Набор действий, применимых к текущей карточке. Максимум 6 |
+| tap | Объект Action | Это действие будет активировано, когда пользователь коснитесь самой карточки |
 |
 
-### <a name="example-hero-card"></a>Пример карточки главный Имиджевый баннер
+### <a name="example-hero-card"></a>Пример карточки "Образец"
 
-![Пример карточки главный Имиджевый баннер](~/assets/images/cards/hero.png)
+![Пример главного карточки](~/assets/images/cards/hero.png)
 
 ```json
 {
@@ -276,18 +276,18 @@ ms.locfileid: "49346744"
 
 ```
 
-### <a name="for-more-information-on-hero-cards"></a>Дополнительные сведения о карточках главный Имиджевый баннер
+### <a name="for-more-information-on-hero-cards"></a>Дополнительные сведения о картах Hero
 
-Справочные материалы по платформе Bot:
+Справка по Bot Framework:
 
-* [Узел карточки главный Имиджевый баннер](https://docs.microsoft.com/javascript/api/botframework-schema/herocard)
-* [Карточка главный Имиджевый баннер C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-dotnet-3.0&preserve-view=true)
+* [Узел главного карточки](https://docs.microsoft.com/javascript/api/botframework-schema/herocard)
+* [Главный карточка C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.herocard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
 ## <a name="list-card"></a>Карточка списка
 
-В Microsoft Teams карточка списка была добавлена для предоставления функций, помимо того, что может предоставить коллекция списков. Карточка List предоставляет прокручиваемый список элементов.
+Карточка списка была добавлена в Teams для предоставления функций, которые выходят за рамки того, что может предоставить коллекция списков. На карточке списка содержится прокручивающийся список элементов.
 
-### <a name="support-for-list-cards"></a>Поддержка карточек со списками
+### <a name="support-for-list-cards"></a>Поддержка карточек списков
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
@@ -300,7 +300,7 @@ ms.locfileid: "49346744"
 | --- | --- | --- |
 | title | Форматированный текст  | Название карточки. Не более 2 строк.|
 | items | Массив элементов списка  ||
-| Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Не более 6. |
+| buttons | Массив объектов действий | Набор действий, применимых к текущей карточке. Максимум 6. |
 
 ### <a name="example-list-card"></a>Пример карточки списка
 
@@ -356,62 +356,62 @@ ms.locfileid: "49346744"
 }
 ```
 
-## <a name="office-365-connector-card"></a>Соединительная карта Office 365
+## <a name="office-365-connector-card"></a>Карточка соединители Office 365
 
-Поддерживается в Microsoft Teams, а не в среде Bot.
+Поддерживается в Teams, а не в Bot Framework.
 
-Соединительная карта Office 365 предоставляет гибкий макет с несколькими разделами, полями, изображениями и действиями. Эта карточка содержит карту подключателя, чтобы ее можно было использовать в Боты. В разделе "Примечания" представлены различия между соединителными картами и картой O365.
+Карточка соединители Office 365 предоставляет гибкий макет с несколькими разделами, полями, изображениями и действиями. Эта карточка инкапсулирует карточку соединителя, чтобы ее могли использовать боты. Различия между карточками соединители и картой O365 см. в разделе примечаний.
 
-### <a name="support-for-office-365-connector-cards"></a>Поддержка карт соединителей Office 365
+### <a name="support-for-office-365-connector-cards"></a>Поддержка карточек соединители Office 365
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
 | ✔ | ✔ | ✔ | ✖ |
 |
 
-### <a name="properties-of-the-office-365-connector-card"></a>Свойства карточки соединителя Office 365
+### <a name="properties-of-the-office-365-connector-card"></a>Свойства карточки соединители Office 365
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
 | title | Форматированный текст  | Название карточки. Не более 2 строк. |
-| summary | Форматированный текст  | Сводка по карточке. Не более 2 строк. |
-| текст | Форматированный текст  | Текст отображается сразу под подназванием; сведения о [форматировании карточек](~/task-modules-and-cards/cards/cards-format.md) для параметров форматирования |
-| themeColor | ШЕСТНАДЦАТЕРИЧная строка | цвет, переопределяющий Акцентколор, предоставленный в манифесте приложения |
+| summary | Форматированный текст  | Сводка карточки. Не более 2 строк. |
+| текст | Форматированный текст  | Текст отображается сразу под субтитром; См. [параметры форматирования](~/task-modules-and-cards/cards/cards-format.md) карточки |
+| themeColor | Строка HEX | цвет, который переопределит accentColor, предоставленный из манифеста приложения |
 
-### <a name="notes-on-the-office-365-connector-card"></a>Примечания к соединительной карте Office 365
+### <a name="notes-on-the-office-365-connector-card"></a>Примечания на карточке соединители Office 365
 
-Карты соединителей Office 365 правильно работают в Microsoft Teams, включая [действия ActionCard](/outlook/actionable-messages/card-reference#actioncard-action).
+Карточки соединители Office 365 правильно работают в Microsoft Teams, включая [действия ActionCard.](/outlook/actionable-messages/card-reference#actioncard-action)
 
-Одним из важных различий между использованием карт соединителей с соединителя и карт подключателя в Bot является обработка действий с картой.
+Одно из важных отличий между использованием карточек соединители из соединители и карточек соединители в боте обработка действий карт.
 
-* Для соединителя конечная точка получает полезные данные карточки через HTTP POST.
-* Для элемента Bot `HttpPOST` действие запускает `invoke` действие, которое ОТПРАВЛЯЕТ только идентификатор действия и основной текст в Bot.
+* Для соединители конечная точка получает полезной нагрузки карточки через HTTP POST.
+* Для бота действие запускает действие, которое отправляет боту только ИД и `HttpPOST` `invoke` тело действия.
 
-Каждая соединительная карта может отображать не более 10 разделов, а каждый раздел может содержать не более 5 изображений и 5 действий.
+Каждая карточка соединители может отображать не более 10 разделов, а каждый раздел может содержать не более 5 изображений и 5 действий.
 
 > [!NOTE]
-> Дополнительные разделы, изображения или действия в сообщении не будут отображаться.
+> Дополнительные разделы, изображения или действия в сообщении не отображаются.
 
-Все текстовые поля поддерживают Markdown и HTML. Вы можете управлять тем, какие разделы используют Markdown или HTML, задав `markdown` свойство в сообщении. По умолчанию `markdown` имеет значение `true` ;, если вы хотите использовать HTML, задайте значение `markdown` `false` .
+Все текстовые поля поддерживают Markdown и HTML. Вы можете управлять тем, в каких разделах используется Markdown или HTML, установив `markdown` свойство в сообщении. По умолчанию установлено значение ; если вы хотите использовать `markdown` `true` HTML, установите `markdown` значение `false` .
 
-Если указать `themeColor` свойство, оно переопределяет `accentColor` свойство в манифесте приложения.
+Если указать `themeColor` свойство, оно переопределит `accentColor` свойство в манифесте приложения.
 
-Чтобы указать стиль отображения для `activityImage` , можно задать следующие значения `activityImageType` :
+Чтобы указать стиль отрисовки, `activityImage` можно задать его следующим `activityImageType` образом.
 
 | Значение | Описание |
 | --- | --- |
-| `avatar` | Умолчани `activityImage` будет обрезан как круг |
-| `article` | `activityImage` будет отображаться как прямоугольник и сохранять пропорции |
+| `avatar` | По умолчанию; `activityImage` будет обрезана в круге |
+| `article` | `activityImage` будет отображаться как прямоугольник с сохранением пропорций |
 
-Дополнительные сведения о свойствах карт соединителей можно узнать в статье [Справочник по карточкам сообщений с действиями](/outlook/actionable-messages/card-reference). В настоящее время в Microsoft Teams в настоящее время не поддерживаются следующие свойства карточки соединителя:
+Все остальные сведения о свойствах карточки соединители см. в справочнике по карточкам [сообщений с действиями.](/outlook/actionable-messages/card-reference) Единственными свойствами карточки соединитела, которые в настоящее время не поддерживаются Microsoft Teams, являются:
 
 * `heroImage`
 * `hideOriginalBody`
-* `startGroup` (всегда обрабатываются как `true` в Teams)
+* `startGroup` (всегда рассматривается как `true` в Teams)
 * `originator`
 * `correlationId`
 
-### <a name="example-office-365-connector-card"></a>Пример карточки соединителя Office 365
+### <a name="example-office-365-connector-card"></a>Пример карточки соединители Office 365
 
 ```json
 {
@@ -474,51 +474,51 @@ ms.locfileid: "49346744"
 }
 ```
 
-## <a name="receipt-card"></a>Карточка приходной накладной
+## <a name="receipt-card"></a>Чековая карта
 
 Поддерживается в Teams.
 
-Карточка, позволяющая роботу получить уведомление для пользователя. Как правило, он содержит список элементов, которые необходимо включить в сведения о получении, налогах и итогах, а также другие тексты.
+Карточка, которая позволяет боту предоставлять пользователю квитанцию. Обычно он содержит список элементов, которые необходимо включить в квитанцию, налог и общую информацию, а также другой текст.
 
-### <a name="support-for-receipts-cards"></a>Поддержка карточек чеков
+### <a name="support-for-receipts-cards"></a>Поддержка карточек квитанций
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
 | ✔ | ✔ | ✖ | ✔ |
 |
 
-### <a name="for-more-information-on-receipt-cards"></a>Дополнительные сведения о карточках прихода
+### <a name="for-more-information-on-receipt-cards"></a>Дополнительные сведения о карточках квитанций
 
-Справочные материалы по платформе Bot:
+Справка по Bot Framework:
 
-* [Узел карточки чеков](https://docs.microsoft.com/javascript/api/botframework-schema/receiptcard?view=botbuilder-ts-latest&preserve-view=true)
-* [Карточка прихода C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-dotnet-3.0&preserve-view=true)
+* [Узел карточки квитанции](https://docs.microsoft.com/javascript/api/botframework-schema/receiptcard?view=botbuilder-ts-latest&preserve-view=true)
+* [Чековая карта C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.receiptcard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
-## <a name="signin-card"></a>Карточка входа
+## <a name="signin-card"></a>Карточка для подписи
 
-Карточка, позволяющая роботу отправить запрос на вход пользователя. Поддерживается в Microsoft Teams в несколько разных формах, чем в Bot Framework. Карточка входа в Teams аналогична карте входа в Bot Framework с исключением, что карточка входа в Teams поддерживает только два действия: `signin` и `openUrl` .
+Карточка, которая позволяет боту запрашивать вход пользователя. Поддерживается в Teams в несколько другом формате, чем в Bot Framework. Карточка для регистрации в Teams похожа на карточку для регистрации в структуре бота, за исключением того, что карточка для регистрации в Teams поддерживает только два действия: `signin` и `openUrl` .
 
-*Действие SignIn* можно использовать с любой карточки в Teams, а не только с помощью карточки входа. Для получения дополнительных сведений о проверке подлинности обратитесь к разделу [Проверка подлинности Microsoft Teams для Боты](~/bots/how-to/authentication/auth-flow-bot.md) .
+Действие *для регистрации можно* использовать с любой карточки в Teams, а не только с карточки для регистрации. Дополнительные сведения о проверке подлинности ботов см. в разделе "Поток проверки подлинности [Microsoft Teams".](~/bots/how-to/authentication/auth-flow-bot.md)
 
-### <a name="support-for-signin-cards"></a>Поддержка карточек входа
+### <a name="support-for-signin-cards"></a>Поддержка карточек для регистрации
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
 | ✔ | ✖ | ✖ | ✔ |
 |
 
-### <a name="for-more-information-on-signin-cards"></a>Дополнительные сведения о карточках входа
+### <a name="for-more-information-on-signin-cards"></a>Дополнительные сведения о карточках для подписи
 
-Справочные материалы по платформе Bot:
+Справка по Bot Framework:
 
-* [Узел карточки входа](/javascript/api/botframework-schema/signincard?view=botbuilder-ts-latest&preserve-view=true)
-* [Карточка входа в систему C #](/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-dotnet-3.0&preserve-view=true)
+* [Узел карточки для подписи](/javascript/api/botframework-schema/signincard?view=botbuilder-ts-latest&preserve-view=true)
+* [Карточка для подписи C #](/dotnet/api/microsoft.bot.connector.signincard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
-## <a name="thumbnail-card"></a>Карточка эскиза
+## <a name="thumbnail-card"></a>Эскиз карточки
 
-Карточка, которая обычно содержит одно эскизное изображение, одну или несколько кнопок и текст.
+Карточка, которая обычно содержит один эскиз, одну или несколько кнопок и текст.
 
-### <a name="support-for-thumbnail-cards"></a>Поддержка карт эскизов
+### <a name="support-for-thumbnail-cards"></a>Поддержка карточек эскизов
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
@@ -527,19 +527,19 @@ ms.locfileid: "49346744"
 
 ![Пример карточки эскиза](~/assets/images/cards/thumbnail.png)
 
-### <a name="properties-of-a-thumbnail-card"></a>Свойства карточки эскиза
+### <a name="properties-of-a-thumbnail-card"></a>Свойства карточки thumbnail
 
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
 | title | Форматированный текст  | Название карточки. Не более 2 строк.|
-| Подзаголовок | Форматированный текст  | Подзаголовок карточки. Не более 2 строк.|
-| текст | Форматированный текст  | Текст отображается сразу под подназванием; сведения о [форматировании карточек](~/task-modules-and-cards/cards/cards-format.md) для параметров форматирования |
-| изображения | Массив изображений | Изображение, отображаемое в верхней части карточки. Пропорции 1:1 (квадрат) |
-| Button | Массив объектов Action | Набор действий, применяемых к текущей карточке. Максимум 6 |
-| тематическ | Объект Action | Это действие активируется, когда пользователь найдет на саму карточку |
+| subtitle | Форматированный текст  | Субтитры на карточке. Не более 2 строк.|
+| текст | Форматированный текст  | Текст отображается сразу под субтитром; См. [параметры форматирования](~/task-modules-and-cards/cards/cards-format.md) карточки |
+| images | Массив изображений | Изображение, отображаемого в верхней части карточки. Пропорции 1:1 (квадрат) |
+| buttons | Массив объектов действий | Набор действий, применимых к текущей карточке. Максимум 6 |
+| tap | Объект Action | Это действие будет активировано, когда пользователь коснитесь самой карточки |
 |
 
-### <a name="example-thumbnail-card"></a>Пример карточки эскиза
+### <a name="example-thumbnail-card"></a>Пример карточки thumbnail
 
 ```json
 {
@@ -584,22 +584,22 @@ ms.locfileid: "49346744"
 
 ### <a name="for-more-information"></a>Дополнительные сведения
 
-Справочные материалы по платформе Bot:
+Справка по Bot Framework:
 
-* [Узел карточки эскиза](https://docs.microsoft.com/javascript/api/botframework-schema/thumbnailcard?view=botbuilder-ts-latest&preserve-view=true)
-* [Карта с эскизом C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-dotnet-3.0&preserve-view=true)
+* [Узел карты эскиза](https://docs.microsoft.com/javascript/api/botframework-schema/thumbnailcard?view=botbuilder-ts-latest&preserve-view=true)
+* [Эскиз карточки C #](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.thumbnailcard?view=botbuilder-dotnet-3.0&preserve-view=true)
 
-## <a name="card-collections"></a>Коллекции карточек
+## <a name="card-collections"></a>Коллекции карт
 
-Коллекции карточек поддерживаются в Teams.
+Коллекции карт поддерживаются в Teams.
 
-Коллекции карточек предоставляются с помощью Bot Framework: `builder.AttachmentLayout.carousel` и `builder.AttachmentLayout.list` . Эти коллекции могут содержать адаптивные, главный Имиджевый баннер или карты эскиза.
+Коллекции карт: `builder.AttachmentLayout.carousel` и `builder.AttachmentLayout.list` . Эти коллекции содержат адаптивные карточки, карты hero или thumbnail.
 
-## <a name="carousel-collection"></a>Коллекция обойм
+## <a name="carousel-collection"></a>Коллекция карусели
 
-[Макет обоймы](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0&preserve-view=true) отображает обойму карточек (при необходимости) с соответствующими кнопками действия.
+На [макете карусели](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0&preserve-view=true) показана карусели карт, при желании с кнопками связанных действий.
 
-### <a name="support-for-carousel-collections"></a>Поддержка коллекций обойм
+### <a name="support-for-carousel-collections"></a>Поддержка коллекций карусели
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
@@ -607,48 +607,215 @@ ms.locfileid: "49346744"
 |
 
 > [!NOTE]
-> В обойме может отображаться не более 10 карточек для каждого сообщения.
+> Карусель может отображать не более 10 карт на сообщение.
 
-### <a name="example-carousel-collection"></a>Пример коллекции обойм
+### <a name="properties-of-a-carousel-card"></a>Свойства карточки карусели
 
-![Пример обоймы карточек](~/assets/images/cards/carousel.png)
+Свойства карточки карусели такие же, как и у карт главного и эскиза.
 
-Это те же свойства, что и для карты главный Имиджевый баннер или эскиза.
+### <a name="example-carousel-collection"></a>Пример коллекции Carousel
 
-### <a name="syntax-for-carousel-collections"></a>Синтаксис для коллекций обойм
+![Пример карусели карточек](~/assets/images/cards/carousel.png)
 
-`builder.AttachmentLayout.carousel`
+```json
+{
+ "attachmentLayout": "carousel",
+ "attachments":[
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "Container",
+            "items": [
+              {
+                "type": "TextBlock",
+                "size": "extraLarge",
+                "weight": "bolder",
+                "text": "Welcome to Employee Connect",
+                "height": "stretch"
+              },
+              {
+                "type": "TextBlock",
+                "size": "medium",
+                "weight": "bolder",
+                "text": "Add events to your calendar",
+                "height": "stretch"
+              },
+              {
+                "type": "TextBlock",
+                "weight": "bolder",
+                "text": "The bot can send \r\rnotification to remind \r\ryou about the latest \r\revents and trainings.",
+                "wrap": true,
+                "height": "stretch"
+              },
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "items": [],
+                    "height": "stretch"
+                  }
+                ]
+              },
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "items": [],
+                    "height": "stretch"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "Let's get started"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.2",
+        "body": [
+          {
+            "type": "Container",
+            "items": [
+              {
+                "type": "TextBlock",
+                "size": "large",
+                "weight": "bolder",
+                "text": "Employee connect"
+              },
+              {
+                "type": "TextBlock",
+                "text": "The bot can send notifications \r\rto remind you about the latest \r\r events and trainings",
+                "wrap": true,
+                "maxWidth": 2
+              },
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "items": [],
+                    "height": "stretch"
+                  }
+                ]
+              },
+              {
+                "type": "ColumnSet",
+                "columns": [
+                  {
+                    "type": "Column",
+                    "items": [],
+                    "height": "stretch"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "Let's get started"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "Container",
+            "items": [
+              {
+                "type": "TextBlock",
+                "size": "large",
+                "weight": "bolder",
+                "text": "Employee Connect final"
+              },
+              {
+                "type": "TextBlock",
+                "weight": "bolder",
+                "text": "Create and manage your tasks",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "The app identifies all your pending tasks \r\r and helps you manage everything at \r\r one place.",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "weight": "bolder",
+                "text": "Try these commands \r\r- Pending Submissions \r\r- Pending Approvals- My Tools",
+                "wrap": true,
+                "height": "stretch"
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "Let's get started"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+### <a name="syntax-for-carousel-collections"></a>Синтаксис для коллекций карусели
+
+`builder.AttachmentLayoutTypes.Carousel`
 
 ## <a name="list-collection"></a>Коллекция List
 
 ### <a name="support-for-list-collections"></a>Поддержка коллекций списков
 
-В раскладке списка отображается вертикальный список карточек, при необходимости связанные с ними кнопки действий.
+Макет списка отображает список карт с вертикальным расположением, при желании с связанными кнопками действий.
 
 | Боты в Teams | Расширения для сообщений  | Соединители | Bot Framework |
 | --- | --- | --- | --- |
 | ✔ | ✔ | ✖ | ✔ |
 |
 
-### <a name="example-list-collection"></a>Пример коллекции списков
+### <a name="example-list-collection"></a>Пример коллекции List
 
 ![Пример списка карточек](~/assets/images/cards/list.png)
 
-Это те же свойства, что и для карты главный Имиджевый баннер или эскиза.
+Свойства такие же, как для главного или эскиза карточки.
 
-В списке может отображаться не более 10 карточек для каждого сообщения.
+В списке может отображаться не более 10 карт на сообщение.
 
 > [!NOTE]
-> Некоторые комбинации карточек со списками пока не поддерживаются в iOS и Android.
+> Некоторые сочетания карточек списков пока не поддерживаются в iOS и Android.
 
-### <a name="syntax-for-list-collections"></a>Синтаксис коллекций списков
+### <a name="syntax-for-list-collections"></a>Синтаксис для коллекций списков
 
 `builder.AttachmentLayout.list`
 
-## <a name="cards-not-supported-in-teams"></a>Карточки, не поддерживаемые в Teams
+## <a name="cards-not-supported-in-teams"></a>Карточки не поддерживаются в Teams
 
-Следующие карты реализуются с помощью Bot Framework, но не поддерживаются в Teams.
+Следующие карточки реализованы в Bot Framework, но НЕ поддерживаются Teams.
 
 * Карты анимации
-* Звуковые карты
+* Аудиокарты
 * Видеокарты
