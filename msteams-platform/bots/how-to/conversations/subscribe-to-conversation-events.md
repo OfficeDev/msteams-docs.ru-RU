@@ -1,49 +1,57 @@
 ---
 title: Подписаться на события разговора
 author: WashingtonKayaker
-description: Как подписаться на события бесед из робота Microsoft Teams.
+description: Как подписаться на события бесед из бота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: d6a385d4608239029a943c0a1365cfcb56b21b6b
-ms.sourcegitcommit: df9448681d2a81f1029aad5a5e1989cd438d1ae0
+ms.openlocfilehash: f0da861834bbf221fe715d35c0beea6c3bd08f26
+ms.sourcegitcommit: 5f1d6c12d80d48f403b73586f68bacf15785c855
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877038"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739037"
 ---
-# <a name="subscribe-to-conversation-events"></a><span data-ttu-id="0324b-103">Подписаться на события разговора</span><span class="sxs-lookup"><span data-stu-id="0324b-103">Subscribe to conversation events</span></span>
+# <a name="subscribe-to-conversation-events"></a><span data-ttu-id="949cb-103">Подписаться на события разговора</span><span class="sxs-lookup"><span data-stu-id="949cb-103">Subscribe to conversation events</span></span>
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-<span data-ttu-id="0324b-104">Microsoft Teams отправляет уведомления в Bot для событий, происходящих в областях действия ленты.</span><span class="sxs-lookup"><span data-stu-id="0324b-104">Microsoft Teams sends notifications to your bot for events that happen in scopes where your bot is active.</span></span> <span data-ttu-id="0324b-105">Вы можете записать эти события в код и выполнить действия с ними, как показано ниже:</span><span class="sxs-lookup"><span data-stu-id="0324b-105">You can capture these events in your code and take action on them, such as the following:</span></span>
+<span data-ttu-id="949cb-104">Microsoft Teams отправляет вашему боту уведомления о событиях, которые происходят в тех случаях, когда бот активен.</span><span class="sxs-lookup"><span data-stu-id="949cb-104">Microsoft Teams sends notifications to your bot for events that happen in scopes where your bot is active.</span></span> <span data-ttu-id="949cb-105">Вы можете зафиксировать эти события в коде и принять с ними меры, например:</span><span class="sxs-lookup"><span data-stu-id="949cb-105">You can capture these events in your code and take action on them, such as the following:</span></span>
 
-* <span data-ttu-id="0324b-106">Инициация приветственного сообщения при добавлении ленты в группу</span><span class="sxs-lookup"><span data-stu-id="0324b-106">Trigger a welcome message when your bot is added to a team</span></span>
-* <span data-ttu-id="0324b-107">Инициация приветственного сообщения при добавлении или удалении нового участника группы</span><span class="sxs-lookup"><span data-stu-id="0324b-107">Trigger a welcome message when a new team member is added or removed</span></span>
-* <span data-ttu-id="0324b-108">Запуск уведомления при создании, переименовании или удалении канала</span><span class="sxs-lookup"><span data-stu-id="0324b-108">Trigger a notification when a channel is created, renamed or deleted</span></span>
-* <span data-ttu-id="0324b-109">Когда пользователю понравится сообщение Bot</span><span class="sxs-lookup"><span data-stu-id="0324b-109">When a bot message is liked by a user</span></span>
+* <span data-ttu-id="949cb-106">Запуск приветствия при добавлении бота в команду</span><span class="sxs-lookup"><span data-stu-id="949cb-106">Trigger a welcome message when your bot is added to a team</span></span>
+* <span data-ttu-id="949cb-107">Запуск приветствия при добавлении или удалении нового участника группы</span><span class="sxs-lookup"><span data-stu-id="949cb-107">Trigger a welcome message when a new team member is added or removed</span></span>
+* <span data-ttu-id="949cb-108">Запуск уведомления при его запуске, переименовании или удалении</span><span class="sxs-lookup"><span data-stu-id="949cb-108">Trigger a notification when a channel is created, renamed or deleted</span></span>
+* <span data-ttu-id="949cb-109">Если сообщение бота нравится пользователю</span><span class="sxs-lookup"><span data-stu-id="949cb-109">When a bot message is liked by a user</span></span>
 
-## <a name="conversation-update-events"></a><span data-ttu-id="0324b-110">События обновления беседы</span><span class="sxs-lookup"><span data-stu-id="0324b-110">Conversation update events</span></span>
+## <a name="conversation-update-events"></a><span data-ttu-id="949cb-110">События обновления беседы</span><span class="sxs-lookup"><span data-stu-id="949cb-110">Conversation update events</span></span>
 
-<span data-ttu-id="0324b-111">Элемент Bot получает `conversationUpdate` событие, когда оно было добавлено в беседу, другие элементы были добавлены в беседу или удалены из нее, а метаданные беседы изменились.</span><span class="sxs-lookup"><span data-stu-id="0324b-111">A bot receives a `conversationUpdate` event when it has been added to a conversation, other members have been added to or removed from a conversation, or conversation metadata has changed.</span></span>
+> [!Important]
+> <span data-ttu-id="949cb-111">Новые события можно добавлять в любое время, и ваш бот начнет их получать.</span><span class="sxs-lookup"><span data-stu-id="949cb-111">New events can be added at any time, and your bot will begin to receive them.</span></span>
+> <span data-ttu-id="949cb-112">Необходимо проработать возможность получения непредвиденных событий.</span><span class="sxs-lookup"><span data-stu-id="949cb-112">You must design for the possibility of receiving unexpected events.</span></span>
+> <span data-ttu-id="949cb-113">Если вы используете SDK Bot Framework, бот автоматически ответит на любые события, которые вы `200 - OK` не решите обработать.</span><span class="sxs-lookup"><span data-stu-id="949cb-113">If you are using the Bot Framework SDK, your bot will automatically respond with a `200 - OK` to any events you do not choose to handle.</span></span>
 
-<span data-ttu-id="0324b-112">`conversationUpdate`Событие отправляется в Bot при получении сведений об обновлениях членства для Teams, где она была добавлена.</span><span class="sxs-lookup"><span data-stu-id="0324b-112">The `conversationUpdate` event is sent to your bot when it receives information on membership updates for teams where it has been added.</span></span> <span data-ttu-id="0324b-113">Он также получает обновление, когда оно добавляется в первый раз специально для личных бесед.</span><span class="sxs-lookup"><span data-stu-id="0324b-113">It also receives an update when it has been added for the first time specifically for personal conversations.</span></span>
+<span data-ttu-id="949cb-114">Бот получает событие при добавлении в беседу, добавлении или удалении других участников беседы или изменения метаданных `conversationUpdate` беседы.</span><span class="sxs-lookup"><span data-stu-id="949cb-114">A bot receives a `conversationUpdate` event when it has been added to a conversation, other members have been added to or removed from a conversation, or conversation metadata has changed.</span></span>
 
-<span data-ttu-id="0324b-114">В следующей таблице приведен список событий обновления бесед в Teams со ссылками на дополнительные сведения.</span><span class="sxs-lookup"><span data-stu-id="0324b-114">The following table shows a list of Teams conversation update events, with links to more details.</span></span>
+<span data-ttu-id="949cb-115">Это событие отправляется боту, когда он получает сведения об обновлениях членства для `conversationUpdate` команд, в которые оно было добавлено.</span><span class="sxs-lookup"><span data-stu-id="949cb-115">The `conversationUpdate` event is sent to your bot when it receives information on membership updates for teams where it has been added.</span></span> <span data-ttu-id="949cb-116">Кроме того, он получает обновление при первом добавлении специально для личных бесед.</span><span class="sxs-lookup"><span data-stu-id="949cb-116">It also receives an update when it has been added for the first time specifically for personal conversations.</span></span>
 
-| <span data-ttu-id="0324b-115">Выполняемое действие</span><span class="sxs-lookup"><span data-stu-id="0324b-115">Action Taken</span></span>        | <span data-ttu-id="0324b-116">EventType</span><span class="sxs-lookup"><span data-stu-id="0324b-116">EventType</span></span>         | <span data-ttu-id="0324b-117">Метод с именем</span><span class="sxs-lookup"><span data-stu-id="0324b-117">Method Called</span></span>              | <span data-ttu-id="0324b-118">Описание</span><span class="sxs-lookup"><span data-stu-id="0324b-118">Description</span></span>                | <span data-ttu-id="0324b-119">Область</span><span class="sxs-lookup"><span data-stu-id="0324b-119">Scope</span></span> |
+<span data-ttu-id="949cb-117">В следующей таблице показан список событий обновления бесед Teams со ссылками на дополнительные сведения.</span><span class="sxs-lookup"><span data-stu-id="949cb-117">The following table shows a list of Teams conversation update events, with links to more details.</span></span>
+
+| <span data-ttu-id="949cb-118">Предпринятые действия</span><span class="sxs-lookup"><span data-stu-id="949cb-118">Action Taken</span></span>        | <span data-ttu-id="949cb-119">EventType</span><span class="sxs-lookup"><span data-stu-id="949cb-119">EventType</span></span>         | <span data-ttu-id="949cb-120">Вызван метод</span><span class="sxs-lookup"><span data-stu-id="949cb-120">Method Called</span></span>              | <span data-ttu-id="949cb-121">Описание</span><span class="sxs-lookup"><span data-stu-id="949cb-121">Description</span></span>                | <span data-ttu-id="949cb-122">Область</span><span class="sxs-lookup"><span data-stu-id="949cb-122">Scope</span></span> |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
-| <span data-ttu-id="0324b-120">канал создан</span><span class="sxs-lookup"><span data-stu-id="0324b-120">channel created</span></span>     | <span data-ttu-id="0324b-121">чаннелкреатед</span><span class="sxs-lookup"><span data-stu-id="0324b-121">channelCreated</span></span>    | <span data-ttu-id="0324b-122">онтеамсчаннелкреатедасинк</span><span class="sxs-lookup"><span data-stu-id="0324b-122">OnTeamsChannelCreatedAsync</span></span> | [<span data-ttu-id="0324b-123">Создан канал</span><span class="sxs-lookup"><span data-stu-id="0324b-123">A channel was created</span></span>](#channel-created) | <span data-ttu-id="0324b-124">Команда</span><span class="sxs-lookup"><span data-stu-id="0324b-124">Team</span></span> |
-| <span data-ttu-id="0324b-125">канал переименован</span><span class="sxs-lookup"><span data-stu-id="0324b-125">channel renamed</span></span>     | <span data-ttu-id="0324b-126">чаннелренамед</span><span class="sxs-lookup"><span data-stu-id="0324b-126">channelRenamed</span></span>    | <span data-ttu-id="0324b-127">онтеамсчаннелренамедасинк</span><span class="sxs-lookup"><span data-stu-id="0324b-127">OnTeamsChannelRenamedAsync</span></span> | [<span data-ttu-id="0324b-128">Канал переименован</span><span class="sxs-lookup"><span data-stu-id="0324b-128">A channel was renamed</span></span>](#channel-renamed) | <span data-ttu-id="0324b-129">Команда</span><span class="sxs-lookup"><span data-stu-id="0324b-129">Team</span></span> |
-| <span data-ttu-id="0324b-130">канал удален</span><span class="sxs-lookup"><span data-stu-id="0324b-130">channel deleted</span></span>     | <span data-ttu-id="0324b-131">чаннелделетед</span><span class="sxs-lookup"><span data-stu-id="0324b-131">channelDeleted</span></span>    | <span data-ttu-id="0324b-132">онтеамсчаннелделетедасинк</span><span class="sxs-lookup"><span data-stu-id="0324b-132">OnTeamsChannelDeletedAsync</span></span> | [<span data-ttu-id="0324b-133">Канал удален</span><span class="sxs-lookup"><span data-stu-id="0324b-133">A channel was deleted</span></span>](#channel-deleted) | <span data-ttu-id="0324b-134">Команда</span><span class="sxs-lookup"><span data-stu-id="0324b-134">Team</span></span> |
-| <span data-ttu-id="0324b-135">добавленные участники группы</span><span class="sxs-lookup"><span data-stu-id="0324b-135">team members added</span></span>   | <span data-ttu-id="0324b-136">теаммембераддед</span><span class="sxs-lookup"><span data-stu-id="0324b-136">teamMemberAdded</span></span>   | <span data-ttu-id="0324b-137">онтеамсмемберсаддедасинк</span><span class="sxs-lookup"><span data-stu-id="0324b-137">OnTeamsMembersAddedAsync</span></span>   | [<span data-ttu-id="0324b-138">Участник, добавленный в группу</span><span class="sxs-lookup"><span data-stu-id="0324b-138">A Member added to team</span></span>](#team-members-added)   | <span data-ttu-id="0324b-139">Все</span><span class="sxs-lookup"><span data-stu-id="0324b-139">All</span></span> |
-| <span data-ttu-id="0324b-140">удалены участники группы</span><span class="sxs-lookup"><span data-stu-id="0324b-140">team members removed</span></span> | <span data-ttu-id="0324b-141">теаммемберремовед</span><span class="sxs-lookup"><span data-stu-id="0324b-141">teamMemberRemoved</span></span> | <span data-ttu-id="0324b-142">онтеамсмемберсремоведасинк</span><span class="sxs-lookup"><span data-stu-id="0324b-142">OnTeamsMembersRemovedAsync</span></span> | [<span data-ttu-id="0324b-143">Участник удален из группы</span><span class="sxs-lookup"><span data-stu-id="0324b-143">A Member was removed from team</span></span>](#team-members-removed) | <span data-ttu-id="0324b-144">Группа & groupChat</span><span class="sxs-lookup"><span data-stu-id="0324b-144">groupChat & team</span></span> |
-| <span data-ttu-id="0324b-145">Команда переименована</span><span class="sxs-lookup"><span data-stu-id="0324b-145">team renamed</span></span>        | <span data-ttu-id="0324b-146">теамренамед</span><span class="sxs-lookup"><span data-stu-id="0324b-146">teamRenamed</span></span>       | <span data-ttu-id="0324b-147">онтеамстеамренамедасинк</span><span class="sxs-lookup"><span data-stu-id="0324b-147">OnTeamsTeamRenamedAsync</span></span>    | [<span data-ttu-id="0324b-148">Команда была переименована</span><span class="sxs-lookup"><span data-stu-id="0324b-148">A Team was renamed</span></span>](#team-renamed)       | <span data-ttu-id="0324b-149">Команда</span><span class="sxs-lookup"><span data-stu-id="0324b-149">Team</span></span> |
+| <span data-ttu-id="949cb-123">канал создан</span><span class="sxs-lookup"><span data-stu-id="949cb-123">channel created</span></span>     | <span data-ttu-id="949cb-124">channelCreated</span><span class="sxs-lookup"><span data-stu-id="949cb-124">channelCreated</span></span>    | <span data-ttu-id="949cb-125">OnTeamsChannelCreatedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-125">OnTeamsChannelCreatedAsync</span></span> | [<span data-ttu-id="949cb-126">Канал создан</span><span class="sxs-lookup"><span data-stu-id="949cb-126">A channel was created</span></span>](#channel-created) | <span data-ttu-id="949cb-127">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-127">Team</span></span> |
+| <span data-ttu-id="949cb-128">channel renamed</span><span class="sxs-lookup"><span data-stu-id="949cb-128">channel renamed</span></span>     | <span data-ttu-id="949cb-129">channelRenamed</span><span class="sxs-lookup"><span data-stu-id="949cb-129">channelRenamed</span></span>    | <span data-ttu-id="949cb-130">OnTeamsChannelRenamedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-130">OnTeamsChannelRenamedAsync</span></span> | [<span data-ttu-id="949cb-131">Канал был переименован</span><span class="sxs-lookup"><span data-stu-id="949cb-131">A channel was renamed</span></span>](#channel-renamed) | <span data-ttu-id="949cb-132">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-132">Team</span></span> |
+| <span data-ttu-id="949cb-133">канал удален</span><span class="sxs-lookup"><span data-stu-id="949cb-133">channel deleted</span></span>     | <span data-ttu-id="949cb-134">channelDeleted</span><span class="sxs-lookup"><span data-stu-id="949cb-134">channelDeleted</span></span>    | <span data-ttu-id="949cb-135">OnTeamsChannelDeletedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-135">OnTeamsChannelDeletedAsync</span></span> | [<span data-ttu-id="949cb-136">Канал был удален</span><span class="sxs-lookup"><span data-stu-id="949cb-136">A channel was deleted</span></span>](#channel-deleted) | <span data-ttu-id="949cb-137">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-137">Team</span></span> |
+| <span data-ttu-id="949cb-138">восстановлен канал</span><span class="sxs-lookup"><span data-stu-id="949cb-138">channel restored</span></span>    | <span data-ttu-id="949cb-139">channelRestored</span><span class="sxs-lookup"><span data-stu-id="949cb-139">channelRestored</span></span>    | <span data-ttu-id="949cb-140">OnTeamsChannelRestoredAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-140">OnTeamsChannelRestoredAsync</span></span> | [<span data-ttu-id="949cb-141">Канал был восстановлен</span><span class="sxs-lookup"><span data-stu-id="949cb-141">A channel was restored</span></span>](#channel-deleted) | <span data-ttu-id="949cb-142">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-142">Team</span></span> |
+| <span data-ttu-id="949cb-143">добавлены члены</span><span class="sxs-lookup"><span data-stu-id="949cb-143">members added</span></span>   | <span data-ttu-id="949cb-144">membersAdded</span><span class="sxs-lookup"><span data-stu-id="949cb-144">membersAdded</span></span>   | <span data-ttu-id="949cb-145">OnTeamsMembersAddedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-145">OnTeamsMembersAddedAsync</span></span>   | [<span data-ttu-id="949cb-146">Добавлен участник</span><span class="sxs-lookup"><span data-stu-id="949cb-146">A member added</span></span>](#team-members-added)   | <span data-ttu-id="949cb-147">Все</span><span class="sxs-lookup"><span data-stu-id="949cb-147">All</span></span> |
+| <span data-ttu-id="949cb-148">members removed</span><span class="sxs-lookup"><span data-stu-id="949cb-148">members removed</span></span> | <span data-ttu-id="949cb-149">membersRemoved</span><span class="sxs-lookup"><span data-stu-id="949cb-149">membersRemoved</span></span> | <span data-ttu-id="949cb-150">OnTeamsMembersRemovedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-150">OnTeamsMembersRemovedAsync</span></span> | [<span data-ttu-id="949cb-151">Член был удален</span><span class="sxs-lookup"><span data-stu-id="949cb-151">A member was removed</span></span>](#team-members-removed) | <span data-ttu-id="949cb-152">groupChat & команды</span><span class="sxs-lookup"><span data-stu-id="949cb-152">groupChat & team</span></span> |
+| <span data-ttu-id="949cb-153">команда переименована</span><span class="sxs-lookup"><span data-stu-id="949cb-153">team renamed</span></span>        | <span data-ttu-id="949cb-154">teamRenamed</span><span class="sxs-lookup"><span data-stu-id="949cb-154">teamRenamed</span></span>       | <span data-ttu-id="949cb-155">OnTeamsTeamRenamedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-155">OnTeamsTeamRenamedAsync</span></span>    | [<span data-ttu-id="949cb-156">Команда была переименована</span><span class="sxs-lookup"><span data-stu-id="949cb-156">A Team was renamed</span></span>](#team-renamed)       | <span data-ttu-id="949cb-157">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-157">Team</span></span> |
+| <span data-ttu-id="949cb-158">team archived</span><span class="sxs-lookup"><span data-stu-id="949cb-158">team archived</span></span>        | <span data-ttu-id="949cb-159">teamArchived</span><span class="sxs-lookup"><span data-stu-id="949cb-159">teamArchived</span></span>       | <span data-ttu-id="949cb-160">OnTeamsTeamArchivedAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-160">OnTeamsTeamArchivedAsync</span></span>    | [<span data-ttu-id="949cb-161">Архивировать команду</span><span class="sxs-lookup"><span data-stu-id="949cb-161">A Team was archived</span></span>](#team-archived)       | <span data-ttu-id="949cb-162">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-162">Team</span></span> |
+| <span data-ttu-id="949cb-163">команда восстановлена</span><span class="sxs-lookup"><span data-stu-id="949cb-163">team restored</span></span>        | <span data-ttu-id="949cb-164">teamRestored</span><span class="sxs-lookup"><span data-stu-id="949cb-164">teamRestored</span></span>      | <span data-ttu-id="949cb-165">OnTeamsTeamRestoredAsync</span><span class="sxs-lookup"><span data-stu-id="949cb-165">OnTeamsTeamRestoredAsync</span></span>    | [<span data-ttu-id="949cb-166">Команда была переименована</span><span class="sxs-lookup"><span data-stu-id="949cb-166">A Team was renamed</span></span>](#team-renamed)       | <span data-ttu-id="949cb-167">Команда</span><span class="sxs-lookup"><span data-stu-id="949cb-167">Team</span></span> |
 
-### <a name="channel-created"></a><span data-ttu-id="0324b-150">Канал создан</span><span class="sxs-lookup"><span data-stu-id="0324b-150">Channel created</span></span>
+### <a name="channel-created"></a><span data-ttu-id="949cb-168">Канал создан</span><span class="sxs-lookup"><span data-stu-id="949cb-168">Channel created</span></span>
 
-<span data-ttu-id="0324b-151">Событие созданного канала отправляется на ваш робот при создании нового канала в группе, в которой установлен почтовый робот.</span><span class="sxs-lookup"><span data-stu-id="0324b-151">The channel created event is sent to your bot whenever a new channel is created in a team your bot is installed in.</span></span>
+<span data-ttu-id="949cb-169">Событие, созданное каналом, отправляется вашему боту всякий раз, когда в команде создается новый канал, в который устанавливается бот.</span><span class="sxs-lookup"><span data-stu-id="949cb-169">The channel created event is sent to your bot whenever a new channel is created in a team your bot is installed in.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-152">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-152">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-170">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-170">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsChannelCreatedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -53,7 +61,7 @@ protected override async Task OnTeamsChannelCreatedAsync(ChannelInfo channelInfo
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-153">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-153">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-171">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-171">TypeScript/Node.js</span></span>](#tab/typescript)
 
 <!-- From sample: botbuilder-js\libraries\botbuilder\tests\teams\conversationUpdate\src\conversationUpdateBot.ts -->
 
@@ -73,7 +81,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-154">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-154">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-172">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-172">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -111,7 +119,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="python"></a>[<span data-ttu-id="0324b-155">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-155">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-173">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-173">Python</span></span>](#tab/python)
 
 ```python
 async def on_teams_channel_created(
@@ -126,11 +134,11 @@ async def on_teams_channel_created(
 
 * * *
 
-### <a name="channel-renamed"></a><span data-ttu-id="0324b-156">Канал переименован</span><span class="sxs-lookup"><span data-stu-id="0324b-156">Channel renamed</span></span>
+### <a name="channel-renamed"></a><span data-ttu-id="949cb-174">Канал переименован</span><span class="sxs-lookup"><span data-stu-id="949cb-174">Channel renamed</span></span>
 
-<span data-ttu-id="0324b-157">Событие переименования канала передается в Bot при переименовании канала в группе, в которой установлен почтовый робот.</span><span class="sxs-lookup"><span data-stu-id="0324b-157">The channel renamed event is sent to your bot whenever a channel is renamed in a team your bot is installed in.</span></span>
+<span data-ttu-id="949cb-175">Событие переименования канала отправляется вашему боту при переименовании канала в команде, в которая установлен бот.</span><span class="sxs-lookup"><span data-stu-id="949cb-175">The channel renamed event is sent to your bot whenever a channel is renamed in a team your bot is installed in.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-158">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-158">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-176">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-176">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -140,7 +148,7 @@ protected override async Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-159">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-159">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-177">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-177">TypeScript/Node.js</span></span>](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -155,7 +163,7 @@ export class MyBot extends TeamsActivityHandler {
     }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-160">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-160">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-178">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-178">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -193,7 +201,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="python"></a>[<span data-ttu-id="0324b-161">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-161">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-179">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-179">Python</span></span>](#tab/python)
 
 ```python
 async def on_teams_channel_renamed(
@@ -206,11 +214,11 @@ async def on_teams_channel_renamed(
 
 * * *
 
-### <a name="channel-deleted"></a><span data-ttu-id="0324b-162">Канал удален</span><span class="sxs-lookup"><span data-stu-id="0324b-162">Channel Deleted</span></span>
+### <a name="channel-deleted"></a><span data-ttu-id="949cb-180">Канал удален</span><span class="sxs-lookup"><span data-stu-id="949cb-180">Channel Deleted</span></span>
 
-<span data-ttu-id="0324b-163">Событие Deleted Channel отправляется на ваш Bot при удалении канала в группе, в которой установлен почтовый робот.</span><span class="sxs-lookup"><span data-stu-id="0324b-163">The channel deleted event is sent to your bot whenever a channel is deleted in a team your bot is installed in.</span></span>
+<span data-ttu-id="949cb-181">Событие удаления канала отправляется вашему боту при удалении канала в команде, в которая установлен этот бот.</span><span class="sxs-lookup"><span data-stu-id="949cb-181">The channel deleted event is sent to your bot whenever a channel is deleted in a team your bot is installed in.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-164">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-164">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-182">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-182">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsChannelDeletedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -220,7 +228,7 @@ protected override async Task OnTeamsChannelDeletedAsync(ChannelInfo channelInfo
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-165">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-165">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-183">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-183">TypeScript/Node.js</span></span>](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -237,7 +245,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-166">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-166">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-184">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-184">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -275,7 +283,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="python"></a>[<span data-ttu-id="0324b-167">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-167">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-185">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-185">Python</span></span>](#tab/python)
 
 ```python
 async def on_teams_channel_deleted(
@@ -288,16 +296,103 @@ async def on_teams_channel_deleted(
 
 * * *
 
-### <a name="team-members-added"></a><span data-ttu-id="0324b-168">Добавленные участники группы</span><span class="sxs-lookup"><span data-stu-id="0324b-168">Team members added</span></span>
+### <a name="channel-restored"></a><span data-ttu-id="949cb-186">Канал восстановлен</span><span class="sxs-lookup"><span data-stu-id="949cb-186">Channel restored</span></span>
 
-<span data-ttu-id="0324b-169">`teamMemberAdded`Событие отправляется на почтовый робот при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или группу чата, в которой установлена программа-робот.</span><span class="sxs-lookup"><span data-stu-id="0324b-169">The `teamMemberAdded` event is sent to your bot the first time it is added to a conversation and every time a new user is added to a team or group chat that your bot is installed in.</span></span> <span data-ttu-id="0324b-170">Сведения о пользователе (ID) уникальны для почтового робота и могут кэшироваться для последующего использования службой (например, для отправки сообщения определенному пользователю).</span><span class="sxs-lookup"><span data-stu-id="0324b-170">The user information (ID) is unique for your bot and can be cached for future use by your service (such as sending a message to a specific user).</span></span>
+<span data-ttu-id="949cb-187">Событие восстановления канала отправляется боту при восстановлении ранее удаленного канала в команде, в которую уже установлен бот.</span><span class="sxs-lookup"><span data-stu-id="949cb-187">The channel restored event is sent to your bot whenever a channel that was previously deleted is restored in a team that your bot is already installed in.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-171">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-171">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-188">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-188">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
-protected override async Task OnTeamsMembersAddedAsync(IList<ChannelAccount> membersAdded, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+protected override async Task OnTeamsChannelRestoredAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
 {
-    foreach (TeamsChannelAccount member in membersAdded)
+    var heroCard = new HeroCard(text: $"{channelInfo.Name} is the Channel restored.");
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(heroCard.ToAttachment()), cancellationToken);
+}
+```
+
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-189">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-189">TypeScript/Node.js</span></span>](#tab/typescript)
+
+<!-- From sample: botbuilder-js\libraries\botbuilder\tests\teams\conversationUpdate\src\conversationUpdateBot.ts -->
+
+```typescript
+
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+        this.onTeamsChannelRestoredEvent(async (channelInfo: ChannelInfo, teamInfo: TeamInfo, turnContext: TurnContext, next: () => Promise<void>): Promise<void> => {
+            const card = CardFactory.heroCard('Channel Restored', `${channelInfo.name} is the Channel restored`);
+            const message = MessageFactory.attachment(card);
+            await turnContext.sendActivity(message);
+            await next();
+        });
+    }
+}
+
+```
+
+# <a name="json"></a>[<span data-ttu-id="949cb-190">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-190">JSON</span></span>](#tab/json)
+
+```json
+{
+    "type": "conversationUpdate",
+    "timestamp": "2017-02-23T19:34:07.478Z",
+    "localTimestamp": "2017-02-23T12:34:07.478-07:00",
+    "id": "f:dd6ec311",
+    "channelId": "msteams",
+    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/",
+    "from": {
+        "id": "29:1wR7IdIRIoerMIWbewMi75JA3scaMuxvFon9eRQW2Nix5loMDo0362st2IaRVRirPZBv1WdXT8TIFWWmlQCizZQ"
+    },
+    "conversation": {
+        "isGroup": true,
+        "conversationType": "channel",
+        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+    },
+    "recipient": {
+        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
+        "name": "SongsuggesterBot"
+    },
+    "channelData": {
+        "channel": {
+            "id": "19:6d97d816470f481dbcda38244b98689a@thread.skype",
+            "name": "FunDiscussions"
+        },
+        "team": {
+            "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+        },
+        "eventType": "channelRestored",
+        "tenant": {
+            "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    }
+}
+```
+
+# <a name="python"></a>[<span data-ttu-id="949cb-191">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-191">Python</span></span>](#tab/python)
+
+```python
+async def on_teams_channel_restored(
+    self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
+):
+    return await turn_context.send_activity(
+        MessageFactory.text(
+            f"The restored channel is {channel_info.name}. The channel id is {channel_info.id}"
+        )
+    )
+```
+
+* * *
+
+### <a name="team-members-added"></a><span data-ttu-id="949cb-192">Добавлены участники команды</span><span class="sxs-lookup"><span data-stu-id="949cb-192">Team members added</span></span>
+
+<span data-ttu-id="949cb-193">Это событие отправляется боту при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или групповой чат, в который устанавливается `teamMemberAdded` бот.</span><span class="sxs-lookup"><span data-stu-id="949cb-193">The `teamMemberAdded` event is sent to your bot the first time it is added to a conversation and every time a new user is added to a team or group chat that your bot is installed in.</span></span> <span data-ttu-id="949cb-194">Сведения о пользователе (ID) уникальны для вашего бота и могут кэшться для дальнейшего использования вашей службой (например, отправки сообщения определенному пользователю).</span><span class="sxs-lookup"><span data-stu-id="949cb-194">The user information (ID) is unique for your bot and can be cached for future use by your service (such as sending a message to a specific user).</span></span>
+
+# <a name="cnet"></a>[<span data-ttu-id="949cb-195">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-195">C#/.NET</span></span>](#tab/dotnet)
+
+```csharp
+protected override async Task OnTeamsMembersAddedAsync(IList<TeamsChannelAccount> teamsMembersAdded , TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    foreach (TeamsChannelAccount member in teamsMembersAdded)
     {
         if (member.Id == turnContext.Activity.Recipient.Id)
         {
@@ -314,7 +409,7 @@ protected override async Task OnTeamsMembersAddedAsync(IList<ChannelAccount> mem
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-172">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-172">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-196">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-196">TypeScript/Node.js</span></span>](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -337,9 +432,9 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-173">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-173">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-197">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-197">JSON</span></span>](#tab/json)
 
-<span data-ttu-id="0324b-174">Это сообщение, которое будет получать ваш почтовый робот при добавлении в **команду** ленты.</span><span class="sxs-lookup"><span data-stu-id="0324b-174">This is the message your bot will receive when the bot is added **to a team**.</span></span>
+<span data-ttu-id="949cb-198">Это сообщение, которое ваш бот получит при добавлении бота **в команду.**</span><span class="sxs-lookup"><span data-stu-id="949cb-198">This is the message your bot will receive when the bot is added **to a team**.</span></span>
 
 ```json
 {
@@ -378,7 +473,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-<span data-ttu-id="0324b-175">Это сообщение, которое будет получать ваш почтовый робот при добавлении ленты \* *в чат "один к одному* ".</span><span class="sxs-lookup"><span data-stu-id="0324b-175">This is the message your bot will receive when the bot is added \* *to a one-to-one chat*.</span></span>
+<span data-ttu-id="949cb-199">Это сообщение, которое ваш бот получит при добавлении бота \* в один *к одному чату.*</span><span class="sxs-lookup"><span data-stu-id="949cb-199">This is the message your bot will receive when the bot is added \**to a one-to-one chat*.</span></span>
 
 ```json
 {
@@ -415,7 +510,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="python"></a>[<span data-ttu-id="0324b-176">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-176">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-200">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-200">Python</span></span>](#tab/python)
 
 ```python
 async def on_teams_members_added(
@@ -428,15 +523,15 @@ async def on_teams_members_added(
     return
 ```
 
-<span data-ttu-id="0324b-177">_ \* \*</span><span class="sxs-lookup"><span data-stu-id="0324b-177">_ \* \*</span></span>
+<span data-ttu-id="949cb-201">_ \* \*</span><span class="sxs-lookup"><span data-stu-id="949cb-201">_ \* \*</span></span>
 
-### <a name="team-members-removed"></a><span data-ttu-id="0324b-178">Удалены участники группы</span><span class="sxs-lookup"><span data-stu-id="0324b-178">Team members removed</span></span>
+### <a name="team-members-removed"></a><span data-ttu-id="949cb-202">Участники команды удалены</span><span class="sxs-lookup"><span data-stu-id="949cb-202">Team members removed</span></span>
 
-<span data-ttu-id="0324b-179">`teamMemberRemoved`Событие отправляется в Bot, если оно удалено из команды и каждый раз, когда какой-либо пользователь удаляется из команды, участником которой является пользователь Bot.</span><span class="sxs-lookup"><span data-stu-id="0324b-179">The `teamMemberRemoved` event is sent to your bot if it is removed from a team and every time any user is removed from a team that your bot is a member of.</span></span> <span data-ttu-id="0324b-180">Вы можете определить, был ли удаленный участник участником "bot" или пользователем, изучив `Activity` объект `turnContext` .</span><span class="sxs-lookup"><span data-stu-id="0324b-180">You can determine if the new member removed was the bot itself or a user by looking at the `Activity` object of the `turnContext`.</span></span>  <span data-ttu-id="0324b-181">Если `Id` поле объекта совпадает с `MembersRemoved` `Id` полем `Recipient` объекта, то член удален, а в противном случае — пользователь.</span><span class="sxs-lookup"><span data-stu-id="0324b-181">If the `Id` field of the `MembersRemoved` object is the same as the `Id` field of the `Recipient` object, then the member removed is the bot, otherwise it is a user.</span></span>  <span data-ttu-id="0324b-182">Как правило, в качестве ленты `Id` будет использоваться: `28:<MicrosoftAppId>`</span><span class="sxs-lookup"><span data-stu-id="0324b-182">The bot's `Id` will generally be: `28:<MicrosoftAppId>`</span></span>
+<span data-ttu-id="949cb-203">Это событие отправляется вашему боту, если оно удаляется из команды и каждый раз, когда любой пользователь удаляется из команды, участником которую является `teamMemberRemoved` ваш бот.</span><span class="sxs-lookup"><span data-stu-id="949cb-203">The `teamMemberRemoved` event is sent to your bot if it is removed from a team and every time any user is removed from a team that your bot is a member of.</span></span> <span data-ttu-id="949cb-204">Вы можете определить, был ли новый член удален самим ботом или пользователем, посмотрев на `Activity` объект `turnContext` .</span><span class="sxs-lookup"><span data-stu-id="949cb-204">You can determine if the new member removed was the bot itself or a user by looking at the `Activity` object of the `turnContext`.</span></span>  <span data-ttu-id="949cb-205">Если поле объекта такое же, как и поле объекта, удаляемая член является ботом, в противном случае `Id` `MembersRemoved` это `Id` `Recipient` пользователь.</span><span class="sxs-lookup"><span data-stu-id="949cb-205">If the `Id` field of the `MembersRemoved` object is the same as the `Id` field of the `Recipient` object, then the member removed is the bot, otherwise, it is a user.</span></span>  <span data-ttu-id="949cb-206">Бот, как `Id` правило, будет: `28:<MicrosoftAppId>`</span><span class="sxs-lookup"><span data-stu-id="949cb-206">The bot's `Id` will generally be: `28:<MicrosoftAppId>`</span></span>
 
-[!Note] <span data-ttu-id="0324b-183">Когда пользователь безвозвратно удален из клиента, `membersRemoved conversationUpdate` инициируется событие.</span><span class="sxs-lookup"><span data-stu-id="0324b-183">When a user is permanently deleted from a tenant, `membersRemoved conversationUpdate` event is triggered.</span></span>
+[!Note] <span data-ttu-id="949cb-207">Когда пользователь окончательно удаляется из клиента, `membersRemoved conversationUpdate` инициирует событие.</span><span class="sxs-lookup"><span data-stu-id="949cb-207">When a user is permanently deleted from a tenant, `membersRemoved conversationUpdate` event is triggered.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-184">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-184">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-208">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-208">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsMembersRemovedAsync(IList<ChannelAccount> membersRemoved, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -457,7 +552,7 @@ protected override async Task OnTeamsMembersRemovedAsync(IList<ChannelAccount> m
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-185">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-185">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-209">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-209">TypeScript/Node.js</span></span>](#tab/typescript)
 
 ```typescript
 
@@ -481,7 +576,9 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-186">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-186">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-210">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-210">JSON</span></span>](#tab/json)
+
+<span data-ttu-id="949cb-211">Объект в следующем примере полезной нагрузки основан на добавлении участника в команду вместо группового чата или инициировании новой беседы "один `channelData` к одному":</span><span class="sxs-lookup"><span data-stu-id="949cb-211">The `channelData` object in the following payload example is based on adding a member to a team rather than a group chat, or initiating a new one-to-one conversation:</span></span>
 
 ```json
 {
@@ -522,7 +619,7 @@ export class MyBot extends TeamsActivityHandler {
 ```
 
 
-# <a name="python"></a>[<span data-ttu-id="0324b-187">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-187">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-212">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-212">Python</span></span>](#tab/python)
 
 ```python
 async def on_teams_members_removed(
@@ -530,18 +627,18 @@ async def on_teams_members_removed(
 ):
     for member in teams_members_removed:
         await turn_context.send_activity(
-            MessageFactory.text(f"Say goodbye to your team member {member.id}")
+            MessageFactory.text(f"Say goodbye to {member.id}")
         )
     return
 ```
 
 * * *
 
-### <a name="team-renamed"></a><span data-ttu-id="0324b-188">Команда переименована</span><span class="sxs-lookup"><span data-stu-id="0324b-188">Team renamed</span></span>
+### <a name="team-renamed"></a><span data-ttu-id="949cb-213">Команда переименована</span><span class="sxs-lookup"><span data-stu-id="949cb-213">Team renamed</span></span>
 
-<span data-ttu-id="0324b-189">Ваш робот получает уведомление, когда группа, в которую она находится, была переименована.</span><span class="sxs-lookup"><span data-stu-id="0324b-189">Your bot is notified when the team it is in has been renamed.</span></span> <span data-ttu-id="0324b-190">Он получает `conversationUpdate` событие `eventType.teamRenamed` в `channelData` объекте.</span><span class="sxs-lookup"><span data-stu-id="0324b-190">It receives a `conversationUpdate` event with `eventType.teamRenamed` in the `channelData` object.</span></span>
+<span data-ttu-id="949cb-214">Бот будет уведомлен о переименовании команды.</span><span class="sxs-lookup"><span data-stu-id="949cb-214">Your bot is notified when the team it is in has been renamed.</span></span> <span data-ttu-id="949cb-215">Он получает событие `conversationUpdate` в `eventType.teamRenamed` `channelData` объекте.</span><span class="sxs-lookup"><span data-stu-id="949cb-215">It receives a `conversationUpdate` event with `eventType.teamRenamed` in the `channelData` object.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-191">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-191">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-216">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-216">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
@@ -551,7 +648,7 @@ protected override async Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnCo
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-192">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-192">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-217">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-217">TypeScript/Node.js</span></span>](#tab/typescript)
 
 ```typescript
 export class MyBot extends TeamsActivityHandler {
@@ -567,7 +664,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-193">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-193">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-218">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-218">JSON</span></span>](#tab/json)
 
 ```json
 { 
@@ -602,8 +699,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-
-# <a name="python"></a>[<span data-ttu-id="0324b-194">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-194">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-219">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-219">Python</span></span>](#tab/python)
 
 ```python
 async def on_teams_team_renamed(
@@ -616,18 +712,174 @@ async def on_teams_team_renamed(
 
 * * *
 
-## <a name="message-reaction-events"></a><span data-ttu-id="0324b-195">События реакции сообщений</span><span class="sxs-lookup"><span data-stu-id="0324b-195">Message reaction events</span></span>
+### <a name="team-archived"></a><span data-ttu-id="949cb-220">Архивная группа</span><span class="sxs-lookup"><span data-stu-id="949cb-220">Team archived</span></span>
 
-<span data-ttu-id="0324b-196">`messageReaction`Событие отправляется, когда пользователь добавляет или удаляет реакции на сообщение, отправленное вашим роботом.</span><span class="sxs-lookup"><span data-stu-id="0324b-196">The `messageReaction` event is sent when a user adds or removes reactions to a message which was sent by your bot.</span></span> <span data-ttu-id="0324b-197">`replyToId`Содержит идентификатор определенного сообщения, а также `Type` тип реакции в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="0324b-197">The `replyToId` contains the ID of the specific message, and the `Type` is the type of reaction in text format.</span></span>  <span data-ttu-id="0324b-198">К типам реакции относятся: "Ангри", "сердце", "лаугх", "Like", "грустный", "удивленный".</span><span class="sxs-lookup"><span data-stu-id="0324b-198">The types of reactions include: "angry", "heart", "laugh", "like", "Sad", "surprised".</span></span> <span data-ttu-id="0324b-199">Это событие не содержит содержимое исходного сообщения, поэтому если обработка реакции на сообщения очень важна для ленты, необходимо сохранить сообщения при их отправке.</span><span class="sxs-lookup"><span data-stu-id="0324b-199">This event does not contain the contents of the original message, so if processing reactions to your messages is important for your bot you'll need to store the messages when you send them.</span></span>
+<span data-ttu-id="949cb-221">Бот получает уведомление о том, что установленная в нем команда архивна.</span><span class="sxs-lookup"><span data-stu-id="949cb-221">The bot receives a notification when the team it is installed in is archived.</span></span> <span data-ttu-id="949cb-222">Он получает событие `conversationUpdate` в `eventType.teamarchived` `channelData` объекте.</span><span class="sxs-lookup"><span data-stu-id="949cb-222">It receives a `conversationUpdate` event with `eventType.teamarchived` in the `channelData` object.</span></span>
 
-| <span data-ttu-id="0324b-200">EventType</span><span class="sxs-lookup"><span data-stu-id="0324b-200">EventType</span></span>       | <span data-ttu-id="0324b-201">Объект полезных данных</span><span class="sxs-lookup"><span data-stu-id="0324b-201">Payload object</span></span>   | <span data-ttu-id="0324b-202">Описание</span><span class="sxs-lookup"><span data-stu-id="0324b-202">Description</span></span>                                                             | <span data-ttu-id="0324b-203">Область</span><span class="sxs-lookup"><span data-stu-id="0324b-203">Scope</span></span> |
+# <a name="cnet"></a>[<span data-ttu-id="949cb-223">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-223">C#/.NET</span></span>](#tab/dotnet)
+
+```csharp
+protected override async Task OnTeamsTeamArchivedAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    var heroCard = new HeroCard(text: $"{teamInfo.Name} is the team name");
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(heroCard.ToAttachment()), cancellationToken);
+}
+```
+
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-224">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-224">TypeScript/Node.js</span></span>](#tab/typescript)
+
+```typescript
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+        this.onTeamsTeamArchivedEvent(async (teamInfo: TeamInfo, turnContext: TurnContext, next: () => Promise<void>): Promise<void> => {
+            const card = CardFactory.heroCard('Team archived', `${teamInfo.name} is the team name`);
+            const message = MessageFactory.attachment(card);
+            await turnContext.sendActivity(message);
+            await next();
+        });
+    }
+}
+```
+
+# <a name="json"></a>[<span data-ttu-id="949cb-225">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-225">JSON</span></span>](#tab/json)
+
+```json
+{ 
+    "type": "conversationUpdate",
+    "timestamp": "2017-02-23T19:35:56.825Z",
+    "localTimestamp": "2017-02-23T12:35:56.825-07:00",
+    "id": "f:1406033e",
+    "channelId": "msteams",
+    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/", 
+    "from": { 
+        "id": "29:1I9Is_Sx0O-Iy2rQ7Xz1lcaPKlO9eqmBRTBuW6XzkFtcjqxTjPaCMij8BVMdBcL9L_RwWNJyAHFQb0TRzXgyQvA"
+    }, 
+    "conversation": {
+        "isGroup": true,
+        "conversationType": "channel",
+        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+    },
+    "recipient": { 
+        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
+        "name": "SongsuggesterLocal"
+    },
+    "channelData": {
+        "team": {
+            "id": "19:efa9296d959346209fea44151c742e73@thread.skype",
+            "name": "Team Name"
+        },
+        "eventType": "teamArchived",
+        "tenant": { 
+           "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    }
+}
+```
+
+# <a name="python"></a>[<span data-ttu-id="949cb-226">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-226">Python</span></span>](#tab/python)
+
+```python
+async def on_teams_team_archived(
+    self, team_info: TeamInfo, turn_context: TurnContext
+):
+    return await turn_context.send_activity(
+        MessageFactory.text(f"The team name is {team_info.name}")
+    )
+```
+
+* * *
+
+### <a name="team-restored"></a><span data-ttu-id="949cb-227">Команда восстановлена</span><span class="sxs-lookup"><span data-stu-id="949cb-227">Team restored</span></span>
+
+<span data-ttu-id="949cb-228">Бот получает уведомление о восстановлении команды, в которая он установлен.</span><span class="sxs-lookup"><span data-stu-id="949cb-228">The bot receives a notification when the team it is installed in is restored.</span></span> <span data-ttu-id="949cb-229">Он получает событие `conversationUpdate` в `eventType.teamrestored` `channelData` объекте.</span><span class="sxs-lookup"><span data-stu-id="949cb-229">It receives a `conversationUpdate` event with `eventType.teamrestored` in the `channelData` object.</span></span>
+
+# <a name="cnet"></a>[<span data-ttu-id="949cb-230">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-230">C#/.NET</span></span>](#tab/dotnet)
+
+```csharp
+protected override async Task OnTeamsTeamrestoredAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    var heroCard = new HeroCard(text: $"{teamInfo.Name} is the team name");
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(heroCard.ToAttachment()), cancellationToken);
+}
+```
+
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-231">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-231">TypeScript/Node.js</span></span>](#tab/typescript)
+
+```typescript
+export class MyBot extends TeamsActivityHandler {
+    constructor() {
+        super();
+        this.onTeamsTeamrestoredEvent(async (teamInfo: TeamInfo, turnContext: TurnContext, next: () => Promise<void>): Promise<void> => {
+            const card = CardFactory.heroCard('Team restored', `${teamInfo.name} is the team name`);
+            const message = MessageFactory.attachment(card);
+            await turnContext.sendActivity(message);
+            await next();
+        });
+    }
+}
+```
+
+# <a name="json"></a>[<span data-ttu-id="949cb-232">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-232">JSON</span></span>](#tab/json)
+
+```json
+{ 
+    "type": "conversationUpdate",
+    "timestamp": "2017-02-23T19:35:56.825Z",
+    "localTimestamp": "2017-02-23T12:35:56.825-07:00",
+    "id": "f:1406033e",
+    "channelId": "msteams",
+    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/", 
+    "from": { 
+        "id": "29:1I9Is_Sx0O-Iy2rQ7Xz1lcaPKlO9eqmBRTBuW6XzkFtcjqxTjPaCMij8BVMdBcL9L_RwWNJyAHFQb0TRzXgyQvA"
+    }, 
+    "conversation": {
+        "isGroup": true,
+        "conversationType": "channel",
+        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+    },
+    "recipient": { 
+        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
+        "name": "SongsuggesterLocal"
+    },
+    "channelData": {
+        "team": {
+            "id": "19:efa9296d959346209fea44151c742e73@thread.skype",
+            "name": "Team Name"
+        },
+        "eventType": "teamrestored",
+        "tenant": { 
+           "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        }
+    }
+}
+```
+
+# <a name="python"></a>[<span data-ttu-id="949cb-233">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-233">Python</span></span>](#tab/python)
+
+```python
+async def on_teams_team_restored(
+    self, team_info: TeamInfo, turn_context: TurnContext
+):
+    return await turn_context.send_activity(
+        MessageFactory.text(f"The team name is {team_info.name}")
+    )
+```
+
+* * *
+
+## <a name="message-reaction-events"></a><span data-ttu-id="949cb-234">События реакции на сообщения</span><span class="sxs-lookup"><span data-stu-id="949cb-234">Message reaction events</span></span>
+
+<span data-ttu-id="949cb-235">Событие отправляется, когда пользователь добавляет или удаляет реакции на сообщение, `messageReaction` отправленное вашим ботом.</span><span class="sxs-lookup"><span data-stu-id="949cb-235">The `messageReaction` event is sent when a user adds or removes reactions to a message which was sent by your bot.</span></span> <span data-ttu-id="949cb-236">Содержит ИД конкретного сообщения и тип реакции в `replyToId` `Type` текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="949cb-236">The `replyToId` contains the ID of the specific message, and the `Type` is the type of reaction in text format.</span></span>  <span data-ttu-id="949cb-237">К типам реакции относятся : "за", "heart", "в", "like", "Прил", "удивитесь".</span><span class="sxs-lookup"><span data-stu-id="949cb-237">The types of reactions include: "angry", "heart", "laugh", "like", "Sad", "surprised".</span></span> <span data-ttu-id="949cb-238">Это событие не содержит содержимого исходного сообщения, поэтому если обработка реакции на ваши сообщения важна для вашего бота, вам потребуется сохранить сообщения при их отправке.</span><span class="sxs-lookup"><span data-stu-id="949cb-238">This event does not contain the contents of the original message, so if processing reactions to your messages is important for your bot you'll need to store the messages when you send them.</span></span>
+
+| <span data-ttu-id="949cb-239">EventType</span><span class="sxs-lookup"><span data-stu-id="949cb-239">EventType</span></span>       | <span data-ttu-id="949cb-240">Объект Payload</span><span class="sxs-lookup"><span data-stu-id="949cb-240">Payload object</span></span>   | <span data-ttu-id="949cb-241">Описание</span><span class="sxs-lookup"><span data-stu-id="949cb-241">Description</span></span>                                                             | <span data-ttu-id="949cb-242">Область</span><span class="sxs-lookup"><span data-stu-id="949cb-242">Scope</span></span> |
 | --------------- | ---------------- | ----------------------------------------------------------------------- | ----- |
-| <span data-ttu-id="0324b-204">мессажереактион</span><span class="sxs-lookup"><span data-stu-id="0324b-204">messageReaction</span></span> | <span data-ttu-id="0324b-205">реактионсаддед</span><span class="sxs-lookup"><span data-stu-id="0324b-205">reactionsAdded</span></span>   | [<span data-ttu-id="0324b-206">Реакция на сообщение Bot</span><span class="sxs-lookup"><span data-stu-id="0324b-206">Reaction to bot message</span></span>](#reactions-to-a-bot-message)                   | <span data-ttu-id="0324b-207">Все</span><span class="sxs-lookup"><span data-stu-id="0324b-207">All</span></span>   |
-| <span data-ttu-id="0324b-208">мессажереактион</span><span class="sxs-lookup"><span data-stu-id="0324b-208">messageReaction</span></span> | <span data-ttu-id="0324b-209">реактионсремовед</span><span class="sxs-lookup"><span data-stu-id="0324b-209">reactionsRemoved</span></span> | [<span data-ttu-id="0324b-210">Реакция, удаленная из сообщения Bot</span><span class="sxs-lookup"><span data-stu-id="0324b-210">Reaction removed from bot message</span></span>](#reactions-removed-from-bot-message) | <span data-ttu-id="0324b-211">Все</span><span class="sxs-lookup"><span data-stu-id="0324b-211">All</span></span>   |
+| <span data-ttu-id="949cb-243">messageReaction</span><span class="sxs-lookup"><span data-stu-id="949cb-243">messageReaction</span></span> | <span data-ttu-id="949cb-244">reactionsAdded</span><span class="sxs-lookup"><span data-stu-id="949cb-244">reactionsAdded</span></span>   | [<span data-ttu-id="949cb-245">Реакция на сообщение бота</span><span class="sxs-lookup"><span data-stu-id="949cb-245">Reaction to bot message</span></span>](#reactions-to-a-bot-message)                   | <span data-ttu-id="949cb-246">Все</span><span class="sxs-lookup"><span data-stu-id="949cb-246">All</span></span>   |
+| <span data-ttu-id="949cb-247">messageReaction</span><span class="sxs-lookup"><span data-stu-id="949cb-247">messageReaction</span></span> | <span data-ttu-id="949cb-248">reactionsRemoved</span><span class="sxs-lookup"><span data-stu-id="949cb-248">reactionsRemoved</span></span> | [<span data-ttu-id="949cb-249">Реакция, удаленная из сообщения бота</span><span class="sxs-lookup"><span data-stu-id="949cb-249">Reaction removed from bot message</span></span>](#reactions-removed-from-bot-message) | <span data-ttu-id="949cb-250">Все</span><span class="sxs-lookup"><span data-stu-id="949cb-250">All</span></span>   |
 
-### <a name="reactions-to-a-bot-message"></a><span data-ttu-id="0324b-212">Реакции на сообщение Bot</span><span class="sxs-lookup"><span data-stu-id="0324b-212">Reactions to a bot message</span></span>
+### <a name="reactions-to-a-bot-message"></a><span data-ttu-id="949cb-251">Реакции на сообщение бота</span><span class="sxs-lookup"><span data-stu-id="949cb-251">Reactions to a bot message</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-213">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-213">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-252">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-252">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnReactionsAddedAsync(IList<MessageReaction> messageReactions, ITurnContext<IMessageReactionActivity> turnContext, CancellationToken cancellationToken)
@@ -641,7 +893,7 @@ protected override async Task OnReactionsAddedAsync(IList<MessageReaction> messa
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-214">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-214">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-253">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-253">TypeScript/Node.js</span></span>](#tab/typescript)
 
 <!-- Verify -->
 
@@ -666,7 +918,7 @@ export class MyBot extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-215">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-215">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-254">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-254">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -711,7 +963,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="python"></a>[<span data-ttu-id="0324b-216">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-216">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-255">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-255">Python</span></span>](#tab/python)
 
 ```python
 async def on_reactions_added(
@@ -734,9 +986,9 @@ async def on_reactions_added(
 
 * * *
 
-### <a name="reactions-removed-from-bot-message"></a><span data-ttu-id="0324b-217">Реакции, удаленные из сообщения Bot</span><span class="sxs-lookup"><span data-stu-id="0324b-217">Reactions removed from bot message</span></span>
+### <a name="reactions-removed-from-bot-message"></a><span data-ttu-id="949cb-256">Реакции удалены из сообщения бота</span><span class="sxs-lookup"><span data-stu-id="949cb-256">Reactions removed from bot message</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="0324b-218">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="0324b-218">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="949cb-257">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="949cb-257">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task OnReactionsRemovedAsync(IList<MessageReaction> messageReactions, ITurnContext<IMessageReactionActivity> turnContext, CancellationToken cancellationToken)
@@ -750,7 +1002,7 @@ protected override async Task OnReactionsRemovedAsync(IList<MessageReaction> mes
 }
 ```
 
-# <a name="typescriptnodejs"></a>[<span data-ttu-id="0324b-219">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="0324b-219">TypeScript/Node.js</span></span>](#tab/typescript)
+# <a name="typescriptnodejs"></a>[<span data-ttu-id="949cb-258">TypeScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="949cb-258">TypeScript/Node.js</span></span>](#tab/typescript)
 
 <!-- Verify -->
 
@@ -773,7 +1025,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="0324b-220">JSON</span><span class="sxs-lookup"><span data-stu-id="0324b-220">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="949cb-259">JSON</span><span class="sxs-lookup"><span data-stu-id="949cb-259">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -818,7 +1070,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="python"></a>[<span data-ttu-id="0324b-221">Python</span><span class="sxs-lookup"><span data-stu-id="0324b-221">Python</span></span>](#tab/python)
+# <a name="python"></a>[<span data-ttu-id="949cb-260">Python</span><span class="sxs-lookup"><span data-stu-id="949cb-260">Python</span></span>](#tab/python)
 
 ```python
 async def on_reactions_removed(
