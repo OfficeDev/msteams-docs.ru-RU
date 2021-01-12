@@ -3,12 +3,12 @@ title: Отправка сообщений соединителям и веб-п
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 localization_priority: Priority
 keywords: соединитель teams o365
-ms.openlocfilehash: e14b02a5a93d10feca49b6dcd653979aa9a94370
-ms.sourcegitcommit: c102da958759c13aa9e0f81bde1cffb34a8bef34
+ms.openlocfilehash: 0cc53fa6110247e02582474ef4781a05af2a8fac
+ms.sourcegitcommit: 5687a901d48bcf2f5a3a086e0f703f854e8b9c21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604482"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49795477"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -67,6 +67,11 @@ ms.locfileid: "49604482"
             "name": "Save",
             "target": "http://..."
         }]
+        {
+            "@type": "OpenUri",
+            "name": "Learn More",
+            "targets": [{ "os": "default", "uri": "https://docs.microsoft.com/outlook/actionable-messages" }]
+        }
     }, {
         "@type": "ActionCard",
         "name": "Change status",
@@ -108,8 +113,6 @@ ms.locfileid: "49604482"
 - `ActionCard`: представляет один или несколько типов входных данных и соответствующие действия;
 - `HttpPOST`: отправляет запрос POST на URL-адрес;
 - `OpenUri`: открывает URI в отдельном браузере или приложении; при необходимости ссылается на разные URI в зависимости от операционной системы.
-
-(Четвертое действие, `ViewAction`, также поддерживается, но больше не требуется. Используйте вместо него действие `OpenUri`.)
 
 Действие `ActionCard` поддерживает три типа входных данных:
 
