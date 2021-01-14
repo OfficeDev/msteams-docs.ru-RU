@@ -1,43 +1,46 @@
 ---
 title: Развернуть ссылку
 author: clearab
-description: Порядок выполнения ссылок унфурлинг с расширением обмена сообщениями в приложении Microsoft Teams.
+description: Как выполнить размевание ссылок с расширением обмена сообщениями в приложении Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 32d19fcd44f2475047539350706d2745aeec3691
-ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
+ms.openlocfilehash: 0d488638e63b8ec78bfa5bed8cf6f4f037883fb1
+ms.sourcegitcommit: bf61ae5ad2afa4efdb0311158184d0cbb9c40174
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46587806"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845639"
 ---
-# <a name="link-unfurling"></a><span data-ttu-id="4b728-103">Развернуть ссылку</span><span class="sxs-lookup"><span data-stu-id="4b728-103">Link unfurling</span></span>
+# <a name="link-unfurling"></a><span data-ttu-id="96f3d-103">Развернуть ссылку</span><span class="sxs-lookup"><span data-stu-id="96f3d-103">Link unfurling</span></span>
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
 > [!NOTE]
-> <span data-ttu-id="4b728-104">В настоящее время ссылки унфурлинг не поддерживаются на мобильных клиентах.</span><span class="sxs-lookup"><span data-stu-id="4b728-104">Currently, Link unfurling is not supported on Mobile clients.</span></span>
+> <span data-ttu-id="96f3d-104">В настоящее время unfurling ссылок не поддерживается на мобильных клиентах.</span><span class="sxs-lookup"><span data-stu-id="96f3d-104">Currently, Link unfurling is not supported on Mobile clients.</span></span>
 
-<span data-ttu-id="4b728-105">С помощью Link унфурлинг приложение может зарегистрироваться для получения `invoke` действия при вставке URL-адресов с определенным доменом в область "Создание сообщения".</span><span class="sxs-lookup"><span data-stu-id="4b728-105">With link unfurling your app can register to receive an `invoke` activity when URLs with a particular domain are pasted into the compose message area.</span></span> <span data-ttu-id="4b728-106">В нем `invoke` будет содержаться полный URL-адрес, который был вставлен в область сообщений, и вы можете ответить на карточку, которая может *унфурл*пользователь, предоставляя дополнительные сведения или действия.</span><span class="sxs-lookup"><span data-stu-id="4b728-106">The `invoke` will contain the full URL that was pasted into the compose message area, and you can respond with a card the user can *unfurl*, providing additional information or actions.</span></span> <span data-ttu-id="4b728-107">Это аналогично [команде поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)с URL-адресом в качестве условия поиска.</span><span class="sxs-lookup"><span data-stu-id="4b728-107">This works very similarly to a [search command](~/messaging-extensions/how-to/search-commands/define-search-command.md), with the URL serving as the search term.</span></span>
+<span data-ttu-id="96f3d-105">При отображении ссылки ваше приложение может зарегистрироваться для получения действия, когда URL-адреса с определенным доменом в pasted в область `invoke` составить сообщение.</span><span class="sxs-lookup"><span data-stu-id="96f3d-105">With link unfurling your app can register to receive an `invoke` activity when URLs with a particular domain are pasted into the compose message area.</span></span> <span data-ttu-id="96f3d-106">The `invoke` will contain the full URL that was pasted into the compose message area, and you can respond with a card the user can *unfurl,* providing additional information or actions.</span><span class="sxs-lookup"><span data-stu-id="96f3d-106">The `invoke` will contain the full URL that was pasted into the compose message area, and you can respond with a card the user can *unfurl*, providing additional information or actions.</span></span> <span data-ttu-id="96f3d-107">Это очень похоже на команду поиска [с](~/messaging-extensions/how-to/search-commands/define-search-command.md)URL-адресом, который служит термином поиска.</span><span class="sxs-lookup"><span data-stu-id="96f3d-107">This works very similarly to a [search command](~/messaging-extensions/how-to/search-commands/define-search-command.md), with the URL serving as the search term.</span></span>
 
-<span data-ttu-id="4b728-108">Модуль обмена сообщениями Azure DevOps использует Link унфурлинг для поиска URL-адресов, вставленных в область сообщений, указывающую на рабочий элемент.</span><span class="sxs-lookup"><span data-stu-id="4b728-108">The Azure DevOps messaging extension uses link unfurling to look for URLs pasted into the compose message area pointing to a work item.</span></span> <span data-ttu-id="4b728-109">На снимке экрана ниже пользователь вставил в URL-адрес рабочего элемента в Azure DevOps, который разрешал расширение обмена сообщениями в карточке.</span><span class="sxs-lookup"><span data-stu-id="4b728-109">In the screenshot below, a user has pasted in a URL for a work item in Azure DevOps which the messaging extension has resolved into a card.</span></span>
+<span data-ttu-id="96f3d-108">Расширение обмена сообщениями Azure DevOps использует размежевание ссылок для искомых URL-адресов, вкопив их в область сообщения составить, указывав на рабочий элемент.</span><span class="sxs-lookup"><span data-stu-id="96f3d-108">The Azure DevOps messaging extension uses link unfurling to look for URLs pasted into the compose message area pointing to a work item.</span></span> <span data-ttu-id="96f3d-109">На снимке экрана ниже пользователь вошел в URL-адрес для элемента работы в Azure DevOps, который расширение обмена сообщениями разрешено в карточку.</span><span class="sxs-lookup"><span data-stu-id="96f3d-109">In the screenshot below, a user has pasted in a URL for a work item in Azure DevOps which the messaging extension has resolved into a card.</span></span>
 
-![Пример ссылки унфурлинг](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
+![Пример стирки ссылок](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
 
-## <a name="add-link-unfurling-to-your-app-manifest"></a><span data-ttu-id="4b728-111">Добавление ссылки унфурлинг к манифесту приложения</span><span class="sxs-lookup"><span data-stu-id="4b728-111">Add link unfurling to your app manifest</span></span>
+## <a name="add-link-unfurling-to-your-app-manifest"></a><span data-ttu-id="96f3d-111">Добавление unfurling ссылки в манифест приложения</span><span class="sxs-lookup"><span data-stu-id="96f3d-111">Add link unfurling to your app manifest</span></span>
 
-<span data-ttu-id="4b728-112">Для этого мы добавим новый `messageHandlers` массив в `composeExtensions` раздел JSON манифеста приложения.</span><span class="sxs-lookup"><span data-stu-id="4b728-112">To do this you'll add a new `messageHandlers` array to the `composeExtensions` section of your app manifest JSON.</span></span> <span data-ttu-id="4b728-113">Это можно сделать с помощью App Studio или вручную.</span><span class="sxs-lookup"><span data-stu-id="4b728-113">You can either do so with the help of App Studio, or manually.</span></span> <span data-ttu-id="4b728-114">Примеры доменов могут включать подстановочные знаки `*.example.com` .</span><span class="sxs-lookup"><span data-stu-id="4b728-114">Domain listings can include wildcards, for example `*.example.com`.</span></span> <span data-ttu-id="4b728-115">Это соответствует только одному сегменту домена; Если вам нужно использовать этот параметр `a.b.example.com` `*.*.example.com` .</span><span class="sxs-lookup"><span data-stu-id="4b728-115">This matches exactly one segment of the domain; if you need to match `a.b.example.com` then use `*.*.example.com`.</span></span>
+ <span data-ttu-id="96f3d-112">Чтобы добавить размечение ссылок в манифест приложения, добавьте новый массив в раздел манифеста `messageHandlers` `composeExtensions` приложения JSON.</span><span class="sxs-lookup"><span data-stu-id="96f3d-112">To add link unfurling to your app manifest add a new `messageHandlers` array to the `composeExtensions` section of your app manifest JSON.</span></span> <span data-ttu-id="96f3d-113">Вы можете добавить массив с помощью App Studio или вручную.</span><span class="sxs-lookup"><span data-stu-id="96f3d-113">You can add the array either with the help of App Studio or manually.</span></span> <span data-ttu-id="96f3d-114">В списки доменов могут включались поддеревные знаки, `*.example.com` например.</span><span class="sxs-lookup"><span data-stu-id="96f3d-114">Domain listings can include wildcards, for example `*.example.com`.</span></span> <span data-ttu-id="96f3d-115">Это соответствует только одному сегменту домена; если вам нужно найти `a.b.example.com` соответствие, используйте `*.*.example.com` .</span><span class="sxs-lookup"><span data-stu-id="96f3d-115">This matches exactly one segment of the domain; if you need to match `a.b.example.com` then use `*.*.example.com`.</span></span>
 
-### <a name="using-app-studio"></a><span data-ttu-id="4b728-116">Использование App Studio</span><span class="sxs-lookup"><span data-stu-id="4b728-116">Using App Studio</span></span>
+> [!NOTE]
+> <span data-ttu-id="96f3d-116">Не добавляйте домены, которые находятся вне вашего контроля, напрямую или с помощью поддиаконов.</span><span class="sxs-lookup"><span data-stu-id="96f3d-116">Do not add domains that are outside your control, either directly or through wildcards.</span></span> <span data-ttu-id="96f3d-117">Например, yourapp.onmicrosoft.com допустимый, но \*.onmicrosoft.com не является допустимым.</span><span class="sxs-lookup"><span data-stu-id="96f3d-117">For example, yourapp.onmicrosoft.com is valid, but \*.onmicrosoft.com is not valid.</span></span> <span data-ttu-id="96f3d-118">Кроме того, домены верхнего уровня запрещены.</span><span class="sxs-lookup"><span data-stu-id="96f3d-118">Also, the top-level domains are prohibited.</span></span> <span data-ttu-id="96f3d-119">Например, \*.com, \*.org.</span><span class="sxs-lookup"><span data-stu-id="96f3d-119">For example, \*.com, \*.org.</span></span>
 
-1. <span data-ttu-id="4b728-117">В App Studio на вкладке редактор манифеста Загрузите манифест приложения.</span><span class="sxs-lookup"><span data-stu-id="4b728-117">In App Studio, on the Manifest editor tab, load your app manifest.</span></span>
-1. <span data-ttu-id="4b728-118">На странице **расширение системы обмена сообщениями** добавьте домен, который вы хотите найти, в раздел **обработчики сообщений** , как показано на снимке экрана ниже.</span><span class="sxs-lookup"><span data-stu-id="4b728-118">On the **Messaging Extension** page, add the domain you want to look for in the **Message handlers** section as in the screenshot below.</span></span>
+### <a name="using-app-studio"></a><span data-ttu-id="96f3d-120">Использование App Studio</span><span class="sxs-lookup"><span data-stu-id="96f3d-120">Using App Studio</span></span>
 
-![раздел обработчиков сообщений в App Studio](~/assets/images/link-unfurling.png)
+1. <span data-ttu-id="96f3d-121">В App Studio на вкладке редактора манифеста загрузите манифест приложения.</span><span class="sxs-lookup"><span data-stu-id="96f3d-121">In App Studio, on the Manifest editor tab, load your app manifest.</span></span>
+1. <span data-ttu-id="96f3d-122">На странице **"Расширение обмена** сообщениями" добавьте домен,  который нужно найти, в разделе "Обработчики сообщений", как по снимку экрана ниже.</span><span class="sxs-lookup"><span data-stu-id="96f3d-122">On the **Messaging Extension** page, add the domain you want to look for in the **Message handlers** section as in the screenshot below.</span></span>
 
-### <a name="manually"></a><span data-ttu-id="4b728-120">Вручную</span><span class="sxs-lookup"><span data-stu-id="4b728-120">Manually</span></span>
+![Раздел обработчиков сообщений в App Studio](~/assets/images/link-unfurling.png)
 
-<span data-ttu-id="4b728-121">Чтобы разрешить своему расширению обмена сообщениями взаимодействовать с ссылками таким способом, сначала необходимо добавить `messageHandlers` массив в манифест приложения, как показано в примере ниже.</span><span class="sxs-lookup"><span data-stu-id="4b728-121">To enable your messaging extension to interact with links this way you'll first need to add the `messageHandlers` array to your app manifest as in the example below.</span></span> <span data-ttu-id="4b728-122">Этот пример не является полным манифестом, в статье [Справочник по манифесту](~/resources/schema/manifest-schema.md) представлен полный пример манифеста.</span><span class="sxs-lookup"><span data-stu-id="4b728-122">This example is not the complete manifest, see [manifest reference](~/resources/schema/manifest-schema.md) for a complete manifest example.</span></span>
+### <a name="manually"></a><span data-ttu-id="96f3d-124">Вручную</span><span class="sxs-lookup"><span data-stu-id="96f3d-124">Manually</span></span>
+
+<span data-ttu-id="96f3d-125">Чтобы расширение обмена сообщениями таким образом взаимодействовало со ссылками, сначала необходимо добавить массив в манифест приложения, как по примеру `messageHandlers` ниже.</span><span class="sxs-lookup"><span data-stu-id="96f3d-125">To enable your messaging extension to interact with links this way you'll first need to add the `messageHandlers` array to your app manifest as in the example below.</span></span> <span data-ttu-id="96f3d-126">Этот пример не является полным [](~/resources/schema/manifest-schema.md) манифестом. Полный пример манифеста см. в справке по манифесту.</span><span class="sxs-lookup"><span data-stu-id="96f3d-126">This example is not the complete manifest, see [manifest reference](~/resources/schema/manifest-schema.md) for a complete manifest example.</span></span>
 
 ```json
 ...
@@ -59,20 +62,20 @@ ms.locfileid: "46587806"
 ...
 ```
 
-## <a name="handle-the-composeextensionquerylink-invoke"></a><span data-ttu-id="4b728-123">Обработка `composeExtension/queryLink` вызова</span><span class="sxs-lookup"><span data-stu-id="4b728-123">Handle the `composeExtension/queryLink` invoke</span></span>
+## <a name="handle-the-composeextensionquerylink-invoke"></a><span data-ttu-id="96f3d-127">Обработка `composeExtension/queryLink` вызова</span><span class="sxs-lookup"><span data-stu-id="96f3d-127">Handle the `composeExtension/queryLink` invoke</span></span>
 
-<span data-ttu-id="4b728-124">Добавив домен для прослушивания манифеста приложения, вам потребуется обновить код веб-службы, чтобы обработать запрос Invoke.</span><span class="sxs-lookup"><span data-stu-id="4b728-124">Once you've added the domain to listen on to the app manifest, you'll need to update your web service code to handle the invoke request.</span></span> <span data-ttu-id="4b728-125">Используйте полученный URL-адрес для поиска службы и создания ответа на карту.</span><span class="sxs-lookup"><span data-stu-id="4b728-125">Use the URL you receive to search your service and create a card response.</span></span> <span data-ttu-id="4b728-126">Если вы отдаете ответ с несколькими картами, будет использоваться только первый из них.</span><span class="sxs-lookup"><span data-stu-id="4b728-126">If you respond with more than one card, only the first will be used.</span></span>
+<span data-ttu-id="96f3d-128">После того как вы добавите домен для прослушивания манифеста приложения, вам потребуется обновить код веб-службы для обработки запроса на вызов.</span><span class="sxs-lookup"><span data-stu-id="96f3d-128">Once you've added the domain to listen on to the app manifest, you'll need to update your web service code to handle the invoke request.</span></span> <span data-ttu-id="96f3d-129">Используйте URL-адрес, который вы получаете, чтобы найти службу и создать ответ на карточку.</span><span class="sxs-lookup"><span data-stu-id="96f3d-129">Use the URL you receive to search your service and create a card response.</span></span> <span data-ttu-id="96f3d-130">Если вы отвечаете с помощью более одной карточки, будет использоваться только первая.</span><span class="sxs-lookup"><span data-stu-id="96f3d-130">If you respond with more than one card, only the first will be used.</span></span>
 
-<span data-ttu-id="4b728-127">Поддерживаются следующие типы карточек:</span><span class="sxs-lookup"><span data-stu-id="4b728-127">We support the following card types:</span></span>
+<span data-ttu-id="96f3d-131">Поддерживаются следующие типы карт:</span><span class="sxs-lookup"><span data-stu-id="96f3d-131">We support the following card types:</span></span>
 
-* [<span data-ttu-id="4b728-128">Карточка эскиза</span><span class="sxs-lookup"><span data-stu-id="4b728-128">Thumbnail card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
-* [<span data-ttu-id="4b728-129">Карточка главный Имиджевый баннер</span><span class="sxs-lookup"><span data-stu-id="4b728-129">Hero card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [<span data-ttu-id="4b728-130">Соединительная карта Office 365</span><span class="sxs-lookup"><span data-stu-id="4b728-130">Office 365 Connector card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
-* [<span data-ttu-id="4b728-131">Адаптивная карта</span><span class="sxs-lookup"><span data-stu-id="4b728-131">Adaptive Card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
+* [<span data-ttu-id="96f3d-132">Эскиз карточки</span><span class="sxs-lookup"><span data-stu-id="96f3d-132">Thumbnail card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
+* [<span data-ttu-id="96f3d-133">Карточка "Главного"</span><span class="sxs-lookup"><span data-stu-id="96f3d-133">Hero card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
+* [<span data-ttu-id="96f3d-134">Карточка соединители Office 365</span><span class="sxs-lookup"><span data-stu-id="96f3d-134">Office 365 Connector card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [<span data-ttu-id="96f3d-135">Адаптивная карточка</span><span class="sxs-lookup"><span data-stu-id="96f3d-135">Adaptive Card</span></span>](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
-<span data-ttu-id="4b728-132">Посмотрите [, что представляют собой карточки](~/task-modules-and-cards/what-are-cards.md) для обзора.</span><span class="sxs-lookup"><span data-stu-id="4b728-132">See [What are cards](~/task-modules-and-cards/what-are-cards.md) for an overview.</span></span>
+<span data-ttu-id="96f3d-136">См. [обзор карточек.](~/task-modules-and-cards/what-are-cards.md)</span><span class="sxs-lookup"><span data-stu-id="96f3d-136">See [What are cards](~/task-modules-and-cards/what-are-cards.md) for an overview.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="4b728-133">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="4b728-133">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="96f3d-137">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="96f3d-137">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionResponse> OnTeamsAppBasedLinkQueryAsync(ITurnContext<IInvokeActivity> turnContext, AppBasedLinkQuery query, CancellationToken cancellationToken)
@@ -92,7 +95,7 @@ protected override async Task<MessagingExtensionResponse> OnTeamsAppBasedLinkQue
 }
 ```
 
-# <a name="javascriptnodejs"></a>[<span data-ttu-id="4b728-134">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="4b728-134">JavaScript/Node.js</span></span>](#tab/javascript)
+# <a name="javascriptnodejs"></a>[<span data-ttu-id="96f3d-138">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="96f3d-138">JavaScript/Node.js</span></span>](#tab/javascript)
 
 ```javascript
 class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
@@ -115,9 +118,9 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="4b728-135">JSON</span><span class="sxs-lookup"><span data-stu-id="4b728-135">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="96f3d-139">JSON</span><span class="sxs-lookup"><span data-stu-id="96f3d-139">JSON</span></span>](#tab/json)
 
-<span data-ttu-id="4b728-136">Это пример `invoke` сообщения, отправленного в Bot.</span><span class="sxs-lookup"><span data-stu-id="4b728-136">This is an example of the `invoke` sent to your bot.</span></span>
+<span data-ttu-id="96f3d-140">Это пример отправленного `invoke` боту.</span><span class="sxs-lookup"><span data-stu-id="96f3d-140">This is an example of the `invoke` sent to your bot.</span></span>
 
 ```json
 {
@@ -129,7 +132,7 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 }
 ```
 
-<span data-ttu-id="4b728-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4b728-137">An example of the response is shown below.</span></span>
+<span data-ttu-id="96f3d-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="96f3d-141">An example of the response is shown below.</span></span>
 
 ```json
 {
