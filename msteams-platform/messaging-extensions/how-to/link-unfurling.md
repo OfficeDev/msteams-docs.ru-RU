@@ -1,43 +1,46 @@
 ---
 title: Развернуть ссылку
 author: clearab
-description: Порядок выполнения ссылок унфурлинг с расширением обмена сообщениями в приложении Microsoft Teams.
+description: Как выполнить размевание ссылок с расширением обмена сообщениями в приложении Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 32d19fcd44f2475047539350706d2745aeec3691
-ms.sourcegitcommit: 7a2da3b65246a125d441a971e7e6a6418355adbe
+ms.openlocfilehash: 0d488638e63b8ec78bfa5bed8cf6f4f037883fb1
+ms.sourcegitcommit: bf61ae5ad2afa4efdb0311158184d0cbb9c40174
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46587806"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845639"
 ---
 # <a name="link-unfurling"></a>Развернуть ссылку
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
 > [!NOTE]
-> В настоящее время ссылки унфурлинг не поддерживаются на мобильных клиентах.
+> В настоящее время unfurling ссылок не поддерживается на мобильных клиентах.
 
-С помощью Link унфурлинг приложение может зарегистрироваться для получения `invoke` действия при вставке URL-адресов с определенным доменом в область "Создание сообщения". В нем `invoke` будет содержаться полный URL-адрес, который был вставлен в область сообщений, и вы можете ответить на карточку, которая может *унфурл*пользователь, предоставляя дополнительные сведения или действия. Это аналогично [команде поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)с URL-адресом в качестве условия поиска.
+При отображении ссылки ваше приложение может зарегистрироваться для получения действия, когда URL-адреса с определенным доменом в pasted в область `invoke` составить сообщение. The `invoke` will contain the full URL that was pasted into the compose message area, and you can respond with a card the user can *unfurl,* providing additional information or actions. Это очень похоже на команду поиска [с](~/messaging-extensions/how-to/search-commands/define-search-command.md)URL-адресом, который служит термином поиска.
 
-Модуль обмена сообщениями Azure DevOps использует Link унфурлинг для поиска URL-адресов, вставленных в область сообщений, указывающую на рабочий элемент. На снимке экрана ниже пользователь вставил в URL-адрес рабочего элемента в Azure DevOps, который разрешал расширение обмена сообщениями в карточке.
+Расширение обмена сообщениями Azure DevOps использует размежевание ссылок для искомых URL-адресов, вкопив их в область сообщения составить, указывав на рабочий элемент. На снимке экрана ниже пользователь вошел в URL-адрес для элемента работы в Azure DevOps, который расширение обмена сообщениями разрешено в карточку.
 
-![Пример ссылки унфурлинг](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
+![Пример стирки ссылок](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
 
-## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление ссылки унфурлинг к манифесту приложения
+## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление unfurling ссылки в манифест приложения
 
-Для этого мы добавим новый `messageHandlers` массив в `composeExtensions` раздел JSON манифеста приложения. Это можно сделать с помощью App Studio или вручную. Примеры доменов могут включать подстановочные знаки `*.example.com` . Это соответствует только одному сегменту домена; Если вам нужно использовать этот параметр `a.b.example.com` `*.*.example.com` .
+ Чтобы добавить размечение ссылок в манифест приложения, добавьте новый массив в раздел манифеста `messageHandlers` `composeExtensions` приложения JSON. Вы можете добавить массив с помощью App Studio или вручную. В списки доменов могут включались поддеревные знаки, `*.example.com` например. Это соответствует только одному сегменту домена; если вам нужно найти `a.b.example.com` соответствие, используйте `*.*.example.com` .
+
+> [!NOTE]
+> Не добавляйте домены, которые находятся вне вашего контроля, напрямую или с помощью поддиаконов. Например, yourapp.onmicrosoft.com допустимый, но *.onmicrosoft.com не является допустимым. Кроме того, домены верхнего уровня запрещены. Например, *.com, *.org.
 
 ### <a name="using-app-studio"></a>Использование App Studio
 
-1. В App Studio на вкладке редактор манифеста Загрузите манифест приложения.
-1. На странице **расширение системы обмена сообщениями** добавьте домен, который вы хотите найти, в раздел **обработчики сообщений** , как показано на снимке экрана ниже.
+1. В App Studio на вкладке редактора манифеста загрузите манифест приложения.
+1. На странице **"Расширение обмена** сообщениями" добавьте домен,  который нужно найти, в разделе "Обработчики сообщений", как по снимку экрана ниже.
 
-![раздел обработчиков сообщений в App Studio](~/assets/images/link-unfurling.png)
+![Раздел обработчиков сообщений в App Studio](~/assets/images/link-unfurling.png)
 
 ### <a name="manually"></a>Вручную
 
-Чтобы разрешить своему расширению обмена сообщениями взаимодействовать с ссылками таким способом, сначала необходимо добавить `messageHandlers` массив в манифест приложения, как показано в примере ниже. Этот пример не является полным манифестом, в статье [Справочник по манифесту](~/resources/schema/manifest-schema.md) представлен полный пример манифеста.
+Чтобы расширение обмена сообщениями таким образом взаимодействовало со ссылками, сначала необходимо добавить массив в манифест приложения, как по примеру `messageHandlers` ниже. Этот пример не является полным [](~/resources/schema/manifest-schema.md) манифестом. Полный пример манифеста см. в справке по манифесту.
 
 ```json
 ...
@@ -61,16 +64,16 @@ ms.locfileid: "46587806"
 
 ## <a name="handle-the-composeextensionquerylink-invoke"></a>Обработка `composeExtension/queryLink` вызова
 
-Добавив домен для прослушивания манифеста приложения, вам потребуется обновить код веб-службы, чтобы обработать запрос Invoke. Используйте полученный URL-адрес для поиска службы и создания ответа на карту. Если вы отдаете ответ с несколькими картами, будет использоваться только первый из них.
+После того как вы добавите домен для прослушивания манифеста приложения, вам потребуется обновить код веб-службы для обработки запроса на вызов. Используйте URL-адрес, который вы получаете, чтобы найти службу и создать ответ на карточку. Если вы отвечаете с помощью более одной карточки, будет использоваться только первая.
 
-Поддерживаются следующие типы карточек:
+Поддерживаются следующие типы карт:
 
-* [Карточка эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
-* [Карточка главный Имиджевый баннер](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Соединительная карта Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
-* [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
+* [Эскиз карточки](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
+* [Карточка "Главного"](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
+* [Карточка соединители Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Адаптивная карточка](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
-Посмотрите [, что представляют собой карточки](~/task-modules-and-cards/what-are-cards.md) для обзора.
+См. [обзор карточек.](~/task-modules-and-cards/what-are-cards.md)
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -117,7 +120,7 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Это пример `invoke` сообщения, отправленного в Bot.
+Это пример отправленного `invoke` боту.
 
 ```json
 {
