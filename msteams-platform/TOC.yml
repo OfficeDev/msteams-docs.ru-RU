@@ -34,19 +34,19 @@
       items:
         - name: Чатбот с C# (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot'
-        - name: Чатбот с JavaScript (GitHub)
+        - name: Чатбот с Node.js (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot'
         - name: Чатбот с Python (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot'
     - name: Образцы расширения для обмена сообщениями
       items:
-        - name: Команды действий с C#/.NET (GitHub)
+        - name: Команды действий с C# (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/51.teams-messaging-extensions-action'
-        - name: Команды действий с TypeScript или Node.js (GitHub)
+        - name: Команды действий с Node.js (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/51.teams-messaging-extensions-action'
-        - name: Команды поиска с C#/.NET (GitHub)
+        - name: Команды поиска с C# (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/50.teams-messaging-extensions-search'
-        - name: Команды поиска с TypeScript или Node.js (GitHub)
+        - name: Команды поиска с Node.js (GitHub)
           href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search'
 - name: Основные сведения о приложении
   items:
@@ -126,12 +126,14 @@
       href: 'https://github.com/pnp/generator-teams'
     - name: App Studio
       href: concepts/build-and-test/app-studio-overview.md
+    - name: Клиентский SDK JavaScript для Teams
+      href: tabs/how-to/using-teams-client-sdk.md
     - name: Пакеты Node.js Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-js'
     - name: Пакеты .NET Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-dotnet'
     - name: Пакеты SDK Microsoft Graph
-      href: 'https://docs.microsoft.com/en-us/graph/sdks/sdks-overview'
+      href: 'https://docs.microsoft.com/graph/sdks/sdks-overview'
     - name: Устаревшие пакеты SDK
       items:
         - name: Боты пакета SDK (v3)
@@ -182,15 +184,15 @@
       href: tabs/what-are-tabs.md
     - name: Примеры использования
       items:
-        - name: Вкладка "Личное" с Node.js или React
+        - name: Вкладка "Личное" с Node.js
           href: tabs/quickstarts/create-personal-tab-node-yeoman.md
-        - name: Вкладка "Личное" с C# или ядром ASP.NET
+        - name: Вкладка "Личное" с C# или ASP.NET Core
           href: tabs/quickstarts/create-personal-tab-dotnet-core.md
-        - name: Вкладка "Личное" с C# или ASP.NET MVC
+        - name: Вкладка "Личное" с C# или ASP.NET Core MVC
           href: tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md
-        - name: Вкладка "Канал" с Node.js или React
+        - name: Вкладка "Канал" с Node.js
           href: tabs/quickstarts/create-channel-group-tab-node-yeoman.md
-        - name: Вкладка "Канал" с C# или ядром ASP.NET
+        - name: Вкладка "Канал" с C# или ASP.NET Core
           href: tabs/quickstarts/create-channel-group-tab-dotnet-core.md
         - name: Вкладка "Канал" с C# или ASP.NET MVC
           href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
@@ -200,9 +202,7 @@
       href: tabs/how-to/create-tab-pages/configuration-page.md
     - name: Создать страницу удаления
       href: tabs/how-to/create-tab-pages/removal-page.md
-    - name: Использование клиентского SDK JavaScript для Teams
-      href: tabs/how-to/using-teams-client-sdk.md
-    - name: Получение дополнительного контекста
+    - name: Получение контекста для вкладки
       href: tabs/how-to/access-teams-context.md
 - name: Боты сборки
   items:
