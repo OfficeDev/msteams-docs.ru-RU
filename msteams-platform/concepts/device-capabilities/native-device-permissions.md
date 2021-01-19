@@ -2,16 +2,16 @@
 title: Запрос разрешений устройства для вкладки Microsoft Teams
 description: Обновление манифеста приложения для запроса доступа к функциям, которые обычно требуют согласия пользователя
 keywords: Разработка вкладок teams
-ms.openlocfilehash: 6be183d2610616f3bd3bdf32554976322193c132
-ms.sourcegitcommit: d0e71ea63af2f67eba75ba283ec46cc7cdf87d75
+ms.openlocfilehash: b021ae4ae8b50ddd1f3603f696922c129eb25f10
+ms.sourcegitcommit: 84f408aa2854aa7a5cefaa66ce9a373b19e0864a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731981"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "49886746"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-tab"></a>Запрос разрешений устройства для вкладки Microsoft Teams
 
-Возможно, вы захотите расширить вкладку функциями, которые требуют доступа к функциям нативных устройств, например:
+Возможно, вы захотите расширить вкладку с помощью функций, которые требуют доступа к функциям нативных устройств, например:
 
 > [!div class="checklist"]
 >
@@ -20,13 +20,14 @@ ms.locfileid: "49731981"
 > * Расположение
 > * Уведомления
 
-[!Note] Чтобы интегрировать возможности камеры и изображений в мобильном приложении Microsoft Teams, обратитесь к возможностям камеры и [изображений в Teams.](../../concepts/device-capabilities/mobile-camera-image-permissions.md)
+> [!NOTE]
+> Чтобы интегрировать возможности камеры и изображений в мобильном приложении Microsoft Teams, см. функции камеры и [изображений в Teams.](../../concepts/device-capabilities/mobile-camera-image-permissions.md)
 
 > [!IMPORTANT]
 >
 > * В настоящее время мобильный клиент Teams поддерживает только доступ к возможностям , и через возможности нативных устройств и доступен во всех конструкциях приложения, включая `camera` `gallery` `mic` `location` вкладки. </br>
 > * Поддержка `camera` , `gallery` и `mic` включена через [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true). Для одного захвата изображения можно использовать [**API captureImage.**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true)
-> * Поддержка `location` включена с помощью [**API getLocation.**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) Рекомендуется использовать этот API, так как [**API**](../../resources/schema/manifest-schema.md#devicepermissions) географического местонахождения в настоящее время не полностью поддерживается на всех классических клиентах.
+> * Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) Рекомендуется использовать этот API, так как В настоящее время [**API**](../../resources/schema/manifest-schema.md#devicepermissions) географического местонахождения не полностью поддерживается на всех классических клиентах.
 
 ## <a name="device-permissions"></a>Разрешения для устройств
 
@@ -119,13 +120,13 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 navigator.geolocation.getCurrentPosition(function (position) { /*... */ });
 ```
 
-Чтобы использовать камеру на настольном компьютере или в Интернете, Teams будет показывать запрос на разрешение при `getUserMedia` вызове:
+Чтобы использовать камеру на рабочем столе или в Интернете, Teams будет показывать запрос на разрешение при `getUserMedia` вызове:
 
 ```Javascript
 navigator.mediaDevices.getUserMedia({ audio: true, video: true });
 ```
 
-Чтобы захватить изображение на мобильных устройствах, Teams Mobile запросит разрешение при `captureImage()` вызове:
+Чтобы захватить образ на мобильном устройстве, Teams Mobile запросит разрешение при `captureImage()` вызове:
 
 ```Javascript
 microsoftTeams.media.captureImage((error: microsoftTeams.SdkError, files: microsoftTeams.media.File[]) => {
@@ -174,4 +175,4 @@ microsoftTeams.location.getLocation({ allowChooseLocation: true, showMap: true }
 
 ## <a name="permission-behavior-across-login-sessions"></a>Поведение разрешений в сеансах входа
 
-Разрешения для устройств сохраняются для каждого сеанса входа. Это означает, что при входе в другой экземпляр Teams (например, на другом компьютере) разрешения устройства из предыдущих сеансов будут недоступны. Вместо этого вам потребуется повторно согласиться на использование разрешений устройства для нового сеанса входа. Это также означает, что при выходе из Teams (или переключении клиентов в Teams) разрешения устройства будут удалены для предыдущего сеанса входа. Помните об этом при разработке нативных разрешений для устройств: те же возможности, которые вы даете согласие, будут только для _текущего_ сеанса входа в систему.
+Разрешения для устройств сохраняются для каждого сеанса входа. Это означает, что при входе в другой экземпляр Teams (например, на другом компьютере) разрешения устройства из предыдущих сеансов будут недоступны. Вместо этого вам потребуется повторно согласиться на использование разрешений устройства для нового сеанса входа. Это также означает, что при выходе из Teams (или переключении клиентов в Teams) разрешения устройства будут удалены для предыдущего сеанса входа. Помните об этом при разработке нативных разрешений устройства: те же возможности, которые вы даете согласие, будут только для _текущего_ сеанса входа в систему.
