@@ -1,90 +1,90 @@
 ---
 title: Примеры кода Microsoft Teams
 description: Ссылки и описания примеров приложений для платформы разработчика Microsoft Teams
-keywords: Примеры разработчиков Microsoft Teams
-ms.openlocfilehash: 7a81494d7808c27c495c660b5d58f7779ba87c83
-ms.sourcegitcommit: f9a2f5cedc9d30ef7a9cf78a47d01cfd277e150d
+keywords: Примеры для разработчиков Microsoft Teams
+ms.openlocfilehash: 665d3565f4f453d263fef6a17cb27f5060111468
+ms.sourcegitcommit: 6d9c60cce1f2e5204e680c074ce77a8376233b59
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48237960"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49912318"
 ---
-# <a name="tutorials-and-code-samples-for-the-microsoft-teams-developer-platform"></a>Учебники и примеры кода для платформы разработчика Microsoft Teams
+# <a name="tutorials-and-code-samples-for-the-microsoft-teams-developer-platform"></a>Учебники и примеры кода для платформы разработчиков Microsoft Teams
 
-Здесь вы найдете список учебных курсов и примеров кода, демонстрирующих способы расширения возможностей платформы для разработчиков Teams путем создания пользовательских приложений.
+Здесь вы найдете список учебников и примеров кода, демонстрируя, как расширить возможности платформы разработчика Teams, создав настраиваемые приложения.
 
-## <a name="getting-started-with-microsoft-learn"></a>Начало работы со сведениями о корпорации Майкрософт
+## <a name="getting-started-with-microsoft-learn"></a>Начало работы с Microsoft Learn
 
-| Возможность| Модуль "сведения"|
+| Возможность| Модуль "Подробнее"|
 |--------|-------------|
-| Вкладки — встроенные веб-интерфейсы  |  [Создание встроенных веб-приложений с помощью вкладок для Microsoft Teams](https://docs.microsoft.com/learn/modules/embedded-web-experiences/) |
-| Веб-перехватчики и соединительные линии  |  [Подключение веб-служб к Microsoft Teams с помощью веб-перехватчиков и соединителей Office 365](https://docs.microsoft.com/learn/modules/msteams-webhooks-connectors/) |
-|расширения для обмена сообщениями;  | [Взаимодействия с задачами в Microsoft Teams с расширениями обмена сообщениями](https://docs.microsoft.com/learn/modules/msteams-messaging-extensions/)  |
-| Модули задач |  [Сбор данных в Microsoft Teams с модулями задач](https://docs.microsoft.com/learn/modules/msteams-task-modules/) |
-| Беседы Боты  | [Создание интерактивных бесед боты для Microsoft Teams](https://docs.microsoft.com/learn/modules/msteams-conversation-bots/)  |
+| Вкладки — встроенные веб-приложения  |  [Создание встроенных веб-элементов с вкладками для Microsoft Teams](https://docs.microsoft.com/learn/modules/embedded-web-experiences/) |
+| Веб-перехватчики и соединительные линии  |  [Подключение веб-служб к Microsoft Teams с помощью веб-hooks и соединители Office 365](https://docs.microsoft.com/learn/modules/msteams-webhooks-connectors/) |
+|Расширения для система обмена сообщениями  | [Ориентированные на задачи взаимодействия в Microsoft Teams с расширениями обмена сообщениями](https://docs.microsoft.com/learn/modules/msteams-messaging-extensions/)  |
+| Модули задач |  [Сбор входных данных в Microsoft Teams с помощью модулей задач](https://docs.microsoft.com/learn/modules/msteams-task-modules/) |
+| Боты для бесед  | [Создание интерактивных ботов для бесед для Microsoft Teams](https://docs.microsoft.com/learn/modules/msteams-conversation-bots/)  |
 
 ## <a name="getting-started-with-code-samples"></a>Начало работы с примерами кода
 
-Чтобы скачать наши примеры из GitHub, выполните следующие действия.
+Чтобы скачать наши примеры с GitHub:
 
-1. Выберите один из перечисленных ниже проектов и откройте проект в GitHub.
-2. Нажмите кнопку **клонировать или скачать** и скопируйте URL-адрес.
-3. Откройте командную строку в родительском каталоге, в который необходимо установить пример проекта.
-4. Выполняем `git clone <pasted url>`
+1. Выберите один из проектов, перечисленных ниже, и откройте его в GitHub.
+2. Выберите **кнопку "Клонировать" или "Скачать"** и скопируйте URL-адрес
+3. Откройте командную подсказку в родительском каталоге, в который нужно установить пример проекта
+4. Run `git clone <pasted url>`
 
-### <a name="for-netc-samples"></a>Примеры для .NET и C#
+### <a name="for-netc-samples"></a>Для примеров .NET/C#
 
-Каждый из наших примеров .NET включает файл решения Visual Studio, с помощью которого можно полностью создать решение, включая восстановление пакетов NuGet.
+Каждый из наших примеров .NET содержит Visual Studio решения, который может полностью построить решение, включая восстановление пакетов NuGet.
 
-### <a name="for-nodejs-samples"></a>Примеры Node.js
+### <a name="for-nodejs-samples"></a>Для Node.js примеров
 
-Мы предоставляем packages.jsфайла, в котором перечисляются все необходимые пакеты для примера. Просто запустите `npm install` из командной строки каталога проекта Node.js, чтобы установить необходимые пакеты. Теперь вы готовы открыть проект в Visual Studio Code и начать эксперимент.
+В файле packages.jsсписок всех необходимых пакетов для примера. Просто `npm install` запустите из командной строки в Node.js проекта, чтобы установить необходимые пакеты. Теперь вы готовы открыть проект в Visual Studio Code и начать экспериментировать.
 
 ### <a name="for-other-samples"></a>Для других примеров
 
-Как всегда, файл README проекта должен содержать более подробную информацию о конкретных примерах.
+Как всегда, файл README проекта должен иметь дополнительные сведения о конкретных потребностях в определенных примерах.
 
-## <a name="bots-using-the-v4-sdk"></a>Боты (с использованием пакета SDK v4)
+## <a name="bots-using-the-v4-sdk"></a>Боты (с помощью V4 SDK)
 
 [!INCLUDE [sample](~/includes/bots/teams-bot-samples.md)]
 
 >[!TIP]
->Посетите [репозиторий образцов для ленты](https://github.com/Microsoft/BotBuilder-Samples) Office, чтобы просмотреть образцы, ориентированные на задачи Microsoft Bot Framework v4 SDK для C#, JavaScript, TypeScript и Python.
+>Посетите [репозиторий](https://github.com/Microsoft/BotBuilder-Samples) примеров Bot Framework, чтобы просмотреть образцы SDK Microsoft Bot Framework v4 для C#, JavaScript, TypeScript и Python.
 
-## <a name="messaging-extensions-using-the-v4-sdk"></a>Расширения обмена сообщениями (с помощью пакета SDK v4)
+## <a name="messaging-extensions-using-the-v4-sdk"></a>Расширения обмена сообщениями (с помощью V4 SDK)
 
 | Пример | Описание | .NET Core | JavaScript | Python|
 |--------|------------- |---|---|----|
-| Расширения обмена сообщениями — Поиск | Расширение системы обмена сообщениями, принимающее запросы поиска и возвращающее результаты. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
-| Расширения обмена сообщениями — действие | Расширение системы обмена сообщениями, принимающее параметры и возвращающее карту. Кроме того, способ получения переадресованного сообщения в качестве параметра в расширении обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
-| Расширения обмена сообщениями — проверка подлинности и настройка | Расширение системы обмена сообщениями, имеющее страницу конфигурации, принимает поисковые запросы и возвращает результаты после того, как пользователь выполнил вход. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) |
-| Расширения обмена сообщениями — предварительный просмотр действий | Показано, как создать процесс просмотра и редактирования для расширения обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/53.teams-messaging-extensions-action-preview) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/53.teams-messaging-extensions-action-preview) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/53.teams-messaging-extensions-action-preview) |
-| Развернуть ссылку | Расширение системы обмена сообщениями, выполняющее Link унфурлинг. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/55.teams-link-unfurling) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/55.teams-link-unfurling) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/55.teams-link-unfurling) |
+| Расширения для обмена сообщениями — поиск | Расширение обмена сообщениями, которое принимает поисковые запросы и возвращает результаты. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
+| Расширения обмена сообщениями — действие | Расширение обмена сообщениями, которое принимает параметры и возвращает карточку. Кроме того, как получить переад вперед сообщение в качестве параметра в расширении обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
+| Расширения для обмена сообщениями — auth и config | Расширение обмена сообщениями, которое имеет страницу конфигурации, принимает поисковые запросы и возвращает результаты после того, как пользователь войт. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) |
+| Расширения обмена сообщениями — предварительный просмотр действий | В этой теме показано, как создать поток предварительного просмотра и редактирования для расширения обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/53.teams-messaging-extensions-action-preview) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/53.teams-messaging-extensions-action-preview) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/53.teams-messaging-extensions-action-preview) |
+| Развернуть ссылку | Расширение обмена сообщениями, которое выполняет размевание ссылок. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/55.teams-link-unfurling) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/55.teams-link-unfurling) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/55.teams-link-unfurling) |
 
 
-## <a name="outgoing-webhooks"></a>Исходящие веб-перехватчики
+## <a name="outgoing-webhooks"></a>Исходяющие веб-hooks
 
 | Пример | Описание
 |--------|-------------
-| [Исходящий веб-перехватчик для C#/.нет](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook) | Описывается создание **исходящего веб-перехватчика** для Microsoft Teams в C#/.нет.
-| [Исходящий веб-перехватчик для Node.js](https://github.com/OfficeDev/msteams-samples-outgoing-webhook-nodejs) | Показано, как создать простой **исходящий веб-перехватчик** для Microsoft Teams в строках кода Node.js ~ 50.
+| [Outgoing Webhook for C#/.NET](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook) | Здесь показано, как создать исходяющий **веб-ook** для Microsoft Teams на C#/.NET.
+| [Исходяющий веб-Node.js](https://github.com/OfficeDev/msteams-samples-outgoing-webhook-nodejs) | Иллюстрирует создание простого исходяного **веб-ook** для Microsoft Teams в 50 строках Node.js кода.
 
 ## <a name="connectors"></a>Соединители
 
 | Пример | Описание
 |--------|-------------
-| [Пример соединителя для Node.js](https://github.com/OfficeDev/microsoft-teams-sample-connector-nodejs) | В этом примере, написанном на Node.js, показано, как создать соединитель для Microsoft Teams, используя GitHub в качестве примера для создания уведомлений соединителей.
-| [Пример соединителя для C#/.нет](https://github.com/OfficeDev/microsoft-teams-sample-connector-csharp) | В этом примере, написанном на языке C#, показано, как создать соединитель для Microsoft Teams, используя пример приложения списка задач в качестве примера для создания уведомлений соединителей.
+| [Пример соединители для Node.js](https://github.com/OfficeDev/microsoft-teams-sample-connector-nodejs) | В этом примере, написанном Node.js, демонстрируется создание соединителя для Microsoft Teams с помощью GitHub в качестве примера для создания уведомлений соединителя.
+| [Пример соединители для C#/.NET](https://github.com/OfficeDev/microsoft-teams-sample-connector-csharp) | В этом примере, написанном на C#, демонстрируется создание соединители для Microsoft Teams с использованием примера приложения списка задач в качестве примера для создания уведомлений соединители. В этом примере также показано, как реализовать функции входа на странице конфигурации соединители. 
 
-## <a name="graph-api"></a>API Graph
+## <a name="graph-api"></a>Graph API
 
 | Пример | Описание
 |--------|-------------
-| [Примеры API Microsoft Graph](https://github.com/OfficeDev/microsoft-teams-sample-graph) | В этих примерах демонстрируется использование вызовов API Microsoft Graph для выполнения таких задач, как запросы к Teams и каналам из веб-службы, запущенной за пределами Microsoft Teams.
+| [Примеры API Microsoft Graph](https://github.com/OfficeDev/microsoft-teams-sample-graph) | В этих примерах показано использование вызовов API Microsoft Graph для выполнения таких задач, как запрос команд и каналов из веб-службы, запущенной за пределами Microsoft Teams.
 
-### <a name="bot-framework-sdk-v3-samples"></a>Примеры SDK для Bot Framework v3
+### <a name="bot-framework-sdk-v3-samples"></a>Примеры bot Framework SDK v3
 
 | Пример | Описание |
 |--------|------------- |
-| [Пример кода робота для C#/.нет](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams/tree/master/CSharp/Samples/Microsoft.Bot.Connector.Teams.SampleBot) | Примеры для Bot Framework v3|
-| [Пример кода робота для Node.js](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams/tree/master/Node/samples) | Примеры для Bot Framework v3 |
+| [Пример бота для C#/.NET](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams/tree/master/CSharp/Samples/Microsoft.Bot.Connector.Teams.SampleBot) | Примеры Bot Framework v3|
+| [Пример бота для Node.js](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams/tree/master/Node/samples) | Примеры Bot Framework v3 |

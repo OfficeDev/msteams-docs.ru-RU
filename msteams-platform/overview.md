@@ -5,12 +5,12 @@ description: Получите обзор того, как разработчик
 ms.topic: overview
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: 45be2dd7d0e421ac331cfc02703f0b81eab3dfe5
-ms.sourcegitcommit: 4539479289b43812eaae07a1c0f878bed815d2d2
+ms.openlocfilehash: 9f043fd5bab441ce88b0e04b4254b925aff25aad
+ms.sourcegitcommit: 00c657e3bf57d3b92aca7da941cde47a2eeff4d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49797773"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49911886"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
@@ -54,7 +54,7 @@ ms.locfileid: "49797773"
 
    :::column span="":::
 
-### <a name="messaging-extensions"></a>Расширения для обмена сообщениями
+### <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
 
 **Упростить** многозадачи: с [](messaging-extensions/what-are-messaging-extensions.md)помощью расширений обмена сообщениями можно быстро обмениваться внешней информацией в беседе. Вы также можете действовать над сообщением, например создавать обращение в справку на основе содержимого публикации в канале.
 
@@ -66,7 +66,7 @@ ms.locfileid: "49797773"
 
 ### <a name="webhooks"></a>веб-перехватчики
 
-**Общение с внешними приложениями:** входящие [веб-hooks](webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) — это простой способ автоматической отправки уведомлений из другого приложения в канал Teams. С [помощью исходяющих веб-hooks](webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks)сообщение веб-службы с помощью @mention.
+**Общение с внешними приложениями:** [входящие](webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) веб-ookы — это простой способ автоматической отправки уведомлений из другого приложения в канал Teams. С [помощью исходяющих веб-hooks](webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks)сообщение веб-службы с помощью @mention.
 
 :::image type="content" source="assets/images/overview-connectors.png" alt-text="Концептуальное представление того, как выглядят соединители в клиенте Teams." border="false":::
 
@@ -109,7 +109,7 @@ ms.locfileid: "49797773"
 
 ## <a name="integrate-with-teams"></a>Интеграция с Teams
 
-   Смешивайте функции, которые нравится пользователям в существующем веб-приложении, службе или системе, с функциями совместной работы Teams.
+   Смешивайте функции, которые нравится пользователям в существующем веб-приложении, службе или системе, с функциями teams для совместной работы.
 
    > [!div class="nextstepaction"]
    > [Интеграция существующего приложения](samples/integrating-web-apps.md)
@@ -139,7 +139,7 @@ ms.locfileid: "49797773"
 ## <a name="resources"></a>Ресурсы
 
 * [Добавление кнопки "Поделиться в Teams" на веб-сайт](concepts/build-and-test/share-to-teams.md)
-* <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Пользовательский интерфейс Fluent</a>
+* [Проектирование приложения Teams](concepts/design/design-teams-app-overview.md)
 * [Microsoft Teams JavaScript client SDK](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest&preserve-view=true)
-* [Bot Framework SDK для JavaScript](https://github.com/Microsoft/botbuilder-js) и [Bot Framework SDK для .NET](https://github.com/Microsoft/botbuilder-dotnet/)
-* [Публикация приложения в организации или AppSource](concepts/deploy-and-publish/overview.md)
+* Bot Framework SDK для [JavaScript](https://github.com/Microsoft/botbuilder-js) и [.NET](https://github.com/Microsoft/botbuilder-dotnet/)
+* [Публикация приложения Teams](concepts/deploy-and-publish/overview.md)
