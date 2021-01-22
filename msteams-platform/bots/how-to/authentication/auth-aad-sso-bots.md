@@ -2,102 +2,172 @@
 title: Поддержка единого входа для ботов
 description: Описывает, как получить маркер пользователя. В настоящее время разработчик ботов может использовать карточку для входов или службу ботов Azure с поддержкой карты OAuth.
 keywords: маркер, маркер пользователя, поддержка службы SSO для ботов
-ms.openlocfilehash: ee9dbee063acf90f5596fc95d002caf53f88a08a
-ms.sourcegitcommit: 0a9e91c65d88512eda895c21371b3cd4051dca0d
+ms.topic: conceptual
+ms.openlocfilehash: 8537cf41cdd7218b9bf7618fccf0e1704ac6b815
+ms.sourcegitcommit: 92fa912a51f295bb8a2dc1593a46ce103752dcdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49729082"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49917587"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входов (SSO) для ботов
 
-Проверка подлинности с единым входом в Azure Active Directory (Azure AD) минимизирует количество случаев, когда пользователям нужно вводить свои учетные данные для входа, автоматически обновив маркер проверки подлинности. Если пользователи соглашаются использовать ваше приложение, им не придется повторно соглашаться на другом устройстве и они будут автоматически входить в нее. Поток очень похож на поддержку [SSO вкладки Teams.]( ../../../tabs/how-to/authentication/auth-aad-sso.md) Разница заключается в протоколе запроса маркеров и получения ответов ботом.
+Проверка подлинности с единым входом в Azure Active Directory (AAD) минимизирует количество случаев, когда пользователям необходимо вводить свои учетные данные путем обновления маркера проверки подлинности автоматически. Если пользователи соглашаются использовать ваше приложение, им не нужно повторно предоставлять согласие на другом устройстве и они могут автоматически входить в приложение. Поток похож на тот, который поддерживается службой [SSO](../../../tabs/how-to/authentication/auth-aad-sso.md)для вкладок Microsoft [](#request-a-bot-token) Teams, однако разница заключается в протоколе запроса маркеров и получения ответов [ботом.](#receive-the-bot-token)
 
-OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory (Azure AD) и многими другими поставщиками удостоверений. Базовое понимание OAuth 2.0 является необходимым условием для работы с проверкой подлинности в Teams.
+>[!NOTE]
+> OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый AAD и многими другими поставщиками удостоверений. Базовое понимание OAuth 2.0 является необходимым условием для работы с проверкой подлинности в Teams.
 
 ## <a name="bot-sso-at-runtime"></a>Бот SSO во время работы
 
 ![Схема SSO бота во время работы](../../../assets/images/bots/bots-sso-diagram.png)
 
-1. Бот отправляет сообщение со свойством OAuthCard. `tokenExchangeResource` Он сообщает Teams, что необходимо получить маркер проверки подлинности для приложения-бота. Пользователь получает сообщения во всех активных конечных точках пользователя.
+Выполните следующие действия, чтобы получить аутентификацию и маркеры приложения-бота:
+
+1. Бот отправляет сообщение со свойством OAuthCard. `tokenExchangeResource` Он сообщает Teams, что необходимо получить маркер проверки подлинности для приложения-бота. Пользователь получает сообщения на всех активных конечных точках пользователя.
 
     > [!NOTE]
-    >* Пользователь может одновременно иметь несколько активных конечных точек.  
+    >* Пользователь может одновременно иметь несколько активных конечных точек.
     >* Маркер бота получается от каждой активной конечной точки пользователя.
-    >* В настоящее время для поддержки единого входов требуется, чтобы приложение было установлено в личной области.
+    >* Приложение должно быть установлено в личной области для поддержки SSO.
 
-2. Если текущий пользователь впервые использовал ваше приложение-бот, будет предложено согласиться (если требуется согласие) или обработать пошаговую проверку подлинности (например, двух-факторную проверку подлинности).
+2. Если текущий пользователь использует ваше приложение-бот в первый раз, появится запрос с запросом на одно из следующих этапов:
+    * Предоставление согласия при необходимости.
+    * Обработка проверки подлинности с пошаговой проверкой подлинности, например двух факторов.
 
-3. Microsoft Teams запрашивает маркер приложения-бота из конечной точки Azure AD для текущего пользователя.
+3. Teams запрашивает маркер приложения-бота из конечной точки AAD для текущего пользователя.
 
-4. Azure AD отправляет маркер приложения-бота в приложение Teams.
+4. AAD отправляет маркер приложения-бота в приложение Teams.
 
-5. Microsoft Teams отправляет маркер боту как часть объекта значения, возвращаемого действием вызова с именем sign-in/tokenExchange.
+5. Teams отправляет маркер боту как часть объекта значения, возвращаемого действием вызова с именем **sign-in/tokenExchange.**
   
-6. Маркер будет разлиться в бот-приложении для извлечения необходимых сведений, например адреса электронной почты пользователя.
+6. Разноравневый маркер в приложении-боте предоставляет необходимые сведения, например адрес электронной почты пользователя.
   
-## <a name="develop-a-single-sign-on-microsoft-teams-bot"></a>Разработка бота единого вход в Microsoft Teams
+## <a name="develop-an-sso-teams-bot"></a>Разработка бота SSO Teams
   
-Для разработки бота Microsoft Teams с SSO необходимо сделать следующее:
+Выполните следующие действия, чтобы разработать бот Для SSO Teams:
 
-1. [Создание бесплатной учетной записи Azure](#create-an-azure-account)
-2. [Обновление манифеста приложения Teams](#update-your-app-manifest)
-3. [Добавление кода для запроса и получения маркера бота](#request-a-bot-token)
+1. [Зарегистрируйте свое приложение на портале AAD.](#register-your-app-through-the-aad-portal)
+2. [Обновите манифест приложения Teams для бота.](#update-your-teams-application-manifest-for-your-bot)
+3. [Добавьте код для запроса и получения маркера бота.](#add-the-code-to-request-and-receive-a-bot-token)
 
-### <a name="create-an-azure-account"></a>Создание учетной записи Azure
+### <a name="register-your-app-through-the-aad-portal"></a>Регистрация приложения на портале AAD
 
-Этот шаг похож на поток [SSO табули:](../../../tabs/how-to/authentication/auth-aad-sso.md)
+Действия для регистрации приложения на портале AAD похожи на поток [SSO табули.](../../../tabs/how-to/authentication/auth-aad-sso.md) Чтобы зарегистрировать приложение, выполните следующие действия:
 
-1. Получите свой [ИД приложения Azure AD](/graph/concepts/auth-register-app-v2) для настольного, веб-клиента Или мобильного клиента Teams.
-2. Укажите разрешения, необходимые приложению для конечной точки Azure AD и,при желании, Microsoft Graph.
-3. [Предоставление разрешений для](/azure/active-directory/develop/v2-permissions-and-consent) классических, веб-и мобильных приложений Teams.
-4. Выберите **"Добавить область".**
-5. На открываемой панели добавьте клиентские приложения, введите `access_as_user` имя **области.**
+1. Зарегистрируйте новое приложение на [портале Регистрации приложений Azure Active Directory.](https://go.microsoft.com/fwlink/?linkid=2083908)
+2. Выберите **новую регистрацию.** Появится **страница "Регистрация** приложения".
+3. На странице **"Регистрация приложения"** введите следующие значения:
+    1. Введите **имя** приложения.
+    2. Выберите **поддерживаемые типы учетных записей,** выберите один клиент или тип мультитенантной учетной записи.
+
+        > [!NOTE]
+        >
+        > Пользователи не запрашивают согласие и сразу им ируются маркеры доступа, если приложение AAD зарегистрировано в том же клиенте, где они делают запрос на проверку подлинности в Teams. Однако пользователи должны предоставить согласие на предоставление разрешений, если приложение AAD зарегистрировано в другом клиенте.
+
+    3. Нажмите кнопку **Зарегистрировать**.
+4. На странице обзора скопируйте и сохраните ИД приложения **(клиента).** Оно потребуется позже при обновлении манифеста приложения Teams.
+5. В разделе **Управление** выберите **Предоставление API**. 
+
+   > [!IMPORTANT]
+    > * Если вы строите автономный бот, введите URI ИД приложения как `api://botid-{YourBotId}` . Здесь **YourBotId** — ваш ИД приложения AAD.
+    > * Если вы строите приложение с помощью бота и вкладки, введите URI ИД приложения как `api://fully-qualified-domain-name.com/botid-{YourBotId}` .
+
+5. Выберите разрешения, необходимые приложению для конечной точки AAD и (при желании) для Microsoft Graph.
+6. [Предоставление разрешений для](/azure/active-directory/develop/v2-permissions-and-consent) классических, веб-и мобильных приложений Teams.
+7. Выберите **"Добавить область".**
+8. На открываемой панели добавьте клиентские приложения, введите `access_as_user` имя **области.**
 
     >[!NOTE]
     > Область "access_as_user", используемая для добавления клиентского приложения, — "Администраторы и пользователи".
+    >
+    > Необходимо помнить о следующих важных ограничениях:
+    >
+    > * Поддерживаются только разрешения API Microsoft Graph на уровне пользователя, такие как электронная почта, профиль, offline_access и OpenId. Если вам нужен доступ к другим областьм Microsoft Graph, например или, см. `User.Read` `Mail.Read` [рекомендуемое решение.](../../../tabs/how-to/authentication/auth-aad-sso.md#apps-that-require-additional-microsoft-graph-scopes)
+    > * Доменное имя приложения должно быть таким же, как и доменное имя, зарегистрированное для приложения AAD.
+    > * Несколько доменов на приложение в настоящее время не поддерживаются.
+    > * Приложения, которые используют домен, не поддерживаются, так как они являются общими и `azurewebsites.net` могут быть угрозой безопасности.
 
-    > [!IMPORTANT]
-    > * Если вы строите автономный бот, задайте для URI ИД приложения URI `api://botid-{YourBotId}` здесь, **ВашBotId** ссылается на ваш ИД приложения Azure AD.
-    > * Если вы строите приложение с помощью бота и вкладки, установите для URI ИД приложения задав `api://fully-qualified-domain-name.com/botid-{YourBotId}` его.
+#### <a name="update-the-azure-portal-with-the-oauth-connection"></a>Обновление портала Azure с помощью подключения OAuth
 
-### <a name="update-your-app-manifest"></a>Обновление манифеста приложения
+Выполните следующие действия, чтобы обновить портал Azure с подключением OAuth:
 
-Добавьте новые свойства в манифест Microsoft Teams:
+1. На портале Azure перейдите к процедуре **регистрации каналов ботов.**
 
-**WebApplicationInfo —** родительский элемент следующих элементов:
+2. Перейдите **к разрешениям API.** Выберите **"Добавить разрешения microsoft**  >  **Graph**  >  **Delegated permissions",** а затем добавьте следующие разрешения из API Microsoft Graph:
+    * User.Read (включен по умолчанию)
+    * email
+    * offline_access
+    * OpenId
+    * profile
 
-> [!div class="checklist"]
->
-> * **id** — ИД клиента приложения. Это ИД приложения, полученный при регистрации приложения в Azure AD.
->* **resource** — домен и поддомен приложения. Это тот же URI (включая протокол), который вы зарегистрировали при создании на `api://` `scope` шаге 6 выше. Не следует включать путь `access_as_user` в ресурс. Доменная часть этого URI должна соответствовать домену, в том числе поддоменам, используемым в URL-адресах манифеста приложения Teams.
+3. Выберите **"Параметры"** в левой области и выберите "Добавить **параметр"** в разделе "Параметры подключения **OAuth".**
+
+    ![Представление SSOBotHandle2](../../../assets/images/bots/bots-vuSSOBotHandle2-settings.png)
+
+4. Выполните следующие действия, чтобы заполнить форму **"Создать параметр подключения":**
+
+    >[!NOTE]
+    > **В приложении** AAD может потребоваться неявное предоставление.
+
+    1. Введите **имя на** странице **"Новый параметр подключения".** Это имя, на которое ссылается код службы ботов в *шаге 5* bot [SSO во время работы.](#bot-sso-at-runtime)
+    2. В **выпадаемом каталоге "Поставщик** услуг" выберите **Azure Active Directory 2.**
+    3. Введите учетные данные клиента, такие как **ид клиента** и **секрет** клиента для приложения AAD.
+    4. Для **URL-адреса Exchange маркера** используйте значение области, определенное в манифесте приложения [Teams для бота.](#update-your-teams-application-manifest-for-your-bot) URL-адрес Exchange маркеров указывает SDK, что это приложение AAD настроено для SSO.
+    5. В поле **"ИД клиента"** *введите общий.*
+    6. Добавьте все **области, настроенные** при указании разрешений для нисходящего API для приложения AAD. При условии, что в хранилище маркеров есть ИД клиента и секрет клиента, он обменивается маркером на маркер графа с определенными разрешениями.
+    7. Выберите **Сохранить**.
+
+    ![Представление Параметров VuSSOBotConnection](../../../assets/images/bots/bots-vuSSOBotConnection-settings.png)
+
+### <a name="update-your-teams-application-manifest-for-your-bot"></a>Обновление манифеста приложения Teams для бота
+
+Если приложение содержит автономный бот, используйте следующий код для добавления новых свойств в манифест приложения Teams:
 
 ```json
-"webApplicationInfo": {
-  "id": "00000000-0000-0000-0000-000000000000",
-  "resource": "api://subdomain.example.com/00000000-0000-0000-0000-000000000000"
-}
+    "webApplicationInfo": 
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "resource": "api://botid-00000000-0000-0000-0000-000000000000"
+        }
+```
+Если приложение содержит бота и вкладку, используйте следующий код для добавления новых свойств в манифест приложения Teams:
+
+```json
+    "webApplicationInfo": 
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "resource": "api://subdomain.example.com/botid-00000000-0000-0000-0000-000000000000"
+        }
 ```
 
-### <a name="request-a-bot-token"></a>Запрос маркера бота
+**webApplicationInfo является** родительским элементом следующих элементов:
 
-Запрос на получения маркера является обычным запросом post сообщения (с использованием существующей схемы сообщения). Он включается во вложения OAuthCard. Схема для класса OAuthCard определена в [microsoft Bot Schema 4.0](/dotnet/api/microsoft.bot.schema.oauthcard?view=botbuilder-dotnet-stable&preserve-view=true) и очень похожа на карточку для входов. Teams будет рассматривать этот запрос как получение маркера в тихом режиме, если свойство заполнено `TokenExchangeResource` на карточке. Для канала Teams мы считаем только свойство, которое уникальным образом идентифицирует `Id` запрос маркера.
+* **id** — ИД клиента приложения. Это ИД приложения, полученный при регистрации приложения в AAD.
+* **resource** — домен и поддомен приложения. Это тот же URI, включая протокол, зарегистрированный при создании приложения на портале `api://` `scope` [AAD.](#register-your-app-through-the-aad-portal) Не следует включать `access_as_user` путь в ресурс. Доменная часть этого URI должна соответствовать домену и поддоменам, используемым в URL-адресах манифеста приложения Teams.
+
+### <a name="add-the-code-to-request-and-receive-a-bot-token"></a>Добавление кода для запроса и получения маркера бота
+
+#### <a name="request-a-bot-token"></a>Запрос маркера бота
+
+Запрос на токен — это обычный запрос post с использованием существующей схемы сообщения. Он включается во вложения OAuthCard. Схема для класса OAuthCard определена в [microsoft Bot Schema 4.0](/dotnet/api/microsoft.bot.schema.oauthcard?view=botbuilder-dotnet-stable&preserve-view=true) и аналогична карточке для входов. Teams обрабатывает этот запрос как получение маркера в тихом режиме, если свойство `TokenExchangeResource` заполнено на карточке. Для канала Teams засчитано только свойство, уникальным образом идентифицирует запрос `Id` маркера.
 
 >[!NOTE]
-> Bot Framework или поддерживается для проверки подлинности с единым `OAuthPrompt` `MultiProviderAuthDialog` входом.
+> Для проверки подлинности SSO поддерживается Microsoft Bot Framework `OAuthPrompt` `MultiProviderAuthDialog` или microsoft Bot Framework.
 
-Если это первый раз, когда пользователь использует ваше приложение и требуется согласие пользователя, пользователю будет показано диалоговое окно для продолжения работы с согласием, аналогичное приведенному ниже. Когда пользователь выбирает **"Продолжить",** в зависимости от того, определен бот или нет, и кнопки для входов в OAuthCard происходят две разные вещи.
+Если пользователь использует приложение в первый раз и требуется согласие пользователя, отображается следующее диалоговое окно для продолжения работы с согласием:
 
 ![Диалоговое окно "Согласие"](../../../assets/images/bots/bots-consent-dialogbox.png)
 
-Если бот определяет кнопку для входов, поток входов для ботов будет активен аналогично потоку входов с кнопки карточки в потоке сообщений. Разработчик решает, какие разрешения нужно запросить у пользователя. Этот подход рекомендуется, если вам нужен маркер с разрешениями за пределами , например, если вы хотите обменять маркер для `openId` ресурсов graph.
+Когда пользователь выбирает **"Продолжить",** происходят следующие события:
 
-Если бот не предоставляет кнопку для регистрации на карточке, он инициирует согласие пользователя на минимальный набор разрешений. Этот маркер полезен для базовой проверки подлинности и получения адреса электронной почты пользователя.
+* Если бот определяет кнопку для входов, запускается поток входов для ботов, аналогичный потоку входов с кнопки карточки OAuth в потоке сообщений. Разработчик должен решить, какие разрешения требуют согласия пользователя. Этот подход рекомендуется, если вам требуется маркер с разрешениями, которые выходят за `openId` рамки. Например, если вы хотите обменять маркер на ресурсы graph.
 
-**Запрос маркера C# без кнопки для регистрации:**
+* Если бот не предоставляет кнопку для регистрации на карте OAuth, для минимального набора разрешений требуется согласие пользователя. Этот маркер полезен для базовой проверки подлинности и получения адреса электронной почты пользователя.
+
+##### <a name="c-token-request-without-a-sign-in-button"></a>Запрос маркера C# без кнопки для регистрации
 
 ```csharp
-var attachment = new Attachment
+    var attachment = new Attachment
             {
                 Content = new OAuthCard
                 {
@@ -113,85 +183,62 @@ var attachment = new Attachment
             // NOTE: This activity needs to be sent in the 1:1 conversation between the bot and the user. 
             // If the bot supports group and channel scope, this code should be updated to send the request to the 1:1 chat. 
 
-   await turnContext.SendActivityAsync(activity, cancellationToken);
+       await turnContext.SendActivityAsync(activity, cancellationToken);
 ```
 
-#### <a name="receiving-the-token"></a>Получение маркера
+#### <a name="receive-the-bot-token"></a>Получение маркера бота
 
-Ответ с маркером отправляется с помощью действия вызова с той же схемой, что и другие, вызываемой действиями, которые боты получают сегодня. Единственное отличие состоит в имени вызова,  входе/маркереExchange и поле значения, которое будет содержать ИД (строку) исходного запроса для получения маркера и поля маркера (строка, включаемая маркер).    Обратите внимание, что вы можете получить несколько ответов на заданный запрос, если у пользователя несколько активных конечных точек. Вы можете отреагировать на ответы с помощью маркера.
+Ответ с маркером отправляется с помощью действия вызова с той же схемой, что и другие действия вызова, которые боты получают сегодня. Единственное отличие состоит в имени вызова, **входе/маркереExchange** и **поле значения.** Поле **значения** содержит **ID**, строку исходного запроса  для получения маркера и поля маркера, строку, включаемую маркер.
 
-**Код C#, реагируя на обработку действия вызова:**
+>[!NOTE]
+> Если у пользователя несколько активных конечных точек, вы можете получить несколько ответов на заданный запрос. Необходимо отлагонять ответы с помощью маркера.
+
+##### <a name="c-code-to-handle-the-invoke-activity"></a>Код C# для обработки действия вызова
 
 ```csharp
-protected override async Task<InvokeResponse> OnInvokeActivityAsync
-  (ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
-        {
-            try
+    protected override async Task<InvokeResponse> OnInvokeActivityAsync
+    (ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
             {
-                if (turnContext.Activity.Name == SignInConstants.TokenExchangeOperationName && turnContext.Activity.ChannelId == Channels.Msteams)
+                try
                 {
-                    await OnTokenResponseEventAsync(turnContext, cancellationToken);
-                    return new InvokeResponse() { Status = 200 };
+                    if (turnContext.Activity.Name == SignInConstants.TokenExchangeOperationName && turnContext.Activity.ChannelId == Channels.Msteams)
+                    {
+                        await OnTokenResponseEventAsync(turnContext, cancellationToken);
+                        return new InvokeResponse() { Status = 200 };
+                    }
+                    else
+                    {
+                        return await base.OnInvokeActivityAsync(turnContext, cancellationToken);
+                    }
                 }
-                else
+                catch (InvokeResponseException e)
                 {
-                    return await base.OnInvokeActivityAsync(turnContext, cancellationToken);
+                    return e.CreateInvokeResponse();
                 }
             }
-            catch (InvokeResponseException e)
-            {
-                return e.CreateInvokeResponse();
-            }
-        }
 ```
 
-Тип `turnContext.activity.value` [TokenExchangeInvokeRequest](/dotnet/api/microsoft.bot.schema.tokenexchangeinvokerequest?view=botbuilder-dotnet-stable&preserve-view=true) содержит маркер, который может дополнительно использоваться ботом. Храните маркеры безопасно из соображений производительности и обновляйте их.
-
-### <a name="update-the-azure-portal-with-the-oauth-connection"></a>Обновление портала Azure с помощью подключения OAuth
-
-1. На портале Azure перейдите к регистрации каналов **ботов.**
-
-2. Переключение в **раздел "Параметры"** и выберите **"Добавить параметр"** в разделе "Параметры подключения OAuth".
-
-    ![Представление SSOBotHandle2](../../../assets/images/bots/bots-vuSSOBotHandle2-settings.png)
-
-3. **Заполнять форму параметра** подключения:
-
-    > [!div class="checklist"]
-    >
-    > * Введите имя нового параметра подключения. Это имя, на которое будет ссылаться код службы ботов на **шаге 5.**
-    > * В выпадаемом каталоге "Поставщик услуг" выберите **Azure Active Directory V2.**
-    >* Введите учетные данные клиента для приложения AAD.
-
-    >[!NOTE]
-    > **В приложении** AAD может потребоваться неявное предоставление.
-
-    >* Для URL-адреса Exchange маркера используйте значение области, определенное на предыдущем шаге приложения AAD. Наличие URL-адреса Exchange маркера указывает SDK, что это приложение AAD настроено для SSO.
-    >* Укажите "common" в **качестве ИД клиента.**
-    >* Добавьте все области, настроенные при указании разрешений для нисходящего API для приложения AAD. Если у вас есть ИД клиента и секрет клиента, хранилище маркеров будет обмениваться маркером на маркер графа с определенными разрешениями.
-    >* Нажмите кнопку **Сохранить**.
-
-    ![Представление Параметров VuSSOBotConnection](../../../assets/images/bots/bots-vuSSOBotConnection-settings.png)
+Тип `turnContext.activity.value` [TokenExchangeInvokeRequest](/dotnet/api/microsoft.bot.schema.tokenexchangeinvokerequest?view=botbuilder-dotnet-stable&preserve-view=true) содержит маркер, который может дополнительно использоваться ботом. Для повышения производительности маркеры необходимо хранить и обновлять.
 
 ### <a name="update-the-auth-sample"></a>Обновление примера auth
 
-Начните с примера [auth teams](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth).
+Откройте [пример auth Teams](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) и выполните следующие действия, чтобы обновить его:
 
-1. Обновив TeamsBot, включив в него следующее. Чтобы обработать deduping входящих запросов, см. ниже:
+1. Обновив TeamsBot для обработки отладки входящих запросов, включив следующий код:
 
-```csharp
-     protected override async Task OnSignInInvokeAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
-        {
-            await Dialog.RunAsync(turnContext, ConversationState.CreateProperty<DialogState>(nameof(DialogState)), cancellationToken);
-        }
-    protected override async Task OnTokenResponseEventAsync(ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
-        {
-            await Dialog.RunAsync(turnContext, ConversationState.CreateProperty<DialogState>(nameof(DialogState)), cancellationToken);
-        }
-```
+    ```csharp
+        protected override async Task OnSignInInvokeAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
+            {
+                await Dialog.RunAsync(turnContext, ConversationState.CreateProperty<DialogState>(nameof(DialogState)), cancellationToken);
+            }
+        protected override async Task OnTokenResponseEventAsync(ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
+            {
+                await Dialog.RunAsync(turnContext, ConversationState.CreateProperty<DialogState>(nameof(DialogState)), cancellationToken);
+            }
+    ```
   
-2. `appsettings.json`Обновим имя, чтобы включить `botId` пароль и имя подключения, определенное выше.
-3. Обновим манифест и `token.botframework.com` убедитесь, что он находится в разделе "Допустимые домены".
+2. Обновление с использованием пароля и имени подключения, определенного на портале Azure с подключением `appsettings.json` `botId` [OAuth.](#update-the-azure-portal-with-the-oauth-connection)
+3. Обновим манифест и `token.botframework.com` убедитесь, что он находится в допустимом списке доменов. Дополнительные сведения см. в [примере auth Teams.](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth)
 4. Замейте манифест изображениями профилей и установите его в Teams.
 
 #### <a name="additional-code-samples"></a>Дополнительные примеры кода
