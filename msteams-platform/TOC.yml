@@ -332,6 +332,8 @@
           href: bots/how-to/authentication/auth-flow-bot.md
         - name: Добавить аутентификацию для вашего бота
           href: bots/how-to/authentication/add-authentication.md
+        - name: Использование проверки подлинности SSO
+          href: bots/how-to/authentication/auth-aad-sso-bots.md
     - name: Расширения для система обмена сообщениями
       href: messaging-extensions/how-to/add-authentication.md
 - name: Использование данных Teams с помощью Microsoft Graph
