@@ -3,12 +3,12 @@ title: Поддержка единого входа для ботов
 description: Описывает, как получить маркер пользователя. В настоящее время разработчик ботов может использовать карточку для входов или службу ботов Azure с поддержкой карты OAuth.
 keywords: маркер, маркер пользователя, поддержка службы SSO для ботов
 ms.topic: conceptual
-ms.openlocfilehash: 8537cf41cdd7218b9bf7618fccf0e1704ac6b815
-ms.sourcegitcommit: 92fa912a51f295bb8a2dc1593a46ce103752dcdd
+ms.openlocfilehash: 55b930ba50eede6ac970fbe0f901d418605f3f91
+ms.sourcegitcommit: 5662bf23fafdbcc6d06f826a647f3696cd17f5e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49917587"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49935256"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входов (SSO) для ботов
 
@@ -244,7 +244,3 @@ ms.locfileid: "49917587"
 #### <a name="additional-code-samples"></a>Дополнительные примеры кода
 
 * [Пример C# с использованием bot Framework SDK.](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/teams-sso/csharp_dotnetcore)
-
-* [Пример C# с помощью SDK Bot Framework для дедипликации запроса маркера.](https://microsoft.sharepoint.com/:u:/t/ExtensibilityandFundamentals/Ea36rUGiN1BGt1RiLOb-mY8BGMF8NwPtronYGym0sCGOTw?e=4bB682)
-
-* Пример на C# без использования магазина маркеров [SDK Bot Framework.](https://microsoft-my.sharepoint-df.com/:u:/p/tac/EceKDXrkMn5AuGbh6iGid8ABKEVQ6hkxArxK1y7-M8OVPw)
