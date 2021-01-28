@@ -1,13 +1,14 @@
 ---
-title: Примеры кода Microsoft Teams
-description: Ссылки и описания примеров приложений для платформы разработчика Microsoft Teams
+title: Примеры кода приложения
+description: Ссылки и описания примеров приложений для платформы разработчиков Microsoft Teams
+ms.topic: reference
 keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: 665d3565f4f453d263fef6a17cb27f5060111468
-ms.sourcegitcommit: 6d9c60cce1f2e5204e680c074ce77a8376233b59
+ms.openlocfilehash: f51ffb22a5e6b3b757d1971422adf955d95fb223
+ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49912318"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50014112"
 ---
 # <a name="tutorials-and-code-samples-for-the-microsoft-teams-developer-platform"></a>Учебники и примеры кода для платформы разработчиков Microsoft Teams
 
@@ -27,9 +28,9 @@ ms.locfileid: "49912318"
 
 Чтобы скачать наши примеры с GitHub:
 
-1. Выберите один из проектов, перечисленных ниже, и откройте его в GitHub.
+1. Выберите один из проектов, перечисленных ниже, и откройте проект на сайте GitHub.
 2. Выберите **кнопку "Клонировать" или "Скачать"** и скопируйте URL-адрес
-3. Откройте командную подсказку в родительском каталоге, в который нужно установить пример проекта
+3. Откройте командную подсказку в родительском каталоге, в который необходимо установить пример проекта
 4. Run `git clone <pasted url>`
 
 ### <a name="for-netc-samples"></a>Для примеров .NET/C#

@@ -1,48 +1,49 @@
 ---
-title: Девтулс для вкладок Microsoft Teams
-description: В этой статье описывается, как получить доступ к Девтулс при использовании настольного клиента Microsoft Teams
-keywords: средства разработчика клиентского рабочего стола Mobile Chrome девтулс Отладка
-ms.openlocfilehash: 6c8ac15caf64c979b23155be847e8791988486e6
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+title: DevTools для вкладок Microsoft Teams
+description: Описание того, как добраться до DevTools при использовании клиента Microsoft Teams для настольных ПК
+ms.topic: how-to
+keywords: devtools debug mobile chrome desktop client developer tools
+ms.openlocfilehash: 8f23a5d56faa00d40451d2bbeadde32f6a5d0f7f
+ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675416"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50014581"
 ---
-# <a name="devtools-for-microsoft-teams-tabs"></a>Девтулс для вкладок Microsoft Teams
+# <a name="devtools-for-microsoft-teams-tabs"></a>DevTools для вкладок Microsoft Teams
 
-Когда Teams работает в браузере, можно легко получить доступ к Девтулс браузера: F12 (в Windows) или Command-Option-I (на MacOS). Девтулс предоставляет доступ к следующим:
+Когда Teams работает в браузере, легко получить доступ к devTools браузера: F12 (в Windows) или Command-Option-I (в MacOS). DevTools предоставляет доступ к:
 
 1. Просмотр журналов консоли.
-1. Просмотр/изменение HTML-, CSS-и сетевых запросов во время выполнения.
+1. Просмотр и изменение html-запросов, CSS и сетевых запросов во время работы.
 1. Добавьте точки останова в код JavaScript и выполните интерактивную отладку.
 
-Эта функция доступна только в клиентах для настольных ПК и Android после включения предварительной версии для разработчиков. Узнайте, [как включить предварительный просмотр для разработчиков](~/resources/dev-preview/developer-preview-intro.md) для получения дополнительных сведений.
+Эта функция доступна только в классических клиентах и клиентах Android Developer Preview включена. Дополнительные [сведения см. в](~/resources/dev-preview/developer-preview-intro.md) Developer Preview.
 
-## <a name="accessing-devtools-in-the-desktop"></a>Доступ к Девтулс на рабочем столе
+## <a name="accessing-devtools-in-the-desktop"></a>Доступ к DevTools на рабочем столе
 
-Несмотря на то, что веб-версия Teams и версия Teams для настольных систем почти идентичны, существуют некоторые отличия, особенно по отношению к проверке подлинности. Иногда единственный способ понять, что происходит, — использовать Девтулс. Вот как можно перейти к ним из клиента для настольных ПК Teams. Чтобы использовать Девтулс в клиенте для настольных ПК:
+Несмотря на то что веб-версия Teams и классические версии команд практически не отличаются, существуют некоторые различия, особенно в отношении проверки подлинности. Иногда единственным способом выяснить, что происходит, является использование DevTools. Вот как получить к ним возможность из настольного клиента Teams. Чтобы использовать DevTools в настольном клиенте:
 
-1. Убедитесь, что вы включили [Предварительный просмотр для разработчиков](~/resources/dev-preview/developer-preview-intro.md)
-1. Откройте вкладку, чтобы ознакомиться с Девтулс.
-1. Открытие Девтулс
-    * В Windows вы открываете Девтулс через значок Microsoft Teams в панели рабочего стола:
+1. Убедитесь, что вы включили [предварительную версию для разработчиков](~/resources/dev-preview/developer-preview-intro.md)
+1. Откройте вкладку, чтобы получить что-то для проверки с помощью DevTools.
+1. Откройте DevTools
+    * В Windows вы открываете DevTools с помощью значка Microsoft Teams в области рабочего стола:
 
-  ![Щелкните правой кнопкой мыши, чтобы открыть Девтулс](~/assets/images/dev-preview/devtools-right-click.png)
+  ![Щелкните правой кнопкой мыши, чтобы открыть DevTools](~/assets/images/dev-preview/devtools-right-click.png)
 
-    * В MacOS щелкните значок Microsoft Teams (Microsoft Teams) на док.
+    * В MacOS щелкните значок Microsoft Teams на док-станции.
 
-Ниже показано, как выглядит пример вкладки с открытым Девтулс и выбранным элементом:
+Вот как выглядит вкладка с открытым devTools и выбранным элементом:
 
-![Tab и Девтулс](~/assets/images/dev-preview/tab-and-devtools.png)
+![Tab и DevTools](~/assets/images/dev-preview/tab-and-devtools.png)
 
-## <a name="accessing-devtools-from-an-android-client"></a>Доступ к Девтулс из клиента Android
+## <a name="accessing-devtools-from-an-android-client"></a>Доступ к DevTools из клиента Android
 
-Вы также можете включить Девтулс из клиента Teams Android. Для этого:
+Вы также можете включить DevTools из клиента Teams Android. Для этого:
 
-1. Убедитесь, что вы включили [Предварительный просмотр для разработчиков](~/resources/dev-preview/developer-preview-intro.md)
-1. Подключение устройства к настольному компьютеру и Настройка устройства с Android для [удаленной отладки](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)
-1. В браузере Chrome откройте `chrome://inspect/#devices`меню.
-1. Нажмите кнопку **проверить** ниже вкладки, которую вы хотите отладить, как показано на снимке экрана ниже.
+1. Убедитесь, что вы включили [предварительную версию для разработчиков](~/resources/dev-preview/developer-preview-intro.md)
+1. Подключение устройства к настольному компьютеру и настройка устройства с Android для [удаленной отладки](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/)
+1. В браузере Chrome откройте `chrome://inspect/#devices` .
+1. Щелкните **"Проверить"** под вкладками, которые нужно отлажать, как по снимку экрана ниже.
 
-![Девтулс Android](~/assets/images/android-devtools.png)
+![Android DevTools](~/assets/images/android-devtools.png)

@@ -1,13 +1,14 @@
 ---
-title: Запрос разрешений устройства для вкладки Microsoft Teams
+title: Запрос разрешений устройства для вкладки
 description: Обновление манифеста приложения для запроса доступа к функциям, которые обычно требуют согласия пользователя
+ms.topic: how-to
 keywords: Разработка вкладок teams
-ms.openlocfilehash: b021ae4ae8b50ddd1f3603f696922c129eb25f10
-ms.sourcegitcommit: 84f408aa2854aa7a5cefaa66ce9a373b19e0864a
+ms.openlocfilehash: a2893fb2905584eac4b398287d431f406c23b12b
+ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "49886746"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50014532"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-tab"></a>Запрос разрешений устройства для вкладки Microsoft Teams
 
@@ -26,7 +27,7 @@ ms.locfileid: "49886746"
 > [!IMPORTANT]
 >
 > * В настоящее время мобильный клиент Teams поддерживает только доступ к возможностям , и через возможности нативных устройств и доступен во всех конструкциях приложения, включая `camera` `gallery` `mic` `location` вкладки. </br>
-> * Поддержка `camera` , `gallery` и `mic` включена через [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true). Для одного захвата изображения можно использовать [**API captureImage.**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true)
+> * Поддержка , `camera` `gallery` и `mic` включена через [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true). Для одного захвата изображения можно использовать [**API captureImage.**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true)
 > * Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) Рекомендуется использовать этот API, так как В настоящее время [**API**](../../resources/schema/manifest-schema.md#devicepermissions) географического местонахождения не полностью поддерживается на всех классических клиентах.
 
 ## <a name="device-permissions"></a>Разрешения для устройств
@@ -34,7 +35,7 @@ ms.locfileid: "49886746"
 Доступ к разрешениям устройства пользователя позволяет создавать гораздо более богатые возможности, например:
 
 * Запись и совместное видео
-* Зафиксировать короткие звуковые memo и сохранить их для более поздней 2016 г.
+* Запись коротких звуковых memos и их сохранение для более поздней 2016 г.
 * Использование сведений о расположении пользователей для отображения соответствующей информации
 
 Хотя доступ к этим функциям является стандартным в большинстве современных веб-браузеров, необходимо дать Teams знать, какие функции вы хотите использовать, обновив манифест приложения. Это позволит вам запросить разрешения так же, как в браузере, когда ваше приложение работает в настольном клиенте Teams.
@@ -126,7 +127,7 @@ navigator.geolocation.getCurrentPosition(function (position) { /*... */ });
 navigator.mediaDevices.getUserMedia({ audio: true, video: true });
 ```
 
-Чтобы захватить образ на мобильном устройстве, Teams Mobile запросит разрешение при `captureImage()` вызове:
+Чтобы захватить изображение на мобильных устройствах, Teams Mobile запросит разрешение при `captureImage()` вызове:
 
 ```Javascript
 microsoftTeams.media.captureImage((error: microsoftTeams.SdkError, files: microsoftTeams.media.File[]) => {
