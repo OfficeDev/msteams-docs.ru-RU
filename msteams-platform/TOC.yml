@@ -28,7 +28,7 @@
       href: tutorials/get-started-dotnet-app-studio.md
     - name: Создайте приложение с помощью Node.js
       href: tutorials/get-started-nodejs-app-studio.md
-    - name: Создать приложение с помощью генератора Yeoman
+    - name: Создание приложения с помощью генератора Yeoman
       href: tutorials/get-started-yeoman.md
     - name: Образцы бота
       items:
@@ -230,6 +230,8 @@
           href: bots/how-to/update-and-delete-bot-messages.md
     - name: Получите контекст для бота
       href: bots/how-to/get-teams-context.md
+    - name: Отправка и получение файлов
+      href: bots/how-to/bots-filesv4.md
     - name: Обработка ограничений скорости бота
       href: bots/how-to/rate-limit.md
     - name: Вызов и встреча ботов
