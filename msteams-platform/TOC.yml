@@ -22,7 +22,7 @@
       href: build-your-first-app/build-messaging-extension.md
 - name: Руководства и примеры кода
   items:
-    - name: Обзор
+    - name: Руководства
       href: tutorials/code-samples.md
     - name: 'Создайте приложение, используя C#'
       href: tutorials/get-started-dotnet-app-studio.md
@@ -30,24 +30,8 @@
       href: tutorials/get-started-nodejs-app-studio.md
     - name: Создание приложения с помощью генератора Yeoman
       href: tutorials/get-started-yeoman.md
-    - name: Образцы бота
-      items:
-        - name: Чатбот с C# (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot'
-        - name: Чатбот с Node.js (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot'
-        - name: Чатбот с Python (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot'
-    - name: Образцы расширения для обмена сообщениями
-      items:
-        - name: Команды действий с C# (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/51.teams-messaging-extensions-action'
-        - name: Команды действий с Node.js (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/51.teams-messaging-extensions-action'
-        - name: Команды поиска с C# (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/50.teams-messaging-extensions-search'
-        - name: Команды поиска с Node.js (GitHub)
-          href: 'https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search'
+    - name: Примеры кода
+      href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Основные сведения о приложении
   items:
     - name: Возможности приложения Teams
