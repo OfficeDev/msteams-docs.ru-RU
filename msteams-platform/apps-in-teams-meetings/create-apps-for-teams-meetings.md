@@ -5,12 +5,12 @@ description: создание приложений для собраний teams
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: API роли участника собраний в приложениях teams
-ms.openlocfilehash: 82327eca86dcdac5c47f5f4471bc91d55484d07e
-ms.sourcegitcommit: 4539479289b43812eaae07a1c0f878bed815d2d2
+ms.openlocfilehash: 7f6d8fec735aa21033c6bcb2462c20458634f10a
+ms.sourcegitcommit: 843da1730443ff8474a05295f60a6b376ed140da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49797766"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50073098"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "49797766"
 
 * Приложения на собраниях требуют базовых знаний о [разработке приложений Teams.](../overview.md) Приложение на собрании может состоять [](../bots/what-are-bots.md)из вкладок, [](../tabs/what-are-tabs.md)ботов и функций расширений обмена сообщениями и требует обновления манифеста приложения [Teams,](#update-your-app-manifest) чтобы указать, что приложение доступно для собраний [](../messaging-extensions/what-are-messaging-extensions.md)
 
-* Чтобы ваше приложение функционировало в жизненном цикле собрания в качестве вкладки, оно должно поддерживать настраиваемые вкладки в области [groupchat](../resources/schema/manifest-schema.md#configurabletabs) (см. создание [вкладки группы).](../build-your-first-app/build-channel-tab.md) Поддержка области позволит вашему приложению в чатах до `groupchat` [и](teams-apps-in-meetings.md#pre-meeting-app-experience) [после](teams-apps-in-meetings.md#post-meeting-app-experience) собрания.
+* Чтобы приложение функционировало в жизненном цикле собрания в качестве вкладки, оно должно поддерживать настраиваемые вкладки в области [groupchat](../resources/schema/manifest-schema.md#configurabletabs) (см. создание [вкладки группы).](../build-your-first-app/build-channel-tab.md) Поддержка области позволяет вашему приложению в чатах до `groupchat` [и](teams-apps-in-meetings.md#pre-meeting-app-experience) [после](teams-apps-in-meetings.md#post-meeting-app-experience) собрания.
 
 * Для параметров URL-адреса API собраний может потребоваться и tenantId. Они доступны в составе `meetingId` `userId` клиентского SDK Teams и бота. [](/onedrive/find-your-office-365-tenant-id) Кроме того, с помощью проверки подлинности tab SSO можно получить надежные сведения об ИД пользователя и [клиенте.](../tabs/how-to/authentication/auth-aad-sso.md)
 
@@ -30,15 +30,15 @@ ms.locfileid: "49797766"
 
 ## <a name="meeting-apps-api-reference"></a>Справочник по API приложений для собраний
 
-|API|Описание|Запрос|Источник|
+|API|Описание|Запрос|Source|
 |---|---|----|---|
 |**GetUserContext**| Получите контекстную информацию, чтобы отобразить релевантный контент на вкладке Teams. |_**microsoftTeams.getContext( ( ) => { /*...* / } )**_|SDK клиента Microsoft Teams|
 |**GetParticipant**|Этот API позволяет боту получать сведения об участниках по их ид.|**GET** _**/v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
-|**NotificationSignal** |Сигналы собрания будут доставляться с помощью следующего существующего API уведомлений о беседе (для чата пользователя-бота). Этот API позволяет разработчикам сигнализировать на основе действия пользователя, чтобы показать диалоговое окно собрания.|**POST** _**/v3/conversations/{conversationId}/activities**_|Microsoft Bot Framework SDK|
+|**NotificationSignal** |Сигналы собрания будут доставляться с помощью следующего существующего API уведомлений о беседе (для чата пользователя-бота). Этот API позволяет разработчикам сигнализировать о действии пользователя, чтобы показать диалоговое окно собрания.|**POST** _**/v3/conversations/{conversationId}/activities**_|Microsoft Bot Framework SDK|
 
 ### <a name="getusercontext"></a>GetUserContext
 
-Обратитесь к нашему контексту ["Получить" в документации](../tabs/how-to/access-teams-context.md#getting-context-by-using-the-microsoft-teams-javascript-library) по вкладке Teams, чтобы получить инструкции по идентификации получения контекстных сведений для содержимого вкладки. В рамках функции "Расстановка собраний" добавлено новое значение для полезной нагрузки ответа:
+Обратитесь к нашему контексту ["Получить" в документации](../tabs/how-to/access-teams-context.md#getting-context-by-using-the-microsoft-teams-javascript-library) по вкладке Teams, чтобы получить инструкции по идентификации получения контекстных сведений для содержимого вкладки. В рамках возможностей для собраний добавлено новое значение для полезной нагрузки ответа:
 
 ✔ **meetingId**: используется вкладками при запуске в контексте собрания.
 
@@ -54,8 +54,8 @@ ms.locfileid: "49797766"
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| string | Да | Идентификатор собрания доступен с помощью Bot Invoke и клиентского SDK Teams.|
-|**participantId**| string | Да | ParticipantId — это ИД пользователя. Он доступен в SSO табули, вызове бота и клиентском SDK Teams. Настоятельно рекомендуется получить participantId из SSO tab. |
+|**meetingId**| string | Да | Идентификатор собрания доступен через Bot Invoke и Teams Client SDK.|
+|**participantId**| string | Да | ParticipantId — это ИД пользователя. Он доступен в SSO tab, Bot Invoke и клиентском SDK Teams. Настоятельно рекомендуется получить participantId из SSO tab. |
 |**tenantId**| string | Да | Для пользователей клиента требуется tenantId. Он доступен в SSO tab, Bot Invoke и клиентском SDK Teams. Настоятельно рекомендуется получить tenantId из SSO tab. |
 
 #### <a name="example"></a>Пример
@@ -228,10 +228,10 @@ POST /v3/conversations/{conversationId}/activities
 
 ### <a name="update-your-app-manifest"></a>Обновление манифеста приложения
 
-Возможности приложения для собраний объявляются в манифесте приложения с помощью **настраиваемых** областейtabs  ->   и **массивов контекста.** *Область* определяет, кому и *где будет* доступно ваше приложение, а также контекст.
+Возможности приложения для собраний объявляются в манифесте приложения с помощью настраиваемых областейtabs  ->   и **массивов контекста.** *Область* определяет, кому и *где будет* доступно ваше приложение, а также контекст.
 
 > [!NOTE]
-> Используйте [схему Developer Preview для](../resources/schema/manifest-schema-dev-preview.md) использования в манифесте приложения.
+> Используйте Developer Preview [манифеста,](../resources/schema/manifest-schema-dev-preview.md) чтобы попробовать это в манифесте приложения.
 
 ```json
 
@@ -262,7 +262,7 @@ POST /v3/conversations/{conversationId}/activities
 * **privateChatTab**: вкладка в заголке группового чата между набором пользователей, не в контексте команды или собрания.
 * **meetingChatTab**: вкладка в заголке группового чата между набором пользователей в контексте запланированного собрания.
 * **meetingDetailsTab**: вкладка в заголовке представления сведений о собрании календаря.
-* **meetingSidePanel**: панель на собрании, открытая через единую панель (u-bar).
+* **meetingSidePanel**: панель собрания, открытая через единую панель (u-bar).
 
 > [!NOTE]
 > Свойство "Context" в настоящее время не поддерживается и, следовательно, игнорируется на мобильных клиентах
@@ -280,7 +280,7 @@ POST /v3/conversations/{conversationId}/activities
 
 ✔ удостоверение пользователя *должно* быть подтверждено с помощью [SSO вкладок.](../tabs/how-to/authentication/auth-aad-sso.md) После этой проверки подлинности приложение может получить роль пользователя с помощью API GetParticipant.
 
- ✔ зависимости от роли пользователя, теперь приложение сможет представлять специальные возможности. Например, приложение для опроса может разрешить создание нового опроса только организаторам и организаторам.
+ ✔ зависимости от роли пользователя, приложение теперь сможет представлять специальные возможности. Например, приложение для опроса может разрешить создание опроса только организаторам и организаторам.
 
 > **ПРИМЕЧАНИЕ.** Назначения ролей можно изменить во время собрания.  *См.* [роли в собрании Teams.](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019) 
 
@@ -290,10 +290,10 @@ POST /v3/conversations/{conversationId}/activities
 
 ✔ в манифесте приложения добавьте **sidePanel** в массив **контекста,** как описано выше.
 
-✔ собрании, а также во всех сценариях приложение будет отрисовки на вкладке собрания, шириной 320px. Для этого необходимо оптимизировать вкладку. *См.* интерфейс [FrameContext](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/framecontext?view=msteams-client-js-latest&preserve-view=true
+✔ собрания, как и во всех сценариях, приложение будет отрисовыно на вкладке собрания шириной 320px. Для этого необходимо оптимизировать вкладку. *См.* интерфейс [FrameContext](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/framecontext?view=msteams-client-js-latest&preserve-view=true
 )
 
-✔Соотделите в [SDK Teams,](../tabs/how-to/access-teams-context.md#user-context) чтобы использовать API **userContext** для маршрутов запросов соответствующим образом.
+✔Относите запросы в [SDK Teams](../tabs/how-to/access-teams-context.md#user-context) для использования API **userContext.**
 
 ✔ для вкладок обратитесь к потоку проверки [подлинности Teams.](../tabs/how-to/authentication/auth-flow-tab.md) Поток проверки подлинности для вкладок очень похож на поток проверки подлинности для веб-сайтов. Таким образом, вкладки могут использовать OAuth 2.0 напрямую. *См. также,* платформа удостоверений Майкрософт и поток кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 
@@ -307,9 +307,9 @@ POST /v3/conversations/{conversationId}/activities
 
 ✔ для вкладок обратитесь к потоку проверки [подлинности Teams.](../tabs/how-to/authentication/auth-flow-tab.md)
 
-✔ использовать API [](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true) уведомлений, чтобы сигнализировать о том, что необходимо инициализировать уведомление о пузырьке.
+✔ использовать [API NotificationSignal,](create-apps-for-teams-meetings.md#notificationsignal-api) чтобы сигнализировать о том, что необходимо инициализировать уведомление о пузырьковом сигнале.
 
-✔ Как часть полезной нагрузки запроса на уведомление, включайте URL-адрес, где находится демонстрация содержимого.
+✔ как часть полезной нагрузки запроса на уведомление, включайте URL-адрес, где находится демонстрация содержимого.
 
 ✔ собрания не должен использовать модуль задачи.
 

@@ -4,12 +4,12 @@ description: Сведения о том, как использовать Сое�
 ms.topic: how-to
 localization_priority: Priority
 keywords: соединитель teams o365
-ms.openlocfilehash: 36d30c0be3d562c7a71989355249f0cfa76e797d
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+ms.openlocfilehash: edf84ad8902fa3b4a1827ffde415097aac978532
+ms.sourcegitcommit: 843da1730443ff8474a05295f60a6b376ed140da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014084"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50073091"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -254,7 +254,7 @@ ms.locfileid: "50014084"
             "body":[
                 {
                 "type": "TextBlock",
-                "text": "For Samples and Templates, see [https://adaptivecards.io/samples](https://adaptivecards.io/samples)",
+                "text": "For Samples and Templates, see [https://adaptivecards.io/samples](https://adaptivecards.io/samples)"
                 }
             ]
          }

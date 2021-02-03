@@ -1,43 +1,126 @@
 ---
-title: Создание и отправка модуля задач
+title: Создать и отправить модуль задачи
 author: clearab
-description: Обработка начального действия Invoke и ответ с модулем задачи из команды расширения для обмена сообщениями о действиях
+description: Обработка действия первоначального вызова и реагирование с помощью модуля задачи из команды расширения сообщения о действии
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: f5f96e71517d45f52d17d2d70c583ec1eec3babd
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 58fb7e1ff5690b33c2e23f68529f05869afa9016
+ms.sourcegitcommit: ce74f821660b1258c72b3c3f71c1cf177e7e92ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675484"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072877"
 ---
-# <a name="create-and-send-the-task-module"></a>Создание и отправка модуля задач
+# <a name="create-and-send-the-task-module"></a>Создать и отправить модуль задачи
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-Если вы не заполняете модуль задач параметрами, определенными в манифесте приложения, вам потребуется создать модуль задачи, который будет представлен пользователям. Можно использовать либо адаптивную карту, либо встроенное веб-представление.
+Если вы не заполняете модуль задачи параметрами, определенными в манифесте приложения, необходимо создать модуль задачи для пользователей. Используйте адаптивную карточку или внедренное представление веб-страницы.
 
-## <a name="the-initial-invoke-request"></a>Начальный запрос вызова
+## <a name="the-initial-invoke-request"></a>Начальный запрос на вызов
 
-При использовании этого метода служба получает `Activity` объект типа `composeExtension/fetchTask`, и вам потребуется ответить на `task` объект, содержащий либо адаптивную карту, либо URL-адрес встроенного веб-представления. В дополнение к стандартным свойствам действия Bot, начальная полезная нагрузка вызова содержит следующие метаданные запроса:
+С помощью этого метода служба получит объект типа, и вам необходимо ответить объектом, содержащим адаптивную карту или URL-адрес внедренного представления `Activity` `composeExtension/fetchTask` `task` веб-страницы. Помимо стандартных свойств активности бота, полезные данные начального вызова содержат следующие метаданные запроса:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса; должно быть `invoke`. |
-|`name`| Тип команды, выданной службе. Будет `composeExtension/fetchTask`. |
-|`from.id`| Идентификатор пользователя, отправившего запрос. |
-|`from.name`| Имя пользователя, отправившего запрос. |
-|`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
+|`type`| Тип запроса. Это должен быть `invoke` . |
+|`name`| Тип команды, выдаемой службе. Это должен быть `composeExtension/fetchTask` . |
+|`from.id`| ИД пользователя, отправив запрос. |
+|`from.name`| Имя пользователя, отправив запрос. |
+|`from.aadObjectId`| ИД объекта Azure Active Directory пользователя, который отправил запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
-|`channelData.channel.id`| Идентификатор канала (если запрос был сделан в канале). |
-|`channelData.team.id`| Идентификатор группы (если запрос был сделан в канале). |
-|`value.commandId` | Содержит идентификатор вызываемой команды. |
-|`value.commandContext` | Контекст, который инициировал событие. Будет `compose`. |
-|`value.context.theme` | Тема клиента пользователя, которая полезна для встроенного форматирования веб-представления. Будет иметь `default` `contrast` или `dark`. |
+|`channelData.channel.id`| ИД канала (если запрос был сделан в канале). |
+|`channelData.team.id`| ИД команды (если запрос был сделан в канале). |
+|`value.commandId` | Содержит ИД вызываемой команды. |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
+|`value.context.theme` | Тема клиента пользователя, полезная для форматирования внедренного представления веб-страницы. Это должен `default` быть или `contrast` `dark` . |
 
-### <a name="example-fetchtask-request"></a>Пример запроса Фетчтаск
+### <a name="payload-activity-properties-when-invoked-a-task-module-from-11-chat-are-listed-in-the-following-section"></a>В следующем разделе перечислены свойства действий полезных нагрузки при вызове модуля задачи из чата 1:1:
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+|Имя свойства|Назначение|
+|---|---|
+|`type`| Тип запроса. Это должен быть `invoke` . |
+|`name`| Тип команды, выдаемой службе. Это должен быть `composeExtension/fetchTask` . |
+|`from.id`| ИД пользователя, отправив запрос. |
+|`from.name`| Имя пользователя, отправив запрос. |
+|`from.aadObjectId`| ИД объекта Azure Active Directory пользователя, который отправил запрос. |
+|`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
+|`channelData.source.name`| Имя источника, из которого вызывается модуль задачи. |
+|`ChannelData.legacy. replyToId`| Получает или задает ИД сообщения, на которое отправляется ответ. |
+|`value.commandId` | Содержит ИД вызываемой команды. |
+|`value.commandContext` | Контекст, который инициирует событие. Это должен быть `compose` . |
+|`value.context.theme` | Тема клиента пользователя, полезная для форматирования внедренного представления веб-страницы. Это должен `default` быть или `contrast` `dark` . |
+
+### <a name="payload-activity-properties-when-invoked-a-task-module-from-a-group-chat-are-listed-in-the-following-section"></a>Свойства действия полезных нагрузки при вызове модуля задачи из группового чата перечислены в следующем разделе:
+
+|Имя свойства|Назначение|
+|---|---|
+|`type`| Тип запроса. Это должен быть `invoke` . |
+|`name`| Тип команды, выдаемой службе. Это должно быть `composeExtension/fetchTask` . |
+|`from.id`| ИД пользователя, отправив запрос. |
+|`from.name`| Имя пользователя, отправив запрос. |
+|`from.aadObjectId`| ИД объекта Azure Active Directory пользователя, который отправил запрос. |
+|`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
+|`channelData.source.name`| Имя источника, из которого вызывается модуль задачи. |
+|`ChannelData.legacy. replyToId`| Получает или задает ИД сообщения, на которое отправляется ответ. |
+|`value.commandId` | Содержит ИД вызываемой команды. |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
+|`value.context.theme` | Тема клиента пользователя, полезная для форматирования внедренного представления веб-страницы. Это должен `default` быть или `contrast` `dark` . |
+
+### <a name="payload-activity-properties-when-invoked-a-task-module-from-a-channel-new-post-are-listed-in-the-following-section"></a>Свойства активности полезных нагрузки при вызове модуля задачи из канала (новая публикация) перечислены в следующем разделе:
+
+|Имя свойства|Назначение|
+|---|---|
+|`type`| Тип запроса. Это должен быть `invoke` . |
+|`name`| Тип команды, выдаемой службе. Это должен быть `composeExtension/fetchTask` . |
+|`from.id`| ИД пользователя, отправив запрос. |
+|`from.name`| Имя пользователя, отправив запрос. |
+|`from.aadObjectId`| ИД объекта Azure Active Directory пользователя, который отправил запрос. |
+|`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
+|`channelData.channel.id`| ИД канала (если запрос был сделан в канале). |
+|`channelData.team.id`| ИД команды (если запрос был сделан в канале). |
+|`channelData.source.name`| Имя источника, из которого вызывается модуль задачи. |
+|`ChannelData.legacy. replyToId`| Получает или задает ИД сообщения, на которое отправляется ответ. |
+|`value.commandId` | Содержит ИД вызываемой команды. |
+|`value.commandContext` | Контекст, который инициирует событие. Это должен быть `compose` . |
+|`value.context.theme` | Тема клиента пользователя, полезная для форматирования внедренного представления веб-страницы. Это должен `default` быть или `contrast` `dark` . |
+
+### <a name="payload-activity-properties-when-invoked-a-task-module-from-a-channel-reply-to-thread-are-listed-in-the-following-section"></a>Свойства активности полезных нагрузки при вызове модуля задачи из канала (ответ на поток) перечислены в следующем разделе:
+
+|Имя свойства|Назначение|
+|---|---|
+|`type`| Тип запроса. Это должен быть `invoke` . |
+|`name`| Тип команды, выдаемой службе. Это должно быть `composeExtension/fetchTask` . |
+|`from.id`| ИД пользователя, отправив запрос. |
+|`from.name`| Имя пользователя, отправив запрос. |
+|`from.aadObjectId`| ИД объекта Azure Active Directory пользователя, который отправил запрос. |
+|`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
+|`channelData.channel.id`| ИД канала (если запрос был сделан в канале). |
+|`channelData.team.id`| ИД команды (если запрос был сделан в канале). |
+|`channelData.source.name`| Имя источника, из которого вызывается модуль задачи. |
+|`ChannelData.legacy. replyToId`| Получает или задает ИД сообщения, на которое отправляется ответ. |
+|`value.commandId` | Содержит ИД вызываемой команды. |
+|`value.commandContext` | Контекст, который инициирует событие. Это должен быть `compose` . |
+|`value.context.theme` | Тема клиента пользователя, полезная для форматирования внедренного представления веб-страницы. Это должен `default` быть или `contrast` `dark` . |
+
+### <a name="payload-activity-properties-when-invoked-a-task-module-from-a-command-box-are-listed-in-the-following-section"></a>Свойства активности полезных нагрузки при вызове модуля задачи из командного окна перечислены в следующем разделе:
+
+|Имя свойства|Назначение|
+|---|---|
+|`type`| Тип запроса. Это должно быть `invoke` . |
+|`name`| Тип команды, выдаемой службе. Это должен быть `composeExtension/fetchTask` . |
+|`from.id`| ИД пользователя, отправив запрос. |
+|`from.name`| Имя пользователя, отправив запрос. |
+|`from.aadObjectId`| ИД объекта Azure Active Directory пользователя, который отправил запрос. |
+|`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
+|`channelData.source.name`| Имя источника, из которого вызывается модуль задачи. |
+|`value.commandId` | Содержит ИД вызываемой команды. |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
+|`value.context.theme` | Тема клиента пользователя, полезная для форматирования внедренного представления веб-страницы. Это должен `default` быть или `contrast` `dark` . |
+
+### <a name="example-fetchtask-request"></a>Пример запроса fetchTask
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
@@ -46,7 +129,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node.js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreviewBot extends TeamsActivityHandler {
@@ -56,7 +139,7 @@ class TeamsMessagingExtensionsActionPreviewBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -117,11 +200,11 @@ class TeamsMessagingExtensionsActionPreviewBot extends TeamsActivityHandler {
 
 * * *
 
-## <a name="initial-invoke-request-from-a-message"></a>Запрос начального вызова из сообщения
+## <a name="initial-invoke-request-from-a-message"></a>Исходный запрос на вызов из сообщения
 
-Когда Bot вызывается из сообщения, а не из области создания или панели команд, `value` объект в исходном запросе будет содержать сведения о сообщении, из которого было вызвано расширение системы обмена сообщениями. Ниже приведен пример этого объекта. `reactions` Массивы `mentions` и массивы являются необязательными и не будут представлены, если в исходном сообщении нет реакции или упоминаний.
+Когда бот вызывается из сообщения, а не области составить или панели команд, объект в исходном запросе должен содержать сведения о сообщении, из которых вызывается расширение обмена `value` сообщениями. Пример этого объекта см. в следующем разделе. Массивы и массивы являются необязательными и не присутствуют, если в исходном сообщении нет реакции или `reactions` `mentions` упоминаний.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
@@ -133,7 +216,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node.js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -145,7 +228,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -217,35 +300,35 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-## <a name="respond-to-the-fetchtask"></a>Ответ на Фетчтаск
+## <a name="respond-to-the-fetchtask"></a>Ответ на fetchTask
 
-Ответьте на запрос Invoke с `task` объектом, который содержит `taskInfo` объект со адаптивной картой или URL-адресом или простым строковым сообщением.
-
-|Имя свойства|Назначение|
-|---|---|
-|`type`| Может быть либо `continue` представление формы, либо `message` простое всплывающее окно. |
-|`value`| Либо `taskInfo` объект для формы, либо сообщение `string` для сообщения. |
-
-Схема для объекта Таскинфо:
+Ответьте на запрос на вызов с помощью объекта, который содержит объект с адаптивной карточкой или URL-адресом веб-страницы, или `task` `taskInfo` простого строки сообщения.
 
 |Имя свойства|Назначение|
 |---|---|
-|`title`| Название модуля задачи.|
-|`height`| Может быть либо целым числом (в пикселях) `small`, `medium`либо `large`,,.|
-|`width`| Может быть либо целым числом (в пикселях) `small`, `medium`либо `large`,,.|
+|`type`| Может представлять форму или для `continue` `message` простого всплывающее всплывающее окна. |
+|`value`| Либо `taskInfo` объект для формы, либо объект a `string` для сообщения. |
+
+Схема объекта taskInfo:
+
+|Имя свойства|Назначение|
+|---|---|
+|`title`| Заголовок модуля задачи.|
+|`height`| Это должно быть либо integer (в пикселях), либо `small` `medium` , `large` .|
+|`width`| Это должно быть либо integer (в пикселях), либо `small` `medium` , `large` .|
 |`card`| Адаптивная карточка, определяющая форму (если она используется).
-|`url`| URL-адрес, который должен быть открыт в модуле задач как Внедренное представление веб-сайта.|
-|`fallbackUrl`| Если клиент не поддерживает функцию модуля задач, этот URL-адрес открывается на вкладке браузера. |
+|`url`| URL-адрес, открываемый внутри модуля задачи в качестве внедренного представления веб-страницы.|
+|`fallbackUrl`| Если клиент не поддерживает функцию модуля задачи, этот URL-адрес открывается на вкладке браузера. |
 
 ### <a name="with-an-adaptive-card"></a>С помощью адаптивной карточки
 
-При использовании адаптивной карты необходимо ответить на `task` объект с `value` объектом, содержащим адаптивную карточку.
+При использовании адаптивной карточки необходимо ответить объектом, содержащим `task` `value` адаптивную карточку.
 
-#### <a name="example-fetchtask-response-with-an-adaptive-card"></a>Пример ответа Фетчтаск с помощью адаптивной карточки
+#### <a name="example-fetchtask-response-with-an-adaptive-card"></a>Пример отклика fetchTask с адаптивной картой
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
-В этом примере используется [пакет NuGet адаптивекардс](https://www.nuget.org/packages/AdaptiveCards) в дополнение к пакету SDK для Bot Framework.
+В этом примере помимо пакета Bot Framework SDK используется пакет [AdaptiveCards NuGet.](https://www.nuget.org/packages/AdaptiveCards)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
@@ -296,7 +379,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node.js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -344,15 +427,18 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
-{
+ {
   "task": {
     "type": "continue",
     "value": {
-      "card":
-      {
+      "title": "Task module title",
+      "height": 500,
+      "width": "medium",
+      "card": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "type": "AdaptiveCard",
         "version": "1.0",
         "body": [
@@ -381,8 +467,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
               }
             ]
           }
-        ],
-        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+        ]
       }
     }
   }
@@ -391,11 +476,11 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-### <a name="with-an-embedded-web-view"></a>С внедренным представлением веб-сайта
+### <a name="with-an-embedded-web-view"></a>С внедренным представлением веб-страницы
 
-При использовании внедренного веб-представления необходимо ответить на `task` объект с `value` объектом, содержащим URL-адрес веб-формы, которую нужно загрузить. Домены любого URL-адреса, который вы хотите загрузить, должны быть `validDomains` включены в массив манифеста приложения. В [документации модуля задачи](~/task-modules-and-cards/what-are-task-modules.md) представлены полные сведения о создании внедренного веб-представления.
+При использовании внедренного представления веб-страницы необходимо ответить объектом, содержащим URL-адрес веб-формы, который вы `task` `value` хотите загрузить. Домены любого URL-адреса, который требуется загрузить, должны быть включены в массив `validDomains` манифеста приложения. Полные [сведения о создании](~/task-modules-and-cards/what-are-task-modules.md) внедренного представления веб-страницы см. в документации по модулям задач.
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
@@ -427,7 +512,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejstabjavascript"></a>[JavaScript/Node. js](#tab/javascript)
+# <a name="javascriptnodejs"></a>[JavaScript/Node.js](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -448,7 +533,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -467,10 +552,89 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
+### <a name="request-to-install-your-conversational-bot"></a>Запрос на установку бота для беседы
+
+Если приложение содержит бота для беседы, установите бота в беседе перед загрузкой модуля задачи. Полезно получить дополнительный контекст для модуля задачи. Типичный пример этого сценария — получить список для заполнения управления "Выбор людей" или списка каналов в команде.
+
+Когда расширение обмена сообщениями получает вызов, проверьте, установлен ли бот в текущем контексте для `composeExtension/fetchTask` упрощения потока. Например, проверьте поток с помощью вызова получения составов. Если бот не установлен, возвращает адаптивную карточку с действием, которое запрашивает у пользователя установку бота. См. действие в следующем примере. У пользователя должно быть разрешение на установку приложений в этом расположении для проверки. Если установка приложения неуспешна, пользователь получает сообщение для связи с администратором.
+
+#### <a name="example-of-the-response"></a>Пример ответа:
+
+```json
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Looks like you haven't used Disco in this team/chat"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Continue",
+      "data": {
+        "msteams": {
+          "justInTimeInstall": true
+        }
+      }
+    }
+  ],
+  "version": "1.0"
+}
+```
+
+После установки бот получает еще одно сообщение об вызове `name = composeExtension/submitAction` с и `value.data.msteams.justInTimeInstall = true` .
+
+#### <a name="example-of-the-invoke"></a>Пример вызова:
+
+```json
+{
+  "value": {
+    "commandId": "giveKudos",
+    "commandContext": "compose",
+    "context": {
+      "theme": "default"
+    },
+    "data": {
+      "msteams": {
+        "justInTimeInstall": true
+      }
+    }
+  },
+  "conversation": {
+    "id": "19:7705841b240044b297123ad7f9c99217@thread.skype"
+  },
+  "name": "composeExtension/submitAction",
+  "imdisplayname": "Bob Smith"
+}
+```
+
+Ответ задачи на вызов должен быть похож на ответ установленного бота.
+
+#### <a name="example-of-just-in-time-installation-of-app-with-adaptive-card"></a>Пример установки приложения с адаптивной картой во времени: 
+
+```csharp
+private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
+  {
+      //Read the card json and create attachment.
+         string[] paths = { ".", "Resources", fileName };
+         var adaptiveCardJson = File.ReadAllText(Path.Combine(paths));
+         var adaptiveCardAttachment = new Attachment()
+            {
+                ContentType = "application/vnd.microsoft.card.adaptive",
+                Content = JsonConvert.DeserializeObject(adaptiveCardJson),
+            };
+            return adaptiveCardAttachment;
+        }
+```
+
+* * *
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Если вы разрешите пользователям отправку ответа из модуля задач, необходимо обработать действие отправки.
+Если вы разрешаете пользователям отправлять ответ из модуля задачи, необходимо обработать действие отправки.
 
-* [Создание модуля задачи и ответ на него](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
+* [Создание модуля задачи и реагирование на него](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
 
 [!include[messaging-extension-learn-more](~/includes/messaging-extensions/learn-more.md)]
