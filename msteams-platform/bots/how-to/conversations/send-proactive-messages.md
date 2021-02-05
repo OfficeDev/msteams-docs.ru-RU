@@ -1,150 +1,142 @@
 ---
-title: Отправлять активные сообщения
-author: clearab
-description: Отправка активных сообщений с помощью робота Microsoft Teams.
+title: отправка упреждающих сообщений
+description: описывает, как отправлять упреждающие сообщения с помощью бота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 2dfb8e18243079ca38d505f4b80deb7abf2de32f
-ms.sourcegitcommit: 52732714105fac07c331cd31e370a9685f45d3e1
+Keywords: send a message get user ID channel ID conversation ID
+ms.openlocfilehash: 2d7ff10469a181bb06fda5029c8f6b2725b0402d
+ms.sourcegitcommit: 7db6eabe3ef128ac7f14b32d07e9e86c995d187f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46874851"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50103607"
 ---
 # <a name="send-proactive-messages"></a>Отправлять активные сообщения
 
 [!INCLUDE [v4 to v3 pointer](~/includes/v4-to-v3-pointer-bots.md)]
 
-Упреждающее сообщение — это любое сообщение, отправляемое сервером-роботом, которое не находится в прямом ответе на запрос пользователя. Сюда могут относиться такие сообщения, как:
+Упреждающие сообщения — это любое сообщение, отправленное ботом, которое не является прямым ответом на запрос пользователя. Это может включать следующие сообщения:
 
-* Приветственные сообщения
+* Приветствия
 * Уведомления
 * Запланированные сообщения
 
-Чтобы ваш робот мог отправлять упреждающее сообщение, он должен иметь доступ к пользователю, группе или группе, которым вы хотите отправить сообщение. Для группового чата или команды это означает, что приложение, которое содержит ваш Bot, должно быть сначала установлено в этом расположении. Вы можете принудительно [установить приложение с помощью Graph](#proactively-install-your-app-using-graph) в группе, если это необходимо, или использовать [политику приложений](/microsoftteams/teams-custom-app-policies-and-settings) для передачи приложений в Teams и пользователей в клиенте. Для пользователей ваше приложение необходимо установить для этого пользователя, или пользователь должен входить в группу, в которой установлено приложение.
+Чтобы бот мог отправить упреждающие сообщения, он должен иметь доступ к пользователю, групповому чату или команде, в которую вы хотите отправить сообщение. Для группового чата или команды это означает, что приложение, содержа которое содержит бота, должно быть сначала установлено в этом расположении. Вы можете [заблаговременно установить](#proactively-install-your-app-using-graph) приложение с помощью Graph в команде, если это необходимо, или использовать политику приложений для раздатки приложений командам и пользователям в клиенте. [](/microsoftteams/teams-custom-app-policies-and-settings) Для пользователей ваше приложение либо должно быть установлено для пользователя, либо пользователь должен быть частью команды, в которой установлено ваше приложение.
 
-Отправка упреждающего сообщения отличается от отправки обычного сообщения в том случае, если вы не будете использовать активное сообщение `turnContext` для ответа. Кроме того, перед отправкой сообщения вам может потребоваться создать беседу (например, новый чат "один к одному" или "новый поток бесед в канале"). Вы не можете создать новый чат группы или новый канал в команде "активные системы обмена сообщениями".
+Отправка упреждающего сообщения отличается от отправки обычного сообщения. При этом нет активного `turnContext` ответа. Кроме того, перед отправкой сообщения может потребоваться создать беседу. Например, новый чат "один к одному" или новый поток беседы в канале. Невозможно создать новый групповой чат или новый канал в команде с упреждающего обмена сообщениями.
 
-На высоком уровне описаны действия, которые необходимо выполнить для отправки упреждающего сообщения:
+На высоком уровне действия, необходимые для отправки упреждающего сообщения:
 
-1. [Получение идентификатора пользователя или группы или канала](#get-the-user-id-or-teamchannel-id) (при необходимости).
-1. [Создайте обсуждение или](#create-the-conversation) цепочку сообщений (при необходимости).
-1. [Получение идентификатора беседы](#get-the-conversation-id).
-1. [Отправьте сообщение](#send-the-message).
+1. [Получите ИД пользователя или ид команды или канала](#get-the-user-id-or-teamchannel-id) (при необходимости).
+1. [Создайте беседу или цепочку](#create-the-conversation) бесед (при необходимости).
+1. [Получите ИД беседы.](#get-the-conversation-id)
+1. [Отправьте сообщение.](#send-the-message)
 
-Фрагменты кода, приведенные в разделе " [примеры](#examples) ", предназначены для создания беседы "один к одному", в разделе " [ссылки](#references) " приведены ссылки на готовые рабочие примеры для бесед и групп и каналов "один к одному".
+Фрагменты кода в разделе [примеров](#examples) для создания беседы "один к одному". Ссылки на полные рабочие примеры для бесед "один к одному", а также для групп или каналов см. в [примерах кода.](#code-samples)
 
-## <a name="get-the-user-id-or-teamchannel-id"></a>Получение идентификатора пользователя или группы или канала
+## <a name="get-the-user-id-or-teamchannel-id"></a>Get the user ID or team/channel ID
 
-Если вам нужно создать новую беседу или цепочку бесед в канале, сначала необходимо получить правильный идентификатор для создания беседы. Вы можете получить или получить этот идентификатор несколькими способами:
+Чтобы создать беседу или цепочку бесед в канале, необходим правильный ИД. Этот ИД можно получить несколькими способами:
 
-1. Когда приложение устанавливается в каком-либо конкретном контексте, вы получите [ `onMembersAdded` действие](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
-1. Когда новый пользователь добавляется в контекст, в котором установлено приложение, вы получите [ `onMembersAdded` действие](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
-1. Вы можете получить [список каналов](~/bots/how-to/get-teams-context.md) в группе, в которой установлено приложение.
-1. Вы можете получить [список членов](~/bots/how-to/get-teams-context.md) группы, установленной на вашем приложении.
-1. Все действия, получаемые с помощью Bot, будут содержать необходимые сведения.
+1. Когда приложение устанавливается в любом конкретном контексте, вы получите [ `onMembersAdded` действие.](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+1. При добавлении нового пользователя в контекст, в котором установлено приложение, вы получите [ `onMembersAdded` действие.](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+1. Вы можете получить [список каналов](~/bots/how-to/get-teams-context.md) в команде, в которая установлено ваше приложение.
+1. Вы можете получить [список участников команды,](~/bots/how-to/get-teams-context.md) в которая установлено ваше приложение.
+1. Все действия, получаемые ботом, должны содержать необходимые сведения.
 
-Вне зависимости от того, как вы получаете информацию, вам потребуется хранить `tenantId` и один из, `userId` или, `channelId` чтобы создать новую беседу. Вы также можете использовать `teamId` для создания нового обсуждения в разделе Общие/по умолчанию в канале команды.
+Независимо от того, как вы получаете информацию, вам потребуется сохранить беседу или создать `tenantId` `userId` новую `channelId` беседу. Вы также можете создать цепочку беседы в общем или канале команды по `teamId` умолчанию.
 
-`userId`Уникально для идентификатора ленты и определенного пользователя, их нельзя повторно использовать в Боты. `channelId`Является глобальным, однако для отправки упреждающего сообщения каналу _необходимо_ установить его в команде.
+Уникальный для вашего ИД бота и конкретного пользователя, вы не можете повторно использовать их `userId` между ботами. Однако перед отправкой упреждающего сообщения в канал бот должен быть установлен в `channelId` команде.
 
 ## <a name="create-the-conversation"></a>Создание беседы
 
-После получения сведений о пользователе и канале необходимо создать беседу, если она еще не существует (или вы не знаете `conversationId` ). Беседа следует создавать только один раз; обязательно сохраните `conversationId` значение или `conversationReference` объект для использования в будущем.
+После получения сведений о пользователе или канале необходимо создать беседу, если она еще не существует или вы не `conversationId` знаете. Необходимо создать беседу только один раз и убедиться, что вы сохраняете значение или объект для `conversationId` `conversationReference` использования в будущем.
 
-## <a name="get-the-conversation-id"></a>Получение идентификатора беседы
+## <a name="get-the-conversation-id"></a>Получить ИД беседы
 
-После создания беседы вы будете использовать `conversationReference` объект, `conversationId` а также и объект `tenantId` для отправки сообщения. Этот идентификатор можно получить с помощью создания беседы или сохранения его из любого действия, отправленного Вам из этого контекста. Убедитесь, что этот идентификатор хранится.
+После создания беседы используйте объект `conversationReference` или `conversationId` отправьте `tenantId` сообщение. Этот ИД можно получить, создав беседу или с помощью любого действия, отправленного вам из этого контекста. Убедитесь, что вы сохраняете этот ИД.
 
 ## <a name="send-the-message"></a>Отправка сообщения
 
-Теперь, когда у вас есть нужные сведения об адресе, вы можете отправить сообщение. Если вы используете пакет SDK, то можете использовать этот `continueConversation` метод, а также выполнить `conversationId` `tenantId` прямой вызов API.  Вам потребуется `conversationParameters` правильно настроить успешную отправку сообщения — просмотрите [примеры](#examples) ниже или воспользуйтесь одним из примеров, приведенных в разделе " [ссылки](#references) ".
+Теперь, когда у вас есть правильные сведения об адресе, вы можете отправить сообщение. Если вы используете SDK, вы сделаете это с помощью метода, а также для прямого `continueConversation` `conversationId` вызова `tenantId` API. Чтобы успешно отправить сообщение, необходимо `conversationParameters` правильно настроить его. См. [раздел примеров](#examples) или используйте один из примеров, перечисленных в разделе [примеров](#code-samples) кода.
 
-## <a name="best-practices-for-proactive-messaging"></a>Рекомендации по использованию упреждающего обмена сообщениями
+## <a name="best-practices-for-proactive-messaging"></a>Практические методики упреждающего обмена сообщениями
 
-Отправка упреждающих сообщений пользователям может быть очень эффективным способом общения с пользователями. Однако с точки зрения это сообщение может быть полностью нежелательным и, в случае приветственных сообщений, будет использоваться при первом взаимодействии с приложением. Таким образом, очень важно использовать эту функцию экономно (не спама для пользователей) и предоставить достаточно информации, чтобы пользователи могли понимать, почему они помещаются в сообщениях.
+Отправка упреждающих сообщений пользователям — очень эффективный способ общения с пользователями. Однако с их точки зрения это сообщение может отображаться полностью незащищенным, и в случае приветствия это сообщение впервые взаимодействует с вашим приложением. Поэтому очень важно использовать эту функцию не слишком часто, не рассылая пользователям нежелаую почту, и предоставлять достаточно информации, чтобы пользователи могли понять, почему они рассылаются.
 
-### <a name="welcome-messages"></a>Приветственные сообщения
+### <a name="welcome-messages"></a>Приветствия
 
-При использовании упреждающего обмена сообщениями для отправки пользователю приветственного сообщения необходимо помнить, что для большинства пользователей, получивших сообщение, не будет контекста для их получения. Это также происходит в первый раз, когда он будет взаимодействовать с вашим приложением; можно создать хорошее первое впечатление. Лучшие приветственные сообщения будут включать:
+При использовании упреждающих сообщений для отправки приветствия пользователю необходимо помнить, что для большинства людей, получающих сообщение, нет контекста для его получения. Это также первый раз, когда они взаимодействуют с вашим приложением. Это ваша возможность создать хорошее первое впечатление. Лучшие приветствия должны включать следующие сообщения:
 
-* **Почему пользователь получает сообщение.** Он должен быть очень очевидным, чтобы пользователь получал сообщение. Если ваш Bot был установлен в канале и вы отправили приветственное сообщение всем пользователям, сообщите им о том, в каком канале он был установлен и кто его установил.
-* **Что вы предоставляете.** Что можно делать с приложением? Какое значение можно перенести?
-* **Что делать дальше.** Пригласите их, чтобы испытать команду или взаимодействовать с приложением каким бы то ни было способом.
+* **Почему пользователь получает сообщение.** Пользователю должно быть понятно, почему он получает сообщение. Если бот был установлен в канале и вы отправили приветствие всем пользователям, дайте им знать, в каком канале он был установлен, и, возможно, кто его установил.
+* **Что вы предлагаете.** Что они могут делать с вашим приложением? Какое значение вы можете им дать?
+* **Что они должны делать дальше.** Предложите им опробовать команду или каким-либо образом взаимодействовать с приложением.
 
-Помните, что неудачные приветственные сообщения могут приводить к блокированию ленты. Вы должны тратить много времени на создание приветственных сообщений и перебирать их, если это не оказывает желаемого результата.
+Помните, что неудовлетворительные приветствия могут привести к блокированию бота пользователями. Потратите много времени на то, чтобы создать приветствия, и итерации на них, если они не имеют желаемого эффекта.
 
-### <a name="notification-messages"></a>Сообщения уведомления
+### <a name="notification-messages"></a>Уведомления
 
-При использовании упреждающего обмена сообщениями для отправки уведомлений необходимо убедиться, что у пользователей есть четко заданный путь, чтобы выполнять общие действия на основе уведомления и ясно понять, почему возникло уведомление. К хорошим сообщениям уведомления обычно относятся:
+При использовании упреждающих сообщений для отправки уведомлений необходимо убедиться, что у пользователей есть четкий путь для распространенных действий на основе уведомления и четкого понимания причины отправки уведомления. К хорошим уведомлениям обычно относятся:
 
-* **Что случилось.** Четкое указание того, что произошло с причиной уведомления.
-* **Каков результат.** Должно быть ясно, какие элементы/вещи были обновлены, чтобы получить уведомление.
-* **Кто/что активировал его.** Кто или что приняло действие, вызвавшее отправку уведомления.
-* **Что может делать пользователи в ответе.** Облегчить пользователям выполнение действий в соответствии с вашими уведомлениями.
-* **Как пользователи могут отказаться.** Необходимо указать путь для пользователей, чтобы отказаться от дополнительных уведомлений.
+* **Что случилось.** Четкое указание того, что стало причиной уведомления.
+* **Результат.** Чтобы вызвать уведомление, необходимо четко знать, какой элемент или что было обновлено.
+* **Кто и что инициировало его.** Кто или какие действия привели к отправлению уведомления.
+* **Что пользователи могут делать в ответе.** Сделайте так, чтобы пользователи легко делайте действия на основе ваших уведомлений.
+* **Как пользователи могут отказаться от этого.** Необходимо предоставить пользователям путь для отказа от дополнительных уведомлений.
 
-## <a name="proactively-install-your-app-using-graph"></a>Заактивная установка приложения с помощью Graph
+## <a name="proactively-install-your-app-using-graph"></a>Упреждающие установки приложения с помощью Graph
 
 > [!Note]
-> Активная установка приложений с помощью Microsoft Graph в настоящее время находится на стадии бета-тестирования.
+> Упреждающие установки приложений с помощью Microsoft Graph в настоящее время находятся в бета-версии.
 
-Иногда это может потребоваться для упреждающего сообщения пользователей, которые ранее не устанавливали приложение или не работали с ним. Например, вы хотите использовать [Communicator компании](~/samples/app-templates.md#company-communicator) для отправки сообщений во всю организацию. В этом сценарии можно использовать API Graph для профилактической установки приложения для пользователей, а затем кэшировать необходимые значения из события, которое `conversationUpdate` получит ваше приложение после установки.
+Иногда может потребоваться заблаговременно отправлять сообщения пользователям, которые ранее не устанавливали или не взаимодействовали с вашим приложением. Например, вы хотите использовать company [communicator](~/samples/app-templates.md#company-communicator) для отправки сообщений всей организации. В этом сценарии можно использовать API Graph для упреждающего установки приложения для пользователей, а затем кэшировать необходимые значения из события, получаемого вашим приложением `conversationUpdate` после установки.
 
-Вы можете устанавливать только приложения, которые находятся в каталоге организационных приложений или в магазине приложений Teams.
+Вы можете устанавливать только приложения, которые находятся в каталоге приложений организации или в магазине приложений Teams.
 
-Ознакомьтесь с разделом [Установка приложений для пользователей](/graph/teams-proactive-messaging) в документации Graph, а также об [активных установках и обмене сообщениями в Teams с Microsoft Graph](../../../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md). Кроме того, на платформе GitHub существует [пример Microsoft .NET Framework](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176)  .
+См. ["Установка приложений для пользователей"](/graph/api/userteamwork-post-installedapps) в документации по Graph, а также в документации по профилактической установке ботов и обмену сообщениями [в Teams с помощью Microsoft Graph.](../../../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md) На платформе [GitHub также](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176) есть пример платформы Microsoft .NET Framework.
 
 ## <a name="examples"></a>Примеры
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
-private async Task MessageAllMembersAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+[Route("api/notify")]
+[ApiController]
+public class NotifyController : ControllerBase
 {
-    var teamsChannelId = turnContext.Activity.TeamsGetChannelId();
-    var serviceUrl = turnContext.Activity.ServiceUrl;
-    var credentials = new MicrosoftAppCredentials(_appId, _appPassword);
-    ConversationReference conversationReference = null;
+    private readonly IBotFrameworkHttpAdapter _adapter;
+    private readonly string _appId;
+    private readonly ConcurrentDictionary<string, ConversationReference> _conversationReferences;
 
-    //Get the set of member IDs to send the message to
-    var members = await GetPagedMembers(turnContext, cancellationToken);
-
-    foreach (var teamMember in members)
+    public NotifyController(IBotFrameworkHttpAdapter adapter, IConfiguration configuration, ConcurrentDictionary<string, ConversationReference> conversationReferences)
     {
-        var proactiveMessage = MessageFactory.Text($"Hello {teamMember.GivenName} {teamMember.Surname}. I'm a Teams conversation bot.");
-
-        var conversationParameters = new ConversationParameters
-        {
-            IsGroup = false,
-            Bot = turnContext.Activity.Recipient,
-            Members = new ChannelAccount[] { teamMember },
-            TenantId = turnContext.Activity.Conversation.TenantId,
-        };
-        //create the new one-to-one conversations
-        await ((BotFrameworkAdapter)turnContext.Adapter).CreateConversationAsync(
-            teamsChannelId,
-            serviceUrl,
-            credentials,
-            conversationParameters,
-            async (t1, c1) =>
-            {
-                //Get the conversationReference
-                conversationReference = t1.Activity.GetConversationReference();
-                //Send the proactive message
-                await ((BotFrameworkAdapter)turnContext.Adapter).ContinueConversationAsync(
-                    _appId,
-                    conversationReference,
-                    async (t2, c2) =>
-                    {
-                        await t2.SendActivityAsync(proactiveMessage, c2);
-                    },
-                    cancellationToken);
-            },
-            cancellationToken);
+        _adapter = adapter;
+        _conversationReferences = conversationReferences;
+        _appId = configuration["MicrosoftAppId"] ?? string.Empty;
     }
 
-    await turnContext.SendActivityAsync(MessageFactory.Text("All messages have been sent."), cancellationToken);
+    public async Task<IActionResult> Get()
+    {
+        foreach (var conversationReference in _conversationReferences.Values)
+        {
+            await ((BotAdapter)_adapter).ContinueConversationAsync(_appId, conversationReference, BotCallback, default(CancellationToken));
+        }
+        
+        // Let the caller know proactive messages have been sent
+        return new ContentResult()
+        {
+            Content = "<html><body><h1>Proactive messages have been sent.</h1></body></html>",
+            ContentType = "text/html",
+            StatusCode = (int)HttpStatusCode.OK,
+        };
+    }
+
+    private async Task BotCallback(ITurnContext turnContext, CancellationToken cancellationToken)
+    {
+        // If you encounter permission-related errors when sending this message, see
+        // https://aka.ms/BotTrustServiceUrl
+        await turnContext.SendActivityAsync("proactive hello");
+    }
 }
 ```
 
@@ -237,7 +229,7 @@ POST /v3/conversations
 }
 ```
 
-Необходимо указать идентификатор пользователя и идентификатор клиента. Если вызов завершается успешно, API возвращает следующий объект Response.
+Необходимо предоставить ид пользователя, и ид клиента. В случае успешного вызова API возвращается со следующим объектом ответа.
 
 ```json
 {
@@ -247,21 +239,17 @@ POST /v3/conversations
 
 ---
 
-## <a name="references"></a>Ссылки
+## <a name="code-samples"></a>Примеры кода
 
-Ниже приведены официальные примеры профилактического упреждающего обмена сообщениями.
+Официальные примеры упреждающих сообщений:
 
-|  Нет.  | Имя примера           | Описание                                                                      | .NET    | JavaScript   | Python  |
-|:--:|:----------------------|:---------------------------------------------------------------------------------|:--------|:-------------|:--------|
-|57|Основные сведения о беседах Teams  | Демонстрируются основные принципы бесед в Microsoft Teams, включая отправку одного и того же упреждающего сообщения.|[&nbsp;Ядро .NET](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [Python](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot)|
-|58|Запуск нового потока в канале     | Демонстрация создания нового потока в канале. |[&nbsp;Ядро .NET](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel)|[Python](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
+| Имя примера           | Описание                                                                      | .NET    | JavaScript   | Python  |
+|:----------------------|:---------------------------------------------------------------------------------|:--------|:-------------|:--------|
+|Основные принципы бесед Teams  | В этой теме показано, как начать беседы в Teams, включая отправку сообщений "один к одному".|[.NET &nbsp; Core](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [Python](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot)|
+|Запуск нового потока в канале     | Демонстрирует создание нового потока в канале. |[.NET &nbsp; Core](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel)|[Python](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
 
-В приведенном ниже примере показано минимальное количество сведений, необходимых для отправки упреждающего сообщения (без использования `conversationReference` объекта). Этот пример может быть полезен, если вы используете вызовы REST API напрямую или не сохраняли полные `conversationReference` объекты.
-
-* [Активные системы обмена сообщениями Teams](https://github.com/clearab/teamsProactiveMessaging)
-
-## <a name="view-additional-code"></a>Просмотр дополнительного кода
+## <a name="view-additional-code-samples"></a>Просмотр дополнительных примеров кода
 >
 > [!div class="nextstepaction"]
-> [**Примеры кода для активных сообщений Teams**](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
+> [**Примеры кода упреждающих сообщений Teams**](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
 >
