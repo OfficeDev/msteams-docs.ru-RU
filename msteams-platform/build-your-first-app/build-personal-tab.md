@@ -5,12 +5,12 @@ description: Быстро создайте личную вкладку Microsoft
 ms.author: lajanuar
 ms.date: 11/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: 17263303207ffb5bee333f1ec0e655096b1062ee
-ms.sourcegitcommit: 00c657e3bf57d3b92aca7da941cde47a2eeff4d0
+ms.openlocfilehash: 083d1425fe43a9b150732aa35bef34e2349c6ea6
+ms.sourcegitcommit: b99ed616db734371e4af4594b7e895c5b05737c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49911914"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162903"
 ---
 # <a name="build-a-personal-tab-for-microsoft-teams"></a>Создание личной вкладки для Microsoft Teams
 
@@ -148,7 +148,7 @@ componentDidMount(){
 После с хранения состояния, предоставленного обработом изменения темы, предоберите условную логику для отрисовки стилей вкладки на основе текущей темы. В следующем примере показан базовый способ сделать это:
 1. Проверьте текущую тему в `isTheme` .
 2. Создайте `newTheme` объект со свойствами CSS, соответствующими текущей теме.
-3. Примените CSS к корневому HTML-элементу содержимого вкладки ( `<div>` ).
+3. Примените CSS к корневому HTML-элементу содержимого вкладки ( `<div style={newTheme}>` ).
 
 ```JavaScript
 let newTheme
@@ -174,7 +174,7 @@ if (isTheme === "default") {
 
 Поздравляем! У вас есть приложение Teams с личной вкладками, которая упрощает поиск важных контактов в вашей организации.
 
-## <a name="learn-more"></a>Дополнительные сведения
+## <a name="learn-more"></a>Подробнее
 
 * Следуйте [нашим рекомендациям по проектированию](../tabs/design/tabs.md) и создавайте [шаблоны](../concepts/design/design-teams-app-ui-templates.md) пользовательского интерфейса, готовые к выпуску, чтобы удобо поработать.
 * В [этой теме рассматриваются вопросы, которые следует учитывать при](../tabs/design/tabs-mobile.md) мобильных устройствах для вкладок.

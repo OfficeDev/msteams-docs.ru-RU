@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: Overview
 keywords: Teams proactive messaging chat installation Graph
-ms.openlocfilehash: ee1620c8fdcaeeecf0e8b0992017bf6f2fbacbf9
-ms.sourcegitcommit: d0e71ea63af2f67eba75ba283ec46cc7cdf87d75
+ms.openlocfilehash: 4f26b4d2f4e82fcf50b7a35c46bcd07e5afecf19
+ms.sourcegitcommit: b99ed616db734371e4af4594b7e895c5b05737c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731974"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50162896"
 ---
 # <a name="enable-proactive-bot-installation-and-proactive-messaging-in-teams-with-microsoft-graph-public-preview"></a>Включить упреждающие установки ботов и упреждающие сообщения в Teams с помощью Microsoft Graph (public Preview)
 
@@ -66,7 +66,7 @@ ms.locfileid: "49731974"
 Для начала вам потребуется бот для [](../../concepts/bots/bot-conversations/bots-conv-proactive.md) [Teams](../../bots/how-to/create-a-bot-for-teams.md) с профилактическими возможностями обмена [](../../concepts/deploy-and-publish/overview.md#publish-to-your-organizations-app-catalog) сообщениями и опубликованными в каталоге приложений вашей организации или [в AppSource.](https://appsource.microsoft.com/) [](../../concepts/deploy-and-publish/overview.md)
 
 >[!TIP]
-> Готовый [**к**](../..//samples/app-templates.md#company-communicator) Communicator шаблон приложения компании обеспечивает широковещательный обмен сообщениями и является хорошей основой для создания вашего упреждающего приложения-бота.
+> Готовый [**к**](../..//samples/app-templates.md#company-communicator) Communicator шаблон приложения позволяет использовать широковещательные сообщения и является хорошей основой для создания приложения-бота.
 
 ### <a name="-get-the-teamsappid-for-your-app"></a>✔ Получите `teamsAppId` приложение
 
@@ -79,7 +79,7 @@ ms.locfileid: "49731974"
 **HTTP-запрос GET:**
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
 ```
 
 Запрос возвращает `teamsApp`  объект. Возвращенный объект — это созданный каталогом приложения и отличается от "id:", который вы предоставили в манифесте `id`  приложения Teams:
@@ -98,24 +98,24 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId eq
 }
 ```
 
-**2.** Если ваше приложение уже загружено или загружено неогруженным пользователем в личной области, вы можете получить: `teamsAppId`
+**2.** Если ваше приложение уже было загружено или загружено неогруженным для пользователя в личной области, вы можете получить: `teamsAppId`
 
-**Справка по странице Microsoft Graph:** [список приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-beta&tabs=http&preserve-view=true)
+**Справка по странице Microsoft Graph:** [список приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
 **HTTP-запрос GET:**
 
 ```http
-GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
+GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
 ```
 
-**3.** Если ваше приложение уже загружено или загружено неогруженным для канала в области команды, можно получить: `teamsAppId`
+**3.** Если ваше приложение уже загружено или загружено неогруженным для канала в области группы, можно получить: `teamsAppId`
 
-**Справка по странице Microsoft Graph:** [список приложений в команде](/graph/api/team-list-installedapps?view=graph-rest-beta&tabs=http&preserve-view=true)
+**Справка по странице Microsoft Graph: список** [приложений в команде](/graph/api/team-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
 **HTTP-запрос GET:**
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{team-id}/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
+GET https://graph.microsoft.com/v1.0/teams/{team-id}/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
 ```
 
 >[!TIP]
@@ -123,36 +123,36 @@ GET https://graph.microsoft.com/beta/teams/{team-id}/installedApps?$expand=teams
 
 ### <a name="-determine-whether-your-bot-is-currently-installed-for-a-message-recipient"></a>✔ определить, установлен ли бот для получателя сообщения
 
-**Справка по странице Microsoft Graph:** [список приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-beta&tabs=http&preserve-view=true)
+**Справка по странице Microsoft Graph:** [список приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
 **HTTP-запрос GET:**
 
 ```http
-GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
+GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
 ```
 
-Этот запрос возвращает пустой массив, если приложение не установлено, или массив с одним объектом [teamsAppInstallation,](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) если он был установлен.
+Этот запрос возвращает пустой массив, если приложение не установлено, или массив с одним объектом [teamsAppInstallation,](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true) если он был установлен.
 
 ### <a name="-install-your-app"></a>✔ установки приложения
 
-**Справка по странице Microsoft Graph:** [установка приложения для пользователя](/graph/api/userteamwork-post-installedapps?view=graph-rest-beta&tabs=http&preserve-view=true)
+**Справка по странице Microsoft Graph:** [установка приложения для пользователя](/graph/api/userteamwork-post-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
 **HTTP-запрос POST:**
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps
+POST https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps
 {
-   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/{teamsAppId}"
 }
 ```
 
 Если у пользователя запущен Microsoft Teams, он может сразу увидеть установку приложения. Кроме того, может потребоваться перезапуск, чтобы увидеть установленное приложение.
 
-### <a name="-retrieve-the-conversation-chatid"></a>✔ извлечения **chatId беседы**
+### <a name="-retrieve-the-conversation-chatid"></a>✔ получения **chatId беседы**
 
 Когда приложение установлено для пользователя, бот получит уведомление о событии, которое будет содержать необходимые сведения для `conversationUpdate` [](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) отправки упреждающего сообщения.
 
-Кроме `chatId` того, его можно получить следующим образом:
+Кроме того, можно получить данные `chatId` следующим образом:
 
 **Справка по странице Microsoft Graph: получить** [чат](/graph/api/chat-get?view=graph-rest-beta&tabs=http&preserve-view=true)
 
