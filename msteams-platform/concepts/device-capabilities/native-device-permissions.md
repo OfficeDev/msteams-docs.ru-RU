@@ -1,70 +1,67 @@
 ---
-title: Запрос разрешений устройства для вкладки
+title: Запрос разрешений устройства для приложения Microsoft Teams
+keywords: Разрешения на доступ к возможностям приложений Teams
 description: Обновление манифеста приложения для запроса доступа к функциям, которые обычно требуют согласия пользователя
 ms.topic: how-to
-keywords: Разработка вкладок teams
-ms.openlocfilehash: a2893fb2905584eac4b398287d431f406c23b12b
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+ms.openlocfilehash: 0343754eacbb6088a3e44fa5df8ec90e3b10b076
+ms.sourcegitcommit: e3b6bc31059ec77de5fbef9b15c17d358abbca0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014532"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50231612"
 ---
-# <a name="request-device-permissions-for-your-microsoft-teams-tab"></a><span data-ttu-id="1cdde-104">Запрос разрешений устройства для вкладки Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="1cdde-104">Request device permissions for your Microsoft Teams tab</span></span>
+# <a name="request-device-permissions-for-your-microsoft-teams-app"></a><span data-ttu-id="34dff-104">Запрос разрешений устройства для приложения Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="34dff-104">Request device permissions for your Microsoft Teams app</span></span>
 
-<span data-ttu-id="1cdde-105">Возможно, вы захотите расширить вкладку с помощью функций, которые требуют доступа к функциям нативных устройств, например:</span><span class="sxs-lookup"><span data-stu-id="1cdde-105">You might want to enrich your tab with features that require access to native device functionality like:</span></span>
-
-> [!div class="checklist"]
->
-> * <span data-ttu-id="1cdde-106">Камера</span><span class="sxs-lookup"><span data-stu-id="1cdde-106">Camera</span></span>
-> * <span data-ttu-id="1cdde-107">Микрофон</span><span class="sxs-lookup"><span data-stu-id="1cdde-107">Microphone</span></span>
-> * <span data-ttu-id="1cdde-108">Расположение</span><span class="sxs-lookup"><span data-stu-id="1cdde-108">Location</span></span>
-> * <span data-ttu-id="1cdde-109">Уведомления</span><span class="sxs-lookup"><span data-stu-id="1cdde-109">Notifications</span></span>
+<span data-ttu-id="34dff-105">Вы можете обогатить свое приложение Teams встроенными возможностями устройства, такими как камера, микрофон и расположение.</span><span class="sxs-lookup"><span data-stu-id="34dff-105">You can enrich your Teams app with native device capabilities, such as camera, microphone, and location.</span></span> <span data-ttu-id="34dff-106">В этом документе содержится руководство по запросу согласия пользователя и доступу к разрешениям на доступ к устройствам.</span><span class="sxs-lookup"><span data-stu-id="34dff-106">This document guides you on how to request user consent and access the native device permissions.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1cdde-110">Чтобы интегрировать возможности камеры и изображений в мобильном приложении Microsoft Teams, см. функции камеры и [изображений в Teams.](../../concepts/device-capabilities/mobile-camera-image-permissions.md)</span><span class="sxs-lookup"><span data-stu-id="1cdde-110">To integrate camera and image capabilities within your Microsoft Teams mobile app, see [Camera and image capabilities in Teams.](../../concepts/device-capabilities/mobile-camera-image-permissions.md)</span></span>
+> <span data-ttu-id="34dff-107">Чтобы интегрировать возможности мультимедиа в мобильном приложении Microsoft Teams, см. ["Интеграция возможностей мультимедиа".](mobile-camera-image-permissions.md)</span><span class="sxs-lookup"><span data-stu-id="34dff-107">To integrate media capabilities within your Microsoft Teams mobile app, see [Integrate media capabilities](mobile-camera-image-permissions.md).</span></span>
 
-> [!IMPORTANT]
->
-> * <span data-ttu-id="1cdde-111">В настоящее время мобильный клиент Teams поддерживает только доступ к возможностям , и через возможности нативных устройств и доступен во всех конструкциях приложения, включая `camera` `gallery` `mic` `location` вкладки.</span><span class="sxs-lookup"><span data-stu-id="1cdde-111">At present, Teams mobile client only supports access to `camera`, `gallery`, `mic`, and `location` through native device capabilities and is available on all app constructs including tabs.</span></span> </br>
-> * <span data-ttu-id="1cdde-112">Поддержка , `camera` `gallery` и `mic` включена через [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="1cdde-112">Support for `camera`, `gallery`, and `mic` is enabled through [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true).</span></span> <span data-ttu-id="1cdde-113">Для одного захвата изображения можно использовать [**API captureImage.**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="1cdde-113">For single image capture you may use [**captureImage API**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true).</span></span>
-> * <span data-ttu-id="1cdde-114">Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="1cdde-114">Support for `location` is enabled through [**getLocation API**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true).</span></span> <span data-ttu-id="1cdde-115">Рекомендуется использовать этот API, так как В настоящее время [**API**](../../resources/schema/manifest-schema.md#devicepermissions) географического местонахождения не полностью поддерживается на всех классических клиентах.</span><span class="sxs-lookup"><span data-stu-id="1cdde-115">It's recommended you use this API as [**geolocation API**](../../resources/schema/manifest-schema.md#devicepermissions) is currently not fully supported on all desktop clients.</span></span>
+## <a name="native-device-permissions"></a><span data-ttu-id="34dff-108">Разрешения для нативных устройств</span><span class="sxs-lookup"><span data-stu-id="34dff-108">Native device permissions</span></span>
 
-## <a name="device-permissions"></a><span data-ttu-id="1cdde-116">Разрешения для устройств</span><span class="sxs-lookup"><span data-stu-id="1cdde-116">Device permissions</span></span>
+<span data-ttu-id="34dff-109">Необходимо запросить разрешения устройства для доступа к возможностям нативных устройств.</span><span class="sxs-lookup"><span data-stu-id="34dff-109">You must request the device permissions to access native device capabilities.</span></span> <span data-ttu-id="34dff-110">Разрешения устройства работают аналогично для всех конструкций приложения, таких как вкладки, модули задач или расширения обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="34dff-110">The device permissions work similarly for all app constructs, such as tabs, task modules, or messaging extensions.</span></span> <span data-ttu-id="34dff-111">Чтобы управлять разрешениями устройств, пользователь должен перейти на страницу разрешений в параметрах Teams.</span><span class="sxs-lookup"><span data-stu-id="34dff-111">The user must go to the permissions page in Teams settings to manage device permissions.</span></span>
+<span data-ttu-id="34dff-112">Доступ к возможностям устройств позволяет создавать на платформе Teams более богатые возможности, например:</span><span class="sxs-lookup"><span data-stu-id="34dff-112">By accessing the device capabilities, you can build richer experiences on the Teams platform, such as:</span></span>
+* <span data-ttu-id="34dff-113">Захват и просмотр изображений.</span><span class="sxs-lookup"><span data-stu-id="34dff-113">Capture and view images.</span></span>
+* <span data-ttu-id="34dff-114">Записывать короткие видеоролики и делиться ими.</span><span class="sxs-lookup"><span data-stu-id="34dff-114">Record and share short videos.</span></span>
+* <span data-ttu-id="34dff-115">Зафиксировать звуковые memos и сохранить их для использования в дальнейшем.</span><span class="sxs-lookup"><span data-stu-id="34dff-115">Record audio memos and save them for later use.</span></span>
+* <span data-ttu-id="34dff-116">Используйте сведения о расположении пользователя для отображения соответствующей информации.</span><span class="sxs-lookup"><span data-stu-id="34dff-116">Use the location information of the user to display relevant information.</span></span>
 
-<span data-ttu-id="1cdde-117">Доступ к разрешениям устройства пользователя позволяет создавать гораздо более богатые возможности, например:</span><span class="sxs-lookup"><span data-stu-id="1cdde-117">Accessing a user’s device permissions allows you to build much richer experiences, for example:</span></span>
+## <a name="access-device-permissions"></a><span data-ttu-id="34dff-117">Доступ к разрешениям устройства</span><span class="sxs-lookup"><span data-stu-id="34dff-117">Access device permissions</span></span>
 
-* <span data-ttu-id="1cdde-118">Запись и совместное видео</span><span class="sxs-lookup"><span data-stu-id="1cdde-118">Record and share short videos</span></span>
-* <span data-ttu-id="1cdde-119">Запись коротких звуковых memos и их сохранение для более поздней 2016 г.</span><span class="sxs-lookup"><span data-stu-id="1cdde-119">Record short audio memos and save them for later</span></span>
-* <span data-ttu-id="1cdde-120">Использование сведений о расположении пользователей для отображения соответствующей информации</span><span class="sxs-lookup"><span data-stu-id="1cdde-120">Use user location information to display relevant information</span></span>
+<span data-ttu-id="34dff-118">Клиентский [SDK JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для Microsoft Teams предоставляет средства, необходимые [](#manage-permissions) мобильному приложению Teams для доступа к разрешениям устройства пользователя и создания более удобного интерфейса.</span><span class="sxs-lookup"><span data-stu-id="34dff-118">The [Microsoft Teams JavaScript client SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) provides the tools necessary for your Teams mobile app to access the user’s [device permissions](#manage-permissions) and build a richer experience.</span></span>
 
-<span data-ttu-id="1cdde-121">Хотя доступ к этим функциям является стандартным в большинстве современных веб-браузеров, необходимо дать Teams знать, какие функции вы хотите использовать, обновив манифест приложения.</span><span class="sxs-lookup"><span data-stu-id="1cdde-121">While access to these features is standard in most modern web browsers, you need to let Teams know which features you’d like to use by updating your app manifest.</span></span> <span data-ttu-id="1cdde-122">Это позволит вам запросить разрешения так же, как в браузере, когда ваше приложение работает в настольном клиенте Teams.</span><span class="sxs-lookup"><span data-stu-id="1cdde-122">This will allow you to ask for permissions, the same way you would in a browser, while your app is running on the Teams desktop client.</span></span>
+<span data-ttu-id="34dff-119">Хотя доступ к этим функциям является стандартным в современных веб-браузерах, необходимо сообщить Teams о функции, которые вы используете, обновив манифест приложения.</span><span class="sxs-lookup"><span data-stu-id="34dff-119">While access to these features is standard in modern web browsers, you must inform Teams about the features you use by updating your app manifest.</span></span> <span data-ttu-id="34dff-120">Это обновление позволяет запросить разрешения, пока приложение работает в настольном клиенте Teams.</span><span class="sxs-lookup"><span data-stu-id="34dff-120">This update allows you to ask for permissions while your app runs on the Teams desktop client.</span></span>
 
-## <a name="manage-permissions"></a><span data-ttu-id="1cdde-123">Управление разрешениями</span><span class="sxs-lookup"><span data-stu-id="1cdde-123">Manage permissions</span></span>
+> [!NOTE] 
+> <span data-ttu-id="34dff-121">В настоящее время поддержка возможностей мультимедиа в Microsoft Teams доступна только для мобильных клиентов.</span><span class="sxs-lookup"><span data-stu-id="34dff-121">Currently, Microsoft Teams support for media capabilities is only available for mobile clients.</span></span>
 
-# <a name="desktop"></a>[<span data-ttu-id="1cdde-124">Desktop</span><span class="sxs-lookup"><span data-stu-id="1cdde-124">Desktop</span></span>](#tab/desktop)
+## <a name="manage-permissions"></a><span data-ttu-id="34dff-122">Управление разрешениями</span><span class="sxs-lookup"><span data-stu-id="34dff-122">Manage permissions</span></span>
 
-1. <span data-ttu-id="1cdde-125">Откройте Teams.</span><span class="sxs-lookup"><span data-stu-id="1cdde-125">Open Teams.</span></span>
-1. <span data-ttu-id="1cdde-126">В правом верхнем углу окна выберите значок профиля.</span><span class="sxs-lookup"><span data-stu-id="1cdde-126">In the upper right corner of the window, select your profile icon.</span></span>
-1. <span data-ttu-id="1cdde-127">Выберите **"Разрешения**  ->  **параметров"** в выпадаемом меню.</span><span class="sxs-lookup"><span data-stu-id="1cdde-127">Select **Settings** -> **Permissions** from the drop-down menu.</span></span>
-1. <span data-ttu-id="1cdde-128">Выберите нужные параметры.</span><span class="sxs-lookup"><span data-stu-id="1cdde-128">Choose your desired settings.</span></span>
+<span data-ttu-id="34dff-123">Пользователь может управлять разрешениями устройств в параметрах  Teams, выбирая разрешения "Разрешить" или "Запретить" для определенных приложений. </span><span class="sxs-lookup"><span data-stu-id="34dff-123">A user can manage device permissions in Teams settings by selecting **Allow** or **Deny** permissions to specific apps.</span></span>
+ 
+# <a name="desktop"></a>[<span data-ttu-id="34dff-124">Desktop</span><span class="sxs-lookup"><span data-stu-id="34dff-124">Desktop</span></span>](#tab/desktop)
 
-![Экран параметров рабочего стола для разрешений устройства](../../assets/images/tabs/device-permissions.png)
+1. <span data-ttu-id="34dff-125">Откройте приложение Teams.</span><span class="sxs-lookup"><span data-stu-id="34dff-125">Open your Teams app.</span></span>
+1. <span data-ttu-id="34dff-126">Выберите значок профиля в правом верхнем углу окна.</span><span class="sxs-lookup"><span data-stu-id="34dff-126">Select your profile icon in the upper right corner of the window.</span></span>
+1. <span data-ttu-id="34dff-127">Выберите **"Разрешения**  >  **параметров"** в выпадаемом меню.</span><span class="sxs-lookup"><span data-stu-id="34dff-127">Select **Settings** > **Permissions** from the drop-down menu.</span></span>
+1. <span data-ttu-id="34dff-128">Выберите нужные параметры.</span><span class="sxs-lookup"><span data-stu-id="34dff-128">Select your desired settings.</span></span>
 
-# <a name="mobile"></a>[<span data-ttu-id="1cdde-130">Мобильные устройства</span><span class="sxs-lookup"><span data-stu-id="1cdde-130">Mobile</span></span>](#tab/mobile)
+   ![Экран параметров рабочего стола для разрешений устройства](../../assets/images/tabs/device-permissions.png)
 
-1. <span data-ttu-id="1cdde-131">Откройте Teams.</span><span class="sxs-lookup"><span data-stu-id="1cdde-131">Open Teams.</span></span>
-1. <span data-ttu-id="1cdde-132">Go to **Settings**  ->  **App Permissions**.</span><span class="sxs-lookup"><span data-stu-id="1cdde-132">Go to **Settings** -> **App Permissions**.</span></span>
-1. <span data-ttu-id="1cdde-133">Выберите приложение, для которое нужно выбрать параметры.</span><span class="sxs-lookup"><span data-stu-id="1cdde-133">Select the app you need to choose settings for.</span></span>
-1. <span data-ttu-id="1cdde-134">Выберите нужные параметры.</span><span class="sxs-lookup"><span data-stu-id="1cdde-134">Choose your desired settings.</span></span>
+# <a name="mobile"></a>[<span data-ttu-id="34dff-130">Мобильные устройства</span><span class="sxs-lookup"><span data-stu-id="34dff-130">Mobile</span></span>](#tab/mobile)
 
-![Экран разрешений устройства для мобильных устройств](../../assets/images/tabs/MobilePermissions.png)
+1. <span data-ttu-id="34dff-131">Откройте Teams.</span><span class="sxs-lookup"><span data-stu-id="34dff-131">Open Teams.</span></span>
+1. <span data-ttu-id="34dff-132">Go to **Settings**  >  **App Permissions**.</span><span class="sxs-lookup"><span data-stu-id="34dff-132">Go to **Settings** > **App Permissions**.</span></span>
+1. <span data-ttu-id="34dff-133">Выберите приложение, для которого необходимо выбрать параметры.</span><span class="sxs-lookup"><span data-stu-id="34dff-133">Select the app for which you need to choose the settings.</span></span>
+1. <span data-ttu-id="34dff-134">Выберите нужные параметры.</span><span class="sxs-lookup"><span data-stu-id="34dff-134">Select your desired settings.</span></span>
+
+    ![Экран разрешений устройства для мобильных устройств](../../assets/images/tabs/MobilePermissions.png)
 
 ---
 
-## <a name="properties"></a><span data-ttu-id="1cdde-136">Свойства</span><span class="sxs-lookup"><span data-stu-id="1cdde-136">Properties</span></span>
+## <a name="specify-permissions"></a><span data-ttu-id="34dff-136">Указание разрешений</span><span class="sxs-lookup"><span data-stu-id="34dff-136">Specify permissions</span></span>
 
-<span data-ttu-id="1cdde-137">Обновите приложение, добавив и указав, какое из пяти свойств вы хотите `manifest.json` `devicePermissions` использовать в приложении:</span><span class="sxs-lookup"><span data-stu-id="1cdde-137">Update your app's `manifest.json` by adding `devicePermissions` and specifying which of the five properties you’d like to use in your application:</span></span>
+<span data-ttu-id="34dff-137">Обновите приложение, добавив и указав, какие из пяти свойств `manifest.json` `devicePermissions` вы используете в приложении:</span><span class="sxs-lookup"><span data-stu-id="34dff-137">Update your app's `manifest.json` by adding `devicePermissions` and specifying which of the five properties that you use in your application:</span></span>
 
 ``` json
 "devicePermissions": [
@@ -75,23 +72,20 @@ ms.locfileid: "50014532"
     "openExternal"
 ],
 ```
-> [!Note]
->
-> <span data-ttu-id="1cdde-138">Мультимедиа также используется для разрешений камеры на мобильных устройствах.</span><span class="sxs-lookup"><span data-stu-id="1cdde-138">Media is also used for camera permissions on mobile.</span></span>
 
-<span data-ttu-id="1cdde-139">Каждое свойство позволит вам попросить пользователя запросить свое согласие:</span><span class="sxs-lookup"><span data-stu-id="1cdde-139">Each property will allow you to prompt the user to ask for their consent:</span></span>
+<span data-ttu-id="34dff-138">Каждое свойство позволяет попросить пользователя запросить свое согласие:</span><span class="sxs-lookup"><span data-stu-id="34dff-138">Each property allows you to prompt the user to ask for their consent:</span></span>
 
-| <span data-ttu-id="1cdde-140">Свойство</span><span class="sxs-lookup"><span data-stu-id="1cdde-140">Property</span></span>      | <span data-ttu-id="1cdde-141">Описание</span><span class="sxs-lookup"><span data-stu-id="1cdde-141">Description</span></span>   |
+| <span data-ttu-id="34dff-139">Свойство</span><span class="sxs-lookup"><span data-stu-id="34dff-139">Property</span></span>      | <span data-ttu-id="34dff-140">Описание</span><span class="sxs-lookup"><span data-stu-id="34dff-140">Description</span></span>   |
 | --- | --- |
-| <span data-ttu-id="1cdde-142">media</span><span class="sxs-lookup"><span data-stu-id="1cdde-142">media</span></span>         | <span data-ttu-id="1cdde-143">разрешение на использование камеры, микрофона, динамиков и галереи мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1cdde-143">permission to use the camera, microphone, speakers, and access media gallery</span></span> |
-| <span data-ttu-id="1cdde-144">geolocation</span><span class="sxs-lookup"><span data-stu-id="1cdde-144">geolocation</span></span>   | <span data-ttu-id="1cdde-145">разрешение на возврат расположения пользователя</span><span class="sxs-lookup"><span data-stu-id="1cdde-145">permission to return the user's location</span></span>      |
-| <span data-ttu-id="1cdde-146">notifications</span><span class="sxs-lookup"><span data-stu-id="1cdde-146">notifications</span></span> | <span data-ttu-id="1cdde-147">разрешение на отправку уведомлений пользователя</span><span class="sxs-lookup"><span data-stu-id="1cdde-147">permission to send the user notifications</span></span>      |
-| <span data-ttu-id="1cdde-148">midi</span><span class="sxs-lookup"><span data-stu-id="1cdde-148">midi</span></span>          | <span data-ttu-id="1cdde-149">разрешение на отправку и получение сведений midi от цифрового музыкального инструмента</span><span class="sxs-lookup"><span data-stu-id="1cdde-149">permission to send and receive midi information from a digital musical instrument</span></span>   |
-| <span data-ttu-id="1cdde-150">openExternal</span><span class="sxs-lookup"><span data-stu-id="1cdde-150">openExternal</span></span>  | <span data-ttu-id="1cdde-151">разрешение на открытие ссылок во внешних приложениях</span><span class="sxs-lookup"><span data-stu-id="1cdde-151">permission to open links in external applications</span></span>  |
+| <span data-ttu-id="34dff-141">media</span><span class="sxs-lookup"><span data-stu-id="34dff-141">media</span></span>         | <span data-ttu-id="34dff-142">Разрешение на использование камеры, микрофона, динамиков и доступа к коллекции мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="34dff-142">Permission to use the camera, microphone, speakers, and access media gallery.</span></span> |
+| <span data-ttu-id="34dff-143">geolocation</span><span class="sxs-lookup"><span data-stu-id="34dff-143">geolocation</span></span>   | <span data-ttu-id="34dff-144">Разрешение на возврат расположения пользователя.</span><span class="sxs-lookup"><span data-stu-id="34dff-144">Permission to return the user's location.</span></span>      |
+| <span data-ttu-id="34dff-145">notifications</span><span class="sxs-lookup"><span data-stu-id="34dff-145">notifications</span></span> | <span data-ttu-id="34dff-146">Разрешение на отправку уведомлений пользователя.</span><span class="sxs-lookup"><span data-stu-id="34dff-146">Permission to send the user notifications.</span></span>      |
+| <span data-ttu-id="34dff-147">midi</span><span class="sxs-lookup"><span data-stu-id="34dff-147">midi</span></span>          | <span data-ttu-id="34dff-148">Разрешение на отправку и получение сведений о цифровом интерфейсе музыкального инструмента (MIDI) от цифрового музыкального инструмента.</span><span class="sxs-lookup"><span data-stu-id="34dff-148">Permission to send and receive  Musical Instrument Digital Interface (MIDI) information from a digital musical instrument.</span></span>   |
+| <span data-ttu-id="34dff-149">openExternal</span><span class="sxs-lookup"><span data-stu-id="34dff-149">openExternal</span></span>  | <span data-ttu-id="34dff-150">Разрешение на открытие ссылок во внешних приложениях.</span><span class="sxs-lookup"><span data-stu-id="34dff-150">Permission to open links in external applications.</span></span>  |
 
-## <a name="checking-permissions-from-your-tab"></a><span data-ttu-id="1cdde-152">Проверка разрешений на вкладке</span><span class="sxs-lookup"><span data-stu-id="1cdde-152">Checking permissions from your tab</span></span>
+## <a name="check-permissions-from-your-app"></a><span data-ttu-id="34dff-151">Проверка разрешений из приложения</span><span class="sxs-lookup"><span data-stu-id="34dff-151">Check permissions from your app</span></span>
 
-<span data-ttu-id="1cdde-153">После того как вы добавите в манифест приложения, вы можете проверить разрешения с помощью `devicePermissions` API "разрешений" HTML5 без запроса.</span><span class="sxs-lookup"><span data-stu-id="1cdde-153">Once you’ve added `devicePermissions` to your app manifest, you can check permissions using the HTML5 “permissions” API without causing a prompt.</span></span>
+<span data-ttu-id="34dff-152">После добавления в манифест приложения проверьте разрешения с помощью API разрешений `devicePermissions` **HTML5** без запроса:</span><span class="sxs-lookup"><span data-stu-id="34dff-152">After adding `devicePermissions` to your app manifest, check permissions using the **HTML5 permissions API** without causing a prompt:</span></span>
 
 ``` Javascript
 // Different query options:
@@ -111,69 +105,85 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 });
 ```
 
-## <a name="prompting-the-user"></a><span data-ttu-id="1cdde-154">Запрос пользователя</span><span class="sxs-lookup"><span data-stu-id="1cdde-154">Prompting the user</span></span>
+## <a name="use-teams-apis-to-get-device-permissions"></a><span data-ttu-id="34dff-153">Использование API Teams для получения разрешений устройства</span><span class="sxs-lookup"><span data-stu-id="34dff-153">Use Teams APIs to get device permissions</span></span>
 
-<span data-ttu-id="1cdde-155">Чтобы показать запрос на согласие на доступ к разрешениям устройства, необходимо использовать соответствующий API HTML5 или Teams.</span><span class="sxs-lookup"><span data-stu-id="1cdde-155">To show a prompt to get consent to access device permissions you need to leverage the appropriate HTML5 or Teams API.</span></span> 
+<span data-ttu-id="34dff-154">Используйте соответствующий API HTML5 или Teams, чтобы отобразить запрос на получение согласия на доступ к разрешениям устройства.</span><span class="sxs-lookup"><span data-stu-id="34dff-154">Leverage appropriate HTML5 or Teams API, to display a prompt for getting consent to access device permissions.</span></span>
 
-<span data-ttu-id="1cdde-156">Например, чтобы у пользователя получить доступ к его расположению, необходимо `getCurrentPosition` вызвать:</span><span class="sxs-lookup"><span data-stu-id="1cdde-156">For example, to prompt the user to access their location you need to call `getCurrentPosition`:</span></span>
+> [!IMPORTANT]
+> * <span data-ttu-id="34dff-155">Поддержка `camera` , `gallery` и `microphone` включена через [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="34dff-155">Support for `camera`, `gallery`, and `microphone` is enabled through [**selectMedia API**](/javascript/api/@microsoft/teams-js/media?view=msteams-client-js-latest#selectMedia_MediaInputs___error__SdkError__attachments__Media_______void_&preserve-view=true).</span></span> <span data-ttu-id="34dff-156">Используйте [**API captureImage**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true) для одного захвата изображения.</span><span class="sxs-lookup"><span data-stu-id="34dff-156">Use [**captureImage API**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true) for a single image capture.</span></span>
+> * <span data-ttu-id="34dff-157">Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="34dff-157">Support for `location` is enabled through [**getLocation API**](/javascript/api/@microsoft/teams-js/location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true).</span></span> <span data-ttu-id="34dff-158">Его необходимо использовать для определения местоположения, так как API географического расположения HTML5 в настоящее время не полностью поддерживается в настольном клиенте `getLocation API` Teams.</span><span class="sxs-lookup"><span data-stu-id="34dff-158">You must use this `getLocation API` for location, as HTML5 geolocation API is currently not fully supported on Teams desktop client.</span></span>
 
-```Javascript
-navigator.geolocation.getCurrentPosition(function (position) { /*... */ });
-```
+<span data-ttu-id="34dff-159">Например,</span><span class="sxs-lookup"><span data-stu-id="34dff-159">For example:</span></span>
+ * <span data-ttu-id="34dff-160">Чтобы у пользователя был доступ к его расположению, необходимо `getCurrentPosition()` вызвать:</span><span class="sxs-lookup"><span data-stu-id="34dff-160">To prompt the user to access their location you must call `getCurrentPosition()`:</span></span>
 
-<span data-ttu-id="1cdde-157">Чтобы использовать камеру на рабочем столе или в Интернете, Teams будет показывать запрос на разрешение при `getUserMedia` вызове:</span><span class="sxs-lookup"><span data-stu-id="1cdde-157">To use the camera on desktop or web, Teams will show a permission prompt when you call `getUserMedia`:</span></span>
+    ```Javascript
+    navigator.geolocation.getCurrentPosition    (function (position) { /*... */ });
+    ```
 
-```Javascript
-navigator.mediaDevices.getUserMedia({ audio: true, video: true });
-```
+ * <span data-ttu-id="34dff-161">Чтобы у пользователя был доступ к камере на рабочем столе или в Интернете, необходимо `getUserMedia()` вызвать:</span><span class="sxs-lookup"><span data-stu-id="34dff-161">To prompt the user to access their camera on desktop or web you must call `getUserMedia()`:</span></span>
 
-<span data-ttu-id="1cdde-158">Чтобы захватить изображение на мобильных устройствах, Teams Mobile запросит разрешение при `captureImage()` вызове:</span><span class="sxs-lookup"><span data-stu-id="1cdde-158">To capture the image on mobile, Teams mobile will ask for permission when you call `captureImage()`:</span></span>
+    ```Javascript
+    navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+    ```
 
-```Javascript
-microsoftTeams.media.captureImage((error: microsoftTeams.SdkError, files: microsoftTeams.media.File[]) => {
-  /* ... */
-});
-```
+ * <span data-ttu-id="34dff-162">Чтобы захватить изображение на мобильном устройстве, teams mobile запросит разрешение при `captureImage()` вызове:</span><span class="sxs-lookup"><span data-stu-id="34dff-162">To capture the image on mobile, Teams mobile asks for permission when you call `captureImage()`:</span></span>
 
-<span data-ttu-id="1cdde-159">При вызове уведомлений пользователю будет `requestPermission` предложено:</span><span class="sxs-lookup"><span data-stu-id="1cdde-159">Notifications will prompt the user when you call `requestPermission`:</span></span>
+    ```Javascript
+    microsoftTeams.media.captureImage((error: microsoftTeams.SdkError, files: microsoftTeams.media.File[]) => {
+      /* ... */
+    });
+    ```
 
-```Javascript
-Notification.requestPermission(function(result) { /* ... */ });
-```
+ * <span data-ttu-id="34dff-163">При вызове уведомлений пользователю будет `requestPermission()` предложено:</span><span class="sxs-lookup"><span data-stu-id="34dff-163">Notifications will prompt the user when you call `requestPermission()`:</span></span>
 
-<span data-ttu-id="1cdde-160">Чтобы использовать камеру или доступ к фотоальбому, Teams Mobile запросит разрешение при `selectMedia()` вызове:</span><span class="sxs-lookup"><span data-stu-id="1cdde-160">To use camera or access photo gallery, Teams mobile will ask permission when you call `selectMedia()`:</span></span>
-
-```JavaScript
-microsoftTeams.media.selectMedia({ maxMediaCount: 10, mediaType: microsoftTeams.media.MediaType.Image }, (error: microsoftTeams.SdkError, attachments: microsoftTeams.media.Media[]) => {
-  /* ... */
-});
-```
-
-<span data-ttu-id="1cdde-161">Чтобы использовать микрофон, Teams Mobile запросит разрешение при `selectMedia()` вызове:</span><span class="sxs-lookup"><span data-stu-id="1cdde-161">To use mic, Teams mobile will ask permission when you call `selectMedia()`:</span></span>
-
-```JavaScript 
-microsoftTeams.media.selectMedia({ maxMediaCount: 1, mediaType: microsoftTeams.media.MediaType.Audio }, (error: microsoftTeams.SdkError, attachments: microsoftTeams.media.Media[]) => {
-  /* ... */
-});
-```
-
-<span data-ttu-id="1cdde-162">Чтобы попросить пользователя поделиться расположением в интерфейсе карты, Приложение Teams Mobile запросит разрешение при `getLocation()` вызове:</span><span class="sxs-lookup"><span data-stu-id="1cdde-162">To prompt user to share location on map interface, Teams mobile will ask permission when you call `getLocation()`:</span></span>
-
-```JavaScript 
-microsoftTeams.location.getLocation({ allowChooseLocation: true, showMap: true }, (error: microsoftTeams.SdkError, location: microsoftTeams.location.Location) => {
-  /* ... *
-/});
-```
-
-# <a name="desktop"></a>[<span data-ttu-id="1cdde-163">Desktop</span><span class="sxs-lookup"><span data-stu-id="1cdde-163">Desktop</span></span>](#tab/desktop)
-
-![Запрос разрешений для настольных устройств на вкладке](~/assets/images/tabs/device-permissions-prompt.png)
-
-# <a name="mobile"></a>[<span data-ttu-id="1cdde-165">Мобильные устройства</span><span class="sxs-lookup"><span data-stu-id="1cdde-165">Mobile</span></span>](#tab/mobile)
-
-![Запрос разрешений мобильного устройства "Вкладки"](../../assets/images/tabs/MobileLocationPermission.png)
+    ```Javascript
+    Notification.requestPermission(function(result) { /* ... */ });
+    ```
 
 
-## <a name="permission-behavior-across-login-sessions"></a><span data-ttu-id="1cdde-167">Поведение разрешений в сеансах входа</span><span class="sxs-lookup"><span data-stu-id="1cdde-167">Permission behavior across login sessions</span></span>
 
-<span data-ttu-id="1cdde-168">Разрешения для устройств сохраняются для каждого сеанса входа.</span><span class="sxs-lookup"><span data-stu-id="1cdde-168">Native device permissions are stored for every login session.</span></span> <span data-ttu-id="1cdde-169">Это означает, что при входе в другой экземпляр Teams (например, на другом компьютере) разрешения устройства из предыдущих сеансов будут недоступны.</span><span class="sxs-lookup"><span data-stu-id="1cdde-169">It means that if you log into another instance of Teams (ex: on another computer), your device permissions from your previous sessions will not be available.</span></span> <span data-ttu-id="1cdde-170">Вместо этого вам потребуется повторно согласиться на использование разрешений устройства для нового сеанса входа.</span><span class="sxs-lookup"><span data-stu-id="1cdde-170">Instead, you will need to re-consent to device permissions for the new login session.</span></span> <span data-ttu-id="1cdde-171">Это также означает, что при выходе из Teams (или переключении клиентов в Teams) разрешения устройства будут удалены для предыдущего сеанса входа.</span><span class="sxs-lookup"><span data-stu-id="1cdde-171">It also means, if you log out of Teams (or switch tenants inside of Teams), your device permissions will be deleted for that previous login session.</span></span> <span data-ttu-id="1cdde-172">Помните об этом при разработке нативных разрешений устройства: те же возможности, которые вы даете согласие, будут только для _текущего_ сеанса входа в систему.</span><span class="sxs-lookup"><span data-stu-id="1cdde-172">Please keep this in mind when developing native device permissions: the native capabilities you consent to are only for your _current_ login session.</span></span>
+
+* <span data-ttu-id="34dff-164">Чтобы использовать камеру или доступ к фотоальбому, Приложение Teams mobile запросит разрешение при `selectMedia()` вызове:</span><span class="sxs-lookup"><span data-stu-id="34dff-164">To use the camera or access photo gallery, Teams mobile asks permission when you call `selectMedia()`:</span></span>
+
+    ```JavaScript
+    microsoftTeams.media.selectMedia({ maxMediaCount: 10, mediaType: microsoftTeams.media.MediaType.Image }, (error: microsoftTeams.SdkError, attachments: microsoftTeams.media.Media[]) => {
+      /* ... */
+    );
+    ```
+
+* <span data-ttu-id="34dff-165">Чтобы использовать микрофон, Мобильный телефон Teams запросит разрешение при `selectMedia()` вызове:</span><span class="sxs-lookup"><span data-stu-id="34dff-165">To use the microphone, Teams mobile asks permission when you call `selectMedia()`:</span></span>
+
+    ```JavaScript 
+    microsoftTeams.media.selectMedia({ maxMediaCount: 1, mediaType: microsoftTeams.media.MediaType.Audio }, (error: microsoftTeams.SdkError, attachments: microsoftTeams.media.Media[]) => {
+      /* ... */
+    });
+    ```
+
+* <span data-ttu-id="34dff-166">Чтобы попросить пользователя поделиться данными о расположении в интерфейсе карты, Приложение Teams Mobile запросит разрешение при `getLocation()` вызове:</span><span class="sxs-lookup"><span data-stu-id="34dff-166">To prompt the user to share location on the map interface, Teams mobile asks permission when you call `getLocation()`:</span></span>
+
+    ```JavaScript 
+    microsoftTeams.location.getLocation({ allowChooseLocation: true, showMap: true }, (error: microsoftTeams.SdkError, location: microsoftTeams.location.Location) => {
+      /* ... *
+    /});
+    ```
+# <a name="desktop"></a>[<span data-ttu-id="34dff-167">Desktop</span><span class="sxs-lookup"><span data-stu-id="34dff-167">Desktop</span></span>](#tab/desktop)
+
+   ![Запрос разрешений для настольных устройств на вкладке](~/assets/images/tabs/device-permissions-prompt.png)
+
+# <a name="mobile"></a>[<span data-ttu-id="34dff-169">Мобильные устройства</span><span class="sxs-lookup"><span data-stu-id="34dff-169">Mobile</span></span>](#tab/mobile)
+
+   ![Запрос разрешений мобильного устройства "Вкладки"](../../assets/images/tabs/MobileLocationPermission.png)
+
+* * * 
+
+## <a name="permission-behavior-across-login-sessions"></a><span data-ttu-id="34dff-171">Поведение разрешений в сеансах входа</span><span class="sxs-lookup"><span data-stu-id="34dff-171">Permission behavior across login sessions</span></span>
+
+<span data-ttu-id="34dff-172">Разрешения устройства сохраняются для каждого сеанса входа.</span><span class="sxs-lookup"><span data-stu-id="34dff-172">Device permissions are stored for every login session.</span></span> <span data-ttu-id="34dff-173">Это означает, что при входе в другой экземпляр Teams, например, на другом компьютере, разрешения устройства из предыдущих сеансов будут недоступны.</span><span class="sxs-lookup"><span data-stu-id="34dff-173">It means that if you sign in to another instance of Teams, for example, on another computer, your device permissions from your previous sessions are not available.</span></span> <span data-ttu-id="34dff-174">Поэтому необходимо повторно согласиться на использование разрешений устройства для нового сеанса.</span><span class="sxs-lookup"><span data-stu-id="34dff-174">Therefore, you must re-consent to device permissions for the new session.</span></span> <span data-ttu-id="34dff-175">Это также означает, что при выходе из Teams или переключении клиентов в Teams разрешения устройств удаляются из предыдущего сеанса входа.</span><span class="sxs-lookup"><span data-stu-id="34dff-175">It also means, if you sign out of Teams or switch tenants in Teams, your device permissions are deleted from the previous login session.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="34dff-176">Если вы даете согласие на доступ к нативным разрешениям устройства, это допустимо только для _текущего сеанса_ входа.</span><span class="sxs-lookup"><span data-stu-id="34dff-176">When you consent to the native device permissions, it is valid only for your _current_ login session.</span></span>
+
+## <a name="next-step"></a><span data-ttu-id="34dff-177">Следующий этап</span><span class="sxs-lookup"><span data-stu-id="34dff-177">Next step</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="34dff-178">Интеграция возможностей мультимедиа в Teams</span><span class="sxs-lookup"><span data-stu-id="34dff-178">Integrate media capabilities in Teams</span></span>](mobile-camera-image-permissions.md)
