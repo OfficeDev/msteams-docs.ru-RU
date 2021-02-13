@@ -3,17 +3,17 @@ title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 ms.topic: reference
 keywords: новые возможности teams
-ms.openlocfilehash: 37192878bf6c3e3697faf535dcd757c2ceb1f5f3
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+ms.openlocfilehash: 49603a9e48cd0a9951c6d9f0132a705770322de4
+ms.sourcegitcommit: e3b6bc31059ec77de5fbef9b15c17d358abbca0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014560"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50231654"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
 >[!TIP]
-> Ознакомьтесь с нашими шаблонами, готовыми к выпуску, в каталоге [**шаблонов приложений Teams.**](samples/app-templates.md) Каталог в алфавитном порядке, а самые новые добавления отмечены звездой **&#9734;.**
+> Ознакомьтесь с шаблонами, готовыми к выпуску, в каталоге [**шаблонов приложений Teams.**](samples/app-templates.md) Каталог в алфавитном порядке, а самые новые добавления отмечены звездой **&#9734;.**
 
 ## <a name="change-log"></a>Журнал изменений
 
@@ -21,7 +21,8 @@ ms.locfileid: "50014560"
 
 | **Дата** | **Примечания** | **Измененные разделы** |
 | -------- | --------- | ------------------ |
-|11/30/2020|Новый: интеграция платформы удостоверений с teams набор средств и Visual Studio кода для вкладок|[Проверка подлинности с помощью единого набор средств и Visual Studio для вкладок](toolkit/visual-studio-code-tab-sso.md)|
+|02/09/2021|Новое: обзор добавленных возможностей устройств. <br/> Обновление: сведения о возможности микрофона добавляются в разрешения на встроенном устройстве и интегрируются с файлами возможностей мультимедиа.|[Обзор,](concepts/device-capabilities/device-capabilities-overview.md) [запрос разрешений устройств,](concepts/device-capabilities/native-device-permissions.md) [интеграция возможностей мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md)|
+|11/30/2020|Новый: интеграция платформы удостоверений с teams набор средств и Visual Studio кода для вкладок|[Проверка подлинности с единым входом с помощью команд набор средств и Visual Studio кода для вкладок](toolkit/visual-studio-code-tab-sso.md)|
 |11/16/2020|Манифест приложения Teams обновлен до версии 1.8|[Справка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 |11/10/2020|Рекомендации по проектированию ботов Teams|[Рекомендации по проектированию ботов](bots/design/bots.md)|
 |9/30/2020|Теперь поддерживается отправка и получение файлов ботам на мобильных устройствах.|[Отправка и получение файлов с помощью бота](resources/bot-v3/bots-files.md)|
@@ -31,7 +32,7 @@ ms.locfileid: "50014560"
 | 08/12/2020 |Поддержка адаптивных карточек в входящих веб-сайтах перемещена в ga.|[Отправка адаптивных карточек с помощью входящего веб-перехватчика](~/webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook) |
 |08/10/2020|Начало создания приложений Teams с помощью Visual Studio набор средств.|[Создание приложений с помощью microsoft Teams набор средств и Visual Studio кода](toolkit/visual-studio-overview.md) |
 |08/06/2020|Поддержка проверки подлинности с SSO вкладок|[Разработка вкладки "SSO Microsoft Teams"](tabs/how-to/authentication/auth-aad-sso.md#develop-an-sso-microsoft-teams-tab) |
-|07/27/2020 | Упреждающие боты и сообщения Graph (общедоступный просмотр)|[Включить упреждающие установки ботов и упреждающие сообщения в Teams с помощью Microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
+|07/27/2020 | Упреждающие боты и сообщения Graph (общедоступный предварительный просмотр)|[Включить упреждающие установки ботов и упреждающие сообщения в Teams с помощью Microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
 | 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](concepts/device-capabilities/native-device-permissions.md) |
 |07/20/2020|Средство проверки приложений Teams для отправки в AppSource.|[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#teams-app-validation-tool)
 |07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
@@ -39,11 +40,11 @@ ms.locfileid: "50014560"
 |07/01/2020|Начало создания приложений Teams с помощью Visual Studio кода набор средств.|[Создание приложений с помощью microsoft Teams набор средств и Visual Studio кода](toolkit/visual-studio-code-overview.md) |
 |07/01/2020|Единый вход для вкладок GA для веб-клиентов Teams и классических клиентов|[Единый Sign-On (SSO)](tabs/how-to/authentication/auth-aad-sso.md)|
 |06/05/2020| Схема манифеста обновлена до версии 1.7| [Справка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
-| 05/20/2020 | Разрешения на согласие для определенных ресурсов с помощью API Microsoft Graph в предварительной версии для разработчиков. |[Согласие для определенных ресурсов (RSC) — Developer Preview](graph-api/rsc/resource-specific-consent.md) |
+| 05/20/2020 | Разрешения на согласие для определенных ресурсов с помощью API Microsoft Graph можно просмотреть для разработчиков. |[Согласие для определенных ресурсов (RSC) — Developer Preview](graph-api/rsc/resource-specific-consent.md) |
 |5/18/2020|Интеграция виртуальных агентов Power с Teams|[Интеграция бота чата power Virtual Agents с Microsoft Teams](bots/how-to/add-power-virtual-agents-bot-to-teams.md)|
 |04/01/2020|Интеграция систем WFM с соединитетелем Shifts для Teams|[Microsoft Teams сдвига соединители WFM](samples/shifts-wfm-connectors.md)
-| 03/24/2020 | Добавлена поддержка получения одного участника беседы и дополнительная поддержка получения участников страницы. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md)
-| 12/26/2019 | Параметр в полезной нагрузке, от отправленной боту, больше не шифруется, что позволяет использовать это значение для создания глубоких ссылок на `replyToId` эти сообщения. В состав полезной нагрузки сообщения входят зашифрованные значения в параметре. `legacy.replyToId`.  |
+| 03/24/2020 | Добавлена поддержка получения одного участника беседы, а также дополнительная поддержка получения участников страницы. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md)
+| 12/26/2019 | Параметр в полезной нагрузке, отправленной боту, больше не шифруется, что позволяет использовать это значение для создания глубоких ссылок на `replyToId` эти сообщения. В состав полезной нагрузки сообщения входят зашифрованные значения в параметре. `legacy.replyToId`.  |
 | 11/5/2019 | Единый вход с помощью SDK JavaScript для Teams на странице веб-контента находится в предварительной версии разработчика. | [Единый вход](tabs/how-to/authentication/auth-aad-sso.md) |
 | 10/31/2019 | Боты для бесед и документация по расширению обмена сообщениями обновлены для отражения SDK Bot Framework 4.6. Документация по V3 SDK доступна в разделе "Ресурсы". | Вся документация по ботам и расширениям сообщений. |
 | 10/31/2019 | Новая структура документации и рефакторинг основных статей. Сообщайте о любых неудаваемых ссылках или сообщениях 404, создав проблему с GitHub. | Все из них! |
@@ -61,11 +62,11 @@ ms.locfileid: "50014560"
 | 02/18/2019 | Создание прямых ссылок на приватный чат не является предварительным и доступным для разработчиков. | [Глубокая ссылка на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
 | 01/23/2019 | Просмотр сведений о SKU и licenceType в контексте вкладки. | [Контекст табули](~/concepts/tabs/tabs-context.md) |
 | 11/12/2018 | Вкладки в групповом чате теперь доступны в выпущенной версии Teams и перемещены из предварительной версии для разработчиков. В рамках этой работы раздел вкладок был переработан для ясности.| [Настраиваемые вкладки](~/concepts/tabs/tabs-configurable.md) |
-| 11/11/2018 | Начало работы с Node JS и .NET/C# было обновлено для использования App Studio в Teams, а также добавлен новый раздел о размещении приложений Teams на основе узла в Azure. | Начало работы на платформе Microsoft Teams с [помощью C#/.NET](~/get-started/get-started-dotnet-app-studio.md)и App Studio, начало работы на платформе Microsoft Teams с [использованием Node JS](~/get-started/get-started-nodejs-app-studio.md)и App Studio, развяжите приложение [Node Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
+| 11/11/2018 | Начало работы с Node JS и .NET/C# было обновлено для использования App Studio в Teams, а также добавлен новый раздел о размещении приложений Teams на основе узла в Azure. | Начало работы на платформе Microsoft Teams с [помощью C#/.NET](~/get-started/get-started-dotnet-app-studio.md)и App Studio, начало работы на платформе Microsoft Teams с [использованием Node JS](~/get-started/get-started-nodejs-app-studio.md)и App Studio , развяжите приложение [Node Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
 | 11/09/2018 | Теперь можно создавать глубокие ссылки на приватные чаты между пользователями. | [Глубокая ссылка на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
-| 11/08/2018 | SharePoint Framework 1.7 поставляется вместе с новой функцией для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
+| 11/08/2018 | SharePoint Framework 1.7 поставляется с новой функцией для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
 | 11/05/2018 | Функция "модуль задач" выпущена. Модуль задач позволяет создавать модальные всплывающие блоки в приложении Teams из ботов и вкладок. Во всплывающее представление можно запустить собственный код HTML или JavaScript, отобразить мини-приложения на основе youTube или Microsoft Stream или показать адаптивную `<iframe>` [карточку.](https://docs.microsoft.com/adaptive-cards/) | [Обзор модуля задач,](~/concepts/task-modules/task-modules-overview.md) [модуль задач на вкладке,](~/concepts/task-modules/task-modules-tabs.md)  [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
-| 10/05/2018 | Сведения о форматировании карточек были обновлены и протестированы в классических клиентах, клиентах iOS и Android для Teams. | [Карточки,](~/concepts/cards/cards.md) [форматирование карточек](~/concepts/cards/cards-format.md) |
+| 10/05/2018 | Сведения о форматировании карточек обновлены и протестированы в классических клиентах, клиентах iOS и Android для Teams. | [Карточки,](~/concepts/cards/cards.md) [форматирование карточек](~/concepts/cards/cards-format.md) |
 | 09/24/2018 | API звонков и собраний по сети для Microsoft Graph были выпущены в бета-версии, и теперь приложения Teams могут взаимодействовать с пользователями с помощью голосовой и видеосвязи. | [Боты](~/concepts/calls-and-meetings/registering-calling-bot.md)для звонков и собраний по [сети,](~/concepts/calls-and-meetings/real-time-media-concepts.md)концепции мультимедиа в режиме реального [времени,](~/concepts/calls-and-meetings/registering-calling-bot.md)регистрация бота для звонков, [](~/concepts/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md)отладка и локальное [тестирование,](~/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md)мультимедиа с хостингом в приложении, обработка уведомлений о входящих [звонках](~/concepts/calls-and-meetings/call-notifications.md) |
 | 09/11/2018 | Теперь страницы конфигурации вкладок значительно выше. | [Конструктор вкладок](tabs/design/tabs.md) |
 | 08/15/2018 | Адаптивные карточки теперь поддерживаются в Teams.|[Действия адаптивной карточки в Teams](task-modules-and-cards/cards/cards-reference.md#adaptive-card) |
@@ -80,7 +81,7 @@ ms.locfileid: "50014560"
 | 06/07/2018 | Добавлены сведения о предварительном выпуске каталога приложений клиента Microsoft Teams. | [Публикация приложения Microsoft Teams](~/publishing/apps-publish.md)|
 | 05/31/2018 | Предварительная версия teams для разработчиков (круг 3.6) была обновлена, включив возможность добавления ботов и вкладок в групповой чат. | [Функции предварительной версии,](~/resources/dev-preview/developer-preview-features.md) [схемы предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md)|
 | 05/29/2018 | Адаптивные карточки теперь поддерживаются в Teams в действиях [адаптивных карт в Teams.](task-modules-and-cards/cards/cards-reference.md) |
-| 05/29/2018 | Если вы используете [предварительную](~/resources/dev-preview/developer-preview-intro.md)версию для разработчиков, ваш бот сможет отправлять и получать файлы.| [Отправка и получение файлов с помощью бота](~/concepts/bots/bots-files.md), [функции в общедоступных Developer Preview для Microsoft Teams](~/resources/dev-preview/developer-preview-features.md)|
+| 05/29/2018 | Если вы используете предварительную версию [для](~/resources/dev-preview/developer-preview-intro.md)разработчиков, ваш бот сможет отправлять и получать файлы.| [Отправка и получение файлов с помощью бота](~/concepts/bots/bots-files.md), [функции в общедоступных Developer Preview для Microsoft Teams](~/resources/dev-preview/developer-preview-features.md)|
 | 04/17/2018 | ReplyToID был добавлен в полезной нагрузке для действий `Invoke` и `MessageBack` карт. Это особенно полезно, если вам нужно обновить сообщение, от которое поступило действие карточки. | [Действия с карточками](~/concepts/cards/cards-actions.md)|
 | 04/12/2018 | Добавлен этот раздел для отслеживания изменений в интерфейсе программирования Teams и в этом наборе документации. | [Новые возможности](~/whats-new.md)|
 | 04/10/2018 | Изменены URL-адреса проверки подлинности для согласованного использования ИД клиента в пути. | [Поток проверки подлинности для вкладок,](~/concepts/authentication/auth-flow-tab.md) [проверка подлинности вкладки AAD](~/concepts/authentication/auth-tab-AAD.md)|

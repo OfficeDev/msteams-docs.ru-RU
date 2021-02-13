@@ -54,7 +54,7 @@
           href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
         - name: Создание виртуального помощника
           href: samples/virtual-assistant.md
-    - name: Готовые шаблоны приложений
+    - name: Шаблоны приложений для Microsoft Teams
       href: samples/app-templates.md
     - name: Готовые к работе соединители
       href: samples/shifts-wfm-connectors.md
@@ -68,9 +68,11 @@
       href: concepts/build-and-test/deep-links.md
     - name: Возможности устройств
       items:
+        - name: Обзор
+          href: concepts/device-capabilities/device-capabilities-overview.md
         - name: Запрос разрешений устройства
           href: concepts/device-capabilities/native-device-permissions.md
-        - name: Использование камеры и галереи фотографий
+        - name: Интеграция возможностей мультимедиа
           href: concepts/device-capabilities/mobile-camera-image-permissions.md
 - name: Создание приложения
   items:

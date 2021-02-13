@@ -4,12 +4,12 @@ author: laujan
 description: Обзор настраиваемой вкладки на платформе Teams
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 18981955374a892e45ad5ec1e5ec087ae75cb007
-ms.sourcegitcommit: 00c657e3bf57d3b92aca7da941cde47a2eeff4d0
+ms.openlocfilehash: 7e256423ad713b81f9d4bc3760c33903ef91b179
+ms.sourcegitcommit: e3b6bc31059ec77de5fbef9b15c17d358abbca0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49911956"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50231668"
 ---
 # <a name="what-are-microsoft-teams-tabs"></a>Что такое вкладки Microsoft Teams?
 
@@ -72,4 +72,4 @@ ms.locfileid: "49911956"
 > [Подробнее: запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
 
 > [!div class="nextstepaction"]
->[Подробнее: разрешения для камеры и галереи изображений](../concepts/device-capabilities/mobile-camera-image-permissions.md)
+> [Подробнее: интеграция возможностей мультимедиа](../concepts/device-capabilities/mobile-camera-image-permissions.md)
