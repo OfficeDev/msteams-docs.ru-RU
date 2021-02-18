@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: reference
 keywords: RSC-граф AAD для авторизации OAuth
-ms.openlocfilehash: 1b5c0f645d93ed33c11bf3279e70133f35f53a2c
-ms.sourcegitcommit: 55a4246e62d69d631a63bdd33de34f1b62cc0132
+ms.openlocfilehash: 97f642b203a1f7fb4cd9332b61265c0b27788e2b
+ms.sourcegitcommit: 6caf503de5544fb8b9c8c6bef8eff4ff5a46068c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50093931"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50270800"
 ---
 # <a name="resource-specific-consent-rsc"></a>Согласие для определенных ресурсов (RSC)
 
@@ -19,7 +19,7 @@ ms.locfileid: "50093931"
 
 ## <a name="resource-specific-permissions"></a>Разрешения для определенных ресурсов
 
-|Разрешение приложения| Действие |
+|Разрешение приложения| Action |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получите параметры для этой команды.|
 |TeamSettings.ReadWrite.Group|Обновление параметров для команды.|
@@ -149,7 +149,12 @@ ms.locfileid: "50093931"
 > - Войдите в **обозреватель Graph.**
 > - Сделайте **вызов GET** для следующей конечной точки: `https://graph.microsoft.com/beta/groups/{teamGroupId}/permissionGrants` . Поле clientAppId в отклике со картой appId, указанным в манифесте приложения Teams.
   ![Ответ обозревателя Graph на вызов GET.](../../assets/images/graph-permissions.png)
- 
+
+## <a name="code-sample"></a>Пример кода
+| **Имя примера** | **Описание** | **C#** |
+|-----------------|-----------------|----------------|
+| Согласие для конкретного ресурса (RSC) | Используйте RSC для вызова API Graph. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|
+
 ## <a name="test-resource-specific-consent"></a>Проверка согласия для определенных ресурсов
  
 > [!div class="nextstepaction"]
@@ -160,3 +165,4 @@ ms.locfileid: "50093931"
 > [!div class="nextstepaction"]
 > [**Согласие администраторов в Microsoft Teams для определенных ресурсов**](/MicrosoftTeams/resource-specific-consent)
 > 
+
