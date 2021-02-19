@@ -74,6 +74,8 @@
           href: concepts/device-capabilities/native-device-permissions.md
         - name: Интеграция возможностей мультимедиа
           href: concepts/device-capabilities/mobile-camera-image-permissions.md
+        - name: Интеграция функции сканирования QR- или штрихкода
+          href: concepts/device-capabilities/qr-barcode-scanner-capability.md
 - name: Создание приложения
   items:
     - name: Обзор
