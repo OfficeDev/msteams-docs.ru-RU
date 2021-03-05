@@ -1,40 +1,40 @@
 ---
 title: Автоматическая проверка подлинности
-description: Описание проверки подлинности без проверки подлинности
+description: Описание бесшумной проверки подлинности
 ms.topic: conceptual
-keywords: AAD для проверки подлинности teams без проверки подлинности
-ms.openlocfilehash: e55e415aba08fdedf4409abf39115838c3a5faf0
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+keywords: группы проверки подлинности SSO silent AAD
+ms.openlocfilehash: db8409cd4a6edface6d5dc3b3de6698852eaaa24
+ms.sourcegitcommit: 5cb3453e918bec1173899e7591b48a48113cf8f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014098"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50449230"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
 > [!NOTE]
-> Чтобы проверка подлинности работала для вашей вкладки на мобильных клиентах, необходимо убедиться, что вы используете по крайней мере версию 1.4.1 SDK JavaScript для Teams.
+> Чтобы проверка подлинности работала для вкладки на мобильных клиентах, убедитесь, что вы используете по крайней мере версию 1.4.1 SDK Teams JavaScript.
 
-Автоматический режим проверки подлинности в Azure Active Directory (Azure AD) сводит к минимуму количество случаев, когда пользователю необходимо ввести свои учетные данные для входа, автоматически обновив маркер проверки подлинности. (Для поддержки единого входов см. документацию по [единому входу)](~/tabs/how-to/authentication/auth-aad-sso.md)
+Бесшумная проверка подлинности в Azure Active Directory (AAD) минимизирует количество случаев, когда пользователь вводит свой вход в учетные данные, молча освежая маркер проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO.](~/tabs/how-to/authentication/auth-aad-sso.md)
 
-Если вы хотите сохранить код полностью на стороне клиента, вы можете использовать библиотеку проверки подлинности [Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript, чтобы попытаться получить маркер доступа Azure AD в тихом режиме. Это означает, что пользователь может никогда не видеть всплывающее диалоговое окно, если он недавно вступ в нее.
+Если вы хотите сохранить код полностью клиентской стороной, вы можете использовать библиотеку проверки подлинности [AAD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript, чтобы получить маркер доступа AAD безмолвно. Если пользователь недавно подписался, он никогда не увидит диалоговое окно всплывающее окно.
 
-Хотя библиотека ADAL.js оптимизирована для приложений AngularJS, она также работает с одно page-приложениями JavaScript.
+Несмотря на тоADAL.js что библиотека оптимизирована для приложений AngularJS, она также работает с чистыми одно-страницами JavaScript.
 
 > [!NOTE]
-> В настоящее время проверка подлинности без проверки подлинности работает только для вкладок. Он пока не работает при входе от бота.
+> В настоящее время бесшумная проверка подлинности работает только для вкладок. Он не работает при входе с бота.
 
-## <a name="how-silent-authentication-works"></a>Как работает проверка подлинности без проверки подлинности
+## <a name="how-silent-authentication-works"></a>Как работает бесшумная проверка подлинности
 
-Библиотека ADAL.js создает скрытый iframe для неявного потока предоставления OAuth 2.0, но указывает, что Azure AD никогда не отображает страницу `prompt=none` входа. Если требуется взаимодействие с пользователем, так как пользователю необходимо войти в приложение или предоставить доступ к нему, Azure AD немедленно возвратит ошибку, ADAL.js затем сообщает приложению. На этом этапе ваше приложение может при необходимости показать кнопку входа.
+Библиотека ADAL.js создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому Azure AD никогда `prompt=none` не показывает знак на странице. Если требуется взаимодействие с пользователем, так как пользователю необходимо войти или предоставить доступ к приложению, AAD немедленно возвращает ошибку, ADAL.js отчеты в ваше приложение. На этом этапе приложение может при необходимости показать вход в кнопку.
 
-## <a name="how-to-do-silent-authentication"></a>Как сделать проверку подлинности без проверки подлинности
+## <a name="how-to-do-silent-authentication"></a>Как сделать бесшумную проверку подлинности
 
-Код в этой статье взят из примера приложения [Microsoft Teams Authentication Sample (Node).](https://github.com/OfficeDev/microsoft-teams-sample-complete-node)
+Код в этой статье происходит из примера приложения Teams, которое является узлом [проверки подлинности Teams.](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs)
 
 ### <a name="include-and-configure-adal"></a>включить и настроить ADAL
 
-Включите библиотеку ADAL.js на страницах вкладок и настройте ADAL с помощью своего ИД клиента и URL-адреса перенаправления:
+Включите библиотеку ADAL.js на страницах вкладок и настройте ADAL с вашим клиентом ИД и URL-адресом перенаправления:
 
 ```html
 <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.15/js/adal.min.js" integrity="sha384-lIk8T3uMxKqXQVVfFbiw0K/Nq+kt1P3NtGt/pNexiDby2rKU6xnDY8p16gIwKqgI" crossorigin="anonymous"></script>
@@ -50,9 +50,9 @@ ms.locfileid: "50014098"
 </script>
 ```
 
-### <a name="get-the-user-context"></a>Получить контекст пользователя
+### <a name="get-the-user-context"></a>Получить пользовательский контекст
 
-На странице содержимого вкладки вызовите, чтобы получить подсказку для входа `microsoftTeams.getContext()` для текущего пользователя. Он будет использоваться в качестве login_hint в вызове Azure AD.
+На странице контента вкладки позвоните, чтобы получить подсказку `microsoftTeams.getContext()` для текущего пользователя. Это используется в качестве входаHint в вызове в AAD.
 
 ```javascript
 // Set up extra query parameters for ADAL
@@ -67,9 +67,9 @@ if (loginHint) {
 
 ### <a name="authenticate"></a>Проверка подлинности
 
-Если В ADAL для пользователя кэшировали неиспользваваемый маркер, используйте его. В противном случае попытайтесь получить маркер без `acquireToken(resource, callback)` вызова. ADAL.js вызов функции вызова с помощью запрашиваемого маркера или ошибку при сбойе проверки подлинности.
+Если ADAL кэшировали неиспользваемый маркер для пользователя, используйте маркер. Кроме того, попытаться получить маркер молча, позвонив `acquireToken(resource, callback)` . ADAL.js вызов функции вызова с помощью запрашиваемого маркера или при сбой проверки подлинности.
 
-Если в функции обратного вызова произошла ошибка, откажите кнопку входа и вернемся к явному входу.
+Если вы получаете ошибку в функции обратного вызова, покажите вход в кнопку и откажитесь от явного входного знака.
 
 ```javascript
 let authContext = new AuthenticationContext(config); // from the ADAL.js library
@@ -102,9 +102,9 @@ authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenTy
 
 ### <a name="process-the-return-value"></a>Обработка возвращаемой стоимости
 
-Let ADAL.js take care of parsing the result from Azure AD by calling `AuthenticationContext.handleWindowCallback(hash)` in the login callback page.
+ADAL.js для размыва результатов AAD путем вызова в `AuthenticationContext.handleWindowCallback(hash)` знаке на странице вызова.
 
-Убедитесь, что у нас есть допустимый пользователь, и позвоните или вернем отчет о состоянии на `microsoftTeams.authentication.notifySuccess()` `microsoftTeams.authentication.notifyFailure()` главную страницу содержимого вкладки.
+Убедитесь, что у вас есть допустимый пользователь и позвоните или сообщить о состоянии на главную страницу `microsoftTeams.authentication.notifySuccess()` `microsoftTeams.authentication.notifyFailure()` контента вкладки.
 
 ```javascript
 if (authContext.isCallback(window.location.hash)) {

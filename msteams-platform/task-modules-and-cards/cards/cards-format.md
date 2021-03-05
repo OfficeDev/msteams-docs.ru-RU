@@ -1,42 +1,42 @@
 ---
-title: Форматирование текста в карточках
-description: Описание форматирования текста карточки в Microsoft Teams
-keywords: формат карточек Боты Teams
+title: Форматирование текста в картах
+description: Описывает форматирование текста карты в Microsoft Teams
+keywords: teams bots cards format
 ms.date: 03/29/2018
-ms.openlocfilehash: fcf0692fe033cd3c30ea1e3ac7bda8ddd06297ca
-ms.sourcegitcommit: 64acd30eee8af5fe151e9866c13226ed3f337c72
+ms.openlocfilehash: 1221693ab9ae002ee982ef34a05ead1feb8b1f27
+ms.sourcegitcommit: 47cf0d05e15e5c23616b18ae4e815fd871bbf827
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49346709"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50455400"
 ---
-# <a name="format-cards-in-teams"></a>Форматирование карточек в Teams
+# <a name="format-cards-in-teams"></a>Формат карт в Teams
 
-В зависимости от типа карты в карточки можно добавлять форматированный текст в карточки с помощью Markdown или HTML.
+В зависимости от типа карты можно добавить в карты форматирование текста с помощью Markdown или HTML.
 
-Карточки поддерживают форматирование только в свойстве Text, а не в свойствах Title и субтитров. Форматирование можно указать с помощью подмножества форматирования XML (HTML) или Markdown в зависимости от типа карты. Для текущих и будущих развертываний рекомендуется использовать форматирование Markdown.
+Карточки поддерживают форматирование только в свойстве текста, а не в свойствах заголовка или субтитров. Форматирование можно задать с помощью подмножество форматирования XML (HTML) или Markdown в зависимости от типа карты. Для текущих и будущих карт разработки рекомендуется использовать форматирование Markdown.
 
-Поддержка форматирования различается для разных типов карточек, а отображение карты может незначительно отличаться между настольным компьютером и мобильными клиентами Teams, а также с Teams в браузере настольного компьютера.
+Поддержка форматирования отличается между различными типами карт, а отрисовка карты может незначительно отличаться между настольным компьютером и клиентами мобильных групп, а также Teams в браузере настольных компьютеров.
 
-Встроенное изображение можно добавить с помощью любой карточки Teams. Изображения в формате "  `.png` ," `.jpg` или " `.gif` файлы" не должны превышать 1024 × 1024 px или 1 МБ. Анимированный GIF-файл не поддерживается официально. *См* . [Справочник по карточкам](./cards-reference.md#inline-card-images)
+Вы можете включить inline-изображение с любой картой Teams. Изображения форматированы как , или файлы и не должны превышать  `.png` `.jpg` `.gif` 1024 ×1024 px или 1 МБ. Анимированный GIF не поддерживается официально. *См.* [ссылку На карточки](./cards-reference.md#inline-card-images)
 
-## <a name="formatting-cards-with-markdown"></a>Форматирование карточек с помощью Markdown
+## <a name="formatting-cards-with-markdown"></a>Форматирование карт с помощью Markdown
 
-Существует два типа карточек, поддерживающих Markdown в teams:
+Существует два типа карт, поддерживаюных Markdown в Teams:
 
 > [!div class="checklist"]
-> * **Адаптивные карты**: Markdown поддерживается в поле адаптивной карточки `Textblock` , а также `Fact.Title` и `Fact.Value` . HTML не поддерживается в адаптивных картах.
-> * **Соединительные карты O365**: Markdown и ограниченный HTML-код поддерживаются в карточках соединителей Office 365 в текстовых полях.
+> * **Адаптивные карты:** Markdown поддерживается в поле адаптивных карт, а `Textblock` также и `Fact.Title` `Fact.Value` . HTML не поддерживается в адаптивных картах.
+> * **Карты соединителя O365:** Markdown и ограниченный HTML поддерживаются в карточках Соединитель Office 365 в текстовых полях.
 
-# <a name="markdown-formatting-adaptive-cards"></a>[**Форматирование Markdown: адаптивные карты**](#tab/adaptive-md)
+# <a name="markdown-formatting-adaptive-cards"></a>[**Форматирование разметки: адаптивные карты**](#tab/adaptive-md)
 
- Поддерживаются следующие стили `Textblock` `Fact.Title` `Fact.Value` :
+ Поддерживаемые стили `Textblock` для и `Fact.Title` `Fact.Value` являются:
 
 | Style | Пример | Markdown |
 | --- | --- | --- |
 | bold | **Bold** | ```**Bold**``` |
 | italic | _Italic_ | ```_Italic_``` |
-| неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | ```- Item 1\r- Item 2\r- Item 3``` |
+| необученный список | <ul><li>текст</li><li>текст</li></ul> | ```- Item 1\r- Item 2\r- Item 3``` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | ```1. Green\r2. Orange\r3. Blue``` |
 | Гиперссылки |[Bing](https://www.bing.com/)| ```[Title](url)``` |
 
@@ -44,38 +44,38 @@ ms.locfileid: "49346709"
 
 * Заголовки
 * Таблицы
-* Изображения
-* Предварительно отформатированный текст
-* блокккуотес
+* изображения;
+* Предформатированный текст
+* Blockquotes
 
 > [!IMPORTANT]
 > Адаптивные карты не поддерживают форматирование HTML.
 
-### <a name="newlines-for-adaptive-cards"></a>Строки для адаптивных карточек
+### <a name="newlines-for-adaptive-cards"></a>Newlines для адаптивных карт
 
-В списках можно использовать `\r` `\n` последовательности или escape-последовательности для новой строки. Использование `\n\n` в списке приводит к тому, что следующий элемент в списке будет иметь отступы. Если в элементе TextBlock требуются строки новой строки, используйте `\n\n` .
+В списках можно использовать `\r` последовательности `\n` или последовательности побега для newlines. Использование в списке приведет к отступам следующего элемента `\n\n` в списке. Если вам нужны новые линии в другом месте в текстовом блокпосте, используйте `\n\n` .
 
-### <a name="mobile-and-desktop-differences-for-adaptive-cards"></a>Различия между мобильными и настольными компьютерами для адаптивных карт
+### <a name="mobile-and-desktop-differences-for-adaptive-cards"></a>Различия для мобильных и настольных компьютеров для адаптивных карт
 
-Форматирование слегка отличается между настольными и мобильными версиями Teams.
+Форматирование несколько отличается от рабочего стола к мобильным версиям Teams.
 
-На рабочем столе Адаптивное форматирование карточки Markdown выглядит так же, как в веб-браузерах и в клиентском приложении teams:
+На рабочем столе форматирование разметки адаптивной карты выглядит так как в веб-браузерах, так и в клиентском приложении Teams:
 
-![Адаптивное форматирование карточки Markdown в клиенте для настольных ПК](../../assets/images/cards/Adaptive-markdown-desktop-client.png)
+![Форматирование разметки адаптивной карты в клиенте рабочего стола](../../assets/images/cards/Adaptive-markdown-desktop-client.png)
 
-В iOS форматирование адаптивной карточки Markdown выглядит следующим образом:
+В iOS форматирование разметки адаптивной карты выглядит так:
 
-![Адаптивное форматирование карточки Markdown в iOS](../../assets/images/cards/Adaptive-markdown-iOS-75.png)
+![Форматирование разметки адаптивной карты в iOS](../../assets/images/cards/Adaptive-markdown-iOS-75.png)
 
-В Android Адаптивное форматирование карточки Markdown выглядит следующим образом:
+На Android форматирование разметки адаптивной карты выглядит так:
 
-![Адаптивное форматирование карточки Markdown в Android](../../assets/images/cards/Adaptive-markdown-Android.png)
+![Форматирование разметки адаптивной карты в Android](../../assets/images/cards/Adaptive-markdown-Android.png)
 
 ### <a name="more-information-on-adaptive-cards"></a>Дополнительные сведения о адаптивных картах
 
-[Функции для текста в адаптивных карточках](/adaptive-cards/create/textfeatures) Функции даты и локализации, упомянутые в этом разделе, не поддерживаются в Teams.
+[Текстовые функции в адаптивных картах](/adaptive-cards/create/textfeatures) Функции даты и локализации, упомянутые в этой теме, не поддерживаются в Teams.
 
-### <a name="formatting-sample-for-adaptive-cards"></a>Пример форматирования для адаптивных карточек
+### <a name="formatting-sample-for-adaptive-cards"></a>Пример форматирования для адаптивных карт
 
 ``` json
 {
@@ -109,24 +109,24 @@ ms.locfileid: "49346709"
 }
 ```
 
-### <a name="mention-support-within-adaptive-cards-v12"></a>Упоминание поддержки в адаптивных картах версии 1.2
+### <a name="mention-support-within-adaptive-cards-v12"></a>Упоминание поддержки в адаптивных картах v1.2
 
-Упоминания на основе карточек поддерживаются в веб-, настольных и мобильных клиентах. Вы можете добавлять @ упоминания в тексте адаптивной карточки для Боты и расширений обмена сообщениями.  Чтобы добавить @ упоминания в карточки, следуйте той же логике уведомлений и отрисовки, что и [в упомянутых сообщениях в беседах канала и группового чата](../../bots/how-to/conversations/channel-and-group-conversations.md#working-with-mentions ).
+Упоминания на основе карт поддерживаются в веб-, настольных и мобильных клиентах. Вы можете добавить @ упоминания в корпусе адаптивной карты для ботов и ответов на расширение обмена сообщениями.  Чтобы добавить @mentions in cards, следуйте той же логике уведомлений и визуализации, что и упоминания на основе сообщений в беседах в чатах каналов и [групп.](../../bots/how-to/conversations/channel-and-group-conversations.md#working-with-mentions )
 
-Расширения Боты и обмена сообщениями могут включать упоминание в содержимом карточки в элементах [TextBlock](https://adaptivecards.io/explorer/TextBlock.html) и в элементах [фактов](https://adaptivecards.io/explorer/FactSet.html) .
+Боты и расширения обмена сообщениями могут включать упоминания в контенте карты в [элементах TextBlock](https://adaptivecards.io/explorer/TextBlock.html) и [FactSet.](https://adaptivecards.io/explorer/FactSet.html)
 
 > [!NOTE]
-> * В настоящее время [элементы мультимедиа](https://adaptivecards.io/explorer/Media.html) в настоящее время не поддерживаются в адаптивных картах версии 1.2 на платформе Teams.
-> * Упоминание каналов & участников группы не поддерживаются в сообщениях Bot.
+> * [Элементы мультимедиа в](https://adaptivecards.io/explorer/Media.html) настоящее время не поддерживаются в адаптивных картах v1.2 на платформе Teams.
+> * Упоминания & группы не поддерживаются в сообщениях ботов.
 
-### <a name="constructing-mentions"></a>Создание упоминаний
+#### <a name="constructing-mentions"></a>Построение упоминаний
 
-Чтобы включить в адаптивную карточку упоминание, необходимо, чтобы приложение включало следующие элементы:
+Чтобы включить упоминание в адаптивной карте, приложение должно включить следующие элементы
 
-* `<at>username</at>` в поддерживаемых элементах адаптивной карточки
-* `mention`Объект внутри `msteams` свойства в содержимом карточки, включающий идентификатор пользователя Teams для указанного пользователя.
+* `<at>username</at>` в поддерживаемых элементах адаптивной карты
+* Объект внутри свойства в содержимом карты, который включает пользовательский `mention` `msteams` id Teams упоминаемого пользователя
 
-### <a name="sample-adaptive-card-with-a-mention"></a>Пример адаптивной карточки с упоминанием
+#### <a name="sample-adaptive-card-with-a-mention"></a>Пример адаптивной карты с упоминанием
 
 ``` json
 {
@@ -157,45 +157,106 @@ ms.locfileid: "49346709"
 }
 ```
 
-# <a name="markdown-formatting-o365-connector-cards"></a>[**Форматирование Markdown: карты соединителей O365**](#tab/connector-md)
 
-Карты соединителей поддерживают ограниченные Markdown и форматирование HTML. Поддержка HTML описана в предыдущем разделе.
+### <a name="information-masking-in-adaptive-cards"></a>Маскировка сведений в адаптивных картах
+Используйте свойство маскировки информации для маскировки определенных сведений, таких как пароль или конфиденциальные сведения от пользователей.
+
+> [!NOTE]
+> Свойство маскировки информации в настоящее время доступно только в предварительном просмотре разработчика.
+
+#### <a name="mask-information"></a>Сведения о маске
+Чтобы скрыть сведения в адаптивных картах, добавьте свойство введите и установите `isMasked`  `Input.Text` значение true. 
+
+#### <a name="sample-adaptive-card-with-masking-property"></a>Пример адаптивной карты с свойством маскировки
+
+```json
+{
+    "type": "Input.Text",
+    "id": "secretThing",
+    "style": "password",
+    "isMasked": true
+  },
+```
+
+Ниже приводится пример маскировки сведений в адаптивных картах:
+
+![Маскировка информационного изображения](../../assets/images/cards/masking-information-view.png)
+
+### <a name="full-width-adaptive-card"></a>Адаптивная карта с полной шириной
+Свойство можно использовать для расширения ширины адаптивной карты и использования `msteams` дополнительного пространства холста. Сведения об использовании свойства см. в следующем примере:
+
+#### <a name="constructing-full-width-cards"></a>Построение карт полной ширины
+Чтобы сделать полную ширину адаптивной карты, объект в свойстве контента карточки `width` `msteams` должен быть задат. `Full`
+Кроме того, приложение должно включать следующие элементы:
+
+#### <a name="sample-adaptive-card-with-full-width"></a>Пример адаптивной карты с полной шириной
+
+``` json
+{
+    "type": "AdaptiveCard",
+    "body": [{
+        "type": "Container",
+        "items": [{
+            "type": "TextBlock",
+            "text": "Digest card",
+            "size": "Large",
+            "weight": "Bolder"
+        }]
+    }],
+    
+    "msteams": {
+        "width": "Full"
+    },
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
+```
+
+Адаптивная карта с полной шириной отображается следующим образом: представление адаптивной карты полной ![ ширины](../../assets/images/cards/full-width-adaptive-card.png)
+
+Если свойство не настроено до полного, представление адаптивной карты по умолчанию следующим образом: представление адаптивной карты малой `width`  ![ ширины](../../assets/images/cards/small-width-adaptive-card.png)
+
+
+
+# <a name="markdown-formatting-o365-connector-cards"></a>[**Форматирование разметки: карты соединителения O365**](#tab/connector-md)
+
+Карты Connector поддерживают ограниченное форматирование Markdown и HTML. Поддержка HTML описана в последнем разделе.
 
 | Style | Пример | Markdown |
 | --- | --- | --- |
 | bold | **text** | `**text**` |
 | italic | *text* | `*text*` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `### Text`|
+| загон (уровни 1 &ndash; 3) | **Text** | `### Text`|
 | strikethrough | ~~text~~ | `~~text~~` |
-| неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | ```- Item 1\r- Item 2\r- Item 3``` |
+| необученный список | <ul><li>текст</li><li>текст</li></ul> | ```- Item 1\r- Item 2\r- Item 3``` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | ```1. Green\r2. Orange\r3. Blue``` |
-| предварительно отформатированный текст | `text` | ``preformatted text`` |
-| blockquote | >текст блокккуоте | `>blockquote text` |
+| предформатированный текст | `text` | ``preformatted text`` |
+| blockquote | >блокквойта | `>blockquote text` |
 | гиперссылка | [Bing](https://www.bing.com/) | `[Bing](https://www.bing.com/)` |
-| Ссылка на изображение |![Дукк на рок](https://aka.ms/Fo983c) | `![Duck](https://aka.ms/Fo983c)` |
+| ссылка на изображение |![Утка на скале](https://aka.ms/Fo983c) | `![Duck](https://aka.ms/Fo983c)` |
 
-В соединителях соединителей отображаются строки `\n\n` , но не for `\n` или `\r` .
+В соединитеных картах новые линии отрисовываются для `\n\n` , но не для или `\n` `\r` .
 
-### <a name="mobile-and-desktop-differences-for-connector-cards-using-markdown"></a>Различия между мобильными и рабочими столами для соединителей карт с помощью Markdown
+### <a name="mobile-and-desktop-differences-for-connector-cards-using-markdown"></a>Различия для мобильных и настольных компьютеров для соединительная карта с помощью Markdown
 
-На рабочем столе Markdown форматирование карт для соединителей выглядит следующим образом:
+На рабочем столе форматирование Markdown для карт соединительная система выглядит так:
 
-![Markdown форматирование карт подключателя в клиенте для настольных ПК](../../assets/images/cards/connector-desktop-markdown-combined.png)
+![Форматирование разметки для соединительная карта в клиенте Desktop](../../assets/images/cards/connector-desktop-markdown-combined.png)
 
-В iOS форматирование Markdown для карт подключателя выглядит следующим образом:
+В iOS форматирование markdown для соединители-карт выглядит так:
 
-![Markdown форматирование карт подключателя в клиенте iOS](../../assets/images/cards/connector-iphone-markdown-combined-80.png)
+![Форматирование markdown для карт соединителения в клиенте iOS](../../assets/images/cards/connector-iphone-markdown-combined-80.png)
 
 Вопросы:
 
-* Клиент iOS для Teams не отображает Markdown или встроенные изображения HTML в соединительных картах.
-* Блокккуотес отображаются с отступом, но без серого фона.
+* Клиент iOS для Teams не отрисовывает встроенные изображения Markdown или HTML в соединительных картах.
+* Блокквоты отрисовываются как отступные, но без серого фона.
 
-На Android Markdown форматирование карт для соединителей выглядит следующим образом:
+На Android форматирование markdown для карт соединителения выглядит так:
 
-![Markdown форматирование карт подключателя в клиенте Android](../../assets/images/cards/connector-android-markdown-combined.png)
+![Форматирование разметки для карт соединителения в клиенте Android](../../assets/images/cards/connector-android-markdown-combined.png)
 
-### <a name="formatting-example-for-markdown-connector-cards"></a>Пример форматирования для карточек соединителей Markdown
+### <a name="formatting-example-for-markdown-connector-cards"></a>Пример форматирования карт соединителения Markdown
 
 ``` json
 {
@@ -244,47 +305,47 @@ ms.locfileid: "49346709"
 
 ---
 
-## <a name="formatting-cards-with-html"></a>Форматирование карточек с помощью HTML
+## <a name="formatting-cards-with-html"></a>Форматирование карт с ПОМОЩЬЮ HTML
 
-# <a name="html-formatting-o365-connector-cards"></a>[**Форматирование HTML: карты соединителей O365**](#tab/connector-html)
+# <a name="html-formatting-o365-connector-cards"></a>[**Форматирование HTML: карты соединителя O365**](#tab/connector-html)
 
-Карты соединителей поддерживают ограниченные Markdown и форматирование HTML. Markdown описывается в следующем разделе.
+Карты Connector поддерживают ограниченное форматирование Markdown и HTML. Markdown описан в следующем разделе.
 
 | Style | Пример | HTML |
 | --- | --- | --- |
 | bold | **text** | `<strong>text</strong>` |
 | italic | *text* | `<em>text</em>` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
+| загон (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
 | strikethrough | ~~text~~ | `<strike>text</strike>` |
-| неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
+| необученный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | `<ol><li>text</li><li>text</li></ol>` |
-| предварительно отформатированный текст | `text` | `<pre>text</pre>` |
+| предформатированный текст | `text` | `<pre>text</pre>` |
 | blockquote | <blockquote>текст</blockquote> | `<blockquote>text</blockquote>` |
 | гиперссылка | [Bing](https://www.bing.com/) | `<a href="https://www.bing.com/">Bing</a>` |
-| Ссылка на изображение | <img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img> | `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
+| ссылка на изображение | <img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img> | `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
 
-В соединительных карточках строки новой строки отображаются в HTML-коде с помощью `<p>` тега.
+В соединительных картах новые линии отрисовываются в HTML с помощью `<p>` тега.
 
-### <a name="mobile-and-desktop-differences-for-connector-cards-using-html"></a>Различия между мобильными и рабочими столами для соединителей карт с помощью HTML
+### <a name="mobile-and-desktop-differences-for-connector-cards-using-html"></a>Различия между мобильными и настольными устройствами для соединительная карта с помощью HTML
 
-На рабочем столе форматирование HTML-карт для соединителей выглядит следующим образом:
+Форматирование HTML-форматов для соединительная карточки на рабочем столе выглядит так:
 
-![Формат HTML для соединителей карт в клиенте для настольных ПК](../../assets/images/cards/Connector-desktop-html-combined.png)
+![ФОРМАТирование HTML для соединителя карт в клиенте Desktop](../../assets/images/cards/Connector-desktop-html-combined.png)
 
-В iOS форматирование HTML выглядит следующим образом:
+В iOS форматирование HTML выглядит так:
 
-![Формат HTML для соединителей карт в клиенте iOS](../../assets/images/cards/connector-iphone-html-combined-80.png)
+![Форматирование HTML для соединительных карт в клиенте iOS](../../assets/images/cards/connector-iphone-html-combined-80.png)
 
 Вопросы:
 
-* Встроенные изображения не отправляются на iOS с помощью Markdown или HTML в соединительных карточках.
-* Предварительно отформатированный текст отображается, но не является серым фоном.
+* Встроенные изображения не отрисовываются в iOS с помощью markdown или HTML-кодов в соединителях.
+* Предформатированный текст отрисовывается, но не имеет серого фона.
 
-На Android форматирование HTML выглядит следующим образом:
+На Android форматирование HTML выглядит так:
 
-![Форматирование HTML-карт для соединителей в клиенте Android](../../assets/images/cards/connector-android-html-combined.png)
+![Форматирование HTML для соединительных карт в клиенте Android](../../assets/images/cards/connector-android-html-combined.png)
 
-### <a name="formatting-sample-for-html-connector-cards"></a>Пример форматирования для карточек соединителей HTML
+### <a name="formatting-sample-for-html-connector-cards"></a>Пример форматирования для HTML-карт соединителя
 
 ``` json
 {
@@ -334,48 +395,48 @@ ms.locfileid: "49346709"
 
 ```
 
-# <a name="html-formatting-hero-and-thumbnail-cards"></a>[**HTML-форматирование: карточки главный Имиджевый баннер и эскиза**](#tab/simple-html)
+# <a name="html-formatting-hero-and-thumbnail-cards"></a>[**Форматирование HTML: карты героя и эскиза**](#tab/simple-html)
 
-Теги HTML поддерживаются для простых карточек, таких как карта главный Имиджевый баннер и эскиза. Markdown не поддерживается.
+HTML-теги поддерживаются для простых карт, таких как карта героя и эскиза. Markdown не поддерживается.
 
 | Style | Пример | HTML |
 | --- | --- | --- |
 | bold | **text** | `<strong>text</strong>` |
 | italic | *text* | `<em>text</em>` |
-| Верхний колонтитул (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
+| загон (уровни 1 &ndash; 3) | **Text** | `<h3>Text</h3>` |
 | strikethrough | ~~text~~ | `<strike>text</strike>` |
-| неупорядоченный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
+| необученный список | <ul><li>текст</li><li>текст</li></ul> | `<ul><li>text</li><li>text</li></ul>` |
 | упорядоченный список | <ol><li>текст</li><li>текст</li></ol> | `<ol><li>text</li><li>text</li></ol>` |
-| предварительно отформатированный текст | `text` | `<pre>text</pre>` |
+| предформатированный текст | `text` | `<pre>text</pre>` |
 | blockquote | <blockquote>текст</blockquote> | `<blockquote>text</blockquote>` |
 | гиперссылка | [Bing](https://www.bing.com/) | `<a href="https://www.bing.com/">Bing</a>` |
-| Ссылка на изображение |<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>| `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
+| ссылка на изображение |<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>| `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
 
-### <a name="mobile-and-desktop-differences-for-simple-cards"></a>Различия между мобильными и рабочими столами для простых карточек
+### <a name="mobile-and-desktop-differences-for-simple-cards"></a>Различия для мобильных и настольных компьютеров для простых карт
 
-Из-за различий в разрешениях между настольными и мобильными платформами форматирование различается для настольных ПК и мобильных версий Teams.
+Из-за различий в разрешении между настольной и мобильной платформами форматирование отличается между настольным компьютером и мобильной версией Teams.
 
-На настольном компьютере форматирование HTML выглядит следующим образом:
+На рабочем столе форматирование HTML выглядит так:
 
-![Форматирование HTML в клиенте для настольных ПК](../../assets/images/cards/card-formatting-xml-desktop-v2.png)
+![Форматирование HTML в клиенте Desktop](../../assets/images/cards/card-formatting-xml-desktop-v2.png)
 
-В iOS форматирование HTML выглядит следующим образом:
+На iOS форматирование HTML выглядит так:
 
 ![Форматирование HTML в клиенте iOS](../../assets/images/cards/card-formatting-xml-mobile-v2.png)
 
 Вопросы:
 
-* Форматирование символов, например полужирный шрифт и курсив, не отображается в iOS.
+* Форматирование символов, как смелый и italic, не отрисовка в iOS.
 
-На Android форматирование HTML выглядит следующим образом:
+На Android форматирование HTML выглядит так:
 
 ![Форматирование HTML в клиенте Android](../../assets/images/cards/card-formatting-xml-android-60.png)
 
-Правильное форматирование знаков, как полужирное и курсивное отображение на Android.
+Форматирование символов, как смелый и italic отображения правильно на Android.
 
-### <a name="formatting-sample-for-html-formatting-in-simple-cards"></a>Пример форматирования форматирования HTML на простых карточках
+### <a name="formatting-sample-for-html-formatting-in-simple-cards"></a>Пример форматирования форматирования HTML в простых картах
 
-Эти снимки создаются с помощью Teams Аппстудио, где для свойства Text карточки главный Имиджевый баннер задано значение, равное следующей строке. Вы можете проверить форматирование в собственных карточках, изменив этот код.
+Эти скриншоты были созданы с помощью Teams AppStudio, где текстовое свойство карты-героя было задано следующей строке. Вы можете протестировать форматирование в собственных картах, изменяя этот код.
 
 `<p>bold: <strong>Bold Text</strong></p><p>italic: <em>Italic Text</em></p><p>strikethrough: <strike>Strikethrough text</strike></p><h1>Header 1</h1><h2>Header 2</h2><h3>Header 3</h3><p>bullet list: <ul><li>text</li><li>text</li></ul></p><p>ordered list: <ol><li>text</li><li>text</li></ol></p><pre>preformatted text</pre><blockquote>blockquote text</blockquote></p><p>hyperlink: <a href=\"https://www.bing.com/\">Bing</a></p><p>embedded image: <img src=\"https://aka.ms/Fo983c\" alt=\"Duck on a rock\"></img></p>`
 
