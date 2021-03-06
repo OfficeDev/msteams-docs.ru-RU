@@ -24,12 +24,14 @@
   items:
     - name: Руководства
       href: tutorials/code-samples.md
-    - name: 'Создайте приложение, используя C#'
+    - name: Создание приложения с помощью C# или .NET
       href: tutorials/get-started-dotnet-app-studio.md
     - name: Создайте приложение с помощью Node.js
       href: tutorials/get-started-nodejs-app-studio.md
     - name: Создание приложения с помощью генератора Yeoman
       href: tutorials/get-started-yeoman.md
+    - name: Обновление Microsoft Teams с помощью генератора Yeoman
+      href: tutorials/UpgradeTeamsUsingYeoman.md
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Основные сведения о приложении
@@ -76,6 +78,8 @@
           href: concepts/device-capabilities/mobile-camera-image-permissions.md
         - name: Интеграция функции сканирования QR- или штрихкода
           href: concepts/device-capabilities/qr-barcode-scanner-capability.md
+        - name: Интеграция функций местонахождения
+          href: concepts/device-capabilities/location-capability.md
 - name: Создание приложения
   items:
     - name: Обзор
@@ -334,7 +338,7 @@
       href: 'https://docs.microsoft.com/graph/toolkit/get-started/build-a-microsoft-teams-tab'
     - name: Включение согласия с определением ресурсов
       href: graph-api/rsc/resource-specific-consent.md
-    - name: Включение установки упреждающего бота и обмена сообщений
+    - name: Упреждающая установку приложений с помощью API Graph и отправка сообщений
       href: graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md
     - name: Импорт сторонних сообщений
       href: graph-api/import-messages/import-external-messages-to-teams.md
@@ -408,6 +412,8 @@
           href: resources/schema/manifest-schema-dev-preview.md
         - name: Функции
           href: resources/dev-preview/developer-preview-features.md
+    - name: Изменения полей вкладок
+      href: resources/removing-tab-margins.md
     - name: Атрибут cookie SameSite (обновление 2020)
       href: resources/samesite-cookie-update.md
     - name: Участие в документации Teams
