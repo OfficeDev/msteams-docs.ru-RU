@@ -31,7 +31,7 @@
     - name: Создание приложения с помощью генератора Yeoman
       href: tutorials/get-started-yeoman.md
     - name: Обновление Microsoft Teams с помощью генератора Yeoman
-      href: tutorials/UpgradeTeamsUsingYeoman.md
+      href: tutorials/upgrade-using-yeoman.md
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Основные сведения о приложении
