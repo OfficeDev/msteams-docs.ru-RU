@@ -3,12 +3,12 @@ title: Поддержка единого входа для ботов
 description: Описывает, как получить маркер пользователя. В настоящее время разработчик бота может использовать вход в карточку или службу лазурного бота с поддержкой карты OAuth.
 keywords: маркер, маркер пользователя, поддержка SSO для ботов
 ms.topic: conceptual
-ms.openlocfilehash: a023c232186ce855c0b262f8cb535ec9d05db95a
-ms.sourcegitcommit: 5cb3453e918bec1173899e7591b48a48113cf8f0
+ms.openlocfilehash: dad36f52a3e23c00f8725e2e906308339629bb05
+ms.sourcegitcommit: 23ed7edf145df10dcfba15c43978eae9e0d451a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449488"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50753534"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входного знака (SSO) для ботов
 
@@ -82,7 +82,7 @@ ms.locfileid: "50449488"
     >
     > Необходимо помнить о следующих важных ограничениях:
     >
-    > * Поддерживаются только разрешения API Microsoft Graph на уровне пользователей, такие как электронная почта, профиль, offline_access и OpenId. Если вам нужен доступ к другим областьм Microsoft Graph, например или `User.Read` `Mail.Read` , см. [рекомендуемое обходное решение.](../../../tabs/how-to/authentication/auth-aad-sso.md#apps-that-require-additional-microsoft-graph-scopes)
+    > * Поддерживаются только разрешения API Microsoft Graph на уровне пользователей, такие как электронная почта, профиль, offline_access и OpenId. Если вам нужен доступ к другим областьм Microsoft Graph, например или `User.Read` `Mail.Read` , см. [рекомендуемое обходное решение.](../../../tabs/how-to/authentication/auth-aad-sso.md#apps-that-require-additional-graph-scopes)
     > * Доменное имя приложения должно быть таким же, как доменное имя, которое вы зарегистрировали для приложения AAD.
     > * Несколько доменов в приложении в настоящее время не поддерживаются.
     > * Приложения, которые используют домен, не поддерживаются, так как они являются распространенными и `azurewebsites.net` могут быть угрозой безопасности.
@@ -95,7 +95,7 @@ ms.locfileid: "50449488"
 
 2. Перейдите **к разрешениям API.** Выберите **Добавить разрешения,** делегированные Microsoft Graph, а затем добавьте следующие разрешения из  >    >  API Microsoft Graph:
     * User.Read (включен по умолчанию)
-    * рассылка
+    * email
     * offline_access
     * OpenId
     * profile

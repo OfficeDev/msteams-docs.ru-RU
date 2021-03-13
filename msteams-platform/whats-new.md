@@ -3,17 +3,17 @@ title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 ms.topic: reference
 keywords: команды, новые возможности
-ms.openlocfilehash: 62504b076fb8e4b0523a4a223301c9f031f03e7c
-ms.sourcegitcommit: 9cfbc44912980a33d2d7c7c85739aeea6ccb41de
+ms.openlocfilehash: d1a6a0532a857d02e7188c42282f1d0727d6f309
+ms.sourcegitcommit: 23ed7edf145df10dcfba15c43978eae9e0d451a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50479858"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50753548"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
 >[!TIP]
-> Ознакомьтесь с шаблонами, готовыми к производству, в каталоге [**шаблонов приложений Teams.**](samples/app-templates.md) Каталог в алфавитном порядке, а самые новые дополнения помечены звездой **&#9734;.**
+> Ознакомьтесь с примерами решений для общих сценариев команд в каталоге шаблонов [**приложений Teams!**](samples/app-templates.md) Каталог в алфавитном порядке, а самые новые дополнения помечены звездой ☆.
 
 ## <a name="change-log"></a>Журнал изменений
 

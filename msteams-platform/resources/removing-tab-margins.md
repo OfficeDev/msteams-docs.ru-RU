@@ -5,12 +5,12 @@ description: Описывает, как удаление полей вкладо
 keywords: удаление полей вкладки
 ms.topic: reference
 ms.author: lomeybur
-ms.openlocfilehash: 87766a40730fdaa2da80c2e0031eab655a993c33
-ms.sourcegitcommit: 9cfbc44912980a33d2d7c7c85739aeea6ccb41de
+ms.openlocfilehash: 57e6b15999ffc41c0a3e09897ba565f9b3bf3705
+ms.sourcegitcommit: 23ed7edf145df10dcfba15c43978eae9e0d451a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50479963"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50753520"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 
@@ -26,7 +26,7 @@ ms.locfileid: "50479963"
 
 ## <a name="guidelines"></a>Рекомендации
 
-Это изменение влияет на приложения Microsoft Teams, которые используют вкладки. Разработчикам следует перейти на общедоступные [Developer Preview,](~/resources/dev-preview/developer-preview-intro.md) чтобы определить, как влияют их вкладки и внести необходимые изменения.
+Это изменение влияет на приложения Microsoft Teams, которые используют вкладки. Разработчики должны перейти на общедоступные [Developer Preview,](~/resources/dev-preview/developer-preview-intro.md) чтобы определить, как влияют их вкладки и внести необходимые изменения.
 
 Разработчики вкладок не должны полагаться на Teams, чтобы предоставлять поля, окружающие их вкладки. Разработчикам рекомендуется добавлять поля вокруг их проектов вкладок там, где это необходимо. Проекты приложений в производстве могут выглядеть так, что существует дополнительная обивка, то есть поля, предоставляемые Teams, и поля, предоставляемые вкладкой. Однако дополнительная обивка является временной и пройдет через несколько недель, оставив только предоставленную обивку приложения.
 
