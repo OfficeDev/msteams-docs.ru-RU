@@ -5,12 +5,12 @@ description: создание страницы контента
 keywords: группы вкладок группового канала, настраиваемые статическими
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 619ca1079fcdb5a44eec2fa63d6687a0eb65cd4d
-ms.sourcegitcommit: 9cfbc44912980a33d2d7c7c85739aeea6ccb41de
+ms.openlocfilehash: c33f58197e8b49ac7122178e154724cc5186bcb1
+ms.sourcegitcommit: 49d1ecda14042bf3f368b14c1971618fe979b914
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50479874"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034700"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -28,7 +28,7 @@ ms.locfileid: "50479874"
 
 ## <a name="integrate-your-code-with-teams"></a>Интеграция кода с Teams
 
-Для отображения страницы в Teams необходимо включить [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest) клиента Microsoft Teams JavaScript и включить вызов после загрузки `microsoftTeams.initialize()` страницы. Таким образом ваша страница и клиент Teams общаются:
+Для отображения страницы в Teams необходимо включить [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) клиента Microsoft Teams JavaScript и включить вызов после загрузки `microsoftTeams.initialize()` страницы. Таким образом ваша страница и клиент Teams общаются:
 
 ```html
 <!DOCTYPE html>
@@ -93,7 +93,7 @@ ms.locfileid: "50479874"
 Начиная с схемы манифеста [v1.7,](../../../resources/schema/manifest-schema.md)вы можете предоставить собственный индикатор загрузки везде, где ваш веб-контент загружается в Teams, [например,](#integrate-your-code-with-teams)страницу контента вкладок, страницу конфигурации, страницу удаления и модули задач на вкладке [.](../../../task-modules-and-cards/task-modules/task-modules-tabs.md) [](../../../resources/schema/manifest-schema.md#showloadingindicator) [](configuration-page.md) [](removal-page.md)
 
 > [!NOTE]
-> 1. На мобильных устройствах еще не поддерживается индикатор загрузки.
+> 1. Поведение мобильных клиентов не настраивается с помощью этого свойства манифеста. Мобильные клиенты показывают индикатор загрузки по умолчанию на страницах контента и модулях задач на основе iframe. Этот индикатор на мобильном телефоне отображается при запросе на извлечение контента и его отклонять сразу же после завершения запроса.
 > 2. Если вы указываете в манифесте приложения, то все страницы конфигурации вкладок, контента и удаления и все модули задач на основе iframe должны следовать обязательному протоколу  `"showLoadingIndicator : true`  ниже:
 
 

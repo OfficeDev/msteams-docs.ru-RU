@@ -1,33 +1,33 @@
 ---
 title: Настройка поставщиков удостоверений OAuth 2.0
-description: В этой статье описывается настройка поставщиков удостоверений с фокусом на Azure AD
+description: Описывает настройку поставщиков удостоверений с фокусом на Azure AD
 ms.topic: how-to
-keywords: поставщик удостоверений AAD oauth для проверки подлинности teams
-ms.openlocfilehash: b5ffd6c4c1edd2c4315ea1e31474a626de53aba1
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+keywords: teams authentication AAD oauth identity provider
+ms.openlocfilehash: 84510202289333910cdb23d179c1279d8051d257
+ms.sourcegitcommit: 49d1ecda14042bf3f368b14c1971618fe979b914
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014469"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034672"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 
 ## <a name="configuring-an-application-to-use-azure-active-directory-as-an-identity-provider"></a>Настройка приложения для использования Azure Active Directory в качестве поставщика удостоверений
 
-Поставщики удостоверений, поддерживающие OAuth 2.0, не будут проверку подлинности запросов из неизвестных приложений; приложения должны быть зарегистрированы заранее. Чтобы сделать это с помощью Azure AD, выполните следующие действия:
+Поставщики удостоверений, поддерживающие OAuth 2.0, не будут проверку подлинности запросов от неизвестных приложений; приложения должны быть зарегистрированы заранее. Чтобы сделать это с Azure AD, выполните следующие действия:
 
-1. Откройте портал [регистрации приложений.](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
+1. Откройте [портал регистрации приложений.](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
 
 2. Выберите приложение, чтобы просмотреть его свойства, или нажмите кнопку "Новая регистрация". Найдите **раздел URI** перенаправления для приложения.
 
-3. Убедитесь, что в  меню в меню "Интернет" выбран веб-сайт. Обновите URL-адрес конечной точки проверки подлинности. Для примеров приложений TypeScript/Node.js и C# на GitHub URL-адреса перенаправления будут иметь примерно такой вид:
+3. В меню отсев убедитесь, что **выбран** Веб. Обновите URL-адрес конечной точки проверки подлинности. В примере typeScript/Node.js и C# GitHub URL-адреса перенаправления будут похожи на такие:
 
-    URL-адреса перенаправления: `https://<hostname>/bot-auth/simple-start`
+    Url-адреса перенаправления: `https://<hostname>/bot-auth/simple-start`
 
-Замените `<hostname>` фактический хост. Это может быть выделенный сайт размещения, например Azure, Glitch или туннель ngrok для localhost на вашем компьютере разработки, например `abcd1234.ngrok.io` . Возможно, у вас пока нет этих сведений, если вы еще не завершили или не развернетесь в приложении (или в примере приложения, упомянутом выше), но вы всегда можете вернуться на эту страницу, если эти сведения известны.
+Замените `<hostname>` фактическим хостом. Это может быть выделенный хостинг-сайт, например Azure, Glitch или туннель ngrok для localhost на компьютере разработки, например `abcd1234.ngrok.io` . Вы можете еще не иметь эту информацию, если вы еще не завершили или не выполнили хостинг приложения (или примера приложения, упомянутого выше), но вы всегда можете вернуться на эту страницу, когда эта информация будет известна.
 
 ## <a name="other-authentication-providers"></a>Другие поставщики проверки подлинности
 
-* **LinkedIn** Следуйте инструкциям по [настройке приложения LinkedIn](https://developer.linkedin.com/docs/oauth2)
+* **LinkedIn** Следуйте инструкциям в [настройке приложения LinkedIn](/linkedin/talent/apply-with-linkedin)
 
-* **Google** Получение учетных данных клиента OAuth 2.0 из консоли [API Google](https://console.developers.google.com/)
+* **Google** Получение учетных данных клиента OAuth 2.0 из [консоли API Google](https://console.developers.google.com/)
