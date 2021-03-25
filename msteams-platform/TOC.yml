@@ -334,6 +334,8 @@
   items:
     - name: Обзор
       href: 'https://docs.microsoft.com/graph/teams-concept-overview'
+    - name: Microsoft Graph Toolkit
+      href: 'https://docs.microsoft.com/graph/toolkit/overview'
     - name: Начало работы
       href: 'https://docs.microsoft.com/graph/toolkit/get-started/build-a-microsoft-teams-tab'
     - name: Включение согласия с определением ресурсов
