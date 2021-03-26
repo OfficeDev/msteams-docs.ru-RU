@@ -329,7 +329,11 @@
         - name: Использование проверки подлинности SSO
           href: bots/how-to/authentication/auth-aad-sso-bots.md
     - name: Расширения для система обмена сообщениями
-      href: messaging-extensions/how-to/add-authentication.md
+      items:
+        - name: Добавление проверки подлинности в расширение для сообщений
+          href: messaging-extensions/how-to/add-authentication.md
+        - name: Включение единого входа в расширениях для сообщений
+          href: messaging-extensions/how-to/enable-SSO-auth-me.md
 - name: Использование данных Teams с помощью Microsoft Graph
   items:
     - name: Обзор
