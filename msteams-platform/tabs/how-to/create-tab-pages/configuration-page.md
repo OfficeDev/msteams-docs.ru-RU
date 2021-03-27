@@ -5,12 +5,12 @@ description: создание страницы конфигурации
 keywords: команды вкладки группового канала настраиваются
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: b6da8437b6988f863288d77aedc1acb786c12d4b
-ms.sourcegitcommit: 49d1ecda14042bf3f368b14c1971618fe979b914
+ms.openlocfilehash: 9407e4afc0b52f1b16f2d6b5a55e824f484a1870
+ms.sourcegitcommit: 3727fc58e84b6f1752612884c2e0b25e207fb56e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034681"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382378"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -22,7 +22,15 @@ ms.locfileid: "51034681"
 
 ## <a name="configuring-a-channel-or-group-chat-tab"></a>Настройка вкладки чата канала или группы
 
-Приложение должно ссылаться на [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) клиента Microsoft Teams JavaScript и вызывать `microsoft.initialize()` . Кроме того, используемые URL-адреса должны быть защищены конечными точками HTTPS и доступны в облаке. В качестве примера страницы конфигурации приводится следующий код:
+Приложение должно ссылаться на [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) клиента Microsoft Teams JavaScript и вызывать `microsoft.initialize()` . Кроме того, используемые URL-адреса должны быть защищены конечными точками HTTPS и доступны в облаке. 
+
+### <a name="example"></a>Пример
+
+Пример страницы конфигурации показан на следующем изображении: 
+
+<img src="~/assets/images/tab-images/configuration-page.png" alt="Configuration page" width="400"/>
+
+Соответствующий код страницы конфигурации показан в следующем разделе:
 
 ```html
 <head>
@@ -79,7 +87,17 @@ ms.locfileid: "51034681"
 ...
 ```
 
-Выберите **кнопку Выберите серый** или **красный** на странице конфигурации, чтобы отобразить содержимое вкладки с серым или красным значком. Выбор относительной кнопки либо загорелся, либо `saveGray()` `saveRed()` вызывает следующее:
+Выберите **кнопку Выберите серый** или **красный** на странице конфигурации, чтобы отобразить содержимое вкладки с серым или красным значком. 
+
+На следующем изображении отображается содержимое вкладки с серым значком:
+
+<img src="~/assets/images/tab-images/configure-tab-with-gray.png" alt="Configure tab with select gray" width="400"/>
+
+На следующем изображении отображается содержимое вкладки с красным значком:
+
+<img src="~/assets/images/tab-images/configure-tab-with-red.png" alt="Configure tab with select red" width="400"/>
+
+Выбор относительной кнопки вызывает или `saveGray()` вызывает `saveRed()` следующее:
 
 1. `settings.setValidityState(true)`Установлено, что это верно.
 1. Запускается `microsoftTeams.settings.registerOnSaveHandler()` обработник событий.
@@ -104,7 +122,7 @@ ms.locfileid: "51034681"
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте местообладатели в `configurationUrl`
 
-Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Пример.
+Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например:
 
 ##### <a name="base-url"></a>Базовый URL-адрес
 

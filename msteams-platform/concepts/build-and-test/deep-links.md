@@ -3,12 +3,12 @@ title: Создание глубоких ссылок на контент
 description: Описывает глубокие ссылки и их использование в приложениях
 ms.topic: how-to
 keywords: deeplink teams deep link
-ms.openlocfilehash: ec6357998c5d5aa60d0f512bf35514f8aa76a0ed
-ms.sourcegitcommit: 23ed7edf145df10dcfba15c43978eae9e0d451a8
+ms.openlocfilehash: 493f9a010f7076ec97fc7da7110244645e76cfe8
+ms.sourcegitcommit: 0206ed48c6a287d14aec3739540194a91766f0a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50753513"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51378331"
 ---
 # <a name="create-deep-links-to-content-and-features-in-microsoft-teams"></a>Создание глубоких ссылок на контент и функции в Microsoft Teams
 
@@ -141,6 +141,23 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 * `message`. Необязательное поле для текста сообщения, которое необходимо вставить в поле записи текущего пользователя, пока чат находится в состоянии черновика.
 
 Чтобы использовать эту глубокую ссылку с ботом, вы можете указать это в качестве целевого URL-адреса на кнопке карточки или нажмите действие через `openUrl` тип действия.
+
+## <a name="deep-links-for-sharepoint-framework-tabs"></a>Глубокие ссылки для вкладок SharePoint Framework
+
+Следующий формат глубокой ссылки можно использовать в карточке расширения бота, соединитетеля или обмена сообщениями: `https://teams.microsoft.com/l/entity/<AppId>/<EntityId>?webUrl=<entityWebUrl>/<EntityName>`
+
+> [!NOTE]
+> Когда бот отправляет сообщение TextBlock с глубокой ссылкой, при выборе ссылки открывается новая вкладка браузера. Это происходит в настольном приложении Chrome и Microsoft Teams, которое работает на Linux.
+> Если бот отправляет один и тот же URL-адрес глубокой ссылки в вкладку Teams, открываемую в текущем браузере, когда пользователь выбирает `Action.OpenUrl` ссылку. Новая вкладка браузера не открывается.
+
+Параметры запроса:
+
+* `appID` - Ваш манифест **fe4a8eba-2a31-4737-8e33-e5fae6fee194**.
+* `entityID` - ID элемента, который вы предоставили при [настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md). Например, **tasklist123**.
+* `entityWebUrl` — необязательный url-адрес с откатом, который можно использовать, если клиент не поддерживает отрисовку вкладки или https://tasklist.example.com/123 https://tasklist.example.com/list123/task456 .
+* `entityName` - Метка для элемента на вкладке, используемого при отображе глубокой ссылки, список задач 123 или задача 456.
+
+Пример: https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&TaskList.
 
 ## <a name="linking-to-the-scheduling-dialog"></a>Ссылка на диалоговое окно планирования
 

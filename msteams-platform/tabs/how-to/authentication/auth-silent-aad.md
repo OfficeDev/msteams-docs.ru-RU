@@ -3,12 +3,12 @@ title: Автоматическая проверка подлинности
 description: Описание бесшумной проверки подлинности
 ms.topic: conceptual
 keywords: группы проверки подлинности SSO silent AAD
-ms.openlocfilehash: db8409cd4a6edface6d5dc3b3de6698852eaaa24
-ms.sourcegitcommit: 5cb3453e918bec1173899e7591b48a48113cf8f0
+ms.openlocfilehash: 7facaef0941ff7602b3e23444653ef41415c3396
+ms.sourcegitcommit: 3727fc58e84b6f1752612884c2e0b25e207fb56e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449230"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382347"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
@@ -67,7 +67,7 @@ if (loginHint) {
 
 ### <a name="authenticate"></a>Проверка подлинности
 
-Если ADAL кэшировали неиспользваемый маркер для пользователя, используйте маркер. Кроме того, попытаться получить маркер молча, позвонив `acquireToken(resource, callback)` . ADAL.js вызов функции вызова с помощью запрашиваемого маркера или при сбой проверки подлинности.
+Если ADAL кэшировали маркер для пользователя, срок действия которого не истек, используйте этот маркер. Кроме того, попытаться получить маркер молча, позвонив `acquireToken(resource, callback)` . ADAL.js вызывает функцию вызова с запрашиваемого маркера или дает ошибку в случае сбой проверки подлинности.
 
 Если вы получаете ошибку в функции обратного вызова, покажите вход в кнопку и откажитесь от явного входного знака.
 
@@ -116,5 +116,19 @@ if (authContext.isCallback(window.location.hash)) {
             microsoftTeams.authentication.notifyFailure(authContext.getLoginError());
         }
     }
+}
+```
+
+### <a name="handle-sign-out-flow"></a>Обработка потока регистрации
+
+Используйте следующий код для обработки потока регистрации в AAD Auth:
+
+> [!NOTE]
+> Несмотря на то, что вход для вкладки или бота Teams будет сделан, текущий сеанс также очищается.
+
+```javascript
+function logout() {
+localStorage.clear();
+window.location.href = "@Url.Action("<<Action Name>>", "<<Controller Name>>")";
 }
 ```
