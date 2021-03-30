@@ -6,17 +6,14 @@ author: laujan
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы импортируют сообщения api graph Microsoft migrate migration post
-ms.openlocfilehash: 8cf4f964aba7ce9375b1b259ae88a7fbcb620631
-ms.sourcegitcommit: f6e4a303828224a702138753a8e5e27c8a094c82
+ms.openlocfilehash: 1b5a8ccc243c795801552519b4b52f51366e047d
+ms.sourcegitcommit: c9446200b8e76fbd434d012dc11dd9f191776d13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51176958"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51403971"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
-
->[!IMPORTANT]
-> Общедоступные предварительные просмотры Microsoft Graph и Microsoft Teams доступны для раннего доступа и отзывов. Хотя этот выпуск прошел широкое тестирование, он не предназначен для использования в производстве.
 
 С помощью Microsoft Graph можно перенести существующую историю сообщений и данные пользователей из внешней системы в канал Teams. Включив воссоздание иерархии сообщений сторонних платформ внутри Teams, пользователи могут беспрепятственно продолжать общение и действовать без прерывания.
 
@@ -66,12 +63,12 @@ ms.locfileid: "51176958"
 #### <a name="request-create-a-team-in-migration-state"></a>Запрос (создание группы в состоянии миграции)
 
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 
 Content-Type: application/json
 {
   "@microsoft.graph.teamCreationMode": "migration",
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "createdDateTime": "2020-03-14T11:22:17.043Z"
@@ -82,8 +79,8 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams/{team-id}/operations/{operation-id}
+Content-Location: /teams/{team-id}
 ```
 
 #### <a name="error-messages"></a>Сообщения об ошибках
@@ -99,7 +96,7 @@ Content-Location: /teams/{teamId}
 
 Создание канала для импортируемых сообщений аналогично сценарию создания группы:
 
-> [Создайте новый канал](/graph/api/channel-post?view=graph-rest-beta&tabs=http&preserve-view=true) с использованием свойства ресурса канала с помощью функции timestamp в обратном `createdDateTime` времени. Поместите новый канал в специальное состояние, которое не позволяет пользователям от большинства действий чата в канале до завершения процесса `migration mode` миграции.  Включай атрибут экземпляра со значением в запросе POST, чтобы явно идентифицировать новую команду `channelCreationMode` `migration` как созданную для миграции.  
+> [Создайте новый канал](/graph/api/channel-post?view=graph-rest-v1.0&tabs=http&preserve-view=true) с использованием свойства ресурса канала с помощью функции timestamp в обратном `createdDateTime` времени. Поместите новый канал в специальное состояние, которое не позволяет пользователям от большинства действий чата в канале до завершения процесса `migration mode` миграции.  Включай атрибут экземпляра со значением в запросе POST, чтобы явно идентифицировать новую команду `channelCreationMode` `migration` как созданную для миграции.  
 <!-- markdownlint-disable MD024 -->
 #### <a name="permissions"></a>Разрешения
 
@@ -110,7 +107,7 @@ Content-Location: /teams/{teamId}
 #### <a name="request-create-a-channel-in-migration-state"></a>Запрос (создание канала в состоянии миграции)
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels
 
 Content-Type: application/json
 {
@@ -128,8 +125,8 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 
 {
-   "@odata.context":"https://canary.graph.microsoft.com/testprodbetateamsgraphsvcncus/$metadata#teams('9cc6d6ab-07d8-4d14-bc2b-7db8995d6d23')/channels/$entity",
-   "id":"19:e90f6814ce674072a4126206e7de485e@thread.tacv2",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('team-id')/channels/$entity",
+   "id":"id-value",
    "createdDateTime":null,
    "displayName":"Architecture Discussion",
    "description":"This channel is where we debate all future architecture plans",
@@ -161,7 +158,7 @@ HTTP/1.1 202 Accepted
 #### <a name="request-post-message-that-is-text-only"></a>Запрос (сообщение POST, которое является текстовым)
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
+POST https://graph.microsoft.com/v1.0/teams/team-id/channels/channel-id/messages
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
@@ -185,7 +182,7 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('team-id')/channels('channel-id')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
@@ -232,7 +229,7 @@ HTTP/1.1 200 OK
 > **Примечание.** В этом сценарии нет специальных областей разрешений, так как запрос является частью chatMessage; Области для chatMessage применяются и здесь.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
+POST https://graph.microsoft.com/v1.0/teams/team-id/channels/channel-id/messages
 
 {
   "body": {
@@ -255,7 +252,7 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/messages
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-id')/channels('channel-id')/messages/$entity",
     "id": "id-value",
     "replyToId": null,
     "etag": "id-value",
@@ -290,25 +287,12 @@ HTTP/1.1 200 OK
 
 ## <a name="step-four-complete-migration-mode"></a>Шаг 4. Полный режим миграции
 
-После завершения процесса миграции сообщений команда и канал вывели из режима миграции с помощью  `completeMigration`  метода. Этот шаг открывает ресурсы команды и канала для общего использования членами группы. Действие привязано к `team` экземпляру.
-
-#### <a name="request-end-team-migration-mode"></a>Запрос (режим миграции конечных команд)
-
-```http
-POST https://graph.microsoft.com/beta/teams/teamId/completeMigration
-
-```
-
-#### <a name="response"></a>Отклик
-
-```http
-HTTP/1.1 204 NoContent
-```
+После завершения процесса миграции сообщений команда и канал вывели из режима миграции с помощью  `completeMigration`  метода. Этот шаг открывает ресурсы команды и канала для общего использования членами группы. Действие привязано к `team` экземпляру. Все каналы должны быть завершены из режима миграции, прежде чем команда может быть завершена.
 
 #### <a name="request-end-channel-migration-mode"></a>Запрос (режим переноса конечных каналов)
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/completeMigration
+POST https://graph.microsoft.com/v1.0/teams/team-id/channels/channel-id/completeMigration
 
 ```
 
@@ -318,10 +302,16 @@ POST https://graph.microsoft.com/beta/teams/teamId/channels/channelId/completeMi
 HTTP/1.1 204 NoContent
 ```
 
-#### <a name="error-response"></a>Отклик с ошибкой
+#### <a name="request-end-team-migration-mode"></a>Запрос (режим миграции конечных команд)
 
 ```http
-400 Bad Request
+POST https://graph.microsoft.com/v1.0/teams/team-id/completeMigration
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 204 NoContent
 ```
 
 * Действие, которое `team` вызвано или `channel` которое не в `migrationMode` .
@@ -333,7 +323,7 @@ HTTP/1.1 204 NoContent
 #### <a name="request-add-member"></a>Запрос (добавление участника)
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/members
+POST https://graph.microsoft.com/beta/teams/{team-id}/members
 Content-type: application/json
 Content-length: 30
 {
@@ -353,8 +343,6 @@ HTTP/1.1 204 No Content
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD026 -->
-
-* Вы можете импортировать сообщения от пользователей, которые не находятся в Teams. **ПРИМЕЧАНИЕ.** Сообщения, импортируемые для пользователей, не присутствующих в клиенте, не будут искаться на клиентских порталах Teams или на порталах соответствия требованиям во время предварительного просмотра общего просмотра.
 
 * После запроса нельзя импортировать дополнительные сообщения `completeMigration` в команду.
 
@@ -378,7 +366,6 @@ HTTP/1.1 204 No Content
 |Сообщения с богатым текстом|Видео|
 |Цепочка ответов на сообщения|Объявления|
 |Обработка высокой пропускной способности|Фрагменты кода|
-||Адаптивные карты|
 ||Наклейки|
 ||Emojis|
 ||Котировки|
@@ -387,4 +374,4 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 > [!div class="nextstepaction"]
->[Дополнительные данные об интеграции Microsoft Graph и Teams](/graph/teams-concept-overview)
+> [Дополнительные данные об интеграции Microsoft Graph и Teams](/graph/teams-concept-overview)
