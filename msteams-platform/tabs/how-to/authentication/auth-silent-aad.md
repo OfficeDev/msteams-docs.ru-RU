@@ -3,12 +3,12 @@ title: Автоматическая проверка подлинности
 description: Описание бесшумной проверки подлинности
 ms.topic: conceptual
 keywords: группы проверки подлинности SSO silent AAD
-ms.openlocfilehash: 7facaef0941ff7602b3e23444653ef41415c3396
-ms.sourcegitcommit: 3727fc58e84b6f1752612884c2e0b25e207fb56e
+ms.openlocfilehash: 7a68c532cadf181b15c16d6bc4d4ab861d5c9922
+ms.sourcegitcommit: 2bf651dfbaf5dbab6d466788f668e7a6c5d69c36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382347"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51421610"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
@@ -32,7 +32,9 @@ ms.locfileid: "51382347"
 
 Код в этой статье происходит из примера приложения Teams, которое является узлом [проверки подлинности Teams.](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs)
 
-### <a name="include-and-configure-adal"></a>включить и настроить ADAL
+[Инициировать бесшумную](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) и простую настраиваемую вкладку проверки подлинности с помощью AAD и следуйте инструкциям по запуску образца на локальном компьютере.
+
+### <a name="include-and-configure-adal"></a>Включить и настроить ADAL
 
 Включите библиотеку ADAL.js на страницах вкладок и настройте ADAL с вашим клиентом ИД и URL-адресом перенаправления:
 

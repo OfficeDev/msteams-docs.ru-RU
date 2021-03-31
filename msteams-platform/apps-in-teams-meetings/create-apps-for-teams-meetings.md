@@ -5,12 +5,12 @@ description: создание приложений для собраний гр�
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 78b7791deb61354ab93fa108f8bb2e134dc86080
-ms.sourcegitcommit: 3727fc58e84b6f1752612884c2e0b25e207fb56e
+ms.openlocfilehash: ac0d3dee30e82cde51651f7eab3b05e569b820f7
+ms.sourcegitcommit: 94b1d3e50563b31c1ff01c52d563c112a2553611
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382354"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51435038"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -289,6 +289,8 @@ POST /v3/conversations/{conversationId}/activities
     ![Опыт предварительного собрания](../assets/images/apps-in-meetings/PreMeeting.png)
 
 1. В галерее вкладок выберите приложение, которое необходимо добавить, и выполните необходимые действия. Приложение устанавливается в качестве вкладки.
+    > [!NOTE] 
+    > В настоящее время на вкладке "Собрания" сведения о собраниях и сведения о участниках не поддерживаются.
 
 **Добавление расширения обмена сообщениями на собрание**
 
@@ -331,7 +333,7 @@ POST /v3/conversations/{conversationId}/activities
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Описание | C# |
+|Пример имени | Описание | C # |
 |----------------|-----------------|--------------|
 | Разнонасть собраний | Пример extensibility microsoft Teams для передачи маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) |
 | Бот-бот для пузырьков контента для собраний | Пример extensibility microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |
