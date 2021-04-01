@@ -3,12 +3,12 @@ title: Форматирование текста в картах
 description: Описывает форматирование текста карты в Microsoft Teams
 keywords: teams bots cards format
 ms.date: 03/29/2018
-ms.openlocfilehash: 240481f6deaa9246692ca297712bd311fbd9405d
-ms.sourcegitcommit: 2bf651dfbaf5dbab6d466788f668e7a6c5d69c36
+ms.openlocfilehash: d7016f8b954e885221c55bd6c29309fd90a1dcfc
+ms.sourcegitcommit: d41da0b608327829b902aded6bc85c0d0016d068
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51421629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51475001"
 ---
 # <a name="format-cards-in-teams"></a>Формат карт в Teams
 
@@ -242,6 +242,10 @@ ms.locfileid: "51421629"
 ``` 
 
 ### <a name="stage-view-for-images-in-adaptive-cards"></a>Представление сцены для изображений в адаптивных картах
+
+> [!NOTE]
+> В настоящее время эта функция доступна только в предварительном просмотре разработчика.
+ 
 В адаптивной карте свойство можно использовать для выборочного отображения изображений в представлении `msteams` сцены. Когда пользователи наведите курсор над изображениями, они увидят значок расширения, для которого установлен `allowExpand` атрибут `true` . Сведения об использовании свойства см. в следующем примере:
 
 ``` json
