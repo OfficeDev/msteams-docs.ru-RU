@@ -4,16 +4,16 @@ description: Описывает схему манифеста для Microsoft T
 ms.topic: reference
 ms.author: lajanuar
 keywords: Схема манифеста команд
-ms.openlocfilehash: 291d748d546dec16fa4bf748318b8749b7d0275d
-ms.sourcegitcommit: 9cfbc44912980a33d2d7c7c85739aeea6ccb41de
+ms.openlocfilehash: fc7af73dd90ae74d76645281d9e761b91678873b
+ms.sourcegitcommit: e78c9f51c4538212c53bb6c6a45a09d994896f09
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50479859"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51585843"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справка. Схема манифеста для Microsoft Teams
 
-Манифест Teams описывает интеграцию приложения в продукт Microsoft Teams. Манифест должен соответствовать схеме, которая была на [`https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json`]( https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json) уровне . Поддерживаются и предыдущие версии 1.0-1.4 (с помощью "v1.x" в URL-адресе).
+Манифест Teams описывает интеграцию приложения в продукт Microsoft Teams. Манифест должен соответствовать схеме, которая была на [`https://developer.microsoft.com/json-schemas/teams/v1.9/MicrosoftTeams.schema.json`]( https://developer.microsoft.com/json-schemas/teams/v1.9/MicrosoftTeams.schema.json) уровне . Поддерживаются и предыдущие версии 1.0-1.4 (с помощью "v1.x" в URL-адресе).
 
 В следующем примере схемы показаны все варианты раздвивемости.
 
@@ -21,8 +21,8 @@ ms.locfileid: "50479859"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.8",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
   "version": "1.0.0",
   "id": "%MICROSOFT-APP-ID%",
   "packageName": "com.example.myapp",
@@ -276,50 +276,8 @@ ms.locfileid: "50479859"
       }
     ]
   },
-  "defaultInstallScope": {
-     "type": "string",
-     "enum": [
-        "personal",
-        "team",
-        "groupchat",
-        "meetings"
-      ],
-      "description": "The install scope is defined for this app by default. It is the option displayed on the button when a user tries to add the app."
-    },
-  "defaultGroupCapability": {
-      "type": "object",
-      "properties": {
-        "team": {
-          "type": "string",
-          "enum": [
-            "tab",
-            "bot",
-            "connector"
-          ],
-          "description": "When the selected install scope is Team, this field specifies the default capability available."
-    },
-    "groupchat": {
-      "type": "string",
-      "enum": [
-            "tab",
-            "bot",
-            "connector"
-      ],
-      "description": "When the selected install scope is Group Chat, this field specifies the default capability available."
-    },
-    "meetings": {
-      "type": "string",
-      "enum": [
-            "tab",
-            "bot",
-            "connector"
-      ],
-      "description": "When the selected install scope is Meetings, this field specifies the default capability available."
-      }
-    },
-    "description": "When a group install scope is selected, this defines the default capability when the user installs the app.",
-    "additionalProperties": false
-
+  "defaultInstallScope": "meetings",
+  "defaultGroupCapability": {"meetings": "tab" , "team": "bot", "groupchat": "bot"}
 }
 ```
 
@@ -335,7 +293,7 @@ URL https:// ссылки на схему JSON для манифеста.
 
 **Обязательно —** строка
 
-Версия схемы манифеста, используемая этим манифестом. Должно быть 1,7.
+Версия схемы манифеста, используемая этим манифестом. Должно быть 1,9.
 
 ## <a name="version"></a>version
 
@@ -447,11 +405,11 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`configurationUrl`|string|2048 символов|✔|URL-https://, который можно использовать при настройке вкладки.|
-|`scopes`|массив enums|1 |✔|В настоящее время настраиваемые вкладки поддерживают только `team` области `groupchat` и области. |
+|`scopes`|массив enums|1|✔|В настоящее время настраиваемые вкладки поддерживают только `team` области `groupchat` и области. |
 |`canUpdateConfiguration`|boolean|||Значение, указывающее, может ли экземпляр конфигурации вкладки обновляться пользователем после создания. По умолчанию: **true**.|
 |`context` |массив enums|6 ||Набор `contextItem` областей, в которых поддерживается вкладка. По умолчанию: **[channelTab, privateChatTab, meetingChatTab, meetingDetailsTab]**.|
-|`sharePointPreviewImage`|string|2048||Относительный путь к изображению предварительного просмотра вкладок для использования в SharePoint. Размер 1024x768. |
-|`supportedSharePointHosts`|массив enums|1 ||Определяет, как вкладка доступна в SharePoint. Параметры `sharePointFullPage` и `sharePointWebPart` |
+|`sharePointPreviewImage`|Строка|2048||Относительный путь к изображению предварительного просмотра вкладок для использования в SharePoint. Размер 1024x768. |
+|`supportedSharePointHosts`|массив enums|1||Определяет, как вкладка доступна в SharePoint. Параметры `sharePointFullPage` и `sharePointWebPart` |
 
 ## <a name="statictabs"></a>staticTabs
 
@@ -464,12 +422,12 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`entityId`|string|64 символа|✔|Уникальный идентификатор для объекта, отображаемого на вкладке.|
-|`name`|string|128 символов|✔|Отображение имени вкладки в интерфейсе канала.|
-|`contentUrl`|string||✔|URL https://, который указывает на пользовательский интерфейс объекта, отображаемого на холсте Teams.|
-|`websiteUrl`|string|||Url https://, чтобы указать, выбирает ли пользователь просмотр в браузере.|
-|`searchUrl`|string|||Url https://, на который нужно указать для поисковых запросов пользователя.|
-|`scopes`|массив enums|1 |✔|В настоящее время статические вкладки поддерживают только область, что означает, что она может быть предусмотрена только в `personal` рамках личного опыта.|
-|`context` | массив enums| 2 || Набор `contextItem` областей, в которых поддерживается вкладка.|
+|`name`|Строка|128 символов|✔|Отображение имени вкладки в интерфейсе канала.|
+|`contentUrl`|Строка||✔|URL https://, который указывает на пользовательский интерфейс объекта, отображаемого на холсте Teams.|
+|`websiteUrl`|Строка|||Url https://, чтобы указать, выбирает ли пользователь просмотр в браузере.|
+|`searchUrl`|Строка|||Url https://, на который нужно указать для поисковых запросов пользователя.|
+|`scopes`|массив enums|1|✔|В настоящее время статические вкладки поддерживают только область, что означает, что она может быть предусмотрена только в `personal` рамках личного опыта.|
+|`context` | массив enums| 2|| Набор `contextItem` областей, в которых поддерживается вкладка.|
 
 > [!NOTE]
 > Если для отображения соответствующего контента или инициации потока проверки подлинности на вкладке Microsoft Teams требуются сведения, зависящие от  [контекста,](../../tabs/how-to/access-teams-context.md)см. в статье Get context for your Microsoft Teams.
@@ -485,7 +443,7 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`botId`|string|64 символа|✔|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Это вполне может быть таким же, как общий [ID приложения](#id).|
-|`scopes`|массив enums|3 |✔|Указывает, предлагает ли бот функции в контексте канала в `team`, в групповом чате (`groupchat`) или функции, ограниченные только отдельным пользователем (`personal`). Эти параметры не являются исключающими.|
+|`scopes`|массив enums|3|✔|Указывает, предлагает ли бот функции в контексте канала в `team`, в групповом чате (`groupchat`) или функции, ограниченные только отдельным пользователем (`personal`). Эти параметры не являются исключающими.|
 |`needsChannelSelector`|boolean|||Описывает, использует ли бот пользовательское указание для добавления бота в определенный канал. По умолчанию: **`false`**|
 |`isNotificationOnly`|boolean|||Указывает, является ли бот односторонним и только для уведомлений, в отличие от бота для беседы. По умолчанию: **`false`**|
 |`supportsFiles`|boolean|||Указывает, поддерживает ли бот возможность отправки и скачивания файлов в личном чате. По умолчанию: **`false`**|
@@ -498,7 +456,7 @@ URL https:// ссылки на схему JSON для манифеста.
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`items.scopes`|массив enums|3 |✔|Указывает область, для которой действует список команд. Возможны значения `team`, `personal` и `groupchat`.|
+|`items.scopes`|массив enums|3|✔|Указывает область, для которой действует список команд. Возможны значения `team`, `personal` и `groupchat`.|
 |`items.commands`|массив объектов|10 |✔|Массив команд, поддерживаемых ботом:<br>`title`: имя команды бота (строка, 32)<br>`description`: простое описание или пример синтаксиса команды и ее аргумента (строка, 128)|
 
 ### <a name="botscommandlistscommands"></a>bots.commandLists.commands
@@ -519,8 +477,8 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`configurationUrl`|string|2048 символов|✔|URL https://, который необходимо использовать при настройке соединителя.|
-|`scopes`|массив enums|1 |✔|Указывает, предоставляет ли соединители опыт в контексте канала в канале или только для отдельного пользователя `team` ( `personal` ). В настоящее время `team` поддерживается только область.|
-|`connectorId`|string|64 символа|✔|Уникальный идентификатор соединитетеля, который соответствует его идентификатору в панели мониторинга разработчиков [соединителок.](https://aka.ms/connectorsdashboard)|
+|`scopes`|массив enums|1|✔|Указывает, предоставляет ли соединители опыт в контексте канала в канале или только для отдельного пользователя `team` ( `personal` ). В настоящее время `team` поддерживается только область.|
+|`connectorId`|Строка|64 символа|✔|Уникальный идентификатор соединитетеля, который соответствует его идентификатору в панели мониторинга разработчиков [соединителок.](https://aka.ms/connectorsdashboard)|
 
 ## <a name="composeextensions"></a>composeExtensions
 
@@ -539,7 +497,7 @@ URL https:// ссылки на схему JSON для манифеста.
 |`commands`|массив объектов|10 |✔|Массив команд, поддерживаемых расширением обмена сообщениями|
 |`canUpdateConfiguration`|boolean|||Значение, указывающее, может ли пользователь обновить конфигурацию расширения обмена сообщениями. По умолчанию: **false**.|
 |`messageHandlers`|массив объектов|5 ||Список обработчиков, которые позволяют вызывать приложения при определенных условиях.|
-|`messageHandlers.type`|string|||Тип обработка сообщений. Должно быть задано значение `"link"`.|
+|`messageHandlers.type`|Строка|||Тип обработка сообщений. Должно быть задано значение `"link"`.|
 |`messageHandlers.value.domains`|массив строк|||Массив доменов, для которые обработник сообщений ссылок может зарегистрироваться.|
 
 ### <a name="composeextensionscommands"></a>composeExtensions.commands
@@ -551,26 +509,26 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`id`|string|64 символа|✔|ID для команды.|
-|`title`|string|32 символа|✔|Удобное имя команды.|
-|`type`|string|64 символа||Тип команды. Один `query` из или `action` . По умолчанию: **запрос**.|
-|`description`|string|128 символов||В описании, которое отображается пользователями, указывается назначение этой команды.|
+|`title`|Строка|32 символа|✔|Удобное имя команды.|
+|`type`|Строка|64 символа||Тип команды. Один `query` из или `action` . По умолчанию: **запрос**.|
+|`description`|Строка|128 символов||В описании, которое отображается пользователями, указывается назначение этой команды.|
 |`initialRun`|boolean|||Значение boolean указывает, выполняется ли команда изначально без параметров. Значение по умолчанию: **false**.|
-|`context`|массив строк|3 ||Определяет, из чего можно вызвать расширение сообщения. Любое сочетание `compose` `commandBox` , `message` . Значение по умолчанию: `["compose","commandBox"]`.|
+|`context`|массив строк|3||Определяет, из чего можно вызвать расширение сообщения. Любое сочетание `compose` `commandBox` , `message` . Значение по умолчанию: `["compose","commandBox"]`.|
 |`fetchTask`|boolean|||Значение boolean, которое указывает, должен ли он динамически получать модуль задач. Значение по умолчанию: **false**.|
 |`taskInfo`|объект|||Укажите модуль задач для предварительной загрузки при использовании команды расширения обмена сообщениями.|
-|`taskInfo.title`|string|64 символа||Начальное название диалогов.|
-|`taskInfo.width`|string|||Ширина диалогов — число в пикселях или макет по умолчанию, такие как "большой", "средний" или "маленький".|
-|`taskInfo.height`|string|||Высота диалогов — число пикселей или макет по умолчанию, например "большой", "средний" или "маленький".|
-|`taskInfo.url`|string|||Начальный URL-адрес веб-просмотров.|
+|`taskInfo.title`|Строка|64 символа||Начальное название диалогов.|
+|`taskInfo.width`|Строка|||Ширина диалогов — число в пикселях или макет по умолчанию, такие как "большой", "средний" или "маленький".|
+|`taskInfo.height`|Строка|||Высота диалогов — число пикселей или макет по умолчанию, например "большой", "средний" или "маленький".|
+|`taskInfo.url`|Строка|||Начальный URL-адрес веб-просмотров.|
 |`parameters`|массив объекта|5 элементов|✔|Список параметров, которые принимает команда. Минимум: 1; максимум: 5.|
-|`parameters.name`|string|64 символа|✔|Имя параметра, как оно отображается в клиенте. Это включено в запрос пользователя.|
-|`parameters.title`|string|32 символа|✔|Удобное название для параметра.|
-|`parameters.description`|string|128 символов||Удобное для пользователя строка, описываемая назначение этого параметра.|
-|`parameters.value`|string|512 символов||Начальное значение для параметра.|
-|`parameters.inputType`|string|128 символов||Определяет тип управления, отображаемого в модуле задач `fetchTask: true` для . Один из `text, textarea, number, date, time, toggle, choiceset` .|
+|`parameters.name`|Строка|64 символа|✔|Имя параметра, как оно отображается в клиенте. Это включено в запрос пользователя.|
+|`parameters.title`|Строка|32 символа|✔|Удобное название для параметра.|
+|`parameters.description`|Строка|128 символов||Удобное для пользователя строка, описываемая назначение этого параметра.|
+|`parameters.value`|Строка|512 символов||Начальное значение для параметра.|
+|`parameters.inputType`|Строка|128 символов||Определяет тип управления, отображаемого в модуле задач `fetchTask: true` для . Один из `text, textarea, number, date, time, toggle, choiceset` .|
 |`parameters.choices`|массив объектов|10 элементов||Параметры выбора `choiceset` для . Используйте только `parameter.inputType` тогда, когда `choiceset` это .|
-|`parameters.choices.title`|string|128 символов|✔|Название выбора.|
-|`parameters.choices.value`|string|512 символов|✔|Значение выбора.|
+|`parameters.choices.title`|Строка|128 символов|✔|Название выбора.|
+|`parameters.choices.value`|Строка|512 символов|✔|Значение выбора.|
 
 ## <a name="permissions"></a>permissions
 
@@ -587,7 +545,7 @@ URL https:// ссылки на схему JSON для манифеста.
 
 **Необязательный** — массив строк
 
-Предоставляет родных функций на устройстве пользователя, к которое ваше приложение запрашивает доступ. Параметры:
+Предоставляет родных функций на устройстве пользователя, к которое ваше приложение запрашивает доступ. Доступные варианты:
 
 * `geolocation`
 * `media`
@@ -619,7 +577,7 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`id`|string|36 символов|✔|AAD-id приложения приложения. Этот id должен быть GUID.|
-|`resource`|string|2048 символов|✔|URL-адрес ресурса приложения для приобретения маркера auth для SSO. </br> **ПРИМЕЧАНИЕ:** Если вы не используете SSO, убедитесь, что вы вводите значение строки в этом поле в манифест приложения, например, чтобы избежать ответа https://notapplicable на ошибку. |
+|`resource`|Строка|2048 символов|✔|URL-адрес ресурса приложения для приобретения маркера auth для SSO. </br> **ПРИМЕЧАНИЕ:** Если вы не используете SSO, убедитесь, что вы вводите значение строки в этом поле в манифест приложения, например, чтобы избежать ответа https://notapplicable на ошибку. |
 |`applicationPermissions`|массив строк|128 символов||Укажите [конкретное согласие конкретного ресурса.](../../graph-api/rsc/resource-specific-consent.md#resource-specific-permissions)|
 
 ## <a name="showloadingindicator"></a>showLoadingIndicator
@@ -652,8 +610,8 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`type`|string|32 символа|✔|Тип уведомления. *См. ниже*.|
-|`description`|string|128 символов|✔|Краткое описание уведомления. *См. ниже*.|
-|`templateText`|string|128 символов|✔|Ex: "{actor} создал задачу {taskId} для вас"|
+|`description`|Строка|128 символов|✔|Краткое описание уведомления. *См. ниже*.|
+|`templateText`|Строка|128 символов|✔|Ex: "{actor} создал задачу {taskId} для вас"|
 
 ```json
 {

@@ -5,12 +5,12 @@ description: Описывает, как удаление полей вкладо
 keywords: удаление полей вкладки
 ms.topic: reference
 ms.author: lomeybur
-ms.openlocfilehash: f26701b2c432ba35ce6f069eabd3b401aae8e369
-ms.sourcegitcommit: 1ce74ed167bb81bf09f7f6f8d518093efafb549e
+ms.openlocfilehash: 953dcf0a0edd47a0bf65bbd0db5901c5b98b11c3
+ms.sourcegitcommit: e78c9f51c4538212c53bb6c6a45a09d994896f09
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50827930"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51585822"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 
@@ -18,6 +18,9 @@ ms.locfileid: "50827930"
 Удаление полей вокруг всех вкладок позволит разработчикам создавать приложения, которые выглядят более родными для Teams. Это также согласуется с нашими [проектами комплекта пользовательского интерфейса.](~/tabs/design/tabs.md) Большинство приложений уже выглядят лучше без полей, окружающих их опытом. Однако некоторые вкладки визуально влияют на это изменение, и разработчики должны внести необходимые изменения.
 
 :::image type="content" source="../assets/images/tabs/remove-margins-tabs.png" alt-text="Вкладка остроумие и без маржи" border="false":::
+
+> [!NOTE]
+> Эта функция не применима к мобильным клиентам, так как вкладки, просматриваемые в мобильных клиентах, не имеют маржи. 
 
 ## <a name="timelines"></a>Сроки
 
