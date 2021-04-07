@@ -1,49 +1,37 @@
 ---
-title: Добавление тестовых данных в тестовый клиент Office 365
-description: Настройка подписки на программу для разработчиков Office 365 для успешного тестирования приложений Microsoft Teams
+title: Добавление тестовых данных в тестовый клиент Microsoft 365
+description: Настройка подписки на программу разработчика Office 365 для успешного тестирования приложений Microsoft Teams
 ms.topic: how-to
-keywords: тестирование групп программ для разработчиков приложений
+keywords: тестирование групп программ разработчика приложений
 ms.date: 11/01/2019
-ms.openlocfilehash: 97eeb9c35b22adf75ad7f630fb2a621f0330e060
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+ms.openlocfilehash: 863f1d9843bb3ebe968ca180ee70a5b6bfa6cd7a
+ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014441"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51596191"
 ---
-# <a name="add-test-data-to-your-office-365-test-tenant"></a><span data-ttu-id="4d780-104">Добавление тестовых данных в тестовый клиент Office 365</span><span class="sxs-lookup"><span data-stu-id="4d780-104">Add test data to your Office 365 test tenant</span></span>
+# <a name="add-test-data-to-your-microsoft-365-test-tenant"></a><span data-ttu-id="ae375-104">Добавление тестовых данных в тестовый клиент Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ae375-104">Add test data to your Microsoft 365 test tenant</span></span>
 
-<span data-ttu-id="4d780-105">Задайте подписку на программу для разработчиков O365 (или другой тестовый клиент), чтобы у вас было легко протестировать приложения, которые вы создали.</span><span class="sxs-lookup"><span data-stu-id="4d780-105">Set up your O365 developer program subscription (or other test tenant) to make it easy for you to test the apps that you've built.</span></span>  <span data-ttu-id="4d780-106">Это поможет вам:</span><span class="sxs-lookup"><span data-stu-id="4d780-106">It will help you:</span></span>
+<span data-ttu-id="ae375-105">С подпиской на разработчика Microsoft 365 вы можете использовать приложение Microsoft Teams с группами тестирования, каналами и пользователями.</span><span class="sxs-lookup"><span data-stu-id="ae375-105">With a Microsoft 365 developer subscription, you can use your Microsoft Teams app with test teams, channels, and users.</span></span>
 
-- <span data-ttu-id="4d780-107">Создание новых команд и каналов в организации</span><span class="sxs-lookup"><span data-stu-id="4d780-107">Create new teams and channels in your organization</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="ae375-106">Перед началом работы</span><span class="sxs-lookup"><span data-stu-id="ae375-106">Before you start</span></span>
 
-- <span data-ttu-id="4d780-108">Добавьте пользователей, созданных с помощью пакета содержимого User, в эти группы.</span><span class="sxs-lookup"><span data-stu-id="4d780-108">Add the users that are created via the User content pack to those teams.</span></span>
+<span data-ttu-id="ae375-107">Если у вас еще нет тестового клиента, необходимо присоединиться к программе разработчика Office 365 и подписаться на подписку на разработчика.</span><span class="sxs-lookup"><span data-stu-id="ae375-107">If you don't already have a test tenant, you will need to join the Office 365 developer program and sign up for a developer subscription.</span></span> <span data-ttu-id="ae375-108">Также необходимо установить необходимые модули PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ae375-108">You'll also need to install the necessary PowerShell modules.</span></span> <span data-ttu-id="ae375-109">Для любого клиента, который вы используете, необходимо иметь глобальные разрешения администратора для запуска сценариев.</span><span class="sxs-lookup"><span data-stu-id="ae375-109">For whatever tenant you use you'll need to have global administrator permissions to run the scripts.</span></span>
 
-## <a name="before-you-start"></a><span data-ttu-id="4d780-109">Перед началом работы</span><span class="sxs-lookup"><span data-stu-id="4d780-109">Before you start</span></span>
+1. [<span data-ttu-id="ae375-110">Присоединяйтесь к программе для разработчиков Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ae375-110">Join the Microsoft 365 Developer Program</span></span>](/office/developer-program/office-365-developer-program)
+2. [<span data-ttu-id="ae375-111">Настройка подписки на разработчика Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ae375-111">Set up a Microsoft 365 Developer Subscription</span></span>](/office/developer-program/office-365-developer-program-get-started)
+3. [<span data-ttu-id="ae375-112">Используйте примерные пакеты данных с подпиской на разработчика Microsoft 365 для установки пакета контента Пользователей</span><span class="sxs-lookup"><span data-stu-id="ae375-112">Use sample data packs with your Microsoft 365 developer subscription to install the Users content pack</span></span>](/office/developer-program/install-sample-packs)
+4. [<span data-ttu-id="ae375-113">Установка модуля Teams PowerShell</span><span class="sxs-lookup"><span data-stu-id="ae375-113">Install the Teams PowerShell module</span></span>](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.2)
+5. [<span data-ttu-id="ae375-114">Установка модуля Azure AD PowerShell</span><span class="sxs-lookup"><span data-stu-id="ae375-114">Install the Azure AD PowerShell module</span></span>](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module&preserve-view=true)
 
-<span data-ttu-id="4d780-110">Если у вас еще нет тестового клиента, вам потребуется присоединиться к программе для разработчиков Office 365 и зарегистрироваться для подписки разработчика.</span><span class="sxs-lookup"><span data-stu-id="4d780-110">If you don't already have a test tenant, you will need to join the Office 365 developer program and sign up for a developer subscription.</span></span> <span data-ttu-id="4d780-111">Вам также потребуется установить необходимые модули PowerShell.</span><span class="sxs-lookup"><span data-stu-id="4d780-111">You'll also need to install the necessary PowerShell modules.</span></span> <span data-ttu-id="4d780-112">Для любого клиента, который вы используете, необходимо иметь разрешения глобального администратора для запуска сценариев.</span><span class="sxs-lookup"><span data-stu-id="4d780-112">For whatever tenant you use you'll need to have global administrator permissions to run the scripts.</span></span>
+## <a name="optional-enable-custom-app-sideloading"></a><span data-ttu-id="ae375-115">(Необязательный) Включить настраиваемую загрузку приложений</span><span class="sxs-lookup"><span data-stu-id="ae375-115">(Optional) Enable custom app sideloading</span></span>
 
-1. [<span data-ttu-id="4d780-113">Присоединяйтесь к программе для разработчиков Office 365</span><span class="sxs-lookup"><span data-stu-id="4d780-113">Join the Office 365 Developer Program</span></span>](/office/developer-program/office-365-developer-program)
-2. [<span data-ttu-id="4d780-114">Настройка подписки разработчика Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4d780-114">Set up a Microsoft 365 Developer Subscription</span></span>](/office/developer-program/office-365-developer-program-get-started)
-3. [<span data-ttu-id="4d780-115">Использование примеров пакетов данных с подпиской разработчика Office 365 для установки пакета содержимого "Пользователи"</span><span class="sxs-lookup"><span data-stu-id="4d780-115">Use sample data packs with your Office 365 developer subscription to install the Users content pack</span></span>](/office/developer-program/install-sample-packs)
-4. [<span data-ttu-id="4d780-116">Установка модуля Teams PowerShell</span><span class="sxs-lookup"><span data-stu-id="4d780-116">Install the Teams PowerShell module</span></span>](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.2)
-5. [<span data-ttu-id="4d780-117">Установка модуля Azure AD PowerShell</span><span class="sxs-lookup"><span data-stu-id="4d780-117">Install the Azure AD PowerShell module</span></span>](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module)
+<span data-ttu-id="ae375-116">По умолчанию только глобальные администраторы или администраторы служб Teams могут загружать настраиваемые приложения в каталог приложений клиента.</span><span class="sxs-lookup"><span data-stu-id="ae375-116">By default, only global admins or Teams service admins can upload custom apps into the tenant app catalog.</span></span> <span data-ttu-id="ae375-117">Вы также можете разрешить пользователям загружать настраиваемые приложения в Teams.</span><span class="sxs-lookup"><span data-stu-id="ae375-117">You can also allow users to upload custom apps to Teams.</span></span> <span data-ttu-id="ae375-118">Дополнительные сведения об [управлении политиками установки приложений в Teams.](/microsoftteams/teams-app-setup-policies)</span><span class="sxs-lookup"><span data-stu-id="ae375-118">For more information, [manage app setup policies in Teams](/microsoftteams/teams-app-setup-policies).</span></span>
 
-### <a name="optional-step-allow-upload-of-custom-apps"></a><span data-ttu-id="4d780-118">Необязательный шаг: разрешить отправку пользовательских приложений</span><span class="sxs-lookup"><span data-stu-id="4d780-118">Optional step: allow upload of custom apps</span></span>
+## <a name="create-teams-and-channels"></a><span data-ttu-id="ae375-119">Создание команд и каналов</span><span class="sxs-lookup"><span data-stu-id="ae375-119">Create teams and channels</span></span>
 
-<span data-ttu-id="4d780-119">По умолчанию только глобальные администраторы или администраторы служб Teams могут загружать пользовательские приложения в каталог приложений клиента.</span><span class="sxs-lookup"><span data-stu-id="4d780-119">By default, only global admins or teams service admins can upload custom apps into the tenant app catalog.</span></span>  <span data-ttu-id="4d780-120">Вы также можете позволить всем пользователям загружать пользовательские приложения для собственного использования или в группы для тестирования.</span><span class="sxs-lookup"><span data-stu-id="4d780-120">You can also enable all users to upload custom apps for their own use or to teams for testing.</span></span>
-
-<span data-ttu-id="4d780-121">Чтобы включить этот параметр, необходимо обновить глобальную политику установки приложений на портале администрирования Teams.</span><span class="sxs-lookup"><span data-stu-id="4d780-121">To enable this setting, you'll need to update the global App Setup Policy in your Teams Admin Portal.</span></span>
-
-<img width="430px" src="~/assets/images/microsoft-teams-admin-center-screenshot.png" title="Снимок экрана: политика установки приложений" />
-
-<span data-ttu-id="4d780-123">Дополнительные сведения см. в указанных ниже статьях.    </span><span class="sxs-lookup"><span data-stu-id="4d780-123">For more information see:</span></span>
-
- - [<span data-ttu-id="4d780-124">Управление политиками настройки приложений в Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="4d780-124">Manage app setup policies in Microsoft Teams</span></span>](/microsoftteams/teams-app-setup-policies)
-
-## <a name="create-teams-and-channels"></a><span data-ttu-id="4d780-125">Создание команд и каналов</span><span class="sxs-lookup"><span data-stu-id="4d780-125">Create teams and channels</span></span>
-
-<span data-ttu-id="4d780-126">Сохраните следующий фрагмент в XML-фрагменте (XML) и обратите внимание, где он сохранен.</span><span class="sxs-lookup"><span data-stu-id="4d780-126">Save the following snippet as an XML (.xml) and note where you've saved it.</span></span>  <span data-ttu-id="4d780-127">Этот XML-xml определяет структуру групп и каналов, которые будут созданы, а также их участников.</span><span class="sxs-lookup"><span data-stu-id="4d780-127">This XML defines the structure of the teams and channels that will be created - along with its members.</span></span>
+<span data-ttu-id="ae375-120">Сохраните следующий фрагмент в качестве XML (.xml) и обратите внимание, где он сохранен.</span><span class="sxs-lookup"><span data-stu-id="ae375-120">Save the following snippet as an XML (.xml) and note where you've saved it.</span></span>  <span data-ttu-id="ae375-121">Этот XML определяет структуру групп и каналов, которые будут созданы, наряду с ее участниками.</span><span class="sxs-lookup"><span data-stu-id="ae375-121">This XML defines the structure of the teams and channels that will be created - along with its members.</span></span>
 
 ```xml
 <?xml version="1.0"?>
@@ -157,7 +145,7 @@ ms.locfileid: "50014441"
 </Teams>
 ```
 
-<span data-ttu-id="4d780-128">Сохраните следующий фрагмент в качестве скрипта PowerShell (PS1) и обратите внимание, где он сохранен.</span><span class="sxs-lookup"><span data-stu-id="4d780-128">Save the following snippet as a PowerShell script (.ps1) and note where you've saved it.</span></span>  <span data-ttu-id="4d780-129">Этот сценарий выполняет действия по созданию команд и каналов и добавлению в них участников.</span><span class="sxs-lookup"><span data-stu-id="4d780-129">This script executes the steps to create the teams and channels and add members to them.</span></span>
+<span data-ttu-id="ae375-122">Сохраните следующий фрагмент в качестве сценария PowerShell (.ps1) и обратите внимание, где он сохранен.</span><span class="sxs-lookup"><span data-stu-id="ae375-122">Save the following snippet as a PowerShell script (.ps1) and note where you've saved it.</span></span>  <span data-ttu-id="ae375-123">В этом скрипте выполняются действия по созданию команд и каналов и добавлению в них участников.</span><span class="sxs-lookup"><span data-stu-id="ae375-123">This script executes the steps to create the teams and channels and add members to them.</span></span>
 
 ```powershell
 Param(
@@ -248,9 +236,9 @@ else {
 }
 ```
 
-<span data-ttu-id="4d780-130">Откройте сеанс Windows PowerShell в режиме администратора.</span><span class="sxs-lookup"><span data-stu-id="4d780-130">Open a Windows PowerShell session in Administrator mode.</span></span>  <span data-ttu-id="4d780-131">Запустите сценарий, который вы только что сохранили.</span><span class="sxs-lookup"><span data-stu-id="4d780-131">Run the script that you just saved.</span></span>  <span data-ttu-id="4d780-132">Вам будет предложено предоставить учетные данные — используйте учетные данные глобального администратора, полученные при первой подписке разработчика.</span><span class="sxs-lookup"><span data-stu-id="4d780-132">You'll be prompted to provide the credentials - use the Global Administrator credentials you received when you first signed up for your developer subscription.</span></span>
+<span data-ttu-id="ae375-124">Откройте сеанс Windows PowerShell в режиме администратора.</span><span class="sxs-lookup"><span data-stu-id="ae375-124">Open a Windows PowerShell session in Administrator mode.</span></span>  <span data-ttu-id="ae375-125">Запустите сценарий, который вы только что сохранили.</span><span class="sxs-lookup"><span data-stu-id="ae375-125">Run the script that you just saved.</span></span>  <span data-ttu-id="ae375-126">Вам будет предложено предоставить учетные данные — используйте учетные данные глобального администратора, полученные при первой подписке на разработчика.</span><span class="sxs-lookup"><span data-stu-id="ae375-126">You'll be prompted to provide the credentials - use the Global Administrator credentials you received when you first signed up for your developer subscription.</span></span>
 
 > [!Note]
-> <span data-ttu-id="4d780-133">Выполнение сценария займет несколько минут— не закрывайте сеанс PowerShell.</span><span class="sxs-lookup"><span data-stu-id="4d780-133">The script will take several minutes to execute - do not close your PowerShell session.</span></span>  <span data-ttu-id="4d780-134">Если вы изменили пользователей в своей подписке с того, что создано в пакете содержимого по умолчанию, некоторые пользователи могут не быть добавлены в команды.</span><span class="sxs-lookup"><span data-stu-id="4d780-134">If you've modified the users in your subscription from what is created in the default content pack, some users may not be added to teams.</span></span>  <span data-ttu-id="4d780-135">При выполнении сценария будут выводиться успешные или неудачные действия.</span><span class="sxs-lookup"><span data-stu-id="4d780-135">As the script executes it will output successful or failed actions.</span></span>
+> <span data-ttu-id="ae375-127">Выполнение сценария займет несколько минут , не закрывая сеанс PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ae375-127">The script will take several minutes to execute - do not close your PowerShell session.</span></span>  <span data-ttu-id="ae375-128">Если вы изменили пользователей подписки из того, что создано в пакете контента по умолчанию, некоторые пользователи могут не быть добавлены в группы.</span><span class="sxs-lookup"><span data-stu-id="ae375-128">If you've modified the users in your subscription from what is created in the default content pack, some users may not be added to teams.</span></span>  <span data-ttu-id="ae375-129">По мере выполнения сценария он выводит успешные или неудачные действия.</span><span class="sxs-lookup"><span data-stu-id="ae375-129">As the script executes it will output successful or failed actions.</span></span>
 
-<span data-ttu-id="4d780-136">Завершив выполнение сценария, вы можете войти в клиент Teams с одной из учетных записей пользователей и просмотреть новые команды.</span><span class="sxs-lookup"><span data-stu-id="4d780-136">Once the script has finished execution, you can login to the Teams client with one of the user accounts and view the newly created teams.</span></span>
+<span data-ttu-id="ae375-130">После завершения выполнения сценария можно войти в клиент Teams с одной из учетных записей пользователей и просмотреть вновь созданные команды.</span><span class="sxs-lookup"><span data-stu-id="ae375-130">Once the script has finished execution, you can login to the Teams client with one of the user accounts and view the newly created teams.</span></span>
