@@ -4,12 +4,12 @@ author: heath-hamilton
 description: Узнайте, как создать приложения на собраниях Teams и получить набор пользовательского интерфейса Microsoft Teams.
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 83dfaf3f92c00c420f758b66488b4a6b09c75717
-ms.sourcegitcommit: 1ce74ed167bb81bf09f7f6f8d518093efafb549e
+ms.openlocfilehash: e4e7bb05fbc9717a4eb8323302d1a10eac4c77dd
+ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50827951"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51596254"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Разработка расширения собраний Microsoft Teams
 
@@ -152,11 +152,10 @@ ms.locfileid: "50827951"
 
 Диалоги на собрании могут отличаться по размеру для учета различных сценариев. Убедитесь, что поддерживается обивка и размеры компонентов.
 
-* **Ширина:** ширина диалогового поля iframe является абсолютным значением в диапазоне, который вы указываете.
-* **Высота.** Высота диалогового набора iframe — это абсолютное значение в диапазоне, который вы указываете.
+* **Ширина.** Можно указать ширину iframe диалогов в любом месте в поддерживаемом диапазоне размеров.
+* **Высота.** Вы можете указать высоту iframe диалогов в любом месте в поддерживаемом диапазоне размеров. Вы также можете разрешить пользователям прокрутку по вертикали, если содержимое приложения превышает максимальную высоту.
 
-> [!NOTE]
-> Значения, определяемые для ширины и высоты, используются в `externalResourceURL` диалоговом собрании.
+Чтобы реализовать, укажите ширину и высоту с помощью [`externalResourceUrl`](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md#notificationsignal-api) ключа.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-responsive.png" alt-text="В примере показан диалоговое окно на собрании. Ширина: min--280 пикселей (248 пикселей iframe). Max--460 пикселей (428 пикселей iframe). Высота: 300 пикселей (iframe)." border="false":::
 

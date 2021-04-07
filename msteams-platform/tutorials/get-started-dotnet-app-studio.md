@@ -5,12 +5,12 @@ keywords: начало работы .net c# csharp
 ms.custom: scenarios:getting-started; languages:ASP.NET,C#
 ms.topic: tutorial
 ms.date: 11/09/2018
-ms.openlocfilehash: ee90d07b9616d130f4c418427762f9531c203672
-ms.sourcegitcommit: c9446200b8e76fbd434d012dc11dd9f191776d13
+ms.openlocfilehash: 99a0982a0fa453c6eb7ffeea25ba8a2607cf2d5e
+ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51403978"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51596261"
 ---
 # <a name="create-your-first-teams-app-using-c-or-net"></a>Создание первого приложения Teams с C# или .NET
 
@@ -117,9 +117,9 @@ Visual Studio имеет встроенную поддержку разверт�
 
 ## <a name="update-the-credentials-for-your-hosted-app"></a>Обновление учетных данных для вашего хозяйского приложения
 
-Пример приложения требует, чтобы переменные среды были задатки значениям, сохраненным в [текстовом файле.](~/includes/get-started/get-started-use-app-studio.md#bots)
+Пример приложения требует, чтобы переменные среды были задатки значениям, сохраненным в текстовом файле.
 
-Откройте appsettings.jsфайл. Обновите **значение MicrosoftAppId** с помощью бот-ИД, сохраненного в текстовом файле. Обнови **microsoftAppPassword с** помощью сохраненного пароля бота.
+Откройте файл `appsettings.json`. Обновите **значение MicrosoftAppId** с помощью бот-ИД, сохраненного в текстовом файле. Обнови **microsoftAppPassword с** помощью сохраненного пароля бота.
 
 <img width="560px" alt="Setting the keys" src="~/assets/images/get-started/get-started-net-azure-add-keys.png"/>
 

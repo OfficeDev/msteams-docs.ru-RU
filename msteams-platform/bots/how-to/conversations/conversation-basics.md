@@ -4,12 +4,12 @@ description: описывает способы беседы с ботом Micros
 ms.topic: overview
 ms.author: anclear
 keyword: conversations basics receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 3cf11b5b96a1504ddb3fb8c9fc5814c5131d072f
-ms.sourcegitcommit: e78c9f51c4538212c53bb6c6a45a09d994896f09
+ms.openlocfilehash: 193a93dbf775389383e0385207fa4112440bffe5
+ms.sourcegitcommit: 82bda0599ba2676ab9348c2f4284f73c7dad0838
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51585857"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51596676"
 ---
 # <a name="conversation-basics"></a>Основы разговора
 
@@ -282,6 +282,9 @@ async def on_members_added_activity(
 ## <a name="notifications-to-your-message"></a>Уведомления о вашем сообщении
 
 Уведомления предупреждают пользователей о новых задачах, упоминаниях и комментариях. Эти оповещения связаны с тем, над чем работают пользователи или на что они должны смотреть, вставляя уведомление в канал активности. Чтобы уведомления запускались из сообщения бота, установите свойство `TeamsChannelData` `Notification.Alert` объектов true. Вопрос о том, будет ли поднято уведомление, зависит от параметров teams отдельного пользователя, и переопределять эти параметры невозможно. Тип уведомления — это баннер или баннер и электронная почта.
+
+> [!NOTE]
+> Поле **Сводка** отображает любой текст от пользователя в виде сообщения уведомления в канале.
 
 В следующем коде показан пример добавления уведомлений в сообщение:
 

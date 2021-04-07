@@ -5,12 +5,12 @@ description: создание приложений для собраний гр�
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: ba00a2dc78cefb167f1bef8507f32dad5e38452c
-ms.sourcegitcommit: e78c9f51c4538212c53bb6c6a45a09d994896f09
+ms.openlocfilehash: d9356e37a0c2b5b70d23fc6805b0af5340a1efc6
+ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51585850"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51596233"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -350,10 +350,10 @@ POST /v3/conversations/{conversationId}/activities
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Описание | C# |
-|----------------|-----------------|--------------|
-| Разнонасть собраний | Пример extensibility microsoft Teams для передачи маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) |
-| Бот-бот для пузырьков контента для собраний | Пример extensibility microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |
+|Пример имени | Описание | .NET | Node.js |
+|----------------|-----------------|--------------|--------------|
+| Разнонасть собраний | Пример extensibility microsoft Teams для передачи маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | |
+| Бот-бот для пузырьков контента для собраний | Пример extensibility microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
 
 ## <a name="see-also"></a>См. также
 
