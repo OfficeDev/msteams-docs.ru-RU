@@ -5,12 +5,12 @@ ms.topic: reference
 keywords: Шаблоны Microsoft Teams примеры демонстрации
 ms.author: lajanuar
 author: laujan
-ms.openlocfilehash: 53355b4a22ae9ace5dec36a97183ddc1f6bf05fb
-ms.sourcegitcommit: 82bda0599ba2676ab9348c2f4284f73c7dad0838
+ms.openlocfilehash: 47fb1748f0c88edd2233c4e17aa50d235818d609
+ms.sourcegitcommit: 2de062dd2258147cff8d6a3cadd8839890d9791a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51596690"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51612646"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -34,17 +34,13 @@ ms.locfileid: "51596690"
 
 [Получите его в GitHub](https://github.com/OfficeDev/microsoft-teams-apps-adopt-bot)
 
-## <a name="adoption-tool-9734"></a>Средство принятия &#9734;
-
-Средство принятия состоит из следующих двух шаблонов приложений:
-
-### <a name="champion-management-platform"></a>Платформа управления чемпионами
+## <a name="adoption-tool--champion-management-platform-9734"></a>Платформа управления средствами принятия и &#9734;
 
 Шаблон приложения Платформы управления чемпионами (CMP) помогает управлять, масштабировать и вдохновлять чемпионов командной работы, чтобы добиться большего. Этот шаблон приложения построен на SharePoint Framework и загружается на вкладку в команде. Группы могут использовать этот инструмент для управления членством в программе, предоставления лидеров и типов событий для ведения журнала, а также инструментов для наложения цифровых значков для участников программы.
 
 [Получите его в GitHub](https://github.com/OfficeDev/microsoft-teams-apps-champion-management)
 
-### <a name="get-started"></a>Начало работы
+## <a name="adoption-tool--microsoft-365-learning-pathways-get-started-9734"></a>Средство принятия — пути обучения Microsoft 365 (Начало работы) &#9734;
 
 Шаблон приложения Get Started позволяет использовать в microsoft 365 обучающие пути в Microsoft Teams. Этот шаблон приложения позволяет легко получить доступ к определенным страницам обучения или другим интрасетям и загрузить содержимое непосредственно в Teams. Вы также можете изменить имя или логотип приложения, чтобы соответствовать брендингу вашей компании.
 
