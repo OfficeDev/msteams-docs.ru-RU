@@ -1,28 +1,28 @@
 ---
-title: Проверка согласия конкретного ресурса в Teams
-description: Details проверка согласия конкретного ресурса в Teams с использованием POST
+title: Тестирование разрешений на согласие для определенных ресурсов в Teams
+description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с помощью postman
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: tutorial
-keywords: Диаграмма Microsoft Teams SSO единого входа OAuth RSC POST
-ms.openlocfilehash: f50f61e7eb62e3bcc6af2dafc1c7c781ff2145de
-ms.sourcegitcommit: 43e1be9d9e3651ce73a8d2139e44d75550a0ca60
+keywords: команды авторизации OAuth SSO AAD rsc Postman Graph
+ms.openlocfilehash: 0d3d1c895c77bb417a9fdd84e319103485aa8944
+ms.sourcegitcommit: 5b3ba227c2e5e6f7a2c629961993f168da6a504d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49366856"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51634711"
 ---
-# <a name="test-resource-specific-consent-permissions--in-teams"></a><span data-ttu-id="262a5-104">Проверка разрешений согласия для определенных ресурсов в Teams</span><span class="sxs-lookup"><span data-stu-id="262a5-104">Test resource-specific consent permissions  in Teams</span></span>
+# <a name="test-resource-specific-consent-permissions-in-teams"></a><span data-ttu-id="ef84d-104">Тестирование разрешений на согласие для определенных ресурсов в Teams</span><span class="sxs-lookup"><span data-stu-id="ef84d-104">Test resource-specific consent permissions in Teams</span></span>
 
-<span data-ttu-id="262a5-105">Согласие с конкретными ресурсами (RSC) — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными командами в Организации.</span><span class="sxs-lookup"><span data-stu-id="262a5-105">Resource-specific consent (RSC) is a Microsoft Teams and Graph API integration that enables your app to use API endpoints to manage specific teams within an organization.</span></span> <span data-ttu-id="262a5-106">*Ознакомьтесь* с разделом [согласия для определенных ресурсов (RSC) — API Microsoft Teams Graph](resource-specific-consent.md).  </span><span class="sxs-lookup"><span data-stu-id="262a5-106">Please *see*  [Resource-specific consent (RSC) — Microsoft Teams Graph API](resource-specific-consent.md).</span></span>
+<span data-ttu-id="ef84d-105">Согласие на использование ресурсов — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными группами в организации.</span><span class="sxs-lookup"><span data-stu-id="ef84d-105">Resource-specific consent (RSC) is a Microsoft Teams and Graph API integration that enables your app to use API endpoints to manage specific teams within an organization.</span></span> <span data-ttu-id="ef84d-106">Дополнительные сведения см. в [сайте Resource-specific consent (RSC) — API Microsoft Teams Graph.](resource-specific-consent.md)</span><span class="sxs-lookup"><span data-stu-id="ef84d-106">For more information, see [Resource-specific consent (RSC) — Microsoft Teams Graph API](resource-specific-consent.md).</span></span>
 
 > [!NOTE]
-><span data-ttu-id="262a5-107">Для тестирования разрешений RSC файл манифеста приложения Teams должен содержать ключ **webApplicationInfo** , заполненный следующими полями:</span><span class="sxs-lookup"><span data-stu-id="262a5-107">To test the RSC permissions, your Teams app manifest file must include a **webApplicationInfo** key populated with the following fields:</span></span>
+> <span data-ttu-id="ef84d-107">Чтобы проверить разрешения RSC, файл манифеста приложения Teams должен включать ключ **webApplicationInfo,** населённый следующими полями:</span><span class="sxs-lookup"><span data-stu-id="ef84d-107">To test the RSC permissions, your Teams app manifest file must include a **webApplicationInfo** key populated with the following fields:</span></span>
 >
-> - <span data-ttu-id="262a5-108">**ID**  — идентификатор приложения Azure AD, *см* . [Регистрация приложения на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).</span><span class="sxs-lookup"><span data-stu-id="262a5-108">**id**  — your Azure AD app id, *see* [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).</span></span>
-> - <span data-ttu-id="262a5-109">**ресурс**  — любая строка, *просмотрев* заметку в  [статье обновление манифеста приложения Teams](resource-specific-consent.md#update-your-teams-app-manifest)</span><span class="sxs-lookup"><span data-stu-id="262a5-109">**resource**  — any string, *see* the note in  [Update your Teams app manifest](resource-specific-consent.md#update-your-teams-app-manifest)</span></span>
-> - <span data-ttu-id="262a5-110">**разрешения приложения** — сведения о разрешениях RSC для вашего *приложения: сведения* о разрешениях для [ресурсов](resource-specific-consent.md#resource-specific-permissions).</span><span class="sxs-lookup"><span data-stu-id="262a5-110">**application permissions** — RSC permissions for  your app, *see* [Resource-specific Permissions](resource-specific-consent.md#resource-specific-permissions).</span></span>
+> - <span data-ttu-id="ef84d-108">**id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).</span><span class="sxs-lookup"><span data-stu-id="ef84d-108">**id**: Your Azure AD app ID, see [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).</span></span>
+> - <span data-ttu-id="ef84d-109">**ресурс.** Любая строка см. в заметке  [в манифесте приложения Update your Teams](resource-specific-consent.md#update-your-teams-app-manifest)</span><span class="sxs-lookup"><span data-stu-id="ef84d-109">**resource**: Any string, see the note in  [Update your Teams app manifest](resource-specific-consent.md#update-your-teams-app-manifest)</span></span>
+> - <span data-ttu-id="ef84d-110">**Разрешения приложения:** разрешения RSC для вашего приложения см. в [приложении Resource-specific Permissions.](resource-specific-consent.md#resource-specific-permissions)</span><span class="sxs-lookup"><span data-stu-id="ef84d-110">**application permissions**: RSC permissions for  your app, see [Resource-specific Permissions](resource-specific-consent.md#resource-specific-permissions).</span></span>
 
 ```json
 "webApplicationInfo":{
@@ -47,49 +47,46 @@ ms.locfileid: "49366856"
    }
 ```
 
->[!IMPORTANT]
-><span data-ttu-id="262a5-111">В манифесте приложения включите только разрешения RSC, которые должно иметь ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="262a5-111">In your app manifest, only include the RSC permissions that you want your app to have.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="ef84d-111">В манифесте приложения включите только разрешения RSC, которые необходимо иметь вашему приложению.</span><span class="sxs-lookup"><span data-stu-id="ef84d-111">In your app manifest, only include the RSC permissions that you want your app to have.</span></span>
 
-## <a name="test-added-rsc-permissions-using-the-postman-app"></a><span data-ttu-id="262a5-112">Тестирование добавленных разрешений RSC с использованием почтовых приложений</span><span class="sxs-lookup"><span data-stu-id="262a5-112">Test added RSC permissions using the Postman app</span></span>
+## <a name="test-added-rsc-permissions-using-the-postman-app"></a><span data-ttu-id="ef84d-112">Тестирование добавленных разрешений RSC с помощью приложения Postman</span><span class="sxs-lookup"><span data-stu-id="ef84d-112">Test added RSC permissions using the Postman app</span></span>
 
-<span data-ttu-id="262a5-113">Чтобы проверить, учитываются ли разрешения RSC в полезных данных запроса API, необходимо скопировать [код теста RSC JSON](test-rsc-json-file.md) в локальную среду и обновить следующие значения:</span><span class="sxs-lookup"><span data-stu-id="262a5-113">To check whether the RSC permissions are being honored by the API request payload, you'll need to copy the [RSC JSON test code](test-rsc-json-file.md) into your local environment and update the following values:</span></span>
+<span data-ttu-id="ef84d-113">Чтобы проверить, чтят ли разрешения RSC полезной нагрузкой запроса API, необходимо скопировать тестовый код [RSC JSON](test-rsc-json-file.md) в локальной среде и обновить следующие значения:</span><span class="sxs-lookup"><span data-stu-id="ef84d-113">To check whether the RSC permissions are being honored by the API request payload, you need to copy the [RSC JSON test code](test-rsc-json-file.md) into your local environment and update the following values:</span></span>
 
-1. <span data-ttu-id="262a5-114">`azureADAppId`  — Идентификатор приложения Azure AD в приложении.</span><span class="sxs-lookup"><span data-stu-id="262a5-114">`azureADAppId`  — your app's Azure AD app id.</span></span>
-1. <span data-ttu-id="262a5-115">`azureADAppSecret`  — ваш секрет приложения Azure AD (пароль)</span><span class="sxs-lookup"><span data-stu-id="262a5-115">`azureADAppSecret`  — your Azure AD app secret (password)</span></span>
-1. <span data-ttu-id="262a5-116">`token_scope`  — область требуется для получения маркера, чтобы задать значение https://graph.microsoft.com/.default</span><span class="sxs-lookup"><span data-stu-id="262a5-116">`token_scope`  — the scope is required to get a token - set the value to https://graph.microsoft.com/.default</span></span>
-1. <span data-ttu-id="262a5-117">`teamGroupId` — Идентификатор группы Teams можно получить из клиента Teams следующим образом:</span><span class="sxs-lookup"><span data-stu-id="262a5-117">`teamGroupId` — you can get the team group id from the Teams client as follows:</span></span>
+* <span data-ttu-id="ef84d-114">`azureADAppId`: ID приложения Azure AD вашего приложения</span><span class="sxs-lookup"><span data-stu-id="ef84d-114">`azureADAppId`: Your app's Azure AD app ID</span></span>
+* <span data-ttu-id="ef84d-115">`azureADAppSecret`: Секрет приложения Azure AD (пароль)</span><span class="sxs-lookup"><span data-stu-id="ef84d-115">`azureADAppSecret`: Your Azure AD app secret (password)</span></span>
+* <span data-ttu-id="ef84d-116">`token_scope`. Область, необходимая для получения маркера — задай значение https://graph.microsoft.com/.default</span><span class="sxs-lookup"><span data-stu-id="ef84d-116">`token_scope`: The scope is required to get a token - set the value to https://graph.microsoft.com/.default</span></span>
+* <span data-ttu-id="ef84d-117">`teamGroupId`: Вы можете получить id группы группы из клиента Teams следующим образом:</span><span class="sxs-lookup"><span data-stu-id="ef84d-117">`teamGroupId`: You can get the team group id from the Teams client as follows:</span></span>
 
-> [!div class="checklist"]
->
-> * <span data-ttu-id="262a5-118">В клиенте Teams выберите **Teams (Teams** ) в крайней левой панели навигации.</span><span class="sxs-lookup"><span data-stu-id="262a5-118">In the Teams client, select **Teams** from the far left nav bar .</span></span>
-> * <span data-ttu-id="262a5-119">Выберите из раскрывающегося меню команду, в которой установлено приложение.</span><span class="sxs-lookup"><span data-stu-id="262a5-119">Select the team where the app is installed from the dropdown menu.</span></span>
-> * <span data-ttu-id="262a5-120">Выбор значка " **Дополнительные параметры** " (&#8943;)</span><span class="sxs-lookup"><span data-stu-id="262a5-120">Select the **More options** icon (&#8943;)</span></span>
-> * <span data-ttu-id="262a5-121">Выберите команду " **получить ссылку на группу** "</span><span class="sxs-lookup"><span data-stu-id="262a5-121">Select **Get link to team**</span></span> 
-> * <span data-ttu-id="262a5-122">Скопируйте и сохраните значение **groupId** из строки.</span><span class="sxs-lookup"><span data-stu-id="262a5-122">Copy and save the **groupId** value from the string.</span></span>
+  > [!div class="checklist"]
+  >
+  > * <span data-ttu-id="ef84d-118">В клиенте Teams выберите **Teams из** левой панели навигации .</span><span class="sxs-lookup"><span data-stu-id="ef84d-118">In the Teams client, select **Teams** from the far left navigation bar .</span></span>
+  > * <span data-ttu-id="ef84d-119">Выберите команду, в которой установлено приложение из отсевного меню.</span><span class="sxs-lookup"><span data-stu-id="ef84d-119">Select the team where the app is installed from the dropdown menu.</span></span>
+  > * <span data-ttu-id="ef84d-120">Выберите **значок Дополнительные** параметры (&#8943;)</span><span class="sxs-lookup"><span data-stu-id="ef84d-120">Select the **More options** icon (&#8943;)</span></span>
+  > * <span data-ttu-id="ef84d-121">Выберите **Получить ссылку на команду**</span><span class="sxs-lookup"><span data-stu-id="ef84d-121">Select **Get link to team**</span></span> 
+  > * <span data-ttu-id="ef84d-122">Скопируйте и сохраните **значение groupId** из строки.</span><span class="sxs-lookup"><span data-stu-id="ef84d-122">Copy and save the **groupId** value from the string.</span></span>
 
-### <a name="using-postman"></a><span data-ttu-id="262a5-123">Использование POST</span><span class="sxs-lookup"><span data-stu-id="262a5-123">Using Postman</span></span>
+### <a name="use-postman"></a><span data-ttu-id="ef84d-123">Использование Postman</span><span class="sxs-lookup"><span data-stu-id="ef84d-123">Use Postman</span></span>
 
-> [!div class="checklist"]
->
-> * <span data-ttu-id="262a5-124">Откройте приложение [POST](https://www.postman.com) .</span><span class="sxs-lookup"><span data-stu-id="262a5-124">Open the [Postman](https://www.postman.com) app.</span></span>
-> * <span data-ttu-id="262a5-125">Выберите **файл импорт файла**  =>  **Import**  =>  **импорта** , чтобы отправить обновленный файл JSON из вашей среды.</span><span class="sxs-lookup"><span data-stu-id="262a5-125">Select **File** => **Import** => **Import file** to upload the updated JSON file from your environment.</span></span>  
-> * <span data-ttu-id="262a5-126">Перейдите на вкладку **коллекции** .</span><span class="sxs-lookup"><span data-stu-id="262a5-126">Select the **Collections** tab.</span></span> 
-> * <span data-ttu-id="262a5-127">Выберите Шеврон (>) рядом с элементом **тест RSC** , чтобы развернуть представление сведений и просмотреть запросы API.</span><span class="sxs-lookup"><span data-stu-id="262a5-127">Select the chevron (>) next to the **Test RSC** to expand the details view and see the API requests.</span></span>
+1. <span data-ttu-id="ef84d-124">Откройте [приложение Postman.](https://www.postman.com)</span><span class="sxs-lookup"><span data-stu-id="ef84d-124">Open the [Postman](https://www.postman.com) app.</span></span>
+2. <span data-ttu-id="ef84d-125">Выберите **файл импорта**  >    >  **файлов,** чтобы загрузить обновленный JSON-файл из среды.</span><span class="sxs-lookup"><span data-stu-id="ef84d-125">Select **File** > **Import** > **Import file** to upload the updated JSON file from your environment.</span></span>  
+3. <span data-ttu-id="ef84d-126">Выберите **вкладку Collections.**</span><span class="sxs-lookup"><span data-stu-id="ef84d-126">Select the **Collections** tab.</span></span> 
+4. <span data-ttu-id="ef84d-127">Выберите шеврон **>** рядом с **тестом RSC,** чтобы расширить представление сведений и просмотреть запросы API.</span><span class="sxs-lookup"><span data-stu-id="ef84d-127">Select the chevron **>** next to the **Test RSC** to expand the details view and see the API requests.</span></span>
 
-<span data-ttu-id="262a5-128">Выполните всю коллекцию разрешений для каждого вызова API.</span><span class="sxs-lookup"><span data-stu-id="262a5-128">Execute the entire permissions collection for each API call.</span></span> <span data-ttu-id="262a5-129">Разрешения, указанные в манифесте приложения, должны выполняться успешно, в то время как они не задаются должным образом, с кодом состояния HTTP 403.</span><span class="sxs-lookup"><span data-stu-id="262a5-129">The permissions that you specified in your app manifest should succeed, while those not specified should fail with an HTTP 403 status code.</span></span> <span data-ttu-id="262a5-130">Проверьте все коды состояния ответа, чтобы убедиться в том, что поведение RSC в вашем приложении соответствует ожиданиям.</span><span class="sxs-lookup"><span data-stu-id="262a5-130">Check all of the response status codes to confirm that the behavior of the RSC permissions in your app meet expectations.</span></span>
+<span data-ttu-id="ef84d-128">Выполните всю коллекцию разрешений для каждого вызова API.</span><span class="sxs-lookup"><span data-stu-id="ef84d-128">Execute the entire permissions collection for each API call.</span></span> <span data-ttu-id="ef84d-129">Разрешения, указанные в манифесте приложения, должны быть успешными, а те, которые не указаны, должны не работать с кодом состояния HTTP 403.</span><span class="sxs-lookup"><span data-stu-id="ef84d-129">The permissions that you specified in your app manifest must succeed, while those not specified must fail with an HTTP 403 status code.</span></span> <span data-ttu-id="ef84d-130">Проверьте все коды состояния отклика, чтобы подтвердить, что поведение разрешений RSC в вашем приложении соответствует ожиданиям.</span><span class="sxs-lookup"><span data-stu-id="ef84d-130">Check all of the response status codes to confirm that the behavior of the RSC permissions in your app meet expectations.</span></span>
 
->[!NOTE]
-><span data-ttu-id="262a5-131">Чтобы протестировать конкретные вызовы API для удаления и чтения, добавьте эти сценарии в JSON-файл.</span><span class="sxs-lookup"><span data-stu-id="262a5-131">To test specific DELETE and READ API calls, please add those instance scenarios to the JSON file.</span></span>
+> [!NOTE]
+> <span data-ttu-id="ef84d-131">Чтобы протестировать конкретные вызовы DELETE и READ API, добавьте эти сценарии экземпляров в файл JSON.</span><span class="sxs-lookup"><span data-stu-id="ef84d-131">To test specific DELETE and READ API calls, add those instance scenarios to the JSON file.</span></span>
 
-## <a name="test--revoked-rsc-permissions-using-postman"></a><span data-ttu-id="262a5-132">Проверка отозванных разрешений RSC с помощью [POST](https://www.postman.com/)</span><span class="sxs-lookup"><span data-stu-id="262a5-132">Test  revoked RSC permissions using [Postman](https://www.postman.com/)</span></span>
+## <a name="test-revoked-rsc-permissions-using-postman"></a><span data-ttu-id="ef84d-132">Тестирование отозванных разрешений RSC с помощью [Postman](https://www.postman.com/)</span><span class="sxs-lookup"><span data-stu-id="ef84d-132">Test revoked RSC permissions using [Postman](https://www.postman.com/)</span></span>
 
-> [!div class="checklist"]
->
-> * <span data-ttu-id="262a5-133">Удаление приложения из определенной команды.</span><span class="sxs-lookup"><span data-stu-id="262a5-133">Uninstall the app from the specific team.</span></span>
-> * <span data-ttu-id="262a5-134">Выполните описанные выше действия для теста, чтобы [Добавить разрешения RSC с помощью POST](#test-added-rsc-permissions-using-the-postman-app).</span><span class="sxs-lookup"><span data-stu-id="262a5-134">Follow the steps above for [Test added RSC permissions using Postman](#test-added-rsc-permissions-using-the-postman-app).</span></span>
-> * <span data-ttu-id="262a5-135">Проверьте все коды состояния ответа, чтобы убедиться в том, что определенные вызовы API, которые завершились успешно, с кодом состояния HTTP 403.</span><span class="sxs-lookup"><span data-stu-id="262a5-135">Check all of the response status codes to confirm that the specific API calls that succeeded have failed with an HTTP 403 status code.</span></span>
+1. <span data-ttu-id="ef84d-133">Удалить приложение из определенной группы.</span><span class="sxs-lookup"><span data-stu-id="ef84d-133">Uninstall the app from the specific team.</span></span>
+2. <span data-ttu-id="ef84d-134">Следуйте шагам [для тестовых добавленных разрешений RSC с помощью Postman](#test-added-rsc-permissions-using-the-postman-app).</span><span class="sxs-lookup"><span data-stu-id="ef84d-134">Follow the steps for [Test added RSC permissions using Postman](#test-added-rsc-permissions-using-the-postman-app).</span></span>
+3. <span data-ttu-id="ef84d-135">Проверьте все коды состояния отклика, чтобы подтвердить, что конкретные вызовы API успешно сбой с **кодом состояния HTTP 403**.</span><span class="sxs-lookup"><span data-stu-id="ef84d-135">Check all the response status codes to confirm that the specific API calls, **succeeded, have failed with an HTTP 403 status code**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="ef84d-136">См. также</span><span class="sxs-lookup"><span data-stu-id="ef84d-136">See also</span></span>
 
 > [!div class="nextstepaction"]
->
-> [<span data-ttu-id="262a5-136">Дополнительные сведения: API Microsoft Graph и Teams</span><span class="sxs-lookup"><span data-stu-id="262a5-136">Learn more: Microsoft Graph API and Teams</span></span>](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+> [<span data-ttu-id="ef84d-137">API и команды Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="ef84d-137">Microsoft Graph API and Teams</span></span>](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
 
