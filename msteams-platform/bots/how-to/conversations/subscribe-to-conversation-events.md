@@ -1,57 +1,57 @@
 ---
 title: Подписаться на события разговора
 author: WashingtonKayaker
-description: Как подписаться на события бесед от бота Microsoft Teams.
+description: Подписка на события беседы из бота Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: b4dc70e4619043bd0b675206770093b086fc5ec6
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+ms.openlocfilehash: bc4ae36d8cffe5b19ee778a71e1c7b1c00c5e88c
+ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014322"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51634504"
 ---
 # <a name="subscribe-to-conversation-events"></a>Подписаться на события разговора
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-Microsoft Teams отправляет боту уведомления о событиях, которые происходят в тех случаях, когда бот активен. Вы можете зафиксировать эти события в коде и принять с ними меры, например:
+Microsoft Teams отправляет вашему боту уведомления о событиях в тех областях, где этот бот активен. Эти события можно обрабатывать в коде и выполнять с ними те или иные действия, например:
 
 * Запуск приветствия при добавлении бота в команду
-* Запуск приветствия при добавлении или удалении нового участника группы
-* Запуск уведомления при его запуске, переименовании или удалении
+* Запуск приветствия при добавлении или удалении нового члена группы
+* Запуск уведомления при запуске, переименовании или удалении канала
 * Если сообщение бота нравится пользователю
 
 ## <a name="conversation-update-events"></a>События обновления беседы
 
 > [!Important]
-> Новые события можно добавлять в любое время, и ваш бот начнет их получать.
-> Необходимо проработать возможность получения непредвиденных событий.
-> Если вы используете SDK Bot Framework, бот автоматически ответит на любые события, которые вы `200 - OK` не решите обработать.
+> Новые события могут быть добавлены в любое время, и ваш бот начнет получать их.
+> Необходимо разработать возможность получения неожиданных событий.
+> Если вы используете SDK Bot Framework, ваш бот будет автоматически отвечать на любые события, которые `200 - OK` не будут обрабатываться.
 
-Бот получает событие при добавлении в беседу, добавлении или удалении других участников беседы или изменения метаданных `conversationUpdate` беседы.
+Бот получает событие `conversationUpdate`, когда его добавляют в беседу, когда в нее добавляются или из нее удаляются другие участники, а также при изменении метаданных беседы.
 
-Это событие отправляется боту, когда он получает сведения об обновлениях членства для `conversationUpdate` команд, в которые оно было добавлено. Кроме того, он получает обновление при первом добавлении специально для личных бесед.
+Событие `conversationUpdate` отправляется боту, когда поступают сведения об обновлении членства в командах, куда он добавлен. Бот также получает обновление при первом добавлении в личную беседу.
 
-В следующей таблице показан список событий обновления бесед Teams со ссылками на дополнительные сведения.
+В следующей таблице показан список событий обновления беседы Teams с ссылками на дополнительные сведения.
 
-| Предпринятые действия        | EventType         | Метод called              | Описание                | Область |
+| Действия, принятые        | EventType         | Вызван метод              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
-| канал создан     | channelCreated    | OnTeamsChannelCreatedAsync | [Канал создан](#channel-created) | Команда |
-| channel renamed     | channelRenamed    | OnTeamsChannelRenamedAsync | [Канал был переименован](#channel-renamed) | Команда |
-| канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал был удален](#channel-deleted) | Команда |
-| восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал был восстановлен](#channel-deleted) | Команда |
-| добавлены члены   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен участник](#team-members-added)   | Все |
-| удалены члены | membersRemoved | OnTeamsMembersRemovedAsync | [Член был удален](#team-members-removed) | groupChat & команды |
-| команда переименована        | teamRenamed       | OnTeamsTeamRenamedAsync    | [Команда была переименована](#team-renamed)       | Команда |
-| команда удалена        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена](#team-deleted)       | Команда |
-| team archived        | teamArchived       | OnTeamsTeamArchivedAsync    | [Архивировать команду](#team-archived)       | Команда |
-| команда, неархивная        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не была вархивовлена](#team-unarchived)       | Команда |
-| команда восстановлена        | teamRestored      | OnTeamsTeamRestoredAsync    | [Команда восстановлена](#team-restored)       | Команда |
+| созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создан канал](#channel-created) | Группа |
+| переименован канал     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал был переименован](#channel-renamed) | Группа |
+| канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал был удален](#channel-deleted) | Группа |
+| восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Восстановлен канал](#channel-deleted) | Группа |
+| добавлены участники   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added)   | Все |
+| удалены члены | membersRemoved | OnTeamsMembersRemovedAsync | [Был удален член](#team-members-removed) | группа & groupChat |
+| переименованная команда        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда была переименована](#team-renamed)       | Группа |
+| удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда была удалена](#team-deleted)       | Группа |
+| архивировать команду        | teamArchived       | OnTeamsTeamArchivedAsync    | [В архиве была архивная группа](#team-archived)       | Группа |
+| команда без анархии        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не была анархивна](#team-unarchived)       | Группа |
+| восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Команда была восстановлена](#team-restored)       | Группа |
 
-### <a name="channel-created"></a>Канал создан
+### <a name="channel-created"></a>Созданный канал
 
-Событие, созданное каналом, отправляется вашему боту всякий раз, когда в команде создается новый канал, в который устанавливается бот.
+Событие, созданное каналом, отправляется вашему боту всякий раз, когда новый канал создается в команде, в которая установлен бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -136,9 +136,9 @@ async def on_teams_channel_created(
 
 * * *
 
-### <a name="channel-renamed"></a>Канал переименован
+### <a name="channel-renamed"></a>Переименован канал
 
-Событие переименования канала отправляется вашему боту при переименовании канала в команде, в которая установлен бот.
+Событие переименования канала отправляется вашему боту всякий раз, когда канал переименован в команде, в которая установлен бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -216,9 +216,9 @@ async def on_teams_channel_renamed(
 
 * * *
 
-### <a name="channel-deleted"></a>Канал удален
+### <a name="channel-deleted"></a>Удаленный канал
 
-Событие удаления канала отправляется вашему боту при удалении канала в команде, в которая установлен этот бот.
+Событие удаления канала отправляется вашему боту всякий раз, когда канал удаляется в команде, в которая установлен ваш бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -298,9 +298,9 @@ async def on_teams_channel_deleted(
 
 * * *
 
-### <a name="channel-restored"></a>Канал восстановлен
+### <a name="channel-restored"></a>Восстановлен канал
 
-Восстановленное событие канала отправляется боту всякий раз, когда ранее удаленный канал восстанавливается в команде, в которую уже установлен бот.
+Восстановленное событие канала отправляется в бот всякий раз, когда удаленный ранее канал восстанавливается в команде, в которую уже установлен бот.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -385,9 +385,9 @@ async def on_teams_channel_restored(
 
 * * *
 
-### <a name="team-members-added"></a>Добавлены участники команды
+### <a name="team-members-added"></a>Добавлены участники группы
 
-Это событие отправляется боту при первом добавлении в беседу и при каждом добавлении нового пользователя в команду или групповой чат, в который устанавливается `teamMemberAdded` бот. Сведения о пользователе (ID) уникальны для вашего бота и могут кэшться для дальнейшего использования вашей службой (например, отправки сообщения определенному пользователю).
+Событие отправляется боту при первом добавлении в беседу и при каждом добавлении нового пользователя в командный или групповой чат, в который установлен `teamMemberAdded` бот. Пользовательские сведения (ID) уникальны для вашего бота и могут быть кэшировали для дальнейшего использования службой (например, отправки сообщения конкретному пользователю).
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -475,7 +475,7 @@ export class MyBot extends TeamsActivityHandler {
 }
 ```
 
-Это сообщение, которое ваш бот получит при добавлении бота * в один *к одному чату.*
+Это сообщение, которое ваш бот получит при добавлении бота * в чат один *к одному.*
 
 ```json
 {
@@ -494,11 +494,11 @@ export class MyBot extends TeamsActivityHandler {
   "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/",
   "from": {
     "id": "29:<USERID>",
-    "aadObjectId": "**_"
+    "aadObjectId": "***"
   },
   "conversation": {
     "conversationType": "personal",
-    "id": "_*_"
+    "id": "***"
   },
   "recipient": {
     "id": "28:<BOT ID>",
@@ -525,13 +525,13 @@ async def on_teams_members_added(
     return
 ```
 
-_ * *
+* * *
 
-### <a name="team-members-removed"></a>Участники команды удалены
+### <a name="team-members-removed"></a>Удалены члены группы
 
-Это событие отправляется вашему боту, если оно удаляется из команды и каждый раз, когда любой пользователь удаляется из команды, участником которую является `teamMemberRemoved` ваш бот. Вы можете определить, был ли новый член удален самим ботом или пользователем, посмотрев на `Activity` объект `turnContext` .  Если поле объекта такое же, как и поле объекта, удаляемая член является ботом, в противном случае `Id` `MembersRemoved` это `Id` `Recipient` пользователь.  Бот, как `Id` правило, будет: `28:<MicrosoftAppId>`
+Событие отправляется вашему боту, если оно удаляется из группы и каждый раз, когда любой пользователь удаляется из команды, в которую входит `teamMemberRemoved` ваш бот. Вы можете определить, был ли удален новый участник самим ботом или пользователем, посмотрев объект `Activity` `turnContext` .  Если поле объекта такое же, как и поле объекта, то удаляемого члена является бот, в противном случае он `Id` `MembersRemoved` является `Id` `Recipient` пользователем.  Бот, как `Id` правило, будет: `28:<MicrosoftAppId>`
 
-[!Note] Когда пользователь окончательно удаляется из клиента, `membersRemoved conversationUpdate` инициирует событие.
+[!Note] При постоянном удалении пользователя из клиента `membersRemoved conversationUpdate` запускается событие.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -580,7 +580,7 @@ export class MyBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Объект в следующем примере полезной нагрузки основан на добавлении участника в команду вместо группового чата или инициировании новой беседы "один `channelData` к одному":
+Объект в следующем примере полезной нагрузки основан на добавлении члена в команду, а не групповом чате или инициировании нового беседы один `channelData` к одному:
 
 ```json
 {
@@ -636,9 +636,9 @@ async def on_teams_members_removed(
 
 * * *
 
-### <a name="team-renamed"></a>Команда переименована
+### <a name="team-renamed"></a>Переименована команда
 
-Бот будет уведомлен о переименовании команды. Он получает событие `conversationUpdate` в `eventType.teamRenamed` `channelData` объекте.
+Ваш бот уведомлен о переименовании команды, в которая он находится. Он получает событие `conversationUpdate` в `eventType.teamRenamed` `channelData` объекте.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -714,9 +714,9 @@ async def on_teams_team_renamed(
 
 * * *
 
-### <a name="team-deleted"></a>Команда удалена
+### <a name="team-deleted"></a>Удалена команда
 
-Бот будет уведомлен об удалении команды. Он получает событие `conversationUpdate` в `eventType.teamDeleted` `channelData` объекте.
+Ваш бот уведомлен об удалении команды. Он получает событие `conversationUpdate` в `eventType.teamDeleted` `channelData` объекте.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -788,9 +788,9 @@ async def on_teams_team_deleted(
 
 * * *
 
-### <a name="team-restored"></a>Команда восстановлена
+### <a name="team-restored"></a>Восстановлена команда
 
-Бот получает уведомление при восстановлении после удаления. Он получает событие `conversationUpdate` в `eventType.teamrestored` `channelData` объекте.
+Бот получает уведомление о восстановлении группы после удаления. Бот получает событие `conversationUpdate` в `eventType.teamrestored` `channelData` объекте.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -866,9 +866,9 @@ async def on_teams_team_restored(
 
 * * *
 
-### <a name="team-archived"></a>Архивная группа
+### <a name="team-archived"></a>Архив команд
 
-Бот получает уведомление о том, что установленная в нем команда архивна. Он получает событие `conversationUpdate` в `eventType.teamarchived` `channelData` объекте.
+Бот получает уведомление, когда установленная в нем команда будет архивироваться. Он получает событие `conversationUpdate` в `eventType.teamarchived` `channelData` объекте.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -945,9 +945,9 @@ async def on_teams_team_archived(
 * * *
 
 
-### <a name="team-unarchived"></a>Команда, не вархивная
+### <a name="team-unarchived"></a>Команда без анархии
 
-Бот получает уведомление о том, что установленная в нем команда не является искомой. Он получает событие `conversationUpdate` в `eventType.teamUnarchived` `channelData` объекте.
+Бот получает уведомление, когда установленная в нем команда не является анархивной. Он получает событие `conversationUpdate` в `eventType.teamUnarchived` `channelData` объекте.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -1025,14 +1025,14 @@ async def on_teams_team_unarchived(
 
 ## <a name="message-reaction-events"></a>События реакции на сообщения
 
-Событие отправляется, когда пользователь добавляет или удаляет реакции на `messageReaction` сообщение, отправленное вашим ботом. Содержит ИД конкретного сообщения и тип реакции в `replyToId` `Type` текстовом формате.  К типам реакции относятся : "за", "heart", "в", "like", "Клык", "удивитесь". Это событие не содержит содержимого исходного сообщения, поэтому если обработка реакции на ваши сообщения важна для вашего бота, вам потребуется сохранить сообщения при их отправке.
+Событие отправляется, когда пользователь добавляет или удаляет отклики на `messageReaction` сообщение, отправленное ботом. Содержит ID конкретного сообщения и тип реакции `replyToId` `Type` в текстовом формате.  Типы реакций: "злой", "сердечный", "смех", "like", "Sad", "surprised". Это событие не содержит содержимое исходного сообщения, поэтому если обработка реакций на сообщения важна для вашего бота, вам потребуется хранить сообщения при их отправке.
 
-| EventType       | Объект Payload   | Описание                                                             | Область |
+| EventType       | Объект полезной нагрузки   | Описание                                                             | Область |
 | --------------- | ---------------- | ----------------------------------------------------------------------- | ----- |
 | messageReaction | reactionsAdded   | [Реакция на сообщение бота](#reactions-to-a-bot-message)                   | Все   |
 | messageReaction | reactionsRemoved | [Реакция, удаленная из сообщения бота](#reactions-removed-from-bot-message) | Все   |
 
-### <a name="reactions-to-a-bot-message"></a>Реакции на сообщение бота
+### <a name="reactions-to-a-bot-message"></a>Реакция на сообщение бота
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -1141,7 +1141,7 @@ async def on_reactions_added(
 
 * * *
 
-### <a name="reactions-removed-from-bot-message"></a>Реакции удалены из сообщения бота
+### <a name="reactions-removed-from-bot-message"></a>Реакции, удаленые из сообщения бота
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -1249,9 +1249,10 @@ async def on_reactions_removed(
 * * *
 
 ## <a name="samples"></a>Примеры
-Пример кода с событиями бесед ботов см. в:
 
-[Пример событий бесед ботов Microsoft Teams](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)
+Пример кода с событиями беседы ботов см. в примере:
+
+[Пример событий беседы в Microsoft Teams](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)
 
 
 

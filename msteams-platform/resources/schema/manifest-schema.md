@@ -4,12 +4,12 @@ description: Описывает схему манифеста для Microsoft T
 ms.topic: reference
 ms.author: lajanuar
 keywords: Схема манифеста команд
-ms.openlocfilehash: fc7af73dd90ae74d76645281d9e761b91678873b
-ms.sourcegitcommit: e78c9f51c4538212c53bb6c6a45a09d994896f09
+ms.openlocfilehash: 8c77d2e82c65a11b67eb6a223313f477238517d9
+ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51585843"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51634525"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справка. Схема манифеста для Microsoft Teams
 
@@ -277,7 +277,11 @@ ms.locfileid: "51585843"
     ]
   },
   "defaultInstallScope": "meetings",
-  "defaultGroupCapability": {"meetings": "tab" , "team": "bot", "groupchat": "bot"}
+  "defaultGroupCapability": {
+    "meetings": "tab", 
+    "team": "bot", 
+    "groupchat": "bot"
+  }
 }
 ```
 
@@ -658,5 +662,5 @@ URL https:// ссылки на схему JSON для манифеста.
 ```
 
 ***
->
->
+
+

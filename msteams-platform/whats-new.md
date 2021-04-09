@@ -3,12 +3,12 @@ title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 ms.topic: reference
 keywords: команды, новые возможности
-ms.openlocfilehash: e166cbed4b8fb7849cee71d75fa1751b23da3df2
-ms.sourcegitcommit: 49d1ecda14042bf3f368b14c1971618fe979b914
+ms.openlocfilehash: 298305f11788963817ddacfabbc052297d3eaabe
+ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034728"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51634532"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -19,8 +19,9 @@ ms.locfileid: "51034728"
 
 Журнал изменений содержит изменения в платформе Microsoft Teams и в этом наборе документов. Иногда записи могут использоваться для вызова внимания к новой функции, которая просто интересна разработчикам Teams.
 
-| **Дата** | **Примечания** | **Измененные темы** |
+| **Date** | **Notes** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|04/08/2021| Функция настройки приложения теперь доступна в предварительном просмотре разработчика.|[Обзор приложений команд разработки,](concepts/design/design-teams-app-overview.md#app-customization) [обзор студии](concepts/build-and-test/app-studio-overview.md#connectors)приложений и [схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
 |03/18/2021|Примечание. Пожалуйста, обнови версию **4.10** или выше SDK Bot Framework, как мы начали с процесса амортизации для `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync` . | [Изменения API-интерфейса Bot для участников группы или чата](resources/team-chat-member-api-changes.md) |
 |03/05/2021|Примечание. У вкладок больше не будет поля, связанные с их опытом. Разработчики вкладок должны просмотреть и обновить свои приложения. | [Удаление полей вкладок](resources/removing-tab-margins.md) |
 |03/05/2021 | По умолчанию область установки и возможности групповой установки в предварительном просмотре разработчика.| [Возможности установки по умолчанию и группы](concepts/deploy-and-publish/apps-upload.md#add-a-default-install-scope-and-group-capability) |
@@ -62,7 +63,7 @@ ms.locfileid: "51034728"
 | 05/25/2019 | Боты в групповых чатах. | [Взаимодействие с ботом в групповом чате или канале](~/concepts/bots/bot-conversations/bots-conv-channel.md) |
 | 05/20/2019 | Локализация манифеста приложений. | [Локализация приложений](~/publishing/apps-localization.md) |
 | 05/20/2019 | Действия сообщения. | [Действия сообщений](resources/messaging-extension-v3/create-extensions.md#action-type-message-extensions) |
-| 05/20/2019 | Разгрузка ссылок (пользовательские предварительные просмотры URL-адресов). | [Развернуть ссылку](messaging-extensions/how-to/link-unfurling.md)|
+| 05/20/2019 | Разгрузка ссылок (пользовательские предварительные просмотры URL-адресов). | [Развертывание ссылки](messaging-extensions/how-to/link-unfurling.md)|
 | 05/06/2019 | Программа сертификации приложений для приложений магазина. | [Сертификация приложений](~/publishing/application-certification.md) |
 | 05/06/2019 | Шаблоны приложений теперь доступны. | [Шаблоны приложений](~/samples/app-templates.md) |
 | 04/23/2019 | Расширения обмена сообщениями на основе действий теперь доступны. | [Расширения сообщений на основе действий](~/concepts/messaging-extensions/create-extensions.md) |

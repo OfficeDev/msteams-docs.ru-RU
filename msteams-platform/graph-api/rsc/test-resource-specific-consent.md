@@ -1,28 +1,28 @@
 ---
-title: Проверка согласия конкретного ресурса в Teams
-description: Details проверка согласия конкретного ресурса в Teams с использованием POST
+title: Тестирование разрешений на согласие для определенных ресурсов в Teams
+description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с помощью postman
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: tutorial
-keywords: Диаграмма Microsoft Teams SSO единого входа OAuth RSC POST
-ms.openlocfilehash: f50f61e7eb62e3bcc6af2dafc1c7c781ff2145de
-ms.sourcegitcommit: 43e1be9d9e3651ce73a8d2139e44d75550a0ca60
+keywords: команды авторизации OAuth SSO AAD rsc Postman Graph
+ms.openlocfilehash: 0d3d1c895c77bb417a9fdd84e319103485aa8944
+ms.sourcegitcommit: 5b3ba227c2e5e6f7a2c629961993f168da6a504d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49366856"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51634711"
 ---
-# <a name="test-resource-specific-consent-permissions--in-teams"></a>Проверка разрешений согласия для определенных ресурсов в Teams
+# <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
-Согласие с конкретными ресурсами (RSC) — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными командами в Организации. *Ознакомьтесь* с разделом [согласия для определенных ресурсов (RSC) — API Microsoft Teams Graph](resource-specific-consent.md).  
+Согласие на использование ресурсов — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными группами в организации. Дополнительные сведения см. в [сайте Resource-specific consent (RSC) — API Microsoft Teams Graph.](resource-specific-consent.md)
 
 > [!NOTE]
->Для тестирования разрешений RSC файл манифеста приложения Teams должен содержать ключ **webApplicationInfo** , заполненный следующими полями:
+> Чтобы проверить разрешения RSC, файл манифеста приложения Teams должен включать ключ **webApplicationInfo,** населённый следующими полями:
 >
-> - **ID**  — идентификатор приложения Azure AD, *см* . [Регистрация приложения на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).
-> - **ресурс**  — любая строка, *просмотрев* заметку в  [статье обновление манифеста приложения Teams](resource-specific-consent.md#update-your-teams-app-manifest)
-> - **разрешения приложения** — сведения о разрешениях RSC для вашего *приложения: сведения* о разрешениях для [ресурсов](resource-specific-consent.md#resource-specific-permissions).
+> - **id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).
+> - **ресурс.** Любая строка см. в заметке  [в манифесте приложения Update your Teams](resource-specific-consent.md#update-your-teams-app-manifest)
+> - **Разрешения приложения:** разрешения RSC для вашего приложения см. в [приложении Resource-specific Permissions.](resource-specific-consent.md#resource-specific-permissions)
 
 ```json
 "webApplicationInfo":{
@@ -47,49 +47,46 @@ ms.locfileid: "49366856"
    }
 ```
 
->[!IMPORTANT]
->В манифесте приложения включите только разрешения RSC, которые должно иметь ваше приложение.
+> [!IMPORTANT]
+> В манифесте приложения включите только разрешения RSC, которые необходимо иметь вашему приложению.
 
-## <a name="test-added-rsc-permissions-using-the-postman-app"></a>Тестирование добавленных разрешений RSC с использованием почтовых приложений
+## <a name="test-added-rsc-permissions-using-the-postman-app"></a>Тестирование добавленных разрешений RSC с помощью приложения Postman
 
-Чтобы проверить, учитываются ли разрешения RSC в полезных данных запроса API, необходимо скопировать [код теста RSC JSON](test-rsc-json-file.md) в локальную среду и обновить следующие значения:
+Чтобы проверить, чтят ли разрешения RSC полезной нагрузкой запроса API, необходимо скопировать тестовый код [RSC JSON](test-rsc-json-file.md) в локальной среде и обновить следующие значения:
 
-1. `azureADAppId`  — Идентификатор приложения Azure AD в приложении.
-1. `azureADAppSecret`  — ваш секрет приложения Azure AD (пароль)
-1. `token_scope`  — область требуется для получения маркера, чтобы задать значение https://graph.microsoft.com/.default
-1. `teamGroupId` — Идентификатор группы Teams можно получить из клиента Teams следующим образом:
+* `azureADAppId`: ID приложения Azure AD вашего приложения
+* `azureADAppSecret`: Секрет приложения Azure AD (пароль)
+* `token_scope`. Область, необходимая для получения маркера — задай значение https://graph.microsoft.com/.default
+* `teamGroupId`: Вы можете получить id группы группы из клиента Teams следующим образом:
 
-> [!div class="checklist"]
->
-> * В клиенте Teams выберите **Teams (Teams** ) в крайней левой панели навигации.
-> * Выберите из раскрывающегося меню команду, в которой установлено приложение.
-> * Выбор значка " **Дополнительные параметры** " (&#8943;)
-> * Выберите команду " **получить ссылку на группу** " 
-> * Скопируйте и сохраните значение **groupId** из строки.
+  > [!div class="checklist"]
+  >
+  > * В клиенте Teams выберите **Teams из** левой панели навигации .
+  > * Выберите команду, в которой установлено приложение из отсевного меню.
+  > * Выберите **значок Дополнительные** параметры (&#8943;)
+  > * Выберите **Получить ссылку на команду** 
+  > * Скопируйте и сохраните **значение groupId** из строки.
 
-### <a name="using-postman"></a>Использование POST
+### <a name="use-postman"></a>Использование Postman
 
-> [!div class="checklist"]
->
-> * Откройте приложение [POST](https://www.postman.com) .
-> * Выберите **файл импорт файла**  =>  **Import**  =>  **импорта** , чтобы отправить обновленный файл JSON из вашей среды.  
-> * Перейдите на вкладку **коллекции** . 
-> * Выберите Шеврон (>) рядом с элементом **тест RSC** , чтобы развернуть представление сведений и просмотреть запросы API.
+1. Откройте [приложение Postman.](https://www.postman.com)
+2. Выберите **файл импорта**  >    >  **файлов,** чтобы загрузить обновленный JSON-файл из среды.  
+3. Выберите **вкладку Collections.** 
+4. Выберите шеврон **>** рядом с **тестом RSC,** чтобы расширить представление сведений и просмотреть запросы API.
 
-Выполните всю коллекцию разрешений для каждого вызова API. Разрешения, указанные в манифесте приложения, должны выполняться успешно, в то время как они не задаются должным образом, с кодом состояния HTTP 403. Проверьте все коды состояния ответа, чтобы убедиться в том, что поведение RSC в вашем приложении соответствует ожиданиям.
+Выполните всю коллекцию разрешений для каждого вызова API. Разрешения, указанные в манифесте приложения, должны быть успешными, а те, которые не указаны, должны не работать с кодом состояния HTTP 403. Проверьте все коды состояния отклика, чтобы подтвердить, что поведение разрешений RSC в вашем приложении соответствует ожиданиям.
 
->[!NOTE]
->Чтобы протестировать конкретные вызовы API для удаления и чтения, добавьте эти сценарии в JSON-файл.
+> [!NOTE]
+> Чтобы протестировать конкретные вызовы DELETE и READ API, добавьте эти сценарии экземпляров в файл JSON.
 
-## <a name="test--revoked-rsc-permissions-using-postman"></a>Проверка отозванных разрешений RSC с помощью [POST](https://www.postman.com/)
+## <a name="test-revoked-rsc-permissions-using-postman"></a>Тестирование отозванных разрешений RSC с помощью [Postman](https://www.postman.com/)
 
-> [!div class="checklist"]
->
-> * Удаление приложения из определенной команды.
-> * Выполните описанные выше действия для теста, чтобы [Добавить разрешения RSC с помощью POST](#test-added-rsc-permissions-using-the-postman-app).
-> * Проверьте все коды состояния ответа, чтобы убедиться в том, что определенные вызовы API, которые завершились успешно, с кодом состояния HTTP 403.
+1. Удалить приложение из определенной группы.
+2. Следуйте шагам [для тестовых добавленных разрешений RSC с помощью Postman](#test-added-rsc-permissions-using-the-postman-app).
+3. Проверьте все коды состояния отклика, чтобы подтвердить, что конкретные вызовы API успешно сбой с **кодом состояния HTTP 403**.
+
+## <a name="see-also"></a>См. также
 
 > [!div class="nextstepaction"]
->
-> [Дополнительные сведения: API Microsoft Graph и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+> [API и команды Microsoft Graph](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
 
