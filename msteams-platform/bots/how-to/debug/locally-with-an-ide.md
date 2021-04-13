@@ -4,12 +4,12 @@ author: clearab
 description: Тестирование и отладка бота локально с помощью IDE
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 449d6dd5e10a72538e6443c9d17f998ebc662379
-ms.sourcegitcommit: 5b3ba227c2e5e6f7a2c629961993f168da6a504d
+ms.openlocfilehash: 5a35419564f87617ee5d590e2a604e970caa16b3
+ms.sourcegitcommit: 9404c2e3a30887b9e17e0c89b12dd26fd9b8033e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634771"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654468"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 
@@ -20,7 +20,7 @@ ms.locfileid: "51634771"
 Наиболее полный способ тестирования бота — создание пакета приложений и его отправка в Teams. Это единственный способ тестирования всех функциональных возможностей, доступных вашему боту, во всех сферах.
 
 Существует два метода для загрузки приложения:
-* Использование [App Studio](~/concepts/build-and-test/app-studio-overview.md)
+* Используйте [App Studio](~/concepts/build-and-test/app-studio-overview.md).
 * [Создайте пакет приложения](~/concepts/build-and-test/apps-package.md) вручную, а затем [загрузите приложение.](~/concepts/deploy-and-publish/apps-upload.md)
 
 > [!NOTE]

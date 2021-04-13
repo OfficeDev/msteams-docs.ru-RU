@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: команды авторизации OAuth SSO AAD rsc Postman Graph
-ms.openlocfilehash: 0d3d1c895c77bb417a9fdd84e319103485aa8944
-ms.sourcegitcommit: 5b3ba227c2e5e6f7a2c629961993f168da6a504d
+ms.openlocfilehash: ea764ec2cbca653221d7194d0759ac39f93ec802
+ms.sourcegitcommit: 9404c2e3a30887b9e17e0c89b12dd26fd9b8033e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634711"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654428"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
@@ -21,7 +21,7 @@ ms.locfileid: "51634711"
 > Чтобы проверить разрешения RSC, файл манифеста приложения Teams должен включать ключ **webApplicationInfo,** населённый следующими полями:
 >
 > - **id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).
-> - **ресурс.** Любая строка см. в заметке  [в манифесте приложения Update your Teams](resource-specific-consent.md#update-your-teams-app-manifest)
+> - **ресурс.** Любая строка см. в заметке [в манифесте Обновления приложения Teams.](resource-specific-consent.md#update-your-teams-app-manifest)
 > - **Разрешения приложения:** разрешения RSC для вашего приложения см. в [приложении Resource-specific Permissions.](resource-specific-consent.md#resource-specific-permissions)
 
 ```json
@@ -54,18 +54,16 @@ ms.locfileid: "51634711"
 
 Чтобы проверить, чтят ли разрешения RSC полезной нагрузкой запроса API, необходимо скопировать тестовый код [RSC JSON](test-rsc-json-file.md) в локальной среде и обновить следующие значения:
 
-* `azureADAppId`: ID приложения Azure AD вашего приложения
-* `azureADAppSecret`: Секрет приложения Azure AD (пароль)
-* `token_scope`. Область, необходимая для получения маркера — задай значение https://graph.microsoft.com/.default
+* `azureADAppId`: ID приложения Azure AD в вашем приложении.
+* `azureADAppSecret`Пароль приложения Azure AD.
+* `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default .
 * `teamGroupId`: Вы можете получить id группы группы из клиента Teams следующим образом:
 
-  > [!div class="checklist"]
-  >
-  > * В клиенте Teams выберите **Teams из** левой панели навигации .
-  > * Выберите команду, в которой установлено приложение из отсевного меню.
-  > * Выберите **значок Дополнительные** параметры (&#8943;)
-  > * Выберите **Получить ссылку на команду** 
-  > * Скопируйте и сохраните **значение groupId** из строки.
+    1. В клиенте Teams выберите **Teams из** левой панели навигации.
+    2. Выберите команду, в которой установлено приложение из отсевного меню.
+    3. Выберите **значок Дополнительные** параметры (&#8943;).
+    4. Выберите **Получить ссылку на команду**. 
+    5. Скопируйте и сохраните **значение groupId** из строки.
 
 ### <a name="use-postman"></a>Использование Postman
 

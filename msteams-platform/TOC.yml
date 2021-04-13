@@ -350,9 +350,11 @@
       href: graph-api/import-messages/import-external-messages-to-teams.md
 - name: Тестирование приложения
   items:
+    - name: Обзор
+      href: concepts/build-and-test/test-app-overview.md
     - name: Подготовка клиента Microsoft 365
       href: concepts/build-and-test/prepare-your-o365-tenant.md
-    - name: Выбор параметров настройки
+    - name: Выбор параметров тестирования
       href: concepts/build-and-test/debug.md
     - name: Добавление тестовых данные в среду
       href: concepts/build-and-test/test-data.md
