@@ -1,38 +1,48 @@
 ---
-title: Понимание возможностей приложений Teams
+title: Понимание возможностей приложения
 author: heath-hamilton
 description: Возможности приложений teams
 ms.topic: conceptual
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: 5336b36b52cf81be414f18ccaaf9e235c079e626
-ms.sourcegitcommit: 49d1ecda14042bf3f368b14c1971618fe979b914
+ms.openlocfilehash: 6d08d06c55aed4b531fba4bb533c896c13073cfc
+ms.sourcegitcommit: 9404c2e3a30887b9e17e0c89b12dd26fd9b8033e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034707"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51654435"
 ---
-# <a name="understanding-teams-app-capabilities"></a><span data-ttu-id="aa8d1-103">Понимание возможностей приложений Teams</span><span class="sxs-lookup"><span data-stu-id="aa8d1-103">Understanding Teams app capabilities</span></span>
+# <a name="understand-microsoft-teams-app-capabilities"></a><span data-ttu-id="2b8eb-103">Понимание возможностей приложений Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="2b8eb-103">Understand Microsoft Teams app capabilities</span></span>
 
-<span data-ttu-id="aa8d1-104">*Возможности —* это точки расширения для создания приложений на платформе Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="aa8d1-104">*Capabilities* are the extension points for building apps on the Microsoft Teams platform.</span></span>
+<span data-ttu-id="2b8eb-104">Разминаемость или точки входа — это разные способы, с помощью которых приложение может проявляться к пользователю.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-104">Extensibility or entry points are different ways in which an app can manifest itself to a user.</span></span> <span data-ttu-id="2b8eb-105">Например, пользователь может взаимодействовать с приложением на вкладке холста, чтобы сделать действие, или может выбрать то же самое с помощью разговорного бота.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-105">For example, a user can interact with an app on a canvas tab to do an activity or might choose to do the same using a conversational bot.</span></span> <span data-ttu-id="2b8eb-106">Различные возможности, используемые для создания приложения Teams, позволяют увеличить область его использования.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-106">The various capabilities used to build your Teams app allow you to increase its usage scope.</span></span>
 
-<span data-ttu-id="aa8d1-105">Существует несколько способов расширения Teams, поэтому каждое приложение является уникальным: некоторые из них имеют только одну возможность (например, веб-ок), в то время как у других есть несколько способов предоставить пользователям параметры.</span><span class="sxs-lookup"><span data-stu-id="aa8d1-105">There are multiple ways to extend Teams, so every app is unique: Some only have one capability (such as a webhook), while others have a few to give users options.</span></span> <span data-ttu-id="aa8d1-106">Например, ваше приложение может отображать данные в центральном расположении (вкладке) и представлять эти же сведения через диалоговой интерфейс (бот).</span><span class="sxs-lookup"><span data-stu-id="aa8d1-106">For instance, your app could display data in a central location (tab) and present that same information through a conversational interface (bot).</span></span>
+<span data-ttu-id="2b8eb-107">Существует несколько способов расширения Teams, поэтому каждое приложение является уникальным.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-107">There are multiple ways to extend Teams, so every app is unique.</span></span> <span data-ttu-id="2b8eb-108">Некоторые из них имеют только одну возможность, например веб-ок, в то время как другие имеют несколько функций, чтобы предоставить пользователям различные параметры.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-108">Some only have one capability, such as a webhook, while others have more than one feature to give users various options.</span></span> <span data-ttu-id="2b8eb-109">Например, приложение может отображать данные в центральном расположении, то есть на вкладке, и представлять ту же информацию через диалоговую интерфейс, то есть **бот.** </span><span class="sxs-lookup"><span data-stu-id="2b8eb-109">For example, your app can display data in a central location, that is, the **tab** and present that same information through a conversational interface, that is, the **bot**.</span></span>
 
-<span data-ttu-id="aa8d1-107">Приложение Teams имеет одну или все следующие основные возможности:</span><span class="sxs-lookup"><span data-stu-id="aa8d1-107">Your Teams app have one or all of the following core capabilities:</span></span>
+## <a name="app-capabilities"></a><span data-ttu-id="2b8eb-110">Возможности приложений</span><span class="sxs-lookup"><span data-stu-id="2b8eb-110">App capabilities</span></span>
 
-* [<span data-ttu-id="aa8d1-108">Вкладки</span><span class="sxs-lookup"><span data-stu-id="aa8d1-108">Tabs</span></span>](../tabs/what-are-tabs.md)
-* [<span data-ttu-id="aa8d1-109">Расширения для системы обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="aa8d1-109">Messaging extensions</span></span>](../messaging-extensions/what-are-messaging-extensions.md)
-* [<span data-ttu-id="aa8d1-110">Боты</span><span class="sxs-lookup"><span data-stu-id="aa8d1-110">Bots</span></span>](../bots/what-are-bots.md)
-* [<span data-ttu-id="aa8d1-111">Веб-перехватчики и соединительные линии</span><span class="sxs-lookup"><span data-stu-id="aa8d1-111">Webhooks and connectors</span></span>](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)
+<span data-ttu-id="2b8eb-111">Приложение Teams имеет одну или все следующие основные возможности:</span><span class="sxs-lookup"><span data-stu-id="2b8eb-111">Your Teams app have one or all of the following core capabilities:</span></span>
 
-<span data-ttu-id="aa8d1-112">Приложение также может воспользоваться расширенными возможностями, такими как [API Microsoft Graph для Teams.](https://docs.microsoft.com/graph/teams-concept-overview)</span><span class="sxs-lookup"><span data-stu-id="aa8d1-112">Your app can also take advantage of advanced capabilities, such as the [Microsoft Graph API for Teams](https://docs.microsoft.com/graph/teams-concept-overview).</span></span>
+* [<span data-ttu-id="2b8eb-112">Tabs</span><span class="sxs-lookup"><span data-stu-id="2b8eb-112">Tabs</span></span>](../tabs/what-are-tabs.md)
+* [<span data-ttu-id="2b8eb-113">Расширения для системы обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="2b8eb-113">Messaging extensions</span></span>](../messaging-extensions/what-are-messaging-extensions.md)
+* [<span data-ttu-id="2b8eb-114">Боты</span><span class="sxs-lookup"><span data-stu-id="2b8eb-114">Bots</span></span>](../bots/what-are-bots.md)
+* [<span data-ttu-id="2b8eb-115">Веб-перехватчики и соединительные линии</span><span class="sxs-lookup"><span data-stu-id="2b8eb-115">Webhooks and connectors</span></span>](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)
 
-<span data-ttu-id="aa8d1-113">На следующей иллюстрации см. представление о том, какие возможности будут предоставлять нужные функции в приложении.</span><span class="sxs-lookup"><span data-stu-id="aa8d1-113">See the following illustration to get an idea which capabilities would provide the features you want in your app.</span></span>
+<span data-ttu-id="2b8eb-116">Приложение также может воспользоваться расширенными возможностями, такими как [API Microsoft Graph для Teams.](https://docs.microsoft.com/graph/teams-concept-overview)</span><span class="sxs-lookup"><span data-stu-id="2b8eb-116">Your app can also take advantage of advanced capabilities, such as the [Microsoft Graph API for Teams](https://docs.microsoft.com/graph/teams-concept-overview).</span></span>
+
+<span data-ttu-id="2b8eb-117">На следующей иллюстрации вы можете узнать, какие функции будут предоставляться в приложении.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-117">The following illustration gives you an idea of which capabilities will provide the features you want in your app.</span></span>
 
 :::image type="content" source="../assets/images/capabilities-overview.png" alt-text="Карта разума, иллюстрированная возможностями приложений Teams.":::
 
-## <a name="doing-whats-best-for-your-users"></a><span data-ttu-id="aa8d1-115">Делать то, что лучше для пользователей</span><span class="sxs-lookup"><span data-stu-id="aa8d1-115">Doing what's best for your users</span></span>
+## <a name="always-consider-your-user"></a><span data-ttu-id="2b8eb-119">Всегда учитывайте пользователя</span><span class="sxs-lookup"><span data-stu-id="2b8eb-119">Always consider your user</span></span>
 
-<span data-ttu-id="aa8d1-116">Ознакомив себя с разработкой приложения Teams, вы начнете понимать его тонкости.</span><span class="sxs-lookup"><span data-stu-id="aa8d1-116">As you familiarize yourself with Teams app development, you'll begin to understand its subtleties.</span></span> <span data-ttu-id="aa8d1-117">Существует несколько способов создания определенных функций (например, сбора ввода пользователя).</span><span class="sxs-lookup"><span data-stu-id="aa8d1-117">There's more than one way to build certain features (such as collecting user input).</span></span> <span data-ttu-id="aa8d1-118">Например, можно встраить веб-форму в вкладку с помощью `<iframe>` .</span><span class="sxs-lookup"><span data-stu-id="aa8d1-118">For example, you could embed a web-based form in a tab using an `<iframe>`.</span></span> <span data-ttu-id="aa8d1-119">Вы также можете сделать это на вкладке с помощью модуля задач, конвенции об пользовательском интерфейсе Teams, для более родного опыта, который могут предпочитать пользователи.</span><span class="sxs-lookup"><span data-stu-id="aa8d1-119">You could also do this in a tab using a task module, a Teams UI convention, for a more native experience your users may prefer.</span></span>
+<span data-ttu-id="2b8eb-120">Ознакомив себя с разработкой приложений Teams, вы поймете его основные основы.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-120">As you familiarize yourself with Teams app development, you understand its core fundamentals.</span></span> <span data-ttu-id="2b8eb-121">Вы понимаете, что существует несколько способов создания определенных функций.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-121">You understand that there is more than one way to build certain features.</span></span> <span data-ttu-id="2b8eb-122">В таких сценариях рассмотрим, как можно предоставить пользователю более родной опыт.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-122">In such scenarios, consider how you can provide a more native experience to your user.</span></span>
+<span data-ttu-id="2b8eb-123">Например, можно собирать входные данные пользователей в форме, построенной в виде вкладки в приложении.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-123">For example, you can collect user input in a form built as a tab in the app.</span></span> <span data-ttu-id="2b8eb-124">Это также можно сделать с помощью модуля задач без переключения представлений и нарушения потока работы пользователя.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-124">You can also do this using a task module without switching views and disrupting user's flow of work.</span></span> <span data-ttu-id="2b8eb-125">Важно выбрать точки расширения, которые обеспечивают наименьшее отклонение от регулярного потока работы пользователя.</span><span class="sxs-lookup"><span data-stu-id="2b8eb-125">It is important to choose extension points that provide least deviation from a user's regular flow of work.</span></span>
 
-<span data-ttu-id="aa8d1-120">Выбор правильных возможностей и дизайна сводится к первому пониманию случаев [использования аудитории.](../concepts/design/understand-use-cases.md)</span><span class="sxs-lookup"><span data-stu-id="aa8d1-120">Choosing the right capabilities and design comes down to first [understanding your audience's use cases](../concepts/design/understand-use-cases.md).</span></span>
+## <a name="see-also"></a><span data-ttu-id="2b8eb-126">См. также</span><span class="sxs-lookup"><span data-stu-id="2b8eb-126">See also</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="2b8eb-127">Создание приложений для teams</span><span class="sxs-lookup"><span data-stu-id="2b8eb-127">Build apps for Teams</span></span>](../overview.md)
+## <a name="next-step"></a><span data-ttu-id="2b8eb-128">Следующий шаг</span><span class="sxs-lookup"><span data-stu-id="2b8eb-128">Next step</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="2b8eb-129">Точки входа приложения Teams</span><span class="sxs-lookup"><span data-stu-id="2b8eb-129">Teams app entry points</span></span>](../concepts/extensibility-points.md)
