@@ -30,17 +30,17 @@
       href: tutorials/get-started-nodejs-app-studio.md
     - name: Создание приложения с помощью генератора Yeoman
       href: tutorials/get-started-yeoman.md
-    - name: Обновление Microsoft Teams с помощью генератора Yeoman
-      href: tutorials/upgrade-using-yeoman.md
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Основные сведения о приложении
   items:
+    - name: Обзор
+      href: concepts/app-fundamentals-overview.md
     - name: Возможности приложения Teams
       href: concepts/capabilities-overview.md
     - name: Точки входа приложения Teams
       href: concepts/extensibility-points.md
-    - name: Общие сведения о вариантах использования
+    - name: Анализ вариантов использования
       href: concepts/design/understand-use-cases.md
     - name: Сопоставление вариантов использования с возможностями приложения Teams
       href: concepts/design/map-use-cases.md
