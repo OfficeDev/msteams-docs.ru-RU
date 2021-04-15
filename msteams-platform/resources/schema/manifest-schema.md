@@ -4,12 +4,12 @@ description: Описывает схему манифеста для Microsoft T
 ms.topic: reference
 ms.author: lajanuar
 keywords: Схема манифеста команд
-ms.openlocfilehash: 8c77d2e82c65a11b67eb6a223313f477238517d9
-ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
+ms.openlocfilehash: fa1c1cfd732fe5a30fc5fc32b693dd21b2e8ee82
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634525"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696047"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справка. Схема манифеста для Microsoft Teams
 
@@ -313,7 +313,7 @@ URL https:// ссылки на схему JSON для манифеста.
 
 **Обязательно —** ID приложения Майкрософт
 
-Идентификатор — уникальный идентификатор, созданный Корпорацией Майкрософт для приложения. У вас есть ID, если бот зарегистрирован через Microsoft Bot Framework или веб-приложение вкладки уже вошел в Microsoft. Здесь необходимо ввести ID. В противном случае необходимо создать новый ID на портале регистрации приложений Microsoft[(Мои приложения).](https://apps.dev.microsoft.com) При добавлении бота используйте тот же ID.
+Идентификатор — уникальный идентификатор, созданный Корпорацией Майкрософт для приложения. У вас есть ID, если бот зарегистрирован через Microsoft Bot Framework или веб-приложение вкладки уже вошел в Microsoft. Здесь необходимо ввести ID. В противном случае необходимо создать новый ID на портале [регистрации приложений Майкрософт.](https://aka.ms/appregistrations) При добавлении бота используйте тот же ID.
 
 > [!NOTE]
 > Если вы передаете обновление существующему приложению в AppSource, ID в манифесте не должен изменяться.

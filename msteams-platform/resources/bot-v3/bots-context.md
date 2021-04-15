@@ -1,44 +1,45 @@
 ---
 title: Получите контекст для бота Microsoft Teams
-description: Описание получения контекста для ботов в Microsoft Teams
-keywords: контекст ботов teams
+description: Описывает, как получить контекст для ботов в Microsoft Teams
+keywords: Контекст командных ботов
+ms.topic: conceptual
 ms.date: 05/20/2019
-ms.openlocfilehash: 1465e6624b4eaadd73e2d4d9cf87fccedc002e52
-ms.sourcegitcommit: e3b6bc31059ec77de5fbef9b15c17d358abbca0f
+ms.openlocfilehash: e46dde7d30e8d3074fbfbc2a6f050290827f5ccb
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50231555"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696649"
 ---
 # <a name="get-context-for-your-microsoft-teams-bot"></a>Получите контекст для бота Microsoft Teams
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-Бот может получить доступ к дополнительному контексту команды или чата, например к профилю пользователя. Эти сведения можно использовать для того, чтобы расширить функциональные возможности бота и обеспечить более персонализированное впечатление.
+Ваш бот может получить доступ к дополнительному контексту о команде или чате, например к профиле пользователя. Эти сведения можно использовать для обогащения функциональных возможностей бота и предоставления более персонализированного опыта.
 
 > [!NOTE]
 >
-> * Доступ к API ботов для Microsoft Teams лучше всего получить с помощью наших расширений для SDK построитель ботов.
+> * API-API для конкретных ботов Microsoft Teams лучше всего получить через наши расширения для SDK-конструктора ботов.
 > * Для C# или .NET скачайте пакет [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet.
-> * Для Node.js разработки функции построитель ботов для Teams включены в [SDK Bot Framework](https://github.com/microsoft/botframework-sdk) 4.6.
+> * Для Node.js разработки функциональность Bot Builder for Teams включена в [SDK bot Framework](https://github.com/microsoft/botframework-sdk) v4.6.
 
-## <a name="fetch-the-team-roster"></a>Получить список команд
+## <a name="fetch-the-team-roster"></a>Извлечение реестра команды
 
-Бот может запрашивать список участников команды и их базовые профили. Основные профили включают в себя ИД пользователей Teams и данные Azure Active Directory (AAD), такие как имя и ид объекта. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, проверьте, является ли пользователь, во время входа на вкладку с помощью учетных данных AAD, участником группы.
+Бот может запрашивать список членов группы и их основные профили. Основные профили включают пользовательские ID Teams и сведения Azure Active Directory (AAD), такие как имя и ID объекта. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, проверьте, входит ли пользователь в вкладку с помощью учетных данных AAD.
 
 ### <a name="rest-api-example"></a>Пример API REST
 
-Напрямую выдают запрос [`/conversations/{teamId}/members/`](/bot-framework/rest-api/bot-framework-rest-connector-api-reference#get-conversation-members) GET, используя `serviceUrl` значение в качестве конечной точки.
+Непосредственно выдай запрос [`/conversations/{teamId}/members/`](/bot-framework/rest-api/bot-framework-rest-connector-api-reference#get-conversation-members) GET, используя `serviceUrl` значение в качестве конечной точки.
 
-Его можно найти в объекте полезной нагрузки действия, получаемой ботом в `teamId` `channeldata` следующих сценариях:
+Объект можно найти в объекте полезной нагрузки, получаемой ботом в `teamId` `channeldata` следующих сценариях:
 
-* Когда пользователь сообщает или взаимодействует с ботом в контексте команды. Дополнительные сведения [см. в получении сообщений.](~/resources/bot-v3/bot-conversations/bots-conversations.md#receiving-messages)
-* При добавлении нового пользователя или бота в команду. Дополнительные сведения см. в [добавлении бота](~/resources/bot-v3/bots-notifications.md#bot-or-user-added-to-a-team)или пользователя в команду.
+* Когда пользователь передает сообщения или взаимодействует с ботом в контексте группы. Дополнительные сведения см. [в сообщении о получении сообщений.](~/resources/bot-v3/bot-conversations/bots-conversations.md#receiving-messages)
+* При добавлении нового пользователя или бота в команду. Дополнительные сведения см. в [записи бота или пользователя, добавленного в команду.](~/resources/bot-v3/bots-notifications.md#bot-or-user-added-to-a-team)
 
 > [!NOTE]
 >
->* Всегда используйте ИД команды при вызове API.
->* Значение `serviceUrl` обычно является стабильным, но может изменяться. После поступления нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.
+>* Всегда используйте командный ID при вызове API.
+>* Значение `serviceUrl` имеет тенденцию быть стабильным, но может измениться. По прибытии нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.
 
 ```json
 GET /v3/conversations/19:ja0cu120i1jod12j@skype.net/members
@@ -70,7 +71,7 @@ Response body
 
 ### <a name="net-example"></a>Пример .NET
 
-Вызов, `GetConversationMembersAsync` который используется для возврата списка `Team.Id` пользовательских ИД.
+Вызов `GetConversationMembersAsync` с помощью возврата списка `Team.Id` пользовательских ИД.
 
 ```csharp
 // Fetch the members in the current conversation
@@ -93,7 +94,7 @@ foreach (var member in members.AsTeamsChannelAccounts())
 await context.PostAsync($"People in this conversation: {sb.ToString()}");
 ```
 
-### <a name="nodejs-or-typescript-example"></a>Node.js или TypeScript
+### <a name="nodejs-or-typescript-example"></a>Node.js или typeScript
 
 ```typescript
 
@@ -116,31 +117,31 @@ connector.fetchMembers(
 );
 ```
 
-См. также примеры [Bot Framework.](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
+Кроме того, [см. примеры Bot Framework.](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
 
-## <a name="fetch-user-profile-or-roster-in-personal-or-group-chat"></a>Извлечение профиля пользователя или группы в личном или групповом чате
+## <a name="fetch-user-profile-or-roster-in-personal-or-group-chat"></a>Извлечение профиля пользователя или реестра в личном или групповом чате
 
-Вы можете сделать вызов API для любого личного чата, чтобы получить сведения профиля пользователя, который общается с ботом.
+Вы можете сделать вызов API для любого личного чата, чтобы получить сведения о профиле пользователя в чате с ботом.
 
-ВызовЫ API, методы SDK и объект ответа идентичны запросу в составе команды. Единственное отличие заключается в том, что вы `conversationId` передаете вместо `teamId` .
+Вызов API, методы SDK и объект ответа идентичны запросу реестра группы. Единственное отличие состоит в том, что вы передаете вместо `conversationId` `teamId` .
 
-## <a name="fetch-the-list-of-channels-in-a-team"></a>Получить список каналов в команде
+## <a name="fetch-the-list-of-channels-in-a-team"></a>Извлечение списка каналов в команде
 
-Бот может запросить список каналов в команде.
+Бот может запрашивать список каналов в команде.
 
 > [!NOTE]
 >
->* Возвращается имя общего канала по умолчанию для `null` локализации.
->* ИД канала для общего канала всегда совпадает с ИД команды.
+>* Для локализации возвращается имя общего канала по `null` умолчанию.
+>* ID канала для общего канала всегда совпадает с командным ИД.
 
 ### <a name="rest-api-example"></a>Пример API REST
 
-Напрямую выдают запрос `/teams/{teamId}/conversations/` GET, используя `serviceUrl` значение в качестве конечной точки.
+Непосредственно выдай запрос `/teams/{teamId}/conversations/` GET, используя `serviceUrl` значение в качестве конечной точки.
 
-Единственным источником является `teamId` сообщение из контекста команды. Это либо сообщение от пользователя, либо сообщение, которое бот получает при добавлении в команду. Дополнительные сведения см. в [добавлении бота](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition)или пользователя в команду.
+Единственным источником для `teamId` этого является сообщение из контекста группы. Это сообщение является либо сообщением от пользователя, либо сообщением, которое получает бот при добавлении в команду. Дополнительные сведения см. в [записи бота или пользователя, добавленного в команду.](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition)
 
 > [!NOTE]
-> Значение `serviceUrl` обычно является стабильным, но может изменяться. После поступления нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.
+> Значение `serviceUrl` имеет тенденцию быть стабильным, но может измениться. По прибытии нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.
 
 ```json
 GET /v3/teams/19%3A033451497ea84fcc83d17ed7fb08a1b6%40thread.skype/conversations
@@ -165,15 +166,15 @@ Response body
 
 #### <a name="net-example"></a>Пример .NET
 
-В следующем примере используется вызов из расширений Teams для `FetchChannelList` [SDK построитель ботов для .NET:](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams)
+В следующем примере используется вызов из расширений Teams для `FetchChannelList` [SDK bot Builder для .NET:](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams)
 
 ```csharp
 ConversationList channels = client.GetTeamsConnectorClient().Teams.FetchChannelList(activity.GetChannelData<TeamsChannelData>().Team.Id);
 ```
 
-#### <a name="nodejs-example"></a>Node.js примере
+#### <a name="nodejs-example"></a>Node.js пример
 
-В следующем примере используется вызов из расширений Teams для `fetchChannelList` [SDK построитель ботов для Node.js: ](https://www.npmjs.com/package/botbuilder-teams)
+В следующем примере используется вызов из расширений Teams для `fetchChannelList` [SDK ](https://www.npmjs.com/package/botbuilder-teams)bot Builder для Node.js:
 
 ```javascript
 var teamId = session.message.sourceEvent.team.id;
@@ -191,9 +192,9 @@ connector.fetchChannelList(
 );
 ```
 
-## <a name="get-clientinfo-in-your-bot-context"></a>Получить clientInfo в контексте бота
+## <a name="get-clientinfo-in-your-bot-context"></a>Получите clientInfo в контексте бота
 
-Вы можете получить clientInfo в действии бота. ClientInfo содержит следующие свойства:
+Вы можете получить clientInfo в действии вашего бота. ClientInfo содержит следующие свойства:
 
 * Locale
 * Страна
@@ -214,7 +215,7 @@ connector.fetchChannelList(
 ]
 ```
 
-### <a name="c-example"></a>Пример C#
+### <a name="c-example"></a>C# пример
 
 ```csharp
 var connector = new ConnectorClient(new Uri(context.Activity.ServiceUrl));

@@ -2,13 +2,14 @@
 title: Интеграция функций местонахождения
 description: Использование SDK клиента Teams JavaScript для использования возможностей расположения
 keywords: Возможности карты расположения для родных разрешений устройств
+ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: b941080eaece2cd2346bfa046ae97f855195ff20
-ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
+ms.openlocfilehash: de699d4edbf1c95f283cead9d12dcd2c98f8d3b9
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51596198"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696859"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 

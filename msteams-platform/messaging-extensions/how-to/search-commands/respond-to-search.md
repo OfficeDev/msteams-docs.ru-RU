@@ -1,34 +1,36 @@
 ---
-title: Команда "ответить на Поиск"
+title: Ответ на команду поиска
 author: clearab
-description: Ответ на команду поиска из расширения обмена сообщениями в приложении Microsoft Teams.
+description: Как реагировать на команду поиска из расширения обмена сообщениями в приложении Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: e8b40dd8f422ffbd2537e8fa76a38c15eb6208de
-ms.sourcegitcommit: 4329a94918263c85d6c65ff401f571556b80307b
+ms.openlocfilehash: 2cc53796deddb47e8dbce86a5b02f4d80a1b91e0
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41675664"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696194"
 ---
-# <a name="respond-to-the-search-command"></a>Ответ на команду поиска
+# <a name="respond-to-search-command"></a>Ответ на команду поиска
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-Веб-служба получает сообщение о `composeExtension/query` вызове, которое содержит `value` объект с параметрами поиска. Этот вызов инициируется следующим образом:
+После отправки команды поиска веб-служба получает сообщение об вызове, содержащем объект `composeExtension/query` `value` с параметрами поиска. Этот вызов запускается при следующих условиях:
 
-* По мере ввода символов в поле поиска.
-* Если `initialRun` для манифеста приложения задано значение true, вы получите сообщение Invoke сразу же после вызова команды поиска. Просмотр [запроса по умолчанию](#default-query).
+* Как символы вписались в поле поиска.
+* `initialRun` установлено, что в манифесте приложения вы получите сообщение вызова, как только будет вызвана команда поиска. Дополнительные сведения см. в [запросе по умолчанию.](#default-query)
 
-Собственно параметры запроса находятся в `value` объекте в запросе, который включает следующие свойства:
+В этом документе вы можете узнать, как реагировать на запросы пользователей в виде карт и предварительных просмотров, а также условия, при которых Microsoft Teams выдает запрос по умолчанию.
+
+Параметры запроса находятся в объекте в запросе, который включает `value` следующие свойства:
 
 | Имя свойства | Назначение |
 |---|---|
-| `commandId` | Имя команды, вызываемой пользователем, которая соответствует одной из команд, объявленных в манифесте приложения. |
-| `parameters` | Массив параметров. Каждый объект Parameter содержит имя параметра вместе со значением параметра, предоставленным пользователем. |
-| `queryOptions` | Параметры разбивки на страницы: <br>`skip`: количество пропусков для этого запроса <br>`count`: число возвращаемых элементов |
+| `commandId` | Имя команды, вызываемой пользователем, совпадает с одной из команд, объявленных в манифесте приложения. |
+| `parameters` | Массив параметров. Каждый объект параметра содержит имя параметра, а также значение параметра, предоставленное пользователем. |
+| `queryOptions` | Параметры pagination: <br>`skip`: Пропустить количество для этого запроса <br>`count`: Количество возвращаемого элемента. |
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionResponse> OnTeamsMessagingExtensionQueryAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionQuery query, CancellationToken cancellationToken)
@@ -37,7 +39,7 @@ protected override async Task<MessagingExtensionResponse> OnTeamsMessagingExtens
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 class TeamsMessagingExtensionsSearch extends TeamsActivityHandler {
@@ -47,9 +49,9 @@ class TeamsMessagingExtensionsSearch extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
-Приведенный ниже код JSON сокращен для выделения наиболее релевантных разделов.
+Ниже JSON сокращается, чтобы выделить наиболее релевантные разделы.
 
 ```json
 {
@@ -74,46 +76,46 @@ class TeamsMessagingExtensionsSearch extends TeamsActivityHandler {
 
 * * *
 
-## <a name="respond-to-user-requests"></a>Ответ на запросы пользователей
+## <a name="respond-to-user-requests"></a>Ответы на запросы пользователей
 
-Когда пользователь выполняет запрос, Microsoft Teams отправляет службе синхронный HTTP-запрос. В этот момент код имеет 5 секунд, чтобы предоставить HTTP-ответ на запрос. В течение этого времени служба может выполнять дополнительные операции поиска или любую другую бизнес-логику, необходимую для обслуживания запроса.
+Когда пользователь выполняет запрос, Microsoft Teams выдает синхронный http-запрос в службу. В этот момент у кода есть `5` секунды, чтобы предоставить http-ответ на запрос. За это время служба может выполнять дополнительный просмотр или любую другую бизнес-логику, необходимую для обслуживания запроса.
 
-Служба должна отвечать на результаты, соответствующие запросу пользователя. Ответ должен указывать код состояния HTTP `200 OK` и допустимый объект Application/JSON следующего основного текста:
+Служба должна отвечать результатами, совпадающие с запросом пользователя. Ответ должен указывать код состояния HTTP и допустимый объект приложения или JSON со `200 OK` следующими свойствами:
 
 |Имя свойства|Назначение|
 |---|---|
-|`composeExtension`|Конверт отклика верхнего уровня.|
-|`composeExtension.type`|Тип ответа. Поддерживаются следующие типы: <br>`result`: отображает список результатов поиска <br>`auth`: запрос на проверку подлинности пользователя <br>`config`: запрашивает у пользователя установку расширения для обмена сообщениями <br>`message`: отображается обычное текстовое сообщение |
-|`composeExtension.attachmentLayout`|Задает макет вложений. Используется для ответов типа `result`. <br>В настоящее время поддерживаются следующие типы: <br>`list`: список объектов карточек, содержащих поля эскиза, заголовка и текста. <br>`grid`: сетка эскизов изображений |
-|`composeExtension.attachments`|Массив допустимых объектов вложений. Используется для ответов типа `result`. <br>В настоящее время поддерживаются следующие типы: <br>`application/vnd.microsoft.card.thumbnail` <br>`application/vnd.microsoft.card.hero` <br>`application/vnd.microsoft.teams.card.o365connector` <br>`application/vnd.microsoft.card.adaptive`|
-|`composeExtension.suggestedActions`|Предложенные действия. Используется для ответов типа `auth` или. `config` |
-|`composeExtension.text`|Сообщение для отображения. Используется для ответов типа `message`. |
+|`composeExtension`|Конверт ответа верхнего уровня.|
+|`composeExtension.type`|Тип ответа. Поддерживаются следующие типы: <br>`result`: Отображает список результатов поиска <br>`auth`: Просит пользователя проверить подлинность <br>`config`: Просит пользователя настроить расширение обмена сообщениями <br>`message`: Отображает простое текстовое сообщение |
+|`composeExtension.attachmentLayout`|Указывает макет вложений. Используется для ответов типа `result` . <br>В настоящее время поддерживаются следующие типы: <br>`list`: Список объектов карт, содержащих эскизы, заголовки и текстовые поля <br>`grid`: Сетка изображений эскизов |
+|`composeExtension.attachments`|Массив допустимых объектов вложений. Используется для ответов типа `result` . <br>В настоящее время поддерживаются следующие типы: <br>`application/vnd.microsoft.card.thumbnail` <br>`application/vnd.microsoft.card.hero` <br>`application/vnd.microsoft.teams.card.o365connector` <br>`application/vnd.microsoft.card.adaptive`|
+|`composeExtension.suggestedActions`|Предлагаемые действия. Используется для ответов типа `auth` или `config` . |
+|`composeExtension.text`|Отображение сообщения. Используется для ответов типа `message` . |
 
-### <a name="response-card-types-and-previews"></a>Типы карточек ответа и предварительный просмотр
+### <a name="response-card-types-and-previews"></a>Типы и предварительные просмотры карт отклика
 
-Поддерживаются следующие типы вложений:
+Teams поддерживает следующие типы карт:
 
-* [Карточка эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
-* [Карточка главный Имиджевый баннер](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Соединительная карта Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Карта эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
+* [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
+* [Соединитечная карта Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 * [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
-Посмотрите [, что представляют собой карточки](~/task-modules-and-cards/what-are-cards.md) для обзора.
+Чтобы лучше понимать карты и их обзор, см. в этом [обзоре.](~/task-modules-and-cards/what-are-cards.md)
 
-Сведения о том, как использовать типы карт эскизов и главный Имиджевый баннер, приведены в разделе [Add cards and Card Actions](~/task-modules-and-cards/cards/cards-actions.md).
+Чтобы узнать, как использовать эскизы и типы карт героев, см. в добавлении [карт и действий карт.](~/task-modules-and-cards/cards/cards-actions.md)
 
-Дополнительную документацию по карте соединителей Office 365 можно узнать в статье [Использование соединителей карт office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card).
+Дополнительные сведения о карточке Соединители Office 365 см. в руб. [Использование карт соединители Office 365.](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 
 Список результатов отображается в пользовательском интерфейсе Microsoft Teams с предварительным просмотром каждого элемента. Предварительный просмотр создается одним из двух способов:
 
-* Использование `preview` свойства в `attachment` объекте. `preview` Вложение может быть только картой главный Имиджевый баннер или эскиза.
-* Извлекается из базового `title` `text`свойства и `image` свойства вложения. Они используются только в `preview` том случае, если свойство не задано, а эти свойства доступны.
+* Использование `preview` свойства в `attachment` объекте. Вложение `preview` может быть только карточкой Hero или Thumbnail.
+* Извлечено из основных свойств и `title` `text` свойств `image` вложения. Они используются только в том случае, если свойство не установлено и `preview` эти свойства доступны.
 
-Вы можете отобразить предварительный просмотр адаптивной карточки или карты соединителя Office 365 в списке результатов просто с помощью его свойства Preview. Это не требуется, если результаты уже главный Имиджевый баннер или эскизы страниц. Если вы используете предварительный просмотр вложения, это должна быть карта главный Имиджевый баннер или эскиза. Если свойство Preview не указано, предварительный просмотр карты завершается с ошибками, и ничего не отображается.
+Вы можете отобразить предварительный просмотр адаптивной карты или соединителя Office 365 в списке результатов с помощью свойства предварительного просмотра. Свойство предварительного просмотра не требуется, если результаты уже являются картами Hero или Thumbnail. Если вы используете вложение предварительного просмотра, оно должно быть либо карточкой Hero, либо Thumbnail. Если не указано свойство предварительного просмотра, предварительный просмотр карты не удается, и ничего не отображается.
 
 ### <a name="response-example"></a>Пример ответа
 
-# <a name="cnettabdotnet"></a>[ЯЗЫК C#/.НЕТ](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionResponse> OnTeamsMessagingExtensionQueryAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionQuery query, CancellationToken cancellationToken) 
@@ -147,7 +149,7 @@ protected override async Task<MessagingExtensionResponse> OnTeamsMessagingExtens
 }
 ```
 
-# <a name="typescriptnodejstabtypescript"></a>[TypeScript/Node. js](#tab/typescript)
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
 
 ```typescript
 class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
@@ -174,7 +176,7 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 }
 ```
 
-# <a name="jsontabjson"></a>[JSON](#tab/json)
+# <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -188,14 +190,14 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
           "sections": [
             {
               "activityTitle": "[85069]: Create a cool app",
-              "activityImage": "https://placekitten.com/200/200"
+              "activityImage&quot;: &quot;https://placekitten.com/200/200"
             },
             {
               "title": "Details",
               "facts": [
                 {
                   "name": "Assigned to:",
-                  "value": "[Larry Brown](mailto:larryb@example.com)"
+                  "value&quot;: &quot;[Larry Brown](mailto:larryb@example.com)"
                 },
                 {
                   "name": "State:",
@@ -310,9 +312,9 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 
 ## <a name="default-query"></a>Запрос по умолчанию
 
-Если для `initialRun` `true` манифеста задано значение в манифесте, Microsoft Teams по умолчанию выдает запрос "по умолчанию", когда пользователь впервые открывает расширение системы обмена сообщениями. Служба может ответить на этот запрос с помощью набора предварительно заполненных результатов. Это может быть полезно, если для команды поиска требуется проверка подлинности или Настройка, отображение недавно просмотренных элементов, избранного или любой другой информации, не зависящей от вводимых пользователем данных.
+Если вы `initialRun` заданы в манифесте, Microsoft Teams выдает запрос по умолчанию при первом открываемом пользователем `true` расширении обмена сообщениями.  Служба может отвечать на этот запрос набором предварительно заполненных результатов. Это полезно, когда команда поиска требует проверки подлинности или конфигурации, отображая недавно просмотримые элементы, избранное или любую другую информацию, которая не зависит от ввода пользователя.
 
-Запрос по умолчанию имеет ту же структуру, что и любой обычный запрос пользователя `name` , и `initialRun` `value` `true` для поля задано значение, равное приведенному ниже объекту.
+Запрос по умолчанию имеет ту же структуру, что и любой обычный запрос пользователя, при этом поле заказано и заказано, как показано `name` `initialRun` в следующем `value` `true` объекте:
 
 ```json
 {
@@ -335,15 +337,22 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 }
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="code-sample"></a>Пример кода
 
-Добавление проверки подлинности и/или конфигурации
+| Имя образца           | Описание | .NET    | Node.js   |   
+|:---------------------|:--------------|:---------|:--------|
+|Действие расширения обмена сообщениями teams| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
+|Командный поиск расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-* [Добавление проверки подлинности к расширению системы обмена сообщениями](~/messaging-extensions/how-to/add-authentication.md)
-* [Добавление конфигурации к расширению обмена сообщениями](~/messaging-extensions/how-to/add-configuration-page.md)
+## <a name="see-also"></a>См. также
 
-Развертывание конфигурации
+> [!div class="nextstepaction"]
+> [Добавление конфигурации в расширение обмена сообщениями](~/messaging-extensions/how-to/add-configuration-page.md)
+ 
+## <a name="next-step"></a>Следующий шаг
 
-* [Развертывание пакета приложений](~/concepts/deploy-and-publish/apps-upload.md)
+> [!div class="nextstepaction"]
+> [Добавление проверки подлинности в расширение обмена сообщениями](~/messaging-extensions/how-to/add-authentication.md)
 
-[!include[messaging-extension-learn-more](~/includes/messaging-extensions/learn-more.md)]
+
+

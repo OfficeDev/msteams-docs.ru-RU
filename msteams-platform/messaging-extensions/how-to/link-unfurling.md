@@ -1,46 +1,48 @@
 ---
-title: Развернуть ссылку
+title: Развертывание ссылки
 author: clearab
-description: Как выполнить размевание ссылок с расширением обмена сообщениями в приложении Microsoft Teams.
+description: Выполнение разгрузки ссылок с расширением обмена сообщениями в приложении Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 0d488638e63b8ec78bfa5bed8cf6f4f037883fb1
-ms.sourcegitcommit: bf61ae5ad2afa4efdb0311158184d0cbb9c40174
+ms.openlocfilehash: 628c5e760a4bc038443a20714e6960f1ffe8a2ad
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845639"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696234"
 ---
-# <a name="link-unfurling"></a>Развернуть ссылку
+# <a name="link-unfurling"></a>Развертывание ссылки
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-> [!NOTE]
-> В настоящее время unfurling ссылок не поддерживается на мобильных клиентах.
-
-При отображении ссылки ваше приложение может зарегистрироваться для получения действия, когда URL-адреса с определенным доменом в pasted в область `invoke` составить сообщение. The `invoke` will contain the full URL that was pasted into the compose message area, and you can respond with a card the user can *unfurl,* providing additional information or actions. Это очень похоже на команду поиска [с](~/messaging-extensions/how-to/search-commands/define-search-command.md)URL-адресом, который служит термином поиска.
-
-Расширение обмена сообщениями Azure DevOps использует размежевание ссылок для искомых URL-адресов, вкопив их в область сообщения составить, указывав на рабочий элемент. На снимке экрана ниже пользователь вошел в URL-адрес для элемента работы в Azure DevOps, который расширение обмена сообщениями разрешено в карточку.
-
-![Пример стирки ссылок](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
-
-## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление unfurling ссылки в манифест приложения
-
- Чтобы добавить размечение ссылок в манифест приложения, добавьте новый массив в раздел манифеста `messageHandlers` `composeExtensions` приложения JSON. Вы можете добавить массив с помощью App Studio или вручную. В списки доменов могут включались поддеревные знаки, `*.example.com` например. Это соответствует только одному сегменту домена; если вам нужно найти `a.b.example.com` соответствие, используйте `*.*.example.com` .
+В этом документе вы можете узнать, как добавить разгрузку ссылки в манифест приложения с помощью студии Приложения и вручную. Развертывание ссылки позволяет приложению получать действие `invoke` при вставке в область создания сообщения URL-адресов с определенным доменом. Полный URL-адрес, который был вклеен в область составить сообщение, и вы можете ответить карточкой, которую пользователь может разкрутить, предоставив дополнительные сведения `invoke` или действия. Это работает по аналогии с командой поиска с URL-адресом, который служит термином поиска.
 
 > [!NOTE]
-> Не добавляйте домены, которые находятся вне вашего контроля, напрямую или с помощью поддиаконов. Например, yourapp.onmicrosoft.com допустимый, но *.onmicrosoft.com не является допустимым. Кроме того, домены верхнего уровня запрещены. Например, *.com, *.org.
+> В настоящее время разгрузка ссылок не поддерживается в мобильных клиентах.
 
-### <a name="using-app-studio"></a>Использование App Studio
+Расширение обмена сообщениями Azure DevOps использует разгрузку ссылок, чтобы искать URL-адреса, вклеив их в область составить сообщение, указывав на рабочий элемент. На следующем изображении пользователь вклеил URL-адрес для элемента работы в Azure DevOps, который расширение обмена сообщениями решило в карточку:
 
-1. В App Studio на вкладке редактора манифеста загрузите манифест приложения.
-1. На странице **"Расширение обмена** сообщениями" добавьте домен,  который нужно найти, в разделе "Обработчики сообщений", как по снимку экрана ниже.
+![Пример разгрузки ссылок](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
 
-![Раздел обработчиков сообщений в App Studio](~/assets/images/link-unfurling.png)
+## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление разгрузки ссылок в манифест приложения
 
-### <a name="manually"></a>Вручную
+Чтобы добавить разгрузку ссылок в манифест приложения, добавьте новый массив в раздел `messageHandlers` `composeExtensions` манифеста приложения JSON. Массив можно добавлять либо с помощью App Studio, либо вручную. Списки домена могут включать, например, поддиайки. `*.example.com` Это соответствует ровно одному сегменту домена; если вам нужно `a.b.example.com` соответствовать, то используйте `*.*.example.com` .
 
-Чтобы расширение обмена сообщениями таким образом взаимодействовало со ссылками, сначала необходимо добавить массив в манифест приложения, как по примеру `messageHandlers` ниже. Этот пример не является полным [](~/resources/schema/manifest-schema.md) манифестом. Полный пример манифеста см. в справке по манифесту.
+> [!NOTE]
+> Donot добавить домены, которые не находятся в вашем контроле, непосредственно или с помощью подкрентов. Например, `yourapp.onmicrosoft.com` допустимо, `*.onmicrosoft.com` но не является допустимым. Кроме того, домены верхнего уровня запрещены. Например, `*.com` `*.org` .
+
+### <a name="add-link-unfurling-using-app-studio"></a>Добавление разгрузки ссылок с помощью App Studio
+
+1. Откройте **App Studio** от клиента Microsoft Teams и выберите вкладку Редактор **Манифеста.**
+1. Загрузите манифест приложения.
+1. На странице **Расширение обмена сообщениями** добавьте домен, который необходимо искать в разделе **Обработчики сообщений.** В следующем изображении объясняется процесс:
+
+    ![Раздел обработчики сообщений в App Studio](~/assets/images/link-unfurling.png)
+    
+### <a name="add-link-unfurling-manually"></a>Добавление разгрузки ссылок вручную
+
+Чтобы расширение обмена сообщениями взаимодействовало со ссылками, сначала необходимо добавить массив `messageHandlers` в манифест приложения. В следующем примере объясняется, как вручную добавлять разгрузку ссылок: 
+
 
 ```json
 ...
@@ -62,18 +64,20 @@ ms.locfileid: "49845639"
 ...
 ```
 
+Полный пример манифеста см. в [справке об манифесте.](~/resources/schema/manifest-schema.md)
+
 ## <a name="handle-the-composeextensionquerylink-invoke"></a>Обработка `composeExtension/queryLink` вызова
 
-После того как вы добавите домен для прослушивания манифеста приложения, вам потребуется обновить код веб-службы для обработки запроса на вызов. Используйте URL-адрес, который вы получаете, чтобы найти службу и создать ответ на карточку. Если вы отвечаете с помощью более одной карточки, будет использоваться только первая.
+После добавления домена в манифест приложения необходимо обновить код веб-службы для обработки запроса на вызов. Используйте полученный URL-адрес для поиска службы и создания ответа на карточку. Если вы отвечаете более чем одной картой, используется только первый ответ.
 
 Поддерживаются следующие типы карт:
 
-* [Эскиз карточки](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
-* [Карточка "Главного"](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Карточка соединители Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
-* [Адаптивная карточка](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
+* [Карта эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
+* [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
+* [Соединитечная карта Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
-См. [обзор карточек.](~/task-modules-and-cards/what-are-cards.md)
+### <a name="example"></a>Пример
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -120,7 +124,7 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Это пример отправленного `invoke` боту.
+Ниже приводится пример `invoke` отправленного боту:
 
 ```json
 {
@@ -132,7 +136,7 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 }
 ```
 
-Ниже приведен пример отклика.
+Ниже приводится пример ответа:
 
 ```json
 {
@@ -146,14 +150,14 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
           "sections": [
             {
               "activityTitle": "[85069]: Create a cool app",
-              "activityImage": "https://placekitten.com/200/200"
+              "activityImage&quot;: &quot;https://placekitten.com/200/200"
             },
             {
               "title": "Details",
               "facts": [
                 {
                   "name": "Assigned to:",
-                  "value": "[Larry Brown](mailto:larryb@example.com)"
+                  "value&quot;: &quot;[Larry Brown](mailto:larryb@example.com)"
                 },
                 {
                   "name": "State:",
@@ -170,3 +174,8 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 ```
 
 * * *
+
+## <a name="see-also"></a>См. также 
+
+> [!div class="nextstepaction"]
+> [Что такое карты](~/task-modules-and-cards/what-are-cards.md)

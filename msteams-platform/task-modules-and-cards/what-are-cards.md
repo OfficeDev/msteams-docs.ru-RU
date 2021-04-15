@@ -1,57 +1,58 @@
 ---
-title: Знакомство с карточками
-description: Описывает карточки и их использования в ботах, соединителах и расширениях обмена сообщениями
-keywords: соединители боты карточки обмена сообщениями
-ms.openlocfilehash: 00c649a1339f05b782e03a2c0db5cba2445f66bc
-ms.sourcegitcommit: 23ceb25d07a76f03ffe92cf1ac578b7c50b0bafc
+title: Введение карт
+description: Описание карт и их использования в ботах, соединителах и расширениях обмена сообщениями
+ms.topic: conceptual
+keywords: соединители боты-карты обмена сообщениями
+ms.openlocfilehash: c2fe0aea142a96643e33e16acc08bcfd8c33e92e
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777926"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696460"
 ---
 # <a name="cards"></a>Карточки
 
-*Карточка* — это контейнер пользовательского интерфейса для коротких или связанных сведений. Карточки могут иметь несколько свойств и вложений. Карточки могут включать кнопки, которые могут [запускать действия карточки.](~/task-modules-and-cards/cards/cards-actions.md)
+Карта *—* это контейнер пользовательского интерфейса (пользовательского интерфейса) для коротких или связанных частей информации. Карты могут иметь несколько свойств и вложений. Карты могут включать кнопки, которые могут вызывать [действия карты.](~/task-modules-and-cards/cards/cards-actions.md)
 
-## <a name="adaptive-cards"></a>Адаптивные карточки
+## <a name="adaptive-cards"></a>Адаптивные карты
 
-[Адаптивные карточки](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card) — это новая спецификация для разных продуктов в продуктах Майкрософт, включая ботов, Кортану, Outlook и Windows. Это рекомендуемый тип карточки для новой разработки Teams. Общие сведения о группе адаптивных карточек см. в [обзоре адаптивных карточек.](/adaptive-cards) Вы можете использовать адаптивные карточки в любом месте, где можно использовать существующие карточки Hero, Office365 и Thumbnail.
+[Адаптивные карты](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card) — это новая спецификация кросс-продукта для карт в продуктах Майкрософт, включая Bots, Cortana, Outlook и Windows. Это рекомендуемый тип карты для разработки новых команд. Общие сведения из группы адаптивных карт см. в [обзоре адаптивных карт.](/adaptive-cards) Адаптивные карты можно использовать везде, где можно использовать существующие карты Hero, карты Office365 и эскизы.
 
-Помимо адаптивных карточек, Teams поддерживает два других типа карточек:
+В дополнение к адаптивным картам Teams поддерживает два других типа карт:
 
-* Карточки соединители, используемые в составе соединитеев Office 365.
-* Простые карточки из структуры бота, такие как эскиз и карточки главного пальца.
+* Соединитетельные карты, используемые в составе соединители Office 365.
+* Простые карты из базы ботов, такие как эскизы и карточки героев.
 
-Эти типы карт более подробно описаны в справочнике [по карточкам Teams.](~/task-modules-and-cards/cards/cards-reference.md)
+Эти типы карт более подробно описаны в [справочной карточке Teams.](~/task-modules-and-cards/cards/cards-reference.md)
 
-Teams использует карточки в трех разных местах:
+Teams использует карты в трех разных местах:
 
 * Соединители
 * боты;
 * расширения для обмена сообщениями;
 
-## <a name="adaptive-cards-and-incoming-webhooks"></a>Адаптивные карточки и входящие веб-hooks
+## <a name="adaptive-cards-and-incoming-webhooks"></a>Адаптивные карты и входящие веб-окки
 
 > [!NOTE]
 >
 > ✔ Все встроенные элементы схемы адаптивной карточки, кроме `Action.Submit`, полностью поддерживаются.
 >
-> ✔ поддерживаемые [**действия: Action.OpenURL,**](https://adaptivecards.io/explorer/Action.OpenUrl.html) [**Action.ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html)и [**Action.ToggleVisibility.**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html)
+> ✔ поддерживаемые действия [**Action.OpenURL,**](https://adaptivecards.io/explorer/Action.OpenUrl.html) [**Action.ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html)и [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html).
 
-## <a name="cards-in-connectors"></a>Карточки в соединители
+## <a name="cards-in-connectors"></a>Карты в соединители
 
-Карточки сначала были определены как часть Outlook и Office 365 и используются как часть соединители Office 365. Как и многие приложения Office 365, Teams поддерживает соединители. Вы можете узнать больше о соединителках в соединителках [Office 365](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md)для Microsoft Teams и найти спецификацию карточек в соединителках в справочнике по карточкам сообщений с [действиями.](/outlook/actionable-messages/card-reference)
+Сначала карты были определены как часть Outlook и Office 365 и используются в составе соединители Office 365. Как и многие приложения Office 365, Teams поддерживает соединители. Дополнительные данные о соединителках [в Office 365 соединители](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md)для Microsoft Teams, а также спецификации для карт в соединителках в справочной карточке [actionable message.](/outlook/actionable-messages/card-reference)
 
-## <a name="cards-in-bots"></a>Карточки в ботах
+## <a name="cards-in-bots"></a>Карты в ботах
 
-Microsoft Bot Framework расширила спецификацию карточек, добавив набор предопределельных карточек, которые боты могут использовать в сообщениях ботов. Teams поддерживает ботов с помощью Bot Framework, но поддерживает несколько другой набор этих карточек. Общие сведения о карточках в Bot Framework можно найти в файле "Добавление вложений в виде [информативных карточек в сообщения".](/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) В Teams такие карточки *называются простыми* карточками.
+Microsoft Bot Framework расширила спецификацию карт, добавив набор предопределяемых карт, которые боты могли использовать в качестве части бот-сообщений. Teams поддерживает ботов с помощью Bot Framework, но поддерживает несколько другой набор этих карт. Общие сведения о картах в Bot Framework можно найти в [приложении Add rich card attachments to messages.](/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) Эти карты в Teams *называются простыми* картами.
 
-Боты в Teams могут использовать любые типы карт: простые, соединительные или адаптивные. Карточки, поддерживаемые ботами в Teams, подробно описаны в справочнике по [карточкам Teams.](~/task-modules-and-cards/cards/cards-reference.md)  
+Боты в Teams могут использовать любой тип карты: простой, соединительные или адаптивные. Карты, поддерживаемые ботами в Teams, подробно описаны в [справке по картам Teams.](~/task-modules-and-cards/cards/cards-reference.md)  
 
-## <a name="cards-in-messaging-extensions"></a>Карточки в расширениях обмена сообщениями
+## <a name="cards-in-messaging-extensions"></a>Карты в расширениях обмена сообщениями
 
-[Расширения обмена сообщениями также](~/messaging-extensions/what-are-messaging-extensions.md) могут возвращать карточку. Расширения обмена сообщениями могут использовать любые типы карт: простые, соединительные или адаптивные. Эти карточки находятся в справочнике [по карточкам Teams.](~/task-modules-and-cards/cards/cards-reference.md)
+[Расширения обмена сообщениями также](~/messaging-extensions/what-are-messaging-extensions.md) могут возвращать карточку. Расширения обмена сообщениями могут использовать любые типы карт: простые, соединительные или адаптивные. Эти карточки находятся в [справке по карточкам Teams.](~/task-modules-and-cards/cards/cards-reference.md)
 
-## <a name="card-reference"></a>Справочник по карточкам
+## <a name="card-reference"></a>Ссылка на карточку
 
-Все карты, используемые Teams, перечислены в справочнике [по карточкам Teams.](~/task-modules-and-cards/cards/cards-reference.md) В этом справочнике также описываются различия между карточками Bot Framework и карточками в Teams.
+Все карты, используемые Teams, перечислены в [справочной карточке Teams.](~/task-modules-and-cards/cards/cards-reference.md) В этой ссылке также описываются различия между картами Bot Framework и картами в Teams.

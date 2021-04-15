@@ -3,12 +3,12 @@ title: Начало работы с App Studio для Microsoft Teams
 description: Начните создавать эффективные приложения в Microsoft Teams с помощью App Studio
 keywords: начало работы app studio teams
 ms.topic: overview
-ms.openlocfilehash: f9b1763fdd616485a08a059a89f6792cbabfce54
-ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
+ms.openlocfilehash: d275e78909fe35a6032bf67cb7454396f3dbd7af
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634511"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696306"
 ---
 # <a name="quickly-develop-apps-with-app-studio-for-microsoft-teams"></a>Быстрая разработка приложений с помощью App Studio для Microsoft Teams
 
@@ -101,6 +101,9 @@ App Studio — это приложение Teams, доступное в мага
 * имя параметра в том виде, в котором оно отображается в клиенте Teams и включено в запрос пользователя
 * понятное название
 * необязательное описание
+
+> [!NOTE]
+> Чтобы создать расширение обмена сообщениями с помощью студии приложений, см. в [приложении create messaging extension using app studio.](~/resources/create-messaging-extension-using-appstudio.md)
 
 #### <a name="test-and-distribute"></a>Тестирование и распространение
 

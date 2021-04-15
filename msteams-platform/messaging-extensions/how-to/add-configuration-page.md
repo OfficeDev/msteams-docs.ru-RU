@@ -1,23 +1,29 @@
 ---
-title: Добавление страницы конфигурации к своему расширению обмена сообщениями
+title: Добавление страницы конфигурации в расширение обмена сообщениями
 author: clearab
-description: Добавление страницы конфигурации к расширению системы обмена сообщениями
+description: Добавление страницы конфигурации в расширение обмена сообщениями
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 4d3ccf000f5a0a0296f970650d63bd978b1eaaa5
-ms.sourcegitcommit: 576a4768b835422545cb6b6b3f75dce8318ea02d
+ms.openlocfilehash: e927e9753ad998ecc748e7b71fddd230f0b264d1
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896515"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696208"
 ---
-# <a name="add-a-configuration-page-to-your-messaging-extension"></a>Добавление страницы конфигурации к своему расширению обмена сообщениями
+# <a name="add-a-configuration-page-to-your-messaging-extension"></a>Добавление страницы конфигурации в расширение обмена сообщениями
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-## <a name="bot-framework-samples"></a>Примеры для Bot Framework
+В этом документе содержится руководство по созданию расширений обмена сообщениями, включающих страницу конфигурации и проверку подлинности бот-службы с помощью образцов конфигурации Bot Framework Teams. В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.
 
-Конфигурация проверки подлинности поиска Teams для [**JavaScript/Node. js**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) и [**C-диез/дотнеткоре**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) , которая находится на сайте GitHub, показывает, как создавать расширения обмена сообщениями, включающие страницу конфигурации и проверку подлинности на основе службы Bot. Кроме того, в примерах показано, как создавать расширения сообщений, которые принимают поисковые запросы и возвращают результаты после того, как пользователь выполнил вход.
+## <a name="code-sample"></a>Пример кода
+
+| Имя образца | Описание | .NET | Node.js|   
+|:---------------------|:--------------|:---------|:--------|
+| Bot Framework Teams поиск образцов конфигурации Auth  | Демонстрация создания расширений обмена сообщениями, включающих страницу конфигурации и проверку подлинности службы ботов. В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)|
+
+## <a name="additional-code-sample"></a>Дополнительный пример кода
 
 > [!div class="nextstepaction"]
-> [Просмотр дополнительных примеров ленты на сайте GitHub](https://github.com/microsoft/BotBuilder-Samples)
+> [Просмотр дополнительных примеров bot Framework в GitHub](https://github.com/microsoft/BotBuilder-Samples)
