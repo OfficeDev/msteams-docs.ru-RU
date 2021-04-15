@@ -4,46 +4,47 @@ author: clearab
 description: Описывает, как реагировать на отправку действия модуля задач из команды действий расширения обмена сообщениями.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: fecc0ace5f767da3764529a9e8a590b37e547bb0
-ms.sourcegitcommit: 1ce74ed167bb81bf09f7f6f8d518093efafb549e
+ms.openlocfilehash: af2bbbbe6ffff224f5b74c9b1472ba3cb21effc0
+ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50827944"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51696220"
 ---
-# <a name="respond-to-the-task-module-submit-action"></a><span data-ttu-id="3dafd-103">Ответ на действие отправки модуля задач</span><span class="sxs-lookup"><span data-stu-id="3dafd-103">Respond to the task module submit action</span></span>
+# <a name="respond-to-the-task-module-submit-action"></a><span data-ttu-id="89805-103">Ответ на действие отправки модуля задач</span><span class="sxs-lookup"><span data-stu-id="89805-103">Respond to the task module submit action</span></span>
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-<span data-ttu-id="3dafd-104">После отправки модуля задач веб-служба получает сообщение вызова с командным `composeExtension/submitAction` ИД и значениями параметров.</span><span class="sxs-lookup"><span data-stu-id="3dafd-104">After a user submits the task module, your web service receives a `composeExtension/submitAction` invoke message with the command ID and parameter values.</span></span> <span data-ttu-id="3dafd-105">У приложения есть пять секунд для ответа на вызов,  в противном случае пользователь получает сообщение об ошибке, которое не может достичь приложения, а любой ответ на вызов игнорируется клиентом Teams.</span><span class="sxs-lookup"><span data-stu-id="3dafd-105">Your app has five seconds to respond to the invoke, otherwise the user receives an error message **Unable to reach the app** and any reply to the invoke is ignored by the Teams client.</span></span>
+<span data-ttu-id="89805-104">В этом документе вы можете узнать, как ваше приложение реагирует на команды действий, например на отправку действия модуля задач пользователя.</span><span class="sxs-lookup"><span data-stu-id="89805-104">This document guides you on how your app responds to the action commands, such as user's task module submit action.</span></span>
+<span data-ttu-id="89805-105">После отправки модуля задач веб-служба получает сообщение вызова с командным `composeExtension/submitAction` ИД и значениями параметров.</span><span class="sxs-lookup"><span data-stu-id="89805-105">After a user submits the task module, your web service receives a `composeExtension/submitAction` invoke message with the command ID and parameter values.</span></span> <span data-ttu-id="89805-106">У приложения есть пять секунд для ответа на вызов, в противном случае пользователь получает сообщение об ошибке, не достигаемом **приложения,** и любой ответ на вызов игнорируется клиентом Teams.</span><span class="sxs-lookup"><span data-stu-id="89805-106">Your app has five seconds to respond to the invoke, otherwise the user receives an error message **Unable to reach the app**, and any reply to the invoke is ignored by the Teams client.</span></span>
 
-<span data-ttu-id="3dafd-106">У вас есть следующие параметры для ответа:</span><span class="sxs-lookup"><span data-stu-id="3dafd-106">You have the following options for responding:</span></span>
+<span data-ttu-id="89805-107">У вас есть следующие варианты ответа:</span><span class="sxs-lookup"><span data-stu-id="89805-107">You have the following options to respond:</span></span>
 
-* <span data-ttu-id="3dafd-107">Нет ответа . Вы можете использовать действие отправки для запуска процесса во внешней системе и не предоставлять пользователю никаких отзывов.</span><span class="sxs-lookup"><span data-stu-id="3dafd-107">No response - You can choose to use the submit action to trigger a process in an external system, and not provide any feedback to the user.</span></span> <span data-ttu-id="3dafd-108">Это может быть полезно для длительных процессов, и вы можете предоставить обратную связь другим способом (например, с проактивным [сообщением.](~/bots/how-to/conversations/send-proactive-messages.md)</span><span class="sxs-lookup"><span data-stu-id="3dafd-108">This can be useful for long-running processes, and you may choose to provide feedback in another manner (for example, with a [proactive message](~/bots/how-to/conversations/send-proactive-messages.md).</span></span>
-* <span data-ttu-id="3dafd-109">[Другой модуль задач](#respond-with-another-task-module) — вы можете отвечать дополнительным модулем задач в рамках многоэтапного взаимодействия.</span><span class="sxs-lookup"><span data-stu-id="3dafd-109">[Another task module](#respond-with-another-task-module) - You can respond with an additional task module as part of a multi-step interaction.</span></span>
-* <span data-ttu-id="3dafd-110">[Ответ на](#respond-with-a-card-inserted-into-the-compose-message-area) карточку . Вы можете отвечать карточкой, с помощью которую пользователь может взаимодействовать и/или вставлять в сообщение.</span><span class="sxs-lookup"><span data-stu-id="3dafd-110">[Card response](#respond-with-a-card-inserted-into-the-compose-message-area) - You can respond with a card that the user can then interact with and/or insert into a message.</span></span>
-* <span data-ttu-id="3dafd-111">[Адаптивная карта от бота](#bot-response-with-adaptive-card) — вставьте адаптивную карточку непосредственно в беседу.</span><span class="sxs-lookup"><span data-stu-id="3dafd-111">[Adaptive Card from bot](#bot-response-with-adaptive-card) - Insert an Adaptive Card directly into the conversation.</span></span>
-* [<span data-ttu-id="3dafd-112">Запрос на проверку подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="3dafd-112">Request the user authenticate</span></span>](~/messaging-extensions/how-to/add-authentication.md)
-* [<span data-ttu-id="3dafd-113">Запрос на предоставление пользователем дополнительной конфигурации</span><span class="sxs-lookup"><span data-stu-id="3dafd-113">Request the user provide additional configuration</span></span>](~/messaging-extensions/how-to/add-configuration-page.md)
+* <span data-ttu-id="89805-108">Нет ответа. Используйте действие отправки, чтобы вызвать процесс во внешней системе и не предоставлять пользователю никаких отзывов.</span><span class="sxs-lookup"><span data-stu-id="89805-108">No response: Use the submit action to trigger a process in an external system, and not provide any feedback to the user.</span></span> <span data-ttu-id="89805-109">Это полезно для длительных процессов, и вы можете выбрать, чтобы предоставить обратную связь поочередно.</span><span class="sxs-lookup"><span data-stu-id="89805-109">This is useful for long-running processes, and you can select to provide feedback alternately.</span></span> <span data-ttu-id="89805-110">Например, вы можете дать обратную связь с помощью [активного сообщения.](~/bots/how-to/conversations/send-proactive-messages.md)</span><span class="sxs-lookup"><span data-stu-id="89805-110">For example, you can give feedback with a [proactive message](~/bots/how-to/conversations/send-proactive-messages.md).</span></span>
+* <span data-ttu-id="89805-111">[Другой модуль задач.](#respond-with-another-task-module)Вы можете отвечать дополнительным модулем задач в рамках многоэтапного взаимодействия.</span><span class="sxs-lookup"><span data-stu-id="89805-111">[Another task module](#respond-with-another-task-module): You can respond with an additional task module as part of a multi-step interaction.</span></span>
+* <span data-ttu-id="89805-112">[Ответ на карточку.](#respond-with-a-card-inserted-into-the-compose-message-area)Вы можете отвечать карточкой, с помощью которую пользователь может взаимодействовать или вставлять в сообщение.</span><span class="sxs-lookup"><span data-stu-id="89805-112">[Card response](#respond-with-a-card-inserted-into-the-compose-message-area): You can respond with a card that the user can interact with or insert into a message.</span></span>
+* <span data-ttu-id="89805-113">[Адаптивная карта из бота.](#bot-response-with-adaptive-card)Вставьте адаптивную карточку непосредственно в беседу.</span><span class="sxs-lookup"><span data-stu-id="89805-113">[Adaptive Card from bot](#bot-response-with-adaptive-card): Insert an Adaptive Card directly into the conversation.</span></span>
+* <span data-ttu-id="89805-114">[Запрос пользователя на проверку подлинности.](~/messaging-extensions/how-to/add-authentication.md)</span><span class="sxs-lookup"><span data-stu-id="89805-114">[Request the user to authenticate](~/messaging-extensions/how-to/add-authentication.md).</span></span>
+* <span data-ttu-id="89805-115">[Запрос пользователя для предоставления дополнительной конфигурации.](~/messaging-extensions/how-to/add-configuration-page.md)</span><span class="sxs-lookup"><span data-stu-id="89805-115">[Request the user to provide additional configuration](~/messaging-extensions/how-to/add-configuration-page.md).</span></span>
 
-<span data-ttu-id="3dafd-114">Для проверки подлинности или настройки после завершения потока исходный вызов будет повторно отправлен в веб-службу.</span><span class="sxs-lookup"><span data-stu-id="3dafd-114">For authentication or configuration, after the user completes the flow the original invoke is re-sent to your web service.</span></span> <span data-ttu-id="3dafd-115">В следующей таблице показано, какие типы ответов доступны в зависимости от расположения ссылок расширения `commandContext` обмена сообщениями:</span><span class="sxs-lookup"><span data-stu-id="3dafd-115">The following table shows which types of responses are available based on the invoke location `commandContext` of the messaging extension:</span></span> 
+<span data-ttu-id="89805-116">Для проверки подлинности или настройки после завершения процесса пользователь вызывает повторное вызов в веб-службу.</span><span class="sxs-lookup"><span data-stu-id="89805-116">For authentication or configuration, after the user completes the process, the original invoke is resent to your web service.</span></span> <span data-ttu-id="89805-117">В следующей таблице показано, какие типы ответов доступны в зависимости от расположения ссылок расширения `commandContext` обмена сообщениями:</span><span class="sxs-lookup"><span data-stu-id="89805-117">The following table shows which types of responses are available based on the invoke location `commandContext` of the messaging extension:</span></span> 
 
-|<span data-ttu-id="3dafd-116">Тип ответа</span><span class="sxs-lookup"><span data-stu-id="3dafd-116">Response Type</span></span> | <span data-ttu-id="3dafd-117">составить</span><span class="sxs-lookup"><span data-stu-id="3dafd-117">compose</span></span> | <span data-ttu-id="3dafd-118">панель команд</span><span class="sxs-lookup"><span data-stu-id="3dafd-118">command bar</span></span> | <span data-ttu-id="3dafd-119">message</span><span class="sxs-lookup"><span data-stu-id="3dafd-119">message</span></span> |
+|<span data-ttu-id="89805-118">Тип ответа</span><span class="sxs-lookup"><span data-stu-id="89805-118">Response Type</span></span> | <span data-ttu-id="89805-119">Создание</span><span class="sxs-lookup"><span data-stu-id="89805-119">Compose</span></span> | <span data-ttu-id="89805-120">Командная планка</span><span class="sxs-lookup"><span data-stu-id="89805-120">Command bar</span></span> | <span data-ttu-id="89805-121">Сообщение</span><span class="sxs-lookup"><span data-stu-id="89805-121">Message</span></span> |
 |--------------|:-------------:|:-------------:|:---------:|
-|<span data-ttu-id="3dafd-120">Ответ на карточку</span><span class="sxs-lookup"><span data-stu-id="3dafd-120">Card response</span></span> | <span data-ttu-id="3dafd-121">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-121">x</span></span> | <span data-ttu-id="3dafd-122">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-122">x</span></span> | <span data-ttu-id="3dafd-123">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-123">x</span></span> |
-|<span data-ttu-id="3dafd-124">Другой модуль задач</span><span class="sxs-lookup"><span data-stu-id="3dafd-124">Another task module</span></span> | <span data-ttu-id="3dafd-125">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-125">x</span></span> | <span data-ttu-id="3dafd-126">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-126">x</span></span> | <span data-ttu-id="3dafd-127">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-127">x</span></span> |
-|<span data-ttu-id="3dafd-128">Бот с адаптивной картой</span><span class="sxs-lookup"><span data-stu-id="3dafd-128">Bot with Adaptive Card</span></span> | <span data-ttu-id="3dafd-129">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-129">x</span></span> |  | <span data-ttu-id="3dafd-130">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-130">x</span></span> |
-| <span data-ttu-id="3dafd-131">Нет ответа</span><span class="sxs-lookup"><span data-stu-id="3dafd-131">No response</span></span> | <span data-ttu-id="3dafd-132">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-132">x</span></span> | <span data-ttu-id="3dafd-133">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-133">x</span></span> | <span data-ttu-id="3dafd-134">x</span><span class="sxs-lookup"><span data-stu-id="3dafd-134">x</span></span> |
+|<span data-ttu-id="89805-122">Ответ на карточку</span><span class="sxs-lookup"><span data-stu-id="89805-122">Card response</span></span> | <span data-ttu-id="89805-123">✔</span><span class="sxs-lookup"><span data-stu-id="89805-123">✔</span></span> | <span data-ttu-id="89805-124">✔</span><span class="sxs-lookup"><span data-stu-id="89805-124">✔</span></span> | <span data-ttu-id="89805-125">✔</span><span class="sxs-lookup"><span data-stu-id="89805-125">✔</span></span> |
+|<span data-ttu-id="89805-126">Другой модуль задач</span><span class="sxs-lookup"><span data-stu-id="89805-126">Another task module</span></span> | <span data-ttu-id="89805-127">✔</span><span class="sxs-lookup"><span data-stu-id="89805-127">✔</span></span> | <span data-ttu-id="89805-128">✔</span><span class="sxs-lookup"><span data-stu-id="89805-128">✔</span></span> | <span data-ttu-id="89805-129">✔</span><span class="sxs-lookup"><span data-stu-id="89805-129">✔</span></span> |
+|<span data-ttu-id="89805-130">Бот с адаптивной картой</span><span class="sxs-lookup"><span data-stu-id="89805-130">Bot with Adaptive Card</span></span> | <span data-ttu-id="89805-131">✔</span><span class="sxs-lookup"><span data-stu-id="89805-131">✔</span></span> | <span data-ttu-id="89805-132">x</span><span class="sxs-lookup"><span data-stu-id="89805-132">x</span></span> | <span data-ttu-id="89805-133">✔</span><span class="sxs-lookup"><span data-stu-id="89805-133">✔</span></span> |
+| <span data-ttu-id="89805-134">Нет ответа</span><span class="sxs-lookup"><span data-stu-id="89805-134">No response</span></span> | <span data-ttu-id="89805-135">✔</span><span class="sxs-lookup"><span data-stu-id="89805-135">✔</span></span> | <span data-ttu-id="89805-136">✔</span><span class="sxs-lookup"><span data-stu-id="89805-136">✔</span></span> | <span data-ttu-id="89805-137">✔</span><span class="sxs-lookup"><span data-stu-id="89805-137">✔</span></span> |
 
 > [!NOTE]
-> * <span data-ttu-id="3dafd-135">Когда вы выбираете **Action.Submit** через карточки ME, он отправляет действие вызова с именем **composeExtension,** где значение равно обычной полезной нагрузке.</span><span class="sxs-lookup"><span data-stu-id="3dafd-135">When you select **Action.Submit** through ME cards, it sends invoke activity with the name **composeExtension**, where the value is equal to the usual payload.</span></span>
-> * <span data-ttu-id="3dafd-136">При выборе **Action.Submit** с помощью беседы вы получаете действие сообщения с именем **onCardButtonClicked,** где значение равно обычной полезной нагрузке.</span><span class="sxs-lookup"><span data-stu-id="3dafd-136">When you select **Action.Submit** through conversation, you receive message activity with the name **onCardButtonClicked**, where the value is equal to the usual payload.</span></span>
+> * <span data-ttu-id="89805-138">Когда вы выбираете **Action.Submit** через карточки ME, он отправляет действие вызова с именем **composeExtension,** где значение равно обычной полезной нагрузке.</span><span class="sxs-lookup"><span data-stu-id="89805-138">When you select **Action.Submit** through ME cards, it sends invoke activity with the name **composeExtension**, where the value is equal to the usual payload.</span></span>
+> * <span data-ttu-id="89805-139">При выборе **Action.Submit** с помощью беседы вы получаете действие сообщения с именем **onCardButtonClicked,** где значение равно обычной полезной нагрузке.</span><span class="sxs-lookup"><span data-stu-id="89805-139">When you select **Action.Submit** through conversation, you receive message activity with the name **onCardButtonClicked**, where the value is equal to the usual payload.</span></span>
 
-## <a name="the-submitaction-invoke-event"></a><span data-ttu-id="3dafd-137">Событие вызовов submitAction</span><span class="sxs-lookup"><span data-stu-id="3dafd-137">The submitAction invoke event</span></span>
+## <a name="the-submitaction-invoke-event"></a><span data-ttu-id="89805-140">Событие вызовов submitAction</span><span class="sxs-lookup"><span data-stu-id="89805-140">The submitAction invoke event</span></span>
 
-<span data-ttu-id="3dafd-138">Примеры получения сообщения вызова приводятся следующим образом:</span><span class="sxs-lookup"><span data-stu-id="3dafd-138">Examples of receiving the invoke message are as follows:</span></span>
+<span data-ttu-id="89805-141">Примеры получения сообщения вызова приводятся следующим образом:</span><span class="sxs-lookup"><span data-stu-id="89805-141">Examples of receiving the invoke message are as follows:</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="3dafd-139">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="3dafd-139">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="89805-142">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="89805-142">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(
@@ -52,7 +53,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejs"></a>[<span data-ttu-id="3dafd-140">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="3dafd-140">JavaScript/Node.js</span></span>](#tab/javascript)
+# <a name="javascriptnodejs"></a>[<span data-ttu-id="89805-143">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="89805-143">JavaScript/Node.js</span></span>](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -65,9 +66,9 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="3dafd-141">JSON</span><span class="sxs-lookup"><span data-stu-id="3dafd-141">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="89805-144">JSON</span><span class="sxs-lookup"><span data-stu-id="89805-144">JSON</span></span>](#tab/json)
 
-<span data-ttu-id="3dafd-142">Это пример получаемого объекта JSON.</span><span class="sxs-lookup"><span data-stu-id="3dafd-142">This is an example of the JSON object you receive.</span></span> <span data-ttu-id="3dafd-143">Параметр `commandContext` указывает, откуда было вызвано расширение обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="3dafd-143">The `commandContext` parameter indicates where your messaging extension was triggered from.</span></span> <span data-ttu-id="3dafd-144">Объект содержит поля формы в качестве `data` параметров и значения, которые пользователь представил.</span><span class="sxs-lookup"><span data-stu-id="3dafd-144">The `data` object contains the fields on the form as parameters, and the values the user submitted.</span></span> <span data-ttu-id="3dafd-145">Объект JSON здесь сокращен, чтобы выделить наиболее релевантные поля.</span><span class="sxs-lookup"><span data-stu-id="3dafd-145">The JSON object here is shortened to highlight the most relevant fields.</span></span>
+<span data-ttu-id="89805-145">Это пример получаемого объекта JSON.</span><span class="sxs-lookup"><span data-stu-id="89805-145">This is an example of the JSON object that you receive.</span></span> <span data-ttu-id="89805-146">Параметр `commandContext` указывает, откуда было вызвано расширение обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="89805-146">The `commandContext` parameter indicates where your messaging extension was triggered from.</span></span> <span data-ttu-id="89805-147">Объект содержит поля формы в качестве `data` параметров и значения, которые пользователь представил.</span><span class="sxs-lookup"><span data-stu-id="89805-147">The `data` object contains the fields on the form as parameters, and the values the user submitted.</span></span> <span data-ttu-id="89805-148">Объект JSON здесь сокращен, чтобы выделить наиболее релевантные поля.</span><span class="sxs-lookup"><span data-stu-id="89805-148">The JSON object here is shortened to highlight the most relevant fields.</span></span>
 
 ```json
 {
@@ -95,11 +96,11 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-## <a name="respond-with-a-card-inserted-into-the-compose-message-area"></a><span data-ttu-id="3dafd-146">Ответьте карточкой, вставленной в область составить сообщение</span><span class="sxs-lookup"><span data-stu-id="3dafd-146">Respond with a card inserted into the compose message area</span></span>
+## <a name="respond-with-a-card-inserted-into-the-compose-message-area"></a><span data-ttu-id="89805-149">Ответьте карточкой, вставленной в область составить сообщение</span><span class="sxs-lookup"><span data-stu-id="89805-149">Respond with a card inserted into the compose message area</span></span>
 
-<span data-ttu-id="3dafd-147">Наиболее распространенный способ ответа на запрос — это карта, вставленная в область `composeExtension/submitAction` составить сообщение.</span><span class="sxs-lookup"><span data-stu-id="3dafd-147">The most common way to respond to the `composeExtension/submitAction` request is with a card inserted into the compose message area.</span></span> <span data-ttu-id="3dafd-148">Затем пользователь может отправить карточку в беседу.</span><span class="sxs-lookup"><span data-stu-id="3dafd-148">The user can then choose to submit the card to the conversation.</span></span> <span data-ttu-id="3dafd-149">Дополнительные сведения об использовании карт см. [в карточках и действиях карт.](~/task-modules-and-cards/cards/cards-actions.md)</span><span class="sxs-lookup"><span data-stu-id="3dafd-149">For more information on using cards see [cards and card actions](~/task-modules-and-cards/cards/cards-actions.md).</span></span>
+<span data-ttu-id="89805-150">Наиболее распространенный способ ответа на запрос — это карта, вставленная в область `composeExtension/submitAction` составить сообщение.</span><span class="sxs-lookup"><span data-stu-id="89805-150">The most common way to respond to the `composeExtension/submitAction` request is with a card inserted into the compose message area.</span></span> <span data-ttu-id="89805-151">Пользователь передает карточку в беседу.</span><span class="sxs-lookup"><span data-stu-id="89805-151">The user submits the card to the conversation.</span></span> <span data-ttu-id="89805-152">Дополнительные сведения об использовании карт см. в [карточках и действиях карт.](~/task-modules-and-cards/cards/cards-actions.md)</span><span class="sxs-lookup"><span data-stu-id="89805-152">For more information on using cards, see [cards and card actions](~/task-modules-and-cards/cards/cards-actions.md).</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="3dafd-150">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="3dafd-150">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="89805-153">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="89805-153">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(
@@ -132,7 +133,7 @@ var card = new HeroCard
 }
 ```
 
-# <a name="javascriptnodejs"></a>[<span data-ttu-id="3dafd-151">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="3dafd-151">JavaScript/Node.js</span></span>](#tab/javascript)
+# <a name="javascriptnodejs"></a>[<span data-ttu-id="89805-154">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="89805-154">JavaScript/Node.js</span></span>](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -155,7 +156,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="3dafd-152">JSON</span><span class="sxs-lookup"><span data-stu-id="3dafd-152">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="89805-155">JSON</span><span class="sxs-lookup"><span data-stu-id="89805-155">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -186,36 +187,42 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-## <a name="respond-with-another-task-module"></a><span data-ttu-id="3dafd-153">Ответ с помощью другого модуля задач</span><span class="sxs-lookup"><span data-stu-id="3dafd-153">Respond with another task module</span></span>
+## <a name="respond-with-another-task-module"></a><span data-ttu-id="89805-156">Ответ с помощью другого модуля задач</span><span class="sxs-lookup"><span data-stu-id="89805-156">Respond with another task module</span></span>
 
-<span data-ttu-id="3dafd-154">Вы можете ответить на событие с `submitAction` помощью дополнительного модуля задач.</span><span class="sxs-lookup"><span data-stu-id="3dafd-154">You can choose to respond to the `submitAction` event with an additional task module.</span></span> <span data-ttu-id="3dafd-155">Это может быть полезно, если:</span><span class="sxs-lookup"><span data-stu-id="3dafd-155">This can be useful when:</span></span>
+<span data-ttu-id="89805-157">Вы можете выбрать, чтобы ответить на `submitAction` событие с помощью дополнительного модуля задач.</span><span class="sxs-lookup"><span data-stu-id="89805-157">You can select to respond to the `submitAction` event with an additional task module.</span></span> <span data-ttu-id="89805-158">Это полезно, когда:</span><span class="sxs-lookup"><span data-stu-id="89805-158">This is useful when:</span></span>
 
-* <span data-ttu-id="3dafd-156">Необходимо собирать большие объемы информации.</span><span class="sxs-lookup"><span data-stu-id="3dafd-156">You need to collect large amounts of information.</span></span>
-* <span data-ttu-id="3dafd-157">При необходимости динамического изменения собираемой информации на основе ввода пользователя</span><span class="sxs-lookup"><span data-stu-id="3dafd-157">If you need to dynamically change what information you are collecting based on user input</span></span>
-* <span data-ttu-id="3dafd-158">Если необходимо проверить сведения, представленные пользователем, и потенциально повторно отправить форму сообщением об ошибке, если что-то не так.</span><span class="sxs-lookup"><span data-stu-id="3dafd-158">If you need to validate the information submitted by the user and potentially resend the form with an error message if something is wrong.</span></span> 
+* <span data-ttu-id="89805-159">Необходимо собирать большие объемы информации.</span><span class="sxs-lookup"><span data-stu-id="89805-159">You need to collect large amounts of information.</span></span>
+* <span data-ttu-id="89805-160">Необходимо динамически изменить собираемую информацию на основе ввода пользователя.</span><span class="sxs-lookup"><span data-stu-id="89805-160">You need to dynamically change the information you are collecting based on user input.</span></span>
+* <span data-ttu-id="89805-161">Необходимо проверить сведения, представленные пользователем, и повторно отправить форму с сообщением об ошибке, если что-то не так.</span><span class="sxs-lookup"><span data-stu-id="89805-161">You need to validate the information submitted by the user and resend the form with an error message if something is wrong.</span></span> 
 
-<span data-ttu-id="3dafd-159">Метод ответа такой же, как [и ответ на начальное `fetchTask` событие.](~/messaging-extensions/how-to/action-commands/create-task-module.md)</span><span class="sxs-lookup"><span data-stu-id="3dafd-159">The method for response is the same as [responding to the initial `fetchTask` event](~/messaging-extensions/how-to/action-commands/create-task-module.md).</span></span> <span data-ttu-id="3dafd-160">Если вы используете SDK Bot Framework, для отправки действий запускается одно и то же событие.</span><span class="sxs-lookup"><span data-stu-id="3dafd-160">If you are using the Bot Framework SDK the same event triggers for both submit actions.</span></span> <span data-ttu-id="3dafd-161">Это означает, что необходимо добавить логику, которая определяет правильный ответ.</span><span class="sxs-lookup"><span data-stu-id="3dafd-161">This means you must add logic which determines the correct response.</span></span>
+<span data-ttu-id="89805-162">Метод ответа такой же, как [и ответ на начальное `fetchTask` событие.](~/messaging-extensions/how-to/action-commands/create-task-module.md)</span><span class="sxs-lookup"><span data-stu-id="89805-162">The method for response is the same as [responding to the initial `fetchTask` event](~/messaging-extensions/how-to/action-commands/create-task-module.md).</span></span> <span data-ttu-id="89805-163">Если вы используете SDK Bot Framework, для отправки действий запускается одно и то же событие.</span><span class="sxs-lookup"><span data-stu-id="89805-163">If you are using the Bot Framework SDK the same event triggers for both submit actions.</span></span> <span data-ttu-id="89805-164">Чтобы сделать эту работу, необходимо добавить логику, которая определяет правильный ответ.</span><span class="sxs-lookup"><span data-stu-id="89805-164">To make this work, you must add logic that determines the correct response.</span></span>
 
-## <a name="bot-response-with-adaptive-card"></a><span data-ttu-id="3dafd-162">Ответ бота с адаптивной картой</span><span class="sxs-lookup"><span data-stu-id="3dafd-162">Bot response with Adaptive Card</span></span>
+## <a name="bot-response-with-adaptive-card"></a><span data-ttu-id="89805-165">Ответ бота с адаптивной картой</span><span class="sxs-lookup"><span data-stu-id="89805-165">Bot response with Adaptive Card</span></span>
 
->[!Note]
-><span data-ttu-id="3dafd-163">Этот поток требует, чтобы вы добавили объект в манифест приложения и чтобы у вас была необходимая область, `bot` определяемая для бота.</span><span class="sxs-lookup"><span data-stu-id="3dafd-163">This flow requires that you add the `bot` object to your app manifest, and that you have the necessary scope defined for the bot.</span></span> <span data-ttu-id="3dafd-164">Используйте тот же ID, что и расширение обмена сообщениями для бота.</span><span class="sxs-lookup"><span data-stu-id="3dafd-164">Use the same ID as your messaging extension for your bot.</span></span>
+> [!NOTE]
+> <span data-ttu-id="89805-166">Обязательным условием получения ответа бота с адаптивной картой является то, что необходимо добавить объект в манифест приложения и определить требуемую область `bot` для бота.</span><span class="sxs-lookup"><span data-stu-id="89805-166">The prerequisite to get the bot response with an Adaptive card is that you must add the `bot` object to your app manifest, and define the required scope for the bot.</span></span> <span data-ttu-id="89805-167">Используйте тот же ID, что и расширение обмена сообщениями для бота.</span><span class="sxs-lookup"><span data-stu-id="89805-167">Use the same ID as your messaging extension for your bot.</span></span>
+ 
+<span data-ttu-id="89805-168">Вы также можете ответить на сообщение, вставив сообщение с адаптивной картой `submitAction` в канал с помощью бота.</span><span class="sxs-lookup"><span data-stu-id="89805-168">You can also respond to the `submitAction` by inserting a message with an Adaptive Card into the channel with a bot.</span></span> <span data-ttu-id="89805-169">Пользователь может предварительно просмотреть сообщение перед его отправкой.</span><span class="sxs-lookup"><span data-stu-id="89805-169">The user can preview the message before submitting it.</span></span> <span data-ttu-id="89805-170">Это очень полезно в сценариях, в которых вы собираете информацию от пользователей перед созданием ответа адаптивной карты или при обновлении карты после ее взаимодействия с ней.</span><span class="sxs-lookup"><span data-stu-id="89805-170">This is very useful in scenarios where you gather information from the users before creating an Adaptive Card response, or when you update the card after someone interacts with it.</span></span> 
 
-<span data-ttu-id="3dafd-165">Вы также можете ответить на действие отправки, вставив сообщение с адаптивной картой в канал с помощью бота.</span><span class="sxs-lookup"><span data-stu-id="3dafd-165">You can also respond to the submit action by inserting a message with an Adaptive Card into the channel with a bot.</span></span> <span data-ttu-id="3dafd-166">Пользователь может предварительно просмотреть сообщение перед отправкой, а также, возможно, изменить или взаимодействовать с ним.</span><span class="sxs-lookup"><span data-stu-id="3dafd-166">Your user can preview the message before submitting it, and potentially edit or interact with it as well.</span></span> <span data-ttu-id="3dafd-167">Это может быть очень полезно в сценариях, в которых вы собираете информацию от пользователей перед созданием адаптивного ответа карточки или при обновлении карты после ее взаимодействия с ней.</span><span class="sxs-lookup"><span data-stu-id="3dafd-167">This can be very useful in scenarios where you gather information from your users before creating an adaptive card response, or when you update the card after someone interacts with it.</span></span> <span data-ttu-id="3dafd-168">В следующем сценарии показано, как приложение Polly использует этот поток для настройки опроса без включаемых этапов настройки в диалог канала:</span><span class="sxs-lookup"><span data-stu-id="3dafd-168">The following scenario shows how the app Polly uses this flow to configure a poll without including the configuration steps in the channel conversation:</span></span>
+<span data-ttu-id="89805-171">В следующем сценарии показано, как приложение Polly настраивает опрос, не включая этапы настройки в диалог канала:</span><span class="sxs-lookup"><span data-stu-id="89805-171">The following scenario shows how the app Polly configures a poll without including the configuration steps in the channel conversation:</span></span>
 
-1. <span data-ttu-id="3dafd-169">Пользователь выбирает расширение обмена сообщениями, чтобы вызвать модуль задач.</span><span class="sxs-lookup"><span data-stu-id="3dafd-169">The user selects the messaging extension to trigger the task module.</span></span>
-2. <span data-ttu-id="3dafd-170">Пользователь настраивает опрос с помощью модуля задач.</span><span class="sxs-lookup"><span data-stu-id="3dafd-170">The user configures the poll with the task module.</span></span>
-3. <span data-ttu-id="3dafd-171">После отправки модуля задач приложение использует сведения, предоставленные для построения опроса в качестве адаптивной карты, и отправляет его в качестве ответа `botMessagePreview` клиенту.</span><span class="sxs-lookup"><span data-stu-id="3dafd-171">After submitting the task module the app uses the information provided to build the poll as an Adaptive Card and sends it as a `botMessagePreview` response to the client.</span></span>
-4. <span data-ttu-id="3dafd-172">Затем пользователь может просмотреть сообщение адаптивной карты, прежде чем бот вставляет его в канал.</span><span class="sxs-lookup"><span data-stu-id="3dafd-172">The user can then preview the adaptive card message before the bot inserts it into the channel.</span></span> <span data-ttu-id="3dafd-173">Если приложение еще не является участником канала, выбор добавляет `Send` его.</span><span class="sxs-lookup"><span data-stu-id="3dafd-173">If the app is not already a member of the channel, selecting `Send` adds it.</span></span>
-   1. <span data-ttu-id="3dafd-174">Пользователь также может выбрать сообщение, которое возвращает их в `Edit` исходный модуль задач.</span><span class="sxs-lookup"><span data-stu-id="3dafd-174">The user can also choose to `Edit` the message, which returns them to the original task module.</span></span>
-5. <span data-ttu-id="3dafd-175">Взаимодействие с адаптивной картой изменяет сообщение перед отправкой.</span><span class="sxs-lookup"><span data-stu-id="3dafd-175">Interacting with the adaptive card changes the message before sending it.</span></span>
-6. <span data-ttu-id="3dafd-176">После выбора пользователем `Send` бота сообщение передается в канал.</span><span class="sxs-lookup"><span data-stu-id="3dafd-176">After the user selects `Send` the bot posts the message to the channel.</span></span>
+<span data-ttu-id="89805-172">**Настройка опроса**</span><span class="sxs-lookup"><span data-stu-id="89805-172">**To configure the poll**</span></span>
 
-### <a name="respond-to-initial-submit-action"></a><span data-ttu-id="3dafd-177">Реагирование на начальное действие отправки</span><span class="sxs-lookup"><span data-stu-id="3dafd-177">Respond to initial submit action</span></span>
+1. <span data-ttu-id="89805-173">Пользователь выбирает расширение обмена сообщениями для вызова модуля задач.</span><span class="sxs-lookup"><span data-stu-id="89805-173">The user selects the messaging extension to invoke the task module.</span></span>
+1. <span data-ttu-id="89805-174">Пользователь настраивает опрос с помощью модуля задач.</span><span class="sxs-lookup"><span data-stu-id="89805-174">The user configures the poll with the task module.</span></span>
+1. <span data-ttu-id="89805-175">После отправки модуля задач приложение использует сведения, предоставленные для создания опроса в качестве адаптивной карты, и отправляет его в качестве ответа `botMessagePreview` клиенту.</span><span class="sxs-lookup"><span data-stu-id="89805-175">After submitting the task module, the app uses the information provided to build the poll as an Adaptive Card and sends it as a `botMessagePreview` response to the client.</span></span>
+1. <span data-ttu-id="89805-176">Затем пользователь может просмотреть сообщение адаптивной карты, прежде чем бот вставляет его в канал.</span><span class="sxs-lookup"><span data-stu-id="89805-176">The user can then preview the Adaptive Card message before the bot inserts it into the channel.</span></span> <span data-ttu-id="89805-177">Если приложение еще не является участником канала, выберите `Send` добавить его.</span><span class="sxs-lookup"><span data-stu-id="89805-177">If the app is not already a member of the channel, select `Send` to add it.</span></span>
 
-<span data-ttu-id="3dafd-178">Чтобы включить этот поток, модуль задач должен ответить на начальное сообщение предварительным просмотром карты, которую бот `composeExtension/submitAction` отправляет каналу.</span><span class="sxs-lookup"><span data-stu-id="3dafd-178">To enable this flow your task module should respond to the initial `composeExtension/submitAction` message with a preview of the card that the bot send to the channel.</span></span> <span data-ttu-id="3dafd-179">Это дает пользователю возможность проверить карту перед отправкой, а также попытаться установить бот в беседе, если она еще не установлена.</span><span class="sxs-lookup"><span data-stu-id="3dafd-179">This gives the user the opportunity to verify the card before sending, and also attempt to install your bot in the conversation if it is not already installed.</span></span>
+    > [!NOTE] 
+    > * <span data-ttu-id="89805-178">Пользователи также могут выбрать `Edit` сообщение, которое возвращает их в исходный модуль задач.</span><span class="sxs-lookup"><span data-stu-id="89805-178">The users can also select to `Edit` the message, which returns them to the original task module.</span></span> 
+    > * <span data-ttu-id="89805-179">Взаимодействие с адаптивной картой изменяет сообщение перед отправкой.</span><span class="sxs-lookup"><span data-stu-id="89805-179">Interaction with the Adaptive Card changes the message before sending it.</span></span>
+1. <span data-ttu-id="89805-180">После выбора пользователем `Send` бота сообщение передается в канал.</span><span class="sxs-lookup"><span data-stu-id="89805-180">After the user selects `Send` the bot posts the message to the channel.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="3dafd-180">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="3dafd-180">C#/.NET</span></span>](#tab/dotnet)
+## <a name="respond-to-initial-submit-action"></a><span data-ttu-id="89805-181">Реагирование на начальное действие отправки</span><span class="sxs-lookup"><span data-stu-id="89805-181">Respond to initial submit action</span></span>
+
+<span data-ttu-id="89805-182">Модуль задач должен отвечать на начальное сообщение предварительным просмотром карты, которую отправляет бот `composeExtension/submitAction` каналу.</span><span class="sxs-lookup"><span data-stu-id="89805-182">Your task module must respond to the initial `composeExtension/submitAction` message with a preview of the card that the bot sends to the channel.</span></span> <span data-ttu-id="89805-183">Пользователь может проверить карту перед отправкой, а также попытаться установить бот в беседе, если бот еще не установлен.</span><span class="sxs-lookup"><span data-stu-id="89805-183">The user can verify the card before sending, and also try to install your bot in the conversation if the bot is not already installed.</span></span>
+
+# <a name="cnet"></a>[<span data-ttu-id="89805-184">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="89805-184">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(
@@ -256,7 +263,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejs"></a>[<span data-ttu-id="3dafd-181">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="3dafd-181">JavaScript/Node.js</span></span>](#tab/javascript)
+# <a name="javascriptnodejs"></a>[<span data-ttu-id="89805-185">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="89805-185">JavaScript/Node.js</span></span>](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -295,10 +302,10 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="3dafd-182">JSON</span><span class="sxs-lookup"><span data-stu-id="3dafd-182">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="89805-186">JSON</span><span class="sxs-lookup"><span data-stu-id="89805-186">JSON</span></span>](#tab/json)
 
->[!Note]
-><span data-ttu-id="3dafd-183">Должен содержать действие с 1 адаптивным `activityPreview` вложением `message` карт.</span><span class="sxs-lookup"><span data-stu-id="3dafd-183">The `activityPreview` must contain a `message` activity with exactly 1 adaptive card attachment.</span></span> <span data-ttu-id="3dafd-184">Значение `<< Card Payload >>` является местообнамерщиком для карточки, вы хотите отправить.</span><span class="sxs-lookup"><span data-stu-id="3dafd-184">The `<< Card Payload >>` value is a placeholder for the card you wish to send.</span></span>
+> [!NOTE]
+> * <span data-ttu-id="89805-187">Необходимо содержать действие с одним вложением `activityPreview` `message` адаптивной карты.</span><span class="sxs-lookup"><span data-stu-id="89805-187">The `activityPreview` must contain a `message` activity with exactly one Adaptive Card attachment.</span></span> <span data-ttu-id="89805-188">Значение `<< Card Payload >>` — это местоодатель для карточки, которая будет отправляться.</span><span class="sxs-lookup"><span data-stu-id="89805-188">The `<< Card Payload >>` value is a placeholder for the card you want to send.</span></span>
 
 ```json
 {
@@ -319,11 +326,11 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-### <a name="the-botmessagepreview-send-and-edit-events"></a><span data-ttu-id="3dafd-185">BotMessagePreview отправляет и редактирует события</span><span class="sxs-lookup"><span data-stu-id="3dafd-185">The botMessagePreview send and edit events</span></span>
+### <a name="the-botmessagepreview-send-and-edit-events"></a><span data-ttu-id="89805-189">BotMessagePreview отправляет и редактирует события</span><span class="sxs-lookup"><span data-stu-id="89805-189">The botMessagePreview send and edit events</span></span>
 
-<span data-ttu-id="3dafd-186">Расширение сообщения должно реагировать сейчас на два новых варианта `composeExtension/submitAction` вызова, где `value.botMessagePreviewAction = "send"` и `value.botMessagePreviewAction = "edit"` .</span><span class="sxs-lookup"><span data-stu-id="3dafd-186">Your message extension must respond now to two new varieties of the `composeExtension/submitAction` invoke, where `value.botMessagePreviewAction = "send"`and `value.botMessagePreviewAction = "edit"`.</span></span>
+<span data-ttu-id="89805-190">Расширение обмена сообщениями должно отвечать на два новых типа `composeExtension/submitAction` вызова, где `value.botMessagePreviewAction = "send"` и `value.botMessagePreviewAction = "edit"` .</span><span class="sxs-lookup"><span data-stu-id="89805-190">Your messaging extension must respond to two new types of the `composeExtension/submitAction` invoke, where `value.botMessagePreviewAction = "send"`and `value.botMessagePreviewAction = "edit"`.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="3dafd-187">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="3dafd-187">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="89805-191">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="89805-191">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionBotMessagePreviewEditAsync(
@@ -340,7 +347,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 
 ```
 
-# <a name="javascriptnodejs"></a>[<span data-ttu-id="3dafd-188">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="3dafd-188">JavaScript/Node.js</span></span>](#tab/javascript)
+# <a name="javascriptnodejs"></a>[<span data-ttu-id="89805-192">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="89805-192">JavaScript/Node.js</span></span>](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -357,7 +364,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="3dafd-189">JSON</span><span class="sxs-lookup"><span data-stu-id="3dafd-189">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="89805-193">JSON</span><span class="sxs-lookup"><span data-stu-id="89805-193">JSON</span></span>](#tab/json)
 
 ```json
 {
@@ -390,17 +397,16 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-### <a name="respond-to-botmessagepreview-edit"></a><span data-ttu-id="3dafd-190">Ответ на изменение botMessagePreview</span><span class="sxs-lookup"><span data-stu-id="3dafd-190">Respond to botMessagePreview edit</span></span>
+### <a name="respond-to-botmessagepreview-edit"></a><span data-ttu-id="89805-194">Ответ на изменение botMessagePreview</span><span class="sxs-lookup"><span data-stu-id="89805-194">Respond to botMessagePreview edit</span></span>
 
-<span data-ttu-id="3dafd-191">Если пользователь перед отправкой редактирует карту, выбрав кнопку **Изменить,** вы получите вызов `composeExtension/submitAction` с помощью `value.botMessagePreviewAction = edit` .</span><span class="sxs-lookup"><span data-stu-id="3dafd-191">If the user edits the card before sending by selecting the **Edit** button, you receive a `composeExtension/submitAction` invoke with `value.botMessagePreviewAction = edit`.</span></span> <span data-ttu-id="3dafd-192">Обычно следует отвечать, возвращая отправленный модуль задач в ответ на начальный вызов, `composeExtension/fetchTask` который начал взаимодействие.</span><span class="sxs-lookup"><span data-stu-id="3dafd-192">You should typically respond by returning the task module you sent in response to the initial `composeExtension/fetchTask` invoke that began the interaction.</span></span> <span data-ttu-id="3dafd-193">Это позволяет пользователю начать процесс с повторного ввода исходной информации.</span><span class="sxs-lookup"><span data-stu-id="3dafd-193">This allows the user to start the process over by re-entering the original information.</span></span> <span data-ttu-id="3dafd-194">Используйте доступную информацию для предварительного заполнения модуля задач, чтобы пользователю не нужно было заполнять всю информацию с нуля.</span><span class="sxs-lookup"><span data-stu-id="3dafd-194">Use the available information to pre-populate the task module so the user does not have to fill out all of the information from scratch.</span></span>
+<span data-ttu-id="89805-195">Если пользователь перед отправкой редактирует карту, выбрав **изменение,** вы получите вызов `composeExtension/submitAction` с помощью `value.botMessagePreviewAction = edit` .</span><span class="sxs-lookup"><span data-stu-id="89805-195">If the user edits the card before sending, by selecting **Edit**, you receive a `composeExtension/submitAction` invoke with `value.botMessagePreviewAction = edit`.</span></span> <span data-ttu-id="89805-196">Вы должны ответить, возвращая отправленный модуль задач в ответ на начальный вызов, `composeExtension/fetchTask` который начал взаимодействие.</span><span class="sxs-lookup"><span data-stu-id="89805-196">You must respond by returning the task module you sent, in response to the initial `composeExtension/fetchTask` invoke that began the interaction.</span></span> <span data-ttu-id="89805-197">Это позволяет пользователю начать процесс повторного ввода исходной информации.</span><span class="sxs-lookup"><span data-stu-id="89805-197">This allows the user to start the process by re-entering the original information.</span></span> <span data-ttu-id="89805-198">Используйте доступные сведения для обновления модуля задач, чтобы пользователю не было необходимости заполнять всю информацию с нуля.</span><span class="sxs-lookup"><span data-stu-id="89805-198">Use the available information to update the task module so that the user need not fill out all information from scratch.</span></span>
+<span data-ttu-id="89805-199">Дополнительные сведения об ответе на начальное событие см. в `fetchTask` [ответе на начальное `fetchTask` событие.](~/messaging-extensions/how-to/action-commands/create-task-module.md)</span><span class="sxs-lookup"><span data-stu-id="89805-199">For more information on responding to the initial `fetchTask` event, see [responding to the initial `fetchTask` event](~/messaging-extensions/how-to/action-commands/create-task-module.md).</span></span>
 
-<span data-ttu-id="3dafd-195">См. [ответы на начальное `fetchTask` событие](~/messaging-extensions/how-to/action-commands/create-task-module.md).</span><span class="sxs-lookup"><span data-stu-id="3dafd-195">See [responding to the initial `fetchTask` event](~/messaging-extensions/how-to/action-commands/create-task-module.md).</span></span>
+### <a name="respond-to-botmessagepreview-send"></a><span data-ttu-id="89805-200">Ответ на отправку botMessagePreview</span><span class="sxs-lookup"><span data-stu-id="89805-200">Respond to botMessagePreview send</span></span>
 
-### <a name="respond-to-botmessagepreview-send"></a><span data-ttu-id="3dafd-196">Ответ на отправку botMessagePreview</span><span class="sxs-lookup"><span data-stu-id="3dafd-196">Respond to botMessagePreview send</span></span>
+<span data-ttu-id="89805-201">После того как пользователь выбирает **отправку,** вы получите вызов `composeExtension/submitAction` с `value.botMessagePreviewAction = send` .</span><span class="sxs-lookup"><span data-stu-id="89805-201">After the user selects the **Send**, you receive a `composeExtension/submitAction` invoke with `value.botMessagePreviewAction = send`.</span></span> <span data-ttu-id="89805-202">Веб-служба должна создать и отправить на беседу проактивное сообщение с адаптивной картой, а также ответить на вызов.</span><span class="sxs-lookup"><span data-stu-id="89805-202">Your web service has to create and send a proactive message with the Adaptive Card to the conversation, and also reply to the invoke.</span></span>
 
-<span data-ttu-id="3dafd-197">После того как пользователь выберет кнопку **Отправка,** вы получите вызов `composeExtension/submitAction` с `value.botMessagePreviewAction = send` .</span><span class="sxs-lookup"><span data-stu-id="3dafd-197">After the user selects the **Send** button, you receive a `composeExtension/submitAction` invoke with `value.botMessagePreviewAction = send`.</span></span> <span data-ttu-id="3dafd-198">Веб-служба должна создать и отправить на беседу проактивное сообщение с адаптивной картой, а также ответить на вызов.</span><span class="sxs-lookup"><span data-stu-id="3dafd-198">Your web service has to create and send a proactive message with the Adaptive Card to the conversation, and also reply to the invoke.</span></span>
-
-# <a name="cnet"></a>[<span data-ttu-id="3dafd-199">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="3dafd-199">C#/.NET</span></span>](#tab/dotnet)
+# <a name="cnet"></a>[<span data-ttu-id="89805-203">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="89805-203">C#/.NET</span></span>](#tab/dotnet)
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionBotMessagePreviewSendAsync(
@@ -441,7 +447,7 @@ protected override async Task<MessagingExtensionActionResponse> OnTeamsMessaging
 }
 ```
 
-# <a name="javascriptnodejs"></a>[<span data-ttu-id="3dafd-200">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="3dafd-200">JavaScript/Node.js</span></span>](#tab/javascript)
+# <a name="javascriptnodejs"></a>[<span data-ttu-id="89805-204">JavaScript/Node.js</span><span class="sxs-lookup"><span data-stu-id="89805-204">JavaScript/Node.js</span></span>](#tab/javascript)
 
 ```javascript
 class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
@@ -494,9 +500,9 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-# <a name="json"></a>[<span data-ttu-id="3dafd-201">JSON</span><span class="sxs-lookup"><span data-stu-id="3dafd-201">JSON</span></span>](#tab/json)
+# <a name="json"></a>[<span data-ttu-id="89805-205">JSON</span><span class="sxs-lookup"><span data-stu-id="89805-205">JSON</span></span>](#tab/json)
 
-<span data-ttu-id="3dafd-202">Вы получаете новое `composeExtension/submitAction` сообщение, аналогичное следующему:</span><span class="sxs-lookup"><span data-stu-id="3dafd-202">You receive a new `composeExtension/submitAction` message similar to the following:</span></span>
+<span data-ttu-id="89805-206">Вы получаете новое `composeExtension/submitAction` сообщение, аналогичное следующему:</span><span class="sxs-lookup"><span data-stu-id="89805-206">You receive a new `composeExtension/submitAction` message similar to the following:</span></span>
 
 ```json
 {
@@ -529,17 +535,17 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-### <a name="user-attribution-for-bots-messages"></a><span data-ttu-id="3dafd-203">Атрибуция пользователей для сообщений ботов</span><span class="sxs-lookup"><span data-stu-id="3dafd-203">User attribution for bots messages</span></span> 
+### <a name="user-attribution-for-bots-messages"></a><span data-ttu-id="89805-207">Атрибуция пользователей для сообщений ботов</span><span class="sxs-lookup"><span data-stu-id="89805-207">User attribution for bots messages</span></span> 
 
-<span data-ttu-id="3dafd-204">В сценариях, когда бот отправляет сообщения от имени пользователя, приписывая сообщение этому пользователю, можно помочь с вовлечением и продемонстрировать более естественный поток взаимодействия.</span><span class="sxs-lookup"><span data-stu-id="3dafd-204">In scenarios where a bot sends messages on behalf of a user, attributing the message to that user can help with engagement and showcase a more natural interaction flow.</span></span> <span data-ttu-id="3dafd-205">Эта функция позволяет приписать сообщение от бота пользователю, от имени которого оно было отправлено.</span><span class="sxs-lookup"><span data-stu-id="3dafd-205">This feature allows you to attribute a message from your bot to a user on whose behalf it was sent.</span></span>
+<span data-ttu-id="89805-208">В сценариях, когда бот отправляет сообщения от имени пользователя, приписка сообщения этому пользователю помогает с вовлечением и демонстрирует более естественный поток взаимодействия.</span><span class="sxs-lookup"><span data-stu-id="89805-208">In scenarios where a bot sends messages on behalf of a user, attributing the message to that user helps with engagement and showcase a more natural interaction flow.</span></span> <span data-ttu-id="89805-209">Эта функция позволяет приписать сообщение от бота пользователю, от имени которого оно было отправлено.</span><span class="sxs-lookup"><span data-stu-id="89805-209">This feature allows you to attribute a message from your bot to a user on whose behalf it was sent.</span></span>
 
-<span data-ttu-id="3dafd-206">На следующем изображении слева находится сообщение карточки, отправленное ботом без атрибуции  пользователя, а справа — карточка, отправленная ботом с атрибуцией пользователя. </span><span class="sxs-lookup"><span data-stu-id="3dafd-206">In the following image, on the left is a card message sent by a bot *without* user attribution and on the right is a card sent by a bot *with* user attribution.</span></span>
+<span data-ttu-id="89805-210">На следующем изображении слева находится сообщение карточки, отправленное ботом без атрибуции пользователя, а справа — карточка, отправленная ботом с атрибуцией пользователя.</span><span class="sxs-lookup"><span data-stu-id="89805-210">In the following image, on the left is a card message sent by a bot without user attribution and on the right is a card sent by a bot with user attribution.</span></span>
 
-![Снимок экрана](../../../assets/images/messaging-extension/user-attribution-bots.png)
+![Боты атрибуции пользователей](../../../assets/images/messaging-extension/user-attribution-bots.png)
 
-<span data-ttu-id="3dafd-208">Чтобы использовать атрибутику пользователя в командах, необходимо добавить объект упоминания в полезной нагрузке, которая `OnBehalfOf` `ChannelData` `Activity` отправляется в Teams.</span><span class="sxs-lookup"><span data-stu-id="3dafd-208">To use the user attribution in teams, you must  add the `OnBehalfOf` mention entity to `ChannelData` in your `Activity` payload that is sent to Teams.</span></span>
+<span data-ttu-id="89805-212">Чтобы использовать атрибутику пользователя в командах, необходимо добавить объект упоминания в полезной нагрузке, которая `OnBehalfOf` `ChannelData` `Activity` отправляется в Teams.</span><span class="sxs-lookup"><span data-stu-id="89805-212">To use the user attribution in teams, you must add the `OnBehalfOf` mention entity to `ChannelData` in your `Activity` payload that is sent to Teams.</span></span>
 
-# <a name="cnet"></a>[<span data-ttu-id="3dafd-209">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="3dafd-209">C#/.NET</span></span>](#tab/dotnet-1)
+# <a name="cnet"></a>[<span data-ttu-id="89805-213">C#/.NET</span><span class="sxs-lookup"><span data-stu-id="89805-213">C#/.NET</span></span>](#tab/dotnet-1)
 
 ```csharp
     OnBehalfOf = new []
@@ -555,7 +561,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ```
 
-# <a name="json"></a>[<span data-ttu-id="3dafd-210">JSON</span><span class="sxs-lookup"><span data-stu-id="3dafd-210">JSON</span></span>](#tab/json-1)
+# <a name="json"></a>[<span data-ttu-id="89805-214">JSON</span><span class="sxs-lookup"><span data-stu-id="89805-214">JSON</span></span>](#tab/json-1)
 
 ```json
 {
@@ -573,21 +579,26 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 * * *
 
-<span data-ttu-id="3dafd-211">Ниже приводится описание сущностями в `OnBehalfOf` массиве:</span><span class="sxs-lookup"><span data-stu-id="3dafd-211">The following section is a description of the entities in the `OnBehalfOf` of Array:</span></span>
+#### <a name="details-of--onbehalfof-entity-schema"></a><span data-ttu-id="89805-215">Сведения о  `OnBehalfOf` схеме сущности</span><span class="sxs-lookup"><span data-stu-id="89805-215">Details of  `OnBehalfOf` entity schema</span></span>
 
-#### <a name="details-of--onbehalfof-entity-schema"></a><span data-ttu-id="3dafd-212">Сведения о  `OnBehalfOf` схеме сущности</span><span class="sxs-lookup"><span data-stu-id="3dafd-212">Details of  `OnBehalfOf` entity schema</span></span>
+<span data-ttu-id="89805-216">В следующем разделе описаны сущностями в `OnBehalfOf` массиве:</span><span class="sxs-lookup"><span data-stu-id="89805-216">The following section is a description of the entities in the `OnBehalfOf` Array:</span></span>
 
-|<span data-ttu-id="3dafd-213">Поле</span><span class="sxs-lookup"><span data-stu-id="3dafd-213">Field</span></span>|<span data-ttu-id="3dafd-214">Тип</span><span class="sxs-lookup"><span data-stu-id="3dafd-214">Type</span></span>|<span data-ttu-id="3dafd-215">Описание</span><span class="sxs-lookup"><span data-stu-id="3dafd-215">Description</span></span>|
+|<span data-ttu-id="89805-217">Поле</span><span class="sxs-lookup"><span data-stu-id="89805-217">Field</span></span>|<span data-ttu-id="89805-218">Тип</span><span class="sxs-lookup"><span data-stu-id="89805-218">Type</span></span>|<span data-ttu-id="89805-219">Описание</span><span class="sxs-lookup"><span data-stu-id="89805-219">Description</span></span>|
 |:---|:---|:---|
-|`itemId`|<span data-ttu-id="3dafd-216">Целое число</span><span class="sxs-lookup"><span data-stu-id="3dafd-216">Integer</span></span>|<span data-ttu-id="3dafd-217">Должно быть 0</span><span class="sxs-lookup"><span data-stu-id="3dafd-217">Should be 0</span></span>|
-|`mentionType`|<span data-ttu-id="3dafd-218">Строка</span><span class="sxs-lookup"><span data-stu-id="3dafd-218">String</span></span>|<span data-ttu-id="3dafd-219">Должно быть "лицом"</span><span class="sxs-lookup"><span data-stu-id="3dafd-219">Should be "person"</span></span>|
-|`mri`|<span data-ttu-id="3dafd-220">Строка</span><span class="sxs-lookup"><span data-stu-id="3dafd-220">String</span></span>|<span data-ttu-id="3dafd-221">Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение.</span><span class="sxs-lookup"><span data-stu-id="3dafd-221">Message resource identifier (MRI) of the person on whose behalf the message is sent.</span></span> <span data-ttu-id="3dafd-222">Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".</span><span class="sxs-lookup"><span data-stu-id="3dafd-222">Message sender name would appear as "\<user\> via \<bot name\>".</span></span>|
-|`displayName`|<span data-ttu-id="3dafd-223">Строка</span><span class="sxs-lookup"><span data-stu-id="3dafd-223">String</span></span>|<span data-ttu-id="3dafd-224">Имя человека.</span><span class="sxs-lookup"><span data-stu-id="3dafd-224">Name of the person.</span></span> <span data-ttu-id="3dafd-225">Используется в качестве отката в разрешении имени случая недоступно.</span><span class="sxs-lookup"><span data-stu-id="3dafd-225">Used as fallback in case name resolution is unavailable.</span></span>|
+|`itemId`|<span data-ttu-id="89805-220">Целое число</span><span class="sxs-lookup"><span data-stu-id="89805-220">Integer</span></span>|<span data-ttu-id="89805-221">Описывает идентификацию элемента.</span><span class="sxs-lookup"><span data-stu-id="89805-221">Describes identification of the item.</span></span> <span data-ttu-id="89805-222">Его значение должно быть `0` .</span><span class="sxs-lookup"><span data-stu-id="89805-222">Its value must be `0`.</span></span>|
+|`mentionType`|<span data-ttu-id="89805-223">String</span><span class="sxs-lookup"><span data-stu-id="89805-223">String</span></span>|<span data-ttu-id="89805-224">Описывает упоминание о "человеке".</span><span class="sxs-lookup"><span data-stu-id="89805-224">Describes the mention of a "person".</span></span>|
+|`mri`|<span data-ttu-id="89805-225">String</span><span class="sxs-lookup"><span data-stu-id="89805-225">String</span></span>|<span data-ttu-id="89805-226">Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение.</span><span class="sxs-lookup"><span data-stu-id="89805-226">Message resource identifier (MRI) of the person on whose behalf the message is sent.</span></span> <span data-ttu-id="89805-227">Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".</span><span class="sxs-lookup"><span data-stu-id="89805-227">Message sender name would appear as "\<user\> through \<bot name\>".</span></span>|
+|`displayName`|<span data-ttu-id="89805-228">String</span><span class="sxs-lookup"><span data-stu-id="89805-228">String</span></span>|<span data-ttu-id="89805-229">Имя человека.</span><span class="sxs-lookup"><span data-stu-id="89805-229">Name of the person.</span></span> <span data-ttu-id="89805-230">Используется в качестве отката в разрешении имени случая недоступно.</span><span class="sxs-lookup"><span data-stu-id="89805-230">Used as fallback in case name resolution is unavailable.</span></span>|
   
-## <a name="next-steps"></a><span data-ttu-id="3dafd-226">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="3dafd-226">Next Steps</span></span>
+## <a name="code-sample"></a><span data-ttu-id="89805-231">Пример кода</span><span class="sxs-lookup"><span data-stu-id="89805-231">Code sample</span></span>
 
-<span data-ttu-id="3dafd-227">Добавление команды поиска</span><span class="sxs-lookup"><span data-stu-id="3dafd-227">Add a search command</span></span>
+| <span data-ttu-id="89805-232">Имя образца</span><span class="sxs-lookup"><span data-stu-id="89805-232">Sample Name</span></span>           | <span data-ttu-id="89805-233">Описание</span><span class="sxs-lookup"><span data-stu-id="89805-233">Description</span></span> | <span data-ttu-id="89805-234">.NET</span><span class="sxs-lookup"><span data-stu-id="89805-234">.NET</span></span>    | <span data-ttu-id="89805-235">Node.js</span><span class="sxs-lookup"><span data-stu-id="89805-235">Node.js</span></span>   |   
+|:---------------------|:--------------|:---------|:--------|
+|<span data-ttu-id="89805-236">Действие расширения обмена сообщениями teams</span><span class="sxs-lookup"><span data-stu-id="89805-236">Teams messaging extension action</span></span>| <span data-ttu-id="89805-237">Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач.</span><span class="sxs-lookup"><span data-stu-id="89805-237">Describes how to define action commands, create task module, and  respond to task module submit action.</span></span> |[<span data-ttu-id="89805-238">View</span><span class="sxs-lookup"><span data-stu-id="89805-238">View</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[<span data-ttu-id="89805-239">View</span><span class="sxs-lookup"><span data-stu-id="89805-239">View</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
+|<span data-ttu-id="89805-240">Командный поиск расширения обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="89805-240">Teams messaging extension search</span></span>   |  <span data-ttu-id="89805-241">Описывает, как определить команды поиска и реагировать на поиски.</span><span class="sxs-lookup"><span data-stu-id="89805-241">Describes how to define search commands and respond to searches.</span></span>        |[<span data-ttu-id="89805-242">View</span><span class="sxs-lookup"><span data-stu-id="89805-242">View</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[<span data-ttu-id="89805-243">View</span><span class="sxs-lookup"><span data-stu-id="89805-243">View</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-* [<span data-ttu-id="3dafd-228">Определить команды поиска</span><span class="sxs-lookup"><span data-stu-id="3dafd-228">Define search commands</span></span>](~/messaging-extensions/how-to/search-commands/define-search-command.md)
+## <a name="next-step"></a><span data-ttu-id="89805-244">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="89805-244">Next Step</span></span>
 
-[!include[messaging-extension-learn-more](~/includes/messaging-extensions/learn-more.md)]
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="89805-245">Определить команды поиска</span><span class="sxs-lookup"><span data-stu-id="89805-245">Define search commands</span></span>](~/messaging-extensions/how-to/search-commands/define-search-command.md)
+
