@@ -202,21 +202,25 @@
   items:
     - name: Обзор
       href: bots/what-are-bots.md
-    - name: Как работают боты
+    - name: Боты и пакеты SDK
+      href: bots/bot-features.md
+    - name: Обработчики действий ботов
       href: bots/bot-basics.md
-    - name: Беседы в боте
+    - name: Беседы с ботами
       items:
-        - name: Основы разговора
+        - name: Обзор
           href: bots/how-to/conversations/conversation-basics.md
+        - name: Сообщения в беседах с ботами
+          href: bots/how-to/conversations/conversation-messages.md
         - name: Создать меню команд для бота
           href: bots/how-to/create-a-bot-commands-menu.md
         - name: Канал и групповые разговоры
           href: bots/how-to/conversations/channel-and-group-conversations.md
-        - name: Подписаться на события разговора
+        - name: События бесед в вашем боте Teams
           href: bots/how-to/conversations/subscribe-to-conversation-events.md
-        - name: Отправлять активные сообщения
+        - name: Отправка упреждающих сообщений
           href: bots/how-to/conversations/send-proactive-messages.md
-        - name: Форматирование сообщений бота
+        - name: Формат сообщений бота
           href: bots/how-to/format-your-bot-messages.md
         - name: Обновлять и удалять сообщения ботов
           href: bots/how-to/update-and-delete-bot-messages.md
@@ -224,13 +228,13 @@
       href: bots/how-to/get-teams-context.md
     - name: Отправка и получение файлов
       href: bots/how-to/bots-filesv4.md
-    - name: Обработка ограничений скорости бота
+    - name: Оптимизация бота с ограничением скорости в Teams
       href: bots/how-to/rate-limit.md
-    - name: Вызов и встреча ботов
+    - name: Боты для звонков и собраний
       items:
         - name: Обзор
           href: bots/calls-and-meetings/calls-meetings-bots-overview.md
-        - name: Медиа концепции в реальном времени
+        - name: Звонки и собрания в реальном времени
           href: bots/calls-and-meetings/real-time-media-concepts.md
         - name: Регистрация бота вызовов
           href: bots/calls-and-meetings/registering-calling-bot.md
@@ -246,7 +250,7 @@
   items:
     - name: Обзор
       href: messaging-extensions/what-are-messaging-extensions.md
-    - name: Создание команд действий
+    - name: Команды действий
       items:
         - name: Определение команд действий
           href: messaging-extensions/how-to/action-commands/define-action-command.md
@@ -254,13 +258,13 @@
           href: messaging-extensions/how-to/action-commands/create-task-module.md
         - name: Ответ на команды действий
           href: messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md
-    - name: Создание команд поиска
+    - name: Команды поиска
       items:
         - name: Добавление страницы конфигурации
           href: messaging-extensions/how-to/add-configuration-page.md
         - name: Определить команды поиска
           href: messaging-extensions/how-to/search-commands/define-search-command.md
-        - name: Получать и отвечать на поисковые запросы
+        - name: Реагирование на команды поиска
           href: messaging-extensions/how-to/search-commands/respond-to-search.md
     - name: Добавление разворачивающейся ссылки
       href: messaging-extensions/how-to/link-unfurling.md
