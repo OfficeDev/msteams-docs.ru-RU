@@ -4,14 +4,14 @@ author: WashingtonKayaker
 description: Работа с событиями беседы с помощью бота Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: af06dba58b3784a03dbcbbc627fa38fce681eeb8
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: af1724620ede44f8d0f7739e265ef1ebd1e3afd8
+ms.sourcegitcommit: 0e252159f53ff9b4452e0574b759bfe73cbf6c84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696348"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51762034"
 ---
-# <a name="conversation-events-in-your-teams-bot"></a>События беседы в боте Teams
+# <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -1060,10 +1060,10 @@ async def on_teams_team_unarchived(
 
 | EventType       | Объект полезной нагрузки   | Описание                                                             | Область |
 | --------------- | ---------------- | ----------------------------------------------------------------------- | ----- |
-| messageReaction | reactionsAdded   | [Реакция на сообщение бота](#reactions-to-a-bot-message)                   | Все   |
-| messageReaction | reactionsRemoved | [Реакции, удаленые из сообщения бота](#reactions-removed-from-bot-message) | Все   |
+| messageReaction | reactionsAdded   | [Реакции, добавленные в сообщение бота](#reactions-added-to-bot-message).           | Все   |
+| messageReaction | reactionsRemoved | [Реакции, удалены из сообщения бота](#reactions-removed-from-bot-message). | Все |
 
-### <a name="reactions-to-a-bot-message"></a>Реакция на сообщение бота
+### <a name="reactions-added-to-bot-message"></a>Реакции, добавленные в сообщение бота
 
 В следующем коде показан пример реакций на сообщение бота:
 
@@ -1283,15 +1283,106 @@ async def on_reactions_removed(
 
 * * *
 
+## <a name="installation-update-event"></a>Событие обновления установки
+
+Бот получает событие `installationUpdate` при установке бота в поток беседы. Спуск бота из потока также вызывает событие. При установке бота  будет добавлено поле действий в событии, а после  удаления бота поле действия будет *удаляться.*
+ 
+> [!NOTE]
+> При обновлении приложения и добавлении или удалите бот, действие также запускает `installationUpdate` событие. Поле **действия** настроено на обновление *при* добавлении бота или *удаления-обновления* при удалите бот. 
+
+> [!IMPORTANT]
+> События обновления установки находятся в предварительной версии разработчика сегодня и будут доступны в марте 2021 г. Чтобы просмотреть события обновления установки, можно переместить клиента Teams в общедоступный предварительный просмотр разработчика и добавить приложение лично или в команду или чат.
+
+### <a name="install-update-event"></a>Событие установки обновления
+Используйте событие `installationUpdate` для отправки вводного сообщения от бота при установке. Это событие поможет вам соответствовать требованиям конфиденциальности и хранения данных. Кроме того, при удалении бота можно очистить и удалить данные пользователя или потока.
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+
+```csharp
+protected override async Task
+OnInstallationUpdateActivityAsync(ITurnContext<IInstallationUpdateActivity> turnContext, CancellationToken cancellationToken) {
+var activity = turnContext.Activity; if
+(string.Equals(activity.Action, "Add",
+StringComparison.InvariantCultureIgnoreCase)) {
+// TO:DO Installation workflow }
+else
+{ // TO:DO Uninstallation workflow
+} return; }
+```
+
+Кроме того, для добавления или  удаления  сценариев в качестве альтернативного метода для захвата события можно использовать специальный обработок.
+
+```csharp
+protected override async Task
+OnInstallationUpdateAddAsync(ITurnContext<IInstallationUpdateActivity>
+turnContext, CancellationToken cancellationToken) {
+// TO:DO Installation workflow return;
+}
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+```json
+{ 
+  "action": "add", 
+  "type": "installationUpdate", 
+  "timestamp": "2020-10-20T22:08:07.869Z", 
+  "id": "f:3033745319439849398", 
+  "channelId": "msteams", 
+  "serviceUrl": "https://smba.trafficmanager.net/amer/", 
+  "from": { 
+    "id": "sample id", 
+    "aadObjectId": "sample AAD Object ID" 
+  },
+  "conversation": { 
+    "isGroup": true, 
+    "conversationType": "channel", 
+    "tenantId": "sample tenant ID", 
+    "id": "sample conversation Id@thread.skype" 
+  }, 
+
+  "recipient": { 
+    "id": "sample reciepent bot ID", 
+    "name": "bot name" 
+  }, 
+  "entities": [ 
+    { 
+      "locale": "en", 
+      "platform": "Windows", 
+      "type": "clientInfo" 
+    } 
+  ], 
+  "channelData": { 
+    "settings": { 
+      "selectedChannel": { 
+        "id": "sample channel ID@thread.skype" 
+      } 
+    }, 
+    "channel": { 
+      "id": "sample channel ID" 
+    }, 
+    "team": { 
+      "id": "sample team ID" 
+    }, 
+    "tenant": { 
+      "id": "sample tenant ID" 
+    }, 
+    "source": { 
+      "name": "message" 
+    } 
+  }, 
+  "locale": "en" 
+}
+```
+* * *
+
 ## <a name="code-sample"></a>Пример кода
 
-В следующей таблице приводится простой пример кода, который включает события беседы ботов в приложение Teams:
-
-| Пример | Описание | .NET Core |
-|--------|------------- |---|
-| Teams bots conversation events sample | Образец бот-бота bot Framework v4 для teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|
+| **Пример имени** | **Description** | **.NET** |
+|-----------------|-----------------|---------|
+|Microsoft Teams передает события беседы с ботами | Пример событий бота. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
-> [Отправлять активные сообщения](~/bots/how-to/conversations/send-proactive-messages.md)
+> [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
