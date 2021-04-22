@@ -2,14 +2,15 @@
 title: Форматирование текста в картах
 description: Описывает форматирование текста карты в Microsoft Teams
 keywords: teams bots cards format
+localization_priority: Normal
 ms.topic: reference
 ms.date: 03/29/2018
-ms.openlocfilehash: e6b8cc835780e03cf4e23eae31fa447c8a03c002
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: b50109ad664bda2fc130e08c53dd7fca2a3d54ef
+ms.sourcegitcommit: 35bc2a31b92f3f7c6524373108f095a870d9ad09
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696537"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51922519"
 ---
 # <a name="format-cards-in-teams"></a>Формат карт в Teams
 
@@ -122,10 +123,11 @@ ms.locfileid: "51696537"
 
 #### <a name="constructing-mentions"></a>Построение упоминаний
 
-Чтобы включить упоминание в адаптивной карте, приложение должно включить следующие элементы
+Чтобы включить упоминание в адаптивной карте, приложение должно включить следующие элементы:
 
-* `<at>username</at>` в поддерживаемых элементах адаптивной карты
-* Объект внутри свойства в содержимом карты, который включает пользовательский `mention` `msteams` id Teams упоминаемого пользователя
+* `<at>username</at>` в поддерживаемых элементах адаптивной карты.
+* Объект `mention` внутри свойства в содержимом карточки, который включает в себя `msteams` id пользователя Teams упомянутого пользователя.
+* Уникальный `userId` для вашего бот-ИД и определенного пользователя. Его можно использовать для @mention определенного пользователя. Можно получить с помощью одного из параметров, указанных в `userId` получить [пользовательский ID](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages?tabs=dotnet#get-the-user-id-team-id-or-channel-id).
 
 #### <a name="sample-adaptive-card-with-a-mention"></a>Пример адаптивной карты с упоминанием
 
@@ -157,7 +159,6 @@ ms.locfileid: "51696537"
   }
 }
 ```
-
 
 ### <a name="information-masking-in-adaptive-cards"></a>Маскировка сведений в адаптивных картах
 Используйте свойство маскировки информации для маскировки определенных сведений, таких как пароль или конфиденциальные сведения пользователей в элементе ввода адаптивной [`Input.Text`](https://adaptivecards.io/explorer/Input.Text.html) карты. 
