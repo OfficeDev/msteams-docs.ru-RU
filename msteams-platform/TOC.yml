@@ -224,6 +224,8 @@
           href: bots/how-to/format-your-bot-messages.md
         - name: Обновлять и удалять сообщения ботов
           href: bots/how-to/update-and-delete-bot-messages.md
+        - name: Заголовки запросов бота
+          href: bots/how-to/conversations/request-headers-of-the-bot.md
     - name: Получите контекст для бота
       href: bots/how-to/get-teams-context.md
     - name: Отправка и получение файлов
