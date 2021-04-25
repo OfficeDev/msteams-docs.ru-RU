@@ -3,12 +3,12 @@ title: Новые возможности
 description: Описание всех новых функций разработчика в Microsoft Teams
 ms.topic: reference
 keywords: команды, новые возможности
-ms.openlocfilehash: 298305f11788963817ddacfabbc052297d3eaabe
-ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
+ms.openlocfilehash: 8d38c5a4f79b557209eedab6747517e689248874
+ms.sourcegitcommit: 7b4f383b506d4bc68a1b5641d6e0f404edbfbc6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634532"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51946461"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Новые возможности для разработчиков в Microsoft Teams
 
@@ -19,12 +19,12 @@ ms.locfileid: "51634532"
 
 Журнал изменений содержит изменения в платформе Microsoft Teams и в этом наборе документов. Иногда записи могут использоваться для вызова внимания к новой функции, которая просто интересна разработчикам Teams.
 
-| **Date** | **Notes** | **Измененные темы** |
+| **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
 |04/08/2021| Функция настройки приложения теперь доступна в предварительном просмотре разработчика.|[Обзор приложений команд разработки,](concepts/design/design-teams-app-overview.md#app-customization) [обзор студии](concepts/build-and-test/app-studio-overview.md#connectors)приложений и [схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|03/18/2021|Примечание. Пожалуйста, обнови версию **4.10** или выше SDK Bot Framework, как мы начали с процесса амортизации для `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync` . | [Изменения API-интерфейса Bot для участников группы или чата](resources/team-chat-member-api-changes.md) |
+|03/18/2021|Примечание. Обновление до версии 4.10 или выше SDK Bot Framework, как мы начали с процесса амортизации для `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync` . | [Изменения API-интерфейса Bot для участников группы или чата](resources/team-chat-member-api-changes.md) |
 |03/05/2021|Примечание. У вкладок больше не будет поля, связанные с их опытом. Разработчики вкладок должны просмотреть и обновить свои приложения. | [Удаление полей вкладок](resources/removing-tab-margins.md) |
-|03/05/2021 | По умолчанию область установки и возможности групповой установки в предварительном просмотре разработчика.| [Возможности установки по умолчанию и группы](concepts/deploy-and-publish/apps-upload.md#add-a-default-install-scope-and-group-capability) |
+|03/05/2021|По умолчанию область установки и возможности групповой установки в предварительном просмотре разработчика.| [Возможности установки по умолчанию и группы](concepts/deploy-and-publish/add-default-install-scope.md) |
 |03/05/2021|Переубор личных вкладок приложений|[Reorder the chat tab in personal apps](tabs/how-to/create-tab-pages/content-page.md#reorder-static-personal-tabs)|
 |03/04/2021|Маскировка сведений в адаптивных картах находится в предварительном просмотре разработчика.| [Маскировка сведений в адаптивных картах](task-modules-and-cards/cards/cards-format.md#information-masking-in-adaptive-cards) |
 |02/19/2021|Новое. Добавлены возможности расположения. <br/> Обновление. Сведения о возможностях расположения добавляются в обзор возможностей устройства, разрешения на использование родных устройств, интеграцию возможностей мультимедиа и файлов сканера QR или штрих-кодов.|[Обзор](concepts/device-capabilities/device-capabilities-overview.md), [Запрос разрешений устройств](concepts/device-capabilities/native-device-permissions.md), [Интеграция возможностей](concepts/device-capabilities/mobile-camera-image-permissions.md)мультимедиа , [Интеграция QR](concepts/device-capabilities/qr-barcode-scanner-capability.md)или возможности сканера штрихкодов , [Интеграция возможностей расположения](concepts/device-capabilities/location-capability.md) |
