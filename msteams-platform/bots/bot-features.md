@@ -1,22 +1,22 @@
 ---
-title: Боты и SDKs
+title: Боты и пакеты SDK
 author: clearab
 description: Боты и SDKs в Microsoft Teams.
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: c76a3300229e038e0d6a93d2701b3b3c5a1286da
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: b38a40cfd88c9b5879f6d777f50b919125ce9ec9
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697256"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995976"
 ---
-# <a name="bots-and-sdks"></a>Боты и SDKs
+# <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
 Чтобы создать бот, который работает в Microsoft Teams, можно использовать один из следующих ниже.
-* Существующий бот, построенный на SDK Microsoft Bot Framework
-* Служба чат-ботов Power Virtual Agents
-* Веб-перехватчики и соединительные линии
+* Существующий бот, построенный на SDK Microsoft Bot Framework.
+* Служба чат-ботов Power Virtual Agents.
+* Webhooks и соединители.
 
 ## <a name="bots-and-the-microsoft-bot-framework"></a>Боты и Microsoft Bot Framework
 

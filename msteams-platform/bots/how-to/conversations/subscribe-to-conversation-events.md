@@ -4,12 +4,12 @@ author: WashingtonKayaker
 description: Работа с событиями беседы с помощью бота Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: af1724620ede44f8d0f7739e265ef1ebd1e3afd8
-ms.sourcegitcommit: 0e252159f53ff9b4452e0574b759bfe73cbf6c84
+ms.openlocfilehash: 0736ce07f91f0f33505c5ac3fa031a201d01c2f9
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51762034"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51996032"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -1296,7 +1296,7 @@ async def on_reactions_removed(
 ### <a name="install-update-event"></a>Событие установки обновления
 Используйте событие `installationUpdate` для отправки вводного сообщения от бота при установке. Это событие поможет вам соответствовать требованиям конфиденциальности и хранения данных. Кроме того, при удалении бота можно очистить и удалить данные пользователя или потока.
 
-# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+# <a name="c"></a>[C#](#tab/dotnet)
 
 ```csharp
 protected override async Task
@@ -1378,9 +1378,9 @@ turnContext, CancellationToken cancellationToken) {
 
 ## <a name="code-sample"></a>Пример кода
 
-| **Пример имени** | **Description** | **.NET** |
-|-----------------|-----------------|---------|
-|Microsoft Teams передает события беседы с ботами | Пример событий бота. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) |
+| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+|----------|-----------------|----------|
+| Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий шаг
 

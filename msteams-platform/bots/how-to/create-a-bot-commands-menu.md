@@ -4,12 +4,12 @@ author: clearab
 description: Создание меню команд для бота Microsoft Teams
 ms.topic: how-to
 ms.author: anclear
-ms.openlocfilehash: 839c01f870f026744dfe5fa1331835f5f6b6890f
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: a4d53d8287d425120d24f559b8ffffabebdbcfb4
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697035"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995899"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -32,7 +32,7 @@ ms.locfileid: "51697035"
 
 **Создание командного меню для бота с помощью App Studio**
 
-1. Откройте teams и выберите **Приложения** с левой области. На странице **Приложения** выберите поиск **в App Studio** и выберите **Open**. 
+1. Откройте teams и выберите **Приложения** с левой области. На странице **Приложения** ищите **App Studio** и выберите **Open**. 
    > [!NOTE]
    > Если у вас нет **App Studio,** вы можете скачать его. Дополнительные сведения см. в [записи установки App Studio.](~/concepts/build-and-test/app-studio-overview.md#installing-app-studio)
 

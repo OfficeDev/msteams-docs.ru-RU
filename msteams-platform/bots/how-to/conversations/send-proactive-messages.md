@@ -1,17 +1,17 @@
 ---
-title: Отправлять активные сообщения
+title: Отправка упреждающих сообщений
 description: Описывает, как отправлять упреждающие сообщения с помощью бота Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
 Keywords: отправка сообщения получить ID-ID-ID канала для беседы
-ms.openlocfilehash: 25d5c6a1b51240c87ff0d8610a965d30f6b01095
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 44e8f3335b7ade4f4a8b1e6192802d932cbd39ed
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697055"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995843"
 ---
-# <a name="send-proactive-messages"></a>Отправлять активные сообщения
+# <a name="send-proactive-messages"></a>Отправка упреждающих сообщений
 
 [!INCLUDE [v4 to v3 pointer](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -31,6 +31,8 @@ ms.locfileid: "51697055"
 1. [Создайте беседу,](#create-the-conversation)если потребуется.
 1. [Получите ID беседы](#get-the-conversation-id).
 1. [Отправка сообщения](#send-the-message).
+
+Фрагменты кода в разделе [примеры](#samples) для создания беседы один к одному. Ссылки на полные рабочие примеры для бесед и групп или каналов см. в [примере кода.](#code-sample)
 
 Для эффективного использования упреждающих сообщений см. [в переупреждающихся практиках для активного обмена сообщениями.](#best-practices-for-proactive-messaging) Для определенных сценариев необходимо активно установить приложение с [помощью Graph.](#proactively-install-your-app-using-graph) Фрагменты кода в разделе [примеры](#samples) для создания беседы один к одному. Полные рабочие примеры для бесед и групп или каналов см. в [примере кода.](#code-sample)
 
@@ -63,6 +65,8 @@ ms.locfileid: "51697055"
 После получения соответствующей адресной информации можно отправить сообщение.
 
 ## <a name="send-the-message"></a>Отправка сообщения
+
+Теперь, когда у вас есть правильные сведения о адресе, вы можете отправить свое сообщение. Если вы используете SDK, вы сделаете это с помощью метода, а также для прямого `continueConversation` `conversationId` вызова `tenantId` API. Чтобы успешно отправить сообщение, необходимо правильно `conversationParameters` установить. См. [раздел примеры](#samples) или используйте один из примеров, перечисленных в [примере](#code-sample) кода.
 
 Если вы используете SDK, для отправки сообщения необходимо использовать метод и прямой вызов `continueConversation` `conversationId` `tenantId` API. Чтобы успешно отправить сообщение, необходимо правильно `conversationParameters` установить.
 
@@ -98,8 +102,8 @@ ms.locfileid: "51697055"
 
 При использовании активных сообщений для отправки запланированных сообщений пользователям убедитесь, что часовой пояс обновляется до часового пояса. Это обеспечивает доставку сообщений пользователям в соответствующее время. Расписание сообщений обычно включает в себя:
 
-* **Почему пользователь получает** сообщение. Чтобы пользователям было легко понять причину, по которой они получают сообщение.
-* **Что может сделать пользователь далее.** Пользователи могут принять необходимые действия на основе контента сообщения.
+* Почему пользователь получает сообщение: чтобы пользователям было легко понять причину получения сообщения.
+* Что может сделать пользователь далее: пользователи могут принять необходимые действия на основе контента сообщения.
 
 ## <a name="proactively-install-your-app-using-graph"></a>Активная установка приложения с помощью Graph
 
@@ -262,10 +266,10 @@ POST /v3/conversations
 
 В следующей таблице приводится простой пример кода, который включает основной поток беседы в приложение Teams и способ создания нового потока беседы в канале Teams:
 
-| Пример имени           | Описание                                                                      | .NET    | Node.js   | Python  |
-|:----------------------|:---------------------------------------------------------------------------------|:--------|:-------------|:--------|
-|Основы беседы команд  | Демонстрирует основы бесед в Teams, в том числе отправку одно к одному упреждающих сообщений.|[View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot)|
-|Запуск нового потока в канале     | Демонстрирует создание нового потока в канале. |[View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel)|[View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel)|[View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
+| **Имя образца** | **Описание** | **.NET** | **Node.js** | **Python** |
+|---------------|--------------|--------|-------------|--------|
+| Основы беседы teams  | Демонстрирует основы бесед в Teams, в том числе отправку одно к одному упреждающих сообщений.| [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot) |
+| Запуск нового потока в канале | Демонстрирует создание нового потока в канале. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
 
 ### <a name="additional-code-sample"></a>Дополнительный пример кода
 
@@ -275,4 +279,5 @@ POST /v3/conversations
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
-> [Формат сообщений бота](~/bots/how-to/format-your-bot-messages.md)
+> [**Teams proactive messaging code samples**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp) 
+>  [Формат сообщений бота](~/bots/how-to/format-your-bot-messages.md)

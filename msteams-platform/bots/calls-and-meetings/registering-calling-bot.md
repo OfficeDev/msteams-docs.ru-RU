@@ -1,16 +1,16 @@
 ---
-title: Регистрация бота вызовов и собраний для Microsoft Teams
+title: Бот регистрации вызовов и собраний для Microsoft Teams
 description: Узнайте, как зарегистрировать новый бот аудио- и видеозвонков для Microsoft Teams
 ms.topic: conceptual
 keywords: вызов средства аудио- и видеосвязи бота
-ms.openlocfilehash: 6cbba3f63a97e47fd9cca6dbeea6595cc3bdc9d7
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 4f4f1fdf0c33685e146081085aa7ff8e07f1a87d
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696360"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995864"
 ---
-# <a name="register-a-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация бота вызовов и собраний для Microsoft Teams
+# <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Бот регистрации вызовов и собраний для Microsoft Teams
 
 Бот, который участвует в аудио- или видеозвонков и собраниях в Интернете, является обычным ботом Microsoft Teams со следующими дополнительными функциями, используемыми для регистрации бота:
 

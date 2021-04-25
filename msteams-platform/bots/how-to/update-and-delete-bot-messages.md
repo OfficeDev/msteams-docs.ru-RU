@@ -4,12 +4,12 @@ author: WashingtonKayaker
 description: Обновление и удаление сообщений, отправленных из бота Microsoft Teams
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 3b94c3f0851c62adb905121afb47389144bccffd
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: a2836d59c22b9784f1f1a0c84306072bb6a97d3e
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696319"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51996004"
 ---
 # <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновление и удаление сообщений, отправленных из бота
 
@@ -45,20 +45,19 @@ await turnContext.updateActivity(newActivity);
 
 # <a name="python"></a>[Python](#tab/python)
 
-Чтобы обновить существующее сообщение, передай новый объект с существующим ИД действий `Activity` `update_activity` методу `TurnContext` класса. Дополнительные сведения см. в [тексте TurnContextClass.](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true)
+Чтобы обновить существующее сообщение, передай новый объект с существующим ИД действий `Activity` `update_activity` методу `TurnContext` класса. См. [turnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
 
 ```python
-
 new_activity = MessageFactory.text("The new text for the activity")
 new_activity.id = activity_id
 update_result = await context.update_activity(new_activity)
-
 ```
 
 # <a name="rest-api"></a>[REST API](#tab/rest)
 
 > [!NOTE]
-> Вы можете разрабатывать приложения Teams в любой технологии веб-программирования и напрямую вызывать API службы подключения [ботов REST.](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true) Для этого необходимо реализовать [процедуры](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true) безопасности проверки подлинности с помощью запросов API.
+
+> Вы можете разрабатывать приложения Teams в любой технологии веб-программирования и напрямую вызывать API REST службы [Bot Connector.](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true) Для этого необходимо реализовать [](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true) процедуры безопасности проверки подлинности с помощью запросов API.
 
 Чтобы обновить существующее действие в беседе, включив конечную точку запроса и в `conversationId` `activityId` нее. Чтобы завершить этот сценарий, необходимо кэшировали ID активности, возвращаемую исходным вызовом после.
 
@@ -66,7 +65,7 @@ update_result = await context.update_activity(new_activity)
 PUT /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-|Текст запроса | Возвращаемое значение |
+| **Запрос и responce** | **Описание** |
 |----|----|
 | Объект [активности](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true) | Объект [ResourceResponse](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#resourceresponse-object&preserve-view=true) |
 
@@ -79,7 +78,7 @@ PUT /v3/conversations/{conversationId}/activities/{activityId}
 
 Чтобы обновить существующую карту при выборе кнопки, можно использовать `ReplyToId` входящие действия.
 
-# <a name="c"></a>[C#](#tab/dotnet)
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
 Чтобы обновить существующую карту на выбор кнопки, передай новый объект с обновленной картой и в качестве удостоверения действий `Activity` `ReplyToId` `UpdateActivityAsync` методу `TurnContext` класса. См. [turnContextClass](/dotnet/api/microsoft.bot.builder.turncontext?view=botbuilder-dotnet-stable&preserve-view=true).
 
@@ -101,13 +100,12 @@ await context.updateActivity(message);
 
 # <a name="python"></a>[Python](#tab/python)
 
-Чтобы обновить существующую карту на выбор кнопки, передай новый объект с обновленной картой и в качестве удостоверения действий `Activity` `reply_to_id` `update_activity` методу `TurnContext` класса. См. [turnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
+Чтобы обновить существующую карту нажатием кнопки, передайте новый объект с обновленной картой и в качестве удостоверения действий `Activity` `reply_to_id` `update_activity` методу `TurnContext` класса. См. [turnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
 
 ```python
 updated_activity = MessageFactory.attachment(CardFactory.hero_card(card))
 updated_activity.id = turn_context.activity.reply_to_id
 await turn_context.update_activity(updated_activity)
-
 ```
 
 # <a name="rest-api"></a>[REST API](#tab/rest)
@@ -171,7 +169,7 @@ for each activity_id in _list:
 DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-|Запрос |Отклик |
+| **Запрос и responce** | **Описание** |
 |----|----|
 | Недоступно | Код состояния HTTP, который указывает результат операции. В теле ответа ничего не указывается. |
 
@@ -181,12 +179,11 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 
 В следующем примере кода демонстрируются основы бесед:
 
-| Пример имени           | Описание                                                                      | .NET    | Node.js   | Python  |
-|:----------------------|:---------------------------------------------------------------------------------|:--------|:-------------|:--------|
-|Основы беседы команд  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений.|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
+| **Имя образца** | **Описание** | **.NET** | **Node.js** | **Python** |
+|----------------------|-----------------|--------|-------------|--------|
+| Основы беседы teams  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Контекст Get Teams](~/bots/how-to/get-teams-context.md)
-

@@ -1,8 +1,8 @@
-## <a name="teams-bot-samples"></a>Образцы бота Teams
+## <a name="code-sample"></a>Пример кода
 
 Полные рабочие примеры, демонстрирующие функциональность, см. в следующих примерах Teams для Bot Framework:
 
-| Пример | Описание | .NET Core | Node.js | Python |
+| **Пример** | **Описание** | **.NET** | **JavaScript** | **Python** |
 |--------|------------- |---|---|---|
 | Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/57.teams-conversation-bot) |
 | Проверка подлинности с помощью OAuthPrompt| Проверка подлинности и базовый обмен сообщениями в Bot Framework v4. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/46.teams-auth) |

@@ -4,12 +4,12 @@ description: Описывает, как отправлять и получать
 keywords: командные файлы ботов отправляют получение
 ms.date: 05/20/2019
 ms.topic: how-to
-ms.openlocfilehash: 81799e3079026a678d78a9e20b8dd3a026d2a4a6
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: bc2cbaeedcc770f82e3fc1f6cfbbf1beda3948fd
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697074"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51996046"
 ---
 # <a name="send-and-receive-files-through-the-bot"></a>Отправка и получение файлов через бот
 
@@ -318,7 +318,9 @@ private async Task SendFileCardAsync(ITurnContext turnContext, string filename, 
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Описание | . NETCore | Javascript | Python |
+В следующем примере кода показано, как получить согласие на файл и загрузить файлы в Teams от бота:
+
+|**Пример имени** | **Описание** | **.NET** | **Javascript** | **Python**|
 |----------------|-----------------|--------------|----------------|-----------|
 | File upload | Демонстрирует, как получить согласие на файл и загрузить файлы в Teams из бота. Кроме того, как получить файл, отправленный боту. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/56.teams-file-upload) |
 

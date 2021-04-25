@@ -3,12 +3,12 @@ title: Боты вызовов и сетевых собраний
 description: Узнайте, как приложения Microsoft Teams могут взаимодействовать с пользователями с помощью голосовых и видео с помощью API Microsoft Graph для звонков и собраний в Интернете.
 ms.topic: conceptual
 keywords: вызов вызовов аудио видео IVR голосовых собраний в Интернете
-ms.openlocfilehash: cac9e31c39f35aeb3ea72e5e8964441f0a1c38f5
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: be3286afe739c8b1d99af896ad64a3963875768d
+ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697115"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995983"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 
@@ -86,6 +86,12 @@ ms.locfileid: "51697115"
 
 * **Носители,** на которые есть приложения. Для того, чтобы бот получил прямой доступ к мультимедиа, ему требуется определенное разрешение Graph. После получения разрешения у [](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/)бота библиотека мультимедиа в режиме реального времени и [SDK-вызов](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html#graph-calling-sdk-and-stateful-client-builder) Graph помогают создавать богатые носитли в режиме реального времени и вызывать ботов. Бот, размещенный в приложении, должен располагаться в среде Windows. Дополнительные сведения см. [в дополнительных сведениях о средствах](./requirements-considerations-application-hosted-media-bots.md)массовой информации с хостингом приложений.
 
+## <a name="code-sample"></a>Пример кода
+
+| **Пример имени** | **Описание** | **Microsoft Graph** |
+|---------------|----------|--------|
+| Сообщение graph | График сообщений для взаимодействия с платформой связи Майкрософт. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples) |
+
 ## <a name="see-also"></a>См. также
 
 > [!div class="nextstepaction"]
@@ -106,4 +112,4 @@ ms.locfileid: "51697115"
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
-> [Вызовы и собрания мультимедиа в режиме реального времени](~/bots/calls-and-meetings/real-time-media-concepts.md)
+> [Звонки и собрания в реальном времени](~/bots/calls-and-meetings/real-time-media-concepts.md)
