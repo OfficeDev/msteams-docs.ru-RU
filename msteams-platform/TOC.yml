@@ -238,7 +238,7 @@
           href: bots/calls-and-meetings/calls-meetings-bots-overview.md
         - name: Звонки и собрания в реальном времени
           href: bots/calls-and-meetings/real-time-media-concepts.md
-        - name: Регистрация бота вызовов
+        - name: Регистрация бота для звонков и собраний
           href: bots/calls-and-meetings/registering-calling-bot.md
         - name: Уведомления о входящих звонках
           href: bots/calls-and-meetings/call-notifications.md
@@ -384,6 +384,8 @@
           href: graph-api/rsc/test-rsc-json-file.md
 - name: Публикация приложения
   items:
+    - name: Настройка параметров установки по умолчанию
+      href: concepts/deploy-and-publish/add-default-install-scope.md
     - name: Выбор способа распространения приложения
       href: concepts/deploy-and-publish/overview.md
     - name: Создание пакета приложений
