@@ -3,13 +3,14 @@ title: Сообщения в беседах с ботами
 description: Описывает способы беседы с ботом Microsoft Teams
 ms.topic: overview
 ms.author: anclear
+localization_priority: Normal
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: e3239d8ae7a9950e7b66d552fee2c739ca61d76b
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 5944cc299a8ad4bebdaf034d803919a54868e41f
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697252"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020928"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -409,7 +410,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 ## <a name="see-also"></a>См. также
 
 > [!div class="nextstepaction"]
-> [Отправлять активные сообщения](~/bots/how-to/conversations/send-proactive-messages.md)
+> [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
 > [!div class="nextstepaction"]
 > [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
 

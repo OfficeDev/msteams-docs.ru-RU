@@ -4,13 +4,14 @@ author: laujan
 description: создание приложений для собраний групп
 ms.topic: conceptual
 ms.author: lajanuar
+localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: c9410e142c6831fa0aa1b1f5307d92d67739be0e
-ms.sourcegitcommit: ee8c4800da3b3569d80c6f3661a2f20aa1f2c5e2
+ms.openlocfilehash: c733f89208e82c032f581109f9c3887f20c104b9
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51885075"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52018378"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -36,7 +37,7 @@ ms.locfileid: "51885075"
 
 ## <a name="meeting-apps-api-reference"></a>Ссылка на API приложений для собраний
 
-|API|Description|Запрос|Source|
+|API|Описание|Запрос|Источник|
 |---|---|----|---|
 |**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Клиент Microsoft Teams SDK|
 |**GetParticipant**| Этот API позволяет боту получать сведения о участниках, встречая ID и ID участника. |**GET** _**/v1/meetings/{meetingId}/participants/{participantsId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
@@ -134,7 +135,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 
 #### <a name="response-codes"></a>Коды ответа
 
-|Код ответа|Description|
+|Код ответа|Описание|
 |---|---|
 | **403** | Приложение не может получать сведения о участниках. Это наиболее распространенный ответ на ошибки, который запускается, если приложение не установлено на собрании. Например, если приложение отключено администратором клиента или заблокировано во время переноса веб-сайтов в прямом эфире.|
 | **200** | Данные участника успешно извлекаются.|
@@ -218,7 +219,7 @@ POST /v3/conversations/{conversationId}/activities
 
 #### <a name="response-codes"></a>Коды ответа
 
-|Код ответа|Description|
+|Код ответа|Описание|
 |---|---|
 | **201** | Успешно отправляется действие с сигналом |
 | **401** | Приложение отвечает недействительным маркером. |
@@ -376,7 +377,7 @@ POST /v3/conversations/{conversationId}/activities
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Description | .NET | Node.js |
+|Пример имени | Описание | .NET | Node.js |
 |----------------|-----------------|--------------|--------------|
 | Разнонасть собраний | Пример extensibility microsoft Teams для передачи маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | |
 | Бот-бот для пузырьков контента для собраний | Пример extensibility microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|

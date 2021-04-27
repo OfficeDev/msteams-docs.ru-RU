@@ -2,14 +2,15 @@
 title: Требования и соображения к медийным ботам с хостингом приложений
 description: Понимание важных требований и соображений, связанных с созданием веб-ботов мультимедиа для Microsoft Teams.
 ms.topic: conceptual
+localization_priority: Normal
 keywords: windows server azure vm с использованием приложения
 ms.date: 11/16/2018
-ms.openlocfilehash: 4a191bbde6b592c74930069d794ff37273785c1b
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 731cc53573d5c2b65eaed36d75793901fde86e54
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995955"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020058"
 ---
 # <a name="requirements-and-considerations-for-application-hosted-media-bots"></a>Требования и соображения к медийным ботам с хостингом приложений
 

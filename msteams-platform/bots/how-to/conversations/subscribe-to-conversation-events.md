@@ -3,13 +3,14 @@ title: События беседы
 author: WashingtonKayaker
 description: Работа с событиями беседы с помощью бота Microsoft Teams.
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 0736ce07f91f0f33505c5ac3fa031a201d01c2f9
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 23f58a0544b317f7532ff12bc7f30b6eb6cd670a
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51996032"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020030"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 

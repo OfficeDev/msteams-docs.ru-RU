@@ -3,13 +3,14 @@ title: Отправка упреждающих сообщений
 description: Описывает, как отправлять упреждающие сообщения с помощью бота Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
+localization_priority: Normal
 Keywords: отправка сообщения получить ID-ID-ID канала для беседы
-ms.openlocfilehash: 44e8f3335b7ade4f4a8b1e6192802d932cbd39ed
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: ae651ac94b1b092374f6fae284b67070036b561f
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995843"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020921"
 ---
 # <a name="send-proactive-messages"></a>Отправка упреждающих сообщений
 

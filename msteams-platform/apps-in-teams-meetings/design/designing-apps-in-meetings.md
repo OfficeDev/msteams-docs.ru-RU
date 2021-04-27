@@ -3,24 +3,25 @@ title: Проектирование расширения собрания
 author: heath-hamilton
 description: Узнайте, как создать приложения на собраниях Teams и получить набор пользовательского интерфейса Microsoft Teams.
 ms.author: lajanuar
+localization_priority: Normal
 ms.topic: conceptual
-ms.openlocfilehash: e4e7bb05fbc9717a4eb8323302d1a10eac4c77dd
-ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
+ms.openlocfilehash: 022ffdd7341f60a9c6732948a0914383ddb248a8
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51596254"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52018476"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Разработка расширения собраний Microsoft Teams
 
 Вы можете создавать приложения, чтобы сделать собрания более продуктивными. Например, попросите людей выполнить опрос во время вызова или отправить быстрое напоминание, которое не прерывает поток собрания.
 
-## <a name="microsoft-teams-ui-kit"></a>Набор пользовательского интерфейса Microsoft Teams
+## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
 В наборе пользовательского интерфейса Microsoft Teams можно найти более исчерпывающие рекомендации по проектированию, в том числе элементы, которые можно захватить и изменить по мере необходимости.
 
 > [!div class="nextstepaction"]
-> [Получите набор пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
+> [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
 
 ## <a name="add-a-meeting-extension"></a>Добавление расширения собрания
 
@@ -346,9 +347,9 @@ ms.locfileid: "51596254"
    :::column-end:::
 :::row-end:::
 
-## <a name="validate-your-design"></a>Проверка дизайна
+## <a name="validate-your-design"></a>Проверка приложения
 
-Если вы планируете опубликовать приложение в AppSource, необходимо понять проблемы проектирования, которые обычно приводят к сбойу приложений во время отправки.
+Если вы планируете опубликовать приложение в AppSource, следует понимать проблемы проектирования, из-за которых отправка приложения часто бывает неудачной.
 
 > [!div class="nextstepaction"]
-> [Проверка рекомендаций по проверке конструкции](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#validation-guidelines--most-failed-test-cases)
+> [Ознакомьтесь с рекомендациями по проверке дизайна](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#validation-guidelines--most-failed-test-cases)

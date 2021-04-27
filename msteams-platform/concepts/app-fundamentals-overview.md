@@ -3,13 +3,14 @@ title: Обзор основ разработки приложений
 author: heath-hamilton
 description: Опишите основные концепции разработки платформы Teams.
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 4af23e06cbf7a3f630b77ee1693e0931c9c9c03e
-ms.sourcegitcommit: 9404c2e3a30887b9e17e0c89b12dd26fd9b8033e
+ms.openlocfilehash: b52eebf2b8e0884cd225298ae557bb7ac65d4a68
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654274"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020865"
 ---
 # <a name="microsoft-teams-app-development-fundamentals"></a>Основы разработки приложений Microsoft Teams
 
@@ -19,7 +20,7 @@ ms.locfileid: "51654274"
 
 Вы можете расширить приложение Teams несколькими способами. Чтобы расширить приложение, необходимо понимать все основные возможности и точки входа, которые работают в совместном пространстве. Вы можете поэкспериментировать с точками расширения для создания приложений. Важные компоненты проекта приложения помогают правильно настроить страницу приложения. Приложение Teams может иметь [несколько возможностей и](../concepts/capabilities-overview.md) [точки входа.](../concepts/extensibility-points.md)
 
-## <a name="understand-your-use-cases"></a>Проанализируйте варианты использования
+## <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
 Вы можете распознать проблемы пользователей и определить ответы на некоторые распространенные проблемы, с которыми сталкиваются пользователи. Вы можете создать приложение Teams, найдя правильное сочетание для удовлетворения потребностей пользователя. [Используйте случаи,](../concepts/design/understand-use-cases.md) чтобы узнать, как конечный пользователь взаимодействует с вашим приложением. Вы научитесь понимать пользователя и его проблему. Ответы на некоторые распространенные вопросы следуют следующим образом:
 

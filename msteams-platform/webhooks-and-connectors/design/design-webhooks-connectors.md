@@ -1,16 +1,17 @@
 ---
-title: Разработка веб-hooks и соединитеителей Microsoft Teams
+title: Разработка веб-ок и соединители Microsoft Teams
 author: heath-hamilton
-description: Руководство и рекомендации по разработке веб-сайтов и соединитеителей для Microsoft Teams.
+description: Рекомендации и рекомендации по разработке веб-ок и соединители для Microsoft Teams.
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 34d7f5dd993dfb8a4de32d49d58ed47be09d92e2
-ms.sourcegitcommit: 4539479289b43812eaae07a1c0f878bed815d2d2
+ms.openlocfilehash: cdf52398626f726ccd908ee5e2bf0861a81e5757
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49797938"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020220"
 ---
-# <a name="design-webhooks-and-connectors"></a>Разработка веб-hooks и соединители
+# <a name="design-webhooks-and-connectors"></a>Разработка веб-ок и соединители
 
 Скоро...

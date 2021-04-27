@@ -2,14 +2,15 @@
 title: Поддержка SSO для расширений обмена сообщениями
 author: KirtiPereira
 description: Как включить поддержку SSO для расширений обмена сообщениями
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: a5f75ef59a3d6fa3fe190b4dba4a1e5736a87562
-ms.sourcegitcommit: 0206ed48c6a287d14aec3739540194a91766f0a3
+ms.openlocfilehash: f7dc689da3f0e3e06b8f9c68836b6449c2ae9120
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51378348"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020704"
 ---
 # <a name="single-sign-on-sso-support-for-messaging-extensions"></a>Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями
  
@@ -17,7 +18,7 @@ ms.locfileid: "51378348"
 
 В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые условия
 
 Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
 * У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/en-us/free/)
@@ -122,5 +123,5 @@ ms.locfileid: "51378348"
 > [Использование SSO для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md)
 
 > [!div class="nextstepaction"]
-> [Развернуть ссылку](link-unfurling.md)
+> [Развертывание ссылки](link-unfurling.md)
 

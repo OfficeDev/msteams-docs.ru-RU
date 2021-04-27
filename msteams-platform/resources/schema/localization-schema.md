@@ -1,19 +1,20 @@
 ---
-title: Справка по схеме JSON файла локализации
+title: Ссылка на схему JSON файла локализации
 description: Описывает схему локализации, поддерживаемую файлом локализации для Microsoft Teams
 ms.topic: reference
-keywords: Локализация схемы манифеста teams
+localization_priority: Normal
+keywords: группы проявляют локализацию схемы
 ms.date: 05/20/2019
-ms.openlocfilehash: 696a65de70a63e767f8fcdb040364fe90cde8716
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+ms.openlocfilehash: 3e4207fb3e862eac18c80ffc49e7c5648ae05c28
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014602"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019708"
 ---
-# <a name="reference-localization-file-json-schema"></a>Справка: схема JSON файла локализации
+# <a name="reference-localization-file-json-schema"></a>Справка: схема JSON-файла локализации
 
-В файле локализации Microsoft Teams описываются переводы языков, которые будут обслуживаться на основе языковых параметров клиента. Файл должен соответствовать схеме, хранящейся в [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json) папке . Дополнительные сведения [см. в локализации приложения.](~/concepts/build-and-test/apps-localization.md)
+В файле локализации Microsoft Teams описываются языковые переводы, которые будут поданы в зависимости от параметров языка клиента. Файл должен соответствовать схеме, которая была на уровне [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json) . Дополнительные сведения см. [в сведениях о локализации приложений.](~/concepts/build-and-test/apps-localization.md)
 
 ## <a name="sample"></a>Пример
 
@@ -38,91 +39,91 @@ ms.locfileid: "50014602"
 
 **URI**
 
-URL-https://, ссылающийся на схему JSON для манифеста.
+URL https:// ссылки на схему JSON для манифеста.
 
 > [!TIP]
-> Укажите схему в начале манифеста, чтобы включить поддержку IntelliSense или аналогичную поддержку из редактора кода: `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
+> Укажите схему в начале манифеста, чтобы включить IntelliSense или аналогичную поддержку редактора кода: `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
 
 ## <a name="nameshort"></a>name.short
 
-**Строка, максимальная длина 30**
+**String, Max Length 30**
 
-Заменяет соответствующую строку из манифеста приложения на значение, предоставленную здесь.
+Заменяет соответствующую строку из манифеста приложения значением, которое здесь.
 
 ## <a name="namefull"></a>name.full
 
-**Строка, максимальная длина 100**
+**String, Max Length 100**
 
-Заменяет соответствующую строку из манифеста приложения на значение, предоставленную здесь.
+Заменяет соответствующую строку из манифеста приложения значением, которое здесь.
 
 ## <a name="descriptionshort"></a>description.short
 
-**Строка, максимальная длина 80**
+**String, Max Length 80**
 
-Заменяет соответствующую строку из манифеста приложения на значение, предоставленную здесь.
+Заменяет соответствующую строку из манифеста приложения значением, которое здесь.
 
 ## <a name="descriptionfull"></a>description.full
 
-**Строка, максимальная длина 4000**
+**String, Max Length 4000**
 
-Заменяет соответствующую строку из манифеста приложения на значение, предоставленную здесь.
+Заменяет соответствующую строку из манифеста приложения значением, которое здесь.
 
-## <a name="statictabs0-910-5name"></a>staticTabs \\ [([0-9]|1[0-5]) \\ ] \\ .name
+## <a name="statictabs0-910-5name"></a>staticTabs \\ [[[0-9]|1[0-5]] \\ ] \\ .name
 
-**Строка, максимальная длина 128**
+**String, Max Length 128**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="bots0commandlists0-2commands0-9title"></a>bots \\ [0 \\ ] \\ .commandLists \\ [[0-2] \\ ] \\ .commands \\ [[0-9] \\ \\ .title
+## <a name="bots0commandlists0-2commands0-9title"></a>bots \\ [0 \\ ] \\ .commandLists \\ [[0-2] \\ ] \\ .commands \\ [[0-9] \\ ] \\ ].title
 
-**Строка, максимальная длина 32**
+**String, Max Length 32**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="bots0commandlists0-2commands0-9description"></a>bots \\ [0 \\ ] \\ .commandLists \\ [[0-2] \\ ] \\ .commands \\ [[0-9] \\ \\ .description
+## <a name="bots0commandlists0-2commands0-9description"></a>bots \\ [0 \\ ] \\ .commandLists \\ [[0-2] \\ ] \\ .commands \\ [[0-9] \\ ] \\ .description
 
-**Строка, максимальная длина 128**
+**String, Max Length 128**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9title"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .title
+## <a name="composeextensions0commands0-9title"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ .title
 
-**Строка, максимальная длина 32**
+**String, Max Length 32**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9description"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .description
+## <a name="composeextensions0commands0-9description"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ .description
 
-**Строка, максимальная длина 128**
+**String, Max Length 128**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9parameters0-4title"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ ] \\ .title
+## <a name="composeextensions0commands0-9parameters0-4title"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ ] \\ .title
 
-**Строка, максимальная длина 32**
+**String, Max Length 32**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9parameters0-4description"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ \\ .description
+## <a name="composeextensions0commands0-9parameters0-4description"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ ] \\ .description
 
-**Строка, максимальная длина 128**
+**String, Max Length 128**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9parameters0-4value"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ \\ .value
+## <a name="composeextensions0commands0-9parameters0-4value"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ ] \\ .value
 
-**Строка, максимальная длина 512**
+**String, Max Length 512**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9parameters0-4choices0-9title"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .parameters \\ [[0-4] \\ ] \\ .choices \\ [[0-9] \\ \\ .title
+## <a name="composeextensions0commands0-9parameters0-4choices0-9title"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ ].parameters \\ [[0-4] \\ ] \\ .choices \\ [[0-9] \\ ] \\ .title
 
-**Строка, максимальная длина 128**
+**String, Max Length 128**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.
 
-## <a name="composeextensions0commands0-9taskinfotitle"></a>composeExtensions \\ [0 \\ ] \\ .commands \\ [[0-9] \\ ] \\ .taskInfo \\ .title
+## <a name="composeextensions0commands0-9taskinfotitle"></a>composeExtensions \\ [0] \\ \\ .commands \\ [[0-9] \\ ] \\ .taskInfo \\ .title
 
-**Строка, максимальная длина 64**
+**String, Max Length 64**
 
-Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.
+Заменяет соответствующую строку (ы) из манифеста приложения на значение, предоставленную здесь.

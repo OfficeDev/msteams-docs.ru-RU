@@ -2,13 +2,14 @@
 title: Боты вызовов и сетевых собраний
 description: Узнайте, как приложения Microsoft Teams могут взаимодействовать с пользователями с помощью голосовых и видео с помощью API Microsoft Graph для звонков и собраний в Интернете.
 ms.topic: conceptual
+localization_priority: Normal
 keywords: вызов вызовов аудио видео IVR голосовых собраний в Интернете
-ms.openlocfilehash: be3286afe739c8b1d99af896ad64a3963875768d
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 52a7e1e24fdc0a2c17264087e4f4461b7c43a50a
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995983"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020171"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 

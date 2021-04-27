@@ -3,13 +3,14 @@ title: Создание расширения для сообщений с пом
 author: clearab
 description: Узнайте, как создать расширение обмена сообщениями Microsoft Teams с помощью App Studio.
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 25086d959004046e8227de46b31d840c0b3fd228
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 10de4c6f9e7b81e1edc47622cb5c0c814d2eb3a7
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697248"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019743"
 ---
 # <a name="create-a-messaging-extension-using-app-studio"></a>Создание расширения для сообщений с помощью App Studio
 

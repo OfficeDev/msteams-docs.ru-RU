@@ -1,17 +1,18 @@
 ---
-title: Проанализируйте варианты использования
+title: Анализ вариантов использования
 author: clearab
-description: Проанализируйте варианты использования
+description: Анализ вариантов использования
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: a873c3030ee4ed5f5fc98229c058583e64c38de5
-ms.sourcegitcommit: 9404c2e3a30887b9e17e0c89b12dd26fd9b8033e
+ms.openlocfilehash: 748e40c712af7fb0095edd4f6ffe67ed253decec
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654281"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019869"
 ---
-# <a name="understand-your-use-cases"></a>Проанализируйте варианты использования
+# <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
 Платформа Microsoft Teams предлагает большое количество точек входа и [элементов пользовательского](../../concepts/extensibility-points.md) интерфейса, которые может использовать приложение.
 > [!NOTE]

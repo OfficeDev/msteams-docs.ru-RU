@@ -1,15 +1,17 @@
 ---
 title: Интеграция возможностей мультимедиа
+author: Rajeshwari-v
 description: Использование SDK клиента Teams JavaScript для обеспечения возможностей мультимедиа
 keywords: Возможности микрофона изображения камеры для носителей разрешений на устройства
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 375d68c7c712b7a8d2f7114b47aae61c889b4197
-ms.sourcegitcommit: 5cb3453e918bec1173899e7591b48a48113cf8f0
+ms.openlocfilehash: 9e4ccf2dfd2c8743621ea44f340ca7a41e302adc
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449584"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020746"
 ---
 # <a name="integrate-media-capabilities"></a>Интеграция возможностей мультимедиа 
 
@@ -79,7 +81,7 @@ API [selectMedia,](/javascript/api/@microsoft/teams-js/media?view=msteams-client
 Необходимо обеспечить надлежащее обработку этих ошибок в приложении Teams. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
 
-|Код ошибки |  Имя ошибки     | Condition|
+|Код ошибки |  Имя ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **404** | FILE_NOT_FOUND | Указанный файл не найден в указанном расположении.|

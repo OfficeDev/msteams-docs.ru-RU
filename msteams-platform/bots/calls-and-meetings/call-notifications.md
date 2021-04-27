@@ -2,14 +2,15 @@
 title: Уведомления о входящих звонках
 description: Подробные технические сведения об обработке уведомлений от входящих вызовов
 ms.topic: conceptual
+localization_priority: Normal
 keywords: близость области вызовов вызовов уведомлений о вызове
 ms.date: 04/02/2019
-ms.openlocfilehash: 1ab28f898d2b51b4c1c643006ecac06ca79b2d14
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 06068c13d27598b9a7b5e70181c69f9efb2c0afb
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696404"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020178"
 ---
 # <a name="incoming-call-notifications"></a>Уведомления о входящих звонках
 

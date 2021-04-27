@@ -2,13 +2,14 @@
 title: Поток проверки подлинности Microsoft Teams для ботов
 description: Описывает поток проверки подлинности Microsoft Teams в ботах
 keywords: боты потока проверки подлинности команд
+localization_priority: Normal
 ms.topic: overview
-ms.openlocfilehash: e76b318f11e651bbf1c20131c5d0d482c2494b60
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: ede626fe7f531c42d83cf9e74d93b93d70e162c3
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995913"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020044"
 ---
 # <a name="authentication-flow-for-bots-in-microsoft-teams"></a>Поток проверки подлинности для ботов в Microsoft Teams
 

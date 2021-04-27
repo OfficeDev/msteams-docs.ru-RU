@@ -1,14 +1,15 @@
 ---
 title: Использование модулей задач в ботах Microsoft Teams
-description: Использование модулей задач с ботами Microsoft Teams, включая карты Bot Framework, адаптивные карты и глубокие ссылки.
+description: Использование модулей задач с ботами Microsoft Teams, включая карты Bot Framework, адаптивные карты и глубокие ссылки
+localization_priority: Normal
 ms.topic: how-to
 keywords: модули задач групп ботов
-ms.openlocfilehash: d87b55bf202184f315abf69dfc34fc4db9125c4f
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 948af0c71acb20f4d84fa25ba79618045dad9da7
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696474"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020277"
 ---
 # <a name="using-task-modules-from-microsoft-teams-bots"></a>Использование модулей задач от ботов Microsoft Teams
 

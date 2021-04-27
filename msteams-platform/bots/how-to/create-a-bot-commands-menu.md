@@ -3,13 +3,14 @@ title: Создание меню команд для бота
 author: clearab
 description: Создание меню команд для бота Microsoft Teams
 ms.topic: how-to
+localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: a4d53d8287d425120d24f559b8ffffabebdbcfb4
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: da87725fca6b4eeacd43f48f6946920251d772e9
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995899"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020914"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 

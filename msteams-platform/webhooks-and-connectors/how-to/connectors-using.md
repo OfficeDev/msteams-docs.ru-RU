@@ -2,14 +2,14 @@
 title: Отправка сообщений соединителям и веб-перехватчикам
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 ms.topic: how-to
-localization_priority: Priority
+localization_priority: Normal
 keywords: соединитель teams o365
-ms.openlocfilehash: 28c1a6e68a0ac83a2eb4785d71596814d5a859d3
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
-ms.translationtype: HT
+ms.openlocfilehash: 1a625524f4c0bd278bd19b3adecdf6a59bd818a6
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696019"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020206"
 ---
 # <a name="sending-messages-to-connectors-and-webhooks"></a>Отправка сообщений соединителям и веб-перехватчикам
 
@@ -299,11 +299,11 @@ ms.locfileid: "51696019"
 
 | Время (секунды)  | Максимальное разрешенное количество запросов  |
 |---|---|
-| 1   | 4  |  
+| 1   | 4   |  
 | 30   | 60  |  
 | 3600   | 100  |
 | 7200 | 150  |
-| 86 400  | 1800  |
+| 86400  | 1800  |
 
 *Также см.* [Соединители Office 365 — Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
 

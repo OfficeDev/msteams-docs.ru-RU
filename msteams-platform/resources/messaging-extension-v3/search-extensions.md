@@ -3,13 +3,14 @@ title: Поиск с расширениями обмена сообщениям�
 description: Описание разработки расширений обмена сообщениями на основе поиска
 keywords: команды расширения обмена сообщениями расширениями обмена сообщениями поиска
 ms.topic: how-to
+localization_priority: Normal
 ms.date: 07/20/2019
-ms.openlocfilehash: 7a4074fe4f3a15621729f4c549d31dc90d98e714
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 89b8a42f0a9ec86d22d194d2fe5145fba5489f20
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696109"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019729"
 ---
 # <a name="search-with-messaging-extensions"></a>Поиск с расширениями обмена сообщениями
 

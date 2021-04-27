@@ -3,13 +3,14 @@ title: Тестирование и отлагивание бота локаль�
 author: clearab
 description: Тестирование и отладка бота локально с помощью IDE
 ms.topic: overview
+localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 5a35419564f87617ee5d590e2a604e970caa16b3
-ms.sourcegitcommit: 9404c2e3a30887b9e17e0c89b12dd26fd9b8033e
+ms.openlocfilehash: 495e4dd2a3f29dbe0be61e8b42827bfc8c8a6f94
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654468"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020023"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 

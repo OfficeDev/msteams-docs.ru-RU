@@ -1,117 +1,125 @@
 ---
-title: Создание кнопки «Поделиться в Teams»
-description: Добавление встроенной кнопки "Поделиться в Teams" на веб-сайте
+title: Создание кнопки Share-to-Teams
+description: Добавление встроенной кнопки Share to Teams на веб-сайте
 ms.topic: reference
-keywords: Совместное share-to-Teams Teams
-ms.openlocfilehash: 46091c957137cc871095ca6a57c0d61fa79d9458
-ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
+localization_priority: Normal
+keywords: Share Teams Share-to-Teams
+ms.openlocfilehash: c77c4149c95685e17e8f789a9536b4d81e05d13f
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50014336"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020825"
 ---
-# <a name="create-a-share-to-teams-button-for-your-website"></a>Создайте кнопку «Поделиться в Teams» для своего сайта
+# <a name="create-share-to-teams-button"></a>Создание кнопки Share-to-Teams
 
->[!NOTE]
-> * Поддерживаются только классические версии Edge и Chrome.
-> * Использование учетных записей Freemium или гостевых учетных записей не поддерживается.
+Сторонние веб-сайты могут использовать сценарий запуска для встраив кнопки Share-to-Teams на своих веб-сайтах. При выборе запускается опыт share-to-Teams в всплывающее окно. Это позволяет обмениваться ссылками напрямую с любым человеком или каналом Microsoft Teams без переключения контекста. В этом документе вы можете узнать, как создать и встраить кнопку Share-to-Teams для веб-сайта, создать предварительный просмотр веб-сайта и расширить возможности share-to-Teams для образования.
 
-Сторонние веб-сайты могут использовать сценарий запуска, чтобы встраить кнопки "Поделиться" в teams на своих веб-странице, что позволит при нажатии на них запускать окне "Поделиться в Teams" во всплывающее окно. Это позволит вам делиться ссылкой непосредственно с любым человеком или каналом Microsoft Teams без переключения контекста.
+> [!NOTE]
+> * Поддерживаются только настольные версии Edge и Chrome.
+> * Использование учетных записей Freemium или гостевой не поддерживается.  
 
-![Всплывающее всплывающее окна "Поделиться в Teams"](~/assets/images/share-to-teams-popup.png)
+На следующем изображении отображается всплывающее представление share-to-Teams:
 
-## <a name="how-to-embed-a-share-to-teams-button"></a>Как встраить кнопку "Поделиться" в Teams
+![Всплывающее всплыв](~/assets/images/share-to-teams-popup.png)
 
-Сначала необходимо добавить сценарий `launcher.js` на веб-страницу.
+## <a name="embed-a-share-to-teams-button"></a>Встраить кнопку Share to Teams
 
-```html
-<script async defer src="https://teams.microsoft.com/share/launcher.js"></script>
-```
+1. Добавьте `launcher.js` скрипт на веб-страницу.
 
-Затем добавьте htmL-элемент на веб-страницу с атрибутом класса и ссылкой для совместной использования `teams-share-button` в `data-href` атрибуте.
+    ```html
+    <script async defer src="https://teams.microsoft.com/share/launcher.js"></script>
+    ```
 
-```html
-<div
-  class="teams-share-button"
-  data-href="https://<link-to-be-shared>">
-</div>
-```
+1. Добавьте элемент HTML на веб-страницу с атрибутом класса и ссылкой, `teams-share-button` которая будет делиться в `data-href` атрибуте.
 
-Это добавит значок Microsoft Teams на ваш веб-сайт.
+    ```html
+    <div
+      class="teams-share-button"
+      data-href="https://<link-to-be-shared>">
+    </div>
+    ```
 
-![Значок "Поделиться в Teams"](~/assets/icons/share-to-teams-icon.png)
+    После завершения этого значка Microsoft Teams добавляется на ваш веб-сайт. На следующем изображении показан значок Share-to-Teams:
 
-При желании, если вы хотите использовать другой размер значка для кнопки "Поделиться в Teams", используйте `data-icon-px-size` атрибут.
+    ![Share to Teams icon](~/assets/icons/share-to-teams-icon.png)
 
-```html
-<div
-  class="teams-share-button"
-  data-href="https://<link-to-be-shared>"
-  data-icon-px-size="64">
-</div>
-```
+1. Кроме того, если для кнопки Share-to Teams нужен другой размер значка, используйте `data-icon-px-size` атрибут.
 
-Если вы знаете, что предварительный просмотр URL-адреса из ссылки для совместного просмотра не будет хорошо отрисовки в Teams (например, ссылка требует проверки подлинности пользователя), вы можете отключить предварительный просмотр URL-адресов, добавив атрибут, установленный в `data-preview` `false` .
+    ```html
+    <div
+      class="teams-share-button"
+      data-href="https://<link-to-be-shared>"
+      data-icon-px-size="64">
+    </div>
+    ```
+1. Если общая ссылка требует проверки подлинности пользователя, а предварительный просмотр URL-адреса из общей ссылки не будет хорошо отрисовки в Teams, можно отключить предварительный просмотр URL-адреса, добавив набор `data-preview` `false` атрибутов.
 
-```html
-<div
-  class="teams-share-button"
-  data-href="https://<link-to-be-shared>"
-  data-preview="false">
-</div>
-```
+    ```html
+    <div
+      class="teams-share-button"
+      data-href="https://<link-to-be-shared>"
+      data-preview="false">
+    </div>
+    ```
 
-Если страница динамически отрисовки содержимого, можно использовать метод для принудительного отображения кнопки "Поделиться" в соответствующем `shareToMicrosoftTeams.renderButtons()` месте конвейера. 
+1. Если на странице динамически отрисовка контента, можно использовать метод, чтобы заставить кнопку Share отрисовки в нужном месте `shareToMicrosoftTeams.renderButtons()` в конвейере. 
 
-## <a name="crafting-your-website-preview"></a>Создайте предварительную версию веб-сайта
+## <a name="craft-your-website-preview"></a>Создайте предварительный просмотр веб-сайта
 
-Когда ваш веб-сайт будет общим для Teams, карточка, вставленная в выбранный канал, будет содержать предварительный просмотр вашего веб-сайта. Вы можете управлять поведением этой предварительной версии, убедившись, что соответствующие метаданные добавлены на веб-сайт для общего просмотра `data-href` (URL-адрес). В таблице ниже описаны необходимые теги. Вы можете использовать либо версии html по умолчанию, либо версию Open Graph.
+Когда веб-сайт является общим для Teams, карта, вставленная в выбранный канал, содержит предварительный просмотр веб-сайта. Вы можете управлять поведением этого предварительного просмотра, обеспечивая добавление соответствующих метаданных на общий веб-сайт, например `data-href` URL-адрес.  
 
-Чтобы предварительный просмотр отображался, необходимо:
+**Отображение предварительного просмотра**
 
-* Включаем изображение эскиза или заголовок и описание (для наилучших результатов включаем все три).
-* URL-адрес, к который требуется общий доступ, не может требовать проверки подлинности. Если вы по-прежнему можете поделиться им, но предварительный просмотр не будет создан.
+* Вы должны включить либо **изображение эскиза**, или как **название и** **описание**. Для наилучших результатов включаем все три.
+* Общий URL-адрес не требует проверки подлинности. Если для этого требуется проверка подлинности, вы можете поделиться им, но предварительный просмотр не создан.
+
+В следующей таблице описаны необходимые теги:
 
 |Значение|Метатег| Open Graph|
 |----|----|----|
 |Название|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
 |Описание|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
-|Эскиз| Нет |`<meta property="og:image" content="http://example.com/image.jpg">`|
+|Эскиз изображения| нет. |`<meta property="og:image" content="http://example.com/image.jpg">`|
 
-## <a name="share-to-teams-for-education"></a>Совместное участие в Teams для образования
+Можно использовать либо html-версии по умолчанию, либо версию Open Graph.
 
-Преподавателям, использующим кнопку "Поделиться в Teams", будет предоставлен дополнительный параметр `Create an Assignment` . Это позволяет быстро создать назначение в выбранной команде на основе общей ссылки.
+## <a name="share-to-teams-for-education"></a>Share to Teams for Education
 
-![Всплывающее всплывающее окна "Поделиться в Teams"](~/assets/images/share-to-teams-popup-edu.png)
+Для преподавателей, использующих кнопку Share to Teams, существует дополнительный параметр `Create an Assignment` . Это позволяет быстро создавать назначение в выбранной команде на основе общей ссылки. На следующем изображении отображается share-to-Teams для образования: 
 
-## <a name="full-launcherjs-definition"></a>Полное launcher.js определения
+![Share to Teams popup education](~/assets/images/share-to-teams-popup-edu.png)
 
-| Свойство | Атрибут HTML | Тип | По умолчанию | Описание |
+## <a name="full-launcherjs-definition"></a>Полное launcher.js определение
+
+| Свойство | Атрибут HTML | Type | По умолчанию | Описание |
 | -------------- | ---------------------- | --------------------- | ------- | ---------------------------------------------------------------------- |
-| href | `data-href` | string | н/д | Href содержимого для совместной работы. |
-| preview | `data-preview` | boolean (в качестве строки) | `true` | Следует ли показывать предварительный просмотр содержимого для демонстрации. |
-| iconPxSize | `data-icon-px-size` | number (в строке) | `32` | Размер в пикселях кнопки share-to-Teams для отрисовки. |
-| msgText | `data-msg-text` | string | н/д | Текст по умолчанию, вставляемый перед ссылкой в поле составить сообщение (ограничение в 200 символов) |
-| assignInstr | `data-assign-instr` | string | н/д | Текст по умолчанию, вставляемый в поле "Инструкции" (ограничение в 200 символов) |
-| assignTitle | `data-assign-title` | string | н/д | Текст по умолчанию, вставляемый в поле "Название" (ограничение в 50 символов) |
+| href | `data-href` | String | н/д | Href контента для обмена. |
+| preview | `data-preview` | boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
+| iconPxSize | `data-icon-px-size` | номер (в качестве строки) | `32` | Размер пикселей кнопки Share-to-Teams для отрисовки. |
+| msgText | `data-msg-text` | String | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле для составить сообщение. Максимальное число символов — 200. |
+| assignInstr | `data-assign-instr` | String | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
+| assignTitle | `data-assign-title` | String | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
 
-### <a name="methods"></a>Методы
+### <a name="methods"></a>Methods
 
 **`shareToMicrosoftTeams.renderButtons(options)`**
 
-`options` (необязательно): `{ elements?: HTMLElement[] }`
+`options` (необязательный): `{ elements?: HTMLElement[] }`
 
-Отрисовка всех кнопок для совместной оказания услуг, которые в настоящее время находятся на странице. Если необязательный объект предоставляется со списком элементов, эти элементы будут отрисовыны в кнопки `options` для совместной работы.
+В настоящее время все кнопки обмена отрисовка на странице. Если необязательный объект снабжен списком элементов, эти элементы `options` отрисовыются в кнопки share.
 
-### <a name="setting-default-form-values"></a>Установка значений формы по умолчанию
+### <a name="set-default-form-values"></a>Настройка значений форм по умолчанию
 
-При желании вы можете установить значения по умолчанию для следующих полей в форме "Поделиться в Teams":
+Можно выбрать для набора значений по умолчанию для следующих полей в форме Share to Teams:
 
-* Скажите что-нибудь об этом ( `msgText` )
-* Инструкции по назначению ( `assignInstr` )
-* Заголовок назначения ( `assignTitle` )
+* Скажите что-нибудь об этом: `msgText`
+* Инструкции по назначению: `assignInstr`
+* Название назначения: `assignTitle`
 
-#### <a name="example-default-form-values"></a>Пример: значения форм по умолчанию
+#### <a name="example"></a>Пример
+
+ Значения форм по умолчанию даются в следующем примере:
 
 ```html
 <span
@@ -122,3 +130,8 @@ ms.locfileid: "50014336"
     data-assign-instr="Default Assignment Instructions"
 ></span>
 ```
+
+## <a name="see-also"></a>См. также
+
+> [!div class="nextstepaction"]
+> [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

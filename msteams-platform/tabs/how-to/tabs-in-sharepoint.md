@@ -1,22 +1,25 @@
 ---
-title: Добавление вкладки Microsoft Teams в SharePoint в качестве веб-части SPFx
+title: Добавление вкладки Teams в SharePoint
 author: laujan
 description: Развертывание существующей вкладки Teams в SharePoint в качестве веб-части SharePoint Framework.
-keywords: Разработка sharepoint Framework для вкладок teams
+keywords: teams tabs sharepoint framework development
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 2e5d1b01aa5f7566e25c7720d6a0539386226576
-ms.sourcegitcommit: 6caf503de5544fb8b9c8c6bef8eff4ff5a46068c
+ms.openlocfilehash: 08a4aef329d0e5e1d063f05959f0a589581c9c03
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50270793"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020349"
 ---
-# <a name="adding-a-microsoft-teams-tab-in-sharepoint-as-an-spfx-web-part"></a>Добавление вкладки Microsoft Teams в SharePoint в качестве веб-части SPFx
+# <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint 
 
-## <a name="rich-integration-between-teams-and-sharepoint"></a>Интеграция Teams и SharePoint
+Вы можете получить богатый опыт интеграции между Microsoft Teams и SharePoint, добавив вкладку Microsoft Teams в SharePoint в качестве веб-части SPFx. В этом документе вы можете узнать, как взять вкладку из примерного приложения Microsoft Teams и использовать ее в SharePoint. 
 
-В ноябрьских выпусках Teams и SharePoint Framework v. 1.7 У разработчиков есть две мощные возможности:
+## <a name="rich-integration-between-teams-and-sharepoint"></a>Насыщенная интеграция между Teams и SharePoint
+
+После ноябрьского выпуска Teams и SharePoint Framework v.1.7 у разработчиков есть две мощные возможности:
 
 <ul  class="panelContent cardsC">
 <li>
@@ -30,8 +33,8 @@ ms.locfileid: "50270793"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Вкладки Teams в SharePoint</h3>
-                        <p>Создайте богатые возможности приложений в SharePoint, введя приложение Teams в Sharepoint (эта статья).</p>
+                        <h3>Командные вкладки в SharePoint</h3>
+                        <p>Создайте богатые возможности приложения в SharePoint, введя приложение Teams в Sharepoint (эта статья).</p>
                     </div>
                 </div>
             </div>
@@ -49,8 +52,8 @@ ms.locfileid: "50270793"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>SharePoint Framework в Teams</h3>
-                        <p>Перенесите веб-части SharePoint в Teams и позвольте SharePoint управлять размещением.</p>
+                        <h3>SharePoint Framework в teams</h3>
+                        <p>Принесите веб-части SharePoint в Teams и позвольте SharePoint управлять хостингом для вас.</p>
                     </div>
                 </div>
             </div>
@@ -61,67 +64,90 @@ ms.locfileid: "50270793"
 
 ### <a name="teams-tabs-in-sharepoint"></a>Вкладки Teams в SharePoint
 
-В SharePoint Framework v.1.7 мы поддерживаем возможность разработчиков использовать свои вкладки Teams и проводить их в SharePoint. По мере того как вкладки, вкладки, которые были в SharePoint, получают аналогичную "полную страницу", выдавая все функции вкладок Teams, сохраняя контекст и знакомство с сайтом SharePoint.
+С помощью SharePoint Framework v.1.7 вы можете использовать вкладки Teams в SharePoint. Так как вкладки, которые будут  храниться в SharePoint, получите аналогичную полную страницу, обнажая все функции вкладок Teams, сохраняя при этом контекст и знакомство сайта SharePoint.
 
-### <a name="sharepoint-framework-in-teams"></a>SharePoint Framework в Teams
+### <a name="sharepoint-framework-in-teams"></a>SharePoint Framework в teams
 
-Вы также можете реализовать вкладки Microsoft Teams с помощью SharePoint Framework. Для разработчиков SharePoint это значительно упрощает процесс разработки вкладок Teams, так как веб-части SharePoint Framework находятся в SharePoint без необходимости в внешних службах, таких как Azure. [Узнайте больше об использовании SharePoint Framework в Teams.](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
+Вы также можете реализовать вкладки Microsoft Teams с помощью SharePoint Framework. Веб-части SharePoint Framework находятся в SharePoint без необходимости для внешних служб, таких как Azure. Для разработчиков SharePoint это значительно упрощает процесс разработки вкладок Teams. Дополнительные сведения о SharePoint Framework в Teams см. в разделе Использование [SharePoint Framework в Teams.](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
 
 ## <a name="introduction"></a>Введение
 
-В этих инструкциях объясняется, как можно получить вкладку из примера приложения Microsoft Teams и использовать ее в SharePoint. Мы будем использовать вкладку, которая уже есть в Azure, чтобы сосредоточиться на необходимых процессах интеграции.
+Вкладка, используемая здесь, уже находится в Azure, чтобы сосредоточиться на требуемой работе по интеграции.
 
-Пример приложения, который мы используем, — это приложение управления одаренно. Он управляет процессом найма кандидатов на открытые позиции в команде. (Само приложение, несмотря на то, что оно выглядит хорошо, на самом деле ничего не делают. Мы хотим сосредоточиться на создании приложения Teams и его загрузке в Teams, а не на создании реального приложения для управления одаренными менеджерами.)
+Используемая примерная приложение — приложение управления талантами. Он управляет процессом найма кандидатов на открытые позиции в команде. Создайте пример приложения Teams и загрузите его в Teams. Не создавайте реальное приложение для управления талантами.
 
 ### <a name="benefits-of-this-approach"></a>Преимущества этого подхода
 
-- Доступ к пользователям SharePoint с помощью существующей вкладки Teams
-- Загрузите манифест приложения непосредственно в каталог приложений SharePoint. [Пакеты приложений Teams](~/concepts/build-and-test/apps-package.md) теперь поддерживаются в SharePoint
-- Конечные пользователи настраивают вкладку на странице так же, как и любые другие веб-части SharePoint
-- Ваша вкладка может получить доступ к [контексту](~/tabs/how-to/access-teams-context.md) так же, как и при запуске в Teams
+* Охватите пользователей SharePoint с помощью существующей вкладки Teams.
+* Загрузите манифест приложения непосредственно в каталог приложений SharePoint. [Пакеты приложений Teams](~/concepts/build-and-test/apps-package.md) теперь поддерживаются SharePoint.
+* Пользователи настраивают вкладку на странице так же, как и любую другую веб-часть SharePoint.
+* Ваша вкладка может получить доступ к [контексту,](~/tabs/how-to/access-teams-context.md) как это возможно, при работе внутри Teams.
 
-## <a name="step-1-testing-the-sample-app"></a>Шаг 1. Тестирование примера приложения
+**Добавление вкладки Teams в SharePoint**
 
-Скачайте пример манифеста [**приложения**](https://github.com/MicrosoftDocs/msteams-docs/raw/master/msteams-platform/assets/downloads/TalentMgmt-Azure.zip)здесь.
+Выполните следующие действия, чтобы добавить вкладку Teams в SharePoint:
 
-В Microsoft Teams щелкните значок Магазина в левом нижнем конце, а затем "Отправить пользовательское приложение" в левом нижнем. Отложенный файл будет расположен в папке "Загрузки"; он называется TalentMgmt-Azure.zip. Если все пройдет хорошо, вы увидите экран установки и согласия для приложения управления одарением. Выберите команду, в который вы хотите установить, и нажмите кнопку "Установить". Теперь вы можете поэкспериментировать с приложением.
+## <a name="1-test-the-sample-app"></a>1. Проверка примера приложения
 
-## <a name="step-2-using-the-teams-tab-in-sharepoint"></a>Шаг 2. Использование вкладки Teams в SharePoint
+Скачайте [манифест примера приложения](https://github.com/MicrosoftDocs/msteams-docs/raw/master/msteams-platform/assets/downloads/TalentMgmt-Azure.zip).
 
-Загрузите и развернете пакет приложения Teams в каталоге приложений SharePoint, посетив, `https://YOUR_TENANT_NAME.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx` `https://contoso.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx` например.
+1. Откройте Microsoft Teams.
+1. Выберите **значок Appstore** в нижней левой части боковой вкладки.
+1. Выберите **Отправка настраиваемого приложения** в левом нижнем ок. На следующем изображении отображается соответствующий экран:  
 
-При запросе в включить "Сделать это решение доступным для всех сайтов в организации":
+    ![загрузка настраиваемой приложения](~/assets/images/tabs/tabs-in-sharepoint/upload-custom-app.png)
 
-![Вкладки в представлении SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image065.png)
+1. Файл для отправки находится в папке **Downloads.** Он называется TalentMgmt-Azure.zip. На следующем изображении отображается соответствующий экран:
+ 
+    ![TalentMgmt в Azure](~/assets/images/tabs/tabs-in-sharepoint/talentmgmt-azure.png)
 
-Создайте новую страницу на своем сайте, нажав кнопку шестеренки в правом верхнем правом верхнем направлении и нажав кнопку "Добавить страницу":
+1. Вы можете увидеть экран установки или согласия для приложения управления талантами. Выберите команду, которая будет устанавливаться. 
+1. Выберите **установку** и начните экспериментировать с приложением.
 
-![Представление SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image066.png)
+## <a name="2-use-teams-tab-in-sharepoint"></a>2. Использование вкладки Teams в SharePoint
 
-Вы увидите, как будет делиться страницами SharePoint. Назовите страницу "Моя вкладка Teams".
+1. Загрузите и разверните пакет приложений Teams в каталог приложений SharePoint, посетив `https://YOUR_TENANT_NAME.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx` . Например, `https://contoso.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx`.
 
-Откройте панели инструментов веб-части, нажав кнопку +, и выберите вкладку Teams (с именем "Contoso HR"). Веб-части сортироваться в алфавитном порядке; Если это длинный список, вы можете найти его с помощью панели поиска. В результате на холсте будет создаваться веб-часть, содержаная вкладку Teams:
+1. При запросе **вделайте это решение доступным для всех сайтов в организации.**
+На следующем изображении отображается соответствующий экран:
 
-![Представление "Вкладка"](~/assets/images/tabs/tabs-in-sharepoint/image071.png)
+   ![Вкладки в представлении Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image065.png)
 
-После завершения редактирования нажмите кнопку "Опубликовать".
+1. На своем сайте создайте новую страницу, выбрав кнопку передач в правом верхнем справа, а затем **выберите Добавить страницу**.
+На следующем изображении отображается соответствующий экран:
 
-Может потребоваться нажать кнопку "Добавить страницу в навигацию", чтобы получить быструю ссылку на страницу в левой панели навигации:
+   ![Представление Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image066.png)
 
-![Вкладка в изображении Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image073.png)
+1. Вы можете увидеть опыт авторинга страниц SharePoint. Назови свою страницу **вкладками "Мои команды".**
 
-## <a name="step-3-explore-app-pages-in-sharepoint"></a>Шаг 3. Изучение страниц приложений в SharePoint
+1. Откройте инструментарий веб-части, нажав кнопку, и выберите вкладку `+` Teams с именем **Hr Contoso.** Веб-части сортироваться в алфавитном порядке. Если это длинный список, его можно найти с помощью панели поиска. Это создает веб-часть на холсте, содержаще вкладку Teams. На следующем изображении отображается представление вкладки:
 
-После публикации страницы вы можете изучить, как сделать приложение Teams более полным [в SharePoint.](/sharepoint/dev/spfx/web-parts/single-part-app-pages) При этом текущая страница преобразуется в страницу приложения, где показан обычный макет страницы SharePoint с полно страницей для вкладки Teams:
+   ![Представление Tab](~/assets/images/tabs/tabs-in-sharepoint/image071.png)
 
-![Изображение вкладок в Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image085.png)
+1. Нажмите **кнопку Публикация** после завершения редактирования.
+
+1. Выберите **страницу Добавить в навигацию,** чтобы иметь быструю ссылку на страницу в левой панели навигации. На следующем изображении отображается вкладка в Sharepoint: 
+
+   ![Вкладка в изображении Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image073.png)
+
+## <a name="3-explore-app-pages-in-sharepoint"></a>3. Изучение страниц приложений в SharePoint
+
+После публикации страницы вы можете изучить возможность превращения приложения Teams в более полное приложение [в SharePoint.](/sharepoint/dev/spfx/web-parts/single-part-app-pages) Это преобразует текущую страницу в страницу приложения, показывая нормальный макет страницы SharePoint с полным опытом страницы для вкладки Teams. 
+
+На следующем изображении отображается полное представление приложения Teams в Sharepoint: Изображение вкладок ![ в Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image085.png)
 
 ## <a name="code-sample"></a>Пример кода
-| **Имя примера** | **Описание** | **SPFx** |
+| **Пример имени** | **Описание** | **SPFx** |
 |-----------------|-----------------|----------|
-| Веб-часть SPFx | Примеры веб-части SPFx для вкладок, каналов и групп. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group/spfx)
+| Веб-часть SPFx | Образцы веб-части SPFx для вкладок, каналов и групп. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group/spfx)
 
-## <a name="more-information"></a>Дополнительные сведения
+## <a name="see-also"></a>См. также
 
-- [Создание вкладки Microsoft Teams с помощью SharePoint Framework - Обучающий материал](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
-- [Использование страницы одной части приложения в SharePoint Online](/sharepoint/dev/spfx/web-parts/single-part-app-pages)
+> [!div class="nextstepaction"]
+> [Создание вкладки Microsoft Teams с помощью SharePoint Framework - Обучающий материал](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
+
+> [!div class="nextstepaction"]
+> [Использование страницы одной части приложения в SharePoint Online](/sharepoint/dev/spfx/web-parts/single-part-app-pages)
+
+> [!div class="nextstepaction"]
+> [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

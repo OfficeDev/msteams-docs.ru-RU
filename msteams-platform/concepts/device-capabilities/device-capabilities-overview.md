@@ -1,16 +1,19 @@
 ---
-title: Обзор возможностей устройства
+title: Возможности устройства — Обзор
+author: Rajeshwari-v
 description: Обзор возможностей родного устройства.
+ms.author: surbhigupta
 keywords: Микрофон микрофона микрофона микрофона qr qr code qrcode штрихкода штрихкода сканера сканера расположения карты изображений камеры возможности родных разрешений устройства
+localization_priority: Normal
 ms.topic: overview
-ms.openlocfilehash: 4c826d1705dfeea1feea21b02e7be51789817e48
-ms.sourcegitcommit: 5cb3453e918bec1173899e7591b48a48113cf8f0
+ms.openlocfilehash: 7d214e5011abdc83d2f6b5b49c2261359259035e
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50449593"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020753"
 ---
-# <a name="device-capabilities"></a>Возможности устройств 
+# <a name="device-capabilities---overview"></a>Возможности устройства — Обзор
 
 Платформа Microsoft Teams непрерывно расширяет возможности разработчиков, выровняясь со встроенными возможностями для первой стороны. Расширенная платформа Teams позволяет партнерам интегрировать возможности устройств, такие как сканер камеры, QR или штрих-кода, фотогалерею, микрофон и расположение с их веб-приложениями. Эта интеграция снижает барьер для разработки приложений, ускоряет цикл разработки и создает новые сценарии или случаи использования для сообщества разработчиков.
 

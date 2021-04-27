@@ -2,13 +2,14 @@
 title: Поток проверки подлинности для вкладок
 description: Описывает поток проверки подлинности на вкладке
 ms.topic: conceptual
+localization_priority: Normal
 keywords: Вкладки потока проверки подлинности команд
-ms.openlocfilehash: ccc507c08007c72e5393d9175d69ea3672d73609
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 012e38b0fa689527999237ccc07b7352fc00ae71
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995850"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020396"
 ---
 # <a name="microsoft-teams-authentication-flow-for-tabs"></a>Поток проверки подлинности Microsoft Teams для вкладок
 

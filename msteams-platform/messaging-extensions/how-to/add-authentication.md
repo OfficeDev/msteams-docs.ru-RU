@@ -2,14 +2,15 @@
 title: Добавление проверки подлинности в расширение для сообщений
 author: clearab
 description: Добавление проверки подлинности в расширение обмена сообщениями
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 04ece6fe6f5e824873ed6e69385bce017df6927d
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 1670bcd68def5470f2a590b11f7c25a00ccd06b7
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696775"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020711"
 ---
 # <a name="add-authentication-to-your-messaging-extension"></a>Добавление проверки подлинности в расширение для сообщений
 
@@ -133,7 +134,7 @@ ms.locfileid: "51696775"
 ```
 
 ## <a name="code-sample"></a>Пример кода
-|**Пример имени** | **Description** |**.NET** | **Node.js**|
+|**Пример имени** | **Описание** |**.NET** | **Node.js**|
 |----------------|-----------------|--------------|----------------|
 |Расширения обмена сообщениями — auth и config | Расширение обмена сообщениями, которое имеет страницу конфигурации, принимает запросы на поиск и возвращает результаты после того, как пользователь войт. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)|[View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)| 
 

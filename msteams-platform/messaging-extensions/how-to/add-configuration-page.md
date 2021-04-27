@@ -2,14 +2,15 @@
 title: Добавление страницы конфигурации в расширение обмена сообщениями
 author: clearab
 description: Добавление страницы конфигурации в расширение обмена сообщениями
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 537d9cc7ac03ca7c33b7a0ae4763dbaf5e96eab6
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: c0b582ef11381b008b7b23e91f1c71a705101edd
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51996018"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019827"
 ---
 # <a name="add-a-configuration-page-to-your-messaging-extension"></a>Добавление страницы конфигурации в расширение обмена сообщениями
 

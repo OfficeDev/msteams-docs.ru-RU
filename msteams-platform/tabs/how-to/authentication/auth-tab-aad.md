@@ -2,13 +2,14 @@
 title: Проверка подлинности для вкладок с помощью Azure Active Directory
 description: Описывает проверку подлинности в Teams и ее использование на вкладке
 ms.topic: how-to
+localization_priority: Normal
 keywords: группы проверки подлинности вкладок AAD
-ms.openlocfilehash: f2429653fe875406870ba82e27fce3d643ff69f6
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 2fdfc4448abb6980cca97e90951d7772611108da
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995906"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020389"
 ---
 # <a name="authenticate-a-user-in-a-microsoft-teams-tab"></a>Проверка подлинности пользователя на вкладке Microsoft Teams
 

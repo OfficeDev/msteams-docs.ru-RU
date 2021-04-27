@@ -3,14 +3,15 @@ title: Проектирование расширения обмена сообщ
 description: Узнайте, как разработать расширение обмена сообщениями Teams и получить набор пользовательского интерфейса Microsoft Teams.
 keywords: Рекомендации по разработке рекомендаций по расширению справочных сообщений в командах советы по рекомендациям по рекомендациям
 author: heath-hamilton
+localization_priority: Normal
 ms.author: qinch
 ms.topic: conceptual
-ms.openlocfilehash: c616d8e3e7c40ae124f96cb80a42873f9aaa7865
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: e3e4197e461f6d13f0c45ba2ce8bfb93b01b5e0f
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697013"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020725"
 ---
 # <a name="designing-your-microsoft-teams-messaging-extension"></a>Разработка расширения обмена сообщениями Microsoft Teams
 
@@ -227,7 +228,7 @@ SSO упрощает процесс регистрации, быстрее и о
    :::column-end:::
 :::row-end:::
 
-### <a name="actions"></a>Actions
+### <a name="actions"></a>Действия
 
 :::row:::
    :::column span="":::

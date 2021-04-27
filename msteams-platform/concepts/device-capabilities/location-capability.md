@@ -1,15 +1,17 @@
 ---
 title: Интеграция функций местонахождения
+author: Rajeshwari-v
 description: Использование SDK клиента Teams JavaScript для использования возможностей расположения
 keywords: Возможности карты расположения для родных разрешений устройств
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: de699d4edbf1c95f283cead9d12dcd2c98f8d3b9
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 98d37c4f34f638f129c07b012d98ec54c7c8e44f
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696859"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019862"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 
@@ -64,7 +66,7 @@ ms.locfileid: "51696859"
 
 Необходимо обеспечить надлежащее обработку этих ошибок в приложении Teams. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
-|Код ошибки |  Имя ошибки     | Condition|
+|Код ошибки |  Имя ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|

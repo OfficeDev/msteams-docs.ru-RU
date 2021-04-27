@@ -2,14 +2,15 @@
 title: 1-на-1 беседы с ботами
 description: Описывает конечный сценарий беседы 1 на 1 с ботом в Microsoft Teams
 keywords: сценарии команд 1on1 1to1 беседы бота
+localization_priority: Normal
 ms.topic: conceptual
 ms.date: 05/20/2019
-ms.openlocfilehash: 43b44d15b675db2fa6c38d6661858c4e0a595039
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 2942a6c53bc99ce3199e140263d939e8b16d9db6
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696670"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020676"
 ---
 # <a name="have-a-personal-one-on-one-conversation-with-a-microsoft-teams-bot"></a>Личный (один на один) разговор с ботом Microsoft Teams
 

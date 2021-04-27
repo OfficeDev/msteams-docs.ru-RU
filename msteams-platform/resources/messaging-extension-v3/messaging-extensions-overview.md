@@ -2,13 +2,14 @@
 title: Разработка расширений обмена сообщениями
 description: Описывает, как начать работу с расширениями обмена сообщениями в Microsoft Teams
 ms.topic: overview
+localization_priority: Normal
 keywords: расширения обмена сообщениями команд
-ms.openlocfilehash: 1eb75371b1a8adbeadbcbdbc0d06c7d88f2f1ccc
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 2301a9af7574c193c7327bb45e38f91bedc73793
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696551"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020606"
 ---
 # <a name="develop-messaging-extensions-for-microsoft-teams"></a>Разработка расширений обмена сообщениями для Microsoft Teams
 

@@ -3,13 +3,14 @@ title: Получите контекст для бота Microsoft Teams
 description: Описывает, как получить контекст для ботов в Microsoft Teams
 keywords: Контекст командных ботов
 ms.topic: conceptual
+localization_priority: Normal
 ms.date: 05/20/2019
-ms.openlocfilehash: e46dde7d30e8d3074fbfbc2a6f050290827f5ccb
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 154a276c65987955cfe20e5b7ce4ed2e8973cbfd
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696649"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020662"
 ---
 # <a name="get-context-for-your-microsoft-teams-bot"></a>Получите контекст для бота Microsoft Teams
 

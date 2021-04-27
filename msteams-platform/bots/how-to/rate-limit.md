@@ -2,13 +2,14 @@
 title: Оптимизация бота с ограничением скорости в Teams
 description: Ограничение скорости и лучшие практики в Microsoft Teams
 ms.topic: conceptual
+localization_priority: Normal
 keywords: ограничения скорости командных ботов
-ms.openlocfilehash: 9a30d86a82a591c4a1125632fa7409780effb269
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 23d75e7df021a5c746c4dd23d848ac085294c160
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995857"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020900"
 ---
 # <a name="optimize-your-bot-with-rate-limiting-in-teams"></a>Оптимизация бота с ограничением скорости в Teams
 

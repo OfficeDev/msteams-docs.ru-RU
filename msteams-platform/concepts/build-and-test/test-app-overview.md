@@ -2,13 +2,14 @@
 title: Проверка обзора приложения
 description: Описывает процесс тестирования настраиваемого приложения Teams в Microsoft 365
 ms.topic: how-to
+localization_priority: Normal
 keywords: Настройка microsoft 365 tenant Teams для загрузки тестового приложения
-ms.openlocfilehash: b199ca4be31b546364091b754cdb890c8c0dd7d0
-ms.sourcegitcommit: 5b3ba227c2e5e6f7a2c629961993f168da6a504d
+ms.openlocfilehash: 8815e73c054cb75782660ef4afb3ae583b4f40fa
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634781"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019939"
 ---
 # <a name="test-your-app"></a>Тестирование приложения
 

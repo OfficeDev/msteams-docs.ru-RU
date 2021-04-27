@@ -3,14 +3,15 @@ title: Создание приложений для платформы Microsoft
 author: heath-hamilton
 description: Сведения о том, как разработчики могут расширять функции Microsoft Teams с помощью настраиваемого приложения.
 ms.topic: overview
+localization_priority: Normal
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: b4f5d5fa3014d2acc5e4178a89c84ddb5a250132
-ms.sourcegitcommit: f5ee3fa5ef6126d9bf845948d27d9067b3bbb994
+ms.openlocfilehash: 5009427fc3cdde11de45a55cb0f6216ae36b0d66
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51596212"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019813"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
@@ -42,7 +43,7 @@ ms.locfileid: "51596212"
 
 ### <a name="bots"></a>Боты
 
-**Превратите** слова в действия: беседы часто приводит к необходимости что-то делать (создать заказ, просмотреть код, проверить состояние билета и т.д.). Бот [может](bots/what-are-bots.md) скинуть эти типы рабочего процесса прямо внутри Teams.
+**Превратите** слова в действия: беседы часто приводит к необходимости что-то делать (создать заказ, просмотреть код, проверить состояние билета и так далее). Бот [может](bots/what-are-bots.md) скинуть эти типы рабочего процесса прямо внутри Teams.
 
 :::image type="content" source="assets/images/overview-bots.png" alt-text="Концептуальное представление того, как выглядят боты в клиенте Teams." border="false":::
 

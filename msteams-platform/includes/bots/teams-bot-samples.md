@@ -1,3 +1,18 @@
+---
+title: Образцы бота Teams
+description: описывает образцы Teams для Bot Framework
+localization_priority: Normal
+ms.topic: overview
+ms.author: surbhigupta12
+ms.openlocfilehash: 663d676b636711b42a4bf07bac7ff9a83b70a3d4
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020011"
+---
+## <a name="teams-bot-samples"></a>Образцы бота Teams
+
 ## <a name="code-sample"></a>Пример кода
 
 Полные рабочие примеры, демонстрирующие функциональность, см. в следующих примерах Teams для Bot Framework:

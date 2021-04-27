@@ -3,13 +3,14 @@ title: Создание бота
 description: Узнайте, как создать бот Teams, и получите комплект разработчика для пользовательского интерфейса Microsoft Teams.
 author: heath-hamilton
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 1323d1070d29a501a6a87812a666c3a08b76ae74
-ms.sourcegitcommit: 098d38dd947e87e69d289b99e807bea2d95c42f9
-ms.translationtype: HT
+ms.openlocfilehash: 2739bd4baaf68be90a62924601b0628c3d9b0f2c
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49713596"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020135"
 ---
 # <a name="designing-your-microsoft-teams-bot"></a>Создание бота Microsoft Teams
 
@@ -99,10 +100,10 @@ ms.locfileid: "49713596"
 |1|**Имя и значок приложения**|
 |2|**Вкладка чата**: открывает пространство для общения с ботом (только для личных приложений).|
 |3|**Настраиваемые вкладки**: открывает другое содержимое, связанное с вашим приложением.|
-|4|**Сведения**: выводит на экран основные сведения о приложении.|
-|5|**Пузырек чата**: беседы ботов используют структуру обмена сообщениями Teams.|
-|6|**Адаптивная карточка**: если ответы бота содержат адаптивные карточки, то карточка занимает всю ширину пузырька чата.|
-|7|**Меню команд**: отображает стандартные команды бота (определенные вами).
+|4 |**Сведения**: выводит на экран основные сведения о приложении.|
+|5 |**Пузырек чата**: беседы ботов используют структуру обмена сообщениями Teams.|
+|6 |**Адаптивная карточка**: если ответы бота содержат адаптивные карточки, то карточка занимает всю ширину пузырька чата.|
+|7 |**Меню команд**: отображает стандартные команды бота (определенные вами).
 
 ### <a name="command-menu"></a>Меню команд
 
@@ -208,7 +209,7 @@ ms.locfileid: "49713596"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="Пример, показывающий лучшие практики ботов." border="false":::
 
 #### <a name="do-clearly-convey-what-your-bot-can-do"></a>Как надо: четко обозначьте, что умеет делать ваш бот
 
@@ -216,7 +217,7 @@ ms.locfileid: "49713596"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="В примере показана лучшая практика бота." border="false":::
 
 #### <a name="dont-obscure-your-bots-features"></a>Как не надо: скрывать функции бота
 
@@ -227,7 +228,7 @@ ms.locfileid: "49713596"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример демонстрации наилучшей практики бота." border="false":::
 
 #### <a name="do-recognize-non-questions"></a>Как надо: распознавать вопросы, которые не являются вопросами
 
@@ -235,7 +236,7 @@ ms.locfileid: "49713596"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="В примере показана лучшая практика бота." border="false":::
 
 #### <a name="dont-miss-out-on-opportunities-to-delight"></a>Как не надо: не упускайте случая порадовать пользователей
 
@@ -248,7 +249,7 @@ ms.locfileid: "49713596"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="Пример наилучшей практики бота." border="false":::
 
 #### <a name="do-provide-help"></a>Как надо: предоставляйте помощь
 
@@ -256,7 +257,7 @@ ms.locfileid: "49713596"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="В примере показана лучшая практика бота." border="false":::
 
 #### <a name="dont-leave-users-stranded"></a>Как не надо: не бросайте пользователей в беде
 
@@ -269,7 +270,7 @@ ms.locfileid: "49713596"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="Пример отображения наилучшей практики бота." border="false":::
 
 #### <a name="do-use-task-modules-or-tabs"></a>Как надо: используйте модули задач или вкладки
 
@@ -277,7 +278,7 @@ ms.locfileid: "49713596"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="См. пример наилучшей практики бота." border="false":::
 
 #### <a name="dont-make-multi-turn-interactions-tedious"></a>Как не надо: не делайте взаимодействие с несколькими поворотами утомительными
 
@@ -290,7 +291,7 @@ ms.locfileid: "49713596"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="В примере представлена лучшая практика бота." border="false":::
 
 #### <a name="do-only-show-sensitive-info-in-a-personal-context"></a>Как надо: показывать конфиденциальную информацию только в личном контексте
 
@@ -298,7 +299,7 @@ ms.locfileid: "49713596"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="Иллюстрация, на которой показана лучшая практика бота." border="false":::
 
 #### <a name="dont-some-content-isnt-meant-to-be-seen-by-everyone"></a>Как не надо: некоторые данные предназначены не для всех
 

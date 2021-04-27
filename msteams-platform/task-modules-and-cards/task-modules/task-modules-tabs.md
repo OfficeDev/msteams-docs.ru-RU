@@ -1,14 +1,15 @@
 ---
 title: Использование модулей задач на вкладке Microsoft Teams
-description: Объясняет, как вызывать модули задач из вкладок Teams с помощью SDK клиента Microsoft Teams.
+description: Объясняет, как вызывать модули задач из вкладок Teams с помощью SDK клиента Microsoft Teams
+localization_priority: Normal
 ms.topic: how-to
 keywords: модули задач группы вкладок sdk клиента
-ms.openlocfilehash: dbcc6ce0ba31bae43335334dfb1c354acc33a2a0
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 5e85fd0662b8a15d6b98d9c2d2dfa5137b05fa39
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696033"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019526"
 ---
 # <a name="using-task-modules-in-tabs"></a>Использование модулей задач во вкладках
 

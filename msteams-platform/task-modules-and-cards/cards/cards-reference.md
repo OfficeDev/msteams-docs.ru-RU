@@ -1,14 +1,15 @@
 ---
 title: Ссылки на карточки
 description: Описание всех действий карт и карт, доступных ботам в Teams
+localization_priority: Normal
 keywords: ссылка на карточки ботов
 ms.topic: reference
-ms.openlocfilehash: b9e11a6a6cb6de370323a3b07e2451a3abc41f12
-ms.sourcegitcommit: b50f6d68482cad43a60642a9947d1be17809a7df
+ms.openlocfilehash: 1e8cf2e474b8a74f6cab1cd6ef3439924b91892d
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51634539"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52019533"
 ---
 # <a name="cards-reference"></a>Ссылки на карточки
 

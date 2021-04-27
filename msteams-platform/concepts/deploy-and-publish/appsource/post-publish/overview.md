@@ -2,13 +2,14 @@
 title: Ведение и поддержка опубликованного приложения
 description: Что делать после публикации приложения
 ms.topic: how-to
+localization_priority: Normal
 keywords: группы после публикации манифеста обновления приложений сертификации
-ms.openlocfilehash: 8644db5e329e15d77062553eda4a41a36b2740ee
-ms.sourcegitcommit: e78c9f51c4538212c53bb6c6a45a09d994896f09
+ms.openlocfilehash: 11c32ce61664f34a246905124b767e17d3c6f536
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51585836"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020802"
 ---
 # <a name="maintain-and-support-your-published-app"></a>Обслуживание и поддержка вашего опубликованного приложения 
 

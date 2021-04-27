@@ -3,13 +3,14 @@ title: Формат сообщений бота
 author: clearab
 description: Добавление насыщенного форматирования в сообщения бота
 ms.topic: conceptual
+localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 39b82e78e061653eaa3e3b66c10a611d005924bd
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 7dc082f4b17e123c9fa000552f02fc913c66dcf7
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697006"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020907"
 ---
 # <a name="format-your-bot-messages"></a>Формат сообщений бота
 
