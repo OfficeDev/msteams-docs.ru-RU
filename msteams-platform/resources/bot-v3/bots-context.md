@@ -3,43 +3,44 @@ title: Получите контекст для бота Microsoft Teams
 description: Описывает, как получить контекст для ботов в Microsoft Teams
 keywords: Контекст командных ботов
 ms.topic: conceptual
+localization_priority: Normal
 ms.date: 05/20/2019
-ms.openlocfilehash: e46dde7d30e8d3074fbfbc2a6f050290827f5ccb
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 154a276c65987955cfe20e5b7ce4ed2e8973cbfd
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696649"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020662"
 ---
-# <a name="get-context-for-your-microsoft-teams-bot"></a><span data-ttu-id="91642-104">Получите контекст для бота Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="91642-104">Get context for your Microsoft Teams bot</span></span>
+# <a name="get-context-for-your-microsoft-teams-bot"></a><span data-ttu-id="c19b5-104">Получите контекст для бота Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="c19b5-104">Get context for your Microsoft Teams bot</span></span>
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-<span data-ttu-id="91642-105">Ваш бот может получить доступ к дополнительному контексту о команде или чате, например к профиле пользователя.</span><span class="sxs-lookup"><span data-stu-id="91642-105">Your bot can access additional context about the team or chat, such as user profile.</span></span> <span data-ttu-id="91642-106">Эти сведения можно использовать для обогащения функциональных возможностей бота и предоставления более персонализированного опыта.</span><span class="sxs-lookup"><span data-stu-id="91642-106">This information can be used to enrich your bot's functionality and provide a more personalized experience.</span></span>
+<span data-ttu-id="c19b5-105">Ваш бот может получить доступ к дополнительному контексту о команде или чате, например к профиле пользователя.</span><span class="sxs-lookup"><span data-stu-id="c19b5-105">Your bot can access additional context about the team or chat, such as user profile.</span></span> <span data-ttu-id="c19b5-106">Эти сведения можно использовать для обогащения функциональных возможностей бота и предоставления более персонализированного опыта.</span><span class="sxs-lookup"><span data-stu-id="c19b5-106">This information can be used to enrich your bot's functionality and provide a more personalized experience.</span></span>
 
 > [!NOTE]
 >
-> * <span data-ttu-id="91642-107">API-API для конкретных ботов Microsoft Teams лучше всего получить через наши расширения для SDK-конструктора ботов.</span><span class="sxs-lookup"><span data-stu-id="91642-107">Microsoft Teams-specific bot APIs are best accessed through our extensions for the Bot Builder SDK.</span></span>
-> * <span data-ttu-id="91642-108">Для C# или .NET скачайте пакет [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet.</span><span class="sxs-lookup"><span data-stu-id="91642-108">For C# or .NET, download our [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet package.</span></span>
-> * <span data-ttu-id="91642-109">Для Node.js разработки функциональность Bot Builder for Teams включена в [SDK bot Framework](https://github.com/microsoft/botframework-sdk) v4.6.</span><span class="sxs-lookup"><span data-stu-id="91642-109">For Node.js development, the Bot Builder for Teams functionality is incorporated into the [Bot Framework SDK](https://github.com/microsoft/botframework-sdk) v4.6.</span></span>
+> * <span data-ttu-id="c19b5-107">API-API для конкретных ботов Microsoft Teams лучше всего получить через наши расширения для SDK-конструктора ботов.</span><span class="sxs-lookup"><span data-stu-id="c19b5-107">Microsoft Teams-specific bot APIs are best accessed through our extensions for the Bot Builder SDK.</span></span>
+> * <span data-ttu-id="c19b5-108">Для C# или .NET скачайте пакет [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet.</span><span class="sxs-lookup"><span data-stu-id="c19b5-108">For C# or .NET, download our [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet package.</span></span>
+> * <span data-ttu-id="c19b5-109">Для Node.js разработки функциональность Bot Builder for Teams включена в [SDK bot Framework](https://github.com/microsoft/botframework-sdk) v4.6.</span><span class="sxs-lookup"><span data-stu-id="c19b5-109">For Node.js development, the Bot Builder for Teams functionality is incorporated into the [Bot Framework SDK](https://github.com/microsoft/botframework-sdk) v4.6.</span></span>
 
-## <a name="fetch-the-team-roster"></a><span data-ttu-id="91642-110">Извлечение реестра команды</span><span class="sxs-lookup"><span data-stu-id="91642-110">Fetch the team roster</span></span>
+## <a name="fetch-the-team-roster"></a><span data-ttu-id="c19b5-110">Извлечение реестра команды</span><span class="sxs-lookup"><span data-stu-id="c19b5-110">Fetch the team roster</span></span>
 
-<span data-ttu-id="91642-111">Бот может запрашивать список членов группы и их основные профили.</span><span class="sxs-lookup"><span data-stu-id="91642-111">Your bot can query for the list of team members and their basic profiles.</span></span> <span data-ttu-id="91642-112">Основные профили включают пользовательские ID Teams и сведения Azure Active Directory (AAD), такие как имя и ID объекта.</span><span class="sxs-lookup"><span data-stu-id="91642-112">The basic profiles include Teams user IDs and Azure Active Directory (AAD) information such as name and object ID.</span></span> <span data-ttu-id="91642-113">Эти сведения можно использовать для сопоставления удостоверений пользователей.</span><span class="sxs-lookup"><span data-stu-id="91642-113">You can use this information to correlate user identities.</span></span> <span data-ttu-id="91642-114">Например, проверьте, входит ли пользователь в вкладку с помощью учетных данных AAD.</span><span class="sxs-lookup"><span data-stu-id="91642-114">For example, check if a user logged into a tab through AAD credentials is a team member.</span></span>
+<span data-ttu-id="c19b5-111">Бот может запрашивать список членов группы и их основные профили.</span><span class="sxs-lookup"><span data-stu-id="c19b5-111">Your bot can query for the list of team members and their basic profiles.</span></span> <span data-ttu-id="c19b5-112">Основные профили включают пользовательские ID Teams и сведения Azure Active Directory (AAD), такие как имя и ID объекта.</span><span class="sxs-lookup"><span data-stu-id="c19b5-112">The basic profiles include Teams user IDs and Azure Active Directory (AAD) information such as name and object ID.</span></span> <span data-ttu-id="c19b5-113">Эти сведения можно использовать для сопоставления удостоверений пользователей.</span><span class="sxs-lookup"><span data-stu-id="c19b5-113">You can use this information to correlate user identities.</span></span> <span data-ttu-id="c19b5-114">Например, проверьте, входит ли пользователь в вкладку с помощью учетных данных AAD.</span><span class="sxs-lookup"><span data-stu-id="c19b5-114">For example, check if a user logged into a tab through AAD credentials is a team member.</span></span>
 
-### <a name="rest-api-example"></a><span data-ttu-id="91642-115">Пример API REST</span><span class="sxs-lookup"><span data-stu-id="91642-115">REST API example</span></span>
+### <a name="rest-api-example"></a><span data-ttu-id="c19b5-115">Пример API REST</span><span class="sxs-lookup"><span data-stu-id="c19b5-115">REST API example</span></span>
 
-<span data-ttu-id="91642-116">Непосредственно выдай запрос [`/conversations/{teamId}/members/`](/bot-framework/rest-api/bot-framework-rest-connector-api-reference#get-conversation-members) GET, используя `serviceUrl` значение в качестве конечной точки.</span><span class="sxs-lookup"><span data-stu-id="91642-116">Directly issue a GET request on [`/conversations/{teamId}/members/`](/bot-framework/rest-api/bot-framework-rest-connector-api-reference#get-conversation-members), using the `serviceUrl` value as the endpoint.</span></span>
+<span data-ttu-id="c19b5-116">Непосредственно выдай запрос [`/conversations/{teamId}/members/`](/bot-framework/rest-api/bot-framework-rest-connector-api-reference#get-conversation-members) GET, используя `serviceUrl` значение в качестве конечной точки.</span><span class="sxs-lookup"><span data-stu-id="c19b5-116">Directly issue a GET request on [`/conversations/{teamId}/members/`](/bot-framework/rest-api/bot-framework-rest-connector-api-reference#get-conversation-members), using the `serviceUrl` value as the endpoint.</span></span>
 
-<span data-ttu-id="91642-117">Объект можно найти в объекте полезной нагрузки, получаемой ботом в `teamId` `channeldata` следующих сценариях:</span><span class="sxs-lookup"><span data-stu-id="91642-117">The `teamId` can be found in the `channeldata` object of the activity payload that your bot receives in the following scenarios:</span></span>
+<span data-ttu-id="c19b5-117">Объект можно найти в объекте полезной нагрузки, получаемой ботом в `teamId` `channeldata` следующих сценариях:</span><span class="sxs-lookup"><span data-stu-id="c19b5-117">The `teamId` can be found in the `channeldata` object of the activity payload that your bot receives in the following scenarios:</span></span>
 
-* <span data-ttu-id="91642-118">Когда пользователь передает сообщения или взаимодействует с ботом в контексте группы.</span><span class="sxs-lookup"><span data-stu-id="91642-118">When a user messages or interacts with your bot in a team context.</span></span> <span data-ttu-id="91642-119">Дополнительные сведения см. [в сообщении о получении сообщений.](~/resources/bot-v3/bot-conversations/bots-conversations.md#receiving-messages)</span><span class="sxs-lookup"><span data-stu-id="91642-119">For more information, see [receiving messages](~/resources/bot-v3/bot-conversations/bots-conversations.md#receiving-messages).</span></span>
-* <span data-ttu-id="91642-120">При добавлении нового пользователя или бота в команду.</span><span class="sxs-lookup"><span data-stu-id="91642-120">When a new user or bot is added to a team.</span></span> <span data-ttu-id="91642-121">Дополнительные сведения см. в [записи бота или пользователя, добавленного в команду.](~/resources/bot-v3/bots-notifications.md#bot-or-user-added-to-a-team)</span><span class="sxs-lookup"><span data-stu-id="91642-121">For more information, see [bot or user added to a team](~/resources/bot-v3/bots-notifications.md#bot-or-user-added-to-a-team).</span></span>
+* <span data-ttu-id="c19b5-118">Когда пользователь передает сообщения или взаимодействует с ботом в контексте группы.</span><span class="sxs-lookup"><span data-stu-id="c19b5-118">When a user messages or interacts with your bot in a team context.</span></span> <span data-ttu-id="c19b5-119">Дополнительные сведения см. [в сообщении о получении сообщений.](~/resources/bot-v3/bot-conversations/bots-conversations.md#receiving-messages)</span><span class="sxs-lookup"><span data-stu-id="c19b5-119">For more information, see [receiving messages](~/resources/bot-v3/bot-conversations/bots-conversations.md#receiving-messages).</span></span>
+* <span data-ttu-id="c19b5-120">При добавлении нового пользователя или бота в команду.</span><span class="sxs-lookup"><span data-stu-id="c19b5-120">When a new user or bot is added to a team.</span></span> <span data-ttu-id="c19b5-121">Дополнительные сведения см. в [записи бота или пользователя, добавленного в команду.](~/resources/bot-v3/bots-notifications.md#bot-or-user-added-to-a-team)</span><span class="sxs-lookup"><span data-stu-id="c19b5-121">For more information, see [bot or user added to a team](~/resources/bot-v3/bots-notifications.md#bot-or-user-added-to-a-team).</span></span>
 
 > [!NOTE]
 >
->* <span data-ttu-id="91642-122">Всегда используйте командный ID при вызове API.</span><span class="sxs-lookup"><span data-stu-id="91642-122">Always use the team ID when calling the API.</span></span>
->* <span data-ttu-id="91642-123">Значение `serviceUrl` имеет тенденцию быть стабильным, но может измениться.</span><span class="sxs-lookup"><span data-stu-id="91642-123">The `serviceUrl` value tends to be stable but can change.</span></span> <span data-ttu-id="91642-124">По прибытии нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.</span><span class="sxs-lookup"><span data-stu-id="91642-124">When a new message arrives, your bot must verify its stored `serviceUrl` value.</span></span>
+>* <span data-ttu-id="c19b5-122">Всегда используйте командный ID при вызове API.</span><span class="sxs-lookup"><span data-stu-id="c19b5-122">Always use the team ID when calling the API.</span></span>
+>* <span data-ttu-id="c19b5-123">Значение `serviceUrl` имеет тенденцию быть стабильным, но может измениться.</span><span class="sxs-lookup"><span data-stu-id="c19b5-123">The `serviceUrl` value tends to be stable but can change.</span></span> <span data-ttu-id="c19b5-124">По прибытии нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.</span><span class="sxs-lookup"><span data-stu-id="c19b5-124">When a new message arrives, your bot must verify its stored `serviceUrl` value.</span></span>
 
 ```json
 GET /v3/conversations/19:ja0cu120i1jod12j@skype.net/members
@@ -69,9 +70,9 @@ Response body
 }]
 ```
 
-### <a name="net-example"></a><span data-ttu-id="91642-125">Пример .NET</span><span class="sxs-lookup"><span data-stu-id="91642-125">.NET example</span></span>
+### <a name="net-example"></a><span data-ttu-id="c19b5-125">Пример .NET</span><span class="sxs-lookup"><span data-stu-id="c19b5-125">.NET example</span></span>
 
-<span data-ttu-id="91642-126">Вызов `GetConversationMembersAsync` с помощью возврата списка `Team.Id` пользовательских ИД.</span><span class="sxs-lookup"><span data-stu-id="91642-126">Call `GetConversationMembersAsync` using `Team.Id` to return a list of user IDs.</span></span>
+<span data-ttu-id="c19b5-126">Вызов `GetConversationMembersAsync` с помощью возврата списка `Team.Id` пользовательских ИД.</span><span class="sxs-lookup"><span data-stu-id="c19b5-126">Call `GetConversationMembersAsync` using `Team.Id` to return a list of user IDs.</span></span>
 
 ```csharp
 // Fetch the members in the current conversation
@@ -94,7 +95,7 @@ foreach (var member in members.AsTeamsChannelAccounts())
 await context.PostAsync($"People in this conversation: {sb.ToString()}");
 ```
 
-### <a name="nodejs-or-typescript-example"></a><span data-ttu-id="91642-127">Node.js или typeScript</span><span class="sxs-lookup"><span data-stu-id="91642-127">Node.js or TypeScript example</span></span>
+### <a name="nodejs-or-typescript-example"></a><span data-ttu-id="c19b5-127">Node.js или typeScript</span><span class="sxs-lookup"><span data-stu-id="c19b5-127">Node.js or TypeScript example</span></span>
 
 ```typescript
 
@@ -117,31 +118,31 @@ connector.fetchMembers(
 );
 ```
 
-<span data-ttu-id="91642-128">Кроме того, [см. примеры Bot Framework.](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)</span><span class="sxs-lookup"><span data-stu-id="91642-128">Also, see [Bot Framework samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).</span></span>
+<span data-ttu-id="c19b5-128">Кроме того, [см. примеры Bot Framework.](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)</span><span class="sxs-lookup"><span data-stu-id="c19b5-128">Also, see [Bot Framework samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).</span></span>
 
-## <a name="fetch-user-profile-or-roster-in-personal-or-group-chat"></a><span data-ttu-id="91642-129">Извлечение профиля пользователя или реестра в личном или групповом чате</span><span class="sxs-lookup"><span data-stu-id="91642-129">Fetch user profile or roster in personal or group chat</span></span>
+## <a name="fetch-user-profile-or-roster-in-personal-or-group-chat"></a><span data-ttu-id="c19b5-129">Извлечение профиля пользователя или реестра в личном или групповом чате</span><span class="sxs-lookup"><span data-stu-id="c19b5-129">Fetch user profile or roster in personal or group chat</span></span>
 
-<span data-ttu-id="91642-130">Вы можете сделать вызов API для любого личного чата, чтобы получить сведения о профиле пользователя в чате с ботом.</span><span class="sxs-lookup"><span data-stu-id="91642-130">You can make the API call for any personal chat to obtain the profile information of the user chatting with your bot.</span></span>
+<span data-ttu-id="c19b5-130">Вы можете сделать вызов API для любого личного чата, чтобы получить сведения о профиле пользователя в чате с ботом.</span><span class="sxs-lookup"><span data-stu-id="c19b5-130">You can make the API call for any personal chat to obtain the profile information of the user chatting with your bot.</span></span>
 
-<span data-ttu-id="91642-131">Вызов API, методы SDK и объект ответа идентичны запросу реестра группы.</span><span class="sxs-lookup"><span data-stu-id="91642-131">The API call, SDK methods, and the response object are identical to fetching the team roster.</span></span> <span data-ttu-id="91642-132">Единственное отличие состоит в том, что вы передаете вместо `conversationId` `teamId` .</span><span class="sxs-lookup"><span data-stu-id="91642-132">The only difference is you pass the `conversationId` instead of the `teamId`.</span></span>
+<span data-ttu-id="c19b5-131">Вызов API, методы SDK и объект ответа идентичны запросу реестра группы.</span><span class="sxs-lookup"><span data-stu-id="c19b5-131">The API call, SDK methods, and the response object are identical to fetching the team roster.</span></span> <span data-ttu-id="c19b5-132">Единственное отличие состоит в том, что вы передаете вместо `conversationId` `teamId` .</span><span class="sxs-lookup"><span data-stu-id="c19b5-132">The only difference is you pass the `conversationId` instead of the `teamId`.</span></span>
 
-## <a name="fetch-the-list-of-channels-in-a-team"></a><span data-ttu-id="91642-133">Извлечение списка каналов в команде</span><span class="sxs-lookup"><span data-stu-id="91642-133">Fetch the list of channels in a team</span></span>
+## <a name="fetch-the-list-of-channels-in-a-team"></a><span data-ttu-id="c19b5-133">Извлечение списка каналов в команде</span><span class="sxs-lookup"><span data-stu-id="c19b5-133">Fetch the list of channels in a team</span></span>
 
-<span data-ttu-id="91642-134">Бот может запрашивать список каналов в команде.</span><span class="sxs-lookup"><span data-stu-id="91642-134">Your bot can query the list of channels in a team.</span></span>
+<span data-ttu-id="c19b5-134">Бот может запрашивать список каналов в команде.</span><span class="sxs-lookup"><span data-stu-id="c19b5-134">Your bot can query the list of channels in a team.</span></span>
 
 > [!NOTE]
 >
->* <span data-ttu-id="91642-135">Для локализации возвращается имя общего канала по `null` умолчанию.</span><span class="sxs-lookup"><span data-stu-id="91642-135">The name of the default General channel is returned as `null` to allow for localization.</span></span>
->* <span data-ttu-id="91642-136">ID канала для общего канала всегда совпадает с командным ИД.</span><span class="sxs-lookup"><span data-stu-id="91642-136">The channel ID for the General channel always matches the team ID.</span></span>
+>* <span data-ttu-id="c19b5-135">Для локализации возвращается имя общего канала по `null` умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c19b5-135">The name of the default General channel is returned as `null` to allow for localization.</span></span>
+>* <span data-ttu-id="c19b5-136">ID канала для общего канала всегда совпадает с командным ИД.</span><span class="sxs-lookup"><span data-stu-id="c19b5-136">The channel ID for the General channel always matches the team ID.</span></span>
 
-### <a name="rest-api-example"></a><span data-ttu-id="91642-137">Пример API REST</span><span class="sxs-lookup"><span data-stu-id="91642-137">REST API example</span></span>
+### <a name="rest-api-example"></a><span data-ttu-id="c19b5-137">Пример API REST</span><span class="sxs-lookup"><span data-stu-id="c19b5-137">REST API example</span></span>
 
-<span data-ttu-id="91642-138">Непосредственно выдай запрос `/teams/{teamId}/conversations/` GET, используя `serviceUrl` значение в качестве конечной точки.</span><span class="sxs-lookup"><span data-stu-id="91642-138">Directly issue a GET request on `/teams/{teamId}/conversations/`, using the `serviceUrl` value as the endpoint.</span></span>
+<span data-ttu-id="c19b5-138">Непосредственно выдай запрос `/teams/{teamId}/conversations/` GET, используя `serviceUrl` значение в качестве конечной точки.</span><span class="sxs-lookup"><span data-stu-id="c19b5-138">Directly issue a GET request on `/teams/{teamId}/conversations/`, using the `serviceUrl` value as the endpoint.</span></span>
 
-<span data-ttu-id="91642-139">Единственным источником для `teamId` этого является сообщение из контекста группы.</span><span class="sxs-lookup"><span data-stu-id="91642-139">The only source for `teamId` is a message from the team context.</span></span> <span data-ttu-id="91642-140">Это сообщение является либо сообщением от пользователя, либо сообщением, которое получает бот при добавлении в команду.</span><span class="sxs-lookup"><span data-stu-id="91642-140">The message is either a message from a user or the message that your bot receives when it is added to a team.</span></span> <span data-ttu-id="91642-141">Дополнительные сведения см. в [записи бота или пользователя, добавленного в команду.](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition)</span><span class="sxs-lookup"><span data-stu-id="91642-141">For more information, see [bot or user added to a team](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition).</span></span>
+<span data-ttu-id="c19b5-139">Единственным источником для `teamId` этого является сообщение из контекста группы.</span><span class="sxs-lookup"><span data-stu-id="c19b5-139">The only source for `teamId` is a message from the team context.</span></span> <span data-ttu-id="c19b5-140">Это сообщение является либо сообщением от пользователя, либо сообщением, которое получает бот при добавлении в команду.</span><span class="sxs-lookup"><span data-stu-id="c19b5-140">The message is either a message from a user or the message that your bot receives when it is added to a team.</span></span> <span data-ttu-id="c19b5-141">Дополнительные сведения см. в [записи бота или пользователя, добавленного в команду.](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition)</span><span class="sxs-lookup"><span data-stu-id="c19b5-141">For more information, see [bot or user added to a team](~/resources/bot-v3/bots-notifications.md#team-member-or-bot-addition).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="91642-142">Значение `serviceUrl` имеет тенденцию быть стабильным, но может измениться.</span><span class="sxs-lookup"><span data-stu-id="91642-142">The `serviceUrl` value tends to be stable but can change.</span></span> <span data-ttu-id="91642-143">По прибытии нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.</span><span class="sxs-lookup"><span data-stu-id="91642-143">When a new message arrives, your bot must verify its stored `serviceUrl` value.</span></span>
+> <span data-ttu-id="c19b5-142">Значение `serviceUrl` имеет тенденцию быть стабильным, но может измениться.</span><span class="sxs-lookup"><span data-stu-id="c19b5-142">The `serviceUrl` value tends to be stable but can change.</span></span> <span data-ttu-id="c19b5-143">По прибытии нового сообщения бот должен проверить его сохраненное `serviceUrl` значение.</span><span class="sxs-lookup"><span data-stu-id="c19b5-143">When a new message arrives, your bot must verify its stored `serviceUrl` value.</span></span>
 
 ```json
 GET /v3/teams/19%3A033451497ea84fcc83d17ed7fb08a1b6%40thread.skype/conversations
@@ -164,17 +165,17 @@ Response body
 }
 ```
 
-#### <a name="net-example"></a><span data-ttu-id="91642-144">Пример .NET</span><span class="sxs-lookup"><span data-stu-id="91642-144">.NET example</span></span>
+#### <a name="net-example"></a><span data-ttu-id="c19b5-144">Пример .NET</span><span class="sxs-lookup"><span data-stu-id="c19b5-144">.NET example</span></span>
 
-<span data-ttu-id="91642-145">В следующем примере используется вызов из расширений Teams для `FetchChannelList` [SDK bot Builder для .NET:](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams)</span><span class="sxs-lookup"><span data-stu-id="91642-145">The following example uses the `FetchChannelList` call from the [Teams extensions for the Bot Builder SDK for .NET](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams):</span></span>
+<span data-ttu-id="c19b5-145">В следующем примере используется вызов из расширений Teams для `FetchChannelList` [SDK bot Builder для .NET:](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams)</span><span class="sxs-lookup"><span data-stu-id="c19b5-145">The following example uses the `FetchChannelList` call from the [Teams extensions for the Bot Builder SDK for .NET](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams):</span></span>
 
 ```csharp
 ConversationList channels = client.GetTeamsConnectorClient().Teams.FetchChannelList(activity.GetChannelData<TeamsChannelData>().Team.Id);
 ```
 
-#### <a name="nodejs-example"></a><span data-ttu-id="91642-146">Node.js пример</span><span class="sxs-lookup"><span data-stu-id="91642-146">Node.js example</span></span>
+#### <a name="nodejs-example"></a><span data-ttu-id="c19b5-146">Node.js пример</span><span class="sxs-lookup"><span data-stu-id="c19b5-146">Node.js example</span></span>
 
-<span data-ttu-id="91642-147">В следующем примере используется вызов из расширений Teams для `fetchChannelList` [SDK ](https://www.npmjs.com/package/botbuilder-teams)bot Builder для Node.js:</span><span class="sxs-lookup"><span data-stu-id="91642-147">The following example uses `fetchChannelList` call from the [Teams extensions for the Bot Builder SDK for Node.js](https://www.npmjs.com/package/botbuilder-teams):</span></span>
+<span data-ttu-id="c19b5-147">В следующем примере используется вызов из расширений Teams для `fetchChannelList` [SDK ](https://www.npmjs.com/package/botbuilder-teams)bot Builder для Node.js:</span><span class="sxs-lookup"><span data-stu-id="c19b5-147">The following example uses `fetchChannelList` call from the [Teams extensions for the Bot Builder SDK for Node.js](https://www.npmjs.com/package/botbuilder-teams):</span></span>
 
 ```javascript
 var teamId = session.message.sourceEvent.team.id;
@@ -192,16 +193,16 @@ connector.fetchChannelList(
 );
 ```
 
-## <a name="get-clientinfo-in-your-bot-context"></a><span data-ttu-id="91642-148">Получите clientInfo в контексте бота</span><span class="sxs-lookup"><span data-stu-id="91642-148">Get clientInfo in your bot context</span></span>
+## <a name="get-clientinfo-in-your-bot-context"></a><span data-ttu-id="c19b5-148">Получите clientInfo в контексте бота</span><span class="sxs-lookup"><span data-stu-id="c19b5-148">Get clientInfo in your bot context</span></span>
 
-<span data-ttu-id="91642-149">Вы можете получить clientInfo в действии вашего бота.</span><span class="sxs-lookup"><span data-stu-id="91642-149">You can fetch the clientInfo within your bot's activity.</span></span> <span data-ttu-id="91642-150">ClientInfo содержит следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="91642-150">The clientInfo contains the following properties:</span></span>
+<span data-ttu-id="c19b5-149">Вы можете получить clientInfo в действии вашего бота.</span><span class="sxs-lookup"><span data-stu-id="c19b5-149">You can fetch the clientInfo within your bot's activity.</span></span> <span data-ttu-id="c19b5-150">ClientInfo содержит следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="c19b5-150">The clientInfo contains the following properties:</span></span>
 
-* <span data-ttu-id="91642-151">Locale</span><span class="sxs-lookup"><span data-stu-id="91642-151">Locale</span></span>
-* <span data-ttu-id="91642-152">Страна</span><span class="sxs-lookup"><span data-stu-id="91642-152">Country</span></span>
-* <span data-ttu-id="91642-153">Платформа</span><span class="sxs-lookup"><span data-stu-id="91642-153">Platform</span></span>
-* <span data-ttu-id="91642-154">Timezone</span><span class="sxs-lookup"><span data-stu-id="91642-154">Timezone</span></span>
+* <span data-ttu-id="c19b5-151">Locale</span><span class="sxs-lookup"><span data-stu-id="c19b5-151">Locale</span></span>
+* <span data-ttu-id="c19b5-152">Страна</span><span class="sxs-lookup"><span data-stu-id="c19b5-152">Country</span></span>
+* <span data-ttu-id="c19b5-153">Платформа</span><span class="sxs-lookup"><span data-stu-id="c19b5-153">Platform</span></span>
+* <span data-ttu-id="c19b5-154">Timezone</span><span class="sxs-lookup"><span data-stu-id="c19b5-154">Timezone</span></span>
 
-### <a name="json-example"></a><span data-ttu-id="91642-155">Пример JSON</span><span class="sxs-lookup"><span data-stu-id="91642-155">JSON example</span></span>
+### <a name="json-example"></a><span data-ttu-id="c19b5-155">Пример JSON</span><span class="sxs-lookup"><span data-stu-id="c19b5-155">JSON example</span></span>
 
 ```json
 [
@@ -215,7 +216,7 @@ connector.fetchChannelList(
 ]
 ```
 
-### <a name="c-example"></a><span data-ttu-id="91642-156">C# пример</span><span class="sxs-lookup"><span data-stu-id="91642-156">C# example</span></span>
+### <a name="c-example"></a><span data-ttu-id="c19b5-156">C# пример</span><span class="sxs-lookup"><span data-stu-id="c19b5-156">C# example</span></span>
 
 ```csharp
 var connector = new ConnectorClient(new Uri(context.Activity.ServiceUrl));

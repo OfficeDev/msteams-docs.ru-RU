@@ -1,16 +1,17 @@
 ---
-title: Разработка веб-hooks и соединитеителей Microsoft Teams
+title: Разработка веб-ок и соединители Microsoft Teams
 author: heath-hamilton
-description: Руководство и рекомендации по разработке веб-сайтов и соединитеителей для Microsoft Teams.
+description: Рекомендации и рекомендации по разработке веб-ок и соединители для Microsoft Teams.
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 34d7f5dd993dfb8a4de32d49d58ed47be09d92e2
-ms.sourcegitcommit: 4539479289b43812eaae07a1c0f878bed815d2d2
+ms.openlocfilehash: cdf52398626f726ccd908ee5e2bf0861a81e5757
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49797938"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020220"
 ---
-# <a name="design-webhooks-and-connectors"></a><span data-ttu-id="52e8c-103">Разработка веб-hooks и соединители</span><span class="sxs-lookup"><span data-stu-id="52e8c-103">Design webhooks and connectors</span></span>
+# <a name="design-webhooks-and-connectors"></a><span data-ttu-id="4ad9a-103">Разработка веб-ок и соединители</span><span class="sxs-lookup"><span data-stu-id="4ad9a-103">Design webhooks and connectors</span></span>
 
-<span data-ttu-id="52e8c-104">Скоро...</span><span class="sxs-lookup"><span data-stu-id="52e8c-104">Coming soon ...</span></span>
+<span data-ttu-id="4ad9a-104">Скоро...</span><span class="sxs-lookup"><span data-stu-id="4ad9a-104">Coming soon ...</span></span>

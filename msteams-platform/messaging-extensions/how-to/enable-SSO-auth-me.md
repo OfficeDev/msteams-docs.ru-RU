@@ -2,45 +2,46 @@
 title: Поддержка SSO для расширений обмена сообщениями
 author: KirtiPereira
 description: Как включить поддержку SSO для расширений обмена сообщениями
+localization_priority: Normal
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: a5f75ef59a3d6fa3fe190b4dba4a1e5736a87562
-ms.sourcegitcommit: 0206ed48c6a287d14aec3739540194a91766f0a3
+ms.openlocfilehash: f7dc689da3f0e3e06b8f9c68836b6449c2ae9120
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51378348"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020704"
 ---
-# <a name="single-sign-on-sso-support-for-messaging-extensions"></a><span data-ttu-id="1a162-103">Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="1a162-103">Single sign-on (SSO) support for messaging extensions</span></span>
+# <a name="single-sign-on-sso-support-for-messaging-extensions"></a><span data-ttu-id="655b7-103">Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="655b7-103">Single sign-on (SSO) support for messaging extensions</span></span>
  
-<span data-ttu-id="1a162-104">Единая поддержка входов теперь доступна для расширения обмена сообщениями и разгрузки ссылок.</span><span class="sxs-lookup"><span data-stu-id="1a162-104">Single sign-on support is now available for messaging extensions and link unfurling.</span></span> <span data-ttu-id="1a162-105">Включение единого входа (SSO) для расширений обмена сообщениями безмолвно обновляет маркер проверки подлинности, что минимизирует количество случаев ввода входа в учетные данные для Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="1a162-105">Enabling Single sign-on (SSO) for messaging extensions silently refreshes the authentication token, which minimizes the number of times you need to enter your sign in credentials for Microsoft Teams.</span></span>
+<span data-ttu-id="655b7-104">Единая поддержка входов теперь доступна для расширения обмена сообщениями и разгрузки ссылок.</span><span class="sxs-lookup"><span data-stu-id="655b7-104">Single sign-on support is now available for messaging extensions and link unfurling.</span></span> <span data-ttu-id="655b7-105">Включение единого входа (SSO) для расширений обмена сообщениями безмолвно обновляет маркер проверки подлинности, что минимизирует количество случаев ввода входа в учетные данные для Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="655b7-105">Enabling Single sign-on (SSO) for messaging extensions silently refreshes the authentication token, which minimizes the number of times you need to enter your sign in credentials for Microsoft Teams.</span></span>
 
-<span data-ttu-id="1a162-106">В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="1a162-106">This document guides you on how to enable the SSO and store your authentication token, if required.</span></span>
+<span data-ttu-id="655b7-106">В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="655b7-106">This document guides you on how to enable the SSO and store your authentication token, if required.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1a162-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1a162-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="655b7-107">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="655b7-107">Prerequisites</span></span>
 
-<span data-ttu-id="1a162-108">Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:</span><span class="sxs-lookup"><span data-stu-id="1a162-108">The prerequisite to enable SSO for messaging extensions and link unfurling are as follows:</span></span>
-* <span data-ttu-id="1a162-109">У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/en-us/free/)</span><span class="sxs-lookup"><span data-stu-id="1a162-109">You must have an [Azure](https://azure.microsoft.com/en-us/free/) account.</span></span>
-* <span data-ttu-id="1a162-110">Необходимо настроить приложение через портал AAD и обновить манифест приложения Teams для бота, как определено в регистрации приложения на [портале AAD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal)</span><span class="sxs-lookup"><span data-stu-id="1a162-110">You must configure your app through the AAD portal, and update your Teams application manifest for your bot as defined in [register your app through the AAD portal](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal).</span></span>
+<span data-ttu-id="655b7-108">Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:</span><span class="sxs-lookup"><span data-stu-id="655b7-108">The prerequisite to enable SSO for messaging extensions and link unfurling are as follows:</span></span>
+* <span data-ttu-id="655b7-109">У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/en-us/free/)</span><span class="sxs-lookup"><span data-stu-id="655b7-109">You must have an [Azure](https://azure.microsoft.com/en-us/free/) account.</span></span>
+* <span data-ttu-id="655b7-110">Необходимо настроить приложение через портал AAD и обновить манифест приложения Teams для бота, как определено в регистрации приложения на [портале AAD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal)</span><span class="sxs-lookup"><span data-stu-id="655b7-110">You must configure your app through the AAD portal, and update your Teams application manifest for your bot as defined in [register your app through the AAD portal](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a162-111">Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов.](../../bots/how-to/authentication/auth-aad-sso-bots.md)</span><span class="sxs-lookup"><span data-stu-id="1a162-111">For more information on creating an Azure account and updating your app manifest, see [Single sign-on (SSO) support for bots](../../bots/how-to/authentication/auth-aad-sso-bots.md).</span></span>
+> <span data-ttu-id="655b7-111">Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов.](../../bots/how-to/authentication/auth-aad-sso-bots.md)</span><span class="sxs-lookup"><span data-stu-id="655b7-111">For more information on creating an Azure account and updating your app manifest, see [Single sign-on (SSO) support for bots](../../bots/how-to/authentication/auth-aad-sso-bots.md).</span></span>
 
-## <a name="enable-sso-for-messaging-extensions-and-link-unfurling"></a><span data-ttu-id="1a162-112">Включить SSO для расширения обмена сообщениями и разгрузки ссылок</span><span class="sxs-lookup"><span data-stu-id="1a162-112">Enable SSO for messaging extensions and link unfurling</span></span>
+## <a name="enable-sso-for-messaging-extensions-and-link-unfurling"></a><span data-ttu-id="655b7-112">Включить SSO для расширения обмена сообщениями и разгрузки ссылок</span><span class="sxs-lookup"><span data-stu-id="655b7-112">Enable SSO for messaging extensions and link unfurling</span></span>
 
-<span data-ttu-id="1a162-113">После завершения необходимых условий можно включить SSO для расширения сообщений и разгрузку ссылок.</span><span class="sxs-lookup"><span data-stu-id="1a162-113">After the prerequisites are completed, you can enable SSO for messaging extensions and link unfurling.</span></span>
+<span data-ttu-id="655b7-113">После завершения необходимых условий можно включить SSO для расширения сообщений и разгрузку ссылок.</span><span class="sxs-lookup"><span data-stu-id="655b7-113">After the prerequisites are completed, you can enable SSO for messaging extensions and link unfurling.</span></span>
 
-<span data-ttu-id="1a162-114">**Чтобы включить SSO**</span><span class="sxs-lookup"><span data-stu-id="1a162-114">**To enable SSO**</span></span>
-1. <span data-ttu-id="1a162-115">Обновите сведения о подключении [ботов к OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="1a162-115">Update your bots [OAuth connection](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) details in the Azure portal.</span></span>
-2. <span data-ttu-id="1a162-116">Скачайте [пример расширений обмена сообщениями](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.</span><span class="sxs-lookup"><span data-stu-id="1a162-116">Download the [messaging extensions sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) and follow the setup instructions provided by the wizard.</span></span>
+<span data-ttu-id="655b7-114">**Чтобы включить SSO**</span><span class="sxs-lookup"><span data-stu-id="655b7-114">**To enable SSO**</span></span>
+1. <span data-ttu-id="655b7-115">Обновите сведения о подключении [ботов к OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="655b7-115">Update your bots [OAuth connection](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) details in the Azure portal.</span></span>
+2. <span data-ttu-id="655b7-116">Скачайте [пример расширений обмена сообщениями](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.</span><span class="sxs-lookup"><span data-stu-id="655b7-116">Download the [messaging extensions sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) and follow the setup instructions provided by the wizard.</span></span>
    > [!NOTE]
-   > <span data-ttu-id="1a162-117">Использование подключения OAuth для ботов при настройке расширений обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="1a162-117">Use your bots OAuth connection when setting up your messaging extensions.</span></span>
-3. <span data-ttu-id="1a162-118">В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) обновите значение от *auth* до *silentAuth* в `OnTeamsMessagingExtensionQueryAsync` файле and/or `OnTeamsAppBasedLinkQueryAsync` .</span><span class="sxs-lookup"><span data-stu-id="1a162-118">In the [TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) file, update the value from *auth* to *silentAuth* in the `OnTeamsMessagingExtensionQueryAsync` and / or `OnTeamsAppBasedLinkQueryAsync`.</span></span>  
+   > <span data-ttu-id="655b7-117">Использование подключения OAuth для ботов при настройке расширений обмена сообщениями.</span><span class="sxs-lookup"><span data-stu-id="655b7-117">Use your bots OAuth connection when setting up your messaging extensions.</span></span>
+3. <span data-ttu-id="655b7-118">В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) обновите значение от *auth* до *silentAuth* в `OnTeamsMessagingExtensionQueryAsync` файле and/or `OnTeamsAppBasedLinkQueryAsync` .</span><span class="sxs-lookup"><span data-stu-id="655b7-118">In the [TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) file, update the value from *auth* to *silentAuth* in the `OnTeamsMessagingExtensionQueryAsync` and / or `OnTeamsAppBasedLinkQueryAsync`.</span></span>  
 
     > [!NOTE]
-    > <span data-ttu-id="1a162-119">Мы не поддерживаем другие обработчики SSO, за исключением файла `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` TeamsMessagingExtensionsSearchAuthConfigBot.cs.</span><span class="sxs-lookup"><span data-stu-id="1a162-119">We do not support other handlers SSO, except `OnTeamsMessagingExtensionQueryAsync` and `OnTeamsAppBasedLinkQueryAsync` from the TeamsMessagingExtensionsSearchAuthConfigBot.cs file.</span></span>
+    > <span data-ttu-id="655b7-119">Мы не поддерживаем другие обработчики SSO, за исключением файла `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` TeamsMessagingExtensionsSearchAuthConfigBot.cs.</span><span class="sxs-lookup"><span data-stu-id="655b7-119">We do not support other handlers SSO, except `OnTeamsMessagingExtensionQueryAsync` and `OnTeamsAppBasedLinkQueryAsync` from the TeamsMessagingExtensionsSearchAuthConfigBot.cs file.</span></span>
    
-4. <span data-ttu-id="1a162-120">Вы получаете маркер в обработнике в полезной нагрузке или в зависимости от того, в какой сценарий вы включаете `OnTeamsMessagingExtensionQueryAsync` `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync` SSO для:</span><span class="sxs-lookup"><span data-stu-id="1a162-120">You receive the token in `OnTeamsMessagingExtensionQueryAsync` handler in the `turnContext.Activity.Value` payload or in the `OnTeamsAppBasedLinkQueryAsync`, depending on which scenario you are enabling the SSO for:</span></span>
+4. <span data-ttu-id="655b7-120">Вы получаете маркер в обработнике в полезной нагрузке или в зависимости от того, в какой сценарий вы включаете `OnTeamsMessagingExtensionQueryAsync` `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync` SSO для:</span><span class="sxs-lookup"><span data-stu-id="655b7-120">You receive the token in `OnTeamsMessagingExtensionQueryAsync` handler in the `turnContext.Activity.Value` payload or in the `OnTeamsAppBasedLinkQueryAsync`, depending on which scenario you are enabling the SSO for:</span></span>
 
     ```json
     JObject valueObject=JObject.FromObject(turnContext.Activity.Value);
@@ -52,7 +53,7 @@ ms.locfileid: "51378348"
     
      ```
   
-    <span data-ttu-id="1a162-121">Если вы используете подключение OAuth, добавьте следующий код в файл TeamsMessagingExtensionsSearchAuthConfigBot.cs для обновления или добавления маркера в магазине:</span><span class="sxs-lookup"><span data-stu-id="1a162-121">If you are using the OAuth connection, add the following code to the TeamsMessagingExtensionsSearchAuthConfigBot.cs file to update or add the token in the store:</span></span>
+    <span data-ttu-id="655b7-121">Если вы используете подключение OAuth, добавьте следующий код в файл TeamsMessagingExtensionsSearchAuthConfigBot.cs для обновления или добавления маркера в магазине:</span><span class="sxs-lookup"><span data-stu-id="655b7-121">If you are using the OAuth connection, add the following code to the TeamsMessagingExtensionsSearchAuthConfigBot.cs file to update or add the token in the store:</span></span>
     
    ```C#
    protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
@@ -113,14 +114,14 @@ ms.locfileid: "51378348"
     
     ```    
 
-## <a name="see-also"></a><span data-ttu-id="1a162-122">См. также</span><span class="sxs-lookup"><span data-stu-id="1a162-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="655b7-122">См. также</span><span class="sxs-lookup"><span data-stu-id="655b7-122">See also</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="1a162-123">Добавление проверки подлинности в расширения обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="1a162-123">Add authentication to your messaging extensions</span></span>](add-authentication.md)
+> [<span data-ttu-id="655b7-123">Добавление проверки подлинности в расширения обмена сообщениями</span><span class="sxs-lookup"><span data-stu-id="655b7-123">Add authentication to your messaging extensions</span></span>](add-authentication.md)
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="1a162-124">Использование SSO для ботов</span><span class="sxs-lookup"><span data-stu-id="1a162-124">Use SSO for bots</span></span>](../../bots/how-to/authentication/auth-aad-sso-bots.md)
+> [<span data-ttu-id="655b7-124">Использование SSO для ботов</span><span class="sxs-lookup"><span data-stu-id="655b7-124">Use SSO for bots</span></span>](../../bots/how-to/authentication/auth-aad-sso-bots.md)
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="1a162-125">Развернуть ссылку</span><span class="sxs-lookup"><span data-stu-id="1a162-125">Link unfurling</span></span>](link-unfurling.md)
+> [<span data-ttu-id="655b7-125">Развертывание ссылки</span><span class="sxs-lookup"><span data-stu-id="655b7-125">Link unfurling</span></span>](link-unfurling.md)
 

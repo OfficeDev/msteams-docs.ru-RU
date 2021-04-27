@@ -1,43 +1,44 @@
 ---
-title: Создание вкладки каналов и групп с ASP.NET основной MVC
+title: Создание вкладки каналов и групп с ASP.NET MVC
 author: laujan
-description: Краткое руководство по созданию настраиваемой вкладки каналов и групп с ASP.NET основной MVC.
+description: Руководство quickstart по созданию настраиваемой вкладки канала и группы с ASP.NET Core MVC
+localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: cda91825ee37da94ee84747c5d2439c2940c728b
-ms.sourcegitcommit: e8dfcb167274e996395b77d65999991a18f2051a
+ms.openlocfilehash: 9d89fd98bae9732a8f9e2d34b82d7fc0e6985e01
+ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47818929"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52020312"
 ---
-# <a name="create-a-custom-channel-and-group-tab-with-aspnet-core-mvc"></a><span data-ttu-id="b005a-103">Создание настраиваемой вкладки каналов и групп с ASP.NET основной MVC</span><span class="sxs-lookup"><span data-stu-id="b005a-103">Create a Custom Channel and Group Tab with ASP.NET Core MVC</span></span>
+# <a name="create-a-custom-channel-and-group-tab-with-aspnet-core-mvc"></a><span data-ttu-id="55c0a-103">Создание настраиваемой вкладки канала и группы с ASP.NET MVC</span><span class="sxs-lookup"><span data-stu-id="55c0a-103">Create a Custom Channel and Group Tab with ASP.NET Core MVC</span></span>
 
-<span data-ttu-id="b005a-104">В этом руководстве мы рассмотрим создание настраиваемой вкладки канал/группа с помощью C# и ASP.Net Core MVC.</span><span class="sxs-lookup"><span data-stu-id="b005a-104">In this quickstart we'll walk-through creating a custom channel/group tab with C# and ASP.Net Core MVC.</span></span> <span data-ttu-id="b005a-105">Мы также используем [Приложение App Studio для Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) , чтобы завершить манифест приложения и развернуть вкладку в Teams.</span><span class="sxs-lookup"><span data-stu-id="b005a-105">We'll also use [App Studio for Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) to finalize your app manifest and deploy your tab to Teams.</span></span>
+<span data-ttu-id="55c0a-104">В этом quickstart мы создам настраиваемую вкладку channel/group с C# и ASP.Net core MVC.</span><span class="sxs-lookup"><span data-stu-id="55c0a-104">In this quickstart we'll walk-through creating a custom channel/group tab with C# and ASP.Net Core MVC.</span></span> <span data-ttu-id="55c0a-105">Кроме того, мы будем использовать [App Studio для Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) для окончательного развертывания манифеста приложения и развертывания вкладки в Teams.</span><span class="sxs-lookup"><span data-stu-id="55c0a-105">We'll also use [App Studio for Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) to finalize your app manifest and deploy your tab to Teams.</span></span>
 
 [!INCLUDE [dotnet-core-prereq](~/includes/tabs/dotnet-core-prereq.md)]
 
-## <a name="get-the-source-code"></a><span data-ttu-id="b005a-106">Получение исходного кода</span><span class="sxs-lookup"><span data-stu-id="b005a-106">Get the source code</span></span>
+## <a name="get-the-source-code"></a><span data-ttu-id="55c0a-106">Получить исходный код</span><span class="sxs-lookup"><span data-stu-id="55c0a-106">Get the source code</span></span>
 
-<span data-ttu-id="b005a-107">Откройте командную строку и создайте новый каталог для проекта со вкладками.</span><span class="sxs-lookup"><span data-stu-id="b005a-107">Open a command prompt and create a new directory for your tab project.</span></span> <span data-ttu-id="b005a-108">Чтобы приступить к работе, мы предоставили проект [вкладки простой группы каналов](https://github.com/OfficeDev/microsoft-teams-sample-tabs/ChannelGroupTabMVC) .</span><span class="sxs-lookup"><span data-stu-id="b005a-108">We have provided a simple [Channel Group Tab](https://github.com/OfficeDev/microsoft-teams-sample-tabs/ChannelGroupTabMVC) project to get you started.</span></span> <span data-ttu-id="b005a-109">Чтобы получить исходный код, можно скачать папку ZIP и извлечь файлы или клонировать репозиторий примера в новый каталог:</span><span class="sxs-lookup"><span data-stu-id="b005a-109">To retrieve the source code you can download the zip folder and extract the files or clone the sample repository into your new directory:</span></span>
+<span data-ttu-id="55c0a-107">Откройте командную подсказку и создайте новый каталог для проекта вкладки.</span><span class="sxs-lookup"><span data-stu-id="55c0a-107">Open a command prompt and create a new directory for your tab project.</span></span> <span data-ttu-id="55c0a-108">Мы предоставили простой проект [Вкладки группы каналов](https://github.com/OfficeDev/microsoft-teams-sample-tabs/ChannelGroupTabMVC) для начала работы.</span><span class="sxs-lookup"><span data-stu-id="55c0a-108">We have provided a simple [Channel Group Tab](https://github.com/OfficeDev/microsoft-teams-sample-tabs/ChannelGroupTabMVC) project to get you started.</span></span> <span data-ttu-id="55c0a-109">Чтобы получить исходный код, вы можете скачать папку zip и извлечь файлы или клонировать репозиторий образца в новый каталог:</span><span class="sxs-lookup"><span data-stu-id="55c0a-109">To retrieve the source code you can download the zip folder and extract the files or clone the sample repository into your new directory:</span></span>
 
 ```bash
 git clone https://github.com/OfficeDev/microsoft-teams-sample-tabs.git
 ```
 
-<span data-ttu-id="b005a-110">После создания исходного кода откройте Visual Studio и выберите **Открыть проект или решение**.</span><span class="sxs-lookup"><span data-stu-id="b005a-110">Once you have the source code, open Visual Studio and select **Open a project or solution**.</span></span> <span data-ttu-id="b005a-111">Перейдите в каталог приложений вкладки и откройте **чаннелграуптабмвк. sln**.</span><span class="sxs-lookup"><span data-stu-id="b005a-111">Navigate to the tab application directory and open **ChannelGroupTabMVC.sln**.</span></span>
+<span data-ttu-id="55c0a-110">После того как у вас есть исходный код, откройте Visual Studio и выберите **Открыть проект или решение**.</span><span class="sxs-lookup"><span data-stu-id="55c0a-110">Once you have the source code, open Visual Studio and select **Open a project or solution**.</span></span> <span data-ttu-id="55c0a-111">Перейдите к каталогу приложений вкладок и откройте **ChannelGroupTabMVC.sln**.</span><span class="sxs-lookup"><span data-stu-id="55c0a-111">Navigate to the tab application directory and open **ChannelGroupTabMVC.sln**.</span></span>
 
-<span data-ttu-id="b005a-112">Чтобы построить и запустить приложение, нажмите клавишу **F5** или в меню **Отладка** выберите команду **начать отладку** .</span><span class="sxs-lookup"><span data-stu-id="b005a-112">To build and run your application press **F5** or choose **Start Debugging** from the **Debug** menu.</span></span> <span data-ttu-id="b005a-113">В браузере перейдите по приведенным ниже URL-адресам и убедитесь, что приложение загружено правильно:</span><span class="sxs-lookup"><span data-stu-id="b005a-113">In a browser, navigate to the URLs below and verify that the application loaded properly:</span></span>
+<span data-ttu-id="55c0a-112">Для создания и запуска приложения нажмите **кнопку F5** или выберите **Пуск** отладки из меню **отладки.**</span><span class="sxs-lookup"><span data-stu-id="55c0a-112">To build and run your application press **F5** or choose **Start Debugging** from the **Debug** menu.</span></span> <span data-ttu-id="55c0a-113">В браузере перейдите к URL-адресам ниже и убедитесь, что приложение загружено правильно:</span><span class="sxs-lookup"><span data-stu-id="55c0a-113">In a browser, navigate to the URLs below and verify that the application loaded properly:</span></span>
 
 - `http://localhost:44360`
 - `http://localhost:44360/privacy`
 - `http://localhost:44360/tou`
 
-## <a name="review-the-source-code"></a><span data-ttu-id="b005a-114">Просмотр исходного кода</span><span class="sxs-lookup"><span data-stu-id="b005a-114">Review the source code</span></span>
+## <a name="review-the-source-code"></a><span data-ttu-id="55c0a-114">Просмотр исходных кодов</span><span class="sxs-lookup"><span data-stu-id="55c0a-114">Review the source code</span></span>
 
-### <a name="startupcs"></a><span data-ttu-id="b005a-115">Startup.cs</span><span class="sxs-lookup"><span data-stu-id="b005a-115">Startup.cs</span></span>
+### <a name="startupcs"></a><span data-ttu-id="55c0a-115">Startup.cs</span><span class="sxs-lookup"><span data-stu-id="55c0a-115">Startup.cs</span></span>
 
-<span data-ttu-id="b005a-116">Этот проект был создан из пустого шаблона веб-приложения ASP.NET Core 2,2 с установленным флажком *Расширенная настройка для HTTPS* , установленным во время установки.</span><span class="sxs-lookup"><span data-stu-id="b005a-116">This project was created from an ASP.NET Core 2.2 Web Application empty template with the *Advanced - Configure for HTTPS* check box selected at setup.</span></span> <span data-ttu-id="b005a-117">Службы MVC регистрируются методом платформы внедрения зависимостей `ConfigureServices()` .</span><span class="sxs-lookup"><span data-stu-id="b005a-117">The MVC services are registered by the dependency injection framework's `ConfigureServices()` method.</span></span> <span data-ttu-id="b005a-118">Кроме того, по умолчанию в пустом шаблоне не включается возможность обслуживания статического содержимого, поэтому в метод добавляется промежуточное по промежуточным файлам `Configure()` .</span><span class="sxs-lookup"><span data-stu-id="b005a-118">Additionally, the empty template doesn't enable serving static content by default, so the static files middleware is added to the `Configure()` method:</span></span>
+<span data-ttu-id="55c0a-116">Этот проект был создан из пустого шаблона ASP.NET Core 2.2 веб-приложения с расширенным - Настройка для *httpS-окна,* выбранного при установке.</span><span class="sxs-lookup"><span data-stu-id="55c0a-116">This project was created from an ASP.NET Core 2.2 Web Application empty template with the *Advanced - Configure for HTTPS* check box selected at setup.</span></span> <span data-ttu-id="55c0a-117">Службы MVC регистрируются методом впрыскивания `ConfigureServices()` зависимостей.</span><span class="sxs-lookup"><span data-stu-id="55c0a-117">The MVC services are registered by the dependency injection framework's `ConfigureServices()` method.</span></span> <span data-ttu-id="55c0a-118">Кроме того, пустой шаблон не позволяет обслуживать статическое содержимое по умолчанию, поэтому к методу добавляется среднее по статическим `Configure()` файлам:</span><span class="sxs-lookup"><span data-stu-id="55c0a-118">Additionally, the empty template doesn't enable serving static content by default, so the static files middleware is added to the `Configure()` method:</span></span>
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -51,23 +52,23 @@ public void Configure(IApplicationBuilder app)
   }
 ```
 
-### <a name="wwwroot-folder"></a><span data-ttu-id="b005a-119">Папка wwwroot</span><span class="sxs-lookup"><span data-stu-id="b005a-119">wwwroot folder</span></span>
+### <a name="wwwroot-folder"></a><span data-ttu-id="55c0a-119">папка wwwroot</span><span class="sxs-lookup"><span data-stu-id="55c0a-119">wwwroot folder</span></span>
 
-<span data-ttu-id="b005a-120">В ядре ASP.NET корневая папка веб-сайта — это место, в котором приложение выполняет поиск статических файлов.</span><span class="sxs-lookup"><span data-stu-id="b005a-120">In ASP.NET Core, the web root folder is where the application looks for static files.</span></span>
+<span data-ttu-id="55c0a-120">В ASP.NET Core веб-корневая папка — это место, где приложение ищет статические файлы.</span><span class="sxs-lookup"><span data-stu-id="55c0a-120">In ASP.NET Core, the web root folder is where the application looks for static files.</span></span>
 
-### <a name="appmanifest-folder"></a><span data-ttu-id="b005a-121">Папка AppManifest</span><span class="sxs-lookup"><span data-stu-id="b005a-121">AppManifest folder</span></span>
+### <a name="appmanifest-folder"></a><span data-ttu-id="55c0a-121">Папка AppManifest</span><span class="sxs-lookup"><span data-stu-id="55c0a-121">AppManifest folder</span></span>
 
-<span data-ttu-id="b005a-122">Эта папка содержит следующие обязательные файлы пакета приложения:</span><span class="sxs-lookup"><span data-stu-id="b005a-122">This folder contains the following required app package files:</span></span>
+<span data-ttu-id="55c0a-122">Эта папка содержит следующие необходимые файлы пакета приложений:</span><span class="sxs-lookup"><span data-stu-id="55c0a-122">This folder contains the following required app package files:</span></span>
 
-- <span data-ttu-id="b005a-123">**Значок с полным цветом** , измеряющий 192 x 192 пикселей.</span><span class="sxs-lookup"><span data-stu-id="b005a-123">A **full color icon** measuring 192 x 192 pixels.</span></span>
-- <span data-ttu-id="b005a-124">**Прозрачный значок структуры** , измеряющий 32 x 32 пикселей.</span><span class="sxs-lookup"><span data-stu-id="b005a-124">A **transparent outline icon** measuring 32 x 32 pixels.</span></span>
-- <span data-ttu-id="b005a-125">**manifest.js** файла, определяющего атрибуты приложения.</span><span class="sxs-lookup"><span data-stu-id="b005a-125">A **manifest.json** file that specifies the attributes of your app.</span></span>
+- <span data-ttu-id="55c0a-123">Значок **полного цвета** размером 192 x 192 пикселя.</span><span class="sxs-lookup"><span data-stu-id="55c0a-123">A **full color icon** measuring 192 x 192 pixels.</span></span>
+- <span data-ttu-id="55c0a-124">Прозрачный **значок контура** размером 32 x 32 пикселя.</span><span class="sxs-lookup"><span data-stu-id="55c0a-124">A **transparent outline icon** measuring 32 x 32 pixels.</span></span>
+- <span data-ttu-id="55c0a-125">Файл **manifest.js,** который указывает атрибуты приложения.</span><span class="sxs-lookup"><span data-stu-id="55c0a-125">A **manifest.json** file that specifies the attributes of your app.</span></span>
 
-<span data-ttu-id="b005a-126">Эти файлы необходимо заархивировать в пакете приложения для использования при загрузке вкладки в Teams.</span><span class="sxs-lookup"><span data-stu-id="b005a-126">These files need to be zipped in an app package for use in uploading your tab to Teams.</span></span>
+<span data-ttu-id="55c0a-126">Эти файлы необходимо использовать в пакете приложений для отправки вкладки в Teams.</span><span class="sxs-lookup"><span data-stu-id="55c0a-126">These files need to be zipped in an app package for use in uploading your tab to Teams.</span></span>
 
-### <a name="csproj"></a><span data-ttu-id="b005a-127">CSPROJ</span><span class="sxs-lookup"><span data-stu-id="b005a-127">.csproj</span></span>
+### <a name="csproj"></a><span data-ttu-id="55c0a-127">.csproj</span><span class="sxs-lookup"><span data-stu-id="55c0a-127">.csproj</span></span>
 
-<span data-ttu-id="b005a-128">В окне обозревателя решений Visual Studio щелкните правой кнопкой мыши проект и выберите команду **изменить файл проекта**.</span><span class="sxs-lookup"><span data-stu-id="b005a-128">In the Visual Studio Solution Explorer window right-click on the project and select **Edit Project File**.</span></span> <span data-ttu-id="b005a-129">В нижней части файла вы увидите код, который создает и обновляет папку zip при построении приложения:</span><span class="sxs-lookup"><span data-stu-id="b005a-129">At the bottom of the file you'll see the code that creates and updates your zip folder when the application builds:</span></span>
+<span data-ttu-id="55c0a-128">В окне Visual Studio обозревателя решений щелкните правой кнопкой мыши по проекту и выберите **Файл редактирования проекта.**</span><span class="sxs-lookup"><span data-stu-id="55c0a-128">In the Visual Studio Solution Explorer window right-click on the project and select **Edit Project File**.</span></span> <span data-ttu-id="55c0a-129">В нижней части файла вы увидите код, который создает и обновляет папку zip при создании приложения:</span><span class="sxs-lookup"><span data-stu-id="55c0a-129">At the bottom of the file you'll see the code that creates and updates your zip folder when the application builds:</span></span>
 
 ```xml
 <PropertyGroup>
@@ -87,39 +88,39 @@ public void Configure(IApplicationBuilder app)
   </ItemGroup>
 ```
 
-### <a name="models"></a><span data-ttu-id="b005a-130">Модели</span><span class="sxs-lookup"><span data-stu-id="b005a-130">Models</span></span>
+### <a name="models"></a><span data-ttu-id="55c0a-130">Модели</span><span class="sxs-lookup"><span data-stu-id="55c0a-130">Models</span></span>
 
-<span data-ttu-id="b005a-131">*ChannelGroup.CS* представляет объект сообщения и методы, которые будут вызываться из контроллеров во время настройки.</span><span class="sxs-lookup"><span data-stu-id="b005a-131">*ChannelGroup.cs* presents a Message object and methods that will be called from the Controllers during configuration.</span></span>
+<span data-ttu-id="55c0a-131">*ChannelGroup.cs представляет* объект Сообщения и методы, которые будут вызваны из контроллеров во время настройки.</span><span class="sxs-lookup"><span data-stu-id="55c0a-131">*ChannelGroup.cs* presents a Message object and methods that will be called from the Controllers during configuration.</span></span>
 
-### <a name="views"></a><span data-ttu-id="b005a-132">Представления</span><span class="sxs-lookup"><span data-stu-id="b005a-132">Views</span></span>
+### <a name="views"></a><span data-ttu-id="55c0a-132">Представления</span><span class="sxs-lookup"><span data-stu-id="55c0a-132">Views</span></span>
 
-#### <a name="home"></a><span data-ttu-id="b005a-133">Домашняя</span><span class="sxs-lookup"><span data-stu-id="b005a-133">Home</span></span>
+#### <a name="home"></a><span data-ttu-id="55c0a-133">Главная</span><span class="sxs-lookup"><span data-stu-id="55c0a-133">Home</span></span>
 
-<span data-ttu-id="b005a-134">ASP.NET Core рассматривает файлы с именем *index* как страницу по умолчанию или домашнюю страницу сайта.</span><span class="sxs-lookup"><span data-stu-id="b005a-134">ASP.NET Core treats files called *Index* as the default/home page for the site.</span></span> <span data-ttu-id="b005a-135">Если URL-адрес браузера указывает на корневой сайт сайта, в качестве домашней страницы для приложения будет отображаться **index. cshtml** .</span><span class="sxs-lookup"><span data-stu-id="b005a-135">When your browser URL points to the root of the site, **Index.cshtml** will be displayed as the home page for your application.</span></span>
+<span data-ttu-id="55c0a-134">ASP.NET Core обрабатывает файлы под названием *Index* в качестве домашней страницы по умолчанию для сайта.</span><span class="sxs-lookup"><span data-stu-id="55c0a-134">ASP.NET Core treats files called *Index* as the default/home page for the site.</span></span> <span data-ttu-id="55c0a-135">Когда URL-адрес браузера указывает на корень сайта, **Index.cshtml** будет отображаться в качестве домашней страницы приложения.</span><span class="sxs-lookup"><span data-stu-id="55c0a-135">When your browser URL points to the root of the site, **Index.cshtml** will be displayed as the home page for your application.</span></span>
 
-#### <a name="shared"></a><span data-ttu-id="b005a-136">Shared</span><span class="sxs-lookup"><span data-stu-id="b005a-136">Shared</span></span>
+#### <a name="shared"></a><span data-ttu-id="55c0a-136">Shared</span><span class="sxs-lookup"><span data-stu-id="55c0a-136">Shared</span></span>
 
-<span data-ttu-id="b005a-137">Разметка частичного представления *_layout. cshtml* содержит общую структуру страницы и общие визуальные элементы приложения.</span><span class="sxs-lookup"><span data-stu-id="b005a-137">The partial view markup *_Layout.cshtml* contains the application's overall page structure and shared visual elements.</span></span> <span data-ttu-id="b005a-138">Он также будет ссылаться на библиотеку Teams.</span><span class="sxs-lookup"><span data-stu-id="b005a-138">It will also reference the Teams Library.</span></span>
+<span data-ttu-id="55c0a-137">Частичная разметка *_Layout.cshtml* содержит общую структуру страницы приложения и общие визуальные элементы.</span><span class="sxs-lookup"><span data-stu-id="55c0a-137">The partial view markup *_Layout.cshtml* contains the application's overall page structure and shared visual elements.</span></span> <span data-ttu-id="55c0a-138">Он также будет ссылаться на библиотеку teams.</span><span class="sxs-lookup"><span data-stu-id="55c0a-138">It will also reference the Teams Library.</span></span>
 
-### <a name="controllers"></a><span data-ttu-id="b005a-139">Controller</span><span class="sxs-lookup"><span data-stu-id="b005a-139">Controllers</span></span>
+### <a name="controllers"></a><span data-ttu-id="55c0a-139">Контроллеры</span><span class="sxs-lookup"><span data-stu-id="55c0a-139">Controllers</span></span>
 
-<span data-ttu-id="b005a-140">Контроллеры используют свойство Виевбаг для динамического переноса значений в представлениях.</span><span class="sxs-lookup"><span data-stu-id="b005a-140">The controllers use the ViewBag property to transfer values dynamically to the Views.</span></span>
+<span data-ttu-id="55c0a-140">Контроллеры используют свойство ViewBag для динамической передачи значений в Представления.</span><span class="sxs-lookup"><span data-stu-id="55c0a-140">The controllers use the ViewBag property to transfer values dynamically to the Views.</span></span>
 
 [!INCLUDE [dotnet-ngrok-intro](~/includes/tabs/dotnet-ngrok-intro.md)]
 
-- <span data-ttu-id="b005a-141">Откройте командную строку в корне каталога проекта и выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="b005a-141">Open a command prompt in the root of your project directory and run the following command:</span></span>
+- <span data-ttu-id="55c0a-141">Откройте командную подсказку в корневом каталоге проекта и запустите следующую команду:</span><span class="sxs-lookup"><span data-stu-id="55c0a-141">Open a command prompt in the root of your project directory and run the following command:</span></span>
 
 ```bash
 ngrok http https://localhost:443560 -host-header="localhost:44360"
 ```
 
-- <span data-ttu-id="b005a-142">Ngrok прослушивает запросы из Интернета и направляет их в ваше приложение, когда оно выполняется на порте 44355.</span><span class="sxs-lookup"><span data-stu-id="b005a-142">Ngrok will listen to requests from the internet and will route them to your application when it is running on port 44355.</span></span>  <span data-ttu-id="b005a-143">Он должен выглядеть примерно так `https://y8rCgT2b.ngrok.io/` , где *y8rCgT2b* ЗАМЕНЯЕТСЯ URL-адресом https ngrok, сооснованным на цифровом алфавите.</span><span class="sxs-lookup"><span data-stu-id="b005a-143">It should resemble `https://y8rCgT2b.ngrok.io/` where *y8rCgT2b* is replaced by your ngrok alpha-numeric HTTPS URL.</span></span>
+- <span data-ttu-id="55c0a-142">Ngrok будет прослушивать запросы из Интернета и перенанастрает их в ваше приложение, когда оно запущено в порту 44355.</span><span class="sxs-lookup"><span data-stu-id="55c0a-142">Ngrok will listen to requests from the internet and will route them to your application when it is running on port 44355.</span></span>  <span data-ttu-id="55c0a-143">Он должен `https://y8rCgT2b.ngrok.io/` напоминать, где *y8rCgT2b* заменяется url-адресом https ngrok alpha-numeric HTTPS.</span><span class="sxs-lookup"><span data-stu-id="55c0a-143">It should resemble `https://y8rCgT2b.ngrok.io/` where *y8rCgT2b* is replaced by your ngrok alpha-numeric HTTPS URL.</span></span>
 
-- <span data-ttu-id="b005a-144">Убедитесь, что Командная строка ngrok запущена и запишите URL-адрес, а затем это потребуется позже.</span><span class="sxs-lookup"><span data-stu-id="b005a-144">Be sure to keep the command prompt with ngrok running and to make note of the URL — you'll need it later.</span></span>
+- <span data-ttu-id="55c0a-144">Убедитесь в том, что командная подсказка будет запущена с помощью ngrok, и обратите внимание на URL-адрес , который вам понадобится позже.</span><span class="sxs-lookup"><span data-stu-id="55c0a-144">Be sure to keep the command prompt with ngrok running and to make note of the URL — you'll need it later.</span></span>
 
-## <a name="update-your-application"></a><span data-ttu-id="b005a-145">Обновление приложения</span><span class="sxs-lookup"><span data-stu-id="b005a-145">Update your application</span></span>
+## <a name="update-your-application"></a><span data-ttu-id="55c0a-145">Обновление приложения</span><span class="sxs-lookup"><span data-stu-id="55c0a-145">Update your application</span></span>
 
-<span data-ttu-id="b005a-146">В пределах **TAB. cshtml** приложение предоставляет пользователю два переключателя для отображения вкладки с помощью значка красного или серого.</span><span class="sxs-lookup"><span data-stu-id="b005a-146">Within **Tab.cshtml** the application presents the user with two option buttons for displaying the tab with either a red or gray icon.</span></span> <span data-ttu-id="b005a-147">При нажатии кнопки **выбрать серое** или **выбрать красную** , `saveGray()` `saveRed()` соответственно, задает набор `settings.setValidityState(true)` и активируется кнопка **сохранить** на странице Конфигурация.</span><span class="sxs-lookup"><span data-stu-id="b005a-147">Choosing the **Select Gray** or **Select Red** button fires `saveGray()` or `saveRed()`, respectively, sets `settings.setValidityState(true)`, and enables the **Save** button on the configuration page.</span></span> <span data-ttu-id="b005a-148">Этот код позволяет Teams знать, что вы удовлетворены требованиями к конфигурации и можете продолжить установку.</span><span class="sxs-lookup"><span data-stu-id="b005a-148">This code lets Teams know that you have satisfied the configuration requirements and the installation can proceed.</span></span> <span data-ttu-id="b005a-149">При сохранении `settings.setSettings` задаются параметры.</span><span class="sxs-lookup"><span data-stu-id="b005a-149">On save, the parameters of `settings.setSettings` are set.</span></span> <span data-ttu-id="b005a-150">Finally `saveEvent.notifySuccess()` вызывается, чтобы показать, что URL-адрес контента успешно разрешен.</span><span class="sxs-lookup"><span data-stu-id="b005a-150">Finally, `saveEvent.notifySuccess()` is called to indicate that the content URL has successfully resolved.</span></span>
+<span data-ttu-id="55c0a-146">В **Tab.cshtml** приложение представляет пользователю две кнопки параметра для отображения вкладки с красным или серым значком.</span><span class="sxs-lookup"><span data-stu-id="55c0a-146">Within **Tab.cshtml** the application presents the user with two option buttons for displaying the tab with either a red or gray icon.</span></span> <span data-ttu-id="55c0a-147">Выбор кнопки **Выберите серый** или **выберите** красный или, соответственно, задает и включает кнопку Сохранить `saveGray()` на странице `saveRed()` `settings.setValidityState(true)` конфигурации. </span><span class="sxs-lookup"><span data-stu-id="55c0a-147">Choosing the **Select Gray** or **Select Red** button fires `saveGray()` or `saveRed()`, respectively, sets `settings.setValidityState(true)`, and enables the **Save** button on the configuration page.</span></span> <span data-ttu-id="55c0a-148">Этот код позволяет Teams узнать, что вы удовлетворили требования к конфигурации и установка может продолжиться.</span><span class="sxs-lookup"><span data-stu-id="55c0a-148">This code lets Teams know that you have satisfied the configuration requirements and the installation can proceed.</span></span> <span data-ttu-id="55c0a-149">При сохранения `settings.setSettings` заданы параметры.</span><span class="sxs-lookup"><span data-stu-id="55c0a-149">On save, the parameters of `settings.setSettings` are set.</span></span> <span data-ttu-id="55c0a-150">Наконец, `saveEvent.notifySuccess()` называется, чтобы указать, что URL-адрес контента успешно решен.</span><span class="sxs-lookup"><span data-stu-id="55c0a-150">Finally, `saveEvent.notifySuccess()` is called to indicate that the content URL has successfully resolved.</span></span>
 
 [!INCLUDE [dotnet-update-app](~/includes/tabs/dotnet-update-chan-grp-app.md)]
 
