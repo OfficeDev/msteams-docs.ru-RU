@@ -46,6 +46,8 @@
       href: concepts/design/map-use-cases.md
 - name: Интеграция с Teams
   items:
+    - name: Обзор
+      href: samples/integrate-web-apps-overview.md
     - name: Веб-приложения
       href: samples/integrating-web-apps.md
     - name: Приложения Power Platform
