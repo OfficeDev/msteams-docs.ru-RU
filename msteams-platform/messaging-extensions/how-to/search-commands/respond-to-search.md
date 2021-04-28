@@ -4,12 +4,12 @@ author: clearab
 description: Как реагировать на команду поиска из расширения обмена сообщениями в приложении Microsoft Teams.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 4dff59d0bd923618a3079c81cbb6f9e7aea2bab4
-ms.sourcegitcommit: dd2220f691029d043aaddfc7c229e332735acb1d
+ms.openlocfilehash: 044c6eebe9489ed404c9fa89b29c306cde8c7363
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51996011"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058588"
 ---
 # <a name="respond-to-search-command"></a>Ответ на команду поиска
 
@@ -347,8 +347,7 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Добавление конфигурации в расширение обмена сообщениями](~/messaging-extensions/how-to/add-configuration-page.md)
+- [Добавление конфигурации в расширение обмена сообщениями](~/messaging-extensions/how-to/add-configuration-page.md)
  
 ## <a name="next-step"></a>Следующий шаг
 

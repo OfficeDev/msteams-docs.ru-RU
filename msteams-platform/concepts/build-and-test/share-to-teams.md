@@ -1,17 +1,17 @@
 ---
-title: Создание кнопки Share-to-Teams
+title: Создание кнопки «Поделиться в Teams»
 description: Добавление встроенной кнопки Share to Teams на веб-сайте
 ms.topic: reference
 localization_priority: Normal
 keywords: Share Teams Share-to-Teams
-ms.openlocfilehash: c77c4149c95685e17e8f789a9536b4d81e05d13f
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: c8bbb371e2d68bf063c3aa5e02c7cf3ec911c0b8
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020825"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058476"
 ---
-# <a name="create-share-to-teams-button"></a>Создание кнопки Share-to-Teams
+# <a name="create-share-to-teams-button"></a>Создание кнопки «Поделиться в Teams»
 
 Сторонние веб-сайты могут использовать сценарий запуска для встраив кнопки Share-to-Teams на своих веб-сайтах. При выборе запускается опыт share-to-Teams в всплывающее окно. Это позволяет обмениваться ссылками напрямую с любым человеком или каналом Microsoft Teams без переключения контекста. В этом документе вы можете узнать, как создать и встраить кнопку Share-to-Teams для веб-сайта, создать предварительный просмотр веб-сайта и расширить возможности share-to-Teams для образования.
 
@@ -92,14 +92,14 @@ ms.locfileid: "52020825"
 
 ## <a name="full-launcherjs-definition"></a>Полное launcher.js определение
 
-| Свойство | Атрибут HTML | Type | По умолчанию | Описание |
+| Свойство | Атрибут HTML | Тип | По умолчанию | Описание |
 | -------------- | ---------------------- | --------------------- | ------- | ---------------------------------------------------------------------- |
-| href | `data-href` | String | н/д | Href контента для обмена. |
+| href | `data-href` | string | н/д | Href контента для обмена. |
 | preview | `data-preview` | boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
 | iconPxSize | `data-icon-px-size` | номер (в качестве строки) | `32` | Размер пикселей кнопки Share-to-Teams для отрисовки. |
-| msgText | `data-msg-text` | String | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле для составить сообщение. Максимальное число символов — 200. |
-| assignInstr | `data-assign-instr` | String | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
-| assignTitle | `data-assign-title` | String | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
+| msgText | `data-msg-text` | string | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле для составить сообщение. Максимальное число символов — 200. |
+| assignInstr | `data-assign-instr` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
+| assignTitle | `data-assign-title` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
 
 ### <a name="methods"></a>Methods
 
@@ -133,5 +133,4 @@ ms.locfileid: "52020825"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

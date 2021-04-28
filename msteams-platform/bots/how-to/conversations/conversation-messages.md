@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 localization_priority: Normal
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 5944cc299a8ad4bebdaf034d803919a54868e41f
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 5b23e3b2548e3d0eab98fae73d37316063fe60c1
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020928"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058602"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -250,7 +250,7 @@ async def on_members_added_activity(
 
 ## <a name="message-content"></a>Содержимое сообщения
 
-| Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
+| Формат    | От пользователя к боту | От бота к пользователю | Заметки                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.  |
@@ -409,10 +409,9 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
-> [!div class="nextstepaction"]
-> [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+- [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
+
+- [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
 
 ## <a name="next-step"></a>Следующий шаг
 

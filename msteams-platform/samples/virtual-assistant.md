@@ -4,12 +4,12 @@ description: Создание виртуального помощника бот
 localization_priority: Normal
 ms.topic: how-to
 keywords: команды виртуальных помощников-ботов
-ms.openlocfilehash: 65d9b90dacd6ca653ce22b7170651423a2ac9425
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 80a308050317e8a211b8f7a9e2dd459c1572af18
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019649"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058679"
 ---
 # <a name="create-virtual-assistant"></a>Создание виртуального помощника 
 
@@ -577,11 +577,8 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
 
-> [!div class="nextstepaction"]
-> [Book-a-room](app-templates.md#book-a-room)
+- [Book-a-room](app-templates.md#book-a-room)
 
-> [!div class="nextstepaction"]
-> [Бот Microsoft Teams](../bots/what-are-bots.md)
+- [Бот Microsoft Teams](../bots/what-are-bots.md)

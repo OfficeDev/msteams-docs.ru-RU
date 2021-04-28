@@ -5,12 +5,12 @@ description: Тестирование и отладка бота локальн�
 ms.topic: overview
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 495e4dd2a3f29dbe0be61e8b42827bfc8c8a6f94
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 52676d35599560704e5bb72d85e09860174fdaf1
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020023"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058378"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 
@@ -95,8 +95,6 @@ ngrok http <port> -host-header=localhost:<port>
 
 ## <a name="see-also"></a>См. также
 
-> [!div class=nextstep]
-> [Отладка бота с помощью ПО промежуточного слоя для проверки](/azure/bot-service/bot-service-debug-inspection-middleware)
+- [Отладка бота с помощью ПО промежуточного слоя для проверки](/azure/bot-service/bot-service-debug-inspection-middleware)
 
-> [!div class=nextstep]
-> [Локальная отладка бота для звонков и собраний](~/bots/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md)
+- [Локальная отладка бота для звонков и собраний](~/bots/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md)

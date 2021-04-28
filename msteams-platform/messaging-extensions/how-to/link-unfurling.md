@@ -5,12 +5,12 @@ description: Выполнение разгрузки ссылок с расши�
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 2037e1e9a903cfe90d0dd8866722b0d10fa156b2
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: ec4ac7329b2c0df64237692d450977148789eff8
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019820"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058518"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 
@@ -178,5 +178,4 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 
 ## <a name="see-also"></a>См. также 
 
-> [!div class="nextstepaction"]
-> [Что такое карты](~/task-modules-and-cards/what-are-cards.md)
+- [Что такое карты](~/task-modules-and-cards/what-are-cards.md)

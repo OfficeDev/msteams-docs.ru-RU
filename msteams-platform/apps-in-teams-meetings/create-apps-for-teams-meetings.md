@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: c733f89208e82c032f581109f9c3887f20c104b9
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 741f39c2aca6e99fb7bdfaa1171de4e2bb1e7755
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52018378"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058350"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -324,7 +324,7 @@ POST /v3/conversations/{conversationId}/activities
 Расширение обмена сообщениями работает так, как и ожидалось, когда пользователь находится в представлении на собрании, и пользователь может отправлять составить карточки расширения сообщений. AppName in-meeting — это инструмент, который сообщает имя приложения на собрании U-bar.
 
 > [!NOTE]
-> Чтобы загрузить боковую панель, используйте версию 1.9.0 [Teams SDK,](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) так как версии до нее не поддерживают боковую панель.
+> Используйте версию 1.7.0 или более высокой [группы SDK,](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true)так как версии до нее не поддерживают боковую панель.
 
 #### <a name="in-meeting-dialog"></a>Диалоговое окно собрания
 

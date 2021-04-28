@@ -4,12 +4,12 @@ description: Описывает процесс тестирования наст
 ms.topic: how-to
 localization_priority: Normal
 keywords: Настройка microsoft 365 tenant Teams для загрузки тестового приложения
-ms.openlocfilehash: 8815e73c054cb75782660ef4afb3ae583b4f40fa
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: d95d65961b060ff1938d51c0f3fafc2b1e56fa7e
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019939"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058609"
 ---
 # <a name="test-your-app"></a>Тестирование приложения
 
@@ -37,14 +37,11 @@ ms.locfileid: "52019939"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Отламывка вкладки](~/tabs/how-to/developer-tools.md)
+- [Отламывка вкладки](~/tabs/how-to/developer-tools.md)
  
-> [!div class="nextstepaction"]
-> [Отламывка ботов](~/bots/how-to/debug/locally-with-an-ide.md)
+- [Отламывка ботов](~/bots/how-to/debug/locally-with-an-ide.md)
 
-> [!div class="nextstepaction"]
-> [Тестирование разрешений RSC](~/graph-api/rsc/test-resource-specific-consent.md)
+- [Тестирование разрешений RSC](~/graph-api/rsc/test-resource-specific-consent.md)
 
 ## <a name="next-step"></a>Следующий шаг
 

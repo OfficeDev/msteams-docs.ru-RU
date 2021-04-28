@@ -5,12 +5,12 @@ description: В этой статье описано, где люди могут
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: f3f4af191400b6c04c41827ce689b4250c105ce0
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: f2bdb35c76bdb7487e66a0e6b9ad01c6da9e04f8
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019841"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058322"
 ---
 # <a name="entry-points-for-teams-apps"></a>Точки входа для приложений Teams
 
@@ -47,8 +47,7 @@ ms.locfileid: "52019841"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Инструкции по разработке приложений teams](../concepts/design/design-teams-app-overview.md)
+- [Инструкции по разработке приложений teams](../concepts/design/design-teams-app-overview.md)
 
 ## <a name="next-step"></a>Следующий шаг
 

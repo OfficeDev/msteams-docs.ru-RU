@@ -5,12 +5,12 @@ description: Подробные данные о доступных решени�
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: c3fa4fb1792579a344596cbb080d96015292f7c4
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 78386c310ee4a82e5fdc6832f0cd288181674dbb
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020417"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058686"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание пользовательских приложений с низким кодом для Microsoft Teams
 
@@ -83,5 +83,4 @@ Microsoft Power Platform объединяет четыре надежные те
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

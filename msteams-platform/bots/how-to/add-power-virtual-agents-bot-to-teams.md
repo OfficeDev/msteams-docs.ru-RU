@@ -5,14 +5,14 @@ description: интеграция чат-бота Power Virtual Agents в пла
 ms.topic: how-to
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: d6d9f4292e22df7ca0f5841a2fc579b9e3b1d2f3
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: bd1528d06f9e9f4ca3a03f167ecb3c537977fb61
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020115"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058623"
 ---
-# <a name="add-power-virtual-agents-chatbot"></a>Добавление чат-бота виртуальных агентов Power 
+# <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents 
 
 Power Virtual Agents — это не кодовое решение графического интерфейса, которое позволяет каждому члену вашей команды создавать богатых чат-ботов, которые легко интегрируются с платформой Teams. Все контенты, авторские в Power Virtual Agents, отрисовка естественно в Teams. Power Virtual Agents bots engage with users in the Teams native chat canvas. ИТ-администраторы, бизнес-аналитики, специалисты по доменам и опытные разработчики приложений могут разрабатывать, разрабатывать и публиковать интеллектуальные виртуальные агенты для Teams без настройки среды разработки. Они могут создавать веб-службы или непосредственно регистрироваться в Bot Framework. 
 
@@ -104,20 +104,16 @@ App Studio — это приложение Teams. Установка App Studio 
 Процесс настройка для добавления бота чата виртуальных агентов Power в Teams завершен. Теперь вы можете начать беседу с ботом в личном чате.
 
 ## <a name="see-also"></a>См. также
-> [!div class="nextstepaction"]
-> [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)  
 
-> [!div class="nextstepaction"]
-> [Создание чат-бота для Teams с виртуальными агентами Microsoft Power.](../bot-features.md#bots-and-the-microsoft-power-virtual-agents)  
+- [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)  
 
-> [!div class="nextstepaction"]
->  [Портал Power Virtual Agents](https://powervirtualagents.microsoft.com)
+- [Создание чат-бота для Teams с виртуальными агентами Microsoft Power.](../bot-features.md#bots-and-the-microsoft-power-virtual-agents)  
 
-> [!div class="nextstepaction"]
-> [Публикация бота виртуальных агентов Power](/power-virtual-agents/publication-fundamentals-publish-channels)
+- [Портал Power Virtual Agents](https://powervirtualagents.microsoft.com)
 
-> [!div class="nextstepaction"]
-> [Безопасность и соответствие требованиям в Microsoft Teams](/MicrosoftTeams/security-compliance-overview).
+- [Публикация бота виртуальных агентов Power](/power-virtual-agents/publication-fundamentals-publish-channels)
+
+- [Безопасность и соответствие требованиям в Microsoft Teams](/MicrosoftTeams/security-compliance-overview).
 
 ## <a name="next-step"></a>Следующий шаг
 

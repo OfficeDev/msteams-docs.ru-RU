@@ -4,12 +4,12 @@ author: Rajeshwari-v
 description: Обзор интеграции веб-приложений и возможностей устройств с приложением Microsoft Teams.
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 6493f493b2bfc67a23aebfb5142aff60cf0afe93
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 01977e22d79f7e39986367e647a2d48ea9b2905c
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020244"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058658"
 ---
 # <a name="integrate-web-apps"></a>Интеграция веб-приложений
 
@@ -79,41 +79,28 @@ Moodle — популярная система управления обучен
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Соединая карта случаев использования приложения с возможностями платформы Teams](~/concepts/design/map-use-cases.md)
+- [Соединая карта случаев использования приложения с возможностями платформы Teams](~/concepts/design/map-use-cases.md)
 
-> [!div class="nextstepaction"]
-> [Определение точек входа приложения](~/concepts/extensibility-points.md)
+- [Определение точек входа приложения](~/concepts/extensibility-points.md)
 
-> [!div class="nextstepaction"]
-> [Интеграция веб-приложений](~/samples/integrating-web-apps.md)
+- [Интеграция веб-приложений](~/samples/integrating-web-apps.md)
 
-> [!div class="nextstepaction"]
-> [Создание пользовательских приложений с низким кодом для Microsoft Teams](~/samples/teams-low-code-solutions.md)
+- [Создание пользовательских приложений с низким кодом для Microsoft Teams](~/samples/teams-low-code-solutions.md)
 
-> [!div class="nextstepaction"]
-> [Добавление чатбота Power Virtual Agents](~/bots/how-to/add-power-virtual-agents-bot-to-teams.md)
+- [Добавление чатбота Power Virtual Agents](~/bots/how-to/add-power-virtual-agents-bot-to-teams.md)
 
-> [!div class="nextstepaction"]
-> [Создание виртуального помощника](~/samples/virtual-assistant.md)
+- [Создание виртуального помощника](~/samples/virtual-assistant.md)
 
-> [!div class="nextstepaction"]
-> [Шаблоны приложений для Microsoft Teams](~/samples/app-templates.md)
+- [Шаблоны приложений для Microsoft Teams](~/samples/app-templates.md)
 
-> [!div class="nextstepaction"]
-> [Соединители переноса, готовые к производству](~/samples/shifts-wfm-connectors.md)
+- [Соединители переноса, готовые к производству](~/samples/shifts-wfm-connectors.md)
 
-> [!div class="nextstepaction"]
-> [Установка Moodle LMS](~/resources/moodleinstructions.md)
+- [Установка Moodle LMS](~/resources/moodleinstructions.md)
 
-> [!div class="nextstepaction"]
-> [Создание кнопки «Поделиться в Teams»](~/concepts/build-and-test/share-to-teams.md)
+- [Создание кнопки «Поделиться в Teams»](~/concepts/build-and-test/share-to-teams.md)
 
-> [!div class="nextstepaction"]
-> [Добавление вкладки Teams в SharePoint](~/tabs/how-to/tabs-in-sharepoint.md)
+- [Добавление вкладки Teams в SharePoint](~/tabs/how-to/tabs-in-sharepoint.md)
 
-> [!div class="nextstepaction"]
-> [Создание прямых ссылок](~/concepts/build-and-test/deep-links.md)
+- [Создание прямых ссылок](~/concepts/build-and-test/deep-links.md)
 
-> [!div class="nextstepaction"]
-> [Возможности устройств](~/concepts/device-capabilities/device-capabilities-overview.md)
+- [Возможности устройств](~/concepts/device-capabilities/device-capabilities-overview.md)

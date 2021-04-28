@@ -5,12 +5,12 @@ description: Анализ вариантов использования
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 748e40c712af7fb0095edd4f6ffe67ed253decec
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 9afb7ffb9ef6c07857f4452ce41a7b86782d50cd
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019869"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058665"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -79,14 +79,11 @@ ms.locfileid: "52019869"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Выбор способа распространения приложения](../deploy-and-publish/overview.md)
+- [Выбор способа распространения приложения](../deploy-and-publish/overview.md)
 
-> [!div class="nextstepaction"]
-> [Разработка эффективных вкладок](../../tabs/design/tabs.md)
+- [Разработка эффективных вкладок](../../tabs/design/tabs.md)
 
-> [!div class="nextstepaction"]
-> [Разработка удивительных ботов](../../bots/design/bots.md)
+- [Разработка удивительных ботов](../../bots/design/bots.md)
 
 ## <a name="next-step"></a>Следующий шаг
 

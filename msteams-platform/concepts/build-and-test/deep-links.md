@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 localization_priority: Normal
 keywords: deeplink teams deep link
-ms.openlocfilehash: 26423a52c1bd2f643a40222eafdb4b9c1087a1a1
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: fb681cc2dc07f8ae042fe57d6249e986fefa1b7b
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020837"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058336"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -224,5 +224,4 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

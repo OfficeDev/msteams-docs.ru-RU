@@ -4,12 +4,12 @@ description: Узнайте, как приложения Microsoft Teams мог�
 ms.topic: conceptual
 localization_priority: Normal
 keywords: вызов вызовов аудио видео IVR голосовых собраний в Интернете
-ms.openlocfilehash: 52a7e1e24fdc0a2c17264087e4f4461b7c43a50a
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: d4cec30e110eed5f73929305cc43b84eed4d7524
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020171"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058315"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 
@@ -95,20 +95,19 @@ ms.locfileid: "52020171"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Ссылка на API graph](/graph/api/resources/communications-api-overview?view=graph-rest-beta&preserve-view=true)
-> [!div class="nextstepaction"]
-> [Примеры приложений](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
-> [!div class="nextstepaction"]
-> [Регистрация бота, поддерживаюного вызовы и собрания в Интернете](./registering-calling-bot.md)
-> [!div class="nextstepaction"]
-> [Graph permissions for calls and online meetings bots](./registering-calling-bot.md#add-graph-permissions)
-> [!div class="nextstepaction"]
-> [Разработка ботов вызовов и онлайн-собраний на компьютере](./debugging-local-testing-calling-meeting-bots.md)
-> [!div class="nextstepaction"]
-> [Требования и соображения к медийным ботам с хостингом приложений](./requirements-considerations-application-hosted-media-bots.md)
-> [!div class="nextstepaction"]
-> [Техническая информация по обработке входящих уведомлений о вызове](./call-notifications.md)
+- [Ссылка на API graph](/graph/api/resources/communications-api-overview?view=graph-rest-beta&preserve-view=true)
+
+- [Примеры приложений](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
+
+- [Регистрация бота, поддерживаюного вызовы и собрания в Интернете](./registering-calling-bot.md)
+
+- [Graph permissions for calls and online meetings bots](./registering-calling-bot.md#add-graph-permissions)
+
+- [Разработка ботов вызовов и онлайн-собраний на компьютере](./debugging-local-testing-calling-meeting-bots.md)
+
+- [Требования и соображения к медийным ботам с хостингом приложений](./requirements-considerations-application-hosted-media-bots.md)
+
+- [Техническая информация по обработке входящих уведомлений о вызове](./call-notifications.md)
 
 ## <a name="next-step"></a>Следующий шаг
 

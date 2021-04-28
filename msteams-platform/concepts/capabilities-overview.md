@@ -6,12 +6,12 @@ ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: d1c6916c9433b15ddcd13e9128b25170dd990dd4
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: f670f1f7b3db01f89fab4335c33f92e02cad1d9a
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019932"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058490"
 ---
 # <a name="understand-microsoft-teams-app-capabilities"></a>Понимание возможностей приложений Microsoft Teams
 
@@ -41,8 +41,8 @@ ms.locfileid: "52019932"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Создание приложений для teams](../overview.md)
+- [Создание приложений для teams](../overview.md)
+
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]

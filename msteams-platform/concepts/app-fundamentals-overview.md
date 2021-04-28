@@ -5,12 +5,12 @@ description: Опишите основные концепции разработ
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: b52eebf2b8e0884cd225298ae557bb7ac65d4a68
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 6d0c22049e828426cfe963da6631b4c289566bf0
+ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020865"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52058462"
 ---
 # <a name="microsoft-teams-app-development-fundamentals"></a>Основы разработки приложений Microsoft Teams
 
@@ -35,11 +35,9 @@ ms.locfileid: "52020865"
 
 ## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Интеграция веб-приложений с Teams](../samples/integrating-web-apps.md)
+- [Интеграция веб-приложений с Teams](../samples/integrating-web-apps.md)
 
-> [!div class="nextstepaction"]
-> [Создайте свое первое приложение Microsoft Teams](../build-your-first-app/build-first-app-overview.md)
+- [Создайте свое первое приложение Microsoft Teams](../build-your-first-app/build-first-app-overview.md)
 
 ## <a name="next-step"></a>Следующий шаг
 
