@@ -4,12 +4,12 @@ description: Добавление встроенной кнопки Share to Tea
 ms.topic: reference
 localization_priority: Normal
 keywords: Share Teams Share-to-Teams
-ms.openlocfilehash: c8bbb371e2d68bf063c3aa5e02c7cf3ec911c0b8
-ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
+ms.openlocfilehash: d3e23c50cbaa38a53fa02c19cec69061478d9a57
+ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52058476"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52075649"
 ---
 # <a name="create-share-to-teams-button"></a>Создание кнопки «Поделиться в Teams»
 
@@ -94,14 +94,14 @@ ms.locfileid: "52058476"
 
 | Свойство | Атрибут HTML | Тип | По умолчанию | Описание |
 | -------------- | ---------------------- | --------------------- | ------- | ---------------------------------------------------------------------- |
-| href | `data-href` | string | н/д | Href контента для обмена. |
+| href | `data-href` | Строка | н/д | Href контента для обмена. |
 | preview | `data-preview` | boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
 | iconPxSize | `data-icon-px-size` | номер (в качестве строки) | `32` | Размер пикселей кнопки Share-to-Teams для отрисовки. |
-| msgText | `data-msg-text` | string | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле для составить сообщение. Максимальное число символов — 200. |
-| assignInstr | `data-assign-instr` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
-| assignTitle | `data-assign-title` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
+| msgText | `data-msg-text` | Строка | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле для составить сообщение. Максимальное число символов — 200. |
+| assignInstr | `data-assign-instr` | Строка | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
+| assignTitle | `data-assign-title` | Строка | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
 
-### <a name="methods"></a>Methods
+### <a name="methods"></a>Методы
 
 **`shareToMicrosoftTeams.renderButtons(options)`**
 
@@ -133,4 +133,4 @@ ms.locfileid: "52058476"
 
 ## <a name="see-also"></a>См. также
 
-- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+[Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

@@ -5,12 +5,12 @@ description: Отправка, получение и обработка сооб
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 7055042dfff4b633fdd570ce5d7318a17ac15cf6
-ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
+ms.openlocfilehash: 2d7eece1fc74781456024f6dcb9414fefbadb8f4
+ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52058595"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52075754"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Телефонные и групповые беседы в чате с ботом
 
@@ -270,7 +270,7 @@ async def _mention_activity(self, turn_context: TurnContext):
 
 ## <a name="see-also"></a>См. также
 
-- [Получить контекст команд.](~/bots/how-to/get-teams-context.md)
+[Контекст Get Teams](~/bots/how-to/get-teams-context.md)
 
 ## <a name="next-step"></a>Следующий шаг
 

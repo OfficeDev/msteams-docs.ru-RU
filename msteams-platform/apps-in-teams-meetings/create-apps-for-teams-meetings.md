@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 741f39c2aca6e99fb7bdfaa1171de4e2bb1e7755
-ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
+ms.openlocfilehash: 8ccc4f39b62d7aefb8d0ff56e7f0dbd00d15e356
+ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52058350"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52075656"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -37,7 +37,7 @@ ms.locfileid: "52058350"
 
 ## <a name="meeting-apps-api-reference"></a>Ссылка на API приложений для собраний
 
-|API|Описание|Запрос|Источник|
+|API|Описание|Запрос|Source|
 |---|---|----|---|
 |**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Клиент Microsoft Teams SDK|
 |**GetParticipant**| Этот API позволяет боту получать сведения о участниках, встречая ID и ID участника. |**GET** _**/v1/meetings/{meetingId}/participants/{participantsId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
@@ -381,6 +381,7 @@ POST /v3/conversations/{conversationId}/activities
 |----------------|-----------------|--------------|--------------|
 | Разнонасть собраний | Пример extensibility microsoft Teams для передачи маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | |
 | Бот-бот для пузырьков контента для собраний | Пример extensibility microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Meeting SidePanel | Пример экстензивности Microsoft Teams для итерактов с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) |
 
 ## <a name="see-also"></a>См. также
 

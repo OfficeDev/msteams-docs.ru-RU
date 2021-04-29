@@ -6,12 +6,12 @@ ms.date: 08/26/2020
 localization_priority: Normal
 ms.topic: conceptual
 title: Веб-приложения
-ms.openlocfilehash: 0cc4c8bbecb51056e579478de64a5f4e73199674
-ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
+ms.openlocfilehash: 6227964fdf114fe4e4cd38f18fd1932db8bc5960
+ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52058693"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52075733"
 ---
 # <a name="web-apps"></a>Веб-приложения 
 
@@ -123,4 +123,4 @@ Teams имеет механизмы единого входного (SSO) с Azu
 
 ## <a name="see-also"></a>См. также
 
-- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+[Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

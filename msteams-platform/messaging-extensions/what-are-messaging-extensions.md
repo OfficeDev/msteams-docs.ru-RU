@@ -5,12 +5,12 @@ description: Обзор расширений обмена сообщениями
 localization_priority: Normal
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: a5d30912d5cc580b6e85e19178c49d91811bc11f
-ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
+ms.openlocfilehash: ee59a7ad96572f5a8ebc6afedd2e0e8485169e5a
+ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52058539"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52075670"
 ---
 # <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
 
@@ -70,14 +70,14 @@ ms.locfileid: "52058539"
 
 ## <a name="code-sample"></a>Пример кода
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
 |------------|-------------|----------------|------------|
 | Расширение обмена сообщениями с командами на основе действий | В этом примере показано, как создать расширение обмена сообщениями на основе действий. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
 | Расширение обмена сообщениями с командами на основе поиска | В этом примере показано, как создать расширение обмена сообщениями на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
 
 ## <a name="see-also"></a>См. также
 
-- [Создать расширение для обмена сообщениями](../build-your-first-app/build-messaging-extension.md)
+[Создать расширение для обмена сообщениями](../build-your-first-app/build-messaging-extension.md)
 
 
 ## <a name="next-step"></a>Следующий шаг

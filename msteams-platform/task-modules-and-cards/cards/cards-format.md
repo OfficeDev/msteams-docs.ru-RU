@@ -5,12 +5,12 @@ keywords: teams bots cards format
 localization_priority: Normal
 ms.topic: reference
 ms.date: 03/29/2018
-ms.openlocfilehash: b50109ad664bda2fc130e08c53dd7fca2a3d54ef
-ms.sourcegitcommit: 35bc2a31b92f3f7c6524373108f095a870d9ad09
+ms.openlocfilehash: d2806271f99af53139c76dcbd1090a96adcd0f31
+ms.sourcegitcommit: 303fc214aa04757779a171337f31a6539f47fd03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51922519"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52068824"
 ---
 # <a name="format-cards-in-teams"></a>Формат карт в Teams
 
@@ -45,7 +45,7 @@ ms.locfileid: "51922519"
 Следующие теги Markdown не поддерживаются:
 
 * Заголовки
-* Таблицы
+* Tables
 * изображения;
 * Предформатированный текст
 * Blockquotes
@@ -164,7 +164,7 @@ ms.locfileid: "51922519"
 Используйте свойство маскировки информации для маскировки определенных сведений, таких как пароль или конфиденциальные сведения пользователей в элементе ввода адаптивной [`Input.Text`](https://adaptivecards.io/explorer/Input.Text.html) карты. 
 
 > [!NOTE]
-> Эта функция поддерживает только маскировку стороной клиента, текст ввода в маске отправляется в виде четкого текста на адрес конечной точки https, заданный во время [конфигурации бота.](../../build-your-first-app/build-bot.md#4-configure-your-bot) 
+> Эта функция поддерживает только маскировку стороной клиента, текст ввода в маске отправляется в виде четкого текста на адрес конечной точки https, заданный во время [конфигурации бота.](../../build-your-first-app/build-bot.md) 
 
 > [!NOTE]
 > Свойство маскировки информации в настоящее время доступно только в предварительном просмотре разработчика.
