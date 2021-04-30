@@ -4,18 +4,18 @@ description: Описывает действия карт в Microsoft Teams и 
 localization_priority: Normal
 ms.topic: conceptual
 keywords: teams bots cards actions
-ms.openlocfilehash: 84f47540cee99738204007fd107743f922552e60
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 75dcd6e1de1968f021a1ebe66c6770c4f641c94d
+ms.sourcegitcommit: 1256639fa424e3833b44207ce847a245824d48e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019540"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52088796"
 ---
 # <a name="card-actions"></a>Действия карты
 
-Карты, используемые ботами и расширениями обмена сообщениями в Teams, поддерживают следующие типы [`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards) действий (). Обратите внимание, что эти действия отличаются `potentialActions` от карт соединители Office 365, используемых в соединители.
+Карточки, используемые ботами и расширениями обмена сообщениями в Teams поддерживают следующие типы [`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards) действий (). Обратите внимание, что эти действия отличаются `potentialActions` от Office 365 соединители при их использования из соединители.
 
-| Type | Action |
+| Тип | Action |
 | --- | --- |
 | `openUrl` | Открывает URL-адрес в браузере по умолчанию. |
 | `messageBack` | Отправляет сообщение и полезное сообщение боту (от пользователя, который нажал кнопку или постучал по карте) и отправляет отдельное сообщение в поток чата. |
@@ -26,10 +26,10 @@ ms.locfileid: "52019540"
 > [!NOTE]
 >* Teams не поддерживает `CardAction` типы, не указанные в предыдущей таблице.
 >* Teams не поддерживает `potentialActions` свойство.
->* Действия карт отличаются от [предлагаемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в службе bot Framework/Azure Bot. Предлагаемые действия не поддерживаются в Microsoft Teams: если вы хотите, чтобы кнопки появлялись в сообщении бота Teams, используйте карточку.
+>* Действия карт отличаются от [предлагаемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в службе bot Framework/Azure Bot. Предлагаемые действия не поддерживаются в Microsoft Teams: если вы хотите, чтобы в сообщении бота Teams кнопки, используйте карточку.
 >* Если вы используете действие карты в рамках расширения обмена сообщениями, действия не будут работать до тех пор, пока карта не будет отправлена в канал (они не будут работать, пока карта находится в окне составить сообщение).
 
-Teams также поддерживает [действия адаптивных карт,](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions)которые используются только адаптивными картами. Эти действия перечислены в их собственном разделе в конце этой ссылки.
+Teams также поддерживает действия [адаптивных](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions)карт, которые используются только адаптивными картами. Эти действия перечислены в их собственном разделе в конце этой ссылки.
 
 ## <a name="openurl"></a>openUrl
 
@@ -52,7 +52,7 @@ Teams также поддерживает [действия адаптивных
 | Свойство | Описание |
 | --- | --- |
 | `title` | Отображается как метка кнопки. |
-| `displayText` | Необязательное. Вторил пользователю в поток чата при выполнении действия. Этот текст *не отправляется* в бот. |
+| `displayText` | Необязательно. Вторил пользователю в поток чата при выполнении действия. Этот текст *не отправляется* в бот. |
 | `value` | Отправляется в бот при выполнении действия. Вы можете кодировать контекст для действия, например уникальные идентификаторы или объект JSON. |
 | `text` | Отправляется в бот при выполнении действия. Используйте это свойство для упрощения разработки ботов: код может проверить одно свойство верхнего уровня для отправки логики бота. |
 
@@ -223,11 +223,12 @@ var button = new CardAction()
 
 ## <a name="adaptive-cards-actions"></a>Действия адаптивных карт
 
-Адаптивные карты поддерживают три типа действий:
+Адаптивные карты поддерживают четыре типа действий:
 
 * [Action.OpenUrl](http://adaptivecards.io/explorer/Action.OpenUrl.html)
 * [Action.Submit](http://adaptivecards.io/explorer/Action.Submit.html)
 * [Action.ShowCard](http://adaptivecards.io/explorer/Action.ShowCard.html)
+* [Action.Exeмило](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
 
 В дополнение к указанным выше действиям вы можете изменить полезной нагрузки адаптивной карты для поддержки существующих действий Bot Framework с помощью свойства `Action.Submit` `msteams` в `data` объекте `Action.Submit` . В ниженазванных разделах подробно излагается, как использовать существующие действия Bot Framework с адаптивными картами.
 
@@ -241,7 +242,7 @@ var button = new CardAction()
 | Свойство | Описание |
 | --- | --- |
 | `type` | Установлено, что `messageBack` |
-| `displayText` | Необязательное. Вторил пользователю в поток чата при выполнении действия. Этот текст *не отправляется* в бот. |
+| `displayText` | Необязательно. Вторил пользователю в поток чата при выполнении действия. Этот текст *не отправляется* в бот. |
 | `value` | Отправляется в бот при выполнении действия. Вы можете кодировать контекст для действия, например уникальные идентификаторы или объект JSON. |
 | `text` | Отправляется в бот при выполнении действия. Используйте это свойство для упрощения разработки ботов: код может проверить одно свойство верхнего уровня для отправки логики бота. |
 
