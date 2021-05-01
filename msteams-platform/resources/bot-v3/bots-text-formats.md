@@ -5,12 +5,12 @@ keywords: боты беседы сообщений
 ms.topic: how-to
 localization_priority: Normal
 ms.date: 03/29/2018
-ms.openlocfilehash: 9e89e1171907929eebb9f9eb3809f4ab920583a4
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: c43ce8697e5b3b2748416c3382ad6e34feb42d2b
+ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019750"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52101823"
 ---
 # <a name="formatting-bot-messages"></a>Форматирование сообщений бота
 
@@ -34,7 +34,7 @@ Microsoft Teams поддерживает подмножество тегов ф�
 
 * Текстовые сообщения не поддерживают форматирование таблиц
 
-Сведения о форматирования в картах см. в [справке teams Card.](~/task-modules-and-cards/cards/cards-reference.md)
+Сведения о форматирования в картах см. в [Teams Справка по карточкам.](~/task-modules-and-cards/cards/cards-reference.md)
 
 ### <a name="cross-platform-support"></a>Поддержка на разных платформах
 
@@ -87,4 +87,4 @@ Microsoft Teams поддерживает подмножество тегов ф�
 | предформатированный текст | `text` | `` `text` `` | `<pre>text</pre>` |
 | blockquote | <blockquote>текст</blockquote> | `>text` | `<blockquote>text</blockquote>` |
 | гиперссылка | [Bing](https://www.bing.com/) | `[Bing](https://www.bing.com/)` | `<a href="https://www.bing.com/">Bing</a>` |
-| ссылка на изображение | <img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img> | `![Duck on a rock](http://aka.ms/Fo983c)` | `<img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
+| ссылка на изображение | <img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img> | `![Duck on a rock](http://aka.ms/Fo983c)` | `<img src="https://aka.ms/Fo983c" alt="Duck on a rock"></img>` |

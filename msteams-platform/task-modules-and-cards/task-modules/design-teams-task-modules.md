@@ -1,26 +1,26 @@
 ---
 title: Проектирование модулей задач
 author: heath-hamilton
-description: Узнайте, как разработать модули задач для приложений Teams и получить набор пользовательского интерфейса Microsoft Teams.
+description: Узнайте, как разработать модули задач для Teams приложений и получить Microsoft Teams пользовательского интерфейса.
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 3502a705bfe1bf99a5dc0edff5c5a54265cc6ca1
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 347ce42c41706f698e2f8897a0518aae0850a275
+ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019547"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52101732"
 ---
-# <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Разработка модулей задач для приложения Microsoft Teams
+# <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для Microsoft Teams приложения
 
-В приложении Teams можно создавать модули всплывающих модулей модальных модулей. Используйте эту возможность для отображения богатых мультимедиа и информации или выполнения сложной задачи.
+Вы можете создавать в приложении модальные всплывающие Teams с помощью модулей задач. Используйте эту возможность для отображения богатых мультимедиа и информации или выполнения сложной задачи.
 
 :::image type="content" source="../../assets/images/task-module/task-module-overview.png" alt-text="В примере показан модуль задач." border="false":::
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-В наборе пользовательского интерфейса Microsoft Teams можно найти более исчерпывающие рекомендации по разработке модулей задач, в том числе элементы, которые можно захватить и изменить по мере необходимости.
+Дополнительные рекомендации по разработке модулей задач, в том числе элементы, которые можно захватить и изменить по мере необходимости, можно найти в Microsoft Teams пользовательского интерфейса.
 
 > [!div class="nextstepaction"]
 > [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
@@ -68,7 +68,7 @@ ms.locfileid: "52019547"
 
 :::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач." border="false":::
 
-### <a name="form"></a>Form
+### <a name="form"></a>Форма
 
 Модули задач — отличное место для поверхности форм с последовательной вводной и входной проверкой пользователей. Адаптивные карты можно использовать как способ встраить элементы формы.
 
@@ -80,7 +80,7 @@ ms.locfileid: "52019547"
 
 :::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Например, во время работы в модуле задач." border="false":::
 
-### <a name="media"></a>Мультимедиа
+### <a name="media"></a>Media
 
 Встраить медиаконтент в модуль задач для целенаправленного просмотра.
 
@@ -106,11 +106,13 @@ ms.locfileid: "52019547"
 
 ## <a name="best-practices"></a>Рекомендации
 
+Используйте эти рекомендации для создания качественного приложения.
+
 ### <a name="usability"></a>Usability
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/usability-do.png" alt-text="Пример, показывающий передовую практику модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/usability-do.png" alt-text="Пример, показывающий передовую практику модуля задач (по одному модульу задач одновременно)." border="false":::
 
 #### <a name="do-use-one-task-module-at-a-time"></a>Do: Используйте один модуль задач одновременно
 
@@ -118,7 +120,7 @@ ms.locfileid: "52019547"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/usability-dont.png" alt-text="В примере показана передовая практика модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/usability-dont.png" alt-text="Пример, показывающий передовую практику модуля задач (всплывает диалоговое окно в верхней части модуля задач)." border="false":::
 
 #### <a name="dont-pop-a-dialog-on-top-of-a-task-module"></a>Не: всплывай диалоговое окно поверх модуля задач
 
@@ -131,7 +133,7 @@ ms.locfileid: "52019547"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/responsive-do.png" alt-text="В примере показана передовая практика модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/responsive-do.png" alt-text="Пример, показывающий передовую практику модуля задач (убедитесь, что содержимое отвечает)." border="false":::
 
 #### <a name="do-make-sure-the-content-is-responsive"></a>Do: Убедитесь, что содержимое отвечает на запросы
 
@@ -139,7 +141,7 @@ ms.locfileid: "52019547"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/responsive-dont.png" alt-text="В примере показана передовая практика модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/responsive-dont.png" alt-text="Пример, показывающий передовую практику модуля задач (не используйте горизонтальные полоски прокрутки)." border="false":::
 
 #### <a name="dont-use-horizontal-scroll-bars"></a>Не используйте горизонтальные столбики прокрутки
 
@@ -152,7 +154,7 @@ ms.locfileid: "52019547"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/simplicity-do.png" alt-text="В примере отображается передовая практика модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/simplicity-do.png" alt-text="Пример, показывающий передовую практику модуля задач (не нужно его кратко)." border="false":::
 
 #### <a name="do-keep-it-short"></a>Do: Keep it short
 
@@ -160,9 +162,9 @@ ms.locfileid: "52019547"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/simplicity-dont.png" alt-text="Иллюстрация, показывающая передовую практику модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/simplicity-dont.png" alt-text="Пример, показывающий передовую практику модуля задач (не имеют длительных взаимодействий)." border="false":::
 
-#### <a name="dont-do-long-interactions"></a>Не: делайте длительные взаимодействия
+#### <a name="dont-have-long-interactions"></a>Don't: Have long interactions
 
 Постарайтесь сохранить ваши взаимодействия короткими и до точки.
 
@@ -173,7 +175,7 @@ ms.locfileid: "52019547"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/error-messages-do.png" alt-text="На рисунке показана передовая практика модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/error-messages-do.png" alt-text="Пример, показывающий передовую практику модуля задач (использование сообщений об ошибках)." border="false":::
 
 #### <a name="do-use-inline-error-messages"></a>Do: Использование сообщений об ошибках с помощью inline
 
@@ -181,7 +183,7 @@ ms.locfileid: "52019547"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/error-messages-dont.png" alt-text="На рисунке показана передовая практика модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/error-messages-dont.png" alt-text="Пример, показывающий передовую практику модуля задач (поместить сообщения об ошибке в диалоги)." border="false":::
 
 #### <a name="dont-put-error-messages-in-dialogs"></a>Не: помещай сообщения об ошибках в диалоговые личные
 

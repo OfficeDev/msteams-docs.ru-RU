@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 2739bd4baaf68be90a62924601b0628c3d9b0f2c
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: d2967abdc6c0055eca8c94ed4e4a7fdf1bdba322
+ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020135"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52101697"
 ---
 # <a name="designing-your-microsoft-teams-bot"></a>Создание бота Microsoft Teams
 
@@ -197,9 +197,11 @@ ms.locfileid: "52020135"
 
 ## <a name="best-practices"></a>Рекомендации
 
-### <a name="content"></a>Содержимое
+Используйте эти рекомендации для создания качественного приложения.
 
-:::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример с методиками, рекомендованными для ботов." border="false":::
+### <a name="content"></a>Статья
+
+:::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример, показывающий лучшую практику бота для создания четкого человека." border="false":::
 
 #### <a name="do-establish-a-clear-persona"></a>Как надо: создать отчетливо выраженную личность
 
@@ -209,7 +211,7 @@ ms.locfileid: "52020135"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="Пример, показывающий лучшие практики ботов." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="Пример, показывающий четкое отображение того, что может сделать бот." border="false":::
 
 #### <a name="do-clearly-convey-what-your-bot-can-do"></a>Как надо: четко обозначьте, что умеет делать ваш бот
 
@@ -217,7 +219,7 @@ ms.locfileid: "52020135"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="В примере показана лучшая практика бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="Пример, показывающий, что функции бота не заслонятся." border="false":::
 
 #### <a name="dont-obscure-your-bots-features"></a>Как не надо: скрывать функции бота
 
@@ -228,7 +230,7 @@ ms.locfileid: "52020135"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример демонстрации наилучшей практики бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример, показывающий, что бот должен распознавать не вопросы." border="false":::
 
 #### <a name="do-recognize-non-questions"></a>Как надо: распознавать вопросы, которые не являются вопросами
 
@@ -236,7 +238,7 @@ ms.locfileid: "52020135"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="В примере показана лучшая практика бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="Пример, показывающий, что следует избегать неуклюжих ответов на простые сообщения ботов." border="false":::
 
 #### <a name="dont-miss-out-on-opportunities-to-delight"></a>Как не надо: не упускайте случая порадовать пользователей
 
@@ -249,7 +251,7 @@ ms.locfileid: "52020135"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="Пример наилучшей практики бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="Пример, в котором показаны боты, должен помочь пользователям понять, как использовать ботов." border="false":::
 
 #### <a name="do-provide-help"></a>Как надо: предоставляйте помощь
 
@@ -257,7 +259,7 @@ ms.locfileid: "52020135"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="В примере показана лучшая практика бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="Пример, показывающий, что пользователь бота не должен прядить пользователей." border="false":::
 
 #### <a name="dont-leave-users-stranded"></a>Как не надо: не бросайте пользователей в беде
 
@@ -270,7 +272,7 @@ ms.locfileid: "52020135"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="Пример отображения наилучшей практики бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="Пример, показывающий, что вы можете использовать модули задач или вкладки с ботом для сложных взаимодействий." border="false":::
 
 #### <a name="do-use-task-modules-or-tabs"></a>Как надо: используйте модули задач или вкладки
 
@@ -278,7 +280,7 @@ ms.locfileid: "52020135"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="См. пример наилучшей практики бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="Пример, показывающий, как бот должен избегать многовекового взаимодействия." border="false":::
 
 #### <a name="dont-make-multi-turn-interactions-tedious"></a>Как не надо: не делайте взаимодействие с несколькими поворотами утомительными
 
@@ -291,7 +293,7 @@ ms.locfileid: "52020135"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="В примере представлена лучшая практика бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="Пример, показывающий, как боты должны показывать закрытые сведения только в личном контексте." border="false":::
 
 #### <a name="do-only-show-sensitive-info-in-a-personal-context"></a>Как надо: показывать конфиденциальную информацию только в личном контексте
 
@@ -299,7 +301,7 @@ ms.locfileid: "52020135"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="Иллюстрация, на которой показана лучшая практика бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="Пример, показывающий, как боты не должны раскрывать конфиденциальные сведения группе или людям." border="false":::
 
 #### <a name="dont-some-content-isnt-meant-to-be-seen-by-everyone"></a>Как не надо: некоторые данные предназначены не для всех
 
@@ -308,17 +310,10 @@ ms.locfileid: "52020135"
    :::column-end:::
 :::row-end:::
 
-## <a name="learn-more"></a>Подробнее
+## <a name="see-also"></a>См. также
 
 Вот еще рекомендации, которые могут быть полезными при разработке бота:
 
 * [Проектирование личного приложения](../../concepts/design/personal-apps.md)
 * [Проектирование адаптивной карточки](../../task-modules-and-cards/cards/design-effective-cards.md)
 * [Проектирование модулей задач](../../task-modules-and-cards/task-modules/design-teams-task-modules.md)
-
-## <a name="validate-your-design"></a>Проверка приложения
-
-Если вы планируете опубликовать приложение в AppSource, следует понимать проблемы проектирования, из-за которых отправка приложения часто бывает неудачной.
-
-> [!div class="nextstepaction"]
-> [Ознакомьтесь с рекомендациями по проверке дизайна](../../concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md#validation-guidelines--most-failed-test-cases)

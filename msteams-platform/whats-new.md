@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 localization_priority: Normal
 keywords: команды, новые возможности
-ms.openlocfilehash: 5193c77a33ea53007c5292af7c7c3c343a48be36
-ms.sourcegitcommit: 1256639fa424e3833b44207ce847a245824d48e6
+ms.openlocfilehash: 94e8e573ac806fdfce0933129708be9bcdc82c45
+ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52088789"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52101396"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,8 +22,9 @@ ms.locfileid: "52088789"
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|04/30/2021|Новые рекомендации по публикации приложений в Teams магазине.|[Публикация приложения в Teams и](concepts/deploy-and-publish/appsource/publish.md)Teams для [хранения](concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) |
 | 04/29/2021 | Новое: универсальные действия для адаптивных карт. | [Универсальные действия для адаптивных карт](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
-|04/08/2021| Функция настройки приложения теперь доступна в предварительном просмотре разработчика.|[Обзор приложений команд разработки,](concepts/design/design-teams-app-overview.md#app-customization) [обзор студии](concepts/build-and-test/app-studio-overview.md#connectors)приложений и [схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+|04/08/2021| Функция настройки приложения теперь доступна в предварительном просмотре разработчика.|[Обзор Teams приложения,](concepts/design/design-teams-app-overview.md#app-customization) [обзор App Studio](concepts/build-and-test/app-studio-overview.md#connectors)и схема [манифеста](resources/schema/manifest-schema-dev-preview.md) |
 |03/18/2021|Примечание. Обновление до версии 4.10 или выше SDK Bot Framework, как мы начали с процесса амортизации для `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync` . | [Изменения API-интерфейса Bot для участников группы или чата](resources/team-chat-member-api-changes.md) |
 |03/05/2021|Примечание. У вкладок больше не будет поля, связанные с их опытом. Разработчики вкладок должны просмотреть и обновить свои приложения. | [Удаление полей вкладок](resources/removing-tab-margins.md) |
 |03/05/2021|По умолчанию область установки и возможности групповой установки в предварительном просмотре разработчика.| [Возможности установки по умолчанию и группы](concepts/deploy-and-publish/add-default-install-scope.md) |
@@ -44,7 +45,7 @@ ms.locfileid: "52088789"
 |08/06/2020|Поддержка проверки подлинности tabs SSO|[Разработка вкладки SSO Microsoft Teams](tabs/how-to/authentication/auth-aad-sso.md#develop-an-sso-microsoft-teams-tab) |
 |07/27/2020 | Graph активных ботов и сообщений (общедоступный предварительный просмотр)|[Включить активную установку ботов и активный обмен сообщениями в Teams с microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
 | 07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](concepts/device-capabilities/native-device-permissions.md) |
-|07/20/2020|Teams Средство проверки приложений для отправки appSource.|[Teams Средство проверки приложений](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#teams-app-validation-tool)
+|07/20/2020|Teams Средство проверки приложений для отправки appSource.|[Teams проверки пакета приложений](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md#validate-your-app-package)
 |07/15/2020|Создание виртуального помощника для Teams|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
 |07/14/2020|Наружная документация по индикатору загрузки|[Отображение индикатора загрузки](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
 |07/01/2020|Начало создания Teams приложений с помощью Visual Studio Code набор средств.|[Создание приложений с помощью Microsoft Teams набор средств и Visual Studio Code](toolkit/visual-studio-code-overview.md) |
