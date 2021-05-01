@@ -1,235 +1,194 @@
 ---
-title: Создание большой страницы сведений о приложении
-description: Описание требований к странице сведений о приложениях
-ms.topic: reference
+title: Создание списка магазина для приложения
+description: Описывает, как создать список магазинов для Microsoft Teams приложения.
+ms.topic: how-to
 localization_priority: Normal
-keywords: команды публикации политики публикации магазина AppSource контента Metadata скриншот описания логотипа приложения иконки имя краткое описание
-ms.openlocfilehash: 6b763180cc2beb1cef6095110af0f37169e1f7c8
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+author: heath-hamilton
+ms.author: surbhigupta
+ms.openlocfilehash: 270936ca967c17caaa8a56f85057b20ca3d6a409
+ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020795"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52101431"
 ---
-# <a name="build-a-great-app-details-page"></a><span data-ttu-id="6d7a2-104">Создание большой страницы сведений о приложении</span><span class="sxs-lookup"><span data-stu-id="6d7a2-104">Build a great app details page</span></span>
+# <a name="create-a-store-listing-for-your-microsoft-teams-app"></a><span data-ttu-id="0b9eb-103">Создание списка магазина для Microsoft Teams приложения</span><span class="sxs-lookup"><span data-stu-id="0b9eb-103">Create a store listing for your Microsoft Teams app</span></span>
 
-<span data-ttu-id="6d7a2-105">На странице "Сведения" представлено первое впечатление о приложении для пользователей.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-105">The details page presents the first impression of your app to users.</span></span> <span data-ttu-id="6d7a2-106">Каждый элемент вашей страницы сведений можно использовать для передачи вашего видения и скачивания дисков — подумайте, как вы хотите продемонстрировать свое приложение в ограниченном пространстве.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-106">Each element of your details page can be used to convey your vision and drive downloads — consider how you want to showcase your app in a limited space.</span></span> <span data-ttu-id="6d7a2-107">Вот несколько советов и приемов, которые помогут вам привлечь пользователей еще до установки приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-107">Here are some tips and tricks to help you engage your users before they even install your app.</span></span>
+<span data-ttu-id="0b9eb-104">Сведения, которые вы [](https://partner.microsoft.com) передаете в Центр партнеров&#8212;включая ваше имя, описания, значки и изображения,&#8212;становятся Microsoft Teams магазина и списка Microsoft AppSource для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-104">The information that you submit to [Partner Center](https://partner.microsoft.com)&#8212;including your name, descriptions, icons, and images&#8212;becomes the Microsoft Teams store and Microsoft AppSource listing for your app.</span></span>
+
+<span data-ttu-id="0b9eb-105">Список магазинов может быть первым впечатлением от вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-105">A store listing may be someone's first impression of your app.</span></span> <span data-ttu-id="0b9eb-106">Увеличение установок с помощью списка, который эффективно передает преимущества, функциональные возможности и бренд вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-106">Increase your installations with a listing that effectively conveys your app's benefits, functionality, and brand.</span></span>
+
+## <a name="specify-a-short-name"></a><span data-ttu-id="0b9eb-107">Укажите короткое имя</span><span class="sxs-lookup"><span data-stu-id="0b9eb-107">Specify a short name</span></span>
+
+<span data-ttu-id="0b9eb-108">Имя вашего приложения (в частности, его короткое [*имя)*](~/resources/schema/manifest-schema.md#name)играет решающую роль в том, как пользователи обнаруживают его в магазине.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-108">Your app's name (specifically, its [*short name*](~/resources/schema/manifest-schema.md#name)) plays a crucial role in how users discover it in the store.</span></span>
+
+<span data-ttu-id="0b9eb-109">В следующем примере выделяется, где короткое имя приложения отображается в списке магазина.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-109">The following example highlights where an app's short name displays in a store listing.</span></span>
+
+:::image type="content" source="../../../../assets/images/store-detail-page/AppName-02.png" alt-text="Пример экрана показывает, где короткое имя приложения отображается в списке магазина.":::
+
+### <a name="best-practices-for-names"></a><span data-ttu-id="0b9eb-111">Лучшие практики для имен</span><span class="sxs-lookup"><span data-stu-id="0b9eb-111">Best practices for names</span></span>
+
+<span data-ttu-id="0b9eb-112">**Рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-112">**Do:**</span></span>
+
+* <span data-ttu-id="0b9eb-113">Выберите простое запоминающееся имя, которое подсказает, что делает ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-113">Choose a simple, memorable name that hints at what your app does.</span></span>
+* <span data-ttu-id="0b9eb-114">Будьте отличительными.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-114">Be distinctive.</span></span>
+* <span data-ttu-id="0b9eb-115">Избегайте опечаток и грамматических ошибок.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-115">Avoid typos and grammatical errors.</span></span>
+
+<span data-ttu-id="0b9eb-116">**Не рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-116">**Don't:**</span></span>
+
+* <span data-ttu-id="0b9eb-117">Используйте ненормативную или пренебожную лексику.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-117">Use profane or derogatory terms.</span></span>
+* <span data-ttu-id="0b9eb-118">Используйте расово или культурно нечувствительный язык.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-118">Use racially or culturally insensitive language.</span></span>
+* <span data-ttu-id="0b9eb-119">Используйте общие термины или имена, аналогичные существующим приложениям.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-119">Use generic terms or names similar to existing apps.</span></span>
+* <span data-ttu-id="0b9eb-120">Включай Teams, "Microsoft", существующие и предстоящие имена продуктов Майкрософт или "приложение" в имя.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-120">Include "Teams", "Microsoft", existing/upcoming Microsoft product names, or  "app" in the name.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="6d7a2-108">Убедитесь, что сведения о вашем приложении следуют нашим [рекомендациям AppSource для создания эффективного списка магазинов.](/office/dev/store/create-effective-office-store-listings)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-108">Make sure your app information follows our [AppSource guidance for creating an effective store listing](/office/dev/store/create-effective-office-store-listings).</span></span>
+> <span data-ttu-id="0b9eb-121">Если ваше приложение является частью официального партнерства с Microsoft, имя приложения должно быть первым (например, *Connector Salesforce для Microsoft Teams).*</span><span class="sxs-lookup"><span data-stu-id="0b9eb-121">If your app is part of an official partnership with Microsoft, the name of your app must come first (for example, *Salesforce Connector for Microsoft Teams*).</span></span>
 
-## <a name="app-name"></a><span data-ttu-id="6d7a2-109">Имя приложения</span><span class="sxs-lookup"><span data-stu-id="6d7a2-109">App name</span></span>
+## <a name="write-descriptions"></a><span data-ttu-id="0b9eb-122">Написание описаний</span><span class="sxs-lookup"><span data-stu-id="0b9eb-122">Write descriptions</span></span>
 
-> [!div class="checklist"]
->
-> * <span data-ttu-id="6d7a2-110">Имя приложения играет важную роль в том, как пользователи обнаруживают его в магазине приложений AppSource.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-110">An app's name plays a critical role in how users discover it in the AppSource app store.</span></span> <span data-ttu-id="6d7a2-111">Короткое имя приложения отображается на странице подробные сведения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-111">Your app's short name is displayed on the details page.</span></span>
->* <span data-ttu-id="6d7a2-112">Имя приложения должно отражать ваше приложение без ссылки на продукты Microsoft или Microsoft.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-112">The app name should reflect your app without any reference to Microsoft or Microsoft products.</span></span>
->
+<span data-ttu-id="0b9eb-123">Вам нужно краткое и длинное описание приложения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-123">You need a short and long description of your app.</span></span>
 
-> <span data-ttu-id="6d7a2-113">**Примечание.** Если ваше приложение является официальным партнерством с Корпорацией Майкрософт, то имя стороннего приложения должно быть первым, например, *Соединитетелем Salesforce для Microsoft Teams.*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-113">**Note**: If your app is an official partnership with Microsoft, then the name of the third-party app needs to be first, e.g., *Salesforce Connector for Microsoft Teams*.</span></span>
+### <a name="short-description"></a><span data-ttu-id="0b9eb-124">Краткое описание</span><span class="sxs-lookup"><span data-stu-id="0b9eb-124">Short description</span></span>
 
-> [!div class="checklist"]
->
->* <span data-ttu-id="6d7a2-114">Используйте эти ресурсы для руководства:</span><span class="sxs-lookup"><span data-stu-id="6d7a2-114">Use these resources for guidance:</span></span>
+<span data-ttu-id="0b9eb-125">Краткий сводка приложения, которая должна быть оригинальной, привлекательной и направленной для целевой аудитории.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-125">A concise summary of your app that should be original, engaging, and directed at your target audience.</span></span> <span data-ttu-id="0b9eb-126">В идеале сохраняем краткое описание в одном предложении.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-126">Ideally, keep the short description to one sentence.</span></span>
 
-* [<span data-ttu-id="6d7a2-115">Руководство по имени приложения</span><span class="sxs-lookup"><span data-stu-id="6d7a2-115">App name guide</span></span>](#app-name)
-* [<span data-ttu-id="6d7a2-116">Рекомендации по товарным знакам и брендам Майкрософт</span><span class="sxs-lookup"><span data-stu-id="6d7a2-116">Microsoft Trademark and Brand Guidelines</span></span>](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general)
+<span data-ttu-id="0b9eb-127">В следующем примере выделяется, где краткое описание приложения отображается в списке магазина:</span><span class="sxs-lookup"><span data-stu-id="0b9eb-127">The following example highlights where an app's short description displays in a store listing:</span></span>
 
-<span data-ttu-id="6d7a2-117">**Do's:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-117">**Do's:**</span></span>
+:::image type="content" source="~/assets/images/store-detail-page/ShortDescription-02.png" alt-text="Пример экрана показывает, где краткое описание приложения отображается в списке магазина.":::
 
-* <span data-ttu-id="6d7a2-118">Выберите простое запоминающееся имя, которое подсказает, что делает ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-118">Choose a simple, memorable name that hints at what your app does.</span></span>
-* <span data-ttu-id="6d7a2-119">Будьте отличительными.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-119">Be distinctive.</span></span>
-* <span data-ttu-id="6d7a2-120">При необходимости используйте ссылки Microsoft 365 вместо Office 365.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-120">If needed, use Microsoft 365 references instead of Office 365.</span></span>
+#### <a name="best-practices-for-short-descriptions"></a><span data-ttu-id="0b9eb-129">Лучшие практики для коротких описаний</span><span class="sxs-lookup"><span data-stu-id="0b9eb-129">Best practices for short descriptions</span></span>
 
-<span data-ttu-id="6d7a2-121">**Не нужно:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-121">**Don'ts:**</span></span>
+<span data-ttu-id="0b9eb-130">**Рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-130">**Do:**</span></span>
 
-* <span data-ttu-id="6d7a2-122">Не опустить пробелы, не иметь неправильное дело или содержать языковые ошибки в имени приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-122">Don't omit spaces, have an incorrect case, or contain language errors in the app name.</span></span>
-* <span data-ttu-id="6d7a2-123">Не используйте общие термины или имена, аналогичные существующим приложениям.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-123">Don't use generic terms or names similar to existing apps.</span></span>
-* <span data-ttu-id="6d7a2-124">Не используйте "Teams", "Microsoft", existing/upcoming Microsoft product names, or "app" in your app name.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-124">Don't use "Teams", "Microsoft", existing/upcoming Microsoft product names, or  "app" in your app name.</span></span>
-* <span data-ttu-id="6d7a2-125">Не используйте скобки, чтобы включать продукты Microsoft, например, имя приложения *(для Microsoft Teams).*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-125">Don't use parenthesis to include Microsoft products, e.g., *Your-App-Name (for Microsoft Teams)*.</span></span>
+* <span data-ttu-id="0b9eb-131">Сначала разместите наиболее важные сведения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-131">Put the most important information first.</span></span>
+* <span data-ttu-id="0b9eb-132">Включай ключевые слова, которые клиенты, скорее всего, будут искать.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-132">Include keywords that customers are likely to search for.</span></span>
 
-![Представление магазина имен приложений](../../../../assets/images/store-detail-page/AppName-02.png)
+<span data-ttu-id="0b9eb-133">**Не рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-133">**Don't:**</span></span>
 
-![Представление App Studio с именем приложения](../../../../assets/images/store-detail-page/AppName-01.png)
+* <span data-ttu-id="0b9eb-134">Повторите имя приложения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-134">Repeat your app name.</span></span>
+* <span data-ttu-id="0b9eb-135">Использование жаргона или специализированной терминологии.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-135">Rely on jargon or specialized terminology.</span></span> <span data-ttu-id="0b9eb-136">(Вы не можете предположить, что пользователи знают, что искать.)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-136">(You can't assume users know what to look for.)</span></span>
 
-## <a name="color-icon"></a><span data-ttu-id="6d7a2-128">Значок цвета</span><span class="sxs-lookup"><span data-stu-id="6d7a2-128">Color icon</span></span>
+### <a name="long-description"></a><span data-ttu-id="0b9eb-137">Подробное описание</span><span class="sxs-lookup"><span data-stu-id="0b9eb-137">Long description</span></span>
 
-<span data-ttu-id="6d7a2-129">Это один из первых элементов, которые пользователи видят.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-129">This is one of the first elements that users see.</span></span> <span data-ttu-id="6d7a2-130">Она должна быть привлекательной и привлекательной при прокрутке через магазин приложений.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-130">It should be attractive and eye-catching when scrolling through the app store.</span></span> <span data-ttu-id="6d7a2-131">Убедитесь, что оно производит хорошее первое впечатление, а также передает изображение и цель вашего бренда.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-131">Be sure it makes a good first impression and also communicates your brand's image and purpose.</span></span> <span data-ttu-id="6d7a2-132">AppSource имеет дополнительные советы по [созданию согласованной визуальной идентичности.](/office/dev/store/create-effective-office-store-listings#create-a-consistent-visual-identity)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-132">AppSource has more tips on [creating a consistent visual identity](/office/dev/store/create-effective-office-store-listings#create-a-consistent-visual-identity).</span></span>
+<span data-ttu-id="0b9eb-138">Длинное описание может предоставить привлекательный повествование, которое выделяет основные функции приложения, проблемы, которые оно решает, и его целевую аудиторию.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-138">The long description can provide an engaging narrative that highlights your app's main features, the problems it solves, and its target audience.</span></span> <span data-ttu-id="0b9eb-139">Хотя это описание может быть до 4000 символов, большинство пользователей будут читать только между 300-500 слов.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-139">While this description can be as long as 4000 characters, most users will only read between 300-500 words.</span></span>
 
-![Представление магазина значков приложения](~/assets/images/store-detail-page/AppIcon-02.png)
+<span data-ttu-id="0b9eb-140">В следующем примере выделяется, где длинное описание приложения отображается в списке магазина:</span><span class="sxs-lookup"><span data-stu-id="0b9eb-140">The following example highlights where an app's long description displays in a store listing:</span></span>
 
-![Представление App Icon App Studio](~/assets/images/store-detail-page/AppIcon-01.png)
+:::image type="content" source="~/assets/images/store-detail-page/ShortDescription-02.png" alt-text="Пример экрана показывает, где длинное описание приложения отображается в списке магазина.":::
 
-<span data-ttu-id="6d7a2-135">**Не нужно:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-135">**Don'ts:**</span></span>
+#### <a name="usage-examples"></a><span data-ttu-id="0b9eb-142">Примеры использования</span><span class="sxs-lookup"><span data-stu-id="0b9eb-142">Usage examples</span></span>
 
-* <span data-ttu-id="6d7a2-136">Ваш значок не должен имитировать какие-либо продукты, защищенные авторским правом, которые не принадлежат вам.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-136">Your icon must not mimic any copyrighted products that you don't own.</span></span>
-* <span data-ttu-id="6d7a2-137">Ваш значок не должен выглядеть так, как любой продукт Или бренды Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-137">Your icon must not look similar to any Microsoft product/brands.</span></span>
+<span data-ttu-id="0b9eb-143">Следующие фразы являются примерами того, что разрешено при написании длинных описаний:</span><span class="sxs-lookup"><span data-stu-id="0b9eb-143">The following phrases are examples of what's allowed when writing long descriptions:</span></span>
 
-## <a name="outline-icon"></a><span data-ttu-id="6d7a2-138">Значок Outline</span><span class="sxs-lookup"><span data-stu-id="6d7a2-138">Outline icon</span></span>
+* <span data-ttu-id="0b9eb-144">"<имя приложения *>* с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="0b9eb-144">"<*Your app name*> works with Microsoft Teams"</span></span>
+* <span data-ttu-id="0b9eb-145">"... тип <*для>* для Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="0b9eb-145">"... a <*type of app*> for Microsoft Teams"</span></span>
+* <span data-ttu-id="0b9eb-146">"<*имя* приложения> интегрируется с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="0b9eb-146">"<*Your app name*> integrates with Microsoft Teams"</span></span>
+* <span data-ttu-id="0b9eb-147">"... интегрирована с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="0b9eb-147">"... integrated with Microsoft Teams"</span></span>
+* <span data-ttu-id="0b9eb-148">"... для пользователей, работающих с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="0b9eb-148">"... for users working with Microsoft Teams"</span></span>
+* <span data-ttu-id="0b9eb-149">"... для <*задачи>* в Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="0b9eb-149">"... for <*specific task*> within Microsoft Teams"</span></span>
+* <span data-ttu-id="0b9eb-150">"... построено на ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-150">"... built on ..."</span></span>
+* <span data-ttu-id="0b9eb-151">"... работает на ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-151">"... runs on ..."</span></span>
+* <span data-ttu-id="0b9eb-152">"... включено ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-152">"... enabled by ..."</span></span>
+* <span data-ttu-id="0b9eb-153">"... разработано для ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-153">"... developed for ..."</span></span>
+* <span data-ttu-id="0b9eb-154">"... предназначен для ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-154">"... designed for ..."</span></span>
 
-<span data-ttu-id="6d7a2-139">Этот значок используется для закрепленных расширений обмена сообщениями и когда приложение отображается слева от Teams.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-139">This icon is used for pinned messaging extensions and when your app displays on the left of Teams.</span></span> <span data-ttu-id="6d7a2-140">См. [рекомендации по проектированию значка outline.](../../../../concepts/build-and-test/apps-package.md#outline-icon)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-140">See [design guidance for the outline icon](../../../../concepts/build-and-test/apps-package.md#outline-icon).</span></span>
+#### <a name="best-practices-for-long-descriptions"></a><span data-ttu-id="0b9eb-155">Лучшие практики для длинных описаний</span><span class="sxs-lookup"><span data-stu-id="0b9eb-155">Best practices for long descriptions</span></span>
 
-<span data-ttu-id="6d7a2-141">![Представление значка app outline store ](../../../../assets/images/store-detail-page/AppIconOutline-02.png)
- ![ view App outline App Studio view](../../../../assets/images/store-detail-page/AppIconOutline-01.png)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-141">![App icon outline store view](../../../../assets/images/store-detail-page/AppIconOutline-02.png)
-![App icon outline App Studio view](../../../../assets/images/store-detail-page/AppIconOutline-01.png)</span></span>
+<span data-ttu-id="0b9eb-156">**Рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-156">**Do:**</span></span>
 
-<span data-ttu-id="6d7a2-142">**Не нужно:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-142">**Don'ts:**</span></span>
+* <span data-ttu-id="0b9eb-157">Используйте [Markdown для](https://support.office.com/article/use-markdown-formatting-in-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772) формата описания.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-157">Use [Markdown](https://support.office.com/article/use-markdown-formatting-in-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772) to format your description.</span></span>
+* <span data-ttu-id="0b9eb-158">Список функций с точками пули, поэтому проще сканировать описание.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-158">List features with bullet points so it's easier to scan the description.</span></span>
+* <span data-ttu-id="0b9eb-159">Используйте активный голос и поговорите с пользователями напрямую (например, *Вы можете ...*).</span><span class="sxs-lookup"><span data-stu-id="0b9eb-159">Use active voice and speak to users directly (for example, *You can ...*).</span></span>
+* <span data-ttu-id="0b9eb-160">Включаем ссылку справка или поддержка.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-160">Include a help or support link.</span></span>
+* <span data-ttu-id="0b9eb-161">Определите, если это применимо: ограничения, настройка сведений, зависимостей учетных записей и обновления выпуска.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-161">Identify the following if applicable: limitations, set up information, account dependencies, and release updates.</span></span>
 
-* <span data-ttu-id="6d7a2-143">Ваш значок не должен имитировать какие-либо продукты, защищенные авторским правом, которыми вы не владеете.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-143">Your icon must not mimic any copyrighted products you don't own.</span></span>
-* <span data-ttu-id="6d7a2-144">Ваш значок не должен выглядеть так, как любой продукт Или бренды Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-144">Your icon must not look similar to any Microsoft product/brands.</span></span>
+<span data-ttu-id="0b9eb-162">**Не рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-162">**Don't:**</span></span>
 
-## <a name="short-description"></a><span data-ttu-id="6d7a2-145">Краткое описание</span><span class="sxs-lookup"><span data-stu-id="6d7a2-145">Short description</span></span>
+* <span data-ttu-id="0b9eb-163">Более 500 слов.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-163">Exceed 500 words.</span></span>
+* <span data-ttu-id="0b9eb-164">Включай слишком много ключевых слов.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-164">Include too many keywords.</span></span> <span data-ttu-id="0b9eb-165">(Это отвлекает и не поможет людям найти ваше приложение.)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-165">(It's distracting and won't help people find your app.)</span></span>
+* <span data-ttu-id="0b9eb-166">Используйте следующий язык, если приложение не прошло официальный процесс сертификации:</span><span class="sxs-lookup"><span data-stu-id="0b9eb-166">Use the following language unless the app has gone through an official certification process:</span></span>
+  * <span data-ttu-id="0b9eb-167">"... сертифицировано для ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-167">"... certified for ..."</span></span>
+  * <span data-ttu-id="0b9eb-168">" ... питание от ..."</span><span class="sxs-lookup"><span data-stu-id="0b9eb-168">" ... powered by ..."</span></span>
 
-<span data-ttu-id="6d7a2-146">Это краткий сводка приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-146">This is a concise summary of your app.</span></span> <span data-ttu-id="6d7a2-147">Оно должно быть оригинальным, увлекательным и направленным на вашу целевую аудиторию.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-147">You want it to be original, engaging, and directed at your target audience.</span></span> <span data-ttu-id="6d7a2-148">В идеале попробуйте описать решение и его значение для пользователей в одном предложении.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-148">Ideally, try and describe your solution and its value to your users in one sentence.</span></span>
+### <a name="best-practices-for-all-descriptions"></a><span data-ttu-id="0b9eb-169">Лучшие практики для всех описаний</span><span class="sxs-lookup"><span data-stu-id="0b9eb-169">Best practices for all descriptions</span></span>
 
-<span data-ttu-id="6d7a2-149">**Do's:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-149">**Do's:**</span></span>
+<span data-ttu-id="0b9eb-170">**Рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-170">**Do:**</span></span>
 
-* <span data-ttu-id="6d7a2-150">Сначала разместите наиболее важные сведения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-150">Put the most important information first.</span></span>
-* <span data-ttu-id="6d7a2-151">Включай ключевые слова, которые клиенты, скорее всего, будут искать.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-151">Include keywords that customers are likely to search for.</span></span>
-* <span data-ttu-id="6d7a2-152">Если вам нужно упомянуть Microsoft Teams, первое упоминание microsoft Teams должно быть полностью записано как *Microsoft Teams.*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-152">If you need to mention Microsoft Teams, the first mention of Microsoft Teams should be written out in full as *Microsoft Teams*.</span></span> <span data-ttu-id="6d7a2-153">Если Teams снова упоминается в том же описании, имя можно сократить до *Teams.*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-153">If Teams is mentioned again in the same description, the name can be shortened to *Teams*.</span></span>
-* <span data-ttu-id="6d7a2-154">Любые ссылки на Microsoft или Microsoft Teams могут быть частью описания и должны следовать стандартам и рекомендациям корпорации Майкрософт по бренду.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-154">Any references to Microsoft or Microsoft Teams can be part of the description and should follow Microsoft’s brand standards and guidelines.</span></span>
-* <span data-ttu-id="6d7a2-155">Все описания должны быть грамматически правильными без языковых ошибок.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-155">All descriptions must be grammatically correct with no language errors.</span></span>
-* <span data-ttu-id="6d7a2-156">Избегайте ненужного использования капитализаций, например, с указанием "Пользователи", а не "пользователи".</span><span class="sxs-lookup"><span data-stu-id="6d7a2-156">Avoid unnecessary use of capitalizations, e.g., stating "Users" instead of "users".</span></span>
+* <span data-ttu-id="0b9eb-171">Ссылки на имена продуктов Майкрософт только при необходимости.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-171">Reference Microsoft product names only when necessary.</span></span> <span data-ttu-id="0b9eb-172">Дополнительные сведения о руководстве см. в [руководстве по товарным знакам и брендам Майкрософт.](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-172">For more information on the guidelines, see [Microsoft Trademark and Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).</span></span>
+* <span data-ttu-id="0b9eb-173">Если вам нужно ссылаться **на Teams,** напишите первую ссылку как **Microsoft Teams**.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-173">If you need to reference **Teams**, write the first reference as **Microsoft Teams**.</span></span> <span data-ttu-id="0b9eb-174">Последующие ссылки можно сократить до **Teams.**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-174">Subsequent references can be shortened to **Teams**.</span></span>
+* <span data-ttu-id="0b9eb-175">Обратитесь **Microsoft 365** вместо **Office 365**.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-175">Refer to **Microsoft 365** instead of **Office 365**.</span></span>
+* <span data-ttu-id="0b9eb-176">Избегайте опечаток и грамматических ошибок.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-176">Avoid typos and grammatical errors.</span></span>
+* <span data-ttu-id="0b9eb-177">Избегайте ненужных капитализаций (например, **пользователи,** а не **пользователи).**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-177">Avoid unnecessary capitalizations (for example, **Users** instead of **users**).</span></span>
+* <span data-ttu-id="0b9eb-178">Избегайте аббревиатур.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-178">Avoid acronyms.</span></span>
 
-<span data-ttu-id="6d7a2-157">**Не нужно:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-157">**Don'ts:**</span></span>
+<span data-ttu-id="0b9eb-179">**Не рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-179">**Don't:**</span></span>
 
-* <span data-ttu-id="6d7a2-158">Не повторяйте название.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-158">Don't repeat the title.</span></span>
-* <span data-ttu-id="6d7a2-159">Не укройте Microsoft на "MS" или "MSFT".</span><span class="sxs-lookup"><span data-stu-id="6d7a2-159">Don't abbreviate Microsoft to "MS" or "MSFT".</span></span>
-* <span data-ttu-id="6d7a2-160">Не используйте жаргон или специализированную терминологию , вы не можете предположить, что пользователи знают, что искать.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-160">Don't use jargon or specialized terminology — you can't assume that users know what to look for.</span></span>
-* <span data-ttu-id="6d7a2-161">Избегайте ненужных ссылок на имена продуктов Майкрософт, если это абсолютно необходимо.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-161">Avoid unnecessary reference to Microsoft product names unless absolutely necessary.</span></span>
-* <span data-ttu-id="6d7a2-162">Не указать или не подразумевать, что приложение является предложением от Microsoft.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-162">Don't indicate or imply that the app is an offering from Microsoft.</span></span>
-* <span data-ttu-id="6d7a2-163">Не используйте защищенные авторским правом бренды, которые не принадлежат вам.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-163">Don't use copyrighted brand names you don't own.</span></span>
-* <span data-ttu-id="6d7a2-164">Не используйте слово "для teams" в коротком имени.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-164">Don't  use "for Teams" in a short name.</span></span>
+* <span data-ttu-id="0b9eb-180">Сокращение Microsoft в качестве **MS или** **MSFT**.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-180">Abbreviate Microsoft as **MS** or **MSFT**.</span></span>
+* <span data-ttu-id="0b9eb-181">Указать, что приложение — это предложение от Корпорации Майкрософт, в том числе с помощью слоганы или taglines Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-181">Indicate the app is an offering from Microsoft, including using Microsoft slogans or taglines.</span></span>
+* <span data-ttu-id="0b9eb-182">Используйте имена брендов, защищенные авторским правом, которые не принадлежат вам.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-182">Use copyrighted brand names you don't own.</span></span>
 
-![Представление магазина коротких описаний](~/assets/images/store-detail-page/ShortDescription-02.png)
+## <a name="adhere-to-icon-design-guidelines"></a><span data-ttu-id="0b9eb-183">Соблюдайте рекомендации по проектированию значков</span><span class="sxs-lookup"><span data-stu-id="0b9eb-183">Adhere to icon design guidelines</span></span>
 
-<span data-ttu-id="6d7a2-166">Вот представление в [App Studio:](https://aka.ms/InstallTeamsAppStudio)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-166">Here's a view in [App Studio](https://aka.ms/InstallTeamsAppStudio):</span></span>
+<span data-ttu-id="0b9eb-184">Значки являются одним из основных элементов, которые пользователи видят при просмотре магазина.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-184">Icons are one of the main elements users see when browsing the store.</span></span> <span data-ttu-id="0b9eb-185">Значки должны сообщать о цели бренда вашего приложения, а также о Teams требованиях.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-185">Your icons should communicate your app's brand purpose while also adhering to Teams requirements.</span></span>
 
-![Представление Краткое описание Приложения Studio](~/assets/images/store-detail-page/ShortDescription-01.png)
+<span data-ttu-id="0b9eb-186">Дополнительные сведения см. в [специальном руководстве по разработке значков Teams приложений.](~/concepts/build-and-test/apps-package.md#app-icons)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-186">For more information, see [specific guidance on designing Teams app icons](~/concepts/build-and-test/apps-package.md#app-icons).</span></span>
 
-## <a name="long-description"></a><span data-ttu-id="6d7a2-168">Подробное описание</span><span class="sxs-lookup"><span data-stu-id="6d7a2-168">Long description</span></span>
+## <a name="capture-screenshots"></a><span data-ttu-id="0b9eb-187">Захват скриншотов</span><span class="sxs-lookup"><span data-stu-id="0b9eb-187">Capture screenshots</span></span>
 
-> [!div class="checklist"]
->
->* <span data-ttu-id="6d7a2-169">Это обеспечивает привлекательный повествование, выделяя основные возможности решения, решаемые проблемы и целевую аудиторию.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-169">This provides an engaging narrative highlighting your solution's main features, the problems it solves, and the target audience.</span></span> <span data-ttu-id="6d7a2-170">Нарисуйте в аудитории первое предложение, общаясь с уникальными функциями приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-170">Draw in your audience with the first sentence by communicating your app's unique features.</span></span> <span data-ttu-id="6d7a2-171">Ваше описание должно быть менее 4000 символов; большинство пользователей будут читать только от 300 до 500 слов.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-171">Your description must be under 4000 characters; most users will only read between 300 and 500 words.</span></span>
->* <span data-ttu-id="6d7a2-172">Что разрешено?</span><span class="sxs-lookup"><span data-stu-id="6d7a2-172">What is allowed?</span></span>
+<span data-ttu-id="0b9eb-188">Скриншоты предоставляют видную визуальную предварительную версию приложения в дополнение к имени, значку и описаниям приложения.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-188">Screenshots provide a prominent visual preview of your app to complement your app name, icon, and descriptions.</span></span>
 
-* <span data-ttu-id="6d7a2-173">`<your_app>`  "работает с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="6d7a2-173">`<your_app>`  "works with Microsoft Teams"</span></span>
-* <span data-ttu-id="6d7a2-174">`<for users>`  "Работа с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="6d7a2-174">`<for users>`  "working with Microsoft Teams"</span></span>
-* <span data-ttu-id="6d7a2-175">`<for tasks>`  "в microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="6d7a2-175">`<for tasks>`  "within Microsoft Teams"</span></span>
-* <span data-ttu-id="6d7a2-176">`<an app>`  "для Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="6d7a2-176">`<an app>`  "for Microsoft Teams"</span></span>
-* <span data-ttu-id="6d7a2-177">`<your_app>`  "интеграция с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="6d7a2-177">`<your_app>`  "integrates with Microsoft Teams"</span></span>
-* <span data-ttu-id="6d7a2-178">"... интегрирована с Microsoft Teams"</span><span class="sxs-lookup"><span data-stu-id="6d7a2-178">"...integrated with Microsoft Teams"</span></span>
-* <span data-ttu-id="6d7a2-179">"... построено на..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-179">"...built on…"</span></span>
-* <span data-ttu-id="6d7a2-180">"... запускается..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-180">"...runs on…"</span></span>
-* <span data-ttu-id="6d7a2-181">"... включено..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-181">"…enabled by…"</span></span>
-* <span data-ttu-id="6d7a2-182">"... разработано для ..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-182">"…developed for…"</span></span>
-* <span data-ttu-id="6d7a2-183">"... предназначен для ..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-183">"…designed for…"</span></span>
+### <a name="requirements-for-screenshots"></a><span data-ttu-id="0b9eb-189">Требования к скриншотам</span><span class="sxs-lookup"><span data-stu-id="0b9eb-189">Requirements for screenshots</span></span>
 
-> <span data-ttu-id="6d7a2-184">**Примечание.** Вышеперечисленные термины также применяются к использованию Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-184">**Note**: The above terms also apply to the use of Microsoft 365.</span></span> <span data-ttu-id="6d7a2-185">Office 365 теперь называется Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-185">Office 365 is now called Microsoft 365.</span></span> <span data-ttu-id="6d7a2-186">Пожалуйста, обновите описания приложений, чтобы отразить это.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-186">Please update your app descriptions to reflect this.</span></span>
+* <span data-ttu-id="0b9eb-190">До пяти скриншотов в списке.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-190">Up to five screenshots per listing.</span></span>
+* <span data-ttu-id="0b9eb-191">Поддерживаемые типы файлов включают PNG, JPEG и GIF.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-191">Supported file types include PNG, JPEG, and GIF.</span></span>
+* <span data-ttu-id="0b9eb-192">Размеры должны быть 1366x768 пикселей.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-192">Dimensions should be 1366x768 pixels.</span></span>
+* <span data-ttu-id="0b9eb-193">Максимальный размер 1024 КБ.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-193">Maximum size of 1,024 KB.</span></span>
 
->[!IMPORTANT]
-> <span data-ttu-id="6d7a2-187">Убедитесь, что вы точно скопируете описания, которые вы написали в записи AppSource в манифесте приложения— значения должны соответствовать.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-187">Make sure to precisely copy the descriptions you wrote in your AppSource entry to your app manifest — the values must match.</span></span> <span data-ttu-id="6d7a2-188">Microsoft Teams использует только описания, которые вы предоставляете в манифесте приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-188">Microsoft Teams will only use the descriptions you provide in the app manifest.</span></span>
+### <a name="best-practices-for-screenshots"></a><span data-ttu-id="0b9eb-194">Лучшие практики для скриншотов</span><span class="sxs-lookup"><span data-stu-id="0b9eb-194">Best practices for screenshots</span></span>
 
-<span data-ttu-id="6d7a2-189">**Do's:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-189">**Do's:**</span></span>
+<span data-ttu-id="0b9eb-195">**Рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-195">**Do:**</span></span>
 
-* <span data-ttu-id="6d7a2-190">Для освещения описания используйте форматирование [Markdown.](https://support.office.com/article/use-markdown-formatting-in-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-190">Use [Markdown formatting](https://support.office.com/article/use-markdown-formatting-in-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772) to illuminate your description.</span></span>  
-* <span data-ttu-id="6d7a2-191">Список функций, которые помогают читателям при сканировании описания.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-191">List features to aid readers in scanning your description.</span></span>
-* <span data-ttu-id="6d7a2-192">Используйте активный голос и поговорите с пользователями напрямую.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-192">Use active voice and speak to users directly.</span></span>
-* <span data-ttu-id="6d7a2-193">Используйте пункты пули, чтобы перечислить свои функции.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-193">Use bullet points to list out your features.</span></span>
-* <span data-ttu-id="6d7a2-194">Включите ссылку справка или поддержка, чтобы пользователи знали, как связаться с вами, если у них есть вопросы.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-194">Include a help or support link so your users know how to reach you if they have questions.</span></span>
-* <span data-ttu-id="6d7a2-195">Убедитесь, что первое упоминание Microsoft Teams полностью записано как *"Microsoft Teams".*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-195">Make certain that the first mention of Microsoft Teams is written out in full as "*Microsoft Teams*".</span></span> <span data-ttu-id="6d7a2-196">Если в том же описании Teams снова упоминается, имя можно укоротить до *"Teams".*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-196">If Teams is mentioned again later in the same description, the name can be shortened to "*Teams*".</span></span>
-* <span data-ttu-id="6d7a2-197">Любые ссылки на Microsoft или Microsoft Teams (только при необходимости) могут быть частью длинного описания и должны следовать стандартам и рекомендациям корпорации Майкрософт по бренду.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-197">Any references to Microsoft or Microsoft Teams (only if necessary)  may be part of the long description and should follow Microsoft’s brand standards and guidelines.</span></span>
-* <span data-ttu-id="6d7a2-198">Все описания должны быть грамматически правильными без языковых ошибок.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-198">All descriptions must be grammatically correct with no language errors.</span></span>
-* <span data-ttu-id="6d7a2-199">Избегайте ненужного использования капитализаций для терминов в описании (пример: указание "Пользователи", а не "пользователи").</span><span class="sxs-lookup"><span data-stu-id="6d7a2-199">Avoid unnecessary use of capitalizations for terms in your description (example: stating "Users" instead of "users".</span></span>
-* <span data-ttu-id="6d7a2-200">Избегайте аббревиатур.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-200">Avoid acronyms.</span></span>
-* <span data-ttu-id="6d7a2-201">Обязательно вызовите ограничения, зависимость учетной записи, настройку конфигурации, будущие обновления в выпусках или ограничения использования</span><span class="sxs-lookup"><span data-stu-id="6d7a2-201">Make sure to call out limitations, account dependency, configuration set up, future updates in releases, or any usage constraints</span></span>
+* <span data-ttu-id="0b9eb-196">Сосредоточься на возможностях приложения (например, на том, как люди могут общаться с вашим ботом).</span><span class="sxs-lookup"><span data-stu-id="0b9eb-196">Focus on your app's capabilities (for example, how people can communicate with your bot).</span></span>
+* <span data-ttu-id="0b9eb-197">Включите содержимое, которое точно представляет ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-197">Include content that accurately represents your app.</span></span>
+* <span data-ttu-id="0b9eb-198">Используйте текст разумно.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-198">Use text judiciously.</span></span>
+* Скриншоты кадра с цветом, который отражает ваш бренд и включает маркетинговый контент, аналогичный следующему примеру [Freshdesk](https://appsource.microsoft.com/product/office/WA104381505?src=office&tab=Overview) (требования к размеру применяются к всему изображению, а не только к скриншоту): пример экрана сторонних приложений   :::image type="content" source="../../../../assets/images/freshdesk.png" alt-text="Freshdesk":::
 
->[!NOTE]
-> <span data-ttu-id="6d7a2-202">Microsoft Teams поддерживает следующий синтаксис Markdown:</span><span class="sxs-lookup"><span data-stu-id="6d7a2-202">Microsoft Teams supports the following Markdown syntax:</span></span>  
-> <span data-ttu-id="6d7a2-203">**Ссылки**.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-203">**Links**.</span></span> <span data-ttu-id="6d7a2-204">`[title](url/address/here)`.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-204">`[title](url/address/here)`.</span></span>  
-><span data-ttu-id="6d7a2-205">**Изображения** `![alt text](url/address/here)` . .</span><span class="sxs-lookup"><span data-stu-id="6d7a2-205">**Images**.`![alt text](url/address/here)`.</span></span>  
-> <span data-ttu-id="6d7a2-206">**Bold**.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-206">**Bold**.</span></span> <span data-ttu-id="6d7a2-207">`**bold text**`   `__bold text__`.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-207">`**bold text**`   `__bold text__`.</span></span>  
-> <span data-ttu-id="6d7a2-208">**Italics**.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-208">**Italics**.</span></span> <span data-ttu-id="6d7a2-209">`*italicized text*`  `_italicized text`.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-209">`*italicized text*`  `_italicized text`.</span></span>  
-><span data-ttu-id="6d7a2-210">**[Упорядоченные списки](https://www.markdownguide.org/basic-syntax/#ordered-lists)**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-210">**[Ordered Lists](https://www.markdownguide.org/basic-syntax/#ordered-lists)**</span></span><br>
->`1. first` 
-<br>` 1. second ` 
-<br>`1.third`<br>
-><span data-ttu-id="6d7a2-211">**[Необученный список](https://www.markdownguide.org/basic-syntax/#unordered-lists)**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-211">**[Unordered List](https://www.markdownguide.org/basic-syntax/#unordered-lists)**</span></span><br>
-` - short` <br>`- bulleted` <br>`- list`<br>
-><span data-ttu-id="6d7a2-212">**Newline**.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-212">**Newline**.</span></span> <span data-ttu-id="6d7a2-213">Используйте `\n` символ, чтобы назначить новую линию.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-213">Use a `\n` character to designate a newline.</span></span>
- ><span data-ttu-id="6d7a2-214">**Побег.**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-214">**Escape.**</span></span> <span data-ttu-id="6d7a2-215">Используйте линию backslash, чтобы избежать специальных символов.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-215">Use an inline backslash to escape special characters.</span></span> <span data-ttu-id="6d7a2-216">`\*asterisk`.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-216">`\*asterisk`.</span></span>
+<span data-ttu-id="0b9eb-200">**Не рекомендуется:**</span><span class="sxs-lookup"><span data-stu-id="0b9eb-200">**Don't:**</span></span>
 
-<span data-ttu-id="6d7a2-217">**Пример в формате Markdown**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-217">**Example in Markdown format**</span></span>
+* <span data-ttu-id="0b9eb-201">Показ определенных устройств, например телефонов или ноутбуков.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-201">Show specific devices, such as phones or laptops.</span></span>
+* <span data-ttu-id="0b9eb-202">Отображение хрома или пользовательского интерфейса, не в приложении.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-202">Display chrome or UI that isn't in your app.</span></span>
+* <span data-ttu-id="0b9eb-203">Захват любого пользовательского Teams браузера на скриншотах.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-203">Capture any Teams or browser UI in your screenshots.</span></span>
+* <span data-ttu-id="0b9eb-204">Включите макеты, неточно отражающие фактический пользовательский интерфейс приложения, например отображение приложения в браузере вместо вкладки Teams.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-204">Include mockups that inaccurately reflect your app's actual UI, such as showing your app in  a browser instead of a Teams tab.</span></span>
 
-|<span data-ttu-id="6d7a2-218">Формат Markdown для</span><span class="sxs-lookup"><span data-stu-id="6d7a2-218">Markdown format for</span></span> |<span data-ttu-id="6d7a2-219">Формат Markdown</span><span class="sxs-lookup"><span data-stu-id="6d7a2-219">Markdown format</span></span> |<span data-ttu-id="6d7a2-220">Отображаемая текстовая</span><span class="sxs-lookup"><span data-stu-id="6d7a2-220">Displayed text</span></span>|
-|:---------|:---------------|:-------------|
-|<span data-ttu-id="6d7a2-221">Ссылка</span><span class="sxs-lookup"><span data-stu-id="6d7a2-221">Link</span></span>  |` [App name guide](#app-name)`| [<span data-ttu-id="6d7a2-222">Руководство по имени приложения</span><span class="sxs-lookup"><span data-stu-id="6d7a2-222">App name guide</span></span>](#app-name) |
-|<span data-ttu-id="6d7a2-223">Image</span><span class="sxs-lookup"><span data-stu-id="6d7a2-223">Image</span></span> |` ![App long description store view](~/assets/images/store-detail-page/LongDescription-02.png)`| ![Представление магазина длинного описания приложения](~/assets/images/store-detail-page/LongDescription-02.png)|
-|<span data-ttu-id="6d7a2-225">Полужирный</span><span class="sxs-lookup"><span data-stu-id="6d7a2-225">Bold</span></span> |` **HR Tools**` | <span data-ttu-id="6d7a2-226">**Средства управления персоналом**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-226">**HR Tools**</span></span>  |
-|<span data-ttu-id="6d7a2-227">Курсив</span><span class="sxs-lookup"><span data-stu-id="6d7a2-227">Italics</span></span> |`*HR Tools*` |<span data-ttu-id="6d7a2-228">*Средства управления персоналом*</span><span class="sxs-lookup"><span data-stu-id="6d7a2-228">*HR Tools*</span></span>|
-|<span data-ttu-id="6d7a2-229">Newline</span><span class="sxs-lookup"><span data-stu-id="6d7a2-229">Newline</span></span> |` HR Tools provide wide range of solutions that help your organization to manage day-to-day HR activities effectively. <br> No more flipping through paper records or juggling among 5 different apps.` |<span data-ttu-id="6d7a2-230">Hr Tools предоставляют широкий спектр решений, которые помогают организации эффективно управлять ежедневной деятельностью по управлению персоналом.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-230">HR Tools provide wide range of solutions that help your organization to manage day-to-day HR activities effectively.</span></span> <br>  <span data-ttu-id="6d7a2-231">Больше не перелистывание бумажных записей или жонглирование между 5 различными приложениями.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-231">No more flipping through paper records or juggling among 5 different apps.</span></span>|
-|<span data-ttu-id="6d7a2-232">Escape</span><span class="sxs-lookup"><span data-stu-id="6d7a2-232">Escape</span></span>|`\*Payroll tools that help you manage your payroll and tax documents.` |<span data-ttu-id="6d7a2-233">\*Средства заработной платы, которые помогают управлять ведомоями и налоговыми документами.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-233">\*Payroll tools that help you manage your payroll and tax documents.</span></span> 
+<span data-ttu-id="0b9eb-205">Дополнительные практические действия см. в [иллюстрации craft effective images for Microsoft app stores.](/office/dev/store/craft-effective-appsource-store-images)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-205">For more best practices, see [craft effective images for Microsoft app stores](/office/dev/store/craft-effective-appsource-store-images).</span></span>
 
-<span data-ttu-id="6d7a2-234">**Не нужно:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-234">**Don'ts:**</span></span>
+## <a name="create-a-video"></a><span data-ttu-id="0b9eb-206">Создание видео</span><span class="sxs-lookup"><span data-stu-id="0b9eb-206">Create a video</span></span>
 
-* <span data-ttu-id="6d7a2-235">Не задайте слишком много ключевых слов в описании, это отвлекает и не поможет обнаружить ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-235">Don't put too many keywords in your description — it's distracting and won't help your app's discoverability.</span></span>
-* <span data-ttu-id="6d7a2-236">Не используйте *"Teams"* или *"Microsoft Teams"* в коротком имени.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-236">Don't use "*Teams*” or “*Microsoft Teams*” in a short name.</span></span>
-* <span data-ttu-id="6d7a2-237">Избегайте ненужных ссылок на имена продуктов Майкрософт, если это абсолютно необходимо.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-237">Avoid unnecessary reference to Microsoft product names unless absolutely necessary.</span></span>
-* <span data-ttu-id="6d7a2-238">Не указать, что приложение является предложением от Microsoft.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-238">Don't indicate that the app is an offering from Microsoft.</span></span>
-* <span data-ttu-id="6d7a2-239">Не используйте защищенные авторским правом бренды, которые не принадлежат вам.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-239">Don't use copyrighted brand names you don't own.</span></span>
-* <span data-ttu-id="6d7a2-240">Не используйте следующий язык, если приложение не прошло официальный процесс сертификации:</span><span class="sxs-lookup"><span data-stu-id="6d7a2-240">Don't use the following language unless the app has gone through an official certification process:</span></span>
+<span data-ttu-id="0b9eb-207">Видео может быть наиболее эффективным способом общения, почему люди должны использовать ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-207">A video can be the most effective way to communicate why people should use your app.</span></span> <span data-ttu-id="0b9eb-208">В видео необходимо ответить на следующие вопросы:</span><span class="sxs-lookup"><span data-stu-id="0b9eb-208">You should address the following questions in a video:</span></span>
 
-  * <span data-ttu-id="6d7a2-241">"... сертифицировано для..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-241">"…certified for…"</span></span>
-  * <span data-ttu-id="6d7a2-242">"... питание от ..."</span><span class="sxs-lookup"><span data-stu-id="6d7a2-242">"…powered by…"</span></span>
+* <span data-ttu-id="0b9eb-209">Кто для вашего приложения?</span><span class="sxs-lookup"><span data-stu-id="0b9eb-209">Who is your app for?</span></span>
+* <span data-ttu-id="0b9eb-210">Какие проблемы может решить приложение?</span><span class="sxs-lookup"><span data-stu-id="0b9eb-210">What problems can your app solve?</span></span>
+* <span data-ttu-id="0b9eb-211">Как работает ваше приложение?</span><span class="sxs-lookup"><span data-stu-id="0b9eb-211">How does your app work?</span></span>
+* <span data-ttu-id="0b9eb-212">Какие еще преимущества вы получаете от использования приложения?</span><span class="sxs-lookup"><span data-stu-id="0b9eb-212">What other benefits do you get from using your app?</span></span>
 
-* <span data-ttu-id="6d7a2-243">Не укройте "Microsoft" на "MS" или "MSFT" - запишите Microsoft в полном объеме.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-243">Don't abbreviate “Microsoft” to “MS” or “MSFT” — write Microsoft out in full.</span></span>
-* <span data-ttu-id="6d7a2-244">Ни одна часть описания или метаданных не может указывать приложение в качестве официального предложения Microsoft.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-244">No part of description or metadata can indicate the app as an official Microsoft offering.</span></span>
-* <span data-ttu-id="6d7a2-245">Партнеры не могут использовать или имитировать какие-либо теги Майкрософт или использовать имя любого продукта или службы Майкрософт в слогане или слогане.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-245">Partners may not use or imitate any Microsoft tagline, or use the name of any Microsoft product or service in the slogan or tagline.</span></span>
-* <span data-ttu-id="6d7a2-246">Логотип не должен неправильно изображать приложение как официальный продукт/функцию Майкрософт или имитировать какие-либо из существующих или предстоящих продуктов Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-246">Logo must not wrongly depict the app as an official Microsoft product/ feature or mimic any of the existing or upcoming Microsoft products.</span></span>
+<span data-ttu-id="0b9eb-213">Если вы включаете видео, оно отображается перед снимками экрана в списке.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-213">If you include a video, it appears before your screenshots in the listing.</span></span>
 
-![Представление магазина длинного описания приложения](~/assets/images/store-detail-page/LongDescription-02.png)
+### <a name="best-practices-for-videos"></a><span data-ttu-id="0b9eb-214">Лучшие практики для видео</span><span class="sxs-lookup"><span data-stu-id="0b9eb-214">Best practices for videos</span></span>
 
-<span data-ttu-id="6d7a2-248">Вот представление в [App Studio:](https://aka.ms/InstallTeamsAppStudio)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-248">Here's a view in [App Studio](https://aka.ms/InstallTeamsAppStudio):</span></span>
+* <span data-ttu-id="0b9eb-215">Сохраняйте видео в течение 30-90 секунд.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-215">Keep your video between 30-90 seconds.</span></span>
+* <span data-ttu-id="0b9eb-216">Стремиться к качеству.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-216">Aim for quality.</span></span> <span data-ttu-id="0b9eb-217">В списке пользователи увидят ваше видео перед снимками экрана.</span><span class="sxs-lookup"><span data-stu-id="0b9eb-217">In a listing, users will see your video before screenshots.</span></span>
 
-![Представление App Long Description App Studio](~/assets/images/store-detail-page/LongDescription-01.png)
+## <a name="localize-your-store-listing"></a><span data-ttu-id="0b9eb-218">Локализовать список магазина</span><span class="sxs-lookup"><span data-stu-id="0b9eb-218">Localize your store listing</span></span>
 
-## <a name="screenshots"></a><span data-ttu-id="6d7a2-250">Снимки экрана</span><span class="sxs-lookup"><span data-stu-id="6d7a2-250">Screenshots</span></span>
+<span data-ttu-id="0b9eb-219">Центр партнеров поддерживает [локализованные списки магазинов.](https://docs.microsoft.com/office/dev/store/prepare-localized-solutions)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-219">Partner Center supports [localized store listings](https://docs.microsoft.com/office/dev/store/prepare-localized-solutions).</span></span> <span data-ttu-id="0b9eb-220">Дополнительные сведения см. [в том, как локализовать список Teams приложения.](../../../../concepts/build-and-test/apps-localization.md)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-220">For more information, see [how to localize your Teams app listing](../../../../concepts/build-and-test/apps-localization.md).</span></span>
 
-<span data-ttu-id="6d7a2-251">Снимки экрана, загруженные в [Центре партнеров,](https://partner.microsoft.com) отображаются как в [AppSource,](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) так и в списке приложения в клиенте Teams.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-251">The screenshots uploaded on the [Partner Center](https://partner.microsoft.com) are displayed in both [AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) and your app listing in the Teams client.</span></span> <span data-ttu-id="6d7a2-252">Они предоставляют визуальный просмотр приложения вместе с описанием приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-252">They provide a visual preview of your app along with your app description.</span></span>
-<span data-ttu-id="6d7a2-253">Вы можете предоставить от одного до пяти скриншотов в формате .png, .jpg или .gif files.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-253">You can provide one to five screenshots formatted as .png, .jpg, or .gif files.</span></span> <span data-ttu-id="6d7a2-254">Размер экрана должен быть 1366 x 768 пикселей с максимальным размером 1024 КБ.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-254">Screenshots should be 1366 x 768 pixels with a maximum size of 1024 KB.</span></span>
+## <a name="see-also"></a><span data-ttu-id="0b9eb-221">См. также</span><span class="sxs-lookup"><span data-stu-id="0b9eb-221">See also</span></span>
 
-<span data-ttu-id="6d7a2-255">**Do's:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-255">**Do's:**</span></span>
+* [<span data-ttu-id="0b9eb-222">Создание эффективных Microsoft 365 магазинов</span><span class="sxs-lookup"><span data-stu-id="0b9eb-222">Create effective Microsoft 365 Stores listings</span></span>](/office/dev/store/create-effective-office-store-listings)
+* <span data-ttu-id="0b9eb-223">Teams руководства по разработке приложений для [копирования, контента и](~/concepts/design/design-teams-app-fundamentals.md#copy-and-content) [выражения бренда](~/concepts/design/design-teams-app-fundamentals.md#brand-expression)</span><span class="sxs-lookup"><span data-stu-id="0b9eb-223">Teams app design guidelines for [copy and content](~/concepts/design/design-teams-app-fundamentals.md#copy-and-content) and [brand expression](~/concepts/design/design-teams-app-fundamentals.md#brand-expression)</span></span>
+* [<span data-ttu-id="0b9eb-224">Рекомендации по товарным знакам и брендам Майкрософт</span><span class="sxs-lookup"><span data-stu-id="0b9eb-224">Microsoft Trademark and Brand Guidelines</span></span>](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general)
 
-* <span data-ttu-id="6d7a2-256">Сосредоточься на выделении всех возможностей приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-256">Focus on highlighting all your app's capabilities.</span></span>
-* <span data-ttu-id="6d7a2-257">Содержимое должно точно представлять ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-257">Content should accurately represent your app.</span></span>
-* <span data-ttu-id="6d7a2-258">Текст должен быть хорошо заполнен, не будучи чрезмерным.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-258">Text should be well-populated without being excessive.</span></span>
-* <span data-ttu-id="6d7a2-259">Вы можете окружить скриншоты цветом фона и добавить маркетинговый контент, аналогичный [примеру Freshdesk;](https://appsource.microsoft.com/product/office/WA104381505?src=office&tab=Overview) однако размеры будут не только на скриншоте, но и в общем изображении.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-259">You can surround your screenshots with a background color and add marketing content similar to the [Freshdesk](https://appsource.microsoft.com/product/office/WA104381505?src=office&tab=Overview) example; however, the dimensions won't be of the screenshot alone but will include the overall image.</span></span>
+## <a name="next-step"></a><span data-ttu-id="0b9eb-225">Следующий шаг</span><span class="sxs-lookup"><span data-stu-id="0b9eb-225">Next step</span></span>
 
-<img width="800px" alt="Freshdesk screenshot" src="../../../../assets/images/freshdesk.png" />
-
-<span data-ttu-id="6d7a2-260">**Не нужно:**</span><span class="sxs-lookup"><span data-stu-id="6d7a2-260">**Don'ts:**</span></span>
-
-* <span data-ttu-id="6d7a2-261">Не показывать определенные устройства, например телефоны или ноутбуки.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-261">Don't show specific devices, like phones or laptops.</span></span>
-* <span data-ttu-id="6d7a2-262">Не откажитесь от хрома и пользовательского интерфейса за пределами приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-262">Don't show any chrome/UI from outside of your app.</span></span>
-* <span data-ttu-id="6d7a2-263">Не запечатывайте пользовательский интерфейс Teams или браузера на скриншотах.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-263">Don't capture any Teams or browser UI in your screenshots.</span></span>
-* <span data-ttu-id="6d7a2-264">Не включите макеты, которые некорректно отражают реальный пользовательский интерфейс приложений, например отображение веб-сайта вместо вкладки Teams.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-264">Don't include mock-ups that inaccurately reflect your apps actual UI such as showing your website instead of your Teams tab.</span></span>
-
-<span data-ttu-id="6d7a2-265">Дополнительные практические действия *см.* в ниже: [Crafting effective AppSource store images.](/office/dev/store/craft-effective-appsource-store-images)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-265">For more best practices, *see*: [Crafting effective AppSource store images](/office/dev/store/craft-effective-appsource-store-images).</span></span>
-
-## <a name="videos"></a><span data-ttu-id="6d7a2-266">Видео</span><span class="sxs-lookup"><span data-stu-id="6d7a2-266">Videos</span></span>
-
-<span data-ttu-id="6d7a2-267">Если изображение стоит тысячи слов, то видео стоит тысячи изображений.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-267">If an image is worth a thousand words, then a video is worth a thousand images.</span></span> <span data-ttu-id="6d7a2-268">Видео — это наиболее эффективный способ сообщить о преимуществах использования приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-268">Videos are the most effective way to communicate the benefits of using your app.</span></span> <span data-ttu-id="6d7a2-269">Она будет размещена перед всеми вашими скриншотами на странице сведения о приложении.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-269">It will be placed in front of all your screenshots on the app details page.</span></span> <span data-ttu-id="6d7a2-270">Убедитесь, что вы упомянули следующее:</span><span class="sxs-lookup"><span data-stu-id="6d7a2-270">Make sure you mention the following:</span></span>
-
-* <span data-ttu-id="6d7a2-271">Как работает ваше приложение.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-271">How your app works.</span></span>
-* <span data-ttu-id="6d7a2-272">Чего можно добиться с помощью приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-272">What can be achieved with your app.</span></span>
-* <span data-ttu-id="6d7a2-273">Преимущества использования приложения.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-273">The benefits of using your app.</span></span>
-* <span data-ttu-id="6d7a2-274">Для кого вы.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-274">Who your is for.</span></span>
-
-<span data-ttu-id="6d7a2-275">Не забудьте сохранить презентацию короткой и сладкой — где-то между 30-90 секундами.</span><span class="sxs-lookup"><span data-stu-id="6d7a2-275">Remember to keep your presentation short and sweet — somewhere between 30-90 seconds.</span></span>
-
-## <a name="learn-more"></a><span data-ttu-id="6d7a2-276">Подробнее</span><span class="sxs-lookup"><span data-stu-id="6d7a2-276">Learn more</span></span>
-
-<span data-ttu-id="6d7a2-277">[Контрольный список для отправки приложения](~/concepts/deploy-and-publish/appsource/publish.md).</span><span class="sxs-lookup"><span data-stu-id="6d7a2-277">[Checklist for app submission](~/concepts/deploy-and-publish/appsource/publish.md).</span></span>  
-<span data-ttu-id="6d7a2-278">[Создайте пакет приложений для приложения Microsoft Teams.](~/concepts/build-and-test/apps-package.md)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-278">[Create an app package for your Microsoft Teams app](~/concepts/build-and-test/apps-package.md).</span></span>  
-<span data-ttu-id="6d7a2-279">[Используйте Центр партнеров для отправки решения в AppSource.](/office/dev/store/use-partner-center-to-submit-to-appsource)</span><span class="sxs-lookup"><span data-stu-id="6d7a2-279">[Use Partner Center to submit your solution to AppSource](/office/dev/store/use-partner-center-to-submit-to-appsource).</span></span>
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="0b9eb-226">Подготовка отправки в магазин</span><span class="sxs-lookup"><span data-stu-id="0b9eb-226">Prepare your store submission</span></span>](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)
