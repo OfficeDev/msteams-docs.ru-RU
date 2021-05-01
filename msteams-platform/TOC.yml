@@ -8,17 +8,17 @@
 - name: Начало работы
   expanded: true
   items:
-    - name: Обзор и необходимые условия
+    - name: Обзор
       href: build-your-first-app/build-first-app-overview.md
-    - name: Создание приложения "Hello World!" приложение
+    - name: 'Создание приложения "Hello, World!"'
       href: build-your-first-app/build-and-run.md
-    - name: Создать личную вкладку
+    - name: Создание базовой личной вкладки
       href: build-your-first-app/build-personal-tab.md
-    - name: Создать канал и вкладку группы
+    - name: Создание первого канала и вкладки группы
       href: build-your-first-app/build-channel-tab.md
-    - name: Создать бота
+    - name: Создание первого бота
       href: build-your-first-app/build-bot.md
-    - name: Создать расширение для обмена сообщениями
+    - name: Создание первого расширения для обмена сообщениями
       href: build-your-first-app/build-messaging-extension.md
 - name: Руководства и примеры кода
   items:
@@ -302,6 +302,18 @@
           href: task-modules-and-cards/cards/cards-actions.md
         - name: Ссылки на карточки
           href: task-modules-and-cards/cards/cards-reference.md
+        - name: Универсальные действия для адаптивных карточек
+          items:
+            - name: Обзор
+              href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/overview.md
+            - name: Работа с универсальными действиями для адаптивных карточек
+              href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/Work-with-universal-actions-for-adaptive-cards.md
+            - name: Пользовательские просмотры
+              href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/User-Specific-Views.md
+            - name: Последовательные рабочие процессы
+              href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/Sequential-Workflows.md
+            - name: Актуальные карточки
+              href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/Up-To-Date-Views.md
     - name: Создание модулей задач
       items:
         - name: Обзор
