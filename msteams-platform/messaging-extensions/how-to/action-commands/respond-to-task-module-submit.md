@@ -17,7 +17,7 @@ ms.locfileid: "52019834"
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
 В этом документе вы можете узнать, как ваше приложение реагирует на команды действий, например на отправку действия модуля задач пользователя.
-После отправки модуля задач веб-служба получает сообщение вызова с командным `composeExtension/submitAction` ИД и значениями параметров. У приложения есть пять секунд для ответа на вызов, в противном случае пользователь получает сообщение об ошибке, не достигаемом **приложения,** и любой ответ на вызов игнорируется клиентом Teams.
+После отправки модуля задач веб-служба получает сообщение вызова с командным `composeExtension/submitAction` ИД и значениями параметров. У приложения есть пять секунд для ответа на вызов, в противном случае пользователь получает сообщение об ошибке, которое не может достичь **приложения,** и любой ответ на вызов игнорируется Teams клиентом.
 
 У вас есть следующие варианты ответа:
 
@@ -544,7 +544,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ![Боты атрибуции пользователей](../../../assets/images/messaging-extension/user-attribution-bots.png)
 
-Чтобы использовать атрибутику пользователя в командах, необходимо добавить объект упоминания в полезной нагрузке, которая `OnBehalfOf` `ChannelData` `Activity` отправляется в Teams.
+Чтобы использовать атрибутику пользователя в командах, необходимо добавить объект упоминания в полезной нагрузке, которая отправляется в `OnBehalfOf` `ChannelData` `Activity` Teams.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet-1)
 
@@ -595,8 +595,8 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 | Имя образца           | Описание | .NET    | Node.js   |   
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения обмена сообщениями teams| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
-|Командный поиск расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
+|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Дальнейшие действия
 

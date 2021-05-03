@@ -21,7 +21,7 @@ ms.locfileid: "52075719"
 > [!NOTE]
 > В настоящее время разгрузка ссылок не поддерживается в мобильных клиентах.
 
-Расширение обмена сообщениями Azure DevOps использует разгрузку ссылок, чтобы искать URL-адреса, вклеив их в область составить сообщение, указывав на рабочий элемент. На следующем изображении пользователь вклеил URL-адрес для элемента работы в Azure DevOps, который расширение обмена сообщениями решило в карточку:
+Расширение Azure DevOps сообщений использует разгрузку ссылок, чтобы искать URL-адреса, вклеив их в область составить сообщение, указывав на рабочий элемент. На следующем изображении пользователь вклеил URL-адрес для элемента работы в Azure DevOps, который расширение обмена сообщениями решило в карточку:
 
 ![Пример разгрузки ссылок](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "52075719"
 
 ### <a name="add-link-unfurling-using-app-studio"></a>Добавление разгрузки ссылок с помощью App Studio
 
-1. Откройте **App Studio** от клиента Microsoft Teams и выберите вкладку Редактор **Манифеста.**
+1. Откройте **App Studio** Microsoft Teams клиента и выберите вкладку Редактор **Манифеста.**
 1. Загрузите манифест приложения.
 1. На странице **Расширение обмена сообщениями** добавьте домен, который необходимо искать в разделе **Обработчики сообщений.** В следующем изображении объясняется процесс:
 
@@ -75,7 +75,7 @@ ms.locfileid: "52075719"
 
 * [Карта эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
 * [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Соединитечная карта Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Office 365 Карта Connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 * [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
 ### <a name="example"></a>Пример

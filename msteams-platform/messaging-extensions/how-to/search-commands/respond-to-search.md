@@ -1,7 +1,7 @@
 ---
 title: Ответ на команду поиска
 author: clearab
-description: Как реагировать на команду поиска из расширения обмена сообщениями в приложении Microsoft Teams.
+description: Как реагировать на команду поиска из расширения обмена сообщениями в Microsoft Teams приложении.
 ms.topic: conceptual
 ms.author: anclear
 ms.openlocfilehash: 76bccc10763b99d7373e98e6e153c4f4aa51373a
@@ -97,22 +97,22 @@ Teams поддерживает следующие типы карт:
 
 * [Карта эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
 * [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Соединитечная карта Office 365](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Office 365 Карта Connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 * [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
 Чтобы лучше понимать карты и их обзор, см. в этом [обзоре.](~/task-modules-and-cards/what-are-cards.md)
 
 Чтобы узнать, как использовать эскизы и типы карт героев, см. в добавлении [карт и действий карт.](~/task-modules-and-cards/cards/cards-actions.md)
 
-Дополнительные сведения о карточке Соединители Office 365 см. в руб. [Использование карт соединители Office 365.](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+Дополнительные сведения о карточке Office 365 соединители см. в Office 365 [connector cards.](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 
-Список результатов отображается в пользовательском интерфейсе Microsoft Teams с предварительным просмотром каждого элемента. Предварительный просмотр создается одним из двух способов:
+Список результатов отображается в пользовательском Microsoft Teams с предварительным просмотром каждого элемента. Предварительный просмотр создается одним из двух способов:
 
 * Использование `preview` свойства в `attachment` объекте. Вложение `preview` может быть только карточкой Hero или Thumbnail.
 * Извлечено из основных свойств и `title` `text` свойств `image` вложения. Они используются только в том случае, если свойство не установлено и `preview` эти свойства доступны.
 * Кнопка карточки Hero или Thumbnail и действия касания, за исключением вызова, не поддерживаются в карточке предварительного просмотра.
 
-Вы можете отобразить предварительный просмотр адаптивной карты или соединителя Office 365 в списке результатов с помощью свойства предварительного просмотра. Свойство предварительного просмотра не требуется, если результаты уже являются картами Hero или Thumbnail. Если вы используете вложение предварительного просмотра, оно должно быть либо карточкой Hero, либо Thumbnail. Если не указано свойство предварительного просмотра, предварительный просмотр карты не удается, и ничего не отображается.
+Вы можете отобразить предварительный просмотр адаптивной карты или Office 365 соединителя в списке результатов с помощью свойства предварительного просмотра. Свойство предварительного просмотра не требуется, если результаты уже являются картами Hero или Thumbnail. Если вы используете вложение предварительного просмотра, оно должно быть либо карточкой Hero, либо Thumbnail. Если не указано свойство предварительного просмотра, предварительный просмотр карты не удается, и ничего не отображается.
 
 ### <a name="response-example"></a>Пример ответа
 
@@ -313,7 +313,7 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 
 ## <a name="default-query"></a>Запрос по умолчанию
 
-Если вы `initialRun` заданы в манифесте, Microsoft Teams выдает запрос по умолчанию при первом открываемом пользователем `true` расширении обмена сообщениями.  Служба может отвечать на этот запрос набором предварительно заполненных результатов. Это полезно, когда команда поиска требует проверки подлинности или конфигурации, отображая недавно просмотримые элементы, избранное или любую другую информацию, которая не зависит от ввода пользователя.
+Если вы заданы в манифесте, Microsoft Teams запрос по умолчанию при первом открываемом пользователем `initialRun` `true` расширении обмена сообщениями.  Служба может отвечать на этот запрос набором предварительно заполненных результатов. Это полезно, когда команда поиска требует проверки подлинности или конфигурации, отображая недавно просмотримые элементы, избранное или любую другую информацию, которая не зависит от ввода пользователя.
 
 Запрос по умолчанию имеет ту же структуру, что и любой обычный запрос пользователя, при этом поле заказано и заказано, как показано `name` `initialRun` в следующем `value` `true` объекте:
 
@@ -342,8 +342,8 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 
 | Имя образца           | Описание | .NET    | Node.js   |   
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения обмена сообщениями teams| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
-|Командный поиск расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
+|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="see-also"></a>См. также
 

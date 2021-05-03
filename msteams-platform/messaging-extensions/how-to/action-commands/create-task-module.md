@@ -30,7 +30,7 @@ ms.locfileid: "52075593"
 |`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
-|`from.aadObjectId`| ID объекта Azure Active Directory пользователя, отправив запрос. |
+|`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.channel.id`| ID канала (если запрос был сделан в канале). |
 |`channelData.team.id`| Team ID (если запрос был сделан в канале). |
@@ -80,7 +80,7 @@ ms.locfileid: "52075593"
 |`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
-|`from.aadObjectId`| ID объекта Azure Active Directory пользователя, отправив запрос. |
+|`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`ChannelData.legacy. replyToId`| Получает или задает ID сообщения, на которое это сообщение является ответом. |
@@ -130,7 +130,7 @@ ms.locfileid: "52075593"
 |`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
-|`from.aadObjectId`| ID объекта Azure Active Directory пользователя, отправив запрос. |
+|`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`ChannelData.legacy. replyToId`| Получает или задает ID сообщения, на которое это сообщение является ответом. |
@@ -187,7 +187,7 @@ ms.locfileid: "52075593"
 |`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
-|`from.aadObjectId`| ID объекта Azure Active Directory пользователя, отправив запрос. |
+|`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.channel.id`| ID канала (если запрос был сделан в канале). |
 |`channelData.team.id`| Team ID (если запрос был сделан в канале). |
@@ -253,7 +253,7 @@ ms.locfileid: "52075593"
 |`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
-|`from.aadObjectId`| ID объекта Azure Active Directory пользователя, отправив запрос. |
+|`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.channel.id`| ID канала (если запрос был сделан в канале). |
 |`channelData.team.id`| Team ID (если запрос был сделан в канале). |
@@ -362,7 +362,7 @@ ms.locfileid: "52075593"
 |`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
-|`from.aadObjectId`| ID объекта Azure Active Directory пользователя, отправив запрос. |
+|`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`value.commandId` | Содержит ID вызываемой команды. |
@@ -628,7 +628,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
-В этом примере [используется пакет AdaptiveCards NuGet](https://www.nuget.org/packages/AdaptiveCards) в дополнение к SDK Bot Framework.
+В этом примере используется [пакет AdaptiveCards NuGet](https://www.nuget.org/packages/AdaptiveCards) в дополнение к SDK Bot Framework.
 
 ```csharp
 protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
@@ -941,8 +941,8 @@ private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
 
 | Имя образца           | Описание | .NET    | Node.js   |   
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения обмена сообщениями teams| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
-|Командный поиск расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
+|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="see-also"></a>См. также
 

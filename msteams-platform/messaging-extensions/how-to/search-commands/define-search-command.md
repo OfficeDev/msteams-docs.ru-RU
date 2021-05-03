@@ -1,7 +1,7 @@
 ---
 title: Определение команд поиска расширения обмена сообщениями
 author: clearab
-description: Определение команд поиска расширения обмена сообщениями для приложений Microsoft Teams.
+description: Определение команд поиска расширения обмена сообщениями для Microsoft Teams приложений.
 ms.topic: conceptual
 ms.author: anclear
 ms.openlocfilehash: 19f1fdf7bd4efdbb0de11d1abad341ec24bc27bd
@@ -43,7 +43,7 @@ ms.locfileid: "51696809"
 
 **Создание команды поиска**
 
-1. Откройте **App Studio** от клиента Microsoft Teams и выберите вкладку Редактор **Манифеста.**
+1. Откройте **App Studio** Microsoft Teams клиента и выберите вкладку Редактор **Манифеста.**
 1.  Если вы уже создали пакет приложений в **App Studio,** выберите из списка. Если вы не создали пакет приложений, импортировать существующий пакет.
 1. После импорта пакета приложений выберите **расширения обмена сообщениями** в статье **Capabilities.** Вы получите всплывающее окно, чтобы настроить расширение обмена сообщениями.
 1. Выберите **Настройка в** окне, чтобы включить расширение обмена сообщениями в приложение. На следующем изображении отображается страница расширения обмена сообщениями: 
@@ -80,9 +80,9 @@ ms.locfileid: "51696809"
 | `description` | Это свойство — текст справки, указывающий, что делает эта команда. Это значение отображается в пользовательском интерфейсе. | Да | 1.0 |
 | `type` | Это свойство должно быть `query` . | Нет | 1.4 |
 |`initialRun` | Если это свойство заданной для **true,** это указывает на то, что эта команда должна быть выполнена, как только пользователь выберет эту команду в пользовательском интерфейсе. | Нет | 1.0 |
-| `context` | Это свойство — необязательный массив значений, определяя контекст, в котором доступно действие поиска. Возможные значения — `message`, `compose` и `commandBox`. По умолчанию `["compose", "commandBox"]` . | Нет | 1.5 |
+| `context` | Это свойство — необязательный массив значений, определяя контекст, в котором доступно действие поиска. Возможные значения — `message`, `compose` и `commandBox`. Значение по умолчанию: `["compose", "commandBox"]`. | Нет | 1.5 |
 
-Необходимо добавить сведения о параметре поиска, который определяет текст, видимый пользователю в клиенте Teams.
+Необходимо добавить сведения о параметре поиска, который определяет текст, видимый пользователю в Teams клиенте.
 
 | Имя свойства | Назначение | Требуется? | Минимальная версия манифеста |
 |---|---|---|---|
@@ -126,8 +126,8 @@ ms.locfileid: "51696809"
 
 | Имя образца           | Описание | .NET    | Node.js   |   
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения обмена сообщениями teams| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
-|Командный поиск расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
+|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Следующий шаг
 

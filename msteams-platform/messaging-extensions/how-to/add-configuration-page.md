@@ -18,9 +18,9 @@ ms.locfileid: "52019827"
 
 ## <a name="code-sample"></a>Пример кода
 
-В командной странице "Поиск по auth Config" для примерных проектов в GitHub показано, как создавать расширения обмена сообщениями, включающие страницу конфигурации и проверку подлинности службы ботов. В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.
+В Teams в примере проектов по GitHub показано, как создавать расширения обмена сообщениями, включающие страницу конфигурации и проверку подлинности службы ботов. В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
 |-----------------|-----------------|-------------|--------------|
 | Строитель ботов | Создание расширений обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) | [View]( https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
 
