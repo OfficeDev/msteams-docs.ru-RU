@@ -4,12 +4,12 @@ description: Описывает параметры публикации Microsof
 ms.topic: conceptual
 author: KirtiPereira
 ms.author: surbhigupta
-ms.openlocfilehash: 81a266d0bdaf2a65651dc1beca171b72cf1a20a6
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: b321fee132b23556dcc8299cdbbf6fb5d6ccd3cf
+ms.sourcegitcommit: 60561c7cd189c9d6fa5e09e0f2b6c24476f2dff5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101898"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52230913"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 
@@ -42,9 +42,9 @@ ms.locfileid: "52101898"
 
 ## <a name="see-also"></a>См. также
 
-* [Microsoft 365 Программа соответствия требованиям приложений](/microsoft-365-app-certification/overview)
+* [Соответствие требованиям для приложений Microsoft 365](/microsoft-365-app-certification/overview)
 
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
-> [Создание пакета приложений](~/concepts/build-and-test/apps-package.md)
+> [Настройка параметров установки приложения по умолчанию](~/concepts/deploy-and-publish/add-default-install-scope.md)

@@ -4,12 +4,12 @@ description: Описывает правила, которые должны сл
 author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
-ms.openlocfilehash: b4b9260be2a92c3a9029acf89b2eadae60a8fc7a
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: df60cf9e4a173186fbacacc90621c2efb23ba17f
+ms.sourcegitcommit: 60561c7cd189c9d6fa5e09e0f2b6c24476f2dff5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101921"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52230927"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Microsoft Teams проверки хранения
 
@@ -31,6 +31,7 @@ ms.locfileid: "52101921"
 * Если ваше приложение является частью официального партнерства с Корпорацией Майкрософт, имя приложения должно быть первым (например, **Contoso Connector для Microsoft Teams).**
 * Не следует копировать имя приложения, перечисленного в магазине или другого предложения на коммерческом рынке.
 * Не должен содержать ненормативную или пренебожную лексику. Имя также не должно включать расовый или культурный нечувствительный язык.
+* Должно быть уникальным. Например, нельзя перечислить несколько приложений для разных регионов с одинаковым именем и функциональными возможностями.
 
 См. также: [4.0 Пакет приложения и список магазинов](#40-app-package-and-store-listing)
 

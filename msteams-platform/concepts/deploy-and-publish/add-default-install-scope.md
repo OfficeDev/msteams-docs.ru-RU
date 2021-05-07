@@ -4,18 +4,26 @@ description: Описывает, как указать параметры уст
 ms.topic: how-to
 localization_priority: Normal
 ms.author: surbhigupta
-ms.openlocfilehash: 0afcce50a4779421016c23c4ec4e3d25cc3401d1
-ms.sourcegitcommit: a732789190f59ec1f3699e8ad2f06387e8fe1458
+ms.openlocfilehash: 561a4f2910e703db5ffce6176f6177dfd661d2ce
+ms.sourcegitcommit: 60561c7cd189c9d6fa5e09e0f2b6c24476f2dff5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52058616"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52230934"
 ---
-# <a name="add-a-default-install-scope-and-group-capability"></a>Добавление области установки по умолчанию и возможности групповой установки
+# <a name="configure-default-install-options-for-your-microsoft-teams-app"></a>Настройка параметров установки по умолчанию для Microsoft Teams приложения
 
 Обычно приложение поддерживает несколько сценариев в Teams, но вы, возможно, разработали его с учетом определенных областей и возможностей. Например, если приложение предназначено в основном для использования в команде или канале, вы можете убедиться, что первый параметр установки, который пользователи видят в магазине, это **Добавление в команду.**
 
-![Добавление приложения](../../assets/images/compose-extensions/addanapp.png)
+:::row:::
+   :::column span="2":::
+
+![Добавление примера отсевов приложений](../../assets/images/compose-extensions/addanapp.png)
+
+   :::column-end:::
+   :::column span="2":::
+   :::column-end:::
+:::row-end:::
 
 Если основными возможностями вашего приложения является бот, вы также можете сделать ботом возможность по умолчанию, когда пользователь устанавливает приложение в команду.
 
@@ -65,4 +73,4 @@ ms.locfileid: "52058616"
 ## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
-> [Выбор способа распространения приложения](overview.md)
+> [Создание пакета приложений](~/concepts/build-and-test/apps-package.md)
