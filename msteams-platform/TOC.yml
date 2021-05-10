@@ -380,7 +380,7 @@
       href: concepts/build-and-test/test-data.md
     - name: Вкладки
       items:
-        - name: Отладка вкладки с помощью DevTools
+        - name: DevTools для вкладок Microsoft Teams
           href: tabs/how-to/developer-tools.md
     - name: Боты
       items:
@@ -396,44 +396,38 @@
           href: graph-api/rsc/test-resource-specific-consent.md
         - name: Тестовый файл JSON с согласием для конкретных ресурсов
           href: graph-api/rsc/test-rsc-json-file.md
-- name: Публикация приложения
+- name: Распространение приложения
   items:
+    - name: Обзор
+      href: concepts/deploy-and-publish/apps-publish-overview.md
     - name: Настройка параметров установки по умолчанию
       href: concepts/deploy-and-publish/add-default-install-scope.md
-    - name: Выбор способа распространения приложения
-      href: concepts/deploy-and-publish/overview.md
-    - name: Создание пакета приложений
+    - name: Создание пакета приложения
       href: concepts/build-and-test/apps-package.md
-    - name: Загрузка приложения для команды или пользователя
+    - name: Отправка пакета приложения
       href: concepts/deploy-and-publish/apps-upload.md
-    - name: Публикация в организации
-      href: /MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json
-    - name: Публикация в магазине "Teams" (AppSource)
+    - name: Публикация внутри организации
+      href: /MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
+    - name: Публикация в магазине Teams
       items:
-        - name: Понимание представления AppSource
+        - name: Обзор
           href: concepts/deploy-and-publish/appsource/publish.md
-        - name: Контрольный список перед отправкой
+        - name: Рекомендации по прохождению магазинной проверки
+          href: concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
+        - name: Создание учетной записи Центра партнеров
+          href: concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md
+        - name: Подготовка к отправке в магазин
           href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
-        - name: Контрольный список страниц сведений о приложении
-          href: concepts/deploy-and-publish/appsource/prepare/detail-page-checklist.md
-        - name: Контрольный список манифеста приложения
-          href: concepts/deploy-and-publish/appsource/prepare/app-manifest-checklist.md
-        - name: Часто провальные случаи
-          href: concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md
-        - name: Что делать после публикации вашего приложения
+        - name: Отправка приложения
+          href: /office/dev/store/add-in-submission-guide?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
+        - name: 'Устранение ошибок в случае, если отправка в магазин была отклонена'
+          href: concepts/deploy-and-publish/appsource/resolve-submission-issues.md
+        - name: Обслуживание и поддержка опубликованного приложения
           href: concepts/deploy-and-publish/appsource/post-publish/overview.md
-        - name: Программа сертификации приложений
-          href: concepts/deploy-and-publish/appsource/post-publish/application-certification.md
-- name: Ресурсы
+- name: Манифест
   items:
     - name: Схема манифеста приложения
       href: resources/schema/manifest-schema.md
-    - name: Локализация
-      items:
-        - name: Локализация приложения
-          href: concepts/build-and-test/apps-localization.md
-        - name: Схема локализации JSON
-          href: resources/schema/localization-schema.md
     - name: Общедоступная предварительная версия для разработчиков
       items:
         - name: Обзор
@@ -442,10 +436,20 @@
           href: resources/schema/manifest-schema-dev-preview.md
         - name: Функции
           href: resources/dev-preview/developer-preview-features.md
+- name: Ресурсы
+  items:
+    - name: Локализация
+      items:
+        - name: Локализация приложения
+          href: concepts/build-and-test/apps-localization.md
+        - name: Схема локализации JSON
+          href: resources/schema/localization-schema.md
     - name: Изменения полей вкладок
       href: resources/removing-tab-margins.md
     - name: Атрибут cookie SameSite (обновление 2020)
       href: resources/samesite-cookie-update.md
+    - name: Распространенные причины неудачной отправки в магазин
+      href: concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md
     - name: Участие в документации Teams
       href: resources/teams-contributor-reference.md
 - name: Поддержка и обратная связь
