@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 localization_priority: Normal
 keywords: deeplink teams deep link
-ms.openlocfilehash: eadd576debaa63586597bd8c7dcb27fb14aa6fb1
-ms.sourcegitcommit: d272fce50af0fa3e2de0094522f294141cae511c
+ms.openlocfilehash: ccad5c6cc8daa513b12185efa2ed57e02438fd89
+ms.sourcegitcommit: 20e623a82f9676dd036cf6a350dd480885e0ea2c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52278154"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300558"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -178,7 +178,7 @@ threadId: = "19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype",
 groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 }
 ```
-## <a name="deep-links-for-sharepoint-framework-tabs"></a>Глубокие ссылки для SharePoint Framework вкладок
+## <a name="deep-linking-for-sharepoint-framework-tabs"></a>Глубокая связь для SharePoint Framework вкладок
 
 Следующий формат глубокой ссылки можно использовать в карточке расширения бота, соединитетеля или обмена сообщениями: `https://teams.microsoft.com/l/entity/<AppId>/<EntityId>?webUrl=<entityWebUrl>/<EntityName>`
 
@@ -196,7 +196,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 Пример: https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&TaskList
 
-## <a name="deep-link-to-the-scheduling-dialog"></a>Глубокая ссылка на диалоговое окно планирования
+## <a name="deep-linking-to-the-scheduling-dialog"></a>Глубокая связь с диалогом планирования
 
 > [!NOTE]
 > Эта функция в настоящее время находится в предварительном просмотре разработчика.
@@ -233,7 +233,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ### <a name="generate-a-deep-link-to-a-chat"></a>Создание глубокой ссылки на чат
 
-| Глубокая ссылка | Format | Пример |
+| Глубокая ссылка | Формат | Пример |
 |-----------|--------|---------|
 | Сделать звуковой вызов | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&gt; | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com |
 | Сделать аудио- и видеозво | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&&gt; withvideo=true | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com&withvideo=true |
@@ -247,7 +247,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Пример имени | Описание | C# |Node.js|
+| Пример имени | Описание | C # |Node.js|
 |-------------|-------------|------|----|
 |Deep Link consuming Subentity ID  |Microsoft Teams пример приложения для демонстрации deeplink от бот-чата до вкладки, потребляя ID subentity.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
 
