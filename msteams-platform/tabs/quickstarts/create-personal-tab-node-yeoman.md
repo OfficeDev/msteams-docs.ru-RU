@@ -1,74 +1,74 @@
 ---
-title: Quickstart. Создайте настраиваемую личную вкладку с Node.js и генератором Yeoman для Microsoft Teams
+title: 'Быстрый старт: Создайте пользовательскую личную вкладку с Node.js и генератором Yeoman для Microsoft Teams'
 author: laujan
-description: Руководство по созданию личной вкладки с генератором Yeoman для Microsoft Teams.
+description: Краткое руководство по созданию личной вкладке с генератором Yeoman для Microsoft Teams.
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 30143fa3c84a68ae6c34176b252badaa4cef9613
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 88ad05aacaed69d695bc918e3e8a44ec18e560ae
+ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019554"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52566611"
 ---
-# <a name="quickstart-create-a-custom-personal-tab-with-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Quickstart. Создайте настраиваемую личную вкладку с Node.js и генератором Yeoman для Microsoft Teams
+# <a name="create-a-custom-personal-tab-using-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Создайте пользовательскую личную вкладку, Node.js и генератор Yeoman для Microsoft Teams
 
 >[!NOTE]
->Этот quickstart следует шагам, описанным в приложении [Build Your First Microsoft Teams App Wiki,](https://github.com/OfficeDev/generator-teams/wiki/Build-Your-First-Microsoft-Teams-App) найденном в репозитории Microsoft OfficeDev GitHub.
+>Этот быстрый старт следует шагам, изложенным [в приложении Microsoft Teams в вики,](https://github.com/OfficeDev/generator-teams/wiki/Build-Your-First-Microsoft-Teams-App) найденном в репозитории Microsoft OfficeDev GitHub microsoft OfficeDev.
 
-В этом quickstart мы создам настраиваемую личную вкладку с помощью генератора [Teams Yeoman.](https://github.com/OfficeDev/generator-teams/wiki/Build-Your-First-Microsoft-Teams-App) Мы также загрузим приложение в Team.
+В этом quickstart мы будем ходить через создание пользовательских личных вкладку с [помощью Teams генератора Yeoman](https://github.com/OfficeDev/generator-teams/wiki/Build-Your-First-Microsoft-Teams-App). Мы также загрузим приложение в Team.
 
 [!INCLUDE [node-js-yeoman-prereq](~/includes/tabs/node-js-yeoman-prereq.md)]
 
-**Хотите создать настраиваемую или статическую вкладку?**
+**Создание настраиваемой или статической вкладки**
 
-Используйте клавиши со стрелками, чтобы выбрать статическую вкладку.
+Используйте клавиши стрелки, чтобы выбрать статическую вкладку.
 
 >[!IMPORTANT]
->Компонент пути *yourDefaultTabNameTab,* на который ссылается в этом quickstart,  это значение, которое вы ввели в генератор для имени вкладки по умолчанию плюс слово *Tab*.
+>Компонент пути *yourDefaultTabNameTab*, на который ссылается в этом quickstart, это значение, которое вы ввели в генератор *для имени вкладки по умолчанию* плюс слово *Tab*.
 >
 >Например: DefaultTabName: *MyTab*  =>  */MyTabTab/*
 
-## <a name="create-your-personal-tab"></a>Создание личной вкладки
+## <a name="create-your-personal-tab"></a>Создайте свою личную вкладку
 
-Чтобы добавить личную вкладку в это приложение, вы создайте страницу контента и обновим существующие файлы:
+Чтобы добавить личную вкладку в это приложение, вы создадите страницу содержимого и обновит существующие файлы:
 
-- В редакторе кода создайте новый HTML-файлpersonal.htm **l** и добавьте следующую разметку:
+- В редакторе кода создайте новый HTML-файл, **personal.html** и добавьте следующую разметку:
 
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            <!-- Todo: add your a title here -->
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- inject:css -->
-        <!-- endinject -->
-    </head>
-        <body>
-            <h1>Personal Tab</h1>
-            <p><img src="/assets/icon.png"></p>
-            <p>This is your personal tab!</p>
-        </body>
-</html>
-```
+    ```html
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>
+                <!-- Todo: add your a title here -->
+            </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- inject:css -->
+            <!-- endinject -->
+        </head>
+            <body>
+                <h1>Personal Tab</h1>
+                <p><img src="/assets/icon.png"></p>
+                <p>This is your personal tab!</p>
+            </body>
+    </html>
+    ```
 
-- Сохраните **personal.html** в **веб-папке** приложения:
+- Сохранить **personal.html** в веб-папке **приложения:**
 
-```bash
-./src/app/web/<yourDefaultTabNameTab>/personal.html
-```
+    ```bash
+    ./src/app/web/<yourDefaultTabNameTab>/personal.html
+    ```
 
 - Откройте **manifest.jsв** редакторе кода:
 
-```bash
-./src/manifest/manifest.json/
-```
+    ```bash
+    ./src/manifest/manifest.json/
+    ```
 
-Добавьте следующее в пустой массив `staticTabs` () и `staticTabs":[]` добавьте следующий объект JSON:
+Добавьте следующее в `staticTabs` пустой массив `staticTabs":[]` () и добавьте следующий объект JSON:
 
 ```json
 {
@@ -81,56 +81,61 @@ ms.locfileid: "52019554"
 
 ```
 
-Не забудьте обновить компонент **пути "contentURL"** **yourDefaultTabNameTab** с фактическим именем вкладки.
+Не забудьте обновить **компонент пути "contentURL"** **yourDefaultTabNameTab с** вашим фактическим именем вкладки.
 
-- Сохраните обновленные **manifest.js.**
+- Сохраните обновленный **manifest.jsна**.
 
-- Ваша страница контента должна быть подана в IFrame. Откройте **Tab.ts в** редакторе кода:
+- Ваша страница содержимого должна быть подана в IFrame. Откройте **Tab.ts** в редакторе кода:
 
- ```bash
-./src/app/<yourDefaultTabNameTab>/<yourDefaultTabNameTab>.ts
-```
+    ```bash
+    ./src/app/<yourDefaultTabNameTab>/<yourDefaultTabNameTab>.ts
+    ```
 
-- Добавьте в список декораторов IFrame следующее:
+- Добавьте следующее в список декораторов IFrame:
 
-```typescript
- @PreventIframe("/<yourDefaultAppName>TabNameTab>/personal.html")
-```
+    ```typescript
+     @PreventIframe("/<yourDefaultAppName>TabNameTab>/personal.html")
+    ```
 
-- Обязательно сохраните обновленный **файл Tab.ts.** Код вкладки завершен.
+- Убедитесь в том, чтобы сохранить **обновленный файл Tab.ts.** Код вкладки завершен.
 
 ## <a name="build-and-run-your-application"></a>Создание и запуск приложения
 
-Откройте командную подсказку в каталоге проектов для выполнения следующих задач.
+Откройте командный запрос в каталоге проекта для выполнения следующих задач.
 
 [!INCLUDE [node-js-yeoman-gulp-tasks](~/includes/tabs/node-js-yeoman-gulp-tasks.md)]
 
-Чтобы просмотреть личную вкладку, перейдите к `http://localhost:3007/<yourDefaultAppNameTab>/personal.html`
+Чтобы просмотреть вашу личную вкладку, перейдите на `http://localhost:3007/<yourDefaultAppNameTab>/personal.html`
 
->![снимок экрана личной вкладки](/microsoftteams/platform/assets/images/tab-images/personalTab.PNG)
+>![личный скриншот вкладки](/microsoftteams/platform/assets/images/tab-images/personalTab.PNG)
 
-## <a name="establish-a-secure-tunnel-to-your-tab"></a>Создание безопасного туннеля на вкладке
+## <a name="establish-a-secure-tunnel-to-your-tab"></a>Создание безопасного туннеля для вкладки
 
-Microsoft Teams — это полностью облачный продукт, который требует, чтобы содержимое вкладок было доступно в облаке с помощью конечных точек HTTPS. Команды не позволяют локальному размещению, поэтому необходимо либо опубликовать вкладку на общедоступный URL-адрес, либо использовать прокси-сервер, который будет подвергать локальный порт URL-адресу, относящаяся к Интернету.
+Microsoft Teams является полностью облачным продуктом и требует, чтобы содержимое вкладок было доступно из облака с помощью конечных точек HTTPS. Teams не позволяет локального хостинга, поэтому, вам нужно либо опубликовать свою вкладку на общедоступный URL или использовать прокси, который будет подвергать ваш местный порт в интернет-адрес.
 
-Чтобы протестировать расширение вкладки, вы будете использовать [ngrok,](https://ngrok.com/docs)встроенный в это приложение. Ngrok — это средство обратного прокси-программного обеспечения, которое создаст туннель для общедоступных конечных точек HTTPS локального веб-сервера. Веб-точки сервера будут доступны во время текущего сеанса на локальном компьютере. Когда машина отключена или заснул, служба больше не будет доступна.
+Чтобы проверить расширение вкладок, вы будете использовать [ngrok](https://ngrok.com/docs), который встроен в это приложение. Ngrok является обратным прокси программное обеспечение инструмент, который создаст туннель для локально работает веб-сервера общедоступных https конечных точек. Веб-конечные точки сервера будут доступны в течение текущего сеанса на локальной машине. Когда машина выключена или засыпает, служба больше не будет доступна.
 
-В командной подсказке выйдите из localhost и введите следующее:
+В вашем командном запросе выйдите из локального хостинга и введите следующее:
 
 ```bash
 gulp ngrok-serve
 ```
 
 > [!IMPORTANT]
-> После того как вкладка была загружена в microsoft teams с помощью *ngrok* и успешно сохранена, ее можно просмотреть в Teams до окончания сеанса туннеля.
+> После того, как вкладка была загружена в команды Майкрософт, **через ngrok,** и успешно сохранена, вы можете просмотреть ее в Teams до окончания сеанса туннеля.
 
-## <a name="upload-your-application-to-teams"></a>Отправка приложения в Teams
+## <a name="upload-your-application-to-teams"></a>Upload заявление в Teams
 
-- Откройте клиент Microsoft Teams. Если вы используете [веб-версию,](https://teams.microsoft.com) вы можете проверить исходный код с помощью средств разработчика [браузера.](~/tabs/how-to/developer-tools.md)
-- В панели *YourTeams* слева выберите меню рядом с командой, которую вы используете для тестирования вкладки, и `...` выберите команду **Manage.**
-- На главной панели выберите **Приложения** из панели вкладок и выберите **Загрузите** пользовательское приложение, расположенное в нижнем правом углу страницы.
-- Откройте каталог проектов, просмотрите **папку ./package,** выберите папку zip, щелкните правой кнопкой мыши и выберите **Открыть**. Вкладка будет загружена в Teams.
+- Откройте Microsoft Teams клиента. Если вы [используете веб-версию,](https://teams.microsoft.com) вы можете проверить свой передний код с помощью инструментов [разработчика браузера.](~/tabs/how-to/developer-tools.md)
+- В **панели YourTeams** слева выберите меню рядом с командой, `...` которую вы используете, чтобы протестировать вкладку и выбрать **команду Manage.**
+- В основной панели **выберите Приложения** из панели **вкладок Upload выбрать специальное** приложение, расположенное в правом нижнем углу страницы.
+- Откройте каталог проекта, просмотрите папку **./package,** выберите папку на молнии, нажмите правой кнопкой мыши и выберите **Open.** Ваша вкладка будет загружаться в Teams.
 
 ## <a name="view-your-personal-tabs"></a>Просмотр личных вкладок
 
-В области navbar, расположенной слева от клиента Teams, выберите меню и выберите `...` приложение из списка.
+В навигационной панели, расположенной слева от Teams, `...` выберите меню и выберите приложение из списка.
+
+## <a name="next-step"></a>Следующий шаг
+
+> [!div class="nextstepaction"]
+> [Создание личной вкладки с помощью ASP.NETCore](~/tabs/quickstarts/create-personal-tab-dotnet-core.md)

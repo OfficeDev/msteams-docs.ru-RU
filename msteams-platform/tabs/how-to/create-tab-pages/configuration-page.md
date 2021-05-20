@@ -1,29 +1,29 @@
 ---
 title: Создать страницу конфигурации
 author: laujan
-description: создание страницы конфигурации
-keywords: команды вкладки группового канала настраиваются
+description: как создать страницу конфигурации
+keywords: команды вкладки группы канал настраиваемый
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 0866d11442f79cee33d4454dbd4ed4d6b4b1a840
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: aeab1cf96d1e875db79d9143fefd0e46348f585a
+ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019596"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52566686"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
-Страница конфигурации — это особый тип [страницы контента.](content-page.md) Пользователи настраивают некоторые аспекты приложения Microsoft Teams с помощью страницы конфигурации и используют эту конфигурацию в следующем:
+Страница конфигурации является особым типом страницы [содержимого.](content-page.md) Пользователи настраивают некоторые аспекты приложения Microsoft Teams используя страницу конфигурации и используют эту конфигурацию как часть следующего:
 
-* Вкладка чата канала или группы — сбор сведений от пользователей и отображение страницы `contentUrl` контента.
-* Расширение [обмена сообщениями](~/messaging-extensions/what-are-messaging-extensions.md)
-* [Соединители Office 365](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md)
+* Вкладка канала или группы чата: Соберите информацию от пользователей и `contentUrl` установите страницу содержимого для отображения.
+* Расширение [обмена сообщениями](~/messaging-extensions/what-are-messaging-extensions.md).
+* Разъем [Office 365 США](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md).
 
-## <a name="configuring-a-channel-or-group-chat-tab"></a>Настройка вкладки чата канала или группы
+## <a name="configuring-a-channel-or-group-chat-tab"></a>Настройка вкладки канала или группового чата
 
-Приложение должно ссылаться на [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) клиента Microsoft Teams JavaScript и вызывать `microsoft.initialize()` . Кроме того, используемые URL-адреса должны быть защищены конечными точками HTTPS и доступны в облаке. 
+Приложение должно ссылаться на [Microsoft Teams JavaScript SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) и звонить. `microsoft.initialize()` Кроме того, используемые URL-адреса должны быть защищены конечных точек HTTPS и доступны из облака. 
 
 ### <a name="example"></a>Пример
 
@@ -31,7 +31,7 @@ ms.locfileid: "52019596"
 
 <img src="~/assets/images/tab-images/configuration-page.png" alt="Configuration page" width="400"/>
 
-Соответствующий код страницы конфигурации показан в следующем разделе:
+Соответствующий код страницы конфигурации отображается в следующем разделе:
 
 ```html
 <head>
@@ -88,44 +88,44 @@ ms.locfileid: "52019596"
 ...
 ```
 
-Выберите **кнопку Выберите серый** или **красный** на странице конфигурации, чтобы отобразить содержимое вкладки с серым или красным значком. 
+Выберите **кнопку Select Gray** или Select **Red** на странице конфигурации, чтобы отобразить содержимое вкладки серым или красным значком. 
 
-На следующем изображении отображается содержимое вкладки с серым значком:
+Следующее изображение отображает содержимое вкладки с серым значком:
 
 <img src="~/assets/images/tab-images/configure-tab-with-gray.png" alt="Configure tab with select gray" width="400"/>
 
-На следующем изображении отображается содержимое вкладки с красным значком:
+Следующее изображение отображает содержимое вкладки с красным значком:
 
 <img src="~/assets/images/tab-images/configure-tab-with-red.png" alt="Configure tab with select red" width="400"/>
 
-Выбор относительной кнопки вызывает или `saveGray()` вызывает `saveRed()` следующее:
+Выбор относительной кнопки вызывает `saveGray()` либо или , и вызывает `saveRed()` следующее:
 
-1. `settings.setValidityState(true)`Установлено, что это верно.
-1. Запускается `microsoftTeams.settings.registerOnSaveHandler()` обработник событий.
-1. Кнопка **Сохранить** на странице конфигурации приложения, загруженная в Teams, включена.
+1. Установлен `settings.setValidityState(true)` на реальность.
+1. Обработчик `microsoftTeams.settings.registerOnSaveHandler()` событий срабатывает.
+1. Кнопка **Сохранения** на странице конфигурации приложения, загруженная в Teams, включена.
 
-Код страницы конфигурации сообщает teams, что требования к конфигурации удовлетворены и установка может продолжиться. Когда пользователь выбирает **Сохранить,** параметры заданы, `settings.setSettings()` как определено `Settings` интерфейсом. Дополнительные сведения см. в [интерфейсе Settings.](/javascript/api/@microsoft/teams-js/_settings?view=msteams-client-js-latest&preserve-view=true) На последнем шаге `saveEvent.notifySuccess()` вызвано, чтобы указать, что URL-адрес контента успешно разрешен.
+Код страницы конфигурации информирует Teams, что требования к конфигурации удовлетворены и установка может продолжиться. Когда пользователь выбирает **Сохранить**, параметры устанавливаются, `settings.setSettings()` как это определено `Settings` интерфейсом. Для получения дополнительной информации [с Параметры м.](/javascript/api/@microsoft/teams-js/_settings?view=msteams-client-js-latest&preserve-view=true) На последнем этапе `saveEvent.notifySuccess()` вызывается указать, что URL-адрес содержимого успешно решен.
 
 >[!NOTE]
 >
->* Если вы регистрируете обработчивель сохранения с помощью, он должен вызвать вызов или указать `microsoftTeams.settings.registerOnSaveHandler()` `saveEvent.notifySuccess()` результат `saveEvent.notifyFailure()` конфигурации.
->* Если обработник сохранения не регистрируется, вызов делается автоматически, когда пользователь `saveEvent.notifySuccess()` выбирает **Сохранить**.
+>* При регистрации обработчика сохранения `microsoftTeams.settings.registerOnSaveHandler()` с помощью обратного вызова `saveEvent.notifySuccess()` необходимо `saveEvent.notifyFailure()` вызвать или указать результат конфигурации.
+>* Если вы не регистрируете обработчик сохранения, `saveEvent.notifySuccess()` вызов делается автоматически, когда пользователь выбирает **Сохранить**.
 
-### <a name="get-context-data-for-your-tab-settings"></a>Получите контекстные данные для параметров вкладки
+### <a name="get-context-data-for-your-tab-settings"></a>Получить контекстные данные для настроек вкладок
 
-Чтобы отображать соответствующее содержимое, вкладке может быть нужна контекстная информация. Контекстная информация еще больше повышает привлекательность вкладки, предоставляя более настраиваемый пользовательский интерфейс.
+Чтобы отображать соответствующее содержимое, вкладке может быть нужна контекстная информация. Контекстная информация еще больше повышает привлекательность вашей вкладки, предоставляя более индивидуальный пользовательский интерфейс.
 
-Дополнительные сведения о свойствах, используемых для конфигурации вкладок, см. в [интерфейсе Context.](/javascript/api/@microsoft/teams-js/context?view=msteams-client-js-latest&preserve-view=true) Собирайте значения переменных данных контекста следующими способами:
+Для получения дополнительной информации о свойствах, используемых для конфигурации вкладок, [см.](/javascript/api/@microsoft/teams-js/context?view=msteams-client-js-latest&preserve-view=true) Соберите значения переменных контекстных данных следующими двумя способами:
 
-1. Вставьте в манифесте строки строки URL-адресов. `configurationURL`
+1. Вставьте держатели строк URL-запросов в `configurationURL` манифесте.
 
-1. Используйте метод [Teams SDK.](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) `microsoftTeams.getContext((context) =>{})`
+1. Используйте [Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) `microsoftTeams.getContext((context) =>{})` SDK.
 
-#### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте местообладатели в `configurationUrl`
+#### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте держатели в `configurationUrl`
 
-Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например:
+Добавьте в базу держатели контекстных `configurationUrl` интерфейсов. Пример:
 
-##### <a name="base-url"></a>Базовый URL-адрес
+##### <a name="base-url"></a>Базовый URL
 
 ```json
 ...
@@ -133,7 +133,7 @@ ms.locfileid: "52019596"
 ...
 ```
 
-#### <a name="base-url-with-query-strings"></a>Базовый URL-адрес со строками запросов
+#### <a name="base-url-with-query-strings"></a>Базовый URL со строками запросов
 
 ```json
 ...
@@ -141,7 +141,7 @@ ms.locfileid: "52019596"
 ...
 ```
 
-После загрузки страницы Teams обновляет местообладатели строки запросов соответствующими значениями. Включай логику на странице конфигурации для получения и использования этих значений. Дополнительные сведения о работе со строками запросов URL-адресов см. в [странице URLSearchParams в](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) веб-docs MDN. В следующем примере описывается способ извлечения значения из `configurationUrl` свойства:
+После загрузки страницы веб-Teams строки запросов с соответствующими значениями. Включите логику в страницу конфигурации для получения и использования этих значений. Для получения дополнительной информации о работе со строками [запросов URL см.](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) В следующем примере описывается способ извлечения значения из `configurationUrl` свойства:
 
 ```html
 <script>
@@ -156,9 +156,9 @@ document.write(getId());
 </script>
 ```
 
-### <a name="use-the-getcontext-function-to-retrieve-context"></a>Использование `getContext()` функции для получения контекста
+### <a name="use-the-getcontext-function-to-retrieve-context"></a>Используйте `getContext()` функцию для извлечения контекста
 
-Функция `microsoftTeams.getContext((context) => {})` извлекает интерфейс [Context при](/javascript/api/@microsoft/teams-js/context?view=msteams-client-js-latest&preserve-view=true) вызове. Добавьте эту функцию на страницу конфигурации для получения значений контекста:
+Функция `microsoftTeams.getContext((context) => {})` получает интерфейс Контекста при [вызовах.](/javascript/api/@microsoft/teams-js/context?view=msteams-client-js-latest&preserve-view=true) Добавьте эту функцию на страницу конфигурации для получения значений контекста:
 
 ```html
 <!-- `userPrincipalName` will render in the span with the id "user". -->
@@ -174,16 +174,16 @@ document.write(getId());
 ...
 ```
 
-## <a name="context-and-authentication"></a>Контекст и проверка подлинности
+## <a name="context-and-authentication"></a>Контекст и аутентификация
 
- Проверка подлинности перед разрешением пользователю настроить приложение. В противном случае содержимое может включать источники, у них есть протоколы проверки подлинности. Дополнительные сведения см. в вкладке Проверка подлинности пользователя [на вкладке Microsoft Teams.](~/tabs/how-to/authentication/auth-flow-tab.md) Используйте контекстные сведения для создания запросов на проверку подлинности и URL-адресов страниц авторизации.
+ Аутентичность, прежде чем разрешить пользователю настроить приложение. В противном случае содержимое может включать источники, в которые есть протоколы проверки подлинности. Для получения дополнительной информации [см Microsoft Teams.](~/tabs/how-to/authentication/auth-flow-tab.md) Используйте контекстную информацию для построения URL-адресов запросов на проверку подлинности и авторизации страниц.
 Убедитесь, что все домены, используемые на страницах вкладок, перечислены в `manifest.json` `validDomains` массиве и массиве.
 
 ## <a name="modify-or-remove-a-tab"></a>Изменение или удаление вкладки
 
-Поддерживаемые параметры удаления дополнительно уточняют пользовательский интерфейс. Задайте свойству манифеста свойство , которое позволяет пользователям изменять, перенастроять или переименовывать `canUpdateConfiguration` `true` вкладку группы или канала. Кроме того, указать, что происходит с контентом при удалении вкладки, включив страницу параметры удаления в приложение и установив значение для свойства `removeUrl` в  `setSettings()` конфигурации. Пользователь может удалить вкладки Personal, но не может изменить их. Дополнительные сведения см. в [странице Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md).
+Поддерживаемые варианты удаления еще больше уточняют пользовательский интерфейс. Установите свойство вашего `canUpdateConfiguration` `true` манифеста, чтобы пользователи могли изменять, перенастраивать или переименовывать вкладку группы или канала. Кроме того, укажите, что происходит с содержимым при удалении вкладки, включив страницу параметров удаления в приложение и установив `removeUrl` значение для свойства в  `setSettings()` конфигурации. Пользователь может удалить Личные вкладки, но не может изменить их. Для получения дополнительной информации [см. Создайте страницу удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md).
 
-Конфигурация Microsoft Teams setSettings() для страницы удаления:
+Microsoft Teams setSettings () конфигурация для удаления страницы:
 
 ```javascript
 microsoftTeams.settings.setSettings({
@@ -197,4 +197,4 @@ microsoftTeams.settings.setSettings({
 
 ## <a name="mobile-clients"></a>Мобильные приложения
 
-Если вы хотите, чтобы вкладка канала или группы появлялась на мобильных клиентах Teams, конфигурация должна иметь значение `setSettings()` `websiteUrl` для свойства. Дополнительные сведения см. [в руководстве по вкладке на мобильных устройствах.](~/tabs/design/tabs-mobile.md)
+Если вы решите, чтобы ваш канал или группа вкладка Teams мобильных клиентов, `setSettings()` конфигурация должна иметь значение для `websiteUrl` свойства. Для получения дополнительной информации, [см. руководство для вкладок на мобильном телефоне](~/tabs/design/tabs-mobile.md).

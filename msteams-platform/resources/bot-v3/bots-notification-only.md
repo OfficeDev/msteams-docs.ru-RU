@@ -1,35 +1,35 @@
 ---
 title: Боты только для уведомлений
-description: Описывает, какие только уведомления боты находятся в Microsoft Teams
-keywords: уведомление о ботах teams
+description: Описывает, какие боты только для уведомлений находятся в Microsoft Teams
+keywords: команды ботов уведомления
 ms.topic: conceptual
 localization_priority: Normal
 ms.date: 01/29/2020
-ms.openlocfilehash: 42a0b9acecbc1821ea492cb6c850c7a9b11bbbfe
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 3de462f73733f5f7cf223444ffe6deeb53faaaaa
+ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019764"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52566763"
 ---
 # <a name="notification-only-bots-in-microsoft-teams"></a>Боты только для уведомлений в Microsoft Teams
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-Если единственная цель бота — доставить уведомление пользователям и не является разговорным, вы можете включить поле `isNotificationOnly` в манифесте приложения. Это приводит к следующим изменениям:
+Если единственной целью бота является доставка уведомлений пользователям и не является разговорной, вы можете включить `isNotificationOnly` поле в манифесте приложения. Это приводит к следующим изменениям:
 
-* Пользователи не могут отправлять сообщения только для уведомления бота.
-* Пользователи не @mention бота.
+* Пользователи не могут отправить сообщение только для уведомлений бота.
+* Пользователи не @mention с ботом.
 
 > [!NOTE]
-> Приложения только для ботов будут всплыть в личном подносе приложения в обоих случаях: `isNotificationOnly: true` или `isNotificationOnly: false` .
+> Приложения только для ботов будут всплывать в подносе личного приложения в обоих случаях: `isNotificationOnly: true` или `isNotificationOnly: false` .
 
 ## <a name="app-manifest"></a>Манифест приложения
 
-Чтобы включить это, заданной `isNotificationOnly` `true` для .
+Чтобы включить это, `isNotificationOnly` установите на `true` .
 
 > [!NOTE]
-> Следует помнить, что значение `isNotificationOnly` boolean , а не строка.
+> Имейте в виду, что `isNotificationOnly` значение boolean, а не строка.
 
 ```json
 {
@@ -50,4 +50,4 @@ ms.locfileid: "52019764"
 
 ## <a name="best-practices-and-limitations"></a>Рекомендации и ограничения
 
-* Только для уведомлений боты используют проактивные сообщения для общения с пользователем. Дополнительные [сведения см. в материале Proactive messaging for bots.](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md)
+* Боты только для уведомлений используют упреждающие сообщения для общения с пользователем. Для получения дополнительной информации [см.](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md)

@@ -61,8 +61,12 @@
       href: samples/app-templates.md
     - name: Готовые к работе соединители
       href: samples/shifts-wfm-connectors.md
-    - name: Установка Moodle LMS
-      href: resources/moodleInstructions.md
+    - name: Moodle LMS
+      items:
+        - name: Обзор
+          href: resources/moodle-overview.md
+        - name: Установка Moodle LMS
+          href: resources/moodleInstructions.md
     - name: Создание кнопки «Поделиться в Teams»
       href: concepts/build-and-test/share-to-teams.md
     - name: Добавление вкладки Teams в SharePoint
@@ -111,9 +115,9 @@
       href: task-modules-and-cards/task-modules/design-teams-task-modules.md
 - name: Инструменты и пакеты SDK
   items:
-    - name: "Наборы средств Teams для Visual\_Studio\_Code"
+    - name: Наборы средств Teams для Visual Studio Code
       href: toolkit/visual-studio-code-overview.md
-    - name: "Наборы средств Teams для Visual\_Studio"
+    - name: Наборы средств Teams для Visual Studio
       href: toolkit/visual-studio-overview.md
     - name: Генератор Yeoman для Teams (GitHub)
       href: 'https://github.com/pnp/generator-teams'
@@ -285,7 +289,7 @@
       href: webhooks-and-connectors/how-to/add-incoming-webhook.md
     - name: Создание исходящего веб-перехватчика
       href: webhooks-and-connectors/how-to/add-outgoing-webhook.md
-    - name: "Создание соединителя Office\_365"
+    - name: Создание соединителя Office 365
       href: webhooks-and-connectors/how-to/connectors-creating.md
     - name: Отправка сообщений соединителям и веб-перехватчикам
       href: webhooks-and-connectors/how-to/connectors-using.md
@@ -337,7 +341,7 @@
           href: tabs/how-to/authentication/auth-silent-aad.md
         - name: Использование проверки подлинности SSO
           href: tabs/how-to/authentication/auth-aad-sso.md
-        - name: "Добавление SSO с использованием расширения набора средств Teams для Visual\_Studio\_Code"
+        - name: Добавление SSO с использованием расширения набора средств Teams для Visual Studio Code
           href: toolkit/visual-studio-code-tab-sso.md
     - name: Боты
       items:

@@ -1,18 +1,18 @@
 ## <a name="update-your-application"></a>Обновление приложения
 
-### <a name="_layoutcshtml"></a>_Layout. cshtml
+### <a name="_layoutcshtml"></a>_Layout.cshtml
 
-Чтобы вкладка отображалась в Teams, необходимо включить **клиентский пакет SDK Microsoft Teams** для `microsoftTeams.initialize()` JavaScript и включить вызов после загрузки страницы. Это способ общения вкладки и приложения teams:
+Для отображения вкладки в Teams вы должны **включить Microsoft Teams JavaScript клиента SDK** и включить вызов `microsoftTeams.initialize()` после загрузки страницы. Вот как ваша вкладка и Teams приложение общаются:
 
-- Перейдите к **общей** папке, откройте **_layout. cshtml**и добавьте следующий раздел " `<head>` Теги":
+- Перейдите в **общую** папку, **откройте _Layout.cshtml** и добавьте следующее в `<head>` раздел тегов:
 
-```html
-`<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>`
-`<script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>`
-```
+    ```html
+    `<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>`
+    `<script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>`
+    ```
 
-### <a name="personaltabcshtml"></a>Персоналтаб. cshtml
+### <a name="personaltabcshtml"></a>PersonalTab.cshtml
 
-Откройте **персоналтаб. cshtml** и обновите внедренные `<script>` Теги с `microsoftTeams.initialize()`помощью вызова.
+Откройте **PersonalTab.cshtml и** обновите встроенные `<script>` теги, позвонив `microsoftTeams.initialize()` .
 
-Обязательно сохраните обновленный *персоналтаб. cshtml*.
+Убедитесь в том, чтобы сохранить **обновленный PersonalTab.cshtml**.
