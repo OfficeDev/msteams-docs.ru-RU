@@ -1,54 +1,54 @@
 ---
 title: Отправка и получение файлов от бота
-description: Описание отправки и получения файлов от бота
-keywords: командные файлы ботов отправляют получение
+description: Описывает, как отправлять и получать файлы от бота
+keywords: команды ботов файлы отправить получить
 ms.topic: how-to
 localization_priority: Normal
 ms.date: 05/20/2019
-ms.openlocfilehash: c5ee32d10e5a6adc5a08d1a0556a18be8367460a
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: f69a6ca9cfcdf3b1e559fbe8cf569accf3166f69
+ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020655"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52566483"
 ---
-# <a name="send-and-receive-files-through-your-bot"></a><span data-ttu-id="d616d-104">Отправка и получение файлов через бот</span><span class="sxs-lookup"><span data-stu-id="d616d-104">Send and receive files through your bot</span></span>
+# <a name="send-and-receive-files-through-your-bot"></a><span data-ttu-id="5a1bd-104">Отправка и получение файлов через бота</span><span class="sxs-lookup"><span data-stu-id="5a1bd-104">Send and receive files through your bot</span></span>
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-<span data-ttu-id="d616d-105">Существует два способа отправки файлов в бот и из него:</span><span class="sxs-lookup"><span data-stu-id="d616d-105">There are two ways to send files to and from a bot:</span></span>
+<span data-ttu-id="5a1bd-105">Существует два способа отправки файлов боту и от него:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-105">There are two ways to send files to and from a bot:</span></span>
 
-* <span data-ttu-id="d616d-106">Использование API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d616d-106">Using the Microsoft Graph APIs.</span></span> <span data-ttu-id="d616d-107">Этот метод работает для ботов во всех сферах в Teams:</span><span class="sxs-lookup"><span data-stu-id="d616d-107">This method works for bots in all scopes in Teams:</span></span>
+* <span data-ttu-id="5a1bd-106">Использование API-Graph Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-106">Using the Microsoft Graph APIs.</span></span> <span data-ttu-id="5a1bd-107">Этот метод работает для ботов во всех сферах Teams:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-107">This method works for bots in all scopes in Teams:</span></span>
   * `personal`
   * `channel`
   * `groupchat`
-* <span data-ttu-id="d616d-108">Использование API Teams.</span><span class="sxs-lookup"><span data-stu-id="d616d-108">Using the Teams APIs.</span></span> <span data-ttu-id="d616d-109">Эти файлы поддерживаются только в одном контексте:</span><span class="sxs-lookup"><span data-stu-id="d616d-109">These only support files in one context:</span></span>
+* <span data-ttu-id="5a1bd-108">Использование Teams API.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-108">Using the Teams APIs.</span></span> <span data-ttu-id="5a1bd-109">Эти файлы поддержки только в одном контексте:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-109">These only support files in one context:</span></span>
   * `personal`
 
-## <a name="using-the-microsoft-graph-apis"></a><span data-ttu-id="d616d-110">Использование API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d616d-110">Using the Microsoft Graph APIs</span></span>
+## <a name="using-the-microsoft-graph-apis"></a><span data-ttu-id="5a1bd-110">Использование API-Graph Майкрософт</span><span class="sxs-lookup"><span data-stu-id="5a1bd-110">Using the Microsoft Graph APIs</span></span>
 
-<span data-ttu-id="d616d-111">Вы можете отправлять сообщения с вложениями карт, ссылаясь на существующие файлы SharePoint с помощью API Microsoft Graph для [OneDrive и SharePoint.](/onedrive/developer/rest-api/)</span><span class="sxs-lookup"><span data-stu-id="d616d-111">You can post messages with card attachments referencing existing SharePoint files using the Microsoft Graph APIs for [OneDrive and SharePoint](/onedrive/developer/rest-api/).</span></span> <span data-ttu-id="d616d-112">Использование API graph требует получения доступа к папке OneDrive пользователя (для и файлов) или файлам в каналах группы (для файлов) через стандартный поток авторизации `personal` `groupchat` `channel` OAuth 2.0.</span><span class="sxs-lookup"><span data-stu-id="d616d-112">Using the Graph APIs requires obtaining access to a user's OneDrive folder (for `personal` and `groupchat` files) or the files in a team's channels (for `channel` files) through the standard OAuth 2.0 authorization flow.</span></span> <span data-ttu-id="d616d-113">Этот метод работает во всех сферах Teams.</span><span class="sxs-lookup"><span data-stu-id="d616d-113">This method works in all Teams scopes.</span></span>
+<span data-ttu-id="5a1bd-111">Вы можете отправлять сообщения с вложениями карт, ссылаясь на существующие SharePoint файлы, используя API-Graph Майкрософт [для OneDrive и SharePoint](/onedrive/developer/rest-api/).</span><span class="sxs-lookup"><span data-stu-id="5a1bd-111">You can post messages with card attachments referencing existing SharePoint files using the Microsoft Graph APIs for [OneDrive and SharePoint](/onedrive/developer/rest-api/).</span></span> <span data-ttu-id="5a1bd-112">Использование Graph API требует получения доступа к папке OneDrive пользователя (для и файлов) или файлам `personal` `groupchat` в каналах команды (для `channel` файлов) через стандартный поток авторизации OAuth 2.0.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-112">Using the Graph APIs requires obtaining access to a user's OneDrive folder (for `personal` and `groupchat` files) or the files in a team's channels (for `channel` files) through the standard OAuth 2.0 authorization flow.</span></span> <span data-ttu-id="5a1bd-113">Этот метод работает во Teams сферах.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-113">This method works in all Teams scopes.</span></span>
 
-## <a name="using-the-teams-bot-apis"></a><span data-ttu-id="d616d-114">Использование API bot teams</span><span class="sxs-lookup"><span data-stu-id="d616d-114">Using the Teams Bot APIs</span></span>
+## <a name="using-the-teams-bot-apis"></a><span data-ttu-id="5a1bd-114">Использование Teams Bot</span><span class="sxs-lookup"><span data-stu-id="5a1bd-114">Using the Teams Bot APIs</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d616d-115">Этот метод работает только в `personal` контексте.</span><span class="sxs-lookup"><span data-stu-id="d616d-115">This method works only in the `personal` context.</span></span> <span data-ttu-id="d616d-116">Он не работает в `channel` контексте или `groupchat` в контексте.</span><span class="sxs-lookup"><span data-stu-id="d616d-116">It does not work in the `channel` or `groupchat` context.</span></span>
+> <span data-ttu-id="5a1bd-115">Этот метод работает только в `personal` контексте.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-115">This method works only in the `personal` context.</span></span> <span data-ttu-id="5a1bd-116">Он не работает в `channel` `groupchat` контексте или контексте.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-116">It does not work in the `channel` or `groupchat` context.</span></span>
 
-<span data-ttu-id="d616d-117">Ваш бот может напрямую отправлять и получать файлы с пользователями в контексте, также известном как личные `personal` чаты, с помощью API Teams.</span><span class="sxs-lookup"><span data-stu-id="d616d-117">Your bot can directly send and receive files with users in the `personal` context, also known as personal chats, using Teams APIs.</span></span> <span data-ttu-id="d616d-118">Это позволяет реализовать отчеты о расходах, распознавание изображений, архивация файлов, электронные подписи и другие сценарии, связанные с прямыми манипуляциями с контентом файлов.</span><span class="sxs-lookup"><span data-stu-id="d616d-118">This lets you implement expense reporting, image recognition, file archival, e-signatures, and other scenarios involving direct manipulation of file content.</span></span> <span data-ttu-id="d616d-119">Файлы, общие в Teams, как правило, отображаются как карты и позволяют просматривать в приложении.</span><span class="sxs-lookup"><span data-stu-id="d616d-119">Files shared in Teams typically appear as cards, and allow rich in-app viewing.</span></span>
+<span data-ttu-id="5a1bd-117">Ваш бот может напрямую отправлять и получать файлы с пользователями в `personal` контексте, также известном как личные чаты, используя Teams API.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-117">Your bot can directly send and receive files with users in the `personal` context, also known as personal chats, using Teams APIs.</span></span> <span data-ttu-id="5a1bd-118">Это позволяет реализовать отчетность о расходах, распознавание изображений, архив файлов, электронные подписи и другие сценарии, связанные с прямым манипулированием содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-118">This lets you implement expense reporting, image recognition, file archival, e-signatures, and other scenarios involving direct manipulation of file content.</span></span> <span data-ttu-id="5a1bd-119">Файлы, Teams обычно отображаются в качестве карт, и позволяют богатые в приложении просмотра.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-119">Files shared in Teams typically appear as cards, and allow rich in-app viewing.</span></span>
 
-<span data-ttu-id="d616d-120">В следующих разделах описано, как это сделать для отправки контента файла в результате прямого взаимодействия с пользователем, например отправки сообщения.</span><span class="sxs-lookup"><span data-stu-id="d616d-120">The following sections describe how to do this to send file content as a result of direct user interaction, like sending a message.</span></span> <span data-ttu-id="d616d-121">Этот API предоставляется в рамках бот-платформы Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="d616d-121">This API is provided as part of the Microsoft Teams Bot Platform.</span></span>
+<span data-ttu-id="5a1bd-120">Следующие разделы описывают, как это сделать, чтобы отправить содержимое файла в результате прямого взаимодействия с пользователем, например отправки сообщения.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-120">The following sections describe how to do this to send file content as a result of direct user interaction, like sending a message.</span></span> <span data-ttu-id="5a1bd-121">Этот API предоставляется в рамках платформы Microsoft Teams Bot.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-121">This API is provided as part of the Microsoft Teams Bot Platform.</span></span>
 
-### <a name="configure-your-bot-to-support-files"></a><span data-ttu-id="d616d-122">Настройка бота для поддержки файлов</span><span class="sxs-lookup"><span data-stu-id="d616d-122">Configure your bot to support files</span></span>
+### <a name="configure-your-bot-to-support-files"></a><span data-ttu-id="5a1bd-122">Настройте бота для поддержки файлов</span><span class="sxs-lookup"><span data-stu-id="5a1bd-122">Configure your bot to support files</span></span>
 
-<span data-ttu-id="d616d-123">Для отправки и получения файлов в боте необходимо заказать свойство `supportsFiles` в манифесте `true` .</span><span class="sxs-lookup"><span data-stu-id="d616d-123">In order to send and receive files in your bot, you have to set the `supportsFiles` property in the manifest to `true`.</span></span> <span data-ttu-id="d616d-124">Это свойство описано в разделе [боты](~/resources/schema/manifest-schema.md#bots) в справке Манифест.</span><span class="sxs-lookup"><span data-stu-id="d616d-124">This property is described in the [bots](~/resources/schema/manifest-schema.md#bots) section of the Manifest reference.</span></span>
+<span data-ttu-id="5a1bd-123">Для того, чтобы отправить и получить файлы в вашем боте, вы должны `supportsFiles` установить свойство в манифесте `true` .</span><span class="sxs-lookup"><span data-stu-id="5a1bd-123">In order to send and receive files in your bot, you have to set the `supportsFiles` property in the manifest to `true`.</span></span> <span data-ttu-id="5a1bd-124">Это свойство описано в [разделе ботов](~/resources/schema/manifest-schema.md#bots) ссылки Manifest.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-124">This property is described in the [bots](~/resources/schema/manifest-schema.md#bots) section of the Manifest reference.</span></span>
 
-<span data-ttu-id="d616d-125">Определение будет выглядеть так: `"supportsFiles": true` .</span><span class="sxs-lookup"><span data-stu-id="d616d-125">The definition will look like this: `"supportsFiles": true`.</span></span> <span data-ttu-id="d616d-126">Если бот не `supportsFiles` включает, следующие функции не будут работать.</span><span class="sxs-lookup"><span data-stu-id="d616d-126">If your bot does not enable `supportsFiles`, the following features will not work.</span></span>
+<span data-ttu-id="5a1bd-125">Определение будет выглядеть так: `"supportsFiles": true` .</span><span class="sxs-lookup"><span data-stu-id="5a1bd-125">The definition will look like this: `"supportsFiles": true`.</span></span> <span data-ttu-id="5a1bd-126">Если ваш бот не `supportsFiles` включает, следующие функции не будут работать.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-126">If your bot does not enable `supportsFiles`, the following features will not work.</span></span>
 
-### <a name="receiving-files-in-personal-chat"></a><span data-ttu-id="d616d-127">Получение файлов в личном чате</span><span class="sxs-lookup"><span data-stu-id="d616d-127">Receiving files in personal chat</span></span>
+### <a name="receiving-files-in-personal-chat"></a><span data-ttu-id="5a1bd-127">Получение файлов в личном чате</span><span class="sxs-lookup"><span data-stu-id="5a1bd-127">Receiving files in personal chat</span></span>
 
-<span data-ttu-id="d616d-128">Когда пользователь отправляет файл боту, он сначала отправляется в хранилище OneDrive для бизнеса пользователя.</span><span class="sxs-lookup"><span data-stu-id="d616d-128">When a user sends a file to your bot, the file is first uploaded to the user's OneDrive for Business storage.</span></span> <span data-ttu-id="d616d-129">После этого бот получит сообщение о загрузке пользователя.</span><span class="sxs-lookup"><span data-stu-id="d616d-129">Your bot will then receive a message activity notifying you of the user upload.</span></span> <span data-ttu-id="d616d-130">Действие будет содержать метаданные файлов, такие как его имя и URL-адрес контента.</span><span class="sxs-lookup"><span data-stu-id="d616d-130">The activity will contain file metadata, such as its name and the content URL.</span></span> <span data-ttu-id="d616d-131">Вы можете напрямую читать с этого URL-адреса, чтобы получить его двоичный контент.</span><span class="sxs-lookup"><span data-stu-id="d616d-131">You can directly read from this URL to fetch its binary content.</span></span>
+<span data-ttu-id="5a1bd-128">Когда пользователь отправляет файл вашему боту, файл сначала загружается в хранилище OneDrive для бизнеса пользователя.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-128">When a user sends a file to your bot, the file is first uploaded to the user's OneDrive for Business storage.</span></span> <span data-ttu-id="5a1bd-129">Ваш бот получит сообщение о загрузке.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-129">Your bot will then receive a message activity notifying you of the user upload.</span></span> <span data-ttu-id="5a1bd-130">Действие будет содержать метаданные файлов, такие как его имя и URL-адрес содержимого.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-130">The activity will contain file metadata, such as its name and the content URL.</span></span> <span data-ttu-id="5a1bd-131">Вы можете непосредственно прочитать из этого URL, чтобы получить его двоичное содержание.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-131">You can directly read from this URL to fetch its binary content.</span></span>
 
-#### <a name="message-activity-with-file-attachment-example"></a><span data-ttu-id="d616d-132">Действие сообщения с примером вложения файлов</span><span class="sxs-lookup"><span data-stu-id="d616d-132">Message activity with file attachment example</span></span>
+#### <a name="message-activity-with-file-attachment-example"></a><span data-ttu-id="5a1bd-132">Активность сообщений с примером вложения файла</span><span class="sxs-lookup"><span data-stu-id="5a1bd-132">Message activity with file attachment example</span></span>
 
 ```json
 {
@@ -66,34 +66,34 @@ ms.locfileid: "52020655"
 }
 ```
 
-<span data-ttu-id="d616d-133">В следующей таблице описываются свойства контента вложения:</span><span class="sxs-lookup"><span data-stu-id="d616d-133">The following table describes the content properties of the attachment:</span></span>
+<span data-ttu-id="5a1bd-133">В следующей таблице описаны свойства содержимого приложения:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-133">The following table describes the content properties of the attachment:</span></span>
 
-| <span data-ttu-id="d616d-134">Свойство</span><span class="sxs-lookup"><span data-stu-id="d616d-134">Property</span></span> | <span data-ttu-id="d616d-135">Назначение</span><span class="sxs-lookup"><span data-stu-id="d616d-135">Purpose</span></span> |
+| <span data-ttu-id="5a1bd-134">Свойство</span><span class="sxs-lookup"><span data-stu-id="5a1bd-134">Property</span></span> | <span data-ttu-id="5a1bd-135">Назначение</span><span class="sxs-lookup"><span data-stu-id="5a1bd-135">Purpose</span></span> |
 | --- | --- |
-| `downloadUrl` | <span data-ttu-id="d616d-136">URL-адрес OneDrive для получения содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="d616d-136">OneDrive URL for fetching the content of the file.</span></span> <span data-ttu-id="d616d-137">Вы можете `HTTP GET` выдать прямо из этого URL-адреса.</span><span class="sxs-lookup"><span data-stu-id="d616d-137">You can issue an `HTTP GET` directly from this URL.</span></span> |
-| `uniqueId` | <span data-ttu-id="d616d-138">Уникальный файл ID.</span><span class="sxs-lookup"><span data-stu-id="d616d-138">Unique file ID.</span></span> <span data-ttu-id="d616d-139">Это будет ID элемента диска OneDrive, если пользователь отправляет файл боту.</span><span class="sxs-lookup"><span data-stu-id="d616d-139">This will be the OneDrive drive item ID, in the case of the user sending a file to your bot.</span></span> |
-| `fileType` | <span data-ttu-id="d616d-140">Тип расширения файлов, например pdf или docx.</span><span class="sxs-lookup"><span data-stu-id="d616d-140">File extension type, such as pdf or docx.</span></span> |
+| `downloadUrl` | <span data-ttu-id="5a1bd-136">OneDrive URL для извлечения содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-136">OneDrive URL for fetching the content of the file.</span></span> <span data-ttu-id="5a1bd-137">Вы можете выдать `HTTP GET` непосредственно из этого URL.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-137">You can issue an `HTTP GET` directly from this URL.</span></span> |
+| `uniqueId` | <span data-ttu-id="5a1bd-138">Уникальный идентификатор файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-138">Unique file ID.</span></span> <span data-ttu-id="5a1bd-139">Это будет OneDrive идентификатор элемента диска, в случае, если пользователь отправляет файл вашему боту.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-139">This will be the OneDrive drive item ID, in the case of the user sending a file to your bot.</span></span> |
+| `fileType` | <span data-ttu-id="5a1bd-140">Тип расширения файла, например pdf или docx.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-140">File extension type, such as pdf or docx.</span></span> |
 
-<span data-ttu-id="d616d-141">В качестве наилучшей практики следует признать отправку файла, отправив сообщение пользователю.</span><span class="sxs-lookup"><span data-stu-id="d616d-141">As a best practice, you should acknowledge the file upload by sending back a message to the user.</span></span>
+<span data-ttu-id="5a1bd-141">Как наилучшее решение, вы должны признать загрузку файла, отправив обратно сообщение пользователю.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-141">As a best practice, you should acknowledge the file upload by sending back a message to the user.</span></span>
 
-### <a name="uploading-files-to-personal-chat"></a><span data-ttu-id="d616d-142">Отправка файлов в личный чат</span><span class="sxs-lookup"><span data-stu-id="d616d-142">Uploading files to personal chat</span></span>
+### <a name="uploading-files-to-personal-chat"></a><span data-ttu-id="5a1bd-142">Загрузка файлов в личный чат</span><span class="sxs-lookup"><span data-stu-id="5a1bd-142">Uploading files to personal chat</span></span>
 
-<span data-ttu-id="d616d-143">Отправка файла пользователю включает в себя следующие действия:</span><span class="sxs-lookup"><span data-stu-id="d616d-143">Uploading a file to a user involves the following steps:</span></span>
+<span data-ttu-id="5a1bd-143">Загрузка файла пользователю включает в себя следующие шаги:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-143">Uploading a file to a user involves the following steps:</span></span>
 
-1. <span data-ttu-id="d616d-144">Отправьте сообщение пользователю с запросом разрешения на написание файла.</span><span class="sxs-lookup"><span data-stu-id="d616d-144">Send a message to the user requesting permission to write the file.</span></span> <span data-ttu-id="d616d-145">Это сообщение должно содержать `FileConsentCard` вложение с именем загружаемого файла.</span><span class="sxs-lookup"><span data-stu-id="d616d-145">This message must contain a `FileConsentCard` attachment with the name of the file to be uploaded.</span></span>
-2. <span data-ttu-id="d616d-146">Если пользователь принимает загрузку файла, ваш бот получит действие *Invoke* с URL-адресом расположения.</span><span class="sxs-lookup"><span data-stu-id="d616d-146">If the user accepts the file download, your bot will receive an *Invoke* activity with a location URL.</span></span>
-3. <span data-ttu-id="d616d-147">Чтобы передать файл, бот выполняет непосредственно `HTTP POST` в url-адрес предоставленного расположения.</span><span class="sxs-lookup"><span data-stu-id="d616d-147">To transfer the file, your bot performs an `HTTP POST` directly into the provided location URL.</span></span>
-4. <span data-ttu-id="d616d-148">Кроме того, вы можете удалить исходную карту согласия, если вы не хотите разрешить пользователю принимать дальнейшие загрузки того же файла.</span><span class="sxs-lookup"><span data-stu-id="d616d-148">Optionally, you can remove the original consent card if you do not want to allow the user to accept further uploads of the same file.</span></span>
+1. <span data-ttu-id="5a1bd-144">Отправить сообщение пользователю с просьбой разрешить его написать.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-144">Send a message to the user requesting permission to write the file.</span></span> <span data-ttu-id="5a1bd-145">Это сообщение должно содержать `FileConsentCard` вложение с именем файла, который будет загружен.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-145">This message must contain a `FileConsentCard` attachment with the name of the file to be uploaded.</span></span>
+2. <span data-ttu-id="5a1bd-146">Если пользователь принимает загрузку файла, ваш бот получит действие *Invoke* с URL-адресом местоположения.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-146">If the user accepts the file download, your bot will receive an *Invoke* activity with a location URL.</span></span>
+3. <span data-ttu-id="5a1bd-147">Чтобы передать файл, ваш бот выполняет непосредственно `HTTP POST` в предоставленный URL-адрес местоположения.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-147">To transfer the file, your bot performs an `HTTP POST` directly into the provided location URL.</span></span>
+4. <span data-ttu-id="5a1bd-148">По желанию, вы можете удалить оригинал карты согласия, если вы не хотите, чтобы позволить пользователю принять дальнейшие загрузки того же файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-148">Optionally, you can remove the original consent card if you do not want to allow the user to accept further uploads of the same file.</span></span>
 
-#### <a name="message-requesting-permission-to-upload"></a><span data-ttu-id="d616d-149">Сообщение с запросом разрешения на отправку</span><span class="sxs-lookup"><span data-stu-id="d616d-149">Message requesting permission to upload</span></span>
+#### <a name="message-requesting-permission-to-upload"></a><span data-ttu-id="5a1bd-149">Сообщение с просьбой разрешить загрузку</span><span class="sxs-lookup"><span data-stu-id="5a1bd-149">Message requesting permission to upload</span></span>
 
-<span data-ttu-id="d616d-150">Это настольное сообщение содержит простой объект вложения, запрашивающий разрешение пользователя на отправку файла:</span><span class="sxs-lookup"><span data-stu-id="d616d-150">This desktop message contains a simple attachment object requesting user permission to upload the file:</span></span>
+<span data-ttu-id="5a1bd-150">Это настольное сообщение содержит простой объект вложения с просьбой разрешить пользователю загрузить файл:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-150">This desktop message contains a simple attachment object requesting user permission to upload the file:</span></span>
 
-![Снимок экрана карты согласия с запросом разрешения пользователя на отправку файла](../../assets/images/bots/bot-file-consent-card.png)
+![Скриншот карты согласия с просьбой разрешить пользователю загружать файл](../../assets/images/bots/bot-file-consent-card.png)
 
-<span data-ttu-id="d616d-152">Это мобильное сообщение содержит объект вложения с запросом разрешения пользователя на отправку файла:</span><span class="sxs-lookup"><span data-stu-id="d616d-152">This mobile message contains an attachment object requesting user permission to upload the file:</span></span>
+<span data-ttu-id="5a1bd-152">Это мобильное сообщение содержит объект вложения с просьбой разрешить пользователю загрузить файл:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-152">This mobile message contains an attachment object requesting user permission to upload the file:</span></span>
 
-![Снимок экрана карты согласия с запросом разрешения пользователя на отправку файла на мобильный телефон](../../assets/images/bots/mobile-bot-file-consent-card.png)
+![Скриншот карты согласия с просьбой разрешить пользователю загружать файл на мобильный](../../assets/images/bots/mobile-bot-file-consent-card.png)
 
 ```json
 {
@@ -112,20 +112,20 @@ ms.locfileid: "52020655"
 }
 ```
 
-<span data-ttu-id="d616d-154">В следующей таблице описываются свойства контента вложения:</span><span class="sxs-lookup"><span data-stu-id="d616d-154">The following table describes the content properties of the attachment:</span></span>
+<span data-ttu-id="5a1bd-154">В следующей таблице описаны свойства содержимого приложения:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-154">The following table describes the content properties of the attachment:</span></span>
 
-| <span data-ttu-id="d616d-155">Свойство</span><span class="sxs-lookup"><span data-stu-id="d616d-155">Property</span></span> | <span data-ttu-id="d616d-156">Назначение</span><span class="sxs-lookup"><span data-stu-id="d616d-156">Purpose</span></span> |
+| <span data-ttu-id="5a1bd-155">Свойство</span><span class="sxs-lookup"><span data-stu-id="5a1bd-155">Property</span></span> | <span data-ttu-id="5a1bd-156">Назначение</span><span class="sxs-lookup"><span data-stu-id="5a1bd-156">Purpose</span></span> |
 | --- | --- |
-| `description` | <span data-ttu-id="d616d-157">Описание файла.</span><span class="sxs-lookup"><span data-stu-id="d616d-157">Description of the file.</span></span> <span data-ttu-id="d616d-158">Может быть показано пользователю, чтобы описать его назначение или обобщить его содержимое.</span><span class="sxs-lookup"><span data-stu-id="d616d-158">May be shown to the user to describe its purpose or to summarize its content.</span></span> |
-| `sizeInBytes` | <span data-ttu-id="d616d-159">Предоставляет пользователю оценку размера файла и объема пространства, который он займет в OneDrive.</span><span class="sxs-lookup"><span data-stu-id="d616d-159">Provides the user an estimate of the file size and the amount of space it will take in OneDrive.</span></span> |
-| `acceptContext` | <span data-ttu-id="d616d-160">Дополнительный контекст, который будет безмолвно передан вашему боту при приеме файла пользователем.</span><span class="sxs-lookup"><span data-stu-id="d616d-160">Additional context that will be silently transmitted to your bot when the user accepts the file.</span></span> |
-| `declineContext` | <span data-ttu-id="d616d-161">Дополнительный контекст, который будет безмолвно передан вашему боту при отклонении файла пользователем.</span><span class="sxs-lookup"><span data-stu-id="d616d-161">Additional context that will be silently transmitted to your bot when the user declines the file.</span></span> |
+| `description` | <span data-ttu-id="5a1bd-157">Описание файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-157">Description of the file.</span></span> <span data-ttu-id="5a1bd-158">Может быть показан пользователю, чтобы описать его цель или обобщить его содержание.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-158">May be shown to the user to describe its purpose or to summarize its content.</span></span> |
+| `sizeInBytes` | <span data-ttu-id="5a1bd-159">Предоставляет пользователю оценку размера файла и количества места, которое он займет в OneDrive.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-159">Provides the user an estimate of the file size and the amount of space it will take in OneDrive.</span></span> |
+| `acceptContext` | <span data-ttu-id="5a1bd-160">Дополнительный контекст, который будет молча передаваться вашему боту, когда пользователь принимает файл.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-160">Additional context that will be silently transmitted to your bot when the user accepts the file.</span></span> |
+| `declineContext` | <span data-ttu-id="5a1bd-161">Дополнительный контекст, который будет молча передаваться вашему боту, когда пользователь откажется от файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-161">Additional context that will be silently transmitted to your bot when the user declines the file.</span></span> |
 
-#### <a name="invoke-activity-when-the-user-accepts-the-file"></a><span data-ttu-id="d616d-162">Вызов активности при приеме файла пользователем</span><span class="sxs-lookup"><span data-stu-id="d616d-162">Invoke activity when the user accepts the file</span></span>
+#### <a name="invoke-activity-when-the-user-accepts-the-file"></a><span data-ttu-id="5a1bd-162">Вызвать действие, когда пользователь принимает файл</span><span class="sxs-lookup"><span data-stu-id="5a1bd-162">Invoke activity when the user accepts the file</span></span>
 
-<span data-ttu-id="d616d-163">Действие вызова отправляется боту, если пользователь принимает файл и когда он принимает его.</span><span class="sxs-lookup"><span data-stu-id="d616d-163">An invoke activity is sent to your bot if and when the user accepts the file.</span></span> <span data-ttu-id="d616d-164">В нем содержится URL-адрес для места для бизнеса OneDrive, который бот может затем выдать для передачи `PUT` содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="d616d-164">It contains the OneDrive for Business placeholder URL that your bot can then issue a `PUT` into to transfer the file contents.</span></span> <span data-ttu-id="d616d-165">сведения о загрузке в URL-адрес OneDrive читайте в этой статье: [Отправка bytes в сеанс загрузки](/onedrive/developer/rest-api/api/driveitem_createuploadsession#upload-bytes-to-the-upload-session).</span><span class="sxs-lookup"><span data-stu-id="d616d-165">for information on uploading to the OneDrive URL read this article: [Upload bytes to the upload session](/onedrive/developer/rest-api/api/driveitem_createuploadsession#upload-bytes-to-the-upload-session).</span></span>
+<span data-ttu-id="5a1bd-163">Действие вызова отправляется вашему боту, если пользователь принимает файл.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-163">An invoke activity is sent to your bot if and when the user accepts the file.</span></span> <span data-ttu-id="5a1bd-164">Он содержит OneDrive для бизнеса- и заполнителя URL, который ваш бот может `PUT` затем выдать для передачи содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-164">It contains the OneDrive for Business placeholder URL that your bot can then issue a `PUT` into to transfer the file contents.</span></span> <span data-ttu-id="5a1bd-165">для получения информации о загрузке на OneDrive URL прочитайте эту [статью: Upload байты на сессию загрузки](/onedrive/developer/rest-api/api/driveitem_createuploadsession#upload-bytes-to-the-upload-session).</span><span class="sxs-lookup"><span data-stu-id="5a1bd-165">for information on uploading to the OneDrive URL read this article: [Upload bytes to the upload session](/onedrive/developer/rest-api/api/driveitem_createuploadsession#upload-bytes-to-the-upload-session).</span></span>
 
-<span data-ttu-id="d616d-166">В следующем примере показана сокращенная версия действия вызова, которую получит бот:</span><span class="sxs-lookup"><span data-stu-id="d616d-166">The following example shows an abridged version of the invoke activity that your bot will receive:</span></span>
+<span data-ttu-id="5a1bd-166">В следующем примере показана сокращенная версия действия вызова, которую получит ваш бот:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-166">The following example shows an abridged version of the invoke activity that your bot will receive:</span></span>
 
 ```json
 {
@@ -149,7 +149,7 @@ ms.locfileid: "52020655"
 }
 ```
 
-<span data-ttu-id="d616d-167">Аналогично, если пользователь отклонит файл, ваш бот получит следующее событие с таким же общим именем действий:</span><span class="sxs-lookup"><span data-stu-id="d616d-167">Similarly, if the user declines the file, your bot will receive the following event, with the same overall activity name:</span></span>
+<span data-ttu-id="5a1bd-167">Аналогичным образом, если пользователь отклоняет файл, ваш бот получит следующее событие с тем же общим именем активности:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-167">Similarly, if the user declines the file, your bot will receive the following event, with the same overall activity name:</span></span>
 
 ```json
 {
@@ -163,9 +163,9 @@ ms.locfileid: "52020655"
 }
 ```
 
-### <a name="notifying-the-user-about-an-uploaded-file"></a><span data-ttu-id="d616d-168">Уведомление пользователя о загруженных файлах</span><span class="sxs-lookup"><span data-stu-id="d616d-168">Notifying the user about an uploaded file</span></span>
+### <a name="notifying-the-user-about-an-uploaded-file"></a><span data-ttu-id="5a1bd-168">Уведомление пользователя о загруженном файле</span><span class="sxs-lookup"><span data-stu-id="5a1bd-168">Notifying the user about an uploaded file</span></span>
 
-<span data-ttu-id="d616d-169">После отправки файла в OneDrive пользователя, независимо от того, используете ли вы механизм, описанный выше, или делегированную API пользователя OneDrive, следует отправить пользователю сообщение подтверждения.</span><span class="sxs-lookup"><span data-stu-id="d616d-169">After uploading a file to the user's OneDrive, whether you use the mechanism described above or OneDrive user delegated APIs, you should send a confirmation message to the user.</span></span> <span data-ttu-id="d616d-170">Это сообщение должно содержать вложение, на которое пользователь может нажать, чтобы просмотреть его, открыть его в OneDrive или скачать `FileCard` локально.</span><span class="sxs-lookup"><span data-stu-id="d616d-170">This message should contain  a `FileCard` attachment that the user can click on, either to preview it, open it in OneDrive, or download locally.</span></span>
+<span data-ttu-id="5a1bd-169">После загрузки файла в сайт пользователя OneDrive используете ли вы описанный выше механизм или OneDrive делегированных API, вы должны отправить пользователю сообщение о подтверждении.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-169">After uploading a file to the user's OneDrive, whether you use the mechanism described above or OneDrive user delegated APIs, you should send a confirmation message to the user.</span></span> <span data-ttu-id="5a1bd-170">Это сообщение должно содержать `FileCard` вложение, на которое пользователь может нажать, либо для его просмотра, открыть его в OneDrive, либо загрузить локально.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-170">This message should contain  a `FileCard` attachment that the user can click on, either to preview it, open it in OneDrive, or download locally.</span></span>
 
 ```json
 {
@@ -181,16 +181,16 @@ ms.locfileid: "52020655"
 }
 ```
 
-<span data-ttu-id="d616d-171">В следующей таблице описываются свойства контента вложения:</span><span class="sxs-lookup"><span data-stu-id="d616d-171">The following table describes the content properties of the attachment:</span></span>
+<span data-ttu-id="5a1bd-171">В следующей таблице описаны свойства содержимого приложения:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-171">The following table describes the content properties of the attachment:</span></span>
 
-| <span data-ttu-id="d616d-172">Свойство</span><span class="sxs-lookup"><span data-stu-id="d616d-172">Property</span></span> | <span data-ttu-id="d616d-173">Назначение</span><span class="sxs-lookup"><span data-stu-id="d616d-173">Purpose</span></span> |
+| <span data-ttu-id="5a1bd-172">Свойство</span><span class="sxs-lookup"><span data-stu-id="5a1bd-172">Property</span></span> | <span data-ttu-id="5a1bd-173">Назначение</span><span class="sxs-lookup"><span data-stu-id="5a1bd-173">Purpose</span></span> |
 | --- | --- |
-| `uniqueId` | <span data-ttu-id="d616d-174">ID элемента диска OneDrive/SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d616d-174">OneDrive/SharePoint drive item ID.</span></span> |
-| `fileType` | <span data-ttu-id="d616d-175">Тип файла, например pdf или docx.</span><span class="sxs-lookup"><span data-stu-id="d616d-175">File type, such as pdf or docx.</span></span> |
+| `uniqueId` | <span data-ttu-id="5a1bd-174">OneDrive/SharePoint идентификатор элемента диска.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-174">OneDrive/SharePoint drive item ID.</span></span> |
+| `fileType` | <span data-ttu-id="5a1bd-175">Тип файла, например pdf или docx.</span><span class="sxs-lookup"><span data-stu-id="5a1bd-175">File type, such as pdf or docx.</span></span> |
 
-### <a name="basic-example-in-c"></a><span data-ttu-id="d616d-176">Базовый пример в C #</span><span class="sxs-lookup"><span data-stu-id="d616d-176">Basic example in C#</span></span>
+### <a name="basic-example-in-c"></a><span data-ttu-id="5a1bd-176">Основной пример в C #</span><span class="sxs-lookup"><span data-stu-id="5a1bd-176">Basic example in C#</span></span>
 
-<span data-ttu-id="d616d-177">В следующем примере показано, как обрабатывать отправку файлов и отправлять запросы на согласие на файл в диалоговом окантовке бота.</span><span class="sxs-lookup"><span data-stu-id="d616d-177">The following sample shows how you can handle file uploads and send file consent requests in your bot's dialog.</span></span>
+<span data-ttu-id="5a1bd-177">Следующий пример показывает, как вы можете обрабатывать загрузки файлов и отправлять запросы на согласие файлов в диалоге вашего бота:</span><span class="sxs-lookup"><span data-stu-id="5a1bd-177">The following sample shows how you can handle file uploads and send file consent requests in your bot's dialog:</span></span>
 
 ```csharp
 
