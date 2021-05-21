@@ -1,7 +1,7 @@
 ---
 title: Создание пользовательских приложений с низким кодом для Microsoft Teams
 author: laujan
-description: Подробная информация о доступных Microsoft низкий и нет код решений для Teams
+description: Подробные данные о доступных microsoft low и отсутствие решений для кода для Teams
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: conceptual
@@ -14,72 +14,72 @@ ms.locfileid: "52566210"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание пользовательских приложений с низким кодом для Microsoft Teams
 
-Microsoft Teams является разгибаемым и адаптивным. Это означает, что вы можете создавать пользовательские приложения Teams, которые отвечают различных потребностям ваших пользователей. Пользовательские приложения с низким кодом экономят время, обеспечивают быстрые решения и отвечают спросу, чем приложения, созданные с нуля. Этот документ дает обзор Microsoft Power Platform, Power Virtual Agents чат-бота и виртуального помощника.
+Microsoft Teams легко и адаптивно. Это означает, что вы можете создавать настраиваемые приложения для Teams, которые отвечают отдельным потребностям пользователей. Пользовательские приложения с низким кодом экономят время, обеспечивают быстрое решение и отвечают требованиям, чем приложения, созданные с нуля. В этом документе представлен обзор платформы Microsoft Power Platform, Power Virtual Agents чат-бота и виртуального помощника.
 
-Платформы с низким кодом обеспечивают интуитивный подход к разработке программного обеспечения и требуют практически никакого кодирования для создания приложений и процессов. Они позволяют разработчикам без опыта создавать пользовательские приложения легко практически без кодирования, а профессиональным разработчикам быстро разрабатывать и развертывать приложение. Эти платформы состоят из визуального интерфейса, разъемов для бэкэнд-сервисов и встроенной системы управления жизненным циклом приложения для создания, отладки, развертывания и обслуживания приложений. Microsoft Power Platform является инновационным шлюзом для быстрого создания совместимых Teams с использованием атрибутов низкого кода.
+Платформы с низким кодом обеспечивают интуитивно понятный подход к разработке программного обеспечения и практически не требуют кодирования для создания приложений и процессов. Они позволяют разработчикам без опыта легко создавать настраиваемые приложения с небольшим или отсутствием кодирования, а профессиональные разработчики быстро разрабатывают и развертывают приложение. Эти платформы состоят из визуального интерфейса, соединители службы backend и встроенной системы управления жизненным циклом приложений для создания, отлажений, развертывания и обслуживания приложений. Платформа Microsoft Power является инновационным шлюзом для быстрого создания Teams приложений с низкими атрибутами кода.
 
 ## <a name="teams-and-microsoft-power-platform"></a>Teams и Microsoft Power Platform
 
-Microsoft Power Platform сочетает в себе четыре надежные технологии Microsoft, такие как Power BI, Power Apps, Power Automate, ранее Microsoft Flow, и Power Virtual Agents в одной мощной платформе приложений. Эти технологии позволяют создавать решения, автоматизировать процессы, анализировать данные и создавать виртуальные агенты в единой и интегрированной среде:
+Платформа Microsoft Power Platform объединяет четыре надежные технологии Майкрософт, такие как Power BI, Power Apps, Power Automate, ранее Microsoft Flow и Power Virtual Agents в одной мощной платформе приложений. Эти технологии позволяют создавать решения, автоматизировать процессы, анализировать данные и создавать виртуальные агенты в единой и интегрированной среде:
 
-:::image type="content" source="../assets/images/power-platform-and-teams/ms-power-platform.png" alt-text="Услуги платформы питания":::
+:::image type="content" source="../assets/images/power-platform-and-teams/ms-power-platform.png" alt-text="Службы платформы питания":::
 
 > [!NOTE]
-> Не следует использовать платформу Microsoft Power Platform для создания приложений, которые должны быть опубликованы в Teams приложений. Приложения Microsoft Power Platform могут быть опубликованы только в магазине приложений организации.
+> Не следует использовать платформу Microsoft Power для создания приложений, которые должны быть опубликованы в Teams магазине приложений. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
 
 ### <a name="-teams-and-power-bi"></a>✔ Teams и Power BI
 
-Вкладка [Power BI для Microsoft Teams добавляет](https://powerbi.microsoft.com/blog/announcing-new-power-bi-tab-for-microsoft-teams/) поддержку отчетов в рабочем пространстве Teams и позволяет пользователям обмениваться [интерактивным контентом Power BI и](/power-bi/collaborate-share/service-embed-report-microsoft-teams) [сотрудничать с другими Teams](/power-bi/collaborate-share/service-collaborate-microsoft-teams) каналах и чатах. Вы можете создавать [упакованные Power BI содержимое](/power-bi/collaborate-share/service-create-distribute-apps) приложения с нуля и распространять его в качестве приложения [или создавать шаблонное приложение в Power BI.](/connect-data/service-template-apps-create) Кроме того, используйте [новое Power BI в Teams,](https://go.microsoft.com/fwlink/?linkid=2143643) чтобы привнести весь Power BI в Teams.
+Вкладка Power BI для [Microsoft Teams](https://powerbi.microsoft.com/blog/announcing-new-power-bi-tab-for-microsoft-teams/) добавляет поддержку отчетов в рабочей области Teams и позволяет [](/power-bi/collaborate-share/service-embed-report-microsoft-teams) пользователям обмениваться интерактивным [](/power-bi/collaborate-share/service-collaborate-microsoft-teams) Power BI контентом и сотрудничать с другими пользователями в Teams каналах и чатах. Вы можете создавать упакованное [содержимое Power BI](/power-bi/collaborate-share/service-create-distribute-apps) с нуля и распространять его в качестве приложения или создавать [приложение-шаблон](/connect-data/service-template-apps-create)в Power BI . Кроме того, используйте новое [приложение Power BI в](https://go.microsoft.com/fwlink/?linkid=2143643) Teams, чтобы привести весь базовый Power BI службы в Teams.
 
 ### <a name="-teams-and-power-apps"></a>✔ Teams и Power Apps
 
-С [Power Apps](/powerapps/powerapps-overview)вы можете создавать бизнес-приложения, которые подключаются к вашим бизнес-данным и адаптированы к потребностям вашей организации.  Power Apps позволяют широкому спектру сценариев приложений решать бизнес-задачи с помощью [холстовых приложений.](/powerapps/maker/#canvas-apps) После создания, вы можете экспортировать приложение с портала Power Apps и [вставлять в Microsoft Teams](/power-platform/admin/embed-app-teams).
+С [Power Apps](/powerapps/powerapps-overview)вы можете создавать бизнес-приложения, которые подключаются к бизнес-данным и адаптированы к потребностям вашей организации.  Power Apps включить широкий спектр сценариев приложений для решения бизнес-проблем с помощью [приложений canvas.](/powerapps/maker/#canvas-apps) После создания приложение можно экспортировать с портала Power Apps и встраить [в Microsoft Teams.](/power-platform/admin/embed-app-teams)
 
-Новое приложение [Power Apps в Teams](https://go.microsoft.com/fwlink/?linkid=2143374) обеспечивает интегрированный опыт для создателей приложений для создания и редактирования приложений и рабочих процессов в Teams. Они могут быстро публиковать и делиться приложениями с членами команды. Участники могут использовать приложения без переключения между несколькими приложениями и службами.
+Новое [приложение Power Apps в](https://go.microsoft.com/fwlink/?linkid=2143374) Teams предоставляет интегрированный опыт для разработчиков приложений для создания и редактирования приложений и рабочих процессов в Teams. Они могут быстро публиковать и делиться приложениями с членами группы. Пользователи могут использовать приложения, не переключаясь между несколькими приложениями и службами.
 
 ### <a name="-teams-and-power-automate"></a>✔ Teams и Power Automate
 
-Вы можете [создавать потоки для автоматизации повторяющихся рабочих](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/) задач непосредственно в Teams среды [с помощью Power Automate приложения в Teams.](/power-automate/flows-teams) Вы можете [вызвать поток из любого сообщения в Microsoft Teams и](/power-automate/trigger-flow-teams-message) использовать [адаптивные карты в течение Power Automate](/power-automate/create-adaptive-cards). Кроме того, вы можете создавать потоки для настройки и добавить дополнительную ценность для Microsoft Teams из нового [приложения Power Apps](https://go.microsoft.com/fwlink/?linkid=2143539) в Teams.
+Вы можете [создавать потоки](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/) для автоматизации повторяющихся рабочих задач непосредственно в Teams среде с Power Automate [приложением в Teams](/power-automate/flows-teams). Вы можете [вызвать поток из](/power-automate/trigger-flow-teams-message) любого сообщения в Microsoft Teams и использовать адаптивные карты в [Power Automate.](/power-automate/create-adaptive-cards) Кроме того, можно создавать потоки для настройки и добавления дополнительных Microsoft Teams из нового приложения Power Apps [в](https://go.microsoft.com/fwlink/?linkid=2143539) Teams.
 
 ### <a name="-teams-and-power-virtual-agents"></a>✔ Teams и Power Virtual Agents
 
-[Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) не является кодом, управляемым графическим интерфейсом решения, построенного на платформе Microsoft Power и Bot Framework. Это дает возможность каждому члену вашей команды создавать и поддерживать богатых, разговорных чат-ботов, которые легко интегрируются с Teams платформой. Весь контент, автором Power Virtual Agents, естественно, Teams и Power Virtual Agents боты взаимодействуют с пользователями в Teams родном чате холст. Вы можете [интегрировать свой Power Virtual Agents чат-бот](/power-virtual-agents/publication-add-bot-to-microsoft-teams) Teams для Teams [через Power Virtual Agents портал](https://powervirtualagents.microsoft.com).
+[Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) — это не кодовое, управляемое графическое решение интерфейса, построенное на платформе Microsoft Power и Bot Framework. Это позволяет каждому члену вашей команды создавать и поддерживать богатых чат-ботов, которые легко интегрируются с Teams платформой. Все содержимое, Power Virtual Agents в Teams и Power Virtual Agents, естественно, Teams чата. Вы можете [интегрировать Power Virtual Agents чат-бота](/power-virtual-agents/publication-add-bot-to-microsoft-teams) для Teams через портал [Power Virtual Agents.](https://powervirtualagents.microsoft.com)
 
-Используйте новое [приложение Power Virtual Agents в](https://aka.ms/pva-teams-docs) Teams, чтобы создавать, управлять и публиковать разговорные чат-боты легко изнутри Teams. Вы можете поделиться своими ботами с другими людьми в вашей организации, чтобы общаться и получать ответы на их вопросы.
+Используйте новое [приложение Power Virtual Agents в](https://aka.ms/pva-teams-docs) Teams, чтобы легко создавать, управлять и публиковать чат-боты из Teams. Вы можете поделиться своими ботами с другими людьми в организации, чтобы пообщаться и получить ответы на их вопросы.
 
 ### <a name="-virtual-assistant-for-teams"></a>✔ виртуальный помощник для Teams
 
-Virtual Assistant — это шаблон с открытым исходным кодом корпорации Майкрософт, который позволяет создавать надежное решение для хранения, сохраняя при этом полный контроль над пользовательским опытом, организационным брендингом и необходимыми данными. Вы можете настроить виртуального помощника для [интеграции в Teams среды.](https://microsoft.github.io/botframework-solutions/clients-and-channels/tutorials/enable-teams/1-intro) 
+Виртуальный помощник — это шаблон Microsoft с открытым исходным кодом, который позволяет создавать надежное решение для беседы, сохраняя полный контроль над пользовательским опытом, организационным брендингом и необходимыми данными. Вы можете настроить виртуальный помощник для [интеграции в Teams среду.](https://microsoft.github.io/botframework-solutions/clients-and-channels/tutorials/enable-teams/1-intro) 
 
-### <a name="-power-platform-learn-modules"></a>✔ Power Platform Learn
+### <a name="-power-platform-learn-modules"></a>✔ Power Platform Learn modules
 
 |  Тема  |  Ссылки  |
 |:---------|:----------------------|
-|Power BI|[Power BI для создателей приложений](/learn/browse/?expanded=power-platform&products=power-bi&roles=maker)</br>[Power BI для разработчиков](/learn/browse/?expanded=power-platform&products=power-bi&roles=developer)|
-|Power Apps|[Power Apps для создателей приложений](/learn/browse/?products=power-apps&roles=maker)</br>[Power Apps для разработчиков](/learn/browse/?products=power-apps)|
-|Power Automate|[Power Automate для создателей приложений](/learn/browse/?expanded=power-platform&products=power-automate&roles=maker)</br>[Power Automate для разработчиков](/learn/browse/?expanded=power-platform&products=power-automate&roles=developer)|
+|Power BI|[Power BI для разработчиков приложений](/learn/browse/?expanded=power-platform&products=power-bi&roles=maker)</br>[Power BI для разработчиков](/learn/browse/?expanded=power-platform&products=power-bi&roles=developer)|
+|Power Apps|[Power Apps для разработчиков приложений](/learn/browse/?products=power-apps&roles=maker)</br>[Power Apps для разработчиков](/learn/browse/?products=power-apps)|
+|Power Automate|[Power Automate для разработчиков приложений](/learn/browse/?expanded=power-platform&products=power-automate&roles=maker)</br>[Power Automate для разработчиков](/learn/browse/?expanded=power-platform&products=power-automate&roles=developer)|
 |Power Virtual Agents|[Power Virtual Agents для разработчиков и разработчиков приложений](/learn/browse/?products=power-virtual-agents&expanded=power-platform&roles=maker)|
 
-### <a name="-project-oakdale-preview"></a>✔ Project Окдейл (предварительный просмотр)
+### <a name="-project-oakdale-preview"></a>✔ Project Oakdale (предварительный просмотр)
 
 > [!NOTE]
 > Project **Oakdale** переименован в проект **Dataverse для Teams**.
 
-[Project Oakdale -](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/teams-is-shaping-the-future-of-work-with-low-code-features-to/ba-p/1507180
-) это новая платформа данных с низким кодом, которая скоро Microsoft Teams. Это позволяет разработчикам создавать Teams Power Platform непосредственно в Teams. Для получения дополнительной информации Project Oakdale, [см. Teams блог Microsoft Project Oakdale](https://powerapps.microsoft.com/blog/introducing-project-oakdale-a-new-low-code-data-platform-for-microsoft-teams).
+[Project Oakdale](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/teams-is-shaping-the-future-of-work-with-low-code-features-to/ba-p/1507180
+) — это новая платформа данных с низким кодом, которая скоро Microsoft Teams. Это позволяет разработчикам создавать решения Teams Power Platform непосредственно в Teams. Дополнительные сведения о Project Oakdale см. [в Teams blog Microsoft Project Oakdale](https://powerapps.microsoft.com/blog/introducing-project-oakdale-a-new-low-code-data-platform-for-microsoft-teams).
 
-### <a name="-microsoft-blog-insights"></a>✔ Microsoft блог идеи
+### <a name="-microsoft-blog-insights"></a>✔ Microsoft Blog insights
 
-[Более пристальный взгляд на возможности платформы данных в Project Окдейл](https://powerapps.microsoft.com/blog/a-closer-look-at-data-platform-capabilities-in-project-oakdale/)
+[Подробнее о возможностях платформы данных в Project Oakdale](https://powerapps.microsoft.com/blog/a-closer-look-at-data-platform-capabilities-in-project-oakdale/)
 
-[Объявление о платформе питания и Teams обновления, чтобы помочь клиентам адаптироваться к удаленной работе](https://cloudblogs.microsoft.com/powerplatform/2020/05/19/announcing-power-platform-and-teams-updates-to-help-customers-adapt-to-remote-work/)
+[Объявление платформы power и Teams обновлений, которые помогут клиентам адаптироваться к удаленной работе](https://cloudblogs.microsoft.com/powerplatform/2020/05/19/announcing-power-platform-and-teams-updates-to-help-customers-adapt-to-remote-work/)
 
-[Teams формирует будущее работы с низкими функциями кода для улучшения вашего цифрового рабочего пространства](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/teams-is-shaping-the-future-of-work-with-low-code-features-to/ba-p/1507180)
+[Teams определяет будущее работы с низкими функциями кода для улучшения цифрового рабочего пространства](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/teams-is-shaping-the-future-of-work-with-low-code-features-to/ba-p/1507180)
 
-### <a name="-managing-power-platform-apps"></a>✔ управляющий платформой питания
+### <a name="-managing-power-platform-apps"></a>✔ Управление приложениями power Platform
 
 > [!div class="nextstepaction"]
-> [Управление приложениями Microsoft Power Platform в Microsoft Teams центре](/microsoftteams/manage-power-platform-apps)
+> [Управление приложениями microsoft Power Platform в центре администрирования Microsoft Teams](/microsoftteams/manage-power-platform-apps)
 
 ## <a name="see-also"></a>См. также
 

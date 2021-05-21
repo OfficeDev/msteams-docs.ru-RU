@@ -12,36 +12,36 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52566203"
 ---
-# <a name="single-sign-on-sso-support-for-messaging-extensions"></a>Поддержка единого ва-г действия (SSO) для расширения обмена сообщениями
+# <a name="single-sign-on-sso-support-for-messaging-extensions"></a>Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями
  
-Единая поддержка вовсяка теперь доступна для расширения обмена сообщениями и разворачивания ссылок. Включение единого входа (SSO) для расширения обмена сообщениями безмолвно обновляет маркер аутентификации, что сводит к минимуму количество раз, необходимое для вобщения в учетные данные Microsoft Teams.
+Единая поддержка входов теперь доступна для расширения обмена сообщениями и разгрузки ссылок. Включение единого входа (SSO) для расширений обмена сообщениями безмолвно обновляет маркер проверки подлинности, что сводит к минимуму количество раз, необходимых для ввода входа в учетные данные для Microsoft Teams.
 
-Этот документ поможет вам включить SSO и при необходимости хранить токен аутентификации.
+В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-Предпосылкой для включения SSO для расширения сообщений и разворачивания ссылок являются следующие:
+Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
 * У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/en-us/free/)
-* Вы должны настроить приложение через портал AAD и обновить манифест Teams приложения для бота, как это определено в [регистрации приложения через портал AAD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal)
+* Необходимо настроить приложение через портал AAD и обновить манифест Teams для бота, как определено в регистрации приложения на портале [AAD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal)
 
 > [!NOTE]
-> Для получения дополнительной информации о создании учетной записи Azure и обновлении манифеста приложения [см.](../../bots/how-to/authentication/auth-aad-sso-bots.md)
+> Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов.](../../bots/how-to/authentication/auth-aad-sso-bots.md)
 
-## <a name="enable-sso-for-messaging-extensions-and-link-unfurling"></a>Включить SSO для расширения обмена сообщениями и разворачивания ссылок
+## <a name="enable-sso-for-messaging-extensions-and-link-unfurling"></a>Включить SSO для расширения обмена сообщениями и разгрузки ссылок
 
-После завершения предварительных условий можно включить SSO для расширения обмена сообщениями и разворачивания ссылок.
+После завершения необходимых условий можно включить SSO для расширения сообщений и разгрузку ссылок.
 
-**Включить SSO**
-1. Обновите [данные о подключении ботов OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на портале Azure.
-2. Загрузите [образец расширений обмена сообщениями](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.
+**Чтобы включить SSO**
+1. Обновите сведения о подключении [ботов к OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на портале Azure.
+2. Скачайте [пример расширений обмена сообщениями](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.
    > [!NOTE]
-   > Используйте соединение OAuth ботов при настройке расширений обмена сообщениями.
-3. В [TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) файл, обновить значение *от аута* *до silentAuth* `OnTeamsMessagingExtensionQueryAsync` в и / или `OnTeamsAppBasedLinkQueryAsync` .  
+   > Использование подключения OAuth для ботов при настройке расширений обмена сообщениями.
+3. В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) обновите значение от *auth* до *silentAuth* в `OnTeamsMessagingExtensionQueryAsync` файле and/or `OnTeamsAppBasedLinkQueryAsync` .  
 
     > [!NOTE]
-    > Мы не поддерживаем других обработчиков SSO, за `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` исключением и из файла TeamsMessagingExtensionsSearchAuthConfigBot.cs файл.
+    > Мы не поддерживаем другие обработчики SSO, за исключением файла `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` TeamsMessagingExtensionsSearchAuthConfigBot.cs.
    
-4. Вы получаете токен в `OnTeamsMessagingExtensionQueryAsync` обработчике в `turnContext.Activity.Value` полезной нагрузке или `OnTeamsAppBasedLinkQueryAsync` в, в зависимости от того, какой сценарий вы позволяете SSO для:
+4. Вы получаете маркер в обработнике в полезной нагрузке или в зависимости от того, в какой сценарий вы включаете `OnTeamsMessagingExtensionQueryAsync` `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync` SSO для:
 
     ```json
     JObject valueObject=JObject.FromObject(turnContext.Activity.Value);
@@ -53,7 +53,7 @@ ms.locfileid: "52566203"
     
      ```
   
-    Если вы используете OAuth соединение, добавьте следующий код в файл TeamsMessagingExtensionsSearchAuthConfigBot.cs для обновления или добавления токена в магазине:
+    Если вы используете подключение OAuth, добавьте следующий код в файл TeamsMessagingExtensionsSearchAuthConfigBot.cs для обновления или добавления маркера в магазине:
     
    ```C#
    protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
@@ -116,7 +116,7 @@ ms.locfileid: "52566203"
 
 ## <a name="see-also"></a>См. также
 
-* [Добавление аутентификации в расширения обмена сообщениями](add-authentication.md)
-* [Используйте SSO для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md)
+* [Добавление проверки подлинности в расширения обмена сообщениями](add-authentication.md)
+* [Использование SSO для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md)
 * [Развертывание ссылки](link-unfurling.md)
 

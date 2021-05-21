@@ -1,20 +1,20 @@
 ---
-title: Создание вкладки каналов и групп с ASP.NET MVC
+title: Создание вкладки каналов и групп с ASP.NET Core MVC
 author: laujan
 description: Руководство quickstart по созданию настраиваемой вкладки канала и группы с ASP.NET Core MVC
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 9d89fd98bae9732a8f9e2d34b82d7fc0e6985e01
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: ea929edf5a281a4bb80a37b2d5c6e19c82fce6e4
+ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020312"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52580464"
 ---
-# <a name="create-a-custom-channel-and-group-tab-with-aspnet-core-mvc"></a>Создание настраиваемой вкладки канала и группы с ASP.NET MVC
+# <a name="create-a-custom-channel-and-group-tab-with-aspnet-core-mvc"></a>Создание настраиваемой вкладки канала и группы ASP.NET Core MVC
 
-В этом quickstart мы создам настраиваемую вкладку channel/group с C# и ASP.Net core MVC. Кроме того, мы будем использовать [App Studio для Microsoft Teams](~/concepts/build-and-test/app-studio-overview.md) для окончательного развертывания манифеста приложения и развертывания вкладки в Teams.
+В этом quickstart мы создам настраиваемую вкладку channel/group с C# и ASP.Net core MVC. Мы также используем [App Studio для](~/concepts/build-and-test/app-studio-overview.md) Microsoft Teams манифеста приложения и развертывания вкладки Teams.
 
 [!INCLUDE [dotnet-core-prereq](~/includes/tabs/dotnet-core-prereq.md)]
 
@@ -38,7 +38,7 @@ git clone https://github.com/OfficeDev/microsoft-teams-sample-tabs.git
 
 ### <a name="startupcs"></a>Startup.cs
 
-Этот проект был создан из пустого шаблона ASP.NET Core 2.2 веб-приложения с расширенным - Настройка для *httpS-окна,* выбранного при установке. Службы MVC регистрируются методом впрыскивания `ConfigureServices()` зависимостей. Кроме того, пустой шаблон не позволяет обслуживать статическое содержимое по умолчанию, поэтому к методу добавляется среднее по статическим `Configure()` файлам:
+Этот проект был создан из пустого шаблона ASP.NET Core 2.2 веб-приложения с расширенным — настройка для контрольного окна *HTTPS,* выбранного при установке. Службы MVC регистрируются методом впрыскивания `ConfigureServices()` зависимостей. Кроме того, пустой шаблон не позволяет обслуживать статическое содержимое по умолчанию, поэтому к методу добавляется среднее по статическим `Configure()` файлам:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -54,7 +54,7 @@ public void Configure(IApplicationBuilder app)
 
 ### <a name="wwwroot-folder"></a>папка wwwroot
 
-В ASP.NET Core веб-корневая папка — это место, где приложение ищет статические файлы.
+В ASP.NET Core веб-корневой папке приложение ищет статические файлы.
 
 ### <a name="appmanifest-folder"></a>Папка AppManifest
 
@@ -64,11 +64,11 @@ public void Configure(IApplicationBuilder app)
 - Прозрачный **значок контура** размером 32 x 32 пикселя.
 - Файл **manifest.js,** который указывает атрибуты приложения.
 
-Эти файлы необходимо использовать в пакете приложений для отправки вкладки в Teams.
+Эти файлы необходимо использовать в пакете приложений для загрузки вкладки в Teams.
 
 ### <a name="csproj"></a>.csproj
 
-В окне Visual Studio обозревателя решений щелкните правой кнопкой мыши по проекту и выберите **Файл редактирования проекта.** В нижней части файла вы увидите код, который создает и обновляет папку zip при создании приложения:
+В окне Visual Studio Обозреватель решений щелкните правой кнопкой мыши по проекту и выберите **Изменить Project файл**. В нижней части файла вы увидите код, который создает и обновляет папку zip при создании приложения:
 
 ```xml
 <PropertyGroup>
@@ -100,7 +100,7 @@ ASP.NET Core обрабатывает файлы под названием *Inde
 
 #### <a name="shared"></a>Shared
 
-Частичная разметка *_Layout.cshtml* содержит общую структуру страницы приложения и общие визуальные элементы. Он также будет ссылаться на библиотеку teams.
+Частичная разметка *_Layout.cshtml* содержит общую структуру страницы приложения и общие визуальные элементы. Он также будет ссылаться на Teams библиотеку.
 
 ### <a name="controllers"></a>Контроллеры
 
@@ -110,9 +110,9 @@ ASP.NET Core обрабатывает файлы под названием *Inde
 
 - Откройте командную подсказку в корневом каталоге проекта и запустите следующую команду:
 
-```bash
-ngrok http https://localhost:443560 -host-header="localhost:44360"
-```
+    ```bash
+    ngrok http https://localhost:443560 -host-header="localhost:44360"
+    ```
 
 - Ngrok будет прослушивать запросы из Интернета и перенанастрает их в ваше приложение, когда оно запущено в порту 44355.  Он должен `https://y8rCgT2b.ngrok.io/` напоминать, где *y8rCgT2b* заменяется url-адресом https ngrok alpha-numeric HTTPS.
 
@@ -120,8 +120,6 @@ ngrok http https://localhost:443560 -host-header="localhost:44360"
 
 ## <a name="update-your-application"></a>Обновление приложения
 
-В **Tab.cshtml** приложение представляет пользователю две кнопки параметра для отображения вкладки с красным или серым значком. Выбор кнопки **Выберите серый** или **выберите** красный или, соответственно, задает и включает кнопку Сохранить `saveGray()` на странице `saveRed()` `settings.setValidityState(true)` конфигурации.  Этот код позволяет Teams узнать, что вы удовлетворили требования к конфигурации и установка может продолжиться. При сохранения `settings.setSettings` заданы параметры. Наконец, `saveEvent.notifySuccess()` называется, чтобы указать, что URL-адрес контента успешно решен.
+В **Tab.cshtml** приложение представляет пользователю две кнопки параметра для отображения вкладки с красным или серым значком. Выбор кнопки **Выберите серый** или **выберите** красный или, соответственно, задает и включает кнопку Сохранить `saveGray()` на странице `saveRed()` `settings.setValidityState(true)` конфигурации.  Этот код позволяет Teams, что вы удовлетворяли требованиям конфигурации и установка может продолжиться. При сохранения `settings.setSettings` заданы параметры. Наконец, `saveEvent.notifySuccess()` называется, чтобы указать, что URL-адрес контента успешно решен.
 
 [!INCLUDE [dotnet-update-app](~/includes/tabs/dotnet-update-chan-grp-app.md)]
-
-[!INCLUDE [dotnet-upload-to-teams](~/includes/tabs/dotnet-upload-to-teams.md)]
