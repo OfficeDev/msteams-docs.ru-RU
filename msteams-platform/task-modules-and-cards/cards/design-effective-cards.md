@@ -4,18 +4,18 @@ description: Узнайте, как создать адаптивные карт
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 14ffff1264e716e04a1ffb5549b71a8b7ec5fc14
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: b4d5f43268c7bd5afecb56d26eb0d49ed6c9002b
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101739"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630313"
 ---
 # <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a>Разработка адаптивных карт для Microsoft Teams приложения
 
 Адаптивная карта содержит свободный набор элементов карт и необязательный набор действий. Адаптивные карты — это фрагменты контента, которые можно добавить в беседу с помощью бота или расширения обмена сообщениями. С помощью текстовых, графических и кнопок эти карточки обеспечивают насыщенную связь для вашей аудитории.
 
-База адаптивной карты используется во многих продуктах Майкрософт, включая Teams. Вы можете отправлять карточки внутри сообщений пользователям с помощью ботов или расширений обмена сообщениями. Пользователи могут принимать меры на картах при их настоящем действии.
+База адаптивной карты используется во многих продуктах Майкрософт, включая Teams. Вы можете отправлять карточки внутри сообщений пользователям с помощью ботов или расширений обмена сообщениями. Пользователи также могут принимать меры на картах при их настоящем действии.
 
 :::image type="content" source="../../assets/images/adaptive-cards/adaptive-card-overview.png" alt-text="Пример адаптивной карты." border="false":::
 
@@ -39,73 +39,151 @@ ms.locfileid: "52101739"
 
 Наша самая большая карта. Используйте для общего доступа к статьям или сценариям, в которых изображение рассказывает большую часть истории.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/hero-card.png" alt-text="В примере показана карта героя адаптивной карты." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-hero-card.png" alt-text="В примере показана карта героя адаптивной карты на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="thumbnail"></a>Эскиз
 
 Используйте для отправки простого действия сообщения.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/thumbnail-card.png" alt-text="В примере показана карта адаптивной карты." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-thumbnail-card.png" alt-text="В примере показана карта адаптивных карт на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="list"></a>List
 
 Используйте в сценариях, в которых пользователь должен выбрать элемент из списка, но для этих элементов не требуется много объяснений.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/list-card.png" alt-text="В примере показана карта списка адаптивной карты." border="false":::
 
-### <a name="digest"></a>Digest
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-Используйте для дайджестов новостей и публикаций обнаглеть. Примечание. Рекомендуется использовать карту эскиза для одного обновления или элемента новостей.
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-list-card.png" alt-text="В примере показана карта списка адаптивных карт на мобильном телефоне." border="false":::
 
-:::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="В примере показана карта дайджест адаптивной карты." border="false":::
+---
+Use for news digests and round-up posts. Note: We recommend the thumbnail card for a single update or news item.
+':::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="Example shows an Adaptive Card digest card." border="false"::': null
+':::image type="content" source="../../assets/images/adaptive-cards/mobile-digest-card.png" alt-text="Example shows an Adaptive Card digest card on mobile." border="false"::': null
+---
 
-### <a name="media"></a>Media
+### <a name="media"></a>Мультимедиа
 
 Используйте, когда нужно сочетать текст и носители, например аудио или видео.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/media-card.png" alt-text="В примере показана медиакарда Adaptive Card." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-media-card.png" alt-text="В примере показана медиакарда Adaptive Card на мобильном телефоне." border="false":::
+
+---
 
 ### <a name="people"></a>Люди
 
 Лучше всего использовать для эффективного передачи данных о том, кто участвует в работе с задачей.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/people-card.png" alt-text="В примере показана карточка людей адаптивной карты." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-people-card.png" alt-text="В примере показана карточка людей адаптивной карты на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="request-ticket"></a>Запрос билета
 
 Используйте для получения быстрых входных данных от пользователя, чтобы автоматически создать задачу или билет.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/request-ticket-card.png" alt-text="В примере показана карточка запроса на адаптивную карту." border="false":::
 
-### <a name="imageset"></a>ImageSet
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-request-ticket-card.png" alt-text="В примере показана карточка для запроса билетов адаптивной карты на мобильный телефон." border="false":::
+
+---
+
+### <a name="image-set"></a>Набор изображений
 
 Используйте для отправки нескольких эскизов изображений.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/image-set-card.png" alt-text="В примере показана карта набора изображений адаптивной карты." border="false":::
 
-### <a name="actionset"></a>ActionSet
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-image-set-card.png" alt-text="В примере показана карта набора изображений адаптивной карты на мобильных устройствах." border="false":::
+
+---
+
+### <a name="action-set"></a>Набор действий
 
 Используйте для выбора кнопки пользователю, а затем соберем дополнительный ввод пользователя с той же карты.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/action-set-card.png" alt-text="В примере показана карта набора действий адаптивной карты." border="false":::
 
-### <a name="choiceset"></a>ChoiceSet
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-action-set-card.png" alt-text="В примере показана карта набора действий адаптивной карты на мобильном телефоне." border="false":::
+
+---
+
+### <a name="choice-set"></a>Набор выбора
 
 Используйте для сбора нескольких входных данных от пользователя.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/adaptive-cards/choice-set-card.png" alt-text="В примере показана карта выбора адаптивной карты." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-choice-set-card.png" alt-text="В примере показана карта выбора адаптивной карты на мобильном телефоне." border="false":::
+
+---
 
 ## <a name="anatomy"></a>Анатомия
 
-:::image type="content" source="../../assets/images/adaptive-cards/anatomy.png" alt-text="В примере показана карта анатомии адаптивной карты." border="false":::
+Адаптивные карты имеют большую гибкость. Но как минимум мы настоятельно рекомендуем включить следующие компоненты в каждую карту.
 
-Адаптивные карты имеют большую гибкость. Но как минимум мы настоятельно рекомендуем включить в каждую карту следующие компоненты:
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
+:::image type="content" source="../../assets/images/adaptive-cards/anatomy.png" alt-text="В EExample показана анатомия адаптивной карты." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-anatomy.png" alt-text="В примере показана анатомия адаптивной карты на мобильных устройствах." border="false":::
+
+---
 
 |Счетчик|Описание|
 |----------|-----------|
-|A|**Заглавная:** Сделать заглавные заготки четкими и краткими, но описательными.|
-|B|**Копия тела.** Используйте для передачи слишком длинных или недостаточно важных деталей для включаемой в заголовок.|
-|C|**Основные** действия. В качестве наилучшей практики включаем 1-3 основных действия. Разрешено не более шести.|
+|A|**Заглавка.** Сделайте заготки четкими и краткими.|
+|B|**Копия тела.** Передай сведения, которые слишком длинные или недостаточно важные, чтобы включить в заголовник.|
+|C|**Основные** действия. В качестве наилучшей практики включаем 1-3 основных действия. Вы можете иметь до шести.|
 
 ## <a name="best-practices"></a>Рекомендации
 

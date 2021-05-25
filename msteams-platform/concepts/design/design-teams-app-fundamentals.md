@@ -1,20 +1,20 @@
 ---
-title: Разработка приложения — понимание основ
-description: Узнайте об основах разработки приложения Microsoft Teams, включая макет, цветовую схему и другие.
+title: Разработка приложения . Понимание системы проектирования
+description: Узнайте об основах разработки Microsoft Teams, включая макет, цветовую схему и другие.
 author: heath-hamilton
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: overview
-ms.openlocfilehash: c0edfe7ac538fc27b7f255cdd09d2853f6f4cebc
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 0af2a22200e62be9289f167b0306c9769366e46a
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020774"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630844"
 ---
-# <a name="microsoft-teams-app-design-fundamentals"></a>Основы разработки приложений Microsoft Teams
+# <a name="microsoft-teams-app-design-system"></a>Microsoft Teams системы разработки приложений
 
-Быстро узнайте об основах разработки приложений Teams. Всесторонние рекомендации и примеры можно найти в наборе пользовательского интерфейса <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Microsoft Teams (Figma).</a>
+Быстро узнайте об основах разработки Teams приложения. Всесторонние рекомендации и примеры можно найти в <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Microsoft Teams пользовательского интерфейса (Figma).</a>
 
 ## <a name="layout"></a>Макет
 
@@ -22,13 +22,14 @@ ms.locfileid: "52020774"
 
    :::column span="3":::
 
-      Teams использует макет сетки для обеспечения последовательных и элегантных связей между компонентами разработки. Базовый блок сетки с 4 пикселями позволяет компонентам последовательно масштабироваться во всех размерах отображения в Teams.
+      Teams для обеспечения последовательных и элегантных связей между компонентами дизайна зависит от макета сетки. Базовый блок сетки с 4 пикселями позволяет компонентам последовательно масштабироваться во всех размерах отображения в Teams.
 
-      <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по макету (Figma)</a>
+      * [Полное руководство по макету (Figma)](https://www.figma.com/community/file/916836509871353159)
+      * [Реализация макета (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/layout)
 
    :::column-end:::
    :::column span="1":::
-      :::image type="content" source="../../assets/images/design-guidelines/teams-layout.png" alt-text="Концептуальное изображение для набора пользовательского интерфейса Microsoft Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-layout.png" alt-text="Концептуальное изображение Teams макета." border="false":::
    :::column-end:::
 
 :::row-end:::
@@ -41,12 +42,52 @@ ms.locfileid: "52020774"
 
       Аватар — это графическое представление человека, команды, бота или объекта в Teams. Группа аватаров часто используется для передачи живой активности или представления реестра таким образом, чтобы сохранить вертикальное пространство. 
 
-      <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по аватарам (Figma)</a>
+      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по аватарам (Figma)</a>
 
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-avatars.png" alt-text="Концептуальное изображение для набора пользовательского интерфейса Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-avatars.png" alt-text="Концептуальное изображение Teams аватаров." border="false":::
+
+   :::column-end:::
+:::row-end:::
+
+## <a name="icons"></a>Значки
+
+:::row:::
+
+   :::column span="3":::
+
+      Основной значок приложения может пройти долгий путь для передачи вашего бренда Teams пользователям. Получение правильного оформления значка также важно для [публикации](../../concepts/build-and-test/apps-package.md) приложения в Teams магазине.
+
+      Вы также можете использовать значки пользовательского интерфейса Fluent во всем приложении:
+
+      * <a href="https://www.figma.com/community/file/836835755999342788" target="_blank">Получите последний набор значков Fluent (Figma)</a>
+      * [Реализация значков (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/icons)
+
+   :::column-end:::
+   :::column span="1":::
+
+      :::image type="content" source="../../assets/images/design-guidelines/teams-iconography.png" alt-text="Концептуальное изображение Teams значков." border="false":::
+
+   :::column-end:::
+:::row-end:::
+
+## <a name="type"></a>Type
+
+:::row:::
+
+   :::column span="3":::
+
+      Teams использует пользовательский интерфейс Segoe для своей рампы типа и различных размеров шрифтов и весов для создания иерархии и обеспечения читаемости.
+
+      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">См. рекомендации по полному типу (Figma)</a>
+      * [Реализация типографии (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/typography)
+
+   :::column-end:::
+   :::column span="1":::
+
+      :::image type="content" source="../../assets/images/design-guidelines/teams-typography.png" alt-text="Концептуальный образ Teams типографии." border="false":::
 
    :::column-end:::
 :::row-end:::
@@ -57,53 +98,33 @@ ms.locfileid: "52020774"
 
    :::column span="3":::
 
-      Веб-и настольные группы teams поддерживают темы по умолчанию (светлые), темные и высоко контрастные, а мобильные группы поддерживают светлые и темные темы. Каждая тема имеет свою цветовую схему.
+      Teams и настольные компьютеры поддерживают темы по умолчанию (светлые), темные и высоко контрастные, а Teams поддерживают светлые и темные темы. Каждая тема имеет свою цветовую схему.
 
-      <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по цвету и доступные маркеры цвета (Figma)</a>
+      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по цвету и доступные маркеры цвета (Figma)</a>
+      * [Реализация цветов (fluent UI)](https://fluentsite.z22.web.core.windows.net/0.51.7/colors)
 
    :::column-end:::
    :::column span="1":::
-      :::image type="content" source="../../assets/images/design-guidelines/teams-color.png" alt-text="Образ концепции для набора пользовательского интерфейса Microsoft Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-color.png" alt-text="Образ концепции Teams цветов." border="false":::
    :::column-end:::
 
 :::row-end:::
 
-## <a name="iconography"></a>Иконография
+## <a name="shape-and-elevation"></a>Форма и высота
 
 :::row:::
 
    :::column span="3":::
 
-      Приложения teams используют значки, предоставляемые пользовательским интерфейсом Fluent.
+      Вы можете использовать форму и высоту для создания дополнительной иерархии в приложении. 
 
-### <a name="resources"></a>Ресурсы
-
-      * <a href="https://www.figma.com/community/file/836835755999342788" target="_blank">См. последние значки Fluent (Figma)</a>
-      * <a href="https://aka.ms/fluent-ui-icons" target="_blank">Попробуйте значки Fluent (Fluent UI)</a>
-      * <a href="https://github.com/microsoft/fluentui-system-icons" target="_blank">Получите библиотеку значков Fluent (GitHub)</a>
+      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">См. инструкции по полной форме и высоте (Figma)</a>
+      * [Реализация формы и высоты (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/elevation)
 
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-iconography.png" alt-text="Концептуальная иллюстрация для набора пользовательского интерфейса Microsoft Teams." border="false":::
-
-   :::column-end:::
-:::row-end:::
-
-## <a name="typography"></a>Шрифтовое оформление
-
-:::row:::
-
-   :::column span="3":::
-
-      Teams использует пользовательский интерфейс Segoe для своей рампы типа и различных размеров шрифтов и весов, чтобы помочь создать иерархию и обеспечить читаемость.
-
-      <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по типографии (Figma)</a>
-
-   :::column-end:::
-   :::column span="1":::
-
-      :::image type="content" source="../../assets/images/design-guidelines/teams-typography.png" alt-text="Концептуальная фигура для набора пользовательского интерфейса Microsoft Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/shape-and-elevation.png" alt-text="Концептуальные формы и высоты." border="false":::
 
    :::column-end:::
 :::row-end:::
@@ -114,32 +135,14 @@ ms.locfileid: "52020774"
 
    :::column span="3":::
 
-      Чтобы почувствовать себя частью Teams, ваша копия приложения в целом должна следовать этим принципам голосовой поддержки [Майкрософт:](https://docs.microsoft.com/style-guide/brand-voice-above-all-simple-human)теплый и расслабленный, четкий и ясный, и готовы протянуть руку.
+      Чтобы почувствовать себя частью Teams, ваша копия приложения в целом должна следовать этим принципам голосовой поддержки [Майкрософт:](/style-guide/brand-voice-above-all-simple-human)теплый и расслабленный, четкий и ясный, и готовы протянуть руку.
 
-      <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по копированию и контенту, включая написание для ботов (Figma)</a>
-
-   :::column-end:::
-   :::column span="1":::
-
-      :::image type="content" source="../../assets/images/design-guidelines/teams-copy-and-content.png" alt-text="Концептуальное изображение для набора пользовательского интерфейса Microsoft Teams." border="false":::
-
-   :::column-end:::
-:::row-end:::
-
-## <a name="brand-expression"></a>Выражение бренда
-
-:::row:::
-
-   :::column span="3":::
-
-      Значок приложения может пройти долгий путь для передачи вашего бренда пользователям Teams. Получение правильного оформления значка также важно для [публикации приложения](../../concepts/build-and-test/apps-package.md) в AppSource.
-
-      <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по выражению бренда (Figma)</a>
+      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по копированию и контенту, включая написание для ботов (Figma)</a>
 
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-branding.png" alt-text="Концептуальная форма для набора пользовательского интерфейса Microsoft Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-copy-and-content.png" alt-text="Концептуальное изображение копирования и контента." border="false":::
 
    :::column-end:::
 :::row-end:::

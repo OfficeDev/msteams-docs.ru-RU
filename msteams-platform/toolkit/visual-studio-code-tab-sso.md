@@ -5,12 +5,12 @@ keywords: команды visual studio code toolkit tabs sso graph authenticatio
 localization_priority: Normal
 ms.topic: how-to
 ms.author: lajanuar
-ms.openlocfilehash: 11e642ce335dae4344f1c730b73763e9172fd76c
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: b2ba9eb27d00f07ec46ddfe0c1cc13ed0864bbbc
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566833"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630994"
 ---
 # <a name="single-sign-on-authentication-with-teams-toolkit-and-visual-studio-code-for-tabs"></a>Проверка подлинности с одним входом с Teams набор средств и Visual Studio Code для вкладок
 
@@ -50,4 +50,4 @@ ms.locfileid: "52566833"
 
 ## <a name="see-also"></a>См. также
 
-- [Создание приложений с помощью Microsoft Teams набор средств и Visual Studio Code](visual-studio-code-overview.md)
+[Создание приложений с помощью Microsoft Teams набор средств и Visual Studio Code](visual-studio-code-overview.md)

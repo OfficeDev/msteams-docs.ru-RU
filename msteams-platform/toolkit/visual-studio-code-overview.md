@@ -5,12 +5,12 @@ keywords: команда визуальный набор кода студии
 localization_priority: Normal
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: efd0962e9c4c0d64dbac47caf29b2e56907937b3
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: d51ccf3ed62e22fb417eec72d1f409b1b77b9da6
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566560"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629839"
 ---
 # <a name="build-apps-with-the-teams-toolkit-and-visual-studio-code"></a>Создание приложений с помощью Teams набор средств и Visual Studio Code
 
@@ -45,7 +45,7 @@ ms.locfileid: "52566560"
 
 1. В Visual Studio Code выберите значок Teams ![Значок Teams](../assets/icons/favicon-16x16.png) из панели действий в левой части окна.
 1. Выберите **пакет импортных приложений** из меню команды.
-1. Выберите существующий [Teams почтовый файл пакета](../concepts/build-and-test/apps-package.md) приложений.
+1. Выберите существующий файл Teams [пакетов](/microsoftteams/platform/concepts/build-and-test/apps-package?view=msteams-client-js-latest&preserve-view=true) приложений.
 1. Выберите **кнопку Выбор пакета публикации.** Теперь вкладка конфигурации инструментария должна заполняться сведениями о приложении.
 1. В Visual Studio Code выберите **папку Добавить** файл в рабочее пространство, чтобы добавить каталог исходных кодов  ->   в Visual Studio Code рабочей области.
 
@@ -55,7 +55,7 @@ ms.locfileid: "52566560"
 
   1. Клиент Microsoft Teams (веб-, настольный или мобильный), где пользователи взаимодействуют с вашим приложением.
   1. Сервер, который отвечает на запросы контента, который будет отображаться в Teams. Например, содержимое htmL-вкладок или адаптивная карта бота.
-  1. Пакет [Teams, состоящий](/concepts/build-and-test/apps-package.md) из трех файлов:
+  1. Пакет Teams состоит из трех файлов:
 
       > [!div class="checklist"]
       >
@@ -83,7 +83,7 @@ ms.locfileid: "52566560"
 
 ### <a name="enable-development-from-localhost"></a>Включить разработку из localhost
 
-Если вы хотите отчудить приложение на основе вкладок на локальном канале с помощью HTTPS, вам потребуется сообщить браузеру, чтобы он доверял приложению, которое обслуживается из <https://localhost> . Перейдите по адресу <https://localhost:3000/tab>. Если вы видите предупреждение, указывающее на то, что сайту не доверяют, выберите вариант, чтобы продолжить работу в любом случае. Теперь ваше приложение должно быть доступно Teams клиента.
+Если вы хотите отчудить приложение на основе вкладок на локальном канале с помощью HTTPS, вам потребуется сообщить браузеру, чтобы он доверял приложению, которое обслуживается из `<https://localhost>` . Перейдите по адресу `<https://localhost:3000/tab>`. Если вы видите предупреждение, указывающее на то, что сайту не доверяют, выберите вариант, чтобы продолжить работу в любом случае. Теперь ваше приложение должно быть доступно Teams клиента.
 
 ### <a name="run-your-app-in-teams"></a>Запустите приложение в Teams
 

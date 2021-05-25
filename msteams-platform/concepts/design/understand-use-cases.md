@@ -5,12 +5,12 @@ description: При планировании Microsoft Teams сначала не
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: b1d51dd126f237584b5c53ca053cdd13bc470d0b
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: 7e91ddcab88243baf83f11fad59539845724fc78
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101788"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630763"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -79,7 +79,7 @@ ms.locfileid: "52101788"
 
 ## <a name="see-also"></a>См. также
 
-* [Выбор способа распространения приложения](../deploy-and-publish/overview.md)
+* [Выбор способа распространения приложения](../deploy-and-publish/apps-publish-overview.md)
 * [Вкладки разработки](../../tabs/design/tabs.md)
 * [Конструкторские боты](../../bots/design/bots.md)
 

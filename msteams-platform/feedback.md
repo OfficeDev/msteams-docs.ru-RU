@@ -4,12 +4,12 @@ description: Группа Microsoft Teams отвечает сообществу 
 localization_priority: Normal
 ms.topic: reference
 keywords: Команды отзывают разработчиков вопросы о проблемах, которые возникают при запросе поддержки запросов на ошибки в обсуждениях сообщества
-ms.openlocfilehash: 0ced6a6e593f38e42833a81df9a22f4919b8c5bb
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: b052b50bdafd542904bf3a9dfc6ee9d1ad5cf769
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566168"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630483"
 ---
 # <a name="microsoft-teams-developer-community-channels"></a>Microsoft Teams каналов сообщества разработчиков
 
@@ -24,7 +24,7 @@ Microsoft Teams разработчики используют переполне
 |  **Обновления документации**           |     Выберите **Изменение** в статье, которая необходимо обновить, и отправьте запрос на Microsoft Teams документацию GitHub репозиторию. [](https://github.com/MicrosoftDocs/msteams-docs)                                                                                                                                                           |
 |       **Предложения функций**       |                                                                                                                                                                      Публикация предложений о функциях [на Microsoft Teams на портале отзывов на UserVoice](https://microsoftteams.uservoice.com/forums/555103-public-preview/category/182881-developer-platform).                                                                                                                                                                      |
 |       **Общие вопросы**         |Отправка общих вопросов о платформе Microsoft Teams разработчика в [Microsoft Teams Community справку](mailto:microsoftteamsdev@microsoft.com). Мы рекомендуем отправлять вопросы по указанным здесь каналам и использовать электронную почту только в том случае, если другой способ связи не применяется.                                                                                                                                                                      |
-|        **Примеры**         | Отправка проблем с образцами в [репозиторий Microsoft Teams Samples.](/microsoftteams/platform/tutorials/code-samples)|
+|        **Примеры**         | Отправка проблем с образцами в [репозиторий Microsoft Teams Samples.](https://github.com/OfficeDev/Microsoft-Teams-Samples)|
 |           **Вопросы или предложения tab SDK**          |         Отправка проблем и запросов на функции в репозиторий SDK для Microsoft Teams [JavaScript Library](https://github.com/OfficeDev/microsoft-teams-library-js/issues). Используйте тег для публикации вопросов о `microsoft-teams` SDK при [переполнении стека.](https://stackoverflow.com/questions/tagged/microsoft-teams)                                                                                                                                                                            |
 
 ## <a name="product-support-channels"></a>Каналы поддержки продуктов

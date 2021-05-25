@@ -5,12 +5,12 @@ ms.topic: reference
 keywords: команды проявляют схему Developer Preview
 localization_priority: Normal
 ms.date: 05/20/2019
-ms.openlocfilehash: b52d52f96312dc2978844b07a0f7ebb1d817166d
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 333ed556ba8ba59c66f66d7eaa41dd0ea66dca0a
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566707"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629867"
 ---
 # <a name="developer-preview-manifest-schema-for-microsoft-teams"></a>Схема манифеста предварительного просмотра разработчика для Microsoft Teams
 
@@ -186,6 +186,27 @@ ms.locfileid: "52566707"
      "mysite.someplace.com",
      "othersite.someplace.com"
   ],
+  "webApplicationInfo": {
+    "id": "AAD App ID",
+    "resource": "Resource URL for acquiring auth token for SSO",
+    "applicationPermissions": [
+      "TeamSettings.Read.Group",
+      "ChannelSettings.Read.Group",
+      "ChannelSettings.Edit.Group",
+      "Channel.Create.Group",
+      "Channel.Delete.Group",
+      "ChannelMessage.Read.Group",
+      "TeamsApp.Read.Group",
+      "TeamsTab.Read.Group",
+      "TeamsTab.Create.Group",
+      "TeamsTab.Edit.Group",
+      "TeamsTab.Delete.Group",
+      "Member.Read.Group",
+      "Owner.Read.Group",
+      "Member.ReadWrite.Group",
+      "Owner.ReadWrite.Group"
+    ],
+  },
    "configurableProperties": [
      "name",
      "shortDescription",
@@ -286,7 +307,7 @@ URL https:// ссылки на схему JSON для манифеста.
 |`short`|30 символов|✔|Короткое имя отображения приложения.|
 |`full`|100 символов||Полное имя приложения, используемого, если полное имя приложения превышает 30 символов.|
 
-## <a name="description"></a>description
+## <a name="description"></a>(описание)
 
 **Required**
 
@@ -484,6 +505,7 @@ URL https:// ссылки на схему JSON для манифеста.
 |---|---|---|---|---|
 |`id`|Строка|36 символов|✔|AAD-id приложения приложения. Этот id должен быть GUID.|
 |`resource`|Строка|2048 символов|✔|URL-адрес ресурса приложения для приобретения маркера auth для SSO.|
+|`applicationPermissions`|Массив|Не более 100 элементов|✔|Разрешения ресурсов для приложения.|
 
 ## <a name="configurableproperties"></a>configurableProperties
 

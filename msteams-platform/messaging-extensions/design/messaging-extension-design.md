@@ -6,12 +6,12 @@ author: heath-hamilton
 localization_priority: Normal
 ms.author: qinch
 ms.topic: conceptual
-ms.openlocfilehash: ed1f0f2eb2ce8d429a8a780bd2c4c4eb421d6d54
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: fd870d8e10ef74c36f8f6d145d48980f53e9303c
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566217"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52631074"
 ---
 # <a name="designing-your-microsoft-teams-messaging-extension"></a>Разработка расширения Microsoft Teams обмена сообщениями
 
@@ -29,12 +29,20 @@ ms.locfileid: "52566217"
 
 Расширение обмена сообщениями можно добавить в следующих Teams контекстах:
 
-* Взять в магазине Teams (AppSource)
+* Из Teams магазина.
 * В канале, чате или собрании (до, во время и после) рядом с полем составить. Стоит отметить, что если в одном из этих мест добавлено расширение обмена сообщениями, его можно использовать только в этом контексте.
 
 В следующем примере показано, как добавить расширение обмена сообщениями в канале:
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/add-in-channel.png" alt-text="В примере показано, как добавить расширение обмена сообщениями рядом с окне составить в канале." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-add-in-channel.png" alt-text="В примере показано, как добавить расширение обмена сообщениями рядом с окне составить в канале на мобильном телефоне." border="false":::
+
+---
 
 ## <a name="set-up-a-messaging-extension"></a>Настройка расширения обмена сообщениями
 
@@ -42,7 +50,15 @@ ms.locfileid: "52566217"
 
 Чтобы обеспечить согласованность Teams приложений, нельзя настроить экран входного знака. При использовании проверки подлинности с одним входом (SSO) пользователи автоматически подписываются.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/set-up.png" alt-text="В примере показан экран установки расширения обмена сообщениями с кнопкой вход." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-set-up.png" alt-text="В примере показан экран установки расширения обмена сообщениями с кнопкой вход на мобильный телефон." border="false":::
+
+---
 
 ## <a name="types-of-messaging-extensions"></a>Типы расширений обмена сообщениями
 
@@ -52,7 +68,15 @@ ms.locfileid: "52566217"
 
 С помощью команд поиска люди могут использовать расширение обмена сообщениями для быстрого поиска внешнего контента и вставки в сообщение. Команды поиска обычно доступны в окне составить. Например, вы можете начать или добавить в обсуждение, поделившись частью контента, не покидая Teams.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/search-command-type.png" alt-text="В примере показано расширение обмена сообщениями на основе поиска, запущенное из окна составить." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-search-command-type.png" alt-text="В примере показано расширение обмена сообщениями на основе поиска, запущенное из окна составить на мобильных устройствах." border="false":::
+
+---
 
 #### <a name="compose-box-layout-options"></a>Параметры композитного макета полей
 
@@ -72,9 +96,17 @@ ms.locfileid: "52566217"
 
 ### <a name="from-the-compose-box"></a>Из окне композит
 
-После добавления пользователи могут открыть расширение обмена сообщениями, выбрав значок приложения под полем составить. В этом примере расширение имеет команды поиска и действий:
+После добавления пользователи могут открыть расширение обмена сообщениями, выбрав значок приложения под полем составить. В этих примерах расширение имеет команды поиска и действий.
+
+# <a name="desktop"></a>[Desktop](#tab/desktop)
 
 :::image type="content" source="../../assets/images/messaging-extension/open-from-compose-box.png" alt-text="В примере показано, как открыть расширение обмена сообщениями из окна составить." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-compose-box.png" alt-text="В примере показано, как открыть расширение обмена сообщениями из окна составить на мобильном телефоне." border="false":::
+
+---
 
 ### <a name="from-a-chat-message-or-channel-post"></a>Из сообщения чата или сообщения канала
 
@@ -85,11 +117,18 @@ ms.locfileid: "52566217"
 
 #### <a name="chat-message"></a>Сообщение чата
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/open-from-chat-message.png" alt-text="В примере показано, как открыть расширение обмена сообщениями из сообщения чата." border="false":::
 
-#### <a name="channel-post"></a>Сообщение канала
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-:::image type="content" source="../../assets/images/messaging-extension/open-from-channel-post.png" alt-text="В примере показано, как открыть расширение обмена сообщениями из сообщения канала." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-chat-post.png" alt-text="В примере показано, как открыть расширение обмена сообщениями из сообщения чата на мобильном телефоне." border="false":::
+
+---
+':::image type="content" source="../../assets/images/messaging-extension/open-from-channel-post.png" alt-text="Example shows how to open a messaging extension from a channel post on mobile." border="false"::': null
+':::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-channel-post.png" alt-text="Example shows how to open a messaging extension from a channel post on mobile." border="false"::': null
+---
 
 ## <a name="use-a-messaging-extension"></a>Использование расширения обмена сообщениями
 
@@ -99,21 +138,53 @@ ms.locfileid: "52566217"
 
 **1. Выберите расширение обмена сообщениями.** Пользователи могут искать содержимое, которое они хотят поделиться из окна составить.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/insert-content-search.png" alt-text="В примере показано, как пользователь ищет содержимое для вставки из окне композитной записи." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки из окна записи на мобильном телефоне." border="false":::
+
+---
 
 **2. Вставьте содержимое**. После публикации другие могут отвечать или выбирать содержимое, чтобы увидеть дополнительные сведения в приложении.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/insert-content-posted.png" alt-text="В примере показана публикация контента пользователя в разговоре с каналом." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-posted.png" alt-text="В примере показана публикация контента пользователя в разговоре по каналу на мобильном телефоне." border="false":::
+
+---
 
 ### <a name="take-action-on-a-message"></a>Действие по сообщению
 
 **1. Выберите расширение обмена сообщениями.** Ваше приложение может включать одну или несколько команд действий.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/select-action-command.png" alt-text="В примере показано, как пользователь выбирает команду действий по расширению обмена сообщениями." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-select-action-command.png" alt-text="В примере показано, как пользователь выбирает команду действий по расширению обмена сообщениями на мобильном телефоне." border="false":::
+
+---
 
 **2. Завершить действие**. Ваше приложение может получать и обрабатывать любое содержимое или данные, отправленные действием сообщения. Это позволяет пользователям оставаться в беседе и, в следующем примере, не беспокоиться о вводе сведений непосредственно в вашем приложении.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/complete-action-command.png" alt-text="Пример действий по сообщению." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-complete-action-command.png" alt-text="Пример действий по сообщению на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="preview-links"></a>Предварительные ссылки
 
@@ -121,11 +192,27 @@ ms.locfileid: "52566217"
 
 **1. Вклеить распознаемую ссылку** в поле составить.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/paste-preview-link.png" alt-text="В примере показано, как пользователь вклеит ссылку в поле компоста." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-paste-preview-link.png" alt-text="В примере показано, как пользователь вклеит ссылку в поле компоста на мобильный телефон." border="false":::
+
+---
 
 **2. Вставьте содержимое**. Если ваше приложение распознает URL-адрес в окне композит, оно отрисовка ссылки в качестве карточки, которая обеспечивает богатый контентом предварительный просмотр веб-контента. [(Дополнительные сведения](../../task-modules-and-cards/cards/design-effective-cards.md) см. в рекомендациях по разработке адаптивных карт.)
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/messaging-extension/insert-preview-link.png" alt-text="В примере показано, как URL-адрес, так как он распознается вашим приложением, содержит в окне композитного контента некоторое содержимое." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-preview-link.png" alt-text="В примере показано, как URL-адрес, так как он распознается вашим приложением, содержит некоторые материалы в поле составить на мобильных устройствах." border="false":::
+
+---
 
 ## <a name="manage-a-messaging-extension"></a>Управление расширением обмена сообщениями
 
@@ -136,6 +223,8 @@ ms.locfileid: "52566217"
 ### <a name="messaging-extension-in-the-compose-box"></a>Расширение обмена сообщениями в окне составить
 
 В следующем примере можно привести расширение обмена сообщениями, открытое из окна составить.
+
+# <a name="desktop"></a>[Desktop](#tab/desktop)
 
 :::image type="content" source="../../assets/images/messaging-extension/anatomy-compose.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса расширения обмена сообщениями в окне составить." border="false":::
 
@@ -149,6 +238,21 @@ ms.locfileid: "52566217"
 |6 |**Меню команд действий (необязательный)**: отображает список команд действий (если указаны какие-либо).|
 |7 |**Содержимое приложения.** В первую очередь для отображения результатов поиска. В этом примере используется макет списка (макет сетки — это другой вариант).|
 |8 |**Логотип приложения.** Значок контура логотипа приложения.|
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-anatomy-compose.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса расширения обмена сообщениями в поле составить на мобильных устройствах." border="false":::
+
+|Счетчик|Описание|
+|----------|-----------|
+|1|**Имя приложения.** Полное имя вашего приложения.|
+|2|**Значок меню action commands (необязательный)**: Открывает список команд действий для расширения обмена сообщениями (если вы указываете их).
+|3|**Поле поиска.** Позволяет пользователям находить содержимое приложения, которое они хотят вставить.|
+|4 |**Меню Tab (необязательный)**: предоставляет несколько категорий контента.|
+|5 |**Меню команд действий (необязательный)**: отображает список команд действий (если указаны какие-либо).|
+|6 |**Содержимое приложения.** В первую очередь для отображения результатов поиска.|
+
+---
 
 ### <a name="messaging-extension-management-menu"></a>Меню управления расширением обмена сообщениями
 

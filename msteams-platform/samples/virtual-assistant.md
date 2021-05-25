@@ -4,12 +4,12 @@ description: Создание виртуального помощника бот
 localization_priority: Normal
 ms.topic: how-to
 keywords: команды виртуальных помощников-ботов
-ms.openlocfilehash: 072d9cb5742cd39101587cad32e3048bd36cc1d8
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: dea62a69a08c8d216a17dbd58558435f3cc623e8
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566875"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630735"
 ---
 # <a name="create-virtual-assistant"></a>Создание виртуального помощника 
 
@@ -411,7 +411,7 @@ bf luis:convert --in <pathToLUIS.json> --out <pathToLuFile>
 - `Book room`
 - `Manage Favorites`
 
-Мы создали модель LUIS, понимая эти две команды. Соответствующие секреты должны быть заполнены `cognitivemodels.json` в . Соответствующий файл LUIS JSON находится [здесь](https://github.com/OfficeDev/microsoft-teams-apps-bookaroom/blob/nebhagat/microsoft-teams-apps-bookaroom-skill/Deployment/Resources/LU/book-a-meeting.json).
+Мы создали модель LUIS, понимая эти две команды. Соответствующие секреты должны быть заполнены `cognitivemodels.json` в . Соответствующий файл LUIS JSON находится [здесь](https://github.com/OfficeDev/microsoft-teams-apps-bookaroom/blob/nebhagat/microsoft-teams-apps-bookaroom-skill/Deployment/Resources/LU/en-us/book-a-meeting.json).
 Соответствующий `.lu` файл показан в следующем разделе:
 
 ```
@@ -534,7 +534,7 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
 Чтобы перенаставлять действия карты или действия модуля задач в связанные навыки, навык должен встраить `skillId` в него.
 `Book-a-room` Действие бот-карты, извлечение и отправка полезной нагрузки модуля задач изменены, чтобы содержать `skillId` в качестве параметра. 
 
-Дополнительные сведения можно [получить в этом](https://msteams-captain.visualstudio.com/xGrowth%20App%20Templates/_wiki/wikis/xGrowth.wiki/88/Virtual-Assistant-for-MS-Teams?anchor=rich-cards) разделе из этой документации.
+Дополнительные сведения можно [получить в этом](/microsoftteams/platform/samples/virtual-assistant#add-adaptive-cards-to-your-virtual-assistant) разделе из этой документации.
 
 ### <a name="handle-activities-from-group-chat-or-channel-scope"></a>Обработка действий из группового чата или области канала
 
@@ -555,7 +555,7 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
     }
 ```
 
-Вы также можете использовать существующие навыки из [репозитория Bot Framework Solutions](https://github.com/microsoft/botframework-solutions/tree/master/skills/csharp) или создать новый навык с нуля. Для создания нового навыка см. [в учебниках по созданию нового навыка.](https://microsoft.github.io/botframework-solutions/overview/skills/) Для документации по архитектуре виртуального помощника и навыков см. в[документе Виртуальный помощник и архитектура навыков.](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true)  
+Вы также можете использовать существующие навыки из [репозитория Bot Framework Solutions](https://github.com/microsoft/botframework-components/tree/main/skills/csharp) или создать новый навык с нуля. Для создания нового навыка см. [в учебниках по созданию нового навыка.](https://microsoft.github.io/botframework-solutions/overview/skills/) Для документации по архитектуре виртуального помощника и навыков см. в[документе Виртуальный помощник и архитектура навыков.](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true)  
 
 ## <a name="limitations-of-virtual-assistant"></a>Ограничения виртуального помощника 
 
@@ -566,7 +566,7 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
   * Конфигурация расширений обмена сообщениями не касается отдельных команд, а всего расширения. Это ограничивает конфигурацию для каждого отдельного навыка с помощью виртуального помощника.
   * Командные ИД расширений обмена сообщениями имеют максимальную длину [64](../resources/schema/manifest-schema.md#composeextensions) символа, а для встраиванию сведений о навыках используются 37 символов. Таким образом, обновленные ограничения для командного ID ограничены 27 символами.
 
-Вы также можете использовать существующие навыки из [репозитория Bot Framework Solutions](https://github.com/microsoft/botframework-solutions/tree/master/skills/csharp) или создать новый навык с нуля. Учебники для более позднего можно найти [здесь](https://microsoft.github.io/botframework-solutions/overview/skills/). Обратитесь к [документации для](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) виртуального помощника и архитектуре навыков.
+Вы также можете использовать существующие навыки из [репозитория Bot Framework Solutions](https://github.com/microsoft/botframework-components/tree/main/skills/csharp) или создать новый навык с нуля. Учебники для более позднего можно найти [здесь](https://microsoft.github.io/botframework-solutions/overview/skills/). Обратитесь к [документации для](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) виртуального помощника и архитектуре навыков.
 
 ## <a name="code-sample"></a>Пример кода
 
@@ -578,8 +578,6 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
 
 ## <a name="see-also"></a>См. также
 
-- [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
-
-- [Book-a-room](app-templates.md#book-a-room)
-
-- [Microsoft Teams бот](../bots/what-are-bots.md)
+* [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+* [Book-a-room](app-templates.md#book-a-room)
+* [Microsoft Teams бот](../bots/what-are-bots.md)

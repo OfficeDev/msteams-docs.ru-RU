@@ -5,12 +5,12 @@ description: Руководство quickstart по созданию настр�
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: ea929edf5a281a4bb80a37b2d5c6e19c82fce6e4
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: bac406f22e9273b6cca5d1d5f576b03d295b875f
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52580464"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630357"
 ---
 # <a name="create-a-custom-channel-and-group-tab-with-aspnet-core-mvc"></a>Создание настраиваемой вкладки канала и группы ASP.NET Core MVC
 
@@ -20,7 +20,7 @@ ms.locfileid: "52580464"
 
 ## <a name="get-the-source-code"></a>Получить исходный код
 
-Откройте командную подсказку и создайте новый каталог для проекта вкладки. Мы предоставили простой проект [Вкладки группы каналов](https://github.com/OfficeDev/microsoft-teams-sample-tabs/ChannelGroupTabMVC) для начала работы. Чтобы получить исходный код, вы можете скачать папку zip и извлечь файлы или клонировать репозиторий образца в новый каталог:
+Откройте командную подсказку и создайте новый каталог для проекта вкладки. Мы предоставили простой проект [Вкладки группы каналов](https://github.com/OfficeDev/microsoft-teams-sample-tabs/tree/master/ChannelGroupTabMVC) для начала работы. Чтобы получить исходный код, вы можете скачать папку zip и извлечь файлы или клонировать репозиторий образца в новый каталог:
 
 ```bash
 git clone https://github.com/OfficeDev/microsoft-teams-sample-tabs.git

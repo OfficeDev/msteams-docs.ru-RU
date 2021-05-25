@@ -5,12 +5,12 @@ description: Узнайте, как разработать модули зада
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 347ce42c41706f698e2f8897a0518aae0850a275
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: 48e47a6c0bde0f0a3fefb8fcbfb362687ce58947
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101732"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629923"
 ---
 # <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для Microsoft Teams приложения
 
@@ -37,20 +37,36 @@ ms.locfileid: "52101732"
 
 ## <a name="anatomy"></a>Анатомия
 
+Модули задач обеспечивают гибкую поверхность для работы с хост-приложениями. Они построены с помощью iframe (desktop) или webview (мобильный), поэтому вы можете проектировать модули задач с помощью шаблонов пользовательского интерфейса (рекомендуется) или с нуля.
+
+Они также могут быть построены с помощью базы [адаптивных](../../task-modules-and-cards/cards/design-effective-cards.md) карт, которая может быть более простым и быстрым способом облегчения распространенных сценариев (например, форм).
+
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач." border="false":::
-
-Модули задач — это очень гибкие поверхности. Они могут быть построены с помощью iframes, потянув в другие шаблоны пользовательского интерфейса, для хост-партнеров, построенных опытом. Это предпочтительнее для наиболее отполированной работы.
-
-Они также могут быть [](../../task-modules-and-cards/cards/design-effective-cards.md) построены с помощью адаптивной карты, которая может быть проще и быстрее для выполнения общих сценариев (например, форм).
 
 |Счетчик|Описание|
 |----------|-----------|
 |1|**Значок приложения**|
 |2|**Имя приложения.** Полное имя вашего приложения.|
 |3|**Заглавная:** Сделать заглавные заготки четкими и краткими. Опишите задачу, которую необходимо выполнить пользователям.
-|4 |**Кнопка Закрыть.** Позволяет пользователям находить содержимое приложения, которое они хотят вставить.|
+|4 |**Кнопка Закрыть:** закрывает модуль задач. Не применяет неавтные изменения в контенте приложения.|
 |5 |**iframe**: Гибкое пространство, в котором размещено содержимое приложения.|
 |6 |**Действия (необязательные)**: кнопки, связанные с контентом приложения.|
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач на мобильных устройствах." border="false":::
+
+|Счетчик|Описание|
+|----------|-----------|
+|1|**Заглавная:** Сделать заглавные заготки четкими и краткими. Опишите задачу, которую необходимо выполнить пользователям.
+|2|**Имя приложения.** Полное имя вашего приложения.|
+|3|**Кнопка Закрыть:** закрывает модуль задач. Не применяет неавтные изменения в контенте приложения.|
+|4 |**веб-просмотр.** Отзывчивое пространство, в котором размещено содержимое приложения.|
+|5 |**Действия (необязательные)**: кнопки, связанные с контентом приложения.|
+
+---
 
 ## <a name="designing-with-ui-templates"></a>Проектирование с помощью шаблонов пользовательского интерфейса
 
@@ -66,43 +82,99 @@ ms.locfileid: "52101732"
 
 Списки хорошо работают в модуле задач, так как их легко сканировать.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач." border="false":::
 
-### <a name="form"></a>Форма
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-list.png" alt-text="Пример списка в модуле задач на мобильных устройствах." border="false":::
+
+---
+
+### <a name="form"></a>Form
 
 Модули задач — отличное место для поверхности форм с последовательной вводной и входной проверкой пользователей. Адаптивные карты можно использовать как способ встраить элементы формы.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/form.png" alt-text="Пример формы в модуле задач." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-form.png" alt-text="Пример формы в модуле задач на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="sign-in"></a>Вход
 
 Создайте целенаправленный поток входов или регистрации с помощью ряда модулей задач, что позволяет пользователям легко перемещаться по последовательному шагу.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Например, во время работы в модуле задач." border="false":::
 
-### <a name="media"></a>Media
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-sign-in.png" alt-text="Например, во время работы в модуле задач на мобильных устройствах." border="false":::
+
+---
+
+### <a name="media"></a>Мультимедиа
 
 Встраить медиаконтент в модуль задач для целенаправленного просмотра.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/media.png" alt-text="Пример содержимого мультимедиа в модуле задач." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-media.png" alt-text="Пример содержимого мультимедиа в модуле задач на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="empty-state"></a>Пустое состояние
 
 Используйте для приветствия, ошибок и сообщений об успехе.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/empty-state.png" alt-text="Пример пустого состояния в модуле задач." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-empty-state.png" alt-text="Пример пустого состояния в модуле задач на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="image-gallery"></a>Коллекция изображений
 
-Встраить карусель галереи в iframe.
+Встраить карусель галереи в iframe (настольный) или веб-просмотр (мобильный).
+
+# <a name="desktop"></a>[Desktop](#tab/desktop)
 
 :::image type="content" source="../../assets/images/task-module/image-gallery.png" alt-text="Пример галереи изображений в модуле задач." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-image-gallery.png" alt-text="Пример галереи изображений в модуле задач на мобильных устройствах." border="false":::
+
+---
 
 ### <a name="poll"></a>Опрос
 
 В этом примере показаны результаты опроса, запущенные с адаптивной карты. Опрос также можно поместить в модуль задач.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/task-module/poll.png" alt-text="Пример опроса в модуле задач." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/task-module/mobile-poll.png" alt-text="Пример опроса в модуле задач на мобильных устройствах." border="false":::
+
+---
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -187,7 +259,7 @@ ms.locfileid: "52101732"
 
 #### <a name="dont-put-error-messages-in-dialogs"></a>Не: помещай сообщения об ошибках в диалоговые личные
 
-Не всплывай сообщение об ошибке в диалоговом окну поверх модулей задач. Это создает запутанный пользовательский интерфейс.
+Не всплывай сообщение об ошибке в диалоговом окну над модулем задач. Это создает запутанный пользовательский интерфейс.
 
    :::column-end:::
 :::row-end:::

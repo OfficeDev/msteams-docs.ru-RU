@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 84d0f5564d7e8e6e34dde1f3d59cc6e7a68d3332
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 3bfbcd0eed1bd287303315ae57cd2f0db039890c
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52565916"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630182"
 ---
 # <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
 
@@ -316,8 +316,7 @@ POST /v3/conversations/{conversationId}/activities
 
 #### <a name="sidepanel"></a>sidePanel
 
-В sidePanel можно настроить опыт собрания, который позволяет организаторам и презентаторам иметь различные представления и действия. В манифесте приложения необходимо добавить sidePanel в массив контекста. В собрании и во всех сценариях приложение отрисовка в вкладке в собрании шириной 320 пикселей. Дополнительные сведения см. в [интерфейсе FrameContext.](/javascript/api/@microsoft/teams-js/framecontext?view=msteams-client-js-latest&preserve-view=true
-)
+В sidePanel можно настроить опыт собрания, который позволяет организаторам и презентаторам иметь различные представления и действия. В манифесте приложения необходимо добавить sidePanel в массив контекста. В собрании и во всех сценариях приложение отрисовка в вкладке в собрании шириной 320 пикселей. Дополнительные сведения см. в [интерфейсе FrameContext.](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest&preserve-view=true)
 
 Чтобы использовать `userContext` API для соответственного маршрута запросов, см. Teams [SDK](../tabs/how-to/access-teams-context.md#user-context). См. [Teams поток проверки подлинности для вкладок.](../tabs/how-to/authentication/auth-flow-tab.md) Поток проверки подлинности для вкладок очень похож на поток auth для веб-сайтов. Таким образом, вкладки могут напрямую использовать OAuth 2.0. См. платформа удостоверений Майкрософт и поток кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 
@@ -333,7 +332,7 @@ POST /v3/conversations/{conversationId}/activities
 Диалоговое окно на собрании не должно использовать модуль задач. Модуль задач не вызывается в чате собрания. Url-адрес внешнего ресурса используется для отображения пузыря контента на собрании. Этот метод можно `submitTask` использовать для отправки данных в чате собраний.
 
 > [!NOTE]
-> * Необходимо вызвать функцию [submitTask()](../task-modules-and-cards/task-modules/task-modules-bots.md#submitting-the-result-of-a-task-module) для автоматического увольнения после действия пользователя в веб-представлении. Это требование для отправки приложения. Дополнительные сведения см. [в Teams SDK task module.](/javascript/api/@microsoft/teams-js/microsoftteams.tasks?view=msteams-client-js-latest#submittask-string---object--string---string---&preserve-view=true)
+> * Необходимо вызвать функцию [submitTask()](../task-modules-and-cards/task-modules/task-modules-bots.md#submitting-the-result-of-a-task-module) для автоматического увольнения после действия пользователя в веб-представлении. Это требование для отправки приложения. Дополнительные сведения см. [в Teams SDK task module.](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest&preserve-view=true)
 > * Если вы хотите, чтобы ваше приложение поддержало анонимных пользователей, то при первоначальном запросе необходимо использовать метаданные запроса в объекте, а не `from.id` `from` `from.aadObjectId` метаданные запроса. `from.id`является ИД пользователя и является `from.aadObjectId` Azure Active Directory (AAD) пользователя. Дополнительные сведения см. в [таблицах](../task-modules-and-cards/task-modules/task-modules-tabs.md) с использованием модулей задач и созданием и [отправкой модуля задач.](../messaging-extensions/how-to/action-commands/create-task-module.md?tabs=dotnet#the-initial-invoke-request)
 
 #### <a name="share-to-stage"></a>Share to stage 

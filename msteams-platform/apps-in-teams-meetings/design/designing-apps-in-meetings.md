@@ -5,12 +5,12 @@ description: Узнайте, как создать приложения Teams с
 ms.author: lajanuar
 localization_priority: Normal
 ms.topic: conceptual
-ms.openlocfilehash: 0a888c333305e9caafcd0bac0e5549bf08ead424
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 33b11a6dfc759fabd54ca2fe2c68978a5d5d1475
+ms.sourcegitcommit: 4224c44d169b1a289cbf1d3353de6bc6de7c7ea8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566028"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52644647"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Проектирование расширения Microsoft Teams собрания
 
@@ -25,23 +25,33 @@ ms.locfileid: "52566028"
 
 ## <a name="add-a-meeting-extension"></a>Добавление расширения собрания
 
-Вы можете добавить расширение собрания до и во время собраний. Вы также можете добавить приложение для определенной встречи непосредственно из Teams магазина (AppSource).
+Пользователи могут добавлять расширение собрания до и во время собраний. Они также могут добавлять приложение для определенной встречи непосредственно из Teams магазина.
 
 ### <a name="add-before-a-meeting"></a>Добавление перед собранием
 
-В сведениях о собрании выберите Добавить вкладку **+,** чтобы открыть вылет приложения и найти приложения, оптимизированные для собраний.
+В сведениях о собрании пользователи могут выбрать Добавить вкладку **+,** чтобы открыть вылет приложения и найти приложения, оптимизированные для собраний.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/add-before-meeting.png" alt-text="В примере показано, как добавить расширение собрания перед собранием." border="false":::
 
 ### <a name="add-during-a-meeting"></a>Добавление во время собрания
 
-На собрании выберите **дополнительные** :::image type="icon" source="../../assets/icons/teams-client-more.png":::  >  **добавления приложения** и выберите нужное приложение.
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
+На собрании пользователи могут выбрать **дополнительные** добавления :::image type="icon" source="../../assets/icons/teams-client-more.png":::  >  **приложения** и выбрать нужное приложение.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания." border="false":::
 
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+На собрании пользователи могут выбрать **дополнительные** и :::image type="icon" source="../../assets/icons/teams-client-more.png"::: выбрать нужное приложение.
+
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания на мобильном телефоне." border="false":::
+
+---
+
 ## <a name="before-a-meeting"></a>Перед собранием
 
-Перед собранием можно добавить содержимое на вкладке. В следующем примере показан проект опроса, на который люди ответят во время вызова.
+Перед собранием пользователи могут добавлять содержимое на вкладке. В следующем примере показан проект опроса, на который люди ответят во время вызова.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/before-meeting-tab.png" alt-text="В примере показано, как приложение содержимым в сведениях о собрании перед вызовом." border="false":::
 
@@ -64,7 +74,7 @@ ms.locfileid: "52566028"
 * [Панель](../../concepts/design/design-teams-app-ui-templates.md#dashboard)мониторинга: панель мониторинга — это холст, содержащий несколько карт, которые предоставляют обзор данных или контента.
 * [Form:](../../concepts/design/design-teams-app-ui-templates.md#form)Forms are for collecting, validating and submitting user input in a structured way.
 * [Пустое](../../concepts/design/design-teams-app-ui-templates.md#empty-state)состояние. Пустой шаблон состояния можно использовать для многих сценариев, включая вход, первый запуск, сообщения об ошибках и многое другое.
-* [Левый nav](../../concepts/design/design-teams-app-ui-templates.md#left-nav). Шаблон левого nav может помочь если ваша вкладка требует некоторой навигации. В общем, вы должны сохранить навигацию вкладок до минимума.
+* [Левый nav](../../concepts/design/design-teams-app-advanced-ui-components.md#left-nav). Компонент левого nav может помочь если ваша вкладка требует некоторой навигации. В общем, необходимо сохранить навигацию до минимума.
 
 ## <a name="use-an-in-meeting-tab"></a>Использование вкладки в собрании
 
@@ -78,7 +88,15 @@ ms.locfileid: "52566028"
 * Создайте элемент опроса, опроса или задачи для участников собрания.
 * Отображение заметок, соответствующих собранию. Например, сведения о лидере продаж.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке на собрании." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса в вкладке на собрании на мобильном телефоне." border="false":::
+
+---
 
 ### <a name="anatomy-in-meeting-tab"></a>Anatomy: In-meeting tab
 
@@ -124,7 +142,15 @@ ms.locfileid: "52566028"
 * Отправка утверждений
 * Получать напоминания
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании." border="false":::
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании на мобильном телефоне." border="false":::
+
+---
 
 ### <a name="anatomy-in-meeting-dialog"></a>Анатомия: диалоговое окно на собрании
 

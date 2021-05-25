@@ -5,12 +5,12 @@ description: Руководство quickstart по созданию вклад�
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 559393884e3b8a4aad1787ea4ca8f9f4de54d151
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 70b1dbe5a5abafa44ddbdf9045c55a33cf8fcb20
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566649"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630245"
 ---
 # <a name="create-a-custom-channel-and-group-tab-using-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Создание настраиваемой вкладки канала и группы с Node.js и генератора Yeoman для Microsoft Teams
 

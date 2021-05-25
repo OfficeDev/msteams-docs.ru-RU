@@ -5,12 +5,12 @@ ms.topic: overview
 localization_priority: Normal
 keywords: teams bots messages
 ms.date: 05/20/2019
-ms.openlocfilehash: e1926afe42bca45eda5f39be1be8342452b3aa24
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: efa7658aef87650e360c79523ac1c282dc4814fd
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566497"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630462"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с Microsoft Teams ботом
 
@@ -76,7 +76,7 @@ ms.locfileid: "52566497"
 
 Изображения могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF не поддерживается.
 
-Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию составляет 256×256. Пример:
+Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию составляет 256×256. Например:
 
 * Воспользуйтесь `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
 * Не используйте `![Duck on a rock](http://aka.ms/Fo983c)`
@@ -88,7 +88,7 @@ ms.locfileid: "52566497"
 * **личный чат** Пользователи могут взаимодействовать в личной беседе с ботом, просто выбрав добавленный бот в истории чата или введя его имя или имя приложения в поле To: box в новом чате.
 * **Каналы** Бот может быть упомянут (&quot;@_botname")_ в канале, если он был добавлен в команду. Обратите внимание, что дополнительные ответы на бота в канале требуют упоминания бота. Он не будет отвечать на ответы, в которых он не упоминается.
 
-Для входящих сообщений бот получает [`Activity`](/azure/bot-service/rest-api/bot-framework-rest-connector-activities?view=azure-bot-service-3.0&preserve-view=true) объект типа `messageType: message` . Несмотря на то, что объект может содержать другие типы информации, например обновления каналов, отправленные в бот, этот тип представляет связь между ботом `Activity` и [](~/resources/bot-v3/bots-notifications.md#channel-updates) `message` пользователем.
+Для входящих сообщений бот получает объект [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true) типа `messageType: message` . Несмотря на то, что объект может содержать другие типы информации, например обновления каналов, отправленные в бот, этот тип представляет связь между ботом `Activity` и [](~/resources/bot-v3/bots-notifications.md#channel-updates) `message` пользователем.
 
 Бот получает полезное сообщение пользователя, а также другие сведения о пользователе, источнике сообщения и `Text` Teams. Примечание:
 

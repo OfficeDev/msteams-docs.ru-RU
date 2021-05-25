@@ -6,12 +6,12 @@ author: laujan
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: dabe0c33013fbb398eee7bf00ac2881cd86e6bc5
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: d751e5dba22b19edfe6ffda3eb6a73a37375f92b
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566135"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630679"
 ---
 # <a name="resource-specific-consent-rsc"></a>Согласие на определенный ресурс (RSC)
 
@@ -19,7 +19,7 @@ ms.locfileid: "52566135"
 
 ## <a name="resource-specific-permissions"></a>Разрешения, определенные для ресурсов
 
-|Разрешение приложения| Действие |
+|Разрешение приложения| Action |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получите параметры для этой группы.|
 |TeamSettings.ReadWrite.Group|Обновление параметров для команды.|
@@ -56,7 +56,7 @@ ms.locfileid: "52566135"
 
 > [!div class="checklist"]
 >
->- Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md#global-administrator--company-administrator)  
+>- Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании.](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true)  
  > - [Выберите](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings) **Azure Active Directory**  =>  **Enterprise приложения** Consent и  =>  **permissions** User consent  =>  **settings.**
 > - Включить, отключить или ограничить согласие пользователя с согласия владельца группы с меткой управления для доступа к данным **приложений** (по умолчанию разрешается согласие владельца группы для всех **владельцев групп).** Чтобы владелец группы устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие владельца группы.
 

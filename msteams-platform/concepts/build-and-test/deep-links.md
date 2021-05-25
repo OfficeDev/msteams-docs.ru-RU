@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 localization_priority: Normal
 keywords: deeplink teams deep link
-ms.openlocfilehash: 837d180b06f69b9be49d898c62b9ab8ee64d51d0
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: cd7735595f260431524edf1431ff22a1eeb361bc
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566056"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630147"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -78,7 +78,7 @@ ms.locfileid: "52566056"
 |:------------|:--------------|:---------------------|
 | `appId`&emsp; | ID из манифеста. |fe4a8eba-2a31-4737-8e33-e5fae6fee194|
 | `entityId`&emsp; | ID для элемента на вкладке, который вы предоставили при [настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md).|Tasklist123|
-| `entityWebUrl` или `subEntityWebUrl`&emsp; | Необязательное поле с откатным URL-адресом для использования, если клиент не поддерживает отрисовку вкладки. | https://tasklist.example.com/123 или https://tasklist.example.com/list123/task456 |
+| `entityWebUrl` или `subEntityWebUrl`&emsp; | Необязательное поле с откатным URL-адресом для использования, если клиент не поддерживает отрисовку вкладки. | `https://tasklist.example.com/123` или `https://tasklist.example.com/list123/task456` |
 | `entityLabel` или `subEntityLabel`&emsp; | Метка для элемента на вкладке, используемая при отображе глубокой ссылки. | Список задач 123 или "Задача 456" |
 | `context`&emsp; </br></br>* `subEntityId`&emsp;</br></br> * `channelId`&emsp;| Объект JSON, содержащий следующие поля:</br></br> * ID для элемента в вкладке. </br></br> * ID Microsoft Teams канала, доступный из контекста [вкладки](~/tabs/how-to/access-teams-context.md). | 
 | `subEntityId`&emsp; | ID для элемента в вкладке. |Task456 |
@@ -156,8 +156,8 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 * `tenantId`: Пример ID клиента, 0d9b645f-597b-41f0-a2a3-ef103fbd91bb
 * `fileType`: Поддерживаемый тип файла, например docx, pptx, xlsx и pdf
-* `objectUrl`: URL-адрес объекта файла, https://microsoft.sharepoint.com/teams/(filepath)
-* `baseUrl`: Базовый URL-адрес файла, https://microsoft.sharepoint.com/teams
+* `objectUrl`: URL-адрес объекта файла, `https://microsoft.sharepoint.com/teams/(filepath)`
+* `baseUrl`: Базовый URL-адрес файла, `https://microsoft.sharepoint.com/teams`
 * `serviceName`: Имя службы, ID приложения
 * `threadId`. ThreadId — это командный ID команды, в которой хранится файл. Она необязательна и не может быть установлена для файлов, хранимых в папке OneDrive пользователя. threadId — 19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype
 * `groupId`: Групповой ID файла ae063b79-5315-4ddb-ba70-27328ba6c31e
@@ -191,7 +191,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 * `appID`: Ваш манифест **fe4a8eba-2a31-4737-8e33-e5fae6fee194**.
 
 * `entityID`: ID элемента, который вы предоставили [при настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md). Например, **tasklist123**.
-* `entityWebUrl`. Необязательный url-адрес с откатным URL-адресом, который можно использовать, если клиент не поддерживает отрисовку вкладки или https://tasklist.example.com/123 https://tasklist.example.com/list123/task456 .
+* `entityWebUrl`. Необязательный url-адрес с откатным URL-адресом, который можно использовать, если клиент не поддерживает отрисовку вкладки или `https://tasklist.example.com/123` `https://tasklist.example.com/list123/task456` .
 * `entityName`: Метка для элемента на вкладке, используемая при отображе глубокой ссылки, список задач 123 или задача 456.
 
 Пример: https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&TaskList
@@ -247,7 +247,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Пример имени | Описание | C# |Node.js|
+| Пример имени | Описание | C # |Node.js|
 |-------------|-------------|------|----|
 |Deep Link consuming Subentity ID  |Microsoft Teams пример приложения для демонстрации deeplink от бот-чата до вкладки, потребляя ID subentity.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
 

@@ -5,12 +5,12 @@ keywords: teams bots cards format
 localization_priority: Normal
 ms.topic: reference
 ms.date: 03/29/2018
-ms.openlocfilehash: 848656097f2c865705cc0d91dece93049d8c6790
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: b52eb01f7d886f3d4b2f12c8209c181d43a31956
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566586"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630215"
 ---
 # <a name="format-cards-in-teams"></a>Формат карты в Teams
 
@@ -169,8 +169,6 @@ ms.locfileid: "52566586"
 > [!NOTE]
 > Свойство маскировки информации в настоящее время доступно только в предварительном просмотре разработчика.
 
-Чтобы скрыть сведения в адаптивных картах, добавьте свойство введите и установите `isMasked`  `Input.Text` значение true. 
-
 #### <a name="sample-adaptive-card-with-masking-property"></a>Пример адаптивной карты с свойством маскировки
 
 ```json
@@ -178,8 +176,7 @@ ms.locfileid: "52566586"
     "type": "Input.Text",
     "id": "secretThing",
     "style": "password",
-    "isMasked": true
-  },
+},
 ```
 
 Ниже приводится пример маскировки сведений в адаптивных картах:
@@ -218,7 +215,7 @@ ms.locfileid: "52566586"
 
 Адаптивная карта с полной шириной отображается следующим образом: представление адаптивной карты полной ![ ширины](../../assets/images/cards/full-width-adaptive-card.png)
 
-Если свойство не настроено до полного, представление адаптивной карты по умолчанию следующим образом: представление адаптивной карты малой `width`  ![ ширины](../../assets/images/cards/small-width-adaptive-card.png)
+Если свойство не настроено до полного, представление адаптивной карты по умолчанию отображается следующим образом: представление адаптивной карты малой `width`  ![ ширины](../../assets/images/cards/small-width-adaptive-card.png)
 
 ### <a name="typeahead-support"></a>Поддержка typeahead
 

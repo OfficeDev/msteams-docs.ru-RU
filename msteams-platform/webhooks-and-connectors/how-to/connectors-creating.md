@@ -5,16 +5,16 @@ keywords: соединитель teams o365
 localization_priority: Normal
 ms.topic: conceptual
 ms.date: 04/19/2019
-ms.openlocfilehash: 9eaaedf88d907dd7a7422068ab5d20450345f0e7
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: ace546853d7dfe9773055288a0fc3471fe656652
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566812"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629825"
 ---
 # <a name="creating-office-365-connectors-for-microsoft-teams"></a>Создание Office 365 соединители для Microsoft Teams
 
->С Microsoft Teams приложениями можно добавить существующие Office 365 соединителю или создать новый, чтобы включить Microsoft Teams. Дополнительные [сведения см. в "Сборке](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector) собственного соединитетеля".
+С Microsoft Teams приложениями можно добавить существующие Office 365 соединителю или создать новый, чтобы включить Microsoft Teams. Дополнительные [сведения см. в "Сборке](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector) собственного соединитетеля".
 
 ## <a name="adding-a-connector-to-your-teams-app"></a>Добавление соединитетеля в Teams App
 
@@ -104,7 +104,7 @@ ms.locfileid: "52566812"
 #### <a name="getsettings-response-properties"></a>`GetSettings()` Свойства ответа
 
 >[!Note]
->Параметры, возвращенные здесь вызовом, отличаются от тех, которые вы должны были вызвать этот метод со вкладки, и отличаются от параметров, задокументированных `getSettings` [здесь.](/javascript/api/%40microsoft/teams-js/settings.settings?view=msteams-client-js-latest&preserve-view=true)
+>Параметры, возвращенные здесь вызовом, отличаются от тех, которые вы должны были вызвать этот метод со вкладки, и отличаются от параметров, задокументированных `getSettings` [здесь.](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true)
 
 | Параметр   | Сведения |
 |-------------|---------|
@@ -185,6 +185,25 @@ ms.locfileid: "52566812"
   "accentColor": "#FFFFFF"
 }
 ```
+
+## <a name="disable-or-enable-connectors-in-teams"></a>Отключить или включить соединители в Teams
+
+Модуль Exchange Online PowerShell V2 использует современную проверку подлинности и работает с многофакторной проверкой подлинности (MFA) для подключения Exchange связанных с powerShell сред в Microsoft 365. Администраторы могут использовать Exchange Online PowerShell для отключения соединители для всего клиента или определенного почтового ящика группы, затрагивая всех пользователей в этом клиенте или почтовом ящике. Отключение для одних и не для других невозможно. Кроме того, соединители отключены по умолчанию для GCC клиентов.
+
+Параметр на уровне клиента переопределяет параметр группового уровня. Например, если администратор включает соединители для группы и отключает их в клиенте, соединители для группы будут отключены. Чтобы включить соединитель в Teams, подключите Exchange Online [PowerShell](/docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-using-modern-authentication-with-or-without-mfa&preserve-view=true) с помощью современной проверки подлинности с помощью MFA или без него.
+
+### <a name="commands-to-disable-or-enable-connectors"></a>Команды по отключению или включении соединители
+
+**Запустите команду в Exchange Online PowerShell**
+
+* Отключение соединители для клиента: `Set-OrganizationConfig -ConnectorsEnabled:$false` .
+* Отключение действий для клиента: `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$false` .
+* Чтобы включить соединители для Teams, запустите следующие команды:
+    * `Set-OrganizationConfig -ConnectorsEnabled:$true `
+    * `Set-OrganizationConfig -ConnectorsEnabledForTeams:$true`
+    * `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$true`
+
+Дополнительные сведения об обмене модулями PowerShell см. в [сайте Set-OrganizationConfig.](/docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig.md?view=exchange-ps&preserve-view=true) Чтобы включить или отключить Outlook соединители, [подключите приложения к](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab?ui=en-us&rs=en-us&ad=us)группам в Outlook.
 
 ## <a name="testing-your-connector"></a>Тестирование соединителя
 

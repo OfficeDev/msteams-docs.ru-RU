@@ -5,12 +5,12 @@ description: Руководство quickstart по созданию настр�
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: f748335b621e9bc93272aaeb8d7e12ecc3ebbee0
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 1004e40e28875524ea1f38a3f6b3c2c53330fec1
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52580455"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630372"
 ---
 # <a name="create-a-custom-channel-and-group-tab-with-aspnetcore"></a>Создание настраиваемой вкладки канала и группы с помощью ASP.NETCore
 

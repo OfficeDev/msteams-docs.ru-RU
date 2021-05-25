@@ -6,12 +6,12 @@ ms.date: 08/26/2020
 localization_priority: Normal
 ms.topic: conceptual
 title: Веб-приложения
-ms.openlocfilehash: 6783a05079f876cf3c2475a0ad5ca0e1f6687fc4
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: b7f530198a8e1c240e3cf4b227d786af94f6c89e
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566224"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630434"
 ---
 # <a name="web-apps"></a>Веб-приложения 
 
@@ -110,7 +110,7 @@ Teams имеет механизмы единого входного (SSO) с Azu
 
 Боты также позволяют отправлять активные **сообщения** отдельным пользователям или каналам. Проактивные сообщения — это незапланированные сообщения, запускаемые внешним событием, а не сообщения, отправленные боту. Например, бот отправляет приветствие при установке или при подступах к каналу нового пользователя. 
 
-Отправка активных сообщений требует Teams идентификаторов. Вы можете захватить эти [сведения,](../bots/how-to/get-teams-context.md#fetch-the-roster-or-user-profile)извлекая данные реестра или профиля пользователей, записавшись на события беседы [или](../bots/how-to/conversations/subscribe-to-conversation-events.md) [используя Microsoft Graph.](/graph/teams-proactive-messaging)
+Отправка активных сообщений требует Teams идентификаторов. Вы можете захватить эти [сведения,](../bots/how-to/get-teams-context.md#fetch-the-roster-or-user-profile)извлекая данные реестра или профиля пользователей, записавшись на события беседы [или](../bots/how-to/conversations/subscribe-to-conversation-events.md) [используя Microsoft Graph.](/microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context#proactive-messaging-in-teams)
 
 Не спамить пользователей с избыточными сообщениями. Если Teams поддерживает его, пользователи могут настроить параметры уведомлений для вашего приложения.   
 Ниже приводится пример сообщения уведомления: не отправлять мне **незавернутые сообщения**.

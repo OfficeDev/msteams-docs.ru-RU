@@ -1,22 +1,22 @@
 ---
 title: События беседы
 author: WashingtonKayaker
-description: Работа с событиями беседы с помощью бота Microsoft Teams.
+description: Работа с событиями беседы из Microsoft Teams бота.
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 23f58a0544b317f7532ff12bc7f30b6eb6cd670a
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 7dfafbd02c53ea0fe7393d4e4f771a50ad2954d2
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020030"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630707"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-При создании разговорных ботов для Microsoft Teams можно работать с событиями беседы. Teams отправляет уведомления вашему боту для событий беседы, которые происходят в сферах, где ваш бот активен. Эти события можно зафиксировать в коде и принять следующие действия:
+При создании разговорных ботов для Microsoft Teams можно работать с событиями беседы. Teams отправляет уведомления боту для событий беседы, которые происходят в сферах, где ваш бот активен. Эти события можно зафиксировать в коде и принять следующие действия:
 
 * Запуск приветствия при добавлении бота в команду.
 * Запуск приветствия при добавлении или удалении нового члена группы.
@@ -40,21 +40,21 @@ ms.locfileid: "52020030"
 
 Событие `conversationUpdate` отправляется боту, когда поступают сведения об обновлении членства в командах, куда он добавлен. Кроме того, он получает обновление при первом добавлении для личных бесед.
 
-В следующей таблице показан список событий обновления беседы Teams с дополнительными сведениями:
+В следующей таблице показан список событий обновления Teams беседы с дополнительными сведениями:
 
 | Действие, принятое        | EventType         | Метод, называемый              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
-| Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Группа |
-| Переименован канал     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Группа |
-| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Группа |
-| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Группа |
+| Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Команда |
+| Переименован канал     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Команда |
+| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Команда |
+| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Команда |
 | Добавлены участники   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added). | Все |
 | Удалены участники | membersRemoved | OnTeamsMembersRemovedAsync | [Член удаляется.](#team-members-removed) | groupChat и team |
-| Переименована команда        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Группа |
-| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Группа |
-| Архив команд        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Группа |
-| Команда без анархии        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Группа |
-| Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Группа |
+| Переименована команда        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Команда |
+| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Команда |
+| Архив команд        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Команда |
+| Команда без анархии        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Команда |
+| Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Команда |
 
 ### <a name="channel-created"></a>Созданный канал
 
@@ -143,7 +143,7 @@ async def on_teams_channel_created(
     )
 ```
 
-* * *
+---
 
 ### <a name="channel-renamed"></a>Переименован канал
 
@@ -225,7 +225,7 @@ async def on_teams_channel_renamed(
     )
 ```
 
-* * *
+---
 
 ### <a name="channel-deleted"></a>Канал удален
 
@@ -309,7 +309,7 @@ async def on_teams_channel_deleted(
     )
 ```
 
-* * *
+---
 
 ### <a name="channel-restored"></a>Восстановлен канал
 
@@ -398,7 +398,7 @@ async def on_teams_channel_restored(
     )
 ```
 
-* * *
+---
 
 ### <a name="team-members-added"></a>Добавлены участники группы
 
@@ -542,7 +542,7 @@ async def on_teams_members_added(
     return
 ```
 
-* * *
+---
 
 ### <a name="team-members-removed"></a>Удалены члены группы
 
@@ -654,7 +654,7 @@ async def on_teams_members_removed(
     return
 ```
 
-* * *
+---
 
 ### <a name="team-renamed"></a>Переименована команда
 
@@ -734,7 +734,7 @@ async def on_teams_team_renamed(
     )
 ```
 
-* * *
+---
 
 ### <a name="team-deleted"></a>Удалена команда
 
@@ -810,7 +810,7 @@ async def on_teams_team_deleted(
     )
 ```
 
-* * *
+---
 
 ### <a name="team-restored"></a>Восстановлена команда
 
@@ -890,7 +890,7 @@ async def on_teams_team_restored(
     )
 ```
 
-* * *
+---
 
 ### <a name="team-archived"></a>Архив команд
 
@@ -970,7 +970,7 @@ async def on_teams_team_archived(
     )
 ```
 
-* * *
+---
 
 
 ### <a name="team-unarchived"></a>Команда без анархии
@@ -1051,7 +1051,7 @@ async def on_teams_team_unarchived(
     )
 ```
 
-* * *
+---
 
 Теперь, когда вы работали с событиями обновления беседы, вы можете понять события реакции на сообщения, которые происходят для различных реакций на сообщение.
 
@@ -1173,7 +1173,7 @@ async def on_reactions_added(
     return
 ```
 
-* * *
+---
 
 ### <a name="reactions-removed-from-bot-message"></a>Реакции, удаленые из сообщения бота
 
@@ -1282,7 +1282,7 @@ async def on_reactions_removed(
     return
 ```
 
-* * *
+---
 
 ## <a name="installation-update-event"></a>Событие обновления установки
 
@@ -1292,7 +1292,7 @@ async def on_reactions_removed(
 > При обновлении приложения и добавлении или удалите бот, действие также запускает `installationUpdate` событие. Поле **действия** настроено на обновление *при* добавлении бота или *удаления-обновления* при удалите бот. 
 
 > [!IMPORTANT]
-> События обновления установки находятся в предварительной версии разработчика сегодня и будут доступны в марте 2021 г. Чтобы просмотреть события обновления установки, можно переместить клиента Teams в общедоступный предварительный просмотр разработчика и добавить приложение лично или в команду или чат.
+> События обновления установки находятся в предварительной версии разработчика сегодня и будут доступны в марте 2021 г. Чтобы просмотреть события обновления установки, можно переместить Teams клиента в общедоступный предварительный просмотр разработчика и добавить приложение лично или в команду или чат.
 
 ### <a name="install-update-event"></a>Событие установки обновления
 Используйте событие `installationUpdate` для отправки вводного сообщения от бота при установке. Это событие поможет вам соответствовать требованиям конфиденциальности и хранения данных. Кроме того, при удалении бота можно очистить и удалить данные пользователя или потока.
@@ -1320,6 +1320,10 @@ turnContext, CancellationToken cancellationToken) {
 // TO:DO Installation workflow return;
 }
 ```
+
+# <a name="typescript"></a>[TypeScript](#tab/typescript)
+
+Недоступно
 
 # <a name="json"></a>[JSON](#tab/json)
 
@@ -1375,7 +1379,12 @@ turnContext, CancellationToken cancellationToken) {
   "locale": "en" 
 }
 ```
-* * *
+
+# <a name="python"></a>[Python](#tab/python)
+
+Недоступно
+
+---
 
 ## <a name="code-sample"></a>Пример кода
 

@@ -6,12 +6,12 @@ keywords: Атрибуты cookie samesite
 ms.topic: reference
 localization_priority: Normal
 ms.author: lomeybur
-ms.openlocfilehash: cf28a28050d50b2b6b2601a3231cdad30211ab2c
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: c286e01b6e2477c1ab2b787852cde0fb789a80da
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566714"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629853"
 ---
 # <a name="microsoft-teams-and-the-samesite-cookie-attribute-2020-update"></a>Microsoft Teams и атрибут cookie SameSite (обновление 2020 г.)
 
@@ -80,11 +80,8 @@ Android WebView — это системный компонент Chrome, кот�
 ## <a name="see-also"></a>См. также
 
 * [Примеры SameSite](https://github.com/GoogleChromeLabs/samesite-examples)
-
 * [Рецепты cookie SameSite](https://web.dev/samesite-cookie-recipes/)
-
 * [Известные несовместимые клиенты]( https://www.chromium.org/updates/same-site/incompatible-clients)
-
 * [Разработчики: готовьтесь к new SameSite=None; Безопасные файлы cookie Параметры](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)
 
 **Влияние openId Подключение**<br>

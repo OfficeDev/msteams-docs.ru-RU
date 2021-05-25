@@ -1,18 +1,18 @@
 ---
-title: Get Teams specific context for your bot
+title: Получите Teams контекст для бота
 author: laujan
 description: Как получить определенный контекст Microsoft Team для бота, включая список бесед, сведения и список каналов.
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 2e0178c5fd1ebca85d6e6c2cb6f3591f36a648fb
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 6a8f903fb2f3ed8120e31b7536b65f22fdf6d620
+ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020014"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52630168"
 ---
-# <a name="get-teams-specific-context-for-your-bot"></a>Get Teams specific context for your bot
+# <a name="get-teams-specific-context-for-your-bot"></a>Получите Teams контекст для бота
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -20,7 +20,7 @@ ms.locfileid: "52020014"
 
 ## <a name="fetch-the-roster-or-user-profile"></a>Извлечение реестра или профиля пользователя
 
-Бот может запрашивать список участников и их базовые профили пользователей, включая ID пользователей Teams и сведения Azure Active Directory (AAD), такие как имя и objectId. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, чтобы проверить, входит ли пользователь в вкладку с помощью учетных данных AAD, является членом группы. Для получения участников беседы минимальный или максимальный размер страницы зависит от реализации. Размер страницы меньше 50, рассматриваются как 50 и более 500, имеют ограничения на уровне 500. Даже если вы используете ненастоячивую версию, она ненадежна в больших группах и не должна использоваться. Дополнительные сведения см. [в сведениях об изменениях API Teams Bot для получения участников группы или чата.](~/resources/team-chat-member-api-changes.md)
+Бот может запрашивать список участников и их базовые профили пользователей, включая Teams и сведения Azure Active Directory (AAD), такие как имя и objectId. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, чтобы проверить, входит ли пользователь в вкладку с помощью учетных данных AAD, является членом группы. Для получения участников беседы минимальный или максимальный размер страницы зависит от реализации. Размер страницы меньше 50, рассматриваются как 50 и более 500, имеют ограничения на уровне 500. Даже если вы используете ненастоячивую версию, она ненадежна в больших группах и не должна использоваться. Дополнительные сведения см. [в Teams API-Teams для получения участников группы или чата.](~/resources/team-chat-member-api-changes.md)
 
 В следующем примере кода используется страница конечной точки для получения реестра:
 
@@ -123,11 +123,11 @@ Response body
 
 * * *
 
-После получения реестра или профиля пользователя можно получить сведения об одном члене. В настоящее время для получения сведений для одного или более членов чата или группы используйте API бота Microsoft Teams для C# или `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` API TypeScript.
+После получения реестра или профиля пользователя можно получить сведения об одном члене. В настоящее время для получения сведений для одного или более членов чата или группы используйте API Microsoft Teams бота для C# или `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` API TypeScript.
 
 ## <a name="get-single-member-details"></a>Получить сведения об одном члене
 
-Вы также можете получить сведения о конкретном пользователе с помощью их ID пользователя Teams, UPN или AAD Object ID.
+Вы также можете получить сведения о конкретном пользователе с помощью Teams, upN или AAD Object ID.
 
 Для получения сведений об одном члене используется следующий пример кода:
 
@@ -166,7 +166,7 @@ export class MyBot extends TeamsActivityHandler {
 async def _show_members(
     self, turn_context: TurnContext
 ):
-    member = TeamsInfo.get_member(turn_context, turn_context.activity.from_property.id)
+    member = await TeamsInfo.get_member(turn_context, turn_context.activity.from_property.id)
 ```
 
 # <a name="json"></a>[JSON](#tab/json)
@@ -207,7 +207,7 @@ Response body
 
 * * *
 
-После получения сведений об одном члене вы можете получить сведения о команде. В настоящее время для получения сведений для группы используйте API бота Microsoft Teams для C# или `TeamsInfo.GetMemberDetailsAsync` `TeamsInfo.getTeamDetails` typeScript.
+После получения сведений об одном члене вы можете получить сведения о команде. В настоящее время для получения сведений для группы используйте API Microsoft Teams бота для C# или `TeamsInfo.GetMemberDetailsAsync` `TeamsInfo.getTeamDetails` typeScript.
 
 ## <a name="get-teams-details"></a>Сведения о команде
 
@@ -282,7 +282,7 @@ Response body
 
 * * *
 
-После получения сведений о команде вы можете получить список каналов в команде. В настоящее время для получения сведений о списке каналов в группе используйте API бота Microsoft Teams для C# или `TeamsInfo.GetTeamChannelsAsync` `TeamsInfo.getTeamChannels` API TypeScript.
+После получения сведений о команде вы можете получить список каналов в команде. В настоящее время для получения сведений о списке каналов в группе используйте API Microsoft Teams для C# или `TeamsInfo.GetTeamChannelsAsync` `TeamsInfo.getTeamChannels` API TypeScript.
 
 ## <a name="get-the-list-of-channels-in-a-team"></a>Получить список каналов в команде
 

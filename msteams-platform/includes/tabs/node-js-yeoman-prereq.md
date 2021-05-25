@@ -78,7 +78,7 @@
 
     **Хотите использовать для телеметрии сведения о приложениях Azure? (y/N)**
 
-    Выберите **не включать** azure Application [Insights](/azure-docs/articles/azure-monitor/app/app-insights-overview.md). По умолчанию нет; введите **n**.
+    Выберите **не включать** azure Application [Insights](/azure/azure-monitor/app/app-insights-overview). По умолчанию нет; введите **n**.
 
     **Имя вкладки по умолчанию (максимум 16 символов)?**
 
