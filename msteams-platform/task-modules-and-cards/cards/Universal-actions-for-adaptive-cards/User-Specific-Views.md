@@ -4,12 +4,12 @@ description: Пример для пользовательских предста
 author: surbhigupta12
 ms.topic: conceptual
 localization_priority: Normal
-ms.openlocfilehash: 696fc5ce25c79d749b301309bfe0c737e39ad294
-ms.sourcegitcommit: 9ef3b415cbba484c2201abe9c6927e08d974388e
+ms.openlocfilehash: cadf66082582cfd9009a0497b3eb5e58f0a2ef02
+ms.sourcegitcommit: 999f5c607671e088ea8a461fa7dbb63f8d61c39b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52555446"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52649633"
 ---
 # <a name="user-specific-views"></a>Пользовательские просмотры
 
@@ -17,7 +17,15 @@ ms.locfileid: "52555446"
 
 Например, Меган, инспектор безопасности в Contoso, хочет создать инцидент и назначить его Алексу. Она также хочет, чтобы все в команде знали об инциденте. Меган использует расширение сообщений об инцидентах Contoso с питанием от универсальных действий для адаптивных карт.
 
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+:::image type="content" source="~/assets/images/adaptive-cards/mobile-universal-bots-incident-management.jpg" alt-text="Представления для мобильных пользователей":::
+
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-incident-management.png" alt-text="Пользовательские просмотры":::
+
+* * *
 
 ## <a name="user-specific-views-for-adaptive-cards"></a>Пользовательские представления для адаптивных карт
 

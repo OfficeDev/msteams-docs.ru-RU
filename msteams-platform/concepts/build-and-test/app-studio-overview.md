@@ -4,16 +4,23 @@ description: Начните создавать эффективные прило
 keywords: начало работы app studio teams
 localization_priority: Normal
 ms.topic: overview
-ms.openlocfilehash: 391086b85f0e68e1a864c3d4254bdbe62b5eaa1a
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: eda6835a1453f878476b3cc296ff2c0e5dc889a5
+ms.sourcegitcommit: 1cc1516e71441f6f3f82b35868e21ba9933333cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52565202"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651714"
 ---
 # <a name="quickly-develop-apps-with-app-studio-for-microsoft-teams"></a>Быстрая разработка приложений с помощью App Studio для Microsoft Teams
 
 С помощью App Studio можно удобно создавать и интегрировать ваши собственные приложения для Microsoft Teams, если вы разрабатываете пользовательские приложения для своего предприятия или приложения SaaS для команд во всем мире. App Studio упрощает создание манифеста и пакета для вашего приложения и предоставляет вам полезные инструменты, такие как редактор карточек и библиотека элементов управления React.
+
+> [!IMPORTANT]
+> App Studio в настоящее время не доступен в следующих типах Teams orgs:
+>
+> * Облако сообщества для государственных организаций (GCC)
+> * GCC High
+> * DoD
 
 ## <a name="installing-app-studio"></a>Установка App Studio
 

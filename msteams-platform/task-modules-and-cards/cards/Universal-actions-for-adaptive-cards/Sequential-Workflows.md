@@ -4,12 +4,12 @@ description: Пример последовательного рабочего п
 author: surbhigupta12
 ms.topic: conceptual
 localization_priority: Normal
-ms.openlocfilehash: 7f285bf76aac4f0ca276321aee2ce4b4e5c3e7e4
-ms.sourcegitcommit: 9ef3b415cbba484c2201abe9c6927e08d974388e
+ms.openlocfilehash: f36e65133572569cd01de1053044336c810656f3
+ms.sourcegitcommit: 999f5c607671e088ea8a461fa7dbb63f8d61c39b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52555404"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52649650"
 ---
 # <a name="sequential-workflows"></a>Последовательные рабочие процессы
 
@@ -122,6 +122,12 @@ var adaptiveCardResponse = JObject.FromObject(new
     value = card
  });
 ```
+
+## <a name="code-sample"></a>Пример кода
+
+|Пример имени | Описание | . NETCore |
+|----------------|-----------------|--------------|
+| Teams питания бот | Создайте простой бот, который принимает порядок питания с помощью адаптивных карт. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)|
 
 ## <a name="see-also"></a>См. также
 

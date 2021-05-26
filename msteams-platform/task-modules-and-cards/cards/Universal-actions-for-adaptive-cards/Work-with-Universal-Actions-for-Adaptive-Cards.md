@@ -1,16 +1,16 @@
 ---
-title: Работа с универсальными действиями для адаптивных карт
+title: Работа с универсальными действиями для адаптивных карточек
 description: Работа с универсальными действиями для адаптивных карт.
 ms.topic: conceptual
 localization_priority: Normal
-ms.openlocfilehash: 8c260a4893d38ad365cbb3bdd5a7613a1b42654f
-ms.sourcegitcommit: 1256639fa424e3833b44207ce847a245824d48e6
+ms.openlocfilehash: 4361f1c7774837b728c6382df4e62e00ea912e35
+ms.sourcegitcommit: 999f5c607671e088ea8a461fa7dbb63f8d61c39b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52088872"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52649701"
 ---
-# <a name="work-with-universal-actions-for-adaptive-cards"></a>Работа с универсальными действиями для адаптивных карт
+# <a name="work-with-universal-actions-for-adaptive-cards"></a>Работа с универсальными действиями для адаптивных карточек
 
 Универсальные действия для адаптивных карт предоставляют способ реализации сценариев, основанных на адаптивной карте, как для Teams, так и для Outlook. В этом документе описывается следующее:
 
@@ -42,7 +42,7 @@ ms.locfileid: "52088872"
 
 Если вы установите версию карты меньше 1.4 и используете свойство или оба свойства, и `refresh` `Action.Execute` произойдет следующее:
 
-| Client | Поведение |
+| Клиент | Поведение |
 | :-- | :-- |
 | Teams | Карта перестает работать. Карта не обновляется и не отрисовка в зависимости от версии Teams `Action.Execute` клиента. Чтобы обеспечить максимальную совместимость Teams, `Action.Execute` определите с `Action.Submit` свойством отката. |
 
@@ -52,7 +52,7 @@ ms.locfileid: "52088872"
 
 При авторе адаптивных карт замените `Action.Submit` и `Action.Http` с помощью `Action.Execute` . Схема похожа на схему `Action.Execute` `Action.Submit` .
 
-Дополнительные сведения см. [вAction.Exeсхеме и свойствах.](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
+Дополнительные сведения см. [вAction.Exeсхеме и свойствах.](/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
 
 Теперь модель обновления позволяет автоматически обновлять адаптивные карты.
 
@@ -60,7 +60,7 @@ ms.locfileid: "52088872"
 
 Чтобы автоматически обновить адаптивную карту, определите ее свойство, в которое встраиваться действие `refresh` типа `Action.Execute` и `userIds` массива.
 
-Дополнительные сведения см. в [обновленной схеме и свойствах.](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model#refresh-mechanism)
+Дополнительные сведения см. в [обновленной схеме и свойствах.](/adaptive-cards/authoring-cards/universal-action-model#refresh-mechanism)
 
 ## <a name="user-ids-in-refresh"></a>Пользовательские ID в обновлении
 
@@ -72,7 +72,7 @@ ms.locfileid: "52088872"
 
 * Свойство UserIds добавляется, так как каналы в Teams могут включать большое количество участников. Если все участники одновременно просматривают канал, безусловное автоматическое обновление приводит к много одновечерным вызовам бота. Чтобы избежать этого, свойство всегда должно быть включено, чтобы определить, какие пользователи должны получать автоматическое обновление с максимальным `userIds` *количеством 60 (шестидесяти) пользовательских МРИС.*
 
-* Дополнительные сведения о том, как можно Teams пользовательские МРИ участника беседы, чтобы добавить в список userIds в разделе обновление адаптивной карты, см. в статье Fetch [roster or user profile.](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile)
+* Дополнительные сведения о том, как можно Teams пользовательские МРИ участника беседы, чтобы добавить в список userIds в разделе обновление адаптивной карты, см. в статье Fetch [roster or user profile.](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile)
 
 * Пример Teams МРТ пользователя`29:1bSnHZ7Js2STWrgk6ScEErLk1Lp2zQuD5H2qQ960rtvstKp8tKLl-3r8b6DoW0QxZimuTxk_kupZ1DBMpvIQQUAZL-PNj0EORDvRZXy8kvWk`
 
@@ -85,9 +85,9 @@ ms.locfileid: "52088872"
 
 При выполнении в клиенте для бота выполняется новый тип действия `Action.Execute` `adaptiveCard/action` Invoke.
 
-Дополнительные сведения см. в примере формата запросов и свойств типичной активности [ `adaptiveCard/action` вызова.](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model#request-format)
+Дополнительные сведения см. в примере формата запросов и свойств типичной активности [ `adaptiveCard/action` вызова.](/adaptive-cards/authoring-cards/universal-action-model#request-format)
 
-Дополнительные сведения см. в примере формата отклика и свойств типичной активности вызова с [ `adaptiveCard/action` поддерживаемых типов откликов.](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model#response-format)
+Дополнительные сведения см. в примере формата отклика и свойств типичной активности вызова с [ `adaptiveCard/action` поддерживаемых типов откликов.](/adaptive-cards/authoring-cards/universal-action-model#response-format)
 
 Далее можно применить обратную совместимость к старым клиентам на разных платформах и сделать адаптивную карту совместимой.
 
@@ -99,7 +99,13 @@ ms.locfileid: "52088872"
 
 Чтобы обеспечить обратную совместимость адаптивных карт с более старыми версиями Teams, необходимо включить свойство и установить `fallback` его значение `Action.Submit` . Кроме того, код бота должен обрабатывать и `Action.Execute` `Action.Submit` .
 
-Дополнительные сведения см. в [Teams.](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model#teams)
+Дополнительные сведения см. в [Teams.](/adaptive-cards/authoring-cards/universal-action-model#teams)
+
+## <a name="code-sample"></a>Пример кода
+
+|Пример имени | Описание | . NETCore |
+|----------------|-----------------|--------------|
+| Teams питания бот | Создайте простой бот, который принимает порядок питания с помощью адаптивных карт. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)|
 
 ## <a name="see-also"></a>См. также
 

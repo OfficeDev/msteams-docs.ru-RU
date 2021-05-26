@@ -1,67 +1,86 @@
 ---
-title: Создание приложений для собраний групп
+title: Предпосылки и ссылки на API для приложений в Teams собраниях
 author: laujan
-description: создание приложений для собраний групп
+description: Работа с приложениями для Teams собраний
 ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 3bfbcd0eed1bd287303315ae57cd2f0db039890c
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 6ee26142ad80021f00ffebf3502f68c124ab4b67
+ms.sourcegitcommit: 1cc1516e71441f6f3f82b35868e21ba9933333cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630182"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651728"
 ---
-# <a name="create-apps-for-teams-meetings"></a>Создание приложений для собраний Teams
+# <a name="prerequisites-and-api-references-for-apps-in-teams-meetings"></a>Предпосылки и ссылки на API для приложений в Teams собраниях
 
-## <a name="prerequisites-and-considerations"></a>Предпосылки и соображения
+Чтобы расширить возможности ваших приложений на протяжении жизненного цикла собраний, Teams позволяет работать с приложениями для Teams собраний. Необходимо пройти необходимые условия и использовать ссылки API приложений для собраний для улучшения работы с собраниями.
 
-Прежде чем создавать приложения для Teams собраний, необходимо иметь представление о следующем:
+## <a name="prerequisites"></a>Предварительные требования
+
+Прежде чем работать с приложениями для Teams собраний, необходимо иметь представление о следующем:
 
 * Вы должны иметь знания о разработке Teams приложений. Дополнительные сведения см. [в Teams разработки приложения.](../overview.md)
 
-* Необходимо обновить манифест Teams, чтобы указать, что приложение доступно для собраний. Дополнительные сведения см. в [манифесте приложения.](#update-your-app-manifest)
+* Необходимо обновить манифест Teams, чтобы указать, что приложение доступно для собраний. Дополнительные сведения см. в [манифесте приложения.](enable-and-configure-your-app-for-teams-meetings.md#update-your-app-manifest)
 
-* Чтобы ваше приложение функционировало в жизненном цикле собрания в качестве вкладки, оно должно поддерживать настраиваемые вкладки в области groupchat. Дополнительные сведения см. в [поле groupchat и](../resources/schema/manifest-schema.md#configurabletabs) [создайте вкладку группы.](../build-your-first-app/build-channel-tab.md)
+* Ваше приложение должно поддерживать настраиваемые вкладки в области группового чата, чтобы ваше приложение функционировало в жизненном цикле собрания в качестве вкладки. Дополнительные сведения см. в [поле groupchat и](../resources/schema/manifest-schema.md#configurabletabs) [создайте вкладку группы.](../build-your-first-app/build-channel-tab.md)
 
-* Необходимо придерживаться общих Teams разработки вкладок для сценариев до и после собрания. Для работы во время собраний обратитесь к вкладке на собрании и рекомендациям по проектированию диалогов на собрании. Дополнительные сведения см. [Teams](../tabs/design/tabs.md)руководства по разработке вкладок, [](../apps-in-teams-meetings/design/designing-apps-in-meetings.md#use-an-in-meeting-tab) рекомендации по проектированию вкладок на собрании и рекомендации по проектированию диалогов на [собрании.](../apps-in-teams-meetings/design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
+* Необходимо придерживаться общих Teams правил разработки вкладок для сценариев до и после собрания. Для работы во время собраний обратитесь к вкладке на собрании и рекомендациям по проектированию диалогов на собрании. Дополнительные сведения см. [Teams](../tabs/design/tabs.md)руководства по разработке вкладок, [](../apps-in-teams-meetings/design/designing-apps-in-meetings.md#use-an-in-meeting-tab)рекомендации по проектированию вкладок на собрании и рекомендации по проектированию диалогов на [собрании.](../apps-in-teams-meetings/design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 
 * Необходимо поддерживать область, чтобы включить приложение в чаты перед собранием и `groupchat` после собрания. С помощью предварительного собрания приложения можно найти и добавить приложения для собраний и выполнить задачи перед собранием. С помощью приложения после собрания можно просмотреть результаты собрания, такие как результаты опроса или отзывы.
 
-* Параметры URL-адресов API должны иметь `meetingId` и `userId` `tenantId` . Они доступны в рамках клиентской Teams SDK и бота. Кроме того, с помощью проверки подлинности [Tab SSO](../tabs/how-to/authentication/auth-aad-sso.md)можно получить достоверную информацию для идентификации пользователя и идентификации клиента.
+* Параметры URL-адресов API должны иметь `meetingId` и `userId` `tenantId` . Они доступны в рамках Teams клиентской SDK и бот-активности. Кроме того, вы можете получить достоверную информацию для идентификации пользователя и идентификации клиента с помощью вкладки [SSO authentication.](../tabs/how-to/authentication/auth-aad-sso.md)
 
 * API `GetParticipant` должен иметь регистрацию бота и ID для создания маркеров auth. Дополнительные сведения см. в [сведениях о регистрации ботов и ID.](../build-your-first-app/build-bot.md)
 
-* Чтобы ваше приложение обновлялось в режиме реального времени, оно должно быть обновлено в зависимости от событий на собрании. Эти события могут быть в диалоговом окне собрания и на других этапах жизненного цикла собрания. Параметр завершения в диалоговом окне на собрании см. `bot Id` в `Notification Signal API` .
+* Чтобы ваше приложение обновлялось в режиме реального времени, оно должно быть обновлено в зависимости от событий на собрании. Эти события могут быть в диалоговом окне собрания и на других этапах жизненного цикла собрания. Параметр завершения в диалоговом окне на собрании `bot Id` см. в `NotificationSignal` API.
 
-## <a name="meeting-apps-api-reference"></a>Ссылка на API приложений для собраний
+* API сведений о собраниях должен иметь регистрацию бота и бот-ID. Для этого требуется бот SDK для получения `TurnContext` .
+
+* Для событий собраний в режиме реального времени необходимо ознакомиться с объектом, доступным `TurnContext` через SDK Bot. Объект `Activity` содержит `TurnContext` полезной нагрузки с фактическим временем начала и окончания. Для проведения собраний в режиме реального времени требуется зарегистрированный бот-ИД с Teams платформы.
+
+После того как вы прошли необходимые условия, вы можете использовать ссылки API приложений собраний , и API сведений о собраниях, которые позволяют получать доступ к информации с помощью атрибутов и отображать соответствующий `GetUserContext` `GetParticipant` `NotificationSignal` контент.
+
+## <a name="meeting-apps-api-references"></a>Ссылки на API приложений для собраний
+
+Новые функции собраний предоставляют API, которые преобразовывают возможности собраний. С помощью этой новой возможности можно создавать приложения или интегрировать существующие приложения в жизненный цикл собрания. Вы можете использовать API для того, чтобы ваше приложение знало о собрании. Вы можете выбрать API, которые необходимо использовать для повышения качества работы собраний.
+
+В следующей таблице приводится список этих API:
 
 |API|Описание|Запрос|Источник|
 |---|---|----|---|
-|**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Microsoft Teams клиента SDK|
+|**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Microsoft Teams Клиентская SDK|
 |**GetParticipant**| Этот API позволяет боту получать сведения о участниках, встречая ID и ID участника. |**GET** _**/v1/meetings/{meetingId}/participants/{participantsId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
 |**NotificationSignal** | Этот API позволяет предоставлять сигналы собрания, которые доставляются с помощью существующего API уведомлений о беседе для чата пользователя-бота. Он позволяет сигнализировать на основе действий пользователя, отображает диалоговое окно на собрании. |**POST** _**/v3/conversations/{conversationId}/activities**_|Microsoft Bot Framework SDK|
+|**Сведения о собрании** | Этот API позволяет получать статические метаданные собраний. |**GET** _**/v1/meetings/{meetingId}**_| Bot SDK |
 
-### <a name="getusercontext"></a>GetUserContext
+### <a name="getusercontext-api"></a>GetUserContext API
 
 Чтобы определить и получить контекстную информацию для содержимого вкладки, см. в этой Teams [контексте.](../tabs/how-to/access-teams-context.md#getting-context-by-using-the-microsoft-teams-javascript-library) `meetingId`используется вкладками при работе в контексте собрания и добавляется для полезной нагрузки ответа.
 
 ### <a name="getparticipant-api"></a>GetParticipant API
 
 > [!NOTE]
-> * Не кэшить роли участников, так как организатор собрания может изменить роль в любое время.
+> * Не кэшить роли участников, так как организатор собрания может изменить роли в любое время.
 > * Teams в настоящее время не поддерживает большие списки рассылки или размеры реестра более 350 участников `GetParticipant` для API.
+
+API позволяет боту получать сведения о `GetParticipant` участниках, встречая ID и ID участника. API включает параметры запросов, примеры и коды ответа.
 
 #### <a name="query-parameters"></a>Параметры запроса
 
+API `GetParticipant` включает следующие параметры запроса:
+
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| string | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| string | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO Tab. |
-|**tenantId**| string | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
+|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO Tab. |
+|**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
 
 #### <a name="example"></a>Пример
+
+API `GetParticipant` содержит следующие примеры:
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
@@ -135,13 +154,15 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 
 #### <a name="response-codes"></a>Коды ответа
 
+API `GetParticipant` включает в себя следующие коды ответа:
+
 |Код ответа|Описание|
 |---|---|
 | **403** | Приложение не может получать сведения о участниках. Это наиболее распространенный ответ на ошибки, который запускается, если приложение не установлено на собрании. Например, если приложение отключено администратором клиента или заблокировано во время переноса веб-сайтов в прямом эфире.|
 | **200** | Данные участника успешно извлекаются.|
 | **401** | Приложение отвечает недействительным маркером.|
 | **404** | Собрание истеко или участник не может быть найден.|
-| **500** | Срок действия собрания истек более 60 дней с момента окончания собрания, либо у участника нет разрешений, основанных на их роли.|
+| **500** | Срок действия собрания истек (более 60 дней) с момента окончания собрания, или у участников нет разрешений, основанных на их роли.|
 
 ### <a name="notificationsignal-api"></a>NotificationSignal API
 
@@ -151,13 +172,17 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 > * При вызове диалогового окна на собрании содержимое представляется в качестве сообщения чата.
 > * В настоящее время отправка целевых уведомлений не поддерживается.
 
-#### <a name="query-parameters"></a>Параметры запроса
+`NotificationSignal` API позволяет предоставлять сигналы собраний, которые доставляются с помощью существующего API уведомлений о беседе для чата пользователя-бота. Этот API позволяет сигнализировать на основе действий пользователя, отображает диалоговое окно в собрании. API включает параметр запроса, примеры и коды ответа.
+
+#### <a name="query-parameter"></a>Параметр запроса
+
+API `NotificationSignal` включает в себя следующий параметр запроса:
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**conversationId**| string | Да | Идентификатор беседы доступен в рамках вызова бота. |
+|**conversationId**| Строка | Да | Идентификатор беседы доступен в рамках Bot Invoke. |
 
-#### <a name="example"></a>Пример
+#### <a name="examples"></a>Примеры
 
 Объявляется `Bot ID` в манифесте, и бот получает объект результата.
 
@@ -165,6 +190,8 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 > * Параметр `completionBotId` необязательный `externalResourceUrl` в примере запрашиваемой полезной нагрузки. `Bot ID` объявляется в манифесте, и бот получает объект результата.
 > * Параметры `externalResourceUrl` ширины и высоты должны быть в пикселях. Чтобы размеры были в пределах допустимого, см. в [рекомендациях по проектированию.](design/designing-apps-in-meetings.md)
 > * URL-адрес — это страница, загруженная в диалоговом окне на `<iframe>` собрании. Домен должен быть в массиве приложения в `validDomains` манифесте приложения.
+
+API `NotificationSignal` содержит следующие примеры:
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
@@ -215,9 +242,11 @@ POST /v3/conversations/{conversationId}/activities
 }
 ```
 
-* * *
+---
 
 #### <a name="response-codes"></a>Коды ответа
+
+API `NotificationSignal` включает в себя следующие коды ответа:
 
 |Код ответа|Описание|
 |---|---|
@@ -226,153 +255,233 @@ POST /v3/conversations/{conversationId}/activities
 | **403** | Приложение не может отправить сигнал. Это может произойти из-за различных причин, таких как отключение приложения администратором клиента, блокировка приложения во время переноса веб-сайта в прямом эфире и так далее. В этом случае полезное сообщение содержит подробное сообщение об ошибке. |
 | **404** | Чат собрания не существует. |
 
-## <a name="enable-your-app-for-teams-meetings"></a>Включить приложение для Teams собраний
-
-### <a name="update-your-app-manifest"></a>Обновление манифеста приложения
-
-Возможности приложения собраний объявляются в манифесте приложения с помощью `configurableTabs` массивов и `scopes` `context` массивов. Область определяет, кому и в котором контекст определяет, где доступно ваше приложение.
+### <a name="meeting-details-api"></a>API сведений о собраниях
 
 > [!NOTE]
-> Попробуйте обновить манифест приложения с помощью [схемы манифеста.](../resources/schema/manifest-schema-dev-preview.md)
-> Приложениям на собраниях нужна *область группового чата.* Область *команды* работает только для вкладок в каналах.
+> В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
-```json
+API сведений о собраниях позволяет приложению получать статические метаданные собраний. Это точки данных, которые не изменяются динамически.
+API доступен через службы ботов.
 
-"configurableTabs": [
-    {
-      "configurationUrl": "https://contoso.com/teamstab/configure",
-      "canUpdateConfiguration": true,
-      "scopes": [
-        "team",
-        "groupchat"
-      ],
-      "context":[
-        "channelTab",
-        "privateChatTab",
-        "meetingChatTab",
-        "meetingDetailsTab",
-        "meetingSidePanel",
-        "meetingStage"
-     ]
-    }
-  ]
-```
-> [!NOTE]
-> `meetingStage` в настоящее время доступна только в предварительном просмотре разработчика.
+#### <a name="query-parameter"></a>Параметр запроса
 
-### <a name="context-property"></a>Свойство Context
+API сведений о собраниях включает в себя следующий параметр запроса:
 
-Вкладка `context` и свойства позволяют `scopes` определить, где должно отображаться ваше приложение. Вкладки в области или области `team` `groupchat` могут иметь несколько контекстов. Ниже ниже 10 значений для свойства, из которого можно использовать все или некоторые `context` из этих значений:
+|Значение|Тип|Обязательный|Описание|
+|---|---|----|---|
+|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
-|Значение|Описание|
-|---|---|
-| **channelTab** | Вкладка в загонах канала команды. |
-| **privateChatTab** | Вкладка в загонах группового чата между набором пользователей, не в контексте группы или собрания. |
-| **meetingChatTab** | Вкладка в загонах группового чата между набором пользователей в контексте запланированного собрания. |
-| **meetingDetailsTab** | Вкладка в загонах сведений о собрании для просмотра календаря. |
-| **meetingSidePanel** | Панель на собрании, открытая с помощью единой панели (U-bar). |
-| **meetingStage** | Приложение из боковогопанеля можно использовать на стадии собрания. |
+#### <a name="example"></a>Пример
 
-> [!NOTE]
-> `Context` свойство в настоящее время не поддерживается для мобильных клиентов.
+API сведений о собраниях содержит следующие примеры:
 
-## <a name="configure-your-app-for-meeting-scenarios"></a>Настройка приложения для сценариев собраний
+# <a name="c"></a>[C#](#tab/dotnet)
 
-> [!NOTE]
-> * Чтобы приложение было видимым в галерее вкладок, оно должно поддерживать настраиваемые вкладки и область группового чата.
-> * Мобильные клиенты поддерживают вкладки только на этапах предварительного и после собраний.
-> * В настоящее время в мобильных клиентах не поддерживается диалоговое окно и вкладка на собрании. Дополнительные сведения см. [в руководстве по вкладки на мобильных](../tabs/design/tabs-mobile.md) устройствах при создании вкладок для мобильных устройств.
-
-### <a name="before-a-meeting"></a>Перед собранием
-
-Перед собранием пользователи могут добавлять вкладки, боты и расширения обмена сообщениями на собрание. Пользователи с ролями организатора и презентовщика могут добавлять вкладки в собрание.
-
-**Добавление вкладки к собранию**
-
-1. В календаре выберите собрание, на которое нужно добавить вкладку.
-1. Выберите **вкладку Details** и выберите плюс <img src="~/assets/images/apps-in-meetings/plusbutton.png" alt="Plus button" width="30"/>. Отображается галерея вкладок.
-
-    ![Опыт предварительного собрания](../assets/images/apps-in-meetings/PreMeeting.png)
-
-1. В галерее вкладок выберите приложение, которое необходимо добавить, и выполните необходимые действия. Приложение устанавливается в качестве вкладки.
-    > [!NOTE] 
-    > В настоящее время на вкладке "Собрания" сведения о собраниях и сведения о участниках не поддерживаются.
-
-**Добавление расширения обмена сообщениями на собрание**
-
-1. Выберите меню эллипсов или &#x25CF;&#x25CF;&#x25CF; , расположенное в области композитных сообщений в чате.
-1. Выберите приложение, которое необходимо добавить, и выполните необходимые действия. Приложение устанавливается в качестве расширения обмена сообщениями.
-
-**Добавление бота на собрание**
-
-В чате собраний **@** введите ключ и выберите **Get bots**.
-
-> [!NOTE]
-> * Удостоверение пользователя должно быть подтверждено с помощью [SSO Tabs.](../tabs/how-to/authentication/auth-aad-sso.md) После проверки подлинности приложение может получить роль пользователя с помощью `GetParticipant` API.
-> * В зависимости от роли пользователя приложение может предоставлять определенные функции. Например, приложение для опроса позволяет создавать новый опрос только организаторам и презентаторам.
-> * Назначения ролей могут быть изменены во время собрания. Дополнительные сведения см. [в Teams собрания.](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019)
-
-### <a name="during-a-meeting"></a>Во время собрания
-
-#### <a name="sidepanel"></a>sidePanel
-
-В sidePanel можно настроить опыт собрания, который позволяет организаторам и презентаторам иметь различные представления и действия. В манифесте приложения необходимо добавить sidePanel в массив контекста. В собрании и во всех сценариях приложение отрисовка в вкладке в собрании шириной 320 пикселей. Дополнительные сведения см. в [интерфейсе FrameContext.](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest&preserve-view=true)
-
-Чтобы использовать `userContext` API для соответственного маршрута запросов, см. Teams [SDK](../tabs/how-to/access-teams-context.md#user-context). См. [Teams поток проверки подлинности для вкладок.](../tabs/how-to/authentication/auth-flow-tab.md) Поток проверки подлинности для вкладок очень похож на поток auth для веб-сайтов. Таким образом, вкладки могут напрямую использовать OAuth 2.0. См. платформа удостоверений Майкрософт и поток кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-
-Расширение обмена сообщениями работает так, как и ожидалось, когда пользователь находится в представлении на собрании, и пользователь может отправлять составить карточки расширения сообщений. AppName in-meeting — это инструмент, который сообщает имя приложения на собрании U-bar.
-
-> [!NOTE]
-> Используйте версию 1.7.0 или более высокую Teams [SDK,](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true)так как версии до нее не поддерживают боковую панель.
-
-#### <a name="in-meeting-dialog"></a>Диалоговое окно собрания
-
-Диалоговое окно на собрании можно использовать для вовлечения участников во время собрания и сбора сведений или отзывов во время собрания. Используйте [`NotificationSignal`](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true) API для сигнала о том, что необходимо вызвать уведомление о пузыре. В качестве полезной нагрузки запроса уведомлений включайте URL-адрес, на котором будет хозяйствовать контент.
-
-Диалоговое окно на собрании не должно использовать модуль задач. Модуль задач не вызывается в чате собрания. Url-адрес внешнего ресурса используется для отображения пузыря контента на собрании. Этот метод можно `submitTask` использовать для отправки данных в чате собраний.
-
-> [!NOTE]
-> * Необходимо вызвать функцию [submitTask()](../task-modules-and-cards/task-modules/task-modules-bots.md#submitting-the-result-of-a-task-module) для автоматического увольнения после действия пользователя в веб-представлении. Это требование для отправки приложения. Дополнительные сведения см. [в Teams SDK task module.](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest&preserve-view=true)
-> * Если вы хотите, чтобы ваше приложение поддержало анонимных пользователей, то при первоначальном запросе необходимо использовать метаданные запроса в объекте, а не `from.id` `from` `from.aadObjectId` метаданные запроса. `from.id`является ИД пользователя и является `from.aadObjectId` Azure Active Directory (AAD) пользователя. Дополнительные сведения см. в [таблицах](../task-modules-and-cards/task-modules/task-modules-tabs.md) с использованием модулей задач и созданием и [отправкой модуля задач.](../messaging-extensions/how-to/action-commands/create-task-module.md?tabs=dotnet#the-initial-invoke-request)
-
-#### <a name="share-to-stage"></a>Share to stage 
-
-> [!NOTE]
-> * В настоящее время эта возможность доступна только в предварительном просмотре разработчика.
-> * Чтобы использовать эту функцию, приложение должно поддерживать боковойпанель на собрании.
-
-
-Эта возможность дает разработчикам возможность делиться приложением на стадии собрания. Включив совместное использование на этапе собрания, участники собраний могут сотрудничать в режиме реального времени. 
-
-Необходимый контекст находится `meetingStage` в манифесте приложения. Обязательным условием для этого является `meetingSidePanel` контекст. Это позволяет включить **кнопку Share** в боковомпанеэле, как обезвожив на следующем изображении:
-
-  ![share_to_stage_during_meeting](~/assets/images/apps-in-meetings/share_to_stage_during_meeting.png)
-
-Изменение манифеста, необходимое для обеспечения этой возможности, является следующим образом: 
-
-```json
-
-"configurableTabs": [
-    {
-      "configurationUrl": "https://contoso.com/teamstab/configure",
-      "canUpdateConfiguration": true,
-      "scopes": [
-        "groupchat"
-      ],
-      "context":[
-        
-        "meetingSidePanel",
-        "meetingStage"
-     ]
-    }
-  ]
+```csharp
+var connectorClient = parameters.TurnContext.TurnState.Get<IConnectorClient>();
+var creds = connectorClient.Credentials as AppCredentials;
+var bearerToken = await creds.GetTokenAsync().ConfigureAwait(false);
+var request = new HttpRequestMessage(HttpMethod.Get, new Uri(new Uri(connectorClient.BaseUri.OriginalString), $"v1/meetings/{meetingId}"));
+request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+HttpResponseMessage response = await (connectorClient as ServiceClient<ConnectorClient>).HttpClient.SendAsync(request, CancellationToken.None).ConfigureAwait(false);
+string content;
+if (response.Content != null)
+{
+    content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+}
 ```
 
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 
+Недоступно
 
-### <a name="after-a-meeting"></a>После собрания
+# <a name="json"></a>[JSON](#tab/json)
 
-Конфигурации после собрания и предварительного собрания эквивалентны.
+```http
+GET /v1/meetings/{meetingId}
+```
+
+---
+
+The JSON response body for Meeting Details API is as follows:
+
+```json
+{ 
+   "details": { 
+        "id": "meeting ID", 
+        "msGraphResourceId": "", 
+        "scheduledStartTime": "2020-08-21T02:30:00+00:00", 
+        "scheduledEndTime": "2020-08-21T03:00:00+00:00", 
+        "joinUrl": "https://teams.microsoft.com/l/xx", 
+        "title": "All Hands", 
+        "type": "Scheduled" 
+    }, 
+    "conversation": { 
+            "isGroup": true, 
+            “conversationType”: “groupchat”, 
+            "id": "meeting chat ID" 
+    }, 
+    "organizer": { 
+        "id": "<organizer user ID>", 
+        "aadObjectId": "<AAD ID>", 
+        "tenantId": "<Tenant ID>" 
+    }
+} 
+```
+
+## <a name="real-time-teams-meeting-events"></a>События Teams в режиме реального времени
+
+> [!NOTE]
+> В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
+
+Пользователь может получать события собраний в режиме реального времени. Как только любое приложение связано с собранием, фактическое время начала и окончания собрания передается боту.
+
+Фактическое время начала и окончания собрания отличается от запланированного времени начала и окончания. API сведений о собрании предоставляет запланированное время начала и окончания, а событие предоставляет фактическое время начала и окончания.
+
+### <a name="example-of-meeting-start-event-payload"></a>Пример полезной нагрузки на начало собрания
+
+В следующем коде приводится пример полезной нагрузки на событие начала собрания:
+
+```json
+{ 
+    "name": "Microsoft/MeetingStart", 
+    "type": "event", 
+    "timestamp": "2021-04-29T16:10:41.1252256Z", 
+    "id": "123", 
+    "channelId": "msteams", 
+    "serviceUrl": "https://microsoft.com", 
+    "from": { 
+        "id": "userID", 
+        "name": "", 
+        "aadObjectId": "aadOnjectId" 
+    }, 
+    "conversation": { 
+        "isGroup": true, 
+        "tenantId": "tenantId", 
+        "id": "thread id" 
+    }, 
+    "recipient": { 
+        "id": "user Id", 
+        "name": "user name" 
+    }, 
+    "entities": [ 
+        { 
+            "locale": "en-US", 
+            "country": "US", 
+            "type": "clientInfo" 
+        } 
+    ], 
+    "channelData": { 
+        "tenant": { 
+            "id": "channel id" 
+        }, 
+        "source": null, 
+        "meeting": { 
+            "id": "meeting id" 
+        } 
+    }, 
+    "value": { 
+        "MeetingType": "Scheduled", 
+        "Title": "Meeting Start/End Event", 
+        "Id":"meeting id", 
+        "JoinUrl": "url" 
+        "StartTime": "2021-04-29T16:17:17.4388966Z" 
+    }, 
+    "locale": "en-US" 
+}
+```
+
+### <a name="example-of-meeting-end-event-payload"></a>Пример полезной нагрузки конечного события собрания
+
+В следующем коде приводится пример полезной нагрузки на конечные события собрания:
+
+```json
+{ 
+    "name": "Microsoft/MeetingEnd", 
+    "type": "event", 
+    "timestamp": "2021-04-29T16:17:17.4388966Z", 
+    "id": "123", 
+    "channelId": "msteams", 
+    "serviceUrl": "https://microsoft.com", 
+    "from": { 
+        "id": "user id", 
+        "name": "", 
+        "aadObjectId": "aadObjectId" 
+    }, 
+    "conversation": { 
+        "isGroup": true, 
+        "tenantId": "tenantId", 
+        "id": "thread id" 
+    }, 
+    "recipient": { 
+        "id": "user id", 
+        "name": "user name" 
+    }, 
+    "entities": [ 
+        { 
+            "locale": "en-US", 
+            "country": "US", 
+            "type": "clientInfo" 
+        } 
+    ], 
+    "channelData": { 
+        "tenant": { 
+            "id": "channel id" 
+        }, 
+        "source": null, 
+        "meeting": { 
+            "id": "meeting Id" 
+        } 
+    }, 
+    "value": { 
+        "MeetingType": "Scheduled", 
+        "Title": "Meeting Start/End Event in Canary", 
+        "Id": "19:meeting_NTM3ZDJjOTUtZGRhOS00MzYxLTk5NDAtMzY4M2IzZWFjZGE1@thread.v2", 
+        "JoinUrl": "url", 
+        "EndTime": "2021-04-29T16:17:17.4388966Z" 
+    }, 
+    "locale": "en-US" 
+}
+```
+
+### <a name="example-of-getting-metadata-of-a-meeting"></a>Пример получения метаданных собрания
+
+Ваш бот получает событие через `OnEventActivityAsync` обработник.
+
+Для десерализации полезной нагрузки json для получения метаданных собрания вводится объект модели. Метаданные собрания находятся в свойстве `value` в полезной нагрузке события. Создается объект модели, переменные члена которого соответствуют клавишам, которые находятся под свойством `MeetingStartEndEventvalue` `value` в полезной нагрузке события.
+
+В следующем коде показано, как захватить метаданные собрания , , , и от `MeetingType` начала и окончания собрания `Title` `Id` `JoinUrl` `StartTime` `EndTime` события:
+
+```csharp
+protected override async Task OnEventActivityAsync(
+ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
+{
+    // Event Name is either `Microsoft/MeetingStart` or `Microsoft/MeetingEnd`
+    var meetingEventName = turnContext.Activity.Name;
+    // Value contains meeting information (ex: meeting type, start time, etc).
+    var meetingEventInfo = turnContext.Activity.Value as JObject; 
+    var meetingEventInfoObject =
+meetingEventInfo.ToObject<MeetingStartEndEventValue>();
+    // Create a very simple adaptive card with meeting information
+var attachmentCard = createMeetingStartOrEndEventAttachment(meetingEventName,
+meetingEventInfoObject);
+    await turnContext.SendActivityAsync(MessageFactory.Attachment(attachmentCard));
+}
+```
+
+MeetingStartEndEventvalue.cs содержит следующий код:
+
+```csharp
+public class MeetingStartEndEventValue
+{
+    public string Id { get; set; }
+    public string Title { get; set; }
+    public string MeetingType { get; set; }
+    public string JoinUrl { get; set; }
+    public string StartTime { get; set; }
+    public string EndTime { get; set; }
+}
+```
 
 ## <a name="code-sample"></a>Пример кода
 
@@ -380,9 +489,15 @@ POST /v3/conversations/{conversationId}/activities
 |----------------|-----------------|--------------|--------------|
 | Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
 | Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Meeting SidePanel | Microsoft Teams для итерактинга с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) |
+| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | |
 
 ## <a name="see-also"></a>См. также
 
 * [Рекомендации по проектированию диалогов на собрании](design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
+* [Приложения для Teams собраний](teams-apps-in-meetings.md)
+
+## <a name="next-step"></a>Следующий шаг
+
+> [!div class="nextstepaction"]
+> [Включить и настроить приложения для Teams собраний](enable-and-configure-your-app-for-teams-meetings.md)
