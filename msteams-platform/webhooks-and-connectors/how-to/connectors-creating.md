@@ -5,12 +5,12 @@ keywords: соединитель teams o365
 localization_priority: Normal
 ms.topic: conceptual
 ms.date: 04/19/2019
-ms.openlocfilehash: ace546853d7dfe9773055288a0fc3471fe656652
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 1598b84fc1c36547aa4c814cdf03404a3833779e
+ms.sourcegitcommit: c55b0d2a4c1f8945e49b0b7c0b08c0eb3da3d2be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629825"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52646327"
 ---
 # <a name="creating-office-365-connectors-for-microsoft-teams"></a>Создание Office 365 соединители для Microsoft Teams
 
@@ -190,7 +190,7 @@ ms.locfileid: "52629825"
 
 Модуль Exchange Online PowerShell V2 использует современную проверку подлинности и работает с многофакторной проверкой подлинности (MFA) для подключения Exchange связанных с powerShell сред в Microsoft 365. Администраторы могут использовать Exchange Online PowerShell для отключения соединители для всего клиента или определенного почтового ящика группы, затрагивая всех пользователей в этом клиенте или почтовом ящике. Отключение для одних и не для других невозможно. Кроме того, соединители отключены по умолчанию для GCC клиентов.
 
-Параметр на уровне клиента переопределяет параметр группового уровня. Например, если администратор включает соединители для группы и отключает их в клиенте, соединители для группы будут отключены. Чтобы включить соединитель в Teams, подключите Exchange Online [PowerShell](/docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-using-modern-authentication-with-or-without-mfa&preserve-view=true) с помощью современной проверки подлинности с помощью MFA или без него.
+Параметр на уровне клиента переопределяет параметр группового уровня. Например, если администратор включает соединители для группы и отключает их в клиенте, соединители для группы будут отключены. Чтобы включить соединитель в Teams, подключите Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-using-modern-authentication-with-or-without-mfa&preserve-view=true) с помощью современной проверки подлинности с помощью MFA или без него.
 
 ### <a name="commands-to-disable-or-enable-connectors"></a>Команды по отключению или включении соединители
 
@@ -203,7 +203,7 @@ ms.locfileid: "52629825"
     * `Set-OrganizationConfig -ConnectorsEnabledForTeams:$true`
     * `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$true`
 
-Дополнительные сведения об обмене модулями PowerShell см. в [сайте Set-OrganizationConfig.](/docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig.md?view=exchange-ps&preserve-view=true) Чтобы включить или отключить Outlook соединители, [подключите приложения к](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab?ui=en-us&rs=en-us&ad=us)группам в Outlook.
+Дополнительные сведения об обмене модулями PowerShell см. в [сайте Set-OrganizationConfig.](/powershell/module/exchange/Set-OrganizationConfig?view=exchange-ps&preserve-view=true) Чтобы включить или отключить Outlook соединители, [подключите приложения к](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab?ui=en-us&rs=en-us&ad=us)группам в Outlook.
 
 ## <a name="testing-your-connector"></a>Тестирование соединителя
 
