@@ -4,16 +4,16 @@ description: Описывает все действия карт и карт, д
 localization_priority: Normal
 keywords: ссылка на карточки ботов
 ms.topic: reference
-ms.openlocfilehash: cab7f1659759f40beb1aba59531ee6c1a84662c1
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: d3f0904326f951475c8a0d3e17daf720d9aad489
+ms.sourcegitcommit: c59d90ae03eae32996db49f162855965b55c52fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566861"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52668864"
 ---
 # <a name="cards-reference"></a>Ссылки на карточки
 
-Карты, перечисленные в этом документе, поддерживаются в ботах для Microsoft Teams. Они основаны на картах, определенных bot Framework, но Teams не поддерживает все карты Bot Framework, а вместо этого были добавлены некоторые Teams карты. Различия называются в ссылках в этом документе.
+Карты, перечисленные в этом документе, поддерживаются в ботах для Microsoft Teams. Они основаны на картах, определенных bot Framework (BF), но Teams не поддерживает все карты Bot Framework и вместо этого были добавлены некоторые Teams карты. Различия называются в ссылках в этом документе.
 
 ## <a name="card-examples"></a>Примеры карт
 
@@ -55,7 +55,7 @@ ms.locfileid: "52566861"
 | Свойство | Тип  | Описание |
 | --- | --- | --- |
 | url | URL-адрес | URL-адрес HTTPS к изображению. |
-| alt | Строка | Доступное описание изображения. |
+| alt | String | Доступное описание изображения. |
 
 > [!NOTE]
 > Если карта содержит URL-адрес изображения, который проходит перенаправление перед окончательным изображением, перенаправление в URL-адрес изображения не поддерживается. Это происходит для изображений, общих в общедоступных облаках.

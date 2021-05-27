@@ -1,27 +1,32 @@
 ---
 title: Создание меню команд для бота
 author: clearab
-description: Создание меню команд для бота Microsoft Teams
+description: Создание командного меню для Microsoft Teams бота
 ms.topic: how-to
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: da87725fca6b4eeacd43f48f6946920251d772e9
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: f89c564a2843aaee010774e6b262a96ce4d6530f
+ms.sourcegitcommit: c59d90ae03eae32996db49f162855965b55c52fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020914"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52668839"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-> [!Note]
-> Меню бота не отображаются в мобильных клиентах.
-
 Чтобы определить набор основных команд, на которые может отвечать бот, можно добавить меню команд со списком команд для бота. Список команд представлен пользователям в области составить сообщение, когда они находятся в беседе с ботом. Выберите команду из списка, чтобы вставить строку команды в поле составить сообщение и выбрать **Отправить**.
 
+# <a name="desktop"></a>[Desktop](#tab/desktop)
+
 ![Меню команд бота](./conversations/media/bot-menu-sample.png)
+
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+
+![Меню команды мобильных ботов](./conversations/media/mobile-bot-menu-sample.png)
+
+* * *
 
 ## <a name="create-a-command-menu-for-your-bot"></a>Создание меню команд для бота
 
@@ -33,7 +38,7 @@ ms.locfileid: "52020914"
 
 **Создание командного меню для бота с помощью App Studio**
 
-1. Откройте teams и выберите **Приложения** с левой области. На странице **Приложения** ищите **App Studio** и выберите **Open**. 
+1. Откройте Teams и выберите **Приложения** с левой области. На странице **Приложения** ищите **App Studio** и выберите **Open**. 
    > [!NOTE]
    > Если у вас нет **App Studio,** вы можете скачать его. Дополнительные сведения см. в [записи установки App Studio.](~/concepts/build-and-test/app-studio-overview.md#installing-app-studio)
 
@@ -164,7 +169,7 @@ ms.locfileid: "52020914"
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
-Вы можете разобрать часть **\@ Упоминания** текста сообщения с помощью статического метода, предоставленного Microsoft Bot Framework. Это метод класса `Activity` с именем `RemoveRecipientMention` .
+Вы можете разсмеять часть **\@ Упоминания** текста сообщения с помощью статического метода, предоставленного Microsoft Bot Framework. Это метод класса `Activity` с именем `RemoveRecipientMention` .
 
 Код C# для размывки части **\@ Упоминания** текста сообщения следующим образом:
 

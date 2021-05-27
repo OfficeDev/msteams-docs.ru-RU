@@ -5,19 +5,19 @@ keywords: начало работы команд портала разработ
 localization_priority: Normal
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: 5f3335470a442fc8a3c94e9563e21fea75c4ef4b
-ms.sourcegitcommit: c55b0d2a4c1f8945e49b0b7c0b08c0eb3da3d2be
+ms.openlocfilehash: 950ca7e09f5b87647cb62b66a545a0b1cec33a7d
+ms.sourcegitcommit: 25c02757fe207cdff916ba63aa215f88e24e1d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52646335"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52667447"
 ---
 # <a name="manage-your-apps-with-the-developer-portal-for-microsoft-teams"></a>Управление приложениями с помощью портала разработчиков для Microsoft Teams
 
 > [!NOTE]
 > Портал разработчика для Teams в настоящее время находится в [предварительном просмотре общедоступных разработчиков.](~/resources/dev-preview/developer-preview-intro.md)
 
-Портал разработчиков для Teams является основным средством настройки, распространения и управления Microsoft Teams приложениями. На портале разработчиков вы можете сотрудничать с коллегами в вашем приложении, настроить среды запуска и многое другое.
+Портал <a href="https://dev.teams.microsoft.com" target="_blank">разработчиков для Teams</a> является основным средством настройки, распространения и управления Microsoft Teams приложениями. На портале разработчиков вы можете сотрудничать с коллегами в вашем приложении, настроить среды запуска и многое другое.
 
 :::image type="content" source="../../assets/images/tdp/tdp_home_1.png" alt-text="Снимок экрана, на котором показана главная страница портала разработчиков для Teams.":::
 

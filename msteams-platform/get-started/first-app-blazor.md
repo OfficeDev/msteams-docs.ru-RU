@@ -5,12 +5,12 @@ description: Быстро создайте Microsoft Teams приложение,
 ms.author: adhal
 ms.date: 04/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: 861b6921d7a2092a746ea7dc1399f8aaa523e207
-ms.sourcegitcommit: 9cabeaed9baf96c8caeb1497f0bc37abdb787d22
+ms.openlocfilehash: 6a9c7e008e2fb6d77c3314286b09d006bd468c37
+ms.sourcegitcommit: 25c02757fe207cdff916ba63aa215f88e24e1d6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52646780"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52667456"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-blazor"></a>Создание и запуск первого Microsoft Teams приложения с помощью Blazor
 
@@ -53,10 +53,10 @@ ms.locfileid: "52646780"
 1. Выполнить `dotnet new -i` установку шаблона из NuGet:
 
    ``` bash
-   dotnet new -i Microsoft.TeamsApp.Blazor
+   dotnet new --install Microsoft.TeamsFx.VisualStudio.ProjectTemplates::0.1.43-beta
    ```
 
-   Это необходимо сделать только в первый раз или при обновлении шаблона.
+   Это необходимо сделать только в первый раз или при обновлении шаблона. Проверьте [NuGet](https://www.nuget.org/packages/Microsoft.TeamsFx.VisualStudio.ProjectTemplates/) последнюю версию этого пакета.
 
 1. Создание каталога:
 
