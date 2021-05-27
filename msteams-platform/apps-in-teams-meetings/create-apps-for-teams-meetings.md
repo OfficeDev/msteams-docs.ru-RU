@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 6ee26142ad80021f00ffebf3502f68c124ab4b67
-ms.sourcegitcommit: 1cc1516e71441f6f3f82b35868e21ba9933333cd
+ms.openlocfilehash: aeedd6ff4ee1e075d24020d872b5ebd216be4fb0
+ms.sourcegitcommit: 2c8b35899dd845acd66f1f927e40d99523c29a91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651728"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684644"
 ---
 # <a name="prerequisites-and-api-references-for-apps-in-teams-meetings"></a>Предпосылки и ссылки на API для приложений в Teams собраниях
 
 Чтобы расширить возможности ваших приложений на протяжении жизненного цикла собраний, Teams позволяет работать с приложениями для Teams собраний. Необходимо пройти необходимые условия и использовать ссылки API приложений для собраний для улучшения работы с собраниями.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые условия
 
 Прежде чем работать с приложениями для Teams собраний, необходимо иметь представление о следующем:
 
@@ -74,8 +74,8 @@ API `GetParticipant` включает следующие параметры за
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO Tab. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| String | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO Tab. |
 |**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
 
 #### <a name="example"></a>Пример
@@ -269,7 +269,7 @@ API сведений о собраниях включает в себя след
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
 #### <a name="example"></a>Пример
 
@@ -489,7 +489,7 @@ public class MeetingStartEndEventValue
 |----------------|-----------------|--------------|--------------|
 | Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
 | Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | |
+| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
 
 ## <a name="see-also"></a>См. также
 
