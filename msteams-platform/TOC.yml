@@ -89,30 +89,40 @@
   items:
     - name: Обзор
       href: concepts/design/design-teams-app-overview.md
-    - name: Основные сведения о дизайне
+    - name: О процессе проектирования
+      href: concepts/design/design-teams-app-process.md
+    - name: Система проектирования
       href: concepts/design/design-teams-app-fundamentals.md
-    - name: Основные компоненты пользовательского интерфейса
-      href: concepts/design/design-teams-app-basic-ui-components.md
+    - name: Возможности приложений
+      items:
+        - name: О структуре приложения
+          href: concepts/design/app-structure.md
+        - name: Персональные приложения
+          href: concepts/design/personal-apps.md
+        - name: Вкладки
+          href: tabs/design/tabs.md
+        - name: боты;
+          href: bots/design/bots.md
+        - name: расширения для обмена сообщениями;
+          href: messaging-extensions/design/messaging-extension-design.md
+        - name: Расширения для собраний
+          href: apps-in-teams-meetings/design/designing-apps-in-meetings.md
     - name: Шаблоны пользовательского интерфейса
       href: concepts/design/design-teams-app-ui-templates.md
-    - name: Персональные приложения
-      href: concepts/design/personal-apps.md
-    - name: Вкладки
+    - name: Компоненты пользовательского интерфейса
       items:
-        - name: Классические и веб-приложения
-          href: tabs/design/tabs.md
-        - name: Для мобильных устройств
-          href: tabs/design/tabs-mobile.md
-    - name: Расширения для обмена сообщениями
-      href: messaging-extensions/design/messaging-extension-design.md
-    - name: Боты
-      href: bots/design/bots.md
-    - name: Расширения для собраний
-      href: apps-in-teams-meetings/design/designing-apps-in-meetings.md
-    - name: Адаптивные карточки
-      href: task-modules-and-cards/cards/design-effective-cards.md
-    - name: Модули задач
-      href: task-modules-and-cards/task-modules/design-teams-task-modules.md
+        - name: Основные компоненты пользовательского интерфейса
+          href: concepts/design/design-teams-app-basic-ui-components.md
+        - name: Дополнительные компоненты пользовательского интерфейса
+          href: concepts/design/design-teams-app-advanced-ui-components.md
+        - name: Адаптивные карточки
+          href: task-modules-and-cards/cards/design-effective-cards.md
+        - name: Модули задач
+          href: task-modules-and-cards/task-modules/design-teams-task-modules.md
+        - name: Уведомления ленты новостей
+          href: concepts/design/activity-feed-notifications.md
+    - name: Разрешение настройки приложения
+      href: concepts/design/enable-app-customization.md
 - name: Инструменты и пакеты SDK
   items:
     - name: Наборы средств Teams для Visual Studio Code
@@ -123,6 +133,8 @@
       href: 'https://github.com/pnp/generator-teams'
     - name: App Studio
       href: concepts/build-and-test/app-studio-overview.md
+    - name: Портал разработчиков Teams
+      href: concepts/build-and-test/teams-developer-portal.md
     - name: Клиентский SDK JavaScript для Teams
       href: tabs/how-to/using-teams-client-sdk.md
     - name: Пакеты Node.js Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
@@ -179,6 +191,8 @@
   items:
     - name: Обзор
       href: tabs/what-are-tabs.md
+    - name: Развертывание ссылки "Вкладки" и представление стадий
+      href: tabs/tabs-link-unfurling.md
     - name: Требования к вкладке
       href: tabs/how-to/tab-requirements.md
     - name: Примеры использования
@@ -201,6 +215,8 @@
       href: tabs/how-to/create-tab-pages/configuration-page.md
     - name: Создать страницу удаления
       href: tabs/how-to/create-tab-pages/removal-page.md
+    - name: Вкладки на мобильных устройствах
+      href: tabs/design/tabs-mobile.md
     - name: Получение контекста для вкладки
       href: tabs/how-to/access-teams-context.md
 - name: Боты сборки
@@ -217,6 +233,9 @@
           href: bots/how-to/conversations/conversation-basics.md
         - name: Сообщения в беседах с ботами
           href: bots/how-to/conversations/conversation-messages.md
+          items:
+            - name: Получение всех сообщений канала через RSC
+              href: bots/how-to/conversations/channel-messages-with-rsc.md
         - name: Создать меню команд для бота
           href: bots/how-to/create-a-bot-commands-menu.md
         - name: Канал и групповые разговоры
