@@ -6,19 +6,20 @@
     - name: Новые возможности
       href: whats-new.md
 - name: Начало работы
+  expanded: true
   items:
-    - name: Обзор
-      href: build-your-first-app/build-first-app-overview.md
-    - name: 'Создание приложения "Hello, World!"'
-      href: build-your-first-app/build-and-run.md
-    - name: Создание базовой личной вкладки
-      href: build-your-first-app/build-personal-tab.md
-    - name: Создание первого канала и вкладки группы
-      href: build-your-first-app/build-channel-tab.md
-    - name: Создание первого бота
-      href: build-your-first-app/build-bot.md
-    - name: Создание первого расширения для обмена сообщениями
-      href: build-your-first-app/build-messaging-extension.md
+    - name: Предварительные требования
+      href: get-started/prerequisites.md
+    - name: Создание личного приложения (React)
+      href: get-started/first-app-react.md
+    - name: Создание личного приложения (Blazor)
+      href: get-started/first-app-blazor.md
+    - name: Создание личного приложения (SPFx)
+      href: get-started/first-app-spfx.md
+    - name: Создание бота беседы
+      href: get-started/first-app-bot.md
+    - name: Создать расширение для обмена сообщениями
+      href: get-started/first-message-extension.md
 - name: Руководства и примеры кода
   items:
     - name: Руководства
@@ -191,10 +192,22 @@
   items:
     - name: Обзор
       href: tabs/what-are-tabs.md
-    - name: Развертывание ссылки "Вкладки" и представление стадий
-      href: tabs/tabs-link-unfurling.md
-    - name: Требования к вкладке
-      href: tabs/how-to/tab-requirements.md
+    - name: Создание вкладки
+      items:
+        - name: Требования к вкладке
+          href: tabs/how-to/tab-requirements.md
+        - name: Создать страницу контента
+          href: tabs/how-to/create-tab-pages/content-page.md
+        - name: Создать страницу конфигурации
+          href: tabs/how-to/create-tab-pages/configuration-page.md
+        - name: Создать страницу удаления
+          href: tabs/how-to/create-tab-pages/removal-page.md
+        - name: Получение контекста для вкладки
+          href: tabs/how-to/access-teams-context.md
+        - name: Создание вкладок с использованием адаптивных карточек
+          href: tabs/how-to/build-adaptive-card-tabs.md
+        - name: Предварительный просмотр для ссылки "Вкладки" и представление стадий
+          href: tabs/tabs-link-unfurling.md
     - name: Примеры использования
       items:
         - name: Вкладка "Личное" с Node.js
@@ -209,16 +222,6 @@
           href: tabs/quickstarts/create-channel-group-tab-dotnet-core.md
         - name: Вкладка "Канал" с C# или ASP.NET MVC
           href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
-    - name: Создать страницу контента
-      href: tabs/how-to/create-tab-pages/content-page.md
-    - name: Создать страницу конфигурации
-      href: tabs/how-to/create-tab-pages/configuration-page.md
-    - name: Создать страницу удаления
-      href: tabs/how-to/create-tab-pages/removal-page.md
-    - name: Вкладки на мобильных устройствах
-      href: tabs/design/tabs-mobile.md
-    - name: Получение контекста для вкладки
-      href: tabs/how-to/access-teams-context.md
 - name: Боты сборки
   items:
     - name: Обзор
@@ -298,8 +301,14 @@
   items:
     - name: Обзор
       href: apps-in-teams-meetings/teams-apps-in-meetings.md
-    - name: Создание приложения для собраний
+    - name: Расширяемость приложения для собраний
+      href: apps-in-teams-meetings/meeting-app-extensibility.md
+    - name: Необходимые условия и ссылки на API для приложений в собраниях Teams
       href: apps-in-teams-meetings/create-apps-for-teams-meetings.md
+    - name: Включение и настройка приложений для собраний
+      href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
+    - name: Режим "Вместе" в Teams
+      href: apps-in-teams-meetings/teams-together-mode.md
 - name: Создание веб-перехватчиков и соединителей
   items:
     - name: Обзор
