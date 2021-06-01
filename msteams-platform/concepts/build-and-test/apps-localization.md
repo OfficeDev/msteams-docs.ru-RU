@@ -5,12 +5,12 @@ ms.topic: conceptual
 localization_priority: Normal
 keywords: команды публикуют язык локализации AppSource в офисе магазина
 ms.date: 05/15/2018
-ms.openlocfilehash: a55b8af97e5306843858e5844a017dd402ab3516
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 6dbdeb6d16c99aada23f8d74a92d958f9c29b69d
+ms.sourcegitcommit: 118f7261d313feeac5b398fef56a44bd90104b2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566049"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709630"
 ---
 # <a name="localization-for-microsoft-teams-apps"></a>Локализация Microsoft Teams приложений
 
@@ -137,8 +137,8 @@ ms.locfileid: "52566049"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Пример имени | Описание | .NET |
-|-------------|-------------|------|
-| Локализация приложений | Microsoft Teams для локализации приложений с помощью бота и вкладки. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |
+| Пример имени | Описание | .NET | Node.js |
+|-------------|-------------|------|------|
+| Локализация приложений | Microsoft Teams для локализации приложений с помощью бота и вкладки. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
 
 
