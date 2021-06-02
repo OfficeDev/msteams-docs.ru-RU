@@ -5,12 +5,12 @@ description: Описывает, как реагировать на отправ
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 3ed682eadde410a545f73768943a51ef95123e49
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: ae5171f45974e7977a45775facf6360d34a84f87
+ms.sourcegitcommit: e50cdeb6b7f481e12911b2bb74a8da22af0bffac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019834"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710643"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -26,7 +26,7 @@ ms.locfileid: "52019834"
 * [Ответ на карточку.](#respond-with-a-card-inserted-into-the-compose-message-area)Вы можете отвечать карточкой, с помощью которую пользователь может взаимодействовать или вставлять в сообщение.
 * [Адаптивная карта из бота.](#bot-response-with-adaptive-card)Вставьте адаптивную карточку непосредственно в беседу.
 * [Запрос пользователя на проверку подлинности.](~/messaging-extensions/how-to/add-authentication.md)
-* [Запрос пользователя для предоставления дополнительной конфигурации.](~/messaging-extensions/how-to/add-configuration-page.md)
+* [Запрос пользователя на предоставление дополнительной конфигурации]~/get-started/first-message-extension.md).
 
 Для проверки подлинности или настройки после завершения процесса пользователь вызывает повторное вызов в веб-службу. В следующей таблице показано, какие типы ответов доступны в зависимости от расположения ссылок расширения `commandContext` обмена сообщениями: 
 

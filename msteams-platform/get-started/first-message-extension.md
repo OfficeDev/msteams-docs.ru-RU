@@ -5,12 +5,12 @@ description: Создайте расширение для сообщений д�
 ms.author: adhal
 ms.date: 05/20/2021
 ms.topic: quickstart
-ms.openlocfilehash: ad341c386cc9e1bf03cf6e25c0d8be8add0880c6
-ms.sourcegitcommit: 2c8b35899dd845acd66f1f927e40d99523c29a91
-ms.translationtype: HT
+ms.openlocfilehash: eaecb045993f8dfd21f4c2c4359a4a3388d659e6
+ms.sourcegitcommit: e50cdeb6b7f481e12911b2bb74a8da22af0bffac
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698111"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710650"
 ---
 # <a name="build-and-run-your-first-messaging-extension-for-microsoft-teams"></a>Создание и запуск первого расширения для сообщений для Microsoft Teams
 
@@ -166,6 +166,23 @@ teamsfx new
 Развертывание включает подготовку ресурсов для активной подписки Azure и развертывание (загрузку) внутреннего и внешнего кода приложения в Azure. Серверная часть использует различные службы Azure, включая службу приложений Azure и службу Azure Bot.
 
 </details>
+
+## <a name="add-a-configuration-page-to-your-messaging-extension"></a>Добавление страницы конфигурации в расширение обмена сообщениями
+
+[!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
+
+## <a name="code-sample"></a>Пример кода
+
+В Teams в примере проектов по GitHub показано, как создавать расширения обмена сообщениями, включающие страницу конфигурации и проверку подлинности службы [ботов.](https://github.com/microsoft/BotBuilder-Samples#teams-samples) В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.
+
+| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+|-----------------|-----------------|-------------|--------------|--------|
+| Строитель ботов | Создание расширений обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) | [View]( https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
+
+## <a name="additional-code-sample"></a>Дополнительный пример кода
+
+> [!div class="nextstepaction"]
+> [Просмотр дополнительных примеров bot Framework в GitHub](https://github.com/OfficeDev/microsoft-teams-samples#messaging-extensions-samples-using-the-v4-sdk)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
