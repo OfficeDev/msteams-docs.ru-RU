@@ -5,14 +5,19 @@ keywords: команды visual studio code toolkit tabs sso graph authenticatio
 localization_priority: Normal
 ms.topic: how-to
 ms.author: lajanuar
-ms.openlocfilehash: b2ba9eb27d00f07ec46ddfe0c1cc13ed0864bbbc
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 2ef409a45b92240cced09d2d77793af33945589e
+ms.sourcegitcommit: 33a43c61f27ae750776616b2cf90159455d8ba6c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630994"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52721817"
 ---
 # <a name="single-sign-on-authentication-with-teams-toolkit-and-visual-studio-code-for-tabs"></a>Проверка подлинности с одним входом с Teams набор средств и Visual Studio Code для вкладок
+
+> [!IMPORTANT]
+> **Этот документ относится к старой версии Teams набор средств**
+>
+> Для получения текущих сведений ознакомьтесь [с необходимыми условиями](../get-started/prerequisites.md) и следуйте одному из новых учебников.
 
 Этот Microsoft Teams набор средств позволяет создавать проверку подлинности единой входной (SSO) для приложений вкладок непосредственно в Visual Studio Code. Набор инструментов поможет вам в этом процессе и предоставляет все необходимое, включая платформа удостоверений Майкрософт регистрацию на портале Azure.
 
