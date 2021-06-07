@@ -5,12 +5,12 @@ ms.topic: how-to
 localization_priority: Normal
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 975d3ef8fc8bdc8d6d7c336cf3a61a3a42ef5315
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: c0f9c3328018884290c86a49b8026ce81022cd83
+ms.sourcegitcommit: 25539046d408c4270b988fd826d7cf1275f4b9dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566035"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52763110"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовка отправки Microsoft Teams магазина
 
@@ -77,7 +77,7 @@ ms.locfileid: "52566035"
 
 :::row-end:::
 
-Убедитесь, что ваше короткое имя соответствует рекомендациям по [проверке хранения.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#11-app-name)
+Убедитесь, что ваше короткое имя соответствует рекомендациям по [проверке хранения.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#app-name)
 
 ### <a name="write-descriptions"></a>Написание описаний
 
@@ -97,7 +97,7 @@ ms.locfileid: "52566035"
 
 :::row-end:::
 
-Убедитесь, что краткое описание соответствует рекомендациям по проверке [хранения.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#431-short-description)
+Убедитесь, что краткое описание соответствует рекомендациям по проверке [хранения.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#short-description)
 
 #### <a name="long-description"></a>Подробное описание
 
@@ -113,7 +113,7 @@ ms.locfileid: "52566035"
 
 :::row-end:::
 
-Убедитесь, что ваше длинное описание соответствует рекомендациям проверки [магазина.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#432-long-description)
+Убедитесь, что ваше длинное описание соответствует рекомендациям проверки [магазина.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#long-description)
 
 ### <a name="adhere-to-icon-design-guidelines"></a>Соблюдайте рекомендации по проектированию значков
 
@@ -144,7 +144,7 @@ ms.locfileid: "52566035"
 
 Дополнительные возможности см. в следующих ресурсах:
 
-* [Teams проверки хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#44-screenshots)
+* [Teams проверки хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#screenshots)
 * [Создай эффективные изображения для магазинов приложений Майкрософт](/office/dev/store/craft-effective-appsource-store-images)
 
 ### <a name="create-a-video"></a>Создание видео
