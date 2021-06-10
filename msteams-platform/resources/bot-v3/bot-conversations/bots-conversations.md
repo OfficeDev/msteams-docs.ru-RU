@@ -81,7 +81,7 @@ ms.locfileid: "52630462"
 * Воспользуйтесь `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
 * Не используйте `![Duck on a rock](http://aka.ms/Fo983c)`
 
-## <a name="receiving-messages&quot;></a>Получение сообщений
+## <a name="receiving-messages"></a>Получение сообщений
 
 В зависимости от объявленных областей бот может получать сообщения в следующих контекстах:
 
