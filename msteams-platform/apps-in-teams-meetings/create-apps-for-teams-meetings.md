@@ -1,23 +1,23 @@
 ---
-title: Предпосылки и ссылки на API для приложений в Teams собраниях
+title: Необходимые условия и ссылки на API для приложений в собраниях Teams
 author: laujan
 description: Работа с приложениями для Teams собраний
 ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: aeedd6ff4ee1e075d24020d872b5ebd216be4fb0
-ms.sourcegitcommit: 2c8b35899dd845acd66f1f927e40d99523c29a91
+ms.openlocfilehash: f42e827801e21bbd039f52dbb685d4559ae5cf81
+ms.sourcegitcommit: 37325179a532897fafbe827dcf9a7ca5fa5e7d0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684644"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52853510"
 ---
-# <a name="prerequisites-and-api-references-for-apps-in-teams-meetings"></a>Предпосылки и ссылки на API для приложений в Teams собраниях
+# <a name="prerequisites-and-api-references-for-apps-in-teams-meetings"></a>Необходимые условия и ссылки на API для приложений в собраниях Teams
 
 Чтобы расширить возможности ваших приложений на протяжении жизненного цикла собраний, Teams позволяет работать с приложениями для Teams собраний. Необходимо пройти необходимые условия и использовать ссылки API приложений для собраний для улучшения работы с собраниями.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем работать с приложениями для Teams собраний, необходимо иметь представление о следующем:
 
@@ -37,11 +37,7 @@ ms.locfileid: "52684644"
 
 * Чтобы ваше приложение обновлялось в режиме реального времени, оно должно быть обновлено в зависимости от событий на собрании. Эти события могут быть в диалоговом окне собрания и на других этапах жизненного цикла собрания. Параметр завершения в диалоговом окне на собрании `bot Id` см. в `NotificationSignal` API.
 
-* API сведений о собраниях должен иметь регистрацию бота и бот-ID. Для этого требуется бот SDK для получения `TurnContext` .
-
-* Для событий собраний в режиме реального времени необходимо ознакомиться с объектом, доступным `TurnContext` через SDK Bot. Объект `Activity` содержит `TurnContext` полезной нагрузки с фактическим временем начала и окончания. Для проведения собраний в режиме реального времени требуется зарегистрированный бот-ИД с Teams платформы.
-
-После того как вы прошли необходимые условия, вы можете использовать ссылки API приложений собраний , и API сведений о собраниях, которые позволяют получать доступ к информации с помощью атрибутов и отображать соответствующий `GetUserContext` `GetParticipant` `NotificationSignal` контент.
+После того как вы прошли все необходимые условия, вы можете использовать ссылки API приложений собраний, которые позволяют получать доступ к информации с помощью атрибутов и отображать `GetUserContext` `GetParticipant` `NotificationSignal` соответствующий контент.
 
 ## <a name="meeting-apps-api-references"></a>Ссылки на API приложений для собраний
 
@@ -54,7 +50,6 @@ ms.locfileid: "52684644"
 |**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Microsoft Teams Клиентская SDK|
 |**GetParticipant**| Этот API позволяет боту получать сведения о участниках, встречая ID и ID участника. |**GET** _**/v1/meetings/{meetingId}/participants/{participantsId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
 |**NotificationSignal** | Этот API позволяет предоставлять сигналы собрания, которые доставляются с помощью существующего API уведомлений о беседе для чата пользователя-бота. Он позволяет сигнализировать на основе действий пользователя, отображает диалоговое окно на собрании. |**POST** _**/v3/conversations/{conversationId}/activities**_|Microsoft Bot Framework SDK|
-|**Сведения о собрании** | Этот API позволяет получать статические метаданные собраний. |**GET** _**/v1/meetings/{meetingId}**_| Bot SDK |
 
 ### <a name="getusercontext-api"></a>GetUserContext API
 
@@ -255,234 +250,6 @@ API `NotificationSignal` включает в себя следующие код�
 | **403** | Приложение не может отправить сигнал. Это может произойти из-за различных причин, таких как отключение приложения администратором клиента, блокировка приложения во время переноса веб-сайта в прямом эфире и так далее. В этом случае полезное сообщение содержит подробное сообщение об ошибке. |
 | **404** | Чат собрания не существует. |
 
-### <a name="meeting-details-api"></a>API сведений о собраниях
-
-> [!NOTE]
-> В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
-
-API сведений о собраниях позволяет приложению получать статические метаданные собраний. Это точки данных, которые не изменяются динамически.
-API доступен через службы ботов.
-
-#### <a name="query-parameter"></a>Параметр запроса
-
-API сведений о собраниях включает в себя следующий параметр запроса:
-
-|Значение|Тип|Обязательный|Описание|
-|---|---|----|---|
-|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
-
-#### <a name="example"></a>Пример
-
-API сведений о собраниях содержит следующие примеры:
-
-# <a name="c"></a>[C#](#tab/dotnet)
-
-```csharp
-var connectorClient = parameters.TurnContext.TurnState.Get<IConnectorClient>();
-var creds = connectorClient.Credentials as AppCredentials;
-var bearerToken = await creds.GetTokenAsync().ConfigureAwait(false);
-var request = new HttpRequestMessage(HttpMethod.Get, new Uri(new Uri(connectorClient.BaseUri.OriginalString), $"v1/meetings/{meetingId}"));
-request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
-HttpResponseMessage response = await (connectorClient as ServiceClient<ConnectorClient>).HttpClient.SendAsync(request, CancellationToken.None).ConfigureAwait(false);
-string content;
-if (response.Content != null)
-{
-    content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-}
-```
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-
-Недоступно
-
-# <a name="json"></a>[JSON](#tab/json)
-
-```http
-GET /v1/meetings/{meetingId}
-```
-
----
-
-The JSON response body for Meeting Details API is as follows:
-
-```json
-{ 
-   "details": { 
-        "id": "meeting ID", 
-        "msGraphResourceId": "", 
-        "scheduledStartTime": "2020-08-21T02:30:00+00:00", 
-        "scheduledEndTime": "2020-08-21T03:00:00+00:00", 
-        "joinUrl": "https://teams.microsoft.com/l/xx", 
-        "title": "All Hands", 
-        "type": "Scheduled" 
-    }, 
-    "conversation": { 
-            "isGroup": true, 
-            “conversationType”: “groupchat”, 
-            "id": "meeting chat ID" 
-    }, 
-    "organizer": { 
-        "id": "<organizer user ID>", 
-        "aadObjectId": "<AAD ID>", 
-        "tenantId": "<Tenant ID>" 
-    }
-} 
-```
-
-## <a name="real-time-teams-meeting-events"></a>События Teams в режиме реального времени
-
-> [!NOTE]
-> В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
-
-Пользователь может получать события собраний в режиме реального времени. Как только любое приложение связано с собранием, фактическое время начала и окончания собрания передается боту.
-
-Фактическое время начала и окончания собрания отличается от запланированного времени начала и окончания. API сведений о собрании предоставляет запланированное время начала и окончания, а событие предоставляет фактическое время начала и окончания.
-
-### <a name="example-of-meeting-start-event-payload"></a>Пример полезной нагрузки на начало собрания
-
-В следующем коде приводится пример полезной нагрузки на событие начала собрания:
-
-```json
-{ 
-    "name": "Microsoft/MeetingStart", 
-    "type": "event", 
-    "timestamp": "2021-04-29T16:10:41.1252256Z", 
-    "id": "123", 
-    "channelId": "msteams", 
-    "serviceUrl": "https://microsoft.com", 
-    "from": { 
-        "id": "userID", 
-        "name": "", 
-        "aadObjectId": "aadOnjectId" 
-    }, 
-    "conversation": { 
-        "isGroup": true, 
-        "tenantId": "tenantId", 
-        "id": "thread id" 
-    }, 
-    "recipient": { 
-        "id": "user Id", 
-        "name": "user name" 
-    }, 
-    "entities": [ 
-        { 
-            "locale": "en-US", 
-            "country": "US", 
-            "type": "clientInfo" 
-        } 
-    ], 
-    "channelData": { 
-        "tenant": { 
-            "id": "channel id" 
-        }, 
-        "source": null, 
-        "meeting": { 
-            "id": "meeting id" 
-        } 
-    }, 
-    "value": { 
-        "MeetingType": "Scheduled", 
-        "Title": "Meeting Start/End Event", 
-        "Id":"meeting id", 
-        "JoinUrl": "url" 
-        "StartTime": "2021-04-29T16:17:17.4388966Z" 
-    }, 
-    "locale": "en-US" 
-}
-```
-
-### <a name="example-of-meeting-end-event-payload"></a>Пример полезной нагрузки конечного события собрания
-
-В следующем коде приводится пример полезной нагрузки на конечные события собрания:
-
-```json
-{ 
-    "name": "Microsoft/MeetingEnd", 
-    "type": "event", 
-    "timestamp": "2021-04-29T16:17:17.4388966Z", 
-    "id": "123", 
-    "channelId": "msteams", 
-    "serviceUrl": "https://microsoft.com", 
-    "from": { 
-        "id": "user id", 
-        "name": "", 
-        "aadObjectId": "aadObjectId" 
-    }, 
-    "conversation": { 
-        "isGroup": true, 
-        "tenantId": "tenantId", 
-        "id": "thread id" 
-    }, 
-    "recipient": { 
-        "id": "user id", 
-        "name": "user name" 
-    }, 
-    "entities": [ 
-        { 
-            "locale": "en-US", 
-            "country": "US", 
-            "type": "clientInfo" 
-        } 
-    ], 
-    "channelData": { 
-        "tenant": { 
-            "id": "channel id" 
-        }, 
-        "source": null, 
-        "meeting": { 
-            "id": "meeting Id" 
-        } 
-    }, 
-    "value": { 
-        "MeetingType": "Scheduled", 
-        "Title": "Meeting Start/End Event in Canary", 
-        "Id": "19:meeting_NTM3ZDJjOTUtZGRhOS00MzYxLTk5NDAtMzY4M2IzZWFjZGE1@thread.v2", 
-        "JoinUrl": "url", 
-        "EndTime": "2021-04-29T16:17:17.4388966Z" 
-    }, 
-    "locale": "en-US" 
-}
-```
-
-### <a name="example-of-getting-metadata-of-a-meeting"></a>Пример получения метаданных собрания
-
-Ваш бот получает событие через `OnEventActivityAsync` обработник.
-
-Для десерализации полезной нагрузки json для получения метаданных собрания вводится объект модели. Метаданные собрания находятся в свойстве `value` в полезной нагрузке события. Создается объект модели, переменные члена которого соответствуют клавишам, которые находятся под свойством `MeetingStartEndEventvalue` `value` в полезной нагрузке события.
-
-В следующем коде показано, как захватить метаданные собрания , , , и от `MeetingType` начала и окончания собрания `Title` `Id` `JoinUrl` `StartTime` `EndTime` события:
-
-```csharp
-protected override async Task OnEventActivityAsync(
-ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
-{
-    // Event Name is either `Microsoft/MeetingStart` or `Microsoft/MeetingEnd`
-    var meetingEventName = turnContext.Activity.Name;
-    // Value contains meeting information (ex: meeting type, start time, etc).
-    var meetingEventInfo = turnContext.Activity.Value as JObject; 
-    var meetingEventInfoObject =
-meetingEventInfo.ToObject<MeetingStartEndEventValue>();
-    // Create a very simple adaptive card with meeting information
-var attachmentCard = createMeetingStartOrEndEventAttachment(meetingEventName,
-meetingEventInfoObject);
-    await turnContext.SendActivityAsync(MessageFactory.Attachment(attachmentCard));
-}
-```
-
-MeetingStartEndEventvalue.cs содержит следующий код:
-
-```csharp
-public class MeetingStartEndEventValue
-{
-    public string Id { get; set; }
-    public string Title { get; set; }
-    public string MeetingType { get; set; }
-    public string JoinUrl { get; set; }
-    public string StartTime { get; set; }
-    public string EndTime { get; set; }
-}
-```
-
 ## <a name="code-sample"></a>Пример кода
 
 |Пример имени | Описание | .NET | Node.js |
@@ -497,7 +264,7 @@ public class MeetingStartEndEventValue
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для Teams собраний](teams-apps-in-meetings.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Включить и настроить приложения для Teams собраний](enable-and-configure-your-app-for-teams-meetings.md)

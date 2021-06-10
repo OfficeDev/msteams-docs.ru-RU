@@ -83,7 +83,7 @@ ms.locfileid: "52630763"
 * [Вкладки разработки](../../tabs/design/tabs.md)
 * [Конструкторские боты](../../bots/design/bots.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Карта случаев использования](../../concepts/design/map-use-cases.md)

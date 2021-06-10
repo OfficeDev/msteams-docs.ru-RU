@@ -118,7 +118,7 @@ ASP.NET Core обрабатывает файлы под названием *Inde
 
 [!INCLUDE [dotnet-personal-use-appstudio](~/includes/tabs/dotnet-personal-use-appstudio.md)]
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание настраиваемой личной вкладки с помощью MVC ASP.NETCore](~/tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md)

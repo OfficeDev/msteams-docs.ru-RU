@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 localization_priority: Normal
 keywords: команды, новые возможности
-ms.openlocfilehash: d053c9c6d41788014ee0a1f252b0b65e1a30ecb8
-ms.sourcegitcommit: 45c66faef8145abb903ef7118b9fa914c12aba2a
+ms.openlocfilehash: 297e86925d4facfc0982ea67ce9b61e48adeb4d8
+ms.sourcegitcommit: 37325179a532897fafbe827dcf9a7ca5fa5e7d0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736770"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52853524"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -23,7 +23,6 @@ ms.locfileid: "52736770"
 | -------- | --------- | ------------------ |
 |05/26/2021| Создание вкладок с помощью адаптивных карт. |[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |
-|05/25/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md) |
 |05/25/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |
 |05/25/2021| Функция Together Mode объединяет участников в одну виртуальную сцену и помещает их видеопотоки в заранее. | [Режим "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md) |
 |05/24/2021| Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC).|[Получение всех сообщений с помощью RSC,](~/bots/how-to/conversations/channel-messages-with-rsc.md)обзор бесед [ботов,](~/bots/how-to/conversations/conversation-basics.md)разговоров каналов и групп [и](~/bots/how-to/conversations/channel-and-group-conversations.md)схемы манифеста [предварительного просмотра разработчика](~/resources/schema/manifest-schema-dev-preview.md) |
@@ -196,7 +195,6 @@ Microsoft Teams платформы, доступные всем разработ
 | -------- | --------- | ------------------ |
 |05/26/2021|Создание вкладок с использованием адаптивных карточек|[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |
-|05/25/2021| API сведений о собраниях и событиях Teams в режиме реального времени | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md) |
 |05/25/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |
 |05/25/2021| Функция Together Mode объединяет участников в одну виртуальную сцену и помещает их видеопотоки в заранее. | [Режим "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md) |
 |05/24/2021|Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC).|[Получение всех сообщений с помощью RSC,](~/bots/how-to/conversations/channel-messages-with-rsc.md)обзор бесед [ботов,](~/bots/how-to/conversations/conversation-basics.md)разговоров каналов и групп [и](~/bots/how-to/conversations/channel-and-group-conversations.md)схемы манифеста [предварительного просмотра разработчика](~/resources/schema/manifest-schema-dev-preview.md) |

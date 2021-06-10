@@ -73,7 +73,7 @@ ms.locfileid: "52630844"
    :::column-end:::
 :::row-end:::
 
-## <a name="type"></a>Type
+## <a name="type"></a>Тип
 
 :::row:::
 

@@ -1,11 +1,11 @@
 ---
-title: Проверка согласия для определенных ресурсов в Teams
-description: Тестирование согласия для определенных ресурсов в Teams с помощью Postman
+title: Протестировать согласие на определенные ресурсы в Teams
+description: Проверка согласия на использование ресурсов в Teams с помощью Postman
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: how-to
-keywords: Teams Authorization OAuth SSO AAD rsc Postman Graph
+keywords: команды авторизации OAuth SSO AAD rsc postman Graph
 ms.openlocfilehash: 7360a81108ac900fdf6d03217b667e257ff227fe
 ms.sourcegitcommit: 976e870cc925f61b76c3830ec04ba6e4bdfde32f
 ms.translationtype: MT

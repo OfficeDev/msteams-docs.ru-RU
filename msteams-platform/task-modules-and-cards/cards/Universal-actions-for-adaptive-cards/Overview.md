@@ -118,7 +118,7 @@ ms.locfileid: "52781620"
 * [Адаптивные карты @ Microsoft Build 2020](https://youtu.be/hEBhwB72Qn4?t=1393)
 * [Адаптивные карты @ Ignite 2020](https://techcommunity.microsoft.com/t5/video-hub/elevate-user-experiences-with-teams-and-adaptive-cards/m-p/1689460)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Работа с универсальными действиями для адаптивных карточек](Work-with-universal-actions-for-adaptive-cards.md)

@@ -247,7 +247,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Пример имени | Описание | C # |Node.js|
+| Пример имени | Описание | C# |Node.js|
 |-------------|-------------|------|----|
 |Deep Link consuming Subentity ID  |Microsoft Teams пример приложения для демонстрации deeplink от бот-чата до вкладки, потребляя ID subentity.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
 

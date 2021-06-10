@@ -212,7 +212,7 @@ modified_text = TurnContext.remove_recipient_mention(turn_context.activity)
 > [!NOTE]
 > Если вы удалите какие-либо команды из манифеста, необходимо изменить приложение для реализации изменений. Как правило, любые изменения манифеста требуют переделок вашего приложения.
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Канал и групповые разговоры](~/bots/how-to/conversations/channel-and-group-conversations.md)

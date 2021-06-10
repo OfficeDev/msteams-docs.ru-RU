@@ -49,7 +49,7 @@ ms.locfileid: "52566175"
 
 [Teams руководства по разработке приложений](../concepts/design/design-teams-app-overview.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Понимание случаев использования](../concepts/design/understand-use-cases.md)

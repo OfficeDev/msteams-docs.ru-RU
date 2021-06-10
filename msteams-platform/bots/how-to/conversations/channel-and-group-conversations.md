@@ -274,7 +274,7 @@ async def _mention_activity(self, turn_context: TurnContext):
 
 [Получить Teams контекст](~/bots/how-to/get-teams-context.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)

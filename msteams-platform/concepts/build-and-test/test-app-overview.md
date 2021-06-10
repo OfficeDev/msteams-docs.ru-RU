@@ -41,7 +41,7 @@ ms.locfileid: "52631008"
 * [Отламывка ботов](~/bots/how-to/debug/locally-with-an-ide.md)
 * [Тестирование разрешений RSC](~/graph-api/rsc/test-resource-specific-consent.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Подготовка клиента Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md)

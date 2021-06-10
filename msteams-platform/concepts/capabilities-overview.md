@@ -43,7 +43,7 @@ ms.locfileid: "52565153"
 
 [Создание приложений для Teams](../overview.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Точки входа приложения Teams](../concepts/extensibility-points.md)

@@ -114,7 +114,7 @@ ASP.NET Core обрабатывает файлы под названием *Inde
 
 [!INCLUDE [dotnet-update-app](~/includes/tabs/dotnet-update-chan-grp-app.md)]
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание настраиваемой вкладки канала и группы с помощью MVC ASP.NETCore](~/tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md)

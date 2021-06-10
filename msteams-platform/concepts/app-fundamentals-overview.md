@@ -38,7 +38,7 @@ Microsoft Teams основы приложения дают направлени�
 * [Интеграция веб-приложений с Teams](../samples/integrating-web-apps.md)
 * [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Понимание Teams приложений](capabilities-overview.md)

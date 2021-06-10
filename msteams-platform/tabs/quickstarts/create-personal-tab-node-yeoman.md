@@ -135,7 +135,7 @@ gulp ngrok-serve
 
 В области navbar, расположенной слева от Teams, выберите меню и выберите приложение `...` из списка.
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание личной вкладки с помощью ASP.NETCore](~/tabs/quickstarts/create-personal-tab-dotnet-core.md)

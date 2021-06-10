@@ -307,7 +307,7 @@ ms.locfileid: "52630122"
 
 Используйте эти рекомендации для создания качественного приложения.
 
-### <a name="content"></a>Статья
+### <a name="content"></a>Содержимое
 
 :::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример, показывающий лучшую практику бота для создания четкого человека." border="false":::
 

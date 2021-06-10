@@ -85,7 +85,7 @@ ms.locfileid: "52667414"
 * [Интеграция сканера QR или штрихкода](../concepts/device-capabilities/qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](../concepts/device-capabilities/location-capability.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Требования к вкладке](~/tabs/how-to/tab-requirements.md)

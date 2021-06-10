@@ -107,7 +107,7 @@ App Studio — это Teams приложение. Установите App Studi
 * [Публикация Power Virtual Agents бота](/power-virtual-agents/publication-fundamentals-publish-channels)
 * [Безопасность и соответствие требованиям в Microsoft Teams](/MicrosoftTeams/security-compliance-overview).
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание виртуального помощника](~/samples/virtual-assistant.md)

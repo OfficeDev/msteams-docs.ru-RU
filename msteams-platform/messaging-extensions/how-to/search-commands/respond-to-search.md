@@ -349,7 +349,7 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 
 [Добавление конфигурации в расширение обмена сообщениями](~/get-started/first-message-extension.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Добавление проверки подлинности в расширение обмена сообщениями](~/messaging-extensions/how-to/add-authentication.md)

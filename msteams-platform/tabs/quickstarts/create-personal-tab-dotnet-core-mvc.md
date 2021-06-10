@@ -131,7 +131,7 @@ ASP. NET Core обрабатывает файлы **index** как страни�
 
 [!INCLUDE [dotnet-personal-use-appstudio](~/includes/tabs/dotnet-personal-use-appstudio.md)]
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание настраиваемой вкладки канала и группы с Node.js и генератора Yeoman для Microsoft Teams](~/tabs/quickstarts/create-channel-group-tab-node-yeoman.md)

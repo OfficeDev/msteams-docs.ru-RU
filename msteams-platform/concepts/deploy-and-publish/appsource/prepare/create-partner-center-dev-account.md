@@ -42,7 +42,7 @@ ms.locfileid: "52566042"
 
 | Меню | Вариант |
 | -------   | -------  |
-|Категория| Коммерческий маркетплейс|
+|Category| Коммерческий маркетплейс|
 | Тема | Общая справка по рынку и вопросы о том, как их задать |
 | Subtopic| Надстройка Office |
 
@@ -217,7 +217,7 @@ ms.locfileid: "52566042"
 
 </details>
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Подготовка к отправке в магазин](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)

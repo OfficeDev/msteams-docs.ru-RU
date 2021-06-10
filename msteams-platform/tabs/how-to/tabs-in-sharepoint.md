@@ -70,7 +70,7 @@ ms.locfileid: "52630413"
 
 Вы также можете реализовать вкладки Microsoft Teams с помощью SharePoint Framework. SharePoint Framework веб-части находятся в SharePoint без необходимости для внешних служб, таких как Azure. Для SharePoint разработчиков это значительно упрощает процесс разработки для Teams вкладок. Дополнительные сведения о SharePoint Framework в Teams см. в SharePoint Framework в [Teams.](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
 
-## <a name="introduction"></a>Введение
+## <a name="introduction"></a>Общие сведения
 
 Вкладка, используемая здесь, уже находится в Azure, чтобы сосредоточиться на требуемой работе по интеграции.
 

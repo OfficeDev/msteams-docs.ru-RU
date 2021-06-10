@@ -123,7 +123,7 @@ ms.locfileid: "52629965"
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте местообладатели в `configurationUrl`
 
-Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например:
+Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Пример.
 
 ##### <a name="base-url"></a>Базовый URL-адрес
 

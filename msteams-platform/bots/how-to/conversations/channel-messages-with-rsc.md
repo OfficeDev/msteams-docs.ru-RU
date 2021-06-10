@@ -1,5 +1,5 @@
 ---
-title: Получение всех сообщений канала с помощью RSC
+title: Получение всех сообщений канала через RSC
 author: surbhigupta12
 description: Получение всех сообщений канала с разрешениями RSC
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52631414"
 ---
-# <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала с помощью RSC
+# <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
 > [!NOTE]
 > В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../../../resources/dev-preview/developer-preview-intro.md) разработчиков.

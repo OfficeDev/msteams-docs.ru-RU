@@ -140,7 +140,7 @@ ms.locfileid: "52721824"
 
 При использовании хостинга Azure необходимо предварительно и развернуто в облаке. Подробнее о процессе публикации SPFx см. в [SPFx.](../get-started/first-app-spfx.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Ведение и поддержка опубликованного приложения](../concepts/deploy-and-publish/appsource/post-publish/overview.md)

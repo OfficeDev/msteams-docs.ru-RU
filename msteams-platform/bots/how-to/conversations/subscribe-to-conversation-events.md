@@ -1392,7 +1392,7 @@ turnContext, CancellationToken cancellationToken) {
 |----------|-----------------|----------|
 | Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)

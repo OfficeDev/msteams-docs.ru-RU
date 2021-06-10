@@ -11,7 +11,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/26/2021
 ms.locfileid: "52668850"
 ---
-# <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с помощью адаптивных карт
+# <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
 > [!IMPORTANT]
 > * Эта функция находится в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md) поддерживается в настольных компьютерах и мобильных устройствах. Поддержка в веб-браузере скоро.
@@ -21,7 +21,7 @@ ms.locfileid: "52668850"
 
 На следующем изображении показаны вкладки сборки с адаптивными картами в настольных и мобильных устройствах: пример адаптивной карты, отрисовки :::image type="content" source="../../assets/images/tabs/adaptive-cards-rendered-in-tabs.jpg" alt-text="на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 

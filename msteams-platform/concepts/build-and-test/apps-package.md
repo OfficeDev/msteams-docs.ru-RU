@@ -92,7 +92,7 @@ Teams автоматически обнажает значок для отобр
 
 :::image type="content" source="../../assets/images/icons/messaging-extension-icon-example.png" alt-text="<alt text>" border="false":::
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 Выберите, как вы планируете распространять приложение:
 

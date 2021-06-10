@@ -33,7 +33,7 @@ ms.locfileid: "52566572"
 
 1. В этом примере показана карта Bot Framework Hero с действием карточки `invoke` ["Купить".](~/task-modules-and-cards/cards/cards-actions.md#invoke) Значение свойства — остальная часть объекта может быть `type` `task/fetch` `value` любой, что вам нравится.
 1. Бот получает сообщение `invoke` HTTP POST.
-1. Бот создает объект отклика и возвращает его в тело ответа POST с кодом ответа HTTP 200. Схема ответов описана ниже в обсуждении [задачи/отправки,](#the-flexibility-of-tasksubmit)но теперь важно помнить, что тело ответа HTTP содержит объект [TaskInfo,](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) встроенный в объект оболочки. Пример:
+1. Бот создает объект отклика и возвращает его в тело ответа POST с кодом ответа HTTP 200. Схема ответов описана ниже в обсуждении [задачи/отправки,](#the-flexibility-of-tasksubmit)но теперь важно помнить, что тело ответа HTTP содержит объект [TaskInfo,](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) встроенный в объект оболочки. Пример.
 
     ```json
     {

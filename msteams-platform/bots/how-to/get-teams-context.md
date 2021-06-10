@@ -368,7 +368,7 @@ Response body
 
 [!INCLUDE [sample](~/includes/bots/teams-bot-samples.md)]
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Отправка и получение файлов через бот](~/bots/how-to/bots-filesv4.md)
