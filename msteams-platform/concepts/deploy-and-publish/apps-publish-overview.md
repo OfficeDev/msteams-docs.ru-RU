@@ -44,7 +44,7 @@ ms.locfileid: "52230913"
 
 * [Соответствие требованиям для приложений Microsoft 365](/microsoft-365-app-certification/overview)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Настройка параметров установки приложения по умолчанию](~/concepts/deploy-and-publish/add-default-install-scope.md)

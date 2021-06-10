@@ -5,12 +5,12 @@ ms.topic: reference
 keywords: команды проявляют схему Developer Preview
 localization_priority: Normal
 ms.date: 05/20/2019
-ms.openlocfilehash: a5c75046b950484a897fa2720444899c4817989c
-ms.sourcegitcommit: 25c02757fe207cdff916ba63aa215f88e24e1d6f
+ms.openlocfilehash: c582a6af0505680b9843c86be7fc800fab12129d
+ms.sourcegitcommit: 37325179a532897fafbe827dcf9a7ca5fa5e7d0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667421"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52853538"
 ---
 # <a name="developer-preview-manifest-schema-for-microsoft-teams"></a>Схема манифеста предварительного просмотра разработчика для Microsoft Teams
 
@@ -215,7 +215,7 @@ ms.locfileid: "52667421"
      "smallImageUrl", 
      "largeImageUrl", 
      "accentColor",
-     "websiteUrl",
+     "developerUrl",
      "privacyUrl",
      "termsOfUseUrl"        
   ],
@@ -308,7 +308,7 @@ URL https:// ссылки на схему JSON для манифеста.
 |`short`|30 символов|✔|Короткое имя отображения приложения.|
 |`full`|100 символов||Полное имя приложения, используемого, если полное имя приложения превышает 30 символов.|
 
-## <a name="description"></a>(описание)
+## <a name="description"></a>description
 
 **Required**
 
@@ -516,22 +516,22 @@ URL https:// ссылки на схему JSON для манифеста.
 
 **Необязательный** - массив
 
-Блок определяет свойства приложений, которые может `configurableProperties` Teams администратор. Дополнительные сведения см. [в Microsoft Teams.](/MicrosoftTeams/customize-apps)
+Блок определяет свойства приложений, которые могут `configurableProperties` Teams администраторы. Дополнительные сведения см. в [приложении Enable customization.](~/concepts/design/enable-app-customization.md)
 
 > [!NOTE]
 > Необходимо определить как минимум одно свойство. В этом блоке можно определить максимум девять свойств.
-> В качестве наилучшей практики необходимо предоставить рекомендации по настройке для пользователей и клиентов приложений, которые следует соблюдать при настройке приложения. 
 
 Можно определить любое из следующих свойств:
-* `name`: Позволяет администратору изменять имя отображения приложения.
-* `shortDescription`: Позволяет администратору изменить краткое описание приложения.
-* `longDescription`: Позволяет администратору изменять подробное описание приложения.
-* `smallImageUrl`. Это `outline` свойство в `icons` блоке манифеста.
-* `largeImageUrl`. Это `color` свойство в `icons` блоке манифеста.
-* `accentColor`. Это цвет, который можно использовать в сочетании с и в качестве фона для значков плана.
-* `websiteUrl`. Это https:// URL-адрес веб-сайта разработчика.
-* `privacyUrl`. Это https:// url-адрес политики конфиденциальности разработчика.
-* `termsOfUseUrl`. Это https:// URL-адрес для условий использования разработчика.
+
+* `name`: Имя отображения приложения.
+* `shortDescription`Краткое описание приложения.
+* `longDescription`Подробное описание приложения.
+* `smallImageUrl`: Значок контура приложения.
+* `largeImageUrl`: Значок цвета приложения.
+* `accentColor`: Цвет, который нужно использовать в сочетании с и в качестве фона для значков контура.
+* `developerUrl`URL-адрес HTTPS веб-сайта разработчика.
+* `privacyUrl`: URL-адрес HTTPS политики конфиденциальности разработчика.
+* `termsOfUseUrl`: URL-адрес HTTPS условий использования разработчика.
 
 ## <a name="defaultinstallscope"></a>defaultInstallScope
 
@@ -555,6 +555,5 @@ URL https:// ссылки на схему JSON для манифеста.
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`team`|string|||Если выбрана область установки, это поле указывает доступные возможности `team` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
-|`groupchat`|string|||Если выбрана область установки, это поле указывает доступные возможности `groupchat` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
-|`meetings`|string|||Если выбрана область установки, это поле указывает доступные возможности `meetings` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
-
+|`groupchat`|Строка|||Если выбрана область установки, это поле указывает доступные возможности `groupchat` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
+|`meetings`|Строка|||Если выбрана область установки, это поле указывает доступные возможности `meetings` по умолчанию. Параметры: `tab` `bot` , или `connector` .|

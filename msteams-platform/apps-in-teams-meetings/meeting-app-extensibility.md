@@ -150,7 +150,7 @@ Teams приложения для собраний основана на сле�
 * [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)
 * [Создание приложения](../apps-in-teams-meetings/design/designing-apps-in-meetings.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Необходимые условия и ссылки на API для приложений в собраниях Teams](create-apps-for-teams-meetings.md)

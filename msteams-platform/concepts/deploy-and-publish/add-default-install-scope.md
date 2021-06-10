@@ -70,7 +70,7 @@ ms.locfileid: "52230934"
 > [!NOTE]
 > Дополнительные сведения см. в [схеме манифеста приложения.](~/resources/schema/manifest-schema.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Создание пакета приложений](~/concepts/build-and-test/apps-package.md)
+> [Создание пакета приложения](~/concepts/build-and-test/apps-package.md)

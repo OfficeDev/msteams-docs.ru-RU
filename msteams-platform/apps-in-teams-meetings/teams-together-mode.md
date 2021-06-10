@@ -1,5 +1,5 @@
 ---
-title: Режим together in Teams
+title: Режим "Вместе" в Teams
 description: Работа с режимом together
 ms.topic: conceptual
 ms.openlocfilehash: 1620e01ef1825ec43e94614ff8ea355e764e10e0
@@ -9,7 +9,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/25/2021
 ms.locfileid: "52651742"
 ---
-# <a name="together-mode-in-teams"></a>Режим together in Teams
+# <a name="together-mode-in-teams"></a>Режим "Вместе" в Teams
 
 > [!NOTE]
 > В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
@@ -31,7 +31,7 @@ Microsoft Teams Режим Together Mode предоставляет иммерс
 > * Только приложение сцены по-прежнему является приложением в Microsoft Teams. Студия Scene обрабатывает создание пакета приложений в фоновом режиме.
 > * Несколько сцен в одном пакете приложений отображаются как единый список сцен для пользователей.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы использовать режим Together Mode, необходимо иметь базовое представление о следующем:
 

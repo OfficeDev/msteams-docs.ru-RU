@@ -169,7 +169,7 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 | Получать беседы | 1 | 28 |
 | Получать беседы | 2 | 32 |
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Боты для звонков и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)

@@ -38,11 +38,11 @@ ms.locfileid: "52649666"
 * [Tab](../tabs/what-are-tabs.md#understand-how-tabs-work)
 * [Бот](../bots/what-are-bots.md)
 * [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)
-* [Разработка приложения](../apps-in-teams-meetings/design/designing-apps-in-meetings.md)
-* [Предпосылки и ссылки на API для приложений в Teams собраниях](create-apps-for-teams-meetings.md)
+* [Создание приложения](../apps-in-teams-meetings/design/designing-apps-in-meetings.md)
+* [Необходимые условия и ссылки на API для приложений в собраниях Teams](create-apps-for-teams-meetings.md)
 * [Режим "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Доступность приложения для собраний](meeting-app-extensibility.md)
+> [Расширяемость приложения для собраний](meeting-app-extensibility.md)
