@@ -49,7 +49,7 @@ ms.locfileid: "52101760"
 * [Upload ваше Teams приложение](~/concepts/deploy-and-publish/apps-upload.md)
 * [Публикация приложения Teams в вашей организации](/MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Просмотреть рекомендации по проверке магазина](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)
+> [Рекомендации по прохождению магазинной проверки](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)

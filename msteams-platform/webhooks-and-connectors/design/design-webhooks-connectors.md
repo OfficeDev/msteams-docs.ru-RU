@@ -1,5 +1,5 @@
 ---
-title: Разработка веб-ок и соединители Microsoft Teams
+title: Проектирование Microsoft Teams веб-ок и соединители
 author: heath-hamilton
 description: Рекомендации и рекомендации по разработке веб-ок и соединители для Microsoft Teams.
 localization_priority: Normal

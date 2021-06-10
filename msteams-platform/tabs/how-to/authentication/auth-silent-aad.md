@@ -14,7 +14,7 @@ ms.locfileid: "52019603"
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
 > [!NOTE]
-> Чтобы проверка подлинности работала для вкладки на мобильных клиентах, убедитесь, что вы используете по крайней мере версию 1.4.1 SDK Teams JavaScript.
+> Для проверки подлинности для работы вкладки на мобильных клиентах убедитесь, что вы используете по крайней мере 1.4.1 версию Teams JavaScript SDK.
 
 Бесшумная проверка подлинности в Azure Active Directory (AAD) минимизирует количество случаев, когда пользователь вводит свой вход в учетные данные, молча освежая маркер проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO.](~/tabs/how-to/authentication/auth-aad-sso.md)
 
@@ -31,7 +31,7 @@ ms.locfileid: "52019603"
 
 ## <a name="how-to-do-silent-authentication"></a>Как сделать бесшумную проверку подлинности
 
-Код в этой статье происходит из примера приложения Teams, которое является узлом [проверки подлинности Teams.](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs)
+Код в этой статье поступает из Teams, которое является Teams проверки [подлинности.](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs)
 
 [Инициировать бесшумную](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) и простую настраиваемую вкладку проверки подлинности с помощью AAD и следуйте инструкциям по запуску образца на локальном компьютере.
 
@@ -127,7 +127,7 @@ if (authContext.isCallback(window.location.hash)) {
 Используйте следующий код для обработки потока регистрации в AAD Auth:
 
 > [!NOTE]
-> Несмотря на то, что вход для вкладки или бота Teams будет сделан, текущий сеанс также очищается.
+> Несмотря на то, что Teams для вкладки или бота, текущий сеанс также очищается.
 
 ```javascript
 function logout() {

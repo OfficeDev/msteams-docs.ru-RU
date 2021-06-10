@@ -170,7 +170,7 @@ for each activity_id in _list:
 DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-| **Запрос и ответ** | **Description** |
+| **Запрос и ответ** | **Описание** |
 |----|----|
 | Н/Д | Код состояния HTTP, указывающий результат операции. В теле ответа ничего не указывается. |
 
@@ -180,11 +180,11 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 
 В следующем примере кода демонстрируются основы бесед:
 
-| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------------------|-----------------|--------|-------------|--------|
 | Teams Основы беседы  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Получить Teams контекст](~/bots/how-to/get-teams-context.md)

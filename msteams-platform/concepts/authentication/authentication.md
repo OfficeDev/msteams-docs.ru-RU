@@ -43,7 +43,7 @@ OAuthPrompt Azure Bot Framework упрощает проверку подлинн
 
 предоставляет образец проверки подлинности бота v3 SDK.
 
-| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
 | Проверка подлинности ботов | В этом примере показано, как начать проверку подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
 

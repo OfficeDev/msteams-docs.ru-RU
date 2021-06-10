@@ -14,7 +14,7 @@ ms.locfileid: "52020178"
 ---
 # <a name="incoming-call-notifications"></a>Уведомления о входящих звонках
 
-При [регистрации бота вызовов](./registering-calling-bot.md#create-new-bot-or-add-calling-capabilities)и собраний для Microsoft Teams упоминается веб-сайт для вызова URL-адреса. Этот URL-адрес является конечной точкой веб-адреса для всех входящих звонков в бот.
+При [регистрации бота](./registering-calling-bot.md#create-new-bot-or-add-calling-capabilities)вызовов и собраний для Microsoft Teams указан веб-сайт для вызова URL-адреса. Этот URL-адрес является конечной точкой веб-адреса для всех входящих звонков в бот.
 
 ## <a name="protocol-determination"></a>Определение протокола
 
@@ -68,7 +68,7 @@ Authentication: Bearer <TOKEN>
 ]
 ```
 
-Маркер OAuth имеет следующие значения и подписан Skype:
+Маркер OAuth имеет следующие значения и подписывается Skype:
 
 ```json
 {
@@ -91,7 +91,7 @@ Authentication: Bearer <TOKEN>
 
 Дополнительные сведения см. в [ссылке проверка входящие запросы.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Требования и соображения к медийным ботам с хостингом приложений](~/bots/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md)

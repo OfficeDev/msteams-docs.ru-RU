@@ -134,7 +134,7 @@ ms.locfileid: "52020711"
 ```
 
 ## <a name="code-sample"></a>Пример кода
-|**Пример имени** | **Description** |**.NET** | **Node.js**|
+|**Пример имени** | **Описание** |**.NET** | **Node.js**|
 |----------------|-----------------|--------------|----------------|
 |Расширения обмена сообщениями — auth и config | Расширение обмена сообщениями, которое имеет страницу конфигурации, принимает запросы на поиск и возвращает результаты после того, как пользователь войт. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)|[View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)| 
 

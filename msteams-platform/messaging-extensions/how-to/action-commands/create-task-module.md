@@ -949,7 +949,7 @@ private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
 [Определение команд действий](~/messaging-extensions/how-to/action-commands/define-action-command.md)
 
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"] 
 > [Ответ на команду действий](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)

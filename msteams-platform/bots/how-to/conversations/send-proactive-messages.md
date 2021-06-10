@@ -1,6 +1,6 @@
 ---
 title: Отправка упреждающих сообщений
-description: Описывает, как отправлять упреждающие сообщения с помощью бота Microsoft Teams.
+description: Описывает, как отправлять упреждающие сообщения с помощью Microsoft Teams бота.
 ms.topic: conceptual
 ms.author: anclear
 localization_priority: Normal
@@ -22,7 +22,7 @@ ms.locfileid: "52020921"
 * Уведомления
 * Запланированные сообщения
 
-Для того чтобы бот отправил проактивное сообщение пользователю, групповому чату или группе, он должен иметь доступ к отправке сообщения. Для группового чата или группы приложение с ботом должно быть сначала установлено в этом расположении. Вы можете активно устанавливать приложение с помощью [Microsoft Graph](#proactively-install-your-app-using-graph) в команде, если это необходимо, или использовать политику приложения для оттеснки приложений к группам и пользователям в клиенте. [](/microsoftteams/teams-custom-app-policies-and-settings) Для пользователей ваше приложение либо должно быть установлено для пользователя, либо пользователь должен быть частью команды, в которой установлено ваше приложение.
+Для того чтобы бот отправил проактивное сообщение пользователю, групповому чату или группе, он должен иметь доступ к отправке сообщения. Для группового чата или группы приложение с ботом должно быть сначала установлено в этом расположении. Вы можете активно устанавливать приложение с [помощью Microsoft Graph](#proactively-install-your-app-using-graph) в команде, если [](/microsoftteams/teams-custom-app-policies-and-settings) это необходимо, или использовать политику приложения, чтобы вытесдить приложения для групп и пользователей в клиенте. Для пользователей ваше приложение либо должно быть установлено для пользователя, либо пользователь должен быть частью команды, в которой установлено ваше приложение.
 
 Отправка упреждающего сообщения отличается от обычного сообщения. Нет активного `turnContext` использования для ответа. Перед отправкой сообщения необходимо создать беседу. Например, новый чат один к одному или новый поток беседы в канале. Невозможно создать новый групповой чат или новый канал в команде с активной передачей сообщений.
 
@@ -35,7 +35,7 @@ ms.locfileid: "52020921"
 
 Фрагменты кода в разделе [примеры](#samples) для создания беседы один к одному. Ссылки на полные рабочие примеры для бесед и групп или каналов см. в [примере кода.](#code-sample)
 
-Для эффективного использования упреждающих сообщений см. [в переупреждающихся практиках для активного обмена сообщениями.](#best-practices-for-proactive-messaging) Для определенных сценариев необходимо активно установить приложение с [помощью Graph.](#proactively-install-your-app-using-graph) Фрагменты кода в разделе [примеры](#samples) для создания беседы один к одному. Полные рабочие примеры для бесед и групп или каналов см. в [примере кода.](#code-sample)
+Для эффективного использования упреждающих сообщений см. [в переупреждающихся практиках для активного обмена сообщениями.](#best-practices-for-proactive-messaging) Для определенных сценариев необходимо активно установить приложение с помощью [Graph.](#proactively-install-your-app-using-graph) Фрагменты кода в разделе [примеры](#samples) для создания беседы один к одному. Полные рабочие примеры для бесед и групп или каналов см. в [примере кода.](#code-sample)
 
 ## <a name="get-the-user-id-team-id-or-channel-id"></a>Получите пользовательский ИД, командный или каналный ИД
 
@@ -93,11 +93,11 @@ ms.locfileid: "52020921"
 
 * Что произошло: четкое указание на то, что стало причиной уведомления.
 * Каков был результат: необходимо четко знать, какой элемент был обновлен, чтобы вызвать уведомление.
-* Кто или что вызвало его: кто или какие действия привели к отправлению уведомления.
+* Кто или что вызвало его: Кто или действия, которые привели к отправлению уведомления.
 * Что пользователи могут сделать в ответ: у вас будет легко принимать меры на основе уведомлений.
 * Как пользователи могут отказаться от этого. Необходимо предоставить пользователям путь к отказу от дополнительных уведомлений.
 
-Для отправки сообщений большой группе пользователей, например в организацию, упреждайте установку приложения с помощью Graph.
+Чтобы отправлять сообщения большой группе пользователей, например в организацию, упреждающие установки приложения с помощью Graph.
 
 ### <a name="scheduled-messages"></a>Запланированные сообщения
 
@@ -109,13 +109,13 @@ ms.locfileid: "52020921"
 ## <a name="proactively-install-your-app-using-graph"></a>Активная установка приложения с помощью Graph
 
 > [!Note]
-> Активная установка приложений с помощью Graph в настоящее время находится в бета-версии.
+> Активная установка приложений с Graph в настоящее время находится в бета-версии.
 
-Активно сообщайте пользователям, которые ранее не устанавливали или не взаимодействовали с вашим приложением. Например, вы хотите использовать коммуникатор [компании](~/samples/app-templates.md#company-communicator) для отправки сообщений всей организации. В этом случае для активной установки приложения для пользователей можно использовать API Graph. Кэшйте необходимые значения из события, которое `conversationUpdate` ваше приложение получает при установке.
+Активно сообщайте пользователям, которые ранее не устанавливали или не взаимодействовали с вашим приложением. Например, вы хотите использовать коммуникатор [компании](~/samples/app-templates.md#company-communicator) для отправки сообщений всей организации. В этом случае вы можете использовать API Graph для активной установки приложения для пользователей. Кэшйте необходимые значения из события, которое `conversationUpdate` ваше приложение получает при установке.
 
-Можно установить только приложения, которые находятся в каталоге организационных приложений или в Магазине приложений Teams.
+Можно установить только приложения, которые находятся в каталоге организационных приложений или Teams App Store.
 
-Об [установке приложений для пользователей см. в](/graph/api/userteamwork-post-installedapps) документации Graph, а также в упреждающих установках ботов и обмена сообщениями [в Teams with Graph.](../../../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md) На платформе GitHub также имеется пример фреймворка [Microsoft.NET.](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176)
+Узнайте [об установке приложений](/graph/api/userteamwork-post-installedapps) для пользователей в документации Graph и активной установке ботов и обмена сообщениями в Teams с [Graph](../../../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md). Кроме того, на платформе GitHub пример фреймворка [Microsoft.NET.](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176)
 
 ## <a name="samples"></a>Примеры
 
@@ -265,20 +265,20 @@ POST /v3/conversations
 
 ## <a name="code-sample"></a>Пример кода
 
-В следующей таблице приводится простой пример кода, который включает основной поток беседы в приложение Teams и способ создания нового потока беседы в канале Teams:
+В следующей таблице приводится простой пример кода, который включает основной поток беседы в приложение Teams и способ создания нового потока беседы в канале в Teams:
 
 | **Имя образца** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|--------------|--------|-------------|--------|
-| Основы беседы teams  | Демонстрирует основы бесед в Teams, в том числе отправку одно к одному упреждающих сообщений.| [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot) |
+| Teams Основы беседы  | Демонстрирует основы бесед в Teams, в том числе отправку одно к одному упреждающих сообщений.| [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot) |
 | Запуск нового потока в канале | Демонстрирует создание нового потока в канале. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
 
 ### <a name="additional-code-sample"></a>Дополнительный пример кода
 
 > [!div class="nextstepaction"]
-> [Teams proactive messaging code samples](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
+> [Teams примеры кода проактивных сообщений](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [**Teams proactive messaging code samples**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp) 
+> [**Teams примеры кода проактивных сообщений**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp) 
 >  [Формат сообщений бота](~/bots/how-to/format-your-bot-messages.md)

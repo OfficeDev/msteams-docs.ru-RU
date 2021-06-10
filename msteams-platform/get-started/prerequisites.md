@@ -110,7 +110,7 @@ CLI можно использовать с `teamsfx` командой.  Убед
 
 С помощью портала разработчиков для Teams можно настроить, управлять и распространять приложение Teams (в том числе на ваш сайт или Teams магазин).
 
-- [Портал разработчика для Teams](https://dev.teams.microsoft.com/)
+- [Портал разработчиков Teams](https://dev.teams.microsoft.com/)
 
 ## <a name="enable-sideloading"></a>Включить загрузку побок
 
@@ -156,7 +156,7 @@ CLI можно использовать с `teamsfx` командой.  Убед
 1. Откройте Visual Studio Code
 1. Выберите значок Teams на боковой панели:
 
-    :::image type="content" source="~/assets/images/teams-toolkit-v2/sidebar-icon.png" alt-text="Значок Teams на Visual Studio Code панели.":::
+    :::image type="content" source="~/assets/images/teams-toolkit-v2/sidebar-icon.png" alt-text="Значок Teams на боковой панели Visual Studio Code":::.
 
 1. Выберите **вход в M365**.
 
@@ -206,5 +206,5 @@ Visual Studio 2019 г. вы сможете войти в каждую служб
 - [Создайте первое Teams с помощью React](first-app-react.md)
 - [Создайте первое Teams приложение с помощью Blazor](first-app-blazor.md)
 - [Создайте первое приложение Teams с SharePoint Framework (SPFx)](first-app-spfx.md)
-- [Создание приложения-бота для разговоров](first-app-bot.md)
-- [Создать расширение для обмена сообщениями](first-message-extension.md)
+- [Создание бота беседы](first-app-bot.md)
+- [Создание расширения для обмена сообщениями](first-message-extension.md)

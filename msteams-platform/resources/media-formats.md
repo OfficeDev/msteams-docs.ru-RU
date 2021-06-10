@@ -1,6 +1,6 @@
 ---
 title: Поддерживаемые форматы медиа для ботов
-description: Боты в Microsoft Teams поддерживают только следующие форматы мультимедиа для аудио- и видеоконтента.
+description: Боты на Microsoft Teams поддерживают только следующие форматы мультимедиа для аудио- и видеоконтента.
 ms.topic: reference
 localization_priority: Normal
 keywords: teams bots media formats
@@ -13,9 +13,9 @@ ms.locfileid: "52020613"
 ---
 # <a name="supported-media-formats-for-bots"></a>Поддерживаемые форматы медиа для ботов
 
-Боты в Microsoft Teams поддерживают только следующие форматы мультимедиа для аудио- и видеоконтента:
+Боты на Microsoft Teams поддерживают только следующие форматы мультимедиа для аудио- и видеоконтента:
 
-| Формат | Дополнительная информация |
+| Формат | Дополнительные сведения |
 | --- | --- |
 | Vorbis | http://www.vorbis.com/ |
 | PCM_U8, PCM_S16LE, PCM_S32LE, PCM_F32LE, PCM_S16BE, PCM_S24BE, PCM_MULAW | https://wiki.multimedia.cx/?title=PCM |
@@ -28,7 +28,7 @@ ms.locfileid: "52020613"
 | Opus | http://opus-codec.org/ |
 | MP4 | https://en.wikipedia.org/wiki/MPEG-4 |
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Изменения API-API бота Teams для получения членов команды или чата](~/resources/team-chat-member-api-changes.md)
+> [Изменения Teams API ботов для получения членов команды или чата](~/resources/team-chat-member-api-changes.md)

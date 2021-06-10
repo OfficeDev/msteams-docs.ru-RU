@@ -12,7 +12,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52020431"
 ---
-# <a name="troubleshoot-your-microsoft-teams-app"></a>Устранение неполадок в приложении Microsoft Teams
+# <a name="troubleshoot-your-microsoft-teams-app"></a>Устранение неполадок Microsoft Teams приложения
 
 ## <a name="troubleshooting-tabs"></a>Вкладки устранения неполадок
 
@@ -49,7 +49,7 @@ ms.locfileid: "52020431"
 
 ### <a name="cant-authenticate-the-user-or-display-your-auth-provider-in-your-tab"></a>Не может проверить подлинность пользователя или отобразить поставщика auth на вкладке
 
-Если вы не делаете бесшумную проверку подлинности, необходимо следовать процессу проверки подлинности, предоставляемому клиентом [Microsoft Teams JavaScript SDK.](/javascript/api/overview/msteams-client.md)
+Если вы не делаете бесшумную проверку подлинности, необходимо следовать процессу проверки подлинности, предоставляемому клиентом [Microsoft Teams JavaScript.](/javascript/api/overview/msteams-client.md)
 
 > [!NOTE]
 >Мы требуем, чтобы весь поток проверки подлинности начался и заканчивается в домене, который должен быть указан в `validDomains` объекте в манифесте.
@@ -64,7 +64,7 @@ ms.locfileid: "52020431"
 
 ### <a name="cant-add-my-bot"></a>Не могу добавить бот
 
-Приложения должны быть включены администратором клиента Office 365, чтобы они загружались конечными пользователями. Обратите внимание, что в некоторых случаях у клиента Office 365 может быть несколько skUs, связанных с ним, и для работы ботов в любом случае они должны быть включены во всех skUs. Дополнительные [сведения см. в "Подготовка клиента Office 365".](~/concepts/build-and-test/prepare-your-o365-tenant.md)
+Приложения должны быть включены администратором Office 365 для загрузки конечными пользователями. Обратите внимание, что в некоторых случаях Office 365 клиент может иметь несколько skUs, связанных с ним, и для работы ботов в любом случае они должны быть включены во всех skUs. Дополнительные сведения [см. в Office 365 клиента.](~/concepts/build-and-test/prepare-your-o365-tenant.md)
 
 ### <a name="cant-add-bot-as-a-member-of-a-team"></a>Не может добавить бота в качестве члена команды
 
@@ -86,9 +86,9 @@ ms.locfileid: "52020431"
 
 Распространенные причины ошибок чтения манифеста:
 
-* Недействительный JSON. Используйте такой IDE, как [Visual Studio код](https://code.visualstudio.com) [или Visual Studio,](https://www.visualstudio.com/vs/) который автоматически проверяет синтаксис JSON.
+* Недействительный JSON. Используйте такой IDE, как [Visual Studio Code](https://code.visualstudio.com) [или Visual Studio,](https://www.visualstudio.com/vs/) который автоматически проверяет синтаксис JSON.
 * Проблемы с кодией. Используйте UTF-8 дляmanifest.js *файла.* Другие коды, в частности с boM, могут быть недоступны для чтения.
-* Malformed .zip package. Файл *manifest.js* должен быть на верхнем уровне файла .zip. Обратите внимание, что сжатие файлов Mac по умолчанию можетmanifest.jsв подтексто, которое не будет должным образом загружено в Microsoft Teams. 
+* Неправильное .zip пакет. Файл *manifest.js* должен быть на верхнем уровне .zip файла. Обратите внимание, что сжатие файлов Mac по умолчанию можетmanifest.jsв подтексто, который не будет правильно загружаться в Microsoft Teams. 
 
 ### <a name="another-extension-with-same-id-exists"></a>Существует еще одно расширение с тем же ИД
 

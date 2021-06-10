@@ -14,7 +14,7 @@ ms.locfileid: "52019708"
 ---
 # <a name="reference-localization-file-json-schema"></a>Справка: схема JSON-файла локализации
 
-В файле локализации Microsoft Teams описываются языковые переводы, которые будут поданы в зависимости от параметров языка клиента. Файл должен соответствовать схеме, которая была на уровне [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json) . Дополнительные сведения см. [в сведениях о локализации приложений.](~/concepts/build-and-test/apps-localization.md)
+В Microsoft Teams локализации описываются языковые переводы, которые будут подаваться в зависимости от параметров языка клиента. Файл должен соответствовать схеме, которая была на уровне [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json) . Дополнительные сведения см. [в сведениях о локализации приложений.](~/concepts/build-and-test/apps-localization.md)
 
 ## <a name="sample"></a>Пример
 
@@ -42,7 +42,7 @@ ms.locfileid: "52019708"
 URL https:// ссылки на схему JSON для манифеста.
 
 > [!TIP]
-> Укажите схему в начале манифеста, чтобы включить IntelliSense или аналогичную поддержку редактора кода: `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
+> Укажите схему в начале манифеста, чтобы включить IntelliSense или аналогичную поддержку редактора кода:`"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
 
 ## <a name="nameshort"></a>name.short
 

@@ -14,34 +14,34 @@ ms.locfileid: "52020185"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
-Чтобы создать бот, который работает в Microsoft Teams, можно использовать один из следующих ниже.
-* Существующий бот, построенный на SDK Microsoft Bot Framework.
-* Служба чат-ботов Power Virtual Agents.
+Чтобы создать бот, который работает в Microsoft Teams, можно использовать один из следующих:
+* Существующий бот, построенный на Microsoft Bot Framework SDK.
+* Power Virtual Agents чат-бота.
 * Webhooks и соединители.
 
 ## <a name="bots-and-the-microsoft-bot-framework"></a>Боты и Microsoft Bot Framework
 
-Бот Teams состоит из следующих трех элементов:
+Ваш Teams состоит из следующих трех элементов:
 
 * Общедоступная размещемая веб-служба, доступная для всех пользователей.
 * Регистрация бота с помощью Bot Framework.
-* Пакет приложения Teams с манифестом приложения. Это то, что пользователи устанавливают и подключают клиента Teams к веб-службе, маршрутив ее через службу ботов.
+* Ваш Teams пакет приложения с манифестом приложения. Это то, что пользователи устанавливают и подключают Teams клиента к веб-службе, маршрутной службе бота.
 
 Bot [Framework —](https://dev.botframework.com/) это богатый SDK, используемый для создания ботов с C#, Java, Python и JavaScript. Если у вас уже есть бот, основанный на bot Framework, вы можете легко изменить его для работы в Microsoft Teams. Используйте C# или Node.js, чтобы воспользоваться нашими [SDKs](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы bot Builder SDK следующим образом:
 
-* Используйте специализированные типы карт, например соединители Office 365.
-* Установите данные каналов, определенных для Teams, для действий.
+* Используйте специализированные типы карт, такие как Office 365 соединители.
+* Установите Teams для определенных каналов данных о действиях.
 * Обработка запросов на расширение обмена сообщениями.
 
 > [!IMPORTANT]
-> Вы можете разрабатывать приложения Teams в любой технологии веб-программирования и вызывать [API REST Bot Framework](/bot-framework/rest-api/bot-framework-rest-overview) напрямую. Но обработку маркеров необходимо выполнять во всех случаях.
+> Вы можете разрабатывать Teams в любой технологии веб-программирования и вызывать [API REST Bot Framework](/bot-framework/rest-api/bot-framework-rest-overview) напрямую. Но обработку маркеров необходимо выполнять во всех случаях.
 
 > [!TIP]
-> Teams App Studio помогает создавать и настраивать манифест приложения и регистрировать веб-службу в качестве бота в Bot Framework. Он также содержит библиотеку управления React и интерактивный строитель карт. Дополнительные сведения см. в [приложении Teams App Studio.](~/concepts/build-and-test/app-studio-overview.md)
+> Teams App Studio помогает создавать и настраивать манифест приложения и регистрировать веб-службу в качестве бота в Bot Framework. Он также содержит библиотеку React управления и интерактивный конструктор карт. Дополнительные сведения см. в [Teams App Studio.](~/concepts/build-and-test/app-studio-overview.md)
 
-## <a name="bots-and-the-microsoft-power-virtual-agents"></a>Боты и виртуальные агенты Microsoft Power
+## <a name="bots-and-the-microsoft-power-virtual-agents"></a>Боты и microsoft Power Virtual Agents
 
-[Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) — это служба чат-ботов, созданная на платформе Microsoft Power и Bot Framework. Процесс разработки виртуального агента Power использует управляемый, не кодовый и графический интерфейс, который позволяет членам группы легко создавать и поддерживать интеллектуальный виртуальный агент. После создания чат-бота на [портале виртуальных](https://powervirtualagents.microsoft.com)агентов Power вы можете легко интегрировать его [с Teams.](how-to/add-power-virtual-agents-bot-to-teams.md) Дополнительные сведения о работе см. в [документации Power Virtual Agents.](https://docs.microsoft.com/power-virtual-agents/)
+[Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) — это служба чат-ботов, созданная на платформе Microsoft Power и Bot Framework. Процесс разработки виртуального агента Power использует управляемый, не кодовый и графический интерфейс, который позволяет членам группы легко создавать и поддерживать интеллектуальный виртуальный агент. После создания чат-бота на [портале Power Virtual Agents](https://powervirtualagents.microsoft.com)вы можете легко интегрировать его [с Teams](how-to/add-power-virtual-agents-bot-to-teams.md). Дополнительные сведения о работе см. в Power Virtual Agents [документации.](https://docs.microsoft.com/power-virtual-agents/)
 
 ## <a name="bots-and-webhooks-and-connectors"></a>Bots and webhooks and connectors
 
@@ -59,7 +59,7 @@ Bot [Framework —](https://dev.botframework.com/) это богатый SDK, и
 
 ### <a name="in-a-channel"></a>В канале
 
-Каналы содержат потоковые беседы между несколькими людьми даже до двух тысяч. Это потенциально дает вашему боту массовый охват, но отдельные взаимодействия должны быть краткими. Традиционные взаимодействия с несколькими поворотами не работают. Вместо этого необходимо использовать интерактивные карты или модули задач или перенести беседу в один разговор, чтобы собрать много информации. Ваш бот имеет доступ только к сообщениям, где он `@mentioned` находится. Дополнительные сообщения из беседы можно получить с помощью разрешений Microsoft Graph и на уровне организации.
+Каналы содержат потоковые беседы между несколькими людьми даже до двух тысяч. Это потенциально дает вашему боту массовый охват, но отдельные взаимодействия должны быть краткими. Традиционные взаимодействия с несколькими поворотами не работают. Вместо этого необходимо использовать интерактивные карты или модули задач или перенести беседу в один разговор, чтобы собрать много информации. Ваш бот имеет доступ только к сообщениям, где он `@mentioned` находится. Дополнительные сообщения из беседы можно получить с помощью разрешений microsoft Graph и на уровне организации.
 
 Боты лучше работают в канале в следующих случаях:
 
@@ -112,7 +112,7 @@ BOT: В какой день?
 |----------------|-----------------|--------------|----------------|
 | Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Обработчики действий ботов](~/bots/bot-basics.md)

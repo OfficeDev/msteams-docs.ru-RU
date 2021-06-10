@@ -1,11 +1,11 @@
 ---
 title: Тестирование разрешений на согласие для определенных ресурсов в Teams
-description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с помощью postman
+description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с помощью Postman
 localization_priority: Normal
 author: laujan
 ms.author: lajanuar
 ms.topic: tutorial
-keywords: команды авторизации OAuth SSO AAD rsc Postman Graph
+keywords: команды авторизации OAuth SSO AAD rsc postman Graph
 ms.openlocfilehash: 328be5b4f1e3597457afb9ce1413eb35aa2df71e
 ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
 ms.translationtype: MT
@@ -15,13 +15,13 @@ ms.locfileid: "52075621"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
-Согласие на использование ресурсов — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными группами в организации. Дополнительные сведения см. в [сайте Resource-specific consent (RSC) — API Microsoft Teams Graph.](resource-specific-consent.md)
+Согласие для конкретного ресурса (RSC) — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными группами в организации. Дополнительные сведения см. в [специальном для ресурса согласии (RSC) — Microsoft Teams Graph API.](resource-specific-consent.md)
 
 > [!NOTE]
-> Чтобы проверить разрешения RSC, файл манифеста приложения Teams должен включать ключ **webApplicationInfo,** населённый следующими полями:
+> Чтобы проверить разрешения RSC, Teams манифест приложения должен включать ключ **webApplicationInfo,** населённый следующими полями:
 >
 > - **id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-via-the-azure-ad-portal).
-> - **ресурс.** Любая строка см. в заметке [в манифесте Обновления приложения Teams.](resource-specific-consent.md#update-your-teams-app-manifest)
+> - **ресурс**. Любая строка, см. примечание в [обновлении манифеста Teams приложения](resource-specific-consent.md#update-your-teams-app-manifest).
 > - **Разрешения приложения:** разрешения RSC для вашего приложения см. в [приложении Resource-specific Permissions.](resource-specific-consent.md#resource-specific-permissions)
 
 ```json
@@ -57,9 +57,9 @@ ms.locfileid: "52075621"
 * `azureADAppId`: ID приложения Azure AD в вашем приложении.
 * `azureADAppSecret`Пароль приложения Azure AD.
 * `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default .
-* `teamGroupId`: Вы можете получить id группы группы из клиента Teams следующим образом:
+* `teamGroupId`: Вы можете получить id группы группы от клиента Teams следующим образом:
 
-    1. В клиенте Teams выберите **Teams из** левой панели навигации.
+    1. В клиенте Teams выберите **Teams** из левой панели навигации.
     2. Выберите команду, в которой установлено приложение из отсевного меню.
     3. Выберите **значок Дополнительные** параметры (&#8943;).
     4. Выберите **Получить ссылку на команду**. 
@@ -85,5 +85,5 @@ ms.locfileid: "52075621"
 
 ## <a name="see-also"></a>См. также
 
-[API и команды Microsoft Graph](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
+[Microsoft Graph API и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
 

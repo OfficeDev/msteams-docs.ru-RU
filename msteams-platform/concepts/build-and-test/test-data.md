@@ -16,7 +16,7 @@ ms.locfileid: "52101746"
 
 Вы можете протестировать Microsoft Teams с примерными данными с помощью подписки Microsoft 365 разработчика.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 1. [Присоединитесь к Microsoft 365 разработчику,](/office/developer-program/office-365-developer-program)если у вас нет тестового клиента.
 2. [Настройка подписки Microsoft 365 разработчика.](/office/developer-program/office-365-developer-program-get-started)
