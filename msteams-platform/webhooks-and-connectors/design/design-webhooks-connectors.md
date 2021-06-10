@@ -1,5 +1,5 @@
 ---
-title: Разработка веб-ок и соединители Microsoft Teams
+title: Проектирование Microsoft Teams веб-ок и соединители
 author: heath-hamilton
 description: Рекомендации и рекомендации по разработке веб-ок и соединители для Microsoft Teams.
 localization_priority: Normal
@@ -12,6 +12,6 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52020220"
 ---
-# <a name="design-webhooks-and-connectors"></a><span data-ttu-id="4ad9a-103">Разработка веб-ок и соединители</span><span class="sxs-lookup"><span data-stu-id="4ad9a-103">Design webhooks and connectors</span></span>
+# <a name="design-webhooks-and-connectors"></a><span data-ttu-id="4a97e-103">Разработка веб-ок и соединители</span><span class="sxs-lookup"><span data-stu-id="4a97e-103">Design webhooks and connectors</span></span>
 
-<span data-ttu-id="4ad9a-104">Скоро...</span><span class="sxs-lookup"><span data-stu-id="4ad9a-104">Coming soon ...</span></span>
+<span data-ttu-id="4a97e-104">Скоро...</span><span class="sxs-lookup"><span data-stu-id="4a97e-104">Coming soon ...</span></span>

@@ -1,7 +1,7 @@
 ---
-title: Создание параметров для разработки приложений Microsoft Teams
+title: Создание параметров Microsoft Teams разработки приложений
 author: heath-hamilton
-description: Опишите SDKs, средства и API, которые можно использовать для создания всех типов приложений Teams.
+description: Опишите SDKs, средства и API, которые можно использовать для создания всех типов Teams приложений.
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
@@ -12,6 +12,6 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52020844"
 ---
-# <a name="build-options-for-microsoft-teams-app-development"></a><span data-ttu-id="faace-103">Создание параметров для разработки приложений Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="faace-103">Build options for Microsoft Teams app development</span></span>
+# <a name="build-options-for-microsoft-teams-app-development"></a><span data-ttu-id="48853-103">Создание параметров Microsoft Teams разработки приложений</span><span class="sxs-lookup"><span data-stu-id="48853-103">Build options for Microsoft Teams app development</span></span>
 
-<span data-ttu-id="faace-104">Скоро...</span><span class="sxs-lookup"><span data-stu-id="faace-104">Coming soon ...</span></span>
+<span data-ttu-id="48853-104">Скоро...</span><span class="sxs-lookup"><span data-stu-id="48853-104">Coming soon ...</span></span>
