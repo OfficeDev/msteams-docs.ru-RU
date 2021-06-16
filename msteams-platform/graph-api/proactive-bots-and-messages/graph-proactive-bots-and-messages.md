@@ -6,14 +6,14 @@ author: laujan
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: 06b50e5ab8594c257959430383bab5e355af4e06
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: db36c64e557b90699bb09e77dc67ca4c9a8e5853
+ms.sourcegitcommit: 9f499908437655d6ebdc6c4b3c3603ee220315b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566154"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52949667"
 ---
-# <a name="proactive-installation-of-apps-using-graph-api-and-send-messages"></a>Упреждающая установку приложений с помощью API Graph и отправка сообщений
+# <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Активная установка приложений с Graph API для отправки сообщений
 
 >[!IMPORTANT]
 > Предварительные Graph и Microsoft Teams доступны для раннего доступа и отзывов. Хотя этот выпуск прошел широкое тестирование, он не предназначен для использования в производстве.

@@ -5,12 +5,12 @@ keywords: teams bots cards format
 localization_priority: Normal
 ms.topic: reference
 ms.date: 03/29/2018
-ms.openlocfilehash: b52eb01f7d886f3d4b2f12c8209c181d43a31956
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 6a420ca549cd5131afc50813b5c8267f28073e5b
+ms.sourcegitcommit: 9f499908437655d6ebdc6c4b3c3603ee220315b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630215"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52949765"
 ---
 # <a name="format-cards-in-teams"></a>Формат карты в Teams
 
@@ -242,9 +242,6 @@ ms.locfileid: "52630215"
 
 ### <a name="stage-view-for-images-in-adaptive-cards"></a>Представление сцены для изображений в адаптивных картах
 
-> [!NOTE]
-> В настоящее время эта функция доступна только в предварительном просмотре разработчика.
- 
 В адаптивной карте свойство можно использовать для выборочного отображения изображений в представлении `msteams` сцены. Когда пользователи наведите курсор над изображениями, они увидят значок расширения, для которого установлен `allowExpand` атрибут `true` . Сведения об использовании свойства см. в следующем примере:
 
 ``` json
