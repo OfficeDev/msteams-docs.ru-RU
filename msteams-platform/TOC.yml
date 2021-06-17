@@ -212,6 +212,8 @@
           href: tabs/tabs-link-unfurling.md
         - name: Создание вкладок бесед
           href: tabs/how-to/conversational-tabs.md
+        - name: Изменения полей вкладок
+          href: resources/removing-tab-margins.md
     - name: Примеры использования
       items:
         - name: Вкладка "Личное" с Node.js
@@ -309,7 +311,7 @@
       href: apps-in-teams-meetings/create-apps-for-teams-meetings.md
     - name: Включение и настройка приложений для собраний
       href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
-    - name: Режим "Вместе" в Teams
+    - name: Настраиваемые сцены режима "Вместе" в Teams
       href: apps-in-teams-meetings/teams-together-mode.md
 - name: Создание веб-перехватчиков и соединителей
   items:
@@ -371,8 +373,6 @@
           href: tabs/how-to/authentication/auth-silent-aad.md
         - name: Использование проверки подлинности SSO
           href: tabs/how-to/authentication/auth-aad-sso.md
-        - name: Добавление SSO с использованием расширения набора средств Teams для Visual Studio Code
-          href: toolkit/visual-studio-code-tab-sso.md
     - name: Боты
       items:
         - name: Поток аутентификации в ботах
@@ -477,8 +477,6 @@
           href: concepts/build-and-test/apps-localization.md
         - name: Схема локализации JSON
           href: resources/schema/localization-schema.md
-    - name: Изменения полей вкладок
-      href: resources/removing-tab-margins.md
     - name: Атрибут cookie SameSite (обновление 2020)
       href: resources/samesite-cookie-update.md
     - name: Распространенные причины неудачной отправки в магазин
