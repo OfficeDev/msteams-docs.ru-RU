@@ -5,12 +5,12 @@ description: Вы сможете быстро разработать прило�
 ms.author: adhal
 ms.date: 04/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: 6a9c7e008e2fb6d77c3314286b09d006bd468c37
-ms.sourcegitcommit: 25c02757fe207cdff916ba63aa215f88e24e1d6f
+ms.openlocfilehash: c336c97d477e7038cc41a5e593d71b0e98dc4643
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667456"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994394"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-blazor"></a>Создание и запуск первого Microsoft Teams приложения с помощью Blazor
 
@@ -269,11 +269,14 @@ Visual Studio развертывает приложение в службе пр
 
 Теперь вы можете использовать кнопку **Preview Teams** в верхней части страницы для запуска приложения в Teams.
 
-## <a name="next-steps"></a>Дальнейшие действия
-
-Узнайте о других методах создания приложений Teams:
+## <a name="see-also"></a>См. также
 
 - [Создание приложения Teams с помощью React](first-app-react.md)
-- [Создание приложения Teams в формате веб-части SharePoint](first-app-spfx.md) (Azure не требуется)
+- [Создание приложения Teams в качестве SharePoint веб-части](first-app-spfx.md)
 - [Создание бота беседы](first-app-bot.md)
 - [Создание расширения для обмена сообщениями](first-message-extension.md)
+
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Создание приложения Teams в качестве SharePoint веб-части](first-app-spfx.md)

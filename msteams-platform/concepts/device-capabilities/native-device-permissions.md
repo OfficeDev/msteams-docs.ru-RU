@@ -4,12 +4,12 @@ keywords: разрешения командных приложений
 description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя
 localization_priority: Normal
 ms.topic: how-to
-ms.openlocfilehash: dd317da0b2c8e214f7a44d13ef69bf9fea2aad93
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 920ab47a60340fd9a14e4f5dfb2e39a8ad8f3a89
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630539"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994352"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений на устройство для Microsoft Teams приложения
 
@@ -30,6 +30,9 @@ ms.locfileid: "52630539"
 * Запись аудиозаписей и сохранение их для более позднего использования.
 * Используйте сведения о расположении пользователя для отображения соответствующих сведений.
 
+> [!NOTE]
+> В настоящее время Teams не поддерживает разрешения устройств для нескольких оконных приложений, вкладок и sidepanel собраний. 
+
 ## <a name="access-device-permissions"></a>Разрешения на доступ к устройствам
 
 Клиент [Microsoft Teams JavaScript SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) предоставляет средства, необходимые Teams мобильному приложению для [](#manage-permissions) доступа к разрешениям устройств пользователя и создания более насыщенного интерфейса.
@@ -43,7 +46,7 @@ ms.locfileid: "52630539"
 
 Пользователь может управлять разрешениями устройств в Teams параметров,  выбрав **разрешить** или запретить разрешения для определенных приложений.
  
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Рабочий стол](#tab/desktop)
 
 1. Откройте приложение Teams.
 1. Выберите значок профиля в правом верхнем углу окна.
@@ -117,7 +120,7 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 > * Поддержка `camera` , `gallery` и включен через `microphone` [**selectMedia API**](/javascript/api/@microsoft/teams-js/microsoftteams.media.media?view=msteams-client-js-latest&preserve-view=true). Используйте [**API captureImage**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true) для одного захвата изображения.
 > * Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) Это необходимо использовать для расположения, так как API геолокации HTML5 в настоящее время не полностью поддерживается на `getLocation API` Teams настольном клиенте.
 
-Пример.
+Например:
  * Чтобы подсказыть пользователю доступ к их расположению, необходимо `getCurrentPosition()` вызвать:
 
     ```Javascript
@@ -170,7 +173,7 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
       /* ... *
     /});
     ```
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Рабочий стол](#tab/desktop)
 
    ![Запрос разрешений на настольные устройства tabs](~/assets/images/tabs/device-permissions-prompt.png)
 

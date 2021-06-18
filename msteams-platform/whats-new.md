@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 localization_priority: Normal
 keywords: команды, новые возможности
-ms.openlocfilehash: 86a39bc771873afb25d401534569498241b2daf1
-ms.sourcegitcommit: 9f499908437655d6ebdc6c4b3c3603ee220315b7
+ms.openlocfilehash: b2237119c046c85593cf1979b7076b88279187cf
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949660"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994345"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -21,6 +21,7 @@ ms.locfileid: "52949660"
 
 | **Date** | **Компоненты** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное на ресурсы,](graph-api/rsc/resource-specific-consent.md) [проверка разрешений](graph-api/rsc/test-resource-specific-consent.md) на повторное использование в Teams|
 |05/26/2021| Создание вкладок с помощью адаптивных карт. |[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |
 |05/25/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |
@@ -194,6 +195,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное на ресурсы,](graph-api/rsc/resource-specific-consent.md) [проверка разрешений](graph-api/rsc/test-resource-specific-consent.md) на повторное использование в Teams|  
 |05/26/2021|Создание вкладок с использованием адаптивных карточек|[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |
 |05/25/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |

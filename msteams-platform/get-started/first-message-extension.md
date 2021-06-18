@@ -5,12 +5,12 @@ description: Создайте расширение для сообщений д�
 ms.author: adhal
 ms.date: 05/20/2021
 ms.topic: quickstart
-ms.openlocfilehash: eaecb045993f8dfd21f4c2c4359a4a3388d659e6
-ms.sourcegitcommit: e50cdeb6b7f481e12911b2bb74a8da22af0bffac
+ms.openlocfilehash: bf00897beec92c64fe9dd68ca76e35751b3c7aed
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710650"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994205"
 ---
 # <a name="build-and-run-your-first-messaging-extension-for-microsoft-teams"></a>Создание и запуск первого расширения для сообщений для Microsoft Teams
 
@@ -184,9 +184,7 @@ teamsfx new
 > [!div class="nextstepaction"]
 > [Просмотр дополнительных примеров bot Framework в GitHub](https://github.com/OfficeDev/microsoft-teams-samples#messaging-extensions-samples-using-the-v4-sdk)
 
-## <a name="next-steps"></a>Дальнейшие действия
-
-Узнайте о других методах создания приложений Teams:
+## <a name="see-also"></a>См. также
 
 - [Создание приложения Teams с помощью React](first-app-react.md)
 - [Создание приложения Teams с помощью Blazor](first-app-blazor.md)

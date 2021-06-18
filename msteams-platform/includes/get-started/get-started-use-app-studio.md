@@ -16,7 +16,11 @@ App Studio — это Teams приложение, которое можно ус
 
     <img  width="450px" alt="App Studio" src="~/assets/images/get-started/AppStudio.png"/>
 
-    Пример поставляется с собственным манифестом и предназначен для создания пакета приложений при построении проекта. В .NET это делается в Visual Studio и Node.js это делается путем ввода в командной строке в корневом `gulp` каталоге проекта.
+    Пример поставляется с собственным манифестом и предназначен для создания пакета приложений при построении проекта. Пакет приложения можно создать на сайте .NET с Visual Studio. В Visual Studio, manifest.jsфайл находится в соответствии с **манифестом** `Microsoft.Teams.Samples.HelloWorld.Web` в . Этот шаг описывается следующим образом:  
+    
+    <img  width="450px" alt="Build the app package on .NET with Visual Studio" src="~/assets/images/get-started/app-package-on-.NET-with-Visual-Studio.png"/>
+    
+    Вы можете создать пакет приложений на Node.js, введя в строку команды в корневом `gulp` каталоге проекта.
 
     ```bash
     $ gulp

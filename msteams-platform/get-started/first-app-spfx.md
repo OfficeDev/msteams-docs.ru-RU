@@ -5,12 +5,12 @@ description: Узнайте, как создать настраиваемую в
 ms.author: zhenyasa
 ms.date: 05/19/2021
 ms.topic: quickstart
-ms.openlocfilehash: 54886b47bbe70fed5dd1f010517e6c91d8d5a50d
-ms.sourcegitcommit: 9cabeaed9baf96c8caeb1497f0bc37abdb787d22
+ms.openlocfilehash: 23df721a28225a8c453274e6e77efa8f756e84f3
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52646768"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994373"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-sharepoint-framework-spfx"></a>Сборка и запуск первого Microsoft Teams с помощью SharePoint Framework (SPFx)
 
@@ -236,11 +236,13 @@ Teams набор средств позволяет локализовку при
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/spfx-app-in-teams.png" alt-text="Снимок экрана, показывающий приложение в Teams":::
 
-## <a name="next-steps"></a>Дальнейшие действия
-
-Узнайте о других методах создания приложений Teams:
+## <a name="see-also"></a>См. также
 
 - [Создание приложения Teams с помощью React](first-app-react.md)
 - [Создание приложения Teams с помощью Blazor](first-app-blazor.md)
-- [Создание бота беседы](first-app-bot.md)
 - [Создание расширения для обмена сообщениями](first-message-extension.md)
+
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Создание бота беседы](first-app-bot.md)

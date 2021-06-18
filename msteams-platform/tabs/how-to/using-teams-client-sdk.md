@@ -6,12 +6,12 @@ description: Обзор SDK Microsoft Teams JavaScript, который може�
 localization_priority: Normal
 keywords: teams tabs group channel configurable static SDK JavaScript personal
 ms.topic: conceptual
-ms.openlocfilehash: 04c6bb9d7687a068375bce548588e6713fd57747
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: eaf89b230d9092b83de358352d0534e010cb9536
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630343"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994366"
 ---
 # <a name="building-tabs-and-other-hosted-experiences-with-the-microsoft-teams-javascript-client-sdk"></a>Создание вкладок и других опытом работы с клиентом Microsoft Teams JavaScript SDK
 
@@ -58,6 +58,7 @@ SDK полезен для разработки приложений с любы�
 |`microsoftTeams.authentication.authenticate(authenticateParameters?: AuthenticateParameters)`|Инициирует запрос на проверку подлинности, который открывает новое окно с параметрами, предоставляемыми вызываемой. Необязательные значения ввода определяются объектом **AuthenticateParameters.**|[function](/javascript/api/@microsoft/teams-js/microsoftteams.authentication?view=msteams-client-js-latest&preserve-view=true)<br/>[Auth obj](/javascript/api/@microsoft/teams-js/microsoftteams.authentication.authenticateparameters?view=msteams-client-js-latest&preserve-view=true)|
 |`microsoftTeams.authentication.notifySuccess(result?: string, callbackUrl?: string)`|Сообщает кадру, который инициировал запрос проверки подлинности, что запрос был успешным, и закрывает окно проверки подлинности|[function](/javascript/api/@microsoft/teams-js/microsoftteams.authentication?view=msteams-client-js-latest&preserve-view=true)|
 |`microsoftTeams.authentication.notifyFailure(reason?: string, callbackUrl?: string)`|Сообщает кадру, который инициировал запрос на проверку подлинности, о сбойе запроса и закрывает окно проверки подлинности.|[function](/javascript/api/@microsoft/teams-js/microsoftteams.authentication?view=msteams-client-js-latest&preserve-view=true)|
+|`microsoftTeams.authentication.getAuthToken(authTokenRequest: AuthTokenRequest)`|Отправьте запрос на выпуск маркера Azure AD от имени приложения. Маркер можно приобрести из кэша, если срок его действия не истек. В противном случае запрос отправляется в Azure AD для получения нового маркера.|[function](/javascript/api/@microsoft/teams-js/microsoftteams.authentication?view=msteams-client-js-latest#getAuthToken_AuthTokenRequest_&preserve-view=true)|
 
 ### <a name="settings-namespace"></a>Параметры пространства имен
 

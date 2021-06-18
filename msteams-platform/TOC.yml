@@ -427,8 +427,10 @@
       items:
         - name: Проверка разрешений с согласием для конкретных ресурсов
           href: graph-api/rsc/test-resource-specific-consent.md
-        - name: Тестовый файл JSON с согласием для конкретных ресурсов
-          href: graph-api/rsc/test-rsc-json-file.md
+        - name: Тестовый файл JSON с согласием для конкретных ресурсов в команде
+          href: graph-api/rsc/test-team-rsc-json-file.md
+        - name: Тестовый файл JSON с согласием для конкретных ресурсов в чате
+          href: graph-api/rsc/test-chat-rsc-json-file.md
 - name: Распространение приложения
   items:
     - name: Обзор

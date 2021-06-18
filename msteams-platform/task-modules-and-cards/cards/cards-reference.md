@@ -4,12 +4,12 @@ description: Описывает все действия карт и карт, д
 localization_priority: Normal
 keywords: ссылка на карточки ботов
 ms.topic: reference
-ms.openlocfilehash: d3f0904326f951475c8a0d3e17daf720d9aad489
-ms.sourcegitcommit: c59d90ae03eae32996db49f162855965b55c52fe
+ms.openlocfilehash: 741980ea79dd23659dd2b8a240d767b8292ca251
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52668864"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994387"
 ---
 # <a name="cards-reference"></a>Ссылки на карточки
 
@@ -82,7 +82,8 @@ ms.locfileid: "52668864"
 
 > [!NOTE]
 > * Teams поддерживает v1.2 или более ранние функции адаптивной карты.
-> * Элементы мультимедиа в настоящее время не поддерживаются в адаптивной карте v1.2 на Teams платформе.
+> * Положительный или разрушительный стиль действий не поддерживается в адаптивных картах на Teams платформе.
+> * Элементы мультимедиа в настоящее время не поддерживаются в адаптивных картах на Teams платформе.
 
 ### <a name="example-of-an-adaptive-card"></a>Пример адаптивной карты
 

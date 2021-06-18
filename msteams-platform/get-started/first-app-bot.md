@@ -5,12 +5,12 @@ description: Создание чат-бота для Microsoft Teams с помо
 ms.author: adhal
 ms.date: 05/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: a2f1ccfa6cc708d655f3b9a54062ee39e8be14bd
-ms.sourcegitcommit: 33a43c61f27ae750776616b2cf90159455d8ba6c
+ms.openlocfilehash: e59980e7f33c326c16faefd412f9845e47f234e5
+ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52721852"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52994261"
 ---
 # <a name="build-your-first-conversational-bot-for-microsoft-teams"></a>Создание первого чат-бота для Microsoft Teams
 
@@ -160,11 +160,13 @@ teamsfx new
 
 </details>
 
-## <a name="next-steps"></a>Дальнейшие действия
-
-Узнайте о других методах создания приложений Teams:
+## <a name="see-also"></a>См. также
 
 - [Создание приложения Teams с помощью React](first-app-react.md)
 - [Создание приложения Teams с помощью Blazor](first-app-blazor.md)
-- [Создание приложения Teams в качестве веб-части SharePoint](first-app-spfx.md) (Azure не требуется)
-- [Создание расширения для обмена сообщениями](first-message-extension.md)
+- [Создание приложения Teams в формате веб-части SharePoint](first-app-spfx.md) (Azure не требуется)
+
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Создание расширения для обмена сообщениями](first-message-extension.md)
