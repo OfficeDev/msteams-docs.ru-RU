@@ -6,43 +6,43 @@ author: laujan
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: 215b528310137da331b0aef6ab004e0448dbfadf
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: 31e3dd0c33e548acd35d86492718875d45931d0b
+ms.sourcegitcommit: 60a8d314e4fb48f6789d79dbc2f69321aaff99d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994320"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022980"
 ---
 # <a name="resource-specific-consent-rsc"></a>Согласие на определенный ресурс (RSC)
 
 > [!NOTE]
 > Согласие на доступ к области чата с конкретными ресурсами доступно только для [предварительного просмотра общедоступных](../../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
-Согласие для конкретного ресурса (RSC) — это интеграция API Microsoft Teams и Microsoft Graph, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами — группами или чатами — в организации. Модель разрешений, характерных для конкретных ресурсов,  позволяет  владельцам команд и владельцам чатов предоставлять согласие приложению на доступ и(или) изменять данные группы и данные чата соответственно. Детальное, Teams, RSC-разрешения определяют, что приложение может сделать в определенном ресурсе:
+Согласие для конкретного ресурса (RSC) — это интеграция API Microsoft Teams и Microsoft Graph, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами — группами или чатами — в организации. Модель разрешений, характерных для конкретных ресурсов,  позволяет  владельцам команд и владельцам чатов предоставлять согласие приложению на доступ и(или) изменять данные группы и данные чата соответственно. Разнонакладные разрешения RSC определяют, что приложение может сделать в определенном ресурсе:
 
 ## <a name="resource-specific-permissions"></a>Разрешения, определенные для ресурсов
 
 ### <a name="resource-specific-permissions-for-a-team"></a>Разрешения на использование ресурсов для группы
-|Разрешение приложения| Действие |
+|Разрешение приложения| Action |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получите параметры этой группы.|
 |TeamSettings.ReadWrite.Group|Обновление параметров этой группы.|
 |ChannelSettings.Read.Group|Получите имена каналов этой группы, описания каналов и параметры канала.|
 |ChannelSettings.ReadWrite.Group|Обновим имена каналов этой группы, описания каналов и параметры канала.|
-|Channel.Create.Group|Создание каналов в этой команде.|
-|Channel.Delete.Group|Удаление каналов в этой группе.|
-|ChannelMessage.Read.Group |Получите сообщения канала этой группы.|
+|Channel.Create.Group|Создание каналов в этой команде. |
+|Channel.Delete.Group|Удаление каналов в этой группе. |
+|ChannelMessage.Read.Group |Получите сообщения канала этой группы. |
 |TeamsAppInstallation.Read.Group|Получите список установленных приложений этой группы.|
 |TeamsTab.Read.Group|Получите список вкладок этой группы.|
-|TeamsTab.Create.Group|Создание вкладок в этой команде.|
-|TeamsTab.ReadWrite.Group|Обновление вкладок этой команды.|
-|TeamsTab.Delete.Group|Удаление вкладок этой команды.|
-|TeamMember.Read.Group|Получите членов этой группы.|
+|TeamsTab.Create.Group|Создание вкладок в этой команде. |
+|TeamsTab.ReadWrite.Group|Обновление вкладок этой команды. |
+|TeamsTab.Delete.Group|Удаление вкладок этой команды. |
+|TeamMember.Read.Group|Получите членов этой группы. |
 
-Дополнительные сведения см. [в Teams разрешений](/graph/permissions-reference#teams-resource-specific-consent-permissions)на согласие на использование ресурсов.
+Дополнительные сведения см. в [материале Team resource-specific consent permissions.](/graph/permissions-reference#team-resource-specific-consent-permissions)
 
 ### <a name="resource-specific-permissions-for-a-chat"></a>Разрешения на доступ к ресурсам для чата
-|Разрешение приложения| Действие |
+|Разрешение приложения| Action |
 | ----- | ----- |
 | ChatSettings.Read.Chat         | Получите параметры этого чата.                                    |
 | ChatSettings.ReadWrite.Chat    | Обновление параметров этого чата.                          |
