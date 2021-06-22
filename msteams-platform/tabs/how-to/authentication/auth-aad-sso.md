@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 localization_priority: Normal
 keywords: группы проверки подлинности SSO AAD единого api для входов
-ms.openlocfilehash: 681481d4d4f764c260729d37d7b5f5f2ce58d0ec
-ms.sourcegitcommit: d9274ac2f32880e861b206ac6ce29467d631177f
+ms.openlocfilehash: 1e26189a9a04991c2ad384e58f4fd6d68ca69b6d
+ms.sourcegitcommit: 3d02dfc13331b28cffba42b39560cfeb1503abe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760883"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53049038"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -120,7 +120,7 @@ API SSO также работает в [модулях задач,](../../../tas
 >
 > * ¹ Если ваше приложение AAD зарегистрировано в том же клиенте, где вы делаете запрос на проверку подлинности в Teams, пользователю не может быть предложено дать согласие и ему сразу же будет предоставлен маркер доступа. Пользователи соглашаются на эти разрешения только в том случае, если приложение AAD зарегистрировано в другом клиенте.
 > * ² Если настраиваемый домен не добавлен в AAD, вы получите ошибку, указывав, что имя хост не должно основываться на уже собственном домене. Чтобы добавить настраиваемый домен в AAD и зарегистрировать его, выполните добавление пользовательского доменного имени в процедуру [AAD,](/azure/active-directory/fundamentals/add-custom-domain) а затем повторите шаг 5. Вы также можете получить эту ошибку, если вы не подписаны с учетными данными администратора в Office 365 аренды.
-> * Если вы не получаете основное имя пользователя (UPN)) в маркере возвращенного доступа, вы можете добавить его в качестве необязательных утверждений [в](/azure/active-directory/develop/active-directory-optional-claims) AAD.
+> * Если вы не получаете основное имя пользователя (UPN) в возвращенном маркере доступа, вы можете добавить его в качестве необязательных утверждений [в](/azure/active-directory/develop/active-directory-optional-claims) AAD.
 
 ### <a name="2-update-your-teams-application-manifest"></a>2. Обновление манифеста Teams приложения
 
@@ -166,7 +166,7 @@ microsoftTeams.authentication.getAuthToken(authTokenRequest);
 
 ## <a name="code-sample"></a>Пример кода
 
-|**Пример имени**|**Описание**|**C#**|**Node.js**|
+|**Пример имени**|**Description**|**C#**|**Node.js**|
 |---------------|---------------|------|--------------|
 | Tab SSO |Microsoft Teams пример приложения для вкладок Azure AD SSO| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-sso/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/tab-sso/nodejs), </br>[Teams набор средств](../../../toolkit/visual-studio-code-tab-sso.md)|
 

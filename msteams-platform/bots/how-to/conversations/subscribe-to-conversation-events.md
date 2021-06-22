@@ -5,12 +5,12 @@ description: Работа с событиями беседы из Microsoft Team
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 7dfafbd02c53ea0fe7393d4e4f771a50ad2954d2
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 39d3a6d54b275fd6b9f28eb38b124435e9ba8bfd
+ms.sourcegitcommit: 3d02dfc13331b28cffba42b39560cfeb1503abe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630707"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53049047"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -1386,9 +1386,27 @@ turnContext, CancellationToken cancellationToken) {
 
 ---
 
+## <a name="uninstall-behavior-for-personal-app-with-bot"></a>Удалить поведение для личного приложения с ботом
+
+> [!NOTE]
+> Удалить поведение для личного приложения с ботом в настоящее время доступно только в [предварительном просмотре общедоступных разработчиков.](../../../resources/dev-preview/developer-preview-intro.md)
+
+При отостановлении приложения бот также неустановлен. Когда пользователь отправляет сообщение в приложение, он получает код ответа 403. Бот получает код ответа 403 для новых сообщений, вывешиванных вашим ботом. Теперь выровнено поведение столба для ботов в личной области с областью Teams и groupChat. Вы не можете отправлять или получать сообщения после того, как приложение было неустановлено.
+
+<img src="~/assets/images/bots/uninstallbot.png" alt="Uninstall event" width="900" height="900"/>
+
+## <a name="event-handling-for-install-and-uninstall-events"></a>Обработка событий для установки и отработки событий
+
+При использовании этих событий установки и исключения существуют некоторые случаи, когда боты дают исключения при получении неожиданных событий из Teams. Это происходит в следующих случаях:
+
+* Вы создаете бот без Microsoft Bot Framework SDK, и в результате бот дает исключение при получении неожиданного события.
+* Вы создаете бот с помощью Microsoft Bot Framework SDK и выбираете изменить поведение событий по умолчанию, переопределив базовую ручку события.
+
+Важно знать, что новые события могут быть добавлены в любое время в будущем и ваш бот начинает получать их. Поэтому необходимо разработать возможность получения неожиданных событий. Если вы используете SDK Bot Framework, ваш бот автоматически отвечает 200 — ОК на любые события, которые вы не решите обрабатывать.
+
 ## <a name="code-sample"></a>Пример кода
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
 | Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 

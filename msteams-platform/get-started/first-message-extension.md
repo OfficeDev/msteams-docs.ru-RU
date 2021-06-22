@@ -5,12 +5,12 @@ description: Создайте расширение для сообщений д�
 ms.author: adhal
 ms.date: 05/20/2021
 ms.topic: quickstart
-ms.openlocfilehash: bf00897beec92c64fe9dd68ca76e35751b3c7aed
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: cb37bc97c3b9de8ce469728e4c1b0e09ba1c2942
+ms.sourcegitcommit: 99b1f151e4e36a86c6a5d2ccbde01bf45b61f526
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994205"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "53037637"
 ---
 # <a name="build-and-run-your-first-messaging-extension-for-microsoft-teams"></a>Создание и запуск первого расширения для сообщений для Microsoft Teams
 
@@ -97,7 +97,7 @@ teamsfx new
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/msgextn-file-layout.png" alt-text="Макет файла проекта бота.":::
 
-Код бота хранится в каталоге `bot`.  `bots/messageExtensionBot.js` — это главная точка входа для расширения для сообщений.
+Код бота хранится в каталоге `bot`.  `bot/messageExtensionBot.js` — это главная точка входа для расширения для сообщений.
 
 > [!Tip]
 > Перед интеграцией своего первого бота в Teams ознакомьтесь с ботами за пределами Teams.  Дополнительные сведения о ботах см. в руководстве [Служба Azure Bot](/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&preserve-view=true).
@@ -175,7 +175,7 @@ teamsfx new
 
 В Teams в примере проектов по GitHub показано, как создавать расширения обмена сообщениями, включающие страницу конфигурации и проверку подлинности службы [ботов.](https://github.com/microsoft/BotBuilder-Samples#teams-samples) В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
 |-----------------|-----------------|-------------|--------------|--------|
 | Строитель ботов | Создание расширений обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) | [View]( https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
 

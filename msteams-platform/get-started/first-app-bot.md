@@ -5,12 +5,12 @@ description: Создание чат-бота для Microsoft Teams с помо
 ms.author: adhal
 ms.date: 05/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: e59980e7f33c326c16faefd412f9845e47f234e5
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: 68b266b1cf9d8f7e9b4b98611d3ba982a2e18a47
+ms.sourcegitcommit: 99b1f151e4e36a86c6a5d2ccbde01bf45b61f526
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994261"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "53037651"
 ---
 # <a name="build-your-first-conversational-bot-for-microsoft-teams"></a>Создание первого чат-бота для Microsoft Teams
 
@@ -89,7 +89,7 @@ teamsfx new
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/bot-file-layout.png" alt-text="Макет файла проекта бота.":::
 
-Код бота хранится в каталоге `bot`.  `bots/teamsBot.js` — основная точка входа для бота. Диалоги хранятся в каталоге `dialogs`.
+Код бота хранится в каталоге `bot`.  `bot/teamsBot.js` — основная точка входа для бота. Диалоги хранятся в каталоге `dialogs`.
 
 > [!Tip]
 > Перед интеграцией своего первого бота в Teams ознакомьтесь с чат-ботами за пределами Teams.  Дополнительные сведения о ботах см. в руководстве [Служба Azure Bot](/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&preserve-view=true).

@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 localization_priority: Normal
 keywords: команды, новые возможности
-ms.openlocfilehash: b2237119c046c85593cf1979b7076b88279187cf
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: b5253c1769ebaac5548c779b3f66a87abb195ed8
+ms.sourcegitcommit: 3d02dfc13331b28cffba42b39560cfeb1503abe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994345"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53049059"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -195,6 +195,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|06/21/2021|Удалить поведение для личного приложения с ботом | [Удалить обновления поведения в личных приложениях с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное на ресурсы,](graph-api/rsc/resource-specific-consent.md) [проверка разрешений](graph-api/rsc/test-resource-specific-consent.md) на повторное использование в Teams|  
 |05/26/2021|Создание вкладок с использованием адаптивных карточек|[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |

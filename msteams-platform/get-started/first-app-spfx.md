@@ -5,12 +5,12 @@ description: Узнайте, как создать настраиваемую в
 ms.author: zhenyasa
 ms.date: 05/19/2021
 ms.topic: quickstart
-ms.openlocfilehash: 23df721a28225a8c453274e6e77efa8f756e84f3
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: 7bbbf7ae1d74a9094af5bc6ca4b3ac797ba05d5d
+ms.sourcegitcommit: 99b1f151e4e36a86c6a5d2ccbde01bf45b61f526
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994373"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "53037665"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-sharepoint-framework-spfx"></a>Сборка и запуск первого Microsoft Teams с помощью SharePoint Framework (SPFx)
 
@@ -178,7 +178,7 @@ Teams набор средств позволяет локализовку при
 
 В окне терминала:
 
-1. Запуск `teamsfx provision` .
+1. Запустите `teamsfx provision`.
 
    ``` bash
    teamsfx provision
@@ -189,7 +189,7 @@ Teams набор средств позволяет локализовку при
    > [!NOTE]
    > Для размещения приложения всегда используются некоторые ресурсы Azure.
 
-1. Запуск `teamsfx deploy` .
+1. Запустите `teamsfx deploy`.
 
    ``` bash
    teamsfx deploy
