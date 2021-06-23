@@ -1,16 +1,16 @@
 ---
 title: Создание и отправка модуля задач
-author: clearab
+author: surbhigupta
 description: Обработка начального действия вызова и реагирование с помощью модуля задач из команды расширения обмена сообщениями действий
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: fbe90b3a3af8dbb053fdbaf6b4cd9b96344eaf00
-ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
+ms.openlocfilehash: f3d34a4e574169aadf49180ee8b857c8ee2b60a8
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52075593"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069059"
 ---
 # <a name="create-and-send-the-task-module"></a>Создание и отправка модуля задач
 
@@ -944,7 +944,7 @@ private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Определение команд действий](~/messaging-extensions/how-to/action-commands/define-action-command.md)
 

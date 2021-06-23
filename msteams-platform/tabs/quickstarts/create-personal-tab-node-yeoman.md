@@ -1,16 +1,16 @@
 ---
 title: Quickstart. Создайте настраиваемую личную вкладку с Node.js и генератором Yeoman для Microsoft Teams
-author: laujan
+author: surbhigupta
 description: Руководство по созданию личной вкладки с генератором Yeoman для Microsoft Teams.
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 88ad05aacaed69d695bc918e3e8a44ec18e560ae
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 220d1018f174fc935a10311723a730ebc74ccc33
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566611"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069199"
 ---
 # <a name="create-a-custom-personal-tab-using-nodejs-and-the-yeoman-generator-for-microsoft-teams"></a>Создайте настраиваемую личную вкладку с Node.js и генератором Yeoman для Microsoft Teams
 

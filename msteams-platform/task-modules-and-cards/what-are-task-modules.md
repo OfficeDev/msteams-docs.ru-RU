@@ -1,16 +1,16 @@
 ---
 title: Что такое модули задач?
-author: clearab
+author: surbhigupta
 description: Добавьте модули всплывающих приложений для сбора или отображения данных пользователям из Microsoft Teams приложений
 localization_priority: Normal
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 23157e30ce25c2dfa1c21e7f5c4ddd4f735b660f
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: e4937fc4909535506c61b4ac353283322d5f3631
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566845"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068605"
 ---
 # <a name="task-modules"></a>Модули задач
 
@@ -242,7 +242,7 @@ Microsoft Teams обеспечит правильную работу навиг�
 |Пример модуля задач (Bots-V4) | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
 |Пример модуля задач (Tabs + Bots-V3) | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [Запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
 * [Интеграция возможностей мультимедиа](../concepts/device-capabilities/mobile-camera-image-permissions.md)

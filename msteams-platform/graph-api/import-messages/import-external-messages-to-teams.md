@@ -2,16 +2,16 @@
 title: Используйте microsoft Graph для импорта сообщений внешней платформы для Teams
 description: Описывает, как использовать microsoft Graph для импорта сообщений с внешней платформы для Teams
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы импортируют сообщения api graph Microsoft migrate migration post
-ms.openlocfilehash: 5ea06e8b490bae0595abb31086848d0b050bded0
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: ad4e494264a72a3fdb1d926323bc2878d10cf44d
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566161"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069136"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -374,6 +374,6 @@ HTTP/1.1 204 No Content
 ||Перекрестные сообщения между каналами|
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Узнайте больше об интеграции Graph и Teams Майкрософт](/graph/teams-concept-overview)

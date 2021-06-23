@@ -1,20 +1,20 @@
 ---
 title: Участие в Microsoft Teams документации
 description: действия по созданию и публикации Teams документации
-author: laujan
+author: surbhigupta
 ms.author: lajanuar
 localization_priority: Normal
 ms.topic: contributor-guide
-ms.openlocfilehash: 52253bb096857e2cb883295c8ae6b58518506d9a
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 33296219b9d42b2ca26eb3c44df5c6429f5259ce
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566231"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069158"
 ---
 # <a name="contributing-to-microsoft-teams-documentation"></a>Участие в Microsoft Teams документации
 
-[Teams документация](/microsoftteams/platform/overview) входит в библиотеку технической документации [Microsoft Docs.](https://docs.microsoft.com/) Содержимое организовано в группы под названием docsets, каждая из которых представляет группу связанных документов, управляемых как единое целое. Статьи в том же docset имеют одно и то же расширение пути URL-адреса после *<span></span> документы .microsoft.com*.  Например, `/docs.microsoft.com/microsoftteams/...` это начало пути Teams docset. Teams статьи написаны в [синтаксис MarkDown](#markdown-reference) и помещались [в GitHub](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform).
+[Teams документация](/microsoftteams/platform/overview) входит в библиотеку технической документации [Microsoft Docs.](https://docs.microsoft.com) Содержимое организовано в группы под названием docsets, каждая из которых представляет группу связанных документов, управляемых как единое целое. Статьи в том же docset имеют одно и то же расширение пути URL-адреса после *<span></span> документы .microsoft.com*.  Например, `/docs.microsoft.com/microsoftteams/...` это начало пути Teams docset. Teams статьи написаны в [синтаксис MarkDown](#markdown-reference) и помещались [в GitHub](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform).
 
 ## <a name="set-up-your-workspace"></a>Настройка рабочего пространства
 
@@ -69,7 +69,7 @@ ms.locfileid: "52566231"
 
 Примеры кода играют важную роль в том, чтобы помочь разработчикам успешно использовать API и SDKs. Хорошо представленные примеры кода могут сообщать о том, как все работает более четко, чем только описательный текст и инструкции. Образцы кода должны быть точными, краткими, хорошо документированными и, самое главное, удобными для чтения. Простой для чтения код также легко понять, протестировать, отлагировать, поддерживать, изменять и расширять. Дополнительные сведения см. [в дополнительных сведениях о том, как включить код в документы.](/contribute/code-in-docs)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [Быстрый запуск стиля и голосового голоса в docs](/contribute/style-quick-start)
 * [Передний край: читаемость исходных кодов Советы](/archive/msdn-magazine/2014/october/cutting-edge-source-code-readability-tips).

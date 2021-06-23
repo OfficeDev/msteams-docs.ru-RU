@@ -2,16 +2,16 @@
 title: Использование microsoft Graph для авторизации активной установки ботов и обмена сообщениями в Teams
 description: Описывает активный обмен сообщениями в Teams и как реализовать.
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: db36c64e557b90699bb09e77dc67ca4c9a8e5853
-ms.sourcegitcommit: 9f499908437655d6ebdc6c4b3c3603ee220315b7
+ms.openlocfilehash: 0ece7d3ec3a9e00774ff2f529f7c38bc1932469d
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949667"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069090"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Активная установка приложений с Graph API для отправки сообщений
 
@@ -187,7 +187,7 @@ GET https://graph.microsoft.com/beta/users/{user-id}/chats?$filter=installedApps
 
 Ваш бот может [отправлять упреждающие](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) сообщения после того, как бот был добавлен для пользователя или группы и получил всю информацию о пользователе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [**Управление политиками установки приложений в Microsoft Teams**](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
 * [Отправка упреждающих уведомлений пользователям SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true)

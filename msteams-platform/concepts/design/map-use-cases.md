@@ -1,16 +1,16 @@
 ---
 title: Составить карту случаев использования для Teams возможностей приложения
-author: clearab
+author: surbhigupta
 description: Определите, как могут работать случаи использования приложения в Teams работе.
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 179d0a37d72577c36f2cc44a11a8217cb9f016b2
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: b374f0ca81402effb548c1cfcb90ed3d316360f1
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566112"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068556"
 ---
 # <a name="map-your-use-cases-to-teams-app-capabilities"></a>Составить карту случаев использования для Teams возможностей приложения
 
@@ -102,6 +102,6 @@ ms.locfileid: "52566112"
 
 При этом лучшие приложения обычно сочетают в себе несколько функций, создав приложение, которое в нужный момент вовлекет пользователей в нужный контекст с нужными функциональными возможностями. Вы не должны принудить какие-либо функциональные возможности к месту, которое ему не принадлежит. Просто потому, что у вас есть хороший один к одному разговорный бот не означает, что вы добавляете его в любую команду. Различные точки разнонабности хорошо для разных вещей, играть на их сильные стороны для создания успешного приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Создание приложений для Microsoft Teams](../../overview.md)

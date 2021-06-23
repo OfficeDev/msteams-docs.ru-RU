@@ -1,16 +1,16 @@
 ---
 title: Ответ на действие отправки модуля задач
-author: clearab
+author: surbhigupta
 description: Описывает, как реагировать на отправку действия модуля задач из команды действий расширения обмена сообщениями.
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: ae5171f45974e7977a45775facf6360d34a84f87
-ms.sourcegitcommit: e50cdeb6b7f481e12911b2bb74a8da22af0bffac
+ms.openlocfilehash: 9d0690a620efc3e658372cfaecf31504787b3d71
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710643"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068953"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 

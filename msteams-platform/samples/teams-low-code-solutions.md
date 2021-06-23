@@ -1,16 +1,16 @@
 ---
 title: Создание пользовательских приложений с низким кодом для Microsoft Teams
-author: laujan
+author: surbhigupta
 description: Подробные данные о доступных microsoft low и отсутствие решений для кода для Teams
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 7c35002752a4cdd1481c7e23bf49d2777cbcb26d
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: 3c7f2dc76f01a47226598e5480e9b39ce9dd173a
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994086"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069133"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание пользовательских приложений с низким кодом для Microsoft Teams
 
@@ -81,6 +81,6 @@ Microsoft Teams легко и адаптивно. Это означает, чт�
 > [!div class="nextstepaction"]
 > [Управление приложениями microsoft Power Platform в центре администрирования Microsoft Teams](/microsoftteams/manage-power-platform-apps)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

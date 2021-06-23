@@ -1,15 +1,15 @@
 ---
 title: Определение команд поиска расширения обмена сообщениями
-author: clearab
+author: surbhigupta
 description: Определение команд поиска расширения обмена сообщениями для Microsoft Teams приложений.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 19f1fdf7bd4efdbb0de11d1abad341ec24bc27bd
-ms.sourcegitcommit: 79e6bccfb513d4c16a58ffc03521edcf134fa518
+ms.openlocfilehash: 6333840e6817761911b2b5acd4b53849448b5b68
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51696809"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068912"
 ---
 # <a name="define-messaging-extension-search-commands"></a>Определение команд поиска расширения обмена сообщениями
 
@@ -80,7 +80,7 @@ ms.locfileid: "51696809"
 | `description` | Это свойство — текст справки, указывающий, что делает эта команда. Это значение отображается в пользовательском интерфейсе. | Да | 1.0 |
 | `type` | Это свойство должно быть `query` . | Нет | 1.4 |
 |`initialRun` | Если это свойство заданной для **true,** это указывает на то, что эта команда должна быть выполнена, как только пользователь выберет эту команду в пользовательском интерфейсе. | Нет | 1.0 |
-| `context` | Это свойство — необязательный массив значений, определяя контекст, в котором доступно действие поиска. Возможные значения — `message`, `compose` и `commandBox`. Значение по умолчанию: `["compose", "commandBox"]`. | Нет | 1.5 |
+| `context` | Это свойство — необязательный массив значений, определяя контекст, в котором доступно действие поиска. Возможные значения — `message`, `compose` и `commandBox`. Значение по умолчанию: `["compose", "commandBox"]`. | Нет | 1.5 |
 
 Необходимо добавить сведения о параметре поиска, который определяет текст, видимый пользователю в Teams клиенте.
 

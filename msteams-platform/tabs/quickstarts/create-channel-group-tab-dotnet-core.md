@@ -1,16 +1,16 @@
 ---
 title: Создание вкладки каналов и групп с помощью ASP.NET Core
-author: laujan
+author: surbhigupta
 description: Руководство quickstart по созданию настраиваемой вкладки канала и группы с ASP.NET Core.
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 1004e40e28875524ea1f38a3f6b3c2c53330fec1
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 2f7906f1fb9874503cecabdeb607251daf863e97
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630372"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069116"
 ---
 # <a name="create-a-custom-channel-and-group-tab-with-aspnetcore"></a>Создание настраиваемой вкладки канала и группы с помощью ASP.NETCore
 

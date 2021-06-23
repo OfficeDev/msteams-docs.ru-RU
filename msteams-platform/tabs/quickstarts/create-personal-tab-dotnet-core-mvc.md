@@ -1,16 +1,16 @@
 ---
 title: Создание личной вкладки с помощью ASP. NET Core MVC
-author: laujan
+author: surbhigupta
 description: Руководство quickstart по созданию настраиваемой личной вкладки с помощью ASP. NET Core MVC.
 localization_priority: Normal
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 01418adb32335660bb20f74ecfaa0e7e27230c93
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: ac01ae64f44ccf3e06476d4412b16ac9a4730f6c
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566635"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069149"
 ---
 # <a name="create-a-custom-personal-tab-with-aspnet-core-mvc"></a>Создание настраиваемой личной вкладки с ASP.NET Core MVC
 

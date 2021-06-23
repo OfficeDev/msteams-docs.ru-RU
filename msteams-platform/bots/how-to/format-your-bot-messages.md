@@ -1,16 +1,16 @@
 ---
 title: Формат сообщений бота
-author: clearab
+author: surbhigupta
 description: Добавление насыщенного форматирования в сообщения бота
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 7dc082f4b17e123c9fa000552f02fc913c66dcf7
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 56a34edee372cc6c5bcc5808015783f04867f141
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020907"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068986"
 ---
 # <a name="format-your-bot-messages"></a>Формат сообщений бота
 
@@ -66,7 +66,7 @@ Teams поддерживает подмножество тегов размет�
 
 В следующей таблице приводится список стилей, и какие из этих стилей поддерживаются на рабочем столе, iOS и Android:
 
-| Style                     | Desktop | iOS | Android |
+| Style                     | Рабочий стол | iOS | Android |
 | ---                       | :---: | :---: | :---: |
 | Полужирный                      | ✔ | ✔ | ✔ |
 | Курсив                    | ✔ | ✔ | ✔ |

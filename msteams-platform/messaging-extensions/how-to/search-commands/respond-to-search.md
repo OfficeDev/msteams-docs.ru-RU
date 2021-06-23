@@ -1,15 +1,15 @@
 ---
 title: Ответ на команду поиска
-author: clearab
+author: surbhigupta
 description: Как реагировать на команду поиска из расширения обмена сообщениями в Microsoft Teams приложении.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 15b48b135f656feeb3cfb28ffbe12852ddb66359
-ms.sourcegitcommit: e50cdeb6b7f481e12911b2bb74a8da22af0bffac
+ms.openlocfilehash: 3d82c7be0a0bbe5cf0ef991a90b277de38fcf4d5
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710636"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068945"
 ---
 # <a name="respond-to-search-command"></a>Ответ на команду поиска
 
@@ -345,7 +345,7 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Добавление конфигурации в расширение обмена сообщениями](~/get-started/first-message-extension.md)
 

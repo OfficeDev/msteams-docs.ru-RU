@@ -1,16 +1,16 @@
 ---
 title: Добавьте Power Virtual Agents чат-бота в Teams
-author: laujan
+author: surbhigupta
 description: интеграция Power Virtual Agents чат-бота в Teams платформе
 ms.topic: how-to
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: a38b2447bba42e70d8a1c3c9dca5d92e41cfb77c
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 85f2d91d2c5cfdb0ae746a00c7a9f3d6a0c15972
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630595"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069018"
 ---
 # <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents 
 
@@ -99,7 +99,7 @@ App Studio — это Teams приложение. Установите App Studi
 1. **Запуск чата**   
 Процесс создания для добавления бота Power Virtual Agents чата в Teams завершен. Теперь вы можете начать беседу с ботом в личном чате.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)  
 * [Создайте чат-бот для Teams microsoft Power Virtual Agents.](../bot-features.md#bots-and-the-microsoft-power-virtual-agents)  

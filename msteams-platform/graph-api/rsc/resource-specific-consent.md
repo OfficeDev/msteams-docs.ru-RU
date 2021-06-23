@@ -2,16 +2,16 @@
 title: Согласие на определенные ресурсы в Teams
 description: Описывает согласие на конкретные ресурсы в Teams и как использовать его.
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: 31e3dd0c33e548acd35d86492718875d45931d0b
-ms.sourcegitcommit: 60a8d314e4fb48f6789d79dbc2f69321aaff99d1
+ms.openlocfilehash: f364371f7763235e64da71b91db9b16b41ddf389
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022980"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068550"
 ---
 # <a name="resource-specific-consent-rsc"></a>Согласие на определенный ресурс (RSC)
 
@@ -23,7 +23,7 @@ ms.locfileid: "53022980"
 ## <a name="resource-specific-permissions"></a>Разрешения, определенные для ресурсов
 
 ### <a name="resource-specific-permissions-for-a-team"></a>Разрешения на использование ресурсов для группы
-|Разрешение приложения| Action |
+|Разрешение приложения| Действие |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получите параметры этой группы.|
 |TeamSettings.ReadWrite.Group|Обновление параметров этой группы.|
@@ -42,7 +42,7 @@ ms.locfileid: "53022980"
 Дополнительные сведения см. в [материале Team resource-specific consent permissions.](/graph/permissions-reference#team-resource-specific-consent-permissions)
 
 ### <a name="resource-specific-permissions-for-a-chat"></a>Разрешения на доступ к ресурсам для чата
-|Разрешение приложения| Action |
+|Разрешение приложения| Действие |
 | ----- | ----- |
 | ChatSettings.Read.Chat         | Получите параметры этого чата.                                    |
 | ChatSettings.ReadWrite.Chat    | Обновление параметров этого чата.                          |
@@ -245,7 +245,7 @@ ms.locfileid: "53022980"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
  
 * [Тестирование разрешений на согласие для определенных ресурсов в Teams](test-resource-specific-consent.md)
 * [Согласие на определенные ресурсы в Microsoft Teams для администраторов](/MicrosoftTeams/resource-specific-consent)

@@ -1,16 +1,16 @@
 ---
 title: Боты в Microsoft Teams
-author: clearab
+author: surbhigupta
 description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: e91211d7237384b1d39f877cf217dcddfc66cc1e
-ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
+ms.openlocfilehash: 655684ef4f2a93d3f9c3858e3bf5a84eab4bd43c
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52075663"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53068968"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
@@ -46,7 +46,7 @@ ms.locfileid: "52075663"
 
 Вы можете использовать API Teams бота для получения сведений для одного или более членов чата или группы. Дополнительные сведения см. в [Teams API-Teams](~/resources/team-chat-member-api-changes.md)для получения участников группы или чата.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Создать бота для Teams](~/bots/how-to/create-a-bot-for-teams.md)
 

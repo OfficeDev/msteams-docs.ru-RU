@@ -2,17 +2,17 @@
 title: Готовые к работе соединители
 description: Управление рабочей силой смещает соединители для Teams
 ms.topic: reference
-author: laujan
+author: surbhigupta
 ms.date: 03/09/2020
 localization_priority: Normal
 keywords: Microsoft Teams кронос соединители
 ms.author: lajanuar
-ms.openlocfilehash: 459797dd3f8425223c0dcbedc335955bf106ae37
-ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
+ms.openlocfilehash: 088c049342c36b4f126b4a9d2f788601378b7db4
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52075740"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069144"
 ---
 # <a name="production-ready-shifts-connectors"></a>Готовые к работе соединители  
 
@@ -70,6 +70,6 @@ Teams Соединители управления рабочей силой shif
 
 Дополнительные сведения о вкладе и предложении см. в [GitHub.](https://aka.ms/JDAShiftsConnector)</br></br>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

@@ -1,17 +1,17 @@
 ---
 title: Удаление полей вкладок в Microsoft Teams
-author: laujan
+author: surbhigupta
 description: Описывает, как удаление полей вкладок повысит качество работы разработчика.
 keywords: удаление полей вкладки
 ms.topic: reference
 localization_priority: Normal
 ms.author: lomeybur
-ms.openlocfilehash: 78d97dca73e7fce2bf4b911f5ea4588525667378
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: b4b3fbbe7ed2e8356fcc9c49346d423707a6a264
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52019715"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069164"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 

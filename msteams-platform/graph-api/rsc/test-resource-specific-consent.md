@@ -2,16 +2,16 @@
 title: Тестирование разрешений на согласие для определенных ресурсов в Teams
 description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с помощью Postman
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: команды авторизации OAuth SSO AAD rsc postman Graph
-ms.openlocfilehash: 29dc0241bfd5b42cb1853de3e89e43344c223c24
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: 92c6d5d96c103fb5e0da6afd91357b5887b2ba10
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994271"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069082"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
@@ -128,7 +128,7 @@ ms.locfileid: "52994271"
     2. [Test added RSC permissions to a chat using Postman.](#test-added-rsc-permissions-to-a-chat-using-the-postman-app)
 3. Проверьте все коды состояния отклика, чтобы подтвердить, что конкретные вызовы API сбой с **кодом состояния HTTP 403**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Microsoft Graph API и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
 

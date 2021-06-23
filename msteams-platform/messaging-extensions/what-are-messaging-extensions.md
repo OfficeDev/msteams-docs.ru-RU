@@ -1,16 +1,16 @@
 ---
 title: Расширения для система обмена сообщениями
-author: clearab
+author: surbhigupta
 description: Обзор расширений обмена сообщениями на Microsoft Teams платформе
 localization_priority: Normal
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: ee59a7ad96572f5a8ebc6afedd2e0e8485169e5a
-ms.sourcegitcommit: d90c5dafea09e2893dea8da46ee49516bbaa04b0
+ms.openlocfilehash: 6bf4b9a3147e9916f2eac05a890fc8fc134799be
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52075670"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069099"
 ---
 # <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
 
@@ -33,7 +33,7 @@ ms.locfileid: "52075670"
 Расширение обмена сообщениями состоит из веб-службы, на которой вы работаете, и манифеста приложения, который определяет, откуда вызывается веб-служба в клиенте Microsoft Teams клиента. Веб-служба воспользовалась схемой обмена сообщениями Bot Framework и протоколом безопасной связи, поэтому необходимо зарегистрировать веб-службу в качестве бота в bot Framework. 
 
 > [!NOTE]
-> Хотя веб-службу можно создавать вручную, используйте [bot Framework SDK](https://github.com/microsoft/botframework) для работы с протоколом.
+> Хотя веб-службу можно создавать вручную, используйте [bot Framework SDK](https://github.com/microsoft/botframework-sdk) для работы с протоколом.
 
 В манифесте приложения для Microsoft Teams приложение одно расширение обмена сообщениями определяется с до десяти различными командами. Каждая команда определяет тип, например действие или поиск, а также расположения клиента, откуда он вызывается. Расположения ссылок — это область сообщений, командная планка и сообщение. При вызове веб-служба получает сообщение HTTPS с полезной нагрузкой JSON, включая всю соответствующую информацию. Отвечайте с помощью полезной нагрузки JSON, что позволяет Teams клиенту знать следующее взаимодействие, чтобы включить. 
 
@@ -75,7 +75,7 @@ ms.locfileid: "52075670"
 | Расширение обмена сообщениями с командами на основе действий | В этом примере показано, как создать расширение обмена сообщениями на основе действий. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
 | Расширение обмена сообщениями с командами на основе поиска | В этом примере показано, как создать расширение обмена сообщениями на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 [Создание расширения для обмена сообщениями](../build-your-first-app/build-messaging-extension.md)
 

@@ -1,16 +1,16 @@
 ---
 title: Что такое настраиваемые вкладки в Teams?
-author: laujan
+author: surbhigupta
 description: Обзор пользовательских вкладок на платформе Teams
 localization_priority: Normal
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 06454530ab2d0b7e993120f6696f3507a7352bf3
-ms.sourcegitcommit: 25c02757fe207cdff916ba63aa215f88e24e1d6f
+ms.openlocfilehash: 792604c7763628ce0d45b332064e23c14e94aeb2
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667414"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069193"
 ---
 # <a name="microsoft-teams-tabs"></a>Вкладки Microsoft Teams
 
@@ -78,7 +78,7 @@ ms.locfileid: "52667414"
 > Поведение приложений по умолчанию применимо только в том случае, если они распространяются Teams магазине. По умолчанию все вкладки открываются в Teams клиенте.
 > Чтобы инициировать оценку мобильной безопасности приложения, протянуть teamsubm@microsoft.com сведения о приложении.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [Запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
 * [Интеграция возможностей мультимедиа](../concepts/device-capabilities/mobile-camera-image-permissions.md)

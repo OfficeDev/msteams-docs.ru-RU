@@ -1,16 +1,16 @@
 ---
 title: Обработчики действий ботов
-author: clearab
+author: surbhigupta
 description: Понимание обработчиков действий бота в Teams.
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: da770d930ca6d00503c0102f1e683a60161636fd
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: 4ecc40abca84466887466ef6a25ab6e57a38328c
+ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020192"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069033"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 
