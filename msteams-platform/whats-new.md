@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 localization_priority: Normal
 keywords: команды, новые возможности
-ms.openlocfilehash: b5253c1769ebaac5548c779b3f66a87abb195ed8
-ms.sourcegitcommit: 3d02dfc13331b28cffba42b39560cfeb1503abe2
+ms.openlocfilehash: 4fd391e7d3baecb5fe3f5c34256e8e93b1b6ab04
+ms.sourcegitcommit: 4ac93d69927791a8ccf678ca5ee83e63b51566b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53049059"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53095523"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -195,6 +195,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|06/23/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md#meeting-details-api) |
 |06/21/2021|Удалить поведение для личного приложения с ботом | [Удалить обновления поведения в личных приложениях с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное на ресурсы,](graph-api/rsc/resource-specific-consent.md) [проверка разрешений](graph-api/rsc/test-resource-specific-consent.md) на повторное использование в Teams|  
 |05/26/2021|Создание вкладок с использованием адаптивных карточек|[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
