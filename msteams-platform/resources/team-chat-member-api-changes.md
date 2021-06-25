@@ -6,12 +6,12 @@ keywords: Список участников группы apis для базы б
 localization_priority: Normal
 ms.topic: reference
 ms.author: ojchoudh
-ms.openlocfilehash: 333a29664f0d60e89039f906fce77e71054d486f
-ms.sourcegitcommit: 9ef3b415cbba484c2201abe9c6927e08d974388e
+ms.openlocfilehash: d2eb75a69100a6daaf3af3a021b9896c42abe5f1
+ms.sourcegitcommit: 6e4d2c8e99426125f7b72b9640ee4a4b4f374401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52555439"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114247"
 ---
 # <a name="teams-bot-api-changes-to-fetch-team-or-chat-members"></a>Teams API бота для получения участников группы или чата
 
@@ -72,4 +72,4 @@ ms.locfileid: "52555439"
     > `objectId` изменен в `aadObjectId` соответствие с тем, что называется в `Activity` объекте сообщения Bot Framework. Новый API доступен с версией 4.8 или более поздней версией SDK bot Framework. Он также доступен в Teams SDK extension Bot Framework 3.x. Между тем можно использовать конечную [точку REST.](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=json#get-single-member-details)
 
 * `TeamsInfo.GetMembersAsync` в C# и `TeamsInfo.getMembers` в TypeScript или Node.js формально отстает. После того как новый API будет доступен, необходимо обновить боты, чтобы использовать его. Это также относится к основному [API REST, который используют эти API.](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=json#tabpanel_CeZOj-G++Q_json)
-* К концу 2021 г. боты не смогут активно извлекать свойства для членов чата `userPrincipalName` `email` или группы. Боты должны использовать Graph для их получения. Свойства `userPrincipalName` `email` и свойства не возвращаются из нового `GetConversationPagedMembers` API, начиная с конца 2021 г. Боты должны использовать Graph с маркером доступа для получения информации. Ботам необходимо упростить процедуру получения маркера доступа, упростить и упростить процесс согласия конечных пользователей.
+* К концу 2022 г. боты не смогут активно извлекать свойства или свойства для членов `userPrincipalName` `email` чата или группы. Боты должны использовать Graph для их получения. Свойства `userPrincipalName` и свойства не `email` возвращаются из нового `GetConversationPagedMembers` API, начиная с конца 2022 г. Боты должны использовать Graph с маркером доступа для получения информации. Ботам необходимо упростить процедуру получения маркера доступа, упростить и упростить процесс согласия конечных пользователей.
