@@ -4,12 +4,12 @@ description: Создание расширений обмена сообщени
 localization_priority: Normal
 ms.topic: how-to
 keywords: команды расширения обмена сообщениями расширениями обмена сообщениями поиска
-ms.openlocfilehash: bfb3295726c355164f080c15e3759ea36a99d914
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 5604d86f05bad42bf3a00f611711afc34beedf42
+ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566742"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53140371"
 ---
 # <a name="initiate-actions-with-messaging-extensions"></a>Инициировать действия с расширениями обмена сообщениями
 
@@ -244,7 +244,7 @@ ms.locfileid: "52566742"
 
 В этом методе служба может определить настраиваемую адаптивную карту для сбора ввода конечных пользователей. Для этого подхода установите параметр `fetchTask` в `true` манифесте. Обратите внимание, что если вы заданы какие-либо статические параметры, определенные для `fetchTask` `true` команды, будут проигнорированы.
 
-В этом методе ваша служба получит событие и должна ответить адаптивной картой на основе ответа модуля `composeExtension/fetchTask` [задач](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object). Ниже приводится пример ответа с адаптивной картой:
+В этом методе служба получает событие и отвечает адаптивным ответом модуля задач на основе `composeExtension/fetchTask` [карт.](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) Ниже приводится пример ответа с адаптивной картой:
 
 ```json
 {
@@ -295,7 +295,7 @@ ms.locfileid: "52566742"
 
 В этом методе служба может показать основанный виджет, чтобы показать любой пользовательский `<iframe>` пользовательский интерфейс и собрать пользовательский ввод. Для этого подхода установите параметр `fetchTask` в `true` манифесте.
 
-Так же, как и в потоке адаптивной карты, служба будет отправлять событие и должна отвечать ответом модуля задач на основе `fetchTask` [URL-адреса.](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) Ниже приводится пример ответа с адаптивной картой:
+Так же, как и в потоке адаптивной карты, служба отправляет событие и отвечает ответом целевого модуля на основе `fetchTask` [URL-адресов.](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) Ниже приводится пример ответа с адаптивной картой:
 
 ```json
 {
