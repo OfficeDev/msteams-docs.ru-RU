@@ -22,13 +22,13 @@
       href: get-started/first-message-extension.md
 - name: Руководства и примеры кода
   items:
-    - name: Руководства
+    - name: Обзор
       href: tutorials/code-samples.md
-    - name: Создание приложения с помощью C# или .NET
+    - name: Создание первого приложения с помощью C# или .NET
       href: tutorials/get-started-dotnet-app-studio.md
-    - name: Создайте приложение с помощью Node.js
+    - name: Создание первого приложения с помощью Node.js
       href: tutorials/get-started-nodejs-app-studio.md
-    - name: Создание приложения с помощью генератора Yeoman
+    - name: Создание первого приложения с помощью генератора Yeoman
       href: tutorials/get-started-yeoman.md
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
@@ -395,9 +395,9 @@
       href: 'https://docs.microsoft.com/graph/toolkit/overview'
     - name: Начало работы
       href: 'https://docs.microsoft.com/graph/toolkit/get-started/build-a-microsoft-teams-tab'
-    - name: Включение согласия с определением ресурсов
+    - name: Согласие для определенных ресурсов
       href: graph-api/rsc/resource-specific-consent.md
-    - name: Упреждающая установку приложений с помощью API Graph и отправка сообщений
+    - name: Упреждающая установку приложений с помощью API Graph для отправки сообщений
       href: graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md
     - name: Импорт сторонних сообщений
       href: graph-api/import-messages/import-external-messages-to-teams.md
