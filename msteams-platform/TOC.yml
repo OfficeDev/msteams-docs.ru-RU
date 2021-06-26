@@ -192,42 +192,30 @@
   items:
     - name: Обзор
       href: tabs/what-are-tabs.md
-    - name: Создание вкладки
-      items:
-        - name: Требования к вкладке
-          href: tabs/how-to/tab-requirements.md
-        - name: Создать страницу контента
-          href: tabs/how-to/create-tab-pages/content-page.md
-        - name: Создать страницу конфигурации
-          href: tabs/how-to/create-tab-pages/configuration-page.md
-        - name: Создать страницу удаления
-          href: tabs/how-to/create-tab-pages/removal-page.md
-        - name: Вкладки на мобильных устройствах
-          href: tabs/design/tabs-mobile.md
-        - name: Получение контекста для вкладки
-          href: tabs/how-to/access-teams-context.md
-        - name: Создание вкладок с использованием адаптивных карточек
-          href: tabs/how-to/build-adaptive-card-tabs.md
-        - name: Предварительный просмотр для ссылки "Вкладки" и представление стадий
-          href: tabs/tabs-link-unfurling.md
-        - name: Создание вкладок бесед
-          href: tabs/how-to/conversational-tabs.md
-        - name: Изменения полей вкладок
-          href: resources/removing-tab-margins.md
-    - name: Примеры использования
-      items:
-        - name: Вкладка "Личное" с Node.js
-          href: tabs/quickstarts/create-personal-tab-node-yeoman.md
-        - name: Вкладка "Личное" с C# или ASP.NET Core
-          href: tabs/quickstarts/create-personal-tab-dotnet-core.md
-        - name: Вкладка "Личное" с C# или ASP.NET Core MVC
-          href: tabs/quickstarts/create-personal-tab-dotnet-core-mvc.md
-        - name: Вкладка "Канал" с Node.js
-          href: tabs/quickstarts/create-channel-group-tab-node-yeoman.md
-        - name: Вкладка "Канал" с C# или ASP.NET Core
-          href: tabs/quickstarts/create-channel-group-tab-dotnet-core.md
-        - name: Вкладка "Канал" с C# или ASP.NET MVC
-          href: tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc.md
+    - name: Предварительные требования
+      href: tabs/how-to/tab-requirements.md
+    - name: Создание личной вкладки
+      href: tabs/how-to/create-personal-tab.md
+    - name: Создание вкладки канала
+      href: tabs/how-to/create-channel-group-tab.md
+    - name: Создать страницу контента
+      href: tabs/how-to/create-tab-pages/content-page.md
+    - name: Создать страницу конфигурации
+      href: tabs/how-to/create-tab-pages/configuration-page.md
+    - name: Создать страницу удаления
+      href: tabs/how-to/create-tab-pages/removal-page.md
+    - name: Вкладки на мобильных устройствах
+      href: tabs/design/tabs-mobile.md
+    - name: Получение контекста для вкладки
+      href: tabs/how-to/access-teams-context.md
+    - name: Создание вкладок с использованием адаптивных карточек
+      href: tabs/how-to/build-adaptive-card-tabs.md
+    - name: Предварительный просмотр для ссылки "Вкладки" и представление стадий
+      href: tabs/tabs-link-unfurling.md
+    - name: Создание вкладок бесед
+      href: tabs/how-to/conversational-tabs.md
+    - name: Изменения полей вкладок
+      href: resources/removing-tab-margins.md
 - name: Боты сборки
   items:
     - name: Обзор
@@ -251,8 +239,11 @@
           href: bots/how-to/conversations/channel-and-group-conversations.md
         - name: События бесед в вашем боте Teams
           href: bots/how-to/conversations/subscribe-to-conversation-events.md
-        - name: Отправка упреждающих сообщений
+        - name: Упреждающие сообщения
           href: bots/how-to/conversations/send-proactive-messages.md
+          items:
+            - name: Пошаговые инструкции
+              href: sbs-send-proactive.yml
         - name: Формат сообщений бота
           href: bots/how-to/format-your-bot-messages.md
         - name: Обновлять и удалять сообщения ботов
@@ -317,26 +308,28 @@
   items:
     - name: Обзор
       href: webhooks-and-connectors/what-are-webhooks-and-connectors.md
-    - name: Создание входящего веб-перехватчика
-      href: webhooks-and-connectors/how-to/add-incoming-webhook.md
-    - name: Создание исходящего веб-перехватчика
+    - name: Создание исходящих веб-перехватчиков
       href: webhooks-and-connectors/how-to/add-outgoing-webhook.md
-    - name: Создание соединителя Office 365
+    - name: Создание входящих веб-перехватчиков
+      href: webhooks-and-connectors/how-to/add-incoming-webhook.md
+    - name: Создание соединителей Office 365
       href: webhooks-and-connectors/how-to/connectors-creating.md
-    - name: Отправка сообщений соединителям и веб-перехватчикам
+    - name: Создание и отправка сообщений
       href: webhooks-and-connectors/how-to/connectors-using.md
-- name: Создание карт и модулей задач
+- name: Создание карточек и модулей задач
   items:
+    - name: Обзор
+      href: task-modules-and-cards/cards-and-task-modules.md
     - name: Создание карт
       items:
         - name: Обзор
           href: task-modules-and-cards/what-are-cards.md
-        - name: Форматирование текста карточки
-          href: task-modules-and-cards/cards/cards-format.md
-        - name: Добавление и ответ на действия с карточкой
-          href: task-modules-and-cards/cards/cards-actions.md
-        - name: Ссылки на карточки
+        - name: Типы карточек
           href: task-modules-and-cards/cards/cards-reference.md
+        - name: Форматирование карточек в Microsoft Teams
+          href: task-modules-and-cards/cards/cards-format.md
+        - name: Действия карточек
+          href: task-modules-and-cards/cards/cards-actions.md
         - name: Универсальные действия для адаптивных карточек
           items:
             - name: Обзор
@@ -353,9 +346,11 @@
       items:
         - name: Обзор
           href: task-modules-and-cards/what-are-task-modules.md
+        - name: Вызов и закрытие модулей задач
+          href: task-modules-and-cards/task-modules/invoking-task-modules.md
         - name: Использование модулей задач во вкладках
           href: task-modules-and-cards/task-modules/task-modules-tabs.md
-        - name: Использование модулей задач в ботах
+        - name: Использование модулей задач из ботов
           href: task-modules-and-cards/task-modules/task-modules-bots.md
 - name: Добавление проверки подлинности
   items:
@@ -477,13 +472,13 @@
       items:
         - name: Локализация приложения
           href: concepts/build-and-test/apps-localization.md
-        - name: Схема локализации JSON
+        - name: Справочные материалы по локализации схемы JSON
           href: resources/schema/localization-schema.md
-    - name: Атрибут cookie SameSite (обновление 2020)
+    - name: Атрибут cookie SameSite
       href: resources/samesite-cookie-update.md
     - name: Распространенные причины неудачной отправки в магазин
       href: concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md
-    - name: Участие в документации Teams
+    - name: Улучшение документации Teams
       href: resources/teams-contributor-reference.md
 - name: Поддержка и обратная связь
   href: feedback.md
