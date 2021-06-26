@@ -1,39 +1,41 @@
 ---
 title: Использование модулей задач в Microsoft Teams ботах
-description: Использование модулей задач с Microsoft Teams ботами, включая карты Bot Framework, адаптивные карты и глубокие ссылки
+description: Использование модулей задач с Microsoft Teams ботами, включая карты Bot Framework, адаптивные карты и глубокие ссылки.
 localization_priority: Normal
 ms.topic: how-to
 keywords: модули задач групп ботов
-ms.openlocfilehash: bfaf3dfe791c1736aeb418e2689e513908f04534
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 5d9aa2b651a4c99cee75aada62a4d1176a589d79
+ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566572"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53140312"
 ---
-# <a name="using-task-modules-from-microsoft-teams-bots"></a><span data-ttu-id="1f836-104">Использование модулей задач из Microsoft Teams ботов</span><span class="sxs-lookup"><span data-stu-id="1f836-104">Using task modules from Microsoft Teams bots</span></span>
+# <a name="use-task-modules-from-bots"></a><span data-ttu-id="8bc22-104">Использование модулей задач от ботов</span><span class="sxs-lookup"><span data-stu-id="8bc22-104">Use task modules from bots</span></span>
 
-<span data-ttu-id="1f836-105">Модули задач можно вызывать из Microsoft Teams с помощью кнопок на адаптивных картах и картах Bot Framework (Hero, Thumbnail и Office 365 Connector).</span><span class="sxs-lookup"><span data-stu-id="1f836-105">Task modules can be invoked from Microsoft Teams bots using buttons on Adaptive cards and Bot Framework cards (Hero, Thumbnail, and Office 365 Connector).</span></span> <span data-ttu-id="1f836-106">Модули задач часто являются более удобными для пользователей, чем несколько этапов беседы, в которых вы как разработчик должны отслеживать состояние бота и позволять пользователю прерывать или отменять последовательность.</span><span class="sxs-lookup"><span data-stu-id="1f836-106">Task modules are often a better user experience than multiple conversation steps where you as a developer have to keep track of bot state and allow the user to interrupt/cancel the sequence.</span></span>
+<span data-ttu-id="8bc22-105">Модули задач могут вызываться из Microsoft Teams с помощью кнопок на картах Adaptive Cards и Bot Framework, которые является героем, эскизом и Office 365 соединителю.</span><span class="sxs-lookup"><span data-stu-id="8bc22-105">Task modules can be invoked from Microsoft Teams bots using buttons on Adaptive Cards and Bot Framework cards that is hero, thumbnail, and Office 365 Connector.</span></span> <span data-ttu-id="8bc22-106">Модули задач часто являются более удобными для пользователей, чем несколько этапов беседы.</span><span class="sxs-lookup"><span data-stu-id="8bc22-106">Task modules are often a better user experience than multiple conversation steps.</span></span> <span data-ttu-id="8bc22-107">Отслеживайте состояние бота и разрешите пользователю прерывать или отменять последовательность.</span><span class="sxs-lookup"><span data-stu-id="8bc22-107">Keep track of bot state and allow the user to interrupt or cancel the sequence.</span></span>
 
-<span data-ttu-id="1f836-107">Существует два способа ссылки на модули задач:</span><span class="sxs-lookup"><span data-stu-id="1f836-107">There are two ways of invoking task modules:</span></span>
+<span data-ttu-id="8bc22-108">Существует два способа ссылки на модули задач:</span><span class="sxs-lookup"><span data-stu-id="8bc22-108">There are two ways of invoking task modules:</span></span>
 
-* <span data-ttu-id="1f836-108">**Новый вид сообщения вызова `task/fetch` .**</span><span class="sxs-lookup"><span data-stu-id="1f836-108">**A new kind of invoke message `task/fetch`.**</span></span> <span data-ttu-id="1f836-109">Использование действия карты для карт Bot Framework или действия карт для адаптивных карт с модулем задач (URL-адрес или адаптивная карта) извлекается динамически из `invoke` [](~/task-modules-and-cards/cards/cards-actions.md#invoke) `Action.Submit` [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) `task/fetch` вашего бота.</span><span class="sxs-lookup"><span data-stu-id="1f836-109">Using the `invoke` [card action](~/task-modules-and-cards/cards/cards-actions.md#invoke) for Bot Framework cards, or the `Action.Submit` [card action](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) for Adaptive cards, with `task/fetch`, the task module (either a URL or an Adaptive card) is fetched dynamically from your bot.</span></span>
-* <span data-ttu-id="1f836-110">**URL-адреса глубоких ссылок.**</span><span class="sxs-lookup"><span data-stu-id="1f836-110">**Deep link URLs.**</span></span> <span data-ttu-id="1f836-111">Используя [синтаксис](~/task-modules-and-cards/what-are-task-modules.md#task-module-deep-link-syntax)глубокой ссылки для модулей задач, вы можете использовать действие карты для карт Bot Framework или действие карты для адаптивных карт `openUrl` [](~/task-modules-and-cards/cards/cards-actions.md#openurl) `Action.OpenUrl` [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) соответственно.</span><span class="sxs-lookup"><span data-stu-id="1f836-111">Using the [deep link syntax for task modules](~/task-modules-and-cards/what-are-task-modules.md#task-module-deep-link-syntax), you can use the `openUrl` [card action](~/task-modules-and-cards/cards/cards-actions.md#openurl) for Bot Framework cards or the `Action.OpenUrl` [card action](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) for Adaptive cards, respectively.</span></span> <span data-ttu-id="1f836-112">С URL-адресами глубоких ссылок URL-адрес модуля задач или корпус адаптивной карты, очевидно, известен заранее, избегая обратного пути сервера по отношению к `task/fetch` .</span><span class="sxs-lookup"><span data-stu-id="1f836-112">With deep link URLs, the task module URL or Adaptive card body is obviously known in advance, avoiding a server round-trip relative to `task/fetch`.</span></span>
+* <span data-ttu-id="8bc22-109">Новый вид сообщения вызова: динамически извлекается из бота действие карты для карт Bot Framework или действие карты для адаптивных карт с url-адресом или адаптивной `task/fetch` `invoke` [](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke) `Action.Submit` [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) `task/fetch` картой.</span><span class="sxs-lookup"><span data-stu-id="8bc22-109">A new kind of invoke message `task/fetch`: Using the `invoke` [card action](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke) for Bot Framework cards, or the `Action.Submit` [card action](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) for Adaptive cards, with `task/fetch`, task module either a URL or an Adaptive Card, is fetched dynamically from your bot.</span></span>
+* <span data-ttu-id="8bc22-110">URL-адреса глубоких ссылок. Используя синтаксис глубокой ссылки для модулей [задач,](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-deep-link-syntax)вы можете использовать действие карты для карт Bot Framework или действие карты для адаптивных карт `openUrl` [](~/task-modules-and-cards/cards/cards-actions.md#action-type-openurl) `Action.OpenUrl` [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) соответственно.</span><span class="sxs-lookup"><span data-stu-id="8bc22-110">Deep link URLs: Using the [deep link syntax for task modules](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-deep-link-syntax), you can use the `openUrl` [card action](~/task-modules-and-cards/cards/cards-actions.md#action-type-openurl) for Bot Framework cards or the `Action.OpenUrl` [card action](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) for Adaptive Cards, respectively.</span></span> <span data-ttu-id="8bc22-111">С url-адресами глубоких ссылок URL-адрес модуля задач или корпус адаптивной карты уже известен, чтобы избежать обратного пути сервера по отношению к `task/fetch` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-111">With deep link URLs, the task module URL or Adaptive Card body is already known to avoid a server round-trip relative to `task/fetch`.</span></span>
 
->[!IMPORTANT]
-><span data-ttu-id="1f836-113">Чтобы обеспечить безопасность сообщений, каждый из них должен реализовать `url` `fallbackUrl` протокол шифрования HTTPS.</span><span class="sxs-lookup"><span data-stu-id="1f836-113">To ensure secure communications, each `url` and `fallbackUrl` must implement the HTTPS encryption protocol.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="8bc22-112">Каждый `url` из них должен реализовать протокол `fallbackUrl` шифрования HTTPS.</span><span class="sxs-lookup"><span data-stu-id="8bc22-112">Each `url` and `fallbackUrl` must implement the HTTPS encryption protocol.</span></span>
 
-## <a name="invoking-a-task-module-through-taskfetch"></a><span data-ttu-id="1f836-114">Ссылки на модуль задач через задачу/извлечение</span><span class="sxs-lookup"><span data-stu-id="1f836-114">Invoking a task module through task/fetch</span></span>
+<span data-ttu-id="8bc22-113">В следующем разделе приводится подробная информация об отзове модуля задач с помощью `task/fetch` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-113">The next section provides details on invoking a task module using `task/fetch`.</span></span>
 
-<span data-ttu-id="1f836-115">Когда объект действия карточки или инициализирован надлежащим образом (подробнее см. ниже), когда пользователь нажимает кнопку, сообщение отправляется `value` `invoke` `Action.Submit` `invoke` боту.</span><span class="sxs-lookup"><span data-stu-id="1f836-115">When the `value` object of the `invoke` card action or `Action.Submit` is initialized in the proper way (explained in more detail below), when a user presses the button an `invoke` message is sent to the bot.</span></span> <span data-ttu-id="1f836-116">В ответе HTTP на сообщение в объект оболочки встроен объект `invoke` [TaskInfo,](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) который Teams для отображения модуля задач.</span><span class="sxs-lookup"><span data-stu-id="1f836-116">In the HTTP response to the `invoke` message, there's a [TaskInfo object](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) embedded in a wrapper object, which Teams uses to display the task module.</span></span>
+## <a name="invoke-a-task-module-using-taskfetch"></a><span data-ttu-id="8bc22-114">Вызов модуля задач с помощью задачи/извлечение</span><span class="sxs-lookup"><span data-stu-id="8bc22-114">Invoke a task module using task/fetch</span></span>
 
-![задача/извлечение запроса/ответа](~/assets/images/task-module/task-module-invoke-request-response.png)
+<span data-ttu-id="8bc22-115">Когда объект действия карты или инициализирован и когда пользователь выбирает кнопку, сообщение `value` `invoke` `Action.Submit` `invoke` отправляется боту.</span><span class="sxs-lookup"><span data-stu-id="8bc22-115">When the `value` object of the `invoke` card action or `Action.Submit` is initialized and when a user selects the button, an `invoke` message is sent to the bot.</span></span> <span data-ttu-id="8bc22-116">В ответе HTTP на сообщение в объекте оболочки встроен объект `invoke` [TaskInfo,](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) который Teams для отображения модуля задач.</span><span class="sxs-lookup"><span data-stu-id="8bc22-116">In the HTTP response to the `invoke` message, there is a [TaskInfo object](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) embedded in a wrapper object, which Teams uses to display the task module.</span></span>
 
-<span data-ttu-id="1f836-118">Рассмотрим каждый шаг более подробно:</span><span class="sxs-lookup"><span data-stu-id="1f836-118">Let's look at each step in a bit more detail:</span></span>
+![запрос или ответ на задачу/извлечение](~/assets/images/task-module/task-module-invoke-request-response.png)
 
-1. <span data-ttu-id="1f836-119">В этом примере показана карта Bot Framework Hero с действием карточки `invoke` ["Купить".](~/task-modules-and-cards/cards/cards-actions.md#invoke)</span><span class="sxs-lookup"><span data-stu-id="1f836-119">This example shows a Bot Framework Hero card with a "Buy" `invoke` [card action](~/task-modules-and-cards/cards/cards-actions.md#invoke).</span></span> <span data-ttu-id="1f836-120">Значение свойства — остальная часть объекта может быть `type` `task/fetch` `value` любой, что вам нравится.</span><span class="sxs-lookup"><span data-stu-id="1f836-120">The value of the `type` property is `task/fetch` - the rest of the `value` object can be whatever you like.</span></span>
-1. <span data-ttu-id="1f836-121">Бот получает сообщение `invoke` HTTP POST.</span><span class="sxs-lookup"><span data-stu-id="1f836-121">The bot receives the `invoke` HTTP POST message.</span></span>
-1. <span data-ttu-id="1f836-122">Бот создает объект отклика и возвращает его в тело ответа POST с кодом ответа HTTP 200.</span><span class="sxs-lookup"><span data-stu-id="1f836-122">The bot creates a response object and returns it in the body of the POST response with an HTTP 200 response code.</span></span> <span data-ttu-id="1f836-123">Схема ответов описана ниже в обсуждении [задачи/отправки,](#the-flexibility-of-tasksubmit)но теперь важно помнить, что тело ответа HTTP содержит объект [TaskInfo,](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) встроенный в объект оболочки.</span><span class="sxs-lookup"><span data-stu-id="1f836-123">The schema for responses is described [below in the discussion on task/submit](#the-flexibility-of-tasksubmit), but the important thing to remember now is that the body of the HTTP response contains a [TaskInfo object](~/task-modules-and-cards/what-are-task-modules.md#the-taskinfo-object) embedded in a wrapper object.</span></span> <span data-ttu-id="1f836-124">Пример.</span><span class="sxs-lookup"><span data-stu-id="1f836-124">For example:</span></span>
+<span data-ttu-id="8bc22-118">Следующие действия предоставляют модуль задач вызова с помощью задачи/извлечение:</span><span class="sxs-lookup"><span data-stu-id="8bc22-118">The following steps provides the invoke task module using task/fetch:</span></span>
+
+1. <span data-ttu-id="8bc22-119">На этом изображении показана карта героя Bot Framework с действием **Buy** `invoke` [card.](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke)</span><span class="sxs-lookup"><span data-stu-id="8bc22-119">This image shows a Bot Framework hero card with a **Buy** `invoke` [card action](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke).</span></span> <span data-ttu-id="8bc22-120">Значение свойства `type` и `task/fetch` остальной объект `value` может быть по вашему выбору.</span><span class="sxs-lookup"><span data-stu-id="8bc22-120">The value of the `type` property is `task/fetch` and the rest of the `value` object can be of your choice.</span></span>
+1. <span data-ttu-id="8bc22-121">Бот получает сообщение `invoke` HTTP POST.</span><span class="sxs-lookup"><span data-stu-id="8bc22-121">The bot receives the `invoke` HTTP POST message.</span></span>
+1. <span data-ttu-id="8bc22-122">Бот создает объект отклика и возвращает его в тело ответа POST с кодом ответа HTTP 200.</span><span class="sxs-lookup"><span data-stu-id="8bc22-122">The bot creates a response object and returns it in the body of the POST response with an HTTP 200 response code.</span></span> <span data-ttu-id="8bc22-123">Дополнительные сведения о схеме ответов см. в обсуждении [задачи/отправки.](#the-flexibility-of-tasksubmit)</span><span class="sxs-lookup"><span data-stu-id="8bc22-123">For more information on schema for responses, see [the discussion on task/submit](#the-flexibility-of-tasksubmit).</span></span> <span data-ttu-id="8bc22-124">В следующем коде приводится пример корпуса ответа HTTP, содержашего объект [TaskInfo,](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) встроенный в объект оболочки:</span><span class="sxs-lookup"><span data-stu-id="8bc22-124">The following code provides an example of body of the HTTP response that contains a [TaskInfo object](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) embedded in a wrapper object:</span></span>
 
     ```json
     {
@@ -50,193 +52,166 @@ ms.locfileid: "52566572"
     }
     ```
 
-    <span data-ttu-id="1f836-125">Событие и его ответ для ботов похожи концептуально на функцию клиента `task/fetch` `microsoftTeams.tasks.startTask()` SDK.</span><span class="sxs-lookup"><span data-stu-id="1f836-125">The `task/fetch` event and its response for bots is similar, conceptually, to the `microsoftTeams.tasks.startTask()` function in the client SDK.</span></span>
-1. <span data-ttu-id="1f836-126">Microsoft Teams отображает модуль задач.</span><span class="sxs-lookup"><span data-stu-id="1f836-126">Microsoft Teams displays the task module.</span></span>
+    <span data-ttu-id="8bc22-125">Событие и его ответ для ботов аналогичны функции `task/fetch` `microsoftTeams.tasks.startTask()` в клиентской SDK.</span><span class="sxs-lookup"><span data-stu-id="8bc22-125">The `task/fetch` event and its response for bots is similar to the `microsoftTeams.tasks.startTask()` function in the client SDK.</span></span>
 
-## <a name="submitting-the-result-of-a-task-module"></a><span data-ttu-id="1f836-127">Отправка результатов модуля задач</span><span class="sxs-lookup"><span data-stu-id="1f836-127">Submitting the result of a task module</span></span>
+1. <span data-ttu-id="8bc22-126">Microsoft Teams отображает модуль задач.</span><span class="sxs-lookup"><span data-stu-id="8bc22-126">Microsoft Teams displays the task module.</span></span>
 
-<span data-ttu-id="1f836-128">Когда пользователь завершает работу с модулем задач, отправка результата [](~/task-modules-and-cards/task-modules/task-modules-tabs.md#example-submitting-the-result-of-a-task-module)обратно боту похожа на то, как он работает со вкладками, но есть несколько различий, поэтому он также описан здесь.</span><span class="sxs-lookup"><span data-stu-id="1f836-128">When the user is finished with the task module, submitting the result back to the bot is similar [to the way it works with tabs](~/task-modules-and-cards/task-modules/task-modules-tabs.md#example-submitting-the-result-of-a-task-module), but there are a few differences, so it's described here too.</span></span>
+<span data-ttu-id="8bc22-127">В следующем разделе представлены сведения о отправке результатов модуля задач.</span><span class="sxs-lookup"><span data-stu-id="8bc22-127">The next section provides details on submitting the result of a task module.</span></span>
 
-* <span data-ttu-id="1f836-129">**HTML/JavaScript ( `TaskInfo.url` )**.</span><span class="sxs-lookup"><span data-stu-id="1f836-129">**HTML/JavaScript (`TaskInfo.url`)**.</span></span> <span data-ttu-id="1f836-130">После проверки того, что вошел пользователь, вы вызываете функцию SDK (далее она называется для целей `microsoftTeams.tasks.submitTask()` `submitTask()` читаемости).</span><span class="sxs-lookup"><span data-stu-id="1f836-130">Once you've validated what the user has entered, you call the `microsoftTeams.tasks.submitTask()` SDK function (referred to hereafter as `submitTask()` for readability purposes).</span></span> <span data-ttu-id="1f836-131">Вы можете звонить без параметров, если Teams хотите закрыть модуль задач, но большую часть времени вам нужно будет передать объект или строку `submitTask()` в `submitHandler` ваш .</span><span class="sxs-lookup"><span data-stu-id="1f836-131">You can call `submitTask()` without any parameters if you just want Teams to close the task module, but most of the time you'll want to pass an object or a string to your `submitHandler`.</span></span> <span data-ttu-id="1f836-132">Просто передай его в качестве первого `result` параметра.</span><span class="sxs-lookup"><span data-stu-id="1f836-132">Simply pass it as the first parameter, `result`.</span></span> <span data-ttu-id="1f836-133">Teams будет вызывать : будет и `submitHandler` `err` будет `null` `result` объектом или строкой, `submitTask()` которую вы передали .</span><span class="sxs-lookup"><span data-stu-id="1f836-133">Teams will invoke `submitHandler`: `err` will be `null` and `result` will be the object/string you passed to `submitTask()`.</span></span> <span data-ttu-id="1f836-134">Если вы вызываете с параметром, необходимо передать или массив строк: это позволяет Teams проверить, что приложение, отправляя результат, является тем же, что вызывалось в модуль `submitTask()` `result`  `appId` `appId` задач.</span><span class="sxs-lookup"><span data-stu-id="1f836-134">If you do call `submitTask()` with a `result` parameter, you **must** pass an `appId` or an array of `appId` strings: this allows Teams to validate that the app sending the result is the same one which invoked the task module.</span></span> <span data-ttu-id="1f836-135">Ваш бот получит `task/submit` сообщение, в том `result` числе, как описано [ниже](#payload-of-taskfetch-and-tasksubmit-messages).</span><span class="sxs-lookup"><span data-stu-id="1f836-135">Your bot will receive a `task/submit` message including `result` as described [below](#payload-of-taskfetch-and-tasksubmit-messages).</span></span>
-* <span data-ttu-id="1f836-136">**Адаптивная карта ( `TaskInfo.card` )**.</span><span class="sxs-lookup"><span data-stu-id="1f836-136">**Adaptive card (`TaskInfo.card`)**.</span></span> <span data-ttu-id="1f836-137">Тело адаптивной карты (как заполнено пользователем) будет отправлено боту через сообщение, когда пользователь `task/submit` нажимает любую `Action.Submit` кнопку.</span><span class="sxs-lookup"><span data-stu-id="1f836-137">The Adaptive card body (as filled in by the user) will be sent to the bot via a `task/submit` message when the user presses any `Action.Submit` button.</span></span>
+## <a name="submit-the-result-of-a-task-module"></a><span data-ttu-id="8bc22-128">Отправка результатов модуля задач</span><span class="sxs-lookup"><span data-stu-id="8bc22-128">Submit the result of a task module</span></span>
 
-## <a name="the-flexibility-of-tasksubmit"></a><span data-ttu-id="1f836-138">Гибкость задачи/отправки</span><span class="sxs-lookup"><span data-stu-id="1f836-138">The flexibility of task/submit</span></span>
+<span data-ttu-id="8bc22-129">Когда пользователь завершает работу с модулем задач, отправка результата обратно боту аналогична тому, как он работает со вкладками.</span><span class="sxs-lookup"><span data-stu-id="8bc22-129">When the user is finished with the task module, submitting the result back to the bot is similar to the way it works with tabs.</span></span> <span data-ttu-id="8bc22-130">Дополнительные сведения [см. в примере отправки результатов модуля задач.](~/task-modules-and-cards/task-modules/task-modules-tabs.md#example-of-submitting-the-result-of-a-task-module)</span><span class="sxs-lookup"><span data-stu-id="8bc22-130">For more information, see [example of submitting the result of a task module](~/task-modules-and-cards/task-modules/task-modules-tabs.md#example-of-submitting-the-result-of-a-task-module).</span></span> <span data-ttu-id="8bc22-131">Существует несколько различий:</span><span class="sxs-lookup"><span data-stu-id="8bc22-131">There are a few differences as follows:</span></span>
 
-<span data-ttu-id="1f836-139">В предыдущем разделе вы узнали, что после завершения работы с модулем задач, вызываемом ботом, бот всегда получает `task/submit invoke` сообщение.</span><span class="sxs-lookup"><span data-stu-id="1f836-139">In the previous section, you learned that when the user finishes with a task module invoked from a bot, the bot always receives a `task/submit invoke` message.</span></span> <span data-ttu-id="1f836-140">В качестве разработчика у вас есть несколько *вариантов* ответа на `task/submit` сообщение:</span><span class="sxs-lookup"><span data-stu-id="1f836-140">As a developer, you have several options when *responding* to the `task/submit` message:</span></span>
+* <span data-ttu-id="8bc22-132">HTML или JavaScript. После проверки того, что ввел пользователь, вы вызываем функцию SDK, названную далее как для целей `TaskInfo.url` `microsoftTeams.tasks.submitTask()` `submitTask()` читаемости.</span><span class="sxs-lookup"><span data-stu-id="8bc22-132">HTML or JavaScript that is `TaskInfo.url`: Once you have validated what the user has entered, you call the `microsoftTeams.tasks.submitTask()` SDK function referred to hereafter as `submitTask()` for readability purposes.</span></span> <span data-ttu-id="8bc22-133">Вы можете позвонить без параметров, если Teams закрыть модуль задач, но необходимо передать объект или строку `submitTask()` в `submitHandler` ваш .</span><span class="sxs-lookup"><span data-stu-id="8bc22-133">You can call `submitTask()` without any parameters if you want Teams to close the task module, but you must pass an object or a string to your `submitHandler`.</span></span> <span data-ttu-id="8bc22-134">Передай его в качестве первого `result` параметра.</span><span class="sxs-lookup"><span data-stu-id="8bc22-134">Pass it as the first parameter, `result`.</span></span> <span data-ttu-id="8bc22-135">Teams вызывает , является и является объектом или строкой, которую `submitHandler` `err` вы `null` `result` передали `submitTask()` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-135">Teams invokes `submitHandler`, `err` is `null`, and `result` is the object or string you passed to `submitTask()`.</span></span> <span data-ttu-id="8bc22-136">Если вы `submitTask()` звоните с `result` параметром, необходимо передать или массив `appId` `appId` строк.</span><span class="sxs-lookup"><span data-stu-id="8bc22-136">If you call `submitTask()` with a `result` parameter, you must pass an `appId` or an array of `appId` strings.</span></span> <span data-ttu-id="8bc22-137">Это позволяет Teams, что приложение, отправляя результат, является тем же, что вызывалось в модуль задач.</span><span class="sxs-lookup"><span data-stu-id="8bc22-137">This allows Teams to validate that the app sending the result is the same one which invoked the task module.</span></span> <span data-ttu-id="8bc22-138">Ваш бот получает `task/submit` сообщение, в том числе `result` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-138">Your bot receives a `task/submit` message including `result`.</span></span> <span data-ttu-id="8bc22-139">Дополнительные сведения см. [в тексте полезной нагрузки `task/fetch` и `task/submit` сообщений.](#payload-of-taskfetch-and-tasksubmit-messages)</span><span class="sxs-lookup"><span data-stu-id="8bc22-139">For more information, see [payload of `task/fetch` and `task/submit` messages](#payload-of-taskfetch-and-tasksubmit-messages).</span></span>
+* <span data-ttu-id="8bc22-140">Адаптивная карточка, которая является . Тело адаптивной карты, заполненное пользователем, отправляется боту через сообщение, когда пользователь выбирает `TaskInfo.card` `task/submit` любую `Action.Submit` кнопку.</span><span class="sxs-lookup"><span data-stu-id="8bc22-140">Adaptive Card that is `TaskInfo.card`: The Adaptive Card body as filled in by the user is sent to the bot through a `task/submit` message when the user selects any `Action.Submit` button.</span></span>
 
-| <span data-ttu-id="1f836-141">HTTP Body Response</span><span class="sxs-lookup"><span data-stu-id="1f836-141">HTTP Body Response</span></span>                      | <span data-ttu-id="1f836-142">Сценарий</span><span class="sxs-lookup"><span data-stu-id="1f836-142">Scenario</span></span>                                |
+<span data-ttu-id="8bc22-141">В следующем разделе приводится подробная информация о гибкости `task/submit` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-141">The next section provides details on the flexibility of `task/submit`.</span></span>
+
+## <a name="the-flexibility-of-tasksubmit"></a><span data-ttu-id="8bc22-142">Гибкость задачи/отправки</span><span class="sxs-lookup"><span data-stu-id="8bc22-142">The flexibility of task/submit</span></span>
+
+<span data-ttu-id="8bc22-143">Когда пользователь завершает работу с модулем задач, вызываемой с бота, бот всегда получает `task/submit invoke` сообщение.</span><span class="sxs-lookup"><span data-stu-id="8bc22-143">When the user finishes with a task module invoked from a bot, the bot always receives a `task/submit invoke` message.</span></span> <span data-ttu-id="8bc22-144">При ответе на сообщение у вас есть несколько `task/submit` вариантов:</span><span class="sxs-lookup"><span data-stu-id="8bc22-144">You have several options when responding to the `task/submit` message as follows:</span></span>
+
+| <span data-ttu-id="8bc22-145">Http body response</span><span class="sxs-lookup"><span data-stu-id="8bc22-145">HTTP body response</span></span>                      | <span data-ttu-id="8bc22-146">Сценарий</span><span class="sxs-lookup"><span data-stu-id="8bc22-146">Scenario</span></span>                                |
 | --------------------------------------- | --------------------------------------- |
-| <span data-ttu-id="1f836-143">Нет (игнорировать `task/submit` сообщение)</span><span class="sxs-lookup"><span data-stu-id="1f836-143">None (ignore the `task/submit` message)</span></span> | <span data-ttu-id="1f836-144">Самый простой ответ — это отсутствие ответа.</span><span class="sxs-lookup"><span data-stu-id="1f836-144">The simplest response is no response at all.</span></span> <span data-ttu-id="1f836-145">Ваш бот не обязан отвечать, когда пользователь завершает работу с модулем задач.</span><span class="sxs-lookup"><span data-stu-id="1f836-145">Your bot is not required to respond when the user is finished with the task module.</span></span> |
-| <pre>{<br/>  "task": {<br/>    "type": "message",<br/>    "value": "Message text"<br/>  }<br/>}</pre> | <span data-ttu-id="1f836-146">Teams будет отображаться значение в `value` всплывающее окно сообщения.</span><span class="sxs-lookup"><span data-stu-id="1f836-146">Teams will display the value of `value` in a popup message box.</span></span> |
-| <pre>{<br/>  "task": {<br/>    "type": "continue",<br/>    "value": &lt;TaskInfo object&gt;<br/>  }<br/>}</pre> | <span data-ttu-id="1f836-147">Позволяет "цепить" последовательности адаптивных карт вместе в мастере и многошаговом опытом.</span><span class="sxs-lookup"><span data-stu-id="1f836-147">Allows you to "chain" sequences of Adaptive cards together in a wizard/multi-step experience.</span></span> <span data-ttu-id="1f836-148">_Обратите внимание, что цепочка адаптивных карт в последовательность является расширенным сценарием и не задокументирована здесь. Однако Node.js пример приложения поддерживает его, и его работа задокументирована в [README.md файле.](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs#implementation-notes)_</span><span class="sxs-lookup"><span data-stu-id="1f836-148">_Note that chaining Adaptive cards into a sequence is an advanced scenario and not documented here. The Node.js sample app supports it, however, and how it works is documented in [its README.md file](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs#implementation-notes)._</span></span> |
-
-## <a name="payload-of-taskfetch-and-tasksubmit-messages"></a><span data-ttu-id="1f836-149">Полезное количество задач/извлечений и задач/отправки сообщений</span><span class="sxs-lookup"><span data-stu-id="1f836-149">Payload of task/fetch and task/submit messages</span></span>
-
-<span data-ttu-id="1f836-150">В этом разделе определяется схема получения ботом объекта `task/fetch` `task/submit` или объекта Bot `Activity` Framework.</span><span class="sxs-lookup"><span data-stu-id="1f836-150">This section defines the schema of what your bot receives when it receives a `task/fetch` or `task/submit` Bot Framework `Activity` object.</span></span> <span data-ttu-id="1f836-151">Ниже отображаются важные верхнего уровня:</span><span class="sxs-lookup"><span data-stu-id="1f836-151">The important top-level appear below:</span></span>
-
-| <span data-ttu-id="1f836-152">Свойство</span><span class="sxs-lookup"><span data-stu-id="1f836-152">Property</span></span> | <span data-ttu-id="1f836-153">Описание</span><span class="sxs-lookup"><span data-stu-id="1f836-153">Description</span></span>                          |
-| -------- | ------------------------------------ |
-| `type`   | <span data-ttu-id="1f836-154">Всегда будет `invoke`</span><span class="sxs-lookup"><span data-stu-id="1f836-154">Will always be `invoke`</span></span>              |
-| `name`   | <span data-ttu-id="1f836-155">Либо, `task/fetch` либо `task/submit`</span><span class="sxs-lookup"><span data-stu-id="1f836-155">Either `task/fetch` or `task/submit`</span></span> |
-| `value`  | <span data-ttu-id="1f836-156">Полезной нагрузки, определенной разработчиком.</span><span class="sxs-lookup"><span data-stu-id="1f836-156">The developer-defined payload.</span></span> <span data-ttu-id="1f836-157">Обычно структура объекта отражает то, что было отправлено из `value` Teams.</span><span class="sxs-lookup"><span data-stu-id="1f836-157">Normally the structure of the `value` object mirrors what was sent from Teams.</span></span> <span data-ttu-id="1f836-158">В этом случае, однако, это другое, потому что мы хотим поддерживать динамические извлечение () как из Bot Framework ( ) и адаптивные действия карты ( ), и нам нужен способ общаться Teams с ботом в дополнение к тому, что было включено `task/fetch` `value` в `Action.Submit` `data` `context` `value` / `data` .</span><span class="sxs-lookup"><span data-stu-id="1f836-158">In this case, however, it's different because we want to support dynamic fetch (`task/fetch`) from both Bot Framework (`value`) and Adaptive card `Action.Submit` actions (`data`), and we need a way to communicate Teams `context` to the bot in addition to what was included in `value`/`data`.</span></span><br/><br/><span data-ttu-id="1f836-159">Мы объединяя эти два объекта в родительский объект:</span><span class="sxs-lookup"><span data-stu-id="1f836-159">We do this by combining the two into a parent object:</span></span><br/><br/><pre>{<br/>  "context": {<br/>    "theme": "default" &vert; "dark" &vert; "contrast",<br/>  },<br/>  "data": [value field from Bot Framework card] &vert; [data field from Adaptive Card] <br/>}</pre>  |
-
-## <a name="example-receiving-and-responding-to-taskfetch-and-tasksubmit-invoke-messages---nodejs"></a><span data-ttu-id="1f836-160">Пример: получение и реагирование на задачу/получение и отправку сообщений вызовов — Node.js</span><span class="sxs-lookup"><span data-stu-id="1f836-160">Example: Receiving and responding to task/fetch and task/submit invoke messages - Node.js</span></span>
+| <span data-ttu-id="8bc22-147">Никто не игнорирует `task/submit` сообщение</span><span class="sxs-lookup"><span data-stu-id="8bc22-147">None ignore the `task/submit` message</span></span> | <span data-ttu-id="8bc22-148">Самый простой ответ — это отсутствие ответа.</span><span class="sxs-lookup"><span data-stu-id="8bc22-148">The simplest response is no response at all.</span></span> <span data-ttu-id="8bc22-149">Ваш бот не обязан отвечать, когда пользователь завершает работу с модулем задач.</span><span class="sxs-lookup"><span data-stu-id="8bc22-149">Your bot is not required to respond when the user is finished with the task module.</span></span> |
+| <pre>{<br/>  "task": {<br/>    "type": "message",<br/>    "value": "Message text"<br/>  }<br/>}</pre> | <span data-ttu-id="8bc22-150">Teams отображает значение в `value` всплывающее окно сообщений.</span><span class="sxs-lookup"><span data-stu-id="8bc22-150">Teams displays the value of `value` in a pop-up message box.</span></span> |
+| <pre>{<br/>  "task": {<br/>    "type": "continue",<br/>    "value": &lt;TaskInfo object&gt;<br/>  }<br/>}</pre> | <span data-ttu-id="8bc22-151">Позволяет сцеплять последовательности адаптивных карт в мастере или многошаговом опытом.</span><span class="sxs-lookup"><span data-stu-id="8bc22-151">Allows you to chain sequences of Adaptive Cards together in a wizard or multi-step experience.</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="1f836-161">Пример кода, приведенного ниже, был изменен между техническим предварительным просмотром и окончательным выпуском этой функции: схема запроса изменена, чтобы следовать за тем, что было задокументировано `task/fetch` [в предыдущем разделе](#payload-of-taskfetch-and-tasksubmit-messages).</span><span class="sxs-lookup"><span data-stu-id="1f836-161">The sample code below was modified between Technical Preview and final release of this feature: the schema of the `task/fetch` request changed to follow what was [documented in the previous section](#payload-of-taskfetch-and-tasksubmit-messages).</span></span> <span data-ttu-id="1f836-162">То есть документация была правильной, но реализация не была.</span><span class="sxs-lookup"><span data-stu-id="1f836-162">That is, the documentation was correct but the implementation was not.</span></span> <span data-ttu-id="1f836-163">Ниже приведены `// for Technical Preview [...]` комментарии к измененным комментариям.</span><span class="sxs-lookup"><span data-stu-id="1f836-163">See the `// for Technical Preview [...]` comments below for what changed.</span></span>
+> <span data-ttu-id="8bc22-152">Цепочка адаптивных карт в последовательность — это расширенный сценарий.</span><span class="sxs-lookup"><span data-stu-id="8bc22-152">Chaining Adaptive Cards into a sequence is an advanced scenario.</span></span> <span data-ttu-id="8bc22-153">Пример Node.js поддерживает его.</span><span class="sxs-lookup"><span data-stu-id="8bc22-153">The Node.js sample app supports it.</span></span> <span data-ttu-id="8bc22-154">Дополнительные сведения см. [в Microsoft Teams модуля задач Node.js. ](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs#implementation-notes)</span><span class="sxs-lookup"><span data-stu-id="8bc22-154">For more information, see [Microsoft Teams task module Node.js](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs#implementation-notes).</span></span>
+
+<span data-ttu-id="8bc22-155">В следующем разделе приводится подробная информация о полезной нагрузке `task/fetch` `task/submit` и сообщениях.</span><span class="sxs-lookup"><span data-stu-id="8bc22-155">The next section provides details on payload of `task/fetch` and `task/submit` messages.</span></span>
+
+## <a name="payload-of-taskfetch-and-tasksubmit-messages"></a><span data-ttu-id="8bc22-156">Полезное количество задач/извлечений и задач/отправки сообщений</span><span class="sxs-lookup"><span data-stu-id="8bc22-156">Payload of task/fetch and task/submit messages</span></span>
+
+<span data-ttu-id="8bc22-157">В этом разделе определяется схема получения ботом объекта `task/fetch` `task/submit` или объекта Bot `Activity` Framework.</span><span class="sxs-lookup"><span data-stu-id="8bc22-157">This section defines the schema of what your bot receives when it receives a `task/fetch` or `task/submit` Bot Framework `Activity` object.</span></span> <span data-ttu-id="8bc22-158">Следующая таблица содержит свойства полезной нагрузки `task/fetch` и `task/submit` сообщений:</span><span class="sxs-lookup"><span data-stu-id="8bc22-158">The following table provides the properties of payload of `task/fetch` and `task/submit` messages:</span></span>
+
+| <span data-ttu-id="8bc22-159">Свойство</span><span class="sxs-lookup"><span data-stu-id="8bc22-159">Property</span></span> | <span data-ttu-id="8bc22-160">Описание</span><span class="sxs-lookup"><span data-stu-id="8bc22-160">Description</span></span>                          |
+| -------- | ------------------------------------ |
+| `type`   | <span data-ttu-id="8bc22-161">Всегда `invoke` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-161">Is always `invoke`.</span></span>           |
+| `name`   | <span data-ttu-id="8bc22-162">Является либо `task/fetch` `task/submit` или .</span><span class="sxs-lookup"><span data-stu-id="8bc22-162">Is either `task/fetch` or `task/submit`.</span></span> |
+| `value`  | <span data-ttu-id="8bc22-163">Является ли полезной нагрузка, определяемая разработчиком.</span><span class="sxs-lookup"><span data-stu-id="8bc22-163">Is the developer-defined payload.</span></span> <span data-ttu-id="8bc22-164">Структура объекта такая же, как и то, что отправляется из `value` Teams.</span><span class="sxs-lookup"><span data-stu-id="8bc22-164">The structure of the `value` object is the same as what is sent from Teams.</span></span> <span data-ttu-id="8bc22-165">Однако в этом случае все по-другому.</span><span class="sxs-lookup"><span data-stu-id="8bc22-165">In this case, however, it is different.</span></span> <span data-ttu-id="8bc22-166">Она требует поддержки динамических извлечений, как из Bot Framework, то есть, так и из действий `task/fetch` `value` адаптивной `Action.Submit` карты, то есть `data` .</span><span class="sxs-lookup"><span data-stu-id="8bc22-166">It requires support for dynamic fetch that is `task/fetch` from both Bot Framework, which is `value` and Adaptive Card `Action.Submit` actions, which is `data`.</span></span> <span data-ttu-id="8bc22-167">Кроме того, что включено или включено в Teams, требуется способ связи Teams с `context` `value` `data` ботом.</span><span class="sxs-lookup"><span data-stu-id="8bc22-167">A way to communicate Teams `context` to the bot is required in addition to what is included in `value` or `data`.</span></span><br/><br/><span data-ttu-id="8bc22-168">Объединяйте значение и "данные" в родительский объект:</span><span class="sxs-lookup"><span data-stu-id="8bc22-168">Combine 'value' and 'data' into a parent object:</span></span><br/><br/><pre>{<br/>  "context": {<br/>    "theme": "default" &vert; "dark" &vert; "contrast",<br/>  },<br/>  "data": [value field from Bot Framework card] &vert; [data field from Adaptive Card] <br/>}</pre>  |
+
+<span data-ttu-id="8bc22-169">В следующем разделе приводится пример получения и ответа на сообщения в `task/fetch` `task/submit` Node.js.</span><span class="sxs-lookup"><span data-stu-id="8bc22-169">The next section provides an example of receiving and responding to `task/fetch` and `task/submit` invoke messages in Node.js.</span></span>
+
+## <a name="example-of-taskfetch-and-tasksubmit-invoke-messages-in-nodejs-and-c"></a><span data-ttu-id="8bc22-170">Пример задач/извлечений и задач/отправки ссылок на сообщения в Node.js и C #</span><span class="sxs-lookup"><span data-stu-id="8bc22-170">Example of task/fetch and task/submit invoke messages in Node.js and C#</span></span>
+
+# <a name="nodejs"></a>[<span data-ttu-id="8bc22-171">Node.js</span><span class="sxs-lookup"><span data-stu-id="8bc22-171">Node.js</span></span>](#tab/nodejs)
 
 ```typescript
-// Handle requests and responses for a "Custom Form" and an "Adaptive card" task module.
-// Assumes request is coming from an Adaptive card Action.Submit button that has a "taskModule" property indicating what to invoke
-private async onInvoke(event: builder.IEvent, cb: (err: Error, body: any, status?: number) => void): Promise<void> {
-    let invokeType = (event as any).name;
-    let invokeValue = (event as any).value;
-    if (invokeType === undefined) {
-        invokeType = null;
+handleTeamsTaskModuleFetch(context, taskModuleRequest) {
+    // Called when the user selects an options from the displayed HeroCard or
+    // AdaptiveCard.  The result is the action to perform.
+
+    const cardTaskFetchValue = taskModuleRequest.data.data;
+    var taskInfo = {}; // TaskModuleTaskInfo
+
+    if (cardTaskFetchValue === TaskModuleIds.YouTube) {
+        // Display the YouTube.html page
+        taskInfo.url = taskInfo.fallbackUrl = this.baseUrl + '/' + TaskModuleIds.YouTube + '.html';
+        this.setTaskInfo(taskInfo, TaskModuleUIConstants.YouTube);
+    } else if (cardTaskFetchValue === TaskModuleIds.CustomForm) {
+        // Display the CustomForm.html page, and post the form data back via
+        // handleTeamsTaskModuleSubmit.
+        taskInfo.url = taskInfo.fallbackUrl = this.baseUrl + '/' + TaskModuleIds.CustomForm + '.html';
+        this.setTaskInfo(taskInfo, TaskModuleUIConstants.CustomForm);
+    } else if (cardTaskFetchValue === TaskModuleIds.AdaptiveCard) {
+        // Display an AdaptiveCard to prompt user for text, and post it back via
+        // handleTeamsTaskModuleSubmit.
+        taskInfo.card = this.createAdaptiveCardAttachment();
+        this.setTaskInfo(taskInfo, TaskModuleUIConstants.AdaptiveCard);
     }
-    switch (invokeType) {
-        case "task/fetch": {
-            if (invokeValue !== undefined && invokeValue.data.taskModule === "customform") { // for Technical Preview, was invokeValue.taskModule
-                // Return the specified task module response to the bot
-                let fetchTemplate: any = {
-                    "task": {
-                        "type": "continue",
-                        "value": {
-                            "title": "Custom Form",
-                            "height": 510,
-                            "width": 430,
-                            "fallbackUrl": "https://contoso.com/teamsapp/customform",
-                            "url": "https://contoso.com/teamsapp/customform",
-                        }
-                    }
-                };
-                cb(null, fetchTemplate, 200);
-            };
-            if (invokeValue !== undefined && invokeValue.data.taskModule === "adaptivecard") { // for Technical Preview, was invokeValue.taskModule
-                let adaptiveCard = {
-                    "type": "AdaptiveCard",
-                    "body": [
-                        {
-                            "type": "TextBlock",
-                            "text": "Here is a ninja cat:"
-                        },
-                        {
-                            "type": "Image",
-                            "url": "http://adaptivecards.io/content/cats/1.png",
-                            "size": "Medium"
-                        }
-                    ],
-                    "version": "1.0"
-                };
-                // Return the specified task module response to the bot
-                let fetchTemplate: any = {
-                    "task": {
-                        "type": "continue",
-                        "value": {
-                            "title": "Ninja Cat",
-                            "height": "small",
-                            "width": "small",
-                            "card": {
-                                contentType: "application/vnd.microsoft.card.adaptive",
-                                content: adaptiveCard,
-                            }
-                        }
-                    }
-                };
-                cb(null, fetchTemplate, 200);
-            };
-            break;
+
+    return TaskModuleResponseFactory.toTaskModuleResponse(taskInfo);
+}
+
+async handleTeamsTaskModuleSubmit(context, taskModuleRequest) {
+    // Called when data is being returned from the selected option (see `handleTeamsTaskModuleFetch').
+
+    // Echo the users input back.  In a production bot, this is where you'd add behavior in
+    // response to the input.
+    await context.sendActivity(MessageFactory.text('handleTeamsTaskModuleSubmit: ' + JSON.stringify(taskModuleRequest.data)));
+
+    // Return TaskModuleResponse
+    return {
+        // TaskModuleMessageResponse
+        task: {
+            type: 'message',
+            value: 'Thanks!'
         }
-        case "task/submit": {
-            if (invokeValue.data !== undefined) {
-                // It's a valid task module response
-                let submitResponse: any = {
-                    "task": {
-                        "type": "message",
-                        "value": "Task complete!",
-                    }
-                };
-                cb(null, fetchTemplates.submitMessageResponse, 200)
-            }
-        }
-    }
+    };
+}
+
+setTaskInfo(taskInfo, uiSettings) {
+    taskInfo.height = uiSettings.height;
+    taskInfo.width = uiSettings.width;
+    taskInfo.title = uiSettings.title;
 }
 ```
 
-## <a name="example-receiving-and-responding-to-taskfetch-and-tasksubmit-invoke-messages---c"></a><span data-ttu-id="1f836-164">Пример: получение и реагирование на задачу/получение и отправку сообщений вызовов - C #</span><span class="sxs-lookup"><span data-stu-id="1f836-164">Example: Receiving and responding to task/fetch and task/submit invoke messages - C#</span></span>
-
-<span data-ttu-id="1f836-165">В C# ботах сообщения обрабатываются контроллером, `invoke` `HttpResponseMessage()` обрабатывая `Activity` сообщение.</span><span class="sxs-lookup"><span data-stu-id="1f836-165">In C# bots, `invoke` messages are processed by an `HttpResponseMessage()` controller processing an `Activity` message.</span></span> <span data-ttu-id="1f836-166">Запросы `task/fetch` и ответы — это `task/submit` JSON.</span><span class="sxs-lookup"><span data-stu-id="1f836-166">The `task/fetch` and `task/submit` requests and responses are JSON.</span></span> <span data-ttu-id="1f836-167">В C# не так удобно иметь дело с необработанных JSON, как в Node.js, поэтому для обработки сериализации в JSON и из JSON необходимы классы обертки.</span><span class="sxs-lookup"><span data-stu-id="1f836-167">In C#, it's not as convenient to deal with raw JSON as it is in Node.js, so you need wrapper classes to handle the serialization to and from JSON.</span></span> <span data-ttu-id="1f836-168">Прямой поддержки для этого в Microsoft Teams [C# SDK](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) пока нет, но вы можете увидеть пример того, как будут выглядеть эти простые классы оболочки в C# примере приложения [.](https://github.com/OfficeDev/microsoft-teams-sample-task-module-csharp/blob/master/Microsoft.Teams.Samples.TaskModule.Web/Models/TaskModel.cs)</span><span class="sxs-lookup"><span data-stu-id="1f836-168">There's no direct support for this in the Microsoft Teams [C# SDK](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) yet, but you can see an example of what these simple wrapper classes would look like in the [C# sample app](https://github.com/OfficeDev/microsoft-teams-sample-task-module-csharp/blob/master/Microsoft.Teams.Samples.TaskModule.Web/Models/TaskModel.cs).</span></span>
-
-<span data-ttu-id="1f836-169">Ниже приведен пример кода в C# для обработки и сообщений с помощью этих классов оболочки ( , ), выдержки `task/fetch` `task/submit` из `TaskInfo` `TaskEnvelope` [примера](https://github.com/OfficeDev/microsoft-teams-sample-task-module-csharp/blob/master/Microsoft.Teams.Samples.TaskModule.Web/Controllers/MessagesController.cs):</span><span class="sxs-lookup"><span data-stu-id="1f836-169">Below is example code in C# for handling `task/fetch` and `task/submit` messages using these wrapper classes (`TaskInfo`, `TaskEnvelope`), excerpted from the [sample](https://github.com/OfficeDev/microsoft-teams-sample-task-module-csharp/blob/master/Microsoft.Teams.Samples.TaskModule.Web/Controllers/MessagesController.cs):</span></span>
+# <a name="c"></a>[<span data-ttu-id="8bc22-172">C#</span><span class="sxs-lookup"><span data-stu-id="8bc22-172">C#</span></span>](#tab/csharp)
 
 ```csharp
-private HttpResponseMessage HandleInvokeMessages(Activity activity)
+protected override Task<TaskModuleResponse> OnTeamsTaskModuleFetchAsync(ITurnContext<IInvokeActivity> turnContext, TaskModuleRequest taskModuleRequest, CancellationToken cancellationToken)
 {
-    var activityValue = activity.Value.ToString();
-    if (activity.Name == "task/fetch")
-    {
-        var action = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.BotFrameworkCardValue<string>>(activityValue);
+    var asJobject = JObject.FromObject(taskModuleRequest.Data);
+    var value = asJobject.ToObject<CardTaskFetchValue<string>>()?.Data;
 
-        Models.TaskInfo taskInfo = GetTaskInfo(action.Data);
-        Models.TaskEnvelope taskEnvelope = new Models.TaskEnvelope
-        {
-            Task = new Models.Task()
-            {
-                Type = Models.TaskType.Continue,
-                TaskInfo = taskInfo
-            }
-        };
-        return Request.CreateResponse(HttpStatusCode.OK, taskEnvelope);
-    }
-    else if (activity.Name == "task/submit")
-    {
-        ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-        Activity reply = activity.CreateReply("Received = " + activity.Value.ToString());
-        connector.Conversations.ReplyToActivity(reply);
-    }
-    return new HttpResponseMessage(HttpStatusCode.Accepted);
-}
-
-// Helper function for building the TaskInfo object based on the incoming request
-private static Models.TaskInfo GetTaskInfo(string actionInfo)
-{
-    Models.TaskInfo taskInfo = new Models.TaskInfo();
-    switch (actionInfo)
+    var taskInfo = new TaskModuleTaskInfo();
+    switch (value)
     {
         case TaskModuleIds.YouTube:
-            taskInfo.Url = taskInfo.FallbackUrl = ApplicationSettings.BaseUrl + "/" + TaskModuleIds.YouTube;
+            taskInfo.Url = taskInfo.FallbackUrl = _baseUrl + "/" + TaskModuleIds.YouTube;
             SetTaskInfo(taskInfo, TaskModuleUIConstants.YouTube);
             break;
-        case TaskModuleIds.PowerApp:
-            taskInfo.Url = taskInfo.FallbackUrl = ApplicationSettings.BaseUrl + "/" + TaskModuleIds.PowerApp;
-            SetTaskInfo(taskInfo, TaskModuleUIConstants.PowerApp);
-            break;
         case TaskModuleIds.CustomForm:
-            taskInfo.Url = taskInfo.FallbackUrl = ApplicationSettings.BaseUrl + "/" + TaskModuleIds.CustomForm;
+            taskInfo.Url = taskInfo.FallbackUrl = _baseUrl + "/" + TaskModuleIds.CustomForm;
             SetTaskInfo(taskInfo, TaskModuleUIConstants.CustomForm);
             break;
         case TaskModuleIds.AdaptiveCard:
-            taskInfo.Card = AdaptiveCardHelper.GetAdaptiveCard();
+            taskInfo.Card = CreateAdaptiveCardAttachment();
             SetTaskInfo(taskInfo, TaskModuleUIConstants.AdaptiveCard);
             break;
         default:
             break;
     }
-    return taskInfo;
+
+    return Task.FromResult(taskInfo.ToTaskModuleResponse());
+}
+
+protected override async Task<TaskModuleResponse> OnTeamsTaskModuleSubmitAsync(ITurnContext<IInvokeActivity> turnContext, TaskModuleRequest taskModuleRequest, CancellationToken cancellationToken)
+{
+    var reply = MessageFactory.Text("OnTeamsTaskModuleSubmitAsync Value: " + JsonConvert.SerializeObject(taskModuleRequest));
+    await turnContext.SendActivityAsync(reply, cancellationToken);
+
+    return TaskModuleResponseFactory.CreateResponse("Thanks!");
+}
+
+private static void SetTaskInfo(TaskModuleTaskInfo taskInfo, UISettings uIConstants)
+{
+    taskInfo.Height = uIConstants.Height;
+    taskInfo.Width = uIConstants.Width;
+    taskInfo.Title = uIConstants.Title.ToString();
 }
 ```
 
-<span data-ttu-id="1f836-170">Не показана в вышеуказанной примере функция, которая задает , и свойства `SetTaskInfo()` `height` объекта для каждого `width` `title` `TaskInfo` случая.</span><span class="sxs-lookup"><span data-stu-id="1f836-170">Not shown in the above example is the `SetTaskInfo()` function, which sets the `height`, `width`, and `title` properties of the `TaskInfo` object for each case.</span></span> <span data-ttu-id="1f836-171">Вот исходный [код setTaskInfo()](https://github.com/OfficeDev/microsoft-teams-sample-task-module-csharp/blob/master/Microsoft.Teams.Samples.TaskModule.Web/Controllers/MessagesController.cs).</span><span class="sxs-lookup"><span data-stu-id="1f836-171">Here's the [source code for SetTaskInfo()](https://github.com/OfficeDev/microsoft-teams-sample-task-module-csharp/blob/master/Microsoft.Teams.Samples.TaskModule.Web/Controllers/MessagesController.cs).</span></span>
+---
 
-### <a name="bot-framework-card-actions-vs-adaptive-card-actionsubmit-actions"></a><span data-ttu-id="1f836-172">Действия карты Bot Framework против действий адаптивной карты Action.Submit</span><span class="sxs-lookup"><span data-stu-id="1f836-172">Bot Framework card actions vs. Adaptive card Action.Submit actions</span></span>
+### <a name="bot-framework-card-actions-vs-adaptive-card-actionsubmit-actions"></a><span data-ttu-id="8bc22-173">Действия карты Bot Framework против действий адаптивной карты.Отправка действий</span><span class="sxs-lookup"><span data-stu-id="8bc22-173">Bot Framework card actions vs. Adaptive Card Action.Submit actions</span></span>
 
-<span data-ttu-id="1f836-173">Схема действий карт Bot Framework немного отличается от действий адаптивной `Action.Submit` карты.</span><span class="sxs-lookup"><span data-stu-id="1f836-173">The schema for Bot Framework card actions is slightly different from Adaptive card `Action.Submit` actions.</span></span> <span data-ttu-id="1f836-174">В результате способ вызова модулей задач также немного отличается: объект содержит объект, чтобы он не мешал другим свойствам `data` `Action.Submit` `msteams` карты.</span><span class="sxs-lookup"><span data-stu-id="1f836-174">As a result, the way to invoke task modules is slightly different too: the `data` object in `Action.Submit` contains an `msteams` object so it won't interfere with other properties in the card.</span></span> <span data-ttu-id="1f836-175">В следующей таблице показан пример каждого из них:</span><span class="sxs-lookup"><span data-stu-id="1f836-175">The following table shows an example of each:</span></span>
+<span data-ttu-id="8bc22-174">Схема действий карты Bot Framework отличается от действий адаптивной карты, а способ вызова модулей задач также `Action.Submit` отличается.</span><span class="sxs-lookup"><span data-stu-id="8bc22-174">The schema for Bot Framework card actions is different from Adaptive Card `Action.Submit` actions and the way to invoke task modules is also different.</span></span> <span data-ttu-id="8bc22-175">Объект содержит объект, чтобы он не мешал другим `data` `Action.Submit` `msteams` свойствам карты.</span><span class="sxs-lookup"><span data-stu-id="8bc22-175">The `data` object in `Action.Submit` contains an `msteams` object so it does not interfere with other properties in the card.</span></span> <span data-ttu-id="8bc22-176">В следующей таблице показан пример каждого действия карты:</span><span class="sxs-lookup"><span data-stu-id="8bc22-176">The following table shows an example of each card action:</span></span>
 
-| <span data-ttu-id="1f836-176">Действие карты Bot Framework</span><span class="sxs-lookup"><span data-stu-id="1f836-176">Bot Framework card action</span></span>                              | <span data-ttu-id="1f836-177">Действие адаптивной карты Action.Submit</span><span class="sxs-lookup"><span data-stu-id="1f836-177">Adaptive card Action.Submit action</span></span>                     |
+| <span data-ttu-id="8bc22-177">Действие карты Bot Framework</span><span class="sxs-lookup"><span data-stu-id="8bc22-177">Bot Framework card action</span></span>                              | <span data-ttu-id="8bc22-178">Действие адаптивной карты.Отправка действия</span><span class="sxs-lookup"><span data-stu-id="8bc22-178">Adaptive Card Action.Submit action</span></span>                     |
 | ------------------------------------------------------ | ------------------------------------------------------ |
 | <pre>{<br/>  "type": "invoke",<br/>  "title": "Buy",<br/>  "value": {<br/>    "type": "task/fetch",<br/>    &lt;...&gt;<br/>  }<br/>}</pre> | <pre>{<br/>  "type": "Action.Submit",<br/>  "id": "btnBuy",<br/>  "title": "Buy",<br/>  "data": {<br/>    &lt;...&gt;,<br/>    "msteams": {<br/>      "type": "task/fetch"<br/>    }<br/>  }<br/>}</pre>  |
 
-## <a name="see-also"></a><span data-ttu-id="1f836-178">См. также</span><span class="sxs-lookup"><span data-stu-id="1f836-178">See also</span></span>
+## <a name="code-sample"></a><span data-ttu-id="8bc22-179">Пример кода</span><span class="sxs-lookup"><span data-stu-id="8bc22-179">Code sample</span></span>
 
-* [<span data-ttu-id="1f836-179">Microsoft Teams пример кода модуля задач — nodejs</span><span class="sxs-lookup"><span data-stu-id="1f836-179">Microsoft Teams task module sample code — nodejs</span></span>](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs/blob/master/src/TeamsBot.ts)
-* <span data-ttu-id="1f836-180">[Примеры Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).</span><span class="sxs-lookup"><span data-stu-id="1f836-180">[Bot Framework samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md).</span></span>
+|<span data-ttu-id="8bc22-180">Пример имени</span><span class="sxs-lookup"><span data-stu-id="8bc22-180">Sample name</span></span> | <span data-ttu-id="8bc22-181">Description</span><span class="sxs-lookup"><span data-stu-id="8bc22-181">Description</span></span> | <span data-ttu-id="8bc22-182">.NET</span><span class="sxs-lookup"><span data-stu-id="8bc22-182">.NET</span></span> | <span data-ttu-id="8bc22-183">Node.js</span><span class="sxs-lookup"><span data-stu-id="8bc22-183">Node.js</span></span>|
+|----------------|-----------------|--------------|----------------|
+|<span data-ttu-id="8bc22-184">Пример модуля задач bots-V4</span><span class="sxs-lookup"><span data-stu-id="8bc22-184">Task module sample bots-V4</span></span> | <span data-ttu-id="8bc22-185">Примеры для создания модулей задач.</span><span class="sxs-lookup"><span data-stu-id="8bc22-185">Samples for creating task modules.</span></span> |[<span data-ttu-id="8bc22-186">View</span><span class="sxs-lookup"><span data-stu-id="8bc22-186">View</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[<span data-ttu-id="8bc22-187">View</span><span class="sxs-lookup"><span data-stu-id="8bc22-187">View</span></span>](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+
+## <a name="see-also"></a><span data-ttu-id="8bc22-188">См. также</span><span class="sxs-lookup"><span data-stu-id="8bc22-188">See also</span></span>
+
+* [<span data-ttu-id="8bc22-189">Microsoft Teams пример кода модуля задач в Node.js</span><span class="sxs-lookup"><span data-stu-id="8bc22-189">Microsoft Teams task module sample code in Node.js</span></span>](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs/blob/master/src/TeamsBot.ts)
+* [<span data-ttu-id="8bc22-190">Примеры Bot Framework</span><span class="sxs-lookup"><span data-stu-id="8bc22-190">Bot Framework samples</span></span>](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
