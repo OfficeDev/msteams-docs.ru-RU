@@ -3,12 +3,12 @@ title: Вкладки на мобильных устройствах
 description: Описывает соображения разработчика для реализации вкладок на Microsoft Teams мобильном телефоне.
 ms.topic: conceptual
 localization_priority: Normal
-ms.openlocfilehash: 612084a1ff4258da16dc00f9b5a6844eead57f54
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 5053160f2456a5d1c5f68cb74ea3ccc5c5eabca5
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140294"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179722"
 ---
 # <a name="tabs-on-mobile"></a>Вкладки на мобильных устройствах
 
@@ -71,16 +71,8 @@ ms.locfileid: "53140294"
 
 * [Рекомендации по разработке вкладок](~/tabs/design/tabs.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Необходимые условия](~/tabs/how-to/tab-requirements.md)
-* [Создать личную вкладку](~/tabs/how-to/create-personal-tab.md)
+* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-* [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
-* [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)
-* [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)
-* [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
-* [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
-* [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
-* [Изменения полей вкладок](~/resources/removing-tab-margins.md)
 
 ## <a name="next-step"></a>Следующий этап
 

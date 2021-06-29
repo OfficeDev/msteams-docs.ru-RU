@@ -4,12 +4,12 @@ author: Rajeshwari-v
 description: Как развязать ссылку, открыть представление сцены и закрепить вкладку с помощью Microsoft Teams приложения.
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 1495bba765d149d23156b136be85f39d07c2d94b
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: b54eb5942d19749b39bb9bb504dd8645f5655ef3
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140175"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179946"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
@@ -141,16 +141,8 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 * [Расширение обмена сообщениями связывает разгрузку](~/messaging-extensions/how-to/link-unfurling.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Необходимые условия](~/tabs/how-to/tab-requirements.md)
-* [Создать личную вкладку](~/tabs/how-to/create-personal-tab.md)
+* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-* [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
-* [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)
-* [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)
-* [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
-* [Получение контекста для вкладки](~/tabs/how-to/access-teams-context.md)
-* [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
-* [Изменения полей вкладок](~/resources/removing-tab-margins.md)
 
 ## <a name="next-step"></a>Следующий этап
 

@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 localization_priority: Normal
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: 3a6967fcd026f5c87684df81c713af4abb27ac04
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 6511b1223e70d09ed2d158f6649a391999553ed1
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140049"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179890"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
@@ -43,9 +43,11 @@ OAuthPrompt Azure Bot Framework упрощает проверку подлинн
 
 предоставляет образец проверки подлинности бота v3 SDK.
 
-| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
+| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
 | Проверка подлинности ботов | В этом примере показано, как начать проверку подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Tab, Bot and Messaging Extension (ME) SSO | В этом примере показаны SSO для tab, Bot и ME — поиск, действие, linkunfurl. | Недоступно | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
+
 
 ## <a name="configure-the-identity-provider"></a>Настройка поставщика удостоверений
 

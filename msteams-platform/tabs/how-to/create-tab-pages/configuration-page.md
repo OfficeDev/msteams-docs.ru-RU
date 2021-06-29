@@ -6,12 +6,12 @@ keywords: команды вкладки группового канала нас
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 00aac64465dcc0c59a0146ea37f863f16c976a52
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 4fb7667cdcd060d44b64de1719bff69b3f96615f
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140224"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179771"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -203,16 +203,10 @@ microsoftTeams.settings.setSettings({
 ## <a name="see-also"></a>См. также
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Необходимые условия](~/tabs/how-to/tab-requirements.md)
-* [Создать личную вкладку](~/tabs/how-to/create-personal-tab.md)
+* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
-* [Получение контекста для вкладки](~/tabs/how-to/access-teams-context.md)
-* [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
-* [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
-* [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
-* [Изменения полей вкладок](~/resources/removing-tab-margins.md)
 
 ## <a name="next-step"></a>Следующий этап
 

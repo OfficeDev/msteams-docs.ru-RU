@@ -4,12 +4,12 @@ description: В этой статье описывается, как получ�
 localization_priority: Normal
 ms.topic: how-to
 keywords: пользовательский контекст вкладок teams
-ms.openlocfilehash: 29f574ae924ddde52b63590aba3fcc06a3d446af
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 8c91cf5a65f13d9f58f6ae8aa2678266c37338c8
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140280"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179729"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -139,16 +139,8 @@ ms.locfileid: "53140280"
 
 * [Рекомендации по разработке вкладок](~/tabs/how-to/build-adaptive-card-tabs.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Необходимые условия](~/tabs/how-to/tab-requirements.md)
-* [Создать личную вкладку](~/tabs/how-to/create-personal-tab.md)
+* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-* [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
-* [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)
-* [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)
-* [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
-* [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
-* [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
-* [Изменения полей вкладок](~/resources/removing-tab-margins.md)
 
 ## <a name="next-step"></a>Следующий этап
 

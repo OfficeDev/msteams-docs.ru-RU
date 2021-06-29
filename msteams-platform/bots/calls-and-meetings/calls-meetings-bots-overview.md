@@ -4,12 +4,12 @@ description: Узнайте, как Microsoft Teams приложения мог�
 ms.topic: conceptual
 localization_priority: Normal
 keywords: вызов вызовов аудио видео IVR голосовых собраний в Интернете
-ms.openlocfilehash: 02354bb37c564d2ad30a502c9a4a28d1f899c2b1
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: d23b069d1f728cc54941f90e531d01acae6ab989
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994233"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179911"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 
@@ -93,6 +93,7 @@ ms.locfileid: "52994233"
 | **Пример имени** | **Описание** | **Microsoft Graph** |
 |---------------|----------|--------|
 | Graph связи | Graph связи для взаимодействия с платформой связи Майкрософт. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples) |
+| Бот вызовов и собраний | Пример приложения демонстартирует, как Бот может создавать вызовы, присоединяться к собранию и переносу вызова. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-calling-meeting/csharp) |
 
 ## <a name="see-also"></a>См. также
 

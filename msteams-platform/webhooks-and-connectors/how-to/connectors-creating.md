@@ -1,19 +1,19 @@
 ---
-title: Создание Office 365 соединители
+title: Создание соединителей Office 365
 author: laujan
 description: Описывает, как начать работу с Office 365 соединители в Microsoft Teams
 keywords: соединитель teams o365
 localization_priority: Normal
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 95e3c9f2f7e188c158ae8c9161b2306c5e7f27e5
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 28a2b35e868baf34e35a11a00e10b30b0f09c236
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140424"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179757"
 ---
-# <a name="create-office-365-connectors"></a>Создание Office 365 соединители
+# <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
 С Microsoft Teams приложениями можно добавить существующие Office 365 соединителю или создать новый в Teams. Дополнительные сведения см. [в дополнительных сведениях о создании собственного соединитетеля.](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector)
 
@@ -24,7 +24,7 @@ ms.locfileid: "53140424"
 Для распространения соединитетеля необходимо зарегистрироваться через [панель мониторинга разработчиков соединители.](https://outlook.office.com/connectors/home/login/#/publish) При регистрации соединитетеля предполагается, что он работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams. Если это не так, и необходимо создать соединителя, который работает только в Microsoft Teams, свяжитесь: Microsoft Teams отправки приложений по [электронной почте](mailto:teamsubm@microsoft.com).
 
 > [!IMPORTANT]
-> Соединитель регистрируется после выбора **сохранить** в панели мониторинга разработчика соединители. Если вы хотите опубликовать соединителе в AppSource, следуйте инструкциям в публикации [Microsoft Teams приложения в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, раздайте его непосредственно организации. После [публикации соединители для организации](/connectors-creating.md)никаких дополнительных действий на панели мониторинга соединители не требуется.
+> Соединитель регистрируется после выбора **сохранить** в панели мониторинга разработчика соединители. Если вы хотите опубликовать соединителе в AppSource, следуйте инструкциям в публикации [Microsoft Teams приложения в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, раздайте его непосредственно организации. После [публикации соединители для организации](#publish-connectors-for-the-organization)никаких дополнительных действий на панели мониторинга соединители не требуется.
 
 ### <a name="integrate-the-configuration-experience"></a>Интеграция опытом настройки
 
@@ -262,7 +262,7 @@ ms.locfileid: "53140424"
 
 В следующей таблице приводится пример имени и его описания:
 
-|**Пример имени** | **Description** | **.NET** | **Node.js** |
+|**Пример имени** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
 | Соединители    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
 | Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.|  | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|

@@ -5,12 +5,12 @@ description: Сведения о том, как использовать Сое�
 ms.topic: how-to
 localization_priority: Normal
 keywords: соединитель teams o365
-ms.openlocfilehash: e396d0048831634f683b6df925853464698fb96a
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 8835e43ed74a8da5ad3b3b4358b259d63068b469
+ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140532"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53179897"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -200,7 +200,7 @@ ms.locfileid: "53140532"
 
 **Отправка адаптивных карт через входящий веб-сайт**
 
-1. [Настройка настраиваемой веб-страницы](/add-incoming-webhook.md) в Teams.
+1. [Настройка настраиваемой веб-страницы](~/webhooks-and-connectors/how-to/add-incoming-webhook.md) в Teams.
 1. Создание файла JSON адаптивной карты с помощью следующего кода:
 
     ```json
