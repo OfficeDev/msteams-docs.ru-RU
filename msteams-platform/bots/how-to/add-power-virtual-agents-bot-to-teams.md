@@ -5,12 +5,12 @@ description: интеграция Power Virtual Agents чат-бота в Teams 
 ms.topic: how-to
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 85f2d91d2c5cfdb0ae746a00c7a9f3d6a0c15972
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 2aa8cc510033768b68cf01cbb5b0327bffe13154
+ms.sourcegitcommit: f62634c59b697107e5bb3c38867b21007d328b1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53069018"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53196252"
 ---
 # <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents 
 
@@ -99,10 +99,10 @@ App Studio — это Teams приложение. Установите App Studi
 1. **Запуск чата**   
 Процесс создания для добавления бота Power Virtual Agents чата в Teams завершен. Теперь вы можете начать беседу с ботом в личном чате.
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 * [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)  
-* [Создайте чат-бот для Teams microsoft Power Virtual Agents.](../bot-features.md#bots-and-the-microsoft-power-virtual-agents)  
+* [Создайте чат-бот для Teams microsoft Power Virtual Agents.](../bot-features.md#bots-with-power-virtual-agents)  
 * [Power Virtual Agents портал](https://powervirtualagents.microsoft.com)
 * [Публикация Power Virtual Agents бота](/power-virtual-agents/publication-fundamentals-publish-channels)
 * [Безопасность и соответствие требованиям в Microsoft Teams](/MicrosoftTeams/security-compliance-overview).
@@ -111,4 +111,3 @@ App Studio — это Teams приложение. Установите App Studi
 
 > [!div class="nextstepaction"]
 > [Создание виртуального помощника](~/samples/virtual-assistant.md)
-
