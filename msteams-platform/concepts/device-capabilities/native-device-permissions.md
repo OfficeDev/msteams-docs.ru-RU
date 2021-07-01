@@ -4,12 +4,12 @@ keywords: разрешения командных приложений
 description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя
 localization_priority: Normal
 ms.topic: how-to
-ms.openlocfilehash: 920ab47a60340fd9a14e4f5dfb2e39a8ad8f3a89
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: 37312912b4901cd31feeb9b0ee9bc76a3e03826a
+ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994352"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211620"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений на устройство для Microsoft Teams приложения
 
@@ -19,6 +19,7 @@ ms.locfileid: "52994352"
 > * Чтобы интегрировать возможности мультимедиа в Microsoft Teams мобильном приложении, см. в приложении [Integrate media capabilities.](mobile-camera-image-permissions.md)
 > * Чтобы интегрировать функцию сканера [QR](qr-barcode-scanner-capability.md)или штрихкода в мобильном приложении Microsoft Teams см. в Teams.
 > * Чтобы интегрировать возможности расположения в Microsoft Teams мобильном приложении, см. в [приложении Integrate location capabilities.](location-capability.md)
+> * Чтобы интегрировать возможности выборщика людей в Microsoft Teams мобильном приложении, см. в [Teams.](people-picker-capability.md)
 
 ## <a name="native-device-permissions"></a>Разрешения на использование родных устройств
 
@@ -46,7 +47,7 @@ ms.locfileid: "52994352"
 
 Пользователь может управлять разрешениями устройств в Teams параметров,  выбрав **разрешить** или запретить разрешения для определенных приложений.
  
-# <a name="desktop"></a>[Рабочий стол](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 1. Откройте приложение Teams.
 1. Выберите значок профиля в правом верхнем углу окна.
@@ -55,7 +56,7 @@ ms.locfileid: "52994352"
 
    ![Экран параметров настольных компьютеров разрешений устройств](../../assets/images/tabs/device-permissions.png)
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 1. Откройте Teams.
 1. Перейдите **Параметры**  >  **разрешения на приложения.**
@@ -68,7 +69,7 @@ ms.locfileid: "52994352"
 
 ## <a name="specify-permissions"></a>Указание разрешений
 
-Обновите приложение, добавив и укажите, какие из пяти свойств вы `manifest.json` `devicePermissions` используете в приложении:
+Обновите приложение, добавив и укажите, какие из следующих пяти свойств вы `manifest.json` `devicePermissions` используете в приложении:
 
 ``` json
 "devicePermissions": [
@@ -173,11 +174,11 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
       /* ... *
     /});
     ```
-# <a name="desktop"></a>[Рабочий стол](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
    ![Запрос разрешений на настольные устройства tabs](~/assets/images/tabs/device-permissions-prompt.png)
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
    ![Запрос разрешений мобильных устройств Tabs](../../assets/images/tabs/MobileLocationPermission.png)
 
@@ -200,3 +201,6 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 
 > [!div class="nextstepaction"]
 > [Интеграция возможностей расположения в Teams](location-capability.md)
+
+> [!div class="nextstepaction"]
+> [Интеграция возможностей выборщика людей в Teams](people-picker-capability.md)

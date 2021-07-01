@@ -5,17 +5,17 @@ description: Использование SDK Teams JavaScript для исполь
 keywords: Возможности карты расположения для родных разрешений устройств
 ms.topic: conceptual
 localization_priority: Normal
-ms.author: lajanuar
-ms.openlocfilehash: 47fd11c918725b3195636f972ba37cbdde0c4a60
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.author: surbhigupta
+ms.openlocfilehash: 3e6c4bda9a1a0024380cb295cd280db1d630f019
+ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630749"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53211613"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 
-В этом документе вы можете узнать, как интегрировать возможности расположения родного устройства с Teams приложением.  
+Вы можете интегрировать возможности расположения родного устройства с Teams приложением.  
 
 Вы можете [использовать Microsoft Teams JavaScript клиента SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true), который предоставляет средства, необходимые для вашего приложения, чтобы получить доступ к возможностям родного [устройства пользователя](native-device-permissions.md). Используйте API расположения, такие как [getLocation](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) и [showLocation,](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#showLocation_Location___error__SdkError__status__boolean_____void_&preserve-view=true) чтобы интегрировать возможности в приложении. 
 
@@ -34,7 +34,7 @@ ms.locfileid: "52630749"
 
 ## <a name="update-manifest"></a>Манифест обновления
 
-Обновите Teams приложение [manifest.jsфайле,](../../resources/schema/manifest-schema.md#devicepermissions) добавив `devicePermissions` свойство и указав `geolocation` . Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать возможности расположения.
+Обновите Teams приложение [manifest.jsфайле,](../../resources/schema/manifest-schema.md#devicepermissions) добавив `devicePermissions` свойство и указав `geolocation` . Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать возможности расположения. Обновление манифеста приложения:
 
 ``` json
 "devicePermissions": [
@@ -57,23 +57,11 @@ ms.locfileid: "52630749"
 > [!NOTE]
 > API `getLocation()` поставляется вместе со [следующими конфигурациями ввода](/javascript/api/@microsoft/teams-js/locationprops?view=msteams-client-js-latest&preserve-view=true)и `allowChooseLocation` `showMap` . <br/> Если значение верно, пользователи могут выбрать `allowChooseLocation` любое расположение по своему выбору. <br/>  Если значение *ложное,* пользователи не могут изменить текущее расположение.<br/> Если значение `showMap` false, текущее расположение извлекается без отображения карты. `showMap`игнорируется, `allowChooseLocation` если установлено, что это *верно.*
 
-**Опыт работы с веб-приложениями для возможностей расположения** 
- ![ Опыт работы веб-приложения для возможностей расположения](../../assets/images/tabs/location-capability.png)
+На следующем изображении повеяна возможность расположения веб-приложения:
 
-## <a name="error-handling"></a>Обработка ошибок
+![Опыт работы веб-приложения для возможностей расположения](../../assets/images/tabs/location-capability.png)
 
-Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
-
-|Код ошибки |  Имя ошибки     | Условие|
-| --------- | --------------- | -------- |
-| **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
-| **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|
-| **1000** | PERMISSION_DENIED |Пользователю отказано в разрешении на Teams или веб-приложение.|
-| **4000** | INVALID_ARGUMENTS | API вызывается с неправильными или недостаточными обязательными аргументами.|
-| **8000** | USER_ABORT |Пользователь отменил операцию.|
-| **9000** | OLD_PLATFORM | Пользователь находится на старой сборке платформы, где нет реализации API. Обновление сборки должно решить проблему.|
-
-## <a name="code-snippets"></a>Фрагменты кода
+### <a name="code-snippets"></a>Фрагменты кода
 
 **Вызов `getLocation` API для получения расположения:**
 
@@ -101,7 +89,21 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 });
 ```
 
+## <a name="error-handling"></a>Обработка ошибок
+
+Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
+
+|Код ошибки |  Имя ошибки     | Condition|
+| --------- | --------------- | -------- |
+| **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
+| **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|
+| **1000** | PERMISSION_DENIED |Пользователю отказано в разрешении на Teams или веб-приложение.|
+| **4000** | INVALID_ARGUMENTS | API вызывается с неправильными или недостаточными обязательными аргументами.|
+| **8000** | USER_ABORT |Пользователь отменил операцию.|
+| **9000** | OLD_PLATFORM | Пользователь находится на старой сборке платформы, где нет реализации API. Обновление сборки должно решить проблему.|
+
 ## <a name="see-also"></a>См. также
 
 * [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
 * [Интеграция QR-кода или возможности сканера штрихкодов в Teams](qr-barcode-scanner-capability.md)
+* [Интеграция возможностей выборщика людей в Teams](people-picker-capability.md)
