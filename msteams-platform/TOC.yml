@@ -86,6 +86,8 @@
           href: concepts/device-capabilities/qr-barcode-scanner-capability.md
         - name: Интеграция функций местонахождения
           href: concepts/device-capabilities/location-capability.md
+        - name: Интеграция функции "Выбор людей"
+          href: concepts/device-capabilities/people-picker-capability.md
 - name: Создание приложения
   items:
     - name: Обзор
