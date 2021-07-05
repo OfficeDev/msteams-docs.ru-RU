@@ -4,21 +4,21 @@ description: Описывает действия карт в Microsoft Teams и 
 localization_priority: Normal
 ms.topic: conceptual
 keywords: teams bots cards actions
-ms.openlocfilehash: 1b20ca8003ab74c5dd2860e754024ae64ff94527
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 4af152f6179785687d4fd7371d202c56e1aee170
+ms.sourcegitcommit: 9d63611974ba8a7e7f19ceea35e50189a2e90434
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140091"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53254204"
 ---
-# <a name="card-actions"></a>Действия карты
+# <a name="card-actions"></a>Действия карточек
 
 Карты, используемые ботами и расширениями обмена сообщениями в Teams поддерживают следующие [`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards) типы действий:
 
 > [!NOTE]
 > Действия `CardAction` отличаются от `potentialActions` Office 365 соединители, когда используются соединители.
 
-| Тип | Действие |
+| Type | Action |
 | --- | --- |
 | `openUrl` | Открывает URL-адрес в браузере по умолчанию. |
 | `messageBack` | Отправляет сообщение и полезное сообщение боту от пользователя, который выбрал кнопку или постучал по карте. Отправляет отдельное сообщение в поток чата. |
@@ -533,7 +533,7 @@ CardFactory.actions([
 ```json
 {
   "type": "Action.Submit",
-  "title": "submit"
+  "title": "submit",
   "data": {
     "msteams": {
         "type": "task/fetch"

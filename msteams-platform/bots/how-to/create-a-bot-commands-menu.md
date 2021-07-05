@@ -5,12 +5,12 @@ description: Создание командного меню для Microsoft Tea
 ms.topic: how-to
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 0b8793666e6478e69698c355fb9209d2ca5f5d1e
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 4ee8c48b2f3b10c8924b0e81dae0a0c1f6014414
+ms.sourcegitcommit: 9d63611974ba8a7e7f19ceea35e50189a2e90434
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068997"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53254316"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -18,11 +18,11 @@ ms.locfileid: "53068997"
 
 Чтобы определить набор основных команд, на которые может отвечать бот, можно добавить меню команд со списком команд для бота. Список команд представлен пользователям в области составить сообщение, когда они находятся в беседе с ботом. Выберите команду из списка, чтобы вставить строку команды в поле составить сообщение и выбрать **Отправить**.
 
-# <a name="desktop"></a>[Компьютер](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 ![Меню команд бота](./conversations/media/bot-menu-sample.png)
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 ![Меню команды мобильных ботов](./conversations/media/mobile-bot-menu-sample.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "53068997"
 
     ![App Studio](./conversations/media/AppStudio.png)
 
-2. В **App Studio** выберите **вкладку Редактор Манифеста.** Если у вас нет существующего пакета приложений, можно создать или импортировать существующее приложение. Дополнительные сведения см. [в обновленном пакете приложений.](~/tutorials/get-started-dotnet-app-studio.md#use-app-studio-to-update-the-app-package)
+2. В **App Studio** выберите **вкладку Редактор Манифеста.** Если у вас нет существующего пакета приложений, можно создать или импортировать существующее приложение. Дополнительные сведения см. [в обновленном пакете приложений.](~/get-started/get-started-dotnet-app-studio.md#use-app-studio-to-update-the-app-package)
 
 3. В левой области редактора **Манифеста** и в разделе **Возможности** выберите **Bots**.
 

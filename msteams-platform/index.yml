@@ -33,8 +33,8 @@ highlightedContent:
       url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/publish
     - title: Руководства и примеры кода
       itemType: sample
-      url: /microsoftteams/platform/tutorials/code-samples
-    - title: Microsoft Build 2021— Что нового?
+      url: /microsoftteams/platform/get-started/code-samples
+    - title: Новые возможности
       itemType: whats-new
       url: /microsoftteams/platform/whats-new
 conceptualContent:
@@ -50,7 +50,7 @@ conceptualContent:
           text: ИТ-специалисты
         - url: 'https://support.microsoft.com/en-us/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Basics'
           itemType: concept
-          text: Конечные пользователи
+          text: Пользователи
     - title: Обзор
       links:
         - url: /microsoftteams/platform/concepts/capabilities-overview
@@ -114,7 +114,7 @@ conceptualContent:
         - url: /microsoftteams/platform/samples/shifts-wfm-connectors
           itemType: reference
           text: Интеграция готовых к производству соединители Shifts
-    - title: Установление связи
+    - title: Связь
       links:
         - url: 'https://developer.microsoft.com/microsoft-teams/blogs/'
           itemType: overview
