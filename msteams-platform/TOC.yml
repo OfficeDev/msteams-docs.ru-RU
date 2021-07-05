@@ -8,28 +8,26 @@
 - name: Начало работы
   expanded: true
   items:
+    - name: Обзор
+      href: get-started/code-samples.md
     - name: Предварительные требования
       href: get-started/prerequisites.md
-    - name: Создание личного приложения (React)
+    - name: Создание первого приложения с помощью React
       href: get-started/first-app-react.md
-    - name: Создание личного приложения (Blazor)
+    - name: Создание первого приложения с помощью Blazor
       href: get-started/first-app-blazor.md
-    - name: Создание личного приложения (SPFx)
+    - name: Создание первого приложения с помощью SPFx
       href: get-started/first-app-spfx.md
-    - name: Создание бота беседы
-      href: get-started/first-app-bot.md
-    - name: Создать расширение для обмена сообщениями
-      href: get-started/first-message-extension.md
-- name: Руководства и примеры кода
-  items:
-    - name: Обзор
-      href: tutorials/code-samples.md
     - name: Создание первого приложения с помощью C# или .NET
-      href: tutorials/get-started-dotnet-app-studio.md
+      href: get-started/get-started-dotnet-app-studio.md
     - name: Создание первого приложения с помощью Node.js
-      href: tutorials/get-started-nodejs-app-studio.md
+      href: get-started/get-started-nodejs-app-studio.md
     - name: Создание первого приложения с помощью генератора Yeoman
-      href: tutorials/get-started-yeoman.md
+      href: get-started/get-started-yeoman.md
+    - name: Создание первого чат-бота
+      href: get-started/first-app-bot.md
+    - name: Создание первого расширения для сообщений
+      href: get-started/first-message-extension.md
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Основные сведения о приложении
@@ -44,36 +42,6 @@
       href: concepts/design/understand-use-cases.md
     - name: Сопоставление вариантов использования с возможностями приложения Teams
       href: concepts/design/map-use-cases.md
-- name: Интеграция с Teams
-  items:
-    - name: Обзор
-      href: samples/integrate-web-apps-overview.md
-    - name: Веб-приложения
-      href: samples/integrating-web-apps.md
-    - name: Приложения Power Platform
-      items:
-        - name: Обзор
-          href: samples/teams-low-code-solutions.md
-        - name: Добавление чатбота Power Virtual Agents
-          href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
-        - name: Создание виртуального помощника
-          href: samples/virtual-assistant.md
-    - name: Шаблоны приложений для Microsoft Teams
-      href: samples/app-templates.md
-    - name: Готовые к работе соединители
-      href: samples/shifts-wfm-connectors.md
-    - name: Moodle LMS
-      items:
-        - name: Обзор
-          href: resources/moodle-overview.md
-        - name: Установка Moodle LMS
-          href: resources/moodleInstructions.md
-    - name: Создание кнопки «Поделиться в Teams»
-      href: concepts/build-and-test/share-to-teams.md
-    - name: Добавление вкладки Teams в SharePoint
-      href: tabs/how-to/tabs-in-sharepoint.md
-    - name: Создание прямых ссылок
-      href: concepts/build-and-test/deep-links.md
     - name: Возможности устройств
       items:
         - name: Обзор
@@ -468,6 +436,36 @@
           href: resources/schema/manifest-schema-dev-preview.md
         - name: Функции
           href: resources/dev-preview/developer-preview-features.md
+- name: Интеграция с Teams
+  items:
+    - name: Обзор
+      href: samples/integrate-web-apps-overview.md
+    - name: Веб-приложения
+      href: samples/integrating-web-apps.md
+    - name: Приложения Power Platform
+      items:
+        - name: Обзор
+          href: samples/teams-low-code-solutions.md
+        - name: Добавление чатбота Power Virtual Agents
+          href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
+        - name: Создание виртуального помощника
+          href: samples/virtual-assistant.md
+    - name: Шаблоны приложений для Microsoft Teams
+      href: samples/app-templates.md
+    - name: Готовые к работе соединители
+      href: samples/shifts-wfm-connectors.md
+    - name: Moodle LMS
+      items:
+        - name: Обзор
+          href: resources/moodle-overview.md
+        - name: Установка Moodle LMS
+          href: resources/moodleInstructions.md
+    - name: Создание кнопки «Поделиться в Teams»
+      href: concepts/build-and-test/share-to-teams.md
+    - name: Добавление вкладки Teams в SharePoint
+      href: tabs/how-to/tabs-in-sharepoint.md
+    - name: Создание прямых ссылок
+      href: concepts/build-and-test/deep-links.md
 - name: Ресурсы
   items:
     - name: Локализация
