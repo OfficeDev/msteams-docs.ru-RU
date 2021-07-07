@@ -6,14 +6,14 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: 222c69f6349177a72f4b8599068ea1ebacbf6d16
-ms.sourcegitcommit: 6e4d2c8e99426125f7b72b9640ee4a4b4f374401
+ms.openlocfilehash: 0f59a74cc24b7d80dd3afd4aa4369a47d56e4d59
+ms.sourcegitcommit: a6253e89cb8c8c34d45b06e08c9668daeebc30a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114240"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300307"
 ---
-# <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Активная установка приложений с Graph API для отправки сообщений
+# <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
 >[!IMPORTANT]
 > Предварительные Graph и Microsoft Teams доступны для раннего доступа и отзывов. Хотя этот выпуск прошел широкое тестирование, он не предназначен для использования в производстве.
@@ -190,6 +190,12 @@ Content-Type: application/json
 
 Ваш бот может [отправлять упреждающие](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) сообщения после того, как бот был добавлен для пользователя или группы и получил всю информацию о пользователе.
 
+## <a name="code-sample"></a>Пример кода
+
+| **Имя образца** | **Описание** | **.NET** | **Node.js** |
+|---------------|--------------|--------|-------------|--------|
+| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
+
 ## <a name="see-also"></a>См. также
 
 * [**Управление политиками установки приложений в Microsoft Teams**](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
@@ -198,4 +204,4 @@ Content-Type: application/json
 ## <a name="additional-code-samples"></a>Дополнительные примеры кода
 >
 > [!div class="nextstepaction"]
-> [**Teams примеры кода проактивных сообщений**](/samples/officedev/msteams-samples-proactive-messaging/msteams-samples-proactive-messaging/)
+> [**Teams примеры кода проактивных сообщений**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)

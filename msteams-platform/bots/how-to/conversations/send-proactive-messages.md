@@ -5,14 +5,14 @@ ms.topic: conceptual
 ms.author: anclear
 localization_priority: Normal
 Keywords: отправка сообщения получить ID-ID-ID канала для беседы
-ms.openlocfilehash: 443988cc70f009ab657a1a29a91e8989dfed4f43
-ms.sourcegitcommit: 656a1de9e23e0ad90dddcb93a2bbfcc63848a856
+ms.openlocfilehash: 5c169e8ef7735b42233bef9992de3540a6fbbee1
+ms.sourcegitcommit: a6253e89cb8c8c34d45b06e08c9668daeebc30a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53130197"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300300"
 ---
-# <a name="proactive-messages"></a>Проактивные сообщения
+# <a name="proactive-messages"></a>Упреждающие сообщения
 
 [!INCLUDE [v4 to v3 pointer](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -115,9 +115,9 @@ ms.locfileid: "53130197"
 
 Узнайте [об установке приложений](/graph/api/userteamwork-post-installedapps) для пользователей в документации Graph и активной установке ботов и обмена сообщениями в Teams с [Graph](../../../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md). Кроме того, на платформе GitHub пример фреймворка [Microsoft.NET.](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176)
 
-## <a name="samples"></a>Образцы
+## <a name="samples"></a>Примеры
 
-В следующем коде показан простой пример кода, который активно устанавливает приложение с помощью Graph:
+В следующем коде показано, как отправлять упреждающие сообщения:
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
@@ -268,10 +268,11 @@ POST /v3/conversations
 
 В следующей таблице приводится простой пример кода, который включает основной поток беседы в приложение Teams и способ создания нового потока беседы в канале в Teams:
 
-| **Имя образца** | **Description** | **.NET** | **Node.js** | **Python** |
+| **Имя образца** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|--------------|--------|-------------|--------|
 | Teams Основы беседы  | Демонстрирует основы бесед в Teams, в том числе отправку одно к одному упреждающих сообщений.| [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot) |
 | Запуск нового потока в канале | Демонстрирует создание нового потока в канале. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
+| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) | |
 
 ### <a name="additional-code-sample"></a>Дополнительный пример кода
 
