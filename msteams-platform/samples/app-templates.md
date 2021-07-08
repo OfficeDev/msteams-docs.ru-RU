@@ -6,12 +6,12 @@ keywords: Microsoft Teams примеры демонстрации шаблоно
 localization_priority: Normal
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: 0976bd1c76217e883f91e45c772ec8d3acf4f740
-ms.sourcegitcommit: 261058171f1e3bbc822c5bcc0e9fba5a4de68000
+ms.openlocfilehash: 72bb5506e552dfa3d35426e99a7ee74088ef41f6
+ms.sourcegitcommit: 0a775ae12419f3bc7484e557f4b4ae815bab64ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53111191"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53333696"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -286,9 +286,9 @@ Expert Finder — это [Microsoft Teams,](../bots/what-are-bots.md) котор
 
 Приложение Get Support используется организациями, использующими Microsoft Teams, чтобы позволить любому набору пользователей запрашивать помощь у руководителей. Это приложение включает следующие функции:
 * Запрос помощи для разных категорий в приложении Power.
-* Уведомления, отправленные запросчикам, информирующие их о том, кому назначен заяц.
+* Уведомления, отосланные запрашивателям, информирующие их о том, кому назначено.
 * Уведомления, отосланные назначенному руководителю, информирующие их о том, кому нужна помощь. 
-* Анализ эскалаций и шаблонов в SharePoint и PowerBI.S.
+* Анализ эскалаций и шаблонов в SharePoint и Power BI.
 
 [Получите его на GitHub](https://github.com/OfficeDev/microsoft-teams-app-get-support/)
 

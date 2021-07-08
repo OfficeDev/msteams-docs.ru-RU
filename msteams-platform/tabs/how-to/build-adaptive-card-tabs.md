@@ -4,12 +4,12 @@ author: KirtiPereira
 description: Создание вкладок с помощью адаптивных карт
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 4359b20d5839b86955082b7a5da8db262e13600c
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 5a66f49db3710885b926a7abce45ef858bf0b092
+ms.sourcegitcommit: b1f9162a0bbcd276064ae9e4f1e8bccc06cb7035
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179904"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53328060"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
@@ -25,7 +25,7 @@ ms.locfileid: "53179904"
 
 :::image type="content" source="../../assets/images/tabs/adaptive-cards-rendered-in-tabs.jpg" alt-text="Пример адаптивной карты, отрисовываемой на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 
@@ -98,6 +98,9 @@ ms.locfileid: "53179904"
 ## <a name="invoke-activities"></a>Вызов действий
 
 Связь между вкладкой Адаптивная карта и ботом делается с помощью `invoke` действий. Каждое `invoke` действие имеет соответствующее **имя.** Используйте имя каждого действия, чтобы различать каждый запрос. `tab/fetch` и `tab/submit` являются действиями, охватываемых в этом разделе.
+
+> [!NOTE]
+> Боты должны отправлять все ответы на [URL-адрес службы.](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#base-uri&preserve-view=true) URL-адрес службы получается в составе входящих `activity` полезной нагрузки.
 
 ### <a name="fetch-adaptive-card-to-render-to-a-tab"></a>Извлечение адаптивной карты для отрисовки на вкладке
 

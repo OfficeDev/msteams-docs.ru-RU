@@ -5,12 +5,12 @@ description: Узнайте о компонентах пользовательс
 ms.author: surbhigupta
 localization_priority: Normal
 ms.topic: reference
-ms.openlocfilehash: ae1c2793586dc638d56051e105482aac92e01091
-ms.sourcegitcommit: 4224c44d169b1a289cbf1d3353de6bc6de7c7ea8
+ms.openlocfilehash: 6f2bd9cd237751adb15db45bbd6e3cdfea35ce09
+ms.sourcegitcommit: b1f9162a0bbcd276064ae9e4f1e8bccc06cb7035
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52644944"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53328081"
 ---
 # <a name="designing-your-microsoft-teams-app-with-advanced-ui-components"></a>Разработка приложения Microsoft Teams с расширенными компонентами пользовательского интерфейса
 
@@ -18,7 +18,7 @@ ms.locfileid: "52644944"
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-На основе пользовательского интерфейса <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a>Microsoft Teams пользовательского интерфейса включает компоненты и шаблоны, разработанные специально для создания Teams приложений. В наборе пользовательского интерфейса можно захватить и вставить компоненты, перечисленные здесь непосредственно в дизайн, и увидеть дополнительные примеры использования каждого компонента.
+На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a>пользовательского интерфейса Microsoft Teams набор пользовательского интерфейса включает компоненты и шаблоны, разработанные специально для Teams приложений. В наборе пользовательского интерфейса можно захватить и вставить компоненты, перечисленные здесь непосредственно в дизайн, и увидеть дополнительные примеры использования каждого компонента.
 
 > [!div class="nextstepaction"]
 > [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
@@ -32,11 +32,11 @@ Breadcrumbs — это навигационный помощник, которы
 * Иерархия связи
 * Навигация
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/ui-templates/breadcrumb.png" alt-text="В примере показан шаблон breadcrumb на рабочем столе." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-breadcrumb.png" alt-text="В примере показан шаблон breadcrumb на мобильных устройствах." border="false":::
 
@@ -51,11 +51,11 @@ Breadcrumbs — это навигационный помощник, которы
 * Просмотрите несколько страниц в Teams вкладке.
 * Разбить сложные приложения на несколько страниц.
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/ui-templates/left-nav.png" alt-text="В примере показан левый шаблон nav на рабочем столе." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-left-nav.png" alt-text="В примере показан левый шаблон nav на мобильных устройствах." border="false":::
 
@@ -71,11 +71,11 @@ Breadcrumbs — это навигационный помощник, которы
 * Сообщения об успехе
 * Информационные или рекламные сообщения
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/ui-templates/notification-bar.png" alt-text="В примере показаны шаблоны пользовательского интерфейса панели уведомлений на рабочем столе." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-notification-bar.png" alt-text="В примере показан шаблон пользовательского интерфейса панели уведомлений на мобильных устройствах." border="false":::
 
@@ -83,20 +83,20 @@ Breadcrumbs — это навигационный помощник, которы
 
 ## <a name="stage"></a>Этап
 
-Stage предоставляет пользователям возможность открыть объект — например, изображение, файл или веб-Teams, а не открывать его в другом приложении или браузере. Основной пример использования стадии — просмотр; поверхность не должна использоваться для сложных взаимодействий.
+Stage позволяет пользователям просматривать контент, например изображение, файл или веб-сайт, на большой поверхности Teams без переключения контекста. Этап предназначен в первую очередь для просмотра контента. Не используйте этап для сложных взаимодействий.
 
-(Примечание реализации. Создайте этап с помощью большого [модуля задач.)](../../task-modules-and-cards/task-modules/design-teams-task-modules.md)
+Узнайте, как реализовать [этап](~/tabs/tabs-link-unfurling.md).
 
 ### <a name="top-use-cases"></a>Верхние случаи использования
 
-* Откройте объект в Teams вместо другого приложения или браузера
-* Прожектор мультимедиа или другой контент
+* Отображение контента на большой поверхности в Teams вместо другого приложения или браузера
+* Прожектор мультимедиа или другой контент с богатыми данными
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/ui-templates/stage.png" alt-text="В примере показан шаблон сцены на рабочем столе." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 Ваше приложение может запускать этап из адаптивной карты, общих ссылок или визуальных компонентов (например, диаграммы).
 
@@ -114,11 +114,11 @@ Stage предоставляет пользователям возможност
 * Контекстный фильтр и поиск
 * Навигация и сухари
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/ui-templates/toolbar.png" alt-text="В примере показан шаблон панели инструментов на рабочем столе." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-toolbar.png" alt-text="В примере показан шаблон панели инструментов на мобильных устройствах." border="false":::
 

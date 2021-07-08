@@ -6,22 +6,22 @@ keywords: Список участников группы apis для базы б
 localization_priority: Normal
 ms.topic: reference
 ms.author: ojchoudh
-ms.openlocfilehash: d2eb75a69100a6daaf3af3a021b9896c42abe5f1
-ms.sourcegitcommit: 6e4d2c8e99426125f7b72b9640ee4a4b4f374401
+ms.openlocfilehash: 9c6444967d330d27a415ac596a3858c05c49236e
+ms.sourcegitcommit: b1f9162a0bbcd276064ae9e4f1e8bccc06cb7035
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114247"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53328067"
 ---
 # <a name="teams-bot-api-changes-to-fetch-team-or-chat-members"></a>Teams API бота для получения участников группы или чата
 
 >[!NOTE]
 > Начался процесс амортизации `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync` API. Первоначально они в значительной степени перенастраиваются до пяти запросов в минуту и возвращают не более 10 000 участников в каждой команде. В результате полный список не возвращается по мере увеличения размера группы.
-> Необходимо обновить до версии 4.10 или выше SDK Bot Framework и перейти на paginated конечные точки API или API одного `TeamsInfo.GetMemberAsync` пользователя. Это также относится к вашему боту, даже если вы не используете эти API напрямую, так как более старые SDKs называют эти API во время [событий membersAdded.](../bots/how-to/conversations/subscribe-to-conversation-events.md#team-members-added) Чтобы просмотреть список предстоящих изменений, см. изменения [API.](team-chat-member-api-changes.md#api-changes) 
+> Необходимо обновить до версии 4.10 или выше SDK Bot Framework и перейти на paginated конечные точки API или API одного `TeamsInfo.GetMemberAsync` пользователя. Это также относится к вашему боту, даже если вы не используете эти API напрямую, так как более старые SDKs называют эти API во время [событий membersAdded.](../bots/how-to/conversations/subscribe-to-conversation-events.md#team-members-added) Чтобы просмотреть список предстоящих изменений, см. изменения [API.](team-chat-member-api-changes.md#api-changes)
 
-В настоящее время разработчики ботов, которые хотят получить сведения для одного или более членов чата или группы, используют API Microsoft Teams для C# или для `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` API typeScript или Node.js. Дополнительные сведения см. в [дополнительных сведениях о реестре или профиле пользователя.](../bots/how-to/get-teams-context.md#fetch-the-roster-or-user-profile) Эти API имеют несколько недостатков.
+В настоящее время, если вы хотите получить сведения для одного или [](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile) более членов чата или группы, вы можете использовать API Microsoft Teams бота для C# или для `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` API typeScript Node.js или Node.js. Дополнительные сведения см. в [дополнительных сведениях о реестре или профиле пользователя.](../bots/how-to/get-teams-context.md#fetch-the-roster-or-user-profile)
 
-В настоящее время, если вы хотите получить сведения для одного или [](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile) более членов чата или группы, вы можете использовать API Microsoft Teams бота для C# или для `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` API typeScript Node.js или Node.js. Эти API имеют следующие недостатки:
+Эти API имеют следующие недостатки:
 
 * Для больших групп производительность является низкой, а время выполнения более вероятно: максимальный размер группы значительно вырос с момента выпуска Teams в начале 2017 г. При возвращении или возвращении всего списка участников для вызова API для больших групп требуется много времени, и для вызова обычно требуется время ожидания, и вам придется попробовать `GetMembersAsync` `getMembers` еще раз.
 * Получение сведений о профиле для одного пользователя затруднено: чтобы получить сведения о профиле для одного пользователя, необходимо получить весь список участников, а затем найти нужный. Существует функция помощника в SDK Bot Framework, чтобы упростерить ее, но она неэффективна.
