@@ -424,7 +424,7 @@ CardFactory.actions([
 * [Action.OpenUrl](http://adaptivecards.io/explorer/Action.OpenUrl.html)
 * [Action.Submit](http://adaptivecards.io/explorer/Action.Submit.html)
 * [Action.ShowCard](http://adaptivecards.io/explorer/Action.ShowCard.html)
-* [Action.Exeмило](/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
+* [Action.Execute](/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
 
 Вы также можете изменить полезной нагрузки адаптивной карты для поддержки существующих действий Bot Framework с помощью свойства `Action.Submit` `msteams` в `data` объекте `Action.Submit` . В следующем разделе вы можете узнать, как использовать существующие действия Bot Framework с помощью адаптивных карт.
 
