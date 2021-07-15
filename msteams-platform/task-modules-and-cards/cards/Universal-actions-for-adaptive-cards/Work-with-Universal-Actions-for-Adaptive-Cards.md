@@ -16,7 +16,7 @@ ms.locfileid: "52649701"
 
 * [Схема, используемая для универсальных действий для адаптивных карточек](#schema-for-universal-actions-for-adaptive-cards)
 * [Модель обновления](#refresh-model)
-* [`adaptiveCard/action` запуск действия](#adaptivecardaction-invoke-activity)
+* [Действие вызова `adaptiveCard/action`](#adaptivecardaction-invoke-activity)
 * [Обратная совместимость](#backward-compatibility)
 
 ## <a name="quick-start-guide-to-leverage-universal-actions-for-adaptive-cards-in-teams"></a>Краткое руководство по использованию универсальных действий для адаптивных карточек в Teams
@@ -44,7 +44,7 @@ ms.locfileid: "52649701"
 
 | Клиент | Поведение |
 | :-- | :-- |
-| Teams | Карточка перестает работать. Карточка не обновляется и `Action.Execute` не обрабатывается в зависимости от версии клиента Teams. Чтобы обеспечить максимальную совместимость в Teams, определите в свойстве отката `Action.Execute` с `Action.Submit`. |
+| Teams | Карточка перестает работать. Карточка не обновляется и `Action.Execute` не обрабатывается в зависимости от версии клиента Teams. Чтобы обеспечить максимальную совместимость в Teams, определите `Action.Execute` с `Action.Submit` в свойстве отката. |
 
 Дополнительные сведения о поддержке клиентов более старых версий см. в разделе [обратная совместимость](#backward-compatibility).
 
@@ -64,7 +64,7 @@ ms.locfileid: "52649701"
 
 ## <a name="user-ids-in-refresh"></a>Идентификаторы пользователей в процессе обновления
 
-Ниже даны функции UserIds в процессе обновления.
+Ниже описаны особенности UserIds в процессе обновления.
 
 * UserIds — это массив MRI пользователя, который является частью свойства `refresh` адаптивных карточек.
 
@@ -85,9 +85,9 @@ ms.locfileid: "52649701"
 
 Когда в клиенте выполняется `Action.Execute`, для вашего бота создается новый тип запуска действия `adaptiveCard/action`.
 
-Дополнительные сведения см. в разделе: [формат запроса и свойства обычного `adaptiveCard/action` запуска действия](/adaptive-cards/authoring-cards/universal-action-model#request-format).
+Дополнительные сведения см. в разделе: [формат запроса и свойства обычного действия вызова `adaptiveCard/action`](/adaptive-cards/authoring-cards/universal-action-model#request-format).
 
-Дополнительные сведения см. в разделе: [формат отклика и свойства обычного `adaptiveCard/action` запуска действия с поддерживаемыми типами отклика](/adaptive-cards/authoring-cards/universal-action-model#response-format).
+Дополнительные сведения см. в разделе: [формат отклика и свойства обычного действия вызова `adaptiveCard/action` с поддерживаемыми типами отклика](/adaptive-cards/authoring-cards/universal-action-model#response-format).
 
 Затем к старым клиентам на разных платформах можно применить обратную совместимость и сделать адаптивную карточку совместимой.
 

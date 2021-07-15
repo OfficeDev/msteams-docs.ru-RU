@@ -4,12 +4,12 @@ description: Ограничение скорости и лучшие практ�
 ms.topic: conceptual
 localization_priority: Normal
 keywords: ограничения скорости командных ботов
-ms.openlocfilehash: 3b8f80efa50d2fbf44162aec13994b747b9bd7ac
-ms.sourcegitcommit: 60561c7cd189c9d6fa5e09e0f2b6c24476f2dff5
+ms.openlocfilehash: 41070bec7905c7003afb917aedcdd08495418602
+ms.sourcegitcommit: e327c9766dfa05abb468cdc71319e3cba7c6c79f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52230962"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428697"
 ---
 # <a name="optimize-your-bot-with-rate-limiting-in-teams"></a>Оптимизация бота с ограничением скорости в Teams
 
@@ -51,7 +51,7 @@ catch (HttpOperationException ex)
 После обработки ответов можно перейти к примеру для обнаружения `HTTP 429` временных исключений.
 
 > [!NOTE]
-> Помимо повторного изменения кода **ошибки 429,** необходимо также повторно использовать коды **ошибок 412,** **502** и **504.**
+> В дополнение к повторной ошибке код **429,** коды ошибок **412**, **502** и **504** также должны быть повторно.
 
 ## <a name="detect-transient-exceptions-example"></a>Обнаружение примера временных исключений
 
@@ -169,7 +169,7 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 | Получать беседы | 1 | 28 |
 | Получать беседы | 2 | 32 |
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Боты для звонков и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)

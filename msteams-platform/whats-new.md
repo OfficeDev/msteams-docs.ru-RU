@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 localization_priority: Normal
 keywords: команды, новые возможности
-ms.openlocfilehash: b9ef7cbe1a7fa1a673a60375bab893a86c2dbf6b
-ms.sourcegitcommit: 3560ee1619e3ab6483a250f1d7f2ceb69353b2dc
+ms.openlocfilehash: 00b100ad634c1155446ab0b908c13b6b6eb3038c
+ms.sourcegitcommit: e327c9766dfa05abb468cdc71319e3cba7c6c79f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53335356"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428711"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -169,7 +169,7 @@ Microsoft Teams платформы, доступные всем разработ
 | -------- | --------- | ------------------ |
 |06/23/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md#meeting-details-api) |
 |06/21/2021|Удалить поведение для личного приложения с ботом | [Удалить обновления поведения в личных приложениях с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
-|06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное на ресурсы,](graph-api/rsc/resource-specific-consent.md) [проверка разрешений](graph-api/rsc/test-resource-specific-consent.md) на повторное использование в Teams|  
+|06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное для ресурсов,](graph-api/rsc/resource-specific-consent.md) [тестирование разрешений](graph-api/rsc/test-resource-specific-consent.md) на согласие, определенное ресурсами, в Teams|  
 |05/26/2021|Создание вкладок с использованием адаптивных карточек|[Вкладки сборки](tabs/how-to/build-adaptive-card-tabs.md)|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |
 |05/25/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |

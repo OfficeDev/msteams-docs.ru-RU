@@ -4,12 +4,12 @@ description: Описывает Microsoft Teams проверки подлинн�
 keywords: боты потока проверки подлинности команд
 localization_priority: Normal
 ms.topic: overview
-ms.openlocfilehash: 68ba2024d0e0f2f92a52e93614e4576dcde8dcbc
-ms.sourcegitcommit: 14409950307b135265c8582408be5277b35131dd
+ms.openlocfilehash: fdce053ce837bb9a244712a63515194d05adb3a8
+ms.sourcegitcommit: e327c9766dfa05abb468cdc71319e3cba7c6c79f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52994226"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428704"
 ---
 # <a name="authentication-flow-for-bots-in-microsoft-teams"></a>Поток проверки подлинности для ботов в Microsoft Teams
 
@@ -52,11 +52,11 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 Пример кода, показывающий процесс проверки подлинности бота:
 
-| **Пример имени** | **Описание** | **Node.js** | **.NET** | **Python** |
+| **Название примера** | **Описание** | **Node.js** | **.NET** | **Python** |
 |-----------------|----------------|--------------|----------|-----------|
-| Teams проверки подлинности | В этом примере демонстрируется проверка подлинности в Microsoft Teams приложениях. | [View](https://github.com/OfficeDev/microsoft-teams-sample-auth-node) | | |
-| Проверка подлинности ботов | В этом примере демонстарты использования проверки подлинности для запуска бота в Microsoft Teams | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth)
+| Teams проверки подлинности | В этом примере демонстрируется проверка подлинности в Microsoft Teams приложениях. | [Просмотр](https://github.com/OfficeDev/microsoft-teams-sample-auth-node) | | |
+| Проверка подлинности ботов | В этом примере показано, как использовать проверку подлинности для бота, запущенного в Microsoft Teams | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Добавление проверки подлинности в Teams бота](add-authentication.md)
