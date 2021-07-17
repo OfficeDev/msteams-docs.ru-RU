@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: 4573140e33bffb0daafbdc9f929b5afd49231af8
-ms.sourcegitcommit: 6e4d2c8e99426125f7b72b9640ee4a4b4f374401
+ms.openlocfilehash: ce4076ff8cb9945f3b7dd1a7e809391292ec314a
+ms.sourcegitcommit: c145d52b2d4daa7655e6c3ddfa739fa1beeb8d6a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114422"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455222"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -26,7 +26,7 @@ ms.locfileid: "53114422"
 
 ### <a name="resource-specific-permissions-for-a-team"></a>Разрешения на использование ресурсов для группы
 
-|Разрешение приложения| Действие |
+|Разрешение приложения| Action |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получите параметры этой группы.|
 |TeamSettings.ReadWrite.Group|Обновление параметров этой группы.|
@@ -48,7 +48,7 @@ ms.locfileid: "53114422"
 
 В следующей таблице вы можете получить разрешения на доступ к ресурсам для чата:
 
-|Разрешение приложения| Действие |
+|Разрешение приложения| Action |
 | ----- | ----- |
 | ChatSettings.Read.Chat         | Получите параметры этого чата.                                    |
 | ChatSettings.ReadWrite.Chat    | Обновление параметров этого чата.                          |
@@ -158,7 +158,7 @@ ms.locfileid: "53114422"
     "applicationPermissions": [
       "TeamSettings.Read.Group",
       "ChannelMessage.Read.Group",
-      "TeamSettings.Edit.Group",
+      "TeamSettings.ReadWrite.Group",
       "ChannelSettings.ReadWrite.Group",
       "Channel.Create.Group",
       "Channel.Delete.Group",
@@ -242,11 +242,11 @@ ms.locfileid: "53114422"
 
 ## <a name="code-sample"></a>Пример кода
 
-| **Пример имени** | **Описание** | **.NET** |**Node.js** |
+| **Название примера** | **Описание** | **.NET** |**Node.js** |
 |-----------------|-----------------|----------------|----------------|
-| Resource-Specific согласия (RSC) | Используйте RSC для вызова Graph API. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/nodeJs)|
+| Resource-Specific согласия (RSC) | Используйте RSC для вызова Graph API. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/nodeJs)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
  
 * [Тестирование разрешений на согласие для определенных ресурсов в Teams](test-resource-specific-consent.md)
 * [Согласие на определенные ресурсы в Microsoft Teams для администраторов](/MicrosoftTeams/resource-specific-consent)

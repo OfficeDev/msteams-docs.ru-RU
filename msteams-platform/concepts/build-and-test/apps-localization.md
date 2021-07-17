@@ -5,12 +5,12 @@ ms.topic: conceptual
 localization_priority: Normal
 keywords: команды публикуют язык локализации AppSource в офисе магазина
 ms.date: 05/15/2018
-ms.openlocfilehash: c73188bb24960b9ef0706955d09d23b618c04e5c
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 5410d6f829c3fec9b5d631452e459bd276df472e
+ms.sourcegitcommit: c145d52b2d4daa7655e6c3ddfa739fa1beeb8d6a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140042"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455215"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 
@@ -22,7 +22,7 @@ ms.locfileid: "53140042"
 
 ## <a name="localize-your-appsource-listing"></a>Локализация списка AppSource
 
-Если вы публикуете приложение в магазине, вы должны знать, что локализация списка AppSource еще не поддерживается. Чтобы поддерживать локализованные списки в магазине приложений, в список можно добавить дополнительные языки. Языковые сведения по умолчанию, которые вы предоставляете в [Центре партнеров](/office/dev/store/submit-to-appsource-via-partner-center) для вашего списка, появляются в списке веб-сайта [AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) для вашего приложения. В настоящее время языком по умолчанию является английский.
+Если вы публикуете приложение в магазине, вы должны знать, что локализация списка AppSource еще не поддерживается. Чтобы поддерживать локализованные списки в магазине приложений, в список можно добавить дополнительные языки. Языковые сведения по умолчанию, которые вы предоставляете в [Центре партнеров](/office/dev/store/submit-to-appsource-via-partner-center) для вашего списка, появляются в списке веб-сайта [AppSource](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1 "AppSource — это одно место для всех потребностей вашей команды. свести все вместе, включая чаты, собрания, вызовы, файлы и инструменты, чтобы обеспечить более продуктивную командную работу.") для вашего приложения. В настоящее время языком по умолчанию является английский.
 
 ### <a name="configure-localization"></a>Настройка локализации
 
@@ -155,7 +155,7 @@ ms.locfileid: "53140042"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Пример имени | Description | .NET | Node.js |
+| Название примера | Описание | .NET | Node.js |
 |-------------|-------------|------|------|
-| Локализация приложений | Microsoft Teams для локализации приложений с помощью бота и вкладки. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
+| Локализация приложений | Microsoft Teams для локализации приложений с помощью бота и вкладки. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
 
