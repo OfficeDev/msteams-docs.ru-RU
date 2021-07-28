@@ -6,12 +6,12 @@ keywords: удаление полей вкладки
 ms.topic: reference
 localization_priority: Normal
 ms.author: lomeybur
-ms.openlocfilehash: 5fab0e0145288718adb7eb96f8f103f75527ec58
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 4bbf7bce62e24c61d23e7fa90f1ccd3e6c5a3371
+ms.sourcegitcommit: 1c4eaccee16dc63a1f2b5d7da2893d68f9c1533a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179743"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53534602"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 
@@ -26,7 +26,7 @@ ms.locfileid: "53179743"
 ## <a name="timelines"></a>Сроки
 
 * 5 марта 2021 г. — Поля, удалены в [общедоступных](~/resources/dev-preview/developer-preview-intro.md)Developer Preview .
-* 15 июня 2021 г. Маржи будут удалены в производстве.
+* 31 июля 2021 г. Поля будут удалены в производстве.
 
 ## <a name="guidelines"></a>Рекомендации
 
