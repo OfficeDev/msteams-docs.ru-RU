@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: 0f59a74cc24b7d80dd3afd4aa4369a47d56e4d59
-ms.sourcegitcommit: a6253e89cb8c8c34d45b06e08c9668daeebc30a3
+ms.openlocfilehash: a118d8aae91603dd4368ca644745b186a47a6176
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300307"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726840"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
@@ -74,7 +74,7 @@ ms.locfileid: "53300307"
     **ЗАПРОС HTTP GET:**
 
     ```http
-        GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
+    GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
     ```
 
     Запрос должен вернуть объект, который является созданным в каталоге приложения `teamsApp` `id` ИД приложения. Это отличается от ID, который вы предоставили в манифесте Teams приложения:
@@ -193,10 +193,9 @@ Content-Type: application/json
 ## <a name="code-sample"></a>Пример кода
 
 | **Имя образца** | **Описание** | **.NET** | **Node.js** |
-|---------------|--------------|--------|-------------|--------|
-| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
-
-## <a name="see-also"></a>См. также
+|---------------|--------------|--------|-------------|
+| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [**Управление политиками установки приложений в Microsoft Teams**](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
 * [Отправка упреждающих уведомлений пользователям SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true)

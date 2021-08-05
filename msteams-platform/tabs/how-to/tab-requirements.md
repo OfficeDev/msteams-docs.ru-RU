@@ -1,19 +1,19 @@
 ---
-title: Необходимые компоненты
+title: Предварительные требования
 author: surbhigupta
 description: Каждая вкладка в Microsoft Teams должна соответствовать этим требованиям.
 keywords: команды вкладки группового канала настраиваются
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 8566bb0457db76e4639593dcd67a0442749c0a31
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 9babab566085c13089400e4e035f2c481295d0c4
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179939"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726833"
 ---
-# <a name="prerequisites"></a>Необходимые компоненты
+# <a name="prerequisites"></a>Предварительные требования
 
 Teams должны придерживаться следующих обязательных условий:
 
@@ -39,13 +39,21 @@ Teams должны придерживаться следующих обязат�
 
 * Вкладка MS Teams не поддерживает возможность загрузки веб-сайтов интрасети, которые используют самозаверяемые сертификаты.
 
+## <a name="tools-you-can-use-to-build-tabs"></a>Средства, которые можно использовать для создания вкладок
+* [Наборы средств Teams для Visual Studio Code](../../toolkit/visual-studio-code-overview.md)
+* [Наборы средств Teams для Visual Studio](../../toolkit/visual-studio-overview.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
+* [Создание первого приложения с помощью React](../../get-started/first-app-react.md)
+* [Создание первого приложения с помощью Blazor](../../get-started/first-app-blazor.md)
+* [Создание первого приложения с помощью SPFx](../../get-started/first-app-spfx.md)
+* [Создание первого чат-бота](../../get-started/first-app-bot.md)
+* [Создание первого расширения сообщения](../../get-started/first-message-extension.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)

@@ -5,12 +5,12 @@ description: Обзор пользовательских вкладок на п�
 localization_priority: Normal
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: bde45728a957bee3aa06752328943fe13d1fa3fe
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: ac217ba140edd87bcf0ff8f58829cd8bedede52a
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179924"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726861"
 ---
 # <a name="microsoft-teams-tabs"></a>Вкладки Microsoft Teams
 
@@ -77,6 +77,10 @@ ms.locfileid: "53179924"
 
 Вы можете иметь несколько каналов или групповых вкладок и до 16 личных вкладок для каждого приложения.
 
+### <a name="tools-you-can-use-to-build-tabs"></a>Средства, которые можно использовать для создания вкладок
+* [Teams набор средств visual Stuido Code](../toolkit/visual-studio-code-overview.md)
+* [Teams набор средств visual Stuido](../toolkit/visual-studio-overview.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
@@ -84,7 +88,7 @@ ms.locfileid: "53179924"
 * [Интеграция сканера QR или штрихкода](../concepts/device-capabilities/qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](../concepts/device-capabilities/location-capability.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
-> [Необходимые условия](~/tabs/how-to/tab-requirements.md)
+> [Необходимые компоненты](~/tabs/how-to/tab-requirements.md)

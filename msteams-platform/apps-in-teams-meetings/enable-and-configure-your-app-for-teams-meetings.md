@@ -3,12 +3,12 @@ title: Включить и настроить приложения для Teams 
 author: surbhigupta
 description: Включить и настроить приложения для Teams собраний
 ms.topic: conceptual
-ms.openlocfilehash: 16112b75e109702f1f0be6d335b8d407d35211b5
-ms.sourcegitcommit: 3560ee1619e3ab6483a250f1d7f2ceb69353b2dc
+ms.openlocfilehash: 69ff70c7dedb1c05728cb4ac8ed797dd6c6df959
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53335370"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726868"
 ---
 # <a name="enable-and-configure-your-apps-for-teams-meetings"></a>Включить и настроить приложения для Teams собраний
 
@@ -113,7 +113,7 @@ Teams собрания предоставляют уникальный опыт 
 
 Во время собрания вы можете использовать диалоговое окно meetingSidePanel или диалоговое окно для собраний для создания уникальных приложений.
 
-#### <a name="meetingsidepanel"></a>meetingSidePanel
+#### <a name="meeting-sidepanel"></a>Собрание Sidepanel
 
 С помощью meetingSidePanel можно настроить опыт собрания, который позволяет организаторам и презентаторам иметь различные представления и действия. В манифесте приложения необходимо добавить meetingSidePanel в массив контекста. В собрании и во всех сценариях приложение отрисовка в вкладке в собрании шириной 320 пикселей. Дополнительные сведения см. в [интерфейсе FrameContext.](/javascript/api/@microsoft/teams-js/microsoftteams.framecontext?view=msteams-client-js-latest&preserve-view=true)
 
@@ -171,11 +171,11 @@ Teams собрания предоставляют уникальный опыт 
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Описание | Пример |
+|Название примера | Описание | Пример |
 |----------------|-----------------|--------------|----------------|-----------|
-| Приложение для собраний | Демонстрирует, как использовать приложение Генератор маркеров собраний для запроса маркера, который создается последовательно, чтобы каждый участник имел справедливую возможность внести свой вклад в собрание. Это может быть полезно в таких ситуациях, как scrum meetings и Q&сеансов. | [View](https://github.com/OfficeDev/microsoft-teams-sample-meetings-token) |
+| Приложение для собраний | Демонстрирует, как использовать приложение Генератор маркеров собраний для запроса маркера, который создается последовательно, чтобы каждый участник имел справедливую возможность внести свой вклад в собрание. Это может быть полезно в таких ситуациях, как scrum meetings и Q&сеансов. | [Просмотр](https://github.com/OfficeDev/microsoft-teams-sample-meetings-token) |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Рекомендации по проектированию диалогов на собрании](design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)

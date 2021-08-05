@@ -6,12 +6,12 @@ keywords: группы вкладок группового канала, нас�
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 1276fdac2d3a30836b574b8e51b99fcbd7a415d2
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 6d1a0f6dd3593209f94966140ea94b33ac0c8d10
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179736"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726875"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -40,7 +40,7 @@ ms.locfileid: "53179736"
 <html>
 <head>
 ...
-    <script src= 'https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js'></script>
+    <script src= 'https://statics.teams.cdn.office.net/sdk/v1.10.0/js/MicrosoftTeams.min.js'></script>
 ...
 </head>
 
@@ -109,7 +109,7 @@ ms.locfileid: "53179736"
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)

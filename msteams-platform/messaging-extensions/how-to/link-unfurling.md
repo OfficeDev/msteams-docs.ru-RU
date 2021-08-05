@@ -5,12 +5,12 @@ description: Выполнение разгрузки ссылок с расши�
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 7713fe794c9d15453438cfe3e1bde0238bde9d8c
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 3f3fca5483fb3828f4e3957d0d22dc1e361f7ffb
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068952"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726931"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 
@@ -78,6 +78,8 @@ ms.locfileid: "53068952"
 * [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
 * [Office 365 Карта Connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 * [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
+
+Вы можете отобразить предварительный просмотр адаптивной карты или Office 365 соединителя в списке результатов с помощью свойства предварительного просмотра. Свойство предварительного просмотра не требуется, если результаты уже являются картами Hero или Thumbnail. Если вы используете вложение предварительного просмотра, оно должно быть либо карточкой Hero, либо Thumbnail. Если не указано свойство предварительного просмотра, предварительный просмотр карты не удается, и ничего не отображается.
 
 ### <a name="example"></a>Пример
 
@@ -177,7 +179,7 @@ class TeamsLinkUnfurlingBot extends TeamsActivityHandler {
 
 * * *
 
-## <a name="see-also"></a>Дополнительные материалы 
+## <a name="see-also"></a>См. также 
 
 * [Карточки](~/task-modules-and-cards/what-are-cards.md)
 * [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)

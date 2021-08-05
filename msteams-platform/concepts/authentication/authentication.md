@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 localization_priority: Normal
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: 6511b1223e70d09ed2d158f6649a391999553ed1
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: ed169e3cc5f9190571890cb891665a493bd052d1
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179890"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726945"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
@@ -18,11 +18,11 @@ ms.locfileid: "53179890"
 
 Чтобы получить доступ к данным пользователей, защищенным Azure Active Directory (AAD) и получить доступ к данным из таких служб, как Facebook и Twitter, приложение устанавливает надежное подключение к этим поставщикам. Если приложение использует API microsoft Graph в области пользователя, проверка подлинности пользователя для получения соответствующих маркеров проверки подлинности.
 
-В Teams есть два разных потока проверки подлинности для приложения. Выполните традиционный поток проверки [](~/tabs/how-to/create-tab-pages/content-page.md) подлинности на веб-сайте на странице контента, встроенной в вкладку, страницу конфигурации или модуль задач. Если приложение содержит разговорный бот, используйте поток OAuthPrompt и необязательно службу маркеров Azure Bot Framework для проверки подлинности пользователя в рамках беседы.
+В Teams есть два разных потока проверки подлинности для приложения. Выполните традиционный поток проверки [](~/tabs/how-to/create-tab-pages/content-page.md) подлинности на веб-сайте на странице контента, встроенной в вкладку, страницу конфигурации или модуль задач. Если приложение содержит бот бесед, используйте поток OAuthPrompt и при желании службу маркеров Azure Bot Framework для проверки подлинности пользователя в ходе беседы.
 
-## <a name="web-based-authentication-flow"></a>Поток проверки подлинности на веб-основе
+## <a name="web-based-authentication-flow"></a>Поток проверки подлинности через Интернет
 
-Используйте веб-поток проверки подлинности [для](~/tabs/what-are-tabs.md) вкладок и выберите его с помощью разговорных [ботов](~/bots/what-are-bots.md) или [расширений обмена сообщениями.](~/messaging-extensions/what-are-messaging-extensions.md) Используйте [SDK Microsoft Teams JavaScript](/javascript/api/overview/msteams-client) на странице веб-контента, чтобы включить проверку подлинности. После включения проверки подлинности встраить страницу контента в вкладку, страницу конфигурации или модуль задач. Дополнительные сведения о потоке проверки подлинности на веб-основе см. в этой странице.
+Используйте веб-поток проверки подлинности [для](~/tabs/what-are-tabs.md) вкладок и выберите его с помощью разговорных [ботов](~/bots/what-are-bots.md) или [расширений обмена сообщениями.](~/messaging-extensions/what-are-messaging-extensions.md) Используйте [SDK Microsoft Teams JavaScript](/javascript/api/overview/msteams-client) на странице веб-контента, чтобы включить проверку подлинности. После включения проверки подлинности вставьте страницу содержимого во вкладку, страницу конфигурации или модуль задачи. Дополнительные сведения о потоке проверки подлинности на веб-основе см. в этой странице.
 
 * [Добавление проверки подлинности](~/bots/how-to/authentication/add-authentication.md) в Teams бот описывает использование потока веб-проверки подлинности с помощью разговорного бота.
 * [Поток проверки подлинности на вкладке](~/tabs/how-to/authentication/auth-flow-tab.md) описывает работу проверки подлинности вкладок в Teams. Это показывает типичный поток проверки подлинности на веб-основе, используемый для вкладок.
@@ -32,7 +32,7 @@ ms.locfileid: "53179890"
 
 ## <a name="the-oauthprompt-flow-for-conversational-bots"></a>Поток OAuthPrompt для разговорных ботов
 
-OAuthPrompt Azure Bot Framework упрощает проверку подлинности для приложений с помощью разговорных ботов. Используйте службу маркеров Azure Bot Framework для помощи кэшингу маркеров.
+OAuthPrompt платформы Azure Bot Framework упрощает проверку подлинности для приложений с помощью ботов бесед. Используйте службу маркеров Azure Bot Framework для кэширования маркеров.
 
 Дополнительные сведения об использовании OAuthPrompt см.:
 
@@ -43,10 +43,10 @@ OAuthPrompt Azure Bot Framework упрощает проверку подлинн
 
 предоставляет образец проверки подлинности бота v3 SDK.
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
-| Проверка подлинности ботов | В этом примере показано, как начать проверку подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
-| Tab, Bot and Messaging Extension (ME) SSO | В этом примере показаны SSO для tab, Bot и ME — поиск, действие, linkunfurl. | Недоступно | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
+| Проверка подлинности ботов | В этом примере показано, как начать проверку подлинности в боте для Microsoft Teams. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Tab, Bot and Messaging Extension (ME) SSO | В этом примере показаны SSO для tab, Bot и ME — поиск, действие, linkunfurl. |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
 
 
 ## <a name="configure-the-identity-provider"></a>Настройка поставщика удостоверений

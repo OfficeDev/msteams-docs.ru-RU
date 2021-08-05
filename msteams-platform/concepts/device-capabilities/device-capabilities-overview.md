@@ -6,12 +6,12 @@ ms.author: surbhigupta
 keywords: Микрофон микрофона микрофона микрофона qr qr code qrcode штрихкода штрихкода сканера сканера расположения карты изображений камеры возможности родных разрешений устройства
 localization_priority: Normal
 ms.topic: overview
-ms.openlocfilehash: 069bd27057784076b3b701d013ead209ec6fa3a9
-ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
+ms.openlocfilehash: e1ee7f81c5280baafb1325a5c6537f9fa00f53ad
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211585"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726938"
 ---
 # <a name="device-capabilities"></a>Возможности устройств
 
@@ -23,9 +23,9 @@ Microsoft Teams постоянно совершенствует возможно
 * Возможности мультимедиа, такие как
     * Камера
     * Микрофон
-    * Коллекция
+    * Галерея
     * Сканер QR или штрихкода
-* Расположение
+* Местонахождение
 
 Получив доступ к возможностям устройства, вы можете интегрировать их с Teams платформой для повышения эффективности совместной работы. 
 
@@ -43,3 +43,4 @@ Microsoft Teams постоянно совершенствует возможно
 * Share location using [location picker](location-capability.md).
 
 Кроме того, вы можете интегрировать [](people-picker-capability.md) Teams для выбора родных людей, что позволяет пользователям искать и выбирать людей в веб-приложении.
+

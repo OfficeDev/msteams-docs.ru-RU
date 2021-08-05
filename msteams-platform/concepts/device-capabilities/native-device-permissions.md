@@ -4,12 +4,12 @@ keywords: разрешения командных приложений
 description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя
 localization_priority: Normal
 ms.topic: how-to
-ms.openlocfilehash: 37312912b4901cd31feeb9b0ee9bc76a3e03826a
-ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
+ms.openlocfilehash: 420b874770a4ad506dbedd575600f333a51ad5c0
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211620"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726952"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений на устройство для Microsoft Teams приложения
 
@@ -121,7 +121,7 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 > * Поддержка `camera` , `gallery` и включен через `microphone` [**selectMedia API**](/javascript/api/@microsoft/teams-js/microsoftteams.media.media?view=msteams-client-js-latest&preserve-view=true). Используйте [**API captureImage**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true) для одного захвата изображения.
 > * Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) Это необходимо использовать для расположения, так как API геолокации HTML5 в настоящее время не полностью поддерживается на `getLocation API` Teams настольном клиенте.
 
-Например:
+Примеры:
  * Чтобы подсказыть пользователю доступ к их расположению, необходимо `getCurrentPosition()` вызвать:
 
     ```Javascript
@@ -190,6 +190,12 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 
 > [!NOTE]
 > Если вы даете согласие на разрешения на родном устройстве, оно допустимо только для _текущего_ сеанса входа.
+
+## <a name="code-sample"></a>Пример кода
+
+| **Имя образца** | **Описание** | **Node.js** |
+|---------------|--------------|--------|
+|Разрешения для устройств | Используйте Microsoft Teams пример вкладки для демонстрации разрешений устройств |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-device-permissions/nodejs) |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

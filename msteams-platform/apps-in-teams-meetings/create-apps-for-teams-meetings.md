@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 2dce62aaf94e68c14183f0d91e5ba823f2ef3d7e
-ms.sourcegitcommit: 3560ee1619e3ab6483a250f1d7f2ceb69353b2dc
+ms.openlocfilehash: 21189d09be19152f6580e4d3a75766c3bb6cbfcf
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53335349"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726847"
 ---
 # <a name="prerequisites-and-api-references-for-apps-in-teams-meetings"></a>Необходимые условия и ссылки на API для приложений в собраниях Teams
 
 Чтобы расширить возможности ваших приложений на протяжении жизненного цикла собраний, Teams позволяет работать с приложениями для Teams собраний. Необходимо пройти необходимые условия и использовать ссылки API приложений для собраний для улучшения работы с собраниями.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Прежде чем работать с приложениями для Teams собраний, необходимо иметь представление о следующем:
 
@@ -49,7 +49,7 @@ ms.locfileid: "53335349"
 
 В следующей таблице приводится список этих API:
 
-|API|Описание|Запрос|Source|
+|API|Описание|Запрос|Источник|
 |---|---|----|---|
 |**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Microsoft Teams Клиентская SDK|
 |**GetParticipant**| Этот API позволяет боту получать сведения о участниках, встречая ID и ID участника. |**GET** _**/v1/meetings/{meetingId}/participants/{participantsId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
@@ -74,8 +74,8 @@ API `GetParticipant` включает следующие параметры за
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO Tab. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| String | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO Tab. |
 |**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
 
 #### <a name="example"></a>Пример
@@ -274,7 +274,7 @@ API сведений о собраниях включает в себя след
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
 #### <a name="example"></a>Пример
 
@@ -401,7 +401,7 @@ The JSON response body for Meeting Details API is as follows:
     "value": { 
         "MeetingType": "Scheduled", 
         "Title": "Meeting Start/End Event", 
-        "Id":"meeting id", 
+        "Id": "meeting id", 
         "JoinUrl": "url" 
         "StartTime": "2021-04-29T16:17:17.4388966Z" 
     }, 
@@ -465,7 +465,13 @@ The JSON response body for Meeting Details API is as follows:
 
 Ваш бот получает событие через `OnEventActivityAsync` обработник.
 
-Для десерализации полезной нагрузки json для получения метаданных собрания вводится объект модели. Метаданные собрания находятся в свойстве `value` в полезной нагрузке события. Создается объект модели, переменные члена которого соответствуют клавишам, которые находятся под свойством `MeetingStartEndEventvalue` `value` в полезной нагрузке события.
+Для десерализации полезной нагрузки json для получения метаданных собрания вводится объект модели. Метаданные собрания находятся в свойстве `value` в полезной нагрузке события. Создается объект модели, переменные члена которого соответствуют клавишам, которые находятся под свойством `MeetingStartEndEventvalue` `value` в полезной нагрузке события.     
+      
+> [!NOTE]      
+> * Получите ID собрания из `turnContext.ChannelData` .    
+> * Не используйте ИД беседы в качестве ИД собрания.     
+> * Не используйте ID собрания из полезной нагрузки на события `turncontext.activity.value` собраний. 
+      
 
 В следующем коде показано, как захватить метаданные собрания , , , и от `MeetingType` начала и окончания собрания `Title` `Id` `JoinUrl` `StartTime` `EndTime` события:
 
@@ -502,20 +508,20 @@ public class MeetingStartEndEventValue
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Описание | .NET | Node.js |
+|Название примера | Описание | .NET | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-| Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
-| Вкладка "Сведения в собрании" | Microsoft Teams для итерактинга с помощью вкладки Подробные сведения на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
+| Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
+| Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
+| Вкладка "Сведения в собрании" | Microsoft Teams для итерактинга с помощью вкладки Подробные сведения на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Рекомендации по проектированию диалогов на собрании](design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для Teams собраний](teams-apps-in-meetings.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Включить и настроить приложения для Teams собраний](enable-and-configure-your-app-for-teams-meetings.md)

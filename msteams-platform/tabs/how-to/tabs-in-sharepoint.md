@@ -6,12 +6,12 @@ keywords: teams tabs sharepoint framework development
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 6720cf3fdc8a02d325bf775f4bf319b9d07ec17c
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 6a9eead19685afb41c71e57cb44c7608973db1ad
+ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068647"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726917"
 ---
 # <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53068647"
                     </div>
                     <div class="cardText">
                         <h3>Teams Вкладки в SharePoint</h3>
-                        <p>Создайте богатые возможности приложения в SharePoint, введя Teams приложение в Sharepoint (эта статья).</p>
+                        <p>Создайте богатые возможности приложения в SharePoint, введя Teams приложение в SharePoint (эта статья).</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@ ms.locfileid: "53068647"
 * Охватите SharePoint пользователями с помощью существующей Teams вкладки.
 * Upload приложение проявляется непосредственно в каталоге SharePoint приложения. [Teams пакеты приложений](~/concepts/build-and-test/apps-package.md) теперь поддерживаются SharePoint.
 * Пользователи настраивают вкладку на странице так же, как и SharePoint веб-части.
-* Ваша вкладка может получить доступ к [контексту](~/tabs/how-to/access-teams-context.md) sameas это может, при запуске Teams.
+* Ваша вкладка может получить доступ к [контексту](~/tabs/how-to/access-teams-context.md) так же, как и при работе внутри Teams.
 
 **Добавление вкладки Teams в SharePoint**
 
@@ -120,11 +120,11 @@ ms.locfileid: "53068647"
 
 1. Вы можете увидеть опыт SharePoint страниц. Назови страницу **в качестве вкладки Teams.**
 
-1. Откройте инструментарий веб-части, нажав кнопку, и выберите вкладку `+` Teams с именем **Contoso HR**. Веб-части сортироваться в алфавитном порядке. Если это длинный список, его можно найти с помощью панели поиска. Это создает веб-часть на холсте, содержаще вкладку Teams. На следующем изображении отображается представление вкладки:
+1. Откройте инструментарий веб-части, выбрав кнопку, и выберите вкладку `+` Teams с именем **Contoso HR**. Веб-части сортироваться в алфавитном порядке. Если это длинный список, его можно найти с помощью панели поиска. Это создает веб-часть на холсте, содержаще вкладку Teams. На следующем изображении отображается представление вкладки:
 
    ![Представление Tab](~/assets/images/tabs/tabs-in-sharepoint/image071.png)
 
-1. Нажмите **кнопку Публикация** после завершения редактирования.
+1. Выберите **кнопку Публикация** после завершения редактирования.
 
 1. Выберите **страницу Добавить в навигацию,** чтобы иметь быструю ссылку на страницу в левой панели навигации. На следующем изображении отображается вкладка в Sharepoint: 
 
@@ -134,14 +134,14 @@ ms.locfileid: "53068647"
 
 После публикации страницы вы можете изучить возможность превращения Teams приложения в более полное приложение [SharePoint](/sharepoint/dev/spfx/web-parts/single-part-app-pages). Это преобразует текущую страницу в страницу приложения, показывая обычную SharePoint страницу с полным опытом страницы для вкладки Teams. 
 
-На следующем изображении отображается полное Teams приложения в Sharepoint: Изображение вкладок ![ в Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image085.png)
+На следующем изображении отображается полное Teams приложения в SharePoint: Изображение вкладок ![ в Sharepoint](~/assets/images/tabs/tabs-in-sharepoint/image085.png)
 
 ## <a name="code-sample"></a>Пример кода
-| **Пример имени** | **Описание** | **SPFx** |
+| **Название примера** | **Описание** | **SPFx** |
 |-----------------|-----------------|----------|
-| SPFx веб-части | SPFx веб-части для вкладок, каналов и групп. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group/spfx)
+| SPFx веб-части | SPFx веб-части для вкладок, каналов и групп. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group/spfx)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Создание вкладки Microsoft Teams с помощью SharePoint Framework - Обучающий материал](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
 * [Использование страницы одной части приложения в SharePoint Online](/sharepoint/dev/spfx/web-parts/single-part-app-pages)
