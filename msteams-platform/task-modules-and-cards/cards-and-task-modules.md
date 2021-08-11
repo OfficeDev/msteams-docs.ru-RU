@@ -4,12 +4,12 @@ description: Карты и модули задач.
 author: surbhigupta12
 ms.topic: conceptual
 localization_priority: Normal
-ms.openlocfilehash: 64079bc8bb653e5fb9ac3af2e3fb0d848a0c6835
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 5980759e1a6650dd801b92fae804994a776dd6fd8edbfb257a915f9092d7a1f9
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140786"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57709561"
 ---
 # <a name="cards-and-task-modules"></a>Карты и модули задач
 

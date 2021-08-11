@@ -6,12 +6,12 @@ keywords: соединитель teams o365
 localization_priority: Normal
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 28a2b35e868baf34e35a11a00e10b30b0f09c236
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: e52402e841b675de7d0c19302b8c8090bcb90cef27ac61e8ac3d6dd69a0bb076
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179757"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57709325"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -128,7 +128,7 @@ ms.locfileid: "53179757"
 
 В следующей таблице параметров и сведений о свойствах `GetSetting` отклика:
 
-| Параметры   | Сведения |
+| Параметры   | Details |
 |-------------|---------|
 | `entityId`       | Код сущности, задаваемый кодом при `setSettings()` вызове. |
 | `configName`  | Имя конфигурации, заданная кодом при `setSettings()` вызове. |
@@ -250,6 +250,9 @@ ms.locfileid: "53179757"
 1. В поле поиска введите команду или имя канала.
 1. Выберите **Настройка соединителя из** выпадаемого меню в правом нижнем углу окна диалогов.
 
+> [!IMPORTANT]
+> В настоящее время настраиваемые соединители недоступны в облако сообщества для государственных организаций (GCC), GCC-High и Department of Defense (DoD).
+
 Соединитектор доступен в разделе &#9679;&#9679;&#9679; > **Дополнительные** параметры  >  **Соединители**  >  **Все**  >  **соединители для вашей команды** для этой группы. Вы можете перемещаться путем прокрутки в этот раздел или поиска соединитеного приложения. Чтобы настроить или изменить соединители, выберите **Настройка**.
 
 ## <a name="distribute-webhook-and-connector"></a>Распространение веб-ок и соединители
@@ -262,12 +265,12 @@ ms.locfileid: "53179757"
 
 В следующей таблице приводится пример имени и его описания:
 
-|**Пример имени** | **Описание** | **.NET** | **Node.js** |
+|**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Соединители    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
-| Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.|  | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
+| Соединители    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
+| Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.|  | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
 * [Создание входящих веб-ок](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)

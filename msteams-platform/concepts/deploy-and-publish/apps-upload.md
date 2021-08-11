@@ -4,12 +4,12 @@ description: Узнайте, как перегрузить приложение 
 ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
-ms.openlocfilehash: a54068ffd57a5d622cad72267c049cee69b18d58
-ms.sourcegitcommit: 2c8b35899dd845acd66f1f927e40d99523c29a91
+ms.openlocfilehash: 86b085f55c66b7ce9937665bdd20b04841344e924610237bf2e592d867d0b632
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684651"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708712"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Upload приложение в Microsoft Teams
 
@@ -19,7 +19,10 @@ ms.locfileid: "52684651"
 * Вы создали приложение только для себя. Например, автоматизировать рабочий процесс.
 * Вы создали приложение для небольшого набора пользователей, например рабочей группы.
 
-## <a name="prerequisites"></a>Предварительные условия
+> [!IMPORTANT]
+> В настоящее время приложения для боковой загрузки доступны в облако сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
+
+## <a name="prerequisites"></a>Необходимые компоненты
 
 * Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и проверьте его [на](https://dev.teams.microsoft.com/appvalidation.html) ошибки.
 * [Включить настраиваемую загрузку](~/concepts/build-and-test/prepare-your-o365-tenant.md#enable-custom-teams-apps-and-turn-on-custom-app-uploading) приложения в Teams.

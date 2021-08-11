@@ -5,12 +5,12 @@ author: heath-hamilton
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: f1823a064cd182d0271aa97bef58ec724c7819b3
-ms.sourcegitcommit: 33a43c61f27ae750776616b2cf90159455d8ba6c
+ms.openlocfilehash: f6ff2799b5f300eded89ff24b75114a7ba0fa79b330a543e684e99127dc89e4c
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52721845"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57709448"
 ---
 # <a name="design-your-tab-for-microsoft-teams"></a>Разработка вкладки для Microsoft Teams
 
@@ -31,13 +31,13 @@ ms.locfileid: "52721845"
 * Канал
 * Собрание (до, во время или после собрания)
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 В следующем примере показано, как пользователи могут добавлять вкладку в канал.
 
 :::image type="content" source="../../assets/images/tabs/design-add-tab.png" alt-text="В примере показана вкладка, добавляемая в канал." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 Пользователи могут получить доступ к вкладками, выбрав кнопку **More** в канале (пример ниже) или чат, в котором они были добавлены.
 
@@ -60,7 +60,7 @@ ms.locfileid: "52721845"
 |Счетчик|Описание|
 |----------|-----------|
 |1|**Логотип приложения:** логотип приложения полного цвета вашего приложения.|
-|2|**Имя приложения.** Полное имя вашего приложения.|
+|2|**Имя приложения**: полное имя приложения.|
 |3|**iframe:** адаптивный пробел для контента приложения (например, параметры вкладки или проверка подлинности).|
 |4 |**О ссылке.** Открывает диалоговое окно, в котором отображаются дополнительные сведения о приложении, такие как полное описание, разрешения, необходимые приложению, а также ссылки на политику конфиденциальности и условия службы.|
 |5 |**Кнопка Закрыть:** закрывает диалоговое окно.|
@@ -86,11 +86,11 @@ ms.locfileid: "52721845"
 
 Вкладки предоставляют полноэкранный веб-опыт в Teams, где можно отобразить совместное содержимое— такие доски задач и панели мониторинга и важные сведения.
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/tabs/design-view-tab.png" alt-text="В примере показана вкладка с доской задач." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-view-tab.png" alt-text="В примере показана вкладка для мобильных устройств с доской задач." border="false":::
 
@@ -98,7 +98,7 @@ ms.locfileid: "52721845"
 
 ### <a name="anatomy-tab"></a>Анатомия: Вкладка
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/tabs/design-view-tab-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса вкладки." border="false":::
 
@@ -109,7 +109,7 @@ ms.locfileid: "52721845"
 |3|**Чат tab:** открывает чат справа, позволяя пользователям беседовать рядом с содержимым.|
 |4 |**iframe:** отображает содержимое приложения.|
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-view-tab-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса вкладки." border="false":::
 
@@ -140,11 +140,11 @@ ms.locfileid: "52721845"
 
 Пользователи могут автоматически размещать сообщения в канале или чате после того, как они добавит новую вкладку. Это не только сообщает членам команды о новом содержимом и предоставляет ссылку на вкладку, но и позволяет пользователям начать говорить о вкладке.
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/tabs/design-use-tab-channel.png" alt-text="В примере показана вкладка, обсуждаемая в потоке канала." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-channel.png" alt-text="В примере показана вкладка для мобильных устройств, которая обсуждается в потоке канала." border="false":::
 
@@ -154,11 +154,11 @@ ms.locfileid: "52721845"
 
 Пользователи могут беседуть рядом с просматриваемым контентом вкладок. На рабочем столе чат открывается на стороне контента приложения.
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/tabs/design-use-tab-side-chat.png" alt-text="В примере показана вкладка с открытой в правой части чатом." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-side-chat.png" alt-text="В примере показана вкладка для мобильных устройств с областью чата в контексте." border="false":::
 
@@ -174,7 +174,7 @@ ms.locfileid: "52721845"
 
 ### <a name="anatomy-tab-menu"></a>Анатомия: меню Tab
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/tabs/design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса меню вкладок." border="false":::
 
@@ -184,7 +184,7 @@ ms.locfileid: "52721845"
 |2|**Переименование.** Пользователи могут дать вкладке имя, значимое каналу, чату или собранию.|
 |3|**Удаление.** Удаляет вкладку из канала, чата или собрания.|
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса меню вкладок для мобильных устройств." border="false":::
 
@@ -274,21 +274,21 @@ ms.locfileid: "52721845"
    :::column-end:::
 :::row-end:::
 
-### <a name="theming"></a>Темы
+### <a name="theming"></a>Визуальные темы
 
 :::row:::
    :::column span="":::
 :::image type="content" source="../../assets/images/tabs/design-tab-theming-do.png" alt-text="Иллюстрация, показывающая, что делать с темой вкладок." border="false":::
 
-#### <a name="do-take-advantage-of-teams-color-tokens"></a>Do: Воспользоваться преимуществами Teams цветовых маркеров
+#### <a name="do-take-advantage-of-teams-color-tokens"></a>Нужно: использовать преимущества цветовых маркеров Teams
 
-Каждая Teams имеет свою цветовую схему. Чтобы автоматически обрабатывать изменения темы, используйте маркеры цвета <a href="https://fluentsite.z22.web.core.windows.net/0.51.3/colors#color-scheme" target="_blank">(Fluent UI)</a> в своем дизайне.
+Каждая тема Teams имеет собственную цветовую схему. Чтобы автоматически обрабатывать изменения темы, используйте в дизайне <a href="https://fluentsite.z22.web.core.windows.net/0.51.3/colors#color-scheme" target="_blank">цветовые маркеры (Fluent UI)</a>.
 
    :::column-end:::
    :::column span="":::
 :::image type="content" source="../../assets/images/tabs/design-tab-theming-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с темой вкладок." border="false":::
 
-#### <a name="dont-hard-code-color-values"></a>Не: значения цвета жесткого кода
+#### <a name="dont-hard-code-color-values"></a>Нельзя: жестко задавать значения цветов прямо в коде
 
 Если вы не используете маркеры Teams цвета, ваши проекты будут менее масштабируемыми и у вас будет больше времени для управления.
 

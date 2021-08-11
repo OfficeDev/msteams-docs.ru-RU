@@ -4,12 +4,12 @@ description: В этой статье описывается, как получ�
 localization_priority: Normal
 ms.topic: how-to
 keywords: пользовательский контекст вкладок teams
-ms.openlocfilehash: 8c91cf5a65f13d9f58f6ae8aa2678266c37338c8
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 32c8606d172a785356107750eac8168b1987d7f6b41d44f02297f0c19d22aa61
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179729"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57709332"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 

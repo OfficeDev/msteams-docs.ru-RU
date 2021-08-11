@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 localization_priority: Normal
 keywords: deeplink teams deep link
-ms.openlocfilehash: 07eb03f2e9686c26a917ab1f2d72fc0668e59107
-ms.sourcegitcommit: 9f499908437655d6ebdc6c4b3c3603ee220315b7
+ms.openlocfilehash: 2f382e3612b0df026a12b8b37fdbbc278df6ecf8fe8e0c67582c3486eb91c5be
+ms.sourcegitcommit: 569ff24cc41c46d886b913a916401b18e0eb1439
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949681"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823216"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -136,7 +136,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 `https://teams.microsoft.com/l/chat/0/0?users=<user1>,<user2>,...&topicName=<chat name>&message=<precanned text>`
 
-Пример: `https://teams.microsoft.com/l/chat/0/0?users=joe@contoso.com,bob@contoso.com&topicName=Prep%20For%20Meeting%20Tomorrow&message=Hi%20folks%2C%20kicking%20off%20a%20chat%20about%20our%20meeting%20tomorrow`.
+Пример: `https://teams.microsoft.com/l/chat/0/0?users=joe@contoso.com,bob@contoso.com&topicName=Prep%20For%20Meeting%20Tomorrow&message=Hi%20folks%2C%20kicking%20off%20a%20chat%20about%20our%20meeting%20tomorrow`
 
 Параметры запроса:
 
@@ -199,7 +199,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 * `entityWebUrl`. Необязательный url-адрес с откатным URL-адресом, который можно использовать, если клиент не поддерживает отрисовку вкладки или `https://tasklist.example.com/123` `https://tasklist.example.com/list123/task456` .
 * `entityName`: Метка для элемента на вкладке, используемая при отображе глубокой ссылки, список задач 123 или задача 456.
 
-Пример: https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&TaskList.
+Пример: https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&TaskList
 
 ## <a name="deep-linking-to-the-scheduling-dialog"></a>Глубокая связь с диалогом планирования
 
@@ -212,7 +212,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 Используйте следующий формат для глубокой ссылки, которую можно использовать в карточке расширения бота, соединитетеля или обмена сообщениями: `https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
 
-Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`.
+Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
 
 Параметры запроса:
 
@@ -238,25 +238,25 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ### <a name="generate-a-deep-link-to-a-call"></a>Создание глубокой ссылки на вызов
 
-| Глубокая ссылка | Формат | Пример |
+| Прямая ссылка | Формат | Пример |
 |-----------|--------|---------|
 | Сделать звуковой вызов | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&gt; | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com |
-| Сделать аудио- и видеозво | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&&gt; withvideo=true | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com&withvideo=true |
-|Сделать аудио- и видеозво связи с необязательным источником параметров | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&&gt; withvideo=true&source=demoApp | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com&withvideo=true&source=demoApp |  
+| Сделать аудио- и видеозво | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&&gt; сVideo=true | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com&withVideo=true |
+|Сделать аудио- и видеозво связи с необязательным источником параметров | https://teams.microsoft.com/l/call/0/0?users=&lt;user1 &gt; , &lt; user2&&gt; сVideo=true&source=demoApp | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com&withVideo=true&source=demoApp |  
 | Сделайте аудио- и видеозвонок для сочетания пользователей VoIP и PSTN | https://teams.microsoft.com/l/call/0/0?users=&lt&gt;;user1,4: &lt; телефонный номер&gt; | https://teams.microsoft.com/l/call/0/0?users=joe@contoso.com,4:9876543210 |
   
 Ниже параметров запроса:
 * `users`: Разделенный запятой список пользовательских ИД, представляющих участников вызова. В настоящее время поле ID пользователя поддерживает Azure AD UserPrincipalName, как правило, адрес электронной почты или в случае вызова PSTN, оно поддерживает pstn mri 4: &lt; phonenumber &gt; .
-* `Withvideo`Это необязательный параметр, который можно использовать для видеосвязи. Настройка этого параметра будет включать только камеру вызываемой. Приемник вызова может отвечать посредством аудио- или аудио- и видеоконферентов через окно уведомления Teams вызова. 
+* `withVideo`Это необязательный параметр, который можно использовать для видеосвязи. Настройка этого параметра будет включать только камеру вызываемой. Приемник вызова может отвечать посредством аудио- или аудио- и видеоконферентов через окно уведомления Teams вызова. 
 * `Source`. Это необязательный параметр, который сообщает об источнике deeplink.
 
 ## <a name="code-sample"></a>Пример кода
 
-| Пример имени | Описание | C# |Node.js|
+| Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Deep Link consuming Subentity ID  |Microsoft Teams пример приложения для демонстрации deeplink от бот-чата до вкладки, потребляя ID subentity.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
+|Deep Link consuming Subentity ID  |Microsoft Teams пример приложения для демонстрации deeplink от бот-чата до вкладки, потребляя ID subentity.|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
 

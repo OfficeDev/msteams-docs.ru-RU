@@ -6,12 +6,12 @@ keywords: Microsoft Teams примеры демонстрации шаблоно
 localization_priority: Normal
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: 72bb5506e552dfa3d35426e99a7ee74088ef41f6
-ms.sourcegitcommit: 0a775ae12419f3bc7484e557f4b4ae815bab64ec
+ms.openlocfilehash: 1820de7a7a2a46766fac646c7a7267e754b855bfb1ea549ba208663ef9cadcd0
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53333696"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57709021"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -621,7 +621,7 @@ Scrums для группового чата является вспомогат�
 
 ![Создание представления регистрации](../assets/images/staff-check-ins-create.png)
 
-## <a name="survey"></a>Опрос
+## <a name="survey"></a>Survey
 
 Survey — это настраиваемое приложение Microsoft Teams для расширения обмена сообщениями, которое позволяет создавать опрос в чате или канале для сбора данных и получения информации. [](../messaging-extensions/what-are-messaging-extensions.md) Приложение поддерживается во всех Teams платформах, таких как настольный компьютер, браузер, iOS и Android, и готово к развертыванию в рамках Microsoft 365 подписки.  
 

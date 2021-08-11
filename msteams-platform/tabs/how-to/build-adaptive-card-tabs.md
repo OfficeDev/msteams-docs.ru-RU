@@ -4,17 +4,16 @@ author: KirtiPereira
 description: Создание вкладок с помощью адаптивных карт
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 4ec3cab39fa8383b89a5f9574cf8a7f864abd341
-ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
+ms.openlocfilehash: 8f1b8bbc27a2b10d8e4fbca8e87c75eeb29c8c36efacd6eb3cf921295e27b88b
+ms.sourcegitcommit: 569ff24cc41c46d886b913a916401b18e0eb1439
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726854"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823230"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
 > [!IMPORTANT]
-> * Эта функция находится в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md) поддерживается в настольных компьютерах и мобильных устройствах. Поддержка в веб-браузере скоро.
 > * Вкладки с адаптивными картами в настоящее время поддерживаются только в качестве личных приложений.
 
 При разработке вкладки с помощью традиционного метода могут возникнуть такие проблемы:
@@ -38,7 +37,6 @@ ms.locfileid: "53726854"
 
 * Ознакомьтесь с разработкой [ботов,](../../bots/what-are-bots.md) [адаптивными](../../task-modules-and-cards/what-are-cards.md#adaptive-cards)картами и модулями задач [в](../../task-modules-and-cards/task-modules/task-modules-bots.md) Teams.
 * У вас есть бот, работающий в Teams для разработки.
-* Будьте в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md).
 
 ## <a name="changes-to-app-manifest"></a>Изменения манифеста приложений
 
@@ -330,7 +328,7 @@ ms.locfileid: "53726854"
 }
 ```
 
-## <a name="authentication"></a>Аутентификация
+## <a name="authentication"></a>Проверка подлинности
 
 В предыдущих разделах вы видели, что большинство парадигм разработки можно расширить из запросов и ответов модулей задач в запросы и ответы на вкладки. При обработке проверки подлинности рабочий процесс вкладки Adaptive Card следует шаблону проверки подлинности для расширений обмена сообщениями. Дополнительные сведения см. в [добавлении проверки подлинности.](../../messaging-extensions/how-to/add-authentication.md)
 
@@ -436,7 +434,7 @@ ms.locfileid: "53726854"
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
