@@ -6,12 +6,12 @@ ms.date: 08/26/2020
 localization_priority: Normal
 ms.topic: conceptual
 title: Веб-приложения
-ms.openlocfilehash: b7f530198a8e1c240e3cf4b227d786af94f6c89e
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 4a25649a8a791efc3f33572da203e36c7f39cb11f64676218f3a3f240da956c1
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630434"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708331"
 ---
 # <a name="web-apps"></a>Веб-приложения 
 
@@ -33,7 +33,7 @@ ms.locfileid: "52630434"
 
 |Общие функции приложения   |Teams платформы   |
 |----------|-----------|
-|Встроенная веб-страницу, домашняя или веб-страницу  |[Вкладки](../tabs/what-are-tabs.md)  |
+|Встроенная веб-страницу, домашняя или веб-страницу  |[Tabs](../tabs/what-are-tabs.md)  |
 |Совместное распространение ярлыков и расширений  |[Расширения для системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)  |
 |Ярлыки действий и расширения  |[Расширения для системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)  |
 |Чат-боты  |[Боты](../bots/what-are-bots.md) |
@@ -86,6 +86,9 @@ Azure Active Directory (AD) является поставщиком удосто
 
 Teams имеет механизмы единого входного (SSO) с Azure AD для сторонних приложений. Он также предоставляет рекомендации по потокам проверки подлинности другим поставщикам удостоверений с использованием таких стандартов, как OAuth и Open ID Подключение, известных как OIDC.
 
+> [!IMPORTANT]
+> В настоящее время сторонние приложения доступны в облако сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD). Сторонние приложения по умолчанию отключены для GCC. Чтобы включить сторонние приложения для GCC, [](/microsoftteams/teams-app-permission-policies) см. в приложении управление политиками разрешений и [управление приложениями.](/microsoftteams/manage-apps)
+
 Для SharePoint страниц вы можете использовать только SSO и не можете добавить другой azure AD ID, если вы хотите, чтобы SSO работало для другого приложения, так как ID является SharePoint приложением.
 
 Дополнительные информацию о [проверке подлинности в Teams](../concepts/authentication/authentication.md).
@@ -94,7 +97,7 @@ Teams имеет механизмы единого входного (SSO) с Azu
 
 ***Сценарии интеграции:** автономные приложения, приложения для совместной работы*
 
-Убедитесь, [Teams рекомендации по разработке,](../concepts/design/understand-use-cases.md) чтобы сделать ваше приложение родным для Teams. Невозможно перенести существующее содержимое приложения на вкладку Teams приложения. Дополнительные сведения о разработке приложений см. в [приложении Fluent Design System.](https://fluentsite.z22.web.core.windows.net/)
+Убедитесь, [Teams рекомендации по разработке,](../concepts/design/understand-use-cases.md) чтобы сделать ваше приложение родным для Teams. Невозможно перенести существующее содержимое приложения на вкладку Teams приложения. Дополнительные сведения о разработке приложений см. в [система Fluent Design.](https://fluentsite.z22.web.core.windows.net/)
 
 ## <a name="maximize-deep-linking"></a>Максимальное глубокое увязывение
 

@@ -1,17 +1,17 @@
 ---
-title: Вызов и увольнение модулей задач
+title: Вызов и закрытие модулей задач
 description: Вызов и увольнение модулей задач.
 author: surbhigupta12
 ms.topic: conceptual
 localization_priority: Normal
-ms.openlocfilehash: a23d5cee3f13967772a4b58ed973bf08906e36a6
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 88544199007b92b2f29d99153cde7bca760a44f3c92c7ce710cdd8db4ebff986
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140780"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706647"
 ---
-# <a name="invoke-and-dismiss-task-modules"></a>Вызов и увольнение модулей задач
+# <a name="invoke-and-dismiss-task-modules"></a>Вызов и закрытие модулей задач
 
 Модули задач можно вызывать из вкладок, ботов или глубоких ссылок. Ответ может быть как в HTML, JavaScript, так и в качестве адаптивной карты. Существует большая гибкость с точки зрения вызова модулей задач и реагирования на взаимодействие пользователя. В следующей таблице кратко излагается, как это работает:
 
@@ -227,12 +227,12 @@ Microsoft Teams обеспечивает правильную работу на�
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Description | .NET | Node.js|
+|Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
-|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
+|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Запрос разрешений устройства](~/concepts/device-capabilities/native-device-permissions.md)
 * [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
@@ -242,4 +242,4 @@ Microsoft Teams обеспечивает правильную работу на�
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Использование модулей задач на вкладке](~/task-modules-and-cards/task-modules/task-modules-tabs.md)
+> [Использование модулей задач во вкладках](~/task-modules-and-cards/task-modules/task-modules-tabs.md)

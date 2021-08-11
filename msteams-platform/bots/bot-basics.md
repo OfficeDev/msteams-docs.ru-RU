@@ -5,12 +5,12 @@ description: Понимание обработчиков действий бот
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 4ecc40abca84466887466ef6a25ab6e57a38328c
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 51199edcd28ea9f4521c4d0a19c7872b3e1a852e092dd949a9d6490e395c2ab1
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53069033"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705695"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 

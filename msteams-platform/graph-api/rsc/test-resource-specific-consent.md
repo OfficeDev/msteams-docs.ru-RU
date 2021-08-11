@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: команды авторизации OAuth SSO AAD rsc postman Graph
-ms.openlocfilehash: 8f5b293557ef7de9e4d551c5ae2bd7216e6e3fc0
-ms.sourcegitcommit: 261058171f1e3bbc822c5bcc0e9fba5a4de68000
+ms.openlocfilehash: 8dd206abd4724bd5e23217504ff45edcc580d492e7af9f10ca46d70d64488cc9
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53111130"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708086"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 

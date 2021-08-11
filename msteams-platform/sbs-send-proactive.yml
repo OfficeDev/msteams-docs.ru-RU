@@ -10,16 +10,16 @@ metadata:
   nextTutorialHref: ./bots/how-to/conversations/send-proactive-messages.md
   nextTutorialTitle: Дополнительные дополнительные публикации об упреждающих сообщениях
   ms.custom: mvc
-  ms.openlocfilehash: 4a6a30bd038c5117024c67a7786995391351e0fe
-  ms.sourcegitcommit: 7f9b3c1654536a88015f1b11b6c8a0f612b111c4
+  ms.openlocfilehash: f242afca853e2ae5c01f2fa999775a5100ad04d0e0e8c9695b47a1f7f932ad9f
+  ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/14/2021
-  ms.locfileid: "53434468"
+  ms.lasthandoff: 08/07/2021
+  ms.locfileid: "57704822"
 items:
 - durationInMinutes: 1
   content: "Проактивное сообщение — это любое сообщение, отправленное ботом, которое не является ответом на запрос пользователя. Это может включать такие сообщения, как:\n - Приветствия\n - Уведомления\n - Запланированные сообщения\n \nЭто пошаговое руководство помогает отправлять упреждающие сообщения от бота. Вы увидите следующие выходы:\n\n* Проактивное сообщение привета в чате        \n![Активный привет в чате](~/assets/images/proactive-scenario/proactive-helo.png)\n\n* Проактивное сообщение привета в качестве адаптивной карты    \n![активный привет в адаптивной карте](~/assets/images/proactive-scenario/proactive-helo-in-adaptive-card.png) \n"
-- title: Предварительные требования
+- title: Необходимые компоненты
   durationInMinutes: 2
   content: "Убедитесь, что вы установите следующее:    \n\n* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).\n* [ASP.NET и веб-разработки](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.301-windows-x64-installer)или рабочей нагрузки на межплатформу [.NET Core.](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.410-windows-x64-installer)\n* [ngrok](https://ngrok.com/download): межплатформеное приложение, которое позволяет с минимальными усилиями выставлять локальный сервер разработки в Интернет.\n* [Получите бесплатный клиент Teams разработчика.](https://developer.microsoft.com/en-us/microsoft-365/dev-program)\n"
 - title: Настройка локальной среды

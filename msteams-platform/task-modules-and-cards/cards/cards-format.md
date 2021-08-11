@@ -4,15 +4,15 @@ description: Описывает форматирование текста кар
 keywords: teams bots cards format
 localization_priority: Normal
 ms.topic: reference
-ms.date: 03/29/2018
-ms.openlocfilehash: 877a16f884e91138dc656434438a5fe1dd2ffd6e
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.date: 06/25/2021
+ms.openlocfilehash: b972fd24be56423a4dce9ba9cb55c0cb44038e81b1859697ac36ecccda4d0283
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140639"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706176"
 ---
-# <a name="format-cards-in-microsoft-teams"></a>Форматирование карт в Microsoft Teams
+# <a name="format-cards-in-microsoft-teams"></a>Форматирование карточек в Microsoft Teams
 
 Ниже приводится два способа добавления насыщенного форматирования текста в карты:
 * [Markdown](#format-cards-with-markdown)
@@ -526,5 +526,5 @@ HTML-теги поддерживаются для простых карт, та�
 
 ## <a name="see-also"></a>См. также
 
-* [Действия карты](./cards-actions.md)
+* [Действия карточек](./cards-actions.md)
 * [Модули задач](~/task-modules-and-cards/cards/cards-format.md)

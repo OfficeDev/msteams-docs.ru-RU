@@ -6,12 +6,12 @@ keywords: Атрибуты cookie samesite
 ms.topic: reference
 localization_priority: Normal
 ms.author: lomeybur
-ms.openlocfilehash: 34674ab58cc9808525d315cea3db464ddf11b4f9
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 78ac367ee550650fb9994676a8083a1b201a06086582161daba6ea4311d0aaeb
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140567"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708338"
 ---
 # <a name="samesite-cookie-attribute"></a>Атрибут cookie SameSite 
 
@@ -43,7 +43,7 @@ Chrome 80, выпущенный в феврале 2020 г., вводит нов�
  
 Атрибуты cookie SameSite следуют следующим образом:
 
-|Setting | Правоприменители | Значение |Спецификация атрибута |
+|Параметр | Правоприменители | Значение |Спецификация атрибута |
 | -------- | ----------- | --------|--------|
 | **Лакс**  | Файлы cookie отправляются автоматически только в контексте **первой** стороны и с запросами HTTP GET. Файлы cookie SameSite удерживаются во всех запросах на подзапев сайта, таких как вызовы для загрузки изображений или iframes. Они отправляются, когда пользователь переходит на URL-адрес с внешнего сайта, например, следуя ссылке.| **Default** |`Set-Cookie: key=value; SameSite=Lax`|
 | **Strict** |Браузер отправляет файлы cookie только для первых запросов контекста сторон. Это запросы, исходимые из сайта, за набором cookie. Если запрос возник из другого URL-адреса, чем текущего расположения, ни одно из файлов cookie, помеченных атрибутом, не `Strict` отправляется.| Необязательный |`Set-Cookie: key=value; SameSite=Strict`|
@@ -89,6 +89,6 @@ Android WebView — это системный компонент Chrome, кот�
 * [Примеры SameSite](https://github.com/GoogleChromeLabs/samesite-examples)
 * [Рецепты cookie SameSite](https://web.dev/samesite-cookie-recipes/)
 * [Известные несовместимые клиенты]( https://www.chromium.org/updates/same-site/incompatible-clients)
-* [Разработчики: готовьтесь к new SameSite=None; Безопасные файлы cookie Параметры](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)
-* [Предстоящие изменения cookie SameSite в ASP.NET и ASP.NET Core](https://devblogs.microsoft.com/aspnet/upcoming-samesite-cookie-changes-in-asp-net-and-asp-net-core/)
+* [Разработчики: Приготовьтесь к новому режиму SameSite=None; безопасной настройке файлов cookie](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)
+* [Предстоящие изменения файлов cookie SameSite в ASP.NET и ASP.NET Core](https://devblogs.microsoft.com/aspnet/upcoming-samesite-cookie-changes-in-asp-net-and-asp-net-core/)
 * [Файлы cookie HTTP](https://developer.mozilla.org/docs/Web/HTTP/Cookies)

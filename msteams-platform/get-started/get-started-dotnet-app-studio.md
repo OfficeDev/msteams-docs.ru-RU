@@ -6,12 +6,12 @@ ms.custom: scenarios:getting-started; languages:ASP.NET,C#
 localization_priority: Normal
 ms.topic: tutorial
 ms.date: 11/09/2018
-ms.openlocfilehash: f63e729400fa74f1675faddbe0b5f8fa101c8824
-ms.sourcegitcommit: 9d63611974ba8a7e7f19ceea35e50189a2e90434
+ms.openlocfilehash: 72cbaadbd3e641b9f142cec51b4d9fd9ef170f727c87ed97c84e392943b84af3
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53254362"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707338"
 ---
 # <a name="build-your-first-teams-app-using-c"></a>Создайте первое Teams с помощью C #
 
@@ -177,7 +177,7 @@ Visual Studio имеет встроенную поддержку разверт�
 
 1. Перейдите к каналу в команде, где установлен пример приложения, и выберите кнопку **"+",** чтобы добавить новую вкладку.
 1. Выберите **Hello World** из списка Добавить **вкладку.** Отображается диалоговое окно конфигурации, которое позволяет выбрать вкладку для отображения в этом канале. 
-1. Нажмите **Сохранить**. Вкладка `Hello World` загружается вкладками.
+1. Нажмите кнопку **Сохранить**. Вкладка `Hello World` загружается вкладками.
 
     <img width="530px" alt="Screenshot of configure" src="~/assets/images/samples-hello-world-tab-configure.png" />
 

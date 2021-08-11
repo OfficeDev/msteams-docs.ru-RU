@@ -5,16 +5,19 @@ description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 655684ef4f2a93d3f9c3858e3bf5a84eab4bd43c
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 94540e4d9edd3cb41c249563d50780448d4e08dbe285967eaaece715930a29be
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068968"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706246"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
 Бот, также именуемый чат-ботом или чат-ботом, — это приложение, которое выполняет простые и повторяющиеся автоматические задачи, выполняемые пользователями, такими как служба поддержки или служба поддержки. Примеры ботов в повседневном использовании включают боты, которые предоставляют сведения о погоде, делают резервирование на обед или предоставляют сведения о путешествиях. Взаимодействие бота может быть быстрым вопросом и ответом, или это может быть сложный разговор, который предоставляет доступ к службам.
+
+> [!IMPORTANT]
+> В настоящее время боты доступны в облако сообщества для государственных организаций (GCC), но недоступны в GCC-High и Министерстве обороны (DOD).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/zSIysk0yL0Q]
 
@@ -46,7 +49,7 @@ ms.locfileid: "53068968"
 
 Вы можете использовать API Teams бота для получения сведений для одного или более членов чата или группы. Дополнительные сведения см. в [Teams API-Teams](~/resources/team-chat-member-api-changes.md)для получения участников группы или чата.
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 [Создать бота для Teams](~/bots/how-to/create-a-bot-for-teams.md)
 

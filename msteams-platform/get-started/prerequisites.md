@@ -5,12 +5,12 @@ description: Узнайте, как начать работу с разрабо�
 ms.author: adhal
 ms.date: 05/24/2021
 ms.topic: quickstart
-ms.openlocfilehash: 4796d37aa0ef904805fbfe2956f9e1d49960bfe9
-ms.sourcegitcommit: 9d63611974ba8a7e7f19ceea35e50189a2e90434
+ms.openlocfilehash: 82b4c6b54286f70672fecd0f5dd059cf7f47036821b078d502ba9cae73dc5498
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53254268"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57703166"
 ---
 # <a name="prerequisites-get-started-with-microsoft-teams-app-development"></a>Необходимые условия: начало разработки Microsoft Teams приложения
 
@@ -30,7 +30,7 @@ ms.locfileid: "53254268"
 
 ## <a name="install-the-teams-toolkit"></a>Установка Teams набор средств
 
-Этот Teams набор средств упрощает процесс разработки с помощью средств для обеспечения и развертывания облачных ресурсов для приложения, публикации в Teams магазине и других. Инструментарий можно использовать с помощью Visual Studio Code, Visual Studio или CLI `teamsfx` (называется).
+Этот Teams набор средств упрощает процесс разработки с помощью средств для обеспечения и развертывания облачных ресурсов для приложения, публикации в Teams магазине и других. Инструментарий можно использовать с помощью Visual Studio Code, Visual Studio или CLI `teamsfx` (называется). Дополнительные сведения см. [в Teams набор средств для Visual Studio Code](../toolkit/visual-studio-code-overview.md), Teams набор средств для [Visual Studio](../toolkit/visual-studio-overview.md) и [средства CLI Teamsfx](https://github.com/OfficeDev/TeamsFx/tree/dev/packages/cli).
 
 # <a name="visual-studio-code"></a>[Visual Studio Code](#tab/vscode)
 

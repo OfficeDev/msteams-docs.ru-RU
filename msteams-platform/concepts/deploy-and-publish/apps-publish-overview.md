@@ -4,12 +4,12 @@ description: Описывает параметры публикации Microsof
 ms.topic: conceptual
 author: KirtiPereira
 ms.author: surbhigupta
-ms.openlocfilehash: b321fee132b23556dcc8299cdbbf6fb5d6ccd3cf
-ms.sourcegitcommit: 60561c7cd189c9d6fa5e09e0f2b6c24476f2dff5
+ms.openlocfilehash: c5dc026627ba912e0beebb9321c664f0a5af4ccf38905eb969226da8103b9a4a
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52230913"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57701987"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 
@@ -19,13 +19,16 @@ ms.locfileid: "52230913"
 
 Загрузка приложения для личного пользования, совместной с командой или тестирование и отладка. Этот вид рассылки не требует формального процесса проверки.
 
+> [!IMPORTANT]
+> В настоящее время приложения для боковой загрузки доступны в облако сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
+
 Дополнительные сведения см. [в Teams.](apps-upload.md)
 
 ## <a name="publish-your-app-to-your-org"></a>Публикация приложения в вашей организации
 
 Сделайте приложение доступным для людей в вашей организации. Для такого распространения требуется Teams утверждения администратора.
 
-Дополнительные сведения см. в центре администрирования [Teams приложениях.](https://docs.microsoft.com/MicrosoftTeams/manage-apps?toc=%2Fmicrosoftteams%2Fplatform%2Ftoc.json&bc=%2FMicrosoftTeams%2Fbreadcrumb%2Ftoc.json)
+Дополнительные сведения см. в центре администрирования [Teams приложениях.](/MicrosoftTeams/manage-apps?toc=%2Fmicrosoftteams%2Fplatform%2Ftoc.json&bc=%2FMicrosoftTeams%2Fbreadcrumb%2Ftoc.json)
 
 ### <a name="government-community-cloud-gcc-organizations"></a>облако сообщества для государственных организаций (GCC) организаций
 

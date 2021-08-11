@@ -4,12 +4,12 @@ description: Боты на Microsoft Teams поддерживают только
 ms.topic: reference
 localization_priority: Normal
 keywords: teams bots media formats
-ms.openlocfilehash: 1a6fe745af6048be972bd6cea26ca5d0f876727f
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: a7279af1154a7d6aa66200146adcff5216b63b03a62229e2af908e8b9b8c9d07
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020613"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57703112"
 ---
 # <a name="supported-media-formats-for-bots"></a>Поддерживаемые форматы медиа для ботов
 

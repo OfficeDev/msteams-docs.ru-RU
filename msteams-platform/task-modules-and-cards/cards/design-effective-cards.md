@@ -4,12 +4,12 @@ description: Узнайте, как создать адаптивные карт
 localization_priority: Priority
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 8e56928da44e22006feb59715c8bdbf821ec4c42
-ms.sourcegitcommit: 99b1f151e4e36a86c6a5d2ccbde01bf45b61f526
+ms.openlocfilehash: ca7c38f112808f98ae1555e91f794f032e880c862a697e1218953d40cbb410aa
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "53037658"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708585"
 ---
 # <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a>Разработка адаптивных карточек для приложения Microsoft Teams
 
@@ -76,19 +76,9 @@ ms.locfileid: "53037658"
 :::image type="content" source="../../assets/images/adaptive-cards/mobile-list-card.png" alt-text="Пример адаптивной карточки списка на мобильном устройстве." border="false":::
 
 ---
-
-### Digest
-
 Use for news digests and round-up posts. Note: We recommend the thumbnail card for a single update or news item.
-
-# [Desktop](#tab/desktop)
-
-:::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="Example shows an Adaptive Card digest card." border="false":::
-
-# [Mobile](#tab/mobile)
-
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-digest-card.png" alt-text="Example shows an Adaptive Card digest card on mobile." border="false":::
-
+':::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="Example shows an Adaptive Card digest card." border="false"::': null
+':::image type="content" source="../../assets/images/adaptive-cards/mobile-digest-card.png" alt-text="Example shows an Adaptive Card digest card on mobile." border="false"::': null
 ---
 
 ### <a name="media"></a>Мультимедиа

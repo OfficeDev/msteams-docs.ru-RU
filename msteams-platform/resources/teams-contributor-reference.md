@@ -1,18 +1,18 @@
 ---
-title: Внести вклад в Teams документации
+title: Улучшение документации Teams
 description: действия по созданию и публикации Teams документации
 author: surbhigupta
 ms.author: lajanuar
 localization_priority: Normal
 ms.topic: contributor-guide
-ms.openlocfilehash: a567b0462397780650d6173df9dae1b340a06f97
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: d09f946926f7377b65910c7bccce7cef8e30ef739afa31b94c83354cffbd7c27
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140518"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708058"
 ---
-# <a name="contribute-to-teams-documentation"></a>Внести вклад в Teams документации
+# <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
 Teams документация входит в библиотеку технической документации **Microsoft Docs.** Содержимое организовано в группы под названием docsets, каждая из которых представляет группу связанных документов, управляемых как единое целое. Статьи в том же docset имеют одно и то же расширение пути **URL-адреса** после docs.microsoft.com . Например, `/docs.microsoft.com/microsoftteams/...` это начало пути Teams docset. Teams статьи написаны в синтаксис Markdown и помещались на GitHub.
 

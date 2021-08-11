@@ -1,19 +1,19 @@
 ---
-title: Интеграция возможностей выборщика людей
+title: Интеграция функции "Выбор людей"
 author: Rajeshwari-v
 description: Использование SDK Teams JavaScript для интеграции возможностей выборщика людей
 keywords: управлением выборщика людей
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: surbhigupta
-ms.openlocfilehash: 8399eeb1a088e4b60c466d51c223b9405ebf1711
-ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
+ms.openlocfilehash: 1d8840853c6fce808b1ec5f13ad95c099698de3ebb37f3613a14c64b4a11d3f8
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211643"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57702787"
 ---
-# <a name="integrate-people-picker-capability"></a>Интеграция возможностей выборщика людей 
+# <a name="integrate-people-picker-capability"></a>Интеграция функции "Выбор людей" 
 
 Выбор людей — это управление для поиска и выбора людей. Это родной потенциал, доступный в Teams платформе. Вы можете интегрировать Teams управления входными данными пользователей с веб-приложениями. Можно выбрать между одним или несколькими выборами и конфигурациями, например ограничением поиска в чате, каналах или во всей организации.
 
@@ -82,7 +82,7 @@ API `selectPeople` поставляется вместе со следующим
 
 Необходимо обеспечить надлежащее обработку ошибок в веб-приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
-|Код ошибки |  Имя ошибки     | Condition|
+|Код ошибки |  Имя ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **500** | INTERNAL_ERROR | Внутренняя ошибка встречается при запуске выборщика людей.|

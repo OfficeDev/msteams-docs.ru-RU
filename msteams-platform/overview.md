@@ -6,12 +6,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: 796353a4c556794a518a451e8a45989351729eb9
-ms.sourcegitcommit: 9cabeaed9baf96c8caeb1497f0bc37abdb787d22
+ms.openlocfilehash: c114eba3e022f153ccaa9e9031086989eca5d019bd472fb0b9f5da583465deb9
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52646539"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707517"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
@@ -208,6 +208,13 @@ Teams приложения — это сочетание [возможносте
 
    :::column-end:::
 :::row-end:::
+
+## <a name="integrate-teams-in-your-external-app"></a>Интеграция Teams во внешнем приложении
+На этой странице основное внимание уделяется встраив собственный опыт в Microsoft Teams путем создания Teams приложений. Если вы хотите  изменить эту модель и интегрировать Teams или другие возможности связи в собственный внешний опыт приложения, см. в [примере Azure Communication Services.](/azure/communication-services/overview) Службы связи Azure — это облачные службы с API REST и SDKs клиентской библиотеки, которые помогают интегрировать связь в собственные настраиваемые приложения. С помощью библиотеки пользовательского интерфейса можно в Teams или React веб-компоненты для вызова и [чата.](https://azure.github.io/communication-ui-library/)
+
+Приложения Azure Communication Services могут использовать [](/azure/communication-services/concepts/teams-interop) функции предварительного просмотра для взаимодействия с Teams и позволяют настраиваемой приложению анонимно присоединяться к собраниям Teams. Например, можно интегрировать видеозвоз в приложение мобильного банкинга и разрешить конечным пользователям практически встречаться с сотрудниками банка с помощью Microsoft Teams. 
+
+Вы также можете интегрировать Microsoft 365 для создания внешних приложений, в которые встраивалось видео и PSTN, вызывающего от имени Teams пользователя. Если вы использовали [Skype для бизнеса SDKs](/skype-sdk/appsdk/skypeappsdk) в прошлом, эти возможности в составе служб связи Azure рекомендуется использовать в качестве замены.
 
 ## <a name="see-also"></a>См. также
 

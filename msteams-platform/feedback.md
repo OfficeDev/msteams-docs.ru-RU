@@ -4,12 +4,12 @@ description: Группа Microsoft Teams отвечает сообществу 
 localization_priority: Normal
 ms.topic: reference
 keywords: Команды отзывают разработчиков вопросы о проблемах, которые возникают при запросе поддержки запросов на ошибки в обсуждениях сообщества
-ms.openlocfilehash: a1a167dabbbf6d4bfe88e6407bb9cf359c1335fe
-ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
+ms.openlocfilehash: f0e00df1919a6949433c124dbea15ffa973f7439c46130202c7ba7b6bf750aea
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726903"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705554"
 ---
 # <a name="microsoft-teams-developer-community-channels"></a>Microsoft Teams каналов сообщества разработчиков
 

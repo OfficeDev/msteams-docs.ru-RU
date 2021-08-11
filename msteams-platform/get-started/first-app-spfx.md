@@ -5,18 +5,18 @@ description: Узнайте, как создать настраиваемую в
 ms.author: zhenyasa
 ms.date: 05/19/2021
 ms.topic: quickstart
-ms.openlocfilehash: 4df2bb71837af520a2d2500a45b8605e5fae08b2
-ms.sourcegitcommit: 9d63611974ba8a7e7f19ceea35e50189a2e90434
+ms.openlocfilehash: 25f4a815add4a5712883976b9899131fb108046d75f813517c8261c3cca8e5af
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53254225"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706962"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-sharepoint-framework-spfx"></a>Сборка и запуск первого Microsoft Teams с помощью SharePoint Framework (SPFx)
 
 В этом руководстве вы узнаете, как создать новое приложение Microsoft Teams в SharePoint Framework SPFx, которое реализует простое личное приложение. Например, личное *приложение включает* набор вкладок для индивидуального использования. Во время руководства вы узнаете о структуре приложения Teams, локальном запуске приложения и развертывании приложения для SharePoint.
 
-## <a name="before-you-begin"></a>Подготовка
+## <a name="before-you-begin"></a>Прежде чем начать
 
 Убедитесь, что среда разработки настроена путем установки необходимых условий.
 
@@ -219,7 +219,7 @@ Teams набор средств позволяет локализовку при
 
 1. Найдите `{project}.sppkg` файл в `SPFx/sharepoint/solution` папке в проекте. Выберите **Открыть**.
 
-1. Нажмите кнопку **ОК**.
+1. Нажмите **ОК**.
 
 1. Автоматически SharePoint развертывания. **Убедитесь, что это решение доступно всем сайтам** организации. Затем выберите **Развертывание.**
 

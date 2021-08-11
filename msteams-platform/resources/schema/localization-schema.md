@@ -1,18 +1,18 @@
 ---
-title: Локализация ссылки на схему JSON
+title: Справочные материалы по локализации схемы JSON
 description: Описывает схему локализации, поддерживаемую файлом локализации для Microsoft Teams
 ms.topic: reference
 localization_priority: Normal
 keywords: группы проявляют локализацию схемы
 ms.date: 05/20/2019
-ms.openlocfilehash: 6e8f666cc6bfa693d7f2f469fc58fd6ee4860a80
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 7a7c5e61e8e9db2526a725d676a237d9c37f7d71ea74d42117e0b59b51cae969
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140515"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705547"
 ---
-# <a name="localize-json-schema-reference"></a>Локализация ссылки на схему JSON
+# <a name="localize-json-schema-reference"></a>Справочные материалы по локализации схемы JSON
 
 Файл Microsoft Teams локализации описывает языковые переводы, которые обслуживаются в зависимости от параметров языка клиента. Файл должен соответствовать схеме, которая была на уровне [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json) . 
 
@@ -40,7 +40,7 @@ ms.locfileid: "53140515"
 
 Схема определяет следующие свойства:
 
-|Свойство|Тип|Максимальная длина|Description|
+|Свойство|Тип|Максимальная длина|Описание|
 |---------------|--------|---------|------------------|
 |`$schema`|URI|Н/Д|URL https:// ссылки на схему JSON для манифеста.|
 |`name.short`|String|30|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|

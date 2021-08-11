@@ -6,12 +6,12 @@ keywords: Возможности микрофона изображения ка�
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 22d4a791e83cf36f18b75a3846865835b0ee024f
-ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
+ms.openlocfilehash: 41132cacc23628e0d585eaeae634eef263a62030443a362bf38075a2534ab544
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211627"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57704968"
 ---
 # <a name="integrate-media-capabilities"></a>Интеграция возможностей мультимедиа 
 
@@ -80,7 +80,7 @@ API [selectMedia,](/javascript/api/@microsoft/teams-js/microsoftteams.media.medi
 
 Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
-|Код ошибки |  Имя ошибки     | Condition|
+|Код ошибки |  Имя ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **404** | FILE_NOT_FOUND | Указанный файл не найден в указанном расположении.|

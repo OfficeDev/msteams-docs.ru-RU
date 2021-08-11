@@ -4,12 +4,12 @@ description: Узнайте, как Microsoft Teams приложения мог�
 ms.topic: conceptual
 localization_priority: Normal
 keywords: вызов вызовов аудио видео IVR голосовых собраний в Интернете
-ms.openlocfilehash: d23b069d1f728cc54941f90e531d01acae6ab989
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 578c10ab2566e8bbf51a2224b8d474fb74c92092ea815386865a4e28efe059c6
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179911"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706800"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 
@@ -90,12 +90,12 @@ ms.locfileid: "53179911"
 
 ## <a name="code-sample"></a>Пример кода
 
-| **Пример имени** | **Описание** | **Microsoft Graph** |
+| **Название примера** | **Описание** | **Microsoft Graph** |
 |---------------|----------|--------|
-| Graph связи | Graph связи для взаимодействия с платформой связи Майкрософт. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples) |
-| Бот вызовов и собраний | Пример приложения демонстартирует, как Бот может создавать вызовы, присоединяться к собранию и переносу вызова. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-calling-meeting/csharp) |
+| Graph связи | Graph связи для взаимодействия с платформой связи Майкрософт. | [Просмотр](https://github.com/microsoftgraph/microsoft-graph-comms-samples) |
+| Бот вызовов и собраний | Пример приложения демонстартирует, как Бот может создавать вызовы, присоединяться к собранию и переносу вызова. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-calling-meeting/csharp) |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 - [Graph Ссылка на API](/graph/api/resources/communications-api-overview?view=graph-rest-beta&preserve-view=true)
 

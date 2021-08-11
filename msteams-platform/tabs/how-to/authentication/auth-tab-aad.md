@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: how-to
 localization_priority: Normal
 keywords: группы проверки подлинности вкладок AAD
-ms.openlocfilehash: 138575ab28280f167c0627731c8219eccb07b7d9
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 69b05edd2cb0106ccf951490c36e2268f947af418a50dd9cc53fe7ec1b3e1311
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629986"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707789"
 ---
 # <a name="authenticate-a-user-in-a-microsoft-teams-tab"></a>Проверка подлинности пользователя на вкладке Microsoft Teams
 
@@ -159,6 +159,6 @@ if (hashParams["error"]) {
 
 Пример кода, показывающий процесс проверки подлинности вкладок с помощью Azure AD:
 
-| **Пример имени** | **description** | **.NET** | **Node.js** |
+| **Название примера** | **description** | **.NET** | **Node.js** |
 |-----------------|-----------------|-------------|
-| Microsoft Teams проверки подлинности вкладок | Процесс проверки подлинности вкладок с помощью Azure AD. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-auth/nodejs) |
+| Microsoft Teams проверки подлинности вкладок | Процесс проверки подлинности вкладок с помощью Azure AD. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-auth/nodejs) |

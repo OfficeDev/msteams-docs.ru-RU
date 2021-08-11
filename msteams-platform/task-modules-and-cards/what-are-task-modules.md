@@ -5,12 +5,12 @@ description: Добавьте модули всплывающих приложе
 localization_priority: Normal
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 257ca54ab53d310116cc301dded01a7582c11532
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 3b0e639acc8901a3637189e435fcfc159e992ae3a674a437733474087103193c
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140539"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707684"
 ---
 # <a name="task-modules"></a>Модули задач
 
@@ -57,4 +57,4 @@ ms.locfileid: "53140539"
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Вызов и увольнение модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)
+> [Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)

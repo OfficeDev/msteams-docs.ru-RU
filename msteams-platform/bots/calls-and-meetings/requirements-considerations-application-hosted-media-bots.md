@@ -5,12 +5,12 @@ ms.topic: conceptual
 localization_priority: Normal
 keywords: windows server azure vm с использованием приложения
 ms.date: 11/16/2018
-ms.openlocfilehash: a66296951dd2f704d531840f79a4c4b955af6bdf
-ms.sourcegitcommit: 3560ee1619e3ab6483a250f1d7f2ceb69353b2dc
+ms.openlocfilehash: 20f4327ee967cdc75b72eb5525b684c0fb61acb3c90fb96c26eeb23d815fe4e0
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53335363"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57702832"
 ---
 # <a name="requirements-and-considerations-for-application-hosted-media-bots"></a>Требования и соображения к медийным ботам с хостингом приложений
 
@@ -68,12 +68,12 @@ ms.locfileid: "53335363"
 
 Примеры медийных ботов, на которые организовано приложение, следуют следующим образом:
 
-| **Пример имени** | **Описание** | **Microsoft Graph** |
+| **Название примера** | **Описание** | **Microsoft Graph** |
 |------------|-------------|-----------|
-| Пример локального мультимедиа | Примеры, иллюстрирующие различные локальные сценарии мультимедиа. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples) |
-| Пример удаленного мультимедиа | Примеры, иллюстрирующие различные сценарии удаленного мультимедиа. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples) |
+| Пример локального мультимедиа | Примеры, иллюстрирующие различные локальные сценарии мультимедиа. | [Просмотр](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples) |
+| Пример удаленного мультимедиа | Примеры, иллюстрирующие различные сценарии удаленного мультимедиа. | [Просмотр](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples) |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 - [Graph Вызов документации по SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/)
 - Боты требуют больше вычислительной и сетевой пропускной способности, чем боты обмена сообщениями, и понести значительно более высокие эксплуатационные затраты. Разработчик медиа-бота в режиме реального времени должен тщательно измерить масштабируемость бота и убедиться, что он не принимает больше одновременных вызовов, чем он может управлять. Бот с поддержкой видео может поддерживать только один или два одновечерных сеансов мультимедиа на ядро ЦП при использовании необработанных форматов видео RGB24 или NV12.

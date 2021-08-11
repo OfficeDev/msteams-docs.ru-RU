@@ -4,12 +4,12 @@ description: Ограничение скорости и лучшие практ�
 ms.topic: conceptual
 localization_priority: Normal
 keywords: ограничения скорости командных ботов
-ms.openlocfilehash: 41070bec7905c7003afb917aedcdd08495418602
-ms.sourcegitcommit: e327c9766dfa05abb468cdc71319e3cba7c6c79f
+ms.openlocfilehash: 1ee98af7704baa066ad6ca7adbf0997879454a3c58e83d62ea4f5a2f17c20c36
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53428697"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705610"
 ---
 # <a name="optimize-your-bot-with-rate-limiting-in-teams"></a>Оптимизация бота с ограничением скорости в Teams
 
@@ -169,7 +169,7 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 | Получать беседы | 1 | 28 |
 | Получать беседы | 2 | 32 |
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Боты для звонков и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)

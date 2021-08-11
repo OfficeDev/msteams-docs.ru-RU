@@ -6,12 +6,12 @@ keywords: команды вкладки исходят веб-ок
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 53fe9725148579325386fa4677bebb61fdb72c56
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: c5f90da64fe846e6579bc47de2edcd900d6ee6ba3a640788fba440734f55b7ec
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140142"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705358"
 ---
 # <a name="create-incoming-webhook"></a>Создание входящих веб-ок
 
@@ -25,7 +25,7 @@ ms.locfileid: "53140142"
 
 В следующей таблице представлены функции и описание входящих webhook:
 
-| Возможности | Description |
+| Возможности | Описание |
 | ------- | ----------- |
 |Адаптивные карты с помощью входящих веб-ок|Адаптивные карты можно отправить через входящие веб-окки. Дополнительные сведения см. в [странице Send Adaptive Cards using Incoming Webhooks.](../../webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook)|
 |Actionable messaging support|Карточки сообщений для действий поддерживаются во всех Office 365, включая Teams. Если вы отправляете сообщения через карты, необходимо использовать формат карточки сообщений. Дополнительные сведения см. в [старых справочных](/outlook/actionable-messages/message-card-reference) данных карточки сообщений и игровой [площадке карточки сообщений.](https://messagecardplayground.azurewebsites.net)|

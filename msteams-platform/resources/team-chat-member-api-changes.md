@@ -6,12 +6,12 @@ keywords: Список участников группы apis для базы б
 localization_priority: Normal
 ms.topic: reference
 ms.author: ojchoudh
-ms.openlocfilehash: 9c6444967d330d27a415ac596a3858c05c49236e
-ms.sourcegitcommit: b1f9162a0bbcd276064ae9e4f1e8bccc06cb7035
+ms.openlocfilehash: 25d3bdc5c25caec323ab1b45566b485e2c9df9fe78cb0b91f3546fcde7183e02
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53328067"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705124"
 ---
 # <a name="teams-bot-api-changes-to-fetch-team-or-chat-members"></a>Teams API бота для получения участников группы или чата
 

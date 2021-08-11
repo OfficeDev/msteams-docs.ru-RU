@@ -5,28 +5,28 @@ description: Узнайте, как создать уведомления о к�
 localization_priority: Normal
 ms.author: surbhigupta
 ms.topic: reference
-ms.openlocfilehash: 61a2a6da2a5ed0cb3126b9798094b06c575c9b6c
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 4a2b5510c2e5d0b26897593bbf0fdc0dc493b46ead3be669ff8b72d7cc3970eb
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52631360"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705151"
 ---
 # <a name="designing-activity-feed-notifications-for-your-microsoft-teams-app"></a>Проектирование уведомлений каналов активности для Microsoft Teams приложения
 
 Канал действий — это поверхность для доступа пользователей к уведомлениям в Microsoft Teams. Канал сохраняет уведомления за последние четыре недели.
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/activity-feed/desktop-overview.png" alt-text="В примере отображается уведомление приложения, отображаемая в Teams канале действий." border="false":::
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/activity-feed/mobile-overview.png" alt-text="В примере показано уведомление приложения, отображаемое в Teams канале активности на мобильном телефоне." border="false":::
 
 ---
 
-## <a name="anatomy"></a>Анатомия
+## <a name="anatomy"></a>Структура
 
 :::image type="content" source="../../assets/images/activity-feed/activity-feed-card-anatomy.png" alt-text="Разработка анатомии уведомления Teams канала действий." border="false":::
 
@@ -53,7 +53,7 @@ ms.locfileid: "52631360"
 
 Каждое действие создает системные уведомления. Отображаемые данные зависят от настройки пользователя в параметрах уведомлений. Пользователи также могут выбрать стиль уведомлений на основе своей операционной системы.
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/activity-feed/related-system-notifications.png" alt-text="Варианты Teams на разных операционных системах." border="false":::
 
@@ -63,7 +63,7 @@ ms.locfileid: "52631360"
 |2|Windows|
 |3|Mac|
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="../../assets/images/activity-feed/mobile-related-system-notifications.png" alt-text="Варианты Teams на Android и iOS." border="false":::
 

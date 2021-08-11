@@ -6,12 +6,12 @@ keywords: Возможности карты расположения для ро
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: surbhigupta
-ms.openlocfilehash: 3e6c4bda9a1a0024380cb295cd280db1d630f019
-ms.sourcegitcommit: 059d22c436ee9b07a61561ff71e03e1c23ff40b8
+ms.openlocfilehash: 94eb8735092f97f35a03b7b19eee9e20c75eaaac7463d1869c4c2718d55ef3bf
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211613"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705993"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 
@@ -93,7 +93,7 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 
 Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
-|Код ошибки |  Имя ошибки     | Condition|
+|Код ошибки |  Имя ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|

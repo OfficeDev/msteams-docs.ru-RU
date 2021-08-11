@@ -5,12 +5,12 @@ description: Создание беседного чата подгруппы д�
 keywords: группы вкладок канал настраивается
 ms.topic: conceptual
 ms.author: lomeybur
-ms.openlocfilehash: b563510b9ce232a98572430c76f1b8e59ddb4886
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 6c2574453f00735d4441c389648df375fc1d01046d2c8f558b470efe4f3392ca
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179694"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705108"
 ---
 # <a name="create-conversational-tabs"></a>Создание вкладок бесед
 

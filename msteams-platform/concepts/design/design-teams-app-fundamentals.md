@@ -5,12 +5,12 @@ author: heath-hamilton
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: overview
-ms.openlocfilehash: 0af2a22200e62be9289f167b0306c9769366e46a
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: 3c625f66912b9b45d820a663dfc6846aa1de7356cb77f5a800112fbedc615de1
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630844"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57704002"
 ---
 # <a name="microsoft-teams-app-design-system"></a>Microsoft Teams системы разработки приложений
 
@@ -25,7 +25,7 @@ ms.locfileid: "52630844"
       Teams для обеспечения последовательных и элегантных связей между компонентами дизайна зависит от макета сетки. Базовый блок сетки с 4 пикселями позволяет компонентам последовательно масштабироваться во всех размерах отображения в Teams.
 
       * [Полное руководство по макету (Figma)](https://www.figma.com/community/file/916836509871353159)
-      * [Реализация макета (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/layout)
+      * [Реализация макета (Fluent пользовательского интерфейса)](https://developer.microsoft.com/fluentui#/styles/web/layout)
 
    :::column-end:::
    :::column span="1":::
@@ -60,10 +60,10 @@ ms.locfileid: "52630844"
 
       Основной значок приложения может пройти долгий путь для передачи вашего бренда Teams пользователям. Получение правильного оформления значка также важно для [публикации](../../concepts/build-and-test/apps-package.md) приложения в Teams магазине.
 
-      Вы также можете использовать значки пользовательского интерфейса Fluent во всем приложении:
+      Вы также можете использовать Fluent пользовательского интерфейса во всем приложении:
 
-      * <a href="https://www.figma.com/community/file/836835755999342788" target="_blank">Получите последний набор значков Fluent (Figma)</a>
-      * [Реализация значков (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/icons)
+      * <a href="https://www.figma.com/community/file/836835755999342788" target="_blank">Получите последний набор Fluent (Figma)</a>
+      * [Реализация значков (Fluent пользовательского интерфейса)](https://developer.microsoft.com/fluentui#/styles/web/icons)
 
    :::column-end:::
    :::column span="1":::
@@ -82,7 +82,7 @@ ms.locfileid: "52630844"
       Teams использует пользовательский интерфейс Segoe для своей рампы типа и различных размеров шрифтов и весов для создания иерархии и обеспечения читаемости.
 
       * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">См. рекомендации по полному типу (Figma)</a>
-      * [Реализация типографии (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/typography)
+      * [Реализация типографии (Fluent пользовательского интерфейса)](https://developer.microsoft.com/fluentui#/styles/web/typography)
 
    :::column-end:::
    :::column span="1":::
@@ -101,7 +101,7 @@ ms.locfileid: "52630844"
       Teams и настольные компьютеры поддерживают темы по умолчанию (светлые), темные и высоко контрастные, а Teams поддерживают светлые и темные темы. Каждая тема имеет свою цветовую схему.
 
       * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Полное руководство по цвету и доступные маркеры цвета (Figma)</a>
-      * [Реализация цветов (fluent UI)](https://fluentsite.z22.web.core.windows.net/0.51.7/colors)
+      * [Реализация цветов (Fluent пользовательского интерфейса)](https://fluentsite.z22.web.core.windows.net/0.51.7/colors)
 
    :::column-end:::
    :::column span="1":::
@@ -119,7 +119,7 @@ ms.locfileid: "52630844"
       Вы можете использовать форму и высоту для создания дополнительной иерархии в приложении. 
 
       * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">См. инструкции по полной форме и высоте (Figma)</a>
-      * [Реализация формы и высоты (fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/elevation)
+      * [Реализация формы и высоты (Fluent пользовательского интерфейса)](https://developer.microsoft.com/fluentui#/styles/web/elevation)
 
    :::column-end:::
    :::column span="1":::

@@ -3,12 +3,12 @@ title: Обзор универсальных действий для адапт�
 description: Краткий обзор универсальных действий для адаптивных карт.
 ms.topic: overview
 localization_priority: Normal
-ms.openlocfilehash: f8980743954c4dff2ced464bc599439c7519cefe
-ms.sourcegitcommit: d1d1143e285cac5f23590ccba5389616d08f94b3
+ms.openlocfilehash: 20231245af5a1fe479277558367e6265f4391ff0925dfcf96288912470b09b38
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781620"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706366"
 ---
 # <a name="universal-actions-for-adaptive-cards"></a>Универсальные действия для адаптивных карточек
 
@@ -51,11 +51,11 @@ ms.locfileid: "52781620"
 
 На следующем изображении показаны универсальные действия для адаптивных карт как для Teams, так и для Outlook:
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="~/assets/images/adaptive-cards/mobile-universal-bots-teams-outlook.jpg" alt-text="Мобильная карта для Teams и Outlook":::
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-teams-outlook.png" alt-text="Та же Teams и Outlook":::
 
@@ -69,11 +69,11 @@ ms.locfileid: "52781620"
 
 На следующем изображении показан пример расширения обмена сообщениями по билетам (ME), на котором различным пользователям в чате показаны различные действия, основанные на требовании:
 
-# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
+# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
 
 :::image type="content" source="~/assets/images/adaptive-cards/mobile-universal-bots-incident-management.jpg" alt-text="Представления для мобильных пользователей":::
 
-# <a name="desktop"></a>[Desktop](#tab/desktop)
+# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-incident-management.png" alt-text="Пользовательские просмотры":::
 
@@ -114,7 +114,7 @@ ms.locfileid: "52781620"
 ## <a name="see-also"></a>См. также
 
 * [Что такое боты](~/bots/what-are-bots.md)
-* [Обзор адаптивных карт](~/task-modules-and-cards/what-are-cards.md)
+* [Обзор адаптивных карточек](~/task-modules-and-cards/what-are-cards.md)
 * [Адаптивные карты @ Microsoft Build 2020](https://youtu.be/hEBhwB72Qn4?t=1393)
 * [Адаптивные карты @ Ignite 2020](https://techcommunity.microsoft.com/t5/video-hub/elevate-user-experiences-with-teams-and-adaptive-cards/m-p/1689460)
 

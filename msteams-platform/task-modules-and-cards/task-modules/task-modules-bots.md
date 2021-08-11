@@ -4,14 +4,14 @@ description: Использование модулей задач с Microsoft T
 localization_priority: Normal
 ms.topic: how-to
 keywords: модули задач групп ботов
-ms.openlocfilehash: 5d9aa2b651a4c99cee75aada62a4d1176a589d79
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 7a4c5b0a3986f5a6a59064a05bcbc68587955effca0ea7fab80a7097a9732b6f
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140312"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57701876"
 ---
-# <a name="use-task-modules-from-bots"></a>Использование модулей задач от ботов
+# <a name="use-task-modules-from-bots"></a>Использование модулей задач из ботов
 
 Модули задач могут вызываться из Microsoft Teams с помощью кнопок на картах Adaptive Cards и Bot Framework, которые является героем, эскизом и Office 365 соединителю. Модули задач часто являются более удобными для пользователей, чем несколько этапов беседы. Отслеживайте состояние бота и разрешите пользователю прерывать или отменять последовательность.
 
@@ -207,11 +207,11 @@ private static void SetTaskInfo(TaskModuleTaskInfo taskInfo, UISettings uIConsta
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Description | .NET | Node.js|
+|Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Microsoft Teams пример кода модуля задач в Node.js](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs/blob/master/src/TeamsBot.ts)
 * [Примеры Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)

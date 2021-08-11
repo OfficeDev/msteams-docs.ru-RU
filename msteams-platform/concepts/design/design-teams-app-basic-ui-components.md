@@ -1,26 +1,26 @@
 ---
-title: Разработка приложения с помощью базовых компонентов пользовательского интерфейса Fluent
+title: Разработка приложения с помощью Fluent компонентов пользовательского интерфейса
 author: heath-hamilton
 description: Узнайте о примитивных компонентах пользовательского интерфейса, которые обычно используются для Microsoft Teams приложений и получения Microsoft Teams пользовательского интерфейса.
 ms.author: lajanuar
 localization_priority: Normal
 ms.topic: reference
-ms.openlocfilehash: eec324a67cec0eb39cc98c0ab63ff71771ebbf11
-ms.sourcegitcommit: 4224c44d169b1a289cbf1d3353de6bc6de7c7ea8
+ms.openlocfilehash: e58a64014be2b576f8ca16d707e315fa8056f9b717ae8dd976f80c544c57ba31
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52644912"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57704230"
 ---
-# <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Разработка приложения Microsoft Teams с базовыми компонентами пользовательского интерфейса Fluent
+# <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Разработка приложения Microsoft Teams с базовыми компонентами пользовательского интерфейса Fluent интерфейса
 
-Вы можете создать приложение Teams с нуля с помощью следующих базовых компонентов пользовательского интерфейса Fluent. Разработанные как можно более плоские, эти компоненты могут работать в разных случаях использования, темах и размерах экрана.
+Вы можете создать Teams с нуля с помощью следующих базовых компонентов Fluent пользовательского интерфейса. Разработанные как можно более плоские, эти компоненты могут работать в разных случаях использования, темах и размерах экрана.
 
 На иллюстрациях на этой странице покажите, как выглядят компоненты в Teams (светлые) и темные темы.
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-На основе пользовательского интерфейса <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a>Microsoft Teams пользовательского интерфейса включает компоненты и шаблоны, разработанные специально для создания Teams приложений. В наборе пользовательского интерфейса можно захватить и вставить компоненты, перечисленные здесь непосредственно в дизайн, и увидеть дополнительные примеры использования каждого компонента.
+На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a>пользовательского интерфейса Microsoft Teams набор пользовательского интерфейса включает компоненты и шаблоны, разработанные специально для Teams приложений. В наборе пользовательского интерфейса можно захватить и вставить компоненты, перечисленные здесь непосредственно в дизайн, и увидеть дополнительные примеры использования каждого компонента.
 
 > [!div class="nextstepaction"]
 > [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
@@ -123,7 +123,7 @@ ms.locfileid: "52644912"
 
 ## <a name="toggle"></a>Toggle
 
-Примечание. В пользовательском интерфейсе Fluent перетаском является типом флажка.
+Примечание. В Fluent пользовательского интерфейса, перегной — это тип контрольного ящика.
 
 :::image type="content" source="../../assets/images/components/toggle.png" alt-text="В примере показан компонент пользовательского интерфейса toggle." border="false":::
 
@@ -136,4 +136,4 @@ ms.locfileid: "52644912"
 Получите примеры кода и сведения о реализации некоторых компонентов, перечисленных здесь и в Microsoft Teams пользовательского интерфейса.
 
 > [!div class="nextstepaction"]
-> [Попробуйте компоненты (fluent UI)](https://fluentsite.z22.web.core.windows.net/)
+> [Попробуйте компоненты (Fluent пользовательского интерфейса)](https://fluentsite.z22.web.core.windows.net/)

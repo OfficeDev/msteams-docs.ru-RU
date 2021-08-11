@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 localization_priority: Normal
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: ed169e3cc5f9190571890cb891665a493bd052d1
-ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
+ms.openlocfilehash: 73d85fed57caff410e2f4986f208b868c228777deade8a5a2a0a1ce0e35d7cd3
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726945"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705596"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 

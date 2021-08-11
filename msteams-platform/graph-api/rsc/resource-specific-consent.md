@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: ce4076ff8cb9945f3b7dd1a7e809391292ec314a
-ms.sourcegitcommit: c145d52b2d4daa7655e6c3ddfa739fa1beeb8d6a
+ms.openlocfilehash: c2fd0a335d992eb026ae1b61c186830d25217d52491c997a9a2baf1dc58152e0
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53455222"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707625"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 

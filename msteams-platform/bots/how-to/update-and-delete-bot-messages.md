@@ -5,12 +5,12 @@ description: Обновление и удаление сообщений, отп
 ms.topic: overview
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 90dc50fd2ec153813457f199ac029e17a0157502
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: 8f1738894aa5580f62b91fa44edf06d54fcc99f7786bae33ffc8cc7b95669fcc
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101536"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706094"
 ---
 # <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновление и удаление сообщений, отправленных из бота
 
@@ -180,9 +180,9 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 
 В следующем примере кода демонстрируются основы бесед:
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------------------|-----------------|--------|-------------|--------|
-| Teams Основы беседы  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Teams Основы беседы  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

@@ -4,12 +4,12 @@ description: Описывает процесс отправки приложен
 ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 7ae452e6fd013204b622e32fa8187cc69e0b26bf
-ms.sourcegitcommit: 25c9ad27f99682caaa7347840578b118c63b8f69
+ms.openlocfilehash: a7c46f6dc537d7cfad7c176582df1305c3f0bc056a78996e013757a3eff7e013
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101760"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57706073"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Публикация приложения в Microsoft Teams магазине
 

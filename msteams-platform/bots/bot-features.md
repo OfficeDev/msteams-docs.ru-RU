@@ -5,12 +5,12 @@ description: Обзор инструментов и SDKs для создания
 ms.topic: overview
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: c346d7b7a1c720e651a847fb8a650fc549689654
-ms.sourcegitcommit: f62634c59b697107e5bb3c38867b21007d328b1e
+ms.openlocfilehash: e34d89b0ea8aaeb533899309cfb8fdf34d4ceb4994a6e87db398cc3dfc577abd
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53196245"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707101"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -110,9 +110,9 @@ BOT: В какой день?
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Описание | . NETCore | Node.js |
+|Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|----------------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
 
 ## <a name="next-step"></a>Следующий этап
 

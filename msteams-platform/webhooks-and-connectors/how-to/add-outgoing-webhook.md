@@ -6,12 +6,12 @@ ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
 keywords: teams tabs outgoing webhook actionable message verify webhook
-ms.openlocfilehash: c02ff5388e47ba40056afcc1fcf5e8d7ad4437e8
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 8dabf78cd27f0f59bd8ce617eb83ded24ecc3dc92478e7233bf8f8bb6a2a4e19
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140339"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57704319"
 ---
 # <a name="create-outgoing-webhook"></a>Создание исходятого веб-сайта
 
@@ -21,14 +21,14 @@ ms.locfileid: "53140339"
 
 В следующей таблице представлены функции и описание исходяющих веб-ок:
 
-| Возможности | Description |
+| Возможности | Описание |
 | ------- | ----------- |
 | Конфигурация scoped| Webhooks имеют область действия на уровне группы. Обязательный процесс создания для каждого добавляет исходяющий веб-ок. |
 | Реактивное сообщение| Пользователи должны использовать @mention для получения сообщений для веб-пользователя. В настоящее время пользователи могут отправлять сообщения об исходяшем веб-окне только в общедоступных каналах, а не в личной или частной области. |
 |Стандартный обмен сообщениями HTTP|Ответы отображаются в той же цепочке, что и исходное сообщение запроса, и могут включать любое содержимое сообщения Bot Framework, например богатый текст, изображения, карты и эмодзи. Несмотря на то, что исходяющие веб-пользователи могут использовать карты, они не могут использовать любые действия, за исключением `openURL` .|
 | Teams Поддержка метода API|Исходяющие веб-окки отправляют СООБЩЕНИЕ HTTP в веб-службу и получают ответ. Они не могут получить доступ к другим API, например получить список или список каналов в команде.|
 
-## <a name="create-outgoing-webhooks"></a>Создание исходяющих веб-ок
+## <a name="create-outgoing-webhooks"></a>Создание исходящих веб-перехватчиков
 
 Создание исходяющих веб-ок и добавление пользовательских ботов в Teams.
 
@@ -48,7 +48,7 @@ ms.locfileid: "53140339"
 
 1. Выберите **Создать исходяющий веб-сайт:**
 
-    ![Создание исходяющих веб-ок](~/assets/images/outgoingwebhook3.png)
+    ![Создание исходящих веб-перехватчиков](~/assets/images/outgoingwebhook3.png)
 
 1. Введите следующие сведения на странице **Создание исходятого веб-сайта:**
 
@@ -215,11 +215,11 @@ var responseMsg = JSON.stringify({
 
 ## <a name="code-sample"></a>Пример кода
 
-|**Пример имени** | **Description** | **.NET** | **Node.js** |
+|**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Исходяние веб-ок | Образцы для создания пользовательских ботов, которые будут использоваться в Microsoft Teams.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
+| Исходяние веб-ок | Образцы для создания пользовательских ботов, которые будут использоваться в Microsoft Teams.| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 * [Создание входящих веб-ок](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)
 * [Создание соединителя Office 365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)

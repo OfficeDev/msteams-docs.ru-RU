@@ -4,14 +4,14 @@ description: Объясняет, как вызывать модули задач
 localization_priority: Normal
 ms.topic: how-to
 keywords: модули задач группы вкладок sdk клиента
-ms.openlocfilehash: 8afd2c93261f28aa7ced4c98d29be27dca35f8b1
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: 3fe0a20d751b1eb08d70385648be1283a9d9b0c32e5849626df4abd36ba5bdce
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140557"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57703585"
 ---
-# <a name="use-task-modules-in-tabs"></a>Использование модулей задач на вкладке
+# <a name="use-task-modules-in-tabs"></a>Использование модулей задач во вкладках
 
 Добавьте модуль задач на вкладку, чтобы упростить работу пользователя для любых процессов, которые требуют ввода данных. Модули задач позволяют собирать входные данные в всплывающее Teams-Aware Microsoft. Хорошим примером этого является редактирование карт Планировщика. Для создания аналогичного опыта можно использовать модули задач.
 
@@ -129,13 +129,13 @@ function validateForm() {
 
 ## <a name="code-sample"></a>Пример кода
 
-|Пример имени | Description | .NET | Node.js|
+|Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
+|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
-[Вызов и увольнение модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)
+[Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)
 
 ## <a name="next-step"></a>Следующий этап
 

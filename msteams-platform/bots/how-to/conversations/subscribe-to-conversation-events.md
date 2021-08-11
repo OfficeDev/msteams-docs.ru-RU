@@ -5,12 +5,12 @@ description: Работа с событиями беседы из Microsoft Team
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 39d3a6d54b275fd6b9f28eb38b124435e9ba8bfd
-ms.sourcegitcommit: 3d02dfc13331b28cffba42b39560cfeb1503abe2
+ms.openlocfilehash: c50409720bdb700295934171d8a2a3474205adb59e8397dcc64a01b9aec23fa3
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53049047"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57703629"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -45,15 +45,15 @@ ms.locfileid: "53049047"
 | Действие, принятое        | EventType         | Метод, называемый              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
 | Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Команда |
-| Переименован канал     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Команда |
+| Канал переименован     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Команда |
 | Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Команда |
 | Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Команда |
-| Добавлены участники   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added). | Все |
+| Участники добавлены   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added). | Все |
 | Удалены участники | membersRemoved | OnTeamsMembersRemovedAsync | [Член удаляется.](#team-members-removed) | groupChat и team |
-| Переименована команда        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Команда |
+| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Команда |
 | Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Команда |
-| Архив команд        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Команда |
-| Команда без анархии        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Команда |
+| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Команда |
+| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Команда |
 | Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Команда |
 
 ### <a name="channel-created"></a>Созданный канал
@@ -145,7 +145,7 @@ async def on_teams_channel_created(
 
 ---
 
-### <a name="channel-renamed"></a>Переименован канал
+### <a name="channel-renamed"></a>Канал переименован
 
 Событие, переименованное в канал, отправляется вашему боту всякий раз, когда канал переименован в команде, где установлен бот.
 
@@ -656,7 +656,7 @@ async def on_teams_members_removed(
 
 ---
 
-### <a name="team-renamed"></a>Переименована команда
+### <a name="team-renamed"></a>Команда переименована
 
 Ваш бот уведомлен о переименовании команды, в которая он находится. Он получает событие `conversationUpdate` в `eventType.teamRenamed` `channelData` объекте.
 
@@ -892,7 +892,7 @@ async def on_teams_team_restored(
 
 ---
 
-### <a name="team-archived"></a>Архив команд
+### <a name="team-archived"></a>Команда архивирована
 
 Бот получает уведомление, когда установленная в нем команда будет архивироваться. Он получает событие `conversationUpdate` в `eventType.teamarchived` `channelData` объекте.
 
@@ -973,7 +973,7 @@ async def on_teams_team_archived(
 ---
 
 
-### <a name="team-unarchived"></a>Команда без анархии
+### <a name="team-unarchived"></a>Архивация команды отменена
 
 Бот получает уведомление, когда установленная в нем команда не является анархивной. Он получает событие `conversationUpdate` в `eventType.teamUnarchived` `channelData` объекте.
 
@@ -1406,9 +1406,9 @@ turnContext, CancellationToken cancellationToken) {
 
 ## <a name="code-sample"></a>Пример кода
 
-| **Пример имени** | **Description** | **.NET** | **Node.js** | **Python** |
+| **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот-беседа | Пример кода для событий беседы ботов. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

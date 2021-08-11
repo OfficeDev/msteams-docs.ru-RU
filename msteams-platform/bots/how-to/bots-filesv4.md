@@ -5,12 +5,12 @@ keywords: командные файлы ботов отправляют полу
 ms.date: 05/20/2019
 localization_priority: Normal
 ms.topic: how-to
-ms.openlocfilehash: 7d5ea3434b10d60e20574ca6d1935943c687f4d7
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: f6d738bfe3456ad9434512fd84d7e65d6062e57076656a57592cdf6a3f23790e
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020942"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57708114"
 ---
 # <a name="send-and-receive-files-through-the-bot"></a>Отправка и получение файлов через бот
 
@@ -321,9 +321,9 @@ private async Task SendFileCardAsync(ITurnContext turnContext, string filename, 
 
 В следующем примере кода показано, как получить согласие на файл и загрузить Teams с бота:
 
-|**Пример имени** | **Описание** | **.NET** | **Javascript** | **Python**|
+|**Название примера** | **Описание** | **.NET** | **Javascript** | **Python**|
 |----------------|-----------------|--------------|----------------|-----------|
-| File upload | Демонстрирует, как получить согласие на файл и загрузить Teams с бота. Кроме того, как получить файл, отправленный боту. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/56.teams-file-upload) |
+| File upload | Демонстрирует, как получить согласие на файл и загрузить Teams с бота. Кроме того, как получить файл, отправленный боту. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/56.teams-file-upload) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/56.teams-file-upload) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/56.teams-file-upload) |
 
 ## <a name="next-step"></a>Следующий этап
 

@@ -4,12 +4,12 @@ description: Описывает все действия карт и карт, д
 localization_priority: Normal
 keywords: ссылка на карточки ботов
 ms.topic: reference
-ms.openlocfilehash: d3b84344eccee7c2595b0e978c72d7e331b198cb
-ms.sourcegitcommit: b1f9162a0bbcd276064ae9e4f1e8bccc06cb7035
+ms.openlocfilehash: 4c386b3e237f89345bf94bc8cfa23d7e46477de21da0e7a99eb63663b19446af
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53328074"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705511"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -447,7 +447,7 @@ Office 365 Соединитетельные карты правильно фун
 
 Важное отличие между использованием соединитеных карт из соединитетеля и использованием соединитеных карт в боте — обработка действий карт. В следующей таблице перечислены различия:
 
-| Connector | Bot |
+| Соединитель | Bot |
 | --- | --- |
 | Конечная точка получает полезной нагрузки карточки через HTTP POST. | Действие запускает действие, которое отправляет боту только ID действия `HttpPOST` `invoke` и тело.|
 

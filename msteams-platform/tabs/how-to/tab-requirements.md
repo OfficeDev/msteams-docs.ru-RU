@@ -1,19 +1,19 @@
 ---
-title: Предварительные требования
+title: Необходимые компоненты
 author: surbhigupta
 description: Каждая вкладка в Microsoft Teams должна соответствовать этим требованиям.
 keywords: команды вкладки группового канала настраиваются
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 9babab566085c13089400e4e035f2c481295d0c4
-ms.sourcegitcommit: ec79bbbc3a8daa1ad96de809fc6d17367e8f0c6b
+ms.openlocfilehash: 36d5a6ee785779c8ba186a00ec80519a189ac278e7ec2298bba82fb53f0a848a
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726833"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57701802"
 ---
-# <a name="prerequisites"></a>Предварительные требования
+# <a name="prerequisites"></a>Необходимые компоненты
 
 Teams должны придерживаться следующих обязательных условий:
 
@@ -53,7 +53,7 @@ Teams должны придерживаться следующих обязат�
 * [Создание первого расширения сообщения](../../get-started/first-message-extension.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
