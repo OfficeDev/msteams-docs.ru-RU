@@ -4,16 +4,17 @@ author: KirtiPereira
 description: Создание вкладок с помощью адаптивных карт
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 8f1b8bbc27a2b10d8e4fbca8e87c75eeb29c8c36efacd6eb3cf921295e27b88b
-ms.sourcegitcommit: 569ff24cc41c46d886b913a916401b18e0eb1439
+ms.openlocfilehash: 6b969461669f9edb7d7f3e216b3b91dd700881b34de17389f8a43348b09830f8
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57823230"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57705087"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
 > [!IMPORTANT]
+> * Эта функция находится в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md) поддерживается в настольных компьютерах и мобильных устройствах. Поддержка в веб-браузере скоро.
 > * Вкладки с адаптивными картами в настоящее время поддерживаются только в качестве личных приложений.
 
 При разработке вкладки с помощью традиционного метода могут возникнуть такие проблемы:
@@ -31,12 +32,13 @@ ms.locfileid: "57823230"
 
 :::image type="content" source="../../assets/images/tabs/adaptive-cards-rendered-in-tabs.jpg" alt-text="Пример адаптивной карты, отрисовываемой на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 
 * Ознакомьтесь с разработкой [ботов,](../../bots/what-are-bots.md) [адаптивными](../../task-modules-and-cards/what-are-cards.md#adaptive-cards)картами и модулями задач [в](../../task-modules-and-cards/task-modules/task-modules-bots.md) Teams.
 * У вас есть бот, работающий в Teams для разработки.
+* Будьте в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md).
 
 ## <a name="changes-to-app-manifest"></a>Изменения манифеста приложений
 
@@ -434,7 +436,7 @@ ms.locfileid: "57823230"
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)

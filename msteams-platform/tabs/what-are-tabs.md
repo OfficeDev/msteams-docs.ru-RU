@@ -5,12 +5,12 @@ description: Обзор пользовательских вкладок на п�
 localization_priority: Normal
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 890b1fb71a7b139aedec6869a734611578a78ceaaaf1510661529430ee7b9f26
-ms.sourcegitcommit: 569ff24cc41c46d886b913a916401b18e0eb1439
+ms.openlocfilehash: f7fa2ab75aa81740d1e5a3b9680c9290a57d296e346262044094965750f2d5ae
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "57823223"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57707457"
 ---
 # <a name="microsoft-teams-tabs"></a>Вкладки Microsoft Teams
 
@@ -81,7 +81,7 @@ ms.locfileid: "57823223"
 Вы можете иметь несколько каналов или групповых вкладок и до 16 личных вкладок для каждого приложения.
 
 ### <a name="tools-you-can-use-to-build-tabs"></a>Средства, которые можно использовать для создания вкладок
-* [Наборы средств Teams для Visual Studio Code](../toolkit/visual-studio-code-overview.md)
+* [Teams набор средств visual Stuido Code](../toolkit/visual-studio-code-overview.md)
 * [Teams набор средств visual Stuido](../toolkit/visual-studio-overview.md)
 
 ## <a name="see-also"></a>См. также
@@ -91,7 +91,7 @@ ms.locfileid: "57823223"
 * [Интеграция сканера QR или штрихкода](../concepts/device-capabilities/qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](../concepts/device-capabilities/location-capability.md)
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Необходимые компоненты](~/tabs/how-to/tab-requirements.md)
