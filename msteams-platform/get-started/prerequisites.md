@@ -5,12 +5,12 @@ description: Узнайте, как начать работу с разрабо�
 ms.author: adhal
 ms.date: 05/24/2021
 ms.topic: quickstart
-ms.openlocfilehash: 2945490d70023a620bad43b618789164aa915d8a
-ms.sourcegitcommit: 6a41c529a423c81a184c7a79125dbaaed0179788
+ms.openlocfilehash: 82b4c6b54286f70672fecd0f5dd059cf7f47036821b078d502ba9cae73dc5498
+ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53586000"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57703166"
 ---
 # <a name="prerequisites-get-started-with-microsoft-teams-app-development"></a>Необходимые условия: начало разработки Microsoft Teams приложения
 
