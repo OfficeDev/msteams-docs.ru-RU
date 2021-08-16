@@ -6,12 +6,12 @@ keywords: Возможности микрофона изображения ка�
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: 41132cacc23628e0d585eaeae634eef263a62030443a362bf38075a2534ab544
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 74ebeee5392272021f2a9977709fc0b1df2a50b1
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704968"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345734"
 ---
 # <a name="integrate-media-capabilities"></a>Интеграция возможностей мультимедиа 
 
@@ -254,5 +254,5 @@ microsoftTeams.media.selectMedia(mediaInput, (error: microsoftTeams.SdkError, at
 
 * [Интеграция возможностей сканера QR или штрихкодов в Teams](qr-barcode-scanner-capability.md)
 * [Интеграция возможностей расположения в Teams](location-capability.md)
-* [Интеграция возможностей выборщика людей в Teams](people-picker-capability.md)
+* [Интеграция выборщика людей в Teams](people-picker-capability.md)
 

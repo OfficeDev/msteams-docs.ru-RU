@@ -5,12 +5,12 @@ keywords: teams bots cards format
 localization_priority: Normal
 ms.topic: reference
 ms.date: 06/25/2021
-ms.openlocfilehash: b972fd24be56423a4dce9ba9cb55c0cb44038e81b1859697ac36ecccda4d0283
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: e62d79b6bd07031800116bc3295ce55a06e3bc86
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345720"
 ---
 # <a name="format-cards-in-microsoft-teams"></a>Форматирование карточек в Microsoft Teams
 
@@ -41,7 +41,7 @@ ms.locfileid: "57706176"
 
  Следующая таблица содержит поддерживаемые стили `Textblock` для `Fact.Title` , и `Fact.Value` :
 
-| Style | Пример | Markdown |
+| Стиль | Пример | Markdown |
 | --- | --- | --- |
 | Полужирный | **Bold** | ```**Bold**``` |
 | Курсив | _Italic_ | ```_Italic_``` |
@@ -52,8 +52,8 @@ ms.locfileid: "57706176"
 Следующие теги Markdown не поддерживаются:
 
 * Заголовки
-* Таблицы
-* изображения;
+* таблицы;
+* Изображения
 * Предформатированный текст
 * Blockquotes
 
@@ -293,7 +293,7 @@ ms.locfileid: "57706176"
 
 Карты Connector поддерживают ограниченное форматирование Markdown и HTML.
 
-| Style | Пример | Markdown |
+| Стиль | Пример | Markdown |
 | --- | --- | --- |
 | Полужирный | **text** | `**text**` |
 | Курсив | *text* | `*text*` |
@@ -391,7 +391,7 @@ ms.locfileid: "57706176"
 
 Карты Connector поддерживают ограниченное форматирование Markdown и HTML.
 
-| Style | Пример | HTML |
+| Стиль | Пример | HTML |
 | --- | --- | --- |
 | Полужирный | **text** | `<strong>text</strong>` |
 | Курсив | *text* | `<em>text</em>` |
@@ -481,7 +481,7 @@ ms.locfileid: "57706176"
 
 HTML-теги поддерживаются для простых карт, таких как карты героя и эскизы. Markdown не поддерживается.
 
-| Style | Пример | HTML |
+| Стиль | Пример | HTML |
 | --- | --- | --- |
 | Полужирный | **text** | `<strong>text</strong>` |
 | Курсив | *text* | `<em>text</em>` |

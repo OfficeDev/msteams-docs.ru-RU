@@ -6,12 +6,12 @@ keywords: соединитель teams o365
 localization_priority: Normal
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: e52402e841b675de7d0c19302b8c8090bcb90cef27ac61e8ac3d6dd69a0bb076
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: ee9a00473a7d871e0c69f27a44ca6c7c23eadcbf
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57709325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345741"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -128,7 +128,7 @@ ms.locfileid: "57709325"
 
 В следующей таблице параметров и сведений о свойствах `GetSetting` отклика:
 
-| Параметры   | Details |
+| Параметры   | Сведения |
 |-------------|---------|
 | `entityId`       | Код сущности, задаваемый кодом при `setSettings()` вызове. |
 | `configName`  | Имя конфигурации, заданная кодом при `setSettings()` вызове. |
@@ -267,7 +267,7 @@ ms.locfileid: "57709325"
 
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Соединители    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
+| Соединители    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
 | Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.|  | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
