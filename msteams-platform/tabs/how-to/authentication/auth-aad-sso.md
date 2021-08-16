@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 localization_priority: Normal
 keywords: группы проверки подлинности SSO AAD единого api для входов
-ms.openlocfilehash: f51f34f103682207551d1b53d47a763f7c3b464085b6806c1241c1e14636bc06
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 34d98707313dea011a072fa77cc0dfc1b03b2a83
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57701901"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345671"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -159,7 +159,7 @@ microsoftTeams.authentication.getAuthToken(authTokenRequest);
 
 Когда вы звоните , и для получения разрешений на уровне пользователя требуется дополнительное согласие пользователя, пользователю отображается диалоговое окно для `getAuthToken` предоставления дополнительного согласия.
 
-После получения маркера доступа в вызове успешного вызова можно расшифровать маркер доступа для просмотра утверждений, связанных с этим маркером. Необязательно можно вручную скопировать и вклеить маркер доступа [](https://jwt.ms/) в средство, например jwt.ms для проверки его содержимого. Если вы не получаете upN в маркере возвращенного доступа, вы можете добавить его в качестве необязательных [утверждений](/azure/active-directory/develop/active-directory-optional-claims) в AAD.
+После получения маркера доступа в вызове успешного вызова можно расшифровать маркер доступа для просмотра утверждений, связанных с этим маркером. Необязательно можно вручную скопировать и вклеить маркер доступа [](https://jwt.ms/) в средство, например jwt.ms для проверки его содержимого. Если вы не получаете upN в маркере возвращенного доступа, вы можете добавить его в качестве необязательных [утверждений](/azure/active-directory/develop/active-directory-optional-claims) в AAD. Дополнительные сведения см. в [том, что касается маркеров доступа.](/azure/active-directory/develop/access-tokens)
 
 <p>
     <img src="~/assets/images/tabs/tabs-sso-prompt.png" alt="Tab single sign-on SSO dialog prompt" width="75%"/>
@@ -169,7 +169,7 @@ microsoftTeams.authentication.getAuthToken(authTokenRequest);
 
 |**Название примера**|**Описание**|**C#**|**Node.js**|
 |---------------|---------------|------|--------------|
-| Tab SSO |Microsoft Teams пример приложения для вкладок Azure AD SSO| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-sso/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/tab-sso/nodejs), </br>[Teams набор средств](../../../toolkit/visual-studio-code-tab-sso.md)|
+| Tab SSO |Microsoft Teams пример приложения для вкладок Azure AD SSO| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-sso/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/tab-sso/nodejs), </br>[Teams набор средств](../../../toolkit/visual-studio-code-tab-sso.md)|
 
 ## <a name="known-limitations"></a>Известные ограничения
 

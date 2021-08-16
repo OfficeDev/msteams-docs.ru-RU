@@ -4,12 +4,12 @@ description: Описывает функции в Developer Preview Microsoft Te
 ms.topic: conceptual
 localization_priority: Normal
 keywords: Функции разработчика команд предварительного просмотра
-ms.openlocfilehash: ddf935279d5298caa032df7f109369bdc4b798ef51206f5cc688846061fd6720
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 1dc719ae9ead4ef7c7519925b79ca62859ada903
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345560"
 ---
 # <a name="public-developer-preview-for-microsoft-teams"></a>Предварительный просмотр общедоступных Microsoft Teams
 
@@ -52,6 +52,5 @@ Developer Preview является публичной программой дл�
 
 Используйте один и тот же элемент меню в статье → разработчика и нажмите на него, чтобы отключить его.
 
-## <a name="features-available-in-developer-preview"></a>Функции, доступные в предварительном просмотре разработчика
 
-Полный список функций, включенных в предварительном просмотре разработчика, см. в тексте: [Features in the public developer preview](../../resources/dev-preview/developer-preview-features.md).
+

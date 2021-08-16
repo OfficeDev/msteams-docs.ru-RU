@@ -6,12 +6,12 @@ keywords: удаление полей вкладки
 ms.topic: reference
 localization_priority: Normal
 ms.author: lomeybur
-ms.openlocfilehash: 4ca8356bddc0e578bc58b38112fb1268302a5ad0e84631bf81864c70cffbcb64
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 2dc024bea28dbd8f98c658ccfa4a7494e77e19d9
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704388"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345602"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 

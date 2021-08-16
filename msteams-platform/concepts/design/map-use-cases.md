@@ -5,12 +5,12 @@ description: Определите, как могут работать случа
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 28f6b0af0854d19826d8f3542bb11ba0e025cbe1
-ms.sourcegitcommit: 6a41c529a423c81a184c7a79125dbaaed0179788
+ms.openlocfilehash: 77e8db5e0d0e4738cf479ccfddb9766507f7170c
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53586035"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345553"
 ---
 # <a name="map-your-use-cases-to-teams-app-capabilities"></a>Составить карту случаев использования для Teams возможностей приложения
 
@@ -26,7 +26,7 @@ ms.locfileid: "53586035"
 * Приложение может существовать в различных сферах.
 * Возможности приложения, такие как расширения обмена сообщениями, следуют за пользователями в различных сферах.
 * Пользователи часто не могут добавлять приложения в Teams или каналы.
-* Гостевых пользователей можно получить доступ к контенту, Teams или каналах.
+* Гости могут получать доступ к контенту, Teams или каналам.
 
 Вы можете выбрать между личной областью и областью группы или канала для приложения в зависимости от следующих ниже.
 
@@ -104,4 +104,4 @@ ms.locfileid: "53586035"
 
 ## <a name="see-also"></a>См. также
 
-[Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
+[Создайте первое Microsoft Teams приложение](~/get-started/code-samples.md#build-your-first-microsoft-teams-app-overview)

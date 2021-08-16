@@ -5,18 +5,21 @@ ms.topic: conceptual
 keywords: разработка командных ботов
 localization_priority: Normal
 ms.date: 05/20/2018
-ms.openlocfilehash: 674576efccb2916b8a82ae27310d8fe49909a782
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: dd32439c74daf55c89d0e34614a073a36a5ffa1e
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345685"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в Microsoft Teams приложения
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
 Создание и подключение интеллектуальных ботов для взаимодействия с Microsoft Teams пользователями естественным образом с помощью чата. Или предостереите простой бот на основе команд, который будет использоваться в качестве интерфейса "командной строки" для более широкого Teams приложения. Вы можете сделать бот только для уведомлений, который может отправлять сведения, релевантные пользователям, непосредственно к ним в канале или прямом сообщении. Вы даже можете принести существующий бот на основе Bot Framework и добавить Teams поддержку, чтобы сделать ваш опыт блеском.
+
+> [!IMPORTANT]
+> В настоящее время боты доступны в облако сообщества для государственных организаций (GCC), но недоступны в GCC-High и Министерстве обороны (DOD).
 
 ![Пример бота, помогая пользователю](~/assets/images/bot_example.png)
 

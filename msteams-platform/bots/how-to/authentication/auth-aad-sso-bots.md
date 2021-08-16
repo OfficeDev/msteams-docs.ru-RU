@@ -4,12 +4,12 @@ description: Описывает, как получить маркер польз
 keywords: маркер, маркер пользователя, поддержка SSO для ботов
 localization_priority: Normal
 ms.topic: conceptual
-ms.openlocfilehash: 30a92de9f7d5ad9615ef2f86244b8607a47cea356030ebfb93ed3c1ffcb127a8
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: f1d9a905ffb8239ecd3398e7db8ee593c6cbfba7
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57709622"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345664"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входного знака (SSO) для ботов
 
@@ -118,7 +118,7 @@ ms.locfileid: "57709622"
     4. Для **URL-Exchange маркера** используйте значение области, определенное в обновлении манифеста Teams приложения [для бота.](#update-your-teams-application-manifest-for-your-bot) URL-Exchange маркера указывает SDK, что это приложение AAD настроено для SSO.
     5. В поле **"ID клиента"** введите *общие .*
     6. Добавьте все **области, настроенные** при указании разрешений на API ниже по течению для приложения AAD. С помощью секрета client id и Client, магазин маркеров обменивается маркером для маркера графа с определенными разрешениями.
-    7. Нажмите кнопку **Сохранить**.
+    7. Нажмите **Сохранить**.
 
     ![Представление параметра VuSSOBotConnection](../../../assets/images/bots/bots-vuSSOBotConnection-settings.png)
 
@@ -303,4 +303,4 @@ ms.locfileid: "57709622"
 ## <a name="code-sample"></a>Пример кода
 |**Название примера** | **Описание** |**.NET** | 
 |----------------|-----------------|--------------|
-|SDK для базы ботов | Пример для использования SDK-базы ботов. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/teams-sso/csharp_dotnetcore)|
+|SDK для базы ботов | Пример для использования SDK-базы ботов. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/teams-sso/csharp_dotnetcore)|

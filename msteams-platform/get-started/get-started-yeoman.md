@@ -5,12 +5,12 @@ keywords: начало работы node.js nodejs yeoman
 localization_priority: Normal
 ms.topic: tutorial
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fb37e49ad4cfe3b705832a1a5e419de56a859f43b601e5c8d7c026b120f37ab0
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 696c98be0b091cb937194140f5606c774447baff
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703203"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345180"
 ---
 # <a name="build-your-first-microsoft-teams-app-using-the-yeoman-generator"></a>Создайте первое Microsoft Teams приложение с помощью генератора Yeoman
 
@@ -82,7 +82,7 @@ npm init yo teams@preview
 
     ![Выбор элементов](~/assets/yeoman-images/teams-first-app-2.png)
 
-1. Ответьте на следующий набор последующих вопросов, которые отображаются на основе элементов, выбранных в шаге 2.
+1. Ответьте на следующий набор последующих вопросов, которые отображаются на основе элементов, выбранных в шаге 3.
 1. Введите URL-адрес для расположения, в котором будет расположено решение. 
 
    > [!NOTE]

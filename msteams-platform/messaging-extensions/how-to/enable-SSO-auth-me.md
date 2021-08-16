@@ -5,12 +5,12 @@ description: Как включить поддержку SSO для расшир�
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 3e965ed19e603bf888b107ca9ecda01aa81af192a020c41cfd26eb9bb905fd53
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 656c17612c74ee55b870fd2e7e13dea60e6ed2f8
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345243"
 ---
 # <a name="single-sign-on-sso-support-for-messaging-extensions"></a>Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями
  
@@ -18,10 +18,10 @@ ms.locfileid: "57705747"
 
 В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Требования
 
 Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
-* У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/en-us/free/)
+* У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/free/)
 * Необходимо настроить приложение через портал AAD и обновить манифест Teams для бота, как определено в регистрации приложения на портале [AAD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal)
 
 > [!NOTE]

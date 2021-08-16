@@ -6,12 +6,12 @@ keywords: QR-код qr code qrcode barcode сканера штрихкода к�
 localization_priority: Normal
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: ab346c9bf3a2359ce33a5ec73b743d9b340a71b3c27b9555a6978a00c3ca1e8f
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 02332ad1f0805bfc4972333086e48552761a48a8
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57702773"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345257"
 ---
 # <a name="integrate-qr-or-barcode-scanner-capability"></a>Интеграция функции сканирования QR- или штрихкода 
 
@@ -111,5 +111,5 @@ microsoftTeams.media.scanBarCode((error: microsoftTeams.SdkError, decodedText: s
 
 * [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
 * [Интеграция возможностей расположения в Teams](location-capability.md)
-* [Интеграция возможностей выборщика людей в Teams](people-picker-capability.md)
+* [Интеграция выборщика людей в Teams](people-picker-capability.md)
 

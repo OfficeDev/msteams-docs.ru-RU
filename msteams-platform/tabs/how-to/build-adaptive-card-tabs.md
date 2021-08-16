@@ -4,17 +4,16 @@ author: KirtiPereira
 description: Создание вкладок с помощью адаптивных карт
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 6b969461669f9edb7d7f3e216b3b91dd700881b34de17389f8a43348b09830f8
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 31954b046c550d34155bc7a9ec66cfc61b74ecf4
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345574"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
 > [!IMPORTANT]
-> * Эта функция находится в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md) поддерживается в настольных компьютерах и мобильных устройствах. Поддержка в веб-браузере скоро.
 > * Вкладки с адаптивными картами в настоящее время поддерживаются только в качестве личных приложений.
 
 При разработке вкладки с помощью традиционного метода могут возникнуть такие проблемы:
@@ -32,13 +31,12 @@ ms.locfileid: "57705087"
 
 :::image type="content" source="../../assets/images/tabs/adaptive-cards-rendered-in-tabs.jpg" alt-text="Пример адаптивной карты, отрисовываемой на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Требования
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 
-* Ознакомьтесь с разработкой [ботов,](../../bots/what-are-bots.md) [адаптивными](../../task-modules-and-cards/what-are-cards.md#adaptive-cards)картами и модулями задач [в](../../task-modules-and-cards/task-modules/task-modules-bots.md) Teams.
+* Ознакомьтесь с разработкой [ботов,](../../bots/what-are-bots.md) [адаптивными](https://adaptivecards.io/)картами и модулями задач [в](../../task-modules-and-cards/task-modules/task-modules-bots.md) Teams.
 * У вас есть бот, работающий в Teams для разработки.
-* Будьте в [общедоступных Developer Preview](~/resources/dev-preview/developer-preview-intro.md).
 
 ## <a name="changes-to-app-manifest"></a>Изменения манифеста приложений
 
@@ -426,7 +424,7 @@ ms.locfileid: "57705087"
 
 |**Название примера** | **Описание** |**.NET** | **Node.js** |
 |----------------|-----------------|--------------|--------------|
-| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
+| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

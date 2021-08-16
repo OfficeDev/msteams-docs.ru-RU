@@ -29,7 +29,7 @@
 
 В окне терминала:
 
-1. Запуск `teamsfx provision` .
+1. Запустите `teamsfx provision`.
 
    ``` bash
    teamsfx provision
@@ -40,7 +40,7 @@
    > [!NOTE]
    > Для размещения приложения всегда используются некоторые ресурсы Azure.
 
-1. Запуск `teamsfx deploy` .
+1. Запустите `teamsfx deploy`.
 
    ``` bash
    teamsfx deploy

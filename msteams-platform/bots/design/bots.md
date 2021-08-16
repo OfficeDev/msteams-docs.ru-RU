@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: lajanuar
-ms.openlocfilehash: b6b6712a6372a37886ef227fd941cb70f24a57ce2d65a8e3492bea8c080c74ef
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: ea0392868b06653657beff60b157070eaef7f4ba
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57709755"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345650"
 ---
 # <a name="designing-your-microsoft-teams-bot"></a>Создание бота Microsoft Teams
 
@@ -32,7 +32,7 @@ ms.locfileid: "57709755"
 
 Боты доступны в чатах, каналах и личных приложениях.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 Пользователи могут добавить бот один из следующих способов:
 
@@ -42,7 +42,7 @@ ms.locfileid: "57709755"
 
     :::image type="content" source="../../assets/images/bots/add-bot-chat-at-mention.png" alt-text="В примере показано, как добавить бота в групповой чат с помощью @упоминания." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 Пользователи могут получать доступ к ботам, добавленным на рабочем столе с помощью @mention.
 
@@ -58,11 +58,11 @@ ms.locfileid: "57709755"
 
 В личных контекстах приветствия задают тон бота. В сообщении содержится приветствие, то, что бот может сделать, и некоторые предложения по взаимодействию. Например, "Попробуйте спросить меня о ...". По возможности эти предложения должны возвращать готовые ответы, чтобы пользователю не обязательно было входить в систему.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-personal-welcome.png" alt-text="В примере показано представление бота в личном приложении." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-personal-welcome.png" alt-text="В примере показано введение бота в личном приложении на мобильных устройствах." border="false":::
 
@@ -72,11 +72,11 @@ ms.locfileid: "57709755"
 
 Введение бота должно немного отличаться в каналах и групповых чатах по сравнению с личным пространством (например, личным приложением). В реальной жизни, войдя в комнату, заполненную людьми, вы бы не стали приветствовать тех, кто там уже находится; вместо этого вы бы представились. То же самое надо воплотить в конструкции бота.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-group-welcome.png" alt-text="В примере показано представление бота в контексте совместной работы." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-group-welcome.png" alt-text="В примере показано введение бота в контексте совместной работы на мобильных устройствах." border="false":::
 
@@ -88,11 +88,11 @@ ms.locfileid: "57709755"
 
 Не забывайте: в командном меню бота (**Что я умею делать?**) необходимо также предоставить команду для выхода из системы.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-sso-example.png" alt-text="В примере показан бот с кнопкой для входа в систему." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-sso-example.png" alt-text="В примере показан бот с кнопкой вход на мобильный телефон." border="false":::
 
@@ -109,11 +109,11 @@ ms.locfileid: "57709755"
 
 В личном приложении карусель может предоставить эффективный обзор бота и любых других функций приложения. Рекомендуется включить кнопки, которые пользователи могут попробовать команды ботов. Например, **создание задачи.**
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-tour-personal.png" alt-text="В примере показан видеообзор бота в чате с одним человеком." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-tour-personal.png" alt-text="В примере показана экскурсия по ботам в чате один на один на мобильном телефоне." border="false":::
 
@@ -123,11 +123,11 @@ ms.locfileid: "57709755"
 
 В каналах и групповых чатах видеообзор должен открываться в модальном режиме (также известном как [модуль задач](../../task-modules-and-cards/task-modules/design-teams-task-modules.md) чтобы не прерывать текущие беседы. Это также дает возможность реализовать в обзоре представления на основе ролей.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-tour-channel.png" alt-text="В примере показан видеообзор бота в канале." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-tour-channel.png" alt-text="В примере показана экскурсия бота в канале на мобильных устройствах." border="false":::
 
@@ -148,7 +148,7 @@ ms.locfileid: "57709755"
 
 ### <a name="anatomy"></a>Анатомия
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-anatomy.png" alt-text="В примере показана структурная анатомия бота." border="false":::
 
@@ -156,13 +156,13 @@ ms.locfileid: "57709755"
 |----------|-----------|
 |1|**Имя и значок приложения**|
 |2|**Вкладка чата**: открывает пространство для общения с ботом (только для личных приложений).|
-|3|**Настраиваемые вкладки**: открывает другое содержимое, связанное с вашим приложением.|
+|3 |**Настраиваемые вкладки**: открывает другое содержимое, связанное с вашим приложением.|
 |4 |**Сведения**: выводит на экран основные сведения о приложении.|
 |5 |**Пузырек чата**: беседы ботов используют структуру обмена сообщениями Teams.|
 |6 |**Адаптивная карта.** Если ответы бота включают адаптивные карты, карта занимает полную ширину пузыря чата.|
 |7 |**Меню команд**: отображает стандартные команды бота (определенные вами).|
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-anatomy.png" alt-text="В примере показана структурная анатомия мобильного бота." border="false":::
 
@@ -170,7 +170,7 @@ ms.locfileid: "57709755"
 |----------|-----------|
 |1|**Имя и значок приложения**|
 |2|**Вкладка чата**: открывает пространство для общения с ботом (только для личных приложений).|
-|3|**Настраиваемые вкладки**: открывает другое содержимое, связанное с вашим приложением.|
+|3 |**Настраиваемые вкладки**: открывает другое содержимое, связанное с вашим приложением.|
 |4 |**Пузырек чата**: беседы ботов используют структуру обмена сообщениями Teams.|
 |5 |**Адаптивная карта.** Если ответы бота включают адаптивные карты, карта занимает полную ширину пузыря чата.|
 
@@ -232,11 +232,11 @@ ms.locfileid: "57709755"
 
 Боты могут доставлять точное соответствие запросу или группе родственных соответствий, чтобы устранить двойственность. Для получения родственных соответствий группируйте содержимое с помощью карточки списка.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-simple-query.png" alt-text="В примере показано взаимодействие с ботом для выполнения простого запроса." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-simple-query.png" alt-text="В примере показано простое взаимодействие запроса с ботом на мобильных устройствах." border="false":::
 
@@ -248,12 +248,12 @@ ms.locfileid: "57709755"
 
 В следующих примерах бот отвечает на каждое сообщение с вариантами того, что может потребоваться сделать дальше.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-multi-turn.png" alt-text="В примере показано взаимодействие с ботом с несколькими поворотами." border="false":::
 
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-multi-turn.png" alt-text="В примере показано многоступенчатое взаимодействие с ботом на мобильных устройствах." border="false":::
 
@@ -264,7 +264,7 @@ ms.locfileid: "57709755"
 
 С помощью проактивных сообщений бот может действовать как дайджест, который с определенной периодичностью отправляет уведомления, актуальные для отдельного лица, группового чата или канала. Бот может отправить сообщение, если что-то изменилось в документе или когда завершено рабочее задание.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 В следующем примере пользователь получает всплывающее уведомление о том, что бот передает им сообщения в другом канале.
 
@@ -274,7 +274,7 @@ ms.locfileid: "57709755"
 
 :::image type="content" source="../../assets/images/bots/bot-proactive-message.png" alt-text="В примере показано, как пользователь смотрит на проактивные сообщения бота." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 В следующем примере пользователь получает уведомление о том, что бот передает их в другом канале.
 
@@ -290,11 +290,11 @@ ms.locfileid: "57709755"
 
 В личных приложениях вкладка может дополнять то, что может сделать бот. Например, если бот может создавать рабочие элементы, хорошо показать все эти элементы в центральном расположении на вкладке. Дополнительные сведения [о разработке вкладок](../../tabs/design/tabs.md).
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="../../assets/images/bots/bot-with-tab.png" alt-text="В примере показано, как вкладка помогает упорядочизировать содержимое бота." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="../../assets/images/bots/mobile-bot-with-tab.png" alt-text="В примере показано, как вкладка может помочь организовать содержимое бота на мобильных устройствах." border="false":::
 
@@ -310,7 +310,7 @@ ms.locfileid: "57709755"
 
 Используйте эти рекомендации для создания качественных приложений.
 
-### <a name="content"></a>Контент
+### <a name="content"></a>Содержимое
 
 :::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример, показывающий лучшую практику бота для создания четкого человека." border="false":::
 

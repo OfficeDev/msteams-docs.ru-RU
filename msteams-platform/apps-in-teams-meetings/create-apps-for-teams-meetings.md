@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.author: lajanuar
 localization_priority: Normal
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: a8b606242f4fe5498f1d370fdf79b3712d430a3c4bdd0006752d5fe463e8865d
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 1e0910a3f8fa76aae541b9f3bd1f79f673f64d92
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57702332"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345362"
 ---
 # <a name="prerequisites-and-api-references-for-apps-in-teams-meetings"></a>Необходимые условия и ссылки на API для приложений в собраниях Teams
 
 Чтобы расширить возможности приложения на протяжении жизненного цикла собрания, Teams позволяет работать с приложениями для Teams собраний. Пройдитесь по необходимым условиям и используйте ссылки API приложений для собраний, чтобы повысить качество собраний.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Требования
 
 Прежде чем работать с приложениями для Teams собраний, необходимо иметь представление о следующих предпосылках:
 
@@ -86,8 +86,8 @@ API `GetParticipant` включает следующие параметры за
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| String | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
+|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
 |**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
 
 #### <a name="example"></a>Пример
@@ -521,10 +521,10 @@ public class MeetingStartEndEventValue
 
 |Название примера | Описание | .NET | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-| Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
-| Вкладка "Сведения в собрании" | Microsoft Teams для взаимодействия с вкладками Details in-meeting. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
+| Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
+| Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
+| Вкладка "Сведения в собрании" | Microsoft Teams для взаимодействия с вкладками Details in-meeting. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

@@ -4,12 +4,12 @@ description: Ограничение скорости и лучшие практ�
 ms.topic: conceptual
 localization_priority: Normal
 keywords: ограничения скорости командных ботов
-ms.openlocfilehash: 1ee98af7704baa066ad6ca7adbf0997879454a3c58e83d62ea4f5a2f17c20c36
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: d113cc0236de78a34211b9348105916740189d81
+ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705610"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58345595"
 ---
 # <a name="optimize-your-bot-with-rate-limiting-in-teams"></a>Оптимизация бота с ограничением скорости в Teams
 
@@ -63,20 +63,23 @@ public class BotSdkTransientExceptionDetectionStrategy : ITransientErrorDetectio
         // List of error codes to retry on
         List<int> transientErrorStatusCodes = new List<int>() { 429 };
 
-        public bool IsTransient(Exception ex)
-        {
-            if (ex.Message.Contains("429"))
-                return true;
+        public static bool IsTransient(Exception ex)
+          {
+              if (ex.Message.Contains("429"))
+                  return true;
 
-            var httpOperationException = ex as HttpOperationException;
-            if (httpOperationException != null)
-            {
-                return httpOperationException.Response != null &&
-                        transientErrorStatusCodes.Contains((int)httpOperationException.Response.StatusCode);
-            }
-
-            return false;
-        }
+              HttpResponseMessageWrapper? response = null;
+              if (ex is HttpOperationException httpOperationException)
+              {
+                  response = httpOperationException.Response;
+              }
+              else
+              if (ex is ErrorResponseException errorResponseException)
+              {
+                  response = errorResponseException.Response;
+              }
+              return response != null && transientErrorStatusCodes.Contains((int)response.StatusCode);
+          }
     }
 ```
 
@@ -128,19 +131,19 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 
 | Сценарий | Период времени в секундах | Максимально допустимые операции |
 | --- | --- | --- |
-| Отправка в беседу | 1 | 7  |
+| Отправка в беседу | 1  | 7  |
 | Отправка в беседу | 2 | 8  |
 | Отправка в беседу | 30 | 60 |
 | Отправка в беседу | 3600 | 1800 |
-| Создание беседы | 1 | 7  |
+| Создание беседы | 1  | 7  |
 | Создание беседы | 2 | 8  |
 | Создание беседы | 30 | 60 |
 | Создание беседы | 3600 | 1800 |
-| Получить участников беседы| 1 | 14  |
+| Получить участников беседы| 1  | 14  |
 | Получить участников беседы| 2 | 16  |
 | Получить участников беседы| 30 | 120 |
 | Получить участников беседы| 3600 | 3600 |
-| Получать беседы | 1 | 14  |
+| Получать беседы | 1  | 14  |
 | Получать беседы | 2 | 16  |
 | Получать беседы | 30 | 120 |
 | Получать беседы | 3600 | 3600 |
@@ -158,15 +161,15 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 
 | Сценарий | Период времени в секундах | Максимально допустимые операции |
 | --- | --- | --- |
-| Отправка в беседу | 1 | 14  |
+| Отправка в беседу | 1  | 14  |
 | Отправка в беседу | 2 | 16  |
-| Создание беседы | 1 | 14  |
+| Создание беседы | 1  | 14  |
 | Создание беседы | 2 | 16  |
-| Создание беседы| 1 | 14  |
+| Создание беседы| 1  | 14  |
 | Создание беседы| 2 | 16  |
-| Получить участников беседы| 1 | 28 |
+| Получить участников беседы| 1  | 28 |
 | Получить участников беседы| 2 | 32 |
-| Получать беседы | 1 | 28 |
+| Получать беседы | 1  | 28 |
 | Получать беседы | 2 | 32 |
 
 ## <a name="next-step"></a>Следующий этап
