@@ -71,7 +71,7 @@ conceptualContent:
         - url: 'https://developer.microsoft.com/en-us/microsoft-teams/app-development-resources'
           itemType: reference
           text: Лучшие практики для Teams приложений
-    - title: Узнать
+    - title: Обучение
       links:
         - url: /learn/modules/intro-microsoft-teams-apps
           itemType: learn
@@ -125,7 +125,7 @@ conceptualContent:
         - url: 'https://docs.microsoft.com/en-us/teamblog/'
           itemType: whats-new
           text: Объявления
-    - title: Community справка
+    - title: Справка
       links:
         - url: /microsoftteams/platform/feedback
           itemType: overview
