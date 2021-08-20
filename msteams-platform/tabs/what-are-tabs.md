@@ -5,12 +5,12 @@ description: Обзор пользовательских вкладок на п�
 localization_priority: Normal
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: bafaa54bd4c7b01fcdebae48ccf9a88adfe03a3b
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 5a884be8133129ea98abf2557e529c3c88657d15
+ms.sourcegitcommit: 77edcd5072b35fddc02a9ca7a379c6b1a0157722
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345713"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58398650"
 ---
 # <a name="microsoft-teams-tabs"></a>Вкладки Microsoft Teams
 
@@ -82,7 +82,7 @@ ms.locfileid: "58345713"
 
 ### <a name="tools-you-can-use-to-build-tabs"></a>Средства, которые можно использовать для создания вкладок
 * [Наборы средств Teams для Visual Studio Code](../toolkit/visual-studio-code-overview.md)
-* [Teams набор средств visual Stuido](../toolkit/visual-studio-overview.md)
+* [Наборы средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
 
 ## <a name="see-also"></a>См. также
 
@@ -94,4 +94,4 @@ ms.locfileid: "58345713"
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Необходимые компоненты](~/tabs/how-to/tab-requirements.md)
+> [Предварительные требования](~/tabs/how-to/tab-requirements.md)

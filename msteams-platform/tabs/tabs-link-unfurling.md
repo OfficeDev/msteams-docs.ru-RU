@@ -4,12 +4,12 @@ author: Rajeshwari-v
 description: Как развязать ссылку, открыть представление сцены и закрепить вкладку с помощью Microsoft Teams приложения.
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: f465530dcc53ff3b0174f5b78ebf2240665a7d9e
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 74f385476887ab14d9b3eac12bfb8e0735b295d5
+ms.sourcegitcommit: 77edcd5072b35fddc02a9ca7a379c6b1a0157722
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345278"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58398678"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
@@ -131,13 +131,20 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 | Имя свойства | Тип | Количество символов | Описание |
 |:-----------|:---------|:------------|:-----------------------|
-| `entityId` | Строка | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
+| `entityId` | String | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
 | `name` | String | 128 | Это свойство — отображаемая вкладки в интерфейсе канала. Это поле является необязательным.|
-| `contentUrl` | Строка | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте. Это поле обязательно для заполнения.|
+| `contentUrl` | String | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте. Это поле обязательно для заполнения.|
 | `websiteUrl?` | String | 2048 | Это свойство является https://, на который нужно указать, если пользователь выбирает для просмотра в браузере. Это поле обязательно для заполнения.|
 | `removeUrl?` | String | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс, который будет отображаться при удалении вкладки пользователем. Это необязательное поле.|
 
-## <a name="see-also"></a>См. также
+## <a name="code-sample"></a>Пример кода
+
+| Название примера | Описание | C# |Node.js|
+|-------------|-------------|------|----|
+|Вкладка в представлении сцены |Microsoft Teams пример приложения вкладки для демонстрации вкладки в представлении сцены.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
+    
+
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Расширение обмена сообщениями связывает разгрузку](~/messaging-extensions/how-to/link-unfurling.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
