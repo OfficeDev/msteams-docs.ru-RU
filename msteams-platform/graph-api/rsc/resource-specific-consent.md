@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: c013153470b4be54df82fa313b5d2f8dca16fe9a
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: 1dcb12c7e76671867ec632f02177565dee212fc4
+ms.sourcegitcommit: bab08a3a4934f06457a0882bd55ccefc6708682b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528952"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822215"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -43,6 +43,7 @@ ms.locfileid: "58528952"
 |TeamsTab.ReadWrite.Group|Обновление вкладок этой команды. |
 |TeamsTab.Delete.Group|Удаление вкладок этой команды. |
 |TeamMember.Read.Group|Получите членов этой группы. |
+|TeamsActivity.Send.Group|Создание новых уведомлений в каналах действий пользователей этой группы. |
 
 Дополнительные сведения см. в дополнительных сведениях о разрешениях на [согласие, определенных ресурсами группы.](/graph/permissions-reference#teams-resource-specific-consent-permissions)
 
@@ -65,6 +66,7 @@ ms.locfileid: "58528952"
 | OnlineMeeting.ReadBasic.Chat   | Ознакомьтесь с основными свойствами, такими как имя, расписание, организатор, ссылка на соединение и уведомления о встрече, связанной с этим чатом. |
 | Calls.AccessMedia.Chat         | Доступ к мультимедийным потокам в звонках, связанных с этим чатом или собранием.                                    |
 | Calls.JoinGroupCalls.Chat         | Присоединение к звонкам, связанным с этим чатом или собранием.                                    |
+| TeamsActivity.Send.Chat         | Создание новых уведомлений в каналах активности пользователей в этом чате. |
 
 Дополнительные сведения см. в [материале Chat Resource-specific consent permissions.](/graph/permissions-reference#chat-resource-specific-consent-permissions)
 
@@ -144,8 +146,8 @@ ms.locfileid: "58528952"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |Строка |ID приложения AAD. Дополнительные сведения см. [в приложении на портале AAD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal)|
-|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`id` |String |ID приложения AAD. Дополнительные сведения см. [в приложении на портале AAD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal)|
+|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 |`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в ресурсных разрешениях.](resource-specific-consent.md#resource-specific-permissions)|
 
 >
@@ -172,7 +174,8 @@ ms.locfileid: "58528952"
         "TeamsTab.Create.Group",
         "TeamsTab.ReadWrite.Group",
         "TeamsTab.Delete.Group",
-        "TeamMember.Read.Group"
+        "TeamMember.Read.Group",
+        "TeamsActivity.Send.Group"
     ]
   }
 ```
@@ -196,7 +199,8 @@ ms.locfileid: "58528952"
         "TeamsAppInstallation.Read.Chat",
         "OnlineMeeting.ReadBasic.Chat",
         "Calls.AccessMedia.Chat",
-        "Calls.JoinGroupCalls.Chat"
+        "Calls.JoinGroupCalls.Chat",
+        "TeamsActivity.Send.Chat"
     ]
   }
 ```
