@@ -266,12 +266,14 @@
   items:
     - name: Обзор
       href: apps-in-teams-meetings/teams-apps-in-meetings.md
-    - name: Расширяемость приложения для собраний
+    - name: Приложения объединенных собраний
       href: apps-in-teams-meetings/meeting-app-extensibility.md
-    - name: Необходимые условия и ссылки на API для приложений в собраниях Teams
+    - name: Необходимые условия для приложений в собраниях Teams
       href: apps-in-teams-meetings/create-apps-for-teams-meetings.md
     - name: Включение и настройка приложений для собраний
       href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
+    - name: Справочные материалы по API приложений для собраний
+      href: apps-in-teams-meetings/API-references.md
     - name: Настраиваемые сцены режима "Вместе" в Teams
       href: apps-in-teams-meetings/teams-together-mode.md
 - name: Создание веб-перехватчиков и соединителей
@@ -346,6 +348,8 @@
           href: bots/how-to/authentication/add-authentication.md
         - name: Использование проверки подлинности SSO
           href: bots/how-to/authentication/auth-aad-sso-bots.md
+        - name: Пошаговые инструкции по ботам с единым входом
+          href: sbs-bots-with-sso.yml
     - name: Расширения для система обмена сообщениями
       items:
         - name: Добавление проверки подлинности в расширение для сообщений

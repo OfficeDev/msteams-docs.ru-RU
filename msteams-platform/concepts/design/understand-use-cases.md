@@ -5,12 +5,12 @@ description: При планировании Microsoft Teams сначала не
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: 5171ce800c09c31486cfddcffcca7069ed81f0bf8d913876acaaaef4144d7bf7
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 6669492c25cb3701f5c937b3f99e39d411fbc4a4
+ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703175"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408546"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -77,14 +77,7 @@ ms.locfileid: "57703175"
 
 Определите, какие новые функции пользователь предпочтет иметь в текущем решении. Если у вас есть дорожная карта для добавления новых функций в приложение, на дизайн и архитектуру будет влиять.
 
-## <a name="see-also"></a>См. также
-
-* [Выбор способа распространения приложения](../deploy-and-publish/apps-publish-overview.md)
-* [Вкладки разработки](../../tabs/design/tabs.md)
-* [Конструкторские боты](../../bots/design/bots.md)
-* [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
-
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Карта случаев использования](../../concepts/design/map-use-cases.md)

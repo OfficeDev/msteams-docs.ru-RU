@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: surbhigupta
-ms.openlocfilehash: 2e053186355b583e456e73c6443f5d8c043157a9ae0a09941a86a3aabd7978c5
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: eb7e26a726313c366765f3ee4fd36aebc064ca78
+ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706704"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408582"
 ---
 # <a name="understand-the-microsoft-teams-app-structure"></a>Понимание структуры Microsoft Teams приложения
 
@@ -30,19 +30,17 @@ ms.locfileid: "57706704"
 
 ***Поддерживаемые области:** Personal*
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-Холст — это iframe, поэтому вы можете полностью настроить его.
-
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для личных приложений на рабочем столе." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильные устройства
 
 Холст — это веб-просмотр, поэтому вы можете полностью настроить его.
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-mobile.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для личных приложений на мобильных устройствах." border="false":::
 
----
+### <a name="desktop"></a>Рабочий стол
+
+Холст — это iframe, поэтому вы можете полностью настроить его.
+
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для личных приложений на рабочем столе." border="false":::
 
 ## <a name="tabs"></a>Вкладки
 
@@ -50,51 +48,45 @@ ms.locfileid: "57706704"
 
 ***Поддерживаемые области:** каналы, чаты, собрания*
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-Холст — это iframe, поэтому вы можете полностью настроить его.
-
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для вкладок на рабочем столе." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильные устройства
 
 Холст — это веб-просмотр, поэтому вы можете полностью настроить его.
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-mobile.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для вкладок на мобильных устройствах." border="false":::
 
----
+### <a name="desktop"></a>Рабочий стол
 
-## <a name="bots"></a>Боты
+Холст — это iframe, поэтому вы можете полностью настроить его.
+
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для вкладок на рабочем столе." border="false":::
+
+## <a name="bots"></a>боты;
 
 Боты — это диалоговые приложения, которые Teams с родными функциями обмена сообщениями, поэтому работа пользовательского интерфейса обрабатывается для вас. С точки зрения разработки все еще существуют возможности для добавления индивидуальности, пользовательских функций и богатых сведений с помощью поддержки обработки естественных языков (NLP) и платформы Адаптивные карты.
 
 ***Поддерживаемые области:** личные, каналы, чаты, собрания*
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для ботов на рабочем столе." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-mobile.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для ботов на мобильных устройствах." border="false":::
 
----
+### <a name="desktop"></a>Рабочий стол
 
-## <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для ботов на рабочем столе." border="false":::
+
+## <a name="messaging-extensions"></a>расширения для обмена сообщениями;
 
 Расширения для сообщений помогают быстро вставить содержимое приложения или выполнить какие-либо операции с сообщением, не выходя из беседы. Расширения обмена сообщениями на основе действий дают дополнительный контроль над опытом, а Teams обрабатывают большую часть отрисовок для расширений обмена сообщениями на основе поиска.
 
 ***Поддерживаемые области:** личные, каналы, чаты, собрания*
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для расширений обмена сообщениями на рабочем столе." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-mobile.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для расширений обмена сообщениями на мобильных устройствах." border="false":::
 
----
+### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для расширений обмена сообщениями на рабочем столе." border="false":::
 
 ## <a name="meeting-extensions"></a>Расширения для собраний
 
@@ -102,16 +94,14 @@ ms.locfileid: "57706704"
 
 ***Поддерживаемые области:** Собрания, чаты*
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-Поверхность — это iframe, позволяющий настраивать опыт, но имейте в виду, что во время собраний эти приложения используют темную тему и узки.
-
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настроить для расширений собраний на рабочем столе." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильные устройства
 
 Поверхность — это веб-просмотр, позволяющий настраивать опыт, но имейте в виду, что во время собраний в этих приложениях используется темная тема.
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-mobile.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для расширений собраний на мобильных устройствах." border="false":::
 
----
+### <a name="desktop"></a>Рабочий стол
+
+Поверхность — это iframe, позволяющий настраивать опыт, но имейте в виду, что во время собраний эти приложения используют темную тему и узки.
+
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настроить для расширений собраний на рабочем столе." border="false":::

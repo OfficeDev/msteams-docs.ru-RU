@@ -5,12 +5,12 @@ description: Узнайте, как начать работу с разрабо�
 ms.author: adhal
 ms.date: 05/24/2021
 ms.topic: quickstart
-ms.openlocfilehash: 82b4c6b54286f70672fecd0f5dd059cf7f47036821b078d502ba9cae73dc5498
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 58326e81f7fe68f67b4c054b9a615696276cc610
+ms.sourcegitcommit: bab08a3a4934f06457a0882bd55ccefc6708682b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703166"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58822229"
 ---
 # <a name="prerequisites-get-started-with-microsoft-teams-app-development"></a>Необходимые условия: начало разработки Microsoft Teams приложения
 
@@ -97,6 +97,7 @@ CLI можно использовать с `teamsfx` командой. Убед�
 Установите средства браузера для разработки приложений. Например, если приложение написано с помощью React, вы можете использовать React средства разработчика:
 
 - [React Средства разработчика для Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [React Средства разработчика для edge](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
 Если вы хотите получить доступ к данным, хранимым в Azure, или развернуть облачную Teams приложения в Azure, установите эти средства:
 

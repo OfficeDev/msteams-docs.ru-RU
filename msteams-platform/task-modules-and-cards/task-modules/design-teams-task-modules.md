@@ -5,12 +5,12 @@ description: Узнайте, как разработать модули зада
 localization_priority: Normal
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: f96684614766f5129bad31dc143b9be83e901ffa82df2f204a20e12fc79e7e49
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 9248fba30726511d025e71957c0d9f2bac4c9866
+ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57708202"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408617"
 ---
 # <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для Microsoft Teams приложения
 
@@ -41,7 +41,19 @@ ms.locfileid: "57708202"
 
 Они также могут быть построены с помощью базы [адаптивных](../../task-modules-and-cards/cards/design-effective-cards.md) карт, которая может быть более простым и быстрым способом облегчения распространенных сценариев (например, форм).
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+### <a name="mobile"></a>Мобильные устройства
+
+:::image type="content" source="../../assets/images/task-module/mobile-task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач на мобильных устройствах." border="false":::
+
+|Счетчик|Описание|
+|----------|-----------|
+|1|**Заглавная:** Сделать заглавные заготки четкими и краткими. Опишите задачу, которую необходимо выполнить пользователям.
+|2|**Имя приложения**: полное имя приложения.|
+|3|**Кнопка Закрыть:** закрывает модуль задач. Не применяет неавтные изменения в контенте приложения.|
+|4 |**веб-просмотр.** Отзывчивое пространство, в котором размещено содержимое приложения.|
+|5 |**Действия (необязательные)**: кнопки, связанные с контентом приложения.|
+
+### <a name="desktop"></a>Рабочий стол
 
 :::image type="content" source="../../assets/images/task-module/task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач." border="false":::
 
@@ -54,20 +66,6 @@ ms.locfileid: "57708202"
 |5 |**iframe**: Гибкое пространство, в котором размещено содержимое приложения.|
 |6 |**Действия (необязательные)**: кнопки, связанные с контентом приложения.|
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
-
-:::image type="content" source="../../assets/images/task-module/mobile-task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач на мобильных устройствах." border="false":::
-
-|Счетчик|Описание|
-|----------|-----------|
-|1|**Заглавная:** Сделать заглавные заготки четкими и краткими. Опишите задачу, которую необходимо выполнить пользователям.
-|2|**Имя приложения**: полное имя приложения.|
-|3|**Кнопка Закрыть:** закрывает модуль задач. Не применяет неавтные изменения в контенте приложения.|
-|4 |**веб-просмотр.** Отзывчивое пространство, в котором размещено содержимое приложения.|
-|5 |**Действия (необязательные)**: кнопки, связанные с контентом приложения.|
-
----
-
 ## <a name="designing-with-ui-templates"></a>Проектирование с помощью шаблонов пользовательского интерфейса
 
 Рассмотрите возможность использования шаблонов для общих макетов внутри модулей задач. Каждый из них состоит из небольших компонентов, чтобы создать элегантный, отзывчивый дизайн, который можно использовать из коробки или настроить для вашего сценария или с вашим брендом внешний вид.
@@ -78,103 +76,89 @@ ms.locfileid: "57708202"
 
 ## <a name="examples"></a>Примеры
 
-### <a name="list"></a>List
+### <a name="list"></a>Список
 
 Списки хорошо работают в модуле задач, так как их легко сканировать.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-list.png" alt-text="Пример списка в модуле задач на мобильных устройствах." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
 
-### <a name="form"></a>Form
+:::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач." border="false":::
+
+### <a name="form"></a>Форма
 
 Модули задач — отличное место для поверхности форм с последовательной вводной и входной проверкой пользователей. Адаптивные карты можно использовать как способ встраить элементы формы.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/form.png" alt-text="Пример формы в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-form.png" alt-text="Пример формы в модуле задач на мобильных устройствах." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
 
-### <a name="sign-in"></a>Выполнение входа
+:::image type="content" source="../../assets/images/task-module/form.png" alt-text="Пример формы в модуле задач." border="false":::
+
+### <a name="sign-in"></a>Вход
 
 Создайте целенаправленный поток входов или регистрации с помощью ряда модулей задач, что позволяет пользователям легко перемещаться по последовательному шагу.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Например, во время работы в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-sign-in.png" alt-text="Например, во время работы в модуле задач на мобильных устройствах." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
 
-### <a name="media"></a>Media
+:::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Например, во время работы в модуле задач." border="false":::
+
+### <a name="media"></a>Мультимедиа
 
 Встраить медиаконтент в модуль задач для целенаправленного просмотра.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/media.png" alt-text="Пример содержимого мультимедиа в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-media.png" alt-text="Пример содержимого мультимедиа в модуле задач на мобильных устройствах." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/task-module/media.png" alt-text="Пример содержимого мультимедиа в модуле задач." border="false":::
 
 ### <a name="empty-state"></a>Пустое состояние
 
 Используйте для приветствия, ошибок и сообщений об успехе.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/empty-state.png" alt-text="Пример пустого состояния в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-empty-state.png" alt-text="Пример пустого состояния в модуле задач на мобильных устройствах." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/task-module/empty-state.png" alt-text="Пример пустого состояния в модуле задач." border="false":::
 
 ### <a name="image-gallery"></a>Коллекция изображений
 
 Встраить карусель галереи в iframe (настольный) или веб-просмотр (мобильный).
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/image-gallery.png" alt-text="Пример галереи изображений в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+##### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-image-gallery.png" alt-text="Пример галереи изображений в модуле задач на мобильных устройствах." border="false":::
 
----
+##### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/task-module/image-gallery.png" alt-text="Пример галереи изображений в модуле задач." border="false":::
 
 ### <a name="poll"></a>Опрос
 
 В этом примере показаны результаты опроса, запущенные с адаптивной карты. Опрос также можно поместить в модуль задач.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/task-module/poll.png" alt-text="Пример опроса в модуле задач." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/task-module/mobile-poll.png" alt-text="Пример опроса в модуле задач на мобильных устройствах." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/task-module/poll.png" alt-text="Пример опроса в модуле задач." border="false":::
 
 ## <a name="best-practices"></a>Рекомендации
 

@@ -6,19 +6,21 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: c2fd0a335d992eb026ae1b61c186830d25217d52491c997a9a2baf1dc58152e0
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: c013153470b4be54df82fa313b5d2f8dca16fe9a
+ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707625"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528952"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
 > [!NOTE]
 > Согласие на доступ к области чата с конкретными ресурсами доступно только для [предварительного просмотра общедоступных](../../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
-Согласие для конкретного ресурса (RSC) — это интеграция API Microsoft Teams и Microsoft Graph, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами, группами или чатами, в организации. Модель разрешений RSC  позволяет владельцам  команд и владельцам чатов предоставлять согласие приложению на доступ и изменение данных группы и данных чата соответственно.
+Согласие для конкретного ресурса (RSC) — это интеграция API Microsoft Teams и Microsoft Graph, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами, группами или чатами, в организации. Модель разрешений RSC  позволяет владельцам  команд и владельцам чатов предоставлять согласие приложению на доступ и изменение данных группы и данных чата соответственно. 
+
+**Примечание:** Если в чате есть связанные с ним собрания или вызовы, соответствующие разрешения RSC применяются и к этим ресурсам.
 
 ## <a name="resource-specific-permissions"></a>Разрешения, определенные для ресурсов
 
@@ -60,7 +62,9 @@ ms.locfileid: "57707625"
 | TeamsTab.Delete.Chat           | Удаление вкладок чата.                                      |
 | TeamsTab.ReadWrite.Chat        | Управление вкладками чата.                                      |
 | TeamsAppInstallation.Read.Chat | Получите, какие приложения установлены в этом чате.                   |
-| OnlineMeeting.ReadBasic.Chat   | Получите основные свойства, такие как имя, расписание, организатор и соедините ссылку на собрание, связанное с этим чатом. |
+| OnlineMeeting.ReadBasic.Chat   | Ознакомьтесь с основными свойствами, такими как имя, расписание, организатор, ссылка на соединение и уведомления о встрече, связанной с этим чатом. |
+| Calls.AccessMedia.Chat         | Доступ к мультимедийным потокам в звонках, связанных с этим чатом или собранием.                                    |
+| Calls.JoinGroupCalls.Chat         | Присоединение к звонкам, связанным с этим чатом или собранием.                                    |
 
 Дополнительные сведения см. в [материале Chat Resource-specific consent permissions.](/graph/permissions-reference#chat-resource-specific-consent-permissions)
 
@@ -140,8 +144,8 @@ ms.locfileid: "57707625"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |ID приложения AAD. Дополнительные сведения см. [в приложении на портале AAD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal)|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`id` |Строка |ID приложения AAD. Дополнительные сведения см. [в приложении на портале AAD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal)|
+|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 |`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в ресурсных разрешениях.](resource-specific-consent.md#resource-specific-permissions)|
 
 >
@@ -156,19 +160,19 @@ ms.locfileid: "57707625"
     "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
     "resource": "https://RscBasedStoreApp",
     "applicationPermissions": [
-      "TeamSettings.Read.Group",
-      "ChannelMessage.Read.Group",
-      "TeamSettings.ReadWrite.Group",
-      "ChannelSettings.ReadWrite.Group",
-      "Channel.Create.Group",
-      "Channel.Delete.Group",
-      "TeamsApp.Read.Group",
-      "TeamsTab.Read.Group",
-      "TeamsTab.Create.Group",
-      "TeamsTab.ReadWrite.Group",
-      "TeamsTab.Delete.Group",
-      "Member.Read.Group",
-      "Owner.Read.Group"
+        "TeamSettings.Read.Group",
+        "TeamSettings.ReadWrite.Group",
+        "ChannelSettings.Read.Group",
+        "ChannelSettings.ReadWrite.Group",
+        "Channel.Create.Group",
+        "Channel.Delete.Group",
+        "ChannelMessage.Read.Group",
+        "TeamsAppInstallation.Read.Group",
+        "TeamsTab.Read.Group",
+        "TeamsTab.Create.Group",
+        "TeamsTab.ReadWrite.Group",
+        "TeamsTab.Delete.Group",
+        "TeamMember.Read.Group"
     ]
   }
 ```
@@ -180,17 +184,19 @@ ms.locfileid: "57707625"
     "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
     "resource": "https://RscBasedStoreApp",
     "applicationPermissions": [
-      "ChatSettings.Read.Chat",
-      "ChatSettings.ReadWrite.Chat",
-      "ChatMessage.Read.Chat",
-      "ChatMember.Read.Chat",
-      "Chat.Manage.Chat",
-      "TeamsTab.Read.Chat",
-      "TeamsTab.Create.Chat",
-      "TeamsTab.Delete.Chat",
-      "TeamsTab.ReadWrite.Chat",
-      "TeamsAppInstallation.Read.Chat",
-      "OnlineMeeting.ReadBasic.Chat"
+        "ChatSettings.Read.Chat",
+        "ChatSettings.ReadWrite.Chat",
+        "ChatMessage.Read.Chat",
+        "ChatMember.Read.Chat",
+        "Chat.Manage.Chat",
+        "TeamsTab.Read.Chat",
+        "TeamsTab.Create.Chat",
+        "TeamsTab.Delete.Chat",
+        "TeamsTab.ReadWrite.Chat",
+        "TeamsAppInstallation.Read.Chat",
+        "OnlineMeeting.ReadBasic.Chat",
+        "Calls.AccessMedia.Chat",
+        "Calls.JoinGroupCalls.Chat"
     ]
   }
 ```
@@ -244,7 +250,7 @@ ms.locfileid: "57707625"
 
 | **Название примера** | **Описание** | **.NET** |**Node.js** |
 |-----------------|-----------------|----------------|----------------|
-| Resource-Specific согласия (RSC) | Используйте RSC для вызова Graph API. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/nodeJs)|
+| Resource-Specific согласия (RSC) | Используйте RSC для вызова Graph API. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/nodeJs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
  

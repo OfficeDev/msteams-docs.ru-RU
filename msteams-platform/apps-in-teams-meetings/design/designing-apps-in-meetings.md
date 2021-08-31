@@ -5,16 +5,16 @@ description: Узнайте, как создать приложения Teams с
 ms.author: lajanuar
 localization_priority: Normal
 ms.topic: conceptual
-ms.openlocfilehash: 621fbb1e3da7ef9083229acf93b05c72cc528bf2ec813529d93025e1a54d79c6
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 7da7d6c23f0f66fd73e976fb92d1883f9befd0d2
+ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57702495"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528917"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Проектирование расширения Microsoft Teams собрания
 
-Вы можете создавать приложения, чтобы сделать собрания более продуктивными. Например, попросите людей выполнить опрос во время вызова или отправить быстрое напоминание, которое не прерывает поток собрания.
+Вы можете создавать приложения, чтобы сделать собрания более продуктивными. Например, попросите людей выполнить опрос во время собрания или отправить быстрое напоминание, которое не прерывает поток собрания.
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
@@ -35,23 +35,21 @@ ms.locfileid: "57702495"
 
 ### <a name="add-during-a-meeting"></a>Добавление во время собрания
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+#### <a name="mobile"></a>Мобильные устройства
+
+После того как приложение было добавлено (например, на рабочем столе), пользователи могут получить доступ к приложению на собрании, выбрав **Подробнее** :::image type="icon" source="../../assets/icons/teams-client-more.png"::: .
+
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания на мобильном телефоне." border="false":::
+
+#### <a name="desktop"></a>Рабочий стол
 
 На собрании пользователи могут выбрать **дополнительные** добавления :::image type="icon" source="../../assets/icons/teams-client-more.png":::  >  **приложения** и выбрать нужное приложение.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
-
-После добавления приложения на рабочем столе вы можете выбрать приложение и использовать его на собрании, выбрав **Подробнее** :::image type="icon" source="../../assets/icons/teams-client-more.png"::: .
-
-:::image type="content" source="../../assets/images/apps-in-meetings/mobile-add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания на мобильном телефоне." border="false":::
-
----
-
 ## <a name="before-a-meeting"></a>Перед собранием
 
-Перед собранием пользователи могут добавлять содержимое на вкладке. В следующем примере показан проект опроса, на который люди ответят во время вызова.
+Перед собранием приложение доступно пользователям на вкладке. В следующем примере показан проект вопроса опроса, на который люди ответят во время собрания.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/before-meeting-tab.png" alt-text="В примере показано, как приложение содержимым в сведениях о собрании перед вызовом." border="false":::
 
@@ -65,7 +63,7 @@ ms.locfileid: "57702495"
 |2|**Переполнение вкладки:** открывает действия вкладки, такие как переименование и удаление.|
 |3|**iframe:** отображает содержимое приложения.|
 
-### <a name="designing-with-ui-templates"></a>Проектирование с помощью шаблонов пользовательского интерфейса
+### <a name="design-with-ui-templates"></a>Проектирование с помощью шаблонов пользовательского интерфейса
 
 Используйте один из следующих Teams пользовательского интерфейса для разработки вкладки собраний:
 
@@ -88,15 +86,13 @@ ms.locfileid: "57702495"
 * Создайте элемент опроса, опроса или задачи для участников собрания.
 * Отображение заметок, соответствующих собранию. Например, сведения о лидере продаж.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке на собрании." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса в вкладке на собрании на мобильном телефоне." border="false":::
 
----
+#### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке на собрании." border="false":::
 
 ### <a name="anatomy-in-meeting-tab"></a>Anatomy: In-meeting tab
 
@@ -146,15 +142,13 @@ ms.locfileid: "57702495"
 * Отправка утверждений
 * Получать напоминания
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильные устройства
 
 :::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании на мобильном телефоне." border="false":::
 
----
+### <a name="desktop"></a>Рабочий стол
+
+:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании." border="false":::
 
 ### <a name="anatomy-in-meeting-dialog"></a>Анатомия: диалоговое окно на собрании
 
@@ -186,7 +180,7 @@ ms.locfileid: "57702495"
 * **Ширина.** Можно указать ширину iframe диалогов в любом месте в поддерживаемом диапазоне размеров.
 * **Высота.** Вы можете указать высоту iframe диалогов в любом месте в поддерживаемом диапазоне размеров. Вы также можете разрешить пользователям прокрутку по вертикали, если содержимое приложения превышает максимальную высоту.
 
-Чтобы реализовать, укажите ширину и высоту с помощью [`externalResourceUrl`](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md#notificationsignal-api) ключа.
+Чтобы реализовать, укажите ширину и высоту с помощью [`externalResourceUrl`](~/apps-in-teams-meetings/API-references.md#notificationsignal-api) ключа.
 
 :::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-responsive.png" alt-text="В примере показан диалоговое окно на собрании. Ширина: min--280 пикселей (248 пикселей iframe). Max--460 пикселей (428 пикселей iframe). Высота: 300 пикселей (iframe)." border="false":::
 
@@ -203,7 +197,7 @@ ms.locfileid: "57702495"
 :::row:::
    :::column span="1":::
 
-**Редактирование и проверка.** Погрузитесь в панели мониторинга и планирование со всеми по вызову.
+**Редактирование и обзор.** Погрузитесь в панели мониторинга и планирование со всеми на собрании.
 
    :::column-end:::
    :::column span="3":::
@@ -296,7 +290,7 @@ ms.locfileid: "57702495"
 
 #### <a name="dont-introduce-unnecessary-elements"></a>Не: вводить ненужные элементы
 
-Один диалоговое окно с несколькими взаимодействиями может отвлечь от вызова.
+Один диалог с несколькими взаимодействиями может отвлечь от собрания.
 
    :::column-end:::
 :::row-end:::
@@ -511,7 +505,7 @@ Teams для темной темы, чтобы уменьшить визуаль
    :::column-end:::
 :::row-end:::
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Настройка приложения для собраний](~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)

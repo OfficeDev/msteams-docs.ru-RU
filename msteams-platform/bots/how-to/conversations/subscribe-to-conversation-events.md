@@ -5,12 +5,12 @@ description: Работа с событиями беседы из Microsoft Team
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: c50409720bdb700295934171d8a2a3474205adb59e8397dcc64a01b9aec23fa3
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 94bbb43110e45c9ab84c686f8fc8e2ade19d6998
+ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703629"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58529002"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -44,17 +44,17 @@ ms.locfileid: "57703629"
 
 | Действие, принятое        | EventType         | Метод, называемый              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
-| Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Команда |
+| Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Группа |
 | Канал переименован     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Команда |
-| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Команда |
-| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Команда |
+| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Группа |
+| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Группа |
 | Участники добавлены   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added). | Все |
 | Удалены участники | membersRemoved | OnTeamsMembersRemovedAsync | [Член удаляется.](#team-members-removed) | groupChat и team |
-| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Команда |
-| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Команда |
-| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Команда |
-| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Команда |
-| Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Команда |
+| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Группа |
+| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Группа |
+| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Группа |
+| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Группа |
+| Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Группа |
 
 ### <a name="channel-created"></a>Созданный канал
 
@@ -1289,12 +1289,10 @@ async def on_reactions_removed(
 Бот получает событие `installationUpdate` при установке бота в поток беседы. Спуск бота из потока также вызывает событие. При установке бота  будет добавлено поле действий в событии, а после  удаления бота поле действия будет *удаляться.*
  
 > [!NOTE]
-> При обновлении приложения и добавлении или удалите бот, действие также запускает `installationUpdate` событие. Поле **действия** настроено на обновление *при* добавлении бота или *удаления-обновления* при удалите бот. 
-
-> [!IMPORTANT]
-> События обновления установки находятся в предварительной версии разработчика сегодня и будут доступны в марте 2021 г. Чтобы просмотреть события обновления установки, можно переместить Teams клиента в общедоступный предварительный просмотр разработчика и добавить приложение лично или в команду или чат.
+> При обновлении приложения и добавлении или удалите бот, действие также запускает `installationUpdate` событие. Поле **действия** настроено на обновление *при* добавлении бота или *удаления-обновления* при удалите бот.
 
 ### <a name="install-update-event"></a>Событие установки обновления
+
 Используйте событие `installationUpdate` для отправки вводного сообщения от бота при установке. Это событие поможет вам соответствовать требованиям конфиденциальности и хранения данных. Кроме того, при удалении бота можно очистить и удалить данные пользователя или потока.
 
 # <a name="c"></a>[C#](#tab/dotnet)
@@ -1408,9 +1406,9 @@ turnContext, CancellationToken cancellationToken) {
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот-беседа | Пример кода для событий беседы ботов. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)

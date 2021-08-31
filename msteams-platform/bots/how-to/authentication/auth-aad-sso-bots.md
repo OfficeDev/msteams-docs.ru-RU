@@ -4,12 +4,12 @@ description: Описывает, как получить маркер польз
 keywords: маркер, маркер пользователя, поддержка SSO для ботов
 localization_priority: Normal
 ms.topic: conceptual
-ms.openlocfilehash: f1d9a905ffb8239ecd3398e7db8ee593c6cbfba7
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: ffa13e8a9f4014f0ed3e89f32b1eafed74fea76b
+ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345664"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58528798"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входного знака (SSO) для ботов
 
@@ -145,7 +145,7 @@ ms.locfileid: "58345664"
 
 **webApplicationInfo** является родителем следующих элементов:
 
-* **id** — ID клиента приложения. Это ID приложения, полученный в рамках регистрации приложения в AAD.
+* **id** — ID клиента приложения. Это ID приложения, полученный в рамках регистрации приложения в AAD. Не делитесь этим ID приложениями с несколькими Teams приложениями. Создайте новое приложение AAD для каждого манифеста приложения, которое использует `webApplicationInfo` .
 * **ресурс** — домен и поддомен приложения. Это тот же URI, в том числе протокол, зарегистрированный при создании приложения в Зарегистрировать приложение `api://` `scope` через портал [AAD.](#register-your-app-through-the-aad-portal) Не следует включать путь `access_as_user` в ресурс. Доменная часть этого URI должна соответствовать домену и поддоменам, используемым в URL-адресах манифеста Teams приложения.
 
 ### <a name="add-the-code-to-request-and-receive-a-bot-token"></a>Добавление кода для запроса и получения маркера бота
