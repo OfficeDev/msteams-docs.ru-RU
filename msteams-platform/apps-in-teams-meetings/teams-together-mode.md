@@ -2,17 +2,14 @@
 title: Настраиваемые сцены режима совместно
 description: Работа с настраиваемой совместной сценой режима
 ms.topic: conceptual
-ms.openlocfilehash: 9a0ef7eb2d6a014aaf831a0e1765d4b4ca44b8c6
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: 32b7cb32eb3f422641dbf28e635e39d978bad002
+ms.sourcegitcommit: 68f5411f5989ac706b6a4a7b2884296e145fe7c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528834"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58849442"
 ---
 # <a name="custom-together-mode-scenes-in-teams"></a>Настраиваемые сцены режима "Вместе" в Teams
-
-> [!NOTE]
-> В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
 Настраиваемые сцены режима совместно в Microsoft Teams обеспечивают иммерсивную и привлекаемую среду собраний со следующими действиями:
 
@@ -30,7 +27,7 @@ ms.locfileid: "58528834"
 
 Только приложение сцены по-прежнему является приложением в Microsoft Teams. Студия Scene обрабатывает создание пакета приложений в фоновом режиме. Несколько сцен в одном пакете приложений отображаются как плоский список для пользователей.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Необходимо иметь базовое представление о следующих действиях, чтобы использовать настраиваемые сцены Режима совместной работы:
 
@@ -39,7 +36,7 @@ ms.locfileid: "58528834"
 * Понимание [концепции боковой загрузки приложений.](../concepts/deploy-and-publish/apps-upload.md)
 * Убедитесь, что администратор предоставил [](../concepts/deploy-and-publish/apps-upload.md) Upload настраиваемого приложения и выберите все фильтры в рамках политик установки приложения и собраний соответственно.
 
-## <a name="best-practices"></a>Рекомендации
+## <a name="best-practices"></a>Рекомендованные методики
 
 Рассмотрим следующие практики для создания сцены:
 
