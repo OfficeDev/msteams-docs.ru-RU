@@ -6,12 +6,12 @@ author: heath-hamilton
 localization_priority: Priority
 ms.author: qinch
 ms.topic: conceptual
-ms.openlocfilehash: 63bdbd0afbf2d0c4a3b7506330fb56e463a10169379c0674dd68496e3cc8de19
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 8ea0efa758855cdba4f7791eb6e99b3b1e22f8fe
+ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703375"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58408645"
 ---
 # <a name="designing-your-microsoft-teams-messaging-extension"></a>Разработка расширения Microsoft Teams для сообщений
 
@@ -32,17 +32,15 @@ ms.locfileid: "57703375"
 * В магазине Teams.
 * В канале, чате или собрании (до, во время и после) рядом с полем создания сообщения. Стоит отметить, что если вы добавили расширение для сообщений в одном из этих мест, в этом контексте его сможете использовать только вы.
 
-В следующем примере показано, как добавить расширение для сообщений в канале:
+В следующих примерах показано, как добавить расширение для сообщений в канале:
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/add-in-channel.png" alt-text="В примере показано, как добавить расширение для сообщений рядом с полем создания сообщения в канале." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-add-in-channel.png" alt-text="В примере показано, как добавить расширение для сообщений рядом с полем создания сообщения в канале на мобильном устройстве." border="false":::
 
----
+### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/add-in-channel.png" alt-text="В примере показано, как добавить расширение для сообщений рядом с полем создания сообщения в канале." border="false":::
 
 ## <a name="set-up-a-messaging-extension"></a>Настройка расширения для сообщений
 
@@ -50,15 +48,13 @@ ms.locfileid: "57703375"
 
 Чтобы обеспечить единый дизайн приложений Teams, экран входа менять нельзя. Если вы используете проверку подлинности с единым входом (SSO), пользователи будут автоматически выполнять вход.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/set-up.png" alt-text="В примере показан экран настройки расширения сообщений с кнопкой &quot;Вход&quot;." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-set-up.png" alt-text="В примере показан экран настройки расширения сообщений с кнопкой &quot;Вход&quot; на мобильном устройстве." border="false":::
 
----
+### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/set-up.png" alt-text="В примере показан экран настройки расширения сообщений с кнопкой &quot;Вход&quot;." border="false":::
 
 ## <a name="types-of-messaging-extensions"></a>Типы расширений для сообщений
 
@@ -68,15 +64,13 @@ ms.locfileid: "57703375"
 
 Расширение для сообщений с поиском может использоваться для быстрого поиска внешнего содержимого и вставки его в сообщение. Команды поиска обычно доступны в поле создания сообщения. Например, вы можете начать обсуждение или поучаствовать в нем, поделившись содержимым — и при этом не выходя из Teams.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/search-command-type.png" alt-text="В примере показано расширение для сообщений на основе поиска, запущенное из поля создания сообщения." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-search-command-type.png" alt-text="В примере показано расширение для сообщений на основе поиска, запущенное из поля создания сообщения на мобильном устройстве." border="false":::
 
----
+#### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/search-command-type.png" alt-text="В примере показано расширение для сообщений на основе поиска, запущенное из поля создания сообщения." border="false":::
 
 #### <a name="compose-box-layout-options"></a>Параметры компоновки поля создания сообщения
 
@@ -98,37 +92,25 @@ ms.locfileid: "57703375"
 
 После того как вы добавите свое расширение для сообщений, пользователи смогут открывать его, выбрав значок приложения, расположенный ниже поля создания сообщения. В этих примерах расширение содержит и команду поиска, и команду действий.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для сообщений из поля создания сообщения." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из поля создания сообщения на мобильном устройстве." border="false":::
 
----
+#### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для сообщений из поля создания сообщения." border="false":::
 
 ### <a name="from-a-chat-message-or-channel-post"></a>Из сообщения чата или публикации канала
 
 После того как вы добавите свое расширение для сообщений, пользователи смогут открывать его, выбрав значок **Еще**:::image type="icon" source="../../assets/icons/teams-client-more.png"::: в сообщении чата или публикации канала, чтобы найти команды действий. В зависимости от того, как используется ваше расширение, оно может быть указано в списке **Дополнительные действия**.
 
-> [!NOTE]
-> Поддержка дополнительных действий из сообщения чата или записи канала недоступна на мобильной платформе Microsoft Teams. 
-
 #### <a name="chat-message"></a>Сообщение чата
-
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
 
 :::image type="content" source="../../assets/images/messaging-extension/open-from-chat-message.png" alt-text="В примере показано, как открыть расширение для сообщений из сообщения чата." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="channel-post"></a>Публикация в канале
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-chat-post.png" alt-text="В примере показано, как открыть расширение для сообщений из сообщения чата на мобильном устройстве." border="false":::
-
----
-':::image type="content" source="../../assets/images/messaging-extension/open-from-channel-post.png" alt-text="Example shows how to open a messaging extension from a channel post on mobile." border="false"::': null
-':::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-channel-post.png" alt-text="Example shows how to open a messaging extension from a channel post on mobile." border="false"::': null
----
+:::image type="content" source="../../assets/images/messaging-extension/open-from-channel-post.png" alt-text="В примере показано, как открыть расширение для сообщений из публикации в канале на мобильном устройстве." border="false":::
 
 ## <a name="use-a-messaging-extension"></a>Использование расширения для сообщений
 
@@ -138,53 +120,33 @@ ms.locfileid: "57703375"
 
 **1. Выберите расширение для сообщений**. Пользователи могут искать контент, которым они хотят поделиться, прямо из поля создания сообщения.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения на мобильном устройстве." border="false":::
 
----
+#### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения." border="false":::
 
 **2. Вставьте контент**. После публикации пользователи люди могут ответить или выбрать содержимое, чтобы увидеть дополнительную информацию в вашем приложении.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале на мобильном устройстве." border="false":::
 
----
+#### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале." border="false":::
 
 ### <a name="take-action-on-a-message"></a>Действия с сообщениями
 
 **1. Выберите расширение для сообщений**. Ваше приложение может включать одну или несколько команд действий.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
 :::image type="content" source="../../assets/images/messaging-extension/select-action-command.png" alt-text="В примере показано, как пользователь выбирает команду действия расширения обмена сообщениями." border="false":::
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
-
-:::image type="content" source="../../assets/images/messaging-extension/mobile-select-action-command.png" alt-text="В примере показано, как пользователь выбирает команду действия расширения обмена сообщениями на мобильном устройстве" border="false":::.
-
----
-
-**2. Закончите действие**. Ваше приложение может получать и обрабатывать любой контент или данные, отправленные действием сообщения. Это позволяет пользователям оставаться в беседе и, как показано в следующем примере, не затруднять себя вводом сведений непосредственно в приложении.
-
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+**2. Закончите действие**. Ваше приложение может получать и обрабатывать любой контент или данные, отправленные действием сообщения. Пользователи заканчивают действие в вашем приложении, оставаясь в беседе.
 
 :::image type="content" source="../../assets/images/messaging-extension/complete-action-command.png" alt-text="Пример действия с сообщением." border="false":::
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
-
-:::image type="content" source="../../assets/images/messaging-extension/mobile-complete-action-command.png" alt-text="Пример действия с сообщением на мобильном устройстве" border="false":::.
-
----
 
 ### <a name="preview-links"></a>Предварительный просмотр ссылок
 
@@ -192,27 +154,23 @@ ms.locfileid: "57703375"
 
 **1. Вставьте распознаваемую ссылку** в поле создания сообщения.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения" border="false":::.
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения на мобильном устройстве" border="false":::.
 
----
+#### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения" border="false":::.
 
 **2. Вставьте контент**. Если ваше приложение распознает URL-адрес в поле создания сообщения, оно сформирует ссылку в виде карточки, которая обеспечивает предварительный просмотр веб-контента в форматированном виде. (Подробности см. в разделе [Рекомендации по созданию адаптивных карточек](../../task-modules-and-cards/cards/design-effective-cards.md).)
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
-
-:::image type="content" source="../../assets/images/messaging-extension/insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента" border="false":::.
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/messaging-extension/mobile-insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента на мобильном устройстве" border="false":::.
 
----
+#### <a name="desktop"></a>Версия для настольного компьютера
+
+:::image type="content" source="../../assets/images/messaging-extension/insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента" border="false":::.
 
 ## <a name="manage-a-messaging-extension"></a>Управление расширением для сообщений
 
@@ -222,9 +180,22 @@ ms.locfileid: "57703375"
 
 ### <a name="messaging-extension-in-the-compose-box"></a>Расширение для сообщений в поле создания сообщения
 
-Следующий пример — расширение для сообщений, открытое из поля создания сообщения.
+Следующий пример показывает расширение для сообщений, открытое из поля создания сообщения.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+#### <a name="mobile"></a>Мобильная версия
+
+:::image type="content" source="../../assets/images/messaging-extension/mobile-anatomy-compose.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса расширения для сообщений в поле создания сообщения на мобильном устройстве" border="false":::.
+
+|Счетчик|Описание|
+|----------|-----------|
+|1|**Имя приложения**: полное имя приложения.|
+|2.|**Значок меню команд действий (необязательно)**: открывает список команд действий данного расширения для сообщений (если вы их указали).
+|3|**Поле поиска**: позволяет пользователям находить контент приложения для последующей вставки.|
+|4|**Меню вкладок (необязательно)**: предоставляет несколько категорий контента.|
+|5|**Меню команд действий (необязательно)**: выводит на экран список команд действий (если вы их указали).|
+|6|**Контент приложения**: в основном для отображения результатов поиска.|
+
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/messaging-extension/anatomy-compose.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса расширения для сообщений в поле создания сообщения" border="false":::.
 
@@ -238,21 +209,6 @@ ms.locfileid: "57703375"
 |6|**Меню команд действий (необязательно)**: выводит на экран список команд действий (если вы их указали).|
 |7|**Контент приложения**: в основном для отображения результатов поиска. В этом примере используется компоновка списка (другой вариант — табличная компоновка).|
 |8|**Логотип приложения**: контурный значок логотипа приложения.|
-
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
-
-:::image type="content" source="../../assets/images/messaging-extension/mobile-anatomy-compose.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса расширения для сообщений в поле создания сообщения на мобильном устройстве" border="false":::.
-
-|Счетчик|Описание|
-|----------|-----------|
-|1|**Имя приложения**: полное имя приложения.|
-|2.|**Значок меню команд действий (необязательно)**: открывает список команд действий данного расширения для сообщений (если вы их указали).
-|3|**Поле поиска**: позволяет пользователям находить контент приложения для последующей вставки.|
-|4|**Меню вкладок (необязательно)**: предоставляет несколько категорий контента.|
-|5|**Меню команд действий (необязательно)**: выводит на экран список команд действий (если вы их указали).|
-|6|**Контент приложения**: в основном для отображения результатов поиска.|
-
----
 
 ### <a name="messaging-extension-management-menu"></a>Меню управления расширениями сообщений
 
