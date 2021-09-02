@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 localization_priority: Normal
 keywords: deeplink teams deep link
-ms.openlocfilehash: abe1b96d6761887248d4e34db466a18cbf71905e
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 03b827585bacb292cf44274d7cdbcf337ca83935
+ms.sourcegitcommit: 642228e6df65488f302ca4d2cf3d9c5168e81910
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345699"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58862329"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -156,13 +156,18 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 * `tenantId`: Пример ID клиента, 0d9b645f-597b-41f0-a2a3-ef103fbd91bb
 * `fileType`: Поддерживаемый тип файла, например docx, pptx, xlsx и pdf
-* `objectUrl`: URL-адрес объекта файла, `https://microsoft.sharepoint.com/teams/(filepath)`
-* `baseUrl`: Базовый URL-адрес файла, `https://microsoft.sharepoint.com/teams`
-* `serviceName`: Имя службы, ID приложения
+* `objectUrl`: URL-адрес объекта файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}/SharedDocuments/{ChannelName}/FileName.ext`. Пример: `https://microsoft.sharepoint.com/teams/(filepath)`
+* `baseUrl`: Базовый URL-адрес файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}`. Пример: `https://microsoft.sharepoint.com/teams`
+* `serviceName`: Имя службы, ID приложения. Например, группы.
 * `threadId`. ThreadId — это командный ID команды, в которой хранится файл. Она необязательна и не может быть установлена для файлов, хранимых в папке OneDrive пользователя. threadId — 19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype
-* `groupId`: Групповой ID файла ae063b79-5315-4ddb-ba70-27328ba6c31e
+* `groupId`: Групповой ID файла ae063b79-5315-4ddb-ba70-27328ba6c31e 
 
-Ниже приводится пример формата deeplink к файлам:
+> [!NOTE]
+> Вы можете увидеть `threadId` `groupId` и в URL-адресе канала.  
+
+Следующий формат глубоких ссылок используется в карточке расширения бота, соединитетеля или обмена сообщениями: `https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80?tenantId=<tenantid>&fileType=<filetype>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadid>&groupId=<groupId>`
+
+В следующем формате примера показана глубокая связь с файлами:
 
 `https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80 ?tenantId=0d9b645f-597b-41f0-a2a3-ef103fbd91bb&fileType=pptx&objectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform%2FShared%20Documents%2FFC7-%20Bot%20and%20Action%20Infra%2FKaizala%20Actions%20in%20Adaptive%20Cards%20-%20Deck.pptx&baseUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform&serviceName=teams&threadId=19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype&groupId=ae063b79-5315-4ddb-ba70-27328ba6c31e`
 
