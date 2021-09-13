@@ -2,15 +2,15 @@
 title: Поддержка SSO для расширений обмена сообщениями
 author: KirtiPereira
 description: Как включить поддержку SSO для расширений обмена сообщениями
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 656c17612c74ee55b870fd2e7e13dea60e6ed2f8
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: efda0e946204a756d75874a55ac728f81f8ebaef
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345243"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157295"
 ---
 # <a name="single-sign-on-sso-support-for-messaging-extensions"></a>Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями
  
@@ -18,7 +18,7 @@ ms.locfileid: "58345243"
 
 В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.
 
-## <a name="prerequisites"></a>Требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
 * У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/free/)

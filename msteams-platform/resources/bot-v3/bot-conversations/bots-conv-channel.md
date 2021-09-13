@@ -2,15 +2,15 @@
 title: Телефонные и групповые беседы чата с ботами
 description: Описывает конечный сценарий беседы с ботом в канале в Microsoft Teams
 keywords: teams scenarios channels conversation bot
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/25/2019
-ms.openlocfilehash: e254302271cf101638c897e1a1952d302705d6a4
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 8e4336e8b0db7c6c720b8fb7adcb281685b6a6ba
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157288"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-microsoft-teams-bot"></a>Беседы в каналах и групповых чатах с ботом Microsoft Teams
 

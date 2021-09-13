@@ -1,15 +1,15 @@
 ---
 title: Инициировать действия с расширениями обмена сообщениями
 description: Создание расширений обмена сообщениями на основе действий, позволяющих пользователям запускать внешние службы
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: how-to
 keywords: команды расширения обмена сообщениями расширениями обмена сообщениями поиска
-ms.openlocfilehash: 5604d86f05bad42bf3a00f611711afc34beedf42
-ms.sourcegitcommit: 4d9d1542e04abacfb252511c665a7229d8bb7162
+ms.openlocfilehash: f028a26693eef03686ad6ad57423b30d4d861934
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53140371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157291"
 ---
 # <a name="initiate-actions-with-messaging-extensions"></a>Инициировать действия с расширениями обмена сообщениями
 
@@ -134,7 +134,7 @@ ms.locfileid: "53140371"
 
 ![Пример инициирования действия из сообщения](~/assets/images/compose-extensions/messageextensions_messageaction.png)
 
-Чтобы расширение обмена сообщениями работало из сообщения, необходимо добавить параметр к объекту расширения обмена сообщениями в манифесте приложения, как в `context` `commands` примере ниже. Допустимые строки `context` для массива `"message"` являются , `"commandBox"` и `"compose"` . Значение по умолчанию — `["compose", "commandBox"]`. Подробные [сведения](#define-commands) о параметре см. в разделе Определить `context` команды.
+Чтобы расширение обмена сообщениями работало из сообщения, необходимо добавить параметр к объекту расширения обмена сообщениями в манифесте приложения, как в `context` `commands` примере ниже. Допустимые строки `context` для массива `"message"` являются , `"commandBox"` и `"compose"` . Значение по умолчанию — `["compose", "commandBox"]`. Подробные [сведения](#define-commands) о параметре см. в разделе Определить `context` команды.
 
 ```json
 "composeExtensions": [

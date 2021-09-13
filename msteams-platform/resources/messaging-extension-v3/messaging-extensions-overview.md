@@ -2,14 +2,14 @@
 title: Разработка расширений обмена сообщениями
 description: Описывает, как начать работу с расширениями обмена сообщениями в Microsoft Teams
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: расширения обмена сообщениями команд
-ms.openlocfilehash: 2301a9af7574c193c7327bb45e38f91bedc73793
-ms.sourcegitcommit: 825abed2f8784d2bab7407ba7a4455ae17bbd28f
+ms.openlocfilehash: ea07ae8c7a7a16f5187adfe6dbe5f52d8bf47056
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52020606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157287"
 ---
 # <a name="develop-messaging-extensions-for-microsoft-teams"></a>Разработка расширений обмена сообщениями для Microsoft Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "52020606"
 * Изображения и медиаконтент
 * Возможности и руководства по продажам
 
-## <a name="types-of-messaging-extensions"></a>Типы расширений обмена сообщениями
+## <a name="types-of-messaging-extensions"></a>Типы расширений для сообщений
 
 Существует в основном два типа расширений обмена сообщениями, которые можно создать для Teams сегодня. Следующие темы будут направлять вас в процессе их создания:
 

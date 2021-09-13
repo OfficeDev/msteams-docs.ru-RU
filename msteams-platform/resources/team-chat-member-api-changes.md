@@ -3,15 +3,15 @@ title: Изменения API-интерфейса бота для участн�
 author: ojasvichoudhary
 description: Описывает предстоящие и происходящие изменения API ботов, используемых для искания членов групп и чатов
 keywords: Список участников группы apis для базы ботов
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: reference
 ms.author: ojchoudh
-ms.openlocfilehash: 25d3bdc5c25caec323ab1b45566b485e2c9df9fe78cb0b91f3546fcde7183e02
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 464283c145bf8b6cff6ac65db74c9e7b97c2d04b
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157263"
 ---
 # <a name="teams-bot-api-changes-to-fetch-team-or-chat-members"></a>Teams API бота для получения участников группы или чата
 
