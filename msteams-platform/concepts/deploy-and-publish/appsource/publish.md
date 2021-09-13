@@ -4,12 +4,13 @@ description: Описывает процесс отправки приложен
 ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: a7c46f6dc537d7cfad7c176582df1305c3f0bc056a78996e013757a3eff7e013
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.localizationpriority: none
+ms.openlocfilehash: 5f401e940b5c3f4c4d47ae4fcb77142809a2ff01
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157532"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Публикация приложения в Microsoft Teams магазине
 
@@ -30,7 +31,7 @@ ms.locfileid: "57706073"
 1. [Просмотрите Teams проверки](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) хранения, чтобы убедиться, что ваше приложение соответствует Teams и стандартам магазина.
 1. [Создание учетной записи разработчика Центра партнеров.](~/concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md)
 1. [Подготовка отправки в магазин,](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)которая включает в себя запуск автоматических тестов, компиляторию тестовых записей, создание списка магазинов, а также другие важные задачи, которые помогут ускорить процесс проверки.
-1. [Отправка приложения через](https://docs.microsoft.com/office/dev/store/add-in-submission-guide) Центр партнеров.
+1. [Отправка приложения через](/office/dev/store/add-in-submission-guide) Центр партнеров.
 1. В случае сбоя отправки работайте с Корпорацией Майкрософт напрямую для устранения проблем и [повторного отправки приложения.](~/concepts/deploy-and-publish/appsource/resolve-submission-issues.md)
 
    :::column-end:::
@@ -45,7 +46,7 @@ ms.locfileid: "57706073"
 
 ## <a name="see-also"></a>См. также
 
-* [Публикация в Microsoft 365 магазинах приложений](https://docs.microsoft.com/office/dev/store/)
+* [Публикация в Microsoft 365 магазинах приложений](/office/dev/store/)
 * [Upload ваше Teams приложение](~/concepts/deploy-and-publish/apps-upload.md)
 * [Публикация приложения Teams в вашей организации](/MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json)
 

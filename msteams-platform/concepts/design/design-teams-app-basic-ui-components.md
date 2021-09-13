@@ -3,14 +3,14 @@ title: Разработка приложения с помощью Fluent ком
 author: heath-hamilton
 description: Узнайте о примитивных компонентах пользовательского интерфейса, которые обычно используются для Microsoft Teams приложений и получения Microsoft Teams пользовательского интерфейса.
 ms.author: lajanuar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: e58a64014be2b576f8ca16d707e315fa8056f9b717ae8dd976f80c544c57ba31
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: b905a95f35abb083b5c8bba7c096e1012adb223d
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157368"
 ---
 # <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Разработка приложения Microsoft Teams с базовыми компонентами пользовательского интерфейса Fluent интерфейса
 
@@ -61,7 +61,7 @@ ms.locfileid: "57704230"
 
 :::image type="content" source="../../assets/images/components/dialog.png" alt-text="В примере показан компонент пользовательского интерфейса диалогов." border="false":::
 
-## <a name="dropdown"></a>Dropdown
+## <a name="dropdown"></a>Раскрывающийся список
 
 :::image type="content" source="../../assets/images/components/dropdown.png" alt-text="В примере показан компонент пользовательского интерфейса с отсевом." border="false":::
 
@@ -121,7 +121,7 @@ ms.locfileid: "57704230"
 
 :::image type="content" source="../../assets/images/components/toast.png" alt-text="В примере показан компонент пользовательского интерфейса toast." border="false":::
 
-## <a name="toggle"></a>Toggle
+## <a name="toggle"></a>Переключатель
 
 Примечание. В Fluent пользовательского интерфейса, перегной — это тип контрольного ящика.
 

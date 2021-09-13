@@ -3,15 +3,15 @@ title: Создать страницу конфигурации
 author: surbhigupta
 description: создание страницы конфигурации
 keywords: команды вкладки группового канала настраиваются
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 67b4a0ae121acfe53b99dbc56d47dda27f2bf1a5
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: cb69a23a3f8446c3f9b78cffbe0dc88d686c4a8a
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156222"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -123,7 +123,7 @@ ms.locfileid: "58528791"
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте местообладатели в `configurationUrl`
 
-Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например:
+Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например.
 
 ##### <a name="base-url"></a>Базовый URL-адрес
 
@@ -208,7 +208,7 @@ microsoftTeams.settings.setSettings({
 * [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)

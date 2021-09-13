@@ -3,14 +3,14 @@ title: Боты только для уведомлений
 description: Описывает, какие только уведомления находятся в Microsoft Teams
 keywords: уведомление о ботах teams
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 01/29/2020
-ms.openlocfilehash: 3de462f73733f5f7cf223444ffe6deeb53faaaaa
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 71dbc07445a57194e90ba3985c3aff1e2d4f2cdf
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156115"
 ---
 # <a name="notification-only-bots-in-microsoft-teams"></a>Боты только для уведомлений в Microsoft Teams
 

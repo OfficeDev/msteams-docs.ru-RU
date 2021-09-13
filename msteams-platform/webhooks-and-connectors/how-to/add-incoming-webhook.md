@@ -3,15 +3,15 @@ title: Создание входящих веб-ок
 author: laujan
 description: описывает, как добавить входящий веб-Teams приложение и опубликовать внешние запросы для Teams с входящие веб-окки
 keywords: команды вкладки исходят веб-ок
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: c5f90da64fe846e6579bc47de2edcd900d6ee6ba3a640788fba440734f55b7ec
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: c07456288a26e3152a552644b704e2c6e6de38cc
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156037"
 ---
 # <a name="create-incoming-webhook"></a>Создание входящих веб-ок
 
@@ -19,13 +19,13 @@ ms.locfileid: "57705358"
 
 * боты;
 * расширения для обмена сообщениями;
-* Соединители
+* Connectors
 
 ## <a name="key-features-of-incoming-webhook"></a>Ключевые функции входящих веб-ок
 
 В следующей таблице представлены функции и описание входящих webhook:
 
-| Возможности | Описание |
+| Функции | Описание |
 | ------- | ----------- |
 |Адаптивные карты с помощью входящих веб-ок|Адаптивные карты можно отправить через входящие веб-окки. Дополнительные сведения см. в [странице Send Adaptive Cards using Incoming Webhooks.](../../webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook)|
 |Actionable messaging support|Карточки сообщений для действий поддерживаются во всех Office 365, включая Teams. Если вы отправляете сообщения через карты, необходимо использовать формат карточки сообщений. Дополнительные сведения см. в [старых справочных](/outlook/actionable-messages/message-card-reference) данных карточки сообщений и игровой [площадке карточки сообщений.](https://messagecardplayground.azurewebsites.net)|

@@ -1,17 +1,17 @@
 ---
 title: Используйте microsoft Graph для импорта сообщений внешней платформы для Teams
 description: Описывает, как использовать microsoft Graph для импорта сообщений с внешней платформы для Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы импортируют сообщения api graph Microsoft migrate migration post
-ms.openlocfilehash: 17e68db9803e00d3dfb8743ba3b371753508fb5a3471317c25d7a42c8027c248
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 9c5f45120a1e6d52409360d54a54096554ca86b4
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157607"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "57704405"
 1. [Завершите процесс миграции группы и канала.](#step-4-complete-migration-mode)
 1. [Добавление участников группы.](#step-five-add-team-members)
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 
 ### <a name="analyze-and-prepare-message-data"></a>Анализ и подготовка данных сообщений
 
@@ -373,7 +373,7 @@ HTTP/1.1 204 No Content
 |Inline images as part of the message|При упоминаний|
 |Ссылки на существующие файлы в SPO или OneDrive|Реакции|
 |Сообщения с богатым текстом|Видео|
-|Цепочка ответов на сообщения|Объявления|
+|Цепочка ответов на сообщения|Announcements|
 |Обработка высокой пропускной способности|Фрагменты кода|
 ||Наклейки|
 ||Emojis|

@@ -4,12 +4,13 @@ description: Понимание устранения неполадок и ус�
 ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: a18aff23b8523bc91485835c991cc6608deb8eae93ce175ff3403e699dc6c5e5
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.localizationpriority: none
+ms.openlocfilehash: 39ab797bf87638e107f55e8b83d002372a4261f5
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157531"
 ---
 # <a name="resolve-issues-if-your-microsoft-teams-store-submission-fails"></a>Устранение проблем при сбойе Microsoft Teams хранения
 

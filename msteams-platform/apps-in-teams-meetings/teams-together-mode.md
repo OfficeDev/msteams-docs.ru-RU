@@ -2,12 +2,13 @@
 title: Настраиваемые сцены режима совместно
 description: Работа с настраиваемой совместной сценой режима
 ms.topic: conceptual
-ms.openlocfilehash: 32b7cb32eb3f422641dbf28e635e39d978bad002
-ms.sourcegitcommit: 68f5411f5989ac706b6a4a7b2884296e145fe7c4
+ms.localizationpriority: none
+ms.openlocfilehash: 5fb049668247a12231f91aec0e75537608f25b10
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58849442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156391"
 ---
 # <a name="custom-together-mode-scenes-in-teams"></a>Настраиваемые сцены режима "Вместе" в Teams
 
@@ -36,7 +37,7 @@ ms.locfileid: "58849442"
 * Понимание [концепции боковой загрузки приложений.](../concepts/deploy-and-publish/apps-upload.md)
 * Убедитесь, что администратор предоставил [](../concepts/deploy-and-publish/apps-upload.md) Upload настраиваемого приложения и выберите все фильтры в рамках политик установки приложения и собраний соответственно.
 
-## <a name="best-practices"></a>Рекомендованные методики
+## <a name="best-practices"></a>Рекомендации
 
 Рассмотрим следующие практики для создания сцены:
 

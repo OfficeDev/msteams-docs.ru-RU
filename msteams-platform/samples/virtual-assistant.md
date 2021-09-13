@@ -1,15 +1,15 @@
 ---
 title: Создание виртуального помощника
 description: Создание бота Виртуальный помощник и навыков для использования в Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: how-to
 keywords: команды виртуальных помощников-ботов
-ms.openlocfilehash: aec0b731b73607cd8f881509ab77da7b8fd35f21c121b97220fdd5019fc53df2
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 47258b55cd00452b33c09da6a5d5403ba1f0aa2c
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57708393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156270"
 ---
 # <a name="create-virtual-assistant"></a>Создание виртуального помощника 
 
@@ -572,7 +572,7 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
 
 | **Название примера** | **Описание** | **C#**  **.NET** |
 |----------|-----------------|---------------------------|
-| Обновленный шаблон визуальной студии | Настраиваемый шаблон для поддержки возможностей групп. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-virtual-assistant/csharp) |
+| Обновленный шаблон визуальной студии | Настраиваемый шаблон для поддержки возможностей групп. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-virtual-assistant/csharp) |
 | Код навыков бота book-a-room | Позволяет быстро найти и заказать комнату собраний на время. | [Просмотр](https://github.com/OfficeDev/microsoft-teams-apps-bookaroom/tree/nebhagat/microsoft-teams-apps-bookaroom-skill) |
 
 

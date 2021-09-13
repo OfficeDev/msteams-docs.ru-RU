@@ -2,15 +2,15 @@
 title: Разработка вкладок для настольных компьютеров, веб-сайтов и мобильных устройств
 description: Узнайте, как создать вкладку Teams для настольных, веб-и мобильных устройств и получить Microsoft Teams пользовательского интерфейса.
 author: heath-hamilton
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: a949687ee53186b4449ad086b4db6c89cc151995
-ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
+ms.openlocfilehash: a33bc00f26d9a296d4b76e3885cd12d772e8f8e8
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408631"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156103"
 ---
 # <a name="design-your-tab-for-microsoft-teams"></a>Разработка вкладки для Microsoft Teams
 
@@ -31,13 +31,13 @@ ms.locfileid: "58408631"
 * Канал
 * Собрание (до, во время или после собрания)
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 Пользователи могут получить доступ к вкладками, выбрав кнопку **More** в канале (пример ниже) или чат, в котором они были добавлены.
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-access-tab.png" alt-text="В примере показана вкладка для мобильных устройств, добавляемая в канал." border="false":::
 
-### <a name="desktop"></a>Рабочий стол
+### <a name="desktop"></a>Версия для настольного компьютера
 
 В следующем примере показано, как пользователи могут добавлять вкладку в канал.
 
@@ -84,17 +84,17 @@ ms.locfileid: "58408631"
 
 Вкладки предоставляют полноэкранный веб-опыт в Teams, где можно отобразить совместное содержимое— такие доски задач и панели мониторинга и важные сведения.
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-view-tab.png" alt-text="В примере показана вкладка для мобильных устройств с доской задач." border="false":::
 
-### <a name="desktop"></a>Рабочий стол
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/tabs/design-view-tab.png" alt-text="В примере показана вкладка с доской задач." border="false":::
 
 ### <a name="anatomy-tab"></a>Анатомия: Вкладка
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-view-tab-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса вкладки." border="false":::
 
@@ -104,9 +104,9 @@ ms.locfileid: "58408631"
 |2|**Вкладка чат**: Открывает чат, который позволяет пользователям иметь беседу рядом с содержимым.|
 |3|**веб-просмотр.** Отображает содержимое приложения.|
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/tabs/design-view-tab-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса вкладки." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-view-tab-anatomy.png" alt-text="На этом рисунке показана анатомия пользовательского интерфейса вкладки." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -134,11 +134,11 @@ ms.locfileid: "58408631"
 
 Пользователи могут автоматически размещать сообщения в канале или чате после того, как они добавит новую вкладку. Это не только сообщает членам команды о новом содержимом и предоставляет ссылку на вкладку, но и позволяет пользователям начать говорить о вкладке.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-channel.png" alt-text="В примере показана вкладка для мобильных устройств, которая обсуждается в потоке канала." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/tabs/design-use-tab-channel.png" alt-text="В примере показана вкладка, обсуждаемая в потоке канала." border="false":::
 
@@ -146,11 +146,11 @@ ms.locfileid: "58408631"
 
 Пользователи могут беседуть рядом с просматриваемым контентом вкладок. На рабочем столе чат открывается на стороне контента приложения.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-side-chat.png" alt-text="В примере показана вкладка для мобильных устройств с областью чата в контексте." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/tabs/design-use-tab-side-chat.png" alt-text="В примере показана вкладка с открытой в правой части чатом." border="false":::
 
@@ -164,7 +164,7 @@ ms.locfileid: "58408631"
 
 ### <a name="anatomy-tab-menu"></a>Анатомия: меню Tab
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/tabs/mobile-design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса меню вкладок для мобильных устройств." border="false":::
 
@@ -176,7 +176,7 @@ ms.locfileid: "58408631"
 |4 |**Переименование.** Пользователи могут дать вкладке имя, значимое каналу, чату или собранию.|
 |5 |**Удаление.** Удаляет вкладку из канала, чата или собрания.|
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/tabs/design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса меню вкладок." border="false":::
 

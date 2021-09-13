@@ -1,15 +1,15 @@
 ---
-title: Проактивные сообщения
+title: Упреждающие сообщения
 description: Описывает, что боты могут начать беседу в Microsoft Teams
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: teams scenarios proactive messaging conversation bot
-ms.openlocfilehash: 82282c4e2a2d48acad8f4bb384976906296be8f9
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: efa77e0202c55973d6ede2454cab4c0ce738a44d
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157212"
 ---
 # <a name="proactive-messaging-for-bots"></a>Активный обмен сообщениями для ботов
 

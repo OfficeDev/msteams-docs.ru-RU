@@ -3,14 +3,14 @@ title: Боты и пакеты SDK
 author: surbhigupta
 description: Обзор инструментов и SDKs для создания Microsoft Teams ботов.
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: e34d89b0ea8aaeb533899309cfb8fdf34d4ceb4994a6e87db398cc3dfc577abd
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 395338cf394412b031f2b1f21fccb9587be84df5
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156163"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -112,7 +112,7 @@ BOT: В какой день?
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|----------------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
 
 ## <a name="next-step"></a>Следующий этап
 

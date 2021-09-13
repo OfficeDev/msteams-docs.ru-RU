@@ -2,15 +2,15 @@
 title: Учебник . Создание первого приложения с помощью генератора Yeoman
 description: Узнайте, как начать создание Microsoft Teams с помощью генератора Yeoman.
 keywords: начало работы node.js nodejs yeoman
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: tutorial
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 696c98be0b091cb937194140f5606c774447baff
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 90bd997de1e5bbfc92e366d466c156f052cbe3bf
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157303"
 ---
 # <a name="build-your-first-microsoft-teams-app-using-the-yeoman-generator"></a>Создайте первое Microsoft Teams приложение с помощью генератора Yeoman
 

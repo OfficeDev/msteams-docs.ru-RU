@@ -2,15 +2,15 @@
 title: Добавление проверки подлинности в расширение для сообщений
 author: surbhigupta
 description: Добавление проверки подлинности в расширение обмена сообщениями
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: d1ebde822e1a0216edaa1b85ac6142234ae34b78
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: c486ddcdda8ea23dc562f17ef42b3fc26a2c73c5
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157296"
 ---
 # <a name="add-authentication-to-your-messaging-extension"></a>Добавление проверки подлинности в расширение для сообщений
 
@@ -30,7 +30,7 @@ ms.locfileid: "53068920"
 
 Данные и значения гарантируются для пользователя, `id` `aadObjectId` Teams проверки подлинности. Они используются в качестве ключей для слежки за учетными данными или любым кэшным состоянием в службе. Кроме того, каждый запрос содержит Azure Active Directory клиента пользователя, который используется для идентификации организации пользователя. Если это применимо, запрос также содержит командный ИД и ИД канала, из которого был зародился запрос.
 
-## <a name="authentication"></a>Проверка подлинности
+## <a name="authentication"></a>Аутентификация
 
 Если ваша служба требует проверки подлинности пользователей, пользователи должны войти, прежде чем использовать расширение обмена сообщениями. Этапы проверки подлинности аналогичны шагам бота или вкладки. Последовательность будет следующим образом:
 
@@ -134,7 +134,7 @@ ms.locfileid: "53068920"
 ```
 
 ## <a name="code-sample"></a>Пример кода
-|**Пример имени** | **Описание** |**.NET** | **Node.js**|
+|**Название примера** | **Описание** |**.NET** | **Node.js**|
 |----------------|-----------------|--------------|----------------|
 |Расширения обмена сообщениями — auth и config | Расширение обмена сообщениями, которое имеет страницу конфигурации, принимает запросы на поиск и возвращает результаты после того, как пользователь войт. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)|[View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)| 
 

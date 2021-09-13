@@ -2,15 +2,15 @@
 title: Определение команд действий расширения обмена сообщениями
 author: surbhigupta
 description: Обзор команд действий расширения обмена сообщениями
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: b4420247d3a0c1116bd1aed09fa2edccf18ae902
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: d9e2e482ed15c99613bbd786ab685a0b388de502
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156036"
 ---
 # <a name="define-messaging-extension-action-commands"></a>Определение команд действий расширения обмена сообщениями
 
@@ -114,7 +114,7 @@ ms.locfileid: "53068929"
 
     <img src="~/assets/images/messaging-extension/action-command-invoke-location.png" alt="action command invoke location" width="500"/>
 
-1. Выберите **Сохранить**.
+1. Нажмите **Сохранить**.
 1. Чтобы добавить дополнительные параметры, выберите кнопку **Добавить** в разделе **Параметры.**
 
 ### <a name="create-an-action-command-manually"></a>Создание команды действий вручную
@@ -127,7 +127,7 @@ ms.locfileid: "53068929"
 | `title` | Это свойство — командное имя. Это значение отображается в пользовательском интерфейсе. | Да | 1.0 |
 | `type` | Это свойство должно быть `action` . | Нет | 1.4 |
 | `fetchTask` | Это свойство предназначено для адаптивной карты или встроенного веб-представления для модуля задач, а также для статичного списка параметров или при загрузке `true` `false` веб-представления с помощью `taskInfo` . | Нет | 1.4 |
-| `context` | Это свойство — необязательный массив значений, определяющий, откуда вызывается расширение обмена сообщениями. Возможные значения — `message`, `compose` и `commandBox`. Значение по умолчанию — `["compose", "commandBox"]`. | Нет | 1.5 |
+| `context` | Это свойство — необязательный массив значений, определяющий, откуда вызывается расширение обмена сообщениями. Возможные значения — `message`, `compose` и `commandBox`. Значение по умолчанию — `["compose", "commandBox"]`. | Нет | 1.5 |
 
 Если используется статический список параметров, необходимо также добавить следующие параметры:
 

@@ -1,16 +1,17 @@
 ---
-title: Приложения для унифицированных собраний
+title: Приложения объединенных собраний
 author: surbhigupta
 description: Понимание приложений для унифицированных собраний
 ms.topic: conceptual
-ms.openlocfilehash: 330156d28bf78723c3c6a670cc34cd97b48ad7a4
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.localizationpriority: none
+ms.openlocfilehash: 4a367af1b2941547143ff7e0ec4b897b1174e26e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156396"
 ---
-# <a name="unified-meetings-apps"></a>Приложения для унифицированных собраний
+# <a name="unified-meetings-apps"></a>Приложения объединенных собраний
 
 Teams приложения для унифицированных собраний основаны на следующих понятиях:
 
@@ -207,7 +208,7 @@ Teams приложения для унифицированных собрани�
 * [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)
 * [Создание приложения](../apps-in-teams-meetings/design/designing-apps-in-meetings.md)
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Необходимые условия и ссылки на API для приложений в собраниях Teams](create-apps-for-teams-meetings.md)

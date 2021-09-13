@@ -3,12 +3,13 @@ title: Включить и настроить приложения для Teams 
 author: surbhigupta
 description: Включить и настроить приложения для Teams собраний
 ms.topic: conceptual
-ms.openlocfilehash: 1827257e4577aee6f3ac26b646a6c36f2e8eb523
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.localizationpriority: none
+ms.openlocfilehash: 1695b3e63a08935abd2db264ff171ebdf1d49fc3
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156402"
 ---
 # <a name="enable-and-configure-your-apps-for-teams-meetings"></a>Включить и настроить приложения для Teams собраний
 

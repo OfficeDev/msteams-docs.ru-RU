@@ -5,12 +5,13 @@ description: Вы сможете быстро разработать прило�
 ms.author: adhal
 ms.date: 05/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: 7d043c904521f33946510de60f539dc27dd6b687bc74bbb89aa35f9d267fe8ef
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.localizationpriority: none
+ms.openlocfilehash: cfe3dc5f303de9035b363f1e3b8224456ff6588e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157332"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-react"></a>Создайте и запустите свое первое приложение Microsoft Teams, пользуясь библиотекой React
 

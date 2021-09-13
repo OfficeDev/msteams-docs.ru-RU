@@ -2,15 +2,15 @@
 title: Проектирование модулей задач
 author: heath-hamilton
 description: Узнайте, как разработать модули задач для Teams приложений и получить Microsoft Teams пользовательского интерфейса.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 9248fba30726511d025e71957c0d9f2bac4c9866
-ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
+ms.openlocfilehash: 8edcc24d5fca7ba7e8260d2cc20ee8c6d7282af2
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157248"
 ---
 # <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для Microsoft Teams приложения
 
@@ -41,7 +41,7 @@ ms.locfileid: "58408617"
 
 Они также могут быть построены с помощью базы [адаптивных](../../task-modules-and-cards/cards/design-effective-cards.md) карт, которая может быть более простым и быстрым способом облегчения распространенных сценариев (например, форм).
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач на мобильных устройствах." border="false":::
 
@@ -53,7 +53,7 @@ ms.locfileid: "58408617"
 |4 |**веб-просмотр.** Отзывчивое пространство, в котором размещено содержимое приложения.|
 |5 |**Действия (необязательные)**: кнопки, связанные с контентом приложения.|
 
-### <a name="desktop"></a>Рабочий стол
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/task-module-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модуля задач." border="false":::
 
@@ -80,11 +80,11 @@ ms.locfileid: "58408617"
 
 Списки хорошо работают в модуле задач, так как их легко сканировать.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-list.png" alt-text="Пример списка в модуле задач на мобильных устройствах." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач." border="false":::
 
@@ -92,11 +92,11 @@ ms.locfileid: "58408617"
 
 Модули задач — отличное место для поверхности форм с последовательной вводной и входной проверкой пользователей. Адаптивные карты можно использовать как способ встраить элементы формы.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-form.png" alt-text="Пример формы в модуле задач на мобильных устройствах." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/form.png" alt-text="Пример формы в модуле задач." border="false":::
 
@@ -104,11 +104,11 @@ ms.locfileid: "58408617"
 
 Создайте целенаправленный поток входов или регистрации с помощью ряда модулей задач, что позволяет пользователям легко перемещаться по последовательному шагу.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-sign-in.png" alt-text="Например, во время работы в модуле задач на мобильных устройствах." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Например, во время работы в модуле задач." border="false":::
 
@@ -116,11 +116,11 @@ ms.locfileid: "58408617"
 
 Встраить медиаконтент в модуль задач для целенаправленного просмотра.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-media.png" alt-text="Пример содержимого мультимедиа в модуле задач на мобильных устройствах." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/media.png" alt-text="Пример содержимого мультимедиа в модуле задач." border="false":::
 
@@ -128,11 +128,11 @@ ms.locfileid: "58408617"
 
 Используйте для приветствия, ошибок и сообщений об успехе.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-empty-state.png" alt-text="Пример пустого состояния в модуле задач на мобильных устройствах." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/empty-state.png" alt-text="Пример пустого состояния в модуле задач." border="false":::
 
@@ -140,11 +140,11 @@ ms.locfileid: "58408617"
 
 Встраить карусель галереи в iframe (настольный) или веб-просмотр (мобильный).
 
-##### <a name="mobile"></a>Мобильные устройства
+##### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-image-gallery.png" alt-text="Пример галереи изображений в модуле задач на мобильных устройствах." border="false":::
 
-##### <a name="desktop"></a>Рабочий стол
+##### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/image-gallery.png" alt-text="Пример галереи изображений в модуле задач." border="false":::
 
@@ -152,11 +152,11 @@ ms.locfileid: "58408617"
 
 В этом примере показаны результаты опроса, запущенные с адаптивной карты. Опрос также можно поместить в модуль задач.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/task-module/mobile-poll.png" alt-text="Пример опроса в модуле задач на мобильных устройствах." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/task-module/poll.png" alt-text="Пример опроса в модуле задач." border="false":::
 

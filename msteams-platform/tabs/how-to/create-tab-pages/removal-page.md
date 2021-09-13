@@ -3,15 +3,15 @@ title: Создать страницу удаления вкладки
 author: surbhigupta
 description: Создание страницы удаления вкладок
 keywords: группы вкладок группового канала, настраиваемые удалить удаление
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 5cfe79bc026f7326f258b994540958aab0a83c29f08846447d2b5859f10794dd
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: b519b4ff7251979f97affb0c567f0e9813142b6e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156289"
 ---
 # <a name="create-a-removal-page"></a>Создать страницу удаления
 

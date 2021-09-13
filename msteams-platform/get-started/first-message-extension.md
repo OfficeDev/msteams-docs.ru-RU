@@ -5,12 +5,13 @@ description: Создайте расширение для сообщений д�
 ms.author: adhal
 ms.date: 05/20/2021
 ms.topic: quickstart
-ms.openlocfilehash: 3566bc55c9995a8407b1344fbdb7d1548e210046
-ms.sourcegitcommit: 9d63611974ba8a7e7f19ceea35e50189a2e90434
+ms.localizationpriority: none
+ms.openlocfilehash: 52352d23533b80c9df5422f87e58d318987b6e95
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53254290"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157328"
 ---
 # <a name="build-and-run-your-first-messaging-extension-for-microsoft-teams"></a>Создание и запуск первого расширения для сообщений для Microsoft Teams
 
@@ -21,7 +22,7 @@ ms.locfileid: "53254290"
 - [Команды поиска](../messaging-extensions/how-to/search-commands/define-search-command.md) позволяют выполнять поиск во внешних системах и вставлять результаты поиска в сообщение в виде карточки.
 - [Команды действий](../messaging-extensions/how-to/action-commands/define-action-command.md) позволяют предоставлять пользователям модальное всплывающее окно для сбора или отображения информации, а затем обрабатывать их действия и отправлять информацию обратно в Teams.
 
-## <a name="before-you-begin"></a>Подготовка
+## <a name="before-you-begin"></a>Перед началом работы
 
 Убедитесь, что среда разработки настроена путем установки необходимых условий.
 
@@ -175,7 +176,7 @@ teamsfx new
 
 В Teams в примере проектов по GitHub показано, как создавать расширения обмена сообщениями, включающие страницу конфигурации и проверку подлинности службы [ботов.](https://github.com/microsoft/BotBuilder-Samples#teams-samples) В примерах также показано, как создавать расширения сообщений, которые принимают запросы на поиск и возвращают результаты после того, как пользователь вписался.
 
-| **Пример имени** | **Описание** | **.NET** | **Node.js** | **Python** |
+| **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |-----------------|-----------------|-------------|--------------|--------|
 | Строитель ботов | Создание расширений обмена сообщениями. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config) | [View]( https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
 

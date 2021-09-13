@@ -4,14 +4,14 @@ author: surbhigupta
 description: обзор приложений в Teams собраниях в зависимости от роли участника и пользователя
 ms.topic: overview
 ms.author: lajanuar
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: ac2f2433ddea126b343afa48c11efdf547ad0023
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: b84975296b443ad71fb78042729f225a31ba9afe
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156397"
 ---
 # <a name="apps-for-teams-meetings"></a>Приложения для Teams собраний
 
@@ -46,7 +46,7 @@ ms.locfileid: "58528878"
 * [Необходимые условия и ссылки на API для приложений в собраниях Teams](create-apps-for-teams-meetings.md)
 * [Настраиваемые сцены режима "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md)
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Расширяемость приложения для собраний](meeting-app-extensibility.md)

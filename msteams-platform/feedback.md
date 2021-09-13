@@ -1,15 +1,15 @@
 ---
 title: Microsoft Teams поддержки и отзывов разработчиков
 description: Группа Microsoft Teams отвечает сообществу разработчиков по различным каналам обратной связи и поддержки.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: reference
 keywords: Команды отзывают разработчиков вопросы о проблемах, которые возникают при запросе поддержки запросов на ошибки в обсуждениях сообщества
-ms.openlocfilehash: f0e00df1919a6949433c124dbea15ffa973f7439c46130202c7ba7b6bf750aea
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 07ac34be5fda95aa972085107e81bc441069af5d
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157340"
 ---
 # <a name="microsoft-teams-developer-community-channels"></a>Microsoft Teams каналов сообщества разработчиков
 

@@ -1,15 +1,15 @@
 ---
 title: Использование модулей задач в Microsoft Teams ботах
 description: Использование модулей задач с Microsoft Teams ботами, включая карты Bot Framework, адаптивные карты и глубокие ссылки.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: how-to
 keywords: модули задач групп ботов
-ms.openlocfilehash: 7a4c5b0a3986f5a6a59064a05bcbc68587955effca0ea7fab80a7097a9732b6f
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: a548f0d0ae3853f447ba55409bf9edbecced4e60
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57701876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157580"
 ---
 # <a name="use-task-modules-from-bots"></a>Использование модулей задач из ботов
 
@@ -209,7 +209,7 @@ private static void SetTaskInfo(TaskModuleTaskInfo taskInfo, UISettings uIConsta
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

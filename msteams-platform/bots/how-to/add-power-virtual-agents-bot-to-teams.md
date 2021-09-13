@@ -3,14 +3,14 @@ title: Добавьте Power Virtual Agents чат-бота в Teams
 author: surbhigupta
 description: интеграция Power Virtual Agents чат-бота в Teams платформе
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: ed788fe2acdd2425a435ea7ad608e461c1b4d306a89d7fe3b57eee054b94e69e
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 5a4aa24ceb5a73be56cfd069b02ca7b980d17055
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157572"
 ---
 # <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents 
 

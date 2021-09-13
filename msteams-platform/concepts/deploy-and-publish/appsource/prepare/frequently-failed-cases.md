@@ -2,15 +2,15 @@
 title: Советы по отправке приложений и часто сбойные случаи
 description: описывает советы по успешной отправке Teams и распространенные причины сбой отправки
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
 keywords: Советы по отправке приложений часто не удается случаях проверки руководящих принципов
-ms.openlocfilehash: 91ae68562d93e4ad8770d5251671c3fa756aa0b15482b4495fe016a01e068707
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 99e5a55e4c3cfb63766d4b0ba72a2cc2824bc823
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706575"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157535"
 ---
 # <a name="tips-for-a-successful-microsoft-teams-app-submission"></a>Советы для успешной отправки Microsoft Teams приложения
 

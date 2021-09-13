@@ -2,15 +2,15 @@
 title: Ответ на действие отправки модуля задач
 author: surbhigupta
 description: Описывает, как реагировать на отправку действия модуля задач из команды действий расширения обмена сообщениями.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 9d0690a620efc3e658372cfaecf31504787b3d71
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.openlocfilehash: 79687dd98f8d88e365ae1528b36806d3ffc559d3
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068953"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157688"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -589,7 +589,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 |`itemId`|Целое число|Описывает идентификацию элемента. Его значение должно быть `0` .|
 |`mentionType`|String|Описывает упоминание о "человеке".|
 |`mri`|String|Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение. Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".|
-|`displayName`|String|Имя человека. Используется в качестве отката в разрешении имени случая недоступно.|
+|`displayName`|Строка|Имя человека. Используется в качестве отката в разрешении имени случая недоступно.|
   
 ## <a name="code-sample"></a>Пример кода
 

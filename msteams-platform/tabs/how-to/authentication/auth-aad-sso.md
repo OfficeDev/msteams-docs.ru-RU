@@ -2,14 +2,14 @@
 title: Поддержка единого входного знака для вкладок
 description: Описывает один вход (SSO)
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO AAD единого api для входов
-ms.openlocfilehash: 6ce6a3605656c205897dadb714bab28a69964158
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: eddbc681155d1fea03ca2c362f5519c4d2542887
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157380"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 

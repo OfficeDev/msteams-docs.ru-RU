@@ -1,15 +1,15 @@
 ---
 title: Карточки
 description: Описание карт и их использования в ботах, соединители и расширениях обмена сообщениями
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: соединители боты-карты обмена сообщениями
 ms.topic: overview
-ms.openlocfilehash: 5fce5983e5197bfde37d2c92d427e8135b294d422eb019ef207eeb7f0e5be9f3
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 345e37a9af00c2f3300cc76f4b44b83cc47d0392
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157579"
 ---
 # <a name="cards"></a>Карточки
 
@@ -19,7 +19,7 @@ ms.locfileid: "57706634"
 
 Teams использует карты в трех разных местах:
 
-* Соединители
+* Connectors
 * боты;
 * расширения для обмена сообщениями;
 

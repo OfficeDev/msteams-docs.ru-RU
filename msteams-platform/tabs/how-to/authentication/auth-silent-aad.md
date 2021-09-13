@@ -2,14 +2,14 @@
 title: Автоматическая проверка подлинности
 description: Описание бесшумной проверки подлинности
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO silent AAD
-ms.openlocfilehash: 1bdb75941f612be68ef0c6c2efa798a4888a88753434f1f3264243a135decc14
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 02078775ef3349ae5bb35e999e0f65587ab943d1
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57701886"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156091"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 

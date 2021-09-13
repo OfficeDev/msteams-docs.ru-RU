@@ -3,14 +3,14 @@ title: Использование карт в ботах
 description: Описание карт и их использования в сообщениях-ботах
 keywords: боты карт обмена сообщениями
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 03/29/2018
-ms.openlocfilehash: 5f6021cae5a90c34fbdbe69f33315807f17a6f18
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: f0d895450ec444996ed571b3cf7772e1eaa6884b
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566784"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157411"
 ---
 # <a name="cards-in-bot-conversations"></a>Карты в беседах с ботами
 

@@ -3,15 +3,15 @@ title: Создание вкладок и других опытом работы
 author: heath-hamilton
 ms.author: surbhigupta
 description: Обзор SDK Microsoft Teams JavaScript, который может помочь вам создать Teams приложений в <iframe>.
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: teams tabs group channel configurable static SDK JavaScript personal
 ms.topic: conceptual
-ms.openlocfilehash: d1bcf9fd853d1b0e93c99ae62ad32f462fc98ed4eee1796e7ae5510ad02a8909
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: ae1192a7221300fc702093d64c97b31bb990d2e9
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157495"
 ---
 # <a name="building-tabs-and-other-hosted-experiences-with-the-microsoft-teams-javascript-client-sdk"></a>Создание вкладок и других опытом работы с клиентом Microsoft Teams JavaScript SDK
 
@@ -19,7 +19,7 @@ SDK Microsoft Teams JavaScript поможет вам создать у себя 
 
 SDK полезен для разработки приложений с любым из следующих Teams возможностей:
 
-* [Tabs](../../tabs/what-are-tabs.md)
+* [Вкладки](../../tabs/what-are-tabs.md)
 * [Модули задач](../../task-modules-and-cards/what-are-task-modules.md)
 
 Например, SDK может заставить [](../../build-your-first-app/build-personal-tab.md#3-update-your-tab-theme) вкладку реагировать на изменения темы, внесенные пользователями в Teams клиенте.

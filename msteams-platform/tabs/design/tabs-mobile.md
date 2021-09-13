@@ -2,13 +2,13 @@
 title: Вкладки на мобильных устройствах
 description: Описывает соображения разработчика для реализации вкладок на Microsoft Teams мобильном телефоне.
 ms.topic: conceptual
-localization_priority: Normal
-ms.openlocfilehash: e63bfc6b88e77b4dc0f05916dbf13fd5e8c2e199764b78961426ff9601de37e6
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.localizationpriority: medium
+ms.openlocfilehash: bc853c995e0a580a2a2580caa8d7c420f7d9680e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156229"
 ---
 # <a name="tabs-on-mobile"></a>Вкладки на мобильных устройствах
 
@@ -29,7 +29,7 @@ ms.locfileid: "57704944"
 > * Поведение приложений по умолчанию применимо только в том случае, если они распространяются Teams магазине. По умолчанию все вкладки открываются в Teams клиенте.
 > * Чтобы инициировать оценку мобильной безопасности приложения, протянуть teamsubm@microsoft.com сведения о приложении.
 
-## <a name="authentication"></a>Проверка подлинности
+## <a name="authentication"></a>Аутентификация
 
 Для проверки подлинности для мобильных клиентов необходимо обновить Teams JavaScript SDK по крайней мере до версии 1.4.1.
 

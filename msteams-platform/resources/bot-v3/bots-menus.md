@@ -3,14 +3,14 @@ title: Добавление меню бота
 description: Описывает, как создавать меню для ботов в Microsoft Teams
 keywords: teams bots menus creation
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: da6f36e1b7071b92f6411ab7d2afdccb795946b7
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 14100c9032f0adf964975abbe436c84194475a99
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157687"
 ---
 # <a name="add-a-bot-menu-in-microsoft-teams"></a>Добавление меню бота в Microsoft Teams
 

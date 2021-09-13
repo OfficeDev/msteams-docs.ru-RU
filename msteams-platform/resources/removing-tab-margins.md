@@ -4,14 +4,14 @@ author: surbhigupta
 description: Описывает, как удаление полей вкладок повышает возможности создания приложений.
 keywords: удаление полей вкладки
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lomeybur
-ms.openlocfilehash: 2dc024bea28dbd8f98c658ccfa4a7494e77e19d9
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 79c4d887a028d9da722325985f9bbd62740e3781
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157663"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 

@@ -2,15 +2,15 @@
 title: Требования и соображения к медийным ботам с хостингом приложений
 description: Понимание важных требований и соображений, связанных с созданием медиа-ботов с хостингом приложений для Microsoft Teams.
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: windows server azure vm с использованием приложения
 ms.date: 11/16/2018
-ms.openlocfilehash: 20f4327ee967cdc75b72eb5525b684c0fb61acb3c90fb96c26eeb23d815fe4e0
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: e8f776b647beda2745a7bdbc03794e491a942b54
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57702832"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157568"
 ---
 # <a name="requirements-and-considerations-for-application-hosted-media-bots"></a>Требования и соображения к медийным ботам с хостингом приложений
 
@@ -70,7 +70,7 @@ ms.locfileid: "57702832"
 
 | **Название примера** | **Описание** | **Microsoft Graph** |
 |------------|-------------|-----------|
-| Пример локального мультимедиа | Примеры, иллюстрирующие различные локальные сценарии мультимедиа. | [Просмотр](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples) |
+| Пример локального мультимедиа | Примеры, иллюстрирующие различные локальные сценарии мультимедиа. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples) |
 | Пример удаленного мультимедиа | Примеры, иллюстрирующие различные сценарии удаленного мультимедиа. | [Просмотр](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы

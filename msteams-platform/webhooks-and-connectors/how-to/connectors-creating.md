@@ -3,15 +3,15 @@ title: Создание соединителей Office 365
 author: laujan
 description: Описывает, как начать работу с Office 365 соединители в Microsoft Teams
 keywords: соединитель teams o365
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: ee9a00473a7d871e0c69f27a44ca6c7c23eadcbf
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 39c2533f112f5cb3c72446ad8a5638687dd3db2e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156042"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -128,7 +128,7 @@ ms.locfileid: "58345741"
 
 В следующей таблице параметров и сведений о свойствах `GetSetting` отклика:
 
-| Параметры   | Сведения |
+| Параметры   | Details |
 |-------------|---------|
 | `entityId`       | Код сущности, задаваемый кодом при `setSettings()` вызове. |
 | `configName`  | Имя конфигурации, заданная кодом при `setSettings()` вызове. |
@@ -267,7 +267,7 @@ ms.locfileid: "58345741"
 
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Соединители    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
+| Connectors    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
 | Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.|  | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы

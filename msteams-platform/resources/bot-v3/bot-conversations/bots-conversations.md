@@ -2,15 +2,15 @@
 title: Отправка и получение сообщений с помощью бота
 description: Описывает, как отправлять и получать сообщения с помощью ботов в Microsoft Teams
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: teams bots messages
 ms.date: 05/20/2019
-ms.openlocfilehash: efa7658aef87650e360c79523ac1c282dc4814fd
-ms.sourcegitcommit: e1fe46c574cec378319814f8213209ad3063b2c3
+ms.openlocfilehash: c82f96c42992f49f61d19c2bf5c6a19283e8ee95
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52630462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157412"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с Microsoft Teams ботом
 
@@ -29,7 +29,7 @@ ms.locfileid: "52630462"
 
 Чтобы бот работал в определенной области, он должен быть указан в качестве поддержки этой области в манифесте. Области определяются и обсуждаются далее в [справке манифеста.](~/resources/schema/manifest-schema.md)
 
-## <a name="proactive-messages"></a>Проактивные сообщения
+## <a name="proactive-messages"></a>Упреждающие сообщения
 
 Боты могут участвовать в беседе или инициировать один. Большинство сообщений является ответом на другое сообщение. Если бот инициирует беседу, она называется упреждающего *сообщения*. Вот некоторые примеры.
 
@@ -76,9 +76,9 @@ ms.locfileid: "52630462"
 
 Изображения могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF не поддерживается.
 
-Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию составляет 256×256. Пример.
+Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию составляет 256×256. Например.
 
-* Воспользуйтесь `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
+* Используйте `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
 * Не используйте `![Duck on a rock](http://aka.ms/Fo983c)`
 
 ## <a name="receiving-messages&quot;></a>Получение сообщений

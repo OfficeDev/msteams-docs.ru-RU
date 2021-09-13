@@ -4,12 +4,13 @@ author: surbhigupta
 description: Определение команд поиска расширения обмена сообщениями для Microsoft Teams приложений.
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 6333840e6817761911b2b5acd4b53849448b5b68
-ms.sourcegitcommit: 623d81eb079d1842813265746a5fe0fe6311b196
+ms.localizationpriority: none
+ms.openlocfilehash: 88153523db6bd3f4957d03a0603e3b4cbdd02266
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53068912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157415"
 ---
 # <a name="define-messaging-extension-search-commands"></a>Определение команд поиска расширения обмена сообщениями
 

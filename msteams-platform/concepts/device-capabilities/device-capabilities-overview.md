@@ -4,14 +4,14 @@ author: Rajeshwari-v
 description: Обзор возможностей родного устройства.
 ms.author: surbhigupta
 keywords: Микрофон микрофона микрофона микрофона qr qr code qrcode штрихкода штрихкода сканера сканера расположения карты изображений камеры возможности родных разрешений устройства
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 4b09d4d81301aa8fc125da98a3633dc79e05d3d1
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 6b1fcb436dc77c1859c81010c1d1eb5adcc3773a
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157611"
 ---
 # <a name="device-capabilities"></a>Возможности устройств
 
@@ -25,7 +25,7 @@ Microsoft Teams постоянно совершенствует возможно
     * Микрофон
     * Галерея
     * Сканер QR или штрихкода
-* Расположение
+* Location
 
 Получив доступ к возможностям устройства, вы можете интегрировать их с Teams платформой для повышения эффективности совместной работы. 
 

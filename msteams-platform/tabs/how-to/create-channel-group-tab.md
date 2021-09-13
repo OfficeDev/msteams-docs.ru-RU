@@ -2,15 +2,15 @@
 title: Создание вкладки канала или группы
 author: laujan
 description: Руководство quickstart по созданию вкладки канала и группы с генератором Yeoman для Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: fedaf3ec639917110e16c666734fa3eedbcda18e
-ms.sourcegitcommit: 85a52119df6c4cb4536572e6d2e7407f0e5e8a23
+ms.openlocfilehash: 5f63a5217ad5da5ec82ab5b3abb5b8f7142ecf1d
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53179995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156228"
 ---
 # <a name="create-a-channel-or-group-tab"></a>Создание вкладки канала или группы
 
@@ -199,7 +199,7 @@ gulp build
     gulp serve
     ```
 
-1. Введите в браузере, замените имя вкладки и просмотр домашней страницы приложения, как показано на `http://localhost:3007/<yourDefaultAppNameTab>/` **<yourDefaultAppNameTab>** следующем изображении:
+1. Введите в браузере, замените имя вкладки на имя вкладки и просмотреть домашняя страница приложения, как показано на `http://localhost:3007/<yourDefaultAppNameTab>/` следующем изображении: 
 
     ![Снимок экрана домашней страницы](~/assets/images/tab-images/homePage.png)
 

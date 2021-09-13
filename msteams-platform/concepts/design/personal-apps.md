@@ -3,14 +3,14 @@ title: Проектирование личного приложения
 description: Узнайте, как создать Teams и получить Microsoft Teams пользовательского интерфейса.
 author: heath-hamilton
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 52029fedc39270c029cea8a85f6b45988c2340d9
-ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
+ms.openlocfilehash: ae75a79ebc6293b99e7e4db310cfb0545ce5037a
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157612"
 ---
 # <a name="designing-your-personal-app-for-microsoft-teams"></a>Разработка личного приложения для Microsoft Teams
 
@@ -39,7 +39,7 @@ ms.locfileid: "58408624"
 
 ### <a name="anatomy-personal-app-private-workspace"></a>Анатомия: Личное приложение (личное рабочее пространство)
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/personal-apps/mobile-personal-tab-component-anatomy.png" alt-text="В примере показана анатомия компонентов личной вкладки." border="false":::
 
@@ -57,9 +57,9 @@ ms.locfileid: "58408624"
 |A|**Вкладки.** Обеспечивает навигацию для личного приложения.|
 |1|**веб-просмотр.** Отображает содержимое приложения.|
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-component-anatomy.png" alt-text="В примере показана анатомия компонентов личной вкладки." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-component-anatomy.png" alt-text="В этом примере показана анатомия компонентов личной вкладки." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -68,7 +68,7 @@ ms.locfileid: "58408624"
 |В|**Представление всплывающих** окон: отодвигает содержимое приложения из родительского окна в автономный детский окне.|
 |D|**Дополнительные меню.** Включает дополнительные параметры приложения и сведения. (Можно также сделать **Параметры** вкладку.)|
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-structural-anatomy.png" alt-text="В примере показана структурная анатомия личной вкладки." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-structural-anatomy.png" alt-text="В этом примере показана структурная анатомия личной вкладки." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -92,9 +92,9 @@ ms.locfileid: "58408624"
 
 ### <a name="anatomy-personal-app-bot"></a>Анатомия: личное приложение (бот)
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/personal-apps/mobile-personal-bot-anatomy.png" alt-text="В примере показана анатомия компонентов персональных ботов." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/mobile-personal-bot-anatomy.png" alt-text="В примере показана анатомия личных компонентов бота." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -103,9 +103,9 @@ ms.locfileid: "58408624"
 |В|**Сообщение бота.** Боты часто отправляют сообщения и уведомления в виде карты (например, адаптивной карты).|
 |D|**Compose box**: Вводное поле для отправки сообщений боту.|
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/personal-apps/personal-bot-anatomy.png" alt-text="В примере показана анатомия компонентов персональных ботов." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-anatomy.png" alt-text="В примере показана анатомия личного компонента бота." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|

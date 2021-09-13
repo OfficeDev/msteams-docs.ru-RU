@@ -3,13 +3,13 @@ title: Пользовательские просмотры
 description: Пример для пользовательских представлений с помощью универсальных действий
 author: surbhigupta12
 ms.topic: conceptual
-localization_priority: Normal
-ms.openlocfilehash: 00d6c8e5109fdd9cdf83662f9585a9a2d9e7fd86
-ms.sourcegitcommit: 6a41c529a423c81a184c7a79125dbaaed0179788
+ms.localizationpriority: medium
+ms.openlocfilehash: d607250d0d34367c097cdfd25050e4180f72eeda
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53585986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156288"
 ---
 # <a name="user-specific-views"></a>Пользовательские просмотры
 
@@ -17,11 +17,11 @@ ms.locfileid: "53585986"
 
 Например, Меган, инспектор безопасности в Contoso, хочет создать инцидент и назначить его Алексу. Меган также хочет, чтобы все в команде знали об инциденте. Меган использует расширение сообщений об инцидентах Contoso с питанием от универсальных действий для адаптивных карт.
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="~/assets/images/adaptive-cards/mobile-universal-bots-incident-management.jpg" alt-text="Представления для мобильных пользователей":::
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-incident-management.png" alt-text="Пользовательские просмотры":::
 
@@ -204,7 +204,7 @@ var adaptiveCardResponse = JObject.FromObject(new
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Адаптивные карточки последовательного рабочего процесса | Демонстрация того, как реализовать последовательное рабочий процесс, пользовательские представления и адаптивные карты в ботах. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs) |
+| Адаптивные карточки последовательного рабочего процесса | Демонстрация того, как реализовать последовательное рабочий процесс, пользовательские представления и адаптивные карты в ботах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

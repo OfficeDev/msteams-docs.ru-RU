@@ -2,14 +2,14 @@
 title: Выбор установки для тестирования и отлаговки приложения
 description: Описывает варианты тестирования и отладки Microsoft Teams приложений
 keywords: группы запускают приложения для отлагки
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 5d358e7f37972f1b0954f2c4c5f6a892aeff8d8f4f08b4be22d4ae0215acbebe
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: c20f10fc0f3fb7265921ded2bf412271695bbcd9
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156048"
 ---
 # <a name="choose-a-setup-to-test-and-debug-your-microsoft-teams-app"></a>Выберите установку для тестирования и отлаговки Microsoft Teams приложения
 
@@ -70,7 +70,7 @@ Microsoft Teams является полностью облачным проду�
 
 ## <a name="load-and-run-your-experience"></a>Загрузка и запуск вашего опыта
 
-Чтобы загрузить и запустить Microsoft Teams, необходимо создать пакет и загрузить его в Teams. Дополнительные сведения см. в указанных ниже статьях.
+Чтобы загрузить и запустить Microsoft Teams, необходимо создать пакет и загрузить его в Teams. Подробнее:
 
 * [Создайте пакет для Microsoft Teams приложения.](~/concepts/build-and-test/apps-package.md)
 * [Upload приложение в Microsoft Teams](~/concepts/deploy-and-publish/apps-upload.md).

@@ -1,15 +1,15 @@
 ---
 title: Примеры кода приложения
 description: Ссылки и описания примерных приложений для платформы Microsoft Teams разработчика
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: reference
 keywords: Microsoft Teams примерах разработчика
-ms.openlocfilehash: c261aebc327d09265db8831c2b7a8549f30a34fe
-ms.sourcegitcommit: 68f5411f5989ac706b6a4a7b2884296e145fe7c4
+ms.openlocfilehash: 34c914898f7ae83022f1278bc11cc33ac5084ba5
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58849428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157339"
 ---
 # <a name="overview"></a>Обзор
 
@@ -48,7 +48,7 @@ ms.locfileid: "58849428"
 | Возможности приложений | Взаимодействие пользователей | Рекомендуемые средства | Пакеты SDK | Стеки технологий |
 |--------|-------------|--------|--------|--------|
 | Вкладки | Полноэкранный встроенный веб-опыт. | VS Code с Teams набор средств или YoTeams (Генератор Yeoman) | [Teams клиента SDK](/javascript/api/overview/msteams-client) | Веб-технологии в целом, HTML, CSS и JavaScript |
-| боты; | Чат-бот, который беседует с участниками. | VS Code с Teams набор средств или YoTeams (Генератор Yeoman) | [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C# или Python |
+| Боты | Чат-бот, который беседует с участниками. | VS Code с Teams набор средств или YoTeams (Генератор Yeoman) | [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C# или Python |
 | Расширения для система обмена сообщениями | Ярлыки для вставки внешнего контента в беседу или принятия действий по сообщениям. | VS Code с Teams набор средств или YoTeams (Генератор Yeoman) | [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C# или Python |
 
 В разделе Начало работы вы можете пройти через рекомендуемые наборы инструментов и часто используемые технологии, такие как Visual Studio Code с расширением Teams, React.js для вкладок и Node.js для ботов и расширений обмена сообщениями, хотя вы не ограничены использованием этих определенных стеков *.*

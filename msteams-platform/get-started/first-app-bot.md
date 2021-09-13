@@ -5,12 +5,13 @@ description: Создание чат-бота для Microsoft Teams с помо
 ms.author: adhal
 ms.date: 05/27/2021
 ms.topic: quickstart
-ms.openlocfilehash: 2b39dc51c1c175e738b88376a298df82f25a582a
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.localizationpriority: none
+ms.openlocfilehash: f9f35f5b4e639c6568ad3c1eccfc750d3bd9b853
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157335"
 ---
 # <a name="build-your-first-conversational-bot-for-microsoft-teams"></a>Создание первого чат-бота для Microsoft Teams
 
@@ -19,7 +20,7 @@ ms.locfileid: "58345643"
 > [!IMPORTANT]
 > В настоящее время боты доступны в облако сообщества для государственных организаций (GCC), но недоступны в GCC-High и Министерстве обороны (DOD).
 
-## <a name="before-you-begin"></a>Прежде чем начать
+## <a name="before-you-begin"></a>Перед началом работы
 
 Убедитесь, что среда разработки настроена путем установки необходимых условий.
 

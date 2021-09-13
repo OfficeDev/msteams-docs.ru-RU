@@ -4,14 +4,14 @@ author: Rajeshwari-v
 description: Использование SDK Teams JavaScript для использования возможностей расположения
 keywords: Возможности карты расположения для родных разрешений устройств
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: 2caf0f9e631990211eea4e94b58b4ec8399fb3d5
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: ac3227d963baea6f55da81596f2003fd865f32b1
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157608"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 
@@ -93,7 +93,7 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 
 Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
-|Код ошибки |  Имя ошибки     | Условие|
+|Код ошибки |  Имя ошибки     | Condition|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|

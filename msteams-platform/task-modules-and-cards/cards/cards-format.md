@@ -2,15 +2,15 @@
 title: Форматирование текста в картах
 description: Описывает форматирование текста карты в Microsoft Teams
 keywords: teams bots cards format
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: reference
 ms.date: 06/25/2021
-ms.openlocfilehash: e62d79b6bd07031800116bc3295ce55a06e3bc86
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: abbdc0d1fa77744ae061e5430c4450d0e7cf83c7
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157255"
 ---
 # <a name="format-cards-in-microsoft-teams"></a>Форматирование карточек в Microsoft Teams
 
@@ -52,7 +52,7 @@ ms.locfileid: "58345720"
 Следующие теги Markdown не поддерживаются:
 
 * Заголовки
-* таблицы;
+* Таблицы
 * Изображения
 * Предформатированный текст
 * Blockquotes

@@ -3,13 +3,13 @@ title: Вызов и закрытие модулей задач
 description: Вызов и увольнение модулей задач.
 author: surbhigupta12
 ms.topic: conceptual
-localization_priority: Normal
-ms.openlocfilehash: b58c4445953cc668156745871698679462ce888f
-ms.sourcegitcommit: 77edcd5072b35fddc02a9ca7a379c6b1a0157722
+ms.localizationpriority: medium
+ms.openlocfilehash: ab6425ae90c04e142e5d69f4a41ff49358731a23
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58398671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157247"
 ---
 # <a name="invoke-and-dismiss-task-modules"></a>Вызов и закрытие модулей задач
 

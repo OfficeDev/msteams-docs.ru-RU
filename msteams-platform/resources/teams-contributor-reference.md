@@ -3,14 +3,14 @@ title: Улучшение документации Teams
 description: действия по созданию и публикации Teams документации
 author: surbhigupta
 ms.author: lajanuar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: contributor-guide
-ms.openlocfilehash: d09f946926f7377b65910c7bccce7cef8e30ef739afa31b94c83354cffbd7c27
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 28fe69d59757bf53ddd105fde403d625d5faf419
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57708058"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157455"
 ---
 # <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
@@ -30,7 +30,7 @@ Teams документация входит в библиотеку технич
 > * Установка в VS Code:
 
    1. Выберите **значок** Расширения на боковой панели действий или используйте команду **View => Extensions** или Ctrl+Shift+X и поиск пакета авторов **Microsoft Docs**.
-   1. Нажмите кнопку **Установить**.
+   1. Нажать кнопку **Установить**.
    1. После установки установите **кнопку** **Управление** передачей.
 
 ## <a name="review-the-microsoft-docs-contributors-guide"></a>Просмотрите руководство по вкладчикам Microsoft Docs

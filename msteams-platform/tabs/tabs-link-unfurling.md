@@ -4,12 +4,13 @@ author: Rajeshwari-v
 description: Как развязать ссылку, открыть представление сцены и закрепить вкладку с помощью Microsoft Teams приложения.
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 74f385476887ab14d9b3eac12bfb8e0735b295d5
-ms.sourcegitcommit: 77edcd5072b35fddc02a9ca7a379c6b1a0157722
+ms.localizationpriority: none
+ms.openlocfilehash: 4444830d47345908445d62bdd276e8706a0c1a03
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58398678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157491"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
@@ -115,11 +116,11 @@ https://teams.microsoft.com/l/stage/{appId}/0?context={"contentUrl":"[contentUrl
 
 **Пример 1**
 
-https://teams.microsoft.com/l/stage/2a527703-1f6f-4559-a332-d8a7d288cd88/0?context={"contentUrl":"https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx",websiteUrl".:"https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx","name":"Contoso"}
+https://teams.microsoft.com/l/stage/2a527703-1f6f-4559-a332-d8a7d288cd88/0?context={"contentUrl":"https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx","websiteUrl":: "https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx","name":"Contoso"}
 
 **Пример 2**
 
-https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88/0?context={"contentUrl":"https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx",websiteUrl".:"https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx","name":"Contoso"}
+https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88/0?context={"contentUrl":"https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx","websiteUrl":: "https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FLokisSandbox%2FSitePages%2FSandbox-Page.aspx","name":"Contoso"}
 
 > [!NOTE]
 > * `name`Необязательный в глубокой ссылке. Если оно не включено, имя приложения заменяет его.
@@ -131,7 +132,7 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 | Имя свойства | Тип | Количество символов | Описание |
 |:-----------|:---------|:------------|:-----------------------|
-| `entityId` | String | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
+| `entityId` | Строка | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
 | `name` | String | 128 | Это свойство — отображаемая вкладки в интерфейсе канала. Это поле является необязательным.|
 | `contentUrl` | String | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте. Это поле обязательно для заполнения.|
 | `websiteUrl?` | String | 2048 | Это свойство является https://, на который нужно указать, если пользователь выбирает для просмотра в браузере. Это поле обязательно для заполнения.|
@@ -139,7 +140,7 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 ## <a name="code-sample"></a>Пример кода
 
-| Название примера | Описание | C# |Node.js|
+| Название примера | Описание | C # |Node.js|
 |-------------|-------------|------|----|
 |Вкладка в представлении сцены |Microsoft Teams пример приложения вкладки для демонстрации вкладки в представлении сцены.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
     

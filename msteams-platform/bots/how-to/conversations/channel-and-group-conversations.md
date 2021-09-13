@@ -3,14 +3,14 @@ title: Телефонные и групповые беседы с ботом
 author: surbhigupta
 description: Отправка, получение и обработка сообщений для бота в канале или групповом чате.
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 8ff89cf88bf56a905bdf507e1bc6e4ebbbd691f70d94289c8e206024c5657fa9
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: ea8de08de966b9ed15e02f5ead8e33e06c6da68f
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57708415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156156"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Телефонные и групповые беседы в чате с ботом
 
@@ -148,7 +148,7 @@ def get_mentions(activity: Activity) -> List[Mention]:
 
 Объект `Mention` имеет два свойства, которые необходимо установить, используя следующее:
 
-* <at>Включи @username</at> в текст сообщения.
+* *Включи @username* в текст сообщения.
 * Включай объект упоминания в коллекцию сущностями.
 
 SDK Bot Framework предоставляет дополнительные методы и объекты для создания упоминаний.

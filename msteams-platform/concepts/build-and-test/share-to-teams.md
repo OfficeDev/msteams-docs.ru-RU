@@ -2,14 +2,14 @@
 title: Создание кнопки «Поделиться в Teams»
 description: Добавление встраиваемой кнопки Share Teams на веб-сайте
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: Совместное Teams share-to-Teams
-ms.openlocfilehash: 4bbf29bb355726b519975bec5d6fad3419b81ce3
-ms.sourcegitcommit: 09067fb9886323f144384254c41e93469c433382
+ms.openlocfilehash: 0d0fb0d7baf18038cfe87b648d2550bbd20b593a
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58358624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156150"
 ---
 # <a name="create-share-to-teams-button"></a>Создание кнопки «Поделиться в Teams»
 
@@ -78,7 +78,7 @@ ms.locfileid: "58358624"
 
 |Значение|Метатег| Откройте Graph|
 |----|----|----|
-|Заголовок|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
+|Название|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
 |Описание|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
 |Эскиз изображения| нет. |`<meta property="og:image" content="http://example.com/image.jpg">`|
 
@@ -94,12 +94,12 @@ ms.locfileid: "58358624"
 
 | Свойство | Атрибут HTML | Тип | По умолчанию | Описание |
 | -------------- | ---------------------- | --------------------- | ------- | ---------------------------------------------------------------------- |
-| href | `data-href` | строка | н/д | Href контента для обмена. |
+| href | `data-href` | string | н/д | Href контента для обмена. |
 | preview | `data-preview` | boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
 | iconPxSize | `data-icon-px-size` | номер (в качестве строки) | `32` | Размер пикселей кнопки share-to-Teams для отрисовки. |
 | msgText | `data-msg-text` | string | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле составить сообщение. Максимальное число символов — 200. |
-| assignInstr | `data-assign-instr` | строка | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
-| assignTitle | `data-assign-title` | строка | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
+| assignInstr | `data-assign-instr` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
+| assignTitle | `data-assign-title` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
 
 ### <a name="methods"></a>Методы
 

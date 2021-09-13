@@ -3,13 +3,13 @@ title: Получение всех сообщений канала через RS
 author: surbhigupta12
 description: Получение всех сообщений канала с разрешениями RSC
 ms.topic: conceptual
-localization_priority: Normal
-ms.openlocfilehash: 1499bf4c78edd67af531e3fe8fa47ddfe196a923
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.localizationpriority: medium
+ms.openlocfilehash: ea247d7718b76f1e48bbb2c9839606dcb5cbab51
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156049"
 ---
 # <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
@@ -82,7 +82,7 @@ ms.locfileid: "58528903"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Название примера | Описание | C# |Node.js|
+| Название примера | Описание | C # |Node.js|
 |-------------|-------------|------|----|
 |Сообщения канала с разрешениями RSC| Microsoft Teams пример приложения, демонстрирующее, как бот может получать все сообщения канала с RSC без @mentioned.|  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/csharp) |    [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/nodejs) |
 

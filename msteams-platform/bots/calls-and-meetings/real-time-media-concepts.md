@@ -2,14 +2,14 @@
 title: Вызовы мультимедиа в режиме реального времени и встречи с Microsoft Teams
 description: Понимание ключевых понятий в создании бота, который может проводить аудио- и видеозвоки в режиме реального времени, а также собрания в Интернете.
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: аудиопоток видеопотока аудио- и видеосвязи собрания в режиме реального времени мультимедиа-приложений, размещенной в средствах массовой информации, размещенной в средствах массовой информации
-ms.openlocfilehash: 23a4573c39968f3b5c53badc32fd80ecc4dc889087dd8d98253be9d46555919c
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 5c7fce3e8d584781037b5d1169706c9f197e3a96
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57709547"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157571"
 ---
 # <a name="real-time-media-calls-and-meetings-with-microsoft-teams"></a>Вызовы и встречи с Microsoft Teams
 

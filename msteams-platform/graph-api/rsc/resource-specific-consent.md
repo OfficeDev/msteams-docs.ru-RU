@@ -1,17 +1,17 @@
 ---
 title: В Teams
 description: Описывает согласие на конкретные ресурсы в Teams и как использовать его.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: 1dcb12c7e76671867ec632f02177565dee212fc4
-ms.sourcegitcommit: bab08a3a4934f06457a0882bd55ccefc6708682b
+ms.openlocfilehash: 256bdf29079f9a8f3085c63f7e072414c4bd3ce3
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157423"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -147,7 +147,7 @@ ms.locfileid: "58822215"
 |Имя| Тип | Описание|
 |---|---|---|
 |`id` |String |ID приложения AAD. Дополнительные сведения см. [в приложении на портале AAD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal)|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 |`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в ресурсных разрешениях.](resource-specific-consent.md#resource-specific-permissions)|
 
 >

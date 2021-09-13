@@ -4,12 +4,13 @@ description: Узнайте, как перегрузить приложение 
 ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
-ms.openlocfilehash: 93df0d92ce6912888dd1932be3295ca92fa5a967
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.localizationpriority: none
+ms.openlocfilehash: 7648f0f4ae1a3a89e051bea45249855c41befd9d
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156331"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Upload приложение в Microsoft Teams
 
@@ -22,7 +23,7 @@ ms.locfileid: "58345264"
 > [!IMPORTANT]
 > В настоящее время приложения для боковой загрузки доступны в облако сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
 
-## <a name="prerequisites"></a>Требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и проверьте его [на](https://dev.teams.microsoft.com/appvalidation.html) ошибки.
 * [Включить настраиваемую загрузку](~/concepts/build-and-test/prepare-your-o365-tenant.md#enable-custom-teams-apps-and-turn-on-custom-app-uploading) приложения в Teams.

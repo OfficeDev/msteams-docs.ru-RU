@@ -2,14 +2,14 @@
 title: Поддержка единого входа для ботов
 description: Описывает, как получить маркер пользователя. В настоящее время разработчик бота может использовать вход в карточку или службу лазурного бота с поддержкой карты OAuth.
 keywords: маркер, маркер пользователя, поддержка SSO для ботов
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: ffa13e8a9f4014f0ed3e89f32b1eafed74fea76b
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: a3b150ee27eeb387c71191e74b6765dd5a93b148
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156355"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входного знака (SSO) для ботов
 

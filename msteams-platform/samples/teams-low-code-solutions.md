@@ -2,15 +2,15 @@
 title: Создание пользовательских приложений с низким кодом для Microsoft Teams
 author: surbhigupta
 description: Подробные данные о доступных microsoft low и отсутствие решений для кода для Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 4c529a3f46ffb0a57bbd298c01570c4d05074b9bbd4207e20e2f9a8374bfed1d
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 1ad2b98855f822e0329d32701035f045aea8b601
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707800"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156276"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание пользовательских приложений с низким кодом для Microsoft Teams
 

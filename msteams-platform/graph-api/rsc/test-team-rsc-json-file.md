@@ -1,17 +1,17 @@
 ---
 title: Протестировать согласие группы в Teams
 description: Проверка согласия на использование ресурсов для группы в Teams с помощью Postman
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: how-to
 keywords: команды авторизации OAuth SSO AAD rsc postman Graph
-ms.openlocfilehash: d0c44343e023b48455b5db884f1f55ebb5a4b1021174490d760fe761801edb8b
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 28e0b9b75f9776b1f4816010ef97f20cb51768c4
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157503"
 ---
 # <a name="test-team-rsc-postman-collection-json"></a>Тестовая группа RSC Postman коллекция JSON
 

@@ -3,15 +3,15 @@ title: Добавление вкладки Teams в SharePoint
 author: surbhigupta
 description: Развертывание существующей вкладки Teams для SharePoint в качестве SharePoint Framework веб-части.
 keywords: teams tabs sharepoint framework development
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 8410b0734845e6bc6a79fa58a3ee5c89228ef927ee111cdfa10285daff4c062f
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 6561164f177277e76b80e3c33ee57b9383bbd527
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157183"
 ---
 # <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint 
 
@@ -144,5 +144,5 @@ ms.locfileid: "57704525"
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Создание вкладки Microsoft Teams с помощью SharePoint Framework - Обучающий материал](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
-* [Использование страницы одной части приложения в SharePoint Online](/sharepoint/dev/spfx/web-parts/single-part-app-pages)
+* [Использование страниц приложений с одной веб-частью в SharePoint Online](/sharepoint/dev/spfx/web-parts/single-part-app-pages)
 * [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

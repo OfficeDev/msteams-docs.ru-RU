@@ -1,15 +1,15 @@
 ---
 title: Использование модулей задач в Microsoft Teams вкладками
 description: Объясняет, как вызывать модули задач из Teams вкладок с помощью Microsoft Teams SDK клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: how-to
 keywords: модули задач группы вкладок sdk клиента
-ms.openlocfilehash: 3fe0a20d751b1eb08d70385648be1283a9d9b0c32e5849626df4abd36ba5bdce
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 0f6c1569a1aa18921df4635bdbaab505526c1e2e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157451"
 ---
 # <a name="use-task-modules-in-tabs"></a>Использование модулей задач во вкладках
 
@@ -131,7 +131,7 @@ function validateForm() {
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
+|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

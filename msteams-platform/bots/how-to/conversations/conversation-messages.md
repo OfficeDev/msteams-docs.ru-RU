@@ -3,14 +3,14 @@ title: Сообщения в беседах с ботами
 description: Описывает способы беседы с Microsoft Teams ботом
 ms.topic: overview
 ms.author: anclear
-localization_priority: Normal
+ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 49e6af7ef71d0794210e554d8d8b42fe714fbe592d3ca7de43c7996283f54a2c
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: f2cb661ac20d8313101144be275a54a90f4f2db3
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707552"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156348"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -347,7 +347,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Изображения могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.
 
-Укажите высоту и ширину каждого изображения с помощью XML. При разметки размер изображения по умолчанию составляет 256×256. Например:
+Укажите высоту и ширину каждого изображения с помощью XML. При разметки размер изображения по умолчанию составляет 256×256. Например.
 
 * Использование: `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>` .
 * Не используйте: `![Duck on a rock](http://aka.ms/Fo983c)` .
@@ -405,7 +405,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

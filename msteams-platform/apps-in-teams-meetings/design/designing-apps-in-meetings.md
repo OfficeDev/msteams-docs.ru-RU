@@ -3,14 +3,14 @@ title: Проектирование расширения собрания
 author: heath-hamilton
 description: Узнайте, как создать приложения Teams собраниях и получить Microsoft Teams пользовательского интерфейса.
 ms.author: lajanuar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 7da7d6c23f0f66fd73e976fb92d1883f9befd0d2
-ms.sourcegitcommit: 95e0c767ca0f2a51c4a7ca87700ce50b7b154b7c
+ms.openlocfilehash: 8b06dbbe7eba948800e9c35934798d4a6545108e
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58528917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156403"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Проектирование расширения Microsoft Teams собрания
 
@@ -35,13 +35,13 @@ ms.locfileid: "58528917"
 
 ### <a name="add-during-a-meeting"></a>Добавление во время собрания
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 После того как приложение было добавлено (например, на рабочем столе), пользователи могут получить доступ к приложению на собрании, выбрав **Подробнее** :::image type="icon" source="../../assets/icons/teams-client-more.png"::: .
 
 :::image type="content" source="../../assets/images/apps-in-meetings/mobile-add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания на мобильном телефоне." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 На собрании пользователи могут выбрать **дополнительные** добавления :::image type="icon" source="../../assets/icons/teams-client-more.png":::  >  **приложения** и выбрать нужное приложение.
 
@@ -86,11 +86,11 @@ ms.locfileid: "58528917"
 * Создайте элемент опроса, опроса или задачи для участников собрания.
 * Отображение заметок, соответствующих собранию. Например, сведения о лидере продаж.
 
-#### <a name="mobile"></a>Мобильные устройства
+#### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса в вкладке на собрании на мобильном телефоне." border="false":::
 
-#### <a name="desktop"></a>Рабочий стол
+#### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке на собрании." border="false":::
 
@@ -142,11 +142,11 @@ ms.locfileid: "58528917"
 * Отправка утверждений
 * Получать напоминания
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании на мобильном телефоне." border="false":::
 
-### <a name="desktop"></a>Рабочий стол
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании." border="false":::
 
@@ -505,7 +505,7 @@ Teams для темной темы, чтобы уменьшить визуаль
    :::column-end:::
 :::row-end:::
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Настройка приложения для собраний](~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)

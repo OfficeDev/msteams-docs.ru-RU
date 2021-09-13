@@ -3,15 +3,15 @@ title: Установка Moodle LMS
 description: Установка и настройка приложения интеграции Moodle для Microsoft Teams
 keywords: Teams Плагины интеграции приложений Moodle
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: e5f33fa9146d0abb735e9f76aeaecea2dbdd230efe81251f9b7dcaf5700a907a
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: bdf5ea5b6f08c638bd00a69df59ae2e25b76b0ad
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156102"
 ---
 # <a name="install-moodle-lms"></a>Установка Moodle LMS
 
@@ -30,7 +30,7 @@ ms.locfileid: "57706008"
 >
 > Дополнительные данные о возможностях, которые предоставляет эта интеграция, см. в [Microsoft Teams и Moodle.](https://education.microsoft.com/resource/3dffb3a8)
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 
 Ниже следующую предпосылку для установки Moodle:
 
@@ -108,7 +108,7 @@ ms.locfileid: "57706008"
     1. Откройте извлеченную папку.
     1. Щелкните правой кнопкой мыши `Moodle-AzureAD-Script.ps1` по файлу и выберите **Свойства**.
     1. На **вкладке General** в окне Свойства выберите почтовый ящик рядом с атрибутом Security, расположенным в `Unblock` нижней части окна. 
-    1. Нажмите **ОК**.
+    1. Нажмите кнопку **ОК**.
     1. Скопируйте путь каталога в извлеченную папку.
 
 1. Запустите PowerShell в качестве администратора:

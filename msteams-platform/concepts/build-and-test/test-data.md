@@ -2,21 +2,21 @@
 title: Добавление тестовых данных в Microsoft 365 тестовый клиент
 description: Настройка подписки Office 365 разработчика для успешного тестирования Microsoft Teams Apps
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: тестирование групп программ разработчика приложений
 ms.date: 11/01/2019
-ms.openlocfilehash: 44947f39e89ab36760968b72cda81cee4ea9798cbb111021c29ef5c035574b9e
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: fd5f5d1d372a5ddaaa48ed1e971268d28553d5f4
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57707115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157543"
 ---
 # <a name="add-test-data-to-your-microsoft-365-test-tenant"></a>Добавление тестовых данных в Microsoft 365 тестовый клиент
 
 Вы можете протестировать Microsoft Teams с примерными данными с помощью подписки Microsoft 365 разработчика.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 
 1. [Присоединитесь к Microsoft 365 разработчику,](/office/developer-program/office-365-developer-program)если у вас нет тестового клиента.
 2. [Настройка подписки Microsoft 365 разработчика.](/office/developer-program/office-365-developer-program-get-started)
@@ -29,7 +29,7 @@ ms.locfileid: "57707115"
 
 ## <a name="allow-users-to-upload-apps"></a>Разрешить пользователям загружать приложения
 
-По умолчанию только глобальные администраторы или Teams службы могут загружать (побочные нагрузки) приложения в клиента. Вы также можете разрешить пользователям загружать настраиваемые приложения для собственного использования или в группы для тестирования. Дополнительные сведения см. в приложении управление пользовательскими политиками и настройками [приложений в Teams.](https://docs.microsoft.com/microsoftteams/teams-custom-app-policies-and-settings)
+По умолчанию только глобальные администраторы или Teams службы могут загружать (побочные нагрузки) приложения в клиента. Вы также можете разрешить пользователям загружать настраиваемые приложения для собственного использования или в группы для тестирования. Дополнительные сведения см. в приложении управление пользовательскими политиками и настройками [приложений в Teams.](/microsoftteams/teams-custom-app-policies-and-settings)
 
 ## <a name="create-teams-and-channels-for-testing"></a>Создание групп и каналов для тестирования
 

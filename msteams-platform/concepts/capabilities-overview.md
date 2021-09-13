@@ -3,15 +3,15 @@ title: Понимание возможностей приложения
 author: heath-hamilton
 description: Teams возможности приложения
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: e0f7a57fb125450593fd63c412278e1030c51d42
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: a10c991c374392afca0ce793c0c34ea3fc0ca611
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59156330"
 ---
 # <a name="understand-microsoft-teams-app-capabilities"></a>Понимание Microsoft Teams приложений
 
@@ -23,7 +23,7 @@ ms.locfileid: "58345692"
 
 Ваши Teams приложения имеют один или все следующие основные возможности:
 
-* [Tabs](../tabs/what-are-tabs.md)
+* [Вкладки](../tabs/what-are-tabs.md)
 * [Расширения для системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)
 * [Боты](../bots/what-are-bots.md)
 * [Веб-перехватчики и соединительные линии](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)
@@ -45,12 +45,12 @@ ms.locfileid: "58345692"
 
 В следующей таблице представлены Teams и доступность для GCC, GCC-High и DOD:
 
-| Возможности   | GCC | GCC High | DOD |
+| Функции   | GCC | GCC High | DOD |
 |-------------|---------|
 | Teams приложения, как и в приложениях с внутренней разработкой | ✔️ приложение включено, если у него GCC. | ✔️ приложение включено, если оно GCC-High. | ✔️ приложение включено, если у него есть DOD. |
 | Приложения Майкрософт | ✔️ приложения Майкрософт, совместимые с GCC | ✔️ приложений Майкрософт, совместимых с GCC-High | ✔️ приложений Майкрософт, совместимых с DOD |
 | 3p или сторонние приложения | ✔️ доступны сторонние приложения. Отключенный по умолчанию и администратор клиента использует свое усмотрение, чтобы включить его. | ❌ | ❌ |
-| Боты | ✔️ | ❌ | ❌ |
+| боты; | ✔️ | ❌ | ❌ |
 | Настраиваемые приложения или вкладки Lob |  ✔️ | ✔️ | ✔️ |
 | Sideloading apps | ✔️ | ❌ | ❌ |
 | Пользовательские или лоб-боты | ✔️ | ❌ | ❌ |

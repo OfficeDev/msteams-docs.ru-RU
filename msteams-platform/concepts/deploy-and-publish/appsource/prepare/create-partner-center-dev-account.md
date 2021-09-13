@@ -4,12 +4,13 @@ description: Чтобы опубликовать приложение в Microso
 ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: ef506b092a06e0c4668ff36aefeddfbafb93c5d5625a4871ce7082c4c6564fea
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.localizationpriority: none
+ms.openlocfilehash: 9a650326be832a5961a45ac4b7e418f29d073ea0
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57708656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157536"
 ---
 # <a name="create-a-partner-center-developer-account"></a>Создание учетной записи разработчика Центра партнеров
 
@@ -42,7 +43,7 @@ ms.locfileid: "57708656"
 
 | Меню | Вариант |
 | -------   | -------  |
-|Категория| Коммерческий маркетплейс|
+|Category| Коммерческий маркетплейс|
 | Тема | Общая справка по рынку и вопросы о том, как их задать |
 | Subtopic| Надстройка Office |
 
@@ -194,7 +195,7 @@ ms.locfileid: "57708656"
 
 Отправьте сообщение электронной <a href="mailto:teamsubm@microsoft.com">почты teamsubm@microsoft.com</a> со следующими сведениями:
 
-* **Тема строки.** Проблема учетной записи центра партнеров *<your app name>* для .
+* **Subject Line.** Проблема с учетной записью Центра партнеров *для имени приложения.*
 * **Тело электронной почты:**
     * Номер билета поддержки.
     * Ваш ИД продавца.

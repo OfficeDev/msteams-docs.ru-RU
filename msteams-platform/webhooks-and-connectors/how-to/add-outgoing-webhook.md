@@ -3,15 +3,15 @@ title: Создание исходятого веб-окка
 author: laujan
 description: описывает, как создать исходяющий веб-сайт
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: lajanuar
 keywords: teams tabs outgoing webhook actionable message verify webhook
-ms.openlocfilehash: 8dabf78cd27f0f59bd8ce617eb83ded24ecc3dc92478e7233bf8f8bb6a2a4e19
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 2039ffdbc307b266e7bc0f93c1638450a8be9037
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157224"
 ---
 # <a name="create-outgoing-webhook"></a>Создание исходятого веб-сайта
 
@@ -21,7 +21,7 @@ ms.locfileid: "57704319"
 
 В следующей таблице представлены функции и описание исходяющих веб-ок:
 
-| Возможности | Описание |
+| Функции | Описание |
 | ------- | ----------- |
 | Конфигурация scoped| Webhooks имеют область действия на уровне группы. Обязательный процесс создания для каждого добавляет исходяющий веб-ок. |
 | Реактивное сообщение| Пользователи должны использовать @mention для получения сообщений для веб-пользователя. В настоящее время пользователи могут отправлять сообщения об исходяшем веб-окне только в общедоступных каналах, а не в личной или частной области. |
@@ -57,7 +57,7 @@ ms.locfileid: "57704319"
     * **Описание.** Подробная строка, которая отображается в карточке профиля и панели мониторинга приложений на уровне команды.
     * **Изображение профиля:** значок приложения для веб-пользователя, который является необязательным.
 
-1. Нажмите **Создать**. Исходяющий веб-сайт добавляется в канал текущей команды:
+1. Нажмите кнопку **Создать**. Исходяющий веб-сайт добавляется в канал текущей команды:
 
     ![создание исходятого веб-окка](~/assets/images/outgoingwebhook.png)
 
@@ -217,7 +217,7 @@ var responseMsg = JSON.stringify({
 
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Исходяние веб-ок | Образцы для создания пользовательских ботов, которые будут использоваться в Microsoft Teams.| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
+| Исходяние веб-ок | Образцы для создания пользовательских ботов, которые будут использоваться в Microsoft Teams.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 * [Создание входящих веб-ок](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)

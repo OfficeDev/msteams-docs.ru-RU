@@ -2,15 +2,15 @@
 title: Разработка настраиваемой приложения
 author: heath-hamilton
 description: Узнайте, как создать Microsoft Teams приложения. Ресурсы включают набор Microsoft Teams пользовательского интерфейса, лучшие практики, примеры и другие.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: f05bf979a5c0f75cfa009bc5b105fa5233447c20c1f98874221ad2b0761690aa
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 56a988b174739fbbf14f17d5454943a9081358ed
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57705037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157620"
 ---
 # <a name="designing-your-microsoft-teams-app"></a>Проектирование Microsoft Teams приложения
 
@@ -122,7 +122,7 @@ Teams приложения помогают людям добиться боль
 Понимание того, как люди добавляют, используют и Teams приложения, чтобы использовать все возможности в вашем дизайне.
 
 * [Персональные приложения](../../concepts/design/personal-apps.md)
-* [Tabs](../../tabs/design/tabs.md)
+* [Вкладки](../../tabs/design/tabs.md)
 * [Расширения для системы обмена сообщениями](../../messaging-extensions/design/messaging-extension-design.md)
 * [Боты](../../bots/design/bots.md)
 * [Расширения для собраний](../../apps-in-teams-meetings/design/designing-apps-in-meetings.md)

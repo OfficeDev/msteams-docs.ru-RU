@@ -3,14 +3,14 @@ title: Создание меню команд для бота
 author: surbhigupta
 description: Создание командного меню для Microsoft Teams бота
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 978c34a950669386464037850601878a98c191c50710cc62c556f4104ad325e6
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: f29261a1d22f7629ffe17b444b42af6f5df1e792
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57704093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157223"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -18,11 +18,11 @@ ms.locfileid: "57704093"
 
 Чтобы определить набор основных команд, на которые может отвечать бот, можно добавить меню команд со списком команд для бота. Список команд представлен пользователям в области составить сообщение, когда они находятся в беседе с ботом. Выберите команду из списка, чтобы вставить строку команды в поле составить сообщение и выбрать **Отправить**.
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 ![Меню команд бота](./conversations/media/bot-menu-sample.png)
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 ![Меню команды мобильных ботов](./conversations/media/mobile-bot-menu-sample.png)
 

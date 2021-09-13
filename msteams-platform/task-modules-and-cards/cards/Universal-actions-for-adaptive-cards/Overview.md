@@ -2,13 +2,13 @@
 title: Обзор универсальных действий для адаптивных карт
 description: Краткий обзор универсальных действий для адаптивных карт.
 ms.topic: overview
-localization_priority: Normal
-ms.openlocfilehash: 20231245af5a1fe479277558367e6265f4391ff0925dfcf96288912470b09b38
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.localizationpriority: medium
+ms.openlocfilehash: e007f6b1f30e9bb1fe05e48272d598300a7942ae
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57706366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157259"
 ---
 # <a name="universal-actions-for-adaptive-cards"></a>Универсальные действия для адаптивных карточек
 
@@ -51,11 +51,11 @@ ms.locfileid: "57706366"
 
 На следующем изображении показаны универсальные действия для адаптивных карт как для Teams, так и для Outlook:
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="~/assets/images/adaptive-cards/mobile-universal-bots-teams-outlook.jpg" alt-text="Мобильная карта для Teams и Outlook":::
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-teams-outlook.png" alt-text="Та же Teams и Outlook":::
 
@@ -69,11 +69,11 @@ ms.locfileid: "57706366"
 
 На следующем изображении показан пример расширения обмена сообщениями по билетам (ME), на котором различным пользователям в чате показаны различные действия, основанные на требовании:
 
-# <a name="mobile"></a>[Мобильная версия](#tab/mobile)
+# <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
 :::image type="content" source="~/assets/images/adaptive-cards/mobile-universal-bots-incident-management.jpg" alt-text="Представления для мобильных пользователей":::
 
-# <a name="desktop"></a>[Классическая версия](#tab/desktop)
+# <a name="desktop"></a>[Компьютер](#tab/desktop)
 
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-incident-management.png" alt-text="Пользовательские просмотры":::
 

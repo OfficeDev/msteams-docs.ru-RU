@@ -3,14 +3,14 @@ title: Понимание случаев использования прилож
 author: heath-hamilton
 description: При планировании Microsoft Teams сначала необходимо понять, какие проблемы пытается решить приложение.
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 6669492c25cb3701f5c937b3f99e39d411fbc4a4
-ms.sourcegitcommit: 306b6e8cb3aac8bfda10ef3999467a797d64539d
+ms.openlocfilehash: 151e9d24015f45f9085bd07604bc1cc7882266de
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58408546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157615"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -77,7 +77,7 @@ ms.locfileid: "58408546"
 
 Определите, какие новые функции пользователь предпочтет иметь в текущем решении. Если у вас есть дорожная карта для добавления новых функций в приложение, на дизайн и архитектуру будет влиять.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Карта случаев использования](../../concepts/design/map-use-cases.md)

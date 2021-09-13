@@ -4,12 +4,13 @@ author: KirtiPereira
 description: Создание вкладок с помощью адаптивных карт
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 31954b046c550d34155bc7a9ec66cfc61b74ecf4
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.localizationpriority: none
+ms.openlocfilehash: 902b57145a2ba0919e810e6785f077e626949970
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157659"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
@@ -31,7 +32,7 @@ ms.locfileid: "58345574"
 
 :::image type="content" source="../../assets/images/tabs/adaptive-cards-rendered-in-tabs.jpg" alt-text="Пример адаптивной карты, отрисовываемой на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 
@@ -328,7 +329,7 @@ ms.locfileid: "58345574"
 }
 ```
 
-## <a name="authentication"></a>Проверка подлинности
+## <a name="authentication"></a>Аутентификация
 
 В предыдущих разделах вы видели, что большинство парадигм разработки можно расширить из запросов и ответов модулей задач в запросы и ответы на вкладки. При обработке проверки подлинности рабочий процесс вкладки Adaptive Card следует шаблону проверки подлинности для расширений обмена сообщениями. Дополнительные сведения см. в [добавлении проверки подлинности.](../../messaging-extensions/how-to/add-authentication.md)
 

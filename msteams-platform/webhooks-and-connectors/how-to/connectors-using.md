@@ -3,14 +3,14 @@ title: Создание и отправка сообщений
 author: laujan
 description: Сведения о том, как использовать Соединители Office 365 в Microsoft Teams.
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: соединитель teams o365
-ms.openlocfilehash: afef216c7ef6f6813dc1ece807fa917a801687eb060f2711be7df3c2cb42ac12
-ms.sourcegitcommit: 3ab1cbec41b9783a7abba1e0870a67831282c3b5
+ms.openlocfilehash: 6d10a173079fb31db303e98bfaf0800ff048a187
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57703133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157656"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 

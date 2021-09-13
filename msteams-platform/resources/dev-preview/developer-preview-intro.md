@@ -2,14 +2,14 @@
 title: Developer Preview
 description: Описывает функции в Developer Preview Microsoft Teams
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 keywords: Функции разработчика команд предварительного просмотра
-ms.openlocfilehash: 1dc719ae9ead4ef7c7519925b79ca62859ada903
-ms.sourcegitcommit: 2c4c77dc8344f2fab8ed7a3f7155f15f0dd6a5ce
+ms.openlocfilehash: 975dc5b29fce984b9c8321ee9b8fc9fa3d53b822
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58345560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157460"
 ---
 # <a name="public-developer-preview-for-microsoft-teams"></a>Предварительный просмотр общедоступных Microsoft Teams
 

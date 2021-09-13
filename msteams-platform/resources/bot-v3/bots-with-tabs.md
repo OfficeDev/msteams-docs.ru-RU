@@ -3,14 +3,14 @@ title: Объединение ботов с вкладками
 description: Описывает совместное использование вкладок и ботов
 keywords: teams bots tabs development
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 03/15/2018
-ms.openlocfilehash: 3273369ad1122355b792dc3d429c3a4eff7e1d47
-ms.sourcegitcommit: 51e4a1464ea58c254ad6bd0317aca03ebf6bf1f6
+ms.openlocfilehash: 3053dbca3b1e91683564eb902d8b142fd4a30ddb
+ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52566455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59157463"
 ---
 # <a name="combine-bots-with-tabs"></a>Объединение ботов с вкладками
 
