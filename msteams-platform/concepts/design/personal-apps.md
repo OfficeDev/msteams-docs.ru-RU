@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: ae75a79ebc6293b99e7e4db310cfb0545ce5037a
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 2f55661c7941422eb4067023eed46b05d1b757ea
+ms.sourcegitcommit: 72de146d11e81fd9777374dd3915ad290fd07d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157612"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59360720"
 ---
 # <a name="designing-your-personal-app-for-microsoft-teams"></a>Разработка личного приложения для Microsoft Teams
 
@@ -55,7 +55,7 @@ ms.locfileid: "59157612"
 |Счетчик|Описание|
 |----------|-----------|
 |A|**Вкладки.** Обеспечивает навигацию для личного приложения.|
-|1|**веб-просмотр.** Отображает содержимое приложения.|
+|1 |**веб-просмотр.** Отображает содержимое приложения.|
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
@@ -73,7 +73,7 @@ ms.locfileid: "59157612"
 |Счетчик|Описание|
 |----------|-----------|
 |A|**Вкладки.** Обеспечивает навигацию для личного приложения.|
-|1|**iframe:** отображает содержимое приложения.|
+|1 |**iframe:** отображает содержимое приложения.|
 
 ### <a name="design-with-ui-templates-and-advanced-components"></a>Разработка с помощью шаблонов пользовательского интерфейса и расширенных компонентов
 

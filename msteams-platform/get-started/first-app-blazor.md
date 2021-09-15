@@ -6,12 +6,12 @@ ms.author: adhal
 ms.date: 04/27/2021
 ms.topic: quickstart
 ms.localizationpriority: none
-ms.openlocfilehash: 3154e800ab72e610fb2a4fd20756cbbe3e908606
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: d014ba82f8e499b8b38f1dbc13a9ee68ef29f1c9
+ms.sourcegitcommit: 72de146d11e81fd9777374dd3915ad290fd07d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157336"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59360656"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-blazor"></a>Создание и запуск первого Microsoft Teams приложения с помощью Blazor
 
@@ -30,8 +30,6 @@ ms.locfileid: "59157336"
 
 Используйте набор средств Teams для создания своего первого проекта.
 
-# <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/vs)
-
 1. Open Visual Studio 2019.
 
 1. Выберите **Создание нового проекта.**
@@ -46,38 +44,6 @@ ms.locfileid: "59157336"
 
    1. Выберите **Project**  >  **TeamsFx**  >  **Configure для SSO...**.
    1. При запросе впишитесь в свою учетную запись администратора M365.
-
-# <a name="command-line"></a>[Командная строка](#tab/cli)
-
-1. Откройте терминал и выберите каталог, в котором вы хотите создать проект.
-
-1. Выполнить `dotnet new -i` установку шаблона из NuGet:
-
-   ``` bash
-   dotnet new --install Microsoft.TeamsFx.VisualStudio.ProjectTemplates::0.1.43-beta
-   ```
-
-   Это необходимо сделать только в первый раз или при обновлении шаблона. Проверьте [NuGet](https://www.nuget.org/packages/Microsoft.TeamsFx.VisualStudio.ProjectTemplates/) последнюю версию этого пакета.
-
-1. Создание каталога:
-
-   ``` bash
-   mkdir helloworld
-   ```
-
-1. Запуск `dotnet new` для создания нового проекта:
-
-   ``` bash
-   dotnet new teamsapp --shortName my-teams-app --companyName "My Company"
-   ```
-
-1. После строительных лесов настройте проект для Teams развертывания:
-
-   ``` bash
-   teamsfx init
-   ```
-
-   Теперь можно открыть решение в Visual Studio для отладки.
 
 ---
 
@@ -169,7 +135,7 @@ ms.locfileid: "59157336"
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/blazor-vs2019-publish1.png" alt-text="Выберите операцию Публикация в проекте":::
 
-1. В **окне Публикация** выберите **Azure** и selct **Next**.
+1. В **окне Публикация** выберите **Azure** и выберите **Далее**.
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/blazor-vs2019-publish2.png" alt-text="Выберите Azure в качестве цели публикации":::
 
@@ -258,7 +224,7 @@ ms.locfileid: "59157336"
 
 1. Нажмите кнопку **Обновить**.
 
-1. Нажмите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 1. На боковой панели выберите **один вход.**
 
@@ -266,7 +232,7 @@ ms.locfileid: "59157336"
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/devcenter-environments8.png" alt-text="Изменение единого входного URI приложения":::
 
-1. Нажмите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 1. На боковой панели выберите **домены.**
 

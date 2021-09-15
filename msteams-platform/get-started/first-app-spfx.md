@@ -6,18 +6,18 @@ ms.author: zhenyasa
 ms.date: 05/19/2021
 ms.topic: quickstart
 ms.localizationpriority: none
-ms.openlocfilehash: 8197f92e27889c00eae7a75860301890522e5bab
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 36aa779db0c45ab3724673cb0030a97cceef6a78
+ms.sourcegitcommit: 72de146d11e81fd9777374dd3915ad290fd07d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157331"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59360816"
 ---
 # <a name="build-and-run-your-first-microsoft-teams-app-with-sharepoint-framework-spfx"></a>Сборка и запуск первого Microsoft Teams с помощью SharePoint Framework (SPFx)
 
 В этом руководстве вы узнаете, как создать новое приложение Microsoft Teams в SharePoint Framework SPFx, которое реализует простое личное приложение. Например, личное *приложение включает* набор вкладок для индивидуального использования. Во время руководства вы узнаете о структуре приложения Teams, локальном запуске приложения и развертывании приложения для SharePoint.
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Прежде чем начать
 
 Убедитесь, что среда разработки настроена путем установки необходимых условий.
 
@@ -105,11 +105,16 @@ teamsfx new
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/app-project-files-spfx.png" alt-text="Снимок экрана: файлы проектов приложения для личного приложения в Visual Studio Code.":::
 
-Набор средств автоматически формирует шаблоны в каталоге проекта на основе возможностей, добавленных во время установки. Набор средств Teams сохраняет свое состояние для вашего приложения в каталоге `.fx`.  Среди других элементов в этом каталоге находятся:
+Набор средств автоматически формирует шаблоны в каталоге проекта на основе возможностей, добавленных во время установки. Набор средств Teams сохраняет свое состояние для вашего приложения в каталоге `.fx`. 
 
-- Значки приложений, хранимые как PNG-файлы в `color.png` и `outline.png`.
-- Манифест приложения для публикации на портале разработчиков для Teams хранится в `manifest.source.json` .
-- Параметры, выбранные при создании проекта, хранятся в `settings.json`.
+- Параметры, выбранные при создании проекта, хранятся в `.fx/settings.json`.
+- Состояние проекта хранится в `.fx/env.*.json` .
+
+Кроме того Teams сведения о приложении хранятся в `appPackage` каталоге.
+
+- Значки приложений, хранимые как PNG-файлы в `appPackage/color.png` и `appPackage/outline.png`.
+- Манифест приложения для публикации на портале разработчиков для Teams хранится в `appPackage/manifest.source.json` .
+
 
 Так как вы выбрали проект SPFx Webpart, к вашему пользовательскому интерфейсу имеют отношение следующие файлы:
 

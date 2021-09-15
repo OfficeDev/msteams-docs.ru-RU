@@ -6,12 +6,12 @@ ms.author: adhal
 ms.date: 05/20/2021
 ms.topic: quickstart
 ms.localizationpriority: none
-ms.openlocfilehash: 52352d23533b80c9df5422f87e58d318987b6e95
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 39659b6c58b61f8b8880bd277effba1c8f9d115e
+ms.sourcegitcommit: 72de146d11e81fd9777374dd3915ad290fd07d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157328"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59360687"
 ---
 # <a name="build-and-run-your-first-messaging-extension-for-microsoft-teams"></a>Создание и запуск первого расширения для сообщений для Microsoft Teams
 
@@ -22,7 +22,7 @@ ms.locfileid: "59157328"
 - [Команды поиска](../messaging-extensions/how-to/search-commands/define-search-command.md) позволяют выполнять поиск во внешних системах и вставлять результаты поиска в сообщение в виде карточки.
 - [Команды действий](../messaging-extensions/how-to/action-commands/define-action-command.md) позволяют предоставлять пользователям модальное всплывающее окно для сбора или отображения информации, а затем обрабатывать их действия и отправлять информацию обратно в Teams.
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Прежде чем начать
 
 Убедитесь, что среда разработки настроена путем установки необходимых условий.
 
@@ -122,11 +122,15 @@ teamsfx new
 
 1. Выберите **Добавить,** чтобы добавить приложение в свою учетную запись.
 
-   После загрузки приложения вы будете доставлены непосредственно в диалоговое окно поиска:
+   После загрузки приложения можно попробовать использовать пример функциональных возможностей: можно запустить расширение сообщения с трех точек в области композиции и попробовать пакеты поиска npm из панели поиска.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/msgextn-completed-app.png" alt-text="Принцип работы расширения для сообщений на основе поиска":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/search-message-extension.png" alt-text="Принцип работы расширения для сообщений на основе поиска":::
+   
+   Вы также можете попробовать @ экземпляр расширения сообщения из строки поиска в верхней строке Teams и поиска пакета npm.
+    :::image type="content" source="../assets/images/teams-toolkit-v2/msgext-teams-search-bar.png" alt-text="Принцип работы расширения для сообщений на основе поиска":::
 
-   Введите текст в поле поиска и выберите один из вариантов.  В поле ввода будет добавлена адаптивная карточка.
+   Введите текст в поле поиска, затем выберите один из параметров, можно создать и отправить адаптивные карточки результатов поиска.
+    :::image type="content" source="../assets/images/teams-toolkit-v2/msgext-adptive-card.png" alt-text="Принцип работы расширения для сообщений на основе поиска":::
 
 <!-- markdownlint-disable MD033 -->
 <details>

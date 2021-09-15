@@ -1,7 +1,7 @@
 ### <a name="use-app-studio-to-update-the-app-package"></a>Используйте App Studio для обновления пакета приложений
 
 > [!TIP]
-> **Попробуйте портал разработчика:** App Studio вскоре будет отвягот. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков.](https://dev.teams.microsoft.com/)
+> **Попробуйте портал разработчика**: App Studio эволюционировала. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков.](https://dev.teams.microsoft.com/)
 
 App Studio — это Teams приложение, которое можно установить из Teams магазина. Это упрощает создание и регистрацию приложения.
 
@@ -20,9 +20,9 @@ App Studio — это Teams приложение, которое можно ус
     <img  width="450px" alt="App Studio" src="~/assets/images/get-started/AppStudio.png"/>
 
 
-    Пример поставляется с собственным манифестом и предназначен для создания пакета приложений при построении проекта. На сайте .NET manifest.jsфайл может быть расположен в Visual Studio в Манифесте ```Microsoft.Teams.Samples.HelloWorld.Web``` под . В Node.js это делается путем ввода в строку команды в корневом `gulp` каталоге проекта.
+    Пример поставляется с собственным манифестом и предназначен для создания пакета приложений при построении проекта. В .NET файл manifest.json может быть расположен в Visual Studio в Манифесте ```Microsoft.Teams.Samples.HelloWorld.Web``` под . В Node.js это делается путем ввода в строку команды в корневом `gulp` каталоге проекта.
 
-     В Visual Studio, manifest.jsфайл находится в соответствии с **манифестом** `Microsoft.Teams.Samples.HelloWorld.Web` в . Этот шаг описывается следующим образом:  
+     В Visual Studio файл manifest.json находится в соответствии с **Манифестом** `Microsoft.Teams.Samples.HelloWorld.Web` в . Этот шаг описывается следующим образом:  
     
     <img  width="450px" alt="Build the app package on .NET with Visual Studio" src="~/assets/images/get-started/app-package-on-.NET-with-Visual-Studio.png"/>
     
