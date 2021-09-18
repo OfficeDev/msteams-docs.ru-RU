@@ -4,12 +4,12 @@ description: В этой статье описывается, как получ�
 ms.localizationpriority: medium
 ms.topic: how-to
 keywords: пользовательский контекст вкладок teams
-ms.openlocfilehash: d0cdb107ef57c705589e225f1441a48caf427e5d
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 187e3dda7aacee2ddaaaca6b5c5dbc8686ac5575
+ms.sourcegitcommit: 762cd3ed9054c6c19825498fc0edd50cd99634da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157660"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59439699"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -137,12 +137,12 @@ ms.locfileid: "59157660"
 
 ## <a name="see-also"></a>См. также
 
-* [Рекомендации по разработке вкладок](~/tabs/how-to/build-adaptive-card-tabs.md)
+* [Рекомендации по разработке вкладок](../../tabs/design/tabs.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
