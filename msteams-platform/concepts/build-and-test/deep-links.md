@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: deeplink teams deep link
-ms.openlocfilehash: e61f926e36d379cb6a69816922cca7a8f3a3d17f
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: a9d3ec021de52f4ae9d5b17eab9306d1c7974280
+ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157464"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59475778"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -219,6 +219,9 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
 
+> [!NOTE]
+> Параметры поиска не поддерживают сигнал `+` на месте белого пространства ( ` ` ). Убедитесь, что код кодов uri возвращается для `%20` пробелов, например, `?subject=test%20subject` хорош, но `?subject=test+subject` является плохим.
+
 Параметры запроса:
 
 * `attendees`. Необязательный список пользовательских ИД, разделенных запятой, представляющих участников собрания. Пользователь, исполняющий действие, является организатором собрания. В настоящее время поле ID пользователя поддерживает только Azure AD UserPrincipalName, как правило, адрес электронной почты.
@@ -257,7 +260,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Название примера | Описание | C # |Node.js|
+| Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
 |Deep Link consuming Subentity ID  |Microsoft Teams пример приложения для демонстрации deeplink от бот-чата до вкладки, потребляя ID subentity.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
 

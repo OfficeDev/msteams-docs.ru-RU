@@ -4,12 +4,12 @@ description: Описание карт и их использования в б�
 ms.localizationpriority: medium
 keywords: соединители боты-карты обмена сообщениями
 ms.topic: overview
-ms.openlocfilehash: 345e37a9af00c2f3300cc76f4b44b83cc47d0392
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 50e8aa690d4de4dc5464a7e42dbc017e87afe35a
+ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157579"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59475799"
 ---
 # <a name="cards"></a>Карточки
 
@@ -58,16 +58,20 @@ Teams использует карты в трех разных местах:
 
 > [!NOTE]
 > * Все элементы схемы адаптивной карты, за `Action.Submit` исключением, полностью поддерживаются.
-> * Поддерживаемые действия [**Action.OpenURL,**](https://adaptivecards.io/explorer/Action.OpenUrl.html) [**Action.ShowCard,**](https://adaptivecards.io/explorer/Action.ShowCard.html) [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html)иAction.Exe [**мило**](/adaptive-cards/authoring-cards/universal-action-model#actionexecute).
+> * Поддерживаемые [**действия: Action.OpenURL,**](https://adaptivecards.io/explorer/Action.OpenUrl.html) [**Action.ShowCard,**](https://adaptivecards.io/explorer/Action.ShowCard.html) [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html)и [**Action.Execute.**](/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
 
 Адаптивные карты с входящие веб-окки позволяют использовать богатые и гибкие возможности адаптивных карт. Он отправляет данные с помощью входящих веб-Teams из веб-службы.
+
+## <a name="support-for-aad-object-id-and-upn-in-user-mention"></a>Поддержка AAD Object ID и UPN в упоминаемом пользователем 
+
+Боты с адаптивными картами поддерживают имена пользователей, например AAD Object ID и имя принципа пользователя (UPN) в дополнение к существующим удостоверениям. Входящие веб-оки начинают поддерживать упоминание пользователей в адаптивной карте с AAD Object ID и UPN.
 
 ## <a name="see-also"></a>См. также
 
 * [Формат карты в Teams](~/task-modules-and-cards/cards/cards-format.md)
 * [Дизайн адаптивных карт](~/task-modules-and-cards/cards/design-effective-cards.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Типы карточек](~/task-modules-and-cards/cards/cards-reference.md)

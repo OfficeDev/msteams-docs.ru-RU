@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: 40d5659251b1faff087c6ee6458800ede2a5c840
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 9bcb5eb42cc22185684933caae210c5630414a4c
+ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157447"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59475771"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
@@ -54,3 +54,4 @@ OAuthPrompt платформы Azure Bot Framework упрощает провер
 Независимо от потока проверки подлинности приложения настройте поставщика удостоверений для связи с Teams приложением. Большинство примеров и поуча-ов в основном связаны с использованием AAD в качестве поставщика удостоверений. Однако концепции применяются независимо от поставщика удостоверений.
 
 Дополнительные сведения см. [в примере настройки поставщика удостоверений.](~/concepts/authentication/configure-identity-provider.md)
+
