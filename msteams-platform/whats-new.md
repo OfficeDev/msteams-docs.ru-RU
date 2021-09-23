@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: команды, новые возможности
-ms.openlocfilehash: 4d664213b3a2a62a6ac99ef5f93ca276bfed9268
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: 7bc3aebbe0acdbef410beb18041d1ac998216ebe
+ms.sourcegitcommit: e1e37cfbecba3a6b382f19379996cc423cd99dac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475743"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59485770"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -30,7 +30,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
-|09/21/2021|Teams поддерживает AAD Object ID и UPN в упоминаниях пользователей для ботов и входящих веб-ок. | [Форматирование карточек в Microsoft Teams](task-modules-and-cards/cards/cards-format.md)|
+|09/21/2021|Teams поддерживает AAD Object ID и UPN в упоминаниях пользователей для ботов и входящих веб-ок. |[AAD Object ID и UPN в упоминаемом пользователем](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown), [Cards- Обзор](task-modules-and-cards/what-are-cards.md#support-for-aad-object-id-and-upn-in-user-mention)|
 |08/16/2021| Поддержка проверки входных данных для адаптивных карт (v1.3 для всех возможностей) и универсальных действий (v1.4 для карт, отправленных ботом). |[Проверка ввода](/adaptive-cards/authoring-cards/input-validation), [универсальные действия для адаптивных карт v1.4](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
 |08/09/2021|Этап собрания теперь доступен в ga.|[Включить и настроить приложения для Teams собраний](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)|
 |08/30/2021| Функция Custom Together Mode совмещает участников в одну виртуальную сцену и помещает их видеопотоки в заранее. | [Настраиваемые сцены режима "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md) |
