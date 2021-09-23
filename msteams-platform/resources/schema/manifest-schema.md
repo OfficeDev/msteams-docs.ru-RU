@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: Схема манифеста команд
-ms.openlocfilehash: 07b2c969877dc61c8678bb89099d6275f2cf367c
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: d1fa68cc4ae69e8a35c0d812192bb5c15a7cf130
+ms.sourcegitcommit: 211f2eaa05494a11b8c2a050d7f1a9ca1c1c78a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475763"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491683"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справка: схема манифеста для Microsoft Teams
 
@@ -193,7 +193,7 @@ ms.locfileid: "59475763"
           "context": [
             "message"
           ],
-          "description": "Command Description; e.g., Search for a customer",
+          "description": "Command Description; e.g., Add a customer",
           "initialRun": true,
           "fetchTask": true,
           "parameters": [
@@ -204,14 +204,26 @@ ms.locfileid: "59475763"
               "inputType": "text"
             }
           ]
+        },
+         {
+          "id": "exampleCmd3",
+          "title": "Example Command 3",
+          "type": "action",
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "description": "Command Description; e.g., Add a customer",
+          "fetchTask": false,
+          "taskInfo": {
+            "title": "Initial dialog title",
+            "width": "Dialog width",
+            "height": "Dialog height",
+            "url": "Initial webview URL"
+          }
         }
       ],
-      "taskInfo": {
-        "title": "Initial dialog title",
-        "width": "Dialog width",
-        "height": "Dialog height",
-        "url": "Initial webview URL"
-      },
       "messageHandlers": [
         {
           "type": "link",
@@ -225,7 +237,7 @@ ms.locfileid: "59475763"
       ]
     }
   ],
-  "permissions": [
+"permissions": [
     "identity",
     "messageTeamMembers"
   ],

@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: f2cb661ac20d8313101144be275a54a90f4f2db3
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: b46ce611ca09c4d5883cc66e0078291422e2b65a
+ms.sourcegitcommit: 211f2eaa05494a11b8c2a050d7f1a9ca1c1c78a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156348"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491676"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -90,7 +90,13 @@ async def on_message_activity(self, turn_context: TurnContext):
         "name": "Teams TestBot"
     },
     "textFormat": "plain",
-    "text": "Hello Teams TestBot",
+    "text": "Hello Teams TestBot.Sending bold-italic rich text",
+    "attachments": [
+      {
+            "contentType": "text/html",
+            "content": "<div><div>Hello Teams TestBot. Sending <strong>bold</strong>-<em>italic</em> rich text.</div>\n</div>"
+      } 
+    ],
     "entities": [
       { 
         "locale": "en-US",
@@ -250,7 +256,7 @@ async def on_members_added_activity(
 
 ## <a name="message-content"></a>Содержимое сообщения
 
-| Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
+| Формат    | От пользователя к боту | От бота к пользователю | Примечания.                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.  |
@@ -347,7 +353,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Изображения могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.
 
-Укажите высоту и ширину каждого изображения с помощью XML. При разметки размер изображения по умолчанию составляет 256×256. Например.
+Укажите высоту и ширину каждого изображения с помощью XML. При разметки размер изображения по умолчанию составляет 256×256. Пример:
 
 * Использование: `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>` .
 * Не используйте: `![Duck on a rock](http://aka.ms/Fo983c)` .
