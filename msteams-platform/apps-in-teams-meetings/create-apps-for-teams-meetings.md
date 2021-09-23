@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 0ba25480dc253f0ef757411a8e658b547b4090ef
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: e3392e92965d03c33cd07ae5b65d607d3f86aa5d
+ms.sourcegitcommit: d6917d41233a530dc5fd564a67d24731edeb50f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157180"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59487482"
 ---
 # <a name="prerequisites-for-apps-in-teams-meetings"></a>Необходимые условия для приложений в собраниях Teams
 
@@ -73,7 +73,7 @@ ms.locfileid: "59157180"
 > * Не кэшить роли участников, так как организатор собрания может изменить роли в любое время.
 > * Teams в настоящее время не поддерживает большие списки рассылки или размеры реестра более 350 участников `GetParticipant` для API.
 
-API позволяет боту получать сведения о `GetParticipant` участниках, встречая ID и ID участника. API включает параметры запросов, примеры и коды ответа.
+API позволяет боту получать сведения о `GetParticipant` участниках, встречая ID и ID участника. API включает параметры запросов, примеры и коды ответа. API поддерживается как в закрытых запланированных, так и повторяющихся собраниях, а также в запланированных или повторяющихся собраниях канала. 
 
 #### <a name="query-parameters"></a>Параметры запроса
 
@@ -81,8 +81,8 @@ API `GetParticipant` включает следующие параметры за
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| String | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
 |**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
 
 #### <a name="example"></a>Пример
@@ -281,7 +281,7 @@ API `Meeting Details` включает в себя следующий парам
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
 #### <a name="example"></a>Пример
 
@@ -507,7 +507,7 @@ meetingEventInfoObject);
 
 * Ознакомьтесь с `TurnContext` объектом, доступным с помощью SDK-бота. Объект `Activity` содержит `TurnContext` полезной нагрузки с фактическим временем начала и окончания. Для проведения собраний в режиме реального времени требуется зарегистрированный бот-ИД с Teams платформы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [Рекомендации по проектированию диалогов на собрании](design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
