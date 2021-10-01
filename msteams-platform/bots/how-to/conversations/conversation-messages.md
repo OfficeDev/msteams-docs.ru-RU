@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: b46ce611ca09c4d5883cc66e0078291422e2b65a
-ms.sourcegitcommit: 211f2eaa05494a11b8c2a050d7f1a9ca1c1c78a8
+ms.openlocfilehash: 8ef68f351e8d0d7ee39dfc5ae3816337fc592920
+ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491676"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60017333"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -167,43 +167,23 @@ async def on_members_added_activity(
 
 ```json
 {
-    "text": "hi",
-    "textFormat": "plain",
     "type": "message",
-    "timestamp": "2019-10-31T20:57:27.2347285Z",
-    "localTimestamp": "2019-10-31T13:57:27.2347285-07:00",
-    "id": "1572555447214",
-    "channelId": "msteams",
-    "serviceUrl": "https://smba.trafficmanager.net/amer/",
     "from": {
-        "id": "29:1Xv-kvy4dKirR0rZfSF_kAVUzotoT1SXuEzkC9XGkuZng8YBw8qyu5uh4128fQRjlGgvEiRLx-0XP4KYMwcgdZw",
-        "name": "Jane Doe",
-        "aadObjectId": "df486eae-88fd-42a5-b45e-c581588186db"
+        "id": "28:c9e8c047-2a34-40a1-b28a-b162d5f5327c",
+        "name": "Teams TestBot"
     },
     "conversation": {
-        "conversationType": "personal",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "id": "a:1oAmWTVBBe9E0JrpGxauqNyx4CCE_iQf2ZuWon9D42722Fon3wYIpbhgbRChE3wgVS1Gwl9zS1pZy4FSu6-x1vGEq5KBQK-EbBgyPyeP_C-lbLBY3vxnGk9m9D_282jbg"
+        "id": "a:17I0kl8EkpE1O9PH5TWrzrLNwnWWcfrU7QZjKR0WSfOpzbfcAg2IaydGElSo10tVr4C7Fc6GtieTJX663WuJCc1uA83n4CSrHSgGBj5XNYLcVlJAs2ZX8DbYBPck201w-",
+        "name": "Convo1"
+   },
+   "recipient": {
+        "id": "29:1XJKJMvc5GBtc2JwZq0oj8tHZmzrQgFmB25ATiQWA85gQtHieVkKilBZ9XHoq9j7Zaqt7CZ-NJWi7me2kHTL3Bw",
+        "name": "Megan Bowen"
     },
-    "recipient": {
-        "id": "28:5baea8d1-d4ea-43a1-b101-882f4c8d9cb4",
-        "name": "Imported Bot"
-    },
-    "entities": [
-        {
-            "locale": "en-US",
-            "country": "US",
-            "platform": "Windows",
-            "type": "clientInfo"
-        }
-    ],
-    "channelData": {
-        "tenant": {
-            "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-        }
-    },
-    "locale": "en-US"
+    "text": "My bot's reply",
+    "replyToId": "1632474074231"
 }
+
 ```
 
 ---
@@ -256,7 +236,7 @@ async def on_members_added_activity(
 
 ## <a name="message-content"></a>Содержимое сообщения
 
-| Формат    | От пользователя к боту | От бота к пользователю | Примечания.                                                                                   |
+| Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.  |
@@ -353,7 +333,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Изображения могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.
 
-Укажите высоту и ширину каждого изображения с помощью XML. При разметки размер изображения по умолчанию составляет 256×256. Пример:
+Укажите высоту и ширину каждого изображения с помощью XML. При разметки размер изображения по умолчанию составляет 256×256. Например:
 
 * Использование: `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>` .
 * Не используйте: `![Duck on a rock](http://aka.ms/Fo983c)` .
@@ -396,7 +376,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Ниже печатаются коды состояния и их код ошибок и значения сообщений:
 
-| Код состояния | Код ошибки и значения сообщений | Описание |
+| Код состояния | Код ошибки и значения сообщений | Description |
 |----------------|-----------------|-----------------|
 | 403 | **Код:**`ConversationBlockedByUser` <br/> **Сообщение.** Пользователь заблокировал беседу с ботом. | Пользователь заблокировал бот в чате 1:1 или канале с помощью параметров модерации. |
 | 403 | **Код:**`BotNotInConversationRoster` <br/> **Сообщение.** Бот не является частью реестра беседы. | Бот не является частью беседы. |
@@ -419,7 +399,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 - [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Меню команд бота](~/bots/how-to/create-a-bot-commands-menu.md)

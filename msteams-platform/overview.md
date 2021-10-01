@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: e35393a2696ace22068e34566c3dad4a3109bd73
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 6fce2deb5dc482a1f348739e6090d4623996df27
+ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157504"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60017340"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
@@ -60,7 +60,7 @@ Teams приложения — это сочетание [возможносте
 
 :::row-end:::
 
-### <a name="bots"></a>боты;
+### <a name="bots"></a>Боты
 
 :::row:::
    :::column span="1":::
@@ -77,7 +77,7 @@ Teams приложения — это сочетание [возможносте
 
 :::row-end:::
 
-### <a name="messaging-extensions"></a>расширения для обмена сообщениями;
+### <a name="messaging-extensions"></a>Расширения для обмена сообщениями
 
 :::row:::
 
@@ -208,13 +208,6 @@ Teams приложения — это сочетание [возможносте
 
    :::column-end:::
 :::row-end:::
-
-## <a name="integrate-teams-in-your-external-app"></a>Интеграция Teams во внешнем приложении
-На этой странице основное внимание уделяется встраив собственный опыт в Microsoft Teams путем создания Teams приложений. Если вы хотите  изменить эту модель и интегрировать Teams или другие возможности связи в собственный внешний опыт приложения, см. в [примере Azure Communication Services.](/azure/communication-services/overview) Службы связи Azure — это облачные службы с API REST и SDKs клиентской библиотеки, которые помогают интегрировать связь в собственные настраиваемые приложения. С помощью библиотеки пользовательского интерфейса можно в Teams или React веб-компоненты для вызова и [чата.](https://azure.github.io/communication-ui-library/)
-
-Приложения Azure Communication Services могут использовать [](/azure/communication-services/concepts/teams-interop) функции предварительного просмотра для взаимодействия с Teams и позволяют настраиваемой приложению анонимно присоединяться к собраниям Teams. Например, можно интегрировать видеозвоз в приложение мобильного банкинга и разрешить конечным пользователям практически встречаться с сотрудниками банка с помощью Microsoft Teams. 
-
-Вы также можете интегрировать Microsoft 365 для создания внешних приложений, в которые встраивалось видео и PSTN, вызывающего от имени Teams пользователя. Если вы использовали [Skype для бизнеса SDKs](/skype-sdk/appsdk/skypeappsdk) в прошлом, эти возможности в составе служб связи Azure рекомендуется использовать в качестве замены.
 
 ## <a name="see-also"></a>См. также
 

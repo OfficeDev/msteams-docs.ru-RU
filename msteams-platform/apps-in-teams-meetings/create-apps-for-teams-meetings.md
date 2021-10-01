@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: e3392e92965d03c33cd07ae5b65d607d3f86aa5d
-ms.sourcegitcommit: d6917d41233a530dc5fd564a67d24731edeb50f1
+ms.openlocfilehash: 56219323f6106619a9dd4f1b26289ecf86d297f3
+ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59487482"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60017319"
 ---
 # <a name="prerequisites-for-apps-in-teams-meetings"></a>Необходимые условия для приложений в собраниях Teams
 
@@ -48,7 +48,7 @@ ms.locfileid: "59487482"
 
 В следующей таблице приводится список этих API:
 
-|API|Описание|Запрос|Источник|
+|API|Description|Запрос|Источник|
 |---|---|----|---|
 |**GetUserContext**| Этот API позволяет получать контекстную информацию для отображения соответствующего контента на вкладке Teams. |_**microsoftTeams.getContext() => { /*...* / } )**_|Microsoft Teams Клиентская SDK|
 |**GetParticipant**| Этот API позволяет боту получать сведения о участниках, встречая ID и ID участника. |**GET** _**/v1/meetings/{meetingId}/participants/{participantsId}?tenantId={tenantId}**_ |Microsoft Bot Framework SDK|
@@ -163,7 +163,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 
 API `GetParticipant` возвращает следующие коды ответа:
 
-|Код ответа|Описание|
+|Код ответа|Description|
 |---|---|
 | **403** | Сведения о участниках не делятся с приложением. Если приложение не установлено на собрании, оно вызывает наиболее распространенный ответ на ошибку 403. Если администратор клиента отключает или блокирует приложение во время переноса веб-сайта в прямом эфире, запускается ответ на ошибку 403. |
 | **200** | Данные участника успешно извлекаются.|
@@ -246,7 +246,7 @@ POST /v3/conversations/{conversationId}/activities
 
 API `NotificationSignal` включает в себя следующие коды ответа:
 
-|Код ответа|Описание|
+|Код ответа|Description|
 |---|---|
 | **201** | Успешно отправляется действие с сигналом. |
 | **401** | Приложение отвечает недействительным маркером. |
@@ -290,17 +290,8 @@ API `Meeting Details` содержит следующие примеры:
 # <a name="c"></a>[C#](#tab/dotnet)
 
 ```csharp
-var connectorClient = turnContext.TurnState.Get<IConnectorClient>();
-var creds = connectorClient.Credentials as AppCredentials;
-var bearerToken = await creds.GetTokenAsync().ConfigureAwait(false);
-var request = new HttpRequestMessage(HttpMethod.Get, new Uri(new Uri(connectorClient.BaseUri.OriginalString), $"v1/meetings/{meetingId}"));
-request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
-HttpResponseMessage response = await (connectorClient as ServiceClient<ConnectorClient>).HttpClient.SendAsync(request, CancellationToken.None).ConfigureAwait(false);
-string content;
-if (response.Content != null)
-{
-    content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-}
+MeetingInfo result = await TeamsInfo.GetMeetingInfoAsync(turnContext);
+await turnContext.SendActivityAsync(JsonConvert.SerializeObject(result));
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -479,24 +470,27 @@ GET /v1/meetings/{meetingId}
 > * Не используйте ИД беседы в качестве ИД собрания.     
 > * Не используйте ID собрания из полезной нагрузки на события `turncontext.activity.value` собраний. 
       
-В следующем коде показано, как захватить метаданные собрания , , , и от `MeetingType` начала и окончания собрания `Title` `Id` `JoinUrl` `StartTime` `EndTime` события:
+В следующем коде показано, как захватить метаданные собрания, которое является `MeetingType` , , , , , и из события начала и конца `Title` `Id` `JoinUrl` `StartTime` `EndTime` собрания:
+
+Событие "Начало собрания"
 
 ```csharp
 protected override async Task OnEventActivityAsync(
 ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
 {
-    // Event Name is either 'application/vnd.microsoft.meetingStart' or 'application/vnd.microsoft.meetingEnd'
-    var meetingEventName = turnContext.Activity.Name;
-    // Value contains meeting information (ex: meeting type, start time, etc).
-    var meetingEventInfo = turnContext.Activity.Value as JObject; 
-    var meetingEventInfoObject =
-meetingEventInfo.ToObject<MeetingStartEndEventValue>();
-    // Create a very simple adaptive card with meeting information
-var attachmentCard = createMeetingStartOrEndEventAttachment(meetingEventName,
-meetingEventInfoObject);
-    await turnContext.SendActivityAsync(MessageFactory.Attachment(attachmentCard));
+    await turnContext.SendActivityAsync(JsonConvert.SerializeObject(meeting));
 }
 ```
+
+Событие конца собрания
+
+```csharp
+protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meeting, ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
+{
+    await turnContext.SendActivityAsync(JsonConvert.SerializeObject(meeting));
+}
+```
+
 * Есть `meetingId` `userId` параметры, и в `tenantId` собрании URL-адрес API. Параметры доступны в рамках Teams клиентской SDK и бот-активности. Кроме того, вы можете получить достоверную информацию для идентификации пользователя и идентификации клиента с помощью вкладки [SSO проверки подлинности.](../tabs/how-to/authentication/auth-aad-sso.md)
 
 * Регистрация ботов и ID в API для `GetParticipant` создания маркеров auth. Дополнительные сведения см. в [сведениях о регистрации ботов и ID.](../build-your-first-app/build-bot.md)
@@ -507,13 +501,13 @@ meetingEventInfoObject);
 
 * Ознакомьтесь с `TurnContext` объектом, доступным с помощью SDK-бота. Объект `Activity` содержит `TurnContext` полезной нагрузки с фактическим временем начала и окончания. Для проведения собраний в режиме реального времени требуется зарегистрированный бот-ИД с Teams платформы.
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 * [Рекомендации по проектированию диалогов на собрании](design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для Teams собраний](teams-apps-in-meetings.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Справочные материалы по API приложений для собраний](API-references.md)

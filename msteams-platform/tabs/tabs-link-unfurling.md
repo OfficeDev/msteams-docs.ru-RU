@@ -5,12 +5,12 @@ description: Как развязать ссылку, открыть предст
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: 4444830d47345908445d62bdd276e8706a0c1a03
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: cc77667a8782f2f519d6dc3e6af74949a9dcbed2
+ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157491"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60017305"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
@@ -104,10 +104,10 @@ ms.locfileid: "59157491"
 
 ### <a name="syntax"></a>Синтаксис
 
-Ниже приводится синтаксис deeplink:  
- 
-https://teams.microsoft.com/l/stage/{appId}/0?context={"contentUrl":"[contentUrl]","websiteUrl":"[websiteUrl]","name":"[name]}.
+Ниже приводится синтаксис deeplink: 
 
+https://teams.microsoft.com/l/stage/{appId}/0?context={\"contentUrl \" : \" "[contentUrl]", \" \" websiteUrl \" : \" "[websiteUrl]", \" name : \" \" \" Contoso \" }
+ 
 ### <a name="examples"></a>Примеры
 
 Когда пользователь вводит URL-адрес, он будет развернут в адаптивную карту.
@@ -132,7 +132,7 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 | Имя свойства | Тип | Количество символов | Описание |
 |:-----------|:---------|:------------|:-----------------------|
-| `entityId` | Строка | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
+| `entityId` | String | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
 | `name` | String | 128 | Это свойство — отображаемая вкладки в интерфейсе канала. Это поле является необязательным.|
 | `contentUrl` | String | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте. Это поле обязательно для заполнения.|
 | `websiteUrl?` | String | 2048 | Это свойство является https://, на который нужно указать, если пользователь выбирает для просмотра в браузере. Это поле обязательно для заполнения.|
@@ -140,7 +140,7 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 ## <a name="code-sample"></a>Пример кода
 
-| Название примера | Описание | C # |Node.js|
+| Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
 |Вкладка в представлении сцены |Microsoft Teams пример приложения вкладки для демонстрации вкладки в представлении сцены.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
     
@@ -152,7 +152,7 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
