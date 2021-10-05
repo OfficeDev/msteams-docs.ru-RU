@@ -5,12 +5,12 @@ description: Обзор команд действий расширения об�
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: d9e2e482ed15c99613bbd786ab685a0b388de502
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 8049100e8b72d1e1b7145f8427c6f7e94b5e8af6
+ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156036"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60096669"
 ---
 # <a name="define-messaging-extension-action-commands"></a>Определение команд действий расширения обмена сообщениями
 
@@ -66,6 +66,13 @@ ms.locfileid: "59156036"
 
 ### <a name="create-an-action-command-using-app-studio"></a>Создание команды действий с помощью App Studio
 
+Вы можете создать команду действий с помощью ** App Studio** или **портала разработчика.**
+
+> [!NOTE]
+>  App Studio скоро будет отвягот. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков.](https://dev.teams.microsoft.com/)
+
+# <a name="app-studio"></a>[App Studio](#tab/AS)
+
 > [!NOTE]
 > Обязательным условием для создания команды действий является то, что вы уже создали расширение обмена сообщениями. Сведения о создании расширения обмена сообщениями см. в сообщении о создании расширения [обмена сообщениями.](~/messaging-extensions/how-to/create-messaging-extension.md)
 
@@ -116,6 +123,56 @@ ms.locfileid: "59156036"
 
 1. Нажмите **Сохранить**.
 1. Чтобы добавить дополнительные параметры, выберите кнопку **Добавить** в разделе **Параметры.**
+
+# <a name="developer-portal"></a>[Портал разработчика](#tab/DP)
+
+**Создание команды действий с помощью портала разработчика**
+
+1. Перейдите на **[портал Разработчик](https://dev.teams.microsoft.com/)**.
+    
+      ![Снимок экрана TDP](~/assets/images/tdp/tdp_home_1.png)
+
+1. Перейдите к **приложениям.**
+    
+    <img width="500px" alt="Screenshot of TDP Open" src="~/assets/images/tdp/screen2.png"/>
+    
+1. Если вы уже создали пакет приложений на **портале разработчиков,** выберите его из списка. Если нет, **выберите импорт существующего приложения.**
+
+    <img width="500px" alt="Screenshot of import app in tdp" src="~/assets/images/tdp/screen3.png"/>
+
+1. Перейдите к **функциям Приложения.** 
+
+    <img width="500px" alt="TDP messaging extension" src="~/assets/images/tdp/tdp-me.png"/>
+
+1. Выберите **расширения обмена сообщениями из** **функций Приложения.** Всплывающее окно, как представляется, настроено расширение обмена сообщениями.
+    
+   <img width="500px" alt="TDP messaging extension set up" src="~/assets/images/tdp/tdp-app-me.png"/>
+ 
+1. Выберите **бот расширения сообщений** из списка drop down в **ID** расширений сообщений и выберите **Сохранить**.
+
+    <img width="500px" alt="TDP messaging extension bot" src="~/assets/images/tdp/tdp-me-bot.png"/>
+
+1. Выберите **Добавить команду**. Всплывающее окно добавляет команду.
+
+    <img width="500px" alt="TDP messaging extension command" src="~/assets/images/tdp/tdp-me-add-command.png"/>
+
+1. Выберите тип команды на основе **действия,** чтобы настроить расширение обмена сообщениями. Выберите **параметры Dynamic, чтобы** создать команду динамических действий.
+
+    <img width="500px" alt="TDP messaging extension dynamic action command" src="~/assets/images/tdp/tdp-me-action-command-dynamic.png"/>
+
+1. Выберите **параметры Static для** создания команды статических действий.   
+
+    <img width="500px" alt="TDP messaging extension static action command" src="~/assets/images/tdp/tdp-me-action-command-static.png"/>
+
+1. Введите поля команд. 
+
+    <img width="500px" alt="TDP messaging extension action command" src="~/assets/images/tdp/tdp-me-action-command.png"/>  
+
+1. Введите поля параметров и выберите **Сохранить**.
+
+    <img width="500px" alt="TDP messaging extension action parameter" src="~/assets/images/tdp/tdp-me-action-parameter.png"/>
+ 
+---
 
 ### <a name="create-an-action-command-manually"></a>Создание команды действий вручную
 
@@ -208,7 +265,7 @@ ms.locfileid: "59156036"
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 Если вы используете адаптивную карту или встроенное веб-представление без объекта, следующий шаг: `taskInfo`
 

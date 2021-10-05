@@ -5,12 +5,12 @@ description: Определение команд поиска расширени
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: none
-ms.openlocfilehash: 88153523db6bd3f4957d03a0603e3b4cbdd02266
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: d87936832e3d302be295e14bbf952379a41aa694
+ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157415"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60096601"
 ---
 # <a name="define-messaging-extension-search-commands"></a>Определение команд поиска расширения обмена сообщениями
 
@@ -38,9 +38,17 @@ ms.locfileid: "59157415"
 
 Чтобы добавить команду поиска в манифест приложения, необходимо добавить новый объект на верхний уровень `composeExtension` манифеста приложения JSON. Вы можете добавить команду поиска либо с помощью App Studio, либо вручную.
 
-### <a name="create-a-search-command-using-app-studio"></a>Создание команды поиска с помощью App Studio
+### <a name="create-a-search-command"></a>Создание команды поиска 
 
-Обязательным условием для создания команды поиска является то, что вы уже должны создать расширение обмена сообщениями. Сведения о создании расширения обмена сообщениями см. в сообщении о создании расширения [обмена сообщениями.](~/messaging-extensions/how-to/create-messaging-extension.md)
+Вы можете создать команду поиска с помощью ** App Studio** или **портала разработчика.**
+
+> [!NOTE]
+>  App Studio скоро будет отвягот. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков.](https://dev.teams.microsoft.com/)
+
+# <a name="app-studio"></a>[App Studio](#tab/AS)
+
+> [!NOTE]
+> Обязательным условием для создания команды поиска является то, что вы уже должны создать расширение обмена сообщениями. Сведения о создании расширения обмена сообщениями см. в сообщении о создании расширения [обмена сообщениями.](~/messaging-extensions/how-to/create-messaging-extension.md)
 
 **Создание команды поиска**
 
@@ -69,6 +77,49 @@ ms.locfileid: "59157415"
     <img src="~/assets/images/messaging-extension/search-command-invoke-location-selection.png" alt="search command invoke location selection]" width="500"/>
 
 1. Добавьте параметр поиска и выберите **Сохранить**.
+
+# <a name="developer-portal"></a>[Портал разработчика](#tab/DP)
+
+**Создание команды поиска с помощью портала разработчика**
+
+1. Перейдите на **[портал Разработчик](https://dev.teams.microsoft.com/)**.
+    
+   <img src="~/assets/images/tdp/tdp_home_1.png" alt="Screenshot of TDP" width="500"/>
+    
+1. Перейдите к **приложениям.**
+    
+    <img width="500px" alt="Screenshot of TDP Open" src="~/assets/images/tdp/screen2.png"/>
+    
+1. Если вы уже создали пакет приложений на **портале разработчиков,** выберите его из списка. Если вы не создали пакет приложений, выберите **Импорт существующего приложения.**
+
+    <img width="500px" alt="Screenshot of import app in tdp" src="~/assets/images/tdp/screen3.png"/>
+
+1. Перейдите к **функциям Приложения.**  
+
+    <img width="500px" alt="TDP messaging extension" src="~/assets/images/tdp/tdp-me.png"/>
+
+1. Выберите **расширения обмена сообщениями из** **функций Приложения.** Всплывающее окно, как представляется, настроено расширение обмена сообщениями.
+    
+   <img width="500px" alt="TDP messaging extension set up" src="~/assets/images/tdp/tdp-app-me.png"/>
+
+1. Выберите **бот расширения сообщений** из списка drop down в **ID** расширений сообщений и выберите **Сохранить**.
+
+    <img width="500px" alt="TDP messaging extension bot" src="~/assets/images/tdp/tdp-me-bot.png"/>
+
+1. Выберите **Добавить команду**. Всплывающее окно добавляет команду.
+
+    <img width="500px" alt="TDP messaging extension command" src="~/assets/images/tdp/tdp-me-add-command.png"/>
+
+1. Выберите **команду поиска и** введите поля команд.
+
+    <img width="500px" alt="TDP messaging extension search command" src="~/assets/images/tdp/tdp-me-search-command.png"/>
+
+1. Введите поля параметров и выберите **Сохранить**.
+
+    <img width="500px" alt="TDP messaging extension search parameter" src="~/assets/images/tdp/tdp-me-search-parameter.png"/>
+
+---
+
 
 ### <a name="create-a-search-command-manually"></a>Создание команды поиска вручную 
 
@@ -130,7 +181,7 @@ ms.locfileid: "59157415"
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Откликайся на команды поиска.](~/messaging-extensions/how-to/search-commands/respond-to-search.md)

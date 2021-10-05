@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: команды, новые возможности
-ms.openlocfilehash: 7bc3aebbe0acdbef410beb18041d1ac998216ebe
-ms.sourcegitcommit: e1e37cfbecba3a6b382f19379996cc423cd99dac
+ms.openlocfilehash: d456e4892cdbd93d9dde51f64972c836724c4f1b
+ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59485770"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60096544"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -30,6 +30,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|10/04/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |
 |09/21/2021|Teams поддерживает AAD Object ID и UPN в упоминаниях пользователей для ботов и входящих веб-ок. |[AAD Object ID и UPN в упоминаемом пользователем](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown), [Cards- Обзор](task-modules-and-cards/what-are-cards.md#support-for-aad-object-id-and-upn-in-user-mention)|
 |08/16/2021| Поддержка проверки входных данных для адаптивных карт (v1.3 для всех возможностей) и универсальных действий (v1.4 для карт, отправленных ботом). |[Проверка ввода](/adaptive-cards/authoring-cards/input-validation), [универсальные действия для адаптивных карт v1.4](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
 |08/09/2021|Этап собрания теперь доступен в ga.|[Включить и настроить приложения для Teams собраний](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)|
@@ -181,7 +182,6 @@ Microsoft Teams платформы, доступные всем разработ
 |06/21/2021|Удалить поведение для личного приложения с ботом | [Удалить обновления поведения в личных приложениях с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное для ресурсов,](graph-api/rsc/resource-specific-consent.md) [тестирование разрешений](graph-api/rsc/test-resource-specific-consent.md) на согласие, определенное ресурсами, в Teams|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |
-|05/25/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |
 |05/24/2021|Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC).|[Получение всех сообщений с помощью RSC,](~/bots/how-to/conversations/channel-messages-with-rsc.md)обзор бесед [ботов,](~/bots/how-to/conversations/conversation-basics.md)разговоров каналов и групп [и](~/bots/how-to/conversations/channel-and-group-conversations.md)схемы манифеста [предварительного просмотра разработчика](~/resources/schema/manifest-schema-dev-preview.md) |
 |05/21/2021|Вкладки связывают разгрузку и представление сцены|[Вкладки связывают разгрузку и представление сцены](tabs/tabs-link-unfurling.md) |
 

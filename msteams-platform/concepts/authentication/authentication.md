@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: 9bcb5eb42cc22185684933caae210c5630414a4c
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: a49c209b3f421006b2a75f314fb0cbe4a591d86c
+ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475771"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60096712"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
@@ -41,12 +41,12 @@ OAuthPrompt платформы Azure Bot Framework упрощает провер
 
 ## <a name="code-sample"></a>Пример кода
 
-предоставляет образец проверки подлинности бота v3 SDK.
+Образцы проверки подлинности Bot Framework v4.
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
 | Проверка подлинности ботов | В этом примере показано, как начать проверку подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
-| Tab, Bot and Messaging Extension (ME) SSO | В этом примере показаны SSO для tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
+| Tab, Bot and Messaging Extension (ME) SSO | В этом примере показаны SSO для tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступна |
 
 
 ## <a name="configure-the-identity-provider"></a>Настройка поставщика удостоверений

@@ -5,12 +5,12 @@ ms.topic: conceptual
 keywords: разработка командных ботов
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: 939a4b2830d14b0b1a82f09d361e56d5651a1592
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: afa83478ee478d74dbdedb5cd805719fc8434070
+ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156114"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60096551"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в Microsoft Teams приложения
 
@@ -52,7 +52,7 @@ Microsoft Teams поддерживает большую часть [Microsoft Bo
 > [!IMPORTANT]
 > Вы можете разрабатывать Teams в любой другой технологии веб-программирования и вызывать [API](/bot-framework/rest-api/bot-framework-rest-overview) REST Bot Framework напрямую, но все обработки маркеров необходимо выполнять самостоятельно.
 
-*Teams App Studio* помогает создавать и настраивать манифест приложения и может создавать бот Bot Framework для вас. Он также содержит библиотеку React управления и интерактивный конструктор карт.
+*Teams App Studio* помогает создавать и настраивать манифест приложения и может создавать бот Bot Framework для вас. Он также содержит библиотеку React управления и интерактивный конструктор карт. 
 
 ## <a name="outgoing-webhooks"></a>Исходящие веб-перехватчики
 
