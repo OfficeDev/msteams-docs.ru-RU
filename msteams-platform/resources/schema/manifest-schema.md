@@ -5,16 +5,16 @@ ms.topic: reference
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: Схема манифеста команд
-ms.openlocfilehash: 99b41d9caaf2fb37d9721c67555fdbd3d8684fa6
-ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
+ms.openlocfilehash: ae77a84c52fb3f9934d1d499fd59f517758019d6
+ms.sourcegitcommit: 93ed5629650b417a191c5d8867645a198fe45e4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60017326"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60127261"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справка: схема манифеста для Microsoft Teams
 
-Манифест Teams описывает, как приложение интегрируется в Microsoft Teams продукт. Манифест должен соответствовать схеме, которая была на [`https://developer.microsoft.com/json-schemas/teams/v1.10/MicrosoftTeams.schema.json`]( https://developer.microsoft.com/json-schemas/teams/v1.10/MicrosoftTeams.schema.json) уровне . Поддерживаются и предыдущие версии 1.0, 1.1,..., и 1.6 (с помощью "v1.x" в URL-адресе).
+Манифест Teams описывает, как приложение интегрируется в Microsoft Teams продукт. Манифест должен соответствовать схеме, которая была на [`https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json`]( https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json) уровне . Поддерживаются также предыдущие версии 1.0, 1.1,..., и 1.11 (с помощью "v1.x" в URL-адресе).
 Дополнительные сведения об изменениях, внесенных в каждой версии, см. в [журнале изменений манифеста.](https://github.com/OfficeDev/microsoft-teams-app-schema/releases)
 
 В следующем примере схемы показаны все параметры экстензивности:
@@ -23,8 +23,8 @@ ms.locfileid: "60017326"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.10",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
   "version": "1.0.0",
   "id": "%MICROSOFT-APP-ID%",
   "packageName": "com.example.myapp",
@@ -290,6 +290,8 @@ ms.locfileid: "60017326"
       }
     ]
   },
+  "defaultBlockUntilAdminAction": true,
+  "publisherDocsUrl": "https://website.com/app-info",
   "defaultInstallScope": "meetings",
   "defaultGroupCapability": {
     "meetings": "tab", 
@@ -737,3 +739,17 @@ Teams приложения, которые требуют SharePoint url-адр�
 * `developerUrl`URL-адрес HTTPS веб-сайта разработчика.
 * `privacyUrl`: URL-адрес HTTPS политики конфиденциальности разработчика.
 * `termsOfUseUrl`: URL-адрес HTTPS условий использования разработчика.
+
+## <a name="defaultblockuntiladminaction"></a>defaultBlockUntilAdminAction
+
+**Необязательный**- boolean
+ 
+Если свойство настроено на значение true, приложение скрыто от пользователей по умолчанию до тех пор, пока `defaultBlockUntilAdminAction` администратор не разрешит его. Если **задается true,** приложение скрыто для всех клиентов и конечных пользователей. Администраторы клиента могут видеть приложение в центре администрирования Teams и принимать меры, чтобы разрешить или заблокировать приложение. Значение по умолчанию — **false**.
+
+## <a name="publisherdocsurl"></a>publisherDocsUrl
+
+**Необязательный** — строка
+
+**Максимальный размер** — 128 символов
+
+Свойство зависит от `defaultBlockUntilAdminAction` . Когда свойство задалось значение `defaultBlockUntilAdminAction` **true,** URL-адрес HTTPS предоставляется на информационную страницу для администраторов, чтобы получить рекомендации перед разрешением приложения, которое блокируется `publisherDocsUrl` по умолчанию.
