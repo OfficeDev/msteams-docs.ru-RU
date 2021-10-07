@@ -4,7 +4,7 @@ summary: 'Получите документацию, пример кода, уч
 brand: teams
 metadata:
   title: Microsoft Teams Документация разработчика платформы
-  description: 'Платформа Microsoft Teams позволяет разработчикам интегрировать собственные приложения и службы, чтобы повысить производительность, быстрее принимать решения, уделять основное внимание (сокращая переключение контекста) и создавать совместную работу с существующим контентом и рабочими процессами. .'
+  description: 'Платформа Microsoft Teams позволяет разработчикам интегрировать собственные приложения и службы, чтобы повысить производительность, быстрее принимать решения, уделять основное внимание за счет сокращения переключения контекста и создания совместной работы с существующим контентом и рабочими процессами.'
   ms.service: msteams
   ms.topic: hub-page
   ms.collection: collection
@@ -13,6 +13,9 @@ metadata:
   ms.date: 05/29/2020
 highlightedContent:
   items:
+    - title: Новые возможности
+      itemType: whats-new
+      url: /microsoftteams/platform/whats-new
     - title: "Новые возможности Teams разработки? \U0001F680Начните здесь!"
       itemType: get-started
       url: /microsoftteams/platform/overview
@@ -34,44 +37,10 @@ highlightedContent:
     - title: Руководства и примеры кода
       itemType: sample
       url: /microsoftteams/platform/get-started/code-samples
-    - title: Новые возможности
-      itemType: whats-new
-      url: /microsoftteams/platform/whats-new
 conceptualContent:
   title: Руководства и ресурсы
   items:
-    - title: Аудитория
-      links:
-        - url: 'https://developer.microsoft.com/microsoft-teams'
-          itemType: concept
-          text: Разработчики
-        - url: /microsoftteams/microsoft-teams
-          itemType: concept
-          text: ИТ-специалисты
-        - url: 'https://support.microsoft.com/en-us/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Basics'
-          itemType: concept
-          text: Пользователи
-    - title: Обзор
-      links:
-        - url: /microsoftteams/platform/concepts/capabilities-overview
-          itemType: overview
-          text: Возможности приложения Teams
-        - url: /microsoftteams/platform/samples/teams-low-code-solutions
-          itemType: how-to-guide
-          text: 'Создание приложений, Teams ботов и потоков с помощью платформы Microsoft Power'
-        - url: 'https://dev.teams.microsoft.com/home'
-          itemType: reference
-          text: Портал разработчиков Teams
-        - url: /microsoftteams/platform/resources/schema/manifest-schema
-          itemType: reference
-          text: Схема манифеста для Teams приложений
-        - url: 'https://adoption.microsoft.com/extensibility-look-book/scenarios/'
-          itemType: reference
-          text: Создание сценариев для Teams приложений
-        - url: 'https://developer.microsoft.com/en-us/microsoft-teams/app-development-resources'
-          itemType: reference
-          text: Лучшие практики для Teams приложений
-    - title: Обучение
+    - title: Узнать
       links:
         - url: /learn/modules/intro-microsoft-teams-apps
           itemType: learn
@@ -91,11 +60,48 @@ conceptualContent:
         - url: /learn/modules/msteams-webhooks-connectors/
           itemType: learn
           text: Подключение веб-службы для каналов и групп с веб-Office 365 соединители
+    - title: Возможности
+      links:
+        - url: /microsoftteams/platform/tabs/what-are-tabs
+          itemType: overview
+          text: Вкладки
+        - url: /microsoftteams/platform/bots/what-are-bots
+          itemType: overview
+          text: боты;
+        - url: /microsoftteams/platform/messaging-extensions/what-are-messaging-extensions
+          itemType: overview
+          text: расширения для обмена сообщениями;
+        - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
+          itemType: overview
+          text: Приложения для Teams собраний
+        - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
+          itemType: concept
+          text: Карты и модули задач
+        - url: /microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors
+          itemType: overview
+          text: Веб-перехватчики и соединительные линии
+    - title: Обзор
+      links:
+        - url: /microsoftteams/platform/concepts/authentication/authentication
+          itemType: concept
+          text: Проверка подлинности пользователей и SSO
+        - url: /microsoftteams/platform/samples/teams-low-code-solutions
+          itemType: how-to-guide
+          text: 'Создание приложений, Teams ботов и потоков с помощью платформы Microsoft Power'
+        - url: 'https://dev.teams.microsoft.com/home'
+          itemType: reference
+          text: Портал разработчиков Teams
+        - url: /microsoftteams/platform/resources/schema/manifest-schema
+          itemType: reference
+          text: Схема манифеста для Teams приложений
+        - url: 'https://adoption.microsoft.com/extensibility-look-book/scenarios/'
+          itemType: reference
+          text: Создание сценариев для Teams приложений
+        - url: 'https://developer.microsoft.com/en-us/microsoft-teams/app-development-resources'
+          itemType: reference
+          text: Лучшие практики для Teams приложений
     - title: Интеграция
       links:
-        - url: /microsoftteams/platform/samples/integrating-web-apps
-          itemType: concept
-          text: Интеграция веб-приложений
         - url: /microsoftteams/platform/bots/how-to/add-power-virtual-agents-bot-to-teams
           itemType: how-to-guide
           text: Интеграция Power Virtual Agents чат-бота
@@ -114,7 +120,7 @@ conceptualContent:
         - url: /microsoftteams/platform/samples/shifts-wfm-connectors
           itemType: reference
           text: Интеграция готовых к производству соединители Shifts
-    - title: Связь
+    - title: Community
       links:
         - url: 'https://developer.microsoft.com/microsoft-teams/blogs/'
           itemType: overview
@@ -125,14 +131,23 @@ conceptualContent:
         - url: 'https://docs.microsoft.com/en-us/teamblog/'
           itemType: whats-new
           text: Объявления
-    - title: Справка
-      links:
         - url: /microsoftteams/platform/feedback
           itemType: overview
           text: Microsoft Teams Разработчик Community и ответ
         - url: /microsoftteams/platform/resources/teams-contributor-reference
           itemType: overview
           text: Участие в Microsoft Teams документации
+    - title: Аудитория
+      links:
+        - url: 'https://developer.microsoft.com/microsoft-teams'
+          itemType: concept
+          text: Разработчики
+        - url: /microsoftteams/microsoft-teams
+          itemType: concept
+          text: ИТ-специалисты
+        - url: 'https://support.microsoft.com/en-us/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Basics'
+          itemType: concept
+          text: Конечные пользователи
 tools:
   title: SDKs и средства
   items:
