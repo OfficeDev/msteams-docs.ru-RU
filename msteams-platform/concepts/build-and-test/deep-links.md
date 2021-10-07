@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: deeplink teams deep link
-ms.openlocfilehash: a9d3ec021de52f4ae9d5b17eab9306d1c7974280
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: fbf4d933db63ee634000bb5fc277c385fc3cfa44
+ms.sourcegitcommit: 31dc5dfac6e7d0c6f33795190a55bb5c741eb32a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475778"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223050"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -150,10 +150,11 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 Следующий формат глубокой ссылки можно использовать в карточке расширения бота, соединитетеля или обмена сообщениями:
 
-`https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80?tenantId=<tenantid>&fileType=<filetype>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadid>&groupId=<groupId>`
+`https://teams.microsoft.com/l/file/<fileId>?tenantId=<tenantId>&fileType=<fileType>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadId>&groupId=<groupId>`
 
 Параметры запроса:
 
+* `fileId`: Уникальный файл ID из Sharepoint Online, ака sourcedoc. Например, 1FA202A5-3762-4F10-B550-C04F81F6ACBD
 * `tenantId`: Пример ID клиента, 0d9b645f-597b-41f0-a2a3-ef103fbd91bb
 * `fileType`: Поддерживаемый тип файла, например docx, pptx, xlsx и pdf
 * `objectUrl`: URL-адрес объекта файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}/SharedDocuments/{ChannelName}/FileName.ext`. Пример: `https://microsoft.sharepoint.com/teams/(filepath)`
@@ -165,15 +166,16 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 > [!NOTE]
 > Вы можете увидеть `threadId` `groupId` и в URL-адресе канала.  
 
-Следующий формат глубоких ссылок используется в карточке расширения бота, соединитетеля или обмена сообщениями: `https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80?tenantId=<tenantid>&fileType=<filetype>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadid>&groupId=<groupId>`
+Следующий формат глубоких ссылок используется в карточке расширения бота, соединитетеля или обмена сообщениями: `https://teams.microsoft.com/l/file/<fileId>?tenantId=<tenantId>&fileType=<fileType>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadId>&groupId=<groupId>`
 
 В следующем формате примера показана глубокая связь с файлами:
 
-`https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80 ?tenantId=0d9b645f-597b-41f0-a2a3-ef103fbd91bb&fileType=pptx&objectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform%2FShared%20Documents%2FFC7-%20Bot%20and%20Action%20Infra%2FKaizala%20Actions%20in%20Adaptive%20Cards%20-%20Deck.pptx&baseUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform&serviceName=teams&threadId=19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype&groupId=ae063b79-5315-4ddb-ba70-27328ba6c31e`
+`https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80?tenantId=0d9b645f-597b-41f0-a2a3-ef103fbd91bb&fileType=pptx&objectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform%2FShared%20Documents%2FFC7-%20Bot%20and%20Action%20Infra%2FKaizala%20Actions%20in%20Adaptive%20Cards%20-%20Deck.pptx&baseUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform&serviceName=teams&threadId=19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype&groupId=ae063b79-5315-4ddb-ba70-27328ba6c31e`
 
 ### <a name="serialization-of-this-object"></a>Сериализация этого объекта:
 ```
 {
+fileId: "5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80",
 tenantId: "0d9b645f-597b-41f0-a2a3-ef103fbd91bb",
 filetype: = "pptx",
 objectUrl: "https://microsoft.sharepoint.com/teams/ActionPlatform/Shared Documents/FC7- Bot and Action Infra/Kaizala Actions in Adaptive Cards - Deck.pptx",
@@ -198,7 +200,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 Параметры запроса:
 
-* `appID`: Ваш манифест **fe4a8eba-2a31-4737-8e33-e5fae6fee194**.
+* `appID`: Ваш манифест, например **fe4a8eba-2a31-4737-8e33-e5fae6fee194**.
 
 * `entityID`: ID элемента, который вы предоставили [при настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md). Например, **tasklist123**.
 * `entityWebUrl`. Необязательный url-адрес с откатным URL-адресом, который можно использовать, если клиент не поддерживает отрисовку вкладки или `https://tasklist.example.com/123` `https://tasklist.example.com/list123/task456` .
