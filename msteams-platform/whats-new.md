@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: команды, новые возможности
-ms.openlocfilehash: 13e749352662872d0b457085cc919b2357e9c348
-ms.sourcegitcommit: 93ed5629650b417a191c5d8867645a198fe45e4e
+ms.openlocfilehash: 61f11363246bd250df1dc03e3cd2bb9638d53c73
+ms.sourcegitcommit: c883f9675f3d392e3d77329c97b8e2c4cb26b695
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127289"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249782"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -30,8 +30,9 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|10/08/2021|Новые методы разработки адаптивных карт.|[Разработка адаптивных карт для Teams приложения](task-modules-and-cards/cards/design-effective-cards.md)|
 |10/05/2021| Скрыть Teams приложение, пока администратор не разрешит отмыть приложение. | [Скрыть Teams, пока администратор не утвердит](concepts/design/enable-app-customization.md#hide-teams-app-until-admin-approves) 
-|10/05/2021|Планирование приложений для Teams мобильных устройств|[Планирование отзывчивых вкладок для Teams мобильных устройств](concepts/design/plan-responsive-tabs-for-teams-mobile.md)|
+|10/05/2021|Планирование приложений для Teams мобильных устройств|[Планирование адаптивных вкладок для мобильной версии Teams](concepts/design/plan-responsive-tabs-for-teams-mobile.md)|
 |10/04/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями. | [Портал разработчиков Teams](concepts/build-and-test/teams-developer-portal.md) |
 |09/21/2021|Teams поддерживает AAD Object ID и UPN в упоминаниях пользователей для ботов и входящих веб-ок. |[AAD Object ID и UPN в упоминаемом пользователем](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown), [Cards- Обзор](task-modules-and-cards/what-are-cards.md#support-for-aad-object-id-and-upn-in-user-mention)|
 |09/08/2021|Этап собрания теперь доступен в ga.|[Включить и настроить приложения для Teams собраний](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)|
