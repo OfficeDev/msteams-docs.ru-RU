@@ -1,12 +1,12 @@
 - name: Документация для разработчиков Microsoft Teams
   href: /microsoftteams/platform
+- name: Новые возможности
+  href: whats-new.md
 - name: Обзор
   expanded: false
   items:
     - name: Создание приложений для Microsoft Teams
       href: overview.md
-    - name: Новые возможности
-      href: whats-new.md
 - name: Начало работы
   expanded: false
   items:
