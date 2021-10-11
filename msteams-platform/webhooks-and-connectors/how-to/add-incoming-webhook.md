@@ -6,12 +6,12 @@ keywords: команды вкладки исходят веб-ок
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: c07456288a26e3152a552644b704e2c6e6de38cc
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 546ca7643ee64412dab6c383e4090dd631a643c8
+ms.sourcegitcommit: c04a1a792773a9d5c61169c5702d94a8c478ad1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156037"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60260703"
 ---
 # <a name="create-incoming-webhook"></a>Создание входящих веб-ок
 

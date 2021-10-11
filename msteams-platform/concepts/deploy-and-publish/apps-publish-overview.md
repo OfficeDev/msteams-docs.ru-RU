@@ -5,16 +5,16 @@ ms.topic: conceptual
 author: KirtiPereira
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: d53bab5e951f64876f1d97d5e90b3788a206aa67
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 308d0722928111c1a9d6e6afa44e3c261dd59a3d
+ms.sourcegitcommit: c04a1a792773a9d5c61169c5702d94a8c478ad1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157539"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60260620"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 
-Вы можете предоставить Microsoft Teams приложение отдельному лицу, команде, организации или любому, кто хочет его использовать. Способ распространения зависит от нескольких факторов, в том числе потребностей пользователей, бизнес-и технических требований, а также ваших целей для приложения.
+Вы можете предоставить Microsoft Teams приложение отдельному лицу, команде, организации или любому, кто хочет его использовать. Способ распространения зависит от нескольких факторов, включая потребности пользователей, бизнес, технические требования и цели приложения.
 
 ## <a name="upload-your-app-in-teams"></a>Upload приложение в Teams
 
@@ -46,7 +46,7 @@ ms.locfileid: "59157539"
 
 ## <a name="see-also"></a>См. также
 
-* [Соответствие требованиям для приложений Microsoft 365](/microsoft-365-app-certification/overview)
+* [Программа соответствия приложений Microsoft 365 требованиям](/microsoft-365-app-certification/overview)
 
 ## <a name="next-step"></a>Следующий этап
 

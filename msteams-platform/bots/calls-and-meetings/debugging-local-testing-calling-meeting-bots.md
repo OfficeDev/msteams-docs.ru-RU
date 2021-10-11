@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 keywords: туннель ngrok локальной разработки
 ms.date: 11/18/2018
-ms.openlocfilehash: f09457e920a08b1f56973c349209dc07fc539db3
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 2b3da582f6529fd676ae8964acb09a038e39162a
+ms.sourcegitcommit: c04a1a792773a9d5c61169c5702d94a8c478ad1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156390"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60260660"
 ---
 # <a name="develop-calling-and-online-meeting-bots-on-your-local-pc"></a>Разработка ботов вызовов и сетевых собраний на локальном компьютере
 
@@ -119,4 +119,6 @@ var mediaPlatform = new MediaPlatformSettings
 
 - Бесплатные учетные записи Ngrok **не обеспечивают** end-to-end шифрования. Данные HTTPS заканчиваются URL-адресом ngrok, а потоки данных не расшифрованы из ngrok в `localhost` . Если требуется end-to-end шифрование, рассмотрите платную учетную запись ngrok. См. [в tLS-туннелях](https://ngrok.com/docs#tls) шаги по настройке безопасных конечных туннелей.
 - Так как URL-адрес вызова бота динамический, для сценариев входящих вызовов требуется часто обновлять конечные точки ngrok. Один из способов исправить это — использовать платную учетную запись ngrok, которая предоставляет фиксированные поддомены, на которые можно указать бот и платформу.
-- Тоннели Ngrok также можно использовать с [помощью Azure Service Fabric.](/azure/service-fabric/service-fabric-overview) Пример этого см. в примере [приложения HueBot.](/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/LocalMediaSamples/HueBot/HueBot)
+- Тоннели Ngrok также можно использовать с [помощью Azure Service Fabric.](/azure/service-fabric/service-fabric-overview) Пример этого см. в примере [приложения HueBot.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples/HueBot/HueBot)
+
+ 
