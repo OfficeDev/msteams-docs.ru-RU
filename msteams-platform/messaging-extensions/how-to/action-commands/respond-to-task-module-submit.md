@@ -5,12 +5,12 @@ description: Описывает, как реагировать на отправ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 79687dd98f8d88e365ae1528b36806d3ffc559d3
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: cab33a36862ed027f9c110eccaac43d4e4aff20e
+ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157688"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60291641"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -221,7 +221,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ## <a name="respond-to-initial-submit-action"></a>Реагирование на начальное действие отправки
 
-Модуль задач должен отвечать на начальное сообщение предварительным просмотром карты, которую отправляет бот `composeExtension/submitAction` каналу. Пользователь может проверить карту перед отправкой, а также попытаться установить бот в беседе, если бот еще не установлен.
+Модуль задач должен отвечать на начальное сообщение предварительным просмотром карты, которую отправляет бот `composeExtension/submitAction` каналу. Пользователь может проверить карту перед отправкой и попытаться установить бот в беседе, если бот еще не установлен.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -405,7 +405,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ### <a name="respond-to-botmessagepreview-send"></a>Ответ на отправку botMessagePreview
 
-После того как пользователь выбирает **отправку,** вы получите вызов `composeExtension/submitAction` с `value.botMessagePreviewAction = send` . Веб-служба должна создать и отправить на беседу проактивное сообщение с адаптивной картой, а также ответить на вызов.
+После того как пользователь выбирает **отправку,** вы получите вызов `composeExtension/submitAction` с `value.botMessagePreviewAction = send` . Веб-служба должна создавать и отправлять на беседу проактивное сообщение с адаптивной картой, а также отвечать на вызов.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -587,8 +587,8 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 |Поле|Тип|Описание|
 |:---|:---|:---|
 |`itemId`|Целое число|Описывает идентификацию элемента. Его значение должно быть `0` .|
-|`mentionType`|String|Описывает упоминание о "человеке".|
-|`mri`|String|Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение. Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".|
+|`mentionType`|Строка|Описывает упоминание о "человеке".|
+|`mri`|Строка|Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение. Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".|
 |`displayName`|Строка|Имя человека. Используется в качестве отката в разрешении имени случая недоступно.|
   
 ## <a name="code-sample"></a>Пример кода

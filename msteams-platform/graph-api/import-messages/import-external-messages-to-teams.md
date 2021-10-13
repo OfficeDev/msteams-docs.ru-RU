@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы импортируют сообщения api graph Microsoft migrate migration post
-ms.openlocfilehash: 9c5f45120a1e6d52409360d54a54096554ca86b4
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: a34a6efe98e14d5c28126275ed2378a24d34efa0
+ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157607"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60291711"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "59157607"
 1. [Завершите процесс миграции группы и канала.](#step-4-complete-migration-mode)
 1. [Добавление участников группы.](#step-five-add-team-members)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 ### <a name="analyze-and-prepare-message-data"></a>Анализ и подготовка данных сообщений
 
@@ -42,7 +42,7 @@ ms.locfileid: "59157607"
 ### <a name="set-up-your-office-365-tenant"></a>Настройка клиента Office 365
 
 * Убедитесь, что Office 365 клиент существует для данных импорта. Дополнительные сведения о настройке Office 365 аренды для Teams см. в Office 365 [клиента.](../../concepts/build-and-test/prepare-your-o365-tenant.md)
-* Убедитесь, что члены группы находятся в Azure Active Directory (AAD). Дополнительные сведения [см. в добавлении нового пользователя в](/azure/active-directory/fundamentals/add-users-azure-active-directory) AAD.
+* Убедитесь, что члены группы находятся в Azure Active Directory (AAD). Дополнительные сведения см. [в добавлении](/azure/active-directory/fundamentals/add-users-azure-active-directory) нового пользователя в AAD.
 
 ## <a name="step-1-create-a-team"></a>Шаг 1. Создание команды
 
@@ -369,11 +369,11 @@ HTTP/1.1 204 No Content
 |В области | В настоящее время вне области|
 |----------|--------------------------|
 |Сообщения группы и канала|1:1 и групповые сообщения чата|
-|Созданное время исходного сообщения|Частные каналы|
+|Созданное время исходного сообщения|Закрытые каналы|
 |Inline images as part of the message|При упоминаний|
 |Ссылки на существующие файлы в SPO или OneDrive|Реакции|
 |Сообщения с богатым текстом|Видео|
-|Цепочка ответов на сообщения|Announcements|
+|Цепочка ответов на сообщения|Объявления|
 |Обработка высокой пропускной способности|Фрагменты кода|
 ||Наклейки|
 ||Emojis|

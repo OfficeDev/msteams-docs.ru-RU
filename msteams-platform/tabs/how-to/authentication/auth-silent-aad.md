@@ -3,13 +3,13 @@ title: Автоматическая проверка подлинности
 description: Описание бесшумной проверки подлинности
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: группы проверки подлинности SSO silent AAD
-ms.openlocfilehash: 02078775ef3349ae5bb35e999e0f65587ab943d1
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+keywords: группы проверки подлинности SSO AAD
+ms.openlocfilehash: fef5a52d836ce906e9fe835f29bcee1bef9088d7
+ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156091"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60291627"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
@@ -18,7 +18,7 @@ ms.locfileid: "59156091"
 
 Бесшумная проверка подлинности в Azure Active Directory (AAD) минимизирует количество случаев, когда пользователь вводит свой вход в учетные данные, молча освежая маркер проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO.](~/tabs/how-to/authentication/auth-aad-sso.md)
 
-Если вы хотите сохранить код полностью клиентской стороной, вы можете использовать библиотеку проверки подлинности [AAD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript, чтобы получить маркер доступа AAD безмолвно. Если пользователь недавно подписался, он никогда не увидит диалоговое окно всплывающее окно.
+Если вы хотите сохранить код полностью клиентским, [](/azure/active-directory/develop/active-directory-authentication-libraries) вы можете использовать библиотеку проверки подлинности AAD JavaScript для получения маркера AAD доступа. Если пользователь недавно подписался, он никогда не увидит диалоговое окно всплывающее окно.
 
 Несмотря на тоADAL.js что библиотека оптимизирована для приложений AngularJS, она также работает с чистыми одно-страницами JavaScript.
 
@@ -33,7 +33,7 @@ ms.locfileid: "59156091"
 
 Код в этой статье поступает из Teams, которое является Teams проверки [подлинности.](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs)
 
-[Инициировать бесшумную](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) и простую настраиваемую вкладку проверки подлинности с помощью AAD и следуйте инструкциям по запуску образца на локальном компьютере.
+[Инициировать](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) неопровержимую и простую настраиваемую вкладку проверки подлинности с помощью AAD и следуйте инструкциям по запуску образца на локальном компьютере.
 
 ### <a name="include-and-configure-adal"></a>Включить и настроить ADAL
 
@@ -55,7 +55,7 @@ ms.locfileid: "59156091"
 
 ### <a name="get-the-user-context"></a>Получить пользовательский контекст
 
-На странице контента вкладки позвоните, чтобы получить подсказку `microsoftTeams.getContext()` для текущего пользователя. Это используется в качестве входаHint в вызове в AAD.
+На странице контента вкладки позвоните, чтобы получить подсказку `microsoftTeams.getContext()` для текущего пользователя. Это используется как loginHint в вызове AAD.
 
 ```javascript
 // Set up extra query parameters for ADAL
@@ -105,7 +105,7 @@ authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenTy
 
 ### <a name="process-the-return-value"></a>Обработка возвращаемой стоимости
 
-ADAL.js для размыва результатов AAD путем вызова в `AuthenticationContext.handleWindowCallback(hash)` знаке на странице вызова.
+ADAL.js размыкает результат AAD, позвонив `AuthenticationContext.handleWindowCallback(hash)` в знак на странице вызова.
 
 Убедитесь, что у вас есть допустимый пользователь и позвоните или сообщить о состоянии на главную страницу `microsoftTeams.authentication.notifySuccess()` `microsoftTeams.authentication.notifyFailure()` контента вкладки.
 
@@ -124,10 +124,10 @@ if (authContext.isCallback(window.location.hash)) {
 
 ### <a name="handle-sign-out-flow"></a>Обработка потока регистрации
 
-Используйте следующий код для обработки потока регистрации в AAD Auth:
+Используйте следующий код для обработки потока AAD Auth:
 
 > [!NOTE]
-> Несмотря на то, что Teams для вкладки или бота, текущий сеанс также очищается.
+> При входе из Teams или бота текущий сеанс очищается.
 
 ```javascript
 function logout() {
