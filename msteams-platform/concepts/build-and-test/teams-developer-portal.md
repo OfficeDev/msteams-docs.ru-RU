@@ -5,12 +5,12 @@ keywords: начало работы команд портала разработ
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: 84f3e5724adf3256fff3086158345fc3777513bb
-ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
+ms.openlocfilehash: 41aade2eaedee2095e60288a7e4021897bb1a3fa
+ms.sourcegitcommit: ece03efbb0e9d1fea5bd01c9c05a2bc232c1a1c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60096578"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60378914"
 ---
 # <a name="manage-your-apps-with-the-developer-portal-for-microsoft-teams"></a>Управление приложениями с помощью портала разработчиков для Microsoft Teams
 
@@ -118,3 +118,7 @@ ms.locfileid: "60096578"
 * **Сцена студии**: [Разработка настраиваемой совместной](~/apps-in-teams-meetings/teams-together-mode.md) сцены режима для Teams собраний.
 * **Редактор адаптивных карт.** Создание и предварительный просмотр адаптивных карт, чтобы включить их в приложения.
 * **платформа удостоверений Майкрософт** управления. Зарегистрируйте свои приложения Azure Active Directory (Azure AD), чтобы помочь пользователям войти и предоставить доступ к API.
+
+## <a name="see-also"></a>См. также
+
+[Включите предложение SaaS в Microsoft Teams приложение](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md)
