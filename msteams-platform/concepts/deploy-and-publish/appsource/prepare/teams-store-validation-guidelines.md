@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: e0d2edea9cdfcdba2cc7c65c15085903bd0d483c
-ms.sourcegitcommit: c04a1a792773a9d5c61169c5702d94a8c478ad1c
+ms.openlocfilehash: e54581a809cd72257ad7c285f9c36acc0691f922
+ms.sourcegitcommit: ece03efbb0e9d1fea5bd01c9c05a2bc232c1a1c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60260535"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60378900"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -108,6 +108,9 @@ ms.locfileid: "60260535"
 * Если для вашего приложения требуется учетная запись, пользователи должны иметь возможность бесплатно зарегистрировать учетную запись. Использование термина **бесплатное** или **бесплатная учетная запись** запрещается.
 * Вы можете определить, активна ли учетная запись на неопределенный срок или на ограниченное время, но если срок действия учетной записи истекает, не должен отображаться никакой элемент интерфейса, текст или ссылки, указывающие на необходимость оплаты.
 * Кроме того, на страницах политики конфиденциальности и условий использования вашего приложения не должно быть элементов интерфейса или ссылок, предназначенных для коммерческих целей.
+
+> [!NOTE]
+> Описания в магазине Teams могут включать планы подписок на приложения или лицензии на покупку. Дополнительные сведения см. в статье [Включение предложения SaaS в приложение](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md).
 
 ## <a name="general-functionality-and-performance"></a>Общие функциональные возможности и производительность
 
