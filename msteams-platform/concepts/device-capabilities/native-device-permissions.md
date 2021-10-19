@@ -4,12 +4,12 @@ keywords: разрешения командных приложений
 description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 33a0fc390dc2123ccb77901acb7967b1b9732e77
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 84c866ddaae371b2c0e40defcbb1cef7c1194f0d
+ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157371"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60496209"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений на устройство для Microsoft Teams приложения
 
@@ -32,7 +32,8 @@ ms.locfileid: "59157371"
 * Используйте сведения о расположении пользователя для отображения соответствующих сведений.
 
 > [!NOTE]
-> В настоящее время Teams не поддерживает разрешения устройств для приложений с несколькими окнами, вкладок и боковой панели собраний.
+> * В настоящее время Teams не поддерживает разрешения устройств для приложений с несколькими окнами, вкладок и боковой панели собраний.    
+> * Разрешения устройств отличаются в браузере. Дополнительные сведения см. в [дополнительных сведениях о разрешениях на устройство браузера.](browser-device-permissions.md)
 
 ## <a name="access-device-permissions"></a>Разрешения на доступ к устройствам
 
@@ -121,7 +122,7 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 > * Поддержка `camera` , `gallery` и включен через `microphone` [**selectMedia API**](/javascript/api/@microsoft/teams-js/microsoftteams.media.media?view=msteams-client-js-latest&preserve-view=true). Используйте [**API captureImage**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true) для одного захвата изображения.
 > * Поддержка `location` включена через [**API getLocation.**](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true) Это необходимо использовать для расположения, так как API геолокации HTML5 в настоящее время не полностью поддерживается на `getLocation API` Teams настольном клиенте.
 
-Например.
+Например:
  * Чтобы подсказыть пользователю доступ к их расположению, необходимо `getCurrentPosition()` вызвать:
 
     ```Javascript

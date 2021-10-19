@@ -6,12 +6,12 @@ keywords: Возможности карты расположения для ро
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: ac3227d963baea6f55da81596f2003fd865f32b1
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: e2c1d48087e21250d5e2c7582ee3f5309590225a
+ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157608"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60496146"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 
@@ -34,7 +34,7 @@ ms.locfileid: "59157608"
 
 ## <a name="update-manifest"></a>Манифест обновления
 
-Обновите Teams приложение [manifest.jsфайле,](../../resources/schema/manifest-schema.md#devicepermissions) добавив `devicePermissions` свойство и указав `geolocation` . Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать возможности расположения. Обновление манифеста приложения:
+Обновите Teams [приложения manifest.json,](../../resources/schema/manifest-schema.md#devicepermissions) добавив `devicePermissions` свойство и указав `geolocation` . Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать возможности расположения. Обновление манифеста приложения:
 
 ``` json
 "devicePermissions": [
@@ -43,7 +43,8 @@ ms.locfileid: "59157608"
 ```
 
 > [!NOTE]
-> Запрос **разрешения запроса** автоматически отображается при Teams API. Дополнительные сведения см. в [запросе разрешений устройств.](native-device-permissions.md)
+> * Запрос **разрешения запроса** автоматически отображается при Teams API. Дополнительные сведения см. в [запросе разрешений устройств.](native-device-permissions.md)    
+> * Разрешения устройств отличаются в браузере. Дополнительные сведения см. в [дополнительных сведениях о разрешениях на устройство браузера.](browser-device-permissions.md)   
 
 ## <a name="location-apis"></a>API расположения
 
@@ -93,7 +94,7 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 
 Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки: 
 
-|Код ошибки |  Имя ошибки     | Condition|
+|Код ошибки |  Имя ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
 | **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|

@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: команды, новые возможности
-ms.openlocfilehash: 3f32691f13632a695c04f7d1007c78b16040a611
-ms.sourcegitcommit: fdfe0cf5bb72ceecf667d02190bb36a51a22934f
+ms.openlocfilehash: 3e2c7a2002192b7d752602f33865aafb12a8239f
+ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60483487"
+ms.locfileid: "60496216"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -183,6 +183,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|10/19/2021|Разрешения устройства для браузера.| [Разрешения устройства для браузера](concepts/device-capabilities/browser-device-permissions.md) |
 |10/14/2021 | Монетизация Teams приложения с помощью трансактируемых SaaS-предложений. | [Включите предложение SaaS с Teams приложением.](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) |
 |06/23/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/API-references.md#meeting-details-api) |
 |06/21/2021|Удалить поведение для личного приложения с ботом | [Удалить обновления поведения в личных приложениях с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
