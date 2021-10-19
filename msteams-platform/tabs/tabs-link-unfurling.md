@@ -5,17 +5,14 @@ description: Как развязать ссылку, открыть предст
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: cc77667a8782f2f519d6dc3e6af74949a9dcbed2
-ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
+ms.openlocfilehash: 04eef9691e1858916827da00f97c1a309bfe4970
+ms.sourcegitcommit: fdfe0cf5bb72ceecf667d02190bb36a51a22934f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60017305"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60483501"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
-
-> [!NOTE]
-> Эта функция доступна только для [предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
 Представление stage — это новый компонент пользовательского интерфейса (пользовательского интерфейса), который позволяет отрисовки контента, открываемой на полном экране в Teams и закрепленной в качестве вкладки.
  
@@ -152,7 +149,7 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
