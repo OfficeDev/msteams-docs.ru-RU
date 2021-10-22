@@ -52,6 +52,8 @@
           href: concepts/device-capabilities/device-capabilities-overview.md
         - name: Запрос разрешений устройства
           href: concepts/device-capabilities/native-device-permissions.md
+        - name: Разрешения устройства для браузера
+          href: concepts/device-capabilities/browser-device-permissions.md
         - name: Интеграция возможностей мультимедиа
           href: concepts/device-capabilities/mobile-camera-image-permissions.md
         - name: Интеграция функции сканирования QR- или штрихкода
