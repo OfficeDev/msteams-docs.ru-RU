@@ -436,7 +436,6 @@
           href: concepts/deploy-and-publish/appsource/post-publish/overview.md
         - name: Включение предложения SaaS в приложение
           href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
-- name: Ресурсы
 - name: Манифест приложения
   items:
     - name: Схема манифеста приложения

@@ -4,12 +4,12 @@ description: Описывает все новые возможности раз�
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: команды, новые возможности
-ms.openlocfilehash: 3e2c7a2002192b7d752602f33865aafb12a8239f
-ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
+ms.openlocfilehash: 385dd74cddc9c09a861c1bfb214c1d393bae77a1
+ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60496216"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "60566374"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -30,6 +30,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Примечания** | **Измененные темы** |
 | -------- | --------- | ------------------ |
+|10/20/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/API-references.md#meeting-details-api) |
 |10/18/2021|Вкладки связывают разгрузку и представление сцены|[Вкладки связывают разгрузку и представление сцены](tabs/tabs-link-unfurling.md) |
 |10/08/2021|Новые методы разработки адаптивных карт.|[Разработка адаптивных карт для Teams приложения](task-modules-and-cards/cards/design-effective-cards.md)|
 |10/05/2021| Скрыть Teams приложение, пока администратор не разрешит отмыть приложение. | [Скрыть Teams, пока администратор не утвердит](concepts/design/enable-app-customization.md#hide-teams-app-until-admin-approves) 
@@ -185,7 +186,6 @@ Microsoft Teams платформы, доступные всем разработ
 | -------- | --------- | ------------------ |
 |10/19/2021|Разрешения устройства для браузера.| [Разрешения устройства для браузера](concepts/device-capabilities/browser-device-permissions.md) |
 |10/14/2021 | Монетизация Teams приложения с помощью трансактируемых SaaS-предложений. | [Включите предложение SaaS с Teams приложением.](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) |
-|06/23/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | [Создание приложений для собраний Teams](~/apps-in-teams-meetings/API-references.md#meeting-details-api) |
 |06/21/2021|Удалить поведение для личного приложения с ботом | [Удалить обновления поведения в личных приложениях с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |06/16/2021| Согласие для чатов с определенными ресурсами. |[Согласие, определенное для ресурсов,](graph-api/rsc/resource-specific-consent.md) [тестирование разрешений](graph-api/rsc/test-resource-specific-consent.md) на согласие, определенное ресурсами, в Teams|
 |05/25/2021| Обновленные Teams набор средств [для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и [Visual Studio](https://marketplace.visualstudio.com/items?itemName=msft-vsteamstoolkit.vsteamstoolkit&ssr=false#overview). | [Начало разработки Teams приложения](~/get-started/prerequisites.md) |

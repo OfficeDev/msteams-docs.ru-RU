@@ -6,12 +6,12 @@ ms.author: surbhigupta
 keywords: Микрофон микрофона микрофона микрофона qr qr code qrcode штрихкода штрихкода сканера сканера расположения карты изображений камеры возможности родных разрешений устройства
 ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 8e8c7d7920d3a00d3414226296d9baf3dc209be2
-ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
+ms.openlocfilehash: 9c08b727808f33ad128709ce15ecab2ecc3602b3
+ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60496195"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "60566269"
 ---
 # <a name="device-capabilities"></a>Возможности устройств
 
@@ -21,7 +21,7 @@ Microsoft Teams постоянно совершенствует возможно
 
 ## <a name="native-device-capabilities"></a>Возможности родного устройства
 
-Мобильное или настольное устройство имеет встроенные устройства, такие как камера и микрофон, называемые возможностями. Вы можете получить доступ к следующим возможностям устройства на мобильных или настольных компьютерах с помощью выделенных API, доступных Microsoft Teams [клиентской SDK JavaScript:](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true)
+Мобильный или настольный компьютер имеет встроенные устройства, такие как камера и микрофон, называемые возможностями. Вы можете получить доступ к следующим возможностям устройства на мобильных или настольных компьютерах с помощью выделенных API, доступных Microsoft Teams [клиентской SDK JavaScript:](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true)
 * Возможности мультимедиа, такие как
     * Камера
     * Микрофон
@@ -29,7 +29,7 @@ Microsoft Teams постоянно совершенствует возможно
     * Сканер QR или штрихкода
 * Location
 
-Получив доступ к возможностям устройства, вы можете интегрировать их с Teams платформой для повышения эффективности совместной работы. 
+Получив доступ к возможностям устройства, вы можете интегрировать их с платформой Teams для повышения эффективности совместной работы. 
 
 ## <a name="request-device-permissions"></a>Запрос разрешений устройства
 

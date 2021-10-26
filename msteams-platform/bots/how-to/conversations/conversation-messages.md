@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 8ef68f351e8d0d7ee39dfc5ae3816337fc592920
-ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
+ms.openlocfilehash: 5d2855493b4863232655ef808191f671cf784289
+ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60017333"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "60566241"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -236,7 +236,7 @@ async def on_members_added_activity(
 
 ## <a name="message-content"></a>Содержимое сообщения
 
-| Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
+| Формат    | От пользователя к боту | От бота к пользователю | Заметки                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.  |
@@ -376,7 +376,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Ниже печатаются коды состояния и их код ошибок и значения сообщений:
 
-| Код состояния | Код ошибки и значения сообщений | Description |
+| Код состояния | Код ошибки и значения сообщений | Описание |
 |----------------|-----------------|-----------------|
 | 403 | **Код:**`ConversationBlockedByUser` <br/> **Сообщение.** Пользователь заблокировал беседу с ботом. | Пользователь заблокировал бот в чате 1:1 или канале с помощью параметров модерации. |
 | 403 | **Код:**`BotNotInConversationRoster` <br/> **Сообщение.** Бот не является частью реестра беседы. | Бот не является частью беседы. |
@@ -399,7 +399,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 - [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Меню команд бота](~/bots/how-to/create-a-bot-commands-menu.md)

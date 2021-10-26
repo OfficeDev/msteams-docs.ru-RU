@@ -5,12 +5,12 @@ description: Определение команд поиска расширени
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: none
-ms.openlocfilehash: d87936832e3d302be295e14bbf952379a41aa694
-ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
+ms.openlocfilehash: aaea89aa14e556dfa00e81e8ec72fe5fb4bbe744
+ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60096601"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "60566367"
 ---
 # <a name="define-messaging-extension-search-commands"></a>Определение команд поиска расширения обмена сообщениями
 
@@ -28,7 +28,7 @@ ms.locfileid: "60096601"
 * Область составить сообщение. Кнопки в нижней части области составить сообщение.
 * Командная шкатулка: @mentioning в командном окне.
 
-При вызове команды поиска из области составить сообщение пользователь отправляет результаты в беседу. Когда он вызывается из командного окна, пользователь взаимодействует с результативной картой или копирует ее для использования в другом месте.
+  При вызове команды поиска из области составить сообщение пользователь отправляет результаты в беседу. Когда он вызывается из командного окна, пользователь взаимодействует с результативной картой или копирует ее для использования в другом месте.
 
 На следующем изображении отображаются расположения ссылок команды поиска:
 
@@ -181,7 +181,7 @@ ms.locfileid: "60096601"
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Откликайся на команды поиска.](~/messaging-extensions/how-to/search-commands/respond-to-search.md)

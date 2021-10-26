@@ -5,12 +5,12 @@ description: В этой статье описано, где люди могут
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: a23b447a07e0664875acbf9bf75f170a24a51dc2
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 3d4f3150447603fe8462b3a8166f6bc76de7cc03
+ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157343"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "60566353"
 ---
 # <a name="entry-points-for-teams-apps"></a>Точки входа для приложений Teams
 

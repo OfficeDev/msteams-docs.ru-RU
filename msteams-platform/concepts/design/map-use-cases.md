@@ -5,12 +5,12 @@ description: Определите, как могут работать случа
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: d9c52acc1562cb2dcfdcd9b0c58e4d4001699c9c
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: bb5f15d1b8d6b7b04c78bdd3110f97891c0a6165
+ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156295"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "60566290"
 ---
 # <a name="map-your-use-cases-to-teams-app-capabilities"></a>Составить карту случаев использования для Teams возможностей приложения
 
@@ -46,7 +46,7 @@ ms.locfileid: "59156295"
 
 ## <a name="create-share-and-collaborate-on-items-in-an-external-system"></a>Создание, совместное и совместное создание элементов во внешней системе
 
-Приложение для Microsoft Teams — это отличный способ взаимодействия с данными, из чего можно выбрать различные точки интеграции.
+Приложения для Microsoft Teams — это отличный способ взаимодействия с данными, из чего можно выбрать различные точки интеграции.
 
 * **Расширения обмена сообщениями с командами** поиска: поиск внешних систем и обмен результатами в качестве интерактивной карты.
 
