@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: d079d015826759e86b9888029d4f8925a6cc5730
-ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
+ms.openlocfilehash: 40b4f428c6e1c493a360588ce3dc569e067d4d0a
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60291606"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720199"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -54,10 +54,10 @@ API позволяет боту получать сведения о `GetPartici
 
 API `GetParticipant` включает следующие параметры запроса:
 
-|Value|Тип|Обязательный|Описание|
+|Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| String | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
 |**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. | 
 
 ### <a name="example"></a>Пример
@@ -159,7 +159,7 @@ API `GetParticipant` возвращает следующие коды ответ
 
 API `NotificationSignal` включает в себя следующий параметр запроса:
 
-|Value|Тип|Обязательный|Описание|
+|Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
 |**conversationId**| Строка | Да | Идентификатор беседы доступен в рамках Bot Invoke. |
 
@@ -254,9 +254,9 @@ API доступен через службы ботов.
 
 API сведений о собраниях включает в себя следующий параметр запроса:
 
-|Value|Тип|Обязательный|Описание|
+|Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
 ### <a name="example"></a>Пример
 
@@ -308,9 +308,6 @@ The JSON response body for Meeting Details API is as follows:
 ```
 
 ## <a name="real-time-teams-meeting-events"></a>События Teams в режиме реального времени
-
-> [!NOTE]
-> В настоящее время эта функция доступна только [для предварительного просмотра общедоступных](../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
 Пользователь может получать события собраний в режиме реального времени. Как только любое приложение связано с собранием, фактическое время начала и окончания собрания передается боту.
 
@@ -465,7 +462,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 ## <a name="code-sample"></a>Пример кода
 
-|Название примера | Описание | C # | Node.js | 
+|Название примера | Описание | C# | Node.js | 
 |----------------|-----------------|--------------|--------------|
 | Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
 | Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
@@ -480,7 +477,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для Teams собраний](teams-apps-in-meetings.md)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="nextstepaction"]
 > [Включить и настроить приложения для Teams собраний](enable-and-configure-your-app-for-teams-meetings.md)

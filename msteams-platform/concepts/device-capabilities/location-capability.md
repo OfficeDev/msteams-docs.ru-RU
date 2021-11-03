@@ -6,12 +6,12 @@ keywords: Возможности карты расположения для ро
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: e2c1d48087e21250d5e2c7582ee3f5309590225a
-ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
+ms.openlocfilehash: 66cd0c4f1b0d095551db79f7ed928477124e326b
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60496146"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60719793"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения 
 
@@ -103,7 +103,13 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 | **8000** | USER_ABORT |Пользователь отменил операцию.|
 | **9000** | OLD_PLATFORM | Пользователь находится на старой сборке платформы, где нет реализации API. Обновление сборки должно решить проблему.|
 
-## <a name="see-also"></a>См. также
+### <a name="code-sample"></a>Пример кода
+
+|Название примера | Описание | C# | Node.js | 
+|----------------|-----------------|--------------|--------------|
+| Текущее расположение регистрации приложения | Пользователи могут проверить текущее расположение и просмотреть все предыдущие проверки расположения.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-checkin-location/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-checkin-location/nodejs) |
+
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
 * [Интеграция QR-кода или возможности сканера штрихкодов в Teams](qr-barcode-scanner-capability.md)

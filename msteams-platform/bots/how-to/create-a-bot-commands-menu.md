@@ -5,12 +5,12 @@ description: Создание командного меню для Microsoft Tea
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: f29261a1d22f7629ffe17b444b42af6f5df1e792
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: af987ae2fa538ffb785e782f191c674132440311
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157223"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720108"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -44,7 +44,7 @@ ms.locfileid: "59157223"
 
     ![App Studio](./conversations/media/AppStudio.png)
 
-2. В **App Studio** выберите **вкладку Редактор Манифеста.** Если у вас нет существующего пакета приложений, можно создать или импортировать существующее приложение. Дополнительные сведения см. [в обновленном пакете приложений.](~/get-started/get-started-dotnet-app-studio.md#use-app-studio-to-update-the-app-package)
+2. В **App Studio** выберите **вкладку Редактор Манифеста.** Если у вас нет существующего пакета приложений, можно создать или импортировать существующее приложение. Дополнительные сведения см. [в обновленном пакете приложений.](~/get-started/deploy-csharp-app-studio.md)
 
 3. В левой области редактора **Манифеста** и в разделе **Возможности** выберите **Bots**.
 
@@ -60,7 +60,7 @@ ms.locfileid: "59157223"
 
     ![Кнопка меню меню App Studio](./conversations/media/AppStudio-NewCommandMenu.png)
 
-### <a name="create-a-command-menu-for-your-bot-by-editing-manifestjson"></a>Создание командного меню для бота путем редактирования Manifest.jsна
+### <a name="create-a-command-menu-for-your-bot-by-editing-manifestjson"></a>Создание командного меню для бота путем редактирования Manifest.json
 
 Другой способ создания командного меню — это создание его непосредственно в файле манифеста при разработке исходных кодов бота. Чтобы использовать этот метод, следуйте следующим пунктам:
 
@@ -212,7 +212,7 @@ modified_text = TurnContext.remove_recipient_mention(turn_context.activity)
 > [!NOTE]
 > Если вы удалите какие-либо команды из манифеста, необходимо изменить приложение для реализации изменений. Как правило, любые изменения манифеста требуют переделок вашего приложения.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Канал и групповые разговоры](~/bots/how-to/conversations/channel-and-group-conversations.md)

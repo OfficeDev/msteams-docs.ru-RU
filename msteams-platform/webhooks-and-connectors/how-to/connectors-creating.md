@@ -6,12 +6,12 @@ keywords: соединитель teams o365
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 39c2533f112f5cb3c72446ad8a5638687dd3db2e
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: d2f245b63d58c8de775786304026a41fd65081e3
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156042"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720206"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -19,9 +19,9 @@ ms.locfileid: "59156042"
 
 ## <a name="add-a-connector-to-teams-app"></a>Добавление соединителю в Teams приложение
 
-Вы можете [упаковать](~/concepts/build-and-test/apps-package.md) [и опубликовать](~/concepts/deploy-and-publish/apps-publish.md) соединители в рамках отправки AppSource. Вы можете распространять зарегистрированный соединитатель как часть пакета Teams приложения. Сведения о точках входа для Teams приложения см. [в таблице capabilities.](~/concepts/extensibility-points.md) Вы также можете предоставить пакет пользователям непосредственно для загрузки в Teams.
+Вы можете создать пакет [и](~/concepts/build-and-test/apps-package.md) [опубликовать](~/concepts/deploy-and-publish/apps-publish.md) соединители в рамках отправки AppSource. Вы можете распространять зарегистрированный соединитатель как часть пакета Teams приложения. Сведения о точках входа для Teams приложения см. [в таблице capabilities.](~/concepts/extensibility-points.md) Вы также можете предоставить пакет пользователям непосредственно для загрузки в Teams.
 
-Для распространения соединитетеля необходимо зарегистрироваться через [панель мониторинга разработчиков соединители.](https://outlook.office.com/connectors/home/login/#/publish) При регистрации соединитетеля предполагается, что он работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams. Если это не так, и необходимо создать соединителя, который работает только в Microsoft Teams, свяжитесь: Microsoft Teams отправки приложений по [электронной почте](mailto:teamsubm@microsoft.com).
+Для распространения соединитетеля необходимо зарегистрироваться через [панель мониторинга разработчиков соединители.](https://aka.ms/connectorsdashboard) При регистрации соединитетеля предполагается, что он работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams. Если это не так, и необходимо создать соединителя, который работает только в Microsoft Teams, свяжитесь: Microsoft Teams отправки приложений по [электронной почте](mailto:teamsubm@microsoft.com).
 
 > [!IMPORTANT]
 > Соединитель регистрируется после выбора **сохранить** в панели мониторинга разработчика соединители. Если вы хотите опубликовать соединителе в AppSource, следуйте инструкциям в публикации [Microsoft Teams приложения в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, раздайте его непосредственно организации. После [публикации соединители для организации](#publish-connectors-for-the-organization)никаких дополнительных действий на панели мониторинга соединители не требуется.
@@ -158,12 +158,12 @@ ms.locfileid: "59156042"
 1. [Включение двух значков](../../concepts/build-and-test/apps-package.md#app-icons).
 1. Измените `icons` часть манифеста, чтобы включить имена файлов значков вместо URL-адресов.
 
-В следующем manifest.jsфайле содержатся элементы, необходимые для тестирования и отправки приложения:
+В следующем файле manifest.json содержатся элементы, необходимые для тестирования и отправки приложения:
 
 > [!NOTE]
 > Замените `id` `connectorId` и в следующем примере guID соединитетеля.
 
-#### <a name="example-of-manifestjson-with-connector"></a>Пример manifest.jsс соединитетелем
+#### <a name="example-of-manifestjson-with-connector"></a>Пример manifest.json с соединитетелем
 
 ```json
 {

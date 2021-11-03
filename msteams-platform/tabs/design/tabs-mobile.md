@@ -3,12 +3,12 @@ title: Вкладки на мобильных устройствах
 description: Описывает соображения разработчика для реализации вкладок на Microsoft Teams мобильном телефоне.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: bc853c995e0a580a2a2580caa8d7c420f7d9680e
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 2b540369b2da9fb0d6eae5d6fd8ddf121992147d
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156229"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60719856"
 ---
 # <a name="tabs-on-mobile"></a>Вкладки на мобильных устройствах
 
@@ -60,7 +60,7 @@ ms.locfileid: "59156229"
 
 | Возможность | Доступность мобильных устройств? | Поведение мобильных устройств |
 |----------|-----------|------------|
-|Вкладка каналов и групп|Да|Вкладка открывается в браузере устройства по умолчанию, а не в мобильном клиенте Teams с помощью конфигурации приложения, которая также должна быть включена в функцию исходных `websiteUrl` `setSettings()` [кодов.](/javascript/api/@microsoft/teams-js/settings?view=msteams-client-js-latest#functions&preserve-view=true) Однако пользователи могут просматривать вкладку Teams мобильного клиента,  выбрав Дополнительные рядом с приложением и выбрав **Open,** который запускает конфигурацию `contentUrl` вашего приложения.|
+|Вкладка каналов и групп|Да|Вкладка открывается в браузере устройства по умолчанию, а не в мобильном клиенте Teams с помощью конфигурации приложения, которая также должна быть включена в функцию исходных `websiteUrl` `setSettings()` [кодов.](/microsoftteams/platform/tabs/how-to/using-teams-client-sdk#settings-namespace) Однако пользователи могут просматривать вкладку Teams мобильного клиента,  выбрав Дополнительные рядом с приложением и выбрав **Open,** который запускает конфигурацию `contentUrl` вашего приложения.|
 |Личное приложение|НЕТ|Неприменимо|
 
 ### <a name="apps-not-on-teams-store"></a>Приложения, не Teams магазине
@@ -74,7 +74,7 @@ ms.locfileid: "59156229"
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Получение контекста для вкладки](~/tabs/how-to/access-teams-context.md)

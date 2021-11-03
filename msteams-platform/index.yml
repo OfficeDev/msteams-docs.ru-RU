@@ -120,7 +120,7 @@ conceptualContent:
         - url: /microsoftteams/platform/samples/shifts-wfm-connectors
           itemType: reference
           text: Интеграция готовых к производству соединители Shifts
-    - title: Community
+    - title: Сообщество
       links:
         - url: 'https://developer.microsoft.com/microsoft-teams/blogs/'
           itemType: overview
@@ -149,7 +149,7 @@ conceptualContent:
           itemType: concept
           text: Конечные пользователи
 tools:
-  title: SDKs и средства
+  title: Инструменты и пакеты SDK
   items:
     - title: Microsoft Teams набор средств расширения для Visual Studio Code
       imageSrc: /media/logos/logo_vs-code.svg
@@ -157,6 +157,12 @@ tools:
     - title: Microsoft Teams набор средств для Visual Studio
       imageSrc: /media/logos/logo_vs-ide.svg
       url: /microsoftteams/platform/toolkit/visual-studio-overview
+    - title: Портал разработчика
+      imageSrc: ./assets/icons/devp-logo.png
+      url: /microsoftteams/platform/concepts/build-and-test/teams-developer-portal
+    - title: Пакеты SDK Microsoft Graph
+      imageSrc: ./assets/icons/graph-icon-1.png
+      url: 'https://docs.microsoft.com/graph/sdks/sdks-overview'
     - title: SDK клиента JavaScript для вкладок и других опытом
       imageSrc: ./assets/icons/logo_js.png
       url: /microsoftteams/platform/tabs/how-to/using-teams-client-sdk
@@ -166,12 +172,6 @@ tools:
     - title: Пакеты SDK .NET Bot Framework для ботов и расширений для обмена сообщениями
       imageSrc: ./assets/icons/logo_net.png
       url: 'https://github.com/Microsoft/botbuilder-dotnet/'
-    - title: Пакеты SDK Microsoft Graph
-      imageSrc: ./assets/icons/graph-icon-1.png
-      url: 'https://docs.microsoft.com/graph/sdks/sdks-overview'
-    - title: Microsoft Teams App Studio
-      imageSrc: ./assets/icons/AppStudioIcon.png
-      url: /microsoftteams/platform/concepts/build-and-test/app-studio-overview
     - title: Генератор Yeoman для Microsoft Teams
       imageSrc: ./assets/icons/Yeoman.png
       url: 'https://github.com/OfficeDev/generator-teams'

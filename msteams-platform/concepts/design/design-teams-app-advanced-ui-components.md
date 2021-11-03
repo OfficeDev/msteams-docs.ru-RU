@@ -5,12 +5,12 @@ description: Узнайте о компонентах пользовательс
 ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: a1b9c90b77457e8ff4a478befa36830da0407343
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 2e35b83e66e26155b847ad7cb914c1970397676b
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157624"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60719849"
 ---
 # <a name="designing-your-microsoft-teams-app-with-advanced-ui-components"></a>Разработка приложения Microsoft Teams с расширенными компонентами пользовательского интерфейса
 
@@ -75,11 +75,11 @@ Breadcrumbs — это навигационный помощник, которы
 
 :::image type="content" source="../../assets/images/ui-templates/notification-bar.png" alt-text="В примере показаны шаблоны пользовательского интерфейса панели уведомлений на рабочем столе." border="false":::
 
-## <a name="stage"></a>Этап
+## <a name="stage-view"></a>Представление stage
 
-Stage позволяет пользователям просматривать контент, например изображение, файл или веб-сайт, на большой поверхности Teams без переключения контекста. Этап предназначен в первую очередь для просмотра контента. Не используйте этап для сложных взаимодействий.
+Представление stage позволяет пользователям просматривать контент, например изображение, файл или веб-сайт, на большой поверхности в Teams без переключения контекста. Этот компонент предназначен в первую очередь для просмотра контента. Не используйте его для сложных взаимодействий.
 
-Узнайте, как реализовать [этап](~/tabs/tabs-link-unfurling.md).
+Узнайте, как реализовать [представление сцены.](~/tabs/tabs-link-unfurling.md)
 
 ### <a name="top-use-cases"></a>Верхние случаи использования
 

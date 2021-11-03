@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 8ff8282ae54612c0e1eee1d353777e5dae0b7990
-ms.sourcegitcommit: c04a1a792773a9d5c61169c5702d94a8c478ad1c
+ms.openlocfilehash: 617c7d962dc27964c28af74b73c252b08a39f307
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60260542"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720353"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовка отправки Microsoft Teams магазина
 
@@ -27,9 +27,7 @@ ms.locfileid: "60260542"
 
 Средство Microsoft Teams проверки приложений помогает выявлять и устранять проблемы перед отправкой в Центр партнеров. Средство автоматически проверяет конфигурации вашего приложения на фоне тех же тестовых случаев, используемых во время проверки в магазине.
 
-1. Перейдите [Microsoft Teams инструмент проверки приложений](https://dev.teams.microsoft.com/validation) на портале разработчиков. 
-    > [!NOTE]
-    > Средство проверки приложений также доступно в [App Studio.](../../../build-and-test/app-studio-overview.md)
+1. Перейдите к [средству проверки Microsoft Teams приложения.](https://dev.teams.microsoft.com/appvalidation.html) (Примечание. Этот инструмент также доступен в [App Studio.)](../../../build-and-test/app-studio-overview.md)
 1. Upload пакет приложения для запуска автоматических тестов.
 1. Перейдите в **предварительный контрольный список** и просмотрите тестовые случаи, которые трудно автоматизировать.
 1. [Устранение проблем с конфигурациями или](~/resources/schema/manifest-schema.md) приложением в целом. Эти проблемы возникают, если автоматические тесты дают вам ошибки или вы не выполнили все критерии в списке.
@@ -211,7 +209,7 @@ ms.locfileid: "60260542"
 > [!NOTE]
 > Если вы отправили новое приложение, вы не можете официально завершить проверку Publisher, пока ваше приложение не будет перечислены в Teams магазине. Если вы обновляете перечисленное приложение, Publisher проверку перед отправкой последней версии приложения для проверки.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Отправка приложения](/office/dev/store/add-in-submission-guide)

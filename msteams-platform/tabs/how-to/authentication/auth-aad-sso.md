@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO AAD api с одним входом
-ms.openlocfilehash: e0dbef26be829980d04278d748298414bc17c473
-ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
+ms.openlocfilehash: e242562c4e533b1a79f14598ad6edcf2bf561b03
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60291718"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720339"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -21,6 +21,8 @@ ms.locfileid: "60291718"
 > ✔Teams для Android (1416/1.0.0.2020073101 и более поздней версии)
 >
 > ✔Teams для iOS _(Версия_: 2.0.18 и более поздней версии)  
+> 
+> ✔Teams JavaScript SDK _(Версия_: 1.10 и более поздней версии) для SSO для работы в боковой панели собраний. 
 >
 > Для наилучшего использования Teams используйте последнюю версию iOS и Android.
 

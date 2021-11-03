@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: fc10fe795dd278eec2da12b38915a27465a2df9d
-ms.sourcegitcommit: cbc6e8f363b4e80b6cbee098508f9f8affbfac09
+ms.openlocfilehash: 1705e85843fbe8d75af978da8baff081b58c6ca1
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60221861"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720310"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
@@ -26,8 +26,8 @@ ms.locfileid: "60221861"
 
 * [Добавление проверки подлинности](~/bots/how-to/authentication/add-authentication.md) в Teams бот описывает использование потока веб-проверки подлинности с помощью разговорного бота.
 * [Поток проверки подлинности на вкладке](~/tabs/how-to/authentication/auth-flow-tab.md) описывает работу проверки подлинности вкладок в Teams. Это показывает типичный поток проверки подлинности на веб-основе, используемый для вкладок.
-* [Проверка подлинности AAD](~/tabs/how-to/authentication/auth-tab-AAD.md) на вкладке описывает, как подключиться к AAD из вкладки в приложении в Teams.
-* [Silent authentication AAD](~/tabs/how-to/authentication/auth-silent-AAD.md) describes how to reduce sign-in or consent prompts in the app using AAD.
+* [AAD проверки](~/tabs/how-to/authentication/auth-tab-AAD.md) подлинности на вкладке описывает, как подключиться к AAD из вкладки в приложении в Teams.
+* [В немом AAD](~/tabs/how-to/authentication/auth-silent-AAD.md) описывается, как уменьшить количество подсказок для регистрации или согласия в приложении с помощью AAD.
 * [.Net или C#](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp) [JavaScript ](https://github.com/OfficeDev/microsoft-teams-sample-complete-node) или Node.jsпредоставляет образцы для проверки подлинности на основе веб-сайтов.
 
 ## <a name="the-oauthprompt-flow-for-conversational-bots"></a>Поток OAuthPrompt для разговорных ботов
@@ -41,7 +41,7 @@ OAuthPrompt платформы Azure Bot Framework упрощает провер
 
 ## <a name="code-sample"></a>Пример кода
 
-Образцы проверки подлинности Bot Framework v4.
+предоставляет образец проверки подлинности бота v3 SDK.
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
@@ -51,7 +51,10 @@ OAuthPrompt платформы Azure Bot Framework упрощает провер
 
 ## <a name="configure-the-identity-provider"></a>Настройка поставщика удостоверений
 
-Независимо от потока проверки подлинности приложения настройте поставщика удостоверений для связи с Teams приложением. Большинство примеров и поуча-ов в основном связаны с использованием AAD в качестве поставщика удостоверений. Однако концепции применяются независимо от поставщика удостоверений. 
+Независимо от потока проверки подлинности приложения настройте поставщика удостоверений для связи с Teams приложением. Большинство примеров и погон в основном связаны с использованием AAD в качестве поставщика удостоверений. Однако концепции применяются независимо от поставщика удостоверений. 
 
 Дополнительные сведения см. [в примере настройки поставщика удостоверений.](~/concepts/authentication/configure-identity-provider.md)
 
+## <a name="third-party-cookies-on-ios"></a>Сторонние файлы cookie на iOS
+
+После обновления iOS 14 Apple заблокировала сторонний доступ к файлам [cookie](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/) для всех приложений по умолчанию. Поэтому приложения, которые используют сторонние файлы cookie для проверки подлинности в вкладке Channel или Chat и личные приложения, не смогут завершить процессы проверки подлинности на Teams iOS-клиентах. Чтобы соответствовать требованиям конфиденциальности и безопасности, необходимо перейти к системе, основанной на маркерах, или использовать первопартийные файлы cookie для рабочего процесса проверки подлинности пользователей.

@@ -6,12 +6,12 @@ keywords: команды вкладки группового канала нас
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: cb69a23a3f8446c3f9b78cffbe0dc88d686c4a8a
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 48137f7e922ac0b504d7b88465adb42edd3ba4e4
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156222"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720192"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -90,11 +90,11 @@ ms.locfileid: "59156222"
 
 Выберите **кнопку Выберите серый** или **красный** на странице конфигурации, чтобы отобразить содержимое вкладки с серым или красным значком.
 
-На следующем изображении отображается содержимое вкладки с серым значком:
+На следующем изображении отображается содержимое вкладки с **выбранным значком Серый:**
 
 <img src="~/assets/images/tab-images/configure-tab-with-gray.png" alt="Configure tab with select gray" width="400"/>
 
-На следующем изображении отображается содержимое вкладки с красным значком:
+На следующем изображении отображается содержимое вкладки с **выбранным красным значком:**
 
 <img src="~/assets/images/tab-images/configure-tab-with-red.png" alt="Configure tab with select red" width="400"/>
 
@@ -123,7 +123,7 @@ ms.locfileid: "59156222"
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте местообладатели в `configurationUrl`
 
-Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например.
+Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Примеры:
 
 ##### <a name="base-url"></a>Базовый URL-адрес
 
@@ -208,7 +208,7 @@ microsoftTeams.settings.setSettings({
 * [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 > [!div class="nextstepaction"]
 > [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)

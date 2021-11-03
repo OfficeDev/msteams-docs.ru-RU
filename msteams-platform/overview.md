@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: 6fce2deb5dc482a1f348739e6090d4623996df27
-ms.sourcegitcommit: 329447310013a2672216793dab79145b24ef2cd2
+ms.openlocfilehash: fcec0e01f6f9d635896ef14eb4efee5e56f9e761
+ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60017340"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60720115"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
@@ -20,7 +20,7 @@ Microsoft Teams приложения приносят ключевые свед�
 Приложения — это то, как Teams, чтобы соответствовать вашим потребностям. Создайте что-то новое для Teams или интегрируете существующее приложение.
 
 > [!div class="nextstepaction"]
-> [Начните отсюда](get-started/prerequisites.md)
+> [Начните отсюда](get-started/get-started-overview.md)
 
 ## <a name="what-are-teams-apps"></a>Что такое Teams приложения?
 
@@ -77,7 +77,7 @@ Teams приложения — это сочетание [возможносте
 
 :::row-end:::
 
-### <a name="messaging-extensions"></a>Расширения для обмена сообщениями
+### <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
 
 :::row:::
 
@@ -153,7 +153,7 @@ Teams приложения — это сочетание [возможносте
 Быстро ознакомьтесь с созданием для Teams, настроив среду и создав простое приложение.
 
 > [!div class="nextstepaction"]
-> [Создание первого приложения](get-started/prerequisites.md)
+> [Создание первого приложения](get-started/get-started-overview.md)
 
    :::column-end:::
    :::column span="":::
