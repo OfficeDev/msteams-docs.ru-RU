@@ -10,26 +10,18 @@
 - name: Начало работы
   expanded: false
   items:
-    - name: Обзор
-      href: get-started/code-samples.md
-    - name: Предварительные требования
-      href: get-started/prerequisites.md
-    - name: Создание первого приложения с помощью React
-      href: get-started/first-app-react.md
+    - name: Обзор начала работы
+      href: get-started/get-started-overview.md
+    - name: Создание первого приложения с помощью JavaScript
+      href: sbs-gs-javascript.yml
     - name: Создание первого приложения с помощью Blazor
-      href: get-started/first-app-blazor.md
+      href: sbs-gs-blazor.yml
     - name: Создание первого приложения с помощью SPFx
-      href: get-started/first-app-spfx.md
+      href: sbs-gs-spfx.yml
     - name: Создание первого приложения с помощью C# или .NET
-      href: get-started/get-started-dotnet-app-studio.md
+      href: sbs-gs-csharp.yml
     - name: Создание первого приложения с помощью Node.js
-      href: get-started/get-started-nodejs-app-studio.md
-    - name: Создание первого приложения с помощью генератора Yeoman
-      href: get-started/get-started-yeoman.md
-    - name: Создание первого чат-бота
-      href: get-started/first-app-bot.md
-    - name: Создание первого расширения для сообщений
-      href: get-started/first-message-extension.md
+      href: sbs-gs-nodejs.yml
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Основные сведения о приложении
