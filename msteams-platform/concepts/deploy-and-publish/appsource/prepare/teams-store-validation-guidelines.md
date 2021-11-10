@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 96bcb97fbb6189a657c9ac2aea167aaaa7f74592
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 5b485e08029ba6a1028ffa19482cd767007b2444
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720227"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888512"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -466,3 +466,10 @@ URL-адреса службы поддержки приложения не до�
 
 > [!div class="nextstepaction"]
 > [Создание учетной записи Центра партнеров](~/concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md)
+
+## <a name="see-also"></a>См. также
+
+* [Распространение приложения](~/concepts/deploy-and-publish/apps-publish-overview.md)
+* [Подготовка к отправке в магазин](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)
+* [Протестируйте и отладьте ваше приложение](~/concepts/build-and-test/debug.md)
+* [Создание учетной записи разработчика Центра партнеров](~/concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md)

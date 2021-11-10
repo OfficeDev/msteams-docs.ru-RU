@@ -4,12 +4,12 @@ description: Узнайте, как создать адаптивные карт
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: bf0119f8cab7eeaf15745b27b6117063b108f8f8
-ms.sourcegitcommit: c883f9675f3d392e3d77329c97b8e2c4cb26b695
+ms.openlocfilehash: b016df98d57b9a3f5fe03e6cf26b31ad2d7b8db9
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60249805"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887966"
 ---
 # <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a>Разработка адаптивных карточек для приложения Microsoft Teams
 
@@ -679,3 +679,11 @@ ms.locfileid: "60249805"
 #### <a name="do-be-concise"></a>Рекомендуется: будьте краткими
 
 В беседу можно легко отправить несколько карточек, но после прокрутки и исчезновения карточек с экрана они становятся менее полезными. Попробуйте ограничиться основными моментами. Это особенно актуально в каналах, где пользователи более склонны воспринимать элементы как ненужный "шум".
+
+## <a name="see-also"></a>См. также
+
+* [Карточки и модули задач](~/task-modules-and-cards/cards-and-task-modules.md)
+* [Карточки и модули задач, поддерживаемые в боте Teams](~/task-modules-and-cards/what-are-task-modules.md)
+* [Работа с универсальными действиями для адаптивных карточек](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/work-with-universal-actions-for-adaptive-cards.md)
+* [Ответ на действие отправки модуля задач](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
+* [Пользовательские просмотры](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/user-specific-views.md)
