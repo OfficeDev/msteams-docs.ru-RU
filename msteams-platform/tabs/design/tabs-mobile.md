@@ -1,14 +1,15 @@
 ---
 title: Вкладки на мобильных устройствах
-description: Описывает соображения разработчика для реализации вкладок на Microsoft Teams мобильном телефоне.
+description: Узнайте о внедрении вкладок на Microsoft Teams, их проверке подлинности, низкой пропускной способности, тестировании на мобильных клиентах, распространении и других.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 2b540369b2da9fb0d6eae5d6fd8ddf121992147d
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+keywords: Распределение проверки подлинности группы каналов мобильных вкладок приложения
+ms.openlocfilehash: d2b1190ee5bb7122557aa64fb18065f542291f3a
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60719856"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888435"
 ---
 # <a name="tabs-on-mobile"></a>Вкладки на мобильных устройствах
 
@@ -29,7 +30,7 @@ ms.locfileid: "60719856"
 > * Поведение приложений по умолчанию применимо только в том случае, если они распространяются Teams магазине. По умолчанию все вкладки открываются в Teams клиенте.
 > * Чтобы инициировать оценку мобильной безопасности приложения, протянуть teamsubm@microsoft.com сведения о приложении.
 
-## <a name="authentication"></a>Аутентификация
+## <a name="authentication"></a>Проверка подлинности
 
 Для проверки подлинности для мобильных клиентов необходимо обновить Teams JavaScript SDK по крайней мере до версии 1.4.1.
 
@@ -67,14 +68,15 @@ ms.locfileid: "60719856"
 
 Если вы перегружаете приложение или публикуете его в каталог приложений организации, поведение вкладок будет таким же, как Teams приложений магазина, утвержденных Корпорацией Майкрософт для мобильных устройств.
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Получение контекста для вкладки](~/tabs/how-to/access-teams-context.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Рекомендации по разработке вкладок](~/tabs/design/tabs.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Получение контекста для вкладки](~/tabs/how-to/access-teams-context.md)
+* [Планирование мобильных Teams - Teams](~/concepts/design/plan-responsive-tabs-for-teams-mobile.md)

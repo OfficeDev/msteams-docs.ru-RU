@@ -1,16 +1,16 @@
 ---
 title: Ответ на действие отправки модуля задач
 author: surbhigupta
-description: Описывает, как реагировать на отправку действия модуля задач из команды действий расширения обмена сообщениями.
+description: Описывает, как реагировать на отправку действия модуля задач из команды действий расширения обмена сообщениями с помощью проактивного сообщения, другого модуля задач, бота адаптивной карты и других примеров кода.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 92a7080d57b1ea6de3924da53a968d3fc960029a
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: ac74fb4536f5e7b36e40982cf13a7cf4edfa1644
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566388"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889414"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -590,8 +590,8 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 |:---|:---|:---|
 |`itemId`|Целое число|Описывает идентификацию элемента. Его значение должно быть `0` .|
 |`mentionType`|Строка|Описывает упоминание о "человеке".|
-|`mri`|Строка|Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение. Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".|
-|`displayName`|Строка|Имя человека. Используется в качестве отката в разрешении имени случая недоступно.|
+|`mri`|String|Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение. Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".|
+|`displayName`|String|Имя человека. Используется в качестве отката в разрешении имени случая недоступно.|
   
 ## <a name="code-sample"></a>Пример кода
 
@@ -605,3 +605,6 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 > [!div class="nextstepaction"]
 > [Определить команды поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)
 
+## <a name="see-also"></a>См. также
+
+[Ответ на команду поиска](~/messaging-extensions/how-to/search-commands/respond-to-search.md)

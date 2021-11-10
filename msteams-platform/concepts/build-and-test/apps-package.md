@@ -3,12 +3,12 @@ title: Пакет приложения
 description: Узнайте, как упаковировать Microsoft Teams для тестирования, загрузки и публикации в магазине.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 926d6051024ae6e9a5f3d857bdb97fa02f56e8db
-ms.sourcegitcommit: c04a1a792773a9d5c61169c5702d94a8c478ad1c
+ms.openlocfilehash: 44b8f21361c39bd723ff375b385569125b65ea27
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60260675"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889309"
 ---
 # <a name="create-a-microsoft-teams-app-package"></a>Создание пакета Microsoft Teams приложения
 
@@ -102,3 +102,7 @@ Teams автоматически обнажает значок для отобр
 > [Публикация приложения в вашей организации](/MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json)
 > [!div class="nextstepaction"]
 > [Публикация приложения в магазине](~/concepts/deploy-and-publish/appsource/publish.md)
+
+## <a name="see-also"></a>См. также
+
+[Управление приложениями с помощью портала разработчиков для Microsoft Teams](~/concepts/build-and-test/teams-developer-portal.md)

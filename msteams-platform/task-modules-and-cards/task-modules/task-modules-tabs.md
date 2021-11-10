@@ -1,15 +1,15 @@
 ---
 title: Использование модулей задач в Microsoft Teams вкладками
-description: Объясняет, как вызывать модули задач из Teams вкладок с помощью Microsoft Teams SDK клиента.
+description: Объясняет, как вызывать модули задач с Teams вкладок и отправку результатов с помощью Microsoft Teams клиентской SDK. Он включает в себя примеры кода.
 ms.localizationpriority: medium
 ms.topic: how-to
 keywords: модули задач группы вкладок sdk клиента
-ms.openlocfilehash: 0f6c1569a1aa18921df4635bdbaab505526c1e2e
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 618775644b43f16a6de49f7bc2fa92a512b73591
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157451"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888561"
 ---
 # <a name="use-task-modules-in-tabs"></a>Использование модулей задач во вкладках
 
@@ -131,13 +131,13 @@ function validateForm() {
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-[Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)
+|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Использование модулей задач от ботов](~/task-modules-and-cards/task-modules/task-modules-bots.md)
+
+## <a name="see-also"></a>См. также
+
+[Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)

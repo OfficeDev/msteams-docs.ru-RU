@@ -5,12 +5,12 @@ ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: 7648f0f4ae1a3a89e051bea45249855c41befd9d
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 02ea6d9caf4acc43bcd9a361113baf7ce9f8464a
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156331"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888190"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Upload приложение в Microsoft Teams
 
@@ -23,7 +23,7 @@ ms.locfileid: "59156331"
 > [!IMPORTANT]
 > В настоящее время приложения для боковой загрузки доступны в облако сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и проверьте его [на](https://dev.teams.microsoft.com/appvalidation.html) ошибки.
 * [Включить настраиваемую загрузку](~/concepts/build-and-test/prepare-your-o365-tenant.md#enable-custom-teams-apps-and-turn-on-custom-app-uploading) приложения в Teams.
@@ -66,3 +66,8 @@ Teams предоставляет несколько способов откры�
 
 > [!div class="nextstepaction"]
 > [Используйте приложение Teams](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-us&rs=en-us&ad=us)
+
+## <a name="see-also"></a>См. также
+
+* [Настройка параметров установки по умолчанию](~/concepts/deploy-and-publish/add-default-install-scope.md)
+* [Ведение опубликованного Microsoft Teams приложения](~/concepts/deploy-and-publish/appsource/post-publish/overview.md)

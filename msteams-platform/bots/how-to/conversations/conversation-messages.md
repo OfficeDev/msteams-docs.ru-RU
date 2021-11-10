@@ -1,16 +1,16 @@
 ---
 title: Сообщения в беседах с ботами
-description: Описывает способы беседы с Microsoft Teams ботом
+description: Описывает способы беседы с Microsoft Teams ботом. Сведения о Teams каналов, уведомлении о сообщении, сообщениях с изображениями, адаптивных картах с помощью образцов кода.
 ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 5d2855493b4863232655ef808191f671cf784289
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: d417d0cc737b088a5f04ac8a45c834cd83bbbde5
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566241"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889337"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -236,7 +236,7 @@ async def on_members_added_activity(
 
 ## <a name="message-content"></a>Содержимое сообщения
 
-| Формат    | От пользователя к боту | От бота к пользователю | Заметки                                                                                   |
+| Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.  |
@@ -391,15 +391,16 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-- [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
-
-- [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Меню команд бота](~/bots/how-to/create-a-bot-commands-menu.md)
+
+## <a name="see-also"></a>См. также
+
+* [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
+* [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+* [Отправка и получение файлов через бот](~/bots/how-to/bots-filesv4.md)
+* [Отправка ID клиента и ИД беседы в заглавные главы запроса бота](~/bots/how-to/conversations/request-headers-of-the-bot.md)

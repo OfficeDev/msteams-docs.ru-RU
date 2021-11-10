@@ -3,12 +3,12 @@ title: Настраиваемые сцены режима совместно
 description: Работа с настраиваемой совместной сценой режима
 ms.topic: conceptual
 ms.localizationpriority: none
-ms.openlocfilehash: 0558b3914ba3cabf2af3937a4a4cadb9342c3844
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: 051924aa8a8f02c6e9a075639014e4fc3290d8c0
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475603"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887632"
 ---
 # <a name="custom-together-mode-scenes-in-teams"></a>Настраиваемые сцены режима "Вместе" в Teams
 
@@ -242,4 +242,6 @@ Scene.json вместе с изображениями указывают точ�
 
 ## <a name="see-also"></a>См. также
 
-[Приложения для Teams собраний](teams-apps-in-meetings.md)
+[Приложения для Teams собраний](teams-apps-in-meetings.md) 
+ [Боты вызовов и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md) 
+ [Вызовы и](~/bots/calls-and-meetings/real-time-media-concepts.md) встречи с Microsoft Teams

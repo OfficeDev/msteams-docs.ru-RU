@@ -5,12 +5,13 @@ author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: 481ed07682767a303efed50ec06a22cbbb393408
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+keywords: wireframe channel chat meeting messaging extensions mobile desktop
+ms.openlocfilehash: 3d63cc705ac567b0b19db2e3caf4a84420dae9bd
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157527"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887576"
 ---
 # <a name="understand-the-microsoft-teams-app-structure"></a>Понимание структуры Microsoft Teams приложения
 
@@ -60,7 +61,7 @@ ms.locfileid: "59157527"
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для вкладок на рабочем столе." border="false":::
 
-## <a name="bots"></a>боты;
+## <a name="bots"></a>Боты
 
 Боты — это диалоговые приложения, которые Teams с родными функциями обмена сообщениями, поэтому работа пользовательского интерфейса обрабатывается для вас. С точки зрения разработки все еще существуют возможности для добавления индивидуальности, пользовательских функций и богатых сведений с помощью поддержки обработки естественных языков (NLP) и платформы Адаптивные карты.
 
@@ -74,7 +75,7 @@ ms.locfileid: "59157527"
 
 :::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-desktop.png" alt-text="Концептуальное изображение, показывающая области переднего Teams, которые разработчики могут настраивать для ботов на рабочем столе." border="false":::
 
-## <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
+## <a name="messaging-extensions"></a>расширения для обмена сообщениями;
 
 Расширения для сообщений помогают быстро вставить содержимое приложения или выполнить какие-либо операции с сообщением, не выходя из беседы. Расширения обмена сообщениями на основе действий дают дополнительный контроль над опытом, а Teams обрабатывают большую часть отрисовок для расширений обмена сообщениями на основе поиска.
 

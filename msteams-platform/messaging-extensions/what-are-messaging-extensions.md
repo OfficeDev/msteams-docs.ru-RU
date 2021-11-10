@@ -1,18 +1,18 @@
 ---
-title: Расширения для система обмена сообщениями
+title: расширения для обмена сообщениями;
 author: surbhigupta
 description: Обзор расширений обмена сообщениями на Microsoft Teams платформе
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 6df54db100a5a903493cdc20aa805e5e339ab8f1
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: 1ef83dd8dc87b54f7ec02e110565b9ecb0a14667
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566143"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889372"
 ---
-# <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
+# <a name="messaging-extensions"></a>расширения для обмена сообщениями;
 
 Расширения обмена сообщениями позволяют пользователям взаимодействовать с веб-службой с помощью кнопок и форм Microsoft Teams клиента. Они могут искать или инициировать действия во внешней системе из области композитного сообщения, командного окна или непосредственно из сообщения. Результаты этого взаимодействия можно отправить клиенту Microsoft Teams в виде богато отформатированной карты. В этом документе представлен обзор расширения обмена сообщениями, задач, выполняемых в различных сценариях, работы над расширением обмена сообщениями, команд действий и поиска и разгрузки ссылок.
 
@@ -76,12 +76,7 @@ ms.locfileid: "60566143"
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |------------|-------------|----------------|------------|
 | Расширение обмена сообщениями с командами на основе действий | В этом примере показано, как создать расширение обмена сообщениями на основе действий. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
-| Расширение обмена сообщениями с командами на основе поиска | В этом примере показано, как создать расширение обмена сообщениями на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-[Создание расширения для обмена сообщениями](../build-your-first-app/build-messaging-extension.md)
-
+| Расширение обмена сообщениями с командами на основе поиска | В этом примере показано, как создать расширение обмена сообщениями на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
 
 ## <a name="next-step"></a>Следующий этап
 
@@ -90,3 +85,7 @@ ms.locfileid: "60566143"
 
 > [!div class="nextstepaction"]
 > [Определение команды расширения обмена сообщениями поиска](~/messaging-extensions/how-to/search-commands/define-search-command.md)
+
+## <a name="see-also"></a>См. также
+
+* [Создание расширения для обмена сообщениями](../build-your-first-app/build-messaging-extension.md)

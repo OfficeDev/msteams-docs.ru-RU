@@ -5,12 +5,12 @@ description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: a5702afcc4e87486d23f363e2e7ec0476f597a71
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 17f6e34cbed0980b379e317db976a46c0cf9fc3f
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156336"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887854"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
@@ -49,11 +49,15 @@ ms.locfileid: "59156336"
 
 Вы можете использовать API Teams бота для получения сведений для одного или более членов чата или группы. Дополнительные сведения см. в [Teams API-Teams](~/resources/team-chat-member-api-changes.md)для получения участников группы или чата.
 
-## <a name="see-also"></a>См. также
-
-[Создать бота для Teams](~/bots/how-to/create-a-bot-for-teams.md)
-
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Боты и пакеты SDK](~/bots/bot-features.md)
+
+## <a name="see-also"></a>См. также
+
+* [Создать бота для Teams](~/bots/how-to/create-a-bot-for-teams.md)
+* [Регистрация вызовов и собраний бота для Microsoft Teams](~/bots/calls-and-meetings/registering-calling-bot.md)
+* [Добавление проверки подлинности в Teams бота](~/bots/how-to/authentication/add-authentication.md)
+* [Обработчики действий ботов](~/bots/bot-basics.md)
+* [События бесед в вашем боте Teams](~/bots/how-to/conversations/subscribe-to-conversation-events.md)

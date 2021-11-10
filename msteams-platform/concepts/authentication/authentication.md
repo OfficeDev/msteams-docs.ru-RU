@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: группы проверки подлинности OAuth SSO AAD
-ms.openlocfilehash: 1705e85843fbe8d75af978da8baff081b58c6ca1
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: b2f8dc18afac3b088c1ec05812a3a39e2b378182
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720310"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889081"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
@@ -58,3 +58,9 @@ OAuthPrompt платформы Azure Bot Framework упрощает провер
 ## <a name="third-party-cookies-on-ios"></a>Сторонние файлы cookie на iOS
 
 После обновления iOS 14 Apple заблокировала сторонний доступ к файлам [cookie](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/) для всех приложений по умолчанию. Поэтому приложения, которые используют сторонние файлы cookie для проверки подлинности в вкладке Channel или Chat и личные приложения, не смогут завершить процессы проверки подлинности на Teams iOS-клиентах. Чтобы соответствовать требованиям конфиденциальности и безопасности, необходимо перейти к системе, основанной на маркерах, или использовать первопартийные файлы cookie для рабочего процесса проверки подлинности пользователей.
+
+## <a name="see-also"></a>См. также
+
+* [Microsoft Teams потока проверки подлинности для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md)
+* [Поддержка единого входа для ботов](~/bots/how-to/authentication/auth-aad-sso-bots.md)
+* [Добавление проверки подлинности в расширение для сообщений](~/messaging-extensions/how-to/add-authentication.md)

@@ -1,16 +1,16 @@
 ---
 title: Создание пользовательских приложений с низким кодом для Microsoft Teams
 author: surbhigupta
-description: Подробные данные о доступных microsoft low и отсутствие решений для кода для Teams
+description: Узнайте о доступных решениях microsoft low и без Teams платформы Microsoft Power. Узнайте о решениях, таких как Power Apps, Power Automate, Виртуальный помощник и другие.
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 77e3f3cbd8e5de53748b64b5006df259b2164e4f
-ms.sourcegitcommit: 72de146d11e81fd9777374dd3915ad290fd07d82
+ms.openlocfilehash: bd5a36505e028739edde9645c5eb3e1b8355dc5e
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59360671"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887896"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание пользовательских приложений с низким кодом для Microsoft Teams
 

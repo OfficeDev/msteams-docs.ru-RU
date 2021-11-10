@@ -1,16 +1,17 @@
 ---
 title: События беседы
 author: WashingtonKayaker
-description: Работа с событиями беседы из Microsoft Teams бота.
+description: Как работать с событиями беседы из Microsoft Teams бота, обновлениями событий канала, событиями членов группы и событиями реакции на сообщения с примерами кода.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 6dbefee88b1af763d02b3647d21bdc44da9541ec
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+keywords: беседа реакции сообщения канала бота событий
+ms.openlocfilehash: bc99091e3eac4a35514cbab4327082223edffa40
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566255"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888281"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 

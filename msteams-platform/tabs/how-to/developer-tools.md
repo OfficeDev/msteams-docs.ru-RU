@@ -1,15 +1,15 @@
 ---
 title: DevTools для вкладок Microsoft Teams
-description: Описывает, как добраться до DevTools при использовании Microsoft Teams настольного клиента
+description: Описывает, как добраться до DevTools при использовании Microsoft Teams настольного клиента и отладки
 ms.localizationpriority: medium
 ms.topic: how-to
-keywords: devtools отладка мобильных средств разработки настольных компьютеров chrome для настольных компьютеров
-ms.openlocfilehash: 9aee38c6b063e54c876d11bfc498a9fcce9fbcf1
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+keywords: devtools отладка мобильных хром настольных средств разработчика настольных компьютеров вкладка
+ms.openlocfilehash: 6844648df311bd9ae326e74919cc64e871e54b05
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157207"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887422"
 ---
 # <a name="devtools-for-microsoft-teams-tabs"></a>DevTools для вкладок Microsoft Teams
 

@@ -5,12 +5,12 @@ description: Добавьте модули всплывающих приложе
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: a82552f43456aa1ddee0b68f13a8c5435165ed64
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 0b726712ccbf954238c5102afa81d8ed412217fe
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157492"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888302"
 ---
 # <a name="task-modules"></a>Модули задач
 
@@ -50,11 +50,11 @@ ms.locfileid: "59157492"
 6. Если вы отображаете адаптивную карту с помощью свойства объекта `card` [TaskInfo,](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) для вас добавляется обивка. Дополнительные сведения см. в [cSS-модуле CSS для модулей задач HTML или JavaScript.](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-css-for-html-or-javascript-task-modules)
 7. Кнопки адаптивной карты отрисовываются после выбора **регистрации.** При использовании собственной страницы создайте собственные кнопки.
 
-## <a name="see-also"></a>См. также
-
-[Карточки](~/task-modules-and-cards/what-are-cards.md)
-
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)
+
+## <a name="see-also"></a>См. также
+
+[Карточки](~/task-modules-and-cards/what-are-cards.md)

@@ -1,16 +1,17 @@
 ---
 title: Разработка приложения с помощью Fluent компонентов пользовательского интерфейса
 author: heath-hamilton
-description: Узнайте о примитивных компонентах пользовательского интерфейса, которые обычно используются для Microsoft Teams приложений и получения Microsoft Teams пользовательского интерфейса.
+description: Узнайте о примитивных компонентах пользовательского интерфейса, которые обычно используются для Microsoft Teams приложений и получения Microsoft Teams пользовательского интерфейса. Узнайте о компонентах, таких как сухари, карточки, карусель, отсев, каретная знака, выборщик, поворотник, торгль, инструментарий и т. д.
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: b905a95f35abb083b5c8bba7c096e1012adb223d
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+keywords: Компоненты пользовательского интерфейса свободно набор breadcrumb кнопки карусель карусель падение карусель карусель пикировщика поворота toggle tooltip
+ms.openlocfilehash: af5d7b63ebdca96f0e9563049e4cc22d00f1f45a
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157368"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887499"
 ---
 # <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Разработка приложения Microsoft Teams с базовыми компонентами пользовательского интерфейса Fluent интерфейса
 
@@ -45,7 +46,7 @@ ms.locfileid: "59157368"
 
 :::image type="content" source="../../assets/images/components/carousel.png" alt-text="В примере показан компонент пользовательского интерфейса карусель." border="false":::
 
-## <a name="checkbox"></a>Флажок
+## <a name="checkbox"></a>флажок;
 
 :::image type="content" source="../../assets/images/components/checkbox.png" alt-text="В примере показан компонент пользовательского интерфейса почтовых ящиков." border="false":::
 

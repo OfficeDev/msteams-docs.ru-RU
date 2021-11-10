@@ -1,16 +1,16 @@
 ---
 title: Управление приложениями с помощью портала разработчиков
-description: Узнайте, как управлять приложениями с помощью портала разработчиков для Microsoft Teams.
+description: Узнайте, как настраивать, распространять и управлять приложениями с помощью портала разработчиков для Microsoft Teams.
 keywords: начало работы команд портала разработчиков
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: c8a31f55131fb594a8d47c05e40533512e7de689
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 598ee5fae79ff7c4c4a4c1096d1d234ecab89629
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720395"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888554"
 ---
 # <a name="manage-your-apps-with-the-developer-portal-for-microsoft-teams"></a>Управление приложениями с помощью портала разработчиков для Microsoft Teams
 

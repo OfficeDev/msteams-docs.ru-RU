@@ -1,15 +1,15 @@
 ---
 title: Вызов и закрытие модулей задач
-description: Вызов и увольнение модулей задач.
+description: Сведения о ссылке и отклонении модулей задач, объекта информации о задачах, размере модуля задач, синтаксис глубокой ссылки модуля задач с помощью образцов кода
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: ab6425ae90c04e142e5d69f4a41ff49358731a23
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 226548dca8001fecce4cd784a7411d4ca5841e5e
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157247"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887534"
 ---
 # <a name="invoke-and-dismiss-task-modules"></a>Вызов и закрытие модулей задач
 
@@ -227,16 +227,16 @@ Microsoft Teams обеспечивает правильную работу на�
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
 |Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
-|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-* [Запрос разрешений устройства](~/concepts/device-capabilities/native-device-permissions.md)
-* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
-* [Интеграция возможностей сканера QR или штрихкодов в Teams](~/concepts/device-capabilities/qr-barcode-scanner-capability.md)
-* [Интеграция возможностей расположения в Teams](~/concepts/device-capabilities/location-capability.md)
+|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)| 
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Использование модулей задач во вкладках](~/task-modules-and-cards/task-modules/task-modules-tabs.md)
+
+## <a name="see-also"></a>См. также
+
+* [Запрос разрешений устройства](~/concepts/device-capabilities/native-device-permissions.md)
+* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
+* [Интеграция возможностей сканера QR или штрихкодов в Teams](~/concepts/device-capabilities/qr-barcode-scanner-capability.md)
+* [Интеграция возможностей расположения в Teams](~/concepts/device-capabilities/location-capability.md)

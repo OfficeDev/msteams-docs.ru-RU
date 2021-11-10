@@ -1,17 +1,17 @@
 ---
 title: Создание вкладок бесед
 author: surbhigupta
-description: Создание беседного чата подуряда для вкладок канала
+description: Научитесь создавать беседные беседы для вкладок канала, управлять беседами с помощью образцов кода
 keywords: группы вкладок канал настраивается
 ms.topic: conceptual
 ms.author: lomeybur
 ms.localizationpriority: none
-ms.openlocfilehash: 7426ca8d994a9009b05e5a3eece05d4938f07f80
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 63f6310faa4bec78f246857cbd7c1368acee8edf
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720374"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889365"
 ---
 # <a name="create-conversational-tabs"></a>Создание вкладок бесед
 
@@ -94,17 +94,17 @@ microsoftTeams.conversations.onCloseConversation = (conversationResponse) => {
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Создание вкладки Conversational| Microsoft Teams пример приложения для демонстрации создания вкладки беседы. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
+|Создание вкладки Conversational| Microsoft Teams пример приложения для демонстрации создания вкладки беседы. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Изменения полей вкладок](~/resources/removing-tab-margins.md)
+
+## <a name="see-also"></a>См. также
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 * [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Изменения полей вкладок](~/resources/removing-tab-margins.md)

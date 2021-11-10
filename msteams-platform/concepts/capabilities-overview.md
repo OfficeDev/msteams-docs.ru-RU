@@ -1,17 +1,18 @@
 ---
 title: Понимание возможностей приложения
 author: heath-hamilton
-description: Teams возможности приложения
+description: Описание возможностей Teams приложений, таких как Tabs, Bots, Messaging extensions, and Webhooks and connectors.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.date: 09/22/2020
-ms.openlocfilehash: eae30ddfd735730208c4f1ac47cfd5ec2a8c2c88
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+keywords: вкладки боты расширения сообщений веб-ок соединители gcc
+ms.openlocfilehash: e4db8bde75d2d396ada5c0789b8cc06731701443
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566297"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888148"
 ---
 # <a name="understand-microsoft-teams-app-capabilities"></a>Понимание Microsoft Teams приложений
 
@@ -64,12 +65,12 @@ ms.locfileid: "60566297"
 * Для побочных загрузки приложений см. в Teams настраивать [приложение,](../concepts/design/enable-app-customization.md)распространять Microsoft Teams приложение [и](../concepts/deploy-and-publish/apps-publish-overview.md)Upload приложение в [Teams](../concepts/deploy-and-publish/apps-upload.md).
 * Для настраиваемой соединители [см. в Office 365 соединители для Teams](../webhooks-and-connectors/how-to/connectors-creating.md).
 
-## <a name="see-also"></a>См. также
-
-[Создание приложений для Teams](../overview.md) 
- [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
-
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Точки входа приложения Teams](../concepts/extensibility-points.md)
+
+## <a name="see-also"></a>См. также
+
+[Создание приложений для Teams](../overview.md) 
+ [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)

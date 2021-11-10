@@ -1,16 +1,16 @@
 ---
 title: Определение команд поиска расширения обмена сообщениями
 author: surbhigupta
-description: Определение команд поиска расширения обмена сообщениями для Microsoft Teams приложений.
+description: Узнайте о командах поиска расширения обмена сообщениями для Microsoft Teams приложений, чтобы создать команду поиска с помощью манифеста приложения и вручную с помощью примеров кода и примера.
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: none
-ms.openlocfilehash: 0842b47a688de210dbfb197e886dce7fed21dce5
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 104d5762aa3933d63764b2c703fad366cf190a0e
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720129"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889386"
 ---
 # <a name="define-messaging-extension-search-commands"></a>Определение команд поиска расширения обмена сообщениями
 
@@ -70,7 +70,7 @@ ms.locfileid: "60720129"
 
 1. Добавьте параметр поиска и выберите **Сохранить**.
 
-### <a name="create-a-search-command-manually"></a>Создание команды поиска вручную 
+### <a name="create-a-search-command-manually"></a>Создание команды поиска вручную
 
 Чтобы вручную добавить команду поиска расширения обмена сообщениями в манифест приложения, необходимо добавить в массив объектов следующие `composeExtension.commands` параметры:
 
@@ -95,7 +95,7 @@ ms.locfileid: "60720129"
 
 #### <a name="example"></a>Пример
 
-В следующем разделе приводится пример простого манифеста приложения объекта, определяющий `composeExtensions` команду поиска: 
+В следующем разделе приводится пример простого манифеста приложения объекта, определяющий `composeExtensions` команду поиска:
 
 ```json
 {
@@ -130,7 +130,7 @@ ms.locfileid: "60720129"
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Откликайся на команды поиска.](~/messaging-extensions/how-to/search-commands/respond-to-search.md)

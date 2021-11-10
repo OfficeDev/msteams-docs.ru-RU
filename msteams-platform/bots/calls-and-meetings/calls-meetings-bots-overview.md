@@ -1,15 +1,15 @@
 ---
 title: Боты вызовов и сетевых собраний
-description: Узнайте, как Microsoft Teams приложения могут взаимодействовать с пользователями с помощью голосовых и видео с помощью API Graph Microsoft для звонков и собраний в Интернете.
+description: Узнайте, как Microsoft Teams приложения могут взаимодействовать с пользователями с помощью голосовых и видео с помощью API microsoft Graph для звонков и собраний в Интернете, а также узнайте о потоках мультимедиа в режиме реального времени
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: вызов вызовов аудио видео IVR голосовых собраний в Интернете
-ms.openlocfilehash: e94cb425f7931582067bc3439e890b74b64e0f51
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+keywords: вызов вызовов аудио видео IVR голосовых онлайн-собраний в режиме реального времени средства массовой информации бот
+ms.openlocfilehash: 17464683c8a5f6aa515d67be721968d56d1d2fb7
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157576"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889148"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 
@@ -93,25 +93,19 @@ ms.locfileid: "59157576"
 | **Название примера** | **Описание** | **Microsoft Graph** |
 |---------------|----------|--------|
 | Graph связи | Graph связи для взаимодействия с платформой связи Майкрософт. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples) |
-| Бот вызовов и собраний | Пример приложения демонстартирует, как Бот может создавать вызовы, присоединяться к собранию и переносу вызова. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-calling-meeting/csharp) |
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-- [Graph Ссылка на API](/graph/api/resources/communications-api-overview?view=graph-rest-beta&preserve-view=true)
-
-- [Примеры приложений](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
-
-- [Регистрация бота, поддерживаюного вызовы и собрания в Интернете](./registering-calling-bot.md)
-
-- [Graph разрешений для звонков и сетевых ботов собраний](./registering-calling-bot.md#add-graph-permissions)
-
-- [Разработка ботов вызовов и онлайн-собраний на компьютере](./debugging-local-testing-calling-meeting-bots.md)
-
-- [Требования и соображения к медийным ботам с хостингом приложений](./requirements-considerations-application-hosted-media-bots.md)
-
-- [Техническая информация по обработке входящих уведомлений о вызове](./call-notifications.md)
+| Бот вызовов и собраний | Пример приложения демонстартирует, как Бот может создавать вызовы, присоединяться к собранию и переносу вызова. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-calling-meeting/csharp) |
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Звонки и собрания в реальном времени](~/bots/calls-and-meetings/real-time-media-concepts.md)
+
+## <a name="see-also"></a>См. также
+
+- [Graph Ссылка на API](/graph/api/resources/communications-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Примеры приложений](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
+- [Регистрация бота, поддерживаюного вызовы и собрания в Интернете](./registering-calling-bot.md)
+- [Graph разрешений для звонков и сетевых ботов собраний](./registering-calling-bot.md#add-graph-permissions)
+- [Разработка ботов вызовов и онлайн-собраний на компьютере](./debugging-local-testing-calling-meeting-bots.md)
+- [Требования и соображения к медийным ботам с хостингом приложений](./requirements-considerations-application-hosted-media-bots.md)
+- [Техническая информация по обработке входящих уведомлений о вызове](./call-notifications.md)

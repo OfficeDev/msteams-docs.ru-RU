@@ -1,16 +1,16 @@
 ---
 title: Тестирование и отлагивание бота локально
 author: surbhigupta
-description: Тестирование и отладка бота локально с помощью IDE
+description: Узнайте о тестировании и отладке бота локально с помощью IDE в Teams среде с помощью боковой загрузки, Teams с помощью эмулятора Bot и напрямую разговаривая с ботом.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: c07d1a9eb8a28b328a1a60ba299f05d39b460fbe
-ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
+ms.openlocfilehash: 9ac6e2f7bf173e68e111b0d792ec89ba266c188f
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60096558"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888232"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 
@@ -20,11 +20,8 @@ ms.locfileid: "60096558"
 
 Наиболее полный способ тестирования бота — это создание пакета приложений и его загрузка в Teams. Это единственный способ тестирования всех функциональных возможностей, доступных вашему боту, во всех сферах.
 
-> [!NOTE]
->  App Studio скоро будет отвягот. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков.](https://dev.teams.microsoft.com/)
-
 Существует два метода для загрузки приложения:
-* Используйте [портал разработчика](https://dev.teams.microsoft.com/) или [App Studio.](~/concepts/build-and-test/app-studio-overview.md)
+* Используйте [App Studio](~/concepts/build-and-test/app-studio-overview.md).
 * [Создайте пакет приложения](~/concepts/build-and-test/apps-package.md) вручную, а затем [загрузите приложение.](~/concepts/deploy-and-publish/apps-upload.md)
 
 > [!NOTE]

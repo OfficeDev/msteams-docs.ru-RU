@@ -5,12 +5,12 @@ description: Сведения о том, как использовать Сое�
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: соединитель teams o365
-ms.openlocfilehash: 6d10a173079fb31db303e98bfaf0800ff048a187
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 46a0bc8ad797d5fc856e44fe662faf208cb7b5bb
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157656"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887394"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -251,7 +251,7 @@ ms.locfileid: "59157656"
 
 | Время в секундах  | Максимальное разрешенное количество запросов  |
 |---|---|
-| 1   | 4   |  
+| 1   | 4  |  
 | 30   | 60  |  
 | 3600   | 100  |
 | 7200 | 150  |
@@ -285,3 +285,5 @@ try
 * [Office 365 Соединители для Microsoft Teams](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Создание входящих веб-ок](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)
 * [Создание исходятого веб-окка](~/webhooks-and-connectors/how-to/add-outgoing-webhook.md)
+* [Ограничение скорости для Teams сообщений ботов](~/bots/how-to/rate-limit.md)
+* [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)

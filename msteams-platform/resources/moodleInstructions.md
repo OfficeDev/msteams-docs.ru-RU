@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: bdf5ea5b6f08c638bd00a69df59ae2e25b76b0ad
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: f87264adc75e504feddc10f470f739747fb3d96b
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156102"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888134"
 ---
 # <a name="install-moodle-lms"></a>Установка Moodle LMS
 
@@ -30,7 +30,7 @@ ms.locfileid: "59156102"
 >
 > Дополнительные данные о возможностях, которые предоставляет эта интеграция, см. в [Microsoft Teams и Moodle.](https://education.microsoft.com/resource/3dffb3a8)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Ниже следующую предпосылку для установки Moodle:
 
@@ -293,4 +293,3 @@ ms.locfileid: "59156102"
 - [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
 - [Moodle](https://moodle.org/)
 - [Документация Moodle](https://docs.moodle.org/34/en/Installing_plugins).
-

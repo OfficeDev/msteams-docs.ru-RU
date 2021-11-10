@@ -6,12 +6,12 @@ ms.date: 08/26/2020
 ms.localizationpriority: medium
 ms.topic: conceptual
 title: Веб-приложения
-ms.openlocfilehash: 24b48dabdf5fa472ce6e50fc891ba3df85405772
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 60eab032e35ebb823161d5e32f27e2bdf3bb4ab2
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156277"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889211"
 ---
 # <a name="web-apps"></a>Веб-приложения 
 
@@ -111,11 +111,11 @@ Teams имеет механизмы единого входного (SSO) с Azu
 
 Используйте бот [в](../bots/what-are-bots.md) приложении Teams для многопотокого разговора, так как он обеспечивает больше гибкости, чем [веб-ок.](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)
 
-Боты также позволяют отправлять активные **сообщения** отдельным пользователям или каналам. Проактивные сообщения — это незапланированные сообщения, запускаемые внешним событием, а не сообщения, отправленные боту. Например, бот отправляет приветствие при установке или при подступах к каналу нового пользователя. 
+Боты также позволяют отправлять активные **сообщения** отдельным пользователям или каналам. Проактивные сообщения — это незапланированные сообщения, запускаемые внешним событием, а не сообщения, отправленные боту. Например, бот отправляет приветствие при установке или при подступах к каналу нового пользователя.
 
 Отправка активных сообщений требует Teams идентификаторов. Вы можете захватить эти [сведения,](../bots/how-to/get-teams-context.md#fetch-the-roster-or-user-profile)извлекая данные реестра или профиля пользователей, записавшись на события беседы [или](../bots/how-to/conversations/subscribe-to-conversation-events.md) [используя Microsoft Graph.](/microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context#proactive-messaging-in-teams)
 
-Не спамить пользователей с избыточными сообщениями. Если Teams поддерживает его, пользователи могут настроить параметры уведомлений для вашего приложения.   
+Не спамить пользователей с избыточными сообщениями. Если Teams поддерживает его, пользователи могут настроить параметры уведомлений для вашего приложения.
 Ниже приводится пример сообщения уведомления: не отправлять мне **незавернутые сообщения**.
 
 ## <a name="use-sharepoint-for-file-and-data-storage"></a>Использование SharePoint для хранения файлов и данных
@@ -126,4 +126,8 @@ Teams имеет механизмы единого входного (SSO) с Azu
 
 ## <a name="see-also"></a>См. также
 
-[Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+* [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+* [Решения с низким кодом и без кода для Microsoft Teams](~/samples/teams-low-code-solutions.md)
+* [Создание кнопки «Поделиться в Teams»](../concepts/build-and-test/share-to-teams.md)
+* [Атрибуты cookie SameSite](~/resources/samesite-cookie-update.md)
+* [Интеграция Power Virtual Agents чат-бота](~/bots/how-to/add-power-virtual-agents-bot-to-teams.md)

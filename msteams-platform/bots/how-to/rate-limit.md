@@ -1,15 +1,15 @@
 ---
 title: Оптимизация бота с ограничением скорости в Teams
-description: Ограничение скорости и лучшие практики в Microsoft Teams
+description: Узнайте об обращении с ограничением скорости для ботов с ограничением для каждого бота на поток и ограничением для всех ботов с помощью примеров кода. Кроме того, изучите скорость, ограничивающую лучшие практики в Microsoft Teams.
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: ограничения скорости командных ботов
-ms.openlocfilehash: f1e874c5e3db572c5f3111f0a5e6f8a4c6f3d87d
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 1be6377a6d7497b4f1b53f034eb631547dcf4a5c
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156343"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889295"
 ---
 # <a name="optimize-your-bot-with-rate-limiting-in-teams"></a>Оптимизация бота с ограничением скорости в Teams
 
@@ -140,11 +140,11 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 | Создание беседы | 30 | 60 |
 | Создание беседы | 3600 | 1800 |
 | Получить участников беседы| 1 | 14  |
-| Получить участников беседы| 2 | 16  |
+| Получить участников беседы| 2 | 16 |
 | Получить участников беседы| 30 | 120 |
 | Получить участников беседы| 3600 | 3600 |
 | Получать беседы | 1 | 14  |
-| Получать беседы | 2 | 16  |
+| Получать беседы | 2 | 16 |
 | Получать беседы | 30 | 120 |
 | Получать беседы | 3600 | 3600 |
 
@@ -162,11 +162,11 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 | Сценарий | Период времени в секундах | Максимально допустимые операции |
 | --- | --- | --- |
 | Отправка в беседу | 1 | 14  |
-| Отправка в беседу | 2 | 16  |
+| Отправка в беседу | 2 | 16 |
 | Создание беседы | 1 | 14  |
-| Создание беседы | 2 | 16  |
+| Создание беседы | 2 | 16 |
 | Создание беседы| 1 | 14  |
-| Создание беседы| 2 | 16  |
+| Создание беседы| 2 | 16 |
 | Получить участников беседы| 1 | 28 |
 | Получить участников беседы| 2 | 32 |
 | Получать беседы | 1 | 28 |
@@ -176,4 +176,3 @@ await retryPolicy.ExecuteAsync(() => connector.Conversations.ReplyToActivityAsyn
 
 > [!div class="nextstepaction"]
 > [Боты для звонков и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)
-

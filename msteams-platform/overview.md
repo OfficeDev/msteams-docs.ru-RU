@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: fcec0e01f6f9d635896ef14eb4efee5e56f9e761
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 878b6fd22373edb8f9cbbf28c15c8d5dd10ee3e0
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720115"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888036"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
@@ -60,7 +60,7 @@ Teams приложения — это сочетание [возможносте
 
 :::row-end:::
 
-### <a name="bots"></a>Боты
+### <a name="bots"></a>боты;
 
 :::row:::
    :::column span="1":::
@@ -77,7 +77,7 @@ Teams приложения — это сочетание [возможносте
 
 :::row-end:::
 
-### <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
+### <a name="messaging-extensions"></a>расширения для обмена сообщениями;
 
 :::row:::
 
@@ -211,8 +211,6 @@ Teams приложения — это сочетание [возможносте
 
 ## <a name="see-also"></a>См. также
 
-* [Добавьте кнопку Share-to-Teams на веб-сайте](concepts/build-and-test/share-to-teams.md)
-* [Разработка Teams приложения](concepts/design/design-teams-app-overview.md)
-* [Microsoft Teams SDK клиента JavaScript](/javascript/api/@microsoft/teams-js/?view=msteams-client-js-latest&preserve-view=true)
-* Bot Framework SDK для [JavaScript](https://github.com/Microsoft/botbuilder-js) и [.NET](https://github.com/Microsoft/botbuilder-dotnet/)
-* [Распространение приложения Teams](concepts/deploy-and-publish/apps-publish-overview.md)
+* [Основные сведения о приложении](~/concepts/app-fundamentals-overview.md)
+* [Разработка Teams приложения](~/concepts/design/design-teams-app-process.md)
+* [Составить карту случаев использования для Teams возможностей приложения](~/concepts/design/map-use-cases.md)

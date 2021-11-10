@@ -1,21 +1,21 @@
 ---
 title: Интеграция возможностей мультимедиа
 author: Rajeshwari-v
-description: Использование SDK Teams JavaScript для обеспечения возможностей мультимедиа
-keywords: Возможности микрофона изображения камеры для носителей разрешений на устройства
+description: Узнайте, как использовать SDK Teams JavaScript для обеспечения возможностей мультимедиа с помощью примеров кода
+keywords: Возможности микрофона изображения камеры для родных разрешений на устройства api мультимедиа
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: f1c091195b85bab84d01ea88cc8234d2e415b9f7
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: 2540383b0c546dea956cf8f534ba0669c0c16fa9
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566122"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887736"
 ---
-# <a name="integrate-media-capabilities"></a>Интеграция возможностей мультимедиа 
+# <a name="integrate-media-capabilities"></a>Интеграция возможностей мультимедиа
 
-Вы можете интегрировать возможности родного  устройства,  такие как камера и микрофон с Teams приложением. Для интеграции можно использовать Microsoft Teams [Клиента JavaScript SDK,](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true)который предоставляет средства, необходимые вашему приложению для доступа к разрешениям устройства [пользователя.](native-device-permissions.md) Используйте подходящие API средств массовой информации для  интеграции  возможностей устройства, например камеры и микрофона с платформой Teams в мобильном приложении Microsoft Teams и создания более богатого опыта. 
+Вы можете интегрировать возможности родного  устройства,  такие как камера и микрофон с Teams приложением. Для интеграции можно использовать Microsoft Teams [Клиента JavaScript SDK,](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true)который предоставляет средства, необходимые вашему приложению для доступа к разрешениям устройства [пользователя.](native-device-permissions.md) Используйте подходящие API средств массовой информации для  интеграции  возможностей устройства, например камеры и микрофона с платформой Teams в мобильном приложении Microsoft Teams и создания более богатого опыта.
 
 ## <a name="advantage-of-integrating-media-capabilities"></a>Преимущество интеграции возможностей мультимедиа
 
@@ -26,10 +26,10 @@ ms.locfileid: "60566122"
 
 Важно ознакомиться с ошибками [ответа API](#error-handling) для обработки ошибок в Teams приложении.
 
-> [!NOTE] 
-> * В настоящее время Microsoft Teams средства массовой информации доступны только для мобильных клиентов.   
-> * В настоящее время Teams не поддерживает разрешения устройств для приложений с несколькими окнами, вкладок и боковой панели собраний.   
-> * Разрешения устройств отличаются в браузере. Дополнительные сведения см. в [дополнительных сведениях о разрешениях на устройство браузера.](browser-device-permissions.md) 
+> [!NOTE]
+> * В настоящее время Microsoft Teams средства массовой информации доступны только для мобильных клиентов.
+> * В настоящее время Teams не поддерживает разрешения устройств для приложений с несколькими окнами, вкладок и боковой панели собраний.
+> * Разрешения устройств отличаются в браузере. Дополнительные сведения см. в [дополнительных сведениях о разрешениях на устройство браузера.](browser-device-permissions.md)
 
 ## <a name="update-manifest"></a>Манифест обновления
 
@@ -256,4 +256,4 @@ microsoftTeams.media.selectMedia(mediaInput, (error: microsoftTeams.SdkError, at
 * [Интеграция возможностей сканера QR или штрихкодов в Teams](qr-barcode-scanner-capability.md)
 * [Интеграция возможностей расположения в Teams](location-capability.md)
 * [Интеграция выборщика людей в Teams](people-picker-capability.md)
-
+* [Требования и соображения к медийным ботам с хостингом приложений](~/bots/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md)

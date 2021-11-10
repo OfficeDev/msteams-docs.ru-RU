@@ -6,18 +6,18 @@ keywords: QR-код qr code qrcode barcode сканера штрихкода к�
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: a3ec2b8735c0d1a9a234fba6a34e7040d819fc9b
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: c21408ccbca6cd12d37d2066cf50f3468b669012
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566360"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888001"
 ---
-# <a name="integrate-qr-or-barcode-scanner-capability"></a>Интеграция функции сканирования QR- или штрихкода 
+# <a name="integrate-qr-or-barcode-scanner-capability"></a>Интеграция функции сканирования QR- или штрихкода
 
 Штрихкод — это метод представления данных в визуальной и машинной форме. Штрихкод содержит сведения о продукте, например типе, размере, изготовителе и стране происхождения в виде баров и пробелов. Код читается с помощью оптического сканера на вашей родной камере устройства. Для более насыщенного взаимодействия можно интегрировать функцию сканера QR или штрих-кода, предоставляемую на платформе Teams с Teams приложением.   
 
-Вы можете [использовать Microsoft Teams JavaScript клиента SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true), который предоставляет средства, необходимые для вашего приложения, чтобы получить доступ к возможностям родного [устройства пользователя](native-device-permissions.md). Используйте [API scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) для интеграции возможностей сканера в приложении. 
+Вы можете [использовать Microsoft Teams JavaScript клиента SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true), который предоставляет средства, необходимые для вашего приложения, чтобы получить доступ к возможностям родного [устройства пользователя](native-device-permissions.md). Используйте [API scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) для интеграции возможностей сканера в приложении.
 
 ## <a name="advantage-of-integrating-qr-or-barcode-scanner-capability"></a>Преимущество интеграции функции сканера QR или штрихкода
 
@@ -112,4 +112,3 @@ microsoftTeams.media.scanBarCode((error: microsoftTeams.SdkError, decodedText: s
 * [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
 * [Интеграция возможностей расположения в Teams](location-capability.md)
 * [Интеграция выборщика людей в Teams](people-picker-capability.md)
-

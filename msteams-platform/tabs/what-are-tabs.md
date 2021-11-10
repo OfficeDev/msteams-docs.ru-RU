@@ -5,12 +5,12 @@ description: Обзор пользовательских вкладок на п�
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 6f18760670f81bea0e0c2bad6da9f15bd1982f0f
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: d84a0a293ad4c0de507dfc56078db4d214649b1d
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60719842"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887401"
 ---
 # <a name="microsoft-teams-tabs"></a>Вкладки Microsoft Teams
 
@@ -84,14 +84,15 @@ ms.locfileid: "60719842"
 * [Наборы средств Teams для Visual Studio Code](../toolkit/visual-studio-code-overview.md)
 * [Наборы средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Необходимые компоненты](~/tabs/how-to/tab-requirements.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
 * [Интеграция возможностей мультимедиа](../concepts/device-capabilities/mobile-camera-image-permissions.md)
 * [Интеграция сканера QR или штрихкода](../concepts/device-capabilities/qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](../concepts/device-capabilities/location-capability.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Необходимые компоненты](~/tabs/how-to/tab-requirements.md)
+* [Вкладки на мобильных устройствах](design/tabs-mobile.md#tabs-on-mobile)

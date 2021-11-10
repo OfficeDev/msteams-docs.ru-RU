@@ -1,22 +1,22 @@
 ---
 title: Создание приложений с помощью Teams набор средств и Visual Studio
-description: Начало создания больших пользовательских приложений непосредственно в Visual Studio с Microsoft Teams набор средств
+description: Начало создания больших пользовательских приложений непосредственно Visual Studio с Microsoft Teams набор средств. Научитесь настраивать приложение в Visual Studio, проверять приложение и публиковать его с Visual Studio и портала разработчиков.
 keywords: набор инструментов для визуальной студии teams
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: johmil
-ms.openlocfilehash: 4f7da132f8cc63c65936c7c879226b04c87b3beb
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: af4f4c1511460e79a99d437dbcc75e2c748d1506
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156054"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888015"
 ---
 # <a name="build-apps-with-the-teams-toolkit-and-visual-studio"></a>Создание приложений с помощью Teams набор средств и Visual Studio
 
 Набор средств Microsoft Teams Toolkit позволяет создавать пользовательские приложения Teams непосредственно в интегрированной среде разработки (IDE) Visual Studio. Этот набор средств Microsoft Teams предоставит вам пошаговые инструкции в процессе создания приложения, а также все необходимое для сборки, отладки и запуска вашего приложения Teams.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 1. [Включить предварительный просмотр разработчика.](../resources/dev-preview/developer-preview-intro.md#enable-developer-preview)
 
@@ -55,7 +55,7 @@ ms.locfileid: "59156054"
 
     > [!div class="checklist"]
     >
-    > - В manifest.js
+    > - Manifest.json
     > - Значок [цвета](../resources/schema/manifest-schema.md#icons) для отображения приложения в каталоге общедоступных или организаций.
     > - Значок [плана](../resources/schema/manifest-schema.md#icons) для отображения на панели Teams действий.
 

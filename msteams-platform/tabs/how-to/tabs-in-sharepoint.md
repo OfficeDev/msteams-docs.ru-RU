@@ -1,19 +1,19 @@
 ---
 title: Добавление вкладки Teams в SharePoint
 author: surbhigupta
-description: Развертывание существующей вкладки Teams для SharePoint в качестве SharePoint Framework веб-части.
+description: Узнайте, как развернуть существующую вкладку Teams для SharePoint в качестве SharePoint Framework веб-части с помощью образцов кода.
 keywords: teams tabs sharepoint framework development
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 6561164f177277e76b80e3c33ee57b9383bbd527
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 766b9974419a6b4bfeb273a0d9d682a685b2da2d
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157183"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887875"
 ---
-# <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint 
+# <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint
 
 Вы можете получить богатый опыт интеграции между Microsoft Teams и SharePoint, добавив вкладку Microsoft Teams в SharePoint как SPFx веб-части. В этом документе вы можете узнать, как взять вкладку из Microsoft Teams и использовать ее в SharePoint. 
 

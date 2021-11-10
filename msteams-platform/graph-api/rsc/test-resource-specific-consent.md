@@ -1,17 +1,17 @@
 ---
 title: Тестирование разрешений на согласие для определенных ресурсов в Teams
-description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с помощью Postman
+description: Подробные сведения о тестировании согласия на использование ресурсов в Teams с использованием Почтальон с примерами кода
 ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
-keywords: команды авторизации OAuth SSO AAD rsc postman Graph
-ms.openlocfilehash: 66fff68e69f90f49e07cdd87266830f93cb0be2e
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+keywords: команды авторизации OAuth SSO AAD rsc Postman Graph
+ms.openlocfilehash: fc926e307c2e3ee5d1336c09e264930abe20d9d0
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156174"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887722"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
@@ -81,7 +81,7 @@ ms.locfileid: "59156174"
 >[!NOTE]
 >Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и `applicationPermissions` чата.
 
->Если приложение предназначено для доступа к API вызовов и мультимедиа, то должен быть `webApplicationInfo.Id` AAD-Id приложения [службы Azure Bot.](/graph/cloud-communications-get-started#register-a-bot)
+>Если приложение предназначено для доступа к API вызовов и мультимедиа, то должен быть AAD Id приложения службы `webApplicationInfo.Id` [Azure Bot.](/graph/cloud-communications-get-started#register-a-bot)
 
 ## <a name="test-added-rsc-permissions-to-a-team-using-the-postman-app"></a>Test added RSC permissions to a team using the Postman app
 
@@ -105,7 +105,7 @@ ms.locfileid: "59156174"
 * `azureADAppId`: ID приложения Azure AD в вашем приложении.
 * `azureADAppSecret`Пароль приложения Azure AD.
 * `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default .
-* `tenantId`: Имя или ID объекта AAD клиента.
+* `tenantId`: Имя или AAD объекта вашего клиента.
 * `chatId`: Вы можете получить id потока чата из Teams *веб-клиента* следующим образом:
 
     1. В веб Teams клиенте выберите **Чат из** левой панели навигации.
@@ -135,5 +135,5 @@ ms.locfileid: "59156174"
 
 ## <a name="see-also"></a>См. также
 
-[Microsoft Graph API и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
-
+* [Microsoft Graph API и Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0&preserve-view=true)
+* [Согласие для определенных ресурсов](~/graph-api/rsc/resource-specific-consent.md)

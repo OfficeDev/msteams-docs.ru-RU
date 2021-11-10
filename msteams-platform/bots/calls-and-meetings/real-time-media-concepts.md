@@ -1,15 +1,15 @@
 ---
 title: Вызовы мультимедиа в режиме реального времени и встречи с Microsoft Teams
-description: Понимание ключевых понятий в создании бота, который может проводить аудио- и видеозвоки в режиме реального времени, а также собрания в Интернете.
+description: Понимание ключевых понятий в создании бота, который может проводить аудио- и видеозвоки в режиме реального времени, а также собрания в Интернете. Узнайте о сеансах мультимедиа, частоте кадров, формате аудио и видео и ссылке на ресурсы разработчика
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: аудиопоток видеопотока аудио- и видеосвязи собрания в режиме реального времени мультимедиа-приложений, размещенной в средствах массовой информации, размещенной в средствах массовой информации
-ms.openlocfilehash: 5c7fce3e8d584781037b5d1169706c9f197e3a96
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: bff216848262412a05de8794bb716eb6a3f4c75a
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157571"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889064"
 ---
 # <a name="real-time-media-calls-and-meetings-with-microsoft-teams"></a>Вызовы и встречи с Microsoft Teams
 
@@ -69,3 +69,7 @@ ms.locfileid: "59157571"
 
 > [!div class="nextstepaction"]
 > [Регистрация бота вызовов](~/bots/calls-and-meetings/registering-calling-bot.md)
+
+## <a name="see-also"></a>См. также
+
+[Поддерживаемые форматы медиа для ботов](~/resources/media-formats.md)

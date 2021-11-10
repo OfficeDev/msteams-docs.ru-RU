@@ -1,16 +1,16 @@
 ---
 title: Определение команд действий расширения обмена сообщениями
 author: surbhigupta
-description: Обзор команд действий расширения обмена сообщениями
+description: Обзор команд действий расширения обмена сообщениями с примером манифеста приложения
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: d3876d0fc5d58b54ececaabb9e88da0a6e355b47
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: d2d872810794c46fe424371268d8ef210f8f528c
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720143"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887994"
 ---
 # <a name="define-messaging-extension-action-commands"></a>Определение команд действий расширения обмена сообщениями
 
@@ -215,7 +215,7 @@ ms.locfileid: "60720143"
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
 |Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 Если вы используете адаптивную карту или встроенное веб-представление без объекта, следующий шаг: `taskInfo`
 
@@ -226,4 +226,3 @@ ms.locfileid: "60720143"
 
 > [!div class="nextstepaction"]
 > [Ответ на отправку модуля задач](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
-

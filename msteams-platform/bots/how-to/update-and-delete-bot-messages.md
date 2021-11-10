@@ -1,16 +1,16 @@
 ---
 title: Обновление и удаление сообщений, отправленных из бота
 author: WashingtonKayaker
-description: Обновление и удаление сообщений, отправленных из Microsoft Teams бота
+description: Узнайте, как обновлять и удалять сообщения, отправленные из вашего Microsoft Teams бота в различных средах и с помощью API REST с помощью образцов кода.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 2db2ad28da41fd464f82ce5836acc8202f118923
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: b92eb5c566df1d23b0228a218afa546160a3bb91
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156337"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889344"
 ---
 # <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновление и удаление сообщений, отправленных из бота
 

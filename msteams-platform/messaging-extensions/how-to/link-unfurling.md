@@ -1,16 +1,16 @@
 ---
 title: Развертывание ссылки
 author: surbhigupta
-description: Выполнение разгрузки ссылок с расширением обмена сообщениями в приложении Microsoft Teams.
+description: Узнайте, как добавить разгрузку ссылок с расширением обмена сообщениями в приложении Microsoft Teams с манифестом приложения или вручную с помощью примеров и примеров кода.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 99dbfaa2bf66ee50341e52d4e8a274f7ab20a73e
-ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
+ms.openlocfilehash: f702ac2600dbfb3c8fd2992c41cc1c72754252ca
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60291725"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889400"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 

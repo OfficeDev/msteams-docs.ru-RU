@@ -6,12 +6,12 @@ ms.topic: overview
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: b84975296b443ad71fb78042729f225a31ba9afe
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: c6a872f9e43f5394a3d10ef5bf3ab8f2650ca9b4
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156397"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887694"
 ---
 # <a name="apps-for-teams-meetings"></a>Приложения для Teams собраний
 
@@ -37,16 +37,16 @@ ms.locfileid: "59156397"
 
 Новая функция пользовательских сцен в режиме "Вместе" позволяет пользователям совместно работать на собрании с командой в одном месте.
 
-## <a name="see-also"></a>См. также
-
-* [Tab](../tabs/what-are-tabs.md#understand-how-tabs-work)
-* [Bot](../bots/what-are-bots.md)
-* [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)
-* [Создание приложения](../apps-in-teams-meetings/design/designing-apps-in-meetings.md)
-* [Необходимые условия и ссылки на API для приложений в собраниях Teams](create-apps-for-teams-meetings.md)
-* [Настраиваемые сцены режима "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md)
-
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Расширяемость приложения для собраний](meeting-app-extensibility.md)
+
+## <a name="see-also"></a>См. также
+
+* [Необходимые условия и ссылки на API для приложений в собраниях Teams](create-apps-for-teams-meetings.md)
+* [Проектирование расширения Microsoft Teams собрания](~/apps-in-teams-meetings/design/designing-apps-in-meetings.md)
+* [Ссылки на API приложений для собраний — Teams](~/apps-in-teams-meetings/api-references.md)
+* [Настраиваемые сцены режима "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md)
+* [Включить и настроить приложения для Teams собраний](~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)
+* [Жизненный цикл встречи](meeting-app-extensibility.md#meeting-lifecycle)

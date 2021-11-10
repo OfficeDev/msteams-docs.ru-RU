@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: deeplink teams deep link
-ms.openlocfilehash: fbf4d933db63ee634000bb5fc277c385fc3cfa44
-ms.sourcegitcommit: 31dc5dfac6e7d0c6f33795190a55bb5c741eb32a
+ms.openlocfilehash: 0d1ad5b74c434a20a1e2d7f55e970e5811c34890
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223050"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889155"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -246,6 +246,9 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 > [!NOTE]
 > Этот deeplink нельзя использовать для ссылок на собрание.
 
+> [!NOTE]
+> В настоящее время deeplink для вызова не поддерживается Teams мобильных устройствах.
+
 ### <a name="generate-a-deep-link-to-a-call"></a>Создание глубокой ссылки на вызов
 
 | Прямая ссылка | Формат | Пример |
@@ -268,5 +271,5 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-[Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
-
+* [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+* [Moodle LMS](~/resources/moodleinstructions.md)

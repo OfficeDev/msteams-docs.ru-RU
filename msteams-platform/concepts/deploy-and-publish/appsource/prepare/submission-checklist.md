@@ -1,16 +1,17 @@
 ---
 title: Подготовка к отправке в магазин
-description: Описывает последние действия перед отправкой Microsoft Teams приложения, которое будет перечислены в магазине.
+description: Описывает последние действия перед отправкой Microsoft Teams приложения, которое будет перечислены в магазине. Узнайте, как проверить пакет приложений, составить инструкции по тестированию и создать сведения о списке магазина.
 ms.topic: how-to
 ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 617c7d962dc27964c28af74b73c252b08a39f307
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+keywords: Хранилище отправки распространяет рекомендации по проверке пакета приложений для локализации
+ms.openlocfilehash: 08155408e68869b76f814788afcb408afd1a72a9
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720353"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889169"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовка отправки Microsoft Teams магазина
 
@@ -209,7 +210,11 @@ ms.locfileid: "60720353"
 > [!NOTE]
 > Если вы отправили новое приложение, вы не можете официально завершить проверку Publisher, пока ваше приложение не будет перечислены в Teams магазине. Если вы обновляете перечисленное приложение, Publisher проверку перед отправкой последней версии приложения для проверки.
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Отправка приложения](/office/dev/store/add-in-submission-guide)
+
+## <a name="see-also"></a>См. также
+
+[Устранение проблем при сбойе Microsoft Teams хранения](~/concepts/deploy-and-publish/appsource/resolve-submission-issues.md)

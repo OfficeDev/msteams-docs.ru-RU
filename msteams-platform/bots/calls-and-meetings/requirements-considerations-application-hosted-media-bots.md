@@ -1,16 +1,16 @@
 ---
 title: Требования и соображения к медийным ботам с хостингом приложений
-description: Понимание важных требований и соображений, связанных с созданием медиа-ботов с хостингом приложений для Microsoft Teams.
+description: Понимание важных требований и соображений, а также соображений масштабируемости и производительности, связанных с созданием медийных ботов с Microsoft Teams приложениями и примерами кода.
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: windows server azure vm с использованием приложения
 ms.date: 11/16/2018
-ms.openlocfilehash: e8f776b647beda2745a7bdbc03794e491a942b54
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 0597e99b1933270ee4ee85d1adc18378da3c3114
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157568"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887415"
 ---
 # <a name="requirements-and-considerations-for-application-hosted-media-bots"></a>Требования и соображения к медийным ботам с хостингом приложений
 
@@ -71,9 +71,14 @@ ms.locfileid: "59157568"
 | **Название примера** | **Описание** | **Microsoft Graph** |
 |------------|-------------|-----------|
 | Пример локального мультимедиа | Примеры, иллюстрирующие различные локальные сценарии мультимедиа. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples) |
-| Пример удаленного мультимедиа | Примеры, иллюстрирующие различные сценарии удаленного мультимедиа. | [Просмотр](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples) |
+| Пример удаленного мультимедиа | Примеры, иллюстрирующие различные сценарии удаленного мультимедиа. | [View](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples) |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Поддерживаемые форматы медиа](~/resources/media-formats.md)
+
+## <a name="see-also"></a>См. также
 
 - [Graph Вызов документации по SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/)
 - Боты требуют больше вычислительной и сетевой пропускной способности, чем боты обмена сообщениями, и понести значительно более высокие эксплуатационные затраты. Разработчик медиа-бота в режиме реального времени должен тщательно измерить масштабируемость бота и убедиться, что он не принимает больше одновременных вызовов, чем он может управлять. Бот с поддержкой видео может поддерживать только один или два одновечерных сеансов мультимедиа на ядро ЦП при использовании необработанных форматов видео RGB24 или NV12.
@@ -86,8 +91,3 @@ ms.locfileid: "59157568"
 
 - [Пример приложений](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples)
 - [Graph для вызова документации по SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/)
-
-## <a name="next-step"></a>Следующий этап
-
-> [!div class="nextstepaction"]
-> [Поддерживаемые форматы медиа](~/resources/media-formats.md)

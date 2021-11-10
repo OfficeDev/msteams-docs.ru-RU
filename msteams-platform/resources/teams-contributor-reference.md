@@ -5,12 +5,12 @@ author: surbhigupta
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: contributor-guide
-ms.openlocfilehash: 28fe69d59757bf53ddd105fde403d625d5faf419
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: d9b696af2fe493c24de54afd8587f8aea70584d1
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157455"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889246"
 ---
 # <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
@@ -30,7 +30,7 @@ Teams документация входит в библиотеку технич
 > * Установка в VS Code:
 
    1. Выберите **значок** Расширения на боковой панели действий или используйте команду **View => Extensions** или Ctrl+Shift+X и поиск пакета авторов **Microsoft Docs**.
-   1. Нажать кнопку **Установить**.
+   1. Нажмите кнопку **Установить**.
    1. После установки установите **кнопку** **Управление** передачей.
 
 ## <a name="review-the-microsoft-docs-contributors-guide"></a>Просмотрите руководство по вкладчикам Microsoft Docs
@@ -69,6 +69,11 @@ Teams документация входит в библиотеку технич
 
 Образцы кода играют важную роль для эффективного использования API и SDKs. Хорошо представленные примеры кода могут сообщить, как все работает более четко, чем описательный текст и учебные сведения только. Образцы кода должны быть точными, краткими, хорошо документированными и удобными для чтения. Простой для чтения код должен быть понятным, тестировать, отлагировать, поддерживать, изменять и расширять. Дополнительные сведения см. [в дополнительных сведениях о том, как включить код в документы.](/contribute/code-in-docs)
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Получения обновлений Microsoft Docs и последних объявлений](/teamblog)
+
 ## <a name="see-also"></a>См. также
 
 * [Документы Майкрософт](/)
@@ -77,9 +82,3 @@ Teams документация входит в библиотеку технич
 * [Передний край: читаемость исходных кодов Советы](/archive/msdn-magazine/2014/october/cutting-edge-source-code-readability-tips)
 * [Teams документации](/microsoftteams/platform/overview)
 * [GitHub](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform)
-
-
-## <a name="next-step"></a>Следующий этап
-
-> [!div class="nextstepaction"]
-> [Получения обновлений Microsoft Docs и последних объявлений](/teamblog)

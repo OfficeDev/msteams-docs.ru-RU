@@ -5,12 +5,12 @@ description: Узнайте, как создать Microsoft Teams прилож�
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: f2e0043162081ba85e328182257d79161fb7875d
-ms.sourcegitcommit: 72de146d11e81fd9777374dd3915ad290fd07d82
+ms.openlocfilehash: 59af1528941b06d6a951ee8dd38e663c1b492624
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59360470"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888141"
 ---
 # <a name="designing-your-microsoft-teams-app"></a>Проектирование Microsoft Teams приложения
 
@@ -89,7 +89,7 @@ Teams способствует совместной работе с помощь
    :::column-end:::
    :::column span="":::
 
-### <a name="responsive"></a>Оперативно
+### <a name="responsive"></a>Быстрый отклик
 
 Приложение является устройством и экраном-агностиком.
 
@@ -182,3 +182,10 @@ Teams способствует совместной работе с помощь
 
 > [!div class="nextstepaction"]
 > [Попробовать конструктор адаптивных карточек](https://adaptivecards.io/designer/)
+
+## <a name="see-also"></a>См. также
+
+* [Необходимые условия и ссылки на API для приложений в собраниях Teams](~/apps-in-teams-meetings/create-apps-for-teams-meetings.md)
+* [Создание бота Microsoft Teams](~/bots/design/bots.md)
+* [Создание виртуального помощника](~/samples/virtual-assistant.md)
+* [Проектирование модулей задач для приложения Microsoft Teams](~/task-modules-and-cards/task-modules/design-teams-task-modules.md)

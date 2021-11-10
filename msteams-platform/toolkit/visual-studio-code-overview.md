@@ -5,12 +5,12 @@ keywords: команда визуальный набор кода студии
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 4425ea5ac6daa400d33497e031cf37639cd2722a
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: f2bb0d5dbd999a5d935c051d854bd94b21ce3f19
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156090"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889323"
 ---
 # <a name="build-apps-with-the-teams-toolkit-and-visual-studio-code"></a>Создание приложений с помощью Teams набор средств и Visual Studio Code
 
@@ -99,7 +99,7 @@ ms.locfileid: "59156090"
 
       > [!div class="checklist"]
       >
-      > - В manifest.js.
+      > - Манифест.json.
       > - Значок [цвета](../resources/schema/manifest-schema.md#icons) для отображения приложения в каталоге общедоступных или организаций.
       > - Значок [плана](../resources/schema/manifest-schema.md#icons) для отображения на панели Teams действий.
 
@@ -108,7 +108,7 @@ ms.locfileid: "59156090"
 1. Чтобы настроить приложение, перейдите на вкладку Teams набор средств **в** Visual Studio Code.
 1. Выберите **редактор манифеста** **в Project** разделе.
 
-Редактирование полей на странице подробные сведения приложения обновляет содержимое manifest.jsфайла, который в конечном итоге отправляется в составе пакета приложений.
+Редактирование полей на странице сведения приложения обновляет содержимое файла manifest.json, который в конечном счете отправляется в составе пакета приложений.
 
 ## <a name="install-and-run-your-app-locally"></a>Установка и локальное запуск приложения
 
@@ -144,3 +144,8 @@ ms.locfileid: "59156090"
 
 > [!div class="nextstepaction"]
 > [Ведение и поддержка опубликованного приложения](../concepts/deploy-and-publish/appsource/post-publish/overview.md)
+
+## <a name="see-also"></a>См. также
+
+* [Создание приложений с помощью Teams набор средств и Visual Studio](~/toolkit/visual-studio-overview.md)
+* [Создание вкладок и других опытом работы с клиентом Microsoft Teams JavaScript SDK](~/tabs/how-to/using-teams-client-sdk.md)

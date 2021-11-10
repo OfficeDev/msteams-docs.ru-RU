@@ -1,15 +1,15 @@
 ---
 title: Карты и модули задач
-description: Карты и модули задач.
+description: Узнайте о типах карт, поддерживаемых в ботах для Teams, таких как адаптивные карты, карточки hero, thumbnail и другие. Узнайте о действиях карт и ссылок на модули задач в каналах, ботах или глубоких ссылках.
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 89185baa9900f2c8dbef62ab9a2fc85242fc49a1
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: b154f82b1148760f3dbb6f1b92f914fa7222977d
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60719835"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888274"
 ---
 # <a name="cards-and-task-modules"></a>Карты и модули задач
 
@@ -21,14 +21,16 @@ ms.locfileid: "60719835"
 
 * Адаптивная карта
 * Карта hero
-* Карта списка 
+* Карта списка
 * Office 365 Карта Connector
 * Карта получения
 * Вход в карточку
 * Карта эскиза
 * Коллекции карт
 
-Вы можете форматирование текста карты с помощью подмножество форматирования XML или HTML или Markdown в зависимости от типа карты. Вы можете добавить и реагировать на действия карт, которые:
+Вы можете форматирование текста карты с помощью подмножество форматирования XML или HTML или Markdown в зависимости от типа карты.
+
+Вы можете добавить и реагировать на действия карт, которые:
 * Откройте URL-адрес
 * Отправка сообщений и полезной нагрузки в бот
 * Начало потока OAuth

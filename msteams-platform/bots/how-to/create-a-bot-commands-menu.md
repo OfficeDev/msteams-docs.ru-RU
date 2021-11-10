@@ -1,16 +1,17 @@
 ---
 title: Создание меню команд для бота
 author: surbhigupta
-description: Создание командного меню для Microsoft Teams бота
+description: Узнайте, как создать командное меню для Microsoft Teams бота с примерами кода.
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: af987ae2fa538ffb785e782f191c674132440311
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+keywords: командное меню составляет беседу с @mention
+ms.openlocfilehash: bf9b6963b482a335175e5a9c75b6c928104ead26
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720108"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888239"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -38,7 +39,7 @@ ms.locfileid: "60720108"
 
 **Создание командного меню для бота с помощью App Studio**
 
-1. Откройте Teams и выберите **Приложения** с левой области. На странице **Приложения** ищите **App Studio** и выберите **Open**. 
+1. Откройте Teams и выберите **Приложения** с левой области. На странице **Приложения** ищите **App Studio** и выберите **Open**.
    > [!NOTE]
    > Если у вас нет **App Studio,** вы можете скачать его. Дополнительные сведения см. в [записи установки App Studio.](~/concepts/build-and-test/app-studio-overview.md#installing-app-studio)
 
@@ -212,7 +213,7 @@ modified_text = TurnContext.remove_recipient_mention(turn_context.activity)
 > [!NOTE]
 > Если вы удалите какие-либо команды из манифеста, необходимо изменить приложение для реализации изменений. Как правило, любые изменения манифеста требуют переделок вашего приложения.
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Канал и групповые разговоры](~/bots/how-to/conversations/channel-and-group-conversations.md)

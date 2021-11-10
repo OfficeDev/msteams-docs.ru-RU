@@ -4,12 +4,12 @@ description: Описание карт и их использования в б�
 ms.localizationpriority: medium
 keywords: соединители боты-карты обмена сообщениями
 ms.topic: overview
-ms.openlocfilehash: 9ddfada39f6170e7fc81092028747230b87e35e3
-ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
+ms.openlocfilehash: a6e7f706d114422e99668b6a123dd3feb2cf886c
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60291613"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888295"
 ---
 # <a name="cards"></a>Карточки
 
@@ -77,12 +77,13 @@ Teams использует карты в трех разных местах:
 
 Боты с адаптивными картами поддерживают имена пользователей, например AAD объекта и имя принципа пользователя (UPN) в дополнение к существующим удостоверениям. Входящие веб-окки начинают поддерживать упоминание пользователей в адаптивной карте с помощью AAD объекта и upN.
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Типы карточек](~/task-modules-and-cards/cards/cards-reference.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Формат карты в Teams](~/task-modules-and-cards/cards/cards-format.md)
 * [Дизайн адаптивных карт](~/task-modules-and-cards/cards/design-effective-cards.md)
-
-## <a name="next-step"></a>Следующее действие
-
-> [!div class="nextstepaction"]
-> [Типы карточек](~/task-modules-and-cards/cards/cards-reference.md)
+* [Адаптивные карты в ботах](../bots/how-to/conversations/conversation-messages.md#adaptive-cards)

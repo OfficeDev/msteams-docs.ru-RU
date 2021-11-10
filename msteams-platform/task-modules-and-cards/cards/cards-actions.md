@@ -4,12 +4,12 @@ description: Описание действий карточек в Microsoft Tea
 ms.localizationpriority: medium
 ms.topic: conceptual
 keywords: teams действия карточек боты
-ms.openlocfilehash: fb1ff1df6e91c17efd5a01123935fb03f0a0ed98
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 3509ab49f8e2031176743a9330ee3b6757b70277
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157251"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889330"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -556,12 +556,14 @@ CardFactory.actions([
   }
 }
 ```
-
-## <a name="see-also"></a>См. также
-
-[Справочные материалы о карточках](./cards-reference.md)
-
 ## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Универсальные действия для адаптивных карточек](../cards/Universal-actions-for-adaptive-cards/Overview.md)
+
+## <a name="see-also"></a>См. также
+
+* [Справочные материалы о карточках](./cards-reference.md)
+* [Использование модулей задач из ботов](~/task-modules-and-cards/task-modules/task-modules-bots.md)
+* [Адаптивные карты в ботах](../../bots/how-to/conversations/conversation-messages.md#adaptive-cards)
+* [Универсальные действия для адаптивных карточек](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md)

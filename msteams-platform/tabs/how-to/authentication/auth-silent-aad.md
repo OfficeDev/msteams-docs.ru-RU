@@ -1,15 +1,15 @@
 ---
 title: Автоматическая проверка подлинности
-description: Описание бесшумной проверки подлинности
+description: Описывает бесшумную проверку подлинности, одно-вход, Azure Active Directory для вкладок
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: группы проверки подлинности SSO AAD
-ms.openlocfilehash: fef5a52d836ce906e9fe835f29bcee1bef9088d7
-ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
+keywords: командная проверка подлинности SSO AAD вкладке
+ms.openlocfilehash: 2b3981ce43f09cc05bb2cb3837a90c0a92ef6deb
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60291627"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888029"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
@@ -27,7 +27,7 @@ ms.locfileid: "60291627"
 
 ## <a name="how-silent-authentication-works"></a>Как работает бесшумная проверка подлинности
 
-Библиотека ADAL.js создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому Azure AD никогда `prompt=none` не показывает знак на странице. Если требуется взаимодействие с пользователем, так как пользователю необходимо войти или предоставить доступ к приложению, AAD немедленно возвращает ошибку, ADAL.js отчеты в ваше приложение. На этом этапе приложение может при необходимости показать вход в кнопку.
+Библиотека ADAL.js создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому Azure AD никогда `prompt=none` не показывает знак на странице. Если требуется взаимодействие с пользователем, так как пользователю необходимо войти или предоставить доступ к приложению, AAD немедленно возвращает ошибку, ADAL.js отчеты в ваше приложение. На этом этапе приложение может при необходимости показывать вход в кнопку.
 
 ## <a name="how-to-do-silent-authentication"></a>Как сделать бесшумную проверку подлинности
 
@@ -135,3 +135,6 @@ localStorage.clear();
 window.location.href = "@Url.Action("<<Action Name>>", "<<Controller Name>>")";
 }
 ```
+## <a name="see-also"></a>См. также
+
+[Настройка поставщиков удостоверений для использования AAD](~/concepts/authentication/configure-identity-provider.md)

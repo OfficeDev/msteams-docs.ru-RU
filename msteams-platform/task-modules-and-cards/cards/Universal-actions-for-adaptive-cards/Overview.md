@@ -1,14 +1,14 @@
 ---
 title: Обзор универсальных действий для адаптивных карт
-description: Краткий обзор универсальных действий для адаптивных карт.
+description: Краткий обзор универсальных действий для адаптивных карт, таких как представления для пользователей, поддержка последовательного рабочего процесса и другие сведения для настольных и мобильных сред.
 ms.topic: overview
 ms.localizationpriority: medium
-ms.openlocfilehash: ba957456e2926e11b021f6a2577706cef7fb5ad7
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: c294e235074bd6a2c9ae148c20e355a9c86325c5
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475715"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889358"
 ---
 # <a name="universal-actions-for-adaptive-cards"></a>Универсальные действия для адаптивных карточек
 
@@ -111,14 +111,14 @@ ms.locfileid: "59475715"
 
 Вы можете начать работу, обновив сценарии с помощью руководства по [быстрому](Work-with-universal-actions-for-adaptive-cards.md) запуску и используя универсальные действия.
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Работа с универсальными действиями для адаптивных карточек](Work-with-universal-actions-for-adaptive-cards.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Что такое боты](~/bots/what-are-bots.md)
 * [Обзор адаптивных карточек](~/task-modules-and-cards/what-are-cards.md)
 * [Адаптивные карты @ Microsoft Build 2020](https://youtu.be/hEBhwB72Qn4?t=1393)
 * [Адаптивные карты @ Ignite 2020](https://techcommunity.microsoft.com/t5/video-hub/elevate-user-experiences-with-teams-and-adaptive-cards/m-p/1689460)
-
-## <a name="next-step"></a>Следующее действие
-
-> [!div class="nextstepaction"]
-> [Работа с универсальными действиями для адаптивных карточек](Work-with-universal-actions-for-adaptive-cards.md)

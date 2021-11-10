@@ -1,14 +1,14 @@
 ---
 title: Отправка ID клиента и ИД беседы в заглавные главы запроса бота
-description: описывает отправку ID клиента и ИД беседы в заглавные главы запроса бота.
+description: Описывает отправку ID клиента и ИД беседы в заглавные главы запроса бота.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: bdfe224824fb7fd42fdc8ea93dc7d492bc731218
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 054b5bed99b1569a74ba4f69b144bd1edd60fd3d
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156342"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889281"
 ---
 # <a name="send-tenant-id-and-conversation-id-to-the-request-headers-of-the-bot"></a>Отправка ID клиента и ИД беседы в заглавные главы запроса бота
 

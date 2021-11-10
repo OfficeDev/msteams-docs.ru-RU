@@ -1,16 +1,17 @@
 ---
 title: Создание вкладок адаптивной карты
 author: KirtiPereira
-description: Создание вкладок с помощью адаптивных карт
+description: Узнайте о создании вкладок с использованием адаптивных карт с примерами кода, включая действия по ссылке, понимание рабочего процесса модуля задач и проверку подлинности.
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: 09e5a6133ac4c2b33dbf6ffae273e8107a4c67ce
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+keywords: поток данных проверки подлинности персональных приложений адаптивной карты
+ms.openlocfilehash: ba8a28a25665370420b05de64d8302d8ef160687
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720332"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887562"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
@@ -330,7 +331,7 @@ ms.locfileid: "60720332"
 }
 ```
 
-## <a name="authentication"></a>Аутентификация
+## <a name="authentication"></a>Проверка подлинности
 
 В предыдущих разделах вы видели, что большинство парадигм разработки можно расширить из запросов и ответов модулей задач в запросы и ответы на вкладки. При обработке проверки подлинности рабочий процесс вкладки Adaptive Card следует шаблону проверки подлинности для расширений обмена сообщениями. Дополнительные сведения см. в [добавлении проверки подлинности.](../../messaging-extensions/how-to/add-authentication.md)
 
@@ -426,17 +427,17 @@ ms.locfileid: "60720332"
 
 |**Название примера** | **Описание** |**.NET** | **Node.js** |
 |----------------|-----------------|--------------|--------------|
-| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
+| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
+
+## <a name="see-also"></a>См. также
 
 * [Адаптивная карта](../../task-modules-and-cards/what-are-cards.md#adaptive-cards)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)

@@ -1,15 +1,15 @@
 ---
 title: Проверка обзора приложения
-description: Описывает процесс тестирования настраиваемого Teams в Microsoft 365
+description: Описывает процесс тестирования и отламки настраиваемого Teams в Microsoft 365
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: Настройка Microsoft 365 клиента Teams загрузки тестового приложения
-ms.openlocfilehash: 045159133b53b83e256eea9bab09f71e45bf02cf
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 9cbb650fc248d12fc310cc8b1aaaded7b9a87140
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156211"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889267"
 ---
 # <a name="test-your-app"></a>Тестирование приложения
 
@@ -35,13 +35,13 @@ ms.locfileid: "59156211"
 
 Добавьте тестовые данные в Microsoft 365 тестовый клиент. Дополнительные сведения см. в дополнительных сведениях о добавлении [тестовых](~/concepts/build-and-test/test-data.md)данных в Office 365 тестовый клиент и выполните все необходимые условия перед отправкой тестовых данных.
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Подготовка клиента Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Отламывка вкладки](~/tabs/how-to/developer-tools.md)
 * [Отламывка ботов](~/bots/how-to/debug/locally-with-an-ide.md)
 * [Тестирование разрешений RSC](~/graph-api/rsc/test-resource-specific-consent.md)
-
-## <a name="next-step"></a>Следующий этап
-
-> [!div class="nextstepaction"]
-> [Подготовка клиента Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md)

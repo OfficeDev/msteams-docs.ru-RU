@@ -4,12 +4,12 @@ description: Начните создавать эффективные прило
 keywords: начало работы app studio teams
 ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 22fb1deb55671120d3f40fc9d6e5cbfc2f27330f
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: adbd6bf8c2c2ec0dae8444d222fc3f3b26279e8f
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157420"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888568"
 ---
 # <a name="manage-your-apps-with-app-studio-for-microsoft-teams"></a>Управление приложениями в App Studio для Microsoft Teams
 
@@ -148,3 +148,7 @@ App Studio — это приложение Teams, доступное в мага
 * Вкладки
 * Таблицы
 * Значки
+
+## <a name="see-also"></a>См. также
+
+[Управление приложениями с помощью портала разработчиков для Microsoft Teams](~/concepts/build-and-test/teams-developer-portal.md)

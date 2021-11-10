@@ -1,16 +1,16 @@
 ---
 title: Ответ на команду поиска
 author: surbhigupta
-description: Как реагировать на команду поиска из расширения обмена сообщениями в Microsoft Teams приложении.
+description: Узнайте, как реагировать на команду поиска из расширения обмена сообщениями в приложении Microsoft Teams с помощью примеров и примеров кода
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: none
-ms.openlocfilehash: 23c4e6d2db9396fc03ed2a75ccc09052f1130423
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 46c5d1ef47d9c31552efac00baef347baf3c7470
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156031"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889379"
 ---
 # <a name="respond-to-search-command"></a>Ответ на команду поиска
 
@@ -344,16 +344,13 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 | Имя образца           | Описание | .NET    | Node.js   |   
 |:---------------------|:--------------|:---------|:--------|
 |Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
-|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-[Добавление конфигурации в расширение обмена сообщениями](~/get-started/first-message-extension.md)
+|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Добавление проверки подлинности в расширение обмена сообщениями](~/messaging-extensions/how-to/add-authentication.md)
 
+## <a name="see-also"></a>См. также
 
-
+[Добавление конфигурации в расширение обмена сообщениями](~/get-started/first-message-extension.md)

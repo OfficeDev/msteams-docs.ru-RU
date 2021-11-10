@@ -1,16 +1,16 @@
 ---
 title: Точки входа для приложений Teams
 author: heath-hamilton
-description: В этой статье описано, где люди могут найти и использовать ваше приложение в Teams.
+description: Описывает точки входа для вашего приложения, такие как команда, канал и чат в личном и совместном приложении.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 3d4f3150447603fe8462b3a8166f6bc76de7cc03
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: 1bfaed5ec9c2ef1bec9dc3699dbb5914be213a44
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566353"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889085"
 ---
 # <a name="entry-points-for-teams-apps"></a>Точки входа для приложений Teams
 
@@ -45,12 +45,12 @@ ms.locfileid: "60566353"
 
 * [**Вкладки**](~/tabs/what-are-tabs.md) предоставляют встроенный полноэкранный веб-интерфейс, который имеет значение для пользователя, который смотрит на него.
 
-## <a name="see-also"></a>См. также
-
-[Teams руководства по разработке приложений](../concepts/design/design-teams-app-overview.md) <br>
-[Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
-
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Понимание случаев использования](../concepts/design/understand-use-cases.md)
+
+## <a name="see-also"></a>См. также
+
+[Teams руководства по разработке приложений](../concepts/design/design-teams-app-overview.md) <br>
+[Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)

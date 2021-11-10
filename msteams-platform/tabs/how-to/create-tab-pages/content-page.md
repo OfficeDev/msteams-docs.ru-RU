@@ -6,12 +6,12 @@ keywords: группы вкладок группового канала, нас�
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: e85e643179bf3c1c8b9aa3951f560e1f85dad0bc
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: a3db1f535532fb00589cdff408e04d7addba234e
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720315"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888386"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы контента для вкладки
 
@@ -102,13 +102,15 @@ ms.locfileid: "60720315"
     }
     ```
 
-## <a name="see-also"></a>См. также
-
-* [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
-* [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)
+
+## <a name="see-also"></a>См. также
+ 
+* [Teams вкладки](~/tabs/what-are-tabs.md)
+* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
+* [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
+* [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)
+* [DevTools для вкладок Microsoft Teams](~/tabs/how-to/developer-tools.md)

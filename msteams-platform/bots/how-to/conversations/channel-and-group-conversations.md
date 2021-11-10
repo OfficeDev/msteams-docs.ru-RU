@@ -1,16 +1,16 @@
 ---
 title: Телефонные и групповые беседы с ботом
 author: surbhigupta
-description: Отправка, получение и обработка сообщений для бота в канале или групповом чате.
+description: Отправка, получение и обработка сообщений для бота в канале или групповом чате. Узнайте о руководствах по проектированию, создании потоков беседы, использовании @mentions с помощью примеров кода
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: ea8de08de966b9ed15e02f5ead8e33e06c6da68f
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: ab856bb7d07e23d9dc6d6fed318313262779b79f
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156156"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889316"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Телефонные и групповые беседы в чате с ботом
 
@@ -270,11 +270,11 @@ async def _mention_activity(self, turn_context: TurnContext):
 
 [!INCLUDE [sample](~/includes/bots/teams-bot-samples.md)]
 
-## <a name="see-also"></a>См. также
-
-[Получить Teams контекст](~/bots/how-to/get-teams-context.md)
-
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+
+## <a name="see-also"></a>См. также
+
+[Получить Teams контекст](~/bots/how-to/get-teams-context.md)

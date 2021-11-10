@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: команды публикуют язык локализации AppSource в офисе магазина
 ms.date: 05/15/2018
-ms.openlocfilehash: 7d9b805f54d4040ff83b0fd0e704dd349a025fa4
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 50dc306a5a06dd7a73a47fbcf94a8a70aa5d6aa6
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157375"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887555"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 
@@ -44,13 +44,13 @@ ms.locfileid: "59157375"
 
 ## <a name="localize-strings-in-your-app-manifest"></a>Локализация строк в манифесте приложения
 
-Необходимо использовать схему Microsoft Teams, а затем `v1.5` локализовать приложение. Это можно сделать, установив атрибут в файле manifest.jsили выше и обновив свойство до `$schema` **https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json** версии `manifestVersion` `$schema` `1.5` (в данном случае). 
+Необходимо использовать схему Microsoft Teams, а затем `v1.5` локализовать приложение. Это можно сделать, установив атрибут в файле manifest.json или более высокий и обновив свойство до `$schema` **https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json** версии `manifestVersion` `$schema` `1.5` (в данном случае). 
 
 Необходимо добавить свойство с языком по `localizationInfo` умолчанию, который поддерживает приложение. Язык по умолчанию используется в качестве конечного языка отката, если параметры клиента пользователя не совпадают ни с одним из дополнительных языков.
 
-### <a name="example-manifestjson-change"></a>Пример manifest.jsизменения
+### <a name="example-manifestjson-change"></a>Пример изменения manifest.json
 
-Следующие manifest.jsпомогают добавить свойство с языком по умолчанию, который поддерживает ваше приложение вместе `localizationInfo` `additionalLanguages` с:
+Следующий манифест.json помогает добавить свойство с языком по умолчанию, который поддерживает ваше приложение `localizationInfo` вместе `additionalLanguages` с:
 
 ```json
 {
@@ -102,9 +102,9 @@ ms.locfileid: "59157375"
 
 Поэтому в манифесте необходимо предоставить только переводы верхнего уровня, языка. Например, "en" вместо "en-ru". Необходимо предоставить переопределения уровня региона только для нескольких строк, которые в них нуждаются. 
 
-### <a name="example-manifestjson-change"></a>Пример manifest.jsизменения
+### <a name="example-manifestjson-change"></a>Пример изменения manifest.json
 
-Пример manifest.jsизменения показан в следующем примере:
+Изменение manifest.json показано в следующем примере:
 
 ```json
 {
@@ -132,7 +132,7 @@ ms.locfileid: "59157375"
 
 ### <a name="example-localization-json-file"></a>Пример локализации файла .json
 
- Пример localization.jsизменения показан в следующем примере:
+ Изменение localization.json показано в следующем примере:
 
 ```json
 {
@@ -159,3 +159,6 @@ ms.locfileid: "59157375"
 |-------------|-------------|------|------|
 | Локализация приложений | Microsoft Teams для локализации приложений с помощью бота и вкладки. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
 
+## <a name="see-also"></a>См. также
+
+[Справочные материалы по локализации схемы JSON](~/resources/schema/localization-schema.md)

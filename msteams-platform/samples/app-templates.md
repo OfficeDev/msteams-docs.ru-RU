@@ -6,12 +6,12 @@ keywords: Microsoft Teams примеры демонстрации шаблоно
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: 4fefbee5a1310e9aa1c92b31a21f6132e04546d7
-ms.sourcegitcommit: 25a88715d9b06b2afeac14de86177bb34161b0cf
+ms.openlocfilehash: e99b6c347ce23b8d58bc8e632c8345ce6b09598f
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60266643"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889197"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -123,6 +123,7 @@ Icebreaker это [Microsoft Teams,](../bots/what-are-bots.md) который п
 
 ## <a name="see-also"></a>См. также
 
-[Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
-
-
+* [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+* [Понимание Microsoft Teams возможностей приложений] (.. /concepts/capabilities-overview.md)
+* [Разработка личного приложения для Microsoft Teams](../concepts/design/personal-apps.md)
+* [Система проектирования](../concepts/design/design-teams-app-fundamentals.md)

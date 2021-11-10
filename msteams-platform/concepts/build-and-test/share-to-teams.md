@@ -1,15 +1,15 @@
 ---
 title: Создание кнопки «Поделиться в Teams»
-description: Добавление встраиваемой кнопки Share Teams на веб-сайте
+description: Узнайте, как добавить кнопку Share Teams на веб-сайте с помощью предварительного просмотра веб-сайта с использованием примеров кода
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: Совместное Teams share-to-Teams
-ms.openlocfilehash: 0d0fb0d7baf18038cfe87b648d2550bbd20b593a
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 0f9425ae28312aeb9700d260d9ac2cf208351d4c
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156150"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889288"
 ---
 # <a name="create-share-to-teams-button"></a>Создание кнопки «Поделиться в Teams»
 
@@ -78,7 +78,7 @@ ms.locfileid: "59156150"
 
 |Значение|Метатег| Откройте Graph|
 |----|----|----|
-|Название|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
+|Title|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
 |Описание|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
 |Эскиз изображения| нет. |`<meta property="og:image" content="http://example.com/image.jpg">`|
 
@@ -92,7 +92,7 @@ ms.locfileid: "59156150"
 
 ## <a name="full-launcherjs-definition"></a>Полное launcher.js определение
 
-| Свойство | Атрибут HTML | Тип | По умолчанию | Описание |
+| Свойство | Атрибут HTML | Type | По умолчанию | Описание |
 | -------------- | ---------------------- | --------------------- | ------- | ---------------------------------------------------------------------- |
 | href | `data-href` | string | н/д | Href контента для обмена. |
 | preview | `data-preview` | boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
@@ -101,7 +101,7 @@ ms.locfileid: "59156150"
 | assignInstr | `data-assign-instr` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
 | assignTitle | `data-assign-title` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
 
-### <a name="methods"></a>Методы
+### <a name="methods"></a>Methods
 
 **`shareToMicrosoftTeams.renderButtons(options)`**
 

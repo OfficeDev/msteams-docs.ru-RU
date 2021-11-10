@@ -5,12 +5,12 @@ description: Получите общее представление о том, �
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: 34401bf53196601b8836012fa4c96296510472a8
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 1b9d425f57cf1fa49aac41b4d21a0bf4befb3407
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157619"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889099"
 ---
 # <a name="design-process-for-microsoft-teams-apps"></a>Процесс разработки Microsoft Teams приложений
 
@@ -116,3 +116,6 @@ ms.locfileid: "59157619"
 * **Microsoft Teams** хранения: предоставляет стандарты, к Teams приложения должны стремиться, а не только приложения, перечисленные в магазине. Дополнительные сведения см. в [инструкциях.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)
 * **Разработка лучших практик.** Эти документы и набор пользовательского интерфейса предоставляют лучшие практики для разработки высококачественных приложений. Например, см. лучшие [практики разработки ботов.](~/bots/design/bots.md#best-practices)
 
+## <a name="see-also"></a>См. также
+
+[Проектирование уведомлений каналов активности](~/concepts/design/activity-feed-notifications.md)

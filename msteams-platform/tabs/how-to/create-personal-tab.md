@@ -1,16 +1,17 @@
 ---
 title: Создание личной вкладки
 author: laujan
-description: Руководство по созданию личной вкладки с генератором Yeoman для Microsoft Teams.
+description: Руководство quickstart по созданию личной вкладки с генератором Yeoman, ASP.NET Core или ASP.NET Core MVC для Microsoft Teams с помощью Node.js и обновления манифеста приложения.
 ms.localizationpriority: medium
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: 8048f317fa0e22353d58b6363271b281a6f3849e
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+keywords: yeoman ASP.NET пакет MVC appmanifest магазин разрешений домена беседы
+ms.openlocfilehash: 98f72b41e13c9b06f00a1b32a1fb52bb6b82fd2e
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60719940"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888043"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -745,14 +746,14 @@ this.layoutService.registerAppFocusEnterCallback(this.focusEnterHandler);
 
 :::image type="content" source="../../assets/images/personal-apps/registerfocus-tab.png" alt-text="В примере показаны варианты добавления API registerOnFocussed для вкладки" border="false":::
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 * [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
 * [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)

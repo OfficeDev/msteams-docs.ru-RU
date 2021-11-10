@@ -1,17 +1,17 @@
 ---
 title: Использование microsoft Graph для авторизации активной установки ботов и обмена сообщениями в Teams
-description: Описывает активный обмен сообщениями в Teams и как реализовать.
+description: Описывает активный обмен сообщениями в Teams и его реализацию. Узнайте о том, как включить активную установку приложений и обмен сообщениями с помощью примера кода.
 ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: 7d08097155ba69715508998ef4d2d9d50807b2ff
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: a3b7ffd24f7601c8247f1f11c6fe1a562d9cd847
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157419"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888008"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
@@ -42,14 +42,14 @@ ms.locfileid: "59157419"
 
 Чтобы использовать эти разрешения, необходимо добавить ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
 
-* **id:** ID Azure Active Directory (AAD).
+* **id:** ID Azure Active Directory (AAD) приложения.
 * **ресурс.** URL-адрес ресурса для приложения.
 
 > [!NOTE]
 >
 > * Боту требуется приложение, а не делегированная пользователем разрешения, так как установка для других пользователей.
 >
-> * Администратор клиента AAD должен [явно предоставлять разрешения приложению.](/graph/security-authorization#grant-permissions-to-an-application) После получения разрешений все члены клиента AAD получают предоставленные разрешения.
+> * Администратор AAD должен явно предоставлять [разрешения приложению.](/graph/security-authorization#grant-permissions-to-an-application) После получения разрешений все члены AAD получают предоставленные разрешения.
 
 ## <a name="enable-proactive-app-installation-and-messaging"></a>Включить активную установку приложений и обмен сообщениями
 
@@ -194,13 +194,14 @@ Content-Type: application/json
 
 | **Имя образца** | **Описание** | **.NET** | **Node.js** |
 |---------------|--------------|--------|-------------|
-| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
-## <a name="see-also"></a>Дополнительные ресурсы
-
-* [**Управление политиками установки приложений в Microsoft Teams**](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
-* [Отправка упреждающих уведомлений пользователям SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true)
+| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
 
 ## <a name="additional-code-samples"></a>Дополнительные примеры кода
 >
 > [!div class="nextstepaction"]
 > [**Teams примеры кода проактивных сообщений**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)
+
+## <a name="see-also"></a>См. также
+
+* [**Управление политиками установки приложений в Microsoft Teams**](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
+* [Отправка упреждающих уведомлений пользователям SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true)

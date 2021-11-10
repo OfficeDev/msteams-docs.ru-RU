@@ -5,12 +5,12 @@ description: Обзор инструментов и SDKs для создания
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 8c05fecc656264b3e7e98839c65bab2c9eda0952
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: d6a1ce32fce03ada547cf769ff5a634f9d6f01de
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566346"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888428"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -122,3 +122,11 @@ BOT: В какой день?
 
 > [!div class="nextstepaction"]
 > [Обработчики действий ботов](~/bots/bot-basics.md)
+
+## <a name="see-also"></a>См. также
+
+* [Боты для звонков и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)
+* [Беседы с ботами](~/bots/how-to/conversations/conversation-basics.md)
+* [Меню команд бота](~/bots/how-to/create-a-bot-commands-menu.md)
+* [Поток проверки подлинности для ботов в Microsoft Teams](~/bots/how-to/authentication/auth-flow-bot.md)
+* [Использование модулей задач из ботов](~/task-modules-and-cards/task-modules/task-modules-bots.md)

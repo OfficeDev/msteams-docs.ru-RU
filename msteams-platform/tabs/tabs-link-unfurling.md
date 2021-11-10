@@ -1,16 +1,16 @@
 ---
 title: Предварительный просмотр для ссылки "Вкладки" и представление стадий
 author: Rajeshwari-v
-description: Как развязать ссылку, открыть представление сцены и закрепить вкладку с помощью Microsoft Teams приложения.
+description: Узнайте, как развязать ссылку, открыть представление сцены и закрепить вкладку с помощью Microsoft Teams приложения. Узнайте о представлении сцены и его наводке с помощью адаптивной карты с помощью примера кода и примера.
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: 86525e0a26dbc9b80d03751078cb6ee248b876fb
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: dab2b08c7393bc44ecda59f18160f0b113733f74
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720346"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60887569"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
@@ -125,9 +125,9 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 | Имя свойства | Тип | Количество символов | Описание |
 |:-----------|:---------|:------------|:-----------------------|
-| `entityId` | String | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
+| `entityId` | Строка | 64 | Это свойство является уникальным идентификатором для объекта, отображаемого на вкладке. Это поле обязательно для заполнения.|
 | `name` | String | 128 | Это свойство — отображаемая вкладки в интерфейсе канала. Это поле является необязательным.|
-| `contentUrl` | String | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте. Это поле обязательно для заполнения.|
+| `contentUrl` | Строка | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте. Это поле обязательно для заполнения.|
 | `websiteUrl?` | String | 2048 | Это свойство является https://, на который нужно указать, если пользователь выбирает для просмотра в браузере. Это поле обязательно для заполнения.|
 | `removeUrl?` | String | 2048 | Это свойство — https:// URL-адрес, который указывает на пользовательский интерфейс, который будет отображаться при удалении вкладки пользователем. Это необязательное поле.|
 
@@ -135,17 +135,17 @@ https://teams.microsoft.com/l/Meeting_Stage/2a527703-1f6f-4559-a332-d8a7d288cd88
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка в представлении сцены |Microsoft Teams пример приложения вкладки для демонстрации вкладки в представлении сцены.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
+|Вкладка в представлении сцены |Microsoft Teams пример приложения вкладки для демонстрации вкладки в представлении сцены.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
     
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
+
+## <a name="see-also"></a>См. также
 
 * [Расширение обмена сообщениями связывает разгрузку](~/messaging-extensions/how-to/link-unfurling.md)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)

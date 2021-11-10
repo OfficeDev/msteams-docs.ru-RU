@@ -1,15 +1,15 @@
 ---
 title: Запрос разрешений на устройство для Microsoft Teams приложения
-keywords: разрешения командных приложений
-description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя
+keywords: teams apps capabilities permissions device native scan qr barcode image audio video
+description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя, например к qr-коду, штрих-коду, изображению, звуку, возможностям видео
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 84c866ddaae371b2c0e40defcbb1cef7c1194f0d
-ms.sourcegitcommit: ce956267b620f807e15e6d2df7afa022ffacc22f
+ms.openlocfilehash: 185552c213d6313ea6c8b50af72a0220d9abe7fc
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60496209"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889120"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений на устройство для Microsoft Teams приложения
 

@@ -4,12 +4,12 @@ description: Начало работы с Teams в Microsoft 365
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: Настройка Microsoft 365 клиента Teams загрузки
-ms.openlocfilehash: 83d45d567c11ff26b5c788371cd4a676f9c3ca2c
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 2b7da66460df12efd1e3c5bd45a9dfa6572e4b4c
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59156151"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888155"
 ---
 # <a name="prepare-your-microsoft-365-tenant"></a>Подготовка клиента Microsoft 365
 
@@ -18,7 +18,7 @@ Microsoft 365 абоненты могут разрабатывать прило�
 * Базовый
 * Стандартный
 * Enterprise E1, E3 и E5
-* Developer
+* Разработчик
 * Education, Education Plus и Education E5
 
 > [!NOTE]
@@ -66,3 +66,6 @@ Microsoft 365 абоненты могут разрабатывать прило�
 > [!div class="nextstepaction"] 
 > [Выбор параметров тестирования](~/concepts/build-and-test/debug.md)
 
+## <a name="see-also"></a>См. также
+
+[Добавление тестовых данных в Microsoft 365 тестовый клиент](~/concepts/build-and-test/test-data.md)

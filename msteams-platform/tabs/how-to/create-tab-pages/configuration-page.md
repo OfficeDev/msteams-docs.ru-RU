@@ -1,17 +1,17 @@
 ---
 title: Создать страницу конфигурации
 author: surbhigupta
-description: создание страницы конфигурации
+description: Узнайте, как создать страницу конфигурации для настройки канала или группового чата для параметров, таких как получение данных контекста, вставка держателей и проверка подлинности с помощью примеров кода.
 keywords: команды вкладки группового канала настраиваются
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 48137f7e922ac0b504d7b88465adb42edd3ba4e4
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 76381e717f0955ade16c0965a0448a1854822fe8
+ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720192"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60888022"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -123,7 +123,7 @@ ms.locfileid: "60720192"
 
 #### <a name="insert-placeholders-in-the-configurationurl"></a>Вставьте местообладатели в `configurationUrl`
 
-Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Примеры:
+Добавьте в базу местообладатели интерфейса `configurationUrl` контекста. Например:
 
 ##### <a name="base-url"></a>Базовый URL-адрес
 
@@ -200,6 +200,11 @@ microsoftTeams.settings.setSettings({
 
 Если вы хотите, чтобы вкладка канала или группы Teams мобильных клиентов, конфигурация должна иметь `setSettings()` значение `websiteUrl` для . Дополнительные сведения см. [в руководстве по вкладке на мобильных устройствах.](~/tabs/design/tabs-mobile.md)
 
+## <a name="next-step"></a>Следующий этап
+
+> [!div class="nextstepaction"]
+> [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
@@ -207,8 +212,3 @@ microsoftTeams.settings.setSettings({
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Создать страницу контента](~/tabs/how-to/create-tab-pages/content-page.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
-
-## <a name="next-step"></a>Следующий шаг
-
-> [!div class="nextstepaction"]
-> [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md)
