@@ -1,19 +1,19 @@
 ---
 author: heath-hamilton
-description: Лучшие практики для интеграции существующих веб-приложений с Microsoft Teams
+description: Лучшие практики или соображения по интеграции существующих веб-приложений с Microsoft Teams
 ms.author: v-heha
 ms.date: 08/26/2020
 ms.localizationpriority: medium
 ms.topic: conceptual
-title: Веб-приложения
-ms.openlocfilehash: 60eab032e35ebb823161d5e32f27e2bdf3bb4ab2
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+title: Соображения для Teams интеграции
+ms.openlocfilehash: cf60c1c30697fd503dcc935f35f32e9281a89cdd
+ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889211"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60912257"
 ---
-# <a name="web-apps"></a>Веб-приложения 
+# <a name="considerations-for-teams-integration"></a>Соображения для Teams интеграции 
 
 Вы можете сделать веб-приложения подходящими с социальными Teams и функциями совместной работы, правильно интегрируя их с Teams.
   

@@ -4,12 +4,12 @@ author: surbhigupta
 description: Включить и настроить приложения для Teams собраний и различных сценариев собраний, обновить манифест приложения, настроить функции, такие как диалоговое окно в собрании, общая стадия собрания, боковойпанель собраний и другие
 ms.topic: conceptual
 ms.localizationpriority: none
-ms.openlocfilehash: 62423d92537cc6cb2d0f8f409d8e50b492fa00fd
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 17add35ef0b2d2cbb3ce2e6658d11d6d58dd8d2d
+ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887715"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60912222"
 ---
 # <a name="enable-and-configure-your-apps-for-teams-meetings"></a>Включить и настроить приложения для Teams собраний
 
@@ -164,10 +164,15 @@ Teams собрания предоставляют совместную рабо�
 |Название примера | Описание | C# | Node.js |
 |----------------|-----------------|--------------|----------------|
 | Приложение для собраний | Демонстрирует, как использовать приложение Генератор маркеров собраний для запроса маркера. Маркер создается последовательно, чтобы каждый участник имел справедливую возможность участвовать в собрании. Маркер полезен в таких ситуациях, как scrum meetings и Q&A. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-|Пример стадии собрания | Пример приложения, чтобы показать вкладку на этапе собрания для совместной работы | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-stage-view/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-stage-view/nodejs) |
+|Пример стадии собрания | Пример приложения, чтобы показать вкладку на этапе собрания для совместной работы | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-stage-view/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-stage-view/nodejs) |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="next-step"></a>Следующее действие
+
+> [!div class="nextstepaction"]
+> [Справочные материалы по API приложений для собраний](API-references.md)
+
+## <a name="see-also"></a>См. также
 
 * [Рекомендации по проектированию диалогов на собрании](design/designing-apps-in-meetings.md#use-an-in-meeting-dialog)
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
-* [Добавление приложений к собраниям через Microsoft Graph](/graph/api/chat-post-installedapps.md)
+* [Добавление приложений к собраниям через Microsoft Graph](/graph/api/chat-post-installedapps?view=graph-rest-1.0&tabs=http)

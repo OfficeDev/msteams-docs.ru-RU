@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 localization_priority: Normal
-ms.openlocfilehash: 72dbbfe62e6f5f975a09b7c0538e0847520670d9
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 868c41ad0df976fec60b9f579b8447a310344d9a
+ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60719800"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60912236"
 ---
 # <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Включите предложение SaaS в Microsoft Teams приложение
 
@@ -57,13 +57,13 @@ ms.locfileid: "60719800"
 
 Интеграция с API выполнения SaaS необходима для монетизации Teams приложения. Эти API помогают управлять жизненным циклом плана подписки после его приобретения пользователем.
 
-Полные инструкции и ссылки на API см. в документации API выполнения [SaaS.](/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2) Как правило, после приобретения подписки вы будете выполнять следующие действия с помощью API:
+Полные инструкции и ссылки на API см. в документации API выполнения [SaaS.](/azure/marketplace/partner-center-portal/pc-saas-fulfillment-apis) Как правило, после приобретения подписки вы будете выполнять следующие действия с помощью API:
 
-1.  Получение [*маркера идентификации покупки*](/azure/marketplace/partner-center-portal/pc-saas-fulfillment-api-v2#purchased-but-not-yet-activated-pendingfulfillmentstart) с помощью URL-адреса на посадочную страницу.
+1. Получение [*маркера идентификации покупки*](/azure/marketplace/partner-center-portal/pc-saas-fulfillment-life-cycle#purchased-but-not-yet-activated-pendingfulfillmentstart) с помощью URL-адреса на посадочную страницу.
 
-1.  Используйте маркер для получения сведений о подписке.
+1. Используйте маркер для получения сведений о подписке.
 
-1.  Уведомить коммерческий рынок о активации подписки.
+1. Уведомить коммерческий рынок о активации подписки.
 
 ### <a name="best-practices-for-implementing-subscription-management"></a>Лучшие практики для реализации управления подписками
 

@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: 9f5e1ce756dbe465e90e18e6db178b0386ae6d2b
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 6838471befd48c439caf9cfbf81589f3bdf75a79
+ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887701"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60912199"
 ---
 # <a name="prerequisites-for-apps-in-teams-meetings"></a>Необходимые условия для приложений в собраниях Teams
 
@@ -51,10 +51,10 @@ ms.locfileid: "60887701"
 > [!NOTE]
 > Teams JavaScript SDK _(Версия_: 1.10 и более поздний вариант) для SSO для работы в боковой панели собраний.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
-> [Справочные материалы по API приложений для собраний](API-references.md)
+> [Включить и настроить приложения для Teams собраний](enable-and-configure-your-app-for-teams-meetings.md)
 
 ## <a name="see-also"></a>См. также
 

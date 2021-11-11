@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api usercontext notification signal signal query
-ms.openlocfilehash: 29e0e797b3b55dd3fa25071929072957c8d43fd8
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 1906561e51791db993e652f837e6064df3b570d5
+ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887708"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60912201"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -256,7 +256,7 @@ API сведений о собраниях включает в себя след
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
 ### <a name="example"></a>Пример
 
@@ -476,8 +476,3 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для Teams собраний](teams-apps-in-meetings.md)
-
-## <a name="next-steps"></a>Дальнейшие действия
-
-> [!div class="nextstepaction"]
-> [Включить и настроить приложения для Teams собраний](enable-and-configure-your-app-for-teams-meetings.md)

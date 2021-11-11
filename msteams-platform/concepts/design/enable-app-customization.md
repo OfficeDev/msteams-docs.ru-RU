@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
 keywords: цветовая марка акцента скрывает утверждение приложения
-ms.openlocfilehash: 3519ad5dc91b27d947c752161bfe3c477281f1f7
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 2061b638034a0b6359f1853163c49f7d696381c6
+ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888169"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60912215"
 ---
 # <a name="customize-your-teams-app"></a>Настройка приложения Teams
 
@@ -53,6 +53,6 @@ ms.locfileid: "60888169"
 
 ## <a name="see-also"></a>См. также
 
-* [Схема manifesh приложения](/MicrosoftTeams/manifest-schema)
+* [Схема манифеста приложения](/MicrosoftTeams/manifest-schema)
 * [Настройка приложений в центре Teams администрирования](/MicrosoftTeams/customize-apps)
 
