@@ -5,12 +5,12 @@ description: Понимание того, как веб-окки и соедин
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 6530462d3b0fe23ae6703dd059bba59d72f321b8
-ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
+ms.openlocfilehash: 6fd3b24f5c33fb31e96b7fd69eb72e9d77e36096
+ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949056"
+ms.locfileid: "60949567"
 ---
 # <a name="webhooks-and-connectors"></a>Веб-перехватчики и соединительные линии
 
@@ -52,4 +52,3 @@ Actionable messages allow users to take action without leaving their email clien
 * [Создание входящих веб-ок](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)
 * [Создание соединителя Office 365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
-

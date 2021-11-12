@@ -5,12 +5,12 @@ description: Узнайте, как интегрировать Power Virtual Age
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: c8f2f61157d1a08dcf7410b86a2f8bda221a6c50
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: bba50757f02a33f1eb83240041c73f104921ee00
+ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887583"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949672"
 ---
 # <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents 
 
@@ -99,15 +99,17 @@ App Studio — это Teams приложение. Установите App Studi
 1. **Запуск чата**   
 Процесс создания для добавления бота Power Virtual Agents чата в Teams завершен. Теперь вы можете начать беседу с ботом в личном чате.
 
-## <a name="see-also"></a>См. также
-
-* [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)  
-* [Создайте чат-бот для Teams microsoft Power Virtual Agents.](../bot-features.md#bots-with-power-virtual-agents)  
-* [Power Virtual Agents портал](https://powervirtualagents.microsoft.com)
-* [Публикация Power Virtual Agents бота](/power-virtual-agents/publication-fundamentals-publish-channels)
-* [Безопасность и соответствие требованиям в Microsoft Teams](/MicrosoftTeams/security-compliance-overview).
-
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Создание виртуального помощника](~/samples/virtual-assistant.md)
+
+## <a name="see-also"></a>См. также
+
+* [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)  
+* [Создание чат-бота для Teams microsoft Power Virtual Agents](../bot-features.md#bots-with-power-virtual-agents) 
+* [Power Virtual Agents портал](https://powervirtualagents.microsoft.com)
+* [Публикация Power Virtual Agents бота](/power-virtual-agents/publication-fundamentals-publish-channels)
+* [Безопасность и соответствие в Microsoft Teams](/MicrosoftTeams/security-compliance-overview)
+
+

@@ -5,12 +5,12 @@ author: surbhigupta
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: contributor-guide
-ms.openlocfilehash: d9b696af2fe493c24de54afd8587f8aea70584d1
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: d6a984f4e0816cd3a2312f82f669b8299467948b
+ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889246"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949644"
 ---
 # <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
@@ -69,7 +69,7 @@ Teams документация входит в библиотеку технич
 
 Образцы кода играют важную роль для эффективного использования API и SDKs. Хорошо представленные примеры кода могут сообщить, как все работает более четко, чем описательный текст и учебные сведения только. Образцы кода должны быть точными, краткими, хорошо документированными и удобными для чтения. Простой для чтения код должен быть понятным, тестировать, отлагировать, поддерживать, изменять и расширять. Дополнительные сведения см. [в дополнительных сведениях о том, как включить код в документы.](/contribute/code-in-docs)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Получения обновлений Microsoft Docs и последних объявлений](/teamblog)
@@ -77,7 +77,7 @@ Teams документация входит в библиотеку технич
 ## <a name="see-also"></a>См. также
 
 * [Документы Майкрософт](/)
-* [руководство по вкладчикам](/contribute)
+* [Руководство по вкладчикам](/contribute)
 * [Быстрый запуск стиля и голосового голоса в docs](/contribute/style-quick-start)
 * [Передний край: читаемость исходных кодов Советы](/archive/msdn-magazine/2014/october/cutting-edge-source-code-readability-tips)
 * [Teams документации](/microsoftteams/platform/overview)

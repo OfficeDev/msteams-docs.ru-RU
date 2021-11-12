@@ -4,12 +4,12 @@ description: Описывает поток проверки подлинност
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: Вкладки потока проверки подлинности команд
-ms.openlocfilehash: 0b58e0182714921745fa911cc747aa1c314d3df2
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 2d054ef841bf4f05be4e662d77b999c654670f45
+ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888449"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949651"
 ---
 # <a name="microsoft-teams-authentication-flow-for-tabs"></a>Microsoft Teams потока проверки подлинности для вкладок
 
@@ -51,9 +51,9 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 | **Название примера** | **Описание** | **C#** | **Node.js** |
 |-----------------|-----------------|-------------|------------|
-| Teams проверки подлинности вкладок | Процесс проверки подлинности для вкладок с AAD. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/nodejs) |
+| Teams проверки подлинности вкладок | Процесс проверки подлинности для вкладок с AAD. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/nodejs) |
 
-## <a name="more-details"></a>Дополнительные сведения
+## <a name="see-also"></a>Дополнительные ресурсы
 
 Подробные сведения о реализации для проверки подлинности вкладок с AAD см. в этой области.
 

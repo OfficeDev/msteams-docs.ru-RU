@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 localization_priority: Normal
-ms.openlocfilehash: 868c41ad0df976fec60b9f579b8447a310344d9a
-ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
+ms.openlocfilehash: c66a7aad6b56ca5be50ffa20384bb648a3750ba5
+ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60912236"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949665"
 ---
 # <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Включите предложение SaaS в Microsoft Teams приложение
 
@@ -202,4 +202,4 @@ ms.locfileid: "60912236"
 
 ## <a name="see-also"></a>См. также
 
-* [Ведение и поддержка опубликованного приложения](../post-publish/overview.md)
+[Ведение и поддержка опубликованного приложения](../post-publish/overview.md)
