@@ -5,12 +5,12 @@ description: Планирование приложения, понимание �
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 835e40e2c93387ee7db9fab7eb1f8c56951019c9
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 93ab668a4ac317228186508eb721f1900add0de8
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888421"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948391"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -77,7 +77,7 @@ ms.locfileid: "60888421"
 
 Определите, какие новые функции пользователь предпочтет иметь в текущем решении. Если у вас есть дорожная карта для добавления новых функций в приложение, на дизайн и архитектуру будет влиять.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Карта случаев использования](../../concepts/design/map-use-cases.md)

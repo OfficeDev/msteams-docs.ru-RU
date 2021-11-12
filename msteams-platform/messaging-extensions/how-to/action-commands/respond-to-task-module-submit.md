@@ -5,12 +5,12 @@ description: Описывает, как реагировать на отправ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: ac74fb4536f5e7b36e40982cf13a7cf4edfa1644
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: e660a7fb289e8047316d8d1405c09df65bc5c8ca
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889414"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948413"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -589,7 +589,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 |Поле|Тип|Описание|
 |:---|:---|:---|
 |`itemId`|Целое число|Описывает идентификацию элемента. Его значение должно быть `0` .|
-|`mentionType`|Строка|Описывает упоминание о "человеке".|
+|`mentionType`|String|Описывает упоминание о "человеке".|
 |`mri`|String|Идентификатор ресурса сообщений (MRI) человека, от имени которого отправляется сообщение. Имя отправитель сообщения будет отображаться как \<user\> \<bot name\> "через".|
 |`displayName`|String|Имя человека. Используется в качестве отката в разрешении имени случая недоступно.|
   

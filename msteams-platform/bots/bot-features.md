@@ -5,12 +5,12 @@ description: Обзор инструментов и SDKs для создания
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: d6a1ce32fce03ada547cf769ff5a634f9d6f01de
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 3c39ed5c39a92967ebf8b90760bd28e7bb6366f3
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888428"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948386"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -118,7 +118,7 @@ BOT: В какой день?
 |----------------|-----------------|--------------|----------------|
 | Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Обработчики действий ботов](~/bots/bot-basics.md)

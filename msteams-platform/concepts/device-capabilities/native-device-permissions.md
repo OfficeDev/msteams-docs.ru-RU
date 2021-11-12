@@ -4,12 +4,12 @@ keywords: teams apps capabilities permissions device native scan qr barcode imag
 description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя, например к qr-коду, штрих-коду, изображению, звуку, возможностям видео
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 185552c213d6313ea6c8b50af72a0220d9abe7fc
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 04518d8620ce95d5d3ca72c86684ff0208b1333f
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889120"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948434"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений на устройство для Microsoft Teams приложения
 
@@ -196,13 +196,12 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 |---------------|--------------|--------|
 |Разрешения для устройств | Используйте Microsoft Teams пример вкладки для демонстрации разрешений устройств |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-device-permissions/nodejs) |
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
 
-> [!div class="nextstepaction"]
-> [Интеграция возможностей сканера QR или штрихкодов в Teams](qr-barcode-scanner-capability.md)
+## <a name="see-also"></a>См. также
 
-> [!div class="nextstepaction"]
-> [Интеграция возможностей расположения в Teams](location-capability.md)
+* [Интеграция возможностей сканера QR или штрихкодов в Teams](qr-barcode-scanner-capability.md)
+* [Интеграция возможностей расположения в Teams](location-capability.md)

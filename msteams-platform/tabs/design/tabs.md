@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: Набор пользовательского интерфейса управление настройкой единый вход прямые ссылки на основе ролей просмотр цепочек обсуждений
-ms.openlocfilehash: 42f5a76c0499b3f50d90608d1f08e701caa13984
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: c2c081a1cb0ca96cce7cc55a9e39facc9cd691db
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887924"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948588"
 ---
 # <a name="design-your-tab-for-microsoft-teams"></a>Разработка вкладки для Microsoft Teams
 

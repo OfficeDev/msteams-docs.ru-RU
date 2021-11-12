@@ -3,7 +3,7 @@ title: Microsoft Teams документации разработчика
 summary: 'Получите документацию, пример кода, учебники и другие, чтобы помочь вам создать настраиваемые Microsoft Teams приложения.'
 brand: teams
 metadata:
-  title: Microsoft Teams Документация разработчика платформы
+  title: Microsoft Teams документация разработчика платформы
   description: 'Платформа Microsoft Teams позволяет разработчикам интегрировать собственные приложения и службы, чтобы повысить производительность, быстрее принимать решения, уделять основное внимание за счет сокращения переключения контекста и создания совместной работы с существующим контентом и рабочими процессами.'
   ms.service: msteams
   ms.topic: hub-page
@@ -74,9 +74,9 @@ conceptualContent:
         - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
           itemType: overview
           text: Приложения для Teams собраний
-        - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
+        - url: /microsoftteams/platform/task-modules-and-cards/cards-and-task-modules
           itemType: concept
-          text: Карты и модули задач
+          text: Карточки и модули задач
         - url: /microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors
           itemType: overview
           text: Веб-перехватчики и соединительные линии
@@ -120,7 +120,7 @@ conceptualContent:
         - url: /microsoftteams/platform/samples/shifts-wfm-connectors
           itemType: reference
           text: Интеграция готовых к производству соединители Shifts
-    - title: Сообщество
+    - title: Community
       links:
         - url: 'https://developer.microsoft.com/microsoft-teams/blogs/'
           itemType: overview
@@ -133,7 +133,7 @@ conceptualContent:
           text: Объявления
         - url: /microsoftteams/platform/feedback
           itemType: overview
-          text: Microsoft Teams Разработчик Community и ответ
+          text: Microsoft Teams разработчика Community и ответа
         - url: /microsoftteams/platform/resources/teams-contributor-reference
           itemType: overview
           text: Участие в Microsoft Teams документации

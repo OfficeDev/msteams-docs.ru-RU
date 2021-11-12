@@ -7,12 +7,12 @@ ms.localizationpriority: medium
 ms.author: lajanuar
 ms.date: 09/22/2020
 keywords: вкладки боты расширения сообщений веб-ок соединители gcc
-ms.openlocfilehash: e4db8bde75d2d396ada5c0789b8cc06731701443
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 4e5d5e17984fd38f3d5c3d511784a2d8a9d955fe
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888148"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948406"
 ---
 # <a name="understand-microsoft-teams-app-capabilities"></a>Понимание Microsoft Teams приложений
 
@@ -65,12 +65,12 @@ ms.locfileid: "60888148"
 * Для побочных загрузки приложений см. в Teams настраивать [приложение,](../concepts/design/enable-app-customization.md)распространять Microsoft Teams приложение [и](../concepts/deploy-and-publish/apps-publish-overview.md)Upload приложение в [Teams](../concepts/deploy-and-publish/apps-upload.md).
 * Для настраиваемой соединители [см. в Office 365 соединители для Teams](../webhooks-and-connectors/how-to/connectors-creating.md).
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Точки входа приложения Teams](../concepts/extensibility-points.md)
 
 ## <a name="see-also"></a>См. также
 
-[Создание приложений для Teams](../overview.md) 
- [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
+* [Создание приложений для Teams](../overview.md)
+* [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)

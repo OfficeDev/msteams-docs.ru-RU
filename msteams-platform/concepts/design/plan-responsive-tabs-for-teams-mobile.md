@@ -5,12 +5,12 @@ description: Руководство по планированию создани
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: v-abirade
-ms.openlocfilehash: 5ad636f494e57706b280980905e197f03707e379
-ms.sourcegitcommit: 781e7b82240075e9d1f55e97f3f1dcbba82a5e4d
+ms.openlocfilehash: 60aab6b9c81dbc28fbbfe0d9a985b42c22ddee47
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "60566150"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948399"
 ---
 # <a name="plan-responsive-tabs-for-teams-mobile"></a>Планирование адаптивных вкладок для мобильной версии Teams
 
@@ -185,4 +185,4 @@ ms.locfileid: "60566150"
 * [Проектирование вкладки](../../tabs/design/tabs.md)
 * [Создание бота](../../bots/design/bots.md)
 * [Проектирование модулей задач](../..//task-modules-and-cards/task-modules/design-teams-task-modules.md)
-* [Рекомендации по проверке](../deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)
+* [Рекомендации по проверке хранения](../deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)

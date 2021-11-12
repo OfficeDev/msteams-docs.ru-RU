@@ -6,12 +6,12 @@ keywords: команды вкладки группового канала нас
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 6b2233307d457e3f41e7eccd49bd6e099d593a9f
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 72fd6e291d282787ad406e2677c2e3ef58a4fe47
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888057"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948609"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
@@ -43,7 +43,7 @@ Teams должны придерживаться следующих обязат�
 * [Наборы средств Teams для Visual Studio Code](../../toolkit/visual-studio-code-overview.md)
 * [Наборы средств Teams для Visual Studio](../../toolkit/visual-studio-overview.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
@@ -51,7 +51,7 @@ Teams должны придерживаться следующих обязат�
 ## <a name="see-also"></a>См. также
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
-* [Создание первого приложения с помощью React](../../get-started/first-app-react.md)
+* [Создание первого приложения с помощью JavaScript](../../get-started/first-app-react.md)
 * [Создание первого приложения с помощью Blazor](../../get-started/first-app-blazor.md)
 * [Создание первого приложения с помощью SPFx](../../get-started/first-app-spfx.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)

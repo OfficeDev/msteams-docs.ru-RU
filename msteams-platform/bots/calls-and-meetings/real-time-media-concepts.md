@@ -4,12 +4,12 @@ description: Понимание ключевых понятий в создан�
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: аудиопоток видеопотока аудио- и видеосвязи собрания в режиме реального времени мультимедиа-приложений, размещенной в средствах массовой информации, размещенной в средствах массовой информации
-ms.openlocfilehash: bff216848262412a05de8794bb716eb6a3f4c75a
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: e35ce08bc0efed328687f7aacf311cf94c3e8830
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889064"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948553"
 ---
 # <a name="real-time-media-calls-and-meetings-with-microsoft-teams"></a>Вызовы и встречи с Microsoft Teams
 
@@ -65,7 +65,7 @@ ms.locfileid: "60889064"
 
 Для веб-ботов мультимедиа с приложениями требуется .NET или C# и Windows Server. Дополнительные сведения см. в дополнительных сведениях о требованиях и соображениях к медийным ботам с [хостингом приложений.](requirements-considerations-application-hosted-media-bots.md#c-or-net-and-windows-server-for-development)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Регистрация бота вызовов](~/bots/calls-and-meetings/registering-calling-bot.md)

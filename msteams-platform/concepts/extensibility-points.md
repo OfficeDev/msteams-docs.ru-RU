@@ -5,12 +5,12 @@ description: Описывает точки входа для вашего при
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 1bfaed5ec9c2ef1bec9dc3699dbb5914be213a44
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 2dd2670787c3da9140b5798db3e7d28b30271f70
+ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889085"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60948420"
 ---
 # <a name="entry-points-for-teams-apps"></a>Точки входа для приложений Teams
 
@@ -45,12 +45,12 @@ ms.locfileid: "60889085"
 
 * [**Вкладки**](~/tabs/what-are-tabs.md) предоставляют встроенный полноэкранный веб-интерфейс, который имеет значение для пользователя, который смотрит на него.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Понимание случаев использования](../concepts/design/understand-use-cases.md)
 
 ## <a name="see-also"></a>См. также
 
-[Teams руководства по разработке приложений](../concepts/design/design-teams-app-overview.md) <br>
-[Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
+* [Teams руководства по разработке приложений](../concepts/design/design-teams-app-overview.md) <br>
+* [Создайте первое Microsoft Teams приложение](../build-your-first-app/build-first-app-overview.md)
