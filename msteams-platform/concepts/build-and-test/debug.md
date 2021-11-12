@@ -4,12 +4,12 @@ description: Описывает варианты тестирования и о�
 keywords: группы запускают отлагивание приложений локального хоста с облачным хостингом
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: b6cc4bcebcfe5d859ba0a9c6c935287ee8944d06
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 2c28090d82737d5231ed68a2fd3ef6896d701022
+ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889083"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949021"
 ---
 # <a name="choose-a-setup-to-test-and-debug-your-microsoft-teams-app"></a>Выберите установку для тестирования и отлаговки Microsoft Teams приложения
 
@@ -75,7 +75,7 @@ Microsoft Teams является полностью облачным проду�
 * [Создайте пакет для Microsoft Teams приложения.](~/concepts/build-and-test/apps-package.md)
 * [Upload приложение в Microsoft Teams](~/concepts/deploy-and-publish/apps-upload.md).
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"] 
 > [Добавление тестовых данные в среду](~/concepts/build-and-test/test-data.md)

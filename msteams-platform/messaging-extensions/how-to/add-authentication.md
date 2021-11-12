@@ -5,12 +5,12 @@ description: Узнайте, как добавить проверку подли
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 808ff41c848864bfd86d12fe0dc236e249fa3157
-ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
+ms.openlocfilehash: 83c7ce4f7897014345fd071b28273ade5907a917
+ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/12/2021
-ms.locfileid: "60948630"
+ms.locfileid: "60949098"
 ---
 # <a name="add-authentication-to-your-messaging-extension"></a>Добавление проверки подлинности в расширение для сообщений
 
@@ -136,8 +136,8 @@ ms.locfileid: "60948630"
 ## <a name="code-sample"></a>Пример кода
 |**Название примера** | **Описание** |**.NET** | **Node.js**|
 |----------------|-----------------|--------------|----------------|
-|Расширения обмена сообщениями — auth и config | Расширение обмена сообщениями, которое имеет страницу конфигурации, принимает запросы на поиск и возвращает результаты после того, как пользователь войт. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)|[View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)| 
+|Расширения обмена сообщениями — auth и config | Расширение обмена сообщениями, которое имеет страницу конфигурации, принимает запросы на поиск и возвращает результаты после того, как пользователь войт. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config)| 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Поддержка единой системы регистрации (SSO) для расширений обмена сообщениями](~/messaging-extensions/how-to/enable-sso-auth-me.md)

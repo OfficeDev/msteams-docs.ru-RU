@@ -5,12 +5,12 @@ description: Понимание того, как веб-окки и соедин
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 3b7dd6b907ec1af0467c40bda53422cc75e503bc
-ms.sourcegitcommit: 8feddafb51b2a1a85d04e37568b2861287f982d3
+ms.openlocfilehash: 6530462d3b0fe23ae6703dd059bba59d72f321b8
+ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59475761"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949056"
 ---
 # <a name="webhooks-and-connectors"></a>Веб-перехватчики и соединительные линии
 
@@ -33,7 +33,7 @@ ms.locfileid: "59475761"
 
 ### <a name="office-365-connectors"></a>Соединители Office 365
 
-Office 365 Соединители позволяют создавать настраиваемую страницу конфигурации для входящих веб-пользователей и упаковывать их в Teams приложения. Вы отправляете сообщения в основном с Office 365 соединителю и имеете возможность добавлять в них ограниченный набор действий карт. Например, соединитетелем погоды, который позволяет пользователям выбирать местоположение и время суток, получать обновления о погоде завтрашнего дня. Они настроены на уровне канала, но устанавливаются на уровне группы.
+Office 365 соединители позволяют создавать настраиваемую страницу конфигурации для входящих веб-пользователей и упаковывать их в Teams приложения. Вы отправляете сообщения в основном с Office 365 соединителю и имеете возможность добавлять в них ограниченный набор действий карт. Например, соединитетелем погоды, который позволяет пользователям выбирать местоположение и время суток, получать обновления о погоде завтрашнего дня. Они настроены на уровне канала, но устанавливаются на уровне группы.
 
 > [!NOTE]
 > Вы можете распространять приложение Office 365 соединители Teams в нашем AppStore.
@@ -42,13 +42,14 @@ Office 365 Соединители позволяют создавать наст
 
 Actionable messages allow users to take action without leaving their email client, increasing user engagement. С Office 365 и входящих веб-ок можно отправлять сообщения, разместив полезной нагрузки JSON на URL-адрес веб-сайта.
 
+## <a name="next-step"></a>Следующее действие
+
+> [!div class="nextstepaction"]
+> [Создание исходятого веб-окка](~/webhooks-and-connectors/how-to/add-outgoing-webhook.md)
+
 ## <a name="see-also"></a>См. также
 
 * [Создание входящих веб-ок](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)
 * [Создание соединителя Office 365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
 
-## <a name="next-step"></a>Следующее действие
-
-> [!div class="nextstepaction"]
-> [Создание исходятого веб-окка](~/webhooks-and-connectors/how-to/add-outgoing-webhook.md)

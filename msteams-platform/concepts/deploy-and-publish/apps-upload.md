@@ -5,12 +5,12 @@ ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: 02ea6d9caf4acc43bcd9a361113baf7ce9f8464a
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: e14e521941d253a3f259cf93f36bff4d620d55f2
+ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888190"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949063"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Upload приложение в Microsoft Teams
 
@@ -62,7 +62,7 @@ Teams предоставляет несколько способов откры�
 > [!NOTE]
 > Полностью удалить личную активность бота нельзя. Если удалить приложение и добавить его еще раз, новое общение с ботом добавляется к предыдущему разговору с ним.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Используйте приложение Teams](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-us&rs=en-us&ad=us)

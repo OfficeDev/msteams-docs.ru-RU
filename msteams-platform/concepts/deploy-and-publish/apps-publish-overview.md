@@ -6,12 +6,12 @@ author: KirtiPereira
 ms.author: surbhigupta
 ms.localizationpriority: none
 keywords: развертывание gcc загрузки приложений публикации
-ms.openlocfilehash: 0436388365c2d7fc355c3f8cb40a9f05283124b8
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 6a4cb297c7f78ef09796adb3793ee1848236fdb6
+ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889190"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949112"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 
@@ -45,11 +45,11 @@ ms.locfileid: "60889190"
 
 Дополнительные сведения см. [в публикации в Teams магазине.](~/concepts/deploy-and-publish/appsource/publish.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Настройка параметров установки приложения по умолчанию](~/concepts/deploy-and-publish/add-default-install-scope.md)
 
 ## <a name="see-also"></a>См. также
 
-* [Соответствие требованиям для приложений Microsoft 365](/microsoft-365-app-certification/overview)
+[Программа соответствия приложений Microsoft 365 требованиям](/microsoft-365-app-certification/overview)

@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
 keywords: Хранилище отправки распространяет рекомендации по проверке пакета приложений для локализации
-ms.openlocfilehash: 08155408e68869b76f814788afcb408afd1a72a9
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 4da374d9ced3231437aef278c7c90c68fc0c19de
+ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889169"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60949070"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовка отправки Microsoft Teams магазина
 
@@ -159,7 +159,7 @@ ms.locfileid: "60889169"
 
 Дополнительные возможности см. в следующих ресурсах:
 
-* [Teams Рекомендации по проверке хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#screenshots)
+* [Teams проверки магазина](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#screenshots)
 * [Создай эффективные изображения для магазинов приложений Майкрософт](/office/dev/store/craft-effective-appsource-store-images)
 
 ### <a name="create-a-video"></a>Создание видео
@@ -210,7 +210,7 @@ ms.locfileid: "60889169"
 > [!NOTE]
 > Если вы отправили новое приложение, вы не можете официально завершить проверку Publisher, пока ваше приложение не будет перечислены в Teams магазине. Если вы обновляете перечисленное приложение, Publisher проверку перед отправкой последней версии приложения для проверки.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Отправка приложения](/office/dev/store/add-in-submission-guide)

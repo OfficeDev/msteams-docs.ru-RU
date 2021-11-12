@@ -442,7 +442,7 @@
   items:
     - name: Обзор
       href: samples/integrate-web-apps-overview.md
-    - name: Веб-приложения
+    - name: Вопросы интеграции Teams
       href: samples/integrating-web-apps.md
     - name: Приложения Power Platform
       items:
