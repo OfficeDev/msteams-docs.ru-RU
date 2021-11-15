@@ -104,6 +104,8 @@
       href: concepts/build-and-test/teams-developer-portal.md
     - name: Клиентский SDK JavaScript для Teams
       href: tabs/how-to/using-teams-client-sdk.md
+    - name: Клиентский SDK JavaScript для Teams — предварительная версия 2
+      href: m365-apps/using-teams-client-sdk-preview.md
     - name: Пакеты Node.js Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-js'
     - name: Пакеты .NET Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
@@ -368,6 +370,16 @@
       href: graph-api/import-messages/import-external-messages-to-teams.md
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/microsoft-teams-samples#graph-apis'
+- name: Расширение приложения в Microsoft 365
+  items:
+    - name: Обзор
+      href: m365-apps/overview.md
+    - name: Предварительные требования
+      href: m365-apps/prerequisites.md
+    - name: Включение личной вкладки Teams в Office и Outlook
+      href: m365-apps/extend-m365-teams-personal-tab.md
+    - name: Включение расширения для сообщений Teams в Outlook
+      href: m365-apps/extend-m365-teams-message-extension.md
 - name: Тестирование приложения
   items:
     - name: Обзор
@@ -480,8 +492,6 @@
           href: resources/schema/localization-schema.md
     - name: Атрибут cookie SameSite
       href: resources/samesite-cookie-update.md
-    - name: Распространенные причины неудачной отправки в магазин
-      href: concepts/deploy-and-publish/appsource/prepare/frequently-failed-cases.md
     - name: Улучшение документации Teams
       href: resources/teams-contributor-reference.md
 - name: Поддержка и обратная связь
