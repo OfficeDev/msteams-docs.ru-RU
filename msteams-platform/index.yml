@@ -60,6 +60,9 @@ conceptualContent:
         - url: /learn/modules/msteams-webhooks-connectors/
           itemType: learn
           text: Подключение веб-службы для каналов и групп с веб-Office 365 соединители
+        - url: /microsoftteams/platform/m365-apps/overview
+          itemType: overview
+          text: Расширение Teams приложений в Microsoft 365
     - title: Возможности
       links:
         - url: /microsoftteams/platform/tabs/what-are-tabs

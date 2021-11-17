@@ -1,0 +1,103 @@
+### YamlMime:Landing
+title: Microsoft Teams документация разработчика
+summary: Добро пожаловать в обзор документации Microsoft Teams разработчика. Microsoft Teams приложения приносят ключевые сведения, общие инструменты и доверенные процессы в места, где люди все чаще собираются, учатся и работают.
+metadata:
+  title: Microsoft Teams документация разработчика
+  description: Введение приложений для создания Teams
+  ms.date: 11/10/2021
+  ms.topic: landing-page
+  ms.openlocfilehash: 2389ccf6df9670b173d74c7b5c40baed48a20349
+  ms.sourcegitcommit: 1ac0bd55adfd49c42cd870dc71ceca3dcac70941
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/16/2021
+  ms.locfileid: "61041746"
+landingContent:
+- title: Ознакомьтесь с последними данными
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Личные вкладки и расширения обмена сообщениями работают в Outlook и Office (Предварительная версия)
+      url: ~/m365-apps/overview.md
+    - text: Включить боты для получения всех сообщений канала с использованием разрешения на использование ресурсов (RSC)
+      url: ~/bots/how-to/conversations/channel-messages-with-rsc.md
+    - text: Монетизация приложения Teams с помощью трансактабельного предложения SaaS
+      url: ~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
+    - text: Создание настраиваемого приложения с низким кодом
+      url: ~/samples/teams-low-code-solutions.md
+- title: Учебники
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Упреждающие сообщения
+      url: ~/bots/how-to/conversations/send-proactive-messages.md
+    - text: Добавление проверки подлинности в боты
+      url: ~/bots/how-to/authentication/add-authentication.md
+  - linkListType: tutorial
+    links:
+    - text: Пошаговое руководство для активных сообщений
+      url: ~/sbs-send-proactive.yml
+    - text: Пошаговая руководство по добавлению проверки подлинности в боты
+      url: ~/sbs-bots-with-sso.yml
+- title: Начало работы
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Начало работы с созданием приложений
+      url: ../msteams-platform/get-started/get-started-overview.md
+  - linkListType: tutorial
+    links:
+    - text: Создание приложения с помощью JavaScript
+      url: sbs-gs-javascript.yml
+    - text: Создание приложения с помощью Blazor
+      url: sbs-gs-blazor.yml
+    - text: Создание приложения с SPFx
+      url: sbs-gs-spfx.yml
+    - text: Создание приложения с C# или .NET
+      url: sbs-gs-csharp.yml
+    - text: Создание приложения с Node.js
+      url: sbs-gs-nodejs.yml
+- title: Создание приложений для Teams
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Создание приложений для Microsoft Teams
+      url: ../msteams-platform/overview.md
+    - text: Основные сведения о приложении
+      url: ~/concepts/app-fundamentals-overview.md
+    - text: Создание приложения
+      url: ~/concepts/design/design-teams-app-overview.md
+  - linkListType: whats-new
+    links:
+    - text: Новые возможности
+      url: ../msteams-platform/whats-new.md
+- title: Создание возможностей приложения
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Вкладки сборки
+      url: ~/tabs/what-are-tabs.md
+    - text: Боты сборки
+      url: ~/bots/what-are-bots.md
+    - text: Создание расширений сообщений
+      url: ~/messaging-extensions/what-are-messaging-extensions.md
+    - text: Создание приложений для собраний Teams
+      url: ~/apps-in-teams-meetings/teams-apps-in-meetings.md
+    - text: Создание веб-перехватчиков и соединителей
+      url: ~/webhooks-and-connectors/what-are-webhooks-and-connectors.md
+    - text: Создание карточек и модулей задач
+      url: ~/task-modules-and-cards/cards-and-task-modules.md
+    - text: Манифест приложения
+      url: ../msteams-platform/resources/schema/manifest-schema.md
+- title: Публикация и распространение
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Распределение
+      url: ~/concepts/deploy-and-publish/apps-publish-overview.md
+    - text: Публикация в Teams Store
+      url: ~/concepts/deploy-and-publish/appsource/publish.md
+    - text: Рекомендации по проверке хранения
+      url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
+    - text: Обслуживание опубликованного приложения
+      url: ~/concepts/deploy-and-publish/appsource/post-publish/overview.md
