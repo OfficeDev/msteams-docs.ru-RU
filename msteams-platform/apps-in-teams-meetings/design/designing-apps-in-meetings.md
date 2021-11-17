@@ -6,12 +6,12 @@ ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: conceptual
 keywords: Шаблон набора пользовательского интерфейса на собрании с отзывчивым поведением на общем этапе собраний
-ms.openlocfilehash: 39d0ef00d6a012726f2a3645f3d8e2bf00ebaf33
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: d66dc257ae26a17519468cf11d1d0b5593ba9d33
+ms.sourcegitcommit: 3dd69ae18bca8dd2e0666d09746a4012cd8c8e42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887847"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61051198"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Проектирование расширения Microsoft Teams собрания
 
@@ -192,7 +192,7 @@ ms.locfileid: "60887847"
 Приложения, общие на этапе собрания, занимают то же место, что и общий экран. Этап переориентирован для всех участников собрания.
 
 > [!NOTE]
-> Все пользователи на собрании могут видеть приложение при совместном доступе с рабочего стола. Однако в настоящее время возможности для обмена приложением с мобильными устройствами недоступны.
+> Все пользователи на собрании могут видеть приложение при совместном доступе с рабочего стола. В настоящее время мобильные пользователи не могут обмениваться контентом приложений на стадии собрания.
  
 ### <a name="use-cases"></a>Варианты использования
 
@@ -509,7 +509,7 @@ Teams для темной темы, чтобы уменьшить визуаль
    :::column-end:::
 :::row-end:::
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Настройка приложения для собраний](~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)
