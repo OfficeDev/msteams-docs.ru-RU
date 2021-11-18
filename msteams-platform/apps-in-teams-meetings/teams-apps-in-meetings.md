@@ -6,12 +6,12 @@ ms.topic: overview
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api
-ms.openlocfilehash: c6a872f9e43f5394a3d10ef5bf3ab8f2650ca9b4
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 0ae8a3b5f080258e870e4b21c91071de6aac4fd5
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887694"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075453"
 ---
 # <a name="apps-for-teams-meetings"></a>Приложения для Teams собраний
 
@@ -22,8 +22,6 @@ ms.locfileid: "60887694"
 * Предустановка доски Kanban.
 * Запустите диалоговое окно для действий в собрании.
 * Создание опроса после собрания.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/nKAy5rNDus4]
 
 Следующая иллюстрация дает представление о функции extensibility приложения для собраний:
 
@@ -37,7 +35,7 @@ ms.locfileid: "60887694"
 
 Новая функция пользовательских сцен в режиме "Вместе" позволяет пользователям совместно работать на собрании с командой в одном месте.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Расширяемость приложения для собраний](meeting-app-extensibility.md)

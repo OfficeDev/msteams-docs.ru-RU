@@ -4,12 +4,12 @@ description: Обзор для начала работы Microsoft Teams док�
 ms.localizationpriority: medium
 ms.topic: reference
 keywords: Microsoft Teams примерах разработчика
-ms.openlocfilehash: 0b2ded130bf68f1db8715c8ff6e10336db6aeb2c
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: ee986f04ca760fbf9090f7dda94e1378261db7df
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720096"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075481"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -34,7 +34,7 @@ ms.locfileid: "60720096"
 | Возможности приложений | Взаимодействие пользователей | Рекомендуемые средства | Пакеты SDK | Стеки технологий / Языки |
 |--------|-------------|--------|--------|--------|
 | Вкладки | Полноэкранный встроенный веб-опыт. | VS Code с Teams набор средств или [CLI TeamsFx,](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) если вы предпочитаете использовать CLI | [TeamsFx SDK для](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) основных либов и Teams [клиента SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для функций пользовательского интерфейса | Веб-технологии в целом, HTML, CSS и JavaScript (incl. React). |
-| Боты | Чат-бот, который беседует с участниками. | VS Code с Teams набор средств или [CLI TeamsFx](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [TeamsFx SDK](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
+| боты; | Чат-бот, который беседует с участниками. | VS Code с Teams набор средств или [CLI TeamsFx](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [TeamsFx SDK](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
 | Расширения для система обмена сообщениями | Ярлыки для вставки внешнего контента в беседу или принятия действий по сообщениям. | VS Code с Teams набор средств или [CLI TeamsFx](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [TeamsFx SDK](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
 
 *Вы не ограничены использованием этих определенных стеков!*
@@ -53,9 +53,6 @@ ms.locfileid: "60720096"
 > [Создайте приложение Teams javaScript с помощью React](../sbs-gs-javascript.yml)
 
 > [!div class="nextstepaction"]
-> [Создание приложения Teams с помощью Blazor](../sbs-gs-blazor.yml)
-
-> [!div class="nextstepaction"]
 > [Создайте приложение Teams с помощью SPFx](../sbs-gs-spfx.yml)
 
 > [!div class="nextstepaction"]
@@ -63,4 +60,3 @@ ms.locfileid: "60720096"
 
 > [!div class="nextstepaction"]
 > [Создайте приложение Teams с помощью Node.js](../sbs-gs-nodejs.yml)
-

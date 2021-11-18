@@ -6,12 +6,12 @@ keywords: команды вкладки группового канала нас
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 72fd6e291d282787ad406e2677c2e3ef58a4fe47
-ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
+ms.openlocfilehash: 42d022bb5083e97996da74d033866a1eb92ecc7a
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60948609"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075425"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
@@ -52,6 +52,5 @@ Teams должны придерживаться следующих обязат�
 
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание первого приложения с помощью JavaScript](../../get-started/first-app-react.md)
-* [Создание первого приложения с помощью Blazor](../../get-started/first-app-blazor.md)
 * [Создание первого приложения с помощью SPFx](../../get-started/first-app-spfx.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)

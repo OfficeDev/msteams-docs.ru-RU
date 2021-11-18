@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO AAD api с одним входом
-ms.openlocfilehash: e242562c4e533b1a79f14598ad6edcf2bf561b03
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 627c63d758705884adb7c1b5629ecf8f3d13d834
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60720339"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075439"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -69,7 +69,7 @@ API SSO также работает в [модулях задач,](../../../tas
 > * Поддерживаются только разрешения Graph API на уровне пользователей, то есть электронная почта, профиль, offline_access, OpenId. Если вы должны иметь доступ к другим Graph области, такие как или , см. статью Получить маркер доступа с `User.Read` `Mail.Read` Graph [разрешений](#get-an-access-token-with-graph-permissions).
 > * Важно, чтобы доменное имя вашего приложения было таким же, как и доменное имя, которое вы зарегистрировали для AAD приложения.
 > * В настоящее время несколько доменов в приложении не поддерживаются.
-> * Пользователь должен `accessTokenAcceptedVersion` настроиться `v2` на новое приложение.
+> * Пользователь должен `accessTokenAcceptedVersion` настроиться `2` на новое приложение.
 
 **Регистрация приложения на портале AAD**
 

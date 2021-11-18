@@ -6,12 +6,12 @@ metadata:
   description: Введение приложений для создания Teams
   ms.date: 11/10/2021
   ms.topic: landing-page
-  ms.openlocfilehash: 0d60a1c4611511d56938a3d4bd7e2d6bdce2f033
-  ms.sourcegitcommit: d247a03ff53f058f11b94958473ae2e8962f2984
+  ms.openlocfilehash: 30e47cc11a2799442aa8f7639000f13690046d21
+  ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61061953"
+  ms.lasthandoff: 11/18/2021
+  ms.locfileid: "61075578"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
@@ -19,7 +19,7 @@ landingContent:
     links:
     - text: Личные вкладки и расширения обмена сообщениями работают в Outlook и Office (Предварительная версия)
       url: ~/m365-apps/overview.md
-    - text: Введите передовую поиск в адаптивной карте
+    - text: Поиск с автозавершением в адаптивной карточке
       url: ~/task-modules-and-cards/cards/dynamic-search.md
     - text: Включить боты для получения всех сообщений канала с использованием разрешения на использование ресурсов (RSC)
       url: ~/bots/how-to/conversations/channel-messages-with-rsc.md
@@ -27,7 +27,7 @@ landingContent:
       url: ~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
     - text: Создание настраиваемого приложения с низким кодом
       url: ~/samples/teams-low-code-solutions.md
-- title: Учебники
+- title: Руководства
   linkLists:
   - linkListType: concept
     links:
@@ -51,8 +51,6 @@ landingContent:
     links:
     - text: Создание приложения с помощью JavaScript
       url: sbs-gs-javascript.yml
-    - text: Создание приложения с помощью Blazor
-      url: sbs-gs-blazor.yml
     - text: Создание приложения с SPFx
       url: sbs-gs-spfx.yml
     - text: Создание приложения с C# или .NET
@@ -93,6 +91,14 @@ landingContent:
       url: ~/task-modules-and-cards/cards-and-task-modules.md
     - text: Манифест приложения
       url: ../msteams-platform/resources/schema/manifest-schema.md
+- title: Teams приложений
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Создание сценариев для Teams приложения
+      url: https://adoption.microsoft.com/extensibility-look-book/scenarios/
+    - text: Лучшие практики для Teams приложений
+      url: https://developer.microsoft.com/en-us/microsoft-teams/app-development-resources
 - title: Публикация и распространение
   linkLists:
   - linkListType: concept

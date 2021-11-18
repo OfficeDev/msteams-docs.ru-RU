@@ -5,12 +5,12 @@ description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 17f6e34cbed0980b379e317db976a46c0cf9fc3f
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: c02fe1508261c1392472f87e7266e38fed7c12b1
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887854"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075609"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
@@ -18,8 +18,6 @@ ms.locfileid: "60887854"
 
 > [!IMPORTANT]
 > В настоящее время боты доступны в облако сообщества для государственных организаций (GCC), но недоступны в GCC-High и Министерстве обороны (DOD).
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/zSIysk0yL0Q]
 
 Боты для общения позволяют пользователям взаимодействовать с веб-службой с помощью текста, интерактивных карт и модулей задач.
 
@@ -49,7 +47,7 @@ ms.locfileid: "60887854"
 
 Вы можете использовать API Teams бота для получения сведений для одного или более членов чата или группы. Дополнительные сведения см. в [Teams API-Teams](~/resources/team-chat-member-api-changes.md)для получения участников группы или чата.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Боты и пакеты SDK](~/bots/bot-features.md)

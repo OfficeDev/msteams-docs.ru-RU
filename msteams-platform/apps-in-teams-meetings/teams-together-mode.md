@@ -3,12 +3,12 @@ title: Настраиваемые сцены режима совместно
 description: Работа с настраиваемой совместной сценой режима
 ms.topic: conceptual
 ms.localizationpriority: none
-ms.openlocfilehash: ad33262e5e836badcaf3135138770a241f51f9c6
-ms.sourcegitcommit: db529cdf7e9195fa45b9065c50f5381770cc3711
+ms.openlocfilehash: 3820a711dfa759e3ad9429efd6b848cbe47e4623
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60912243"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075460"
 ---
 # <a name="custom-together-mode-scenes-in-teams"></a>Настраиваемые сцены режима "Вместе" в Teams
 
@@ -17,8 +17,6 @@ ms.locfileid: "60912243"
 * Совмещь людей и поощрить их включить видео. 
 * Объединяйте участников в цифровом формате в одну виртуальную сцену. 
 * Поместите видеопотоки участников в заранее разработанные и исправленные создателем сцены.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/MGsNmYKgeTA]
 
 В настраиваемом режиме совместной работы сцена является артефактом. Сцена создается разработчиком сцены с помощью студии Microsoft Scene. В зачатом параметре сцены у участников есть места с видеопотоками. Видео отрисовка в этих местах. Рекомендуется использовать только приложения сцены, так как для таких приложений все понятно.
 

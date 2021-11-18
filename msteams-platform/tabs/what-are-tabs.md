@@ -5,12 +5,12 @@ description: Обзор пользовательских вкладок на п�
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: d84a0a293ad4c0de507dfc56078db4d214649b1d
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: ea777a615358467f12a6f98c5e06fc5dd14b7418
+ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887401"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61075432"
 ---
 # <a name="microsoft-teams-tabs"></a>Вкладки Microsoft Teams
 
@@ -26,11 +26,6 @@ ms.locfileid: "60887401"
 На следующем изображении показаны вкладки канала Contoso:
 
 ![Вкладки канала или группы](../assets/images/tabs/tabs.png)
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/Jw6i7Mkt0dg]
-
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/T2a8yJC3VcQ]
 
 Перед работой над вкладками необходимо пройти несколько необходимых условий.
 
@@ -84,7 +79,7 @@ ms.locfileid: "60887401"
 * [Наборы средств Teams для Visual Studio Code](../toolkit/visual-studio-code-overview.md)
 * [Наборы средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Необходимые компоненты](~/tabs/how-to/tab-requirements.md)
