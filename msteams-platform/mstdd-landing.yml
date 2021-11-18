@@ -6,12 +6,12 @@ metadata:
   description: Введение приложений для создания Teams
   ms.date: 11/10/2021
   ms.topic: landing-page
-  ms.openlocfilehash: 9d08880e0cb4d1788d0a88f5f3b38cc71bdfc396
-  ms.sourcegitcommit: 3dd69ae18bca8dd2e0666d09746a4012cd8c8e42
+  ms.openlocfilehash: 0d60a1c4611511d56938a3d4bd7e2d6bdce2f033
+  ms.sourcegitcommit: d247a03ff53f058f11b94958473ae2e8962f2984
   ms.translationtype: MT
   ms.contentlocale: ru-RU
   ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61051191"
+  ms.locfileid: "61061953"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
@@ -19,6 +19,8 @@ landingContent:
     links:
     - text: Личные вкладки и расширения обмена сообщениями работают в Outlook и Office (Предварительная версия)
       url: ~/m365-apps/overview.md
+    - text: Введите передовую поиск в адаптивной карте
+      url: ~/task-modules-and-cards/cards/dynamic-search.md
     - text: Включить боты для получения всех сообщений канала с использованием разрешения на использование ресурсов (RSC)
       url: ~/bots/how-to/conversations/channel-messages-with-rsc.md
     - text: Монетизация приложения Teams с помощью трансактабельного предложения SaaS
