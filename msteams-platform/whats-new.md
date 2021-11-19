@@ -3,13 +3,13 @@ title: Новые возможности
 description: Описывает все новые возможности разработчика в Microsoft Teams
 ms.topic: reference
 ms.localizationpriority: medium
-keywords: команды, новые возможности
-ms.openlocfilehash: f980c31389408e51ddc44337db1c5b8a93f1ff1c
-ms.sourcegitcommit: d247a03ff53f058f11b94958473ae2e8962f2984
+keywords: команды новых обновлений и функций
+ms.openlocfilehash: ba1dab69442ec7693462456fd26bb58b9223df6c
+ms.sourcegitcommit: d44fdbac204bd2ec24f9156aab74712c536e9c7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61061981"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61078748"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "61061981"
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
+| 11/17/2021| Обновленные Microsoft Teams проверки хранения|[Рекомендации по проверке хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)|
 | 11/17/2021| Статичный и динамический тип поиска для настольных и мобильных пользователей.| • Сборка карт и модулей задач > создание карт > введите поиск в [адаптивных картах](task-modules-and-cards/cards/dynamic-search.md) </br> • Сборка карт и модулей задач > создание карт > Обзор >  [type-ahead поиска в адаптивных картах](task-modules-and-cards/what-are-cards.md#type-ahead-search-in-adaptive-cards) </br> • Создание карт и модулей задач > обзор > [и модулей задач](task-modules-and-cards/cards-and-task-modules.md)|
 | 11/15/2021 | Личные вкладки и расширения обмена сообщениями работают в Outlook и Office (Предварительная версия) | [Расширение Teams приложений в Microsoft 365](~/m365-apps/overview.md) |
 | 11/13/2021| Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC). | • Создание ботов > бесед ботов > сообщения в беседах ботов > получать все сообщения канала [с RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > беседы с > [беседы ботов](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > беседы с > [каналов и групповых бесед](~/bots/how-to/conversations/channel-and-group-conversations.md) |
@@ -38,9 +39,10 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
-| 11/17/2021| Статичный и динамический тип поиска для настольных и мобильных пользователей.| • Сборка карт и модулей задач > создание карт > введите поиск в [адаптивных картах](task-modules-and-cards/cards/dynamic-search.md) </br> • Сборка карт и модулей задач > создание карт > Обзор >  [type-ahead поиска в адаптивных картах](task-modules-and-cards/what-are-cards.md#type-ahead-search-in-adaptive-cards) </br> • Создание карт и модулей задач > обзор > [и модулей задач](task-modules-and-cards/cards-and-task-modules.md)|
-| 11/13/2021| Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC). | • Создание ботов > бесед ботов > сообщения в беседах ботов > получать все сообщения канала [с RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > бесед ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > беседы с > [каналов и групповых бесед](~/bots/how-to/conversations/channel-and-group-conversations.md) |
-|10/28/2021 | Монетизация Teams приложения с помощью трансактируемых SaaS-предложений.| Распространение приложения > публикации в Teams магазине > Включите предложение [SaaS](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) с Teams приложением |
+|11/17/2021| Обновленные Microsoft Teams проверки хранения|[Рекомендации по проверке хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)|
+|11/17/2021| Статичный и динамический тип поиска для настольных и мобильных пользователей.| • Сборка карт и модулей задач > создание карт > введите поиск в [адаптивных картах](task-modules-and-cards/cards/dynamic-search.md) </br> • Сборка карт и модулей задач > создание карт > Обзор >  [type-ahead поиска в адаптивных картах](task-modules-and-cards/what-are-cards.md#type-ahead-search-in-adaptive-cards) </br> • Создание карт и модулей задач > обзор > [и модулей задач](task-modules-and-cards/cards-and-task-modules.md)|
+|11/13/2021| Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC). | • Создание ботов > бесед ботов > сообщения в беседах ботов > получать все сообщения канала [с RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > бесед ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > беседы с > [каналов и групповых бесед](~/bots/how-to/conversations/channel-and-group-conversations.md) |
+|10/28/2021| Монетизация Teams приложения с помощью трансактируемых SaaS-предложений.| Распространение приложения > публикации в Teams магазине > Включите предложение [SaaS](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) с Teams приложением |
 |10/25/2021| Обновленный модуль Get started для Microsoft Teams документации разработчика с новой структурой и процедурами в пошаговом руководстве.| Начало работы > [с первого](get-started/get-started-overview.md) Teams приложения |
 |10/21/2021| Добавьте `registerOnFocused` API для вкладок или личных приложений. | Создание вкладок > создание личных вкладок > API для вкладок [ `registerOnFocused` или личных приложений](tabs/how-to/create-personal-tab.md#add-registeronfocused-api-for-tabs-or-personal-apps) |
 |10/20/2021| Этап собрания теперь доступен в ga. | Создание приложений для Teams собраний > включить и настроить приложения [для Teams собраний](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md) |
