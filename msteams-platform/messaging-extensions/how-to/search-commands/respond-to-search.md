@@ -5,12 +5,12 @@ description: Узнайте, как реагировать на команду �
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: none
-ms.openlocfilehash: 46c5d1ef47d9c31552efac00baef347baf3c7470
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: aac38b2578463a97704b18c854a07ec78e1d4948
+ms.sourcegitcommit: ba911ce3de7d096514f876faf00e4174444e2285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889379"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61178282"
 ---
 # <a name="respond-to-search-command"></a>Ответ на команду поиска
 
@@ -98,7 +98,7 @@ Teams поддерживает следующие типы карт:
 
 * [Карта эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
 * [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Office 365 Карта Connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Office 365 connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 * [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
 Чтобы лучше понимать карты и их обзор, см. в этом [обзоре.](~/task-modules-and-cards/what-are-cards.md)
@@ -107,13 +107,18 @@ Teams поддерживает следующие типы карт:
 
 Дополнительные сведения о карточке Office 365 соединители см. в Office 365 [connector cards.](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 
+
 Список результатов отображается в пользовательском Microsoft Teams с предварительным просмотром каждого элемента. Предварительный просмотр создается одним из двух способов:
 
 * Использование `preview` свойства в `attachment` объекте. Вложение `preview` может быть только карточкой Hero или Thumbnail.
-* Извлечено из основных свойств и `title` `text` свойств `image` вложения. Они используются только в том случае, если свойство не установлено и `preview` эти свойства доступны.
-* Кнопка карточки Hero или Thumbnail и действия касания, за исключением вызова, не поддерживаются в карточке предварительного просмотра.
+* Извлечение из основных `title` `text` и свойств `image` `attachment` объекта. Основные свойства используются только в том случае, если свойство `preview` не указано.
 
-Вы можете отобразить предварительный просмотр адаптивной карты или Office 365 соединителя в списке результатов с помощью свойства предварительного просмотра. Свойство предварительного просмотра не требуется, если результаты уже являются картами Hero или Thumbnail. Если вы используете вложение предварительного просмотра, оно должно быть либо карточкой Hero, либо Thumbnail. Если не указано свойство предварительного просмотра, предварительный просмотр карты не удается, и ничего не отображается.
+Для карты Hero или Thumbnail, за исключением действия вызова, другие действия, такие как кнопка и касание, не поддерживаются в карточке предварительного просмотра.
+
+Чтобы отправить адаптивную карту или соединительные карты Ofiice 365, необходимо включить предварительный просмотр. Свойство `preview` должно быть карточкой Hero или Thumbnail. Если не указать свойство предварительного просмотра в объекте, предварительный просмотр `attachment` не создается.
+
+Для карт Hero и Thumbnail не требуется указывать свойство предварительного просмотра, предварительный просмотр создается по умолчанию. В следующем примере отображается функция разгрузки ссылки при вклеии ссылки в расширении обмена сообщениями:  
+![разгрузка ссылки](~/assets/images/messaging-extension/link-unfurl.gif)
 
 ### <a name="response-example"></a>Пример ответа
 
@@ -311,6 +316,76 @@ class TeamsMessagingExtensionsSearchBot extends TeamsActivityHandler {
 ```
 
 * * *
+
+### <a name="enable-and-handle-tap-actions"></a>Включить и обрабатывать действия касания
+
+# <a name="cnet"></a>[C#/.NET](#tab/dotnet)
+
+```csharp
+protected override Task<MessagingExtensionResponse> OnTeamsMessagingExtensionSelectItemAsync(ITurnContext<IInvokeActivity> turnContext, JObject query, CancellationToken cancellationToken)
+{
+    // The Preview card's Tap should have a Value property assigned, this will be returned to the bot in this event. 
+    var (packageId, version, description, projectUrl, iconUrl) = query.ToObject<(string, string, string, string, string)>();
+
+    var card = new ThumbnailCard
+    {
+        Title = "Card Select Item",
+        Subtitle = description
+    };
+
+    var attachment = new MessagingExtensionAttachment
+    {
+        ContentType = ThumbnailCard.ContentType,
+        Content = card,
+    };
+
+    return Task.FromResult(new MessagingExtensionResponse
+    {
+        ComposeExtension = new MessagingExtensionResult
+        {
+            Type = "result",
+            AttachmentLayout = "list",
+            Attachments = new List<MessagingExtensionAttachment> { attachment }
+        }
+    });
+}
+```
+
+# <a name="typescriptnodejs"></a>[TypeScript/Node.js](#tab/typescript)
+
+```typescript
+async handleTeamsMessagingExtensionSelectItem(context, obj) {
+        return {
+            composeExtension: {
+                  type: 'result',
+                  attachmentLayout: 'list',
+                  attachments: [CardFactory.thumbnailCard(obj.Item3)]
+            }
+        };
+    } 
+```
+
+# <a name="json"></a>[JSON](#tab/json)
+
+```json
+{
+    "name": "composeExtension/selectItem",
+    "type": "invoke",
+    "value": {
+        "Item1": "Package_Name",
+        "Item2": "Version",
+        "Item3": "Package Description"
+    },
+    .
+    .
+    .
+}
+```
+
+* * *
+
+> [!NOTE]
+> `OnTeamsMessagingExtensionSelectItemAsync` не запускается в приложении мобильных групп.
 
 ## <a name="default-query"></a>Запрос по умолчанию
 

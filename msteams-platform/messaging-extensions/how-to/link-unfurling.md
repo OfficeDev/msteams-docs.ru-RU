@@ -5,12 +5,12 @@ description: Узнайте, как добавить разгрузку ссыл
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: f702ac2600dbfb3c8fd2992c41cc1c72754252ca
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 98926d386d55250d72815a918c3f180c4a8421de
+ms.sourcegitcommit: ba911ce3de7d096514f876faf00e4174444e2285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889400"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61178295"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 
@@ -40,6 +40,7 @@ ms.locfileid: "60889400"
 1. На странице **Расширение обмена сообщениями** добавьте домен, который необходимо искать в разделе **Обработчики сообщений.** В следующем изображении объясняется процесс:
 
     ![Раздел обработчики сообщений в App Studio](~/assets/images/link-unfurling.png)
+
     
 ### <a name="add-link-unfurling-manually"></a>Добавление разгрузки ссылок вручную
 
@@ -76,10 +77,10 @@ ms.locfileid: "60889400"
 
 * [Карта эскиза](~/task-modules-and-cards/cards/cards-reference.md#thumbnail-card)
 * [Карта hero](~/task-modules-and-cards/cards/cards-reference.md#hero-card)
-* [Office 365 Карта Connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
+* [Office 365 connector](~/task-modules-and-cards/cards/cards-reference.md#office-365-connector-card)
 * [Адаптивная карта](~/task-modules-and-cards/cards/cards-reference.md#adaptive-card)
 
-Вы можете отобразить предварительный просмотр адаптивной карты или Office 365 соединителя в списке результатов с помощью свойства предварительного просмотра. Свойство предварительного просмотра не требуется, если результаты уже являются картами Hero или Thumbnail. Если вы используете вложение предварительного просмотра, оно должно быть либо карточкой Hero, либо Thumbnail. Если не указано свойство предварительного просмотра, предварительный просмотр карты не удается, и ничего не отображается.
+Дополнительные сведения см. в [ссылке типа Action.](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke)
 
 ### <a name="example"></a>Пример
 

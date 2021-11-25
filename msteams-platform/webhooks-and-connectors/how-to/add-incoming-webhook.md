@@ -6,12 +6,12 @@ keywords: команды вкладки исходят веб-ок
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: c0d0ad53f95a009b9b5629b1ec7b74a1a9886b92
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 7ce63a8456eaa0b15bd03999dd06c202ee689113
+ms.sourcegitcommit: ba911ce3de7d096514f876faf00e4174444e2285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888316"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61178302"
 ---
 # <a name="create-incoming-webhook"></a>Создание входящих веб-ок
 
@@ -25,7 +25,7 @@ ms.locfileid: "60888316"
 
 В следующей таблице представлены функции и описание входящих webhook:
 
-| Функции | Описание |
+| Возможности | Описание |
 | ------- | ----------- |
 |Адаптивные карты с помощью входящих веб-ок|Адаптивные карты можно отправить через входящие веб-окки. Дополнительные сведения см. в [странице Send Adaptive Cards using Incoming Webhooks.](../../webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook)|
 |Actionable messaging support|Карточки сообщений для действий поддерживаются во всех Office 365, включая Teams. Если вы отправляете сообщения через карты, необходимо использовать формат карточки сообщений. Дополнительные сведения см. в [старых справочных](/outlook/actionable-messages/message-card-reference) данных карточки сообщений и игровой [площадке карточки сообщений.](https://messagecardplayground.azurewebsites.net)|
@@ -35,7 +35,7 @@ ms.locfileid: "60888316"
 |Безопасные определения ресурсов|Сообщения отформатированы в виде полезной нагрузки JSON. Эта декларативная структура обмена сообщениями предотвращает вставку вредоносного кода.|
 
 > [!NOTE]
-> * Teams ботов, расширений обмена сообщениями, входящих веб-пользователей и поддержки адаптивных карт Bot Framework, открытой платформы платформы кросс-карт. В [настоящее время Teams не](../../webhooks-and-connectors/how-to/connectors-creating.md) поддерживают адаптивные карты. Тем не менее, можно создать [поток,](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/) который публикует адаптивные карты в Teams канал.
+> * Teams, расширения обмена сообщениями, входящие веб-окки и адаптивные карты bot Framework. Адаптивные карты — это открытая платформа платформы кросс-карт, которая может использоваться на всех платформах, таких как Windows, Android, iOS и так далее. В [настоящее время Teams не](../../webhooks-and-connectors/how-to/connectors-creating.md) поддерживают адаптивные карты. Тем не менее, можно создать [поток,](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams/) который публикует адаптивные карты в Teams канал.
 > * Дополнительные сведения о картах и веб-сайтах см. в странице [Adaptive cards and Incoming Webhooks.](~/task-modules-and-cards/what-are-cards.md#adaptive-cards-and-incoming-webhooks)
 
 ## <a name="create-incoming-webhook"></a>Создание входящих веб-ок
