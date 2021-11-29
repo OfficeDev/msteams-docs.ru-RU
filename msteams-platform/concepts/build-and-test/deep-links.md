@@ -4,12 +4,12 @@ description: Описывает глубокие ссылки и их испол
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: deeplink teams deep link
-ms.openlocfilehash: 0d1ad5b74c434a20a1e2d7f55e970e5811c34890
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 112331c30e48ce9f151a79142c8bbec20990e03c
+ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889155"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216183"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -188,7 +188,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ## <a name="deep-linking-to-an-app"></a>Глубокая связь с приложением
 
-Создайте глубокие ссылки для приложения после того, как приложение будет перечислены в Teams магазине. Чтобы создать ссылку для запуска Teams, привяжете следующий URL-адрес к вашему ID приложения: `https://teams.microsoft.com/l/app/<your-app-id>` . Для установки приложения отображается диалоговое окно. 
+Создайте глубокие ссылки для приложения после того, как приложение будет перечислены в Teams магазине. Чтобы создать ссылку для запуска Teams, привяжете ID приложения к следующему URL-адресу: `https://teams.microsoft.com/l/app/<your-app-id>` . Для установки приложения отображается диалоговое окно. 
   
 ## <a name="deep-linking-for-sharepoint-framework-tabs"></a>Глубокая связь для SharePoint Framework вкладок
 

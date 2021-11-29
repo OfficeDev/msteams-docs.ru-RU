@@ -6,12 +6,12 @@ keywords: команды вкладки группового канала нас
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 76381e717f0955ade16c0965a0448a1854822fe8
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 6e182c305950188e316c290e2c3d3fd5732adcf4
+ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888022"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216218"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -108,6 +108,7 @@ ms.locfileid: "60888022"
 
 >[!NOTE]
 >
+>* У вас есть 30 секунд, чтобы завершить операцию сохранения (вызов для регистрацииOnSaveHandler) до времени. После окончания времени отображается общее сообщение об ошибке.
 >* Если вы регистрируете обработчивель сохранения с помощью, он должен вызвать вызов или указать `microsoftTeams.settings.registerOnSaveHandler()` `saveEvent.notifySuccess()` результат `saveEvent.notifyFailure()` конфигурации.
 >* Если обработник сохранения не зарегистрирован, вызов делается автоматически, когда пользователь `saveEvent.notifySuccess()` выбирает **Сохранить**.
 
@@ -184,7 +185,7 @@ document.write(getId());
 
 Установите свойство манифеста, которое позволяет пользователям изменять, перенастроять или переименовывать вкладку канала `canUpdateConfiguration` `true` или группы. Кроме того, указать, что происходит с контентом при удалении вкладки, включив страницу параметры удаления в приложение и установив значение для свойства `removeUrl` в  `setSettings()` конфигурации. Пользователь может удалить личные вкладки, но не может изменить их. Дополнительные сведения см. [в странице создание страницы удаления для вкладки.](~/tabs/how-to/create-tab-pages/removal-page.md)
 
-`setSettings()`Microsoft Teams конфигурация для удаления страницы:
+Microsoft Teams для `setSettings()` удаления страницы:
 
 ```javascript
 microsoftTeams.settings.setSettings({

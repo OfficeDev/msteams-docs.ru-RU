@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
 keywords: поток данных проверки подлинности персональных приложений адаптивной карты
-ms.openlocfilehash: ba8a28a25665370420b05de64d8302d8ef160687
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 27cd42b7477019a09af0c23e8a3559d2cc540305
+ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887562"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216099"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
@@ -155,7 +155,7 @@ ms.locfileid: "60887562"
                 },
                 {
                     "card": adaptiveCard2,
-                }
+                },
                 {
                     "card": adaptiveCard3
                 }  

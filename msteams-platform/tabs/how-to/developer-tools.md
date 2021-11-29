@@ -4,12 +4,12 @@ description: Описывает, как добраться до DevTools при 
 ms.localizationpriority: medium
 ms.topic: how-to
 keywords: devtools отладка мобильных хром настольных средств разработчика настольных компьютеров вкладка
-ms.openlocfilehash: 6844648df311bd9ae326e74919cc64e871e54b05
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: b9bc3f5afa43684b260f8618b5450e94c91e95f1
+ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887422"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216208"
 ---
 # <a name="devtools-for-microsoft-teams-tabs"></a>DevTools для вкладок Microsoft Teams
 
@@ -35,7 +35,7 @@ ms.locfileid: "60887422"
 
 В следующем примере показано, как DevTools открывают и проверяют диалоговое окно конфигурации вкладок:
 
-   ![Tab и DevTools](~/assets/images/dev-preview/tab-and-devtools.png)
+   [![Tab и DevTools](~/assets/images/dev-preview/tab-and-devtools.png)](~/assets/images/dev-preview/tab-and-devtools.png#lightbox)
 
 ## <a name="access-devtools-from-an-android-device"></a>Доступ к DevTools с android-устройства
 

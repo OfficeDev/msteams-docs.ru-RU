@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: близость области вызовов вызовов уведомлений о вызове
 ms.date: 04/02/2019
-ms.openlocfilehash: d1d0371f714f64d2f64dbcb9512be77318cf1fb5
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 75c6b33db6431901665b71674cb4f4fd93248c12
+ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889162"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216092"
 ---
 # <a name="incoming-call-notifications"></a>Уведомления о входящих звонках
 
@@ -39,7 +39,8 @@ HTTP/1.1 302 Found
 Location: your-new-location
 ```
 
-Уделите боту ответ на входящий вызов с [помощью](https://developer.microsoft.com/graph/docs/api-reference/beta/api/call_answer) API ответа. Вы можете указать `callbackUri` для обработки этого конкретного вызова. Это полезно для тех случаев, когда вызов обрабатывается определенным разделом, и эту информацию необходимо встраить в маршрутную маршрутику в `callbackUri` нужный экземпляр.
+Уделите боту ответ на входящий вызов с [помощью](/graph/api/call-answer?view=graph-rest-1.0&tabs=http&preserve-view=true) API ответа. Вы можете указать `callbackUri` для обработки этого конкретного вызова. Это полезно для тех случаев, когда вызов обрабатывается определенным разделом, и эту информацию необходимо встраить в маршрутную маршрутику в `callbackUri` нужный экземпляр.
+
 
 В следующем разделе приводится подробная информация о проверке подлинности вызова путем проверки маркера, размещенного на веб-сайте.
 

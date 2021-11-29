@@ -1,18 +1,18 @@
 ---
-title: Расширения для обмена сообщениями
+title: расширения для обмена сообщениями;
 author: surbhigupta
 description: Обзор расширений обмена сообщениями на Microsoft Teams платформе
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 1448cb334521b6937ab87514c35e2b628a3e8106
-ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
+ms.openlocfilehash: baef9ac9bb15b3b2efd7b05b36966c5e6d30083c
+ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60948560"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216225"
 ---
-# <a name="messaging-extensions"></a>Расширения для обмена сообщениями
+# <a name="messaging-extensions"></a>расширения для обмена сообщениями;
 
 Расширения обмена сообщениями позволяют пользователям взаимодействовать с веб-службой с помощью кнопок и форм Microsoft Teams клиента. Они могут искать или инициировать действия во внешней системе из области композитного сообщения, командного окна или непосредственно из сообщения. Результаты этого взаимодействия можно отправить клиенту Microsoft Teams в виде богато отформатированной карты. В этом документе представлен обзор расширения обмена сообщениями, задач, выполняемых в различных сценариях, работы над расширением обмена сообщениями, команд действий и поиска и разгрузки ссылок.
 
@@ -74,11 +74,12 @@ ms.locfileid: "60948560"
 ## <a name="code-sample"></a>Пример кода
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
-|------------|-------------|----------------|------------|
+|------------|-------------|----------------|------------|------------|
 | Расширение обмена сообщениями с командами на основе действий | В этом примере показано, как создать расширение обмена сообщениями на основе действий. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
 | Расширение обмена сообщениями с командами на основе поиска | В этом примере показано, как создать расширение обмена сообщениями на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
+|Действие расширения обмена сообщениями для планирования задач|В этом примере показано, как запланировать задачу из команды действий расширения обмена сообщениями и получить карточку напоминания в назначенную дату и время.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-message-reminder/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-message-reminder/nodejs)|
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Определение команды расширения обмена сообщениями действий](~/messaging-extensions/how-to/action-commands/define-action-command.md)
