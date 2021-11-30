@@ -2,20 +2,28 @@
 title: Обзор . Распространение приложения
 description: Описывает варианты публикации Microsoft Teams, загрузки приложения и GCC.
 ms.topic: conceptual
-author: KirtiPereira
+author: v-rpatkur
 ms.author: surbhigupta
 ms.localizationpriority: none
 keywords: развертывание gcc загрузки приложений публикации
-ms.openlocfilehash: 6a4cb297c7f78ef09796adb3793ee1848236fdb6
-ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
+ms.openlocfilehash: 567abdb058f3618236840c993a0ab1a4d638c016
+ms.sourcegitcommit: 660273bc6833ab84ba7550e6b374ea6e3780459d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949112"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61233500"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 
 Вы можете предоставить Microsoft Teams приложение отдельному лицу, команде, организации или любому, кто хочет его использовать. Способ распространения зависит от нескольких факторов, включая потребности пользователей, бизнес, технические требования и цели приложения.
+
+## <a name="configure-default-install-options"></a>Настройка параметров установки по умолчанию
+
+Настройка параметров установки по умолчанию. Например, если основной функцией приложения является бот, его можно также сделать по умолчанию, когда пользователь установит приложение в команду.
+
+## <a name="create-your-app-package"></a>Создание пакета приложения
+
+Для распространения Microsoft Teams приложения необходимо иметь допустимый пакет приложений.  Пакет приложения — это почтовый файл, содержащий манифест **приложения** и **значки приложений.**
 
 ## <a name="upload-your-app-in-teams"></a>Upload приложение в Teams
 
