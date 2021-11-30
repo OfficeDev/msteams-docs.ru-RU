@@ -4,20 +4,27 @@ summary: Добро пожаловать в обзор документации 
 metadata:
   title: Microsoft Teams документация разработчика
   description: Введение приложений для создания Teams
-  ms.date: 11/10/2021
+  ms.service: service
+  ms.subservice: subservice
   ms.topic: landing-page
-  ms.openlocfilehash: 39b4f4de53d5cae2e01e5e6217fa3e05361e347c
-  ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
+  ms.collection: collection
+  author: surbhigupta12
+  ms.author: msauthor
+  ms.date: 11/10/2021
+  ms.openlocfilehash: 219966cbb2398239c7875620be55e79f3f9800e7
+  ms.sourcegitcommit: f1e6f90fb6f7f5825e55a6d18ccf004d0091fb6d
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/29/2021
-  ms.locfileid: "61216176"
+  ms.lasthandoff: 11/30/2021
+  ms.locfileid: "61227830"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
   - linkListType: concept
     links:
-    - text: Интерактивный режим для обмена этапом собраний
+    - text: Teams набор средств для Visual Studio Code (Предварительный просмотр)
+      url: ~/toolkit/teams-toolkit-fundamentals.md
+    - text: Интерактивный режим для обмена этапом собраний (Предварительный просмотр)
       url: ~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage
     - text: Правила проверки в магазине Microsoft Teams
       url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
@@ -45,6 +52,8 @@ landingContent:
       url: ~/sbs-send-proactive.yml
     - text: Пошаговая руководство по добавлению проверки подлинности в боты
       url: ~/sbs-bots-with-sso.yml
+    - text: Пошаговая руководство по созданию маркера собраний
+      url: ~/sbs-meeting-token-generator.yml
 - title: Начало работы
   linkLists:
   - linkListType: get-started
