@@ -91,7 +91,37 @@
 - name: Инструменты и пакеты SDK
   items:
     - name: Наборы средств Teams для Visual Studio Code
-      href: toolkit/visual-studio-code-overview.md
+      items:
+        - name: Основы работы с набором средств Teams
+          href: toolkit/teams-toolkit-fundamentals.md
+        - name: Создание проекта
+          href: toolkit/create-new-project.md
+        - name: Подготовка учетных записей для создания приложения Teams
+          href: toolkit/accounts.md
+        - name: Подготовка облачных ресурсов к работе
+          href: toolkit/provision.md
+        - name: Развертывание приложения Teams в облаке
+          href: toolkit/deploy.md
+        - name: Публикация приложений Teams с помощью набора средств Teams
+          href: toolkit/publish.md
+        - name: Добавление возможностей в приложение Teams
+          href: toolkit/add-capability.md
+        - name: Добавление облачных ресурсов в приложение Teams
+          href: toolkit/add-resource.md
+        - name: Настройка манифеста приложения Teams
+          href: toolkit/TeamsFx-manifest-customization.md
+        - name: Предварительный просмотр манифеста приложения Teams
+          href: toolkit/TeamsFx-manifest-preview.md
+        - name: Управление несколькими средами
+          href: toolkit/TeamsFx-multi-env.md
+        - name: Совместная работа с другими разработчиками над набором средств Teams
+          href: toolkit/TeamsFx-collaboration.md
+        - name: Использование рабочего процесса CI/CD
+          href: toolkit/use-CICD-template.md
+        - name: CLI набора средств Teams
+          href: toolkit/TeamsFx-CLI.md
+        - name: Пакет SDK TeamsFx
+          href: toolkit/TeamsFx-SDK.md
     - name: Наборы средств Teams для Visual Studio
       href: toolkit/visual-studio-overview.md
     - name: Генератор Yeoman для Teams (GitHub)
