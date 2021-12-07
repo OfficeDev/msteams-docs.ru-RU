@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO AAD api с одним входом
-ms.openlocfilehash: 96916d526dba7a6ff7b019fb070b53943b3c216c
-ms.sourcegitcommit: 345d713a680c0e0978d7f82c0330c1fd0d6b3e7b
+ms.openlocfilehash: 3e941e905f2c75825c502f67f49bb4cec5e601fa
+ms.sourcegitcommit: 696b0f86cd32f20d4d4201e4c415e31f6c103a77
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61151899"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61323291"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -55,13 +55,6 @@ API SSO также работает в [модулях задач,](../../../tas
 В этом разделе описываются задачи, связанные с созданием вкладки Teams, использующей SSO. Эти задачи являются языковыми и framework-agnostic.
 
 ### <a name="1-create-your-aad-application"></a>1. Создание AAD приложения
-
-**Регистрация приложения в обзоре [AAD портала](https://azure.microsoft.com/features/azure-portal/)**
-
-1. Получите [AAD ID приложения.](/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in) 
-1. Укажите разрешения, необходимые приложению для конечной точки AAD и, необязательно, Graph.
-1. [Предоставление разрешений](/azure/active-directory/develop/howto-create-service-principal-portal#configure-access-policies-on-resources) для Teams, веб-приложений и мобильных приложений.
-1. Предварительно уполномо Teams, выбрав кнопку **Добавить** область и в открываемой панели введите access_as_user в качестве **имени Scope.** 
 
 > [!NOTE]
 > Необходимо знать несколько важных ограничений:
