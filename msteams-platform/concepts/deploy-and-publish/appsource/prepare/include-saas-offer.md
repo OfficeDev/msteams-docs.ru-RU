@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 localization_priority: Normal
-ms.openlocfilehash: c66a7aad6b56ca5be50ffa20384bb648a3750ba5
-ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
+ms.openlocfilehash: 711f40ad24a0d714f4555ceb134009d6810b947f
+ms.sourcegitcommit: a01d22a29e13e19331936e332ab7fbe6ffb1d718
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949665"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348358"
 ---
 # <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Включите предложение SaaS в Microsoft Teams приложение
 
@@ -96,6 +96,9 @@ ms.locfileid: "60949665"
 ## <a name="create-your-saas-offer"></a>Создание предложения SaaS
 
 После интеграции API выполнения SaaS и создания своей посадочной страницы, на которой пользователи могут управлять подписками, пришло время официально создать, протестировать и опубликовать свое предложение SaaS для выполнения выполнения.
+
+> [!IMPORTANT]
+> Teams в настоящее время  поддерживает только модель ценообразования для каждого пользователя (пользователя/месяца и пользователя/года) для предложений SaaS. Дополнительные сведения см. в [моделях ценообразования SaaS.](/azure/marketplace/plan-saas-offer#saas-pricing-models)
 
 ### <a name="create-the-offer"></a>Создание предложения
 

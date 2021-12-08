@@ -4,12 +4,12 @@ keywords: разрешения командных приложений
 description: Надежное обеспечение поддержки разрешений устройств для приложений в нашем веб-клиенте
 localization_priority: Normal
 ms.topic: how-to
-ms.openlocfilehash: 8ace96ea1e9582c6087d0f551dc021e69a4a8de2
-ms.sourcegitcommit: 1ac0bd55adfd49c42cd870dc71ceca3dcac70941
+ms.openlocfilehash: df0b45af341d936496b3b4cd4314f47f62f2bd3d
+ms.sourcegitcommit: a01d22a29e13e19331936e332ab7fbe6ffb1d718
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041722"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348351"
 ---
 # <a name="device-permissions-for-the-browser"></a>Разрешения устройства для браузера
 
@@ -40,7 +40,14 @@ Teams, которое требует разрешений на устройст�
 </br>
 <img src="../../assets/images/tabs/enable-access.png" alt="Enable camera access" width="800"/>
 
-## <a name="see-also"></a>См. также
+## <a name="code-sample"></a>Пример кода
+
+|Название примера | Описание | Node.js |
+|----------------|-----------------|--------------|
+| Разрешения устройств tab для браузера | В примере кода показано, как показывать разрешения устройства для браузера. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-device-permissions/nodejs) |
+
+
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Обзор возможностей устройства](device-capabilities-overview.md)
 * [Запрос разрешений устройства](native-device-permissions.md)
