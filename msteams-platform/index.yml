@@ -85,6 +85,9 @@ conceptualContent:
           text: Веб-перехватчики и соединительные линии
     - title: Обзор
       links:
+        - url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/include-saas-offer
+          itemType: concept
+          text: Монетизация приложения Teams с помощью трансактабельного предложения SaaS
         - url: /microsoftteams/platform/concepts/authentication/authentication
           itemType: concept
           text: Проверка подлинности пользователей и SSO
@@ -123,7 +126,7 @@ conceptualContent:
         - url: /microsoftteams/platform/samples/shifts-wfm-connectors
           itemType: reference
           text: Интеграция готовых к производству соединители Shifts
-    - title: Community
+    - title: Сообщество
       links:
         - url: 'https://developer.microsoft.com/microsoft-teams/blogs/'
           itemType: overview

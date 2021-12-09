@@ -5,12 +5,12 @@ ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: none
-ms.openlocfilehash: a6570c2f3a6a054457ff3f64a65ae4c2398db93a
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: eab34d853c4aa10ea3c03b5c669464390e9288eb
+ms.sourcegitcommit: 97a64453410edbd2ba28e7a04e9c3a54bf48f4f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889421"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391675"
 ---
 # <a name="create-a-partner-center-developer-account"></a>Создание учетной записи разработчика Центра партнеров
 
@@ -41,9 +41,9 @@ ms.locfileid: "60889421"
 
 Откройте билет [поддержки Центра партнеров](https://partner.microsoft.com/support/v2/?stage=1) и выберите следующее:
 
-| Меню | Вариант |
+| Меню | Параметр |
 | -------   | -------  |
-|Category| Коммерческий маркетплейс|
+|Категория| Коммерческий маркетплейс|
 | Тема | Общая справка по рынку и вопросы о том, как их задать |
 | Subtopic| Надстройка Office |
 
@@ -135,16 +135,6 @@ ms.locfileid: "60889421"
 
 <details>
 
-<summary><b>Как получить дополнительную поддержку по вопросам, связанным с учетной записью?</b></summary>
-
-Сведения [см. в поддержку программы Коммерческий рынок в Центре партнеров.](/azure/marketplace/partner-center-portal/support)
-
-<br>
-
-</details>
-
-<details>
-
 <summary><b>Я проверил почтовые папки и не получил электронной почты проверки. Что мне делать дальше?</b></summary>
 
 Попробуйте следующее:
@@ -218,7 +208,7 @@ ms.locfileid: "60889421"
 
 </details>
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Подготовка к отправке в магазин](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)

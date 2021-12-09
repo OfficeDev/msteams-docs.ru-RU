@@ -6,12 +6,12 @@ ms.author: rentu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: bb58e7f54fe3ad75b2a52148540119ae5dbbc9e6
-ms.sourcegitcommit: f1e6f90fb6f7f5825e55a6d18ccf004d0091fb6d
+ms.openlocfilehash: 42949c9cdd3cb8e117925f170b2ab44e3bda1a1d
+ms.sourcegitcommit: 97a64453410edbd2ba28e7a04e9c3a54bf48f4f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61227999"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391682"
 ---
 # <a name="collaborate-on-teams-project-using-teams-toolkit"></a>Совместное использование Teams с помощью Teams набор средств
 
@@ -82,9 +82,7 @@ Teams набор средств теперь поддерживает функц
       4. Перейдите [Azure Active Directory,](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)выберите **регистрацию приложения** с левой панели и найдите AAD App.
       5. На странице AAD app выберите Owners **с** левой панели.
       6. Поиск и удаление коллаборационии.
-    
 
-1. Функция совместной работы поддерживает только проект, размещенный в Azure, SPFx в будущем будет поддерживаться размещенный проект.
 
 1. Сотрудник, добавленный в проект, не будет получать никаких уведомлений. Project должен уведомить об этом коллегу в автономном режиме.
 

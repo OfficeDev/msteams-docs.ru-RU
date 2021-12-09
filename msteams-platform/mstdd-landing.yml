@@ -11,12 +11,12 @@ metadata:
   author: surbhigupta12
   ms.author: msauthor
   ms.date: 11/10/2021
-  ms.openlocfilehash: babeb1470a5488d6dd31f0d905b64220cbc66a87
-  ms.sourcegitcommit: 96a4a118d31dcb3c273f880e282042f38757f5f7
+  ms.openlocfilehash: bf0225a26d5d6a65fa3e3ae9e357eeaded27c819
+  ms.sourcegitcommit: 97a64453410edbd2ba28e7a04e9c3a54bf48f4f6
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/03/2021
-  ms.locfileid: "61285558"
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61391661"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
@@ -46,6 +46,8 @@ landingContent:
       url: ~/bots/how-to/conversations/send-proactive-messages.md
     - text: Добавление проверки подлинности в боты
       url: ~/bots/how-to/authentication/add-authentication.md
+    - text: Включение и настройка приложений для собраний
+      url: ~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
   - linkListType: tutorial
     links:
     - text: Пошаговое руководство для активных сообщений
@@ -54,6 +56,10 @@ landingContent:
       url: ~/sbs-bots-with-sso.yml
     - text: Пошаговая руководство по созданию маркера собраний
       url: ~/sbs-meeting-token-generator.yml
+    - text: Пошаговая руководство по созданию боковой панели собраний
+      url: ~/sbs-meetings-sidepanel.yml
+    - text: Пошаговая руководство по просмотру стадии собраний
+      url: ~/sbs-meetings-stage-view.yml
 - title: Начало работы
   linkLists:
   - linkListType: get-started

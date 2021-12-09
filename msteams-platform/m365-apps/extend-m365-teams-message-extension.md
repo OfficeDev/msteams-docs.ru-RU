@@ -3,12 +3,13 @@ title: Расширение Teams в Microsoft 365
 description: Вот как обновить расширение обмена сообщениями на основе Teams для работы в Outlook
 ms.date: 11/15/2021
 ms.topic: tutorial
-ms.openlocfilehash: 6adde57b6c5f59d28234afaacc721fba3812bd24
-ms.sourcegitcommit: f77750f2e60f63d1e2f66a96c169119683c66950
+ms.custom: m365apps
+ms.openlocfilehash: 9a8fc4135a2238d1402e25ef31ad7ebb918475b8
+ms.sourcegitcommit: 239807b74aa222452559509d49c4f2808cd9c9ca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960396"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391360"
 ---
 # <a name="extend-a-teams-message-extension-across-microsoft-365"></a>Расширение Teams в Microsoft 365
 
@@ -42,7 +43,9 @@ ms.locfileid: "60960396"
 
 Если у вас есть существующее расширение обмена сообщениями, сделайте копию или филиал производственного проекта для тестирования и обновления идентификатора приложения в манифесте приложения, чтобы использовать новый идентификатор (в отличие от идентификатора приложения производства).
 
-Если вы хотите использовать пример кода для завершения этого руководства, выполните действия по настройке в Teams поиска расширения обмена сообщениями, чтобы быстро создать и зарегистрировать бота. [](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search)
+Если вы хотите использовать пример кода для завершения этого руководства, выполните действия по настройке в примере Teams расширения обмена сообщениями, чтобы быстро создать расширение обмена сообщениями на основе Microsoft Teams на основе поиска. [](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search) Или вы можете начать с того же образца Teams расширения обмена сообщениями, обновленного для [TeamsJS SDK v2 Preview,](https://github.com/OfficeDev/TeamsFx-Samples/tree/v2/NPM-search-connector-M365) и перейти к предварительному просмотру расширения обмена сообщениями в [Outlook](#preview-your-message-extension-in-outlook). Обновленный пример также доступен в *Teams набор средств:* образцы поиска  >    >  **NPM** View.
+
+:::image type="content" source="images/toolkit-search-sample.png" alt-text="Пример соединитетеля поиска NPM в Teams набор средств":::
 
 ## <a name="update-the-app-manifest"></a>Обновление манифеста приложения
 
