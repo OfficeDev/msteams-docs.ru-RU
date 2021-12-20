@@ -5,12 +5,12 @@ ms.topic: overview
 ms.localizationpriority: medium
 keywords: teams bots messages
 ms.date: 05/20/2019
-ms.openlocfilehash: c82f96c42992f49f61d19c2bf5c6a19283e8ee95
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 49b05e48a82208776beaa0b62b1b44f8fec0652f
+ms.sourcegitcommit: a2d7d2bdf4b056b35f29c6fdb315bc7dc28b6f6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157412"
+ms.lasthandoff: 12/20/2021
+ms.locfileid: "61569520"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с Microsoft Teams ботом
 
@@ -76,7 +76,7 @@ ms.locfileid: "59157412"
 
 Изображения могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF не поддерживается.
 
-Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию составляет 256×256. Например.
+Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию составляет 256×256. Например:
 
 * Используйте `<img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="150" width="223"></img>`
 * Не используйте `![Duck on a rock](http://aka.ms/Fo983c)`
@@ -158,11 +158,9 @@ ms.locfileid: "59157412"
 
 Объект содержит Teams и является окончательным источником для кодов группы и `channelData` канала. Необходимо кэширования и использования этих ids в качестве ключей для локального хранения.
 
-Объект не входит в сообщения в личных беседах, так как они проходят `channelData` за пределами любого канала.
-
 Типичный объект channelData в действии, отправленный боту, содержит следующие сведения:
 
-* `eventType`Teams событий; передается только в случаях [событий изменения канала.](~/resources/bot-v3/bots-notifications.md#channel-updates)
+* `eventType`Teams типа события; передается только в случаях событий [изменения канала.](~/resources/bot-v3/bots-notifications.md#channel-updates)
 * `tenant.id`Azure Active Directory клиента; передается во всех контекстах.
 * `team` Передается только в контекстах каналов, а не в личном чате.
   * `id` GUID для канала.
@@ -219,7 +217,7 @@ string tenantId = channelData.Tenant.Id;
 > [!NOTE]
 > Вы можете обновлять только содержимое, отправленное в сообщениях с одним вложением и макетах карусель. Размещение обновлений для сообщений с несколькими вложениями в макете списка не поддерживается.
 
-### <a name="rest-api"></a>REST API
+### <a name="rest-api"></a>API REST
 
 Чтобы отправить обновление сообщения, просто выполните запрос PUT на конечную точку с помощью данного `/v3/conversations/<conversationId>/activities/<activityId>/` ID действия. Чтобы завершить этот сценарий, необходимо кэшировали ID действия, возвращенный исходным вызовом POST.
 

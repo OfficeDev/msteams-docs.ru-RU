@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO AAD api с одним входом
-ms.openlocfilehash: 3e941e905f2c75825c502f67f49bb4cec5e601fa
-ms.sourcegitcommit: 696b0f86cd32f20d4d4201e4c415e31f6c103a77
+ms.openlocfilehash: f935b9632c083fe3c78f0b134c398e51d88b9cdc
+ms.sourcegitcommit: a2d7d2bdf4b056b35f29c6fdb315bc7dc28b6f6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61323291"
+ms.lasthandoff: 12/20/2021
+ms.locfileid: "61569506"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -199,3 +199,10 @@ microsoftTeams.authentication.getAuthToken(authTokenRequest);
 
 > [!NOTE]
 > SSO поддерживается для приложений, которые принадлежат AAD B2C.
+
+## <a name="step-by-step-guide"></a>Пошаговые инструкции
+
+Следуйте [пошаговом руководстве по](../../../sbs-tabs-and-messaging-extensions-with-sso.yml) проверке подлинности вкладок и расширений обмена сообщениями.
+
+## <a name="see-also"></a>См. также
+[Teams Бот с одним входом](../../../sbs-bots-with-sso.yml)

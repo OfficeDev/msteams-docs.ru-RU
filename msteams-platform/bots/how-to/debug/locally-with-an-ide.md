@@ -5,12 +5,12 @@ description: Узнайте о тестировании и отладке бот
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 9ac6e2f7bf173e68e111b0d792ec89ba266c188f
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 087c18998df0a24470da8059eb107343588c3aa0
+ms.sourcegitcommit: a2d7d2bdf4b056b35f29c6fdb315bc7dc28b6f6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888232"
+ms.lasthandoff: 12/20/2021
+ms.locfileid: "61569576"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 
@@ -21,11 +21,13 @@ ms.locfileid: "60888232"
 Наиболее полный способ тестирования бота — это создание пакета приложений и его загрузка в Teams. Это единственный способ тестирования всех функциональных возможностей, доступных вашему боту, во всех сферах.
 
 Существует два метода для загрузки приложения:
+
 * Используйте [App Studio](~/concepts/build-and-test/app-studio-overview.md).
 * [Создайте пакет приложения](~/concepts/build-and-test/apps-package.md) вручную, а затем [загрузите приложение.](~/concepts/deploy-and-publish/apps-upload.md)
 
 > [!NOTE]
-> Если необходимо изменить манифест и повторно загрузить приложение, [](#delete-a-bot-from-teams) перед отправкой измененного пакета приложения необходимо удалить бот.
+> Чтобы изменить манифест и повторно загрузить приложение, [удалите](#delete-a-bot-from-teams) бот перед отправкой измененного пакета приложений.
+> Чтобы протестировать бот, в Teams. См. [возможность загрузки побок.](/concepts/build-and-test/prepare-your-o365-tenant#enable-custom-teams-apps-and-turn-on-custom-app-uploading)
 
 ## <a name="debug-your-bot-locally"></a>Отламывка бота локально
 
@@ -35,7 +37,7 @@ ms.locfileid: "60888232"
 ngrok http <port> -host-header=localhost:<port>
 ```
 
-Используйте конечную точку https, предоставленную ngrok в манифесте приложения. 
+Используйте конечную точку https, предоставленную ngrok в манифесте приложения.
 
 > [!NOTE]
 > При закрытии окна команды и перезапуске создается новый URL-адрес, и для его использования необходимо обновить конечный адрес бота.
