@@ -6,12 +6,12 @@ ms.author: shenwe
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: e11c66e7e818a090305e320ed21080c7ca897856
-ms.sourcegitcommit: f1e6f90fb6f7f5825e55a6d18ccf004d0091fb6d
+ms.openlocfilehash: c8899131876533fdd64913fb6790cff9f258e8f5
+ms.sourcegitcommit: aede47694894d281f6b725083bc0b46ab0e4846d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61228193"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61591787"
 ---
 # <a name="use-teams-toolkit-to-provision-cloud-resources"></a>Использование Teams набор средств для предоставления облачных ресурсов
 
@@ -94,14 +94,14 @@ TeamsFx обеспечивает бесшовную интеграцию с об
 | OAuth Server управления API | Позволяет платформе Microsoft Power получить доступ к API, которые будут доступны в приложении Function |
 | Удостоверение пользователя, назначенное пользователю | Проверка подлинности запросов службы Azure на обслуживание |
 
-## <a name="customize-resource-provision"></a>Настройка предоставления ресурсов 
+## <a name="customize-resource-provision"></a>Настройка предоставления ресурсов
 
 Teams набор средств позволяет использовать инфраструктуру в качестве кода для определения необходимых ресурсов Azure и их настройки. Для определения ресурсов Azure используется ARM шаблон. Шаблон ARM — это набор бицепсных файлов, определяя инфраструктуру и конфигурацию для проекта. Можно настроить ресурсы Azure, созданные путем изменения ARM шаблона. Дополнительные сведения см. в [документе bicep.](/azure/azure-resource-manager/bicep.md) Подготовка с ARM включает изменение следующих двух наборов файлов, параметров и шаблонов:
 
 * ARM файлов параметров () находятся в папке для передачи `azure.parameters.{your_env_name}.json` `.fx/configs` параметров шаблонам.
 * ARM шаблонов, расположенных в `templates/azure` этой папке, содержатся следующие файлы:
 
-| Файл | Что он делает | Разрешить настройку |
+| File | Что он делает | Разрешить настройку |
 | --- | --- | --- |
 | main.bicep | Предоставление точки входа для предоставления ресурсов Azure | Да |
 | provision.bicep | Создание и присвоение ресурсов Azure | Да |
