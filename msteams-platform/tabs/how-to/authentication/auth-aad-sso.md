@@ -4,12 +4,12 @@ description: Описывает один вход (SSO)
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности SSO AAD api с одним входом
-ms.openlocfilehash: f935b9632c083fe3c78f0b134c398e51d88b9cdc
-ms.sourcegitcommit: a2d7d2bdf4b056b35f29c6fdb315bc7dc28b6f6f
+ms.openlocfilehash: 107c03fe7ecb2bc6fd38ede7797e6a2a23bac012
+ms.sourcegitcommit: 9a06b09ea4bd265096b35c792aa43cf1c0671d5d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "61569506"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61598950"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входного знака (SSO) для вкладок
 
@@ -200,9 +200,10 @@ microsoftTeams.authentication.getAuthToken(authTokenRequest);
 > [!NOTE]
 > SSO поддерживается для приложений, которые принадлежат AAD B2C.
 
-## <a name="step-by-step-guide"></a>Пошаговые инструкции
+## <a name="step-by-step-guides"></a>Пошаговая руководство
 
-Следуйте [пошаговом руководстве по](../../../sbs-tabs-and-messaging-extensions-with-sso.yml) проверке подлинности вкладок и расширений обмена сообщениями.
+* Следуйте [пошаговом руководстве по](../../../sbs-tabs-and-messaging-extensions-with-sso.yml) проверке подлинности вкладок и расширений обмена сообщениями.
+* Следуйте [пошаговом руководстве по](../../../sbs-tab-with-adaptive-cards.yml) созданию вкладки с адаптивными картами.
 
 ## <a name="see-also"></a>См. также
 [Teams Бот с одним входом](../../../sbs-bots-with-sso.yml)
