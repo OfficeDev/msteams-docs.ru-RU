@@ -5,12 +5,12 @@ description: Узнайте о тестировании и отладке бот
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 087c18998df0a24470da8059eb107343588c3aa0
-ms.sourcegitcommit: a2d7d2bdf4b056b35f29c6fdb315bc7dc28b6f6f
+ms.openlocfilehash: d9ddbb3aa4f93b8981fbba03d879a77f4175e81e
+ms.sourcegitcommit: 4892d8d0fa38a472edab047754ef85b1a85be495
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "61569576"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608463"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 
@@ -74,6 +74,9 @@ The Bot Framework Emulator это настольное приложение, к�
 
    3. Выберите бот и отправьте сообщение для начала беседы.
       Кроме того, вы можете вклеить ID приложения вашего бота в поле поиска в верхнем левом Microsoft Teams. На странице результаты поиска перейдите на вкладку **People,** чтобы увидеть бота и начать с ним общаться в чате.
+
+> [!Note]
+> Чтобы Microsoft Teams ссылку на ID приложения вашего бота, вайте возможность загрузки [приложений.](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant#enable-custom-teams-apps-and-turn-on-custom-app-uploading)      
 
 Ваш бот получает событие при добавлении ботов в команду без сведений о команде `conversationUpdate` в `channelData` объекте.
 

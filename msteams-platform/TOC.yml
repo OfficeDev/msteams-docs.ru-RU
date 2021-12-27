@@ -237,9 +237,6 @@
           href: bots/how-to/conversations/subscribe-to-conversation-events.md
         - name: Упреждающие сообщения
           href: bots/how-to/conversations/send-proactive-messages.md
-          items:
-            - name: Пошаговые инструкции
-              href: sbs-send-proactive.yml
         - name: Формат сообщений бота
           href: bots/how-to/format-your-bot-messages.md
         - name: Обновлять и удалять сообщения ботов
@@ -376,8 +373,6 @@
           href: bots/how-to/authentication/add-authentication.md
         - name: Использование проверки подлинности SSO
           href: bots/how-to/authentication/auth-aad-sso-bots.md
-        - name: Пошаговые инструкции по ботам с единым входом
-          href: sbs-bots-with-sso.yml
     - name: Расширения для система обмена сообщениями
       items:
         - name: Добавление проверки подлинности в расширение для сообщений

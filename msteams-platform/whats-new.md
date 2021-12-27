@@ -4,12 +4,12 @@ description: Описывает все новые или последние фу
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: команды новых обновлений и функций
-ms.openlocfilehash: 16558a8dede8033e8258696e1913a206e3531813
-ms.sourcegitcommit: 9a06b09ea4bd265096b35c792aa43cf1c0671d5d
+ms.openlocfilehash: a1fcc2bd015d8260dd0282010cbcbd0e20226d10
+ms.sourcegitcommit: 4892d8d0fa38a472edab047754ef85b1a85be495
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61598957"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608379"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "61598957"
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
+|12/24/2021| Введено пошаговая руководство по предоставлению разрешений устройств Tab. | Основные принципы > устройств > пошаговом руководстве по предоставлению [разрешений устройств Tab](sbs-tab-device-permissions.yml) |
 |12/23/2021| Введено пошаговая руководство по созданию вкладок с адаптивными картами.| Добавление руководства > проверки подлинности > для создания вкладок с адаптивными картами > SSO > пошаговое руководство по созданию [вкладок](sbs-tab-with-adaptive-cards.yml) |
 | 12/21/2021 | Обновлены модули JavaScript, C# и Node.js для Teams набор средств 3.0.0. | • Начало работы > [создать свое первое приложение с Помощью JavaScript](sbs-gs-javascript.yml) <br> • Начало работы > создание первого приложения с [помощью C# или .NET](sbs-gs-csharp.yml) <br> • Начало работы> [создание первого приложения с помощью Node.js](sbs-gs-nodejs.yml) |
 |12/20/2021| Введено пошаговая руководство для вкладок и расширений обмена сообщениями с одним входом (SSO). | Добавление руководства по проверке подлинности > вкладок > использование руководства по проверке подлинности SSO > пошагово с [помощью SSO](sbs-tabs-and-messaging-extensions-with-SSO.yml) для вкладок и расширений обмена сообщениями|
@@ -215,6 +216,7 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+|12/24/2021| Введено пошаговая руководство по предоставлению разрешений устройств Tab. | Основные принципы > устройств > пошаговом руководстве по предоставлению [разрешений устройств Tab](sbs-tab-device-permissions.yml) |
 |11/30/2021 | Наборы средств Teams для Visual Studio Code | Инструменты и SDKs > Teams набор средств для Visual Studio Code > [Teams набор средств основы](toolkit/teams-toolkit-fundamentals.md) |
 |11/15/2021| Личные вкладки и расширения обмена сообщениями работают в Outlook и Office | [Расширение Teams приложений в Microsoft 365](~/m365-apps/overview.md) |
 |10/28/2021|Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC).| • Создание ботов > бесед ботов > сообщения в беседах ботов > получать все сообщения [с RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > бесед ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > бесед ботов > [и групповых бесед](~/bots/how-to/conversations/channel-and-group-conversations.md) </br> • Схема предварительного > манифеста > [](~/resources/schema/manifest-schema-dev-preview.md) разработчика |
