@@ -11,12 +11,12 @@ metadata:
   author: surbhigupta12
   ms.author: msauthor
   ms.date: 11/10/2021
-  ms.openlocfilehash: 4151f03b3e2772860e5d7df4c6fd673e3cc6289e
-  ms.sourcegitcommit: 4892d8d0fa38a472edab047754ef85b1a85be495
+  ms.openlocfilehash: 6c4f9fcdc64a470eaeed96b2575e00b5c2439c76
+  ms.sourcegitcommit: 8935f54330c5685ff091f01e2b18c70502428054
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/27/2021
-  ms.locfileid: "61608456"
+  ms.lasthandoff: 12/28/2021
+  ms.locfileid: "61619797"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
@@ -40,7 +40,7 @@ landingContent:
       url: ~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
     - text: Создание настраиваемого приложения с низким кодом
       url: ~/samples/teams-low-code-solutions.md
-- title: Руководства
+- title: Учебники
   linkLists:
   - linkListType: concept
     links:
@@ -80,6 +80,8 @@ landingContent:
     links:
     - text: Начало работы с созданием приложений
       url: ../msteams-platform/get-started/get-started-overview.md
+    - text: Начало работы с GitHub
+      url: /contribute/additional-resources
   - linkListType: tutorial
     links:
     - text: Создание приложения с помощью JavaScript

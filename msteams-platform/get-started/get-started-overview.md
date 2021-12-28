@@ -4,12 +4,12 @@ description: Обзор для начала работы Microsoft Teams док�
 ms.localizationpriority: medium
 ms.topic: reference
 keywords: Microsoft Teams примерах разработчика
-ms.openlocfilehash: cb498d176b8893a2097e19ca76120a33a5f7221c
-ms.sourcegitcommit: a2d7d2bdf4b056b35f29c6fdb315bc7dc28b6f6f
+ms.openlocfilehash: 9ab8014ad528aff9cfb0f4e271332981af3a8f29
+ms.sourcegitcommit: 8935f54330c5685ff091f01e2b18c70502428054
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2021
-ms.locfileid: "61569499"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61619804"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -63,4 +63,5 @@ ms.locfileid: "61569499"
 
 ## <a name="see-also"></a>См. также
 
-[Microsoft Teams примеры](https://github.com/OfficeDev/Microsoft-Teams-Samples#microsoft-teams-samples)
+* [Microsoft Teams примеры](https://github.com/OfficeDev/Microsoft-Teams-Samples#microsoft-teams-samples)
+* [Ресурсы Git и GitHub](/contribute/additional-resources)
