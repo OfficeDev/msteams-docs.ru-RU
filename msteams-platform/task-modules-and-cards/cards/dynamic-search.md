@@ -5,12 +5,12 @@ description: Описывает поиск в начале ввода с пом�
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: surbhigupta
-ms.openlocfilehash: 95041b1a24ac083329a809b8a5989d77e2430e26
-ms.sourcegitcommit: e45742fd2aa2ff5e5c15e8f7c20cc14fbef6d441
+ms.openlocfilehash: 6c2c26ee6853b23283ae04dbbfec4a78425e2ea5
+ms.sourcegitcommit: f85d0a40326f45b1ffdd3bd1b61b2d6af76b6e85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61075585"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61722184"
 ---
 # <a name="typeahead-search-in-adaptive-cards"></a>Введите поиск вперед в адаптивных картах
 
@@ -88,8 +88,8 @@ ms.locfileid: "61075585"
 | Свойство| Тип | Обязательный | Описание |
 |-----------|------|----------|-------------|
 | type | Data.Query | Да | Указывает, что это объект Data.Query.|
-| набор данных | Строка | Да | Указывает тип данных, которые извлекаются динамически. |
-| value | Строка | Нет | Заполняет запрос на вызов бота с помощью ввода, предоставленного `ChoiceSet` пользователем. |
+| набор данных | String | Да | Указывает тип данных, которые извлекаются динамически. |
+| value | String | Нет | Заполняет запрос на вызов бота с помощью ввода, предоставленного `ChoiceSet` пользователем. |
 | count | Номер | Нет | Заполняет запрос на вызов бота, чтобы указать количество элементов, которые должны быть возвращены. Бот игнорирует его, если пользователи хотят отправить другую сумму. | 
 | skip | Номер | Нет | Заполняет запрос на вызов бота, чтобы указать, что пользователи хотят входить в список и продвигаться вперед. |
 
@@ -297,7 +297,125 @@ ms.locfileid: "61075585"
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="code-snippets-for-invoke-request-and-response"></a>Фрагменты кода для вызова запроса и ответа
+
+### <a name="invoke-request"></a>Вызов запроса
+
+```json
+{
+    "name": "application/search",
+    "type": "invoke",
+    "value": {
+        "queryText": "fluentui",
+        "queryOptions": {
+            "skip": 0,
+            "top": 15
+        },
+        "dataset": "npm"
+    },
+    "locale": "en-US",
+    "localTimezone": "America/Los_Angeles",
+    // …. other fields
+}
+```
+
+### <a name="response"></a>Отклик
+
+#### <a name="c"></a>[C#](#tab/csharp)
+
+```csharp
+protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
+{
+    if (turnContext.Activity.Name == "application/search")
+    {
+    var packages = new[] {
+            new { title = "A very extensive set of extension methods", value = "FluentAssertions" },
+            new { title = "Fluent UI Library", value = "FluentUI" }};
+
+    var searchResponseData = new
+    {
+        type = "application/vnd.microsoft.search.searchResponse",
+        value = new
+        {
+        results = packages
+        }
+    };
+    var jsonString = JsonConvert.SerializeObject(searchResponseData);
+    JObject jsonData = JObject.Parse(jsonString);
+    return new InvokeResponse()
+    {
+        Status = 200,
+        Body = jsonData
+    };
+    }
+
+    return null;
+}
+```
+
+#### <a name="nodejs"></a>[Node.js](#tab/nodejs)
+ 
+```nodejs
+  async onInvokeActivity(context) {
+    if (context._activity.name == 'application/search') {
+      // let searchQuery = context._activity.value.queryText;  // This can be used to filter the results
+      var successResult = {
+        status: 200,
+        body: {
+          "type": "application/vnd.microsoft.search.searchResponse",
+          "value": {
+            "results": [
+              {
+                "value": "FluentAssertions",
+                "title": "A very extensive set of extension methods"
+              },
+              {
+                "value": "FluentUI",
+                "title": "Fluent UI Library"
+              }
+            ]
+          }
+        }
+      }
+
+      return successResult;
+
+    }
+  }
+```
+
+####  <a name="json"></a>[JSON](#tab/json)
+
+```json
+{
+    "status": 200,
+    "body" : {
+        "type": "application/vnd.microsoft.search.searchResponse",
+        "value": {
+           "results": [
+                {
+                    "value": "FluentAssertions",
+                    "title": "A very extensive set of extension methods."
+                },
+                {
+                    "value": "FluentUI",
+                    "title": "Fluent UI Library"
+                }
+            ]
+        }
+    }
+}
+```
+
+---
+
+## <a name="code-sample"></a>Пример кода
+
+|Название примера | Описание | C# | Node.js |
+|----------------|-----------------|--------------|----------------|
+| Введите управление поиском заранее на адаптивных картах | В примере показаны функции статического и динамического управления поиском в адаптивных картах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/nodejs) |
+
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Универсальные действия для адаптивных карточек](Universal-actions-for-adaptive-cards/Overview.md)
 * [Модули задач](../what-are-task-modules.md)
