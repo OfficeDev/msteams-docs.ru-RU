@@ -6,12 +6,12 @@ keywords: команды вкладки исходят веб-ок
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 9950bc6d610b280deff83c44ff26a5e4359d3b98
-ms.sourcegitcommit: 4892d8d0fa38a472edab047754ef85b1a85be495
+ms.openlocfilehash: c398776e2858283a8c4a8f7b5087e2efd365c7d3
+ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608393"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61768142"
 ---
 # <a name="create-incoming-webhook"></a>Создание входящих веб-ок
 
@@ -58,7 +58,7 @@ ms.locfileid: "61608393"
 
 Веб-сайт доступен в Teams канале.
 
-Вы можете создавать и отправлять сообщения с помощью входящих веб-ок или Office 365 Соединителю. Дополнительные сведения см. в [сообщении Create and Send messages.](/webhooks-and-connectors/how-to/connectors-using?tabs=cURL)
+Вы можете создавать и отправлять сообщения с помощью входящих веб-ок или Office 365 Соединителю. Дополнительные сведения см. в [сообщении Create and Send messages.](~/webhooks-and-connectors/how-to/connectors-using.md)
 
 > [!NOTE]
 > В Teams выберите **разрешения Параметры** членов, позволяющие участникам создавать, обновлять и удалять соединители, чтобы любой член группы может добавлять, изменять или удалять  >    >  соединителю.

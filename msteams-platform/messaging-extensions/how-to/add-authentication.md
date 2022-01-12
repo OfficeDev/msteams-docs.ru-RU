@@ -5,12 +5,12 @@ description: Узнайте, как добавить проверку подли
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 83c7ce4f7897014345fd071b28273ade5907a917
-ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
+ms.openlocfilehash: 5c990bd46f145d34616b20e25dc6a0f776f022f9
+ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949098"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61768449"
 ---
 # <a name="add-authentication-to-your-messaging-extension"></a>Добавление проверки подлинности в расширение для сообщений
 
@@ -67,7 +67,8 @@ ms.locfileid: "60949098"
 ```
 
 > [!NOTE]
-> Чтобы вход в окне Teams, доменная часть URL-адреса должна быть в списке допустимого домена вашего приложения. Дополнительные сведения см. [в схеме манифеста validDomains.](~/resources/schema/manifest-schema.md#validdomains)
+> * Чтобы вход в окне Teams, доменная часть URL-адреса должна быть в списке допустимого домена вашего приложения. Дополнительные сведения см. [в схеме манифеста validDomains.](~/resources/schema/manifest-schema.md#validdomains)
+> * Размер всплывающих данных проверки подлинности можно определить, включив параметры строки запроса ширины и `Value = $"{_siteUrl}/searchSettings.html?settings={escapedSettings}",` высоты.
 
 ### <a name="start-the-sign-in-flow"></a>Запуск знака в потоке
 

@@ -1,44 +1,42 @@
 ---
-title: TeamsFx SDK
+title: Пакет SDK TeamsFx
 author: MuyangAmigo
 description: О teamsFx SDK
 ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 63c5fad9c795c513b476f305c09d94ffad7c5d61
-ms.sourcegitcommit: f1e6f90fb6f7f5825e55a6d18ccf004d0091fb6d
+ms.openlocfilehash: d0ec446b51363bbbe4c3322ec1d840ad4068ff74
+ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61228186"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61768373"
 ---
 # <a name="teamsfx-sdk-for-typescript-or-javascript"></a>TeamsFx SDK для TypeScript или JavaScript
 
-TeamsFx стремится сократить задачи по реализации удостоверений и доступа к облачным ресурсам до одностройки с "нулевой конфигурацией".
+TeamsFx стремится сократить задачи реализации удостоверений и доступа к облачным ресурсам к однострочному заявлению с нулевой конфигурацией.
 
 Используйте библиотеку для:
 
 - Аналогичным образом можно получить доступ к основным функциональным возможностям в клиентской и серверной среде.
 - Напишите код проверки подлинности пользователей упрощенным способом.
-
-   * [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk) 
-   * [Пакет (NPM)](https://www.npmjs.com/package/@microsoft/teamsfx) 
-   * [Справочная документация по API](https://aka.ms/teamsfx-sdk-help) 
-   * [Примеры](https://github.com/OfficeDev/TeamsFx-Samples)
-
+ 
 ## <a name="get-started"></a>Начало работы
 
 TeamsFx SDK предварительно настроен в проекте scaffolded с помощью инструментария TeamsFx или CLI.
-Дополнительные сведения о проекте Teams приложения см. в [материале README.](https://github.com/OfficeDev/TeamsFx/blob/main/packages/vscode-extension/README.md)
+Дополнительные сведения см. [в Teams проекта приложения.](https://github.com/OfficeDev/TeamsFx/blob/main/packages/vscode-extension/README.md)
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Необходимые условия
 
-- Node.js `10.x.x` версии или выше.
-- Если в проекте установлены связанные пакеты в качестве зависимостей, убедитесь, что `botbuilder` они имеют ту же версию и версию. [](https://github.com/Microsoft/botbuilder-js#packages) `>= 4.9.3` ([Проблема - все пакеты BOTBUILDER](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548)должны быть одной и той же версии )
+- Node.js `10.x.x` версии или более поздней версии.
+- Если в проекте установлены связанные пакеты в качестве зависимостей, убедитесь, что они имеют ту же версию и `botbuilder` версия [](https://github.com/Microsoft/botbuilder-js#packages) `>= 4.9.3` . ([Проблема - все пакеты BOTBUILDER](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548)должны быть одной и той же версии )
 
-> [!TIP]
-> Проект, созданный набором инструментов TeamsFx, VS Code или CLI-инструмент.
+Дополнительные сведения см. в указанных ниже статьях.
+* [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk) 
+* [Пакет (NPM)](https://www.npmjs.com/package/@microsoft/teamsfx) 
+* [Справочная документация по API](https://aka.ms/teamsfx-sdk-help) 
+* [Примеры](https://github.com/OfficeDev/TeamsFx-Samples)
 
 ### <a name="install-the-microsoftteamsfx-package"></a>Установка `@microsoft/teamsfx` пакета
 
@@ -48,9 +46,9 @@ TeamsFx SDK предварительно настроен в проекте scaf
 npm install @microsoft/teamsfx
 ```
 
-### <a name="create-and-authenticate-a-microsoftgraphclient"></a>Создание и проверка подлинности `MicrosoftGraphClient`
+### <a name="create-and-authenticate-microsoftgraphclient"></a>Создание и проверка подлинности `MicrosoftGraphClient`
 
-Чтобы создать объект клиента графа для доступа к API microsoft Graph, для проверки подлинности потребуется учетные данные. SDK предоставляет несколько классов учетных данных для выбора, отвечающих различным требованиям. Перед использованием учетных данных необходимо загрузить конфигурацию.
+Чтобы создать объект клиентской диаграммы для доступа к API Graph Microsoft, необходимо проверить подлинность учетных данных. SDK предоставляет несколько классов учетных данных для выбора, отвечающих различным требованиям. Перед использованием учетных данных необходимо загрузить конфигурацию.
 
 - В среде браузера необходимо явно передать параметры конфигурации. Проект scaffolded React предоставил переменные среды для использования.
 
@@ -72,9 +70,7 @@ loadConfiguration();
 
 #### <a name="using-teams-app-user-credential"></a>Использование учетных данных Teams приложения
 
-Используйте фрагмент ниже:
-
-> [Примечание] Этот класс учетных данных можно использовать только в браузере, например Teams Tab App.
+Используйте следующий фрагмент:
 
 ```ts
 loadConfiguration({
@@ -88,11 +84,14 @@ const credential = new TeamsUserCredential();
 const graphClient = createMicrosoftGraphClient(credential, ["User.Read"]); // Initializes MS Graph SDK using our MsGraphAuthProvider
 const profile = await graphClient.api("/me").get();
 ```
+> [!NOTE]
+> Этот класс учетных данных можно использовать в приложении браузера, например Teams Tab App.
 
 #### <a name="using-microsoft-365-tenant-credential"></a>Использование Microsoft 365 учетных данных клиента
 
-Для этого не требуется взаимодействие с пользователем Teams приложения. Вы можете вызвать Microsoft Graph в качестве приложения.
-Используйте фрагмент ниже:
+Microsoft 365 учетные данные клиента не требуют взаимодействия с пользователем Teams приложения. Вы можете вызвать Microsoft Graph в качестве приложения.
+
+Используйте следующий фрагмент:
 
 ```ts
 loadConfiguration();
@@ -105,20 +104,19 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 ### <a name="credentials"></a>Учетные данные
 
-В папке учетных данных [](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/credential) находятся 3 класса учетных данных, которые помогут упростить проверку подлинности. 
+В папке учетных данных находятся 3 класса учетных данных, которые [помогут](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/credential) упростить проверку подлинности.
 
-Классы учетных данных `TokenCredential` реализуют интерфейс, широко используемый в API библиотек Azure. Они предназначены для предоставления маркера доступа для определенных областей.
-Классы учетных данных представляют различные удостоверения в определенных сценариях.
+Классы учетных данных `TokenCredential` реализуют интерфейс, широко используемый в API библиотек Azure. Они предназначены для предоставления маркеров доступа для определенных областей. Следующие классы учетных данных представляют различные удостоверения в определенных сценариях:
 
-`TeamsUserCredential`представляют Teams текущего пользователя. С помощью этой учетной записи будет запрашиваться согласие пользователя в первый раз.
-`M365TenantCredential`представляют Microsoft 365 клиента. Он обычно используется, когда пользователь не участвует, как работа автоматизации с срабатывным временем.
-`OnBehalfOfUserCredential` используется от имени потока. Ему необходим маркер доступа, и вы можете получить новый маркер для различных областей. Он предназначен для использования в сценариях Azure Function или Bot.
+* `TeamsUserCredential`представляют Teams текущего пользователя. С помощью этой учетной записи будет запрашиваться согласие пользователя в первый раз.
+* `M365TenantCredential`представляют Microsoft 365 клиента. Он обычно используется, когда пользователь не участвует, как работа автоматизации с срабатывным временем.
+* `OnBehalfOfUserCredential` используется от имени потока. Ему необходим маркер доступа, и вы можете получить новый маркер для различных областей. Он предназначен для использования в сценариях Azure Function или Bot.
 
-### <a name="bots"></a>боты;
+### <a name="bots"></a>Боты
 
 Классы, связанные с ботом, хранятся в [папке бота.](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/bot)
 
-`TeamsBotSsoPrompt` имеет хорошую интеграцию с рамками Bot. Это упрощает процесс проверки подлинности при разработке приложения-бота.
+`TeamsBotSsoPrompt` может интегрироваться с рамками Bot. Это упрощает процесс проверки подлинности для разработки приложения-бота.
 
 ### <a name="helper-functions"></a>Функции помощника
 
@@ -126,9 +124,9 @@ TeamsFx SDK предоставляет дополнительные функци
 
 ### <a name="error-handling"></a>Обработка ошибок
 
-API будет `ErrorWithCode` выбрасывать, если ошибка произойдет. Каждый `ErrorWithCode` из них содержит код ошибки и сообщение об ошибке.
+Ответ на ошибку API `ErrorWithCode` содержит код ошибки и сообщение об ошибке.
 
-Например, чтобы отфильтровать определенную ошибку, можно использовать следующую проверку:
+Например, чтобы отфильтровать определенную ошибку, можно использовать следующий фрагмент:
 
 ```ts
 try {
@@ -144,7 +142,7 @@ try {
 }
 ```
 
-И если экземпляр учетных данных используется в другой библиотеке Graph Microsoft Graph, не исключено, что ошибка будет поймана и преобразована.
+Если экземпляр учетных данных используется в других библиотеках, таких как Microsoft Graph, возможно, ошибка будет поймана и преобразована.
 
 ```ts
 try {
@@ -163,13 +161,7 @@ try {
 
 ## <a name="scenarios"></a>Сценарии
 
-В следующих разделах приводится несколько фрагментов кода, охватывающих некоторые из наиболее распространенных сценариев:
-
-- [Использование Graph API в приложении вкладки](#use-graph-api-in-tab-app)
-- [Вызов функции Azure в приложении вкладки](#call-azure-function-in-tab-app)
-- [Доступ SQL базы данных в Azure Function](#access-sql-database-in-azure-function)
-- [Использование проверки подлинности на основе сертификатов в Azure Function](#use-certificate-based-authentication-in-azure-function)
-- [Использование Graph API в приложении Bot](#use-graph-api-in-bot-application)
+В следующем разделе содержится несколько фрагментов кода для распространенных сценариев:
 
 ### <a name="use-graph-api-in-tab-app"></a>Использование Graph API в приложении вкладки
 
@@ -283,14 +275,13 @@ dialogs.add(
 
 ### <a name="configure-log"></a>Настройка журнала
 
-Вы можете установить уровень журнала клиента и перенаправить выходы при использовании этой библиотеки.
-Ведение журнала по умолчанию отключено, его можно включить, установив уровень журнала.
+Вы можете установить уровень журнала клиента и перенаправить выходы при использовании этой библиотеки. Ведение журнала по умолчанию отключено, его можно включить, установив уровень журнала.
 
 #### <a name="enable-log-by-setting-log-level"></a>Включить журнал, установив уровень журнала
 
-Когда установлен уровень журнала, журнал включен. Он печатает сведения журнала для консоли по умолчанию.
+Ведение журнала включено только при наборе уровня журнала. По умолчанию он печатает сведения журнала на консоли.
 
-Установите уровень журнала с помощью фрагмента ниже:
+Установите уровень журнала с помощью следующего фрагмента:
 
 ```ts
 // Only need the warning and error messages.
@@ -309,7 +300,8 @@ setLogger(context.log);
 
 ##### <a name="redirect-by-setting-custom-log-function"></a>Перенаправление путем настройки настраиваемой функции журнала
 
-Обратите внимание, что функция журнала не вступает в силу, если вы установите настраиваемый регистратор.
+> [!NOTE]
+> Функция журнала не вступает в силу, если вы установите настраиваемый регистратор.
 
 ```ts
 setLogLevel(LogLevel.Info);

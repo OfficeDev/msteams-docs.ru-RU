@@ -3,12 +3,12 @@ title: Работа с универсальными действиями для 
 description: Узнайте, как работать с универсальными действиями для адаптивных карт, в том числе схемой универсального доступа к адаптивным картам, моделью обновления и обратной совместимостью с помощью образцов кода.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 488385d560f3f372be8149631eb1a04a3642f65f
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 1ae881ff985d39865da480596ea2ece8bef2b075
+ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888365"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61768610"
 ---
 # <a name="work-with-universal-actions-for-adaptive-cards"></a>Работа с универсальными действиями для адаптивных карточек
 
@@ -73,6 +73,16 @@ ms.locfileid: "60888365"
 * Добавлено свойство UserIds, так как каналы в Teams могут включать множество участников. Если все участники одновременно просматривают канал, безусловное автоматическое обновление приводит к множеству одновременных вызовов бота. Свойство всегда должно быть включено, чтобы определить, какие пользователи должны получать автоматическое обновление с максимальным `userIds` *количеством 60 (шестидесяти) пользовательских МРИС.*
 
 * Вы можете Teams пользовательские МРИС участника беседы. Дополнительные сведения о добавлении в список userIds в разделе обновление адаптивной карты см. в статье [Fetch roster or user profile.](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile)
+
+ Вы можете получить MRI пользователя для канала, группового чата или чата 1:1, используя следующий пример:
+
+ 1. Использование TurnContext  
+
+     `userMRI= turnContext.Activity.From.Id`
+
+ 1. Использование метода GetMemberAsync
+  
+     `var member = await TeamsInfo.GetMemberAsync(turnContext, turnContext.Activity.From.Id, cancellationToken);var userMRI = member.Id;`
 
 * Пример MRI пользователя Teams: `29:1bSnHZ7Js2STWrgk6ScEErLk1Lp2zQuD5H2qQ960rtvstKp8tKLl-3r8b6DoW0QxZimuTxk_kupZ1DBMpvIQQUAZL-PNj0EORDvRZXy8kvWk`
 

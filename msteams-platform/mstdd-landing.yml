@@ -11,69 +11,71 @@ metadata:
   author: surbhigupta12
   ms.author: msauthor
   ms.date: 11/10/2021
-  ms.openlocfilehash: 6c4f9fcdc64a470eaeed96b2575e00b5c2439c76
-  ms.sourcegitcommit: 8935f54330c5685ff091f01e2b18c70502428054
+  ms.openlocfilehash: cba73e27b352c462000876fe01e329b2a0a043a4
+  ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/28/2021
-  ms.locfileid: "61619797"
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61768561"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
   - linkListType: concept
     links:
-    - text: Рекомендации для приложений, связанных с предложением SaaS
-      url: concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#apps-linked-to-saas-offer
-    - text: Введен новый значок магазина
-      url: ~/concepts/design/personal-apps.md
     - text: Teams набор средств для Visual Studio Code (Предварительный просмотр)
       url: ~/toolkit/teams-toolkit-fundamentals.md
-    - text: Правила проверки в магазине Microsoft Teams
-      url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
+    - text: Введен новый значок магазина
+      url: ~/concepts/design/personal-apps.md
     - text: Личные вкладки и расширения обмена сообщениями работают в Outlook и Office (Предварительная версия)
       url: ~/m365-apps/overview.md
     - text: Поиск с автозавершением в адаптивной карточке
       url: ~/task-modules-and-cards/cards/dynamic-search.md
-    - text: Включить боты для получения всех сообщений канала с использованием разрешения на использование ресурсов (RSC)
-      url: ~/bots/how-to/conversations/channel-messages-with-rsc.md
+- title: Все время избранное
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Рекомендации для приложений, связанных с предложениями SaaS
+      url: concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#apps-linked-to-saas-offer
+    - text: Правила проверки в магазине Microsoft Teams
+      url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
     - text: Монетизация приложения Teams с помощью трансактабельного предложения SaaS
       url: ~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
-    - text: Создание настраиваемого приложения с низким кодом
-      url: ~/samples/teams-low-code-solutions.md
+    - text: Ознакомьтесь с приложениями с низким кодом для Teams
+      url: ~/samples/teams-low-code-solutions
 - title: Учебники
   linkLists:
   - linkListType: concept
     links:
+    - text: Разрешение устройства для браузера
+      url: concepts/device-capabilities/browser-device-permissions.md
+    - text: Использование проверки подлинности SSO для вкладок
+      url: tabs/how-to/authentication/auth-aad-sso.md
     - text: Упреждающие сообщения
       url: ~/bots/how-to/conversations/send-proactive-messages.md
     - text: Добавление проверки подлинности в боты
       url: ~/bots/how-to/authentication/add-authentication.md
     - text: Включение и настройка приложений для собраний
       url: ~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
-    - text: Использование проверки подлинности SSO для вкладок
-      url: tabs/how-to/authentication/auth-aad-sso.md
-    - text: Разрешение устройства для браузера
-      url: concepts/device-capabilities/browser-device-permissions.md
   - linkListType: tutorial
     links:
-    - text: Пошаговая руководство по разрешениям устройств Tab
+    - text: Настройка разрешений устройств Tab
       url: ~/sbs-tab-device-permissions.yml
-    - text: Пошаговая руководство для вкладок с адаптивными картами
-      url: ~/sbs-tab-with-adaptive-cards.yml
-    - text: Пошаговое руководство для активных сообщений
-      url: ~/sbs-send-proactive.yml
-    - text: Пошаговая руководство по добавлению проверки подлинности в боты
-      url: ~/sbs-bots-with-sso.yml
-    - text: Пошаговая руководство по созданию маркера собраний
-      url: ~/sbs-meeting-token-generator.yml
-    - text: Пошаговая руководство по собранию пузыря контента
-      url: ~/sbs-meeting-content-bubble.yml
-    - text: Пошаговая руководство по созданию sidepanel собраний
-      url: ~/sbs-meetings-sidepanel.yml
-    - text: Пошаговая руководство по представлению стадии собрания
-      url: ~/sbs-meetings-stage-view.yml
-    - text: Пошаговое руководство с SSO для вкладок и расширений обмена сообщениями
+    - text: Настройка SSO для вкладок и расширений обмена сообщениями
       url: ~/sbs-tabs-and-messaging-extensions-with-SSO.yml
+    - text: Создание вкладок с помощью адаптивных карт
+      url: ~/sbs-tab-with-adaptive-cards.yml
+    - text: Создание бота для отправки проактивных сообщений
+      url: ~/sbs-send-proactive.yml
+    - text: Создание бота с проверкой подлинности SSO
+      url: ~/sbs-bots-with-sso.yml
+    - text: Создание маркера собрания для расширения собрания
+      url: ~/sbs-meeting-token-generator.yml
+    - text: Создание боковогопанеля собрания
+      url: ~/sbs-meetings-sidepanel.yml
+    - text: Создание представления стадии собраний
+      url: ~/sbs-meetings-stage-view.yml
+    - text: Взаимодействие с ботом пузырьков контента в Meetings
+      url: ~/sbs-meeting-content-bubble.yml
 - title: Начало работы
   linkLists:
   - linkListType: get-started
