@@ -98,7 +98,7 @@
           href: toolkit/create-new-project.md
         - name: Подготовка учетных записей для создания приложения Teams
           href: toolkit/accounts.md
-        - name: Подготовка облачных ресурсов к работе
+        - name: Подготовка облачных ресурсов
           href: toolkit/provision.md
         - name: Развертывание приложения Teams в облаке
           href: toolkit/deploy.md
@@ -116,7 +116,7 @@
           href: toolkit/TeamsFx-multi-env.md
         - name: Совместная работа с другими разработчиками над набором средств Teams
           href: toolkit/TeamsFx-collaboration.md
-        - name: Использование рабочего процесса CI/CD
+        - name: Руководство по CI/CD
           href: toolkit/use-CICD-template.md
         - name: CLI набора средств Teams
           href: toolkit/TeamsFx-CLI.md
