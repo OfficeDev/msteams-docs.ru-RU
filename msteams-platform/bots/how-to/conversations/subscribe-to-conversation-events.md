@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: беседа реакции сообщения канала бота событий
-ms.openlocfilehash: bc99091e3eac4a35514cbab4327082223edffa40
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 6c77e6b7675a45c27a8af42811b520b4942d7428
+ms.sourcegitcommit: a6c39106ccc002d02a65e11627659e0c48981d8a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888281"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014558"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -45,17 +45,17 @@ ms.locfileid: "60888281"
 
 | Действие, принятое        | EventType         | Метод, называемый              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
-| Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Группа |
+| Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Команда |
 | Канал переименован     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Команда |
-| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Группа |
-| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Группа |
+| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Команда |
+| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Команда |
 | Участники добавлены   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added). | Все |
 | Удалены участники | membersRemoved | OnTeamsMembersRemovedAsync | [Член удаляется.](#team-members-removed) | groupChat и team |
-| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Группа |
-| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Группа |
-| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Группа |
-| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Группа |
-| Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Группа |
+| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Команда |
+| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Команда |
+| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Команда |
+| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Команда |
+| Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Команда |
 
 ### <a name="channel-created"></a>Созданный канал
 
@@ -1322,7 +1322,17 @@ turnContext, CancellationToken cancellationToken) {
 
 # <a name="typescript"></a>[TypeScript](#tab/typescript)
 
-Недоступно
+```typescript
+async onInstallationUpdateActivity(context: TurnContext) {
+        var activity = context.activity.action;
+        if(activity == "Add") {
+            await context.sendActivity(MessageFactory.text("Added"));
+        }
+        else {
+            await context.sendActivity(MessageFactory.text("Uninstalled"));
+        }
+    }
+```
 
 # <a name="json"></a>[JSON](#tab/json)
 
@@ -1381,7 +1391,13 @@ turnContext, CancellationToken cancellationToken) {
 
 # <a name="python"></a>[Python](#tab/python)
 
-Недоступно
+```python
+async def on_installation_update(self, turn_context: TurnContext):
+   if turn_context.activity.action == "add":   
+       await turn_context.send_activity(MessageFactory.text("Added"))
+   else:
+       await turn_context.send_activity(MessageFactory.text("Uninstalled"))
+```
 
 ---
 
