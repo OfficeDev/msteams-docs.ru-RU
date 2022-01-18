@@ -4,18 +4,18 @@ description: Узнайте, как зарегистрировать новый 
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: вызов средства аудио- и видеосвязи бота
-ms.openlocfilehash: d1cf0049c37f7f586abf19f9e9d0290c74e230ac
-ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
+ms.openlocfilehash: 6b90cea6adef1e59c1b075b6581c1415cf5a4786
+ms.sourcegitcommit: 98cde8ff08552da4ce36fb0463982366bed979e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60948623"
+ms.lasthandoff: 01/18/2022
+ms.locfileid: "62062511"
 ---
 # <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация вызовов и собраний бота для Microsoft Teams
 
 Бот, который участвует в аудио- или видеозвонков и собраниях в Интернете, является обычным Microsoft Teams ботом со следующими дополнительными функциями, используемыми для регистрации бота:
 
-* Существует новая версия манифеста Teams с двумя дополнительными настройками и `supportsCalling` `supportsVideo` . Эти параметры включены в [](../../resources/dev-preview/developer-preview-intro.md) предварительную версию манифеста Teams разработчика.
+* Существует новая версия манифеста Teams с двумя дополнительными настройками и `supportsCalling` `supportsVideo` . Эти параметры включены в схему [Манифеста для Microsoft Teams](../../resources/schema/manifest-schema.md).
 * [Разрешения Graph](./registering-calling-bot.md#add-graph-permissions) Microsoft должны быть настроены для microsoft App ID вашего бота.
 * Разрешения Graph и разрешений API собраний в Интернете требуют согласия администратора клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "60948623"
 Если вы хотите, чтобы ваш IDE правильно проверял схему manifest.json для бота вызовов и собраний для этих значений, вы можете изменить атрибут `$schema` следующим образом:
 
 ```json
-"$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
+"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
 ```
 
 В следующем разделе вы можете создать новый бот или добавить возможности вызова к существующему боту.
@@ -92,7 +92,7 @@ ms.locfileid: "60948623"
 > [!IMPORTANT]
 > В любое время, когда вы внося изменения в разрешения приложения, необходимо также повторить процесс согласия администратора. Изменения, внесенные на портале регистрации приложений, не отражаются до повторного получения согласия администратором клиента.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Уведомления о входящих звонках](~/bots/calls-and-meetings/call-notifications.md)

@@ -4,12 +4,13 @@ description: Расширение личного приложения Teams вк
 ms.date: 11/15/2021
 ms.topic: tutorial
 ms.custom: m365apps
-ms.openlocfilehash: 507cd74332ced731701e675554b11205715cfc58
-ms.sourcegitcommit: 239807b74aa222452559509d49c4f2808cd9c9ca
+ms.localizationpriority: medium
+ms.openlocfilehash: 17ad9b3a2e30a2daf25dd31344b4e674f3db3d25
+ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61391369"
+ms.lasthandoff: 01/17/2022
+ms.locfileid: "62059632"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -35,7 +36,7 @@ ms.locfileid: "61391369"
 
 После этих действий приложение должно отображаться в предварительных версиях Outlook и Office приложениях.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы завершить этот учебник, вам потребуется:
 

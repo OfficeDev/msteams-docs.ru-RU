@@ -6,23 +6,20 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: a52d36150ee384841cde73e9a00510cabc31f144
-ms.sourcegitcommit: 58fe8a87b988850ae6219c55062ac34cd8bdbf66
+ms.openlocfilehash: d65be003bd6fe245e8a6ca80ca8823a2e935ff43
+ms.sourcegitcommit: 25a33b31cc56c05169fc52c65d44c65c601aefef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949581"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62043226"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
-
->[!IMPORTANT]
-> Предварительные Graph и Microsoft Teams доступны для раннего доступа и отзывов. Хотя этот выпуск прошел широкое тестирование, он не предназначен для использования в производстве.
 
 ## <a name="proactive-messaging-in-teams"></a>Активный обмен сообщениями в Teams
 
 Активные сообщения инициировали боты, чтобы начать беседы с пользователем. Они служат многим целям, включая отправку приветствия, проведение опросов или опросов, а также уведомления для всей организации вещания. Активные сообщения в Teams могут быть доставлены в качестве бесед на основе **ad-hoc** или **диалогов:**
 
-|Тип сообщения | Описание |
+|Тип сообщения | Description |
 |----------------|-------------- |
 |Ad-hoc proactive message| Бот перенабивает сообщение, не прерывая поток беседы.|
 |Упреждающие сообщения на основе диалогов | Бот создает новый диалоговое нить, контролирует беседу, доставляет проактивное сообщение, закрывает и возвращает контроль в предыдущий диалог.|
@@ -31,11 +28,11 @@ ms.locfileid: "60949581"
 
 Прежде чем ваш бот сможет активно отправлять сообщения пользователю, он должен быть установлен как личное приложение или в команде, в которой пользователь является участником. Иногда необходимо заблаговременно отправлять сообщения пользователям, которые не установили или ранее не взаимодействовали с вашим приложением. Например, необходимо отправлять важные сведения всем в вашей организации. Для таких сценариев можно использовать API microsoft Graph для активной установки бота для пользователей.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 Разрешения типа ресурсов Microsoft Graph [TeamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) помогают управлять жизненным циклом установки приложения для всех областей пользовательского (личного) или командного (канала) в Microsoft Teams платформе:
 
-|Разрешение приложения | Описание|
+|Разрешение приложения | Description|
 |------------------|---------------------|
 |`TeamsAppInstallation.ReadWriteSelfForUser.All`|Позволяет приложению Teams чтение, установку, обновление и самоустановку для любого пользователя без предварительного входе или использования.|
 |`TeamsAppInstallation.ReadWriteSelfForTeam.All`|Позволяет приложению Teams читать, устанавливать, обновлять и удалить себя в любой команде без предварительного входе или использования.|
@@ -156,14 +153,14 @@ Content-Type: application/json
 
 Когда приложение установлено для пользователя, бот получает уведомление о событии, содержа которое содержит необходимые сведения для `conversationUpdate` [](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition) отправки проактивного сообщения.
 
-**Ссылка Graph microsoft:** [получить чат](/graph/api/chat-get?view=graph-rest-beta&tabs=http&preserve-view=true)
+**Ссылка Graph microsoft:** [получить чат](/graph/api/chat-get?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
 1. Вы должны иметь приложение `{teamsAppInstallationId}` . Если у вас его нет, используйте следующие:
 
     **ЗАПРОС HTTP GET:**
 
     ```http
-    GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
+    GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
     ```
 
     Свойство **id** ответа — `teamsAppInstallationId` .
@@ -173,7 +170,7 @@ Content-Type: application/json
     **HTTP GET** request (permission — `TeamsAppInstallation.ReadWriteSelfForUser.All` ):  
 
     ```http
-    GET https://graph.microsoft.com/beta/users/{user-id}/teamwork/installedApps/{teamsAppInstallationId}/chat
+    GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps/{teamsAppInstallationId}/chat
     ```
 
     Свойство **id** ответа — `chatId` .
@@ -183,7 +180,7 @@ Content-Type: application/json
     **HTTP GET** request (permission — `Chat.Read.All` ):
 
     ```http
-    GET https://graph.microsoft.com/beta/users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppId}')
+    GET https://graph.microsoft.com/v1.0/users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppId}')
     ```
 
 ### <a name="send-proactive-messages"></a>Отправка упреждающих сообщений

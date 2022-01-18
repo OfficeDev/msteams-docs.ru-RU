@@ -3,46 +3,49 @@ title: Автоматическая проверка подлинности
 description: Описывает бесшумную проверку подлинности, одно-вход, Azure Active Directory для вкладок
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: командная проверка подлинности SSO AAD вкладке
-ms.openlocfilehash: e5e8de1878aaec29c8ae1cd8dc1350a110d38b5e
-ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
+keywords: Командная проверка подлинности SSO безмолвная вкладка Azure AD
+ms.openlocfilehash: bf50f1840996371292b94ef6d3b2f16d5377a3f9
+ms.sourcegitcommit: 25a33b31cc56c05169fc52c65d44c65c601aefef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949049"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62043219"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
+> [!IMPORTANT]
+> Поддержка и разработка Майкрософт для библиотеки проверки подлинности Active Directory (ADAL), включая исправления безопасности, заканчивается **30 июня 2022 г.** Обновите приложения, чтобы использовать Библиотеку проверки подлинности Microsoft (MSAL), чтобы продолжить получать поддержку. См. [миграцию приложений в Библиотеку проверки подлинности Майкрософт (MSAL).](/azure/active-directory/develop/msal-migration)
+
 > [!NOTE]
-> Для проверки подлинности для работы вкладки на мобильных клиентах убедитесь, что вы используете по крайней мере 1.4.1 версию Teams JavaScript SDK.
+> Чтобы проверка подлинности работала для вкладки на мобильных клиентах, убедитесь, что вы используете Teams версии JavaScript SDK 1.4.1 или более поздней версии.
 
-Бесшумная проверка подлинности в Azure Active Directory (AAD) минимизирует количество случаев, когда пользователь вводит свой вход в учетные данные, молча освежая маркер проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO.](~/tabs/how-to/authentication/auth-aad-sso.md)
+Бесшумная проверка подлинности в Azure Active Directory минимизирует количество случаев, когда пользователь вводит свои учетные данные, молча освежая маркер проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO.](~/tabs/how-to/authentication/auth-aad-sso.md)
 
-Если вы хотите сохранить код полностью клиентским, [](/azure/active-directory/develop/active-directory-authentication-libraries) вы можете использовать библиотеку проверки подлинности AAD JavaScript для получения маркера AAD доступа. Если пользователь недавно подписался, он никогда не увидит диалоговое окно всплывающее окно.
+Чтобы сохранить клиентскую сторону кода, используйте библиотеку проверки подлинности [Azure AD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript, чтобы безмолвно получить маркер доступа к Azure AD. Если пользователь недавно подписался, он не видит диалоговое окно всплывающее окно.
 
-Несмотря на тоADAL.js что библиотека оптимизирована для приложений AngularJS, она также работает с чистыми одно-страницами JavaScript.
+Хотя библиотека проверки подлинности Active Directory оптимизирована для приложений AngularJS, она также работает с одно-страницными приложениями JavaScript (SPA).
 
 > [!NOTE]
 > В настоящее время бесшумная проверка подлинности работает только для вкладок. Он не работает при входе с бота.
 
 ## <a name="how-silent-authentication-works"></a>Как работает бесшумная проверка подлинности
 
-Библиотека ADAL.js создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому Azure AD никогда `prompt=none` не показывает знак на странице. Если требуется взаимодействие с пользователем, так как пользователю необходимо войти или предоставить доступ к приложению, AAD немедленно возвращает ошибку, ADAL.js отчеты в ваше приложение. На этом этапе приложение может при необходимости показывать вход в кнопку.
+Библиотека проверки подлинности Active Directory создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому Azure AD не отображает страницу `prompt=none` входного знака. Взаимодействие с пользователем может потребоваться, если пользователю необходимо войти или предоставить доступ к приложению. При необходимости взаимодействия с пользователем Azure AD возвращает ошибку, которую библиотека сообщает вашему приложению. При необходимости приложение теперь может отображать параметр входной знак.
 
 ## <a name="how-to-do-silent-authentication"></a>Как сделать бесшумную проверку подлинности
 
 Код в этой статье поступает из Teams, которое является Teams проверки [подлинности.](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs)
 
-[Инициировать](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) неопровержимую и простую настраиваемую вкладку проверки подлинности с помощью AAD и следуйте инструкциям по запуску образца на локальном компьютере.
+[Инициализуйте](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) настраиваемую вкладку бесшумной и простой проверки подлинности с помощью Azure AD и выполните инструкции по запуску образца на локальном компьютере.
 
-### <a name="include-and-configure-adal"></a>Включить и настроить ADAL
+### <a name="include-and-configure-active-directory-authentication-library"></a>Включить и настроить библиотеку проверки подлинности Active Directory
 
-Включите библиотеку ADAL.js на страницах вкладок и настройте ADAL с вашим клиентом ИД и URL-адресом перенаправления:
+Включите библиотеку проверки подлинности Active Directory на страницах вкладок и настройте библиотеку с помощью идентификации клиента и URL-адрес перенаправления:
 
 ```html
 <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.15/js/adal.min.js" integrity="sha384-lIk8T3uMxKqXQVVfFbiw0K/Nq+kt1P3NtGt/pNexiDby2rKU6xnDY8p16gIwKqgI" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    // ADAL.js configuration
+    // Active Directory Authentication Library configuration
     let config = {
         clientId: "YOUR_APP_ID_HERE",
         // redirectUri must be in the list of redirect URLs for the Azure AD app
@@ -55,10 +58,10 @@ ms.locfileid: "60949049"
 
 ### <a name="get-the-user-context"></a>Получить пользовательский контекст
 
-На странице контента вкладки позвоните, чтобы получить подсказку `microsoftTeams.getContext()` для текущего пользователя. Это используется как loginHint в вызове AAD.
+На странице контента вкладки позвоните, чтобы получить подсказку для `microsoftTeams.getContext()` текущего пользователя. Подсказка используется в качестве вызова в `loginHint` Azure AD.
 
 ```javascript
-// Set up extra query parameters for ADAL
+// Set up extra query parameters for Active Directory Authentication Library
 // - openid and profile scope adds profile information to the id_token
 // - login_hint provides the expected user name
 if (loginHint) {
@@ -70,13 +73,13 @@ if (loginHint) {
 
 ### <a name="authenticate"></a>Проверка подлинности
 
-Если ADAL кэшировали маркер для пользователя, срок действия которого не истек, используйте этот маркер. Кроме того, попытаться получить маркер молча, позвонив `acquireToken(resource, callback)` . ADAL.js вызывает функцию вызова с запрашиваемого маркера или дает ошибку в случае сбой проверки подлинности.
+Если в библиотеке проверки подлинности Active Directory имеется кэширование неиспользваемой маркерной символики для пользователя, используйте маркер. Поочередно вызов `acquireToken(resource, callback)` для получения маркера. Библиотека вызывает функцию вызова с запрашиваемого маркера или создает ошибку в случае сбой проверки подлинности.
 
-Если вы получаете ошибку в функции обратного вызова, покажите вход в кнопку и откажитесь от явного входного знака.
+Если вы получаете ошибку в функции вызова, отобразить и использовать явный параметр вход.
 
 ```javascript
-let authContext = new AuthenticationContext(config); // from the ADAL.js library
-// See if there's a cached user and it matches the expected user
+let authContext = new AuthenticationContext(config); // from Active Directory Authentication Library
+// See if there is a cached user and it matches the expected user
 let user = authContext.getCachedUser();
 if (user) {
     if (user.profile.oid !== userObjectId) {
@@ -85,10 +88,10 @@ if (user) {
     }
 }
 
-// In this example we are getting an id token (which ADAL.js returns if we ask for resource = clientId)
+// In this example we are getting an id token (which Active Directory Authentication Library returns if we ask for resource = clientId)
 authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenType) {
     if (token) {
-        // Make sure ADAL gave us an id token
+        // Make sure Active Directory Authentication Library gave us an ID token
         if (tokenType !== authContext.CONSTANTS.ID_TOKEN) {
             token = authContext.getCachedToken(config.clientId);
         }
@@ -105,7 +108,7 @@ authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenTy
 
 ### <a name="process-the-return-value"></a>Обработка возвращаемой стоимости
 
-ADAL.js размыкает результат AAD, позвонив `AuthenticationContext.handleWindowCallback(hash)` в знак на странице вызова.
+Библиотека проверки подлинности Active Directory сравниет результат Azure AD с помощью вызова на странице вызова для `AuthenticationContext.handleWindowCallback(hash)` входов.
 
 Убедитесь, что у вас есть допустимый пользователь и позвоните или сообщить о состоянии на главную страницу `microsoftTeams.authentication.notifySuccess()` `microsoftTeams.authentication.notifyFailure()` контента вкладки.
 
@@ -122,9 +125,9 @@ if (authContext.isCallback(window.location.hash)) {
 }
 ```
 
-### <a name="handle-sign-out-flow"></a>Обработка потока регистрации
+### <a name="handle-the-sign-out-flow"></a>Обработка потока регистрации
 
-Используйте следующий код для обработки потока AAD Auth:
+Используйте следующий код для обработки потока регистрации в проверке подлинности Azure AD:
 
 > [!NOTE]
 > При входе из Teams или бота текущий сеанс очищается.
@@ -135,6 +138,8 @@ localStorage.clear();
 window.location.href = "@Url.Action("<<Action Name>>", "<<Controller Name>>")";
 }
 ```
+
 ## <a name="see-also"></a>См. также
 
-[Настройка поставщиков удостоверений для использования AAD](~/concepts/authentication/configure-identity-provider.md)
+* [Настройка поставщиков удостоверений для использования Azure AD](../../../concepts/authentication/configure-identity-provider.md)
+* [Знать о Библиотеке проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-overview)

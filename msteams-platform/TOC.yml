@@ -325,7 +325,9 @@
           href: task-modules-and-cards/cards/cards-format.md
         - name: Действия карточек
           href: task-modules-and-cards/cards/cards-actions.md
-        - name: Поиск с автозавершением в адаптивной карточке
+        - name: Выбор людей в адаптивных карточках
+          href: task-modules-and-cards/cards/people-picker.md
+        - name: Поиск с автозавершением в адаптивных карточках
           href: task-modules-and-cards/cards/dynamic-search.md
         - name: Универсальные действия для адаптивных карточек
           items:
