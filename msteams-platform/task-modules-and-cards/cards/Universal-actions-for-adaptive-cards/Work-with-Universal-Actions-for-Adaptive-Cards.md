@@ -3,12 +3,12 @@ title: Работа с универсальными действиями для 
 description: Узнайте, как работать с универсальными действиями для адаптивных карт, в том числе схемой универсального доступа к адаптивным картам, моделью обновления и обратной совместимостью с помощью образцов кода.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 1ae881ff985d39865da480596ea2ece8bef2b075
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
+ms.openlocfilehash: 6a7160e1aa2dff6500335dc6b8557fcd94e836d8
+ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768610"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62080955"
 ---
 # <a name="work-with-universal-actions-for-adaptive-cards"></a>Работа с универсальными действиями для адаптивных карточек
 
@@ -115,7 +115,7 @@ ms.locfileid: "61768610"
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Бот организации питания Teams | Создайте бот, который принимает порядок питания с помощью адаптивных карт. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
+| Бот организации питания Teams | Создайте бот, который принимает порядок питания с помощью адаптивных карт. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
 | Адаптивные карточки последовательного рабочего процесса | Демонстрация того, как реализовать последовательное рабочий процесс, пользовательские представления и адаптивные карты в ботах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
@@ -124,3 +124,4 @@ ms.locfileid: "61768610"
 * [Как работают боты](/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&preserve-view=true)
 * [Последовательные рабочие процессы](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/sequential-workflows.md)
 * [Актуальные карточки](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/up-to-date-views.md)
+* [Отзывы о завершении формы](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)

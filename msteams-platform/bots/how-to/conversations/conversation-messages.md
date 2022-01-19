@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 10bc7de187b5303d70e0106737f656fef25da046
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: b54a0843074f6689a5c946ea265a02cda92bc682
+ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059781"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62081106"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -370,7 +370,25 @@ async def on_message_activity(self, turn_context: TurnContext):
 }
 ```
 
-Дополнительные информацию о картах и картах в ботах см. в [документации по картам.](~/task-modules-and-cards/what-are-cards.md)
+### <a name="form-completion-feedback"></a>Отзывы о завершении формы
+
+Сообщение о завершении формы отображается в адаптивных картах при отправке ответа боту. Сообщение может быть двух типов, ошибка или успех:
+
+* **Ошибка.** Если ответ, отправленный боту, неуспешен, что-то пошло не **так, снова появляется** сообщение.
+
+    ![Сообщение об ошибке](~/assets/images/Cards/error-message.png)
+
+* **Успех.** Если ответ, отправленный боту, будет успешным, ваш ответ **будет отправлен в сообщение** приложения.
+
+    ![Сообщение об успехе](~/assets/images/Cards/success.PNG)
+
+Вы можете выбрать **закрыть** или переключить чат, чтобы отклонять сообщение.    
+
+**Отклик на мобильный** телефон:
+
+Сообщение об ошибке отображается в нижней части адаптивной карты.
+
+Дополнительные сведения о картах и картах в ботах см. в [документации по картам.](~/task-modules-and-cards/what-are-cards.md)
 
 ## <a name="status-code-responses"></a>Ответы на код состояния
 
@@ -391,7 +409,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

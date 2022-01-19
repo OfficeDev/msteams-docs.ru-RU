@@ -12,18 +12,20 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: ea705be66fdf5521fc68cedeb89eeb6d97319c32
-  ms.sourcegitcommit: 98cde8ff08552da4ce36fb0463982366bed979e0
+  ms.openlocfilehash: de250e7f4e744b293abce91998fa7b65ab22c215
+  ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/18/2022
-  ms.locfileid: "62062494"
+  ms.lasthandoff: 01/19/2022
+  ms.locfileid: "62081046"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
   - linkListType: concept
     links:
-    - text: Выбор людей в адаптивных картах
+    - text: Адаптивные карты формируют отзывы о завершении
+      url: ~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback
+    - text: Выбор людей в адаптивных карточках
       url: ~/task-modules-and-cards/cards/people-picker.md
     - text: Teams набор средств для Visual Studio Code (Предварительный просмотр)
       url: ~/toolkit/teams-toolkit-fundamentals.md

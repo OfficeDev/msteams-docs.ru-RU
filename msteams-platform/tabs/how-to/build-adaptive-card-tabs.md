@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
 keywords: поток данных проверки подлинности персональных приложений адаптивной карты
-ms.openlocfilehash: 27cd42b7477019a09af0c23e8a3559d2cc540305
-ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
+ms.openlocfilehash: f2b6c78293a2bc6f25e3989f6eba4c4e2833aaee
+ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61216099"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62080969"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
@@ -33,7 +33,7 @@ ms.locfileid: "61216099"
 
 :::image type="content" source="../../assets/images/tabs/adaptive-cards-rendered-in-tabs.jpg" alt-text="Пример адаптивной карты, отрисовываемой на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 
@@ -427,7 +427,7 @@ ms.locfileid: "61216099"
 
 |**Название примера** | **Описание** |**.NET** | **Node.js** |
 |----------------|-----------------|--------------|--------------|
-| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
+| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 
@@ -436,8 +436,9 @@ ms.locfileid: "61216099"
 
 ## <a name="see-also"></a>См. также
 
-* [Адаптивная карта](../../task-modules-and-cards/what-are-cards.md#adaptive-cards)
+* [Адаптивная карточка](../../task-modules-and-cards/what-are-cards.md#adaptive-cards)
 * [Teams вкладки](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
+* [Отзывы о завершении формы](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)
