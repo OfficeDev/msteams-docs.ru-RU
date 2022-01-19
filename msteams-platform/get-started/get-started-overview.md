@@ -1,67 +1,67 @@
 ---
-title: Начало работы - Обзор
-description: Обзор для начала работы Microsoft Teams документации разработчика
-ms.localizationpriority: medium
+title: Начало работы — обзор
+description: Обзор начала работы с документацией разработчика Microsoft Teams
+ms.localizationpriority: high
 ms.topic: reference
-keywords: Microsoft Teams примерах разработчика
-ms.openlocfilehash: 9ab8014ad528aff9cfb0f4e271332981af3a8f29
-ms.sourcegitcommit: 8935f54330c5685ff091f01e2b18c70502428054
-ms.translationtype: MT
+keywords: Примеры для разработчиков Microsoft Teams
+ms.openlocfilehash: be53bc97ecc5df84ab4358927f4332764068d1c4
+ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61619804"
+ms.lasthandoff: 01/17/2022
+ms.locfileid: "62059646"
 ---
 # <a name="get-started"></a>Начало работы
 
-Добро пожаловать на начало создания и развертывания настраиваемых приложений для Microsoft Teams!
+Добро пожаловать в раздел "Начало работы" для создания и развертывания пользовательских приложений для Microsoft Teams!
 
-Пройдитесь по шагам по созданию базового приложения Teams в реальном мире. The Get started also introduces you to common tools, fundamental concepts, and more advanced features.
+Выполните шаги по созданию базового приложения Teams в реальных условиях. Раздел "Начало работы" также знакомит вас с общими инструментами, базовыми концепциями и расширенными возможностями.
 
-Вот представление о том, что вы узнаете:
+Вот о чем пойдет речь в этом разделе:
 
-- Встать и быстро работать с Microsoft Teams набор средств (Visual Studio Code расширения).
-- Получите опыт работы с набор средств и SDKs.
-- Настройка и создание различных типов Teams приложений.
+- быстрое налаживание работы с набором средств Microsoft Teams (расширение Visual Studio Code);
+- навыки использования набора средств и пакетов SDK;
+- настройка и сборка различных типов приложений Teams.
 
-Давайте кратко рассмотрим параметры среды сборки, которые можно выбрать, и дорожную карту по созданию и развертыванию Teams приложения.
+Давайте кратко рассмотрим параметры среды сборки, которые можно выбрать, и дорожную карту для создания и развертывания приложения Teams.
 
-:::image type="content" source="../assets/images/get-started/gs-build-options.png" alt-text="Иллюстрация, показывающая основные действия по созданию и развертыванию Teams приложения":::
+:::image type="content" source="../assets/images/get-started/gs-build-options.png" alt-text="Иллюстрация: основные шаги по созданию и развертыванию приложения Teams":::
 
 ## <a name="app-capabilities-and-development-tools"></a>Возможности и средства разработки приложений
 
-В зависимости от возможностей приложения выберите соответствующий набор средств разработки.
+В зависимости от возможностей, которые должно иметь приложение, выберите соответствующий набор средств разработки.
 
-| Возможности приложений | Взаимодействие пользователей | Рекомендуемые средства | Пакеты SDK | Стеки технологий / Языки |
+| Возможности приложений | Действия пользователя | Рекомендуемые средства | Пакеты SDK | Стеки технологий/Языки |
 |--------|-------------|--------|--------|--------|
-| Вкладки | Полноэкранный встроенный веб-опыт. | VS Code с Teams набор средств или [CLI TeamsFx,](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) если вы предпочитаете использовать CLI | [TeamsFx SDK для](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) основных либов и Teams [клиента SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для функций пользовательского интерфейса | Веб-технологии в целом, HTML, CSS и JavaScript (incl. React). |
-| Боты | Чат-бот, который беседует с участниками. | VS Code с Teams набор средств или [CLI TeamsFx](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [TeamsFx SDK](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
-| расширения для обмена сообщениями; | Ярлыки для вставки внешнего контента в беседу или принятия действий по сообщениям. | VS Code с Teams набор средств или [CLI TeamsFx](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [TeamsFx SDK](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [Bot Framework SDK](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
+| Вкладки | Полноэкранный встроенный веб-интерфейс. | Расширение VS Code с набором средств Teams или [TeamsFx CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md), если вы предпочитаете использовать CLI | [Пакет SDK TeamsFx](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) для основных библиотек и [пакет SDK клиента Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для функций пользовательского интерфейса | Веб-технологии в целом, HTML, CSS и JavaScript (включая React). |
+| Боты | Чат-бот, который беседует с участниками. | Расширение VS Code с набором средств Teams или [TeamsFx CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [Пакет SDK TeamsFx](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [пакет SDK Bot Framework](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
+| Расширения для система обмена сообщениями | Ярлыки для вставки внешнего контента в беседу или выполнения действий с сообщениями. | Расширение VS Code с набором средств Teams или [TeamsFx CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) | [Пакет SDK TeamsFx](/javascript/api/@microsoft/teamsfx/?view=msteams-client-js-latest&preserve-view=true) и [пакет SDK Bot Framework](https://dev.botframework.com/) | Node.js, C#, Java и Python. |
 
-*Вы не ограничены использованием этих определенных стеков!*
+*Вы не ограничены использованием этих конкретных стеков!*
 
-Если вы уже знакомы с рабочий процесс Yeoman, вы можете использовать [Генератор YoTeams Yeoman](https://github.com/pnp/generator-teams/blob/master/docs/docs/tutorials/build-your-first-microsoft-teams-app.md) для создания приложений.
+Если вы уже знакомы с рабочим процессом Yeoman, возможно, вы предпочтете использовать [генератор Yeoman YoTeams](https://github.com/pnp/generator-teams/blob/master/docs/docs/tutorials/build-your-first-microsoft-teams-app.md) для создания приложений.
 
 > [!NOTE]
-> Если вы используете App Studio, рекомендуем использовать портал разработчиков для настройки, распространения и управления Teams приложениями.
+> Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams.
 
 
-## <a name="build-your-first-teams-app"></a>Создайте первое Teams приложение
+## <a name="build-your-first-teams-app"></a>Создайте свое первое приложение Teams
 
-Теперь давайте создадим первое Teams приложение. Но сначала выберите язык (или рамки) и подготовьте среду разработки.
-
-> [!div class="nextstepaction"]
-> [Создайте приложение Teams javaScript с помощью React](../sbs-gs-javascript.yml)
+Теперь давайте создадим ваше первое приложение Teams. Но сначала выберите язык (или платформу) и подготовьте среду разработки.
 
 > [!div class="nextstepaction"]
-> [Создайте приложение Teams с помощью SPFx](../sbs-gs-spfx.yml)
+> [Создание приложения Teams с помощью JavaScript с использованием React](../sbs-gs-javascript.yml)
 
 > [!div class="nextstepaction"]
-> [Создание приложения Teams с C# или .NET](../sbs-gs-csharp.yml)
+> [Создание приложения Teams с помощью SPFx](../sbs-gs-spfx.yml)
 
 > [!div class="nextstepaction"]
-> [Создайте приложение Teams с помощью Node.js](../sbs-gs-nodejs.yml)
+> [Создание приложения Teams с помощью C# или .NET](../sbs-gs-csharp.yml)
+
+> [!div class="nextstepaction"]
+> [Создание приложения Teams с помощью Node.js](../sbs-gs-nodejs.yml)
 
 ## <a name="see-also"></a>См. также
 
-* [Microsoft Teams примеры](https://github.com/OfficeDev/Microsoft-Teams-Samples#microsoft-teams-samples)
+* [Примеры Microsoft Teams](https://github.com/OfficeDev/Microsoft-Teams-Samples#microsoft-teams-samples)
 * [Ресурсы Git и GitHub](/contribute/additional-resources)
