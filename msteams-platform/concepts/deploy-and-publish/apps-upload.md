@@ -1,73 +1,73 @@
 ---
-title: Upload настраиваемом приложении
-description: Узнайте, как перегрузить приложение в Microsoft Teams. При тестировании и отладке приложения во время разработки часто используется боковая загрузка.
+title: Загрузка пользовательского приложения
+description: Узнайте, как загрузить неопубликованное приложение в Microsoft Teams. Загрузка неопубликованного приложения часто используется при тестировании и отладке приложения во время разработки.
 ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
-ms.localizationpriority: none
-ms.openlocfilehash: e14e521941d253a3f259cf93f36bff4d620d55f2
-ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: fa67f6b1261619565cb62d5e1333367904089244
+ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949063"
+ms.lasthandoff: 01/17/2022
+ms.locfileid: "62059611"
 ---
-# <a name="upload-your-app-in-microsoft-teams"></a>Upload приложение в Microsoft Teams
+# <a name="upload-your-app-in-microsoft-teams"></a>Отправка приложения в Microsoft Teams
 
-Вы можете Microsoft Teams приложения без публикации в организации или Teams магазине. Это имеет смысл в следующих сценариях:
+Вы можете загрузить приложение в Microsoft Teams, не публикуя его в вашей организации или магазине Teams. Это имеет смысл в следующих сценариях.
 
-* Вы хотите протестировать и отчудить приложение локально самостоятельно или с другими разработчиками.
-* Вы создали приложение только для себя. Например, автоматизировать рабочий процесс.
+* Вы хотите протестировать и отладить приложение локально или с другими разработчиками.
+* Вы создали приложение только для себя. Например, для автоматизации рабочего процесса.
 * Вы создали приложение для небольшого набора пользователей, например рабочей группы.
 
 > [!IMPORTANT]
-> В настоящее время приложения для боковой загрузки доступны в облако сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
+> В настоящее время загрузка неопубликованного приложения доступна в облаке сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-* Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и проверьте его [на](https://dev.teams.microsoft.com/appvalidation.html) ошибки.
-* [Включить настраиваемую загрузку](~/concepts/build-and-test/prepare-your-o365-tenant.md#enable-custom-teams-apps-and-turn-on-custom-app-uploading) приложения в Teams.
-* Убедитесь, что ваше приложение работает и доступно с помощью HTTP.
+* Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и [проверьте](https://dev.teams.microsoft.com/appvalidation.html) наличие ошибок.
+* [Включите загрузку пользовательских приложений](~/concepts/build-and-test/prepare-your-o365-tenant.md#enable-custom-teams-apps-and-turn-on-custom-app-uploading) в Teams.
+* Убедитесь, что приложение работает и доступно через HTTPs.
 
 ## <a name="upload-your-app"></a>Отправка пакета приложения
 
-Вы можете перегрузить приложение в команду, чат, собрание или для личного использования в зависимости от настройки области приложения.
+Вы можете загрузить приложение в команду, чат, собрание или для личного использования в зависимости от того, как вы настроили область приложения.
 
-1. Войдите в Teams клиент с Microsoft 365 [учетной записью разработки.](~/build-your-first-app/build-and-run.md#prerequisites)
-1. Выберите **Приложения** и **выберите Upload настраиваемом приложении.**
-1. Выберите пакет приложений .zip файл. Отображает диалоговое окно установки.
-:::image type="content" source="~/assets/images/build-your-first-app/add-teams-app.png" alt-text="Снимок экрана, показывающий пример диалогового Teams установки приложения.":::
+1. Войдите в клиент Teams с помощью [учетной записи разработчика Microsoft 365](~/build-your-first-app/build-and-run.md#prerequisites).
+1. Выберите **Приложения**, а затем **Загрузить пользовательское приложение**.
+1. Выберите ZIP-файл пакета приложения. Отобразится диалоговое окно установки.
+:::image type="content" source="~/assets/images/build-your-first-app/add-teams-app.png" alt-text="Снимок экрана с примером диалогового окна установки приложения Teams.":::
 1. Добавьте приложение в Teams.
 
 ## <a name="troubleshoot-upload-issues"></a>Устранение неполадок при отправке
 
-Если приложение не перегрузит, сделайте следующее, пока проблема не решится:
+Если приложение не загружается, сделайте следующее, пока проблема не устранится.
 
-1. Возвращайся к инструкциям по созданию [пакета приложений.](../../concepts/build-and-test/apps-package.md)
-1. [Проверка пакета приложений снова.](https://dev.teams.microsoft.com/appvalidation.html)
-1. Убедитесь, что манифест приложения соответствует последней [схеме.](../../resources/schema/manifest-schema.md)
+1. Вернитесь к инструкциям по [созданию пакета приложения](../../concepts/build-and-test/apps-package.md).
+1. Еще раз [проверьте пакет приложения](https://dev.teams.microsoft.com/appvalidation.html).
+1. Убедитесь, что манифест приложения соответствует последней версии [схемы](../../resources/schema/manifest-schema.md).
 
-## <a name="access-your-app"></a>Доступ к приложению
+## <a name="access-your-app"></a>Откройте приложение
 
-Teams предоставляет несколько способов открытия приложений. Дополнительные сведения см. [в Teams.](https://support.microsoft.com/office/access-your-apps-in-teams-0758cb09-9e85-40e7-a974-51df7734646a)
+В Teams есть несколько способов открытия приложений. Дополнительные сведения см. в статье [об открытии приложений в Teams](https://support.microsoft.com/office/access-your-apps-in-teams-0758cb09-9e85-40e7-a974-51df7734646a).
 
-## <a name="update-your-app"></a>Обновление приложения
+## <a name="update-your-app"></a>Обновите приложение
 
-При внесении изменений кода (они отражаются в Teams в режиме реального времени) не нужно снова перегружать приложение. Однако при изменении конфигураций приложений необходимо переустановить.
+При внесении изменений в код повторно загружать приложение не нужно (изменения отражаются в Teams в режиме реального времени). Однако при изменении конфигурации приложения необходимо переустановить приложение.
 
 ## <a name="remove-your-app"></a>Удаление приложения
 
-Чтобы удалить приложение, нажмите правой кнопкой мыши значок приложения в Teams и выберите **Uninstall**.
+Чтобы удалить приложение, щелкните правой кнопкой мыши значок приложения в Teams и выберите **Удалить**.
 
 > [!NOTE]
-> Полностью удалить личную активность бота нельзя. Если удалить приложение и добавить его еще раз, новое общение с ботом добавляется к предыдущему разговору с ним.
+> Вы не можете полностью удалить личные действия бота. Если вы удалите приложение и добавите его снова, новое взаимодействие с ботом будет добавлено к предыдущей беседе с ним.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Используйте приложение Teams](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-us&rs=en-us&ad=us)
+> [Использование приложения Teams](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-us&rs=en-us&ad=us)
 
 ## <a name="see-also"></a>См. также
 
 * [Настройка параметров установки по умолчанию](~/concepts/deploy-and-publish/add-default-install-scope.md)
-* [Ведение опубликованного Microsoft Teams приложения](~/concepts/deploy-and-publish/appsource/post-publish/overview.md)
+* [Поддержка опубликованного приложения Microsoft Teams](~/concepts/deploy-and-publish/appsource/post-publish/overview.md)

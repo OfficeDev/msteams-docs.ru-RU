@@ -1,34 +1,50 @@
 ---
 title: Новые возможности
-description: Описывает все новые или последние функции разработчика в Microsoft Teams
+description: Описание всех новых или последних функций разработчика в Microsoft Teams
 ms.topic: reference
-ms.localizationpriority: medium
-keywords: команды новых обновлений и функций
-ms.openlocfilehash: c540be24b4fc1e9965a5e3896ca36f6c4d9abb37
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
-ms.translationtype: MT
+ms.localizationpriority: high
+keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
+ms.openlocfilehash: 531f520c479ec48ed734021550609a237705d37e
+ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768456"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62080962"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
-Откройте Microsoft Teams платформы, которые обычно доступны (GA) и в предварительном просмотре разработчика.
+Представляем функции платформы Microsoft Teams в общедоступной версии и в предварительной версии для разработчиков.
 
 > [!IMPORTANT]
-> Теперь вы можете получать последние Teams платформы, подписавшись на канал загрузки [ ![ RSS-каналов.](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates) Дополнительные сведения см. [в веб-канале настройки RSS.](#get-latest-updates)
+> Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
-## <a name="latest-updates-bullhorn-icon"></a>Последние обновления ![значок bullhorn](~/assets/images/bullhorn.png)
+## <a name="latest-updates-bullhorn-icon"></a>Последние обновления ![значок "мегафон"](~/assets/images/bullhorn.png)
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
-|01/10/2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDKs > Teams набор средств для Visual Studio Code > [Teams набор средств основы](toolkit/teams-toolkit-fundamentals.md) |
-|
+|19.01.2022| Отзыв о завершении формы в адаптивных карточках | Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Отзыв о завершении формы](bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
+|17.01.2022| Средство "Выбор людей" в адаптивных карточках (в предварительной версии разработчика для мобильных устройств и в общедоступной версии для классических устройств) | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
+|10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
 
-## <a name="ga-features"></a>Функции GA
+## <a name="ga-features"></a>Функции общедоступной версии
 
-Microsoft Teams платформы, доступные всем разработчикам приложений.
+Функции платформы Microsoft Teams, доступные всем разработчикам приложений.
 
+<br>
+
+<details>
+
+<summary><b>2022</b></summary>
+
+| **Date** | **Обновление** | **Найти здесь** |
+| -------- | --------- | ----------------|
+|19.01.2022| Отзыв о завершении формы в адаптивных карточках | Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Отзыв о завершении формы](bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
+|17.01.2022| Выбор людей в адаптивных карточках для классической версии | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
+
+<br>
+
+</details>
+  
 <br>
 
 <details>
@@ -37,59 +53,59 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
-|12/24/2021| Введено пошаговая руководство по предоставлению разрешений устройств Tab. | Основные принципы > устройств > пошаговом руководстве по предоставлению [разрешений устройств Tab](sbs-tab-device-permissions.yml) |
-|12/23/2021| Введено пошаговая руководство по созданию вкладок с адаптивными картами.| Добавление руководства > проверки подлинности > для создания вкладок с адаптивными картами > SSO > пошаговое руководство по созданию [вкладок](sbs-tab-with-adaptive-cards.yml) |
-|12/21/2021 | Обновлены модули JavaScript, C# и Node.js для Teams набор средств 3.0.0. | • Начало работы > [создать свое первое приложение с Помощью JavaScript](sbs-gs-javascript.yml) <br> • Начало работы > создание первого приложения с [помощью C# или .NET](sbs-gs-csharp.yml) <br> • Начало работы> [создание первого приложения с помощью Node.js](sbs-gs-nodejs.yml) |
-|12/20/2021| Введено пошаговая руководство для вкладок и расширений обмена сообщениями с одним входом (SSO). | Добавление руководства по проверке подлинности > вкладок > использование руководства по проверке подлинности SSO > пошагово с [помощью SSO](sbs-tabs-and-messaging-extensions-with-SSO.yml) для вкладок и расширений обмена сообщениями|
-|12/20/2021| Введено пошаговая руководство по созданию пузыря контента собраний. | Создание приложений для Teams собраний > включить и настроить приложения для собраний > пошаговом руководстве по созданию пузыря [контента собраний](sbs-meeting-content-bubble.yml) |
-|12/09/2021| Введено пошаговая руководство по представлению стадии собрания. | Создание приложений для Teams собраний > включить и настроить приложения для собраний > пошаговом руководстве по созданию представления [стадии собраний](sbs-meetings-stage-view.yml)|
-|12/13/2021 | Введено руководство для приложения, связанного с предложением SaaS. | Раздайте > app Publish в Teams магазина > проверки > руководства по приложениям, связанным с [предложением SaaS](concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#apps-linked-to-saas-offer)|
-|12/09/2021| Введено пошаговая руководство по созданию боковогопанеля собраний. | Создание приложений для Teams собраний > включить и настроить приложения для собраний [](sbs-meetings-sidepanel.yml) > пошаговом руководстве по созданию бокового Teams|
-|12/01/2021 | Представлен новый значок магазина. | • Разработка возможностей > приложения > [разработки](concepts/design/personal-apps.md) личного приложения для Microsoft Teams</br> • Разработка компонентов > пользовательского интерфейса > разработки Microsoft Teams приложения с расширенными [компонентами пользовательского интерфейса](concepts/design/design-teams-app-advanced-ui-components.md) |
-|11/24/2021| Введено пошаговая руководство по генерации маркера собраний. | Создание приложений для Teams собраний > включить и настроить приложения для собраний > пошаговом руководстве по созданию маркера [собраний в Teams](sbs-meeting-token-generator.yml)|
-|11/17/2021| Обновленные Microsoft Teams проверки хранения|[Рекомендации по проверке хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)|
-|11/17/2021| Статичный и динамический тип поиска для настольных и мобильных пользователей.| • Сборка карт и модулей задач > создание карт > введите поиск в [адаптивных картах](task-modules-and-cards/cards/dynamic-search.md) </br> • Сборка карт и модулей задач > создание карт > Обзор >  [type-ahead поиска в адаптивных картах](task-modules-and-cards/what-are-cards.md#type-ahead-search-in-adaptive-cards) </br> • Создание карт и модулей задач > обзор > [и модулей задач](task-modules-and-cards/cards-and-task-modules.md)|
-|11/13/2021| Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC). | • Создание ботов > бесед ботов > сообщения в беседах ботов > получать все сообщения канала [с RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > бесед ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > беседы с > [каналов и групповых бесед](~/bots/how-to/conversations/channel-and-group-conversations.md) |
-|10/28/2021| Монетизация Teams приложения с помощью трансактируемых SaaS-предложений.| Распространение приложения > публикации в Teams магазине > Включите предложение [SaaS](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) с Teams приложением |
-|10/25/2021| Обновленный модуль Get started для Microsoft Teams документации разработчика с новой структурой и процедурами в пошаговом руководстве.| Начало работы > [с первого](get-started/get-started-overview.md) Teams приложения |
-|10/21/2021| Добавьте `registerOnFocused` API для вкладок или личных приложений. | Создание вкладок > создание личных вкладок > API для вкладок [ `registerOnFocused` или личных приложений](tabs/how-to/create-personal-tab.md#add-registeronfocused-api-for-tabs-or-personal-apps) |
-|10/20/2021| Этап собрания теперь доступен в ga. | Создание приложений для Teams собраний > включить и настроить приложения [для Teams собраний](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md) |
-|10/20/2021| API сведений о собраниях и событиях Teams в режиме реального времени. | Создание приложений для Teams собраний > [создание приложений для Teams собраний](~/apps-in-teams-meetings/API-references.md#meeting-details-api) |
-|10/18/2021| Вкладки связывают разгрузку и представление сцены. | Создание вкладок > [ссылок на разгрузку](tabs/tabs-link-unfurling.md) и представление сцены |
-|10/08/2021| Новые методы разработки адаптивных карт. | Разработка компонентов > пользовательского интерфейса > [разработки](task-modules-and-cards/cards/design-effective-cards.md) адаптивных карт для Teams приложения |
-|10/05/2021| Скрыть Teams приложение до тех пор, пока администратор не разрешит открыть приложение.| Разработка приложения > [скрыть Teams до утверждения администратором](concepts/design/enable-app-customization.md#hide-teams-app-until-admin-approves) |
-|10/05/2021| Планирование приложений для Teams мобильных устройств. | Основы приложения > [вкладки для Teams мобильных устройств](concepts/design/plan-responsive-tabs-for-teams-mobile.md) |
-|10/04/2021| Новый портал разработчиков для Teams для управления вашими Teams приложениями.| Средства и SDK > [портала разработчиков для Teams](concepts/build-and-test/teams-developer-portal.md) |
-|09/21/2021|Teams поддерживает AAD объекта и upN в упоминаниях пользователей для ботов и входящих веб-ок.| • Создание карт и модулей задач > создание карт > AAD объекта и UPN в [упоминаемом пользователем](task-modules-and-cards/what-are-cards.md#support-for-aad-object-id-and-upn-in-user-mention) </br> • Сборка карт и модулей задач > сборка [>-Обзор](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown) |
-|08/16/2021| Поддержка проверки входных данных для адаптивных карт (v1.3 для всех возможностей) и универсальных действий (v1.4 для карт, отправленных ботом). | • Адаптивные > карточки > [проверки ввода](/adaptive-cards/authoring-cards/input-validation)</br> • Создание карт и модулей задач > создание карт > Универсальные действия для адаптивных карт > Универсальные действия для адаптивных карт [v1.4](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
-|08/30/2021| Функция Custom Together Mode совмещает участников в одну виртуальную сцену и помещает их видеопотоки в заранее.| Создание приложений для Teams собраний > [настраиваемой совместной сцены режима](~/apps-in-teams-meetings/teams-together-mode.md) |
-|08/25/2021| Введено пошаговая руководство по созданию Teams бота с одним входом (SSO).| Добавление руководства > ботов > пошагово для создания Teams [бота с SSO](sbs-bots-with-sso.yml) |
-|08/19/2021| Событие обновления установки, полученное при установке бота в поток беседы.| Создание ботов > бесед ботов > [событием обновления установки](bots/how-to/conversations/subscribe-to-conversation-events.md#installation-update-event) |
-|08/12/2021|Создание вкладок с помощью адаптивных карт.| Создание вкладок > [создание вкладок с помощью адаптивных карт](tabs/how-to/build-adaptive-card-tabs.md) |
-|08/04/2021|У вкладок больше не будет поля, связанные с их опытом.| Создание вкладок > [удаление полей вкладок](resources/removing-tab-margins.md) |
-|07/08/2021|Teams добавляет поддержку приложений на собраниях. | Создание приложений для Teams собраний > [собраний](apps-in-teams-meetings/meeting-app-extensibility.md) |
-|06/28/2021|Интеграция возможностей выборщика людей. | Интеграция с Teams > [интеграцией возможностей выборщика людей](concepts/device-capabilities/people-picker-capability.md) |  
-|06/25/2021| Введено пошаговое руководство по отправке активных сообщений. | Создание ботов > ботов > активных сообщений > пошаговом руководстве по отправке проактивных [сообщений](sbs-send-proactive.yml) |
-|06/09/2021| Представление сцены для изображений в адаптивных картах с `allowExpand` атрибутом.| Сборка карт и модулей задач > сборка > [представления stage для изображений в адаптивных картах](task-modules-and-cards/cards/cards-format.md#stage-view-for-images-in-adaptive-cards) |
-|05/31/2021| Вкладки для беседы. | Создание вкладок > и продолжение бесед о [содержимом в вкладке](~/tabs/how-to/conversational-tabs.md) |
-|05/24/2021| Обновленные Teams приложения с мобильными шаблонами. | Разработка приложения > [разработку Teams приложения](~/concepts/design/design-teams-app-overview.md) |
-|05/13/2021| Добавлены сведения о mConnect и Skooler.| Интеграция с Teams > Moodle LMS > системы управления [обучением Moodle](resources/moodle-overview.md)|
-|05/10/2021| Выпущен манифест приложения v1.10. | Схема манифеста > [манифеста](resources/schema/manifest-schema.md) |
-|05/10/2021| Новая функция настройки приложения. | Разработка приложения > [включить оргии для настройки приложения](concepts/design/enable-app-customization.md) |
-|05/07/2021| Глубокие ссылки для аудио- и видеозвонков в чате. | Интеграция с Teams > [глубокими ссылками](concepts/build-and-test/deep-links.md#deep-linking-to-an-audio-or-audio-video-call) |
-|04/30/2021|Новые рекомендации по публикации приложений в Teams магазине. | • Публикация в Teams магазине > опубликовать приложение [в Teams магазине](concepts/deploy-and-publish/appsource/publish.md)</br> • Публикация в Teams магазине > [Teams проверки хранения](concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) |
-|04/29/2021 | Поддержка универсальных действий для адаптивных карт v1.4. | Сборка карт и модулей задач > создание карт > универсальных действий для адаптивных карт > универсальных действий [для адаптивных карт](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
-|04/29/2021 | Пользовательские представления. | Сборка карт и модулей задач > создание > универсальных действий для адаптивных карт > [пользовательских представлений](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/User-Specific-Views.md) |
-|04/29/2021 | Последовательное рабочий процесс. | Сборка карт и модулей задач > создание карт > универсальных действий для адаптивных карт > [последовательного рабочего процесса](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/Sequential-Workflows.md) |
-|04/29/2021 | На сегодняшний день карты. | Сборка карт и модулей задач > сборка > универсальных действий для адаптивных карт > [До сегодняшних карт](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/Up-To-Date-Views.md) |
-|04/08/2021| Функция настройки приложения.| • Разработка обзоров приложений > [команд разработки](concepts/design/enable-app-customization.md)</br> • Средства и SDKs > [портал разработчика](concepts/build-and-test/teams-developer-portal.md) </br> • Схема манифеста > разработчика > [манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|03/18/2021| Примечание. Обновление до версии 4.10 или выше SDK Bot Framework, как мы начали с процесса амортизации для `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync` . | Создание ботов > [изменений API ботов для членов команды и чата](resources/team-chat-member-api-changes.md) |
-|03/05/2021|По умолчанию устанавливается область и возможности группы.| Распространение области > по умолчанию и [возможности групповой установки](concepts/deploy-and-publish/add-default-install-scope.md) |
-|03/05/2021|Reorder personal app tabs. | Создание вкладок > [перенастройку вкладки чата в личных приложениях](tabs/how-to/create-personal-tab.md#reorder-static-personal-tabs) |
-|03/04/2021|Маскировка сведений в адаптивных картах.| Сборка карт и модулей задач > создание карт > маскировки информации [в адаптивных картах](task-modules-and-cards/cards/cards-format.md#information-masking-in-adaptive-cards) |
-|02/19/2021|Добавлены возможности расположения. <br/> Сведения о возможностях расположения добавляются в обзор возможностей устройства, разрешения родных устройств, интеграцию возможностей мультимедиа, а также файлы возможностей сканера QR или штрихкода.| • Основы приложения > возможности устройства > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложения > возможности устройства > [разрешения на запрос устройств](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложения > возможности устройства > [возможности интеграции мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md) </br> • Основы приложения > возможности устройства > [интеграции QR или сканера штрихкодов](concepts/device-capabilities/qr-barcode-scanner-capability.md) </br> • Основы приложения > возможности устройства > [интеграции возможностей расположения](concepts/device-capabilities/location-capability.md) |
-|02/18/2021|Добавлена возможность сканера QR или штрихкода. <br/> Сведения о возможностях сканера QR или штрихкодов добавляются в обзор возможностей устройства, разрешения на личные устройства и интеграцию файлов возможностей мультимедиа.| • Основы приложения > возможности устройства > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложения > возможности устройства > [разрешения на запрос устройств](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложения > возможности устройства > [возможности интеграции мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md) </br> • Основы приложения > возможности устройства > [интеграции QR или сканера штрихкодов](concepts/device-capabilities/qr-barcode-scanner-capability.md) |
-|02/09/2021|Добавлен обзор возможностей устройства. <br/> Сведения о возможностях микрофона добавляются в разрешения на родном устройстве и интегрируют файлы возможностей мультимедиа.|• Основы приложения > возможности устройства > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> Основы приложения > • Возможности устройства > [разрешения на запрос устройств](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложения > возможности устройства > [возможности интеграции мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md)|
+|24.12.2021| Представлены пошаговые инструкции по предоставлению разрешений для устройств вкладок | Основы приложений > Возможности устройств > [Пошаговые инструкции по предоставлению разрешений для устройств вкладок](sbs-tab-device-permissions.yml) |
+|23.12.2021| Представлены пошаговые инструкции по созданию вкладок с адаптивными карточками.| Добавление проверки подлинности > Вкладки > Использование проверки подлинности с единым входом > [Пошаговые инструкции по созданию вкладок с адаптивными карточками](sbs-tab-with-adaptive-cards.yml) |
+|21.12.2021 | Обновлены модули начала работы JavaScript, C# и Node.js для набора средств Teams 3.0.0. | • Начало работы > [Создание первого приложения с помощью JavaScript](sbs-gs-javascript.yml) <br> • Начало работы > [Создание первого приложения с помощью C# или .NET](sbs-gs-csharp.yml) <br> • Начало работы > [Создание первого приложения с помощью Node.js](sbs-gs-nodejs.yml) |
+|20.12.2021| Представлены пошаговые инструкции по вкладкам и расширениям для сообщений с единым входом. | Добавление проверки подлинности > Вкладки > Использование проверки подлинности с единым входом > [Пошаговые инструкции по единому входу для вкладок и расширений для сообщений](sbs-tabs-and-messaging-extensions-with-SSO.yml)|
+|20.12.2021| Представлены пошаговые инструкции по созданию пузырьков с содержимым для собрания | Разработка приложений для собраний Teams > Включение и настройка приложений для собраний > [Пошаговые инструкции по созданию пузырьков с содержимым для собрания](sbs-meeting-content-bubble.yml) |
+|09.12.2021| Представлены пошаговые инструкции по представлению сцены собрания. | Разработка приложений для собраний Teams > Включение и настройка приложений для собраний > [Пошаговые инструкции по созданию представления сцены собрания](sbs-meetings-stage-view.yml)|
+|13.12.2021 | Представлены рекомендации по приложениям, связанным с предложением SaaS | Распространение приложения > Публикация в магазине Teams > Обзор рекомендаций по проверке в магазине > [Рекомендации для приложений, связанных с предложением SaaS](concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#apps-linked-to-saas-offer)|
+|09.12.2021| Представлены пошаговые инструкции по созданию боковой панели собрания | Разработка приложений для собраний Teams > Включение и настройка приложений для собраний > [Пошаговые инструкции по созданию боковой панели собрания в Teams](sbs-meetings-sidepanel.yml)|
+|01.12.2021 | Представлен новый значок магазина | • Разработка приложения > Возможности приложений > [Разработка личного приложения для Microsoft Teams](concepts/design/personal-apps.md)</br> • Разработка приложения > Компоненты пользовательского интерфейса > [Разработка приложения Microsoft Teams с помощью дополнительных компонентов пользовательского интерфейса](concepts/design/design-teams-app-advanced-ui-components.md) |
+|24.11.2021| Представлены пошаговые инструкции по созданию маркера собрания | Разработка приложений для собраний Teams > Включение и настройка приложений для собраний > [Пошаговые инструкции по созданию маркера собрания в Teams](sbs-meeting-token-generator.yml)|
+|17.11.2021| Обновлены правила проверки в магазине Microsoft Teams|[Рекомендации по проверке в магазине](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)|
+|17.11.2021| Статический и динамический поиск с автозавершением для классических и мобильных пользователей | • Создание карточек и модулей задач > Создание карточек > [Поиск с автозавершением в адаптивных карточках](task-modules-and-cards/cards/dynamic-search.md) </br> • Создание карточек и модулей задач > Создание карточек > Обзор > [Поиск с автозавершением в адаптивных карточках](task-modules-and-cards/what-are-cards.md#type-ahead-search-in-adaptive-cards) </br> • Создание карточек и модулей задач > Обзор > [Карточки и модули задач](task-modules-and-cards/cards-and-task-modules.md)|
+|13.11.2021| В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Получение всех сообщений канала с помощью RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > Беседы ботов > [Обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [Чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) |
+|28.10.2021| Монетизация приложения Teams с помощью коммерческого предложения SaaS | Распространение приложения > Публикация в магазине Teams > [Предложение SaaS вместе с приложением Teams](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) |
+|25.10.2021| В модуле "Начало работы" для документации разработчика Microsoft Teams обновлена структура и процедуры пошаговых инструкций | Начало работы > [Первые шаги в создании приложения Teams](get-started/get-started-overview.md) |
+|21.10.2021| Добавление API `registerOnFocused` для вкладок или личных приложений | Создание вкладок > Создание личных вкладок > [Добавление API `registerOnFocused` для вкладок или личных приложений](tabs/how-to/create-personal-tab.md#add-registeronfocused-api-for-tabs-or-personal-apps) |
+|20.10.2021| Сцена собрания теперь поддерживается в общедоступной версии. | Разработка приложений для собраний Teams > [Включение и настройка приложений для собраний Teams](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md) |
+|20.10.2021| API сведений о собраниях и событиях Teams в реальном времени | Разработка приложений для собраний Teams > [Создание приложений для собраний Teams](~/apps-in-teams-meetings/API-references.md#meeting-details-api) |
+|18.10.2021| Развертывание ссылок на вкладки и представление "Экран". | Создание вкладок > [Развертывание ссылок на вкладки и представление "Экран"](tabs/tabs-link-unfurling.md) |
+|08.10.2021| Новые советы и рекомендации по разработке адаптивных карточек | Разработка приложения > Компоненты пользовательского интерфейса > [Разработка адаптивных карточек для приложения Teams](task-modules-and-cards/cards/design-effective-cards.md) |
+|05.10.2021| Скрытие приложений Teams до тех пор, пока администратор не разрешит отобразить приложение.| Разработка приложения > [Скрытие приложения Teams до утверждения администратором](concepts/design/enable-app-customization.md#hide-teams-app-until-admin-approves) |
+|05.10.2021| Планирование приложений для мобильной версии Teams. | Основы приложений > [Планирование адаптивных вкладок для мобильной версии Teams](concepts/design/plan-responsive-tabs-for-teams-mobile.md) |
+|04.10.2021| Представлен новый портал разработчика для Teams, предназначенный для управления приложениями Teams | Инструменты и SDK > [Портал разработчика Teams](concepts/build-and-test/teams-developer-portal.md) |
+|21.09.2021|Teams поддерживает идентификатор объекта AAD и имя субъекта-пользователя в упоминаниях пользователей для ботов и входящих веб-перехватчиков | • Создание карточек и модулей задач > Создание карточек > [Идентификатор объекта AAD и имя субъекта-пользователя в упоминаниях пользователей](task-modules-and-cards/what-are-cards.md#support-for-aad-object-id-and-upn-in-user-mention) </br> • Создание карточек и модулей задач > Создание карточек > [Карточки — обзор](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown) |
+|16.08.2021| Поддержка проверки входных данных для адаптивных карточек (версия 1.3 для всех возможностей) и универсальных действий (версия 1.4 для карточек, отправленных ботом) | • Адаптивные карточки > Разработка карточек > [Проверка входных данных](/adaptive-cards/authoring-cards/input-validation)</br> Создание карточек и модулей задач > Создание карточек > Универсальные действия для адаптивных карточек > [Универсальные действия для адаптивных карточек версии 1.4](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
+|30.08.2021| Функция настраиваемых сцен режима "Вместе" собирает участников на одну виртуальную сцену и размещает их видеопотоки на заранее определенных местах | Разработка приложений для собраний Teams > [Настраиваемые сцены режима "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md) |
+|25.08.2021| Представлены пошаговые инструкции по созданию бота Teams с единым входом.| Добавление проверки подлинности > Боты > [Пошаговые инструкции по созданию бота Teams с единым входом](sbs-bots-with-sso.yml) |
+|19.08.2021| Событие обновления установки, полученное при установке бота в поток беседы.| Создание ботов > Беседы ботов > [Событие обновления установки](bots/how-to/conversations/subscribe-to-conversation-events.md#installation-update-event) |
+|12.08.2021|Создание вкладок с использованием адаптивных карточек| Создание вкладок > [Создание вкладок с адаптивными карточками](tabs/how-to/build-adaptive-card-tabs.md) |
+|04.08.2021|У вкладок больше не будет полей, окружающих содержимое | Создание вкладок > [Удаление полей вкладок](resources/removing-tab-margins.md) |
+|08.07.2021|В мобильную версию Teams добавлена поддержка приложений на собраниях | Разработка приложений для собраний Teams > [Расширяемость приложений для собраний](apps-in-teams-meetings/meeting-app-extensibility.md) |
+|28.06.2021|Интеграция функции "Выбор людей". | Интеграция с Teams > [Интеграция функции "Выбор людей"](concepts/device-capabilities/people-picker-capability.md) |  
+|25.06.2021| Представлены пошаговые инструкции по отправке упреждающих сообщений | Создание ботов > Беседы ботов > Упреждающие сообщения > [Пошаговые инструкции по отправке упреждающих сообщений](sbs-send-proactive.yml) |
+|09.06.2021| Представление "Экран" для изображений на адаптивных карточках с атрибутом `allowExpand`.| Создание карточек и модулей задач > Создание карточек > [Представление "Экран" на адаптивных карточках](task-modules-and-cards/cards/cards-format.md#stage-view-for-images-in-adaptive-cards) |
+|31.05.2021| Вкладки бесед. | Создание вкладок > [Начало и продолжение бесед о содержимом на вкладках](~/tabs/how-to/conversational-tabs.md) |
+|24.05.2021| В рекомендации по разработке приложений Teams включены мобильные шаблоны | Разработка приложения > [Разработка приложения Teams](~/concepts/design/design-teams-app-overview.md) |
+|13.05.2021| Добавлены сведения о mConnect и Skooler.| Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|
+|10.05.2021| Выпущен манифест приложения версии 1.10. | Манифест приложения > [Схема манифеста](resources/schema/manifest-schema.md) |
+|10.05.2021| Новая функция настройки приложения. | Разработка приложения > [Включение организаций для индивидуальной настройки приложения](concepts/design/enable-app-customization.md) |
+|07.05.2021| Прямые ссылки для аудио- и видеозвонков в чате. | Интеграция с Teams > [Прямые ссылки](concepts/build-and-test/deep-links.md#deep-linking-to-an-audio-or-audio-video-call) |
+|30.04.2021|Новые рекомендации по публикации приложений в магазине Teams. | • Публикация в магазине Teams > [Публикация приложения в магазине Teams](concepts/deploy-and-publish/appsource/publish.md)</br> • Публикация в магазине Teams > [Правила проверки в магазине Teams](concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) |
+|29.04.2021 | Поддержка универсальных действий для адаптивных карточек версии 1.4. | Создание карточек и модулей задач > Создание карточек > Универсальные действия для адаптивных карточек > [Универсальные действия для адаптивных карточек](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
+|29.04.2021 | Пользовательские представления. | Создание карточек и модулей задач > Создание карточек > Универсальные действия для адаптивных карточек > [Пользовательские представления](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/User-Specific-Views.md) |
+|29.04.2021 | Последовательные рабочие процессы. | Создание карточек и модулей задач > Создание карточек > Универсальные действия для адаптивных карточек > [Последовательные рабочие процессы](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/Sequential-Workflows.md) |
+|29.04.2021 | Актуальные карточки. | Создание карточек и модулей задач > Создание карточек > Универсальные действий для адаптивных карточек > [Актуальные карточки](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/Up-To-Date-Views.md) |
+|08.04.2021| Функция настройки приложений.| • Разработка приложений > [Обзор разработки приложения Teams](concepts/design/enable-app-customization.md)</br> • Инструменты и SDK > [Портал разработчика](concepts/build-and-test/teams-developer-portal.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+|18.03.2021| Примечание. Установите SDK Bot Framework версии 4.10 или более поздней, так как мы начали прекращение поддержки для `TeamsInfo.getMembers` и `TeamsInfo.GetMembersAsync`. | Создание ботов > [Изменения API-интерфейса бота для участников группы или чата](resources/team-chat-member-api-changes.md) |
+|05.03.2021|Область установки и возможности группы по умолчанию.| Распространение приложения > [Область установки и возможности группы по умолчанию](concepts/deploy-and-publish/add-default-install-scope.md) |
+|05.03.2021|Переупорядочение вкладок личного приложения. | Создание вкладок > [Изменение порядка вкладки чата в личных приложениях](tabs/how-to/create-personal-tab.md#reorder-static-personal-tabs) |
+|04.03.2021|Маскирование информации на адаптивных карточках.| Создание карточек и модулей задач > Создание карточек > [Маскирование информации на адаптивных карточках](task-modules-and-cards/cards/cards-format.md#information-masking-in-adaptive-cards) |
+|19.02.2021|Добавлены функции местонахождения. <br/> В файлы обзора возможностей устройства, разрешений собственных устройств, интеграции возможностей мультимедиа, а также функций сканера QR- или штрихкода добавлены сведения о функциях местонахождения.| • Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложений > Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функции сканирования QR- или штрихкода](concepts/device-capabilities/qr-barcode-scanner-capability.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций местонахождения](concepts/device-capabilities/location-capability.md) |
+|18.02.2021|Добавлена функция сканирования QR- или штрихкода. <br/> В файлы обзора возможностей устройства, разрешений собственных устройств и интеграции возможностей мультимедиа добавлены сведения о функциях сканера QR- или штрихкода.| • Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложений > Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функции сканирования QR- или штрихкода](concepts/device-capabilities/qr-barcode-scanner-capability.md) |
+|09.02.2021|Добавлен обзор возможностей устройства. <br/> В файлы разрешений собственных устройств и интеграции возможностей мультимедиа добавлены сведения о функциях микрофона.|• Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> Основы приложений > • Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md)|
 
 <br>
 
@@ -98,7 +114,7 @@ Microsoft Teams платформы, доступные всем разработ
 <br>
 
 <details>
-<summary><b>Более старые обновления</b></summary>
+<summary><b>Предыдущие обновления</b></summary>
 
 <details>
   
@@ -106,27 +122,27 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-|11/30/2020|Интеграция платформы удостоверений с Teams набор средств и Visual Studio Code для вкладок.|[Проверка подлинности с одним входом с Teams набор средств и Visual Studio Code для вкладок](toolkit/visual-studio-code-tab-sso.md)|
-|11/16/2020|Teams манифеста приложения, обновленного до версии 1.8.|[Справка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
-|11/10/2020|Teams руководства по разработке ботов.|[Рекомендации по проектированию ботов](bots/design/bots.md)|
-|09/30/2020|Теперь поддерживается отправка и получение файлов ботам на мобильных устройствах.|[Отправка и получение файлов через бот](resources/bot-v3/bots-files.md)|
-|09/22/2020|Новые сведения для начала работы с Teams разработкой.|[Создание первого обзора Teams приложения](build-your-first-app/build-first-app-overview.md)|
-|09/18/2020|Поддержка приложений для собраний Teams (Предварительная версия выпуска).|[Создание приложений для Teams собраний](apps-in-teams-meetings/create-apps-for-teams-meetings.md) и [приложений в Teams собраниях](apps-in-teams-meetings/teams-apps-in-meetings.md)|
-|08/19/2020|Импорт Teams с помощью Microsoft Graph.|[Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](graph-api/import-messages/import-external-messages-to-teams.md)
-|08/12/2020 |Поддержка адаптивных карт в входящий веб-сайт перенесена в ga.|[Отправка адаптивных карточек с помощью входящего веб-перехватчика](~/webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook) |
-|08/10/2020|Начало создания Teams приложений с помощью Visual Studio набор средств.|[Создание приложений с помощью Microsoft Teams набор средств и Visual Studio Code](toolkit/visual-studio-overview.md) |
-|08/06/2020|Поддержка проверки подлинности tabs SSO.|[Разработка вкладки SSO Microsoft Teams](tabs/how-to/authentication/auth-aad-sso.md#develop-an-sso-microsoft-teams-tab) |
-|07/27/2020 | Graph активных ботов и сообщений (Public Preview).|[Включить активную установку ботов и активный обмен сообщениями в Teams с microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
-|07/22/2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](concepts/device-capabilities/native-device-permissions.md) |
-|07/20/2020|Teams app Validation Tool for AppSource submissions.|[Teams средство проверки приложений](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)
-|07/15/2020|Создание виртуального помощника для Teams.|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
-|07/14/2020|Наружная документация по индикатору нагрузки.|[Отображение индикатора загрузки](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
-|07/01/2020|Начало создания Teams приложений с помощью Visual Studio Code набор средств.|[Создание приложений с помощью Microsoft Teams набор средств и Visual Studio Code](toolkit/visual-studio-code-overview.md) |
-|07/01/2020|Один вход для вкладок GA для Teams и настольных клиентов.|[Единый Sign-On (SSO)](tabs/how-to/authentication/auth-aad-sso.md)|
-|06/05/2020| Схема манифеста обновлена до версии 1.7.| [Справка: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
-|05/18/2020|Интеграция Power Virtual Agents с Teams.|[Интеграция Power Virtual Agents чат-бота с Microsoft Teams](bots/how-to/add-power-virtual-agents-bot-to-teams.md)|
-|04/01/2020|Интеграция систем WFM с соединитетелем Shifts для Teams.|[Microsoft Teams переключает соединители WFM](samples/shifts-wfm-connectors.md)
-|03/24/2020 | Добавлена поддержка для получения одного участника беседы и дополнительная поддержка для получения страниц участников. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md) |
+|30.11.2020|Интеграция платформы удостоверений с набором средств Teams и Visual Studio Code для вкладок.|[Проверка подлинности с единым входом с помощью набора средств Teams и Visual Studio Code для вкладок](toolkit/visual-studio-code-tab-sso.md)|
+|16.11.2020|Манифест приложения Teams обновлен до версии 1.8.|[Справочник: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
+|10.11.2020|Рекомендации по разработке ботов Teams.|[Рекомендации по разработке ботов](bots/design/bots.md)|
+|30.09.2020|Теперь поддерживается отправка и получение файлов в ботах на мобильных устройствах.|[Отправка и получение файлов через бот](resources/bot-v3/bots-files.md)|
+|22.09.2020|Новые сведения по началам разработки в Teams.|[Первые шаги в создании обзора приложения Teams](build-your-first-app/build-first-app-overview.md)|
+|18.09.2020|Поддержка приложений Teams в собраниях (предварительная версия выпуска).|[Создание приложений для собраний Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) и [Приложения на собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
+|19.08.2020|Импорт сообщений Teams с помощью Microsoft Graph.|[Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](graph-api/import-messages/import-external-messages-to-teams.md)
+|12.08.2020 |Поддержка адаптивных карточек во входящем веб-перехватчике перенесена в общедоступную версию.|[Отправка адаптивных карточек с помощью входящего веб-перехватчика](~/webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook) |
+|10.08.2020|Начинайте создавать приложения Teams с помощью набора средств Visual Studio.|[Создание приложений с помощью набора средств Microsoft Teams и Visual Studio Code](toolkit/visual-studio-overview.md) |
+|06.08.2020|Поддержка проверки подлинности с единым входом во вкладках.|[Разработка вкладки Microsoft Teams с единым входом](tabs/how-to/authentication/auth-aad-sso.md#develop-an-sso-microsoft-teams-tab) |
+|27.07.2020 | Упреждающие боты и сообщения Graph (общедоступная предварительная версия).|[Включение установки упреждающего бота и упреждающих сообщений в Teams с помощью Microsoft Graph](graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md)|
+|22.07.2020 |Обновления возможностей мобильных устройств.|[Запрос разрешений устройства для вкладки Microsoft Teams](concepts/device-capabilities/native-device-permissions.md) |
+|20.07.2020|Средство проверки приложений Teams для отправки в AppSource.|[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)
+|15.07.2020|Создание виртуального помощника для Teams.|[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
+|14.07.2020|Документация по отображению встроенного индикатора загрузки.|[Отображение встроенного индикатора загрузки](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
+|01.07.2020|Начинайте создавать приложения Teams с помощью набора средств Visual Studio Code.|[Создание приложений с помощью набора средств Microsoft Teams и Visual Studio Code](toolkit/visual-studio-code-overview.md) |
+|01.07.2020|Единый вход для вкладок в общедоступной версии для веб-клиентов и классических клиентов Teams.|[Единый вход](tabs/how-to/authentication/auth-aad-sso.md)|
+|05.06.2020| Схема манифеста обновлена до версии 1.7.| [Справочник: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
+|18.05.2020|Интеграция Power Virtual Agents с Teams.|[Интеграция чат-бота Power Virtual Agents с Microsoft Teams](bots/how-to/add-power-virtual-agents-bot-to-teams.md)|
+|01.04.2020|Интеграция систем WFM с соединителем Смен для Teams.|[Соединители WFM для приложения "Смены" Microsoft Teams](samples/shifts-wfm-connectors.md)
+|24.03.2020 | Добавлена поддержка для получения одного участника беседы и дополнительная поддержка для получения страниц участников. | [Получите контекст Teams для вашего бота](~/bots/how-to/get-teams-context.md) |
 
 <br>
 
@@ -140,23 +156,23 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-| 12/26/2019 | Параметр полезной нагрузки, отправленной боту, больше не шифруется, что позволяет использовать это значение для создания глубоких ссылок `replyToId` на эти сообщения. Полезной нагрузки сообщения включают зашифрованные значения в параметре `legacy.replyToId` .  |
-| 11/05/2019 | Один вход с помощью Teams JavaScript SDK. | [Единый вход](tabs/how-to/authentication/auth-aad-sso.md) |
-| 10/31/2019 | Разговорные боты и документация по расширению обмена сообщениями обновлены с учетом SDK 4.6 Bot Framework. Документация по SDK v3 доступна в разделе Ресурсы. | Вся документация по расширению ботов и сообщений. |
-| 10/31/2019 | Новая структура документации и рефакторинг основных статей. Пожалуйста, сообщайте о каких-либо мертвых ссылках или 404's, создав GitHub проблемы. | Все из них! |
-| 09/13/2019 | Бот запроса устанавливается из расширения обмена сообщениями на основе действий. | [Инициировать действия с расширениями обмена сообщениями](resources/messaging-extension-v3/create-extensions.md#request-to-install-your-conversational-bot)
-| 08/28/2019 | Поддержка частных каналов на вкладке и соединители. | [Получение контекста для вкладки](tabs/how-to/access-teams-context.md#retrieve-context-in-private-channels) |
-| 06/20/2019 | Поделитесь внешним веб-сайтом с внешнего веб-сайта в Teams канал. | [Поделиться с Teams](~/share-to-teams.md) |
-| 05/25/2019 | Ответьте сообщением бота из модуля задач. | [Отвечать сообщением бота из модуля задач](resources/messaging-extension-v3/create-extensions.md#respond-with-an-adaptive-card-message-sent-from-a-bot) |
-| 05/25/2019 | Боты в групповых чатах. | [Взаимодействие с ботом в групповом чате или канале](~/concepts/bots/bot-conversations/bots-conv-channel.md) |
-| 05/20/2019 | Локализация манифеста приложений. | [Локализация приложений](~/publishing/apps-localization.md) |
-| 05/20/2019 | Действия сообщения. | [Действия сообщений](resources/messaging-extension-v3/create-extensions.md#action-type-message-extensions) |
-| 05/20/2019 | Разгрузка ссылок (пользовательские предварительные просмотры URL-адресов). | [Развертывание ссылки](messaging-extensions/how-to/link-unfurling.md)|
-| 05/06/2019 | Программа сертификации приложений для приложений магазина. | [Сертификация приложений](~/concepts/deploy-and-publish/appsource/post-publish/overview.md#complete-microsoft-365-certification) |
-| 05/06/2019 | Шаблоны приложений теперь доступны. | [Шаблоны приложений](~/samples/app-templates.md) |
-| 04/23/2019 | Расширения обмена сообщениями на основе действий теперь доступны. | [Расширения сообщений на основе действий](~/concepts/messaging-extensions/create-extensions.md) |
-| 02/18/2019 | Создание глубоких ссылок на частный чат. | [Глубокая связь с чатом](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
-| 01/23/2019 | Сведения о SKU и licenceType в контексте вкладки. | [Tab Context](~/concepts/tabs/tabs-context.md) |
+| 26.12.2019 | Параметр `replyToId` в полезных данных, отправляемых в бот, больше не шифруется, что позволяет использовать это значение для создания прямых ссылок на эти сообщения. Полезные данные сообщений включают зашифрованные значения параметра `legacy.replyToId`.  |
+| 05.11.2019 | Единый вход с помощью Teams JavaScript SDK. | [Единый вход](tabs/how-to/authentication/auth-aad-sso.md) |
+| 31.10.2019 | Боты бесед и документация по расширению для обмена сообщениями обновлены с учетом SDK Bot Framework 4.6. Документация по SDK версии 3 доступна в разделе "Ресурсы". | Вся документация по ботам и расширению для обмена сообщениями. |
+| 31.10.2019 | Новая структура документации и переработка основных статей. Сообщайте о любых недействующих ссылках или ненайденных страницах путем создания проблемы в GitHub. | Обо всех из них! |
+| 13.09.2019 | Бот запроса устанавливается из расширения для обмена сообщениями на основе действий. | [Инициирование действий с расширениями для обмена сообщениями](resources/messaging-extension-v3/create-extensions.md#request-to-install-your-conversational-bot)
+| 28.08.2019 | Поддержка частных каналов во вкладках и соединителях. | [Получение контекста для вкладки](tabs/how-to/access-teams-context.md#retrieve-context-in-private-channels) |
+| 20.06.2019 | Отправка внешнего веб-сайта в канал Teams. | [Отправка в Teams](~/share-to-teams.md) |
+| 25.05.2019 | Ответ сообщением бота из модуля задач. | [Ответ сообщением бота из модуля задач](resources/messaging-extension-v3/create-extensions.md#respond-with-an-adaptive-card-message-sent-from-a-bot) |
+| 25.05.2019 | Боты в групповых чатах. | [Взаимодействие с ботом в групповом чате или канале](~/concepts/bots/bot-conversations/bots-conv-channel.md) |
+| 20.05.2019 | Локализация манифеста приложения. | [Локализация приложений](~/publishing/apps-localization.md) |
+| 20.05.2019 | Действия с сообщениями. | [Действия с сообщениями](resources/messaging-extension-v3/create-extensions.md#action-type-message-extensions) |
+| 20.05.2019 | Развертывание ссылок (настраиваемый предварительный просмотр URL-адресов). | [Развертывание ссылки](messaging-extensions/how-to/link-unfurling.md)|
+| 06.05.2019 | Программа сертификации приложений для приложений магазина. | [Сертификация приложений](~/concepts/deploy-and-publish/appsource/post-publish/overview.md#complete-microsoft-365-certification) |
+| 06.05.2019 | Теперь доступны шаблоны приложений. | [Шаблоны приложений](~/samples/app-templates.md) |
+| 23.04.2019 | Доступны расширения для сообщений на основе действий. | [Расширения для сообщений на основе действий](~/concepts/messaging-extensions/create-extensions.md) |
+| 18.02.2019 | Создание прямых ссылок на закрытый чат. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
+| 23.01.2019 | Обзор сведений о SKU и licenceType в контексте вкладки. | [Контекст вкладки](~/concepts/tabs/tabs-context.md) |
 
 <br>
 
@@ -170,77 +186,78 @@ Microsoft Teams платформы, доступные всем разработ
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-| 11/12/2018 | Вкладки в групповом чате теперь доступны в выпущенной версии Teams. В рамках этой работы раздел вкладок был переработан для ясности.| [Настраиваемые вкладки](~/concepts/tabs/tabs-configurable.md) |
-| 11/11/2018 | Начало работы для Node JS и для .NET/C# было обновлено, чтобы использовать App Studio в Teams, и был добавлен новый раздел о размещении приложений node Teams Azure. | Начало работы на платформе Microsoft Teams с [C#/.NET](~/get-started/get-started-dotnet-app-studio.md)и App Studio , начало работы на платформе Microsoft Teams с [Node JS](~/get-started/get-started-nodejs-app-studio.md)и App Studio , хост ваше приложение Teams узла в [Azure](~/get-started/get-started-nodejs-in-azure.md)|
-| 11/09/2018 | Теперь можно создавать глубокие ссылки на частные чаты между пользователями. | [Глубокая связь с чатом](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
-| 11/08/2018 | SharePoint Framework 1.7 отгружена и вместе с ней новая функция для использования вкладки Microsoft Teams в качестве SharePoint Framework веб-части. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
-| 11/05/2018 | Была **выпущена** функция модуля задач. Модуль задач позволяет создавать в приложении модальные всплывающие Teams, как из ботов, так и из вкладок. В всплывающее всплывающее представление можно запустить собственный пользовательский код HTML/JavaScript, показать виджет на основе, например видео YouTube или Microsoft Stream, или отобразить `<iframe>` [адаптивную карту.](/adaptive-cards/) | [Обзор модуля задач,](~/concepts/task-modules/task-modules-overview.md) [модуль задач в вкладке,](~/concepts/task-modules/task-modules-tabs.md)  [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
-| 10/05/2018 | Информация по форматированию для карт была обновлена и протестирована в клиентах для настольных компьютеров, iOS и Android для Teams. | [Форматирование](~/concepts/cards/cards.md) [карт, карт](~/concepts/cards/cards-format.md) |
-| 09/24/2018 | API вызовов и онлайн-собраний для Microsoft Graph были выпущены в бета-версии, и Teams приложения теперь могут взаимодействовать с пользователями с помощью голосовой связи и видео. | [Вызовы](~/concepts/calls-and-meetings/registering-calling-bot.md)и [онлайн-боты](~/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md) [собраний,](~/concepts/calls-and-meetings/real-time-media-concepts.md)концепции мультимедиа в режиме реального [времени,](~/concepts/calls-and-meetings/registering-calling-bot.md)регистрация бота [вызова,](~/concepts/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md)отладка и локальное тестирование, средства массовой информации с хостингом приложений, обработка входящих уведомлений о [вызове](~/concepts/calls-and-meetings/call-notifications.md) |
-| 09/11/2018 | Страницы конфигурации вкладок теперь значительно выше. | [Дизайн вкладок](tabs/design/tabs.md) |
-| 08/15/2018 | Адаптивные карты теперь поддерживаются в Teams.|[Действия адаптивной карты в Teams](task-modules-and-cards/cards/cards-reference.md#adaptive-card) |
-| 08/10/2018 | Поддержка клиентов для DevTools.| [DevTools для Microsoft Teams настольного клиента](~/resources/dev-preview/developer-preview-tools.md)|
-| 08/08/2018 | Расширения обмена сообщениями теперь поддерживают несколько команд. | [composeExtensions.commands](~/resources/schema/manifest-schema.md#composeextensionscommands)|
-| 08/07/2018 | Конфигурация inline теперь поддерживается в соединители. Документация соединители также была пересмотрена и расширена для ясности.| [Соединители](~/concepts/connectors/connectors.md)|
-| 08/06/2018 | Теперь бот может отправлять и получать файлы. | [Отправка и получение файлов через бот](~/bots/how-to/bots-filesv4.md)|
-| 07/23/2018 | Сведения о повторной сертификации приложений добавлены в раздел Публикация. |[Разрешения манифеста](resources/schema/manifest-schema.md#permissions)|
-| 07/16/2018 | На странице конфигурации вкладок выделено больше места. | [Страница конфигурации вкладок значительно выше](tabs/design/tabs.md)|
-| 07/12/2018 | Сведения о гостевом доступе. | [Гостевой доступ в Microsoft Teams](/microsoftteams/guest-access#guest-access-overview)|
-| 06/07/2018 | Добавлены Microsoft Teams каталога приложений клиента. | [Публикация приложения Microsoft Teams](~/publishing/apps-publish.md)|
-| 05/29/2018 | Адаптивные карты поддерживаются в Teams. | [Действия адаптивной карты в Teams](task-modules-and-cards/cards/cards-reference.md) |
-| 04/17/2018 | ReplyToID был добавлен в полезной нагрузке для действий `Invoke` и `MessageBack` карт. Это особенно полезно, если необходимо обновить сообщение, из которое пришло действие карты. | [Действия карточек](~/concepts/cards/cards-actions.md)|
-| 04/12/2018 | Добавлена эта тема для отслеживания изменений в интерфейсе Teams программирования и этом наборе документации. | [Новые возможности](~/whats-new.md)|
-| 04/10/2018 | Изменены URL-адреса проверки подлинности, чтобы последовательно использовать идентификацию клиента в пути. | [Поток проверки подлинности](~/concepts/authentication/auth-flow-tab.md)для tabs , [AAD проверки подлинности вкладок](~/concepts/authentication/auth-tab-AAD.md)|
-| 04/06/2018 | Добавлены рекомендации по разработке для использования командного окна. |[Командный окне](~/resources/design/framework/command-box.md)|
-| 04/02/2018 | Использование ботов для отправки уведомлений для приложения. |[Боты только для уведомлений](~/concepts/bots/bots-notification-only.md)|
-| 03/27/2018 | Расширенная документация для активного обмена сообщениями. |[Начиная разговор](./concepts/bots/bot-conversations/bots-conv-proactive.md)|
-| 03/15/2018 | Refactored documentation for cards. |[Карточки,](~/concepts/cards/cards.md) [действия карт,](~/concepts/cards/cards-actions.md) [форматирование карт,](~/concepts/cards/cards-format.md) [справочная карточка](~/concepts/cards/cards-reference.md)|
-| 03/03/2018 | Добавлена документация Teams App Studio. |[Быстро разработайте приложения с Teams App Studio](~/get-started/get-started-app-studio.md), Используя библиотеку управления в App [Studio](~/get-started/app-studio-component-library.md)|
-| 02/27/2018 | Добавлен пример кода для демонстрации метода AsTeamsChannelAccounts(). |[Получите контекст для бота](~/concepts/bots/bots-context.md)|
-| 02/05/2018 | Добавлены темы для начала использования C#. |[Начало работы на платформе Microsoft Teams с использованием C#/.NET](./get-started/get-started-dotnet-app-studio.md)|
+| 11/12/2018 | Вкладки в групповом чате теперь доступны в выпущенной версии Teams. В рамках этой работы раздел вкладок был переработан для наглядности.| [Настраиваемые вкладки](~/concepts/tabs/tabs-configurable.md) |
+| 11.11.2018 | Раздел "Начало работы" для Node JS и .NET/C# дополнен использованием App Studio в Teams и добавлен новый раздел о размещении приложений Node Teams в Azure. | [Начало работы на платформе Microsoft Teams с использованием C#/.NET и App Studio](~/get-started/get-started-dotnet-app-studio.md), [Начало работы на платформе Microsoft Teams с использованием Node JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [Размещение приложения Node Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
+| 09.11.2018 | Теперь можно создавать прямые ссылки на закрытые чаты между пользователями. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
+| 11/08/2018 | Выпущена платформа SharePoint Framework 1.7 с новой функцией для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
+| 05.11.2018 | Выпущена функция **модуля задач**. Модуль задач позволяет создавать модальные всплывающие окна в приложении Teams как из ботов, так и из вкладок. Внутри всплывающего окна можно запустить собственный код HTML или JavaScript, показать мини-приложение на базе `<iframe>`, например видео YouTube или Microsoft Stream, или [отобразить адаптивную карточку](/adaptive-cards/). | [Обзор модуля задач](~/concepts/task-modules/task-modules-overview.md), [модуль задач на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
+| 05.10.2018 | Информация по форматированию для карточек была обновлена и протестирована в клиентах Teams для компьютеров, iOS и Android. | [Карточки](~/concepts/cards/cards.md), [Форматирование карточек](~/concepts/cards/cards-format.md) |
+| 24.09.2018 | API-интерфейсы звонков и онлайн-собраний для Microsoft Graph выпущены в бета-версии, и приложения Teams теперь могут взаимодействовать с пользователями с помощью голосовой связи и видео. | [Боты для звонков и онлайн-собраний](~/concepts/calls-and-meetings/registering-calling-bot.md), [Концепции мультимедиа в реальном времени](~/concepts/calls-and-meetings/real-time-media-concepts.md), [Регистрация бота с поддержкой голосовых вызовов](~/concepts/calls-and-meetings/registering-calling-bot.md), [Отладка и локальное тестирование](~/concepts/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md), [Мультимедиа, размещенные в приложении](~/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md), [Обработка уведомлений о входящих звонках](~/concepts/calls-and-meetings/call-notifications.md) |
+| 11.09.2018 | Страницы конфигурации вкладок теперь значительно выше. | [Разработка вкладок](tabs/design/tabs.md) |
+| 15.08.2018 | Теперь в Teams поддерживаются адаптивные карточки.|[Действия с адаптивными карточками в Teams](task-modules-and-cards/cards/cards-reference.md#adaptive-card) |
+| 10.08.2018 | Поддержка клиентов для DevTools.| [DevTools для классического клиента Microsoft Teams](~/resources/dev-preview/developer-preview-tools.md)|
+| 08.08.2018 | Расширения для сообщений теперь поддерживают несколько команд. | [composeExtensions.commands](~/resources/schema/manifest-schema.md#composeextensionscommands)|
+| 07.08.2018 | Теперь в соединителях поддерживается встроенная конфигурация. Документация по соединителям также пересмотрена и расширена для наглядности.| [Соединители](~/concepts/connectors/connectors.md)|
+| 06.08.2018 | Теперь бот может отправлять и получать файлы. | [Отправка и получение файлов через бот](~/bots/how-to/bots-filesv4.md)|
+| 23.07.2018 | В раздел "Публикация" добавлены сведения о повторной сертификации приложений. |[Разрешения манифеста](resources/schema/manifest-schema.md#permissions)|
+| 16.07.2018 | На странице конфигурации вкладки выделено больше места. | [Высота страницы конфигурации вкладок значительно увеличена](tabs/design/tabs.md)|
+| 07.12.2018 | Сведения о гостевом доступе. | [Гостевой доступ в Microsoft Teams](/microsoftteams/guest-access#guest-access-overview)|
+| 07.06.2018 | Добавлены сведения о каталоге приложений клиента Microsoft Teams. | [Публикация приложения Microsoft Teams](~/publishing/apps-publish.md)|
+| 29.05.2018 | В Teams поддерживаются адаптивные карточки. | [Действия с адаптивными карточками в Teams](task-modules-and-cards/cards/cards-reference.md) |
+| 17.04.2018 | В полезные данные для действий карточки `Invoke` и `MessageBack` включен идентификатор replyToID. Это особенно удобно, если необходимо обновить сообщение, из которого поступило действие карточки. | [Действия карточек](~/concepts/cards/cards-actions.md)|
+| 12.04.2018 | Добавлена эта тема по отслеживанию изменений в интерфейсе программирования Teams и этом наборе документации. | [Новые возможности](~/whats-new.md)|
+| 10.04.2018 | Изменены URL-адреса проверки подлинности для согласованного использования идентификатора клиента при указании пути. | [Поток проверки подлинности для вкладок](~/concepts/authentication/auth-flow-tab.md), [проверка подлинности для вкладок AAD](~/concepts/authentication/auth-tab-AAD.md)|
+| 06.04.2018 | Добавлены рекомендации по разработке для использования командного поля. |[Командное поле](~/resources/design/framework/command-box.md)|
+| 02.04.2018 | Использование ботов для отправки уведомлений в приложении. |[Боты только для уведомлений](~/concepts/bots/bots-notification-only.md)|
+| 27.03.2018 | Расширенная документация по упреждающим сообщениям. |[Начиная разговор](./concepts/bots/bot-conversations/bots-conv-proactive.md)|
+| 15.03.2018 | Переработана документация по карточкам. |[Карточки](~/concepts/cards/cards.md), [Действия карточек](~/concepts/cards/cards-actions.md), [Форматирование карточек](~/concepts/cards/cards-format.md), [Справка по карточкам](~/concepts/cards/cards-reference.md)|
+| 03.03.2018 | Добавлена документация по Teams App Studio. |[Быстрая разработка приложений с помощью Teams App Studio](~/get-started/get-started-app-studio.md), [Использование библиотеки элементов управления в App Studio](~/get-started/app-studio-component-library.md)|
+| 27.02.2018 | Добавлен пример кода для демонстрации метода AsTeamsChannelAccounts(). |[Получите контекст для бота](~/concepts/bots/bots-context.md)|
+| 05.02.2018 | Добавлены темы по началу работы с помощью C#. |[Начало работы на платформе Microsoft Teams с использованием C#/.NET](./get-started/get-started-dotnet-app-studio.md)|
 
 <br>
 
 </details>
 </details>
 
-## <a name="developer-preview"></a>Developer preview
+## <a name="developer-preview"></a>Предварительная версия для разработчиков
 
-Предварительная версия разработчика — это публичная программа, которая предоставляет ранний доступ к Teams функциям платформы.  
+Предварительная версия для разработчиков — это общедоступная программа, которая обеспечивает ранний доступ к невыпущенным функциям платформы Teams.  
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-|01/10/2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDKs > Teams набор средств для Visual Studio Code > [Teams набор средств основы](toolkit/teams-toolkit-fundamentals.md) |
-|12/24/2021| Введено пошаговая руководство по предоставлению разрешений устройств Tab. | Основные принципы > устройств > пошаговом руководстве по предоставлению [разрешений устройств Tab](sbs-tab-device-permissions.yml) |
-|11/15/2021| Личные вкладки и расширения обмена сообщениями работают в Outlook и Office | [Расширение Teams приложений в Microsoft 365](~/m365-apps/overview.md) |
-|10/28/2021|Ботам можно включить получение всех сообщений канала с помощью согласия на использование ресурсов (RSC).| • Создание ботов > бесед ботов > сообщения в беседах ботов > получать все сообщения [с RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > бесед ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > бесед ботов > [и групповых бесед](~/bots/how-to/conversations/channel-and-group-conversations.md) </br> • Схема предварительного > манифеста > [](~/resources/schema/manifest-schema-dev-preview.md) разработчика |
-|10/19/2021|Разрешения устройства для браузера.| Основы приложения > возможности устройства > [для устройств для браузера](concepts/device-capabilities/browser-device-permissions.md) |
-|06/21/2021|Удалить поведение для личного приложения с ботом.| Создание ботов > бесед ботов > обновления поведения в личных приложениях [с помощью ботов](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
-|06/16/2021| Согласие для чатов с определенными ресурсами.| • Использование Teams с согласия Microsoft Graph > [ресурсов](graph-api/rsc/resource-specific-consent.md) </br> • Проверка разрешений на > Microsoft Graph > [microsoft](graph-api/rsc/test-resource-specific-consent.md) Teams|
+|17.01.2022| Выбор людей в адаптивных карточках для мобильных устройств  | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
+|10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
+|24.12.2021| Представлены пошаговые инструкции по предоставлению разрешений для устройств вкладок. | Основы приложений > Возможности устройств > [Пошаговые инструкции по предоставлению разрешений для устройств вкладок](sbs-tab-device-permissions.yml) |
+|15.11.2021| Личные вкладки и расширения для сообщений работают в Outlook и Office | [Расширение приложений Teams в Microsoft 365](~/m365-apps/overview.md) |
+|28.10.2021|В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC).| • Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Получение всех сообщений с помощью RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > Беседы ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [схема манифеста в предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md) |
+|19.10.2021|Разрешения устройства для браузера.| Основы приложений > Возможности устройств > [Разрешения устройств для браузера](concepts/device-capabilities/browser-device-permissions.md) |
+|21.06.2021|Поведение при удалении для личного приложения с ботом.| Создание ботов > Беседы ботов > [Изменение поведения при удалении в личных приложениях с ботами](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
+|16.06.2021| Согласие с определением ресурсов для чатов.| • Использование данных Teams в Microsoft Graph > [Разрешение для конкретного ресурса](graph-api/rsc/resource-specific-consent.md) </br> • Тестирование приложения > Microsoft Graph > [Тестирование разрешений для конкретных ресурсов в Teams](graph-api/rsc/test-resource-specific-consent.md)|
 
-Дополнительные сведения см. в [обзоре предварительного просмотра общедоступных разработчиков для Teams](~/resources/dev-preview/developer-preview-intro.md).
+Дополнительные сведения см. в [обзоре предварительной версии для разработчиков Teams](~/resources/dev-preview/developer-preview-intro.md).
 
-## <a name="teams-app-template-catalog"></a>Teams каталог шаблонов приложений
+## <a name="teams-app-template-catalog"></a>Каталог шаблонов приложений Teams
 
-Наряду с новыми функциями, мы также предоставляем готовые к [Teams](samples/app-templates.md) шаблоны приложений, которые можно развернуть сразу или изменить в ваших потребностях. Новые добавленные шаблоны указываются звездой ☆.
+Наряду с новыми функциями мы также предоставляем [готовые шаблоны приложений Teams](samples/app-templates.md), которые можно сразу же развернуть или изменить под свои потребности. Новые добавленные шаблоны обозначены звездочкой ☆.
 
 ## <a name="submit-your-feedback"></a>Отправка отзывов
 
-Мы рекомендуем Teams разработчикам задавать вопросы, отправлять ошибки, отправлять запросы на функции и делать вклады. Вы можете отправить отзывы по любому из [доступных каналов.](feedback.md)
+Разработчикам Teams рекомендуется задавать вопросы, регистрировать ошибки, отправлять запросы на функции и вносить предложения. Вы можете отправить отзывы по любому из [доступных каналов](feedback.md).
 
-## <a name="get-latest-updates"></a>Получать последние обновления
+## <a name="get-latest-updates"></a>Получение последних обновлений
 
-Вы можете получить последние обновления Teams платформы, настроив канал [RSS.](https://aka.ms/TeamsPlatformUpdates)
+Вы можете получить последние обновления платформы Teams, настроив [RSS-канал](https://aka.ms/TeamsPlatformUpdates).
 
 ### <a name="to-configure-rss-feed"></a>Настройка RSS-канала
 
 1. Откройте Microsoft Teams.
-1. Выберите **Teams** с левой области.
+1. Выберите **Teams** в левой области.
 1. Выберите канал в команде.
-1. Выберите эллипсы &#x25CF;&#x25CF;&#x25CF; и из списка выпаданий выберите **соединители.**
-1. Поиск **RSS в** **диалоговом окне** Соединители, которое отображается.
-1. Выберите **Configure**.
-1. Введите имя **в Введите имя для подключения RSS.**.
-1. Введите **<https://aka.ms/TeamsPlatformUpdates>** **в адрес для RSS-канал**.
-1. Выберите частоту каналов из списка **выпадения** частот Дайджест.
+1. Щелкните многоточие &#x25CF;&#x25CF;&#x25CF; и в раскрывающемся списке выберите **Соединители**.
+1. Найдите **RSS** в появившемся диалоговом окне **Соединители**.
+1. Нажмите **Настроить**.
+1. Укажите имя в поле **Введите имя для подключения RSS**.
+1. Введите **<https://aka.ms/TeamsPlatformUpdates>** в поле **Адрес RSS-канала**.
+1. Выберите периодичность канала в раскрывающемся списке **Периодичность дайджеста**.
 1. Нажмите кнопку **Сохранить**.

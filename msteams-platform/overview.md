@@ -1,43 +1,43 @@
 ---
-title: Создание приложений для Microsoft Teams платформы
+title: Создание приложений для платформы Microsoft Teams
 author: heath-hamilton
-description: Сведения о том, как разработчики могут расширять Microsoft Teams с помощью настраиваемого приложения.
+description: Обзор того, как разработчики могут расширять возможности Microsoft Teams с помощью собственных приложений.
 ms.topic: overview
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: adf95bb9eca4f6cd5ac07385212b1fd388a47079
-ms.sourcegitcommit: f77750f2e60f63d1e2f66a96c169119683c66950
-ms.translationtype: MT
+ms.openlocfilehash: 1a7957c8ea6d889ffe5ab7e40c8a5bb1377b6ca5
+ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960238"
+ms.lasthandoff: 01/17/2022
+ms.locfileid: "62059625"
 ---
 # <a name="build-apps-for-microsoft-teams"></a>Создание приложений для Microsoft Teams
 
-Microsoft Teams приложения приносят ключевые сведения, общие инструменты и доверенные процессы в места, где люди все чаще собираются, учатся и работают.
+Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
 
-Приложения — это то, как Teams, чтобы соответствовать вашим потребностям. Создайте что-то новое для Teams или интегрируете существующее приложение.
+Эти приложения помогут адаптировать Teams к вашим нуждам. Создайте для Teams что-то новое или интегрируйте существующее приложение.
 
 > [!div class="nextstepaction"]
 > [Начните отсюда](get-started/get-started-overview.md)
 
-## <a name="what-are-teams-apps"></a>Что такое Teams приложения?
+## <a name="what-are-teams-apps"></a>Что такое приложения Microsoft Teams?
 
-Teams приложения — это сочетание [возможностей.](concepts/capabilities-overview.md) Некоторые приложения просты (отправка уведомлений), а другие сложны (управление записями пациентов). При планировании приложения помните, что Teams является концентратором совместной работы. Лучшие Teams помогают людям лучше выражать себя и работать вместе.
+Приложения Microsoft Teams — это наборы [возможностей](concepts/capabilities-overview.md). Приложения бывают простыми (отправка уведомлений) и сложными (управление записями пациентов). Планируя свое приложение, помните, что Microsoft Teams — это центр совместной работы. Лучшие приложения Microsoft Teams помогают людям лучше координировать усилия и самовыражаться.
 
 ### <a name="personal-apps"></a>Персональные приложения
 
 :::row:::
    :::column span="1":::
 
-**Помощь людям в фокусе:** [личное](concepts/design/personal-apps.md) приложение — это выделенное пространство или бот, чтобы помочь пользователям сосредоточиться на своих задачах или просмотреть важные для них действия.
+**Помощь в фокусировке внимания**. [Персональное приложение](concepts/design/personal-apps.md) — это бот или специальная область, помогающая пользователям сосредоточиться на своих задачах или просматривать важные для них события.
 
    :::column-end:::
 
    :::column span="3":::
 
-:::image type="content" source="assets/images/overview-personal-apps-2021.png" alt-text="Концептуальное представление того, как личные приложения выглядят в Teams клиенте." border="false":::
+:::image type="content" source="assets/images/overview-personal-apps-2021.png" alt-text="Концептуальное представление того, как выглядят персональные приложения в клиенте Microsoft Teams." border="false":::
 
    :::column-end:::
 
@@ -48,13 +48,13 @@ Teams приложения — это сочетание [возможносте
 :::row:::
    :::column span="1":::
 
-**Совместное взаимодействие более удобно:** отображение веб-контента на вкладке, на которой пользователи могут совместно обсуждать и работать над ними. [](tabs/what-are-tabs.md)
+**Удобство совместной работы**. Отображение веб-контента на [вкладке](tabs/what-are-tabs.md), на которой пользователи могут обсуждать и совместно работать над ним.
 
    :::column-end:::
 
    :::column span="3":::
 
-:::image type="content" source="assets/images/overview-channel-chat-apps-2021.png" alt-text="Концептуальное представление того, как выглядят вкладки в Teams клиенте." border="false":::
+:::image type="content" source="assets/images/overview-channel-chat-apps-2021.png" alt-text="Концептуальное представление того, как выглядят вкладки в клиенте Microsoft Teams." border="false":::
 
    :::column-end:::
 
@@ -65,13 +65,13 @@ Teams приложения — это сочетание [возможносте
 :::row:::
    :::column span="1":::
 
-**Превратите** слова в действия: беседы часто приводит к необходимости что-то делать (создать заказ, просмотреть код, проверить состояние билета и так далее). Бот [может](bots/what-are-bots.md) скинуть эти типы рабочего процесса прямо внутри Teams.
+**Воплощение слов в действия**. Результатом беседы часто становится необходимость что-то сделать (создать заказ, проверить код, узнать статус запроса и так далее). [Бот](bots/what-are-bots.md) может выполнять эти рабочие процессы прямо в Microsoft Teams.
 
    :::column-end:::
 
    :::column span="3":::
 
-:::image type="content" source="assets/images/overview-bots-2021.png" alt-text="Концептуальное представление того, как выглядят боты в Teams клиенте." border="false":::
+:::image type="content" source="assets/images/overview-bots-2021.png" alt-text="Концептуальное представление того, как выглядят боты в клиенте Microsoft Teams." border="false":::
 
    :::column-end:::
 
@@ -83,13 +83,13 @@ Teams приложения — это сочетание [возможносте
 
    :::column span="1":::
 
-**Упростите многозадачную** работу. [С](messaging-extensions/what-are-messaging-extensions.md)помощью расширений обмена сообщениями можно быстро обмениваться внешней информацией в беседе. Вы также можете действовать по сообщению, например, создать билет справки на основе контента сообщения канала.
+**Упрощение многозадачной работы**. С помощью [расширений для сообщений](messaging-extensions/what-are-messaging-extensions.md) можно быстро обмениваться информацией из внешних источников в беседе. Также с сообщениями можно выполнять различные действия, например, создать запрос в службу поддержки на основе публикации на канале.
 
    :::column-end:::
 
    :::column span="3":::
 
-:::image type="content" source="assets/images/overview-messaging-extensions-2021.png" alt-text="Концептуальное представление о том, как выглядят расширения обмена сообщениями в Teams клиенте." border="false":::
+:::image type="content" source="assets/images/overview-messaging-extensions-2021.png" alt-text="Концептуальное представление того, как выглядят расширения для сообщений в клиенте Microsoft Teams." border="false":::
 
    :::column-end:::
 :::row-end:::
@@ -100,13 +100,13 @@ Teams приложения — это сочетание [возможносте
 
    :::column span="1":::
 
-**Создание приложений для собраний.** Существует несколько вариантов включения приложения в Teams [звонков.](apps-in-teams-meetings/design/designing-apps-in-meetings.md)
+**Создание приложений для собраний**. [Включить приложение в функционал Microsoft Teams для звонков](apps-in-teams-meetings/design/designing-apps-in-meetings.md) можно разными способами.
 
    :::column-end:::
 
    :::column span="3":::
 
-:::image type="content" source="assets/images/overview-meeting-extensions-2021.png" alt-text="Концептуальное представление о том, как выглядят расширения собраний в Teams клиенте." border="false":::
+:::image type="content" source="assets/images/overview-meeting-extensions-2021.png" alt-text="Концептуальное представление того, как выглядят расширения для собраний в клиенте Microsoft Teams." border="false":::
 
    :::column-end:::
 :::row-end:::
@@ -117,13 +117,13 @@ Teams приложения — это сочетание [возможносте
 
    :::column span="":::
 
-**Связь с внешними** приложениями. [Входящие веб-сайты](webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) — это простой способ автоматической отправки уведомлений из другого приложения на Teams канал. В [исходяющих веб-сайтах](webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks)сообщение веб-службы с помощью @mention.
+**Связь с внешними приложениями**. [Входящие веб-перехватчики](webhooks-and-connectors/what-are-webhooks-and-connectors.md#incoming-webhooks) — это простой способ автоматической отправки уведомлений из другого приложения на канал Microsoft Teams. С помощью [исходящих веб-перехватчиков](webhooks-and-connectors/what-are-webhooks-and-connectors.md#outgoing-webhooks) можно отправлять сообщения веб-службам через @упоминание.
 
    :::column-end:::
 
    :::column span="":::
 
-:::image type="content" source="assets/images/overview-connectors.png" alt-text="Концептуальное представление о том, как выглядят соединители в Teams клиенте." border="false":::
+:::image type="content" source="assets/images/overview-connectors.png" alt-text="Концептуальное представление того, как выглядят соединители в клиенте Microsoft Teams." border="false":::
 
    :::column-end:::
 :::row-end:::
@@ -134,13 +134,13 @@ Teams приложения — это сочетание [возможносте
 
    :::column span="":::
 
-**Использование Teams** данных. [API microsoft Graph](/graph/teams-concept-overview) для Teams предоставляет доступ к сведениям о командах, каналах, пользователях и сообщениях, которые помогут вам создать или улучшить функции для вашего приложения (например, богатые уведомления).
+**Использование данных Teams**. [API Microsoft Graph для Teams](/graph/teams-concept-overview) предоставляет доступ к сведениям о командах, каналах, пользователях и сообщениях, которые помогут создавать или улучшать функции вашего приложения (например, расширенные уведомления).
 
    :::column-end:::
 
    :::column span="":::
 
-:::image type="content" source="assets/images/overview-graph.png" alt-text="Концептуальное представление API microsoft Graph для Teams." border="false":::
+:::image type="content" source="assets/images/overview-graph.png" alt-text="Концептуальное представление API Microsoft Graph для Teams." border="false":::
 
    :::column-end:::
 :::row-end:::
@@ -148,9 +148,9 @@ Teams приложения — это сочетание [возможносте
 :::row:::
    :::column span="2":::
 
-## <a name="start-building"></a>Начало создания
+## <a name="start-building"></a>Начало разработки
 
-Быстро ознакомьтесь с созданием для Teams, настроив среду и создав простое приложение.
+Ознакомьтесь с разработкой для Teams, настроив среду и создав простое приложение.
 
 > [!div class="nextstepaction"]
 > [Создание первого приложения](get-started/get-started-overview.md)
@@ -166,7 +166,7 @@ Teams приложения — это сочетание [возможносте
 
 ## <a name="integrate-with-teams"></a>Интеграция с Teams
 
-Смешайте функции, которые пользователи любят в существующем веб-приложении, службе или системе с функциями совместной работы Teams.
+Совмещайте функции, которые нравятся пользователям в существующем веб-приложении, службе или системе с функциями совместной работы Microsoft Teams.
 
 > [!div class="nextstepaction"]
 > [Интеграция существующего приложения](samples/integrating-web-apps.md)
@@ -180,12 +180,12 @@ Teams приложения — это сочетание [возможносте
 :::row:::
    :::column span="2":::
 
-## <a name="a-little-code-goes-a-long-way"></a>Маленький код проходит долгий путь
+## <a name="a-little-code-goes-a-long-way"></a>Немного кода — много возможностей
 
-Вам не нужно быть программистом-экспертом, чтобы создать отличное Teams приложение. Попробуйте одно из нескольких решений с низким кодом.
+Не нужно быть программистом-экспертом, чтобы создать отличное приложение для Teams. Попробуйте решения с малым использованием кода.
 
 > [!div class="nextstepaction"]
-> [Создание приложения с низким кодом](samples/teams-low-code-solutions.md)
+> [Создание приложений с малым использованием кода](samples/teams-low-code-solutions.md)
 
    :::column-end:::
    :::column span="":::
@@ -196,9 +196,9 @@ Teams приложения — это сочетание [возможносте
 :::row:::
    :::column span="2":::
 
-## <a name="get-ideas-for-your-app"></a>Получить идеи для приложения
+## <a name="get-ideas-for-your-app"></a>Идеи для приложения
 
-Ищете вдохновение для разработки приложений? Просмотрите список реальных сценариев и отраслевых решений с помощью макетов концепции высокой верности, чтобы понять различные способы, Teams приложения могут помочь пользователям.
+Ищете вдохновение для разработки приложений? Просмотрите список реальных сценариев и отраслевых решений с помощью достоверных концептуальных макетов, чтобы понять, как приложения Microsoft Teams могут помочь пользователям.
 
 > [!div class="nextstepaction"]
 > [См. сценарии приложений](https://adoption.microsoft.com/extensibility-look-book/scenarios/)
@@ -209,9 +209,9 @@ Teams приложения — это сочетание [возможносте
    :::column-end:::
 :::row-end:::
 
-## <a name="test-your-app-running-across-microsoft-365"></a>Проверьте, как приложение работает Microsoft 365
+## <a name="test-your-app-running-across-microsoft-365"></a>Тестирование приложения, запущенного в Microsoft 365
 
-Вы можете просмотреть Teams приложения, работающие в других приложениях с высоким Microsoft 365 с Microsoft Teams клиентом JavaScript SDK v2 Preview.
+С помощью функции предварительного просмотра пакета JavaScript SDK v2 в клиенте Microsoft Teams можно проверить работу приложения Microsoft Teams в других часто используемых службах Microsoft 365.
 
 > [!div class="nextstepaction"]
 > [Расширение приложения](m365-apps/overview.md)
@@ -219,5 +219,5 @@ Teams приложения — это сочетание [возможносте
 ## <a name="see-also"></a>См. также
 
 * [Основные сведения о приложении](~/concepts/app-fundamentals-overview.md)
-* [Разработка Teams приложения](~/concepts/design/design-teams-app-process.md)
-* [Составить карту случаев использования для Teams возможностей приложения](~/concepts/design/map-use-cases.md)
+* [Разработка приложения Microsoft Teams](~/concepts/design/design-teams-app-process.md)
+* [Сопоставление вариантов использования с возможностями приложения Teams](~/concepts/design/map-use-cases.md)
