@@ -4,12 +4,12 @@ description: Описание всех карточек и действий ка
 ms.localizationpriority: high
 keywords: справочные материалы о карточках для ботов
 ms.topic: reference
-ms.openlocfilehash: 741bd83b6888527e8e89b5be51dd408bb802fad3
-ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+ms.openlocfilehash: 81d38b4b068b647b55e130e320d4edb67d332cd4
+ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62081137"
+ms.lasthandoff: 01/17/2022
+ms.locfileid: "62059716"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -908,7 +908,7 @@ Teams поддерживает карточки квитанции. Это ка�
 }
 ```
 
-#### <a name="syntax-for-carousel-collections"></a>Синтаксис коллекций с каруселью
+#### <a name="syntax-for-carousel-collections"></a>Синтаксис коллекций м каруселью
 
 `builder.AttachmentLayoutTypes.Carousel` — это синтаксис для коллекций с каруселью.
 
@@ -953,4 +953,3 @@ Teams поддерживает карточки квитанции. Это ка�
 * [Карточки формата](~/task-modules-and-cards/cards/cards-format.md)
 * [Актуальные карточки](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/up-to-date-views.md)
 * [Работа с универсальными действиями для адаптивных карточек](~/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/work-with-universal-actions-for-adaptive-cards.md)
-* [Отзывы о завершении формы](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)
