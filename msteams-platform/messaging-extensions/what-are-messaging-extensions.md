@@ -1,18 +1,18 @@
 ---
-title: расширения для обмена сообщениями;
+title: Расширения для система обмена сообщениями
 author: surbhigupta
 description: Обзор расширений обмена сообщениями на Microsoft Teams платформе
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: baef9ac9bb15b3b2efd7b05b36966c5e6d30083c
-ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
+ms.openlocfilehash: 975a51850e7e9d0049de46fc8d77016166ffedab
+ms.sourcegitcommit: 55d4b4b721a33bacfe503bc646b412f0e3b0203e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61216225"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62185451"
 ---
-# <a name="messaging-extensions"></a>расширения для обмена сообщениями;
+# <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
 
 Расширения обмена сообщениями позволяют пользователям взаимодействовать с веб-службой с помощью кнопок и форм Microsoft Teams клиента. Они могут искать или инициировать действия во внешней системе из области композитного сообщения, командного окна или непосредственно из сообщения. Результаты этого взаимодействия можно отправить клиенту Microsoft Teams в виде богато отформатированной карты. В этом документе представлен обзор расширения обмена сообщениями, задач, выполняемых в различных сценариях, работы над расширением обмена сообщениями, команд действий и поиска и разгрузки ссылок.
 
@@ -70,6 +70,160 @@ ms.locfileid: "61216225"
 ![unfurl link](../assets/images/messaging-extension/unfurl-link.png)
 
 ![разгрузка ссылки](../assets/images/messaging-extension/link-unfurl.gif)
+
+## <a name="code-snippets"></a>Фрагменты кода
+
+В следующем коде приводится пример действий, основанных на расширении обмена сообщениями:
+
+# <a name="c"></a>[C#](#tab/dotnet)
+
+```csharp
+
+ protected override Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
+        {
+            // Handle different actions using switch
+            switch (action.CommandId)
+            {
+                case "HTML":
+                    return new MessagingExtensionActionResponse
+                    {
+                        Task = new TaskModuleContinueResponse
+                        {
+                            Value = new TaskModuleTaskInfo
+                            {
+                                Height = 200,
+                                Width = 400,
+                                Title = "Task Module HTML Page",
+                                Url = baseUrl + "/htmlpage.html",
+                            },
+                        },
+                    };
+                // return TaskModuleHTMLPage(turnContext, action);
+                default:
+                    string memberName = "";
+                    var member = await TeamsInfo.GetMemberAsync(turnContext, turnContext.Activity.From.Id, cancellationToken);
+                    memberName = member.Name;
+                    return new MessagingExtensionActionResponse
+                    {
+                        Task = new TaskModuleContinueResponse
+                        {
+                            Value = new TaskModuleTaskInfo
+                            {
+                                Card = <<AdaptiveAction card json>>,
+                                Height = 200,
+                                Width = 400,
+                                Title = $"Welcome {memberName}",
+                            },
+                        },
+                    };
+            }
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+
+    async handleTeamsMessagingExtensionFetchTask(context, action) {
+        switch (action.commandId) {
+            case 'Static HTML':
+                return staticHtmlPage();
+        }
+    }
+
+    staticHtmlPage(){
+        return {
+            task: {
+                type: 'continue',
+                value: {
+                    width: 450,
+                    height: 125,
+                    title: 'Task module Static HTML',
+                    url: `${baseurl}/StaticPage.html`
+                }
+            }
+        };
+    }
+
+```
+
+---
+
+В следующем коде приводится пример поиска, основанного на расширении обмена сообщениями:
+
+# <a name="c"></a>[C#](#tab/dotnet)
+
+```csharp
+
+protected override async Task<MessagingExtensionResponse> OnTeamsMessagingExtensionQueryAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionQuery query, CancellationToken cancellationToken)
+        {
+            var text = query?.Parameters?[0]?.Value as string ?? string.Empty;
+
+            var packages = new[] {
+            new { title = "A very extensive set of extension methods", value = "FluentAssertions" },
+            new { title = "Fluent UI Library", value = "FluentUI" }};
+
+            // We take every row of the results and wrap them in cards wrapped in MessagingExtensionAttachment objects.
+            // The Preview is optional, if it includes a Tap, that will trigger the OnTeamsMessagingExtensionSelectItemAsync event back on this bot.
+            var attachments = packages.Select(package =>
+            {
+                var previewCard = new ThumbnailCard { Title = package.title, Tap = new CardAction { Type = "invoke", Value = package } };
+                if (!string.IsNullOrEmpty(package.title))
+                {
+                    previewCard.Images = new List<CardImage>() { new CardImage(package.title, "Icon") };
+                }
+
+                var attachment = new MessagingExtensionAttachment
+                {
+                    ContentType = HeroCard.ContentType,
+                    Content = new HeroCard { Title = package.title },
+                    Preview = previewCard.ToAttachment()
+                };
+
+                return attachment;
+            }).ToList();
+
+            // The list of MessagingExtensionAttachments must we wrapped in a MessagingExtensionResult wrapped in a MessagingExtensionResponse.
+            return new MessagingExtensionResponse
+            {
+                ComposeExtension = new MessagingExtensionResult
+                {
+                    Type = "result",
+                    AttachmentLayout = "list",
+                    Attachments = attachments
+                }
+            };
+        }
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+
+async handleTeamsMessagingExtensionQuery(context, query) {
+        const searchQuery = query.parameters[0].value;     
+        const attachments = [];
+                const response = await axios.get(`http://registry.npmjs.com/-/v1/search?${ querystring.stringify({ text: searchQuery, size: 8 }) }`);
+                
+                response.data.objects.forEach(obj => {
+                        const heroCard = CardFactory.heroCard(obj.package.name);
+                        const preview = CardFactory.heroCard(obj.package.name);
+                        preview.content.tap = { type: 'invoke', value: { description: obj.package.description } };
+                        const attachment = { ...heroCard, preview };
+                        attachments.push(attachment);
+                });
+    
+                return {
+                    composeExtension:  {
+                           type: 'result',
+                           attachmentLayout: 'list',
+                           attachments: attachments
+                    }
+                };
+            }       
+        }
+```
+
+---
 
 ## <a name="code-sample"></a>Пример кода
 

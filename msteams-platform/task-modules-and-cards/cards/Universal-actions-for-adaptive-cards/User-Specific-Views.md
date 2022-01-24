@@ -4,12 +4,12 @@ description: Узнайте о пользовательских представ
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: a4c110c8b1d1adf7140334d08073f2ef7780fbc5
-ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+ms.openlocfilehash: 645dd43039986f98560798899ac494b9f93c2a49
+ms.sourcegitcommit: 55d4b4b721a33bacfe503bc646b412f0e3b0203e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62081067"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62185437"
 ---
 # <a name="user-specific-views"></a>Пользовательские просмотры
 
@@ -181,7 +181,9 @@ ms.locfileid: "62081067"
 
 В следующем коде приводится пример ответа на вызов для возврата адаптивных карт:
 
-```C#
+### <a name="c"></a>[C#](#tab/C)
+
+```csharp
 string cardJson = "<adaptive card json>";
 var card = JsonConvert.DeserializeObject(cardJson);
 
@@ -192,6 +194,26 @@ var adaptiveCardResponse = JObject.FromObject(new
     value = card
  });
 ```
+
+### <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+var card = "<adaptive card json>";
+ 
+const cardRes = {
+        statusCode: 200,
+        type: 'application/vnd.microsoft.card.adaptive',
+        value: card
+    };
+    const res = {
+        status: 200,
+        body: cardRes
+    };
+    return res;
+
+```
+
+---
 
 Рекомендации по разработке карт, которые необходимо иметь в виду при разработке пользовательских представлений:
 

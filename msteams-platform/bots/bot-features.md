@@ -5,12 +5,12 @@ description: Обзор инструментов и SDKs для создания
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 3c39ed5c39a92967ebf8b90760bd28e7bb6366f3
-ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
+ms.openlocfilehash: fda6092165fa55accbf5348b9850ac94396c05b5
+ms.sourcegitcommit: 55d4b4b721a33bacfe503bc646b412f0e3b0203e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60948386"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62185425"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -112,20 +112,93 @@ BOT: В какой день?
 
 Один из недостатков ботов заключается в том, что трудно поддерживать большую базу знаний по исканию с неоценяемой реакцией. Боты лучше всего подходят для коротких и быстрых взаимодействий, а не для сеяния длинных списков в поисках ответа.
 
+## <a name="code-snippets"></a>Фрагменты кода
+
+В следующем коде приводится пример активности бота для области группы каналов:
+
+# <a name="c"></a>[C#](#tab/dotnet)
+
+```csharp
+
+protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+    var mention = new Mention
+    {
+        Mentioned = turnContext.Activity.From,
+        Text = $"<at>{XmlConvert.EncodeName(turnContext.Activity.From.Name)}</at>",
+    };
+
+    var replyActivity = MessageFactory.Text($"Hello {mention.Text}.");
+    replyActivity.Entities = new List<Entity> { mention };
+
+    await turnContext.SendActivityAsync(replyActivity, cancellationToken);
+}
+
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+
+this.onMessage(async (turnContext, next) => {
+    const mention = {
+        mentioned: turnContext.activity.from,
+        text: `<at>${ new TextEncoder().encode(turnContext.activity.from.name) }</at>`,
+    } as Mention;
+
+    const replyActivity = MessageFactory.text(`Hello ${mention.text}`);
+    replyActivity.entities = [mention];
+
+    await turnContext.sendActivity(replyActivity);
+
+    // By calling next() you ensure that the next BotHandler is run.
+    await next();
+});
+
+```
+
+---
+
+В следующем коде приводится пример активности бота для чата один к одному:
+
+# <a name="c"></a>[C#](#tab/dotnet)
+
+```csharp
+
+// Handle message activity
+protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+    turnContext.Activity.RemoveRecipientMention();
+    var text = turnContext.Activity.Text.Trim().ToLower();
+        await turnContext.SendActivityAsync(MessageFactory.Text($"Your message is {text}."), cancellationToken);
+}
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+this.onMessage(async (context, next) => {
+    await context.sendActivity(MessageFactory.text("Your message is:" + context.activity.text));
+    await next();
+});
+```
+
+---
+
 ## <a name="code-sample"></a>Пример кода
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|----------------|
 | Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Обработчики действий ботов](~/bots/bot-basics.md)
 
 ## <a name="see-also"></a>См. также
 
-* [Боты для звонков и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)
+* [Боты вызовов и собраний](~/bots/calls-and-meetings/calls-meetings-bots-overview.md)
 * [Беседы с ботами](~/bots/how-to/conversations/conversation-basics.md)
 * [Меню команд бота](~/bots/how-to/create-a-bot-commands-menu.md)
 * [Поток проверки подлинности для ботов в Microsoft Teams](~/bots/how-to/authentication/auth-flow-bot.md)

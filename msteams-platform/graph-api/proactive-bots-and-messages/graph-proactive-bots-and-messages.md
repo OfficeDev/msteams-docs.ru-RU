@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: d65be003bd6fe245e8a6ca80ca8823a2e935ff43
-ms.sourcegitcommit: 25a33b31cc56c05169fc52c65d44c65c601aefef
+ms.openlocfilehash: 4fb4ff67ac9ffc156cac87a5d12240f2999a2163
+ms.sourcegitcommit: 55d4b4b721a33bacfe503bc646b412f0e3b0203e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62043226"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62185429"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
@@ -19,7 +19,7 @@ ms.locfileid: "62043226"
 
 Активные сообщения инициировали боты, чтобы начать беседы с пользователем. Они служат многим целям, включая отправку приветствия, проведение опросов или опросов, а также уведомления для всей организации вещания. Активные сообщения в Teams могут быть доставлены в качестве бесед на основе **ad-hoc** или **диалогов:**
 
-|Тип сообщения | Description |
+|Тип сообщения | Описание |
 |----------------|-------------- |
 |Ad-hoc proactive message| Бот перенабивает сообщение, не прерывая поток беседы.|
 |Упреждающие сообщения на основе диалогов | Бот создает новый диалоговое нить, контролирует беседу, доставляет проактивное сообщение, закрывает и возвращает контроль в предыдущий диалог.|
@@ -28,11 +28,11 @@ ms.locfileid: "62043226"
 
 Прежде чем ваш бот сможет активно отправлять сообщения пользователю, он должен быть установлен как личное приложение или в команде, в которой пользователь является участником. Иногда необходимо заблаговременно отправлять сообщения пользователям, которые не установили или ранее не взаимодействовали с вашим приложением. Например, необходимо отправлять важные сведения всем в вашей организации. Для таких сценариев можно использовать API microsoft Graph для активной установки бота для пользователей.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 Разрешения типа ресурсов Microsoft Graph [TeamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) помогают управлять жизненным циклом установки приложения для всех областей пользовательского (личного) или командного (канала) в Microsoft Teams платформе:
 
-|Разрешение приложения | Description|
+|Разрешение приложения | Описание|
 |------------------|---------------------|
 |`TeamsAppInstallation.ReadWriteSelfForUser.All`|Позволяет приложению Teams чтение, установку, обновление и самоустановку для любого пользователя без предварительного входе или использования.|
 |`TeamsAppInstallation.ReadWriteSelfForTeam.All`|Позволяет приложению Teams читать, устанавливать, обновлять и удалить себя в любой команде без предварительного входе или использования.|
@@ -187,16 +187,61 @@ Content-Type: application/json
 
 Ваш бот может [отправлять упреждающие](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) сообщения после того, как бот был добавлен для пользователя или группы и получил всю информацию о пользователе.
 
+## <a name="code-snippets"></a>Фрагменты кода
+
+В следующем коде приводится пример отправки упреждающих сообщений:
+
+# <a name="c"></a>[C#](#tab/dotnet)
+
+```csharp
+public async Task<int> SendNotificationToAllUsersAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+   int msgSentCount = 0;
+
+   // Send notification to all the members
+   foreach (var conversationReference in _conversationReferences.Values)
+   {
+       await turnContext.Adapter.ContinueConversationAsync(_configuration["MicrosoftAppId"], conversationReference, BotCallback, cancellationToken);
+       msgSentCount++;
+   }
+
+   return msgSentCount;
+}
+
+private async Task BotCallback(ITurnContext turnContext, CancellationToken cancellationToken)
+{
+   await turnContext.SendActivityAsync("Proactive hello.");
+}
+```
+
+# <a name="nodejs"></a>[Node.js](#tab/nodejs)
+
+```javascript
+server.get('/api/notify', async (req, res) => {
+    for (const conversationReference of Object.values(conversationReferences)) {
+        await adapter.continueConversationAsync(process.env.MicrosoftAppId, conversationReference, async context => {
+            await context.sendActivity('proactive hello');
+        });
+    }
+
+    res.setHeader('Content-Type', 'text/html');
+    res.writeHead(200);
+    res.write('<html><body><h1>Proactive messages have been sent.</h1></body></html>');
+    res.end();
+});
+```
+---
+
 ## <a name="code-sample"></a>Пример кода
 
-| **Имя образца** | **Описание** | **.NET** | **Node.js** |
+| **Название примера** | **Описание** | **.NET** | **Node.js** |
 |---------------|--------------|--------|-------------|
-| Активная установка приложения и отправка упреждающих уведомлений | В этом примере показано, как можно использовать активную установку приложения для пользователей и отправлять упреждающие уведомления, вызывая API Graph Microsoft. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
+| Упреждающая установка приложений и отправка упреждающих уведомлений | В этом примере показано, как использовать упреждающую установку приложений для пользователей и отправлять упреждающие уведомления, вызывая API Microsoft Graph. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
 
 ## <a name="additional-code-samples"></a>Дополнительные примеры кода
 >
 > [!div class="nextstepaction"]
-> [**Teams примеры кода проактивных сообщений**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)
+> [**Примеры кода упреждающих сообщений в Teams**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)
 
 ## <a name="see-also"></a>См. также
 
