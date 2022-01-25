@@ -6,12 +6,12 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview of multiple environment
 ms.date: 11/29/2021
-ms.openlocfilehash: 1c0bb7eb75ee982e7c08d3039e59f03fc7f18146
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
+ms.openlocfilehash: 5aa701bc884a290c5030d54c67d31dd47d794d94
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768466"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212470"
 ---
 # <a name="manage-multiple-environments-in-teams-toolkit"></a>Управление несколькими средами в Teams набор средств
 
@@ -78,8 +78,8 @@ Teams набор средств позволяет изменять файлы �
 | Сценарии | Расположение| Описание |
 | --- | --- | --- |
 | Настройка ресурса Azure | <ul> <li>Bicep files under `templates/azure` .</li> <li>`.fx/azure.parameters.<envName>.json`.</li></ul> | [Настройка ARM параметров и шаблонов](provision.md#customize-arm-parameters-and-templates). |
-| Повторное использование существующего AAD приложения для Teams приложения | <ul> <li>`auth` раздел в `.fx/config.<envName>.json` .</li> </ul> |  [Используйте существующее приложение AAD для Teams приложения.](provision.md#use-an-existing-aad-app-for-your-teams-app) |
-| Повторное использование существующего AAD приложения для бота | <ul> <li>`bot` раздел в `.fx/config.<envName>.json` .</li> </ul> | [Используйте существующее приложение AAD для бота.](provision.md#use-an-existing-aad-app-for-your-bot) |
+| Повторное использование существующего приложения Azure AD для Teams приложения | <ul> <li>`auth` раздел в `.fx/config.<envName>.json` .</li> </ul> |  [Используйте существующее приложение Azure AD для Teams приложения.](provision.md#use-an-existing-azure-ad-app-for-your-teams-app) |
+| Повторное использование существующего приложения Azure AD для бота | <ul> <li>`bot` раздел в `.fx/config.<envName>.json` .</li> </ul> | [Используйте существующее приложение Azure AD для бота.](provision.md#use-an-existing-azure-ad-app-for-your-bot) |
 | Пропустить добавление пользователя при SQL | <ul> <li>`skipAddingSqlUser` свойство в `.fx/config.<envName>.json` .</li> </ul> | [Пропустить добавление пользователя для SQL базы данных.](provision.md#skip-adding-user-for-sql-database) |
 | Настройка манифеста приложения | <ul> <li>`templates/manifest.remote.template.json`.</li> <li>`manifest` раздел в `.fx/config.<envName>.json` .</li>  </ul> | [Настройка манифеста Teams приложения в Teams набор средств](TeamsFx-manifest-customization.md). |
 

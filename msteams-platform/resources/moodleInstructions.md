@@ -1,17 +1,17 @@
 ---
 title: Установка Moodle LMS
 description: Установка и настройка приложения интеграции Moodle для Microsoft Teams
-keywords: Teams Плагины интеграции приложений Moodle
+keywords: Teams интеграции приложений Moodle
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: f87264adc75e504feddc10f470f739747fb3d96b
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 7460a4f6e1a15df30ebc9b1c50f43b561908c7d4
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60888134"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212386"
 ---
 # <a name="install-moodle-lms"></a>Установка Moodle LMS
 
@@ -20,7 +20,7 @@ ms.locfileid: "60888134"
 > [!NOTE]
 > Чтобы помочь ИТ-администраторам легко настроить интеграцию Moodle и Teams, Microsoft 365 плагины Moodle обновляются для следующих версий:
 >
-> * Авторегистрация сервера Moodle с [помощью Azure Active Directory (Azure AD).](https://azure.microsoft.com/services/active-directory/)
+> * Автоматическая регистрация сервера Moodle с [помощью Azure Active Directory.](https://azure.microsoft.com/services/active-directory/)
 >
 > * Одним щелчком мыши развертывание бота помощника Moodle в Azure.
 >
@@ -57,7 +57,7 @@ ms.locfileid: "60888134"
     >
     > Кроме того, [рекомендуется использовать Microsoft 365 Teams темы.](https://moodle.org/plugins/theme_boost_o365teams)
 
-### <a name="microsoft-365-moodle-plugins"></a>Microsoft 365 Плагины Moodle
+### <a name="microsoft-365-moodle-plugins"></a>Microsoft 365 плагины Moodle
 
 1. Вопишитесь на сервер Moodle в  качестве администратора и выберите администрирование сайта из Параметры, расположенного в левой панели навигации. [](https://docs.moodle.org/22/en/Settings_block)
 
@@ -75,7 +75,7 @@ ms.locfileid: "60888134"
     >
     > * Если у вас нет существующего сайта Moodle, перейдите в [Moodle на репо Azure](https://github.com/azure/moodle) и быстро разверните экземпляр Moodle и настройте его под ваши нужды.
 
-## <a name="2-configure-the-connection-between-the-microsoft-365-plugins-and-azure-active-directory-azure-ad"></a>2. Настройка подключения между плагинами Microsoft 365 и Azure Active Directory (Azure AD)
+## <a name="2-configure-the-connection-between-the-microsoft-365-plugins-and-azure-active-directory"></a>2. Настройка подключения между плагинами Microsoft 365 и Azure Active Directory
 
 Необходимо настроить подключение между плагинами Microsoft 365 Azure AD.
 
@@ -288,7 +288,7 @@ ms.locfileid: "60888134"
 > [!NOTE]
 > Чтобы поделиться с нами любыми запросами или отзывами о функциях, посетите страницу [голосовой связи пользователя.](https://microsoftteams.uservoice.com/forums/916759-moodle)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 - [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
 - [Moodle](https://moodle.org/)

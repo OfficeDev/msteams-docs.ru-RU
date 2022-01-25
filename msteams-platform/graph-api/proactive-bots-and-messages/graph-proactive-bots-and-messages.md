@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: группы проактивной установки чата Graph
-ms.openlocfilehash: 4fb4ff67ac9ffc156cac87a5d12240f2999a2163
-ms.sourcegitcommit: 55d4b4b721a33bacfe503bc646b412f0e3b0203e
+ms.openlocfilehash: 6802c7aed4664969d32b7b183a2dbe6729939493
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62185429"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212407"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
@@ -39,14 +39,14 @@ ms.locfileid: "62185429"
 
 Чтобы использовать эти разрешения, необходимо добавить ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
 
-* **id:** ID Azure Active Directory (AAD) приложения.
+* **id:** Azure Active Directory iD приложения.
 * **ресурс.** URL-адрес ресурса для приложения.
 
 > [!NOTE]
 >
 > * Боту требуется приложение, а не делегированная пользователем разрешения, так как установка для других пользователей.
 >
-> * Администратор AAD должен явно предоставлять [разрешения приложению.](/graph/security-authorization#grant-permissions-to-an-application) После получения разрешений все члены AAD получают предоставленные разрешения.
+> * Администратор клиента Azure AD должен явно предоставлять разрешения [приложению.](/graph/security-authorization#grant-permissions-to-an-application) После получения разрешений все члены клиента Azure AD получают предоставленные разрешения.
 
 ## <a name="enable-proactive-app-installation-and-messaging"></a>Включить активную установку приложений и обмен сообщениями
 

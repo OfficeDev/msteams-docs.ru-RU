@@ -6,25 +6,25 @@ ms.author: rentu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 1440af663d0c3d26bdad968a7e0549c51d28dccb
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
+ms.openlocfilehash: 9a39b84c3cfa94c410df5774d4a177535e1cfdd6
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768406"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212351"
 ---
 # <a name="collaborate-on-teams-project-using-teams-toolkit"></a>Совместное использование Teams с помощью Teams набор средств
 
-Несколько разработчиков могут работать вместе, чтобы отладить, обеспечить и развернуть для одного проекта TeamsFx, но для этого необходимо вручную установить нужные разрешения Teams App и AAD App.Teams набор средств поддерживает функцию совместной работы, позволяющую разработчикам и владельцу проекта приглашать других разработчиков или сотрудников в проект TeamsFx для отладки, предоставления и развертывания тех же TeamsFx.  проект.
+Несколько разработчиков могут совместно отладить, разработать и развернуть один и тот же проект TeamsFx, но для этого необходимо вручную установить нужные разрешения Teams App и Azure AD App.Teams набор средств поддерживает функцию совместной работы, позволяющую разработчикам и владельцу проекта приглашать других разработчиков или сотрудников в проект TeamsFx для отладки, предоставления и развертывания одного и того же проекта TeamsFx.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Предпосылки учетной записи
 
     Для предоставления облачных ресурсов необходимо иметь следующие учетные записи. Дополнительные сведения см. в приложении подготовка учетных записей [для создания Teams приложения.](accounts.md)
 
-    * Подписка на Microsoft 365
-    * Azure с допустимой подпиской
+  * Подписка на Microsoft 365
+  * Azure с допустимой подпиской
 
 * [Установка Teams набор средств](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии v3.0.0+.
 
@@ -77,8 +77,8 @@ ms.locfileid: "61768406"
   1. Перейдите Teams портал разработчика и выберите Teams приложение по имени или ID приложения.
   2. Выберите **Owners** с левой панели.
   3. Выберите и удалите соавтора.
-  4. Перейдите [Azure Active Directory,](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)выберите **регистрацию приложения** с левой панели и найдите AAD App.
-  5. Выберите **Owners** из левой панели на AAD странице управления приложениями.
+  4. Перейдите [Azure Active Directory,](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)выберите **регистрацию приложения** с левой панели и найдите приложение Azure AD.
+  5. Выберите **Owners** из левой панели на странице управления приложениями Azure AD.
   6. Выберите и удалите соавтора.
 
 > [!NOTE]
@@ -87,6 +87,6 @@ ms.locfileid: "61768406"
 
 ## <a name="see-also"></a>См. также
 
-* [Предоставление облачных ресурсов](provision.md)
-* [Развертывание Teams приложения в облаке](deploy.md)
+* [Подготовка облачных ресурсов](provision.md)
+* [Развертывание приложения Teams в облаке](deploy.md)
 * [Управление несколькими средами](TeamsFx-multi-env.md)

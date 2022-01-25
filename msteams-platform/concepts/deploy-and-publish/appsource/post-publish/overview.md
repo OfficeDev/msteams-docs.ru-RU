@@ -5,14 +5,14 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: b62dd1050dead3174738d5f72a5b667d928128b4
-ms.sourcegitcommit: 5df8c1013005305996e8ded3538e2b5845352720
+ms.openlocfilehash: 5c85d30e595d30a236318d13535584d949b1075a
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61246087"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212414"
 ---
-# <a name="maintain-your-published-microsoft-teams-app"></a>Ведение опубликованного Microsoft Teams приложения
+# <a name="maintain-your-published-microsoft-teams-app"></a>Поддержка опубликованного приложения Microsoft Teams
 
 С помощью приложения, перечисленного в Microsoft Teams магазине, начните думать о том, как вы будете поддерживать приложение в будущем и увеличить загрузки и использования.
 
@@ -44,7 +44,7 @@ ms.locfileid: "61246087"
 * Добавьте личную вкладку.
 * Добавьте вкладку канал и группу.
 * Добавьте соединителю.
-* Изменение конфигураций, связанных с регистрацией Azure Active Directory приложения Azure AD. Дополнительную информацию см. в статье [`webApplicationInfo`](~/resources/schema/manifest-schema.md#webapplicationinfo).
+* Изменение конфигураций, связанных с регистрацией Azure Active Directory приложения. Дополнительную информацию см. в статье [`webApplicationInfo`](~/resources/schema/manifest-schema.md#webapplicationinfo).
 
 ## <a name="fix-issues-with-your-published-app"></a>Устранение проблем с опубликованным приложением
 

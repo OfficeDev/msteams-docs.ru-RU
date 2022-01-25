@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.openlocfilehash: b358b7bbdd780851eedb78ca2151bc062d402f99
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: 597896d79408fa596e9949166fceda97ef440d07
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059618"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212007"
 ---
 # <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Включите предложение SaaS в Microsoft Teams приложение
 
@@ -49,7 +49,7 @@ ms.locfileid: "62059618"
 
 * Определите модель подписки. Предложение SaaS с возможностью трансактабельного использования может включать несколько планов подписки. Общедоступные планы подписки, доступные для всех, являются наиболее распространенными, но вы также можете нацелить конкретных клиентов с предложениями только для них. Дополнительные сведения см. в [частных предложениях на коммерческом рынке Майкрософт.](/azure/marketplace/private-offers)
 * Ознакомьтесь с вариантом продажи через [ *Microsoft*](/azure/marketplace/plan-saas-offer#listing-options) для предложения SaaS, который необходим, если вы хотите, чтобы пользователи приобретали планы подписки на ваше приложение непосредственно в Teams магазине.
-* Узнайте, Azure Active Directory (Azure AD) один вход [(SSO)](/azure/marketplace/azure-ad-saas) помогает клиентам приобретать и управлять подписками. (SSO Azure AD требуется для Teams приложений с предложениями SaaS.)
+* Узнайте, Azure Active Directory один вход [(SSO)](/azure/marketplace/azure-ad-saas) помогает клиентам приобретать и управлять подписками. (SSO Azure AD требуется для Teams приложений с предложениями SaaS.)
 * Поймите, что вы несете ответственность за управление инфраструктурой, необходимой для поддержки использования вашими клиентами предложения SaaS.
 * Планирование мобильной связи. Чтобы не нарушать политики сторонних магазинов приложений, приложение не может включать ссылки, позволяющие пользователям приобретать планы подписки на мобильный телефон. Однако вы все равно можете указать, есть ли в вашем приложении функции, которые требуют подписки. Дополнительные сведения см. в соответствующих [политиках сертификации](/legal/marketplace/certification-policies#114048-mobile-experience)коммерческих рынков.
 

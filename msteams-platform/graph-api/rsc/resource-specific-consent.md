@@ -5,13 +5,13 @@ ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-keywords: команды авторизации OAuth SSO AAD rsc Graph
-ms.openlocfilehash: abd56787c89fde44f7cc4c72f0f59e66b05af9aa
-ms.sourcegitcommit: 37b1724bb0d2f1b087c356e0fd0ff80145671e22
+keywords: команды авторизации OAuth SSO Azure AD rsc Graph
+ms.openlocfilehash: 6a7c55cefa77d67ff41f8e8154ac05aacb5efe5b
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60291634"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212365"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -28,7 +28,7 @@ ms.locfileid: "60291634"
 
 ### <a name="resource-specific-permissions-for-a-team"></a>Разрешения на использование ресурсов для группы
 
-|Разрешение приложения| Action |
+|Разрешение приложения| Действие |
 | ----- | ----- |
 |TeamSettings.Read.Group | Получите параметры этой группы.|
 |TeamSettings.ReadWrite.Group|Обновление параметров этой группы.|
@@ -51,7 +51,7 @@ ms.locfileid: "60291634"
 
 В следующей таблице вы можете получить разрешения на доступ к ресурсам для чата:
 
-|Разрешение приложения| Action |
+|Разрешение приложения| Действие |
 | ----- | ----- |
 | ChatSettings.Read.Chat         | Получите параметры этого чата.                                    |
 | ChatSettings.ReadWrite.Chat    | Обновление параметров этого чата.                          |
@@ -71,15 +71,15 @@ ms.locfileid: "60291634"
 Дополнительные сведения см. в [материале Chat Resource-specific consent permissions.](/graph/permissions-reference#chat-resource-specific-consent-permissions)
 
 > [!NOTE]
-> Разрешения на использование ресурсов доступны только Teams приложениям, установленным на клиенте Teams и в настоящее время не являются частью портала Azure Active Directory (AAD).
+> Разрешения на использование ресурсов доступны только Teams приложениям, установленным на Teams клиенте, и в настоящее время не являются частью портала Azure Active Director.
 
 ## <a name="enable-rsc-in-your-application"></a>Включить RSC в приложении
 
-1. [Настройка параметров согласия на AAD портале](#configure-consent-settings-in-the-aad-portal).
+1. [Настройка параметров согласия на портале Azure AD.](#configure-consent-settings-in-the-azure-ad-portal)
     1. Настройка параметров согласия владельца группы [для RSC в команде.](#configure-group-owner-consent-settings-for-rsc-in-a-team)
     1. [Настройка параметров согласия пользователей для RSC в чате.](#configure-user-consent-settings-for-rsc-in-a-chat)
-1. [Зарегистрируйте свое приложение платформа удостоверений Майкрософт с помощью AAD портала](#register-your-app-with-microsoft-identity-platform-using-the-aad-portal).
-1. [Просмотрите разрешения приложения на портале AAD.](#review-your-application-permissions-in-the-aad-portal)
+1. [Зарегистрируйте свое приложение платформа удостоверений Майкрософт с помощью портала Azure AD.](#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal)
+1. [Просмотрите разрешения приложений на портале Azure AD.](#review-your-application-permissions-in-the-azure-ad-portal)
 1. [Получение маркера доступа с платформы удостоверений.](#obtain-an-access-token-from-the-microsoft-identity-platform)
 1. [Обновление манифеста Teams приложения](#update-your-teams-app-manifest).
 1. [Установите приложение непосредственно в Teams.](#sideload-your-app-in-teams)
@@ -87,7 +87,7 @@ ms.locfileid: "60291634"
     1. [Проверьте приложение для добавленных разрешений RSC в команде.](#check-your-app-for-added-rsc-permissions-in-a-team)
     1. [Проверьте приложение для добавленных разрешений RSC в чате.](#check-your-app-for-added-rsc-permissions-in-a-chat)
 
-## <a name="configure-consent-settings-in-the-aad-portal"></a>Настройка параметров согласия на AAD портале
+## <a name="configure-consent-settings-in-the-azure-ad-portal"></a>Настройка параметров согласия на портале Azure AD
 
 ### <a name="configure-group-owner-consent-settings-for-rsc-in-a-team"></a>Настройка параметров согласия владельца группы для RSC в команде
 
@@ -113,30 +113,30 @@ ms.locfileid: "60291634"
 
 Кроме того, вы можете включить или отключить согласие пользователя с помощью PowerShell, следуйте шагам, описанным в настройке согласия пользователя [с помощью PowerShell.](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-powershell)
 
-## <a name="register-your-app-with-microsoft-identity-platform-using-the-aad-portal"></a>Регистрация приложения с помощью платформа удостоверений Майкрософт с помощью AAD портала
+## <a name="register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal"></a>Регистрация приложения с помощью платформа удостоверений Майкрософт с помощью портала Azure AD
 
-Портал AAD предоставляет центральную платформу для регистрации и настройки приложений. Ваше приложение должно быть зарегистрировано на портале AAD для интеграции с платформой удостоверений и вызова API microsoft Graph API. Дополнительные сведения см. [в примере зарегистрировать приложение с помощью платформы удостоверений.](/graph/auth-register-app-v2)
+Портал Azure AD предоставляет центральную платформу для регистрации и настройки приложений. Ваше приложение должно быть зарегистрировано на портале Azure AD для интеграции с платформой удостоверений и вызова API microsoft Graph API. Дополнительные сведения см. [в примере зарегистрировать приложение с помощью платформы удостоверений.](/graph/auth-register-app-v2)
 
 > [!WARNING]
-> ID AAD приложения не должен быть общим для нескольких Teams приложений. Должно быть сопоставление 1:1 между приложением Teams и AAD приложением. Попытки установить несколько Teams приложений, связанных с одинаковым AAD, могут привести к сбоям в установке или запуске.
+> ID приложения Azure AD не должен быть общим для нескольких Teams приложений. Должно быть сопоставление 1:1 между приложением Teams и приложением Azure AD. Попытки установить несколько Teams приложений, связанных с тем же ИД приложения Azure AD, могут привести к сбоям в установке или запуске.
 
-## <a name="review-your-application-permissions-in-the-aad-portal"></a>Просмотрите разрешения приложения на AAD портале
+## <a name="review-your-application-permissions-in-the-azure-ad-portal"></a>Просмотр разрешений приложения на портале Azure AD
 
 1. Перейдите на **страницу**  >  **регистрации домашнего приложения** и выберите приложение RSC.
 1. Выберите **разрешения API** с левой области и перейдите по списку настроенных разрешений **для** вашего приложения. Если приложение делает вызовы API Graph RSC, удалите все разрешения на этой странице. Если ваше приложение также вызывает не RSC, храните эти разрешения по мере необходимости.
 
 > [!IMPORTANT]
-> Портал AAD не может использоваться для запроса разрешений RSC. Разрешения RSC в настоящее время являются исключительными для Teams приложений, установленных в клиенте Teams и объявляются в файле манифеста Teams приложения (JSON).
+> Портал Azure AD не может использоваться для запроса разрешений RSC. Разрешения RSC в настоящее время являются исключительными для Teams приложений, установленных в клиенте Teams и объявляются в файле манифеста Teams приложения (JSON).
 
 ## <a name="obtain-an-access-token-from-the-microsoft-identity-platform"></a>Получение маркера доступа из платформа удостоверений Майкрософт
 
-Чтобы сделать Graph API, необходимо получить маркер доступа для приложения с платформы удостоверений. Прежде чем приложение сможет получить маркер с платформы удостоверений, его необходимо зарегистрировать на AAD портале. Маркер доступа содержит сведения о приложении и его разрешениях на доступ к ресурсам и API, доступным через Microsoft Graph.
+Чтобы сделать Graph API, необходимо получить маркер доступа для приложения с платформы удостоверений. Прежде чем приложение сможет получить маркер с платформы удостоверений, его необходимо зарегистрировать на портале Azure AD. Маркер доступа содержит сведения о приложении и его разрешениях на доступ к ресурсам и API, доступным через Microsoft Graph.
 
-Для получения маркера доступа с платформы удостоверений должны быть следующие значения AAD процесса регистрации:
+Для получения маркера доступа с платформы удостоверений необходимо иметь следующие значения из процесса регистрации Azure AD:
 
 - ID **приложения,** присвоенный порталом регистрации приложений. Если приложение поддерживает один вход (SSO), необходимо использовать тот же ИД приложения для приложения и SSO.
 - Секрет **клиента/пароль или** пара ключей общего или частного доступа, которая является **сертификатом.** Это необязательно для нативных приложений;
-- **URL-адрес URI** перенаправления или ответ для приложения для получения ответов из AAD.
+- **URL-адрес URI** перенаправления или ответ для приложения для получения ответов из Azure AD.
 
 Дополнительные сведения см. [в статью Получить](/graph/auth-v2-user?view=graph-rest-1.0#3-get-a-token&preserve-view=true) доступ от имени пользователя и [получить доступ без пользователя.](/graph/auth-v2-service)
 
@@ -146,8 +146,8 @@ ms.locfileid: "60291634"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |Строка |ID AAD приложения. Дополнительные сведения см. [в приложении на](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal)портале AAD.|
-|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal)|
+|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 |`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в ресурсных разрешениях.](resource-specific-consent.md#resource-specific-permissions)|
 
 >
@@ -208,7 +208,7 @@ ms.locfileid: "60291634"
 > [!NOTE]
 > Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и `applicationPermissions` чата.
 
-## <a name="sideload-your-app-in-teams"></a>Sideload ваше приложение в Teams
+## <a name="sideload-your-app-in-teams"></a>Загрузка неопубликованного приложения в Teams
 
 Если администратор Teams позволяет настраивать загрузки приложений, [](~/concepts/deploy-and-publish/apps-upload.md) вы можете загрузить приложение непосредственно в определенную группу или чат.
 

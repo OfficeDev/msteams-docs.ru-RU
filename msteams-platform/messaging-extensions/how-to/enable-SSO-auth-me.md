@@ -5,12 +5,12 @@ description: Узнайте, как включить SSO-поддержку ра
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 3da2c19debd3275266b4f96ce62bdfb0c85c353b
-ms.sourcegitcommit: ba911ce3de7d096514f876faf00e4174444e2285
+ms.openlocfilehash: de0f08cf73c5ba353398693b95c94d45be2eb727
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61178253"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212554"
 ---
 # <a name="single-sign-on-support-for-messaging-extensions"></a>Поддержка единого входного знака для расширений обмена сообщениями
  
@@ -21,8 +21,9 @@ ms.locfileid: "61178253"
 ## <a name="prerequisites"></a>Предварительные требования
 
 Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
+
 * У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/free/)
-* Необходимо настроить приложение через портал AAD, а также обновить Teams, как определено в регистрации приложения на портале [AAD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-aad-portal)
+* Необходимо настроить приложение через портал Azure AD и обновить Teams манифеста бота, как определено в регистрации приложения на [портале Azure AD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-azure-ad-portal)
 
 > [!NOTE]
 > Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов.](../../bots/how-to/authentication/auth-aad-sso-bots.md)

@@ -5,13 +5,13 @@ ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
-keywords: команды авторизации OAuth SSO AAD rsc Postman Graph
-ms.openlocfilehash: fc926e307c2e3ee5d1336c09e264930abe20d9d0
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+keywords: команды авторизации OAuth SSO Azure AD rsc postman Graph
+ms.openlocfilehash: fe3819b0da9783a6cf3aacac08a6045337e27600
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887722"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212484"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
@@ -23,7 +23,7 @@ ms.locfileid: "60887722"
 > [!NOTE]
 > Чтобы проверить разрешения RSC, Teams манифест приложения должен включать ключ **webApplicationInfo,** населённый следующими полями:
 >
-> - **id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-aad-portal).
+> - **id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).
 > - **ресурс**. Любая строка, см. примечание в [обновлении манифеста Teams приложения](resource-specific-consent.md#update-your-teams-app-manifest).
 > - **Разрешения приложения:** разрешения RSC для вашего приложения см. в [приложении Resource-specific Permissions.](resource-specific-consent.md#resource-specific-permissions)
 
@@ -81,7 +81,7 @@ ms.locfileid: "60887722"
 >[!NOTE]
 >Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и `applicationPermissions` чата.
 
->Если приложение предназначено для доступа к API вызовов и мультимедиа, то должен быть AAD Id приложения службы `webApplicationInfo.Id` [Azure Bot.](/graph/cloud-communications-get-started#register-a-bot)
+>Если приложение предназначено для доступа к API вызовов и мультимедиа, то должен быть id приложения `webApplicationInfo.Id` Azure AD [службы Azure Bot.](/graph/cloud-communications-get-started#register-a-bot)
 
 ## <a name="test-added-rsc-permissions-to-a-team-using-the-postman-app"></a>Test added RSC permissions to a team using the Postman app
 
@@ -105,7 +105,7 @@ ms.locfileid: "60887722"
 * `azureADAppId`: ID приложения Azure AD в вашем приложении.
 * `azureADAppSecret`Пароль приложения Azure AD.
 * `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default .
-* `tenantId`: Имя или AAD объекта вашего клиента.
+* `tenantId`: Имя или ID объекта Azure AD клиента.
 * `chatId`: Вы можете получить id потока чата из Teams *веб-клиента* следующим образом:
 
     1. В веб Teams клиенте выберите **Чат из** левой панели навигации.

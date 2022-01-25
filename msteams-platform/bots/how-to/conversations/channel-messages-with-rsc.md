@@ -4,12 +4,12 @@ author: surbhigupta12
 description: Получение всех сообщений канала с разрешениями RSC
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: abe6bc821c9e4ffe05b1cf35480f9c559401014e
-ms.sourcegitcommit: 55d4b4b721a33bacfe503bc646b412f0e3b0203e
+ms.openlocfilehash: e499b414a91f815bfe84172a8559f3b7cfd6d839
+ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62185444"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62212456"
 ---
 # <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
@@ -35,7 +35,7 @@ ms.locfileid: "62185444"
 
 Ниже приводится пример `webApplicationInfo` объекта:
 
-* **id:** ID Azure Active Directory (AAD) приложения. Это может быть то же самое, что и ваш бот-ИД.
+* **id:** Azure Active Directory iD приложения. Это может быть то же самое, что и ваш бот-ИД.
 * **ресурс.** Любая строка. Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибки.
 * **applicationPermissions:** разрешения RSC для вашего приложения с `ChannelMessage.Read.Group` должны быть указаны. Дополнительные сведения см. [в ресурсных разрешениях.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#resource-specific-permissions)
 
