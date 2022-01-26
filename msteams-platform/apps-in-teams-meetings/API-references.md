@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams apps meetings user participant role api usercontext notification signal signal query
-ms.openlocfilehash: 3ec6539e8a4970a00650c1bc35d72ea656a0eb38
-ms.sourcegitcommit: 0ae40fdf74b43834160821956b754cab94a60bb7
+ms.openlocfilehash: 74d1082d1f3bbfeb3b2b1a96c321832799315b55
+ms.sourcegitcommit: 9bfa6b943b065c0a87b1fff2f5edc278916d624a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61558710"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214335"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -48,9 +48,9 @@ API `GetParticipant` включает следующие параметры за
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
-|**participantId**| Строка | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
-|**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. | 
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK.|
+|**participantId**| String | Да | ID участника — это пользовательский ИД. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID участника из SSO tab. |
+|**tenantId**| Строка | Да | Для пользователей-клиентов требуется ID клиента. Он доступен в вкладке SSO, Bot Invoke и Teams клиентской SDK. Рекомендуется получить ID клиента из SSO tab. |
 
 ### <a name="example"></a>Пример
 
@@ -250,7 +250,7 @@ API сведений о собраниях включает в себя след
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**meetingId**| Строка | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
+|**meetingId**| String | Да | Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. |
 
 ### <a name="example"></a>Пример
 
@@ -300,6 +300,63 @@ The JSON response body for Meeting Details API is as follows:
     }
 } 
 ```
+
+## <a name="cart-api"></a>API КОРЗИНЫ
+
+API CART предоставляет конечную точку POST для подписей Microsoft Teams CART, закрытых подписей в человеческом типе. Текстовое содержимое, отправленное в эту конечную точку, отображается конечным пользователям на собрании Microsoft Teams при включении подписей.
+
+### <a name="cart-url"></a>URL-адрес КОРЗИНЫ
+
+URL-адрес КОРЗИНЫ конечной точки  POST можно получить на странице Параметры собрания на Microsoft Teams собрании. Дополнительные сведения см. в [подписях CART в Microsoft Teams собрании.](https://support.microsoft.com/office/use-cart-captions-in-a-microsoft-teams-meeting-human-generated-captions-2dd889e8-32a8-4582-98b8-6c96cf14eb47) Вам не нужно изменять URL-адрес КОРЗИНЫ для использования подписей CART.
+
+#### <a name="query-parameter"></a>Параметр запроса
+
+URL-адрес CART содержит следующие параметры запроса:
+
+|Значение|Тип|Обязательный|Описание|
+|---|---|----|----|
+|**meetingId**| String | Да |Идентификатор собрания доступен через Bot Invoke и Teams клиентской SDK. <br/>Например, meetingid=%7b%22tId%22%3a%2272f234bf-86f1-41af-91ab-2d7cd0321b47%22%2c%22oId%22%3a%22e071f268-42411-47f8-8cf3-fc6b84437f23%22%2c%22thId%22%3a%2219%3ameeting_NzJiMjNkMGQtYzk3NS00ZDI1LWJjN2QtMDgyODVhZmI3NzJj%40thread.v2%22%22%22mId%22%22%3a%220%22%7d|
+|**маркер**| String | Да |Маркер авторизации.<br/> Например, token=04751eac |
+
+#### <a name="example"></a>Пример
+
+```http
+https://api.captions.office.microsoft.com/cartcaption?meetingid=%7b%22tId%22%3a%2272f234bf-86f1-41af-91ab-2d7cd0321b47%22%2c%22oId%22%3a%22e071f268-4241-47f8-8cf3-fc6b84437f23%22%2c%22thId%22%3a%2219%3ameeting_NzJiMjNkMGQtYzk3NS00ZDI1LWJjN2QtMDgyODVhZmI3NzJj%40thread.v2%22%2c%22mId%22%3a%220%22%7d&token=gjs44ra
+```
+
+### <a name="method"></a>Метод
+
+|Ресурс|Метод|Описание|
+|----|----|----|
+|/cartcaption|POST|Обработка подписей для собрания, которое было начато|
+
+> [!NOTE]
+> Убедитесь, что тип контента для всех запросов является простым текстом с кодификатом UTF-8. В теле запроса содержатся только подписи.
+
+#### <a name="example"></a>Пример
+
+```http
+POST /cartcaption?meetingid=04751eac-30e6-47d9-9c3f-0b4ebe8e30d9&token=04751eac&lang=en-us HTTP/1.1
+Host: api.captions.office.microsoft.com
+Content-Type: text/plain
+Content-Length: 22
+Hello I’m Cortana, welcome to my meeting. 
+```
+
+> [!Note]  
+> Каждый запрос POST создает новую строку подписей. Чтобы у конечных пользователей было достаточно времени для чтения контента, ограничив каждое тело запроса POST 80-120 символами.
+
+### <a name="error-codes"></a>Коды ошибок
+
+API CART включает следующие коды ошибок:
+
+|Код ошибки|Описание|
+|---|---|
+| **400** | Плохой запрос. В органе ответа есть дополнительные сведения. Например, не все представленные параметры.|
+| **401** | Несанкционированный. Плохой или просроченный маркер. Если вы получили эту ошибку, сгенерировать новый URL-адрес КОРЗИНЫ в Teams. |
+| **404** | Собрание не найдено или не началось. Если вы получили эту ошибку, убедитесь, что вы начинаете собрание и выберите подписи к началу. После включения подписей на собрании можно приступить к poSTing подписям в собрании.|
+| **500** |Внутренняя ошибка сервера. Дополнительные сведения можно получить [в службе поддержки контактов или предоставить обратную связь.](../feedback.md)|
+
 ## <a name="real-time-teams-meeting-events"></a>События Teams в режиме реального времени
 
 Пользователь может получать события собраний в режиме реального времени. Как только любое приложение связано с собранием, фактическое время начала и окончания собрания передается боту.
@@ -472,7 +529,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Teams потока проверки подлинности для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
-* [Приложения для Teams собраний](teams-apps-in-meetings.md)
+* [Приложения для собраний Teams](teams-apps-in-meetings.md)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
