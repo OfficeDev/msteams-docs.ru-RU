@@ -4,20 +4,20 @@ author: surbhigupta12
 description: Получение всех сообщений канала с разрешениями RSC
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: e499b414a91f815bfe84172a8559f3b7cfd6d839
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: 520b409b7c3335bf7c936efb4e0bdb46f9d94a89
+ms.sourcegitcommit: abe5ccd61ba3e8eddc1bec01752fd949a7ba0cc2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212456"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281905"
 ---
 # <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
 Модель разрешений для разрешений для конкретного ресурса (RSC), изначально разработанная для Teams Graph API, распространяется на сценарии ботов.
 
-Теперь с помощью RSC можно запрашивать у владельцев команд согласие на получение ботом сообщений пользователей по стандартным каналам в команде без @mentioned. Эта возможность включена, указав разрешение в манифесте включенного `ChannelMessage.Read.Group` приложения RSC Teams. После настройки владельцы команд могут предоставить согласие во время процесса установки приложения.
+Теперь с помощью RSC можно запрашивать у владельцев команд согласие на получение ботом сообщений пользователей по стандартным каналам в команде без @mentioned. Эта возможность включена, указав `ChannelMessage.Read.Group` разрешение в манифесте включенного приложения RSC Teams. После настройки владельцы команд могут предоставить согласие во время процесса установки приложения.
 
-Дополнительные сведения о включаемом RSC для вашего [приложения](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#update-your-teams-app-manifest)см. в Teams.
+Дополнительные сведения о включаемом RSC для вашего [приложения](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#update-your-teams-app-manifest) см. в Teams.
 
 ## <a name="enable-bots-to-receive-all-channel-messages"></a>Включить боты для получения всех сообщений канала
 
@@ -25,19 +25,19 @@ ms.locfileid: "62212456"
 
 > [!NOTE]
 > * Службы, которые нуждаются в доступе ко всем Teams данным сообщений, должны использовать API Graph, которые также предоставляют доступ к архивным данным в каналах и чатах.
-> * Боты должны использовать разрешение RSC надлежащим образом для создания и улучшения взаимодействия пользователей в команде, иначе они не будут `ChannelMessage.Read.Group` проходить утверждение магазина. Описание приложения должно включать использование ботом считыванных данных.
-> * Разрешение RSC не может использоваться ботами для извлечения больших `ChannelMessage.Read.Group` объемов данных клиентов. 
+> * Боты должны использовать `ChannelMessage.Read.Group` разрешение RSC надлежащим образом для создания и улучшения взаимодействия пользователей в команде, иначе они не будут проходить утверждение магазина. Описание приложения должно включать использование ботом считыванных данных.
+> * Разрешение `ChannelMessage.Read.Group` RSC не может использоваться ботами для извлечения больших объемов данных клиентов. 
 
 ## <a name="update-app-manifest"></a>Манифест обновления приложения
 
-Чтобы бот получал все сообщения канала, RSC должен быть настроен в манифесте приложения Teams с разрешения, указанного `ChannelMessage.Read.Group` в `webApplicationInfo` свойстве.
+Чтобы бот получал все сообщения канала, RSC должен `ChannelMessage.Read.Group` быть настроен в манифесте приложения Teams с разрешения, указанного в свойстве`webApplicationInfo`.
 ![Манифест обновления приложения](~/bots/how-to/conversations/Media/appmanifest.png)
 
 Ниже приводится пример `webApplicationInfo` объекта:
 
-* **id:** Azure Active Directory iD приложения. Это может быть то же самое, что и ваш бот-ИД.
-* **ресурс.** Любая строка. Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибки.
-* **applicationPermissions:** разрешения RSC для вашего приложения с `ChannelMessage.Read.Group` должны быть указаны. Дополнительные сведения см. [в ресурсных разрешениях.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#resource-specific-permissions)
+* **id**. Ваш Azure Active Directory ID приложения. Это может быть то же самое, что и ваш бот-ИД.
+* **ресурс**. Любая строка. Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибки.
+* **applicationPermissions**. Должны быть указаны разрешения RSC `ChannelMessage.Read.Group` для вашего приложения. Дополнительные сведения см. [в дополнительных сведениях о разрешениях, определенных для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#resource-specific-permissions).
 
 В следующем коде приводится пример манифеста приложения:
 
@@ -93,7 +93,7 @@ ms.locfileid: "62212456"
 // When rsc is enabled the method will be called even when bot is addressed without being @mentioned
 protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
 {
-        await turnContext.SendActivityAsync(MessageFactory.Text("Using RSC the bot can recieve messages across channles in team without being @mentioned."));
+        await turnContext.SendActivityAsync(MessageFactory.Text("Using RSC the bot can recieve messages across channels in team without being @mentioned."));
 }
 ```
 
