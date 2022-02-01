@@ -5,12 +5,12 @@ ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: fa67f6b1261619565cb62d5e1333367904089244
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: 47ff6d557a76c457dee9d7d976df6f8316d40b89
+ms.sourcegitcommit: abe5ccd61ba3e8eddc1bec01752fd949a7ba0cc2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059611"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281758"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Отправка приложения в Microsoft Teams
 
@@ -38,6 +38,9 @@ ms.locfileid: "62059611"
 1. Выберите ZIP-файл пакета приложения. Отобразится диалоговое окно установки.
 :::image type="content" source="~/assets/images/build-your-first-app/add-teams-app.png" alt-text="Снимок экрана с примером диалогового окна установки приложения Teams.":::
 1. Добавьте приложение в Teams.
+
+> [!NOTE]
+> При добавлении бота в Microsoft Teams вы не сможете получить языковой стандарт Microsoft Teams, так как активность бота не инициируется действием пользователя, например отправкой сообщения, поэтому `turnContext.Activity.GetLocale();` возвращает значение NULL.
 
 ## <a name="troubleshoot-upload-issues"></a>Устранение неполадок при отправке
 
