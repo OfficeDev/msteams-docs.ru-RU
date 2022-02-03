@@ -92,7 +92,7 @@
   items:
     - name: Наборы средств Teams для Visual Studio Code
       items:
-        - name: Основы работы с набором средств Teams
+        - name: Обзор набора средств Teams
           href: toolkit/teams-toolkit-fundamentals.md
         - name: Создание проекта
           href: toolkit/create-new-project.md
@@ -465,6 +465,10 @@
           href: concepts/deploy-and-publish/appsource/resolve-submission-issues.md
         - name: Обслуживание опубликованного приложения
           href: concepts/deploy-and-publish/appsource/post-publish/overview.md
+    - name: Монетизация приложения
+      items:
+        - name: Обзор
+          href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
         - name: Включение предложения SaaS в приложение
           href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
 - name: Манифест приложения
