@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: Событие канала согласия на согласие бот-карты обработить обработник действий
-ms.openlocfilehash: 6350d9f0e280f345780eeac277e334fef867a67f
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 54583fedadbd5a9791daaebf6df842b83aff1f6f
+ms.sourcegitcommit: 9bfa6b943b065c0a87b1fff2f5edc278916d624a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889134"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214336"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 
@@ -33,6 +33,68 @@ Teams обработок действий получен Microsoft Bot Framework
 
 Чтобы реализовать логику для Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Для этих обработчиков не существует базовой реализации, поэтому в переопределяемой логике необходимо добавить логику.
 
+Фрагменты кода для обработчиков Teams действий:
+
+`OnTeamsChannelCreatedAsync`
+
+```csharp
+
+protected override Task OnTeamsChannelCreatedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            // Code logic here
+        }
+```
+
+`OnTeamsChannelDeletedAsync`
+
+```csharp
+
+protected override Task OnTeamsChannelDeletedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            // Code logic here
+        }
+```
+
+`OnTeamsChannelRenamedAsync`
+
+```csharp
+
+protected override Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            // Code logic here
+        }
+```
+
+`OnTeamsTeamRenamedAsync`
+
+```csharp
+
+protected override Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            // Code logic here
+        }
+```
+
+`OnTeamsMembersAddedAsync`
+
+```csharp
+
+protected override Task OnTeamsMembersAddedAsync(IList<TeamsChannelAccount> teamsMembersAdded, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            // Code logic here
+        }
+```
+
+`OnTeamsMembersRemovedAsync`
+
+```csharp
+
+protected override Task OnTeamsMembersRemovedAsync(IList<TeamsChannelAccount> teamsMembersRemoved, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken);
+        {
+            // Code logic here
+        }
+```
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
 Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет входящие действия `onMessage` обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `dispatchConversationUpdateActivity` в . Обработ Teams действий сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
@@ -40,6 +102,68 @@ Teams обработок действий получен Microsoft Bot Framework
 В классе обработчик Teams действий есть два основных обработчиков Teams действий и `dispatchConversationUpdateActivity` `onInvokeActivity` . `dispatchConversationUpdateActivity`маршруты всех действий обновления беседы и `onInvokeActivity` маршруты всех Teams вызывают действия.
 
 Чтобы реализовать логику для Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Определите логику бота для этих обработчиков, а затем обязательно `next()` позвоните в конце. `next()`Позвонив, убедитесь, что следующий обработок выполняется.
+
+Фрагменты кода для обработчиков Teams действий:
+
+`OnTeamsChannelCreatedAsync`
+
+```javascript
+
+onTeamsChannelCreated(async (channelInfo, teamInfo, context, next) => {
+       // code for handling
+        await next()
+    });
+```
+
+`OnTeamsChannelDeletedAsync`
+
+```javascript
+
+onTeamsChannelDeleted(async (channelInfo, teamInfo, context, next) => {
+       // code for handling
+       await next()
+    });
+```
+
+`OnTeamsChannelRenamedAsync`
+
+```javascript
+
+onTeamsChannelRenamed(async (channelInfo, teamInfo, context, next) => {
+       // code for handling
+       await next()
+    });
+```
+
+`OnTeamsTeamRenamedAsync`
+
+```javascript
+
+onTeamsTeamRenamedAsync(async (teamInfo, context, next) => {
+       // code for handling
+       await next()
+    });
+```
+
+`OnTeamsMembersAddedAsync`
+
+```javascript
+
+onTeamsMembersAdded(async (membersAdded, teamInfo, context, next) => {
+       // code for handling
+       await next();
+    });
+```
+
+`OnTeamsMembersRemovedAsync`
+
+```javascript
+
+onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
+       // code for handling
+       await next();
+    });
+```
 
 # <a name="python"></a>[Python](#tab/python)
 
