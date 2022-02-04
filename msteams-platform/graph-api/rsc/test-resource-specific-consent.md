@@ -6,33 +6,211 @@ author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: команды авторизации OAuth SSO Azure AD rsc postman Graph
-ms.openlocfilehash: fe3819b0da9783a6cf3aacac08a6045337e27600
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: 8bde324791199d1369c5accf454774cdc1c9a828
+ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212484"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62362930"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
 > [!NOTE]
 > Согласие на доступ к области чата с конкретными ресурсами доступно только для [предварительного просмотра общедоступных](../../resources/dev-preview/developer-preview-intro.md) разработчиков.
 
-Согласие на использование ресурсов — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами — группами или чатами — в организации. Дополнительные сведения см. в [специальном для ресурса согласии (RSC) — Microsoft Teams Graph API.](resource-specific-consent.md)
+Согласие на использование ресурсов — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами — группами или чатами — в организации. Дополнительные сведения см. [в специальном для ресурса согласии (RSC) — Microsoft Teams Graph API](resource-specific-consent.md).
 
-> [!NOTE]
-> Чтобы проверить разрешения RSC, Teams манифест приложения должен включать ключ **webApplicationInfo,** населённый следующими полями:
->
-> - **id.** ID приложения Azure AD см. в приложении [Register your app in the Azure AD portal](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).
-> - **ресурс**. Любая строка, см. примечание в [обновлении манифеста Teams приложения](resource-specific-consent.md#update-your-teams-app-manifest).
-> - **Разрешения приложения:** разрешения RSC для вашего приложения см. в [приложении Resource-specific Permissions.](resource-specific-consent.md#resource-specific-permissions)
+## <a name="prerequisites"></a>Необходимые компоненты
 
-## <a name="example-for-a-team"></a>Пример для группы
+Убедитесь, что перед тестированием убедитесь, что перед тестированием вы убедитесь в следующих изменениях манифеста приложения для согласия, определенного для ресурсов:
+
+<br>
+
+<details>
+
+<summary><b>Разрешения RSC для манифеста приложения версии 1.12</b></summary>
+
+Добавьте ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
+
+|Имя| Тип | Описание|
+|---|---|---|
+|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+
+Укажите разрешения, необходимые приложению.
+
+|Имя| Тип | Описание|
+|---|---|---|
+|`authorization`|Object|Список разрешений, необходимых приложению. Дополнительные сведения см. в [авторизации](../../resources/schema/manifest-schema.md#authorization).|
+
+Пример RSC в команде
+
 ```json
-"webApplicationInfo":{
-    "id":"XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
-    "resource":"https://AnyString",
-    "applicationPermissions":[
+"webApplicationInfo": {
+    "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
+    "resource": "https://RscBasedStoreApp"
+    },
+"authorization": {
+    "permissions": {
+        "resourceSpecific": [
+            {
+                "name": "TeamSettings.Read.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamSettings.ReadWrite.Group",
+                "type": "Application"
+            },
+            {
+                "name": "ChannelSettings.Read.Group",
+                "type": "Application"
+            },
+            {
+                "name": "ChannelSettings.ReadWrite.Group",
+                "type": "Application"
+            },
+            {
+                "name": "Channel.Create.Group",
+                "type": "Application"
+            },
+            {
+                "name": "Channel.Delete.Group",
+                "type": "Application"
+            },
+            {
+                "name": "ChannelMessage.Read.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsAppInstallation.Read.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.Read.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.Create.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.ReadWrite.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.Delete.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamMember.Read.Group",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsActivity.Send.Group",
+                "type": "Application"
+            }
+        ]    
+    }
+}
+```
+
+Пример RSC в чате
+
+```json
+"webApplicationInfo": {
+    "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
+    "resource": "https://RscBasedStoreApp"
+    },
+"authorization": {
+    "permissions": {
+        "resourceSpecific": [
+            {
+                "name": "ChatSettings.Read.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "ChatSettings.ReadWrite.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "ChatMessage.Read.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "ChatMember.Read.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "Chat.Manage.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.Read.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.Create.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.Delete.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsTab.ReadWrite.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsAppInstallation.Read.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "OnlineMeeting.ReadBasic.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "Calls.AccessMedia.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "Calls.JoinGroupCalls.Chat",
+                "type": "Application"
+            },
+            {
+                "name": "TeamsActivity.Send.Chat",
+                "type": "Application"
+            }
+        ]    
+    }
+}
+```
+    
+> [!NOTE]
+> Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и чата `authorization`.
+
+</details>
+
+<br>
+
+<details>
+
+<summary><b>Разрешения RSC для манифеста приложения версии 1.11 или более ранней версии</b></summary>
+
+Добавьте ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
+
+|Имя| Тип | Описание|
+|---|---|---|
+|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в дополнительных сведениях о разрешениях, определенных для ресурсов](resource-specific-consent.md#resource-specific-permissions).|
+
+Пример RSC в команде
+
+```json
+"webApplicationInfo": {
+    "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
+    "resource": "https://RscBasedStoreApp",
+    "applicationPermissions": [
         "TeamSettings.Read.Group",
         "TeamSettings.ReadWrite.Group",
         "ChannelSettings.Read.Group",
@@ -48,15 +226,16 @@ ms.locfileid: "62212484"
         "TeamMember.Read.Group",
         "TeamsActivity.Send.Group"
     ]
-   }
+  }
 ```
 
-## <a name="example-for-a-chat"></a>Пример для чата
+Пример RSC в чате
+
 ```json
-"webApplicationInfo":{
-    "id":"XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
-    "resource":"https://AnyString",
-    "applicationPermissions":[
+"webApplicationInfo": {
+    "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
+    "resource": "https://RscBasedStoreApp",
+    "applicationPermissions": [
         "ChatSettings.Read.Chat",
         "ChatSettings.ReadWrite.Chat",
         "ChatMessage.Read.Chat",
@@ -72,16 +251,21 @@ ms.locfileid: "62212484"
         "Calls.JoinGroupCalls.Chat",
         "TeamsActivity.Send.Chat"
     ]
-   }
+  }
 ```
+
+<br>
+
+> [!NOTE]
+> Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и чата `applicationPermissions`.
+    
+</details>
 
 > [!IMPORTANT]
 > В манифесте приложения включите только разрешения RSC, которые необходимо иметь вашему приложению.
 
->[!NOTE]
->Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и `applicationPermissions` чата.
-
->Если приложение предназначено для доступа к API вызовов и мультимедиа, то должен быть id приложения `webApplicationInfo.Id` Azure AD [службы Azure Bot.](/graph/cloud-communications-get-started#register-a-bot)
+> [!NOTE]
+> Если приложение предназначено для доступа к API вызовов и мультимедиа, `webApplicationInfo.Id` то должен быть ИД приложения Azure AD [службы Azure Bot](/graph/cloud-communications-get-started#register-a-bot).
 
 ## <a name="test-added-rsc-permissions-to-a-team-using-the-postman-app"></a>Test added RSC permissions to a team using the Postman app
 
@@ -89,10 +273,10 @@ ms.locfileid: "62212484"
 
 * `azureADAppId`: ID приложения Azure AD в вашем приложении.
 * `azureADAppSecret`Пароль приложения Azure AD.
-* `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default .
+* `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default.
 * `teamGroupId`: Вы можете получить id группы группы от клиента Teams следующим образом:
 
-    1. В клиенте Teams выберите **Teams** из левой панели навигации.
+    1. В клиенте Teams **выберите Teams из** левой панели навигации.
     2. Выберите команду, в которой установлено приложение из отсевного меню.
     3. Выберите **значок Дополнительные** параметры (&#8943;).
     4. Выберите **Получить ссылку на команду**. 
@@ -104,7 +288,7 @@ ms.locfileid: "62212484"
 
 * `azureADAppId`: ID приложения Azure AD в вашем приложении.
 * `azureADAppSecret`Пароль приложения Azure AD.
-* `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default .
+* `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default.
 * `tenantId`: Имя или ID объекта Azure AD клиента.
 * `chatId`: Вы можете получить id потока чата из Teams *веб-клиента* следующим образом:
 
@@ -115,10 +299,10 @@ ms.locfileid: "62212484"
 
 ### <a name="use-postman"></a>Использование Postman
 
-1. Откройте [приложение Postman.](https://www.postman.com)
-2. Выберите **файл импорта**  >    >  **файлов,** чтобы загрузить обновленный JSON-файл из среды.  
-3. Выберите **вкладку Collections.** 
-4. Выберите шеврон **>** рядом с **тестом RSC,** чтобы расширить представление сведений и просмотреть запросы API.
+1. Откройте [приложение Postman](https://www.postman.com) .
+2. Выберите **файл** **FileImportImport** >  > **,** чтобы загрузить обновленный JSON-файл из среды.  
+3. Выберите **вкладку Collections** . 
+4. Выберите шеврон **>** рядом с **тестом RSC** , чтобы расширить представление сведений и просмотреть запросы API.
 
 Выполните всю коллекцию разрешений для каждого вызова API. Разрешения, указанные в манифесте приложения, должны быть успешными, а те, которые не указаны, должны не работать с кодом состояния HTTP 403. Проверьте все коды состояния отклика, чтобы подтвердить, что поведение разрешений RSC в вашем приложении соответствует ожиданиям.
 
@@ -129,8 +313,8 @@ ms.locfileid: "62212484"
 
 1. Удалить приложение из определенного ресурса.
 2. Выполните действия для чата или группы: 
-    1. [Test added RSC permissions to a team using Postman.](#test-added-rsc-permissions-to-a-team-using-the-postman-app)
-    2. [Test added RSC permissions to a chat using Postman.](#test-added-rsc-permissions-to-a-chat-using-the-postman-app)
+    1. [Тест добавил разрешения RSC в команду с помощью Postman](#test-added-rsc-permissions-to-a-team-using-the-postman-app).
+    2. [Test added RSC permissions to a chat using Postman](#test-added-rsc-permissions-to-a-chat-using-the-postman-app).
 3. Проверьте все коды состояния отклика, чтобы подтвердить, что конкретные вызовы API сбой с **кодом состояния HTTP 403**.
 
 ## <a name="see-also"></a>См. также

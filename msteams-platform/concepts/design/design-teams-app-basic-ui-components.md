@@ -6,12 +6,12 @@ ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: reference
 keywords: Компоненты пользовательского интерфейса свободно набор breadcrumb кнопки карусель карусель падение карусель карусель пикировщика поворота toggle tooltip
-ms.openlocfilehash: af5d7b63ebdca96f0e9563049e4cc22d00f1f45a
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 40a0c789275d98ab5bfbe74a61aa04a0e2daee32
+ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60887499"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62362965"
 ---
 # <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Разработка приложения Microsoft Teams с базовыми компонентами пользовательского интерфейса Fluent интерфейса
 
@@ -21,14 +21,14 @@ ms.locfileid: "60887499"
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a>пользовательского интерфейса Microsoft Teams набор пользовательского интерфейса включает компоненты и шаблоны, разработанные специально для Teams приложений. В наборе пользовательского интерфейса можно захватить и вставить компоненты, перечисленные здесь непосредственно в дизайн, и увидеть дополнительные примеры использования каждого компонента.
+На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a> пользовательского интерфейса Microsoft Teams набор пользовательского интерфейса включает компоненты и шаблоны, разработанные специально для создания Teams приложений. В наборе пользовательского интерфейса можно захватить и вставить компоненты, перечисленные здесь непосредственно в дизайн, и увидеть дополнительные примеры использования каждого компонента.
 
 > [!div class="nextstepaction"]
 > [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
 
 ## <a name="alert"></a>Оповещение
 
-:::image type="content" source="../../assets/images/components/alert.png" alt-text="В примере показан компонент пользовательского интерфейса оповещения." border="false":::
+:::image type="content" source="../../assets/images/components/alert-button.png" alt-text="В примере показан компонент пользовательского интерфейса оповещения." border="false":::
 
 ## <a name="button"></a>Кнопка
 

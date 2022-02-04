@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Teams документация разработчика
-summary: Добро пожаловать в обзор документации Microsoft Teams разработчика. Microsoft Teams приложения приносят ключевые сведения, общие инструменты и доверенные процессы в места, где люди все чаще собираются, учатся и работают.
+summary: Добро пожаловать в обзор документации Microsoft Teams разработчика. Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
 metadata:
   title: Microsoft Teams документация разработчика
   description: Введение приложений для создания Teams
@@ -12,29 +12,35 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: de250e7f4e744b293abce91998fa7b65ab22c215
-  ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+  ms.openlocfilehash: 7fcabd8bd0eda4bb39718d250e39e2bc228ab191
+  ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/19/2022
-  ms.locfileid: "62081046"
+  ms.lasthandoff: 02/03/2022
+  ms.locfileid: "62362734"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
   - linkListType: concept
     links:
-    - text: Адаптивные карты формируют отзывы о завершении
+    - text: Схема манифеста приложения 1.12
+      url: ~/resources/schema/manifest-schema.md
+    - text: Схема манифеста предварительного просмотра общедоступных разработчиков
+      url: ~/resources/schema/manifest-schema-dev-preview.md
+    - text: Интерактивный режим для обмена этапом собраний
+      url: ~/apps-in-teams-meetings/API-references.md
+    - text: Тестирование предварительного просмотра для монетизированных приложений
+      url: ~/concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
+    - text: Поток покупок в приложении для монетизации приложений
+      url: ~/concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md
+    - text: Отзыв о завершении формы в адаптивных карточках
       url: ~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback
     - text: Выбор людей в адаптивных карточках
       url: ~/task-modules-and-cards/cards/people-picker.md
     - text: Teams набор средств для Visual Studio Code (Предварительный просмотр)
       url: ~/toolkit/teams-toolkit-fundamentals.md
-    - text: Введен новый значок магазина
-      url: ~/concepts/design/personal-apps.md
     - text: Личные вкладки и расширения обмена сообщениями работают в Outlook и Office (Предварительная версия)
       url: ~/m365-apps/overview.md
-    - text: Поиск с автозавершением в адаптивной карточке
-      url: ~/task-modules-and-cards/cards/dynamic-search.md
 - title: Все время избранное
   linkLists:
   - linkListType: concept
@@ -43,11 +49,11 @@ landingContent:
       url: concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#apps-linked-to-saas-offer
     - text: Правила проверки в магазине Microsoft Teams
       url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
-    - text: Монетизация приложения Teams с помощью трансактабельного предложения SaaS
+    - text: Монетизация приложения Teams с помощью коммерческого предложения SaaS
       url: ~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
     - text: Ознакомьтесь с приложениями с низким кодом для Teams
       url: ~/samples/teams-low-code-solutions.md
-- title: Руководства
+- title: Учебники
   linkLists:
   - linkListType: concept
     links:
@@ -149,7 +155,7 @@ landingContent:
       url: ~/concepts/deploy-and-publish/apps-publish-overview.md
     - text: Публикация в Teams Store
       url: ~/concepts/deploy-and-publish/appsource/publish.md
-    - text: Рекомендации по проверке хранения
+    - text: Рекомендации по проверке в магазине
       url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
     - text: Обслуживание опубликованного приложения
       url: ~/concepts/deploy-and-publish/appsource/post-publish/overview.md

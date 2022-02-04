@@ -5,229 +5,270 @@ ms.topic: reference
 keywords: команды проявляют схему Developer Preview
 ms.localizationpriority: medium
 ms.date: 11/15/2021
-ms.openlocfilehash: 58a3e5bd240aa835a2f1d1c593d5c46e9dfcf2a4
-ms.sourcegitcommit: 96a4a118d31dcb3c273f880e282042f38757f5f7
+ms.openlocfilehash: c014495e3ae2a969bbebc28aed62aded18576c82
+ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285537"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62362937"
 ---
 # <a name="reference-public-developer-preview-manifest-schema-for-microsoft-teams"></a>Справка. Схема предварительного просмотра манифеста общедоступных разработчиков для Microsoft Teams
 
-Сведения о том, как включить предварительный просмотр разработчика, см. в [Microsoft Teams.](~/resources/dev-preview/developer-preview-intro.md)
+Сведения о том, как включить предварительный просмотр разработчика, [см. в](~/resources/dev-preview/developer-preview-intro.md) Microsoft Teams.
 
 > [!NOTE]
-> Если вы не используете функции предварительного просмотра разработчика, включая запуск Teams личных вкладок и расширений обмена сообщениями в Outlook и [Office,](../../m365-apps/overview.md)вместо этого используйте манифест приложения для функций [GA.](~/resources/schema/manifest-schema.md)
+> Если вы не используете функции предварительного просмотра разработчика, включая запуск Teams личных вкладок и расширений обмена сообщениями в Outlook и [Office](../../m365-apps/overview.md), вместо этого используйте манифест приложения для функций [GA](~/resources/schema/manifest-schema.md).
 
-Манифест Microsoft Teams описывает, как приложение интегрируется в платформу Microsoft Teams. Манифест должен соответствовать схеме, которая была на [`https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json`](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json) уровне .
+Манифест Microsoft Teams описывает, как приложение интегрируется в платформу Microsoft Teams. Манифест должен соответствовать схеме, размещенной по адресу [`https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json`](https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json).
 
-## <a name="sample-full-manifest"></a>Образец полного манифеста
+## <a name="sample-full-manifest"></a>Пример полного манифеста
 
 ```json
 {
-  "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
-  "manifestVersion": "devPreview",
-  "version": "1.0.0",
-  "id": "%MICROSOFT-APP-ID%",
-  "packageName": "com.example.myapp",
-  "devicePermissions" : [ "geolocation", "media" ],
-  "developer": {
-    "name": "Publisher Name",
-    "websiteUrl": "https://website.com/",
-    "privacyUrl": "https://website.com/privacy",
-    "termsOfUseUrl": "https://website.com/app-tos",
-    "mpnId": "1234567890"
-  },
-  "localizationInfo": {
-    "defaultLanguageTag": "es-es",
-    "additionalLanguages": [
-      {
-        "languageTag": "en-us",
-        "file": "en-us.json"
-      }
-    ]
-  },
-  "name": {
-    "short": "Name of your app (<=30 chars)",
-    "full": "Full name of app, if longer than 30 characters"
-  },
-  "description": {
-    "short": "Short description of your app",
-    "full": "Full description of your app"
-  },
-  "icons": {
-    "outline": "%FILENAME-32x32px%",
-    "color": "%FILENAME-192x192px"
-  },
-  "accentColor": "%HEX-COLOR%",
-  "configurableTabs": [
-    {
-      "configurationUrl": "https://contoso.com/teamstab/configure",
-      "canUpdateConfiguration": true,
-      "scopes": [ "team", "groupchat" ]"context":[
-      ]
-    }
-  ],
-  "staticTabs": [
-    {
-      "entityId": "idForPage",
-      "name": "Display name of tab",
-      "contentUrl": "https://contoso.com/content?host=msteams",
-      "contentBotId": "Specifies to the app that tab is an Adaptive Card Tab. You can either provide the contentBotId or contentUrl.",
-      "websiteUrl": "https://contoso.com/content",
-      "scopes": [ "personal" ]
-    }
-  ],
-  "bots": [
-    {
-      "botId": "%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%",
-      "needsChannelSelector": false,
-      "isNotificationOnly": false,
-      "scopes": [ "team", "personal", "groupchat" ],
-      "supportsFiles": true,
-      "commandLists": [
-        {
-          "scopes": [ "team", "groupchat" ],
-          "commands": [
-            {
-              "title": "Command 1",
-              "description": "Description of Command 1"
-            },
-            {
-              "title": "Command N",
-              "description": "Description of Command N"
-            }
-          ]
-        },
-        {
-          "scopes": [ "personal", "groupchat" ],
-          "commands": [
-            {
-              "title": "Personal command 1",
-              "description": "Description of Personal command 1"
-            },
-            {
-              "title": "Personal command N",
-              "description": "Description of Personal command N"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "connectors": [
-    {
-      "connectorId": "GUID-FROM-CONNECTOR-DEV-PORTAL%",
-      "configurationUrl": "https://contoso.com/teamsconnector/configure",
-      "scopes": [ "team"]
-    }
-  ],
-  "composeExtensions": [
-    {
-      "botId": "%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%",
-      "canUpdateConfiguration": true,
-      "commands": [
-        {
-          "id": "exampleCmd1",
-          "title": "Example Command",
-          "description": "Command Description; e.g., Search on the web",
-          "initialRun": true,
-          "type" : "search",
-          "context" : ["compose", "commandBox"],
-          "parameters": [
-            {
-              "name": "keyword",
-              "title": "Search keywords",
-              "description": "Enter the keywords to search for"
-            }
-          ]
-        },
-        {
-          "id": "exampleCmd2",
-          "title": "Example Command 2",
-          "description": "Command Description; e.g., Search for a customer",
-          "initialRun": true,
-          "type" : "action",
-          "fetchTask" : true,
-          "context" : ["message"],
-          "parameters": [
-            {
-              "name": "custinfo",
-              "title": "Customer name",
-              "description": "Enter a customer name",
-              "inputType" : "text"
-            }
-          ]
-        },
-        {
-          "id": "exampleMessageHandler",
-          "title": "Message Handler",
-          "description": "Domains that will create a preview when pasted into the compose box",
-          "messageHandlers": [
-            {
-              "type" : "link",
-              "value" : {
-                "domains" : [
-                  "mysite.someplace.com",
-                  "othersite.someplace.com"
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "permissions": [
-    "identity",
-    "messageTeamMembers",
-  ],
-  "validDomains": [
-     "contoso.com",
-     "mysite.someplace.com",
-     "othersite.someplace.com"
-  ],
-  "webApplicationInfo": {
-    "id": "AAD App ID",
-    "resource": "Resource URL for acquiring auth token for SSO",
-    "applicationPermissions": [
-      "TeamSettings.Read.Group",
-      "ChannelSettings.Read.Group",
-      "ChannelSettings.Edit.Group",
-      "Channel.Create.Group",
-      "Channel.Delete.Group",
-      "ChannelMessage.Read.Group",
-      "TeamsApp.Read.Group",
-      "TeamsTab.Read.Group",
-      "TeamsTab.Create.Group",
-      "TeamsTab.Edit.Group",
-      "TeamsTab.Delete.Group",
-      "Member.Read.Group",
-      "Owner.Read.Group",
-      "Member.ReadWrite.Group",
-      "Owner.ReadWrite.Group"
+    "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
+    "manifestVersion": "devPreview",
+    "version": "1.0.0",
+    "id": "%MICROSOFT-APP-ID%",
+    "packageName": "com.example.myapp",
+    "devicePermissions": [
+        "geolocation",
+        "media"
     ],
-  },
-   "configurableProperties": [
-     "name",
-     "shortDescription",
-     "longDescription",
-     "smallImageUrl", 
-     "largeImageUrl", 
-     "accentColor",
-     "developerUrl",
-     "privacyUrl",
-     "termsOfUseUrl"        
-  ],
-  "defaultInstallScope": "meetings",
-  "defaultGroupCapability": {
-    "meetings": "tab", 
-    "team": "bot", 
-    "groupchat": "bot"
-  },
-  "subscriptionOffer": {
-    "offerId": "publisherId.offerId"
-  }
+    "developer": {
+        "name": "Publisher Name",
+        "websiteUrl": "https://website.com/",
+        "privacyUrl": "https://website.com/privacy",
+        "termsOfUseUrl": "https://website.com/app-tos",
+        "mpnId": "1234567890"
+    },
+    "localizationInfo": {
+        "defaultLanguageTag": "es-es",
+        "additionalLanguages": [
+            {
+                "languageTag": "en-us",
+                "file": "en-us.json"
+            }
+        ]
+    },
+    "name": {
+        "short": "Name of your app (<=30 chars)",
+        "full": "Full name of app, if longer than 30 characters"
+    },
+    "description": {
+        "short": "Short description of your app",
+        "full": "Full description of your app"
+    },
+    "icons": {
+        "outline": "%FILENAME-32x32px%",
+        "color": "%FILENAME-192x192px"
+    },
+    "accentColor": "%HEX-COLOR%",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://contoso.com/teamstab/configure",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ]"context": []
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "idForPage",
+            "name": "Display name of tab",
+            "contentUrl": "https://contoso.com/content?host=msteams",
+            "contentBotId": "Specifies to the app that tab is an Adaptive Card Tab. You can either provide the contentBotId or contentUrl.",
+            "websiteUrl": "https://contoso.com/content",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%",
+            "needsChannelSelector": false,
+            "isNotificationOnly": false,
+            "scopes": [
+                "team",
+                "personal",
+                "groupchat"
+            ],
+            "supportsFiles": true,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Command 1",
+                            "description": "Description of Command 1"
+                        },
+                        {
+                            "title": "Command N",
+                            "description": "Description of Command N"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "personal",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Personal command 1",
+                            "description": "Description of Personal command 1"
+                        },
+                        {
+                            "title": "Personal command N",
+                            "description": "Description of Personal command N"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "connectors": [
+        {
+            "connectorId": "GUID-FROM-CONNECTOR-DEV-PORTAL%",
+            "configurationUrl": "https://contoso.com/teamsconnector/configure",
+            "scopes": [
+                "team"
+            ]
+        }
+    ],
+    "composeExtensions": [
+        {
+            "botId": "%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%",
+            "canUpdateConfiguration": true,
+            "commands": [
+                {
+                    "id": "exampleCmd1",
+                    "title": "Example Command",
+                    "description": "Command Description; e.g., Search on the web",
+                    "initialRun": true,
+                    "type": "search",
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "keyword",
+                            "title": "Search keywords",
+                            "description": "Enter the keywords to search for"
+                        }
+                    ]
+                },
+                {
+                    "id": "exampleCmd2",
+                    "title": "Example Command 2",
+                    "description": "Command Description; e.g., Search for a customer",
+                    "initialRun": true,
+                    "type": "action",
+                    "fetchTask": true,
+                    "context": [
+                        "message"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "custinfo",
+                            "title": "Customer name",
+                            "description": "Enter a customer name",
+                            "inputType": "text"
+                        }
+                    ]
+                },
+                {
+                    "id": "exampleMessageHandler",
+                    "title": "Message Handler",
+                    "description": "Domains that will create a preview when pasted into the compose box",
+                    "messageHandlers": [
+                        {
+                            "type": "link",
+                            "value": {
+                                "domains": [
+                                    "mysite.someplace.com",
+                                    "othersite.someplace.com"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "contoso.com",
+        "mysite.someplace.com",
+        "othersite.someplace.com"
+    ],
+    "webApplicationInfo": {
+        "id": "AAD App ID",
+        "resource": "Resource URL for acquiring auth token for SSO"
+    },
+    "authorization": {
+        "permissions": {
+            "resourceSpecific": [
+                {
+                    "type": "Application",
+                    "name": "ChannelSettings.Read.Group"
+                },
+                {
+                    "type": "Delegated",
+                    "name": "ChannelMeetingParticipant.Read.Group"
+                }
+            ]
+        }
+    },
+    "configurableProperties": [
+        "name",
+        "shortDescription",
+        "longDescription",
+        "smallImageUrl",
+        "largeImageUrl",
+        "accentColor",
+        "developerUrl",
+        "privacyUrl",
+        "termsOfUseUrl"
+    ],
+    "defaultInstallScope": "meetings",
+    "defaultGroupCapability": {
+        "meetings": "tab",
+        "team": "bot",
+        "groupchat": "bot"
+    },
+    "subscriptionOffer": {
+        "offerId": "publisherId.offerId"
+    },
+    "meetingExtensionDefinition": {
+        "scenes": [
+            {
+                "id": "9082c811-7e6a-4174-8173-6ccd57d377e6",
+                "name": "Getting started sample",
+                "file": "scenes/sceneMetadata.json",
+                "preview": "scenes/scenePreview.png",
+                "maxAudience": 15,
+                "seatsReservedForOrganizersOrPresenters": 0
+            },
+            {
+                "id": "afeaed22-f89b-48e1-98b4-46a514344e4a",
+                "name": "Sample-1",
+                "file": "scenes/sceneMetadata.json",
+                "preview": "scenes/scenePreview.png",
+                "maxAudience": 15,
+                "seatsReservedForOrganizersOrPresenters": 3
+            }
+        ]
+    }
 }
 ```
 
@@ -237,13 +278,13 @@ ms.locfileid: "61285537"
 
 *Необязательный, но рекомендуемый* &ndash; String
 
-`https://`URL-адрес, ссылающийся на схему JSON для манифеста.
+URL-адрес `https://` , ссылающийся на схему JSON для манифеста.
 
 ## <a name="manifestversion"></a>manifestVersion
 
 **Обязательно** &ndash; String
 
-Версия схемы манифеста, используемая этим манифестом. Используйте `m365DevPreview` только в том случае, если вы Teams приложения, работающие в Office и [Outlook.](../../m365-apps/overview.md) В противном случае используйте все `devPreview` Teams функции предварительного просмотра.
+Версия схемы манифеста, используемая этим манифестом. Используйте `m365DevPreview` только в том случае, [если Teams приложения, работающие в Office и Outlook](../../m365-apps/overview.md). В противном случае используйте `devPreview` все Teams функции предварительного просмотра.
 
 ## <a name="version"></a>version
 
@@ -253,13 +294,13 @@ ms.locfileid: "61285537"
 
 Если приложение запрашивает разрешения изменить, пользователям будет предложено обновить и повторно согласиться на приложение.
 
-Эта строка версии должна следовать [стандарту semver](http://semver.org/) (MAJOR. MINOR. PATCH).
+Строка версии должна соответствовать стандарту [semver](http://semver.org/)(ОСНОВНАЯ_ВЕРСИЯ.ДОПОЛНИТЕЛЬНАЯ_ВЕРСИЯ.ИСПРАВЛЕНИЕ).
 
 ## <a name="id"></a>id
 
 **Обязательно** &ndash; ID приложения Майкрософт
 
-Уникальный идентификатор, созданный Корпорацией Майкрософт для этого приложения. Если вы зарегистрировали бота через Microsoft Bot Framework или веб-приложение вашей вкладки уже входит в Microsoft, вы уже должны иметь ID и ввести его здесь. В противном случае необходимо создать новый ID на портале регистрации приложений Microsoft[(Мои](https://apps.dev.microsoft.com)приложения), введите его здесь, а затем повторно использовать при добавлении [бота.](~/bots/how-to/create-a-bot-for-teams.md)
+Уникальный идентификатор, созданный Корпорацией Майкрософт для этого приложения. Если вы зарегистрировали бота через Microsoft Bot Framework или веб-приложение вашей вкладки уже входит в Microsoft, вы уже должны иметь ID и ввести его здесь. В противном случае необходимо создать новый ID на портале регистрации приложений [Microsoft (Мои](https://apps.dev.microsoft.com) приложения), ввести его здесь, а затем повторно использовать при [добавлении бота](~/bots/how-to/create-a-bot-for-teams.md).
 
 ## <a name="packagename"></a>packageName
 
@@ -275,65 +316,65 @@ ms.locfileid: "61285537"
 
 |Имя| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|
-|`name`|32 символа|✔|Имя отображения для разработчика.|
-|`websiteUrl`|2048 символов|✔|Url https:// url-адрес веб-сайта разработчика. Эта ссылка должна принимать пользователей на страницу вашей компании или конкретного продукта.|
-|`privacyUrl`|2048 символов|✔|Url https:// url-адрес политики конфиденциальности разработчика.|
-|`termsOfUseUrl`|2048 символов|✔|Url https:// url-адрес для условий использования разработчика.|
-|`mpnId`|10 символов|✔|**Необязательный** Идентификатор Сети партнеров Майкрософт, который определяет организацию-партнер, которая строит приложение.|
+|`name`|32 символа|✔|Отображаемое имя для разработчика.|
+|`websiteUrl`|2048 символов|✔|URL-адрес веб-сайта разработчика (https://). Эта ссылка должна принимать пользователей на страницу вашей компании или конкретного продукта.|
+|`privacyUrl`|2048 символов|✔|URL-адрес политики конфиденциальности разработчика (https://).|
+|`termsOfUseUrl`|2048 символов|✔|URL-адрес условий использования разработчика (https://).|
+|`mpnId`|10 символов|✔|**Необязательно** — идентификатор партнерской организации, создавшей приложение, в Microsoft Partner Network.|
 
-## <a name="localizationinfo"></a>локализацияInfo
+## <a name="localizationinfo"></a>localizationInfo
 
 **Необязательное**
 
-Позволяет спецификацию языка по умолчанию, а также указатели для дополнительных языковых файлов. См. [локализацию.](~/concepts/build-and-test/apps-localization.md)
+Позволяет спецификацию языка по умолчанию, а также указатели для дополнительных языковых файлов. См [. локализацию](~/concepts/build-and-test/apps-localization.md).
 
 |Имя| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|
 |`defaultLanguageTag`|4 символа|✔|Языковой тег строк в этом файле манифеста верхнего уровня.|
 
-### <a name="localizationinfoadditionallanguages"></a>локализацияInfo.additionalLanguages
+### <a name="localizationinfoadditionallanguages"></a>localizationInfo.additionalLanguages
 
 Массив объектов, указывающих дополнительные языковые переводы.
 
 |Имя| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|
-|`languageTag`|4 символа|✔|Языковой тег строки в предоставленного файла.|
+|`languageTag`|4 символа|✔|Тег языка строк в предоставленном файле.|
 |`file`|4 символа|✔|Относительный путь к файлу .json, содержащим переведенные строки.|
 
 ## <a name="name"></a>name
 
 **Required**
 
-Имя приложения, отображаемого пользователям в Teams. Для приложений, представленных в AppSource, эти значения должны соответствовать сведениям, указанным в записи AppSource. Значения и `short` не `full` должны быть одинаковыми.
+Имя интерфейса приложения, отображаемое для пользователей в интерфейсе Teams. Для приложений, отправляемых в AppSource, эти значения должны совпадать с данными в записи AppSource. Значения и не `short` `full` должны быть одинаковыми.
 
 |Имя| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|
-|`short`|30 символов|✔|Короткое имя отображения приложения.|
-|`full`|100 символов||Полное имя приложения, используемого, если полное имя приложения превышает 30 символов.|
+|`short`|30 символов|✔|Краткое отображаемое имя приложения.|
+|`full`|100 символов||Полное имя приложения. Используется, если длина полного имени приложения превышает 30 символов.|
 
 ## <a name="description"></a>description
 
 **Required**
 
-Описывает приложение для пользователей. Для приложений, представленных в AppSource, эти значения должны соответствовать сведениям, указанным в записи AppSource.
+Описывает приложение для пользователей. Для приложений, отправляемых в AppSource, эти значения должны совпадать с данными в записи AppSource.
 
-Убедитесь, что ваше описание точно описывает ваш опыт и предоставляет сведения, чтобы помочь потенциальным клиентам понять, что делает ваш опыт. В полном описании также следует отметить, если для использования требуется внешняя учетная запись. Значения и `short` не `full` должны быть одинаковыми.  Короткое описание не должно повторяться в длинном описании и не должно включать любое другое имя приложения.
+Убедитесь, что ваше описание точно описывает ваш опыт и предоставляет сведения, чтобы помочь потенциальным клиентам понять, что делает ваш опыт. В полном описании также следует отметить, если для использования требуется внешняя учетная запись. Значения и не `short` `full` должны быть одинаковыми.  Короткое описание не должно повторяться в длинном описании и не должно включать любое другое имя приложения.
 
 |Имя| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|
-|`short`|80 символов|✔|Краткое описание работы приложения, используемого при ограниченном пространстве.|
-|`full`|4000 символов|✔|Полное описание приложения.|
+|`short`|80 символов|✔|Краткое описание возможностей приложения. Используется, когда доступно ограниченное пространство.|
+|`full`|4000 символов|✔|Полное описание приложения.|
 
 ## <a name="icons"></a>icons
 
 **Required**
 
-Значки, используемые в Teams приложении. Файлы значков должны быть включены в пакет отправки.
+Значки, используемые в приложении Teams. Файлы значков должны быть включены в отправляемый пакет.
 
 |Имя| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|
-|`outline`|2048 символов|✔|Относительный путь к прозрачному значку контура PNG 32x32.|
-|`color`|2048 символов|✔|Относительный путь к значку PNG полного цвета 192x192.|
+|`outline`|2048 символов|✔|Относительный путь к прозрачному значку контура размером 32x32 пикселя в формате PNG.|
+|`color`|2048 символов|✔|Относительный путь к полноцветному значку размером 192x192 пикселя в формате PNG.|
 
 ## <a name="accentcolor"></a>accentColor
 
@@ -341,56 +382,56 @@ ms.locfileid: "61285537"
 
 Цвет, который можно использовать в сочетании с и в качестве фона для значков контура.
 
-Значение должно быть допустимым цветовым кодом HTML, начиная, например, с `#4464ee` "#".
+Значение должно быть допустимым шестнадцатеричным кодом цвета HTML и должно начинаться с "#". Пример: `#4464ee`.
 
 ## <a name="configurabletabs"></a>configurableTabs
 
 **Необязательное**
 
-Используется, когда в вашем приложении есть опыт работы с вкладками канала команды, которая требует дополнительной конфигурации перед ее добавлением. Настраиваемые вкладки поддерживаются только в области команд, и в настоящее время поддерживается только одна вкладка для каждого приложения.
+Используется, когда в интерфейсе приложения есть интерфейс вкладки канала команды, для которого требуется дополнительная настройка перед добавлением. Настраиваемые вкладки поддерживаются только в области команд, и в настоящее время поддерживается только одна вкладка для каждого приложения.
 
-Объект — массив со всеми элементами `object` типа. Этот блок требуется только для решений, которые предоставляют настраиваемое решение вкладки канала.
+Объект — массив со всеми элементами типа `object`. Этот блок требуется только для решений, которые предоставляют настраиваемое решение вкладки канала.
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`configurationUrl`|Строка|2048 символов|✔|URL-https://, который можно использовать при настройке вкладки.|
-|`canUpdateConfiguration`|Логический|||Значение, указывающее, может ли экземпляр конфигурации вкладки обновляться пользователем после создания. По умолчанию: `true`|
-|`scopes`|Массив перечислений|1|✔|В настоящее время настраиваемые вкладки поддерживают только `team` области `groupchat` и области. |
-|`context` |массив enums|6 ||Набор `contextItem` областей, в которых [вкладка поддерживается.](../../tabs/how-to/access-teams-context.md) По умолчанию: `channelTab` , , , , и `privateChatTab` `meetingChatTab` `meetingDetailsTab` `meetingSidePanel` `meetingStage` .|
-|`sharePointPreviewImage`|Строка|2048||Относительный путь к изображению предварительного просмотра вкладок для использования в SharePoint. Размер 1024x768. |
-|`supportedSharePointHosts`|Массив перечислений|1||Определяет, как вкладка будет доступна в SharePoint. Параметры `sharePointFullPage` и `sharePointWebPart` |
+|`configurationUrl`|String|2048 символов|✔|URL-адрес, используемый при настройке вкладки (https://).|
+|`canUpdateConfiguration`|Логический|||Значение, указывающее, может ли пользователь обновлять конфигурацию вкладки после ее создания. По умолчанию: `true`|
+|`scopes`|Массив перечислений|1|✔|В настоящее время настраиваемые вкладки поддерживают только области `team` и `groupchat`. |
+|`context` |массив элементов enum|6 ||Набор областей `contextItem`, в которых [поддерживается вкладка](../../tabs/how-to/access-teams-context.md). По умолчанию: `privateChatTab`, , , `meetingDetailsTab`, и `meetingStage``meetingSidePanel`. `meetingChatTab``channelTab`|
+|`sharePointPreviewImage`|String|2048||Относительный путь к изображению предварительного просмотра вкладок для использования в SharePoint. Размер: 1024x768. |
+|`supportedSharePointHosts`|Массив перечислений|1||Определяет, как вкладка будет доступна в SharePoint. Варианты: `sharePointFullPage` и `sharePointWebPart` |
 
 ## <a name="statictabs"></a>staticTabs
 
 **Необязательное**
 
-Определяет набор вкладок, которые можно "прикрепить" по умолчанию, не добавляя их вручную. Статические вкладки, объявленные в области, всегда прикрепяются к личному опыту `personal` приложения. Статические вкладки, объявленные в `team` области, в настоящее время не поддерживаются.
+Это набор вкладок, который можно закрепить по умолчанию без добавления их вручную пользователем. Статические вкладки,объявляемые в области `personal`, всегда закрепляются в личном интерфейсе приложения. Статические вкладки,объявляемые в области `team`, сейчас не поддерживаются.
 
-Отрисуйка вкладок с адаптивными картами, указав вместо в `contentBotId` `contentUrl` **блоке staticTabs.**
+Отрисуйка вкладок с адаптивными картами, указав `contentBotId` вместо `contentUrl` в **блоке staticTabs** .
 
-Объект — массив (не более 16 элементов) со всеми элементами `object` типа. Этот блок требуется только для решений, которые предоставляют статическое решение вкладки.
+Объект — массив (не более 16 элементов) со всеми элементами типа `object`. Этот блок требуется только для решений со статическими вкладками.
 
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`entityId`|Строка|64 символа|✔|Уникальный идентификатор для объекта, отображаемого на вкладке.|
-|`name`|Строка|128 символов|✔|Отображение имени вкладки в интерфейсе канала.|
-|`contentUrl`|Строка|2048 символов|✔|URL https://, который указывает на пользовательский интерфейс объекта, отображаемого на Teams холсте.|
+|`entityId`|String|64 символа|✔|Уникальный идентификатор сущности, отображаемый на вкладке.|
+|`name`|String|128 символов|✔|Отображаемое имя вкладки в интерфейсе канала.|
+|`contentUrl`|String|2048 символов|✔|URL-адрес, указывающий на пользовательский интерфейс объекта для отображения на холсте Microsoft Teams (https://).|
 |`contentBotId`|   | | | ID Microsoft Teams, указанный для бота на портале Bot Framework. |
-|`websiteUrl`|Строка|2048 символов||В https:// нужно указать URL-адрес, если пользователь выбирает просмотр в браузере.|
-|`scopes`|Массив перечислений|1|✔|В настоящее время статические вкладки поддерживают только область, что означает, что она может быть предусмотрена только в `personal` рамках личного опыта.|
+|`websiteUrl`|String|2048 символов||В https:// нужно указать URL-адрес, если пользователь выбирает просмотр в браузере.|
+|`scopes`|Массив перечислений|1|✔|В настоящее время статические вкладки поддерживаются только для области `personal`, поэтому их можно подготовить только в личном интерфейсе.|
 
-## <a name="bots"></a>боты
+## <a name="bots"></a>bots
 
 **Необязательное**
 
-Определяет решение бота, а также необязательные сведения, такие как свойства команд по умолчанию.
+Определяет решение бота, а также дополнительные сведения, такие как свойства команды по умолчанию.
 
-Объект — массив (максимум 1 элемент в настоящее время разрешен только для одного бота в приложении) со всеми &mdash; элементами типа `object` . Этот блок необходим только для решений, которые предоставляют возможность работы с ботом.
+Объект — массив (не более 1&mdash; элемента, допускается только один бот для каждого приложения) со всеми элементами типа `object`. Этот блок требуется только для решений, предоставляющих возможности бота.
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`botId`|Строка|64 символа|✔|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Это вполне может быть таким же, как общий [ID приложения](#id).|
+|`botId`|String|64 символа|✔|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Это может быть то же самое, что и общий [ID приложения](#id).|
 |`needsChannelSelector`|Логический|||Описывает, использует ли бот пользовательское указание для добавления бота в определенный канал. По умолчанию: `false`|
 |`isNotificationOnly`|Логический|||Указывает, является ли бот односторонним и только для уведомлений, в отличие от бота для беседы. По умолчанию: `false`|
 |`supportsFiles`|Логический|||Указывает, поддерживает ли бот возможность отправки и скачивания файлов в личном чате. По умолчанию: `false`|
@@ -398,84 +439,84 @@ ms.locfileid: "61285537"
 
 ### <a name="botscommandlists"></a>bots.commandLists
 
-Необязательный список команд, которые бот может рекомендовать пользователям. Объект — массив (не более 2 элементов) со всеми элементами типа; необходимо определить отдельный список команд для каждой области, поддерживаемой `object` ботом. Дополнительные сведения см. в [меню Bot.](~/bots/how-to/create-a-bot-commands-menu.md)
+Необязательный список команд, которые бот может рекомендовать пользователям. Объект — массив (не более 2 элементов) `object`со всеми элементами типа; необходимо определить отдельный список команд для каждой области, поддерживаемой ботом. Дополнительные сведения см. в [меню Bot](~/bots/how-to/create-a-bot-commands-menu.md).
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`items.scopes`|массив перечислений|3|✔|Указывает область, для которой действует список команд. Возможны значения `team`, `personal` и `groupchat`.|
-|`items.commands`|массив объектов|10 |✔|Массив команд, поддерживаемых ботом:<br>`title`: имя команды бота (строка, 32).<br>`description`: простое описание или пример синтаксиса команды и его аргумента (строка, 128).|
+|`items.commands`|массив объектов|10 |✔|Массив команд, поддерживаемых ботом:<br>`title`: имя команды бота (строка, 32).<br>`description`: простое описание или пример синтаксиса команды и ее аргументов (строка, 128).|
 
-## <a name="connectors"></a>соединители
+## <a name="connectors"></a>connectors
 
 **Необязательное**
 
-Блок `connectors` определяет Office 365 соединители для приложения.
+Блок `connectors` определяет соединитель Office 365 для приложения.
 
-Объект — массив (максимум 1 элемент) со всеми элементами `object` типа. Этот блок необходим только для решений, которые предоставляют соединители.
+Объект — массив (максимум 1 элемент) со всеми элементами типа `object`. Этот блок необходим только для решений, предоставляющих соединители.
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`configurationUrl`|Строка|2048 символов|✔|URL https://, который необходимо использовать при настройке соединителя.|
-|`connectorId`|Строка|64 символа|✔|Уникальный идентификатор соединитетеля, который соответствует его идентификатору в панели мониторинга разработчиков [соединителок.](https://aka.ms/connectorsdashboard)|
-|`scopes`|Массив перечислений|1|✔|Указывает, предоставляет ли соединители опыт в контексте канала в канале или только для отдельного пользователя `team` ( `personal` ). В настоящее время `team` поддерживается только область.|
+|`configurationUrl`|String|2048 символов|✔|URL-адрес, используемый при настройке соединителя (https://).|
+|`connectorId`|String|64 символа|✔|Уникальный идентификатор соединителя, соответствующий его идентификатору на [информационной панели разработчиков соединителей](https://aka.ms/connectorsdashboard).|
+|`scopes`|Массив перечислений|1|✔|Указывает, предоставляет ли соединитель возможности в контексте канала в `team` или только для отдельных пользователей (`personal`). В настоящее время поддерживается только область `team`.|
 
 ## <a name="composeextensions"></a>composeExtensions
 
 **Необязательное**
 
-Определяет расширение обмена сообщениями для приложения.
+Определяет расширение для сообщений для приложения.
 
 > [!NOTE]
-> В ноябре 2017 г. имя функции было изменено с "расширение составить" на "расширение обмена сообщениями", но имя манифеста остается таким же, чтобы существующие расширения продолжили функционировать.
+> В ноябре 2017 г. эта функция была переименована из "расширение составления" в "расширение для сообщений", но имя в манифесте остается прежним, чтобы существующие расширения не перестали работать.
 
-Объект — массив (максимум 1 элемент) со всеми элементами `object` типа. Этот блок необходим только для решений, которые предоставляют расширение обмена сообщениями.
+Объект — массив (максимум 1 элемент) со всеми элементами типа `object`. Этот блок необходим только для решений, которые предоставляют расширение для сообщений.
 
 |Имя| Тип | Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`botId`|Строка|64|✔|Уникальный ID приложения Майкрософт для бота, который возвращает расширение обмена сообщениями, как зарегистрирован в Bot Framework. Это вполне может быть таким же, как общий [ID приложения](#id).|
-|`canUpdateConfiguration`|Boolean|||Значение, указывающее, может ли пользователь обновить конфигурацию расширения обмена сообщениями. Значение по умолчанию: `false`.|
+|`botId`|String|64|✔|Уникальный идентификатор приложения Майкрософт для бота, поддерживающего расширение для сообщений, в соответствии с регистрацией в Bot Framework. Это может быть то же самое, что и общий [ID приложения](#id).|
+|`canUpdateConfiguration`|Логическое|||Значение, указывающее, может ли пользователь обновлять конфигурацию расширения для сообщений. Значение по умолчанию: `false`.|
 |`commands`|Массив объекта|10 |✔|Массив команд, поддерживаемых расширением обмена сообщениями|
 
 ### <a name="composeextensionscommands"></a>composeExtensions.commands
 
-Расширение обмена сообщениями должно объявлять одну или несколько команд. Каждая команда отображается Microsoft Teams как потенциальное взаимодействие с точки входа на основе пользовательского интерфейса. Существует не более 10 команд.
+Расширение обмена сообщениями должно объявлять одну или несколько команд. Каждая команда отображается в Microsoft Teams как потенциальное взаимодействие с точки входа на основе пользовательского интерфейса. Существует не более 10 команд.
 
-Каждый элемент команды — это объект со следующей структурой:
+Каждый элемент команды представляет собой объект со следующей структурой:
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`id`|Строка|64 символа|✔|ID для команды.|
-|`type`|Строка|64 символа||Тип команды. Один `query` из или `action` . По умолчанию: `query`|
-|`title`|Строка|32 символа|✔|Удобное имя команды.|
-|`description`|Строка|128 символов||В описании, которое отображается пользователями, указывается назначение этой команды.|
-|`initialRun`|Boolean|||Значение Boolean, которое указывает, следует ли запускать команду изначально без параметров. По умолчанию: `false`|
-|`context`|Массив строк|3||Определяет, из чего можно вызвать расширение обмена сообщениями. Любое сочетание `compose` `commandBox` , `message` . Значение по умолчанию: `["compose", "commandBox"]`|
-|`fetchTask`|Логический|||Значение boolean, которое указывает, следует ли динамически получать модуль задач.|
+|`id`|String|64 символа|✔|ИД команды.|
+|`type`|String|64 символа||Тип команды. Либо `query`, либо `action`. По умолчанию: `query`|
+|`title`|String|32 символа|✔|Понятное имя команды.|
+|`description`|String|128 символов||Описание назначения команды, которое отображается для пользователей.|
+|`initialRun`|Логическое|||Значение Boolean, которое указывает, следует ли запускать команду изначально без параметров. По умолчанию: `false`|
+|`context`|Массив строк|3||Определяет, из чего можно вызвать расширение обмена сообщениями. Любое сочетание `compose`, . `commandBox``message` Значение по умолчанию: `["compose", "commandBox"]`|
+|`fetchTask`|Логическое|||Значение boolean, которое указывает, следует ли динамически получать модуль задач.|
 |`taskInfo`|Объект|||Укажите модуль задач для предварительной загрузки при использовании команды расширения обмена сообщениями.|
-|`taskInfo.title`|Строка|64||Начальное название диалогов.|
-|`taskInfo.width`|Строка|||Ширина диалогов — число в пикселях или макет по умолчанию, такие как "большой", "средний" или "маленький".|
-|`taskInfo.height`|Строка|||Высота диалогов — число пикселей или макет по умолчанию, например "большой", "средний" или "маленький".|
-|`taskInfo.url`|Строка|||Начальный URL-адрес веб-просмотров.|
-|`messageHandlers`|Массив объектов|5||Список обработчиков, которые позволяют вызывать приложения при определенных условиях. Домены также должны быть указаны в `validDomains` .|
-|`messageHandlers.type`|Строка|||Тип обработка сообщений. Должно быть задано значение `"link"`.|
-|`messageHandlers.value.domains`|Массив строк|||Массив доменов, для которые обработник сообщений ссылок может зарегистрироваться.|
+|`taskInfo.title`|String|64||Начальное название диалогового окна|
+|`taskInfo.width`|String|||Ширина диалогового окна — количество пикселей или макет по умолчанию, например "large", "medium" или "small".|
+|`taskInfo.height`|String|||Высота диалогового окна — количество пикселей или макет по умолчанию, например "large", "medium" или "small".|
+|`taskInfo.url`|String|||Начальный URL-адрес веб-представления.|
+|`messageHandlers`|Массив объектов|5||Список обработчиков, которые позволяют вызывать приложение при выполнении определенных условий. Домены также должны быть указаны в `validDomains`.|
+|`messageHandlers.type`|String|||Тип обработчика сообщений. Должно быть задано значение `"link"`.|
+|`messageHandlers.value.domains`|Массив строк|||Массив доменов, на которые может зарегистрироваться обработчик сообщений ссылок.|
 |`parameters`|Массив объекта|5|✔|Список параметров, которые принимает команда. Минимум: 1; максимум: 5|
-|`parameter.name`|Строка|64 символа|✔|Имя параметра, как оно отображается в клиенте. Это включено в запрос пользователя.|
-|`parameter.title`|Строка|32 символа|✔|Удобное название для параметра.|
-|`parameter.description`|Строка|128 символов||Удобное для пользователя строка, описываемая назначение этого параметра.|
-|`parameter.inputType`|Строка|128 символов||Определяет тип управления, отображаемого в модуле задач `fetchTask: true` для . Один `text` из `textarea` , , , , , `number` `date` `time` `toggle` `choiceset` .|
-|`parameter.choices`|Массив объектов|10 ||Параметры выбора `choiceset` для . Используйте только `parameter.inputType` тогда, когда `choiceset` это .|
-|`parameter.choices.title`|Строка|128||Название выбора.|
-|`parameter.choices.value`|Строка|512||Значение выбора.|
+|`parameter.name`|String|64 символа|✔|Имя параметра в том виде, в каком оно отображается в клиенте. Это включено в запрос пользователя.|
+|`parameter.title`|String|32 символа|✔|Понятное название параметра.|
+|`parameter.description`|String|128 символов||Понятное описание назначения параметра.|
+|`parameter.inputType`|String|128 символов||Определяет тип управления, отображаемого в модуле задач для `fetchTask: true`. Один из `text`, `textarea``number`, `date`, , `time`, `toggle``choiceset`.|
+|`parameter.choices`|Массив объектов|10 ||Параметры выбора `choiceset`для . Используйте только тогда, когда `parameter.inputType` это `choiceset`.|
+|`parameter.choices.title`|String|128||Название выбора.|
+|`parameter.choices.value`|String|512||Значение выбора.|
 
 ## <a name="permissions"></a>permissions
 
 **Необязательное**
 
-Массив указывает, какие разрешения запрашивает приложение, что позволяет конечным пользователям узнать, как `string` будет выполняться расширение. Следующие параметры не являются эксклюзивными:
+Массив указывает, `string` какие разрешения запрашивает приложение, что позволяет конечным пользователям узнать, как будет выполняться расширение. Следующие параметры не являются взаимоисключающими:
 
-* `identity`&emsp;Требуется информация о удостоверении пользователя.
-* `messageTeamMembers`&emsp;Требуется разрешение на отправку прямых сообщений членам группы.
+* `identity` &emsp; Требуются сведения удостоверения пользователя.
+* `messageTeamMembers` &emsp; Требуется разрешение на отправку прямых сообщений участникам группы.
 
 Изменение этих разрешений при обновлении приложения приведет к тому, что пользователи повторят процесс согласия при первом запуске обновленного приложения.
 
@@ -493,16 +534,16 @@ ms.locfileid: "61285537"
 
 ## <a name="validdomains"></a>validDomains
 
-**Необязательный,** за **исключением обязательного,** где отмечено
+**Необязательный**, за **исключением обязательного,** где отмечено
 
-Список допустимого домена, из которого приложение ожидает загрузки любого контента. Списки домена могут включать, например, поддиайки. `*.example.com` Это соответствует ровно одному сегменту домена; если вам нужно `a.b.example.com` соответствовать, то используйте `*.*.example.com` . Если конфигурации вкладок или пользовательскому интерфейсу контента необходимо перейти к любому другому домену, кроме одного использования для конфигурации вкладок, этот домен должен быть указан здесь.
+Список допустимого домена, из которого приложение ожидает загрузки любого контента. Списки домена могут включать, например, поддиайки `*.example.com`. Это соответствует ровно одному сегменту домена; если вам нужно соответствовать, `a.b.example.com` то используйте `*.*.example.com`. Если конфигурации вкладок или пользовательскому интерфейсу контента необходимо перейти к любому другому домену, кроме одного использования для конфигурации вкладок, этот домен должен быть указан здесь.
 
-Однако не **обязательно** включать в приложение домены поставщиков удостоверений, которые вы хотите поддерживать. Например, чтобы проверить подлинность с помощью google ID, необходимо перенаправить на accounts.google.com, но не следует включать accounts.google.com `validDomains[]` в .
+Однако не **обязательно** включать в приложение домены поставщиков удостоверений, которые вы хотите поддерживать. Например, чтобы проверить подлинность с помощью Google ID, необходимо перенаправить на accounts.google.com, `validDomains[]`но не следует включать accounts.google.com в .
 
 > [!IMPORTANT]
-> Не добавляйте домены, которые находятся вне вашего контроля, напрямую или с помощью подкрентов. Например, `yourapp.onmicrosoft.com` допустимо, `*.onmicrosoft.com` но не является допустимым.
+> Не добавляйте домены, которые находятся вне вашего контроля, напрямую или с помощью подкрентов. Например, допустимо `yourapp.onmicrosoft.com` , но `*.onmicrosoft.com` не является допустимым.
 
-Объект — массив со всеми элементами `string` типа.
+Объект — массив со всеми элементами типа `string`.
 
 ## <a name="webapplicationinfo"></a>webApplicationInfo
 
@@ -512,36 +553,36 @@ ms.locfileid: "61285537"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`id`|Строка|36 символов|✔|ID приложения Azure AD приложения. Этот ID должен быть GUID.|
-|`resource`|Строка|2048 символов|✔|URL-адрес ресурса приложения для приобретения маркера auth для SSO.|
+|`id`|String|36 символов|✔|Идентификатор приложения в Azure Active Directory. Этот идентификатор должен быть глобальным уникальным идентификатором.|
+|`resource`|String|2048 символов|✔|URL-адрес ресурса приложения для приобретения маркера auth для SSO.|
 |`applicationPermissions`|Массив|Не более 100 элементов|✔|Разрешения ресурсов для приложения.|
 
 ## <a name="configurableproperties"></a>configurableProperties
 
-**Необязательный** - массив
+**Необязательно** — массив
 
-Блок определяет свойства приложений, которые могут `configurableProperties` Teams администраторы. Дополнительные сведения см. в [приложении Enable customization.](~/concepts/design/enable-app-customization.md)
+Блок `configurableProperties` определяет свойства приложений, доступные для настройки администраторам Teams. Дополнительные сведения см. в разделе [включение настройки приложения](~/concepts/design/enable-app-customization.md).
 
 > [!NOTE]
-> Необходимо определить как минимум одно свойство. В этом блоке можно определить максимум девять свойств.
+> Необходимо определить хотя бы одно свойство. В этом блоке можно определить не более 9 свойств.
 
 Можно определить любое из следующих свойств:
 
-* `name`: Имя отображения приложения.
-* `shortDescription`Краткое описание приложения.
+* `name`: отображаемое имя приложения.
+* `shortDescription`: краткое описание приложения.
 * `longDescription`Подробное описание приложения.
-* `smallImageUrl`: Значок контура приложения.
-* `largeImageUrl`: Значок цвета приложения.
+* `smallImageUrl`: значок контура приложения.
+* `largeImageUrl`: значок цвета приложения.
 * `accentColor`: Цвет, который нужно использовать в сочетании с и в качестве фона для значков контура.
-* `developerUrl`URL-адрес HTTPS веб-сайта разработчика.
-* `privacyUrl`: URL-адрес HTTPS политики конфиденциальности разработчика.
-* `termsOfUseUrl`: URL-адрес HTTPS условий использования разработчика.
+* `developerUrl`: URL-адрес веб-сайта разработчика (HTTPS).
+* `privacyUrl`: URL-адрес политики конфиденциальности разработчика (HTTPS).
+* `termsOfUseUrl`: URL-адрес условий использование разработчика (HTTPS).
 
 ## <a name="defaultinstallscope"></a>defaultInstallScope
 
-**Необязательный** — строка
+**Необязательно** — строка
 
-Указывает область установки, определяемую для этого приложения по умолчанию. Определенным областью будет параметр, отображаемый на кнопке при добавлении приложения пользователем. Доступные варианты:
+Указывает область установки, заданную для этого приложения по умолчанию. Когда пользователь попытается добавить приложение, заданная область будет одним из вариантов, отображаемых на кнопке. Доступные варианты:
 * `personal`
 * `team`
 * `groupchat`
@@ -549,25 +590,103 @@ ms.locfileid: "61285537"
 
 ## <a name="defaultgroupcapability"></a>defaultGroupCapability
 
-**Необязательный** — объект
+**Необязательно** — объект
 
-Когда будет выбрана область установки группы, она определит возможности по умолчанию при установке приложения пользователем. Доступные варианты:
+Когда будет выбрана область установки группы, этот параметр будет определять емкость по умолчанию при установки приложения пользователем. Доступные варианты:
 * `team`
 * `groupchat`
 * `meetings`
  
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`team`|string|||Если выбрана область установки, это поле указывает доступные возможности `team` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
-|`groupchat`|Строка|||Если выбрана область установки, это поле указывает доступные возможности `groupchat` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
-|`meetings`|Строка|||Если выбрана область установки, это поле указывает доступные возможности `meetings` по умолчанию. Параметры: `tab` `bot` , или `connector` .|
+|`team`|string|||Если выбрана область установки `team`, в этом поле указывается доступная по умолчанию емкость. Варианты: `tab`, `bot` или `connector`.|
+|`groupchat`|string|||Если выбрана область установки `groupchat`, в этом поле указывается доступная по умолчанию емкость. Варианты: `tab`, `bot` или `connector`.|
+|`meetings`|string|||Если выбрана область установки `meetings`, в этом поле указывается доступная по умолчанию емкость. Варианты: `tab`, `bot` или `connector`.|
 
 ## <a name="subscriptionoffer"></a>subscriptionOffer
 
-**Необязательный** — объект
+**Необязательно** — объект
 
-Указывает предложение SaaS, связанное с вашим приложением.
+Указывает предложение SaaS, связанное с приложением.
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`offerId`| string | 2048 символов | ✔ | Уникальный идентификатор, который включает идентификатор Publisher и идентификатор предложения, которые можно найти в [Центре партнеров.](https://partner.microsoft.com/dashboard) Строку необходимо форматить как `publisherId.offerId` .|
+|`offerId`| string | 2048 символов | ✔ | Уникальный идентификатор, включающий идентификатор Publisher и идентификатор предложения, которые можно найти в [Центре партнеров](https://partner.microsoft.com/dashboard). Эта строка должна быть в формате: `publisherId.offerId` .|
+
+## <a name="meetingextensiondefinition"></a>meetingExtensionDefinition
+
+**Необязательно** — объект
+
+Укажите определение расширения собрания. Дополнительные сведения см. в [пользовательских сценах Режима совместной работы в Teams](../../apps-in-teams-meetings/teams-together-mode.md).
+
+|Имя| Тип| Максимальный размер | Обязательный | Описание|
+|---|---|---|---|---|
+|`scenes`|массив объектов| 5 элементов||Сцены, поддерживаемые собранием.|
+
+### <a name="meetingextensiondefinitionscenes"></a>meetingExtensionDefinition.scenes
+
+|Имя| Тип|Максимальный размер|Обязательный |Описание|
+|---|---|---|---|---|
+|`id`|||✔| Уникальный идентификатор сцены. Этот id должен быть GUID. |
+|`name`| string | 128 символов |✔| Имя сцены. |
+|`file`|||✔| Относительный путь файла к json-файлу метаданных сцен. |
+|`preview`|||✔| Относительный путь файла к значку предварительного просмотра PNG сцен. |
+|`maxAudience`| integer | 50  |✔| Максимальное количество аудиторий, поддерживаемых в сцене. |
+|`seatsReservedForOrganizersOrPresenters`| integer | 50 |✔| Количество мест, зарезервированных для организаторов или презентаторов.|
+
+## <a name="authorization"></a>авторизация
+
+**Необязательный** — объект
+
+Укажите и консолидируете связанные с авторизацией сведения для приложения.
+
+|Имя| Тип|Максимальный размер|Обязательный |Описание|
+|---|---|---|---|---|
+|`permissions`||||Список разрешений, необходимых приложению.|
+
+### <a name="authorizationpermissions"></a>permission.permissions
+
+|Имя| Тип|Максимальный размер|Обязательный |Описание|
+|---|---|---|---|---|
+|`resourceSpecific`| массив объектов|16 элементов||Разрешения, которые охраняют доступ к данным на уровне экземпляров ресурсов.|
+
+### <a name="authorizationpermissionsresourcespecific"></a>authorization.permissions.resourceSpecific
+
+|Имя| Тип|Максимальный размер|Обязательный |Описание|
+|---|---|---|---|---|
+|`type`|string||✔| Тип разрешения, определенного для ресурсов. Параметры: `Application` и `Delegated`.|
+|`name`|string|128 символов|✔|Имя разрешения, определенного для ресурса. <br> Дополнительные сведения см. [в приложении permissions](../../graph-api/rsc/resource-specific-consent.md) and [Delegated permissions](#delegated-permissions).|
+
+### <a name="delegated-permissions"></a>Делегированные разрешения
+
+Делегирование разрешений позволяет приложению получать доступ к данным от имени подписанного пользователя.
+
+* **Разрешения для групп с конкретными ресурсами**
+
+    |**Имя**|**Описание**|
+    |---|---|
+    |`ChannelMeetingParticipant.Read.Group`| Позволяет приложению читать сведения о участниках, в том числе имя, роль, id, присоединились и слева, о собраниях каналов, связанных с этой командой, от имени подписанного пользователя.|
+    |`InAppPurchase.Allow.Group`| Позволяет приложению показывать предложения на рынке пользователям этой группы и завершать покупки в приложении от имени подписанного пользователя.|
+    |`ChannelMeetingStage.Write.Group`| Позволяет приложению показывать контент на стадии собрания на собраниях каналов, связанных с этой командой, от имени подписанного пользователя.|
+
+* **Разрешения на использование ресурсов для чатов или собраний**
+
+    |**Имя**|**Описание**|
+    |---|---|
+    |`InAppPurchase.Allow.Chat`|Позволяет приложению показывать предложения на рынке пользователям в этом чате и любое связанное собрание, а также завершать покупки в приложении от имени пользователя, подписанного в приложении.|
+    |`MeetingStage.Write.Chat`|Позволяет приложению показывать содержимое на стадии собрания на собраниях, связанных с этим чатом, от имени подписанного пользователя.|
+    |`OnlineMeetingParticipant.Read.Chat`|Позволяет приложению читать сведения о участниках, включая имя, роль, id, присоединились и слева, собрания, связанные с этим чатом, от имени подписанного пользователя.|
+    |`OnlineMeetingParticipant.ToggleIncomingAudio.Chat`|Позволяет приложению от имени подписанного пользователя перетапывать входящий звук для участников собраний, связанных с этим чатом.|
+
+* **Разрешения на использование ресурсов для пользователей**
+
+    |**Имя**|**Описание**|
+    |---|---|
+    |`InAppPurchase.Allow.User`|Позволяет приложению показывать предложения пользовательского рынка и завершать покупки пользователя в приложении от имени подписанного пользователя.|
+
+## <a name="see-also"></a>См. также
+
+* [Понимание структуры приложений Microsoft Teams](~/concepts/design/app-structure.md)
+* [Разрешение настройки приложения](~/concepts/design/enable-app-customization.md)
+* [Локализация приложения](~/concepts/build-and-test/apps-localization.md)
+* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
