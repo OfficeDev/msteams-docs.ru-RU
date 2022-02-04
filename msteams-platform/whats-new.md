@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 88287c26ce2531b2eb76bca2b5352fbfccd4a3e8
-ms.sourcegitcommit: 9bfa6b943b065c0a87b1fff2f5edc278916d624a
+ms.openlocfilehash: 44979e335f76065075efe064bf9c446761bbfec5
+ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214344"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62362762"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,7 +22,11 @@ ms.locfileid: "62214344"
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
-|25.01.2022| API КОРЗИНЫ | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#cart-api)|
+|03.02.2022| Представлен манифест приложения версии 1.12 |  • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+|03.02.2022 |Интерактивный режим для демонстрации сцены собрания|• Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
+|03.02.2022| Предварительное тестирование для приложений с монетизацией (предварительная версия для разработчиков)| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
+|03.02.2022| Поток покупок из приложения для монетизации приложений (предварительная версия для разработчиков) | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md)
+|25.01.2022| API отправки субтитров в режиме реального времени | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#send-real-time-captions-api)|
 |19.01.2022| Отзыв о завершении формы в адаптивных карточках | Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Отзыв о завершении формы](bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
 |17.01.2022| Средство "Выбор людей" в адаптивных карточках (в предварительной версии разработчика для мобильных устройств и в общедоступной версии для классических устройств) | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
 |10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
@@ -39,7 +43,8 @@ ms.locfileid: "62214344"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
-|25.01.2022| API КОРЗИНЫ | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#cart-api)|
+|02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) |
+|25.01.2022| API отправки субтитров в режиме реального времени | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#send-real-time-captions-api)|
 |19.01.2022| Отзыв о завершении формы в адаптивных карточках | Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Отзыв о завершении формы](bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
 |17.01.2022| Выбор людей в адаптивных карточках для классической версии | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
 
@@ -72,7 +77,7 @@ ms.locfileid: "62214344"
 |25.10.2021| В модуле "Начало работы" для документации разработчика Microsoft Teams обновлена структура и процедуры пошаговых инструкций | Начало работы > [Первые шаги в создании приложения Teams](get-started/get-started-overview.md) |
 |21.10.2021| Добавление API `registerOnFocused` для вкладок или личных приложений | Создание вкладок > Создание личных вкладок > [Добавление API `registerOnFocused` для вкладок или личных приложений](tabs/how-to/create-personal-tab.md#add-registeronfocused-api-for-tabs-or-personal-apps) |
 |20.10.2021| Сцена собрания теперь поддерживается в общедоступной версии. | Разработка приложений для собраний Teams > [Включение и настройка приложений для собраний Teams](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md) |
-|20.10.2021| API сведений о собраниях и событиях Teams в реальном времени | Разработка приложений для собраний Teams > [Создание приложений для собраний Teams](~/apps-in-teams-meetings/API-references.md#meeting-details-api) |
+|20.10.2021| API сведений о собраниях и событиях Teams в реальном времени. | Создание приложений для собраний Teams > [API получения сведений о собрании](apps-in-teams-meetings/API-references.md#get-meeting-details-api) |
 |18.10.2021| Развертывание ссылок на вкладки и представление "Экран". | Создание вкладок > [Развертывание ссылок на вкладки и представление "Экран"](tabs/tabs-link-unfurling.md) |
 |08.10.2021| Новые советы и рекомендации по разработке адаптивных карточек | Разработка приложения > Компоненты пользовательского интерфейса > [Разработка адаптивных карточек для приложения Teams](task-modules-and-cards/cards/design-effective-cards.md) |
 |05.10.2021| Скрытие приложений Teams до тех пор, пока администратор не разрешит отобразить приложение.| Разработка приложения > [Скрытие приложения Teams до утверждения администратором](concepts/design/enable-app-customization.md#hide-teams-app-until-admin-approves) |
@@ -228,6 +233,10 @@ ms.locfileid: "62214344"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+|02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+|03.02.2022 |Интерактивный режим для демонстрации сцены собрания|• Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
+|03.02.2022| Предварительное тестирование для приложений с монетизацией| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
+|03.02.2022| Поток покупок из приложения для монетизации приложений | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md) 
 |17.01.2022| Выбор людей в адаптивных карточках для мобильных устройств  | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
 |10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
 |24.12.2021| Представлены пошаговые инструкции по предоставлению разрешений для устройств вкладок. | Основы приложений > Возможности устройств > [Пошаговые инструкции по предоставлению разрешений для устройств вкладок](sbs-tab-device-permissions.yml) |

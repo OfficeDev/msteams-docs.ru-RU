@@ -3,12 +3,12 @@ title: Упаковка приложения
 description: Узнайте, как упаковать приложение Microsoft Teams для тестирования, отправки и публикации в магазине.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: 002da681a464770a31fa6963e96fdff54701b35f
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: f3f725280e24296f1f2d9c919a14585e07d86c75
+ms.sourcegitcommit: 6e33289c55a1a83adb9b7b38c42d781c699786f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059681"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345395"
 ---
 # <a name="create-a-microsoft-teams-app-package"></a>Создание манифеста приложения в Microsoft Teams
 
@@ -16,6 +16,12 @@ ms.locfileid: "62059681"
 
 * **Манифест приложения**. В манифесте описывается настройка приложения, включая его возможности, необходимые ресурсы и другие важные атрибуты.
 * **Значки приложения**. Для каждого пакета приложения требуется цветной и контурный значок.
+
+## <a name="teams-doesnt-host-your-app"></a>Ваше приложение не размещается в Teams
+
+Когда пользователь устанавливает приложение в Teams, он устанавливает пакет приложения, содержащий только файл конфигурации (также известный как манифест приложения) и значки приложения. Логика приложения и хранилище данных размещаются в другом месте, например в localhost во время разработки и в веб-службах Azure. Teams получает доступ к этим ресурсам с помощью HTTPS.
+
+:::image type="content" source="../../assets/images/teams-app-host.png" alt-text="Иллюстрация размещения приложения для Teams" border="true":::
 
 ## <a name="app-manifest"></a>Манифест приложения
 
