@@ -471,6 +471,10 @@
           href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
         - name: Включение предложения SaaS в приложение
           href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
+        - name: Предварительное тестирование для приложений с монетизацией
+          href: concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
+        - name: Покупки из приложения
+          href: concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md
 - name: Манифест приложения
   items:
     - name: Схема манифеста приложения
