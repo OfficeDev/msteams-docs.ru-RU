@@ -6,13 +6,8 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: d0ec446b51363bbbe4c3322ec1d840ad4068ff74
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768373"
 ---
+
 # <a name="teamsfx-sdk-for-typescript-or-javascript"></a>TeamsFx SDK для TypeScript или JavaScript
 
 TeamsFx стремится сократить задачи реализации удостоверений и доступа к облачным ресурсам к однострочному заявлению с нулевой конфигурацией.
@@ -21,16 +16,16 @@ TeamsFx стремится сократить задачи реализации 
 
 - Аналогичным образом можно получить доступ к основным функциональным возможностям в клиентской и серверной среде.
 - Напишите код проверки подлинности пользователей упрощенным способом.
- 
+
 ## <a name="get-started"></a>Начало работы
 
 TeamsFx SDK предварительно настроен в проекте scaffolded с помощью инструментария TeamsFx или CLI.
-Дополнительные сведения см. [в Teams проекта приложения.](https://github.com/OfficeDev/TeamsFx/blob/main/packages/vscode-extension/README.md)
+Дополнительные сведения см. [в Teams app project](https://github.com/OfficeDev/TeamsFx/blob/main/packages/vscode-extension/README.md).
 
-### <a name="prerequisites"></a>Необходимые условия
+### <a name="prerequisites"></a>Предварительные требования
 
-- Node.js `10.x.x` версии или более поздней версии.
-- Если в проекте установлены связанные пакеты в качестве зависимостей, убедитесь, что они имеют ту же версию и `botbuilder` версия [](https://github.com/Microsoft/botbuilder-js#packages) `>= 4.9.3` . ([Проблема - все пакеты BOTBUILDER](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548)должны быть одной и той же версии )
+- Node.js версии `10.x.x` или более поздней версии.
+- Если в проекте установлены связанные `botbuilder` [пакеты](https://github.com/Microsoft/botbuilder-js#packages) в качестве зависимостей, убедитесь, что они имеют ту же версию и версия `>= 4.9.3`. ([Проблема — все пакеты BOTBUILDER должны быть одной и той же версии](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548))
 
 Дополнительные сведения см. в указанных ниже статьях.
 * [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk) 
@@ -38,9 +33,9 @@ TeamsFx SDK предварительно настроен в проекте scaf
 * [Справочная документация по API](https://aka.ms/teamsfx-sdk-help) 
 * [Примеры](https://github.com/OfficeDev/TeamsFx-Samples)
 
-### <a name="install-the-microsoftteamsfx-package"></a>Установка `@microsoft/teamsfx` пакета
+### <a name="install-the-microsoftteamsfx-package"></a>Установка пакета `@microsoft/teamsfx`
 
-Установите SDK TeamsFx для TypeScript или JavaScript с `npm` помощью:
+Установите SDK TeamsFx для TypeScript или JavaScript с помощью `npm`:
 
 ```bash
 npm install @microsoft/teamsfx
@@ -56,13 +51,12 @@ npm install @microsoft/teamsfx
 loadConfiguration({
   authentication: {
     initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL,
-    simpleAuthEndpoint: process.env.REACT_APP_TEAMSFX_ENDPOINT,
     clientId: process.env.REACT_APP_CLIENT_ID,
   },
 });
 ```
 
-- В среде NodeJS, такой как Azure Function, можно просто `loadConfiguration` позвонить. Он будет загружаться из переменных среды по умолчанию.
+- В среде NodeJS, такой как Azure Function, можно просто позвонить `loadConfiguration`. Он будет загружаться из переменных среды по умолчанию.
 
 ```ts
 loadConfiguration();
@@ -76,7 +70,6 @@ loadConfiguration();
 loadConfiguration({
   authentication: {
     initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL,
-    simpleAuthEndpoint: process.env.REACT_APP_TEAMSFX_ENDPOINT,
     clientId: process.env.REACT_APP_CLIENT_ID,
   },
 });
@@ -104,9 +97,9 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 ### <a name="credentials"></a>Учетные данные
 
-В папке учетных данных находятся 3 класса учетных данных, которые [помогут](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/credential) упростить проверку подлинности.
+В папке учетных данных находятся 3 класса учетных данных, [которые помогут](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/credential) упростить проверку подлинности.
 
-Классы учетных данных `TokenCredential` реализуют интерфейс, широко используемый в API библиотек Azure. Они предназначены для предоставления маркеров доступа для определенных областей. Следующие классы учетных данных представляют различные удостоверения в определенных сценариях:
+Классы учетных данных реализуют `TokenCredential` интерфейс, широко используемый в API библиотек Azure. Они предназначены для предоставления маркеров доступа для определенных областей. Следующие классы учетных данных представляют различные удостоверения в определенных сценариях:
 
 * `TeamsUserCredential`представляют Teams текущего пользователя. С помощью этой учетной записи будет запрашиваться согласие пользователя в первый раз.
 * `M365TenantCredential`представляют Microsoft 365 клиента. Он обычно используется, когда пользователь не участвует, как работа автоматизации с срабатывным временем.
@@ -114,17 +107,17 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 ### <a name="bots"></a>Боты
 
-Классы, связанные с ботом, хранятся в [папке бота.](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/bot)
+Классы, связанные с ботом, хранятся в [папке бота](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/bot).
 
 `TeamsBotSsoPrompt` может интегрироваться с рамками Bot. Это упрощает процесс проверки подлинности для разработки приложения-бота.
 
 ### <a name="helper-functions"></a>Функции помощника
 
-TeamsFx SDK предоставляет дополнительные функции для облегчения конфигурации сторонних библиотек. Они находятся в основной [папке.](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/core)
+TeamsFx SDK предоставляет дополнительные функции для облегчения конфигурации сторонних библиотек. Они находятся в основной [папке](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/core).
 
 ### <a name="error-handling"></a>Обработка ошибок
 
-Ответ на ошибку API `ErrorWithCode` содержит код ошибки и сообщение об ошибке.
+Ответ на ошибку API содержит `ErrorWithCode`код ошибки и сообщение об ошибке.
 
 Например, чтобы отфильтровать определенную ошибку, можно использовать следующий фрагмент:
 
@@ -165,13 +158,12 @@ try {
 
 ### <a name="use-graph-api-in-tab-app"></a>Использование Graph API в приложении вкладки
 
-Использование `TeamsUserCredential` и `createMicrosoftGraphClient` .
+Использование `TeamsUserCredential` и `createMicrosoftGraphClient`.
 
 ```ts
 loadConfiguration({
   authentication: {
     initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL,
-    simpleAuthEndpoint: process.env.REACT_APP_TEAMSFX_ENDPOINT,
     clientId: process.env.REACT_APP_CLIENT_ID,
   },
 });
@@ -188,7 +180,6 @@ const profile = await graphClient.api("/me").get();
 loadConfiguration({
   authentication: {
     initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL,
-    simpleAuthEndpoint: process.env.REACT_APP_TEAMSFX_ENDPOINT,
     clientId: process.env.REACT_APP_CLIENT_ID,
   },
 });
@@ -205,13 +196,16 @@ const response = await axios.default.get(apiConfig.endpoint + "api/httptrigger1"
 
 ### <a name="access-sql-database-in-azure-function"></a>Доступ SQL базы данных в Azure Function
 
-Используйте `tedious` библиотеку для доступа к SQL и `DefaultTediousConnectionConfiguration` рычагов, которые управляют проверкой подлинности.
-Кроме того, вы также можете составить подключение config других SQL библиотек на основе `tedious` `sqlConnectionConfig.getConfig()` результатов .
+Используйте `tedious` библиотеку для доступа к SQL и рычагов, `DefaultTediousConnectionConfiguration` которые управляют проверкой подлинности.
+Кроме того`tedious`, вы также можете составить подключение config других SQL библиотек на основе результатов `sqlConnectionConfig.getConfig()`.
 
 ```ts
 loadConfiguration();
 const sqlConnectConfig = new DefaultTediousConnectionConfiguration();
+// If there's only one SQL database
 const config = await sqlConnectConfig.getConfig();
+// If there are multiple SQL databases
+const config2 = await sqlConnectConfig.getConfig("your database name");
 const connection = new Connection(config);
 connection.on("connect", (error) => {
   if (error) {
