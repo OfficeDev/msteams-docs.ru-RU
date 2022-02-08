@@ -4,12 +4,12 @@ description: Узнайте, как зарегистрировать новый 
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: вызов средства аудио- и видеосвязи бота
-ms.openlocfilehash: 5368f8e5b5241ba91a1e4ad14b5d46f9ab778a12
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 8bb685d8d7ba470b7a9e76da084b7b165f83c23c
+ms.sourcegitcommit: 9bdd930523041377b52dadffbd8cd52a86a047d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435155"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443931"
 ---
 # <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация бота для звонков и собраний для Microsoft Teams
 
@@ -91,6 +91,10 @@ ms.locfileid: "62435155"
 
 > [!IMPORTANT]
 > В любое время, когда вы внося изменения в разрешения приложения, необходимо также повторить процесс согласия администратора. Изменения, внесенные на портале регистрации приложений, не отражаются до повторного получения согласия администратором клиента.
+
+## <a name="step-by-step-guide"></a>Пошаговые инструкции
+
+Следуйте [пошаговом](../../sbs-calling-and-meeting.yml) руководстве по настройкам вызовов и собраний в боте.
 
 ## <a name="next-step"></a>Следующий этап
 

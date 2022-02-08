@@ -5,26 +5,26 @@ ms.date: 11/15/2021
 ms.topic: overview
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 2dc1ab5323944a319e4a729639212d25ec92ccfc
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: ef2aff7d7f23d45b16041404e7a530596e978fb5
+ms.sourcegitcommit: 9bdd930523041377b52dadffbd8cd52a86a047d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059723"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443909"
 ---
-# <a name="extend-teams-apps-across-microsoft-365"></a>Расширение Teams приложений в Microsoft 365
+# <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
 > [!NOTE]
-> Этот ранний предварительный просмотр разработчика предназначен для предоставления Teams с существующими приложениями возможность попробовать новые функции и предоставить обратную связь по этому расширению платформы разработчика Teams в другие области с высоким уровнем Microsoft 365 экосистемы. [](/microsoftteams/platform/feedback)
+> Этот ранний предварительный просмотр разработчика предназначен для того, чтобы предоставить Teams имеющимся приложениям возможность попробовать новые функции и предоставить [](/microsoftteams/platform/feedback) обратную связь по этому расширению платформы разработчиков Teams в другие области с высоким уровнем Microsoft 365 экосистемы.
 
-Вы можете протестировать Teams приложения, работающие в Microsoft Office и Outlook, обновив код, чтобы использовать новый клиент [Microsoft Teams JavaScript SDK v2 Preview](using-teams-client-sdk-preview.md) и Microsoft Teams манифест предварительного просмотра [разработчика](../resources/schema/manifest-schema-dev-preview.md).
+Вы можете протестировать Teams приложения, работающие в Microsoft Office и Outlook, обновив код, чтобы использовать новый клиент [Microsoft Teams JavaScript SDK v2 Preview](using-teams-client-sdk-preview.md) и Microsoft Teams [developer preview manifest](../resources/schema/manifest-schema-dev-preview.md).
 
 С помощью этого предварительного просмотра можно:
 
-- Расширение существующих Teams [](/microsoftteams/platform/tabs/how-to/create-personal-tab) личных вкладок Outlook для рабочего стола и в Интернете, а также Office в Интернете (office.com).
+- Расширим Teams [личные](/microsoftteams/platform/tabs/how-to/create-personal-tab) вкладки Outlook для рабочего стола и в Интернете, а также Office в Интернете (office.com).
 - Расширение существующих Teams [расширений](/microsoftteams/platform/messaging-extensions/how-to/search-commands/define-search-command) обмена сообщениями на основе поиска до Outlook для настольных компьютеров и в Интернете.
 
-Для получения отзывов и проблем продолжайте использовать соответствующие каналы Microsoft Teams сообщества [разработчиков.](/microsoftteams/platform/feedback)
+Для получения отзывов и проблем продолжайте использовать соответствующие каналы [Microsoft Teams сообщества разработчиков](/microsoftteams/platform/feedback).
 
 ## <a name="teams-personal-tabs-in-office-and-outlook"></a>Teams личные вкладки в Office и Outlook
 
@@ -40,7 +40,7 @@ ms.locfileid: "62059723"
 
 После загрузки Teams, расширение обмена сообщениями отображается как одно из установленных приложений в Outlook области сообщений.
 
-:::image type="content" source="images/outlook-office-teams-personal-tab.png" alt-text="Личная вкладка, запущенная в outlook.com":::
+:::image type="content" source="~/assets/images/git-issue-msging-extension.png" alt-text="расширение обмена сообщениями" lightbox="~/assets/images/git-issue-msging-extension.png" border="true":::
 
 ## <a name="next-step"></a>Следующий этап
 
