@@ -5,12 +5,12 @@ ms.topic: how-to
 author: KirtiPereira
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 47ff6d557a76c457dee9d7d976df6f8316d40b89
-ms.sourcegitcommit: abe5ccd61ba3e8eddc1bec01752fd949a7ba0cc2
+ms.openlocfilehash: bcb5661c4f6d09499700456bc44ce962ac710ea9
+ms.sourcegitcommit: 83d67e73427ea1e93bb9aea5a8ca8ae05b68e302
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281758"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62430301"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Отправка приложения в Microsoft Teams
 
@@ -40,7 +40,7 @@ ms.locfileid: "62281758"
 1. Добавьте приложение в Teams.
 
 > [!NOTE]
-> При добавлении бота в Microsoft Teams вы не сможете получить языковой стандарт Microsoft Teams, так как активность бота не инициируется действием пользователя, например отправкой сообщения, поэтому `turnContext.Activity.GetLocale();` возвращает значение NULL.
+> Метод `onInstallationUpdateActivityAsync()` используется для получения языкового стандарты Microsoft Teams при добавлении бота в Microsoft Teams.
 
 ## <a name="troubleshoot-upload-issues"></a>Устранение неполадок при отправке
 
