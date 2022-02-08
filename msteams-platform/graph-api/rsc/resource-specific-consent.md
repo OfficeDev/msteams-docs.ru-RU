@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO Azure AD rsc Graph
-ms.openlocfilehash: 25b8a8b4ab04f2ff3a574a1e6c4422b38aaa977d
-ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
+ms.openlocfilehash: 50e26c78333068b180b374e4aae31f0727aee103
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62362755"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435742"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -91,9 +91,9 @@ ms.locfileid: "62362755"
 
 ### <a name="configure-group-owner-consent-settings-for-rsc-in-a-team"></a>Настройка параметров согласия владельца группы для RSC в команде
 
-Вы можете включить или отключить [согласие владельца группы](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-portal) непосредственно на портале Azure:
+Вы можете включить или отключить [согласие](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-portal) владельца группы непосредственно на Microsoft Azure портале:
 
-1. Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
+1. Вопишитесь на Microsoft Azure [в](https://portal.azure.com) качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
 1. Выберите **Azure Active Directory** >  **Enterprise applicationsConsent** >  **и permissionsUser** > [**.**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings)
 1. Включить, отключить или ограничить согласие пользователя с согласия владельца группы с меткой управления **для доступа к данным приложений**. По умолчанию **разрешается согласие владельца группы для всех владельцев групп**. Чтобы владелец группы устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие владельца группы.
 
@@ -103,9 +103,9 @@ ms.locfileid: "62362755"
 
 ### <a name="configure-user-consent-settings-for-rsc-in-a-chat"></a>Настройка параметров согласия пользователя для RSC в чате
 
-Вы можете включить или отключить [согласие пользователя непосредственно](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) на портале Azure:
+Вы можете включить или отключить [согласие пользователя](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) непосредственно на Microsoft Azure портале:
 
-1. Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
+1. Вопишитесь на Microsoft Azure [в](https://portal.azure.com) качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
 1. Выберите **Azure Active Directory** >  **Enterprise applicationsConsent** >  **и permissionsUser** > [**.**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings)
 1. Включить, отключить или ограничить согласие пользователя с разрешением пользователя с меткой управления **для приложений**. По умолчанию **разрешается согласие пользователя для приложений**. Чтобы участник чата устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие пользователя.
 
@@ -160,13 +160,13 @@ ms.locfileid: "62362755"
 |Имя| Тип | Описание|
 |---|---|---|
 |`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 
 Укажите разрешения, необходимые приложению.
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`authorization`|Object|Список разрешений, необходимых приложению. Дополнительные сведения см. в [placeholder for link-authorization in manifest]
+|`authorization`|Object|Список разрешений, необходимых приложению для работы. Дополнительные сведения см. в [placeholder for link-authorization in manifest]
 
 Пример RSC в команде
 
@@ -328,7 +328,7 @@ ms.locfileid: "62362755"
 |Имя| Тип | Описание|
 |---|---|---|
 |`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 |`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в дополнительных сведениях о разрешениях, определенных для ресурсов](resource-specific-consent.md#resource-specific-permissions).|
 
 Пример RSC в команде

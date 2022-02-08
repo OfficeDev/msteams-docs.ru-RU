@@ -6,8 +6,13 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
+ms.openlocfilehash: 87420b5e2b133de32b8c27a4a8d34a90072a3c76
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435826"
 ---
-
 # <a name="add-cloud-resources-to-your-teams-app"></a>Добавление облачных ресурсов в Teams приложение
 
 TeamsFx помогает в предоставлении облачных ресурсов для размещения приложений. Кроме того, можно дополнительно добавить облачные ресурсы, которые подходят для разработки.
@@ -17,14 +22,14 @@ TeamsFx помогает в предоставлении облачных рес
 [Установка Teams набор средств](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии v3.0.0+.
 
 > [!TIP]
-> Убедитесь, что Teams в VS Code.
+> Убедитесь, что Teams приложения в Visual Studio Code.
 
 ## <a name="add-cloud-resources-using-teams-toolkit"></a>Добавление облачных ресурсов с Teams набор средств
 
 > [!IMPORTANT]
 > Необходимо уложить каждую среду после добавления ресурса.
 
-1. Откройте **Visual Studio Code**.
+1. Откройте **Microsoft Visual Studio код**.
 1. Выберите **Teams набор средств** левой области.
 1. В панели Teams набор средств панели выберите **Добавить облачные ресурсы**:
 
@@ -76,7 +81,7 @@ TeamsFx интегрируется со службами Azure для следу
 
 |Ресурсы|Изменения|Описание|
 |---------------|---------------|-----------------------------|
-|Функции Azure|Код шаблона функций Azure добавляется в подмостки с пути `yourProjectFolder/api`</br></br>`launch.json` и `task.json` обновляется в папке `.vscode` .| Включает шаблон триггера hello world http в проект.</br></br> Включает необходимые сценарии для Visual Studio Code, которые необходимо выполнять при локальном отключе приложения.|
+|Функции Azure|Код шаблона функций Azure добавляется в подмостки с пути `yourProjectFolder/api`</br></br>`launch.json` и `task.json` обновляется в папке `.visual studio code` .| Включает шаблон триггера hello world http в проект.</br></br> Включает необходимые сценарии для Visual Studio Code, которые необходимо выполнять при локальном отключе приложения.|
 |Управление API Azure|Открытый файл спецификации API, добавленный в подмостки с пути `yourProjectFolder/openapi`|Определяет API после публикации, это файл спецификации API.|
 
 ## <a name="limitation"></a>Ограничение

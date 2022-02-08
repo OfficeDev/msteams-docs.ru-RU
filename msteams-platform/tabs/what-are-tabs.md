@@ -5,12 +5,12 @@ description: Обзор настраиваемых вкладок на плат�
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 97803e89c225c45aee82c6969c8168dec7bf5cac
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: 3e339853729fc97623fba78d94be23b0562d4dbb
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212505"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435183"
 ---
 # <a name="build-tabs-for-microsoft-teams"></a>Создание вкладок для Microsoft Teams
 
@@ -79,8 +79,8 @@ ms.locfileid: "62212505"
 У вас может быть несколько вкладок канала или группы, а также до 16 личных вкладок для каждого приложения.
 
 ### <a name="tools-you-can-use-to-build-tabs"></a>Инструменты для создания вкладок
-* [Наборы средств Teams для Visual Studio Code](../toolkit/visual-studio-code-overview.md)
-* [Наборы средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
+* [Набор средств Teams для Microsoft Visual Studio Code](../toolkit/visual-studio-code-overview.md)
+* [Набор средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
 
 ## <a name="next-step"></a>Следующий этап
 

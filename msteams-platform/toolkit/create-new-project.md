@@ -6,8 +6,13 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
+ms.openlocfilehash: 0f723edb3cc890ef0668dbd3b8f87648935e20c3
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435679"
 ---
-
 # <a name="create-new-teams-project-using-teams-toolkit"></a>Создание нового Teams с помощью Teams набор средств
 
 Чтобы создать новый Teams с помощью Teams набор средств, выберите Создать новый проект **Teams** или **Начните с примера**.
@@ -25,7 +30,7 @@ ms.date: 11/29/2021
 
  Новый проект можно создать из **примерной галереи**. Выберите необходимый пример для создания приложений. Следующие действия по созданию приложений из образцов:
 
- 1. Откройте **Teams набор средств** из Visual Studio Code.
+ 1. Откройте **Teams набор средств** из Microsoft Visual Studio Code.
  1. Выберите **раздел DEVELOPMENT** в Представлении дерева.
  1. Выберите **примеры представления**. Пример галереи отображается на следующем изображении:
    

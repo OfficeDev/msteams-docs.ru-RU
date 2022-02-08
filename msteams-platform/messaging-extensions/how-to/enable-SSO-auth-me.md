@@ -5,12 +5,12 @@ description: Узнайте, как включить SSO-поддержку ра
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: de0f08cf73c5ba353398693b95c94d45be2eb727
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: a0aaae8637a80dd2e6f48cf9ae3081b4e796824f
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212554"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435700"
 ---
 # <a name="single-sign-on-support-for-messaging-extensions"></a>Поддержка единого входного знака для расширений обмена сообщениями
  
@@ -22,27 +22,27 @@ ms.locfileid: "62212554"
 
 Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
 
-* У вас должна быть [учетная запись Azure.](https://azure.microsoft.com/free/)
-* Необходимо настроить приложение через портал Azure AD и обновить Teams манифеста бота, как определено в регистрации приложения на [портале Azure AD.](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-azure-ad-portal)
+* У вас должна быть [учетная запись Azure](https://azure.microsoft.com/free/) .
+* Необходимо настроить приложение на портале Azure AD и обновить Teams, как определено в регистрации приложения на [портале Azure AD](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-azure-ad-portal).
 
 > [!NOTE]
-> Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов.](../../bots/how-to/authentication/auth-aad-sso-bots.md)
+> Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md).
 
 ## <a name="enable-sso-for-messaging-extensions-and-link-unfurling"></a>Включить SSO для расширения обмена сообщениями и разгрузки ссылок
 
 После завершения необходимых условий можно включить SSO для расширения сообщений и разгрузку ссылок.
 
 **Чтобы включить SSO**
-1. Обновите сведения о подключении [ботов к OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на портале Azure.
+1. Обновите сведения о подключении [ботов к OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на Microsoft Azure портале.
 2. Скачайте [пример расширений обмена сообщениями](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.
    > [!NOTE]
    > Использование подключения OAuth для ботов при настройке расширений обмена сообщениями.
-3. В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) обновите значение от *auth* до *silentAuth* в `OnTeamsMessagingExtensionQueryAsync` файле and/or `OnTeamsAppBasedLinkQueryAsync` .  
+3. В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) обновите значение от *auth* до *silentAuth* `OnTeamsMessagingExtensionQueryAsync` в файле and/or `OnTeamsAppBasedLinkQueryAsync`.  
 
     > [!NOTE]
-    > Мы не поддерживаем другие обработчики SSO, за исключением файла `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` TeamsMessagingExtensionsSearchAuthConfigBot.cs.
+    > Мы не поддерживаем другие обработчики SSO, `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` за исключением файла TeamsMessagingExtensionsSearchAuthConfigBot.cs.
    
-4. Вы получаете маркер в обработнике в полезной нагрузке или в зависимости от того, в какой сценарий вы включаете `OnTeamsMessagingExtensionQueryAsync` `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync` SSO для:
+4. Вы получаете маркер в `OnTeamsMessagingExtensionQueryAsync` обработнике `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync`в полезной нагрузке или в зависимости от того, в какой сценарий вы включаете SSO для:
 
     ```json
     JObject valueObject=JObject.FromObject(turnContext.Activity.Value);

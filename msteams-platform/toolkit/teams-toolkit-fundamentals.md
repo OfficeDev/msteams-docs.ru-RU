@@ -1,18 +1,25 @@
 ---
 title: Teams набор средств Обзор
 author: zyxiaoyuer
-description: 'Обзор Teams набор средств, установки Teams набор средств и tour of набор средств функций'
+description: Обзор Teams набор средств, установки Teams набор средств и tour of набор средств функций
 ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
+ms.openlocfilehash: 69d0802d72b06c8acbf1cd97fb498a6fefe4e3ca
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435756"
 ---
-
 # <a name="teams-toolkit-overview"></a>Teams набор средств Обзор
 
 > [!NOTE]
 > В настоящее время эта функция доступна только **для предварительного просмотра общедоступных** разработчиков.
 
+
+Teams набор средств для Microsoft Visual Studio Code позволяет создавать и развертывать Teams приложения с интегрированным удостоверением, доступом к облачному хранилище, данным microsoft Graph и другим службам в Azure и Microsoft 365 с помощью подхода нулевой конфигурации. Для Teams разработки приложения, аналогично Teams набор средств для Visual Studio, можно использовать [CLI-инструмент](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md), состоящий из набор средств`teamsfx`.
 Teams набор средств позволяет создавать, отлаговка и развертывать Teams приложение прямо Visual Studio Code. Разработка приложения с помощью инструментария имеет преимущества:
 
 - Интегрированная идентификация
@@ -38,6 +45,7 @@ Teams набор средств автоматизирует ручную раб
 1. Используйте учетную запись Azure для обеспечения и развертывания приложения в облаке.
 1. Опубликуйте приложение Teams.
 
+
 ## <a name="install-teams-toolkit-for-visual-studio-code"></a>Установка Teams набор средств для Visual Studio Code
 
 1. Откройте **Visual Studio Code.**
@@ -62,7 +70,8 @@ Teams набор средств автоматизирует ручную раб
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/manual/teams toolkit.png" alt-text="мини-функции":::
 
-Вы можете выбрать **быстрый** запуск для изучения Teams набор средств или создать новое **приложение Teams** для создания одного Teams проекта. Вы можете просмотреть список всех набор средств при создании или открытия существующего проекта в Visual Studio Code панели.
+
+Вы можете выбрать **быстрый** запуск для изучения Teams набор средств или создать новое **приложение Teams** для создания одного Teams проекта. Если в Visual Studio Code открыт проект Teams, созданный Teams набор средств v2.+, вы увидите пользовательский интерфейс Teams набор средств со всеми функциональными возможностями, как показано на следующем изображении: вы можете выбрать быстрый запуск для изучения Teams  набор средств или выберите **Создать новое приложение Teams для** создания одного Teams проекта. Вы можете просмотреть список всех набор средств при создании или открытия существующего проекта в Visual Studio Code панели.
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/manual/toolkit functions.png" alt-text="функций":::
 

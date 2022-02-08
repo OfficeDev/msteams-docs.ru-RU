@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 keywords: тестирование групп программ разработчика приложений
 ms.date: 11/01/2019
-ms.openlocfilehash: 92079eb8184e0d7618d87de97058f667bf85deda
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: 82fff61f174b4dc08d30c466d9d404042bb3a4e0
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212561"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435847"
 ---
 # <a name="add-test-data-to-your-microsoft-365-test-tenant"></a>Добавление тестовых данных в Microsoft 365 тестовый клиент
 
@@ -18,18 +18,18 @@ ms.locfileid: "62212561"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-1. [Присоединитесь к Microsoft 365 разработчику,](/office/developer-program/office-365-developer-program)если у вас нет тестового клиента.
-2. [Настройка подписки Microsoft 365 разработчика.](/office/developer-program/office-365-developer-program-get-started)
-3. Используйте примеры пакетов данных с [подпиской Microsoft 365 разработчика для установки пакета контента Пользователей.](/office/developer-program/install-sample-packs)
+1. [Присоединитесь к Microsoft 365](/office/developer-program/office-365-developer-program) разработчику, если у вас нет тестового клиента.
+2. [Настройка подписки Microsoft 365 разработчика](/office/developer-program/office-365-developer-program-get-started).
+3. [Используйте примеры пакетов данных с подпиской Microsoft 365 разработчика для установки пакета контента Пользователей](/office/developer-program/install-sample-packs).
 4. [Установите модуль Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.2).
-5. [Установите модуль Azure AD PowerShell.](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module&preserve-view=true)
+5. [Установите модуль Azure AD PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module&preserve-view=true).
 
 > [!NOTE]
 > Для запуска скриптов у клиента должны быть глобальные разрешения администратора.
 
 ## <a name="allow-users-to-upload-apps"></a>Разрешить пользователям загружать приложения
 
-По умолчанию только глобальные администраторы или Teams службы могут загружать (побочные нагрузки) приложения в клиента. Вы также можете разрешить пользователям загружать настраиваемые приложения для собственного использования или в группы для тестирования. Дополнительные сведения см. в приложении управление пользовательскими политиками и настройками [приложений в Teams.](/microsoftteams/teams-custom-app-policies-and-settings)
+По умолчанию только глобальные администраторы или Teams службы могут загружать (побочные нагрузки) приложения в клиента. Вы также можете разрешить пользователям загружать настраиваемые приложения для собственного использования или в группы для тестирования. Дополнительные сведения см. в [сведениях об управлении пользовательскими политиками](/microsoftteams/teams-custom-app-policies-and-settings) и настройками приложений в Teams.
 
 ## <a name="create-teams-and-channels-for-testing"></a>Создание групп и каналов для тестирования
 
@@ -164,7 +164,7 @@ ms.locfileid: "62212561"
 
         try {
 
-            # 1. Login with the global administrator account for your O365 Developer Program tenant. This script uses these credentials to connect to the powershell modules for Azure Active Directory and Microsoft Teams
+            # 1. Login with the global administrator account for your Office 365 Developer Program tenant. This script uses these credentials to connect to the PowerShell modules for Azure Active Directory and Microsoft Teams
 
             $creds = Get-Credential
 

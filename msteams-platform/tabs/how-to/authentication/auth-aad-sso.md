@@ -4,12 +4,12 @@ description: Описание единого входа (SSO)
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: teams проверка подлинности SSO Azure AD единый вход api
-ms.openlocfilehash: fd11f1febf1fb919a201a56156c36dfe1ee4d7d8
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: 065b8a75348e026a7e4bc2514438c70dbef479d7
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212358"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435162"
 ---
 # <a name="single-sign-on-sso-support-for-tabs"></a>Поддержка единого входа (SSO) для вкладок
 
@@ -29,7 +29,7 @@ ms.locfileid: "62212358"
 > [!NOTE]
 > **Быстрый запуск**  
 >
-> Самый простой способ начала работы с единым входом для вкладок — это набор средств Teams для Visual Studio Code. Дополнительные сведения см. в статье [Единый вход с помощью набора инструментов Teams и Visual Studio Code для вкладок](../../../toolkit/visual-studio-code-tab-sso.md)
+> Самый простой способ начала работы с единым входом для вкладок — это набор средств Teams для Microsoft Visual Studio Code. Дополнительные сведения см. в статье [Единый вход с помощью набора инструментов Teams и Visual Studio Code для вкладок](../../../toolkit/visual-studio-code-tab-sso.md)
 
 ## <a name="how-sso-works-at-runtime"></a>Принцип работы единого входа во время выполнения
 

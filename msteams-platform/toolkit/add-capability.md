@@ -6,8 +6,13 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
+ms.openlocfilehash: 3e704b08caa9a3aafc388fe4aa2e8851292c944f
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435805"
 ---
-
 # <a name="add-capabilities-to-your-teams-apps"></a>Добавление возможностей в Teams приложения
 
 Вы можете создать новое Teams с одним из Teams приложений. Во время разработки приложения можно использовать Teams набор средств для добавления дополнительных возможностей в Teams приложение. В следующей таблице перечислены Teams приложения:
@@ -30,7 +35,7 @@ ms.date: 11/29/2021
 > [!IMPORTANT]
 > Необходимо выполнить предоставление для каждой среды после успешного добавления возможностей в Teams приложение.
 
-1. Откройте **Visual Studio Code**.
+1. Откройте **Microsoft Visual Studio код**.
 1. Выберите **Teams набор средств** левой панели.
 1. Выберите **дополнительные возможности**:
 

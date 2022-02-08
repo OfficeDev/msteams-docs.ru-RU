@@ -2,16 +2,14 @@
 title: Настройка среды разработчиков для расширения Teams приложений в Microsoft 365
 description: Вот необходимые условия для расширения Teams приложений в Microsoft 365
 ms.date: 11/15/2021
-ms.topic: how-to
-ms.custom: m365apps
-ms.openlocfilehash: e024b11f03c605144a5d1cac6904cdd0095ec15c
-ms.sourcegitcommit: abe5ccd61ba3e8eddc1bec01752fd949a7ba0cc2
+ms.openlocfilehash: 3fe9d9ea02ff1e7f607d8870ca6817b48556c81f
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281702"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435665"
 ---
-# <a name="set-up-your-dev-environment-for-extending-teams-apps-across-m365"></a>Настройка среды разработчиков для расширения Teams приложений в M365
+# <a name="set-up-your-dev-environment-for-extending-teams-apps-across-microsoft-365"></a>Настройка среды разработчиков для расширения Teams приложений в Microsoft 365
 
 > [!NOTE]
 > Приложение Extend teams Microsoft 365 в настоящее время доступно только в [предварительном просмотре общедоступных разработчиков](~/resources/dev-preview/developer-preview-intro.md).
@@ -21,11 +19,11 @@ ms.locfileid: "62281702"
 Чтобы настроить среду разработки:
 
 > [!div class="checklist"]
-> * [Получите клиента разработчика M365 (песочница) и вьет побочный разгрузки](#prepare-a-developer-tenant-for-testing)
-> * [Регистрация клиента M365 в *Office 365 целевых выпусках*](#enroll-your-developer-tenant-for-office-365-targeted-releases)
+> * [Получите Microsoft 365 клиента-разработчика (песочница) и внося побочные нагрузки](#prepare-a-developer-tenant-for-testing)
+> * [Регистрация клиента Microsoft 365 в *Office 365 целевых выпусках*](#enroll-your-developer-tenant-for-office-365-targeted-releases)
 > * [Настройка учетной записи для доступа к версиям предварительного просмотра Outlook и Office](#install-office-apps-in-your-test-environment)
 > * [Переключиться на Developer Preview версию Teams](#switch-to-the-developer-preview-version-of-teams)
-> * [*Необязательный*] [Установка Teams набор средств расширения для Visual Studio Code](#install-visual-studio-code-and-teams-toolkit-preview-extension)
+> * [*Необязательный*] [Установка Teams набор средств для Microsoft Visual Studio кода](#install-visual-studio-code-and-teams-toolkit-preview-extension)
 
 ## <a name="prepare-a-developer-tenant-for-testing"></a>Подготовка клиента-разработчика к тестированию
 

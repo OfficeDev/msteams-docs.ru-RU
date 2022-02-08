@@ -4,12 +4,12 @@ description: Вот как обновить расширение обмена с
 ms.date: 11/15/2021
 ms.topic: tutorial
 ms.custom: m365apps
-ms.openlocfilehash: 5c37eff384f3aa9d2d5f615272ec7a5518de4e8d
-ms.sourcegitcommit: 6e33289c55a1a83adb9b7b38c42d781c699786f7
+ms.openlocfilehash: a72f4781c6765c908748a8be16d096bca866fe36
+ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345382"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62435812"
 ---
 # <a name="extend-a-teams-messaging-extension-across-microsoft-365"></a>Расширение Teams сообщений по всему Microsoft 365
 
@@ -27,14 +27,14 @@ ms.locfileid: "62345382"
 
 В остальном руководстве вы сможете просмотреть эти действия и показать, как просмотреть расширение обмена сообщениями как в Outlook для Windows, так и в Интернете.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы завершить этот учебник, вам потребуется:
 
  - Клиент Microsoft 365 программы разработчиков
  - Клиент песочницы, зарегистрированный *в Office 365 целевых выпусках*
  - Тестовая среда с Office приложениями, установленными с Приложения Microsoft 365 *бета-канала*
- - Visual Studio Code с расширением Teams набор средств (Предварительная версия) (необязательный)
+ - Microsoft Visual Studio с расширением Teams набор средств (Preview) (необязательный)
 
 > [!div class="nextstepaction"]
 > [Необходимые условия для установки](prerequisites.md)
@@ -80,7 +80,7 @@ ms.locfileid: "62345382"
 
 Чтобы пользователи могли взаимодействовать с расширением обмена сообщениями из Outlook, необходимо добавить в бот Outlook канал:
 
-1. С [портала Azure](https://portal.azure.com) (или [портала Bot Framework](https://dev.botframework.com) , если вы зарегистрировались там ранее), перейдите на ресурс бота.
+1. С [Microsoft Azure](https://portal.azure.com) портала (или [портала Bot Framework](https://dev.botframework.com), если вы ранее там зарегистрировались), перейдите на ресурс бота.
 
 1. Из *Параметры* выберите **Каналы**.
 
