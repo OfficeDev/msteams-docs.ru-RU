@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 1172e0c94d89e36b1a48851fbef02264f0007777
-ms.sourcegitcommit: 7c627372e4eb838a1f437618473406fa9764a8fd
+ms.openlocfilehash: a33e704b8c66d460b6946b60947601bac9fb9269
+ms.sourcegitcommit: 9bdd930523041377b52dadffbd8cd52a86a047d7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62432734"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443974"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,15 +22,16 @@ ms.locfileid: "62432734"
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
+|08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний.| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 |03.02.2022| Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|03.02.2022 |Интерактивный режим для демонстрации сцены собрания| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
+|03.02.2022| Интерактивный режим для демонстрации сцены собрания| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |03.02.2022| Предварительное тестирование для приложений с монетизацией (предварительная версия для разработчиков)| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
 |03.02.2022| Поток покупок из приложения для монетизации приложений (предварительная версия для разработчиков) | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md)
 |25.01.2022| API отправки субтитров в режиме реального времени | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#send-real-time-captions-api)|
 |19.01.2022| Отзыв о завершении формы в адаптивных карточках | Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Отзыв о завершении формы](bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
 |17.01.2022| Средство "Выбор людей" в адаптивных карточках (в предварительной версии разработчика для мобильных устройств и в общедоступной версии для классических устройств) | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
-|10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
+|10.01.2022| Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
 
 ## <a name="ga-features"></a>Функции общедоступной версии
 
@@ -44,6 +45,7 @@ ms.locfileid: "62432734"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний.| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) |
 |25.01.2022| API отправки субтитров в режиме реального времени | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#send-real-time-captions-api)|
 |19.01.2022| Отзыв о завершении формы в адаптивных карточках | Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Отзыв о завершении формы](bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
