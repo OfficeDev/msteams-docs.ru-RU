@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: b54a0843074f6689a5c946ea265a02cda92bc682
-ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+ms.openlocfilehash: b78ca5b46442f30db3adfe314d627d3fc95682be
+ms.sourcegitcommit: 25a33b31cc56c05169fc52c65d44c65c601aefef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62081106"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62043233"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -214,7 +214,7 @@ async def on_members_added_activity(
 * `channelData.teamsTeamId`: Обесценилось. Это свойство включено только для обратной совместимости.
 * `channelData.teamsChannelId`: Обесценилось. Это свойство включено только для обратной совместимости.
 
-### <a name="example-channeldata-object-channelcreated-event"></a>Пример объекта channelData (событие channelCreated)
+### <a name="example-channeldata-object-or-channelcreated-event"></a>Пример объекта channelData или события channelCreated
 
 В следующем коде показан пример объекта channelData:
 
@@ -234,20 +234,22 @@ async def on_members_added_activity(
 }
 ```
 
-## <a name="message-content"></a>Содержимое сообщения
-
 Сообщения, полученные от или отправленные боту, могут включать различные типы контента сообщений.
+
+## <a name="message-content"></a>Содержимое сообщения
 
 | Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF не поддерживается.  |
 | Карточки     | ✖                | ✔                | См. [ссылку Teams для](~/task-modules-and-cards/cards/cards-reference.md) поддерживаемых карт. |
-| Emojis    | ✔                | ✔                | Teams поддерживает смайлики через UTF-16, например U+1F600 для ухмыляясь. |
+| Emojis    | ✖                | ✔                | Teams поддерживает смайлики через UTF-16, например U+1F600 для ухмыляясь. |
+
+Вы также можете добавить уведомления в сообщение с помощью `Notification.Alert` свойства.
 
 ## <a name="notifications-to-your-message"></a>Уведомления о вашем сообщении
 
-Вы также можете добавить уведомления в сообщение с помощью `Notification.Alert` свойства. Уведомления предупреждают пользователей о новых задачах, упоминаниях и комментариях. Эти оповещения связаны с тем, над чем работают пользователи или на что они должны смотреть, вставляя уведомление в канал активности. Чтобы уведомления запускались из сообщения бота, установите свойство `TeamsChannelData` `Notification.Alert` объектов true .  Вопрос о том, будет ли поднято уведомление, зависит от параметров Teams пользователя, и переопределять эти параметры невозможно. Тип уведомления — это либо баннер, либо баннер и электронная почта.
+Уведомления предупреждают пользователей о новых задачах, упоминаниях и комментариях. Эти оповещения связаны с тем, над чем работают пользователи или на что они должны смотреть, вставляя уведомление в канал активности. Чтобы уведомления запускались из сообщения бота, установите свойство `TeamsChannelData` `Notification.Alert` объектов true .  Вопрос о том, будет ли поднято уведомление, зависит от параметров Teams пользователя, и переопределять эти параметры невозможно. Тип уведомления — это либо баннер, либо баннер и электронная почта.
 
 > [!NOTE]
 > Поле **Сводка** отображает любой текст от пользователя в виде сообщения уведомления в канале.
@@ -370,31 +372,13 @@ async def on_message_activity(self, turn_context: TurnContext):
 }
 ```
 
-### <a name="form-completion-feedback"></a>Отзывы о завершении формы
-
-Сообщение о завершении формы отображается в адаптивных картах при отправке ответа боту. Сообщение может быть двух типов, ошибка или успех:
-
-* **Ошибка.** Если ответ, отправленный боту, неуспешен, что-то пошло не **так, снова появляется** сообщение.
-
-    ![Сообщение об ошибке](~/assets/images/Cards/error-message.png)
-
-* **Успех.** Если ответ, отправленный боту, будет успешным, ваш ответ **будет отправлен в сообщение** приложения.
-
-    ![Сообщение об успехе](~/assets/images/Cards/success.PNG)
-
-Вы можете выбрать **закрыть** или переключить чат, чтобы отклонять сообщение.    
-
-**Отклик на мобильный** телефон:
-
-Сообщение об ошибке отображается в нижней части адаптивной карты.
-
-Дополнительные сведения о картах и картах в ботах см. в [документации по картам.](~/task-modules-and-cards/what-are-cards.md)
+Дополнительные информацию о картах и картах в ботах см. в [документации по картам.](~/task-modules-and-cards/what-are-cards.md)
 
 ## <a name="status-code-responses"></a>Ответы на код состояния
 
 Ниже печатаются коды состояния и их код ошибок и значения сообщений:
 
-| Код состояния | Код ошибки и значения сообщений | Описание |
+| Код состояния | Код ошибки и значения сообщений | Description |
 |----------------|-----------------|-----------------|
 | 403 | **Код:**`ConversationBlockedByUser` <br/> **Сообщение.** Пользователь заблокировал беседу с ботом. | Пользователь заблокировал бот в чате 1:1 или канале с помощью параметров модерации. |
 | 403 | **Код:**`BotNotInConversationRoster` <br/> **Сообщение.** Бот не является частью реестра беседы. | Бот не является частью беседы. |
@@ -409,7 +393,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 
