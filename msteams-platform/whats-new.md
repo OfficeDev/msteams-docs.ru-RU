@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: a33e704b8c66d460b6946b60947601bac9fb9269
-ms.sourcegitcommit: 9bdd930523041377b52dadffbd8cd52a86a047d7
+ms.openlocfilehash: 4c4a145db5ce66a13d4f605419c5a402eef2c3b7
+ms.sourcegitcommit: 60e4bbb013f0bb17a87a2e558abfcc311c73af75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443974"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62523789"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,10 +22,10 @@ ms.locfileid: "62443974"
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
+|11.02.2022| Общая трибуна собраний| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний.| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 |03.02.2022| Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|03.02.2022| Интерактивный режим для демонстрации сцены собрания| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |03.02.2022| Предварительное тестирование для приложений с монетизацией (предварительная версия для разработчиков)| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
 |03.02.2022| Поток покупок из приложения для монетизации приложений (предварительная версия для разработчиков) | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md)
 |25.01.2022| API отправки субтитров в режиме реального времени | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#send-real-time-captions-api)|
@@ -45,6 +45,7 @@ ms.locfileid: "62443974"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|11.02.2022| Общая трибуна собраний| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний.| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) |
 |25.01.2022| API отправки субтитров в режиме реального времени | Создание приложений для собраний Teams > Справочники по API приложений собраний > [Справочники по API приложений собраний](apps-in-teams-meetings/API-references.md#send-real-time-captions-api)|
@@ -238,7 +239,6 @@ ms.locfileid: "62443974"
 | -------- | --------- | ------------------ |
 |07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 |02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|03.02.2022 |Интерактивный режим для демонстрации сцены собрания| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |03.02.2022| Предварительное тестирование для приложений с монетизацией| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
 |03.02.2022| Поток покупок из приложения для монетизации приложений | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md) 
 |17.01.2022| Выбор людей в адаптивных карточках для мобильных устройств  | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
