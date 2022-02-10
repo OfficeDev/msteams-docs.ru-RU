@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: 98a2fe037dc254b1d56965c8ae1f3fa9f7abe48b
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: bdbfb1727784b3bf638b7d443b660c334ebfaa70
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435784"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518151"
 ---
 # <a name="install-moodle-lms"></a>Установка Moodle LMS
 
@@ -20,7 +20,7 @@ ms.locfileid: "62435784"
 > [!NOTE]
 > Чтобы помочь ИТ-администраторам легко настроить интеграцию Moodle и Teams, Microsoft 365 плагины Moodle обновляются для следующих версий:
 >
-> * Автоматическая регистрация сервера Moodle с [помощью Azure Active Directory](https://azure.microsoft.com/services/active-directory/).
+> * Автоматическая регистрация сервера Moodle с [помощью Microsoft Azure Active Directory (Microsoft Azure Active Directory Azure AD)).](https://azure.microsoft.com/services/active-directory/).
 >
 > * Одним щелчком мыши развертывание бота помощника Moodle в Azure.
 >
@@ -36,7 +36,7 @@ ms.locfileid: "62435784"
 
 * Учетные данные администратора Moodle.
 
-* Учетные данные администратора Azure AD.
+* Microsoft Azure Active Directory (Azure AD) учетные данные администратора.
 
 * Подписка Azure, в которой можно создавать новые ресурсы.
 
@@ -75,18 +75,18 @@ ms.locfileid: "62435784"
     >
     > * Если у вас нет существующего сайта Moodle, перейдите в [Moodle на репо Azure](https://github.com/azure/moodle) и быстро разверните экземпляр Moodle и настройте его под ваши нужды.
 
-## <a name="2-configure-the-connection-between-the-microsoft-365-plugins-and-azure-active-directory"></a>2. Настройка подключения между плагинами Microsoft 365 и Azure Active Directory
+## <a name="2-configure-the-connection-between-the-microsoft-365-plugins-and-microsoft-azure-active-directory-microsoft-azure-active-directory-azure-ad"></a>2. Настройка подключения между плагинами Microsoft 365 и Microsoft Azure Active Directory (Microsoft Azure Active Directory Azure AD))
 
-Необходимо настроить подключение между плагинами Microsoft 365 Azure AD.
+Необходимо настроить подключение между плагинами Microsoft 365 и Microsoft Azure Active Directory (Azure AD).
 
 ### <a name="requisites"></a>Реквизиты
 
-Зарегистрируйте Moodle в качестве приложения в Azure AD с помощью сценария PowerShell. Сценарий содержит следующие положения:
+Зарегистрируйте Moodle как приложение в Microsoft Azure Active Directory (Azure AD), используя скрипт PowerShell. Сценарий содержит следующие положения:
 
-* Новое приложение Azure AD для Microsoft 365 клиента, которое используется Microsoft 365 Плагины Moodle.
+* Новое приложение Microsoft Azure Active Directory Azure AD для Microsoft 365 клиента, которое используется Microsoft 365 Плагины Moodle.
 * Приложение для клиента Microsoft 365, настройка URL-адресов и разрешений на необходимый ответ для предварительного приложения, `AppID` а также возвращает и `Key`.
 
-Используйте созданную и `AppID` `Key` на Microsoft 365 страницу настройки плагинов Moodle для настройки сайта сервера Moodle с помощью Azure AD.
+Используйте созданную и `AppID` `Key` в Microsoft 365 страницу настройки плагинов Moodle для настройки сайта сервера Moodle с помощью Microsoft Azure Active Directory (Azure AD).
 
 > [!IMPORTANT]
 >
@@ -108,7 +108,7 @@ ms.locfileid: "62435784"
     1. Откройте извлеченную папку.
     1. Щелкните правой кнопкой мыши по файлу `Moodle-AzureAD-Script.ps1` и выберите **Свойства**.
     1. На **вкладке General** в окне Свойства `Unblock` выберите почтовый ящик рядом с атрибутом **Security** , расположенным в нижней части окна.
-    1. Нажмите **OK**.
+    1. Нажмите **ОК**.
     1. Скопируйте путь каталога в извлеченную папку.
 
 1. Запустите PowerShell в качестве администратора:
@@ -125,7 +125,7 @@ ms.locfileid: "62435784"
     1. Введите `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
     1. Введите `./Moodle-AzureAD-Script.ps1`.
     1. Вопишитесь в Microsoft 365 учетную запись администратора в всплывающее окно.
-    1. Введите имя приложения Azure AD, например, плагинов Moodle или Moodle.
+    1. Введите имя приложения Microsoft Azure Active Directory Azure AD, например, плагинов Moodle или Moodle.
     1. Введите URL-адрес сервера Moodle.
     1. **Скопируйте ID приложения (`AppID`)** и **ключ приложения(`Key`),** созданные скриптом, и сохраните их.
 
@@ -137,33 +137,33 @@ ms.locfileid: "62435784"
 
 1. После обновления страницы вы можете увидеть еще один новый раздел **Согласие администратора & дополнительные сведения**.
     1. Выберите **ссылку Предоставление согласия администратора**, введите Microsoft 365 учетные данные глобального администратора, а затем примите решение о предоставлении разрешений.
-    1. Рядом с **полем Клиент Azure AD выберите** кнопку **Обнаружение** .
+    1. Рядом с **полем клиента Microsoft Azure Active Directory Azure AD** выберите кнопку **Обнаружение**.
     1. Рядом с URL **OneDrive для бизнеса выберите** кнопку **Обнаружение**.
     1. После заполнения полей снова выберите кнопку **Сохранить изменения** .
 
 1. Выберите **кнопку Обновление** для проверки установки, а затем выберите **сохранить изменения**.
 
-1. Синхронизация пользователей между сервером Moodle и Azure AD. Для начала сделайте следующее:
+1. Синхронизация пользователей между сервером Moodle и Microsoft Azure Active Directory (Azure AD). Для начала сделайте следующее:
 
     > [!NOTE]
     > В зависимости от среды можно выбрать различные параметры на этом этапе.
 
-1. Синхронизация пользователей между сервером Moodle и Azure AD. В зависимости от среды можно выбрать различные параметры на этом этапе. Для начала сделайте следующее:
+1. Синхронизация пользователей между сервером Moodle и Microsoft Azure Active Directory (Azure AD). В зависимости от среды можно выбрать различные параметры на этом этапе. Для начала сделайте следующее:
     1. Переключиться на вкладку **Sync Параметры.**
 
-    1. В разделе **Синхронизация пользователей с azure AD** выберите почтовые ящики, применимые к вашей среде. Необходимо выбрать следующее:  
+    1. В разделе **Синхронизация пользователей с Microsoft Azure Active Directory (Azure AD)** выберите почтовые ящики, применимые к вашей среде. Необходимо выбрать следующее:  
 
-        ✔ Создание учетных записей в Moodle для пользователей в Azure AD.
+        ✔ Создание учетных записей в Moodle для пользователей в Microsoft Azure Active Directory (Azure AD).
 
-        ✔ Обновление всех учетных записей в Moodle для пользователей Azure AD.
+        ✔ Обновление всех учетных записей в Moodle для пользователей в Microsoft Azure Active Directory (Azure AD).
 
-    1. В разделе **Ограничение создания** пользователей можно настроить фильтр, чтобы ограничить пользователей Azure AD, синхронизированных с Moodle.
-    1. Раздел **Сопоставление полей** пользователя позволяет настроить отображение поля Azure AD для сопоставления профилей пользователей Moodle.
+    1. В разделе **Ограничение создания** пользователей можно настроить фильтр, чтобы ограничить Microsoft Azure Active Directory пользователей Azure AD, синхронизированных с Moodle.
+    1. Раздел **Сопоставление** полей пользователей позволяет настроить Microsoft Azure Active Directory (Azure AD) для сопоставления профилей пользователей Moodle.
     1. В разделе **Teams Синхронизация** можно выбрать для автоматического создания групп, например групп для некоторых или всех существующих курсов Moodle.
 
-13. Чтобы проверить [задания cron](https://docs.moodle.org/310/en/Cron) и выполнить их вручную для первого запуска, выберите ссылку  на страницу управления запланированными задачами в разделе **Синхронизация пользователей с azure AD**. В этом случае вы **перенабирались на страницу Запланированные** задачи.
+13. Чтобы проверить [задания cron](https://docs.moodle.org/310/en/Cron) и выполнить их вручную для первого выполнения, выберите ссылку  на страницу управления запланированными задачами в разделе Sync с Microsoft Azure Active Directory **(Azure AD**). В этом случае вы **перенабирались на страницу Запланированные** задачи.
 
-    1. Прокрутите вниз и найдите пользователей **Sync с заданием Azure AD** и выберите **Выполнить сейчас**.
+    1. Прокрутите вниз и найдите пользователей **Sync с Microsoft Azure Active Directory (Azure AD)** и выберите **Выполнить сейчас**.
     1. Если вы выбираете для создания групп на основе существующих курсов, вы также можете запустить группы **пользователей Create в Microsoft 365** работе.
 
     > [!NOTE]

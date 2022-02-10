@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: ff46e951122a74860e4518634e274ec4afdb1d21
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 302cac17ae6905899e43a8768882f61f0a2b9056
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435686"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518326"
 ---
 # <a name="prepare-accounts-to-build-teams-apps"></a>Подготовка учетных записей для создания Teams приложений
 
@@ -46,7 +46,7 @@ ms.locfileid: "62435686"
 
 - **Учетная запись работы для бизнеса**
 
-  Предоставляет доступ ко всем облачным службам Microsoft на уровне малых, средних и корпоративных предприятий, таким как Azure, Microsoft Intune или Microsoft 365. Когда вы регистрируетесь в качестве организации в одной из этих служб, в Azure Active Directory автоматически подготавливается облачный каталог для представления вашей организации.
+  Предоставляет доступ ко всем облачным службам Microsoft на уровне малых, средних и корпоративных предприятий, таким как Azure, Microsoft Intune или Microsoft 365. При регистрации одной из этих служб в качестве организации облачный каталог автоматически Microsoft Azure Active Directory (Azure AD) для представления организации.
 
 - **Visual Studio ID**
 
@@ -104,7 +104,7 @@ ms.locfileid: "62435686"
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/4.png" alt-text="toggle":::
 
-5. Нажмите кнопку **Сохранить**. 
+5. Нажмите **Сохранить**. 
 
 > [!Note]
 > Для активной загрузки побок может занять до 24 часов. В то же время для проверки приложения  можно использовать загрузку для клиента. Чтобы загрузить .zip пакета приложения, см. в [приложении upload custom apps](/microsoftteams/teams-app-setup-policies).

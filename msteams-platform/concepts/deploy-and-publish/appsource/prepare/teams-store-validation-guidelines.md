@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: medium
-ms.openlocfilehash: b4fc1d7b0e0ce1e32b82e0a82d490491f92ca387
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: dd8a3f31cd7c8e98a913c9a86ce2d705a7ba0279
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212126"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518235"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -231,7 +231,7 @@ ms.locfileid: "62212126"
 
 * Microsoft Windows
 * macOS
-* Microsoft Edge
+* MicrosoftEdge&nbsp;
 * Google Chrome
 * iOS
 * Android
@@ -271,7 +271,7 @@ ms.locfileid: "62212126"
 
 * Манифест должен соответствовать схеме манифеста общедоступного выпуска. Дополнительные сведения см. в [справочнике по манифесту](~/resources/schema/manifest-schema.md). Не отправляйте приложение с использованием предварительной версии манифеста.
 * Если ваше приложение включает бот или расширение для сообщений, сведения в манифесте приложения должны соответствовать метаданным Bot Framework, включая имя бота, логотип, ссылку на политику конфиденциальности и ссылку на условия обслуживания.
-* Если ваше приложение Azure Active Directory проверку подлинности, включите в манифест идентификацию приложения Azure AD (клиент). Подробнее см. в [справочнике по манифесту](~/resources/schema/manifest-schema.md#webapplicationinfo).
+* Если ваше приложение Azure Active Directory проверку подлинности, включите в манифест Microsoft Azure Active Directory (Azure AD) application (client) ID. Подробнее см. в [справочнике по манифесту](~/resources/schema/manifest-schema.md#webapplicationinfo).
 
 ### <a name="app-icons"></a>Значки приложений
 

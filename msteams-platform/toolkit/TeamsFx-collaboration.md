@@ -6,16 +6,16 @@ ms.author: rentu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 5b08923d92e8b1ea7a6292754f62899669de4804
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: af96227df93bb2c236607791e3870b1882d2da5f
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435169"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518375"
 ---
 # <a name="collaborate-on-teams-project-using-teams-toolkit"></a>Совместное использование Teams с помощью Teams набор средств
 
-Несколько разработчиков могут совместно отладить, разработать и развернуть один и тот же проект TeamsFx, но для этого необходимо вручную установить нужные разрешения Teams App и Azure AD App.Teams набор средств поддерживает функцию совместной работы, позволяющую разработчикам и владельцу проекта приглашать других разработчиков или сотрудников в проект TeamsFx для отладки, предоставления и развертывания одного и того же проекта TeamsFx.
+Несколько разработчиков могут работать вместе, чтобы отлаговка, подготовка и развертывание для одного проекта TeamsFx, но для этого необходимо вручную установить нужные разрешения приложения Teams и Microsoft Azure Active Directory (Azure AD) App.Teams набор средств  поддерживает функцию совместной работы, позволяющую разработчикам и владельцу проекта приглашать других разработчиков или сотрудников в проект TeamsFx для отладки, предоставления и развертывания одного и того же проекта TeamsFx.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -44,11 +44,11 @@ ms.locfileid: "62435169"
 
   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/add collaborators.png" alt-text="сотрудники":::
 
-* Выберите **Владельцы Microsoft 365 Teams App (с Azure AD App)** и добавьте другой адрес электронной почты Microsoft 365 учетной записи в качестве соавтора. Добавленная учетная запись должна быть на том же клиенте, что и владелец проекта для удаленного отладки, как показано на изображении:
+* Выберите **владельцы Microsoft 365 Teams App (с Microsoft Azure Active Directory Azure AD) и** добавьте другой адрес электронной почты Microsoft 365 учетной записи в качестве соавтора. Добавленная учетная запись должна быть на том же клиенте, что и владелец проекта для удаленного отладки, как показано на изображении:
 
   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="добавление envi":::
 
-* Чтобы просмотреть сотрудников в текущей среде **, выберите Microsoft 365 Teams List Microsoft 365 Teams App (с Azure AD App) Владельцы**, затем сотрудники перечислены в канале вывода, как показано на следующем изображении:
+* Чтобы просмотреть сотрудников в текущей среде, выберите list **Microsoft 365 Teams App (с Microsoft Azure Active Directory (Azure AD) App)** Владельцы, затем сотрудники перечислены в канале вывода, как показано на следующем изображении:
 
   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/list of collaborators.png" alt-text="list":::
 
@@ -77,8 +77,8 @@ ms.locfileid: "62435169"
   1. Перейдите Teams портал разработчика и выберите Teams приложение по имени или ID приложения.
   2. Выберите **Owners** с левой панели.
   3. Выберите и удалите соавтора.
-  4. Перейдите [Azure Active Directory](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps), выберите **регистрацию приложения** с левой панели и найдите приложение Azure AD.
-  5. Выберите **Owners** из левой панели на странице управления приложениями Azure AD.
+  4. Перейдите [Azure Active Directory](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps), выберите **регистрацию приложения** с левой панели и Microsoft Azure Active Directory приложение Azure AD.
+  5. Выберите **Owners** из левой панели на Microsoft Azure Active Directory странице управления приложениями Azure AD.
   6. Выберите и удалите соавтора.
 
 > [!NOTE]

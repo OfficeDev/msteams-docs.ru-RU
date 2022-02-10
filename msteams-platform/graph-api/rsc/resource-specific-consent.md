@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO Azure AD rsc Graph
-ms.openlocfilehash: 50e26c78333068b180b374e4aae31f0727aee103
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: dbbda0dced53530c1688faa626bc63fe0bf1be76
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435742"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518165"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -145,7 +145,7 @@ ms.locfileid: "62435742"
 Разрешения RSC объявляются в файле JSON манифеста приложения. 
 
 > [!IMPORTANT]
-> Разрешения не RSC хранятся на портале Azure. Не добавляйте их в манифест приложения.
+> На портале Microsoft Azure разрешения, не Microsoft Azure RSC. Не добавляйте их в манифест приложения.
 
 ### <a name="manifest-changes-for-resource-specific-consent"></a>Манифест изменений для согласия, определенного для ресурсов
 

@@ -5,12 +5,12 @@ description: Сведения о том, как использовать Сое�
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: Соединитель Office 365 в Teams
-ms.openlocfilehash: 478bf9805c5f045e1f8c43ff7647dd418f6bd8af
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 816dfd4327f0ee3076431e2fdc0e855b40f729c3
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435868"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62517969"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -45,7 +45,7 @@ ms.locfileid: "62435868"
 
 > [!NOTE]
 > * Значение `compact` для свойства `style` в Microsoft Teams равноценно значению `normal` для свойства `style` в Microsoft Outlook.
-> * Для действия HttpPOST маркер носителя включается в запросы. Маркер содержит удостоверение Azure AD пользователя Office 365, выполнившего действие.
+> * Для действия HttpPOST маркер носителя включается в запросы. Этот маркер содержит удостоверение пользователя Microsoft Azure Active Directory (Azure AD) Office 365, выполнившего действие.
 
 ## <a name="send-a-message-through-incoming-webhook-or-office-365-connector"></a>Отправка сообщения через входящий веб-перехватчик или соединитель Office 365
 

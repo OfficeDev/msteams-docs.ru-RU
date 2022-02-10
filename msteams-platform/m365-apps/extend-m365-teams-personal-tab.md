@@ -5,12 +5,12 @@ ms.date: 11/15/2021
 ms.topic: tutorial
 ms.custom: Microsoft 365 apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 529dd82276f4e11dc6256d23b6e8eb622a1651a0
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: d22f29e75b9d8d074b0c689fa61f96dcdc23b5d1
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435274"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518025"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -25,7 +25,7 @@ ms.locfileid: "62435274"
 > * Обновление манифеста приложения
 > * Обновление ссылок teamsJS SDK 
 > * Изменение заглавных заглавок политики безопасности контента
-> * Обновление регистрации приложения Azure AD для единого знака (SSO)
+> * Обновление Microsoft Azure Active Directory приложения (Azure AD) для единого знака (SSO)
 
 Тестирование приложения потребует следующих действий:
 
@@ -120,9 +120,9 @@ ms.locfileid: "62435274"
 | Office | `*.office.com` |
 | Outlook | `outlook.office.com`, `outlook.office365.com` |
 
-## <a name="update-azure-ad-app-registration-for-sso"></a>Обновление регистрации приложения Azure AD для SSO
+## <a name="update-microsoft-azure-active-directory-azure-ad-app-registration-for-sso"></a>Регистрация Microsoft Azure Active Directory приложения Azure AD для SSO
 
-Azure Active Directory для личных вкладок работает так же, как в Office и Outlook, как и в [Teams](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) году, однако вам потребуется добавить несколько идентификаторов клиентских приложений в регистрацию приложения Azure AD приложения вкладки на портале регистрации приложений клиента.
+Azure Active Directory для личных вкладок работает так же, как в Office и Outlook, как и в [Teams](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso), однако в Microsoft Azure Active Directory  Регистрация приложения-вкладки (Azure AD) на портале регистраций *приложений* клиента.
 
 1. Во входе [на Microsoft Azure портал](https://portal.azure.com) с учетной записью клиента в песочнице.
 1. Откройте **лезвие регистрации приложений** .

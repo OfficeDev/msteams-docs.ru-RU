@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 5c85d30e595d30a236318d13535584d949b1075a
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: cbb4eff47d21180bbdfe4aad49cb749a745386c2
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212414"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518564"
 ---
 # <a name="maintain-your-published-microsoft-teams-app"></a>Поддержка опубликованного приложения Microsoft Teams
 
@@ -44,7 +44,7 @@ ms.locfileid: "62212414"
 * Добавьте личную вкладку.
 * Добавьте вкладку канал и группу.
 * Добавьте соединителю.
-* Изменение конфигураций, связанных с регистрацией Azure Active Directory приложения. Дополнительную информацию см. в статье [`webApplicationInfo`](~/resources/schema/manifest-schema.md#webapplicationinfo).
+* Изменение конфигураций, связанных с регистрацией Microsoft Azure Active Directory приложения Azure AD. Дополнительную информацию см. в статье [`webApplicationInfo`](~/resources/schema/manifest-schema.md#webapplicationinfo).
 
 ## <a name="fix-issues-with-your-published-app"></a>Устранение проблем с опубликованным приложением
 
@@ -54,11 +54,11 @@ ms.locfileid: "62212414"
 
 Когда приложение отображается в Teams магазине, можно создать ссылку, которая запускает Teams и отображает диалоговое окно для установки приложения. Эту ссылку можно включить, например, с помощью кнопки загрузки на странице маркетинга продукта.
 
-Создайте ссылку, используя следующий URL-адрес, приданный вашему ID приложения: `https://teams.microsoft.com/l/app/<your-app-id>` .
+Создайте ссылку, используя следующий URL-адрес, приданный вашему ID приложения: `https://teams.microsoft.com/l/app/<your-app-id>`.
 
 ## <a name="complete-microsoft-365-certification"></a>Полное Microsoft 365 сертификации
 
-[Microsoft 365](/microsoft-365-app-certification/docs/certification) сертификация обеспечивает надлежащую защиту данных и конфиденциальности при установке сторонних Приложение Office или надстроек в вашей Microsoft 365 экосистеме. Сертификация подтверждает, что ваше приложение совместимо с технологиями Майкрософт, соответствует требованиям безопасности облачных приложений и поддерживается Корпорацией Майкрософт.
+[Microsoft 365 сертификация](/microsoft-365-app-certification/docs/certification) обеспечивает надлежащую защиту данных и конфиденциальности при установке сторонних Приложение Office или надстроек в вашей Microsoft 365 экосистеме. Сертификация подтверждает, что ваше приложение совместимо с технологиями Майкрософт, соответствует требованиям безопасности облачных приложений и поддерживается Корпорацией Майкрософт.
 
 ## <a name="see-also"></a>См. также
 

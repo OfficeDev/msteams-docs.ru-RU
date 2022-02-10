@@ -5,12 +5,12 @@ description: Руководство quickstart по созданию вклад�
 ms.localizationpriority: medium
 ms.topic: quickstart
 ms.author: lajanuar
-ms.openlocfilehash: a536a5f0a17c0c3b02015d38d3c49b2b9e072903
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: a9759c33187a6eedeacd9820594615eaaa94a8c8
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435379"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518263"
 ---
 # <a name="create-a-channel-or-group-tab"></a>Создание вкладки канала или группы
 
@@ -134,9 +134,9 @@ ms.locfileid: "62435379"
 
     Вы можете выбрать группу или групповой чат.
 
-    **Требуется ли поддержка единого входа Azure AD для этой вкладки?**
+    **Требуется ли Microsoft Azure Active Directory (Azure AD) для единой входной поддержки вкладки?**
 
-    Не **включай** поддержку для вкладки Azure AD с одним входом. По умолчанию — да, введите **n**.
+    Не **включать** поддержку Microsoft Azure Active Directory (Azure AD) для вкладки с одним входом. По умолчанию — да, введите **n**.
 
     **Хотите, чтобы эта вкладка была доступна в SharePoint Online? (Y/n)**
 

@@ -4,19 +4,19 @@ description: Узнайте, как добавить кнопку Share Teams н
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: Совместное Teams share-to-Teams
-ms.openlocfilehash: dc70e35d8a02d4dc6349a062d0b4a38fd0a2f0a3
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: a2c94ad690864b6af89005af4f96866f1ebda0b6
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435707"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518494"
 ---
 # <a name="create-share-to-teams-button"></a>Создание кнопки «Поделиться в Teams»
 
 Сторонние веб-сайты могут использовать сценарий запуска для встраив кнопки Share-to-Teams на своих веб-сайтах. При выборе в всплывающее окно запускается Teams share-to-Teams. Это позволяет обмениваться ссылками напрямую с любым Microsoft Teams каналом без переключения контекста. В этом документе вы можете узнать, как создать и встраить кнопку Share-to-Teams для веб-сайта, создать предварительный просмотр веб-сайта и расширить возможности share-to-Teams для образования.
 
 > [!NOTE]
-> * Поддерживаются только настольные версии Microsoft Edge и Google Chrome.
+> * Поддерживаются только настольные версии MicrosoftEdge&nbsp; и Google Chrome.
 > * Использование учетных записей Freemium или гостевой не поддерживается.  
 
 На следующем изображении отображается всплывающее Teams share-to-Teams:
@@ -79,7 +79,7 @@ ms.locfileid: "62435707"
 |Значение|Метатег| Откройте Graph|
 |----|----|----|
 |Title|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
-|Описание|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
+|Description|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
 |Эскиз изображения| нет. |`<meta property="og:image" content="http://example.com/image.jpg">`|
 
 Вы можете использовать версии по умолчанию HTML или open Graph версии.

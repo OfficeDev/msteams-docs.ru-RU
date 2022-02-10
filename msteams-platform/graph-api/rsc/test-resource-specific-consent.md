@@ -5,13 +5,13 @@ ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
-keywords: команды авторизации OAuth SSO Azure AD rsc postman Graph
-ms.openlocfilehash: 8bde324791199d1369c5accf454774cdc1c9a828
-ms.sourcegitcommit: 54f6690b559beedc330b971618e574d33d69e8a8
+keywords: команды авторизации OAuth SSO Microsoft Azure Active Directory (Azure AD) rsc postman Graph
+ms.openlocfilehash: 15a2a80a8f1ce280b462ed6e6e99242fb30f0dc3
+ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62362930"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518123"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Тестирование разрешений на согласие для определенных ресурсов в Teams
 
@@ -20,7 +20,7 @@ ms.locfileid: "62362930"
 
 Согласие на использование ресурсов — это интеграция Microsoft Teams и Graph API, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами — группами или чатами — в организации. Дополнительные сведения см. [в специальном для ресурса согласии (RSC) — Microsoft Teams Graph API](resource-specific-consent.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
 Убедитесь, что перед тестированием убедитесь, что перед тестированием вы убедитесь в следующих изменениях манифеста приложения для согласия, определенного для ресурсов:
 
@@ -34,14 +34,14 @@ ms.locfileid: "62362930"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`id` |String |ID приложения Microsoft Azure Active Directory Azure AD. Дополнительные сведения см. на портале [Microsoft Azure Active Directory Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 
 Укажите разрешения, необходимые приложению.
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`authorization`|Object|Список разрешений, необходимых приложению. Дополнительные сведения см. в [авторизации](../../resources/schema/manifest-schema.md#authorization).|
+|`authorization`|Object|Список разрешений, необходимых приложению для работы. Дополнительные сведения см. в [авторизации](../../resources/schema/manifest-schema.md#authorization).|
 
 Пример RSC в команде
 
@@ -200,8 +200,8 @@ ms.locfileid: "62362930"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`id` |String |ID приложения Microsoft Azure Active Directory Azure AD. Дополнительные сведения см. на портале [Microsoft Azure Active Directory Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|Строка| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
 |`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в дополнительных сведениях о разрешениях, определенных для ресурсов](resource-specific-consent.md#resource-specific-permissions).|
 
 Пример RSC в команде
@@ -265,14 +265,14 @@ ms.locfileid: "62362930"
 > В манифесте приложения включите только разрешения RSC, которые необходимо иметь вашему приложению.
 
 > [!NOTE]
-> Если приложение предназначено для доступа к API вызовов и мультимедиа, `webApplicationInfo.Id` то должен быть ИД приложения Azure AD [службы Azure Bot](/graph/cloud-communications-get-started#register-a-bot).
+> Если приложение предназначено для доступа к API вызовов и мультимедиа, `webApplicationInfo.Id` то должен быть Microsoft Azure Active Directory (Azure AD) Id приложения службы [Azure Bot](/graph/cloud-communications-get-started#register-a-bot).
 
 ## <a name="test-added-rsc-permissions-to-a-team-using-the-postman-app"></a>Test added RSC permissions to a team using the Postman app
 
 Чтобы проверить, чтят ли разрешения RSC полезной нагрузкой запроса API, необходимо скопировать тестовый код [RSC JSON](test-team-rsc-json-file.md) для группы в локальной среде и обновить следующие значения:
 
-* `azureADAppId`: ID приложения Azure AD в вашем приложении.
-* `azureADAppSecret`Пароль приложения Azure AD.
+* `azureADAppId`: ID приложения Microsoft Azure Active Directory Azure AD.
+* `azureADAppSecret`: Пароль Microsoft Azure Active Directory (Azure AD).
 * `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default.
 * `teamGroupId`: Вы можете получить id группы группы от клиента Teams следующим образом:
 
@@ -286,10 +286,10 @@ ms.locfileid: "62362930"
 
 Чтобы проверить, чтят ли разрешения RSC полезной нагрузкой запроса API, необходимо скопировать тестовый код [RSC JSON](test-chat-rsc-json-file.md) для чатов в локальной среде и обновить следующие значения:
 
-* `azureADAppId`: ID приложения Azure AD в вашем приложении.
-* `azureADAppSecret`Пароль приложения Azure AD.
+* `azureADAppId`: ID приложения Microsoft Azure Active Directory Azure AD.
+* `azureADAppSecret`: Пароль Microsoft Azure Active Directory (Azure AD).
 * `token_scope`. Область требуется для получения маркера. установите значение https://graph.microsoft.com/.default.
-* `tenantId`: Имя или ID объекта Azure AD клиента.
+* `tenantId`: Имя или Microsoft Azure Active Directory объекта (Azure AD) объекта клиента.
 * `chatId`: Вы можете получить id потока чата из Teams *веб-клиента* следующим образом:
 
     1. В веб Teams клиенте выберите **Чат из** левой панели навигации.
