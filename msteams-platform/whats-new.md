@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 4c4a145db5ce66a13d4f605419c5a402eef2c3b7
-ms.sourcegitcommit: 60e4bbb013f0bb17a87a2e558abfcc311c73af75
+ms.openlocfilehash: 2c20fcb473fea847e19451d3ca883cf4b93337a4
+ms.sourcegitcommit: bfa9d24f736fb8915a9e3ef09c47dbe29a950cb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62523789"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62801392"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "62523789"
 
 | Дата | Update | Найти здесь  |
 | --- | --- | --- |
+|09/02/2022| Представлена пошаговая инструкция по отправке файлов в Teams из бота | Создание ботов > Отправка и получение файлов > [Пошаговая инструкция по отправке файлов в Teams из бота](sbs-file-handling-in-bot.yml) |
 |11.02.2022| Общая трибуна собраний| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний.| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
@@ -45,6 +46,7 @@ ms.locfileid: "62523789"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|09/02/2022| Представлена пошаговая инструкция по отправке файлов в Teams из бота | Создание ботов > Отправка и получение файлов > [Пошаговая инструкция по отправке файлов в Teams из бота](sbs-file-handling-in-bot.yml) |
 |11.02.2022| Общая трибуна собраний| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
 |08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний.| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) |

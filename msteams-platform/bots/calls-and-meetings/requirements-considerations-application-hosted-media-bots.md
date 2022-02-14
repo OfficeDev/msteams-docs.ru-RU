@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: средства массовой информации, Windows Azure VM
 ms.date: 11/16/2018
-ms.openlocfilehash: c3c6f76b5062f003902c9967191be9cd0be336aa
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 1e9fa106376a3068039dd74c8e0b4f2b8c8802d6
+ms.sourcegitcommit: bfa9d24f736fb8915a9e3ef09c47dbe29a950cb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435714"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62801371"
 ---
 # <a name="requirements-and-considerations-for-application-hosted-media-bots"></a>Требования и соображения к медийным ботам с хостингом приложений
 
-Для доступа к аудио- и видеотеке медиа-боту, размещенного в приложении, требуется [библиотека .NET.`Microsoft.Graph.Communications.Calls.Media`](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/) Бот должен быть развернут на компьютере Windows Или гостевой операционной системе Windows Server в Azure.
+Для доступа к аудио- и видеотеке медиа-боту, размещенного в приложении, требуется [библиотека .NET.`Microsoft.Graph.Communications.Calls.Media`](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/) Бот должен быть развернут на локальном Windows server или гостевой операционной системе Windows Server в Azure.
 
 > [!NOTE]
 > * Рекомендации по разработке ботов обмена сообщениями и интерактивного голосового ответа (IVR) не полностью применимы к построению медиа-ботов, принимающих приложения.
@@ -78,7 +78,7 @@ ms.locfileid: "62435714"
 > [!div class="nextstepaction"]
 > [Поддерживаемые форматы медиа](~/resources/media-formats.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 - [Graph для вызова документации по SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/)
 - Боты требуют больше вычислительной и сетевой пропускной способности, чем боты обмена сообщениями, и понести значительно более высокие эксплуатационные затраты. Разработчик медиа-бота в режиме реального времени должен тщательно измерить масштабируемость бота и убедиться, что он не принимает больше одновременных вызовов, чем он может управлять. Бот с поддержкой видео может поддерживать только один или два одновечерных сеансов мультимедиа на ядро ЦП при использовании необработанных форматов видео RGB24 или NV12.

@@ -12,12 +12,12 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: b1c728fd27b1cecdf8e2fd7c62e6eaabf01b3cc7
-  ms.sourcegitcommit: 9bdd930523041377b52dadffbd8cd52a86a047d7
+  ms.openlocfilehash: 5c6428985d0220cb4578c082214dd2d935ea55b9
+  ms.sourcegitcommit: bfa9d24f736fb8915a9e3ef09c47dbe29a950cb5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/08/2022
-  ms.locfileid: "62443897"
+  ms.lasthandoff: 02/14/2022
+  ms.locfileid: "62801378"
 landingContent:
 - title: Ознакомьтесь с последними данными
   linkLists:
@@ -57,6 +57,8 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
+    - text: Отправка и получение файлов
+      url: bots/how-to/bots-filesv4.md
     - text: Teams вызова и собрания бота
       url: bots/calls-and-meetings/registering-calling-bot.md
     - text: Разрешение устройства для браузера
@@ -71,6 +73,8 @@ landingContent:
       url: ~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
   - linkListType: tutorial
     links:
+    - text: Upload файлы Teams от бота
+      url: ~/sbs-file-handling-in-bot.yml
     - text: Создание бота вызовов и собраний
       url: ~/sbs-calling-and-meeting.yml
     - text: Настройка разрешений устройств Tab
@@ -89,8 +93,6 @@ landingContent:
       url: ~/sbs-meetings-sidepanel.yml
     - text: Создание представления стадии собраний
       url: ~/sbs-meetings-stage-view.yml
-    - text: Взаимодействие с ботом пузырьков контента в Meetings
-      url: ~/sbs-meeting-content-bubble.yml
 - title: Начало работы
   linkLists:
   - linkListType: get-started

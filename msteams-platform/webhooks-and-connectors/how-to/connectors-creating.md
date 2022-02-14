@@ -2,16 +2,16 @@
 title: Создание соединителей Office 365
 author: laujan
 description: Описывает, как начать работу с Office 365 соединители в Microsoft Teams
-keywords: соединители teams Office365
+keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 719d73394c3ab072c61f08b826b42e35c3475ca1
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 64400b3f80aa5ba322ce7318e0261e8b694e7e18
+ms.sourcegitcommit: bfa9d24f736fb8915a9e3ef09c47dbe29a950cb5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435148"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62801385"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -21,7 +21,9 @@ ms.locfileid: "62435148"
 
 Вы можете создать пакет [и](~/concepts/build-and-test/apps-package.md) [опубликовать](~/concepts/deploy-and-publish/apps-publish.md) соединители в рамках отправки AppSource. Вы можете распространять зарегистрированный соединитатель как часть пакета Teams приложения. Сведения о точках входа для Teams приложения см. [в таблице capabilities](~/concepts/extensibility-points.md). Вы также можете предоставить пакет пользователям непосредственно для загрузки в Teams.
 
-Для распространения соединитетеля необходимо зарегистрироваться через [панель мониторинга разработчиков соединители](https://aka.ms/connectorsdashboard). При регистрации соединитетеля предполагается, что он работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams. Если это не так, и необходимо создать соединителя, который работает только в Microsoft Teams, свяжитесь: Microsoft Teams [отправки приложений по электронной почте](mailto:teamsubm@microsoft.com).
+Чтобы распределить соединитело, зарегистрируйте его в панели мониторинга разработчиков [соединители](https://aka.ms/connectorsdashboard).
+
+Чтобы соединители работали только в Microsoft Teams, следуйте инструкциям по отправке соединитетеля в публикации приложения в Microsoft Teams [магазине](~/concepts/deploy-and-publish/appsource/publish.md). В противном случае зарегистрированный соединитатель работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams.
 
 > [!IMPORTANT]
 > Соединитель регистрируется после выбора **сохранить** в панели мониторинга разработчика соединители. Если вы хотите опубликовать соединителе в AppSource, следуйте инструкциям в публикации [Microsoft Teams приложения в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, раздайте его непосредственно организации. После [публикации соединители для организации](#publish-connectors-for-the-organization) никаких дополнительных действий на панели мониторинга соединители не требуется.
