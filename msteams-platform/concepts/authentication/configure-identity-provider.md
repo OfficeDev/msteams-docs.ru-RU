@@ -3,19 +3,19 @@ title: Настройка поставщиков удостоверений OAut
 description: Описывает, как настроить поставщиков удостоверений с упором на Microsoft Azure Active Directory (Azure AD)
 ms.topic: how-to
 ms.localizationpriority: medium
-keywords: поставщик удостоверений Microsoft Azure Active Directory групп (Azure AD)
-ms.openlocfilehash: 93622275a8bfc9007af751d8b9f6304a73450ec7
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+keywords: группы проверки подлинности Azure AD oauth identity provider
+ms.openlocfilehash: b35f28f2cb306a6dfc3ae3151616925da1525069
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62517976"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821355"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 
-## <a name="configuring-an-application-to-use-microsoft-azure-active-directory-azure-ad-as-an-identity-provider"></a>Настройка приложения для использования Microsoft Azure Active Directory (Azure AD) в качестве поставщика удостоверений
+## <a name="configuring-an-application-to-use-azure-ad-as-an-identity-provider"></a>Настройка приложения для использования Azure AD в качестве поставщика удостоверений
 
-Поставщики удостоверений, поддерживающие OAuth 2.0, не будут проверку подлинности запросов от неизвестных приложений; приложения должны быть зарегистрированы заранее. Чтобы сделать это с Microsoft Azure Active Directory (Azure AD), выполните следующие действия:
+Поставщики удостоверений, поддерживающие OAuth 2.0, не будут проверку подлинности запросов от неизвестных приложений; приложения должны быть зарегистрированы заранее. Чтобы сделать это с Azure AD, выполните следующие действия:
 
 1. Откройте портал [регистрации приложений](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 

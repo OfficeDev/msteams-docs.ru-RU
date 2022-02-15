@@ -6,18 +6,18 @@ ms.author: ruhe
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: f8de6dd66b281f8cf842e5439d3a217598f46047
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 1ae613332f7a07ae0d0ae9ed65b75429db64b429
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518116"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821579"
 ---
 # <a name="cicd-guide"></a>Руководство по CI/CD
 
 TeamsFx помогает автоматизировать рабочий процесс разработки при создании Teams приложения. Документ предоставляет инструменты и шаблоны для начала работы с настройкой конвейеров ci или CD с GitHub, Azure Devops и Jenkins.
 
-|Инструменты и шаблоны|Description| 
+|Инструменты и шаблоны|Описание| 
 |---|---|
 |[teamsfx-cli-action](https://github.com/OfficeDev/teamsfx-cli-action)|GitHub действия, которые интегрируются с TeamsFx CLI.|
 |[github-ci-template.yml](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/github-ci-template.yml) и [github-cd-template.yml](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/github-cd-template.yml)| GitHub или CD-шаблоны для Teams приложения. |
@@ -245,8 +245,8 @@ steps:
 
 Выполните следующие действия для создания принципов служб Azure:
 1. Регистрация приложения Microsoft Azure Active Directory Azure AD в одном клиенте.
-2. Назначьте роль приложению Microsoft Azure Active Directory Azure AD, чтобы получить доступ к подписке Azure, `Contributor` и рекомендуется роль. 
-3. Создание секрета Microsoft Azure Active Directory приложения Azure AD.
+2. Назначьте роль приложению Azure AD для доступа к подписке Azure, `Contributor` и рекомендуется роль. 
+3. Создайте новый секрет приложения Azure AD.
 
 > [!TIP]
 > Сохраните ваш id клиента, id приложения (AZURE_SERVICE_PRINCIPAL_NAME) и секрет (AZURE_SERVICE_PRINCIPAL_PASSWORD) для будущего использования.

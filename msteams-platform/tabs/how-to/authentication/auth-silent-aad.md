@@ -1,15 +1,15 @@
 ---
 title: Автоматическая проверка подлинности
-description: Описывает бесшумную проверку подлинности, одно-вход, Microsoft Azure Active Directory (Azure AD) для вкладок
+description: Описывает бесшумную проверку подлинности, одно-вход, Azure AD для вкладок
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: Командная проверка подлинности SSO Microsoft Azure Active Directory (Azure AD)
-ms.openlocfilehash: 700f0d3f752beb7b09b76a805f2bbcd7adf82fb9
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+keywords: Командная проверка подлинности SSO безмолвная вкладка Azure AD
+ms.openlocfilehash: e59b7ff30a0659b670796c56b97eda437f907739
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518466"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821572"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
@@ -19,9 +19,9 @@ ms.locfileid: "62518466"
 > [!NOTE]
 > Чтобы проверка подлинности работала для вкладки на мобильных клиентах, убедитесь, что вы используете Teams версии JavaScript SDK 1.4.1 или более поздней версии.
 
-Бесшумная проверка подлинности в Microsoft Azure Active Directory (Azure AD) минимизирует количество случаев ввода учетных данных пользователем путем тихого обновления маркера проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO](~/tabs/how-to/authentication/auth-aad-sso.md).
+Бесшумная проверка подлинности в Azure AD минимизирует количество случаев ввода учетных данных пользователем путем тихого обновления маркера проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO](~/tabs/how-to/authentication/auth-aad-sso.md).
 
-Чтобы сохранить клиентскую сторону кода, используйте библиотеку проверки подлинности Microsoft Azure Active Directory [Azure AD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript для получения маркера доступа Microsoft Azure Active Directory Azure AD. Если пользователь недавно подписался, он не видит диалоговое окно всплывающее окно.
+Чтобы сохранить клиентскую сторону кода, используйте библиотеку проверки подлинности [Azure AD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript для получения маркера доступа Microsoft Azure Active Directory Azure AD. Если пользователь недавно подписался, он не видит диалоговое окно всплывающее окно.
 
 Хотя библиотека проверки подлинности Active Directory оптимизирована для приложений AngularJS, она также работает с одно-страницными приложениями JavaScript (SPA).
 
@@ -30,13 +30,13 @@ ms.locfileid: "62518466"
 
 ## <a name="how-silent-authentication-works"></a>Как работает бесшумная проверка подлинности
 
-Библиотека проверки подлинности Active Directory создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает`prompt=none`, Microsoft Azure Active Directory (Azure AD) не отображает страницу регистрации. Взаимодействие с пользователем может потребоваться, если пользователю необходимо войти или предоставить доступ к приложению. При необходимости взаимодействия с пользователем Microsoft Azure Active Directory (Azure AD) возвращает ошибку, которую библиотека сообщает вашему приложению. При необходимости приложение теперь может отображать параметр входной знак.
+Библиотека проверки подлинности Active Directory создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому `prompt=none`Azure AD не отображает страницу входного знака. Взаимодействие с пользователем может потребоваться, если пользователю необходимо войти или предоставить доступ к приложению. При необходимости взаимодействия с пользователем Azure AD возвращает ошибку, которую библиотека сообщает вашему приложению. При необходимости приложение теперь может отображать параметр входной знак.
 
 ## <a name="how-to-do-silent-authentication"></a>Как сделать бесшумную проверку подлинности
 
 Код в этой статье поступает из Teams, которое является [Teams проверки подлинности](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs).
 
-[Инициировать настраиваемую](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) на бесшумную и простую проверку подлинности вкладку Microsoft Azure Active Directory (Azure AD) и следуйте инструкциям по запуску образца на локальном компьютере.
+[Инициализуйте](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) настраиваемую вкладку бесшумной и простой проверки подлинности с помощью Azure AD и выполните инструкции по запуску образца на локальном компьютере.
 
 ### <a name="include-and-configure-active-directory-authentication-library"></a>Включить и настроить библиотеку проверки подлинности Active Directory
 
@@ -48,7 +48,7 @@ ms.locfileid: "62518466"
     // Active Directory Authentication Library configuration
     let config = {
         clientId: "YOUR_APP_ID_HERE",
-        // redirectUri must be in the list of redirect URLs for the Microsoft Azure Active Directory (Azure AD) app
+        // redirectUri must be in the list of redirect URLs for the Azure AD app
         redirectUri: window.location.origin + "/tab-auth/silent-end",
         cacheLocation: "localStorage",
         navigateToLoginRequestUrl: false,
@@ -58,7 +58,7 @@ ms.locfileid: "62518466"
 
 ### <a name="get-the-user-context"></a>Получить пользовательский контекст
 
-На странице контента вкладки позвоните `microsoftTeams.getContext()` , чтобы получить подсказку для текущего пользователя. Подсказка используется в качестве вызова `loginHint` Microsoft Azure Active Directory (Azure AD).
+На странице контента вкладки позвоните `microsoftTeams.getContext()` , чтобы получить подсказку для текущего пользователя. Подсказка используется в качестве вызова `loginHint` в Azure AD.
 
 ```javascript
 // Set up extra query parameters for Active Directory Authentication Library
@@ -108,7 +108,7 @@ authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenTy
 
 ### <a name="process-the-return-value"></a>Обработка возвращаемой стоимости
 
-Библиотека проверки подлинности Active Directory Microsoft Azure Active Directory результат Microsoft Azure Active Directory Azure AD`AuthenticationContext.handleWindowCallback(hash)`, позвонив на страницу вызова для регистрации.
+Библиотека проверки подлинности Active Directory сравниет результат Azure AD `AuthenticationContext.handleWindowCallback(hash)` с помощью вызова на странице вызова для входов.
 
 Убедитесь, что у вас есть допустимый пользователь и позвоните `microsoftTeams.authentication.notifySuccess()` `microsoftTeams.authentication.notifyFailure()` или сообщить о состоянии на главную страницу контента вкладки.
 
@@ -127,7 +127,7 @@ if (authContext.isCallback(window.location.hash)) {
 
 ### <a name="handle-the-sign-out-flow"></a>Обработка потока регистрации
 
-Используйте следующий код для обработки потока регистрации в Microsoft Azure Active Directory проверки подлинности Azure AD:
+Используйте следующий код для обработки потока регистрации в проверке подлинности Azure AD:
 
 > [!NOTE]
 > При входе из Teams или бота текущий сеанс очищается.
@@ -141,5 +141,5 @@ window.location.href = "@Url.Action("<<Action Name>>", "<<Controller Name>>")";
 
 ## <a name="see-also"></a>См. также
 
-* [Настройка поставщиков удостоверений для использования Microsoft Azure Active Directory (Azure AD)](../../../concepts/authentication/configure-identity-provider.md)
+* [Настройка поставщиков удостоверений для использования Azure AD](../../../concepts/authentication/configure-identity-provider.md)
 * [Знать о Библиотеке проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-overview)

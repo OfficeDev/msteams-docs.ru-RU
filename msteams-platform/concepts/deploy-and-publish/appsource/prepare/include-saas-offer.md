@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.openlocfilehash: 837c311bf777b337187dbc54555b5268082a103f
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 450afc9728a0c5f727dc772909da5c0e1b92f55b
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62517990"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821712"
 ---
 # <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Включите предложение SaaS в Microsoft Teams приложение
 
@@ -81,7 +81,7 @@ ms.locfileid: "62517990"
 
 При создании посадочной страницы для приложения Teams которое вы монетизируете, рассмотрите следующие подходы. См. пример посадочной страницы в интерфейсе [покупки конечных пользователей](#end-user-purchasing-experience).
 
-* Пользователи должны иметь возможность войти на вашу посадочную страницу с Microsoft Azure Active Directory учетными данными Azure AD, используемыми для покупки подписки. Дополнительные сведения см. [Microsoft Azure Active Directory (Azure AD) и трансактируемые предложения SaaS на коммерческом рынке](/azure/marketplace/azure-ad-saas).
+* Пользователи должны иметь возможность войти на вашу посадочную страницу с помощью тех же учетных данных Azure AD, которые использовались для покупки подписки. Дополнительные сведения см. в [видеоролике Azure AD и трансактируемых предложениях SaaS на коммерческом рынке](/azure/marketplace/azure-ad-saas).
 * Разрешить пользователям принимать следующие действия на вашей странице. Не забывайте учитывать, что подходит для роли и разрешений пользователя (например, может потребоваться разрешить поиск пользователей только администраторам подписки):
   * Поиск пользователей в их организации с помощью электронной почты или другой формы удостоверения.
   * Просмотр пользователей, на которые они могут назначать лицензии в списке.

@@ -4,12 +4,12 @@ description: Вот как обновить расширение обмена с
 ms.date: 11/15/2021
 ms.topic: tutorial
 ms.custom: m365apps
-ms.openlocfilehash: 410f019beeed078ed51c37c241e08511572e18b8
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 93775e543610500452da6ebd6535c1945d2f8dda
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518109"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821656"
 ---
 # <a name="extend-a-teams-messaging-extension-across-microsoft-365"></a>Расширение Teams сообщений по всему Microsoft 365
 
@@ -27,7 +27,7 @@ ms.locfileid: "62518109"
 
 В остальном руководстве вы сможете просмотреть эти действия и показать, как просмотреть расширение обмена сообщениями как в Outlook для Windows, так и в Интернете.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы завершить этот учебник, вам потребуется:
 
@@ -97,9 +97,9 @@ ms.locfileid: "62518109"
 > [!NOTE]
 > Вы можете пропустить этот шаг, если вы используете образец Teams расширения обмена [сообщениями, так](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search) как сценарий не предполагает Azure Active Directory (AAD) Sign-On проверки подлинности.
 
-Azure Active Directory Однонастройка (SSO) для расширений обмена сообщениями работает так же, как и в [Teams Outlook](/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots) году, однако необходимо добавить несколько идентификаторов клиентских приложений в регистрацию приложения Microsoft Azure Active Directory (Azure AD) *бота в клиенте Портал регистрации* приложений.
+Azure Active Directory однонастройка (SSO) для расширений обмена сообщениями работает так же, как Outlook в [Teams](/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots) году, однако необходимо добавить несколько идентификаторов клиентских приложений в регистрацию приложения Azure AD бота на портале регистраций приложений клиента.
 
-1. Во входе [на Microsoft Azure портал](https://portal.azure.com) с учетной записью клиента в песочнице.
+1. Во входе на [портал Azure](https://portal.azure.com) с учетной записью клиента в песочнице.
 1. Откройте **регистрации приложений**.
 1. Выберите имя приложения, чтобы открыть регистрацию приложения.
 1. Выберите  **Expose aPI** (в *статье Управление*).

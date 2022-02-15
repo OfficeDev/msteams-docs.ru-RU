@@ -4,12 +4,12 @@ description: Описывает, как получить маркер польз
 keywords: маркер, маркер пользователя, поддержка SSO для ботов, разрешения, Microsoft Graph, Azure AD
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 0c354c4f60ff334ba5cc8a98fb3d3a346a8bb06e
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 760c9f964298e120dfaf5cfadd199f5a7d02454f
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435693"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821600"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входного знака (SSO) для ботов
 
@@ -159,7 +159,7 @@ ms.locfileid: "62435693"
 
 #### <a name="update-manifest-in-microsoft-azure-portal"></a>Манифест обновления на Microsoft Azure портале
 
-Следующие действия повеяют об обновлении манифеста бота на Microsoft Azure портале:
+Следующие действия повеяют об обновлении манифеста бота на портале Azure:
 
 1. Выберите **Манифест** с левой области.
 1. Убедитесь, что для элемента config **установлено "accessTokenAcceptedVersion": 2**. Если нет, измените значение на **2**.
@@ -174,9 +174,9 @@ ms.locfileid: "62435693"
 
 #### <a name="update-the-azure-portal-with-the-oauth-connection"></a>Обновление портала Azure с подключением OAuth
 
-Следующие действия повеяют об обновлении портала Microsoft Azure с подключением OAuth:
+В следующих действиях вы сможете обновить портал Azure с подключением OAuth:
 
-1. На портале Microsoft Azure перейдите в [**AzureBot**](https://ms.portal.azure.com/#create/Microsoft.AzureBot)
+1. На портале Azure перейдите в [**AzureBot**](https://ms.portal.azure.com/#create/Microsoft.AzureBot)
 1. Перейдите **к конфигурации** на левой области.
 1. Выберите **Добавить подключение OAuth Параметры**.
 

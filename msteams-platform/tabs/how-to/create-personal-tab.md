@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.topic: quickstart
 ms.author: lajanuar
 keywords: yeoman ASP.NET пакет MVC appmanifest магазин разрешений домена беседы
-ms.openlocfilehash: 47f9e485d78fc1be845adac99bc4d6e41f943553
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 6fd5abaf21458560c65626982f57ae4a8eac722e
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518032"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821684"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -137,7 +137,7 @@ ms.locfileid: "62518032"
 
     **Требуется ли Microsoft Azure Active Directory (Azure AD) для единой входной поддержки вкладки?**
 
-    Не **включать** поддержку Microsoft Azure Active Directory (Azure AD) для вкладки с одним входом. По умолчанию — да, введите **n**.
+    Не **включай** поддержку для вкладки Azure AD с одним входом. По умолчанию — да, введите **n**.
 
     > [!IMPORTANT]
     > Компонент пути **yourDefaultTabNameTab** — это значение, которое вы ввели в генератор имени вкладки по **умолчанию плюс слово** **Tab**.
@@ -492,7 +492,7 @@ Microsoft Teams является облачным продуктом и треб
 
     ![Сведения о личной вкладке](../../assets/images/tab-images/personaltabdetails.png)
 
-1. Нажмите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 ##### <a name="finish-domains-and-permissions"></a>Finish: Домены и разрешения
 

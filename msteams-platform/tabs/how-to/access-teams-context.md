@@ -4,12 +4,12 @@ description: В этой статье описывается, как получ�
 ms.localizationpriority: medium
 ms.topic: how-to
 keywords: пользовательский контекст вкладок teams
-ms.openlocfilehash: ca77ba61a880bb12067f884e8c294700938cc6be
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: a8e8fe6d638f8887a30f65dbf812046738d12dfb
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518130"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821733"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -44,12 +44,12 @@ ms.locfileid: "62518130"
 
 * {entityId}: ИД, который вы предоставили для элемента на этой вкладке при [первоначальной настройке](~/tabs/how-to/create-tab-pages/configuration-page.md).
 * {subEntityId}: ID, который вы предоставили при создании глубокой ссылки для определенного элемента в этой вкладке.[](~/concepts/build-and-test/deep-links.md) Это необходимо использовать для восстановления определенного состояния в объекте; например, прокрутка или активация определенного фрагмента контента.
-* {loginHint}: значение, подходящее в качестве подсказки для входа Microsoft Azure Active Directory (Azure AD). Обычно это имя входа текущего пользователя в домашнем клиенте.
+* {LoginHint}: значение, подходящее в качестве подсказки для входа в Azure AD. Обычно это имя входа текущего пользователя в домашнем клиенте.
 * {userPrincipalName}: основное имя пользователя текущего пользователя в текущем клиенте.
-* {userObjectId}: Microsoft Azure Active Directory объекта (Azure AD) текущего пользователя текущего клиента.
+* {userObjectId}: ID объекта Azure AD текущего пользователя текущего клиента.
 * {theme}: текущая тема пользовательского интерфейса (пользовательского интерфейса), например `default`, или `dark``contrast`.
 * {groupId}: ID группы Office 365, в которой находится вкладка.
-* {tid}: Microsoft Azure Active Directory (Azure AD) клиента текущего пользователя.
+* {tid}: ИД объекта Azure AD текущего пользователя в текущем клиенте
 * {locale}: текущий локализ пользователя, форматированный как languageId-countryId(ru-ru).
 
 > [!NOTE]
@@ -82,10 +82,10 @@ ms.locfileid: "62518130"
     "locale": "The current locale of the user formatted as languageId-countryId (for example, en-us)",
     "entityId": "The developer-defined unique ID for the entity this content points to",
     "subEntityId": "The developer-defined unique ID for the sub-entity this content points to",
-    "loginHint": "A value suitable as a login hint for Microsoft Azure Active Directory (Azure AD). This is usually the login name of the current user, in their home tenant",
+    "loginHint": "A value suitable as a login hint for Azure AD. This is usually the login name of the current user, in their home tenant",
     "userPrincipalName": "The principal name of the current user, in the current tenant",
-    "userObjectId": "The Microsoft Azure Active Directory (Azure AD) object id of the current user, in the current tenant",
-    "tid": "The Microsoft Azure Active Directory (Azure AD) tenant ID of the current user",
+    "userObjectId": "The Azure AD object id of the current user, in the current tenant",
+    "tid": "The Azure AD tenant ID of the current user",
     "groupId": "Guid identifying the current Office 365 Group ID",
     "theme": "The current UI theme: default | dark | contrast",
     "isFullScreen": "Indicates if the tab is in full-screen",

@@ -5,12 +5,12 @@ ms.date: 11/15/2021
 ms.topic: tutorial
 ms.custom: Microsoft 365 apps
 ms.localizationpriority: medium
-ms.openlocfilehash: d22f29e75b9d8d074b0c689fa61f96dcdc23b5d1
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 9c6c88835dc24c64f93605d09ac15da5409add0f
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518025"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821418"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "62518025"
 
 После этих действий приложение должно отображаться в предварительных версиях Outlook и Office приложениях.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы завершить этот учебник, вам потребуется:
 
@@ -120,16 +120,16 @@ ms.locfileid: "62518025"
 | Office | `*.office.com` |
 | Outlook | `outlook.office.com`, `outlook.office365.com` |
 
-## <a name="update-microsoft-azure-active-directory-azure-ad-app-registration-for-sso"></a>Регистрация Microsoft Azure Active Directory приложения Azure AD для SSO
+## <a name="update-azure-ad-app-registration-for-sso"></a>Обновление регистрации приложения Azure AD для SSO
 
-Azure Active Directory для личных вкладок работает так же, как в Office и Outlook, как и в [Teams](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso), однако в Microsoft Azure Active Directory  Регистрация приложения-вкладки (Azure AD) на портале регистраций *приложений* клиента.
+Azure Active Directory для личных вкладок работает так же, как в Office и Outlook, как и в [Teams](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) году, однако вам потребуется добавить несколько идентификаторов клиентских приложений в регистрацию приложения Azure AD приложения вкладки на портале регистрации приложений клиента.
 
 1. Во входе [на Microsoft Azure портал](https://portal.azure.com) с учетной записью клиента в песочнице.
 1. Откройте **лезвие регистрации приложений** .
 1. Выберите имя личного приложения вкладки, чтобы открыть регистрацию приложения. 
 1. Выберите  **Expose aPI** (в *статье Управление*).
 
-:::image type="content" source="images/azure-app-registration-clients.png" alt-text="Авторизации клиентских ИД из лезвия *App registrations* на Microsoft Azure портале":::
+:::image type="content" source="images/azure-app-registration-clients.png" alt-text="Авторизировать клиентские ИД из лезвия *App registrations* на портале Azure":::
 
 В разделе **Авторизованные клиентские приложения** убедитесь, `Client Id` что добавлены все следующие значения:
 

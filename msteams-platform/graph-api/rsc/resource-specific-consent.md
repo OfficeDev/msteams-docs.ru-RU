@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: reference
 keywords: команды авторизации OAuth SSO Azure AD rsc Graph
-ms.openlocfilehash: dbbda0dced53530c1688faa626bc63fe0bf1be76
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 613416c7363de8a9351e56f5cdb2a6a339b74392
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518165"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821691"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -93,7 +93,7 @@ ms.locfileid: "62518165"
 
 Вы можете включить или отключить [согласие](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-portal) владельца группы непосредственно на Microsoft Azure портале:
 
-1. Вопишитесь на Microsoft Azure [в](https://portal.azure.com) качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
+1. Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
 1. Выберите **Azure Active Directory** >  **Enterprise applicationsConsent** >  **и permissionsUser** > [**.**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings)
 1. Включить, отключить или ограничить согласие пользователя с согласия владельца группы с меткой управления **для доступа к данным приложений**. По умолчанию **разрешается согласие владельца группы для всех владельцев групп**. Чтобы владелец группы устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие владельца группы.
 
@@ -103,9 +103,9 @@ ms.locfileid: "62518165"
 
 ### <a name="configure-user-consent-settings-for-rsc-in-a-chat"></a>Настройка параметров согласия пользователя для RSC в чате
 
-Вы можете включить или отключить [согласие пользователя](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) непосредственно на Microsoft Azure портале:
+Вы можете включить или отключить [согласие пользователя непосредственно](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) на портале Azure:
 
-1. Вопишитесь на Microsoft Azure [в](https://portal.azure.com) качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
+1. Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
 1. Выберите **Azure Active Directory** >  **Enterprise applicationsConsent** >  **и permissionsUser** > [**.**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings)
 1. Включить, отключить или ограничить согласие пользователя с разрешением пользователя с меткой управления **для приложений**. По умолчанию **разрешается согласие пользователя для приложений**. Чтобы участник чата устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие пользователя.
 
@@ -145,7 +145,7 @@ ms.locfileid: "62518165"
 Разрешения RSC объявляются в файле JSON манифеста приложения. 
 
 > [!IMPORTANT]
-> На портале Microsoft Azure разрешения, не Microsoft Azure RSC. Не добавляйте их в манифест приложения.
+> Разрешения не RSC хранятся на портале Azure. Не добавляйте их в манифест приложения.
 
 ### <a name="manifest-changes-for-resource-specific-consent"></a>Манифест изменений для согласия, определенного для ресурсов
 

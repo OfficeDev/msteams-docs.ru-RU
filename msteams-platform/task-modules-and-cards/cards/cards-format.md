@@ -5,12 +5,12 @@ keywords: Форматирование карточек в ботах Teams
 ms.localizationpriority: high
 ms.topic: reference
 ms.date: 06/25/2021
-ms.openlocfilehash: 965f74bd2756fc4a2beb9c65ebf8da577f12dc89
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 08c78748039fd8feccc1750abd17af7bcbc2d441
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518354"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821677"
 ---
 # <a name="format-cards-in-microsoft-teams"></a>Форматирование карточек в Microsoft Teams
 
@@ -175,14 +175,14 @@ ms.locfileid: "62518354"
 
 ### <a name="microsoft-azure-active-directory-azure-ad-object-id-and-upn-in-user-mention"></a>ИД объекта Microsoft Azure Active Directory (Azure AD) и имя участника-пользователя в упоминании пользователя 
 
-Платформа Teams позволяет упоминать пользователей с ИД объекта Microsoft Azure Active Directory (Azure AD) и именем участника-пользователя, помимо существующих идентификаторов упоминаний. Боты с адаптивными карточками и соединители с входящими веб-перехватчиками поддерживают два идентификатора упоминаний пользователей. 
+Платформа Teams позволяет упоминать пользователей с ИД объекта Azure Active Directory и именем участника-пользователя (UPN), помимо существующих идентификаторов упоминаний. Боты с адаптивными карточками и соединители с входящими веб-перехватчиками поддерживают два идентификатора упоминаний пользователей. 
 
 В таблице ниже описываются идентификаторы упоминаний пользователей, которые поддерживаются с недавнего времени:
 
 |Идентификаторы  | Вспомогательные возможности |   Описание | Пример |
 |----------|--------|---------------|---------|
-| ИД объекта Microsoft Azure Active Directory (Azure AD) | Бот, соединитель |  ИД объекта пользователя Microsoft Azure Active Directory (Azure AD) |  49c4641c-ab91-4248-aebb-6a7de286397b |
-| Имя участника-пользователя | Бот, соединитель | Имя участника-пользователя Microsoft Azure Active Directory (Azure AD) | john.smith@microsoft.com |
+| ИД объекта Azure Active Directory | Бот, соединитель |  ИД объекта пользователя Azure Active Directory |    49c4641c-ab91-4248-aebb-6a7de286397b |
+| Имя участника-пользователя | Бот, соединитель | Имя участника-пользователя Azure Active Directory | john.smith@microsoft.com |
 
 #### <a name="user-mention-in-bots-with-adaptive-cards"></a>Упоминание пользователей в ботах с адаптивными карточками 
 
@@ -235,11 +235,11 @@ ms.locfileid: "62518354"
 
 #### <a name="user-mention-in-incoming-webhook-with-adaptive-cards"></a>Упоминание пользователя во входящем веб-перехватчике с адаптивными карточками 
 
-Входящие веб-перехватчики начинают поддерживать упоминание пользователей в адаптивных карточках с ИД объекта Microsoft Azure Active Directory (Azure AD) и именем участника-пользователя.
+Входящие веб-перехватчики начинают поддерживать упоминание пользователей в адаптивных карточках с ИД объекта Azure Active Directory и именем участника-пользователя.
 
 > [!NOTE]    
-> * Включите упоминание пользователей в схеме входящих веб-перехватчиков для поддержки ИД объекта Microsoft Azure Active Directory (Azure AD) и имени участника-пользователя. 
-> * Изменения интерфейса не требуются для упоминания пользователей с ИД объекта Microsoft Azure Active Directory (Azure AD) и именем участника-пользователя.      
+> * Включите упоминание пользователей в схеме входящих веб-перехватчиков для поддержки ИД объекта Azure Active Directory и имени участника-пользователя. 
+> * Изменения интерфейса не требуются для упоминания пользователей с ИД объекта Azure Active Directory и именем участника-пользователя.      
 
 ##### <a name="example"></a>Пример 
 

@@ -4,19 +4,19 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: группы проверки подлинности OAuth SSO Microsoft Azure Active Directory (Azure AD)
-ms.openlocfilehash: cf8ab3d0f861187d304f26a1804ac3d953e9e5ac
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 79b50b8e2ba91d8b141cb36b38f0d94713131d43
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518284"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821362"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
 > [!Note]
 > Веб-проверка подлинности для мобильных клиентов требует версии 1.4.1 или более поздней версии Teams Клиента JavaScript.
 
-Чтобы получить доступ к данным пользователей, защищенным Microsoft Azure Active Directory (Azure AD) и получить доступ к данным из таких служб, как Facebook и Twitter, приложение устанавливает надежное подключение к этим поставщикам. Если приложение использует API microsoft Graph в области пользователя, проверка подлинности пользователя для получения соответствующих маркеров проверки подлинности.
+Чтобы получить доступ к данным пользователей, защищенным Azure AD, и получить доступ к данным из таких служб, как Facebook и Twitter, приложение устанавливает надежное подключение к этим поставщикам. Если приложение использует API microsoft Graph в области пользователя, проверка подлинности пользователя для получения соответствующих маркеров проверки подлинности.
 
 В Teams есть два разных потока проверки подлинности для приложения. Выполните традиционный поток проверки подлинности на веб-сайте на странице контента, встроенной в вкладку, страницу конфигурации или модуль задач.[](~/tabs/how-to/create-tab-pages/content-page.md) Если приложение содержит бот бесед, используйте поток OAuthPrompt и при желании службу маркеров Azure Bot Framework для проверки подлинности пользователя в ходе беседы.
 
@@ -26,8 +26,8 @@ ms.locfileid: "62518284"
 
 * [Добавление проверки подлинности в Teams бот](~/bots/how-to/authentication/add-authentication.md) описывает использование потока проверки подлинности на основе веб-данных с помощью разговорного бота.
 * [Поток проверки подлинности на вкладке](~/tabs/how-to/authentication/auth-flow-tab.md) описывает работу проверки подлинности вкладок в Teams. Это показывает типичный поток проверки подлинности на веб-основе, используемый для вкладок.
-* [Microsoft Azure Active Directory (Azure AD)](~/tabs/how-to/authentication/auth-tab-AAD.md) проверка подлинности на вкладке описывает подключение к Microsoft Azure Active Directory (Azure AD) из вкладки в приложении в Teams.
-* [Silent authentication Microsoft Azure Active Directory (Azure AD)](~/tabs/how-to/authentication/auth-silent-AAD.md) описывает, как уменьшить количество подсказок для регистрации или согласия в приложении с помощью Microsoft Azure Active Directory (Azure AD).
+* [Проверка подлинности Azure AD](~/tabs/how-to/authentication/auth-tab-AAD.md) на вкладке описывает подключение к Azure AD из вкладки в приложении в Teams.
+* [Silent authentication Azure AD](~/tabs/how-to/authentication/auth-silent-AAD.md) описывает, как уменьшить количество подсказок для регистрации или согласия в приложении с помощью Azure AD.
 * [.Net или C#](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp) [JavaScript или Node.js](https://github.com/OfficeDev/microsoft-teams-sample-complete-node) предоставляет образцы для проверки подлинности на веб-основе.
 
 ## <a name="the-oauthprompt-flow-for-conversational-bots"></a>Поток OAuthPrompt для разговорных ботов
@@ -51,7 +51,7 @@ OAuthPrompt платформы Azure Bot Framework упрощает провер
 
 ## <a name="configure-the-identity-provider"></a>Настройка поставщика удостоверений
 
-Независимо от потока проверки подлинности приложения настройте поставщика удостоверений для связи с Teams приложением. Большинство примеров и поуча-ов в основном связаны с использованием Microsoft Azure Active Directory (Azure AD) в качестве поставщика удостоверений. Однако концепции применяются независимо от поставщика удостоверений. 
+Независимо от потока проверки подлинности приложения настройте поставщика удостоверений для связи с Teams приложением. Большинство примеров и пройдите по ним, в основном, с использованием Azure AD в качестве поставщика удостоверений. Однако концепции применяются независимо от поставщика удостоверений. 
 
 Дополнительные сведения см. [в примере настройки поставщика удостоверений](~/concepts/authentication/configure-identity-provider.md).
 
