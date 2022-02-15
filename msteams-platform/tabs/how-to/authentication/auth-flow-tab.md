@@ -4,12 +4,12 @@ description: Описывает поток проверки подлинност
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: Вкладки потока проверки подлинности команд
-ms.openlocfilehash: a4d6c184ca0747a2b0328e0194ebad472e9dfa6e
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: c0a3617332d3392c36f21645d4fb0074008ced40
+ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518298"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62821376"
 ---
 # <a name="microsoft-teams-authentication-flow-for-tabs"></a>Microsoft Teams потока проверки подлинности для вкладок
 
@@ -27,9 +27,9 @@ OAuth 2.0 — это открытый стандарт проверки подл
 ![Схема последовательности проверки подлинности вкладок](~/assets/images/authentication/tab_auth_sequence_diagram.png)
 
 1. Пользователь взаимодействует с содержимым на странице конфигурации вкладки или контента, обычно с помощью кнопки **Вход** или **Вход** .
-2. Вкладка строит URL-адрес для своей страницы запуска auth. Кроме того, `microsoftTeams.getContext()` для оптимизации работы с проверкой подлинности для пользователя используются сведения из url-адресов или Teams клиентского SDK-метода. Например, при проверке подлинности с помощью A Microsoft Azure Active Directory (Azure AD), `login_hint` если параметр задан на адрес электронной почты пользователя, пользователю не нужно войдывать, если он сделал это в последнее время. Это потому, Microsoft Azure Active Directory (Azure AD) использует кэшные учетные данные пользователя. Всплывающее окно отображается кратко, а затем исчезает.
+2. Вкладка строит URL-адрес для своей страницы запуска auth. Кроме того, `microsoftTeams.getContext()` для оптимизации работы с проверкой подлинности для пользователя используются сведения из url-адресов или Teams клиентского SDK-метода. Например, при проверке подлинности с помощью Azure AD, `login_hint` если параметр задан на адрес электронной почты пользователя, пользователю не нужно войтись, если он сделал это недавно. Это потому, что Azure AD использует кэшные учетные данные пользователя. Всплывающее окно отображается кратко, а затем исчезает.
 3. Затем вкладка вызывает метод `microsoftTeams.authentication.authenticate()` и регистрирует функции `successCallback` и `failureCallback`.
-4. Teams откроет начните страницу в iframe в всплывающее окно. Стартовая `state` страница создает случайные данные, `/authorize` сохраняет их для будущей проверки и перенаправляет в конечную точку поставщика удостоверений, `https://login.microsoftonline.com/<tenant ID>/oauth2/authorize` например для Microsoft Azure Active Directory (Azure AD). Замените `<tenant id>` собственный id клиента, который является context.tid.
+4. Teams откроет начните страницу в iframe в всплывающее окно. Стартовая страница `state` создает случайные данные, сохраняет их для будущей проверки и `/authorize` перенаправляет в конечную точку поставщика удостоверений, `https://login.microsoftonline.com/<tenant ID>/oauth2/authorize` например в Azure AD. Замените `<tenant id>` собственный id клиента, который является context.tid.
 Как и другие потоки auth приложения в Teams, `validDomains` стартовая страница должна быть на домене, который находится в его списке, и в том же домене, что и после подписания на странице перенаправления.
 
     > [!NOTE]
@@ -51,11 +51,11 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 | **Название примера** | **Описание** | **C#** | **Node.js** |
 |-----------------|-----------------|-------------|------------|
-| Teams проверки подлинности вкладок | Процесс проверки подлинности для вкладок с Microsoft Azure Active Directory (Azure AD). | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/nodejs) |
+| Teams проверки подлинности вкладок | Процесс проверки подлинности для вкладок с помощью Azure AD. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-sample/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-Подробные сведения о реализации проверки подлинности вкладок с помощью Microsoft Azure Active Directory (Azure AD) см. в этой информации:
+Подробные сведения о реализации проверки подлинности вкладок с помощью Azure AD см. в
 
 * [Проверка подлинности пользователя на вкладке Teams](~/tabs/how-to/authentication/auth-tab-AAD.md)
 * [Бесшумная проверка подлинности](~/tabs/how-to/authentication/auth-silent-AAD.md)
