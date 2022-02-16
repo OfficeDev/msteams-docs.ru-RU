@@ -6,12 +6,12 @@ keywords: Выбор людей адаптивных карт
 ms.topic: reference
 author: Rajeshwari-v
 ms.author: surbhigupta
-ms.openlocfilehash: 18e4268258e008485617cb10fd11070963cf3ed1
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
+ms.openlocfilehash: 4fda2916c6eaeb3cc0878911c21eb20e276844f3
+ms.sourcegitcommit: 20b84e13b5cb6899f4eb54ca90a13b6da7a3e3d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821635"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855895"
 ---
 # <a name="people-picker-in-adaptive-cards"></a>Выбор людей в адаптивных карточках
 
@@ -307,7 +307,14 @@ ms.locfileid: "62821635"
 
 Вы можете реализовать выбор людей для эффективного управления задачами в различных сценариях.  
 
-## <a name="see-also"></a>См. также
+## <a name="code-sample"></a>Пример кода
+
+| Имя образца           | Описание | C#    | Node.js   |   
+|:---------------------|:--------------|:---------|:--------|
+|Управление выборщиком людей в адаптивных картах| В этом примере показано, как использовать управление выборщиком людей в адаптивных картах.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-people-picker-adaptive-card/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-people-picker-adaptive-card/nodejs) | 
+
+
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Справка по картам](cards-reference.md)
 
