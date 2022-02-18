@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: high
 Keywords: отправить сообщение получить ИД пользователя ИД канала ИД беседы
-ms.openlocfilehash: fc08e9413925f04a0f6e1a01ed7feb6fccd5e8d2
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: 15d564af900e0b13024d051ef4711025c4b16060
+ms.sourcegitcommit: fb10a8b14acdba5cc48d2b31dec6f8e6d4ad99ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059774"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896329"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -104,9 +104,6 @@ ms.locfileid: "62059774"
 * Что пользователь может сделать дальше: пользователи могут выполнить требуемое действие на основе содержимого сообщения.
 
 ## <a name="proactively-install-your-app-using-graph"></a>Заранее установите приложение с помощью Graph
-
-> [!Note]
-> Упреждающая установка приложений с помощью Graph в настоящее время находятся в бета-версии.
 
 Заблаговременно отправляйте сообщение пользователям, которые не установили приложение или ранее не взаимодействовали с ним. Например, вы хотите использовать [корпоративный коммуникатор](~/samples/app-templates.md#company-communicator) для отправки сообщений всей организации. В этом случае вы можете использовать API Graph, чтобы заранее установить ваше приложение для пользователей. Кэшируйте необходимые значения из события `conversationUpdate`, которое ваше приложение получает после установки.
 
@@ -259,9 +256,6 @@ POST /v3/conversations
 ```
 
 ---
-
-> [!NOTE]
-> В настоящее время боты не могут создать групповой чат с помощью API бота или Graph. "`createConversation`" доступен только для личных чатов.
 
 ## <a name="code-sample"></a>Пример кода
 
