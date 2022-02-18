@@ -4,12 +4,12 @@ description: Описывает проверку подлинности в Teams
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: вкладки проверки подлинности Microsoft Azure Active Directory групп (Azure AD)
-ms.openlocfilehash: 2ceca46148c79b07dd417e84b0736f69ee520b8b
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
+ms.openlocfilehash: 980df5b94f83a26c22c8594b72518f7d094c5307
+ms.sourcegitcommit: 3d7b34e7032b6d379eca8f580d432b365c8be840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821719"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62897937"
 ---
 # <a name="authenticate-a-user-in-a-microsoft-teams-tab"></a>Проверка подлинности пользователя на вкладке Microsoft Teams
 
@@ -52,7 +52,7 @@ microsoftTeams.authentication.authenticate({
 });
 ```
 
-### <a name="notes"></a>Заметки
+### <a name="notes"></a>Примечания
 
 * URL-адрес, на который вы передаете `microsoftTeams.authentication.authenticate()` , является началом потока проверки подлинности. В этом примере это `/tab-auth/simple-start`. Это должно совпадать с тем, что вы зарегистрировали на портале регистрации приложений [Azure AD](https://apps.dev.microsoft.com).
 
@@ -91,7 +91,7 @@ microsoftTeams.getContext(function (context) {
 
 После завершения авторизации пользователь перенаправляется на страницу вызова, указанную для вашего приложения `/tab-auth/simple-end`.
 
-### <a name="notes"></a>Заметки
+### <a name="notes"></a>Примечания
 
 * Сведения [о контексте пользователя см](~/tabs/how-to/access-teams-context.md) . в справке о создании запросов на проверку подлинности и URL-адресов. Например, можно `login_hint` использовать имя входа пользователя в качестве значения для входа в Azure AD, что означает, что пользователю может потребоваться ввести меньше. Помните, что этот контекст не следует использовать непосредственно в качестве доказательства удостоверения, так как злоумышленник может загрузить страницу в вредоносный браузер и предоставить ему любую информацию, которую он хочет.
 * Хотя контекст вкладки предоставляет полезную информацию о пользователе, `microsoftTeams.getContext()` не используйте эти сведения для проверки подлинности пользователя, независимо от того, получаете ли вы его в качестве параметров URL-адреса на URL-адрес контента вкладки или вызываете функцию в SDK клиента Microsoft Teams клиента. Злоумышленник может вызвать URL-адрес контента вкладки со своими параметрами, а веб-страница, Microsoft Teams может загрузить URL-адрес контента вкладки в iframe `getContext()` и вернуть собственные данные в функцию. Необходимо рассматривать сведения, связанные с удостоверениями, в контексте вкладок просто как подсказки и проверять их перед использованием.
@@ -136,7 +136,7 @@ if (hashParams["error"]) {
 
 Этот код разберет пары значений ключей, полученные от Azure AD с `window.location.hash` помощью функции `getHashParameters()` помощника. `access_token``state` Если он находит и значение такое же, как и то, что было предоставлено в начале потока проверки подлинности, `notifySuccess()`он возвращает маркер доступа на вкладку по вызову; `notifyFailure()`в противном случае он сообщает об ошибке с .
 
-### <a name="notes"></a>Заметки
+### <a name="notes"></a>Примечания
 
 `NotifyFailure()` имеет следующие предопределяемы причины сбоя:
 
@@ -165,7 +165,7 @@ if (hashParams["error"]) {
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Планирование проверки подлинности пользователей](../../../concepts/design/understand-use-cases.md#provide-authentication)
+* [Планирование проверки подлинности пользователей](../../../concepts/design/understand-use-cases.md)
 * [Разработка вкладки для Microsoft Teams](~/tabs/design/tabs.md)
 * [Бесшумная проверка подлинности](~/tabs/how-to/authentication/auth-silent-aad.md)
 * [Добавление проверки подлинности в расширение для сообщений](~/messaging-extensions/how-to/add-authentication.md)
