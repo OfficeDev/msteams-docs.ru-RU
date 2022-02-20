@@ -5,12 +5,12 @@ ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: fd7d2075d79e5c54e9257b71f8bf351fe3cd6823
-ms.sourcegitcommit: fb10a8b14acdba5cc48d2b31dec6f8e6d4ad99ba
+ms.openlocfilehash: 205b95e84d834d1171227d967257e72bc6dee16b
+ms.sourcegitcommit: 3d7b34e7032b6d379eca8f580d432b365c8be840
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/18/2022
-ms.locfileid: "62896322"
+ms.locfileid: "62898070"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
@@ -95,7 +95,7 @@ ms.locfileid: "62896322"
 
      1. Проверьте пакет приложения с помощью [Портала разработчика](https://dev.teams.microsoft.com/home) Teams для выявления и исправления ошибок пакета.
 
-        :::image type="content" source="../../../assets/images/submission/teams-validation-developer-portal.png" alt-text="проверка в магазине":::
+        :::image type="content" source="../../../assets/images/submission/teams-validation-developer-portal.png" alt-text="Проверка приложения в магазине Teams на портал разработчика" lightbox="../../../assets/images/submission/teams-validation-developer-portal.png":::
  
      1. Тщательно испытайте приложение самостоятельно перед отправкой приложения, чтобы убедиться, что оно соответствует политикам магазина. Установите неопубликованное приложение в Teams и проверьте сквозные потоки пользователей для своего приложения. Убедитесь, что функции работают как ожидается, ссылки не нарушены, пользовательский интерфейс не блокируется и все ограничения явно подчеркнуты.
 
@@ -130,6 +130,6 @@ ms.locfileid: "62896322"
 * [Опубликование в магазинах приложений Microsoft 365](/office/dev/store/)
 * [Отправка приложения Teams](~/concepts/deploy-and-publish/apps-upload.md)
 * [Публикация приложения Teams в организации](/MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json)
-* [Планирование функций подключения для пользователей](../../design/understand-use-cases.md#plan-the-onboarding-experience)
+* [Планирование функций подключения для пользователей](../../design/planning-checklist.md#plan-beyond-app-building)
 * [Распространение приложений на вкладках на мобильных устройствах](../../../tabs/design/tabs-mobile.md#distribution)
 * [Предварительное тестирование для приложений с монетизацией](prepare/Test-preview-for-monetized-apps.md)
