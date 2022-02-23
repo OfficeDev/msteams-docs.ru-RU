@@ -4,12 +4,12 @@ description: Описывает прямые ссылки и способы их
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: прямая ссылка на Teams
-ms.openlocfilehash: 9d9e0ff794d413be1959e8e8ddaef1086acc307d
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
+ms.openlocfilehash: 624bc47887950e98e49aa834f0a040e7ee234045
+ms.sourcegitcommit: 3d7b34e7032b6d379eca8f580d432b365c8be840
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821390"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62897916"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок 
 
@@ -80,16 +80,32 @@ ms.locfileid: "62821390"
 | `entityId`&emsp; | Идентификатор элемента на вкладке, который вы указали при [настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md).|Tasklist123|
 | `entityWebUrl` или `subEntityWebUrl`&emsp; | Необязательное поле с резервным URL-адресом для использования, если клиент не поддерживает отрисовку вкладки. | `https://tasklist.example.com/123` или `https://tasklist.example.com/list123/task456` |
 | `entityLabel` или `subEntityLabel`&emsp; | Метка для элемента на вкладке, используемая при отображении прямой ссылки. | Список задач 123 или "Задача 456" |
-| `context`&emsp; </br></br>* `subEntityId`&emsp;</br></br> * `channelId`&emsp;| Объект JSON, содержащий следующие поля:</br></br> * Идентификатор элемента на вкладке. </br></br> * Идентификатор канала Microsoft Teams, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки. | 
-| `subEntityId`&emsp; | Идентификатор элемента на вкладке. |Task456 |
-| `channelId`&emsp; | Идентификатор канала Microsoft Teams, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки. Это свойство доступно только на настраиваемых вкладках с областью **группы**. Оно не доступно на статических вкладках, которые имеют **личную** область.| 19:cbe3683f25094106b826c9cada3afbe0@thread.skype |
+| `context.subEntityId`&emsp; | Идентификатор элемента на вкладке. |Task456 |
+| `context.channelId`&emsp; | Идентификатор канала Microsoft Teams, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки. Это свойство доступно только на настраиваемых вкладках с областью **группы**. Оно не доступно на статических вкладках, которые имеют **личную** область.| 19:cbe3683f25094106b826c9cada3afbe0@thread.skype |
+| `chatId`&emsp; | ИД чата, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки, для группового чата и чата собрания | 17:b42de192376346a7906a7dd5cb84b673@thread.v2 |
+| `contextType`&emsp; |  Чат — это единственный поддерживаемый тип контекста для собраний | чат |
 
-Примеры:
+**Примеры:**
 
-* Ссылка на настраиваемую вкладку: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123&context={"channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
-* Ссылка на элемент задачи на настраиваемой вкладке: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456","channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
-* Ссылка на статическую вкладку: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123`
-* Ссылка на элемент задачи на статической вкладке: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456"}`
+* Ссылка на статическую (личную) вкладку:
+
+    >`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123`
+
+* Ссылка на элемент задачи на статической (личной) вкладке:
+
+    >`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456"}`
+
+* Ссылка на настраиваемую вкладку: 
+
+    >`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&label=Task List 123&context={"channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
+
+* Ссылка на элемент задачи на настраиваемой вкладке: 
+
+    >`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456&context={"subEntityId": "task456","channelId": "19:cbe3683f25094106b826c9cada3afbe0@thread.skype"}`
+    
+* Ссылка на приложение вкладки, добавленное в чат собрания или групповой чат: 
+
+    >`https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123/456&label=Task 456?context={"chatId": "17:b42de192376346a7906a7dd5cb84b673@thread.v2","contextType":"chat"}`
 
 > [!IMPORTANT]
 > Убедитесь, что все параметры запроса правильно закодированы универсальным кодом ресурса (URI). Вы должны следовать предыдущим примерам, используя последний пример:

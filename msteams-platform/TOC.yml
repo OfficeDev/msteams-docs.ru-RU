@@ -2,11 +2,19 @@
   href: mstdd-landing.yml
 - name: Новые возможности
   href: whats-new.md
+- name: Глоссарий
+  href: get-started/glossary.md
 - name: Обзор
   expanded: false
   items:
-    - name: Создание приложений для Microsoft Teams
+    - name: Подходящее приложение Teams
       href: overview.md
+    - name: От идей до приложения Teams
+      href: overview-story.md
+    - name: Обзор возможностей платформы Teams
+      href: overview-explore.md
+    - name: Решение Teams
+      href: overview-solution.md
 - name: Начало работы
   expanded: false
   items:
@@ -22,34 +30,18 @@
       href: sbs-gs-nodejs.yml
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
-- name: Основные сведения о приложении
+- name: Планирование приложения
   items:
     - name: Обзор
       href: concepts/app-fundamentals-overview.md
-    - name: Возможности приложения Teams
-      href: concepts/capabilities-overview.md
-    - name: Точки входа приложения Teams
-      href: concepts/extensibility-points.md
-    - name: Анализ вариантов использования
+    - name: Общая информация о варианте использования
       href: concepts/design/understand-use-cases.md
-    - name: Сопоставление вариантов использования с возможностями приложения Teams
+    - name: Сопоставление варианта использования с возможностями Teams
       href: concepts/design/map-use-cases.md
+    - name: Контрольный список для планирования приложения Teams
+      href: concepts/design/planning-checklist.md
     - name: Планирование адаптивных вкладок для мобильной версии Teams
       href: concepts/design/plan-responsive-tabs-for-teams-mobile.md
-    - name: Возможности устройств
-      items:
-        - name: Обзор
-          href: concepts/device-capabilities/device-capabilities-overview.md
-        - name: Запрос разрешений устройства
-          href: concepts/device-capabilities/native-device-permissions.md
-        - name: Разрешения устройства для браузера
-          href: concepts/device-capabilities/browser-device-permissions.md
-        - name: Интеграция возможностей мультимедиа
-          href: concepts/device-capabilities/mobile-camera-image-permissions.md
-        - name: Интеграция функции сканирования QR- или штрихкода
-          href: concepts/device-capabilities/qr-barcode-scanner-capability.md
-        - name: Интеграция функций местонахождения
-          href: concepts/device-capabilities/location-capability.md
 - name: Создание приложения
   items:
     - name: Обзор
@@ -381,6 +373,20 @@
           href: messaging-extensions/how-to/add-authentication.md
         - name: Включение единого входа в расширениях для сообщений
           href: messaging-extensions/how-to/enable-SSO-auth-me.md
+- name: Интеграция возможностей устройства
+  items:
+    - name: Обзор
+      href: concepts/device-capabilities/device-capabilities-overview.md
+    - name: Запрос разрешений устройства
+      href: concepts/device-capabilities/native-device-permissions.md
+    - name: Разрешения устройства для браузера
+      href: concepts/device-capabilities/browser-device-permissions.md
+    - name: Интеграция возможностей мультимедиа
+      href: concepts/device-capabilities/mobile-camera-image-permissions.md
+    - name: Интеграция функции сканирования QR- или штрихкода
+      href: concepts/device-capabilities/qr-barcode-scanner-capability.md
+    - name: Интеграция функций местонахождения
+      href: concepts/device-capabilities/location-capability.md
 - name: Использование данных Teams с помощью Microsoft Graph
   items:
     - name: Обзор
