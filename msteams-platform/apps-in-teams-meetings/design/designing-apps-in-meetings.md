@@ -1,25 +1,25 @@
 ---
 title: Проектирование расширения собрания
 author: heath-hamilton
-description: Узнайте, как создать приложения в Teams собраниях и получить Microsoft Teams пользовательского интерфейса, вкладку в собрании и использовать случаи, отзывчивое поведение и общий этап собраний, а также тему и навигацию.
+description: Узнайте, как разработать приложения в Teams собраниях и получить Microsoft Teams пользовательского интерфейса, вкладку в собрании и использовать случаи, отзывчивое поведение и общий этап собраний, а также тему и навигацию.
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: conceptual
 keywords: Шаблон набора пользовательского интерфейса на собрании с отзывчивым поведением на общем этапе собраний
-ms.openlocfilehash: e62146a4fb32f37145a818855749d68e64bee384
-ms.sourcegitcommit: 60e4bbb013f0bb17a87a2e558abfcc311c73af75
+ms.openlocfilehash: bb83da351a6b9d2b1219ef1e265e5e6269b34f26
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62523797"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63355825"
 ---
-# <a name="designing-your-microsoft-teams-meeting-extension"></a>Проектирование расширения Microsoft Teams собрания
+# <a name="designing-your-microsoft-teams-meeting-extension"></a>Разработка расширения Microsoft Teams собрания
 
-Вы можете создавать приложения, чтобы сделать собрания более продуктивными. Например, попросите людей выполнить опрос во время собрания или отправить быстрое напоминание, которое не прерывает поток собрания.
+Можно создавать приложения для повышения эффективности собраний. Например, попросите людей выполнить опрос во время собрания или отправить быстрое напоминание, которое не прерывает поток собрания.
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-В наборе пользовательского интерфейса можно найти более исчерпывающие рекомендации по проектированию Microsoft Teams, в том числе элементы, которые можно захватить и изменить по мере необходимости.
+В наборе пользовательского интерфейса можно найти более исчерпывающие рекомендации по разработке Microsoft Teams, в том числе элементы, которые можно захватить и изменить по мере необходимости.
 
 > [!div class="nextstepaction"]
 > [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
@@ -97,7 +97,7 @@ ms.locfileid: "62523797"
 
 ### <a name="anatomy-in-meeting-tab"></a>Anatomy: In-meeting tab
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-anatomy.png" alt-text="В примере показана структурная анатомия вкладки на собрании." border="false":::
+:::image type="content" source="../../assets/in-meeting-tab-anatomy.png" alt-text="В примере показана структурная анатомия вкладки на собрании." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -153,7 +153,7 @@ ms.locfileid: "62523797"
 
 ### <a name="anatomy-in-meeting-dialog"></a>Анатомия: диалоговое окно на собрании
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-anatomy.png" alt-text="В примере показана структурная анатомия диалогов на собрании." border="false":::
+:::image type="content" source="../../assets/in-meeting-dialog-anatomy.png" alt-text="В примере показана структурная анатомия диалогов на собрании." border="false":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -408,7 +408,7 @@ ms.locfileid: "62523797"
 
 #### <a name="do-scroll-vertically"></a>Do: Прокрутите по вертикали
 
-Пользователи ожидают вертикального прокрутки Teams (и в других местах). Это может не применяться, если у вас есть творческий холст, например доска, которую пользователи могут панорамирование по оси x и y.
+Пользователи ожидают вертикального прокрутки в Teams (и в других местах). Это может не применяться, если у вас есть творческий холст, например доска, которую пользователи могут панорамирование по оси x и y.
 
    :::column-end:::
    :::column span="":::

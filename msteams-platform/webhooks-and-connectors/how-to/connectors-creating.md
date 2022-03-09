@@ -6,31 +6,31 @@ keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 64400b3f80aa5ba322ce7318e0261e8b694e7e18
-ms.sourcegitcommit: bfa9d24f736fb8915a9e3ef09c47dbe29a950cb5
+ms.openlocfilehash: 880bede3a33d974c8424bdcaeb8e250bdc97edca
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62801385"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63356100"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
-С Microsoft Teams приложениями можно добавить существующие Office 365 соединителю или создать новый в Teams. Дополнительные сведения см. в [дополнительных сведениях о создании собственного соединитетеля](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector).
+С Microsoft Teams приложениями можно добавить существующий Office 365 соединителю или создать новый в Teams. Дополнительные сведения см. в [дополнительных сведениях о создании собственного соединитетеля](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector).
 
 ## <a name="add-a-connector-to-teams-app"></a>Добавление соединителю в Teams приложение
 
-Вы можете создать пакет [и](~/concepts/build-and-test/apps-package.md) [опубликовать](~/concepts/deploy-and-publish/apps-publish.md) соединители в рамках отправки AppSource. Вы можете распространять зарегистрированный соединитатель как часть пакета Teams приложения. Сведения о точках входа для Teams приложения см. [в таблице capabilities](~/concepts/extensibility-points.md). Вы также можете предоставить пакет пользователям непосредственно для загрузки в Teams.
+Вы можете создать пакет [и](~/concepts/build-and-test/apps-package.md) [опубликовать](~/concepts/deploy-and-publish/apps-publish.md) соединители в рамках отправки AppSource. Зарегистрированный соединитатель можно распространить в рамках пакета Teams приложения. Сведения о точках входа для Teams приложения см. [в таблице capabilities](~/concepts/extensibility-points.md). Вы также можете предоставить пакет пользователям непосредственно для загрузки в Teams.
 
 Чтобы распределить соединитело, зарегистрируйте его в панели мониторинга разработчиков [соединители](https://aka.ms/connectorsdashboard).
 
-Чтобы соединители работали только в Microsoft Teams, следуйте инструкциям по отправке соединитетеля в публикации приложения в Microsoft Teams [магазине](~/concepts/deploy-and-publish/appsource/publish.md). В противном случае зарегистрированный соединитатель работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams.
+Чтобы соединитатель работал только в Microsoft Teams, следуйте инструкциям по отправке соединитетеля в публикации приложения в Microsoft Teams [магазине](~/concepts/deploy-and-publish/appsource/publish.md). В противном случае зарегистрированный соединитатель работает во всех Office 365, поддерживаюх приложения, включая Outlook и Teams.
 
 > [!IMPORTANT]
 > Соединитель регистрируется после выбора **сохранить** в панели мониторинга разработчика соединители. Если вы хотите опубликовать соединителе в AppSource, следуйте инструкциям в публикации [Microsoft Teams приложения в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, раздайте его непосредственно организации. После [публикации соединители для организации](#publish-connectors-for-the-organization) никаких дополнительных действий на панели мониторинга соединители не требуется.
 
 ### <a name="integrate-the-configuration-experience"></a>Интеграция опытом настройки
 
-Пользователи могут выполнить весь процесс настройки соединитетеля, не покидая Teams клиента. Чтобы получить опыт, Teams встраить страницу конфигурации непосредственно в iframe. Последовательность операций следующим образом:
+Пользователи могут выполнить весь процесс настройки соединитетеля, не покидая Teams клиента. Чтобы получить этот опыт, Teams встраить страницу конфигурации непосредственно в iframe. Последовательность операций следующим образом:
 
 1. Для начала процесса настройки пользователь выбирает соединител.
 1. Пользователь взаимодействует с веб-интерфейсом для завершения конфигурации.
@@ -38,7 +38,7 @@ ms.locfileid: "62801385"
 
     > [!NOTE]
     > * Код может обработать событие сохранения путем восстановления параметров веб-ок. Код хранит веб-сайт для публикации событий позже.
-    > * В пределах Teams загружается Teams.
+    > * Процесс настройки загружается в пределах Teams.
 
 Вы можете повторно использовать существующие возможности веб-конфигурации или создать отдельную версию, которая будет организована в Teams. Код должен включать Microsoft Teams JavaScript SDK. Это дает коду доступ к API для выполнения общих операций, таких как получение текущего контекста пользователя, канала или группы и начало потоков проверки подлинности.
 
@@ -136,7 +136,7 @@ ms.locfileid: "62801385"
 | `configName`  | Имя конфигурации, заданная кодом при вызове `setSettings()`. |
 | `contentUrl` | URL-адрес страницы конфигурации, заданная кодом при вызове `setSettings()`. |
 | `webhookUrl` | URL-адрес веб-страницы, созданный для соединителя. Для отправки карт на канал используйте URL-адрес веб-сайта POST, структурированный JSON. Возвращается `webhookUrl` только тогда, когда приложение возвращает данные успешно. |
-| `appType` | Возвращаемые значения могут `mail`быть соответствующими `groups``teams` Office 365 mail, Office 365 группам или Microsoft Teams соответственно. |
+| `appType` | Возвращаемые значения `mail`могут быть соответствующими `groups``teams` Office 365, Office 365 или Microsoft Teams соответственно. |
 | `userObjectId` | Уникальный ID, соответствующий Office 365, который инициировал настройка соединиттеля. Она должна быть защищена. Это значение можно использовать для связи пользователя в Office 365, который настроил конфигурацию в службе. |
 
 #### <a name="handle-edits"></a>Обработка изменений
@@ -255,11 +255,11 @@ ms.locfileid: "62801385"
 > [!IMPORTANT]
 > В настоящее время настраиваемые соединители недоступны в облако сообщества для государственных организаций (GCC), GCC-High и Department of Defense (DoD).
 
-Соединитель доступен в разделе &#9679;&#9679;&#9679; > **OptionsConnectorsAllConnectors** >  >  >  **для вашей** команды. Вы можете перемещаться путем прокрутки в этот раздел или поиска соединитеного приложения. Чтобы настроить или изменить соединители, выберите **Настройка**.
+Соединитель доступен в разделе &#9679;&#9679;&#9679; > **optionsConnectorsAllConnectors** >  >  >  **для вашей команды**. Вы можете перемещаться путем прокрутки в этот раздел или поиска соединитеного приложения. Чтобы настроить или изменить соединители, выберите **Настройка**.
 
 ## <a name="distribute-webhook-and-connector"></a>Распространение веб-ок и соединители
 
-1. [Настройка входящих веб-ок непосредственно](~/webhooks-and-connectors/how-to/add-incoming-webhook.md?branch=pr-en-us-3076#create-incoming-webhook) для вашей команды.
+1. [Настройка входящих веб-ок непосредственно](~/webhooks-and-connectors/how-to/add-incoming-webhook.md?branch=pr-en-us-3076#create-an-incoming-webhook) для вашей команды.
 1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?branch=pr-en-us-3076#integrate-the-configuration-experience) [и опубликуйте](~/webhooks-and-connectors/how-to/connectors-creating.md?branch=pr-en-us-3076#publish-connectors-for-the-organization) входящий веб-сайт в Office 365 соединителю.
 1. Пакет и публикация соединитетеля в рамках отправки [AppSource](~/concepts/deploy-and-publish/office-store-guidance.md) .
 

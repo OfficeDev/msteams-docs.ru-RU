@@ -1,0 +1,44 @@
+### YamlMime:Tutorial
+title: Создание исходяющих веб-ок
+metadata:
+  title: Создание исходяющих веб-ок
+  description: В этом руководстве вы узнаете, как настроить исходяющие веб-сайты для Teams.
+  audience: Developer
+  level: Beginner
+  ms.date: 14/01/2022
+  ms.topic: interactive-tutorial
+  nextTutorialHref: webhooks-and-connectors/how-to/add-outgoing-webhook.md
+  nextTutorialTitle: Дополнительные новости об исходяющих веб-сайтах
+  ms.custom: mvc
+  ms.localizationpriority: High
+  ms.openlocfilehash: 0cf221616cb233d69356e1a012de15afc1254070
+  ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63360985"
+items:
+- durationInMinutes: 1
+  content: "Веб-сайты помогают Microsoft Teams интеграции с внешними приложениями. В Teams веб-сайты выступают в качестве бота и ищут сообщения в каналах с помощью **@mention**. Исходяющие веб-оки позволяют пользователям отправлять сообщения веб-службам, не выполняя весь процесс создания ботов через Microsoft Bot Framework. Исходяющие веб-окки высвечивать данные из Teams к любой службе, способной принимать полезной нагрузки JSON. \n\n**Ключевые функции исходяющих веб-ок**\n\n* Отправка уведомлений в любую внешнюю веб-службу.\n* Отвечайте богатыми текстовыми сообщениями, включая карточки и изображения. \n* Получение сообщений в общедоступных каналах, а не в личной или частной области.\n* Отправьте HTTP POST в веб-службу и получите ответ. \n\n > [!NOTE]\n > Исходяющие веб-сайты не могут получить доступ к другим API, например получить список или список каналов в команде.\n\nЭто пошаговая руководство по созданию исходяющих веб-сайтов в Teams. Вы увидите следующий вывод:\n\n![готово](~/assets/images/sbs-outgoing-webhooks/output-result1.png)\n"
+- title: Предварительные требования
+  durationInMinutes: 1
+  content: "Убедитесь, что вы установите следующие средства и настроите среду разработки:  \n\n* [Microsoft Teams с](https://teams.microsoft.com/) допустимой учетной записью\n* [Последняя версия Visual Studio](https://visualstudio.microsoft.com/downloads/)\n* [ngrok](https://ngrok.com/download) последняя версия (только для тестирования devbox) или любое эквивалентное решение для туннелей\n\n  > [!NOTE]\n  > После скачивания ngrok зарегистриройте и установите [authtoken](https://ngrok.com/download).\n"
+- title: Настройка локальной среды
+  durationInMinutes: 1
+  content: "Репозиторий `Microsoft-Teams-Samples` клонов в локальный GitHub:  \n\n 1. Откройте [Microsoft Teams примеры](https://github.com/OfficeDev/Microsoft-Teams-Samples).\n 1. Выберите **код**.\n 1. В меню dropdown выберите **Open с GitHub Desktop**.\n\n    ![Клонировать](~/assets/images/sbs-outgoing-webhooks/clone-repository.png)\n\n 1. Выберите **клон**. \n"
+- title: Создание исходящих веб-перехватчиков
+  durationInMinutes: 5
+  content: "1. Выберите требуемую команду, а затем выберите **команду Manage из** меню (•••) для отсевов.\n\n   ![Управление](~/assets/images/sbs-outgoing-webhooks/manage-team.png)\n\n1. Выберите **вкладку Apps** из панели навигации.\n\n   ![ВЫБОР](~/assets/images/sbs-outgoing-webhooks/app-selection.png)\n\n1. Используйте ngrok для создания туннеля для общедоступных конечных точек HTTPS локального запуска веб-сервера. Запустите следующую команду в ngrok:\n\n    ```bash\n    ngrok http -host-header=localhost 3978\n    ```\n\n1. В нижнем правом углу окна выберите **Создать исходяющий веб-сайт**.\n\n   ![Исходяние](~/assets/images/sbs-outgoing-webhooks/create-outgoing-webhook.png).\n\n1. Введите следующие сведения:\n \n    * **Имя**. Название веб-страницы в @mention вкладке.\n\n    * **URL-адрес** для вызова. URL-адрес, созданный из ngrok, который принимает полезной нагрузки JSON и получает запросы POST из Teams. Чтобы использовать api/Sample или api/authenticatedSample, сделайте следующее:\n\n        * Для api/sample скопируйте и вклеите URL-адрес ngrok и придать его /api/sample.\n\n        * Для проверки подлинности скопируйте и вклеите URL-адрес ngrok и применив его с помощью /authenticatedSample?id=contoso.\n\n    * **Описание**. Подробная строка, которая появится в карточке профиля и панели мониторинга приложений на уровне команды.\n\n    * **Изображение профиля (необязательно)**: значок приложения для веб-пользователя.\n\n1. Нажмите **Создать**. Исходяющий веб-сайт добавляется в канал текущей команды.\n\n    ![Создание исходящего веб-перехватчика](~/assets/images/sbs-outgoing-webhooks/select.png)\n\n1. Появится `Hash-based Message Authentication Code (HMAC)` поле диалогов. Маркер безопасности можно использовать в файле **AuthProvider.cs** для проверки подлинности вызовов между Teams и любыми назначенными внешними службами. \n\n    > [!NOTE]\n    > Исходяющий веб-ок доступен пользователям команды, только если URL-адрес действителен, а сервер и маркеры проверки подлинности клиентов равны. Например, рукопожатие HMAC.\n                \n     ![Код](~/assets/images/sbs-outgoing-webhooks/security-token.png)   \n"
+- title: Создание и запуск службы
+  durationInMinutes: 1
+  content: "1. Запуск последней версии Visual Studio.\n\n1. Перейдите к **файлу FileOpen** >  >  **Project/Solution**.\n\n    ![Открытый файл](~/assets/images//sbs-outgoing-webhooks/outgoing-webhooks-VSopenfile.png)\n\n1. Выберите **файл WebhookSampleBot.sln** из **папки csharp** .\n\n    ![Файл решения](~/assets/images//sbs-outgoing-webhooks/open-project.png)\n\n1. Обновление **\"contoso\"** до \"M365x712764\" и HMAC в **файле AuthProvider.cs** .  \n\n    ![обновление](~/assets/images//sbs-outgoing-webhooks/update-hmac2.png)\n\n1. Нажмите **кнопку F5** для запуска проекта.\n\n1. Выберите **Да** , если появится следующий диалог:\n\n    ![Сертификат доверия](~/assets/images//sbs-outgoing-webhooks/outgoing-webhook-certificate.png)\n\n   На веб-странице отображаются сведения о локальном хост-сервере.\n\n    ![Готовое приложение](~/assets/images//sbs-outgoing-webhooks/outgoing-webhooks-ready.png)                  \n"
+- title: Взаимодействие с приложением в Teams
+  durationInMinutes: 1
+  content: "1. Выберите **General** , чтобы начать новый разговор.\n\n1. Выберите **Новый разговор** , чтобы начать беседу.\n\n1. Введите **\\@** имя исходятого веб-окка, чтобы вызвать его в канале. \n\n   ![сообщение](~/assets/images/sbs-outgoing-webhooks/type-mention.png)\n\n1. Выберите **отправку**.\n\n   > [!NOTE]\n   >  Вы можете отправлять адаптивные карточки, карточки главного имиджевого баннера и текстовые сообщения в виде вложений с помощью исходящего веб-перехватчика.\n\n1. В чате собраний отображается новое сообщение.\n\n   ![готово](~/assets/images/sbs-outgoing-webhooks/output-result.png)\n   \n"
+- title: Полная задача
+  durationInMinutes: 1
+  content: >
+    Вы придумали что-то подобное?
+
+       ![готово](~/assets/images/sbs-outgoing-webhooks/output-result1.png)
+- content: Вы завершили учебный курс, чтобы начать работу с исходяшим приложением Webhook!

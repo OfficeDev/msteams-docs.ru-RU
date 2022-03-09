@@ -1,19 +1,19 @@
 ---
 title: Создание кнопки «Поделиться в Teams»
-description: Узнайте, как добавить кнопку Share Teams на веб-сайте с помощью предварительного просмотра веб-сайта с использованием примеров кода
+description: Узнайте, как добавить встраиваемую кнопку Share Teams на веб-сайте с помощью предварительного просмотра веб-сайта с использованием примеров кода
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: Совместное Teams share-to-Teams
-ms.openlocfilehash: a2c94ad690864b6af89005af4f96866f1ebda0b6
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 05e64033d16d4b94c6ac2f9f230c296218f75517
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518494"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63355876"
 ---
 # <a name="create-share-to-teams-button"></a>Создание кнопки «Поделиться в Teams»
 
-Сторонние веб-сайты могут использовать сценарий запуска для встраив кнопки Share-to-Teams на своих веб-сайтах. При выборе в всплывающее окно запускается Teams share-to-Teams. Это позволяет обмениваться ссылками напрямую с любым Microsoft Teams каналом без переключения контекста. В этом документе вы можете узнать, как создать и встраить кнопку Share-to-Teams для веб-сайта, создать предварительный просмотр веб-сайта и расширить возможности share-to-Teams для образования.
+Сторонние веб-сайты могут использовать сценарий запуска для встраив кнопки share-to-Teams на своих веб-сайтах. При выборе в всплывающее окно запускается Teams share-to-Teams. Это позволяет делиться ссылкой непосредственно с любым человеком или Microsoft Teams каналом без переключения контекста. В этом документе вы можете узнать о том, как создать и встраить кнопку Share-to-Teams для веб-сайта, создать предварительный просмотр веб-сайта и расширить раздел share-to-Teams для образования.
 
 > [!NOTE]
 > * Поддерживаются только настольные версии MicrosoftEdge&nbsp; и Google Chrome.
@@ -23,7 +23,7 @@ ms.locfileid: "62518494"
 
 ![Всплывающее Teams](~/assets/images/share-to-teams-popup.png)
 
-## <a name="embed-a-share-to-teams-button"></a>Встраить кнопку Share в Teams
+## <a name="embed-a-share-to-teams-button"></a>Встраить кнопку Share Teams
 
 1. Добавьте скрипт `launcher.js` на веб-страницу.
 
@@ -40,9 +40,9 @@ ms.locfileid: "62518494"
     </div>
     ```
 
-    После этого значок Microsoft Teams на ваш веб-сайт. На следующем изображении показан значок Share-to-Teams:
+    После этого значок Microsoft Teams на веб-сайте. На следующем изображении показан значок Share-to-Teams:
 
-    ![Share to Teams icon](~/assets/icons/share-to-teams-icon.png)
+    ![Share to Teams значок](~/assets/icons/share-to-teams-icon.png)
 
 1. Кроме того, если для кнопки Share-to-Teams нужен другой размер значка, используйте атрибут`data-icon-px-size`.
 
@@ -53,7 +53,7 @@ ms.locfileid: "62518494"
       data-icon-px-size="64">
     </div>
     ```
-1. Если общая ссылка требует проверки подлинности пользователя, а предварительный просмотр URL-адреса из общего доступного url-адреса не будет хорошо отрисовки в Teams, `data-preview` `false`то можно отключить предварительный просмотр URL-адреса, добавив набор атрибутов в .
+1. Если общая ссылка требует проверки подлинности пользователя, а предварительный просмотр URL-адреса из общей ссылки не будет хорошо отрисовки Teams, `data-preview` `false`можно отключить предварительный просмотр URL-адреса, добавив набор атрибутов.
 
     ```html
     <div
@@ -79,29 +79,29 @@ ms.locfileid: "62518494"
 |Значение|Метатег| Откройте Graph|
 |----|----|----|
 |Title|`<meta name="title" content="Example Page Title">`|`<meta property="og:title" content="Example Page Title">`|
-|Description|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
+|Описание|`<meta name="description" content="Example Page Description">`|`<meta property="og:description" content="Example Page Description">`|
 |Эскиз изображения| нет. |`<meta property="og:image" content="http://example.com/image.jpg">`|
 
-Вы можете использовать версии по умолчанию HTML или open Graph версии.
+Вы можете использовать либо версии по умолчанию HTML, либо open Graph версии.
 
-## <a name="share-to-teams-for-education"></a>Share to Teams для образования
+## <a name="share-to-teams-for-education"></a>Поделиться с Teams для образования
 
-Для учителей, использующих кнопку Share Teams, существует дополнительный параметр `Create an Assignment`. Это позволяет быстро создавать назначение в выбранной команде на основе общей ссылки. На следующем изображении отображается раздел share-to-Teams для образования: 
+Для преподавателей, использующих кнопку Share Teams, существует дополнительный параметр `Create an Assignment`. Это позволяет быстро создавать назначение в выбранной команде на основе общей ссылки. На следующем изображении отображается раздел share-to-Teams для образования: 
 
 ![Совместное Teams всплывающее образование](~/assets/images/share-to-teams-popup-edu.png)
 
 ## <a name="full-launcherjs-definition"></a>Полное launcher.js определение
 
-| Свойство | Атрибут HTML | Type | По умолчанию | Описание |
+| Свойство | Атрибут HTML | Тип | По умолчанию | Описание |
 | -------------- | ---------------------- | --------------------- | ------- | ---------------------------------------------------------------------- |
-| href | `data-href` | string | н/д | Href контента для обмена. |
-| preview | `data-preview` | boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
+| href | `data-href` | Строка | н/д | Href контента для обмена. |
+| preview | `data-preview` | Boolean (как строка) | `true` | Следует ли показывать предварительный просмотр контента для обмена. |
 | iconPxSize | `data-icon-px-size` | номер (в качестве строки) | `32` | Размер пикселей кнопки share-to-Teams для отрисовки. |
-| msgText | `data-msg-text` | string | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле составить сообщение. Максимальное число символов — 200. |
-| assignInstr | `data-assign-instr` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
-| assignTitle | `data-assign-title` | string | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
+| msgText | `data-msg-text` | Строка | н/д | Текст по умолчанию должен быть вставлен перед ссылкой в поле составить сообщение. Максимальное число символов — 200. |
+| assignInstr | `data-assign-instr` | Строка | н/д | Текст по умолчанию, который будет вставлен в поле "Инструкции". Максимальное число символов — 200. |
+| assignTitle | `data-assign-title` | Строка | н/д | Текст по умолчанию, который будет вставлен в поле "Title". Максимальное число символов — 50. |
 
-### <a name="methods"></a>Methods
+### <a name="methods"></a>Методы
 
 **`shareToMicrosoftTeams.renderButtons(options)`**
 
@@ -111,7 +111,7 @@ ms.locfileid: "62518494"
 
 ### <a name="set-default-form-values"></a>Настройка значений форм по умолчанию
 
-Вы можете выбрать для набора значений по умолчанию для следующих полей в share Teams форме:
+Можно выбрать для набора значений по умолчанию для следующих полей в share Teams форме:
 
 * Скажите что-нибудь об этом: `msgText`
 * Инструкции по назначению: `assignInstr`

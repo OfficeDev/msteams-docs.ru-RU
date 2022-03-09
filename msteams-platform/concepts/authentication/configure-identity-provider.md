@@ -4,12 +4,12 @@ description: Описывает, как настроить поставщико�
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности Azure AD oauth identity provider
-ms.openlocfilehash: b35f28f2cb306a6dfc3ae3151616925da1525069
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
+ms.openlocfilehash: 36e81839b1837fca8a124b60701c3d5f95608851
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821355"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63356415"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 
@@ -32,3 +32,11 @@ ms.locfileid: "62821355"
 * **LinkedIn:** Следуйте инструкциям в [настройке приложения LinkedIn](/linkedin/talent/apply-with-linkedin)
 
 * **Google:** Получение учетных данных клиента OAuth 2.0 из [консоли API Google](https://console.developers.google.com/)
+
+* **Внешние поставщики OAuth из вкладок:** Дополнительные сведения см. в [дополнительных сведениях Об использовании внешних поставщиков OAuth](../../tabs/how-to/authentication/auth-oauth-provider.md)
+
+## <a name="see-also"></a>См. также 
+
+* [Проверка подлинности пользователя в Microsoft Teams боте](../../resources/bot-v3/bot-authentication/auth-bot-AAD.md)
+* [Поддержка единого входа (SSO) для вкладок](../../tabs/how-to/authentication/auth-aad-sso.md)
+* [Проверка подлинности пользователя на вкладке Microsoft Teams](../../tabs/how-to/authentication/auth-tab-aad.md)

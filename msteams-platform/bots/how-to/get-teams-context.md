@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
 keywords: список каналов профилей пользователей в контексте бота
-ms.openlocfilehash: c356ea8e498f68ba1aec5c438840a366818070d0
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
+ms.openlocfilehash: 0b7bba5e642d5cedc7a4c07c441a52fc9298d0f2
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821621"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63355554"
 ---
 # <a name="get-teams-specific-context-for-your-bot"></a>Получите Teams контекст для бота
 
@@ -21,7 +21,7 @@ ms.locfileid: "62821621"
 
 ## <a name="fetch-the-roster-or-user-profile"></a>Извлечение реестра или профиля пользователя
 
-Бот может запрашивать список участников и их базовые профили пользователей, включая Teams и Microsoft Azure Active Directory (Azure AD), например имя и objectId. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, чтобы проверить, входит ли пользователь в вкладку с помощью учетных данных Azure AD, является членом группы. Для получения участников беседы минимальный или максимальный размер страницы зависит от реализации. Размер страницы меньше 50, рассматриваются как 50 и более 500, имеют ограничения на уровне 500. Даже если вы используете ненастоячивую версию, она ненадежна в больших группах и не должна использоваться. Дополнительные сведения см. [в Teams API-Teams для получения участников группы или чата](~/resources/team-chat-member-api-changes.md).
+Бот может запрашивать список участников и их базовые профили пользователей, включая Teams и сведения Microsoft Azure Active Directory (Azure AD), такие как имя и objectId. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, чтобы проверить, входит ли пользователь в вкладку с помощью учетных данных Azure AD, является членом группы. Для получения участников беседы минимальный или максимальный размер страницы зависит от реализации. Размер страницы меньше 50, рассматриваются как 50 и более 500, имеют ограничения на уровне 500. Даже если вы используете ненастоячивую версию, она ненадежна в больших группах и не должна использоваться. Дополнительные сведения см. [в Teams API-Teams для получения участников группы или чата](~/resources/team-chat-member-api-changes.md).
 
 В следующем примере кода используется страница конечной точки для получения реестра:
 
@@ -59,7 +59,7 @@ export class MyBot extends TeamsActivityHandler {
             var members = [];
 
             do {
-                var pagedMembers = await TeamsInfo.getPagedMembers(context, 100, continuationToken);
+                var pagedMembers = await TeamsInfo.getPagedMembers(turnContext, 100, continuationToken);
                 continuationToken = pagedMembers.continuationToken;
                 members.push(...pagedMembers.members);
             }
@@ -124,7 +124,7 @@ Response body
 
 * * *
 
-После получения реестра или профиля пользователя можно получить сведения об одном члене. В настоящее `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` время для получения сведений для одного или более членов чата или группы используйте API Microsoft Teams бота для C# или API TypeScript.
+После получения реестра или профиля пользователя можно получить сведения об одном члене. В настоящее `TeamsInfo.GetMembersAsync` `TeamsInfo.getMembers` время для получения сведений для одного или более членов чата или группы используйте API Microsoft Teams ботов для C# или API TypeScript.
 
 ## <a name="get-single-member-details"></a>Получить сведения об одном члене
 
@@ -152,10 +152,11 @@ export class MyBot extends TeamsActivityHandler {
         super();
 
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
-        const member = await TeamsInfo.getMember(context, encodeURI('someone@somecompany.com'));
+        this.onMessage(async (turnContext, next) => {
+            const member = await TeamsInfo.getMember(turnContext, encodeURI('someone@somecompany.com'));
 
-        // By calling next() you ensure that the next BotHandler is run.
-        await next();
+            // By calling next() you ensure that the next BotHandler is run.
+            await next();
         });
     }
 }
@@ -208,7 +209,7 @@ Response body
 
 * * *
 
-После получения сведений об одном члене вы можете получить сведения о команде. В настоящее время для получения сведений для группы используйте API `TeamsInfo.GetMemberDetailsAsync` `TeamsInfo.getTeamDetails` Microsoft Teams бота для C# или typeScript.
+После получения сведений об одном члене вы можете получить сведения о команде. В настоящее время `TeamsInfo.GetMemberDetailsAsync` `TeamsInfo.getTeamDetails` для получения сведений для группы используйте API Microsoft Teams бота для C# или typeScript.
 
 ## <a name="get-teams-details"></a>Сведения о команде
 

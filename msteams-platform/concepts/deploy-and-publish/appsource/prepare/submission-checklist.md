@@ -6,18 +6,18 @@ ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
 keywords: Хранилище отправки распространяет рекомендации по проверке пакета приложений для локализации
-ms.openlocfilehash: 4da374d9ced3231437aef278c7c90c68fc0c19de
-ms.sourcegitcommit: 1431dfe08d5a19a63dbf1542a2e6c661e4dd7fc1
+ms.openlocfilehash: 579744dc8081eb8ca3e967cce1b4d696350d0a56
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60949070"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63356429"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовка отправки Microsoft Teams магазина
 
 Вы разработали, создали и протестировали Microsoft Teams приложение. Теперь вы готовы перечислить его, чтобы люди могли обнаружить и начать использовать ваше приложение.
 
-Перед отправкой приложения в [Центр партнеров](/office/dev/store/use-partner-center-to-submit-to-appsource)убедитесь, что вы сделали следующее.
+Перед отправкой приложения в [Центр партнеров](/office/dev/store/use-partner-center-to-submit-to-appsource) убедитесь, что вы сделали следующее.
 
 ## <a name="validate-your-app-package"></a>Проверка пакета приложений
 
@@ -28,8 +28,8 @@ ms.locfileid: "60949070"
 
 Средство Microsoft Teams проверки приложений помогает выявлять и устранять проблемы перед отправкой в Центр партнеров. Средство автоматически проверяет конфигурации вашего приложения на фоне тех же тестовых случаев, используемых во время проверки в магазине.
 
-1. Перейдите к [средству проверки Microsoft Teams приложения.](https://dev.teams.microsoft.com/appvalidation.html) (Примечание. Этот инструмент также доступен в [App Studio.)](../../../build-and-test/app-studio-overview.md)
-1. Upload пакет приложения для запуска автоматических тестов.
+1. Перейдите к [Microsoft Teams проверки приложений](https://dev.teams.microsoft.com/appvalidation.html). (Примечание. Этот инструмент также доступен в [App Studio](../../../build-and-test/app-studio-overview.md).)
+1. Upload пакет приложения для запуска автоматизированных тестов.
 1. Перейдите в **предварительный контрольный список** и просмотрите тестовые случаи, которые трудно автоматизировать.
 1. [Устранение проблем с конфигурациями или](~/resources/schema/manifest-schema.md) приложением в целом. Эти проблемы возникают, если автоматические тесты дают вам ошибки или вы не выполнили все критерии в списке.
 
@@ -68,13 +68,13 @@ ms.locfileid: "60949070"
 
 ## <a name="create-your-store-listing-details"></a>Создание сведений о списке магазина
 
-Сведения, которые вы [](https://partner.microsoft.com) передаете в Центр партнеров&#8212;включая ваше имя, описания, значки и изображения,&#8212;становятся Teams магазином и списком Microsoft AppSource для вашего приложения.
+Сведения, которые вы передаете [](https://partner.microsoft.com) в Центр партнеров&#8212;включая ваше имя, описания, значки и изображения,&#8212;становятся Teams магазина и списка Microsoft AppSource для вашего приложения.
 
 Список магазинов может быть первым впечатлением от вашего приложения. Увеличение установок с помощью списка, который эффективно передает преимущества, функциональные возможности и бренд вашего приложения.
 
 ### <a name="specify-a-short-name"></a>Укажите короткое имя
 
-Имя вашего приложения (в частности, его короткое [*имя)*](~/resources/schema/manifest-schema.md#name)играет решающую роль в том, как пользователи обнаруживают его в магазине.
+Имя вашего приложения (в частности [*, его*](~/resources/schema/manifest-schema.md#name) короткое имя) играет решающую роль в том, как пользователи обнаруживают его в магазине.
 
 :::row:::
 
@@ -86,7 +86,7 @@ ms.locfileid: "60949070"
 
 :::row-end:::
 
-Убедитесь, что ваше короткое имя соответствует рекомендациям по [проверке хранения.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#app-name)
+Убедитесь, что ваше короткое имя соответствует рекомендациям проверки [магазина](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#app-name).
 
 ### <a name="write-descriptions"></a>Написание описаний
 
@@ -106,7 +106,7 @@ ms.locfileid: "60949070"
 
 :::row-end:::
 
-Убедитесь, что краткое описание соответствует рекомендациям по проверке [хранения.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#short-description)
+Убедитесь, что краткое описание соответствует рекомендациям по проверке [хранения](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#short-description).
 
 #### <a name="long-description"></a>Длинное описание
 
@@ -128,13 +128,13 @@ ms.locfileid: "60949070"
 
 :::row-end:::
 
-Убедитесь, что ваше длинное описание соответствует рекомендациям проверки [магазина.](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#long-description)
+Убедитесь, что ваше длинное описание соответствует рекомендациям проверки [магазина](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#long-description).
 
 ### <a name="adhere-to-icon-design-guidelines"></a>Соблюдайте рекомендации по проектированию значков
 
-Значки являются одним из основных элементов, которые пользователи видят при просмотре магазина. Значки должны сообщать о фирме и цели приложения, а также о Teams требованиях.
+Значки являются одним из основных элементов, которые пользователи видят при просмотре магазина. Значки должны сообщать о фирме и цели вашего приложения, а также о Teams требованиях.
 
-Дополнительные сведения см. [в руководстве по созданию значков Teams приложений.](~/concepts/build-and-test/apps-package.md#app-icons)
+Дополнительные сведения см. [в руководстве по созданию значков Teams приложений](~/concepts/build-and-test/apps-package.md#app-icons).
 
 ### <a name="capture-screenshots"></a>Захват скриншотов
 
@@ -153,13 +153,13 @@ ms.locfileid: "60949070"
 Помните о следующих практических действиях по скриншотам:
 
 * Можно опубликовать до пяти снимков экрана на одно приложение.
-* Поддерживаются форматы PNG, JPEG и GIF.
-* Размеры должны быть 1366x768 пикселов.
+* Поддерживаемые типы файлов включают .png, jpeg и форматы изображений gif.
+* Размеры должны быть 1366 x 768 пикселей.
 * Максимальный размер 1024 КБ.
 
 Дополнительные возможности см. в следующих ресурсах:
 
-* [Teams проверки магазина](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#screenshots)
+* [Teams store validation guidelines](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md#screenshots)
 * [Создай эффективные изображения для магазинов приложений Майкрософт](/office/dev/store/craft-effective-appsource-store-images)
 
 ### <a name="create-a-video"></a>Создание видео
@@ -182,7 +182,7 @@ ms.locfileid: "60949070"
 
 ### <a name="select-a-category-for-your-app"></a>Выберите категорию для приложения
 
-Во время отправки вам будет предложено классифицировать приложение. В следующей таблице Teams категории Store к категориям, перечисленным в [Центре партнеров.](https://aka.ms/PartnerCenterHomePage)
+Во время отправки вам будет предложено классифицировать приложение. В следующей таблице Teams категории Store к категориям, перечисленным в [Центре партнеров](https://aka.ms/PartnerCenterHomePage).
 
 | Teams категорий       | Категории Центра партнеров  |
 |:---------------------|:---------------|
@@ -191,26 +191,26 @@ ms.locfileid: "60949070"
 | Образование | Образование |
 | Управление персоналом | Кадры и рекрутинг |
 | Эффективность | Управление контентом, файлы и документы, производительность, обучение и учебники и утилиты |
-| Управление проектами | Коммуникация, Project управление, рабочий процесс и управление бизнесом |
+| Управление проектами | Коммуникация, Project, рабочий процесс и управление бизнесом |
 | Продажи и поддержка | Управление клиентами и контактами, поддержка клиентов, управление финансами и продажами и маркетингом |
 | Социальная и веселая | Image and Video Galleries, Lifestyle, News and Weather, Social, Travel and Navigation |
 
 ### <a name="localize-your-store-listing"></a>Локализовать список магазина
 
-Центр партнеров поддерживает [локализованные списки магазинов.](/office/dev/store/prepare-localized-solutions) Дополнительные сведения см. [в том, как локализовать список Teams приложения.](../../../../concepts/build-and-test/apps-localization.md)
+Центр партнеров поддерживает [локализованные списки магазинов](/office/dev/store/prepare-localized-solutions). Дополнительные сведения см. [в списке Teams приложения](../../../../concepts/build-and-test/apps-localization.md).
 
 ## <a name="complete-publisher-verification"></a>Полное Publisher проверки
 
-[Publisher для](/azure/active-directory/develop/publisher-verification-overview) Teams приложений, перечисленных в магазине. Дополнительные сведения см. в [вопросах и ответах](/azure/active-directory/develop/publisher-verification-overview#frequently-asked-questions), [как обозначить ваше приложение как проверенное издателем](/azure/active-directory/develop/mark-app-as-publisher-verified) и [устранение неполадок с проверкой издателя](/azure/active-directory/develop/troubleshoot-publisher-verification).
+[Publisher проверка](/azure/active-directory/develop/publisher-verification-overview) требуется для Teams приложений, перечисленных в магазине. Дополнительные сведения см. в [вопросах и ответах](/azure/active-directory/develop/publisher-verification-overview#frequently-asked-questions), [как обозначить ваше приложение как проверенное издателем](/azure/active-directory/develop/mark-app-as-publisher-verified) и [устранение неполадок с проверкой издателя](/azure/active-directory/develop/troubleshoot-publisher-verification).
 
 ## <a name="complete-publisher-attestation"></a>Полное Publisher проверки
 
 [Publisher также](/microsoft-365-app-certification/docs/attestation) требуется для Teams приложений, перечисленных в Магазине. Этот процесс включает в себя самооценку правил безопасности, обработки данных и соответствия требованиям. Этот процесс может помочь потенциальным клиентам принимать обоснованные решения об использовании приложения.
 
 > [!NOTE]
-> Если вы отправили новое приложение, вы не можете официально завершить проверку Publisher, пока ваше приложение не будет перечислены в Teams магазине. Если вы обновляете перечисленное приложение, Publisher проверку перед отправкой последней версии приложения для проверки.
+> При отправке нового приложения вы не можете официально завершить проверку Publisher до тех пор, пока ваше приложение не будет перечислены в Teams магазине. Если вы обновляете перечисленное приложение, Publisher проверку перед отправкой последней версии приложения для проверки.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Отправка приложения](/office/dev/store/add-in-submission-guide)
