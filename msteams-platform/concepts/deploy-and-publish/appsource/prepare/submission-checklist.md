@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 author: heath-hamilton
 ms.author: surbhigupta
 keywords: Хранилище отправки распространяет рекомендации по проверке пакета приложений для локализации
-ms.openlocfilehash: 579744dc8081eb8ca3e967cce1b4d696350d0a56
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: da0daf5daf927dcaf4346171fe78c3db6e874259
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356429"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398948"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовка отправки Microsoft Teams магазина
 
@@ -24,7 +24,7 @@ ms.locfileid: "63356429"
 Хотя ваше приложение может работать в тестовой среде, необходимо проверить пакет приложений, чтобы избежать проблем во время процесса отправки.
 
 > [!NOTE]
->  App Studio скоро будет обесценив. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков](https://dev.teams.microsoft.com/)
+> App Studio скоро будет обесценив. Настройка, распространение и управление Teams приложениями с помощью нового [портала разработчиков](https://dev.teams.microsoft.com/)
 
 Средство Microsoft Teams проверки приложений помогает выявлять и устранять проблемы перед отправкой в Центр партнеров. Средство автоматически проверяет конфигурации вашего приложения на фоне тех же тестовых случаев, используемых во время проверки в магазине.
 
@@ -36,6 +36,7 @@ ms.locfileid: "63356429"
 ## <a name="compile-testing-instructions"></a>Компиляляйте инструкции по тестированию
 
 Предоставление инструкций и ресурсов, которые помогут рецензентам протестировать ваше приложение, в том числе:
+
 * Тестовые учетные записи
 * Учетные данные
 * Ключи лицензии

@@ -4,12 +4,12 @@ description: Описание действий карточек в Microsoft Tea
 ms.localizationpriority: medium
 ms.topic: conceptual
 keywords: teams действия карточек боты
-ms.openlocfilehash: 9add163801cee511ccc636ab3abbb95c35b26590
-ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+ms.openlocfilehash: 756ff357947980ecf4a0c7c88c375c427e016d61
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62081060"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398605"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -27,6 +27,7 @@ ms.locfileid: "62081060"
 | `signin` | Инициирует поток OAuth, позволяя ботам подключаться к защищенным службам. |
 
 > [!NOTE]
+>
 >* Teams не поддерживает типы `CardAction`, не указанные в предыдущей таблице.
 >* Teams не поддерживает свойство `potentialActions`.
 >* Действия с карточками отличаются от [рекомендуемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в Bot Framework или службе Azure Bot. Рекомендуемые действия не поддерживаются в Microsoft Teams. Если вы хотите, чтобы в сообщении бота Teams появлялись кнопки, используйте карточку.
@@ -556,6 +557,7 @@ CardFactory.actions([
   }
 }
 ```
+
 ## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]

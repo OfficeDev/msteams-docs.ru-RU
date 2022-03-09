@@ -4,12 +4,12 @@ description: Описывает, как получить маркер польз
 keywords: маркер, маркер пользователя, поддержка SSO для ботов, разрешения, Microsoft Graph, Azure AD
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 16e57a6ffc95aa9814016d56b66721ec44b07308
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: a51b96cdb5d2b37f826f533dae58bed117b71700
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355904"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399368"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входного знака (SSO) для ботов
 
@@ -33,7 +33,6 @@ ms.locfileid: "63355904"
    > * Пользователь может иметь несколько активных конечных точек одновременно.
    > * Маркер бота получается от каждой активной конечной точки пользователя.
    > * Приложение должно быть установлено в личной области для поддержки единого входа.
-
 
 1. Если текущий пользователь впервые использует приложение-бот, пользователю появляется запрос на одно из следующих действий:
     * При необходимости предоставить согласие.
@@ -85,6 +84,7 @@ ms.locfileid: "63355904"
    > Чтобы обновить манифест приложения позже, сохраните значение **ID приложения (клиента** ).
 
    > [!IMPORTANT]
+   >
    > * Если вы строите автономный бот, введите URI приложения ID как `api://botid-{YourBotId}`. Здесь *YourBotId —* это ваш ID приложения Azure AD.
    > * Если вы создаете приложение с ботом и вкладкой, введите URI идентификатора приложения в качестве `api://fully-qualified-domain-name.com/botid-{YourBotId}`.
 
@@ -146,9 +146,9 @@ ms.locfileid: "63355904"
 1. Следующие действия помогут включить неявный грант:
     * Выберите **проверку подлинности** с левой области.
     * Выберите **контрольные ящики** маркеров Доступа и маркеров **ID** .
-    
+
     ![Поток грантов](~/assets/images/authentication/SSO-bots-auth/grant-flow.png)
-    
+
     * Выберите **Сохранить** , чтобы сохранить изменения.
 
 1. Добавление **необходимых разрешений API**.
@@ -163,7 +163,6 @@ ms.locfileid: "63355904"
 1. Убедитесь, что для элемента config **установлено "accessTokenAcceptedVersion": 2**. Если нет, измените значение на **2**.
 
     ![Манифест обновления](~/assets/images/bots/update-manifest.png)
-
 
    >[!NOTE]
    > Если вы уже тестируете бота в Teams, необходимо выйти из этого приложения и выйти из Teams. Затем снова впишитесь, чтобы увидеть это изменение.
@@ -197,7 +196,7 @@ ms.locfileid: "63355904"
     * Добавьте все **области, настроенные** при указании разрешений на API ниже по течению для приложения Azure AD. С помощью секрета client ID и Client магазин маркеров обменивается маркером для маркера графа с определенными разрешениями.
     * Выберите **Сохранить**.
     * Нажмите **Применить**.
-   
+
     ![Параметр подключения](~/assets/images/authentication/Bot-connection-setting.png)
 
 ### <a name="update-your-teams-application-manifest-for-your-bot"></a>Обновление манифеста Teams приложения для бота
@@ -211,6 +210,7 @@ ms.locfileid: "63355904"
             "resource": "api://botid-00000000-0000-0000-0000-000000000000"
         }
 ```
+
 Если приложение содержит бот и вкладку, используйте следующий код, чтобы добавить новые свойства в манифест Teams приложения:
 
 ```json
@@ -356,7 +356,6 @@ ms.locfileid: "63355904"
 
 6. Если у `TokenExchangeInvokeResponse` клиента есть `status` `200`, клиент не показывает карту OAuth. См. [изображение нормального потока](/azure/bot-service/bot-builder-concept-sso?view=azure-bot-service-4.0#sso-components-interaction&preserve-view=true). Для любого другого `status` или `TokenExchangeInvokeResponse` если не получено, клиент показывает пользователю карточку OAuth. См[. изображение потока отката.](/azure/bot-service/bot-builder-concept-sso?view=azure-bot-service-4.0#sso-components-interaction&preserve-view=true) Если есть какие-либо ошибки или недоставка зависимостей, таких как согласие пользователя, это действие гарантирует, что поток SSO возвращается к нормальному потоку OAuthCard.
 
-
 ### <a name="update-the-auth-sample"></a>Обновление примера auth
 
 Откройте [Teams пример auth,](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) а затем выполните следующие действия, чтобы обновить его:
@@ -379,7 +378,8 @@ ms.locfileid: "63355904"
 4. Zip манифест с изображениями профиля и установить его в Teams.
 
 ## <a name="code-sample"></a>Пример кода
-|**Название примера** | **Описание** |**.NET** | 
+
+|**Название примера** | **Описание** |**.NET** |
 |----------------|-----------------|--------------|
 |SDK для базы ботов | Пример для использования SDK-базы ботов. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|
 

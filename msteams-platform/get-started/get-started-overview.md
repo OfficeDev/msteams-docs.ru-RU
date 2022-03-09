@@ -4,12 +4,12 @@ description: Обзор начала работы с документацией 
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: e67ab472f28dc44dc23f892b36ddc78ff602d28d
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 32f6e94e7c1773812fbdca26106dbd319cc45262
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435840"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399004"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -44,20 +44,16 @@ ms.locfileid: "62435840"
 > [!NOTE]
 > Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams.
 
-
 ## <a name="build-your-first-teams-app"></a>Создайте свое первое приложение Teams
 
 Теперь давайте создадим ваше первое приложение Teams. Но сначала выберите язык (или платформу) и подготовьте среду разработки.
 
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью JavaScript с использованием React](../sbs-gs-javascript.yml)
-
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью SPFx](../sbs-gs-spfx.yml)
-
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью C# или .NET](../sbs-gs-csharp.yml)
-
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью Node.js](../sbs-gs-nodejs.yml)
 

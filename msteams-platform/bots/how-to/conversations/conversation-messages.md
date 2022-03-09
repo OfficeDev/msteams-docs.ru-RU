@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: c13482e886cc4e2207faa84ff01bbb60e93661a5
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 2078e63dfbc95071cec3ba620643bd9a8fddf723
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62517997"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399354"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -204,7 +204,7 @@ async def on_members_added_activity(
 Типичный `channelData` объект в действии, отправленного боту, содержит следующие сведения:
 
 * `eventType`: Teams тип события передается только в случаях событий [изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
-* `tenant.id`: Microsoft Azure Active Directory клиента Azure AD, переданный во всех контекстах.
+* `tenant.id`: Microsoft Azure Active Directory (Azure AD), переданный во всех контекстах.
 * `team`: Передается только в контекстах каналов, а не в личном чате.
   * `id`: GUID для канала.
   * `name`: Имя команды передается только в случаях [переименования событий команды](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
@@ -238,12 +238,12 @@ async def on_members_added_activity(
 
 Сообщения, полученные от или отправленные боту, могут включать различные типы контента сообщений.
 
-| Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
+| Формат    | От пользователя к боту | От бота к пользователю | примечания;                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот.                                                                                        |
 | Изображения  | ✔                | ✔                | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.  |
 | Карточки     | ✖                | ✔                | См. [ссылку Teams для](~/task-modules-and-cards/cards/cards-reference.md) поддерживаемых карт. |
-| Emojis    | ✔                | ✔                | Teams поддерживает смайлики через UTF-16, например U+1F600 для ухмыляясь. |
+| Emojis    | ✔                | ✔                | Teams поддерживает смайлики с помощью UTF-16, например U+1F600 для ухмыляясь. |
 
 ## <a name="notifications-to-your-message"></a>Уведомления о вашем сообщении
 
@@ -382,7 +382,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
     ![Сообщение об успехе](~/assets/images/Cards/success.PNG)
 
-Вы можете выбрать **закрыть** или переключить чат, чтобы отклонять сообщение.    
+Вы можете выбрать **закрыть** или переключить чат, чтобы отклонять сообщение.
 
 **Отклик на мобильный** телефон:
 
@@ -394,7 +394,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Ниже печатаются коды состояния и их код ошибок и значения сообщений:
 
-| Код состояния | Код ошибки и значения сообщений | Description |
+| Код состояния | Код ошибки и значения сообщений | Описание |
 |----------------|-----------------|-----------------|
 | 403 | **Код**: `ConversationBlockedByUser` <br/> **Сообщение**. Пользователь заблокировал беседу с ботом. | Пользователь заблокировал бот в чате 1:1 или канале с помощью параметров модерации. |
 | 403 | **Код**: `BotNotInConversationRoster` <br/> **Сообщение**. Бот не входит в реестр разговоров. | Бот не является частью беседы. |
@@ -409,7 +409,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

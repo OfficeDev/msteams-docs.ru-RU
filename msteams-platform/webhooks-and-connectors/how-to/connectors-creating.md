@@ -6,12 +6,12 @@ keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 880bede3a33d974c8424bdcaeb8e250bdc97edca
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 9914f721e155f01a05813441587d0d1ea71e09ae
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356100"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399200"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -37,12 +37,13 @@ ms.locfileid: "63356100"
 1. Пользователь выбирает **сохранить,** что вызывает вызов в коде.
 
     > [!NOTE]
+    >
     > * Код может обработать событие сохранения путем восстановления параметров веб-ок. Код хранит веб-сайт для публикации событий позже.
     > * Процесс настройки загружается в пределах Teams.
 
 Вы можете повторно использовать существующие возможности веб-конфигурации или создать отдельную версию, которая будет организована в Teams. Код должен включать Microsoft Teams JavaScript SDK. Это дает коду доступ к API для выполнения общих операций, таких как получение текущего контекста пользователя, канала или группы и начало потоков проверки подлинности.
 
-**Интеграция опытом конфигурации**
+Для интеграции опытом настройки:
 
 1. Инициализация SDK происходит путем вызова `microsoftTeams.initialize()`.
 1. Вызов, `microsoftTeams.settings.setValidityState(true)` чтобы включить **сохранение**.
@@ -143,9 +144,9 @@ ms.locfileid: "63356100"
 
 Код должен обрабатывать пользователей, которые возвращаются, чтобы изменить существующую конфигурацию соединитетеля. Для этого необходимо вызвать во `microsoftTeams.settings.setSettings()` время начальной конфигурации со следующими параметрами:
 
-- `entityId` это пользовательский ID, который представляет то, что пользователь настроил и понял в вашей службе.
-- `configName` это имя, которое код конфигурации может получить.
-- `contentUrl` это настраиваемый URL-адрес, загружаемый при редактировании существующей конфигурации соединителя.
+* `entityId` это пользовательский ID, который представляет то, что пользователь настроил и понял в вашей службе.
+* `configName` это имя, которое код конфигурации может получить.
+* `contentUrl` это настраиваемый URL-адрес, загружаемый при редактировании существующей конфигурации соединителя.
 
 Этот вызов выполнен в рамках обработки событий сохранения. Затем при загрузке `contentUrl` `getSettings()` кода необходимо вызвать для предварительного заполнения любых параметров или форм в пользовательском интерфейсе конфигурации.
 
@@ -218,7 +219,7 @@ ms.locfileid: "63356100"
 * Отключение соединители для клиента: `Set-OrganizationConfig -ConnectorsEnabled:$false`.
 * Отключение действий для клиента: `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$false`.
 * Чтобы включить соединители для Teams, запустите следующие команды:
-  * `Set-OrganizationConfig -ConnectorsEnabled:$true `
+  * `Set-OrganizationConfig -ConnectorsEnabled:$true`
   * `Set-OrganizationConfig -ConnectorsEnabledForTeams:$true`
   * `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$true`
 
@@ -243,7 +244,7 @@ ms.locfileid: "63356100"
 
 После отправки пакета приложений для настройки и использования соединителя в команде установите соединители из каталога приложений организации.
 
-**Настройка соединитетеля**
+Настройка соединитетеля:
 
 1. Выберите **Приложения** из левой панели навигации.
 1. В разделе **Приложения** выберите **соединители**.
@@ -269,8 +270,8 @@ ms.locfileid: "63356100"
 
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Connectors    | Пример Office 365 соединители, генерирующие уведомления для Teams канала.|   [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
-| Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.|  | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
+| Connectors | Пример Office 365 соединители, генерирующие уведомления для Teams канала.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
+| Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.| | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

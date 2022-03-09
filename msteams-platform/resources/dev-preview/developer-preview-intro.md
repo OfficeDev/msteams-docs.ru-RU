@@ -4,12 +4,12 @@ description: Описывает возможности общедоступно�
 ms.topic: conceptual
 ms.localizationpriority: high
 keywords: возможности предварительной версии Teams для разработчиков
-ms.openlocfilehash: ee367daaf1570e75a5da7518cc2b0e27704741c4
-ms.sourcegitcommit: 9e448dcdfd78f4278e9600808228e8158d830ef7
+ms.openlocfilehash: b953d26f517382b06d9d06d7aeac89e83137023b
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2022
-ms.locfileid: "62059795"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398696"
 ---
 # <a name="public-developer-preview-for-microsoft-teams"></a>Общедоступная предварительная версия для разработчиков для Microsoft Teams
 

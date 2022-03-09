@@ -5,12 +5,12 @@ ms.topic: overview
 ms.localizationpriority: medium
 keywords: teams bots messages
 ms.date: 05/20/2019
-ms.openlocfilehash: ce3d3d1dd39707d08c720e75c67ec61b606f676a
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 0f77606b0fcc73e2bb68fc08e964662fdcba4df7
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518501"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399221"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с Microsoft Teams ботом
 
@@ -49,24 +49,24 @@ ms.locfileid: "62518501"
 
 ## <a name="message-content"></a>Содержимое сообщения
 
-Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот. Вы можете указать тип контента, который бот может обрабатывать на странице Microsoft Teams параметров для вашего бота.
+Бот может отправлять богатый текст, изображения и карточки. Пользователи могут отправлять богатый текст и изображения в бот. Вы можете указать тип контента, который бот может обрабатывать на странице Microsoft Teams параметров для бота.
 
-| Формат | От пользователя к боту  | От бота к пользователю |  Примечания |
+| Формат | От пользователя к боту  | От бота к пользователю |  примечания; |
 | --- | :---: | :---: | --- |
 | Форматированный текст  | ✔ | ✔ |  |
-| Изображения | ✔ | ✔ | Максимальный размер 1024×1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF не поддерживается. |
+| Изображения | ✔ | ✔ | Максимальная 1024×1024 и 1 МБ в формате PNG, JPEG или GIF; анимированный GIF не поддерживается. |
 | Карточки | ✖ | ✔ | См. [Teams ссылку на](~/task-modules-and-cards/cards/cards-reference.md) поддерживаемые карты. |
 | Emojis | ✖ | ✔ | Teams поддерживает смайлики с помощью UTF-16, например U+1F600 для ухмыляясь. |
 |
 
-Дополнительные сведения о типах взаимодействия ботов, поддерживаемых bot Framework, на основе которых основаны боты в командах, см. в документации [](/azure/bot-service/dotnet/bot-builder-dotnet-manage-conversation-flow?view=azure-bot-service-3.0&preserve-view=true) Bot Framework о потоке бесед и связанных понятиях в документации для bot [Builder SDK для .NET](/azure/bot-service/dotnet/bot-builder-dotnet-overview?view=azure-bot-service-3.0&preserve-view=true) и bot [Builder SDK для Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-overview?view=azure-bot-service-3.0&preserve-view=true).
+Дополнительные сведения о типах взаимодействия ботов, поддерживаемых Bot Framework, на основе которых основаны боты в командах, см. в документации [](/azure/bot-service/dotnet/bot-builder-dotnet-manage-conversation-flow?view=azure-bot-service-3.0&preserve-view=true) Bot Framework по потоку бесед и связанным понятиям в документации для bot [Builder SDK для .NET](/azure/bot-service/dotnet/bot-builder-dotnet-overview?view=azure-bot-service-3.0&preserve-view=true) и [SDK bot Builder для Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-overview?view=azure-bot-service-3.0&preserve-view=true).
 
 ## <a name="message-formatting"></a>Форматирование сообщения
 
 Вы можете установить необязательное [`TextFormat`](/azure/bot-service/dotnet/bot-builder-dotnet-create-messages?view=azure-bot-service-3.0#customizing-a-message&preserve-view=true) свойство a `message` для управления тем, как отрисовка текстового контента сообщения. [Подробное описание](~/resources/bot-v3/bots-message-format.md) поддерживаемого форматирования сообщений в сообщениях ботов см. в тексте форматирования сообщений.
 Вы можете настроить необязательный [`TextFormat`](/azure/bot-service/dotnet/bot-builder-dotnet-create-messages?view=azure-bot-service-3.0#customizing-a-message&preserve-view=true) свойство для управления тем, как отрисовка текстового контента сообщения.
 
-Подробные сведения о том, Teams поддерживает форматирование текста в командах, см. в текстовом [формате в сообщениях ботов](~/resources/bot-v3/bots-text-formats.md).
+Подробные сведения о том, Teams поддерживает форматирование текста в командах, см. в текстовом [формате в бот-сообщениях](~/resources/bot-v3/bots-text-formats.md).
 
 Дополнительные сведения о форматирования карт в сообщениях см. в [сообщении.](~/task-modules-and-cards/cards/cards-format.md)
 
@@ -86,11 +86,11 @@ ms.locfileid: "62518501"
 В зависимости от объявленных областей бот может получать сообщения в следующих контекстах:
 
 * **личный чат** Пользователи могут взаимодействовать в личной беседе с ботом, просто выбрав добавленный бот в истории чата или введя его имя или имя приложения в поле To: box в новом чате.
-* **Каналы** Бот может быть упомянут ("@_botname_") в канале, если он был добавлен в команду. Обратите внимание, что дополнительные ответы на бота в канале требуют упоминания бота. Он не будет отвечать на ответы, в которых он не упоминается.
+* **Каналы** Бот может быть упомянут ("@*botname*") в канале, если он был добавлен в команду. Обратите внимание, что дополнительные ответы на бота в канале требуют упоминания бота. Он не будет отвечать на ответы, в которых он не упоминается.
 
 Для входящих сообщений бот получает объект [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true) типа `messageType: message`. Несмотря на `Activity` то, что объект может содержать другие типы информации[](~/resources/bot-v3/bots-notifications.md#channel-updates), например обновления каналов, отправленные в бот, `message` этот тип представляет связь между ботом и пользователем.
 
-Бот получает полезное сообщение `Text` пользователя, а также другие сведения о пользователе, источнике сообщения и Teams. Примечание:
+Бот получает полезное `Text` сообщение пользователя, а также другие сведения о пользователе, источнике сообщения и Teams информации. Примечание:
 
 * `timestamp` Дата и время сообщения в координируется универсальное время (UTC).
 * `localTimestamp` Дата и время сообщения в часовом поясе отправитель.
@@ -200,7 +200,7 @@ string tenantId = channelData.Tenant.Id;
 
 ## <a name="sending-replies-to-messages"></a>Отправка ответов на сообщения
 
-Чтобы ответить на существующее сообщение, позвоните [`ReplyToActivity`](/dotnet/api/microsoft.bot.connector.conversationsextensions.replytoactivityasync?view=botbuilder-dotnet-3.0#Microsoft_Bot_Connector_ConversationsExtensions_ReplyToActivityAsync_Microsoft_Bot_Connector_IConversations_System_String_System_String_Microsoft_Bot_Connector_Activity_System_Threading_CancellationToken_&preserve-view=true) в .NET [`session.send`](/javascript/api/botbuilder-core/TurnContext?view=botbuilder-ts-latest&viewFallbackFrom=botbuilder-ts-3.0#sendactivities&preserve-view=true) или Node.js. SDK Bot Builder обрабатывает все сведения.
+Чтобы ответить на существующее сообщение, позвоните [`ReplyToActivity`](/dotnet/api/microsoft.bot.connector.conversationsextensions.replytoactivityasync?view=botbuilder-dotnet-3.0#Microsoft_Bot_Connector_ConversationsExtensions_ReplyToActivityAsync_Microsoft_Bot_Connector_IConversations_System_String_System_String_Microsoft_Bot_Connector_Activity_System_Threading_CancellationToken_&preserve-view=true) в .NET [`session.send`](/javascript/api/botbuilder-core/TurnContext?view=botbuilder-ts-latest&viewFallbackFrom=botbuilder-ts-3.0#sendactivities&preserve-view=true) или в Node.js. SDK Bot Builder обрабатывает все сведения.
 
 Если вы решите использовать API REST, вы также можете вызвать конечную [`/v3/conversations/{conversationId}/activities/{activityId}`](/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?view=azure-bot-service-3.0&preserve-view=true) точку.
 

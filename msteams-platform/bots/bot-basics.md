@@ -6,32 +6,32 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: Событие канала согласия на согласие бот-карты обработить обработник действий
-ms.openlocfilehash: af6823a0a1395c5f33af9d914c3199d76854a050
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 5094ce68aae25cb4c22c3b0b3b3b3d39e565e4ab
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435798"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398647"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 
-Этот документ строится на статье о работе [ботов в](https://aka.ms/how-bots-work) основной документации [Bot Framework](https://aka.ms/azure-bot-service-docs). Основное различие между ботами, разработанными для Microsoft Teams и основной инфраструктурой ботов, заключается в функции, предоставляемые в Teams.
+Этот документ строится на статье о работе [ботов в](https://aka.ms/how-bots-work) основной документации [Bot Framework](https://aka.ms/azure-bot-service-docs). Основное различие между ботами, разработанными для Microsoft Teams и основной инфраструктурой ботов, заключается в свойствах, предоставляемых в Teams.
 
-Для организации разговорной логики для бота используется обработок действий. Действия обрабатываются двумя способами с помощью обработчиков Teams действий и логики ботов. Обработник Teams добавляет поддержку для Microsoft Teams событий и взаимодействий. Объект бота содержит разговорное рассуждение или логику поворота и предоставляет обработщик поворота, который является методом, который может принимать входящие действия из адаптер бота.
+Для организации разговорной логики для бота используется обработок действий. Действия обрабатываются двумя способами с Teams обработчиками действий и логикой ботов. Обработник Teams добавляет поддержку для Microsoft Teams событий и взаимодействий. Объект бота содержит разговорное рассуждение или логику поворота и предоставляет обработщик поворота, который является методом, который может принимать входящие действия из адаптер бота.
 
 ## <a name="teams-activity-handlers"></a>Teams обработчики действий
 
-Teams обработок действий получен Microsoft Bot Framework обработить действия Microsoft Bot Framework. Он передает все Teams, прежде чем разрешить обработку Teams определенных действий.
+Teams обработка действий получена Microsoft Bot Framework обработить действия Microsoft Bot Framework. Он передает все Teams, прежде чем разрешить обработку Teams определенных действий.
 
-Когда бот для Teams получает действие, он передается обработчику действий. Все действия проходят через один базовый обработатель, называемый обработивель поворота. Обработник поворота вызывает обработник необходимых действий для управления любыми полученными действиями. Бот Teams происходит из `TeamsActivityHandler` класса, который является производным от класса `ActivityHandler` Bot Framework.
+Когда бот для Teams получает действие, он передается обработчику действий. Все действия проходят через один базовый обработатель, называемый обработивель поворота. Обработник поворота вызывает обработник необходимых действий для управления любыми полученными действиями. Бот Teams является производным от `TeamsActivityHandler` класса, который получен из класса `ActivityHandler` Bot Framework.
 
 # <a name="c"></a>[C#](#tab/csharp)
 
-Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет `OnMessageActivityAsync` входящие действия обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `OnConversationUpdateActivityAsync`в . Обработ Teams действий сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
+Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет `OnMessageActivityAsync` входящие действия обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `OnConversationUpdateActivityAsync`в . Обработник Teams сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
 
 В классе обработчиков Teams действий есть два основных обработчиков Teams действий и `OnConversationUpdateActivityAsync` `OnInvokeActivityAsync`. `OnConversationUpdateActivityAsync`маршруты всех действий обновления беседы `OnInvokeActivityAsync` и маршруты всех Teams вызывают действия.
 
-Чтобы реализовать логику Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Для этих обработчиков не существует базовой реализации, поэтому в переопределяемой логике необходимо добавить логику.
+Чтобы реализовать логику для Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Для этих обработчиков не существует базовой реализации, поэтому в переопределяемой логике необходимо добавить логику.
 
 Фрагменты кода для обработчиков Teams действий:
 
@@ -60,9 +60,9 @@ protected override Task OnTeamsChannelDeletedAsync(ChannelInfo channelInfo, Team
 ```csharp
 
 protected override Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
-        {
-            // Code logic here
-        }
+  {
+   // Code logic here
+  }
 ```
 
 `OnTeamsTeamRenamedAsync`
@@ -70,9 +70,9 @@ protected override Task OnTeamsChannelRenamedAsync(ChannelInfo channelInfo, Team
 ```csharp
 
 protected override Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
-        {
-            // Code logic here
-        }
+  {
+   // Code logic here
+  }
 ```
 
 `OnTeamsMembersAddedAsync`
@@ -80,9 +80,9 @@ protected override Task OnTeamsTeamRenamedAsync(TeamInfo teamInfo, ITurnContext<
 ```csharp
 
 protected override Task OnTeamsMembersAddedAsync(IList<TeamsChannelAccount> teamsMembersAdded, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
-        {
-            // Code logic here
-        }
+  {
+   // Code logic here
+  }
 ```
 
 `OnTeamsMembersRemovedAsync`
@@ -90,18 +90,18 @@ protected override Task OnTeamsMembersAddedAsync(IList<TeamsChannelAccount> team
 ```csharp
 
 protected override Task OnTeamsMembersRemovedAsync(IList<TeamsChannelAccount> teamsMembersRemoved, TeamInfo teamInfo, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken);
-        {
-            // Code logic here
-        }
+  {
+   // Code logic here
+  }
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
-Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет `onMessage` входящие действия обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `dispatchConversationUpdateActivity`в . Обработ Teams действий сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
+Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет `onMessage` входящие действия обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `dispatchConversationUpdateActivity`в . Обработник Teams сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
 
 В классе обработчиков Teams действий есть два основных обработчиков Teams действий и `dispatchConversationUpdateActivity` `onInvokeActivity`. `dispatchConversationUpdateActivity`маршруты всех действий обновления беседы `onInvokeActivity` и маршруты всех Teams вызывают действия.
 
-Чтобы реализовать логику Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Определите логику бота для этих обработчиков, а затем обязательно позвоните `next()` в конце. Позвонив `next()` , убедитесь, что следующий обработок выполняется.
+Чтобы реализовать логику для Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Определите логику бота для этих обработчиков, а затем обязательно позвоните `next()` в конце. Позвонив `next()` , убедитесь, что следующий обработок выполняется.
 
 Фрагменты кода для обработчиков Teams действий:
 
@@ -151,7 +151,7 @@ onTeamsTeamRenamedAsync(async (teamInfo, context, next) => {
 
 onTeamsMembersAdded(async (membersAdded, teamInfo, context, next) => {
        // code for handling
-       await next();
+    await next();
     });
 ```
 
@@ -161,23 +161,23 @@ onTeamsMembersAdded(async (membersAdded, teamInfo, context, next) => {
 
 onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
        // code for handling
-       await next();
+    await next();
     });
 ```
 
 # <a name="python"></a>[Python](#tab/python)
 
-Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет `on_message_activity` входящие действия обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `on_conversation_update_activity`в . Обработ Teams действий сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
+Боты создаются с помощью bot Framework. Если боты получают сообщение, обработник поворота получает уведомление о входящих действиях. Обработитель поворота отправляет `on_message_activity` входящие действия обработнику действий. В Teams эта функция остается той же. Если бот получает действие обновления беседы, обработитель поворота получает уведомление о входящих действиях и отправляет входящие действия `on_conversation_update_activity`в . Обработник Teams сначала проверяет все Teams события. Если события не найдены, он передает их обработнику действий Bot Framework.
 
 В классе обработчиков Teams действий есть два основных обработчиков Teams действий и `on_conversation_update_activity` `on_invoke_activity`. `on_conversation_update_activity`маршруты всех действий обновления беседы `on_invoke_activity` и маршруты всех Teams вызывают действия.
 
-Чтобы реализовать логику Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Для этих обработчиков не существует базовой реализации, поэтому в переопределяемой логике необходимо добавить логику.
+Чтобы реализовать логику для Teams обработчиков действий, необходимо переопредить методы в боте, как показано в разделе [логика](#bot-logic) бота. Для этих обработчиков не существует базовой реализации, поэтому в переопределяемой логике необходимо добавить логику.
 
 ---
 
 ## <a name="bot-logic"></a>Логика бота
 
-Логика бота обрабатывает входящие действия из одного или более каналов бота и в ответ создает исходящую деятельность. Это по-прежнему относится к ботам, полученным Teams обработить действия, которые сначала проверяют Teams действий. После проверки Teams действий он передает все другие действия обработивею действий Bot Framework.
+Логика бота обрабатывает входящие действия из одного или более каналов бота и в ответ создает исходящую деятельность. Это по-прежнему относится к ботам, полученным из класса обработ Teams действий, который сначала проверяет Teams действий. После проверки Teams действий он передает все другие действия обработиму действий Bot Framework.
 
 # <a name="c"></a>[C#](#tab/csharp)
 
@@ -211,13 +211,13 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 | channelCreated | `OnTeamsChannelCreatedAsync` | Этот метод может быть переопределен для обработки создаемого Teams канала. Дополнительные сведения см. в [канале, созданном в](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-created) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
 | channelDeleted | `OnTeamsChannelDeletedAsync` | Этот метод может быть переопределен для обработки удаленного Teams канала. Дополнительные сведения см. в [ссылке на канал, удаленный в](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-deleted) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | ChannelRenamed | `OnTeamsChannelRenamedAsync` | Этот метод может быть переопределен для обработки Teams переименования канала. Дополнительные сведения см. в [ссылке на канал, переименованный](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-renamed) в [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
-| переименованная команда | `OnTeamsTeamRenamedAsync` | `return Task.CompletedTask;`Этот метод может быть переопределен для обработки Teams переименованной группы. Дополнительные сведения см. в [группе, переименованной в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-renamed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
+| переименованная команда | `OnTeamsTeamRenamedAsync` | `return Task.CompletedTask;`Этот метод может быть переопределен для обработки Teams переименовываться. Дополнительные сведения см. в [группе, переименованной в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-renamed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | MembersAdded | `OnTeamsMembersAddedAsync` | Этот метод вызывает метод `OnMembersAddedAsync` в `ActivityHandler`. Метод может быть переопределен для обработки участников, присоединявшихся к команде. Дополнительные сведения см. в [дополнительных сведениях, добавленных участниками группы](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-members-added) в [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | MembersRemoved | `OnTeamsMembersRemovedAsync` | Этот метод вызывает метод `OnMembersRemovedAsync` в `ActivityHandler`. Метод может быть переопределен для обработки участников, покидая команду. Дополнительные сведения см. в [дополнительных сведениях о членах группы, удаленых в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-members-removed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 
-#### <a name="teams-invoke-activities"></a>Teams действия
+#### <a name="teams-invoke-activities"></a>Teams вызов действий
 
-Список обработчиков Teams, `OnInvokeActivityAsync` которые вызваны из обработчика Teams действий, включает следующие:
+Список обработчиков Teams действий `OnInvokeActivityAsync` , которые Teams обработчиком действий, включает следующие:
 
 | Типы ссылок                    | Обработник                              | Описание                                                  |
 | :-----------------------------  | :----------------------------------- | :----------------------------------------------------------- |
@@ -225,7 +225,7 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 | fileConsent/invoke              | `OnTeamsFileConsentAcceptAsync`      | Этот метод вызывается при приеме пользователем карточки согласия на файл. |
 | fileConsent/invoke              | `OnTeamsFileConsentAsync`            | Этот метод вызывается, когда действие карточки согласия на файл получается из соединитетеля. |
 | fileConsent/invoke              | `OnTeamsFileConsentDeclineAsync`     | Этот метод вызывается при отклонении пользователем карточки согласия на файл. |
-| actionableMessage/executeAction | `OnTeamsO365ConnectorCardActionAsync` | Этот метод вызывается при Office 365 действия карты соединиттеля, полученной из соединитетеля. |
+| actionableMessage/executeAction | `OnTeamsO365ConnectorCardActionAsync` | Этот метод вызывается при Office 365 действия карты соединиттеля, полученного из соединитетеля. |
 | signin/verifyState              | `OnTeamsSigninVerifyStateAsync`      | Этот метод вызывается при проверке действия signIn состояния, полученного из соединитетеля. |
 | task/fetch                      | `OnTeamsTaskModuleFetchAsync`        | Этот метод может быть переопределен в производных классах, чтобы обеспечить логику при извлечении модуля задач. |
 | task/submit                     | `OnTeamsTaskModuleSubmitAsync`       | Этот метод может быть переопределен в производных классах, чтобы обеспечить логику при отправке модуля задач. |
@@ -263,13 +263,13 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 | channelCreated | `OnTeamsChannelCreatedAsync` | Этот метод может быть переопределен для обработки создаемого Teams канала. Дополнительные сведения см. в [канале, созданном в](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-created) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
 | channelDeleted | `OnTeamsChannelDeletedAsync` | Этот метод может быть переопределен для обработки удаленного Teams канала. Дополнительные сведения см. в [ссылке на канал, удаленный в](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-deleted) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | ChannelRenamed | `OnTeamsChannelRenamedAsync` | Этот метод может быть переопределен для обработки Teams переименования канала. Дополнительные сведения см. в [ссылке на канал, переименованный](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-renamed) в [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
-| переименованная команда | `OnTeamsTeamRenamedAsync` | `return Task.CompletedTask;`Этот метод может быть переопределен для обработки Teams переименованной группы. Дополнительные сведения см. в [группе, переименованной в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-renamed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
+| переименованная команда | `OnTeamsTeamRenamedAsync` | `return Task.CompletedTask;`Этот метод может быть переопределен для обработки Teams переименовываться. Дополнительные сведения см. в [группе, переименованной в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-renamed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
 | MembersAdded | `OnTeamsMembersAddedAsync` | Этот метод вызывает метод `OnMembersAddedAsync` в `ActivityHandler`. Метод может быть переопределен для обработки участников, присоединявшихся к команде. Дополнительные сведения см. в [дополнительных сведениях, добавленных участниками группы](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-members-added) в [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
 | MembersRemoved | `OnTeamsMembersRemovedAsync` | Этот метод вызывает метод `OnMembersRemovedAsync` в `ActivityHandler`. Метод может быть переопределен для обработки участников, покидая команду. Дополнительные сведения см. в [дополнительных сведениях о членах группы, удаленых в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-members-removed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
 
-#### <a name="teams-invoke-activities"></a>Teams действия
+#### <a name="teams-invoke-activities"></a>Teams вызов действий
 
-Список обработчиков Teams, `onInvokeActivity` которые вызваны из обработчика Teams действий, включает следующие:
+Список обработчиков Teams действий `onInvokeActivity` , которые Teams обработчиком действий, включает следующие:
 
 | Типы ссылок                    | Обработник                              | Описание                                                  |
 | :-----------------------------  | :----------------------------------- | :----------------------------------------------------------- |
@@ -277,7 +277,7 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 | fileConsent/invoke              | `handleTeamsFileConsentAccept`      | Этот метод вызывается при приеме пользователем карточки согласия на файл. |
 | fileConsent/invoke              | `handleTeamsFileConsent`            | Этот метод вызывается, когда действие карточки согласия на файл получается из соединитетеля. |
 | fileConsent/invoke              | `handleTeamsFileConsentDecline`     | Этот метод вызывается при отклонении пользователем карточки согласия на файл. |
-| actionableMessage/executeAction | `handleTeamsO365ConnectorCardAction` | Этот метод вызывается при Office 365 действия карты соединиттеля, полученной из соединитетеля. |
+| actionableMessage/executeAction | `handleTeamsO365ConnectorCardAction` | Этот метод вызывается при Office 365 действия карты соединиттеля, полученного из соединитетеля. |
 | signin/verifyState              | `handleTeamsSigninVerifyState`      | Этот метод вызывается при проверке действия signIn состояния, полученного из соединитетеля. |
 | task/fetch                      | `handleTeamsTaskModuleFetch`        | Этот метод может быть переопределен в производных классах, чтобы обеспечить логику при извлечении модуля задач. |
 | task/submit                     | `handleTeamsTaskModuleSubmit`       | Этот метод может быть переопределен в производных классах, чтобы обеспечить логику при отправке модуля задач. |
@@ -316,13 +316,13 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 | channelCreated | `on_teams_channel_created` | Этот метод может быть переопределен для обработки создаемого Teams канала. Дополнительные сведения см. в [канале, созданном в](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-created) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events). |
 | channelDeleted | `on_teams_channel_deleted` | Этот метод может быть переопределен для обработки удаленного Teams канала. Дополнительные сведения см. в [ссылке на канал, удаленный в](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-deleted) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | ChannelRenamed | `on_teams_channel_renamed` | Этот метод может быть переопределен для обработки Teams переименования канала. Дополнительные сведения см. в [ссылке на канал, переименованный](https://aka.ms/azure-bot-subscribe-to-conversation-events#channel-renamed) в [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
-| переименованная команда | `on_teams_team_renamed` | `return Task.CompletedTask;`Этот метод может быть переопределен для обработки Teams переименованной группы. Дополнительные сведения см. в [группе, переименованной в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-renamed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
+| переименованная команда | `on_teams_team_renamed` | `return Task.CompletedTask;`Этот метод может быть переопределен для обработки Teams переименовываться. Дополнительные сведения см. в [группе, переименованной в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-renamed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | MembersAdded | `on_teams_members_added` | Этот метод вызывает метод `OnMembersAddedAsync` в `ActivityHandler`. Метод может быть переопределен для обработки участников, присоединявшихся к команде. Дополнительные сведения см. в [дополнительных сведениях, добавленных участниками группы](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-members-added) в [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 | MembersRemoved | `on_teams_members_removed` | Этот метод вызывает метод `OnMembersRemovedAsync` в `ActivityHandler`. Метод может быть переопределен для обработки участников, покидая команду. Дополнительные сведения см. в [дополнительных сведениях о членах группы, удаленых в](https://aka.ms/azure-bot-subscribe-to-conversation-events#team-members-removed) [событиях обновления беседы](https://aka.ms/azure-bot-subscribe-to-conversation-events).|
 
-#### <a name="teams-invoke-activities"></a>Teams действия
+#### <a name="teams-invoke-activities"></a>Teams вызов действий
 
-Список обработчиков Teams, `on_invoke_activity` которые вызваны из обработчика Teams действий, включает следующие:
+Список обработчиков Teams действий `on_invoke_activity` , которые Teams обработчиком действий, включает следующие:
 
 | Типы ссылок                    | Обработник                              | Описание                                                  |
 | :-----------------------------  | :----------------------------------- | :----------------------------------------------------------- |
@@ -330,7 +330,7 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 | fileConsent/invoke              | `on_teams_file_consent_accept`      | Этот метод вызывается при приеме пользователем карточки согласия на файл. |
 | fileConsent/invoke              | `on_teams_file_consent`            | Этот метод вызывается, когда действие карточки согласия на файл получается из соединитетеля. |
 | fileConsent/invoke              | `on_teams_file_consent_decline`     | Этот метод вызывается при отклонении пользователем карточки согласия на файл. |
-| actionableMessage/executeAction | `on_teams_o365_connector_card_action` | Этот метод вызывается при Office 365 действия карты соединиттеля, полученной из соединитетеля. |
+| actionableMessage/executeAction | `on_teams_o365_connector_card_action` | Этот метод вызывается при Office 365 действия карты соединиттеля, полученного из соединитетеля. |
 | signin/verifyState              | `on_teams_signin_verify_state`      | Этот метод вызывается при проверке действия signIn состояния, полученного из соединитетеля. |
 | task/fetch                      | `on_teams_task_module_fetch`        | Этот метод может быть переопределен в производных классах, чтобы обеспечить логику при извлечении модуля задач. |
 | task/submit                     | `on_teams_task_module_submit`       | Этот метод может быть переопределен в производных классах, чтобы обеспечить логику при отправке модуля задач. |
@@ -339,7 +339,7 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 
 ---
 
-* * *
+---
 
 Теперь, когда вы ознакомились с обработчиками действий ботов, давайте посмотрим, как боты ведут себя по-разному в зависимости от беседы и сообщений, которые они получают или отправляют.
 

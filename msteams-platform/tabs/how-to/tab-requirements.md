@@ -6,16 +6,16 @@ keywords: команды вкладки группового канала нас
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 31910fa5e8cd7e4d4f1045b8c05d94a336d07726
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: eeb83f6bdd335c4d536f18915cff8b04a85761a5
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435141"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399193"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
-Teams должны придерживаться следующих обязательных условий:
+Teams вкладки должны придерживаться следующих обязательных условий:
 
 * Необходимо разрешить показывать страницы вкладок в iFrame с помощью заглавных заглавных ответов X-Frame-Options и Content-Security-Policy HTTP.
   * Установите заглавную: `Content-Security-Policy: frame-ancestors teams.microsoft.com *.teams.microsoft.com *.skype.com`
@@ -40,8 +40,9 @@ Teams должны придерживаться следующих обязат�
 * Вкладка MS Teams не поддерживает возможность загрузки веб-сайтов интрасети, которые используют самозаверяемые сертификаты.
 
 ## <a name="tools-you-can-use-to-build-tabs"></a>Инструменты для создания вкладок
-* [Teams набор средств для Microsoft Visual Studio кода](../../toolkit/visual-studio-code-overview.md)
-* [Наборы средств Teams для Visual Studio](../../toolkit/visual-studio-overview.md)
+
+* [Набор средств Teams для Microsoft Visual Studio Code](../../toolkit/visual-studio-code-overview.md)
+* [Набор средств Teams для Visual Studio](../../toolkit/visual-studio-overview.md)
 
 ## <a name="next-step"></a>Следующий этап
 

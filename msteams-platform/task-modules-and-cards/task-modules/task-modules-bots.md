@@ -4,15 +4,15 @@ description: Использование модулей задач с Microsoft T
 ms.localizationpriority: medium
 ms.topic: how-to
 keywords: группы групп задач боты глубоких ссылок адаптивной карты
-ms.openlocfilehash: 39df7f3845cc11e6e15da03c72b0c792a795af35
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 932bcaf858d0788a773b417647a92d2f52e9e45b
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355722"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399053"
 ---
 # <a name="use-task-modules-from-bots"></a>Использование модулей задач из ботов
- 
+
 Модули задач можно вызывать из Microsoft Teams с помощью кнопок на картах Adaptive Cards и Bot Framework, которые является героем, эскизом и Office 365 соединителю. Модули задач часто являются более удобными для пользователей, чем несколько этапов беседы. Отслеживайте состояние бота и разрешите пользователю прерывать или отменять последовательность.
 
 Существует два способа ссылки на модули задач:
