@@ -5,17 +5,27 @@ description: описывается создание исходящего веб
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-keywords: teams вкладки исходящий веб-перехватчик сообщение с действиями проверка веб-перехватчика
-ms.openlocfilehash: 816a09a85af0e47f1dea5da6a4c02608c986573e
-ms.sourcegitcommit: abe5ccd61ba3e8eddc1bec01752fd949a7ba0cc2
+keywords: Teams вкладки исходящий веб-перехватчик сообщение с действиями проверка веб-перехватчика
+ms.openlocfilehash: 2b77118e76bfde8c0fac7c74fce4dab1d78c7dd5
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281765"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63356296"
 ---
 # <a name="create-outgoing-webhook"></a>Создание исходящего веб-перехватчика
 
 Исходящий веб-перехватчик действует как бот и ищет сообщения в каналах с помощью **@упоминания**. Он отправляет уведомления внешним веб-службам и отвечает с помощью информативных сообщений, включающих карточки и изображения. Это помогает пропустить процесс создания ботов с помощью [Microsoft Bot Framework](https://dev.botframework.com/).
+
+<!--- TBD: Edit this article.
+* Admonitions/alerts may be overused in this article. Check once.
+* An important alert at the end of this table does not make sense. Also, it has a code snippet inside it.
+* Some screenshots like teamschannel.png may be redundant. Check once.
+* Some headings use title case. We use sentence case for titles.
+* Check for markdownlint errors. 
+* Try using &nbsp; to add spaces in codeblocks for indentation and remove the hard tabs.
+* Table with just a row is not really needed. Provide the content without tabulating it.
+--->
 
 ## <a name="key-features-of-outgoing-webhook"></a>Основные функции исходящего веб-перехватчика
 
@@ -32,13 +42,13 @@ ms.locfileid: "62281765"
 
 Создание исходящих веб-перехватчиков и добавление пользовательских ботов в Teams.
 
-**Создание исходящего веб-перехватчика**
+Чтобы создать исходящий веб-перехватчик, выполните следующие действия.
 
 1. Выберите **Teams** в левой области. Появится страница **Teams**.
 
     ![Канал Teams ](~/assets/images/teamschannel.png)
 
-1. На странице **Teams** выберите нужную команду, чтобы создать исходящий веб-перехватчик и выберите &#8226;&#8226;&#8226;. В раскрывающемся меню выберите пункт **Управление командой**.
+1. На странице **Teams** выберите нужную команду, чтобы создать исходящий веб-перехватчик и выберите &#8226;&#8226;&#8226;. В раскрывающемся меню выберите **Управление командой**.
 
     ![Создание исходящего веб-перехватчика](~/assets/images/outgoingwebhook1.png)
 
@@ -72,6 +82,7 @@ ms.locfileid: "62281765"
 * Пример: у вас есть бизнес-приложение, которое отслеживает все операции создания, чтения, обновления и удаления (CRUD). Эти операции с записями сотрудников выполняются пользователями канала Teams из отдела кадров в области клиента Office 365.
 
 # <a name="url-json-payload"></a>[Полезная нагрузка URL в JSON](#tab/urljsonpayload)
+
 **Создайте URL-адрес на сервере приложения, чтобы принять и обработать POST-запрос с помощью полезной нагрузки JSON**
 
 Ваша служба получает сообщения в стандартной схеме обмена сообщениями службы Azure Bot. Соединитель Bot Framework — это служба RESTful, которая позволяет обрабатывать обмен сообщениями в формате JSON с помощью протоколов HTTPS, как описано в [API службы Azure Bot](/bot-framework/rest-api/bot-framework-rest-connector-api-reference). Кроме того, вы можете использовать пакет SDK Microsoft Bot Framework для обработки и анализа сообщений. Дополнительные сведения см. в разделе с [обзором службы Azure Bot](/azure/bot-service/bot-service-overview-introduction).
@@ -79,6 +90,7 @@ ms.locfileid: "62281765"
 Исходящие веб-перехватчики имеют область действия на уровне `team` и видны всем участникам команды. Пользователям необходимо **\@упомянуть** имя исходящего веб-перехватчика для его вызова в канал.
 
 # <a name="verify-hmac-token"></a>[Проверка маркера HMAC](#tab/verifyhmactoken)
+
 **Создание метода проверки токена HMAC исходящего веб-перехватчика**
 
 Использование примера входящие сообщения и идентификатора: "contoso" из SigningKeyDictionary из {"contoso", "vqF0En+Z0ucuRTM/01o2GuhMH3hKKk/N2bOmlM31zaA=" }.
@@ -89,12 +101,13 @@ ms.locfileid: "62281765"
 
 Код всегда должен проверять подпись HMAC, включенную в запрос, следующим образом.
 
-* Создание маркера HMAC из текста запроса сообщения. Для этого существуют стандартные библиотеки на большинстве платформ, например, [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto) для Node.js и [пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C\#). В Microsoft Teams используется стандартное шифрование HMAC SHA256. Необходимо преобразовать тело в массив байтов в UTF8.
+* Создание маркера HMAC из текста запроса сообщения. Для этого существуют стандартные библиотеки на большинстве платформ, например, [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto) для Node.js и [пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C\#. В Microsoft Teams используется стандартное шифрование HMAC SHA256. Необходимо преобразовать тело в массив байтов в UTF8.
 * Вычислите хэш-значение из массива байтов маркера безопасности, предоставленного Teams при регистрации исходящего веб-перехватчика в клиенте Teams. См. статью [Создание исходящего веб-перехватчика](#create-outgoing-webhook).
 * Преобразуйте хэш-значение в строку с помощью кодировки UTF-8.
 * Сравните строковое значение сгенерированного хэш-значения со значением, предоставленным в HTTP-запросе.
 
 # <a name="method-to-respond"></a>[Метод ответа](#tab/methodtorespond)
+
 **Создание метода отправки ответа о выполнении или ошибке**
 
 Ответы от исходящих веб-перехватчиков отображаются в той же цепочке ответов, что и исходное сообщение. Когда пользователь выполняет запрос, Microsoft Teams выдает синхронный HTTP-запрос вашей службе, и ваш код получает пять секунд, чтобы ответить на сообщение до того, как будет разорвано подключение.
@@ -107,6 +120,7 @@ ms.locfileid: "62281765"
     "text": "This is a reply!"
 }
 ```
+
 ---
 
 > [!NOTE]
@@ -211,15 +225,21 @@ var responseMsg = JSON.stringify({
 }
 ```
 
-* * *
+---
 
 ## <a name="code-sample"></a>Пример кода
 
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Исходящие веб-перехватчики | Примеры создания пользовательских ботов для использования в Microsoft Teams.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
+| Исходящие веб-перехватчики | Примеры создания пользовательских ботов для использования в Microsoft Teams.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
 
-## <a name="see-also"></a>Дополнительные ресурсы
+
+## <a name="step-by-step-guide"></a>Пошаговые инструкции
+
+Следуйте [пошаговой инструкции](../../sbs-outgoing-webhooks.yml), чтобы создать исходящие веб-перехватчики в Teams.
+
+## <a name="see-also"></a>См. также
+
 * [Создание входящего веб-перехватчика](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)
 * [Создание соединителя Office 365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
