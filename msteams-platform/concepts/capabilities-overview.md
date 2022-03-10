@@ -7,12 +7,12 @@ ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 09/22/2020
 keywords: Вкладки, боты, расширения для обмена сообщениями, веб-перехватчики и соединители
-ms.openlocfilehash: 53ee8ffb0fdf51b5c4069cc79ff7022dbc46777d
-ms.sourcegitcommit: 3d7b34e7032b6d379eca8f580d432b365c8be840
+ms.openlocfilehash: ecc7ddc9ff1a80aa4eb5b37c55088f5fa5721b37
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62897972"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63355547"
 ---
 # <a name="understand-microsoft-teams-app-features"></a>Понимание функций приложения Microsoft Teams
 
@@ -142,15 +142,15 @@ ms.locfileid: "62897972"
 
    :::column-end:::
 
-> [!NOTE]
-> Магазин Teams развивается:
-> 
-> Ранее бизнес-приложения обновлялись путем выбора многоточия на плитке. Благодаря обновленной версии Магазина Teams вы можете обновить бизнес-приложения, выполнив вход в [Центр администрирования Teams](https://admin.teams.microsoft.com).
+   :::column span="":::
 
 :::image type="content" source="../assets/images/overview-graph.png" alt-text="Концептуальное представление API Microsoft Graph для Teams." border="false":::
 
    :::column-end:::
 :::row-end:::
+
+> [!NOTE]
+> Магазин Teams развивается: ранее бизнес-приложения обновлялись путем выбора многоточия на плитке. Благодаря обновленной версии Магазина Teams вы можете обновить бизнес-приложения, выполнив вход в [Центр администрирования Teams](https://admin.teams.microsoft.com).
 
 ## <a name="choose-the-correct-scope-for-your-app"></a>Выберите правильную область для приложения
 
