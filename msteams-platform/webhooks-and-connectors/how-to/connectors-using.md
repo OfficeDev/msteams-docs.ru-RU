@@ -5,12 +5,12 @@ description: Сведения о том, как использовать Сое�
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: Соединитель Office 365 в Teams
-ms.openlocfilehash: 7b6b7adc8231e3bdcdb9bfec868702eaa3264c42
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 348b133ea4df73d52f8b35a2271ccf9be6f4ff8e
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355638"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398878"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -44,6 +44,7 @@ ms.locfileid: "63355638"
 Дополнительные сведения о действиях с карточками соединителя см. в разделе [Действия](/outlook/actionable-messages/card-reference#actions).
 
 > [!NOTE]
+>
 > * Значение `compact` для свойства `style` в Microsoft Teams равноценно значению `normal` для свойства `style` в Microsoft Outlook.
 > * Для действия HttpPOST маркер носителя включается в запросы. Этот маркер содержит удостоверение пользователя Microsoft Azure Active Directory (Azure AD) Office 365, выполнившего действие.
 
@@ -187,14 +188,15 @@ ms.locfileid: "63355638"
 
 1. Проверьте канал Microsoft Teams, связанный с URL-адресом веб-перехватчика. На канале появится новая карточка. Перед использованием соединителя для тестирования или публикации приложения необходимо сделать следующее.
 
-    - [Включение двух значков](../../concepts/build-and-test/apps-package.md#app-icons).
-    - Измените раздел `icons` манифеста на имена файлов значков, а не на их URL-адреса.
+    * [Включение двух значков](../../concepts/build-and-test/apps-package.md#app-icons).
+    * Измените раздел `icons` манифеста на имена файлов значков, а не на их URL-адреса.
 
 ---
 
 ## <a name="send-adaptive-cards-using-an-incoming-webhook"></a>Отправка адаптивных карточек с помощью входящего веб-перехватчика
 
 > [!NOTE]
+>
 > * Все собственные элементы схемы адаптивных карточек, кроме `Action.Submit`, полностью поддерживаются.
 > * Поддерживаемые действия: [**Action.OpenURL**](https://adaptivecards.io/explorer/Action.OpenUrl.html), [**Action.ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html) и [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html).
 
