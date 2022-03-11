@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 11/02/2021
-ms.openlocfilehash: 96728036f330eb2181f9818411e218e1ec3c2016
-ms.sourcegitcommit: 3d7b34e7032b6d379eca8f580d432b365c8be840
+ms.openlocfilehash: a201994bc71e0131bb03d33215d800e13d3428de
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62898225"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398969"
 ---
 # <a name="explore-teams-platform-features"></a>Изучите функций платформы Teams
 
@@ -32,7 +32,6 @@ ms.locfileid: "62898225"
 | Microsoft Graph | Microsoft Graph — шлюз для данных и аналитики в Microsoft 365, который можно встроить в любое приложение Teams. | Создание, поиск и архивация большого количества команд, управление командами и заполнение их пользователями и каналами. |
 | Адаптивная карточка | С помощью карточек можно упорядочивать информацию в группы и предоставлять пользователям возможность взаимодействовать с определенными фрагментами информации. | Общий доступ с использованием текста и изображений; сбор сведений с помощью форм ввода. |
 | Модули задач | Модули задач дают возможность создавать модальные всплывающие окна в приложении Teams. | Выполнение собственного пользовательского кода HTML или JavaScript. Отображение мини-приложения на базе <`iframe`>, например видео YouTube или Microsoft Stream. |
-|
 
 ## <a name="dive-deeper"></a>Более подробное ознакомление
 

@@ -3,12 +3,12 @@ title: Упаковка приложения
 description: Узнайте, как упаковать приложение Microsoft Teams для тестирования, отправки и публикации в магазине.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: f3f725280e24296f1f2d9c919a14585e07d86c75
-ms.sourcegitcommit: 6e33289c55a1a83adb9b7b38c42d781c699786f7
+ms.openlocfilehash: 7b895f30230a71db5953ffebc5dce2aa04972abb
+ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345395"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63356072"
 ---
 # <a name="create-a-microsoft-teams-app-package"></a>Создание манифеста приложения в Microsoft Teams
 
@@ -25,7 +25,7 @@ ms.locfileid: "62345395"
 
 ## <a name="app-manifest"></a>Манифест приложения
 
-Файл манифеста приложения должен находится на верхнем уровне пакета с именем `manifest.json`. 
+Файл манифеста приложения должен находится на верхнем уровне пакета с именем `manifest.json`.
 
 При публикации в магазине Teams убедитесь, что манифест ссылается на последнюю версию [схемы](~/resources/schema/manifest-schema.md).
 

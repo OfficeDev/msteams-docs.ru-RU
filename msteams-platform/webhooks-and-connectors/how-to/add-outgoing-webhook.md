@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
 keywords: Teams вкладки исходящий веб-перехватчик сообщение с действиями проверка веб-перехватчика
-ms.openlocfilehash: 2b77118e76bfde8c0fac7c74fce4dab1d78c7dd5
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: c849fd10c19a7af198147cb39fa90c2fdd5052a8
+ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356296"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63399109"
 ---
 # <a name="create-outgoing-webhook"></a>Создание исходящего веб-перехватчика
 
@@ -67,14 +67,14 @@ ms.locfileid: "63356296"
     * **Описание**: подробная строка, которая отображается в карточке профиля и на панели управления приложения на уровне группы.
     * **Аватар**: необязательный значок приложения для веб-перехватчика.
 
-1. Нажмите **Создать**. Исходящий веб-перехватчик добавляется в канал текущей команды.
+1. Нажмите **Создать**. Исходящий веб-перехватчик будет добавлен в канал текущей команды.
 
     ![Создание исходящего веб-перехватчика](~/assets/images/outgoingwebhook.png)
 
 Появится диалоговое окно [Код проверки подлинности сообщений с помощью хэш-функций (HMAC)](https://security.stackexchange.com/questions/20129/how-and-when-do-i-use-hmac/20301). Это маркер безопасности, используемый для проверки подлинности звонков между Teams и назначенной внешней службой. Маркер безопасности HMAC не истекает и является уникальным для каждой конфигурации.
 
 >[!NOTE]
-> Исходящий веб-перехватчик доступен пользователям команды, только если URL-адрес действителен, а маркеры проверки подлинности сервера и клиента равны. Например, рукопожатие HMAC.
+> Исходящий веб-перехватчик доступен пользователям команды только в случае, если URL-адрес действителен, а маркеры проверки подлинности одинаковы у сервера и у клиента. Например, рукопожатие HMAC.
 
 В следующем сценарии даны подробные сведения о добавлении исходящего веб-перехватчика.
 
@@ -101,8 +101,8 @@ ms.locfileid: "63356296"
 
 Код всегда должен проверять подпись HMAC, включенную в запрос, следующим образом.
 
-* Создание маркера HMAC из текста запроса сообщения. Для этого существуют стандартные библиотеки на большинстве платформ, например, [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto) для Node.js и [пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C\#. В Microsoft Teams используется стандартное шифрование HMAC SHA256. Необходимо преобразовать тело в массив байтов в UTF8.
-* Вычислите хэш-значение из массива байтов маркера безопасности, предоставленного Teams при регистрации исходящего веб-перехватчика в клиенте Teams. См. статью [Создание исходящего веб-перехватчика](#create-outgoing-webhook).
+* Создание маркера HMAC из текста запроса сообщения. Для этого в большинстве платформ существуют стандартные библиотеки, например, [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto) для Node.js и [пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C\#. В Microsoft Teams используется стандартное шифрование HMAC SHA256. Необходимо преобразовать тело в массив байтов в UTF8.
+* Вычислите хэш из массива байтов маркера безопасности, предоставленного приложением Teams при регистрации исходящего веб-перехватчика в клиенте Teams. См. статью [Создание исходящего веб-перехватчика](#create-outgoing-webhook).
 * Преобразуйте хэш-значение в строку с помощью кодировки UTF-8.
 * Сравните строковое значение сгенерированного хэш-значения со значением, предоставленным в HTTP-запросе.
 
@@ -110,7 +110,7 @@ ms.locfileid: "63356296"
 
 **Создание метода отправки ответа о выполнении или ошибке**
 
-Ответы от исходящих веб-перехватчиков отображаются в той же цепочке ответов, что и исходное сообщение. Когда пользователь выполняет запрос, Microsoft Teams выдает синхронный HTTP-запрос вашей службе, и ваш код получает пять секунд, чтобы ответить на сообщение до того, как будет разорвано подключение.
+Отклики исходящих веб-перехватчиков отображаются в той же цепочке ответов, что и исходное сообщение. Когда пользователь выполняет запрос, Microsoft Teams выдает синхронный HTTP-запрос вашей службе, а ваш код получает пять секунд, чтобы ответить на сообщение до того разрыва подключения.
 
 ### <a name="example-response"></a>Пример отклика
 
@@ -124,7 +124,8 @@ ms.locfileid: "63356296"
 ---
 
 > [!NOTE]
-> * Вы можете отправлять адаптивные карточки, карточки главного имиджевого баннера и текстовые сообщения в виде вложений с помощью исходящего веб-перехватчика.
+>
+> * Можно отправлять адаптивные карточки, карточки главного имиджевого баннера и текстовые сообщения в виде вложений с помощью исходящего веб-перехватчика.
 > * Карточки поддерживают форматирование. Дополнительные сведения см. в разделе о [форматировании карточек с помощью Markdown](~/task-modules-and-cards/cards/cards-format.md?tabs=adaptive-md%2Cconnector-html#format-cards-with-markdown).
 
 Следующие части кода являются примерами отклика адаптивной карточки:
@@ -198,30 +199,30 @@ var responseMsg = JSON.stringify({
 
 ```json
 {
-    "type": "message",
-    "attachments": [
-        {
-            "contentType": "application/vnd.microsoft.card.adaptive",
-            "content": {
-                "type": "AdaptiveCard",
-                "version": "1.4",
-                "body": [
-                    {
-                        "type": "TextBlock",
-                        "text": "Request sent by: Megan"
-                    },
-                    {
-                        "type": "Image",
-                        "url": "https://c.s-microsoft.com/en-us/CMSImages/DesktopContent-04_UPDATED.png?version=43c80870-99dd-7fb1-48c0-59aced085ab6"
-                    },
-                    {
-                        "type": "TextBlock",
-                        "text": "Sample image for Adaptive Card.."
-                    }
-                ]
-            }
-        }
+ "type": "message",
+ "attachments": [
+  {
+   "contentType": "application/vnd.microsoft.card.adaptive",
+   "content": {
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+     {
+      "type": "TextBlock",
+      "text": "Request sent by: Megan"
+     },
+     {
+      "type": "Image",
+      "url": "https://c.s-microsoft.com/en-us/CMSImages/DesktopContent-04_UPDATED.png?version=43c80870-99dd-7fb1-48c0-59aced085ab6"
+     },
+     {
+      "type": "TextBlock",
+      "text": "Sample image for Adaptive Card.."
+     }
     ]
+   }
+  }
+ ]
 }
 ```
 
@@ -232,7 +233,6 @@ var responseMsg = JSON.stringify({
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
 | Исходящие веб-перехватчики | Примеры создания пользовательских ботов для использования в Microsoft Teams.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs)|
-
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
