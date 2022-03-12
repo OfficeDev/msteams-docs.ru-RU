@@ -4,12 +4,12 @@ description: Описывает, как настроить поставщико�
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: группы проверки подлинности Azure AD oauth identity provider
-ms.openlocfilehash: 36e81839b1837fca8a124b60701c3d5f95608851
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: ee99bf10f517eb928be0231a1188d2d5db74709d
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356415"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452720"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 
@@ -35,7 +35,7 @@ ms.locfileid: "63356415"
 
 * **Внешние поставщики OAuth из вкладок:** Дополнительные сведения см. в [дополнительных сведениях Об использовании внешних поставщиков OAuth](../../tabs/how-to/authentication/auth-oauth-provider.md)
 
-## <a name="see-also"></a>См. также 
+## <a name="see-also"></a>См. также
 
 * [Проверка подлинности пользователя в Microsoft Teams боте](../../resources/bot-v3/bot-authentication/auth-bot-AAD.md)
 * [Поддержка единого входа (SSO) для вкладок](../../tabs/how-to/authentication/auth-aad-sso.md)

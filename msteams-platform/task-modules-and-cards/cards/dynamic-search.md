@@ -1,29 +1,29 @@
 ---
-title: Введите поиск вперед в адаптивных картах
+title: Поиск с автозавершением в адаптивных карточках
 author: Rajeshwari-v
 description: Описывает поиск в начале ввода с помощью управления Input.ChoiceSet в адаптивных картах
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: 6c2c26ee6853b23283ae04dbbfec4a78425e2ea5
-ms.sourcegitcommit: f85d0a40326f45b1ffdd3bd1b61b2d6af76b6e85
+ms.openlocfilehash: 2f9a8844d4e976e4d0a975e7e3a901fe3b93ba85
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61722184"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453833"
 ---
-# <a name="typeahead-search-in-adaptive-cards"></a>Введите поиск вперед в адаптивных картах
+# <a name="typeahead-search-in-adaptive-cards"></a>Поиск с автозавершением в адаптивных карточках
 
-Функция поиска в адаптивных картах позволяет повысить возможности поиска в `input.choiceset` компоненте. В нем содержится список вариантов ввода текста в поле поиска. Для поиска и выбора данных можно включить предварительный поиск в типе с помощью адаптивных карт.
+Функция поиска в адаптивных картах позволяет повысить возможности поиска в компоненте `input.choiceset` . В нем содержится список вариантов ввода текста в поле поиска. Для поиска и выбора данных можно включить предварительный поиск в типе с помощью адаптивных карт.
 
 Для следующих поисков можно использовать поиск в печатных видах:
 
-* [Статичный поиск](#static-typeahead-search)
+* [Статический поиск](#static-typeahead-search)
 * [Динамический поиск](#dynamic-typeahead-search)
 
 ## <a name="static-typeahead-search"></a>Статичный поиск впереди типа
 
-Статичный поиск в виде впереди позволяет пользователям искать значения, указанные в полезной нагрузке `input.choiceset` адаптивной карты. Для демонстрации пользователю нескольких вариантов можно использовать статичный поиск. Размер полезной нагрузки в статическом поиске увеличивается с количеством вариантов, указанных в полезной нагрузке.
+Статичный поиск в виде впереди позволяет пользователям искать значения, указанные в `input.choiceset` полезной нагрузке адаптивной карты. Для демонстрации пользователю нескольких вариантов можно использовать статичный поиск. Размер полезной нагрузки в статическом поиске увеличивается с количеством вариантов, указанных в полезной нагрузке.
 Когда пользователь начинает вводить тексты, выбор фильтруется, что частично совпадает с входными данными. В списке выпаданий выделены символы ввода, которые соответствуют поиску.
 
 На следующем изображении демонстрируется статичный тип поиска:
@@ -51,7 +51,7 @@ ms.locfileid: "61722184"
 **Использование поиска в адаптивных картах**
 
 1. Пользователь A открывает бот магазина.
-1. Пользователь A отправляет команду боту для нового **запроса клиента.** Бот отвечает адаптивной картой, которая имеет `Input.ChoiceSet` компонент.
+1. Пользователь A отправляет команду боту для нового **запроса клиента**. Бот отвечает адаптивной картой, которая имеет `Input.ChoiceSet` компонент.
 1. Пользователь A использует поиск в печатных целях для поиска и выбора сведений, основанных на выборе клиента.
 
 Следующее изображение иллюстрирует мобильный опыт поиска в печатных устройствах:
@@ -65,7 +65,7 @@ ms.locfileid: "61722184"
 
 ## <a name="implement-typeahead-search"></a>Реализация поиска на опережных типах
 
-`Input.ChoiceSet` является одним из важных компонентов ввода в адаптивных картах. Вы можете добавить элемент управления поиском впереди в `Input.ChoiceSet` компонент для реализации поиска на опередиле. Вы можете искать и выбирать требуемую информацию с помощью следующих выборок:
+`Input.ChoiceSet` является одним из важных компонентов ввода в адаптивных картах. Вы можете добавить элемент управления `Input.ChoiceSet` поиском впереди в компонент для реализации поиска на опередиле. Вы можете искать и выбирать требуемую информацию с помощью следующих выборок:
 
 * Dropdown, например расширенный выбор.
 * Кнопка "Радио", например один выбор.
@@ -76,7 +76,7 @@ ms.locfileid: "61722184"
 
 ### <a name="schema-properties"></a>Свойства схемы
 
-Следующими свойствами являются новые дополнения к [`Input.ChoiceSet`](https://adaptivecards.io/explorer/Input.ChoiceSet.html) схеме, позволяющие ввести поиск заранее:
+Следующими свойствами являются новые дополнения [`Input.ChoiceSet`](https://adaptivecards.io/explorer/Input.ChoiceSet.html) к схеме, позволяющие ввести поиск заранее:
 
 | Свойство| Тип | Обязательный | Описание |
 |-----------|------|----------|-------------|
@@ -89,13 +89,13 @@ ms.locfileid: "61722184"
 |-----------|------|----------|-------------|
 | type | Data.Query | Да | Указывает, что это объект Data.Query.|
 | набор данных | String | Да | Указывает тип данных, которые извлекаются динамически. |
-| value | String | Нет | Заполняет запрос на вызов бота с помощью ввода, предоставленного `ChoiceSet` пользователем. |
-| count | Номер | Нет | Заполняет запрос на вызов бота, чтобы указать количество элементов, которые должны быть возвращены. Бот игнорирует его, если пользователи хотят отправить другую сумму. | 
-| skip | Номер | Нет | Заполняет запрос на вызов бота, чтобы указать, что пользователи хотят входить в список и продвигаться вперед. |
+| value | String | Нет | Заполняет запрос на вызов бота с помощью ввода, предоставленного пользователем `ChoiceSet`. |
+| count | Числовой | Нет | Заполняет запрос на вызов бота, чтобы указать количество элементов, которые должны быть возвращены. Бот игнорирует его, если пользователи хотят отправить другую сумму. |
+| skip | Числовой | Нет | Заполняет запрос на вызов бота, чтобы указать, что пользователи хотят входить в список и продвигаться вперед. |
 
 ### <a name="example"></a>Пример
 
-Пример полезной нагрузки, содержащем статичный и динамический поиск с & нескольких вариантов выбора следующим образом:
+Пример полезной нагрузки, содержащем статичный и динамический поиск с одним & нескольких вариантов выбора следующим образом:
 
 ```json
 {
@@ -328,25 +328,25 @@ protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext
 {
     if (turnContext.Activity.Name == "application/search")
     {
-    var packages = new[] {
-            new { title = "A very extensive set of extension methods", value = "FluentAssertions" },
-            new { title = "Fluent UI Library", value = "FluentUI" }};
+ var packages = new[] {
+   new { title = "A very extensive set of extension methods", value = "FluentAssertions" },
+   new { title = "Fluent UI Library", value = "FluentUI" }};
 
-    var searchResponseData = new
-    {
-        type = "application/vnd.microsoft.search.searchResponse",
-        value = new
-        {
-        results = packages
-        }
-    };
-    var jsonString = JsonConvert.SerializeObject(searchResponseData);
-    JObject jsonData = JObject.Parse(jsonString);
-    return new InvokeResponse()
-    {
-        Status = 200,
-        Body = jsonData
-    };
+ var searchResponseData = new
+ {
+     type = "application/vnd.microsoft.search.searchResponse",
+     value = new
+     {
+  results = packages
+     }
+ };
+ var jsonString = JsonConvert.SerializeObject(searchResponseData);
+ JObject jsonData = JObject.Parse(jsonString);
+ return new InvokeResponse()
+ {
+     Status = 200,
+     Body = jsonData
+ };
     }
 
     return null;
@@ -354,7 +354,7 @@ protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext
 ```
 
 #### <a name="nodejs"></a>[Node.js](#tab/nodejs)
- 
+
 ```nodejs
   async onInvokeActivity(context) {
     if (context._activity.name == 'application/search') {
@@ -384,7 +384,7 @@ protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext
   }
 ```
 
-####  <a name="json"></a>[JSON](#tab/json)
+#### <a name="json"></a>[JSON](#tab/json)
 
 ```json
 {
@@ -411,9 +411,9 @@ protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext
 
 ## <a name="code-sample"></a>Пример кода
 
-|Название примера | Описание | C# | Node.js |
+|**Название примера** | **Описание** | **C#** | **Node.js** |
 |----------------|-----------------|--------------|----------------|
-| Введите управление поиском заранее на адаптивных картах | В примере показаны функции статического и динамического управления поиском в адаптивных картах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/nodejs) |
+| Управление поисковым запросом в адаптивных картах | В примере показаны функции статического и динамического управления поиском в адаптивных картах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

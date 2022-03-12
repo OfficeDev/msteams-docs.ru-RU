@@ -5,17 +5,17 @@ keywords: команды visual studio code toolkit tabs sso graph authenticatio
 localization_priority: Normal
 ms.topic: how-to
 ms.author: lajanuar
-ms.openlocfilehash: 75e3a6b9c1a777b48d5d1a896c7547f53702eaf4
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: c971cd99be0e283050561db2a0f1b89c9e20c9cf
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435861"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452545"
 ---
 # <a name="single-sign-on-authentication-with-teams-toolkit-and-visual-studio-code-for-tabs"></a>Проверка подлинности с единым входом с помощью набора средств Teams и Visual Studio Code для вкладок
 
 > [!IMPORTANT]
-> **Этот документ относится к старой версии Teams набор средств**
+> **Этот документ ссылается на старую версию Teams набор средств**
 >
 > Для получения текущих сведений ознакомьтесь [с необходимыми условиями](../get-started/prerequisites.md) и следуйте одному из новых учебников.
 
@@ -45,8 +45,8 @@ ms.locfileid: "62435861"
 
 1. Выберите **установку npm** из папки `api-server` . Затем **запустите npm**.
 1. Выберите **установку npm** из папки `.src` . Затем **запустите npm**.
-1. Если вы используете службу тоннелей, например [ngrok](https://ngrok.com/), запустите ее и убедитесь, что URL-адрес совпадает с тем, что вы ввели в мастере создания проекта. Если этого не сделать, необходимо обновить _URI API_ и перенаправить _URL-адрес_ в регистрации приложений, созданной в Azure.
-1. Перейдите к панели действий с левой стороны Visual Studio Code окна.
+1. Если вы используете службу тоннелей, например [ngrok](https://ngrok.com/), запустите ее и убедитесь, что URL-адрес совпадает с тем, что вы ввели в мастере создания проекта. Если этого не сделать, необходимо обновить *URI API* и перенаправить *URL-адрес* в регистрации приложений, созданной в Azure.
+1. Перейдите к панели действий слева от Visual Studio Code окна.
 1. Выберите **значок Выполнить** , чтобы отобразить представление **Run и Debug** .
 1. Вы также можете использовать клавишу ярлык **Ctrl+Shift+D**.
 

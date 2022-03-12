@@ -6,16 +6,17 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
 keywords: поток данных проверки подлинности персональных приложений адаптивной карты
-ms.openlocfilehash: 5ecd8ec7820adf07efbd588d0220c2849a11df0d
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 2747dbe089ee847e7f5465d3a19fa58dbf945be5
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355865"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453266"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
 > [!IMPORTANT]
+>
 > * Вкладки с адаптивными картами в настоящее время поддерживаются только в качестве личных приложений.
 
 При разработке вкладки с помощью традиционного метода могут возникнуть такие проблемы:
@@ -33,7 +34,7 @@ ms.locfileid: "63355865"
 
 :::image type="content" source="../../assets/images/adaptive-cards-rendered-in-tabs.png" alt-text="Пример адаптивной карты, отрисовываемой на вкладке." border="false":::
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступить к созданию вкладок с помощью адаптивных карт, необходимо:
 
@@ -107,6 +108,7 @@ ms.locfileid: "63355865"
 Связь между вкладкой Адаптивная карта и ботом делается с помощью действий `invoke` . Каждое `invoke` действие имеет соответствующее **имя**. Используйте имя каждого действия, чтобы различать каждый запрос. `tab/fetch` и `tab/submit` являются действиями, охватываемых в этом разделе.
 
 > [!NOTE]
+>
 > * Боты должны отправлять все ответы на [URL-адрес службы](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#base-uri&preserve-view=true). URL-адрес службы получается в составе входящих полезной `activity` нагрузки.
 > * Размер полезной нагрузки вызова увеличен до 80kb.
 
@@ -235,6 +237,7 @@ ms.locfileid: "63355865"
 В следующем коде приводится пример запроса `task/fetch` и ответа:
 
 **`task/fetch` запрос**
+
 ```json
 // task/fetch POST request: agents/{botId}/invoke
 {
@@ -427,12 +430,12 @@ ms.locfileid: "63355865"
 
 |**Название примера** | **Описание** |**.NET** | **Node.js** |
 |----------------|-----------------|--------------|--------------|
-| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
+| Показать адаптивные карты на вкладке Teams | Microsoft Teams пример кода вкладки, который демонстрирует, как показывать адаптивные карты в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Предварительный просмотр для ссылки "Вкладки" и представление стадий](~/tabs/tabs-link-unfurling.md)
+> [Вкладки связывают разгрузку и представление сцены](~/tabs/tabs-link-unfurling.md)
 
 ## <a name="see-also"></a>См. также
 

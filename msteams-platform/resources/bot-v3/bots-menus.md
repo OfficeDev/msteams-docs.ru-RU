@@ -1,16 +1,16 @@
 ---
 title: Добавление меню бота
-description: Описывает, как создавать меню для ботов в Microsoft Teams
+description: Описывает создание меню для ботов в Microsoft Teams
 keywords: teams bots menus creation
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: 14100c9032f0adf964975abbe436c84194475a99
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: 6f339f23298c14607eb1d9ca12daa50bcc98775b
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157687"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452902"
 ---
 # <a name="add-a-bot-menu-in-microsoft-teams"></a>Добавление меню бота в Microsoft Teams
 
@@ -23,12 +23,13 @@ ms.locfileid: "59157687"
 Когда пользователь выбирает элемент меню, строка команды вставляется в текстовое поле, чтобы помочь пользователю завершить сообщение бота.
 
 ## <a name="bot-menu-support-on-teams-mobile-app"></a>Поддержка меню бота Teams мобильном приложении
-> [!NOTE] 
+
+> [!NOTE]
 > Меню бота не отображается на мобильных устройствах.
 
 ## <a name="app-manifest"></a>Манифест приложения
 
-Чтобы создать меню бота, добавьте новый объект в [`commandLists`](~/resources/schema/manifest-schema.md#botscommandlists) манифест приложения в разделе бот. Вы можете объявить отдельные меню с отдельными командами для каждой области, поддерживаемой ботом (или) Каждое меню поддерживает до `personal` `groupChat` `team` 10 команд.
+Чтобы создать меню бота, добавьте новый [`commandLists`](~/resources/schema/manifest-schema.md#botscommandlists) объект в манифест приложения в разделе бот. Вы можете объявить отдельные меню с отдельными командами для каждой области, поддерживаемой ботом (`personal`или`team``groupChat`) Каждое меню поддерживает до 10 команд.
 
 ### <a name="manifest-excerpt---single-menu-for-both-scopes"></a>Выдержка манифеста — одно меню для обеих областей
 
@@ -116,7 +117,7 @@ ms.locfileid: "59157687"
 }
 ```
 
-## <a name="best-practices"></a>Рекомендации
+## <a name="best-practices"></a>Лучшие методики
 
 * Сохраняйте простое: меню бота предназначено для того, чтобы представить основные возможности вашего бота.
 * Кратко: параметры меню не должны быть очень длинными и сложными выражениями естественного языка , они должны быть простыми командами.

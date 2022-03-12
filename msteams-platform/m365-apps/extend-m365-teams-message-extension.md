@@ -4,12 +4,12 @@ description: Вот как обновить расширение обмена с
 ms.date: 02/11/2022
 ms.topic: tutorial
 ms.custom: m365apps
-ms.openlocfilehash: 743181b11d595aabdd9d7972674e843b598826af
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 0cb9cf0d1963e7d9fd2b8d27f245c251ef99c625
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356009"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453518"
 ---
 # <a name="extend-a-teams-messaging-extension-across-microsoft-365"></a>Расширение Teams сообщений по всему Microsoft 365
 
@@ -21,20 +21,21 @@ ms.locfileid: "63356009"
 Процесс обновления расширения обмена сообщениями на основе Teams на основе Outlook включает следующие действия:
 
 > [!div class="checklist"]
+>
 > * Обновление манифеста приложения
 > * Добавление канала Outlook для бота
 > * Перезагрузите обновленное приложение в Teams
 
 В остальном руководстве вы сможете просмотреть эти действия и показать, как просмотреть расширение обмена сообщениями как в Outlook для Windows, так и в Интернете.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы завершить этот учебник, вам потребуется:
 
- - Клиент Microsoft 365 программы разработчиков
- - Клиент песочницы, зарегистрированный *в Office 365 целевых выпусков*
- - Тестовая среда с Office приложениями, установленными с Приложения Microsoft 365 *бета-канала*
- - Microsoft Visual Studio с расширением Teams набор средств (Preview) (необязательный)
+* Клиент Microsoft 365 программы разработчиков
+* Клиент песочницы, зарегистрированный *в Office 365 целевых выпусков*
+* Тестовая среда с Office приложениями, установленными с Приложения Microsoft 365 *бета-канала*
+* Microsoft Visual Studio с расширением Teams набор средств (Preview) (необязательный)
 
 > [!div class="nextstepaction"]
 > [Необходимые условия для установки](prerequisites.md)
@@ -68,6 +69,7 @@ ms.locfileid: "63356009"
     "manifestVersion" : "m365DevPreview"
 }
 ```
+
 ---
 
 Если вы Teams набор средств для создания приложения расширения обмена сообщениями, вы можете использовать его для проверки изменений в файле манифеста и выявления ошибок. Откройте палитру `Ctrl+Shift+P` команд и **найдите Teams:** Проверьте файл манифеста или выберите параметр из меню развертывания Teams набор средств (найдите значок Teams слева от Visual Studio Code).
@@ -181,11 +183,11 @@ Outlook и Office личные вкладки с включенной подде
 
 #### <a name="microsoft-teams-admin-center"></a>Microsoft Teams Центр администрирования
 
-Как администратор Teams, вы можете загрузить и предварительно установить пакет приложений для клиента вашей организации из https://admin.teams.microsoft.com/. Подробные Upload в центре [Microsoft Teams администрирования Upload настраиваемые](/MicrosoftTeams/upload-custom-apps) приложения.
+В качестве Teams администратора можно загрузить и предварительно установить пакет приложений для клиента вашей [организации из Teams администратора](https://admin.teams.microsoft.com/). [Подробные Upload в центре администрирования Microsoft Teams пользовательских](/MicrosoftTeams/upload-custom-apps) приложений.
 
 #### <a name="microsoft-admin-center"></a>Центр администрирования Майкрософт
 
-В качестве глобального администратора вы можете загрузить и предварительно установить пакет приложений из https://admin.microsoft.com/. [Дополнительные сведения см. в Приложения Microsoft 365 test and deploy by partners in the Integrated Apps portal](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps).
+В качестве глобального администратора можно загрузить и предварительно установить пакет приложений от [администратора Майкрософт](https://admin.microsoft.com/). Дополнительные сведения см. в Приложения Microsoft 365 и развертывании Приложения Microsoft 365 партнеров на [портале интегрированных](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps) приложений.
 
 ### <a name="multitenant-distribution"></a>Мультитенантное распространение
 

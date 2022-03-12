@@ -2,12 +2,12 @@
 title: Настройка среды разработчиков для расширения Teams приложений в Microsoft 365
 description: Вот необходимые условия для расширения Teams приложений в Microsoft 365
 ms.date: 02/11/2022
-ms.openlocfilehash: eec44e149e81b420c507b0580896d2c5a4a99cc2
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 1f9b893c185d7cbae249ccc77de2a52cbdcb409a
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356002"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452741"
 ---
 # <a name="set-up-your-dev-environment-for-extending-teams-apps-across-microsoft-365"></a>Настройка среды разработчиков для расширения Teams приложений в Microsoft 365
 
@@ -19,6 +19,7 @@ ms.locfileid: "63356002"
 Чтобы настроить среду разработки:
 
 > [!div class="checklist"]
+>
 > * [Получите Microsoft 365 клиента-разработчика (песочницу) и внося побочные нагрузки](#prepare-a-developer-tenant-for-testing)
 > * [Регистрация клиента Microsoft 365 в *Office 365 целевых выпусках*](#enroll-your-developer-tenant-for-office-365-targeted-releases)
 > * [Настройка учетной записи для доступа к предварительным версиям Outlook и Office](#install-office-apps-in-your-test-environment)
@@ -48,8 +49,8 @@ ms.locfileid: "63356002"
     1. **Целевой выпуск для отдельных пользователей**
 
     :::image type="content" source="images/m365-admin-center-targeted-releases.png" alt-text="Центр администрирования Microsoft 365 меню &quot;Параметры выпуска&quot; с выбранным параметром целевого выпуска":::
-    
-1. Выберите **Сохранить**.
+
+1. Нажмите **Сохранить**.
 
 Дополнительные сведения о Office 365 версиях см. в справке [Настройка](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true#targeted-release) стандартных или целевых *Центр администрирования Microsoft 365 выпусков*.
 
@@ -71,7 +72,7 @@ ms.locfileid: "63356002"
 1. Open **File** >  **Office** **AccountAbout** >  Outlook.  
    Если число сборки **14416** или выше, а каналом является бета-канал *, вы* Microsoft 365 сборку бета-канала.
 1. В правом верхнем углу включаем очки **Coming Soon** .
-    
+
     :::image type="content" source="images/outlook-coming-soon.png" alt-text="Параметр &quot;Скоро&quot; для Outlook":::
 
 > [!NOTE]
@@ -108,5 +109,5 @@ ms.locfileid: "63356002"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Включение личной вкладки Teams в Office и Outlook](extend-m365-teams-personal-tab.md)
-- [Включение расширения для сообщений Teams в Outlook](extend-m365-teams-message-extension.md)
+* [Включение личной вкладки Teams в Office и Outlook](extend-m365-teams-personal-tab.md)
+* [Включение расширения для сообщений Teams в Outlook](extend-m365-teams-message-extension.md)

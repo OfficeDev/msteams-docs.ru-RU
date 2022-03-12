@@ -6,18 +6,18 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 302cac17ae6905899e43a8768882f61f0a2b9056
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: 9dbfa97b892f2234b53eb42b5d5764b8f6fd6e93
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518326"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452573"
 ---
 # <a name="prepare-accounts-to-build-teams-apps"></a>Подготовка учетных записей для создания Teams приложений
 
 Для разработки Teams требуется по крайней мере одна Microsoft 365 учетная запись с действительной подпиской. Если вы хотите разоружить свои дополнительные ресурсы в Azure, вам потребуется учетная запись Azure. Учетная запись Azure необязательна, если существующее приложение находится на другом поставщике облачных решений, и необходимо интегрировать существующее приложение Teams платформу.
 
-## <a name="microsoft-365-account"></a>Microsoft 365 учетной записи
+## <a name="microsoft-365-account"></a>Учетная запись Microsoft 365
 
 Если у вас нет существующей Microsoft 365 с действительной подпиской, вы можете создать ее, присоединившись к Microsoft 365 [разработчику](https://developer.microsoft.com/microsoft-365/dev-program). Программа Microsoft 365 разработчика включает подписку Microsoft 365 E5 разработчика, которую можно использовать для создания собственной песочницы и разработки решений, не зависящие от среды производства.
 
@@ -25,32 +25,32 @@ ms.locfileid: "62518326"
 
 Если вы хотите использовать ресурсы, связанные с приложением, или доступ к ресурсам в Azure, необходимо иметь подписку Azure. Перед [началом работы можно](https://azure.microsoft.com/free/) создать бесплатную учетную запись.
 
-## <a name="join-microsoft-365-developer-program"></a>Регистрация Microsoft 365 разработчика 
+## <a name="join-microsoft-365-developer-program"></a>Регистрация Microsoft 365 разработчика
 
-Если у вас нет учетной записи Microsoft 365, необходимо зарегистрироваться для подписки [Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program). Подписка бесплатна в течение 90 дней и продолжает обновляться до тех пор, пока вы используете ее для разработки. Если у вас есть подписка Visual Studio Enterprise или Professional, обе программы включают бесплатную подписку Microsoft 365 [разработчика](https://aka.ms/MyVisualStudioBenefits). Она активна до тех пор, пока Visual Studio подписка активна. Дополнительные сведения см. [в Microsoft 365 подписки разработчика](https://developer.microsoft.com/microsoft-365/dev-program).
+Если у вас нет Microsoft 365 учетной записи, необходимо зарегистрироваться на подписку [Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program). Подписка бесплатна в течение 90 дней и продолжает обновляться до тех пор, пока вы используете ее для разработки. Если у вас есть подписка Visual Studio Enterprise или Professional, обе программы включают бесплатную подписку Microsoft 365 [разработчика](https://aka.ms/MyVisualStudioBenefits). Она активна до тех пор, пока Visual Studio подписка активна. Дополнительные сведения см. [в Microsoft 365 подписки разработчика](https://developer.microsoft.com/microsoft-365/dev-program).
 
-1. Перейдите в [Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program).
+1. Перейдите в [программу Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program).
 2. Выберите **Join Now**.
 3. Выберите **настройка подписки на E5**.
 4. Настройка учетной записи администратора. После завершения вы должны увидеть следующий экран:
 
-:::image type="content" source="./images/m365-developer-program.png" alt-text="Схема, на Microsoft 365 программа":::
+:::image type="content" source="./images/m365-developer-program.png" alt-text="Схема, на которую Microsoft 365 программа":::
 
-## <a name="accounts-for-microsoft-365-developer-program"></a>Учетные записи Microsoft 365 программы разработчика
+## <a name="accounts-for-microsoft-365-developer-program"></a>Учетные записи Microsoft 365 разработчика
 
 Вы можете зарегистрироваться в программе для разработчиков с помощью одного из следующих типов учетных записей:
 
-- **Учетная запись Майкрософт для личного использования** 
+* **Учетная запись Майкрософт для личного использования**
 
   Предоставляет доступ ко всем потребительским продуктам и облачным службам Майкрософт, таким как Outlook, Messenger, OneDrive, MSN, Xbox Live или Microsoft 365. При регистрации почтового ящика Outlook.com автоматически создается учетная запись Майкрософт. После создания учетной записи Майкрософт ее можно использовать для доступа к потребительским облачным службам Майкрософт или Azure.
 
-- **Учетная запись работы для бизнеса**
+* **Учетная запись работы для бизнеса**
 
   Предоставляет доступ ко всем облачным службам Microsoft на уровне малых, средних и корпоративных предприятий, таким как Azure, Microsoft Intune или Microsoft 365. При регистрации одной из этих служб в качестве организации облачный каталог автоматически Microsoft Azure Active Directory (Azure AD) для представления организации.
 
-- **Visual Studio ID**
+* **Visual Studio ID**
 
-  Вы можете создать для Visual Studio Professional или Enterprise подписки . Рекомендуется использовать этот параметр для пользования программой разработчика из галереи Visual Studio, чтобы получить все преимущества в качестве Visual Studio абонента.
+  Вы можете создать для Visual Studio Professional или Enterprise подписки . Мы рекомендуем использовать этот параметр для пользования программой разработчика из галереи Visual Studio, чтобы получить все преимущества в качестве Visual Studio абонента.
 
 ## <a name="teams-customer-app-upload-or-sideload-permission"></a>Teams загрузки или разрешения на загрузку клиентского приложения
 
@@ -76,7 +76,7 @@ ms.locfileid: "62518326"
 
        :::image type="content" source="../assets/images/teams-toolkit-v2/publish.png" alt-text="Публикация приложения":::
 
-    4. Проверьте, можно ли Upload **настраиваемого приложения**, как показано на изображении:
+    4. Проверьте, можно ли Upload **настраиваемого** приложения, как показано на изображении:
 
        :::image type="content" source="../assets/images/teams-toolkit-v2/upload.png" alt-text="Upload настраиваемом приложении":::
 
@@ -94,7 +94,7 @@ ms.locfileid: "62518326"
    :::image type="content" source="../assets/images/teams-toolkit-v2/5.png" alt-text="показать все":::
 
 > [!NOTE]
-> Для появления **параметра** Teams может занять **до 24** часов. В это [время вы можете загрузить настраиваемую Teams](/microsoftteams/upload-custom-apps) для тестирования и проверки.
+> Для появления **параметра** Teams может занять **до 24** часов. За это [время вы можете загрузить настраиваемую Teams](/microsoftteams/upload-custom-apps) среду для тестирования и проверки.
 
 3. Перейдите **Teams** **appsSetup** >  **PoliciesGlobal** > .
 
@@ -104,7 +104,7 @@ ms.locfileid: "62518326"
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/4.png" alt-text="toggle":::
 
-5. Нажмите **Сохранить**. 
+5. Нажмите **Сохранить**.
 
 > [!Note]
 > Для активной загрузки побок может занять до 24 часов. В то же время для проверки приложения  можно использовать загрузку для клиента. Чтобы загрузить .zip пакета приложения, см. в [приложении upload custom apps](/microsoftteams/teams-app-setup-policies).

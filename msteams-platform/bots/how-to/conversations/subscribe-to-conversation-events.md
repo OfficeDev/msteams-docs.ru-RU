@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: беседа реакции сообщения канала бота событий
-ms.openlocfilehash: 4cb48c73b139ece4d16f935b611701def35e89b7
-ms.sourcegitcommit: 7209e5af27e1ebe34f7e26ca1e6b17cb7290bc06
+ms.openlocfilehash: 8052ec921a0e0e72ea6b64323ec713b84d18d18d
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62212547"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453448"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-При создании разговорных ботов для Microsoft Teams можно работать с событиями беседы. Teams отправляет уведомления боту для событий беседы, которые происходят в сферах, где ваш бот активен. Эти события можно зафиксировать в коде и принять следующие действия:
+При создании разговорных ботов для Microsoft Teams можно работать с событиями беседы. Teams отправляет уведомления вашему боту для событий беседы, которые происходят в сферах, где ваш бот активен. Эти события можно зафиксировать в коде и принять следующие действия:
 
 * Запуск приветствия при добавлении бота в команду.
 * Запуск приветствия при добавлении или удалении нового члена группы.
@@ -29,11 +29,12 @@ ms.locfileid: "62212547"
 События обновления беседы можно использовать для предоставления более эффективных уведомлений и более эффективных действий бота.
 
 > [!IMPORTANT]
+>
 > * Вы можете добавлять новые события в любое время и ваш бот начинает получать их.
 > * Чтобы получить неожиданные события, необходимо разработать бот.
-> * Если вы используете SDK Bot Framework, ваш бот автоматически отвечает на любые события, которые `200 - OK` вы не хотите обрабатывать.
+> * Если вы используете SDK Bot Framework, `200 - OK` ваш бот автоматически отвечает на любые события, которые вы не хотите обрабатывать.
 
-Бот получает событие `conversationUpdate` в любом из следующих случаев:
+Бот получает событие в `conversationUpdate` любом из следующих случаев:
 
 * При добавлении бота в беседу.
 * Другие участники добавляются или удаляются из беседы.
@@ -46,15 +47,15 @@ ms.locfileid: "62212547"
 | Действие, принятое        | EventType         | Метод, называемый              | Описание                | Область |
 | ------------------- | ----------------- | -------------------------- | -------------------------- | ----- |
 | Созданный канал     | channelCreated    | OnTeamsChannelCreatedAsync | [Создается канал](#channel-created). | Команда |
-| Канал переименован     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован.](#channel-renamed) | Команда |
-| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется.](#channel-deleted) | Команда |
-| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается.](#channel-deleted) | Команда |
+| Канал переименован     | ChannelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован](#channel-renamed). | Команда |
+| Канал удален     | channelDeleted    | OnTeamsChannelDeletedAsync | [Канал удаляется](#channel-deleted). | Команда |
+| Восстановлен канал    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается](#channel-deleted). | Команда |
 | Участники добавлены   | membersAdded   | OnTeamsMembersAddedAsync   | [Добавлен член](#team-members-added). | Все |
-| Удалены участники | membersRemoved | OnTeamsMembersRemovedAsync | [Член удаляется.](#team-members-removed) | groupChat и team |
-| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована.](#team-renamed)       | Команда |
-| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удалена.](#team-deleted)       | Команда |
-| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивна.](#team-archived)       | Команда |
-| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной.](#team-unarchived)       | Команда |
+| Удалены участники | membersRemoved | OnTeamsMembersRemovedAsync | [Член удаляется](#team-members-removed). | groupChat и team |
+| Команда переименована        | переименованная команда       | OnTeamsTeamRenamedAsync    | [Команда переименована](#team-renamed).       | Команда |
+| Удалена команда        | teamDeleted       | OnTeamsTeamDeletedAsync    | [Команда удаляется](#team-deleted).       | Команда |
+| Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Команда архивуется](#team-archived).       | Команда |
+| Архивация команды отменена        | teamUnarchived       | OnTeamsTeamUnarchivedAsync    | [Команда не является анархивной](#team-unarchived).       | Команда |
 | Восстановлена команда        | teamRestored      | OnTeamsTeamRestoredAsync    | [Восстановлена команда](#team-restored)       | Команда |
 
 ### <a name="channel-created"></a>Созданный канал
@@ -135,13 +136,13 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_channel_created(
-    self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
+ self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(
-            f"The new channel is {channel_info.name}. The channel id is {channel_info.id}"
-        )
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(
+   f"The new channel is {channel_info.name}. The channel id is {channel_info.id}"
+  )
+ )
 ```
 
 ---
@@ -219,11 +220,11 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_channel_renamed(
-    self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
+ self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(f"The new channel name is {channel_info.name}")
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(f"The new channel name is {channel_info.name}")
+ )
 ```
 
 ---
@@ -303,11 +304,11 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_channel_deleted(
-    self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
+ self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(f"The deleted channel is {channel_info.name}")
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(f"The deleted channel is {channel_info.name}")
+ )
 ```
 
 ---
@@ -390,20 +391,20 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_channel_restored(
-    self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
+ self, channel_info: ChannelInfo, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(
-            f"The restored channel is {channel_info.name}. The channel id is {channel_info.id}"
-        )
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(
+   f"The restored channel is {channel_info.name}. The channel id is {channel_info.id}"
+  )
+ )
 ```
 
 ---
 
 ### <a name="team-members-added"></a>Добавлены участники группы
 
-Событие отправляется боту при первом добавлении в `teamMemberAdded` беседу. Событие отправляется боту каждый раз, когда новый пользователь добавляется в командный или групповой чат, где установлен бот. Данные пользователя, которые являются ID, уникальны для вашего бота и могут быть кэшировали для дальнейшего использования службой, например отправки сообщения конкретному пользователю.
+Событие `teamMemberAdded` отправляется боту при первом добавлении в беседу. Событие отправляется боту каждый раз, когда новый пользователь добавляется в командный или групповой чат, где установлен бот. Данные пользователя, которые являются ID, уникальны для вашего бота и могут быть кэшировали для дальнейшего использования службой, например отправки сообщения конкретному пользователю.
 
 В следующем коде показан пример добавленного события участников группы:
 
@@ -534,20 +535,20 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_members_added(
-    self, teams_members_added: [TeamsChannelAccount], turn_context: TurnContext
+ self, teams_members_added: [TeamsChannelAccount], turn_context: TurnContext
 ):
-    for member in teams_members_added:
-        await turn_context.send_activity(
-            MessageFactory.text(f"Welcome your new team member {member.id}")
-        )
-    return
+ for member in teams_members_added:
+  await turn_context.send_activity(
+   MessageFactory.text(f"Welcome your new team member {member.id}")
+  )
+ return
 ```
 
 ---
 
 ### <a name="team-members-removed"></a>Удалены члены группы
 
-Событие `teamMemberRemoved` отправляется боту, если оно удалено из группы. Событие отправляется боту каждый раз, когда любой пользователь удаляется из команды, в которой ваш бот является участником. Чтобы определить, был ли удален новый участник самим ботом или пользователем, проверьте `Activity` объект `turnContext` .  Если поле объекта такое же, как и поле объекта, то удаляемого члена является бот, иначе `Id` `MembersRemoved` это `Id` `Recipient` пользователь. Бот, как `Id` правило, `28:<MicrosoftAppId>` является .
+Событие `teamMemberRemoved` отправляется боту, если оно удалено из группы. Событие отправляется боту каждый раз, когда любой пользователь удаляется из команды, в которой ваш бот является участником. Чтобы определить, был ли удален новый участник самим ботом или пользователем, `Activity` проверьте объект `turnContext`.  Если поле `Id` объекта `MembersRemoved` `Id` `Recipient` такое же, как и поле объекта, то удаляемого члена является бот, иначе это пользователь. Бот, как правило `Id` , является `28:<MicrosoftAppId>`.
 
 > [!NOTE]
 > При постоянном удалении пользователя из клиента `membersRemoved conversationUpdate` запускается событие.
@@ -601,7 +602,7 @@ export class MyBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Объект в следующем примере полезной нагрузки основан на добавлении члена в команду, а не групповом чате или инициировании нового беседы один `channelData` к одному:
+Объект `channelData` в следующем примере полезной нагрузки основан на добавлении члена в команду, а не групповом чате или инициировании нового беседы один к одному:
 
 ```json
 {
@@ -646,20 +647,20 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_members_removed(
-    self, teams_members_removed: [TeamsChannelAccount], turn_context: TurnContext
+ self, teams_members_removed: [TeamsChannelAccount], turn_context: TurnContext
 ):
-    for member in teams_members_removed:
-        await turn_context.send_activity(
-            MessageFactory.text(f"Say goodbye to {member.id}")
-        )
-    return
+ for member in teams_members_removed:
+  await turn_context.send_activity(
+   MessageFactory.text(f"Say goodbye to {member.id}")
+  )
+ return
 ```
 
 ---
 
 ### <a name="team-renamed"></a>Команда переименована
 
-Ваш бот уведомлен при переименовании команды. Он получает событие `conversationUpdate` в `eventType.teamRenamed` `channelData` объекте.
+Ваш бот уведомлен при переименовании команды. Он получает событие `conversationUpdate` в `eventType.teamRenamed` объекте `channelData` .
 
 В следующем коде показан пример переименования события в команду:
 
@@ -728,18 +729,18 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_team_renamed(
-    self, team_info: TeamInfo, turn_context: TurnContext
+ self, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(f"The new team name is {team_info.name}")
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(f"The new team name is {team_info.name}")
+ )
 ```
 
 ---
 
 ### <a name="team-deleted"></a>Удалена команда
 
-Ваш бот уведомлен, когда команда удалена. Он получает событие `conversationUpdate` в `eventType.teamDeleted` `channelData` объекте.
+Ваш бот уведомлен, когда команда удалена. Он получает событие `conversationUpdate` в `eventType.teamDeleted` объекте `channelData` .
 
 В следующем коде показан пример события, удаляемого командой:
 
@@ -805,17 +806,17 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_team_deleted(
-    self, team_info: TeamInfo, turn_context: TurnContext
+ self, team_info: TeamInfo, turn_context: TurnContext
 ):
-    //handle delete event
-    )
+ //handle delete event
+ )
 ```
 
 ---
 
 ### <a name="team-restored"></a>Восстановлена команда
 
-Бот получает уведомление о восстановлении команды после удаления. Он получает событие `conversationUpdate` в `eventType.teamrestored` `channelData` объекте.
+Бот получает уведомление о восстановлении команды после удаления. Он получает событие `conversationUpdate` в `eventType.teamrestored` объекте `channelData` .
 
 В следующем коде показан пример восстановленного события группы:
 
@@ -884,18 +885,18 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_team_restored(
-    self, team_info: TeamInfo, turn_context: TurnContext
+ self, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(f"The team name is {team_info.name}")
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(f"The team name is {team_info.name}")
+ )
 ```
 
 ---
 
 ### <a name="team-archived"></a>Команда архивирована
 
-Бот получает уведомление при установке и архиве группы. Он получает событие `conversationUpdate` в `eventType.teamarchived` `channelData` объекте.
+Бот получает уведомление при установке и архиве группы. Он получает событие `conversationUpdate` в `eventType.teamarchived` объекте `channelData` .
 
 В следующем коде показан пример события архива группы:
 
@@ -964,19 +965,18 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_team_archived(
-    self, team_info: TeamInfo, turn_context: TurnContext
+ self, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(f"The team name is {team_info.name}")
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(f"The team name is {team_info.name}")
+ )
 ```
 
 ---
 
-
 ### <a name="team-unarchived"></a>Архивация команды отменена
 
-Бот получает уведомление о том, когда установлена и не установлена группа. Он получает событие `conversationUpdate` в `eventType.teamUnarchived` `channelData` объекте.
+Бот получает уведомление о том, когда установлена и не установлена группа. Он получает событие `conversationUpdate` в `eventType.teamUnarchived` объекте `channelData` .
 
 В следующем коде показан пример события, неархивного для группы:
 
@@ -1045,11 +1045,11 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_teams_team_unarchived(
-    self, team_info: TeamInfo, turn_context: TurnContext
+ self, team_info: TeamInfo, turn_context: TurnContext
 ):
-    return await turn_context.send_activity(
-        MessageFactory.text(f"The team name is {team_info.name}")
-    )
+ return await turn_context.send_activity(
+  MessageFactory.text(f"The team name is {team_info.name}")
+ )
 ```
 
 ---
@@ -1058,7 +1058,7 @@ async def on_teams_team_unarchived(
 
 ## <a name="message-reaction-events"></a>События реакции на сообщения
 
-Событие отправляется, когда пользователь добавляет или удаляет отклики на `messageReaction` сообщение, отправленное ботом. Документ содержит ID сообщения и является типом реакции `replyToId` `Type` в текстовом формате. Типы реакций включают гнев, сердце, смех, как, грустно, и удивлен. Это событие не содержит содержимое исходного сообщения. Если обработка реакций на сообщения важна для вашего бота, необходимо хранить сообщения при их отправке. В следующей таблице приводится больше сведений о типе события и объектах полезной нагрузки:
+Событие `messageReaction` отправляется, когда пользователь добавляет или удаляет отклики на сообщение, отправленное ботом. Документ `replyToId` содержит ID сообщения и `Type` является типом реакции в текстовом формате. Типы реакций включают гнев, сердце, смех, как, грустно, и удивлен. Это событие не содержит содержимое исходного сообщения. Если обработка реакций на сообщения важна для вашего бота, необходимо хранить сообщения при их отправке. В следующей таблице приводится больше сведений о типе события и объектах полезной нагрузки:
 
 | EventType       | Объект полезной нагрузки   | Описание                                                             | Область |
 | --------------- | ---------------- | ----------------------------------------------------------------------- | ----- |
@@ -1157,21 +1157,21 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_reactions_added(
-    self, message_reactions: List[MessageReaction], turn_context: TurnContext
+ self, message_reactions: List[MessageReaction], turn_context: TurnContext
 ):
-    for reaction in message_reactions:
-        activity = await self._log.find(turn_context.activity.reply_to_id)
-        if not activity:
-            await self._send_message_and_log_activity_id(
-                turn_context,
-                f"Activity {turn_context.activity.reply_to_id} not found in log",
-            )
-        else:
-            await self._send_message_and_log_activity_id(
-                turn_context,
-                f"You added '{reaction.type}' regarding '{activity.text}'",
-            )
-    return
+ for reaction in message_reactions:
+  activity = await self._log.find(turn_context.activity.reply_to_id)
+  if not activity:
+   await self._send_message_and_log_activity_id(
+    turn_context,
+    f"Activity {turn_context.activity.reply_to_id} not found in log",
+   )
+  else:
+   await self._send_message_and_log_activity_id(
+    turn_context,
+    f"You added '{reaction.type}' regarding '{activity.text}'",
+   )
+ return
 ```
 
 ---
@@ -1266,31 +1266,31 @@ export class MyBot extends TeamsActivityHandler {
 
 ```python
 async def on_reactions_removed(
-    self, message_reactions: List[MessageReaction], turn_context: TurnContext
+ self, message_reactions: List[MessageReaction], turn_context: TurnContext
 ):
-    for reaction in message_reactions:
-        activity = await self._log.find(turn_context.activity.reply_to_id)
-        if not activity:
-            await self._send_message_and_log_activity_id(
-                turn_context,
-                f"Activity {turn_context.activity.reply_to_id} not found in log",
-            )
-        else:
-            await self._send_message_and_log_activity_id(
-                turn_context,
-                f"You removed '{reaction.type}' regarding '{activity.text}'",
-            )
-    return
+ for reaction in message_reactions:
+  activity = await self._log.find(turn_context.activity.reply_to_id)
+  if not activity:
+   await self._send_message_and_log_activity_id(
+    turn_context,
+    f"Activity {turn_context.activity.reply_to_id} not found in log",
+   )
+  else:
+   await self._send_message_and_log_activity_id(
+    turn_context,
+    f"You removed '{reaction.type}' regarding '{activity.text}'",
+   )
+ return
 ```
 
 ---
 
 ## <a name="installation-update-event"></a>Событие обновления установки
 
-Бот получает событие `installationUpdate` при установке бота в поток беседы. Спуск бота из потока также вызывает событие. При установке бота  будет добавлено поле действий в событии, а после  удаления бота поле действия будет *удаляться.*
- 
+Бот получает событие при `installationUpdate` установке бота в поток беседы. Спуск бота из потока также вызывает событие. При установке бота будет добавлено поле действий  в событии *, а* после удаления бота поле действия будет *удаляться*.
+
 > [!NOTE]
-> При обновлении приложения и добавлении или удалите бот, действие также запускает `installationUpdate` событие. Поле **действия** настроено на обновление *при* добавлении бота или *удаления-обновления* при удалите бот.
+> При обновлении приложения и добавлении или удалите бот, действие также `installationUpdate` запускает событие. Поле **действия** настроено на обновление *при* добавлении бота или *удаления-обновления* при удалите бот.
 
 ### <a name="install-update-event"></a>Событие установки обновления
 
@@ -1310,7 +1310,7 @@ else
 } return; }
 ```
 
-Кроме того, для добавления или  удаления  сценариев в качестве альтернативного метода для захвата события можно использовать специальный обработок.
+Кроме того, для добавления или удаления сценариев в  качестве альтернативного метода для захвата события можно использовать специальный обработок.
 
 ```csharp
 protected override async Task
@@ -1401,10 +1401,10 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 ---
 
-## <a name="uninstall-behavior-for-personal-app-with-bot"></a>Удалить поведение для личного приложения с ботом
+## <a name="uninstall-behavior-for-personal-app-with-bot"></a>Поведение при удалении для личного приложения с ботом
 
 > [!NOTE]
-> Удалить поведение для личного приложения с ботом в настоящее время доступно только в [предварительном просмотре общедоступных разработчиков.](../../../resources/dev-preview/developer-preview-intro.md)
+> Удалить поведение для личного приложения с ботом в настоящее время доступно только в [предварительном просмотре общедоступных разработчиков](../../../resources/dev-preview/developer-preview-intro.md).
 
 При отостановлении приложения бот также неустановлен. Когда пользователь отправляет сообщение в приложение, он получает код ответа 403. Бот получает код ответа 403 для новых сообщений, вывешиванных вашим ботом. Теперь выровнено поведение столба для ботов в личной области с областью Teams и groupChat. Вы не можете отправлять или получать сообщения после того, как приложение было неустановлено.
 
@@ -1423,7 +1423,7 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот-беседа | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

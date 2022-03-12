@@ -6,12 +6,12 @@ ms.author: ruhe
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: ac2a79014ed0dfedf9942f30ab67c759642ee850
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 4db593c82ef2efb97b99fbb2a00b88bc622394d6
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356177"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453413"
 ---
 # <a name="cicd-guide"></a>Руководство по CI/CD
 
@@ -234,6 +234,7 @@ steps:
 Сценарии основаны на средстве командной строки TeamsFx [teamsFx teamsFx-CLI](https://www.npmjs.com/package/@microsoft/teamsfx-cli). Вы можете установить его с документацией `npm install -g @microsoft/teamsfx-cli` [и следовать](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) за ней, чтобы настроить сценарии.
 
 > [!NOTE]
+>
 > * Чтобы включить `@microsoft/teamsfx-cli` работу в режиме CI, включив `CI_ENABLED` `export CI_ENABLED=true`. В режиме CI удобно `@microsoft/teamsfx-cli` для ci или CD.
 > * Чтобы включить `@microsoft/teamsfx-cli` запуск в режиме неинактивации, установите глобальную конфигуру с командой: `teamsfx config set -g interactive false`. В неинактивном режиме не `@microsoft/teamsfx-cli` подсказываю входные данные.
 

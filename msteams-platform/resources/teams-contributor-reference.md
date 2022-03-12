@@ -5,16 +5,16 @@ author: surbhigupta
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: contributor-guide
-ms.openlocfilehash: 5ee1be71c0ba07612808dc8d1cfb766e2f40c36b
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
+ms.openlocfilehash: 10c7bbf952311dd1668a3fa1b013228d9dd58000
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435260"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453119"
 ---
 # <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
-Teams документация входит в библиотеку технической документации **Microsoft Docs**. Содержимое организовано в группы под названием docsets, каждая из которых представляет группу связанных документов, управляемых как единое целое. Статьи в том же docset имеют одно и то же расширение пути URL-адреса **после docs.microsoft.com**. Например, `/docs.microsoft.com/microsoftteams/...` это начало пути Teams docset. Teams статьи написаны в синтаксис Markdown и помещались на GitHub.
+Teams документация входит в библиотеку технической документации **Microsoft Docs**. Содержимое организовано в группы под названием docsets, каждая из которых представляет группу связанных документов, управляемых как единое целое. Статьи в том же docset имеют одно и то же расширение пути URL-адреса **после docs.microsoft.com**. Например, `/docs.microsoft.com/microsoftteams/...` это начало пути Teams docset. Teams статьи написаны в синтаксис Markdown и помещались в GitHub.
 
 ## <a name="set-up-your-workspace"></a>Настройка рабочего пространства
 
@@ -22,9 +22,8 @@ Teams документация входит в библиотеку технич
 >
 > * Установка [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 > * Установка [Microsoft Visual Studio кода](https://code.visualstudio.com/) (VS Code).
-> * Установка [пакета авторов docs](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) непосредственно из VS Code Marketplace.
+> * Установите [пакет авторов docs](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) непосредственно из VS Code Marketplace.
 <br>&emsp;&emsp; или
-
 > [!div class="checklist"]
 >
 > * Установка в VS Code:
@@ -35,7 +34,7 @@ Teams документация входит в библиотеку технич
 
 ## <a name="review-the-microsoft-docs-contributors-guide"></a>Просмотрите руководство по вкладчикам Microsoft Docs
 
-Руководство по созданию, публикации и обновлению технического контента на платформе Microsoft Docs содержит руководство по созданию, публикации **и обновлению технического** контента. 
+Руководство по созданию, публикации и обновлению технического контента на платформе Microsoft Docs содержит руководство по созданию, публикации **и обновлению технического** контента.
 
 ## <a name="microsoft-writing-style-and-content-guides"></a>Руководство по написанию, стилю и контенту Корпорации Майкрософт
 
@@ -51,19 +50,20 @@ Teams документация входит в библиотеку технич
 
 ## <a name="file-paths"></a>Пути файлов
 
-При использовании относительных путей и создании ссылок на другие документы важно установить допустимый путь к файлам для гиперссылок в документации. Сборка успешно GitHub только в том случае, если путь файла правильный или допустимый.
- 
+При использовании относительных путей и создании ссылок на другие документы важно установить допустимый путь к файлам для гиперссылок в документации. Сборка успешно GitHub только в том случае, если путь файла является правильным или допустимым.
+
 Дополнительные сведения о гиперссылках и пути к файлам см. в [документе об использовании ссылок](/contribute/how-to-write-links).
 
 > [!IMPORTANT]
-> Чтобы со ссылкой на статью **, которая является частью** Teams платформы docset:<br>
+> Ссылка на статью, которая **входит** в docset Teams платформы:<br>
 > &emsp;&#x2714; используйте относительный путь без ведущей косой черты.<br>
 > &emsp;&#x2714; включаем расширение файла Markdown.<br>
 >Ex: **родительский каталог/каталог/** путь к article.md —> [создание приложения для Microsoft Teams](../concepts/building-an-app.md) <br><br>
-> Ссылка на статью библиотеки Microsoft Docs, которая  не входит в Teams платформы:<br>
+> Ссылки на статью библиотеки Microsoft Docs,  которая не входит в Teams платформы:<br>
 > &emsp;&#x2714; используйте относительный путь, который начинается с косой черты.<br>
-> &emsp;&#x2714; не включай расширение файла. <br> Ex: **/docset/address-to-file-location** —> [Используйте API microsoft Graph](/graph/api/resources/teams-api-overview) для работы с Microsoft Teams<br><br>
-> Чтобы ссылаться на страницу за пределами библиотеки Microsoft Docs, например GitHub, используйте полный `https` путь файла.<br>
+> &emsp;&#x2714; Не включай расширение файла. <br>
+> Ex: **/docset/address-to-file-location** —> [Используйте API Microsoft Graph](/graph/api/resources/teams-api-overview) для работы с Microsoft Teams<br><br>
+> Для ссылки на страницу за пределами библиотеки Microsoft Docs, например GitHub, используйте полный `https` путь к файлу.<br>
 
 ## <a name="code-samples-and-snippets"></a>Примеры кода и фрагменты
 

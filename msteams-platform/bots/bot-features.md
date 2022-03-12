@@ -5,12 +5,12 @@ description: Обзор инструментов и SDKs для создания
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 9aef0786d643c80879700ed6c2d4b05ce7c2e09a
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 5a95159df887033bca339efd871261938aecb07d
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398661"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453889"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -44,6 +44,9 @@ Bot [Framework —](https://dev.botframework.com/) это богатый SDK, и
 ## <a name="bots-with-power-virtual-agents"></a>Боты с Power Virtual Agents
 
 [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) — это служба чат-ботов, созданная на платформе Microsoft Power и Bot Framework. Процесс разработки виртуального агента Power использует управляемый, не кодовый и графический интерфейс, который позволяет членам группы легко создавать и поддерживать интеллектуальный виртуальный агент. Создав чат-бот на портале [Power Virtual Agents](https://powervirtualagents.microsoft.com), вы можете легко интегрировать его [с Teams](how-to/add-power-virtual-agents-bot-to-teams.md). Дополнительные сведения о работе см. в Power Virtual Agents [документации](/power-virtual-agents).
+
+>[!NOTE]
+>Не следует использовать платформу Microsoft Power Для создания приложений, которые будут опубликованы в Teams магазине приложений. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
 
 ## <a name="bots-with-webhooks-and-connectors"></a>Боты с веб-оками и соединитетелями
 
@@ -190,7 +193,7 @@ this.onMessage(async (context, next) => {
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|----------------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
 
 ## <a name="next-step"></a>Следующий этап
 

@@ -4,12 +4,12 @@ description: Узнайте о внедрении вкладок на Microsoft 
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: Распределение проверки подлинности группы каналов мобильных вкладок приложения
-ms.openlocfilehash: eb0bc5b0415f1879619cc704a77501406bcea397
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 520cad9d295b4f63ca437db5f69abc3ba9464faa
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356373"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452594"
 ---
 # <a name="tabs-on-mobile"></a>Вкладки на мобильных устройствах
 
@@ -25,6 +25,7 @@ ms.locfileid: "63356373"
 | **Вкладки каналов и групп** | Вкладка открывается в клиенте Teams с помощью `contentUrl`. | Вкладка открывается в браузере за пределами Teams клиента с помощью `websiteUrl`. |
 
 > [!NOTE]
+>
 > * Приложения, отправленные в [AppSource](https://appsource.microsoft.com) для публикации в Teams, автоматически оцениваются для оперативной работы с мобильными устройствами. Для любых запросов протянуть teamsubm@microsoft.com.
 > * Для всех приложений, которые не распространяются через AppSource, вкладки открываются в веб-Teams в веб-Teams по умолчанию.
 > * Поведение приложений по умолчанию применимо только в том случае, если они распространяются Teams магазине. По умолчанию все вкладки открываются в Teams клиенте.

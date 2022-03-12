@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: близость области вызовов вызовов уведомлений о вызове
 ms.date: 04/02/2019
-ms.openlocfilehash: 75c6b33db6431901665b71674cb4f4fd93248c12
-ms.sourcegitcommit: 85d0584877db21e2d3e49d3ee940d22675617582
+ms.openlocfilehash: a1d2362347643badc06a23d967120c8f14a17200
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61216092"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453056"
 ---
 # <a name="incoming-call-notifications"></a>Уведомления о входящих звонках
 
-При [регистрации бота](./registering-calling-bot.md#create-new-bot-or-add-calling-capabilities)вызовов и собраний для Microsoft Teams указан веб-сайт для вызова URL-адреса. Этот URL-адрес является конечной точкой веб-адреса для всех входящих звонков в бот.
+При [регистрации бота](./registering-calling-bot.md#create-new-bot-or-add-calling-capabilities) вызовов и собраний для Microsoft Teams упоминается веб-сайт для вызова URL-адреса. Этот URL-адрес является конечной точкой веб-адреса для всех входящих звонков в бот.
 
 ## <a name="protocol-determination"></a>Определение протокола
 
@@ -24,7 +24,7 @@ ms.locfileid: "61216092"
 HTTP/1.1 204 No Content
 ```
 
-Бот получает уведомление снова, но на этот раз в протоколе Microsoft Graph.
+Ваш бот получает уведомление снова, но на этот раз в протоколе Microsoft Graph.
 
 В будущем выпуске медиаплатформы в режиме реального времени можно настроить протокол, поддерживаемый вашим приложением, чтобы избежать первоначального вызова в устаревшем формате.
 
@@ -39,8 +39,7 @@ HTTP/1.1 302 Found
 Location: your-new-location
 ```
 
-Уделите боту ответ на входящий вызов с [помощью](/graph/api/call-answer?view=graph-rest-1.0&tabs=http&preserve-view=true) API ответа. Вы можете указать `callbackUri` для обработки этого конкретного вызова. Это полезно для тех случаев, когда вызов обрабатывается определенным разделом, и эту информацию необходимо встраить в маршрутную маршрутику в `callbackUri` нужный экземпляр.
-
+Уделите боту ответ на входящий вызов [с помощью](/graph/api/call-answer?view=graph-rest-1.0&tabs=http&preserve-view=true) API ответа. Вы можете указать для `callbackUri` обработки этого конкретного вызова. Это полезно для тех случаев, когда вызов обрабатывается определенным разделом, `callbackUri` и эту информацию необходимо встраить в маршрутную маршрутику в нужный экземпляр.
 
 В следующем разделе приводится подробная информация о проверке подлинности вызова путем проверки маркера, размещенного на веб-сайте.
 
@@ -82,15 +81,15 @@ Authentication: Bearer <TOKEN>
 }
 ```
 
-Конфигурация OpenID, опубликованная на сайте, <https://api.aps.skype.com/v1/.well-known/OpenIdConfiguration> может использоваться для проверки маркера. Каждое значение маркера OAuth используется следующим образом:
+Конфигурация OpenID, опубликованная на сайте <https://api.aps.skype.com/v1/.well-known/OpenIdConfiguration> , может использоваться для проверки маркера. Каждое значение маркера OAuth используется следующим образом:
 
 * `aud` где аудитория — это URI ID приложения, заданный для приложения.
 * `tid` является id клиента для Contoso.com.
-* `iss` является эмитентом `https://api.botframework.com` маркеров.
+* `iss`является эмитентом маркеров. `https://api.botframework.com`
 
 Для обработки кода веб-сайт должен проверить маркер, убедиться, что он не истек, и проверить, был ли он подписан опубликованной конфигурацией OpenID. Кроме того, перед принятием запроса на вызов необходимо проверить, соответствует ли aud вашему ID приложения.
 
-Дополнительные сведения см. в [ссылке проверка входящие запросы.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs)
+Дополнительные сведения см. в [ссылке проверка входящие запросы](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs).
 
 ## <a name="next-step"></a>Следующий этап
 

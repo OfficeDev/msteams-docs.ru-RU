@@ -6,12 +6,12 @@ ms.author: rentu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 692eebc774de42bddb2f832cb22681991ac0d87b
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
+ms.openlocfilehash: 423e03e373edb1980186ea3dc43f2817d2e25636
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821383"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452566"
 ---
 # <a name="collaborate-on-teams-project-using-teams-toolkit"></a>Совместное использование Teams с помощью Teams набор средств
 
@@ -21,7 +21,7 @@ ms.locfileid: "62821383"
 
 * Предпосылки учетной записи
 
-    Для предоставления облачных ресурсов необходимо иметь следующие учетные записи. Дополнительные сведения см. в [приложении подготовка](accounts.md) учетных записей для создания Teams приложения.
+    Для предоставления облачных ресурсов необходимо иметь следующие учетные записи. Дополнительные сведения см. в приложении подготовка учетных записей [для создания Teams приложения](accounts.md).
 
   * Подписка на Microsoft 365
   * Azure с допустимой подпиской
@@ -40,19 +40,19 @@ ms.locfileid: "62821383"
 > [!NOTE]
 > Прежде чем добавлять сотрудников в среду, владельцу проекта необходимо [сначала обуявить](provision.md) проект.
 
-* В **разделе ENVIRONMENT** на Teams набор средств выберите **сотрудников**. Он отображает параметры Add **Microsoft 365 Teams App (с Azure AD App)** Владельцы и Microsoft 365 Teams **App (с Azure AD App) Владельцы**, как показано на следующих изображениях:
+* В **разделе ENVIRONMENT** на Teams набор средств выберите **сотрудников**. Он отображает параметры **Add Microsoft 365 Teams App (с Azure AD App)** Владельцы и Microsoft 365 Teams **App (с Azure AD App) Владельцы**, как показано на следующих изображениях:
 
   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/add collaborators.png" alt-text="сотрудники":::
 
-* Выберите **Владельцы Microsoft 365 Teams App (с Azure AD App)** и добавьте другой адрес электронной почты Microsoft 365 учетной записи в качестве соавтора. Добавленная учетная запись должна быть на том же клиенте, что и владелец проекта для удаленного отладки, как показано на изображении:
+* Выберите **владельцы Microsoft 365 Teams App (с Azure AD App)** и добавьте другой адрес электронной Microsoft 365 учетной записи в качестве соавтора. Добавленная учетная запись должна быть на том же клиенте, что и владелец проекта для удаленного отладки, как показано на изображении:
 
   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="добавление envi":::
 
-* Чтобы просмотреть сотрудников в текущей среде **, выберите Microsoft 365 Teams List Microsoft 365 Teams App (с Azure AD App) Владельцы**, затем сотрудники перечислены в канале вывода, как показано на следующем изображении:
+* Чтобы просмотреть сотрудников в текущей среде **, выберите Microsoft 365 Teams list Microsoft 365 Teams App (с Azure AD App)** Владельцы, затем сотрудники перечислены в канале вывода, как показано на следующем изображении:
 
   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/list of collaborators.png" alt-text="list":::
 
-* Нажмите кнопку GitHub.
+* Нажмите проект на GitHub.
 
 > [!NOTE]
 > Только что добавленный сотрудник не получает уведомлений. Project должен уведомить об этом коллегу.
@@ -74,7 +74,7 @@ ms.locfileid: "62821383"
 
 Вы не можете удалить сотрудников непосредственно из Teams набор средств расширения. Выполните следующие действия, чтобы удалить сотрудников вручную:
 
-  1. Перейдите Teams портал разработчика и выберите Teams приложение по имени или ID приложения.
+  1. Перейдите Teams портал разработчика и выберите Teams приложение по имени или iD приложения.
   2. Выберите **Owners** с левой панели.
   3. Выберите и удалите соавтора.
   4. Перейдите [Azure Active Directory](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps), выберите **регистрацию приложения** с левой панели и найдите приложение Azure AD.
@@ -82,6 +82,7 @@ ms.locfileid: "62821383"
   6. Выберите и удалите соавтора.
 
 > [!NOTE]
+>
 > * Сотрудник, добавленный в проект, не будет получать никаких уведомлений. Project должен уведомить об этом коллегу в автономном режиме.
 > * Соответствующие разрешения Azure должны устанавливаться администратором подписки Azure вручную на Microsoft Azure портале. Учетная запись Azure должна иметь роль участника для подписки, чтобы разработчики могли работать вместе для обеспечения и развертывания проекта TeamsFx.
 

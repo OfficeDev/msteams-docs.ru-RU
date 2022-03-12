@@ -5,12 +5,12 @@ keywords: Контекст командных ботов
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: 94d94f3f4c9c522a0fbccb448ba371e96da6c070
-ms.sourcegitcommit: 9bdd930523041377b52dadffbd8cd52a86a047d7
+ms.openlocfilehash: c4f2df1168b5e429b1d5a1107cd07264e10243bc
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443995"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453147"
 ---
 # <a name="get-context-for-your-microsoft-teams-bot"></a>Получите контекст для Microsoft Teams бота
 
@@ -20,9 +20,9 @@ ms.locfileid: "62443995"
 
 > [!NOTE]
 >
-> * Microsoft Teams API бота лучше всего получать через наши расширения для SDK-конструктора ботов.
+> * Microsoft Teams API бота лучше всего получить через наши расширения для SDK Bot Builder.
 > * Для C# или .NET скачайте пакет [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet.
-> * Для Node.js разработки функциональность bot Builder для Teams включена в [SDK bot Framework v4.6](https://github.com/microsoft/botframework-sdk).
+> * Для Node.js разработки функциональность bot Builder для Teams включена в [SDK Bot Framework v4.6](https://github.com/microsoft/botframework-sdk).
 
 ## <a name="fetch-the-team-roster"></a>Извлечение реестра команды
 
@@ -95,7 +95,7 @@ foreach (var member in members.AsTeamsChannelAccounts())
 await context.PostAsync($"People in this conversation: {sb.ToString()}");
 ```
 
-### <a name="nodejs-or-typescript-example"></a>Node.js или typeScript
+### <a name="nodejs-or-typescript-example"></a>Node.js или пример TypeScript
 
 ```typescript
 

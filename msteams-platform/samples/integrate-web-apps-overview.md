@@ -6,19 +6,19 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: none
 keywords: power platform power apps people picker deep link virtual agent assistant share-to-Teams
-ms.openlocfilehash: 0b19e5ae5a8427a77df0f4ec5fd3ea85a9abd682
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 274525b61ae95021cde41095e4bb37133e05b3e8
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355960"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453693"
 ---
 # <a name="integrate-web-apps"></a>Интеграция веб-приложений
 
 Вы можете обеспечить более насыщенный пользовательский интерфейс, интегрируя функции существующего веб-приложения в Microsoft Teams платформу. Убедитесь, [Teams рекомендации по разработке](~/concepts/design/understand-use-cases.md), чтобы сделать ваше приложение родным для Teams.
 В этом документе представлен обзор необходимых условий для интеграции веб-приложений с платформой Teams Power для создания приложений Power, Power Virtual Agents, Виртуальный помощник, шаблонов приложений, соединителей Shift, Moodle LMS, создания кнопки Share-to-Teams для вашего сайта, добавив Microsoft Teams вкладку в SharePoint, создание глубоких ссылок и интеграцию возможностей устройств.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для эффективной интеграции убедитесь в том, что необходимо лучше понимать следующие условия:
 
@@ -40,6 +40,9 @@ ms.locfileid: "63355960"
 ## <a name="microsoft-power-platform"></a>Платформа Microsoft Power
 
 Платформа Microsoft Power объединяет четыре надежные технологии Майкрософт, такие как Power BI, Power Apps, Power Automate и Power Virtual Agents в одной мощной платформе приложений. Эти технологии позволяют создавать решения, автоматизировать процессы, анализировать данные и создавать виртуальные агенты в единой и интегрированной среде.
+
+>[!NOTE]
+>Не следует использовать платформу Microsoft Power Для создания приложений, которые будут опубликованы в Teams магазине приложений. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
 
 ### <a name="power-apps"></a>Power Apps
 

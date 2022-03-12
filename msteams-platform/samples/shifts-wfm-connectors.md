@@ -7,12 +7,12 @@ ms.date: 03/09/2020
 ms.localizationpriority: medium
 keywords: Microsoft Teams кронос соединители
 ms.author: lajanuar
-ms.openlocfilehash: 21ea28e3b5d53226a2ab50ac22db31fef561596a
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 84e16f26dbe8597089e601e0d7eadca12a4a4446
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355743"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453105"
 ---
 # <a name="production-ready-shifts-connectors"></a>Готовые к работе соединители  
 
@@ -36,7 +36,7 @@ Teams управления рабочей силой (WFM) — это готов
 
 * **Бесшовная интеграция:** Интеграция решений WFM и Teams Shifts позволяет сотрудникам первой очереди использовать приложение Teams Shifts для просмотра или управления расписанием и временем смены, а также использовать все другие функции совместной работы, предоставляемые в Teams прямо с мобильного устройства или рабочего стола без необходимости переключения контекста на другое приложение.  
 
-**Просмотр открытых сдвигов в Teams**
+Просмотр открытых сдвигов в Teams:
 
 Представление сдвигов в Teams отображается на следующем изображении:
 

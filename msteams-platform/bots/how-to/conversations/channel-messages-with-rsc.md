@@ -4,12 +4,12 @@ author: surbhigupta12
 description: Получение всех сообщений канала с разрешениями RSC
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: d573e6e52f09537a9cb5e815529ff9ee2ab31cae
-ms.sourcegitcommit: 90587b1ec04bf20d716ed6feb8ccca4313e87f8c
+ms.openlocfilehash: b18b4f64d34abc1dec71c526c1f604978dc77cdf
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518313"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453455"
 ---
 # <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
@@ -17,20 +17,21 @@ ms.locfileid: "62518313"
 
 Теперь с помощью RSC можно запрашивать у владельцев команд согласие на получение ботом сообщений пользователей по стандартным каналам в команде без @mentioned. Эта возможность включена, указав `ChannelMessage.Read.Group` разрешение в манифесте включенного приложения RSC Teams. После настройки владельцы команд могут предоставить согласие во время процесса установки приложения.
 
-Дополнительные сведения о включаемом RSC для вашего [приложения](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#update-your-teams-app-manifest) см. в Teams.
+Дополнительные сведения о том, как включите RSC для вашего [приложения](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#update-your-teams-app-manifest), см. в Teams.
 
 ## <a name="enable-bots-to-receive-all-channel-messages"></a>Включить боты для получения всех сообщений канала
 
-Разрешение `ChannelMessage.Read.Group` RSC распространяется на ботов. С согласия пользователя это разрешение позволяет приложениям графиков получать все сообщения в беседе, а боты получают все сообщения канала без @mentioned.
+Разрешение `ChannelMessage.Read.Group` RSC распространяется на ботов. С согласия пользователя это разрешение позволяет приложениям графиков получать все сообщения в беседе, а боты - получать все сообщения канала без @mentioned.
 
 > [!NOTE]
+>
 > * Службы, которые нуждаются в доступе ко всем Teams данным сообщений, должны использовать API Graph, которые также предоставляют доступ к архивным данным в каналах и чатах.
 > * Боты должны использовать `ChannelMessage.Read.Group` разрешение RSC надлежащим образом для создания и улучшения взаимодействия пользователей в команде, иначе они не будут проходить утверждение магазина. Описание приложения должно включать использование ботом считыванных данных.
-> * Разрешение `ChannelMessage.Read.Group` RSC не может использоваться ботами для извлечения больших объемов данных клиентов. 
+> * Разрешение `ChannelMessage.Read.Group` RSC не может использоваться ботами для извлечения больших объемов данных клиентов.
 
 ## <a name="update-app-manifest"></a>Обновление манифеста приложения
 
-Чтобы бот получал все сообщения канала, RSC должен `ChannelMessage.Read.Group` быть настроен в манифесте приложения Teams с разрешения, указанного в свойстве`webApplicationInfo`.
+Чтобы бот получал все сообщения канала, RSC должен быть `ChannelMessage.Read.Group` настроен в манифесте приложения Teams с разрешения, указанного в свойстве`webApplicationInfo`.
 ![Обновление манифеста приложения](~/bots/how-to/conversations/Media/appmanifest.png)
 
 Ниже приводится пример `webApplicationInfo` объекта:
@@ -53,7 +54,7 @@ ms.locfileid: "62518313"
 
 ## <a name="sideload-in-a-team"></a>Боковая нагрузка в команде
 
-Чтобы проверить, получаются ли все сообщения канала в команде с RSC без @mentioned:
+Чтобы проверить, получаются ли все сообщения канала в команде с RSC, не будучи @mentioned:
 
 1. Выберите или создайте команду.
 1. Выберите эллипсы &#x25CF;&#x25CF;&#x25CF; левой области. Отображается выпадаемое меню.
@@ -93,7 +94,7 @@ ms.locfileid: "62518313"
 // When rsc is enabled the method will be called even when bot is addressed without being @mentioned
 protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
 {
-        await turnContext.SendActivityAsync(MessageFactory.Text("Using RSC the bot can recieve messages across channels in team without being @mentioned."));
+  await turnContext.SendActivityAsync(MessageFactory.Text("Using RSC the bot can recieve messages across channels in team without being @mentioned."));
 }
 ```
 
@@ -115,7 +116,7 @@ this.onMessage(async (context, next) => {
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Сообщения канала с разрешениями RSC| Microsoft Teams пример приложения, демонстрирующее, как бот может получать все сообщения канала с RSC без @mentioned.|  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/csharp) |    [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/nodejs) |
+|Сообщения канала с разрешениями RSC| Microsoft Teams пример приложения, демонстрирующее, как бот может получать все сообщения канала с помощью RSC без @mentioned.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

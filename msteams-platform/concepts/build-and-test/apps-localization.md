@@ -5,19 +5,19 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: команды публикуют язык локализации AppSource в офисе магазина
 ms.date: 05/15/2018
-ms.openlocfilehash: ec734017a807f744a4b44d7d3594638a5ec72b32
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 13325d323ec1d4d87f6cd5ff64c4a6c71552e01c
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355526"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452699"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 
 Рассмотрим следующие факторы, чтобы локализовать Microsoft Teams приложение:
 
 1. [Локализовать список AppSource](#localize-your-appsource-listing).
-1. [Локализовать строки в манифесте приложения](#localize-strings-in-your-app-manifest). 
+1. [Локализовать строки в манифесте приложения](#localize-strings-in-your-app-manifest).
 1. [Обработка локализованных текстовых сообщений от пользователей](#handle-localized-text-submissions-from-your-users).
 
 ## <a name="localize-your-appsource-listing"></a>Локализация списка AppSource
@@ -44,7 +44,7 @@ ms.locfileid: "63355526"
 
 ## <a name="localize-strings-in-your-app-manifest"></a>Локализация строк в манифесте приложения
 
-Необходимо использовать схему Microsoft Teams, `v1.5` а затем локализовать приложение. Это можно сделать, установив `$schema` атрибут в файле manifest.json `$schema` **https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json** `manifestVersion` или более высокий и обновив свойство до версии (`1.5`в данном случае). 
+Необходимо использовать схему Microsoft Teams, `v1.5` а затем локализовать приложение. Это можно сделать, установив `$schema` атрибут в файле manifest.json `$schema` **https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json** `manifestVersion` или более высокий и обновив свойство до версии (`1.5`в данном случае).
 
 Необходимо добавить свойство с `localizationInfo` языком по умолчанию, который поддерживает приложение. Язык по умолчанию используется в качестве конечного языка отката, если параметры клиента пользователя не совпадают ни с одним из дополнительных языков.
 
@@ -57,14 +57,14 @@ ms.locfileid: "63355526"
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "localizationInfo": {
-        "defaultLanguageTag": "en",
-        "additionalLanguages": [
-            {
-                "languageTag": "es-mx",
-                "file": "es-mx.json"
-            }
-        ]
-    }
+  "defaultLanguageTag": "en",
+  "additionalLanguages": [
+   {
+    "languageTag": "es-mx",
+    "file": "es-mx.json"
+   }
+  ]
+ }
   ...
 }
 ```
@@ -83,7 +83,6 @@ ms.locfileid: "63355526"
 }
 ```
 
-
 Вы можете предоставить дополнительные файлы json с переводами всех строк пользователя, стоящих перед вами в манифесте. Эти файлы должны соответствовать схеме [JSON-файла](../../resources/schema/localization-schema.md) `localizationInfo` локализации, и они должны быть добавлены в свойство манифеста. Каждый файл соотносится с языковым тегом, который Teams клиент для выбора соответствующих строк. Тег языка принимает форму, `<language>-<region>` но вы можете опустить `<region>` часть для всех регионов, поддерживаюных нужный язык.
 
 Клиент Teams применяет строки в следующем порядке: строки языка по умолчанию —> языка пользователя только строки -> языка пользователя + строки области пользователя.
@@ -93,14 +92,14 @@ ms.locfileid: "63355526"
 1. Клиент Teams берет строки "fr" и переописывает их строками "en".
 1. Переопиши строки "en" со строками "en-GB".
 
-Если язык пользователя настроен на "en-ca", в зависимости от выбора языка происходят следующие изменения: 
+Если язык пользователя настроен на "en-ca", в зависимости от выбора языка происходят следующие изменения:
 
 1. Клиент Teams берет строки "fr" и переописывает их строками "en".
 1. Так как локализация "en-ca" не поставляется, используется локализация "en".
 
 Если язык пользователя настроен на "es-es", Teams клиент принимает строки "fr". Клиент Teams не переопределяет строки ни с одним из языковых файлов, так как не предоставляется перевод "es" или "es-es".
 
-Поэтому в манифесте необходимо предоставить только переводы верхнего уровня, языка. Например, "en" вместо "en-ru". Необходимо предоставить переопределения уровня региона только для нескольких строк, которые в них нуждаются. 
+Поэтому в манифесте необходимо предоставить только переводы верхнего уровня, языка. Например, "en" вместо "en-ru". Необходимо предоставить переопределения уровня региона только для нескольких строк, которые в них нуждаются.
 
 ### <a name="example-manifestjson-change"></a>Пример изменения manifest.json
 

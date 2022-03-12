@@ -5,12 +5,12 @@ ms.topic: conceptual
 keywords: разработка командных ботов
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: afa83478ee478d74dbdedb5cd805719fc8434070
-ms.sourcegitcommit: 6573881f7e69d8e5ec8861f54df84e7d519f0511
+ms.openlocfilehash: de25a69d96e9cccf81c4fb04d827740b64f98a37
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60096551"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452608"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в Microsoft Teams приложения
 
@@ -27,51 +27,51 @@ ms.locfileid: "60096551"
 
 Бот появляется так же, как и любой другой член группы, с помощью который вы взаимодействуете в беседе, за исключением того, что он имеет шестиугольную иконку аватара и всегда находится в сети.
 
-Бот ведет себя по-разному в зависимости от того, в какой беседе он участвует. Боты в Teams поддерживают несколько видов бесед, называемых областью в [манифесте приложения.](~/resources/schema/manifest-schema.md)
+Бот ведет себя по-разному в зависимости от того, в какой беседе он участвует. Боты в Teams поддерживают несколько видов бесед, называемых области в [манифесте приложения](~/resources/schema/manifest-schema.md).
 
 * `teams` Также называются телефонные беседы.
 * `personal` Беседы между ботом и одним пользователем.
 * `groupChat` Беседа между ботом и двумя или более пользователями.
 
-Дополнительные сведения см. [в ссылке Беседа с Microsoft Teams ботом.](~/resources/bot-v3/bot-conversations/bots-conversations.md)
+Дополнительные сведения см. [в ссылке Беседа с Microsoft Teams ботом](~/resources/bot-v3/bot-conversations/bots-conversations.md).
 
-С Microsoft Teams приложениями вы можете сделать бота звездой вашего опыта или просто помощником. Боты распространяются как часть более широкого пакета приложений, который [](~/tabs/what-are-tabs.md) может включать другие возможности, такие как вкладки или [расширения обмена сообщениями.](~/messaging-extensions/what-are-messaging-extensions.md)
+С Microsoft Teams приложениями вы можете сделать бота звездой вашего опыта или просто помощником. Боты распространяются как часть более широкого пакета приложений, который может включать другие [возможности, такие](~/tabs/what-are-tabs.md) как вкладки или [расширения обмена сообщениями](~/messaging-extensions/what-are-messaging-extensions.md).
 
 ## <a name="bot-apis"></a>API бота
 
-Microsoft Teams поддерживает большую часть [Microsoft Bot Framework](https://dev.botframework.com/). (Если у вас уже есть бот, основанный на bot Framework, вы можете легко адаптировать его к работе в Microsoft Teams.) Мы рекомендуем использовать C# или Node.js, чтобы воспользоваться нашими [SDKs](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK Bot Builder:
+Microsoft Teams поддерживает большую [часть Microsoft Bot Framework.](https://dev.botframework.com/) (Если у вас уже есть бот, основанный на bot Framework, вы можете легко адаптировать его к работе в Microsoft Teams.) Мы рекомендуем использовать C# или Node.js использовать наши [SDKs](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK Bot Builder:
 
-* Использование специализированных типов карт, таких как Office 365 connector.
-* Потребление и настройка Teams определенных каналов данных о действиях.
+* Использование специализированных типов карт, таких как Office 365 соединители.
+* Потребление и установка Teams определенных каналов данных о действиях.
 * Обработка запросов на расширение обмена сообщениями.
 
 В расширениях SDK устанавливаются зависимости, в том числе SDK bot Builder.
 
-* **.NET** Чтобы использовать Microsoft Teams для SDK bot Builder для .NET, установите пакет [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet в Visual Studio проекте. Для Node.js разработки функциональность BotBuilder для Microsoft Teams была включена в [SDK](https://github.com/microsoft/botframework-sdk) Bot Framework по ст. 4.6.
+* **.NET** Чтобы использовать Microsoft Teams для SDK bot Builder для .NET, установите пакет [Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet в Visual Studio проекте. Для Node.js разработки функциональность BotBuilder для Microsoft Teams была включена в [SDK Bot Framework по](https://github.com/microsoft/botframework-sdk) данным v4.6.
 
 > [!IMPORTANT]
-> Вы можете разрабатывать Teams в любой другой технологии веб-программирования и вызывать [API](/bot-framework/rest-api/bot-framework-rest-overview) REST Bot Framework напрямую, но все обработки маркеров необходимо выполнять самостоятельно.
+> Вы можете разрабатывать Teams в любой другой технологии веб-программирования и вызывать [API REST Bot Framework](/bot-framework/rest-api/bot-framework-rest-overview) напрямую, но все обработки маркеров необходимо выполнять самостоятельно.
 
-*Teams App Studio* помогает создавать и настраивать манифест приложения и может создавать бот Bot Framework для вас. Он также содержит библиотеку React управления и интерактивный конструктор карт. 
+*Teams App Studio* помогает создавать и настраивать манифест приложения и может создавать бот Bot Framework для вас. Он также содержит библиотеку React управления и интерактивный конструктор карт.
 
 ## <a name="outgoing-webhooks"></a>Исходящие веб-перехватчики
 
-Исходяющие веб-окки позволяют создать простой бот для базового взаимодействия, например, при старте рабочего процесса или других простых команд, которые могут потребоваться. Исходяющие веб-оки живут только в команде, в которой вы их создаете, и предназначены для простых процессов, специфических для рабочего процесса вашей компании. Дополнительные сведения см. [в веб-сайтах.](~/webhooks-and-connectors/how-to/add-outgoing-webhook.md)
+Исходяющие веб-окки позволяют создать простой бот для базового взаимодействия, например, при старте рабочего процесса или других простых команд, которые могут потребоваться. Исходяющие веб-оки живут только в команде, в которой вы их создаете, и предназначены для простых процессов, специфических для рабочего процесса вашей компании. Дополнительные сведения см. [в исходяющих веб-сайтах](~/webhooks-and-connectors/how-to/add-outgoing-webhook.md).
 
 ## <a name="build-a-great-teams-bot"></a>Создание отличного Teams бота
 
 Следующие темы будут направлять вас в процессе создания отличного бота для Teams:
 
-* [Создание бота.](~/resources/bot-v3/bots-create.md)Воспользоваться преимуществами отличных инструментов, документации и сообщества, предоставляемых командой Bot Framework.
-* [Поговорите с ботом.](~/resources/bot-v3/bot-conversations/bots-conversations.md)Добавьте основной поток беседы и используйте функции, определенные каналу. Если вы разрабатываете в .NET или Node.js, используйте наши расширения для SDK bot Builder, чтобы упростить работу.
-* [Использование карт в боте:](~/resources/bot-v3/bots-cards.md)разработка карт для связи и реагировать на отклик пользователей.
+* [Создание бота](~/resources/bot-v3/bots-create.md). Воспользоваться преимуществами отличных инструментов, документации и сообщества, предоставляемых командой Bot Framework.
+* [Поговорите с ботом](~/resources/bot-v3/bot-conversations/bots-conversations.md): Добавьте основной поток беседы и используйте функции, определенные каналу. Если вы разрабатываете в .NET или Node.js, используйте наши расширения для SDK bot Builder, чтобы упростить работу.
+* [Использование карт в боте](~/resources/bot-v3/bots-cards.md): разработка карт для связи и реагировать на реакцию пользователей.
 * [Реагирование на события бота](~/resources/bot-v3/bots-notifications.md)
-* [Боты только для уведомлений.](~/resources/bot-v3/bots-notification-only.md)Использование ботов для отправки уведомлений для вашего приложения.
-* [Получить контекст.](~/resources/bot-v3/bots-context.md)Сведения о пользователе.
-* [Меню бота.](~/resources/bot-v3/bots-menus.md)Использование меню в ботах.
-* [Боты и файлы:](~/resources/bot-v3/bots-files.md)отправка и получение файлов от ботов.
-* [Использование вкладок с ботами:](~/resources/bot-v3/bots-with-tabs.md)создание вкладки и боты работают вместе.
-* [Проверьте бот.](~/resources/bot-v3/bots-test.md)Добавьте бот для личных или командных бесед, чтобы увидеть его в действии.
+* [Боты только для уведомлений](~/resources/bot-v3/bots-notification-only.md). Использование ботов для отправки уведомлений для вашего приложения.
+* [Получите контекст](~/resources/bot-v3/bots-context.md). Получите сведения о пользователе.
+* [Меню бота](~/resources/bot-v3/bots-menus.md). Использование меню в ботах.
+* [Боты и файлы](~/resources/bot-v3/bots-files.md): отправка и получение файлов от ботов.
+* [Использование вкладок с ботами](~/resources/bot-v3/bots-with-tabs.md): создание вкладки и боты работают вместе.
+* [Проверьте бот](~/resources/bot-v3/bots-test.md). Добавьте бот для личных или командных бесед, чтобы увидеть его в действии.
 
 ## <a name="see-also"></a>См. также
 

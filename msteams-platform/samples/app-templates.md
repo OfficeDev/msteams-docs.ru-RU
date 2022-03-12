@@ -6,12 +6,12 @@ keywords: Microsoft Teams примеры демонстрации шаблоно
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: e5821894793ae99ae559ebedba068331a48b1aed
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 961ad0ff22a528dc1267023d4f4ff288ba7202ca
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398745"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453140"
 ---
 # <a name="app-templates-for-microsoft-teams"></a>Шаблоны приложений для Microsoft Teams
 
@@ -111,7 +111,8 @@ Icebreaker это Microsoft Teams[,](../bots/what-are-bots.md) который п
 Примеры кода шаблона приложений — это коллекция примеров приложений для Microsoft Teams платформы.
 
 > [!NOTE]
-> Корпорация Майкрософт не активно управляет исходным кодом. Полный исходный код является открытым исходным кодом, и вы можете исследовать, вить и изменять исходный код, чтобы соответствовать вашим определенным требованиям.
+> * Корпорация Майкрософт не активно управляет исходным кодом. Полный исходный код является открытым исходным кодом, и вы можете исследовать, вить и изменять исходный код, чтобы соответствовать вашим определенным требованиям.
+> * Не следует использовать платформу Microsoft Power Для создания приложений, которые будут опубликованы в Teams магазине приложений. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
 
 В следующей таблице описываются примеры кода шаблона приложений:  
 

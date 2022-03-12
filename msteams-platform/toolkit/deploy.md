@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 0eeda4842ad3f0443d46b5075b1520b0042130ec
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
+ms.openlocfilehash: 9c15d145fb4f37073342edc9bb8d07f2fe0b53e6
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768380"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63452552"
 ---
 # <a name="deploy-to-the-cloud"></a>Развертывание в облаке
 
@@ -26,14 +26,16 @@ Teams набор средств позволяет развертывать ил
 * [Установка Teams набор средств](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии v3.0.0+.
 
 > [!NOTE]
-> * Убедитесь, Teams проект приложения открыт в коде VS.
-> * Перед развертыванием кода проекта в облаке [необходимо уместить облачные ресурсы.](provision.md)
+>
+> * Убедитесь, что Teams проекта приложения открыт в коде VS.
+> * Перед развертыванием кода проекта в облаке [закачаем облачные ресурсы](provision.md).
 
 ## <a name="deploy-teams-apps-using-teams-toolkit"></a>Развертывание Teams с помощью Teams набор средств
 
-Руководства по началу работы помогают развернуть с помощью Teams набор средств. Вы можете использовать следующее, чтобы развернуть Teams приложение:
+Руководства по началу работы помогают развернуть с помощью Teams набор средств. Вы можете использовать следующее для развертывания Teams приложения:
+
 * [Развертывание приложения в Azure](/microsoftteams/platform/sbs-gs-javascript?tabs=vscode%2Cvsc%2Cviscode%2Cvcode&tutorial-step=8&branch)
-* [Развертывание приложения для SharePoint](/microsoftteams/platform/sbs-gs-spfx?tabs=vscode%2Cviscode&tutorial-step=4&branch)
+* [Развертывание приложения в SharePoint](/microsoftteams/platform/sbs-gs-spfx?tabs=vscode%2Cviscode&tutorial-step=4&branch)
 
 ## <a name="details-on-teams-app-workload"></a>Сведения о рабочей нагрузке Teams приложения
 

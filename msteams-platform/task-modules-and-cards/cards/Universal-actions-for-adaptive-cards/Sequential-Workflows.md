@@ -4,18 +4,18 @@ description: Узнайте о последовательном рабочего
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 468fd5168c58e7bc99b4f269e10f76484fc16b1d
-ms.sourcegitcommit: c65a868744e4108b5d786de2350981e3f1f05718
+ms.openlocfilehash: ce715749d1b9fb5e1cff6457eebd3cac9674c58c
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62081053"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453252"
 ---
 # <a name="sequential-workflows"></a>Последовательные рабочие процессы
 
 Адаптивные карты теперь поддерживают секентальные процессы, которые обновляются в действии пользователя. С помощью последовательного рабочего процесса адаптивные карточки обновляются в действии пользователя, и пользователь может пройти через ряд карт, которые требуют ввода пользователя. `Action.Execute` поддерживает последовательность процессов, что позволяет разработчикам ботов возвращать адаптивные карты в ответ на действия пользователя.
 
-Например, возьмем сценарий, в котором кафетерий хочет сделать заказ для команды или канала. При выборе пользователя для различных элементов, таких как продукты питания и напитки, можно записывать `Action.Execute` последовательно. Пользователь также может проходить по картам по логике, определенной разработчиком бота. <br/>
+Например, возьмем сценарий, в котором кафетерий хочет сделать заказ для команды или канала. При `Action.Execute` выборе пользователя для различных элементов, таких как продукты питания и напитки, можно записывать последовательно. Пользователь также может проходить по картам по логике, определенной разработчиком бота. <br/>
 
 На следующем изображении показан секентальный рабочий процесс:
 
@@ -26,7 +26,7 @@ ms.locfileid: "62081053"
 :::image type="content" source="~/assets/images/adaptive-cards/universal-bots-catering-bot.png" alt-text="Состояния бота кейтеринга":::
 
 > [!NOTE]
-> Чтобы синхронизировать прогресс пользователя на устройствах, используйте свойство в `refresh` Adaptive Card JSON.
+> Чтобы синхронизировать прогресс пользователя на устройствах, используйте `refresh` свойство в Adaptive Card JSON.
 
 ## <a name="sequential-workflow-for-adaptive-cards"></a>Последовательное рабочий процесс для адаптивных карт
 
@@ -127,9 +127,8 @@ var adaptiveCardResponse = JObject.FromObject(new
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Бот организации питания Teams | Создайте бот, который принимает порядок питания с помощью адаптивных карт. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
+| Бот организации питания Teams | Создайте бот, который принимает порядок питания с помощью адаптивных карт. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
 | Адаптивные карточки последовательного рабочего процесса | Демонстрация того, как реализовать последовательное рабочий процесс, пользовательские представления и адаптивные карты в ботах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs) |
-
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

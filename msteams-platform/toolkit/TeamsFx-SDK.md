@@ -6,31 +6,37 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
+ms.openlocfilehash: 1e78827d4105eefb112bef40d059804a94050f2d
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453623"
 ---
-
 # <a name="teamsfx-sdk-for-typescript-or-javascript"></a>TeamsFx SDK для TypeScript или JavaScript
 
 TeamsFx стремится сократить задачи реализации удостоверений и доступа к облачным ресурсам к однострочному заявлению с нулевой конфигурацией.
 
 Используйте библиотеку для:
 
-- Аналогичным образом можно получить доступ к основным функциональным возможностям в клиентской и серверной среде.
-- Напишите код проверки подлинности пользователей упрощенным способом.
+* Аналогичным образом можно получить доступ к основным функциональным возможностям в клиентской и серверной среде.
+* Напишите код проверки подлинности пользователей упрощенным способом.
 
 ## <a name="get-started"></a>Начало работы
 
-TeamsFx SDK предварительно настроен в проекте scaffolded с помощью инструментария TeamsFx или CLI.
-Дополнительные сведения см. [в Teams app project](https://github.com/OfficeDev/TeamsFx/blob/main/packages/vscode-extension/README.md).
+Пакет SDK TeamsFx предварительно настроен в проекте со сформированными шаблонами с помощью набора средств TeamsFx или CLI.
+Дополнительные сведения см. [в Teams проекта приложения](https://github.com/OfficeDev/TeamsFx/blob/main/packages/vscode-extension/README.md).
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
-- Node.js версии `10.x.x` или более поздней версии.
-- Если в проекте установлены связанные `botbuilder` [пакеты](https://github.com/Microsoft/botbuilder-js#packages) в качестве зависимостей, убедитесь, что они имеют ту же версию и версия `>= 4.9.3`. ([Проблема — все пакеты BOTBUILDER должны быть одной и той же версии](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548))
+* Node.js версии `10.x.x` или более поздней версии.
+* Если в проекте установлены связанные `botbuilder` [пакеты](https://github.com/Microsoft/botbuilder-js#packages) в качестве зависимостей, убедитесь, что они имеют ту же версию и версия `>= 4.9.3`. ([Проблема — все пакеты BOTBUILDER должны быть одной и той же версии](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548))
 
-Дополнительные сведения см. в указанных ниже статьях.
-* [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk) 
-* [Пакет (NPM)](https://www.npmjs.com/package/@microsoft/teamsfx) 
-* [Справочная документация по API](https://aka.ms/teamsfx-sdk-help) 
+Дополнительные сведения см. в статьях:
+
+* [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk)
+* [Пакет (NPM)](https://www.npmjs.com/package/@microsoft/teamsfx)
+* [Справочная документация по API](https://aka.ms/teamsfx-sdk-help)
 * [Примеры](https://github.com/OfficeDev/TeamsFx-Samples)
 
 ### <a name="install-the-microsoftteamsfx-package"></a>Установка пакета `@microsoft/teamsfx`
@@ -43,9 +49,9 @@ npm install @microsoft/teamsfx
 
 ### <a name="create-and-authenticate-microsoftgraphclient"></a>Создание и проверка подлинности `MicrosoftGraphClient`
 
-Чтобы создать объект клиентской диаграммы для доступа к API Graph Microsoft, необходимо проверить подлинность учетных данных. SDK предоставляет несколько классов учетных данных для выбора, отвечающих различным требованиям. Перед использованием учетных данных необходимо загрузить конфигурацию.
+Чтобы создать объект клиента графа для доступа к API Graph Microsoft, для проверки подлинности необходимы учетные данные. SDK предоставляет несколько классов учетных данных для выбора, отвечающих различным требованиям. Перед использованием учетных данных необходимо загрузить конфигурацию.
 
-- В среде браузера необходимо явно передать параметры конфигурации. Проект scaffolded React предоставил переменные среды для использования.
+* В среде браузера необходимо явно передать параметры конфигурации. Проект scaffolded React предоставил переменные среды для использования.
 
 ```ts
 loadConfiguration({
@@ -56,7 +62,7 @@ loadConfiguration({
 });
 ```
 
-- В среде NodeJS, такой как Azure Function, можно просто позвонить `loadConfiguration`. Он будет загружаться из переменных среды по умолчанию.
+* В среде NodeJS, такой как Azure Function, можно просто позвонить `loadConfiguration`. Он будет загружаться из переменных среды по умолчанию.
 
 ```ts
 loadConfiguration();
@@ -77,12 +83,13 @@ const credential = new TeamsUserCredential();
 const graphClient = createMicrosoftGraphClient(credential, ["User.Read"]); // Initializes MS Graph SDK using our MsGraphAuthProvider
 const profile = await graphClient.api("/me").get();
 ```
+
 > [!NOTE]
 > Этот класс учетных данных можно использовать в приложении браузера, например Teams Tab App.
 
-#### <a name="using-microsoft-365-tenant-credential"></a>Использование Microsoft 365 учетных данных клиента
+#### <a name="using-microsoft-365-tenant-credential"></a>Использование учетных данных Microsoft 365 клиента
 
-Microsoft 365 учетные данные клиента не требуют взаимодействия с пользователем Teams приложения. Вы можете вызвать Microsoft Graph в качестве приложения.
+Microsoft 365 учетных данных клиента не требуется для взаимодействия с пользователем Teams приложения. Вы можете вызвать Microsoft Graph в качестве приложения.
 
 Используйте следующий фрагмент:
 
@@ -101,11 +108,11 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 Классы учетных данных реализуют `TokenCredential` интерфейс, широко используемый в API библиотек Azure. Они предназначены для предоставления маркеров доступа для определенных областей. Следующие классы учетных данных представляют различные удостоверения в определенных сценариях:
 
-* `TeamsUserCredential`представляют Teams текущего пользователя. С помощью этой учетной записи будет запрашиваться согласие пользователя в первый раз.
-* `M365TenantCredential`представляют Microsoft 365 клиента. Он обычно используется, когда пользователь не участвует, как работа автоматизации с срабатывным временем.
+* `TeamsUserCredential`представляет Teams текущего пользователя. С помощью этой учетной записи будет запрашиваться согласие пользователя в первый раз.
+* `M365TenantCredential`представляет Microsoft 365 клиента. Он обычно используется, когда пользователь не участвует, как работа автоматизации с срабатывным временем.
 * `OnBehalfOfUserCredential` используется от имени потока. Ему необходим маркер доступа, и вы можете получить новый маркер для различных областей. Он предназначен для использования в сценариях Azure Function или Bot.
 
-### <a name="bots"></a>Боты
+### <a name="bots"></a>боты;
 
 Классы, связанные с ботом, хранятся в [папке бота](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/bot).
 
@@ -135,7 +142,7 @@ try {
 }
 ```
 
-Если экземпляр учетных данных используется в других библиотеках, таких как Microsoft Graph, возможно, ошибка будет поймана и преобразована.
+И если экземпляр учетных данных используется в других библиотеках, таких как Microsoft Graph, не исключено, что ошибка будет поймана и преобразована.
 
 ```ts
 try {

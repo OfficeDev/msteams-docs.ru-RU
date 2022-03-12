@@ -5,29 +5,29 @@ description: Узнайте, как обрабатывать начальное 
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: b30388e88505e9d0049da5271187c06c68efd5f5
-ms.sourcegitcommit: af1d0a4041ce215e7863ac12c71b6f1fa3e3ba81
+ms.openlocfilehash: 30ef2cdbe5bde14120a0ba8b17040c26a5de2a45
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889183"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453483"
 ---
 # <a name="create-and-send-the-task-module"></a>Создание и отправка модуля задач
- 
+
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 
-Модуль задач можно создать с помощью адаптивной карты или встроенного веб-представления. Чтобы создать модуль задач, необходимо выполнить процесс, называемый начальным запросом на вызов. Этот документ охватывает начальный запрос на вызов, свойства активности полезной нагрузки при вызове модуля задачи из чата 1:1, группового чата, канала (новая должность), канала (ответ на поток) и командного окна. 
+Модуль задач можно создать с помощью адаптивной карты или встроенного веб-представления. Чтобы создать модуль задач, необходимо выполнить процесс, называемый начальным запросом на вызов. Этот документ охватывает начальный запрос на вызов, свойства активности полезной нагрузки при вызове модуля задачи из чата 1:1, группового чата, канала (новая должность), канала (ответ на поток) и командного окна.
 > [!NOTE]
 > Если вы не заполняете модуль задач параметрами, определенными в манифесте приложения, необходимо создать модуль задач для пользователей с помощью адаптивной карты или встроенного веб-представления.
 
 ## <a name="the-initial-invoke-request"></a>Начальный запрос на вызов
 
-В процессе первоначального запроса на вызов служба получает объект типа, и необходимо ответить объектом, содержащим адаптивную карту или URL-адрес встроенного `Activity` `composeExtension/fetchTask` `task` веб-представления. Наряду со стандартными свойствами активности бота, начальная загрузка ссылок содержит следующие метаданные запроса:
+В процессе первоначального `Activity` `composeExtension/fetchTask`запроса на вызов служба получает объект типа, `task` и необходимо ответить объектом, содержащим адаптивную карту или URL-адрес встроенного веб-представления. Наряду со стандартными свойствами активности бота, начальная загрузка ссылок содержит следующие метаданные запроса:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса. Это должно быть `invoke` . |
-|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
+|`type`| Тип запроса. Это должно быть `invoke`. |
+|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask`. |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
 |`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
@@ -35,8 +35,8 @@ ms.locfileid: "60889183"
 |`channelData.channel.id`| ID канала (если запрос был сделан в канале). |
 |`channelData.team.id`| Team ID (если запрос был сделан в канале). |
 |`value.commandId` | Содержит ID вызываемой команды. |
-|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default` или `contrast` `dark` . |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose`. |
+|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default`или `contrast` `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -70,14 +70,14 @@ ms.locfileid: "60889183"
   "name": "composeExtension/fetchTask"
 ```
 
-## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-11-chat"></a>Свойства активности полезной нагрузки при вызове модуля задач из чата 1:1 
+## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-11-chat"></a>Свойства активности полезной нагрузки при вызове модуля задач из чата 1:1
 
 Свойства активности полезной нагрузки при вызове модуля задач из чата 1:1 перечислены следующим образом:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса. Это должно быть `invoke` . |
-|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
+|`type`| Тип запроса. Это должно быть `invoke`. |
+|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask`. |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
 |`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
@@ -85,8 +85,8 @@ ms.locfileid: "60889183"
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`ChannelData.legacy. replyToId`| Получает или задает ID сообщения, на которое это сообщение является ответом. |
 |`value.commandId` | Содержит ID вызываемой команды. |
-|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default` или `contrast` `dark` . |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose`. |
+|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default`или `contrast` `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -121,14 +121,14 @@ ms.locfileid: "60889183"
 }
 ```
 
-## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-group-chat"></a>Свойства активности полезной нагрузки при вызове модуля задач из группового чата 
+## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-group-chat"></a>Свойства активности полезной нагрузки при вызове модуля задач из группового чата
 
 Свойства активности полезной нагрузки при вызове модуля задач из группового чата перечислены следующим образом:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса. Это должно быть `invoke` . |
-|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
+|`type`| Тип запроса. Это должно быть `invoke`. |
+|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask`. |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
 |`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
@@ -136,8 +136,8 @@ ms.locfileid: "60889183"
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`ChannelData.legacy. replyToId`| Получает или задает ID сообщения, на которое это сообщение является ответом. |
 |`value.commandId` | Содержит ID вызываемой команды. |
-|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default` или `contrast` `dark` . |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose`. |
+|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default`или `contrast` `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -220,14 +220,14 @@ ms.locfileid: "60889183"
 }
 ```
 
-## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-channel-new-post"></a>Свойства активности полезной нагрузки при вызове модуля задач из канала (новая публикация) 
+## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-channel-new-post"></a>Свойства активности полезной нагрузки при вызове модуля задач из канала (новая публикация)
 
 Свойства активности полезной нагрузки при вызове модуля задач из канала (новая должность) перечислены следующим образом:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса. Это должно быть `invoke` . |
-|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
+|`type`| Тип запроса. Это должно быть `invoke`. |
+|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask`. |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
 |`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
@@ -237,8 +237,8 @@ ms.locfileid: "60889183"
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`ChannelData.legacy. replyToId`| Получает или задает ID сообщения, на которое это сообщение является ответом. |
 |`value.commandId` | Содержит ID вызываемой команды. |
-|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default` `contrast` , или `dark` . |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose`. |
+|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default`, `contrast`или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -286,14 +286,14 @@ ms.locfileid: "60889183"
 }
 ```
 
-## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-channel-reply-to-thread"></a>Свойства активности полезной нагрузки при вызове модуля задач из канала (ответ на поток) 
+## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-channel-reply-to-thread"></a>Свойства активности полезной нагрузки при вызове модуля задач из канала (ответ на поток)
 
 Свойства активности полезной нагрузки при вызове модуля задач из канала (ответ на поток) перечислены следующим образом:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса. Это должно быть `invoke` . |
-|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
+|`type`| Тип запроса. Это должно быть `invoke`. |
+|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask`. |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
 |`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
@@ -303,8 +303,8 @@ ms.locfileid: "60889183"
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`ChannelData.legacy. replyToId`| Получает или задает ID сообщения, на которое это сообщение является ответом. |
 |`value.commandId` | Содержит ID вызываемой команды. |
-|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default` или `contrast` `dark` . |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose`. |
+|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default`или `contrast` `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -395,22 +395,22 @@ ms.locfileid: "60889183"
 }
 ```
 
-## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-command-box"></a>Свойства активности полезной нагрузки при вызове модуля задач из командного окна 
+## <a name="payload-activity-properties-when-a-task-module-is-invoked-from-a-command-box"></a>Свойства активности полезной нагрузки при вызове модуля задач из командного окна
 
 Свойства активности полезной нагрузки при вызове модуля задач из командного окна перечислены следующим образом:
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Тип запроса. Это должно быть `invoke` . |
-|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask` . |
+|`type`| Тип запроса. Это должно быть `invoke`. |
+|`name`| Тип команды, выданной службе. Это должно быть `composeExtension/fetchTask`. |
 |`from.id`| ID пользователя, отправив запрос. |
 |`from.name`| Имя пользователя, отправив запрос. |
 |`from.aadObjectId`| Azure Active Directory объекта пользователя, отправив запрос. |
 |`channelData.tenant.id`| Идентификатор клиента Azure Active Directory. |
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`value.commandId` | Содержит ID вызываемой команды. |
-|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose` . |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default` `contrast` , или `dark` . |
+|`value.commandContext` | Контекст, который вызвал событие. Это должно быть `compose`. |
+|`value.context.theme` | Клиентская тема пользователя, полезная для встраиваемого форматирования веб-просмотра. Он должен быть `default`, `contrast`или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -457,9 +457,9 @@ ms.locfileid: "60889183"
 }
 ```
 
-### <a name="example"></a>Пример 
+### <a name="example"></a>Пример
 
-В следующем разделе кода приводится пример `fetchTask` запроса:
+В следующем разделе кода приводится пример запроса `fetchTask` :
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -543,7 +543,8 @@ class TeamsMessagingExtensionsActionPreviewBot extends TeamsActivityHandler {
 
 ## <a name="initial-invoke-request-from-a-message"></a>Начальный запрос на вызов из сообщения
 
-Если бот вызывается из сообщения, объект в первоначальном запросе на вызов должен содержать сведения о сообщении, из которых вызывается расширение `value` обмена сообщениями. Массивы и массивы необязательны, и они не присутствуют, если в исходном сообщении нет реакций или `reactions` `mentions` упоминаний. В следующем разделе приводится пример `value` объекта:
+Если бот вызывается из сообщения, `value` объект в первоначальном запросе на вызов должен содержать сведения о сообщении, из которых вызывается расширение обмена сообщениями. Массивы `reactions` `mentions` и массивы необязательны, и они не присутствуют, если в исходном сообщении нет реакций или упоминаний.
+В следующем разделе приводится пример объекта `value` :
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -643,27 +644,27 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ## <a name="respond-to-the-fetchtask"></a>Ответ на fetchTask
 
-Откликнитесь на запрос на вызов с помощью объекта, который содержит объект с адаптивной картой или `task` `taskInfo` веб-URL-адресом, или простое строковом сообщении.
+Откликнитесь на запрос на вызов `task` `taskInfo` с помощью объекта, который содержит объект с адаптивной картой или веб-URL-адресом, или простое строковом сообщении.
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Может быть либо `continue` представить форму, либо `message` простое всплывающее всплывающее. |
-|`value`| Объект `taskInfo` для формы или для `string` сообщения. |
+|`type`| Может быть либо `continue` представить форму, `message` либо простое всплывающее всплывающее. |
+|`value`| Объект для `taskInfo` формы или для `string` сообщения. |
 
 Схема объекта taskInfo заключается в:
 
 |Имя свойства|Назначение|
 |---|---|
 |`title`| Название модуля задач.|
-|`height`| Он должен быть либо integer (в пикселях), или `small` `medium` , , `large` .|
-|`width`| Он должен быть либо integer (в пикселях), или `small` `medium` , , `large` .|
+|`height`| Он должен быть либо integer (в пикселях), или `small`, `medium`, `large`.|
+|`width`| Он должен быть либо integer (в пикселях), или `small`, `medium`, `large`.|
 |`card`| Адаптивная карта, определяющая форму (при ее использовании).
 |`url`| URL-адрес, открытый внутри модуля задач в качестве встроенного веб-представления.|
 |`fallbackUrl`| Если клиент не поддерживает функцию модуля задач, этот URL-адрес открывается на вкладке браузера. |
 
 ### <a name="respond-to-the-fetchtask-with-an-adaptive-card"></a>Ответ на fetchTask с помощью адаптивной карты
 
-При использовании адаптивной карты необходимо отвечать объектом с `task` `value` объектом, содержащим адаптивную карту.
+При использовании адаптивной карты необходимо `task` отвечать объектом с объектом `value` , содержащим адаптивную карту.
 
 #### <a name="example"></a>Пример
 
@@ -821,7 +822,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 ### <a name="create-a-task-module-with-an-embedded-web-view"></a>Создание модуля задач со встроенным веб-представлением
 
-При использовании встроенного веб-представления необходимо отвечать объектом с объектом, содержащим URL-адрес, в веб-форму, которую необходимо `task` `value` загрузить. Домены любого URL-адреса, который необходимо загрузить, должны быть включены в массив `validDomains` манифеста приложения. Дополнительные сведения о создании встроенного веб-представления см. в [документации по модулям задач.](~/task-modules-and-cards/what-are-task-modules.md) 
+При использовании встроенного веб-представления `task` `value` необходимо отвечать объектом с объектом, содержащим URL-адрес, в веб-форму, которую необходимо загрузить. Домены любого URL-адреса, который необходимо загрузить, `validDomains` должны быть включены в массив манифеста приложения. Дополнительные сведения о создании встроенного веб-представления см. в [документации по модулям задач](~/task-modules-and-cards/what-are-task-modules.md).
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
@@ -899,9 +900,9 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 Если приложение содержит разговорный бот, установите бот в беседе и загрузив модуль задач. Бот полезен для получения дополнительного контекста для модуля задач. Примером этого сценария является извлечение списка для заполнения управления сборщиком людей или списка каналов в команде.
 
-Когда расширение обмена сообщениями получает вызов, проверьте, установлен ли бот в текущем контексте для `composeExtension/fetchTask` облегчения потока. Например, проверьте поток с помощью вызова реестра получения. Если бот не установлен, верни адаптивную карту с действием, которое запрашивает у пользователя установку бота. Пользователь должен иметь разрешение на установку приложений в этом расположении для проверки. Если установка приложения не увенчается успехом, пользователь получает сообщение, чтобы связаться с администратором.
+Когда расширение обмена сообщениями получает `composeExtension/fetchTask` вызов, проверьте, установлен ли бот в текущем контексте для облегчения потока. Например, проверьте поток с помощью вызова реестра получения. Если бот не установлен, верни адаптивную карту с действием, которое запрашивает у пользователя установку бота. Пользователь должен иметь разрешение на установку приложений в этом расположении для проверки. Если установка приложения не увенчается успехом, пользователь получает сообщение, чтобы связаться с администратором.
 
-#### <a name="example"></a>Пример 
+#### <a name="example"></a>Пример
 
 В следующем разделе кода приводится пример ответа:
 
@@ -929,9 +930,9 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 }
 ```
 
-После установки разговорного бота он получает еще одно сообщение с вызовом `name = composeExtension/submitAction` и `value.data.msteams.justInTimeInstall = true` .
+После установки разговорного бота он получает еще одно сообщение с вызовом `name = composeExtension/submitAction`и `value.data.msteams.justInTimeInstall = true`.
 
-#### <a name="example"></a>Пример 
+#### <a name="example"></a>Пример
 
 В следующем разделе кода приводится пример ответа задачи на вызов:
 
@@ -959,9 +960,9 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 Ответ на вызов задачи должен быть похож на ответ установленного бота.
 
-#### <a name="example"></a>Пример 
+#### <a name="example"></a>Пример
 
-В следующем разделе кода приводится пример установки приложения с адаптивной картой вовремя: 
+В следующем разделе кода приводится пример установки приложения с адаптивной картой вовремя:
 
 ```csharp
 private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
@@ -982,14 +983,14 @@ private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
 
 ## <a name="code-sample"></a>Пример кода
 
-| Имя образца           | Описание | .NET    | Node.js   |   
+| Имя образца           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | 
-|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Teams расширения обмена сообщениями| Описывает, как определить команды действий, создать модуль задач и реагировать на отправку действия модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
+|Teams расширения обмена сообщениями   |  Описывает, как определить команды поиска и реагировать на поиски.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Следующий этап
 
-> [!div class="nextstepaction"] 
+> [!div class="nextstepaction"]
 > [Ответ на команду действий](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
 
 ## <a name="see-also"></a>См. также
