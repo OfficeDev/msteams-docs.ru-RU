@@ -501,14 +501,14 @@
       href: samples/integrate-web-apps-overview.md
     - name: Вопросы интеграции Teams
       href: samples/integrating-web-apps.md
+    - name: Создание виртуального помощника
+      href: samples/virtual-assistant.md
     - name: Приложения Power Platform
       items:
         - name: Обзор
           href: samples/teams-low-code-solutions.md
         - name: Добавление чатбота Power Virtual Agents
           href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
-        - name: Создание виртуального помощника
-          href: samples/virtual-assistant.md
     - name: Шаблоны приложений для Microsoft Teams
       href: samples/app-templates.md
     - name: Готовые к работе соединители
@@ -517,8 +517,12 @@
       items:
         - name: Обзор
           href: resources/moodle-overview.md
-        - name: Установка Moodle LMS
-          href: resources/moodleInstructions.md
+        - name: Подключаемые модули Microsoft 365
+          href: resources/m365-plugins/m365-plugins-overview.md
+        - name: Партнерские приложения для Moodle
+          href: resources/partner-apps-for-moodle.md
+        - name: Вопросы и ответы о Moodle
+          href: resources/faqs.md
     - name: Создание кнопки «Поделиться в Teams»
       href: concepts/build-and-test/share-to-teams.md
     - name: Добавление вкладки Teams в SharePoint
