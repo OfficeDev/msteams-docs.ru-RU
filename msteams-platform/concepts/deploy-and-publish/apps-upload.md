@@ -5,19 +5,19 @@ ms.topic: how-to
 author: surbhigupta
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: d602750a8f41d8331f30d64e06b2aafb026e0ff4
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: e3a22378819d8fb1e865e2122b7977bcbabbbb74
+ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356282"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63453335"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Отправка приложения в Microsoft Teams
 
-Вы можете загрузить приложение в Microsoft Teams, не публикуя его в вашей организации или магазине Teams. Это имеет смысл в следующих сценариях:
+Вы можете загрузить приложение в Microsoft Teams, не публикуя его в вашей организации или магазине Teams в следующих сценариях.
 
 * Вы хотите протестировать и отладить приложение локально или с другими разработчиками.
-* Вы создали приложение только для себя. Например, для автоматизации рабочего процесса.
+* Вы создали приложение для себя, чтобы автоматизировать рабочий процесс.
 * Вы создали приложение для небольшого набора пользователей, например рабочей группы.
 
 > [!IMPORTANT]
@@ -25,29 +25,32 @@ ms.locfileid: "63356282"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-* Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и [проверьте](https://dev.teams.microsoft.com/appvalidation.html) наличие ошибок.
+* Создайте [пакет приложения](~/concepts/build-and-test/apps-package.md) и [проверьте его](https://dev.teams.microsoft.com/appvalidation.html) на наличие ошибок.
 * [Включите загрузку пользовательских приложений](~/concepts/build-and-test/prepare-your-o365-tenant.md#enable-custom-teams-apps-and-turn-on-custom-app-uploading) в Teams.
-* Убедитесь, что приложение работает и доступно через HTTPs.
+* Убедитесь, что приложение работает и доступно через HTTPS.
 
 ## <a name="upload-your-app"></a>Отправка пакета приложения
 
 Вы можете загрузить приложение в команду, чат, собрание или для личного использования в зависимости от того, как вы настроили область приложения.
 
 1. Войдите в клиент Teams с помощью [учетной записи разработчика Microsoft 365](~/build-your-first-app/build-and-run.md#prerequisites).
-1. Выберите **Приложения**, а затем **Загрузить пользовательское приложение**.
-1. Выберите ZIP-файл пакета приложения. Отобразится диалоговое окно установки.
-:::image type="content" source="~/assets/images/build-your-first-app/add-teams-app.png" alt-text="Снимок экрана с примером диалогового окна установки приложения Teams.":::
-1. Добавьте приложение в Teams.
+1. Выберите **Приложения** и нажмите **Управление приложениями**.
+1. Выберите **Отправить пользовательское приложение**.
+1. Выберите ZIP-файл своего пакета приложения. Появится следующий экран.
 
-> [!NOTE]
-> Метод `onInstallationUpdateActivityAsync()` используется для получения языкового стандарты Microsoft Teams при добавлении бота в Microsoft Teams.
+    :::image type="content" source="~/assets/images/build-your-first-app/add-teams-app.png" alt-text="Снимок экрана с примером диалогового окна установки приложения Teams.":::
 
-## <a name="troubleshoot-upload-issues"></a>Устранение неполадок при отправке
+1. Выберите **Добавить**, чтобы добавить приложение в Teams.
 
-Если приложение не загружается, сделайте следующее, пока проблема не устранится.
+    > [!NOTE]
+    > Метод `onInstallationUpdateActivityAsync()` используется для получения языкового стандарты Microsoft Teams при добавлении бота в Microsoft Teams.
 
-1. Вернитесь к инструкциям по [созданию пакета приложения](../../concepts/build-and-test/apps-package.md).
-1. Еще раз [проверьте пакет приложения](https://dev.teams.microsoft.com/appvalidation.html).
+## <a name="troubleshooting"></a>Устранение неполадок
+
+Если не удается загрузить неопубликованное приложение или возникают проблемы с отправкой, проверьте следующие параметры.
+
+1. Проверьте правильность выполнения всех инструкций по [созданию пакета приложения](../../concepts/build-and-test/apps-package.md).
+1. [Проверьте свой пакет приложения](https://dev.teams.microsoft.com/appvalidation.html).
 1. Убедитесь, что манифест приложения соответствует последней версии [схемы](../../resources/schema/manifest-schema.md).
 
 ## <a name="access-your-app"></a>Откройте приложение
