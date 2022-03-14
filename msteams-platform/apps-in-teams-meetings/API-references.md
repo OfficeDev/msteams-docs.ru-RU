@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: команды приложений собраний участника роли пользователя API запрос уведомления контекста пользователя уведомления
-ms.openlocfilehash: 3f77e0c1c24ad624fae268d4ca0621f7217ab24a
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 150a0bec1d8566392914ffeaf4990de21e3ec7de
+ms.sourcegitcommit: ca902f505a125641c379a917ee745ab418bd1ce6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398871"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63464254"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -20,6 +20,9 @@ ms.locfileid: "63398871"
 * Создание приложений или интеграция существующих приложений в течение жизненного цикла собраний.
 * Используйте API, чтобы ваше приложение знало о собрании.
 * Выберите необходимые API для улучшения работы с собраниями.
+
+> [!NOTE]
+> Используйте Teams [JavaScript SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) (*версия*: 1.10 и более поздние версии) для работы sSO в боковой панели собраний.
 
 В следующей таблице приводится список API, доступных в Microsoft Teams клиента (MSTC) и Microsoft Bot Framework (MSBF) SDKs:
 
@@ -41,6 +44,8 @@ ms.locfileid: "63398871"
 
 ## <a name="get-participant-api"></a>Получить API участника
 
+API `GetParticipant` должен иметь регистрацию бота и ID для создания маркеров auth. Дополнительные сведения см. в [сведениях о регистрации ботов и ID](../build-your-first-app/build-bot.md).
+
 > [!NOTE]
 >
 > * Не кэшить роли участников, так как организатор собрания может изменить роли в любое время.
@@ -49,7 +54,9 @@ ms.locfileid: "63398871"
 ### <a name="query-parameters"></a>Параметры запроса
 
 > [!TIP]
-> Получите ID участника и ID клиента из SSO Tab.
+> Получите идентификацию участника и идентификацию клиента на вкладке [SSO authentication](../tabs/how-to/authentication/auth-aad-sso.md).
+
+API `Meeting` должен иметь `meetingId`и в `participantId`качестве `tenantId` параметров URL-адреса. Параметры доступны в рамках Teams клиентской SDK и бот-активности.
 
 В следующей таблице содержатся параметры запроса:
 
@@ -100,8 +107,6 @@ export class MyBot extends TeamsActivityHandler {
 GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 ```
 
----
-
 ```json
 {
    "user":{
@@ -126,6 +131,8 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 }
 ```
 
+---
+
 ### <a name="response-codes"></a>Коды ответа
 
 В следующей таблице приводится коды ответов:
@@ -145,9 +152,9 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 >
 > * При вызове уведомления на собрании содержимое представляется в качестве сообщения чата.
 > * В настоящее время отправка целевых уведомлений и поддержка веб-приложения не поддерживаются.
-> * Необходимо вызвать функцию [submitTask()](../task-modules-and-cards/task-modules/task-modules-bots.md#submit-the-result-of-a-task-module) для автоматического увольнения после действия пользователя в веб-представлении. Это требование для отправки приложения. Дополнительные сведения см. [Teams модулем задач SDK](/javascript/api/@microsoft/teams-js/microsoftteams.tasks?view=msteams-client-js-latest#submittask-string---object--string---string---&preserve-view=true). 
+> * Необходимо вызвать функцию [submitTask()](../task-modules-and-cards/task-modules/task-modules-bots.md#submit-the-result-of-a-task-module) для автоматического увольнения после действия пользователя в веб-представлении. Это требование для отправки приложения. Дополнительные сведения см. [Teams модулем задач SDK](/javascript/api/@microsoft/teams-js/microsoftteams.tasks?view=msteams-client-js-latest#submittask-string---object--string---string---&preserve-view=true).
 > * Если вы хотите, чтобы ваше приложение поддержало анонимных пользователей, необходимо использовать метаданные запроса в объекте, `from.id` `from` `from.aadObjectId` а не запрашивать метаданные. `from.id`является ИД пользователя `from.aadObjectId` и является Microsoft Azure Active Directory (Azure AD) пользователя. Дополнительные сведения см. в [таблицах с](../task-modules-and-cards/task-modules/task-modules-tabs.md) использованием модулей задач и [созданием и отправкой модуля задач](../messaging-extensions/how-to/action-commands/create-task-module.md?tabs=dotnet#the-initial-invoke-request).
->
+
 ### <a name="query-parameter"></a>Параметр запроса
 
 В следующей таблице содержатся параметры запроса:
@@ -191,6 +198,9 @@ await context.sendActivity(replyActivity);
 
 ```http
 POST /v3/conversations/{conversationId}/activities
+```
+
+```json
 
 {
     "type": "message",
@@ -222,6 +232,8 @@ POST /v3/conversations/{conversationId}/activities
 ## <a name="get-meeting-details-api"></a>Получить API сведений о собраниях
 
 API сведений о собраниях позволяет приложению получать статические метаданные собрания. Метаданные предоставляют точки данных, которые не изменяются динамически. API доступен через службы ботов. В настоящее время как частные запланированные, так и повторяющиеся собрания, а также запланированные или повторяющиеся собрания каналов поддерживают API с различными разрешениями RSC соответственно.
+
+API `Meeting Details` должен иметь регистрацию бота и бот-ИД. Для этого требуется бот SDK для получения `TurnContext`. Чтобы использовать API сведений о собраниях, необходимо получить различные разрешения RSC, основанные на области любого собрания, например закрытого собрания или собрания канала.
 
 ### <a name="prerequisite"></a>Предварительное условие
 
@@ -339,8 +351,6 @@ await turnContext.SendActivityAsync(JsonConvert.SerializeObject(result));
 GET /v1/meetings/{meetingId}
 ```
 
----
-
 The JSON response body for Meeting Details API is as follows:
 
 ```json
@@ -366,6 +376,8 @@ The JSON response body for Meeting Details API is as follows:
     }
 } 
 ```
+
+---
 
 ## <a name="send-real-time-captions-api"></a>API отправки субтитров в режиме реального времени
 
@@ -429,20 +441,21 @@ API `shareAppContentToStage` позволяет обмениваться опр�
 
 ### <a name="prerequisite"></a>Предварительное условие
 
-Чтобы использовать `shareAppContentToStage` API, необходимо получить разрешения RSC. В манифесте приложения настройте свойство `authorization` , а также поле `name` и `type` в поле `resourceSpecific` . Например:
+*  Чтобы использовать `shareAppContentToStage` API, необходимо получить разрешения RSC. В манифесте приложения настройте свойство `authorization` , а также поле `name` и `type` в поле `resourceSpecific` . Например:
 
-```json
-"authorization": {
-    "permissions": { 
-    "resourceSpecific": [
-      { 
-      "name": "MeetingStage.Write.Chat",
-      "type": "Delegated"
-      }
-    ]
-   }
-}
- ```
+    ```json
+    "authorization": {
+        "permissions": { 
+        "resourceSpecific": [
+        { 
+        "name": "MeetingStage.Write.Chat",
+        "type": "Delegated"
+        }
+        ]
+    }
+    }
+    ```
+*  `appContentUrl` должны быть разрешены массивом `validDomains` внутри manifest.json, иначе API возвращает 501.
 
 ### <a name="query-parameter"></a>Параметр запроса
 
@@ -560,6 +573,8 @@ microsoftTeams.meeting.getAppContentStageSharingCapabilities((err, result) => {
 ## <a name="get-real-time-teams-meeting-events-api"></a>Получите API Teams собраний в режиме реального времени
 
 Пользователь может получать события собраний в режиме реального времени. Как только любое приложение связано с собранием, фактическое время начала и окончания собрания передается боту. Фактическое время начала и окончания собрания отличается от запланированного времени начала и окончания. API сведений о собраниях предоставляет запланированное время начала и окончания. Событие предоставляет фактическое время начала и окончания.
+
+Вы должны быть знакомы с объектом `TurnContext` , доступным через SDK Bot. Объект `Activity` содержит полезной `TurnContext` нагрузки с фактическим временем начала и окончания. Для проведения собраний в режиме реального времени требуется зарегистрированный бот-ИД с Teams платформы. Бот может автоматически получать событие начала или окончания собрания, добавляя `ChannelMeeting.ReadBasic.Group` в манифест.
 
 ### <a name="prerequisite"></a>Предварительное условие
 
@@ -750,12 +765,12 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 |Название примера | Описание | C# | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-| Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
-| Вкладка "Сведения в собрании" | Microsoft Teams для взаимодействия с вкладками Details in-meeting. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
-|Пример событий собраний|Пример приложения для демонстрации событий Teams собраний в режиме реального времени|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/nodejs)|
-|Пример набора собраний|Пример приложения для демонстрации опыта собраний для сценария набора персонала.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/nodejs)|
+| Разнонасть собраний | Microsoft Teams для прохождения маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
+| Бот-бот для пузырьков контента для собраний | Microsoft Teams для взаимодействия с ботом пузырьков контента на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Собрание MeetingSidePanel | Microsoft Teams для взаимодействия с боковой панелью на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
+| Вкладка "Сведения в собрании" | Microsoft Teams для взаимодействия с вкладками Details in-meeting. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
+|Пример событий собраний|Пример приложения для демонстрации событий Teams собраний в режиме реального времени|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/nodejs)|
+|Пример набора собраний|Пример приложения для демонстрации опыта собраний для сценария набора персонала.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/nodejs)|
 |Установка приложения с помощью кода QR|Пример приложения, которое создает код QR и устанавливает приложение с помощью кода QR|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы

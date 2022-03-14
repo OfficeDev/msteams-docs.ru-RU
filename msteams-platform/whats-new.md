@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 4aa1bd8555d2ebd017a3a09a1c736d566e40ed81
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 5ac1def2d45938d8bc162b4d6ed4fddb9f547e86
+ms.sourcegitcommit: ca902f505a125641c379a917ee745ab418bd1ce6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453441"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63466537"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -38,8 +38,6 @@ ms.locfileid: "63453441"
 |08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
 |07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 |03.02.2022| Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|03.02.2022| Предварительное тестирование для приложений с монетизацией (предварительная версия для разработчиков)| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
-|03.02.2022| Поток покупок из приложения для монетизации приложений (предварительная версия для разработчиков) | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md) |
 
 ## <a name="ga-features"></a>Функции общедоступной версии
 
@@ -156,7 +154,7 @@ ms.locfileid: "63453441"
 |10.11.2020|Рекомендации по разработке ботов Teams |[Рекомендации по разработке ботов](bots/design/bots.md)|
 |30.09.2020|Теперь поддерживается отправка и получение файлов в ботах на мобильных устройствах |[Отправка и получение файлов через бот](resources/bot-v3/bots-files.md)|
 |22.09.2020|Новые сведения по началу разработки в Teams |[Первые шаги в создании обзора приложения Teams](build-your-first-app/build-first-app-overview.md)|
-|18.09.2020|Поддержка приложений Teams в собраниях (предварительная версия выпуска) |[Создание приложений для собраний Teams](apps-in-teams-meetings/create-apps-for-teams-meetings.md) и [Приложения на собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
+|18.09.2020|Поддержка приложений Teams в собраниях (предварительная версия выпуска) |[Приложения на собраниях Teams](apps-in-teams-meetings/teams-apps-in-meetings.md)|
 |19.08.2020|Импорт сообщений Teams с помощью Microsoft Graph |[Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](graph-api/import-messages/import-external-messages-to-teams.md)
 |12.08.2020 |Поддержка адаптивных карточек во входящем веб-перехватчике перенесена в общедоступную версию |[Отправка адаптивных карточек с помощью входящего веб-перехватчика](~/webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook) |
 |10.08.2020|Начинайте создавать приложения Teams с помощью набора средств Visual Studio |[Создание приложений с помощью набора средств Microsoft Teams и Visual Studio Code](toolkit/visual-studio-overview.md) |

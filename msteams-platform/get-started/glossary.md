@@ -4,12 +4,12 @@ description: Глоссарий для документации разработ
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Определение для разработчиков Microsoft Teams
-ms.openlocfilehash: eab4779a862aa9a3e5183d52977fa012b1fc254f
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: dc29c40cfa79f267e2fde866974badc97d1900b7
+ms.sourcegitcommit: ca902f505a125641c379a917ee745ab418bd1ce6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452748"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63466564"
 ---
 # <a name="glossary"></a>Глоссарий
 
@@ -124,8 +124,8 @@ ms.locfileid: "63452748"
 | [Сцена собрания](../sbs-meetings-stage-view.yml) | Функция приложения-расширения для собрания. Это общее пространство, доступное всем участникам во время собрания. Оно помогает участникам взаимодействовать и сотрудничать с контентом приложения в режиме реального времени. <br>**См. также**: [представление "Экран"](#s) |
 | [Расширение для сообщений](../messaging-extensions/what-are-messaging-extensions.md) | Расширения для сообщений помогают быстро вставлять содержимое приложения или выполнить какие-либо действия с сообщениями. Можно использовать расширение для сообщений, не выходя из беседы.<br>**См. также**: [команды поиска](#s); [команды действий](#a) |
 | [Расширение для собрания](../apps-in-teams-meetings/design/designing-apps-in-meetings.md) | Приложение, которое предназначено для использования в течение жизненного цикла собрания, чтобы сделать его более продуктивным, например доска, панель мониторинга и т. д. |
-| [Учетная запись Microsoft 365](../toolkit/accounts.md#microsoft-365-account) | Учетная запись Microsoft 365 включает 25 лицензий пользователей, в том числе администратора, только для целей разработки. |
-| [Программа для разработчиков Microsoft 365](../toolkit/accounts.md#join-microsoft-365-developer-program) | Программа для разработчиков Microsoft 365 помогает создавать приложения, расширяющие Microsoft 365. |
+| [Учетная запись Microsoft 365](../toolkit/accounts.md#microsoft-365-developer-account-types) | Учетная запись Microsoft 365 включает 25 лицензий пользователей, в том числе администратора, только для целей разработки. |
+| [Программа для разработчиков Microsoft 365](../toolkit/accounts.md)| Программа для разработчиков Microsoft 365 помогает создавать приложения, расширяющие Microsoft 365. |
 | [Песочница Microsoft Graph](../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md) | Шлюз к данным и средствам искусственного интеллекта в Microsoft 365. Благодаря этому вы получите единую модель программируемости, которую можно использовать для доступа к данным в Microsoft 365, Windows 10 и Enterprise Mobility + Security. |
 | [Microsoft Teams](../overview.md) | Microsoft Teams — это программное обеспечение для группового взаимодействия, которое можно использовать для удаленной совместной работы команд. |
 | [Платформа Microsoft Teams](../concepts/app-fundamentals-overview.md) | Платформа для разработчиков Microsoft Teams позволяет разработчикам легко интегрировать их собственные приложения и службы в Teams. |
