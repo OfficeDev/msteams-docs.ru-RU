@@ -6,12 +6,12 @@ keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 9914f721e155f01a05813441587d0d1ea71e09ae
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: bc3a2ff1dc039c04e7ba809b6b63dcdcb62a4e66
+ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399200"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63492983"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -238,6 +238,8 @@ ms.locfileid: "63399200"
 
 Чтобы убедиться, `HttpPOST` что действие работает правильно, [отправьте сообщения в соединителю](~/webhooks-and-connectors/how-to/connectors-using.md).
 
+Следуйте [пошаговом](../../sbs-teams-connectors.yml) руководстве по созданию и проверке соединители в Microsoft Teams.
+
 ## <a name="publish-connectors-for-the-organization"></a>Публикация соединители для организации
 
 Если вы хотите, чтобы соединители были доступны только пользователям в организации, вы можете загрузить свое настраиваемое приложение соединители в каталог [приложений организации](~/concepts/deploy-and-publish/apps-publish.md).
@@ -270,10 +272,14 @@ ms.locfileid: "63399200"
 
 |**Название примера** | **Описание** | **.NET** | **Node.js** |
 |----------------|------------------|--------|----------------|
-| Connectors | Пример Office 365 соединители, генерирующие уведомления для Teams канала.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
-| Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.| | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
+| Connectors | Пример Office 365 соединители, генерирующие уведомления для Teams канала.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-todo-notification/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-github-notification/nodejs)|
+| Общий пример соединители |Пример кода для общего соединители, который легко настроить для любой системы, поддерживающую веб-сайты.| | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs)|
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="step-by-step-guide"></a>Пошаговые инструкции
+
+Следуйте [пошаговом руководстве](../../sbs-teams-connectors.yml) по сборке и проверке соединители в Teams.
+
+## <a name="see-also"></a>См. также
 
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
 * [Создание входящего веб-перехватчика](~/webhooks-and-connectors/how-to/add-incoming-webhook.md)

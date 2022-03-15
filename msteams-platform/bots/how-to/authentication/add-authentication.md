@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
 keywords: Регистрация бота группы ресурсов в Azure манифест эмулятора
-ms.openlocfilehash: 0151cc8fd756ee7ed7dbaecaef5739690f7f9302
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 8b624b36dca9a280ec35e062861a95513859c0c5
+ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399375"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63493031"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 
@@ -31,7 +31,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 - **Развертывание бота в Azure и его связывание с поставщиком удостоверений**. Поставщик выдает маркер на основе учетных данных входа пользователя. Бот может использовать маркер для доступа к ресурсам, например к почтовой службе, для которой требуется проверка подлинности. Дополнительные сведения [см. Microsoft Teams поток проверки подлинности для ботов](auth-flow-bot.md).
 - **Интеграция бота в Microsoft Teams**. После интеграции бота можно войти и обмениваться сообщениями с ним в чате.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Знание основ [бота][concept-basics], [управление состоянием][concept-state], библиотека диалогов [и реализация][concept-dialogs] [последовательного потока бесед][simple-dialog].
 - Знание разработки Azure и OAuth 2.0.
@@ -141,15 +141,16 @@ OAuth 2.0 — это открытый стандарт проверки подл
     ![Домашняя страница бота](~/assets/images/adaptive-cards/bot-home-page.png)
 
 1. Откройте бот, который указан в разделе **Последние ресурсы** .
-1. Выберите **каналы в** левой области и выберите **Teams** <img src="~/assets/images/bots/teamsicon.png" alt="Teams icon" width="20"/>.
 
-    ![Канал Teams](~/assets/images/adaptive-cards/channel-teams.png)
+1. Выберите **каналы в** левой области и **выберите Microsoft Teams**:::image type="icon" source="../../../assets/icons/teams-icon.png" border="false":::.
+
+   :::image type="content" source="../../../assets/images/adaptive-cards/channel-teams.png" alt-text="Канал Teams":::
 
 1. Выберите почтовый ящик, чтобы принять условия службы и выбрать **Согласование**.</br>
 
     ![Выбор условий службы](~/assets/images/adaptive-cards/select-terms-of-service.png)
 
-1. Выберите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
     ![Выберите Teams](~/assets/images/adaptive-cards/select-teams.png)
 
@@ -218,7 +219,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
     ![teams bots app auth connection string adv1 view](../../../assets/images/authentication/auth-bot-identity-connection-adv1.png)
 
-1. Выберите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 #### <a name="microsoft-azure-active-directory-azure-ad-v2"></a>Microsoft Azure Active Directory (Azure AD) V2
 
@@ -242,7 +243,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
     1. Для **областей** введите список разрешений на график, относячимый к пространству, для этого приложения требуется, например: User.Read User.ReadBasic.All Mail.Read
 
-1. Выберите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 ### <a name="test-the-connection"></a>Тестирование подключения
 
