@@ -42,6 +42,8 @@
       href: concepts/design/planning-checklist.md
     - name: Планирование адаптивных вкладок для мобильной версии Teams
       href: concepts/design/plan-responsive-tabs-for-teams-mobile.md
+    - name: Планирование монетизации приложения
+      href: concepts/design/plan-to-monetize.md
 - name: Создание приложения
   items:
     - name: Обзор
@@ -86,7 +88,7 @@
       items:
         - name: Обзор набора средств Teams
           href: toolkit/teams-toolkit-fundamentals.md
-        - name: Создание проекта
+        - name: Создание нового приложения Teams
           href: toolkit/create-new-project.md
         - name: Подготовка учетных записей для создания приложения Teams
           href: toolkit/accounts.md
@@ -283,8 +285,6 @@
       href: apps-in-teams-meetings/teams-apps-in-meetings.md
     - name: Приложения объединенных собраний
       href: apps-in-teams-meetings/meeting-app-extensibility.md
-    - name: Необходимые условия для приложений в собраниях Teams
-      href: apps-in-teams-meetings/create-apps-for-teams-meetings.md
     - name: Включение и настройка приложений для собраний
       href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
     - name: Справочные материалы по API приложений для собраний
@@ -475,16 +475,16 @@
           href: concepts/deploy-and-publish/appsource/post-publish/overview.md
         - name: Параметры рейтинга магазина Microsoft Teams
           href: concepts/deploy-and-publish/appsource/post-publish/teams-store-ranking-parameters.md
-    - name: Монетизация приложения
-      items:
-        - name: Обзор
-          href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
-        - name: Включение предложения SaaS в приложение
-          href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
-        - name: Покупки из приложения
-          href: concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md
-        - name: Предварительное тестирование для приложений с монетизацией
-          href: concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
+- name: Монетизация приложения
+  items:
+    - name: Обзор
+      href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
+    - name: Включение предложения SaaS в приложение
+      href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
+    - name: Покупки из приложения
+      href: concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md
+    - name: Предварительное тестирование для приложений с монетизацией
+      href: concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
 - name: Манифест приложения
   items:
     - name: Схема манифеста приложения
