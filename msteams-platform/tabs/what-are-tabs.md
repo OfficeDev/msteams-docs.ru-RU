@@ -5,12 +5,12 @@ description: Обзор настраиваемых вкладок на плат�
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 01d874f8d873cdbc2e9f3cd0c19b6093ff3ef4e5
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 72c1ae8b22ff4d3ac96ad7c6c07a98dd37266a99
+ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356184"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63492974"
 ---
 # <a name="build-tabs-for-microsoft-teams"></a>Создание вкладок для Microsoft Teams
 
@@ -21,11 +21,11 @@ ms.locfileid: "63356184"
 
 На изображении ниже показаны личные вкладки.
 
-![Личные вкладки](../assets/images/tabs/personaltab.png)
+:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Личная вкладка" lightbox="../assets/images/tabs/personaltab.png":::
 
 На изображении ниже показаны вкладки канала Contoso.
 
-![Вкладки канала или группы](../assets/images/tabs/tabs.png)
+:::image type="content" source="../assets/images/tabs/tabs.png" alt-text="Вкладки канала или группы" lightbox="../assets/images/tabs/tabs.png":::
 
 Перед началом работы над вкладками ознакомьтесь с требованиями к их использованию.
 

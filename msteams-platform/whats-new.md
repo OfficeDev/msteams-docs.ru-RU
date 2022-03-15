@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 5ac1def2d45938d8bc162b4d6ed4fddb9f547e86
-ms.sourcegitcommit: ca902f505a125641c379a917ee745ab418bd1ce6
+ms.openlocfilehash: 9ad67a1ecfe9947ed0dc665827dd4e127e3a4e69
+ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/14/2022
-ms.locfileid: "63466537"
+ms.locfileid: "63492990"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "63466537"
 
 | Дата | Update | Найти здесь |
 | --- | --- | --- |
+|14.03.2022| Представлены пошаговые инструкции по сборке и тестированию соединителя в Microsoft Teams. | Создание веб-перехватчиков и соединителей > Создание соединителей Office 365 > [Создание соединителей Teams](sbs-teams-connectors.yml)|
 |10.03.2022| Добавлены сведения о подключаемых модулях Moodle LMS и Microsoft 365 | Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|
 |03.03.2022 | Добавление проверки подлинности в Teams с помощью внешнего поставщика OAuth| Проверка подлинности приложения > Вкладки > [Использовать внешних поставщиков OAuth](tabs/how-to/authentication/auth-oauth-provider.md) |
 |25.02.2022| Добавлена пошаговая руководство по вызову модулей задач в Teams| Создание карточек и модулей задач > Создание модулей задач > Использование модулей задач от ботов > [Вызов модуля задачи из Teams](sbs-botbuilder-taskmodule.yml)|
@@ -50,6 +51,7 @@ ms.locfileid: "63466537"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|14.03.2022| Представлены пошаговые инструкции по сборке и тестированию соединителя в Microsoft Teams. | Создание веб-перехватчиков и соединителей > Создание соединителей Office 365 > [Создание соединителей Teams](sbs-teams-connectors.yml)|
 |10.03.2022 | Добавлены сведения о подключаемых модулях Moodle LMS и Microsoft 365 | Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|  
 |03.03.2022 | Добавление проверки подлинности в Teams с помощью внешнего поставщика OAuth| Проверка подлинности приложения > Вкладки > [Использовать внешних поставщиков OAuth](tabs/how-to/authentication/auth-oauth-provider.md) |
 | 25.02.2022| Добавлена пошаговая руководство по вызову модулей задач в Teams| Создание карточек и модулей задач > Создание модулей задач > Использование модулей задач от ботов > [Вызов модуля задачи из Teams](sbs-botbuilder-taskmodule.yml)|
