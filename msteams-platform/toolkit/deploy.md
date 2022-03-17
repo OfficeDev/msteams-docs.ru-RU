@@ -1,17 +1,17 @@
 ---
 title: Развертывание в облаке
 author: MuyangAmigo
-description: Развертывание в облаке
+description: Развертывание приложения в облаке, Azure или SharePoint
 ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 9c15d145fb4f37073342edc9bb8d07f2fe0b53e6
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 2e2d288340f3a806857f1e62ae832be0e6c4068c
+ms.sourcegitcommit: f9dc32566e87ffc1b2d2bd45f1388aae8f5c9083
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452552"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63558819"
 ---
 # <a name="deploy-to-the-cloud"></a>Развертывание в облаке
 
@@ -55,4 +55,4 @@ Teams набор средств позволяет развертывать ил
 * [Добавление дополнительных Teams приложений](add-capability.md)
 * [Развертывание кода проекта с конвейерами CI/CD](use-CICD-template.md)
 * [Управление несколькими средами](TeamsFx-multi-env.md)
-* [Сотрудничество с другими разработчиками в Teams проекте](TeamsFx-collaboration.md)
+* [Совместная работа с другими разработчиками в проекте Teams](TeamsFx-collaboration.md)
