@@ -6,12 +6,12 @@ keywords: Возможности карты расположения для ро
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: 40b0f3da9b6811a7172aa5207dd7680c70db7719
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: a375d8f7c2692c9da8e220474c2c0ece97b623c2
+ms.sourcegitcommit: a36760750ff4f510c374a4c956be57f7c1b4a0db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452825"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675015"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения
 
@@ -34,9 +34,9 @@ ms.locfileid: "63452825"
 > [!NOTE]
 > В настоящее Microsoft Teams поддержка возможностей расположения доступна только для мобильных клиентов.
 
-## <a name="update-manifest"></a>Манифест обновления
+## <a name="update-manifest"></a>Изменение манифеста
 
-Обновите [Teams-файл приложения manifest.json](../../resources/schema/manifest-schema.md#devicepermissions), `devicePermissions` добавив свойство и указав `geolocation`. Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать возможности расположения. Обновление манифеста приложения:
+Обновите [Teams-файл приложения manifest.json](../../resources/schema/manifest-schema.md#devicepermissions), `devicePermissions` добавив свойство и указав `geolocation`. Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать возможности расположения. Измените манифест приложения, выполнив следующие шаги.
 
 ``` json
 "devicePermissions": [
@@ -45,7 +45,6 @@ ms.locfileid: "63452825"
 ```
 
 > [!NOTE]
->
 > * Запрос **разрешений** автоматически отображается при Teams API. Дополнительные сведения см. в [запросе разрешений устройств](native-device-permissions.md).
 > * Разрешения устройств отличаются в браузере. Дополнительные сведения см. в [разрешении на устройство браузера](browser-device-permissions.md).
 

@@ -4,12 +4,12 @@ keywords: teams apps capabilities permissions device native scan qr barcode imag
 description: Обновление манифеста приложения для запроса доступа к родным функциям, которые обычно требуют согласия пользователя, например к qr-коду, штрих-коду, изображению, звуку, возможностям видео
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 9d06cebaac7c3e0ff5938cd3c21dda306c8b1e45
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 3cb15e82101be7df9f90c94928fa91ae570c14d5
+ms.sourcegitcommit: a36760750ff4f510c374a4c956be57f7c1b4a0db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398717"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63674966"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений устройства для Microsoft Teams приложения
 
@@ -33,7 +33,6 @@ ms.locfileid: "63398717"
 * Используйте сведения о расположении пользователя для отображения соответствующих сведений.
 
 > [!NOTE]
->
 > * В настоящее время Teams не поддерживает разрешения устройств для приложений с несколькими окнами, вкладок и боковой панели собраний.
 > * Разрешения устройств отличаются в браузере. Дополнительные сведения см. в [разрешении на устройство браузера](browser-device-permissions.md).
 

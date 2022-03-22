@@ -4,12 +4,12 @@ description: Глоссарий для документации разработ
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Определение для разработчиков Microsoft Teams
-ms.openlocfilehash: dc29c40cfa79f267e2fde866974badc97d1900b7
-ms.sourcegitcommit: ca902f505a125641c379a917ee745ab418bd1ce6
+ms.openlocfilehash: bbfb59d2dec2f72bb94aae1b241554ebc5de3211
+ms.sourcegitcommit: 2863b7537f414517c0fe751f135b39978eb749bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63466564"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "63626000"
 ---
 # <a name="glossary"></a>Глоссарий
 
@@ -188,6 +188,7 @@ ms.locfileid: "63466564"
 | [Набор средств Teams](../toolkit/teams-toolkit-fundamentals.md) | Набор средств Microsoft Teams Toolkit позволяет создавать пользовательские приложения Teams непосредственно в среде Visual Studio Code.  |
 | [TeamsFx](../toolkit/teamsfx-cli.md) | TeamsFx — это текстовый интерфейс командной строки, ускоряющий разработку приложений Teams. Также используется название TeamsFx CLI.|
 | [Пакет SDK TeamsFx](../toolkit/teamsfx-sdk.md) | Пакет SDK TeamsFx предварительно настроен в проекте со сформированными шаблонами с помощью набора средств TeamsFx или CLI. |
+| [Пакет SDK TeamsJS](../tabs/how-to/using-teams-client-sdk.md) | Пакет SDK TeamsJS позволяет создавать размещенные возможности в Teams. Функции [последней версии](~/m365-apps/using-teams-client-sdk-preview.md) расширяют приложение Teams для запуска в Outlook и Office. |
 | [Мобильная версия Teams](../concepts/design/plan-responsive-tabs-for-teams-mobile.md) | Microsoft Teams доступен в качестве мобильного приложения. |
 | [Магазин Teams](../concepts/deploy-and-publish/appsource/publish.md) | Целевая страница магазина, где в одном месте доступны приложения для пользователей. Приложения классифицированы по использованию, отрасли и т. д. Приложение должно выполнять рекомендации по проверке в магазине и получить одобрение, прежде чем оно станет доступно пользователям в магазине Teams.  <br>**См. также**: [рекомендации по проверке в магазине](#s) |
 | [Workbench Teams](../sbs-gs-spfx.yml) | Рабочая среда Workbench в Visual Studio Code, используемая при сборке приложений Teams, созданных с помощью SPFx и набора средств Teams. <br>**См. также**: [Workbench](#w); [локальная среда Workbench](#l) |

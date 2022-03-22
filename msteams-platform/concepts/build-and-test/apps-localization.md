@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: команды публикуют язык локализации AppSource в офисе магазина
 ms.date: 05/15/2018
-ms.openlocfilehash: 13325d323ec1d4d87f6cd5ff64c4a6c71552e01c
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 1003097e17ade1abb475568333e6cf46213bd9ee
+ms.sourcegitcommit: a36760750ff4f510c374a4c956be57f7c1b4a0db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452699"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63674819"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 
@@ -44,7 +44,7 @@ ms.locfileid: "63452699"
 
 ## <a name="localize-strings-in-your-app-manifest"></a>Локализация строк в манифесте приложения
 
-Необходимо использовать схему Microsoft Teams, `v1.5` а затем локализовать приложение. Это можно сделать, установив `$schema` атрибут в файле manifest.json `$schema` **https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json** `manifestVersion` или более высокий и обновив свойство до версии (`1.5`в данном случае).
+Необходимо использовать схему Microsoft Teams, `v1.5` а затем локализовать приложение. Это можно сделать, установив `$schema` атрибут в файле manifest.json `$schema` `https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json` `manifestVersion` или более высокий и обновив свойство до версии (`1.5`в данном случае).
 
 Необходимо добавить свойство с `localizationInfo` языком по умолчанию, который поддерживает приложение. Язык по умолчанию используется в качестве конечного языка отката, если параметры клиента пользователя не совпадают ни с одним из дополнительных языков.
 
@@ -54,7 +54,7 @@ ms.locfileid: "63452699"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
   "manifestVersion": "1.5",
   "localizationInfo": {
   "defaultLanguageTag": "en",
@@ -75,7 +75,7 @@ ms.locfileid: "63452699"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.Localization.schema.json",
   "manifestVersion": "1.5",
   "name.short": "Localización",
   "name.full": "Aplicación de localización",
@@ -99,7 +99,7 @@ ms.locfileid: "63452699"
 
 Если язык пользователя настроен на "es-es", Teams клиент принимает строки "fr". Клиент Teams не переопределяет строки ни с одним из языковых файлов, так как не предоставляется перевод "es" или "es-es".
 
-Поэтому в манифесте необходимо предоставить только переводы верхнего уровня, языка. Например, "en" вместо "en-ru". Необходимо предоставить переопределения уровня региона только для нескольких строк, которые в них нуждаются.
+Поэтому в манифесте необходимо предоставить только переводы верхнего уровня, языка. Например, вместо `en` `en-us`. Необходимо предоставить переопределения уровня региона только для нескольких строк, которые в них нуждаются.
 
 ### <a name="example-manifestjson-change"></a>Пример изменения manifest.json
 
@@ -135,7 +135,7 @@ ms.locfileid: "63452699"
 
 ```json
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json",
   "name.short": "Le App",
   "name.full": "App pour Microsoft Teams",
   "description.short": "Créez d'excellentes applications pour Microsoft Teams avec App.",

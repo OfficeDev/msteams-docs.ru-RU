@@ -4,12 +4,12 @@ description: Описание всех карточек и действий ка
 ms.localizationpriority: high
 keywords: справочные материалы о карточках для ботов
 ms.topic: reference
-ms.openlocfilehash: 7144887b0b53d0542f2756d4f473e8e2e5807e58
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 4bd890268641de5c228f77c8b65e5e93fcf66094
+ms.sourcegitcommit: f9dc32566e87ffc1b2d2bd45f1388aae8f5c9083
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399382"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63558832"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -130,7 +130,7 @@ ms.locfileid: "63399382"
 
 ### <a name="example-of-adaptive-card"></a>Пример адаптивной карточки
 
-![Пример адаптивной карточки](~/assets/images/cards/adaptivecard.png)
+:::image type="content" source="~/assets/images/cards/adaptivecard.png" alt-text="Пример адаптивной карточки" border="true":::
 
 Ниже представлен пример кода адаптивной карточки.
 
@@ -273,6 +273,8 @@ ms.locfileid: "63399382"
 
 * [Узел адаптивных карточек](/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=javascript#send-an-adaptive-card&preserve-view=true)
 * [Адаптивная карточка C#](/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp#send-an-adaptive-card&preserve-view=true)
+
+Дополнительные сведения об адаптивных карточках см. в статье [Адаптивные карточки](/adaptive-cards/).
 
 Теперь вы можете работать с карточкой главного имиджевого баннера, многоцелевой карточкой для визуального выделения возможного выбора пользователя.
 

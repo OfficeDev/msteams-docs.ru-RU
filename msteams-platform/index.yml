@@ -3,8 +3,8 @@ title: Microsoft Teams документации разработчика
 summary: 'Получите документацию, пример кода, учебники и другие, чтобы помочь вам создать настраиваемые Microsoft Teams приложения.'
 brand: teams
 metadata:
-  title: Microsoft Teams документация разработчика платформы
-  description: 'Платформа Microsoft Teams позволяет разработчикам интегрировать собственные приложения и службы, чтобы повысить производительность, быстрее принимать решения, уделять основное внимание за счет сокращения переключения контекста и создания совместной работы с существующим контентом и рабочими процессами.'
+  title: Microsoft Teams разработчика платформы
+  description: 'Платформа Microsoft Teams позволяет разработчикам интегрировать собственные приложения и службы для повышения производительности, более быстрого принятия решений, сокращения переключения контекста и создания совместной работы с существующим контентом и рабочими процессами.'
   ms.service: msteams
   ms.topic: hub-page
   ms.collection: collection
@@ -59,10 +59,10 @@ conceptualContent:
           text: Сбор входных данных и сбор сведений с помощью модулей задач
         - url: /learn/modules/msteams-webhooks-connectors/
           itemType: learn
-          text: Подключение веб-службы для каналов и групп с веб-Office 365 соединители
+          text: Подключение веб-службы каналам и группам с веб-Office 365 соединители
         - url: /microsoftteams/platform/m365-apps/overview
           itemType: overview
-          text: Расширение Teams приложений в Microsoft 365
+          text: Расширение приложений Teams в Microsoft 365
     - title: Возможности
       links:
         - url: /microsoftteams/platform/tabs/what-are-tabs
@@ -76,7 +76,7 @@ conceptualContent:
           text: расширения для обмена сообщениями;
         - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
           itemType: overview
-          text: Приложения для Teams собраний
+          text: Приложения для собраний Teams
         - url: /microsoftteams/platform/task-modules-and-cards/cards-and-task-modules
           itemType: concept
           text: Карточки и модули задач
@@ -87,13 +87,13 @@ conceptualContent:
       links:
         - url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/include-saas-offer
           itemType: concept
-          text: Монетизация приложения Teams с помощью трансактабельного предложения SaaS
+          text: Монетизация приложения Teams с помощью коммерческого предложения SaaS
         - url: /microsoftteams/platform/concepts/authentication/authentication
           itemType: concept
           text: Проверка подлинности пользователей и SSO
         - url: /microsoftteams/platform/samples/teams-low-code-solutions
           itemType: how-to-guide
-          text: 'Создание приложений, Teams ботов и потоков с помощью платформы Microsoft Power'
+          text: 'Создание низкокодовых Teams, ботов и потоков с помощью платформы Microsoft Power'
         - url: 'https://dev.teams.microsoft.com/home'
           itemType: reference
           text: Портал разработчиков Teams
@@ -103,7 +103,7 @@ conceptualContent:
         - url: 'https://adoption.microsoft.com/extensibility-look-book/scenarios/'
           itemType: reference
           text: Создание сценариев для Teams приложений
-        - url: 'https://developer.microsoft.com/en-us/microsoft-teams/app-development-resources'
+        - url: 'https://developer.microsoft.com/microsoft-teams/app-development-resources'
           itemType: reference
           text: Лучшие практики для Teams приложений
     - title: Интеграция
@@ -134,7 +134,7 @@ conceptualContent:
         - url: 'https://aka.ms/microsoftteamscommunitycall'
           itemType: overview
           text: Microsoft Teams вызовы сообщества
-        - url: 'https://docs.microsoft.com/en-us/teamblog/'
+        - url: 'https://docs.microsoft.com/teamblog/'
           itemType: whats-new
           text: Объявления
         - url: /microsoftteams/platform/feedback
@@ -142,7 +142,7 @@ conceptualContent:
           text: Microsoft Teams разработчика Community и ответа
         - url: /microsoftteams/platform/resources/teams-contributor-reference
           itemType: overview
-          text: Участие в Microsoft Teams документации
+          text: Внося Microsoft Teams документацию
     - title: Аудитория
       links:
         - url: 'https://developer.microsoft.com/microsoft-teams'
@@ -151,7 +151,7 @@ conceptualContent:
         - url: /microsoftteams/microsoft-teams
           itemType: concept
           text: ИТ-специалисты
-        - url: 'https://support.microsoft.com/en-us/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Basics'
+        - url: 'https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b'
           itemType: concept
           text: Конечные пользователи
 tools:

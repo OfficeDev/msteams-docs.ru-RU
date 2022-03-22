@@ -4,12 +4,12 @@ description: Сведения о ссылке и отклонении модул
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 93d25847b0be86822f15c9443c28907031b98fea
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 84cca74d6e81dce9bbcd7637b5d0b6537524d831
+ms.sourcegitcommit: a36760750ff4f510c374a4c956be57f7c1b4a0db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399333"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63674728"
 ---
 # <a name="invoke-and-dismiss-task-modules"></a>Вызов и закрытие модулей задач
 
@@ -208,7 +208,7 @@ YouTube предлагает возможность встраить видео 
 
 С помощью модулей задач на основе HTML или JavaScript необходимо убедиться, что модуль задач вашего приложения можно использовать с помощью клавиатуры. Программы чтения с экрана также зависят от возможности навигации с помощью клавиатуры. Это включает в себя следующие две вещи:
 
-* Использование [атрибута tabindex в](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) тегах HTML для управления элементами, которые могут быть сфокусированы. Кроме того, используйте атрибут tabindex, чтобы определить, где он участвует в последовательной навигации клавиатуры обычно с <kbd>клавишами Tab</kbd> и <kbd>Shift-Tab</kbd> .
+* Использование [атрибута tabindex в](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/tabindex) тегах HTML для управления элементами, которые могут быть сфокусированы. Кроме того, используйте атрибут tabindex, чтобы определить, где он участвует в последовательной навигации клавиатуры обычно с <kbd>клавишами Tab</kbd> и <kbd>Shift-Tab</kbd> .
 * Обработка <kbd>ключа Esc</kbd> в JavaScript для модуля задач. В следующем коде приводится пример обработки ключа <kbd>Esc</kbd> :
 
     ```javascript
@@ -226,8 +226,8 @@ Microsoft Teams обеспечивает правильную работу на�
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
-|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)|
+|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+|Пример вкладок модуля задач и ботов-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
 

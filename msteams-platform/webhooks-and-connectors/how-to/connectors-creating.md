@@ -6,12 +6,12 @@ keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: bc3a2ff1dc039c04e7ba809b6b63dcdcb62a4e66
-ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
+ms.openlocfilehash: 42288d757a12c6e31de612f19a5556a283cf3e98
+ms.sourcegitcommit: a36760750ff4f510c374a4c956be57f7c1b4a0db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63492983"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63674938"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -223,7 +223,7 @@ ms.locfileid: "63492983"
   * `Set-OrganizationConfig -ConnectorsEnabledForTeams:$true`
   * `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$true`
 
-Дополнительные сведения об обмене модулями PowerShell см. в [обзоре Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig?view=exchange-ps&preserve-view=true). Чтобы включить или отключить Outlook соединители, [подключите приложения к](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab?ui=en-us&rs=en-us&ad=us) группам в Outlook.
+Дополнительные сведения об обмене модулями PowerShell см. в [обзоре Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig?view=exchange-ps&preserve-view=true). Чтобы включить или отключить Outlook соединители, [подключите приложения к](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab) группам в Outlook.
 
 ## <a name="test-your-connector"></a>Тестирование соединитетеля
 
@@ -262,8 +262,8 @@ ms.locfileid: "63492983"
 
 ## <a name="distribute-webhook-and-connector"></a>Распространение веб-ок и соединители
 
-1. [Настройка входящих веб-ок непосредственно](~/webhooks-and-connectors/how-to/add-incoming-webhook.md?branch=pr-en-us-3076#create-an-incoming-webhook) для вашей команды.
-1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?branch=pr-en-us-3076#integrate-the-configuration-experience) [и опубликуйте](~/webhooks-and-connectors/how-to/connectors-creating.md?branch=pr-en-us-3076#publish-connectors-for-the-organization) входящий веб-сайт в Office 365 соединителю.
+1. [Настройка входящих веб-ок непосредственно](~/webhooks-and-connectors/how-to/add-incoming-webhook.md#create-an-incoming-webhook) для вашей команды.
+1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?#integrate-the-configuration-experience) [и опубликуйте](~/webhooks-and-connectors/how-to/connectors-creating.md#publish-connectors-for-the-organization) входящий веб-сайт в Office 365 соединителю.
 1. Пакет и публикация соединитетеля в рамках отправки [AppSource](~/concepts/deploy-and-publish/office-store-guidance.md) .
 
 ## <a name="code-sample"></a>Пример кода
