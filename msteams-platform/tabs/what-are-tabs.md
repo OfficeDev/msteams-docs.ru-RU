@@ -5,12 +5,12 @@ description: Обзор настраиваемых вкладок на плат�
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 72c1ae8b22ff4d3ac96ad7c6c07a98dd37266a99
-ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
+ms.openlocfilehash: b39d6b29704e7894e747c02323dda7d96bc6985a
+ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63492974"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63727918"
 ---
 # <a name="build-tabs-for-microsoft-teams"></a>Создание вкладок для Microsoft Teams
 
@@ -90,6 +90,7 @@ ms.locfileid: "63492974"
 
 ## <a name="see-also"></a>См. также
 
+* [Настраиваемые вкладки в Microsoft Teams](/microsoftteams/built-in-custom-tabs#develop-custom-tabs)
 * [Запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
 * [Интеграция возможностей мультимедиа](../concepts/device-capabilities/mobile-camera-image-permissions.md)
 * [Интеграция сканера QR-кодов или штрихкодов](../concepts/device-capabilities/qr-barcode-scanner-capability.md)

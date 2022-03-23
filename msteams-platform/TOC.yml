@@ -20,6 +20,8 @@
   items:
     - name: Обзор начала работы
       href: get-started/get-started-overview.md
+    - name: Создание первого приложения с помощью Blazor
+      href: sbs-gs-blazorapp.yml
     - name: Создание первого приложения с помощью JavaScript
       href: sbs-gs-javascript.yml
     - name: Создание первого приложения с помощью SPFx
@@ -90,6 +92,10 @@
           href: toolkit/teams-toolkit-fundamentals.md
         - name: Создание нового приложения Teams
           href: toolkit/create-new-project.md
+        - name: Локальная отладка приложения Teams
+          href: toolkit/debug-local.md
+        - name: Отладка фоновых процессов
+          href: toolkit/debug-background-process.md
         - name: Подготовка учетных записей для создания приложения Teams
           href: toolkit/accounts.md
         - name: Подготовка облачных ресурсов

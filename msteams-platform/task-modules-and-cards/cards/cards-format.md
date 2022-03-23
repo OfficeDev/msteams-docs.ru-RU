@@ -5,12 +5,12 @@ keywords: Форматирование карточек в ботах Teams
 ms.localizationpriority: high
 ms.topic: reference
 ms.date: 06/25/2021
-ms.openlocfilehash: 0c374904c122cfd9c35680763b3fccd30fea6bbb
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: f48cecf9938710c40634c48299e3213e0475984a
+ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398738"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63727269"
 ---
 # <a name="format-cards-in-microsoft-teams"></a>Форматирование карточек в Microsoft Teams
 
@@ -665,3 +665,4 @@ HTML-теги поддерживаются для простых карточе�
 * [Использование модулей задач из ботов](~/task-modules-and-cards/task-modules/task-modules-bots.md)
 * [Модули задач](~/task-modules-and-cards/cards/cards-format.md)
 * [Формат сообщений бота](~/bots/how-to/format-your-bot-messages.md)
+* [Обозреватель схемы для адаптивных карточек](https://adaptivecards.io/explorer/TextBlock.html)

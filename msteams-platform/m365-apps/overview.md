@@ -5,12 +5,12 @@ ms.date: 02/11/2022
 ms.topic: overview
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 895660e49e468583d7443799dd0c55d7950619e0
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 1936e6a660d77855e53257f40925cf54b05de0de
+ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355515"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63727295"
 ---
 # <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
@@ -39,6 +39,8 @@ ms.locfileid: "63355515"
 С помощью этого предварительного просмотра можно расширить расширения Teams сообщений на основе поиска до настольных Outlook в Интернете и Windows, что позволит клиентам искать и делиться результатами через область составить сообщение Outlook, а также Microsoft Teams клиентов.
 
 После загрузки Teams, расширение обмена сообщениями отображается как одно из установленных приложений в Outlook области сообщений.
+
+:::image type="content" source="images/outlook-teams-messaging-ext.png" alt-text="Расширение обмена сообщениями, Outlook и Teams":::
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

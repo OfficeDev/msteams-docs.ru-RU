@@ -10,7 +10,7 @@
 
 # <a name="visual-studio-code"></a>[Visual Studio Code](#tab/vscode)
 
-Выберите значок Teams набор средств :::image type="icon" source="~/assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png"::: на Visual Studio Code панели.
+Выберите значок Набор инструментов Teams:::image type="icon" source="~/assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png"::: на боковой панели Visual Studio Code.
 
 1. Выберите **Положение в облаке**.
 
@@ -74,13 +74,14 @@
 
 После завершения этапов подготовка и развертывание:
 
-1. Откройте панель отключки (**Ctrl+Shift+D** / **⌘⇧-D** или **View > Run**) из Visual Studio Code.
+1. Откройте панель отключки (**Ctrl+Shift+D** / **⌘⇧-D** или **Просмотр > Run**) из Visual Studio Code.
 1. Выберите **Пульт запуска (Edge)** из выпадаемой конфигурации запуска.
 1. Выберите кнопку Play, чтобы запустить приложение из Azure.
 
    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/launch-remote.png" alt-text="Снимок экрана с удаленным отображением запуска приложения." border="false":::
 
 1. Нажмите **Добавить**.
+
    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/remote-app-client.png" alt-text="Снимок экрана, показывающий установку приложения." border="false":::
 
    Ваше приложение загружается на сайт Azure.
