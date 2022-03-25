@@ -11,12 +11,12 @@ metadata:
   nextTutorialTitle: Обзор "Назад к началу работы"
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: a458be9d5eb0a3ed29975cd94b452268da5931eb
-  ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
+  ms.openlocfilehash: b8834594f0ecc94bbeb188654c87f15307056388
+  ms.sourcegitcommit: 65cea59cc0602269395a2f87e023a4057d9cc55e
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/22/2022
-  ms.locfileid: "63732014"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63765962"
 items:
 - durationInMinutes: 1
   content: "Начните Microsoft Teams разработку приложения с помощью первого Teams приложения. Создадим три Teams: приложение вкладки, приложение-бот и приложение для расширения обмена сообщениями. \n\nКаждое ваше приложение будет иметь возможность, которая поставляется со своим собственным пользовательским интерфейсом и UX:\n\n:::image type=\"content\" source=\"~/assets/images/teams-toolkit-v2/prerequisites/your-helloworld-app.png\" alt-text=\"Схема, показывающая, что это приложение имеет три функции.\" border=\"false\":::\n\n> [!NOTE]\n> В этом руководстве сначала создадим приложение вкладки, а затем бот-приложение, а затем приложение для расширения обмена сообщениями. Однако сначала можно создать приложение с любыми возможностями, не препятствуя работе других приложений.\n\nВ этом руководстве вы узнаете:\n\n- Настройка нового проекта с помощью Teams набор средств.\n- Создание трех приложений с различными возможностями для каждой вкладки, бота и расширения обмена сообщениями.\n- Структура приложения:\n    - Часть вкладки с JavaScript с React.\n    - Остальные функции с Node.js.\n- Развертывание приложения\n"

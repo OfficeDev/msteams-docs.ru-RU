@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 022baf126d8c809bc4f3acb5bcc0496d688a399c
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 4751bcdee0addc21c7aaa165cf29d78a895d723d
+ms.sourcegitcommit: 65cea59cc0602269395a2f87e023a4057d9cc55e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453665"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63766151"
 ---
 # <a name="teamsfx-library"></a>Библиотека TeamsFx
 
@@ -29,7 +29,7 @@ Microsoft Teams Framework (TeamsFx) — это библиотека, котор�
 
 TeamsFx CLI — это интерфейс командной строки на основе текста, который ускоряет Teams разработки приложений. Она направлена на обеспечение работы с клавиатурой при создании Teams приложений. Он также включает сценарий CI/CD, в котором можно интегрировать CLI в скрипты для автоматизации.
 
-Дополнительные сведения см. в статьях:
+Дополнительные сведения см. в указанных ниже статьях.
 
 * [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/dev/packages/cli)
 * [Пакет (NPM)](https://www.npmjs.com/package/@microsoft/teamsfx-cli)
@@ -472,3 +472,4 @@ teamsfx permission status --env dev --list-all-collaborators
 * [TeamsFx SDK для TypeScript или JavaScript](TeamsFx-SDK.md)
 * [Управление несколькими средами в Teams набор средств](TeamsFx-multi-env.md)
 * [Совместное использование Teams с помощью Teams набор средств](TeamsFx-collaboration.md)
+* [Обзор набора средств Teams](teams-toolkit-fundamentals.md)

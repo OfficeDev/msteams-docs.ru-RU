@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: близость области вызовов вызовов уведомлений о вызове
 ms.date: 04/02/2019
-ms.openlocfilehash: a1d2362347643badc06a23d967120c8f14a17200
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: d7939bd7fa613636d225e6f5437434c394a8c0bd
+ms.sourcegitcommit: 6906ba7e2a6e957889530b0a117a852c43bc86a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453056"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63783997"
 ---
 # <a name="incoming-call-notifications"></a>Уведомления о входящих звонках
 
@@ -91,7 +91,12 @@ Authentication: Bearer <TOKEN>
 
 Дополнительные сведения см. в [ссылке проверка входящие запросы](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/Common/Sample.Common/Authentication/AuthenticationProvider.cs).
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Требования и соображения к медийным ботам с хостингом приложений](~/bots/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md)
+
+## <a name="see-also"></a>См. также
+
+* [Настройка автосекретаря](/microsoftteams/create-a-phone-system-auto-attendant)
+* [Настройка автоматического ответа для Комнаты Microsoft Teams на устройствах android и Teams телефонов](/microsoftteams/set-up-auto-answer-on-teams-android)

@@ -4,12 +4,12 @@ description: Обзор начала работы с документацией 
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: 6a5b8b2ca2a8685db5cd78ece283ea2a2938e8ab
-ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
+ms.openlocfilehash: 4dc9c77cacea5af84164bbb6e7c56a50461a0b0d
+ms.sourcegitcommit: 65cea59cc0602269395a2f87e023a4057d9cc55e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63727647"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63765878"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -26,7 +26,6 @@ ms.locfileid: "63727647"
 Давайте кратко рассмотрим параметры среды сборки, которые можно выбрать, и дорожную карту для создания и развертывания приложения Teams.
 
 :::image type="content" source="../assets/images/get-started/gs-build-options.png" alt-text="Иллюстрация: основные шаги по созданию и развертыванию приложения Teams":::
-
 
 ## <a name="app-capabilities-and-development-tools"></a>Возможности и средства разработки приложений
 
@@ -49,6 +48,8 @@ ms.locfileid: "63727647"
 
 Теперь давайте создадим ваше первое приложение Teams. Но сначала выберите язык (или платформу) и подготовьте среду разработки.
 
+> [!div class="nextstepaction"]
+> [Создание приложения Teams с помощью Blazor](../sbs-gs-blazorapp.yml)
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью JavaScript с использованием React](../sbs-gs-javascript.yml)
 > [!div class="nextstepaction"]

@@ -4,12 +4,12 @@ description: Узнайте, как Microsoft Teams приложения мог�
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: вызов вызовов аудио видео IVR голосовых онлайн-собраний в режиме реального времени средства массовой информации бот
-ms.openlocfilehash: 2339431e6643d9ecf986b7a327f5fb7ee764fa00
-ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
+ms.openlocfilehash: 19f101a35120e068dbdcf06fe12e5bf030f44822
+ms.sourcegitcommit: 6906ba7e2a6e957889530b0a117a852c43bc86a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63727634"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63784004"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты вызовов и сетевых собраний
 
@@ -108,3 +108,5 @@ ms.locfileid: "63727634"
 * [Разработка ботов вызовов и онлайн-собраний на компьютере](./debugging-local-testing-calling-meeting-bots.md)
 * [Требования и соображения к медийным ботам с хостингом приложений](./requirements-considerations-application-hosted-media-bots.md)
 * [Техническая информация по обработке входящих уведомлений о вызове](./call-notifications.md)
+* [Настройка автосекретаря](/microsoftteams/create-a-phone-system-auto-attendant)
+* [Настройка автоматического ответа для Комнаты Microsoft Teams на устройствах android и Teams телефонов](/microsoftteams/set-up-auto-answer-on-teams-android)
