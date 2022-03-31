@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: Событие канала согласия на согласие бот-карты обработить обработник действий
-ms.openlocfilehash: 5094ce68aae25cb4c22c3b0b3b3b3d39e565e4ab
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 59c03c339187010867d9fd380d4ac9798e3aa20c
+ms.sourcegitcommit: 4abb9ca0b0e9661c7e2e329d9f10bad580e7d8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398647"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464777"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 
@@ -184,7 +184,9 @@ onTeamsMembersRemoved(async (membersRemoved, teamInfo, context, next) => {
 #### <a name="core-bot-framework-handlers"></a>Обработчики Core Bot Framework
 
 >[!NOTE]
-> За **исключением** действий  добавленных и удаленых участников, все обработчики действий, описанные в этом разделе, продолжают работать так же, как и с Teams ботом.
+>
+>* За **исключением** действий  добавленных и удаленых участников, все обработчики действий, описанные в этом разделе, продолжают работать так же, как и с Teams ботом.
+>* `onInstallationUpdateActivityAsync()`Метод используется для получения Teams locale при добавлении бота в Teams.
 
 Обработчики действий отличаются в контексте группы, где новый член добавляется в команду вместо потока сообщений.
 

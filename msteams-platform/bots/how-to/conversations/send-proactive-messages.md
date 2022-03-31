@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: high
 Keywords: отправить сообщение получить ИД пользователя ИД канала ИД беседы
-ms.openlocfilehash: e62f5715017deac6919de6b0b70f83ff626fd64b
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: dc8c600c08c3f0e381a85aeef6c268ad8a5cbb96
+ms.sourcegitcommit: 6906ba7e2a6e957889530b0a117a852c43bc86a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355736"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63784011"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -287,3 +287,4 @@ POST /v3/conversations
 * [**Примеры кода упреждающих сообщений в Teams**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)
 * [Беседы с бото в канале и групповом чате](~/bots/how-to/conversations/channel-and-group-conversations.md)
 * [Ответ на действие отправки модуля задач](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
+* [Отправка упреждающих уведомлений пользователям](/azure/bot-service/bot-builder-howto-proactive-message)

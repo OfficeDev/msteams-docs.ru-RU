@@ -5,12 +5,12 @@ ms.date: 11/15/2021
 ms.topic: conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 2e78746c226c8fa9e34f37e405f992f1bd7d2fd1
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 7aef6fff7e8d68e76f1a9233d3650d3833275bde
+ms.sourcegitcommit: 4abb9ca0b0e9661c7e2e329d9f10bad580e7d8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399263"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464791"
 ---
 # <a name="microsoft-teams-javascript-client-sdk-v2-preview"></a>Microsoft Teams JavaScript клиент SDK v2 Preview
 
@@ -361,11 +361,11 @@ async function example() {
 | `userObjectId` | `app.Context.user.id`|
 | `userTeamRole` | `app.Context.team.userRole`|
 | `userDisplayName` | `app.Context.user.displayName` |
-| Недоступно | `app.Context.app.host.name`|
+| Н/Д | `app.Context.app.host.name`|
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Вы также можете узнать больше о том, как изменить изменения в [командной версии SDK v2 Preview и](https://github.com/OfficeDev/microsoft-teams-library-js/blob/2.0-preview/CHANGELOG.md) ссылке [на API предварительного просмотра TeamsJS SDK v2](/javascript/api/overview/msteams-client?view=msteams-client-js-beta&preserve-view=true).
+Вы также можете узнать больше о том, как изменить изменения в [командной версии SDK v2 Preview и](https://github.com/OfficeDev/microsoft-teams-library-js/blob/2.0-preview/packages/teams-js/CHANGELOG.md) ссылке [на API предварительного просмотра TeamsJS SDK v2](/javascript/api/overview/msteams-client?view=msteams-client-js-beta&preserve-view=true).
 
 Когда вы будете готовы протестировать Teams приложения, работающие в Outlook и Office, см. в этой Office.
 

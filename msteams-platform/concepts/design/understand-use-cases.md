@@ -1,16 +1,16 @@
 ---
 title: Общее представление о случаях использования приложения и функций Teams
 author: heath-hamilton
-description: Планируйте приложение, анализируйте своих пользователей и их потребности, изучайте проблемы пользователей, для решения которых предназначено ваше приложение, планируйте проверку подлинности пользователей и способы освоения ими приложения.
+description: В этой статье вы узнаете о возможностях приложения Microsoft Teams, спланируете свое приложение Teams, ознакомитесь с пользователями своего приложения и их потребностями, изучите проблемы пользователей, для решения которых предназначено ваше приложение Teams, спланируете проверку подлинности пользователей и интерфейс подключения.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: 95ed5ed7af2eaf8c5b542a9a510484b5ec964b3e
-ms.sourcegitcommit: 65cea59cc0602269395a2f87e023a4057d9cc55e
+ms.openlocfilehash: 55955972bb9ebfbb3699ebcbc2cc131afc00fbd1
+ms.sourcegitcommit: 6189ca81099452a3ab2ff4fff4fb1ded5ba6dcfe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63766123"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498233"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 

@@ -5,13 +5,13 @@ description: Добавление проверки подлинности OAuth 
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-keywords: Регистрация бота группы ресурсов в Azure манифест эмулятора
-ms.openlocfilehash: 8b624b36dca9a280ec35e062861a95513859c0c5
-ms.sourcegitcommit: 3d0cfa779dec6bfc0daa57880ea37ab94f3d426f
+keywords: Развертывание манифеста бота-эмулятора Azure для группы ресурсов
+ms.openlocfilehash: f0dafb52774c43a511076134d2b39b91de0743a7
+ms.sourcegitcommit: 4abb9ca0b0e9661c7e2e329d9f10bad580e7d8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63493031"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464826"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 
@@ -31,7 +31,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 - **Развертывание бота в Azure и его связывание с поставщиком удостоверений**. Поставщик выдает маркер на основе учетных данных входа пользователя. Бот может использовать маркер для доступа к ресурсам, например к почтовой службе, для которой требуется проверка подлинности. Дополнительные сведения [см. Microsoft Teams поток проверки подлинности для ботов](auth-flow-bot.md).
 - **Интеграция бота в Microsoft Teams**. После интеграции бота можно войти и обмениваться сообщениями с ним в чате.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Знание основ [бота][concept-basics], [управление состоянием][concept-state], библиотека диалогов [и реализация][concept-dialogs] [последовательного потока бесед][simple-dialog].
 - Знание разработки Azure и OAuth 2.0.
@@ -150,7 +150,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
     ![Выбор условий службы](~/assets/images/adaptive-cards/select-terms-of-service.png)
 
-1. Нажмите кнопку **Сохранить**.
+1. Нажмите **Сохранить**.
 
     ![Выберите Teams](~/assets/images/adaptive-cards/select-teams.png)
 
@@ -219,7 +219,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
     ![teams bots app auth connection string adv1 view](../../../assets/images/authentication/auth-bot-identity-connection-adv1.png)
 
-1. Нажмите кнопку **Сохранить**.
+1. Нажмите **Сохранить**.
 
 #### <a name="microsoft-azure-active-directory-azure-ad-v2"></a>Microsoft Azure Active Directory (Azure AD) V2
 
@@ -243,7 +243,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
     1. Для **областей** введите список разрешений на график, относячимый к пространству, для этого приложения требуется, например: User.Read User.ReadBasic.All Mail.Read
 
-1. Нажмите кнопку **Сохранить**.
+1. Нажмите **Сохранить**.
 
 ### <a name="test-the-connection"></a>Тестирование подключения
 

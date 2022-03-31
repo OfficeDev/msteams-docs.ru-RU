@@ -5,12 +5,12 @@ description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: a795ae8c75774f5f3814e5b664314c0f32f30bcb
-ms.sourcegitcommit: 58a24422bb04a529b6629a56803ed2efabc17cb1
+ms.openlocfilehash: 7d6996f023b6e9f706edd99429dd1575394a43f1
+ms.sourcegitcommit: 6189ca81099452a3ab2ff4fff4fb1ded5ba6dcfe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62323199"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498226"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
@@ -64,6 +64,7 @@ ms.locfileid: "62323199"
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Создать бота для Teams](~/bots/how-to/create-a-bot-for-teams.md)
+* [Как работают боты Microsoft Teams](/azure/bot-service/bot-builder-basics-teams)
 * [Регистрация бота для звонков и собраний для Microsoft Teams](~/bots/calls-and-meetings/registering-calling-bot.md)
 * [Добавление проверки подлинности для бота Teams](~/bots/how-to/authentication/add-authentication.md)
 * [Обработчики действий ботов](~/bots/bot-basics.md)

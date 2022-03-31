@@ -5,12 +5,12 @@ description: Обзор инструментов и SDKs для создания
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 5a95159df887033bca339efd871261938aecb07d
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 1818ebfa102ce55d8243c16f460fa688fc67fdc3
+ms.sourcegitcommit: 4abb9ca0b0e9661c7e2e329d9f10bad580e7d8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453889"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464770"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -50,7 +50,7 @@ Bot [Framework —](https://dev.botframework.com/) это богатый SDK, и
 
 ## <a name="bots-with-webhooks-and-connectors"></a>Боты с веб-оками и соединитетелями
 
-Веб-окки и соединители подключают бота к веб-службам. С помощью веб-ок и соединителов можно создать простой бот для базового взаимодействия, например создания рабочего процесса или других простых команд. Они доступны только в группе, в которой вы их создаете, и предназначены для простых процессов, специфических для рабочего процесса вашей компании. Дополнительные сведения см. [в webhooks и соединители](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md).
+Веб-окки и соединители подключают бота к веб-службам. С помощью веб-ок и соединителов можно создать бот для базового взаимодействия, например создания рабочего процесса или других простых команд. Они доступны только в группе, в которой вы их создаете, и предназначены для простых процессов, специфических для рабочего процесса вашей компании. Дополнительные сведения см. [в webhooks и соединители](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md).
 
 ## <a name="advantages-of-bots"></a>Преимущества ботов
 
@@ -193,7 +193,8 @@ this.onMessage(async (context, next) => {
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|----------------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
+| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|
+| Образцы бота | Набор образцов ботов | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore) | |
 
 ## <a name="next-step"></a>Следующий этап
 
