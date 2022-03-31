@@ -21,7 +21,7 @@
     - name: Обзор начала работы
       href: get-started/get-started-overview.md
     - name: Создание первого приложения с помощью Blazor
-      href: sbs-gs-blazorapp.yml
+      href: sbs-gs-blazorupdate.yml
     - name: Создание первого приложения с помощью JavaScript
       href: sbs-gs-javascript.yml
     - name: Создание первого приложения с помощью SPFx
@@ -139,7 +139,7 @@
     - name: Пакеты .NET Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-dotnet'
     - name: Пакеты SDK Microsoft Graph
-      href: 'https://docs.microsoft.com/graph/sdks/sdks-overview'
+      href: /graph/sdks/sdks-overview
     - name: Устаревшие пакеты SDK
       items:
         - name: Боты пакета SDK (v3)
@@ -398,11 +398,11 @@
 - name: Использование данных Teams с помощью Microsoft Graph
   items:
     - name: Обзор
-      href: 'https://docs.microsoft.com/graph/teams-concept-overview'
+      href: /graph/teams-concept-overview
     - name: Microsoft Graph Toolkit
-      href: 'https://docs.microsoft.com/graph/toolkit/overview'
+      href: /graph/toolkit/overview
     - name: Начало работы
-      href: 'https://docs.microsoft.com/graph/toolkit/get-started/build-a-microsoft-teams-tab'
+      href: /graph/toolkit/get-started/build-a-microsoft-teams-tab
     - name: Согласие для определенных ресурсов
       href: graph-api/rsc/resource-specific-consent.md
     - name: Упреждающая установку приложений с помощью API Graph для отправки сообщений

@@ -5,12 +5,12 @@ description: Узнайте, как создать расширение Microsof
 ms.topic: conceptual
 localization_priority: Normal
 ms.author: anclear
-ms.openlocfilehash: cf4d2efae2c5628ad32beadbc61174ea2bb037a8
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 0dc7e8798301e57cc55814938e3311173ad82ce3
+ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452909"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590684"
 ---
 # <a name="create-a-messaging-extension-using-app-studio"></a>Создание расширения для сообщений с помощью App Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "63452909"
 
 ## <a name="register-your-web-service-with-the-bot-framework"></a>Регистрация веб-службы в Bot Framework
 
-Расширения обмена сообщениями пользуются схемой обмена сообщениями Bot Framework и протоколом безопасной связи; если у вас еще нет его, вам потребуется зарегистрировать веб-службу в Bot Framework. ID Приложения Майкрософт (мы назначим это как бот-Ид изнутри Teams, чтобы идентифицировать его из другого app Id, с помощью который вы можете работать) и конечная точка обмена сообщениями, с помощью регистра с помощью Bot Framework, будет использоваться в расширении обмена сообщениями для получения запросов и реагирования на них. Если вы используете существующую регистрацию, убедитесь, что вы включаете [Microsoft Teams канал](/azure/bot-service/bot-service-manage-channels.md?preserve-view=true&view=azure-bot-service-4.0).
+Расширения обмена сообщениями пользуются схемой обмена сообщениями Bot Framework и протоколом безопасной связи; если у вас еще нет его, вам потребуется зарегистрировать веб-службу в Bot Framework. ID Приложения Майкрософт (мы назначим это как бот-Ид изнутри Teams, чтобы идентифицировать его из другого app Id, с помощью который вы можете работать) и конечная точка обмена сообщениями, с помощью регистра с помощью Bot Framework, будет использоваться в расширении обмена сообщениями для получения запросов и реагирования на них. Если вы используете существующую регистрацию, убедитесь, что вы включаете [Microsoft Teams канал](/azure/bot-service/bot-service-manage-channels?preserve-view=true&view=azure-bot-service-4.0).
 
 Если вы выполните один из quickstarts или начнете с одного из доступных образцов, вы будете руководствоваться регистрацией веб-службы. Если вы хотите вручную зарегистрировать свою службу, у вас есть три варианта для этого. Если вы решите зарегистрироваться без использования подписки Azure, вы не сможете воспользоваться упрощенным потоком проверки подлинности OAuth, предоставляемым Bot Framework. После создания вы сможете перенести регистрацию в Azure.
 

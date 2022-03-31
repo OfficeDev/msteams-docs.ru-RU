@@ -5,12 +5,12 @@ keywords: начало работы команд портала разработ
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: c6c5ea448d8b1f793b2aa881c62325a1016f4508
-ms.sourcegitcommit: d9daad3d5818d5774911b96fdc7bde45b04c9908
+ms.openlocfilehash: 03fd1f75363f303a33a8349f88e13e3444316fc3
+ms.sourcegitcommit: 4abb9ca0b0e9661c7e2e329d9f10bad580e7d8f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64511236"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64464784"
 ---
 # <a name="manage-your-apps-with-the-developer-portal-for-microsoft-teams"></a>Управление приложениями Microsoft Teams с помощью портала разработчика
 
@@ -19,9 +19,7 @@ ms.locfileid: "64511236"
 :::image type="content" source="../../assets/images/tdp/tdp_home_1.png" alt-text="Снимок экрана, на котором показана главная страница портала разработчиков для Teams.":::
 
 > [!NOTE]
->
-> * В настоящее время портал разработчиков не доступен для облако сообщества для государственных организаций (GCC), GCC-High или Министерства обороны (DOD).
-> * Однако вы можете использовать регулярного клиента для создания приложения на портале разработчиков, скачивания приложения и отправки приложения с помощью [Microsoft Graph](/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http&preserve-view=true) в национальное облако. Дополнительные сведения см. в [национальных облачных развертываниях](/graph/deployments).
+> В настоящее время портал разработчиков не доступен для облако сообщества для государственных организаций (GCC), GCC-High или Министерства обороны (DOD).
 
 ## <a name="register-an-app"></a>Регистрация приложения
 

@@ -5,15 +5,15 @@ ms.author: surbhigupta
 ms.date: 08/26/2020
 ms.localizationpriority: medium
 ms.topic: conceptual
-title: Соображения для Teams интеграции
-ms.openlocfilehash: a21bb050008af935ee370d3e65d95a63a7090fb0
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+title: Вопросы интеграции Teams
+ms.openlocfilehash: f545acf25cc6b54a92dc8c7556b348394379abc5
+ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356254"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590740"
 ---
-# <a name="considerations-for-teams-integration"></a>Соображения для Teams интеграции
+# <a name="considerations-for-teams-integration"></a>Вопросы интеграции Teams
 
 Вы можете сделать веб-приложения подходящими Teams социальных и совместных функций, правильно интегрируя их с Teams.
   
@@ -39,7 +39,7 @@ ms.locfileid: "63356254"
 |Ярлыки действий и расширения  |[Расширения для системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)  |
 |Чат-боты |[Боты](../bots/what-are-bots.md) |
 |Уведомления канала  |[Боты](../bots/what-are-bots.md)<br/>[Входящие веб-окки](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)<br/>[Соединители Office 365](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)  |
-|Внешние службы сообщений  |[Боты](../bots/what-are-bots.md)<br/>[Исходяние веб-ок](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)  |
+|Внешние службы сообщений  |[Боты](../bots/what-are-bots.md)<br/>[Исходящие веб-перехватчики](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)  |
 |Modals  |[Модули задач](../task-modules-and-cards/what-are-task-modules.md)  |
 |Карты с богатым контентом  |[Адаптивные карточки](../task-modules-and-cards/what-are-cards.md)  |
 
@@ -58,7 +58,7 @@ ms.locfileid: "63356254"
 
 ***Сценарии интеграции**: SharePoint*
 
-Чтобы интегрировать существующую [страницу SharePoint](/MicrosoftTeams/teams-standalone-static-tabs-using-spo-sites) как вкладку Teams, необходимо рассмотреть следующее:
+Чтобы интегрировать существующую [страницу SharePoint](/sharepoint/dev/general-development/overview-of-the-sharepoint-page-model) как вкладку Teams, необходимо рассмотреть следующее:
 
 * Это должна быть *современная SharePoint* веб-страница.
 * Поддерживаются только личные вкладки. Вы не можете интегрировать страницу в качестве вкладки канала.

@@ -2,7 +2,7 @@
 title: Отправка активных сообщений
 metadata:
   title: Отправка активных сообщений
-  description: В этом сценарии вы узнаете, как отправлять проактивные сообщения
+  description: В этом модуле узнайте, как отправлять упреждающие сообщения, такие как приветствия, запланированные сообщения и уведомления от бота
   audience: Developer
   level: Beginner
   ms.date: 06/23/2021
@@ -11,16 +11,16 @@ metadata:
   nextTutorialTitle: Дополнительные дополнительные публикации об упреждающих сообщениях
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: 0a89892df09816785a3848db442c1573ba9f04f8
-  ms.sourcegitcommit: a36760750ff4f510c374a4c956be57f7c1b4a0db
+  ms.openlocfilehash: 9738be897a0f520c137424eb8f5d062c41396f13
+  ms.sourcegitcommit: 3dc9b539c6f7fbfb844c47a78e3b4d2200dabdad
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63674847"
+  ms.lasthandoff: 03/31/2022
+  ms.locfileid: "64571224"
 items:
 - durationInMinutes: 1
   content: "Проактивное сообщение — это любое сообщение, отправленное ботом, которое не является ответом на запрос пользователя. Это могут быть следующие сообщения.\n - Приветствия\n - Уведомления\n - Запланированные сообщения\n \nЭто пошаговое руководство помогает отправлять упреждающие сообщения от бота. Вы увидите следующие выходы:\n\n* Проактивное сообщение привета в чате        \n![Активный привет в чате](~/assets/images/proactive-scenario/proactive-helo.png)\n\n* Проактивное сообщение привета в качестве адаптивной карты    \n![активный привет в адаптивной карте](~/assets/images/proactive-scenario/proactive-helo-in-adaptive-card.png) \n"
-- title: Предварительные условия
+- title: Предварительные требования
   durationInMinutes: 2
   content: "Убедитесь, что вы установите следующее:    \n\n* [Visual Studio 2019 г](https://visualstudio.microsoft.com/downloads/).\n* [ASP.NET и веб-разработки](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.301-windows-x64-installer) или рабочей нагрузки на межплатформу [.NET Core](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.410-windows-x64-installer).\n* [ngrok](https://ngrok.com/download): межплатформеное приложение, которое позволяет с минимальными усилиями выставлять локальный сервер разработки в Интернет.\n* [Получите бесплатное Teams разработчика](https://developer.microsoft.com/microsoft-365/dev-program).\n"
 - title: Настройка локальной среды

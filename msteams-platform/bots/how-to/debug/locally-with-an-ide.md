@@ -5,12 +5,12 @@ description: Узнайте о тестировании и отладке бот
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: db4b9143dfbaa8dbbb3a5aa965836d151ad8cd46
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 0085d38ef2dafc4708772222fb9b173a12afedd7
+ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453371"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590705"
 ---
 # <a name="test-and-debug-your-bot-locally"></a>Тестирование и отлагивание бота локально
 
@@ -27,7 +27,7 @@ ms.locfileid: "63453371"
 
 > [!NOTE]
 > Чтобы изменить манифест и повторно загрузить приложение, [удалите](#delete-a-bot-from-teams) бот перед отправкой измененного пакета приложений.
-> Чтобы протестировать бот, в Teams. См [. возможность загрузки побок](/concepts/build-and-test/prepare-your-o365-tenant#enable-custom-teams-apps-and-turn-on-custom-app-uploading).
+> Чтобы протестировать бот, в Teams. См [. возможность загрузки побок](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant#enable-custom-teams-apps-and-turn-on-custom-app-uploading).
 
 ## <a name="debug-your-bot-locally"></a>Отламывка бота локально
 

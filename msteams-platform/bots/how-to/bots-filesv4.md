@@ -1,16 +1,16 @@
 ---
 title: Отправка и получение файлов через бот
-description: Узнайте, как отправлять и получать файлы через бот, используйте Graph API для всех Teams области, используйте API Teams с помощью примеров кода и примеров.
+description: Узнайте, как отправлять и получать файлы через бот с Graph API для личных, каналов и областей группового чата. Используйте Teams API бота с помощью образцов кода на основе SDK bot Framework v4.
 keywords: командные файлы ботов отправляют получение
 ms.date: 05/20/2019
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 0a7b98cb3e9070dc0b5c9df998c7457fabd3538e
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 787de4c774ae1b4cde71f74ed578668ca99a8f95
+ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452846"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590726"
 ---
 # <a name="send-and-receive-files-through-the-bot"></a>Отправка и получение файлов через бот
 
@@ -329,7 +329,7 @@ private async Task SendFileCardAsync(ITurnContext turnContext, string filename, 
 
 Следуйте [пошаговом](../../sbs-file-handling-in-bot.yml) руководстве, чтобы загрузить файлы Teams от бота.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Оптимизация бота с ограничением скорости в Teams](~/bots/how-to/rate-limit.md)
