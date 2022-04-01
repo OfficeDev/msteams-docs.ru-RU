@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: lajanuar
 ms.localizationpriority: high
 keywords: схема манифеста teams
-ms.openlocfilehash: 14f1bdaa546fd18612e9869efc2f1216c1aef8db
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 3117195b697061b4199ac629f73d8ffd2d93cd6a
+ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453770"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590747"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справочник: схема манифеста для Microsoft Teams
 
@@ -807,6 +807,9 @@ URL-адрес со ссылкой на схему JSON для манифест�
 ## <a name="authorization"></a>авторизация
 
 **Необязательно** — объект
+
+> [!NOTE]
+> Если свойству `manifestVersion` присвоено значение **1.12**, свойство авторизации несовместимо с более ранними версиями манифеста. Авторизация поддерживается для манифеста версии 1.12.
 
 Укажите и консолидируйте сведения об авторизации для приложения.
 
