@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 2e2d288340f3a806857f1e62ae832be0e6c4068c
-ms.sourcegitcommit: f9dc32566e87ffc1b2d2bd45f1388aae8f5c9083
+ms.openlocfilehash: 35a60e718bb97cdcc24de66729e3929b2d21a59f
+ms.sourcegitcommit: 2236204ff710f4eca606ceffb233572981f6edbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63558819"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64614532"
 ---
 # <a name="deploy-to-the-cloud"></a>Развертывание в облаке
 
@@ -52,6 +52,7 @@ Teams набор средств позволяет развертывать ил
 ## <a name="see-also"></a>См. также
 
 * [Добавление дополнительных облачных ресурсов](add-resource.md)
+* [Создание и развертывание облачной службы Azure](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
 * [Добавление дополнительных Teams приложений](add-capability.md)
 * [Развертывание кода проекта с конвейерами CI/CD](use-CICD-template.md)
 * [Управление несколькими средами](TeamsFx-multi-env.md)

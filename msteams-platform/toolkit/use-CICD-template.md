@@ -1,17 +1,17 @@
 ---
-title: Поддержка ci или CD для Teams разработчиков приложений
+title: Узнайте, как использовать шаблоны конвейеров ci или CD в GitHub, Azure Devops и Jenkins для разработчиков Teams приложений
 author: MuyangAmigo
 description: Шаблоны CICD
 ms.author: ruhe
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 4db593c82ef2efb97b99fbb2a00b88bc622394d6
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 5fa12248969f589282ecf8fd80c4d908ff42e8d8
+ms.sourcegitcommit: 2236204ff710f4eca606ceffb233572981f6edbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453413"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64614539"
 ---
 # <a name="cicd-guide"></a>Руководство по CI/CD
 
@@ -47,7 +47,7 @@ TeamsFx помогает автоматизировать рабочий про�
 Выполните следующие действия по настройке рабочего процесса CD:
 
 1. По умолчанию запускается рабочий процесс CD, когда в `main` филиале будут сделаны новые коммиты.
-1. Создание GitHub [для среды](https://docs.github.com/en/actions/reference/encrypted-secrets) для удержания основных и Microsoft 365 учетных данных учетных записей службы Azure. Дополнительные сведения см. [в GitHub Действия](https://github.com/OfficeDev/teamsfx-cli-action/blob/main/README.md).
+1. Создание GitHub [для среды](https://docs.github.com/en/actions/reference/encrypted-secrets) для удержания основных и Microsoft 365 учетных данных учетных записей службы Azure. Дополнительные сведения см. [в GitHub Actions](https://github.com/OfficeDev/teamsfx-cli-action/blob/main/README.md).
 1. При необходимости измените сценарии сборки.
 1. Удалите тестовые скрипты по мере необходимости.
 
@@ -224,7 +224,7 @@ steps:
 |`M365_ACCOUNT_PASSWORD`|Пароль учетной записи Microsoft 365.|
 |`M365_TENANT_ID`|Определение клиента, в котором Teams создается или публикуется приложение. Это значение является необязательным, если у вас нет учетной записи с несколькими клиентами и вы хотите использовать другого клиента. Узнайте больше о [том, как найти Microsoft 365 клиента](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).|
 
-## <a name="get-started-guide-for-other-platforms"></a>Начало руководства для других платформ
+## <a name="get-started-guide-for-other-platforms"></a>начало работы для других платформ
 
 Вы можете следовать перечисленным заранее заранее определенным сценариям bash для создания и настройки ci или CD-конвейеров на других платформах:
 
@@ -274,7 +274,7 @@ steps:
 
 ### <a name="see-also"></a>См. также
 
-* [Быстрый запуск для GitHub действий](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
+* [Быстрый запуск для GitHub Actions](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
 * [Создание первого Azure DevOps конвейера](/azure/devops/pipelines/create-first-pipeline)
 * [Создание первого конвейера Jenkins](https://www.jenkins.io/doc/pipeline/tour/hello-world/)
 * [Управление приложениями Microsoft Teams с помощью портала разработчика](/concepts/build-and-test/teams-developer-portal)

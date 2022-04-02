@@ -1,0 +1,92 @@
+### YamlMime:Tutorial
+title: Создание Teams беседы
+metadata:
+  title: Создание Teams беседы
+  description: В этом руководстве вы узнаете, как настроить бот-беседу в Teams.
+  audience: Developer
+  level: Beginner
+  ms.date: 04/01/2022
+  ms.topic: interactive-tutorial
+  nextTutorialHref: bots/how-to/conversations/channel-and-group-conversations.md
+  nextTutorialTitle: Беседы с бото в канале и групповом чате
+  ms.custom: mvc
+  ms.localizationpriority: none
+  ms.openlocfilehash: 7bdb662ef322edf1e635d84593be66d8946874ee
+  ms.sourcegitcommit: a85b4ae65b87006bb2e2e50ea902eb97291e83a8
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 04/01/2022
+  ms.locfileid: "64612822"
+items:
+- durationInMinutes: 1
+  content: >
+    Teams беседы позволяют пользователям взаимодействовать с веб-службой с помощью текстовых, интерактивных карт и модулей задач. Основные беседы обрабатываются через соединители Bot Framework, единый API REST. Этот API позволяет боту общаться с Teams другими каналами. В SDK Bot Builder представлены следующие функции:
+
+
+    * Простой доступ к соединители Bot Framework.
+
+    * Дополнительные функции для управления потоком и состоянием беседы.
+
+    * Простые способы включения когнитивных служб, таких как обработка естественного языка (NLP).
+
+
+    При первом добавлении бота в группу или группу отправляется вводное сообщение. В сообщении содержится краткое описание функций бота и их использования.
+
+
+    Это пошаговая руководство по созданию базового бота беседы в Teams приложении. Вы увидите следующий вывод:
+
+
+    :::image type="content" source="./assets/images/conversation-bot/final-output.png" alt-text="Конечный вывод." border="true"lightbox="assets/images/conversation-bot/final-output.png":::
+- title: Предварительные условия
+  durationInMinutes: 1
+  content: >
+    Чтобы настроить среду разработки, установите следующие средства:
+
+
+    * [Office 365 клиента](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
+
+    * [Ngrok или](https://ngrok.com/) эквивалентное решение для туннелей
+
+    * Последняя версия [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+
+    * [.NET Core SDK версии 3.1](https://dotnet.microsoft.com/en-us/download)
+
+    * Microsoft Teams и Teams учетной записи
+- title: Настройка бота беседы
+  durationInMinutes: 5
+  content: "Зарегистрируйте бота в службе ботов Azure при разработке и его хозяйской службе в Azure. Выполните следующие действия:\n\n1. Для создания туннеля к конечным точкам веб-сервера используйте ngrok.\n1. Создание регистрации канала бота в учетной записи Azure.\n1. Создание секрета клиента, который позволяет SSO-проверку подлинности бота.\n1. Добавление разрешений API для вызовов вниз по течению.\n1. Добавьте конечную точку обмена сообщениями в созданный туннель ngrok.\n1. Добавьте Microsoft Teams канал, чтобы развернуть бот в Teams канал.\n\n**Создание туннеля ngrok**\n\nИспользуйте ngrok для создания туннеля для общедоступных конечных точек HTTPS локального запуска веб-сервера. Запустите следующую команду в ngrok:\n\n```bash\nngrok http -host-header=rewrite 3978\n```\n\n**Создание регистрации канала бота в учетной записи Azure**\n\n1. Доступ к [портал Azure](https://portal.azure.com/).\n1. Выберите **Создать ресурс**.\n1. Поиск **Azure Bot** в поле поиска.\n1. Выберите **Azure Bot**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/azure-bot.png\" alt-text=\"Azure bot.\":::\n\n1. Нажмите **Создать**.\n1. Введите имя ручки бота **в поле обработки ботов** .\n1. Выберите **подписку** из списка выпаданий.\n1. Выберите **группу Ресурсов из** списка выпаданий.\n\n    Чтобы создать новую группу ресурсов, выберите **Создание** нового, введите имя ресурса, выберите **ОК и выберите** необходимое расположение из  списка выпаданий расположения группы новых ресурсов.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/create-azure-bot.png\" alt-text=\"Создание лазурного бота.\":::\n\n1. Выберите **тип приложения в качестве** **multi tenant** для **Microsoft App ID**.\n\n    > [!NOTE]\n    > В **разделе Создание типа** microsoft App ID уже выбран новый **microsoft App ID** для создания нового бота. Вы также можете выбрать **Использование существующей регистрации приложений**, если вы уже зарегистрировали бота. Введите код Microsoft App в поле **Существующий** код приложения и введите значение в **поле существующий пароль приложения** .\n\n1. Выберите **Проверить и создать**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/review-create.png\" alt-text=\"Просмотр и создание.\":::\n\n1. Выберите **Создать**, если проверка пройдет. Подготовка службы бота занимает несколько минут.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/validation-passed.png\" alt-text=\"Проверка бота.\":::\n\n1. Выберите пункт **Перейти к ресурсу**. Бот и связанные ресурсы перечислены в группе ресурсов.\n\n    Теперь создан бот Azure.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/go-to-resource.png\" alt-text=\"Перейдите на карточку ресурса.\":::\n\n**Создание секрета клиента**\n\n1. В **Параметры** выберите **Конфигурация**. Сохраните **для будущей ссылки ID** приложения Майкрософт (клиентский ID).\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/microsoft-app-id.png\" alt-text=\"Microsoft App Id.\":::\n\n1. Выберите **Управление** рядом **с Microsoft App ID**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/manage-bot-label.png\" alt-text=\"Управление меткой.\":::\n\n1. В разделе **Секреты клиента** выберите **новый секрет клиента**. **Появится окно \"Добавление секрета клиента**\".  \n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/new-client-secret.png\" alt-text=\"Новый секрет клиента.\":::\n\n1. **Введите Описание** и выберите **Добавить**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/add-client-secret.png\" alt-text=\"Добавление секрета клиента.\":::\n\n1. Выберите **копию для буфера** обмена в столбце **Значение** и сохраните секретный ИД клиента для будущей ссылки.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/value.png\" alt-text=\"Карточка значения.\":::\n\n**Добавление разрешений API для вызовов вниз по течению**\n\n1. В **\"Управление** области бота\" выберите **разрешения API**.\n1. Выберите **Добавить разрешение**. **Отображается окно разрешений API** запроса.\n1. Выберите **API Майкрософт** и выберите **microsoft Graph**.\n1. Выберите **разрешения приложения** и выберите разрешения.\n1. Добавьте все разрешения пользователей, необходимые вашему приложению для API ниже по течению, например `User.Read`.\n1. Выберите **Добавить разрешения**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/api-permissions.png\" alt-text=\"Добавление разрешений API.\" border=\"true\"lightbox=\"assets/images/conversation-bot/api-permissions.png\":::\n\n**Добавление конечной точки обмена сообщениями**\n\n1. Перейдите **на страницу Главная** бота и  выберите конфигурацию **Параметры с левой** области.\n1. Перейдите в ngrok.\n1. Скопируйте URL-адрес HTTPS (https to io), как показано на следующем изображении:\n    \n    :::image type=\"content\" source=\"./assets/images/conversation-bot/ngrok.png\" alt-text=\"Ngrok.\":::\n\n1. В **конечной точке** обмена сообщениями добавьте URL-адрес HTTPS, доступный в ngrok, а в конце **URL-адреса добавьте /api/messages**.\n    \n    :::image type=\"content\" source=\"./assets/images/conversation-bot/messaging-endpoint.png\" alt-text=\"Конечная точка обмена сообщениями.\":::\n\n1. Нажмите **Применить**.\n\n**Добавление канала Microsoft Teams**\n\n1. Перейдите к **дому**.\n1. В разделе **Последние ресурсы** откройте бот.\n1. Выберите **каналы в** левой области и выберите **Microsoft Teams** <img src=\"~/assets/images/conversation-bot/teamsicon.png\" alt=\"Teams icon\" width=\"20\"/> из списка доступных каналов.    \n    \n    :::image type=\"content\" source=\"./assets/images/conversation-bot/channels-teams.png\" alt-text=\"Выберите Teams.\":::\n\n1. Выберите почтовый ящик, чтобы принять условия службы и выбрать **Согласование**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/terms-of-service.png\" alt-text=\"Условия службы.\":::\n\n1. Нажмите кнопку **Сохранить**.\n\n    Вы успешно создали бот в Azure Служба Bot и теперь необходимо настроить подключение к службе ботов.\n"
+- title: Настройка подключения к службе ботов
+  durationInMinutes: 1
+  content: "Настройте образец бота, чтобы понять, как проверить подлинность беседы в Microsoft Teams и создать пакет Teams и загрузить его в организацию.\n\n1. Обновление appsettings.json в Visual Studio.\n1. Обновление manifest.json в Visual Studio и сжатие его с почтовым файлом в проводник.\n1. Запустите решение в Visual Studio.\n1. Upload бот должен Teams.\n\n**Обновление appsettings для беседы бота**\n\n1. Перейдите к репо https://github.com/Microsoft/botbuilder-samples.git.\n1. Выберите **Код** и выберите отсев.\n1. Выберите **почтовый индекс загрузки**.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/repo.png\" alt-text=\"Клонирование репо.\":::\n\n1. Обратите внимание на путь скачаемого репозитория.\n1. В **проводник** перейдите к **botbuilder-samplessamples** >  >  **csharp_dotnetcore** >  **57.teams-conversation-bot**.\n1. Откройте **файл appsettings.json** в Visual Studio и обновить конфигурацию для бота.\n\n    * Добавьте имя бота для `MicrosoftAppType`.\n    * Вы можете получить страницу `MicrosoftAppId` конфигурации бота. Это `MicrosoftAppPassword` ИД секрета клиента, сохраненный ранее.\n    * Вы можете получить ссылку `MicrosoftAppTenantId` или `UserId` ссылку учетной записи, используемой для входа в Teams. Следуйте пути на изображении, чтобы получить ссылку на `tenant id`:\n    \n        :::image type=\"content\" source=\"./assets/images/conversation-bot/teams-link-new.png\" alt-text=\"Путь к ID клиента в Teams.\":::\n\n        :::image type=\"content\" source=\"./assets/images/conversation-bot/tenant-id.png\" alt-text=\"Скопируйте Teams ссылку.\":::\n\n        Скопируйте id клиента из URL-адреса.\n\n        :::image type=\"content\" source=\"./assets/images/conversation-bot/url-tenantid.png\" alt-text=\"TenantID.\":::\n\n1. Нажмите кнопку **Сохранить**.    \n    \n    :::image type=\"content\" source=\"./assets/images/conversation-bot/appsettings.png\" alt-text=\"Appsettings Json.\":::\n\n**Обновление манифеста**\n\n1. В **проводник** перейдите к **botbuilder-samplessamples** >  >  **csharp_dotnetcore** >  **57.teams-conversation-botTeamsAppManifest** > .\n1. Откройте **файл manifest.json** в Visual Studio.\n1. В **файле manifest.json** найдите **{id}, {botId}** и добавьте свой microsoft App ID.\n1. Добавьте url-адрес ngrok в **validDomains** , исключая и `https://` сохраните.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/manifest.png\" alt-text=\"Манифест.\":::\n\n1. Zip содержимое папки **TeamsAppManifest** для **созданияmanifest.zip**.\n\n    > [!NOTE]\n    > Дополнительные `manifest.zip` папки в нем не должны содержаться. Он должен иметь исходный `manifest json` файл, `color` значок и `outline` значок в папке zip.\n    > Запустите решение в Visual Studio и загрузите манифест в клиент демонстрации для организации или Teams учетной записи.\n\n**Запуск решения в Visual Studio**\n\n1. Откройте Visual Studio.\n1. Выберите **Файл и** выберите **Открыть**.\n1. Выберите **Project/решение**, чтобы `.csproj` открыть файл из проводник.\n1. Перейдите **к botbuilder-samplessamples** >  >  **csharp_dotnetcore** >  **57.teams-conversation-bot**.\n1. Выберите `TeamsConversationBot.csproj` файл и выберите бот из списка **Startup Projects** .\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/visual-studio.png\" alt-text=\"Visual Studio отлаговка.\":::\n\n1. Выберите F5 для отлагки. Вы получите экран подтверждения, когда ваш бот будет готов.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/bot.png\" alt-text=\"Экран готового бота.\":::\n\n**Чтобы загрузить приложение в Teams**\n\n1. Перейдите в Teams.\n1. Чтобы загрузить **manifest.zip**, выберите **Store > Управление** приложениями > Upload настраиваемого приложения и откройтеmanifest.zipиз репо в проводник.****\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/upload-manifest.png\" alt-text=\"Манифест загрузки в Teams.\":::\n\n1. Выберите **Добавить для** установки бота беседы в Teams.\n\n    :::image type=\"content\" source=\"./assets/images/conversation-bot/add-app-teams.png\" alt-text=\"Добавление приложения в Teams.\":::\n\n    Теперь вы можете взаимодействовать с этим ботом.\n"
+- title: Взаимодействие с ботом беседы
+  durationInMinutes: 2
+  content: >
+    Вы можете взаимодействовать с ботом в Teams, отправив ему сообщение или выбрав команду из списка команд. Бот отвечает на следующие строки:
+
+
+    В левой области Teams выберите эллипсы ●●● и выберите приложение из списка. Бот показывает **предложения** следующим образом:
+
+
+    :::image type="content" source="./assets/images/conversation-bot/suggestions.png" alt-text="Карта Предложений.":::
+
+
+    | MentionMe    | Показать приветствие   | MessageAllMembers |
+
+    | --- | --- | --- |
+
+    | :::image type="content" source="./assets/images/conversation-bot/mentionme-new.png" alt-text="Карточка Mentionme" border="true"lightbox="assets/images/conversation-bot/mentionme-new.png"::: | :::image type="content" source="./assets/images/conversation-bot/show-welcome-new.png" alt-text="Показать приветственный билет" border="true"lightbox="assets/images/conversation-bot/show-welcome-new.png"::: | :::image type="content" source="./assets/images/conversation-bot/message-all-members-new.png" alt-text="Карта MessageAllMembers" border="true"lightbox="assets/images/conversation-bot/message-all-members-new.png"::: |
+
+    | **Результат:** Бот отвечает на сообщение и упоминает пользователя. | **Результат:** Бот отправляет приветливую карточку для взаимодействия. |  **Результат:** Бот отправляет каждому участнику текущего разговора сообщение один на один. |
+
+    | **Допустимые области:** личный, групповой чат, командный чат. | **Допустимые области:** личный, групповой чат, командный чат. |  **Допустимые области:** личный, групповой чат, командный чат. |
+
+
+    Вы можете выбрать вариант из списка команд, **введя** @TeamsConversationBot в область составить сообщение и что я могу сделать **?** текст над областью составить.
+- title: Полная задача
+  durationInMinutes: 1
+  content: >
+    Вы придумали что-то подобное?
+
+
+    :::image type="content" source="./assets/images/conversation-bot/final-output.png" alt-text="Конечный вывод." border="true"lightbox="assets/images/conversation-bot/final-output.png":::
+- content: Вы завершили руководство по началу работы с ботом для беседы для Microsoft Teams.

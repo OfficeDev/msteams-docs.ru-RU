@@ -5,12 +5,12 @@ description: Отправка, получение и обработка сооб
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 6c3d476ec51c75431d4a39e35b7307771b919d26
-ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
+ms.openlocfilehash: 737aba65007f3e5ed359bc67a49c3fb3e7cc5479
+ms.sourcegitcommit: a85b4ae65b87006bb2e2e50ea902eb97291e83a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63727501"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64612631"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Беседы с бото в канале и групповом чате
 
@@ -271,6 +271,10 @@ async def _mention_activity(self, turn_context: TurnContext):
 * Член группы добавляется в группу или канал.
 
 [!INCLUDE [sample](~/includes/bots/teams-bot-samples.md)]
+
+## <a name="step-by-step-guide"></a>Пошаговые инструкции
+
+Следуйте [пошаговом](../../../sbs-teams-conversation-bot.yml) руководстве, чтобы создать Teams разговорного бота.
 
 ## <a name="next-step"></a>Следующее действие
 

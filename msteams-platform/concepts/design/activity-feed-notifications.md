@@ -1,18 +1,18 @@
 ---
 title: Проектирование уведомлений каналов активности
 author: heath-hamilton
-description: Узнайте, как создать уведомления о канале активности для Teams приложения и получить Microsoft Teams пользовательского интерфейса.
+description: 'Узнайте, как создать уведомления о канале активности для Teams приложения и получить Teams пользовательского интерфейса. Разработка уведомлений из Teams канала в Visual Studio C #'
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: reference
-ms.openlocfilehash: d566def261d6fd1177fed46c31466d248c8e5e3b
-ms.sourcegitcommit: 22c9e44437720d30c992a4a3626a2a9f745983c1
+ms.openlocfilehash: 06e6b0ed28208f9ce446a0fc037b7477a562c596
+ms.sourcegitcommit: a85b4ae65b87006bb2e2e50ea902eb97291e83a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60719919"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64612624"
 ---
-# <a name="designing-activity-feed-notifications-for-your-microsoft-teams-app"></a>Проектирование уведомлений каналов активности для Microsoft Teams приложения
+# <a name="designing-activity-feed-notifications-for-your-microsoft-teams-app"></a>Разработка уведомлений о канале активности для Microsoft Teams приложения
 
 Канал действий — это поверхность для доступа пользователей к уведомлениям в Microsoft Teams. Канал сохраняет уведомления за последние четыре недели.
 
@@ -32,10 +32,10 @@ ms.locfileid: "60719919"
 
 |Счетчик|Описание|
 |----------|-----------|
-|1|**Аватар:** Показывает, кто инициировал действие.|
-|2|**Значок типа действия и приложения:** описывает тип действия. Для уведомлений приложения значок строки заменяется значком приложения.|
-|3|**Название (первая строка): Actor + reason**: *Actor*: Name of the user or app that initiated the activity. *Причина.* Описывает действие.|
-|4 |**Timestamp**: Показывает, когда действие произошло.|
+|1|**Аватар**: показывает, кто инициировал действие.|
+|2|**Значок типа действия и приложения**: описывает тип действия. Для уведомлений приложения значок строки заменяется значком приложения.|
+|3|**Название (первая строка): Actor + reason**: *Actor*: Name of the user or app that initiated the activity. *Причина*. Описывает действие.|
+|4|**Timestamp**. Показывает, когда произошло действие.|
 |5|**Расположение (вторая строка)**: показывает, где происходило действие в Teams.|
 |6 |**Предварительный просмотр текста (третья строка)**: показывает усеченную строку с начала уведомления.|
 
@@ -74,7 +74,7 @@ ms.locfileid: "60719919"
 
 ---
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Реализация уведомлений о канале действий](/graph/teams-send-activityfeednotifications)

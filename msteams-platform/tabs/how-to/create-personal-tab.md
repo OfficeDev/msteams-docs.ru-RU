@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.author: lajanuar
 keywords: yeoman ASP.NET MVC пакет appmanifest магазин разрешений домена разговора
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 43302047a3c5712a17e2bc506eca2eeb350db825
-ms.sourcegitcommit: 3dc9b539c6f7fbfb844c47a78e3b4d2200dabdad
+ms.openlocfilehash: 25eb2c75ea59c52cb7fb8878e3cfddde02f0db6d
+ms.sourcegitcommit: 2236204ff710f4eca606ceffb233572981f6edbe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64571366"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64614546"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -23,8 +23,6 @@ ms.locfileid: "64571366"
 ::: zone pivot="node-java-script"
 
 ## <a name="create-a-personal-tab-with-nodejs"></a>Создайте личную вкладку с Node.js
-
-Создание личной вкладки с помощью Node.js
 
 1. В командной подсказке установите [пакеты Yeoman](https://yeoman.io/) и [gulp-cli](https://www.npmjs.com/package/gulp-cli) , введите следующую команду после установки Node.js:
 
@@ -178,8 +176,8 @@ ms.locfileid: "64571366"
     {
         "entityId": "personalTab",
         "name": "Personal Tab ",
-        "contentUrl": "https://{{HOSTNAME}}/<yourDefaultTabNameTab>/personal.html",
-        "websiteUrl": "https://{{HOSTNAME}}",
+        "contentUrl": "https://{{PUBLIC_HOSTNAME}}/<yourDefaultTabNameTab>/personal.html",
+        "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
         "scopes": ["personal"]
     }
     ```
@@ -279,8 +277,6 @@ gulp ngrok-serve
 ::: zone pivot="razor-csharp"
 
 ## <a name="create-a-personal-tab-with-aspnet-core"></a>Создайте личную вкладку с ASP.NET Core
-
-Вы можете создать настраиваемую личную вкладку с C# и ASP.NET Core страниц Razor. Создание личной вкладки с ASP.NET Core
 
 1. В командной подсказке создайте новый каталог для проекта вкладки.
 
@@ -417,7 +413,7 @@ ngrok http 3978 --host-header=localhost
 
 1. В **функции Приложения** выберите личное приложение и введите имя и обнови **url-адрес** контента с `https://<yourngrokurl>/personalTab`помощью . Оставьте поле URL-адрес веб-сайта пустым.
 
-1. Нажмите кнопку **Сохранить**.
+1. Нажмите **Сохранить**.
 
 1. В разделе Домены домены с вкладок должны содержать URL-адрес ngrok без префикса `<yourngrokurl>.ngrok.io`HTTPS.
 
@@ -444,8 +440,6 @@ ngrok http 3978 --host-header=localhost
 ::: zone pivot="mvc-csharp"
 
 ## <a name="create-a-personal-tab-with-aspnet-core-mvc"></a>Создание личной вкладки с ASP.NET Core MVC
-
-Вы можете создать настраиваемую личную вкладку с C# и ASP.NET Core MVC. Создание личной вкладки с помощью ASP.NET Core MVC
 
 1. В командной подсказке создайте новый каталог для проекта вкладки.
 
@@ -594,7 +588,7 @@ ngrok http 3978 --host-header=localhost
 
 1. В **функции Приложения** выберите личное приложение и введите имя и обнови **url-адрес** контента с `https://<yourngrokurl>/personalTab`помощью . Оставьте поле URL-адрес веб-сайта пустым.
 
-1. Нажмите кнопку **Сохранить**.
+1. Нажмите **Сохранить**.
 
 1. В разделе Домены домены с вкладок должны содержать URL-адрес ngrok без префикса `<yourngrokurl>.ngrok.io`HTTPS.
 
