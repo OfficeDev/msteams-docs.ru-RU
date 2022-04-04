@@ -4,12 +4,12 @@ description: Описание всех карточек и действий ка
 ms.localizationpriority: high
 keywords: справочные материалы о карточках для ботов
 ms.topic: reference
-ms.openlocfilehash: 4bd890268641de5c228f77c8b65e5e93fcf66094
-ms.sourcegitcommit: f9dc32566e87ffc1b2d2bd45f1388aae8f5c9083
+ms.openlocfilehash: 2eab0ee575efb1abf0aed025243d3e4d891b60fd
+ms.sourcegitcommit: 3dc9b539c6f7fbfb844c47a78e3b4d2200dabdad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63558832"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64571497"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -268,6 +268,20 @@ ms.locfileid: "63558832"
 ```
 
 #### <a name="additional-information-on-adaptive-cards"></a>Дополнительные сведения об адаптивных карточках
+
+Динамические значения можно передать в адаптивной карточке с помощью символа доллара ($) и фигурных скобок. Дополнительные сведения см. в разделе [Шаблоны адаптивных карточек](/adaptive-cards/templating/).
+
+Пример.
+
+```json
+{ 
+ "type": "TextBlock",
+ "text": "${titleText}",
+ "size": "default",
+ "weight": "bolder"
+}
+
+```
 
 Справочник по Bot Framework:
 
