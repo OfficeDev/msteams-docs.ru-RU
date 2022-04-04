@@ -1,16 +1,16 @@
 ---
 title: Отправка упреждающих сообщений
-description: Узнайте, как отправлять упреждающие сообщения с помощью бота Microsoft Teams, заранее устанавливать приложение с помощью Microsoft Graph.
+description: Узнайте, как отправлять упреждающие сообщения с помощью бота Microsoft Teams, заранее устанавливать приложение с помощью Microsoft Graph и проверять примеры кода на основе SDK Bot Framework версии 4.
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: high
 Keywords: отправить сообщение получить ИД пользователя ИД канала ИД беседы
-ms.openlocfilehash: c9e90f018e67f60213de570f391cd8a87049aa60
-ms.sourcegitcommit: 3dc9b539c6f7fbfb844c47a78e3b4d2200dabdad
+ms.openlocfilehash: ec41ec08af9c7e3b7280995f8abc66b3a5a7baa0
+ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/31/2022
-ms.locfileid: "64571483"
+ms.locfileid: "64590719"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 

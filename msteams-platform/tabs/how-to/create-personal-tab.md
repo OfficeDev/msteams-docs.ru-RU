@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.author: lajanuar
 keywords: yeoman ASP.NET MVC пакет appmanifest магазин разрешений домена разговора
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 25eb2c75ea59c52cb7fb8878e3cfddde02f0db6d
-ms.sourcegitcommit: 2236204ff710f4eca606ceffb233572981f6edbe
+ms.openlocfilehash: d19ecc04aa14561d443a65d4ea896c210fdf4d94
+ms.sourcegitcommit: 3d6aa10d2f58a63c6a4281a30e8771469dba0d0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64614546"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64636166"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -262,7 +262,7 @@ gulp ngrok-serve
 
     :::image type="content" source="~/assets/images/tab-images/addingpersonaltab.png" alt-text="Добавление личной вкладки" border="true":::
 
-1. Выберите **Добавить** в всплывающее окно. Вкладка загружается в Teams.
+1. Выберите **Добавить** в диалоговом ок. Вкладка загружается в Teams.
 
     :::image type="content" source="~/assets/images/tab-images/personaltabuploaded.png" alt-text="Загруженная личная вкладка" border="true":::
 
@@ -370,14 +370,14 @@ ASP.NET Core относится к файлам, называемым **Index**,
 
 ### <a name="update-and-run-your-application"></a>Обновление и запуск приложения
 
-1. Перейдите в **папку PagesShared** >  и **откройте _Layout.cshtml** `<head>` и добавьте в раздел теги следующее:
+1. Откройте Visual Studio Обозреватель решений и перейдите в **папку PagesShared** >  **и откройте _Layout.cshtml** `<head>` и добавьте в раздел теги следующее:
 
     ```HTML
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>
     ```
 
-1. Откройте **PersonalTab.cshtml из** **папки Pages** и добавьте `microsoftTeams.initialize()` `<script>` в теги и сохраните.
+1. В Visual Studio Обозреватель решений **откройте PersonalTab.cshtml** из папки **Pages** и добавьте `microsoftTeams.initialize()` `<script>` теги и сохраните.
 
 1. В Visual Studio выберите **F5** **или выберите Пуск** отладки из меню отладки **приложения**.
 
@@ -391,7 +391,7 @@ ngrok http 3978 --host-header=localhost
 
 ### <a name="update-your-app-package-with-developer-portal"></a>Обновление пакета приложений с помощью портала разработчиков
 
-1. Перейдите **на портал разработчика** в Teams.
+1. Перейдите на [**портал Разработчик.**](https://dev.teams.microsoft.com/home)
 
 1. Откройте **приложения** и выберите **импортное приложение**.
 
@@ -411,23 +411,17 @@ ngrok http 3978 --host-header=localhost
 
 1. В **URL-адресах** приложений обновите политику конфиденциальности `https://<yourngrokurl>/privacy` `https://<yourngrokurl>/tou` и сохраните ее.
 
-1. В **функции Приложения** выберите личное приложение и введите имя и обнови **url-адрес** контента с `https://<yourngrokurl>/personalTab`помощью . Оставьте поле URL-адрес веб-сайта пустым.
+1. В **функции Приложения** выберите **Личный appCreate** >  **первую личную** вкладку приложения и введите имя и обновите **URL-адрес** контента с `https://<yourngrokurl>/personalTab`помощью . Оставьте поле URL-адрес веб-сайта пустым и **выберите Context** в качестве personalTab из списка dropdown и **Добавить**.
 
-1. Нажмите **Сохранить**.
+1. Выберите **Сохранить**.
 
 1. В разделе Домены домены с вкладок должны содержать URL-адрес ngrok без префикса `<yourngrokurl>.ngrok.io`HTTPS.
 
 ### <a name="preview-your-app-in-teams"></a>Просмотр приложения в Teams
 
-1. Выберите **предварительный просмотр Teams** из панели инструментов портала разработчиков. Портал разработчиков сообщает, что ваше приложение успешно загружено боком.
+1. Выберите **предварительный просмотр Teams** панели инструментов портала разработчика, портал разработчика сообщает вам, что приложение успешно загружено боком. Страница **Добавить** отображается для приложения в Teams.
 
-1. Выберите **Управление приложениями**. Ваше приложение перечислены в загруженных приложениях.
-
-1. Найдите приложение с помощью поиска, выберите три точки в строке.
-
-1. Выберите **параметр Просмотр** . Страница **Добавление** отображается для приложения.
-
-1. Выберите **Добавить** для загрузки вкладки на Teams. Вкладка теперь доступна в Teams.
+1. Выберите **Добавить** для загрузки вкладки в Teams. Вкладка теперь доступна в Teams.
 
     :::image type="content" source="~/assets/images/tab-images/personaltabaspnetuploaded.png" alt-text="Вкладка по умолчанию" border="true":::
 
@@ -545,14 +539,14 @@ public void Configure(IApplicationBuilder app)
 
 ### <a name="update-and-run-your-application"></a>Обновление и запуск приложения
 
-1. Перейдите в **папку** **ViewsShared** >  **и откройте _Layout.cshtml** и `<head>` добавьте в раздел теги следующее:
+1. Откройте Visual Studio Обозреватель решений и перейдите в **папку** **ViewsShared** >  **и откройте _Layout.cshtml** и `<head>` добавьте в раздел теги следующее:
 
     ```HTML
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="https://statics.teams.cdn.office.net/sdk/v1.6.0/js/MicrosoftTeams.min.js"></script>
     ```
 
-1. Откройте **PersonalTab.cshtml** из **папки** **ViewsPersonalTab** `microsoftTeams.initialize()` > `<script>` и добавьте в теги и сохраните.
+1. В Visual Studio Обозреватель решений **откройте PersonalTab.cshtml** из **папки** **ViewsPersonalTab** `microsoftTeams.initialize()` > `<script>` и добавьте в теги и сохраните.
 
 1. В Visual Studio выберите **F5** **или выберите Пуск** отладки из меню отладки **приложения**.
 
@@ -566,7 +560,7 @@ ngrok http 3978 --host-header=localhost
 
 ### <a name="update-your-app-package-with-developer-portal"></a>Обновление пакета приложений с помощью портала разработчиков
 
-1. Перейдите **на портал разработчика** в Teams.
+1. Перейдите на [**портал Разработчик.**](https://dev.teams.microsoft.com/home)
 
 1. Откройте **приложения** и выберите **импортное приложение**.
 
@@ -586,21 +580,15 @@ ngrok http 3978 --host-header=localhost
 
 1. В **URL-адресах** приложений обновите политику конфиденциальности `https://<yourngrokurl>/privacy` `https://<yourngrokurl>/tou` и сохраните ее.
 
-1. В **функции Приложения** выберите личное приложение и введите имя и обнови **url-адрес** контента с `https://<yourngrokurl>/personalTab`помощью . Оставьте поле URL-адрес веб-сайта пустым.
+1. В **функции Приложения** выберите **Личный appCreate** >  **первую личную** вкладку приложения и введите имя и обновите **URL-адрес** контента с `https://<yourngrokurl>/personalTab`помощью . Оставьте поле URL-адрес веб-сайта пустым и **выберите Context** в качестве personalTab из списка dropdown и **Добавить**.
 
-1. Нажмите **Сохранить**.
+1. Выберите **Сохранить**.
 
 1. В разделе Домены домены с вкладок должны содержать URL-адрес ngrok без префикса `<yourngrokurl>.ngrok.io`HTTPS.
 
 ### <a name="preview-your-app-in-teams"></a>Просмотр приложения в Teams
 
-1. Выберите **предварительный просмотр Teams** из панели инструментов портала разработчиков. Портал разработчиков сообщает, что ваше приложение успешно загружено боком.
-
-1. Выберите **Управление приложениями**. Ваше приложение перечислены в загруженных приложениях.
-
-1. Найдите приложение с помощью поиска, выберите три точки в строке.
-
-1. Выберите **параметр Просмотр** . Страница **Добавление** отображается для приложения.
+1. Выберите **предварительный просмотр Teams** панели инструментов портала разработчика, портал разработчика сообщает вам, что приложение успешно загружено боком. Страница **Добавить** отображается для приложения в Teams.
 
 1. Выберите **Добавить** для загрузки вкладки на Teams. Вкладка теперь доступна в Teams.
 
@@ -705,7 +693,7 @@ this.layoutService.registerAppFocusEnterCallback(this.focusEnterHandler);
 
 :::image type="content" source="../../assets/images/personal-apps/registerfocus-tab.png" alt-text="В примере показаны варианты добавления API registerOnFocussed для вкладки" border="true":::
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
