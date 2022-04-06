@@ -6,12 +6,12 @@ keywords: исходящий веб-перехватчик вкладок teams
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: c2705778251f44bde945efde7bfa8b519b88c8f3
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
-ms.translationtype: HT
+ms.openlocfilehash: 8545f36d8449e2cf86b7af841690b8bfb8d66c6c
+ms.sourcegitcommit: f892125106adb6731a20127f15d6e92f279127c5
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399116"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685627"
 ---
 # <a name="create-an-incoming-webhook"></a>Создание входящего веб-перехватчика
 
@@ -95,5 +95,5 @@ ms.locfileid: "63399116"
 * [Создание исходящего веб-перехватчика](~/webhooks-and-connectors/how-to/add-outgoing-webhook.md)
 * [Создание соединителя Office 365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
-* [Создание кнопки «Поделиться в Teams»](../../concepts/build-and-test/share-to-teams.md#create-share-to-teams-button)
+* [Предоставление общего доступа Teams из веб-приложений](~/concepts/build-and-test/share-to-teams-from-web-apps.md)
 * [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)

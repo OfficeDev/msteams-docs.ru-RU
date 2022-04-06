@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Teams документация разработчика
+title: Microsoft Teams для разработчиков
 summary: Добро пожаловать в обзор документации Microsoft Teams разработчика. Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
 metadata:
-  title: Microsoft Teams документация разработчика
-  description: Введение приложений для создания Teams
+  title: Microsoft Teams для разработчиков
+  description: Общие сведения о создании приложений для Teams
   ms.service: service
   ms.subservice: subservice
   ms.topic: landing-page
@@ -12,17 +12,19 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: a5a2f2c99f85333c4ebc5909499040b6b533b8b1
-  ms.sourcegitcommit: a85b4ae65b87006bb2e2e50ea902eb97291e83a8
+  ms.openlocfilehash: 894fa42dcb340bd9f96fb1edd0fc8af8425ecab8
+  ms.sourcegitcommit: f892125106adb6731a20127f15d6e92f279127c5
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/01/2022
-  ms.locfileid: "64612652"
+  ms.lasthandoff: 04/06/2022
+  ms.locfileid: "64685606"
 landingContent:
-- title: Ознакомьтесь с последними данными
+- title: Знакомство с последними версиями
   linkLists:
   - linkListType: concept
     links:
+    - text: Предоставление общего доступа Teams из личного приложения или вкладки
+      url: ~/concepts/build-and-test/Share-to-Teams-from-personal-app-or-tab.md
     - text: Создание Teams беседы
       url: ~/sbs-teams-conversation-bot.yml
     - text: Создание первого приложения с помощью Blazor
@@ -31,7 +33,7 @@ landingContent:
       url: ~/concepts/device-capabilities/browser-device-permissions.md
     - text: Интеграция средства "Выбор людей"
       url: ~/concepts/device-capabilities/people-picker-capability.md
-    - text: Меню переполнения адаптивных карт
+    - text: Меню переполнения адаптивных карточек
       url: ~/task-modules-and-cards/cards/cards-format.md
     - text: Глоссарий
       url: ~/get-started/glossary.md
@@ -39,17 +41,15 @@ landingContent:
       url: ~/overview.md
     - text: Планирование приложения
       url: ~/concepts/app-fundamentals-overview.md
-    - text: Схема манифеста приложения 1.12
+    - text: Схема манифеста приложения версии 1.12
       url: ~/resources/schema/manifest-schema.md
-    - text: Предварительное тестирование для приложений с монетизацией
-      url: ~/concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
 - title: Начало работы
   linkLists:
   - linkListType: get-started
     links:
     - text: начало работы с созданием приложений
       url: ../msteams-platform/get-started/get-started-overview.md
-    - text: начало работы с GitHub
+    - text: начало работы GitHub
       url: /contribute/additional-resources
   - linkListType: tutorial
     links:
@@ -57,11 +57,11 @@ landingContent:
       url: sbs-gs-blazorupdate.yml
     - text: Создание приложения с помощью JavaScript
       url: sbs-gs-javascript.yml
-    - text: Создание приложения с SPFx
+    - text: Создание приложения с помощью SPFx
       url: sbs-gs-spfx.yml
-    - text: Создание приложения с C# или .NET
+    - text: Создание приложения с помощью C# или .NET
       url: sbs-gs-csharp.yml
-    - text: Создайте приложение с Node.js
+    - text: Создание приложения с помощью Node.js
       url: sbs-gs-nodejs.yml
 - title: Монетизация приложения
   linkLists:
@@ -111,7 +111,7 @@ landingContent:
       url: ~/task-modules-and-cards/cards-and-task-modules.md
     - text: Манифест приложения
       url: ../msteams-platform/resources/schema/manifest-schema.md
-    - text: Схема манифеста предварительного просмотра общедоступных разработчиков
+    - text: Схема манифеста общедоступной предварительной версии разработчика
       url: ~/resources/schema/manifest-schema-dev-preview.md
 - title: Пошаговые руководства
   linkLists:
@@ -119,53 +119,53 @@ landingContent:
     links:
     - text: Создание Teams беседы
       url: ~/sbs-teams-conversation-bot.yml
-    - text: Создание бота вызовов и собраний
+    - text: Создание бота для звонков и собраний
       url: ~/sbs-calling-and-meeting.yml
-    - text: Настройка разрешений устройств Tab
+    - text: Настройка разрешений устройства tab
       url: ~/sbs-tab-device-permissions.yml
-    - text: Настройка SSO для вкладок и расширений обмена сообщениями
+    - text: Настройка единого входа для вкладок и расширений обмена сообщениями
       url: ~/sbs-tabs-and-messaging-extensions-with-SSO.yml
-    - text: Создание вкладок с помощью адаптивных карт
+    - text: Создание вкладок с помощью адаптивных карточек
       url: ~/sbs-tab-with-adaptive-cards.yml
-    - text: Создание бота для отправки проактивных сообщений
+    - text: Создание бота для отправки упреждающих сообщений
       url: ~/sbs-send-proactive.yml
-    - text: Создание бота с проверкой подлинности SSO
+    - text: Создание бота с проверкой подлинности единого входа
       url: ~/sbs-bots-with-sso.yml
     - text: Создание маркера собрания для расширения собрания
       url: ~/sbs-meeting-token-generator.yml
-    - text: Создание боковогопанеля собрания
+    - text: Создание боковой панели собрания
       url: ~/sbs-meetings-sidepanel.yml
   - linkListType: tutorial
     links:
-    - text: Upload файлы Teams от бота
+    - text: Upload файлы для Teams из бота
       url: ~/sbs-file-handling-in-bot.yml
     - text: Вызов модулей задач из Microsoft Teams
       url: ~/sbs-botbuilder-taskmodule.yml
-    - text: Создание расширения обмена сообщениями на основе поиска
+    - text: Создание расширения для обмена сообщениями на основе поиска
       url: ~/sbs-messagingextension-searchcommand.yml
-    - text: Создание расширения обмена сообщениями на основе действий
+    - text: Расширение обмена сообщениями на основе действий сборки
       url: ~/sbs-meetingextension-action.yml
-    - text: Создание исходяющих веб-ок
+    - text: Создание исходящих веб-перехватчиков
       url: ~/sbs-outgoing-webhooks.yml
-    - text: Развернутые ссылки в Teams с помощью бота
+    - text: Распаковка ссылок в Teams с помощью бота
       url: ~/sbs-botbuilder-linkunfurling.yml
-    - text: Сборка Teams соединители
+    - text: Создание Teams соединителей
       url: ~/sbs-teams-connectors.yml
 - title: Teams приложений
   linkLists:
   - linkListType: reference
     links:
-    - text: Создание сценариев для Teams приложения
+    - text: Сценарии сборки для Teams приложения
       url: https://adoption.microsoft.com/extensibility-look-book/scenarios/
-    - text: Лучшие практики для Teams приложений
+    - text: Рекомендации по Teams приложений
       url: https://developer.microsoft.com/microsoft-teams/app-development-resources
-    - text: Ознакомьтесь с приложениями с низким кодом для Teams
+    - text: Изучение приложений с низким кодом для Teams
       url: ~/samples/teams-low-code-solutions.md
 - title: Публикация и распространение
   linkLists:
   - linkListType: concept
     links:
-    - text: Распределение
+    - text: Распространения
       url: ~/concepts/deploy-and-publish/apps-publish-overview.md
     - text: Публикация в Teams Store
       url: ~/concepts/deploy-and-publish/appsource/publish.md
