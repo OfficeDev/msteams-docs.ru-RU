@@ -529,8 +529,14 @@
           href: resources/partner-apps-for-moodle.md
         - name: Вопросы и ответы о Moodle
           href: resources/faqs.md
-    - name: Создание кнопки «Поделиться в Teams»
-      href: concepts/build-and-test/share-to-teams.md
+    - name: Отправка в Teams
+      items:
+        - name: Обзор
+          href: concepts/build-and-test/share-to-teams-overview.md
+        - name: Поделиться в Teams из веб-приложений
+          href: concepts/build-and-test/share-to-teams-from-web-apps.md
+        - name: Поделиться в Teams из личного приложения или вкладки
+          href: concepts/build-and-test/Share-to-Teams-from-personal-app-or-tab.md
     - name: Добавление вкладки Teams в SharePoint
       href: tabs/how-to/tabs-in-sharepoint.md
     - name: Создание прямых ссылок

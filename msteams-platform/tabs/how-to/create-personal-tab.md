@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.author: lajanuar
 keywords: yeoman ASP.NET appmanifest conversation domain appmanifest package MVC
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: b0da768a74ab6925f95ce89e38cecdaa96e084e6
-ms.sourcegitcommit: f892125106adb6731a20127f15d6e92f279127c5
+ms.openlocfilehash: 91099b1acdea7b89305db9aad894c94019de4695
+ms.sourcegitcommit: b2f6599e44a418b4cce92f28843b7e013fd6e86d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685648"
+ms.locfileid: "64686685"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -252,12 +252,8 @@ gulp ngrok-serve
 
 ### <a name="upload-your-application-to-teams"></a>Upload приложения для Teams
 
-1. Перейдите Microsoft Teams и выберите **Store**&nbsp; :::image type="content" source="~/assets/images/tab-images/store.png" alt-text="Teams Store":::.
-1. Выбор **элемента "Управление приложениями"**
-1. Выберите **"Опубликовать приложение****" и Upload пользовательское приложение**.
-
-    :::image type="content" source="~/assets/images/tab-images/publish-app.png" alt-text="Upload пользовательского приложения" border="true":::
-
+1. Перейдите Microsoft Teams и выберите **"**&nbsp;:::image type="content" source="~/assets/images/tab-images/store.png" alt-text="Приложения Teams Store&quot;":::.
+1. Выберите **"Управление приложениями****" и Upload настраиваемое приложение**.
 1. Перейдите в каталог проекта, перейдите в папку **./package** , выберите ZIP-папку и нажмите кнопку **"Открыть"**.
 
     :::image type="content" source="~/assets/images/tab-images/addingpersonaltab.png" alt-text="Добавление личной вкладки" border="true":::
@@ -704,4 +700,4 @@ this.layoutService.registerAppFocusEnterCallback(this.focusEnterHandler);
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
 * [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
 * [Создание вкладок бесед](~/tabs/how-to/conversational-tabs.md)
-* [Предоставление общего доступа Teams из личного приложения или вкладки](~/concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md)
+* [Поделиться в Teams из личного приложения или вкладки](~/concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md)
