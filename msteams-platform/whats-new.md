@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 809aae76471b4b21821151f03d293b9c519a0f58
-ms.sourcegitcommit: f892125106adb6731a20127f15d6e92f279127c5
-ms.translationtype: MT
+ms.openlocfilehash: e977349c2a1b9685fff58ea555d1e86984246100
+ms.sourcegitcommit: 7bae0aa77b9f4818efc72133eb582d682e126cb3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685536"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64706160"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,14 +22,12 @@ ms.locfileid: "64685536"
 
 | Дата | Update | Найти здесь |
 | --- | --- | --- |
-|04/06/2022| Предоставление общего доступа Teams из личного приложения или вкладки (предварительная версия для разработчиков) | Интеграция с Teams > Share to Teams > [Share to Teams from personal app or tab](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
+|04/06/2022| Поделиться в Teams из личного приложения или вкладки (предварительная версия для разработчиков) | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 |01.04.2022 г.| Представлены пошаговые инструкции по созданию диалогового бота Teams| Создание ботов > Диалоги ботов > Каналы и групповые беседы > [Пошаговые инструкции по созданию диалогового бота Teams](sbs-teams-conversation-bot.yml) |
 |30.03.2022 г.| Модуль "Начало работы" с приложением Blazor обновлен с помощью вкладок и ботов|  Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorupdate.yml)|
 |30.03.2022 г.|Разрешения устройства для браузера | Интеграция возможностей устройств > [Разрешения устройств для браузера](concepts/device-capabilities/browser-device-permissions.md) |
 |29.03.2022 г. | Интеграция средства "Выбор людей" | Интеграция с Teams > [Интеграция средства "Выбор людей"](concepts/device-capabilities/people-picker-capability.md)|
 |23.03.2022| Представлены пошаговые инструкции по развертыванию ссылок в Teams с помощью бота | Создание расширений для сообщений > Добавление развертывания ссылок > [Развертывание ссылок в Teams с помощью бота](sbs-botbuilder-linkunfurling.yml)|
-|22.03.2022| Обновлено начало работы с приложением Blazor для Teams |  • Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorapp.yml)|
-|22.03.2022| Обновлено начало работы с приложением Blazor для Teams |  Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorapp.yml)|
 |22.03.2022| Добавлены сведения о процессе отладки| • Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Локальная отладка приложения Teams](toolkit/debug-local.md) </br> • Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Отладка фоновых процессов](toolkit/debug-background-process.md)|
 |14.03.2022| Представлены пошаговые инструкции по сборке и тестированию соединителя в Microsoft Teams | Создание веб-перехватчиков и соединителей > Создание соединителей Office 365 > [Создание соединителей Teams](sbs-teams-connectors.yml)|
 |10.03.2022| Добавлены сведения о подключаемых модулях Moodle LMS и Microsoft 365 | Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|
@@ -67,8 +65,6 @@ ms.locfileid: "64685536"
 |30.03.2022 г.|Разрешения устройства для браузера | Интеграция возможностей устройств > [Разрешения устройств для браузера](concepts/device-capabilities/browser-device-permissions.md) |
 |29.03.2022 г. |Интеграция средства "Выбор людей" | Интеграция с Teams > [Интеграция средства "Выбор людей"](concepts/device-capabilities/people-picker-capability.md)
 |23.03.2022| Представлены пошаговые инструкции по развертыванию ссылок в Teams с помощью бота | Создание расширений для сообщений > Добавление развертывания ссылок > [Развертывание ссылок в Teams с помощью бота](sbs-botbuilder-linkunfurling.yml)|  
-|22.03.2022| Обновлено начало работы с приложением Blazor для Teams|  • Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorapp.yml)|
-|22.03.2022| Обновлено начало работы с приложением Blazor для Teams|  Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorapp.yml)|
 |22.03.2022| Добавлены сведения о процессе отладки| • Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Локальная отладка приложения Teams](toolkit/debug-local.md) </br> • Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Отладка фоновых процессов](toolkit/debug-background-process.md)|
 |14.03.2022| Представлены пошаговые инструкции по сборке и тестированию соединителя в Microsoft Teams | Создание веб-перехватчиков и соединителей > Создание соединителей Office 365 > [Создание соединителей Teams](sbs-teams-connectors.yml)|
 |10.03.2022 | Добавлены сведения о подключаемых модулях Moodle LMS и Microsoft 365 | Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|  
@@ -269,7 +265,7 @@ ms.locfileid: "64685536"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-|04/06/2022| Предоставление общего доступа Teams из личного приложения или вкладки | Интеграция с Teams > Share to Teams > [Share to Teams from personal app or tab](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
+|04/06/2022| Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 |07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 |02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
 |03.02.2022| Предварительное тестирование для приложений с монетизацией| Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md)|
