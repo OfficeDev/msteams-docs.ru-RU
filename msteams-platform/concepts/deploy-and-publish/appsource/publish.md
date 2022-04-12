@@ -5,12 +5,12 @@ ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: d367824e633e129129a5c4de8900d8f1e3a19013
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 248830328e68ce5c8e844a200501d240ff9e82ea
+ms.sourcegitcommit: 1346b0eab13704807fca98f85c452214701d3fa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398934"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64793799"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
@@ -51,7 +51,7 @@ ms.locfileid: "63398934"
 
 * **Подробные тесты функций и интерфейса**
 
-  Ваше приложение тщательно проверяется проверяющим, чтобы обеспечить соответствие требованиям [политик сертификации коммерческой платформы Microsoft](/legal/marketplace/certification-policies), сосредоточившись на глубоком тестировании функций и интерфейса, проверке впечатлений от использования и проверках метаданных. Проверка приложений выполняется на настольных компьютерах, в Интернете и мобильных клиентах.
+  Ваше приложение проходит тщательную проверку, чтобы убедиться в соответствии [политикам сертификации Microsoft Commercial Marketplace](/legal/marketplace/certification-policies). Проводится всестороннее тестирование функциональности и пользовательского интерфейса, проверка удобства использования и проверка метаданных. Приложение тестируется на компьютере, а также в виде веб-клиента и мобильного клиента. Мы предоставим подробный отчет о тестировании в течение 24 рабочих часов после отправки.
 
 * **Управляемая публикация приложения через службу-помощника**
 
