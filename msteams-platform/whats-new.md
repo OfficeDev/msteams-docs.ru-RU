@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: e977349c2a1b9685fff58ea555d1e86984246100
-ms.sourcegitcommit: 7bae0aa77b9f4818efc72133eb582d682e126cb3
+ms.openlocfilehash: a3138a2fe02ecf8b061edab82e6954195512208d
+ms.sourcegitcommit: 77e92360bd8fb5afcda76195d90122ce8ef0389e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64706160"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64838473"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -116,7 +116,6 @@ ms.locfileid: "64706160"
 |13.11.2021| В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Получение всех сообщений канала с помощью RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > Беседы ботов > [Обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [Чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) |
 |28.10.2021| Монетизация приложения Teams с помощью коммерческого предложения SaaS | Распространение приложения > Публикация в магазине Teams > [Предложение SaaS вместе с приложением Teams](~/concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md) |
 |25.10.2021| В модуле "Начало работы" для документации разработчика Microsoft Teams обновлена структура и процедуры пошаговых инструкций | Начало работы > [Первые шаги в создании приложения Teams](get-started/get-started-overview.md) |
-|21.10.2021| Добавление API `registerOnFocused` для вкладок или личных приложений | Создание вкладок > Создание личных вкладок > [Добавление API `registerOnFocused` для вкладок или личных приложений](tabs/how-to/create-personal-tab.md#add-registeronfocused-api-for-tabs-or-personal-apps) |
 |20.10.2021| Сцена собрания теперь поддерживается в общедоступной версии | Разработка приложений для собраний Teams > [Включение и настройка приложений для собраний Teams](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md) |
 |20.10.2021| API сведений о собраниях и событиях Teams в реальном времени | Создание приложений для собраний Teams > [API получения сведений о собрании](apps-in-teams-meetings/API-references.md#get-meeting-details-api) |
 |18.10.2021| Развертывание ссылок на вкладки и представление "Экран" | Создание вкладок > [Развертывание ссылок на вкладки и представление "Экран"](tabs/tabs-link-unfurling.md) |

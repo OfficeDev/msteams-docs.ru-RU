@@ -7,16 +7,16 @@ ms.topic: quickstart
 ms.author: lajanuar
 keywords: yeoman ASP.NET appmanifest conversation domain appmanifest package MVC
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 40afdd1692b0f5d7c99eaaf228969ba8c95ba20b
-ms.sourcegitcommit: 61003a14e8a179e1268bbdbd9cf5e904c5259566
+ms.openlocfilehash: fda21b5bf9908529a9a20820867551202b761362
+ms.sourcegitcommit: 77e92360bd8fb5afcda76195d90122ce8ef0389e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737216"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64838478"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
-Личные вкладки, как и персональные боты, являются частью личных приложений и доступны только одному пользователю. Их можно закрепить на левой панели для простого доступа. Вы также можете [изменить порядок и](#reorder-static-personal-tabs) добавить [`registerOnFocused` API для](#add-registeronfocused-api-for-tabs-or-personal-apps) личных вкладок.
+Личные вкладки, как и персональные боты, являются частью личных приложений и доступны только одному пользователю. Их можно закрепить на левой панели для простого доступа. Вы также можете [изменить порядок](#reorder-static-personal-tabs) личных вкладок.
 
 Убедитесь, что у [вас есть все](~/tabs/how-to/tab-requirements.md) предварительные требования для создания личной вкладки.
 
@@ -262,7 +262,7 @@ gulp ngrok-serve
 
    Теперь вы успешно создали и добавили личную вкладку в Teams.
   
-   Так как у вас есть личная вкладка в Teams, вы также можете изменить [порядок](#reorder-static-personal-tabs) [`registerOnFocused` и добавить API](#add-registeronfocused-api-for-tabs-or-personal-apps) для личной вкладки.
+   Так как у вас есть личная вкладка в Teams, вы также можете изменить [](#reorder-static-personal-tabs) порядок личной вкладки.
 
 ::: zone-end
 
@@ -401,7 +401,7 @@ ngrok http 3978 --host-header=localhost
 
 1. В **разделе "Функции приложения**" выберите **"Личный appCreate** >  **your first personal app tab**" (Создать первую личную вкладку приложения), введите имя и обновите **URL-адрес** содержимого`https://<yourngrokurl>/personalTab`. Оставьте поле URL-адреса веб-сайта пустым и выберите **"Контекст** как personalTab" в раскрывающемся списке и " **Добавить"**.
 
-1. Выберите **Сохранить**.
+1. Нажмите **Сохранить**.
 
 1. В разделе "Домены" домены с вкладок должны содержать URL-адрес ngrok без префикса HTTPS `<yourngrokurl>.ngrok.io`.
 
@@ -415,7 +415,7 @@ ngrok http 3978 --host-header=localhost
 
    Теперь вы успешно создали и добавили личную вкладку в Teams.
   
-   Так как у вас есть личная вкладка в Teams, вы также можете изменить [порядок](#reorder-static-personal-tabs) [`registerOnFocused` и добавить API](#add-registeronfocused-api-for-tabs-or-personal-apps) для личной вкладки.
+   Так как у вас есть личная вкладка в Teams, вы также можете изменить [](#reorder-static-personal-tabs) порядок личной вкладки.
 
 ::: zone-end
 
@@ -570,7 +570,7 @@ ngrok http 3978 --host-header=localhost
 
 1. В **разделе "Функции приложения**" выберите **"Личный appCreate** >  **your first personal app tab**" (Создать первую личную вкладку приложения), введите имя и обновите **URL-адрес** содержимого`https://<yourngrokurl>/personalTab`. Оставьте поле URL-адреса веб-сайта пустым и выберите **"Контекст** как personalTab" в раскрывающемся списке и " **Добавить"**.
 
-1. Выберите **Сохранить**.
+1. Нажмите **Сохранить**.
 
 1. В разделе "Домены" домены с вкладок должны содержать URL-адрес ngrok без префикса HTTPS `<yourngrokurl>.ngrok.io`.
 
@@ -584,7 +584,7 @@ ngrok http 3978 --host-header=localhost
   
    Теперь вы успешно создали и добавили личную вкладку в Teams.
 
-   Так как у вас есть личная вкладка в Teams, вы также можете изменить [порядок](#reorder-static-personal-tabs) [`registerOnFocused` и добавить API](#add-registeronfocused-api-for-tabs-or-personal-apps) для личной вкладки.
+   Так как у вас есть личная вкладка в Teams, вы также можете изменить [](#reorder-static-personal-tabs) порядок личной вкладки.
 
 ::: zone-end
 
@@ -612,76 +612,7 @@ ngrok http 3978 --host-header=localhost
 
 ```
 
-## <a name="add-registeronfocused-api-for-tabs-or-personal-apps"></a>Добавление `registerOnFocused` API для вкладок или личных приложений
-
-API `registerOnFocused` пакета SDK позволяет использовать клавиатуру на Teams. Вы можете вернуться к личному приложению и сосредоточиться на вкладке или личном приложении с помощью клавиш CTRL, SHIFT и F6. Например, вы можете перейти от личного приложения к поиску, а затем вернуться к личному приложению или использовать клавиши CTRL+F6, чтобы обойти необходимые места.
-
-В следующем коде приведен пример `registerFocusEnterHandler` определения обработчика в пакете SDK, когда фокус должен быть возвращен на вкладку или личное приложение:
-
-``` C#
-
-export function registerFocusEnterHandler(handler: (navigateForward: boolean) => void): 
-void {
-  HandlersPrivate.focusEnterHandler = handler;
-  handler && sendMessageToParent('registerHandler', ['focusEnter']);
-}
-function handleFocusEnter(navigateForward: boolean): void
- {
-  if (HandlersPrivate.focusEnterHandler)
-   {
-    HandlersPrivate.focusEnterHandler(navigateForward);
-  }
-}
-
-```
-
-После активации обработчика `focusEnter`с ключевым словом обработчик `registerFocusEnterHandler` `focusEnterHandler` вызывается с помощью функции обратного вызова, которая принимает параметр с именем `navigateForward`. Значение определяет `navigateForward` тип событий. Вызывается `focusEnterHandler` только сочетанием клавиш CTRL+F6, а не клавишей TAB.
-Ниже приведены ключи, полезные для событий Teams перемещения.
-
-* Событие пересылки: клавиши CTRL+F6
-* Событие назад: клавиши CTRL+SHIFT+F6
-
-``` C#
-
-case 'focusEnter':     
-this.registerFocusEnterHandler((navigateForward: boolean = true) => {
-this.sdkWindowMessageHandler.sendRequestMessage(this.frame, this.constants.SdkMessageTypes.focusEnter, [navigateForward]);
-// Set focus on iframe or webview
-if (this.frame && this.frame.sourceElem) {
-  this.frame.sourceElem.focus();
-}
-return true;
-});
-}
-
-// callback function to be passed to the handler
-private focusEnterHandler: (navigateForward: boolean) => boolean;
-
-// function that gets invoked after handler is registered.
-private registerFocusEnterHandler(focusEnterHandler: (navigateForward: boolean) => boolean): void {
-this.focusEnterHandler = focusEnterHandler;
-this.layoutService.registerAppFocusEnterCallback(this.focusEnterHandler);
-}
-
-```
-
-### <a name="personal-app"></a>Личное приложение
-
-:::image type="content" source="../../assets/images/personal-apps/registerfocus.png" alt-text="В примере показаны параметры для добавления API registerOnFocussed" border="true":::
-
-#### <a name="personal-app-forward-event"></a>Личное приложение: событие пересылки
-
-:::image type="content" source="../../assets/images/personal-apps/registerfocus-forward-event.png" alt-text="В примере показаны параметры для добавления перемещения вперед в API registerOnFocussed" border="true":::
-
-#### <a name="personal-app-backward-event"></a>Личное приложение: событие назад
-
-:::image type="content" source="../../assets/images/personal-apps/registerfocus-backward-event.png" alt-text="В примере показаны параметры для добавления registerOnFocussed API обратного перемещения" border="true":::
-
-### <a name="tab"></a>Tab
-
-:::image type="content" source="../../assets/images/personal-apps/registerfocus-tab.png" alt-text="В примере показаны параметры добавления registerOnFocussed API для tab" border="true":::
-
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
