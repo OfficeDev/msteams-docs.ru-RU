@@ -4,12 +4,12 @@ description: Обзор начала работы с документацией 
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: e30aae82c4251b9d32556032a7f4165ffc6ab4b1
-ms.sourcegitcommit: 3dc9b539c6f7fbfb844c47a78e3b4d2200dabdad
+ms.openlocfilehash: 6ab9c3c531f7919b8558c45b200a5bf679591e34
+ms.sourcegitcommit: 123a64d7bcd310352dcff9f769b5f7f9cafd6aeb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64571427"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64910545"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -49,9 +49,9 @@ ms.locfileid: "64571427"
 Теперь давайте создадим ваше первое приложение Teams. Но сначала выберите язык (или платформу) и подготовьте среду разработки.
 
 > [!div class="nextstepaction"]
-> [Создание приложения Teams с помощью Blazor](../sbs-gs-blazorupdate.yml)
-> [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью JavaScript с использованием React](../sbs-gs-javascript.yml)
+> [!div class="nextstepaction"]
+> [Создание приложения Teams с помощью Blazor](../sbs-gs-blazor.yml)
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью SPFx](../sbs-gs-spfx.yml)
 > [!div class="nextstepaction"]

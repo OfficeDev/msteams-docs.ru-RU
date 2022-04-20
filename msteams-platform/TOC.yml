@@ -20,10 +20,10 @@
   items:
     - name: Обзор начала работы
       href: get-started/get-started-overview.md
-    - name: Создание первого приложения с помощью Blazor
-      href: sbs-gs-blazorupdate.yml
     - name: Создание первого приложения с помощью JavaScript
       href: sbs-gs-javascript.yml
+    - name: Создание первого приложения с помощью Blazor
+      href: sbs-gs-blazorupdate.yml
     - name: Создание первого приложения с помощью SPFx
       href: sbs-gs-spfx.yml
     - name: Создание первого приложения с помощью C# или .NET
