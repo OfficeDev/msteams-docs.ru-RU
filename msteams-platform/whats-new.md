@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: a3138a2fe02ecf8b061edab82e6954195512208d
-ms.sourcegitcommit: 77e92360bd8fb5afcda76195d90122ce8ef0389e
+ms.openlocfilehash: 936d5eff50453801527425cbd4a61f6928fb1d30
+ms.sourcegitcommit: 8ae93b7bfffff77a5b9cb7a5d287f202e73ea9be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64838473"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952389"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "64838473"
 
 | Дата | Update | Найти здесь |
 | --- | --- | --- |
+|19.04.2022 | Отправка приложения в Microsoft Teams | Распространение приложения > [Отправка приложения](concepts/deploy-and-publish/apps-upload.md)|
 |04/06/2022| Поделиться в Teams из личного приложения или вкладки (предварительная версия для разработчиков) | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 |01.04.2022 г.| Представлены пошаговые инструкции по созданию диалогового бота Teams| Создание ботов > Диалоги ботов > Каналы и групповые беседы > [Пошаговые инструкции по созданию диалогового бота Teams](sbs-teams-conversation-bot.yml) |
 |30.03.2022 г.| Модуль "Начало работы" с приложением Blazor обновлен с помощью вкладок и ботов|  Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorupdate.yml)|
@@ -60,6 +61,7 @@ ms.locfileid: "64838473"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|19.04.2022 | Отправка приложения в Microsoft Teams | Распространение приложения > [Отправка приложения](concepts/deploy-and-publish/apps-upload.md)|
 |01.04.2022 г.| Представлены пошаговые инструкции по созданию диалогового бота Teams| Создание ботов > Диалоги ботов > Каналы и групповые беседы > [Пошаговые инструкции по созданию диалогового бота Teams](sbs-teams-conversation-bot.yml) |
 |30.03.2022 г.| Модуль "Начало работы" с приложением Blazor обновлен с помощью вкладок и ботов|  Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorupdate.yml)|
 |30.03.2022 г.|Разрешения устройства для браузера | Интеграция возможностей устройств > [Разрешения устройств для браузера](concepts/device-capabilities/browser-device-permissions.md) |
