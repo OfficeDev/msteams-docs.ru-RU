@@ -1,41 +1,41 @@
 ---
-title: Использование модулей задач в Microsoft Teams ботах
-description: Использование модулей задач с Microsoft Teams ботами, включая карты Bot Framework, адаптивные карты и глубокие ссылки.
+title: Использование модулей задач в Microsoft Teams ботов
+description: Использование модулей задач с Microsoft Teams ботами, включая карточки Bot Framework, адаптивные карточки и прямые ссылки.
 ms.localizationpriority: medium
 ms.topic: how-to
-keywords: группы групп задач боты глубоких ссылок адаптивной карты
-ms.openlocfilehash: 932bcaf858d0788a773b417647a92d2f52e9e45b
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+keywords: адаптивная карточка с подробными ссылками в модулях задач teams
+ms.openlocfilehash: 7391f7e0d9da444831b98b4b6b69a97b35298800
+ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399053"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65073775"
 ---
 # <a name="use-task-modules-from-bots"></a>Использование модулей задач из ботов
 
-Модули задач можно вызывать из Microsoft Teams с помощью кнопок на картах Adaptive Cards и Bot Framework, которые является героем, эскизом и Office 365 соединителю. Модули задач часто являются более удобными для пользователей, чем несколько этапов беседы. Отслеживайте состояние бота и разрешите пользователю прерывать или отменять последовательность.
+Модули задач можно вызывать из ботов Microsoft Teams с помощью кнопок на адаптивных карточках и карточках Bot Framework, которые — главный имиджевый баннер, эскиз и Office 365 Connector. Модули задач часто являются более эффективной процедурой взаимодействия с пользователем, чем несколько шагов беседы. Отслеживайте состояние бота и разрешите пользователю прерывать или отменять последовательность.
 
-Существует два способа ссылки на модули задач:
+Существует два способа вызова модулей задач:
 
-* Новый вид сообщения вызова: [](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke) [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) `invoke` динамически извлекается из бота действие карты для карт Bot Framework или `Action.Submit` действие карты для адаптивных карт с `task/fetch`url-адресом или адаптивной картой.`task/fetch`
-* URL-адреса глубоких ссылок. Используя синтаксис глубокой ссылки для модулей [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) [задач,](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-deep-link-syntax)`openUrl` вы можете использовать действие карты для карт Bot Framework или [](~/task-modules-and-cards/cards/cards-actions.md#action-type-openurl) `Action.OpenUrl` действие карты для адаптивных карт соответственно. С url-адресами глубоких ссылок URL-адрес модуля задач или корпус адаптивной карты уже известен, чтобы избежать обратного пути сервера по отношению к `task/fetch`.
+* Новый тип сообщения [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) вызова: [](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke) `invoke` использование действия карточки для карт Bot Framework `task/fetch``Action.Submit` или действия карточки для адаптивных карточек с URL-адресом или адаптивной карточкой модуля задач извлекается динамически из бота.`task/fetch`
+* URL-адреса прямых ссылок. Используя синтаксис глубокой ссылки для модулей [](~/task-modules-and-cards/cards/cards-actions.md#adaptive-cards-actions) [задач,](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-deep-link-syntax)`openUrl` можно использовать действие карточки для картОчек Bot Framework [](~/task-modules-and-cards/cards/cards-actions.md#action-type-openurl) `Action.OpenUrl` или действие карточки для адаптивных карточек соответственно. При использовании URL-адресов глубоких ссылок URL-адрес `task/fetch`модуля задачи или текст адаптивной карточки уже известен, чтобы избежать кругового пути сервера относительно .
 
 > [!IMPORTANT]
-> Каждый `url` из них `fallbackUrl` должен реализовать протокол шифрования HTTPS.
+> Каждый `url` из них `fallbackUrl` должен реализовывать протокол шифрования HTTPS.
 
-В следующем разделе приводится подробная информация об отзове модуля задач с помощью `task/fetch`.
+В следующем разделе приводятся сведения о вызове модуля задачи с помощью `task/fetch`.
 
-## <a name="invoke-a-task-module-using-taskfetch"></a>Вызов модуля задач с помощью задачи/извлечение
+## <a name="invoke-a-task-module-using-taskfetch"></a>Вызов модуля задачи с помощью задачи или выборки
 
-Когда объект `value` действия карты `invoke` `Action.Submit` или инициализирован и когда пользователь выбирает кнопку, `invoke` сообщение отправляется боту. В ответе HTTP `invoke` на сообщение в объекте оболочки встроен объект [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object), который Teams для отображения модуля задач.
+Когда объект `value` действия карточки `invoke` `Action.Submit` или инициализирован и когда пользователь нажмет кнопку, `invoke` боту отправляется сообщение. В HTTP-ответе `invoke` на сообщение есть объект [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object), внедренный в объект-оболочку, который Teams для отображения модуля задачи.
 
-![запрос или ответ на задачу/извлечение](~/assets/images/task-module/task-module-invoke-request-response.png)
+:::image type="content" source="../../assets/images/task-module/task-module-invoke-request-response.png" alt-text="запрос или ответ задачи или выборки":::
 
-Следующие действия предоставляют модуль задач вызова с помощью задачи/извлечение:
+Следующие шаги предоставляют модуль задачи вызова с помощью задачи или выборки:
 
-1. На этом изображении показана карта героя Bot Framework с действием **Buy** `invoke` [card](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke). Значение свойства и `type` `task/fetch` остальной объект `value` может быть по вашему выбору.
+1. На этом изображении показана карточка главного имиджевого баннера Bot Framework с действием **"Купить** `invoke` [карточку"](~/task-modules-and-cards/cards/cards-actions.md#action-type-invoke). Значение свойства равно `type` , `task/fetch` а остальная часть `value` объекта может быть по вашему выбору.
 1. Бот получает сообщение `invoke` HTTP POST.
-1. Бот создает объект отклика и возвращает его в тело ответа POST с кодом ответа HTTP 200. Дополнительные сведения о схеме ответов см. в обсуждении [задачи/отправки](#the-flexibility-of-tasksubmit). В следующем коде приводится пример корпуса ответа HTTP, содержашего объект [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) , встроенный в объект оболочки:
+1. Бот создает объект ответа и возвращает его в тексте ответа POST с кодом ответа HTTP 200. Дополнительные сведения о схеме ответов см. [в обсуждении задачи или отправки](#the-flexibility-of-tasksubmit). В следующем коде приведен пример текста HTTP-ответа, содержащего объект [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) , внедренный в объект-оболочку:
 
     ```json
     {
@@ -52,49 +52,49 @@ ms.locfileid: "63399053"
     }
     ```
 
-    Событие `task/fetch` и его ответ для ботов аналогичны `microsoftTeams.tasks.startTask()` функции в клиентской SDK.
+    Событие `task/fetch` и его ответ для ботов похожи на `microsoftTeams.tasks.startTask()` функцию в клиентском пакете SDK.
 
-1. Microsoft Teams отображает модуль задач.
+1. Microsoft Teams отображает модуль задачи.
 
-В следующем разделе представлены сведения о отправке результатов модуля задач.
+В следующем разделе приводятся сведения об отправке результата модуля задачи.
 
-## <a name="submit-the-result-of-a-task-module"></a>Отправка результатов модуля задач
+## <a name="submit-the-result-of-a-task-module"></a>Отправка результата модуля задачи
 
-Когда пользователь завершает работу с модулем задач, отправка результата обратно боту аналогична тому, как он работает со вкладками. Дополнительные сведения см [. в примере отправки результата модуля задач](~/task-modules-and-cards/task-modules/task-modules-tabs.md#example-of-submitting-the-result-of-a-task-module). Существует несколько различий:
+Когда пользователь завершает работу с модулем задач, отправка результата обратно боту аналогична работе с вкладками. Дополнительные сведения см [. в примере отправки результата модуля задачи](~/task-modules-and-cards/task-modules/task-modules-tabs.md#example-of-submitting-the-result-of-a-task-module). Существует несколько различий, описанных ниже.
 
-* HTML или JavaScript `TaskInfo.url`. После проверки того, что ввел пользователь, `microsoftTeams.tasks.submitTask()` вы вызываем функцию SDK `submitTask()` , названную далее как для целей читаемости. Вы можете позвонить `submitTask()` без параметров, если Teams закрыть модуль задач, но необходимо передать объект или строку в ваш `submitHandler`. Передай его в качестве первого параметра. `result` Teams вызывает `submitHandler`, является `err` `null`и является `result` объектом или строкой, которую вы передали `submitTask()`. Если вы звоните `submitTask()` с параметром `result` , необходимо передать `appId` или массив строк `appId` . Это позволяет Teams, что приложение, отправляя результат, является тем же, что вызывалось в модуле задач. Ваш бот получает сообщение `task/submit` , в том числе `result`. Дополнительные сведения см. [в тексте полезной нагрузки `task/fetch` и `task/submit` сообщений](#payload-of-taskfetch-and-tasksubmit-messages).
-* Адаптивная карточка `TaskInfo.card`, которая является . Тело адаптивной `task/submit` карты, заполненное пользователем, отправляется боту через сообщение, когда пользователь выбирает любую кнопку `Action.Submit` .
+* HTML или JavaScript`TaskInfo.url`, то есть: после проверки введенных пользователем данных вы вызываете функцию пакета SDK`submitTask()`, `microsoftTeams.tasks.submitTask()` которую далее называют функцией для удобочитаемости. Вы можете вызвать его `submitTask()` без параметров, если Teams закрыть модуль задачи, `submitHandler`но необходимо передать объект или строку. Передайте его в качестве первого параметра. `result` Teams вызывает`submitHandler`, `err` является `null`и является `result` объектом или строкой, которые вы передали`submitTask()`. При вызове `submitTask()` с параметром `result` необходимо передать массив `appId` строк `appId` или массив. Это позволяет Teams убедиться, что приложение, отправляющее результат, совпадает с тем, которое вызывает модуль задачи. Бот получает сообщение, `task/submit` в том числе `result`. Дополнительные сведения см [. в полезных данных `task/fetch` и `task/submit` сообщениях](#payload-of-taskfetch-and-tasksubmit-messages).
+* Адаптивная карточка`TaskInfo.card``task/submit`: текст адаптивной карточки, заполненный пользователем, отправляется боту через сообщение, когда пользователь нажмет любую кнопку`Action.Submit`.
 
-В следующем разделе приводится подробная информация о гибкости `task/submit`.
+В следующем разделе приводятся сведения о гибкости `task/submit`.
 
-## <a name="the-flexibility-of-tasksubmit"></a>Гибкость задачи/отправки
+## <a name="the-flexibility-of-tasksubmit"></a>Гибкость задач и отправки
 
-Когда пользователь завершает работу с модулем задач, вызываемой с бота, бот всегда получает `task/submit invoke` сообщение. При ответе на сообщение у `task/submit` вас есть несколько вариантов:
+Когда пользователь завершает работу с модулем задачи, вызываемого ботом, бот всегда `task/submit invoke` получает сообщение. У вас есть несколько вариантов ответа на `task/submit` сообщение следующим образом:
 
-| Http body response                      | Сценарий                                |
+| Ответ текста HTTP                      | Сценарий                                |
 | --------------------------------------- | --------------------------------------- |
-| Никто не игнорирует `task/submit` сообщение | Самый простой ответ — это отсутствие ответа. Ваш бот не обязан отвечать, когда пользователь завершает работу с модулем задач. |
-| <pre>{<br/>  "task": {<br/>    "type": "message",<br/>    "value": "Message text"<br/>  }<br/>}</pre> | Teams отображает значение в `value` всплывающее окно сообщений. |
-| <pre>{<br/>  "task": {<br/>    "type": "continue",<br/>    "value": &lt;TaskInfo object&gt;<br/>  }<br/>}</pre> | Позволяет сцеплять последовательности адаптивных карт в мастере или многошаговом опытом. |
+| Сообщение не игнорируется `task/submit` | Самый простой ответ — это отсутствие ответа. Бот не должен отвечать, когда пользователь завершает работу с модулем задачи. |
+| <pre>{<br/>  "task": {<br/>    "type": "message",<br/>    "value": "Message text"<br/>  }<br/>}</pre> | Teams отображает значение во `value` всплывающем окне сообщения. |
+| <pre>{<br/>  "task": {<br/>    "type": "continue",<br/>    "value": &lt;TaskInfo object&gt;<br/>  }<br/>}</pre> | Позволяет связывать последовательности адаптивных карточек в мастере или многошаговом интерфейсе. |
 
 > [!NOTE]
-> Цепочка адаптивных карт в последовательность — это расширенный сценарий. Приложение Node.js поддерживает его. Дополнительные сведения см. [в Microsoft Teams модуль задач Node.js](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs#implementation-notes).
+> Связывание адаптивных карточек в последовательность — это расширенный сценарий. Пример Node.js поддерживает его. Дополнительные сведения см[. в Microsoft Teams модуля Node.js](https://github.com/OfficeDev/microsoft-teams-sample-task-module-nodejs#implementation-notes).
 
-В следующем разделе приводится подробная информация о полезной нагрузке `task/fetch` и `task/submit` сообщениях.
+В следующем разделе приводятся сведения о полезных данных и `task/fetch` `task/submit` сообщениях.
 
-## <a name="payload-of-taskfetch-and-tasksubmit-messages"></a>Полезное количество задач/извлечений и задач/отправки сообщений
+## <a name="payload-of-taskfetch-and-tasksubmit-messages"></a>Полезные данные сообщений задачи, получения и отправки
 
-В этом разделе определяется схема `task/fetch` `task/submit` получения ботом объекта или объекта Bot Framework `Activity` . Следующая таблица содержит свойства полезной нагрузки `task/fetch` и `task/submit` сообщений:
+В этом разделе определяется схема того, что получает бот при приеме объекта `task/fetch` или объекта `task/submit` Bot Framework `Activity` . В следующей таблице приведены свойства полезных данных `task/fetch` и `task/submit` сообщений.
 
 | Свойство | Описание                          |
 | -------- | ------------------------------------ |
-| `type`   | `invoke`Всегда .           |
-| `name`   | Является либо `task/fetch` или `task/submit`. |
-| `value`  | Является ли полезной нагрузка, определяемая разработчиком. Структура объекта такая `value` же, как и то, что отправляется из Teams. Однако в этом случае все по-другому. Она требует поддержки динамических извлечений `task/fetch` , как из Bot Framework, то есть `value` , так и из действий адаптивной `Action.Submit` карты, то есть `data`. Помимо того, что включено или `context` `value` включено в Teams, требуется способ связи Teams с ботом`data`.<br/><br/>Объединяйте значение и "данные" в родительский объект:<br/><br/><pre>{<br/>  "context": {<br/>    "theme": "default" &vert; "dark" &vert; "contrast",<br/>  },<br/>  "data": [value field from Bot Framework card] &vert; [data field from Adaptive Card] <br/>}</pre>  |
+| `type`   | Всегда.`invoke`           |
+| `name`   | Имеет значение `task/fetch``task/submit`. |
+| `value`  | Определяемые разработчиком полезные данные. Структура объекта совпадает `value` с структурой, отправляемой из Teams. Однако в этом случае он отличается. Для этого требуется поддержка динамической `task/fetch` выборки из Bot Framework, `value` `Action.Submit` то есть действия адаптивной карточки, то есть `data`. В дополнение к включенной или включенной `context` `value` функции Teams боту необходим способ взаимодействия с ботом`data`.<br/><br/>Объедините "value" и "data" в родительский объект:<br/><br/><pre>{<br/>  "context": {<br/>    "theme": "default" &vert; "dark" &vert; "contrast",<br/>  },<br/>  "data": [value field from Bot Framework card] &vert; [data field from Adaptive Card] <br/>}</pre>  |
 
-В следующем разделе приводится пример `task/fetch` `task/submit` получения и реагирования на сообщения в Node.js.
+В следующем разделе приведен пример получения и ответа `task/fetch` `task/submit` на сообщения в Node.js.
 
-## <a name="example-of-taskfetch-and-tasksubmit-invoke-messages-in-nodejs-and-c"></a>Пример задач/извлечений и задач/отправки ссылок на сообщения в Node.js и C #
+## <a name="example-of-taskfetch-and-tasksubmit-invoke-messages-in-nodejs-and-c"></a>Пример сообщений вызова задачи, получения и отправки в Node.js и C #
 
 # <a name="nodejs"></a>[Node.js](#tab/nodejs)
 
@@ -197,11 +197,11 @@ private static void SetTaskInfo(TaskModuleTaskInfo taskInfo, UISettings uIConsta
 
 ---
 
-### <a name="bot-framework-card-actions-vs-adaptive-card-actionsubmit-actions"></a>Действия карты Bot Framework против действий адаптивной карты.Отправка действий
+### <a name="bot-framework-card-actions-vs-adaptive-card-actionsubmit-actions"></a>Действия с карточками Bot Framework и действия адаптивной карточки. Отправка действий
 
-Схема действий карты Bot Framework отличается от действий адаптивной `Action.Submit` карты, а способ вызова модулей задач также отличается. Объект `data` содержит `Action.Submit` объект, `msteams` чтобы он не мешал другим свойствам карты. В следующей таблице показан пример каждого действия карты:
+Схема действий с карточками Bot Framework `Action.Submit` отличается от действий адаптивной карточки, а способ вызова модулей задач также отличается. В `data` объекте `Action.Submit` содержится объект `msteams` , поэтому он не мешает другим свойствам в карточке. В следующей таблице показан пример каждого действия карточки:
 
-| Действие карты Bot Framework                              | Действие адаптивной карты.Отправка действия                     |
+| Действие карточки Bot Framework                              | Действие Adaptive Card Action.Submit                     |
 | ------------------------------------------------------ | ------------------------------------------------------ |
 | <pre>{<br/>  "type": "invoke",<br/>  "title": "Buy",<br/>  "value": {<br/>    "type": "task/fetch",<br/>    &lt;...&gt;<br/>  }<br/>}</pre> | <pre>{<br/>  "type": "Action.Submit",<br/>  "id": "btnBuy",<br/>  "title": "Buy",<br/>  "data": {<br/>    &lt;...&gt;,<br/>    "msteams": {<br/>      "type": "task/fetch"<br/>    }<br/>  }<br/>}</pre>  |
 
@@ -209,11 +209,11 @@ private static void SetTaskInfo(TaskModuleTaskInfo taskInfo, UISettings uIConsta
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Пример модуля задач bots-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+|Пример bots-V4 для модуля задач | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
-Следуйте [пошаговом](../../sbs-botbuilder-taskmodule.yml) руководстве по созданию и извлечению бота модуля задач в Teams.
+Следуйте [пошаговое руководство по](../../sbs-botbuilder-taskmodule.yml) созданию и выборке бота модуля задач в Teams.
 
 ## <a name="see-also"></a>См. также
 

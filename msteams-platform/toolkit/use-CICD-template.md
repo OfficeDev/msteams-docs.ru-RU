@@ -1,280 +1,246 @@
 ---
-title: Узнайте, как использовать шаблоны конвейеров ci или CD в GitHub, Azure Devops и Jenkins для разработчиков Teams приложений
+title: Узнайте, как использовать шаблоны конвейеров CI/CD в GitHub, Azure DevOps и Jenkins для разработчиков Teams приложений
 author: MuyangAmigo
-description: Шаблоны CICD
+description: Шаблоны CI/CD
 ms.author: ruhe
 ms.localizationpriority: medium
 ms.topic: overview
-ms.date: 11/29/2021
-ms.openlocfilehash: 5fa12248969f589282ecf8fd80c4d908ff42e8d8
-ms.sourcegitcommit: 2236204ff710f4eca606ceffb233572981f6edbe
+ms.date: 04/20/2022
+ms.openlocfilehash: 66560b1f228c32b0faf6569ff0ae536a81dc33c0
+ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64614539"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65073295"
 ---
-# <a name="cicd-guide"></a>Руководство по CI/CD
+# <a name="set-up-cicd-pipelines"></a>Настройка конвейеров CI/CD
 
-TeamsFx помогает автоматизировать рабочий процесс разработки при создании Teams приложения. Документ предоставляет инструменты и шаблоны для начала работы с настройкой конвейеров ci или CD с GitHub, Azure Devops и Jenkins.
+TeamsFx помогает автоматизировать рабочий процесс разработки при создании Teams приложения. Ниже приведены средства и шаблоны, которые можно использовать для настройки конвейеров CI/CD, создания шаблонов рабочих процессов и настройки рабочего процесса CI/CD с GitHub, Azure DevOps, Jenkins и другими платформами. Чтобы подготовить и развернуть ресурсы, можно создать субъекты-службы Azure и опубликовать Teams с помощью портала Teams разработчика. Чтобы опубликовать Teams вручную, можно использовать портал разработчика [для Teams](https://dev.teams.microsoft.com/home).
 
-|Инструменты и шаблоны|Описание|
+
+|Средства и шаблоны | Описание |
 |---|---|
-|[teamsfx-cli-action](https://github.com/OfficeDev/teamsfx-cli-action)|GitHub действия, которые интегрируются с TeamsFx CLI.|
-|[github-ci-template.yml](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/github-ci-template.yml) и [github-cd-template.yml](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/github-cd-template.yml)| GitHub ci или CD-шаблоны для Teams приложения. |
-|[jenkins-ci-template. Jenkinsfile](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/jenkins-ci-template.Jenkinsfile) и [jenkins-cd-template. Jenkinsfile](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/jenkins-cd-template.Jenkinsfile)|Шаблоны Ci Или CD Jenkins для Teams приложения.|
-|[script-ci-template.sh](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-ci-template.sh) [и script-cd-template.sh](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-cd-template.sh)| Шаблоны скриптов для автоматизации вне GitHub. |
+|[TeamsFx-CLI-Action](https://github.com/OfficeDev/teamsfx-cli-action)|GitHub Действия, интегрируемые с TeamsFx CLI.|
+|[Teams набор средств в Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)| Visual Studio Code, которое помогает разрабатывать приложения Teams, а также рабочие процессы автоматизации для GitHub, Azure DevOps и Jenkins. |
+|[TeamsFx CLI](https://www.npmjs.com/package/@microsoft/teamsfx-cli) | Средство командной строки, которое помогает разрабатывать приложения Teams, а также рабочие процессы автоматизации для GitHub, Azure DevOps и Jenkins.|
+|[script-ci-template.sh](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-ci-template.sh) [script-cd-template.sh](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-cd-template.sh)| Шаблоны скриптов для автоматизации за пределами GitHub, Azure DevOps или Jenkins. |
 
-## <a name="ci-or-cd-workflow-templates-in-github"></a>Шаблоны рабочего процесса ci или CD в GitHub
 
-**Включить рабочий процесс ci или CD** для автоматизации Teams разработки приложений в GitHub:
+## <a name="set-up-pipelines"></a>Настройка конвейеров
 
-1. Создание папки под `.github/workflows`
-1. Скопируйте один из следующих файлов шаблона:
-    * [github-ci-template.yml](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/github-ci-template.yml) для рабочего процесса CI.
-    * [github-cd-template.yml](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/github-cd-template.yml) для рабочего процесса CD.
-1. Настройка процессов, подходящих для сценариев.
+Конвейеры можно настроить на следующих платформах:
+
+1. [Настройка конвейеров с помощью GitHub](#set-up-pipelines-with-github)
+1. [Настройка конвейеров с помощью Azure DevOps](#set-up-pipelines-with-azure-devops)
+1. [Настройка конвейеров с помощью Jenkins](#set-up-pipelines-with-jenkins)
+1. [Настройка конвейеров для других платформ](#set-up-pipelines-for-other-platforms)
+
+
+### <a name="set-up-pipelines-with-github"></a>Настройка конвейеров с помощью GitHub
+
+Чтобы настроить конвейеры с GitHub ci/CD:
+
+1. Создание шаблонов рабочих процессов.
+
+   * Visual Studio Code
+   * TeamsFx CLI
+
+1. Настройка рабочего процесса CI/CD.
+
+
+## <a name="create-workflow-templates-with-github"></a>Создание шаблонов рабочих процессов с помощью GitHub
+
+**Создание шаблонов рабочих процессов с помощью Teams набор средств в Visual Studio Code**
+
+1. Создайте новый проект Teams с помощью Teams набор средств.
+1. Выберите **Teams набор средств** на панели Visual Studio Code действий.
+1. Выберите **"Добавить рабочие процессы CI/CD"**.
+1. Выберите среду в командной строке.
+1. Выберите **GitHub** в качестве поставщика CI/CD.
+1. Выберите хотя бы один шаблон из следующих параметров: CI, CD, Provision или Publish to Teams.
+1. Откройте шаблон и настройте рабочие процессы, которые соответствуют вашим сценариям.
+1. Следуйте файлам README, `.github/workflows` чтобы настроить рабочий процесс в GitHub.
+
+**Создание шаблонов рабочих процессов с помощью CLI TeamsFx**
+
+1. Введите `cd` Teams каталог проекта приложения.
+2. Введите `teamsfx add cicd` команду, чтобы запустить интерактивный командный процесс.
+3. Выберите среду в командной строке.
+4. Выберите **GitHub** в качестве поставщика CI/CD.
+5. Выберите хотя бы один шаблон из следующих параметров: CI, CD, Provision или Publish to Teams.
+7. Откройте шаблон и настройте рабочие процессы, которые соответствуют вашим сценариям.
+8. Следуйте файлам README, `.github/workflows` чтобы настроить рабочий процесс в GitHub.
+
+> [!NOTE]
+> Если вам нужно добавить дополнительные шаблоны рабочих процессов, выполните ту же процедуру, чтобы создать шаблон рабочего процесса в Visual Studio Code или TeamsFx CLI.
+
+### <a name="customize-cicd-workflow"></a>Настройка рабочего процесса CI/CD
+
+Вы можете изменить или удалить тестовые скрипты для настройки рабочего процесса CI/CD:
+
+1. По умолчанию рабочий процесс CD активируется при выполнении новых фиксаций в ветви `main` .
+1. При необходимости измените скрипты сборки.
+1. Удалите тестовые скрипты по мере необходимости.
+
+### <a name="set-up-pipelines-with-azure-devops"></a>Настройка конвейеров с помощью Azure DevOps
+
+Чтобы настроить конвейеры с Azure DevOps ci/CD, с помощью этой команды:
+
+1. Создание шаблонов рабочих процессов.
+
+   * Visual Studio Code
+   * TeamsFx CLI
+
+1. Настройка рабочего процесса CI/CD.
+
+
+## <a name="create-workflow-templates-with-azure-devops"></a>Создание шаблонов рабочих процессов с помощью Azure DevOps
+
+**Создание шаблонов рабочих процессов с помощью Teams набор средств в Visual Studio Code**
+
+1. Создайте новый проект Teams с помощью Teams набор средств.
+2. Выберите **Teams набор средств** на панели Visual Studio Code действий.
+3. Выберите **"Добавить рабочие процессы CI/CD"**.
+4. Выберите среду в командной строке.
+5. Выберите **Azure DevOps** в качестве поставщика CI/CD.
+6. Выберите хотя бы один шаблон из следующих параметров: CI, CD, Provision и Publish для Teams.
+7. Откройте шаблон и настройте рабочие процессы, которые соответствуют вашим сценариям.
+8. Следуйте файлам README, `.azure/pipelines` чтобы настроить рабочий процесс в Azure DevOps.
+
+**Создание шаблонов рабочих процессов с помощью CLI TeamsFx**
+
+1. Введите `cd` Teams каталог проекта приложения.
+2. Введите `teamsfx add cicd` команду, чтобы запустить интерактивный командный процесс.
+3. Выберите среду в командной строке.
+4. Выберите **Azure DevOps** в качестве поставщика CI/CD.
+5. Выберите хотя бы один шаблон из следующих параметров: CI, CD, Provision или Publish to Teams.
+7. Откройте шаблон и настройте рабочие процессы, которые соответствуют вашим сценариям.
+8. Следуйте файлам README, `.azure/pipelines` чтобы настроить рабочий процесс в Azure DevOps.
+
+> [!NOTE]
+> Если вам нужно добавить дополнительные шаблоны рабочих процессов, выполните ту же процедуру, чтобы создать шаблон рабочего процесса в Visual Studio Code или TeamsFx CLI.
 
 ### <a name="customize-ci-workflow"></a>Настройка рабочего процесса CI
 
-Выполните следующие действия, чтобы адаптировать рабочий процесс для проекта:
+Ниже приведены изменения, которые можно внести в определение скрипта или рабочего процесса:
 
-1. Измените поток CI.
-1. Используйте сценарий сборки npm или настройте способ создания проекта в коде автоматизации.
-1. Используйте тестовый сценарий npm, который возвращает нулевой для успеха, и измените команды тестирования.
+1. Используйте скрипт сборки npm или настройте способ сборки в коде автоматизации.
+1. Используйте тестовый сценарий npm, который возвращает ноль для успешного выполнения, и измените тестовые команды.
 
 ### <a name="customize-cd-workflow"></a>Настройка рабочего процесса CD
 
-Выполните следующие действия по настройке рабочего процесса CD:
+Ниже приведены изменения, которые можно внести в определение скрипта или рабочего процесса:
 
-1. По умолчанию запускается рабочий процесс CD, когда в `main` филиале будут сделаны новые коммиты.
-1. Создание GitHub [для среды](https://docs.github.com/en/actions/reference/encrypted-secrets) для удержания основных и Microsoft 365 учетных данных учетных записей службы Azure. Дополнительные сведения см. [в GitHub Actions](https://github.com/OfficeDev/teamsfx-cli-action/blob/main/README.md).
-1. При необходимости измените сценарии сборки.
-1. Удалите тестовые скрипты по мере необходимости.
+1. Убедитесь, что у вас есть скрипт сборки npm, или настройте способ сборки в коде автоматизации.
+1. Убедитесь, что у вас есть тестовый сценарий npm, который возвращает ноль для успешного выполнения, или измените тестовые команды.
+
+### <a name="set-up-pipelines-with-jenkins"></a>Настройка конвейеров с помощью Jenkins
+
+Чтобы настроить конвейеры с Jenkins для CI/CD, с помощью этой команды:
+
+1. Создание шаблонов рабочих процессов.
+
+   * Visual Studio Code
+   * TeamsFx CLI
+
+1. Настройка рабочего процесса CI/CD.
+
+## <a name="create-workflow-templates-with-jenkins"></a>Создание шаблонов рабочих процессов с помощью Jenkins
+
+**Создание шаблонов рабочих процессов с помощью Teams набор средств в Visual Studio Code**
+
+1. Создайте новый проект Teams с помощью Teams набор средств.
+2. Выберите **Teams набор средств** на боковой Visual Studio Code панели.
+3. Выберите **"Добавить рабочие процессы CI/CD"**.
+4. Выберите среду в командной строке.
+5. Выберите **Jenkins в качестве** поставщика CI/CD.
+6. Выберите хотя бы один шаблон из следующих параметров: CI, CD, Provision или Publish to Teams.
+7. Откройте шаблон и настройте рабочие процессы, которые соответствуют вашим сценариям.
+8. Следуйте файлам README, `.jenkins/pipelines` чтобы настроить рабочий процесс с помощью Jenkins.
+
+**Создание шаблонов рабочих процессов с помощью CLI TeamsFx**
+
+1. Введите `cd` Teams каталог проекта приложения.
+2. Введите `teamsfx add cicd` команду, чтобы запустить интерактивный командный процесс.
+3. Выберите среду в командной строке.
+4. Выберите **Jenkins в качестве** поставщика CI/CD.
+5. Выберите хотя бы один шаблон из следующих параметров: CI, CD, Provision или Publish to Teams.
+7. Откройте шаблон и настройте рабочие процессы, которые соответствуют вашим сценариям.
+8. Следуйте файлам README, `.jenkins/pipelines` чтобы настроить рабочий процесс с помощью Jenkins.
 
 > [!NOTE]
-> Этап предоставления не входит в шаблон CD, так как обычно выполняется только один раз. Можно выполнить предоставление в Teams набор средств, TeamsFx CLI или с помощью отдельного рабочего процесса. Убедитесь в том, что после предварительной фиксации. Результаты подготовка откладываются в папку `.fx` .
+> Если вам нужно добавить дополнительные шаблоны рабочих процессов, выполните ту же процедуру, чтобы создать шаблон рабочего процесса в Visual Studio Code или TeamsFx CLI.
 
-### <a name="github-secrets"></a>Секреты Github
+### <a name="customize-ci-workflow"></a>Настройка рабочего процесса CI
 
-В следующей таблице перечислены все секреты, необходимые для создания среды в GitHub:
+Ниже приведены некоторые изменения, которые можно внести в проект:
 
-1. Выберите **Настройки**.
-1. Перейдите в **раздел Environments** .
-1. Выберите **новую среду**.
-1. Введите имя для среды. Имя среды по умолчанию, предоставленное в шаблоне, является `test_environment`.
-1. Выберите **Настройка среды**.
-1. Выберите **Добавить секрет**.
+1. Изменение способа активации потока CI. По умолчанию триггеры **pollSCM** используются при отправке нового изменения в **ветвь** разработки.
+1. Убедитесь, что у вас есть скрипт сборки npm, или настройте способ сборки в коде автоматизации.
+1. Убедитесь, что у вас есть тестовый сценарий npm, который возвращает ноль для успешного выполнения, или измените тестовые команды.
 
-В следующей таблице перечислены все секреты, необходимые для создания среды:
 
-|Имя|Описание|
-|---|---|
-|`AZURE_SERVICE_PRINCIPAL_NAME`|Основное имя службы Azure, используемого для предоставления ресурсов.|
-|`AZURE_SERVICE_PRINCIPAL_PASSWORD`|Пароль директора службы Azure.|
-|`AZURE_SUBSCRIPTION_ID`|Определение подписки, в которой будут предусмотрены ресурсы.|
-|`AZURE_TENANT_ID`|Определение клиента, в котором находится подписка.|
-|`M365_ACCOUNT_NAME`|Учетная Microsoft 365 для создания и публикации Teams приложения.|
-|`M365_ACCOUNT_PASSWORD`|Пароль учетной записи Microsoft 365.|
-|`M365_TENANT_ID`|Определение клиента, в котором Teams будет создано или опубликовано приложение. Это значение является необязательным, если у вас нет учетной записи с несколькими клиентами и вы хотите использовать другого клиента. Дополнительные сведения см. [в Microsoft 365 ID клиента](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).|
+### <a name="customize-cd-workflow"></a>Настройка рабочего процесса CD
 
-> [!NOTE]
-> В настоящее время принцип службы Azure используется в рабочего процессах CI/CD. Дополнительные сведения см. в [дополнительных сведениях о создании принципов службы Azure](#create-azure-service-principals).
+Чтобы настроить конвейер CD, выполните следующие действия.
 
-## <a name="set-up-ci-or-cd-pipelines-with-azure-devops"></a>Настройка конвейеров ci или CD с помощью Azure DevOps
-
-Вы можете настроить автоматические конвейеры в Azure DevOps и сделать ссылку на скрипты.
-
-Выполните следующие действия, чтобы приступить к работе:
-
-* [Скрипты CI](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-ci-template.sh)
-* [CD Scripts](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-cd-template.sh)
-
-### <a name="set-up-ci-pipeline"></a>Настройка конвейера CI
-
-1. Добавьте [ci Scripts](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-ci-template.sh) в Azure DevOps репозиторий и сделайте необходимые настройки, как вы можете сделать вывод из комментариев в файле скрипта.
-1. Выполните [действия по созданию Azure DevOps конвейера для ci](/azure/devops/pipelines/create-first-pipeline).
-Вот сценарий общих сценариев конвейера ci:
-
-```yml
-trigger:
-- dev 
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '14.17.0'
-    checkLatest: true
-  
-- task: Bash@3
-  inputs:
-    filePath: './others-script-ci-template.sh'
-```
-
-Ниже приводится изменение, которое можно внести для определения скрипта или рабочего процесса:
-
-1. Измените поток CI. По умолчанию мы отодвигаем новый коммит в ветвь `dev` .
-1. Измените способ установки узла и npm.
-1. Используйте сценарий сборки npm или настройте способ сборки в коде автоматизации.
-1. Используйте тестовый сценарий npm, который возвращает нулевой для успеха, и измените команды тестирования.
-
-### <a name="set-up-cd-pipeline"></a>Настройка конвейера CD
-
-1. Добавьте [cd-скрипты](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-cd-template.sh) в Azure DevOps репозиторий и сделайте необходимые настройки, как вы можете сделать вывод из комментариев в файле скрипта.
-1. Создайте Azure DevOps конвейера для компакт-диска. Дополнительные сведения см. в [дополнительных сведениях о создании первого конвейера](/azure/devops/pipelines/create-first-pipeline). Определение Конвейера можно сослаться на следующее определение примера для CI Pipeline.
-1. Добавьте необходимые переменные [по Определению](/azure/devops/pipelines/process/variables) переменных и при необходимости сделайте их секретами.
-
-```yml
-trigger:
-- main 
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '14.17.0'
-    checkLatest: true
-  
-- task: Bash@3
-  env:
-    SP_NAME: $(AZURE_SERVICE_PRINCIPAL_NAME)
-    SP_PASSWORD: $(AZURE_SERVICE_PRINCIPAL_PASSWORD)
-    TENANT_ID: $(AZURE_TENANT_ID)
-    AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
-    M365_ACCOUNT_NAME: $(M365_ACCOUNT_NAME)
-    M365_ACCOUNT_PASSWORD: $(M365_ACCOUNT_PASSWORD)
-  inputs:
-    filePath: './others-script-cd-template.sh'
-```
-
-Ниже приводится изменение, которое можно внести для определения скрипта или рабочего процесса:
-
-1. Как запускается поток CD. По умолчанию это происходит, когда в главную ветвь будут сделаны новые **коммиты** .
-1. Измените способ установки узла и npm.
-1. Измените имя среды, по умолчанию его **постановка**.
-1. Убедитесь, что у вас есть сценарий сборки npm или настройка способа сборки в коде автоматизации.
-1. Убедитесь, что у вас есть тестовый сценарий npm, который возвращает нулевой для успеха и/или измените команды тестирования.
-
-### <a name="pipeline-variables-for-azure-devops"></a>Переменные конвейера для Azure DevOps
-
-Выполните следующие действия для создания переменных Pipeline в Azure DevOps:
-
-1. На странице редактирования конвейера выберите **Переменные** и выберите **новую переменную**.
-1. Введите имя или пару значений для переменной.
-1. Чтобы при необходимости засекретить это **значение** , загляйте в почтовый ящик.
-1. Выберите **ОК** для создания переменной.
-
-|Имя|Описание|
-|---|---|
-|`AZURE_SERVICE_PRINCIPAL_NAME`|Основное имя службы Azure, используемого для предоставления ресурсов.|
-|`AZURE_SERVICE_PRINCIPAL_PASSWORD`|Пароль директора службы Azure.|
-|`AZURE_SUBSCRIPTION_ID`|Определение подписки, в которой предусмотрены ресурсы.|
-|`AZURE_TENANT_ID`|Определение клиента, в котором находится подписка.|
-|`M365_ACCOUNT_NAME`|Учетная Microsoft 365 для создания и публикации Teams App.|
-|`M365_ACCOUNT_PASSWORD`|Пароль учетной записи Microsoft 365.|
-|`M365_TENANT_ID`|Определение клиента, в котором Teams создается или публикуется приложение. Это значение является необязательным, если у вас нет учетной записи с несколькими клиентами и вы хотите использовать другого клиента. Узнайте больше о [том, как найти Microsoft 365 клиента](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).|
-
-## <a name="ci-or-cd-pipeline-templates-in-jenkins"></a>Шаблоны конвейера CI или CD в Дженкинсе
-
-Чтобы добавить эти шаблоны в репозиторий, вам потребуются версии [jenkins-ci-template. Jenkinsfile](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/jenkins-ci-template.Jenkinsfile) и  [jenkins-cd-template. Jenkinsfile](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/jenkins-cd-template.Jenkinsfile) , который будет расположен в репозитории по филиалу.
-
-Кроме того, необходимо создать ci или CD-конвейеры в Дженкинсе, которые указывают на конкретные `Jenkinsfile` соответственно.
-
-Выполните следующие действия, чтобы проверить, как подключить Jenkins к различным платформам SCM:
-
-1. [Дженкинс с GitHub](https://www.jenkins.io/solutions/github/)
-2. [Дженкинс с Azure DevOps](https://www.dragonspears.com/blog/ci-cd-with-jenkins-and-azure-devops-services)
-3. [Дженкинс с GitLab](https://docs.gitlab.com/ee/integration/jenkins.html)
-4. [Jenkins with Bitbucket](https://medium.com/ampersand-academy/integrate-bitbucket-jenkins-c6e51103d0fe)
-
-### <a name="customize-ci-pipeline"></a>Настройка конвейера CI
-
-Ниже приводится ряд изменений, которые можно внести для адаптации проекта:
-
-1. Переименуй файл шаблона в **Jenkinsfile** и поместите его под целевую ветвь, например **ветвь разработчика** .
-1. Измените, как запускается поток CI. Мы по умолчанию используем триггеры **pollSCM** при нажатии нового изменения в **ветвь разработчиков** .
-1. Убедитесь, что у вас есть сценарий сборки npm или настройка способа сборки в коде автоматизации.
-1. Убедитесь, что у вас есть тестовый сценарий npm, который возвращает нулевой для успеха и/или измените команды тестирования.
-
-### <a name="customize-cd-pipeline"></a>Настройка конвейера CD
-
-Выполните следующие действия по настройке конвейера CD:
-
-1. Переименуй файл шаблона `Jenkinsfile`в целевой филиал, например ветвь `main` .
-1. Измените поток компакт-дисков. По умолчанию мы используем триггеры `pollSCM` , когда новое изменение будет нажато в ветвь `main` .
-1. Создайте учетные данные [конвейера](https://www.jenkins.io/doc/book/using/using-credentials/) Jenkins, чтобы удерживать учетные данные Microsoft 365 службы Azure.
-1. При необходимости измените сценарии сборки.
+1. Измените поток cd. По умолчанию используются триггеры `pollSCM` при отправке нового изменения в ветвь `main` .
+1. При необходимости измените скрипты сборки.
 1. Удалите тестовые скрипты, если у вас нет тестов.
 
-### <a name="credentials-for-jenkins"></a>Учетные данные для Jenkins
 
-[Выполните использование учетных данных](https://www.jenkins.io/doc/book/using/using-credentials/) для создания учетных данных в Jenkins.
+### <a name="set-up-pipelines-for-other-platforms"></a>Настройка конвейеров для других платформ
 
-|Имя|Описание|
-|---|---|
-|`AZURE_SERVICE_PRINCIPAL_NAME`|Основное имя службы Azure, используемого для предоставления ресурсов.|
-|`AZURE_SERVICE_PRINCIPAL_PASSWORD`|Пароль директора службы Azure.|
-|`AZURE_SUBSCRIPTION_ID`|Определение подписки, в которой будут предусмотрены ресурсы.|
-|`AZURE_TENANT_ID`|Определение клиента, в котором находится подписка.|
-|`M365_ACCOUNT_NAME`|Учетная Microsoft 365 для создания и публикации Teams App.|
-|`M365_ACCOUNT_PASSWORD`|Пароль учетной записи Microsoft 365.|
-|`M365_TENANT_ID`|Определение клиента, в котором Teams создается или публикуется приложение. Это значение является необязательным, если у вас нет учетной записи с несколькими клиентами и вы хотите использовать другого клиента. Узнайте больше о [том, как найти Microsoft 365 клиента](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).|
-
-## <a name="get-started-guide-for-other-platforms"></a>начало работы для других платформ
-
-Вы можете следовать перечисленным заранее заранее определенным сценариям bash для создания и настройки ci или CD-конвейеров на других платформах:
+Для создания и настройки конвейеров CI/CD на других платформах можно использовать стандартные примеры скриптов Bash.
 
 * [Скрипты CI](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-ci-template.sh)
-* [CD Scripts](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-cd-template.sh)
+* [Скрипты CD](https://github.com/OfficeDev/TeamsFx/blob/main/docs/cicd_insider/others-script-cd-template.sh)
 
-Сценарии основаны на средстве командной строки TeamsFx [teamsFx teamsFx-CLI](https://www.npmjs.com/package/@microsoft/teamsfx-cli). Вы можете установить его с документацией `npm install -g @microsoft/teamsfx-cli` [и следовать](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) за ней, чтобы настроить сценарии.
+Скрипты основаны на кроссплатформене средстве командной строки [TeamsFx-CLI](https://www.npmjs.com/package/@microsoft/teamsfx-cli). Вы можете установить его с помощью `npm install -g @microsoft/teamsfx-cli` документации [и](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) выполнить инструкции по настройке скриптов.
 
 > [!NOTE]
 >
-> * Чтобы включить `@microsoft/teamsfx-cli` работу в режиме CI, включив `CI_ENABLED` `export CI_ENABLED=true`. В режиме CI удобно `@microsoft/teamsfx-cli` для ci или CD.
-> * Чтобы включить `@microsoft/teamsfx-cli` запуск в режиме неинактивации, установите глобальную конфигуру с командой: `teamsfx config set -g interactive false`. В неинактивном режиме не `@microsoft/teamsfx-cli` подсказываю входные данные.
+> * Чтобы включить выполнение `@microsoft/teamsfx-cli` в режиме НЕПРЕРЫВНОЙ ИНТЕГРАЦИИ, включите `CI_ENABLED` .`export CI_ENABLED=true` В режиме НЕПРЕРЫВНОЙ ИНТЕГРАЦИИ `@microsoft/teamsfx-cli` удобно использовать CI/CD.
+> * Чтобы включить `@microsoft/teamsfx-cli` выполнение в неинтерактивном режиме, задайте глобальную конфигурацию с помощью команды: `teamsfx config set -g interactive false`. В неинтерактивном режиме не `@microsoft/teamsfx-cli` запрашивает входные данные.
 
-Убедитесь в безопасном Microsoft 365 Azure и Microsoft 365 переменных среды. Например, если вы используете GitHub в качестве хранилища исходных кодов. Дополнительные сведения см. в [дополнительных сведениях в github Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets).
+Убедитесь, что Azure Microsoft 365 учетные данные в переменных среды. Например, если вы используете GitHub в качестве репозитория исходного кода, см. раздел ["Секреты GitHub"](https://docs.github.com/en/actions/reference/encrypted-secrets).
 
-## <a name="create-azure-service-principals"></a>Создание принципов служб Azure
 
-Для обеспечения и развертывания ресурсов, нацеленных на Azure в ci/CD, необходимо создать главную службу Azure для использования.
+## <a name="provision-and-deploy-resources"></a>Подготовка и развертывание ресурсов
 
-Выполните следующие действия для создания принципов служб Azure:
+Чтобы подготовить и развернуть ресурсы, предназначенные для Azure в CI/CD, необходимо создать субъект-службу Azure для использования.
 
-1. Регистрация приложения Microsoft Azure Active Directory Azure AD в одном клиенте.
-2. Назначьте роль приложению Azure AD для доступа к подписке Azure, `Contributor` и рекомендуется роль.
-3. Создайте новый секрет приложения Azure AD.
+Чтобы создать субъекты-службы Azure, выполните следующие действия.
+
+1. Зарегистрируйте Microsoft Azure Active Directory (Azure AD) в одном клиенте.
+2. Назначьте роль приложению Azure AD для доступа к подписке Azure. Рекомендуется `Contributor` использовать роль.
+3. Создайте секрет приложения Azure AD.
 
 > [!TIP]
-> Сохраните ваш id клиента, id приложения (AZURE_SERVICE_PRINCIPAL_NAME) и секрет (AZURE_SERVICE_PRINCIPAL_PASSWORD) для будущего использования.
+> Сохраните идентификатор клиента, идентификатор приложения (AZURE_SERVICE_PRINCIPAL_NAME) и секрет (AZURE_SERVICE_PRINCIPAL_PASSWORD) для использования в будущем.
 
-Дополнительные сведения см. в [руководстве по принципам служб Azure](/azure/active-directory/develop/howto-create-service-principal-portal). Ниже 3 способа создания основной службы:
+Дополнительные сведения см. в [руководстве по субъектам-службам Azure](/azure/active-directory/develop/howto-create-service-principal-portal). Ниже приведены три способа создания субъектов-служб.
 
-* [Microsoft Azure портал](/azure/active-directory/develop/howto-create-service-principal-portal)
+* [Microsoft Azure портале](/azure/active-directory/develop/howto-create-service-principal-portal)
 * [Windows PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 * [Microsoft Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
 
-## <a name="publish-teams-app-using-teams-developer-portal"></a>Публикация Teams с помощью Teams портала разработчиков
+## <a name="publish-teams-app-using-teams-developer-portal"></a>Публикация Teams с помощью портала Teams разработчика
 
-Если в файле манифеста Teams изменения, возможно, Teams приложение для обновления манифеста.
+При наличии изменений, связанных Teams файла манифеста приложения, можно обновить манифест и опубликовать Teams приложения.
 
-Чтобы опубликовать Teams вручную, вы можете использовать [портал разработчика для Teams](https://dev.teams.microsoft.com/home).
+Чтобы опубликовать Teams вручную, можно использовать портал разработчика [для Teams](https://dev.teams.microsoft.com/home).
 
-Выполните следующие действия для публикации приложения:
+Чтобы опубликовать приложение, выполните следующие действия:
 
-1. Вопишитесь [на портал разработчика для Teams](https://dev.teams.microsoft.com) с помощью соответствующей учетной записи.
-2. Импорт пакета приложения в zip путем выбора `App -> Import app -> Replace`.
+1. Войдите на портал [разработчика Teams](https://dev.teams.microsoft.com) с помощью соответствующей учетной записи.
+2. Импортируйте пакет приложения в ZIP-файле, выбрав .`App -> Import app -> Replace`
 3. Выберите целевое приложение в списке приложений.
-4. Публикация приложения путем выбора `Publish -> Publish to your org`
+4. Опубликуйте приложение, выбрав .`Publish -> Publish to your org`
 
 ### <a name="see-also"></a>См. также
 
-* [Быстрый запуск для GitHub Actions](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
-* [Создание первого Azure DevOps конвейера](/azure/devops/pipelines/create-first-pipeline)
+* [Краткое руководство по GitHub Actions](https://docs.github.com/en/actions/quickstart#creating-your-first-workflow)
+* [Создание первого конвейера Azure DevOps конвейера](/azure/devops/pipelines/create-first-pipeline)
 * [Создание первого конвейера Jenkins](https://www.jenkins.io/doc/pipeline/tour/hello-world/)
 * [Управление приложениями Microsoft Teams с помощью портала разработчика](/concepts/build-and-test/teams-developer-portal)

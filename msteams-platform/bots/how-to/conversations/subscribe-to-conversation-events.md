@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: Беседа реакции на сообщение канала событий бота
-ms.openlocfilehash: 2c3a41c84eec620aa0cc87fbd473a913d14f6ef4
-ms.sourcegitcommit: 35bdbda8f6bafa7eb49185dd71e0687917ceeebd
+ms.openlocfilehash: 26180e39bd26768b2e09311a370e5bd78c44c673
+ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64826973"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65073731"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -1403,10 +1403,8 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 ## <a name="uninstall-behavior-for-personal-app-with-bot"></a>Поведение при удалении для личного приложения с ботом
 
-> [!NOTE]
-> Поведение при удалении личного приложения с ботом в настоящее время доступно только в общедоступной [предварительной версии разработчика](../../../resources/dev-preview/developer-preview-intro.md).
-
 При удалении приложения бот также удаляется. Когда пользователь отправляет сообщение приложению, он получает код ответа 403. Бот получает код ответа 403 для новых сообщений, опубликованных ботом. Поведение после удаления ботов в личной области с областями Teams и groupChat теперь согласовано. Вы не можете отправлять или получать сообщения после удаления приложения.
+
 
 <img src="~/assets/images/bots/uninstallbot.png" alt="Uninstall event" width="900" height="900"/>
 
