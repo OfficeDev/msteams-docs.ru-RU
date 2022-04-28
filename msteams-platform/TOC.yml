@@ -64,7 +64,7 @@
           href: tabs/design/tabs.md
         - name: боты;
           href: bots/design/bots.md
-        - name: расширения для обмена сообщениями;
+        - name: Расширения для сообщений
           href: messaging-extensions/design/messaging-extension-design.md
         - name: Расширения для собраний
           href: apps-in-teams-meetings/design/designing-apps-in-meetings.md
@@ -134,9 +134,9 @@
       href: tabs/how-to/using-teams-client-sdk.md
     - name: Клиентский SDK JavaScript для Teams — предварительная версия 2
       href: m365-apps/using-teams-client-sdk-preview.md
-    - name: Пакеты Node.js Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
+    - name: Пакеты Node.js Bot Framework для ботов и расширений для сообщений (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-js'
-    - name: Пакеты .NET Bot Framework для ботов и расширений для системы обмена сообщениями (GitHub)
+    - name: Пакеты .NET Bot Framework для ботов и расширений для сообщений (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-dotnet'
     - name: Пакеты SDK Microsoft Graph
       href: /graph/sdks/sdks-overview
@@ -176,9 +176,9 @@
               href: resources/bot-v3/bots-text-formats.md
             - name: Проверить бота
               href: resources/bot-v3/bots-test.md
-        - name: Расширения для системы обмена сообщениями SDK (v3)
+        - name: Расширения для сообщений SDK (v3)
           items:
-            - name: Расширения для системы обмена сообщениями SDK (v3)
+            - name: Расширения для сообщений SDK (v3)
               href: resources/messaging-extension-v3/messaging-extensions-overview.md
             - name: Поиск расширений
               href: resources/messaging-extension-v3/search-extensions.md
@@ -265,7 +265,7 @@
           href: resources/media-formats.md
     - name: Изменения API-интерфейса бота для участников группы или чата
       href: resources/team-chat-member-api-changes.md
-- name: Создание расширений для системы обмена сообщениями
+- name: Создать расширения для сообщений
   items:
     - name: Обзор
       href: messaging-extensions/what-are-messaging-extensions.md
@@ -375,7 +375,7 @@
           href: bots/how-to/authentication/add-authentication.md
         - name: Использование проверки подлинности SSO
           href: bots/how-to/authentication/auth-aad-sso-bots.md
-    - name: Расширения для система обмена сообщениями
+    - name: Расширения для сообщений
       items:
         - name: Добавление проверки подлинности в расширение для сообщений
           href: messaging-extensions/how-to/add-authentication.md

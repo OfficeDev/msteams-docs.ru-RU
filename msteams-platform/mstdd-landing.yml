@@ -12,12 +12,12 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 6ef2836dd6eb61cc5a7b6efe8a9ffd593ca0aa93
-  ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+  ms.openlocfilehash: c9995cb280cffba91e8315fbde9ac93c9652a2f9
+  ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
   ms.translationtype: MT
   ms.contentlocale: ru-RU
   ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65073811"
+  ms.locfileid: "65103981"
 landingContent:
 - title: Знакомство с последними версиями
   linkLists:
@@ -91,7 +91,7 @@ landingContent:
       url: https://github.com/OfficeDev/Microsoft-Teams-Samples
   - linkListType: whats-new
     links:
-    - text: Что нового
+    - text: Новые возможности
       url: ../msteams-platform/whats-new.md
 - title: Создание возможностей приложения
   linkLists:
@@ -123,7 +123,9 @@ landingContent:
       url: ~/sbs-teams-conversation-bot.yml
     - text: Создание бота для звонков и собраний
       url: ~/sbs-calling-and-meeting.yml
-    - text: Настройка единого входа для вкладок и расширений обмена сообщениями
+    - text: Предоставление разрешений устройству табуляции
+      url: ~/sbs-tab-device-permissions.yml
+    - text: Настройка единого входа для вкладок и расширений сообщений
       url: ~/sbs-tabs-and-messaging-extensions-with-SSO.yml
     - text: Создание вкладок с помощью адаптивных карточек
       url: ~/sbs-tab-with-adaptive-cards.yml
@@ -143,9 +145,9 @@ landingContent:
       url: ~/sbs-meeting-content-bubble.yml
     - text: Вызов модулей задач из Microsoft Teams
       url: ~/sbs-botbuilder-taskmodule.yml
-    - text: Создание расширения для обмена сообщениями на основе поиска
+    - text: Создание расширения сообщений на основе поиска
       url: ~/sbs-messagingextension-searchcommand.yml
-    - text: Расширение обмена сообщениями на основе действий сборки
+    - text: Расширение сообщения на основе действий сборки
       url: ~/sbs-meetingextension-action.yml
     - text: Создание исходящих веб-перехватчиков
       url: ~/sbs-outgoing-webhooks.yml

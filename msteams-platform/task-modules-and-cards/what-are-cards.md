@@ -1,15 +1,15 @@
 ---
 title: Карточки
-description: Описание карточек и их использования в ботах, соединителях и расширениях для сообщений
+description: Описывает карточки и то, как они используются в ботах, соединителях и расширениях для обмена сообщениями.
 ms.localizationpriority: high
 keywords: соединители боты карточки обмен сообщениями
 ms.topic: overview
-ms.openlocfilehash: 249a83c8a41ddfa3a7409ce897238389114db165
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 3689c57ce16f8cfff1d197a35dc0eae084babd36
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398654"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104457"
 ---
 # <a name="cards"></a>Карточки
 
@@ -26,13 +26,13 @@ ms.locfileid: "63398654"
 * Карточка эскиза
 * Коллекции карточек
 
-В зависимости от типа карточки вы можете добавить в них форматирование текста с использованием Markdown или HTML. Карточки, используемые ботами и расширениями для сообщений в Microsoft Teams, добавляют следующие действия карточек и реагируют на них: `openUrl`, `messageBack`, `imBack`, `invoke` и `signin`.
+В зависимости от типа карточки вы можете добавить в них форматирование текста с использованием Markdown или HTML. Карточки, используемые ботами и расширениями для обмена сообщениями в Microsoft Teams, добавляют и реагируют на эти действия карточки, `openUrl`, `messageBack`, `imBack`, `invoke`, и `signin`.
 
 Teams использует карточки в трех разных местах:
 
 * Connectors
 * боты;
-* расширения для обмена сообщениями;
+* Расширения для обмена сообщениями
 
 ## <a name="cards-in-connectors"></a>Карточки в соединителях
 
@@ -44,9 +44,9 @@ Microsoft Bot Framework расширяет спецификацию карточ
 
 Боты в Teams могут использовать простые карточки, карточки соединителей или адаптивные карточки. [Типы карточек](~/task-modules-and-cards/cards/cards-reference.md) содержат сведения о карточках, поддерживаемых ботами в Teams.
 
-## <a name="cards-in-messaging-extensions"></a>Карточки в расширениях для сообщений
+## <a name="cards-in-message-extensions"></a>Карточки в расширениях для обмена сообщениями
 
-[Расширения для сообщений](~/messaging-extensions/what-are-messaging-extensions.md) также могут возвращать карточку. Расширения для сообщений могут использовать простые карточки, карточки соединителей или адаптивные карточки. Эти карточки доступны в разделе [Типы карточек](~/task-modules-and-cards/cards/cards-reference.md).
+[Расширения для обмена сообщениями ](~/messaging-extensions/what-are-messaging-extensions.md) также могут возвращать карточку. Расширения для обмена сообщениями могут использовать простые карточки, карточки соединителей или адаптивные карточки. Эти карточки доступны в разделе [Типы карточек](~/task-modules-and-cards/cards/cards-reference.md).
 
 ## <a name="types-of-cards"></a>Типы карточек
 

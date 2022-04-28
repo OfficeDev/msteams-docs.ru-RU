@@ -5,12 +5,12 @@ description: Узнайте, как создать модули задач дл�
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 460e9b4d51949ccc5e1a4cafb48c30eba60b4262
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: 1514ed8e3101065efd482ced45de98b8b0f58ab8
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63355970"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104135"
 ---
 # <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для приложения Microsoft Teams
 

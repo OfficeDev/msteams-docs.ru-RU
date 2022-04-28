@@ -5,12 +5,12 @@ description: В этой статье вы узнаете о возможнос�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: 55955972bb9ebfbb3699ebcbc2cc131afc00fbd1
-ms.sourcegitcommit: 6189ca81099452a3ab2ff4fff4fb1ded5ba6dcfe
+ms.openlocfilehash: dbed78461fd39f4442c67ac7ec7523ca5cc09ba5
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498233"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104380"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -97,7 +97,7 @@ ms.locfileid: "64498233"
 
    :::column span="":::
 
-#### <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
+#### <a name="message-extensions"></a>Расширения для сообщений
 
 С помощью [расширений для сообщений](../../messaging-extensions/what-are-messaging-extensions.md) можно искать и делиться внешней информацией. Также с сообщениями можно выполнять различные действия, например, создать запрос в службу поддержки на основе публикации на канале.
 

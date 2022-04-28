@@ -3,12 +3,12 @@ title: Упаковка приложения
 description: Узнайте, как упаковать приложение Microsoft Teams для тестирования, отправки и публикации в магазине.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: 7b895f30230a71db5953ffebc5dce2aa04972abb
-ms.sourcegitcommit: 2fdca6fb0ade3f6b460eb9a4dfea0a8e2ab8d3b9
+ms.openlocfilehash: ec583ff0998baef7162156c8c5c5c07fde176321
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63356072"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104093"
 ---
 # <a name="create-a-microsoft-teams-app-package"></a>Создание манифеста приложения в Microsoft Teams
 
@@ -34,7 +34,7 @@ ms.locfileid: "63356072"
 Пакет приложения должен содержать две версии значка приложения в формате PNG: цветную и контурную версию.
 
 > [!Note]
-> Если у вашего приложения есть бот или расширение для обмена сообщениями, значки также будут включены в регистрацию службы Azure Bot.
+> Если у вашего приложения есть бот или расширение для сообщений, значки также будут включены в регистрацию службы Microsoft Azure Bot.
 
 Чтобы ваше приложение прошло проверку магазина Teams, эти значки должны соответствовать следующим требованиям к размеру.
 
@@ -94,7 +94,7 @@ Teams автоматически обрезает значок и отображ
 
 :::image type="content" source="../../assets/images/icons/bot-icon-example.png" alt-text="Пример отображения значка на боте внутри канала." border="false":::
 
-#### <a name="messaging-extension"></a>Расширение для обмена сообщениями
+#### <a name="message-extension"></a>Расширение для сообщений
 
 :::image type="content" source="../../assets/images/icons/messaging-extension-icon-example.png" alt-text="<замещающий текст>" border="false":::
 

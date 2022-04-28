@@ -6,54 +6,54 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 35a60e718bb97cdcc24de66729e3929b2d21a59f
-ms.sourcegitcommit: 2236204ff710f4eca606ceffb233572981f6edbe
+ms.openlocfilehash: 1d0ade9abed4be212abfb96068626172c4f0f03e
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64614532"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104149"
 ---
 # <a name="deploy-to-the-cloud"></a>Развертывание в облаке
 
-Teams набор средств позволяет развертывать или загружать код frontend и backend в приложении на предварительно заданные облачные ресурсы в Azure.
+Teams набор средств помогает развертывать и отправлять интерфейсный и внутренний код в приложении в подготовленные облачные ресурсы в Azure.
 
-* Вкладка, например frontend-приложения, развернута в хранилище Azure и настроена для статического веб-хостинга или сайта sharepoint.
-* Дополнительные API развернуты в функциях Azure.
-* Расширение бота или обмена сообщениями развернуто в службе приложений Azure.
+* Вкладка, например интерфейсные приложения, развертывается в службе хранилища Azure и настраивается для статического веб-размещения или сайта SharePoint.
+* Серверные API развертываются в функциях Azure.
+* Расширение бота или сообщения развертывается в службе приложений Azure.
 
 ## <a name="prerequisite"></a>Предварительное условие
 
-* [Установка Teams набор средств](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии v3.0.0+.
+* [Установите Teams набор средств](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии 3.0.0 и выше.
 
 > [!NOTE]
 >
-> * Убедитесь, что Teams проекта приложения открыт в коде VS.
-> * Перед развертыванием кода проекта в облаке [закачаем облачные ресурсы](provision.md).
+> * Убедитесь, что Teams открыт проект приложения в VS Code.
+> * Перед развертыванием кода проекта в облаке [подготовьте облачные ресурсы](provision.md).
 
 ## <a name="deploy-teams-apps-using-teams-toolkit"></a>Развертывание Teams с помощью Teams набор средств
 
-Руководства по началу работы помогают развернуть с помощью Teams набор средств. Вы можете использовать следующее для развертывания Teams приложения:
+Руководства по началу работы помогут вам выполнить развертывание с помощью Teams набор средств. Чтобы развернуть приложение Teams, можно использовать следующее:
 
 * [Развертывание приложения в Azure](/microsoftteams/platform/sbs-gs-javascript?tabs=vscode%2Cvsc%2Cviscode%2Cvcode&tutorial-step=8&branch)
 * [Развертывание приложения в SharePoint](/microsoftteams/platform/sbs-gs-spfx?tabs=vscode%2Cviscode&tutorial-step=4&branch)
 
 ## <a name="details-on-teams-app-workload"></a>Сведения о рабочей нагрузке Teams приложения
 
-| Teams рабочей нагрузки приложения | Исходный код | Создание артефакта| Целевой ресурс |
+| Teams приложения | Исходный код | Артефакт сборки| Целевой ресурс |
 |-------------|----------|---------------|---------------|
-|Вкладки с React </br> Фронтальная рабочая нагрузка| `yourProjectFolder/tabs`| `tabs/build` |Хранилище Azure |
-|Вкладки с SharePoint </br> Фронтальная рабочая нагрузка | `yourProjectFolder/SPFx`| `SPFx/sharepoint/solution` |SharePoint каталога приложений |
-|API на функциях Azure </br> Рабочая нагрузка в задней части | `yourProjectFolder/api`| Неприменимо |Функции Azure |
-|Расширения ботов и сообщений </br> Рабочая нагрузка в задней части | `yourProjectFolder/bot` | Неприменимо | Служба приложений Azure |
+|Вкладки с React </br> Интерфейсная рабочая нагрузка| `yourProjectFolder/tabs`| `tabs/build` |Служба хранилища Azure |
+|Вкладки с SharePoint </br> Интерфейсная рабочая нагрузка | `yourProjectFolder/SPFx`| `SPFx/sharepoint/solution` |SharePoint приложения |
+|API-интерфейсы в функциях Azure </br> Рабочая нагрузка серверной части | `yourProjectFolder/api`| Неприменимо |Функции Azure |
+|Боты и расширения сообщений </br> Рабочая нагрузка серверной части | `yourProjectFolder/bot` | Неприменимо | Служба приложений Azure |
 
 > [!NOTE]
-> Если вы включаете ресурс управления API Azure в проект и запускаете развертывание. Вы можете опубликовать API в функциях Azure в службе управления API Azure.
+> При включите ресурс управления API Azure в проект и активируете развертывание. API-интерфейсы можно опубликовать в функциях Azure в службе управления API Azure.
 
 ## <a name="see-also"></a>См. также
 
 * [Добавление дополнительных облачных ресурсов](add-resource.md)
 * [Создание и развертывание облачной службы Azure](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
 * [Добавление дополнительных Teams приложений](add-capability.md)
-* [Развертывание кода проекта с конвейерами CI/CD](use-CICD-template.md)
+* [Развертывание кода проекта с помощью конвейеров CI/CD](use-CICD-template.md)
 * [Управление несколькими средами](TeamsFx-multi-env.md)
 * [Совместная работа с другими разработчиками в проекте Teams](TeamsFx-collaboration.md)

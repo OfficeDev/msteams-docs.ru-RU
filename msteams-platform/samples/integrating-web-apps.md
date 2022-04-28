@@ -6,12 +6,12 @@ ms.date: 08/26/2020
 ms.localizationpriority: medium
 ms.topic: conceptual
 title: Вопросы интеграции Teams
-ms.openlocfilehash: eb278d078c7b195ff5d2d2a2f980ffc9db74f748
-ms.sourcegitcommit: f892125106adb6731a20127f15d6e92f279127c5
+ms.openlocfilehash: bbd5b046d7b1afca5cc3fa5c8afb21a3698f43eb
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685599"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104352"
 ---
 # <a name="considerations-for-teams-integration"></a>Вопросы интеграции Teams
 
@@ -35,8 +35,8 @@ ms.locfileid: "64685599"
 |Общие функции приложения   |Teams платформы   |
 |----------|-----------|
 |Внедренная веб-страница, домашняя страница или веб-представление  |[Вкладки](../tabs/what-are-tabs.md)  |
-|Совместное использование сочетаний клавиш и расширений  |[Расширения для системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)  |
-|Сочетания клавиш и расширения действий  |[Расширения для системы обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)  |
+|Совместное использование сочетаний клавиш и расширений  |[Расширения сообщений](../messaging-extensions/what-are-messaging-extensions.md)  |
+|Сочетания клавиш и расширения действий  |[Расширения сообщений](../messaging-extensions/what-are-messaging-extensions.md)  |
 |Чат-боты |[Боты](../bots/what-are-bots.md) |
 |Уведомления канала  |[Боты](../bots/what-are-bots.md)<br/>[Входящие веб-перехватчики](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)<br/>[Соединители Office 365](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)  |
 |Внешние службы сообщений  |[Боты](../bots/what-are-bots.md)<br/>[Исходящие веб-перехватчики](../webhooks-and-connectors/what-are-webhooks-and-connectors.md)  |
@@ -129,6 +129,6 @@ Teams имеет механизмы единого входа (SSO) с Azure AD 
 
 * [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
 * [Решения с низким кодом и без кода для Microsoft Teams](~/samples/teams-low-code-solutions.md)
-* [Предоставление общего доступа Teams из веб-приложений](~/concepts/build-and-test/share-to-teams-from-web-apps.md)
+* [Поделиться в Teams из веб-приложений](~/concepts/build-and-test/share-to-teams-from-web-apps.md)
 * [Атрибуты файла cookie SameSite](~/resources/samesite-cookie-update.md)
 * [Интеграция Power Virtual Agents чат-бота](~/bots/how-to/add-power-virtual-agents-bot-to-teams.md)

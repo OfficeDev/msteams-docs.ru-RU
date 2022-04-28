@@ -1,25 +1,25 @@
 ---
-title: Использование карт в ботах
-description: Описание карт и их использования в сообщениях-ботах
-keywords: боты карт обмена сообщениями
+title: Использование карточек в ботах
+description: Описание карточек и их использования в сообщениях бота
+keywords: обмен сообщениями на карточках ботов
 ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 03/29/2018
-ms.openlocfilehash: f0d895450ec444996ed571b3cf7772e1eaa6884b
-ms.sourcegitcommit: fc9f906ea1316028d85b41959980b81f2c23ef2f
+ms.openlocfilehash: ea00eb0edc28330a7ef21ea6b0c75d3673f6e57a
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59157411"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104485"
 ---
-# <a name="cards-in-bot-conversations"></a>Карты в беседах с ботами
+# <a name="cards-in-bot-conversations"></a>Карточки в беседах бота
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-Карта *—* это контейнер пользовательского интерфейса (пользовательского интерфейса) для коротких или связанных частей информации. Карты могут иметь несколько свойств и вложений. Teams в ботах, соединителах и расширениях обмена сообщениями. Сведения [о](~/task-modules-and-cards/what-are-cards.md) том, какие карты и как Teams карты, см. в Teams.
+*Карточка* — это контейнер пользовательского интерфейса для коротких или связанных сведений. Карточки могут иметь несколько свойств и вложений. Teams в ботах, соединителях и расширениях сообщений. Общие [сведения](~/task-modules-and-cards/what-are-cards.md) о карточках и способах их Teams карточек см. в разделе "Карточки".
 
-Боты используют карты в рамках бесед. Дополнительные сведения см. в [дополнительных сведениях о беседах с ботами.](~/resources/bot-v3/bot-conversations/bots-conversations.md)
+Боты используют карточки в беседах. Дополнительные сведения см [. в разделе "Беседы бота"](~/resources/bot-v3/bot-conversations/bots-conversations.md).
 
-В [Teams ссылки на](~/task-modules-and-cards/cards/cards-reference.md) карточки перечислены все карты, поддерживаемые ботами, и обсуждается, как их использовать.
+В [Teams карточки](~/task-modules-and-cards/cards/cards-reference.md) перечислены все карточки, поддерживаемые ботами, и описывается их использование.
 
-[Действия карт](~/task-modules-and-cards/cards/cards-actions.md) перечисляют все действия, поддерживаемые картами, и обсуждают, как их использовать.
+[В действиях](~/task-modules-and-cards/cards/cards-actions.md) карточек перечислены все действия, поддерживаемые карточками, и описывается их использование.

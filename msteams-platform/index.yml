@@ -1,183 +1,189 @@
 ### YamlMime:Hub
 title: Microsoft Teams документации разработчика
-summary: 'Получите документацию, пример кода, учебники и другие, чтобы помочь вам создать настраиваемые Microsoft Teams приложения.'
+summary: Получите документацию, примеры кода, учебники и т. д., чтобы помочь в создании пользовательских Microsoft Teams приложений.
 brand: teams
 metadata:
-  title: Microsoft Teams разработчика платформы
-  description: 'Платформа Microsoft Teams позволяет разработчикам интегрировать собственные приложения и службы для повышения производительности, более быстрого принятия решений, сокращения переключения контекста и создания совместной работы с существующим контентом и рабочими процессами.'
+  title: Microsoft Teams для разработчиков платформы
+  description: Платформа Microsoft Teams позволяет разработчикам легко интегрировать собственные приложения и службы для повышения производительности, принятия решений быстрее, обеспечения фокуса путем сокращения переключения контекста и создания совместной работы с существующим содержимым и рабочими процессами.
   ms.service: msteams
   ms.topic: hub-page
   ms.collection: collection
   author: akjo
   ms.author: lajanuar
   ms.date: 05/29/2020
+  ms.openlocfilehash: 6d1f1d89882fe0e2d19113aacd604d5e3cbc1c99
+  ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65104002"
 highlightedContent:
   items:
-    - title: Новые возможности
-      itemType: whats-new
-      url: /microsoftteams/platform/whats-new
-    - title: "Новые возможности Teams разработки? \U0001F680Начните здесь!"
-      itemType: get-started
-      url: /microsoftteams/platform/get-started/get-started-overview
-    - title: Планирование приложения
-      itemType: overview
-      url: /microsoftteams/platform/concepts/design/understand-use-cases
-    - title: Создание приложения
-      itemType: overview
-      url: /microsoftteams/platform/concepts/design/design-teams-app-overview
-    - title: Создание приложения
-      itemType: how-to-guide
-      url: /microsoftteams/platform/overview#start-building
-    - title: Расширение приложения с помощью Microsoft Graph
-      itemType: how-to-guide
-      url: /graph/teams-concept-overview
-    - title: Публикация приложения в Teams магазине
-      itemType: deploy
-      url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/publish
-    - title: Примеры кода
-      itemType: sample
-      url: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
+  - title: Новые возможности
+    itemType: whats-new
+    url: /microsoftteams/platform/whats-new
+  - title: "Не Teams разработку? \U0001F680Начните с этого!"
+    itemType: get-started
+    url: /microsoftteams/platform/get-started/get-started-overview
+  - title: Планирование приложения
+    itemType: overview
+    url: /microsoftteams/platform/concepts/design/understand-use-cases
+  - title: Создание приложения
+    itemType: overview
+    url: /microsoftteams/platform/concepts/design/design-teams-app-overview
+  - title: Создание приложения
+    itemType: how-to-guide
+    url: /microsoftteams/platform/overview#start-building
+  - title: Улучшение приложения с помощью Microsoft Graph
+    itemType: how-to-guide
+    url: /graph/teams-concept-overview
+  - title: Публикация приложения в хранилище Teams
+    itemType: deploy
+    url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/publish
+  - title: Примеры кода
+    itemType: sample
+    url: https://github.com/OfficeDev/Microsoft-Teams-Samples
 conceptualContent:
   title: Руководства и ресурсы
   items:
-    - title: Узнать
-      links:
-        - url: /learn/modules/intro-microsoft-teams-apps
-          itemType: learn
-          text: Создание приложений для Microsoft Teams
-        - url: /learn/modules/embedded-web-experiences
-          itemType: learn
-          text: Создание встроенных веб-опытом с помощью вкладок
-        - url: /learn/modules/msteams-conversation-bots/
-          itemType: learn
-          text: Создание диалогов с ботами
-        - url: /learn/modules/msteams-messaging-extensions/
-          itemType: learn
-          text: 'Создание взаимодействий, ориентированных на задачи, с расширениями обмена сообщениями'
-        - url: /learn/modules/msteams-task-modules/
-          itemType: learn
-          text: Сбор входных данных и сбор сведений с помощью модулей задач
-        - url: /learn/modules/msteams-webhooks-connectors/
-          itemType: learn
-          text: Подключение веб-службы каналам и группам с веб-Office 365 соединители
-        - url: /microsoftteams/platform/m365-apps/overview
-          itemType: overview
-          text: Расширение приложений Teams в Microsoft 365
-    - title: Возможности
-      links:
-        - url: /microsoftteams/platform/tabs/what-are-tabs
-          itemType: overview
-          text: Вкладки
-        - url: /microsoftteams/platform/bots/what-are-bots
-          itemType: overview
-          text: боты;
-        - url: /microsoftteams/platform/messaging-extensions/what-are-messaging-extensions
-          itemType: overview
-          text: расширения для обмена сообщениями;
-        - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
-          itemType: overview
-          text: Приложения для собраний Teams
-        - url: /microsoftteams/platform/task-modules-and-cards/cards-and-task-modules
-          itemType: concept
-          text: Карточки и модули задач
-        - url: /microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors
-          itemType: overview
-          text: Веб-перехватчики и соединительные линии
-    - title: Обзор
-      links:
-        - url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/include-saas-offer
-          itemType: concept
-          text: Монетизация приложения Teams с помощью коммерческого предложения SaaS
-        - url: /microsoftteams/platform/concepts/authentication/authentication
-          itemType: concept
-          text: Проверка подлинности пользователей и SSO
-        - url: /microsoftteams/platform/samples/teams-low-code-solutions
-          itemType: how-to-guide
-          text: 'Создание низкокодовых Teams, ботов и потоков с помощью платформы Microsoft Power'
-        - url: 'https://dev.teams.microsoft.com/home'
-          itemType: reference
-          text: Портал разработчиков Teams
-        - url: /microsoftteams/platform/resources/schema/manifest-schema
-          itemType: reference
-          text: Схема манифеста для Teams приложений
-        - url: 'https://adoption.microsoft.com/extensibility-look-book/scenarios/'
-          itemType: reference
-          text: Создание сценариев для Teams приложений
-        - url: 'https://developer.microsoft.com/microsoft-teams/app-development-resources'
-          itemType: reference
-          text: Лучшие практики для Teams приложений
-    - title: Интеграция
-      links:
-        - url: /microsoftteams/platform/bots/how-to/add-power-virtual-agents-bot-to-teams
-          itemType: how-to-guide
-          text: Интеграция Power Virtual Agents чат-бота
-        - url: /microsoftteams/platform/concepts/build-and-test/share-to-teams
-          itemType: reference
-          text: Интеграция кнопки Share-to-Teams для веб-сайта
-        - url: /microsoftteams/platform/tabs/how-to/tabs-in-sharepoint
-          itemType: reference
-          text: Интеграция вкладки Teams с SharePoint
-        - url: /microsoftteams/platform/resources/moodleinstructions
-          itemType: how-to-guide
-          text: Интеграция с системой управления обучением Moodle
-        - url: /microsoftteams/platform/samples/app-templates
-          itemType: reference
-          text: 'Интеграция шаблонов приложений, готовых к производству'
-        - url: /microsoftteams/platform/samples/shifts-wfm-connectors
-          itemType: reference
-          text: Интеграция готовых к производству соединители Shifts
-    - title: Сообщество
-      links:
-        - url: 'https://developer.microsoft.com/microsoft-teams/blogs/'
-          itemType: overview
-          text: Блог разработчиков Microsoft Teams
-        - url: 'https://aka.ms/microsoftteamscommunitycall'
-          itemType: overview
-          text: Microsoft Teams вызовы сообщества
-        - url: 'https://docs.microsoft.com/teamblog/'
-          itemType: whats-new
-          text: Объявления
-        - url: /microsoftteams/platform/feedback
-          itemType: overview
-          text: Microsoft Teams разработчика Community и ответа
-        - url: /microsoftteams/platform/resources/teams-contributor-reference
-          itemType: overview
-          text: Внося Microsoft Teams документацию
-    - title: Аудитория
-      links:
-        - url: 'https://developer.microsoft.com/microsoft-teams'
-          itemType: concept
-          text: Разработчики
-        - url: /microsoftteams/microsoft-teams
-          itemType: concept
-          text: ИТ-специалисты
-        - url: 'https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b'
-          itemType: concept
-          text: Конечные пользователи
+  - title: Узнать
+    links:
+    - url: /learn/modules/intro-microsoft-teams-apps
+      itemType: learn
+      text: Создание приложений для Microsoft Teams
+    - url: /learn/modules/embedded-web-experiences
+      itemType: learn
+      text: Создание встроенных веб-интерфейсов с помощью вкладок
+    - url: /learn/modules/msteams-conversation-bots/
+      itemType: learn
+      text: Создание диалогов с ботами
+    - url: /learn/modules/msteams-messaging-extensions/
+      itemType: learn
+      text: Создание ориентированных на задачи взаимодействий с расширениями сообщений
+    - url: /learn/modules/msteams-task-modules/
+      itemType: learn
+      text: Сбор входных данных и сбор сведений с помощью модулей задач
+    - url: /learn/modules/msteams-webhooks-connectors/
+      itemType: learn
+      text: Подключение веб-службы каналам и командам с помощью веб-перехватчиков и соединителей Office 365
+    - url: /microsoftteams/platform/m365-apps/overview
+      itemType: overview
+      text: Расширение приложений Teams в Microsoft 365
+  - title: Возможности
+    links:
+    - url: /microsoftteams/platform/tabs/what-are-tabs
+      itemType: overview
+      text: Вкладки
+    - url: /microsoftteams/platform/bots/what-are-bots
+      itemType: overview
+      text: боты;
+    - url: /microsoftteams/platform/messaging-extensions/what-are-messaging-extensions
+      itemType: overview
+      text: Расширения сообщений
+    - url: /microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings
+      itemType: overview
+      text: Приложения для собраний Teams
+    - url: /microsoftteams/platform/task-modules-and-cards/cards-and-task-modules
+      itemType: concept
+      text: Карточки и модули задач
+    - url: /microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors
+      itemType: overview
+      text: Веб-перехватчики и соединительные линии
+  - title: Обзор
+    links:
+    - url: /microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/include-saas-offer
+      itemType: concept
+      text: Монетизация приложения Teams с помощью коммерческого предложения SaaS
+    - url: /microsoftteams/platform/concepts/authentication/authentication
+      itemType: concept
+      text: Проверка подлинности пользователей и единый вход
+    - url: /microsoftteams/platform/samples/teams-low-code-solutions
+      itemType: how-to-guide
+      text: Создание приложений, Teams приложений, ботов и потоков с помощью Microsoft Power Platform
+    - url: https://dev.teams.microsoft.com/home
+      itemType: reference
+      text: Портал разработчиков Teams
+    - url: /microsoftteams/platform/resources/schema/manifest-schema
+      itemType: reference
+      text: Схема манифеста для Teams приложений
+    - url: https://adoption.microsoft.com/extensibility-look-book/scenarios/
+      itemType: reference
+      text: Сценарии сборки для Teams приложений
+    - url: https://developer.microsoft.com/microsoft-teams/app-development-resources
+      itemType: reference
+      text: Рекомендации по Teams приложений
+  - title: Интегрировать
+    links:
+    - url: /microsoftteams/platform/bots/how-to/add-power-virtual-agents-bot-to-teams
+      itemType: how-to-guide
+      text: Интеграция Power Virtual Agents чат-бота
+    - url: /microsoftteams/platform/concepts/build-and-test/share-to-teams
+      itemType: reference
+      text: Кнопка интеграции интеграции Teams веб-сайта
+    - url: /microsoftteams/platform/tabs/how-to/tabs-in-sharepoint
+      itemType: reference
+      text: Интеграция вкладки Teams с SharePoint
+    - url: /microsoftteams/platform/resources/moodleinstructions
+      itemType: how-to-guide
+      text: Интеграция с системой управления обучением Moodle
+    - url: /microsoftteams/platform/samples/app-templates
+      itemType: reference
+      text: Интеграция шаблонов приложений, готовых к использованию в рабочей среде
+    - url: /microsoftteams/platform/samples/shifts-wfm-connectors
+      itemType: reference
+      text: Интеграция готовых к работе соединителей shifts
+  - title: Сообщество
+    links:
+    - url: https://developer.microsoft.com/microsoft-teams/blogs/
+      itemType: overview
+      text: Блог разработчиков Microsoft Teams
+    - url: https://aka.ms/microsoftteamscommunitycall
+      itemType: overview
+      text: Microsoft Teams вызовов сообщества
+    - url: https://docs.microsoft.com/teamblog/
+      itemType: whats-new
+      text: Объявления
+    - url: /microsoftteams/platform/feedback
+      itemType: overview
+      text: Microsoft Teams Сообщество разработчиков ответа
+    - url: /microsoftteams/platform/resources/teams-contributor-reference
+      itemType: overview
+      text: Участие в разработке Microsoft Teams документации
+  - title: Аудитория
+    links:
+    - url: https://developer.microsoft.com/microsoft-teams
+      itemType: concept
+      text: Разработчики
+    - url: /microsoftteams/microsoft-teams
+      itemType: concept
+      text: ИТ-специалисты
+    - url: https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b
+      itemType: concept
+      text: Пользователи
 tools:
   title: Инструменты и пакеты SDK
   items:
-    - title: Microsoft Teams набор средств расширения для Visual Studio Code
-      imageSrc: /media/logos/logo_vs-code.svg
-      url: /microsoftteams/platform/toolkit/visual-studio-code-overview
-    - title: Microsoft Teams набор средств для Visual Studio
-      imageSrc: /media/logos/logo_vs-ide.svg
-      url: /microsoftteams/platform/toolkit/visual-studio-overview
-    - title: Портал разработчика
-      imageSrc: ./assets/icons/devp-logo.png
-      url: /microsoftteams/platform/concepts/build-and-test/teams-developer-portal
-    - title: Пакеты SDK Microsoft Graph
-      imageSrc: ./assets/icons/graph-icon-1.png
-      url: 'https://docs.microsoft.com/graph/sdks/sdks-overview'
-    - title: SDK клиента JavaScript для вкладок и других опытом
-      imageSrc: ./assets/icons/logo_js.png
-      url: /microsoftteams/platform/tabs/how-to/using-teams-client-sdk
-    - title: Пакеты SDK Node.js Bot Framework для ботов и расширений для обмена сообщениями
-      imageSrc: ./assets/icons/logo_nodejs.png
-      url: 'https://github.com/Microsoft/botbuilder-js'
-    - title: Пакеты SDK .NET Bot Framework для ботов и расширений для обмена сообщениями
-      imageSrc: ./assets/icons/logo_net.png
-      url: 'https://github.com/Microsoft/botbuilder-dotnet/'
-    - title: Генератор Yeoman для Microsoft Teams
-      imageSrc: ./assets/icons/Yeoman.png
-      url: 'https://github.com/OfficeDev/generator-teams'
+  - title: Microsoft Teams набор средств расширения для Visual Studio Code
+    imageSrc: /media/logos/logo_vs-code.svg
+    url: /microsoftteams/platform/toolkit/visual-studio-code-overview
+  - title: Microsoft Teams набор средств расширения для Visual Studio
+    imageSrc: /media/logos/logo_vs-ide.svg
+    url: /microsoftteams/platform/toolkit/visual-studio-overview
+  - title: Портал разработчика
+    imageSrc: ./assets/icons/devp-logo.png
+    url: /microsoftteams/platform/concepts/build-and-test/teams-developer-portal
+  - title: Пакеты SDK Microsoft Graph
+    imageSrc: ./assets/icons/graph-icon-1.png
+    url: https://docs.microsoft.com/graph/sdks/sdks-overview
+  - title: Пакет SDK клиента JavaScript для вкладок и других размещенных интерфейсов
+    imageSrc: ./assets/icons/logo_js.png
+    url: /microsoftteams/platform/tabs/how-to/using-teams-client-sdk
+  - title: Node.js Пакета SDK Bot Framework для ботов и расширений сообщений
+    imageSrc: ./assets/icons/logo_nodejs.png
+    url: https://github.com/Microsoft/botbuilder-js
+  - title: Пакет SDK для .NET Bot Framework для ботов и расширений сообщений
+    imageSrc: ./assets/icons/logo_net.png
+    url: https://github.com/Microsoft/botbuilder-dotnet/
+  - title: Генератор Yeoman для Microsoft Teams
+    imageSrc: ./assets/icons/Yeoman.png
+    url: https://github.com/OfficeDev/generator-teams

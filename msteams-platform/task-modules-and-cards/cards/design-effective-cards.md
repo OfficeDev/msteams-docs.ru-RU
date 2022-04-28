@@ -4,12 +4,12 @@ description: Узнайте, как создать адаптивные карт
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 6d908c47585c44718e25ec92dc8e06bff0ef5c9e
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 1575cfb4e5c97aaf5b4b849a32f3244b3d0626c7
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398626"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103904"
 ---
 # <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a>Разработка адаптивных карточек для приложения Microsoft Teams
 

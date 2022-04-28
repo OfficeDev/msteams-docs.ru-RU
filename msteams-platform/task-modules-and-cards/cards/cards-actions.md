@@ -4,16 +4,16 @@ description: Описание действий карточек в Microsoft Tea
 ms.localizationpriority: medium
 ms.topic: conceptual
 keywords: teams действия карточек боты
-ms.openlocfilehash: 756ff357947980ecf4a0c7c88c375c427e016d61
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: 12100ca05d8e4ff4f68c934bc82e1f078dd0210e
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398605"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103911"
 ---
 # <a name="card-actions"></a>Действия карточек
 
-Карточки, используемые ботами и расширениями для обмена сообщениями в Teams, поддерживают следующие типы действий [`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards):
+Карточки, используемые ботами и расширениями сообщений в Teams поддерживают следующие типы действий[`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards):
 
 > [!NOTE]
 > Действия `CardAction` отличаются от `potentialActions` для карточек соединителей Office 365 при их использовании из соединителей.
@@ -31,7 +31,7 @@ ms.locfileid: "63398605"
 >* Teams не поддерживает типы `CardAction`, не указанные в предыдущей таблице.
 >* Teams не поддерживает свойство `potentialActions`.
 >* Действия с карточками отличаются от [рекомендуемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в Bot Framework или службе Azure Bot. Рекомендуемые действия не поддерживаются в Microsoft Teams. Если вы хотите, чтобы в сообщении бота Teams появлялись кнопки, используйте карточку.
->* Если вы используете действие карточки в расширении для обмена сообщениями, эти действия не будут работать, пока карточка не будет отправлена в канал. Действия не работают, пока карточка находится в окне составления сообщения.
+>* Если вы используете действие карточки в составе расширения сообщения, действия не будут работать до тех пор, пока карточка не будет отправлена в канал. Действия не работают, пока карточка находится в окне составления сообщения.
 
 ## <a name="action-type-openurl"></a>Тип действия openUrl
 

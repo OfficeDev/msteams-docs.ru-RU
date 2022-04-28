@@ -1,49 +1,49 @@
 ---
-title: Поддержка SSO для расширений обмена сообщениями
+title: Поддержка единого входа для расширений сообщений
 author: KirtiPereira
-description: Узнайте, как включить SSO-поддержку расширений обмена сообщениями с помощью примеров кода.
+description: Узнайте, как включить поддержку единого входа для расширений сообщений с помощью примеров кода.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 3543d86d15755642a1617e07514db95a6a812313
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 4ee49b349d287325bb029aa155a61219a8656e22
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453469"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104394"
 ---
-# <a name="single-sign-on-support-for-messaging-extensions"></a>Поддержка единого входного знака для расширений обмена сообщениями
+# <a name="single-sign-on-support-for-message-extensions"></a>Поддержка единого входа для расширений сообщений
 
-Поддержка единого входного (SSO) теперь доступна для расширений обмена сообщениями и разгрузки ссылок. Включение единого входа для расширений обмена сообщениями по умолчанию обновляет маркер проверки подлинности, что минимизирует количество раз, необходимых для ввода входа в учетные данные для Microsoft Teams.
+Поддержка единого входа (SSO) теперь доступна для расширений сообщений и удаления ссылок. При включении единого входа для расширений сообщений по умолчанию обновляется маркер проверки подлинности, что сводит к минимуму количество попыток ввода учетных данных для входа Microsoft Teams.
 
-В этом документе вы можете узнать, как включить SSO и при необходимости сохранить маркер проверки подлинности.
+В этом документе описывается, как включить единый вход и при необходимости сохранить маркер проверки подлинности.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
-Необходимое условие, чтобы включить SSO для расширения обмена сообщениями и разгрузки ссылок:
+Ниже приведены предварительные требования для включения единого входа для расширений сообщений и отмены ссылок.
 
 * У вас должна быть [учетная запись Azure](https://azure.microsoft.com/free/) .
-* Необходимо настроить приложение на портале Azure AD и обновить Teams, как определено в регистрации приложения на [портале Azure AD](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-azure-ad-portal).
+* Необходимо настроить приложение с помощью портала Azure AD и обновить Teams манифест приложения, как определено при регистрации приложения на [портале Azure AD](../../bots/how-to/authentication/auth-aad-sso-bots.md#register-your-app-through-the-azure-ad-portal).
 
 > [!NOTE]
-> Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в документе Поддержка единого входного знака [(SSO) для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md).
+> Дополнительные сведения о создании учетной записи Azure и обновлении манифеста приложения см. в разделе о поддержке единого входа [для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md).
 
-## <a name="enable-sso-for-messaging-extensions-and-link-unfurling"></a>Включить SSO для расширения обмена сообщениями и разгрузки ссылок
+## <a name="enable-sso-for-message-extensions-and-link-unfurling"></a>Включение единого входа для расширений сообщений и отмена ссылки
 
-После завершения необходимых условий можно включить SSO для расширения сообщений и разгрузку ссылок.
+После выполнения предварительных условий можно включить единый вход для расширений сообщений и удалить ссылку.
 
-Чтобы включить SSO:
+Чтобы включить единый вход:
 
-1. Обновите сведения о [подключении ботов к OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) на Microsoft Azure портале.
-2. Скачайте [пример расширений обмена сообщениями](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.
+1. Обновите сведения о подключении [OAuth](../../bots/how-to/authentication/auth-aad-sso-bots.md#update-the-azure-portal-with-the-oauth-connection) ботов на Microsoft Azure портале.
+2. Скачайте [пример расширений сообщений](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config) и следуйте инструкциям по настройке, предоставленным мастером.
    > [!NOTE]
-   > Использование подключения OAuth для ботов при настройке расширений обмена сообщениями.
-3. В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) обновите значение от *auth* до *silentAuth* `OnTeamsMessagingExtensionQueryAsync` в файле and/or `OnTeamsAppBasedLinkQueryAsync`.  
+   > Используйте подключение OAuth ботов при настройке расширений сообщений.
+3. В [файле TeamsMessagingExtensionsSearchAuthConfigBot.cs](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config/Bots/TeamsMessagingExtensionsSearchAuthConfigBot.cs) измените значение с проверки подлинности на *silentAuth* `OnTeamsMessagingExtensionQueryAsync` в и /или `OnTeamsAppBasedLinkQueryAsync`.  
 
     > [!NOTE]
-    > Мы не поддерживаем другие обработчики SSO, `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` за исключением файла TeamsMessagingExtensionsSearchAuthConfigBot.cs.
+    > Мы не поддерживаем единый вход других обработчиков, `OnTeamsMessagingExtensionQueryAsync` `OnTeamsAppBasedLinkQueryAsync` за исключением файла TeamsMessagingExtensionsSearchAuthConfigBot.cs и из файла TeamsMessagingExtensionsAuthConfigBot.cs.
 
-4. Вы получаете маркер в `OnTeamsMessagingExtensionQueryAsync` обработнике `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync`в полезной нагрузке или в зависимости от того, в какой сценарий вы включаете SSO для:
+4. Маркер вы получаете в обработчике `OnTeamsMessagingExtensionQueryAsync` `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync`в полезных данных или в зависимости от сценария, для которого вы включите единый вход:
 
     ```json
     JObject valueObject=JObject.FromObject(turnContext.Activity.Value);
@@ -55,7 +55,7 @@ ms.locfileid: "63453469"
     
      ```
   
-    Если вы используете подключение OAuth, добавьте следующий код в файл TeamsMessagingExtensionsSearchAuthConfigBot.cs для обновления или добавления маркера в магазине:
+    Если вы используете подключение OAuth, добавьте следующий код в файл TeamsMessagingExtensionsSearchAuthConfigBot.cs, чтобы обновить или добавить маркер в хранилище:
 
    ```C#
    protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
@@ -119,6 +119,6 @@ ms.locfileid: "63453469"
 
 ## <a name="see-also"></a>См. также
 
-* [Добавление проверки подлинности в расширения обмена сообщениями](add-authentication.md)
-* [Использование SSO для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md)
+* [Добавление проверки подлинности в расширения сообщений](add-authentication.md)
+* [Использование единого входа для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md)
 * [Развертывание ссылки](link-unfurling.md)

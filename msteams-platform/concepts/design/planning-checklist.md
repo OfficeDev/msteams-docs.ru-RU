@@ -5,12 +5,12 @@ description: Вопросы, которые необходимо учитыва�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: 6a2440ea05c1a89f4e1306b6fb54635287fb2d6d
-ms.sourcegitcommit: 65cea59cc0602269395a2f87e023a4057d9cc55e
+ms.openlocfilehash: 4620d1bc17332e40f79c429769090f1ce7b2210f
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63765934"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104310"
 ---
 # <a name="teams-app-planning-checklist"></a>Контрольный список планирования приложений Teams
 

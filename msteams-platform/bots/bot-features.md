@@ -5,12 +5,12 @@ description: Общие сведения о средствах и пакетах
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: a50f93e718dcff35d810f0f8748c97095b49b138
-ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+ms.openlocfilehash: 52f933aaddd5a02319ae1c0a35e9a4a26b617b57
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/27/2022
-ms.locfileid: "65073748"
+ms.locfileid: "65104324"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -36,7 +36,7 @@ ms.locfileid: "65073748"
 
 * Используйте специализированные типы карточек, например Office 365 соединителя.
 * Задайте Teams для определенных каналов действий.
-* Обработка запросов на расширение обмена сообщениями.
+* Обработка запросов на расширение сообщений.
 
 > [!IMPORTANT]
 > Вы можете разрабатывать Teams в любой технологии веб-программирования и напрямую вызывать [REST API Bot Framework](/bot-framework/rest-api/bot-framework-rest-overview). Но обработку маркеров необходимо выполнять во всех случаях.

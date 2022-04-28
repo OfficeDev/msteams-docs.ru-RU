@@ -5,12 +5,12 @@ description: Определите, как реализовать вариант�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: 006b639509d8aaaef96c8f4a3b57235097f1d531
-ms.sourcegitcommit: 65cea59cc0602269395a2f87e023a4057d9cc55e
+ms.openlocfilehash: 9fdf2c56bab0a822d0c3769d6d7e9fdb6aa3a929
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63765941"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103329"
 ---
 # <a name="map-your-use-cases-to-teams-app-features"></a>Сопоставление вариантов использования с возможностями приложения Teams
 
