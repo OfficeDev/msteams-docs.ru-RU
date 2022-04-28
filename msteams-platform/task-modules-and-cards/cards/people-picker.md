@@ -1,17 +1,17 @@
 ---
 title: Выбор людей в адаптивных карточках
 description: Использование элемента управления "Выбор людей" в адаптивных карточках
-localization_priority: Normal
+localization_priority: Medium
 keywords: Средство выбора адаптивных карточек
 ms.topic: reference
 author: Rajeshwari-v
 ms.author: surbhigupta
-ms.openlocfilehash: 8a78be74d8142600ccc08093744491a19900e60b
-ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+ms.openlocfilehash: 3d6305895239ca2b8a0c871e53723979feb3f890
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65073432"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111635"
 ---
 # <a name="people-picker-in-adaptive-cards"></a>Выбор людей в адаптивных карточках
 
@@ -29,7 +29,7 @@ ms.locfileid: "65073432"
 
 В следующей таблице приведены популярные сценарии выбора людей в адаптивных карточках и соответствующие действия.
 
-|Сценарии|Actions|
+|Сценарии|Действия|
 |----------|-------------------------|
 |Сценарии на основе утверждения| Чтобы запросить, назначить и переназначить утверждение предполагаемому пользователю в соответствии с требованиями.|
 |Управление инцидентами| Для отслеживания инцидентов и уведомления, назначения и переназначения предполагаемому пользователю для немедленных действий.|

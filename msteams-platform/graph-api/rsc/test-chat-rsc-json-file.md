@@ -1,19 +1,19 @@
 ---
-title: Протестировать согласие на чат в Teams
-description: Узнайте, как проверить согласие на беседу в Teams с помощью почтальона с помощью файла JSON.
-ms.localizationpriority: medium
+title: Проверка согласия для конкретного ресурса для чата в Teams
+description: Узнайте, как проверить согласие для конкретного ресурса для чата в Teams с помощью Postman с образцом JSON-файла.
+ms.localizationpriority: high
 author: jecha
 ms.author: jecha
 ms.topic: how-to
-keywords: команды авторизации OAuth SSO Azure AD rsc postman Graph
-ms.openlocfilehash: 1f387dc7514fd8a9c1b9bbcb5363542cdbed4ab0
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
-ms.translationtype: MT
+keywords: авторизация teams OAuth SSO Azure AD rsc Postman Graph
+ms.openlocfilehash: 7419316efbebf4f59c81432f7cd37db7a4a29e4a
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453875"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111180"
 ---
-# <a name="test-chat-rsc-postman-collection-for-json"></a>Test chat RSC Postman collection for JSON
+# <a name="test-chat-rsc-postman-collection-for-json"></a>Тестовая коллекция Postman чата RSC для JSON
 
 ```json
 {

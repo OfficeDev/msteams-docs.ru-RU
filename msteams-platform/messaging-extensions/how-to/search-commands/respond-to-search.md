@@ -4,13 +4,13 @@ author: surbhigupta
 description: Узнайте, как реагировать на команду поиска из расширения сообщения в приложении Microsoft Teams с помощью примеров кода и примеров
 ms.topic: conceptual
 ms.author: anclear
-ms.localizationpriority: none
-ms.openlocfilehash: 4dcf3d5743471daa034d138818cf11a9a516a32e
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.localizationpriority: medium
+ms.openlocfilehash: f02db887a83965eeaac9e905fd20b34f79b34a68
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104506"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111936"
 ---
 # <a name="respond-to-search-command"></a>Ответ на команду поиска
 
@@ -416,7 +416,7 @@ async handleTeamsMessagingExtensionSelectItem(context, obj) {
 
 | Имя образца           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Teams расширения сообщения| Описывает, как определить команды действий, создать модуль задач и реагировать на действие отправки модуля задачи. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
+|Teams расширения сообщения| Описывает, как определить команды действий, создать модуль задач и реагировать на действие отправки модуля задачи. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
 |Teams расширения сообщения   |  Описывает, как определить команды поиска и реагировать на поисковые запросы.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Следующий этап
@@ -424,6 +424,6 @@ async handleTeamsMessagingExtensionSelectItem(context, obj) {
 > [!div class="nextstepaction"]
 > [Добавление проверки подлинности в расширение сообщения](~/messaging-extensions/how-to/add-authentication.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Добавление конфигурации в расширение сообщения](~/get-started/first-message-extension.md)

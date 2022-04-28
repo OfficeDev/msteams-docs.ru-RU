@@ -4,12 +4,12 @@ description: Описывает прямые ссылки и способы их
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: прямая ссылка на Teams
-ms.openlocfilehash: 79be1bcc04c33234859c4b564c9211c699b148e1
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
+ms.openlocfilehash: cc8e71e77964ff2a07e75983c94f72091033b789
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399312"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103925"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -158,7 +158,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 ### <a name="generate-a-deep-link-to-a-chat"></a>Создание прямой ссылки на чат
 
-Используйте этот формат для прямой ссылки, которую можно использовать в боте, соединителе или карточке расширения для сообщений:
+Используйте этот формат для прямой ссылки, которую можно применять в боте, соединителе или карточке расширения для сообщений:
 
 `https://teams.microsoft.com/l/chat/0/0?users=<user1>,<user2>,...&topicName=<chat name>&message=<precanned text>`
 
@@ -174,13 +174,13 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 ## <a name="generate-deep-links-to-file-in-channel"></a>Создание прямых ссылок на файл в канале
 
-Следующий формат прямой ссылки можно использовать в карточке бота, соединителя или расширения для сообщений:
+Следующий формат прямой ссылки используется в карточке бота, соединителя или расширения для сообщений: 
 
 `https://teams.microsoft.com/l/file/<fileId>?tenantId=<tenantId>&fileType=<fileType>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadId>&groupId=<groupId>`
 
 Параметры запроса:
 
-* `fileId`: Идентификатор уникального документа Sharepoint Online, также известный как `sourcedoc`. Например, `1FA202A5-3762-4F10-B550-C04F81F6ACBD`.
+* `fileId`: Идентификатор уникального документа Sharepoint Online, также известный как `sourcedoc`. Например,`1FA202A5-3762-4F10-B550-C04F81F6ACBD`.
 * `tenantId`: ИД клиента, например `0d9b645f-597b-41f0-a2a3-ef103fbd91bb`.
 * `fileType`: поддерживаемый тип файла, например DOCX, PPTX, XLSX и PDF.
 * `objectUrl`: URL-адрес объекта файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}/SharedDocuments/{ChannelName}/FileName.ext`. Например, `https://microsoft.sharepoint.com/teams/(filepath)`.
@@ -246,7 +246,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ### <a name="generate-a-deep-link-to-the-scheduling-dialog"></a>Создание прямой ссылки на диалоговое окно планирования
 
-Используйте следующий формат для прямой ссылки, которую можно использовать в боте, соединителе или карточке расширения для сообщений: `https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
+Используйте следующий формат для прямой ссылки, которую можно применять в боте, соединителе или карточке расширения для сообщений: `https://teams.microsoft.com/l/meeting/new?subject=<meeting subject>&startTime=<date>&endTime=<date>&content=<content>&attendees=<user1>,<user2>,<user3>,...`
 
 Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
 
@@ -286,7 +286,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
   
 Ниже приведены параметры запроса:
 
-* `users`: разделенный запятыми список идентификаторов пользователей, представляющих участников звонка. В настоящее время поле идентификатора пользователя поддерживает UserPrincipalName Azure AD, обычно это адрес электронной почты, или в случае звонка по ТСОП оно поддерживает pstn mri 4:&lt;phonenumber&gt;.
+* `users`: Разделенный запятыми список идентификаторов пользователей, обозначающих участников вызова. В настоящее время поле идентификатора пользователя поддерживает UserPrincipalName Azure AD, обычно это адрес электронной почты, а в случае звонка по ТСОП поддерживается pstn mri 4:&lt;phonenumber&gt;.
 * `withVideo`: это необязательный параметр, который можно использовать для совершения видеовызова. Настройка этого параметра включит только камеру звонящего. Получатель звонка может ответить через голосовой вызов или голосовой и видеовызов через окно уведомления о звонках Teams.
 * `Source`: это необязательный параметр, который сообщает об источнике прямой ссылки.
 

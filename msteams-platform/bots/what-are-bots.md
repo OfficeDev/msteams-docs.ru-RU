@@ -5,12 +5,12 @@ description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: fbf7f7b1f4e863ec7612a404b5576baf40035d21
-ms.sourcegitcommit: 8ae93b7bfffff77a5b9cb7a5d287f202e73ea9be
+ms.openlocfilehash: 53d016c6e01c73a6fbe5f59ed4a3239077e8b12e
+ms.sourcegitcommit: e40383d9081bf117030f7e6270140e6b94214e8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952305"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102423"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
@@ -21,11 +21,11 @@ ms.locfileid: "64952305"
 
 Боты для общения позволяют пользователям взаимодействовать с веб-службой с помощью текста, интерактивных карточек и модулей задач.
 
-![Вызов бота с помощью текста](~/assets/images/invokebotwithtext.png)
+:::image type="content" source="../assets/images/invokebotwithtext.png" alt-text="Веб-служба с использованием текста"lightbox="../assets/images/invokebotwithtext.png":::
 
-![Вызов бота с помощью карточки](~/assets/images/invokebotwithcard.png)
+:::image type="content" source="../assets/images/invokebotwithcard.png" alt-text="веб-служба с использованием интерактивных карточек"lightbox="../assets/images/invokebotwithcard.png"border="true":::
 
-<img src="~/assets/images/task-module-example.png" alt="Invoke bot using task module" width="400"/>
+:::image type="content" source="../assets/images/task-module-example.png" alt-text="веб-служба с использованием модуля задач"lightbox="../assets/images/task-module-example.png"border="true":::
 
 Боты для общения чрезвычайно гибкие. Боты могут обрабатывать несколько основных команд или сложных задач, которые включают искусственный интеллект и обработку естественного языка. Боты могут быть частью большего приложения или быть автономными.
 

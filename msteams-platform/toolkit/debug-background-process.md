@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/03/2022
-ms.openlocfilehash: 33e1e00165119af1e1b63d024097bd3a1a1b13c2
-ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+ms.openlocfilehash: a3259c46927547b98700f76f704c6c5cb222a74d
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/27/2022
-ms.locfileid: "65073832"
+ms.locfileid: "65104016"
 ---
 # <a name="debug-background-process"></a>Отладка фонового процесса
 
@@ -36,14 +36,14 @@ ms.locfileid: "65073832"
   |Вкладка без Функций Azure | 10, 12, **14 (рекомендуется)**, 16 |
   |Вкладка с Функциями Azure | 10, 12, **14 (рекомендуется)**|
   |Bot |  10, 12, **14 (рекомендуется)**, 16|
-  |Расширение для обмена сообщениями | 10, 12, **14 (рекомендуется)**, 16 |
+  |Расширение для сообщений | 10, 12, **14 (рекомендуется)**, 16 |
 
    
 * Учетная запись Microsoft 365 с действительными учетными данными. Набор средств Teams предлагает вам войти в учетную запись Microsoft 365, если вы не вошли
 
 * Отправка настраиваемых приложений или загрузка без публикации в вашем клиенте для разработчика включена. Если нет, локальная отладка прекращается
 
-* Двоичная версия Ngrok 2.3 применима для бота и расширения обмена сообщениями. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`
+* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`
 
 * Azure Functions Core Tools версии 3. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается
 
@@ -62,7 +62,7 @@ ms.locfileid: "65073832"
 
 * Пакеты NPM, применимые для приложения вкладки, приложения бота, приложения расширения для сообщений и Функций Azure. Если NPM не установлен, набор средств Teams устанавливает все пакеты NPM
 
-* Бот и расширение для сообщений. Набор средств Teams запускает Ngrok для создания туннеля HTTP для бота и расширения обмена сообщениями
+* Бот и расширение для сообщений. Набор средств Teams запускает Ngrok для создания туннеля HTTP для бота и расширения для сообщений
 
 * Доступные порты. Если порты вкладки, бота, расширения для сообщений и Функций Azure недоступны, локальная отладка прекращается
 
@@ -84,17 +84,17 @@ ms.locfileid: "65073832"
 |Tab without Azure functions | Node.js LTS versions 10, 12, **14 (recommended)**, 16 | The local debug terminates, if Node.js isn't installed or the version doesn't match the requirement.|
 |Tab with Azure functions | Node.js LTS versions 10, 12, **14 (recommended)** |The local debug terminates, if Node.js isn't installed or the version doesn't match the requirement.|
 |Bot | Node.js LTS versions 10, 12, **14 (recommended)**, 16|The local debug terminates, if Node.js isn't installed or the version doesn't match the requirement.|
-|Messaging extension | Node.js LTS versions 10, 12, **14 (recommended)**, 16 |The local debug terminates, if Node.js isn't installed or the version doesn't match the requirement.|
+|Message extension | Node.js LTS versions 10, 12, **14 (recommended)**, 16 |The local debug terminates, if Node.js isn't installed or the version doesn't match the requirement.|
 |Sign in to Microsoft 365 account | Microsoft 365 credentials |Teams toolkit prompts you to sign in to Microsoft 365 account, if you haven't signed in. |
-|Bot, messaging extension | Ngrok version 2.3| • If Ngrok isn't installed or the version doesn't match the requirement, the Teams toolkit installs Ngrok NPM package `ngrok@4.2.2` in `~/.fx/bin/ngrok`. </br> • The Ngrok binary is managed by Ngrok NPM package in `/.fx/bin/ngrok/node modules/ngrok/bin`.|
+|Bot, message extension | Ngrok version 2.3| • If Ngrok isn't installed or the version doesn't match the requirement, the Teams toolkit installs Ngrok NPM package `ngrok@4.2.2` in `~/.fx/bin/ngrok`. </br> • The Ngrok binary is managed by Ngrok NPM package in `/.fx/bin/ngrok/node modules/ngrok/bin`.|
 |Azure functions | Azure Functions Core Tools version 3| • If Azure Functions Core Tools isn't installed or the version doesn't match the requirement, the Teams toolkit installs Azure Functions Core Tools NPM package, azure-functions-core-tools@3 for **Windows** and for **macOs** in  `~/.fx/bin/func`. </br> • The Azure Functions Core Tools NPM package in  `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` manages Azure Functions Core Tools binary. For Linux, the local debug terminates.|
 |Azure functions |.NET Core SDK version|• If .NET Core SDK isn't installed or the version  doesn't match the requirement, the toolkit installs .NET Core SDK for Windows and macOS in `~/.fx/bin/dotnet`.</br> • For Linux, the local debug terminates.|
 |Azure functions | Azure functions binding extensions defined in `api/extensions.csproj`| If Azure functions binding extensions isn't installed, the toolkit installs Azure functions binding extensions.|
-|NPM packages| NPM packages for tab app, bot app, messaging extension app, and Azure functions|If NPM isn't installed, the toolkit installs all NPM packages.|
-|Bot and messaging extension | Ngrok |Toolkit starts Ngrok to create a HTTP tunnel for bot and messaging extension. |
+|NPM packages| NPM packages for tab app, bot app, message extension app, and Azure functions|If NPM isn't installed, the toolkit installs all NPM packages.|
+|Bot and message extension | Ngrok |Toolkit starts Ngrok to create a HTTP tunnel for bot and message extension. |
 
 > [!NOTE]
-> If tab, bot, messaging extension, and Azure functions ports are unavailable, the local debug terminates.
+> If tab, bot, message extension, and Azure functions ports are unavailable, the local debug terminates.
 
 Use the following .NET Core versions:
 
@@ -130,7 +130,7 @@ Use the following .NET Core versions:
 
 1. Предоставляет API
 
-    а. Настраивает URI идентификатора приложения. Для вкладки: `api://localhost/{appId}`. Для бота или расширения обмена сообщениями: `api://botid-{botid}`
+    а. Настраивает URI идентификатора приложения. Для вкладки: `api://localhost/{appId}`. Для бота или расширения для сообщений `api://botid-{botid}`
 
     б. Добавляет область с именем `access_as_user`. Включает ее для **администратора и пользователей**
 
@@ -143,7 +143,6 @@ Use the following .NET Core versions:
       | --- | --- | --- |
       | Tab | `https://localhost:53000/auth-end.html` | `https://localhost:53000/auth-end.html?clientId={appId>}` |
       | Бот или расширение для сообщений | `https://ngrok.io/auth-end.html` | Н/Д |
-  
 
     В следующей таблице перечислены конфигурации клиентского приложения Microsoft 365 с идентификаторами клиента.
     
@@ -187,9 +186,8 @@ Use the following .NET Core versions:
 |  `.fx/configs/config.local.json` | Файл конфигурации локальной отладки | Значения каждой конфигурации создаются и сохраняются во время локальной отладки. |
 |  `templates/appPackage/manifest.template.json` | Файл шаблона манифеста приложения Teams для локальной отладки | Заполнители в файле устраняются во время локальной отладки. |
 |  `tabs/.env.teams.local`  | Файл переменных среды для вкладки  | Значения каждой переменной среды создаются и сохраняются во время локальной отладки. |
-|  `bot/.env.teamsfx.local` | Файл переменных среды для бота и расширения обмена сообщениями| Значения каждой переменной среды создаются и сохраняются во время локальной отладки. |
+|  `bot/.env.teamsfx.local` | Файл переменных среды для бота и расширения для сообщений| Значения каждой переменной среды создаются и сохраняются во время локальной отладки. |
 | `api/.env.teamsfx.local`  | Файл переменных среды для Функций Azure | Значения каждой переменной среды создаются и сохраняются во время локальной отладки. |
-
 
 ## <a name="see-also"></a>См. также
 
