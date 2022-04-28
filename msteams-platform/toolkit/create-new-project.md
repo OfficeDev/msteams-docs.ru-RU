@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: 8723e88e7b4ccf297edace9276af06a160e76f87
-ms.sourcegitcommit: 123a64d7bcd310352dcff9f769b5f7f9cafd6aeb
+ms.openlocfilehash: b28d68faf6d124faaa2b800accea568775acaa32
+ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64910552"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65104156"
 ---
 # <a name="create-a-new-teams-app-using-teams-toolkit"></a>Создание нового приложения Teams с помощью "Инструментов Teams"
 
@@ -25,7 +25,7 @@ ms.locfileid: "64910552"
 1. Откройте Visual Studio Code.
 1. Выберите значок Набор инструментов Teams:::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG" border="true"::: на боковой панели Visual Studio Code.
 1. Выберите **Создать приложение Teams**.
-1. Выберите на вкладке доступных возможностей бот, расширение для обмена сообщениями или вкладку с использованием SharePoint Framework (SPFx). 
+1. Выберите на вкладке доступных возможностей бот, расширение сообщений или вкладку с использованием SharePoint Framework (SPFx). 
 1. Выберите хотя бы один вариант, чтобы начать создание приложения Teams.
 
 ### <a name="create-a-new-teams-app-using-view-samples"></a>Создание нового приложения Teams с помощью образцов представлений
