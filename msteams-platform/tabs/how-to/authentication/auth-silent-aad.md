@@ -1,46 +1,46 @@
 ---
 title: Автоматическая проверка подлинности
-description: Описывает бесшумную проверку подлинности, одно-вход, Azure AD для вкладок
+description: Описывает автоматическую проверку подлинности, процедуру единого входа и Azure AD для вкладок
 ms.topic: conceptual
-ms.localizationpriority: medium
-keywords: Командная проверка подлинности SSO безмолвная вкладка Azure AD
-ms.openlocfilehash: e59b7ff30a0659b670796c56b97eda437f907739
-ms.sourcegitcommit: b9af51e24c9befcf46945400789e750c34723e56
-ms.translationtype: MT
+ms.localizationpriority: high
+keywords: Вкладка Azure AD "Единый вход для автоматической проверки подлинности Teams"
+ms.openlocfilehash: 699582414a4699a69519e41232e4354d8125337b
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62821572"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111649"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
 > [!IMPORTANT]
-> Поддержка и разработка Microsoft для библиотеки проверки подлинности Active Directory (ADAL), включая исправления безопасности, заканчивается **30 июня 2022 г**. Обновите приложения, чтобы использовать Библиотеку проверки подлинности Microsoft (MSAL), чтобы продолжить получать поддержку. См [. в приложении Migrate to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
+> Поддержка и разработка библиотек проверки подлинности Active Directory (ADAL) со стороны Майкрософт, включая исправления в области безопасности, заканчивается **30 июня 2022 г**. Обновите приложения для использования библиотеки проверки подлинности Майкрософт (MSAL), чтобы продолжить получать поддержку. См. [Перенос приложений в библиотеку проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-migration).
 
 > [!NOTE]
-> Чтобы проверка подлинности работала для вкладки на мобильных клиентах, убедитесь, что вы используете Teams версии JavaScript SDK 1.4.1 или более поздней версии.
+> Для проверки подлинности на вкладке на мобильных клиентах убедитесь, что вы используете пакет SDK для JavaScript Teams версии 1.4.1 или более поздней.
 
-Бесшумная проверка подлинности в Azure AD минимизирует количество случаев ввода учетных данных пользователем путем тихого обновления маркера проверки подлинности. Для верной поддержки единого входного знака см. [документацию по SSO](~/tabs/how-to/authentication/auth-aad-sso.md).
+Автоматическая проверка подлинности в Azure AD минимизирует количество вводов учетных данных пользователем путем незаметного обновления маркера проверки подлинности. Сведения о поддержке единого входа см. в [документации по единому входу](~/tabs/how-to/authentication/auth-aad-sso.md).
 
-Чтобы сохранить клиентскую сторону кода, используйте библиотеку проверки подлинности [Azure AD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript для получения маркера доступа Microsoft Azure Active Directory Azure AD. Если пользователь недавно подписался, он не видит диалоговое окно всплывающее окно.
+Чтобы сохранить код на стороне клиента, используйте [библиотеку проверки подлинности Azure AD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript, чтобы автоматически получить маркер доступа Microsoft Azure Active Directory (Azure AD). Если пользователь недавно выполнил вход, всплывающее диалоговое окно не отображается.
 
-Хотя библиотека проверки подлинности Active Directory оптимизирована для приложений AngularJS, она также работает с одно-страницными приложениями JavaScript (SPA).
+Хотя библиотека проверки подлинности Active Directory оптимизирована для приложений AngularJS, она также работает с одностраничными приложениями (SPA) JavaScript.
 
 > [!NOTE]
-> В настоящее время бесшумная проверка подлинности работает только для вкладок. Он не работает при входе с бота.
+> В настоящее время автоматическая проверка подлинности работает только для вкладок. Она не работает при входе из бота.
 
-## <a name="how-silent-authentication-works"></a>Как работает бесшумная проверка подлинности
+## <a name="how-silent-authentication-works"></a>Принцип работы автоматической проверки подлинности
 
-Библиотека проверки подлинности Active Directory создает скрытый поток неявных грантов для OAuth 2.0. Но библиотека указывает, поэтому `prompt=none`Azure AD не отображает страницу входного знака. Взаимодействие с пользователем может потребоваться, если пользователю необходимо войти или предоставить доступ к приложению. При необходимости взаимодействия с пользователем Azure AD возвращает ошибку, которую библиотека сообщает вашему приложению. При необходимости приложение теперь может отображать параметр входной знак.
+Библиотека проверки подлинности Active Directory создает скрытый iframe для потока неявного предоставления OAuth 2.0. При этом библиотека указывает `prompt=none`, так что Azure AD не отображает страницу входа. Взаимодействие с пользователем может потребоваться, если пользователю необходимо войти или предоставить доступ к приложению. Если требуется взаимодействие с пользователем, Azure AD возвращает ошибку, которую библиотека сообщает приложению. При необходимости в приложении теперь можно отобразить параметр входа.
 
-## <a name="how-to-do-silent-authentication"></a>Как сделать бесшумную проверку подлинности
+## <a name="how-to-do-silent-authentication"></a>Как выполнить автоматическую проверку подлинности
 
-Код в этой статье поступает из Teams, которое является [Teams проверки подлинности](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs).
+Код, приведенный в этой статье, получен из примера приложения Teams, которое представляет собой [пример узла проверки подлинности Teams](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-auth/nodejs/src/views/tab/silent/silent.hbs).
 
-[Инициализуйте](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) настраиваемую вкладку бесшумной и простой проверки подлинности с помощью Azure AD и выполните инструкции по запуску образца на локальном компьютере.
+[Инициируйте автоматическую и простую настраиваемую вкладку проверки подлинности с помощью Azure AD](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group-config-page-auth/csharp) и следуйте инструкциям по запуску примера на вашем локальном компьютере.
 
-### <a name="include-and-configure-active-directory-authentication-library"></a>Включить и настроить библиотеку проверки подлинности Active Directory
+### <a name="include-and-configure-active-directory-authentication-library"></a>Включение и настройка библиотеки проверки подлинности Active Directory
 
-Включите библиотеку проверки подлинности Active Directory на страницах вкладок и настройте библиотеку с помощью идентификации клиента и URL-адрес перенаправления:
+Включите библиотеку проверки подлинности Active Directory на страницах вкладок и настройте ее с помощью идентификатора клиента и URL-адреса перенаправления:
 
 ```html
 <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.15/js/adal.min.js" integrity="sha384-lIk8T3uMxKqXQVVfFbiw0K/Nq+kt1P3NtGt/pNexiDby2rKU6xnDY8p16gIwKqgI" crossorigin="anonymous"></script>
@@ -58,7 +58,7 @@ ms.locfileid: "62821572"
 
 ### <a name="get-the-user-context"></a>Получить пользовательский контекст
 
-На странице контента вкладки позвоните `microsoftTeams.getContext()` , чтобы получить подсказку для текущего пользователя. Подсказка используется в качестве вызова `loginHint` в Azure AD.
+На странице содержимого вкладки вызовите `microsoftTeams.getContext()`, чтобы получить подсказку для входа для текущего пользователя. Подсказка используется в качестве `loginHint` в вызове Azure AD.
 
 ```javascript
 // Set up extra query parameters for Active Directory Authentication Library
@@ -73,9 +73,9 @@ if (loginHint) {
 
 ### <a name="authenticate"></a>Проверка подлинности
 
-Если в библиотеке проверки подлинности Active Directory имеется кэширование неиспользваемой маркерной символики для пользователя, используйте маркер. Поочередно вызов `acquireToken(resource, callback)` для получения маркера. Библиотека вызывает функцию вызова с запрашиваемого маркера или создает ошибку в случае сбой проверки подлинности.
+Если в библиотеке проверки подлинности Active Directory есть неиспользуемый маркер, кэшированный для пользователя, используйте этот маркер. Как вариант, вызовите `acquireToken(resource, callback)` для автоматического получения маркера. Библиотека вызывает функцию обратного вызова с запрошенным маркером или создает ошибку в случае сбоя проверки подлинности.
 
-Если вы получаете ошибку в функции вызова, отобразить и использовать явный параметр вход.
+Если в функции обратного вызова возникает ошибка, отобразите и используйте параметр явного входа.
 
 ```javascript
 let authContext = new AuthenticationContext(config); // from Active Directory Authentication Library
@@ -106,11 +106,11 @@ authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenTy
 });
 ```
 
-### <a name="process-the-return-value"></a>Обработка возвращаемой стоимости
+### <a name="process-the-return-value"></a>Обработка возвращаемого значения
 
-Библиотека проверки подлинности Active Directory сравниет результат Azure AD `AuthenticationContext.handleWindowCallback(hash)` с помощью вызова на странице вызова для входов.
+Библиотека проверки подлинности Active Directory анализирует результат Azure AD путем вызова `AuthenticationContext.handleWindowCallback(hash)` на странице обратного вызова для входа.
 
-Убедитесь, что у вас есть допустимый пользователь и позвоните `microsoftTeams.authentication.notifySuccess()` `microsoftTeams.authentication.notifyFailure()` или сообщить о состоянии на главную страницу контента вкладки.
+Убедитесь, что у вас есть подходящий пользователь, и вызовите `microsoftTeams.authentication.notifySuccess()` или `microsoftTeams.authentication.notifyFailure()`, чтобы сообщить о состоянии на главной странице содержимого вкладки.
 
 ```javascript
 if (authContext.isCallback(window.location.hash)) {
@@ -125,12 +125,12 @@ if (authContext.isCallback(window.location.hash)) {
 }
 ```
 
-### <a name="handle-the-sign-out-flow"></a>Обработка потока регистрации
+### <a name="handle-the-sign-out-flow"></a>Обработка потока выходов
 
-Используйте следующий код для обработки потока регистрации в проверке подлинности Azure AD:
+Используйте следующий код для обработки потока выходов при проверке подлинности Azure AD:
 
 > [!NOTE]
-> При входе из Teams или бота текущий сеанс очищается.
+> При выходе из вкладки Teams или из бота текущий сеанс сбрасывается.
 
 ```javascript
 function logout() {
@@ -139,7 +139,7 @@ window.location.href = "@Url.Action("<<Action Name>>", "<<Controller Name>>")";
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Настройка поставщиков удостоверений для использования Azure AD](../../../concepts/authentication/configure-identity-provider.md)
-* [Знать о Библиотеке проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-overview)
+* [Сведения о библиотеке проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-overview)
