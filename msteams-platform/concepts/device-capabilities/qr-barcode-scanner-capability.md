@@ -1,40 +1,40 @@
 ---
 title: Интеграция функции сканирования QR- или штрихкода
 author: Rajeshwari-v
-description: Использование SDK Teams JavaScript для использования возможностей сканера QR или штрихкодов
-keywords: QR-код qr code qrcode barcode сканера штрихкода камеры позволяет родных разрешений устройства
-ms.localizationpriority: medium
+description: Использование клиентского пакета SDK Teams для JavaScript для использования возможностей сканера QR или штрихкода
+keywords: камера мультимедиа QR-код qrcode штрих-код штрихкод сканер сканировать возможности встроенные устройство разрешения
+ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 799306024980a9bb4e7a44b5ca654865303dec24
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
-ms.translationtype: MT
+ms.openlocfilehash: 32d707202a28789a720dd83905b462451533ff55
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452958"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111789"
 ---
 # <a name="integrate-qr-or-barcode-scanner-capability"></a>Интеграция функции сканирования QR- или штрихкода
 
-Штрихкод — это метод представления данных в визуальной и машинной форме. Штрихкод содержит сведения о продукте, например типе, размере, изготовителе и стране происхождения в виде баров и пробелов. Код читается с помощью оптического сканера на вашей родной камере устройства. Для более насыщенной совместной работы можно интегрировать функцию сканера QR или штрихкода, предоставляемую в платформе Teams с Teams приложением.
+Штрихкод — это метод представления данных в визуальной и машиночитаемой форме. Штрихкод содержит сведения о продукте, такую как тип, размер, производитель и страна происхождения в виде штрихов и пробелов. Код считывается с помощью оптического сканера на встроенной камере устройства. Для расширения возможностей совместной работы можно интегрировать возможности сканера QR или штрихкода, предоставляемые на платформе Teams, с вашим приложением Teams.
 
-Вы можете [Microsoft Teams клиентской SDK JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true), которая предоставляет средства, необходимые вашему приложению для доступа к возможностям родного [устройства пользователя](native-device-permissions.md). Используйте [API scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) для интеграции возможностей сканера в приложении.
+Вы можете использовать [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true), который предоставляет средства, необходимые приложению для доступа к [собственным функциям местонахождения устройства](native-device-permissions.md) пользователя. Используйте API [scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) для интеграции возможностей сканера в приложение.
 
-## <a name="advantage-of-integrating-qr-or-barcode-scanner-capability"></a>Преимущество интеграции функции сканера QR или штрихкода
+## <a name="advantage-of-integrating-qr-or-barcode-scanner-capability"></a>Преимущества интеграции сканера QR или штрихкода
 
-Ниже следующую возможность интеграции возможностей сканера QR или штрихкодов:
+Ниже приведены преимущества интеграции возможностей сканера QR или штрихкода:
 
-* Интеграция позволяет разработчикам веб-приложений на Teams использовать функции сканирования QR или штрихкодов Teams клиентской SDK JavaScript.
-* С помощью этой функции пользователю необходимо выровнять QR или штрих-код в кадре в центре пользовательского интерфейса сканера, и код автоматически сканируется. Хранимые данные делятся с веб-приложением вызова. Это позволяет избежать неудобств и ошибок, связанных с вводом длинных кодов продуктов или другой соответствующей информации вручную.
+* Интеграция позволяет разработчикам веб-приложений на платформе Teams использовать функции сканирования QR или штрихкода с помощью пакета SDK клиента Teams для JavaScript.
+* С помощью этой функции пользователю нужно только выровнять QR или штрихкод внутри рамки в центре пользовательского интерфейса сканера, и код сканируется автоматически. Сохраненные данные передаются вызывающему веб-приложению. Это позволяет избежать неудобств и человеческих ошибок при вводе длинных кодов продуктов или других важных сведений вручную.
 
-Чтобы интегрировать возможности сканера QR или штрихкода, необходимо обновить файл манифеста приложения и вызвать [API scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) . Для эффективной интеграции необходимо хорошо понимать фрагмент кода для вызова [](#code-snippet) API [scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_), который позволяет использовать родной QR или сканер штрихкодов. API предоставляет ошибку для неподдержаемой стандарта штрихкода.
-Важно ознакомиться с ошибками [ответа API](#error-handling) для обработки ошибок в Teams приложении.
+Чтобы интегрировать возможности сканера QR или штрихкода, необходимо обновить файл манифеста приложения и вызвать API-интерфейс [scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_). Для эффективной интеграции необходимо хорошо понимать [фрагмент кода](#code-snippet) для вызова API [scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_), который позволяет вам использовать собственные возможности сканера QR или штрихкода. API выдает ошибку для неподдерживаемого стандарта штрихкода.
+Важно ознакомиться с [ошибками отклика API](#error-handling) для обработки ошибок в вашем приложении Teams.
 
 > [!NOTE]
-> В настоящее Microsoft Teams поддержка возможностей сканера QR или штрихкодов доступна только для мобильных клиентов.
+> В настоящее время поддержка Microsoft Teams для сканера QR или штрихкода доступна только для мобильных клиентов.
 
-## <a name="update-manifest"></a>Манифест обновления
+## <a name="update-manifest"></a>Изменение манифеста
 
-Обновите [Teams-файл приложения manifest.json](../../resources/schema/manifest-schema.md#devicepermissions), `devicePermissions` добавив свойство и указав `media`. Это позволяет приложению запросить необходимые разрешения у пользователей, прежде чем они начнут использовать функцию сканера QR или штрихкода. Обновление манифеста приложения:
+Обновите файл [manifest.json](../../resources/schema/manifest-schema.md#devicepermissions) своего приложения Teams, добавив свойство `devicePermissions` и указав `media`. Это позволяет приложению запрашивать необходимые разрешения у пользователей, прежде чем они начнут использовать возможности сканера QR или штрихкода. Измените манифест приложения, выполнив следующие шаги.
 
 ``` json
 "devicePermissions": [
@@ -43,48 +43,48 @@ ms.locfileid: "63452958"
 ```
 
 > [!NOTE]
-> Запрос **разрешений** автоматически отображается при Teams API. Дополнительные сведения см. в [запросе разрешений устройств](native-device-permissions.md).
+> Приглашение **Запрос разрешений** автоматически отображается при запуске соответствующего API Teams. Дополнительные сведения см. в статье [Запрос разрешений устройства](native-device-permissions.md).
 
 ## <a name="scanbarcode-api"></a>ScanBarCode API
 
-[API scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) вызывает управление сканером, которое позволяет пользователю сканировать различные типы штрихкода и возвращает результат в качестве строки.
+API [scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_) вызывает элемент управления сканером, который позволяет пользователю сканировать различные типы штрихкодов и возвращает результат в виде строки.
 
-Чтобы настроить функцию сканирования штрихкодов, необязательная конфигурация штрихкода передается в качестве ввода в [API scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_).[](/javascript/api/@microsoft/teams-js/microsoftteams.media.barcodeconfig?view=msteams-client-js-latest&preserve-view=true) Вы можете указать интервал времени сканирования в секундах с помощью `timeOutIntervalInSec`. Его значение по умолчанию — 30 секунд, а максимальное — 60 секунд.
+Чтобы настроить процесс сканирования штрихкода, необязательная [конфигурация штрихкода](/javascript/api/@microsoft/teams-js/microsoftteams.media.barcodeconfig?view=msteams-client-js-latest&preserve-view=true) передается в качестве входных данных в API-интерфейс [scanBarCode](/javascript/api/@microsoft/teams-js/microsoftteams.media?view=msteams-client-js-latest&preserve-view=true#scanBarCode__error__SdkError__decodedText__string_____void__BarCodeConfig_). Вы можете указать интервал времени ожидания сканирования в секундах с помощью `timeOutIntervalInSec`. Его значение по умолчанию — 30 секунд, а максимальное значение — 60 секунд.
 
-**API scanBarCode()** поддерживает следующие типы штрихкодов:
+API **scanBarCode()** поддерживает следующие типы штрихкодов:
 
-| Тип штрихкода | Поддерживается на Android | Поддерживается на iOS |
+| Тип штрихкода | Поддерживается в Android | Поддерживается в iOS |
 | ---------- | ---------- | ------------ |
-| Codebar | Да | Нет |
+| Кодовая панель | Да | Нет |
 | Код 39 | Да | Да |
 | Код 93 | Да | Да |
 | Код 128 | Да | Да |
 | EAN-13 | Да | Да |
 | EAN-8 | Да | Да |
-| ITF | Нет | Да |
-| Код QR | Да | Да |
-| Расширение RSS | Да | Нет |
+| Комиссия за международную транзакцию | Нет | Да |
+| QR-код | Да | Да |
+| Развернутый RSS | Да | Нет |
 | RSS-14 | Да | Нет |
 | UPC-A | Да | Да |
 | UPC-E | Да | Да |
 
-На следующем изображении показана возможность веб-приложения для QR или сканера штрихкодов:
+На следующем изображении показано взаимодействие веб-приложения со сканером QR или штрихкода:
 
-![возможности сканера qr или штрихкодов для веб-приложений](../../assets/images/tabs/qr-barcode-scanner-capability.png)
+![взаимодействие веб-приложения со сканером QR или штрих-кода](../../assets/images/tabs/qr-barcode-scanner-capability.png)
 
 ## <a name="error-handling"></a>Обработка ошибок
 
-Необходимо обеспечить надлежащее обработку этих ошибок в Teams приложении. В следующей таблице перечислены коды ошибок и условия, при которых создаются ошибки:
+Обеспечьте правильную обработку этих ошибок в своем приложении Teams. В следующей таблице перечислены коды ошибок и условия, при которых возникают ошибки.
 
-|Код ошибки |  Имя ошибки     | Условие|
+|Код ошибки |  Название ошибки     | Условие|
 | --------- | --------------- | -------- |
 | **100** | NOT_SUPPORTED_ON_PLATFORM | API не поддерживается на текущей платформе.|
-| **500** | INTERNAL_ERROR | При выполнении необходимой операции встречаются внутренние ошибки.|
-| **1000** | PERMISSION_DENIED |Пользователю отказано в разрешении.|
-| **3000** | NO_HW_SUPPORT | Оборудование не поддерживает эту возможность.|
-| **4000** | INVALID_ARGUMENTS | Один или несколько аргументов являются недействительными.|
+| **500** | INTERNAL_ERROR | При выполнении необходимой операции возникла внутренняя ошибка.|
+| **1000** | PERMISSION_DENIED |Разрешение отклонено пользователем.|
+| **3000** | NO_HW_SUPPORT | Базовое оборудование не поддерживает эту возможность.|
+| **4000** | INVALID_ARGUMENTS | Один или несколько аргументов недопустимы.|
 | **8000** | USER_ABORT |Пользователь прерывает операцию.|
-| **8001** | OPERATION_TIMED_OUT | Не удалось обнаружить штрих-код в заданный интервал времени.|
+| **8001** | OPERATION_TIMED_OUT | Не удалось обнаружить штрихкод в указанный интервал времени.|
 | **9000** | OLD_PLATFORM | Код платформы устарел и не реализует этот API.|
 
 ## <a name="code-snippet"></a>Фрагмент кода
@@ -110,5 +110,5 @@ microsoftTeams.media.scanBarCode((error: microsoftTeams.SdkError, decodedText: s
 ## <a name="see-also"></a>См. также
 
 * [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
-* [Интеграция возможностей расположения в Teams](location-capability.md)
-* [Интеграция выборщика людей в Teams](people-picker-capability.md)
+* [Интеграция функций местонахождения](location-capability.md)
+* [Интеграция средства выбора людей в Teams](people-picker-capability.md)
