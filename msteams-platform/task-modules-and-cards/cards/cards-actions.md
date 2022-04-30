@@ -1,19 +1,19 @@
 ---
 title: Добавление действий карточек в бот
 description: Описание действий карточек в Microsoft Teams и их использования в ботах
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.topic: conceptual
 keywords: teams действия карточек боты
-ms.openlocfilehash: 12100ca05d8e4ff4f68c934bc82e1f078dd0210e
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
-ms.translationtype: MT
+ms.openlocfilehash: 7650ec5f3b027396226f8250aa353d48e8c9e0f3
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103911"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111579"
 ---
 # <a name="card-actions"></a>Действия карточек
 
-Карточки, используемые ботами и расширениями сообщений в Teams поддерживают следующие типы действий[`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards):
+Карточки, используемые ботами и расширениями сообщений в Teams, поддерживают следующие типы действий [`CardAction`](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#process-events-within-rich-cards):
 
 > [!NOTE]
 > Действия `CardAction` отличаются от `potentialActions` для карточек соединителей Office 365 при их использовании из соединителей.
@@ -23,7 +23,7 @@ ms.locfileid: "65103911"
 | `openUrl` | Открывает URL-адрес в браузере по умолчанию. |
 | `messageBack` | Отправляет боту сообщение и полезные данные от пользователя, нажавшего кнопку или коснувшегося карточки. Отправляет отдельное сообщение в поток чата. |
 | `imBack`| Отправляет боту сообщение от пользователя, нажавшего кнопку или коснувшегося карточки. Это сообщение от пользователя боту отображается для всех участников беседы. |
-| `invoke` | Отправляет боту сообщение и полезные данные от пользователя, нажавшего кнопку или коснувшегося карточки. Это сообщение не отображается. |
+| `invoke` | Отправляет сообщение и полезные данные боту от пользователя, который выбрал кнопку или коснулся карты. Это невидимое сообщение. |
 | `signin` | Инициирует поток OAuth, позволяя ботам подключаться к защищенным службам. |
 
 > [!NOTE]
@@ -31,7 +31,7 @@ ms.locfileid: "65103911"
 >* Teams не поддерживает типы `CardAction`, не указанные в предыдущей таблице.
 >* Teams не поддерживает свойство `potentialActions`.
 >* Действия с карточками отличаются от [рекомендуемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в Bot Framework или службе Azure Bot. Рекомендуемые действия не поддерживаются в Microsoft Teams. Если вы хотите, чтобы в сообщении бота Teams появлялись кнопки, используйте карточку.
->* Если вы используете действие карточки в составе расширения сообщения, действия не будут работать до тех пор, пока карточка не будет отправлена в канал. Действия не работают, пока карточка находится в окне составления сообщения.
+>* Если вы используете действие карточки как часть расширения сообщений, действия не будут работать, пока карточка не будет отправлена ​​в канал. Действия не работают, пока карточка находится в окне составления сообщения.
 
 ## <a name="action-type-openurl"></a>Тип действия openUrl
 

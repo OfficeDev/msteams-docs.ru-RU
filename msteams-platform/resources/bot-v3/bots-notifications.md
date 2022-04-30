@@ -1,59 +1,59 @@
 ---
 title: Обработка событий бота
-description: Описывает, как обрабатывать события в ботах для Microsoft Teams
-keywords: события командных ботов
+description: Описание способа обработки событий в ботах для Microsoft Teams
+keywords: события ботов Teams
 ms.date: 05/20/2019
 ms.topic: how-to
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: 89d5bd3d1fb13961822cbb261bf25b5ca40ead34
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
-ms.translationtype: MT
+ms.openlocfilehash: 3b077ce433032d98be66eb9113840701c2a74163
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452734"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111782"
 ---
 # <a name="handle-bot-events-in-microsoft-teams"></a>Обработка событий бота в Microsoft Teams
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-Microsoft Teams отправляет уведомления боту об изменениях или событиях, которые происходят в сферах, где ваш бот активен. Эти события можно использовать для запуска логики службы, например следующих:
+Microsoft Teams отправляет вашему боту уведомления об изменениях или событиях в тех областях, где этот бот активен. Эти события можно использовать для активации логики службы, например:
 
-* Запуск приветствия при добавлении бота в команду.
-* Сведения о групповом запросе и кэше при добавлении бота в групповой чат.
-* Обновление кэшных сведений о членстве в команде или сведениях о канале.
-* Удалите кэшные сведения для группы, если бот удален.
-* Когда сообщение бота нравится пользователю.
+* Отправка приветственного сообщения при добавлении бота в команду.
+* Запрос и кэширование сведений о группе при добавлении бота в групповой чат.
+* Обновление кэшированных сведений об участии в команде или сведений о канале.
+* Удаление кэшированных сведений для команды, если бот удален.
+* Когда пользователь ставит сообщению бота отметку "Нравится".
 
-Каждое событие бота отправляется в качестве `Activity` объекта, в котором `messageType` определяется, какая информация находится в объекте. Для сообщений типа `message`см. [в рублях Отправка и получение сообщений](~/resources/bot-v3/bot-conversations/bots-conversations.md).
+Каждое событие бота отправляется в виде объекта `Activity`, в котором `messageType` определяет, какие сведения содержатся в объекте. Сведения о сообщениях типа `message` см. в статье [Отправка и получение сообщений](~/resources/bot-v3/bot-conversations/bots-conversations.md).
 
-Teams и групповые события, `conversationUpdate` которые обычно запускаются с типа, `channelData` имеют дополнительные сведения о событиях Teams, переданные в рамках объекта, `channelData` и поэтому обработник событий должен запрашивать полезной нагрузки для метаданных `eventType` Teams и дополнительных событий.
+События Teams и групп, обычно запускаемые типом `conversationUpdate`, содержат дополнительные сведения о событиях Teams, которые передаются как часть объекта `channelData`. Поэтому ваш обработчик событий должен запрашивать полезные данные `channelData` для `eventType` Teams и дополнительные метаданные, связанные с событиями.
 
-В следующей таблице перечислены события, которые бот может получить и принять меры.
+В следующей таблице перечислены события, которые бот может получать и с которыми может выполнять действия.
 
-|Тип|Объект полезной нагрузки|Teams eventType |Описание|Область|
+|Тип|Объект полезных данных|Teams eventType |Описание|Область|
 |---|---|---|---|---|
-| `conversationUpdate` |`membersAdded`| `teamMemberAdded`|[Член, добавленный в команду](#team-member-or-bot-addition)| все |
-| `conversationUpdate` |`membersRemoved`| `teamMemberRemoved`|[Участник был удален из группы](#team-member-or-bot-removed)| `groupChat` & `team` |
-| `conversationUpdate` | |`teamRenamed`| [Команда была переименована](#team-name-updates)| `team` |
-| `conversationUpdate` | |`channelCreated`| [Создан канал](#channel-updates)|`team` |
-| `conversationUpdate` | |`channelRenamed`| [Канал был переименован](#channel-updates)|`team` |
-| `conversationUpdate` | |`channelDeleted`| [Канал был удален](#channel-updates)|`team` |
+| `conversationUpdate` |`membersAdded`| `teamMemberAdded`|[Участник добавлен в команду](#team-member-or-bot-addition)| все |
+| `conversationUpdate` |`membersRemoved`| `teamMemberRemoved`|[Участник удален из команды](#team-member-or-bot-removed)| `groupChat` & `team` |
+| `conversationUpdate` | |`teamRenamed`| [Команда переименована](#team-name-updates)| `team` |
+| `conversationUpdate` | |`channelCreated`| [Канал создан](#channel-updates)|`team` |
+| `conversationUpdate` | |`channelRenamed`| [Канал переименован](#channel-updates)|`team` |
+| `conversationUpdate` | |`channelDeleted`| [Канал удален](#channel-updates)|`team` |
 | `messageReaction` |`reactionsAdded`|| [Реакция на сообщение бота](#reactions)| все |
-| `messageReaction` |`reactionsRemoved`|| [Реакция, удаленная из сообщения бота](#reactions)| все |
+| `messageReaction` |`reactionsRemoved`|| [Реакция удалена из сообщения бота](#reactions)| все |
 
-## <a name="team-member-or-bot-addition"></a>Добавление члена команды или бота
+## <a name="team-member-or-bot-addition"></a>Добавление участника команды или бота
 
-Событие [`conversationUpdate`](/azure/bot-service/dotnet/bot-builder-dotnet-activities?view=azure-bot-service-3.0#conversationupdate&preserve-view=true) отправляется вашему боту, когда он получает сведения об обновлениях членства для команд, в которых оно было добавлено. Бот также получает обновление при первом добавлении в личную беседу. Обратите внимание, что пользовательские сведения (`Id`) являются уникальными для вашего бота и могут быть кэшными для дальнейшего использования службой, например отправки сообщения конкретному пользователю.
+Событие [`conversationUpdate`](/azure/bot-service/dotnet/bot-builder-dotnet-activities?view=azure-bot-service-3.0#conversationupdate&preserve-view=true) отправляется боту, когда он получает сведения об обновлении участия в командах, куда он добавлен. Бот также получает обновление при первом добавлении в личную беседу. Обратите внимание, что сведения о пользователе (`Id`) являются уникальными для бота и могут кэшироваться для дальнейшего использования службой, например для отправки сообщения конкретному пользователю.
 
-### <a name="bot-or-user-added-to-a-team"></a>Бот или пользователь, добавленный в команду
+### <a name="bot-or-user-added-to-a-team"></a>Бот или пользователь добавлен в команду
 
-Событие `conversationUpdate` с объектом `membersAdded` в полезной нагрузке отправляется при добавлении бота в команду или в команду, в которой был добавлен бот. Microsoft Teams также добавляется `eventType.teamMemberAdded` в `channelData` объект.
+Событие `conversationUpdate` с объектом `membersAdded` в полезных данных отправляется при добавлении бота в команду или при добавлении нового пользователя в команду, в которую был добавлен бот. Microsoft Teams также добавляет `eventType.teamMemberAdded` в объект `channelData`.
 
-Так как это событие отправляется в обоих случаях, `membersAdded` необходимо разсмеять объект, чтобы определить, является ли добавление пользователем или самим ботом. В последнем случае лучше всего отправлять приветствие на канал, [](~/resources/bot-v3/bot-conversations/bots-conv-channel.md#best-practice-welcome-messages-in-teams) чтобы пользователи могли понимать функции, которые предоставляет бот.
+Так как это событие отправляется в обоих случаях, необходимо проанализировать объект `membersAdded`, чтобы определить, добавляется ли пользователь или бот. В последнем случае рекомендуется отправить [приветственное сообщение](~/resources/bot-v3/bot-conversations/bots-conv-channel.md#best-practice-welcome-messages-in-teams) в канал, чтобы пользователи могли понять функции, которые предоставляет ваш бот.
 
-#### <a name="example-code-checking-whether-bot-was-the-added-member"></a>Пример кода. Проверка того, является ли бот добавленным участником
+#### <a name="example-code-checking-whether-bot-was-the-added-member"></a>Пример кода: проверка того, является ли бот добавленным участником
 
 ##### <a name="net"></a>.NET
 
@@ -132,14 +132,14 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-### <a name="user-added-to-a-meeting"></a>Пользователь, добавленный к собранию
+### <a name="user-added-to-a-meeting"></a>Пользователь добавлен в собрание
 
-Событие `conversationUpdate` с объектом `membersAdded` в полезной нагрузке отправляется при добавлении пользователя на закрытое запланированное собрание. Сведения о событии будут отправлены, даже если анонимные пользователи присоединятся к собранию.
+Событие `conversationUpdate` с объектом `membersAdded` в полезных данных отправляется при добавлении пользователя в закрытое запланированное собрание. Сведения о событии отправляются даже при присоединении анонимных пользователей к собранию.
 
 > [!NOTE]
 >
->* При добавлении анонимного пользователя в собрание объект полезной нагрузки membersAdded не имеет `aadObjectId` поля.
->* Когда анонимный пользователь добавляется в собрание, `from` объект в полезной нагрузке всегда имеет id организатора собрания, даже если анонимный пользователь был добавлен другим презентером.
+>* При добавлении анонимного пользователя в собрание объект полезных данных membersAdded не содержит поле `aadObjectId`.
+>* При добавлении анонимного пользователя в собрание объект `from` в полезных данных всегда содержит идентификатор организатора собрания, даже если анонимный пользователь был добавлен другим выступающим.
 
 #### <a name="schema-example-user-added-to-meeting"></a>Пример схемы: пользователь добавлен в собрание
 
@@ -182,12 +182,12 @@ bot.on('conversationUpdate', (msg) => {
 
 ```
 
-### <a name="bot-added-for-personal-context-only"></a>Бот, добавленный только для личного контекста
+### <a name="bot-added-for-personal-context-only"></a>Бот добавлен только для личного контекста
 
-Ваш бот получает с, `conversationUpdate` `membersAdded` когда пользователь добавляет его непосредственно для личного чата. В этом случае полезной нагрузки, получаемой ботом, объект не `channelData.team` содержится. Вы должны использовать это в качестве фильтра, если вы хотите, чтобы ваш бот предложил другое приветствие [в зависимости](~/resources/bot-v3/bot-conversations/bots-conv-personal.md#best-practice-welcome-messages-in-personal-conversations) от области.
+Бот получает `conversationUpdate` с `membersAdded`, когда пользователь добавляет его непосредственно для личного чата. В этом случае полезные данные, получаемые ботом, не содержат объект `channelData.team`. Это следует использовать в качестве фильтра, если вы хотите, чтобы ваш бот предлагал другое [приветственное сообщение](~/resources/bot-v3/bot-conversations/bots-conv-personal.md#best-practice-welcome-messages-in-personal-conversations) в зависимости от области.
 
 > [!NOTE]
-> Для личных масштабных ботов `conversationUpdate` боты получают событие несколько раз, даже если бот удален и повторно добавлен. Для разработки и тестирования может оказаться полезным добавить функцию помощника, которая позволит полностью сбросить бот. Дополнительные [ сведения о](https://github.com/OfficeDev/microsoft-teams-sample-complete-node/blob/master/src/middleware/SimulateResetBotChat.ts) реализацииNode.js или [C#](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp/blob/master/template-bot-master-csharp/src/controllers/MessagesController.cs#L238) примере.
+> Для личной области ваш бот будет получать событие `conversationUpdate` несколько раз, даже если бот удален и добавлен повторно. Для разработки и тестирования может оказаться полезным добавить вспомогательную функцию, которая позволит полностью сбросить бот. Дополнительные сведения о реализации этого см. в [примере Node.js](https://github.com/OfficeDev/microsoft-teams-sample-complete-node/blob/master/src/middleware/SimulateResetBotChat.ts) или [примере C#](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp/blob/master/template-bot-master-csharp/src/controllers/MessagesController.cs#L238).
 
 #### <a name="schema-example-bot-added-to-personal-context"></a>Пример схемы: бот добавлен в личный контекст
 
@@ -226,11 +226,11 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-## <a name="team-member-or-bot-removed"></a>Удален член команды или бот
+## <a name="team-member-or-bot-removed"></a>Удален участник команды или бот
 
-Событие `conversationUpdate` с объектом `membersRemoved` в полезной нагрузке отправляется, когда бот удаляется из группы или пользователь удаляется из команды, в которой был добавлен бот. Microsoft Teams также добавляется `eventType.teamMemberRemoved` в `channelData` объект. Как и в объекте `membersAdded` , `membersRemoved` необходимо размазить объект для ID приложения вашего бота, чтобы определить, кто был удален.
+Событие `conversationUpdate` с объектом `membersRemoved` в полезных данных отправляется при удалении бота из команды или при удалении пользователя из команды, в которую был добавлен бот. Microsoft Teams также добавляет `eventType.teamMemberRemoved` в объект `channelData`. Как и в случае с объектом `membersAdded`, необходимо проанализировать объект `membersRemoved` на наличие идентификатора приложения бота, чтобы определить объект удаления.
 
-### <a name="schema-example-team-member-removed"></a>Пример схемы: удален член команды
+### <a name="schema-example-team-member-removed"></a>Пример схемы: удален участник команды
 
 ```json
 {
@@ -270,14 +270,14 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-### <a name="user-removed-from-a-meeting"></a>Пользователь, удаленый из собрания
+### <a name="user-removed-from-a-meeting"></a>Пользователь удален из собрания
 
-Событие `conversationUpdate` с объектом `membersRemoved` в полезной нагрузке отправляется при удалении пользователя из закрытого запланированного собрания. Сведения о событии будут отправлены, даже если анонимные пользователи присоединятся к собранию.
+Событие `conversationUpdate` с объектом `membersRemoved` в полезных данных отправляется при удалении пользователя из закрытого запланированного собрания. Сведения о событии отправляются даже при присоединении анонимных пользователей к собранию.
 
 > [!NOTE]
 >
->* Когда анонимный пользователь удаляется из собрания, объект полезной нагрузки membersRemoved не имеет `aadObjectId` поля.
->* Когда анонимный пользователь удаляется из собрания, `from` объект в полезной нагрузке всегда имеет id организатора собрания, даже если анонимный пользователь был удален другим презентщиком.
+>* При удалении анонимного пользователя из собрания объект полезных данных membersRemoved не содержит поле `aadObjectId`.
+>* При удалении анонимного пользователя из собрания объект `from` в полезных данных всегда содержит идентификатор организатора собрания, даже если анонимный пользователь был удален другим выступающим.
 
 #### <a name="schema-example-user-removed-from-meeting"></a>Пример схемы: пользователь удален из собрания
 
@@ -318,14 +318,14 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-## <a name="team-name-updates"></a>Обновления имени команды
+## <a name="team-name-updates"></a>Обновление имени команды
 
 > [!NOTE]
-> Нет функций для запроса всех имен команд, и имя команды не возвращается в полезной нагрузке из других событий.
+> Нет функций для запроса имен всех команд, и имя команды не возвращается в полезных данных из других событий.
 
-Ваш бот уведомлен о переименовании команды, в которая он находится. Он получает событие `conversationUpdate` в `eventType.teamRenamed` объекте `channelData` . Обратите внимание, что уведомлений о создании или удалении группы нет, так как боты существуют только в составе групп и не имеют видимости за пределами области, в которую они были добавлены.
+Бот получает уведомление при переименовании команды, в которой он находится. Он получает событие `conversationUpdate` с `eventType.teamRenamed` в объекте `channelData`. Обратите внимание, что уведомления о создании или удалении команды отсутствуют, так как боты существуют только в составе команд и не обладают видимостью за пределами области, в которую они были добавлены.
 
-### <a name="schema-example-team-renamed"></a>Пример схемы: переименована команда
+### <a name="schema-example-team-renamed"></a>Пример схемы: команда переименована
 
 ```json
 { 
@@ -360,17 +360,17 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-## <a name="channel-updates"></a>Обновления канала
+## <a name="channel-updates"></a>Обновление каналов
 
-Ваш бот уведомлен, когда канал создается, переименовываются или удаляются в команде, в которой он был добавлен. Снова событие `conversationUpdate` получено, и `channelData.eventType` Teams определенного события отправляется в составе объекта, `channel.id` где данные канала являются GUID для канала, `channel.name` и содержит имя самого канала.
+Бот получает уведомление при создании, переименовании или удалении канала в команде, в которую он был добавлен. И вновь будет получено событие `conversationUpdate` и отправлен идентификатор события, связанный с Teams, как часть объекта `channelData.eventType`. При этом параметр `channel.id` данных канала является GUID канала, а `channel.name` содержит имя самого канала.
 
-События канала следуют следующим образом:
+Ниже перечислены события канала.
 
-* **channelCreated**&emsp; Пользователь добавляет новый канал в команду.
-* **ChannelRenamed**&emsp; Пользователь переименовывает существующий канал.
-* **channelDeleted**&emsp; Пользователь удаляет канал.
+* **channelCreated**&emsp;. Пользователь добавляет новый канал в команду.
+* **channelRenamed**&emsp;. Пользователь переименовывает существующий канал.
+* **channelDeleted**&emsp;. Пользователь удаляет канал.
 
-### <a name="full-schema-example-channelcreated"></a>Полный пример схемы: channelCreated
+### <a name="full-schema-example-channelcreated"></a>Пример полной схемы: channelCreated
 
 ```json
 {
@@ -408,7 +408,7 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-### <a name="schema-excerpt-channeldata-for-channelrenamed"></a>Выдержка схемы: channelData для каналаRenamed
+### <a name="schema-excerpt-channeldata-for-channelrenamed"></a>Фрагмент схемы: channelData для channelRenamed
 
 ```json
 ⋮
@@ -428,7 +428,7 @@ bot.on('conversationUpdate', (msg) => {
 ⋮
 ```
 
-### <a name="schema-excerpt-channeldata-for-channeldeleted"></a>Выдержка схемы: channelData для channelDeleted
+### <a name="schema-excerpt-channeldata-for-channeldeleted"></a>Фрагмент схемы: channelData для channelDeleted
 
 ```json
 ⋮
@@ -450,9 +450,9 @@ bot.on('conversationUpdate', (msg) => {
 
 ## <a name="reactions"></a>Реакции
 
-Событие `messageReaction` отправляется, когда пользователь добавляет или удаляет свою реакцию на сообщение, которое изначально было отправлено вашим ботом. `replyToId` содержит ID конкретного сообщения.
+Событие `messageReaction` отправляется, когда пользователь добавляет или удаляет свою реакцию на сообщение, изначально отправленное ботом. `replyToId` содержит идентификатор конкретного сообщения.
 
-### <a name="schema-example-a-user-likes-a-message"></a>Пример схемы: пользователю нравится сообщение
+### <a name="schema-example-a-user-likes-a-message"></a>Пример схемы: пользователь ставит отметку "Нравится" для сообщения
 
 ```json
 {
@@ -494,7 +494,7 @@ bot.on('conversationUpdate', (msg) => {
 }
 ```
 
-### <a name="schema-example-a-user-un-likes-a-message"></a>Пример схемы: пользователю не нравится сообщение
+### <a name="schema-example-a-user-un-likes-a-message"></a>Пример схемы: пользователь удаляет отметку "Нравится" для сообщения
 
 ```json
 {
