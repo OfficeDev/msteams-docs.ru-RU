@@ -1,55 +1,55 @@
 ---
-title: Добавление ресурсов в Teams приложения
+title: Добавление ресурсов в приложения Teams
 author: MuyangAmigo
-description: Описывает добавление ресурсов Teams набор средств
+description: Описывает добавление ресурсов для набор средств Teams
 ms.author: zhany
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 87420b5e2b133de32b8c27a4a8d34a90072a3c76
-ms.sourcegitcommit: c66da76fb766df6270095265e1da8c49a3afd195
-ms.translationtype: MT
+ms.openlocfilehash: d2377dae24c26679125d9d50b354b7e9f549be31
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62435826"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111859"
 ---
-# <a name="add-cloud-resources-to-your-teams-app"></a>Добавление облачных ресурсов в Teams приложение
+# <a name="add-cloud-resources-to-your-teams-app"></a>Добавление облачных ресурсов в приложение Teams
 
-TeamsFx помогает в предоставлении облачных ресурсов для размещения приложений. Кроме того, можно дополнительно добавить облачные ресурсы, которые подходят для разработки.
+TeamsFx помогает подготавливать облачные ресурсы для размещения приложения. Также можно добавить облачные ресурсы, необходимые для разработки.
 
 ## <a name="prerequisite"></a>Предварительное условие
 
-[Установка Teams набор средств](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии v3.0.0+.
+[Установите набор средств Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии не ниже 3.0.0.
 
 > [!TIP]
-> Убедитесь, что Teams приложения в Visual Studio Code.
+> Убедитесь, что у вас есть проект приложения Teams в Visual Studio Code.
 
-## <a name="add-cloud-resources-using-teams-toolkit"></a>Добавление облачных ресурсов с Teams набор средств
+## <a name="add-cloud-resources-using-teams-toolkit"></a>Добавление облачных ресурсов с помощью набор средств Teams
 
 > [!IMPORTANT]
-> Необходимо уложить каждую среду после добавления ресурса.
+> После добавления ресурса необходимо подготовить каждую среду.
 
-1. Откройте **Microsoft Visual Studio код**.
-1. Выберите **Teams набор средств** левой области.
-1. В панели Teams набор средств панели выберите **Добавить облачные ресурсы**:
+1. Откройте **Microsoft Visual Studio Code**.
+1. На панели слева выберите **Набор средств Teams**.
+1. На боковой панели набора средств Teams **Добавить облачные ресурсы**:
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/manual/add cloudresources.png" alt-text="Добавление ресурсов":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/manual/add cloudresources.png" alt-text="Добавьте ресурсы":::
 
-   Вы также можете открыть палитру команд и ввести **Teams: Добавить облачные ресурсы**:
+   Также можно открыть палитру команд и ввести **Teams: добавить облачные ресурсы**:
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/manual/addcloud.png" alt-text="добавление облачных ресурсов":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/manual/addcloud.png" alt-text="добавить облачные ресурсы":::
 
-1. Во всплывающее приложение выберите облачные ресурсы, которые необходимо добавить в проект Teams приложения:
+1. Во всплывающем окне выберите облачные ресурсы, которые нужно добавить в проект приложения Teams:
 
-     :::image type="content" source="../assets/images/teams-toolkit-v2/manual/addresources.png" alt-text="добавление":::
+     :::image type="content" source="../assets/images/teams-toolkit-v2/manual/addresources.png" alt-text="добавить":::
 
-1. Нажмите **OK**.
+1. Нажмите кнопку **ОК**.
 
-Выбранные ресурсы тщательно добавляются в проект.
+Выбранные ресурсы успешно добавлены в проект.
 
-## <a name="add-cloud-resources-using-teamsfx-cli-in-command-window"></a>Добавление облачных ресурсов с помощью CLI TeamsFx в окне команд
+## <a name="add-cloud-resources-using-teamsfx-cli-in-command-window"></a>Добавление облачных ресурсов с помощью командной строки TeamsFx в командном окне
 
-1. Изменение каталога в **каталог проекта**.
+1. Измените каталог на **папку проекта**.
 1. Выполните следующую команду, чтобы добавить в проект различные ресурсы:
 
 |Облачный ресурс|Команда|
@@ -63,30 +63,30 @@ TeamsFx помогает в предоставлении облачных рес
 
 TeamsFx интегрируется со службами Azure для следующих сценариев:
 
-- [Функции Azure](/azure/azure-functions/functions-overview): решение без серверов для удовлетворения требований по запросу, например создание веб-API для Teams приложений.
-- [База SQL Azure](/azure/azure-sql/database/sql-database-paas-overview): платформа в качестве двигателя базы данных службы (PaaS) для хранения данных Teams приложений.
-- [Управление API](/azure/azure-sql/database/sql-database-paas-overview) Azure: шлюз API, который можно использовать для администрирования API, созданных для Teams приложений, и публикации их для использования в других приложениях, например в приложениях Power.
-- [Хранилище ключей Azure](/azure/key-vault/general/overview): защита криптографических ключей и других секретов, используемых облачными приложениями и службами.
+- [Функции Azure](/azure/azure-functions/functions-overview): бессерверное решение для удовлетворения требований по запросу, таких как создание веб-API для серверной части приложений Teams.
+- [База данных SQL Azure](/azure/azure-sql/database/sql-database-paas-overview): ядро СУБД "платформа как услуга" (PaaS), которое служит хранилищем данных приложений Teams.
+- [Управление API Azure](/azure/azure-sql/database/sql-database-paas-overview). шлюз API, который можно использовать для администрирования API, созданных для приложений Teams, и их публикации для использования в других приложениях, например в приложениях Power.
+- [Azure Key Vault](/azure/key-vault/general/overview): защита криптографических ключей и других паролей, используемых облачными приложениями и службами.
 
 ## <a name="add-cloud-resources"></a>Добавление облачных ресурсов
 
-После добавления любого ресурса изменения в проекте будут следующими:
+После добавления любого ресурса в проекте произойдут следующие изменения.
 
-- В Azure.parameter могут быть добавлены новые параметры. {env}.json для предоставления необходимых сведений для предоставления.
-- Новое содержимое добавляется к ARM в `templates/azure` `templates/azure/teamsfx` папке, за исключением файлов в папке для создания добавленных ресурсов Azure.
-- Файлы в папке `templates/azure/teamsfx` регенерированы, чтобы убедиться, что необходимая конфигурация TeamsFx устарела для добавленных ресурсов Azure.
-- `.fx/projectSettings.json` обновляется для отслеживания ресурсов, присутствующих в проекте.
+- В azure.parameter.{env}.json могут быть добавлены новые параметры, чтобы предоставить необходимую информацию для подготовки.
+- Новое содержимое будет добавлено в шаблон ARM в папке `templates/azure`, за исключением файлов в папке `templates/azure/teamsfx`, для создания дополнительных ресурсов Azure.
+- Файлы в папке `templates/azure/teamsfx` будут созданы повторно, чтобы обеспечить актуальность требуемой конфигурации TeamsFx для добавленных ресурсов Azure.
+- `.fx/projectSettings.json` обновляется для отслеживания ресурсов, имеющихся в проекте.
 
-После добавления resouces дополнительные изменения в проекте будут следующими:
+После добавления ресурсов в проекте появятся следующие изменения.
 
 |Ресурсы|Изменения|Описание|
 |---------------|---------------|-----------------------------|
-|Функции Azure|Код шаблона функций Azure добавляется в подмостки с пути `yourProjectFolder/api`</br></br>`launch.json` и `task.json` обновляется в папке `.visual studio code` .| Включает шаблон триггера hello world http в проект.</br></br> Включает необходимые сценарии для Visual Studio Code, которые необходимо выполнять при локальном отключе приложения.|
-|Управление API Azure|Открытый файл спецификации API, добавленный в подмостки с пути `yourProjectFolder/openapi`|Определяет API после публикации, это файл спецификации API.|
+|Функции Azure|Код шаблона функций Azure будет добавлен во вложенную папку с путем `yourProjectFolder/api`</br></br>`launch.json` и `task.json` будут обновлены в папке `.visual studio code`.| Включает в проект шаблон триггера HTTP hello world.</br></br> Включает необходимые сценарии для Visual Studio Code, которые должны выполняться при отладке приложения в локальном режиме.|
+|Управление API Azure|Файл спецификации открытого API добавлен во вложенную папку с путем `yourProjectFolder/openapi`|Определяет API после публикации, это файл спецификации API.|
 
 ## <a name="limitation"></a>Ограничение
 
-Нельзя добавлять ресурсы, если вы создали проект SPFx вкладки.
+Если проект вкладки создан на основе SPFx, добавление ресурсов будет невозможно.
 
 ## <a name="see-also"></a>См. также
 

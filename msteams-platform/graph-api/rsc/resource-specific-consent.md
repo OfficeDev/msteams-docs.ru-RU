@@ -1,153 +1,153 @@
 ---
-title: В Teams
-description: Описывает согласие на конкретные ресурсы в Teams и как использовать его.
-ms.localizationpriority: medium
+title: Включение согласия для конкретного ресурса в Teams
+description: Описывает согласие на использование ресурсов в Teams и способы его использования.
+ms.localizationpriority: high
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-keywords: команды авторизации OAuth SSO Azure AD rsc Graph
-ms.openlocfilehash: 071ad1a7f7c8263bafdfb0d2521676d0e6992d8e
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
-ms.translationtype: MT
+keywords: авторизация групп OAuth SSO Azure AD rsc Graph
+ms.openlocfilehash: 8a90d1280f94de099543d879028a84d538c588ac
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63399284"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111509"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
 > [!NOTE]
-> Согласие на доступ к области чата с конкретными ресурсами доступно только для [предварительного просмотра общедоступных](../../resources/dev-preview/developer-preview-intro.md) разработчиков.
+> Согласие для конкретного ресурса для области чата доступно только в [общедоступной предварительной версии для разработчиков](../../resources/dev-preview/developer-preview-intro.md).
 
-Согласие для конкретного ресурса (RSC) — это интеграция Microsoft Teams и microsoft Graph API, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами, группами или чатами, в организации. Модель разрешений RSC позволяет владельцам команд  и владельцам чатов предоставлять согласие приложению на доступ и изменение данных группы и данных чата соответственно.
+Согласие для конкретного ресурса (RSC) — это интеграция Microsoft Teams и Microsoft Graph API, которая позволяет приложению использовать конечные точки API для управления определенными ресурсами, командами или чатами, внутри организации. Модель разрешений RSC позволяет *владельцам команд* и *владельцам чатов* давать приложению согласие на доступ и изменение данных группы и данных чата соответственно.
 
-**Примечание:** Если в чате есть связанные с ним собрания или вызовы, соответствующие разрешения RSC применяются и к этим ресурсам.
+**Примечание:** Если с чатом связана встреча или звонок, соответствующие разрешения RSC также применяются к этим ресурсам.
 
-## <a name="resource-specific-permissions"></a>Разрешения, определенные для ресурсов
+## <a name="resource-specific-permissions"></a>Разрешения для определенных ресурсов
 
-Разрешения RSC, Teams, определяют, что приложение может сделать в определенном ресурсе.
+Детализированные разрешения RSC для Teams определяют, что приложение может делать в пределах определенного ресурса.
 
-### <a name="resource-specific-permissions-for-a-team"></a>Разрешения на использование ресурсов для группы
+### <a name="resource-specific-permissions-for-a-team"></a>Разрешения для определенных ресурсов Teams
 
 |Разрешение приложения| Действие |
 | ----- | ----- |
-|TeamSettings.Read.Group | Получите параметры этой группы.|
-|TeamSettings.ReadWrite.Group|Обновление параметров этой группы.|
-|ChannelSettings.Read.Group|Получите имена каналов этой группы, описания каналов и параметры канала.|
-|ChannelSettings.ReadWrite.Group|Обновим имена каналов этой группы, описания каналов и параметры канала.|
+|TeamSettings.Read.Group | Получить параметры этой команды.|
+|TeamSettings.ReadWrite.Group|Обновить параметры этой команды|
+|ChannelSettings.Read.Group|Получите имена каналов этой команды, описания каналов и настройки каналов.|
+|ChannelSettings.ReadWrite.Group|Обновить имена каналов этой команды, описания каналов и настройки каналов.|
 |Channel.Create.Group|Создание каналов в этой команде. |
-|Channel.Delete.Group|Удаление каналов в этой группе. |
-|ChannelMessage.Read.Group |Получите сообщения канала этой группы. |
-|TeamsAppInstallation.Read.Group|Получите список установленных приложений этой группы.|
-|TeamsTab.Read.Group|Получите список вкладок этой группы.|
+|Channel.Delete.Group|Удаление каналов в этой команде. |
+|ChannelMessage.Read.Group |Получать сообщения канала этой команды |
+|TeamsAppInstallation.Read.Group|Получить список установленных приложений этой команды.|
+|TeamsTab.Read.Group|Получить список вкладок этой команды|
 |TeamsTab.Create.Group|Создание вкладок в этой команде. |
 |TeamsTab.ReadWrite.Group|Обновление вкладок этой команды. |
 |TeamsTab.Delete.Group|Удаление вкладок этой команды. |
-|TeamMember.Read.Group|Получите членов этой группы. |
-|TeamsActivity.Send.Group|Создание новых уведомлений в каналах действий пользователей этой группы. |
+|TeamMember.Read.Group|Получить участников этой команды |
+|TeamsActivity.Send.Group|Создавайте новые уведомления в лентах активности пользователей этой команды. |
 
-Дополнительные сведения см. [в дополнительных сведениях о разрешениях, определенных ресурсами группы](/graph/permissions-reference#teams-resource-specific-consent-permissions).
+Подробности в статье [Разрешения на согласие для конкретных ресурсов группы](/graph/permissions-reference#teams-resource-specific-consent-permissions).
 
-### <a name="resource-specific-permissions-for-a-chat"></a>Разрешения на доступ к ресурсам для чата
+### <a name="resource-specific-permissions-for-a-chat"></a>Разрешения для определенных ресурсов для чата
 
-В следующей таблице вы можете получить разрешения на доступ к ресурсам для чата:
+В следующей таблице представлены разрешения для чата для определенных ресурсов:
 
 |Разрешение приложения| Действие |
 | ----- | ----- |
-| ChatSettings.Read.Chat         | Получите параметры этого чата.                                    |
-| ChatSettings.ReadWrite.Chat    | Обновление параметров этого чата.                          |
-| ChatMessage.Read.Chat          | Получите сообщения этого чата.                                    |
-| ChatMember.Read.Chat           | Получите участников этого чата.                                     |
+| ChatSettings.Read.Chat         | Получить параметры этого чата                                    |
+| ChatSettings.ReadWrite.Chat    | Обновить параметры этого чата                          |
+| ChatMessage.Read.Chat          | Получить сообщения этого чата                                    |
+| ChatMember.Read.Chat           | Получить участников этого чата                                     |
 | Chat.Manage.Chat               | Управление чатом.                                             |
-| TeamsTab.Read.Chat             | Получите вкладки этого чата.                                        |
+| TeamsTab.Read.Chat             | Получить вкладки этого чата                                        |
 | TeamsTab.Create.Chat           | Создание вкладок в чате.                                     |
 | TeamsTab.Delete.Chat           | Удаление вкладок чата.                                      |
 | TeamsTab.ReadWrite.Chat        | Управление вкладками чата.                                      |
-| TeamsAppInstallation.Read.Chat | Получите, какие приложения установлены в этом чате.                   |
-| OnlineMeeting.ReadBasic.Chat   | Ознакомьтесь с основными свойствами, такими как имя, расписание, организатор, ссылка на соединение и уведомления о встрече, связанной с этим чатом. |
+| TeamsAppInstallation.Read.Chat | Узнать, какие приложения установлены в этом чате.                   |
+| OnlineMeeting.ReadBasic.Chat   | Чтение основных свойств, таких как имя, расписание, организатор, ссылка для присоединения и уведомления о начале/конце встречи, связанной с этим чатом. |
 | Calls.AccessMedia.Chat         | Доступ к мультимедийным потокам в звонках, связанных с этим чатом или собранием.                                    |
 | Calls.JoinGroupCalls.Chat         | Присоединение к звонкам, связанным с этим чатом или собранием.                                    |
-| TeamsActivity.Send.Chat         | Создание новых уведомлений в каналах активности пользователей в этом чате. |
+| TeamsActivity.Send.Chat         | Создавайте новые уведомления в лентах активности пользователей в этом чате. |
 
-Дополнительные сведения см. в [специальном разрешении](/graph/permissions-reference#chat-resource-specific-consent-permissions) на доступ к ресурсам чата.
+Подробности в статье [Разрешения на согласие для конкретных ресурсов чата](/graph/permissions-reference#chat-resource-specific-consent-permissions).
 
 > [!NOTE]
-> Разрешения на использование ресурсов доступны только Teams приложениям, установленным на клиенте Teams и в настоящее время не являются частью портала Azure Active Directory (AAD).
+> Разрешения для конкретных ресурсов доступны только для приложений Teams, установленных на клиенте Teams, и сейчас не являются частью портала Azure Active Directory (AAD).
 
 ## <a name="enable-rsc-in-your-application"></a>Включить RSC в приложении
 
-1. [Настройка параметров согласия на портале Azure AD](#configure-consent-settings-in-the-azure-ad-portal).
-    1. [Настройка параметров согласия владельца группы для RSC в команде](#configure-group-owner-consent-settings-for-rsc-in-a-team).
-    1. [Настройка параметров согласия пользователя для RSC в чате](#configure-user-consent-settings-for-rsc-in-a-chat).
-1. [Зарегистрируйте свое приложение платформа удостоверений Майкрософт с помощью портала Azure AD](#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).
-1. [Просмотрите разрешения приложений на портале Azure AD](#review-your-application-permissions-in-the-azure-ad-portal).
-1. [Получение маркера доступа с платформы удостоверений](#obtain-an-access-token-from-the-microsoft-identity-platform).
-1. [Обновите манифест Teams приложения](#update-your-teams-app-manifest).
-1. [Установите приложение непосредственно в Teams](#sideload-your-app-in-teams).
-1. [Проверьте приложение на дополнительные разрешения RSC](#check-your-app-for-added-rsc-permissions).
-    1. [Проверьте приложение на дополнительные разрешения RSC в команде](#check-your-app-for-added-rsc-permissions-in-a-team).
-    1. [Проверьте приложение на дополнительные разрешения RSC в чате](#check-your-app-for-added-rsc-permissions-in-a-chat).
+1. [Настройте параметры согласия на портале Azure AD](#configure-consent-settings-in-the-azure-ad-portal).
+    1. [Настройте параметры согласия владельца группы для RSC в команде](#configure-group-owner-consent-settings-for-rsc-in-a-team).
+    1. [Настройте параметры согласия пользователя для RSC в чате](#configure-user-consent-settings-for-rsc-in-a-chat).
+1. [Зарегистрируйте приложение на платформе Microsoft Identity с помощью портала Azure AD.](#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).
+1. [ Просмотрите разрешения приложения на портале Azure AD](#review-your-application-permissions-in-the-azure-ad-portal).
+1. [Получите токен доступа от платформы идентификации.](#obtain-an-access-token-from-the-microsoft-identity-platform).
+1. [Обновите манифест приложения Teams](#update-your-teams-app-manifest).
+1. [Установите приложение прямо в Teams](#sideload-your-app-in-teams).
+1. [Проверьте приложение на наличие добавленных разрешений RSC.](#check-your-app-for-added-rsc-permissions).
+    1. [Проверьте приложение на наличие добавленных разрешений RSC в команде.](#check-your-app-for-added-rsc-permissions-in-a-team).
+    1. [Проверьте приложение на наличие добавленных разрешений RSC в чате](#check-your-app-for-added-rsc-permissions-in-a-chat).
 
-## <a name="configure-consent-settings-in-the-azure-ad-portal"></a>Настройка параметров согласия на портале Azure AD
+## <a name="configure-consent-settings-in-the-azure-ad-portal"></a>Настройте параметры согласия на портале Azure AD.
 
-### <a name="configure-group-owner-consent-settings-for-rsc-in-a-team"></a>Настройка параметров согласия владельца группы для RSC в команде
+### <a name="configure-group-owner-consent-settings-for-rsc-in-a-team"></a>Настройте параметры согласия владельца группы для RSC в команде
 
-Вы можете включить или отключить [согласие](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-portal) владельца группы непосредственно на Microsoft Azure портале:
+Вы можете включить или отключить [согласие владельца группы](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-portal) непосредственно на портале Microsoft Azure:
 
-1. Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
-1. Выберите **Azure Active Directory** >  **Enterprise applicationsConsent** >  **и permissionsUser** > [**.**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings)
-1. Включить, отключить или ограничить согласие пользователя с согласия владельца группы с меткой управления **для доступа к данным приложений**. По умолчанию **разрешается согласие владельца группы для всех владельцев групп**. Чтобы владелец группы устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие владельца группы.
+1. Войдите на [Портал Azure](https://portal.azure.com) как [Глобальный администратор или администратор компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
+1. Выберите **Azure Active Directory** > **Корпоративные приложения** > **Согласия и разрешения** > [**Параметры согласия пользователя**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings).
+1. Включайте, отключайте или ограничивайте согласие пользователя с помощью элемента управления **Согласие владельца группы на доступ приложений к данным**. По умолчанию установлено значение **Разрешить согласие владельца группы для всех владельцев группы**. Чтобы владелец группы мог установить приложение с помощью RSC, для этого пользователя должно быть включено согласие владельца группы.
 
     ![Конфигурация команды Azure RSC](../../assets/images/azure-rsc-team-configuration.png)
 
-Кроме того, вы можете включить или отключить согласие владельца группы с помощью PowerShell, следуйте шагам, описанным в настройке согласия владельца группы [с помощью PowerShell](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-powershell).
+Кроме того, вы можете включить или отключить согласие владельца группы с помощью PowerShell, следуя инструкциям, описанным в разделе [Настройка согласия владельца группы с помощью PowerShell](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-powershell).
 
-### <a name="configure-user-consent-settings-for-rsc-in-a-chat"></a>Настройка параметров согласия пользователя для RSC в чате
+### <a name="configure-user-consent-settings-for-rsc-in-a-chat"></a>Настройте параметры согласия пользователя для RSC в чате
 
-Вы можете включить или отключить [согласие пользователя непосредственно](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) на портале Azure:
+Вы можете включить или отключить [ согласие пользователя](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) непосредственно на портале Azure:
 
-1. Во входе на [портал Azure](https://portal.azure.com) в качестве [глобального администратора или администратора компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
-1. Выберите **Azure Active Directory** >  **Enterprise applicationsConsent** >  **и permissionsUser** > [**.**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings)
-1. Включить, отключить или ограничить согласие пользователя с разрешением пользователя с меткой управления **для приложений**. По умолчанию **разрешается согласие пользователя для приложений**. Чтобы участник чата устанавливал приложение с помощью RSC, для этого пользователя необходимо включить согласие пользователя.
+1. Войдите на [Портал Azure](https://portal.azure.com) как [Глобальный администратор или администратор компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
+1. Выберите **Azure Active Directory** > **Корпоративные приложения** > **Согласия и разрешения** > [**Параметры согласия пользователя**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings).
+1. Включайте, отключайте или ограничивайте согласие пользователя с помощью элемента управления **Согласие пользователя для приложений**. По умолчанию установлено значение **Разрешить согласие пользователя для приложений**. Чтобы участник чата мог установить приложение с помощью RSC, для этого пользователя должно быть включено согласие пользователя.
 
-    ![Конфигурация чата Azure RSC](../../assets/images/azure-rsc-chat-configuration.png)
+    ![Конфигурация чата RSC Azure](../../assets/images/azure-rsc-chat-configuration.png)
 
-Кроме того, вы можете включить или отключить согласие пользователя с помощью PowerShell, следуйте шагам, описанным в настройке согласия пользователя [с помощью PowerShell](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-powershell).
+Кроме того, вы можете включить или отключить согласие пользователя с помощью PowerShell, следуя инструкциям, описанным в разделе [Настройка согласия пользователя с помощью PowerShell](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-powershell).
 
-## <a name="register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal"></a>Регистрация приложения с помощью платформа удостоверений Майкрософт с помощью портала Azure AD
+## <a name="register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal"></a>Зарегистрируйте приложение на платформе Microsoft Identity с помощью портала Azure AD.
 
-Портал Azure AD предоставляет центральную платформу для регистрации и настройки приложений. Ваше приложение должно быть зарегистрировано на портале Azure AD для интеграции с платформой удостоверений и вызова API microsoft Graph API. Дополнительные сведения см. [в статью Регистрация приложения с платформой удостоверений](/graph/auth-register-app-v2).
+Портал Azure AD предоставляет центральную платформу для регистрации и настройки приложений. Приложение должно быть зарегистрировано на портале Azure AD для интеграции с платформой идентификации и вызова API Microsoft Graph. Подробности в разделе [Регистрация приложения на платформе идентификации](/graph/auth-register-app-v2).
 
 > [!WARNING]
-> ID приложения Azure AD не должен быть общим для нескольких Teams приложений. Должно быть сопоставление 1:1 между приложением Teams и приложением Azure AD. Попытки установить несколько Teams приложений, связанных с одинаковым ИД приложения Azure AD, могут привести к сбоям в установке или запуске.
+> Идентификатор приложения Azure AD не должен использоваться в нескольких приложениях Teams. Между приложением Teams и приложением Azure AD должно быть сопоставление 1:1. Попытки установить несколько приложений Teams, связанных с одним и тем же идентификатором приложения Azure AD, приведут к сбоям установки или выполнения.
 
-## <a name="review-your-application-permissions-in-the-azure-ad-portal"></a>Просмотр разрешений приложения на портале Azure AD
+## <a name="review-your-application-permissions-in-the-azure-ad-portal"></a>Проверьте разрешения приложения на портале Azure AD.
 
-1. Перейдите на **страницу регистрации HomeApp** >  и выберите приложение RSC.
-1. Выберите **разрешения API** с левой области и перейдите по списку настроенных разрешений **для вашего** приложения. Если приложение делает вызовы API Graph RSC, удалите все разрешения на этой странице. Если ваше приложение также вызывает не RSC, храните эти разрешения по мере необходимости.
-
-> [!IMPORTANT]
-> Портал Azure AD не может использоваться для запроса разрешений RSC. Разрешения RSC в настоящее время являются исключительными для Teams приложений, установленных в клиенте Teams и объявляются в файле манифеста Teams приложения (JSON).
-
-## <a name="obtain-an-access-token-from-the-microsoft-identity-platform"></a>Получение маркера доступа из платформа удостоверений Майкрософт
-
-Чтобы Graph API, необходимо получить маркер доступа для приложения с платформы удостоверений. Прежде чем приложение сможет получить маркер с платформы удостоверений, его необходимо зарегистрировать на портале Azure AD. Маркер доступа содержит сведения о приложении и его разрешениях на доступ к ресурсам и API, доступным через Microsoft Graph.
-
-Для получения маркера доступа с платформы удостоверений необходимо иметь следующие значения из процесса регистрации Azure AD:
-
-* **ID приложения**, присвоенный порталом регистрации приложений. Если приложение поддерживает один вход (SSO), необходимо использовать тот же ИД приложения для приложения и SSO.
-* Секрет **клиента или пароль** или пара ключей общего или частного доступа, которая является **сертификатом**. Это необязательно для нативных приложений;
-* **URL-адрес URI** перенаправления или ответ для приложения для получения ответов из Azure AD.
-
-Дополнительные сведения см. [в статью Получить](/graph/auth-v2-user?view=graph-rest-1.0#3-get-a-token&preserve-view=true) доступ от имени пользователя и [получить доступ без пользователя](/graph/auth-v2-service).
-
-## <a name="update-your-teams-app-manifest"></a>Обновление манифеста Teams приложения
-
-Разрешения RSC объявляются в файле JSON манифеста приложения.
+1. Перейдите на **Главную** > **страницу регистрации приложений** и выберите приложение RSC.
+1. Выберите **API permissions** в левой области и пройдите по списку **Настройки разрешений** для приложения. Если приложение совершает только вызовы API Graph RSC, удалите все разрешения на этой странице. Если приложение также совершает вызовы, не относясь к RSC, оохраняйте эти разрешения по мере необходимости.
 
 > [!IMPORTANT]
-> Разрешения не RSC хранятся на портале Azure. Не добавляйте их в манифест приложения.
+> Портал Azure AD нельзя использовать для запроса разрешений RSC. Разрешения RSC сейчас являются эксклюзивными для приложений Teams, установленных в клиенте Teams, и объявляются в файле манифеста приложения Teams (JSON).
 
-### <a name="manifest-changes-for-resource-specific-consent"></a>Манифест изменений для согласия, определенного для ресурсов
+## <a name="obtain-an-access-token-from-the-microsoft-identity-platform"></a>Получите токен доступа от платформы удостоверений Майкрософт.
+
+Чтобы совершать вызовы Graph API, вы должны получить токен доступа для своего приложения на платформе идентификации. Прежде чем ваше приложение сможет получить токен с платформы удостоверений, оно должно быть зарегистрировано на портале Azure AD. Маркер доступа содержит сведения о приложении и его разрешениях на доступ к ресурсам и API, доступным через Microsoft Graph.
+
+Чтобы получить токен доступа с платформы удостоверений, у вас должны быть следующие значения из процесса регистрации Azure AD:
+
+* **Идентификатор приложения**, назначенный порталом регистрации приложений. Если приложение поддерживает единый вход (SSO), необходимо использовать один и тот же ИД приложения для приложения и единого вход.
+* **Секрет или пароль клиента** или пара открытого или закрытого ключа, которая является **Сертификатом**. Это необязательно для нативных приложений;
+* **URI перенаправления** или URL-адрес отклика для вашего приложения, чтобы получать отклики от Azure AD.
+
+Подробности в разделе [Получение доступа от имени пользователя](/graph/auth-v2-user?view=graph-rest-1.0#3-get-a-token&preserve-view=true) и [Получение доступа без пользователя](/graph/auth-v2-service).
+
+## <a name="update-your-teams-app-manifest"></a>Обновите манифест приложения Teams
+
+Разрешения RSC объявляются в JSON-файле манифеста приложения.
+
+> [!IMPORTANT]
+> Разрешения, отличные от RSC, хранятся на портале Azure. Не добавляйте их в манифест приложения.
+
+### <a name="manifest-changes-for-resource-specific-consent"></a>Манифест изменений для согласия конкретного ресурса
 
 <br>
 
@@ -155,18 +155,18 @@ ms.locfileid: "63399284"
 
 <summary><b>Разрешения RSC для манифеста приложения версии 1.12</b></summary>
 
-Добавьте ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
+Добавьте в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
+|`id` |String |Идентификатор приложения Azure AD Подробности в статье [Регистрация приложения на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|String| Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать ошибочного отклика; подойдет любая строка.|
 
 Укажите разрешения, необходимые приложению.
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`authorization`|Object|Список разрешений, необходимых приложению для работы. Дополнительные сведения см. в [placeholder for link-authorization in manifest]
+|`authorization`|Object|Список разрешений, необходимых приложению для работы. Для получения дополнительной информации см. [заполнитель для авторизации ссылки в манифесте]
 
 Пример RSC в команде
 
@@ -311,7 +311,7 @@ ms.locfileid: "63399284"
 ```
 
 > [!NOTE]
-> Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и чата `authorization`.
+> Если приложение предназначено для поддержки установки как для группы, так и для чата, то разрешения для группы и чата можно указать в одном и том же манифесте в разделе`authorization`.
 
 <br>
 
@@ -321,15 +321,15 @@ ms.locfileid: "63399284"
 
 <details>
 
-<summary><b>Разрешения RSC для манифеста приложения версии 1.11 или более ранней версии</b></summary>
+<summary><b>Разрешения RSC для манифеста приложения версии 1.11 или более ранней</b></summary>
 
-Добавьте ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
+Добавьте в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |ID приложения Azure AD. Дополнительные сведения см. в [приложении зарегистрировать на портале Azure AD](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа на ошибку; любая строка будет делать.|
-|`applicationPermissions`|Массив строк|Разрешения RSC для вашего приложения. Дополнительные сведения см. [в дополнительных сведениях о разрешениях, определенных для ресурсов](resource-specific-consent.md#resource-specific-permissions).|
+|`id` |String |Идентификатор приложения Azure AD Подробности в статье [Регистрация приложения на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|String| Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать ошибочного отклика; подойдет любая строка.|
+|`applicationPermissions`|Массив строк|Разрешения RSC для приложения. Подробности в статье [Разрешения для определенных ресурсов](resource-specific-consent.md#resource-specific-permissions).|
 
 Пример RSC в команде
 
@@ -382,7 +382,7 @@ ms.locfileid: "63399284"
 ```
 
 > [!NOTE]
-> Если приложение предназначено для поддержки установки в командных и чатных сферах, в одном манифесте могут быть указаны разрешения как группы, так и чата `applicationPermissions`.
+> Если приложение предназначено для поддержки установки как для группы, так и для чата, то разрешения для группы и чата можно указать в одном и том же манифесте в разделе `applicationPermissions`.
 
 <br>
 
@@ -390,53 +390,53 @@ ms.locfileid: "63399284"
 
 ## <a name="sideload-your-app-in-teams"></a>Загрузка неопубликованного приложения в Teams
 
-Если администратор Teams позволяет настраивать загрузки приложений, вы можете загрузить приложение непосредственно [](~/concepts/deploy-and-publish/apps-upload.md) в определенную группу или чат.
+Если ваш администратор Teams разрешает загрузку пользовательских приложений, вы можете [загрузить неопубликованное приложение](~/concepts/deploy-and-publish/apps-upload.md) непосредственно в определенную команду или чат.
 
-## <a name="check-your-app-for-added-rsc-permissions"></a>Проверьте приложение на дополнительные разрешения RSC
+## <a name="check-your-app-for-added-rsc-permissions"></a>Проверьте, нет ли в приложении добавленных разрешений RSC.
 
 > [!IMPORTANT]
-> Разрешения RSC не приписываются пользователю. Вызовы сделаны с разрешениями приложения, а не с делегированием разрешений пользователя. Приложению может быть разрешено выполнять действия, которые пользователь не может выполнять, например удаление вкладки. Перед вызовами API RSC необходимо просмотреть намерения владельца группы или владельца чата. Дополнительные сведения см[. в Microsoft Teams API.](/graph/teams-concept-overview)
+> Разрешения RSC не присваиваются пользователю. Вызовы выполняются с разрешениями приложений, а не делегированными пользователями разрешениями. Приложению можно разрешить выполнять действия, недоступные пользователю, например удаление вкладки. Прежде чем совершать вызовы RSC API, вы должны проверить намерение владельца группы или владельца чата относительно вашего использования. Подробности в статье [Обзор API Microsoft Teams](/graph/teams-concept-overview).
 
-После установки приложения на ресурс можно использовать [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) для просмотра разрешений, предоставленных приложению на ресурсе.
+После установки приложения в ресурс вы можете использовать [Обозреватель Graph](https://developer.microsoft.com/graph/graph-explorer) для просмотра разрешений, предоставленных приложению в ресурсе.
 
-### <a name="check-your-app-for-added-rsc-permissions-in-a-team"></a>Проверьте приложение на дополнительные разрешения RSC в команде
+### <a name="check-your-app-for-added-rsc-permissions-in-a-team"></a>Проверьте, есть ли у приложения добавленные разрешения RSC в команде
 
-1. Получите группуId группы **из** Teams.
-1. В Teams выберите **Teams** левой области.
-1. Выберите команду, в которой будет установлено приложение.
-1. Выберите эллипсы &#x25CF;&#x25CF;&#x25CF; для этой группы.
-1. Выберите **Получить ссылку на команду** из меню отсев команды.
-1. Скопируйте и сохраните **значение groupId** из ссылки на диалоговое окно **всплывающее** окно группы.
-1. Вопишите в **Graph Explorer**.
-1. Сделайте **вызов GET** в эту конечную точку: `https://graph.microsoft.com/beta/teams/{teamGroupId}/permissionGrants`. Поле `clientAppId` в ответе будет соедино `webApplicationInfo.id` с указанным в манифесте Teams приложения.
+1. Получите **groupId** команды из Teams.
+1. В Teams выберите **Teams** на крайней левой панели.
+1. Выберите команду, в которую нужно установить приложение.
+1. Выберите многоточия &#x25CF;&#x25CF;&#x25CF; для этой команды.
+1. Выберите **Получить ссылку на команду** в раскрывающемся меню команды.
+1. Скопируйте и сохраните значение **groupId** из всплывающего диалогового окна **Получить ссылку на команду**.
+1. Войдите в **Обозреватель Graph**
+1. Вызовите **GET** для этой конечной точки: `https://graph.microsoft.com/beta/teams/{teamGroupId}/permissionGrants`. Поле `clientAppId` в отклике будет сопоставлено с `webApplicationInfo.id` указанным в манифесте приложения Teams.
 
-    ![Graph ответа исследователя на вызов GET для разрешений RSC группы](../../assets/images/team-graph-permissions.png)
+    ![Отклик обозревателя Graph на вызов GET для разрешений команды RSC](../../assets/images/team-graph-permissions.png)
 
-Дополнительные сведения о том, как получить сведения о приложениях, установленных в определенной группе, см. в материале "Имена и другие сведения о приложениях, установленных [в указанной группе"](/graph/api/team-list-installedapps#example-2-get-the-names-and-other-details-of-installed-apps).
+Подробнее о том, как получить сведения о приложениях, установленных в определенной группе, см. в статье [Получение имен и других сведений о приложениях, установленных в указанной группе](/graph/api/team-list-installedapps#example-2-get-the-names-and-other-details-of-installed-apps).
 
-### <a name="check-your-app-for-added-rsc-permissions-in-a-chat"></a>Проверьте приложение на дополнительные разрешения RSC в чате
+### <a name="check-your-app-for-added-rsc-permissions-in-a-chat"></a>Проверьте свое приложение на добавленные разрешения RSC в чате
 
-1. Получите ID потока чата из Teams *веб-клиента*.
-1. В веб Teams клиенте выберите **Чат** с левой области.
-1. Выберите чат, в котором установлено приложение из меню отсев.
-1. Скопируйте веб-URL-адрес и сохраните ID потока чата из строки.
+1. Получите идентификатор потока чата из *веб*-клиента Teams.
+1. В веб-клиенте Teams выберите **Чат** в крайней левой области.
+1. Выберите чат, в котором установлено приложение, из выпадающего меню.
+1. Скопируйте веб-URL и сохраните идентификатор цепочки чата из строки.
 
-    ![ID потока чата с веб-URL-адреса](../../assets/images/chat-thread-id.png)
+    ![Идентификатор темы чата из веб-URL](../../assets/images/chat-thread-id.png)
 
-1. Вопишите в **Graph Explorer**.
-1. Вызов **GET на** следующую конечную точку: `https://graph.microsoft.com/beta/chats/{chatId}/permissionGrants`. Поле `clientAppId` в ответе будет соедино `webApplicationInfo.id` с указанным в манифесте Teams приложения.
+1. Войдите в **Обозреватель Graph**
+1. Вызовите **GET** для следующей конечной точки: `https://graph.microsoft.com/beta/chats/{chatId}/permissionGrants`. Поле `clientAppId` в отклике будет сопоставлено с `webApplicationInfo.id` указанным в манифесте приложения Teams.
 
-    ![Graph исследователя на вызов GET для разрешений RSC чата](../../assets/images/chat-graph-permissions.png)
+    ![Отклик обозревателя Graph на вызов GET для разрешений RSC для чата](../../assets/images/chat-graph-permissions.png)
 
-Дополнительные сведения о том, как получить сведения о приложениях, установленных в определенном чате, см. в материале "Имена и другие сведения о приложениях, установленных в [указанном чате"](/graph/api/chat-list-installedapps#example-2-get-the-names-and-other-details-of-apps-installed-in-the-specified-chat).
+Подробнее о том, как получить сведения о приложениях, установленных в определенном чате, см. в статье [Получение имен и других сведений о приложениях, установленных в указанном чате](/graph/api/chat-list-installedapps#example-2-get-the-names-and-other-details-of-apps-installed-in-the-specified-chat).
 
 ## <a name="code-sample"></a>Пример кода
 
 | **Название примера** | **Описание** | **.NET** |**Node.js** |
 |-----------------|-----------------|----------------|----------------|
-| Resource-Specific согласия (RSC) | Используйте RSC для вызова Graph API. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/nodeJs)|
+| Согласие для определенного ресурса (RSC) | Используйте RSC для вызова API-интерфейсов Graph. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-rsc/nodeJs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Тестирование разрешений на согласие для определенных ресурсов в Teams](test-resource-specific-consent.md)
-* [Согласие на определенные ресурсы в Microsoft Teams для администраторов](/MicrosoftTeams/resource-specific-consent)
+* [Проверка разрешений согласия для определенных ресурсов в Teams](test-resource-specific-consent.md)
+* [Согласие для определенного ресурса в Microsoft Teams для администраторов](/MicrosoftTeams/resource-specific-consent)

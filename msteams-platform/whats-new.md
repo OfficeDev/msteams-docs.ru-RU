@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 7be0852fad2344a5d57437d928a2a1d386bc4eb3
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: aabbe185edd57491dc9928d66700d1f35f8b1557
+ms.sourcegitcommit: 6d87e131eeae6846cadecf6ba775cecd010b4ffc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104051"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65132711"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "65104051"
 
 | Дата | Update | Найти здесь |
 | --- | --- | --- |
+|28.04.2022| Распространенные причины сбоя проверки приложения | Распространение приложения > Публикация в хранилище Teams > [Распространенные причины сбоя проверки приложения](concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md)|
 |20.04.2022 |  Настройка конвейеров CI/CD | Инструменты и пакеты SDK > Набор инструментов Teams для Visual Studio Code > [Настройка конвейеров CI/CD](toolkit/use-CICD-template.md)|
 |19.04.2022 | Отправка приложения в Microsoft Teams | Распространение приложения > [Отправка приложения](concepts/deploy-and-publish/apps-upload.md)|
 |04/06/2022| Поделиться в Teams из личного приложения или вкладки (предварительная версия для разработчиков) | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
