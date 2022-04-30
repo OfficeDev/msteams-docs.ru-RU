@@ -1,80 +1,80 @@
 ---
-title: Использование microsoft Graph для авторизации активной установки ботов и обмена сообщениями в Teams
-description: Описывает активный обмен сообщениями в Teams и ее реализацию. Узнайте о том, как включить активную установку приложений и обмен сообщениями с помощью примера кода.
-ms.localizationpriority: medium
+title: Используйте Microsoft Graph для авторизации упреждающей установки бота и обмена сообщениями в Teams.
+description: Описывает упреждающий обмен сообщениями в Teams и способы его реализации. Узнайте, как включить упреждающую установку приложений и обмен сообщениями, используя образец кода.
+ms.localizationpriority: high
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
-keywords: группы активной установки чата для обмена сообщениями Graph
-ms.openlocfilehash: 11fb1188cc88c983b1ee958b1df264346af22693
-ms.sourcegitcommit: 830fdc80556a5fde642850dd6b4d1b7efda3609d
-ms.translationtype: MT
+keywords: команды упреждающий обмен сообщениями чат установка Graph
+ms.openlocfilehash: 7915d958cf73b916921a6346b4eca1f8ce0280e7
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398703"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111516"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
-## <a name="proactive-messaging-in-teams"></a>Активный обмен сообщениями в Teams
+## <a name="proactive-messaging-in-teams"></a>Упреждающий обмен сообщениями в Teams
 
-Активные сообщения инициировали боты, чтобы начать беседы с пользователем. Они служат многим целям, включая отправку приветствия, проведение опросов или опросов, а также уведомления для всей организации вещания. Активные сообщения в Teams могут быть доставлены в качестве бесед на основе **ad-hoc** или **диалогов:**
+Упреждающие сообщения инициируются ботами для начала разговора с пользователем. Они служат многим целям, включая отправку приветственных сообщений, проведение опросов или исследований, а также рассылку уведомлений широкого охвата по всей организации. Упреждающие сообщения в Teams могут быть доставлены в виде **ситуативных** или **диалоговых бесед**:
 
 |Тип сообщения | Описание |
 |----------------|-------------- |
-|Ad-hoc proactive message| Бот перенабивает сообщение, не прерывая поток беседы.|
-|Упреждающие сообщения на основе диалогов | Бот создает новый диалоговое нить, контролирует беседу, доставляет проактивное сообщение, закрывает и возвращает контроль в предыдущий диалог.|
+|Ситуативное упреждающее сообщение| Бот вставляет сообщение, не прерывая поток беседы.|
+|Диалоговое упреждающее сообщение | Бот создает новую ветку диалога, берет на себя управление беседой, доставляет упреждающее сообщение, закрывает и возвращает управление предыдущему диалогу.|
 
-## <a name="proactive-app-installation-in-teams"></a>Активная установка приложения в Teams
+## <a name="proactive-app-installation-in-teams"></a>Упреждающая установка приложений в Teams
 
-Прежде чем ваш бот сможет активно отправлять сообщения пользователю, он должен быть установлен как личное приложение или в команде, в которой пользователь является участником. Иногда необходимо заблаговременно отправлять сообщения пользователям, которые не установили или ранее не взаимодействовали с вашим приложением. Например, необходимо отправлять важные сведения всем в вашей организации. Для таких сценариев можно использовать API microsoft Graph для активной установки бота для пользователей.
+Прежде чем бот сможет активно отправлять сообщения пользователю, его необходимо установить либо как личное приложение, либо в команде, участником которой является пользователь. Иногда вам нужно отправить упреждающее сообщение пользователям, у которых не установлено приложение или которые ранее не взаимодействовали с ним. Например, необходимо сообщить важную информацию всем в организации. В таких случаях вы можете использовать API Microsoft Graph, чтобы упреждающе установить бот для пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
-Разрешения типа ресурсов microsoft Graph [TeamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) помогают управлять жизненным циклом установки приложения для всех областей пользовательского (личного) или командного (канала) Microsoft Teams платформы:
+Разрешения Microsoft Graph [типа ресурса teamAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&preserve-view=true) помогают управлять жизненным циклом установки приложения для всех пользовательских (личных) или групповых (канальных) областей на платформе Microsoft Teams:
 
 |Разрешение приложения | Описание|
 |------------------|---------------------|
-|`TeamsAppInstallation.ReadWriteSelfForUser.All`|Позволяет приложению Teams чтение, установку, обновление и самоустановку для любого *пользователя без* предварительного входе или использования.|
-|`TeamsAppInstallation.ReadWriteSelfForTeam.All`|Позволяет приложению Teams читать, устанавливать, обновлять и удалить себя в любой *команде без* предварительного входе или использования.|
+|`TeamsAppInstallation.ReadWriteSelfForUser.All`|Позволяет приложению Teams читать, устанавливать, обновлять и удалять себя для любого *пользователя* без предварительного входа или использования.|
+|`TeamsAppInstallation.ReadWriteSelfForTeam.All`|Позволяет приложению Teams читать, устанавливать, обновлять и удалять себя в любой *команде* без предварительного входа или использования.|
 
-Чтобы использовать эти разрешения, необходимо добавить ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) в манифест приложения со следующими значениями:
+Чтобы использовать эти разрешения, необходимо добавить в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:
 
-* **id**. Ваш Azure Active Directory ID приложения.
-* **ресурс**. URL-адрес ресурса для приложения.
+* **id**: идентификатор приложения Azure Active Directory.
+* **ресурс**: URL-адрес ресурса для приложения.
 
 > [!NOTE]
 >
-> * Боту требуется приложение, а не делегированная пользователем разрешения, так как установка для других пользователей.
+> * Боту требуются приложения, а не делегированные пользователем разрешения, поскольку установка предназначена для других.
 >
-> * Администратор клиента Azure AD должен явно предоставлять разрешения [приложению](/graph/security-authorization#grant-permissions-to-an-application). После получения разрешений все члены клиента Azure AD получают предоставленные разрешения.
+> * Администратор арендатора Azure AD должен [явным образом предоставить разрешения приложению](/graph/security-authorization#grant-permissions-to-an-application). После того как приложению будут предоставлены разрешения, все члены арендатора Azure AD получат предоставленные разрешения.
 
-## <a name="enable-proactive-app-installation-and-messaging"></a>Включить активную установку приложений и обмен сообщениями
+## <a name="enable-proactive-app-installation-and-messaging"></a>Включить упреждающую установку приложений и обмен сообщениями
 
 > [!IMPORTANT]
-> Microsoft Graph может устанавливать только приложения, опубликованные в магазине приложений организации или Teams магазине.
+> Microsoft Graph может устанавливать только приложения, опубликованные в хранилище приложений организации или в Teams Store.
 
-### <a name="create-and-publish-your-proactive-messaging-bot-for-teams"></a>Создание и публикация вашего активного бота обмена сообщениями для Teams
+### <a name="create-and-publish-your-proactive-messaging-bot-for-teams"></a>Создайте и опубликуйте бот для активного обмена сообщениями для Teams
 
-Чтобы начать работу, вам нужен бот [](../../bots/how-to/create-a-bot-for-teams.md) для Teams с проактивными возможностями обмена сообщениями, который находится в магазине [](../../concepts/deploy-and-publish/apps-publish-overview.md#publish-your-app-to-your-org) приложений организации или [Teams магазине](../../concepts/deploy-and-publish/apps-publish-overview.md#publish-your-app-to-the-teams-store).[](../../concepts/bots/bot-conversations/bots-conv-proactive.md)
+Для начала вам понадобится [бот для Teams](../../bots/how-to/create-a-bot-for-teams.md) с [возможностями упреждающего обмена сообщениями](../../concepts/bots/bot-conversations/bots-conv-proactive.md), который находится в [хранилище приложений организации](../../concepts/deploy-and-publish/apps-publish-overview.md#publish-your-app-to-your-org) или в [Teams Store](../../concepts/deploy-and-publish/apps-publish-overview.md#publish-your-app-to-the-teams-store).
 
 > [!TIP]
-> Готовый к [*производству шаблон Communicator*](../..//samples/app-templates.md#company-communicator) позволяет транслировать сообщения и является хорошим началом для создания вашего проактивного приложения-бота.
+> Готовый к работе шаблон приложения [*Company Communicator*](../..//samples/app-templates.md#company-communicator) позволяет осуществлять широковещательную рассылку сообщений и является хорошим началом для создания упреждающего приложения-бота.
 
-### <a name="get-the-teamsappid-for-your-app"></a>Get the `teamsAppId` for your app
+### <a name="get-the-teamsappid-for-your-app"></a>Получите `teamsAppId` для приложения
 
-Вы можете получить следующие `teamsAppId` способы:
+Вы можете получить `teamsAppId` следующими способами:
 
 * Из каталога приложений организации:
 
-    **Ссылка Graph Microsoft:** [тип ресурсов teamsApp](/graph/api/resources/teamsapp?view=graph-rest-1.0&preserve-view=true)
+    **Справочник по странице Microsoft Graph:** [тип ресурса teamApp](/graph/api/resources/teamsapp?view=graph-rest-1.0&preserve-view=true)
 
-    **ЗАПРОС HTTP GET** :
+    Запрос **HTTP GET**:
 
     ```http
     GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq '{IdFromManifest}'
     ```
 
-    Запрос должен вернуть объект `teamsApp` `id`, который является созданным в каталоге приложения ИД приложения. Это отличается от ID, который вы предоставили в манифесте Teams приложения:
+    Запрос должен возвращать `teamsApp`объект`id`, который представляет собой идентификатор приложения, сгенерированный каталогом приложения. Он отличается от идентификатора, который вы указали в манифесте приложения Teams:
 
     ```json
     {
@@ -90,53 +90,53 @@ ms.locfileid: "63398703"
     }
     ```
 
-* Если приложение уже загружено или загружено для пользователя в личной области:
+* Если ваше приложение уже было отправлено или загружено как неопубликованное приложение для пользователя в индивидуальном объеме:
 
-    **Ссылка Graph Microsoft: Список** [приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
+    **Справочник по странице Microsoft Graph:** [Список приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
-    **ЗАПРОС HTTP GET** :
+    Запрос **HTTP GET**:
 
     ```http
     GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
     ```
 
-* Если ваше приложение уже загружено или загружено для канала в области группы:
+* Если ваше приложение уже отправлено или загружено как неопубликованное приложение для канала в Teams в масштабе команды:
 
-    **Ссылка Graph Microsoft: Список** [приложений в команде](/graph/api/team-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
+    **Справочник по странице Microsoft Graph:** [Список приложений в команде](/graph/api/team-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
-    **ЗАПРОС HTTP GET** :
+    Запрос **HTTP GET**:
 
     ```http
     GET https://graph.microsoft.com/v1.0/teams/{team-id}/installedApps?$expand=teamsApp&$filter=teamsApp/externalId eq '{IdFromManifest}'
     ```
 
     > [!TIP]
-    > Чтобы сузить список результатов, можно отфильтровать любое из полей [**объекта teamsApp**](/graph/api/resources/teamsapp?view=graph-rest-1.0&preserve-view=true) .
+    > Чтобы сузить список результатов, вы можете отфильтровать любое из полей объекта [**teamApp**](/graph/api/resources/teamsapp?view=graph-rest-1.0&preserve-view=true).
 
-### <a name="determine-whether-your-bot-is-currently-installed-for-a-message-recipient"></a>Определите, установлен ли в настоящее время бот для получателя сообщения
+### <a name="determine-whether-your-bot-is-currently-installed-for-a-message-recipient"></a>Определите, установлен ли ваш бот в настоящее время для получателя сообщения
 
-Вы можете определить, установлен ли ваш бот для получателя сообщений следующим образом:
+Вы можете определить, установлен ли ваш бот для получателя сообщения, следующим образом:
 
-**Ссылка Graph Microsoft: Список** [приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
+**Справочник по странице Microsoft Graph:** [Список приложений, установленных для пользователя](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
-**ЗАПРОС HTTP GET** :
+Запрос **HTTP GET**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
 ```
 
-Возвращает запрос:
+Запрос возвращает:
 
 * Пустой массив, если приложение не установлено.
-* Массив с одним [объектом teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true) , если приложение установлено.
+* Массив с одним объектом [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true), если приложение установлено.
 
-### <a name="install-your-app"></a>Установка приложения
+### <a name="install-your-app"></a>Установите приложение
 
 Вы можете установить приложение следующим образом:
 
-**Ссылка Graph Microsoft:** [Установите приложение для пользователя](/graph/api/userteamwork-post-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
+**Ссылка на страницу Microsoft Graph:** [Установить приложение для пользователя](/graph/api/userteamwork-post-installedapps?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
-**ЗАПРОС HTTP POST** :
+Запрос **HTTP POST**
 
 ```http
 POST https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps
@@ -147,37 +147,37 @@ Content-Type: application/json
 }
 ```
 
-Если у пользователя есть Microsoft Teams, установка приложения происходит немедленно. Для просмотра установленного приложения может потребоваться перезапуск.
+Если у пользователя запущены Microsoft Teams, установка приложения происходит немедленно. Для просмотра установленного приложения может потребоваться перезагрузка.
 
-### <a name="retrieve-the-conversation-chatid"></a>Извлечение беседы `chatId`
+### <a name="retrieve-the-conversation-chatid"></a>Получить беседу `chatId`
 
-Когда приложение установлено для пользователя, `conversationUpdate` бот получает уведомление о событии, содержа которое содержит необходимые сведения для отправки проактивного сообщения.[](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition)
+Когда ваше приложение установлено для пользователя, бот получает `conversationUpdate` [уведомление о событии](../../resources/bot-v3/bots-notifications.md#team-member-or-bot-addition), содержащее необходимую информацию для отправки упреждающего сообщения.
 
-**Ссылка Graph microsoft:** [получить чат](/graph/api/chat-get?view=graph-rest-v1.0&tabs=http&preserve-view=true)
+**Справочник по странице Microsoft Graph:** [Получить чат](/graph/api/chat-get?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
-1. Вы должны иметь приложение `{teamsAppInstallationId}`. Если у вас его нет, используйте следующие:
+1. У вас должен быть `{teamsAppInstallationId}` приложения. Если у вас этого нет, используйте следующее:
 
-    **ЗАПРОС HTTP GET** :
+    Запрос **HTTP GET**:
 
     ```http
     GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps?$expand=teamsApp&$filter=teamsApp/id eq '{teamsAppId}'
     ```
 
-    Свойство **id** ответа — .`teamsAppInstallationId`
+    Свойство **id** отклика — `teamsAppInstallationId`.
 
-1. Сделайте следующий запрос, чтобы получить `chatId`:
+1. Отправьте следующий запрос, чтобы получить `chatId`:
 
-    **HTTP GET** request (permission — `TeamsAppInstallation.ReadWriteSelfForUser.All`):  
+    Запрос **HTTP GET** (разрешение — `TeamsAppInstallation.ReadWriteSelfForUser.All`):  
 
     ```http
     GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps/{teamsAppInstallationId}/chat
     ```
 
-    Свойство **id** ответа — .`chatId`
+    Свойство **id** отклика — `chatId`.
 
-    Вы также можете получить следующий `chatId` запрос, но для этого требуется более широкое `Chat.Read.All` разрешение:
+    Вы также можете получить `chatId` с помощью следующего запроса, но для этого требуется более широкое `Chat.Read.All` разрешение:
 
-    **HTTP GET** request (permission — `Chat.Read.All`):
+    Запрос **HTTP GET** (разрешение — `Chat.Read.All`):
 
     ```http
     GET https://graph.microsoft.com/v1.0/users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppId}')
@@ -185,11 +185,11 @@ Content-Type: application/json
 
 ### <a name="send-proactive-messages"></a>Отправка упреждающих сообщений
 
-Ваш бот может [отправлять упреждающие](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) сообщения после того, как бот был добавлен для пользователя или группы и получил всю информацию о пользователе.
+Бот может [отправлять упреждающие сообщения](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) после добавления бота для пользователя или команды и получения им всех сведений о пользователе.
 
 ## <a name="code-snippets"></a>Фрагменты кода
 
-В следующем коде приводится пример отправки упреждающих сообщений:
+Следующий код представляет собой пример отправки упреждающих сообщений:
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
@@ -237,14 +237,14 @@ server.get('/api/notify', async (req, res) => {
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** |
 |---------------|--------------|--------|-------------|
-| Упреждающая установка приложений и отправка упреждающих уведомлений | В этом примере показано, как использовать упреждающую установку приложений для пользователей и отправлять упреждающие уведомления, вызывая API Microsoft Graph. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
+| Упреждающая установка приложений и отправка упреждающих уведомлений | В этом примере показано, как использовать упреждающую установку приложений для пользователей и отправлять упреждающие уведомления, вызывая API Microsoft Graph. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) |
 
-## <a name="additional-code-samples"></a>Дополнительные примеры кода
+## <a name="additional-code-samples"></a>Дополнительный образец кода
 >
 > [!div class="nextstepaction"]
 > [**Примеры кода упреждающих сообщений в Teams**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Управление политиками настройки приложений в Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy)
 * [Отправка упреждающих уведомлений пользователям SDK v4](/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true)
