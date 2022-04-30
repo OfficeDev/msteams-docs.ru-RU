@@ -1,19 +1,19 @@
 ---
-title: Протестировать согласие группы в Teams
-description: Узнайте, как проверить согласие на использование ресурсов для группы в Teams с помощью почтальона с помощью файла JSON.
-ms.localizationpriority: medium
+title: Проверка согласия для конкретного ресурса для команды в Teams
+description: Узнайте, как проверить согласие для конкретного ресурса для команды в Teams с помощью Postman с образцом JSON-файла.
+ms.localizationpriority: high
 author: akjo
 ms.author: lajanuar
 ms.topic: how-to
-keywords: команды авторизации OAuth SSO Azure AD rsc postman Graph
-ms.openlocfilehash: ab742dd9e472beec8e607c036639322fc916e1ac
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
-ms.translationtype: MT
+keywords: авторизация teams OAuth SSO Azure AD rsc Postman Graph
+ms.openlocfilehash: a069740411d43274f87c68a2ceadd46dfb7aa080
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63452685"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111740"
 ---
-# <a name="test-team-rsc-postman-collection-json"></a>Тестовая группа RSC Postman коллекция JSON
+# <a name="test-team-rsc-postman-collection-json"></a>Тестовая команда коллекции RSC Postman JSON
 
 ```json
 {

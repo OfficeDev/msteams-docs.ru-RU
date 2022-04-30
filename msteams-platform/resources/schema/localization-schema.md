@@ -1,27 +1,27 @@
 ---
 title: Справочные материалы по локализации схемы JSON
-description: Описывает схему локализации, поддерживаемую файлом локализации для Microsoft Teams с помощью примера схемы
+description: Описание схемы локализации, поддерживаемой файлом локализации для Microsoft Teams, на примере схемы
 ms.topic: reference
-ms.localizationpriority: medium
-keywords: группы проявляют локализацию схемы
+ms.localizationpriority: high
+keywords: teams манифест схема локализация; teams manifest schema localization
 ms.date: 05/20/2019
-ms.openlocfilehash: cbe408deb8788c9b047eb6bd954f79c73dbd057f
-ms.sourcegitcommit: 2d5bdda6c52693ed682bbd543b0aa66e1feb3392
-ms.translationtype: MT
+ms.openlocfilehash: cf55754b5f9b30508bc01184d75f489dc2a5b7b7
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61768394"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111915"
 ---
 # <a name="localize-json-schema-reference"></a>Справочные материалы по локализации схемы JSON
 
-Файл Microsoft Teams локализации описывает языковые переводы, которые обслуживаются в зависимости от параметров языка клиента. Файл должен соответствовать схеме, которая была на уровне [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json) .
+В файле локализации Microsoft Teams описаны переводы, которые обслуживаются на основе языковых параметров клиента. Файл должен соответствовать схеме, размещенной по адресу [`https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json`](https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.Localization.schema.json).
 
 > [!TIP]
-> Укажите схему в начале манифеста, чтобы включить или аналогичную поддержку `IntelliSense` редактора кода: `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
+> Укажите схему в начале манифеста, чтобы включить `IntelliSense` или аналогичную поддержку в редакторе кода: `"$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",`
 
 ## <a name="example"></a>Пример
 
-Пример схемы локализации JSON:
+Ниже приведен пример схемы JSON для локализации.
 
 ```json
 {
@@ -42,24 +42,24 @@ ms.locfileid: "61768394"
 
 |Свойство|Тип|Максимальная длина|Описание|
 |---------------|--------|---------|------------------|
-|`$schema`|URI|Недоступно|URL https:// ссылки на схему JSON для манифеста.|
-|`name.short`|String|30|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|
-|`name.full`|Строка|100|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|
-|`description.short`|String|80|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|
-|`description.full`|String|4000|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|
-|`staticTabs\\[([0-9]|1[0-5])\\]\\.name`|String|128|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`bots\\[0\\]\\.commandLists\\[[0-2]\\]\\.commands\\[[0-9]\\]\\.title`|String|32|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`bots\\[0\\]\\.commandLists\\[[0-2]\\]\\.commands\\[[0-9]\\]\\.description`|String|128|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.title`|String|32|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.description`|String|128|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.title`|String|32|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.description`|String|128|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.value`|String|512|Заменяет соответствующую строку из манифеста приложения значением, которое здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.choices\\[[0-9]\\]\\.title`|String|128|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
-|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.taskInfo\\.title`|String|64|Заменяет соответствующие строки из манифеста приложения значением, предоставленным здесь.|
+|`$schema`|URI|Н/Д|URL-адрес со ссылкой на схему JSON для манифеста (https://).|
+|`name.short`|String|30|Заменяет соответствующую строку из манифеста приложения на указанное здесь значение.|
+|`name.full`|Строка|100|Заменяет соответствующую строку из манифеста приложения на указанное здесь значение.|
+|`description.short`|String|80|Заменяет соответствующую строку из манифеста приложения на указанное здесь значение.|
+|`description.full`|String|4000|Заменяет соответствующую строку из манифеста приложения на указанное здесь значение.|
+|`staticTabs\\[([0-9]|1[0-5])\\]\\.name`|String|128|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`bots\\[0\\]\\.commandLists\\[[0-2]\\]\\.commands\\[[0-9]\\]\\.title`|String|32|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`bots\\[0\\]\\.commandLists\\[[0-2]\\]\\.commands\\[[0-9]\\]\\.description`|String|128|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.title`|String|32|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.description`|String|128|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.title`|String|32|Заменяет соответствующую строку из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.description`|String|128|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.value`|String|512|Заменяет соответствующую строку из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.parameters\\[[0-4]\\]\\.choices\\[[0-9]\\]\\.title`|String|128|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
+|`composeExtensions\\[0\\]\\.commands\\[[0-9]\\]\\.taskInfo\\.title`|String|64|Заменяет соответствующие строки из манифеста приложения на указанное здесь значение.|
 |`activities.activityTypes\\[\\b([0-9]|[1-8][0-9]|9[0-9]|1[01][0-9]|12[0-7])\\b]\\.description`|String|128|Краткое описание уведомления|
-|`activities.activityTypes\\[\\b([0-9]|[1-8][0-9]|9[0-9]|1[01][0-9]|12[0-7])\\b]\\.templateText`|String|128|Ex: "{actor} создал задачу {taskId} для вас"|
+|`activities.activityTypes\\[\\b([0-9]|[1-8][0-9]|9[0-9]|1[01][0-9]|12[0-7])\\b]\\.templateText`|String|128|Пример: "Пользователь {actor} создал для вас задачу {taskId}"|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Локализация приложения](~/concepts/build-and-test/apps-localization.md)
