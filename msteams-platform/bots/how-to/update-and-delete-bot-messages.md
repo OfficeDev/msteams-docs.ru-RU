@@ -1,32 +1,32 @@
 ---
-title: Обновление и удаление сообщений, отправленных из бота
+title: Обновляйте и удаляйте сообщения, отправленные ботом
 author: WashingtonKayaker
-description: Узнайте, как обновлять и удалять сообщения, отправленные из Microsoft Teams бота в различных средах и с помощью API REST с помощью образцов кода.
+description: Узнайте, как обновлять и удалять сообщения, отправленные ботом Microsoft Teams в разных средах и с помощью REST API, используя образцы кода.
 ms.topic: overview
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: b02e4ec19fdb3494ef4e84e4f8de1ba25645f91a
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
-ms.translationtype: MT
+ms.openlocfilehash: 76befe46bab8d6cc0aa3d5c0c1e2c8c0f15bf579
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63453728"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111411"
 ---
-# <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновление и удаление сообщений, отправленных из бота
+# <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновляйте и удаляйте сообщения, отправленные ботом
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
-Ваш бот может динамически обновлять сообщения после отправки, а не иметь их в виде статических снимков данных. Сообщения также можно удалить с помощью метода Bot Framework `DeleteActivity` .
+Бот может динамически обновлять сообщения после их отправки, а не сохранять их в виде статических снимков данных. Сообщения также можно удалить с помощью метода `DeleteActivity` Bot Framework.
 
 ## <a name="update-messages"></a>Обновление сообщений
 
-Динамические обновления сообщений можно использовать для сценариев, таких как обновления опросов, изменение доступных действий после нажатия кнопки или любое другое асинхронное изменение состояния.
+Вы можете использовать динамические обновления сообщений для таких сценариев, как обновления опроса, изменение действий, доступных после нажатия кнопки, или любое другое асинхронное изменение состояния.
 
-Новое сообщение не обязательно соответствует исходному типу. Например, если исходное сообщение содержит вложение, новое сообщение может быть простым текстовым сообщением.
+Новое сообщение не обязательно должно совпадать по типу с исходным. Например, если исходное сообщение содержит вложение, новое сообщение может быть простым текстовым сообщением.
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
-Чтобы обновить существующее сообщение, передай `Activity` новый объект с существующим ИД `UpdateActivityAsync` действий методу `TurnContext` класса. Дополнительные сведения см. в [тексте TurnContextClass](/dotnet/api/microsoft.bot.builder.turncontext?view=botbuilder-dotnet-stable&preserve-view=true).
+Чтобы обновить существующее сообщение, передайте новый объект `Activity` с существующим идентификатором действия в метод `UpdateActivityAsync` класса `TurnContext`. Подробнее в разделе [TurnContextClass](/dotnet/api/microsoft.bot.builder.turncontext?view=botbuilder-dotnet-stable&preserve-view=true).
 
 ```csharp
 var newActivity = MessageFactory.Text("The new text for the activity");
@@ -36,7 +36,7 @@ await turnContext.UpdateActivityAsync(newActivity, cancellationToken);
 
 # <a name="typescript"></a>[TypeScript](#tab/typescript)
 
-Чтобы обновить существующее сообщение, передай `Activity` новый объект с существующим ИД `updateActivity` действий методу `TurnContext` объекта. Дополнительные сведения см. [в обновленной версииActivity](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#updateactivity-partial-activity--&preserve-view=true).
+Чтобы обновить существующее сообщение, передайте новый объект `Activity` с существующим идентификатором действия в метод `updateActivity` объекта `TurnContext`. Подробнее в разделе [updateActivity](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#updateactivity-partial-activity--&preserve-view=true).
 
 ```typescript
 const newActivity = MessageFactory.text('The new text for the activity');
@@ -46,7 +46,7 @@ await turnContext.updateActivity(newActivity);
 
 # <a name="python"></a>[Python](#tab/python)
 
-Чтобы обновить существующее сообщение, передай `Activity` новый объект с существующим ИД `update_activity` действий методу `TurnContext` класса. См [. врезку TurnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
+Чтобы обновить существующее сообщение, передайте новый объект `Activity` с существующим идентификатором действия в метод `update_activity` класса `TurnContext`. См. [TurnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
 
 ```python
 new_activity = MessageFactory.text("The new text for the activity")
@@ -57,9 +57,9 @@ update_result = await context.update_activity(new_activity)
 # <a name="rest-api"></a>[REST API](#tab/rest)
 
 > [!NOTE]
-> Вы можете разрабатывать Teams в любой технологии веб-программирования и напрямую вызывать API-API службы [Bot Connector REST](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true). Для этого необходимо реализовать процедуры безопасности проверки подлинности с помощью запросов API.[](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true)
+> Вы можете разрабатывать приложения Teams с помощью любой технологии веб-программирования и напрямую вызывать [REST API службы соединителя ботов](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true). Для этого вам необходимо реализовать процедуры безопасности [Проверки подлинности](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true) безопасности с вашими запросами API.
 
-Чтобы обновить существующее действие в беседе, включив `conversationId` конечную точку `activityId` запроса и в нее. Чтобы завершить этот сценарий, необходимо кэшировали ID активности, возвращаемую исходным вызовом после.
+Чтобы обновить существующее действие в беседе, включите `conversationId` и `activityId` в конечную точку запроса. Чтобы выполнить этот сценарий, вы должны кэшировать идентификатор действия, возвращенный исходным почтовым вызовом.
 
 ```http
 PUT /v3/conversations/{conversationId}/activities/{activityId}
@@ -67,20 +67,20 @@ PUT /v3/conversations/{conversationId}/activities/{activityId}
 
 |Запрос |Отклик |
 |----|----|
-| Объект [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true) . | Объект [ResourceResponse](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#resourceresponse-object&preserve-view=true) . |
+| Объект [Действия](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true). | Объект [ResourceResponse](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#resourceresponse-object&preserve-view=true). |
 
 ---
 ---
 
-Теперь, когда у вас есть обновленные сообщения, обнови существующую карту на выбор кнопок для входящих действий.
+Теперь, когда вы обновили сообщения, обновите существующую карточку при выборе кнопки для входящих действий.
 
-## <a name="update-cards"></a>Обновление карт
+## <a name="update-cards"></a>Обновить карточки
 
-Чтобы обновить существующую карту при выборе кнопки, можно использовать `ReplyToId` входящие действия.
+Чтобы обновить существующую карточку при выборе кнопки, вы можете использовать `ReplyToId` входящую активность.
 
 # <a name="cnet"></a>[C#/.NET](#tab/dotnet)
 
-Чтобы обновить существующую карту на выбор кнопки, `Activity` `ReplyToId` `UpdateActivityAsync` передай новый объект с обновленной картой и в качестве удостоверения действий методу `TurnContext` класса. См [. врезку TurnContextClass](/dotnet/api/microsoft.bot.builder.turncontext?view=botbuilder-dotnet-stable&preserve-view=true).
+Чтобы обновить существующую карточку при выборе кнопки, передайте новый объект `Activity` с обновленной карточкой и `ReplyToId` как идентификатор действия для метода `UpdateActivityAsync` класса `TurnContext`. См. [TurnContextClass](/dotnet/api/microsoft.bot.builder.turncontext?view=botbuilder-dotnet-stable&preserve-view=true).
 
 ```csharp
 var activity = MessageFactory.Attachment(card.ToAttachment());
@@ -90,7 +90,7 @@ await turnContext.UpdateActivityAsync(activity, cancellationToken);
 
 # <a name="typescript"></a>[TypeScript](#tab/typescript)
 
-Чтобы обновить существующую карту при выборе кнопки, `Activity` `replyToId` `updateActivity` передай новый объект с обновленной картой и в качестве удостоверения активности методу `TurnContext` объекта. См [. updateActivity](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#updateactivity-partial-activity--&preserve-view=true).
+Чтобы обновить существующую карточку при выборе кнопки, передайте новый объект `Activity` с обновленной карточкой и `replyToId` как идентификатор действия для метода `updateActivity` объекта `TurnContext` См. [updateActivity](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#updateactivity-partial-activity--&preserve-view=true)
 
 ```typescript
 const message = MessageFactory.attachment(card);
@@ -100,7 +100,7 @@ await context.updateActivity(message);
 
 # <a name="python"></a>[Python](#tab/python)
 
-Чтобы обновить существующую карту нажатием кнопки, `Activity` `reply_to_id` `update_activity` передайте новый объект с обновленной картой и в качестве удостоверения действий методу `TurnContext` класса. См [. врезку TurnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
+Чтобы обновить существующую карточку при нажатии кнопки, передайте новый объект `Activity` с обновленной карточкой и `reply_to_id` как идентификатор действия для метода `update_activity` класса `TurnContext`. См. [TurnContextClass](/python/api/botbuilder-core/botbuilder.core.turncontext?view=botbuilder-py-latest&preserve-view=true).
 
 ```python
 updated_activity = MessageFactory.attachment(CardFactory.hero_card(card))
@@ -111,9 +111,9 @@ await turn_context.update_activity(updated_activity)
 # <a name="rest-api"></a>[REST API](#tab/rest)
 
 > [!NOTE]
-> Вы можете разрабатывать Teams в любой технологии веб-программирования и напрямую вызывать API службы подключения [ботов REST](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true). Для этого необходимо [реализовать процедуры](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true) безопасности проверки подлинности с помощью запросов API.
+> Вы можете разрабатывать приложения Teams с помощью любой технологии веб-программирования и напрямую вызывать [REST API службы соединителя ботов](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true). Для этого вам необходимо реализовать процедуры безопасности [Проверки подлинности](/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true) безопасности с вашими запросами API.
 
-Чтобы обновить существующее действие в беседе, включив `conversationId` конечную точку `activityId` запроса и в нее. Чтобы завершить этот сценарий, необходимо кэшировали ID активности, возвращаемую исходным вызовом после.
+Чтобы обновить существующее действие в беседе, включите `conversationId` и `activityId` в конечную точку запроса. Чтобы выполнить этот сценарий, вы должны кэшировать идентификатор действия, возвращенный исходным почтовым вызовом.
 
 ```http
 PUT /v3/conversations/{conversationId}/activities/{activityId}
@@ -121,19 +121,19 @@ PUT /v3/conversations/{conversationId}/activities/{activityId}
 
 |Запрос |Отклик |
 |----|----|
-| Объект [активности](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true) . | Объект [ResourceResponse](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#resourceresponse-object&preserve-view=true) . |
+| Объект [Действия](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true). | Объект [ResourceResponse](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#resourceresponse-object&preserve-view=true). |
 
 ---
 
-Теперь, когда у вас есть обновленные карты, вы можете удалять сообщения с помощью Bot Framework.
+Теперь, когда у вас есть обновленные карточки, вы можете удалять сообщения с помощью Bot Framework.
 
 ## <a name="delete-messages"></a>Удаление сообщений
 
-В bot Framework каждое сообщение имеет свой уникальный идентификатор активности. Сообщения можно удалить с помощью метода Bot Framework `DeleteActivity` .
+В Bot Framework каждое сообщение имеет уникальный идентификатор действия. Сообщения можно удалить с помощью метода `DeleteActivity` Bot Framework.
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
-Чтобы удалить сообщение, передайте его ID методу `DeleteActivityAsync` `TurnContext` класса. Дополнительные сведения см. в [методе TurnContext.DeleteActivityAsync](/dotnet/api/microsoft.bot.builder.turncontext.deleteactivityasync?view=botbuilder-dotnet-stable&preserve-view=true).
+Чтобы удалить сообщение, передайте идентификатор этого действия методу `DeleteActivityAsync` класса `TurnContext`. Подробнее см. [TurnContext.DeleteActivityAsync Method](/dotnet/api/microsoft.bot.builder.turncontext.deleteactivityasync?view=botbuilder-dotnet-stable&preserve-view=true).
 
 ```csharp
 foreach (var activityId in _list)
@@ -144,7 +144,7 @@ foreach (var activityId in _list)
 
 # <a name="typescript"></a>[TypeScript](#tab/typescript)
 
-Чтобы удалить сообщение, передайте его ID методу `deleteActivity` `TurnContext` объекта. Дополнительные сведения см. в [публикации deleteActivity](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#deleteactivity-string---partial-conversationreference--&preserve-view=true).
+Чтобы удалить сообщение, передайте идентификатор этого действия методу `deleteActivity` объекта `TurnContext`. Подробнее см. [deleteActivity](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest#deleteactivity-string---partial-conversationreference--&preserve-view=true).
 
 ```typescript
 for (let i = 0; i < activityIds.length; i++) {
@@ -154,7 +154,7 @@ for (let i = 0; i < activityIds.length; i++) {
 
 # <a name="python"></a>[Python](#tab/python)
 
-Чтобы удалить это сообщение, передайте его ID методу `delete_activity` `TurnContext` объекта. Дополнительные сведения см. [в публикации activity-update-and-delete](https://github.com/microsoft/botbuilder-python/blob/c04ecacb22c1f4b43a671fe2f1e4782218391975/tests/teams/scenarios/activity-update-and-delete/bots/activity_update_and_delete_bot.py).
+Чтобы удалить это сообщение, передайте идентификатор этого действия методу `delete_activity` объекта `TurnContext`. Подробнее см. [activity-update-and-delete](https://github.com/microsoft/botbuilder-python/blob/c04ecacb22c1f4b43a671fe2f1e4782218391975/tests/teams/scenarios/activity-update-and-delete/bots/activity_update_and_delete_bot.py).
 
 ```python
 for each activity_id in _list:
@@ -163,21 +163,21 @@ for each activity_id in _list:
 
 # <a name="rest-api"></a>[REST API](#tab/rest)
 
-Чтобы удалить существующее действие в беседе, включите `conversationId` конечную точку `activityId` запроса и в нее.
+Чтобы удалить существующее действие в беседе, включите `conversationId` и `activityId` в конечную точку запроса.
 
 ```http
 DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-| **Запрос и ответ** | **Описание** |
+| **Запрос и отклик** | **Описание** |
 |----|----|
-| Н/Д | Код состояния HTTP, указывающий результат операции. В теле ответа ничего не указывается. |
+| Недоступно | Код состояния HTTP, указывающий результат операции. В тексте отклика ничего не указано. |
 
 ---
 
 ## <a name="code-sample"></a>Пример кода
 
-В следующем примере кода демонстрируются основы бесед:
+В следующем образце кода демонстрируются основы бесед.
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------------------|-----------------|--------|-------------|--------|
@@ -186,4 +186,4 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Получить Teams контекст](~/bots/how-to/get-teams-context.md)
+> [Получить контекст Teams](~/bots/how-to/get-teams-context.md).
