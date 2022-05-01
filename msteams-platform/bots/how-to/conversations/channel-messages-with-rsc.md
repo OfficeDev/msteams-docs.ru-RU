@@ -3,46 +3,46 @@ title: Получение всех сообщений канала через RS
 author: surbhigupta12
 description: Получение всех сообщений канала с разрешениями RSC
 ms.topic: conceptual
-ms.localizationpriority: medium
-ms.openlocfilehash: a78910b083943e5296f3e0d50eae00a713f194aa
-ms.sourcegitcommit: e40383d9081bf117030f7e6270140e6b94214e8b
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 6b4c2add73c54aadd068c16171a0d340a0c79075
+ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65102076"
+ms.lasthandoff: 04/28/2022
+ms.locfileid: "65111208"
 ---
 # <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
-Модель разрешений для конкретного ресурса (RSC), изначально разработанная для Teams Graph API, распространяется на сценарии бота.
+Модель разрешений для конкретного ресурса (RSC), изначально разработанная для API Graph Teams, распространяется на сценарии бота.
 
-Теперь с помощью RSC вы можете запросить у владельцев команды согласие на получение ботом сообщений пользователей по стандартным каналам в команде без @mentioned. Эта возможность включена путем указания `ChannelMessage.Read.Group` разрешения в манифесте приложения, Teams RSC. После настройки владельцы команд могут предоставить согласие во время процесса установки приложения.
+Теперь с помощью RSC вы можете запрашивать у владельцев команд согласие на получение ботом сообщений пользователей в стандартных каналах команды без @упоминания. Эта возможность включается путем указания разрешения `ChannelMessage.Read.Group` в манифесте приложения Teams с поддержкой RSC. После настройки владельцы команд могут предоставлять согласие во время установки приложения.
 
-Дополнительные сведения о включении RSC для вашего приложения см. в разделе о согласии для конкретных ресурсов [в Teams](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#update-your-teams-app-manifest).
+Дополнительные сведения о включении RSC для вашего приложения см. в разделе [о согласии для конкретных ресурсов в Teams](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#update-your-teams-app-manifest).
 
-## <a name="enable-bots-to-receive-all-channel-messages"></a>Включение ботов для получения всех сообщений канала
+## <a name="enable-bots-to-receive-all-channel-messages"></a>Включение ботов для получения всех сообщений каналов
 
-Разрешение `ChannelMessage.Read.Group` RSC распространяется на ботов. С согласия пользователя это разрешение позволяет приложениям graph получать все сообщения в беседе и ботам получать все сообщения каналов без @mentioned.
+Разрешение RSC `ChannelMessage.Read.Group` распространяется на ботов. С согласия пользователя это разрешение позволяет приложениям Graph получать все сообщения в беседе, а ботам — получать все сообщения каналов без @упоминания.
 
 > [!NOTE]
 >
-> * Службы, для которых требуется доступ ко всем Teams сообщений, должны использовать API-интерфейсы Graph, которые также предоставляют доступ к архивным данным в каналах и чатах.
-> * Боты должны соответствующим `ChannelMessage.Read.Group` образом использовать разрешение RSC для создания и улучшения взаимодействия с пользователями в команде, в противном случае они не будут проходить утверждение магазина. Описание приложения должно включать использование ботом считывания данных.
-> * Боты `ChannelMessage.Read.Group` могут не использовать разрешение RSC для извлечения больших объемов данных клиента.
+> * Службы, которым требуется доступ ко всем данным сообщений Teams, должны использовать API-интерфейсы Graph, также предоставляющие доступ к архивным данным в каналах и чатах.
+> * Боты должны соответствующим образом использовать разрешение RSC `ChannelMessage.Read.Group` для создания и расширения взаимодействия с пользователями в команде. В противном случае они не пройдут утверждение магазина. Описание приложения должно включать способ использования ботом считываемых данных.
+> * Боты могут не использовать разрешение RSC `ChannelMessage.Read.Group` для извлечения больших объемов данных клиента.
 
 ## <a name="update-app-manifest"></a>Обновление манифеста приложения
 
-Для получения ботом всех сообщений канала RSC `ChannelMessage.Read.Group` необходимо настроить в манифесте Teams с разрешением, указанным в свойстве`webApplicationInfo`.
+Чтобы ваш бот получал все сообщения каналов, RSC должно быть настроено в манифесте приложения Teams с разрешением `ChannelMessage.Read.Group`, указанным в свойстве `webApplicationInfo`.
 
 ![Обновление манифеста приложения](~/bots/how-to/conversations/Media/appmanifest.png)
 
 
-Ниже приведен пример `webApplicationInfo` объекта:
+Ниже приведен пример объекта `webApplicationInfo`.
 
-* **id**: идентификатор Microsoft Azure Active Directory (Azure AD). Это может быть тот же идентификатор бота.
-* **resource**: любая строка. Это поле не имеет операции в RSC, но должно быть добавлено и иметь значение, чтобы избежать ошибки.
-* **applicationPermissions**: необходимо указать разрешения RSC `ChannelMessage.Read.Group` для вашего приложения. Дополнительные сведения см. [в разделе о разрешениях для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#resource-specific-permissions).
+* **id**: идентификатор вашего приложения Microsoft Azure Active Directory (Azure AD). Может совпадать с идентификатором вашего бота.
+* **resource**: любая строка. Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать отклика с ошибкой.
+* **applicationPermissions**: необходимо указать разрешения RSC для вашего приложения с `ChannelMessage.Read.Group`. Дополнительные сведения см. в разделе [Разрешения для определенных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#resource-specific-permissions).
 
-В следующем коде приведен пример манифеста приложения:
+В следующем коде приведен пример манифеста приложения.
 
 ```json
 "webApplicationInfo": {
@@ -54,41 +54,41 @@ ms.locfileid: "65102076"
   }
 ```
 
-## <a name="sideload-in-a-team"></a>Загрузка неопубликованных приложений в команде
+## <a name="sideload-in-a-team"></a>Загрузка без публикации в команде
 
-Чтобы загрузить неопубликованную команду для проверки, должны ли все сообщения канала в команде с RSC получаться без @mentioned:
+Чтобы выполнить загрузку без публикации в команде для тестирования того, удается ли получить все сообщения каналов в команде с RSC без @упоминания:
 
 1. Выберите или создайте команду.
-1. Щелкните многоточие &#x25CF;&#x25CF;&#x25CF; области слева. Появится раскрывающееся меню.
-1. В **раскрывающемся меню выберите** команду "Управление". Отобразятся сведения.
+1. Щелкните многоточие &#x25CF;&#x25CF;&#x25CF; в области слева. Появится раскрывающееся меню.
+1. Выберите **Управление командой** в раскрывающемся меню. Отобразятся сведения.
 
    ![Управление приложениями в команде](~/bots/how-to/conversations/Media/managingteam.png)
 
       :::image type="content" source="Media/managingteam.png" alt-text="управление командой"border="true":::
 
 1. Выберите **Приложения**. Появится несколько приложений.
-1. Выберите **Upload пользовательское приложение в** правом нижнем углу.
+1. Выберите **Отправить пользовательское приложение** в правом нижнем углу.
 
       :::image type="content" source="Media/uploadingcustomapp.png" alt-text="отправка пользовательского приложения":::
   
-1. Выберите пакет приложения в диалоговом окне **"** Открыть".
+1. Выберите пакет приложения в диалоговом окне **Открыть**.
 1. Выберите **Открыть**.
 
       :::image type="content" source="Media/selectapppackage.png" alt-text="Выбор пакета приложения"lightbox="Media/selectapppackage.png"border="true":::
 
-1. Выберите **"** Добавить" во всплывающем окне сведений о приложении, чтобы добавить бота в выбранную команду.
+1. Нажмите **Добавить** во всплывающем окне со сведениями о приложении, чтобы добавить бота в выбранную команду.
 
       :::image type="content" source="Media/addingbot.png" alt-text="Добавление бота"lightbox="Media/addingbot.png"border="true":::
 
-1. Выберите канал и введите сообщение в канале для бота.
+1. Выберите канал и введите сообщение в канале для своего бота.
 
-    Бот получает сообщение, не @mentioned.
+    Бот получает сообщение без @упоминания.
 
       :::image type="content" source="Media/botreceivingmessage.png" alt-text="Получение сообщения ботом"lightbox="Media/botreceivingmessage.png"border="true":::
 
 ## <a name="code-snippets"></a>Фрагменты кода
 
-В следующем коде приведен пример разрешений RSC:
+В следующем коде приведен пример разрешений RSC.
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
@@ -120,11 +120,11 @@ this.onMessage(async (context, next) => {
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Сообщения канала с разрешениями RSC| Microsoft Teams пример приложения, демонстрирующий, как бот может получать все сообщения канала с помощью RSC, не @mentioned.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/nodejs) |
+|Сообщения каналов с разрешениями RSC| Пример приложения Microsoft Teams, демонстрирующий, как бот может получать все сообщения каналов с RSC без @упоминания.| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-receive-channel-messages-withRSC/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Беседы с ботами](/microsoftteams/platform/bots/how-to/conversations/conversation-basics)
 * [Согласие для определенных ресурсов](/microsoftteams/resource-specific-consent)
-* [Проверка согласия для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/test-resource-specific-consent)
-* [Upload пользовательского приложения в Teams](~/concepts/deploy-and-publish/apps-upload.md)
+* [Проверка согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/test-resource-specific-consent)
+* [Отправка пользовательского приложения в Teams](~/concepts/deploy-and-publish/apps-upload.md)
