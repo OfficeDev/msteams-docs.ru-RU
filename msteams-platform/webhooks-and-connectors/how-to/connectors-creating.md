@@ -3,19 +3,19 @@ title: Создание соединителей Office 365
 author: laujan
 description: Сведения о том, как начать работу с соединителями Office 365 в Microsoft Teams
 keywords: Соединитель Office 365 в Teams
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 1ec406d633eb2db0d3564984d5451d58d41b4c14
-ms.sourcegitcommit: 38c435e806bb7c2c30efd10e8264c5c06a43fad3
+ms.openlocfilehash: 8091edf34ff53930afea03cd2c4833bf6a000158
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65136970"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297151"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
-С помощью приложений Microsoft Teams вы можете добавить существующий соединитель Office 365 или создать новый в Teams. Дополнительные сведения см. в статье [Создание собственного соединителя](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector).
+С помощью приложений Microsoft Teams вы можете добавить существующий соединитель Office 365 или создать новый в Teams. Дополнительные сведения см. в разделе [Создание собственного соединителя](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector).
 
 ## <a name="add-a-connector-to-teams-app"></a>Добавление соединителя в приложение Teams
 
@@ -26,7 +26,7 @@ ms.locfileid: "65136970"
 Чтобы соединитель можно было использовать только в Microsoft Teams, следуйте инструкциям по отправке соединителя в статье [Публикация приложения в магазине Microsoft Teams.](~/concepts/deploy-and-publish/appsource/publish.md). В противном случае зарегистрированный соединитель работает во всех продуктах Office 365, поддерживающих приложения, включая Outlook и Teams.
 
 > [!IMPORTANT]
-> Соединитель регистрируется после выбора **Сохранить** на информационной панели разработчика соединителей. Если вы хотите опубликовать свой соединитель в AppSource, следуйте инструкциям в статье [Публикация приложения Microsoft Teams в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, распространяйте его непосредственно в организации. После [публикации соединителей для организации](#publish-connectors-for-the-organization) никаких дополнительных действий на информационной панели соединителей не требуется.
+> Соединитель регистрируется после выбора **Сохранить** на информационной панели разработчика соединителей. Если вы хотите опубликовать свой соединитель в AppSource, следуйте инструкциям в статье [Публикация приложения Microsoft Teams в AppSource](~/concepts/deploy-and-publish/apps-publish.md). Если вы не хотите публиковать приложение в AppSource, распространяйте его непосредственно в организации. После публикации соединителей для организации никаких дополнительных действий на информационной панели соединителей не требуется.
 
 ### <a name="integrate-the-configuration-experience"></a>Интеграция возможностей настройки
 
@@ -52,7 +52,7 @@ ms.locfileid: "65136970"
     > Необходимо вызвать `microsoftTeams.settings.setValidityState(true)` в ответ на выбор пользователя или обновление поля.
 
 1. Зарегистрируйте обработчик событий `microsoftTeams.settings.registerOnSaveHandler()`, который будет вызван, когда пользователь выбирает **Сохранить**.
-1. Вызовите `microsoftTeams.settings.setSettings()`, чтобы сохранить параметры соединителя. Сохраненные параметры также отображаются в диалоговом окне конфигурации, если пользователь пытается обновить существующую конфигурацию вашего соединителя.
+1. Вызовите `microsoftTeams.settings.setSettings()`, чтобы сохранить настройки коннектора. Сохраненные настройки также отображаются в диалоговом окне конфигурации, если пользователь пытается обновить существующую конфигурацию вашего соединителя.
 1. Вызовите `microsoftTeams.settings.getSettings()` для получения свойств веб-перехватчика, включая URL-адрес.
 
     > [!NOTE]
@@ -208,7 +208,7 @@ ms.locfileid: "65136970"
 
 ## <a name="test-your-connector"></a>Проверка соединители
 
-Чтобы проверить соединитель, отправьте его команде с любым другим приложением. Вы можете создать ZIP-пакет, используя файл манифеста из двух файлов значков и соединителей на информационной панели разработчика, измененный, как указано в разделе [Включение соединителя в манифест](#include-the-connector-in-your-manifest).
+Чтобы протестировать соединитель, загрузите его в команду с любым другим приложением. Вы можете создать ZIP-пакет, используя файл манифеста из двух файлов значков и соединителей на панели инструментов разработчика, измененный, как указано в разделе [Включение соединителя в манифест](#include-the-connector-in-your-manifest).
 
 После отправки приложения откройте список соединителей с любого канала. Прокрутите вниз, чтобы найти свое приложение в разделе **Отправленные**.
 
@@ -224,7 +224,7 @@ ms.locfileid: "65136970"
 ## <a name="distribute-webhook-and-connector"></a>Распространение веб-перехватчика и соединителя
 
 1. [Настройте входящий веб-перехватчик](~/webhooks-and-connectors/how-to/add-incoming-webhook.md#create-an-incoming-webhook) непосредственно для своей команды.
-1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?#integrate-the-configuration-experience) и [опубликуйте входящий веб-перехватчик](~/webhooks-and-connectors/how-to/connectors-creating.md#publish-connectors-for-the-organization) в соединителе Office 365.
+1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?#integrate-the-configuration-experience) и опубликуйте входящий веб-перехватчик в соединителе Office 365.
 1. Упакуйте и опубликуйте свой соединитель как часть отправки в [AppSource](~/concepts/deploy-and-publish/office-store-guidance.md).
 
 ## <a name="code-sample"></a>Пример кода

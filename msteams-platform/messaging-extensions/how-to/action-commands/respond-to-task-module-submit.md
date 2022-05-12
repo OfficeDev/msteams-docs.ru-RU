@@ -2,15 +2,15 @@
 title: Ответ на действие отправки модуля задач
 author: surbhigupta
 description: Описывает, как реагировать на действие отправки модуля задач из команды действия расширения для сообщений с упреждающим сообщением, другого модуля задач, бота адаптивной карточки и т.д. с помощью примеров кода.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: dfd8b04c07c60231ed5dfdae4cc5acac2346fe2c
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: de1924881b6e3732fc4b2170a496f234244be84e
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111495"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297200"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -204,7 +204,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 ## <a name="bot-response-with-adaptive-card"></a>Ответ бота с адаптивной карточкой
 
 > [!NOTE]
-> Для получения ответа бота с помощью адаптивной карточки, необходимо добавить объект `bot` в манифест приложения и определить требуемую область для бота. Используйте для бота тот же идентификатор, что использует расширение для сообщений.
+> Предпосылкой для получения ответа бота с адаптивной карточкой является добавление объекта `bot` в манифест приложения и определение требуемой области действия для бота. Используйте тот же идентификатор, что и расширение сообщения для вашего бота.
 
 Вы также можете ответить на `submitAction`, вставив сообщение с адаптивной карточкой в канал с помощью бота. Пользователь может просмотреть сообщение перед его отправкой. Это удобно в сценариях, где вы собираете сведения от пользователей перед созданием ответа адаптивной карточки или обновляете карточку после того, как кто-то с ней взаимодействует.
 
@@ -548,7 +548,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 На следующем рисунке слева изображено сообщение в виде карточки, отправленное ботом без атрибуции пользователя, а справа — карточка, отправленная ботом с атрибуцией пользователя.
 
-![боты атрибуции пользователей](../../../assets/images/messaging-extension/user-attribution-bots.png)
+:::image type="content" source="../../../assets/images/messaging-extension/user-attribution-bots.png" alt-text="Боты атрибуции пользователей":::
 
 Чтобы использовать атрибуцию пользователей в командах, необходимо добавить сущность упоминания `OnBehalfOf` в `ChannelData` в полезные данные `Activity`, отправляемые Teams.
 
@@ -595,14 +595,14 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 |`itemId`|Целое число|Описывает идентификацию элемента. Его значение должно быть равно `0`.|
 |`mentionType`|String|Описывает упоминание пользователя.|
 |`mri`|String|Идентификатор ресурса сообщения (MRI) пользователя, от имени которого отправляется сообщение. Имя отправителя сообщения будет отображаться как "\<user\> через \<bot name\>".|
-|`displayName`|String|Имя пользователя. Используется в качестве резервного варианта в случае, если разрешение имен недоступно.|
+|`displayName`|String|Имя человека. Используется как запасной вариант в случае, если разрешение имени недоступно.|
   
 ## <a name="code-sample"></a>Пример кода
 
 | Название примера           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
 |Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
-|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Дальнейшие действия
 
