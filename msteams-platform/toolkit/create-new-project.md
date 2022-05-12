@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: b28d68faf6d124faaa2b800accea568775acaa32
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: e287d6251af6d44b78010449dce751b938f390bd
+ms.sourcegitcommit: 05285653b2548e0b39e788cd07d414ac87ba3eaf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104156"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191266"
 ---
 # <a name="create-a-new-teams-app-using-teams-toolkit"></a>Создание нового приложения Teams с помощью "Инструментов Teams"
 
@@ -53,6 +53,6 @@ ms.locfileid: "65104156"
 
 * [Подготовка облачных ресурсов](provision.md)
 * [Развертывание приложения Teams в облаке](deploy.md)
-* [Публикация приложения Microsoft Teams](TeamsFx-collaboration.md)
+* [Публикация приложения Microsoft Teams](../concepts/deploy-and-publish/appsource/publish.md)
 * [Управление несколькими средами](TeamsFx-multi-env.md)
 * [Совместная работа с другими разработчиками в проекте Teams](TeamsFx-collaboration.md)

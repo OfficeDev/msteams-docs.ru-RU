@@ -3,15 +3,15 @@ title: События обновления беседы
 author: WashingtonKayaker
 description: Описана работа с событиями беседы из бота Microsoft Teams, обновлениями событий канала, событиями участников команды и событиями реакции на сообщения. Приведены примеры программного кода.
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: anclear
 keywords: события бот канал сообщение реакция беседа
-ms.openlocfilehash: 6d086ef2896a6fd19a128bcf4f1c8b363a21c5b3
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: a168231b48e493402f0190f36e65cf2918ca7e83
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111544"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297158"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -1409,7 +1409,7 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 ## <a name="event-handling-for-install-and-uninstall-events"></a>Обработка событий установки и удаления
 
-При использовании этих событий установки и удаления в некоторых сценариях боты генерируют исключения при получении непредвиденных событий от Teams. Это происходит в следующих случаях:
+Когда вы используете эти события установки и удаления, в некоторых случаях боты делают исключения при получении неожиданных событий от Teams. Это происходит в следующих случаях:
 
 * Вы создаете бот без Microsoft Bot Framework SDK, и в результате бот выдает исключение при получении непредвиденного события.
 * Вы создаете бот с помощью Microsoft Bot Framework SDK и решаете изменить обработку события по умолчанию путем переопределения базового дескриптора события.
@@ -1420,7 +1420,7 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

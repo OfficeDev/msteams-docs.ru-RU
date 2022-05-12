@@ -2,14 +2,14 @@
 title: Боты для звонков и виртуальных собраний
 description: Узнайте, как ваши Microsoft Teams-приложения могут взаимодействовать с пользователями с помощью голоса и видео, используя API Microsoft Graph для звонков и виртуальных собраний, а также узнайте о потоках мультимедиа в режиме реального времени.
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: вызов аудио звонок видео IVR голосовая онлайн-собрания режим реального времени бот стриминг мультимедиа
-ms.openlocfilehash: 1e719a60c1b14b6651c852ad0eae791e96fa8cc6
-ms.sourcegitcommit: 591bab4c7e01ac9099b9a540f149b64e6e31e6e8
+ms.openlocfilehash: 98dd4e329abec3e1b84ae9230d299a2e9d50fd8b
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65135684"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297172"
 ---
 # <a name="calls-and-online-meetings-bots"></a>Боты для звонков и виртуальных собраний
 

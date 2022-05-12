@@ -2,19 +2,19 @@
 title: Поддержка SSO в расширениях для сообщений
 author: KirtiPereira
 description: Узнайте, как включить поддержку SSO расширениям для обмена сообщениями с помощью примеров кода.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 148e8c59acc520e7771ac23c38b4b17c43d4d74d
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: bba2a8a225a75c21c46a242dec8acc55dcc0e8b5
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111257"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296947"
 ---
 # <a name="single-sign-on-support-for-message-extensions"></a>Поддержка единого входов у расширений для сообщений
 
-Поддержка единого входов (SSO) теперь доступна для расширений для сообщений и развертывания ссылок. Включение единого входа для расширений для сообщений по умолчанию обновляет маркер проверки подлинности, что минимизирует количество случаев, когда необходимо ввести учетные данные для входа в Microsoft Teams.
+Поддержка единого входа (SSO) теперь доступна для расширений сообщений и развертывания ссылок. Включение единого входа для расширений сообщений по умолчанию обновляет токен проверки подлинности, что сводит к минимуму количество раз, необходимое для ввода учетных данных для входа в Microsoft Teams.
 
 В этом документе приводится инструкция о том, как включить SSO и при необходимости сохранить маркер проверки подлинности.
 

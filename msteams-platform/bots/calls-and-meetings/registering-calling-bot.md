@@ -2,20 +2,20 @@
 title: Регистрация бота для звонков и собраний для Microsoft Teams
 description: Узнайте, как зарегистрировать новый бот для аудио- и видеовызовов для Microsoft Teams, создать новый бот или добавить возможность вызова, а также добавить разрешения Graph.
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: вызов бот аудио- видео мультимедиа
-ms.openlocfilehash: 53c12b3d65ad909088e18081ed4b38a77919844b
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 71ab66ab6c5f53405897447b8d531ed0ce6dac99
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111418"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297165"
 ---
 # <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация бота для звонков и собраний для Microsoft Teams
 
 Бот, который участвует в аудио- или видеовызовах и виртуальных собраниях, — это обычный бот Microsoft Teams со следующими дополнительными функциями, используемыми для регистрации бота:
 
-* Существует новая версия манифеста приложения Teams с двумя дополнительными параметрами: `supportsCalling` и `supportsVideo`. Эти параметры включены в [схему манифеста для Microsoft Teams](../../resources/schema/manifest-schema.md).
+* Существует новая версия манифеста приложения Teams с двумя дополнительными параметрами `supportsCalling` и `supportsVideo`. Эти параметры включены в [схему манифеста для Microsoft Teams](../../resources/schema/manifest-schema.md).
 * [Разрешения Microsoft Graph](./registering-calling-bot.md#add-graph-permissions) должны быть настроены для идентификатора приложения Microsoft бота.
 * Для разрешений вызовов Graph и виртуальных собраний API требуется согласие администратора клиента.
 
@@ -23,8 +23,8 @@ ms.locfileid: "65111418"
 
 Боты для вызовов и виртуальных собраний имеют следующие два дополнительных параметра в файле manifest.json, которые включают звук или видео для бота в Teams.
 
-* `bots[0].supportsCalling`. Если он присутствует и имеет `true`, Teams позволяет боту участвовать в вызовах и виртуальных собраниях.
-* `bots[0].supportsVideo`. Если он присутствует и имеет `true`, Teams знает, что бот поддерживает видео.
+* `bots[0].supportsCalling`. Если он присутствует и имеет значение `true`, Teams позволяет вашему боту участвовать в вызовах и виртуальных собраниях.
+* `bots[0].supportsVideo`. Если он присутствует и имеет значение `true`, Teams знает, что ваш бот поддерживает видео.
 
 Если вы хотите, чтобы среда IDE правильно проверяла схему manifest.json для вызовов и собраний для этих значений, вы можете изменить атрибут `$schema` следующим образом:
 
@@ -40,7 +40,7 @@ ms.locfileid: "65111418"
 
 Чтобы создать новый бот для Teams:
 
-1. Используйте эту ссылку, чтобы создать новый бот: `https://dev.botframework.com/bots/new`. В качестве альтернативы, если вы нажмете кнопку **Создать бот** на портале Bot Framework, вы создадите бот в Microsoft Azure, для чего у вам понадобится учетная запись Azure.
+1. Используйте эту ссылку, чтобы создать новый бот, `https://dev.botframework.com/bots/new`. В качестве альтернативы, если вы нажмете кнопку **Создать бот** на портале Bot Framework, вы создадите свой бот в Microsoft Azure, для чего у вас должна быть учетная запись Azure.
 1. Добавьте канал Teams.
 1. Выберите вкладку **Вызов** на странице канала Teams. Выберите **Включить вызовы**, а затем обновите **Веб-перехватчик (для вызовов)** указав URL-адрес HTTPS, на который вы получаете входящие уведомления, например `https://contoso.com/teamsapp/api/calling`. Подробнее см. в статье [Настройка каналов](/bot-framework/portal-configure-channels).
 
@@ -78,7 +78,7 @@ Graph предоставляет детализированные разреше
 
 ### <a name="assign-permissions"></a>Назначение разрешений
 
-Если вы предпочитаете использовать конечную точку [Microsoft Azure Active Directory (Azure AD) V1](https://aka.ms/aadapplist) необходимо заранее настроить разрешения приложения для бота с помощью [портала Microsoft Azure](/azure/active-directory/develop/azure-ad-endpoint-comparison).
+Если вы предпочитаете использовать конечную точку [Microsoft Azure Active Directory (Azure AD) V1](https://portal.azure.com) необходимо заранее настроить разрешения приложения для бота с помощью [портала Microsoft Azure](/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
 ### <a name="get-tenant-administrator-consent"></a>Получить согласие администратора клиента
 

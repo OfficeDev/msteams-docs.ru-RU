@@ -4,14 +4,14 @@ author: surbhigupta
 description: обзор приложений в собраниях Teams на основе роли участника и пользователя
 ms.topic: overview
 ms.author: lajanuar
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: teams приложения собрания пользователь участник роль api; teams apps meetings user participant role api
-ms.openlocfilehash: ec3a9dc46b5a509e68f451e8e2735fc2acbe7bd1
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: ec9db255d6dad410844451830b12ee902b106712
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111306"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296954"
 ---
 # <a name="apps-for-teams-meetings"></a>Приложения для собраний Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "65111306"
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Расширяемость приложения для собраний](meeting-app-extensibility.md)
+> [Приложения объединенных собраний](meeting-app-extensibility.md)
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

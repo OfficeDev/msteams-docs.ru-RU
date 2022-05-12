@@ -5,16 +5,16 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: d31f528b17c671074f3009c435cfff7bad728a09
-ms.sourcegitcommit: e40383d9081bf117030f7e6270140e6b94214e8b
+ms.openlocfilehash: fa13a03d30fd112b1c8983683b667d0cb96ef4ee
+ms.sourcegitcommit: 05285653b2548e0b39e788cd07d414ac87ba3eaf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65102122"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191182"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
-Каждое сообщение в беседе является объектом `Activity` типа `messageType: message`. Когда пользователь отправляет сообщение, Teams отправляет его боту. Teams отправляет объект JSON в конечную точку обмена сообщениями бота. Бот проверяет сообщение, чтобы определить его тип, и отвечает соответствующим образом.
+Каждое сообщение в беседе является объектом `Activity` типа `messageType: message`. Когда пользователь отправляет сообщение, Teams отправляет его боту. Teams отправляет объект JSON в конечную точку обмена сообщениями бота. Бот проверяет сообщение, чтобы определить его тип и ответить соответствующим образом.
 
 Основные беседы обрабатываются через соединитель Bot Framework, один REST API. Этот API позволяет боту взаимодействовать с Teams и другими каналами. Пакет SDK Bot Builder предоставляет следующие функции:
 
@@ -195,7 +195,7 @@ async def on_members_added_activity(
 
 Сообщения, отправляемые между пользователями и ботами, включают внутренние данные канала в сообщении. Эти данные позволяют боту правильно обмениваться данными по этому каналу. Пакет SDK Bot Builder позволяет изменять структуру сообщений.
 
-## <a name="teams-channel-data"></a>Teams каналов
+## <a name="teams-channel-data"></a>Данные канала Teams
 
 Объект `channelData` содержит Teams сведениях, связанных с определенными данными, и является окончательным источником идентификаторов команд и каналов. При необходимости можно кэшировать и использовать эти идентификаторы в качестве ключей для локального хранилища. Пакет `TeamsActivityHandler` SDK извлекет важные сведения из `channelData` объекта, чтобы сделать его доступным. Однако вы всегда можете получить доступ к исходным данным из `turnContext` объекта.
 
@@ -204,10 +204,10 @@ async def on_members_added_activity(
 Типичный `channelData` объект в действии, отправляемом боту, содержит следующие сведения:
 
 * `eventType`: Teams передается только в случае событий [изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
-* `tenant.id`: Microsoft Azure Active Directory клиента (Azure AD), переданный во всех контекстах.
+* `tenant.id`: Microsoft Azure Active Directory (Azure AD) идентификатор клиента, переданный во всех контекстах.
 * `team`: передается только в контекстах канала, а не в личном чате.
   * `id`: GUID для канала.
-  * `name`: имя команды, переданное только в случае [переименования команды](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
+  * `name`: имя команды, переданное только в случае [переименования команды](subscribe-to-conversation-events.md#team-renamed).
 * `channel`: передается только в контекстах каналов, когда упоминается бот, или для событий в каналах в командах, в которых был добавлен бот.
   * `id`: GUID для канала.
   * `name`: имя канала передается только в случае [событий изменения канала](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
@@ -241,9 +241,9 @@ async def on_members_added_activity(
 | Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять форматированный текст, изображения и карточки. Пользователи могут отправлять боту форматированный текст и изображения.                                                                                        |
-| Изображения  | ✔                | ✔                | Максимум 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.  |
+| Изображения  | ✔                | ✔                | Максимум 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF-файл не поддерживается.  |
 | Карточки     | ✖                | ✔                | Сведения о [поддерживаемых Teams](~/task-modules-and-cards/cards/cards-reference.md) см. в справочнике по Teams карточки. |
-| Смайлики    | ✔                | ✔                | Teams в настоящее время поддерживает эмодзи через UTF-16, например U+1F600 для усинхронного распознавания лиц. |
+| Эмодзи    | ✔                | ✔                | Teams в настоящее время поддерживает эмодзи через UTF-16, например U+1F600 для усинхронного распознавания лиц. |
 
 ## <a name="notifications-to-your-message"></a>Уведомления в сообщении
 
@@ -327,11 +327,11 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Чтобы улучшить сообщение, в него можно добавить изображения в виде вложений.
 
-## <a name="picture-messages"></a>Сообщения с рисунками
+## <a name="picture-messages"></a>Сообщения с картинкой
 
-Изображения отправляются путем добавления вложений в сообщение. Дополнительные сведения о вложениях см. в [документации по Bot Framework](/azure/bot-service/dotnet/bot-builder-dotnet-add-media-attachments).
+Картинки отправляются путем добавления вложений к сообщению. Дополнительные сведения о вложениях см. в [разделе "Добавление вложений мультимедиа в сообщения"](/azure/bot-service/dotnet/bot-builder-dotnet-add-media-attachments).
 
-Изображения могут иметь не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.
+Изображения могут иметь не более 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF-файл не поддерживается.
 
 Укажите высоту и ширину каждого изображения с помощью XML. В markdown размер изображения по умолчанию — 256×256. Например:
 
@@ -409,7 +409,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка событий обмена сообщениями и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 
@@ -420,5 +420,5 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 * [Отправка упреждающих сообщений](~/bots/how-to/conversations/send-proactive-messages.md)
 * [Подписка на события беседы](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
-* [Отправка и получение файлов с помощью бота](~/bots/how-to/bots-filesv4.md)
+* [Отправка и получение файлов с помощью ботов](~/bots/how-to/bots-filesv4.md)
 * [Отправка идентификатора клиента и идентификатора беседы в заголовки запросов бота](~/bots/how-to/conversations/request-headers-of-the-bot.md)

@@ -2,14 +2,14 @@
 title: Обзор функции "Отправка в Teams"
 description: Описание создания кнопки для отправки в Teams
 ms.topic: how-to
-ms.localizationpriority: high
+ms.localizationpriority: mediumss
 keywords: Обзор функции "Отправка в Teams"
-ms.openlocfilehash: fb32399139f67bfef52bca085d21df52194a93f8
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 1bc840c5b85042ef109d544a3b94cd55f6eae2ad
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111719"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297130"
 ---
 # <a name="share-to-teams"></a>Отправка в Teams
 
