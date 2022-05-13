@@ -2,15 +2,15 @@
 title: Отправка и получение сообщений с помощью бота
 description: В этой статье описывается, как отправлять и получать сообщения с помощью ботов в Microsoft Teams
 ms.topic: overview
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Сообщения ботов teams
 ms.date: 05/20/2019
-ms.openlocfilehash: dd43c31147c43c06b4f96c709fb0e5af5cd6bb41
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 0d4665d098e0e14fa3de5f2667c7e970b545b284
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111600"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296975"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с ботом Microsoft Teams
 
@@ -25,9 +25,9 @@ ms.locfileid: "65111600"
 Поведение бота немного отличается в зависимости от типа беседы, в которых он участвует:
 
 * [Боты в беседах канала и группового чата](~/resources/bot-v3/bot-conversations/bots-conv-channel.md) требуют, чтобы пользователь @упомянул бота, чтобы вызвать его в канале.
-* [Боты в беседах с одним пользователем](~/resources/bot-v3/bot-conversations/bots-conv-personal.md) не требуют @упоминания — пользователь может просто ввести.
+* [Боты в беседах с одним пользователем](~/resources/bot-v3/bot-conversations/bots-conv-personal.md) не требуют @упоминания — пользователь может просто вводить текст.
 
-Чтобы бот работал в определенной области, он должен быть указан как поддерживающий эту область в манифесте. Области определены и описаны далее в [справочнике по манифестам](~/resources/schema/manifest-schema.md).
+Чтобы бот работал в определенной области, он должен быть указан как поддерживающий эту область в манифесте. Области определены и описаны далее в [Справочнике по манифесту](~/resources/schema/manifest-schema.md).
 
 ## <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -43,7 +43,7 @@ ms.locfileid: "65111600"
 
 Боты также поддерживают сообщения в стиле событий. Дополнительные сведения см. в статье [Обработка событий бота в Microsoft Teams](~/resources/bot-v3/bots-notifications.md). В настоящее время речь не поддерживается.
 
-Сообщения по большей части одинаковы во всех областях, но существуют различия в способах доступа к боту в пользовательском интерфейсе и различия в фоновом режиме, о которых необходимо знать.
+Сообщения обычно одинаковы во всех областях, но существуют различия в способах доступа к боту в пользовательском интерфейсе и различия в фоновом режиме, о которых необходимо знать.
 
 Базовая беседа обрабатывается через соединитель Bot Framework, единый REST API, позволяющий боту взаимодействовать с Teams и другими каналами. Пакет SDK Bot Builder предоставляет простой доступ к этому API, дополнительные функции для управления потоком и состоянием беседы, а также простые способы внедрения когнитивных служб, таких как обработка на естественном языке (NLP).
 
@@ -54,7 +54,7 @@ ms.locfileid: "65111600"
 | Формат | От пользователя к боту  | От бота к пользователю |  Примечания |
 | --- | :---: | :---: | --- |
 | Форматированный текст  | ✔ | ✔ |  |
-| Изображения | ✔ | ✔ | Не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается. |
+| Изображения | ✔ | ✔ | Размер не должен превышать 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается. |
 | Карточки | ✖ | ✔ | Сведения о поддерживаемых карточках см. в [Справочнике по карточкам Teams](~/task-modules-and-cards/cards/cards-reference.md). |
 | Эмодзи | ✖ | ✔ | В настоящее время Teams поддерживает эмодзи через UTF-16, например U+1F600 для ухмыляющейся рожицы. |
 |
@@ -74,7 +74,7 @@ ms.locfileid: "65111600"
 
 Картинки отправляются путем добавления вложений к сообщению. Дополнительные сведения о вложениях см. в [документации по Bot Framework](/azure/bot-service/dotnet/bot-builder-dotnet-add-media-attachments?view=azure-bot-service-3.0&preserve-view=true).
 
-Картинки могут быть не более 1024×1024 и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.
+Размер рисунков не должен превышать 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.
 
 Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию — 256×256. Например:
 
@@ -85,16 +85,16 @@ ms.locfileid: "65111600"
 
 В зависимости от объявленных областей бот может получать сообщения в следующих контекстах:
 
-* **Личный чат**. Пользователи могут взаимодействовать с ботом в приватной беседе, просто выбрав добавленного бота в истории чата или введя его имя или идентификатор приложения в поле «Кому»: в новом чате.
-* **Каналы**. Бот может быть упомянут в канале (@*botname*), если он был добавлен в команду. Обратите внимание, что дополнительные ответы боту в канале требуют упоминания бота. Он не будет отвечать на ответы, в которых он не упоминается.
+* **личный чат**. Пользователи могут взаимодействовать с ботом в приватной беседе, просто выбрав добавленного бота в истории чата или введя его имя или идентификатор приложения в поле "Кому:" в новом чате.
+* **Каналы**. Бот может быть упомянут в канале (@*botname*), если он был добавлен в команду. Обратите внимание, что дополнительные ответы боту в канале требуют упоминания бота. Бот не будет отвечать на ответы, в которых он не упоминается.
 
-Для входящих сообщений бот получает объект [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#activity-object&preserve-view=true) типа `messageType: message`. Хотя объект `Activity` может содержать другие типы информации, например [обновления каналов](~/resources/bot-v3/bots-notifications.md#channel-updates), отправляемые боту, тип `message` представляет собой связь между ботом и пользователем.
+Для входящих сообщений бот получает объект [Действие](../../../bots/how-to/conversations/conversation-messages.md) типа `messageType: message`. Хотя объект `Activity` может содержать другие типы информации, например [обновления каналов](~/resources/bot-v3/bots-notifications.md#channel-updates), отправляемые боту, тип `message` представляет собой связь между ботом и пользователем.
 
-Бот получает полезные данные, содержащие сообщение пользователя `Text`, а также другие сведения о пользователе, источнике сообщения и сведения о Teams. Обратите внимание:
+Бот получает полезные данные, содержащие сообщение пользователя `Text`, а также другие сведения о пользователе, источнике сообщения и сведения о Teams. Следует отметить:
 
 * `timestamp` Дата и время сообщения в формате UTC.
 * `localTimestamp` Дата и время сообщения в часовом поясе отправителя.
-* `channelId` Всегда "msteams". Это относится к каналу bot Framework, а не каналу Teams.
+* `channelId`Всегда "msteams". Это относится к каналу bot framework, а не к каналу Teams.
 * `from.id` Уникальный и зашифрованный идентификатор этого пользователя для бота; подходит в качестве ключа, если вашему приложению необходимо хранить пользовательские данные. Он уникален для вашего бота и не может использоваться напрямую вне вашего экземпляра бота любым значимым способом для идентификации этого пользователя.
 * `channelData.tenant.id` Идентификатор клиента для пользователя.
 
@@ -168,8 +168,8 @@ ms.locfileid: "65111600"
 * `channel` Передается только в контексте канала при упоминании бота или для событий в каналах в командах, где бот был добавлен.
   * `id` Глобальный уникальный ИД канала.
   * `name` Название канала, которое передается только в случае [событий изменения канала](~/resources/bot-v3/bots-notifications.md#channel-updates).
-* `channelData.teamsTeamId` Не рекомендуется. Это свойство включено только для обратной совместимости.
-* `channelData.teamsChannelId` Не рекомендуется. Это свойство включено только для обратной совместимости.
+* `channelData.teamsTeamId` Устарело. Это свойство включено только для обратной совместимости.
+* `channelData.teamsChannelId` Устарело. Это свойство включено только для обратной совместимости.
 
 ### <a name="example-channeldata-object-channelcreated-event"></a>Пример объекта channelData (событие channelCreated)
 
@@ -200,7 +200,7 @@ string tenantId = channelData.Tenant.Id;
 
 ## <a name="sending-replies-to-messages"></a>Отправка ответов на сообщения
 
-Чтобы ответить на существующее сообщение, вызовите [`ReplyToActivity`](/dotnet/api/microsoft.bot.connector.conversationsextensions.replytoactivityasync?view=botbuilder-dotnet-3.0#Microsoft_Bot_Connector_ConversationsExtensions_ReplyToActivityAsync_Microsoft_Bot_Connector_IConversations_System_String_System_String_Microsoft_Bot_Connector_Activity_System_Threading_CancellationToken_&preserve-view=true) .NET или [`session.send`](/javascript/api/botbuilder-core/TurnContext?view=botbuilder-ts-latest&viewFallbackFrom=botbuilder-ts-3.0#sendactivities&preserve-view=true) Node.js. Пакет SDK Bot Builder обрабатывает все детали.
+Чтобы ответить на существующее сообщение, вызовите [`ReplyToActivity`](/dotnet/api/microsoft.bot.connector.conversationsextensions.replytoactivityasync?view=botbuilder-dotnet-3.0#Microsoft_Bot_Connector_ConversationsExtensions_ReplyToActivityAsync_Microsoft_Bot_Connector_IConversations_System_String_System_String_Microsoft_Bot_Connector_Activity_System_Threading_CancellationToken_&preserve-view=true) .NET или [`session.send`](/javascript/api/botbuilder-core/TurnContext?view=botbuilder-ts-latest&viewFallbackFrom=botbuilder-ts-3.0#sendactivities&preserve-view=true) Node.js. Пакет SDK Bot Builder обрабатывает все сведения.
 
 Если вы решите использовать REST API, также можно вызвать конечную точку [`/v3/conversations/{conversationId}/activities/{activityId}`](/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages?view=azure-bot-service-3.0&preserve-view=true).
 
@@ -273,13 +273,13 @@ function sendCardUpdate(bot, session, originalMessage, address) {
 
 ## <a name="starting-a-conversation-proactive-messaging"></a>Начало беседы (упреждающий обмен сообщениями)
 
-Вы можете создать личную беседу с пользователем или начать новую цепочку ответов в канале для бота группы. Это позволяет отправлять сообщения пользователю или пользователям без того, чтобы они сначала инициировали контакт с ботом. Дополнительную информацию см. в следующих статьях:
+Вы можете создать личную беседу с пользователем или начать новую цепочку ответов в канале для бота группы. Это позволяет отправлять сообщения пользователю или пользователям, при этом им не требуется сначала инициировать контакт с ботом. Дополнительные сведения см. в следующих статьях:
 
 Дополнительные сведения о беседах, запущенных ботами, см. в разделе [Упреждающий обмен сообщениями для ботов](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md).
 
 ## <a name="deleting-messages"></a>Удаление сообщений
 
-Сообщения можно удалить с помощью метода соединителей [`delete()`](https://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.iconnector.html#delete) в [пакете SDK BotBuilder](/bot-framework/bot-builder-overview-getstarted).
+Сообщения можно удалить с помощью метода соединителей [`delete()`](https://docs.botframework.com/node/builder/chat-reference/interfaces/_botbuilder_d_.iconnector.html) в [пакете SDK BotBuilder](/bot-framework/bot-builder-overview-getstarted).
 
 ```typescript
 bot.dialog('BotDeleteMessage', function (session: builder.Session) {
