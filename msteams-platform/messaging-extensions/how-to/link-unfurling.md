@@ -2,15 +2,15 @@
 title: Развертывание ссылки
 author: surbhigupta
 description: Узнайте, как добавить развертывание ссылок с расширением для сообщений в приложении Microsoft Teams с манифестом приложения или вручную с помощью примеров кода и образцов.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: b172320f6f116026fe5ea4b45c9c74da6ff82f07
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 09b8447e68a07e98293409e6c371a301da3017d0
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111250"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297186"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 
@@ -25,7 +25,7 @@ ms.locfileid: "65111250"
 
 Расширение для сообщений Azure DevOps использует развертывание ссылок для поиска URL-адресов, вставленных в область создания сообщений, указывающих на рабочий элемент. На следующем изображении пользователь вставил URL-адрес для рабочего элемента в Azure DevOps, который расширение для сообщения разрешило в карточку:
 
-![Пример развертывания ссылки](~/assets/images/compose-extensions/messagingextensions_linkunfurling.png)
+:::image type="content" source="~/assets/images/compose-extensions/messagingextensions_linkunfurling.png" alt-text="Пример развертывания ссылки":::
 
 ## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление развертывания ссылок в манифест приложения
 
@@ -38,9 +38,9 @@ ms.locfileid: "65111250"
 
 1. Откройте **App Studio** в клиенте Microsoft Teams и выберите вкладку **редактора манифеста**.
 1. Загрузите манифест вашего приложения.
-1. На странице **Расширения для сообщений** добавьте домен, который вы хотите найти, в разделе **Обработчики сообщений**. На изображении ниже даны пояснения по этому процессу.
+1. На странице **Расширения сообщений**, в разделе **Обработчики сообщений** добавьте домен, который необходимо найти. Процесс показан на следующем изображении:
 
-    ![раздел обработчиков сообщений в App Studio](~/assets/images/link-unfurling.png)
+    :::image type="content" source="~/assets/images/link-unfurling.png" alt-text="Раздел &quot;Обработчики сообщений&quot; в App Studio":::
 
 ### <a name="add-link-unfurling-manually"></a>Добавление развертывания ссылок вручную
 

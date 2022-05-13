@@ -2,15 +2,15 @@
 title: Личные беседы с ботами
 description: Описан сквозной сценарий личного общения с ботом в Microsoft Teams
 keywords: сценарии teams личные один на один бот беседа
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 05/20/2019
-ms.openlocfilehash: d38285c212416d81a2108524946f0f9732a8dae9
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: eb08b542c707d9f520912cd04ca5b1b2b740d81c
+ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111943"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65297193"
 ---
 # <a name="have-a-personal-one-on-one-conversation-with-a-microsoft-teams-bot"></a>Личная беседа с ботом Microsoft Teams
 
@@ -33,4 +33,4 @@ Microsoft Teams позволяет пользователям участвова
 
 ## <a name="best-practice-welcome-messages-in-personal-conversations"></a>Рекомендация: приветственные сообщения в личных беседах
 
-Ваш бот должен [первым отправить](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md) приветствие в личный чат (только в первый раз), когда пользователь инициирует личный чат с вашим ботом. Эта рекомендация не применяется к первым контактам, которые происходят в канале.
+Ваш бот должен [первым отправить](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md) приветствие в личный чат (только в первый раз), когда пользователь инициирует личный чат с вашим ботом. Эта рекомендация не относится к первым контактам в канале.
