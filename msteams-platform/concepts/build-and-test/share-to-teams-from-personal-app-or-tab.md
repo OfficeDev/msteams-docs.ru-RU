@@ -1,17 +1,17 @@
 ---
-title: Предоставление общего доступа Teams из личного приложения или вкладки
+title: Поделиться в Teams из личного приложения или вкладки
 description: Узнайте, как добавить общую папку Teams, внедренную в личное приложение или вкладку
 ms.topic: reference
 ms.localizationpriority: medium
-keywords: Предоставление общего Teams общий доступ Teams
-ms.openlocfilehash: 7ece44c3b0a48ad2ce0ad72aed5ba9efc9cf57c2
-ms.sourcegitcommit: f892125106adb6731a20127f15d6e92f279127c5
+keywords: Отправить в Teams Отправка в Teams
+ms.openlocfilehash: 59185b9e2531a0ca61c97ceba50b4f71f06c45e9
+ms.sourcegitcommit: a3567e3e1a52b8e3cb2072b037f0e75bd0f12e58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685727"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65439365"
 ---
-# <a name="share-to-teams-from-personal-app-or-tab"></a>Предоставление общего доступа Teams из личного приложения или вкладки
+# <a name="share-to-teams-from-personal-app-or-tab"></a>Поделиться в Teams из личного приложения или вкладки
 
 > [!NOTE]
 > Общий доступ Teams в настоящее время доступен только в [общедоступной предварительной версии разработчика](../../resources/dev-preview/developer-preview-intro.md).
@@ -43,6 +43,7 @@ microsoftTeams.sharing.shareWebContent({
           {
             type: 'URL',
             url: '<URL to be shared>',
+            message: 'Default message to be loaded in the compose box',
             preview: true
           }
         ]
@@ -55,6 +56,7 @@ microsoftTeams.sharing.shareWebContent({
 |---|---|
 | `type` | Тип должен быть `URL` |
 | `url` | `URL` для совместного использования |
+|`message`| Сообщение по умолчанию для загрузки в поле создания |
 | `preview` | Настройка включения предварительного `true` просмотра URL-адресов |
 
 На следующем рисунке показан параметр "Общий доступ Teams".
@@ -74,7 +76,7 @@ microsoftTeams.sharing.shareWebContent({
 | **1000** | Разрешения, отклоненные пользователем. |
 | **2000** | Проблема с сетью. |
 | **3000** | Базовое оборудование не поддерживает эту возможность. |
-| **4000** | Один или несколько аргументов недопустимы. |
+| **4000** | Один или несколько недопустимых аргументов. |
 | **5000** | Пользователь не авторизован для этой операции. |
 | **6000** | Не удалось завершить операцию из-за нехватки ресурсов. |
 | **7000** | Платформа регулирует запрос из-за слишком частого вызова API. |
@@ -114,5 +116,5 @@ microsoftTeams.sharing.shareWebContent({
 
 ## <a name="see-also"></a>См. также
 
-* [Предоставление общего доступа Teams из веб-приложений](share-to-teams-from-web-apps.md)
+* [Поделиться в Teams из веб-приложений](share-to-teams-from-web-apps.md)
 * [Создание личной вкладки](../../tabs/how-to/create-personal-tab.md)

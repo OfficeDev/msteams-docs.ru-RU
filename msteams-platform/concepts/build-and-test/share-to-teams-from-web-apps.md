@@ -2,14 +2,14 @@
 title: Поделиться в Teams из веб-приложений
 description: Узнайте, как добавить встроенную кнопку «Отправить в Teams» на веб-сайт с предварительным просмотром веб-сайта с помощью примеров кода
 ms.topic: reference
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Отправить в Teams Отправка в Teams
-ms.openlocfilehash: 1f6a32c150fce323df19f452895184a4233c57fc
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: b3efd268e2bded3955c2d9ab76d6dea755d06b5a
+ms.sourcegitcommit: a3567e3e1a52b8e3cb2072b037f0e75bd0f12e58
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111733"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65439302"
 ---
 # <a name="share-to-teams-from-web-apps"></a>Поделиться в Teams из веб-приложений
 
@@ -64,6 +64,17 @@ ms.locfileid: "65111733"
       data-preview="false">
     </div>
     ```
+
+1. Чтобы отобразить выбранное сообщение в поле создания, можно определить текст в атрибуте `data-msg-text` .
+
+     ```html
+     <div
+      class="teams-share-button"
+      data-href="https://<link-to-be-shared>"
+      data-msg-text="<default-message-to-be-populated-in-compose-box>"
+      data-preview="false">
+      </div>
+     ```
 
 1. Если страница динамически отображает содержимое, можно использовать этот метод `shareToMicrosoftTeams.renderButtons()`, чтобы принудительно отображать **Отправить** в соответствующем месте конвейера.
 
