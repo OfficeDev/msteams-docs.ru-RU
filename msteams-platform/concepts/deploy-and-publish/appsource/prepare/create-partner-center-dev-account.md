@@ -5,12 +5,12 @@ ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 6e348cc0db5c9b197b985b144105924c2c40669a
-ms.sourcegitcommit: 7f224d37d23e5a3f72b83254e556f5b33e807bca
+ms.openlocfilehash: 7d5e6d4d345f94e893a494c6dea2e719aece9da6
+ms.sourcegitcommit: ef582a5ac33e815854d58f2f1faeb06aa2d761ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63501916"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65443903"
 ---
 # <a name="create-a-partner-center-developer-account"></a>Создание учетной записи разработчика Центра партнеров
 
@@ -207,6 +207,18 @@ ms.locfileid: "63501916"
 <br>
 
 </details>
+
+## <a name="update-apple-developer-id-on-partner-center"></a>Обновление идентификатора разработчика Apple в Центре партнеров
+
+Чтобы пользователи могли устанавливать ваше приложение на платформе Teams для iOS, необходимо обновить ваш идентификатор разработчика Apple в Центре партнеров Майкрософт. Чтобы обновить идентификатор разработчика Apple, выполните следующие действия.
+
+1. Войдите в [Центр партнеров Майкрософт](https://partner.microsoft.com/dashboard/home), используя учетные данные глобального администратора.
+1. Щелкните значок параметров в правом верхнем углу страницы.
+1. Перейдите в раздел **Юридические сведения** в области **Профиль организации** на панели слева.
+1. Перейдите на вкладку **Разработчик**.
+1. Введите идентификатор разработчика Apple.
+1. Перейдите на страницу предложения и повторно опубликуйте приложение Teams.
+   Теперь идентификатор разработчика Apple обновлен в Центре партнеров Майкрософт.
 
 ## <a name="next-step"></a>Следующий этап
 
