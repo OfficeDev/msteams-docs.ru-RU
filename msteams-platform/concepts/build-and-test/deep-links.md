@@ -1,15 +1,14 @@
 ---
 title: Создание прямых ссылок
-description: Описывает прямые ссылки и способы их использования в приложениях
+description: Узнайте, как описывать глубокие ссылки Teams и как использовать их в своих приложениях.
 ms.topic: how-to
 ms.localizationpriority: high
-keywords: прямая ссылка на Teams
-ms.openlocfilehash: cc8e71e77964ff2a07e75983c94f72091033b789
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 750fc8f6153cf64fa585e3d74d73afba483aafb0
+ms.sourcegitcommit: f7d0e330c96e00b2031efe6f91a0c67ab0976455
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103925"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65611453"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -69,7 +68,7 @@ ms.locfileid: "65103925"
 
 > [!NOTE]
 > Если бот отправляет сообщение, содержащее `TextBlock` с прямой ссылкой, то при выборе пользователем ссылки открывается новая вкладка браузера. Это происходит в Chrome и в настольном приложении Microsoft Teams, которые работают в Linux.
-> Если бот отправляет тот же URL-адрес прямой ссылки в `Action.OpenUrl`, вкладка Teams открывается в текущей вкладке браузера, когда пользователь выбирает ссылку. Новая вкладка браузера не открывается.
+> Если бот отправляет тот же URL-адрес прямой ссылки в `Action.OpenUrl`, вкладка Teams открывается в текущей вкладке браузера, когда пользователь выбирает ссылку. Новая вкладка браузера не открыта.
 
 <!--- TBD: Edit this article.
 * Admonitions/alerts seem to be overused. 
@@ -79,19 +78,19 @@ ms.locfileid: "65103925"
 * Example values and some URLs should be in backticks and not emphasized.
 * Codeblock are missing language.
 * Check for markdownlint errors.
-* Table with just a row is not really needed. Provide the content without tabulating it.
+* Table with just a row isn't really needed. Provide the content without tabulating it.
 --->
 
 Параметры запроса:
 
 | Имя параметра | Описание | Пример |
 |:------------|:--------------|:---------------------|
-| `appId`&emsp; | Идентификатор из манифеста. |fe4a8eba-2a31-4737-8e33-e5fae6fee194|
+| `appId`&emsp; | Идентификатор из центра администрирования Teams. |fe4a8eba-2a31-4737-8e33-e5fae6fee194|
 | `entityId`&emsp; | Идентификатор элемента на вкладке, который вы указали при [настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md).|Tasklist123|
 | `entityWebUrl` или `subEntityWebUrl`&emsp; | Необязательное поле с резервным URL-адресом для использования, если клиент не поддерживает отрисовку вкладки. | `https://tasklist.example.com/123` или `https://tasklist.example.com/list123/task456` |
 | `entityLabel` или `subEntityLabel`&emsp; | Метка для элемента на вкладке, используемая при отображении прямой ссылки. | Список задач 123 или "Задача 456" |
 | `context.subEntityId`&emsp; | Идентификатор элемента на вкладке. |Task456 |
-| `context.channelId`&emsp; | Идентификатор канала Microsoft Teams, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки. Это свойство доступно только на настраиваемых вкладках с областью **группы**. Оно не доступно на статических вкладках, которые имеют **личную** область.| 19:cbe3683f25094106b826c9cada3afbe0@thread.skype |
+| `context.channelId`&emsp; | Идентификатор канала Microsoft Teams, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки. Это свойство доступно только на настраиваемых вкладках с областью **группы**. Оно недоступно на статических вкладках, которые имеют область **личные**.| 19:cbe3683f25094106b826c9cada3afbe0@thread.skype |
 | `chatId`&emsp; | ИД чата, доступный в [контексте](~/tabs/how-to/access-teams-context.md) вкладки, для группового чата и чата собрания | 17:b42de192376346a7906a7dd5cb84b673@thread.v2 |
 | `contextType`&emsp; |  Чат — это единственный поддерживаемый тип контекста для собраний | чат |
 
@@ -167,10 +166,30 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 Параметры запроса:
 
 * `users`: разделенный запятыми список идентификаторов пользователей, представляющих участников чата. Пользователь, выполняющий действие, всегда включен в качестве участника. В настоящее время поле ID пользователя поддерживает UserPrincipalName из Microsoft Azure Active Directory (Azure AD), например только адрес электронной почты.
-* `topicName`: необязательное поле для отображаемого имени чата в случае чата с 3 или более пользователями. Если это поле не указано, отображаемое имя чата основано на именах участников.
+* `topicName`: необязательное поле для отображаемого имени чата в случае чата с тремя или более пользователями. Если это поле не указано, отображаемое имя чата основывается на именах участников.
 * `message`: необязательное поле для текста сообщения, которое необходимо вставить в поле создания текущего пользователя, когда чат находится в состоянии черновика.
 
 Чтобы использовать эту прямую ссылку с ботом, укажите ее в качестве целевого URL-адреса на кнопке карточки или коснитесь действия через тип действия `openUrl`.
+
+## <a name="generate-deep-links-to-channel-conversation"></a>Создавайте глубокие ссылки на беседу в канале
+
+Используйте этот формат глубокой ссылки для перехода к определенной беседе в цепочке канала:
+
+`https://teams.microsoft.com/l/message/<channelId>/<parentMessageId>?tenantId=<tenantId>&groupId=<groupId>&parentMessageId=<parentMessageId>&teamName=<teamName>&channelName=<channelName>&createdTime=<createdTime>`
+
+Пример: `https://teams.microsoft.com/l/message/<channelId>/1648741500652?tenantId=<tenantId>&groupId=<groupId>&parentMessageId=1648741500652&teamName=<teamName>&channelName=<channelName>&createdTime=1648741500652`
+
+Параметры запроса:
+
+* `channelId`: идентификатор канала беседы. Например, `19:3997a8734ee5432bb9cdedb7c432ae7d@thread.tacv2`.
+* `tenantId`: ИД клиента, например `0d9b645f-597b-41f0-a2a3-ef103fbd91bb`.
+* `groupId`: идентификатор группы файла. Например, `3606f714-ec2e-41b3-9ad1-6afb331bd35d`.
+* `parentMessageId`: идентификатор родительского сообщения беседы.
+* `teamName`: имя команды.
+* `channelName`: название канала команды.
+
+> [!NOTE]
+> Вы можете увидеть `channelId` и `groupId` в URL-адресе канала.
 
 ## <a name="generate-deep-links-to-file-in-channel"></a>Создание прямых ссылок на файл в канале
 
@@ -196,7 +215,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/app/f46ad259-0fe5-
 
 `https://teams.microsoft.com/l/file/<fileId>?tenantId=<tenantId>&fileType=<fileType>&objectURL=<objectURL>&baseUrl=<baseURL>&serviceName=<Name>&threadId=<threadId>&groupId=<groupId>`
 
-В следующем примере формата показана прямая ссылка на файлы:
+Следующий пример формата иллюстрирует глубокую ссылку на файлы:
 
 `https://teams.microsoft.com/l/file/5E0154FC-F2B4-4DA5-8CDA-F096E72C0A80?tenantId=0d9b645f-597b-41f0-a2a3-ef103fbd91bb&fileType=pptx&objectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform%2FShared%20Documents%2FFC7-%20Bot%20and%20Action%20Infra%2FKaizala%20Actions%20in%20Adaptive%20Cards%20-%20Deck.pptx&baseUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FActionPlatform&serviceName=teams&threadId=19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype&groupId=ae063b79-5315-4ddb-ba70-27328ba6c31e`
 
@@ -232,7 +251,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 * `appID`: ваш манифест, например `fe4a8eba-2a31-4737-8e33-e5fae6fee194`.
 
 * `entityID`: идентификатор элемента, предоставленный при [настройке вкладки](~/tabs/how-to/create-tab-pages/configuration-page.md). Например, `tasklist123`.
-* `entityWebUrl`: необязательное поле с резервным URL-адресом для использования, если клиент не поддерживает отрисовку вкладки — `https://tasklist.example.com/123` или `https://tasklist.example.com/list123/task456`.
+* `entityWebUrl`: необязательное поле с резервным URL-адресом для использования, если клиент не поддерживает отрисовку вкладки `https://tasklist.example.com/123` или `https://tasklist.example.com/list123/task456`.
 * `entityName`: метка для элемента на вкладке, используемая при отображении прямой ссылки, Task List 123 или Task 456.
 
 Пример: `https://teams.microsoft.com/l/entity/fe4a8eba-2a31-4737-8e33-e5fae6fee194/tasklist123?webUrl=https://tasklist.example.com/123&TaskList`
@@ -262,7 +281,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 * `content`: необязательное поле для поля сведений о собрании.
 
 > [!NOTE]
-> В настоящее время указание расположения не поддерживается. Необходимо указать смещение относительно UTC, т.е. часовые пояса, при создании времени начала и окончания.
+> Сейчас указание расположения не поддерживается. Вы должны указать смещение UTC, т. е. часовые пояса, при создании времени начала и окончания.
 
 Чтобы использовать эту прямую ссылку с ботом, ее можно указать в качестве целевого URL-адреса на кнопке карточки или коснитесь действия через тип действия `openUrl`.
 
