@@ -3,14 +3,14 @@ title: Добавление ботов в приложения Microsoft Teams
 description: Описание начала разработки ботов в Microsoft Teams
 ms.topic: conceptual
 keywords: Teams боты разработка
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: a9a3ad2e4e60b43e6730c06b8bd8d2cee824b3fc
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: cbf8b1c14b080d890dd4c65390671632e2602f81
+ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111705"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602266"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в приложения Microsoft Teams
 
@@ -19,7 +19,7 @@ ms.locfileid: "65111705"
 Создавайте и подключайте интеллектуальных ботов для естественного взаимодействия с пользователями Microsoft Teams через чат. Или предоставьте простого бота на основе команд, который будет использоваться в качестве интерфейса «командной строки» для более широкого взаимодействия с приложением Teams. Вы можете создать бота только для уведомлений, который может передавать сведения, относящиеся к вашим пользователям, непосредственно в канале или личном сообщении. Вы даже можете использовать существующего бота на основе Bot Framework и добавить поддержку для Teams, чтобы улучшить вашу функцию.
 
 > [!IMPORTANT]
-> В настоящее время боты доступны в средах облака сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
+> В настоящее время боты доступны в облако сообщества для государственных организаций (GCC) и GCC-High но недоступны в Министерства обороны США.
 
 ![Пример бота, помогающего пользователю](~/assets/images/bot_example.png)
 

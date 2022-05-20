@@ -5,19 +5,21 @@ description: Обзор ботов в Microsoft Teams.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: d37b35e46156777022a5b19a7ccf6de1ab2e0fb9
-ms.sourcegitcommit: 05285653b2548e0b39e788cd07d414ac87ba3eaf
+ms.openlocfilehash: 81fa44730a26f3d7bcafdc9f37ec15b4eb7b1951
+ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191252"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602294"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 
 Бот также называется чат-ботом или ботом для общения. Это приложение, которое выполняет простые и повторяющиеся задачи пользователей, например, в службах обслуживания или поддержки клиентов. В быту используются боты, которые сообщают сведения о погоде, бронируют рестораны или предоставляют сведения для путешествий. Взаимодействие с ботами может быть в виде быстрых вопросов и ответов или сложных бесед.
 
 > [!IMPORTANT]
-> В настоящее время боты доступны в средах облака сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
+> Сейчас боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но не в средах Министерства обороны США (DoD).
+> 
+> Приложения-боты в Microsoft Teams доступны в GCC-High через [службу ботов Azure](/azure/bot-service/channel-connect-teams).
 
 Боты для общения позволяют пользователям взаимодействовать с веб-службой с помощью текста, интерактивных карточек и модулей задач.
 

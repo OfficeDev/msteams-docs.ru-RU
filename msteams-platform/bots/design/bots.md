@@ -5,19 +5,19 @@ author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: f6a19b2c75d5e3b42e7b1b7cea7834d28e3917a9
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 67f67535994bde9871cdaa7be8081e05ccbf1a1d
+ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104387"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602301"
 ---
 # <a name="designing-your-microsoft-teams-bot"></a>Создание бота Microsoft Teams
 
 Боты — это приложения для бесед, которые выполняют определенный набор задач. Построенные на основе <a href="https://dev.botframework.com/" target="_blank">Microsoft Bot Framework</a>боты общаются с пользователями, отвечают на их вопросы и заблаговременно уведомляют их об изменениях и других событиях. Это отличный способ связи с пользователями.
 
 > [!IMPORTANT]
-> Боты доступны в средах облака сообщества для государственных организаций (GCC), но не в средах GCC High и министерства обороны США (DoD).
+> Боты доступны в средах облака сообщества для государственных организаций (GCC) и GCC High, но не в средах министерства обороны США (DoD).
 
 Далее описано и показано, как люди могут добавлять ботов, использовать их и управлять ими в Teams. Это может помочь вам в создании приложения.
 
