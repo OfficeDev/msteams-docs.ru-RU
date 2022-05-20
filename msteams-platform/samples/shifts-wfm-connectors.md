@@ -4,15 +4,15 @@ description: Узнайте о преимуществах использован
 ms.topic: reference
 author: surbhigupta
 ms.date: 03/09/2020
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Соединители Microsoft Teams kronos
 ms.author: lajanuar
-ms.openlocfilehash: 3a294d20bc2032df7ef5dfa225922e9dccabf1df
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: cf4fa72932a231085b7b1c16a5153d2df0cd7643
+ms.sourcegitcommit: bde5f3f409fb6824a5d6ff5618e9386c85879b8b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111768"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65604266"
 ---
 # <a name="production-ready-shifts-connectors"></a>Готовые к работе соединители  
 
@@ -41,34 +41,6 @@ ms.locfileid: "65111768"
 Представление смен в Teams показано на следующем изображении:
 
 ![Открытие смен в Teams](../assets/images/teams-open-shifts-view.png)
-
-## <a name="kronos-to-teams-shifts-connector"></a>Соединитель смен Kronos-to-Teams
-
-Благодаря открытому исходному коду вы можете интегрировать Kronos Workforce Central версии 8.1 и выше с Teams Shifts, например настольным или мобильным приложением Teams, для следующих основных сценариев работы сотрудников и менеджеров:
-
-* Просмотр расписания
-
-* Публикация и запрос открытых смен.
-
-* Замена смен
-
-* Запросить отгул
-
-* Предложить смены.
-
-Подробнее о развертывании соединителя Kronos-to-Teams Shifts см. в разделе [Загрузите его на GitHub.](https://aka.ms/KronosShiftsConnector).
-
-## <a name="jda-to-teams-shifts-connector"></a>Соединитель смен JDA-to-Teams
-
-С помощью открытого исходного кода вы можете интегрировать JDA, например BlueYonder версии 17.2 и выше, с Teams Shifts, например настольным или мобильным приложением Teams, для следующих основных сценариев работы и менеджера:
-
-* Публикуйте смены и группы расписания в JDA и просматривайте их в Teams.
-
-* Включите богатые сценарии планирования, в том числе запросы на обмен сменами и отгулы.
-
-* Настройте доступность пользователей с помощью [API Microsoft Graph для смен](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true).
-
-Дополнительные сведения о вкладе и предложении см. в разделе [Загрузите его на GitHub.](https://aka.ms/JDAShiftsConnector).
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
