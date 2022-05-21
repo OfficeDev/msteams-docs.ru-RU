@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: aabbe185edd57491dc9928d66700d1f35f8b1557
-ms.sourcegitcommit: 6d87e131eeae6846cadecf6ba775cecd010b4ffc
+ms.openlocfilehash: a65a63ef7fafe8ab63e5c865349ff2da6c8869fa
+ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65132711"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602287"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,6 +22,7 @@ ms.locfileid: "65132711"
 
 | Дата | Update | Найти здесь |
 | --- | --- | --- |
+|19.05.2022|Боты и расширения для сообщений для GCC и GCCH| • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
 |28.04.2022| Распространенные причины сбоя проверки приложения | Распространение приложения > Публикация в хранилище Teams > [Распространенные причины сбоя проверки приложения](concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md)|
 |20.04.2022 |  Настройка конвейеров CI/CD | Инструменты и пакеты SDK > Набор инструментов Teams для Visual Studio Code > [Настройка конвейеров CI/CD](toolkit/use-CICD-template.md)|
 |19.04.2022 | Отправка приложения в Microsoft Teams | Распространение приложения > [Отправка приложения](concepts/deploy-and-publish/apps-upload.md)|
@@ -63,6 +64,7 @@ ms.locfileid: "65132711"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|19.05.2022|Боты и расширения для сообщений для GCC и GCCH| • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
 |26.04.2022.|Поведение при удалении для личного приложения с ботом | Создание ботов > Беседы ботов > [Изменение поведения при удалении в личных приложениях с ботами](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |22.04.2022| Предварительное тестирование для приложений с монетизацией | Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/test-preview-for-monetized-apps.md)
 |22.04.2022| Поток покупок из приложения для монетизации приложений | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md)

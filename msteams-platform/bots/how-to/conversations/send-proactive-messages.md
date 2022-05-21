@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: high
 Keywords: отправить сообщение получить ИД пользователя ИД канала ИД беседы
-ms.openlocfilehash: ec41ec08af9c7e3b7280995f8abc66b3a5a7baa0
-ms.sourcegitcommit: 52af681132e496a57b18f468c5b73265a49a5f44
+ms.openlocfilehash: fd3ed48022239aaa84e00c8b3b59701970d9a0af
+ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64590719"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602273"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -21,6 +21,13 @@ ms.locfileid: "64590719"
 * Приветствия
 * Уведомления
 * Запланированные сообщения
+
+> [!IMPORTANT]
+> В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD).
+>
+> Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций:
+>    * GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`.
+>    * GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
 
 Чтобы бот мог отправлять упреждающие сообщения пользователю, групповому чату или команде, он должен иметь доступ для отправки сообщения. В случае группового чата или команды приложение, содержащее бота, должно быть сначала установлено в этом расположении.
 Вы можете [заранее установить приложение с помощью Microsoft Graph](#proactively-install-your-app-using-graph) в команде, если это необходимо, или использовать [политику приложений](/microsoftteams/teams-custom-app-policies-and-settings), чтобы передавать приложения командам и пользователям в вашем клиенте. В случае пользователей ваше приложение должно быть установлено для пользователя или пользователь должен быть частью команды, в которой установлено ваше приложение.
