@@ -1,10 +1,10 @@
 ### YamlMime:Landing
-title: Microsoft Teams для разработчиков
+title: Microsoft Teams документации разработчика
 summary: Добро пожаловать в обзор документации Microsoft Teams разработчика. Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
 metadata:
-  title: Microsoft Teams для разработчиков
+  title: Microsoft Teams документации разработчика
   description: Общие сведения о создании приложений для Teams
-  ms.service: service
+  ms.service: msteams
   ms.subservice: subservice
   ms.topic: landing-page
   ms.collection: collection
@@ -12,17 +12,19 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: c9995cb280cffba91e8315fbde9ac93c9652a2f9
-  ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+  ms.openlocfilehash: 65f7c89bac5b17318623a5719b053d4bd04c4a81
+  ms.sourcegitcommit: e28497b34993cac751769dfcd1843c1b3e98c359
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65103981"
+  ms.lasthandoff: 05/23/2022
+  ms.locfileid: "65632668"
 landingContent:
 - title: Знакомство с последними версиями
   linkLists:
   - linkListType: concept
     links:
+    - text: Распространенные причины сбоя проверки приложения
+      url: ~/concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md
     - text: Отправка приложения в Microsoft Teams
       url: ~/concepts/deploy-and-publish/apps-upload.md
     - text: Поделиться в Teams из личного приложения или вкладки
@@ -41,8 +43,6 @@ landingContent:
       url: ~/get-started/glossary.md
     - text: Обзор
       url: ~/overview.md
-    - text: Планирование приложения
-      url: ~/concepts/app-fundamentals-overview.md
 - title: Начало работы
   linkLists:
   - linkListType: get-started
@@ -59,7 +59,7 @@ landingContent:
       url: sbs-gs-blazorupdate.yml
     - text: Создание приложения с помощью SPFx
       url: sbs-gs-spfx.yml
-    - text: Создание приложения с помощью C# или .NET
+    - text: Создание приложения с C# или .NET
       url: sbs-gs-csharp.yml
     - text: Создание приложения с помощью Node.js
       url: sbs-gs-nodejs.yml
@@ -101,7 +101,7 @@ landingContent:
       url: ~/tabs/what-are-tabs.md
     - text: Боты сборки
       url: ~/bots/what-are-bots.md
-    - text: Создание расширений сообщений
+    - text: Создать расширения для сообщений
       url: ~/messaging-extensions/what-are-messaging-extensions.md
     - text: Создание приложений для собраний Teams
       url: ~/apps-in-teams-meetings/teams-apps-in-meetings.md
@@ -139,7 +139,7 @@ landingContent:
       url: ~/sbs-meetings-sidepanel.yml
   - linkListType: tutorial
     links:
-    - text: Upload файлы для Teams из бота
+    - text: Отправка файлов Teams из бота
       url: ~/sbs-file-handling-in-bot.yml
     - text: Создание пузырька содержимого собрания
       url: ~/sbs-meeting-content-bubble.yml
