@@ -3,15 +3,15 @@ title: Работа с несколькими средами TeamsFX в набо
 author: MuyangAmigo
 description: О множественной среде TeamsFX
 ms.author: nintan
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: overview of multiple environment
 ms.date: 11/29/2021
-ms.openlocfilehash: b9719add5036ae533ce6d7c395ab95a5905bcbb8
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 684951451519ca5e1aaa82344de802259df22a63
+ms.sourcegitcommit: 264d3cc84d6eec4ab025cf86a7a6f4865f1aed07
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111866"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653282"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
@@ -82,7 +82,7 @@ ms.locfileid: "65111866"
 | Повторное использование существующего приложения Azure AD для приложения Teams  | <ul> <li>Раздел `auth` в `.fx/config.<envName>.json`</li> </ul> |  [Использование существующего приложения Azure AD для приложения Teams](provision.md#use-an-existing-azure-ad-app-for-your-teams-app) |
 | Повторное использование существующего приложения Azure AD для бота | <ul> <li>Раздел `bot` в `.fx/config.<envName>.json`</li> </ul> | [Использование существующего приложения Azure AD для бота](provision.md#use-an-existing-azure-ad-app-for-your-bot) |
 | Пропустить добавление пользователя во время подготовки SQL | <ul> <li>Свойство `skipAddingSqlUser` в `.fx/config.<envName>.json`</li> </ul> | [Пропустить добавление пользователя для базы данных SQL](provision.md#skip-adding-user-for-sql-database) |
-| Настройка манифеста приложения | <ul> <li>`templates/manifest.template.json`</li> <li>Раздел `manifest` в `.fx/config.<envName>.json`</li>  </ul> | [Настройка манифеста приложения Teams в наборе средств Teams](TeamsFx-manifest-customization.md) |
+| Настройка манифеста приложения | <ul> <li>`templates/manifest.template.json`</li> <li>Раздел `manifest` в `.fx/config.<envName>.json`</li>  </ul> | [Предварительный просмотр манифеста приложения в наборе средств](TeamsFx-preview-and-customize-app-manifest.md)|
 
 ## <a name="scenarios"></a>Сценарии
 
