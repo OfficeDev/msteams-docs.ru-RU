@@ -3,20 +3,18 @@ title: Общие сведения о наборе средств Teams
 author: zyxiaoyuer
 description: Общие сведения о наборе средств Teams, установке набора средств Teams и обзор функций набора средств
 ms.author: zhany
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: overview
-ms.date: 11/29/2021
-ms.openlocfilehash: de249f060581c2d8e1f90408c8431fe451125ef2
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.date: 05/17/2022
+ms.openlocfilehash: 36436b5cc2cf7edec784ab653b12d8cf44172b8b
+ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111425"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65654601"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
 
-> [!NOTE]
-> В настоящее время эта функция предлагается только в **общедоступной предварительной версии для разработчиков**.
 
 Набор средств Teams для Microsoft Visual Studio Code помогает создавать и развертывать приложения Teams с интегрированными удостоверениями, доступом к облачному хранилищу, данным из Microsoft Graph и другим службам в Azure и Microsoft 365 с помощью подхода нулевой конфигурации. Для разработки приложений Teams, аналогичной набору средств Teams для Visual Studio, вы можете использовать средство [CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md), состоящее из `teamsfx` набора средств.
 Набор средств Teams позволяет создавать, отлаживать и развертывать приложения Teams непосредственно из Visual Studio Code. Разработка приложения с помощью набора средств имеет следующие преимущества.
@@ -27,8 +25,6 @@ ms.locfileid: "65111425"
 * Службы Azure и Microsoft 365 с использованием подхода с нулевой конфигурацией
 
 Набор средств Teams объединяет в одном месте все инструменты, необходимые для создания приложения Teams.
-
-Для разработки приложений Teams, аналогичной набору средств Teams для Visual Studio Code, вы можете использовать средство [CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md), состоящее из `teamsfx` набора средств.
 
 ## <a name="user-journey-of-teams-toolkit"></a>Путь пользователя при применении набора средств Teams
 
@@ -47,17 +43,17 @@ ms.locfileid: "65111425"
 ## <a name="install-teams-toolkit-for-visual-studio-code"></a>Установка набора средств Teams для Visual Studio Code
 
 1. Откройте **Visual Studio Code.**
-1. Выберите представление расширений (**CTRL+SHIFT+X** / **⌘⇧-X** или **Вид > Расширения**):
+1. Выберите представление расширений (**CTRL+SHIFT+X** / **⌘⇧-X** или **view > Extensions**).
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install toolkit-1.png" alt-text="установка":::
 
-1. Введите **Teams Toolkit** (Набор средств Teams) в поле поиска:
+1. **Введите Teams Toolkit** в поле поиска.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install toolkit-2.png" alt-text="Набор средств":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install-toolkit2.png" alt-text="Набор средств":::
 
-1. Нажмите **Установить**:
+1. Нажмите кнопку **Установить**.
   
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install.png" alt-text="установка набора средств":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install-toolkit.png" alt-text="install toolkit 4.0.0":::
 
 > [!TIP]
 > Вы можете установить набор средств Teams из [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension).
@@ -66,17 +62,17 @@ ms.locfileid: "65111425"
 
 После установки набора средств вы увидите пользовательский интерфейс набора средств Teams, как показано на следующем изображении.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/manual/teams toolkit.png" alt-text="мини-функции":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/manual/Teams-toolkit.png" alt-text="мини-функции":::
 
-Вы можете выбрать **Краткую инструкцию**, чтобы ознакомиться с набором средств Teams, или выбрать **Создать приложение Teams**, чтобы создать один проект Teams. Если в Visual Studio Code открыт проект Teams, созданный с помощью набора средств Teams версии 2.+, вы увидите пользовательский интерфейс набора средств Teams со всеми функциями, как показано на следующем изображении. Вы можете выбрать **Краткую инструкцию**, чтобы ознакомиться с набором средств Teams, или выбрать **Создать приложение Teams**, чтобы создать один проект Teams. Вы можете просмотреть список всех функций набора средств при создании или открытии существующего проекта на боковой панели Visual Studio Code.
+Вы **можете выбрать Начало работы**, чтобы изучить Teams Toolkit, или выбрать команду "Создать Teams **App**", чтобы создать Teams проекта. Если у вас есть проект Teams, созданный Teams Toolkit, открытый в Visual Studio Code, вы увидите пользовательский интерфейс Teams Toolkit со всеми функциональными возможностями, как показано на следующем рисунке:
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/manual/toolkit functions.png" alt-text="функций":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/manual/teamstookit1.png" alt-text="Снимок экрана: набор средствteams":::
 
-Давайте рассмотрим темы, описанные в этом документе:
+Давайте рассмотрим темы, рассматриваемые в этом документе.
 
 ## <a name="accounts"></a>Учетные записи
 
-Для разработки приложения Teams требуется по крайней мере одна учетная запись Microsoft 365 с действительной подпиской. Если вы хотите разместить свои серверные ресурсы в Azure, также требуется учетная запись Azure. Набор средств Teams поддерживает интегрированный интерфейс для входа, подготовки и развертывания ресурсов Azure. Вы можете [создать бесплатную учетную запись Azure](https://azure.microsoft.com/free/) перед началом работы.
+Для разработки приложения Teams требуется по крайней мере одна учетная запись Microsoft 365 с действительной подпиской. Если вы хотите разместить свои серверные ресурсы в Azure, также требуется учетная запись Azure. Teams Toolkit поддерживает интегрированный интерфейс для входа, подготовки и развертывания ресурсов Azure. Вы можете [создать бесплатную учетную запись Azure](https://azure.microsoft.com/free/) перед началом работы.
 
 ## <a name="environment"></a>Среда
 
@@ -86,21 +82,19 @@ ms.locfileid: "65111425"
 
 Позволяет разработчикам и владельцу проекта приглашать других участников совместной работы в проект TeamsFx для отладки, подготовки и развертывания того же проекта TeamsFx.
 
+:::image type="content" source="../assets/images/teams-toolkit-v2/manual/teamsfx.png" alt-text="Проект Teamsfx":::
+
 ## <a name="development"></a>Разработка
 
 Набор средств Teams помогает создавать и настраивать приложения Teams, что упрощает разработку приложений Teams.
 
 ### <a name="create-a-new-teams-app"></a>Создание нового приложения Teams
 
-Помогает начать разработку приложения Teams путем создания проекта Teams с помощью набора средств Teams с использованием функции **Создать проект** или **Создать из примеров**.
+Это поможет начать с разработки Teams, создав новый проект Teams с помощью Teams Toolkit с помощью create **new project** или **Start from a sample**.
 
-### <a name="add-capabilities"></a>Добавление возможностей
+### <a name="add-features"></a>Добавление компонентов
 
-Помогает добавить другие необходимые возможности Teams в приложение Teams во время разработки.
-
-### <a name="add-cloud-resources"></a>Добавление облачных ресурсов
-
-Помогает при необходимости добавлять облачные ресурсы, соответствующие вашим потребностям разработки.
+Она помогает постепенно добавлять дополнительные Teams, такие как tab или **Bot**, или при необходимости  добавлять ресурсы Azure, такие как **База данных SQL Azure** или **Azure Key Vault**, которые соответствуют вашим потребностям разработки в текущем приложении Teams. Вы также можете добавить рабочие процессы **единого** входа или **CI/CD** для Teams приложения. 
 
 ### <a name="edit-manifest-file"></a>Изменение файла манифеста
 
@@ -121,10 +115,6 @@ ms.locfileid: "65111425"
 ### <a name="publish-to-teams"></a>Публикация в Teams
 
 После создания приложения вы можете распространять его в разных областях, например для отдельных пользователей, команд, организаций или для всех. Публикация в Teams помогает опубликовать разработанное приложение.
-
-### <a name="cicd-guide"></a>Руководство по CI/CD
-
-Помогает автоматизировать рабочий процесс разработки при создании приложения Teams. Руководство по CI/CD предоставляет средства и шаблоны для начала работы при настройке конвейеров CI или CD.
 
 #### <a name="teamsfx-cli"></a>TeamsFx CLI
 
@@ -151,8 +141,7 @@ ms.locfileid: "65111425"
 | **Разработка** | &nbsp; | &nbsp; |
 | &nbsp; | Создание нового приложения Teams | Используйте мастер набора средств для подготовки шаблонов проектов при разработке приложений. |
 | &nbsp; | Просмотр образцов | Выберите любой из 12 примеров приложений набора средств Teams. Набор средств скачивает код приложения из GitHub, и вы можете создать пример приложения. |
-| &nbsp; | Добавление возможностей | Добавьте другие необходимые возможности Teams в приложение Teams во время разработки. |
-| &nbsp; | Добавление облачных ресурсов | Добавьте необязательные облачные ресурсы, подходящие для вашего приложения. |
+| &nbsp; | Добавление компонентов | — добавьте другие необходимые Teams для Teams приложения во время разработки. </br> — добавьте необязательные облачные ресурсы, подходящие для вашего приложения. |
 | &nbsp; | Изменение файла манифеста | Измените интеграцию приложения Teams и клиента Teams. |
 | **Развертывание** | &nbsp; | &nbsp; |
 | &nbsp; | Подготовка в облаке | Выделите ресурсы Azure для приложения. Набор средств Teams интегрирован с Azure Resource Manager. |
@@ -160,12 +149,12 @@ ms.locfileid: "65111425"
 | &nbsp; | Развертывание в облаке | Разверните исходный код в Azure. |
 | &nbsp; | Публикация в Teams | Опубликуйте разработанное приложение и распространите его в разных областях, например для личного использования, команд, каналов или организации. |
 | &nbsp; | Портал разработчиков Teams | Используйте портал разработчика для настройки приложения Teams и управления им. |
-| &nbsp; | Руководство по CI/CD | Автоматизируйте рабочий процесс разработки при создании приложения Teams. |
 | **Справка и обратная связь** | &nbsp; | &nbsp; |
-| &nbsp; | Краткая инструкция | Просмотрите краткую инструкцию по набору средств Teams в Visual Studio Code.  |
+| &nbsp; | Краткое руководство | Просмотрите справку Teams toolkit Quick start в Visual Studio Code.  |
+| &nbsp; | Учебник | Выберите, чтобы получить доступ к различным руководствам. |
 | &nbsp; | Документация | Выберите, чтобы получить доступ к документации разработчиков Microsoft Teams. |
 | &nbsp; | Сообщение о проблемах в GitHub | Выберите, чтобы перейти на страницу GitHub и сообщить о любой проблеме. |
-|
+
 
 > [!TIP]
 > Просмотрите существующие проблемы перед созданием новой или посетите сайт [StackOverflow с тегом `teams-toolkit`](https://stackoverflow.com/questions/tagged/teams-toolkit), чтобы отправить отзыв.

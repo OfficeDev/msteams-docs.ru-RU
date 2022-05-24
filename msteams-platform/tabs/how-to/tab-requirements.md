@@ -3,15 +3,15 @@ title: Предварительные требования
 author: surbhigupta
 description: Каждая вкладка в Microsoft Teams должна соответствовать этим требованиям.
 keywords: настраиваемый канал группы вкладок Teams
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 2ac02c7c78fca1ddf4c64e2718cdaf840b0ae59b
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: ca9b4d073a324c3cbf1d2d087bec8d366faf0830
+ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65110283"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65654896"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
@@ -44,7 +44,7 @@ ms.locfileid: "65110283"
 | &nbsp; | Установка | Для использования... |
 | --- | --- | --- |
 | **Required** | &nbsp; | &nbsp; |
-| &nbsp; | [Node.js](https://nodejs.org/en/download/) | Серверной среды выполнения JavaScript. Используйте последний выпуск LTS версии 14.|
+| &nbsp; | [Node.js](https://nodejs.org/en/download/) | Серверной среды выполнения JavaScript. Используйте последнюю версию версии 16 LTS.|
 | &nbsp; | [Microsoft Edge](https://www.microsoft.com/edge) (рекомендуется) или [Google Chrome](https://www.google.com/chrome/) | Браузера со средствами разработчика. |
 | &nbsp; | [Visual Studio Code](https://code.visualstudio.com/download); | Сред сборки JavaScript, TypeScript или SharePoint Framework (SPFx). |
 | &nbsp; | Рабочая нагрузка [Visual Studio 2019](https://visualstudio.com/download), **ASP.NET и веб-разработки** или **кроссплатформенной разработки .NET Core** | .NET. Вы можете установить бесплатный выпуск Visual Studio Community 2019. |

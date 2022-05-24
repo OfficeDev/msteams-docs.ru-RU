@@ -4,12 +4,12 @@ description: Обзор начала работы с документацией 
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: 11989fe16da36e9fc68840782f63078fc39731c6
-ms.sourcegitcommit: 591bab4c7e01ac9099b9a540f149b64e6e31e6e8
+ms.openlocfilehash: 7e2288912fd2a851571b4b735af02db519fefe47
+ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65135768"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65654770"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -58,6 +58,11 @@ ms.locfileid: "65135768"
 > [Создание приложения Teams с помощью C# или .NET](../sbs-gs-csharp.yml)
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью Node.js](../sbs-gs-nodejs.yml)
+> [!div class="nextstepaction"]
+> [Создание бота уведомлений с помощью JavaScript](../sbs-gs-notificationbot.yml)
+> [!div class="nextstepaction"]
+> [Создание командного бота с помощью JavaScript](../sbs-gs-commandbot.yml)
+> [!div class="nextstepaction"]
 
 ## <a name="see-also"></a>См. также
 

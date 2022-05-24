@@ -92,32 +92,36 @@
           href: toolkit/teams-toolkit-fundamentals.md
         - name: Создание нового приложения Teams
           href: toolkit/create-new-project.md
+        - name: Подготовка учетных записей для создания приложения Teams
+          href: toolkit/accounts.md
         - name: Локальная отладка приложения Teams
           href: toolkit/debug-local.md
         - name: Отладка фоновых процессов
           href: toolkit/debug-background-process.md
-        - name: Подготовка учетных записей для создания приложения Teams
-          href: toolkit/accounts.md
         - name: Подготовка облачных ресурсов
           href: toolkit/provision.md
         - name: Развертывание приложения Teams в облаке
           href: toolkit/deploy.md
-        - name: Публикация приложений Teams с помощью набора средств Teams
-          href: toolkit/publish.md
+        - name: Предварительный просмотр и настройка манифеста приложения Teams
+          href: toolkit/TeamsFx-preview-and-customize-app-manifest.md
+        - name: Настройка манифеста Azure AD
+          href: toolkit/AAD-manifest-customization.md
         - name: Добавление возможностей в приложение Teams
           href: toolkit/add-capability.md
         - name: Добавление облачных ресурсов в приложение Teams
           href: toolkit/add-resource.md
-        - name: Настройка манифеста приложения Teams
-          href: toolkit/TeamsFx-manifest-customization.md
-        - name: Предварительный просмотр манифеста приложения Teams
-          href: toolkit/TeamsFx-manifest-preview.md
+        - name: Добавление функциональности единого входа в приложение Teams
+          href: toolkit/add-single-sign-on.md
+        - name: Добавление подключения к API в приложение Teams
+          href: toolkit/add-API-connection.md
+        - name: Настройка конвейеров CI/CD
+          href: toolkit/use-CICD-template.md
+        - name: Публикация приложений Teams с помощью набора средств Teams
+          href: toolkit/publish.md
         - name: Управление несколькими средами
           href: toolkit/TeamsFx-multi-env.md
         - name: Совместная работа с другими разработчиками над набором средств Teams
           href: toolkit/TeamsFx-collaboration.md
-        - name: Настройка конвейеров CI/CD
-          href: toolkit/use-CICD-template.md
         - name: Пакет SDK TeamsFx
           href: toolkit/TeamsFx-SDK.md
     - name: CLI набора средств Teams
@@ -132,8 +136,6 @@
       href: concepts/build-and-test/teams-developer-portal.md
     - name: Клиентский SDK JavaScript для Teams
       href: tabs/how-to/using-teams-client-sdk.md
-    - name: Клиентский SDK JavaScript для Teams — предварительная версия 2
-      href: m365-apps/using-teams-client-sdk-preview.md
     - name: Пакеты Node.js Bot Framework для ботов и расширений для сообщений (GitHub)
       href: 'https://github.com/Microsoft/botbuilder-js'
     - name: Пакеты .NET Bot Framework для ботов и расширений для сообщений (GitHub)
@@ -421,6 +423,8 @@
       href: m365-apps/extend-m365-teams-personal-tab.md
     - name: Включение расширения для сообщений Teams в Outlook
       href: m365-apps/extend-m365-teams-message-extension.md
+    - name: Публикация приложений Teams для Microsoft 365
+      href: m365-apps/publish.md
 - name: Тестирование приложения
   items:
     - name: Обзор
