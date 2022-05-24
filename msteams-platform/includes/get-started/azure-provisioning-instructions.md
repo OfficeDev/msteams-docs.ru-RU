@@ -87,4 +87,4 @@
 
    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/azure-deployed-app.png" alt-text="Снимок экрана: устанавливаемого приложения." border="false":::
 
-    Поздравляем! Теперь приложение бота выполняется удаленно из Azure!
+    Поздравляем! Приложение вкладки теперь выполняется удаленно из Azure!

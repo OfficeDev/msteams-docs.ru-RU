@@ -12,24 +12,24 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 1404ad66f8ce221f2f94186636cba7d7722d8f6e
-  ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+  ms.openlocfilehash: bc3bbdcb9afe75311f126a686a397eada38c573c
+  ms.sourcegitcommit: 74623035d7c18194e339f566c820e0653bc3d8b6
   ms.translationtype: MT
   ms.contentlocale: ru-RU
   ms.lasthandoff: 05/24/2022
-  ms.locfileid: "65656105"
+  ms.locfileid: "65656840"
 landingContent:
-- title: Microsoft Build 2022
+- title: 'Microsoft Build 2022 '
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Отправка приложений с Outlook и Office в Teams магазина
+    - text: Отправка приложений с поддержкой Outlook и Office в магазин Teams
       url: m365-apps/overview.md
-    - text: Руководство по приложениям и новые возможности TeamsJS версии 2.0.0
+    - text: Руководство по приложению и новые возможности TeamsJS версии 2.0.0
       url: tabs/how-to/using-teams-client-sdk.md
-    - text: Teams toolkit версии 4.0.0 для Visual Studio Code теперь общедоступная версия
+    - text: Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна
       url: toolkit/teams-toolkit-fundamentals.md
-    - text: Боты и расширения сообщений в GCC и GCCH
+    - text: Боты и расширения для сообщений в GCC и GCCH
       url: ~/concepts/app-fundamentals-overview.md#government-community-cloud
 - title: Начало работы
   linkLists:
@@ -56,9 +56,9 @@ landingContent:
     - text: Создание приложения с помощью Node.js
       url: sbs-gs-nodejs.yml
     - text: Создание командного бота с помощью JavaScript
-      url: toolkit/add-capability.md
+      url: sbs-gs-commandbot.yml
     - text: Создание бота уведомлений с помощью JavaScript
-      url: toolkit/add-capability.md
+      url: sbs-gs-notificationbot.yml
 - title: Монетизация приложения
   linkLists:
   - linkListType: concept
@@ -119,8 +119,6 @@ landingContent:
       url: ~/sbs-teams-conversation-bot.yml
     - text: Создание бота для звонков и собраний
       url: ~/sbs-calling-and-meeting.yml
-    - text: Предоставление разрешений устройству табуляции
-      url: ~/sbs-tab-device-permissions.yml
     - text: Настройка единого входа для вкладок и расширений сообщений
       url: ~/sbs-tabs-and-messaging-extensions-with-SSO.yml
     - text: Создание вкладок с помощью адаптивных карточек
@@ -136,9 +134,9 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: Создание командного бота с помощью JavaScript
-      url: toolkit/add-capability.md
+      url: sbs-gs-commandbot.yml
     - text: Создание бота уведомлений с помощью JavaScript
-      url: toolkit/add-capability.md
+      url: sbs-gs-notificationbot.yml
     - text: Отправка файлов Teams из бота
       url: ~/sbs-file-handling-in-bot.yml
     - text: Создание пузырька содержимого собрания
@@ -162,7 +160,7 @@ landingContent:
     - text: Сценарии сборки для Teams приложения
       url: https://adoption.microsoft.com/extensibility-look-book/scenarios/
     - text: Рекомендации по Teams приложений
-      url: https://developer.microsoft.com/microsoft-teams/app-development-resources
+      url: https://developer.microsoft.com/microsoft-teams/app-development-resources/?filter=bestpractices
     - text: Изучение приложений с низким кодом для Teams
       url: ~/samples/teams-low-code-solutions.md
 - title: Публикация и распространение

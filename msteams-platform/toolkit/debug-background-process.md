@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/03/2022
-ms.openlocfilehash: a3259c46927547b98700f76f704c6c5cb222a74d
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 1c78c6cfe68d263ede675161e5a89b03b0885616
+ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104016"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65656161"
 ---
 # <a name="debug-background-process"></a>Отладка фонового процесса
 
@@ -33,19 +33,19 @@ ms.locfileid: "65104016"
 
   |Тип проекта|Версия Node.js LTS|
   |----------|--------------------------------|
-  |Вкладка без Функций Azure | 10, 12, **14 (рекомендуется)**, 16 |
-  |Вкладка с Функциями Azure | 10, 12, **14 (рекомендуется)**|
-  |Bot |  10, 12, **14 (рекомендуется)**, 16|
-  |Расширение для сообщений | 10, 12, **14 (рекомендуется)**, 16 |
+  |Tab | 14, 16 (рекомендуется) |
+  |Вкладка SPFx | 12, 14 (рекомендуется)|
+  |Bot |  14, 16 (рекомендуется)|
+  |Расширение для сообщений | 14, 16 (рекомендуется) |
 
    
 * Учетная запись Microsoft 365 с действительными учетными данными. Набор средств Teams предлагает вам войти в учетную запись Microsoft 365, если вы не вошли
 
 * Отправка настраиваемых приложений или загрузка без публикации в вашем клиенте для разработчика включена. Если нет, локальная отладка прекращается
 
-* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`
+* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичный файл Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`
 
-* Azure Functions Core Tools версии 3. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается
+* Azure Functions Core Tools версии 4. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается
 
 * Версия SDK .NET Core, применимая для Функций Azure. Если SDK .NET Core не установлен или версия не соответствует требованиям, набор средств Teams устанавливает SDK .NET Core для Windows и MacOS в `~/.fx/bin/dotnet`. Для Linux локальная отладка прекращается
 

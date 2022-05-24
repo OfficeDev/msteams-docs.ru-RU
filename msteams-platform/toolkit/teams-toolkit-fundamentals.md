@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/17/2022
-ms.openlocfilehash: 36436b5cc2cf7edec784ab653b12d8cf44172b8b
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: 12ac74f64c4be69ff9b73ca2de1ee7c91917b259
+ms.sourcegitcommit: 74623035d7c18194e339f566c820e0653bc3d8b6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2022
-ms.locfileid: "65654601"
+ms.locfileid: "65656861"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
 
@@ -127,35 +127,35 @@ ms.locfileid: "65654601"
 ## <a name="help-and-feedback"></a>Справка и обратная связь
 
 В этом разделе вы найдете необходимую документацию и ресурсы. Вы можете выбрать **Сообщить о проблемах в GitHub** в наборе средств Teams, чтобы получить **быструю поддержку** от эксперта по продукту. Просмотрите проблемы перед созданием новой проблемы или посетите сайт [StackOverflow с тегом `teams-toolkit`](https://stackoverflow.com/questions/tagged/teams-toolkit), чтобы отправить отзыв.
+<!--  
+Let's explore Teams Toolkit features.
 
-Давайте рассмотрим функции набора средств Teams.
-
-| Функции набора средств Teams | Включает... | Возможное действие |
+| Teams Toolkit Features | Includes | What you can do |
 | --- | --- | --- |
-| **Учетные записи** | &nbsp; | &nbsp; |
-| &nbsp; | Учетная запись Microsoft 365 | Используйте учетную запись Microsoft 365 с действительной подпиской E5 для создания своего приложения. |
-| &nbsp; | Учетная запись Azure | Используйте учетную запись Azure для развертывания приложения в Azure. |
-| **Среда** | &nbsp; | &nbsp; |
-| &nbsp; | локальная | Разверните приложение в локальной среде по умолчанию с конфигурациями среды локального компьютера. |
-| &nbsp; | разработка | Разверните приложение в среде разработки по умолчанию с конфигурациями удаленной или облачной среды. При необходимости вы можете создать дополнительные среды. |
-| **Разработка** | &nbsp; | &nbsp; |
-| &nbsp; | Создание нового приложения Teams | Используйте мастер набора средств для подготовки шаблонов проектов при разработке приложений. |
-| &nbsp; | Просмотр образцов | Выберите любой из 12 примеров приложений набора средств Teams. Набор средств скачивает код приложения из GitHub, и вы можете создать пример приложения. |
-| &nbsp; | Добавление компонентов | — добавьте другие необходимые Teams для Teams приложения во время разработки. </br> — добавьте необязательные облачные ресурсы, подходящие для вашего приложения. |
-| &nbsp; | Изменение файла манифеста | Измените интеграцию приложения Teams и клиента Teams. |
-| **Развертывание** | &nbsp; | &nbsp; |
-| &nbsp; | Подготовка в облаке | Выделите ресурсы Azure для приложения. Набор средств Teams интегрирован с Azure Resource Manager. |
-| &nbsp; | Упаковка пакета метаданных Teams | Создайте пакет приложения, который можно отправить в Teams или на портал разработчика. Он содержит манифест приложения и значки приложения.  |
-| &nbsp; | Развертывание в облаке | Разверните исходный код в Azure. |
-| &nbsp; | Публикация в Teams | Опубликуйте разработанное приложение и распространите его в разных областях, например для личного использования, команд, каналов или организации. |
-| &nbsp; | Портал разработчиков Teams | Используйте портал разработчика для настройки приложения Teams и управления им. |
-| **Справка и обратная связь** | &nbsp; | &nbsp; |
-| &nbsp; | Краткое руководство | Просмотрите справку Teams toolkit Quick start в Visual Studio Code.  |
-| &nbsp; | Учебник | Выберите, чтобы получить доступ к различным руководствам. |
-| &nbsp; | Документация | Выберите, чтобы получить доступ к документации разработчиков Microsoft Teams. |
-| &nbsp; | Сообщение о проблемах в GitHub | Выберите, чтобы перейти на страницу GitHub и сообщить о любой проблеме. |
+| **Accounts** | &nbsp; | &nbsp; |
+| &nbsp; | Microsoft 365 account | Use your Microsoft 365 account with a valid E5 subscription for building your app. |
+| &nbsp; | Azure account | Use your Azure account for deploying app on Azure. |
+| **Environment** | &nbsp; | &nbsp; |
+| &nbsp; | local | Deploy your app in the default local environment with local machine environment configurations. |
+| &nbsp; | dev | Deploy your app in the default dev environment with remote or cloud environment configurations. You can create more environments, as you need. |
+| **Development** | &nbsp; | &nbsp; |
+| &nbsp; | Create a new Teams app | Use the toolkit wizard to prepare project scaffolding for app development. |
+| &nbsp; | View samples | Select any of Teams Toolkit's 12 sample apps. The toolkit downloads the app code from GitHub, and you can build the sample app. |
+| &nbsp; | Add Features | - Add other required Teams capabilities to Teams app during development process. </br> - Add optional cloud resources suitable for your app. |
+| &nbsp; | Edit manifest file | Edit the Teams app integration with Teams client. |
+| **Deployment** | &nbsp; | &nbsp; |
+| &nbsp; | Provision in the cloud | Allocate Azure resources for your application. Teams Toolkit is integrated with Azure Resource Manager. |
+| &nbsp; | Zip Teams metadata package | Create the app package that can be uploaded to Teams or Developer Portal. It contains the app manifest and app icons.  |
+| &nbsp; | Deploy to the cloud | Deploy the source code to Azure. |
+| &nbsp; | Publish to Teams | Publish your developed app and distribute it to scopes, such as personal, team, channel, or organization. |
+| &nbsp; | Developer Portal for Teams | Use Developer Portal to configure and manage your Teams app. |
+| **Help and Feedback** | &nbsp; | &nbsp; |
+| &nbsp; | Quick start | View the Teams Toolkit Quick start help within Visual Studio Code.  |
+| &nbsp; | Tutorial | Select to access different tutorials. |
+| &nbsp; | Documentation | Select to access the Microsoft Teams Developer Documentation. |
+| &nbsp; | Report issues on GitHub | Select to access GitHub page and raise any issues. |
 
-
+-->
 > [!TIP]
 > Просмотрите существующие проблемы перед созданием новой или посетите сайт [StackOverflow с тегом `teams-toolkit`](https://stackoverflow.com/questions/tagged/teams-toolkit), чтобы отправить отзыв.
 

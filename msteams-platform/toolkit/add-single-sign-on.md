@@ -6,14 +6,14 @@ ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/20/2022
-ms.openlocfilehash: db676795e394856f6e787086cae654efad79172a
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: 73177f96172e4fd60b7225c2463efb6a057f36c4
+ms.sourcegitcommit: 74623035d7c18194e339f566c820e0653bc3d8b6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2022
-ms.locfileid: "65655244"
+ms.locfileid: "65656847"
 ---
-# <a name="add-single-sign-on-experience"></a>Добавление функции единого входа
+# <a name="add-single-sign-on-to-teams-app"></a>Добавление единого входа в Teams приложения
 
 Microsoft Teams предоставляет функцию единого входа для приложения, чтобы получить маркер пользователя Teams для доступа к Microsoft Graph и другим API. Teams Toolkit упрощает взаимодействие, абстрагирование некоторых Azure AD и интеграции за некоторыми простыми API. Это позволяет легко добавлять функции единого входа в Teams приложения.
 
@@ -282,22 +282,22 @@ export async function showUserImage(context, ssoToken, param) {
 
    * Добавьте следующую строку для регистрации новой команды, используя:`addCommand` `teamsSsoBot`
 
-   ```bash
+     ```bash
 
-   this.dialog.addCommand("ShowUserProfile", "show", showUserInfo);
+     this.dialog.addCommand("ShowUserProfile", "show", showUserInfo);
 
-   ```
+     ```
 
    * Добавьте следующие строки после приведенной выше строки, чтобы зарегистрировать новую `photo` команду и подключиться к методу, добавленному `showUserImage` выше:
 
-   ```bash
+     ```bash
 
-   // As shown here, you can add your own parameter into the `showUserImage` method
-   // You can also use regular expression for the command here
-   const scope = ["User.Read"];
-   this.dialog.addCommand("ShowUserPhoto", new RegExp("photo\s*.*"), showUserImage, scope);
+     // As shown here, you can add your own parameter into the `showUserImage` method
+     // You can also use regular expression for the command here
+     const scope = ["User.Read"];
+     this.dialog.addCommand("ShowUserPhoto", new RegExp("photo\s*.*"), showUserImage, scope);
 
-   ```
+     ```
 
 3. Зарегистрируйте команду в манифесте Teams приложения. Откройте `templates/appPackage/manifest.template.json`и добавьте в бот следующие `command` `commandLists` строки:
 
@@ -336,12 +336,12 @@ Teams и боты имеют аналогичный поток для подде
 
 ### <a name="simplified-sso-with-teamsfx"></a>Упрощенный единый вход с TeamsFx
 
-TeamsFx помогает сократить количество задач разработчика, используя систему единого входа Teams и доступ к облачным ресурсам, сведя их к однострочным операторам с нулевой конфигурацией.
+TeamsFx помогает сократить количество задач разработчика, используя единый вход и доступ к облачным ресурсам до однострочного оператора с нулевой конфигурацией.
 
 С помощью пакета SDK для TeamsFx можно написать код проверки подлинности пользователя упрощенным способом с помощью учетных данных:
 
 1. Удостоверение пользователя в среде браузера: `TeamsUserCredential` Teams удостоверение текущего пользователя.
-2. Удостоверение пользователя в Node.js: `OnBehalfOfUserCredentail` использует поток On-Behalf-Of и Teams единого входа.
+2. Удостоверение пользователя в Node.js: `OnBehalfOfUserCredentail` использует поток On-Behalf-Of и маркер единого входа.
 3. Удостоверение приложения в Node.js среде: `AppCredential` представляет удостоверение приложения.
 
 Дополнительные сведения о пакете SDK для TeamsFx см. в следующих статьях:

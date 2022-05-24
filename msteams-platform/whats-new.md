@@ -4,53 +4,62 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: a65a63ef7fafe8ab63e5c865349ff2da6c8869fa
-ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.openlocfilehash: 0ce0de2efd6c38e610226db48a6a463942a7ccc6
+ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602287"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65656168"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
-Представляем функции платформы Microsoft Teams в общедоступной версии и в предварительной версии для разработчиков.
+Представляем функции платформы Microsoft Teams в общедоступной версии и в предварительной версии для разработчиков. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
-> [!IMPORTANT]
-> Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Подробнее см. в статье [Конфигурация RSS-канала](#get-latest-updates).
+## <a name="microsoft-build-2022-image-typeicon-sourceassetsimagesbullhornpng-borderfalse"></a>Microsoft Build 2022 :::image type="icon" source="assets/images/bullhorn.png" border="false":::
 
-## <a name="latest-updates-bullhorn-icon"></a>Последние обновления ![значок "мегафон"](~/assets/images/bullhorn.png)
-
-| Дата | Update | Найти здесь |
+| Date | Возможность | Найдите его здесь |
 | --- | --- | --- |
-|19.05.2022|Боты и расширения для сообщений для GCC и GCCH| • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
-|28.04.2022| Распространенные причины сбоя проверки приложения | Распространение приложения > Публикация в хранилище Teams > [Распространенные причины сбоя проверки приложения](concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md)|
-|20.04.2022 |  Настройка конвейеров CI/CD | Инструменты и пакеты SDK > Набор инструментов Teams для Visual Studio Code > [Настройка конвейеров CI/CD](toolkit/use-CICD-template.md)|
-|19.04.2022 | Отправка приложения в Microsoft Teams | Распространение приложения > [Отправка приложения](concepts/deploy-and-publish/apps-upload.md)|
-|04/06/2022| Поделиться в Teams из личного приложения или вкладки (предварительная версия для разработчиков) | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
-|01.04.2022 г.| Представлены пошаговые инструкции по созданию диалогового бота Teams| Создание ботов > Диалоги ботов > Каналы и групповые беседы > [Пошаговые инструкции по созданию диалогового бота Teams](sbs-teams-conversation-bot.yml) |
-|30.03.2022 г.| Модуль "Начало работы" с приложением Blazor обновлен с помощью вкладок и ботов|  Начало работы > [Создание первого приложения с помощью Blazor](sbs-gs-blazorupdate.yml)|
-|30.03.2022 г.|Разрешения устройства для браузера | Интеграция возможностей устройств > [Разрешения устройств для браузера](concepts/device-capabilities/browser-device-permissions.md) |
-|29.03.2022 г. | Интеграция средства "Выбор людей" | Интеграция с Teams > [Интеграция средства "Выбор людей"](concepts/device-capabilities/people-picker-capability.md)|
-|23.03.2022| Представлены пошаговые инструкции по развертыванию ссылок в Teams с помощью бота | Создание расширений для сообщений > Добавление развертывания ссылок > [Развертывание ссылок в Teams с помощью бота](sbs-botbuilder-linkunfurling.yml)|
-|22.03.2022| Добавлены сведения о процессе отладки| • Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Локальная отладка приложения Teams](toolkit/debug-local.md) </br> • Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Отладка фоновых процессов](toolkit/debug-background-process.md)|
-|14.03.2022| Представлены пошаговые инструкции по сборке и тестированию соединителя в Microsoft Teams | Создание веб-перехватчиков и соединителей > Создание соединителей Office 365 > [Создание соединителей Teams](sbs-teams-connectors.yml)|
-|10.03.2022| Добавлены сведения о подключаемых модулях Moodle LMS и Microsoft 365 | Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|
-|03.03.2022 | Добавление проверки подлинности в Teams с помощью внешнего поставщика OAuth| Проверка подлинности приложения > Вкладки > [Использовать внешних поставщиков OAuth](tabs/how-to/authentication/auth-oauth-provider.md) |
-|25.02.2022| Добавлена пошаговая руководство по вызову модулей задач в Teams| Создание карточек и модулей задач > Создание модулей задач > Использование модулей задач от ботов > [Вызов модуля задачи из Teams](sbs-botbuilder-taskmodule.yml)|
-|24.02.2022| Добавлено пошаговое руководство по созданию расширения для обмена сообщениями с действиями | Создание расширений для обмена сообщениями > Команды действий > Определение команд действий > [Создание расширения для обмена сообщениями с действиями](sbs-meetingextension-action.yml)|
-|24.02.2022| Добавлено пошаговое руководство по созданию расширения для обмена сообщениями с поиском | Создание расширений для обмена сообщениями > Команды поиска > Определение команд поиска > [Создание расширения для обмена сообщениями с поиском](sbs-messagingextension-searchcommand.yml)|
-|24.02.2022| Добавлена пошаговая инструкция по созданию исходящих веб-перехватчиков | Создание веб-перехватчиков и соединителей > Создание исходящих веб-перехватчиков > [Создание исходящих веб-перехватчиков](sbs-outgoing-webhooks.yml)|
-| 23.02.2022 |Параметры рейтинга магазина Microsoft Teams| Распространение приложения > Публикация в магазине Teams > [Параметры рейтинга магазина Microsoft Teams](concepts/deploy-and-publish/appsource/post-publish/teams-store-ranking-parameters.md)|
-|09/02/2022| Представлена пошаговая инструкция по отправке файлов в Teams из бота | Создание ботов > Отправка и получение файлов > [Пошаговая инструкция по отправке файлов в Teams из бота](sbs-file-handling-in-bot.yml) |
-| 18.02.2022 | Добавлен обширный глоссарий по документации для разработчиков Microsoft Teams, который поможет вам быстро найти определение термина | [Глоссарий](~/get-started/glossary.md) |
-| 18.02.2022 | Обновлен модуль обзора для сопоставления приложения Teams с целями организации, а также историями пользователей и для изучения функций приложения Teams | [Обзор > Подходящее приложение Teams](overview.md) |
-| 18.02.2022 | Модуль "Основные сведения о приложении" теперь называется "Планирование приложения" и включает сопоставление случаев использования с функциями Teams и контрольный список для планирования приложений | [Планирование приложения > Обзор](~/concepts/app-fundamentals-overview.md) |
-|17.02.2022| Что происходит после отправки приложения?| Распространение приложения > Публикации в магазине Teams > [Обзор](concepts/deploy-and-publish/appsource/publish.md)|
-|15.02.2022| Представлена пошаговая инструкция по отправке файлов в Teams из бота | Создание ботов > Отправка и получение файлов > [Пошаговая инструкция по отправке файлов в Teams из бота](sbs-file-handling-in-bot.yml) |
-|11.02.2022| Общая трибуна собраний| • Создание приложений для собраний Teams > [Общая сцена собрания](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Создание приложений для собраний Teams > [Справочные материалы по API приложений для собраний](apps-in-teams-meetings/API-references.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста в предварительной версии для разработчиков](resources/schema/manifest-schema-dev-preview.md)|
-|08.02.2022| Представлены пошаговые инструкции по созданию бота для звонков и собраний| Создание ботов > Боты для звонков и собраний > Регистрация бота для звонков и собраний > [Пошаговые инструкции по созданию бота для звонков и собраний](sbs-calling-and-meeting.yml) |
-|07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
-|03.02.2022| Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+|24.05.2022| Отправка приложений с поддержкой Outlook и Office в магазин Teams | Расширение приложения в Microsoft 365 > [Обзор](m365-apps/overview.md) |
+|24.05.2022| Руководство по приложению и новые возможности TeamsJS версии 2.0.0| Средства и пакеты SDK > [Пакет SDK клиента JavaScript для Teams](tabs/how-to/using-teams-client-sdk.md)  |
+| 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> • [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
+| 24.05.2022 | Боты и расширения для сообщений в GCC и GCCH | • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
+
+<!--
+## Latest updates ![bullhorn icon](~/assets/images/bullhorn.png)
+
+| Date | Update | Find here |
+| --- | --- | --- |
+|05/24/2022| Submit your Outlook- and Office-enabled apps to the Teams store | Extend your app across Microsoft 365 > [Overview](m365-apps/overview.md) |
+|05/24/2022| App guidance and what's new in TeamsJS version 2.0.0| Tools and SDKs > [Teams JavaScript client SDK](tabs/how-to/using-teams-client-sdk.md)  |
+|05/19/2022|Bots and Message extensions in GCC and GCCH| • Plan your app > [Overview](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Build bots > [Overview](bots/what-are-bots.md) </br> • Build message extensions > [Overview](messaging-extensions/what-are-messaging-extensions.md) |
+|04/28/2022| Common reasons for app validation failure | Distribute your app > Publish to the Teams store > [Common reasons for app validation failure](concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md)|
+|04/20/2022 |  Set up CI/CD pipelines | Tools and SDKs > Teams Toolkit for Visual Studio Code > [Set up CI/CD pipelines](toolkit/use-CICD-template.md)|
+|04/19/2022 | Upload your app in Microsoft Teams | Distribute your app > [Upload your app](concepts/deploy-and-publish/apps-upload.md)|
+|04/06/2022| Share to Teams from personal app or tab (developer preview) | Integrate with Teams > Share to Teams > [Share to Teams from personal app or tab](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
+|04/01/2022| Introduced step-by-step guide to create Teams conversational bot| Build bots > Bot conversations > Channel and group conversations > [Step-by-step guide to create Teams conversational bot](sbs-teams-conversation-bot.yml) |
+|03/30/2022| Updated the Get started module with Blazor app using tabs and bots|  Get started > [Build your first app using Blazor](sbs-gs-blazorupdate.yml)|
+|03/30/2022|Device permissions for the browser | Integrate device capabilities > [Device permissions for the browser](concepts/device-capabilities/browser-device-permissions.md) |
+|03/29/2022 | Integrate People Picker | Integrate with Teams > [Integrate People Picker](concepts/device-capabilities/people-picker-capability.md)|
+|03/23/2022| Introduced step-by-step guide to unfurl links in Teams using bot | Build message extensions > Add link unfurling > [Unfurl links in Teams using bot](sbs-botbuilder-linkunfurling.yml)|
+|03/22/2022| Added information on debug process| • Tools and SDKs> Teams Toolkit for Visual Studio Code > [Debug your Teams app locally](toolkit/debug-local.md) </br> • Tools and SDKs> Teams Toolkit for Visual Studio Code > [Debug background process](toolkit/debug-background-process.md)|
+|03/14/2022| Introduced step-by-step guide to build and test a connector in Microsoft Teams | Build webhooks and connectors > Create Office 365 Connectors > [Build Teams connectors](sbs-teams-connectors.yml)|
+|03/10/2022| Added information on Moodle LMS and Microsoft 365 plugins | Integrate with Teams > Moodle LMS > [Moodle learning management system](resources/moodle-overview.md)|
+|03/03/2022 | How to add authentication using external OAuth provider| Add authentication > Tabs > [Use external OAuth providers](tabs/how-to/authentication/auth-oauth-provider.md) |
+|02/25/2022| Introduced step-by-step guide to invoke task modules in Teams| Build cards and task modules > Build task modules > Use task modules from bots > [Invoke task module from Teams](sbs-botbuilder-taskmodule.yml)|
+|02/24/2022| Introduced step-by-step guide to build action based message extension | Build Message Extensions > Action commands > Define action commands > [Build action based message extension](sbs-meetingextension-action.yml)|
+|02/24/2022| Introduced step-by-step guide to build search based message extension | Build message extensions > Search commands > Define search commands > [Build search based message extension](sbs-messagingextension-searchcommand.yml)|
+|02/24/2022| Introduced step-by-step guide to create Outgoing Webhooks | Build webhooks and connectors > Create Outgoing Webhooks > [Create Outgoing Webhooks](sbs-outgoing-webhooks.yml)|
+| 02/23/2022 |Microsoft Teams store ranking parameters| Distribute your app > Publish to the Teams store > [Microsoft Teams store ranking parameters](concepts/deploy-and-publish/appsource/post-publish/teams-store-ranking-parameters.md)|
+|02/09/2022| Introduced step-by-step guide how to upload files to Teams from a bot | Build bots > Send and receive files > [step-by-step guide how to upload files to Teams from a bot](sbs-file-handling-in-bot.yml) |
+| 02/18/2022 | Introduced extensive Glossary for the Microsoft Teams Developer Documentation to help you find the definition about a term quickly | [Glossary](~/get-started/glossary.md) |
+| 02/18/2022 | Updated the Overview module for mapping Teams app to organizational goals, user story, and exploring Teams app features | [Overview > Teams app that fits](overview.md) |
+| 02/18/2022 | Updated the App fundamentals module to Plan your app to include mapping use cases to Teams features, and app planning checklist | [Plan your app > Overview](~/concepts/app-fundamentals-overview.md) |
+|02/17/2022| What to expect after you submit your app?| Distribute your app > Publish to the Teams store > [Overview](concepts/deploy-and-publish/appsource/publish.md)|
+|02/15/2022| Introduced step-by-step guide how to upload files to Teams from a bot | Build bots > Send and receive files > [Step-by-step guide how to upload files to Teams from a bot](sbs-file-handling-in-bot.yml) |
+|02/11/2022| Shared meeting stage| • Build apps for Teams meetings > [Shared meeting stage](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#shared-meeting-stage) </br> • Build apps for Teams meetings > [Meeting apps API references](apps-in-teams-meetings/API-references.md) </br> • App manifest > Public developer preview > [Developer preview manifest schema](resources/schema/manifest-schema-dev-preview.md)|
+|02/08/2022| Introduced step-by-step guide to create Calling and Meeting bot| Build bots > Calls and meetings bots > Register calls and meetings bot > [Step-by-step guide to create Calling and Meeting bot](sbs-calling-and-meeting.yml) |
+|02/07/2022| Tools and SDKs |Teams Toolkit for Visual Studio Code > </br> • Add capabilities to Teams app> [Add capabilities to your Teams apps](toolkit/add-capability.md) </br> • Add cloud resources to Teams app> [Add cloud resources to your Teams app](toolkit/add-resource.md) |
+|02/03/2022| Introduced app manifest version 1.12 | • App manifest > [App manifest schema](resources/schema/manifest-schema.md) </br> • App manifest > Public developer preview > [Manifest schema](resources/schema/manifest-schema-dev-preview.md) |-->
 
 
 ## <a name="ga-features"></a>Функции общедоступной версии
@@ -64,10 +73,14 @@ ms.locfileid: "65602287"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
-|19.05.2022|Боты и расширения для сообщений для GCC и GCCH| • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
+|24.05.2022| Отправка приложений с поддержкой Outlook и Office в магазин Teams | Расширение приложения в Microsoft 365 > [Обзор](m365-apps/overview.md) |
+|24.05.2022| Руководство по приложению и новые возможности TeamsJS версии 2.0.0| Средства и пакеты SDK > [Пакет SDK клиента JavaScript для Teams](tabs/how-to/using-teams-client-sdk.md)  |
+| 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> •  [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
+|24.05.2022|Боты и расширения для сообщений в GCC и GCCH| • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
 |26.04.2022.|Поведение при удалении для личного приложения с ботом | Создание ботов > Беседы ботов > [Изменение поведения при удалении в личных приложениях с ботами](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |22.04.2022| Предварительное тестирование для приложений с монетизацией | Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/test-preview-for-monetized-apps.md)
 |22.04.2022| Поток покупок из приложения для монетизации приложений | Монетизация приложения > [Покупки из приложения](concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md)
+|28.04.2022| Распространенные причины сбоя проверки приложения | Распространение приложения > Публикация в хранилище Teams > [Распространенные причины сбоя проверки приложения](concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md)|
 |20.04.2022 |  Настройка конвейеров CI/CD | Инструменты и пакеты SDKs > Набор инструментов Teams для Visual Studio Code >  [Настройка конвейеров CI/CD](toolkit/use-CICD-template.md)|
 |19.04.2022 | Отправка приложения в Microsoft Teams | Распространение приложения > [Отправка приложения](concepts/deploy-and-publish/apps-upload.md)|
 |01.04.2022 г.| Представлены пошаговые инструкции по созданию диалогового бота Teams| Создание ботов > Диалоги ботов > Каналы и групповые беседы > [Пошаговые инструкции по созданию диалогового бота Teams](sbs-teams-conversation-bot.yml) |
@@ -274,15 +287,15 @@ ms.locfileid: "65602287"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-|04/06/2022| Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
-|07.02.2022| Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
-|02.02.2022| Представлен манифест приложения версии 1.12 | Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|17.01.2022| Выбор людей в адаптивных карточках для мобильных устройств  | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
+| 04/06/2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
+| 07.02.2022 | Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
+| 03.02.2022 | Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+|17.01.2022 | Выбор людей в адаптивных карточках для мобильных устройств  | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
 |10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
-|24.12.2021| Представлены пошаговые инструкции по предоставлению разрешений для устройств вкладок | Основы приложений > Возможности устройств > [Пошаговые инструкции по предоставлению разрешений для устройств вкладок](sbs-tab-device-permissions.yml) |
-|15.11.2021| Личные вкладки и расширения для обмена сообщениями работают в Outlook и Office | [Расширение приложений Teams в Microsoft 365](~/m365-apps/overview.md) |
-|28.10.2021|В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Получение всех сообщений с помощью RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > Беседы ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [схема манифеста в предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md) |
-|16.06.2021| Согласие с определением ресурсов для чатов | • Использование данных Teams в Microsoft Graph > [Разрешение для конкретного ресурса](graph-api/rsc/resource-specific-consent.md) </br> • Тестирование приложения > Microsoft Graph > [Тестирование разрешений для конкретных ресурсов в Teams](graph-api/rsc/test-resource-specific-consent.md)|
+| 24.12.2021 | Представлены пошаговые инструкции по предоставлению разрешений для устройств вкладок | Основы приложений > Возможности устройств > [Пошаговые инструкции по предоставлению разрешений для устройств вкладок](sbs-tab-device-permissions.yml) |
+| 15.11.2021 | Личные вкладки и расширения для обмена сообщениями работают в Outlook и Office | [Расширение приложений Teams в Microsoft 365](~/m365-apps/overview.md) |
+| 28.10.2021 |В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Получение всех сообщений с помощью RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > Беседы ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [схема манифеста в предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md) |
+| 16.06.2021 | Согласие с определением ресурсов для чатов | • Использование данных Teams в Microsoft Graph > [Разрешение для конкретного ресурса](graph-api/rsc/resource-specific-consent.md) </br> • Тестирование приложения > Microsoft Graph > [Тестирование разрешений для конкретных ресурсов в Teams](graph-api/rsc/test-resource-specific-consent.md)|
 
 Дополнительные сведения см. в [обзоре предварительной версии для разработчиков Teams](~/resources/dev-preview/developer-preview-intro.md).
 
