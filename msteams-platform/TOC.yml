@@ -20,8 +20,12 @@
   items:
     - name: Обзор начала работы
       href: get-started/get-started-overview.md
-    - name: Создание первого приложения с помощью JavaScript
+    - name: Создание первого приложения на вкладке с помощью JavaScript
       href: sbs-gs-javascript.yml
+    - name: Создание первого приложения бота с помощью JavaScript
+      href: sbs-gs-bot.yml
+    - name: Создание первого приложения расширения для сообщений с помощью JavaScript
+      href: sbs-gs-msgext.yml
     - name: Создание первого приложения с помощью Blazor
       href: sbs-gs-blazorupdate.yml
     - name: Создание первого приложения с помощью SPFx

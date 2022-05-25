@@ -3,19 +3,21 @@ title: Создать страницу удаления вкладки
 author: surbhigupta
 description: Как создать страницу удаления вкладки
 keywords: вкладки команд групповой канал настраиваемый удалить
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 17268b8afc010eedf1d8916cbcdc38a66d1f6e85
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: fe0445099958af7cd9eccc831fe22fa2e94cbcc5
+ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111586"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65672938"
 ---
 # <a name="create-a-removal-page"></a>Создать страницу удаления
 
 Вы можете расширить и улучшить взаимодействие с пользователем, поддерживая параметры удаления и изменения в своем приложении. Teams позволяет пользователям переименовывать или удалять вкладку канала или группы, и вы можете разрешить пользователям изменять конфигурацию вкладки после установки. Кроме того, функция удаления вкладки предоставляет пользователям возможность после удаления удалить или заархивировать содержимое.
+
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
 ## <a name="enable-your-tab-to-be-reconfigured-after-installation"></a>Включить перенастройку вкладки после установки
 
@@ -35,11 +37,11 @@ ms.locfileid: "65111586"
 
 ## <a name="create-a-tab-removal-page-for-your-application"></a>Создайте страницу удаления вкладки для своего приложения
 
-Необязательная страница удаления — это HTML-страница, которая отображается при удалении вкладки. URL-адрес страницы удаления определяется методом `setSettings()` на странице конфигурации. Как и все страницы в приложении, страница удаления должна соответствовать [предварительным требованиям вкладки Teams](../../../tabs/how-to/tab-requirements.md).
+Необязательная страница удаления — это HTML-страница, которая отображается при удалении вкладки. URL-адрес страницы удаления назначается методом `setConfig()` (ранее `setSettings()`) на странице конфигурации. Как и все страницы в приложении, страница удаления должна соответствовать [предварительным требованиям вкладки Teams](../../../tabs/how-to/tab-requirements.md).
 
 ### <a name="register-a-remove-handler"></a>Зарегистрировать обработчик удаления
 
-При желании в рамках логики страницы удаления вы можете вызывать `registerOnRemoveHandler((RemoveEvent) => {}` обработчик событий при удалении пользователем существующей конфигурации вкладки. Метод принимает интерфейс [`RemoveEvent`](/javascript/api/@microsoft/teams-js/microsoftteams.settings.removeevent?view=msteams-client-js-latest&preserve-view=true) и выполняет код в обработчике, когда пользователь пытается удалить содержимое. Этот метод используется для выполнения операций очистки, таких как удаление базового ресурса, питающего содержимое вкладки. Одновременно может быть зарегистрирован только один обработчик удаления.
+При необходимости в логике страницы `registerOnRemoveHandler((RemoveEvent) => {}` удаления можно вызвать обработчик событий, когда пользователь удаляет существующую конфигурацию вкладки. Метод принимает интерфейс [`RemoveEvent`](/javascript/api/@microsoft/teams-js/pages.config.removeevent?view=msteams-client-js-latest&preserve-view=true) и выполняет код в обработчике, когда пользователь пытается удалить содержимое. Этот метод используется для выполнения операций очистки, таких как удаление базового ресурса, питающего содержимое вкладки. Одновременно может быть зарегистрирован только один обработчик удаления.
 
 Интерфейс `RemoveEvent` описывает объект двумя способами:
 
@@ -47,19 +49,45 @@ ms.locfileid: "65111586"
 
 * Функция `notifyFailure(string)` необязательна. Это указывает на то, что удаление базового ресурса не удалось, и его содержимое не может быть удалено. Необязательный параметр строки указывает причину сбоя. Если эта строка задана, она отображается для пользователя; иначе отображается общая ошибка.
 
-#### <a name="use-the-getsettings-function"></a>Использование функции `getSettings()`
+#### <a name="use-the-getconfig-function"></a>Использование функции `getConfig()`
 
-Вы можете использовать `getSettings()`, чтобы назначить содержимое вкладки для удаления. Функция `getSettings((Settings) =>{})` принимает [`Settings interface`](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true) и предоставляет допустимые значения свойств настроек, которые можно получить.
+Вы можете использовать `getConfig()` (ранее `getSettings()`) для назначения удаляемого содержимого вкладки. Функция `getConfig()` возвращает обещание, которое разрешается с объектом Config и предоставляет допустимые значения свойств параметров, которые можно получить.
 
 #### <a name="use-the-getcontext-function"></a>Использование функции `getContext()`
 
-Вы можете использовать `getContext()` для получения текущего контекста, в котором запущен фрейм. Функция `getContext((Context) =>{})` принимает [`Context interface`](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-latest&preserve-view=true). Функция предоставляет допустимые значения свойств `Context`, которые вы можете использовать в логике страницы удаления, чтобы определить содержимое, отображаемое на странице удаления.
+Вы можете использовать `getContext()` для получения текущего контекста, в котором запущен фрейм. Функция `getContext()` возвращает обещание, которое будет разрешаться с помощью объекта Context. Объект Context предоставляет допустимые `Context` значения свойств, которые можно использовать в логике страницы удаления для определения содержимого, отображаемого на странице удаления.
 
 #### <a name="include-authentication"></a>Включить проверку подлинности
 
 Перед тем, как разрешить пользователю удалять содержимое вкладки, требуется проверка подлинности. Контекстные сведения можно использовать для создания запросов аутентификации и URL-адресов страниц авторизации. См. [Поток проверки подлинности Microsoft Teams для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md) Убедитесь, что все домены, используемые на вкладках, перечислены в массиве `manifest.json` и `validDomains`.
 
 Ниже приведен образец блока кода удаления вкладки:
+
+# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
+
+```html
+<body>
+  <button onclick="onClick()">Delete this tab and all underlying data?</button>
+  <script>
+    app.initialize();
+    pages.config.registerOnRemoveHandler((removeEvent) => {
+      // Here you can designate the tab content to be removed and/or archived.
+        const configPromise = pages.getConfig();
+        configPromise.
+            then((configuration) => {
+                configuration.contentUrl = "...";
+                removeEvent.notifySuccess()}).
+            catch((error) => {removeEvent.notifyFailure("failure message")});
+    });
+
+    const onClick() => {
+        pages.config.setValidityState(true);
+    }
+  </script>
+</body>
+```
+
+# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
 
 ```html
 <body>
@@ -81,7 +109,9 @@ ms.locfileid: "65111586"
 </body>
 ```
 
-Когда пользователь выбирает **Удалить** из меню вкладки, Teams загружает дополнительную страницу `removeUrl`, назначенную в **настройках страницы**, в IFrame. Пользователю показывается кнопка с функцией `onClick()`, вызова `microsoftTeams.settings.setValidityState(true)` и активации кнопки **Удалить**, показанной в нижней части страницы удаления IFrame.
+***
+
+Когда пользователь выбирает **Удалить** из меню вкладки, Teams загружает дополнительную страницу `removeUrl`, назначенную в **настройках страницы**, в IFrame. Пользователю показывается кнопка с функцией `onClick()`, вызова `pages.config.setValidityState(true)` и активации кнопки **Удалить**, показанной в нижней части страницы удаления IFrame.
 
 После действия обработчика удаления`removeEvent.notifySuccess()` или `removeEvent.notifyFailure()` уведомления Teams о результатах удаления содержимого.
 

@@ -3,15 +3,15 @@ title: Создать страницу контента
 author: surbhigupta
 description: как создать страницу содержимого
 keywords: настраиваемый канал группы вкладок Teams
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 68ce03e9b1ef303bd66043baed39baf954fb1d0f
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 4f0d5ea16c51b8b40dd28c6ff29ee7d990636f31
+ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111432"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65673029"
 ---
 # <a name="create-a-content-page-for-your-tab"></a>Создание страницы содержимого для вкладки
 
@@ -23,6 +23,8 @@ ms.locfileid: "65111432"
 
 Эта статья посвящена использованию страниц содержимого в качестве вкладок; однако большинство этих рекомендаций применимы независимо от того, как страница содержимого представлена ​​пользователю.
 
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
+
 ## <a name="tab-content-and-design-guidelines"></a>Содержимое вкладок и рекомендации по дизайну
 
 Общая цель вкладки — предоставить доступ к значимому и увлекательному контенту, имеющему практическую ценность и очевидную цель. Необходимо сосредоточиться на чистоте дизайна вкладок, интуитивной навигации и иммерсивном содержимом.
@@ -31,9 +33,31 @@ ms.locfileid: "65111432"
 
 ## <a name="integrate-your-code-with-teams"></a>Интегрируйте свой код с Teams
 
-Чтобы страница отображалась в Teams, нужно включить [клиентский SDK Microsoft Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для JavaScript и включить вызов `microsoftTeams.initialize()` после загрузки страницы.
+Чтобы страница отображалась в Teams, нужно включить [клиентский SDK Microsoft Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для JavaScript и включить вызов `app.initialize()` после загрузки страницы.
 
 В следующем коде показан пример взаимодействия вашей страницы и клиента Teams.
+
+# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+...
+    <script src= 'https://statics.teams.cdn.office.net/sdk/v2.0.0/js/MicrosoftTeams.min.js'></script>
+...
+</head>
+
+<body>
+...
+    <script>
+    app.initialize();
+    </script>
+...
+</body>
+```
+
+# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
 
 ```html
 <!DOCTYPE html>
@@ -52,6 +76,8 @@ ms.locfileid: "65111432"
 ...
 </body>
 ```
+
+***
 
 ## <a name="access-additional-content"></a>Доступ к дополнительному содержимому
 
@@ -89,10 +115,10 @@ ms.locfileid: "65111432"
 Чтобы показать индикатор загрузки:
 
 1. Добавьте `"showLoadingIndicator": true` в манифест.
-1. вызова метода `microsoftTeams.initialize();`;
-1. В качестве **обязательного** шага вызовите `microsoftTeams.appInitialization.notifySuccess()`, чтобы уведомить Teams об успешной загрузке вашего приложения. Затем Teams скрывает индикатор загрузки, если это применимо. Если `notifySuccess` не вызывается в течение 30 секунд, предполагается, что время ожидания вашего приложения истекло, и появляется экран ошибки с возможностью повторной попытки.
-1. **При желании**, если вы готовы печатать на экране и хотите отложить загрузку остального содержимого приложения, вы можете вручную скрыть индикатор загрузки, вызвав метод `microsoftTeams.appInitialization.notifyAppLoaded();`.
-1. Если не удается загрузить приложение, вы можете вызвать `microsoftTeams.appInitialization.notifyFailure(reason);`, чтобы сообщить Teams об ошибке. Пользователю показывается экран ошибки. В следующем коде приведен пример причин сбоя приложения:
+1. вызова метода `app.initialize();`;
+1. В качестве **обязательного** шага вызовите `app.notifySuccess()`, чтобы уведомить Teams об успешной загрузке вашего приложения. Затем Teams скрывает индикатор загрузки, если это применимо. Если `notifySuccess` вызов не выполняется в течение 30 секунд, Teams предполагается, что время ожидания приложения истекло, и отображается экран ошибки с параметром повтора.
+1. **При необходимости**, если вы готовы печатать на экране и хотите отложенной загрузки остального содержимого приложения, можно скрыть индикатор загрузки вручную, вызвав его `app.notifyAppLoaded();`.
+1. Если приложение не загружается, `app.notifyFailure({reason: app.FailedReason.Timeout, message: "failure message"});` вы можете позвонить, чтобы Teams о сбое и при необходимости указать сообщение о сбое. Пользователю показывается экран ошибки. В следующем коде показано перечисление, определяющее возможные причины сбоя загрузки приложения:
 
     ```typescript
     /* List of failure reasons */

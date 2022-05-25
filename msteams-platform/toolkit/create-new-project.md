@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: 5da4a0ada6e116a22957a6f1f1b1f2f281501e2a
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: d44f757141d31faaf4639a58fbbd31e5729e6f02
+ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2022
-ms.locfileid: "65654467"
+ms.locfileid: "65656154"
 ---
 # <a name="create-a-new-teams-app-using-teams-toolkit"></a>Создание нового приложения Teams с помощью "Инструментов Teams"
 
@@ -28,13 +28,13 @@ ms.locfileid: "65654467"
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar.png" alt-text="Боковая панель наборов средств Teams":::
 
-1. Вы можете выбрать команду **Создать новое приложение Teams** или **Начать с помощью образца**.
+1. Вы можете выбрать **Создать новое приложение Teams** или **Начать с помощью примера**.
    
    :::image type="content" source="../assets/images/teams-toolkit-v2/select-create-app.png" alt-text="Создать приложение":::
    
-1. При выборе параметра **Создать новое приложение Teams** появится следующее изображение с шаблонами из трех категорий: приложение Teams на основе сценариев, приложение Basic Teams и приложения расширенных команд в Microsoft 365: 
+1. При выборе параметра **Создать новое приложение Teams** появится следующее изображение с шаблонами из трех категорий: приложение Teams на основе сценариев, приложение Basic Teams и расширенные приложения Teams в Microsoft 365: 
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams-capabilities.png" alt-text="Возможности приложения Teams":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams-capabilities.png" alt-text="Ограничения для приложения Teams":::
 
 1. Выберите хотя бы один вариант, чтобы начать создание приложения Teams.
 
@@ -55,10 +55,10 @@ ms.locfileid: "65654467"
 
   Коллекцию образцов можно изучить следующим образом:
 
-  1. Выберите образец для просмотра подробных сведений.
-  1. Нажмите **Создать** на странице сведений каждого образца, чтобы скачать его. 
-  1. Запустите приложение локально или удаленно для предварительного просмотра в веб-клиенте Teams, следуя инструкциям, которые автоматически открываются после загрузки образца.
-  1. Если вы не хотите загружать образцы, вы можете выбрать **Просмотр на GitHub**, чтобы открыть образец в репозитории GitHub Samples и просмотреть исходный код.
+  1. Выберите пример для просмотра подробных сведений.
+  1. Выберите **Создать** на странице сведений каждого примера, чтобы скачать его. 
+  1. Запустите приложение локально или удаленно для предварительного просмотра в веб-клиенте Teams, следуя инструкциям, которые автоматически открываются после загрузки примера.
+  1. Если вы не хотите загружать примеры, вы можете выбрать **Просмотр на GitHub**, чтобы открыть образец в репозитории GitHub Samples и просмотреть исходный код.
 
 ## <a name="step-by-step-guides-using-teams-toolkit"></a>Пошаговые инструкции по использованию набора средств Teams
 
@@ -66,8 +66,8 @@ ms.locfileid: "65654467"
 * [Создание приложения Teams с помощью JavaScript с использованием React](../sbs-gs-javascript.yml)
 * [Создание приложения Teams с помощью SPFx](../sbs-gs-spfx.yml)
 * [Создание приложения Teams с помощью C# или .NET](../sbs-gs-csharp.yml)
-* Отправка уведомления в Teams 
-* Создание бота команды
+* [Отправка уведомления в Teams](../sbs-gs-notificationbot.yml)
+* [Бот командной сборки](../sbs-gs-commandbot.yml)
 
 ## <a name="see-also"></a>См. также
 

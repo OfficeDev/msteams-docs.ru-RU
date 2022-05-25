@@ -6,12 +6,12 @@ keywords: настраиваемый канал группы вкладок Team
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: ca9b4d073a324c3cbf1d2d087bec8d366faf0830
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: 92b03146200af978f3fa5d6dc2c5e6ad27a12200
+ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65654896"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65672931"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
@@ -31,13 +31,15 @@ ms.locfileid: "65654896"
 
 * Создайте стиль вкладок на основе темы, дизайна и назначения клиента Teams. Вкладки лучше всего работают, когда они создаются для решения конкретных потребностей и сфокусированы на небольшом наборе задач или подмножестве данных, относящихся к расположению канала вкладки.
 
-* На странице содержимого добавьте ссылку на [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) с помощью тегов сценариев. После загрузки страницы выполните вызов `microsoftTeams.initialize()`. В противном случае ваша страница не отобразится.
+* На странице содержимого добавьте ссылку на [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) с помощью тегов сценариев. После загрузки страницы выполните вызов `app.initialize()`, в противном случае страница не будет отображаться.
 
 * Для проверки подлинности на мобильных клиентах необходимо перейти на SDK JavaScript для Teams 1.4.1 или более поздней версии.
 
-* Если вы выбрали вариант отображения вкладки канала или группы в мобильном клиенте Teams, конфигурация `setSettings()` должна содержать значение для свойства `websiteUrl`.
+* Если вы выбрали вариант отображения вкладки канала или группы в мобильном клиенте Teams, конфигурация `setConfig()` должна содержать значение для свойства `websiteUrl`.
 
-* Вкладка Microsoft Teams не поддерживает возможность загрузки веб-сайтов интрасети, использующих самозаверяющие сертификаты.
+* Microsoft Teams не поддерживает возможность загрузки веб-сайтов интрасети, использующих самозаверяющие сертификаты.
+
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
 ## <a name="tools-to-build-tabs"></a>Инструменты для создания вкладок
 

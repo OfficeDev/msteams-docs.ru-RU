@@ -6,15 +6,14 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/17/2022
-ms.openlocfilehash: 12ac74f64c4be69ff9b73ca2de1ee7c91917b259
-ms.sourcegitcommit: 74623035d7c18194e339f566c820e0653bc3d8b6
+ms.openlocfilehash: 1b65fedbc34cb00771dde279a19ab1d6b4d8b16a
+ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656861"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65673015"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
-
 
 Набор средств Teams для Microsoft Visual Studio Code помогает создавать и развертывать приложения Teams с интегрированными удостоверениями, доступом к облачному хранилищу, данным из Microsoft Graph и другим службам в Azure и Microsoft 365 с помощью подхода нулевой конфигурации. Для разработки приложений Teams, аналогичной набору средств Teams для Visual Studio, вы можете использовать средство [CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md), состоящее из `teamsfx` набора средств.
 Набор средств Teams позволяет создавать, отлаживать и развертывать приложения Teams непосредственно из Visual Studio Code. Разработка приложения с помощью набора средств имеет следующие преимущества.
