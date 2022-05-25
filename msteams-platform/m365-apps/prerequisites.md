@@ -4,12 +4,12 @@ description: Вот необходимые условия для расшире�
 ms.date: 05/24/2022
 ms.custom: m365apps
 ms.localizationpriority: high
-ms.openlocfilehash: 6e4376d01a398400a7aaefbe1fee14f5547ff372
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: aede01c48f9e5e4ddbfbfebac9a5fa504225ca62
+ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2022
-ms.locfileid: "65654723"
+ms.locfileid: "65656182"
 ---
 # <a name="set-up-your-dev-environment-for-extending-teams-apps-across-microsoft-365"></a>Настройте среду разработки для расширения приложений Teams в Microsoft 365.
 
@@ -73,9 +73,9 @@ ms.locfileid: "65654723"
 
     :::image type="content" source="images/outlook-about-beta-channel.png" alt-text="Перейдите в раздел &quot;О программе Outlook&quot; из учетной записи Office, чтобы убедиться, что вы используете сборку бета-канала.":::
 
-1. Убедитесь, что среда выполнения *Microsoft Edge WebView2* установлена. Откройте в Windows **Пуск** >  **Приложения и функции** и найдите "webview":
+1. Убедитесь, что установлено *Microsoft Edge WebView2 Runtime*. Откройте Windows **Start** >  **Приложения и функции** и выполните поиск **веб-представления**:
 
-    :::image type="content" source="images/windows-addremove-webview2.png" alt-text="Найдите &quot;webview&quot; в разделе &quot;Приложения и функции&quot; в &quot;Параметрах&quot; Windows":::
+    :::image type="content" source="images/windows-addremove-webview2.png" alt-text="Найдите 'веб-представление' в разделе &quot;Приложения и функции&quot; в &quot;Параметрах&quot; Windows":::
 
     Если этот элемент отсутствует в списке, установите [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) в тестовую среду.
 
@@ -95,7 +95,7 @@ ms.locfileid: "65654723"
 
 Расширение [Teams Toolkit для Visual Studio Code](https://aka.ms/teams-toolkit) (`v2.10.0`или более поздней версии) предоставляет команды, которые могут помочь изменить существующий код Teams, чтобы он был совместим с Outlook и Office. Дополнительные сведения см. в разделе [Включение личной вкладки Teams для Office и Outlook](extend-m365-teams-personal-tab.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-step"></a>Следующий этап
 
 Создайте или обновите приложение Teams для работы в Microsoft 365:
 

@@ -1,15 +1,15 @@
 ---
 title: Помощь и отзывы сообщества разработчиков Microsoft Teams
 description: Команда разработчиков продукта Microsoft Teams отвечает сообществу разработчиков по различным каналам обратной связи и поддержки.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: reference
 keywords: команда отзывы разработчик вопросы проблемы связь с сообществом запрос помощи ошибки вклад сообщество обсуждения поддержка
-ms.openlocfilehash: 77da574ca83bd3c927366e7c5aeb7eebdc7a2d92
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: b5030f9e814dc7acf2ae2f5bb25719cc6c3f58f8
+ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111194"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65668013"
 ---
 # <a name="support-and-feedback"></a>Поддержка и обратная связь
 
@@ -47,6 +47,7 @@ ms.locfileid: "65111194"
 |  **Проблемы с набором средств Teams или TeamsFx SDK и CLI** | <ul><li> :::image type="icon" source="assets/icons/GitHub-icon.png" border="false":::  [Проблемы GitHub](https://github.com/OfficeDev/TeamsFx/issues). Создавайте новые проблемы в [репозитории GitHub для TeamsFx (Microsoft Teams Framework)](https://github.com/OfficeDev/TeamsFx), чтобы сообщать о проблемах или отправлять запросы функций. Рекомендуется использовать проблемы GitHub для запросов и получения помощи от сообщества. <li> :::image type="icon" source="assets/icons/stack-overflow-icon.png" border="false":::[Stack Overflow](https://stackoverflow.com/questions/tagged/teams-toolkit). Используйте тег `teams-toolkit` для публикации вопросов. Следуйте рекомендациям Stack Overflow, например добавляйте описательный заголовок, краткую формулировку проблемы и детали для воспроизведения проблемы. Запросы функций или общие вопросы не рассматриваются. </li> </ul> |
 | **Проблемы или предложения по SDK бота и расширения для сообщений** | Отправляйте проблемы и запросы функций в репозиторий SDK для языка вашего бота ([C#](https://github.com/Microsoft/botbuilder-dotnet/), [JavaScript](https://github.com/Microsoft/botbuilder-js) или [Python](https://github.com/Microsoft/botbuilder-python)). Публикуйте вопросы о выполнении действий в [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework%20microsoft-teams) с использованием тега `botframework` и `microsoft-teams`. |
 | **Проблемы или предложения по SDK вкладок** | Отправляйте проблемы и запросы функций в репозиторий SDK для [библиотеки JavaScript Microsoft Teams](https://github.com/OfficeDev/microsoft-teams-library-js/issues). Используйте тег `microsoft-teams` для публикации вопросов о выполнении действий применительно к SDK в [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-teams). |
+| **Live Share проблем или предложений пакета SDK** | Отправка проблем и запросов на функции в репозиторий пакета SDK [для Live Share пакета SDK](https://github.com/microsoft/live-share-sdk). Используйте этот `live-share` тег `microsoft-teams` для публикации вопросов о пакете SDK в [Stack Overflow](https://stackoverflow.com/questions/tagged/live-share+microsoft-teams). |
 
 ### <a name="documentation-feedback"></a>Отзыв о документации
 

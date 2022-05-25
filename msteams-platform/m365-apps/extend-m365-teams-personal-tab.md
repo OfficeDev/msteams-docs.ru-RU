@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: b164231a95c511402431b5d4cdb3c7d0fc6cfdff
-ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+ms.openlocfilehash: 7c7c53b7b269e5c406cb27c3faee8b818dc567a6
+ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656175"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65668139"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -52,14 +52,14 @@ ms.locfileid: "65656175"
 
 Чтобы начать [с личной](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend-M365) вкладки, которая уже включена для запуска в Outlook и Office, используйте расширение Teams Toolkit для Visual Studio Code.
 
-1. В Visual Studio Code откройте палитру команд (`Ctrl+Shift+P`), введите .`Teams: Create a new Teams app`
+1. В Visual Studio Code откройте палитру команд (`Ctrl+Shift+P`), введите `Teams: Create a new Teams app`.
 1. Выберите **личную вкладку с поддержкой единого входа**.
 
     :::image type="content" source="images/toolkit-tab-sample.png" alt-text="Образец списка дел (работает в Teams, Outlook и Office) в Teams Toolkit":::
 
-1. Выберите расположение на локальном компьютере для папки рабочей области.
+1. Выберите расположение папки рабочей области на локальном компьютере.
 1. Откройте палитру команд (`Ctrl+Shift+P`) `Teams: Provision in the cloud` и введите необходимые ресурсы приложения (план Служба приложений, учетную запись служба хранилища, приложение-функцию, управляемое удостоверение) в учетной записи Azure.
-1. Откройте палитру команд () и`Ctrl+Shift+P` введите, `Teams: Deploy to the cloud` чтобы развернуть пример кода на подготовленных ресурсах в Azure и запустить приложение.
+1. Откройте палитру команд (`Ctrl+Shift+P`) и введите `Teams: Deploy to the cloud`, чтобы развернуть образец кода на подготовленных ресурсах в Azure и запустить приложение.
 
 Здесь вы можете сразу перейти к загрузке неопубликованного приложения в Teams просмотреть его в Outlook и Office.[](#sideload-your-app-in-teams) (Манифест приложения и вызовы API TeamsJS уже обновлены для Microsoft 365.)
 
@@ -148,21 +148,21 @@ ms.locfileid: "65656175"
 
 Последним шагом к запуску приложения в Office и Outlook является загрузка неопубликованного пакета приложения личной вкладки в Microsoft Teams.[](..//concepts/build-and-test/apps-package.md)
 
-1. Упакуйте Teams приложения ([манифест](../resources/schema/manifest-schema.md) и [значки приложения](/microsoftteams/platform/resources/schema/manifest-schema#icons)) в ZIP-файл. Если вы использовали Teams Toolkit для создания своего приложения, вы можете легко сделать это с помощью параметра **пакета метаданных Zip Teams** в меню *Развертывание* Teams Toolkit:
+1. Упакуйте Teams приложения ([манифест](../resources/schema/manifest-schema.md) и [значки приложения](/microsoftteams/platform/resources/schema/manifest-schema#icons)) в ZIP-файл. Если вы использовали Teams Toolkit для создания приложения, это можно легко сделать с помощью параметра zip **Teams** пакета метаданных в меню развертывания Teams Toolkit.
 
     :::image type="content" source="images/toolkit-zip-teams-metadata-package.png" alt-text="Параметр ''Zip Teams metadata package'' в расширении Teams Toolkit для Visual Studio Code":::
 
-1. Войдите в Teams учетной записи клиента песочницы и перейдите в режим *предварительной версии* разработчика. Выберите меню с многоточием (**...**) в профиле пользователя, а затем выберите "О программе > **developer preview"**.
+1. Войдите в Teams с помощью учетной записи клиента песочницы и переключитесь в режим *предварительной версии для разработчиков*. Выберите меню с многоточием (**...**) в профиле пользователя, а затем **выберите "О** >  предварительной **версии для разработчиков"**.
 
-    :::image type="content" source="images/teams-dev-preview.png" alt-text="В Teams с многоточием откройте &quot;О программе&quot; и выберите пункт &quot;Предварительная версия для разработчиков&quot;.":::
+    :::image type="content" source="images/teams-dev-preview.png" alt-text="В меню с многоточием Teams откройте «О программе» и выберите параметр «Предварительная версия для разработчиков»":::
 
-1. Выберите *"Приложения* ", чтобы открыть область **"Управление приложениями** ". Затем выберите **"Опубликовать приложение"**.
+1. Выберите **Приложения**, чтобы открыть область **Управление приложениями**. Затем выберите **Опубликовать приложение**.
 
-    :::image type="content" source="images/teams-manage-your-apps.png" alt-text="Откройте панель &quot;Управление приложениями&quot; и выберите &quot;Опубликовать приложение&quot;.":::
+    :::image type="content" source="images/teams-manage-your-apps.png" alt-text="Откройте панель «Управление приложениями» и выберите «Опубликовать приложение»":::
 
 1. Выберите **параметр "Отправить пользовательское приложение** " и выберите пакет приложения.
 
-    :::image type="content" source="images/teams-upload-custom-app.png" alt-text="Параметр &quot;Отправить пользовательское приложение&quot; в Teams":::
+    :::image type="content" source="images/teams-upload-custom-app.png" alt-text="«Отправить настраиваемое приложение» в Teams":::
 
 После загрузки неопубликованного Teams личная вкладка будет доступна в Outlook и Office. Не забудьте войти с помощью тех же учетных данных, которые использовались для входа Teams загрузку неопубликованного приложения.
 
@@ -225,7 +225,7 @@ ms.locfileid: "65656175"
 
 Вы можете проверить поддержку `isSupported()` узла для данной возможности во время выполнения, вызвав функцию для этой возможности (пространство имен) и соответствующим образом скорректируйте поведение приложения. Это позволяет приложению включить пользовательский интерфейс и функциональные возможности на узлах, которые его поддерживают, и обеспечить корректный резервный интерфейс на узлах, которые этого не поддерживают. Дополнительные сведения см. в разделе ["Дифференцирование интерфейса приложения"](../tabs/how-to/using-teams-client-sdk.md#differentiate-your-app-experience).
 
-Используйте каналы [Microsoft Teams разработчиков для](/microsoftteams/platform/feedback) создания отчетов о проблемах и предоставления отзывов.
+Используйте [каналы сообщества разработчиков Microsoft Teams](/microsoftteams/platform/feedback), чтобы сообщать о проблемах и оставлять отзывы.
 
 ### <a name="debugging"></a>Отладка
 
@@ -241,10 +241,10 @@ ms.locfileid: "65656175"
 
 ## <a name="next-step"></a>Следующий этап
 
-Опубликуйте приложение, чтобы его можно было Teams, Outlook и Office:
+Опубликуйте приложение, чтобы его можно было обнаруживать в Teams, в Outlook и в Office:
 
 > [!div class="nextstepaction"]
-> [Публикация Teams приложений для Outlook и Office](publish.md)
+> [Публикация приложений Teams для Outlook и Office](publish.md)
 
 ## <a name="code-sample"></a>Пример кода
 

@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: overview
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: ac7b82d4a0c984f1db94c770be28d0bcda71c8e6
-ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+ms.openlocfilehash: 9cc0d88d5f992aa596509a6206a26baa413bdcf1
+ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656097"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65668146"
 ---
 # <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
@@ -69,7 +69,7 @@ ms.locfileid: "65656097"
 
 После публикации в Microsoft 365 приложения с Teams приложение будет обнаруживаемым как устанавливаемое приложение из хранилищ Outlook и Приложение Office, а также Teams store. При запуске в Outlook и Office приложение использует те же разрешения, что и Teams. Teams администраторы могут управлять [доступом к Teams приложениям](/MicrosoftTeams/manage-third-party-teams-apps) в Microsoft 365 для пользователей в своей организации.
 
-Дополнительные сведения см. в [статье Teams для Microsoft 365](publish.md)
+Дополнительные сведения см. в [статье Teams для Microsoft 365](publish.md).
 
 ## <a name="next-step"></a>Следующий этап
 

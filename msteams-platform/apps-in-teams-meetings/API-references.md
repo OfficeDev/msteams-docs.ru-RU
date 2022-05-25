@@ -4,14 +4,14 @@ author: surbhigupta
 description: Определение ссылок на API приложений для собраний с примерами и образцами кода.
 ms.topic: conceptual
 ms.author: lajanuar
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: приложения для команд, собрания, роль пользователя, участника, запрос сигнала уведомления контекста пользователя API
-ms.openlocfilehash: 4f04d94d5fd9d1b38f7569db658fac10ccaa2650
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 75dc6dde65b24fd05931021544fafe3af956d88d
+ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111355"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65667985"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -777,6 +777,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 * [Проверка подлинности Microsoft Teams для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для собраний Teams](teams-apps-in-meetings.md)
+* [Live Share SDK](teams-live-share-overview.md)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -6,12 +6,12 @@ ms.topic: overview
 ms.author: lajanuar
 ms.localizationpriority: medium
 keywords: teams приложения собрания пользователь участник роль api; teams apps meetings user participant role api
-ms.openlocfilehash: ec9db255d6dad410844451830b12ee902b106712
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: 3543cb8e1beff69484a6348f511a033ad09e1f6d
+ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296954"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65668048"
 ---
 # <a name="apps-for-teams-meetings"></a>Приложения для собраний Teams
 
@@ -47,3 +47,4 @@ ms.locfileid: "65296954"
 * [Настраиваемые сцены режима "Вместе"](~/apps-in-teams-meetings/teams-together-mode.md)
 * [Включение и настройка приложений для собраний Teams](~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)
 * [Жизненный цикл собрания](meeting-app-extensibility.md#meeting-lifecycle)
+* [Улучшенная совместная работа с Live Share SDK](teams-live-share-overview.md)
