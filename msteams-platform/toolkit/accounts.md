@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: c57bbdf6be1b31d61acc1725924f42faeb20b264
-ms.sourcegitcommit: 05285653b2548e0b39e788cd07d414ac87ba3eaf
+ms.openlocfilehash: cb9985aa1f7b9f3f5eff3308f385afbefffba3b6
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191196"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756956"
 ---
 # <a name="prepare-accounts-to-build-teams-apps"></a>Подготовка учетных записей для создания приложений Teams
 
@@ -91,7 +91,7 @@ ms.locfileid: "65191196"
 
        :::image type="content" source="../assets/images/teams-toolkit-v2/upload.png" alt-text="Отправка пользовательского приложения" border="true":::.
 
-        Если пункт "Отправка пользовательского приложения" отсутствует, это означает, что у вас нет необходимого разрешения на загрузку без публикации.
+        Если вы не видите параметр **Отправить пользовательское приложение**, это означает, что у вас нет необходимого разрешения для отправки неопубликованных приложений.
         * Администратор клиента включает для клиента или для организации параметр загрузки без публикации в центре администрирования Teams.
         * Если вы не являетесь администратором клиента, вам нужно связаться с администратором клиента, чтобы включить загрузку без публикации.
 

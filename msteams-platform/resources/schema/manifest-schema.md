@@ -4,12 +4,12 @@ description: Описывает схему манифеста для Microsoft T
 ms.topic: reference
 ms.localizationpriority: high
 keywords: схема манифеста teams
-ms.openlocfilehash: 788a8f5542510e3232c3f97bf12584f08f12d0f6
-ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.openlocfilehash: 5881d5745e12255aad270c227cdd9508a0023644
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65672910"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755883"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справочник: схема манифеста для Microsoft Teams
 
@@ -17,7 +17,7 @@ ms.locfileid: "65672910"
 Дополнительные сведения об изменениях в каждой версии, см. в разделе [журнал изменений манифеста](https://github.com/OfficeDev/microsoft-teams-app-schema/releases).
 
 > [!Important]
-> Версия `1.13` схемы манифеста приложения Microsoft Teams обеспечивает поддержку [расширения приложений Teams до Outlook и Office](../../m365-apps/overview.md). Для приложений, доступных только для Teams, используйте версию `1.12` (или более ранние). Схемы 1.12 и 1.13 в противном случае одинаковы. Дополнительные рекомендации см. в обзоре пакета [SDK клиента JavaScript для Teams](../../m365-apps/overview.md).
+> Версия `1.13` схемы манифеста приложения Microsoft Teams обеспечивает поддержку [расширения приложений Teams до Outlook и Office](../../m365-apps/overview.md). Для приложений, доступных только для Teams, используйте версию `1.12` (или более ранние). Схемы 1.12 и 1.13 в противном случае одинаковы. Дополнительные рекомендации см. в обзоре пакета [SDK клиента JavaScript для Teams](/microsoftteams/platform/tabs/how-to/using-teams-client-sdk?tabs=javascript%2Cmanifest-teams-toolkit).
 
 В следующем примере схемы показаны все варианты расширяемости:
 

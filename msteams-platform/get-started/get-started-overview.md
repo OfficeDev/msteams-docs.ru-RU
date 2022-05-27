@@ -4,12 +4,12 @@ description: Обзор начала работы с документацией 
 ms.localizationpriority: high
 ms.topic: reference
 keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: 7e2288912fd2a851571b4b735af02db519fefe47
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: 9e4405439241de9a4f3db97d256df8b8fab21880
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65654770"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757712"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -23,7 +23,7 @@ ms.locfileid: "65654770"
 - навыки использования набора средств и пакетов SDK;
 - настройка и сборка различных типов приложений Teams.
 
-Давайте кратко рассмотрим параметры среды сборки, которые можно выбрать, и дорожную карту для создания и развертывания приложения Teams.
+Давайте кратко рассмотрим варианты среды сборки, которые вы можете выбрать, и дорожную карту для создания и развертывания приложения Teams.
 
 :::image type="content" source="../assets/images/get-started/gs-build-options.png" alt-text="Иллюстрация: основные шаги по созданию и развертыванию приложения Teams":::
 
@@ -41,7 +41,7 @@ ms.locfileid: "65654770"
 
 Если вы уже знакомы с рабочим процессом Yeoman, возможно, вы предпочтете использовать [генератор Yeoman YoTeams](https://github.com/pnp/generator-teams/blob/master/docs/docs/tutorials/build-your-first-microsoft-teams-app.md) для создания приложений.
 
-> [!NOTE]
+> [!WARNING]
 > Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams.<br> App Studio станет не рекомендованной к использованию не позднее 30 июня 2022 г.
 
 ## <a name="build-your-first-teams-app"></a>Создайте свое первое приложение Teams
@@ -49,7 +49,11 @@ ms.locfileid: "65654770"
 Теперь давайте создадим ваше первое приложение Teams. Но сначала выберите язык (или платформу) и подготовьте среду разработки.
 
 > [!div class="nextstepaction"]
-> [Создание приложения Teams с помощью JavaScript с использованием React](../sbs-gs-javascript.yml)
+> [Создайте приложение с вкладками Teams с JavaScript, используя React](../sbs-gs-javascript.yml)
+> [!div class="nextstepaction"]
+> [Создайте бот-приложение Teams с JavaScript, используя React](../sbs-gs-bot.yml)
+> [!div class="nextstepaction"]
+> [Создайте приложение расширения сообщений Teams с JavaScript, используя React](../sbs-gs-msgext.yml)
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью Blazor](../sbs-gs-blazorupdate.yml)
 > [!div class="nextstepaction"]

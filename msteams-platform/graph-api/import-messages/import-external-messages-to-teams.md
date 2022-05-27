@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: Teams импорт сообщений API Graph Microsoft миграция перенос запись
-ms.openlocfilehash: 72e33ae6c8792016394c7a464f132260a5231112
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 3fb593bf72c1f8b495a45bad8eef6e2177684c7b
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111747"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756922"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -46,7 +46,7 @@ ms.locfileid: "65111747"
 
 ## <a name="step-1-create-a-team"></a>Шаг 1. Создание команды
 
-Так как вы переносите существующие данные, сохранение исходных меток времени сообщений и предотвращение обмена сообщениями во время процесса миграции являются важными условиями для воссоздания существующего потока сообщений пользователя в Teams. Это достигается следующим образом.
+Поскольку вы переносите существующие данные, сохранение исходных временных меток сообщений и предотвращение обмена сообщениями во время процесса миграции являются ключом к воссозданию существующего потока сообщений пользователя в Teams. Это достигается следующим образом.
 
 > [Создайте команду](/graph/api/team-post?view=graph-rest-beta&tabs=http&preserve-view=true) с меткой времени в прошлом, используя свойство `createdDateTime` ресурса команды. Поместите новую команду в `migration mode` — специальное состояние, которое запрещает пользователям большинство действий в команде до завершения процесса миграции. Включите атрибут экземпляра `teamCreationMode` со значением `migration` в запрос POST, чтобы явно идентифицировать новую команду как созданную для миграции.  
 
@@ -324,7 +324,7 @@ POST https://graph.microsoft.com/v1.0/teams/team-id/completeMigration
 HTTP/1.1 204 NoContent
 ```
 
-Действие вызывается для `team` или `channel`, которые не находятся в `migrationMode`.
+Действие вызывается для `team` или `channel`, отсутствующих в `migrationMode`.
 
 ## <a name="step-five-add-team-members"></a>Шаг 5. Добавление участников команды
 
@@ -354,7 +354,7 @@ HTTP/1.1 204 No Content
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD026 -->
 
-* После выполнения запроса `completeMigration` вы не сможете импортировать дополнительные сообщения в команду.
+* После выполнения запроса `completeMigration` вы не сможете импортировать дальнейшие сообщения в команду.
 
 * Вы можете добавлять участников команды в новую команду только после того, как запрос `completeMigration` возвратит успешный отклик.
 

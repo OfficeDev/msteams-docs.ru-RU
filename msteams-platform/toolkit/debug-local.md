@@ -5,12 +5,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
-ms.openlocfilehash: 6fd32b35a28ae0d9b1592f82a824622000c04161
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 04c88e840ba1edbeb657428bb76ecea86acf895a
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104443"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756634"
 ---
 # <a name="debug-your-teams-app-locally"></a>Отлаживайте приложения Teams локально
 
@@ -102,22 +102,22 @@ ms.locfileid: "65104443"
 <details>
 <summary><b>macOS</b></summary>
 
-1. Выберите **Отладка для Edge** или **Отладка для Chrome** в меню **Выполнить и отладить** на панели действий
+1. Выберите **Отладку для Edge** или **Отладку для Chrome** в элементе **Выполнить и отладить** в панели действий.
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/debug-run.png" alt-text="Списки браузеров" border="false":::
 
-1. Выберите **Начать отладку (F5)** или **Запустить**, чтобы запустить приложение Teams в режиме отладки
+1. Выберите **Начать отладку (F5)** или **Запустить**, чтобы запустить приложение Teams в режиме отладки.
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/start-debugging.png" alt-text="Отладка приложения" border="false":::
 
-3. Выберите **Войти** в учетную запись Microsoft 365
+3. Выберите **Войти** в учетную запись Microsoft 365.
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/microsoft365-signin.png" alt-text="Вход в учетную запись M365" border="true":::
 
    > [!TIP]
    > Можете выбрать **Дополнительные сведения**, чтобы узнать больше о программе разработчиков Microsoft 365. Откроется веб-браузер по умолчанию, чтобы войти в учетную запись Microsoft 365 с вашими учетными данными.
 
-4. Выберите **Установить**, чтобы установить сертификат разработки для localhost
+4. Выберите **Установить**, чтобы установить сертификат разработки для localhost.
 
     :::image type="content" source="../assets/images/teams-toolkit-v2/debug/install-certificate.png" alt-text="сертификат" border="true":::
 
@@ -128,18 +128,16 @@ ms.locfileid: "65104443"
 
     :::image type="content" source="../assets/images/teams-toolkit-v2/debug/mac-settings.png" alt-text="Вход в учетную запись mac" border="true":::
 
-Набор средств запустит новый экземпляр выбранного браузера (Edge или Chrome) и откроет веб-страницу для загрузки клиента Teams. 
+Набор средств запустит новый экземпляр выбранного браузера (Edge или Chrome) и откроет веб-страницу для загрузки клиента Teams.
 
 </details>
-
 
 #### <a name="2-debug-your-app"></a>2. Отладка приложения
 
 По окончании начальной настройки набор средств Teams запускает следующие процессы:
 
 а. [Запускает службы приложений](#starts-app-services) </br>
-б. [Запускает отладчики](#launches-debuggers)   </br>
-      в. [Загружает без публикации приложение Teams](#sideloads-the-teams-app)
+б. [Запускает отладчики](#launches-debuggers)   </br>в. [Загружает без публикации приложение Teams](#sideloads-the-teams-app)
         
 #### <a name="starts-app-services"></a>Запускает службы приложений
 
@@ -194,9 +192,9 @@ ms.locfileid: "65104443"
 <details>
 <summary><b>Использование конечной точки бота</b></summary>
 
-1. В параметрах Visual Studio Code снимите флажок **Убедитесь, что Ngrok установлен и запущен (ngrok)**
+1. В параметрах Visual Studio Code убрать флажок с **Убедитесь, что Ngrok установлен и запущен (ngrok)**.
 
-1. В конфигурации siteEndpoint в `.fx/configs/config.local.json` укажите свою конечную точку
+1. В конфигурации siteEndpoint в `.fx/configs/config.local.json` укажите конечную точку.
 
 ```json
 {
@@ -214,7 +212,7 @@ ms.locfileid: "65104443"
 <details>
 <summary><b>Использование сертификата разработки</b></summary>
 
-1. В параметрах Visual Studio Code снимите флажок **Убедитесь, что сертификату разработки можно доверять (devCert)**
+1. В параметрах Visual Studio Code снимите флажок **Убедитесь, что сертификату разработки можно доверять (devCert)**.
 
 1. Укажите в конфигурации `sslCertFile` и `sslKeyFile` в `.fx/configs/config.local.json` путь к вашему файлу сертификата и путь к ключевому файлу
 
@@ -234,11 +232,11 @@ ms.locfileid: "65104443"
 <details>
 <summary><b>Используйте скрипты запуска для запуска служб приложений</b></summary>
 
-1. Для вкладки обновите сценарий `dev:teamsfx` в `tabs/package.json`
+1. Если вы отлаживаете вкладку, обновите сценарий `dev:teamsfx` в `tabs/package.json`.
 
 1. Для бота или расширения обмена сообщениями обновите сценарий `dev:teamsfx` в `bot/package.json`
 
-1. Для Функций Azure обновите сценарий `dev:teamsfx` в `api/package.json`, а для TypeScript обновите сценарий `watch:teamsfx`
+1. Если вы отлаживаете функции Azure, обновите сценарий `dev:teamsfx` в `api/package.json`, а если TypeScript, обновите сценарий `watch:teamsfx`.
 
    > [!NOTE]
    > В настоящее время приложения вкладок, ботов, расширений для сообщений и порты Функций Azure не поддерживают пользовательскую настройку.
@@ -261,7 +259,7 @@ ms.locfileid: "65104443"
 
 Набор средств Teams использует многоцелевую отладку Visual Studio Code для одновременной отладки вкладки, бота, расширения для сообщений и Функций Azure. Можно обновить `.vscode/launch.json` и `.vscode/tasks.json` для отладки частичного компонента. Если вы хотите отладить только вкладку в проекте, содержащем вкладку и бот с Azure Functions, используйте следующие действия:
 
-1. Добавьте комментарий в **Прикрепление к боту** и **Прикрепление к внутренней службе** из набора отладки в`.vscode/launch.json`
+1. Добавьте комментарий в **Прикрепление к боту** и **Прикрепление к внутренней службе** из набора отладки в `.vscode/launch.json`.
 
    ```json
    {
@@ -281,7 +279,7 @@ ms.locfileid: "65104443"
    }
    ```
 
-2. Добавьте комментарий в **Запуск внутренней службы** и запустите бот из задачи "Запуск всего" в .vscode/tasks.json
+2. Добавьте комментарий в **Запуск внутренней службы** и запустите бот из задачи "Начать все" в .vscode/tasks.json.
 
    ```json
    {
@@ -298,7 +296,6 @@ ms.locfileid: "65104443"
    ```
 
 </details>
-
 
 ## <a name="next-step"></a>Следующее действие
 

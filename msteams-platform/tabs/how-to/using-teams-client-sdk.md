@@ -6,12 +6,12 @@ description: Обзор клиентского пакета SDK Microsoft Teams 
 ms.localizationpriority: high
 keywords: teams вкладки группа канал настраиваемый статический SDK JavaScript личный m365
 ms.topic: conceptual
-ms.openlocfilehash: 2a1c827913759d49ba721251d4a6f5382d8eb3a4
-ms.sourcegitcommit: 264d3cc84d6eec4ab025cf86a7a6f4865f1aed07
+ms.openlocfilehash: 11d5bfa9b2dff29cb627a75f13af70915784a175
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653289"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757621"
 ---
 # <a name="building-tabs-and-other-hosted-experiences-with-the-microsoft-teams-javascript-client-sdk"></a>Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript
 
@@ -20,7 +20,7 @@ ms.locfileid: "65653289"
 * [Вкладки](../../tabs/what-are-tabs.md)
 * [Диалоги (модули задач)](../../task-modules-and-cards/what-are-task-modules.md)
 
-Начиная с версии `2.0.0`, существующий клиентский пакет SDK Teams (`@microsoft/teams-js` или просто `TeamsJS`) был переработан, чтобы запускать приложения Teams в [Outlook и Office](/m365-apps/overview.md), в дополнение к Microsoft Teams. С функциональной точки зрения последняя версия TeamsJS поддерживает весь спектр функций приложений Teams (версии 1.x.x), добавляя при этом дополнительную возможность размещения приложений Teams в Outlook и Office.
+Начиная с версии `2.0.0`, существующий клиентский пакет SDK Teams (`@microsoft/teams-js` или просто `TeamsJS`) был переработан, чтобы запускать приложения Teams в [Outlook и Office](/microsoftteams/platform/m365-apps/overview), в дополнение к Microsoft Teams. С функциональной точки зрения последняя версия TeamsJS поддерживает весь спектр функций приложений Teams (версии 1.x.x), добавляя при этом дополнительную возможность размещения приложений Teams в Outlook и Office.
 
 Здесь приводится действующее руководство по управления версиями для различных сценариев приложений.
 

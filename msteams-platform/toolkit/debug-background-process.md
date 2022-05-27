@@ -6,24 +6,24 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/03/2022
-ms.openlocfilehash: 1c78c6cfe68d263ede675161e5a89b03b0885616
-ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+ms.openlocfilehash: 48c3716258477bf7b8dc1086a75aa7a495ff5026
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656161"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756886"
 ---
 # <a name="debug-background-process"></a>Отладка фонового процесса
 
 Рабочий процесс локальной отладки включает файлы `.vscode/launch.json` и `.vscode/tasks.json` для настройки отладки в VS Code. Затем VS Code запускает отладчики, а отладчик Microsoft Edge или Chrome запускает новый экземпляр браузера следующим образом.
 
-1. Файл `launch.json` настраивает отладчик в VS Code
+1. Файл `launch.json` настраивает отладчик в VS Code.
 
 2. VS Code выполняет составную команду **preLaunchTask**, **Pre Debug Check & Start All** в файле `.vscode/tasks.json`
 
-3. Затем VS Code запускает отладчики, указанные в конфигурациях составной команды, например **Прикрепить к боту**, **Прикрепить к серверу**, **Прикрепить к интерфейсу** и **Запустить бот**
+3. Затем VS Code запускает отладчики, указанные в составных конфигурациях, таких как **Присоединить к боту**, **Присоединить к серверной части**, **Присоединить к внешнему интерфейсу** и **Запустить бот**
 
-4.  Отладчик Microsoft Edge или Chrome запускает новый экземпляр браузера и открывает веб-страницу для загрузки клиента Teams
+4. Отладчик Microsoft Edge или Chrome запускает новый экземпляр браузера и открывает веб-страницу для загрузки клиента Teams.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -38,16 +38,15 @@ ms.locfileid: "65656161"
   |Bot |  14, 16 (рекомендуется)|
   |Расширение для сообщений | 14, 16 (рекомендуется) |
 
-   
-* Учетная запись Microsoft 365 с действительными учетными данными. Набор средств Teams предлагает вам войти в учетную запись Microsoft 365, если вы не вошли
+* Учетная запись Microsoft 365 с действительными учетными данными. Набор средств Teams предлагает вам войти в учетную запись Microsoft 365, если вы не вошли.
 
-* Отправка настраиваемых приложений или загрузка без публикации в вашем клиенте для разработчика включена. Если нет, локальная отладка прекращается
+* Отправка неопубликованных или неопубликованных пользовательских приложений для клиента разработчика включена, в противном случае локальная отладка завершается.
 
-* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичный файл Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`
+* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`.
 
-* Azure Functions Core Tools версии 4. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается
+* Azure Functions Core Tools версии 4. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается.
 
-* Версия SDK .NET Core, применимая для Функций Azure. Если SDK .NET Core не установлен или версия не соответствует требованиям, набор средств Teams устанавливает SDK .NET Core для Windows и MacOS в `~/.fx/bin/dotnet`. Для Linux локальная отладка прекращается
+* Версия пакета SDK для .NET Core, применимая к Функциям Azure. Если пакет SDK для .NET Core не установлен или его версия не соответствует требованиям, набор средств Teams Toolkit устанавливает пакет SDK для .NET Core для Windows и MacOS в формате `~/.fx/bin/dotnet`. Для Linux локальная отладка прекращается.
 
   В следующей таблице перечислены версии .NET Core.
 
@@ -56,15 +55,15 @@ ms.locfileid: "65656161"
   |Windows, macOS (x64) и Linux | **3.1 (рекомендуется)**, 5.0, 6.0 |
   |macOS (arm64) |6.0 |
 
-* Сертификат разработки. Если сертификат разработки для localhost не установлен для вкладки в Windows или macOS, набор средств Teams предлагает вам установить его
+* Сертификат разработки. Если сертификат разработки для localhost не установлен для вкладки в Windows или macOS, набор инструментов Teams предложит вам установить его.
 
-* Расширения привязок Функций Azure, определенные в `api/extensions.csproj`. Если расширения привязок Функций Azure не установлены, набор средств Teams устанавливает расширения привязок Функций Azure
+* Расширения привязок Функций Azure, определенные в `api/extensions.csproj`. Если расширения привязок Функций Azure не установлены, набор инструментов Teams устанавливает расширения привязки функций Azure.
 
-* Пакеты NPM, применимые для приложения вкладки, приложения бота, приложения расширения для сообщений и Функций Azure. Если NPM не установлен, набор средств Teams устанавливает все пакеты NPM
+* Пакеты NPM, применимые для приложения вкладки, приложения бота, приложения расширения для сообщений и Функций Azure. Если NPM не установлен, набор инструментов Teams устанавливает все пакеты NPM.
 
-* Бот и расширение для сообщений. Набор средств Teams запускает Ngrok для создания туннеля HTTP для бота и расширения для сообщений
+* Бот и расширение сообщений. Набор инструментов Teams запускает Ngrok для создания туннеля HTTP для бота и расширения сообщений.
 
-* Доступные порты. Если порты вкладки, бота, расширения для сообщений и Функций Azure недоступны, локальная отладка прекращается
+* Доступные порты. Если порты вкладки, бота, расширения сообщений и порты Функций Azure недоступны, локальная отладка прекращается
 
   В следующей таблице перечислены порты, доступные для компонентов.
 
@@ -75,7 +74,6 @@ ms.locfileid: "65656161"
   | Инспектор узла для бота или расширения обмена сообщениями | 9239 |
   | Функции Azure | 7071 |
   | Инспектор узла для Функций Azure | 9229 |
-
 
 <!-- The following table lists the limitations if the required software is unavailable for debugging:
 
@@ -103,10 +101,8 @@ Use the following .NET Core versions:
 |Windows, macOs (x64), Linux | **3.1 (recommended)**, 5.0, 6.0 |
 |macOs (arm64) |6.0 |
 
-
 > [!NOTE]
-> If the development certificate for localhost isn't installed for tab in Windows or macOS, the Teams toolkit prompts you to install it.</br> -->
-
+> If the development certificate for localhost isn't installed for tab in Windows or MacOS, the Teams toolkit prompts you to install it.</br> -->
 
 Если выбрать **Запуск отладки (F5)**, выходной канал набора средств Teams отображает ход и результат после проверки предварительных требований.
 
@@ -114,28 +110,27 @@ Use the following .NET Core versions:
 
 ## <a name="register-and-configure-your-teams-app"></a>Регистрация и настройка приложения Teams
 
-В процессе настройки набор средств Teams подготавливает следующие регистрации и конфигурации для вашего приложения Teams.
+В процессе настройки Teams Toolkit подготавливает следующие регистрации и конфигурации для вашего приложения Teams:
 
-1. [Регистрирует и настраивает приложение Azure AD](#registers-and-configures-azure-ad-application). Набор средств Teams регистрирует и настраивает ваше приложение Azure AD
+1. [Регистрирует и настраивает приложение Azure AD](#registers-and-configures-azure-ad-application). Набор средств Teams регистрирует и настраивает ваше приложение Azure AD.
 
-1. [Регистрирует и настраивает бот](#registers-and-configures-bot). Набор средств Teams регистрирует и настраивает ваш бот для вкладки или приложение расширения для сообщений
+1. [Регистрирует и настраивает бот](#registers-and-configures-bot). Teams Toolkit регистрирует и настраивает бот для вкладки или приложения расширения сообщений.
 
-1. [Регистрирует и настраивает приложение Teams](#registers-and-configures-teams-app). Набор средств Teams регистрирует и настраивает ваше приложение Teams
+1. [Регистрирует и настраивает приложение Teams](#registers-and-configures-teams-app). Набор средств Teams регистрирует и настраивает ваше приложение Teams.
 
 ### <a name="registers-and-configures-azure-ad-application"></a>Регистрация и настройка приложения Azure AD
 
-1. Регистрирует приложение Azure AD
+1. Регистрирует приложение Azure AD.
 
-1. Создает секрет клиента
+1. Создает секрет клиента.
 
-1. Предоставляет API
+1. Предоставляет API.
 
     а. Настраивает URI идентификатора приложения. Для вкладки: `api://localhost/{appId}`. Для бота или расширения для сообщений `api://botid-{botid}`
 
-    б. Добавляет область с именем `access_as_user`. Включает ее для **администратора и пользователей**
+    б. Добавляет область с именем `access_as_user`. Включает ее для **администратора и пользователей**.
 
-
-4. Настраивает разрешения API. Добавляет разрешение Microsoft Graph в **User.Read**
+4. Настраивает разрешения API. Добавляет разрешение Microsoft Graph в **User.Read**.
 
     В следующей таблице перечислены конфигурации проверки подлинности.
     
@@ -157,19 +152,19 @@ Use the following .NET Core versions:
       | Outlook Web Access | 00000002-0000-0ff1-ce00-000000000000 |
       | Outlook Web Access | bc59ab01-8403-45c6-8796-ac3ef710b3e3 |
     
-### <a name="registers-and-configures-bot"></a>Регистрация и настройка бота 
+### <a name="registers-and-configures-bot"></a>Регистрация и настройка бота
 
 Для приложения вкладки или приложения расширения для сообщений:
 
-1. Регистрирует приложение Azure AD
+1. Регистрирует приложение Azure AD.
 
-1. Создает секрет клиента для приложения Azure AD
+1. Создает секрет клиента для приложения Azure AD.
 
-1. Регистрирует бота в [Microsoft Bot Framework](https://dev.botframework.com/) с помощью приложения Azure AD
+1. Регистрирует бота в [Microsoft Bot Framework](https://dev.botframework.com/) с помощью приложения Azure AD.
 
-1. Добавляет канал Microsoft Teams
+1. Добавляет канал Microsoft Teams.
 
-1. Настраивает конечную точку обмена сообщениями как `https://{ngrokTunnelId}.ngrok.io/api/messages`
+1. Настраивает конечную точку обмена сообщениями как `https://{ngrokTunnelId}.ngrok.io/api/messages`.
 
 ### <a name="registers-and-configures-teams-app"></a>Регистрация и настройка приложения Teams
 

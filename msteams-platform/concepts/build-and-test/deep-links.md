@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: Узнайте, как описывать глубокие ссылки Teams и как использовать их в своих приложениях.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: a57487f64070955b21c8b11bd9995f0f2201b0e2
-ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.openlocfilehash: a1bd16f178508d62a2a38b6d8880a9315ee45ee3
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65672959"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756771"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -57,7 +57,7 @@ ms.locfileid: "65672959"
 pages.shareDeepLink({ subPageId: <subPageId>, subPageLabel: <subPageLabel>, subPageWebUrl: <subPageWebUrl> })
 ```
 
-Необходимо заменить поля соответствующими сведениями:
+Вам нужно будет заменить поля соответствующими сведениями:
 
 * `subPageId`: уникальный идентификатор элемента на странице, на который вы делаете прямую ссылку.
 * `subPageLabel`: метка элемента, используемая для отображения прямой ссылки.
@@ -73,7 +73,7 @@ pages.shareDeepLink({ subPageId: <subPageId>, subPageLabel: <subPageLabel>, subP
 microsoftTeams.shareDeepLink({ subEntityId: <subEntityId>, subEntityLabel: <subEntityLabel>, subEntityWebUrl: <subEntityWebUrl> })
 ```
 
-Необходимо заменить поля соответствующими сведениями:
+Вам нужно будет заменить поля соответствующими сведениями:
 
 * `subEntityId`: уникальный идентификатор элемента на вкладке, на который вы делаете прямую ссылку.
 * `subEntityLabel`: метка элемента, используемая для отображения прямой ссылки.
@@ -171,17 +171,17 @@ microsoftTeams.shareDeepLink({ subEntityId: <subEntityId>, subEntityLabel: <subE
 
 Вы можете переходить к содержимому в Teams со своей вкладки с помощью TeamsJS или прямых ссылок. Это удобно, если вкладка должна установить связь пользователей с другим содержимым в Teams, например с каналом, сообщением, другой вкладкой или даже для открытия диалогового окна планирования. Раньше для навигации могла требоваться прямая ссылка, но теперь во многих случаях это можно сделать с помощью пакета SDK. В следующих разделах демонстрируются оба метода, но там, где это возможно, рекомендуется использовать строго типизированные возможности пакета SDK.
 
-Одно из преимуществ использования TeamsJS, особенно для приложений Teams, которые могут работать в других узлах (Outlook и Office), заключается в том, что можно проверить, поддерживает ли узел возможности, которые вы пытаетесь использовать. Чтобы проверить поддержку возможности для узла, можно использовать функцию `isSupported()`, связанную с пространством имен API. Пакет SDK TeamsJS организует API в возможности посредством пространств имен. Например, перед использованием API в пространстве имен `pages` можно проверить логическое значение, возвращенное из `pages.isSupported()`, и предпринять соответствующие действия в контексте вашего приложения и пользовательского интерфейса приложений.  
+Одно из преимуществ использования TeamsJS, особенно для приложения Teams, которое может работать на других узлах (Outlook и Office), заключается в том, что можно проверить, поддерживает ли узел возможности, которые вы пытаетесь использовать. Чтобы проверить поддержку возможности для узла, можно использовать функцию `isSupported()`, связанную с пространством имен API. Пакет SDK TeamsJS организует API в возможности посредством пространств имен. Например, перед использованием API в пространстве имен `pages` можно проверить логическое значение, возвращенное из `pages.isSupported()`, и предпринять соответствующие действия в контексте вашего приложения и пользовательского интерфейса приложений.  
 
-Дополнительные сведения о возможностях и API в TeamsJS см. в статье [Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript](~/tabs/how-to/using-teams-client-sdk.md#apis-organized-into-capabilities).
+Дополнительные сведения о возможностях и API-интерфейсах в TeamsJS см. в статье [Создание вкладок и других размещенных функций с помощью пакета SDK для клиента Microsoft Teams JavaScript](~/tabs/how-to/using-teams-client-sdk.md#apis-organized-into-capabilities).
 
 ### <a name="navigate-within-your-app"></a>Навигация в приложении
 
-Вы можете перемещаться по приложению с помощью TeamsJS. В следующем коде показано, как перейти к определенной сущности в приложении Teams.
+В приложении можно перемещаться с помощью TeamsJS. В следующем коде показано, как перейти к определенной сущности в приложении Teams.
 
 # <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
 
-Вы можете активировать навигацию с вкладки с помощью функции [pages.navigateToApp(),](/javascript/api/@microsoft/teams-js/pages?view=msteams-client-js-latest#@microsoft-teams-js-pages-navigatetoapp&preserve-view=true) как показано в следующем коде:
+Вы можете активировать навигацию со своей вкладки с помощью функции [pages.navigateToApp()](/javascript/api/@microsoft/teams-js/pages?view=msteams-client-js-latest#@microsoft-teams-js-pages-navigatetoapp&preserve-view=true), как показано в следующем коде:
 
 ```javascript
 if (pages.isSupported()) {
@@ -277,7 +277,7 @@ if(appInstallDialog.isSupported()) {
 else { /* handle case where capability isn't supported */ }
 ```
 
-Дополнительные сведения о диалоговом окне установки см. в функции [appInstallDialog.openAppInstallDialog()](/javascript/api/@microsoft/teams-js/appinstalldialog?view=msteams-client-js-latest#@microsoft-teams-js-appinstalldialog-openappinstalldialog&preserve-view=true) справочной документации по API.
+Дополнительные сведения о диалоговом окне установки см. в описании функции [appInstallDialog.openAppInstallDialog()](/javascript/api/@microsoft/teams-js/appinstalldialog?view=msteams-client-js-latest#@microsoft-teams-js-appinstalldialog-openappinstalldialog&preserve-view=true) в справочной документации по API.
 
 # <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
 
@@ -352,7 +352,7 @@ else { /* handle case where capability isn't supported */ }
 * `objectUrl`: URL-адрес объекта файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}/SharedDocuments/{ChannelName}/FileName.ext`. Например, `https://microsoft.sharepoint.com/teams/(filepath)`.
 * `baseUrl`: базовый URL-адрес файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}`. Например, `https://microsoft.sharepoint.com/teams`.
 * `serviceName`: имя службы, идентификатор приложения Например, `teams`.
-* `threadId`: threadId — это идентификатор команды, в которой хранится файл. Он необязателен и не может быть установлен для файлов, хранящихся в пользовательской папке OneDrive. threadId — 19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype.
+* `threadId`: threadId — это идентификатор команды, в которой хранится файл. Это необязательно и не может быть установлено для файлов, хранящихся в пользовательской папке OneDrive. threadId — 19:f8fbfc4d89e24ef5b3b8692538cebeb7@thread.skype.
 * `groupId`: идентификатор группы файла. Например, `ae063b79-5315-4ddb-ba70-27328ba6c31e`.
 
 > [!NOTE]
@@ -407,7 +407,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 Вы можете совершать только голосовые вызовы или вызовы с аудио и видео для одного пользователя или группы пользователей, указав тип вызова и участников. Перед совершением вызова клиент Teams запрашивает подтверждение для его совершения. В случае группового звонка можно позвонить группе пользователей VoIP и группе пользователей ТСОП в одном и том же вызове прямой ссылки.
 
-В случае видеозвонка клиент запросит подтверждение и включит видео звонящего для звонка. Получатель звонка может ответить только через голосовой вызов или голосовой и видеовызов через окно уведомления о звонках Teams.
+Во время видеовызова клиент запросит подтверждение и включит видео вызывающего абонента для вызова. Получатель звонка может ответить только через голосовой вызов или голосовой и видеовызов через окно уведомления о звонках Teams.
 
 > [!NOTE]
 > Этот метод не может быть использован для проведения собрания.
@@ -438,7 +438,7 @@ else { /* handle case where capability isn't supported */ }
   
 Ниже приведены параметры запроса:
 
-* `users`: Разделенный запятыми список идентификаторов пользователей, обозначающих участников вызова. В настоящее время поле идентификатора пользователя поддерживает UserPrincipalName Azure AD, обычно это адрес электронной почты, а в случае звонка по ТСОП поддерживается pstn mri 4:&lt;phonenumber&gt;.
+* `users`: разделенный запятыми список идентификаторов пользователей, представляющих участников звонка. Сейчас поле идентификатора пользователя поддерживает UserPrincipalName Azure AD, обычно это адрес электронной почты, или в случае вызова по ТСОП оно поддерживает pstn mri 4:&lt;phonenumber&gt;.
 * `withVideo`: это необязательный параметр, который можно использовать для совершения видеовызова. Настройка этого параметра включит только камеру звонящего. Получатель звонка может ответить через голосовой вызов или голосовой и видеовызов через окно уведомления о звонках Teams.
 * `Source`: это необязательный параметр, который сообщает об источнике прямой ссылки.
 

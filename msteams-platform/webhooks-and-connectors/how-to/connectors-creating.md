@@ -6,12 +6,12 @@ keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 8091edf34ff53930afea03cd2c4833bf6a000158
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: 3258e6b08041abbfcd3e0b9a4365d6a31f884e0b
+ms.sourcegitcommit: 09ee0305b827ad6d1368d892db3824c5dbad886f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65297151"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759664"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -224,7 +224,9 @@ ms.locfileid: "65297151"
 ## <a name="distribute-webhook-and-connector"></a>Распространение веб-перехватчика и соединителя
 
 1. [Настройте входящий веб-перехватчик](~/webhooks-and-connectors/how-to/add-incoming-webhook.md#create-an-incoming-webhook) непосредственно для своей команды.
+
 1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?#integrate-the-configuration-experience) и опубликуйте входящий веб-перехватчик в соединителе Office 365.
+
 1. Упакуйте и опубликуйте свой соединитель как часть отправки в [AppSource](~/concepts/deploy-and-publish/office-store-guidance.md).
 
 ## <a name="code-sample"></a>Пример кода
