@@ -1,17 +1,16 @@
 ---
 title: Возможности устройства — обзор
 author: Rajeshwari-v
-description: Обзор собственных возможностей устройства, таких как камера, изображение, мультимедиа, микрофон, микрофон, QR-код и т. д.
+description: Узнайте, как интегрировать собственные возможности устройства, такие как камера, изображение, мультимедиа, микрофон, QR-код и т. д. с Microsoft Teams приложения.
 ms.author: surbhigupta
-keywords: камера изображение мультимедиа микрофон мик QR-код qrcode штрих-код штрихкод сканировать сканер карта расположения возможности встроенные устройство разрешения
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 854580fc8825ab007d97b1a3e5feb65af883c9a3
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 8d5c288e35ef18ada9ff93390ff745798ba3b01c
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111754"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757033"
 ---
 # <a name="device-capabilities"></a>Возможности устройств
 

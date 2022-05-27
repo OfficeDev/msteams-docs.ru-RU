@@ -4,12 +4,12 @@ description: Команда разработчиков продукта Microsof
 ms.localizationpriority: medium
 ms.topic: reference
 keywords: команда отзывы разработчик вопросы проблемы связь с сообществом запрос помощи ошибки вклад сообщество обсуждения поддержка
-ms.openlocfilehash: b5030f9e814dc7acf2ae2f5bb25719cc6c3f58f8
-ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.openlocfilehash: 4f2450361640da43bac2dbf17dd662d6f4e2e5e4
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65668013"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755848"
 ---
 # <a name="support-and-feedback"></a>Поддержка и обратная связь
 
@@ -64,7 +64,7 @@ ms.locfileid: "65668013"
 
 | **Канал сообщества** | **Контакт** |
 |:----------------------|:------------|
-| **Предложения функций** | Публикуйте предложения функций на :::image type="icon" source="assets/icons/Teams-icon.png" border="false"::: [портале отзывов Microsoft Teams на сайте UserVoice](https://microsoftteams.uservoice.com/forums/555103-public-preview/category/182881-developer-platform). |
+| **Предложения функций** | Опубликуйте предложения функций Microsoft Teams :::image type="icon" source="assets/icons/Teams-icon.png" border="false"::: [портале отзывов](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472). |
 | **Общие вопросы** | Отправляйте общие вопросы о платформе разработчиков Microsoft Teams в разделе [помощи сообщества Microsoft Teams](mailto:microsoftteamsdev@microsoft.com). Рекомендуется публиковать вопросы в каналах, упомянутых здесь, и использовать электронную почту только в том случае, если не подходит никакая другая форма связи. |
 
 ## <a name="see-also"></a>Дополнительные ресурсы

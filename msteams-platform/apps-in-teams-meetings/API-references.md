@@ -1,17 +1,16 @@
 ---
 title: Справочные материалы по API приложений для собраний
 author: surbhigupta
-description: Определение ссылок на API приложений для собраний с примерами и образцами кода.
+description: Определите ссылки на API приложений для собраний с примерами и примерами кода, чтобы Teams приложения для собраний с ролью участника роли API пользователя, запрос уведомления контекста пользователя.
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-keywords: приложения для команд, собрания, роль пользователя, участника, запрос сигнала уведомления контекста пользователя API
-ms.openlocfilehash: 75dc6dde65b24fd05931021544fafe3af956d88d
-ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.openlocfilehash: 9d0ae72e89104d58722c24dcdd1138d9fcc97033
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65667985"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755834"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -28,15 +27,15 @@ ms.locfileid: "65667985"
 
 |Метод| Описание| Источник|
 |---|---|----|
-|[**Получить пользовательский контекст**](#get-user-context-api)| Получить контекстную информацию для отображения соответствующего содержимого на вкладке Teams.| MSTC SDK|
-|[**Получение участника**](#get-participant-api)| Получить информацию об участнике по идентификатору собрания и идентификатору участника. |MSBF SDK|
-|[**Отправить уведомление о собрании**](#send-an-in-meeting-notification)| Предоставление сигналов собрания с помощью существующего API уведомлений о беседе для чата пользователя с ботом позволяет уведомлять пользователя о действиях, отображая уведомление в собрании. |MSBF SDK|
-|[**Получить сведения о собрании**](#get-meeting-details-api)| Получите статические метаданные собрания. |MSBF SDK |
-|[**Отправляйте субтитры в реальном времени**](#send-real-time-captions-api)| Отправка субтитров к текущему собранию в режиме реального времени. |MSTC SDK|
-|[**Делитесь содержимым приложения на сцене**](#share-app-content-to-stage-api)| Поделитесь определенными частями приложения на сцене собрания с боковой панели приложения в собрании. |MSTC SDK|
-|[**Получить состояние обмена сцены содержимого приложения**](#get-app-content-stage-sharing-state-api)| Получить информацию о состоянии общего доступа к приложению на сцене собрания. |MSTC SDK|
-|[**Получить возможности обмена сцены содержимого приложения**](#get-app-content-stage-sharing-capabilities-api)| Получите возможности приложения для совместного использования на сцене собрания. |MSTC SDK|
-|[**Получать события собраний Teams в режиме реального времени**](#get-real-time-teams-meeting-events-api)|Узнавать о событиях собраний в режиме реального времени, таких как фактическое время начала и окончания.| MSBF SDK|
+|[**Получить пользовательский контекст**](#get-user-context-api)| Получить контекстную информацию для отображения соответствующего содержимого на вкладке Teams.| [MSTC SDK](/microsoftteams/platform/tabs/how-to/access-teams-context#get-context-by-using-the-microsoft-teams-javascript-library) |
+|[**Получение участника**](#get-participant-api)| Получить информацию об участнике по идентификатору собрания и идентификатору участника. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsinfo.getmeetingparticipantasync?view=botbuilder-dotnet-stable&preserve-view=true)
+|[**Отправить уведомление о собрании**](#send-an-in-meeting-notification)| Предоставление сигналов собрания с помощью существующего API уведомлений о беседе для чата пользователя с ботом позволяет уведомлять пользователя о действиях, отображая уведомление в собрании. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsactivityextensions.teamsnotifyuser?view=botbuilder-dotnet-stable&preserve-view=true) |
+|[**Получить сведения о собрании**](#get-meeting-details-api)| Получите статические метаданные собрания. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsinfo.getmeetinginfoasync?view=botbuilder-dotnet-stable&preserve-view=true) |
+|[**Отправляйте субтитры в реальном времени**](#send-real-time-captions-api)| Отправка субтитров к текущему собранию в режиме реального времени. | [MSTC SDK](/azure/cognitive-services/speech-service/speech-sdk?tabs=nodejs%2Cubuntu%2Cios-xcode%2Cmac-xcode%2Candroid-studio#get-the-speech-sdk&preserve-view=true) |
+|[**Делитесь содержимым приложения на сцене**](#share-app-content-to-stage-api)| Поделитесь определенными частями приложения на сцене собрания с боковой панели приложения в собрании. | [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
+|[**Получить состояние обмена сцены содержимого приложения**](#get-app-content-stage-sharing-state-api)| Получить информацию о состоянии общего доступа к приложению на сцене собрания. | [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting.iappcontentstagesharingstate?view=msteams-client-js-latest&preserve-view=true) |
+|[**Получить возможности обмена сцены содержимого приложения**](#get-app-content-stage-sharing-capabilities-api)| Получите возможности приложения для совместного использования на сцене собрания. | [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting.iappcontentstagesharingcapabilities?view=msteams-client-js-latest&preserve-view=true) |
+|[**Получать события собраний Teams в режиме реального времени**](#get-real-time-teams-meeting-events-api)|Узнавать о событиях собраний в режиме реального времени, таких как фактическое время начала и окончания.| [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsactivityhandler.onteamsmeetingstartasync?view=botbuilder-dotnet-stable&preserve-view=true) |
 
 ## <a name="get-user-context-api"></a>Получить API пользовательского контекста
 
@@ -133,6 +132,22 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 
 ---
 
+| Имя свойства | Назначение |
+|---|---|
+| **user.id** | Идентификатор пользователя. |
+| **user.aadObjectId** | Azure Active Directory идентификатор объекта пользователя. |
+| **user.name** | Имя пользователя. |
+| **user.givenName** | Имя пользователя.|
+| **user.surname** | Фамилия пользователя. |
+| **user.email** | Идентификатор почты пользователя. |
+| **user.userPrincipalName** | Имя участника-пользователя. |
+| **User.tenantId** | Идентификатор клиента Azure Active Directory. |
+| **user.userRole** | Роль пользователя, например admin или user. |
+| **meeting.role** | Роль участника в собрании. Например, "Организатор", "Выступающий" или "Участник". |
+| **meeting.inMeeting** | Значение, указывающее, находится ли участник в собрании. |
+| **conversation.id** | Идентификатор чата собрания. |
+| **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
+
 ### <a name="response-codes"></a>Коды ответа
 
 В следующей таблице приведены коды ответов:
@@ -217,6 +232,15 @@ POST /v3/conversations/{conversationId}/activities
 ```
 
 ---
+
+| Имя свойства | Назначение |
+|---|---|
+| **тип** | Тип действия. |
+| **text** | Текстовое содержимое сообщения. |
+| **summary** | Сводный текст сообщения. |
+| **channelData.notification.alertInMeeting** | Логическое значение, указывающее, должно ли уведомление отображаться пользователю во время собрания. |
+| **channelData.notification.externalResourceUrl** | Значение URL-адреса внешнего ресурса уведомления.|
+| **replyToId** | Идентификатор родительского или корневого сообщения потока. |
 
 ### <a name="response-codes"></a>Коды ответа
 
@@ -378,6 +402,28 @@ GET /v1/meetings/{meetingId}
 ```
 
 ---
+
+| Имя свойства | Назначение |
+|---|---|
+| **details.id** | Идентификатор собрания, закодированный в виде строки BASE64. |
+| **details.msGraphResourceId** | MsGraphResourceId, используемый специально для вызовов MS API Graph. |
+| **details.scheduledStartTime** | Запланированное время начала собрания в формате UTC. |
+| **details.scheduledEndTime** | Запланированное время окончания собрания в формате UTC. |
+| **details.joinUrl** | URL-адрес, используемый для присоединения к собранию. |
+| **details.title** | Название собрания. |
+| **details.type** | Тип собрания: Adhoc, Broadcast, MeetNow, Recurring, Scheduled, Unknown. |
+| **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
+| **conversation.conversationType** | Тип беседы. |
+| **conversation.id** | Идентификатор чата собрания. |
+| **organizer.id** | Идентификатор пользователя организатора. |
+| **organizer.aadObjectId** | Идентификатор объекта Azure Active Directory организатора. |
+| **organizer.tenantId** | Идентификатор клиента Azure Active Directory организатора. |
+
+При типе повторяющегося собрания
+
+**startDate**: указывает дату начала применения шаблона. Значение startDate должно соответствовать значению даты свойства start ресурса события. Обратите внимание, что первого собрания может не быть в этот день, если он не соответствует расписанию.
+
+**endDate**: указывает дату остановки применения шаблона. Обратите внимание, что последнего собрания может не быть в этот день, если он не соответствует расписанию.
 
 ## <a name="send-real-time-captions-api"></a>API отправки субтитров в режиме реального времени
 
@@ -760,6 +806,35 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
     "locale": "en-US" 
 }
 ```
+
+| Имя свойства | Назначение |
+|---|---|
+| **name** | Имя пользователя.|
+| **тип** | Тип действия. |
+| **timestamp** | Локальная дата и время сообщения, выраженные в формате ISO-8601. |
+| **id** | Идентификатор действия. |
+| **channelId** | Канал, с помощью который связано это действие. |
+| **serviceUrl** | URL-адрес службы, куда должны отправляться ответы на это действие. |
+| **from.id** | Идентификатор пользователя, отправившего запрос. |
+| **from.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
+| **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
+| **conversation.tenantId** | Azure Active Directory клиента беседы или собрания. |
+| **conversation.id** | Идентификатор чата собрания. |
+| **recipient.id** | Идентификатор пользователя, который получает запрос. |
+| **recipient.name** | Имя пользователя, который получает запрос. |
+| **entities.locale** | сущность, содержащая метаданные о языковом стандарте. |
+| **entities.country** | Объект , содержащий метаданные о стране. |
+| **entities.type** | сущность, содержащая метаданные о клиенте. |
+| **channelData.tenant.id** | Идентификатор клиента Azure Active Directory. |
+| **channelData.source** | Имя источника, из которого инициируется или вызывается событие. |
+| **channelData.meeting.id** | Идентификатор по умолчанию, связанный с собранием. |
+| **Значение. MeetingType** | Тип собрания. |
+| **Значение. Название** | Тема собрания. |
+| **Значение. Id** | Идентификатор по умолчанию, связанный с собранием. |
+| **Значение. JoinUrl** | URL-адрес присоединения к собранию. |
+| **Значение. Starttime** | Время начала собрания в формате UTC. |
+| **Значение. Время окончания** | Время окончания собрания в формате UTC. |
+| **locale**| Языковой стандарт сообщения, задаемого клиентом. |
 
 ## <a name="code-sample"></a>Пример кода
 

@@ -20,7 +20,7 @@
   items:
     - name: Обзор начала работы
       href: get-started/get-started-overview.md
-    - name: Создание первого приложения на вкладке с помощью JavaScript
+    - name: Создание первого приложения вкладки с помощью JavaScript
       href: sbs-gs-javascript.yml
     - name: Создание первого приложения бота с помощью JavaScript
       href: sbs-gs-bot.yml
@@ -34,6 +34,10 @@
       href: sbs-gs-csharp.yml
     - name: Создание первого приложения с помощью Node.js
       href: sbs-gs-nodejs.yml
+    - name: Создание бота уведомлений с помощью JavaScript
+      href: sbs-gs-notificationbot.yml
+    - name: Создание командного бота с помощью JavaScript
+      href: sbs-gs-commandbot.yml
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Планирование приложения
@@ -301,6 +305,24 @@
       href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
     - name: Справочные материалы по API приложений для собраний
       href: apps-in-teams-meetings/API-references.md
+    - name: Улучшенная совместная работа с Live Share
+      items:
+        - name: Обзор
+          href: apps-in-teams-meetings/teams-live-share-overview.md
+        - name: Начало работы
+          items:
+            - name: Краткое руководство
+              href: apps-in-teams-meetings/teams-live-share-quick-start.md
+            - name: Руководство по примеру Dice Roller
+              href: apps-in-teams-meetings/teams-live-share-tutorial.md
+        - name: Основные возможности
+          href: apps-in-teams-meetings/teams-live-share-capabilities.md
+        - name: Возможности мультимедиа
+          href: apps-in-teams-meetings/teams-live-share-media-capabilities.md
+        - name: Руководство для разработки игры в покер по гибкой методике
+          href: sbs-teams-live-share.yml
+        - name: Вопросы и ответы по Live Share SDK
+          href: apps-in-teams-meetings/teams-live-share-faq.md
     - name: Настраиваемые сцены режима "Вместе" в Teams
       href: apps-in-teams-meetings/teams-together-mode.md
 - name: Создание веб-перехватчиков и соединителей

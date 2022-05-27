@@ -5,12 +5,12 @@ ms.topic: conceptual
 keywords: Teams боты разработка
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: cbf8b1c14b080d890dd4c65390671632e2602f81
-ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.openlocfilehash: f592ae06efc2c416e70530fe2c46cbfbfc03140b
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602266"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755855"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в приложения Microsoft Teams
 
@@ -21,7 +21,7 @@ ms.locfileid: "65602266"
 > [!IMPORTANT]
 > В настоящее время боты доступны в облако сообщества для государственных организаций (GCC) и GCC-High но недоступны в Министерства обороны США.
 
-![Пример бота, помогающего пользователю](~/assets/images/bot_example.png)
+:::image type="content" source="../../assets/images/bot_example.png" alt-text="Пример бота, помогающего пользователю" border="true":::
 
 ## <a name="what-you-need-to-know-bots"></a>Что необходимо знать о ботах
 

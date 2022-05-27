@@ -5,12 +5,12 @@ description: Узнайте, как включить поддержку SSO ра
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: bba2a8a225a75c21c46a242dec8acc55dcc0e8b5
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: 490d44631fbd291e6c8686d94222b41ddd68de86
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296947"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757425"
 ---
 # <a name="single-sign-on-support-for-message-extensions"></a>Поддержка единого входов у расширений для сообщений
 
@@ -43,7 +43,7 @@ ms.locfileid: "65296947"
     > [!NOTE]
     > Мы не поддерживаем другие обработчики SSO, за исключением `OnTeamsMessagingExtensionQueryAsync` и `OnTeamsAppBasedLinkQueryAsync` из файла TeamsMessagingExtensionsSearchAuthConfigBot.cs.
 
-4. Вы получаете маркер в обработчике `OnTeamsMessagingExtensionQueryAsync` в полезных данных `turnContext.Activity.Value` или в `OnTeamsAppBasedLinkQueryAsync`, в зависимости от того, для какого сценария вы включаете SSO.
+4. Маркер вы получаете в обработчике `OnTeamsMessagingExtensionQueryAsync` `turnContext.Activity.Value` `OnTeamsAppBasedLinkQueryAsync`в полезных данных или в зависимости от сценария, для которого вы включите единый вход:
 
     ```json
     JObject valueObject=JObject.FromObject(turnContext.Activity.Value);

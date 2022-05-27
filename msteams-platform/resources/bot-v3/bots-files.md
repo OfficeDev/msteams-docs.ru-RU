@@ -3,14 +3,14 @@ title: Отправка и получение файлов от бота
 description: Узнайте, как отправлять и получать файлы через бота с использованием API Graph для личной области, области канала и группового чата. Используйте API бота Teams с помощью примеров кода на основе пакета SDK Bot Framework версии 3.
 keywords: отправка и получение файлов ботов Teams
 ms.topic: how-to
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: b12e8e79e7d8d5180803004b4e0f238446a8fc98
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 2baf356b8ec5cf0f7d3e68af81a34ccd178e90b9
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65110360"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755904"
 ---
 # <a name="send-and-receive-files-through-your-bot"></a>Отправка и получение файлов через бот
 
@@ -89,7 +89,7 @@ ms.locfileid: "65110360"
 
 Это сообщение в классическом интерфейсе содержит простой объект вложения с запросом разрешения пользователя на отправку файла:
 
-![Снимок экрана: карточка согласия с запросом разрешения пользователя на отправку файла](../../assets/images/bots/bot-file-consent-card.png)
+:::image type="content" source="../../assets/images/bots/bot-file-consent-card.png" alt-text="Снимок экрана: карточка согласия с запросом разрешения пользователя на отправку файла" border="true":::
 
 Это сообщение в мобильном интерфейсе содержит объект вложения с запросом разрешения пользователя на отправку файла:
 

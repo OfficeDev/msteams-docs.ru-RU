@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 7c7c53b7b269e5c406cb27c3faee8b818dc567a6
-ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.openlocfilehash: f0dc772043eca4fc624fbd04261ddbc921c91fc4
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65668139"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755953"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -104,7 +104,7 @@ ms.locfileid: "65668139"
 > * Инструкции импорта для teams-js@2.0.0
 > * [Вызовы функций, перечислений и интерфейсов](../tabs/how-to/using-teams-client-sdk.md#whats-new-in-teamsjs-version-20) для teams-js@2.0.0
 > * `TODO` напоминания примечаний пометки областей, на которые могут повлиять изменения [контекстного](../tabs/how-to/using-teams-client-sdk.md#updates-to-the-context-interface) интерфейса
-> * `TODO` напоминания примечаний [для преобразования функций обратного вызова в обещания](../tabs/how-to/using-teams-client-sdk.md#callbacks-converted-to-promises)
+> * Напоминания в комментариях `TODO` о том, что [ следует преобразовать функции обратного вызова в обещания](../tabs/how-to/using-teams-client-sdk.md#callbacks-converted-to-promises)
 
 > [!IMPORTANT]
 > Код внутри *.html* не поддерживается средствами обновления и требует внесения изменений вручную.
@@ -148,11 +148,11 @@ ms.locfileid: "65668139"
 
 Последним шагом к запуску приложения в Office и Outlook является загрузка неопубликованного пакета приложения личной вкладки в Microsoft Teams.[](..//concepts/build-and-test/apps-package.md)
 
-1. Упакуйте Teams приложения ([манифест](../resources/schema/manifest-schema.md) и [значки приложения](/microsoftteams/platform/resources/schema/manifest-schema#icons)) в ZIP-файл. Если вы использовали Teams Toolkit для создания приложения, это можно легко сделать с помощью параметра zip **Teams** пакета метаданных в меню развертывания Teams Toolkit.
+1. Упакуйте Teams приложения ([манифест](../resources/schema/manifest-schema.md) и [значки приложения](/microsoftteams/platform/resources/schema/manifest-schema#icons)) в ZIP-файл. Если вы использовали Teams Toolkit для создания приложения, это легко сделать с помощью параметра **пакета метаданных Zip Teams** в меню **Развертывание** Teams Toolkit:
 
     :::image type="content" source="images/toolkit-zip-teams-metadata-package.png" alt-text="Параметр ''Zip Teams metadata package'' в расширении Teams Toolkit для Visual Studio Code":::
 
-1. Войдите в Teams с помощью учетной записи клиента песочницы и переключитесь в режим *предварительной версии для разработчиков*. Выберите меню с многоточием (**...**) в профиле пользователя, а затем **выберите "О** >  предварительной **версии для разработчиков"**.
+1. Войдите в Teams с помощью учетной записи клиента песочницы и переключитесь в режим *предварительной версии для разработчиков*. Выберите меню с многоточием (**...**) рядом с профилем пользователя, затем выберите: **О программе** > **Предварительная версия для разработчиков**.
 
     :::image type="content" source="images/teams-dev-preview.png" alt-text="В меню с многоточием Teams откройте «О программе» и выберите параметр «Предварительная версия для разработчиков»":::
 
@@ -239,17 +239,17 @@ ms.locfileid: "65668139"
 
 Оставьте отзыв и ведите отчет о любых проблемах с Teams Toolkit на [Microsoft Teams Framework (TeamsFx).](https://github.com/OfficeDev/TeamsFx/issues)
 
+## <a name="code-sample"></a>Пример кода
+
+| **Название примера** | **Описание** | **Node.js** |
+|---------------|--------------|--------|
+| Список дел | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает только в Teams (используйте этот пример приложения, чтобы опробовать процесс обновления, описанный в этом руководстве). | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend)  |
+| Список дел (Microsoft 365) | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend-M365)|
+| Редактор изображений (Microsoft 365) | Создание, изменение, открытие и сохранение изображений с помощью Microsoft API Graph. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/m365-extensibility-image-editor) |
+
 ## <a name="next-step"></a>Следующий этап
 
 Опубликуйте приложение, чтобы его можно было обнаруживать в Teams, в Outlook и в Office:
 
 > [!div class="nextstepaction"]
 > [Публикация приложений Teams для Outlook и Office](publish.md)
-
-## <a name="code-sample"></a>Пример кода
-
-| **Название примера** | **Описание** | **Node.js** |
-|---------------|--------------|--------|
-| Список дел | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает только в Teams (используйте этот пример приложения, чтобы опробовать процесс обновления, описанный в этом руководстве). | [View](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend)  |
-| Список дел (Microsoft 365) | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает в Teams, Outlook, Office. | [View](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend-M365)|
-| Редактор изображений (Microsoft 365) | Создание, изменение, открытие и сохранение изображений с помощью Microsoft API Graph. Работает в Teams, Outlook, Office. | [View](https://github.com/OfficeDev/m365-extensibility-image-editor) |

@@ -4,12 +4,12 @@ description: Описание всех новых или последних фу
 ms.topic: reference
 ms.localizationpriority: high
 keywords: Teams, новые возможности, последние обновления или предварительная версия и функции для разработчиков
-ms.openlocfilehash: 0ce0de2efd6c38e610226db48a6a463942a7ccc6
-ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+ms.openlocfilehash: 2150c0dba509a1dc9c46d149538e1951cafcc955
+ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656168"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65672966"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -19,9 +19,11 @@ ms.locfileid: "65656168"
 
 | Date | Возможность | Найдите его здесь |
 | --- | --- | --- |
+| 24.05.2022| [*Предварительная версия для разработчиков*] <br> Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
 |24.05.2022| Отправка приложений с поддержкой Outlook и Office в магазин Teams | Расширение приложения в Microsoft 365 > [Обзор](m365-apps/overview.md) |
 |24.05.2022| Руководство по приложению и новые возможности TeamsJS версии 2.0.0| Средства и пакеты SDK > [Пакет SDK клиента JavaScript для Teams](tabs/how-to/using-teams-client-sdk.md)  |
 | 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> • [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
+| 24.05.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > [Схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md) |
 | 24.05.2022 | Боты и расширения для сообщений в GCC и GCCH | • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
 
 <!--
@@ -29,6 +31,7 @@ ms.locfileid: "65656168"
 
 | Date | Update | Find here |
 | --- | --- | --- |
+|05/24/2022|Live Share SDK|  Build apps for Teams meetings > Enhanced collaboration with Live Share > [Overview](apps-in-teams-meetings/teams-live-share-overview.md) |
 |05/24/2022| Submit your Outlook- and Office-enabled apps to the Teams store | Extend your app across Microsoft 365 > [Overview](m365-apps/overview.md) |
 |05/24/2022| App guidance and what's new in TeamsJS version 2.0.0| Tools and SDKs > [Teams JavaScript client SDK](tabs/how-to/using-teams-client-sdk.md)  |
 |05/19/2022|Bots and Message extensions in GCC and GCCH| • Plan your app > [Overview](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Build bots > [Overview](bots/what-are-bots.md) </br> • Build message extensions > [Overview](messaging-extensions/what-are-messaging-extensions.md) |
@@ -73,9 +76,11 @@ ms.locfileid: "65656168"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+|24.05.2022| Дополнительные советы по быстрому утверждению публикации приложения, связанного с предложением SaaS | Публикация в Teams Store > Обзор > [Дополнительные советы по быстрому утверждению публикации приложения, связанного с предложением SaaS](~/concepts/deploy-and-publish/appsource/publish.md#additional-tips-for-rapid-approval-to-publish-your-app-linked-to-a-saas-offer) |
 |24.05.2022| Отправка приложений с поддержкой Outlook и Office в магазин Teams | Расширение приложения в Microsoft 365 > [Обзор](m365-apps/overview.md) |
 |24.05.2022| Руководство по приложению и новые возможности TeamsJS версии 2.0.0| Средства и пакеты SDK > [Пакет SDK клиента JavaScript для Teams](tabs/how-to/using-teams-client-sdk.md)  |
 | 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> •  [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
+| 24.05.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > [Схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md) |
 |24.05.2022|Боты и расширения для сообщений в GCC и GCCH| • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
 |26.04.2022.|Поведение при удалении для личного приложения с ботом | Создание ботов > Беседы ботов > [Изменение поведения при удалении в личных приложениях с ботами](bots/how-to/conversations/subscribe-to-conversation-events.md#uninstall-behavior-for-personal-app-with-bot)|
 |22.04.2022| Предварительное тестирование для приложений с монетизацией | Монетизация приложения > [Предварительное тестирование для приложений с монетизацией](concepts/deploy-and-publish/appsource/prepare/test-preview-for-monetized-apps.md)
@@ -162,7 +167,7 @@ ms.locfileid: "65656168"
 |13.05.2021| Добавлены сведения о mConnect и Skooler | Интеграция с Teams > СУО Moodle > [Система управления обучением Moodle](resources/moodle-overview.md)|
 |10.05.2021| Выпущен манифест приложения версии 1.10 | Манифест приложения > [Схема манифеста](resources/schema/manifest-schema.md) |
 |10.05.2021| Новая функция настройки приложения | Разработка приложения > [Включение организаций для индивидуальной настройки приложения](concepts/design/enable-app-customization.md) |
-|07.05.2021| Прямые ссылки для аудио- и видеозвонков в чате | Интеграция с Teams > [Прямые ссылки](concepts/build-and-test/deep-links.md#deep-linking-to-an-audio-or-audio-video-call) |
+|07.05.2021| Прямые ссылки для аудио- и видеозвонков в чате | Интеграция с Teams > [Прямые ссылки](concepts/build-and-test/deep-links.md#navigate-to-an-audio-or-audio-video-call) |
 |30.04.2021|Новые рекомендации по публикации приложений в магазине Teams | • Публикация в магазине Teams > [Публикация приложения в магазине Teams](concepts/deploy-and-publish/appsource/publish.md)</br> • Публикация в магазине Teams > [Правила проверки в магазине Teams](concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) |
 |29.04.2021 | Поддержка универсальных действий для адаптивных карточек версии 1.4 | Создание карточек и модулей задач > Создание карточек > Универсальные действия для адаптивных карточек > [Универсальные действия для адаптивных карточек](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview.md) |
 |29.04.2021 | Пользовательские просмотры | Создание карточек и модулей задач > Создание карточек > Универсальные действия для адаптивных карточек > [Пользовательские представления](task-modules-and-cards/cards/universal-actions-for-adaptive-cards/User-Specific-Views.md) |
@@ -237,7 +242,7 @@ ms.locfileid: "65656168"
 | 06.05.2019 | Программа сертификации приложений для приложений магазина. | [Сертификация приложений](~/concepts/deploy-and-publish/appsource/post-publish/overview.md#complete-microsoft-365-certification) |
 | 06.05.2019 | Теперь доступны шаблоны приложений | [Шаблоны приложений](~/samples/app-templates.md) |
 | 23.04.2019 | Доступны расширения для обмена сообщениями с действиями. | [Расширения для сообщений на основе действий](~/concepts/messaging-extensions/create-extensions.md) |
-| 18.02.2019 | Создание прямых ссылок на закрытый чат. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
+| 18.02.2019 | Создание прямых ссылок на закрытый чат. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#navigate-to-a-chat) |
 | 23.01.2019 | Обзор сведений о SKU и licenceType в контексте вкладки. | [Контекст вкладки](~/concepts/tabs/tabs-context.md) |
 |
 </details>
@@ -251,7 +256,7 @@ ms.locfileid: "65656168"
 | -------- | --------- | ------------------ |
 | 11/12/2018 | Вкладки в групповом чате теперь доступны в выпущенной версии Teams. В рамках этой работы раздел вкладок был переработан для наглядности.| [Настраиваемые вкладки](~/concepts/tabs/tabs-configurable.md) |
 | 11.11.2018 | Раздел "Начало работы" для Node JS и .NET/C# дополнен использованием App Studio в Teams и добавлен новый раздел о размещении приложений Node Teams в Azure. | [Начало работы на платформе Microsoft Teams с использованием C#/.NET и App Studio](~/get-started/get-started-dotnet-app-studio.md), [Начало работы на платформе Microsoft Teams с использованием Node JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [Размещение приложения Node Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
-| 09.11.2018 | Теперь можно создавать прямые ссылки на закрытые чаты между пользователями. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#deep-linking-to-a-chat) |
+| 09.11.2018 | Теперь можно создавать прямые ссылки на закрытые чаты между пользователями. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#navigate-to-a-chat) |
 | 11/08/2018 | Выпущена платформа SharePoint Framework 1.7 с новой функцией для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
 | 05.11.2018 | Выпущена функция **модуля задач**. Модуль задач позволяет создавать модальные всплывающие окна в приложении Teams как из ботов, так и из вкладок. Внутри всплывающего окна можно запустить собственный код HTML или JavaScript, показать мини-приложение на базе `<iframe>`, например видео YouTube или Microsoft Stream, или [отобразить адаптивную карточку](/adaptive-cards/). | [Обзор модуля задач](~/concepts/task-modules/task-modules-overview.md), [модуль задач на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
 | 05.10.2018 | Информация по форматированию для карточек была обновлена и протестирована в клиентах Teams для компьютеров, iOS и Android. | [Карточки](~/concepts/cards/cards.md), [Форматирование карточек](~/concepts/cards/cards-format.md) |
@@ -287,6 +292,7 @@ ms.locfileid: "65656168"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+|24.05.2022| Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
 | 04/06/2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 07.02.2022 | Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 | 03.02.2022 | Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |

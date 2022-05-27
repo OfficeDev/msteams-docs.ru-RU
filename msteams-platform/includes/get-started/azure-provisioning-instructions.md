@@ -33,7 +33,7 @@
 
    Процесс подготовки создает ресурсы в облаке Azure. Это может занять некоторое время. Ход выполнения можно отслеживать, просмотрев диалоги в правом нижнем углу. Через несколько минут вы увидите следующее уведомление:
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-provision-successmsg.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки." border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-provision-successmsgext.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки." border="false":::
 
     При необходимости можно просмотреть подготовленные ресурсы. В этом руководстве вам не нужно просматривать ресурсы.
 
@@ -82,13 +82,26 @@
 
    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/launch-remote.png" alt-text="Снимок экрана: удаленное приложение запуска." border="false":::
 
-1. Выберите **"Добавить**" при появлении запроса на загрузку неопубликованного приложения Teams на локальном компьютере.
+1. Нажмите кнопку **Добавить**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/add-bot-debug.png" alt-text="Снимок экрана, показывающий, что бот добавляется в Teams клиенте.":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/add-mex-app.png" alt-text="Снимок экрана: устанавливаемого приложения." border="false":::
 
-   Вы можете ввести `welcome` вводную карточку и `learn` перейти к документации по адаптивной карточке и команде бота.
+   В наборе средств отображается сообщение о добавлении приложения в Teams.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/azure-deployed-app.png" alt-text="Снимок экрана: карточка learn в боте на Teams клиенте.":::       
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/mex-added-msg.png" alt-text="Снимок экрана: сообщение о попытке использовать приложение сейчас или позже" border="true":::
+ 
+    - Если выбрать " **Получить"**, вы сможете попробовать приложение позже из списка загруженных неопубликованных приложений.
+    - Если выбрать "**Попробовать**", Teams загрузит приложение.
+
+   Приложение загружается на сайте Azure.
+   
+1. Выберите **"Попробовать"**.
+
+   Приложение расширения сообщений загружается в приложение чат-бота.
+
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/app-added-mex1.png" alt-text="Снимок экрана: неопубликованное приложение в Teams" border="false":::
+
+
 
 
 

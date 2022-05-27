@@ -2,16 +2,15 @@
 title: Публикация приложений Teams с помощью набора средств Teams
 author: zyxiaoyuer
 description: публикация приложений Teams
-ms.author: yanjiang
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 4b997f9bf9dd7c27b497691b34b2e1978ebe1857
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 2c3fdd78d833baba6bbd5f21640765577f29430b
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111327"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757453"
 ---
 # <a name="publish-teams-apps-using-teams-toolkit"></a>Публикация приложений Teams с помощью набора средств Teams
 
@@ -86,7 +85,7 @@ ms.locfileid: "65111327"
 
 Вы можете распространять приложение в магазине непосредственно в Microsoft Teams и связываться с миллионами пользователей по всему миру. Если ваше приложение также доступно в магазине, вы можете мгновенно охватить потенциальных клиентов. Приложения, опубликованные в магазине Teams, также автоматически отображаются в Microsoft AppSource, который является официальной торговой площадкой для приложений и решений Microsoft 365.
 
-Подробнее см. в статье [Публикация в Microsoft Teams Store]([Publish your app to the Microsoft Teams store](../concepts/deploy-and-publish/appsource/publish.md#publish-your-app-to-the-microsoft-teams-store)).
+Дополнительные сведения см. в статье (Публикация приложения в [Microsoft Teams магазине](../concepts/deploy-and-publish/appsource/publish.md#publish-your-app-to-the-microsoft-teams-store)).
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

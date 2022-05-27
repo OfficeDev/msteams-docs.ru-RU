@@ -5,12 +5,12 @@ description: Добавление модальных всплывающих эл
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: c262de1bab6a29331350166160a4b51503e4b8aa
-ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+ms.openlocfilehash: a7d7778aa4d38dbc879255c449b93590d04f00e2
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65073555"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756599"
 ---
 # <a name="task-modules"></a>Модули задач
 
@@ -22,7 +22,7 @@ ms.locfileid: "65073555"
 
 Модули задач полезны для инициализации и выполнения задач или отображения подробных сведений, таких как видео или панели мониторинга Power Business Intelligence (BI). Всплывающее окно часто более естественно для пользователей, инициируемых и выполняемых задач, по сравнению с вкладкой или взаимодействием с ботом на основе бесед.
 
-Модули задач создаются на основе Microsoft Teams вкладок. По сути, они являются вкладкой во всплывающем окне. Они используют тот же пакет SDK, поэтому если вы создали вкладку, вы уже знакомы с созданием модуля задач.
+Модули задач создаются на основе Microsoft Teams вкладок. По сути, это вкладка во всплывающем окне. Они используют тот же пакет SDK, поэтому если вы создали вкладку, вы уже знакомы с созданием модуля задач.
 
 Модули задач можно вызывать тремя способами:
 
@@ -46,8 +46,8 @@ ms.locfileid: "65073555"
     > [!NOTE]
     > В настоящее время невозможно обнаружить событие `err` при вызове модуля задачи из бота.
 
-5. Синий прямоугольник — это `url` место, где отображается веб-страница при загрузке собственной веб-страницы с помощью свойства объекта [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object). Дополнительные сведения см. в [описании размера модуля задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-sizing).
-6. При отображении адаптивной карточки `card` с помощью свойства объекта [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) добавляется заполнение. Дополнительные сведения см. в [CSS модуля задач для модулей задач HTML или JavaScript](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-css-for-html-or-javascript-task-modules).
+5. Синий прямоугольник — это `url` место, где отображается веб-страница при загрузке собственной веб-страницы с помощью свойства объекта [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object). Дополнительные сведения см. в статье об [определении размера модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-sizing).
+6. При отображении адаптивной `card` карточки с помощью свойства объекта [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) добавляется заполнение. Дополнительные сведения см. в [CSS модуля задач для модулей задач HTML или JavaScript](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-css-for-html-or-javascript-task-modules).
 7. Кнопки адаптивной карточки отображаются после выбора параметра **"Зарегистрироваться"**. При использовании собственной страницы создайте собственные кнопки.
 
 ## <a name="next-step"></a>Следующий этап
@@ -55,6 +55,6 @@ ms.locfileid: "65073555"
 > [!div class="nextstepaction"]
 > [Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Карточки](~/task-modules-and-cards/what-are-cards.md)

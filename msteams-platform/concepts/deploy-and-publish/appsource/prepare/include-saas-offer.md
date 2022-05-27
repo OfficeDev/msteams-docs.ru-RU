@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 392d69b76c3bba7a4f8e7543731ef436af714c7c
-ms.sourcegitcommit: 5e5d2d3fb621bcbd9d792a5b450f95167ec8548b
+ms.openlocfilehash: aa2aacb781909720bdb6a0bc27d593f9c73d11b0
+ms.sourcegitcommit: a4b3b2fb265142155508f9b396609da1280df35d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63727341"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65696461"
 ---
 # <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Привязка предложения SaaS к приложению Microsoft Teams
 
@@ -122,7 +122,7 @@ ms.locfileid: "63727341"
 Перед публикацией предложения SaaS настоятельно рекомендуется проверить процедуру его приобретения от первого до последнего шага. Это можно сделать, создав отдельное предложение, специально предназначенное для тестирования. Исчерпывающую информацию об этом см. в статьях [Обзор предложения для тестирования](/azure/marketplace/plan-saas-offer#test-offer), [Создания предложения для тестирования](/azure/marketplace/create-saas-dev-test-offer) и [Предварительный просмотр предложения](/azure/marketplace/test-publish-saas-offer).
 
 > [!IMPORTANT]
-> Вы можете протестировать все этапы транзакции в Teams, пока ваше приложение не пройдет проверку в магазине. Дополнительные сведения см. в статье [Предварительное тестирование для приложений с монетизацией](Test-preview-for-monetized-apps.md).
+> Вы можете протестировать сквозную транзакцию в Teams с помощью функции [Предварительное тестирование для приложений с монетизацией](Test-preview-for-monetized-apps.md). Для активных предложений необходимо завершить процесс проверки магазина приложений.
 
 В том, что касается Teams, цель этих тестов — подтвердить, что при выполнении пользователями указанных ниже действий количество лицензий и назначений соответствует их количеству в Центре администрирования Teams.
 

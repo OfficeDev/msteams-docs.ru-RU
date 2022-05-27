@@ -5,12 +5,12 @@ ms.topic: how-to
 keywords: Создание ботов teams
 ms.localizationpriority: medium
 ms.date: 12/07/2018
-ms.openlocfilehash: e531b8058581c6c3e005bb6beb2e16c1b74bfebc
-ms.sourcegitcommit: 591bab4c7e01ac9099b9a540f149b64e6e31e6e8
+ms.openlocfilehash: 92d4593290d1332b86b370a49b20daaf43868a51
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65135698"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757390"
 ---
 # <a name="create-a-bot"></a>Создать бота
 
@@ -50,7 +50,9 @@ ms.locfileid: "65135698"
 > * Если вы регистрируете бот с Microsoft Azure, код бота не обязательно должен быть размещен *в Microsoft Azure.*
 > * Если вы регистрируете бот с портал Azure, у вас должна быть Microsoft Azure учетной записи. Вы можете [создать ее бесплатно](https://azure.microsoft.com/free/). Чтобы проверить удостоверение при его создании, необходимо предоставить кредитную карту, но с нее не будет взиматься плата. Всегда можно создавать и использовать боты с Microsoft Teams.
 > * Теперь вы можете использовать App Studio для регистрации или обновления сведений о приложении и боте непосредственно в Microsoft Teams. Для добавления или настройки других каналов Bot Framework, таких как Direct Line, Веб-чат, Skype и Facebook Messenger, необходимо использовать портал Azure.
->* Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio будет объявлен нерекомендуемым до 30 июня 2022 г.
+
+> [!WARNING]
+>* Если вы до сих пор использовали App Studio, рекомендуем попробовать Портал разработчика для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

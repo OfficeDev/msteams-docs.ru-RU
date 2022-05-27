@@ -2,16 +2,16 @@
 title: Создание приложений с помощью набора средств Teams и Visual Studio
 description: Начните создавать отличные пользовательские приложения непосредственно в Visual Studio с помощью набора средств Microsoft Teams. Узнайте, как настроить приложение в Visual Studio, проверить приложение и опубликовать его из Visual Studio и портала разработчика.
 keywords: набор средств Teams Visual Studio
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 1/13/2022
 ms.author: johmil
-ms.openlocfilehash: 751ea9b8a0f4592c5884c4d49450972cef7e6623
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 9dbe606b99ef493a136381667bbd1c1da1f955b0
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111313"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756459"
 ---
 # <a name="teams-toolkit-for-visual-studio"></a>Набор средств Teams для Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "65111313"
 5. Справа разверните раздел **ASP.NET и разработка веб-приложений** и выберите **Средства разработки Microsoft Teams** в списке дополнительных компонентов.
 6. Выберите **Установить** или **Изменить** в установщике Visual Studio для завершения процесса установки.
 
-![Выбор средств разработки Microsoft Teams в установщике Visual Studio установщика.) установлено.](images/teams-development-tools-vs-installer.png)
+   ![Выбор средств разработки Microsoft Teams в установщике Visual Studio установщика.) установлено.](images/teams-development-tools-vs-installer.png)
 
 ## <a name="get-started-quickly-with-a-new-project"></a>Быстрое начало работы с новым проектом
 
@@ -49,7 +49,7 @@ ms.locfileid: "65111313"
 1. В окне **Настроить новый проект** введите _HelloTeams_ в поле **Имя проекта**. Затем нажмите **Создать**.
 1. В окне **Создание нового приложения Teams** выберите учетную запись Microsoft 365 или войдите в нее с помощью селектора **Выберите учетную запись**. Затем нажмите **Создать**.
 
-![Создание проекта приложения Microsoft Teams в Visual Studio.](images/teams-toolkit-vs-new-project.png)
+   ![Создание проекта приложения Microsoft Teams в Visual Studio.](images/teams-toolkit-vs-new-project.png)
 
 Visual Studio откроет ваш новый проект, а набор средств Teams настроит новый проект на портале разработчика Teams. Проект будет добавлен для организации Teams, связанной с учетной записью Microsoft 365, которую вы выбрали выше. Будет создана новая регистрация Azure Active Directory. Это необходимо для запуска приложения в Teams.
 

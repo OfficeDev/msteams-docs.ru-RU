@@ -4,12 +4,12 @@ description: Узнайте, как добавить общую папку Teams
 ms.topic: reference
 ms.localizationpriority: medium
 keywords: Отправить в Teams Отправка в Teams
-ms.openlocfilehash: 59185b9e2531a0ca61c97ceba50b4f71f06c45e9
-ms.sourcegitcommit: a3567e3e1a52b8e3cb2072b037f0e75bd0f12e58
+ms.openlocfilehash: c40263504b77a8a848251431de1eb49b85253b77
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65439365"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757264"
 ---
 # <a name="share-to-teams-from-personal-app-or-tab"></a>Поделиться в Teams из личного приложения или вкладки
 

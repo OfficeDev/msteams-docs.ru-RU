@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: high
-ms.openlocfilehash: f9c4b342a0be797a1ac20f9f195ae969b51a0187
-ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+ms.openlocfilehash: 6df09a7398d26c4e0a69a2a9ac3f256b7086a9e0
+ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656147"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65668076"
 ---
 # <a name="extend-a-teams-message-extension-across-microsoft-365"></a>Распространение расширения сообщений Teams в Microsoft 365
 
@@ -106,7 +106,7 @@ ms.locfileid: "65656147"
 
     :::image type="content" source="images/azure-bot-channel-message-extensions.png" alt-text="Добавьте канал Outlook ''Расширения сообщений'' для бота на панели ''Каналы Azure Bot''.":::
 
-1. Убедитесь, что ваш канал Outlook отображен вместе с Microsoft Teams на панели **Каналов** вашего бота:
+1. Убедитесь, что ваш канал Outlook перечислен вместе с Microsoft Teams на панели **Каналы** вашего бота:
 
     :::image type="content" source="images/azure-bot-channels.png" alt-text="Панель Azure Bot Channels со списком каналов Microsoft Teams и Outlook":::
 
@@ -123,27 +123,27 @@ ms.locfileid: "65656147"
 1. Выберите **Открыть API** (в разделе *Управление*).
 1. В разделе **Авторизованные клиентские приложения** убедитесь, что указаны все следующие `Client Id`значения:
 
-|Клиентское приложение Microsoft 365 | Идентификатор клиента |
-|--|--|
-|Настольные компьютеры и мобильные устройства |1fec8e78-bce4-4aaf-ab1b-5451cc387264 |
-|Веб-приложение Teams |5e3ce6c0-2b1f-4285-8d4b-75ee78787346 |
-|Классическое приложение Outlook | d3590ed6-52b3-4102-aeff-aad2292ab01c |
-|Outlook Web Access | 00000002-0000-0ff1-ce00-000000000000 |
-|Outlook Web Access | bc59ab01-8403-45c6-8796-ac3ef710b3e3 |
+   |Клиентское приложение Microsoft 365 | Идентификатор клиента |
+   |--|--|
+   |Настольные компьютеры и мобильные устройства |1fec8e78-bce4-4aaf-ab1b-5451cc387264 |
+   |Веб-приложение Teams |5e3ce6c0-2b1f-4285-8d4b-75ee78787346 |
+   |Классическое приложение Outlook | d3590ed6-52b3-4102-aeff-aad2292ab01c |
+   |Outlook Web Access | 00000002-0000-0ff1-ce00-000000000000 |
+   |Outlook Web Access | bc59ab01-8403-45c6-8796-ac3ef710b3e3 |
 
 ## <a name="sideload-your-updated-message-extension-in-teams"></a>Загрузите обновленное расширение сообщений в Teams
 
 Последний шаг — загрузить обновленное расширение сообщений ([пакет приложения](/microsoftteams/platform/concepts/build-and-test/apps-package)) в Microsoft Teams. После завершения ваше расширение сообщений появится в ваших установленных *Приложениях* в области создания сообщения.
 
-1. Упакуйте приложение Teams (манифеcт и [значки](/microsoftteams/platform/resources/schema/manifest-schema#icons) приложения) в ZIP-файл. Если вы использовали Teams Toolkit для создания приложения, это можно сделать с помощью параметра **Упаковка пакета метаданных Teams** в меню *Развертывание* в Teams Toolkit.
+1. Упакуйте приложение Teams (манифест и [значки](/microsoftteams/platform/resources/schema/manifest-schema#icons) приложений) в ZIP-файл. Если вы использовали Teams Toolkit для создания приложения, это легко сделать с помощью параметра **пакета метаданных Zip Teams** в меню *Развертывание* Teams Toolkit:
 
     :::image type="content" source="images/toolkit-zip-teams-metadata-package.png" alt-text="Параметр ''Zip Teams metadata package'' в расширении Teams Toolkit для Visual Studio Code":::
 
-1. Войдите в Teams с помощью учетной записи клиента песочницы и переключитесь в режим *предварительной версии для разработчиков*. Выберите меню с многоточием (**...**) рядом с профилем пользователя, затем выберите: О программе > **Предварительная версия для разработчиков**.
+1. Войдите в Teams с помощью учетной записи клиента песочницы и переключитесь в режим *предварительной версии для разработчиков*. Выберите меню с многоточием (**...**) рядом с профилем пользователя, затем выберите: **О программе** > **Предварительная версия для разработчиков**.
 
     :::image type="content" source="images/teams-dev-preview.png" alt-text="В меню с многоточием Teams откройте «О программе» и выберите параметр «Предварительная версия для разработчиков»":::
 
-1. Выберите *Приложения*, чтобы открыть область **Управление приложениями**. Затем выберите **Опубликовать приложение**.
+1. Выберите **Приложения**, чтобы открыть область **Управление приложениями**. Затем выберите **Опубликовать приложение**.
 
     :::image type="content" source="images/teams-manage-your-apps.png" alt-text="Откройте панель «Управление приложениями» и выберите «Опубликовать приложение»":::
 

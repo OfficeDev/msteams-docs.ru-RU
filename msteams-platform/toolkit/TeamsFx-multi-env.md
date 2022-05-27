@@ -6,12 +6,12 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview of multiple environment
 ms.date: 11/29/2021
-ms.openlocfilehash: 684951451519ca5e1aaa82344de802259df22a63
-ms.sourcegitcommit: 264d3cc84d6eec4ab025cf86a7a6f4865f1aed07
+ms.openlocfilehash: 72d980849d48498dddedb87db35ae15ca69e4cda
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653282"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756935"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
@@ -45,9 +45,9 @@ ms.locfileid: "65653282"
 1. Выберите значок **Teams** на боковой панели Visual Studio Code.
 2. Выберите **+Teams: Создать среду** в разделе "Среда", как показано на следующем рисунке:
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create new env.png" alt-text="создать":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create new env.png" alt-text="создать":::
 
-Если у вас несколько сред, необходимо выбрать существующую среду, чтобы создать ту же среду. Эта команда копирует содержимое `config.<newEnv>.json` и `azure.parameters.<newEnv>.json` из существующей среды, выбранной вами, в созданную среду.
+   Если у вас несколько сред, необходимо выбрать существующую среду, чтобы создать ту же среду. Эта команда копирует содержимое `config.<newEnv>.json` и `azure.parameters.<newEnv>.json` из существующей среды, выбранной вами, в созданную среду.
 
 ## <a name="select-target-environment"></a>Выбор целевой среды
 
@@ -204,18 +204,21 @@ ms.locfileid: "65653282"
     },
     ...
   }
- ```
-3. Выполните команду подготовки для **всех сред**, чтобы обновить имя приложения в удаленных средах. Выполнение команды подготовки набором средств Teams описано в разделе [Подготовка](provision.md#provision-using-teams-toolkit).
+
+  ```
+
+3. Выполните команду подготовки для **всех сред**, чтобы обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с Teams Toolkit см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit).
+
 <br></details>
 <br>
+
 <details>
 <br><summary><b>Сценарий 4. Настройка ресурсов Azure для разных сред</b></summary>
 Вы можете настроить ресурсы Azure для каждой среды, например указать имя функции Azure, отредактировав среду, соответствующую fx/configs/azure.parameters.{env}.json. удален.
 
-Дополнительные сведения о файлах шаблонов и параметров Bicep см. в статье [Подготовка облачных ресурсов](provision.md)
-</details> < br
-
-
+Дополнительные сведения о файлах шаблонов и параметров Bicep см. в разделе ["Подготовка облачных ресурсов".](provision.md)
+</details>
+</br>
 
 ## <a name="see-also"></a>См. также
 

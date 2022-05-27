@@ -6,12 +6,12 @@ ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
 keywords: отправка магазин распространение рекомендации по проверке пакета приложение локализация
-ms.openlocfilehash: e1c2f94eb0bb3989ea461b10543fcea3051ef52a
-ms.sourcegitcommit: 591bab4c7e01ac9099b9a540f149b64e6e31e6e8
+ms.openlocfilehash: 6ea5ff76cc81f23719e4b4c499f4a2f2594718a2
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65135754"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756781"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовьте пакет для отправки в магазин Microsoft Teams
 
@@ -23,8 +23,8 @@ ms.locfileid: "65135754"
 
 Хотя ваше приложение может работать в тестовой среде, необходимо проверить пакет приложения, чтобы избежать проблем при отправке.
 
-> [!NOTE]
- > Если вы до сих пор использовали App Studio, рекомендуем попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
+> [!WARNING]
+> Если вы до сих пор использовали App Studio, рекомендуем попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
 
 Средство проверки приложений Microsoft Teams помогает выявлять и устранять проблемы перед отправкой в Центр партнеров. Средство автоматически проверяет конфигурации вашего приложения, используя те же тестовые сценарии, которые будут использоваться во время проверки в магазине.
 
@@ -75,15 +75,15 @@ ms.locfileid: "65135754"
 
 ### <a name="specify-a-short-name"></a>Укажите короткое имя
 
-Имя вашего приложения (в частности, его [*короткое имя*](~/resources/schema/manifest-schema.md#name)) играет решающую роль для обнаружения его в магазине.
+Имя вашего приложения (в частности, его *[короткое имя](~/resources/schema/manifest-schema.md#name)*) играет решающую роль для обнаружения его в магазине.
 
 :::row:::
 
-   :::column span="3":::
-      :::image type="content" source="../../../../assets/images/store-detail-page/AppName-02.png" alt-text="На этом снимке экрана показан пример короткого имени приложения в списке приложений в магазине.":::
-   :::column-end:::
-   :::column span="1":::
-   :::column-end:::
+:::column span="3":::
+:::image type="content" source="../../../../assets/images/store-detail-page/AppName-02.png" alt-text="На этом снимке экрана показан пример короткого имени приложения в списке приложений в магазине.":::
+:::column-end:::
+:::column span="1":::
+:::column-end:::
 
 :::row-end:::
 
@@ -99,11 +99,11 @@ ms.locfileid: "65135754"
 
 :::row:::
 
-   :::column span="3":::
-      :::image type="content" source="~/assets/images/store-detail-page/ShortDescription-02.png" alt-text="Пример экрана показывает, где находится краткое описание приложения на сайте магазина.":::
-   :::column-end:::
-   :::column span="1":::
-   :::column-end:::
+:::column span="3":::
+:::image type="content" source="~/assets/images/store-detail-page/ShortDescription-02.png" alt-text="Пример экрана показывает, где находится краткое описание приложения на сайте магазина.":::
+:::column-end:::
+:::column span="1":::
+:::column-end:::
 
 :::row-end:::
 
@@ -121,11 +121,11 @@ ms.locfileid: "65135754"
 
 :::row:::
 
-   :::column span="3":::
-      :::image type="content" source="~/assets/images/store-detail-page/LongDescription-02.png" alt-text="Пример экрана показывает, где находится длинное описание приложения на сайте магазина.":::
-   :::column-end:::
-   :::column span="1":::
-   :::column-end:::
+:::column span="3":::
+:::image type="content" source="~/assets/images/store-detail-page/LongDescription-02.png" alt-text="Пример экрана показывает, где находится длинное описание приложения на сайте магазина.":::
+:::column-end:::
+:::column span="1":::
+:::column-end:::
 
 :::row-end:::
 
@@ -143,11 +143,11 @@ ms.locfileid: "65135754"
 
 :::row:::
 
-   :::column span="3":::
-      :::image type="content" source="~/assets/images/store-detail-page/Screenshot-01.png" alt-text="Пример экрана показывает, где находятся скриншоты приложений на сайте магазина.":::
-   :::column-end:::
-   :::column span="1":::
-   :::column-end:::
+:::column span="3":::
+:::image type="content" source="~/assets/images/store-detail-page/Screenshot-01.png" alt-text="Пример экрана показывает, где находятся скриншоты приложений на сайте магазина.":::
+:::column-end:::
+:::column span="1":::
+:::column-end:::
 
 :::row-end:::
 
@@ -212,7 +212,6 @@ ms.locfileid: "65135754"
 > Если вы отправляете в магазин приложение, которого не было там ранее, вы не можете официально пройти аттестацию издателя, пока ваше приложение не появится в магазине Teams. Если вы обновляете уже отправленное в магазин приложение, пройдите аттестацию издателя перед отправкой новейшей версии приложения.
 
 ## <a name="next-step"></a>Следующий этап
-
 > [!div class="nextstepaction"]
 > [Отправка приложения](/office/dev/store/add-in-submission-guide)
 

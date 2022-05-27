@@ -1,17 +1,17 @@
 ---
 title: Используйте Microsoft Graph для авторизации упреждающей установки бота и обмена сообщениями в Teams.
 description: Описывает упреждающий обмен сообщениями в Teams и способы его реализации. Узнайте, как включить упреждающую установку приложений и обмен сообщениями, используя образец кода.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
 keywords: команды упреждающий обмен сообщениями чат установка Graph
-ms.openlocfilehash: 7915d958cf73b916921a6346b4eca1f8ce0280e7
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 7a133b91aabe920b109b644331bc6526cd950858
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111516"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757705"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 
@@ -26,7 +26,7 @@ ms.locfileid: "65111516"
 
 ## <a name="proactive-app-installation-in-teams"></a>Упреждающая установка приложений в Teams
 
-Прежде чем бот сможет активно отправлять сообщения пользователю, его необходимо установить либо как личное приложение, либо в команде, участником которой является пользователь. Иногда вам нужно отправить упреждающее сообщение пользователям, у которых не установлено приложение или которые ранее не взаимодействовали с ним. Например, необходимо сообщить важную информацию всем в организации. В таких случаях вы можете использовать API Microsoft Graph, чтобы упреждающе установить бот для пользователей.
+Прежде чем бот сможет активно отправлять сообщения пользователю, его необходимо установить либо как личное приложение, либо в команде, участником которой является пользователь. Иногда необходимо заблаговременно отправлять сообщения пользователям, которые еще не установили или ранее взаимодействовали с вашим приложением. Например, если вам нужно отправлять важные сведения всем пользователям в организации, вы можете использовать microsoft API Graph для упреждающего установки бота для пользователей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -155,7 +155,7 @@ Content-Type: application/json
 
 **Справочник по странице Microsoft Graph:** [Получить чат](/graph/api/chat-get?view=graph-rest-v1.0&tabs=http&preserve-view=true)
 
-1. У вас должен быть `{teamsAppInstallationId}` приложения. Если у вас этого нет, используйте следующее:
+1. У вас должен быть `{teamsAppInstallationId}` приложения. Если у вас ее нет, используйте следующую команду:
 
     Запрос **HTTP GET**:
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 1. Отправьте следующий запрос, чтобы получить `chatId`:
 
-    Запрос **HTTP GET** (разрешение — `TeamsAppInstallation.ReadWriteSelfForUser.All`):  
+    **HTTP-запрос GET** (разрешение—`TeamsAppInstallation.ReadWriteSelfForUser.All` ):  
 
     ```http
     GET https://graph.microsoft.com/v1.0/users/{user-id}/teamwork/installedApps/{teamsAppInstallationId}/chat
@@ -177,7 +177,7 @@ Content-Type: application/json
 
     Вы также можете получить `chatId` с помощью следующего запроса, но для этого требуется более широкое `Chat.Read.All` разрешение:
 
-    Запрос **HTTP GET** (разрешение — `Chat.Read.All`):
+    **HTTP-запрос GET** (разрешение—`Chat.Read.All` ):
 
     ```http
     GET https://graph.microsoft.com/v1.0/users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppId}')

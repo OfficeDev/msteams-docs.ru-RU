@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 keywords: тестирование Teams для программ разработчиков приложений
 ms.date: 11/01/2019
-ms.openlocfilehash: 5c8848196f5c5493c49f3446f788181f4123120d
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: 6694c925e49d38fa15f908e58202907c7d479fa0
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296989"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757026"
 ---
 # <a name="add-test-data-to-your-microsoft-365-test-tenant"></a>Добавление тестовых данных в тестовый клиент Microsoft 365
 
@@ -18,7 +18,7 @@ ms.locfileid: "65296989"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-1. [Присоединитесь к программе для разработчиков Microsoft 365](/office/developer-program/office-365-developer-program), если у вас нет тестового клиента.
+1. [Присоединитесь к Microsoft 365 для](/office/developer-program/office-365-developer-program) разработчиков, если у вас нет тестового клиента.
 2. [Настройка подписки для разработчиков Microsoft 365](/office/developer-program/office-365-developer-program-get-started)
 3. [Используйте примеры пакетов данных с подпиской на Microsoft 365 для разработчиков, чтобы установить пакет содержимого "Пользователи"](/office/developer-program/install-sample-packs).
 4. [Установите модуль Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.2).
@@ -147,7 +147,7 @@ ms.locfileid: "65296989"
     </Teams>
     ```
 
-2. Сохраните следующий фрагмент в виде сценария PowerShell (.ps1) и запишите, где он был сохранен. Этот сценарий выполняет действия по созданию команды и канала и добавлению в них участников:
+2. Сохраните следующий фрагмент кода в виде скрипта PowerShell (.ps1) и запишите, где он был сохранен. Этот сценарий выполняет действия по созданию команды и канала и добавлению в них участников:
 
     ```powershell
     Param(
@@ -238,7 +238,7 @@ ms.locfileid: "65296989"
     }
     ```
 
-3. Откройте сеанс Windows PowerShell в режиме администратора и запустите только что сохраненный сценарий.
+3. Откройте сеанс Windows PowerShell в режиме администратора и запустите сохраненный скрипт.
 4. При появлении запроса на ввод учетных данных введите учетные данные глобального администратора, полученные при первой регистрации в подписке разработчика.
 
     > [!Note]

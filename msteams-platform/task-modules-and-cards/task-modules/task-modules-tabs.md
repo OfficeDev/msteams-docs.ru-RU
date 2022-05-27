@@ -1,15 +1,15 @@
 ---
 title: Использование модулей задач на вкладках Microsoft Teams
 description: В этой статье объясняется, как вызывать модули задач из вкладок Teams и отправлять их результаты с помощью клиентского пакета SDK Microsoft Teams. Включены примеры кода.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: how-to
 keywords: клиентский пакет SDK для вкладок Teams модулей задач
-ms.openlocfilehash: eb199842a60832e6eb77575a7438cc9f52db6e09
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 61955a9afd070a17b17210239054819f02d3b484
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111229"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756698"
 ---
 # <a name="use-task-modules-in-tabs"></a>Использование модулей задач во вкладках
 
@@ -35,8 +35,8 @@ microsoftTeams.tasks.submitTask(
 
 Чтобы вызвать модуль задачи со вкладки, используйте команду `microsoftTeams.tasks.startTask()`, передающую объект [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object), и необязательную функцию обратного вызова `submitHandler`. Необходимо рассмотреть два случая.
 
-* Для параметра `TaskInfo.url` задано значение URL-адреса. Появляется окно модуля задач, и в нем загружается `TaskModule.url` как `<iframe>`. JavaScript на этой странице вызывает `microsoftTeams.initialize()`. Если на странице есть функция `submitHandler` и при вызове `microsoftTeams.tasks.startTask()` возникает ошибка, вызывается `submitHandler` с параметром `err`, которому присвоено значение строки ошибки с аналогичным содержанием. Дополнительные сведения см. в разделе [Ошибки при вызове модуля задач](#task-module-invocation-errors).
-* Значением `taskInfo.card` является [JSON для адаптивной карточки](~/task-modules-and-cards/task-modules/invoking-task-modules.md#adaptive-card-or-adaptive-card-bot-card-attachment). Отсутствует функция JavaScript `submitHandler` для вызова, когда пользователь закрывает адаптивную карточку или нажимает в ней кнопку. Единственный способ получить введенные пользователем данные — передать результат боту. Чтобы использовать модуль задач адаптивной карточки со вкладки, ваше приложение должно включать бота для получения любого отклика от пользователя.
+* Для параметра `TaskInfo.url` задано значение URL-адреса. Появляется окно модуля задач, и в нем загружается `TaskModule.url` как `<iframe>`. JavaScript на этой странице вызывает `microsoftTeams.initialize()`. Если на странице есть `submitHandler` `microsoftTeams.tasks.startTask()`функция и при вызове возникает ошибка, `submitHandler` `err` вызывается с задаваемой строкой ошибки, указывающая на то же самое. Дополнительные сведения см. в разделе [Ошибки при вызове модуля задач](#task-module-invocation-errors).
+* Значением `taskInfo.card` является [JSON для адаптивной карточки](~/task-modules-and-cards/task-modules/invoking-task-modules.md#adaptive-card-or-adaptive-card-bot-card-attachment). Функция JavaScript `submitHandler` , вызываемая при закрытии или нажатии кнопки на адаптивной карточке, отсутствует. Единственный способ получить введенные пользователем данные — передать результат боту. Чтобы использовать модуль задач адаптивной карточки со вкладки, ваше приложение должно включать бота для получения любого отклика от пользователя.
 
 В следующем разделе приведен пример вызова модуля задач.
 
@@ -70,13 +70,13 @@ submitHandler = (err, result) => {
 microsoftTeams.tasks.startTask(taskInfo, submitHandler);
 ```
 
-`submitHandler` очень прост и передает значение `err` или `result` в консоль.
+Это `submitHandler` просто, и оно выводит значение или `err` возвращается `result` в консоль.
 
 ## <a name="submit-the-result-of-a-task-module"></a>Отправка результата модуля задач
 
-Функция `submitHandler` находится на веб-странице `TaskInfo.url` и используется с `TaskInfo.url`. Если при вызове модуля задач возникает ошибка, немедленно вызывается ваша функция `submitHandler` со строкой `err`, указывающей, какая [ошибка произошла](#task-module-invocation-errors). Также вызывается функция `submitHandler` со строкой `err`, когда пользователь нажимает X в правом верхнем углу модуля задач, чтобы закрыть его.
+Функция `submitHandler` находится на веб-странице `TaskInfo.url` и используется с `TaskInfo.url`. Если при вызове модуля задачи возникает ошибка, `submitHandler` `err` функция немедленно вызывается со строкой, указывающая, какая [ошибка произошла](#task-module-invocation-errors). Также вызывается функция `submitHandler` со строкой `err`, когда пользователь нажимает X в правом верхнем углу модуля задач, чтобы закрыть его.
 
-Если ошибка вызова отсутствует и пользователь не нажимает X, чтобы закрыть ее, пользователь нажмет кнопку по завершении. В следующих разделах содержатся сведения о том, что происходит в зависимости от того, является ли это URL-адресом или адаптивной карточкой в модуле задач.
+Если ошибка вызова отсутствует и пользователь не выбирает X, чтобы закрыть ее, пользователь нажмет кнопку по завершении. В зависимости от того, является ли это URL-адрес или адаптивная карточка в модуле задачи, в следующих разделах приводятся сведения о том, что происходит.
 
 ### <a name="html-or-javascript-taskinfourl"></a>`TaskInfo.url` HTML или JavaScript
 
@@ -86,7 +86,7 @@ microsoftTeams.tasks.startTask(taskInfo, submitHandler);
 
 ### <a name="adaptive-card-taskinfocard"></a>`TaskInfo.card` адаптивной карточки
 
-Когда вы вызываете модуль задач с помощью `submitHandler`, а пользователь нажимает кнопку `Action.Submit`, значения в карточке возвращаются в виде значения `result`. Если пользователь нажимает клавишу ESC или кнопку X в правом верхнем углу, вместо этого возвращается `err`. Если ваше приложение содержит бота в дополнение ко вкладке, вы можете просто включить `appId` бота в качестве значения `completionBotId` в объекте `TaskInfo`. Текст адаптивной карточки, заполненный пользователем, отправляется боту с помощью сообщения `task/submit invoke` при нажатии пользователем кнопки `Action.Submit`. Получаемая схема для объекта очень похожа на [схему, получаемую для сообщений task/fetch и task/submit](~/task-modules-and-cards/task-modules/task-modules-bots.md#payload-of-taskfetch-and-tasksubmit-messages). Единственным отличием является то, что схема объекта JSON является объектом адаптивной карточки, а не объектом, содержащим объект адаптивной карточки, как [при использовании адаптивных карточек с ботами](~/task-modules-and-cards/task-modules/task-modules-bots.md#payload-of-taskfetch-and-tasksubmit-messages).
+Когда вы вызываете модуль задач с помощью `submitHandler`, а пользователь нажимает кнопку `Action.Submit`, значения в карточке возвращаются в виде значения `result`. Если пользователь нажимает клавишу ESC или кнопку X в правом верхнем углу, вместо этого возвращается `err`. Если приложение содержит бот в дополнение к вкладке, `appId` `completionBotId` вы можете включить бот в качестве значения объекта `TaskInfo` . Текст адаптивной карточки, заполненный пользователем, отправляется боту с помощью сообщения `task/submit invoke` при нажатии пользователем кнопки `Action.Submit`. Схема получаемый объект аналогична схеме, получаемой для сообщений [задачи, получения и отправки](~/task-modules-and-cards/task-modules/task-modules-bots.md#payload-of-taskfetch-and-tasksubmit-messages). Единственным отличием является то, что схема объекта JSON является объектом адаптивной карточки, а не объектом, содержащим объект адаптивной карточки, как [при использовании адаптивных карточек с ботами](~/task-modules-and-cards/task-modules/task-modules-bots.md#payload-of-taskfetch-and-tasksubmit-messages).
 
 В следующем разделе приведен пример отправки результата модуля задач.
 
@@ -131,7 +131,7 @@ function validateForm() {
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Примеры вкладок модуля задач и bots-V3 | Примеры для создания модулей задач. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)|
+|Примеры вкладок модуля задач и bots-V3 | Примеры для создания модулей задач. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
 

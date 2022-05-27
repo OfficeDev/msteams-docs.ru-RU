@@ -1,19 +1,19 @@
 ---
 title: DevTools для вкладок Microsoft Teams
 description: Описывает, как получить доступ к DevTools при использовании настольного клиента Microsoft Teams и отладке.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: how-to
 keywords: devtools отлаживает вкладку инструментов разработчика мобильного клиента Chrome для настольных компьютеров
-ms.openlocfilehash: 4e7ea8ee51d5dd77345c0c7392775aa29050a9a5
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: c4601711948df798bda6b7d4940b5436c66f8c97
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111446"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757481"
 ---
 # <a name="devtools-for-microsoft-teams-tabs"></a>DevTools для вкладок Microsoft Teams
 
-Когда Teams работает в браузере, доступ к инструментам разработчика браузера легко получить: F12 в Windows или Command-Option-I в MacOS. DevTools предоставляет вам доступ к:
+Если Teams в браузере, вы можете легко получить доступ к средствам разработчика браузера: F12 в Windows или Command-Option-I в MacOS. DevTools предоставляет вам доступ к:
 
 1. Просмотр журналов консоли.
 1. Просмотр или изменение HTML, CSS и сетевых запросов во время выполнения.

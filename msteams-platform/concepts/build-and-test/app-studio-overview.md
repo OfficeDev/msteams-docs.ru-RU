@@ -4,17 +4,17 @@ description: Начните создавать эффективные прило
 keywords: начало работы app studio teams
 ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 175d4718e91a8ebe2c72b3c06530952fe007baf9
-ms.sourcegitcommit: 591bab4c7e01ac9099b9a540f149b64e6e31e6e8
+ms.openlocfilehash: 65c6ad9d5f4eafef80e2ec75d95d9d4a5ff1694b
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65135719"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757075"
 ---
 # <a name="manage-your-apps-with-app-studio-for-microsoft-teams"></a>Управление приложениями с помощью App Studio для Microsoft Teams
 
-> [!TIP]
-> **Попробуйте портал разработчика**: App Studio развивается. Настройте, распространите и управляйте Teams приложениями с помощью нового [портала разработчика](https://dev.teams.microsoft.com/). <br> App Studio будет объявлен нерекомендуемым до 30 июня 2022 г.
+> [!WARNING]
+> **Попробуйте портал разработчика**: App Studio развивается. Настройте, распространите и управляйте Teams приложениями с помощью нового [портала разработчика](https://dev.teams.microsoft.com/). <br> App Studio станет не рекомендованным к использованию не позднее 30 июня 2022 г.
 
 С помощью App Studio можно удобно создавать и интегрировать ваши собственные приложения для Microsoft Teams, если вы разрабатываете пользовательские приложения для своего предприятия или приложения SaaS для команд во всем мире. App Studio упрощает создание манифеста и пакета для вашего приложения и предоставляет вам полезные инструменты, такие как редактор карточек и библиотека элементов управления React.
 

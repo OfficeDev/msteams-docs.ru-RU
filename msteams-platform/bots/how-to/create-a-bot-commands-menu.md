@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: командное меню создание сообщений беседа @упоминание
-ms.openlocfilehash: 59f2dc595a4baac2d99b25d9c7c0fb0d3c5013d1
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: b81959b23363142cd463788950116b4f805f95ae
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296968"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757698"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -42,8 +42,9 @@ ms.locfileid: "65296968"
 1. Откройте Teams и выберите **Приложения** в левой области. На странице **Приложения** найдите **App Studio** и выберите **Открыть**.
    > [!NOTE]
    > Если у вас нет **App Studio**, вы можете скачать его бесплатную версию. Подробнее см. в статье [Установка App Studio](~/concepts/build-and-test/app-studio-overview.md#installing-app-studio).
-
-  > Если вы до сих пор использовали App Studio, рекомендуем попробовать Портал разработчика для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
+  
+   > [!WARNING]
+   > Если вы до сих пор использовали App Studio, рекомендуем попробовать Портал разработчика для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
 
   :::image type="content" source="/media/AppStudio.png" alt-text="Установка App Studio"lightbox="media/AppStudio.png"border="true":::
 

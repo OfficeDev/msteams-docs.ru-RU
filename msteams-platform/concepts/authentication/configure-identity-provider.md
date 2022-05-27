@@ -2,20 +2,20 @@
 title: Настройка поставщиков удостоверений OAuth 2.0
 description: Описание настройки поставщиков удостоверений с фокусом на Microsoft Azure Active Directory (Azure AD)
 ms.topic: how-to
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: проверка подлинности Teams поставщиком удостоверений OAuth от Azure AD
-ms.openlocfilehash: c21be68ef76568ea4c5bb534f329f725d599b1ac
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 6ab95958c66fcf680cdab54d3307eab5dc66fa57
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111803"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757054"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 
 ## <a name="configuring-an-application-to-use-azure-ad-as-an-identity-provider"></a>Настройка приложения для использования Azure AD в качестве поставщика удостоверений
 
-Поставщики удостоверений, поддерживающие OAuth 2.0, не будут выполнять проверку подлинности запросов из неизвестных приложений. Приложения должны быть зарегистрированы заранее. Чтобы сделать это с помощью Azure AD, выполните следующие действия:
+Поставщики удостоверений, поддерживающие OAuth 2.0, не будут аутентификация запросов из неизвестных приложений. Приложения  должны быть зарегистрированы заранее. Чтобы сделать это с помощью Azure AD, выполните следующие действия:
 
 1. Откройте [портал регистрации приложений](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 

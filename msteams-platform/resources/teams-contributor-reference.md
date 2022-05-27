@@ -3,14 +3,14 @@ title: Улучшение документации Teams
 description: действия по созданию и публикации документации Teams
 author: surbhigupta
 ms.author: lajanuar
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: contributor-guide
-ms.openlocfilehash: 480b8bc1692672023171f3b6e67e0ee526cbe509
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 047a3c84b99fd832cde0531a9a9197c880f294e6
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111901"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757684"
 ---
 # <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
@@ -22,9 +22,8 @@ ms.locfileid: "65111901"
 >
 > * Установите [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 > * Установите [Microsoft Visual Studio (](https://code.visualstudio.com/)VS Code).
-> * Установите [пакет разработки документации](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) непосредственно из VS Code Marketplace.
-<br>&emsp;&emsp;Или
-> [!div class="checklist"]
+> * Установите [пакет разработки документации](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) непосредственно из VS Code Marketplace.<br>&emsp;&emsp;Или
+[!div class="checklist"]
 >
 > * Установите в VS Code:
 
@@ -40,7 +39,7 @@ ms.locfileid: "65111901"
 
 * **[Руководство по стилю письма Майкрософт](/style-guide/welcome)**. Руководство по стилю письма (Майкрософт) — это комплексный ресурс для технических писателей, отражающий современный подход корпорации Майкрософт к голосу и стилю. Для удобства добавьте это интерактивное руководство в меню **Избранное** браузера.
 
-* **[Написание содержимого для разработчиков](/style-guide/developer-content/)**. Содержимое, специфичное для Teams, предназначено для аудитории разработчиков, обладающих глубоким пониманием основных концепций программирования и процессов. Старайтесь предоставить четкие и технически точные сведения, сохраняя при этом тон и стиль корпорации Майкрософт.
+* **[Написание содержимого для разработчиков](/style-guide/developer-content/)**. Содержимое, специфичное для Teams, предназначено для аудитории разработчиков, обладающих глубоким пониманием основных концепций программирования и процессов. Важно предоставить четкие и технически точные сведения, сохраняя тон и стиль корпорации Майкрософт.
 
 * **[Написание пошаговых инструкций](/style-guide/procedures-instructions/writing-step-by-step-instructions)**. Прикладное и интерактивное взаимодействие пользователей — отличный способ для разработчиков узнать о продуктах и технологиях Майкрософт. Представлять сложные или простые процедуры в прогрессивном формате естественно и понятно пользователям.
 
@@ -60,8 +59,7 @@ ms.locfileid: "65111901"
 > &emsp;&#x2714; Включите расширение файла Markdown.<br>
 >Например, **родительский_каталог/каталог/путь_к_статье.md** — > [создание приложения для Microsoft Teams](../concepts/building-an-app.md) <br><br>
 > Чтобы сослаться на статью из библиотеки документов Майкрософт, **не относящуюся** к набору docset платформы Teams, выполните следующие шаги:<br>
-> &emsp;&#x2714; используйте относительный путь, который начинается с косой черты.<br>
-> &emsp;&#x2714; не включайте расширение файла. <br>
+> &emsp;&#x2714; используйте относительный путь, который начинается с косой черты.<br>&emsp;&#x2714; не включайте расширение файла.<br>
 > Например: **/docset/адрес_местонахождения_файла** —> [Работа с Microsoft Teams при помощи API Microsoft Graph](/graph/api/resources/teams-api-overview)<br><br>
 > Чтобы ссылаться на страницу за пределами библиотеки документов Майкрософт, например GitHub, используйте полный `https` путь к файлу.<br>
 

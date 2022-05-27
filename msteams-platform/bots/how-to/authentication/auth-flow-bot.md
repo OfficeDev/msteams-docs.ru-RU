@@ -2,18 +2,18 @@
 title: Поток проверки подлинности Microsoft Teams для ботов
 description: Описывает процесс проверки подлинности Microsoft Teams в ботах с примером кода.
 keywords: teams проверка подлинности поток боты
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: f18d5a03ed62b55d162c7e10ba1546e4051f3744
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 3e677c746b4cc548b4f8977dbaf61666c3fa85ce
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111852"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65756872"
 ---
 # <a name="authentication-flow-for-bots-in-microsoft-teams"></a>Поток проверки подлинности для ботов в Microsoft Teams
 
-OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory и многими другими поставщиками удостоверений. Базовое представление OAuth 2.0 является необходимым условием для работы с проверкой подлинности в Teams. [Ниже представлен хороший обзор](https://aaronparecki.com/oauth-2-simplified/), который проще соблюдать, чем [формальную спецификацию](https://oauth.net/2/). Поток проверки подлинности для вкладок и ботов немного отличается — вкладки очень похожи на веб-сайты, поэтому они могут напрямую использовать OAuth 2.0, а боты — нет и должны выполнять несколько вещей по-другому, но основные концепции идентичны.
+OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory и многими другими поставщиками удостоверений. Базовое представление OAuth 2.0 является необходимым условием для работы с проверкой подлинности в Teams. [Ниже представлен хороший обзор](https://aaronparecki.com/oauth-2-simplified/), который проще соблюдать, чем [формальную спецификацию](https://oauth.net/2/). Поток проверки подлинности для вкладок и ботов немного отличается — вкладки похожи на веб-сайты, поэтому они могут использовать OAuth 2.0 напрямую, тогда как боты не выполняют и должны выполнять несколько разных действий по-разному, но основные понятия идентичны.
 
 См. [образец проверки подлинности Microsoft Teams](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-auth/nodejs) репозитория GitHub для примера, демонстрирующего процесс проверки подлинности для ботов с использованием Node.js и [типа предоставления кода авторизации OAuth 2.0](https://oauth.net/2/grant-types/authorization-code/).
 
@@ -55,7 +55,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 | **Название примера** | **Описание** | **Node.js** | **.NET** | **Python** |
 |-----------------|----------------|--------------|----------|-----------|
 | Проверка подлинности Teams | Этот пример иллюстрирует проверку подлинности в приложениях Microsoft Teams. | [View](https://github.com/OfficeDev/microsoft-teams-sample-auth-node) | | |
-| Проверка подлинности бота | В этом примере показано, как использовать проверку подлинности для бота, запущенного в Microsoft Teams | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth)
+| Проверка подлинности бота | В этом примере показано, как использовать проверку подлинности для бота, запущенного в Microsoft Teams | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth)
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

@@ -1,15 +1,14 @@
 ---
 title: Запрос разрешений устройства для приложения Microsoft Teams
-keywords: возможности приложений Teams разрешения устройства встроенный сканер QR-кодов штрихкод изображение аудио видео
-description: Обновление манифеста приложения для запроса доступа к функциям, которые обычно требуют согласия пользователя, таким как сканирование QR-кода, штрихкода, а также возможности работы с изображениями, звуком и видео
-ms.localizationpriority: high
+description: Узнайте, как обновить манифест приложения и запросить доступ к собственным функциям, включая согласие пользователя, расположение, QR-код и штрихкод, изображения, аудио и видео.
+ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: cccf527c3abf3a1674b2d1350dd15633ba35c7a8
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 624a079d7c72f77fac4109d11cde13974359884f
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111964"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757607"
 ---
 # <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений устройства для приложения Microsoft Teams
 
@@ -126,13 +125,13 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 
 Например:
 
-* Чтобы пользователь мог получить доступ к его местоположению, необходимо вызвать `getCurrentPosition()`:
+* Чтобы предложить пользователю получить доступ к его расположению, необходимо вызвать:`getCurrentPosition()`
 
     ```JavaScript
     navigator.geolocation.getCurrentPosition    (function (position) { /*... */ });
     ```
 
-* Чтобы пользователь мог получить доступ к камере на рабочем столе или в Интернете, необходимо вызвать `getUserMedia()`:
+* Чтобы предложить пользователю получить доступ к камере на рабочем столе или в Интернете, необходимо вызвать:`getUserMedia()`
 
     ```JavaScript
     navigator.mediaDevices.getUserMedia({ audio: true, video: true });

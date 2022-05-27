@@ -2,13 +2,13 @@
 title: Отправка идентификатора клиента и идентификатора беседы в заголовки запросов бота
 description: Описывает отправку идентификатора клиента и идентификатора беседы в заголовки запросов бота.
 ms.topic: conceptual
-ms.localizationpriority: high
-ms.openlocfilehash: 9b63dd81eeccbf78989a31a06baa5d678916acef
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.localizationpriority: medium
+ms.openlocfilehash: 8aca2c11dbdfc84abe8c4d0ec40e2748d04f6301
+ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111292"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65757292"
 ---
 # <a name="send-tenant-id-and-conversation-id-to-the-request-headers-of-the-bot"></a>Отправка идентификатора клиента и идентификатора беседы в заголовки запросов бота
 

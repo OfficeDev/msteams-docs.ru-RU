@@ -3,14 +3,14 @@ title: Протестируйте и отладьте бот
 description: Описание тестирования ботов в Microsoft Teams
 keywords: тестирование ботов teams
 ms.topic: how-to
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 03/20/2019
-ms.openlocfilehash: 7eae460614f33456748b2546e36c10924f49b25d
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: a95432ae2e704d6faac51185ce0d971f9f1e15ef
+ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111474"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65755916"
 ---
 # <a name="test-and-debug-your-microsoft-teams-bot"></a>Тестирование и отладка бота Microsoft Teams
 
@@ -55,11 +55,11 @@ ngrok http <port> -host-header=localhost:<port>
 2. Ссылайтесь непосредственно на идентификатор приложения бота из Microsoft Teams:
    * На странице [панели мониторинга бота](https://dev.botframework.com/bots) в разделе **Сведения** скопируйте **идентификатор приложения бота Майкрософт**.
   
-     ![Получение идентификатора приложения для бота](~/assets/images/bots_appid_botframework.png)
+      :::image type="content" source="../../assets/images/bots_appid_botframework.png" alt-text="Панель мониторинга бота":::
   
    * В Microsoft Teams на панели **Чат** выберите значок **Добавить чат**. В поле **Кому** вставьте идентификатор приложения бота Майкрософт.
   
-     ![Загрузка идентификатора приложения для бота](~/assets/images/bots_uploading.png)
+      :::image type="content" source="../../assets/images/bots_uploading.png" alt-text="Загрузка идентификатора приложения для бота"border="true":::
 
      Идентификатор приложения должен соответствовать имени бота.
 
@@ -72,7 +72,7 @@ ngrok http <port> -host-header=localhost:<port>
 
 Обратите внимание, что пользователи могут запретить боту отправлять личные сообщения в чате. Они могут переключить это, щелкнув бот правой кнопкой мыши в канале чата и выбрав **Заблокировать разговор с ботом**. Это означает, что боты будут продолжать отправлять сообщения, но пользователь их не получит.
 
-![Блокировка бота](~/assets/images/bots/botdisable.png)
+  :::image type="content" source="../../assets/images/bots/botdisable.png" alt-text="Блокировка бота"border="true":::
 
 ## <a name="removing-a-bot-from-a-team"></a>Удаление бота из команды
 
