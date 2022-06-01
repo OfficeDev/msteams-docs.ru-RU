@@ -1,15 +1,14 @@
 ---
 title: Документация для разработчиков Microsoft Teams — глоссарий
-description: Глоссарий для документации разработчиков Microsoft Teams
+description: Сведения о терминах, используемых в документации для разработчиков Microsoft Teams
 ms.localizationpriority: high
 ms.topic: reference
-keywords: Определение для разработчиков Microsoft Teams
-ms.openlocfilehash: 54068043d174a79de8a59e0d14b2310e0ae70f32
-ms.sourcegitcommit: 264d3cc84d6eec4ab025cf86a7a6f4865f1aed07
+ms.openlocfilehash: 0762f1f8315d1254e3adb0875655735dcdc0f130
+ms.sourcegitcommit: b7b41ec2a1f022eb15a1980d1b31d22df1170913
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653275"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65795142"
 ---
 # <a name="glossary"></a>Глоссарий
 
