@@ -1,15 +1,14 @@
 ---
 title: Начало работы — обзор
-description: Обзор начала работы с документацией разработчика Microsoft Teams
+description: Эта схема обучения позволяет приступить к работе с документацией разработчика Microsoft Teams, которая познакомит вас с общими инструментами, основными понятиями и расширенными функциями.
 ms.localizationpriority: high
 ms.topic: reference
-keywords: Примеры для разработчиков Microsoft Teams
-ms.openlocfilehash: 9e4405439241de9a4f3db97d256df8b8fab21880
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: a2dc779e24828ce73f9a93498bdcceecbdfe582b
+ms.sourcegitcommit: b7b41ec2a1f022eb15a1980d1b31d22df1170913
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757712"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65795156"
 ---
 # <a name="get-started"></a>Начало работы
 
