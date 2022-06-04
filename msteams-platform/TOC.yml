@@ -381,20 +381,30 @@
   items:
     - name: Обзор
       href: concepts/authentication/authentication.md
-    - name: Настройка поставщиков удостоверений
-      href: concepts/authentication/configure-identity-provider.md
     - name: Вкладки
       items:
-        - name: Поток проверки подлинности во вкладках
-          href: tabs/how-to/authentication/auth-flow-tab.md
-        - name: Использование проверки подлинности Azure AD
-          href: tabs/how-to/authentication/auth-tab-aad.md
-        - name: Использование автоматической проверки подлинности
-          href: tabs/how-to/authentication/auth-silent-aad.md
-        - name: Использование проверки подлинности SSO
-          href: tabs/how-to/authentication/auth-aad-sso.md
-        - name: Использование внешних поставщиков OAuth
-          href: tabs/how-to/authentication/auth-oauth-provider.md
+        - name: Включение единого входа для приложения вкладки
+          items:
+            - name: Обзор
+              href: tabs/how-to/authentication/tab-sso-overview.md
+            - name: Регистрация приложения вкладки в Azure AD
+              href: tabs/how-to/authentication/tab-sso-register-aad.md
+            - name: Добавление кода для включения единого входа
+              href: tabs/how-to/authentication/tab-sso-code.md
+            - name: Обновление манифеста приложения для единого входа и предварительного просмотра
+              href: tabs/how-to/authentication/tab-sso-manifest.md
+            - name: Предоставление разрешений или областей Microsoft Graph
+              href: tabs/how-to/authentication/tab-sso-graph-api.md
+            - name: Устранение неполадок
+              href: tabs/how-to/authentication/tab-sso-troubleshooting.md
+        - name: Использование проверки подлинности стороннего поставщика удостоверений OAuth
+          items:
+            - name: Обзор
+              href: tabs/how-to/authentication/auth-flow-tab.md
+            - name: Настройка проверки подлинности стороннего поставщика удостоверений OAuth
+              href: tabs/how-to/authentication/auth-tab-aad.md
+            - name: Использование внешних поставщиков OAuth
+              href: tabs/how-to/authentication/auth-oauth-provider.md
     - name: Боты
       items:
         - name: Поток аутентификации в ботах
@@ -583,6 +593,8 @@
           href: concepts/build-and-test/apps-localization.md
         - name: Справочные материалы по локализации схемы JSON
           href: resources/schema/localization-schema.md
+    - name: Использование автоматической проверки подлинности
+      href: tabs/how-to/authentication/auth-silent-aad.md
     - name: Атрибут cookie SameSite
       href: resources/samesite-cookie-update.md
     - name: Улучшение документации Teams
