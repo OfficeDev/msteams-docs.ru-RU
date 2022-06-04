@@ -2,14 +2,14 @@
 title: Автоматическая проверка подлинности
 description: Описывает автоматическую проверку подлинности, процедуру единого входа и Azure AD для вкладок
 ms.topic: conceptual
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Вкладка Azure AD "Единый вход для автоматической проверки подлинности Teams"
-ms.openlocfilehash: 699582414a4699a69519e41232e4354d8125337b
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 8cac439b73884703324d45506bce3600f3084031
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111649"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887795"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
@@ -19,7 +19,7 @@ ms.locfileid: "65111649"
 > [!NOTE]
 > Для проверки подлинности на вкладке на мобильных клиентах убедитесь, что вы используете пакет SDK для JavaScript Teams версии 1.4.1 или более поздней.
 
-Автоматическая проверка подлинности в Azure AD минимизирует количество вводов учетных данных пользователем путем незаметного обновления маркера проверки подлинности. Сведения о поддержке единого входа см. в [документации по единому входу](~/tabs/how-to/authentication/auth-aad-sso.md).
+Автоматическая проверка подлинности в Azure AD минимизирует количество вводов учетных данных пользователем путем незаметного обновления маркера проверки подлинности. Сведения о поддержке единого входа см. в [документации по единому входу](~/tabs/how-to/authentication/tab-sso-overview.md).
 
 Чтобы сохранить код на стороне клиента, используйте [библиотеку проверки подлинности Azure AD](/azure/active-directory/develop/active-directory-authentication-libraries) для JavaScript, чтобы автоматически получить маркер доступа Microsoft Azure Active Directory (Azure AD). Если пользователь недавно выполнил вход, всплывающее диалоговое окно не отображается.
 

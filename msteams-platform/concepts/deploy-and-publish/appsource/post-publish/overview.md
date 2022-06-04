@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 844398ded497911f6c30cf732ab01d40b622f7ad
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: cea78b40bbfbe8b309f9e3fa8c05f62404717b33
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757019"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887809"
 ---
 # <a name="maintain-your-published-microsoft-teams-app"></a>Поддержка опубликованного приложения Microsoft Teams
 
@@ -39,7 +39,7 @@ ms.locfileid: "65757019"
 
 ### <a name="app-updates-requiring-user-consent"></a>Обновления приложений, требующие согласия пользователя
 
-При установке вашего приложения пользователь должен предоставить ему разрешение на доступ к службам и информации, нужной для работы. В большинстве случаев пользователям достаточно сделать это один раз, и новые версии приложения будут устанавливаться автоматически.
+При установке вашего приложения пользователь должен предоставить ему разрешение на доступ к службам и информации, нужной для работы. В большинстве случаев пользователи должны сделать это один раз, и новая версия приложения установится автоматически.
 Однако при внесении в приложение любого из нижеперечисленных изменений пользователи должны снова разрешить установку обновления.
 
 * Добавление или удаление бота.

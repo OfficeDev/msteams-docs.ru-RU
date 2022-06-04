@@ -3,12 +3,12 @@ title: Документация для разработчиков Microsoft Team
 description: Сведения о терминах, используемых в документации для разработчиков Microsoft Teams
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 0762f1f8315d1254e3adb0875655735dcdc0f130
-ms.sourcegitcommit: b7b41ec2a1f022eb15a1980d1b31d22df1170913
+ms.openlocfilehash: 333f8e2efe0952d96907f6db2c76ebb688e3777d
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65795142"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887627"
 ---
 # <a name="glossary"></a>Глоссарий
 
@@ -31,7 +31,7 @@ ms.locfileid: "65795142"
 | [Ресурс Azure](../toolkit/provision.md) | Служба, доступная через Azure, которую ваше приложение Teams может использовать для развертывания Azure. Это могут быть учетные записи хранения, веб-приложения, базы данных и т. д. |
 | [Azure Active Directory](../tabs/how-to/authentication/auth-tab-aad.md) | Облачная служба управления идентификацией и доступом Майкрософт. Это помогает прошедшим проверку подлинности пользователям получать доступ к внутренним и внешним ресурсам Azure. |
 | [Проверка подлинности](../concepts/authentication/authentication.md) | Процесс проверки доступа пользователей для использования вашего приложения. Это можно сделать с помощью API Microsoft Graph или веб-проверки подлинности. <br> **См. также**: [поставщики удостоверений](#i); [единый вход](#s) |
-| [Поток проверки подлинности](../concepts/authentication/authentication.md#web-based-authentication-flow) | В Teams существует два потока проверки подлинности для пользователей с целью использования приложения: веб-проверка подлинности и поток OAuthPrompt. |
+| [Поток проверки подлинности](../concepts/authentication/authentication.md) | В Teams существует два потока проверки подлинности для пользователей с целью использования приложения: веб-проверка подлинности и поток OAuthPrompt. |
 
 ## <a name="b"></a>Б
 

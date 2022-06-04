@@ -2,14 +2,14 @@
 title: Поддержка единого входа для ботов
 description: В статье объясняется, как получить маркер пользователя. В настоящее время разработчик бота может использовать карточку входа или службу бота Azure с поддержкой OAuth.
 keywords: токен, маркер пользователя, поддержка единого входа для ботов, разрешение, Microsoft Graph, Azure AD
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 49fac724cea263dac8e1540b0b40f5e3b8d267d8
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: e271296eafc1a4e74865c00cf467c5cb2901146e
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111761"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887599"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входа для ботов
 
@@ -56,7 +56,7 @@ ms.locfileid: "65111761"
 
 ### <a name="register-your-app-through-the-azure-ad-portal"></a>Зарегистрируйте приложение через портал Azure AD
 
-Действия по регистрации приложения на портале Azure AD аналогичны [потоку единого входа для вкладки](../../../tabs/how-to/authentication/auth-aad-sso.md). Ниже приведены инструкции по регистрации приложения.
+Действия по регистрации приложения на портале Azure AD аналогичны [потоку единого входа для вкладки](../../../tabs/how-to/authentication/tab-sso-overview.md). Ниже приведены инструкции по регистрации приложения.
 
 1. Зарегистрируйте новое приложение на [портале регистрации Microsoft Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/?linkid=2083908).
 
@@ -96,7 +96,7 @@ ms.locfileid: "65111761"
    >
    > Необходимо учитывать следующие важные ограничения:
    >
-   > * Поддерживаются только разрешения Microsoft API Graph уровня пользователя, такие как электронная почта, профиль, offline_access и OpenId. Если вам требуется доступ к другим областям Graph, таким как `User.Read` или `Mail.Read`, см. статью [Получение маркера доступа с помощью разрешений Graph](../../../tabs/how-to/authentication/auth-aad-sso.md#get-an-access-token-with-graph-permissions).
+   > * Поддерживаются только разрешения Microsoft API Graph уровня пользователя, такие как электронная почта, профиль, offline_access и OpenId. Если вам нужен доступ к другим областям Microsoft Graph, `User.Read` `Mail.Read`таким как или, см. раздел "Расширение приложения вкладки с помощью разрешений [и области Microsoft Graph"](../../../tabs/how-to/authentication/tab-sso-graph-api.md).
    > * Важно, чтобы доменное имя приложения совпадало с доменным именем, зарегистрированным вами для приложения Azure AD.
    > * В настоящее время множественность доменов для приложения не поддерживается.
    > * Приложения, использующие домен `azurewebsites.net`, не поддерживаются, так как они являются общими и могут быть угрозой безопасности.

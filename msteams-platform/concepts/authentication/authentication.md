@@ -4,62 +4,87 @@ description: Описывает проверку подлинности в Teams
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: вкладки проверка подлинности Teams OAuth SSO Microsoft Azure Active Directory (Azure AD)
-ms.openlocfilehash: 53f258769140a2b40bb59a1232250f74ec693bee
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: db1a16959755668ec9aa298ed355ef657503ca03
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757159"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887760"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
-> [!Note]
-> Для веб-проверки подлинности на мобильных клиентах требуется версия 1.4.1 или более поздняя версия пакета SDK клиента Teams JavaScript.
+Проверка подлинности — это проверка пользователей приложения и защита пользователей приложений от несанкционированного доступа. Вы можете использовать метод проверки подлинности, подходящий для приложения, для проверки пользователей приложения, которые хотят использовать приложение Teams.
 
-Чтобы получить доступ к пользовательским сведениям, защищенным Azure AD, и получить доступ к данным из таких служб, как Facebook и Twitter, приложение устанавливает доверенное соединение с этими поставщиками. Если приложение использует API-интерфейсы Microsoft Graph в области пользователя, выполните проверку подлинности пользователя, чтобы получить соответствующие токены проверки подлинности.
+Выберите добавление проверки подлинности для приложения одним из двух способов:
 
-В Teams для приложения существует два разных потока проверки подлинности. Выполните традиционный поток проверки подлинности через Интернет на [странице содержимого](~/tabs/how-to/create-tab-pages/content-page.md), встроенной во вкладку, страницу конфигурации или модуль задачи. Если приложение содержит бот бесед, используйте поток OAuthPrompt и при желании службу маркеров Azure Bot Framework для проверки подлинности пользователя в ходе беседы.
+- **Включение единого входа (SSO)** в приложении Teams. Единый вход в Teams — это метод проверки подлинности, который использует удостоверение пользователя приложения Teams для предоставления ему доступа к приложению. Пользователю, выполнившего вход в Teams, не нужно повторно вошел в приложение в среде Teams. Если пользователю приложения требуется только согласие, приложение Teams получает сведения о доступе к ним из Azure Active Directory (AD). После того как пользователь приложения предоставил согласие, он может получить доступ к приложению даже с других устройств без повторной проверки.
 
-## <a name="web-based-authentication-flow"></a>Поток проверки подлинности через Интернет
+- **Включение проверки** подлинности с помощью стороннего поставщика OAuth. Вы можете использовать сторонний поставщик удостоверений OAuth (IdP) для проверки подлинности пользователей приложения. Пользователь приложения зарегистрирован в поставщике удостоверений, который имеет отношение доверия с вашим приложением. Когда пользователь пытается войти в систему, поставщик удостоверений проверяет пользователя приложения и предоставляет ему доступ к приложению. Azure AD является одним из таких сторонних поставщиков OAuth. Вы можете использовать другие поставщики, такие как Google, Facebook, GitHub или любой другой поставщик.
 
-Используйте поток проверки подлинности через Интернет для [вкладок](~/tabs/what-are-tabs.md) и выберите его использование с[ ботами бесед](~/bots/what-are-bots.md) или [расширениями сообщений](~/messaging-extensions/what-are-messaging-extensions.md). Испоьзуйте пакет [SDK клиента Microsoft Teams JavaScript](/javascript/api/overview/msteams-client) на странице веб-материалов, чтобы включить проверку подлинности. После включения проверки подлинности вставьте страницу содержимого во вкладку, страницу конфигурации или модуль задачи. Дополнительные сведения о потоке веб-проверки подлинности в следующих разделах:
+## <a name="select-authentication-method"></a>Выбор метода проверки подлинности
 
-* [Добавление проверки подлинности в бот Teamss](~/bots/how-to/authentication/add-authentication.md) описывает, как использовать поток проверки подлинности через Интернет с ботом беседы.
-* [Поток проверки подлинности](~/tabs/how-to/authentication/auth-flow-tab.md) на вкладке описывает, как работает проверка подлинности Teams, где показан типичный веб-поток проверки подлинности, используемый для вкладок.
-* [Проверка подлинности Azure AD на вкладках](~/tabs/how-to/authentication/auth-tab-AAD.md) описывает, как подключиться к Azure AD из вкладки в приложении в Teams.
-* [Автоматическая проверка подлинности Azure AD](~/tabs/how-to/authentication/auth-silent-AAD.md) описывает, как уменьшить количество запросов на вход или согласие в приложении, использующем Azure AD.
-* [.Net, C#](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp), [JavaScript или Node.js](https://github.com/OfficeDev/microsoft-teams-sample-complete-node) предоставляют образцы для веб-проверки подлинности.
+Включите проверку подлинности с помощью единого входа или сторонних поставщиков удостоверений OAuth в приложении вкладок, приложении бота и приложении расширения для обмена сообщениями. Выберите один из двух способов добавления проверки подлинности в приложение:
 
-## <a name="the-oauthprompt-flow-for-conversational-bots"></a>Поток OAuthPrompt для ботов беседы
+:::row:::
+    :::column span="1":::
+        Единый вход
+    :::column-end:::
+    :::column span="1":::
+        &nbsp;
+    :::column-end:::
+    :::column span="1":::
+        OAuth
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        :::image type="content" source="../../assets/images/authentication/tab-sso-icon.png" alt-text="Единый вход для приложения табуляции" link="../../tabs/how-to/authentication/tab-sso-overview.md" border="false":::
+    :::column-end:::
+    :::column span="1":::
+        <br>
 
-OAuthPrompt платформы Azure Bot Framework упрощает проверку подлинности для приложений с помощью ботов бесед. Используйте службу маркеров Azure Bot Framework для кэширования маркеров.
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Приложение tab**  
+        
+    :::column-end:::
+    :::column span="1":::
+        :::image type="content" source="../../assets/images/authentication/tab-app-idp.png" alt-text="Проверка подлинности с помощью стороннего поставщика OAuth для приложения табуляции." link="../../tabs/how-to/authentication/auth-tab-aad.md" border="false":::
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        :::image type="content" source="../../assets/images/authentication/bot-sso-icon.png" alt-text="Единый вход для приложения-бота" link="../../bots/how-to/authentication/auth-aad-sso-bots.md" border="false":::
+    :::column-end:::
+    :::column span="1":::
+        <br>
 
-Подробнее об использовании OAuthPrompt см.:
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Приложение-бот**
+        
+    :::column-end:::
+    :::column span="1":::
+        :::image type="content" source="../../assets/images/authentication/bot-app-idp.png" alt-text="Проверка подлинности с помощью стороннего поставщика OAuth для приложения-бота." link="../../bots/how-to/authentication/add-authentication.md" border="false":::
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        :::image type="content" source="../../assets/images/authentication/mex-sso-icon.png" alt-text="Единый вход для приложения расширения для обмена сообщениями" link="../../messaging-extensions/how-to/enable-SSO-auth-me.md" border="false":::
+    :::column-end:::
+    :::column span="1":::
+        <br>
 
-* [](~/bots/how-to/authentication/auth-flow-bot.md) Общие сведения о потоке проверки подлинности бота описывают работу проверки подлинности в боте в приложении Teams, в котором показан не веб-поток проверки подлинности, используемый для ботов в Teams веб-приложениях, классических приложениях и мобильных приложениях.
-* [Проверка подлинности бота](~/bots/how-to/authentication/add-authentication.md) описывает, как добавить проверку подлинности OAuth в бот Teams.
+        &nbsp;&nbsp; &nbsp; **Приложение расширения сообщения**
+        
+    :::column-end:::
+    :::column span="1":::
+        :::image type="content" source="../../assets/images/authentication/mex-app-idp.png" alt-text="Проверка подлинности с помощью сторонних поставщиков удостоверений oAuth для приложения расширения для обмена сообщениями." link="../../messaging-extensions/how-to/add-authentication.md" border="false":::
+    :::column-end:::
+:::row-end:::
 
-## <a name="code-sample"></a>Пример кода
+> [!NOTE]
+> Страница автоматической проверки подлинности перемещается в модуль "Ресурсы". Дополнительные сведения см. в [разделе "Автоматическая проверка подлинности"](../../tabs/how-to/authentication/auth-silent-aad.md).
 
-предоставляет образец пакета SDK для проверки подлинности бота v3.
+## <a name="see-also"></a>См. также
 
-| **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
-|---------------|------------|------------|-------------|---------------|
-| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
-| Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показан единый вход для tab, Bot и ME — поиск, действие, распакуйте ссылку. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
-
-## <a name="configure-the-identity-provider"></a>Настройка поставщика удостоверений
-
-Независимо от потока проверки подлинности приложения настройте поставщика удостоверений для связи с приложением Teams. Большинство примеров и пошаговых инструкций касаются использования Azure AD в качестве поставщика удостоверений. Однако концепции применяются независимо от поставщика удостоверений.
-
-Подробнее в статье [Настройка поставщика удостоверений](~/concepts/authentication/configure-identity-provider.md).
-
-## <a name="third-party-cookies-on-ios"></a>Сторонние файлы cookie на iOS
-
-После обновления iOS 14 Apple по умолчанию заблокировала доступ [сторонних файлов cookie](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/) для всех приложений. Таким образом, приложения, использующие сторонние файлы cookie для проверки подлинности на вкладке "Канал" или "Чат" и в личных приложениях, не смогут выполнять рабочие процессы проверки подлинности на Teams iOS клиентах. Чтобы соответствовать требованиям конфиденциальности и безопасности, вы должны перейти на систему на основе токенов или использовать собственные файлы cookie для рабочих процессов проверки подлинности пользователей.
-
-## <a name="see-also"></a>Дополнительные ресурсы
-
-* [Проверка подлинности Microsoft Teams для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md)
-* [Поддержка единого входа для ботов](~/bots/how-to/authentication/auth-aad-sso-bots.md)
-* [Добавление проверки подлинности в расширение для сообщений](~/messaging-extensions/how-to/add-authentication.md)
+- [Включение единого входа в приложении табуляции](../../tabs/how-to/authentication/tab-sso-overview.md)
+- [Проверка подлинности Microsoft Teams для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md)
+- [Поддержка единого входа для ботов](~/bots/how-to/authentication/auth-aad-sso-bots.md)
+- [Добавление проверки подлинности в расширение для сообщений](~/messaging-extensions/how-to/add-authentication.md)

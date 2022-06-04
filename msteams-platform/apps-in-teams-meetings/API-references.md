@@ -1,16 +1,16 @@
 ---
 title: Справочные материалы по API приложений для собраний
 author: surbhigupta
-description: Определите ссылки на API приложений для собраний с примерами и примерами кода, чтобы Teams приложения для собраний с ролью участника роли API пользователя, запрос уведомления контекста пользователя.
+description: Определите ссылки на API приложений для собраний с примерами и примерами кода, а также запросом сигнала уведомления о контексте пользователя в API роли участника собрания в приложениях Teams.
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: cb28e893a9c0460290294893800f77c90829edda
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 075801958ccffb9613840995bdda86b6df37d2a3
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756585"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887578"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -53,7 +53,7 @@ API `GetParticipant` должен иметь регистрацию бота и 
 ### <a name="query-parameters"></a>Параметры запроса
 
 > [!TIP]
-> Получите идентификаторы участников и арендаторов на [вкладке проверки подлинности единого входа](../tabs/how-to/authentication/auth-aad-sso.md).
+> Получите идентификаторы участников и арендаторов на [вкладке проверки подлинности единого входа](../tabs/how-to/authentication/tab-sso-overview.md).
 
 API `Meeting` должен иметь `meetingId`, `participantId` и `tenantId` в качестве параметров URL-адреса. Параметры доступны как часть пакета SDK клиента Teams и действия бота.
 
@@ -135,7 +135,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 | Имя свойства | Назначение |
 |---|---|
 | **user.id** | Идентификатор пользователя. |
-| **user.aadObjectId** | Azure Active Directory идентификатор объекта пользователя. |
+| **user.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя. |
 | **user.name** | Имя пользователя. |
 | **user.givenName** | Имя пользователя.|
 | **user.surname** | Фамилия пользователя. |
@@ -406,7 +406,7 @@ GET /v1/meetings/{meetingId}
 | Имя свойства | Назначение |
 |---|---|
 | **details.id** | Идентификатор собрания, закодированный в виде строки BASE64. |
-| **details.msGraphResourceId** | MsGraphResourceId, используемый специально для вызовов MS API Graph. |
+| **details.msGraphResourceId** | Идентификатор MsGraphResourceId, используемый специально для вызовов API MS Graph. |
 | **details.scheduledStartTime** | Запланированное время начала собрания в формате UTC. |
 | **details.scheduledEndTime** | Запланированное время окончания собрания в формате UTC. |
 | **details.joinUrl** | URL-адрес, используемый для присоединения к собранию. |
@@ -487,7 +487,7 @@ API `shareAppContentToStage` позволяет вам делиться опре
 
 ### <a name="prerequisite"></a>Предварительное условие
 
-*  Чтобы использовать API `shareAppContentToStage`, необходимо получить разрешения RSC. В манифесте приложения настройте свойство `authorization` и `name` и `type` в поле `resourceSpecific`. Например:
+* Чтобы использовать API `shareAppContentToStage`, необходимо получить разрешения RSC. В манифесте приложения настройте свойство `authorization` и `name` и `type` в поле `resourceSpecific`. Например:
 
     ```json
     "authorization": {
@@ -501,7 +501,8 @@ API `shareAppContentToStage` позволяет вам делиться опре
     }
     }
     ```
-*  `appContentUrl` должен быть разрешен массивом `validDomains` внутри manifest.json, иначе API возвратит 501.
+
+* `appContentUrl` должен быть разрешен массивом `validDomains` внутри manifest.json, иначе API возвратит 501.
 
 ### <a name="query-parameter"></a>Параметр запроса
 
@@ -818,7 +819,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | **from.id** | Идентификатор пользователя, отправившего запрос. |
 | **from.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
 | **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
-| **conversation.tenantId** | Azure Active Directory клиента беседы или собрания. |
+| **conversation.tenantId** | Идентификатор клиента Azure Active Directory для беседы или собрания. |
 | **conversation.id** | Идентификатор чата собрания. |
 | **recipient.id** | Идентификатор пользователя, который получает запрос. |
 | **recipient.name** | Имя пользователя, который получает запрос. |
@@ -852,7 +853,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 * [Проверка подлинности Microsoft Teams для вкладок](../tabs/how-to/authentication/auth-flow-tab.md)
 * [Приложения для собраний Teams](teams-apps-in-meetings.md)
-* [Live Share SDK](teams-live-share-overview.md)
+* [Пакет SDK Live Share](teams-live-share-overview.md)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

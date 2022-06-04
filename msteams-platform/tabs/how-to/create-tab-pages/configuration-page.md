@@ -6,12 +6,12 @@ keywords: настраиваемый канал группы вкладок Team
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 5352481d30071edb96dae8bf3ec04f15a6e9c8d7
-ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.openlocfilehash: 2ee2a6017ed96d90d205b0a764f5f0fe8b512207
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65672945"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887634"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -245,7 +245,7 @@ document.write(getId());
 
 ### <a name="use-the-getcontext-function-to-retrieve-context"></a>Использование функции `getContext()` для получения контекста
 
-Функция `app.getContext()` возвращает обещание, которое разрешается с [объектом интерфейса контекста](/javascript/api/@microsoft/teams-js/app.context?view=msteams-client-js-latest&preserve-view=true) .
+Функция `app.getContext()` возвращает обещание, которое разрешается с [объектом интерфейса контекста](/javascript/api/@microsoft/teams-js/pages?view=msteams-client-js-latest&preserve-view=true) .
 
 В следующем коде приведен пример добавления этой функции на страницу конфигурации для получения значений контекста.
 
@@ -294,7 +294,7 @@ document.write(getId());
 
 Задайте для свойства манифеста `canUpdateConfiguration` значение `true`. Он позволяет пользователям изменять, перенастраить или переименовывать вкладку канала или группы. Сообщите пользователю о влиянии на содержимое при удалении вкладки. Для этого включите страницу `removeUrl` `setConfig()` параметров удаления в приложение и задайте значение свойства в конфигурации (ранее `setSettings()`). Пользователь может удалить личные вкладки, но не может изменить их. Дополнительные сведения см. в статье [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md).
 
-`setConfig()` Microsoft Teams (ранее`setSettings()`) для страницы удаления:
+Конфигурация Microsoft Teams `setConfig()` (ранее `setSettings()`) для страницы удаления:
 
 # <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
 

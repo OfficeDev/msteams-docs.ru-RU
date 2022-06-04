@@ -4,12 +4,12 @@ description: Описание настройки поставщиков удос
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: проверка подлинности Teams поставщиком удостоверений OAuth от Azure AD
-ms.openlocfilehash: 6ab95958c66fcf680cdab54d3307eab5dc66fa57
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 6fb17041e9169b4d5e74295cbb62ea97c8befd0f
+ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757054"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65887571"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 
@@ -38,5 +38,5 @@ ms.locfileid: "65757054"
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Проверка подлинности пользователя в боте Microsoft Teams](../../resources/bot-v3/bot-authentication/auth-bot-AAD.md)
-* [Поддержка единого входа (SSO) для вкладок](../../tabs/how-to/authentication/auth-aad-sso.md)
+* [Поддержка единого входа (SSO) для вкладок](../../tabs/how-to/authentication/tab-sso-overview.md)
 * [Проверка подлинности пользователя на вкладке Microsoft Teams](../../tabs/how-to/authentication/auth-tab-aad.md)
