@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Microsoft Teams документации разработчика
-summary: Добро пожаловать в обзор документации Microsoft Teams разработчика. Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
+title: Документация для разработчиков Microsoft Teams
+summary: Добро пожаловать в обзор документации для разработчиков Microsoft Teams. Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
 metadata:
-  title: Microsoft Teams документации разработчика
+  title: Документация для разработчиков Microsoft Teams
   description: Общие сведения о создании приложений для Teams
   ms.service: msteams
   ms.subservice: subservice
@@ -12,19 +12,21 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 29c27dd095d3519ff78ed985f365f85999b3ae6e
-  ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+  ms.openlocfilehash: 8f1997bc2a3b51c16f1cd3fa3489bbf6aff6fe93
+  ms.sourcegitcommit: 73e6767127cb27462f819acd71a1e480580bcf83
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/25/2022
-  ms.locfileid: "65673008"
+  ms.lasthandoff: 06/06/2022
+  ms.locfileid: "65906241"
 landingContent:
 - title: 'Microsoft Build 2022 '
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Улучшенная совместная работа с Live Share SDK [предварительная версия для разработчиков]
+    - text: Улучшенная совместная работа с помощью пакета SDK Live Share [предварительная версия для разработчиков]
       url: apps-in-teams-meetings/teams-live-share-overview.md
+    - text: Обновление событий беседы и установки в боте Teams [предварительная версия для разработчиков]
+      url: bots/how-to/conversations/subscribe-to-conversation-events.md
     - text: Отправка приложений с поддержкой Outlook и Office в магазин Teams
       url: m365-apps/overview.md
     - text: Руководство по приложению и новые возможности TeamsJS версии 2.0.0
@@ -39,9 +41,9 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: начало работы с созданием приложений
+    - text: Начало работы с созданием приложений
       url: ../msteams-platform/get-started/get-started-overview.md
-    - text: начало работы GitHub
+    - text: Начало работы с GitHub
       url: /contribute/additional-resources
     - text: Глоссарий
       url: ~/get-started/glossary.md
@@ -55,7 +57,7 @@ landingContent:
       url: sbs-gs-blazorupdate.yml
     - text: Создание приложения с помощью SPFx
       url: sbs-gs-spfx.yml
-    - text: Создание приложения с C# или .NET
+    - text: Создание приложения с помощью C# или .NET
       url: sbs-gs-csharp.yml
     - text: Создание приложения с помощью Node.js
       url: sbs-gs-nodejs.yml
@@ -121,7 +123,7 @@ landingContent:
     links:
     - text: Предоставление разрешений устройству табуляции
       url: ~/sbs-tab-device-permissions.yml
-    - text: Создание Teams беседы
+    - text: Создание бота беседы Teams
       url: ~/sbs-teams-conversation-bot.yml
     - text: Создание бота для звонков и собраний
       url: ~/sbs-calling-and-meeting.yml
@@ -143,7 +145,7 @@ landingContent:
       url: sbs-gs-commandbot.yml
     - text: Создание бота уведомлений с помощью JavaScript
       url: sbs-gs-notificationbot.yml
-    - text: Отправка файлов Teams из бота
+    - text: Отправка файлов в Teams из бота
       url: ~/sbs-file-handling-in-bot.yml
     - text: Создание пузырька содержимого собрания
       url: ~/sbs-meeting-content-bubble.yml
@@ -157,15 +159,15 @@ landingContent:
       url: ~/sbs-outgoing-webhooks.yml
     - text: Распаковка ссылок в Teams с помощью бота
       url: ~/sbs-botbuilder-linkunfurling.yml
-    - text: Создание Teams соединителей
+    - text: Создание соединителей Teams
       url: ~/sbs-teams-connectors.yml
-- title: Teams приложений
+- title: Сценарии приложений Teams
   linkLists:
   - linkListType: reference
     links:
-    - text: Сценарии сборки для Teams приложения
+    - text: Сценарии сборки для приложения Teams
       url: https://adoption.microsoft.com/extensibility-look-book/scenarios/
-    - text: Рекомендации по Teams приложений
+    - text: Рекомендации по сценариям приложений Teams
       url: https://developer.microsoft.com/microsoft-teams/app-development-resources/?filter=bestpractices
     - text: Изучение приложений с низким кодом для Teams
       url: ~/samples/teams-low-code-solutions.md
@@ -177,7 +179,7 @@ landingContent:
       url: ~/concepts/deploy-and-publish/apps-publish-overview.md
     - text: Отправка приложения в Microsoft Teams
       url: ~/concepts/deploy-and-publish/apps-upload.md
-    - text: Публикация в Teams Store
+    - text: Публикация в Магазине Teams
       url: ~/concepts/deploy-and-publish/appsource/publish.md
     - text: Рекомендации по проверке в магазине
       url: ~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md

@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: события бот канал сообщение реакция беседа
-ms.openlocfilehash: d9722ece0edd835213b7a963368c81ab1121c436
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 9234b192788a1449d5da344b271f5028ce7fd110
+ms.sourcegitcommit: 73e6767127cb27462f819acd71a1e480580bcf83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757572"
+ms.lasthandoff: 06/06/2022
+ms.locfileid: "65906276"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -23,10 +23,11 @@ ms.locfileid: "65757572"
 * отправлять приветственное сообщение при добавлении пользователя в команду или его удалении;
 * отправлять уведомление при создании, переименовании или удалении канала;
 * отправлять уведомление, когда пользователь ставит сообщению бота отметку «Нравится».
+* Определите канал по умолчанию для бота из введенных пользователем данных (выбор) во время установки.
 
 ## <a name="conversation-update-events"></a>События обновления беседы
 
-События обновления беседы можно использовать для повышения эффективности уведомлений и действий бота.
+События обновления бесед можно использовать для предоставления улучшенных уведомлений и эффективных действий бота.
 
 > [!IMPORTANT]
 >
@@ -50,8 +51,8 @@ ms.locfileid: "65757572"
 | Канал переименован     | channelRenamed    | OnTeamsChannelRenamedAsync | [Канал переименован](#channel-renamed). | Команда |
 | Канал удален     | ChannelDeleted    | OnTeamsChannelDeletedAsync | [Идет удаление канала](#channel-deleted). | Команда |
 | Канал восстановлен    | channelRestored    | OnTeamsChannelRestoredAsync | [Канал восстанавливается](#channel-deleted). | Команда |
-| Участники добавлены   | membersAdded   | OnTeamsMembersAddedAsync   | [Участник добавляется](#team-members-added). | Все |
-| Элементы удалены | membersRemoved | OnTeamsMembersRemovedAsync | [Элемент удаляется](#team-members-removed). | GroupChat и команда |
+| Участники добавлены   | membersAdded   | OnTeamsMembersAddedAsync   | [Участник добавляется](#members-added). | Все |
+| Элементы удалены | membersRemoved | OnTeamsMembersRemovedAsync | [Элемент удаляется](#members-removed). | Все |
 | Команда переименована        | teamRenamed       | OnTeamsTeamRenamedAsync    | [Идет переименование команды](#team-renamed).       | Команда |
 | Команда удалена        | TeamDeleted       | OnTeamsTeamDeletedAsync    | [Идет удаление команды](#team-deleted).       | Команда |
 | Команда архивирована        | teamArchived       | OnTeamsTeamArchivedAsync    | [Идет архивирование команды](#team-archived).       | Команда |
@@ -60,7 +61,7 @@ ms.locfileid: "65757572"
 
 ### <a name="channel-created"></a>Канал создан
 
-Например, каждый раз при создании нового канала в группе, куда добавлен бот, ему отправляется событие "канал создан".
+Событие `channelCreated` отправляется боту каждый раз, когда в команде, где установлен бот, создается новый канал.
 
 В следующем фрагменте программного кода показан пример события "канал создан".
 
@@ -149,7 +150,7 @@ async def on_teams_channel_created(
 
 ### <a name="channel-renamed"></a>Канал переименован
 
-Например, каждый раз при создании нового канала в группе, куда добавлен бот, ему отправляется событие "канал переименован".
+Событие `channelRenamed` отправляется боту при каждом переименовании канала в команде, в которой установлен бот.
 
 В следующем фрагменте программного кода показан пример события "канал переименован".
 
@@ -231,7 +232,7 @@ async def on_teams_channel_renamed(
 
 ### <a name="channel-deleted"></a>Канал удален
 
-Например, каждый раз при создании нового канала в группе, куда добавлен бот, ему отправляется событие "канал удален".
+Событие `channelDeleted` отправляется боту при каждом удалении канала в команде, где установлен бот.
 
 В следующем фрагменте программного кода показан пример события "канал удален".
 
@@ -315,7 +316,7 @@ async def on_teams_channel_deleted(
 
 ### <a name="channel-restored"></a>Канал восстановлен
 
-Каждый раз при восстановлении ранее удаленного канала в команде, где бот уже установлен, ему отправляется событие "канал восстановлен".
+Это `channelRestored` событие отправляется боту каждый раз, когда удаленный ранее канал восстанавливается в команде, где бот уже установлен.
 
 В следующем фрагменте программного кода показан пример события "канал восстановлен".
 
@@ -402,9 +403,22 @@ async def on_teams_channel_restored(
 
 ---
 
-### <a name="team-members-added"></a>Добавлены участники команды
+### <a name="members-added"></a>Участники добавлены
 
-Событие `teamMemberAdded` отправляется боту при первом добавлении в беседу. Это событие отправляется боту при каждом добавлении нового пользователя в чат группы или группы, где установлен бот. Идентификатор пользователя является уникальным для бота и может быть кэширован для дальнейшего использования службой, например для отправки сообщения конкретному пользователю.
+Событие, добавленное членом, отправляется боту в следующих сценариях:
+
+1. Когда сам бот устанавливается и добавляется в беседу
+
+   > В контексте команды для действия conversation.id `id` канал, выбранный пользователем во время установки приложения, или канал, из которого был установлен бот (в настоящее время доступен в общедоступной предварительной версии [разработчика](../../../resources/dev-preview/developer-preview-intro.md)).
+
+2. При добавлении пользователя в беседу, в которой установлен бот
+
+   > Идентификаторы пользователей, полученные в полезных данных события, являются уникальными для бота и могут быть кэшироваться для использования в будущем, например для непосредственного обмена сообщениями с пользователем.
+
+Добавленное в член действие `eventType` задается `teamMemberAdded` при отправке события из контекста команды. Чтобы определить, был ли добавлен новый член ботом или пользователем, `Activity` проверьте объект .`turnContext` Если список `MembersAdded` содержит объект, который `id` `id` `Recipient` совпадает с полем объекта, добавленный элемент является ботом, в противном случае это пользователь. Бот отформатирован `id` как `28:<MicrosoftAppId>`.
+
+> [!TIP]
+> Используйте это [`InstallationUpdate` событие](#installation-update-event) , чтобы определить, когда бот добавляется или удаляется из беседы.
 
 В следующем фрагменте программного кода показан пример события "участники добавлены".
 
@@ -455,46 +469,58 @@ export class MyBot extends TeamsActivityHandler {
 
 # <a name="json"></a>[JSON](#tab/json)
 
-Это сообщение, которое бот получает при добавлении бота в команду.
+Сообщение, которое бот получает при добавлении бота в команду.
+
+> [!NOTE]
+> В этих полезных данных будет идентификатор канала, `conversation.id` `channelData.settings.selectedChannel.id` выбранного пользователем во время установки приложения или из которого была запущена установка.
 
 ```json
 {
+    "type": "conversationUpdate",
     "membersAdded": [
         {
-            "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0"
+            "id": "28:608cacfd-1cea-40c9-b678-4b93e69bb72b"
         }
     ],
-    "type": "conversationUpdate",
-    "timestamp": "2017-02-23T19:38:35.312Z",
-    "localTimestamp": "2017-02-23T12:38:35.312-07:00",
-    "id": "f:5f85c2ad",
+    "timestamp": "2021-12-07T22:34:56.534Z",
+    "id": "f:0b9079f4-d4d3-3d8e-b883-798298053c7e",
     "channelId": "msteams",
-    "serviceUrl": "https://smba.trafficmanager.net/amer-client-ss.msg/",
+    "serviceUrl": "https://smba.trafficmanager.net/amer/",
     "from": {
-        "id": "29:1I9Is_Sx0OIy2rQ7Xz1lcaPKlO9eqmBRTBuW6XzkFtcjqxTjPaCMij8BVMdBcL9L_RwWNJyAHFQb0TRzXgyQvA"
+        "id": "29:1ljv6N86roXr5pjPrCJVIz6xHh5QxjI....",
+        "aadObjectId": "eddfa9d4-346e-4cce-a18f-fa6261ad776b"
     },
     "conversation": {
         "isGroup": true,
         "conversationType": "channel",
-        "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+        "tenantId": "b28fdbfd-2b78-4f93-b0f8-8881793f0f8f",
+        "id": "19:0b7f32667e064dd9b25d7969801541f4@thread.tacv2",
+        "name": "2021 Test Channel"
     },
     "recipient": {
-        "id": "28:f5d48856-5b42-41a0-8c3a-c5f944b679b0",
-        "name": "SongsuggesterBot"
+        "id": "28:608cacfd-1cea-40c9-b678-4b93e69bb72b",
+        "name": "Test Bot"
     },
     "channelData": {
+        "settings": {
+            "selectedChannel": {
+                "id": "19:0b7f32667e064dd9b25d7969801541f4@thread.tacv2"
+            }
+        },
         "team": {
-            "id": "19:efa9296d959346209fea44151c742e73@thread.skype"
+            "aadGroupId": "f3ec8cd2-e704-4344-8c47-9a3a21d683c0",
+            "name": "TestTeam2022",
+            "id": "19:zFLSDFWsesfzcmKArqKJ-65aOXJz@sgf462H2wz41@thread.tacv2"
         },
         "eventType": "teamMemberAdded",
         "tenant": {
-            "id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+            "id": "b28fdbfd-2b78-4f93-b0f8-8881793f0f8f"
         }
     }
 }
 ```
 
-Это сообщение, которое бот получает при добавлении бота в приватный чат.
+Сообщение, которое бот получает при добавлении бота в чат "один к одному".
 
 ```json
 {
@@ -546,9 +572,15 @@ async def on_teams_members_added(
 
 ---
 
-### <a name="team-members-removed"></a>Участники команды удалены
+### <a name="members-removed"></a>Элементы удалены
 
-Событие `teamMemberRemoved` отправляется боту, если оно удалено из команды. Событие отправляется боту каждый раз, когда любого пользователя удаляют из команды, участником которой является бот. Чтобы определить, был ли только что удаленный участник самим ботом или пользователем, проверьте объект `Activity` из `turnContext`.  Если поле `Id` объекта совпадает `MembersRemoved` `Id` `Recipient` с полем объекта, то удаленный элемент является ботом, в противном случае это пользователь. `Id` бота обычно имеет значение `28:<MicrosoftAppId>`.
+Событие удаления участника отправляется боту в следующих сценариях:
+
+1. Когда сам бот удаляется и удаляется из беседы.
+2. Когда пользователь удаляется из беседы, в которой установлен бот.
+
+Действие, удаляемое членом `eventType` , имеет значение `teamMemberRemoved` , когда событие отправляется из контекста команды. Чтобы определить, был ли только что удаленный участник самим ботом или пользователем, проверьте объект `Activity` из `turnContext`. Если список `MembersRemoved` содержит объект, который `id` `id` `Recipient` совпадает с полем объекта, добавленный элемент является ботом, в противном случае это пользователь. Идентификатор бота отформатирован как `28:<MicrosoftAppId>`.
+
 
 > [!NOTE]
 > При окончательном удалении пользователя из клиента инициируется событие `membersRemoved conversationUpdate`.
@@ -740,7 +772,7 @@ async def on_teams_team_renamed(
 
 ### <a name="team-deleted"></a>Команда удалена
 
-Бот получает уведомление об удалении команды. Он получает событие `conversationUpdate` с `eventType.teamDeleted` в объекте `channelData`.
+Бот получает уведомление при удалении команды. Он получает событие `conversationUpdate` с `eventType.teamDeleted` в объекте `channelData`.
 
 В следующем фрагменте программного кода показан пример события "команда удалена".
 
@@ -1296,6 +1328,15 @@ async def on_reactions_removed(
 
 Используйте событие `installationUpdate` для отправки вводного сообщения от бота при установке. Это событие помогает обеспечить соответствие требованиям к конфиденциальности и хранению данных. При удалении бота можно также очистить и удалить данные пользователя или потока.
 
+`conversationUpdate` Аналогично событию, которое отправляется при добавлении бота в команду, `installationUpdate` conversation.id события задается идентификатор канала, выбранного пользователем во время установки приложения, или канала, в котором была выполнена установка. Идентификатор представляет канал, в котором пользователь планирует работать с ботом, и должен использоваться ботом при отправке приветственного сообщения. В сценариях, где идентификатор канала "Общие" явно требуется, его можно получить из `team.id` .`channelData`
+
+В этом примере для `conversation.id` `conversationUpdate` `installationUpdate` действий и действий будет задано значение идентификатора канала Response в команде Демонстрации Дляайс.
+
+![Создание выбранного канала](~/assets/videos/addteam.gif)
+
+> [!NOTE]
+> Выбранный идентификатор канала `installationUpdate` задается только при добавлении событий, отправляемых при установке приложения в команду (в настоящее время доступно в общедоступной предварительной [версии разработчика](../../../resources/dev-preview/developer-preview-intro.md)).
+
 # <a name="c"></a>[C#](#tab/dotnet)
 
 ```csharp
@@ -1337,56 +1378,58 @@ async onInstallationUpdateActivity(context: TurnContext) {
 # <a name="json"></a>[JSON](#tab/json)
 
 ```json
-{ 
-  "action": "add", 
-  "type": "installationUpdate", 
-  "timestamp": "2020-10-20T22:08:07.869Z", 
-  "id": "f:3033745319439849398", 
-  "channelId": "msteams", 
-  "serviceUrl": "https://smba.trafficmanager.net/amer/", 
-  "from": { 
-    "id": "sample id", 
-    "aadObjectId": "sample Azure AD Object ID" 
-  },
-  "conversation": { 
-    "isGroup": true, 
-    "conversationType": "channel", 
-    "tenantId": "sample tenant ID", 
-    "id": "sample conversation Id@thread.skype" 
-  }, 
-
-  "recipient": { 
-    "id": "sample reciepent bot ID", 
-    "name": "bot name" 
-  }, 
-  "entities": [ 
-    { 
-      "locale": "en", 
-      "platform": "Windows", 
-      "type": "clientInfo" 
-    } 
-  ], 
-  "channelData": { 
-    "settings": { 
-      "selectedChannel": { 
-        "id": "sample channel ID@thread.skype" 
-      } 
-    }, 
-    "channel": { 
-      "id": "sample channel ID" 
-    }, 
-    "team": { 
-      "id": "sample team ID" 
-    }, 
-    "tenant": { 
-      "id": "sample tenant ID" 
-    }, 
-    "source": { 
-      "name": "message" 
-    } 
-  }, 
-  "locale": "en" 
-}
+{
+    {
+    "type": "installationUpdate",
+    "id": "f:816eb23d-bfa1-afa3-dfeb-d2aa338e9541",
+    "timestamp": "2021-11-09T04:47:30.91Z",
+    "serviceUrl": "https://smba.trafficmanager.net/amer/",
+    "channelId": "msteams",
+    "from": {
+        "id": "29:1ljv6N86roXr5pjPrCJVIz6xHh5QxjI....",
+        "aadObjectId": "eddfa9d4-346e-4cce-a18f-fa6261ad776b"
+    },
+    "recipient": {
+        "id": "28:608cacfd-1cea-40c9-b678-4b93e69bb72b",
+        "name": "Test Bot"
+    },
+    "locale": "en-US",
+    "entities": [
+        {
+            "type": "clientInfo",
+            "locale": "en-US"
+        }
+    ],
+    "conversation": {
+        "isGroup": true,
+        "id": "19:0b7f32667e064dd9b25d7969801541f4@thread.tacv2",
+        "name": "2021 Test Channel",
+        "conversationType": "channel",
+        "tenantId": "b28fdbfd-2b78-4f93-b0f8-8881793f0f8f"
+    },
+    "channelData": {
+        "settings": {
+            "selectedChannel": {
+                "id": "19:0b7f32667e064dd9b25d7969801541f4@thread.tacv2"
+            }
+        },
+        "channel": {
+            "id": "19:0b7f32667e064dd9b25d7969801541f4@thread.tacv2"
+        },
+        "team": {
+            "aadGroupId": "da849743-4259-475f-ae7a-4f4b0fb49943",
+            "name": "TestTeam2022",
+            "id": "19:zFLSDFWsesfzcmKArqKJ-65aOXJz@sgf462H2wz41@thread.tacv2"
+        },
+        "tenant": {
+            "id": "b28fdbfd-2b78-4f93-b0f8-8881793f0f8f"
+        },
+        "source": {
+            "name": "message"
+        }
+    },
+    "action": "add"
+    }
 ```
 
 # <a name="python"></a>[Python](#tab/python)
@@ -1403,13 +1446,13 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 ## <a name="uninstall-behavior-for-personal-app-with-bot"></a>Поведение при удалении для личного приложения с ботом
 
-При удалении приложения бот также удаляется. Отправив сообщение вашему приложению, пользователь получает код ответа 403. Бот получает код 403 в качестве ответа на новые сообщения, опубликованные им самим. Поведение после удаления ботов в области личного чата теперь согласовано с поведением в аналогичной ситуации в областях Teams и группового чата. После удаления приложения ни отправка, ни получение сообщений невозможны.
+При удалении приложения бот также удаляется. Отправив сообщение вашему приложению, пользователь получает код ответа 403. Бот получает код 403 в качестве ответа на новые сообщения, опубликованные им самим. Поведение после удаления ботов в области личного чата теперь согласовано с поведением в аналогичной ситуации в областях Teams и группового чата. Вы не можете отправлять и получать сообщения после удаления приложения.
 
 :::image type="content" source="../../../assets/images/bots/uninstallbot.png" alt-text="Код ответа удаления"lightbox="../../../assets/images/bots/uninstallbot.png"border="true":::
 
 ## <a name="event-handling-for-install-and-uninstall-events"></a>Обработка событий установки и удаления
 
-Когда вы используете эти события установки и удаления, в некоторых случаях боты делают исключения при получении неожиданных событий от Teams. Это происходит в следующих случаях:
+При использовании этих событий установки и удаления существуют некоторые случаи, когда боты создают исключения при получении непредвиденных событий из Teams, что происходит в следующих случаях:
 
 * Вы создаете бот без Microsoft Bot Framework SDK, и в результате бот выдает исключение при получении непредвиденного события.
 * Вы создаете бот с помощью Microsoft Bot Framework SDK и решаете изменить обработку события по умолчанию путем переопределения базового дескриптора события.
@@ -1420,7 +1463,7 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 
