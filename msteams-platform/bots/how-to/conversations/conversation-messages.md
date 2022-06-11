@@ -5,12 +5,12 @@ ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
 keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 1b3f5784161295aa31a723e3ca6b0a08f21afb76
-ms.sourcegitcommit: f7d0e330c96e00b2031efe6f91a0c67ab0976455
+ms.openlocfilehash: 1704ff5fcbff177651a8ff6fec952fb76aa1a44c
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65611460"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66033017"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -243,7 +243,7 @@ async def on_members_added_activity(
 | Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
 | Форматированный текст  | ✔                | ✔                | Бот может отправлять форматированный текст, изображения и карточки. Пользователи могут отправлять боту форматированный текст и изображения.                                                                                        |
-| Изображения  | ✔                | ✔                | Максимум 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF-файл не поддерживается.  |
+| Изображения  | ✔                | ✔                | Максимум 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.  |
 | Карточки     | ✖                | ✔                | Сведения о [поддерживаемых Teams](~/task-modules-and-cards/cards/cards-reference.md) см. в справочнике по Teams карточки. |
 | Эмодзи    | ✔                | ✔                | Teams в настоящее время поддерживает эмодзи через UTF-16, например U+1F600 для усинхронного распознавания лиц. |
 
@@ -333,7 +333,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 Картинки отправляются путем добавления вложений к сообщению. Дополнительные сведения о вложениях см. в [разделе "Добавление вложений мультимедиа в сообщения"](/azure/bot-service/dotnet/bot-builder-dotnet-add-media-attachments).
 
-Изображения могут иметь не более 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. Анимированный GIF-файл не поддерживается.
+Изображения могут иметь не более 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.
 
 Укажите высоту и ширину каждого изображения с помощью XML. В markdown размер изображения по умолчанию — 256×256. Например:
 
@@ -382,13 +382,31 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 * **Успешно**. Когда ответ, отправленный боту, будет успешно отправлен, появится ваш ответ **на сообщение** приложения.
 
-:::image type="content" source="../../../assets/images/Cards/success.PNG" alt-text="Сообщение об успешном выполнении"border="true":::
+     :::image type="content" source="../../../assets/images/Cards/success.PNG" alt-text="Сообщение об успешном выполнении"border="true":::
 
-Вы можете закрыть **или** переключить чат, чтобы закрыть сообщение.
+     Вы можете закрыть **или** переключить чат, чтобы закрыть сообщение.
 
-**Ответ на мобильных устройствах**:
-
-Сообщение об ошибке отображается в нижней части адаптивной карточки.
+     Если вы не хотите отображать сообщение об успешном выполнении, `hide` задайте атрибут в `true` свойстве `msTeams` `feedback` . Ниже приведен пример:
+    
+     ```json
+        "content": {
+            "type": "AdaptiveCard",
+            "title": "Card with hidden footer messages",
+            "version": "1.0",
+            "actions": [
+            {
+                "type": "Action.Submit",
+                "title": "Submit",
+                "msTeams": {
+                    "feedback": {
+                    "hide": true
+                    }
+                }
+            }
+            ]
+        } 
+     ```
+    
 
 Дополнительные сведения о карточках и карточках в ботах см. в [документации по карточкам](~/task-modules-and-cards/what-are-cards.md).
 
@@ -411,7 +429,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

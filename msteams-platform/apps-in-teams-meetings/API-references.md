@@ -1,16 +1,16 @@
 ---
 title: Справочные материалы по API приложений для собраний
 author: surbhigupta
-description: Определите ссылки на API приложений для собраний с примерами и примерами кода, а также запросом сигнала уведомления о контексте пользователя в API роли участника собрания в приложениях Teams.
+description: Определите ссылки на API приложений для собраний с примерами и примерами кода, чтобы Teams приложения для собраний с ролью участника роли API пользователя, запрос уведомления контекста пользователя.
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: 075801958ccffb9613840995bdda86b6df37d2a3
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.openlocfilehash: 5b53b85ef2831261d493302dec3aed8a82910f5d
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65887578"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032790"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -135,7 +135,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 | Имя свойства | Назначение |
 |---|---|
 | **user.id** | Идентификатор пользователя. |
-| **user.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя. |
+| **user.aadObjectId** | Azure Active Directory идентификатор объекта пользователя. |
 | **user.name** | Имя пользователя. |
 | **user.givenName** | Имя пользователя.|
 | **user.surname** | Фамилия пользователя. |
@@ -406,7 +406,7 @@ GET /v1/meetings/{meetingId}
 | Имя свойства | Назначение |
 |---|---|
 | **details.id** | Идентификатор собрания, закодированный в виде строки BASE64. |
-| **details.msGraphResourceId** | Идентификатор MsGraphResourceId, используемый специально для вызовов API MS Graph. |
+| **details.msGraphResourceId** | MsGraphResourceId, используемый специально для вызовов MS API Graph. |
 | **details.scheduledStartTime** | Запланированное время начала собрания в формате UTC. |
 | **details.scheduledEndTime** | Запланированное время окончания собрания в формате UTC. |
 | **details.joinUrl** | URL-адрес, используемый для присоединения к собранию. |
@@ -540,7 +540,7 @@ microsoftTeams.meeting.shareAppContentToStage((err, result) => {
 
 ## <a name="get-app-content-stage-sharing-state-api"></a>Получить состояние обмена сцены содержимого приложения API
 
-API `getAppContentStageSharingState`позволяет получать информацию о совместном использовании приложений на сцене собрания.
+API `getAppContentStageSharingState` позволяет получать сведения о совместном использовании приложений на этапе собрания как для мобильных, так и для настольных компьютеров.
 
 ### <a name="query-parameter"></a>Параметр запроса
 
@@ -819,7 +819,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | **from.id** | Идентификатор пользователя, отправившего запрос. |
 | **from.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
 | **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
-| **conversation.tenantId** | Идентификатор клиента Azure Active Directory для беседы или собрания. |
+| **conversation.tenantId** | Azure Active Directory клиента беседы или собрания. |
 | **conversation.id** | Идентификатор чата собрания. |
 | **recipient.id** | Идентификатор пользователя, который получает запрос. |
 | **recipient.name** | Имя пользователя, который получает запрос. |

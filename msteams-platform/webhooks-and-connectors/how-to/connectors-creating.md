@@ -6,12 +6,12 @@ keywords: Соединитель Office 365 в Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 3258e6b08041abbfcd3e0b9a4365d6a31f884e0b
-ms.sourcegitcommit: 09ee0305b827ad6d1368d892db3824c5dbad886f
+ms.openlocfilehash: 2d711821d2b76b4cc2fd93a6d28cd5061129222e
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759664"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032954"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -127,7 +127,7 @@ ms.locfileid: "65759664"
 #### <a name="getsettings-response-properties"></a>Свойства ответа `GetSettings`
 
 >[!NOTE]
->Параметры, возвращаемые вызовом `getSettings`, отличаются при вызове этого метода из вкладки и отличаются от задокументированных в [параметрах js](/javascript/api/%40microsoft/teams-js/settings.settings?view=msteams-client-js-latest&preserve-view=true).
+>Параметры, возвращаемые вызовом `getSettings`, отличаются при вызове этого метода из вкладки и отличаются от задокументированных в [параметрах js](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings).
 
 В следующей таблице представлены параметры и сведения о свойствах ответа `GetSetting`:
 

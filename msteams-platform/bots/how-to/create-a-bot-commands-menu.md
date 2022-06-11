@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: командное меню создание сообщений беседа @упоминание
-ms.openlocfilehash: 6d61b7566dd0dcb25fae94bf43f2f19bd219e9b0
-ms.sourcegitcommit: ff31cbe4840191f004d8fc61dd4fd93d35fcaecb
+ms.openlocfilehash: 524ecb9ee829292487cc0e6c45604d4c241967c8
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65938942"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032968"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -21,11 +21,11 @@ ms.locfileid: "65938942"
 
 # <a name="desktop"></a>[Компьютер](#tab/desktop)
 
-![Меню команд бота](./conversations/media/bot-menu-sample.png)
+:::image type="content" source="conversations/Media/bot-menu-sample.png" alt-text="Bot-command-menu":::
 
 # <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-![Меню команд мобильного бота](./conversations/media/mobile-bot-menu-sample.png)
+:::image type="content" source="conversations/Media/mobile-bot-menu-sample.png" alt-text="Mobile-bot-command-menu":::
 
 * * *
 
@@ -40,11 +40,11 @@ ms.locfileid: "65938942"
 **Создание командного меню для бота с помощью App Studio**
 
 1. Откройте Teams и выберите **Приложения** в левой области. На странице **Приложения** найдите **App Studio** и выберите **Открыть**.
-    
+
    > [!WARNING]
    > Если вы до сих пор использовали App Studio, рекомендуем попробовать Портал разработчика для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
 
-   :::image type="content" source="/media/AppStudio.png" alt-text="Установка App Studio"lightbox="media/AppStudio.png"border="true":::
+   :::image type="content" source="conversations/Media/AppStudio.png" alt-text="appstudio-media":::
 
 2. В **App Studio** перейдите на вкладку **редактора манифеста**. Если у вас еще нет пакета приложения, можно создать приложение или импортировать существующее. Подробнее см. в статье [Обновление пакета приложения](~/get-started/deploy-csharp-app-studio.md).
 
@@ -52,7 +52,7 @@ ms.locfileid: "65938942"
 
 4. В **редакторе манифеста** на панели справа и в разделе **Команды** выберите **Добавить**. Будет отображен экран **Новая команда**.
 
-    :::image type="content" source="/media/AppStudio-CommandMenu-Add.png" alt-text="Выбор файла пакета приложения"lightbox="/media/AppStudio-CommandMenu-Add.png"border="true":::
+   :::image type="content" source="media/AppStudio-CommandMenu-Add.png" alt-text="Выбор файла пакета приложения" lightbox="media/AppStudio-CommandMenu-Add.png "border="true":::
 
 5. Введите **текст команды**, который будет показан в меню команд для бота.
 
@@ -60,7 +60,7 @@ ms.locfileid: "65938942"
 
 7. Установите флажки **области**, чтобы выбрать место, где будет показано командное меню, и нажмите кнопку **Сохранить**.
 
-:::image type="content" source="/media/AppStudio-NewCommandMenu.png" alt-text="Кнопка меню новых команд в App Studio"lightbox="/media/AppStudio-NewCommandMenu.png"border="true":::
+   :::image type="content" source="media/AppStudio-NewCommandMenu.png" alt-text="Кнопка меню &quot;Новые команды&quot; в App Studio "lightbox="media/AppStudio-NewCommandMenu.png "border="true":::
 
 ### <a name="create-a-command-menu-for-your-bot-by-editing-manifestjson"></a>Создание командного меню для бота путем редактирования Файла Manifest.json
 

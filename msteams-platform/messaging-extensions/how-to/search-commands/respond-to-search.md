@@ -5,12 +5,12 @@ description: Узнайте, как реагировать на команду �
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: f02db887a83965eeaac9e905fd20b34f79b34a68
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 9e7dbfb6eed724fb56e7ae1e03a2132d7450947a
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111936"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032804"
 ---
 # <a name="respond-to-search-command"></a>Ответ на команду поиска
 
@@ -86,7 +86,7 @@ class TeamsMessagingExtensionsSearch extends TeamsActivityHandler {
 |Имя свойства|Назначение|
 |---|---|
 |`composeExtension`|Конверт ответа верхнего уровня.|
-|`composeExtension.type`|Тип ответа. Поддерживаются следующие типы: <br>`result`: отображает список результатов поиска. <br>`auth`: запрашивает у пользователя проверку подлинности. <br>`config`: запрашивает у пользователя настройку расширения сообщения. <br>`message`: отображает простое текстовое сообщение. |
+|`composeExtension.type`|Тип ответа. Поддерживаются следующие типы: <br>`result`: отображает список результатов поиска. <br>`auth`: предлагает пользователю выполнить проверку подлинности. <br>`config`: предлагает пользователю настроить расширение сообщения. <br>`message`: отображает простое текстовое сообщение. |
 |`composeExtension.attachmentLayout`|Задает макет вложений. Используется для ответов типа `result`. <br>В настоящее время поддерживаются следующие типы: <br>`list`: список объектов карточек, содержащих эскизы, заголовки и текстовые поля. <br>`grid`: сетка эскизов изображений |
 |`composeExtension.attachments`|Массив допустимых объектов вложений. Используется для ответов типа `result`. <br>В настоящее время поддерживаются следующие типы: <br>`application/vnd.microsoft.card.thumbnail` <br>`application/vnd.microsoft.card.hero` <br>`application/vnd.microsoft.teams.card.o365connector` <br>`application/vnd.microsoft.card.adaptive`|
 |`composeExtension.suggestedActions`|Предлагаемые действия. Используется для ответов типа или `auth` `config`. |
@@ -414,16 +414,16 @@ async handleTeamsMessagingExtensionSelectItem(context, obj) {
 
 ## <a name="code-sample"></a>Пример кода
 
-| Имя образца           | Описание | .NET    | Node.js   |
+| Название примера           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Teams расширения сообщения| Описывает, как определить команды действий, создать модуль задач и реагировать на действие отправки модуля задачи. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
-|Teams расширения сообщения   |  Описывает, как определить команды поиска и реагировать на поисковые запросы.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
+|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Добавление проверки подлинности в расширение сообщения](~/messaging-extensions/how-to/add-authentication.md)
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Добавление конфигурации в расширение сообщения](~/get-started/first-message-extension.md)

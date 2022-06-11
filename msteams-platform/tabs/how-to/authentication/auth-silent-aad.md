@@ -4,17 +4,17 @@ description: Описывает автоматическую проверку п
 ms.topic: conceptual
 ms.localizationpriority: medium
 keywords: Вкладка Azure AD "Единый вход для автоматической проверки подлинности Teams"
-ms.openlocfilehash: 8cac439b73884703324d45506bce3600f3084031
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.openlocfilehash: 50d5d5327ee31286c7124f23b8fd4c8b07c71639
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65887795"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66033024"
 ---
 # <a name="silent-authentication"></a>Автоматическая проверка подлинности
 
 > [!IMPORTANT]
-> Поддержка и разработка библиотек проверки подлинности Active Directory (ADAL) со стороны Майкрософт, включая исправления в области безопасности, заканчивается **30 июня 2022 г**. Обновите приложения для использования библиотеки проверки подлинности Майкрософт (MSAL), чтобы продолжить получать поддержку. См. [Перенос приложений в библиотеку проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-migration).
+> Поддержка и разработка библиотек проверки подлинности Active Directory (ADAL) со стороны Майкрософт, включая исправления в области безопасности, заканчивается **30 июня 2022 г**. Чтобы продолжить получать поддержку, обновите приложения, чтобы использовать библиотеку проверки подлинности Майкрософт (MSAL). См [. раздел "Перенос приложений в библиотеку проверки подлинности Майкрософт (MSAL)"](/azure/active-directory/develop/msal-migration).
 
 > [!NOTE]
 > Для проверки подлинности на вкладке на мобильных клиентах убедитесь, что вы используете пакет SDK для JavaScript Teams версии 1.4.1 или более поздней.

@@ -5,12 +5,12 @@ description: Узнайте, как развернуть ссылку, откр�
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: medium
-ms.openlocfilehash: 08df4cfccf6d9fabad1e07736796d6728d7c527c
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 2471a375960e47e31c6f35966a9ad2fba7007e99
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756739"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66033038"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Развертывание ссылок вкладок и представление "Экран"
 
@@ -87,7 +87,7 @@ ms.locfileid: "65756739"
 * Бот отвечает кодом `200`.
 
 > [!NOTE]
-> В мобильных клиентах Teams вызов представления Stage для приложений, распространяемых через [Teams store](/platform/concepts/deploy-and-publish/apps-publish-overview.md) и не оптимизированных для мобильных устройств, открывает веб-браузер устройства по умолчанию. Браузер открывает URL-адрес, указанный в параметре `websiteUrl` объекта `TabInfo`.
+> В мобильных клиентах Teams вызов представления Stage для приложений, распространяемых через [Teams store](/microsoftteams/platform/concepts/deploy-and-publish/apps-publish-overview) и не оптимизированных для мобильных устройств, открывает веб-браузер устройства по умолчанию. Браузер открывает URL-адрес, указанный в параметре `websiteUrl` объекта `TabInfo`.
 
 ## <a name="invoke-stage-view-through-deep-link"></a>Вызов представления "Экран" через прямую ссылку
 
@@ -146,7 +146,7 @@ https://teams.microsoft.com/l/stage/43f56af0-8615-49e6-9635-7bea3b5802c2/0?conte
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка в представлении "Экран" |Пример приложения со вкладкой Microsoft Teams для демонстрации вкладки в представлении "Экран".|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
+|Вкладка в представлении "Экран" |Пример приложения со вкладкой Microsoft Teams для демонстрации вкладки в представлении "Экран".|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
 

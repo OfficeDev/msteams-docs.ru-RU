@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: событие канала согласия с карточкой бота платформы обработчика действий
-ms.openlocfilehash: 5b03eeaa01231fd070c1e81fc11b9254e10aba91
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 8bf1638274c8d83c8483df13556927d98b4d8cb5
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757432"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032923"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 
@@ -24,6 +24,9 @@ ms.locfileid: "65757432"
 Обработчик действий Teams является производным от обработчика действий Microsoft Bot Framework. Он перенаправляет все действия Teams, прежде чем разрешит обработку любых действий, не относящихся к Teams.
 
 Когда бот для Teams получает действие, оно направляется в обработчики действий. Все действия перенаправляются через один базовый обработчик, называемый обработчиком поворота. Обработчик поворота вызывает необходимый обработчик действий для управления полученными действиями. Бот Teams является производным от класса `TeamsActivityHandler`, который является производным от класса `ActivityHandler`.
+
+> [!NOTE]
+> Если обработка действия бота занимает более 15 секунд, Teams отправить запрос на повторную попытку в конечную точку бота. Таким образом, в боте будут отображаться повторяющиеся запросы.
 
 # <a name="c"></a>[C#](#tab/csharp)
 

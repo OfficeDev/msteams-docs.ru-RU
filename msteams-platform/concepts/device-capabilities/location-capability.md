@@ -6,12 +6,12 @@ keywords: собственные разрешения устройства дл�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: d143cdd0e94664d916bd5eefa7523d92e2af183a
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: ff2403331d3d51581be4711fb6fb14fcdb809544
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757173"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66033052"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения
 
@@ -58,7 +58,7 @@ ms.locfileid: "65757173"
 |[showLocation](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#showLocation_Location___error__SdkError__status__boolean_____void_&preserve-view=true) | Отображает местонахождение на карте. |
 
 > [!NOTE]
-> API `getLocation()` поставляется со следующими [конфигурациями ввода](/javascript/api/@microsoft/teams-js/locationprops?view=msteams-client-js-latest&preserve-view=true): `allowChooseLocation` и `showMap`. <br/> Если значением `allowChooseLocation` является *true*, пользователи могут выбрать любое местонахождение.<br/>  Если значение равно *false*, пользователи не могут изменить свое текущее местонахождение.<br/> Если значением `showMap` является *false*, текущее местонахождение извлекается без отображения карты. `showMap` игнорируется, если для `allowChooseLocation` установлено значение *true*.
+> API `getLocation()` поставляется со следующими [конфигурациями ввода](/javascript/api/@microsoft/teams-js/microsoftteams.location.locationprops): `allowChooseLocation` и `showMap`. <br/> Если значением `allowChooseLocation` является *true*, пользователи могут выбрать любое местонахождение.<br/>  Если значение равно *false*, пользователи не могут изменить свое текущее местонахождение.<br/> Если значением `showMap` является *false*, текущее местонахождение извлекается без отображения карты. `showMap` игнорируется, если для `allowChooseLocation` установлено значение *true*.
 
 На следующем изображении показан интерфейс веб-приложения с функциями местонахождения.
 
