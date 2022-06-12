@@ -5,12 +5,12 @@ ms.topic: how-to
 author: surbhigupta
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: c1eacf5b023b5bb4bfc9ec243ed8beebcb0a5220
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: df9f38be8202f9b982292847a7cfcc982e72fcb5
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756795"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032818"
 ---
 # <a name="upload-your-app-in-microsoft-teams"></a>Отправка приложения в Microsoft Teams
 
@@ -19,6 +19,9 @@ ms.locfileid: "65756795"
 * Вы хотите протестировать и отладить приложение локально или с другими разработчиками.
 * Вы создали приложение для себя, чтобы автоматизировать рабочий процесс.
 * Вы создали приложение для небольшого набора пользователей, например рабочей группы.
+
+> [!NOTE]
+> При многократной загрузке неопубликованного приложения отображается несколько экземпляров расширений для сообщений.
 
 > [!IMPORTANT]
 > В настоящее время загрузка неопубликованного приложения доступна в облаке сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).

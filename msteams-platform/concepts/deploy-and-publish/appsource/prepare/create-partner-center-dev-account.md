@@ -5,12 +5,12 @@ ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 7d5e6d4d345f94e893a494c6dea2e719aece9da6
-ms.sourcegitcommit: ef582a5ac33e815854d58f2f1faeb06aa2d761ae
+ms.openlocfilehash: f83083524a4d49761e6c69683b66d34a0988d789
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65443903"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66033031"
 ---
 # <a name="create-a-partner-center-developer-account"></a>Создание учетной записи разработчика Центра партнеров
 
@@ -208,17 +208,23 @@ ms.locfileid: "65443903"
 
 </details>
 
-## <a name="update-apple-developer-id-on-partner-center"></a>Обновление идентификатора разработчика Apple в Центре партнеров
+## <a name="update-apple-app-store-connect-team-id-on-partner-center"></a>Обновление идентификатора команды App Store Connect в Центре партнеров
 
-Чтобы пользователи могли устанавливать ваше приложение на платформе Teams для iOS, необходимо обновить ваш идентификатор разработчика Apple в Центре партнеров Майкрософт. Чтобы обновить идентификатор разработчика Apple, выполните следующие действия.
+Чтобы пользователи могли устанавливать ваше приложение на платформе Teams для iOS, необходимо обновить ваш идентификатор команды Apple App Store Connect в Центре партнеров Майкрософт. Чтобы обновить идентификатор команды Apple App Store Connect, выполните следующие действия.
 
 1. Войдите в [Центр партнеров Майкрософт](https://partner.microsoft.com/dashboard/home), используя учетные данные глобального администратора.
 1. Щелкните значок параметров в правом верхнем углу страницы.
 1. Перейдите в раздел **Юридические сведения** в области **Профиль организации** на панели слева.
 1. Перейдите на вкладку **Разработчик**.
-1. Введите идентификатор разработчика Apple.
+1. Введите ваш идентификатор команды Apple App Store Connect.
 1. Перейдите на страницу предложения и повторно опубликуйте приложение Teams.
-   Теперь идентификатор разработчика Apple обновлен в Центре партнеров Майкрософт.
+   Теперь идентификатор команды Apple App Store Connect обновлен и пользователи могут установить ваше приложение на платформе Teams для iOS.
+
+Чтобы получить идентификатор команды Apple App Store Connect на портале разработчиков Apple, выполните следующие действия.
+
+1. Войдите в [Центр разработчиков Apple](https://developer.apple.com/).
+1. Выберите **Учетная запись** и перейдите к разделу **Членство**.
+1. **Идентификатор команды Apple App Store Connect** находится в разделе **Членство**.
 
 ## <a name="next-step"></a>Следующий этап
 

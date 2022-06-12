@@ -3,12 +3,12 @@ title: Новые возможности для разработчиков в Te
 description: Узнайте о новых функциях разработчика и улучшениях этих функций в Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 267f8a00994a066c9eb7a32669a816a452a7af70
-ms.sourcegitcommit: 73e6767127cb27462f819acd71a1e480580bcf83
+ms.openlocfilehash: 90361f12d3aa327ca0cab3eca9c87ff44b947f94
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2022
-ms.locfileid: "65906290"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032982"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -47,6 +47,7 @@ ms.locfileid: "65906290"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 08.06.2022 | Необязательный отзыв карточки для сообщения об успешном выполнении| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
 | 03.06.2022 | Обновлен модуль добавления проверки подлинности для включения единого входа для приложения с вкладками с новой структурой и процедурами. | Добавить проверку подлинности > Вкладки > [Включить единый вход в приложении с вкладками](tabs/how-to/authentication/tab-sso-overview.md) |
 | 24.05.2022 | Дополнительные советы по быстрому утверждению публикации приложения, связанного с предложением SaaS | Публикация в Teams Store > Обзор > [Дополнительные советы по быстрому утверждению публикации приложения, связанного с предложением SaaS](~/concepts/deploy-and-publish/appsource/publish.md#additional-tips-for-rapid-approval-to-publish-your-app-linked-to-a-saas-offer) |
 | 24.05.2022 | Отправка приложений с поддержкой Outlook и Office в магазин Teams | Расширение приложения в Microsoft 365 > [Обзор](m365-apps/overview.md) |

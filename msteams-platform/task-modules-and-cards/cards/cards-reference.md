@@ -4,12 +4,12 @@ description: Описание всех карточек и действий ка
 ms.localizationpriority: high
 keywords: справочные материалы о карточках для ботов
 ms.topic: reference
-ms.openlocfilehash: 33df4c45aa613ec79c4380850043d373f2d5863d
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 56dc77dfbb9d7d67d5846db13eca7351636814af
+ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757201"
+ms.lasthandoff: 06/11/2022
+ms.locfileid: "66032993"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -21,13 +21,15 @@ ms.locfileid: "65757201"
 
 Создание карточки главного имиджевого баннера, карточки эскиза или адаптивной карточки в App Studio:
 
-1. Перейдите в **App Studio** из Teams.
-1. Выберите **Редактор карточек**.
-1. Выберите **Создать новую карточку**.
-1. Выберите **Создать** для элемента **Карточка главного имиджевого баннера**, **Карточка эскиза** или **Адаптивная карточка**. Для этой карточки показаны сведения о метаданных, кнопках и json, csharp и примеры кода node.
+1. Перейдите на [портал разработчика Teams](https://dev.teams.microsoft.com/home).
+1. Выберите **Проектирование и сборка адаптивных карточек**.
+1. Выберите **Создать карточку**.
+1. Введите имя карточки и нажмите **Сохранить**.
+1. Выберите одну из карточек: **Карточка главного имиджевого баннера**, **Карточка эскиза** или **Адаптивная карточка**.
 
-    :::image type="content" source="../../assets/images/Cards/Herocarddetails.png" alt-text="Сведения о карточке главного имиджевого баннера":::
+   :::image type="content" source="../../assets/images/Cards/Herocarddetailsteams.PNG" alt-text="herocard":::
 
+1. Выберите **Сохранить**.
 1. Выберите **Отправить мне эту карточку**. Карточка отправляется вам в виде сообщения чата.
 
 ## <a name="card-examples"></a>Примеры карточек
