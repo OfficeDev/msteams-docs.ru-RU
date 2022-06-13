@@ -6,12 +6,12 @@ keywords: настраиваемый канал группы вкладок Team
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 2ee2a6017ed96d90d205b0a764f5f0fe8b512207
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.openlocfilehash: ec1a479421b7439db7a5492a059d470bd2d7024e
+ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65887634"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66048978"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -21,7 +21,7 @@ ms.locfileid: "65887634"
 * [Расширение для сообщений](~/messaging-extensions/what-are-messaging-extensions.md).
 * [Соединитель Office 365](~/webhooks-and-connectors/what-are-webhooks-and-connectors.md).
 
-[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)].
 
 ## <a name="configure-a-channel-or-group-chat-tab"></a>Настройка вкладки канала или группового чата
 
@@ -171,7 +171,7 @@ ms.locfileid: "65887634"
 * Инициируется обработчик событий `pages.config.registerOnSaveHandler()`.
 * **Сохранение** на странице конфигурации приложения, если эта функция включена.
 
-Код страницы конфигурации информирует Teams о том, что требования к конфигурации выполнены и установка может продолжаться. Когда пользователь нажимает кнопку **Сохранить**, настраиваются параметры `pages.config.setConfig()`, как определено интерфейсом `Config`. Дополнительные сведения см. в [интерфейсе конфигурации](/javascript/api/@microsoft/teams-js/pages.config.Config?view=msteams-client-js-latest&preserve-view=true). `saveEvent.notifySuccess()` вызывается, чтобы указать, что URL-адрес содержимого успешно разрешен.
+Код страницы конфигурации информирует Teams о том, что требования к конфигурации выполнены и установка может продолжаться. Когда пользователь нажимает кнопку **Сохранить**, настраиваются параметры `pages.config.setConfig()`, как определено интерфейсом `Config`. Дополнительные сведения см. в [интерфейсе конфигурации](/javascript/api/@microsoft/teams-js/pages.config?). `saveEvent.notifySuccess()` вызывается, чтобы указать, что URL-адрес содержимого успешно разрешен.
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ document.write(getId());
 
 Задайте для свойства манифеста `canUpdateConfiguration` значение `true`. Он позволяет пользователям изменять, перенастраить или переименовывать вкладку канала или группы. Сообщите пользователю о влиянии на содержимое при удалении вкладки. Для этого включите страницу `removeUrl` `setConfig()` параметров удаления в приложение и задайте значение свойства в конфигурации (ранее `setSettings()`). Пользователь может удалить личные вкладки, но не может изменить их. Дополнительные сведения см. в статье [Создание страницы удаления для вкладки](~/tabs/how-to/create-tab-pages/removal-page.md).
 
-Конфигурация Microsoft Teams `setConfig()` (ранее `setSettings()`) для страницы удаления:
+`setConfig()` Microsoft Teams (ранее`setSettings()`) для страницы удаления:
 
 # <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
 

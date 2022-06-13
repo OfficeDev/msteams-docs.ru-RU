@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: b5e023041ad732c7580b8b01cd62bc7159a52887
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: cbce3d51d902301f6aca422bfe2c8112e50f6b31
+ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66033059"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66049006"
 ---
 # <a name="install-moodle-lms"></a>Установка Moodle LMS
 
@@ -30,7 +30,7 @@ ms.locfileid: "66033059"
 >
 > Дополнительные сведения о функциях, которые предоставляет эта интеграция, см. в Microsoft Teams [Moodle](https://education.microsoft.com/resource/3dffb3a8).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Ниже приведены предварительные требования для установки Moodle:
 
@@ -287,7 +287,7 @@ ms.locfileid: "66033059"
 Когда курс Moodle синхронизируется, Microsoft Teams автоматически устанавливает приложение Moodle в команде, создает вкладку Moodle в канале "Общие" Teams и настраивает его для хранения страницы курса для курса Moodle, из которого оно синхронизируется. Теперь вы можете начать работу с курсами Moodle непосредственно из Microsoft Teams.
 
 > [!NOTE]
-> Чтобы поделиться с нами любыми запросами функций или отзывами, посетите нашу страницу [user Voice](https://microsoftteams.uservoice.com/forums/916759-moodle).
+> Чтобы поделиться с нами любыми запросами функций или отзывами, посетите нашу страницу [user Voice](https://support.microsoft.com/en-us/office/uservoice-pages-430e1a78-e016-472a-a10f-dc2a3df3450a).
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: командное меню создание сообщений беседа @упоминание
-ms.openlocfilehash: 524ecb9ee829292487cc0e6c45604d4c241967c8
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: 5b96a9b995806678596cc8cedd45f4bb6e80827c
+ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032968"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66048992"
 ---
 # <a name="bot-command-menus"></a>Меню команд бота
 
@@ -46,7 +46,7 @@ ms.locfileid: "66032968"
 
    :::image type="content" source="conversations/Media/AppStudio.png" alt-text="appstudio-media":::
 
-2. В **App Studio** перейдите на вкладку **редактора манифеста**. Если у вас еще нет пакета приложения, можно создать приложение или импортировать существующее. Подробнее см. в статье [Обновление пакета приложения](~/get-started/deploy-csharp-app-studio.md).
+2. В **App Studio** перейдите на вкладку **редактора манифеста**. Если у вас еще нет пакета приложения, можно создать приложение или импортировать существующее. Дополнительные сведения см. в [разделе C# app package in App Studio](../../get-started/deploy-csharp-app-studio.md)
 
 3. В **редакторе манифеста** на панели слева и в разделе **Возможности** выберите **Боты**.
 
@@ -61,6 +61,7 @@ ms.locfileid: "66032968"
 7. Установите флажки **области**, чтобы выбрать место, где будет показано командное меню, и нажмите кнопку **Сохранить**.
 
    :::image type="content" source="media/AppStudio-NewCommandMenu.png" alt-text="Кнопка меню &quot;Новые команды&quot; в App Studio "lightbox="media/AppStudio-NewCommandMenu.png "border="true":::
+
 
 ### <a name="create-a-command-menu-for-your-bot-by-editing-manifestjson"></a>Создание командного меню для бота путем редактирования Файла Manifest.json
 
