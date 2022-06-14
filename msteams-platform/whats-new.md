@@ -3,12 +3,12 @@ title: Новые возможности для разработчиков в Te
 description: Узнайте о новых функциях разработчика и улучшениях этих функций в Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 90361f12d3aa327ca0cab3eca9c87ff44b947f94
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: ca3cbbac88a0133c5c4973f0a1ad8809f8e4ff73
+ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032982"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66048971"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -24,6 +24,7 @@ ms.locfileid: "66032982"
 | 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> • [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 | 24.05.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > [Схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md) |
 | 24.05.2022 | Боты и расширения для сообщений в GCC и GCCH | • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
+
 
 <!--
 ## Latest updates ![bullhorn icon](~/assets/images/bullhorn.png)
@@ -206,7 +207,7 @@ ms.locfileid: "66032982"
 | 31.10.2019 | Новая структура документации и переработка основных статей. Сообщайте о любых недействующих ссылках или ненайденных страницах путем создания проблемы в GitHub. | Обо всех из них! |
 | 13.09.2019 | Бот запроса устанавливается из расширения для обмена сообщениями с действиями. | [Инициирование действий с расширениями для обмена сообщениями](resources/messaging-extension-v3/create-extensions.md#request-to-install-your-conversational-bot)
 | 28.08.2019 | Поддержка частных каналов во вкладках и соединителях. | [Получение контекста для вкладки](tabs/how-to/access-teams-context.md#retrieve-context-in-private-channels) |
-| 20.06.2019 | Отправка внешнего веб-сайта в канал Teams. | [Отправка в Teams](~/share-to-teams.md) |
+| 20.06.2019 | Отправка внешнего веб-сайта в канал Teams. | [Поделиться в Teams](concepts/build-and-test/share-to-teams-overview.md) |
 | 25.05.2019 | Ответ сообщением бота из модуля задач. | [Ответ сообщением бота из модуля задач](resources/messaging-extension-v3/create-extensions.md#respond-with-an-adaptive-card-message-sent-from-a-bot) |
 | 25.05.2019 | Боты в групповых чатах. | [Взаимодействие с ботом в групповом чате или канале](~/concepts/bots/bot-conversations/bots-conv-channel.md) |
 | 20.05.2019 | Локализация манифеста приложения. | [Локализация приложений](~/publishing/apps-localization.md) |
