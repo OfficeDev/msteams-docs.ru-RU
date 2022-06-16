@@ -1,16 +1,16 @@
 ---
 title: Создание пользовательских приложений с минимальным объемом программирования для Microsoft Teams
 author: surbhigupta
-description: Узнайте о доступных решениях Майкрософт с минимальным или нулевым объемом программирования на основе Teams для Microsoft Power Platform. Узнайте о решениях, таких как Power Apps, Power Automate, Виртуальный помощник и т. д.
-ms.localizationpriority: high
+description: Узнайте о доступных решениях Майкрософт с минимальным или нулевым объемом программирования на основе Teams для Microsoft Power Platform.
+ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 651af8d4eeddc48a8ecfe7488892f851c81ba711
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 04fc4537969d3866e31e9c35e8484326b0ccbb56
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111593"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123176"
 ---
 # <a name="create-low-code-custom-apps-for-microsoft-teams"></a>Создание пользовательских приложений с минимальным объемом программирования для Microsoft Teams
 

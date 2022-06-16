@@ -1,17 +1,17 @@
 ---
 author: heath-hamilton
-description: Лучшие методики или соображения по интеграции существующих веб-приложений с Microsoft Teams
+description: Ознакомьтесь с рекомендациями или рекомендациями по интеграции существующих веб-приложений с Microsoft Teams. Он предоставляет сведения о требованиях к API, проверке подлинности и глубокой компоновки приложения с помощью Teams.
 ms.author: surbhigupta
 ms.date: 08/26/2020
 ms.localizationpriority: medium
 ms.topic: conceptual
 title: Вопросы интеграции Teams
-ms.openlocfilehash: e963019783699ebe0ed20b8e45632d03d6631e71
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 2df2d9be6962a70c4eb8a933a7c1893ae4bbdb25
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757642"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123803"
 ---
 # <a name="considerations-for-teams-integration"></a>Вопросы интеграции Teams
 

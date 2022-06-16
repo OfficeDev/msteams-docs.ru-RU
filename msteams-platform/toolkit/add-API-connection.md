@@ -1,17 +1,17 @@
 ---
 title: Подключение к существующим API
 author: MuyangAmigo
-description: Описывает подключение к существующим API
+description: Из этой статьи вы узнаете, как набор средств помогает выполнить начальную загрузку примера доступа к существующим API. Он предоставляет список различных типов проверки подлинности.
 ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: Overview
 ms.date: 05/20/2022
-ms.openlocfilehash: b2dd6bfb1bc13b4d2b94ff57e2005b6450f59c23
-ms.sourcegitcommit: 74623035d7c18194e339f566c820e0653bc3d8b6
+ms.openlocfilehash: 2e00991f42b85e0e053fd94e68298c819a14a730
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656770"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66124006"
 ---
 # <a name="add-api-connection-to-teams-app"></a>Добавление подключения к API в приложение Teams
 
@@ -25,9 +25,9 @@ Teams toolkit помогает выполнить начальную загру�
 
 При использовании Teams Toolkit для подключения к существующему API Teams Toolkit выполняет следующую функцию:
 
-* Создание примера кода в папке `./bot` или папке `./api`
-* Добавление ссылки на пакет в `@microsoft/teamsfx``package.json`
-* Добавление параметров приложения для API в  `.env.teamsfx.local` настройке локальной отладки
+* Создайте пример кода в папке `./bot` `./api` или папке.
+* Добавьте ссылку на пакет в `@microsoft/teamsfx` `package.json`.
+* Добавьте параметры приложения для API, чтобы  `.env.teamsfx.local` настроить локальную отладку.
 
 ### <a name="connect-to-api-in-visual-studio-code"></a>Подключение API в Visual Studio Code
 
@@ -80,7 +80,7 @@ Teams toolkit помогает выполнить начальную загру�
 
    |**Тип проверки подлинности**.|**Пример команды**|
    |-----------------------|------------------|
-   |Базовый|teamsfx add api-connection basic --endpoint <https://example.com> --component bot --alias example --user-name exampleuser --interactive false|
+   |Базовый|teamsfx add api-connection basic --endpoint <https://example.com> --component bot --alias example--user-name exampleuser --interactive false|
    |Ключ API|teamsfx add api-connection apikey --endpoint <https://example.com> --component bot --alias example --key-location header --key-name example-key-name --interactive false|
    |Azure AD|teamsfx add api-connection aad --endpoint <https://example.com> --component bot --alias example --app-type custom --tenant-id your_tenant_id --app-id your_app_id --interactive false|
    |Сертификат|teamsfx add api-connection cert --endpoint <https://example.com> --component bot --alias example --interactive false|
@@ -121,7 +121,7 @@ Teams toolkit помогает выполнить начальную загру�
     Созданный клиент API является клиентом Axios API. Используйте клиент Axios для выполнения запросов к API.
 
      > [!Note]
-     >[Axios](https://www.npmjs.com/package/axios) — это популярный пакет nodejs, который помогает с http-запросами. Дополнительные сведения о том, как выполнять http-запросы, см. в примере документации [по Axios](https://axios-http.com/docs/example) , чтобы узнать, как выполнять http-запросы.
+     > [Axios](https://www.npmjs.com/package/axios) — это популярный пакет nodejs, который помогает с http-запросами. Дополнительные сведения о том, как выполнять http-запросы, см. в примере документации [по Axios](https://axios-http.com/docs/example) , чтобы узнать, как выполнять http-запросы.
 
 ## <a name="deploy-your-application-to-azure"></a>Развертывание приложения в Azure
 
@@ -160,6 +160,7 @@ class CustomAuthProvider implements AuthProvider {
     };
 }
 ```
+
 </details>
 <details>
 <summary><b>Подключение API для Azure AD разрешений</b></summary>
@@ -204,6 +205,7 @@ Azure AD выполняет проверку подлинности некото
 
         > [!NOTE]
         > Для разрешения приложения используйте идентификатор клиента.
+        >
 </details>
 
 ## <a name="see-also"></a>См. также

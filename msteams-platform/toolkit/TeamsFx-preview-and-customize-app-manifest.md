@@ -6,12 +6,12 @@ ms.author: nliu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/13/2022
-ms.openlocfilehash: 94f02ce31a9af3acb78fc6fef6f071df02bfd565
-ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
+ms.openlocfilehash: 4cfa9beac8f75b04df8ac916a1d0e4e45919ffe3
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65755862"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123656"
 ---
 # <a name="edit-teams-app-manifest"></a>Изменение Teams приложения
 
@@ -32,7 +32,7 @@ ms.locfileid: "65755862"
 
 * [Предварительный просмотр файла манифеста в локальной среде](#preview-manifest-file-in-local-environment)
 * [Предварительный просмотр файла манифеста в удаленной среде](#preview-manifest-file-in-remote-environment)
- 
+
 ### <a name="preview-manifest-file-in-local-environment"></a>Предварительный просмотр файла манифеста в локальной среде
 
 Чтобы просмотреть файл манифеста в локальной среде, можно нажать **клавишу F5** , чтобы запустить локальную отладку. Будут созданы локальные параметры по умолчанию, а затем пакет приложения и предварительные сборки манифеста в папке `build/appPackage`.
@@ -53,7 +53,7 @@ ms.locfileid: "65755862"
 
 * Выберите **"Подготовка в облаке"** в разделе **"РАЗРАБОТКА**" в Teams Toolkit или
 * **Триггер Teams: подготовка в облаке из** палитры команд.
- 
+
 Он создает конфигурацию для удаленного Teams приложения, а также создает пакет и манифест предварительного просмотра в папке`build/appPackage`.
 
 Вы также можете просмотреть файл манифеста в удаленной среде, выполнив следующие действия.
@@ -127,7 +127,6 @@ ms.locfileid: "65755862"
 * `manifest.template.json`
 * `templates/appPackage`
 
-
 Во время локальной отладки или подготовки Teams Toolkit `manifest.template.json``state.{env}.json``config.{env}.json`загружает манифест с конфигурациями из и создает Teams на [портале разработки](https://dev.teams.microsoft.com/apps).
 
 ## <a name="supported-placeholders-in-manifesttemplatejson"></a>Поддерживаемые заполнители в manifest.template.json
@@ -191,4 +190,4 @@ To preview values for all the environments, you can hover over the placeholder. 
 
 * [Manage multiple environments](TeamsFx-multi-env.md)
 * [Reference: Manifest schema for Microsoft Teams](../resources/schema/manifest-schema.md)
-* [Public developer preview for Microsoft Teams](../resources/dev-preview/developer-preview-intro.md) 
+* [Public developer preview for Microsoft Teams](../resources/dev-preview/developer-preview-intro.md)

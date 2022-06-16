@@ -5,12 +5,12 @@ description: Узнайте, как интегрировать собствен�
 ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 8d5c288e35ef18ada9ff93390ff745798ba3b01c
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: e2f1e36d78e2bea5e5f4a5b4625c503e570dd77d
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757033"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123838"
 ---
 # <a name="device-capabilities"></a>Возможности устройств
 
@@ -45,3 +45,9 @@ Microsoft Teams постоянно совершенствует возможно
 * Отправка сведений о местоположении с помощью [средства выбора расположения](location-capability.md).
 
 Кроме того, вы можете интегрировать [элемент управления "выбор людей"](people-picker-capability.md), встроенный в Teams, который позволяет искать и выбирать людей в веб-интерфейсе приложения.
+
+## <a name="code-sample"></a>Пример кода
+
+| Название примера           | Описание | Node.js    |
+|:---------------------|:--------------|:---------|
+|Разрешения для устройств | В этой статье описывается, как Microsoft Teams пример приложения табуляции для разрешений устройства. |[View](<https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-device-permissions/nodejs>)|

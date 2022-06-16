@@ -1,15 +1,14 @@
 ---
 title: Обзор функции "Отправка в Teams"
-description: Описание создания кнопки для отправки в Teams
+description: Узнайте, как Teams общие сведения и где можно создать кнопку "Общий доступ к командам" в Teams приложениях и приложениях вкладок.
 ms.topic: how-to
 ms.localizationpriority: mediumss
-keywords: Обзор функции "Отправка в Teams"
-ms.openlocfilehash: 1bc840c5b85042ef109d544a3b94cd55f6eae2ad
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: caf75bed6c741e5d504c91e2c7df5739ec786cbb
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65297130"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123775"
 ---
 # <a name="share-to-teams"></a>Отправка в Teams
 

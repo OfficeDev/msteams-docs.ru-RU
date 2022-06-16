@@ -6,12 +6,12 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: ae533039c8a0af5719dd884628d600ae3be11410
-ms.sourcegitcommit: 80edf3c964bb47a2ee13f9eda4334ad19e21f331
+ms.openlocfilehash: ed110f95d8f25ba4595d8b96e08c5e49a0c9225e
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65654887"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123768"
 ---
 # <a name="teamsfx-sdk"></a>Пакет SDK TeamsFx
 
@@ -23,8 +23,8 @@ TeamsFx помогает сократить количество задач ра
 
 С помощью SDK TeamsFx можно выполнить следующее.
 
-* Получить доступ к основным функциям в клиентской и серверной среде 
-* Написать код проверки подлинности пользователя упрощенным способом
+* Доступ к основным функциям в клиентской и серверной среде.
+* Написание кода проверки подлинности пользователя упрощенным способом.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -105,7 +105,9 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 ### <a name="teamsfx-class"></a>Класс TeamsFx
 
-Экземпляр класса TeamsFx по умолчанию имеет доступ ко всем параметрам TeamsFx из переменных среды. Можно также настроить настраиваемые значения конфигурации для переопределения значений по умолчанию. Подробности см. в [конфигурации переопределения](#override-configuration). При создании экземпляра TeamsFx также необходимо указать тип удостоверения. Существует два типа удостоверений:
+Экземпляр класса TeamsFx по умолчанию имеет доступ ко всем параметрам TeamsFx из переменных среды. Можно также настроить настраиваемые значения конфигурации для переопределения значений по умолчанию. Подробности см. в [конфигурации переопределения](#override-configuration).
+При создании экземпляра TeamsFx также необходимо указать тип удостоверения.
+Существует два типа удостоверений:
 
 * Удостоверение пользователя
 * Удостоверение приложения
@@ -141,16 +143,19 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 Вот соответствующие сценарии для каждого целевого класса учетных данных.
 
 #### <a name="user-identity-in-browser-environment"></a>Удостоверение пользователя в среде браузера
+
 `TeamsUserCredential` представляет удостоверение текущего пользователя Teams. При первом использовании этих учетных данных запрашивается согласие пользователя. Использует SSO Teams и поток "от имени" для обмена маркерами. SDK использует эти учетные данные, когда разработчики выбирают удостоверение пользователя в среде браузера.
 
 Требуемая конфигурация: `initiateLoginEndpoint`, `clientId`.
 
 #### <a name="user-identity-in-nodejs-environment"></a>Удостоверение пользователя в среде Node.js
+
 `OnBehalfOfUserCredential` использует поток "от имени" и требует маркер SSO Teams. Он предназначен для использования в сценариях использования функций или ботов Azure. SDK использует эти учетные данные, когда разработчики выбирают удостоверение пользователя в среде Node.js.
 
 Требуемая конфигурация: `authorityHost`, `tenantId`, `clientId`, `clientSecret` или `certificateContent`.
 
 #### <a name="application-identity-in-nodejs-environment"></a>Удостоверение приложения в среде Node.js
+
 `AppCredential` представляет удостоверение приложения. Он используется, когда пользователь не участвует, например, задание автоматизации, запускаемое по времени. SDK использует эти учетные данные, когда разработчики выбирают удостоверение приложения в среде Node.js.
 
 Требуемая конфигурация: `tenantId`, `clientId`, `clientSecret` или `certificateContent`.
@@ -167,10 +172,11 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 TeamsFx SDK предоставляет несколько функций для упрощения настройки сторонних библиотек. Они расположены в [основной папке](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/core).
 
-*  Служба Microsoft Graph:`createMicrosoftGraphClient` и `MsGraphAuthProvider` помогают создать экземпляр Graph с проверкой подлинности.
-*  SQL:`getTediousConnectionConfig` возвращает утомительную конфигурацию подключения.
+* Служба Microsoft Graph:`createMicrosoftGraphClient` и `MsGraphAuthProvider` помогают создать экземпляр Graph с проверкой подлинности.
+* SQL:`getTediousConnectionConfig` возвращает утомительную конфигурацию подключения.
 
 Требуемая конфигурация
+
 * `sqlServerEndpoint`, `sqlUsername`, `sqlPassword`, если вы хотите использовать удостоверение пользователя
 * `sqlServerEndpoint`, `sqlIdentityId`, если вы хотите использовать удостоверение MSI
 
@@ -217,7 +223,7 @@ try {
 
 <details>
 <summary><b>Использование API Graph во приложении на вкладке</b></summary>
- 
+
 Используйте `TeamsFx` и `createMicrosoftGraphClient`.
 
 ```ts
@@ -234,7 +240,6 @@ const profile = await graphClient.api("/me").get();
 <summary><b>Создание клиента API для вызова существующего API в Bot или Функции Azure</b></summary>
 
 :::image type="content" source="~/assets/images/teams-toolkit-v2/teams toolkit fundamentals/createapi-client.PNG" alt-text="Создание клиента API" border="false":::
-
 
 </details>
 
@@ -259,7 +264,6 @@ const response = await apiClient.get("/api/" + functionName);
 
 <details>
 <summary><b>Доступ к базе данных SQL в Функции Azure</b></summary>
-
 
 Используйте библиотеку `tedious` для доступа к SQL и использования `DefaultTediousConnectionConfiguration`, который управляет проверкой подлинности.
 Помимо `tedious` можно также составить подключение других библиотек SQL на основе результата `sqlConnectionConfig.getConfig()`.
@@ -398,9 +402,10 @@ setLogFunction((level: LogLevel, message: string) => {
 ```
 
 ## <a name="override-configuration"></a>Переопределение конфигурации
+
 Вы можете передать настраиваемую конфигурацию при создании экземпляра TeamsFx, чтобы переопределить конфигурацию по умолчанию или настроить необходимые поля, если отсутствуют переменные среды.
 
-- Если вы создали проект вкладки с помощью VS Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
+* Если вы создали проект вкладки с помощью VS Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
   * authorityHost (REACT_APP_AUTHORITY_HOST)
   * tenantId (REACT_APP_TENANT_ID)
   * clientId (REACT_APP_CLIENT_ID)
@@ -409,7 +414,7 @@ setLogFunction((level: LogLevel, message: string) => {
   * apiEndpoint (REACT_APP_FUNC_ENDPOINT)
   * apiName (REACT_APP_FUNC_NAME)
 
-- Если вы создали проект функции или бота Azure с помощью VS Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
+* Если вы создали проект функции или бота Azure с помощью VS Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
   * initiateLoginEndpoint (INITIATE_LOGIN_ENDPOINT)
   * authorityHost (M365_AUTHORITY_HOST)
   * tenantId (M365_TENANT_ID)
@@ -426,6 +431,7 @@ setLogFunction((level: LogLevel, message: string) => {
 ## <a name="upgrade-latest-sdk-version"></a>Обновление последней версии SDK
 
 Если вы используете версию SDK с `loadConfiguration()`, сделайте следующее, чтобы обновить SDK до последней версии.
+
 1. Удалите `loadConfiguration()` и передайте настроенные параметры с помощью `new TeamsFx(IdentityType.User, { ...customConfig })`
 2. Заменить `new TeamsUserCredential()` на `new TeamsFx()`
 3. Заменить `new M365TenantCredential()` на `new TeamsFx(IdentityType.App)`

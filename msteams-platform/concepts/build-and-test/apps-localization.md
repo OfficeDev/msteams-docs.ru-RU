@@ -1,16 +1,15 @@
 ---
 title: Локализация приложения
-description: Описание вопросов локализации приложения Microsoft Teams.
+description: Ознакомьтесь с рекомендациями по локализации Microsoft Teams приложения и локализации строк в манифесте приложения.
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: teams публикация магазин office публиковать AppSource локализация язык
 ms.date: 05/15/2018
-ms.openlocfilehash: 2975365f56c573b66fda5e5a51106dc8cecf8c0f
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 9c8e073f646bbd99f07725bee734e727103f6eb3
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757047"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66122896"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 

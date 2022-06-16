@@ -1,15 +1,14 @@
 ---
 title: Поделиться в Teams из личного приложения или вкладки
-description: Узнайте, как добавить общую папку Teams, внедренную в личное приложение или вкладку
+description: Узнайте, как включить кнопку "Общий доступ Teams" на личном приложении или вкладке, ограничениях и интерфейсе конечного пользователя.
 ms.topic: reference
 ms.localizationpriority: medium
-keywords: Отправить в Teams Отправка в Teams
-ms.openlocfilehash: c40263504b77a8a848251431de1eb49b85253b77
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 6a676dd90d9b02332869b5584b1e067be8bfcf19
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757264"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123936"
 ---
 # <a name="share-to-teams-from-personal-app-or-tab"></a>Поделиться в Teams из личного приложения или вкладки
 

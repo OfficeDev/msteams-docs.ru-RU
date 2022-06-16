@@ -1,22 +1,22 @@
 ---
 title: Протестируйте и отладьте бот
-description: Описание тестирования ботов в Microsoft Teams
+description: В этой статье описывается тестирование ботов в Microsoft Teams
 keywords: тестирование ботов teams
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 03/20/2019
-ms.openlocfilehash: a95432ae2e704d6faac51185ce0d971f9f1e15ef
-ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
+ms.openlocfilehash: 44fdb90431549b63e45d2ef2131fe6aa6cb44fc0
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65755916"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123456"
 ---
 # <a name="test-and-debug-your-microsoft-teams-bot"></a>Тестирование и отладка бота Microsoft Teams
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-При тестировании бота необходимо учитывать как предполагаемые контексты работы бота, так и любые возможные функции, которые вы захотите добавить в бот, и для которых требуются данные, специфичные для Microsoft Teams. Убедитесь, что выбранный вами метод тестирования бота соответствует его функциональности.
+При тестировании бота необходимо учитывать как предполагаемые контексты работы бота, так и любые возможные функции, которые вы захотите добавить в бот, и для которых требуются данные, специфичные для Microsoft Teams. Убедитесь, что метод, выбранный для тестирования бота, соответствует его функциональным возможностям.
 
 ## <a name="test-by-uploading-to-teams"></a>Тестирование путем отправки в Teams
 

@@ -1,16 +1,16 @@
 ---
 title: Устранение проблем с отправкой в магазин
-description: Узнайте, как устранять и устранять проблемы с отправкой Microsoft Teams хранилища.
+description: Из этой статьи вы узнаете, как устранять и устранять проблемы с отправкой Microsoft Teams хранилища.
 ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: medium
-ms.openlocfilehash: f69b3d1bbcdcf0f85151df62bbb032934a871d12
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: 51427f2023ba566391a3d0b544d74e5658464a7c
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111390"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123211"
 ---
 # <a name="resolve-issues-if-your-microsoft-teams-store-submission-fails"></a>Как устранять проблемы, если приложение, отправленное вами в магазин Microsoft Teams, было отвергнуто
 

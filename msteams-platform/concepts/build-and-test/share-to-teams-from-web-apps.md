@@ -3,13 +3,12 @@ title: Поделиться в Teams из веб-приложений
 description: Узнайте, как добавить встроенную кнопку «Отправить в Teams» на веб-сайт с предварительным просмотром веб-сайта с помощью примеров кода
 ms.topic: reference
 ms.localizationpriority: medium
-keywords: Отправить в Teams Отправка в Teams
-ms.openlocfilehash: 9a2223ebe89575d81db23ca696f88a2f2d519d31
-ms.sourcegitcommit: 1fdafba2d49a07715315b3f50b910e2c8cb6680c
+ms.openlocfilehash: d08086d01132d86605137bb6b622821239695c84
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118957"
+ms.locfileid: "66123463"
 ---
 # <a name="share-to-teams-from-web-apps"></a>Поделиться в Teams из веб-приложений
 

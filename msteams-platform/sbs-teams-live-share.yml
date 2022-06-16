@@ -2,7 +2,7 @@
 title: Создание Гибкой методики с помощью Live Share SDK
 metadata:
   title: Создание Гибкой методики с помощью Live Share SDK
-  description: В этом руководстве вы узнаете, как создать пример приложения Agile Для демонстрации с помощью пакета SDK live share.
+  description: В этом учебном модуле вы узнаете, как создать пример гибкого приложения с помощью пакета SDK live share.
   audience: Developer
   level: Beginner
   ms.date: 05/17/2022
@@ -11,15 +11,15 @@ metadata:
   nextTutorialTitle: Дополнительные сведения о Live Share SDK
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: ae046222d78b90dadf1d5d1a168631356d84483c
-  ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+  ms.openlocfilehash: c3c9dbc222089a620757234afbbd6c741da39f6c
+  ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/27/2022
-  ms.locfileid: "65756571"
+  ms.lasthandoff: 06/16/2022
+  ms.locfileid: "66122924"
 items:
 - durationInMinutes: 1
-  content: "> [!NOTE]\n> Пакет Live Share SDK в настоящее время доступен только в [общедоступной предварительной версии для разработчиков](~/resources/dev-preview/developer-preview-intro.md). Вы должны быть частью общедоступной предварительной версии для разработчиков, Microsoft Teams использовать Live Share SDK.\n\nLive Share SDK позволяет создавать приложения для совместной работы и находить дополнительные способы совместной работы и подключения через Teams. Вы можете создавать приложения для совместного использования содержимого, такого как просмотр фильмов, воспроизведение игр в реальном времени и т. д., в Teams звонков по одному, групповых звонков, планирования собраний и собраний сейчас.\n\nВ этом пошаговом руководстве показано, как создать пример приложения Agile с помощью Live Share SDK. Вы увидите следующие выходные данные:\n\n :::image type=\"content\" source=\"~/assets/videos/agile-poker-gif.gif\" alt-text=\"Gif Agile\":::\n \n"
+  content: "> [!NOTE]\n> Пакет SDK Live Share в настоящее время доступен только в [общедоступной предварительной версии для разработчиков](~/resources/dev-preview/developer-preview-intro.md). Чтобы использовать пакет SDK Live Share, необходимо быть участником общедоступной предварительной версии для разработчиков Microsoft Teams.\n\nLive Share SDK позволяет создавать приложения для совместной работы и находить дополнительные способы совместной работы и подключения через Teams. Вы можете создавать приложения для совместного использования содержимого, такого как просмотр фильмов, воспроизведение игр в реальном времени и т. д., в Teams звонков по одному, групповых звонков, планирования собраний и собраний сейчас.\n\nВ этом пошаговом руководстве показано, как создать пример приложения Agile с помощью Live Share SDK. Вы увидите следующие выходные данные:\n\n :::image type=\"content\" source=\"~/assets/videos/agile-poker-gif.gif\" alt-text=\"Gif Agile\":::\n \n"
 - title: Предварительные требования
   durationInMinutes: 1
   content: "\nУстановите следующие средства и настройте среду разработки:\n\n* [Microsoft Teams](https://www.microsoft.com/microsoft-teams/log-in) с допустимой учетной записью\n* [Последняя версия Visual Studio Code](https://code.visualstudio.com/download)\n* [Последняя версия nodejs](https://nodejs.org/en/download/)\n* [Последняя версия ngrok или](https://ngrok.com/download) эквивалентное решение для туннелирования\n  \n  > [!NOTE]\n  > Если вы скачиваете ngrok в первый раз, зарегистрируйтесь и установите [authtoken](https://ngrok.com/download).\n"

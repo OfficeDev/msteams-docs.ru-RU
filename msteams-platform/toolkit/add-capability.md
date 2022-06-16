@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: a0ebea1fb05e3583c90c41596da98a25d89f9b4c
-ms.sourcegitcommit: 74623035d7c18194e339f566c820e0653bc3d8b6
+ms.openlocfilehash: 18c1379a630e637bea95209c35b823306b35a5de
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656763"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123999"
 ---
 # <a name="add-capabilities-to-teams-apps"></a>Добавление возможностей для Teams приложений
 
@@ -27,22 +27,22 @@ ms.locfileid: "65656763"
 
 Следующий список предоставляет преимущества для добавления дополнительных возможностей в TeamsFx:
 
-* Обеспечивает удобство
-* Добавляет дополнительные функции в приложение, автоматически добавляя исходные коды с помощью Teams Toolkit
+* Обеспечивает удобство.
+* Добавляет дополнительную функцию в приложение, автоматически добавляя исходные коды с помощью Teams Toolkit.
 
 ## <a name="limitations"></a>Ограничения
 
 В следующем списке приведены ограничения для добавления дополнительных возможностей в TeamsFx:
 
-* Можно добавить вкладки до 16 экземпляров
-* Вы можете добавить бот и расширение сообщения для одного экземпляра
+* Вы можете добавить вкладки до 16 экземпляров.
+* Вы можете добавить бот и расширение сообщения для одного экземпляра.
 
 ## <a name="add-capabilities"></a>Добавление возможностей
 
 **Возможности можно добавить следующими способами:**
 
-* Добавление возможностей с помощью Teams Toolkit в Visual Studio Code
-* Добавление возможностей с помощью палитры команд
+* Добавление возможностей с помощью Teams Toolkit в Visual Studio Code.
+* Добавление возможностей с помощью палитры команд.
 
   > [!Note]
   > Необходимо подготовить каждую среду после успешного добавления возможностей в Teams приложения.
@@ -69,13 +69,13 @@ ms.locfileid: "65656763"
 
 ## <a name="add-capabilities-using-teamsfx-cli"></a>Добавление возможностей с помощью CLI TeamsFx
 
-* Изменение каталога на **каталог проекта**
+* Измените каталог на **папку проекта**.
 * В следующей таблице перечислены возможности и необходимые команды:
 
   |Возможности и сценарии| Команда|
   |-----------------------|----------|
-  |Добавление бота уведомлений |`teamsfx add notification `|
-  |Добавление бота команды |`teamsfx add command-and-response `|
+  |Добавление бота уведомлений |`teamsfx add notification`|
+  |Добавление бота команды |`teamsfx add command-and-response`|
   |Добавление вкладки с поддержкой единого входа |`teamsfx add sso-tab`|
   |Добавление вкладки |`teamsfx add tab`|
   |Добавление бота |`teamsfx add bot`|
@@ -101,22 +101,22 @@ ms.locfileid: "65656763"
 После добавления бота и расширения сообщений изменения в проекте будут следующими:
 
 * Код шаблона бота добавляется во вложенную папку с путем `yourProjectFolder/bot`. Это включает шаблон приложения **hello world** bot в проект.
-* `launch.json`и `task.json` в `.vscode` папке обновляются, что включает в себя необходимые скрипты для Visual Studio Code и выполняется при локальной отладке приложения.
+* `launch.json`и `task.json` в `.vscode` папке обновляются, что включает необходимые скрипты для Visual Studio Code и выполняется при локальной отладке приложения.
 * `manifest.template.json` file under `templates/appPackage` folder is updated, which includes the bot related information in the manifest file that represents your application in the Teams Platform. Внесены следующие изменения:
   * Идентификатор бота
   * Области бота
   * Команды, на которые может отвечать приложение-бот Hello World
-* Обновляются указанные `templates/azure/teamsfx` ниже файлы, `templates/azure/provision/xxx`а bicep-файлы создаются повторно.
-* Создаваемые файлы `.fx/config` повторно создаются, что гарантирует, что проект будет настроен с правильными конфигурациями для вновь добавленной возможности.
+* Эти файлы обновляются `templates/azure/teamsfx` , `templates/azure/provision/xxx`а BICEP-файлы создаются повторно.
+* Файлы в разделе `.fx/config` повторно создаются, что гарантирует, что в проекте настроены правильные конфигурации для вновь добавленной возможности.
 
 После добавления вкладки изменения в проекте будут следующими:
 
-* Код шаблона интерфейсной вкладки добавляется во `yourProjectFolder/tab`вложенную папку с путем, который включает шаблон приложения вкладок **hello world** в проект
-* `launch.json`и `task.json` в `.vscode` папке обновляются, что включает в себя необходимые скрипты для Visual Studio Code и выполняется при локальной отладке приложения.
+* Код шаблона интерфейсной `yourProjectFolder/tab`вкладки добавляется во вложенную папку с путем, который включает шаблон приложения вкладок **hello world** в проект.
+* `launch.json`и `task.json` в `.vscode` папке обновляются, что включает необходимые скрипты для Visual Studio Code и выполняется при локальной отладке приложения.
 * `manifest.template.json` file under `templates/appPackage` folder is updated, which includes tab-related information in the manifest file that represents your application in the Teams Platform. Изменения:
   * Настраиваемые и статические вкладки
   * Области вкладок
-* Файлы в разделе `templates/azure/teamsfx` будут обновлены, `templates/azure/provision/xxx`и bicep-файл будет создан повторно.
+* Файлы в разделе `templates/azure/teamsfx` будут обновлены, `templates/azure/provision/xxx`а BICEP-файл будет создан повторно.
 * Файл в разделе `.fx/config` создается повторно, что гарантирует, что в проекте настроены правильные конфигурации для вновь добавленной возможности.
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
