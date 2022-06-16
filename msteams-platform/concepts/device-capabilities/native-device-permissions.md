@@ -1,48 +1,48 @@
 ---
 title: Запрос разрешений устройства для приложения Microsoft Teams
-description: Узнайте, как обновить манифест приложения и запросить доступ к собственным функциям, включая согласие пользователя, расположение, QR-код и штрихкод, изображения, аудио и видео.
+keywords: возможности приложений Teams разрешения устройства встроенный сканер QR-кодов штрихкод изображение аудио видео
+description: Обновление манифеста приложения для запроса доступа к функциям, которые обычно требуют согласия пользователя, таким как сканирование QR-кода, штрихкода, а также возможности работы с изображениями, звуком и видео
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 624a079d7c72f77fac4109d11cde13974359884f
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: c346eaf880fd6a0a3847441f674fcfa72f2c5ed7
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757607"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66130475"
 ---
-# <a name="request-device-permissions-for-your-microsoft-teams-app"></a>Запрос разрешений устройства для приложения Microsoft Teams
+# <a name="request-device-permissions-for-your-teams-app"></a>Запрос разрешений устройства для Teams приложения
 
 Вы можете сделать приложение Teams более функциональным с помощью встроенных возможностей устройства, таких как камера, микрофон и расположение. В этом документе представлена инструкция о том, как запросить согласие пользователя и получить доступ к встроенным разрешениям устройства.
 
 > [!NOTE]
 >
-> * Чтобы интегрировать возможности мультимедиа в мобильном приложении Microsoft Teams, см. статью [Интеграция возможностей мультимедиа](mobile-camera-image-permissions.md).
+> * Сведения об интеграции возможностей мультимедиа в веб Microsoft Teams клиенте, настольном компьютере и мобильном приложении см. в статье "Интеграция [возможностей мультимедиа"](media-capabilities.md).
 > * Чтобы интегрировать сканер QR-кода или штрихкодов в мобильном приложении Microsoft Teams, см. статью [Интеграция функции сканирования QR- или штрихкода](qr-barcode-scanner-capability.md).
-> * Чтобы интегрировать возможности определения местоположения в мобильном приложении Microsoft Teams, см. статью [Интеграция возможностей расположения](location-capability.md).
+> * Сведения об интеграции возможностей расположения в веб-клиенте Microsoft Teams, настольном компьютере и мобильном приложении см. в статье "Интеграция [возможностей расположения"](location-capability.md).
 
 ## <a name="native-device-permissions"></a>Встроенные разрешения устройств
 
-Для доступа к возможностям устройств необходимо запросить разрешения устройства. Разрешения устройства работают аналогично для всех конструкций приложений, таких как вкладки, модули задач или расширения для сообщений. Чтобы управлять разрешениями устройств, пользователь должен перейти на страницу разрешений в параметрах Teams.
+Для доступа к возможностям устройств необходимо запросить разрешения устройства. Разрешения устройства работают аналогично для всех конструкций приложения, таких как вкладки, модули задач или расширения для обмена сообщениями. Чтобы управлять разрешениями устройств, пользователь должен перейти на страницу разрешений в параметрах Teams. Вы можете создавать более широкие возможности на платформе Teams с помощью возможностей устройства, например: необходимо запросить разрешения устройства для доступа к собственным возможностям устройства. Разрешения устройства работают аналогично для всех конструкций приложений, таких как вкладки, модули задач или расширения для сообщений. Чтобы управлять разрешениями устройств, пользователь должен перейти на страницу разрешений в параметрах Teams.
 Доступ к возможностям устройства позволяет создавать более эффективные возможности на платформе Teams, например следующие.
 
-* Захват и просмотр изображений.
-* Сканирование QR-кодов или штрихкодов.
-* Запись и отправление коротких видео.
-* Запись звуковых заметок и сохранение их для дальнейшего использования.
-* Использование сведений о расположении пользователя для отображения соответствующей информации.
+* Запись и просмотр изображений
+* Сканирование QR или штрихкода
+* Запись и общий доступ к коротким видео
+* Запись звуковых мемов и сохранение их для последующего использования
+* Использование сведений о расположении пользователя для отображения соответствующей информации
 
 > [!NOTE]
+>
 > * Сейчас Teams не поддерживает разрешения устройств для многооконных приложений, вкладок и боковой панели собрания.
-> * Разрешения устройства отличаются в браузере. Подробнее см. в разделе [Разрешения устройств в браузере](browser-device-permissions.md).
+> * Разрешения устройства отличаются в браузере. Дополнительные сведения см. в статье [Разрешения устройств в браузере](browser-device-permissions.md).
+> * Сейчас поддержка Microsoft Teams QR-кода доступна только для мобильных клиентов.
 
 ## <a name="access-device-permissions"></a>Доступ к разрешениям для устройств
 
-[SDK клиента Microsoft Teams JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) предоставляет средства, необходимые мобильному приложению Teams для доступа к [разрешениям устройства](#manage-permissions) и более эффективного взаимодействия.
+[Клиентский пакет SDK Microsoft Teams JavaScript](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) предоставляет средства, необходимые приложению Teams для доступа к разрешениям устройства пользователя и создания более расширенного интерфейса.[](#manage-permissions)
 
-Хотя доступ к этим функциям является стандартным в современных веб-браузерах, необходимо сообщить Teams о функциях, которые вы используете, обновив манифест приложения. Это обновление позволяет запрашивать разрешения во время работы приложения в настольных клиентах Teams.
-
-> [!NOTE]
-> В настоящее время поддержка Microsoft Teams для возможностей мультимедиа и сканера QR-кодов или штрихкодов доступна только для мобильных клиентов.
+Хотя доступ к этим функциям является стандартным в современных веб-браузерах, необходимо сообщить Teams о функциях, которые вы используете, обновив манифест приложения. Это обновление позволяет запрашивать разрешения во время работы приложения на Teams рабочего стола.
 
 ## <a name="manage-permissions"></a>Управление разрешениями
 
@@ -55,7 +55,9 @@ ms.locfileid: "65757607"
 1. Выберите приложение, для которого необходимо выбрать параметры.
 1. Выберите нужные параметры.
 
-    ![Экран параметров мобильного устройства с разрешениями устройства](../../assets/images/tabs/MobilePermissions.png)
+    <!-- ![Device permissions mobile settings screen](../../assets/images/tabs/MobilePermissions.png) -->
+
+    :::image type="content" source="~/assets/images/tabs/MobilePermissions.png" alt-text="Разрешения для мобильных устройств." border="true":::
 
 # <a name="desktop"></a>[Компьютер](#tab/desktop)
 
@@ -64,7 +66,9 @@ ms.locfileid: "65757607"
 1. Выберите **Параметры** > **Разрешения** в раскрывающемся меню.
 1. Выберите нужные параметры.
 
-   ![Экран параметров настольного приложения с разрешениями устройства](~/assets/images/tabs/device-permissions.png)
+   <!-- ![Device permissions desktop settings screen](~/assets/images/tabs/device-permissions.png) -->
+
+   :::image type="content" source="~/assets/images/tabs/device-permissions.png" alt-text="Разрешение устройства." border="true":::
 
 ---
 
@@ -82,7 +86,7 @@ ms.locfileid: "65757607"
 ],
 ```
 
-Каждое свойство позволяет попросить пользователя запросить согласие.
+Каждое свойство позволяет запрашивать у пользователей согласие:
 
 | Свойство      | Описание   |
 | --- | --- |
@@ -121,23 +125,23 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 > [!IMPORTANT]
 >
 > * Поддержка `camera`, `gallery`, и `microphone` включается через [**API selectMedia**](/javascript/api/@microsoft/teams-js/microsoftteams.media.media?view=msteams-client-js-latest&preserve-view=true). Используйте [**API captureImage**](/javascript/api/@microsoft/teams-js/microsoftteams?view=msteams-client-js-latest#captureimage--error--sdkerror--files--file-------void-&preserve-view=true) для одного захвата изображения.
-> * Поддержка `location` включается через [**API getLocation**](/javascript/api/@microsoft/teams-js/microsoftteams.location?view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true). Этот `getLocation API` следует использовать для определения местоположения, так как API географического расположения HTML5 в настоящее время не полностью поддерживается в настольном клиенте Teams.
+> * Поддержка `location` включается через [**API getLocation**](/javascript/api/@microsoft/teams-js/microsoftteams.location?.view=msteams-client-js-latest#getLocation_LocationProps___error__SdkError__location__Location_____void_&preserve-view=true). Его необходимо использовать для `getLocation API` расположения, так как API геолокации HTML5 в настоящее время не полностью поддерживается на Teams компьютере.
 
 Например:
 
-* Чтобы предложить пользователю получить доступ к его расположению, необходимо вызвать:`getCurrentPosition()`
+* Чтобы пользователь мог получить доступ к его местоположению, необходимо вызвать `getCurrentPosition()`:
 
     ```JavaScript
     navigator.geolocation.getCurrentPosition    (function (position) { /*... */ });
     ```
 
-* Чтобы предложить пользователю получить доступ к камере на рабочем столе или в Интернете, необходимо вызвать:`getUserMedia()`
+* Чтобы пользователь мог получить доступ к камере на рабочем столе или в Интернете, необходимо вызвать `getUserMedia()`:
 
     ```JavaScript
     navigator.mediaDevices.getUserMedia({ audio: true, video: true });
     ```
 
-* Чтобы захватить изображение на мобильном устройстве, Teams для мобильных устройств запрашивает разрешение при вызове `captureImage()`:
+* Чтобы записать изображения на мобильных устройствах, Teams запрашивает разрешение при вызове`captureImage()`:
 
     ```JavaScript
             function captureImage() {
@@ -158,13 +162,13 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
         } 
     ```
 
-* При вызове `requestPermission()` пользователю будут отображены уведомления:
+* Уведомления запрашивают у пользователя при вызове `requestPermission()`:
 
     ```JavaScript
     Notification.requestPermission(function(result) { /* ... */ });
     ```
 
-* Чтобы использовать камеру или доступ к фотоальбому, Teams для мобильных устройств запрашивает разрешение при вызове `selectMedia()`:
+* Чтобы использовать камеру или коллекцию фотографий, Teams запрашивает разрешение при вызове`selectMedia()`:
 
     ```JavaScript
      function selectMedia() {
@@ -211,7 +215,7 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
      }
     ```
 
-* Чтобы попросить пользователя поделиться местоположением в интерфейсе карты, Teams для мобильных устройств запрашивает разрешение при вызове `getLocation()`:
+* Чтобы предложить пользователю предоставить общий доступ к расположению в интерфейсе карты, Teams приложение запрашивает разрешение при вызове`getLocation()`:
 
     ```JavaScript
      function getLocation() {
@@ -223,11 +227,15 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 
 # <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-   ![Запрос разрешений мобильного устройства для вкладок](../../assets/images/tabs/MobileLocationPermission.png)
+   <!-- ![Tabs mobile device permissions prompt](../../assets/images/tabs/MobileLocationPermission.png) -->
+
+   :::image type="content" source="~/assets/images/tabs/MobileLocationPermission.png" alt-text="Разрешение на мобильное расположение." border="true":::
 
 # <a name="desktop"></a>[Компьютер](#tab/desktop)
 
-   ![Запрос разрешений настольного устройства для вкладок](~/assets/images/tabs/device-permissions-prompt.png)
+   <!-- ![Tabs desktop device permissions prompt](~/assets/images/tabs/device-permissions-prompt.png) -->
+
+   :::image type="content" source="~/assets/images/tabs/device-permissions-prompt.png" alt-text="Разрешение устройства на рабочем столе." border="true":::
 
 ---
 
@@ -247,6 +255,6 @@ navigator.permissions.query({name:'geolocation'}).then(function(result) {
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Разрешения устройства для браузера](browser-device-permissions.md)
-* [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
+* [Интеграция возможностей мультимедиа](media-capabilities.md)
 * [Интеграция функции сканирования QR-кода или штрихкода в Teams](qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](location-capability.md)

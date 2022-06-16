@@ -4,12 +4,12 @@ description: Изучите пример файла манифеста и опи
 ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 11/15/2021
-ms.openlocfilehash: 09aea8d3288f52e26d9f1e1845a2124e77d1c280
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 1b1aa4e1e7cf1bff8ff37ec89d555bd1758d16db
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123043"
+ms.locfileid: "66130517"
 ---
 # <a name="reference-public-developer-preview-manifest-schema-for-microsoft-teams"></a>Ссылка: схема манифеста общедоступной предварительной версии для разработчиков для Microsoft Teams
 
@@ -793,4 +793,4 @@ ms.locfileid: "66123043"
 * [Понимание структуры приложений Microsoft Teams](~/concepts/design/app-structure.md)
 * [Разрешение настройки приложения](~/concepts/design/enable-app-customization.md)
 * [Локализация приложения](~/concepts/build-and-test/apps-localization.md)
-* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
+* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/media-capabilities.md)

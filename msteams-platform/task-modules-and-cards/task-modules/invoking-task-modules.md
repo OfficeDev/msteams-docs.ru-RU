@@ -4,12 +4,12 @@ description: 'В этой статье описаны: вызов и закры�
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 3b33d553849376da73b3269ac9a5c0a551d6074d
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 04e27e780c1d2686be2ee73909c2d28bfc19fd23
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757306"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66130412"
 ---
 # <a name="invoke-and-dismiss-task-modules"></a>Вызов и закрытие модулей задач
 
@@ -226,7 +226,7 @@ Microsoft Teams обеспечивает правильную работу на�
 
 |Название примера | Описание | .NET | Node.js|
 |----------------|-----------------|--------------|----------------|
-|Примеры ботов модуля задач-V4 | Примеры для создания модулей задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
+|Примеры ботов модуля задач-V4 | Примеры для создания модулей задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module)|
 |Примеры вкладок модуля задач и bots-V3 | Примеры для создания модулей задач. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-task-module/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
@@ -237,6 +237,6 @@ Microsoft Teams обеспечивает правильную работу на�
 ## <a name="see-also"></a>См. также
 
 * [Запрос разрешений устройства](~/concepts/device-capabilities/native-device-permissions.md)
-* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
+* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/media-capabilities.md)
 * [Интеграция функции сканирования QR-кода или штрихкода в Teams](~/concepts/device-capabilities/qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](~/concepts/device-capabilities/location-capability.md)

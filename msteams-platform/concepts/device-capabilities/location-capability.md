@@ -6,12 +6,12 @@ keywords: собственные разрешения устройства дл�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: cea6ab31f816f41a191a93620c5b91f0b7ba56a2
-ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
+ms.openlocfilehash: 0a2c7400801decd937243bbbe5dbcea307d13fc0
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66048999"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66130454"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения
 
@@ -114,6 +114,6 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
+* [Интеграция возможностей мультимедиа](media-capabilities.md)
 * [Интеграция функции сканирования QR- или штрихкода в Teams](qr-barcode-scanner-capability.md)
 * [Интеграция средства выбора людей в Teams](people-picker-capability.md)

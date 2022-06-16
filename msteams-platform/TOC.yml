@@ -428,7 +428,7 @@
     - name: Разрешения устройства для браузера
       href: concepts/device-capabilities/browser-device-permissions.md
     - name: Интеграция возможностей мультимедиа
-      href: concepts/device-capabilities/mobile-camera-image-permissions.md
+      href: concepts/device-capabilities/media-capabilities.md
     - name: Интеграция функции сканирования QR- или штрихкода
       href: concepts/device-capabilities/qr-barcode-scanner-capability.md
     - name: Интеграция функций местонахождения
