@@ -5,13 +5,12 @@ author: heath-hamilton
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-keywords: Набор пользовательского интерфейса управление настройкой единый вход прямые ссылки на основе ролей просмотр цепочек обсуждений
-ms.openlocfilehash: 21f5dcdba9d2c201c14330deb9517bb470489ee2
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: afc856fb19a4dd17da85d0a721650abae3627fe4
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123260"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144336"
 ---
 # <a name="design-your-tab-for-microsoft-teams"></a>Разработка вкладки для Microsoft Teams
 
