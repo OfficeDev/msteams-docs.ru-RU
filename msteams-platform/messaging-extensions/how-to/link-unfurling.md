@@ -1,16 +1,16 @@
 ---
 title: Развертывание ссылки
 author: surbhigupta
-description: Узнайте, как добавить развертывание ссылок с расширением для сообщений в приложении Microsoft Teams с манифестом приложения или вручную с помощью примеров кода и образцов.
+description: В этом модуле вы узнаете, как добавить размыкание ссылок с помощью расширения для обмена сообщениями в приложении Teams с манифестом приложения или вручную с помощью примеров кода и примеров.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: c5f89847e374f6e7e2e15409f4a9fe019701788d
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: e166ced0b001414a89d24c81430c1b93431ff3a7
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032975"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142817"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 

@@ -5,12 +5,12 @@ description: Сведения о компонентах Teams пользоват
 ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: 2b009d4a31181ed1794dafdb8e224b7239bebd81
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 145b5adbefcd1ccd5bc90007700cf4851c96b26b
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123421"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143426"
 ---
 # <a name="designing-your-microsoft-teams-app-with-advanced-ui-components"></a>Проектирование приложения Microsoft Teams с помощью расширенных компонентов пользовательского интерфейса
 
@@ -104,9 +104,9 @@ ms.locfileid: "66123421"
 
 ### <a name="top-use-cases"></a>Основные варианты использования
 
-* Контекстные действия с содержимым приложения
-* Контекстный фильтр и поиск
-* Навигация и навигационные строки
+* Контекстные действия с содержимым приложения.
+* Контекстный фильтр и поиск.
+* Навигация и навигация.
 
 ### <a name="mobile"></a>Мобильная версия
 

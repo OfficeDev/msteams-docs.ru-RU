@@ -1,16 +1,16 @@
 ---
 title: Боты и пакеты SDK
 author: surbhigupta
-description: Обзор средств и SDKs для создания ботов Microsoft Teams.
+description: В этой статье вы узнаете о средствах и пакетах SDK для создания Microsoft Teams ботов и ботов с помощью Microsoft Bot Framework.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 6e4384bc4594dd3751afca781bd2121ad8aeb210
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 0b344b6a2db0abc4d1769c47aca6f496f69b98d7
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756865"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142467"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -98,7 +98,7 @@ ms.locfileid: "65756865"
 
 По мере регистрации бота на Azure для государственных организаций портале обязательно обновите конфигурации бота для подключения к экземплярам Azure govermnet. Ниже приведены сведения о конфигурации:
 
-| Имя конфигурации | Значение |
+| Имя конфигурации | Value |
 |----|----|
 | ChannelService | `https://botframework.azure.us` |
 | OAuthUrl | `https://tokengcch.botframework.azure.us` |
@@ -293,7 +293,7 @@ this.onMessage(async (context, next) => {
 
 |Название примера | Описание | .NETCore | Node.js | Python|
 |----------------|-----------------|--------------|----------------|-------|
-| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
 | Образцы бота | Набор образцов ботов | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore) |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python)|
 
 ## <a name="next-step"></a>Следующий этап

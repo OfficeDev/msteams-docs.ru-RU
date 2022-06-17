@@ -1,15 +1,14 @@
 ---
 title: Поддержка единого входа для ботов
-description: В статье объясняется, как получить маркер пользователя. В настоящее время разработчик бота может использовать карточку входа или службу бота Azure с поддержкой OAuth.
-keywords: токен, маркер пользователя, поддержка единого входа для ботов, разрешение, Microsoft Graph, Azure AD
+description: Узнайте, как получить маркер пользователя и разработчик бота может использовать карточку входа или службу azure bot с поддержкой карты OAuth.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: c10fe639417ad71814b060ba70e6a33c4ae4038f
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 37c7fcd62c6b85c2220e9db57060da03437d79da
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123470"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144147"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входа для ботов
 

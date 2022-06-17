@@ -1,16 +1,16 @@
 ---
 title: Поиск с автозавершением в адаптивных карточках
 author: Rajeshwari-v
-description: Описывает упреждающий поиск с помощью элемента управления Input.ChoiceSet в адаптивных карточках
+description: В этом модуле вы узнаете, что такое упреждающий поиск в адаптивных карточках с помощью элемента управления Input.ChoiceSet, и реализуйте упреждающий поиск.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: 1e302a74ceffb88989989b42aa8a202d1e79fb36
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 205da5ca0171182047ccd06f7f2926f731ceb94d
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103441"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143895"
 ---
 # <a name="typeahead-search-in-adaptive-cards"></a>Поиск с автозавершением в адаптивных карточках
 
@@ -42,7 +42,7 @@ ms.locfileid: "65103441"
 
 # <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-Мобильные клиенты Android и iOS поддерживают поиск по типу в адаптивных карточках.
+Android и iOS мобильные клиенты поддерживают упреждающее поиск в адаптивных карточках.
 
 **Сценарий**
 
@@ -88,8 +88,8 @@ ms.locfileid: "65103441"
 | Свойство| Тип | Обязательный | Описание |
 |-----------|------|----------|-------------|
 | type | Data.Query | Да | Указывает, что это объект Data.Query.|
-| Набора данных | String | Да | Указывает тип данных, извлекаемых динамически. |
-| value | String | Нет | Заполняет запрос на вызов бота входными данными, предоставленными пользователем `ChoiceSet`. |
+| Набора данных | Строка | Да | Указывает тип данных, извлекаемых динамически. |
+| value | Строка | Нет | Заполняет запрос на вызов бота входными данными, предоставленными пользователем `ChoiceSet`. |
 | count | Номер | Нет | Заполняет запрос на вызов бота, чтобы указать количество элементов, которые должны быть возвращены. Бот игнорирует его, если пользователи хотят отправить другую сумму. |
 | skip | Номер | Нет | Заполняет запрос на вызов бота, чтобы указать, что пользователи хотят разбиения на страницы и двигаться вперед в списке. |
 
@@ -415,7 +415,7 @@ protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext
 |----------------|-----------------|--------------|----------------|
 | Управление упреждающего поиска на адаптивных карточках | В примере показаны функции статического и динамического управления упреждающего поиска в адаптивных карточках. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-type-ahead-search-adaptive-cards/nodejs) |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 * [Универсальные действия для адаптивных карточек](Universal-actions-for-adaptive-cards/Overview.md)
 * [Модули задач](../what-are-task-modules.md)

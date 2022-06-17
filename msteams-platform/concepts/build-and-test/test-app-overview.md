@@ -1,15 +1,14 @@
 ---
 title: Протестируйте обзор приложения
-description: Описывает процесс тестирования и отладки пользовательского приложения Teams в Microsoft 365.
+description: В этом модуле вы узнаете, как тестировать и отлаживать пользовательское приложение Teams в Microsoft 365 и добавлять тестовые данные в Microsoft 365 клиента.
 ms.topic: how-to
-ms.localizationpriority: high
-keywords: Настройка отправки тестового приложения клиента Microsoft 365 Teams
-ms.openlocfilehash: 98c00ece54e1654570556bac122e6760b283b73f
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.localizationpriority: medium
+ms.openlocfilehash: 3fa27881a081021fbb405208a5f7b4a259012aaf
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111530"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144385"
 ---
 # <a name="test-your-app"></a>Тестирование приложения
 

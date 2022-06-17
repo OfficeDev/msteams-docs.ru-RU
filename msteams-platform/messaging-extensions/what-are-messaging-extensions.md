@@ -1,16 +1,16 @@
 ---
 title: Расширения для сообщений
 author: surbhigupta
-description: Обзор расширений для сообщений на платформе Microsoft Teams
+description: В этом модуле вы узнаете о расширениях обмена сообщениями и сценариях, в которых расширения сообщений используются на Microsoft Teams платформе.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: 52c9b5a890197f652c8debcae32bc6ab08d7f1c7
-ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.openlocfilehash: 5a63c1a36217f4c0aa237e38537be2e094acdea3
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602259"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144322"
 ---
 # <a name="message-extensions"></a>Расширения для сообщений
 
@@ -237,8 +237,8 @@ async handleTeamsMessagingExtensionQuery(context, query) {
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |------------|-------------|----------------|------------|------------|
 | Расширение для сообщений с командами на основе действий | В этом примере показано, как создать расширение для сообщений на основе действий. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
-| Расширение для сообщений с командами на основе поиска | В этом примере показано, как создать расширение для сообщений на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
-|Действие расширения для сообщения для планирования задач|В этом примере показано, как запланировать задачу из команды действия расширения для сообщений и получить карточку с напоминанием в запланированную дату и время.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-message-reminder/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-message-reminder/nodejs)|
+| Расширение для сообщений с командами на основе поиска | В этом примере показано, как создать расширение для сообщений на основе поиска. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search) |
+|Действие расширения для сообщения для планирования задач|В этом примере показано, как запланировать задачу из команды действия расширения для сообщений и получить карточку с напоминанием в запланированную дату и время.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-message-reminder/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-message-reminder/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
 

@@ -1,15 +1,14 @@
 ---
 title: Звонки в режиме реального времени и собрания по сети с помощью Microsoft Teams
-description: Поймите ключевые концепции создания бота, который может проводить аудио- и видеозвонки в режиме реального времени и собрания по сети. Узнайте о сеансах мультимедиа, частоте кадров, формате звука и видео и ознакомьтесь с ресурсами для разработчиков
+description: Ознакомьтесь с основными понятиями в создании бота, который может проводить аудио- и видеозвонки в режиме реального времени, а также собрания по сети.
 ms.topic: conceptual
-ms.localizationpriority: high
-keywords: аудиопоток видеопоток аудио/видеозвонки встречи мультимедиа в режиме реального времени мультимедиа на базе приложения мультимедиа на базе службы
-ms.openlocfilehash: 0e5343567be3843c457885fcf506446b20b6dcf7
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.localizationpriority: medium
+ms.openlocfilehash: b1ff14a0229483312c0de6fdb33836ee205f1e14
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111992"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143790"
 ---
 # <a name="real-time-media-calls-and-meetings-with-microsoft-teams"></a>Звонки и собрания в режиме реального времени с помощью Microsoft Teams
 

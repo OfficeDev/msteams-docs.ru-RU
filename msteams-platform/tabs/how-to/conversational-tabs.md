@@ -1,17 +1,16 @@
 ---
 title: Создание вкладок бесед
 author: surbhigupta
-description: Узнайте, как создать чат вложенной сущности беседы для вкладок канала, чтобы управлять беседами с помощью примеров кода
-keywords: Настраиваемый канал вкладок teams
+description: В этом модуле вы узнаете, как создать чат вложенной сущности для вкладок канала, чтобы управлять беседами с помощью примеров кода
 ms.topic: conceptual
 ms.author: lomeybur
 ms.localizationpriority: medium
-ms.openlocfilehash: ddf14d9d7dabe5b20cc21181783dc5c33f29eff9
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: f982c49c645a59f25182b7635839ece723c71ef3
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111656"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142082"
 ---
 # <a name="create-conversational-tabs"></a>Создание вкладок бесед
 
@@ -94,7 +93,7 @@ microsoftTeams.conversations.onCloseConversation = (conversationResponse) => {
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка "Создание беседы"| Microsoft Teams пример приложения для демонстрации создания вкладки беседы. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
+|Вкладка "Создание беседы"| Microsoft Teams пример приложения для демонстрации создания вкладки беседы. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 
@@ -103,7 +102,7 @@ microsoftTeams.conversations.onCloseConversation = (conversationResponse) => {
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Teams вкладок](~/tabs/what-are-tabs.md)
+* [Вкладки Teams](~/tabs/what-are-tabs.md)
 * [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
 * [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
 * [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)

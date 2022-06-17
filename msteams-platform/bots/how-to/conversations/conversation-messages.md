@@ -1,16 +1,15 @@
 ---
 title: Сообщения в беседах с ботами
-description: Описывает способы общения с Microsoft Teams ботом. Узнайте о Teams канале, уведомлениях о сообщении, изображениях и адаптивных карточках с помощью примеров кода.
+description: Узнайте о способах общения с ботом Teams и Teams канала, уведомления о сообщении, изображениях, адаптивных карточках с помощью примеров кода
 ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
-keyword: receive message send message picture message channel data adaptive cards
-ms.openlocfilehash: 1704ff5fcbff177651a8ff6fec952fb76aa1a44c
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: 7e71e6ce6c70967de9c9f086251772df8d758f4a
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66033017"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142453"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -242,10 +241,10 @@ async def on_members_added_activity(
 
 | Формат    | От пользователя к боту | От бота к пользователю | Примечания                                                                                   |
 |-----------|------------------|------------------|-----------------------------------------------------------------------------------------|
-| Форматированный текст  | ✔                | ✔                | Бот может отправлять форматированный текст, изображения и карточки. Пользователи могут отправлять боту форматированный текст и изображения.                                                                                        |
-| Изображения  | ✔                | ✔                | Максимум 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.  |
-| Карточки     | ✖                | ✔                | Сведения о [поддерживаемых Teams](~/task-modules-and-cards/cards/cards-reference.md) см. в справочнике по Teams карточки. |
-| Эмодзи    | ✔                | ✔                | Teams в настоящее время поддерживает эмодзи через UTF-16, например U+1F600 для усинхронного распознавания лиц. |
+| Форматированный текст  | ✔️                | ✔️                | Бот может отправлять форматированный текст, изображения и карточки. Пользователи могут отправлять боту форматированный текст и изображения.                                                                                        |
+| Изображения  | ✔️                | ✔️                | Максимум 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.  |
+| Карточки     | ❌                | ✔️                | Сведения о [поддерживаемых Teams](~/task-modules-and-cards/cards/cards-reference.md) см. в справочнике по Teams карточки. |
+| Эмодзи    | ✔️                | ✔️                | Teams в настоящее время поддерживает эмодзи через UTF-16, например U+1F600 для усинхронного распознавания лиц. |
 
 ## <a name="notifications-to-your-message"></a>Уведомления в сообщении
 
@@ -387,7 +386,7 @@ async def on_message_activity(self, turn_context: TurnContext):
      Вы можете закрыть **или** переключить чат, чтобы закрыть сообщение.
 
      Если вы не хотите отображать сообщение об успешном выполнении, `hide` задайте атрибут в `true` свойстве `msTeams` `feedback` . Ниже приведен пример:
-    
+
      ```json
         "content": {
             "type": "AdaptiveCard",
@@ -406,7 +405,6 @@ async def on_message_activity(self, turn_context: TurnContext):
             ]
         } 
      ```
-    
 
 Дополнительные сведения о карточках и карточках в ботах см. в [документации по карточкам](~/task-modules-and-cards/what-are-cards.md).
 
@@ -429,7 +427,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

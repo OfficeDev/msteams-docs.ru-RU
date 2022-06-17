@@ -1,16 +1,15 @@
 ---
 title: Отправка и получение файлов через бот
-description: Узнайте, как отправлять и получать файлы через бот с помощью API Graph для личной области, области канала и области группового чата. Используйте API бота Teams с помощью примеров кода на основе пакета SDK Bot Framework версии 4.
-keywords: teams боты файлы отправлять получать; teams bots files send receive
+description: Узнайте, как отправлять и получать файлы через бот с помощью API Graph для личной области, области канала и области группового чата.
 ms.date: 05/20/2019
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 102bdeb2cd05882266299f7962a6b69b1ecfa37c
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: a7746b15798c46c807c276fb7d29f34b59858528
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111215"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142929"
 ---
 # <a name="send-and-receive-files-through-the-bot"></a>Отправка и получение файлов через бот
 

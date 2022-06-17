@@ -6,12 +6,12 @@ ms.custom: scenarios:getting-started; languages:ASP,Node.js
 ms.localizationpriority: medium
 ms.topic: tutorial
 ms.date: 11/09/2018
-ms.openlocfilehash: 7f423cfd33fdca9d40f2adfe32b59ace26d39adc
-ms.sourcegitcommit: 61003a14e8a179e1268bbdbd9cf5e904c5259566
+ms.openlocfilehash: 15b5837fb8155d8b34b2c337a550ecbaaae9d86a
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737222"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142523"
 ---
 # <a name="update-nodejs-app-package-in-app-studio"></a>Обновление Node.js приложения в App Studio
 
@@ -101,7 +101,7 @@ App Studio — это Teams, которое можно установить из
 
 Замените `yourteamsapp.ngrok.io` URL-адрес, используемый при размещении приложения.
 
-#### <a name="bots"></a>боты;
+#### <a name="bots"></a>Боты
 
 В приложение можно легко добавить функциональные возможности ботов. В **Hello World** примере приложения уже есть бот, но его необходимо зарегистрировать в корпорации Майкрософт:
 
@@ -126,7 +126,7 @@ App Studio — это Teams, которое можно установить из
 1. **Обновите адрес конечной точки бота** `https://yourteamsapp.ngrok.io/api/messages``yourteamsapp.ngrok.io` и замените его URL-адресом, который использовался при размещении приложения.
 1. Теперь сохраните текстовый файл, так как необходимо добавить сведения из файла в размещенное приложение, чтобы обеспечить безопасную связь с ботом.
 
-#### <a name="messaging-extensions"></a>расширения для обмена сообщениями;
+#### <a name="messaging-extensions"></a>Расширения для система обмена сообщениями
 
 Расширения обмена сообщениями позволяют пользователям запрашивать сведения из службы и публиковать эти сведения. Информация будет опубликована в виде карточек в беседе канала. Расширения обмена сообщениями отображаются в нижней части окна создания.
 
@@ -217,8 +217,8 @@ WEBSITE_NODE_DEFAULT_VERSION=8.9.4
 Где:
 
 * Учетные данные авторизации для бота:
-  * MICROSOFT_APP_ID идентификатор
-  * MICROSOFT_APP_PASSWORD является паролем
+  * MICROSOFT_APP_ID идентификатор.
+  * MICROSOFT_APP_PASSWORD является паролем.
 * NODE_DEBUG, что происходит в боте в консоли Visual Studio Code отладки
 * NODE_CONFIG_DIR указывает на каталог в корне репозитория ( `src` по умолчанию при локальном запуске приложения выполняется поиск корневого каталога в папке).
 

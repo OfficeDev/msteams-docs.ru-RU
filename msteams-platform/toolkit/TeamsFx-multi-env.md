@@ -1,17 +1,17 @@
 ---
 title: Работа с несколькими средами TeamsFX в наборе средств Teams
 author: MuyangAmigo
-description: О множественной среде TeamsFX
+description: В этом модуле вы узнаете о нескольких средах TeamsFX, таких как создание среды, выбор целевой среды и т. д.
 ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview of multiple environment
 ms.date: 11/29/2021
-ms.openlocfilehash: 284cc455cdbb7a0c5b859fd4909f0c3a1a99b037
-ms.sourcegitcommit: ff31cbe4840191f004d8fc61dd4fd93d35fcaecb
+ms.openlocfilehash: 6256c620d62233da2420b3dfa7cd53101bf92978
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65938954"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143573"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
@@ -42,8 +42,8 @@ ms.locfileid: "65938954"
 
 **Чтобы добавить другую удаленную среду**:
 
-1. Выберите панель **"Добавить** :::image type="content" source="../assets/images/teams-toolkit-v2/add-sso/teams-toolkit-sidebar-icon.png" alt-text="боковую панель"::: " для единого входа Teams на левой панели навигации.
-2. Выберите **+Teams: Создайте среду в** разделе **"Среда** ", как показано на следующем рисунке:
+1. Выберите **Teams** добавить боковую :::image type="content" source="../assets/images/teams-toolkit-v2/add-sso/teams-toolkit-sidebar-icon.png" alt-text="панель на"::: левой панели навигации.
+2. Выберите **+Teams: Создать среду в** разделе **"Среда**", как показано на следующем рисунке:
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create new env.png" alt-text="создать":::
 
@@ -57,9 +57,9 @@ ms.locfileid: "65938954"
 
 ## <a name="project-folder-structure"></a>Структура папки проекта
 
-После создания проекта можно просмотреть папки и файлы проекта в **обозревателе** в VS Code. Помимо пользовательских кодов, Набор средств Teams использует некоторые файлы для поддержки конфигурации, состояния и шаблона приложения. Следующий список перечисляет файлы и описывает их связь с несколькими средами.
+После создания проекта можно просмотреть папки и файлы проекта в **обозревателе** в VS Code. Помимо пользовательских кодов, Teams Toolkit использует некоторые файлы для поддержки конфигурации, состояния и шаблона приложения. Следующий список перечисляет файлы и описывает их связь с несколькими средами.
 
-* `.fx/configs`: настройте файлы, которые пользователь может настроить для приложения Teams.
+* `.fx/configs`: настройте файлы, которые пользователь может настроить для Teams приложения.
   * `config.<envName>.json`: файл конфигурации для каждой среды
   * `azure.parameters.<envName>.json`: файл параметров для подготовки Azure bicep для каждой среды.
   * `projectSettings.json`: глобальные параметры проекта, которые применяются ко всем средам
@@ -90,9 +90,9 @@ ms.locfileid: "65938954"
 <br>
 
 <br><details>
-<summary><b>Сценарий 1. Настройка имени приложения Teams для разных сред </b></summary>
+<summary><b>Сценарий 1. Настройка Teams приложения для разных сред</b></summary>
 
-В качестве имени приложения Teams можно `myapp(dev)` задать среду по `dev` умолчанию и `myapp(staging)` промежуточную среду `staging`.
+Можно задать имя Teams для `myapp(dev)` `dev` `myapp(staging)` среды по умолчанию и промежуточной среды.`staging`
 
 Выполните действия по настройке:
 
@@ -118,14 +118,14 @@ ms.locfileid: "65938954"
 3. Создайте новую среду и приведите `staging` к ней имя, если она не существует.
 4. Откройте файл конфигурации `.fx/configs/config.staging.json`.
 5. Обновите то же свойство `myapp(staging)`.
-6. Запустите команду подготовки для сред `dev` и `staging`, чтобы обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с помощью Набора средств Teams см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit).
+6. Запустите команду подготовки для сред `dev` и `staging`, чтобы обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с Teams Toolkit см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit).
 
 </details>
 
 <details>
 <summary><b>Сценарий 2. Настройка описания приложения Teams для разных сред</b></summary>
 
-Вы можете задать разные описания приложений Teams для разных сред:
+Вы можете задать разные Teams приложения для разных сред:
 
 * Для среды по умолчанию `dev` описанием является `my app description for dev`
 * Для среды промежуточного размещения `staging` описанием является `my app description for staging`
@@ -155,7 +155,7 @@ ms.locfileid: "65938954"
 3. Создайте новую среду и приведите `staging` к ней имя, если она не существует.
 4. Откройте файл конфигурации `.fx/configs/config.staging.json`.
 5. Добавьте то же свойство в `my app description for staging`.
-6. Откройте шаблон манифеста приложения `templates/appPackage/manifest.template.json`Teams.
+6. Откройте Teams манифеста приложения`templates/appPackage/manifest.template.json`.
 7. Обновите свойство, `description > short` чтобы использовать **переменную,** определенную в настройках файлов с синтаксисом кэша `{{config.manifest.description.short}}`.
   
   Изменения `manifest.template.json` будут выглядеть следующим образом:
@@ -181,11 +181,11 @@ ms.locfileid: "65938954"
 <details>
 <summary><b>Сценарий 3. Настройка описания приложения Teams для всех сред</b></summary>
 
-В описании приложения Teams можно задать `my app description` значение для всех сред.
+Вы можете задать описание Teams для `my app description` всех сред.
 
 Так как шаблон манифеста приложения Teams используется во всех средах, мы можем обновить в нем значение описания для нашей целевой среды:
 
-1. Откройте шаблон манифеста приложения `templates/appPackage/manifest.template.json`Teams.
+1. Откройте Teams манифеста приложения`templates/appPackage/manifest.template.json`.
 2. Обновите свойство `description > short` **с жестко заданной строкой**`my app description`.
   
   Изменения `manifest.template.json` будут выглядеть следующим образом:

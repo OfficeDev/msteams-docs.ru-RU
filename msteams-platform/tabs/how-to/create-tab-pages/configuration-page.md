@@ -1,17 +1,16 @@
 ---
 title: Создать страницу конфигурации
 author: surbhigupta
-description: Узнайте, как создать страницу конфигурации для настройки параметров канала или группового чата, например получения данных контекста, вставки заполнителей и проверки подлинности с помощью примеров кода.
-keywords: настраиваемый канал группы вкладок Teams
+description: В этом модуле вы узнаете, как создать страницу конфигурации для настройки канала или группового чата для параметров, таких как получение данных контекста и т. д.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: ec1a479421b7439db7a5492a059d470bd2d7024e
-ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
+ms.openlocfilehash: 2c439b38c061ad5f61538bb841f8ce7b9267ec0a
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66048978"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143958"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 

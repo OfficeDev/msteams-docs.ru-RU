@@ -1,16 +1,16 @@
 ---
 title: Определение команд действий расширения для сообщений
 author: surbhigupta
-description: Обзор команд действий расширения для сообщений с примером манифеста приложения
+description: В этом модуле вы узнаете, как определить команды действий расширения обмена сообщениями с помощью примера манифеста приложения в Microsoft Teams.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 7bdb3a0572ab7723a03768357260f252fbbf626c
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 64a11741612fdf8efbcca968fed3a3d78cda90b1
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756900"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143433"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 

@@ -1,16 +1,16 @@
 ---
 title: Беседы с ботами в канале и группе
 author: surbhigupta
-description: Как отправлять, получать и обрабатывать сообщения для бота в канале или групповом чате. Статья содержит сведения о рекомендациях по проектированию, создании потоков беседы, использовании @упоминаний и примеры программного кода
+description: Узнайте, как отправлять, получать и обрабатывать сообщения для бота в канале или групповом чате. Ознакомьтесь с рекомендациями по проектированию и т. д.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 6b3adf491ccfed2401308f0b6d283047f24f91e2
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: e9edc06d65120748c6e87ba5a5916f55d6346a9e
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757180"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144413"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Беседы с бото в канале и групповом чате
 

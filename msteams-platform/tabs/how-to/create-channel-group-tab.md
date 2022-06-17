@@ -1,17 +1,17 @@
 ---
 title: Создание вкладки канала или группы
 author: laujan
-description: Краткое руководство по созданию вкладки канала и группы с помощью генератора Yeoman для Microsoft Teams, включая просмотр исходного кода с примерами кода.
+description: В этом модуле вы узнаете, как создать вкладку канала и группы с помощью генератора Yeoman для Microsoft Teams, включая просмотр исходного кода с примерами кода.
 ms.localizationpriority: medium
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: cd50547e1b6d504d20d57ac1c23e741c6e043cf0
-ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.openlocfilehash: 3ac2c126d2228fa17e693eebdf4b64a9149ef45f
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65672952"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142677"
 ---
 # <a name="channel-or-group-tab"></a>Вкладка канала или группы
 

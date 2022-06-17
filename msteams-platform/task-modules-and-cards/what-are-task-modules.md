@@ -1,16 +1,16 @@
 ---
 title: Модули задач
 author: surbhigupta
-description: Добавление модальных всплывающих элементов для сбора и отображения сведений для пользователей из Microsoft Teams приложений
+description: В этом модуле вы узнаете, как добавить модальные всплывающие окна для сбора или отображения сведений для пользователей из Microsoft Teams приложений.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: a7d7778aa4d38dbc879255c449b93590d04f00e2
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: f5bed6e92200d19fc99f8f91d632dd04d61a1722
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756599"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143601"
 ---
 # <a name="task-modules"></a>Модули задач
 
@@ -50,7 +50,7 @@ ms.locfileid: "65756599"
 6. При отображении адаптивной `card` карточки с помощью свойства объекта [TaskInfo](~/task-modules-and-cards/task-modules/invoking-task-modules.md#the-taskinfo-object) добавляется заполнение. Дополнительные сведения см. в [CSS модуля задач для модулей задач HTML или JavaScript](~/task-modules-and-cards/task-modules/invoking-task-modules.md#task-module-css-for-html-or-javascript-task-modules).
 7. Кнопки адаптивной карточки отображаются после выбора параметра **"Зарегистрироваться"**. При использовании собственной страницы создайте собственные кнопки.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Вызов и закрытие модулей задач](~/task-modules-and-cards/task-modules/invoking-task-modules.md)

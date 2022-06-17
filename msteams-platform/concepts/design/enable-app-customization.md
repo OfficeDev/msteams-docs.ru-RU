@@ -1,17 +1,16 @@
 ---
 title: Настройка приложения Teams
 author: heath-hamilton
-description: Узнайте, как администраторы Teams могут настраивать ваше приложение для своей организации.
-ms.localizationpriority: high
+description: В этом модуле вы узнаете, как Teams администраторы могут настроить приложение Teams для своей организации и скрыть Teams приложения, пока администратор не утвердит его.
+ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-keywords: фирменный цвет для акцента скрыть утверждение приложения
-ms.openlocfilehash: 4728e6f34680d51983558d1ad96c47ffe3650234
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: 224f2d755ad74b7ded81cf6ffb1791169c6eb3b7
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111201"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143202"
 ---
 # <a name="customize-your-teams-app"></a>Настройка приложения Teams
 

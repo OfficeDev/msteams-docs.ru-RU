@@ -1,15 +1,15 @@
 ---
 title: Последовательные рабочие процессы
-description: Сведения о последовательных рабочих процессах для адаптивных карточек с использованием универсальных действий с примерами кода
+description: В этом модуле вы узнаете о последовательных рабочих процессах для адаптивных карточек с использованием универсальных действий с примерами кода
 author: surbhigupta12
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 32200fc7a4df12567ba4000aad34e5a229dbc466
-ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+ms.openlocfilehash: 40743ccd67386aae72685536ede1ae50d5aea907
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65073783"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143314"
 ---
 # <a name="sequential-workflows"></a>Последовательные рабочие процессы
 
@@ -127,7 +127,7 @@ var adaptiveCardResponse = JObject.FromObject(new
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Бот организации питания Teams | Создайте бота, который принимает заказ на питание с помощью адаптивных карточек. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
+| Бот организации питания Teams | Создание бота, который принимает заказы на обед с помощью адаптивных карточек. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
 | Адаптивные карточки последовательных рабочих процессов | Демонстрация реализации последовательных рабочих процессов, пользовательских представлений и актуальных адаптивных карточек в ботах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы

@@ -1,17 +1,16 @@
 ---
 title: Создание приложений с помощью набора средств Teams и Visual Studio
-description: Начните создавать отличные пользовательские приложения непосредственно в Visual Studio с помощью набора средств Microsoft Teams. Узнайте, как настроить приложение в Visual Studio, проверить приложение и опубликовать его из Visual Studio и портала разработчика.
-keywords: набор средств Teams Visual Studio
+description: Узнайте, как создавать пользовательские приложения непосредственно в Visual Studio с помощью Teams Toolkit и настраивать приложение в Visual Studio, проверять приложение и т. д.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 1/13/2022
 ms.author: johmil
-ms.openlocfilehash: 9dbe606b99ef493a136381667bbd1c1da1f955b0
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: aa7fdaad1d56966031eb13b6b05f145c8e734988
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756459"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142047"
 ---
 # <a name="teams-toolkit-for-visual-studio"></a>Набор средств Teams для Visual Studio
 

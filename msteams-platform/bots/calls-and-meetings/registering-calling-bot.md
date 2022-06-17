@@ -1,15 +1,14 @@
 ---
 title: Регистрация бота для звонков и собраний для Microsoft Teams
-description: Узнайте, как зарегистрировать новый бот для аудио- и видеовызовов для Microsoft Teams, создать новый бот или добавить возможность вызова, а также добавить разрешения Graph.
+description: В этом модуле вы узнаете, как зарегистрировать новый бот для аудио- и видеозвонков для Microsoft Teams, создать бот или добавить возможность вызова и добавить разрешения графа.
 ms.topic: conceptual
 ms.localizationpriority: medium
-keywords: вызов бот аудио- видео мультимедиа
-ms.openlocfilehash: 71ab66ab6c5f53405897447b8d531ed0ce6dac99
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: 74e786850f11a77cea5cc0980febb56d550ae671
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65297165"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143797"
 ---
 # <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация бота для звонков и собраний для Microsoft Teams
 

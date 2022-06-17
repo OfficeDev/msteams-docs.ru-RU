@@ -1,15 +1,14 @@
 ---
 title: Настройка поставщиков удостоверений OAuth 2.0
-description: Описание настройки поставщиков удостоверений с фокусом на Microsoft Azure Active Directory (Azure AD)
+description: В этом модуле вы узнаете, как настроить поставщики удостоверений с фокусом на Microsoft Azure Active Directory (Azure AD)
 ms.topic: how-to
 ms.localizationpriority: medium
-keywords: проверка подлинности Teams поставщиком удостоверений OAuth от Azure AD
-ms.openlocfilehash: 6fb17041e9169b4d5e74295cbb62ea97c8befd0f
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.openlocfilehash: 2d344fb5ffcbde35ad9e85eed9ea662d2a0ca9f6
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65887571"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143447"
 ---
 # <a name="configure-identity-providers"></a>Настройка поставщиков удостоверений
 

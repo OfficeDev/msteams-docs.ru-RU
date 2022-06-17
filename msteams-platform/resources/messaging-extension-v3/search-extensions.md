@@ -1,16 +1,15 @@
 ---
 title: Поиск с помощью расширений сообщений
-description: Описание разработки расширений сообщений на основе поиска
-keywords: Поиск расширений сообщений teams
+description: В этом модуле вы узнаете, как разрабатывать расширения сообщений на основе поиска.
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 07/20/2019
-ms.openlocfilehash: dec73b248f6a71f078eff6a956c7875ef3507227
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: a555091558d66e070f09ec6df8338ac686657019
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032944"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142754"
 ---
 # <a name="search-with-message-extensions"></a>Поиск с помощью расширений сообщений
 

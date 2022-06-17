@@ -1,16 +1,16 @@
 ---
 title: Справочные материалы по API приложений для собраний
 author: surbhigupta
-description: Определите ссылки на API приложений для собраний с примерами и примерами кода, чтобы Teams приложения для собраний с ролью участника роли API пользователя, запрос уведомления контекста пользователя.
+description: Узнайте, как определить ссылки на API приложений для собраний с примерами и примерами кода, Teams запрос сигнала уведомления контекста пользователя api роли пользователя для собраний.
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: 5b53b85ef2831261d493302dec3aed8a82910f5d
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: 380f470c51933e4be90d008261ab75eafc566f2c
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032790"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142950"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 

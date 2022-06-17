@@ -1,16 +1,15 @@
 ---
 title: Добавление ботов в приложения Microsoft Teams
-description: Описание начала разработки ботов в Microsoft Teams
+description: В этом модуле вы узнаете, как приступить к разработке ботов в Microsoft Teams и каковы все требования для добавления бота в Teams
 ms.topic: conceptual
-keywords: Teams боты разработка
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: f592ae06efc2c416e70530fe2c46cbfbfc03140b
-ms.sourcegitcommit: d9025e959dcdd011ed4feca820dae7c5d1251b27
+ms.openlocfilehash: 6c57371e0df5739d800fc07e46a014aeb3836bc8
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65755855"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142362"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в приложения Microsoft Teams
 
@@ -27,11 +26,11 @@ ms.locfileid: "65755855"
 
 Бот отображается так же, как и любой другой участник группы, с которым вы взаимодействуете в беседе, за исключением того, что он имеет шестиугольный значок аватара и всегда находится в сети.
 
-Поведение бота отличается в зависимости от типа беседы, в которых он участвует. Боты в Teams поддерживают несколько видов бесед, называемых областями в [манифесте приложения](~/resources/schema/manifest-schema.md).
+Бот ведет себя по-разному в зависимости от типа беседы, в которых он участвует. Боты в Teams поддерживают несколько видов бесед, называемых областями в [манифесте приложения](~/resources/schema/manifest-schema.md).
 
 * `teams`: также называются беседами каналов.
 * `personal`: беседы между ботом и одним пользователем.
-* `groupChat`: беседа между ботом и двумя или более пользователями.
+* `groupChat` Беседа между ботом и двумя или более пользователями.
 
 Дополнительные сведения см. в статье [Беседа с ботом Microsoft Teams](~/resources/bot-v3/bot-conversations/bots-conversations.md).
 
@@ -60,7 +59,7 @@ Microsoft Teams поддерживает большую часть [Microsoft Bo
 
 ## <a name="build-a-great-teams-bot"></a>Создание отличного бота Teams
 
-В следующих разделах описывается процесс создания отличного бота для Teams.
+В следующих статьях описывается процесс создания отличного бота для Teams:
 
 * [Создание бота](~/resources/bot-v3/bots-create.md): воспользуйтесь отличными инструментами, документацией и сообществом, предоставляемыми командой Bot Framework.
 * [Обращение к боту](~/resources/bot-v3/bot-conversations/bots-conversations.md): добавьте основной поток беседы и используйте функции, характерных для канала. При разработке в .NET или Node.js используйте наши расширения для пакета SDK Bot Builder, чтобы упростить работу.

@@ -1,17 +1,16 @@
 ---
 title: Добавление проверки подлинности для бота Teams
 author: surbhigupta
-description: Как добавить проверку подлинности OAuth для бота в Microsoft Teams с помощью Azure Active Directory. Узнайте, как создавать, развертывать и интегрировать боты с поддержкой проверки подлинности.
+description: Узнайте, как добавить проверку подлинности OAuth в бот в Teams с помощью Azure Active Directory. Узнайте, как создавать, развертывать и интегрировать боты с поддержкой проверки подлинности.
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-keywords: развертывание манифеста бота в эмуляторе Azure для регистрации бота в группе ресурсов
-ms.openlocfilehash: 9594723f671f69a5dc4cb99f0ab48385603e3394
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 2a9ebf96f5795b6674646bc50dd856badf59152e
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756949"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142565"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 
@@ -340,7 +339,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 1. На левой панели выберите **Параметры**.
 1. В поле **Конечная точка обмена сообщениями** введите URL-адрес, полученный выше, с `api/messages` в конце. Пример: `https://botteamsauth.azurewebsites.net/api/messages`.
     > [!NOTE]
-    > Для бота разрешена только одна конечная точка обмена сообщениями
+    > Для бота разрешена только одна конечная точка обмена сообщениями.
 1. Нажмите кнопку **Сохранить** в левом верхнем углу.
 
 ## <a name="test-the-bot-using-the-emulator"></a>Тестирование бота с помощью Emulator
@@ -629,6 +628,15 @@ protected virtual Task OnSigninVerifyStateAsync(ITurnContext<IInvokeActivity> tu
 [!code-python[allow logout](~/../botbuilder-samples/samples/python/46.teams-auth/dialogs/logout_dialog.py?range=29-36&highlight=6)]
 
 ---
+
+## <a name="code-sample"></a>Пример кода
+
+В этом разделе приведен пример пакета SDK для проверки подлинности бота версии 3.
+
+| **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
+|---------------|------------|------------|-------------|---------------|
+| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показана система единого входа для Tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

@@ -1,23 +1,23 @@
 ---
 title: Совместная работа над teamsFx Project с помощью Teams Toolkit
 author: yanjiang
-description: Совместная работа над teamsFx Project с помощью Teams Toolkit
+description: Из этой статьи вы узнаете, как совместно работать над TeamsFx Project с помощью Teams Toolkit и совместной работы с другими разработчиками.
 ms.author: rentu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 099820252fd83a2d916e8d61f3b83b63291695e9
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 0f81990603b3e0275a057c489d7fac44ee0127cc
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66124020"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142061"
 ---
 # <a name="collaborate-on-teams-project-using-teams-toolkit"></a>Совместная работа над проектом Teams с помощью набора средств Teams
 
 Несколько разработчиков могут совместно выполнять отладку, подготовку и развертывание для одного проекта TeamsFx, но для этого необходимо вручную задать соответствующие разрешения приложения Teams и Microsoft Azure Active Directory (Azure AD). Teams Toolkit поддерживает функцию совместной работы, позволяющую разработчикам и владельцу проекта приглашать других разработчиков или участников совместной работы в проект TeamsFx для отладки, подготовки и развертывания того же проекта TeamsFx.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Подписка на Microsoft 365
 * Azure с действительной подпиской

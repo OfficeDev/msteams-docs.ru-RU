@@ -1,17 +1,16 @@
 ---
 title: Включение согласия для конкретного ресурса в Teams
-description: Описывает согласие на использование ресурсов в Teams и способы его использования.
-ms.localizationpriority: high
+description: В этом модуле вы узнаете о согласии для конкретных ресурсов в Microsoft Teams и о том, как воспользоваться его преимуществами.
+ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-keywords: авторизация групп OAuth SSO Azure AD rsc Graph
-ms.openlocfilehash: 8a90d1280f94de099543d879028a84d538c588ac
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: f311723aa6bdb9fc95207169b7ab55434d246509
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111509"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144357"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -159,8 +158,8 @@ ms.locfileid: "65111509"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |Идентификатор приложения Azure AD Подробности в статье [Регистрация приложения на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать ошибочного отклика; подойдет любая строка.|
+|`id` |String |Идентификатор приложения Azure AD Подробнее см. в статье [Регистрация приложения на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|String| Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа об ошибке; подойдет любая строка.|
 
 Укажите разрешения, необходимые приложению.
 
@@ -327,9 +326,9 @@ ms.locfileid: "65111509"
 
 |Имя| Тип | Описание|
 |---|---|---|
-|`id` |String |Идентификатор приложения Azure AD Подробности в статье [Регистрация приложения на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
-|`resource`|String| Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать ошибочного отклика; подойдет любая строка.|
-|`applicationPermissions`|Массив строк|Разрешения RSC для приложения. Подробности в статье [Разрешения для определенных ресурсов](resource-specific-consent.md#resource-specific-permissions).|
+|`id` |String |Идентификатор приложения Azure AD Подробнее см. в статье [Регистрация приложения на портале Azure AD.](resource-specific-consent.md#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).|
+|`resource`|String| Это поле не используется в RSC, но должно быть добавлено и иметь значение, чтобы избежать ответа об ошибке; подойдет любая строка.|
+|`applicationPermissions`|Массив строк|Разрешения RSC для приложения. Подробнее см. в статье [Разрешения для определенных ресурсов](resource-specific-consent.md#resource-specific-permissions).|
 
 Пример RSC в команде
 

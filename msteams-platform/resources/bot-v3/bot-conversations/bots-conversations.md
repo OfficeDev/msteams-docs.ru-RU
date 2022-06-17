@@ -1,16 +1,15 @@
 ---
 title: Отправка и получение сообщений с помощью бота
-description: В этой статье описывается, как отправлять и получать сообщения с помощью ботов в Microsoft Teams
+description: В этом модуле вы узнаете, как проводить беседу с ботом Microsoft Teams, упреждающим сообщением, основами беседы, содержимым сообщений и форматированием
 ms.topic: overview
 ms.localizationpriority: medium
-keywords: Сообщения ботов teams
 ms.date: 05/20/2019
-ms.openlocfilehash: 0d4665d098e0e14fa3de5f2667c7e970b545b284
-ms.sourcegitcommit: 430bf416bb8d1b74f926c8b5d5ffd3dbb0782286
-ms.translationtype: HT
+ms.openlocfilehash: fdf408a9e9d49c9c5c862a6b4dda3c7db7de93e8
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296975"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143391"
 ---
 # <a name="have-a-conversation-with-a-microsoft-teams-bot"></a>Беседа с ботом Microsoft Teams
 
@@ -74,7 +73,7 @@ ms.locfileid: "65296975"
 
 Картинки отправляются путем добавления вложений к сообщению. Дополнительные сведения о вложениях см. в [документации по Bot Framework](/azure/bot-service/dotnet/bot-builder-dotnet-add-media-attachments?view=azure-bot-service-3.0&preserve-view=true).
 
-Размер рисунков не должен превышать 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF. GIF с анимацией не поддерживается.
+Изображения могут иметь не более 1024×1024 МБ и 1 МБ в формате PNG, JPEG или GIF; Анимированный GIF-файл не поддерживается.
 
 Рекомендуется указать высоту и ширину каждого изображения с помощью XML. При использовании Markdown размер изображения по умолчанию — 256×256. Например:
 
@@ -219,7 +218,7 @@ string tenantId = channelData.Tenant.Id;
 
 ### <a name="rest-api"></a>REST API
 
-Чтобы выпустить обновление сообщения, просто выполните запрос PUT к конечной точке `/v3/conversations/<conversationId>/activities/<activityId>/` с использованием заданного ИД действия. Для выполнения этого сценария необходимо кэшировать идентификатор действия, возвращенный исходным вызовом POST.
+Чтобы выполнить обновление сообщения, выполните запрос PUT к конечной `/v3/conversations/<conversationId>/activities/<activityId>/` точке, используя заданный идентификатор действия. Для выполнения этого сценария необходимо кэшировать идентификатор действия, возвращенный исходным вызовом POST.
 
 ```json
 PUT /v3/conversations/19%3Aja0cu120i1jod12j%40skype.net/activities/012ujdo0128

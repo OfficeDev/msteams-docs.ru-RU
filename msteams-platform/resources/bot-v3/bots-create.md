@@ -1,16 +1,15 @@
 ---
 title: Создать бота
-description: Описывает создание ботов в Microsoft Teams
+description: В этом модуле вы узнаете, как создать ботов с помощью Microsoft Bot Framework и готовы к работе в Microsoft Teams
 ms.topic: how-to
-keywords: Создание ботов teams
 ms.localizationpriority: medium
 ms.date: 12/07/2018
-ms.openlocfilehash: 92d4593290d1332b86b370a49b20daaf43868a51
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 0b39593917585db73eccd36492bcbb7b9fdd6dfd
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757390"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144014"
 ---
 # <a name="create-a-bot"></a>Создать бота
 

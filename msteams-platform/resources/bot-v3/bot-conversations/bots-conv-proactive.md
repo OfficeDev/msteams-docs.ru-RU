@@ -1,15 +1,14 @@
 ---
 title: Упреждающий обмен сообщениями для ботов
-description: Узнайте, как использовать упреждающий обмен сообщениями для ботов в Microsoft Teams
+description: В этом модуле вы узнаете, как использовать упреждающий обмен сообщениями для ботов и рекомендации по упреждающим обмена сообщениями в Microsoft Teams
 ms.topic: conceptual
-ms.localizationpriority: high
-keywords: Сценарии teams упреждающие сообщения чат-бот беседа
-ms.openlocfilehash: 12c6f9ad79d7e28f31e3985930557339e75ccbbf
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.localizationpriority: medium
+ms.openlocfilehash: ee193cd7dfcfec20f501483eabc3a485cff0caab
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111488"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143132"
 ---
 # <a name="proactive-messaging-for-bots"></a>Упреждающий обмен сообщениями для ботов
 
@@ -17,11 +16,10 @@ ms.locfileid: "65111488"
 
 Упреждающее сообщение — это сообщение, отправляемое ботом для начала беседы. Существует множество различных причин для инициирования беседы ботом, в том числе:
 
-* приветствия в личных беседах с ботами;
-* ответы на опросы;
-* уведомления о внешних событиях.
-
-Отправка сообщения для запуска нового потока беседы отличается от отправки сообщения в ответ на существующую беседу: когда бот начинает новую беседу, то беседы, в которой можно опубликовать сообщение, еще не существует. Чтобы отправить упреждающее сообщение, выполните следующие шаги:
+* Приветственные сообщения для личных бесед ботов.
+* Ответы на опрос.
+* Уведомления о внешних событиях.
+Отправка сообщения для запуска нового потока беседы отличается от отправки сообщения в ответ на существующую беседу: когда бот начинает новую беседу, отсутствует существующая беседа для публикации сообщения. Чтобы отправить упреждающее сообщение, выполните следующие шаги:
 
 1. [Решите, что вы собираетесь сказать](#best-practices-for-proactive-messaging)
 1. [Получите уникальный идентификатор пользователя и идентификатор клиента](#obtain-necessary-user-information)
@@ -71,7 +69,7 @@ ms.locfileid: "65111488"
 
 Вы можете устанавливать только приложения, которые находятся в каталоге приложений организации или магазине приложений Teams.
 
-[Подробные сведения см](/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0&tabs=http&preserve-view=true). в документации Graph по установке приложений для пользователей. В . [NET также есть пример](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176).
+[Подробные сведения см](/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0&tabs=http&preserve-view=true). в документации Graph по установке приложений для пользователей. Пример также приведен [в .NET](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/283523d45f5ce416111dfc34b8e49728b5012739/project/Models/GraphService.cs#L176).
 
 ## <a name="examples"></a>Примеры
 

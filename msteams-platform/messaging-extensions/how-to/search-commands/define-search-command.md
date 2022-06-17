@@ -1,16 +1,16 @@
 ---
 title: Определение команд поиска расширения сообщений
 author: surbhigupta
-description: Узнайте о командах поиска расширений сообщений для Microsoft Teams приложений, чтобы создать команду поиска с помощью манифеста приложения и вручную с помощью примеров кода и примеров.
+description: В этом модуле вы узнаете о командах поиска расширений сообщений для Teams приложений, чтобы создать команду поиска с помощью манифеста приложения и вручную.
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: 987d690beca81574244ae6fbf9e6614ee097ebcb
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: e71e83f8fbd6b0d44257a2d38fd13486b087bc5e
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756620"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142810"
 ---
 # <a name="define-message-extension-search-commands"></a>Определение команд поиска расширения сообщений
 
@@ -139,7 +139,7 @@ ms.locfileid: "65756620"
 
 Выполните [пошаговое руководство,](../../../sbs-messagingextension-searchcommand.yml) чтобы создать расширение сообщений на основе поиска.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Ответ на команды поиска](~/messaging-extensions/how-to/search-commands/respond-to-search.md).

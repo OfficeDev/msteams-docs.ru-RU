@@ -1,16 +1,15 @@
 ---
 title: Управление приложениями Microsoft Teams через портал разработчика
-description: Узнайте, как настраивать, распространять приложения и управлять ими через портал разработчика для Microsoft Teams.
-keywords: Начало работы с командами портала разработчиков
+description: В этом модуле вы узнаете, как настраивать, распространять приложения и управлять ими с помощью портала разработчика для Microsoft Teams.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: c7ca898cd411028dffa6c8a197c78cd796f823e5
-ms.sourcegitcommit: a3567e3e1a52b8e3cb2072b037f0e75bd0f12e58
+ms.openlocfilehash: 948f22cf8f55a33e2d5b24b875678039fd101fc2
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65439327"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142369"
 ---
 # <a name="manage-your-teams-apps-using-developer-portal"></a>Управление приложениями Teams с помощью портала разработчика
 
@@ -27,8 +26,8 @@ ms.locfileid: "65439327"
 
 Портал разработчика предоставляет несколько способов регистрации приложения Teams:
 
-* Регистрация нового приложения
-* Импорт существующего пакета приложения
+* Зарегистрируйте новое приложение.
+* Импорт существующего пакета приложения.
 
 > [!NOTE]
 > Если вы создаете приложение с помощью [набора средств Microsoft Teams для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension), то можете управлять этим приложением на портале разработчика.
@@ -103,7 +102,7 @@ ms.locfileid: "65439327"
 * Операционная система
 * Область
 
- :::image type="content" source="../../assets/images/tdp/dev-analytics-filter.PNG" alt-text="Filter":::
+ :::image type="content" source="../../assets/images/tdp/dev-analytics-filter.PNG" alt-text="Фильтр":::
 
 Выбрав нужные фильтры, можно просмотреть следующие отдельные мини-приложения:
 

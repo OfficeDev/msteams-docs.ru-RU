@@ -1,15 +1,14 @@
 ---
 title: Использование модулей задач в ботах Microsoft Teams
-description: Как использовать модули задач с ботами Microsoft Teams, включая карточки Bot Framework, адаптивные карточки и ссылки на контент.
+description: Узнайте, как использовать модули задач с Microsoft Teams ботами, включая карточки Bot Framework, адаптивные карточки и прямые ссылки.
 ms.localizationpriority: medium
 ms.topic: how-to
-keywords: задачи модули команды боты глубинные ссылки адаптивная карточка
-ms.openlocfilehash: 443ff94fcc5c8b47dda5462555bf181c88b71ce3
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: e7bed83d9f13913b9a72997ac3679f844db3034a
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756718"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142985"
 ---
 # <a name="use-task-modules-from-bots"></a>Использование модулей задач из ботов
 

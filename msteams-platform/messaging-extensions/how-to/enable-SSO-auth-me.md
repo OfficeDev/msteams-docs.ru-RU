@@ -1,16 +1,16 @@
 ---
 title: Поддержка SSO в расширениях для сообщений
 author: KirtiPereira
-description: Узнайте, как включить поддержку SSO расширениям для обмена сообщениями с помощью примеров кода.
+description: В этом модуле вы узнаете, как включить поддержку единого входа для расширений обмена сообщениями с помощью примеров кода.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 900723ca77d4178a6a2ded46617ed53d985d83e3
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.openlocfilehash: a0130f2730289c3e45dfa3aa4585e62bd430a48a
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65887704"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142852"
 ---
 # <a name="single-sign-on-support-for-message-extensions"></a>Поддержка единого входов у расширений для сообщений
 
@@ -123,7 +123,7 @@ ms.locfileid: "65887704"
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
-| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
 | Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показана система единого входа для Tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
 
 ## <a name="see-also"></a>Дополнительные ресурсы

@@ -1,16 +1,15 @@
 ---
 title: Добавление тестовых данных в тестовый клиент Microsoft 365
-description: Настройте подписку на программу для разработчиков Office 365 для успешного тестирования приложений Microsoft Teams с помощью фрагментов кода
+description: Узнайте, как настроить подписку Office 365 разработчика для успешного тестирования приложений Microsoft Teams с помощью фрагментов кода
 ms.topic: how-to
 ms.localizationpriority: medium
-keywords: тестирование Teams для программ разработчиков приложений
 ms.date: 11/01/2019
-ms.openlocfilehash: 6694c925e49d38fa15f908e58202907c7d479fa0
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 35a61413ab9e9a672971ba6ce45b49f6dc645ab3
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757026"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142355"
 ---
 # <a name="add-test-data-to-your-microsoft-365-test-tenant"></a>Добавление тестовых данных в тестовый клиент Microsoft 365
 

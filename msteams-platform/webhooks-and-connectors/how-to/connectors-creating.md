@@ -1,17 +1,16 @@
 ---
 title: Создание соединителей Office 365
 author: laujan
-description: Сведения о том, как начать работу с соединителями Office 365 в Microsoft Teams
-keywords: Соединитель Office 365 в Teams
+description: В этом модуле вы узнаете, как приступить к работе с соединителями Office 365 и добавить соединитель в приложение Teams в Microsoft Teams
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: 2d711821d2b76b4cc2fd93a6d28cd5061129222e
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: 53f5f6d9f360c465175b18d8b1b5eab9020d3ccf
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032954"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143559"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 

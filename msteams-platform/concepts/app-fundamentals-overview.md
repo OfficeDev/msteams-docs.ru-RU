@@ -5,13 +5,12 @@ description: Описаны составляющие планирования п
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-keywords: входные точки расширяемость варианты использования возможность устройства
-ms.openlocfilehash: ffcefbdfc5696f91872fcf828f9e40e58e224a6b
-ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.openlocfilehash: 469c21c69fc7be450f2e51c26ddb1cf3c67292f4
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602252"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142425"
 ---
 # <a name="plan-your-app-with-teams-features"></a>Планирование приложения с помощью функций Teams
 
@@ -21,9 +20,9 @@ ms.locfileid: "65602252"
 
 В этом разделе вы узнаете, как:
 
-* Выявлять и сопоставлять варианты использования с функциями Teams
-* Использовать контрольный список планирования
-* Планировать этапы после развертывания приложения
+* Выявлять и сопоставлять варианты использования с функциями Teams.
+* Использовать контрольный список планирования.
+* Планировать за пределами развертывания приложений.
 
 ## <a name="plan-with-teams"></a>Планирование с помощью Teams
 

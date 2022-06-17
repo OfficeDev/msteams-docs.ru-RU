@@ -1,17 +1,16 @@
 ---
-title: Запуск действий с расширениями сообщений
-description: Создание расширений сообщений на основе действий, позволяющих пользователям активировать внешние службы
+title: Инициирование действий с расширениями для обмена сообщениями
+description: В этом модуле вы узнаете, как создать расширения сообщений на основе действий, чтобы пользователи могли активировать внешние службы.
 ms.localizationpriority: medium
 ms.topic: how-to
-keywords: Поиск расширений сообщений teams
-ms.openlocfilehash: a29d1a5b49845d930ac4efbdd3967bd6b4446891
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 9b40c7a74b1d7680ac47016a9e0174a2c4c06e8c
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104372"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143678"
 ---
-# <a name="initiate-actions-with-message-extensions"></a>Запуск действий с расширениями сообщений
+# <a name="initiate-actions-with-message-extensions"></a>Инициирование действий с расширениями для обмена сообщениями
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-me.md)]
 
@@ -309,7 +308,7 @@ ms.locfileid: "65104372"
 }
 ```
 
-### <a name="request-to-install-your-conversational-bot"></a>Запрос на установку чат-бота
+### <a name="request-to-install-your-conversational-bot"></a>Запрос на установку бота для бесед
 
 Если приложение содержит бот беседы, убедитесь, что оно установлено в беседе перед загрузкой модуля задачи. Это может быть полезно в ситуациях, когда необходимо получить дополнительный контекст для модуля задачи. Например, может потребоваться получить список, чтобы заполнить элемент управления выбора людей или список каналов в команде.
 
@@ -713,6 +712,6 @@ public class MessagesController : ApiController
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Примеры Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
