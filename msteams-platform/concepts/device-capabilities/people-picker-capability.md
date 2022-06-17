@@ -1,16 +1,15 @@
 ---
 title: Интеграция средства "Выбор людей"
-description: Использование клиентского SDK JavaScript для Teams для интеграции элемента управления "Выбор людей"
-keywords: элемент управления "выбор людей"
+description: Из этой статьи вы узнаете, как использовать клиентский пакет SDK Teams JavaScript для интеграции элемента управления "Выбор людей" и получения преимуществ использования средства выбора людей.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: 802bb2ab2a3224809e07c56d498ad85473ced492
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 0da107c4086d7eae568990746a877b79f030a564
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757593"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66130447"
 ---
 # <a name="integrate-people-picker"></a>Интеграция средства "Выбор людей"
 
@@ -52,7 +51,7 @@ API `selectPeople` поставляется со следующими конфи
 С помощью элемента управления вводом средства "Выбор людей" пользователь может искать и добавлять пользователей, следуя следующим инструкциям.
 
 1. Введите имя пользователя. Появится список с предложениями имен.
-1. Выберите имя нужного пользователя из списка. 
+1. Выберите имя нужного пользователя из списка.
 
    :::image type="content" source="../../assets/images/tabs/people-picker-control-capability-mobile-updated.png" alt-text="Мобильная версия средства &quot;Выбор людей&quot;" border="true":::
 
@@ -61,7 +60,7 @@ API `selectPeople` поставляется со следующими конфи
 Элемент управления "Выбор людей" в Интернете или в настольной версии запускается в модальном окне поверх веб-приложения. Чтобы добавить пользователей, выполните следующие действия.
 
 1. Введите имя пользователя. Появится список с предложениями имен.
-1. Выберите имя нужного пользователя из списка. 
+1. Выберите имя нужного пользователя из списка.
 
    :::image type="content" source="../../assets/images/tabs/select-people-picker-byname.png" alt-text="Средство &quot;Выбор людей&quot; с поиском по имени в настольной версии" border="true":::
 
@@ -106,6 +105,6 @@ microsoftTeams.people.selectPeople((error: microsoftTeams.SdkError, people: micr
 
 ## <a name="see-also"></a>См. также
 
-* [Интеграция возможностей мультимедиа в Teams](mobile-camera-image-permissions.md)
+* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/media-capabilities.md)
 * [Интеграция функции сканирования QR- или штрихкода в Teams](qr-barcode-scanner-capability.md)
 * [Интеграция функций местонахождения](location-capability.md)

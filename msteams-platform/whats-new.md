@@ -1,14 +1,14 @@
 ---
 title: Новые возможности для разработчиков в Teams
-description: Узнайте о новых функциях разработчика и улучшениях этих функций в Microsoft Teams.
+description: В этой схеме обучения вы узнаете о новых функциях разработчика и улучшениях этих функций в Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: ca3cbbac88a0133c5c4973f0a1ad8809f8e4ff73
-ms.sourcegitcommit: 6f1bd36b1071e256bdc14e6ccb31dfdda9ca6d6b
+ms.openlocfilehash: 0b7c2078980748f8e0820348e23a22c57ac7c22f
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66048971"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66130468"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -24,7 +24,6 @@ ms.locfileid: "66048971"
 | 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> • [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
 | 24.05.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > [Схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md) |
 | 24.05.2022 | Боты и расширения для сообщений в GCC и GCCH | • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
-
 
 <!--
 ## Latest updates ![bullhorn icon](~/assets/images/bullhorn.png)
@@ -48,6 +47,7 @@ ms.locfileid: "66048971"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 16.06.2022 | Обновленные возможности мультимедиа для поддержки классических и мобильных устройств| Интеграция возможностей устройств > [Интеграция возможностей мультимедиа](concepts/device-capabilities/media-capabilities.md)|
 | 08.06.2022 | Необязательный отзыв карточки для сообщения об успешном выполнении| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
 | 03.06.2022 | Обновлен модуль добавления проверки подлинности для включения единого входа для приложения с вкладками с новой структурой и процедурами. | Добавить проверку подлинности > Вкладки > [Включить единый вход в приложении с вкладками](tabs/how-to/authentication/tab-sso-overview.md) |
 | 24.05.2022 | Дополнительные советы по быстрому утверждению публикации приложения, связанного с предложением SaaS | Публикация в Teams Store > Обзор > [Дополнительные советы по быстрому утверждению публикации приложения, связанного с предложением SaaS](~/concepts/deploy-and-publish/appsource/publish.md#additional-tips-for-rapid-approval-to-publish-your-app-linked-to-a-saas-offer) |
@@ -152,9 +152,9 @@ ms.locfileid: "66048971"
 |05.03.2021|Область установки и возможности группы по умолчанию | Распространение приложения > [Область установки и возможности группы по умолчанию](concepts/deploy-and-publish/add-default-install-scope.md) |
 |05.03.2021|Переупорядочение вкладок личного приложения | Создание вкладок > [Изменение порядка вкладки чата в личных приложениях](tabs/how-to/create-personal-tab.md#reorder-static-personal-tabs) |
 |04.03.2021|Маскировка сведений в адаптивных карточках | Создание карточек и модулей задач > Создание карточек > [Маскирование информации на адаптивных карточках](task-modules-and-cards/cards/cards-format.md#information-masking-in-adaptive-cards) |
-|19.02.2021|Добавлены функции местонахождения. <br/> В файлы обзора возможностей устройства, разрешений собственных устройств, интеграции возможностей мультимедиа, а также функций сканера QR- или штрихкода добавлены сведения о функциях местонахождения | • Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложений > Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функции сканирования QR- или штрихкода](concepts/device-capabilities/qr-barcode-scanner-capability.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций местонахождения](concepts/device-capabilities/location-capability.md) |
-|18.02.2021|Добавлена функция сканирования QR- или штрихкода. <br/> В файлы обзора возможностей устройства, разрешений собственных устройств и интеграции возможностей мультимедиа добавлены сведения о функциях сканера QR- или штрихкода | • Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложений > Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функции сканирования QR- или штрихкода](concepts/device-capabilities/qr-barcode-scanner-capability.md) |
-|09.02.2021|Добавлен обзор возможностей устройства. <br/> В файлы разрешений собственных устройств и интеграции возможностей мультимедиа добавлены сведения о функциях микрофона |• Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> Основы приложений > • Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/mobile-camera-image-permissions.md)|
+|19.02.2021|Добавлены функции местонахождения. <br/> В файлы обзора возможностей устройства, разрешений собственных устройств, интеграции возможностей мультимедиа, а также функций сканера QR- или штрихкода добавлены сведения о функциях местонахождения | • Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложений > Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/media-capabilities.md) </br> • Основы приложений > Возможности устройств > [Интеграция функции сканирования QR- или штрихкода](concepts/device-capabilities/qr-barcode-scanner-capability.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций местонахождения](concepts/device-capabilities/location-capability.md) |
+|18.02.2021|Добавлена функция сканирования QR- или штрихкода. <br/> В файлы обзора возможностей устройства, разрешений собственных устройств и интеграции возможностей мультимедиа добавлены сведения о функциях сканера QR- или штрихкода | • Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> • Основы приложений > Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/media-capabilities.md) </br> • Основы приложений > Возможности устройств > [Интеграция функции сканирования QR- или штрихкода](concepts/device-capabilities/qr-barcode-scanner-capability.md) |
+|09.02.2021|Добавлен обзор возможностей устройства. <br/> В файлы разрешений собственных устройств и интеграции возможностей мультимедиа добавлены сведения о функциях микрофона |• Основы приложений > Возможности устройств > [Обзор](concepts/device-capabilities/device-capabilities-overview.md) </br> Основы приложений > • Возможности устройств > [Запрос разрешений устройства](concepts/device-capabilities/native-device-permissions.md) </br> • Основы приложений > Возможности устройств > [Интеграция функций мультимедиа](concepts/device-capabilities/media-capabilities.md)|
 
 <br>
 
@@ -266,6 +266,7 @@ ms.locfileid: "66048971"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+| 16.06.2022 | Развертывание ссылки для отправки в Teams из веб-приложений| Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
 | 06.06.2022| Обновление бесед и событий установки в боте Teams |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
 |24.05.2022| Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
 | 04/06/2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |

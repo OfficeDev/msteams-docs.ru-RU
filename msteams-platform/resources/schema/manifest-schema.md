@@ -1,15 +1,14 @@
 ---
 title: Справочник по схеме манифеста
-description: Описывает схему манифеста для Microsoft Teams
+description: В этой статье представлен справочник по схеме манифеста Microsoft Teams, схема и пример полного манифеста.
 ms.topic: reference
 ms.localizationpriority: high
-keywords: схема манифеста teams
-ms.openlocfilehash: 5ec9aa0968ad8d15bf935302480330bca78c1bf1
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: 49b3b1714d05f50ee6a4b186ff7a1a85d6209083
+ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66032937"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66130510"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справочник: схема манифеста для Microsoft Teams
 
@@ -961,5 +960,5 @@ URL-адрес со ссылкой на схему JSON для манифест�
 * [Понимание структуры приложений Microsoft Teams](~/concepts/design/app-structure.md)
 * [Разрешение настройки приложения](~/concepts/design/enable-app-customization.md)
 * [Локализация приложения](~/concepts/build-and-test/apps-localization.md)
-* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/mobile-camera-image-permissions.md)
+* [Интеграция возможностей мультимедиа](~/concepts/device-capabilities/media-capabilities.md)
 * [Схема манифеста предварительной общедоступной версии для разработчиков для Microsoft Teams](manifest-schema-dev-preview.md)
