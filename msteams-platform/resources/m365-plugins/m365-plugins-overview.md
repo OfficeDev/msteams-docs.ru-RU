@@ -1,15 +1,15 @@
 ---
 title: Подключаемые модули Microsoft 365
-description: Сведения о подключаемых модулях Microsoft 365
+description: В этой статье вы узнаете о подключаемых модулях Microsoft 365, о списке подключаемых модулей и метках, о Microsoft 365, взаимодействии с One Note и многом другом.
 ms.topic: Microsoft 365 plugins
 ms.localizationpriority: high
 ms.author: Surbhigupta
-ms.openlocfilehash: 3a1847a01687d2d363f29938ed589d3a12179c9c
-ms.sourcegitcommit: 8a0ffd21c800eecfcd6d1b5c4abd8c107fcf3d33
+ms.openlocfilehash: 5228803be99d77e24f5cd1731c826b1a28509097
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63454056"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66124048"
 ---
 # <a name="microsoft-365-plugins"></a>Подключаемые модули Microsoft 365
 
@@ -149,7 +149,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 ## <a name="oembed-filter"></a>Фильтр oEmbed
 
-Подключаемый модуль фильтра oEmbed упрощает и улучшает пользовательский интерфейс, упрощая включение внешнего HTML-контента в Moodle. Ниже указаны преимущества фильтра oEmbed. 
+Подключаемый модуль фильтра oEmbed упрощает и улучшает пользовательский интерфейс, упрощая включение внешнего HTML-контента в Moodle. Ниже указаны преимущества фильтра oEmbed.
 
 * Ускорение внедрения видео на страницу HTML.
 * Поддержка внедрения нескольких поставщиков видеоконтента.

@@ -1,16 +1,15 @@
 ---
 title: Система управления обучением Moodle
-description: Обзор интеграции Moodle LMS с Teams
+description: Сведения об интеграции Moodle LMS с Teams, управлении обучением Moodle, mConnect и прямых ссылках, специальных возможностях и сценариях требований пользователей. Эта интеграция обеспечивает возможность аудио- и видеозвонков, чатов, курсов, управления действиями, аналитики и т. д.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: surbhigupta
-keywords: Прямые ссылки mConnect в Moodle LMS
-ms.openlocfilehash: dc5674ef092c9462786871aa8bb8618a84b141b8
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 61182fe5c11ba5c399d720ae043671983e262b1c
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757348"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66124027"
 ---
 # <a name="moodle-learning-management-system"></a>Система управления обучением Moodle
 

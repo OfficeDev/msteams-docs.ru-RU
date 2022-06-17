@@ -1,15 +1,15 @@
 ---
 title: Партнерские приложения для Moodle
-description: Общие сведения о партнерских приложениях
+description: Узнайте о партнерских приложениях для Moodle, ключевых преимуществах партнерских приложений для Moodle, предложениях Saas и mConnect. Включите единый вход для пользователей Teams.
 ms.topic: Partner apps
 ms.localizationpriority: high
 ms.author: Surbhigupta
-ms.openlocfilehash: ecb3d7a8a36a67a6d18315d5af3180a65f1602f3
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: ee6840193d0b2ecaf1eab2a7e466bcd61382e06f
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757005"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123393"
 ---
 # <a name="partner-apps-for-moodle"></a>Партнерские приложения для Moodle
 
@@ -26,9 +26,9 @@ Microsoft Store предоставляет все сертифицированн
 
 ## <a name="mconnect"></a>mConnect
 
-Приложение mConnect интегрирует курсы и действия Moodle в Teams для расширения возможностей обучения пользователей. 
+Приложение mConnect интегрирует курсы и действия Moodle в Teams для расширения возможностей обучения пользователей.
 
-Приложение mConnect разработала компания Skooler (надежный партнер Майкрософт со статусом Gold в области образования), которая предоставляет необходимую поддержку. 
+Приложение mConnect разработала компания Skooler (надежный партнер Майкрософт со статусом Gold в области образования), которая предоставляет необходимую поддержку.
 
 mConnect позволяет администраторам Moodle автоматически настроить Teams для курса Moodle и сделать все функции доступными для каждого курса в Moodle.
 

@@ -1,17 +1,17 @@
 ---
 title: Разработка вкладок для настольных компьютеров, Интернета и мобильных устройств
-description: Узнайте, как создать вкладку Teams для настольного компьютера, Интернета и мобильных устройств и получите комплект разработчика для пользовательского интерфейса Microsoft Teams. Узнайте о функциях и внешнем виде вкладок, создании проверки подлинности пользователей, уведомлениях вкладок и прямых ссылках на вкладках.
+description: Узнайте, как создать вкладку для настольного компьютера, Интернета и мобильных устройств, и получите комплект разработчика для пользовательского интерфейса Microsoft Teams. Узнайте о вкладках, создании проверки подлинности пользователей, уведомлениях вкладок и прямых ссылках на вкладках.
 author: heath-hamilton
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
 keywords: Набор пользовательского интерфейса управление настройкой единый вход прямые ссылки на основе ролей просмотр цепочек обсуждений
-ms.openlocfilehash: c2c081a1cb0ca96cce7cc55a9e39facc9cd691db
-ms.sourcegitcommit: 781f34af2a95952bf437d0b7236ae995f4e14a08
+ms.openlocfilehash: 21f5dcdba9d2c201c14330deb9517bb470489ee2
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60948588"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123260"
 ---
 # <a name="design-your-tab-for-microsoft-teams"></a>Разработка вкладки для Microsoft Teams
 

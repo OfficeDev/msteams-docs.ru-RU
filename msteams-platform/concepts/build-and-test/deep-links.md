@@ -1,14 +1,14 @@
 ---
 title: Создание прямых ссылок
-description: Узнайте, как описывать глубокие ссылки Teams и как использовать их в своих приложениях.
+description: Узнайте, как создавать прямые ссылки, использовать их и перемещаться по ним в приложениях Microsoft Teams с помощью вкладок.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: a1bd16f178508d62a2a38b6d8880a9315ee45ee3
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: bb0e9adf0541f428b46459598d41466d450bdca7
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756771"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123719"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -245,7 +245,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/meeting/new?subjec
 Пример: `https://teams.microsoft.com/l/meeting/new?subject=test%20subject&attendees=joe@contoso.com,bob@contoso.com&startTime=10%2F24%2F2018%2010%3A30%3A00&endTime=10%2F24%2F2018%2010%3A30%3A00&content=test%3Acontent`
 
 > [!NOTE]
-> Параметры поиска не поддерживают сигнал `+` вместо пробела (` `). Убедитесь, что код кодировки универсального кода ресурса (URI) возвращает `%20`, например, пробелы, `?subject=test%20subject` это хорошо, но `?subject=test+subject` — плохо.
+> Параметры поиска не поддерживают сигнал `+` вместо пробела (``). Убедитесь, что код кодировки универсального кода ресурса (URI) возвращает `%20`, например, пробелы, `?subject=test%20subject` это хорошо, но `?subject=test+subject` — плохо.
 
 Параметры запроса:
 

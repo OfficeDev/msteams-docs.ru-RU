@@ -6,12 +6,12 @@ keywords: исходящий веб-перехватчик вкладок teams
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 93cdadbbb0e14a174d84a8fd0a71e5b4f77c0af4
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: fab709bc8a6fe35db527b911567dab0b6a20717d
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65104023"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123782"
 ---
 # <a name="create-an-incoming-webhook"></a>Создание входящего веб-перехватчика
 
@@ -89,6 +89,12 @@ ms.locfileid: "65104023"
 1. Заполните поля и установите нужные флажки в диалоговом окне и выберите **Удалить**.
 
     ![Окончательное удаление](~/assets/images/finalremove.png)
+
+## <a name="code-sample"></a>Пример кода
+
+| Название примера           | Описание | C#    | Node.js   |
+|:---------------------|:--------------|:---------|:--------|
+|Входящий веб-перехватчик|В этом примере кода показано, как отправить карточку с помощью входящего веб-перехватчика. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/incoming-webhook/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/incoming-webhook/nodejs) |
 
 ## <a name="see-also"></a>См. также
 

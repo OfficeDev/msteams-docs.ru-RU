@@ -1,17 +1,16 @@
 ---
 title: Интеграция веб-приложений
 author: Rajeshwari-v
-description: Обзор интеграции веб-приложений и возможностей устройств с приложением Microsoft Teams.
+description: В этой статье описывается интеграция веб-приложений и возможностей устройств с приложением Microsoft Teams. Платформа Power для создания приложений, Power Virtual Agents, виртуальный помощник, шаблоны приложений, соединители Shift, Moodle LMS.
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-keywords: платформа power приложения power people picker прямая ссылка virtual agent помощник отправка в Teams
-ms.openlocfilehash: dc31644fca25aeca12b7e5f3095ebae53a3c02ac
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: a5394962594acf60e88bff0c7449c17a2a4b7c17
+ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757670"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66123540"
 ---
 # <a name="integrate-web-apps"></a>Интеграция веб-приложений
 
