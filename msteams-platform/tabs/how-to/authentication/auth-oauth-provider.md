@@ -1,15 +1,14 @@
 ---
 title: Использование внешних поставщиков OAuth
-description: В статье описана проверка подлинности с помощью внешних поставщиков OAuth
+description: В этом модуле вы узнаете, как выполнять проверку подлинности с помощью внешних поставщиков OAuth и как добавить ее во внешний браузер
 ms.topic: how-to
 ms.localizationpriority: high
-keywords: проверки подлинности в teams с помощью внешнего поставщика OAuth
-ms.openlocfilehash: dc47163b58bcf2ce39820b0ba9db4e6cb05774ef
-ms.sourcegitcommit: 35bdbda8f6bafa7eb49185dd71e0687917ceeebd
+ms.openlocfilehash: 8a7d89bbe3c6109e52a4d22f4bc26eace7acc5d1
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64826966"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142278"
 ---
 # <a name="use-external-oauth-providers"></a>Использование внешних поставщиков OAuth
 
