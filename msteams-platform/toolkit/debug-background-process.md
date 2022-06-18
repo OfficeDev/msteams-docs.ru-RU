@@ -1,17 +1,17 @@
 ---
 title: Отладка фоновых процессов
 author: zyxiaoyuer
-description: Функция Visual Studio Code и набора средств Teams во время локальной отладки
+description: В этом модуле вы узнаете о функции кода Visual Studio и Teams Toolkit во время локальной отладки, а также зарегистрируете и настроите приложение Teams
 ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/03/2022
-ms.openlocfilehash: d692f3f6869767e4b9948b36e521a56d799ebe4b
-ms.sourcegitcommit: ff31cbe4840191f004d8fc61dd4fd93d35fcaecb
+ms.openlocfilehash: f2a94d92a157df20e956776f3a7e901219a45ffd
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65938928"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143587"
 ---
 # <a name="debug-background-processes"></a>Отладка фоновых процессов
 

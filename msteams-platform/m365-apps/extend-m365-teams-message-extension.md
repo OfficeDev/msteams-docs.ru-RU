@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: high
-ms.openlocfilehash: 6df09a7398d26c4e0a69a2a9ac3f256b7086a9e0
-ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.openlocfilehash: d531b01a8de3663fed6806bc68386d9c4c894695
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65668076"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142103"
 ---
 # <a name="extend-a-teams-message-extension-across-microsoft-365"></a>Распространение расширения сообщений Teams в Microsoft 365
 
@@ -20,8 +20,8 @@ ms.locfileid: "65668076"
 
 > [!div class="checklist"]
 >
-> * Обновите манифест вашего приложения
-> * Добавьте канал Outlook для бота
+> * Обновите манифест приложения
+> * Добавьте канал Outlook для бота.
 > * Загрузите неопубликованное обновленное приложение в Teams
 
 Остальная часть этого руководства покажет пошагово, как предварительно просмотреть расширение сообщений в Outlook для рабочего стола Windows и в outlook.com.
@@ -30,8 +30,8 @@ ms.locfileid: "65668076"
 
 Для следования этому руководству вам понадобятся:
 
-* Клиент изолированной программной среды Microsoft 365 Developer Program
-* Регистрация в *целевых выпусках Office 365* для вашего клиента песочницы
+* Клиент изолированной программы для разработчиков Microsoft 365.
+* Регистрация в *целевых выпусках Office 365* для изолированного клиента.
 * Тестовая среда с приложениями Office, установленными из *бета-канала* приложений Microsoft 365.
 * Microsoft Visual Studio Code с расширением Teams Toolkit (необязательно)
 

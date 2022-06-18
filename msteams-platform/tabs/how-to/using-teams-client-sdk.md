@@ -2,16 +2,15 @@
 title: Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript
 author: heath-hamilton
 ms.author: surbhigupta
-description: Обзор клиентского пакета SDK Microsoft Teams для JavaScript, помогающего в создании приложений Teams, размещенных в <iframe> в Teams, Office и Outlook.
+description: В этом модуле вы узнаете о пакете SDK для клиента Microsoft Teams JavaScript, помогающем в создании приложений Teams, размещенных в <iframe> в Teams, Office и Outlook.
 ms.localizationpriority: high
-keywords: teams вкладки группа канал настраиваемый статический SDK JavaScript личный m365
 ms.topic: conceptual
-ms.openlocfilehash: 3b607056e2e3e10ff6817acdea4425573f99c170
-ms.sourcegitcommit: 12510f34b00bfdd0b0e92d35c8dbe6ea1f6f0be2
+ms.openlocfilehash: 1909df76b3cc61f0d93e4efe40e02b99dc3de730
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2022
-ms.locfileid: "66033045"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144217"
 ---
 # <a name="building-tabs-and-other-hosted-experiences-with-the-microsoft-teams-javascript-client-sdk"></a>Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript
 

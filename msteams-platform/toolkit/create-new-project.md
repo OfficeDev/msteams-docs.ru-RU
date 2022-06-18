@@ -1,17 +1,17 @@
 ---
 title: Создание нового приложения Teams с помощью "Инструментов Teams"
 author: zyxiaoyuer
-description: Создание нового приложения Teams с помощью "Инструментов Teams"
+description: В этом модуле вы узнаете, как создать новое приложение Teams с помощью Набора средств Teams, создать новое приложение Teams с помощью представленных примеров
 ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: d44f757141d31faaf4639a58fbbd31e5729e6f02
-ms.sourcegitcommit: 1e77573e47fad51a19545949fdac1241b13052e2
+ms.openlocfilehash: 4f85798c57c7816bed727e41adc69cf7dbc380d4
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65656154"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66142222"
 ---
 # <a name="create-a-new-teams-app-using-teams-toolkit"></a>Создание нового приложения Teams с помощью "Инструментов Teams"
 
@@ -20,7 +20,7 @@ ms.locfileid: "65656154"
 * [Создание нового приложения Teams](create-new-project.md#create-a-new-teams-app)
 * [Просмотр образцов](create-new-project.md#create-a-new-teams-app-using-view-samples)
 
-### <a name="create-a-new-teams-app"></a>Создание нового приложения Teams
+## <a name="create-a-new-teams-app"></a>Создание нового приложения Teams
 
 1. Откройте Visual Studio Code.
 1. Выберите значок Набор инструментов Teams:::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG" border="true"::: на боковой панели Visual Studio Code.
@@ -29,17 +29,16 @@ ms.locfileid: "65656154"
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar.png" alt-text="Боковая панель наборов средств Teams":::
 
 1. Вы можете выбрать **Создать новое приложение Teams** или **Начать с помощью примера**.
-   
+
    :::image type="content" source="../assets/images/teams-toolkit-v2/select-create-app.png" alt-text="Создать приложение":::
-   
-1. При выборе параметра **Создать новое приложение Teams** появится следующее изображение с шаблонами из трех категорий: приложение Teams на основе сценариев, приложение Basic Teams и расширенные приложения Teams в Microsoft 365: 
+
+1. При выборе параметра **Создать новое приложение Teams** появится следующее изображение с шаблонами из трех категорий: приложение Teams на основе сценариев, приложение Basic Teams и расширенные приложения Teams в Microsoft 365:
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams-capabilities.png" alt-text="Ограничения для приложения Teams":::
 
 1. Выберите хотя бы один вариант, чтобы начать создание приложения Teams.
 
-
-### <a name="create-a-new-teams-app-using-view-samples"></a>Создание нового приложения Teams с помощью образцов представлений
+## <a name="create-a-new-teams-app-using-view-samples"></a>Создание нового приложения Teams с помощью образцов представлений
 
 Вы можете создать новое приложение, просмотрев **Просмотр образцов** и выбрав существующий образец. Выбранный образец может уже иметь некоторые функции, например список дел с серверной частью Azure или интеграцию с Microsoft Graph Toolkit.
 
@@ -50,7 +49,7 @@ ms.locfileid: "65656154"
     :::image type="content" source="../assets/images/teams-toolkit-v2/view-samples.png" alt-text="Просмотр образцов":::
 
     Примеры образцов выглядит так, как показано на следующем изображении:
-   
+
     :::image type="content" source="../assets/images/teams-toolkit-v2/sample-gallery.png" alt-text="Коллекция образцов":::
 
   Коллекцию образцов можно изучить следующим образом:
