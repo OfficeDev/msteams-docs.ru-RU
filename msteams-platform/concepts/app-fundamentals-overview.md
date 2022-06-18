@@ -5,12 +5,12 @@ description: Описаны составляющие планирования п
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: 469c21c69fc7be450f2e51c26ddb1cf3c67292f4
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: bb72b099c82e12190cbdb955d68362dda731a939
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142425"
+ms.locfileid: "66150689"
 ---
 # <a name="plan-your-app-with-teams-features"></a>Планирование приложения с помощью функций Teams
 

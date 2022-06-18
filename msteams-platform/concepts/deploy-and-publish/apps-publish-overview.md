@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: v-rpatkur
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 72f902b340653cd6d57eccaf7bbd21e7ad608ebc
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 0efbc1e18d7cec6324ecc4cbec762d7b94c32511
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123533"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66150801"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 
@@ -22,7 +22,7 @@ ms.locfileid: "66123533"
 
 ## <a name="create-your-app-package"></a>Создание пакета приложения
 
-Для распространения Microsoft Teams необходимо иметь действительный пакет приложения.  Пакет приложения — это ZIP-файл, содержащий **манифест приложения** и **значки приложения**.
+Для распространения приложения Teams необходимо наличие действительного пакета приложения.  Пакет приложения — это ZIP-файл, содержащий **манифест приложения** и **значки приложения**.
 
 ## <a name="upload-your-app-in-teams"></a>Отправка приложения в Microsoft Teams
 

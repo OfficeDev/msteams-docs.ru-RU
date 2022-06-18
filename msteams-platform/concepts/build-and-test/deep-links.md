@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: Узнайте, как создавать прямые ссылки, использовать их и перемещаться по ним в приложениях Microsoft Teams с помощью вкладок.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: bb0e9adf0541f428b46459598d41466d450bdca7
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: e5e9596c6049e899e6cc807b7ce2128b322a971e
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123719"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66150682"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -91,7 +91,7 @@ microsoftTeams.shareDeepLink({ subEntityId: <subEntityId>, subEntityLabel: <subE
 
 ### <a name="consume-a-deep-link-from-a-tab"></a>Использование прямой ссылки из вкладки
 
-При переходе к прямой ссылке Microsoft Teams просто переходит на вкладку и предоставляет механизм через библиотеку JavaScript Microsoft Teams для получения идентификатора подстраницы, если он существует.
+При переходе по прямой ссылке Microsoft Teams просто переходит на вкладку и предоставляет механизм через библиотеку JavaScript Teams для получения идентификатора подстраницы, если он существует.
 
 Вызов [`app.getContext()`](/javascript/api/@microsoft/teams-js/app?view=msteams-client-js-latest#@microsoft-teams-js-app-getcontext&preserve-view=true) (`microsoftTeams.getContext()`) в TeamsJS версии 1 возвращает обещание, которое будет разрешено с контекстом, включающим свойство `subPageId` (subEntityId для TeamsJS версии 1), если на вкладку можно перейти по прямой ссылке. Дополнительные сведения см. в статье [Интерфейс PageInfo](/javascript/api/@microsoft/teams-js/app?view=msteams-client-js-latest#@microsoft-teams-js-app-pageinfo&preserve-view=true).
 
@@ -109,7 +109,7 @@ microsoftTeams.shareDeepLink({ subEntityId: <subEntityId>, subEntityLabel: <subE
 `https://teams.microsoft.com/l/entity/<appId>/<entityId>?webUrl=<entityWebUrl>&label=<entityLabel>&context=<context>`
 
 > [!NOTE]
-> Если бот отправляет сообщение, содержащее `TextBlock` с прямой ссылкой, то при выборе пользователем ссылки открывается новая вкладка браузера. Это происходит в Chrome и в настольном приложении Microsoft Teams, которые работают в Linux.
+> Если бот отправляет сообщение, содержащее `TextBlock` с прямой ссылкой, то при выборе пользователем ссылки открывается новая вкладка браузера. Это происходит в Chrome и в классическом приложении Teams, которые работают в Linux.
 > Если бот отправляет тот же URL-адрес прямой ссылки в `Action.OpenUrl`, вкладка Teams открывается в текущей вкладке браузера, когда пользователь выбирает ссылку. Новая вкладка браузера не открыта.
 
 <!--- TBD: Edit this article.
@@ -446,7 +446,7 @@ else { /* handle case where capability isn't supported */ }
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Прямая ссылка использует ИД подсущности  |Образец приложения Microsoft Teams для демонстрации прямой ссылки из чата с ботом на вкладку, использующую ИД подсущности.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
+|Прямая ссылка использует ИД подсущности  | Пример приложения Teams для демонстрации прямой ссылки из чата с ботом на вкладку, использующую ИД подсущности.|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-deeplink/nodejs)|
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

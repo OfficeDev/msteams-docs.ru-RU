@@ -1,17 +1,16 @@
 ---
 title: Получение контекста Teams для вашего бота
 author: surbhigupta
-description: Как получить контекст Microsoft Teams для вашего бота, включая список бесед, сведения об одном участнике или команде, список каналов, примеры кода.
+description: Узнайте, как получить контекст Teams для вашего бота, включая список бесед, сведения об одном участнике или команде, список каналов и примеры кода.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-keywords: бот контекст состав профиль список каналов
-ms.openlocfilehash: 8bbbf7af5fd9d86ec1019a5c3b4ec76dce4085f2
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 51e241aacce149dfab7371ab9c1d8f987134b67e
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756592"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66150696"
 ---
 # <a name="get-teams-specific-context-for-your-bot"></a>Получение контекста Teams для вашего бота
 
@@ -209,7 +208,7 @@ Response body
 
 * * *
 
-После получения сведений об одном участнике можно получить сведения о команде. В настоящее время для получения сведений для команды используйте API-интерфейсы бота Microsoft Teams `TeamsInfo.GetMemberDetailsAsync` для C# или `TeamsInfo.getTeamDetails` для TypeScript.
+После получения сведений об одном участнике можно получить сведения о команде. В настоящее время для получения сведений для команды используйте API-интерфейсы бота Teams `TeamsInfo.GetMemberDetailsAsync` для C# или `TeamsInfo.getTeamDetails` для TypeScript.
 
 ## <a name="get-teams-details"></a>Получение сведений о команде
 
@@ -284,7 +283,7 @@ Response body
 
 * * *
 
-После получения сведений о команде можно получить список каналов в команде. В настоящее время для получения сведений для списка каналов в команде используйте API-интерфейсы бота Microsoft Teams `TeamsInfo.GetTeamChannelsAsync` для C# или `TeamsInfo.getTeamChannels` для API-интерфейсов TypeScript.
+После получения сведений о команде можно получить список каналов в команде. В настоящее время для получения сведений для списка каналов в команде используйте API-интерфейсы бота Teams `TeamsInfo.GetTeamChannelsAsync` для C# или `TeamsInfo.getTeamChannels` для API-интерфейсов TypeScript.
 
 ## <a name="get-the-list-of-channels-in-a-team"></a>Получение списка каналов в команде
 
