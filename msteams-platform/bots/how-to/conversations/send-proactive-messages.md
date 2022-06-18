@@ -1,16 +1,15 @@
 ---
 title: Отправка упреждающих сообщений
-description: Узнайте, как отправлять упреждающие сообщения с помощью бота Microsoft Teams, заранее устанавливать приложение с помощью Microsoft Graph и проверять примеры кода на основе SDK Bot Framework версии 4.
+description: Узнайте, как отправлять упреждающие сообщения с помощью бота Teams, установите приложение с помощью Microsoft Graph и ознакомьтесь с примерами кода на основе SDK Bot Framework версии 4.
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: high
-Keywords: отправить сообщение получить ИД пользователя ИД канала ИД беседы
-ms.openlocfilehash: 7b1227dd69e8245b6ad318eb5e7425893075d878
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: cf163b8c74a74eeb83757e65fd79351176290fc9
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757579"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143510"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -278,8 +277,8 @@ POST /v3/conversations
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|--------------|--------|-------------|--------|
-| Основы бесед в Teams  | Демонстрирует основы бесед в Teams, в том числе отправку личных упреждающих сообщений.| [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot) |
-| Запуск новой цепочки в канале | Демонстрирует создание новой цепочки в канале. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
+| Основы бесед в Teams  | Демонстрирует основы бесед в Teams, в том числе отправку личных упреждающих сообщений.| [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/57.teams-conversation-bot) |
+| Запуск новой цепочки в канале | Демонстрирует создание новой цепочки в канале. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/javascript_nodejs/58.teams-start-new-thread-in-channel) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/python/58.teams-start-thread-in-channel) |
 | Упреждающая установка приложений и отправка упреждающих уведомлений | В этом примере показано, как использовать упреждающую установку приложений для пользователей и отправлять упреждающие уведомления, вызывая API Microsoft Graph. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-proactive-installation/nodejs) | |
 
 ### <a name="additional-code-sample"></a>Дополнительный пример кода
@@ -299,6 +298,6 @@ POST /v3/conversations
 ## <a name="see-also"></a>См. также
 
 * [**Примеры кода упреждающих сообщений в Teams**](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp)
-* [Беседы с бото в канале и групповом чате](~/bots/how-to/conversations/channel-and-group-conversations.md)
+* [Беседы с ботом в канале и групповом чате](~/bots/how-to/conversations/channel-and-group-conversations.md)
 * [Ответ на действие отправки модуля задач](~/messaging-extensions/how-to/action-commands/respond-to-task-module-submit.md)
 * [Отправка упреждающих уведомлений пользователям](/azure/bot-service/bot-builder-howto-proactive-message)

@@ -1,16 +1,16 @@
 ---
 title: Боты в Microsoft Teams
 author: surbhigupta
-description: Обзор ботов в Microsoft Teams.
+description: С помощью этой схемы обучения вы начнете работу с ботами для бесед в Microsoft Teams и соответствующими примерами кода.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: 81fa44730a26f3d7bcafdc9f37ec15b4eb7b1951
-ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.openlocfilehash: 13f966d8c01cb6dcc9dc88fadaeb8ad0d348a2ff
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602294"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143713"
 ---
 # <a name="bots-in-microsoft-teams"></a>Боты в Microsoft Teams
 

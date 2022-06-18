@@ -4,22 +4,22 @@ description: Сведения об интеграции Moodle LMS с Teams, у�
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: 61182fe5c11ba5c399d720ae043671983e262b1c
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: e782c6361be7a6ca95b6a21baf88bee63461f139
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66124027"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143307"
 ---
 # <a name="moodle-learning-management-system"></a>Система управления обучением Moodle
 
  Moodle является одной из крупнейших систем управления обучением (LMS) с открытым кодом, которая предоставляет уникальный интерфейс дистанционного обучения со службами, обеспечивающими защиту конфиденциальности. Moodle LMS интегрируется с Microsoft Teams для предоставления следующих служб.
 
-* Голосовые или видеозвонки
-* Чат с учащимися
-* Управление курсами и действиями
-* Эмблемы и награды
-* Аналитические сведения
+* Голосовые или видеозвонки.
+* Чат с учащимися.
+* Курсы и действия.
+* Эмблемы и награды.
+* Аналитические сведения.
 
 <!-- [Moodle](https://moodle.com/about/) is the world’s largest open-source learning management system (LMS). With greater than 30 years of experience in remote learning, it has attracted around 300 million users worldwide with its rich set of hosted and cloud-based services. Combining Moodle LMS and Teams provides an enhanced learning experience with modern superpowers. 
 This content is modified as per the requirement.-->
