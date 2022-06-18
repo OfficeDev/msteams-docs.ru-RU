@@ -5,12 +5,12 @@ description: В этой статье описывается интеграци�
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: a5394962594acf60e88bff0c7449c17a2a4b7c17
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 73fb039886d47a5f011b1dcfb9a8a3a46cb4ff6f
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123540"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144272"
 ---
 # <a name="integrate-web-apps"></a>Интеграция веб-приложений
 

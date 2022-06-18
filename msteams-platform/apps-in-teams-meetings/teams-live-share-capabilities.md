@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете больше о воз
 ms.topic: concept
 ms.localizationpriority: high
 ms.author: v-ypalikila
-ms.openlocfilehash: c6ea321cf9a0bee33b44c54f273662663f23b433
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: f5986515f9916a0138524b919dca46d0cf0ee8d4
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756606"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143244"
 ---
 ---
 
@@ -29,13 +29,13 @@ ms.locfileid: "65756606"
 **npm**
 
 ```bash
-$ npm install @microsoft/live-share --save
+npm install @microsoft/live-share --save
 ```
 
 **Yarn**
 
 ```bash
-$ yarn add @microsoft/live-share
+yarn add @microsoft/live-share
 ```
 
 ## <a name="register-rsc-permissions"></a>Регистрация разрешений RSC
@@ -91,10 +91,10 @@ $ yarn add @microsoft/live-share
 
 Выполните действия, чтобы присоединиться к сеансу, связанному с собранием пользователя:
 
-1. Инициализация клиентского пакета SDK для Teams
-2. Инициализация [TeamsFluidClient](/javascript/api/@microsoft/live-share/teamsfluidclient)
-3. Определение структур данных для синхронизации. Пример: `SharedMap`
-4. Присоединение к контейнеру
+1. Инициализация клиентского пакета SDK для Teams.
+2. Инициализация [TeamsFluidClient](/javascript/api/@microsoft/live-share/teamsfluidclient).
+3. Определение структур данных для синхронизации. Например, `SharedMap`.
+4. Присоединение к контейнеру.
 
 Пример.
 

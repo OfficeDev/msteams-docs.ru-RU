@@ -1,15 +1,14 @@
 ---
 title: Включение проверки подлинности с помощью стороннего поставщика OAuth
-description: Описывает поток проверки подлинности для вкладок OAuth от Azure AD и предоставляет образец кода
+description: В этой статье вы узнаете о потоке проверки подлинности Teams на вкладках, стороннем поставщике OAuth, OAuth от Azure AD и примерах кода проверки подлинности.
 ms.topic: conceptual
 ms.localizationpriority: high
-keywords: поток проверки подлинности Teams вкладки сторонний поставщик OAuth
-ms.openlocfilehash: 4ad7a765632a451880d8d8bb5342240478e6f6da
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+ms.openlocfilehash: 2edd52d80428e47a8586ec27de4b1595d872df8c
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65887802"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144252"
 ---
 # <a name="enable-authentication-using-third-party-oauth-provider"></a>Включение проверки подлинности с помощью стороннего поставщика OAuth
 

@@ -1,17 +1,16 @@
 ---
 title: Создание вкладок адаптивной карточки
 author: KirtiPereira
-description: Узнайте о создании вкладок с помощью адаптивных карточек с примерами кода, включая вызов действий, сведения о рабочем процессе модуля задач и проверке подлинности.
+description: В этом модуле вы узнаете о создании вкладок с помощью адаптивных карточек с примерами кода, включая вызов действий, понимание рабочего процесса модуля задач и проверку подлинности.
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-keywords: поток данных проверки подлинности личного приложения адаптивной карточки
-ms.openlocfilehash: 3c919cb6185481306985adfe9402ba0c31aac584
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
+ms.openlocfilehash: c71c8199e1606a7d36f2cdbd553ac5232b9a7926
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65110290"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66144000"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
