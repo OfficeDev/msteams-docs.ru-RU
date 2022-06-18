@@ -4,12 +4,12 @@ description: Ознакомьтесь с рекомендациями по ло�
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/15/2018
-ms.openlocfilehash: 9c8e073f646bbd99f07725bee734e727103f6eb3
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 5c3d0612f0e7ce0e183d097469165cf2f9c337d0
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66122896"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66150668"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 
@@ -155,7 +155,7 @@ ms.locfileid: "66122896"
 
 | Название примера | Описание | .NET | Node.js |
 |-------------|-------------|------|------|
-| Локализация приложений | Локализация приложений Microsoft Teams с помощью бота и вкладки. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
+| Локализация приложений | Teams локализации приложения с помощью бота и вкладки. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

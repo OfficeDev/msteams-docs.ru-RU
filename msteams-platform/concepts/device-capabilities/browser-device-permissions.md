@@ -4,12 +4,12 @@ keywords: разрешения возможностей приложений tea
 description: Безопасное обеспечение поддержки разрешений устройств для приложений в нашем веб-клиенте
 localization_priority: medium
 ms.topic: how-to
-ms.openlocfilehash: 0789715aebfd1db0c9d0100ccffb2ff213a10d1d
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: f1d25a94f25756e1beed66c430547a7f2f706c5f
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756746"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66150815"
 ---
 # <a name="device-permissions-for-the-browser"></a>Разрешения устройства для браузера
 
@@ -29,7 +29,7 @@ Teams, которое требует разрешения устройства, 
 Чтобы эти разрешения вступили в силу, пользователю необходимо включить эти разрешения в браузере. После того как пользователь изменит разрешения устройства для приложения в браузере, ему будет предложено перезагрузить приложение в Teams.
 
 > [!IMPORTANT]
-> Вы должны дать пользователям знать, где следует включить эти **Разрешения для приложений** в Microsoft Teams.
+> Необходимо предоставить пользователям сведения о том, куда следует включить эти разрешения **приложения в Teams**.
 
 ## <a name="recommendation"></a>Рекомендация
 
@@ -46,7 +46,7 @@ Teams, которому требуются разрешения устройст
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
-Следуйте этим [пошаговым инструкциям](../../sbs-tab-device-permissions.yml) чтобы предоставить разрешение устройства для вкладки в Microsoft Teams.
+Выполните [пошаговое руководство,](../../sbs-tab-device-permissions.yml) чтобы предоставить устройству табуляции разрешение на доступ Teams.
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

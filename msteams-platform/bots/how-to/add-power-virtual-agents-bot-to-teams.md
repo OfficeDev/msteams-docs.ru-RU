@@ -5,12 +5,12 @@ description: Узнайте, как интегрировать бота Power Vi
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: efcf87f490d923ce5c5c5e0c675063defce40a1c
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 0f66a42cecbac25f82980c16e7f979c5d613816d
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143251"
+ms.locfileid: "66150850"
 ---
 # <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents
 
@@ -23,7 +23,8 @@ Power Virtual Agents позволяет создавать мощных бото
 Этих ботов можно легко создать, не прибегая к помощи специалистов по обработке и анализу данных или разработчиков.
 
 > [!NOTE]
-> * При добавлении бота в Microsoft Teams некоторые данные, такие как содержимое бота и содержимое пользовательского чата, передаются в Microsoft Teams. Это означает, что поток ваших данных выходит за [пределы соответствия требованиям вашей организации и географических или региональных границ](/power-virtual-agents/data-location). <br/>
+>
+> * Добавив чат-бот в Microsoft Teams, некоторые данные, такие как содержимое бота и содержимое чата пользователя, Teams. Это означает, что поток ваших данных выходит за [пределы соответствия требованиям вашей организации и географических или региональных границ](/power-virtual-agents/data-location). <br/>
 > * Не следует использовать Microsoft Power Platform для создания приложений, предназначенных для публикации в магазине приложений Teams. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
 
 ## <a name="make-your-chatbot-available-in-teams-through-the-power-virtual-agents-portal"></a>Сделайте своего бота доступным в Teams через портал Power Virtual Agents.

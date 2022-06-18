@@ -5,12 +5,12 @@ description: Узнайте, как определить ссылки на API �
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: 380f470c51933e4be90d008261ab75eafc566f2c
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 018aa14b72a63575deaefb8ee53f7fe4de7474ef
+ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142950"
+ms.locfileid: "66150661"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -27,7 +27,7 @@ ms.locfileid: "66142950"
 
 |Метод| Описание| Источник|
 |---|---|----|
-|[**Получить пользовательский контекст**](#get-user-context-api)| Получить контекстную информацию для отображения соответствующего содержимого на вкладке Teams.| [MSTC SDK](/microsoftteams/platform/tabs/how-to/access-teams-context#get-context-by-using-the-microsoft-teams-javascript-library) |
+|[**Получить пользовательский контекст**](#get-user-context-api)| Получение контекстных сведений для отображения соответствующего содержимого на Microsoft Teams вкладке.| [MSTC SDK](/microsoftteams/platform/tabs/how-to/access-teams-context#get-context-by-using-the-microsoft-teams-javascript-library) |
 |[**Получение участника**](#get-participant-api)| Получить информацию об участнике по идентификатору собрания и идентификатору участника. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsinfo.getmeetingparticipantasync?view=botbuilder-dotnet-stable&preserve-view=true)
 |[**Отправить уведомление о собрании**](#send-an-in-meeting-notification)| Предоставление сигналов собрания с помощью существующего API уведомлений о беседе для чата пользователя с ботом позволяет уведомлять пользователя о действиях, отображая уведомление в собрании. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsactivityextensions.teamsnotifyuser?view=botbuilder-dotnet-stable&preserve-view=true) |
 |[**Получить сведения о собрании**](#get-meeting-details-api)| Получите статические метаданные собрания. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsinfo.getmeetinginfoasync?view=botbuilder-dotnet-stable&preserve-view=true) |
@@ -427,11 +427,11 @@ GET /v1/meetings/{meetingId}
 
 ## <a name="send-real-time-captions-api"></a>API отправки субтитров в режиме реального времени
 
-API отправки субтитров в реальном времени предоставляет конечную точку POST для обмена данными Microsoft Teams с субтитрами перевода в реальном времени (CART) и субтитрами, набранными человеком. Текстовое содержимое, отправленное на эту конечную точку, отображается для конечных пользователей на собрании Microsoft Teams, если у них включены субтитры.
+API отправки субтитров в режиме реального времени предоставляет конечную точку POST для Teams для доступа к обмену данными в режиме реального времени (CART), скрытые субтитры, типизированные человеком. Текстовое содержимое, отправляемое в эту конечную точку, отображается пользователям на Teams, если у них включены субтитры.
 
 ### <a name="cart-url"></a>URL-адрес CART
 
-Вы можете получить URL-адрес CART для конечной точки POST на странице **параметров собрания** на собрании Microsoft Teams. Подробнее в разделе [Субтитры CART на собрании Microsoft Teams](https://support.microsoft.com/office/use-cart-captions-in-a-microsoft-teams-meeting-human-generated-captions-2dd889e8-32a8-4582-98b8-6c96cf14eb47). Вам не нужно изменять URL-адрес CART, чтобы использовать субтитры CART.
+URL-адрес CART для конечной точки POST можно получить на странице  параметров собрания Teams собрания. Подробнее в разделе [Субтитры CART на собрании Microsoft Teams](https://support.microsoft.com/office/use-cart-captions-in-a-microsoft-teams-meeting-human-generated-captions-2dd889e8-32a8-4582-98b8-6c96cf14eb47). Вам не нужно изменять URL-адрес CART, чтобы использовать субтитры CART.
 
 #### <a name="query-parameter"></a>Параметр запроса
 
@@ -841,10 +841,10 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 |Название примера | Описание | C# | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Расширяемость собраний | Пример расширяемости собрания Microsoft Teams для передачи токенов. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-| Бот пузырькового содержимого собрания | Пример возможностей для работы с ботом пузырькового содержимого на собрании в Microsoft Teams. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание meetingSidePanel | Пример расширяемости собраний Microsoft Teams для взаимодействия с боковой панелью во время собрания. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
-| Вкладка "Сведения" в собрании | Пример расширяемости собраний Microsoft Teams для взаимодействия с вкладкой "Сведения" во время собрания. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
+| Расширяемость собраний | Teams пример расширяемости собрания для передачи маркеров. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
+| Бот пузырькового содержимого собрания | Teams пример расширяемости собрания для взаимодействия с ботом пузырьков содержимого на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Собрание meetingSidePanel | Teams пример расширяемости собрания для взаимодействия с боковой панелью в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
+| Вкладка "Сведения" в собрании | Teams пример расширяемости собрания для взаимодействия с вкладкой "Сведения" в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
 |Пример событий собрания|Пример приложения для отображения событий собраний Teams в реальном времени|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/nodejs)|
 |Образец собрания для набора сотрудников|Пример приложения для демонстрации опыта собраний для сценария набора сотрудников.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/nodejs)|
 |Установка приложения с помощью QR-кода|Пример приложения, которое создает QR-код и устанавливает приложение с помощью QR-кода|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/nodejs)|
