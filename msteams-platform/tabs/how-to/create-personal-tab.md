@@ -1,18 +1,17 @@
 ---
 title: Создание личной вкладки
 author: laujan
-description: Краткое руководство по созданию личной вкладки с помощью Yeoman Generator, ASP.NET Core или ASP.NET Core MVC для Microsoft Teams с использованием Node.js и обновлению манифеста приложения.
+description: В этом модуле вы узнаете, как создать личную вкладку с помощью генератора Yeoman, ASP.NET Core или ASP.NET Core MVC для Microsoft Teams с использованием Node.js и обновить манифест приложения.
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
-keywords: yeoman ASP.NET MVC пакет appmanifest хранилище разрешений домена беседы
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 9da0078813d43584d415ccb9425a529decdc78bd
-ms.sourcegitcommit: 929391b6c04d53ea84a93145e2f29d6b96a64d37
+ms.openlocfilehash: 9cceb8f75976dcb7606d09a027e66c775e226365
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65673022"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143993"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -296,10 +295,10 @@ gulp ngrok-serve
 
 1. В Visual Studio выберите **F5** или **Начать отладку** в меню **Отладка** вашего приложения, чтобы проверить, правильно ли загружено приложение. В браузере перейдите по следующим URL-адресам:
 
-    * <http://localhost:3978/>
-    * <http://localhost:3978/personalTab>
-    * <http://localhost:3978/privacy>
-    * <http://localhost:3978/tou>
+    * `<http://localhost:3978/>`
+    * `<http://localhost:3978/personalTab>`
+    * `<http://localhost:3978/privacy>`
+    * `<http://localhost:3978/tou>`
 
 <details>
 <summary><b>Просмотреть исходный код</b></summary>
@@ -449,10 +448,10 @@ ngrok http 3978 --host-header=localhost
 
 1. В Visual Studio выберите **F5** или **Начать отладку** в меню **Отладка** вашего приложения, чтобы проверить, правильно ли загружено приложение. В браузере перейдите по следующим URL-адресам:
 
-    * <http://localhost:3978>
-    * <http://localhost:3978/personalTab>
-    * <http://localhost:3978/privacy>
-    * <http://localhost:3978/tou>
+    * `<http://localhost:3978>`
+    * `<http://localhost:3978/personalTab>`
+    * `<http://localhost:3978/privacy>`
+    * `<http://localhost:3978/tou>`
 
 <details>
 <summary><b>Просмотреть исходный код</b></summary>

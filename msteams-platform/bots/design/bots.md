@@ -1,16 +1,16 @@
 ---
 title: Создание бота
-description: Узнайте, как создать бот Teams, и получите комплект разработчика для пользовательского интерфейса Microsoft Teams.
+description: В этом модуле вы узнаете, как создать и добавить бот Teams и варианты его использования, а также получить комплект разработчика для пользовательского интерфейса Microsoft Teams.
 author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: 67f67535994bde9871cdaa7be8081e05ccbf1a1d
-ms.sourcegitcommit: aa95313cdab4fbf0a9f62a047ebbe6a5f1fbbf5d
+ms.openlocfilehash: 7e17d4b07454013479936dc6e721cd1e2354b3ba
+ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602301"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66143594"
 ---
 # <a name="designing-your-microsoft-teams-bot"></a>Создание бота Microsoft Teams
 
