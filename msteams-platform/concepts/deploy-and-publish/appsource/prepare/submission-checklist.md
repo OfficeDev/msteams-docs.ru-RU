@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: c71579900f910d2677ab0d48bab5a37853dfb69c
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 29f98b024330c562e82722ddefffe68e94543bf6
+ms.sourcegitcommit: 46a2955f89b6a0e72449732eaa2bfea274191f67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123169"
+ms.lasthandoff: 06/20/2022
+ms.locfileid: "66163494"
 ---
 # <a name="prepare-your-microsoft-teams-store-submission"></a>Подготовьте пакет для отправки в магазин Microsoft Teams
 
@@ -19,7 +19,7 @@ ms.locfileid: "66123169"
 Дополнительные сведения о публикации приложения в магазине приложений Microsoft Teams см. в следующем видео.
 <br>
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4WG3l>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WG3l]
 <br>
 
 Перед отправкой приложения в [Центр партнеров](/office/dev/store/use-partner-center-to-submit-to-appsource) выполните следующие действия.
