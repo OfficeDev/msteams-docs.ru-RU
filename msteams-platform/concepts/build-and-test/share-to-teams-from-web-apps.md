@@ -3,12 +3,12 @@ title: Поделиться в Teams из веб-приложений
 description: Узнайте, как добавить встроенную кнопку «Отправить в Teams» на веб-сайт с предварительным просмотром веб-сайта с помощью примеров кода
 ms.topic: reference
 ms.localizationpriority: medium
-ms.openlocfilehash: 38e082166c0a2d66c5e2e26280fe1c8d9c3053a2
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: de5bf1d762a39b5dce222cd4260f03bf461f5547
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150836"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190017"
 ---
 # <a name="share-to-teams-from-web-apps"></a>Поделиться в Teams из веб-приложений
 
@@ -33,6 +33,12 @@ ms.locfileid: "66150836"
 > Связывание в общей папке с Teams в настоящее время доступно только в общедоступной предварительной версии разработчика.
 
 В этой статье описывается, как создать и внедрить кнопку "Общий доступ" Teams для веб-сайта, создать предварительный просмотр веб-сайта и расширить общий доступ Teams для образования.
+
+В следующем видео показано, как встраить share в Teams кнопку:
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vhWH]
+<br>
+
 
 ## <a name="embed-a-share-to-teams-button"></a>Внедрение кнопки «Отправить в Teams»
 

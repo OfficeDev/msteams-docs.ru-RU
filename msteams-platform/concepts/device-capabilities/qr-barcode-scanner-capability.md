@@ -1,17 +1,16 @@
 ---
 title: Интеграция функции сканирования QR- или штрихкода
 author: Rajeshwari-v
-description: Использование клиентского пакета SDK Teams для JavaScript для использования возможностей сканера QR или штрихкода
-keywords: камера мультимедиа QR-код qrcode штрих-код штрихкод сканер сканировать возможности встроенные устройство разрешения
+description: Узнайте, как использовать клиентский пакет SDK Teams JavaScript для использования функции QR или сканера штрихкодов и узнать о преимуществах интеграции QR или сканера штрихкодов.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: 2dced2abc29ee21e50a3a37ccfed4811102cc8ce
-ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
+ms.openlocfilehash: d9dc35002398be047f4cd84d7600b3d149677bd3
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66130503"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189628"
 ---
 # <a name="integrate-qr-or-barcode-scanner-capability"></a>Интеграция функции сканирования QR- или штрихкода
 

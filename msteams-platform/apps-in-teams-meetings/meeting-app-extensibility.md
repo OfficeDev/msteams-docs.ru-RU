@@ -4,12 +4,12 @@ author: surbhigupta
 description: Узнайте о Teams собраний и взаимодействиях пользователей на настольных компьютерах и мобильных устройствах, типах пользователей, интеграции ботов и расширении сообщений в жизненный цикл собрания.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: caea4d49526c01de497f72a1878f9520d6e22348
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 4bc4609f2fdf6bba8b170088d214846c35d45486
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142579"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189359"
 ---
 # <a name="unified-meetings-apps"></a>Приложения объединенных собраний
 
@@ -215,7 +215,7 @@ Teams унифицированных собраний основаны на сл
 | Гость, часть клиентского Azure AD | Взаимодействие разрешено. Создание, обновление и удаление не разрешены. | Недоступно | Недоступно | Взаимодействие в чате собрания разрешено. | Взаимодействие в чате собрания из адаптивной карточки разрешено. | Available | Может запускать, просматривать и взаимодействовать с приложением на этапе собрания только на Teams настольном клиенте |
 | Федеративные пользователи. Дополнительные сведения см. в статье о [нестандартных пользователях](/microsoftteams/non-standard-users). | Взаимодействие разрешено. Создание, обновление и удаление не разрешены. | Взаимодействие разрешено. Приобретение, обновление и удаление не разрешены. | Недоступно | Взаимодействие в чате собрания разрешено. | Взаимодействие в чате собрания из адаптивной карточки разрешено. | Недоступно | Может запускать, просматривать и взаимодействовать с приложением на этапе собрания только на Teams настольном клиенте. |
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Включение и настройка приложений для собраний Teams](enable-and-configure-your-app-for-teams-meetings.md)
@@ -226,3 +226,4 @@ Teams унифицированных собраний основаны на сл
 * [Бот](../bots/what-are-bots.md)
 * [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md)
 * [Создание приложения](../apps-in-teams-meetings/design/designing-apps-in-meetings.md)
+* [Отчет об участии в собрании Microsoft Teams](/microsoftteams/teams-analytics-and-reports/meeting-attendance-report)

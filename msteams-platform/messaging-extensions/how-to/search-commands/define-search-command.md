@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете о командах п
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: e71e83f8fbd6b0d44257a2d38fd13486b087bc5e
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 10bb71580ac67db155bd14b74325635ae22e6840
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142810"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189612"
 ---
 # <a name="define-message-extension-search-commands"></a>Определение команд поиска расширения сообщений
 
@@ -20,6 +20,12 @@ ms.locfileid: "66142810"
 
 > [!NOTE]
 > Максимальный размер карточки результата — 28 КБ. Карточка не отправляется, если ее размер превышает 28 КБ.
+
+В следующем видео показано, как определить команды поиска расширений сообщений:
+<br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK]
+<br>
 
 ## <a name="select-search-command-invoke-locations"></a>Выбор расположений вызова команды поиска
 
@@ -133,13 +139,13 @@ ms.locfileid: "66142810"
 
 | Название примера           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
+|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
 Выполните [пошаговое руководство,](../../../sbs-messagingextension-searchcommand.yml) чтобы создать расширение сообщений на основе поиска.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Ответ на команды поиска](~/messaging-extensions/how-to/search-commands/respond-to-search.md).

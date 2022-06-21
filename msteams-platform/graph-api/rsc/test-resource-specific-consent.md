@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: авторизация teams OAuth SSO Microsoft Azure Active Directory (Azure AD) rsc Postman Graph
-ms.openlocfilehash: 60014699aa1275df787fcf553ae04671d1105f1c
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: d0eba34c8477c00e400e89adee7b9f09604918b7
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757446"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189880"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Проверка разрешений согласия для конкретных ресурсов в Teams
 
@@ -28,7 +28,7 @@ ms.locfileid: "65757446"
 
 <details>
 
-<summary><b>Разрешения RSC для манифеста приложения версии 1.12</b></summary>
+<summary><b>Разрешения RSC для манифеста приложения версии 1.12 и более поздних</b></summary>
 
 Добавьте в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:
 
@@ -186,7 +186,7 @@ ms.locfileid: "65757446"
 ```
 
 > [!NOTE]
-> Если приложение предназначено для поддержки установки как для группы, так и для чата, то разрешения для группы и чата можно указать в одном и том же манифесте в разделе`authorization`.
+> Если приложение предназначено для поддержки установки как для группы, так и для чата, то разрешения для группы и чата можно указать в одном манифесте в разделе `authorization`.
 
 </details>
 
@@ -194,7 +194,7 @@ ms.locfileid: "65757446"
 
 <details>
 
-<summary><b>Разрешения RSC для манифеста приложения версии 1.11 или более ранней</b></summary>
+<summary><b>Разрешения RSC для манифеста приложения версии 1.11 и более ранних</b></summary>
 
 Добавьте в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:
 

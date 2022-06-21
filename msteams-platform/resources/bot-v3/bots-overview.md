@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, как приступ
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: 6c57371e0df5739d800fc07e46a014aeb3836bc8
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: f3102e8a6a3fd424a4f4f25995d74911c83930ee
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142362"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189749"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в приложения Microsoft Teams
 
@@ -34,11 +34,11 @@ ms.locfileid: "66142362"
 
 Дополнительные сведения см. в статье [Беседа с ботом Microsoft Teams](~/resources/bot-v3/bot-conversations/bots-conversations.md).
 
-С помощью приложений Microsoft Teams вы можете сделать бота лучшей частью своей функции или просто помощником. Боты распространяются как часть более широкого пакета приложений, который может включать в себя другие возможности, такие как [вкладки](~/tabs/what-are-tabs.md) или [расширения для сообщений](~/messaging-extensions/what-are-messaging-extensions.md).
+С Teams приложениями вы можете сделать бот звездой вашего интерфейса или просто вспомогательным средством. Боты распространяются как часть более широкого пакета приложений, который может включать в себя другие возможности, такие как [вкладки](~/tabs/what-are-tabs.md) или [расширения для сообщений](~/messaging-extensions/what-are-messaging-extensions.md).
 
 ## <a name="bot-apis"></a>Интерфейсы API бота
 
-Microsoft Teams поддерживает большую часть [Microsoft Bot Framework](https://dev.botframework.com/). (Если у вас уже есть бот на основе Bot Framework, его можно легко адаптировать для работы в Microsoft Teams.) Мы рекомендуем использовать C# или Node.js, чтобы воспользоваться наших [пакетов SDK](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK Bot Builder:
+Teams поддерживает большую [часть Microsoft Bot Framework.](https://dev.botframework.com/) (Если у вас уже есть бот, основанный на Bot Framework, вы можете легко адаптировать его для работы в Teams.) Мы рекомендуем использовать C# или Node.js, чтобы воспользоваться преимуществами [наших пакетов SDK](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK Bot Builder:
 
 * Использование специальных типов карточек, например карточек соединителя Office 365.
 * Использование и настройка данных каналов Teams для действий.

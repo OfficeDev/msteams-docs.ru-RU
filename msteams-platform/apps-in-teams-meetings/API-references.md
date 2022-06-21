@@ -5,12 +5,12 @@ description: Узнайте, как определить ссылки на API �
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: 018aa14b72a63575deaefb8ee53f7fe4de7474ef
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: ac940438d78d941069f779150a74cfc85b1e2b95
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150661"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189437"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -267,7 +267,7 @@ API `Meeting Details` должен иметь регистрацию бота и
 
 <details>
 
-<summary><b>Для манифеста приложения версии 1.12</b></summary>
+<summary><b>Для манифеста приложения версии 1.12 и более поздних</b></summary>
 
 Используйте следующий пример, чтобы настроить манифест `webApplicationInfo` и `authorization` свойства вашего приложения для любого индивидуального собрания:
 
@@ -315,7 +315,7 @@ API `Meeting Details` должен иметь регистрацию бота и
 
 <details>
 
-<summary><b>Для манифеста приложения версии 1.11 или более ранней</b></summary>
+<summary><b>Для манифеста приложения версии 1.11 и более ранних</b></summary>
 
 Используйте следующий пример, чтобы настроить свойство `webApplicationInfo` манифеста приложения для любого индивидуального собрания:
 
@@ -631,7 +631,7 @@ microsoftTeams.meeting.getAppContentStageSharingCapabilities((err, result) => {
 
 <details>
 
-<summary><b>Для манифеста приложения версии 1.12</b></summary>
+<summary><b>Для манифеста приложения версии 1.12 и более поздних</b></summary>
 
 ```json
 "webApplicationInfo": {
@@ -658,7 +658,7 @@ microsoftTeams.meeting.getAppContentStageSharingCapabilities((err, result) => {
 
 <details>
 
-<summary><b>Для манифеста приложения версии 1.11 или более ранней</b></summary>
+<summary><b>Для манифеста приложения версии 1.11 и более ранних</b></summary>
 
 ```json
 "webApplicationInfo": {

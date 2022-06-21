@@ -3,12 +3,12 @@ title: Добавление действий карточек в бот
 description: В этом модуле вы узнаете, что такое действия Microsoft Teams, типы действий и как их использовать в ботах.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: e06cb41645480423727924127501b6ea3f85f953
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: d09caa4c7a0f324b712e93b678eac2a0b66567fc
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144175"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189762"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -556,6 +556,16 @@ CardFactory.actions([
   }
 }
 ```
+
+## <a name="code-samples"></a>Примеры кода
+
+|S.no|Карте| description|.NET|Javascript|Python|Java|
+|:--|:--|:--------------------------------------------------------|-----|------------|-----|----------------------------|
+|1|Использование карточек|Общие сведения о всех типах карточек, включая эскизы, звук, мультимедиа и т. д. Создается на основе приветственного пользователя и бота с несколькими запросами, отображая карточку с кнопками в приветственном сообщении, которые направляются в соответствующее диалоговое окно.|[.Net Core](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/06.using-cards)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/06.using-cards)|[Python](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/06.using-cards)|[Java](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/06.using-cards)|
+|2|Адаптивные карточки|Демонстрирует, как в многоэтапном диалоговом окне можно использовать карточку для получения введенных пользователем данных для имени и возраста.|[.NET Core](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/07.using-adaptive-cards)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/07.using-adaptive-cards)|[Python](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/07.using-adaptive-cards)|[Java](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/07.using-adaptive-cards)|
+
+> [!NOTE]
+> Элементы мультимедиа не поддерживаются для адаптивной карточки в Teams
 
 ## <a name="next-step"></a>Следующее действие
 

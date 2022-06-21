@@ -1,15 +1,14 @@
 ---
 title: Запрос разрешений устройства для приложения Microsoft Teams
-keywords: возможности приложений Teams разрешения устройства встроенный сканер QR-кодов штрихкод изображение аудио видео
 description: Обновление манифеста приложения для запроса доступа к собственным функциям, которые требуют согласия пользователя, таким как сканирование QR, штрихкод, изображение, аудио и видео
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: a2ffcb378c3e46f7e940e7729eb62ad31d0745a9
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: c39673bd03d18c0aabb98e218bf13c41ce1eab9f
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150822"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189461"
 ---
 # <a name="request-device-permissions-for-your-teams-app"></a>Запрос разрешений устройства для Teams приложения
 

@@ -5,12 +5,12 @@ description: В этой статье вы узнаете о средствах 
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 0b344b6a2db0abc4d1769c47aca6f496f69b98d7
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 10e6535c015e63ecc88b57d56019c12bdb50d531
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142467"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189332"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -61,6 +61,7 @@ ms.locfileid: "66142467"
 > Приложения-боты в Microsoft Teams доступны в GCC-High через [службу ботов Azure](/azure/bot-service/channel-connect-teams).
 
 > [!NOTE]
+>
 > * Боты в GCCH поддерживают только до версии манифеста 1.10.
 > * URL-адреса изображений в адаптивных карточках не поддерживаются в среде GCCH. URL-адрес изображения можно заменить на DataUri в кодировке Base64.
 > * Регистрация канала бота в Azure для государственных организаций подготавливает бот веб-приложения, службу приложений (план службы приложений) и application Insights, но не поддерживает подготовку только службы Azure Bot (без службы приложений).
@@ -70,12 +71,12 @@ ms.locfileid: "66142467"
 >   * Перейдите в группу ресурсов и вручную удалите неиспользуемые ресурсы. Например, служба приложений, план службы приложений (если вы создали во время регистрации бота) и application Insights (если вы решили включить его во время регистрации бота).
 >   * Вы также можете использовать az-cli для регистрации бота:
 >
->     1. Вход в Azure и настройка подписки <br> 
->           &nbsp; az cloud set –name "AzureUSGovernment" <br> 
+>     1. Вход в Azure и настройка подписки <br>
+>           &nbsp; az cloud set –name "AzureUSGovernment" <br>
 >           &nbsp; az account set –name "`subscriptionname/id`".<br>
 >     1. Создание регистрации приложения  
->           &nbsp; az ad app create --display-name "`name`" <br> 
->           &nbsp; --password "`password`" --available-to-other-tenants.<br> 
+>           &nbsp; az ad app create --display-name "`name`" <br>
+>           &nbsp; --password "`password`" --available-to-other-tenants.<br>
 >           Идентификатор приложения будет создан здесь.<br>
 >     1. Создание ресурса бота <br>
 >           &nbsp; az bot create –resource-group "`resource-group`"<br>
@@ -98,7 +99,7 @@ ms.locfileid: "66142467"
 
 По мере регистрации бота на Azure для государственных организаций портале обязательно обновите конфигурации бота для подключения к экземплярам Azure govermnet. Ниже приведены сведения о конфигурации:
 
-| Имя конфигурации | Value |
+| Имя конфигурации | Значение |
 |----|----|
 | ChannelService | `https://botframework.azure.us` |
 | OAuthUrl | `https://tokengcch.botframework.azure.us` |
@@ -117,7 +118,7 @@ ms.locfileid: "66142467"
     * Установите для `ConnectionName` имя параметра подключения OAuth, добавленного в бот.
 
     * Установите для `MicrosoftAppId` и `MicrosoftAppPassword` значение идентификатора приложения и секрета приложения вашего бота.
-    
+
     В зависимости от символов в вашем секрете бота может потребоваться применить escape-последовательность XML для пароля. Например, все амперсанды (&) должны быть закодированные как `&amp;`.
 
     ```json
@@ -129,16 +130,17 @@ ms.locfileid: "66142467"
       "ConnectionName": ""
     }
     ```
+
 2. **Обновив файл Startup.cs:**
 
     Чтобы использовать OAuth в недоступных облаках *Azure*, таких как облако для государственных организаций, или в ботах с местом расположения данных, необходимо добавить следующий код в файл **Startup.cs** .
-    
+
     ```csharp
     string uri = "<uri-to-use>";
     MicrosoftAppCredentials.TrustServiceUrl(uri);
     OAuthClientConfig.OAuthEndpoint = uri;
     ```
-    
+
     Где \<uri-to-use\> находится один из следующих URI:
 
     |**URI**|**Описание**|
@@ -293,8 +295,8 @@ this.onMessage(async (context, next) => {
 
 |Название примера | Описание | .NETCore | Node.js | Python|
 |----------------|-----------------|--------------|----------------|-------|
-| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
-| Образцы бота | Набор образцов ботов | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore) |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python)|
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
+| Образцы бота | Набор образцов ботов | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore) |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python)|
 
 ## <a name="next-step"></a>Следующий этап
 
@@ -308,3 +310,4 @@ this.onMessage(async (context, next) => {
 * [Меню команд бота](~/bots/how-to/create-a-bot-commands-menu.md)
 * [Поток проверки подлинности для ботов в Microsoft Teams](~/bots/how-to/authentication/auth-flow-bot.md)
 * [Использование модулей задач из ботов](~/task-modules-and-cards/task-modules/task-modules-bots.md)
+* [Публикация бота в Azure](/azure/bot-service/bot-builder-deploy-az-cli)

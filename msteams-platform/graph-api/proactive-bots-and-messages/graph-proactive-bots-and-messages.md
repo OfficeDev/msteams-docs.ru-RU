@@ -1,17 +1,16 @@
 ---
 title: Используйте Microsoft Graph для авторизации упреждающей установки бота и обмена сообщениями в Teams.
-description: Описывает упреждающий обмен сообщениями в Teams и способы его реализации. Узнайте, как включить упреждающую установку приложений и обмен сообщениями, используя образец кода.
+description: В этой статье описывается упреждающий обмен сообщениями в Teams и способы его реализации. Узнайте, как включить упреждающую установку приложений и обмен сообщениями, используя образец кода.
 ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
-keywords: команды упреждающий обмен сообщениями чат установка Graph
-ms.openlocfilehash: 7a133b91aabe920b109b644331bc6526cd950858
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 832dfe6ddce7710d506c480fc1195c426b8da0df
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65757705"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189586"
 ---
 # <a name="proactive-installation-of-apps-using-graph-api-to-send-messages"></a>Упреждающая установку приложений с помощью API Graph для отправки сообщений
 

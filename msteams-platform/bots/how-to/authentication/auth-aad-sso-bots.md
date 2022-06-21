@@ -3,12 +3,12 @@ title: Поддержка единого входа для ботов
 description: Узнайте, как получить маркер пользователя и разработчик бота может использовать карточку входа или службу azure bot с поддержкой карты OAuth.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 37c7fcd62c6b85c2220e9db57060da03437d79da
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 924262b492c85205a8f1ba4fd034e86ecdf82d53
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144147"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189723"
 ---
 # <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входа для ботов
 
@@ -16,6 +16,11 @@ ms.locfileid: "66144147"
 
 >[!NOTE]
 > OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory (Azure AD) и многими другими поставщиками удостоверений. Для работы с проверкой подлинности в Microsoft Teams. необходимо базовое понимание механизма OAuth 2.0.
+
+См. следующее видео, чтобы узнать о поддержке единого входа для ботов:
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OASc]
+<br>
 
 ## <a name="bot-sso-at-runtime"></a>Единый вход для ботов во время выполнения
 
@@ -380,7 +385,7 @@ ms.locfileid: "66144147"
 
 |**Название примера** | **Описание** |**.NET** |**C#** |**Node.js** |
 |----------------|-----------------|--------------|--------------|--------------|
-|Bot Framework SDK | В этом примере кода показано, как приступить к проверке подлинности в боте для Microsoft Teams. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
+|Bot Framework SDK | В этом примере кода показано, как приступить к проверке подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 

@@ -1,17 +1,16 @@
 ---
 title: Интеграция возможностей мультимедиа
 author: Rajeshwari-v
-description: Узнайте, как использовать клиентский пакет SDK Teams JavaScript для включения мультимедийных возможностей с помощью примеров кода.
-keywords: API мультимедиа разрешений для встроенного устройства с изображением камеры
+description: Узнайте, как Teams клиентский пакет SDK javaScript для включения возможностей мультимедиа с помощью примеров кода, а также сведения о преимуществах интеграции возможностей мультимедиа.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 586db765ff94449a137e131cd788cbc1732d55f2
-ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
+ms.openlocfilehash: 366c58ac283e687f8a297b8701b932f99550574e
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66130534"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190239"
 ---
 # <a name="integrate-media-capabilities"></a>Интеграция возможностей мультимедиа
 

@@ -3,12 +3,12 @@ title: Microsoft Teams и отзывы сообщества разработчи
 description: Узнайте Microsoft Teams что группа разработчиков отвечает сообществу разработчиков по различным каналам обратной связи и поддержки.
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: 1155df225aff3016f0c978dc9c84b4462874ea16
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: aa8518c095eed2357e1da80af5eec1b15c71759f
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144105"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190255"
 ---
 # <a name="support-and-feedback"></a>Поддержка и обратная связь
 
@@ -20,15 +20,15 @@ ms.locfileid: "66144105"
 |:------------|:------------|
 | **Проблемы и ошибки продукта Microsoft Teams** | Если у вас есть контракт на поддержку Premier для :::image type="icon" source="assets/icons/microsoft-icon.png" border="false"::: Microsoft 365, посетите Центр администрирования Microsoft 365 и воспользуйтесь меню поддержки, чтобы [создать запрос на обслуживание](https://admin.microsoft.com/). |
 | **Помощь и поддержка по Azure** | Если у вас есть платная подписка Azure, посетите Центр администрирования Azure, чтобы [создать запрос](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq). |
-| **Общие вопросы о Microsoft Teams** | Если у вас есть общие вопросы о Microsoft Teams, отправьте их в :::image type="icon" source="assets/icons/microsoft-icon.png" border="false"::: [сообщество Microsoft Teams](https://answers.microsoft.com/msteams/forum).|
+| **Общие вопросы о Teams** | Если у вас есть общие вопросы по Teams, отправьте свои [вопросы на Microsoft Teams Community](https://answers.microsoft.com/msteams/forum):::image type="icon" source="assets/icons/microsoft-icon.png" border="false":::.|
 
 ## <a name="developer-community-help"></a>Помощь сообщества разработчиков
 
-Сообщество разработчиков Microsoft Teams использует Stack Overflow и Microsoft Q&A для взаимодействия с другими разработчиками с целью формирования идей, получения уточнений и отправки запросов. Кроме того, вы можете использовать другие контакты или сайты в зависимости от типа помощи сообщества, необходимой с возникшими проблемами, ограничениями и общими вопросами.
+Teams разработчиков используют Stack Overflow и Microsoft Q&A для взаимодействия с другими разработчиками для идею, получения уточнений и отправки запросов. Кроме того, вы можете использовать другие контакты или сайты в зависимости от типа помощи сообщества, необходимой с возникшими проблемами, ограничениями и общими вопросами.
 
 ### <a name="developer-community-forums"></a>Форумы сообщества разработчиков
 
-Опубликуйте свои вопросы и помогите другим участникам сообщества, поделившись вопросами о разработке приложения Microsoft Teams или ответив на них.
+Опубликуйте свои вопросы и помогите другим участникам сообщества, делиться Teams и отвечать на них.
 
 | **Канал сообщества**|   **Контакт**  |
 |:---------------------|:---------------|

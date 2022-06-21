@@ -5,12 +5,12 @@ description: Узнайте, как отправлять, получать и о
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: e9edc06d65120748c6e87ba5a5916f55d6346a9e
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 47b706aea1e6ba292126d93a8e0b6ce173c4b588
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144413"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190264"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Беседы с бото в канале и групповом чате
 
@@ -26,6 +26,12 @@ ms.locfileid: "66144413"
 > Используя согласие для конкретного ресурса (RSC), боты могут получать все сообщения каналов в командах, в которых они установлены, даже без @упоминания. Дополнительные сведения см. в статье [Получение всех сообщений канала с помощью RSC](channel-messages-with-rsc.md).
 >
 > Публикация сообщений или адаптивных карточек в частном канале в настоящее время не поддерживается.
+
+В следующем видео показано, как общаться в чатах каналов и групп с ботом:
+<br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NzEs]
+<br>
 
 ## <a name="design-guidelines"></a>Рекомендации по дизайну
 

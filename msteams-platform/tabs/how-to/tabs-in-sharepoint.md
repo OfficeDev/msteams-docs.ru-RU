@@ -5,12 +5,12 @@ description: Узнайте, как развернуть существующу�
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: f889a4e1932feb02eeb502ab2f85f051093a5b58
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 1da3d1359da2878586dafef16dac9a868d074ff1
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123649"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189474"
 ---
 # <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint
 
@@ -67,7 +67,7 @@ ms.locfileid: "66123649"
 
 ### <a name="sharepoint-framework-in-teams"></a>SharePoint Framework в Teams
 
-Вы также можете реализовать свои вкладки Microsoft Teams с помощью SharePoint Framework. Веб-части SharePoint Framework размещаются в SharePoint, что избавляет от необходимости использования внешних служб, например Azure. Для разработчиков SharePoint это значительно упрощает процесс разработки вкладок Teams. Дополнительные сведения о SharePoint Framework в Teams см. в статье [Как использовать SharePoint Framework в Teams.](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
+Вы также можете реализовать вкладки Teams с помощью SharePoint Framework. Веб-части SharePoint Framework размещаются в SharePoint, что избавляет от необходимости использования внешних служб, например Azure. Для разработчиков SharePoint это значительно упрощает процесс разработки вкладок Teams. Дополнительные сведения о SharePoint Framework в Teams см. в статье [Как использовать SharePoint Framework в Teams.](/sharepoint/dev/spfx/web-parts/get-started/using-web-part-as-ms-teams-tab)
 
 ## <a name="introduction"></a>Введение
 

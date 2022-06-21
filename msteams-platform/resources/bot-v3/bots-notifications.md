@@ -6,12 +6,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
 author: surbhigupta
-ms.openlocfilehash: 30ccb4ee8810154e2b36311d15217205de87b413
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 95d6439d396a61471c0e7dbe5942d4b88cc00a87
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142761"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189318"
 ---
 # <a name="handle-bot-events-in-microsoft-teams"></a>Обработка событий бота в Microsoft Teams
 
@@ -48,7 +48,7 @@ Teams события и события группы, `conversationUpdate` акт
 
 ### <a name="bot-or-user-added-to-a-team"></a>Бот или пользователь добавлен в команду
 
-Событие `conversationUpdate` с объектом `membersAdded` в полезных данных отправляется при добавлении бота в команду или при добавлении нового пользователя в команду, в которую был добавлен бот. Microsoft Teams также добавляет `eventType.teamMemberAdded` в объект `channelData`.
+Событие `conversationUpdate` с объектом `membersAdded` в полезных данных отправляется при добавлении бота в команду или при добавлении нового пользователя в команду, в которую был добавлен бот. Teams также добавляется `eventType.teamMemberAdded` в `channelData` объект.
 
 Так как это событие отправляется в обоих случаях, необходимо проанализировать объект `membersAdded`, чтобы определить, добавляется ли пользователь или бот. В последнем случае рекомендуется отправить [приветственное сообщение](~/resources/bot-v3/bot-conversations/bots-conv-channel.md#best-practice-welcome-messages-in-teams) в канал, чтобы пользователи могли понять функции, которые предоставляет ваш бот.
 
@@ -227,7 +227,7 @@ bot.on('conversationUpdate', (msg) => {
 
 ## <a name="team-member-or-bot-removed"></a>Удален участник команды или бот
 
-Событие `conversationUpdate` с объектом `membersRemoved` в полезных данных отправляется при удалении бота из команды или при удалении пользователя из команды, в которую был добавлен бот. Microsoft Teams также добавляет `eventType.teamMemberRemoved` в объект `channelData`. Как и в случае с объектом `membersAdded`, необходимо проанализировать объект `membersRemoved` на наличие идентификатора приложения бота, чтобы определить объект удаления.
+Событие `conversationUpdate` с объектом `membersRemoved` в полезных данных отправляется при удалении бота из команды или при удалении пользователя из команды, в которую был добавлен бот. Teams также добавляется `eventType.teamMemberRemoved` в `channelData` объект. Как и в случае с объектом `membersAdded`, необходимо проанализировать объект `membersRemoved` на наличие идентификатора приложения бота, чтобы определить объект удаления.
 
 ### <a name="schema-example-team-member-removed"></a>Пример схемы: удален участник команды
 

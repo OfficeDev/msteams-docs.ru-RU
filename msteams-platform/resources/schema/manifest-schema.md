@@ -3,12 +3,12 @@ title: Справочник по схеме манифеста
 description: В этой статье представлен справочник по схеме манифеста Microsoft Teams, схема и пример полного манифеста.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 2c7637f8ec3bd161827a2bd79f73b7374378e55b
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 5a65fa1fdbf854749bf21a4d4ab395af74211fc5
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142726"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189353"
 ---
 # <a name="reference-manifest-schema-for-microsoft-teams"></a>Справочник: схема манифеста для Microsoft Teams
 
@@ -197,7 +197,7 @@ ms.locfileid: "66142726"
                     ],
                     "description": "Command Description; e.g., Add a customer",
                     "initialRun": true,
-                    "fetchTask": true,
+                    "fetchTask": false ,
                     "parameters": [
                         {
                             "name": "custinfo",
@@ -578,7 +578,7 @@ URL-адрес со ссылкой на схему JSON для манифест�
 |`parameters.title`|string|32 символа|✔️|Понятное название параметра.|
 |`parameters.description`|string|128 символов||Понятное описание назначения параметра.|
 |`parameters.value`|string|512 символов||Начальное значение параметра. Это значение сейчас не поддерживается|
-|`parameters.inputType`|string|128 символов||Определяет тип элемента управления, отображаемого в модуле задач для `fetchTask: true`. Один из `text, textarea, number, date, time, toggle, choiceset`.|
+|`parameters.inputType`|string|128 символов||Определяет тип элемента управления, отображаемого в модуле задач для `fetchTask: false`. Один из `text, textarea, number, date, time, toggle, choiceset`.|
 |`parameters.choices`|массив объектов|10 элементов||Варианты для `choiceset`. Используйте, только `parameter.inputType` равно `choiceset`.|
 |`parameters.choices.title`|string|128 символов|✔️|Название выбора.|
 |`parameters.choices.value`|string|512 символов|✔️|Значение выбора.|

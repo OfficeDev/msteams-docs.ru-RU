@@ -5,16 +5,16 @@ description: В этом модуле вы узнаете, как удалени
 ms.topic: reference
 ms.localizationpriority: medium
 ms.author: lomeybur
-ms.openlocfilehash: 178c8616a00bc64f10a39815db16d11dcea6eb40
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 270d8499ff917a5b95aeaeaa48ddf11215f77d03
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143321"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190145"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 
-В этом документе описывается, как удаление полей вокруг всех вкладок в Microsoft Teams улучшает процесс создания приложения. Это усовершенствование, появившиеся в Microsoft Teams 2021 г.
+В этом документе описывается, как удаление полей вокруг всех вкладок в Microsoft Teams улучшает процесс создания приложения. Это усовершенствование, появившиеся в Teams 2021 г.
 Вы можете создавать приложения, которые выглядят более Teams, удалив поля вокруг всех вкладок. Вкладки с удаленными полями соответствуют макетам Microsoft Teams [пользовательского интерфейса.](~/tabs/design/tabs.md) В большинстве приложений улучшен внешний вид без полей.
 
 :::image type="content" source="../assets/images/tabs/remove-margins-tabs.png" alt-text="Tab wit и без полей" border="false":::

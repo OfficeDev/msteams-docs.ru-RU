@@ -1,16 +1,16 @@
 ---
 title: Публикация приложений Teams для Microsoft 365
-description: Сделайте Microsoft 365 приложения с поддержкой Teams обнаруживаемыми пользователями в Teams, Outlook и Office
+description: Узнайте, как сделать Microsoft 365 приложения с Teams для пользователей в Teams, Outlook и Office.
 ms.date: 05/24/2022
 ms.topic: conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 78a2d0354028426f4de98759a501e66530cf1166
-ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.openlocfilehash: ff0391bb82bed022ec372094546e3a5236e030ea
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65668062"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190186"
 ---
 # <a name="publish-teams-apps-for-microsoft-365"></a>Публикация приложений Teams для Microsoft 365
 

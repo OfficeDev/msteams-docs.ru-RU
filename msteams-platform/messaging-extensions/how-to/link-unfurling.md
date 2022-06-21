@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: e166ced0b001414a89d24c81430c1b93431ff3a7
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: debbcdcf4c22f63262e16fda70c0e778bffa9379
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142817"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189999"
 ---
 # <a name="link-unfurling"></a>Развертывание ссылки
 
@@ -26,6 +26,11 @@ ms.locfileid: "66142817"
 Расширение для сообщений Azure DevOps использует развертывание ссылок для поиска URL-адресов, вставленных в область создания сообщений, указывающих на рабочий элемент. На следующем рисунке пользователь вставляет URL-адрес элемента в Azure DevOps, который расширение сообщения разрешает в карточку:
 
 :::image type="content" source="~/assets/images/compose-extensions/messagingextensions_linkunfurling.png" alt-text="Пример развертывания ссылки":::
+
+Дополнительные сведения об отмене ссылки см. в следующем видео:
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OFZG]
+<br>
 
 ## <a name="add-link-unfurling-to-your-app-manifest"></a>Добавление развертывания ссылок в манифест приложения
 

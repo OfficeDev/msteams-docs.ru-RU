@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как определ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 64a11741612fdf8efbcca968fed3a3d78cda90b1
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 0d6979a3d0845be88e43e150451ee6e4097a6870
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143433"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189618"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
@@ -23,6 +23,12 @@ ms.locfileid: "66143433"
 1. [Откуда можно будет активировать команду действия?](#select-action-command-invoke-locations)
 1. [Как будет создан модуль задач?](#select-how-to-create-your-task-module)
 1. [Будут ли окончательное сообщение или карточка отправлены в канал ботом или вставлены в область создания сообщения для отправки пользователем?](#select-how-the-final-message-is-sent)
+
+В следующем видео показано, как определить команды действий расширения сообщений:
+<br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG]
+<br>
 
 ## <a name="select-action-command-invoke-locations"></a>Выбор расположений, из которых будет вызываться команда действия
 
@@ -185,7 +191,7 @@ ms.locfileid: "66143433"
         "title": "Create To Do",
         "type": "action",
         "context": ["commandBox", "message", "compose"],
-        "fetchTask": true,
+        "fetchTask": false,
         "parameters": [
           {
             "name": "Name",
@@ -212,7 +218,7 @@ ms.locfileid: "66143433"
         "description": "Reassign a todo item",
         "title": "Reassign a todo item",
         "type": "action",
-        "fetchTask": true,
+        "fetchTask": false,
       }
     ]
   }
@@ -224,7 +230,7 @@ ms.locfileid: "66143433"
 
 | Название примера           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
+|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 

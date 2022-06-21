@@ -4,12 +4,12 @@ description: Ознакомьтесь с рекомендациями по ло�
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/15/2018
-ms.openlocfilehash: 5c3d0612f0e7ce0e183d097469165cf2f9c337d0
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: cfb425bef1b09540c1049a3769c87d8def272314
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150668"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189592"
 ---
 # <a name="localize-your-app"></a>Локализация приложения
 
@@ -46,6 +46,9 @@ ms.locfileid: "66150668"
 Чтобы локализовать приложение, используйте схему приложения Microsoft Teams `v1.5` и более поздние версии. Это можно сделать, задав для атрибута `$schema` в файле manifest.json значение `https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json` или выше и обновив свойство `manifestVersion` до версии `$schema` (в данном случае `1.5`).
 
 Добавьте свойство `localizationInfo` с языком по умолчанию, поддерживаемым приложением. Язык по умолчанию используется в качестве конечного резервного языка, если параметры клиента пользователя не соответствуют ни одному из дополнительных языков.
+
+> [!NOTE]
+> Версия манифеста должна быть одинаковой для файлов manifest.json и localization.json.
 
 ### <a name="example-manifestjson-change"></a>Пример изменения manifest.json
 
@@ -155,7 +158,7 @@ ms.locfileid: "66150668"
 
 | Название примера | Описание | .NET | Node.js |
 |-------------|-------------|------|------|
-| Локализация приложений | Teams локализации приложения с помощью бота и вкладки. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
+| Локализация приложений | Teams локализации приложения с помощью бота и вкладки. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/csharp) |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-localization/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
