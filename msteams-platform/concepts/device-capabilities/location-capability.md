@@ -1,17 +1,16 @@
 ---
 title: Интеграция функций местонахождения
 author: Rajeshwari-v
-description: Узнайте, как применять клиентский пакет SDK JavaScript для Teams, чтобы использовать функции местонахождения с помощью фрагментов кода и примеров
-keywords: собственные разрешения устройства для функций местонахождения на карте
+description: Узнайте, как использовать пакет SDK JavaScript для Teams для использования возможностей определения расположения с помощью фрагментов и образцов кода.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: 0a2c7400801decd937243bbbe5dbcea307d13fc0
-ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
+ms.openlocfilehash: 00fdfe470dcc5028afb233f9fbe0c6a6f7ff1b2c
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66130454"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189863"
 ---
 # <a name="integrate-location-capabilities"></a>Интеграция функций местонахождения
 
@@ -112,7 +111,7 @@ microsoftTeams.location.showLocation(location, (err: microsoftTeams.SdkError, re
 |----------------|-----------------|--------------|--------------|
 | Проверка текущего местонахождения приложением | Пользователи могут проверить текущее местонахождение и просмотреть все предыдущие проверки местонахождения.| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-checkin-location/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-checkin-location/nodejs) |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 * [Интеграция возможностей мультимедиа](media-capabilities.md)
 * [Интеграция функции сканирования QR- или штрихкода в Teams](qr-barcode-scanner-capability.md)

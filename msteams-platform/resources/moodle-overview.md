@@ -4,12 +4,12 @@ description: Сведения об интеграции Moodle LMS с Teams, у�
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: e782c6361be7a6ca95b6a21baf88bee63461f139
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 62e52835e63f6fd40633ca2c99097746ee7ab2e5
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143307"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189445"
 ---
 # <a name="moodle-learning-management-system"></a>Система управления обучением Moodle
 

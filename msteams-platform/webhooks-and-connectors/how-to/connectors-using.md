@@ -4,12 +4,12 @@ author: laujan
 description: В этом модуле вы узнаете, как использовать соединители Office 365, а также создавать и отправлять сообщения с действиями в Microsoft Teams
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 86fe2237b5cf92c4fbc345f171cc8365baa0f348
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 1d52760784e3d0bbbd1e4a87c576294530242629
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143265"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190106"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -168,7 +168,7 @@ ms.locfileid: "66143265"
     > [!NOTE]
     > В случае успешного выполнения запроса POST команда `curl` должна возвращать простой отклик **1**.
 
-1. Проверьте, опубликована ли новая карточка в клиенте Microsoft Teams.
+1. Проверьте наличие новой опубликованной карты в клиенте Teams.
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -185,7 +185,7 @@ ms.locfileid: "66143265"
     > [!NOTE]
     > В случае успешного выполнения запроса POST команда `Invoke-RestMethod` должна возвращать простой отклик **1**.
 
-1. Проверьте канал Microsoft Teams, связанный с URL-адресом веб-перехватчика. На канале появится новая карточка. Перед использованием соединителя для тестирования или публикации приложения необходимо сделать следующее.
+1. Проверьте канал Teams, связанный с URL-адресом веб-перехватчика. На канале появится новая карточка. Перед использованием соединителя для тестирования или публикации приложения необходимо сделать следующее.
 
     * [Включение двух значков](../../concepts/build-and-test/apps-package.md#app-icons).
     * Измените раздел `icons` манифеста на имена файлов значков, а не на их URL-адреса.

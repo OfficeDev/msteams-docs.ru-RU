@@ -1,17 +1,16 @@
 ---
 title: Использование Microsoft Graph для импорта сообщений внешней платформы в Teams
-description: Описание того, как использовать Microsoft Graph для импорта сообщений из внешней платформы в Teams
+description: Описывает использование Microsoft Graph для импорта сообщений с внешней платформы в Teams.
 ms.localizationpriority: high
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
-keywords: Teams импорт сообщений API Graph Microsoft миграция перенос запись
-ms.openlocfilehash: 3fb593bf72c1f8b495a45bad8eef6e2177684c7b
-ms.sourcegitcommit: eeaa8cbb10b9dfa97e9c8e169e9940ddfe683a7b
+ms.openlocfilehash: 248e288778ec43f4fd5e25f4b814b73fb89c0fe2
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65756922"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189718"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -59,14 +58,14 @@ ms.locfileid: "65756922"
 
 |ScopeName|DisplayName|Описание|Тип|Согласие администратора?|Охваченные объекты/API|
 |-|-|-|-|-|-|
-|`Teamwork.Migrate.All`|Управление миграцией в Microsoft Teams|Создание ресурсов для миграции в Microsoft Teams и управление ими.|**Только для приложений**|**Да**|`POST /teams`|
+|`Teamwork.Migrate.All`|Управление миграцией в Microsoft Teams|Создание ресурсов для миграции в Teams и управление ими.|**Только для приложений**|**Да**|`POST /teams`|
 
 #### <a name="request-create-a-team-in-migration-state"></a>Запрос (создание команды в состоянии миграции)
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams
-
 Content-Type: application/json
+
 {
   "@microsoft.graph.teamCreationMode": "migration",
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
@@ -105,14 +104,14 @@ Content-Location: /teams/{team-id}
 
 |ScopeName|DisplayName|Описание|Тип|Согласие администратора?|Охваченные объекты/API|
 |-|-|-|-|-|-|
-|`Teamwork.Migrate.All`|Управление миграцией в Microsoft Teams|Создание ресурсов для миграции в Microsoft Teams и управление ими.|**Только для приложений**|**Да**|`POST /teams`|
+|`Teamwork.Migrate.All`|Управление миграцией в Microsoft Teams|Создание ресурсов для миграции в Teams и управление ими.|**Только для приложений**|**Да**|`POST /teams`|
 
 #### <a name="request-create-a-channel-in-migration-state"></a>Запрос (создание канала в состоянии миграции)
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels
-
 Content-Type: application/json
+
 {
   "@microsoft.graph.channelCreationMode": "migration",
   "displayName": "Architecture Discussion",
@@ -303,7 +302,6 @@ HTTP/1.1 200 OK
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/team-id/channels/channel-id/completeMigration
-
 ```
 
 #### <a name="response"></a>Отклик
@@ -336,10 +334,11 @@ HTTP/1.1 204 NoContent
 POST https://graph.microsoft.com/beta/teams/{team-id}/members
 Content-type: application/json
 Content-length: 30
+
 {
-"@odata.type": "#microsoft.graph.aadUserConversationMember",
-"roles": [],
-"user@odata.bind": "https://graph.microsoft.com/beta/users/{user-id}"
+   "@odata.type": "#microsoft.graph.aadUserConversationMember",
+   "roles": [],
+   "user@odata.bind": "https://graph.microsoft.com/beta/users/{user-id}"
 }
 ```
 
