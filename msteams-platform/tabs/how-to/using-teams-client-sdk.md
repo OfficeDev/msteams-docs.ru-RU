@@ -5,12 +5,12 @@ ms.author: surbhigupta
 description: В этом модуле вы узнаете о пакете SDK для клиента Microsoft Teams JavaScript, помогающем в создании приложений Teams, размещенных в <iframe> в Teams, Office и Outlook.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: 1909df76b3cc61f0d93e4efe40e02b99dc3de730
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 165b08b3936afe03f492d8e6983c5504d38bad8b
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144217"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66189507"
 ---
 # <a name="building-tabs-and-other-hosted-experiences-with-the-microsoft-teams-javascript-client-sdk"></a>Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript
 
@@ -235,7 +235,7 @@ async function example() {
 * **Не** предполагайте, что определенные функции доступны или недоступны на узле, на основе значения свойства *hostName*. Вместо этого явно проверяйте поддержку возможности (`isSupported`).
 * **Не** используйте *hostName* для блокировки вызовов API. Вместо этого проверьте наличие поддержки возможностей (`isSupported`).
 * **Используйте** *hostName*, чтобы отличать тему вашего приложения в зависимости от узла, на котором оно работает. Например, вы можете использовать фиолетовый цвет Microsoft Teams в качестве основного цвета акцента при работе в Teams и синий цвет Outlook при работе в Outlook.
-* **Используйте** *hostName*, чтобы различать сообщения, отображаемые пользователю, в зависимости от того, на каком хосте он работает. Например, покажите *Управление задачами в Office* при работе в Office в Интернете и *Управление задачами в Teams* при работе в Microsoft Teams.
+* **Используйте** *hostName*, чтобы различать сообщения, отображаемые пользователю, в зависимости от того, на каком хосте он работает. Например, покажите *Управление задачами в Office* при работе в Office в Интернете и *Управление задачами в Teams* при работе в Teams.
 
 #### <a name="namespaces"></a>Пространства имен
 
@@ -243,7 +243,7 @@ async function example() {
 
 ##### <a name="app-namespace"></a>*приложение* пространство имен
 
-Пространство имен `app` содержит API-интерфейсы верхнего уровня, необходимые для общего использования приложений в Microsoft Teams, Office и Outlook. Начиная с TeamsJS версии 2.0 все API-интерфейсы из других пространств имен TeamsJS были перемещены в пространство имен `app`:
+Пространство имен `app` содержит API верхнего уровня, необходимые для общего использования приложений в Teams, Office и Outlook. Начиная с TeamsJS версии 2.0 все API-интерфейсы из других пространств имен TeamsJS были перемещены в пространство имен `app`:
 
 | Исходное пространство имен `global (window)` | Новое пространство имен `app` |
 | - | - |
