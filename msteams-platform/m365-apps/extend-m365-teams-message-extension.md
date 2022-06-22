@@ -1,16 +1,16 @@
 ---
 title: Распространение расширения сообщений Teams в Microsoft 365
-description: Вот как обновить расширение сообщений Teams на основе поиска для запуска в Outlook.
+description: Сведения о том, как обновить расширение сообщения Teams на основе поиска для запуска в Outlook, обновив манифест приложения, добавив канал Outlook и загрузив обновленное приложение.
 ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: high
-ms.openlocfilehash: d531b01a8de3663fed6806bc68386d9c4c894695
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 7c926f67181f58fc982b535853ec990bbae0651d
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142103"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190199"
 ---
 # <a name="extend-a-teams-message-extension-across-microsoft-365"></a>Распространение расширения сообщений Teams в Microsoft 365
 
@@ -106,9 +106,9 @@ ms.locfileid: "66142103"
 
     :::image type="content" source="images/azure-bot-channel-message-extensions.png" alt-text="Добавьте канал Outlook ''Расширения сообщений'' для бота на панели ''Каналы Azure Bot''.":::
 
-1. Убедитесь, что ваш канал Outlook перечислен вместе с Microsoft Teams на панели **Каналы** вашего бота:
+1. Убедитесь, что ваш канал Outlook указан вместе с Teams на панели **каналов** вашего бота.
 
-    :::image type="content" source="images/azure-bot-channels.png" alt-text="Панель Azure Bot Channels со списком каналов Microsoft Teams и Outlook":::
+    :::image type="content" source="images/azure-bot-channels.png" alt-text="Панель каналов Azure Bot со списком каналов Teams и Outlook.":::
 
 ## <a name="update-microsoft-azure-active-directory-azure-ad-app-registration-for-sso"></a>Обновление регистрации приложения Microsoft Azure Active Directory (Azure AD) для единого входа
 
@@ -133,7 +133,7 @@ ms.locfileid: "66142103"
 
 ## <a name="sideload-your-updated-message-extension-in-teams"></a>Загрузите обновленное расширение сообщений в Teams
 
-Последний шаг — загрузить обновленное расширение сообщений ([пакет приложения](/microsoftteams/platform/concepts/build-and-test/apps-package)) в Microsoft Teams. После завершения ваше расширение сообщений появится в ваших установленных *Приложениях* в области создания сообщения.
+Последний шаг — загрузка обновленного расширения сообщения ([пакет приложения](/microsoftteams/platform/concepts/build-and-test/apps-package)) в Teams. После завершения ваше расширение сообщений появится в ваших установленных *Приложениях* в области создания сообщения.
 
 1. Упакуйте приложение Teams (манифест и [значки](/microsoftteams/platform/resources/schema/manifest-schema#icons) приложений) в ZIP-файл. Если вы использовали Teams Toolkit для создания приложения, это легко сделать с помощью параметра **пакета метаданных Zip Teams** в меню *Развертывание* Teams Toolkit:
 

@@ -4,12 +4,12 @@ description: Узнайте, как отправлять упреждающие 
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: high
-ms.openlocfilehash: cf163b8c74a74eeb83757e65fd79351176290fc9
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 4344a1c1a3d58d8bb3c06105b05a1b370b55e259
+ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143510"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190141"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -25,8 +25,9 @@ ms.locfileid: "66143510"
 > В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD).
 >
 > Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций:
->    * GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`.
->    * GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
+>
+> * GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`.
+> * GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
 
 Чтобы бот мог отправлять упреждающие сообщения пользователю, групповому чату или команде, он должен иметь доступ для отправки сообщения. В случае группового чата или команды приложение, содержащее бота, должно быть сначала установлено в этом расположении.
 Вы можете [заранее установить приложение с помощью Microsoft Graph](#proactively-install-your-app-using-graph) в команде, если это необходимо, или использовать [политику приложений](/microsoftteams/teams-custom-app-policies-and-settings), чтобы передавать приложения командам и пользователям в вашем клиенте. В случае пользователей ваше приложение должно быть установлено для пользователя или пользователь должен быть частью команды, в которой установлено ваше приложение.
@@ -64,7 +65,9 @@ ms.locfileid: "66143510"
 
 Если беседы не существует или вы не знаете `conversationId`, следует создать беседу. Беседу следует создать всего один раз и сохранить значение `conversationId`или объект `conversationReference`.
 
-После создания беседы необходимо получить ее ИД.
+Вы можете получить беседу при первой установке приложения. После создания беседы необходимо получить ее ИД. `conversationId` доступен в событиях обновления беседы.
+
+Если у вас нет `conversationId` вы можете [заранее установить приложение с помощью Graph](#proactively-install-your-app-using-graph) и получить `conversationId`.
 
 ## <a name="get-the-conversation-id"></a>Получение ИД беседы
 
@@ -77,6 +80,13 @@ ms.locfileid: "66143510"
 Теперь, когда у вас есть правильные сведения об адресе, вы можете отправить сообщение. Если вы используете пакет SDK, необходимо использовать метод `continueConversation`, а также `conversationId` и `tenantId` для прямого вызова API. Необходимо настроить `conversationParameters` для успешной отправки сообщения. См. раздел с [образцами](#samples) или воспользуйтесь одним из примеров, перечисленных в разделе с [примерами кода](#code-sample).
 
 Теперь, когда вы отправили упреждающее сообщение, необходимо следовать этим рекомендациям при отправке упреждающих сообщений для улучшения обмена информацией между пользователями и ботом.
+
+Чтобы узнать, как отправлять упреждающие сообщения от ботов, посмотрите следующее видео:
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHyk]
+<br>
 
 ## <a name="best-practices-for-proactive-messaging"></a>Рекомендации по упреждающим сообщениям
 
