@@ -5,14 +5,14 @@ description: Из этой статьи вы узнаете, как включи
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.openlocfilehash: e891e147d4cc3216b6c2acb686505dd03353b385
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 674d8870989c42c25a121dc1f3a67616da5f57c1
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189860"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503951"
 ---
-# <a name="single-sign-on-support-for-message-extensions"></a>Поддержка единого входов у расширений для сообщений
+# <a name="enable-sso-for-message-extensions"></a>Включение единого входа в расширениях для сообщений
 
 Поддержка единого входа (SSO) теперь доступна для расширений сообщений и развертывания ссылок. Включение единого входа для расширений сообщений по умолчанию обновляет токен проверки подлинности, что сводит к минимуму количество раз, необходимое для ввода учетных данных для входа в Microsoft Teams.
 
@@ -123,10 +123,11 @@ ms.locfileid: "66189860"
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
-| Проверка подлинности бота | В этом примере показано, как приступить к проверке подлинности в боте для Teams. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
-| Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показан единый вход для tab, Bot и ME — поиск, действие, распакуйте ссылку. |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
+| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показан единый вход для tab, Bot и ME — поиск, действие, распакуйте ссылку. |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Н/Д |
+|Расширение Tab, Bot и Message| В этом примере показано, как проверить проверку подлинности в области bot, TAB и messaging с помощью единого входа. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-auth/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-complete-auth/nodejs) | Недоступно |
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 * [Добавление проверки подлинности в расширения для сообщений](add-authentication.md)
 * [Использование SSO для ботов](../../bots/how-to/authentication/auth-aad-sso-bots.md)

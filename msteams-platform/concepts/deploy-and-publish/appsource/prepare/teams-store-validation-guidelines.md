@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 316105d9ea6010094328ad7d204cfb765aecc022
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 45c19a5d7089fae85326e303641a8c9a281c7eb0
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123845"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503741"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -317,7 +317,7 @@ ms.locfileid: "66123845"
 
 [*Обязательное исправление*]
 
-Значки — это один из основных элементов, которые видят посетители, просматривая магазин Teams. 
+Значки — это один из основных элементов, которые видят посетители, просматривая магазин Teams.
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 

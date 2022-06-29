@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как определ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 0d6979a3d0845be88e43e150451ee6e4097a6870
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 75df991c0af1ca49a1fbba1846a01ff4b30236db
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189618"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503937"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
@@ -27,7 +27,7 @@ ms.locfileid: "66189618"
 В следующем видео показано, как определить команды действий расширения сообщений:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG>]
 <br>
 
 ## <a name="select-action-command-invoke-locations"></a>Выбор расположений, из которых будет вызываться команда действия
@@ -60,7 +60,7 @@ ms.locfileid: "66189618"
 
 Решив, откуда будет вызываться команда, выберите также способ заполнения формы в модуле задач для пользователей. У вас есть три варианта создания формы, показанной в модуле задачи:
 
-* **Статический список параметров**: это самый простой метод. Вы можете определить список параметров в манифесте приложения, Teams отрисовка клиента, но не может управлять форматированием в этом случае.
+* **Статический список параметров**: это самый простой метод. Вы можете определить список параметров в манифесте приложения, отображаемом клиентом Teams, но не можете управлять форматированием в этом случае.
 * **Адаптивная карточка**. Вы можете выбрать адаптивную карточку, что обеспечивает более полный контроль над пользовательским интерфейсом, но по-прежнему ограничивает доступность элементов управления и параметров форматирования.
 * **Внедренное веб-представление**. Вы можете внедрить пользовательское веб-представление в модуль задач, чтобы получить полный контроль над пользовательским интерфейсом и элементами управления.
 
@@ -230,7 +230,7 @@ ms.locfileid: "66189618"
 
 | Название примера           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
+|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 

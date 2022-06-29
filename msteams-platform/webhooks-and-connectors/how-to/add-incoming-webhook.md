@@ -5,14 +5,14 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: a1cb8f3e686ad0e1ee956345095d07c97f7a137c
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 4b93e7118cbd9b22ef7022f19b9538fe156b59f6
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189899"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503496"
 ---
-# <a name="create-an-incoming-webhook"></a>Создание входящего веб-перехватчика
+# <a name="create-incoming-webhooks"></a>Создание входящих веб-перехватчиков
 
 Входящий веб-перехватчик позволяет внешним приложениям делиться содержимым в каналах Microsoft Teams. Веб-перехватчики используются в качестве инструментов для отслеживания и уведомления. Веб-перехватчики предоставляют уникальный URL-адрес для отправки полезных данных JSON с сообщением в формате карточки. Карточки — это контейнеры пользовательского интерфейса, которые включают содержимое и действия на одну тему. Вы можете использовать карточки в следующих функциях:
 

@@ -1,17 +1,17 @@
 ---
 title: Общие сведения о наборе средств Teams
 author: zyxiaoyuer
-description: В этом модуле вы узнаете о Teams Toolkit, установке Teams Toolkit и пути взаимодействия пользователя Teams Toolkit
+description: В этом модуле вы узнаете о наборе средств Teams, установке набора средств Teams и пути взаимодействия пользователя с Набором средств Teams
 ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/24/2022
-ms.openlocfilehash: 529d7b6e18bf9ff0f28bb2230358f25f95b9e3db
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 49bf74276053f927f0337882d6f278ca64494128
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142201"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484612"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
 
@@ -21,7 +21,7 @@ ms.locfileid: "66142201"
 * Интегрированное удостоверение
 * Доступ к облачному хранилищу
 * Данные из Microsoft Graph
-* Службы Azure и Microsoft 365 с использованием подхода с нулевой конфигурацией
+* Службы Azure и Microsoft 365 с подходом без настройки.
 
 Набор средств Teams объединяет в одном месте все инструменты, необходимые для создания приложения Teams.
 
@@ -29,7 +29,7 @@ ms.locfileid: "66142201"
 
 Набор средств Teams автоматизирует ручную работу и обеспечивает отличную интеграцию ресурсов Teams и Azure. На следующем изображении показан путь пользователя при применении набора средств Teams.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey.png" alt-text="Путь пользователя в наборе средств Teams" border="true":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey1.png" alt-text="Путь взаимодействия пользователя с набором средств Teams" border="true" lightbox="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png":::
 
 Основные вехи этого пути:
 
@@ -46,7 +46,7 @@ ms.locfileid: "66142201"
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install toolkit-1.png" alt-text="установка":::
 
-1. **Введите Teams Toolkit** в поле поиска.
+1. **Введите Набор средств Teams** в поле поиска.
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/install-toolkit2.png" alt-text="Набор средств":::
 
@@ -63,7 +63,7 @@ ms.locfileid: "66142201"
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/manual/Teams-toolkit.png" alt-text="мини-функции":::
 
-Вы **можете выбрать Начало работы**, чтобы изучить Teams Toolkit, или выбрать команду "Создать Teams **App**", чтобы создать Teams проекта. Если у вас есть проект Teams, созданный Teams Toolkit, открытый в Visual Studio Code, вы увидите пользовательский интерфейс Teams Toolkit со всеми функциональными возможностями, как показано на следующем рисунке:
+Вы можете выбрать **"Начало работы"** , чтобы изучить набор средств Teams, или создать новое приложение **Teams** , чтобы создать один проект Teams. Если в Visual Studio Code открыт проект Teams, созданный набором средств Teams, вы увидите пользовательский интерфейс Набора средств Teams со всеми функциональными возможностями, как показано на следующем рисунке:
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/manual/teamstookit1.png" alt-text="Снимок экрана: набор средствteams":::
 
@@ -71,7 +71,7 @@ ms.locfileid: "66142201"
 
 ## <a name="accounts"></a>Учетные записи
 
-Для разработки приложения Teams требуется по крайней мере одна учетная запись Microsoft 365 с действительной подпиской. Если вы хотите разместить свои серверные ресурсы в Azure, также требуется учетная запись Azure. Teams Toolkit поддерживает интегрированный интерфейс для входа, подготовки и развертывания ресурсов Azure. Вы можете [создать бесплатную учетную запись Azure](https://azure.microsoft.com/free/) перед началом работы.
+Для разработки приложения Teams требуется по крайней мере одна учетная запись Microsoft 365 с действительной подпиской. Если вы хотите разместить свои серверные ресурсы в Azure, также требуется учетная запись Azure. Набор средств Teams поддерживает интегрированный интерфейс для входа, подготовки и развертывания ресурсов Azure. Вы можете [создать бесплатную учетную запись Azure](https://azure.microsoft.com/free/) перед началом работы.
 
 ## <a name="environment"></a>Среда
 
@@ -89,11 +89,11 @@ ms.locfileid: "66142201"
 
 ### <a name="create-a-new-teams-app"></a>Создание нового приложения Teams
 
-Это поможет начать с разработки Teams, создав новый проект Teams с помощью Teams Toolkit с помощью create **new project** или **Start from a sample**.
+Это поможет начать разработку приложений Teams, создав новый проект Teams с помощью набора средств Teams либо с помощью создания **нового** проекта, либо с **примера.**
 
 ### <a name="add-features"></a>Добавление компонентов
 
-Она помогает постепенно добавлять дополнительные Teams, такие как tab или **Bot**, или при необходимости  добавлять ресурсы Azure, такие как **База данных SQL Azure** или **Azure Key Vault**, которые соответствуют вашим потребностям разработки в текущем приложении Teams. Вы также можете добавить рабочие процессы **единого** входа или **CI/CD** для Teams приложения. 
+Она помогает постепенно добавлять дополнительные возможности Teams, такие как tab или **Bot**,  или при необходимости добавлять ресурсы Azure, такие как база данных **Azure SQL** или **Azure Key Vault**, которые соответствуют вашим потребностям разработки в текущем приложении Teams. Вы также можете добавить рабочие процессы **единого входа** или **CI/CD** для приложения Teams.
 
 ### <a name="edit-manifest-file"></a>Изменение файла манифеста
 
@@ -105,7 +105,7 @@ ms.locfileid: "66142201"
 
 ### <a name="provision-in-the-cloud"></a>Подготовка в облаке
 
-Интегрируется с диспетчером ресурсов Azure, что позволяет подготавливать ресурсы Azure, необходимые приложению для подхода с использованием кода.
+Он интегрируется с Azure Resource Manager, что позволяет подготавливать ресурсы Azure, необходимые приложению для подхода к коду.
 
 ### <a name="deploy-to-the-cloud"></a>Развертывание в облаке
 

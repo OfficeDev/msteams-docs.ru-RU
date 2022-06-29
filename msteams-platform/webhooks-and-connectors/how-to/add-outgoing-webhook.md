@@ -5,14 +5,14 @@ description: В этом модуле вы узнаете, как создава
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: a290d7197c842c3920bd536fa71774fd82e47d84
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: c3f7c3a1574af944dfc2ae64f76ec4d538cedae3
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189891"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503321"
 ---
-# <a name="create-outgoing-webhook"></a>Создание исходящего веб-перехватчика
+# <a name="create-outgoing-webhooks"></a>Создание исходящих веб-перехватчиков
 
 Исходящий веб-перехватчик действует как бот и ищет сообщения в каналах с помощью **@упоминания**. Он отправляет уведомления внешним веб-службам и отвечает с помощью информативных сообщений, включающих карточки и изображения. Это помогает пропустить процесс создания ботов с помощью [Microsoft Bot Framework](https://dev.botframework.com/).
 
@@ -107,7 +107,7 @@ ms.locfileid: "66189891"
 Код всегда должен проверять подпись HMAC, включенную в запрос, следующим образом.
 
 * Создание маркера HMAC из текста запроса сообщения. Для этого в большинстве платформ существуют стандартные библиотеки, например, [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto) для Node.js и [пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C\#. В Microsoft Teams используется стандартное шифрование HMAC SHA256. Необходимо преобразовать тело в массив байтов в UTF8.
-* Вычислите хэш из массива байтов маркера безопасности, предоставленного приложением Teams при регистрации исходящего веб-перехватчика в клиенте Teams. См. статью [Создание исходящего веб-перехватчика](#create-outgoing-webhook).
+* Вычислите хэш из массива байтов маркера безопасности, предоставленного приложением Teams при регистрации исходящего веб-перехватчика в клиенте Teams. См. статью [Создание исходящего веб-перехватчика](#create-outgoing-webhooks).
 * Преобразуйте хэш-значение в строку с помощью кодировки UTF-8.
 * Сравните строковое значение сгенерированного хэш-значения со значением, предоставленным в HTTP-запросе.
 

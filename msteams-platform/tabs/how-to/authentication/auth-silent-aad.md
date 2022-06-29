@@ -3,14 +3,14 @@ title: Автоматическая проверка подлинности
 description: В этом модуле вы узнаете, как выполнять автоматическую проверку подлинности, единый вход и Azure AD для вкладок и как это работает.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: bb5b65e70192c4796d7c828d19512e2a414cf812
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: d4fdf501899b17d3ee64cf74b1a1fb52e0e749db
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144245"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503629"
 ---
-# <a name="silent-authentication"></a>Автоматическая проверка подлинности
+# <a name="use-silent-authentication-in-azure-ad"></a>Использование автоматической проверки подлинности в Azure AD
 
 > [!IMPORTANT]
 > Поддержка и разработка библиотек проверки подлинности Active Directory (ADAL) со стороны Майкрософт, включая исправления в области безопасности, заканчивается **30 июня 2022 г**. Чтобы продолжить получать поддержку, обновите приложения, чтобы использовать библиотеку проверки подлинности Майкрософт (MSAL). См [. раздел "Перенос приложений в библиотеку проверки подлинности Майкрософт (MSAL)"](/azure/active-directory/develop/msal-migration).

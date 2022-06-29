@@ -5,14 +5,14 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 81bc5f667d1be301965ccddf0709c8cb02f328e8
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: cc2d08176d4da365eac9d5a5fd48ff53dbf84461
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142635"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485218"
 ---
-# <a name="create-a-removal-page"></a>Создать страницу удаления
+# <a name="tab-re-configuration-and-removal-page"></a>Страница повторной настройки и удаления табуляции
 
 Вы можете расширить и улучшить взаимодействие с пользователем, поддерживая параметры удаления и изменения в своем приложении. Teams позволяет пользователям переименовывать или удалять вкладку канала или группы, и вы можете разрешить пользователям изменять конфигурацию вкладки после установки. Кроме того, функция удаления вкладки предоставляет пользователям возможность после удаления удалить или заархивировать содержимое.
 

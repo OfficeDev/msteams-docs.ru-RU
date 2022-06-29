@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.topic: conceptual
 ms.author: lomeybur
 ms.localizationpriority: medium
-ms.openlocfilehash: f982c49c645a59f25182b7635839ece723c71ef3
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 56fa54f1a8aa9dce9ba049ae300099c0c67ae263
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142082"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485672"
 ---
 # <a name="create-conversational-tabs"></a>Создание вкладок бесед
 
@@ -47,7 +47,7 @@ microsoftTeams.conversations.openConversation({“subEntityId”:”task-1”, �
 
 На следующем рисунке показана панель беседы:
 
-![Вложенные сущности беседы — начало беседы](~/assets/images/tabs/conversational-subentities/start-conversation.png)
+:::image type="content" source="../../assets/images/tabs/conversational-subentities/start-conversation.png" alt-text="начать беседы":::
 
 Если пользователь начинает беседу, важно прослушать обратный вызов этого события, чтобы получить и сохранить **conversationId**:
 
@@ -65,7 +65,7 @@ microsoftTeams.conversations.onStartConversation = (conversationResponse) => {
 
 На следующем рисунке показана панель беседы с соответствующей беседой:
 
-![Вложенные сущности беседы — продолжение беседы](~/assets/images/tabs/conversational-subentities/continue-conversation.png)
+:::image type="content" source="../../assets/images/tabs/conversational-subentities/continue-conversation.png" alt-text="продолжить беседы":::
 
 ## <a name="enhance-a-conversation"></a>Улучшение беседы
 
@@ -93,7 +93,7 @@ microsoftTeams.conversations.onCloseConversation = (conversationResponse) => {
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка "Создание беседы"| Microsoft Teams пример приложения для демонстрации создания вкладки беседы. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
+|Вкладка "Создание беседы"| Пример приложения на вкладке Microsoft Teams для демонстрации вкладки создания беседы. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 

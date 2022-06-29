@@ -1,26 +1,26 @@
 ---
 title: Устранение проблем с отправкой в магазин
-description: Из этой статьи вы узнаете, как устранять и устранять проблемы с отправкой Microsoft Teams хранилища.
+description: Из этой статьи вы узнаете, как устранять неполадки с отправкой в Магазин Microsoft Teams и устранять их.
 ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: medium
-ms.openlocfilehash: 51427f2023ba566391a3d0b544d74e5658464a7c
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 5faf2d3622e88febe9522f5e2df6716ec2680cca
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123211"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503874"
 ---
-# <a name="resolve-issues-if-your-microsoft-teams-store-submission-fails"></a>Как устранять проблемы, если приложение, отправленное вами в магазин Microsoft Teams, было отвергнуто
+# <a name="resolve-issues-if-your-teams-store-submission-fails"></a>Устранение проблем в случае сбоя отправки в Магазин Teams
 
-Приложения, опубликованные в хранилище Microsoft Teams, [должны соответствовать](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) рекомендациям по Teams и политикам [коммерческой платформы](/legal/marketplace/certification-policies).
+Приложения, опубликованные в магазине Microsoft Teams, должны соответствовать рекомендациям по проверке магазина [Teams](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) и [политикам коммерческой платформы](/legal/marketplace/certification-policies).
 
 Если отправка в магазин завершается сбоем, корпорация Майкрософт предоставляет службу проверки concierge, которая помогает обеспечить соответствие и публикацию вашего приложения.
 
 ## <a name="get-help-directly-from-microsoft"></a>Получение справки непосредственно от корпорации Майкрософт
 
-Служба проверки concierge, предоставляемая корпорацией Майкрософт, помогает разработчикам публиковать свои приложения в Teams магазине. В рамках этой службы корпорация Майкрософт проверяет, работает ли ваше приложение, как описано выше, содержит все соответствующие метаданные и предоставляет пользователям значение.
+Служба проверки concierge, предоставляемая корпорацией Майкрософт, помогает разработчикам публиковать свои приложения в Магазине Teams. В рамках этой службы корпорация Майкрософт проверяет, работает ли ваше приложение, как описано выше, содержит все соответствующие метаданные и предоставляет пользователям значение.
 
 Если отправка приложения завершается сбоем, корпорация Майкрософт отправляет вам отчет о проверке с рекомендациями в течение 24 часов после отправки.
 
@@ -30,7 +30,7 @@ ms.locfileid: "66123211"
 
 * Соответствующее [руководство по проверке](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) для каждой проблемы.
 * Инструкции по воспроизведению каждой проблемы.
-* Рекомендации для устранения каждой проблемы на основе общедоступной документации разработчика.
+* Рекомендации по устранению каждой проблемы на основе общедоступной документации разработчика.
 
 Процесс устранения проблем и повторной отправки приложения обычно выполняется следующим образом:
 
@@ -71,10 +71,10 @@ ms.locfileid: "66123211"
 
 Выполнение следующих действий может привести к успешной отправке:
 
-1. Разработайте приложение на основе [Teams разработки](~/concepts/design/design-teams-app-overview.md).
-1. Убедитесь, что ваше приложение соответствует рекомендациям по Teams и политикам сертификации [коммерческой платформы Майкрософт](/legal/marketplace/certification-policies).[](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md)
-1. Протестируйте пакет приложения с [помощью Microsoft Teams проверки приложения](https://dev.teams.microsoft.com/appvalidation.html).
-1. [Подготовьте отправку Teams магазина](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md).
+1. Разработка приложения на основе рекомендаций [по проектированию Teams](~/concepts/design/design-teams-app-overview.md).
+1. Убедитесь, что ваше приложение соответствует рекомендациям по проверке магазина [Teams](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) и политикам сертификации [коммерческой платформы Майкрософт](/legal/marketplace/certification-policies).
+1. Протестируйте пакет приложения с помощью средства [проверки приложений Microsoft Teams](https://dev.teams.microsoft.com/appvalidation.html).
+1. [Подготовьте отправку в Магазин Teams](~/concepts/deploy-and-publish/appsource/prepare/submission-checklist.md).
 
 <br>
 
@@ -102,7 +102,7 @@ ms.locfileid: "66123211"
 
 <details>
 
-<summary><b>Я получил сообщение электронной почты из Центра партнеров о том, что мое приложение утверждено для публикации. Почему мое приложение не хранится в Teams магазине?</b></summary>
+<summary><b>Я получил сообщение электронной почты из Центра партнеров о том, что мое приложение утверждено для публикации. Почему мое приложение не хранится в Магазине Teams?</b></summary>
 
 После утверждения приложения публикация обычно занимает 1–2 бизнес-дня в зависимости от возможностей приложения.Если приложение не опубликовано через два бизнес-дня, <a href="mailto:teamsubm@microsoft.com">обратитесь к</a> teamsubm@microsoft.com.
 

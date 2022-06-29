@@ -6,12 +6,12 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 7e2ecb4c64153a2ed06d235146165705227ef102
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: e530adfc92f4edc1e25946a5af7c38300ae67777
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142187"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485638"
 ---
 # <a name="teamsfx-sdk"></a>Пакет SDK TeamsFx
 
@@ -177,8 +177,8 @@ TeamsFx SDK предоставляет несколько функций для 
 
 Требуемая конфигурация
 
-* `sqlServerEndpoint`, `sqlUsername`, `sqlPassword`, если вы хотите использовать удостоверение пользователя
-* `sqlServerEndpoint`, `sqlIdentityId`, если вы хотите использовать удостоверение MSI
+* `sqlServerEndpoint`, `sqlUsername`если `sqlPassword` вы хотите использовать удостоверение пользователя.
+* `sqlServerEndpoint`, `sqlIdentityId` если вы хотите использовать удостоверение MSI.
 
 ### <a name="error-handling"></a>Обработка ошибок
 

@@ -1,16 +1,16 @@
 ---
 title: Боты и пакеты SDK
 author: surbhigupta
-description: В этой статье вы узнаете о средствах и пакетах SDK для создания Microsoft Teams ботов и ботов с помощью Microsoft Bot Framework.
+description: Из этой статьи вы узнаете о средствах и пакетах SDK для создания ботов и ботов Microsoft Teams с помощью Microsoft Bot Framework.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 10e6535c015e63ecc88b57d56019c12bdb50d531
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 28cebe4634899a607bb13804997ffbe0649d54f2
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189332"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485687"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -186,9 +186,10 @@ ms.locfileid: "66189332"
 Индивидуальный чат — это традиционный способ общения бота с пользователем. Вот несколько примеров диалоговых ботов для индивидуальной беседы:
 
 * Боты для вопросов и ответов
-* боты, которые инициируют рабочие процессы в других системах
-* боты, которые рассказывают анекдоты
-* боты, делающие заметки Перед созданием индивидуальных чат-ботов подумайте, является ли интерфейс на основе диалога лучшим способом представления ваших функций.
+* боты, которые инициируют рабочие процессы в других системах.
+* боты, которые сообщают об этом.
+* боты, которые принимают заметки.
+Прежде чем создавать чат-боты "один к одному", подумайте, является ли интерфейс на основе беседы лучшим способом представления функций.
 
 ## <a name="disadvantages-of-bots"></a>Недостатки ботов
 
@@ -295,8 +296,8 @@ this.onMessage(async (context, next) => {
 
 |Название примера | Описание | .NETCore | Node.js | Python|
 |----------------|-----------------|--------------|----------------|-------|
-| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
-| Образцы бота | Набор образцов ботов | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore) |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python)|
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)|
+| Образцы бота | Набор образцов ботов | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore) |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python)|
 
 ## <a name="next-step"></a>Следующий этап
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: af546bb888cf5a3e35b7c241eba927e2d144bdd0
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 158905194ea29bfd2aca8149b8f8d6236905b754
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189916"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484868"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -44,7 +44,7 @@ ms.locfileid: "66189916"
 |TeamMember.Read.Group|Получить участников этой команды |
 |TeamsActivity.Send.Group|Создавайте новые уведомления в лентах активности пользователей этой команды. |
 
-Подробности в статье [Разрешения на согласие для конкретных ресурсов группы](/graph/permissions-reference#teams-resource-specific-consent-permissions).
+Подробности в статье [Разрешения на согласие для конкретных ресурсов группы](/graph/permissions-reference#team-resource-specific-consent-permissions).
 
 ### <a name="resource-specific-permissions-for-a-chat"></a>Разрешения для определенных ресурсов для чата
 
@@ -66,6 +66,7 @@ ms.locfileid: "66189916"
 | Calls.AccessMedia.Chat         | Доступ к мультимедийным потокам в звонках, связанных с этим чатом или собранием.                                    |
 | Calls.JoinGroupCalls.Chat         | Присоединение к звонкам, связанным с этим чатом или собранием.                                    |
 | TeamsActivity.Send.Chat         | Создавайте новые уведомления в лентах активности пользователей в этом чате. |
+| OnlineMeetingTranscript.Read.Chat | Прочитайте расшифровки собрания, связанного с этим чатом. |
 
 Подробности в статье [Разрешения на согласие для конкретных ресурсов чата](/graph/permissions-reference#chat-resource-specific-consent-permissions).
 

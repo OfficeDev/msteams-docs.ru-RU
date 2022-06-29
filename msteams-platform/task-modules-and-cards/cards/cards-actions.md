@@ -1,14 +1,14 @@
 ---
 title: Добавление действий карточек в бот
-description: В этом модуле вы узнаете, что такое действия Microsoft Teams, типы действий и как их использовать в ботах.
+description: В этом модуле вы узнаете, что такое действия с карточками в Microsoft Teams, типы действий и как их использовать в ботах.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: d09caa4c7a0f324b712e93b678eac2a0b66567fc
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: b9d73c09b9605ed9babbb2990c261dd920c3703b
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189762"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66483972"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -429,7 +429,9 @@ CardFactory.actions([
 Кроме того, вы можете изменить полезные данные адаптивной карточки `Action.Submit` для поддержки существующих действий Bot Framework с помощью свойства `msteams` в объекте `data`, относящемся к `Action.Submit`. В следующем разделе приводятся сведения об использовании существующих действий Bot Framework с адаптивными карточками.
 
 > [!NOTE]
-> Добавление `msteams` к данным с помощью действия Bot Framework не работает с модулем задач адаптивной карточки.
+>* Добавление `msteams` к данным с помощью действия Bot Framework не работает с модулем задач адаптивной карточки.
+> 
+>* Основное или деctuctive `ActionStyle` не поддерживается в Microsoft Teams. 
 
 ### <a name="adaptive-cards-with-messageback-action"></a>Адаптивные карточки с действием messageBack
 

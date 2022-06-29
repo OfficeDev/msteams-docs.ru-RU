@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: e01b5b8dc053559248bc3217a0807b69ec014669
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 3e73725bcfd1f51cc2f1ab82ba7437b205028c09
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123050"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484847"
 ---
 # <a name="maintain-your-published-microsoft-teams-app"></a>Поддержка опубликованного приложения Microsoft Teams
 
@@ -75,7 +75,7 @@ ms.locfileid: "66123050"
 1. На странице **Обзор продукта** выберите пункт **Остановить продажу**. Приложение будет удалено из Microsoft AppSource.
 1. Чтобы инициировать удаление приложения из списка, в **Центре партнеров** выберите страницу **Обзор** и нажмите кнопку **Остановить продажу**.
 
-После остановки распространения приложения его по-прежнему можно будет увидеть в Центре партнеров с состоянием **Недоступно**. Если вы решите снова добавить приложение в список, следуйте [инструкциям по публикации приложения в магазине Microsoft Teams](/concepts/deploy-and-publish/appsource/publish#teams-app-submission).
+После остановки распространения приложения его по-прежнему можно будет увидеть в Центре партнеров с состоянием **Недоступно**. Если вы решите снова добавить приложение в список, следуйте [инструкциям по публикации приложения в магазине Microsoft Teams](../publish.md).
 
 ## <a name="see-also"></a>См. также
 

@@ -5,14 +5,14 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: debbcdcf4c22f63262e16fda70c0e778bffa9379
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: d12b443972472d4ee307b55c0e492cff844acad4
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189999"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503615"
 ---
-# <a name="link-unfurling"></a>Развертывание ссылки
+# <a name="add-link-unfurling"></a>Добавление разворачивающейся ссылки
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
 

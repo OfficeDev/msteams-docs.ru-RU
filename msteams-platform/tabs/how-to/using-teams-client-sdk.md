@@ -1,18 +1,18 @@
 ---
-title: Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript
+title: Клиентский SDK JavaScript для Teams
 author: heath-hamilton
 ms.author: surbhigupta
 description: В этом модуле вы узнаете о пакете SDK для клиента Microsoft Teams JavaScript, помогающем в создании приложений Teams, размещенных в <iframe> в Teams, Office и Outlook.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: 165b08b3936afe03f492d8e6983c5504d38bad8b
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: fddc06c2139796839500a99421d1e2c92a4318c0
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189507"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503923"
 ---
-# <a name="building-tabs-and-other-hosted-experiences-with-the-microsoft-teams-javascript-client-sdk"></a>Создание вкладок и других размещенных функций с помощью клиентского пакета SDK Microsoft Teams для JavaScript
+# <a name="teams-javascript-client-sdk"></a>Клиентский SDK JavaScript для Teams
 
 Клиентский пакет SDK Microsoft Teams для JavaScript помогает создавать размещенные функции Teams, то есть приложения, интерфейсы которых размещаются в [iframe](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). Пакет SDK полезен для разработки приложений со следующими возможностями Teams:
 
@@ -42,7 +42,7 @@ TeamsJS версии 2.0 предоставляет возможность за�
 | appInitialization| | Устарело. Заменено пространством имен `app`. |
 | appInstallDialog | Teams||
 | authentication | Teams, Outlook, Office | |
-| calendar | Teams, Outlook ||
+| calendar | Outlook ||
 | call | Teams||
 | чат |Teams||
 | диалоговое окно | Teams, Outlook, Office | Пространство имен, представляющее диалоговые окна (ранее назывались *модули задач*). См. документацию по [диалоговым окнам](#dialogs). |

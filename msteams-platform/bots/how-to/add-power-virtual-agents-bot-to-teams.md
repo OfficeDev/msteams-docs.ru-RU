@@ -5,12 +5,12 @@ description: Узнайте, как интегрировать бота Power Vi
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 0f66a42cecbac25f82980c16e7f979c5d613816d
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: 310b7d8a5e04259a205763b45cb2d2315c19c72a
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150850"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485204"
 ---
 # <a name="add-power-virtual-agents-chatbot"></a>Добавление чатбота Power Virtual Agents
 
@@ -24,7 +24,7 @@ Power Virtual Agents позволяет создавать мощных бото
 
 > [!NOTE]
 >
-> * Добавив чат-бот в Microsoft Teams, некоторые данные, такие как содержимое бота и содержимое чата пользователя, Teams. Это означает, что поток ваших данных выходит за [пределы соответствия требованиям вашей организации и географических или региональных границ](/power-virtual-agents/data-location). <br/>
+> * Благодаря добавлению чат-бота в Microsoft Teams некоторые данные, такие как содержимое бота и содержимое чата пользователя, перечислены в Teams. Это означает, что поток ваших данных выходит за [пределы соответствия требованиям вашей организации и географических или региональных границ](/power-virtual-agents/data-location). <br/>
 > * Не следует использовать Microsoft Power Platform для создания приложений, предназначенных для публикации в магазине приложений Teams. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
 
 ## <a name="make-your-chatbot-available-in-teams-through-the-power-virtual-agents-portal"></a>Сделайте своего бота доступным в Teams через портал Power Virtual Agents.
@@ -112,3 +112,4 @@ App Studio — это приложение Teams. Установите App Studi
 * [Портал Power Virtual Agents](https://powervirtualagents.microsoft.com)
 * [Публикация бота Power Virtual Agents](/power-virtual-agents/publication-fundamentals-publish-channels)
 * [Безопасность и соответствие в Microsoft Teams](/MicrosoftTeams/security-compliance-overview)
+* [Бот Power Virtual Agents для управления персоналом](/power-virtual-agents/teams/fundamentals-get-started-teams)

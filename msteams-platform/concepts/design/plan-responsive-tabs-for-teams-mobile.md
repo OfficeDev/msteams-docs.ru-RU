@@ -1,16 +1,16 @@
 ---
 title: Планирование мобильной версии Teams
 author: surbhigupta
-description: В этом учебном модуле вы узнаете, как спланировать создание приложения на мобильных Teams и понять различные этапы создания приложения.
+description: В этом учебном модуле вы узнаете, как спланировать создание приложения на мобильном устройстве Teams и понять различные этапы создания приложения.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: v-abirade
-ms.openlocfilehash: 22b3abc44b2996547bc05e8cd11458b00eed1436
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 23f42e07f8c7b44cbcda35b5ed5f8fe17a320271
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143188"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484022"
 ---
 # <a name="plan-responsive-tabs-for-teams-mobile"></a>Планирование адаптивных вкладок для мобильной версии Teams
 
@@ -65,7 +65,7 @@ ms.locfileid: "66143188"
 * Визуальные элементы данных, карты и инфографика.
 * Диаграммы, графики и таблицы.
 
-![Использование панелей мониторинга и приложений визуализации данных](../../assets/images/app-fundamentals/dashboarding-and-data-visualization-apps-consumption.png)
+:::image type="content" source="../../assets/images/app-fundamentals/dashboarding-and-data-visualization-apps-consumption.png" alt-text="Отображение данных в виде визуализации.":::
 
 Быстрые действия:
 
@@ -75,7 +75,7 @@ ms.locfileid: "66143188"
 * Фильтрация данных.
 * Создание закладок.
 
-![Быстрые действия панелей мониторинга и приложений визуализации данных](../../assets/images/app-fundamentals/dashboarding-and-data-visualization-apps-quick-actions.png)
+:::image type="content" source="../../assets/images/app-fundamentals/dashboarding-and-data-visualization-apps-quick-actions.png" alt-text="Быстрые действия в существующей диаграмме и визуальных элементах.":::
 
 Включение:
 
@@ -87,7 +87,7 @@ ms.locfileid: "66143188"
 * Вставка элементов данных для создания визуализаций.
 * Предоставление общего доступа к визуализациям в канале или групповом чате.
 
-![Включение панелей мониторинга и приложений визуализации данных](../../assets/images/app-fundamentals/dashboarding-and-data-visualization-apps-enablement.png)
+:::image type="content" source="../../assets/images/app-fundamentals/dashboarding-and-data-visualization-apps-enablement.png" alt-text="Разрешить пользователям создавать содержимое, например графику диаграмм.":::
 
 <br>
 
@@ -105,7 +105,7 @@ ms.locfileid: "66143188"
 
 На первом этапе ваше приложение может отображать список задач для пользователя в вертикальной стопке. Если существует несколько категорий задач, например **Предложенные**, **Активные** и **Закрытые**, предоставьте фильтры для отображения задач по группам или в виде заголовков для просмотра сгруппированных задач.
 
-![Использование приложений с досками задач](../../assets/images/app-fundamentals/taskboarding-apps-consumption.png)
+:::image type="content" source="../../assets/images/app-fundamentals/taskboarding-apps-consumption.png" alt-text="Отображает список задач в вертикальном стеке.":::
 
 Быстрые действия:
 
@@ -118,7 +118,7 @@ ms.locfileid: "66143188"
 * Переместите задачи в разные категории.
 * Делитесь соответствующими задачами в чатах и каналах с помощью электронной почты и веб-канала действий.
 
-![Быстрые действия приложений с досками задач](../../assets/images/app-fundamentals/taskboarding-apps-quick-actions.png)
+:::image type="content" source="../../assets/images/app-fundamentals/taskboarding-apps-quick-actions.png" alt-text="Создание задач для снижения когнитивной нагрузки пользователей.":::
 
 Включение:
 
@@ -128,7 +128,8 @@ ms.locfileid: "66143188"
 * Добавляйте и изменяйте различные категории, такие как **"Предложенный"**, **"Активный**" и " **Закрытый"**.
 * Настройте задачи для комментариев, вложений и других сложных функций.
 
-![Включение приложений с досками задач](../../assets/images/app-fundamentals/taskboarding-apps-enablement.png)
+:::image type="content" source="../../assets/images/app-fundamentals/taskboarding-apps-enablement.png" alt-text="Включите взаимодействие с пользователем, добавив проекты и доски.":::
+
 <br>
 
 </details>
@@ -149,7 +150,7 @@ ms.locfileid: "66143188"
 * Увеличение или уменьшение масштаба.
 * Текущий этап или ход выполнения ожидающего документа.
 
-![Использование приложений совместной работы и демонстрации досок](../../assets/images/app-fundamentals/coauthoring-and-whiteboarding-apps-consumption.png)
+:::image type="content" source="../../assets/images/app-fundamentals/coauthoring-and-whiteboarding-apps-consumption.png" alt-text="Отображает содержимое и ресурсы в интерфейсе рабочего стола.":::
 
 Быстрые действия:
 
@@ -162,7 +163,7 @@ ms.locfileid: "66143188"
 > [!TIP]
 > Вы предоставляете действия, которые можно легко отображать на небольших экранах.
 
-![Быстрые действия приложений совместной работы и демонстрации досок](../../assets/images/app-fundamentals/coauthoring-and-whiteboarding-apps-quick-actions.png)
+:::image type="content" source="../../assets/images/app-fundamentals/coauthoring-and-whiteboarding-apps-quick-actions.png" alt-text="В этой статье описывается создание новой доски для совместной работы.":::
 
 Включение:
 
@@ -174,7 +175,7 @@ ms.locfileid: "66143188"
 * Операции удаления, отмены и повтора.
 * Доступ к камере и микрофону с помощью API пакета SDK для JS. Дополнительные сведения о возможностях устройств см. в [обзоре возможностей устройств](../device-capabilities/device-capabilities-overview.md).
 
-![Включение приложений совместной работы и демонстрации досок](../../assets/images/app-fundamentals/coauthoring-and-whiteboarding-apps-enablement.png)
+:::image type="content" source="../../assets/images/app-fundamentals/coauthoring-and-whiteboarding-apps-enablement.png" alt-text="Включите взаимодействие с пользователем, добавив текстовые фигуры, быстрые заметки и другие возможности.":::
 
 <br>
 

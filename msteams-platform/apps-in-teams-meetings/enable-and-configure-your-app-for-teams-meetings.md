@@ -4,14 +4,14 @@ author: surbhigupta
 description: Узнайте, как включать и настраивать приложения для собраний Teams и различных сценариев собраний, обновлять манифест приложения, настраивать функции и многое другое.
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: e7286399d27533d816e20f6b22e45f2526efdbe1
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: a59ee31eb1837389b09f58c83a02f056ab55506a
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142593"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503363"
 ---
-# <a name="enable-and-configure-your-apps-for-teams-meetings"></a>Включение и настройка приложений для собраний Teams
+# <a name="enable-and-configure-apps-for-meetings"></a>Включение и настройка приложений для собраний
 
 У каждой команды есть разные способы взаимодействия и совместной работы. Для выполнения различных задач настройте Teams с использованием приложений для собраний. Включите свои приложения для собраний Teams и настройте их доступность в области собраний в манифесте приложения.
 

@@ -1,16 +1,16 @@
 ---
 title: Настройка приложения Teams
 author: heath-hamilton
-description: В этом модуле вы узнаете, как Teams администраторы могут настроить приложение Teams для своей организации и скрыть Teams приложения, пока администратор не утвердит его.
+description: В этом модуле вы узнаете, как администраторы Teams могут настроить приложение Teams для своей организации и скрыть приложение Teams, пока администратор не утвердит его.
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: 224f2d755ad74b7ded81cf6ffb1791169c6eb3b7
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: c63a901aba88b8f9f77c3a3e54217204a3e91cc9
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143202"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503447"
 ---
 # <a name="customize-your-teams-app"></a>Настройка приложения Teams
 
@@ -44,7 +44,7 @@ ms.locfileid: "66143202"
 
 Чтобы скрыть приложение, в файле манифеста приложения установите для свойства `defaultBlockUntilAdminAction` значение `true`. Если свойство имеет значение `true`, перейдите в Центр администрирования Teams > **Управляемые приложения**, **Блокировка издателем** отображается в **Состоянии** приложения:
 
-![Управление приложениями, заблокированными издателем](../../assets/images/apps-in-meetings/manageappsblockedapps.png)
+:::image type="content" source="../../assets/images/apps-in-meetings/manageappsblockedapps.png" alt-text="Управление приложениями, заблокированными издателем.":::
 
 Администратор получает запрос на действие, прежде чем пользователь сможет получить доступ к приложению. В разделе **Управление приложениями** администраторы могут выбрать **Разрешить** Ю чтобы разрешить приложению с состоянием **Блокировка издателем** следующие возможности.
 

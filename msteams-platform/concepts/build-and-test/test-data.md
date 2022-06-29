@@ -4,20 +4,20 @@ description: Узнайте, как настроить подписку Office 3
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 11/01/2019
-ms.openlocfilehash: 35a61413ab9e9a672971ba6ce45b49f6dc645ab3
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: eea5c92f0f04cf09ba0dbcd92be638d3ae957901
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142355"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503461"
 ---
-# <a name="add-test-data-to-your-microsoft-365-test-tenant"></a>Добавление тестовых данных в тестовый клиент Microsoft 365
+# <a name="add-test-data-to-your-environment"></a>Добавление тестовых данные в среду
 
 Вы можете протестировать Microsoft Teams с примерами данных с помощью подписки на Microsoft 365 для разработчиков.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-1. [Присоединитесь к Microsoft 365 для](/office/developer-program/office-365-developer-program) разработчиков, если у вас нет тестового клиента.
+1. [Присоединитесь к программе для разработчиков Microsoft 365](/office/developer-program/office-365-developer-program), если у вас нет тестового клиента.
 2. [Настройка подписки для разработчиков Microsoft 365](/office/developer-program/office-365-developer-program-get-started)
 3. [Используйте примеры пакетов данных с подпиской на Microsoft 365 для разработчиков, чтобы установить пакет содержимого "Пользователи"](/office/developer-program/install-sample-packs).
 4. [Установите модуль Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.2).

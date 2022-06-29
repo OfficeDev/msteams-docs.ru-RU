@@ -1,15 +1,15 @@
 ---
 title: Создать бота
-description: В этом модуле вы узнаете, как создать ботов с помощью Microsoft Bot Framework и готовы к работе в Microsoft Teams
+description: В этом модуле вы узнаете, как создать ботов с помощью Microsoft Bot Framework и готовых к работе в Microsoft Teams.
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 12/07/2018
-ms.openlocfilehash: a669b11baef8dc31a662ea2ad178ad3488f2d69e
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: cc09f5a54298d385fa296f926e1e03e55e25c43c
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189520"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485288"
 ---
 # <a name="create-a-bot"></a>Создать бота
 
@@ -21,16 +21,16 @@ ms.locfileid: "66189520"
 
 ## <a name="create-a-bot-for-microsoft-teams"></a>Создание бота для Microsoft Teams
 
-**Teams App Studio** — это средство, которое может помочь создать бот и пакет приложения, который ссылается на бот. Оно также содержит библиотеку элементов управления React и настраиваемые примеры для карточек. Дополнительные сведения см. в [статье "Начало работы с Teams App Studio"](~/concepts/build-and-test/app-studio-overview.md). В следующих шагах предполагается, что вы вручную настраиваете бот, а не используете Teams **App Studio**:
+**Teams App Studio** — это средство, которое может помочь создать бот и пакет приложения, который ссылается на бот. Оно также содержит библиотеку элементов управления React и настраиваемые примеры для карточек. Дополнительные сведения см. в [статье "Начало работы с Teams App Studio"](~/concepts/build-and-test/app-studio-overview.md). В следующих шагах предполагается, что вы вручную настраиваете бот, а не используете **Teams App Studio**:
 
 1. Создайте бот с помощью [Bot Framework](https://dev.botframework.com/bots/new). **После создания бота обязательно добавьте Microsoft Teams в виде канала из списка основных каналов.** Вы можете повторно использовать любой сгенерированный вами идентификатор приложения Майкрософт, если вы уже создали пакет или манифест приложения.
 
-   ![Страница регистрации в Bot Framework](~/assets/images/bots/bfregister.png)
+   :::image type="content" source="../../assets/images/bots/bfregister.png" alt-text="Страница регистрации в Bot Framework":::
 
 > [!NOTE]
-> Если вы не хотите создавать бота в Azure, используйте эту ссылку для создания нового бота: [Bot Framework](https://dev.botframework.com/bots/new). Если щелкнуть "Создать **бот"** на портале Bot Framework, вы создайте бот в [Microsoft Azure.](#bots-and-microsoft-azure)
+> Если вы не хотите создавать бота в Azure, используйте эту ссылку для создания нового бота: [Bot Framework](https://dev.botframework.com/bots/new). Если вместо этого щелкнуть "Создать **бот"** на портале Bot Framework, вы создайте бот [в Microsoft Azure](#bots-and-microsoft-azure) .
 
-2. Создайте бот с помощью [пакета Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet, [пакета SDK Bot Framework](https://github.com/microsoft/botframework-sdk) или [API Bot Connector](/bot-framework/rest-api/bot-framework-rest-connector-api-reference).
+2. Создайте бот с помощью [пакета NuGet Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) ,  [пакета SDK Bot Framework](https://github.com/microsoft/botframework-sdk) или [API Bot Connector](/bot-framework/rest-api/bot-framework-rest-connector-api-reference).
 
 3. Протестируйте бот с помощью [Bot Framework Emulator](/bot-framework/debug-bots-emulator).
 
@@ -42,17 +42,17 @@ ms.locfileid: "66189520"
 >
 > С декабря 2017 г. портал Bot Framework оптимизирован для регистрации ботов в Microsoft Azure. Вот некоторые моменты, которые следует знать:
 >
-> * Каналы Microsoft Teams для ботов, зарегистрированных в Azure, являются бесплатными. Сообщения, отправляемые по Teams канала, не учитываются в потребляемых сообщениях для бота.
+> * Каналы Microsoft Teams для ботов, зарегистрированных в Azure, являются бесплатными. Сообщения, отправляемые по каналу Teams, не учитываются в потребляемых сообщениях для бота.
 > * Хотя можно создать бот [Bot Framework](https://dev.botframework.com/bots/new) без использования Azure, необходимо создать бот [Bot Framework](https://dev.botframework.com/bots/new), который больше не доступен на портале Bot Framework.
-> * При изменении свойств существующего бота в списке ботов [в Bot Framework](https://dev.botframework.com/bots), например его "конечной точки обмена сообщениями", который часто используется при разработке бота, особенно при использовании [ngrok](https://ngrok.com), вы увидите столбец "Состояние миграции" и синюю кнопку "Миграция", которая приведет вас на портал Microsoft Azure. Не нажимайте кнопку "Миграция", если это не нужно сделать. Вместо этого щелкните имя бота, и вы можете изменить его свойства:</br>
+> * При изменении свойств существующего бота в списке ботов [в Bot Framework](https://dev.botframework.com/bots), таких как "конечная точка обмена сообщениями", которая часто используется при разработке бота, особенно при использовании [ngrok](https://ngrok.com), вы увидите столбец "Состояние миграции" и синюю кнопку "Миграция", которая приведет вас в Microsoft портал Azure. Не нажимайте кнопку "Миграция", если это не нужно сделать. Вместо этого щелкните имя бота, и вы можете изменить его свойства:</br>
    ![Изменение свойств бота](~/assets/images/bots/bf-migrate-bot-to-azure.png)
-> * Если вы регистрируете бот с Microsoft Azure, код бота не обязательно должен быть размещен *в Microsoft Azure.*
-> * Если вы регистрируете бот с портал Azure, у вас должна быть Microsoft Azure учетной записи. Вы можете [создать ее бесплатно](https://azure.microsoft.com/free/). Чтобы проверить удостоверение при его создании, необходимо предоставить кредитную карту, но с нее не будет взиматься плата. Всегда можно создавать и использовать боты с Teams.
-> * Теперь вы можете использовать App Studio для регистрации или обновления сведений о приложении и боте непосредственно в Teams. Для добавления или настройки других каналов Bot Framework, таких как Direct Line, Веб-чат, Skype и Facebook Messenger, необходимо использовать портал Azure.
+> * Если вы регистрируете бот с помощью Microsoft Azure, код бота не обязательно должен быть *размещен в Microsoft* Azure.
+> * Если вы регистрируете бот с портал Azure, у вас должна быть учетная запись Microsoft Azure. Вы можете [создать ее бесплатно](https://azure.microsoft.com/free/). Чтобы проверить удостоверение при его создании, необходимо предоставить кредитную карту, но с нее не будет взиматься плата. Всегда можно создавать и использовать боты в Teams.
+> * Теперь вы можете использовать App Studio для регистрации или обновления сведений о приложении и боте непосредственно в Teams. Для добавления или настройки других каналов Bot Framework, таких как Direct Line, Веб-чат, Skype и Facebook Messenger, необходимо использовать только этот портал Azure.
 
 > [!WARNING]
 >
->* Если вы до сих пор использовали App Studio, рекомендуем попробовать Портал разработчика для настройки приложений Teams, распространения их и управления ими. App Studio станет нерекомендуемой к употреблению не позднее 30 июня 2022 г.
+>* Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio будет объявлен нерекомендуемым до 1 августа 2022 г.
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

@@ -3,16 +3,16 @@ title: Обновляйте и удаляйте сообщения, отправ
 author: WashingtonKayaker
 description: Узнайте, как обновлять и удалять сообщения, отправленные ботом Microsoft Teams в разных средах и с помощью REST API, используя образцы кода.
 ms.topic: overview
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 76befe46bab8d6cc0aa3d5c0c1e2c8c0f15bf579
-ms.sourcegitcommit: f15bd0e90eafb00e00cf11183b129038de8354af
-ms.translationtype: HT
+ms.openlocfilehash: bd52a3cfa27153c4349d50f4263dc29346fdfb45
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "65111411"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503804"
 ---
-# <a name="update-and-delete-messages-sent-from-your-bot"></a>Обновляйте и удаляйте сообщения, отправленные ботом
+# <a name="update-and-delete-messages-sent-from-bot"></a>Обновление и удаление сообщений, отправленных от бота 
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -181,7 +181,7 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------------------|-----------------|--------|-------------|--------|
-| Основы бесед в Teams  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Основы бесед в Teams  | Демонстрирует основы бесед в Teams, включая обновление и удаление сообщений. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

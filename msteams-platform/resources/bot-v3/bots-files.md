@@ -1,17 +1,18 @@
 ---
 title: Отправка и получение файлов от бота
-description: Узнайте, как отправлять и получать файлы с помощью бота с помощью Graph API для личных, каналов и групповых чатов.
+description: Узнайте, как отправлять и получать файлы через бота с использованием API Graph для личной области, области канала и группового чата. Используйте API бота Teams с помощью примеров кода на основе пакета SDK Bot Framework версии 3.
+keywords: отправка и получение файлов ботов Teams
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: 96642885f6dd9581a5efdaba21249002282c5c9a
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 5d7b83890947a77a477c67197557c92aa6e7b103
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143370"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503587"
 ---
-# <a name="send-and-receive-files-through-your-bot"></a>Отправка и получение файлов через бот
+# <a name="send-and-receive-files-using-bots"></a>Отправка и получение файлов с помощью ботов
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
@@ -164,7 +165,7 @@ ms.locfileid: "66143370"
 
 ### <a name="notifying-the-user-about-an-uploaded-file"></a>Уведомление пользователя об отправленном файле
 
-После отправки файла в хранилище OneDrive пользователя, если вы используете механизм, описанный выше, или делегированные пользователем API в OneDrive, необходимо отправить пользователю сообщение с подтверждением. Это сообщение должно содержать вложение`FileCard`, которое пользователь может выбрать для предварительного просмотра, открытия в OneDrive или локального скачивания.
+После отправки файла в хранилище OneDrive пользователя, если вы используете механизм, описанный выше, или делегированные пользователем API в OneDrive, необходимо отправить пользователю сообщение с подтверждением. Это сообщение должно содержать вложение `FileCard` , которое пользователь может выбрать для предварительного просмотра, открытия в OneDrive или локального скачивания.
 
 ```json
 {
@@ -187,7 +188,7 @@ ms.locfileid: "66143370"
 | `uniqueId` | Идентификатор элемента диска OneDrive/SharePoint |
 | `fileType` | Тип файла, например PDF или DOCX. |
 
-### <a name="basic-example-in-c"></a>Основной пример в C#
+### <a name="basic-example-in-c"></a>Базовый пример в C #
 
 В следующем примере показано, как обрабатывать отправку файлов и отправлять запросы согласия на получение файлов в диалоговом окне бота.
 
@@ -266,3 +267,7 @@ private static Attachment CreateFileConsentAttachment()
     return att;
 }
 ```
+
+## <a name="see-also"></a>См. также
+
+[Работа с файлами в Microsoft Graph](/graph/api/resources/onedrive)

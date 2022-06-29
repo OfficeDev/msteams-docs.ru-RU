@@ -3,14 +3,14 @@ title: Поддержка единого входа для ботов
 description: Узнайте, как получить маркер пользователя и разработчик бота может использовать карточку входа или службу azure bot с поддержкой карты OAuth.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 924262b492c85205a8f1ba4fd034e86ecdf82d53
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 5ce3fab237c8190670292616c05ee3bf51b4e7cb
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189723"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503657"
 ---
-# <a name="single-sign-on-sso-support-for-bots"></a>Поддержка единого входа для ботов
+# <a name="use-sso-authentication-for-bots"></a>Использование проверки подлинности единого входа для ботов
 
 Проверка подлинности единого входа в Microsoft Azure Active Directory (Azure AD) автоматически обновляет маркер проверки подлинности, чтобы свести к минимуму количество раз, когда пользователям необходимо вводить учетные данные для входа. Если пользователь соглашается использовать ваше приложение, ему не придется повторно давать согласие на другом устройстве, поскольку вход будет выполнен автоматически. Вкладки и боты имеют аналогичный поток для поддержки единого входа. Но бот [запрашивает маркеры](#request-a-bot-token) [и получает ответы](#receive-the-bot-token) по другому протоколу.
 
@@ -19,7 +19,7 @@ ms.locfileid: "66189723"
 
 См. следующее видео, чтобы узнать о поддержке единого входа для ботов:
 <br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OASc]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OASc>]
 <br>
 
 ## <a name="bot-sso-at-runtime"></a>Единый вход для ботов во время выполнения
@@ -100,7 +100,7 @@ ms.locfileid: "66189723"
    >
    > Необходимо учитывать следующие важные ограничения:
    >
-   > * Поддерживаются только разрешения Microsoft API Graph уровня пользователя, такие как электронная почта, профиль, offline_access и OpenId. Если вам нужен доступ к другим областям microsoft Graph, `User.Read` `Mail.Read`таким как или, см. раздел "Расширение приложения табуляции с помощью [microsoft Graph и области.](../../../tabs/how-to/authentication/tab-sso-graph-api.md)
+   > * Поддерживаются только разрешения Microsoft API Graph уровня пользователя, такие как электронная почта, профиль, offline_access и OpenId. Если вам нужен доступ к другим областям Microsoft Graph, `User.Read` `Mail.Read`таким как или, см. раздел "Расширение приложения вкладки с помощью разрешений [и области Microsoft Graph"](../../../tabs/how-to/authentication/tab-sso-graph-api.md).
    > * Важно, чтобы доменное имя приложения совпадало с доменным именем, зарегистрированным вами для приложения Azure AD.
    > * В настоящее время множественность доменов для приложения не поддерживается.
    > * Приложения, использующие домен `azurewebsites.net`, не поддерживаются, так как они являются общими и могут быть угрозой безопасности.
@@ -362,7 +362,7 @@ ms.locfileid: "66189723"
 
 ### <a name="update-the-auth-sample"></a>Изменение примера проверки подлинности
 
-Откройте [пример проверки подлинности Teams](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) и измените его описанным далее образом.
+Откройте [пример проверки подлинности Teams](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth), а затем выполните следующие действия, чтобы обновить его:
 
 1. Измените TeamsBot так, чтобы он проводил дедупликацию входящего запроса, для чего вставьте следующий код:
 
@@ -385,7 +385,7 @@ ms.locfileid: "66189723"
 
 |**Название примера** | **Описание** |**.NET** |**C#** |**Node.js** |
 |----------------|-----------------|--------------|--------------|--------------|
-|Bot Framework SDK | В этом примере кода показано, как приступить к проверке подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
+|Bot Framework SDK | В этом примере кода показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 

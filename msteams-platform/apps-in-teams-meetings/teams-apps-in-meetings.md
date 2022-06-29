@@ -1,16 +1,16 @@
 ---
 title: Приложения для собраний Teams
 author: surbhigupta
-description: Из этой статьи вы узнаете, как приложения работают Microsoft Teams собраниях на основе роли участника и пользователя, а также расширяемости приложений.
+description: Из этой статьи вы узнаете, как приложения работают на собраниях Microsoft Teams на основе роли участника и пользователя, а также расширяемости приложений.
 ms.topic: overview
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: 332d0e382cbadbe41900e8cc65eb0266e94954dc
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 8206695749f8b860c5bf0aba1612cbdbb9ccbd43
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142509"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484553"
 ---
 # <a name="apps-for-teams-meetings"></a>Приложения для собраний Teams
 

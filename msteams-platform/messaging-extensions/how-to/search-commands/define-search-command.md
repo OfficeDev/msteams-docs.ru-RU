@@ -1,16 +1,16 @@
 ---
 title: Определение команд поиска расширения сообщений
 author: surbhigupta
-description: В этом модуле вы узнаете о командах поиска расширений сообщений для Teams приложений, чтобы создать команду поиска с помощью манифеста приложения и вручную.
+description: В этом модуле вы узнаете о командах поиска расширений сообщений для приложений Teams, чтобы создать команду поиска с помощью манифеста приложения и вручную.
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: 10bb71580ac67db155bd14b74325635ae22e6840
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: c131a511c5c16eac4bf57093bbbeed9bd4172e97
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189612"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503944"
 ---
 # <a name="define-message-extension-search-commands"></a>Определение команд поиска расширения сообщений
 
@@ -24,7 +24,7 @@ ms.locfileid: "66189612"
 В следующем видео показано, как определить команды поиска расширений сообщений:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK>]
 <br>
 
 ## <a name="select-search-command-invoke-locations"></a>Выбор расположений вызова команды поиска
@@ -94,7 +94,7 @@ ms.locfileid: "66189612"
 |`initialRun` | Если этому свойству присвоено значение **true**, это означает, что эта команда должна выполняться, как только пользователь выберет эту команду в пользовательском интерфейсе. | Нет | 1.0 |
 | `context` | Это свойство является необязательным массивом значений, который определяет контекст, в котором доступно действие поиска. Возможные значения — `message`, `compose` и `commandBox`. Значение по умолчанию: `["compose", "commandBox"]`. | Нет | 1.5 |
 
-Необходимо добавить сведения о параметре поиска, который определяет текст, видимый пользователю в Teams клиенте.
+Необходимо добавить сведения о параметре поиска, который определяет текст, видимый пользователю в клиенте Teams.
 
 | Имя свойства | Назначение | Обязательно? | Минимальная версия манифеста |
 |---|---|---|---|
