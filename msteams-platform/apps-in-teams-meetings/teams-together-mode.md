@@ -3,12 +3,12 @@ title: Настраиваемые сцены режима "Вместе"
 description: Работа с настраиваемыми сценами режима "Вместе"
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: bf02350378b308a1a6aa4f914c03f3ad4a3d9142
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: bbb6758993d99115b3f7c9cd615dfc2b9ebf97ab
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150647"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484785"
 ---
 # <a name="custom-together-mode-scenes-in-teams"></a>Настраиваемые сцены режима "Вместе" в Teams
 
@@ -22,7 +22,7 @@ ms.locfileid: "66150647"
 
 Следующий процесс дает обзор создания приложения только для сцены:
 
-:::image type="content" source="../assets/images/apps-in-meetings/create-together-mode-scene-flow.png" alt-text="Создание приложения только для сцены" border="false":::
+:::image type="content" source="../assets/images/apps-in-meetings/create-together-mode-scene-flow.png" alt-text="Создание приложения только для сцены.":::
 
 Приложение только для сцены по-прежнему является приложением в Teams. Студия Scene обрабатывает создание пакета приложения в фоновом режиме. Несколько сцен в одном пакете приложения отображаются для пользователей в виде плоского списка.
 
@@ -83,7 +83,7 @@ ms.locfileid: "66150647"
 
 1. Выберите **Добавить изображения**, чтобы добавить изображение в среду:
 
-    ![Добавление изображений в среду](../assets/images/apps-in-meetings/addimages.png)
+   :::image type="content" source="../assets/images/apps-in-meetings/addimages.png" alt-text="Добавление изображений в среду.":::
 
     >[!NOTE]
     >Вы можете скачать файлы [SampleScene.zip](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform/apps-in-teams-meetings/SampleScene.zip) и [SampleApp.zip](https://github.com/MicrosoftDocs/msteams-docs/tree/master/msteams-platform/apps-in-teams-meetings/SampleApp.zip) с изображениями.
@@ -104,7 +104,7 @@ ms.locfileid: "66150647"
 
 1. Выберите роль **Организатор собрания** или **Выступающий** для участника. В собрании одному участнику должна быть назначена роль организатора собрания:
 
-    ![Назначение места](../assets/images/apps-in-meetings/assign-spot.png)
+   :::image type="content" source="../assets/images/apps-in-meetings/assign-spot.png" alt-text="Назначение места участнику.":::
 
 1. Выберите **Сохранить** и нажмите **Просмотреть в Teams**, чтобы быстро протестировать сцену в Teams.
 
