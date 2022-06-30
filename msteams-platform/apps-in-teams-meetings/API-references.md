@@ -1,16 +1,16 @@
 ---
 title: Справочные материалы по API приложений для собраний
 author: surbhigupta
-description: Узнайте, как определить ссылки на API приложений для собраний с примерами и примерами кода, Teams запрос сигнала уведомления контекста пользователя api роли пользователя для собраний.
+description: Узнайте, как определить ссылки на API приложений для собраний с примерами и примерами кода, запросом сигнала уведомления о контексте пользователя в API роли пользователя в приложениях Teams.
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
-ms.openlocfilehash: ac940438d78d941069f779150a74cfc85b1e2b95
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: ba0f3758cf08649100cbc564c60eab3a86e3d155
+ms.sourcegitcommit: 779aa3220f6448a9dbbaea57e667ad95b5c39a2a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189437"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66561611"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -27,7 +27,7 @@ ms.locfileid: "66189437"
 
 |Метод| Описание| Источник|
 |---|---|----|
-|[**Получить пользовательский контекст**](#get-user-context-api)| Получение контекстных сведений для отображения соответствующего содержимого на Microsoft Teams вкладке.| [MSTC SDK](/microsoftteams/platform/tabs/how-to/access-teams-context#get-context-by-using-the-microsoft-teams-javascript-library) |
+|[**Получить пользовательский контекст**](#get-user-context-api)| Получение контекстных сведений для отображения соответствующего содержимого на вкладке Microsoft Teams.| [MSTC SDK](/microsoftteams/platform/tabs/how-to/access-teams-context#get-context-by-using-the-microsoft-teams-javascript-library) |
 |[**Получение участника**](#get-participant-api)| Получить информацию об участнике по идентификатору собрания и идентификатору участника. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsinfo.getmeetingparticipantasync?view=botbuilder-dotnet-stable&preserve-view=true)
 |[**Отправить уведомление о собрании**](#send-an-in-meeting-notification)| Предоставление сигналов собрания с помощью существующего API уведомлений о беседе для чата пользователя с ботом позволяет уведомлять пользователя о действиях, отображая уведомление в собрании. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsactivityextensions.teamsnotifyuser?view=botbuilder-dotnet-stable&preserve-view=true) |
 |[**Получить сведения о собрании**](#get-meeting-details-api)| Получите статические метаданные собрания. | [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsinfo.getmeetinginfoasync?view=botbuilder-dotnet-stable&preserve-view=true) |
@@ -125,6 +125,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
    },
    "conversation":{
       "id":"<conversation id>",
+      "conversationType": "groupChat", 
       "isGroup":true
    }
 }
@@ -135,7 +136,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 | Имя свойства | Назначение |
 |---|---|
 | **user.id** | Идентификатор пользователя. |
-| **user.aadObjectId** | Azure Active Directory идентификатор объекта пользователя. |
+| **user.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя. |
 | **user.name** | Имя пользователя. |
 | **user.givenName** | Имя пользователя.|
 | **user.surname** | Фамилия пользователя. |
@@ -235,7 +236,7 @@ POST /v3/conversations/{conversationId}/activities
 
 | Имя свойства | Назначение |
 |---|---|
-| **тип** | Тип действия. |
+| **type** | Тип действия. |
 | **text** | Текстовое содержимое сообщения. |
 | **summary** | Сводный текст сообщения. |
 | **channelData.notification.alertInMeeting** | Логическое значение, указывающее, должно ли уведомление отображаться пользователю во время собрания. |
@@ -346,7 +347,10 @@ API `Meeting Details` должен иметь регистрацию бота и
 </details>
 
 > [!NOTE]
-> Бот может автоматически получать события начала или окончания собрания из всех собраний, созданных во всех каналах, путем добавления `ChannelMeeting.ReadBasic.Group` в манифест для разрешения RSC.
+>
+> * Бот может автоматически получать события начала или окончания собрания из всех собраний, созданных во всех каналах, путем добавления `ChannelMeeting.ReadBasic.Group` в манифест для разрешения RSC.
+>
+> * Для звонков "один к одному `organizer` `organizer` " инициатор чата, а для групповых звонков — инициатор звонков.
 
 ### <a name="query-parameter"></a>Параметр запроса
 
@@ -367,7 +371,11 @@ await turnContext.SendActivityAsync(JsonConvert.SerializeObject(result));
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
-Недоступно
+```javascript
+
+Not available
+
+```
 
 # <a name="json"></a>[JSON](#tab/json)
 
@@ -377,29 +385,108 @@ GET /v1/meetings/{meetingId}
 
 Текст отклика JSON для API сведений о собрании выглядит следующим образом:
 
-```json
-{ 
-   "details": { 
-        "id": "meeting ID", 
-        "msGraphResourceId": "", 
-        "scheduledStartTime": "2020-08-21T02:30:00+00:00", 
-        "scheduledEndTime": "2020-08-21T03:00:00+00:00", 
-        "joinUrl": "https://teams.microsoft.com/l/xx", 
-        "title": "All Hands", 
-        "type": "Scheduled" 
-    }, 
-    "conversation": { 
-            "isGroup": true, 
-            "conversationType": "groupchat", 
-            "id": "meeting chat ID" 
-    }, 
-    "organizer": { 
-        "id": "<organizer user ID>", 
-        "aadObjectId": "<AAD ID>", 
-        "tenantId": "<Tenant ID>" 
+* **Запланированные собрания:**
+
+    ```json
+
+    {
+       "details":  { 
+             "id": "<meeting ID>", 
+             "msGraphResourceId": "MSowYmQ0M2I4OS1lN2QxLTQxNzAtOGZhYi00OWJjYjkwOTk1YWYqMCoqMTk6bWVldGluZ19OVEkyT0RjM01qUXROV1UyW", 
+             "scheduledStartTime": "2022-04-24T22:00:00Z", 
+             "scheduledEndTime": "2022-04-24T23:00:00Z", 
+             "joinUrl": "https://teams.microsoft.com/l/xx", 
+             "title": "All Hands", 
+             "type": "Scheduled" 
+         },
+        "conversation": { 
+             "isGroup": true, 
+             "conversationType": "groupChat", 
+             "id": "meeting chat ID" 
+             }, 
+        "organizer": { 
+             "id": "<organizer user ID>", 
+             "aadObjectId": "<AAD object ID>",
+             "objectId": "<organizer object ID>",
+             "tenantId": "<Tenant ID>" 
+         }
+    } 
+    ```
+
+* **Вызовы "один к одному":**
+
+    ```json
+    {
+        "details": {
+             "id": "<meeting ID>",
+             "type": "OneToOneCall"
+         },
+        "conversation": {
+             "isGroup": true,
+             "conversationType": "groupChat",
+             "id": "meeting chat ID"
+         },
+        "organizer  ": {
+             "id": "<organizer user ID>",
+             "aadObjectId": "<AAD object ID>",
+             "objectId": "<organizer object ID>",
+             "tenantId": "<Tenant ID>" 
+         }
     }
-} 
-```
+    
+    ```
+
+* **Групповые вызовы:**
+
+    ```json
+    {
+        "details": {
+             "id": "<meeting ID>",
+             "type": "GroupCall",
+             "joinUrl": "https://teams.microsoft.com/l/xx"
+         },
+        "conversation": {
+             "isGroup": true,
+             "conversationType": "groupChat",
+             "id": "meeting chat ID"
+         },
+        "organizer": {
+             "id": "<organizer user ID>",
+             "objectId": "<organizer object ID>",
+             "aadObjectId": "<AAD object ID>",
+             "tenantId": "<Tenant ID>" 
+         }
+    }
+    
+    ```
+
+* **Мгновенные собрания:**
+
+    ```json
+    { 
+       "details": { 
+             "id": "<meeting ID>", 
+             "msGraphResourceId": "MSowYmQ0M2I4OS1lN2QxLTQxNzAtOGZhYi00OWJjYjkwOTk1YWYqMCoqMTk6bWVldGluZ19OVEkyT0RjM01qUXROV1UyW", 
+             "scheduledStartTime": "2022-04-24T22:00:00Z", 
+             "scheduledEndTime": "2022-04-24T23:00:00Z", 
+             "joinUrl": "https://teams.microsoft.com/l/xx", 
+             "title": "All Hands", 
+             "type": "MeetNow" 
+         }, 
+        "conversation": { 
+             "isGroup": true, 
+             "conversationType": "groupChat", 
+             "id": "meeting chat ID" 
+         },
+        "organizer": { 
+             "id": "<organizer user ID>", 
+             "aadObjectId": "<AAD object ID>", 
+             "tenantId": "<Tenant ID>" ,
+             "objectId": "<organizer object ID>"
+         }
+    }
+    
+    ```
 
 ---
 
@@ -411,7 +498,7 @@ GET /v1/meetings/{meetingId}
 | **details.scheduledEndTime** | Запланированное время окончания собрания в формате UTC. |
 | **details.joinUrl** | URL-адрес, используемый для присоединения к собранию. |
 | **details.title** | Название собрания. |
-| **details.type** | Тип собрания: Adhoc, Broadcast, MeetNow, Recurring, Scheduled, Unknown. |
+| **details.type** | Тип собрания: GroupCall, OneToOneCall, Adhoc, Broadcast, MeetNow, Recurring, Scheduled, Unknown. |
 | **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
 | **conversation.conversationType** | Тип беседы. |
 | **conversation.id** | Идентификатор чата собрания. |
@@ -427,11 +514,11 @@ GET /v1/meetings/{meetingId}
 
 ## <a name="send-real-time-captions-api"></a>API отправки субтитров в режиме реального времени
 
-API отправки субтитров в режиме реального времени предоставляет конечную точку POST для Teams для доступа к обмену данными в режиме реального времени (CART), скрытые субтитры, типизированные человеком. Текстовое содержимое, отправляемое в эту конечную точку, отображается пользователям на Teams, если у них включены субтитры.
+API отправки субтитров в режиме реального времени предоставляет конечную точку POST для доступа к обмену данными Teams в режиме реального времени (CART) с закрытыми субтитрами, типизированными человеком. Текстовое содержимое, отправляемое в эту конечную точку, отображается конечным пользователям на собрании Teams, если у них включены субтитры.
 
 ### <a name="cart-url"></a>URL-адрес CART
 
-URL-адрес CART для конечной точки POST можно получить на странице  параметров собрания Teams собрания. Подробнее в разделе [Субтитры CART на собрании Microsoft Teams](https://support.microsoft.com/office/use-cart-captions-in-a-microsoft-teams-meeting-human-generated-captions-2dd889e8-32a8-4582-98b8-6c96cf14eb47). Вам не нужно изменять URL-адрес CART, чтобы использовать субтитры CART.
+URL-адрес CART для конечной точки POST можно получить на странице  параметров собрания в собрании Teams. Подробнее в разделе [Субтитры CART на собрании Microsoft Teams](https://support.microsoft.com/office/use-cart-captions-in-a-microsoft-teams-meeting-human-generated-captions-2dd889e8-32a8-4582-98b8-6c96cf14eb47). Вам не нужно изменять URL-адрес CART, чтобы использовать субтитры CART.
 
 #### <a name="query-parameter"></a>Параметр запроса
 
@@ -540,7 +627,7 @@ microsoftTeams.meeting.shareAppContentToStage((err, result) => {
 
 ## <a name="get-app-content-stage-sharing-state-api"></a>Получить состояние обмена сцены содержимого приложения API
 
-API `getAppContentStageSharingState` позволяет получать сведения о совместном использовании приложений на этапе собрания как для мобильных, так и для настольных компьютеров.
+API `getAppContentStageSharingState`позволяет получать информацию о совместном использовании приложений на сцене собрания.
 
 ### <a name="query-parameter"></a>Параметр запроса
 
@@ -618,6 +705,9 @@ microsoftTeams.meeting.getAppContentStageSharingCapabilities((err, result) => {
 | **1000** | У приложения нет разрешений на предоставление общего доступа к этапу.|
 
 ## <a name="get-real-time-teams-meeting-events-api"></a>Получите API событий собраний Teams в реальном времени
+
+> [!NOTE]
+> События собраний Teams в режиме реального времени поддерживаются только для запланированных собраний.
 
 Пользователь может получать информацию о собраниях в режиме реального времени. Как только приложение связывается с собранием, фактическое время начала и окончания собрания передается боту. Фактическое время начала и окончания собрания отличается от запланированного времени начала и окончания. API сведений о собрании предоставляет запланированное время начала и окончания. Событие предоставляет фактическое время начала и окончания.
 
@@ -811,7 +901,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | Имя свойства | Назначение |
 |---|---|
 | **name** | Имя пользователя.|
-| **тип** | Тип действия. |
+| **type** | Тип действия. |
 | **timestamp** | Локальная дата и время сообщения, выраженные в формате ISO-8601. |
 | **id** | Идентификатор действия. |
 | **channelId** | Канал, с помощью который связано это действие. |
@@ -819,7 +909,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | **from.id** | Идентификатор пользователя, отправившего запрос. |
 | **from.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
 | **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
-| **conversation.tenantId** | Azure Active Directory клиента беседы или собрания. |
+| **conversation.tenantId** | Идентификатор клиента Azure Active Directory для беседы или собрания. |
 | **conversation.id** | Идентификатор чата собрания. |
 | **recipient.id** | Идентификатор пользователя, который получает запрос. |
 | **recipient.name** | Имя пользователя, который получает запрос. |
@@ -841,10 +931,10 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 |Название примера | Описание | C# | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Расширяемость собраний | Teams пример расширяемости собрания для передачи маркеров. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-| Бот пузырькового содержимого собрания | Teams пример расширяемости собрания для взаимодействия с ботом пузырьков содержимого на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание meetingSidePanel | Teams пример расширяемости собрания для взаимодействия с боковой панелью в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
-| Вкладка "Сведения" в собрании | Teams пример расширяемости собрания для взаимодействия с вкладкой "Сведения" в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
+| Расширяемость собраний | Пример расширяемости собраний Teams для передачи маркеров. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
+| Бот пузырькового содержимого собрания | Пример расширяемости собраний Teams для взаимодействия с ботом пузырьков содержимого на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Собрание meetingSidePanel | Пример расширяемости собраний Teams для взаимодействия с боковой панелью в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
+| Вкладка "Сведения" в собрании | Пример расширяемости собраний Teams для взаимодействия с вкладкой "Сведения" в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
 |Пример событий собрания|Пример приложения для отображения событий собраний Teams в реальном времени|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/nodejs)|
 |Образец собрания для набора сотрудников|Пример приложения для демонстрации опыта собраний для сценария набора сотрудников.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/nodejs)|
 |Установка приложения с помощью QR-кода|Пример приложения, которое создает QR-код и устанавливает приложение с помощью QR-кода|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/nodejs)|
