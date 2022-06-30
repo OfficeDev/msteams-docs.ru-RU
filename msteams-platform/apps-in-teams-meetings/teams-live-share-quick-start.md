@@ -4,18 +4,18 @@ description: В этом модуле вы узнаете, как быстро �
 ms.topic: concept
 ms.localizationpriority: high
 ms.author: stevenic
-ms.openlocfilehash: caf2e7386c22f01edb43cf0ad5ec444d5e068d07
-ms.sourcegitcommit: c197fe4c721822b6195dfc5c7d8e9ccd47f142fe
+ms.openlocfilehash: 98150265f0c5876e726710cacc873db2ac23e9ee
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65668336"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66484588"
 ---
 ---
 
 # <a name="quick-start-guide"></a>Краткое руководство по началу работы
 
-Начните работу с пакетом SDK Live Share с примера Dice Roller Это пособие разработано на основе пособия [Начало работы с Fluid Framework](https://fluidframework.com/docs/start/quick-start/) и предназначено для быстрого запуска примера на основе пакета SDK Live Share [Dice Roller](https://github.com/microsoft/live-share-sdk/tree/main/samples/01.dice-roller) на локальном компьютере.
+Начните работу с SDK Live Share с использованием примера Dice Roller, который разработан на основе [краткой инструкции по Fluid Framework](https://fluidframework.com/docs/start/quick-start/) и предназначен для быстрого запуска примера [Dice Roller](https://github.com/microsoft/live-share-sdk/tree/main/samples/01.dice-roller) на основе пакета SDK Live Share в узле localhost компьютера.
 
 :::image type="content" source="../assets/images/teams-live-share/dice-roller.png" alt-text="Пример DiceRoller":::
 
@@ -24,7 +24,7 @@ ms.locfileid: "65668336"
 
 ## <a name="set-up-your-development-environment"></a>Настройка среды разработки
 
-Перед началом работы установите следующие компоненты.
+Чтобы начать работу, установите следующие компоненты.
 
 * [Node.js](https://nodejs.org/en/download). Пакет SDK Live Share поддерживает Node.js LTS начиная с версии 12.17.
 * [Новейшая версия Visual Studio Code](https://code.visualstudio.com/).

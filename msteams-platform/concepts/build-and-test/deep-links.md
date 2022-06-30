@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: Узнайте, как создавать прямые ссылки, использовать их и перемещаться по ним в приложениях Microsoft Teams с помощью вкладок.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: e5e9596c6049e899e6cc807b7ce2128b322a971e
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: afa3ea185247ab4edb5ada3b657c4d1259674bc5
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150682"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485680"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -40,8 +40,8 @@ ms.locfileid: "66150682"
 >
 >Поведение навигации приложения Teams, расширенного в Microsoft 365 (Outlook/Office), зависит от двух факторов:
 >
-> * Целевой объект, на который указывает прямая ссылка
-> * Узел, в котором запущено приложение Teams
+> * Целевой объект, на который указывает прямая ссылка.
+> * Узел, в котором запущено приложение Teams.
 >
 > Если приложение Teams выполняется в узле, на который ведет прямая ссылка, ваше приложение откроется непосредственно в узле. Однако если приложение Teams запущено в другом узле, отличном от того, на который ведет прямая ссылка, приложение сначала откроется в браузере.
 
@@ -207,29 +207,12 @@ microsoftTeams.executeDeepLink(/*deepLink*/);
 
 ### <a name="open-a-scheduling-dialog"></a>Открытие диалогового окна планирования
 
-Диалоговое окно планирования можно открыть из приложения Teams, как показано в следующем коде. Это особенно полезно, если приложение помогает пользователю выполнять задачи, связанные с календарем или планированием.
-
-# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
-
-```javascript
-// Open a scheduling dialog from your tab
-if(calendar.isSupported()) {
-   const calendarPromise = calendar.composeMeeting({
-      attendees: ["joe@contoso.com", "bob@contoso.com"],
-      content: "test content",
-      endTime: "2018-10-24T10:30:00-07:00"
-      startTime: "2018-10-24T10:00:00-07:00"
-      subject: "test subject"});
-   calendarPromise.
-      then((result) => {/*Successful operation*/}).
-      catch((error) => {/*Unsuccessful operation*/});
-}
-else { /* handle case where capability isn't supported */ }
-```
+> [!NOTE]
+> Чтобы открыть диалоговое окно планирования в Teams, разработчикам необходимо продолжать использовать исходный метод на основе URL-адреса прямой ссылки, так как Teams пока не поддерживает возможность календаря.
 
 Дополнительные сведения о работе с календарем см. в пространстве имен [календаря](/javascript/api/@microsoft/teams-js/calendar?view=msteams-client-js-latest&preserve-view=true) в справочной документации по API.
 
-# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
+### <a name="tabteams-js-v1"></a>tab/Teams JS v1
 
 ```javascript
 // Open a scheduling dialog from your tab
