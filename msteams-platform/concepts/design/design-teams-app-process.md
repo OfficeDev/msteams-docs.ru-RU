@@ -1,22 +1,22 @@
 ---
 title: Процесс проектирования приложения
 author: heath-hamilton
-description: Узнайте, как и когда можно использовать средства и ресурсы Майкрософт для разработки эффективного Microsoft Teams приложения.
+description: Узнайте, как и когда можно использовать средства и ресурсы Майкрософт для разработки эффективного приложения Microsoft Teams.
 ms.localizationpriority: mediums
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: 97ff20e0ffc6cc802c2226cc7767873cd3a25416
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: b9b23fc2a849df6528af224e7289bced10f9e096
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144378"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557850"
 ---
 # <a name="design-process-for-microsoft-teams-apps"></a>Процесс разработки приложений Microsoft Teams
 
 Есть несколько средств и ресурсов для разработки приложения Microsoft Teams. Ниже описано, когда и как их можно использовать в процессе разработки. (Некоторые шаги могут фактически не входить в процесс разработки, но они включены для контекста.)
 
-:::image type="content" source="~/assets/images/design-guidelines/teams-app-design-process.png" alt-text="Диаграмма, показывающая пример процесса разработки приложения Teams." border="false":::
+:::image type="content" source="~/assets/images/design-guidelines/teams-app-design-process.png" alt-text="Диаграмма, показывающая пример процесса разработки приложения Teams.":::
 
 ## <a name="plan-your-app"></a>Планирование приложения
 

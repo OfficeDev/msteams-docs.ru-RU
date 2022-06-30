@@ -3,12 +3,12 @@ title: Использование внешних поставщиков OAuth
 description: В этом модуле вы узнаете, как выполнять проверку подлинности с помощью внешних поставщиков OAuth и как добавить ее во внешний браузер
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 8a7d89bbe3c6109e52a4d22f4bc26eace7acc5d1
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: a27d4fdb861ef7e893807af7a4427662a61fa021
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142278"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558767"
 ---
 # <a name="use-external-oauth-providers"></a>Использование внешних поставщиков OAuth
 
@@ -44,7 +44,7 @@ function authenticate(authenticateParameters?: AuthenticateParameters)
 
 На следующем изображении обеспечивается поток для добавления проверки подлинности во внешние браузеры:
 
- :::image type="content" source="../../../assets/images/tabs/tabs-authenticate-OAuth.PNG" alt-text="authenticate-OAuth" border="true":::
+ :::image type="content" source="../../../assets/images/tabs/tabs-authenticate-OAuth.PNG" alt-text="authenticate-OAuth":::
 
 **Добавление проверки подлинности во внешние браузеры**
 

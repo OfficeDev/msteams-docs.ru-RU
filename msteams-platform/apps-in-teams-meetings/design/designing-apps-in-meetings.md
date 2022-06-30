@@ -5,12 +5,12 @@ description: Узнайте, как проектировать расширен�
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 92b33881e0fcb5eb6c9b10725d69f92d97e53063
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 7df89357f5c052fec5ff2a82cd721b9b7c06da94
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484685"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558088"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Разработка расширения для собраний Microsoft Teams
 
@@ -31,31 +31,31 @@ ms.locfileid: "66484685"
 
 В сведениях о собрании пользователи могут выбрать "Добавить вкладку **+** ", чтобы открыть всплывающее меню приложения и найти приложения, оптимизированные для собраний.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/add-before-meeting.png" alt-text="В примере показано, как добавить расширение собрания перед собранием." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/add-before-meeting.png" alt-text="В примере показано, как добавить расширение собрания перед собранием.":::
 
 ### <a name="add-during-a-meeting"></a>Добавление во время собрания
 
-#### <a name="mobile"></a>Мобильная версия
+#### <a name="mobile"></a>Мобильные устройства
 
 После добавления приложения (например, на рабочем столе) пользователи могут получить доступ к приложению на собрании, выбрав "**Дополнительно"**:::image type="icon" source="../../assets/icons/teams-client-more.png":::.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/mobile-add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания на мобильном устройстве.":::
 
-#### <a name="desktop"></a>Версия для настольного компьютера
+#### <a name="desktop"></a>Настольный компьютер
 
 На собрании пользователи **могут выбрать "** Дополнительно :::image type="icon" source="../../assets/icons/teams-client-more.png"::: > **добавить приложение** " и выбрать нужное приложение.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/add-during-meeting.png" alt-text="В примере показано, как добавить расширение собрания во время собрания.":::
 
 ## <a name="before-a-meeting"></a>Перед собранием
 
 Перед собранием приложение доступно пользователям на вкладке. В следующем примере показан черновой вопрос опроса, на который люди будут отвечать во время собрания.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/before-meeting-tab.png" alt-text="В примере показано, как добавить содержимое в сведениях о собрании перед вызовом." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/before-meeting-tab.png" alt-text="В примере показано, как добавить содержимое в сведениях о собрании перед вызовом.":::
 
 ### <a name="anatomy-meeting-tab-before-and-after-meetings"></a>Структура: вкладка "Собрание" (до и после собраний)
 
-:::image type="content" source="../../assets/images/apps-in-meetings/meeting-details-tab-anatomy.png" alt-text="В примере показана структурная структура вкладки собрания до и после собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/meeting-details-tab-anatomy.png" alt-text="В примере показана структурная структура вкладки собрания до и после собрания.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -86,17 +86,17 @@ ms.locfileid: "66484685"
 * Создайте опрос, опрос или элемент задачи для участников собрания.
 * Отображение заметок, относящихся к собранию. Например, сведения о потенциальных клиентах.
 
-#### <a name="mobile"></a>Мобильная версия
+#### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке &quot;Собрание&quot; на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке &quot;Собрание&quot; на мобильном устройстве.":::
 
-#### <a name="desktop"></a>Версия для настольного компьютера
+#### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке &quot;Собрание&quot;." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-tab.png" alt-text="В примере показано, как можно представить содержимое опроса на вкладке &quot;Собрание&quot;.":::
 
 ### <a name="anatomy-in-meeting-tab"></a>Структура: вкладка "Собрание"
 
-:::image type="content" source="../../assets/in-meeting-tab-anatomy.png" alt-text="В примере показана структурная структура вкладки в собрании." border="false":::
+:::image type="content" source="../../assets/in-meeting-tab-anatomy.png" alt-text="В примере показана структурная структура вкладки в собрании.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -111,7 +111,7 @@ ms.locfileid: "66484685"
 
 Оптимизируйте вкладку в собрании, чтобы она соответствовала границе в области iframe размером 280 пикселей. Слева и справа от элемента iframe и между заголовком вкладки есть 20 пикселей заполнения. Элемент iframe заполнен до нижней части вкладки.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-spacing.png" alt-text="В примере показаны измерения интервалов табуляции в собрании." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-spacing.png" alt-text="В примере показаны измерения интервалов табуляции в собрании.":::
 
 ### <a name="scrolling"></a>Прокрутки
 
@@ -121,13 +121,13 @@ ms.locfileid: "66484685"
 * Пользователи должны видеть только содержимое, которое они прокручивали (ничего выше или ниже).
 * Полоса прокрутки является частью содержимого iframe.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-scrolling.png" alt-text="В примере показано, как прокручивается вкладка &quot;Собрание&quot;." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-scrolling.png" alt-text="В примере показано, как прокручивается вкладка &quot;Собрание&quot;.":::
 
 ### <a name="navigation"></a>Навигация
 
 В сценариях с слоями навигации или большим содержимым рекомендуется разрешить пользователям переходить на дополнительный уровень. Пользователи должны иметь возможность вернуться на предыдущий уровень.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav.png" alt-text="В примере показана навигация по собранию." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav.png" alt-text="В примере показана навигация по собранию.":::
 
 ## <a name="use-an-in-meeting-dialog"></a>Использование диалогового окна собрания
 
@@ -142,17 +142,17 @@ ms.locfileid: "66484685"
 * Отправка утверждений.
 * Получение напоминаний.
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно собрания на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/mobile-use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно собрания на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/use-in-meeting-dialog.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании.":::
 
 ### <a name="anatomy-in-meeting-dialog"></a>Структура: диалоговое окно "Собрание"
 
-:::image type="content" source="../../assets/in-meeting-dialog-anatomy.png" alt-text="В примере показана структурная структура диалогового окна собрания." border="false":::
+:::image type="content" source="../../assets/in-meeting-dialog-anatomy.png" alt-text="В примере показана структурная структура диалогового окна собрания.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -161,7 +161,7 @@ ms.locfileid: "66484685"
 
 ### <a name="anatomy-in-meeting-dialog-header"></a>Структура: заголовок диалогового окна "Собрание"
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-header-anatomy.png" alt-text="В примере показана структурная структура заголовка диалогового окна собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-header-anatomy.png" alt-text="В примере показана структурная структура заголовка диалогового окна собрания.":::
 
 Существует два варианта заголовка. По возможности используйте вариант с аватаром, чтобы подчеркнуть, что диалог поступает от человека.
 
@@ -180,7 +180,7 @@ ms.locfileid: "66484685"
 * **Ширина**: можно указать ширину iframe диалогового окна в любом месте поддерживаемого диапазона размеров.
 * **Высота**: можно указать высоту iframe диалогового окна в любом месте поддерживаемого диапазона размера. Вы также можете разрешить пользователям прокручивать данные по вертикали, если содержимое приложения превышает максимальную высоту.
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-responsive.png" alt-text="В примере показано диалоговое окно собрания. Ширина: минимум 280 пикселей (iframe 248 пикселей). Макс. 460 пикселей (iframe 428 пикселей). Высота: 300 пикселей (iframe)." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-responsive.png" alt-text="В примере показано диалоговое окно собрания. Ширина: минимум 280 пикселей (iframe 248 пикселей). Макс. 460 пикселей (iframe 428 пикселей). Высота: 300 пикселей (iframe).":::
 
 ## <a name="use-the-shared-meeting-stage"></a>Использование общего этапа собрания
 
@@ -209,9 +209,9 @@ ms.locfileid: "66484685"
    :::column-end:::
    :::column span="3":::
 
-:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-edit-review.png" alt-text="В примере показана панель мониторинга, проверяемая на этапе общего собрания." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-edit-review.png" alt-text="В примере показана панель мониторинга, проверяемая на этапе общего собрания.":::
 
-:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-edit-review-component.png" alt-text="В примере показан компонент панели мониторинга, проверяемый на этапе общего собрания." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-edit-review-component.png" alt-text="В примере показан компонент панели мониторинга, проверяемый на этапе общего собрания.":::
 
    :::column-end:::
 :::row-end:::
@@ -224,7 +224,7 @@ ms.locfileid: "66484685"
    :::column-end:::
    :::column span="3":::
 
-:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-whiteboard.png" alt-text="В примере показана доска на общем этапе собрания." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-whiteboard.png" alt-text="В примере показана доска на общем этапе собрания.":::
 
    :::column-end:::
 :::row-end:::
@@ -237,14 +237,14 @@ ms.locfileid: "66484685"
    :::column-end:::
    :::column span="3":::
 
-:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-quiz.png" alt-text="В примере показан тест на этапе общего собрания." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-quiz.png" alt-text="В примере показан тест на этапе общего собрания.":::
 
    :::column-end:::
 :::row-end:::
 
 ### <a name="anatomy-share-all-app-content-to-a-meeting"></a>Структура: предоставление общего доступа ко всем содержимому приложения на собрании
 
-:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-anatomy.png" alt-text="На рисунке показана структура структуры общего собрания при совместном использовании всего содержимого приложения." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-anatomy.png" alt-text="На рисунке показана структура структуры общего собрания при совместном использовании всего содержимого приложения.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -256,7 +256,7 @@ ms.locfileid: "66484685"
 
 ### <a name="anatomy-share-specific-app-content-to-a-meeting"></a>Структура: предоставление общего доступа к определенному содержимому приложения на собрании
 
-:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-anatomy-component.png" alt-text="На рисунке показана структура структуры общего собрания, когда общий доступ имеет только к определенному содержимому приложения." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/shared-meeting-stage-anatomy-component.png" alt-text="На рисунке показана структура структуры общего собрания, когда общий доступ имеет только к определенному содержимому приложения.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -277,19 +277,19 @@ ms.locfileid: "66484685"
 
 Если боковая панель не открыта, стадия собрания по умолчанию имеет размер 994 x 678 пикселей и может иметь не менее 792 x 382 пикселя.
 
-:::image type="content" source="~/assets/images/apps-in-meetings/meeting-stage-no-side-panel.png" alt-text="Изображение, показывающее скорость реагирования на этапе общего собрания с закрытой боковой панелью." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/meeting-stage-no-side-panel.png" alt-text="Изображение, показывающее скорость реагирования на этапе общего собрания с закрытой боковой панелью.":::
 
 #### <a name="meeting-stage-with-side-panel"></a>Этап собрания (с боковой панелью)
 
 При открытии боковой панели по умолчанию размер этапа собрания — 918 x 540 пикселей и может иметь размер не менее 472 x 382 пикселя.
 
-:::image type="content" source="~/assets/images/apps-in-meetings/meeting-stage-with-side-panel.png" alt-text="Изображение, на котором показана скорость реагирования на этапе общего собрания с открытой боковой панелью." border="false":::
+:::image type="content" source="~/assets/images/apps-in-meetings/meeting-stage-with-side-panel.png" alt-text="Изображение, на котором показана скорость реагирования на этапе общего собрания с открытой боковой панелью.":::
 
 ## <a name="after-a-meeting"></a>После собрания
 
 Вы можете вернуться к собранию после его окончания и просмотреть содержимое приложения. В этом примере организатор собрания может просматривать результаты опроса на вкладке **Contoso** . (Примечание. С точки зрения проектирования нет разницы между интерфейсом вкладки до и после собрания.)
 
-:::image type="content" source="../../assets/images/apps-in-meetings/post-meeting-experience.png" alt-text="Пример рисунка, на котором показана вкладка после собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/post-meeting-experience.png" alt-text="Пример рисунка, на котором показана вкладка после собрания.":::
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -299,7 +299,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/interaction-do.png" alt-text="Пример, показывающий, как ограничить количество взаимодействий." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/interaction-do.png" alt-text="Пример, показывающий, как ограничить количество взаимодействий.":::
 
 #### <a name="do-limit-the-number-of-interactions"></a>Do: ограничение количества взаимодействий
 
@@ -307,7 +307,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/interaction-dont.png" alt-text="Пример, демонстрирующий, как не ввести ненужные элементы." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/interaction-dont.png" alt-text="Пример, демонстрирующий, как не ввести ненужные элементы.":::
 
 #### <a name="dont-introduce-unnecessary-elements"></a>Не следует: ввести ненужные элементы
 
@@ -318,7 +318,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/interaction-shared-stage-do.png" alt-text="Пример создания ориентированной среды." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/interaction-shared-stage-do.png" alt-text="Пример создания ориентированной среды.":::
 
 #### <a name="do-create-a-focused-environment"></a>Do: создание ориентированной среды
 
@@ -326,7 +326,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/interaction-shared-stage-dont.png" alt-text="Пример, демонстрирующий, как не включать конкурирующие поверхности во время собраний." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/interaction-shared-stage-dont.png" alt-text="Пример, демонстрирующий, как не включать конкурирующие поверхности во время собраний.":::
 
 #### <a name="dont-include-competing-surfaces"></a>Не следует: включать конкурирующие поверхности
 
@@ -339,7 +339,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-layout-do.png" alt-text="Пример использования макета диалогового окна с одним столбцом." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-layout-do.png" alt-text="Пример использования макета диалогового окна с одним столбцом.":::
 
 #### <a name="do-use-a-one-column-dialog"></a>Do: использование диалогового окна с одним столбцом
 
@@ -347,7 +347,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-layout-dont.png" alt-text="Пример, показывающий, что не следует загромождать пространство расширения собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-layout-dont.png" alt-text="Пример, показывающий, что не следует загромождать пространство расширения собрания.":::
 
 #### <a name="dont-clutter-the-space"></a>Не следует: загромождение пространства
 
@@ -358,7 +358,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-layout-do.png" alt-text="Пример макета вкладки с одним столбцом." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-layout-do.png" alt-text="Пример макета вкладки с одним столбцом.":::
 
 #### <a name="do-use-a-one-column-tab"></a>Do: использование вкладки с одним столбцом
 
@@ -366,7 +366,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-layout-dont.png" alt-text="Пример вкладки с несколькими столбцами." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-layout-dont.png" alt-text="Пример вкладки с несколькими столбцами.":::
 
 #### <a name="dont-use-multiple-columns"></a>Не следует: использовать несколько столбцов
 
@@ -379,7 +379,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-controls-do.png" alt-text="Пример выравнивания основных элементов управления по правому краю." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-controls-do.png" alt-text="Пример выравнивания основных элементов управления по правому краю.":::
 
 #### <a name="do-right-align-the-primary-action"></a>Do: выравнивание основного действия по правому краю
 
@@ -387,7 +387,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-controls-dont.png" alt-text="Пример, показывающий, как не следует выравнивать основные элементы управления по левому краю." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-controls-dont.png" alt-text="Пример, показывающий, как не следует выравнивать основные элементы управления по левому краю.":::
 
 #### <a name="dont-left-or-center-align-actions"></a>Не следует: действия выравнивания по левому краю или по центру
 
@@ -401,9 +401,9 @@ ms.locfileid: "66484685"
 :::row:::
    :::column span="":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-scroll-do.png" alt-text="Пример вертикальной прокрутки на вкладке собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-scroll-do.png" alt-text="Пример вертикальной прокрутки на вкладке собрания.":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-scroll-do.png" alt-text="Пример вертикальной прокрутки на общем этапе собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-scroll-do.png" alt-text="Пример вертикальной прокрутки на общем этапе собрания.":::
 
 #### <a name="do-scroll-vertically"></a>Do: прокрутка по вертикали
 
@@ -412,9 +412,9 @@ ms.locfileid: "66484685"
    :::column-end:::
    :::column span="":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-scroll-dont.png" alt-text="Пример горизонтальной прокрутки на вкладке собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-scroll-dont.png" alt-text="Пример горизонтальной прокрутки на вкладке собрания.":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-scroll-dont.png" alt-text="Пример горизонтальной прокрутки на общем этапе собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-scroll-dont.png" alt-text="Пример горизонтальной прокрутки на общем этапе собрания.":::
 
 #### <a name="dont-scroll-horizontally"></a>Не следует: прокрутка по горизонтали
 
@@ -427,7 +427,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-workflow-do.png" alt-text="Пример сложного сценария на вкладке &quot;Собрание&quot;." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-workflow-do.png" alt-text="Пример сложного сценария на вкладке &quot;Собрание&quot;.":::
 
 #### <a name="do-surface-complex-scenarios-in-the-in-meeting-tab"></a>Do: Сложные сценарии Surface на вкладке "Собрание"
 
@@ -435,7 +435,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-workflow-dont.png" alt-text="Пример сложных сценариев в диалоговом окне собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-dialog-workflow-dont.png" alt-text="Пример сложных сценариев в диалоговом окне собрания.":::
 
 #### <a name="dont-make-in-meeting-dialogs-complex"></a>Не следует: сложные диалоги в собрании
 
@@ -449,9 +449,9 @@ ms.locfileid: "66484685"
 :::row:::
    :::column span="":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-theming-do.png" alt-text="Пример расширения собрания с темной темой." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-theming-do.png" alt-text="Пример расширения собрания с темной темой.":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-theming-do.png" alt-text="Еще один пример расширения собрания с темной темой." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-theming-do.png" alt-text="Еще один пример расширения собрания с темной темой.":::
 
 #### <a name="do-focus-on-dark-theme"></a>Do: Фокус на темной теме
 
@@ -460,9 +460,9 @@ ms.locfileid: "66484685"
    :::column-end:::
    :::column span="":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-theming-dont.png" alt-text="Пример расширения собрания с цветами, не соответствующими теме собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-theming-dont.png" alt-text="Пример расширения собрания с цветами, не соответствующими теме собрания.":::
 
-:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-theming-dont.png" alt-text="Другой пример расширения собрания с цветами, которые не соответствуют теме собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-theming-dont.png" alt-text="Другой пример расширения собрания с цветами, которые не соответствуют теме собрания.":::
 
 #### <a name="dont-use-unfamiliar-colors"></a>Не используйте незнакомые цвета
 
@@ -475,7 +475,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav-do.png" alt-text="Пример расширения собрания с кнопкой &quot;Назад&quot;." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav-do.png" alt-text="Пример расширения собрания с кнопкой &quot;Назад&quot;.":::
 
 #### <a name="do-have-a-back-button"></a>Do: есть кнопка "Назад"
 
@@ -483,7 +483,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav-dont.png" alt-text="Пример расширения собрания с двумя кнопками закрытия." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav-dont.png" alt-text="Пример расширения собрания с двумя кнопками закрытия.":::
 
 #### <a name="dont-include-another-dismiss-button"></a>Не следует: включить еще одну кнопку закрытия
 
@@ -496,7 +496,7 @@ ms.locfileid: "66484685"
    :::column span="":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav-caution.png" alt-text="Пример модалов (или модулей задач) на вкладке собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/in-meeting-tab-nav-caution.png" alt-text="Пример модалов (или модулей задач) на вкладке собрания.":::
 
 #### <a name="caution-avoid-modals-within-the-in-meeting-tab"></a>Внимание! Избегайте модальных режимов на вкладке "Собрание"
 
@@ -509,7 +509,7 @@ ms.locfileid: "66484685"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-responsiveness-do.png" alt-text="Пример, показывающий, как правильно изменить размер расширения собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-responsiveness-do.png" alt-text="Пример, показывающий, как правильно изменить размер расширения собрания.":::
 
 #### <a name="do-resize-and-scale-your-app-responsively"></a>Do: изменение размера и масштабирование приложения с учетом скорости реагирования
 
@@ -517,7 +517,7 @@ ms.locfileid: "66484685"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-responsiveness-dont.png" alt-text="Пример, показывающий, как неправильно изменить размер расширения собрания." border="false":::
+:::image type="content" source="../../assets/images/apps-in-meetings/shared-meeting-stage-responsiveness-dont.png" alt-text="Пример, показывающий, как неправильно изменить размер расширения собрания.":::
 
 #### <a name="dont-crop-or-clip-primary-ui-components"></a>Не следует: обрезка или обрезка основных компонентов пользовательского интерфейса
 

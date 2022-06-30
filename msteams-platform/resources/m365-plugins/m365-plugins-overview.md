@@ -4,12 +4,12 @@ description: В этой статье вы узнаете о подключае�
 ms.topic: Microsoft 365 plugins
 ms.localizationpriority: high
 ms.author: Surbhigupta
-ms.openlocfilehash: 5228803be99d77e24f5cd1731c826b1a28509097
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: c09e2e15fd276c2007a989545cc5b5c0b23f2584
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66124048"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558592"
 ---
 # <a name="microsoft-365-plugins"></a>Подключаемые модули Microsoft 365
 
@@ -52,7 +52,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показана страница входа OpenID Connect.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/openid-connect.png" alt-text="Вход в OpenID Connect" border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/openid-connect.png" alt-text="Вход в OpenID Connect":::
 
 ## <a name="microsoft-365-integration"></a>Интеграция с Microsoft 365
 
@@ -65,7 +65,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показана страница настройки интеграции с Microsoft 365.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/365-integration.png" alt-text="Интеграция с Microsoft 365" border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/365-integration.png" alt-text="Интеграция с Microsoft 365":::
 
 ### <a name="user-functions"></a>Функции пользователя
 
@@ -87,7 +87,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показан репозиторий файлов Microsoft 365.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/microsoft-365- repository.png" alt-text="Репозиторий M365"  border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/microsoft-365- repository.png" alt-text="Репозиторий M365" :::
 
 ## <a name="teams-meetings"></a>Собрания Teams
 
@@ -100,7 +100,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показана страница входа в собрание Teams.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/teams-meeting.png" alt-text="Вход в собрание Teams" border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/teams-meeting.png" alt-text="Вход в собрание Teams":::
 
 ## <a name="microsoft-365-teams-theme"></a>Тема Teams в Microsoft 365
 
@@ -115,7 +115,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показана тема Teams, настроенная пользователем.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/teams-theme.png" alt-text="Тема Microsoft Teams" border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/teams-theme.png" alt-text="Тема Microsoft Teams":::
 
 ## <a name="onenote-integration"></a>Интеграция с OneNote
 
@@ -145,7 +145,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показан пользовательский интерфейс блока Microsoft.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/microsoft-block-1.png" alt-text="Блок Microsoft" border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/microsoft-block-1.png" alt-text="Блок Microsoft":::
 
 ## <a name="oembed-filter"></a>Фильтр oEmbed
 
@@ -158,7 +158,7 @@ Moodle LMS поддерживает следующие подключаемые 
 
 На следующем изображении показано добавление внешнего HTML-контента в Moodle.
 
-:::image type="content" source="../../assets/images/MoodleInstructions/oEmbed-filter.png" alt-text="Страница фильтра oEmbed" border="true":::
+:::image type="content" source="../../assets/images/MoodleInstructions/oEmbed-filter.png" alt-text="Страница фильтра oEmbed":::
 
 ## <a name="see-also"></a>См. также
 

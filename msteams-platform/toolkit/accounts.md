@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: f359488788c31941ea90bedb02c710c28fb98366
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 32877d96f3867e15c156bf97e727c158b68f9190
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142215"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558018"
 ---
 # <a name="prepare-accounts-to-build-teams-apps"></a>Подготовка учетных записей для создания приложений Teams
 
@@ -77,7 +77,7 @@ ms.locfileid: "66142215"
     3. Выберите **Учетные записи** и войдите в свою учетную запись Microsoft 365.
     4. Проверьте, есть ли пункт **Разрешение загрузки без публикации**, как показано на следующем изображении:
 
-       :::image type="content" source="../assets/images/teams-toolkit-v2/sideloading.png" alt-text="Разрешение загрузки без публикации" border="true":::
+       :::image type="content" source="../assets/images/teams-toolkit-v2/sideloading.png" alt-text="Разрешение загрузки без публикации":::
 
 * **Проверка разрешения на загрузку без публикации с помощью клиента Teams**
 
@@ -85,11 +85,11 @@ ms.locfileid: "66142215"
     2. Выберите **Приложения** на панели слева.
     3. Выберите **Опубликовать приложение**.
 
-       :::image type="content" source="../assets/images/teams-toolkit-v2/publish2.png" alt-text="Публикация приложения" border="true":::
+       :::image type="content" source="../assets/images/teams-toolkit-v2/publish2.png" alt-text="Публикация приложения":::
 
     4. Проверьте, есть ли пункт **Отправка пользовательского приложения**, как показано на следующем изображении:
 
-       :::image type="content" source="../assets/images/teams-toolkit-v2/upload2.png" alt-text="Отправка пользовательского приложения" border="true":::.
+       :::image type="content" source="../assets/images/teams-toolkit-v2/upload2.png" alt-text="Отправка пользовательского приложения":::.
 
         Если вы не видите параметр **Отправить пользовательское приложение**, это означает, что у вас нет необходимого разрешения для отправки неопубликованных приложений.
 
@@ -107,7 +107,7 @@ ms.locfileid: "66142215"
 
   2. Выберите **Показать все** > **Teams**.
 
-     :::image type="content" source="../assets/images/teams-toolkit-v2/5.png" alt-text="показать все" border="true":::
+     :::image type="content" source="../assets/images/teams-toolkit-v2/5.png" alt-text="показать все":::
 
      > [!Note]
      > Может потребоваться **до 24 часов** для появления пункта **Teams**. Можно [отправить пользовательское приложение в среду Teams](/microsoftteams/upload-custom-apps) для тестирования и проверки.

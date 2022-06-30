@@ -4,12 +4,12 @@ author: surbhigupta
 description: Узнайте, как включать и настраивать приложения для собраний Teams и различных сценариев собраний, обновлять манифест приложения, настраивать функции и многое другое.
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: a59ee31eb1837389b09f58c83a02f056ab55506a
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: d00beadecbb2de2011a4cb6abbc94ce18a149eb1
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503363"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557738"
 ---
 # <a name="enable-and-configure-apps-for-meetings"></a>Включение и настройка приложений для собраний
 
@@ -141,7 +141,7 @@ ms.locfileid: "66503363"
 
 Уведомление на собрании не должно использовать модуль задач. Модуль задач не вызывается в чате собрания. Для отображения уведомления на собрании используется URL-адрес внешнего ресурса. Вы можете использовать метод `submitTask` для отправки данных в чате собрания.
 
-:::image type="content" source="../assets/images/apps-in-meetings/in-meeting-dialogbox.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании." border="true":::
+:::image type="content" source="../assets/images/apps-in-meetings/in-meeting-dialogbox.png" alt-text="В примере показано, как можно использовать диалоговое окно на собрании.":::
 
 #### <a name="shared-meeting-stage"></a>Общая сцена собрания
 

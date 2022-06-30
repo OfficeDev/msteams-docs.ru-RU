@@ -5,12 +5,12 @@ description: Узнайте, как быстрее проектировать п
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: 497385a8fa87714c8c87409d9d42bb88c294918a
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: c4a8b0b626092e4980ccac95f98148829dc06ccd
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484827"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558725"
 ---
 # <a name="designing-your-microsoft-teams-app-with-ui-templates"></a>Проектирование приложения Microsoft Teams с помощью шаблонов пользовательского интерфейса
 
@@ -53,12 +53,12 @@ ms.locfileid: "66484827"
 ### <a name="top-use-cases"></a>Основные варианты использования
 
 * Планирование собраний и событий
-* Получение напоминаний о предстоящих собраниях и событиях.
+* Получение напоминаний о предстоящих собраниях и событиях
 * Просмотр расписаний
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/desktop-calendar.png" alt-text="Пример шаблона пользовательского интерфейса календаря на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/desktop-calendar.png" alt-text="Пример шаблона пользовательского интерфейса календаря на рабочем столе.":::
 
 ## <a name="dashboard"></a>Панель мониторинга
 
@@ -68,15 +68,15 @@ ms.locfileid: "66484827"
 
 * Анализ данных
 * Метрики отчета
-* Упорядочение разных сведений в одном месте.
+* Упорядочение разных сведений в одном месте
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-dashboard.png" alt-text="Пример шаблона пользовательского интерфейса панели мониторинга на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-dashboard.png" alt-text="Пример шаблона пользовательского интерфейса панели мониторинга на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/dashboard.png" alt-text="Пример шаблона пользовательского интерфейса панели мониторинга на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/dashboard.png" alt-text="Пример шаблона пользовательского интерфейса панели мониторинга на рабочем столе.":::
 
 ## <a name="data-visualization"></a>Визуализация данных
 
@@ -84,16 +84,16 @@ ms.locfileid: "66484827"
 
 ### <a name="top-use-cases"></a>Основные варианты использования
 
-* Отображение сложной информации.
-* Создайте панель мониторинга.
+* Отображение сложной информации
+* Создание панели мониторинга
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-data-viz.png" alt-text="В примере показан шаблон пользовательского интерфейса визуализации данных на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-data-viz.png" alt-text="В примере показан шаблон пользовательского интерфейса визуализации данных на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/data-viz.png" alt-text="Пример шаблона пользовательского интерфейса визуализации данных на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/data-viz.png" alt-text="Пример шаблона пользовательского интерфейса визуализации данных на рабочем столе.":::
 
 ## <a name="empty-state"></a>Пустое состояние
 
@@ -102,17 +102,17 @@ ms.locfileid: "66484827"
 ### <a name="top-use-cases"></a>Основные варианты использования
 
 * Вход
-* Приветственные сообщения и интерфейсы первого запуска.
+* Приветственные сообщения и интерфейсы первого запуска
 * Сообщения об успешном выполнении
 * Сообщения об ошибках
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-empty-state.png" alt-text="В примере показан шаблон пользовательского интерфейса пустого состояния на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-empty-state.png" alt-text="В примере показан шаблон пользовательского интерфейса пустого состояния на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/empty-state.png" alt-text="В примере показан шаблон пользовательского интерфейса пустого состояния на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/empty-state.png" alt-text="В примере показан шаблон пользовательского интерфейса пустого состояния на рабочем столе.":::
 
 ## <a name="filter"></a>Filter
 
@@ -123,11 +123,11 @@ ms.locfileid: "66484827"
 Упорядочение содержимого в:
 
 * Списки
-* Таблицы
+* таблицы;
 * Панели мониторинга
 * Визуализация данных
 
-:::image type="content" source="../../assets/images/ui-templates/filter.png" alt-text="В примере показан шаблон фильтра." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/filter.png" alt-text="В примере показан шаблон фильтра.":::
 
 ## <a name="form"></a>Форма
 
@@ -140,13 +140,13 @@ ms.locfileid: "66484827"
 * Settings
 * Коллекция входных данных пользователя
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-form.png" alt-text="В примере показан шаблон пользовательского интерфейса формы на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-form.png" alt-text="В примере показан шаблон пользовательского интерфейса формы на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/form.png" alt-text="Пример шаблона пользовательского интерфейса формы на рабочем столе." border="false":::
+:::image type="content" source="../../assets/form.png" alt-text="Пример шаблона пользовательского интерфейса формы на рабочем столе.":::
 
 ## <a name="list"></a>Список
 
@@ -157,13 +157,13 @@ ms.locfileid: "66484827"
 * Отображение данных
 * Контекстные действия с содержимым приложения
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-list.png" alt-text="В примере показан шаблон пользовательского интерфейса списка на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-list.png" alt-text="В примере показан шаблон пользовательского интерфейса списка на мобильных устройствах.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/list.png" alt-text="Пример шаблона пользовательского интерфейса списка на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/list.png" alt-text="Пример шаблона пользовательского интерфейса списка на рабочем столе.":::
 
 ## <a name="sign-in"></a>Вход
 
@@ -173,13 +173,13 @@ ms.locfileid: "66484827"
 
 * Проверка подлинности пользователей
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-sign-in.png" alt-text="В примере показан шаблон пользовательского интерфейса входа на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-sign-in.png" alt-text="В примере показан шаблон пользовательского интерфейса входа на мобильных устройствах.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/sign-in.png" alt-text="В примере показан шаблон пользовательского интерфейса входа на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/sign-in.png" alt-text="В примере показан шаблон пользовательского интерфейса входа на рабочем столе.":::
 
 ## <a name="settings"></a>Settings
 
@@ -189,7 +189,7 @@ ms.locfileid: "66484827"
 
 * Управление функциями приложения
 
-:::image type="content" source="../../assets/images/ui-templates/settings.png" alt-text="Пример шаблона параметров." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/settings.png" alt-text="Пример шаблона параметров.":::
 
 ## <a name="task-board"></a>Доска задач
 
@@ -201,13 +201,13 @@ ms.locfileid: "66484827"
 * Мозгового штурма. Добавление идей в разные категории.
 * Упражнения по сортировке. Упорядочив любую информацию в контейнеры.
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-task-board.png" alt-text="В примере показан шаблон пользовательского интерфейса доски задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-task-board.png" alt-text="В примере показан шаблон пользовательского интерфейса доски задач на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/task-board.png" alt-text="В примере показан шаблон пользовательского интерфейса доски задач на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/task-board.png" alt-text="В примере показан шаблон пользовательского интерфейса доски задач на рабочем столе.":::
 
 ## <a name="wizard"></a>Мастер
 
@@ -219,13 +219,13 @@ ms.locfileid: "66484827"
 * Адаптация
 * Интерфейсы первого запуска
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-wizard.png" alt-text="Пример шаблона пользовательского интерфейса мастера на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-wizard.png" alt-text="Пример шаблона пользовательского интерфейса мастера на мобильных устройствах.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/wizard.png" alt-text="Пример шаблона пользовательского интерфейса мастера на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/wizard.png" alt-text="Пример шаблона пользовательского интерфейса мастера на рабочем столе.":::
 
 ## <a name="see-also"></a>См. также
 

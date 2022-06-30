@@ -10,17 +10,17 @@
 </details>
 <br>
 
-# <a name="visual-studio-code"></a>[Visual Studio Code](#tab/vscode);
+# <a name="visual-studio-code"></a>[Visual Studio Code](#tab/vscode)
 
 Выберите значок Набор инструментов Teams:::image type="icon" source="~/assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png"::: на боковой панели Visual Studio Code.
 
 1. Выберите **"Подготовка в облаке"**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/provisioning-commands.png" alt-text="Снимок экрана: команды подготовки" border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/provisioning-commands.png" alt-text="Снимок экрана: команды подготовки":::
 
 1. Выберите подписку, используемую для ресурсов Azure.
 
-    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/select-resource.png" alt-text="Снимок экрана: ресурсы для подготовки" border="false":::
+    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/select-resource.png" alt-text="Снимок экрана: ресурсы для подготовки":::
 
    > [!NOTE]
    > Для размещения приложения всегда используются некоторые ресурсы Azure.
@@ -29,21 +29,21 @@
 
 1. Выберите **"Подготовка"**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provision-warning.png" alt-text="Снимок экрана: диалоговое окно подготовки." border="true":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provision-warning.png" alt-text="Снимок экрана: диалоговое окно подготовки.":::
 
    Процесс подготовки создает ресурсы в облаке Azure. Это может занять некоторое время. Ход выполнения можно отслеживать, просмотрев диалоги в правом нижнем углу. Через несколько минут вы увидите следующее уведомление:
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-provision-successmsgext.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки." border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-provision-successmsgext.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки.":::
 
     При необходимости можно просмотреть подготовленные ресурсы. В этом руководстве вам не нужно просматривать ресурсы.
 
     Подготовленный ресурс отображается в разделе **"Среда** ".
 
-    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provisioned-resources-env.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки." border="false":::
+    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provisioned-resources-env.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки.":::
 
 1. Выберите **"Развернуть в облаке** " на панели **развертывания** после завершения подготовки.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-cloud.png" alt-text="Снимок экрана, показывающий, где можно выполнить развертывание в облаке." border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-cloud.png" alt-text="Снимок экрана, показывающий, где можно выполнить развертывание в облаке.":::
 
    Как и в случае с подготовкой, развертывание занимает некоторое время. Вы можете отслеживать процесс, просмотрев диалоги в правом нижнем углу. Через несколько минут вы увидите уведомление о завершении.
 
@@ -76,19 +76,19 @@
 
 После завершения подготовки и развертывания сделайте следующее:
 
-1. Откройте панель отладки (**CTRL+SHIFT+D** / **⌘⇧-D** или view **> Run**) в Visual Studio Code.
+1. Откройте панель отладки (**CTRL+SHIFT+D** / **⌘⇧-D** или view **> Run**) из Visual Studio Code.
 1. В **раскрывающемся списке конфигурации запуска выберите launch Remote (Edge** ).
 1. Выберите команду **"Начать отладку" (F5),** чтобы запустить приложение из Azure.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/launch-remote.png" alt-text="Снимок экрана: удаленное приложение запуска." border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/launch-remote.png" alt-text="Снимок экрана: удаленное приложение запуска.":::
 
 1. Нажмите **Добавить**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/add-mex-app.png" alt-text="Снимок экрана: устанавливаемого приложения." border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/add-mex-app.png" alt-text="Снимок экрана: устанавливаемого приложения.":::
 
    В наборе средств отображается сообщение о добавлении приложения в Teams.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/mex-added-msg.png" alt-text="Снимок экрана: сообщение о попытке использовать приложение сейчас или позже" border="true":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/mex-added-msg.png" alt-text="Снимок экрана: сообщение о попытке использовать приложение сейчас или позже":::
  
     - Если выбрать " **Получить"**, вы сможете попробовать приложение позже из списка загруженных неопубликованных приложений.
     - Если выбрать " **Попробовать"**, Teams загрузит ваше приложение.
@@ -99,7 +99,7 @@
 
    Приложение расширения сообщений загружается в приложение чат-бота.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/app-added-mex1.png" alt-text="Снимок экрана: неопубликованное приложение в Teams" border="false":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/app-added-mex1.png" alt-text="Снимок экрана: неопубликованное приложение в Teams":::
 
 
 

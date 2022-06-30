@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: e9c89f6f1aed486582eb2f50ee8f8107f5ef8473
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: f06772cc6ba7975d0434e1c7c1c1c510ce760f6c
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189469"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558396"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -58,7 +58,7 @@ ms.locfileid: "66189469"
 
 1. Задайте свои значения для ряда вопросов, заданных разработчиком приложений Microsoft Teams для обновления файла`manifest.json`.
 
-    :::image type="content" source="~/assets/images/tab-images/teamsTabScreenshot.PNG" alt-text="Генератор Teams" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/teamsTabScreenshot.PNG" alt-text="Генератор Teams":::
 
     <details>
     <summary><b>Серия вопросов для обновления файла manifest.json</b></summary>
@@ -230,11 +230,11 @@ gulp build
 
 1. В браузере ведите `http://localhost:3007/<yourDefaultAppNameTab>/` для просмотра домашней страницы приложения.
 
-    :::image type="content" source="~/assets/images/tab-images/homePage.png" alt-text="Вкладка по умолчанию" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/homePage.png" alt-text="Вкладка по умолчанию":::
 
 1. Просмотрите `http://localhost:3007/<yourDefaultAppNameTab>/personal.html`, чтобы найти личную вкладку.
 
-    :::image type="content" source="~/assets/images/tab-images/personalTab.PNG" alt-text="Вкладка HTML по умолчанию" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/personalTab.PNG" alt-text="Вкладка HTML по умолчанию":::
 
 ### <a name="establish-a-secure-tunnel-to-your-tab"></a>Установите безопасный туннель к вашей вкладке
 
@@ -253,11 +253,11 @@ gulp ngrok-serve
 1. Выберите **Управление приложениями** и **Загрузить пользовательское приложение**.
 1. Перейдите в каталог проекта, в папку **./package** выберите папку zip и нажмите **Открыть**.
 
-    :::image type="content" source="~/assets/images/tab-images/addingpersonaltab.png" alt-text="Добавление личной вкладки" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/addingpersonaltab.png" alt-text="Добавление личной вкладки":::
 
 1. В диалоговом окне выберите **Добавить**. Вкладка загружена в Teams.
 
-    :::image type="content" source="~/assets/images/tab-images/personaltabuploaded.png" alt-text="Личная вкладка загружена" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/personaltabuploaded.png" alt-text="Личная вкладка загружена":::
 
 1. На левой панели Teams выберите многоточие &#x25CF;&#x25CF;&#x25CF; а затем выберите загруженное приложение, чтобы просмотреть личную вкладку.
 
@@ -412,7 +412,7 @@ ngrok http 3978 --host-header=localhost
 
 1. Выберите **Добавить** чтобы загрузить вкладку в Teams. Теперь вкладка доступна в Teams.
 
-    :::image type="content" source="~/assets/images/tab-images/personaltabaspnetuploaded.png" alt-text="Вкладка по умолчанию" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/personaltabaspnetuploaded.png" alt-text="Вкладка по умолчанию":::
 
    Теперь вы успешно создали и добавили личную вкладку в Teams.
   
@@ -581,7 +581,7 @@ ngrok http 3978 --host-header=localhost
 
 1. Выберите **Добавить** чтобы загрузить вкладку в Teams. Теперь вкладка доступна в Teams.
 
-    :::image type="content" source="~/assets/images/tab-images/personaltabaspnetmvccoreuploaded.png" alt-text="Личная вкладка" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/personaltabaspnetmvccoreuploaded.png" alt-text="Личная вкладка":::
   
    Теперь вы успешно создали и добавили личную вкладку в Teams.
 

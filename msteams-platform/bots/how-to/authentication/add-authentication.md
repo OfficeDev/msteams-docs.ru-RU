@@ -5,12 +5,12 @@ description: Узнайте, как добавить проверку подли
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 297307657905a1492abc68fde7d69cfbc0702497
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 8470e281d7a6f3c0e18acda0548bf1b9a7480d85
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484973"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558858"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 
@@ -141,7 +141,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 1. Откройте бот, который указан в разделе **Последние ресурсы**.
 
-1. Нажмите **Каналы** в левой области и выберите **Microsoft Teams** :::image type="icon" source="../../../assets/icons/teams-icon.png" border="false":::.
+1. Нажмите **Каналы** в левой области и выберите **Microsoft Teams** :::image type="icon" source="../../../assets/icons/teams-icon.png":::.
 
    :::image type="content" source="../../../assets/images/adaptive-cards/channel-teams.png" alt-text="Канал Teams":::
 

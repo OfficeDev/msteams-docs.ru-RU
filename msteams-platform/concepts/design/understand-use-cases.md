@@ -5,12 +5,12 @@ description: В этой статье вы узнаете о возможнос�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: c2fc61024a9f0c2d9bcf21b549e226b0d264305d
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 64eff648f1d44d5f7534083939822c26c4ae825f
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142474"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558445"
 ---
 # <a name="understand-your-use-cases"></a>Анализ вариантов использования
 
@@ -53,7 +53,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-personal-apps-2021.png" alt-text="Концептуальное представление того, как выглядят персональные приложения в клиенте Microsoft Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-personal-apps-2021.png" alt-text="Концептуальное представление того, как выглядят персональные приложения в клиенте Microsoft Teams.":::
 
    :::column-end:::
 
@@ -70,7 +70,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-channel-chat-apps-2021.png" alt-text="Концептуальное представление того, как выглядят вкладки в клиенте Microsoft Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-channel-chat-apps-2021.png" alt-text="Концептуальное представление того, как выглядят вкладки в клиенте Microsoft Teams.":::
 
    :::column-end:::
 
@@ -87,7 +87,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-bots-2021.png" alt-text="Концептуальное представление того, как выглядят боты в клиенте Microsoft Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-bots-2021.png" alt-text="Концептуальное представление того, как выглядят боты в клиенте Microsoft Teams.":::
 
    :::column-end:::
 
@@ -105,7 +105,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-messaging-extensions-2021.png" alt-text="Концептуальное представление того, как выглядят расширения для сообщений в клиенте Microsoft Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-messaging-extensions-2021.png" alt-text="Концептуальное представление того, как выглядят расширения для сообщений в клиенте Microsoft Teams.":::
 
    :::column-end:::
 :::row-end:::
@@ -122,7 +122,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-meeting-extensions-2021.png" alt-text="Концептуальное представление того, как выглядят расширения для собраний в клиенте Microsoft Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-meeting-extensions-2021.png" alt-text="Концептуальное представление того, как выглядят расширения для собраний в клиенте Microsoft Teams.":::
 
    :::column-end:::
 :::row-end:::
@@ -139,7 +139,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-connectors.png" alt-text="Концептуальное представление того, как выглядят соединители в клиенте Microsoft Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-connectors.png" alt-text="Концептуальное представление того, как выглядят соединители в клиенте Microsoft Teams.":::
 
    :::column-end:::
 :::row-end:::
@@ -156,7 +156,7 @@ ms.locfileid: "66142474"
 
    :::column span="":::
 
-:::image type="content" source="../../assets/images/overview-graph.png" alt-text="Концептуальное представление API Microsoft Graph для Teams." border="false":::
+:::image type="content" source="../../assets/images/overview-graph.png" alt-text="Концептуальное представление API Microsoft Graph для Teams.":::
 
    :::column-end:::
 :::row-end:::

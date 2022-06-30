@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: cd28dc6be82b37223268d526c9673c0545f0bca9
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 4571dfb49a8549ef644c392d3f05a6f2611b0f14
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485624"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557934"
 ---
 # <a name="designing-your-microsoft-teams-bot"></a>Создание бота Microsoft Teams
 
@@ -36,7 +36,7 @@ ms.locfileid: "66485624"
 
 Пользователи могут получать доступ к ботам. добавленным на настольных компьютерах, с помощью @упоминаний.
 
-:::image type="content" source="../../assets/images/bots/mobile-access-bot-chat-at-mention.png" alt-text="В этом примере показано, как получить доступ к мобильному боту в групповом чате с помощью @упоминания." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-access-bot-chat-at-mention.png" alt-text="В этом примере показано, как получить доступ к мобильному боту в групповом чате с помощью @упоминания.":::
 
 ### <a name="desktop"></a>Настольный компьютер
 
@@ -46,7 +46,7 @@ ms.locfileid: "66485624"
 * Использовать всплывающее окно приложения. Для этого выберите значок **Дополнительные** в левой части экрана Teams.
 * С помощью @упоминания в новом чате или поле "Создать" (в следующем примере показано, как это можно сделать в групповом чате).
 
-    :::image type="content" source="../../assets/images/bots/add-bot-chat-at-mention.png" alt-text="В примере показано, как добавить бота в групповой чат с помощью @упоминания." border="false":::
+    :::image type="content" source="../../assets/images/bots/add-bot-chat-at-mention.png" alt-text="В примере показано, как добавить бота в групповой чат с помощью @упоминания.":::
 
 ## <a name="introduce-a-bot"></a>Представление бота
 
@@ -58,11 +58,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-personal-welcome.png" alt-text="В этом примере показано введение бота в личном приложении на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-personal-welcome.png" alt-text="В этом примере показано введение бота в личном приложении на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-personal-welcome.png" alt-text="В этом примере показано представление бота в личном приложении." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-personal-welcome.png" alt-text="В этом примере показано представление бота в личном приложении.":::
 
 ### <a name="welcome-message-in-channels-and-group-chats"></a>Приветственное сообщение в каналах и групповых чатах
 
@@ -70,11 +70,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-group-welcome.png" alt-text="В примере показано представление бота в контексте совместной работы на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-group-welcome.png" alt-text="В примере показано представление бота в контексте совместной работы на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-group-welcome.png" alt-text="В примере показано представление бота в контексте совместной работы." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-group-welcome.png" alt-text="В примере показано представление бота в контексте совместной работы.":::
 
 ### <a name="bot-authentication-with-single-sign-on"></a>Проверка подлинности бота при едином входе
 
@@ -84,11 +84,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-sso-example.png" alt-text="В этом примере показан бот с кнопкой входа на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-sso-example.png" alt-text="В этом примере показан бот с кнопкой входа на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-sso-example.png" alt-text="В примере показан бот с кнопкой для входа в систему." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-sso-example.png" alt-text="В примере показан бот с кнопкой для входа в систему.":::
 
 ### <a name="tours"></a>Обзоры
 
@@ -103,11 +103,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-tour-personal.png" alt-text="В этом примере показан обзор бота в приватном чате на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-tour-personal.png" alt-text="В этом примере показан обзор бота в приватном чате на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-tour-personal.png" alt-text="В примере показан видеообзор бота в чате с одним человеком." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-tour-personal.png" alt-text="В примере показан видеообзор бота в чате с одним человеком.":::
 
 ### <a name="channels-and-group-chats"></a>Каналы и групповые чаты
 
@@ -115,11 +115,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-tour-channel.png" alt-text="В этом примере показан обзор бота в канале на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-tour-channel.png" alt-text="В этом примере показан обзор бота в канале на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-tour-channel.png" alt-text="В примере показан видеообзор бота в канале." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-tour-channel.png" alt-text="В примере показан видеообзор бота в канале.":::
 
 ## <a name="chat-with-a-bot"></a>Чат с ботом
 
@@ -138,7 +138,7 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-anatomy.png" alt-text="В этом примере показана структурная анатомия мобильного бота." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-anatomy.png" alt-text="В этом примере показана структурная анатомия мобильного бота.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -150,7 +150,7 @@ ms.locfileid: "66485624"
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-anatomy.png" alt-text="В примере показана структурная анатомия бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-anatomy.png" alt-text="В примере показана структурная анатомия бота.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -170,7 +170,7 @@ ms.locfileid: "66485624"
 
 Меню команд должно всегда быть доступно независимо от состояния беседы.
 
-:::image type="content" source="../../assets/images/bots/bot-command-menu.png" alt-text="В примере показано меню команд бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-command-menu.png" alt-text="В примере показано меню команд бота.":::
 
 ## <a name="understand-what-people-are-saying"></a>Понимание того, что говорят люди
 
@@ -178,13 +178,13 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-understanding-hello.png" alt-text="Иллюстрация того, как бот может интерпретировать &quot;Привет&quot;." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-understanding-hello.png" alt-text="Иллюстрация того, как бот может интерпретировать &quot;Привет&quot;.":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-understanding-help.png" alt-text="Иллюстрация того, как бот может интерпретировать &quot;Помоги&quot;." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-understanding-help.png" alt-text="Иллюстрация того, как бот может интерпретировать &quot;Помоги&quot;.":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-understanding-thanks.png" alt-text="Иллюстрация того, как бот может интерпретировать &quot;Спасибо&quot;." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-understanding-thanks.png" alt-text="Иллюстрация того, как бот может интерпретировать &quot;Спасибо&quot;.":::
    :::column-end:::
 :::row-end:::
 
@@ -196,13 +196,13 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-intent-1.png" alt-text="В предложении &quot;Забронировать рейс в Сиэтл&quot; намерение пользователя — &quot;забронировать рейс&quot;, а данные — &quot;Сиэтл&quot;." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-intent-1.png" alt-text="В предложении &quot;Забронировать рейс в Сиэтл&quot; намерение пользователя — &quot;забронировать рейс&quot;, а данные — &quot;Сиэтл&quot;.":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-intent-2.png" alt-text="В предложении &quot;Когда открыт магазин&quot; намерение пользователя — &quot;когда&quot;, а данные — &quot;открыт&quot;." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-intent-2.png" alt-text="В предложении &quot;Когда открыт магазин&quot; намерение пользователя — &quot;когда&quot;, а данные — &quot;открыт&quot;.":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-intent-3.png" alt-text="В предложении &quot;Запланировать встречу с Бобом из отдела распространения на 13:00&quot;, намерение пользователя — &quot;запланировать встречу&quot;, а данные — &quot;13:00&quot; и &quot;Боб из отдела распространения&quot;." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-intent-3.png" alt-text="В предложении &quot;Запланировать встречу с Бобом из отдела распространения на 13:00&quot;, намерение пользователя — &quot;запланировать встречу&quot;, а данные — &quot;13:00&quot; и &quot;Боб из отдела распространения&quot;.":::
    :::column-end:::
 :::row-end:::
 
@@ -221,11 +221,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-simple-query.png" alt-text="В этом примере показано простое взаимодействие запроса с ботом на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-simple-query.png" alt-text="В этом примере показано простое взаимодействие запроса с ботом на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-simple-query.png" alt-text="В примере показано взаимодействие с ботом для выполнения простого запроса." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-simple-query.png" alt-text="В примере показано взаимодействие с ботом для выполнения простого запроса.":::
 
 ### <a name="multi-turn-interactions"></a>Взаимодействие с несколькими поворотами
 
@@ -235,11 +235,11 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-multi-turn.png" alt-text="В этом примере показано многоступенчатое взаимодействие с ботом на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-multi-turn.png" alt-text="В этом примере показано многоступенчатое взаимодействие с ботом на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-multi-turn.png" alt-text="В примере показано взаимодействие с ботом с несколькими поворотами." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-multi-turn.png" alt-text="В примере показано взаимодействие с ботом с несколькими поворотами.":::
 
 ### <a name="reach-out-to-users"></a>Инициируйте общение с пользователями
 
@@ -249,21 +249,21 @@ ms.locfileid: "66485624"
 
 В следующем примере пользователь получает уведомление о том, что бот отправил ему сообщение в другом канале.
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-proactive-message-toast.png" alt-text="В этом примере показано всплывающее уведомление бота, который заблаговременно передает сообщения пользователю из другого канала на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-proactive-message-toast.png" alt-text="В этом примере показано всплывающее уведомление бота, который заблаговременно передает сообщения пользователю из другого канала на мобильном устройстве.":::
 
 Теперь в этом канале пользователь может прочитать свое сообщение от бота.
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-proactive-message.png" alt-text="В этом примере показано, как пользователь смотрит на заблаговременное сообщение бота на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-proactive-message.png" alt-text="В этом примере показано, как пользователь смотрит на заблаговременное сообщение бота на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
 В следующем примере пользователь получает всплывающее уведомление о том, что бот отправил ему сообщение в другом канале.
 
-:::image type="content" source="../../assets/images/bots/bot-proactive-message-toast.png" alt-text="В примере показано всплывающее уведомление бота, который проактивно посылает сообщение пользователю из другого канала." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-proactive-message-toast.png" alt-text="В примере показано всплывающее уведомление бота, который проактивно посылает сообщение пользователю из другого канала.":::
 
 Теперь в этом канале пользователь может прочитать свое сообщение от бота.
 
-:::image type="content" source="../../assets/images/bots/bot-proactive-message.png" alt-text="В примере показано, как пользователь смотрит на проактивные сообщения бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-proactive-message.png" alt-text="В примере показано, как пользователь смотрит на проактивные сообщения бота.":::
 
 ### <a name="use-tabs-with-bots"></a>Использование вкладок с ботами
 
@@ -271,17 +271,17 @@ ms.locfileid: "66485624"
 
 #### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/bots/mobile-bot-with-tab.png" alt-text="В этом примере показано, как упорядочить содержимое бота с помощью вкладки на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/bots/mobile-bot-with-tab.png" alt-text="В этом примере показано, как упорядочить содержимое бота с помощью вкладки на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/bots/bot-with-tab.png" alt-text="В примере показано, как вкладка помогает упорядочизировать содержимое бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-with-tab.png" alt-text="В примере показано, как вкладка помогает упорядочизировать содержимое бота.":::
 
 ## <a name="manage-a-bot"></a>Управление ботом
 
 Пользователи должны иметь возможность изменять настройки бота. Вы можете предоставить эту функциональность с помощью команд бота, но более эффективным будет включение всех параметров в [модуль задачи](../../task-modules-and-cards/task-modules/design-teams-task-modules.md) (как показано в следующем примере).
 
-:::image type="content" source="../../assets/images/bots/manage-bot-task-module.png" alt-text="В примере показан модуль задач для настройки параметров бота." border="false":::
+:::image type="content" source="../../assets/images/bots/manage-bot-task-module.png" alt-text="В примере показан модуль задач для настройки параметров бота.":::
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -289,7 +289,7 @@ ms.locfileid: "66485624"
 
 ### <a name="content"></a>Контент
 
-:::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример с демонстрацией лучших методик бота для создания отчетливо выраженной личности." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-persona-do.png" alt-text="Пример с демонстрацией лучших методик бота для создания отчетливо выраженной личности.":::
 
 #### <a name="do-establish-a-clear-persona"></a>Как надо: создать отчетливо выраженную личность
 
@@ -299,7 +299,7 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="В этом примере показано, как четко описать то, что может делать ваш бот." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-do.png" alt-text="В этом примере показано, как четко описать то, что может делать ваш бот.":::
 
 #### <a name="do-clearly-convey-what-your-bot-can-do"></a>Как надо: четко обозначьте, что умеет делать ваш бот
 
@@ -307,7 +307,7 @@ ms.locfileid: "66485624"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="В этом примере показано, как не скрывать функции бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-convey-dont.png" alt-text="В этом примере показано, как не скрывать функции бота.":::
 
 #### <a name="dont-obscure-your-bots-features"></a>Что не следует делать: скрывать функции бота
 
@@ -318,7 +318,7 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример, показывающий, что бот должен распознавать фразы, не являющиеся вопросами." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-do.png" alt-text="Пример, показывающий, что бот должен распознавать фразы, не являющиеся вопросами.":::
 
 #### <a name="do-recognize-non-questions"></a>Как надо: распознавать вопросы, которые не являются вопросами
 
@@ -326,7 +326,7 @@ ms.locfileid: "66485624"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="Пример, показывающий, что следует избегать неловких откликов на простые сообщения бота." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-content-understand-dont.png" alt-text="Пример, показывающий, что следует избегать неловких откликов на простые сообщения бота.":::
 
 #### <a name="dont-miss-out-on-opportunities-to-delight"></a>Как не надо: не упускайте случая порадовать пользователей
 
@@ -339,7 +339,7 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="В этом примере показано, каким образом боты должны помогать пользователям понять, как пользоваться ботами." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-help-do.png" alt-text="В этом примере показано, каким образом боты должны помогать пользователям понять, как пользоваться ботами.":::
 
 #### <a name="do-provide-help"></a>Как надо: предоставляйте помощь
 
@@ -347,7 +347,7 @@ ms.locfileid: "66485624"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="В этом примере показано, что бот не должен оставлять пользователей без помощи." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-help-dont.png" alt-text="В этом примере показано, что бот не должен оставлять пользователей без помощи.":::
 
 #### <a name="dont-leave-users-stranded"></a>Как не надо: не бросайте пользователей в беде
 
@@ -360,7 +360,7 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="В этом примере показано, как использовать модули задач или вкладки в боте для сложного взаимодействия." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-do.png" alt-text="В этом примере показано, как использовать модули задач или вкладки в боте для сложного взаимодействия.":::
 
 #### <a name="do-use-task-modules-or-tabs"></a>Как надо: используйте модули задач или вкладки
 
@@ -368,7 +368,7 @@ ms.locfileid: "66485624"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="В этом примере показано, каким образом бот должен избегать многоступенчатого взаимодействия." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-interactions-dont.png" alt-text="В этом примере показано, каким образом бот должен избегать многоступенчатого взаимодействия.":::
 
 #### <a name="dont-make-multi-turn-interactions-tedious"></a>Как не надо: не делайте взаимодействие с несколькими поворотами утомительными
 
@@ -381,7 +381,7 @@ ms.locfileid: "66485624"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="В этом примере показано, каким образом боты должны отображать личные сведения только в личном контексте." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-do.png" alt-text="В этом примере показано, каким образом боты должны отображать личные сведения только в личном контексте.":::
 
 #### <a name="do-only-show-sensitive-info-in-a-personal-context"></a>Как надо: показывать конфиденциальную информацию только в личном контексте
 
@@ -389,7 +389,7 @@ ms.locfileid: "66485624"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="В этом примере показано, каким образом боты не должны раскрывать конфиденциальную информацию группам людей." border="false":::
+:::image type="content" source="../../assets/images/bots/bot-privacy-dont.png" alt-text="В этом примере показано, каким образом боты не должны раскрывать конфиденциальную информацию группам людей.":::
 
 #### <a name="dont-some-content-isnt-meant-to-be-seen-by-everyone"></a>Как не надо: некоторые данные предназначены не для всех
 

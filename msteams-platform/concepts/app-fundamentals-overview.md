@@ -5,12 +5,12 @@ description: Описаны составляющие планирования п
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: bb72b099c82e12190cbdb955d68362dda731a939
-ms.sourcegitcommit: 9d318eda5589ea8f5519d05cb83e0acf3e13e2f4
+ms.openlocfilehash: 7f1d12f1fe1e38ba674ca0ef4f21619ea0eb1b4a
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66150689"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558718"
 ---
 # <a name="plan-your-app-with-teams-features"></a>Планирование приложения с помощью функций Teams
 
@@ -28,7 +28,7 @@ ms.locfileid: "66150689"
 
 Teams как платформа предоставляет наборы инструментов, библиотеки и приложения на каждом этапе разработки приложений. Давайте разберем ее согласно жизненному циклу сборки приложения.
 
-:::image type="content" source="../assets/images/app-fundamentals/plan-app.png" alt-text="Иллюстрация, показывающая планирование приложения" border="true":::
+:::image type="content" source="../assets/images/app-fundamentals/plan-app.png" alt-text="Иллюстрация, показывающая планирование приложения":::
 
 * [До сборки](#before-you-build)
 * [Во время сборки](#during-build)
@@ -53,7 +53,7 @@ Teams как платформа предоставляет наборы инст
 
 * **Использование Teams в качестве платформы**. Платформа Teams помогает создать приложение с одной или несколькими возможностями. Ваше приложение Teams поддерживается интегрированными продуктами и службами, которые повышают эффективность работы с приложением.
 
-    :::image type="content" source="../assets/images/overview/teams-solution.png" alt-text="Концептуальное представление решения Teams." border="true":::
+    :::image type="content" source="../assets/images/overview/teams-solution.png" alt-text="Концептуальное представление решения Teams.":::
 
     Ваши приложения отображаются в Teams в виде вкладок, ботов, расширений сообщений, соединителей и веб-перехватчиков или как многофункциональное приложение. Эти возможности основаны на серверных частях Azure, Microsoft Graph, SharePoint и Power Apps, которые помогают автоматизировать задачи и процессы.
 

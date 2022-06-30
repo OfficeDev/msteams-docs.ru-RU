@@ -5,18 +5,18 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 9649f39720587d678573b99719db8d91ba5465b4
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 95d0d43e72a72220111c0afa81970a4fab986fc8
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143020"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558116"
 ---
 # <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для приложения Microsoft Teams
 
 Модули задач позволяют создавать модальные всплывающие окна в приложении Teams. Используйте эту возможность для отображения мультимедийных материалов и информации или для выполнения сложной задачи.
 
-:::image type="content" source="../../assets/images/task-module/task-module-overview.png" alt-text="В примере показан модуль задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/task-module-overview.png" alt-text="В примере показан модуль задач.":::
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
@@ -43,7 +43,7 @@ ms.locfileid: "66143020"
 
 ### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-task-module-anatomy.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса модуля задач на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-task-module-anatomy.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса модуля задач на мобильных устройствах.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -55,7 +55,7 @@ ms.locfileid: "66143020"
 
 ### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/task-module-anatomy.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса модуля задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/task-module-anatomy.png" alt-text="Иллюстрация, показывающая структуру пользовательского интерфейса модуля задач.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -82,11 +82,11 @@ ms.locfileid: "66143020"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-list.png" alt-text="Пример списка в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-list.png" alt-text="Пример списка в модуле задач на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/list.png" alt-text="Пример списка в модуле задач.":::
 
 ### <a name="form"></a>Форма
 
@@ -94,11 +94,11 @@ ms.locfileid: "66143020"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-form.png" alt-text="Пример формы в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-form.png" alt-text="Пример формы в модуле задач на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/form.png" alt-text="Пример формы в модуле задач." border="false":::
+:::image type="content" source="../../assets/form.png" alt-text="Пример формы в модуле задач.":::
 
 ### <a name="sign-in"></a>Вход
 
@@ -106,11 +106,11 @@ ms.locfileid: "66143020"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-sign-in.png" alt-text="Пример входа в систему в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-sign-in.png" alt-text="Пример входа в систему в модуле задач на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Пример входа в систему в модуле задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/sign-in.png" alt-text="Пример входа в систему в модуле задач.":::
 
 ### <a name="media"></a>Мультимедиа
 
@@ -118,11 +118,11 @@ ms.locfileid: "66143020"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-media.png" alt-text="Пример мультимедийного содержимого в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-media.png" alt-text="Пример мультимедийного содержимого в модуле задач на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/media.png" alt-text="Пример мультимедийного содержимого в модуле задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/media.png" alt-text="Пример мультимедийного содержимого в модуле задач.":::
 
 ### <a name="empty-state"></a>Пустое состояние
 
@@ -130,11 +130,11 @@ ms.locfileid: "66143020"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-empty-state.png" alt-text="Пример пустого состояния в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-empty-state.png" alt-text="Пример пустого состояния в модуле задач на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/empty-state.png" alt-text="Пример пустого состояния в модуле задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/empty-state.png" alt-text="Пример пустого состояния в модуле задач.":::
 
 ### <a name="image-gallery"></a>Коллекция изображений
 
@@ -142,11 +142,11 @@ ms.locfileid: "66143020"
 
 ##### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-image-gallery.png" alt-text="Пример коллекции изображений в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-image-gallery.png" alt-text="Пример коллекции изображений в модуле задач на мобильном устройстве.":::
 
 ##### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/image-gallery.png" alt-text="Пример коллекции изображений в модуле задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/image-gallery.png" alt-text="Пример коллекции изображений в модуле задач.":::
 
 ### <a name="poll"></a>Опрос
 
@@ -154,11 +154,11 @@ ms.locfileid: "66143020"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/task-module/mobile-poll.png" alt-text="Пример опроса в модуле задач на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/task-module/mobile-poll.png" alt-text="Пример опроса в модуле задач на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для рабочего стола
 
-:::image type="content" source="../../assets/images/task-module/poll.png" alt-text="Пример опроса в модуле задач." border="false":::
+:::image type="content" source="../../assets/images/task-module/poll.png" alt-text="Пример опроса в модуле задач.":::
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -168,7 +168,7 @@ ms.locfileid: "66143020"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/usability-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (по одному модулю задач за раз)." border="false":::
+:::image type="content" source="../../assets/images/task-module/usability-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (по одному модулю задач за раз).":::
 
 #### <a name="do-use-one-task-module-at-a-time"></a>Используйте по одному модулю задач за раз
 
@@ -176,7 +176,7 @@ ms.locfileid: "66143020"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/usability-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (всплывающее диалоговое окно поверх модуля задач)." border="false":::
+:::image type="content" source="../../assets/images/task-module/usability-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (всплывающее диалоговое окно поверх модуля задач).":::
 
 #### <a name="dont-pop-a-dialog-on-top-of-a-task-module"></a>Не помещайте всплывающее диалоговое окно поверх модуля задач
 
@@ -189,7 +189,7 @@ ms.locfileid: "66143020"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/responsive-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (убедитесь, что содержимое быстро реагирует на запросы)." border="false":::
+:::image type="content" source="../../assets/images/task-module/responsive-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (убедитесь, что содержимое быстро реагирует на запросы).":::
 
 #### <a name="do-make-sure-the-content-is-responsive"></a>Убедитесь, что содержимое быстро реагирует на запросы
 
@@ -197,7 +197,7 @@ ms.locfileid: "66143020"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/responsive-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (не используйте горизонтальные полоски прокрутки)." border="false":::
+:::image type="content" source="../../assets/images/task-module/responsive-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (не используйте горизонтальные полоски прокрутки).":::
 
 #### <a name="dont-use-horizontal-scroll-bars"></a>Не используйте горизонтальные полоски прокрутки
 
@@ -210,7 +210,7 @@ ms.locfileid: "66143020"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/simplicity-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (будьте лаконичны)." border="false":::
+:::image type="content" source="../../assets/images/task-module/simplicity-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (будьте лаконичны).":::
 
 #### <a name="do-keep-it-short"></a>Будьте лаконичны
 
@@ -218,7 +218,7 @@ ms.locfileid: "66143020"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/simplicity-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (не используйте длительные взаимодействия)." border="false":::
+:::image type="content" source="../../assets/images/task-module/simplicity-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (не используйте длительные взаимодействия).":::
 
 #### <a name="dont-have-long-interactions"></a>Не используйте длительные взаимодействия
 
@@ -231,7 +231,7 @@ ms.locfileid: "66143020"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/error-messages-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (используйте встроенные сообщения об ошибках)." border="false":::
+:::image type="content" source="../../assets/images/task-module/error-messages-do.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (используйте встроенные сообщения об ошибках).":::
 
 #### <a name="do-use-inline-error-messages"></a>Используйте встроенные сообщения об ошибках
 
@@ -239,7 +239,7 @@ ms.locfileid: "66143020"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/task-module/error-messages-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (сообщения об ошибках в диалогах)." border="false":::
+:::image type="content" source="../../assets/images/task-module/error-messages-dont.png" alt-text="Пример, показывающий лучшие методики использования модуля задач (сообщения об ошибках в диалогах).":::
 
 #### <a name="dont-put-error-messages-in-dialogs"></a>Не помещайте сообщения об ошибках в диалоговые окна
 

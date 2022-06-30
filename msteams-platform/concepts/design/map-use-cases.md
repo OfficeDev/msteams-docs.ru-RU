@@ -5,12 +5,12 @@ description: Определите, как реализовать вариант�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: 9fdf2c56bab0a822d0c3769d6d7e9fdb6aa3a929
-ms.sourcegitcommit: 0117c4e750a388a37cc189bba8fc0deafc3fd230
+ms.openlocfilehash: 50298ec41a6f5f6a4ca0ecfcf3b0570762d2720c
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103329"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557857"
 ---
 # <a name="map-your-use-cases-to-teams-app-features"></a>Сопоставление вариантов использования с возможностями приложения Teams
 
@@ -88,7 +88,7 @@ ms.locfileid: "65103329"
 
 Рассмотрим, каким образом функции Teams поддерживают различные возможности ваших приложений.
 
-:::image type="content" source="../../assets/images/overview/teams-apps-capabilities.png" alt-text="Изображение возможностей Teams" border="true":::
+:::image type="content" source="../../assets/images/overview/teams-apps-capabilities.png" alt-text="Изображение возможностей Teams":::
 
 Например:
 

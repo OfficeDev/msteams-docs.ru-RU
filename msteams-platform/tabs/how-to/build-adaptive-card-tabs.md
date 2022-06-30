@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете о создании в
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: c42ea356e3654453d20f59a8be33412b1e608939
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 48415f4cba1a748dafd9d21e8429a59414769b98
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485249"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558179"
 ---
 # <a name="build-tabs-with-adaptive-cards"></a>Создание вкладок с использованием адаптивных карточек
 
@@ -31,7 +31,7 @@ ms.locfileid: "66485249"
 
 На следующем рисунке показаны вкладки сборки с адаптивными карточками на настольных компьютерах и мобильных устройствах.
 
-:::image type="content" source="../../assets/images/adaptive-cards-rendered-in-tabs.png" alt-text="Пример адаптивной карточки, отрисованной на вкладках." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards-rendered-in-tabs.png" alt-text="Пример адаптивной карточки, отрисованной на вкладках.":::
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -355,7 +355,7 @@ ms.locfileid: "66485249"
 
 На следующем изображении представлен обзор работы потока данных проверки подлинности для вызова `tab/fetch`.
 
-:::image type="content" source="../../assets/images/tabs/adaptive-cards-tab-auth-flow1.png" alt-text="Пример автоматического потока вкладки &quot;Адаптивная карточка&quot;." border="false" lightbox="../../assets/images/tabs/adaptive-cards-tab-auth-flow2.png":::
+:::image type="content" source="../../assets/images/tabs/adaptive-cards-tab-auth-flow.png" alt-text="Пример автоматического потока вкладки &quot;Адаптивная карточка&quot;.":::
 
 **`tab/fetch`: ответ auth**
 
@@ -429,7 +429,7 @@ ms.locfileid: "66485249"
 
 |**Название примера** | **Описание** |**.NET** | **Node.js** |
 |----------------|-----------------|--------------|--------------|
-| Показывать адаптивные карточки на вкладке Teams | Образец кода вкладки Microsoft Teams, в котором показано, как показывать адаптивные карточки в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
+| Показывать адаптивные карточки на вкладке Teams | Образец кода вкладки Microsoft Teams, в котором показано, как показывать адаптивные карточки в Teams. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/csharp)| [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-adaptive-cards/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 

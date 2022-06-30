@@ -5,12 +5,12 @@ keywords: отправка и получение файлов ботов Teams
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: 5d7b83890947a77a477c67197557c92aa6e7b103
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 1bc04d2dfde200917c9faeb9fcb1c91b145463de
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503587"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558291"
 ---
 # <a name="send-and-receive-files-using-bots"></a>Отправка и получение файлов с помощью ботов
 
@@ -89,7 +89,7 @@ ms.locfileid: "66503587"
 
 Это сообщение в классическом интерфейсе содержит простой объект вложения с запросом разрешения пользователя на отправку файла:
 
-:::image type="content" source="../../assets/images/bots/bot-file-consent-card.png" alt-text="Снимок экрана: карточка согласия с запросом разрешения пользователя на отправку файла" border="true":::
+:::image type="content" source="../../assets/images/bots/bot-file-consent-card.png" alt-text="Снимок экрана: карточка согласия с запросом разрешения пользователя на отправку файла":::
 
 Это сообщение в мобильном интерфейсе содержит объект вложения с запросом разрешения пользователя на отправку файла:
 

@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, как приступ
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: f3102e8a6a3fd424a4f4f25995d74911c83930ee
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 31a88b169173aab179581acc9b038670f0c8112c
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189749"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558613"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в приложения Microsoft Teams
 
@@ -18,9 +18,9 @@ ms.locfileid: "66189749"
 Создавайте и подключайте интеллектуальных ботов для естественного взаимодействия с пользователями Microsoft Teams через чат. Или предоставьте простого бота на основе команд, который будет использоваться в качестве интерфейса «командной строки» для более широкого взаимодействия с приложением Teams. Вы можете создать бота только для уведомлений, который может передавать сведения, относящиеся к вашим пользователям, непосредственно в канале или личном сообщении. Вы даже можете использовать существующего бота на основе Bot Framework и добавить поддержку для Teams, чтобы улучшить вашу функцию.
 
 > [!IMPORTANT]
-> В настоящее время боты доступны в облако сообщества для государственных организаций (GCC) и GCC-High но недоступны в Министерства обороны США.
+> В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC-High но недоступны в Министерства обороны США (DOD).
 
-:::image type="content" source="../../assets/images/bot_example.png" alt-text="Пример бота, помогающего пользователю" border="true":::
+:::image type="content" source="../../assets/images/bot_example.png" alt-text="Пример бота, помогающего пользователю":::
 
 ## <a name="what-you-need-to-know-bots"></a>Что необходимо знать о ботах
 
@@ -34,7 +34,7 @@ ms.locfileid: "66189749"
 
 Дополнительные сведения см. в статье [Беседа с ботом Microsoft Teams](~/resources/bot-v3/bot-conversations/bots-conversations.md).
 
-С Teams приложениями вы можете сделать бот звездой вашего интерфейса или просто вспомогательным средством. Боты распространяются как часть более широкого пакета приложений, который может включать в себя другие возможности, такие как [вкладки](~/tabs/what-are-tabs.md) или [расширения для сообщений](~/messaging-extensions/what-are-messaging-extensions.md).
+С помощью приложений Teams вы можете сделать бот звездой вашего интерфейса или просто вспомогательным средством. Боты распространяются как часть более широкого пакета приложений, который может включать в себя другие возможности, такие как [вкладки](~/tabs/what-are-tabs.md) или [расширения для сообщений](~/messaging-extensions/what-are-messaging-extensions.md).
 
 ## <a name="bot-apis"></a>Интерфейсы API бота
 

@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: a9848ecf16dfb8ff4034dc26dd350ce71c8e656e
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 2d1889de8cc5c36cde708f4d4628f6f61768e3f4
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485645"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557878"
 ---
 # <a name="add-cloud-resources-to-teams-app"></a>Добавление облачных ресурсов в приложение Teams
 
@@ -44,7 +44,7 @@ TeamsFx помогает подготовить облачные ресурсы 
    1. Выберите **Набор средств Teams на** левой панели.
    1. Выберите **"Добавить компоненты"** в разделе **"РАЗРАБОТКА"**.
 
-        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/select-feature-updated.png" alt-text="добавление функции" border="true":::
+        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/select-feature-updated.png" alt-text="добавление функции":::
 
 * **Чтобы добавить облачные ресурсы с помощью палитры команд, выполните следующие действия.**
 
@@ -52,11 +52,11 @@ TeamsFx помогает подготовить облачные ресурсы 
    1. **Введите Teams:Add features. (Введите Teams:Add**
    1. Нажмите клавишу **ВВОД**.
 
-        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/Teams-add-features.png" alt-text="Облако" border="true":::
+        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/Teams-add-features.png" alt-text="Облако":::
 
    1. Во всплывающем окне выберите облачные ресурсы для добавления в проект.
 
-        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/updated-final-cloud.png" alt-text="Окончательный" border="true":::
+        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/updated-final-cloud.png" alt-text="Окончательный":::
 
 ## <a name="add-cloud-resources-using-teamsfx-cli"></a>Добавление облачных ресурсов с помощью Командной строки TeamsFx
 

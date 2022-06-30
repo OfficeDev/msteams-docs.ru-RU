@@ -5,12 +5,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
-ms.openlocfilehash: 5cc1d14122a7977170e3c4fa04aba782b0146af9
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 3b6d9ee830fcf1cb50e02138cf3b9b8ca952225f
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142229"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557885"
 ---
 # <a name="debug-your-teams-app-locally"></a>Отлаживайте приложения Teams локально
 
@@ -70,29 +70,29 @@ ms.locfileid: "66142229"
 
 1. Выберите **Отладку для Edge** или **Отладку для Chrome** в элементе **Выполнить и отладить** в панели действий.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/debug-run.png" alt-text="Параметр браузера" border="false":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/debug-run.png" alt-text="Параметр браузера":::
 
 1. Выберите **Начать отладку (F5)** или **Запустить**, чтобы запустить приложение Teams в режиме отладки.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/start-debugging.png" alt-text="Начать отладку" border="false":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/start-debugging.png" alt-text="Начать отладку":::
 
 3. Выберите **Войти** в учетную запись Microsoft 365.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/microsoft365-signin.png" alt-text="Вход" border="true":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/microsoft365-signin.png" alt-text="Вход":::
 
    > [!TIP]
    > Можете выбрать **Дополнительные сведения**, чтобы узнать больше о программе разработчиков Microsoft 365. Откроется веб-браузер по умолчанию, чтобы войти в учетную запись Microsoft 365 с вашими учетными данными.
 
 4. Выберите **Установить**, чтобы установить сертификат разработки для localhost.
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/install-certificate.png" alt-text="сертификат" border="true":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/install-certificate.png" alt-text="сертификат":::
 
    > [!TIP]
    > Чтобы узнать о сертификате разработки, выберите **Дополнительные сведения**.
 
 5. Выберите **Да**, если появится следующее диалоговое окно.
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/development-certificate.png" alt-text="Центр сертификации" border="true":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/development-certificate.png" alt-text="Центр сертификации":::
 
 Набор средств запустит новый экземпляр браузера Microsoft Edge или Chrome (на основе вашего выбора) и откроет веб-страницу для загрузки клиента Teams.  
 
@@ -100,29 +100,29 @@ ms.locfileid: "66142229"
 
 1. Выберите **Отладку для Edge** или **Отладку для Chrome** в элементе **Выполнить и отладить** в панели действий.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/debug-run.png" alt-text="Списки браузеров" border="false":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/debug-run.png" alt-text="Списки браузеров":::
 
 1. Выберите **Начать отладку (F5)** или **Запустить**, чтобы запустить приложение Teams в режиме отладки.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/start-debugging.png" alt-text="Отладка приложения" border="false":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/start-debugging.png" alt-text="Отладка приложения":::
 
 3. Выберите **Войти** в учетную запись Microsoft 365.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/microsoft365-signin.png" alt-text="Вход в учетную запись M365" border="true":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/microsoft365-signin.png" alt-text="Вход в учетную запись M365":::
 
    > [!TIP]
    > Можете выбрать **Дополнительные сведения**, чтобы узнать больше о программе разработчиков Microsoft 365. Откроется веб-браузер по умолчанию, чтобы войти в учетную запись Microsoft 365 с вашими учетными данными.
 
 4. Выберите **Установить**, чтобы установить сертификат разработки для localhost.
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/install-certificate.png" alt-text="сертификат" border="true":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/install-certificate.png" alt-text="сертификат":::
 
    > [!TIP]
    > Чтобы узнать о сертификате разработки, выберите **Дополнительные сведения**.
 
 5. Введите **Имя пользователя** и **Пароль**, а затем выберите **Обновить параметры** в следующем диалоговом окне:
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/mac-settings.png" alt-text="Вход в учетную запись mac" border="true":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/debug/mac-settings.png" alt-text="Вход в учетную запись mac":::
 
 Набор средств запустит новый экземпляр выбранного браузера (Edge или Chrome) и откроет веб-страницу для загрузки клиента Teams.
 
@@ -179,7 +179,7 @@ ms.locfileid: "66142229"
 
 Конфигурация **Присоединение к интерфейсу** или **Запуск бота** запускает новый экземпляр браузера Edge или Chrome и открывает веб-страницу для загрузки клиента Teams. Загрузив клиент, Teams загружает без публикации приложение Teams, управляемое соответствующим URL-адресом, заданным в конфигурации запуска [Microsoft Teams](https://teams.microsoft.com/l/app/>${localTeamsAppId}?installAppPackage=true&webjoin=true&${account-hint}). Когда клиент Teams загрузится в веб-браузере, выберите **Добавить** или другую нужную команду из раскрывающегося списка.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/hello-local-debug.png" alt-text="локальная отладка" border="true":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/hello-local-debug.png" alt-text="локальная отладка":::
 
    Ваше приложение добавлено в Teams!
 

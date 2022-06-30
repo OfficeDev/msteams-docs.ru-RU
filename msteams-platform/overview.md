@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: 2f7d22c75bda7eb9ed820ac463214ed08bdc8cca
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: f894262918004e643370963ad8e67ef3183927b8
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485329"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558431"
 ---
 # <a name="teams-app-that-fits"></a>Подходящее приложение Teams
 
@@ -27,7 +27,7 @@ Microsoft Teams предлагает коллекцию приложений, п
 
 Давайте рассмотрим некоторые области, в которых приложение помогает удовлетворить бизнес-потребности.
 
-:::image type="content" source="../msteams-platform/assets/images/overview/why-teams-apps.png" alt-text="Зачем создавать приложения Teams?" border="false":::
+:::image type="content" source="../msteams-platform/assets/images/overview/why-teams-apps.png" alt-text="Зачем создавать приложения Teams?":::
 
 | **Параметры разработки** | **Возможности для бизнеса** |
 | --- | --- |
@@ -53,7 +53,7 @@ Microsoft Teams предлагает коллекцию приложений, п
 
     Teams — это социальная платформа; настраиваемые приложения, ориентированные на социальные сети, позволяют команде привнести культуру компании в пространство для совместной работы. Используйте приложения для отправки опросов, позволяя людям обмениваться отзывами друг с другом, обеспечивая подключение и связь.
 
-    :::image type="content" source="../msteams-platform/assets/images/overview/teams-apps-social.png" alt-text="Приложение Teams для создания командной культуры" border="false":::
+    :::image type="content" source="../msteams-platform/assets/images/overview/teams-apps-social.png" alt-text="Приложение Teams для создания командной культуры":::
 
 - **Общие бизнес-процессы**
 
@@ -61,7 +61,7 @@ Microsoft Teams предлагает коллекцию приложений, п
 
     Помимо автоматизации повторяющихся рабочих процессов, вы можете использовать приложения для решения проблем со связью. Чат-бот — это простая замена электронных писем и телефонных звонков в ИТ-отдел или отдел кадров.
 
-    :::image type="content" source="../msteams-platform/assets/images/overview/teams-apps-bot.png" alt-text="Приложение Teams для внутреннего использования" border="false":::
+    :::image type="content" source="../msteams-platform/assets/images/overview/teams-apps-bot.png" alt-text="Приложение Teams для внутреннего использования":::
 
 - **Преимущество магазина Teams**
 
@@ -71,7 +71,7 @@ Microsoft Teams предлагает коллекцию приложений, п
 
     Если у вас уже есть веб-приложение, сайт SharePoint (или расширение SPFx), PowerApp или другое веб-приложение, возможно, имеет смысл добавить некоторые или все из них в Teams. Расширение существующих приложений и перенос интерактивных функций в Teams помогает расширить базу пользователей и увеличить вовлеченность пользователей в ваше приложение.
 
-    :::image type="content" source="../msteams-platform/assets/images/overview/teams-apps-sp.png" alt-text="Сайт SharePoint перенесен как вкладка Teams" border="false":::
+    :::image type="content" source="../msteams-platform/assets/images/overview/teams-apps-sp.png" alt-text="Сайт SharePoint перенесен как вкладка Teams":::
 
 - **Личные приложения с вкладками и ботами**
 

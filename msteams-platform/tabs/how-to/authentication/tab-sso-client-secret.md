@@ -3,13 +3,13 @@ title: Создание секрета клиента
 description: Описание создания секрета клиента
 ms.topic: how-to
 ms.localizationpriority: medium
-keywords: Вкладки проверки подлинности teams API Graph Microsoft Azure Active Directory (Azure AD)
-ms.openlocfilehash: 79116a0da845cd143de695424a904cf5b5968a15
-ms.sourcegitcommit: e16b51a49756e0fe4eaf239898e28d3021f552da
+keywords: вкладки проверки подлинности teams Microsoft Azure Active Directory (Azure AD) API Graph
+ms.openlocfilehash: 77d1c4e43c9bdfb9d2cb9e3e97ee3a26b8b0fa01
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65888306"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558851"
 ---
 # <a name="create-client-secret"></a>Создание секрета клиента
 
@@ -23,7 +23,7 @@ ms.locfileid: "65888306"
 
    **Появится страница "Добавление секрета** клиента".
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/add-client-secret.png" alt-text="Добавление страницы секрета клиента" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/add-client-secret.png" alt-text="Добавление страницы секрета клиента":::
 
 3. Введите описание.
 4. Выберите срок действия секрета.

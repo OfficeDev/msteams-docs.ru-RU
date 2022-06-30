@@ -5,12 +5,12 @@ description: Сведения о компонентах пользователь
 ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: 30d429bf927b3cb9422fc4f3ea238ce9eceae49e
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 055ee4440982add222b76454f1ff4382f129ff21
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485727"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558844"
 ---
 # <a name="designing-your-microsoft-teams-app-with-advanced-ui-components"></a>Проектирование приложения Microsoft Teams с помощью расширенных компонентов пользовательского интерфейса
 
@@ -32,13 +32,13 @@ ms.locfileid: "66485727"
 * Связывать иерархию
 * Навигация
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-breadcrumb.png" alt-text="В примере показан шаблон навигации на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-breadcrumb.png" alt-text="В примере показан шаблон навигации на мобильных устройствах.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/breadcrumb.png" alt-text="Пример шаблона навигации на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/breadcrumb.png" alt-text="Пример шаблона навигации на рабочем столе.":::
 
 ## <a name="left-nav"></a>Навигация по левому краю
 
@@ -49,13 +49,13 @@ ms.locfileid: "66485727"
 * Просмотр нескольких страниц на вкладке Teams.
 * Разбивайте сложные приложения на несколько страниц.
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-left-nav.png" alt-text="В примере показан левый шаблон навигации на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-left-nav.png" alt-text="В примере показан левый шаблон навигации на мобильных устройствах.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/left-nav.png" alt-text="В примере показан левый шаблон навигации на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/left-nav.png" alt-text="В примере показан левый шаблон навигации на рабочем столе.":::
 
 ## <a name="notification-bar"></a>Панель уведомлений
 
@@ -65,17 +65,17 @@ ms.locfileid: "66485727"
 
 ### <a name="top-use-cases"></a>Основные варианты использования
 
-* Критические сообщения, ошибки и предупреждения.
+* Критические сообщения, ошибки и предупреждения
 * Сообщения об успешном выполнении
 * Информационные или рекламные сообщения
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-notification-bar.png" alt-text="В примере показан шаблон пользовательского интерфейса панели уведомлений на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-notification-bar.png" alt-text="В примере показан шаблон пользовательского интерфейса панели уведомлений на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/notification-bar.png" alt-text="В примере показаны шаблоны пользовательского интерфейса панели уведомлений на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/notification-bar.png" alt-text="В примере показаны шаблоны пользовательского интерфейса панели уведомлений на рабочем столе.":::
 
 ## <a name="stage-view"></a>Представление "Экран"
 
@@ -85,18 +85,18 @@ ms.locfileid: "66485727"
 
 ### <a name="top-use-cases"></a>Основные варианты использования
 
-* Отображение содержимого в большой области в Teams вместо другого приложения или браузера.
+* Отображение содержимого в большой области в Teams вместо другого приложения или браузера
 * Интересное мультимедиа или другое полнофункциональный контент
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
 Приложение может запускать этап из адаптивной карточки, общей ссылки или визуальных компонентов (например, диаграммы).
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-stage.png" alt-text="В примере показан шаблон этапа на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-stage.png" alt-text="В примере показан шаблон этапа на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/stage.png" alt-text="В примере показан шаблон этапа на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/stage.png" alt-text="В примере показан шаблон этапа на рабочем столе.":::
 
 ## <a name="toolbar"></a>Панель инструментов
 
@@ -108,10 +108,10 @@ ms.locfileid: "66485727"
 * Контекстный фильтр и поиск.
 * Навигация и навигация.
 
-### <a name="mobile"></a>Мобильная версия
+### <a name="mobile"></a>Мобильные устройства
 
-:::image type="content" source="../../assets/images/ui-templates/mobile-toolbar.png" alt-text="В примере показан шаблон панели инструментов на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/mobile-toolbar.png" alt-text="В примере показан шаблон панели инструментов на мобильном устройстве.":::
 
-### <a name="desktop"></a>Версия для настольного компьютера
+### <a name="desktop"></a>Настольный компьютер
 
-:::image type="content" source="../../assets/images/ui-templates/toolbar.png" alt-text="Пример шаблона панели инструментов на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/ui-templates/toolbar.png" alt-text="Пример шаблона панели инструментов на рабочем столе.":::

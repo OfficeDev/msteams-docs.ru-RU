@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: afc856fb19a4dd17da85d0a721650abae3627fe4
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 8002b5ddf2fcb403978587819855468915813684
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144336"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558326"
 ---
 # <a name="design-your-tab-for-microsoft-teams"></a>Разработка вкладки для Microsoft Teams
 
@@ -35,13 +35,13 @@ ms.locfileid: "66144336"
 
 Пользователи могут получить доступ к вкладками, нажав кнопку **Дополнительно** в канале (пример ниже) или в чате, в который они были добавлены.
 
-:::image type="content" source="../../assets/images/tabs/mobile-design-access-tab.png" alt-text="В примере показана вкладка для мобильных устройств, добавляемая на канал." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-design-access-tab.png" alt-text="В примере показана вкладка для мобильных устройств, добавляемая на канал.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
 В следующем примере показано, как пользователи могут добавлять вкладки на канал.
 
-:::image type="content" source="../../assets/images/tabs/design-add-tab.png" alt-text="В примере показана вкладка, добавляемая на канал." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-add-tab.png" alt-text="В примере показана вкладка, добавляемая на канал.":::
 
 ## <a name="set-up-a-tab"></a>Настройка вкладки
 
@@ -49,11 +49,11 @@ ms.locfileid: "66144336"
 
 ### <a name="tab-configuration-dialog"></a>Диалоговое окно настройки вкладок
 
-:::image type="content" source="../../assets/images/tabs/design-set-up-tab-config.png" alt-text="В примере показан модальное окно конфигурации вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-set-up-tab-config.png" alt-text="В примере показан модальное окно конфигурации вкладок.":::
 
 #### <a name="anatomy-tab-configuration-dialog"></a>Анатомия: диалоговое окно конфигурации вкладок
 
-:::image type="content" source="../../assets/images/tabs/test.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модального окна конфигурации вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/test.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса модального окна конфигурации вкладок.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -70,7 +70,7 @@ ms.locfileid: "66144336"
 
 Вы можете добавить шаг, на котором пользователям будет необходимо сначала выполнить вход с учетными данными Майкрософт. Этот способ проверки подлинности называется единым входом (SSO).
 
-:::image type="content" source="../../assets/images/tabs/design-set-up-tab-auth.png" alt-text="В примере показан экран проверки подлинности вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-set-up-tab-auth.png" alt-text="В примере показан экран проверки подлинности вкладок.":::
 
 ### <a name="design-a-tab-setup-with-ui-templates"></a>Создание настройки вкладки с помощью шаблонов пользовательского интерфейса
 
@@ -86,17 +86,17 @@ ms.locfileid: "66144336"
 
 ### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/tabs/mobile-design-view-tab.png" alt-text="В примере показана вкладка для мобильных устройств с доской задач." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-design-view-tab.png" alt-text="В примере показана вкладка для мобильных устройств с доской задач.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/tabs/design-view-tab.png" alt-text="В примере показана вкладка с доской задач." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-view-tab.png" alt-text="В примере показана вкладка с доской задач.":::
 
 ### <a name="anatomy-tab"></a>Анатомия: вкладка
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/tabs/mobile-design-view-tab-anatomy.png" alt-text="Иллюстрация, показывающая анатомию вкладки." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-design-view-tab-anatomy.png" alt-text="Иллюстрация, показывающая анатомию вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -106,7 +106,7 @@ ms.locfileid: "66144336"
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/tabs/design-view-tab-anatomy.png" alt-text="Эта иллюстрация показывает анатомию пользовательского интерфейса вкладки." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-view-tab-anatomy.png" alt-text="Эта иллюстрация показывает анатомию пользовательского интерфейса вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -136,11 +136,11 @@ ms.locfileid: "66144336"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-channel.png" alt-text="В примере показана вкладка для мобильных устройств, обсуждаемая в цепочке канала." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-channel.png" alt-text="В примере показана вкладка для мобильных устройств, обсуждаемая в цепочке канала.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/tabs/design-use-tab-channel.png" alt-text="В примере показана вкладка,, обсуждаемая в цепочке канала." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-use-tab-channel.png" alt-text="В примере показана вкладка,, обсуждаемая в цепочке канала.":::
 
 ### <a name="tab-chat"></a>Чат вкладки
 
@@ -148,11 +148,11 @@ ms.locfileid: "66144336"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-side-chat.png" alt-text="В примере показана вкладка для мобильных устройств с областью чата в контексте." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-design-use-tab-side-chat.png" alt-text="В примере показана вкладка для мобильных устройств с областью чата в контексте.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/tabs/design-use-tab-side-chat.png" alt-text="В примере показана вкладка с открытым чатом справа." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-use-tab-side-chat.png" alt-text="В примере показана вкладка с открытым чатом справа.":::
 
 ### <a name="permissions-and-role-based-views"></a>Разрешения и представления на основе ролей
 
@@ -166,7 +166,7 @@ ms.locfileid: "66144336"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/tabs/mobile-design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса меню вкладок для мобильных устройств." border="false":::
+:::image type="content" source="../../assets/images/tabs/mobile-design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию пользовательского интерфейса меню вкладок для мобильных устройств.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -178,7 +178,7 @@ ms.locfileid: "66144336"
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/tabs/design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию меню вкладки." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-manage-tab-menu-anatomy.png" alt-text="Иллюстрация, показывающая анатомию меню вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -203,7 +203,7 @@ ms.locfileid: "66144336"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-collaboration-do.png" alt-text="Иллюстрация, показывающая, что делать с дизайном навигации по вкладкам." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-collaboration-do.png" alt-text="Иллюстрация, показывающая, что делать с дизайном навигации по вкладкам.":::
 
 #### <a name="do-facilitate-conversation"></a>Правильно: облегчить беседу
 
@@ -211,7 +211,7 @@ ms.locfileid: "66144336"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-collaboration-dont.png" alt-text="Пример, показывающий, что не нужно делать с дизайном навигации по вкладкам." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-collaboration-dont.png" alt-text="Пример, показывающий, что не нужно делать с дизайном навигации по вкладкам.":::
 
 #### <a name="dont-treat-your-tab-like-any-other-webpage"></a>Неправильно: относиться к вкладке как к любой другой веб-странице.
 
@@ -224,7 +224,7 @@ ms.locfileid: "66144336"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-nav-do.png" alt-text="Пример, показывающий, что делать с дизайном навигации по вкладкам." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-nav-do.png" alt-text="Пример, показывающий, что делать с дизайном навигации по вкладкам.":::
 
 #### <a name="do-limit-tasks-and-data"></a>Правильно: ограничение задач и данных
 
@@ -232,7 +232,7 @@ ms.locfileid: "66144336"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-nav-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с дизайном навигации по вкладкам." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-nav-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с дизайном навигации по вкладкам.":::
 
 #### <a name="dont-embed-your-entire-app"></a>Неправильно: встраивать все приложение целиком
 
@@ -245,7 +245,7 @@ ms.locfileid: "66144336"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-setup-do.png" alt-text="Иллюстрация, показывающая, что делать с дизайном настройки вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-setup-do.png" alt-text="Иллюстрация, показывающая, что делать с дизайном настройки вкладок.":::
 
 #### <a name="do-keep-it-simple"></a>Правильно: быть лаконичным
 
@@ -253,7 +253,7 @@ ms.locfileid: "66144336"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-setup-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с дизайном настройки вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-setup-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с дизайном настройки вкладок.":::
 
 #### <a name="dont-have-too-many-steps"></a>Неправильно: слишком много действий
 
@@ -266,7 +266,7 @@ ms.locfileid: "66144336"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-theming-do.png" alt-text="Иллюстрация, показывающая, что делать с темами вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-theming-do.png" alt-text="Иллюстрация, показывающая, что делать с темами вкладок.":::
 
 #### <a name="do-take-advantage-of-teams-color-tokens"></a>Нужно: использовать преимущества цветовых маркеров Teams
 
@@ -274,7 +274,7 @@ ms.locfileid: "66144336"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/tabs/design-tab-theming-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с темами вкладок." border="false":::
+:::image type="content" source="../../assets/images/tabs/design-tab-theming-dont.png" alt-text="Иллюстрация, показывающая, что не нужно делать с темами вкладок.":::
 
 #### <a name="dont-hard-code-color-values"></a>Неправильно: жестко задавать значения цветов прямо в коде
 

@@ -1,61 +1,61 @@
 ---
-title: Проектирование уведомлений каналов активности
+title: Проектирование уведомлений ленты новостей
 author: heath-hamilton
-description: 'Узнайте, как создать уведомления о канале активности для Teams приложения и получить Teams пользовательского интерфейса. Разработка уведомлений из Teams канала в Visual Studio C #'
+description: Узнайте, как спроектировать уведомления веб-канала действий для приложения Teams и получить комплект пользовательского интерфейса Teams. Разработка уведомлений из канала Teams в Visual Studio C#
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: reference
-ms.openlocfilehash: 06e6b0ed28208f9ce446a0fc037b7477a562c596
-ms.sourcegitcommit: a85b4ae65b87006bb2e2e50ea902eb97291e83a8
+ms.openlocfilehash: 923519965b5ae6debaf256032f9bc4cdaada2f6e
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64612624"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558011"
 ---
-# <a name="designing-activity-feed-notifications-for-your-microsoft-teams-app"></a>Разработка уведомлений о канале активности для Microsoft Teams приложения
+# <a name="designing-activity-feed-notifications-for-your-microsoft-teams-app"></a>Проектирование уведомлений веб-канала действий для приложения Microsoft Teams
 
-Канал действий — это поверхность для доступа пользователей к уведомлениям в Microsoft Teams. Канал сохраняет уведомления за последние четыре недели.
+Веб-канал действий — это область для доступа пользователей к уведомлениям в Microsoft Teams. Веб-канал сохраняет уведомления за последние четыре недели.
 
 # <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-:::image type="content" source="../../assets/images/activity-feed/mobile-overview.png" alt-text="В примере показано уведомление приложения, отображаемое в Teams канале активности на мобильном телефоне." border="false":::
+:::image type="content" source="../../assets/images/activity-feed/mobile-overview.png" alt-text="В примере показано уведомление приложения, отображаемое в веб-канале действий Teams на мобильных устройствах.":::
 
 # <a name="desktop"></a>[Компьютер](#tab/desktop)
 
-:::image type="content" source="../../assets/images/activity-feed/desktop-overview.png" alt-text="В примере отображается уведомление приложения, отображаемая в Teams канале действий." border="false":::
+:::image type="content" source="../../assets/images/activity-feed/desktop-overview.png" alt-text="В примере показано уведомление приложения, отображаемое в веб-канале действий Teams.":::
 
 ---
 
-## <a name="anatomy"></a>Структура
+## <a name="anatomy"></a>Анатомия
 
-:::image type="content" source="../../assets/images/activity-feed/activity-feed-card-anatomy.png" alt-text="Разработка анатомии уведомления Teams канала действий." border="false":::
+:::image type="content" source="../../assets/images/activity-feed/activity-feed-card-anatomy.png" alt-text="Структура структуры уведомления веб-канала действий Teams.":::
 
 |Счетчик|Описание|
 |----------|-----------|
 |1|**Аватар**: показывает, кто инициировал действие.|
-|2|**Значок типа действия и приложения**: описывает тип действия. Для уведомлений приложения значок строки заменяется значком приложения.|
-|3|**Название (первая строка): Actor + reason**: *Actor*: Name of the user or app that initiated the activity. *Причина*. Описывает действие.|
-|4|**Timestamp**. Показывает, когда произошло действие.|
-|5|**Расположение (вторая строка)**: показывает, где происходило действие в Teams.|
-|6 |**Предварительный просмотр текста (третья строка)**: показывает усеченную строку с начала уведомления.|
+|2|**Тип действия или значок приложения**: отображает тип действия. Для уведомлений приложения значок строки заменяется значком приложения.|
+|3|**Заголовок (первая строка): Actor + reason**: *Actor: Name* of the user or app that initiated the activity. *Причина*. Описывает действие.|
+|4|**Метка времени**: показывает, когда произошло действие.|
+|5|**Расположение (вторая строка)**: показывает, где произошло действие в Teams.|
+|6 |**Предварительный просмотр текста (третья строка)**: отображает усеченную строку с начала уведомления.|
 
-## <a name="types-of-activity-feed-notification-cards"></a>Типы карт уведомлений о канале активности
+## <a name="types-of-activity-feed-notification-cards"></a>Типы карт уведомлений веб-канала действий
 
-В следующих вариантах отображаются типы карт уведомлений о канале активности. Логотип приложения заменяет аватар пользователя для уведомлений, созданных приложениями.
+В следующих вариантах показаны типы карт уведомлений веб-канала действий, которые можно отобразить. Логотип приложения заменяет аватар пользователя для уведомлений, созданных приложением.
 
-:::image type="content" source="../../assets/images/activity-feed/activity-feed-card-types.png" alt-text="Варианты Teams ленты действий." border="false":::
+:::image type="content" source="../../assets/images/activity-feed/activity-feed-card-types.png" alt-text="Варианты карточек веб-каналов действий Teams.":::
 
-## <a name="manage-activity-feed-notifications"></a>Управление уведомлениями о канале действий
+## <a name="manage-activity-feed-notifications"></a>Управление уведомлениями веб-канала действий
 
-Пользователи могут управлять уведомлениями, отправленные из приложения на Teams параметров.
+Пользователи могут управлять уведомлениями, отправленными из вашего приложения, на странице параметров Teams.
 
 ## <a name="related-system-notifications"></a>Связанные системные уведомления
 
-Каждое действие создает системные уведомления. Отображаемые данные зависят от настройки пользователя в параметрах уведомлений. Пользователи также могут выбрать стиль уведомлений на основе своей операционной системы.
+Каждое действие создает системное уведомление. Отображаемые данные зависят от настроек пользователя в параметрах уведомлений. Пользователи также могут выбрать стиль уведомлений в зависимости от операционной системы.
 
 # <a name="mobile"></a>[Мобильные устройства](#tab/mobile)
 
-:::image type="content" source="../../assets/images/activity-feed/mobile-related-system-notifications.png" alt-text="Варианты Teams на Android и iOS." border="false":::
+:::image type="content" source="../../assets/images/activity-feed/mobile-related-system-notifications.png" alt-text="Варианты карточек веб-каналов действий Teams в Android и iOS.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -64,17 +64,17 @@ ms.locfileid: "64612624"
 
 # <a name="desktop"></a>[Компьютер](#tab/desktop)
 
-:::image type="content" source="../../assets/images/activity-feed/related-system-notifications.png" alt-text="Варианты Teams на разных операционных системах." border="false":::
+:::image type="content" source="../../assets/images/activity-feed/related-system-notifications.png" alt-text="Варианты карт действий Teams в разных операционных системах.":::
 
 |Счетчик|Описание|
 |----------|-----------|
-|1|Teams настраиваемый|
+|1|Настраиваемое приложение Teams|
 |2|Windows|
 |3|Mac|
 
 ---
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
-> [Реализация уведомлений о канале действий](/graph/teams-send-activityfeednotifications)
+> [Реализация уведомлений веб-канала действий](/graph/teams-send-activityfeednotifications)

@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 45c19a5d7089fae85326e303641a8c9a281c7eb0
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: ac1b53cadcaab6b9ab82bdf62a3f4735a7abe2ad
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503741"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558123"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -25,67 +25,67 @@ ms.locfileid: "66503741"
 
 :::row:::
    :::column:::
-      :::image type="content" source="../../../../assets/icons/value-proposition.png" alt-text="value-proposition-teams" link="#value-proposition" border="false":::
+      :::image type="content" source="../../../../assets/icons/value-proposition.png" alt-text="value-proposition-teams" link="#value-proposition":::
    :::column-end:::
    :::column span="":::
-     :::image type="content" source="../../../../assets/icons/security.png" alt-text="security-store" link="#security" border="false":::
+     :::image type="content" source="../../../../assets/icons/security.png" alt-text="security-store" link="#security":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/function.png" alt-text="functionality" link="#general-functionality-and-performance" border="false":::
+      :::image type="content" source="../../../../assets/icons/function.png" alt-text="functionality" link="#general-functionality-and-performance":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/package.png" alt-text="app-package" link="#app-package-and-store-listing" border="false":::
+      :::image type="content" source="../../../../assets/icons/package.png" alt-text="app-package" link="#app-package-and-store-listing":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/saas-offer.PNG" alt-text="saas" link="#apps-linked-to-saas-offer" border="false":::
+      :::image type="content" source="../../../../assets/icons/saas-offer.PNG" alt-text="saas" link="#apps-linked-to-saas-offer":::
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/tab.png" alt-text="tab-teams" link="#tabs" border="false":::
+      :::image type="content" source="../../../../assets/icons/tab.png" alt-text="tab-teams" link="#tabs":::
    :::column-end:::
    :::column:::
-      :::image type="content" source="../../../../assets/icons/bot.png" alt-text="bot-teams" link="#bots-1" border="false":::
+      :::image type="content" source="../../../../assets/icons/bot.png" alt-text="bot-teams" link="#bots-1":::
    :::column-end:::
    :::column span="":::
-     :::image type="content" source="../../../../assets/icons/messaging-extension.png" alt-text="messaging" link="#message-extensions" border="false":::
+     :::image type="content" source="../../../../assets/icons/messaging-extension.png" alt-text="messaging" link="#message-extensions":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/task-module.png" alt-text="task-module-teams" link="#task-modules" border="false":::
+      :::image type="content" source="../../../../assets/icons/task-module.png" alt-text="task-module-teams" link="#task-modules":::
    :::column-end:::
      :::column span="":::
-      :::image type="content" source="../../../../assets/icons/meeting.png" alt-text="meeting-extension" link="#meeting-extensions" border="false":::
+      :::image type="content" source="../../../../assets/icons/meeting.png" alt-text="meeting-extension" link="#meeting-extensions":::
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/empty.png" alt-text="empty-2" border="false":::
+      :::image type="content" source="../../../../assets/icons/empty.png" alt-text="empty-2":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/notifications.png" alt-text="teams-notification" link="#notifications" border="false":::
+      :::image type="content" source="../../../../assets/icons/notifications.png" alt-text="teams-notification" link="#notifications":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/microsoft-365.png" alt-text="microsoft" link="#microsoft-365-app-compliance-program" border="false":::
+      :::image type="content" source="../../../../assets/icons/microsoft-365.png" alt-text="microsoft" link="#microsoft-365-app-compliance-program":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/advertising.png" alt-text="advertising-teams" link="#advertising" border="false":::
+      :::image type="content" source="../../../../assets/icons/advertising.png" alt-text="advertising-teams" link="#advertising":::
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="../../../../assets/icons/empty.png" alt-text="empty-1" border="false":::
+      :::image type="content" source="../../../../assets/icons/empty.png" alt-text="empty-1":::
    :::column-end:::
 :::row-end:::
 
 ## <a name="value-proposition"></a>Предлагаемые преимущества
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1](/legal/marketplace/certification-policies#11401-value-proposition-and-offer-requirements) и содержит дополнительные правила для разработчиков приложений Microsoft Teams по преимуществам их предложения.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1](/legal/marketplace/certification-policies#11401-value-proposition-and-offer-requirements) и содержит дополнительные правила для разработчиков приложений Microsoft Teams по преимуществам их предложения.
 
 ### <a name="app-name"></a>Название приложения
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1.1](/legal/marketplace/certification-policies#114011-app-name) и содержит дополнительные правила для разработчиков по именованию приложений.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1.1](/legal/marketplace/certification-policies#114011-app-name) и содержит дополнительные правила для разработчиков по именованию приложений.
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -119,7 +119,7 @@ ms.locfileid: "66503741"
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует политике коммерческой сертификации Майкрософт №[1140.1.2](/legal/marketplace/certification-policies#114012-workplace-appropriateness), [100.8](/legal/marketplace/certification-policies#1008-significant-value) и [100.10](/legal/marketplace/certification-policies#10010-inappropriate-content), а также содержит дополнительные правила для разработчиков по созданию приложений, подходящих для рабочих пространств.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует политике коммерческой сертификации Майкрософт №[1140.1.2](/legal/marketplace/certification-policies#114012-workplace-appropriateness), [100.8](/legal/marketplace/certification-policies#1008-significant-value) и [100.10](/legal/marketplace/certification-policies#10010-inappropriate-content), а также содержит дополнительные правила для разработчиков по созданию приложений, подходящих для рабочих пространств.
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -133,7 +133,7 @@ ms.locfileid: "66503741"
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1.3](/legal/marketplace/certification-policies#114013-other-platforms-and-services).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1.3](/legal/marketplace/certification-policies#114013-other-platforms-and-services).
 
 Приложения должны быть ориентированы на интерфейс Teams и не должны включать названия, значки или изображения из других аналогичных платформ или служб, созданных на базе чатов, в контенте или метаданных приложения за исключением случаев, когда приложение обеспечивает специфические функции взаимодействия.
 
@@ -145,7 +145,7 @@ ms.locfileid: "66503741"
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1.4](/legal/marketplace/certification-policies#114014-access-to-services) и содержит дополнительные правила для разработчиков по проверке подлинности их приложений во внешних службах.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.1.4](/legal/marketplace/certification-policies#114014-access-to-services) и содержит дополнительные правила для разработчиков по проверке подлинности их приложений во внешних службах.
 
 Дополнительные сведения о реализации проверки подлинности приложений см. в разделе [Проверка подлинности в Teams](~/concepts/authentication/authentication.md).
 <br></br>
@@ -169,13 +169,13 @@ ms.locfileid: "66503741"
 
 ## <a name="security"></a>Безопасность
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.3](/legal/marketplace/certification-policies#11403-security).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.3](/legal/marketplace/certification-policies#11403-security).
 
 ### <a name="financial-information"></a>Финансовые сведения
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.3.1](/legal/marketplace/certification-policies#114031-financial-transactions) и содержит правила по передаче финансовой информации в интерфейсе Teams, а также сообщает разработчикам об ограничениях сценариев оплаты в мобильной (Android и iOS) версии приложения Teams.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой сертификации Майкрософт №1140.3.1](/legal/marketplace/certification-policies#114031-financial-transactions) и содержит правила по передаче финансовой информации в интерфейсе Teams, а также сообщает разработчикам об ограничениях сценариев оплаты в мобильной (Android и iOS) версии приложения Teams.
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -205,7 +205,7 @@ ms.locfileid: "66503741"
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.3.2](/legal/marketplace/certification-policies#114032-bots-and-messaging-extension).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.3.2](/legal/marketplace/certification-policies#114032-bots-and-messaging-extension).
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -221,7 +221,7 @@ ms.locfileid: "66503741"
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.3.3](/legal/marketplace/certification-policies#114033-external-domains) и содержит правила для разработчиков по использованию запрещенных доменов в свойстве манифеста `validDomains`.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.3.3](/legal/marketplace/certification-policies#114033-external-domains) и содержит правила для разработчиков по использованию запрещенных доменов в свойстве манифеста `validDomains`.
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -246,7 +246,7 @@ ms.locfileid: "66503741"
 
 ## <a name="general-functionality-and-performance"></a>Общие функциональные возможности и производительность
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4](/legal/marketplace/certification-policies#11404-functionality).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4](/legal/marketplace/certification-policies#11404-functionality).
 
 ### <a name="launching-external-functionality"></a>Запуск внешних функций
 
@@ -486,7 +486,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="apps-linked-to-saas-offer"></a>Приложения, связанные с предложением SaaS
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.5](/legal/marketplace/certification-policies?branch=pr-en-us-5673). Если вы создаете приложение Teams, связанное с предложением SaaS, убедитесь, что оно соответствует этим правилам.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.5](/legal/marketplace/certification-policies?branch=pr-en-us-5673). Если вы создаете приложение Teams, связанное с предложением SaaS, убедитесь, что оно соответствует этим правилам.
 <br></br>
 <details><summary>Общие указания</summary>
 
@@ -545,7 +545,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="tabs"></a>Вкладки
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.2](/legal/marketplace/certification-policies#114042-tabs).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.2](/legal/marketplace/certification-policies#114042-tabs).
 Если приложение содержит вкладку, убедитесь, что она соответствует этим правилам.
 > [!TIP]
 > Дополнительные сведения о создании высококачественного интерфейса приложения см. в [правилах разработки вкладок Teams](~/tabs/design/tabs.md).
@@ -696,7 +696,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="bots"></a>Боты
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.3](/legal/marketplace/certification-policies#114043-bots).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.3](/legal/marketplace/certification-policies#114043-bots).
 
 Если приложение содержит бота, убедитесь, что он соответствует этим правилам.
 
@@ -824,7 +824,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="message-extensions"></a>Расширения для сообщений
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.4](/legal/marketplace/certification-policies#114044-messaging-extensions).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.4](/legal/marketplace/certification-policies#114044-messaging-extensions).
 
 Если в вашем приложении есть расширение для сообщений, убедитесь, что оно соответствует этим правилам.
 
@@ -902,7 +902,7 @@ URL-адреса службы поддержки должны включать �
 
 [*Обязательное исправление*]
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.5](/legal/marketplace/certification-policies#114045-task-modules).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.5](/legal/marketplace/certification-policies#114045-task-modules).
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -921,7 +921,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="meeting-extensions"></a>Расширения для собраний
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.6](/legal/marketplace/certification-policies#114046-meeting-extensions).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.6](/legal/marketplace/certification-policies#114046-meeting-extensions).
 > [!TIP]
 > Дополнительные сведения о создании высококачественного интерфейса приложения см. в [правилах разработки расширений для собраний Teams](~/apps-in-teams-meetings/design/designing-apps-in-meetings.md).
 
@@ -1008,7 +1008,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="notifications"></a>Уведомления
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.7](/legal/marketplace/certification-policies#114047-notification-apis).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.4.7](/legal/marketplace/certification-policies#114047-notification-apis).
 
 Если в вашем приложении используются [API-интерфейсы ленты новостей от Microsoft Graph](/graph/teams-send-activityfeednotifications), убедитесь, что оно соответствует следующим правилам.
 <br></br>
@@ -1044,7 +1044,7 @@ URL-адреса службы поддержки должны включать �
 
 ## <a name="microsoft-365-app-compliance-program"></a>Программа соответствия приложений Microsoft 365 требованиям
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.6](/legal/marketplace/certification-policies#11406-publisher-attestation).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.6](/legal/marketplace/certification-policies#11406-publisher-attestation).
 <br></br>
 <details><summary>Разверните, чтобы узнать больше</summary>
 
@@ -1056,13 +1056,13 @@ URL-адреса службы поддержки должны включать �
 
 * **Аттестация издателя**: процесс, в ходе которого вы делитесь общими сведениями, сведениями об обработке данных, безопасности и соответствии нормативным требованиям, чтобы помочь потенциальным клиентам принять обоснованное решение об использовании вашего приложения.
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Если вы отправляете в магазин приложение, которого не было там ранее, вы не можете официально пройти аттестацию издателя, пока ваше приложение не появится в магазине Teams. Если вы обновляете уже отправленное в магазин приложение, пройдите аттестацию издателя перед отправкой последней версии приложения.
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Если вы отправляете в магазин приложение, которого не было там ранее, вы не можете официально пройти аттестацию издателя, пока ваше приложение не появится в магазине Teams. Если вы обновляете уже отправленное в магазин приложение, пройдите аттестацию издателя перед отправкой последней версии приложения.
 
 </details>
 
 ## <a name="advertising"></a>Реклама
 
-:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png" border="false"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.7](/legal/marketplace/certification-policies#11407-advertising).
+:::image type="icon" source="../../../../assets/icons/certificate-icon-16.png"::: Этот раздел соответствует [политике коммерческой платформы Майкрософт №1140.7](/legal/marketplace/certification-policies#11407-advertising).
 
 Приложения не должны отображать рекламу, в том числе динамическую, баннерную и рекламу в сообщениях.
 

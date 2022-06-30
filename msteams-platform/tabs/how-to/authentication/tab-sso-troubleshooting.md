@@ -4,12 +4,12 @@ description: Устранение неполадок с проверкой по�
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: Вкладки проверки подлинности teams Microsoft Azure Active Directory (Azure AD) вопросы об ошибках единого входа
-ms.openlocfilehash: d738c992b008028456dc9318b2a0720178f6f66f
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 93365732ee284cd8cb903f7535d2770d0154d417
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503727"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558424"
 ---
 # <a name="troubleshoot-sso-authentication-in-teams"></a>Устранение неполадок проверки подлинности единого входа в Teams
 
@@ -101,7 +101,7 @@ ms.locfileid: "66503727"
 
 На следующем рисунке показан пример сведений о приложении, настроенных в Azure AD.
 
-:::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/azure-app-details.png" alt-text="Значения конфигурации приложения в Azure AD" border="false":::
+:::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/azure-app-details.png" alt-text="Значения конфигурации приложения в Azure AD":::
 
 Убедитесь, что следующие значения совпадают между Azure AD, клиентским кодом и манифестом приложения Teams:
 

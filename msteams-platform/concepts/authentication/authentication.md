@@ -1,22 +1,22 @@
 ---
 title: Проверка подлинности пользователей приложения
-description: В этом модуле вы узнаете, как Teams в приложениях, веб-потоке проверки подлинности и потоке OAuthPrompt для чат-ботов.
+description: В этом модуле вы узнаете о проверке подлинности в Teams и о том, как использовать ее в приложениях, потоке проверки подлинности на основе интернета и потоке OAuthPrompt для чат-ботов.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ea8813d8428036521cc4488668a30d82470a8d0
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 5b5a083d0bd52a2c9233adaf6164821042236f85
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143468"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557871"
 ---
 # <a name="authenticate-users-in-microsoft-teams"></a>Проверка подлинности пользователей в Microsoft Teams
 
-Проверка подлинности — это проверка пользователей приложения и защита пользователей приложений от несанкционированного доступа. Вы можете использовать метод проверки подлинности, подходящий для вашего приложения, для проверки пользователей приложения, которые хотят использовать Teams приложения.
+Проверка подлинности — это проверка пользователей приложения и защита пользователей приложений от несанкционированного доступа. Вы можете использовать метод проверки подлинности, подходящий для приложения, для проверки пользователей приложения, которые хотят использовать приложение Teams.
 
 Выберите добавление проверки подлинности для приложения одним из двух способов:
 
-- Включение единого входа **(SSO)** в приложении Teams: единый вход в Teams — это метод проверки подлинности, который использует удостоверение пользователя приложения Teams для предоставления ему доступа к приложению. Пользователю, выполнившего вход Teams, не нужно повторно вошел в приложение в Teams среде. Если пользователю приложения требуется только согласие, Teams получает сведения о доступе к ним из Azure Active Directory (AD). После того как пользователь приложения предоставил согласие, он может получить доступ к приложению даже с других устройств без повторной проверки.
+- **Включение единого входа (SSO)** в приложении Teams. Единый вход в Teams — это метод проверки подлинности, который использует удостоверение пользователя приложения Teams для предоставления ему доступа к приложению. Пользователю, выполнившего вход в Teams, не нужно повторно вошел в приложение в среде Teams. Если пользователю приложения требуется только согласие, приложение Teams получает сведения о доступе к ним из Azure Active Directory (AD). После того как пользователь приложения предоставил согласие, он может получить доступ к приложению даже с других устройств без повторной проверки.
 
 - **Включение проверки** подлинности с помощью стороннего поставщика OAuth. Вы можете использовать сторонний поставщик удостоверений OAuth (IdP) для проверки подлинности пользователей приложения. Пользователь приложения зарегистрирован в поставщике удостоверений, который имеет отношение доверия с вашим приложением. Когда пользователь пытается войти в систему, поставщик удостоверений проверяет пользователя приложения и предоставляет ему доступ к приложению. Azure AD является одним из таких сторонних поставщиков OAuth. Вы можете использовать другие поставщики, такие как Google, Facebook, GitHub или любой другой поставщик.
 
@@ -37,7 +37,7 @@ ms.locfileid: "66143468"
 :::row-end:::
 :::row:::
     :::column span="1":::
-        :::image type="content" source="../../assets/images/authentication/tab-sso-icon.png" alt-text="Единый вход для приложения табуляции" link="../../tabs/how-to/authentication/tab-sso-overview.md" border="false":::
+        :::image type="content" source="../../assets/images/authentication/tab-sso-icon.png" alt-text="Единый вход для приложения табуляции" link="../../tabs/how-to/authentication/tab-sso-overview.md":::
     :::column-end:::
     :::column span="1":::
         <br>
@@ -46,12 +46,12 @@ ms.locfileid: "66143468"
         
     :::column-end:::
     :::column span="1":::
-        :::image type="content" source="../../assets/images/authentication/tab-app-idp.png" alt-text="Проверка подлинности с помощью стороннего поставщика OAuth для приложения табуляции." link="../../tabs/how-to/authentication/auth-tab-aad.md" border="false":::
+        :::image type="content" source="../../assets/images/authentication/tab-app-idp.png" alt-text="Проверка подлинности с помощью стороннего поставщика OAuth для приложения табуляции." link="../../tabs/how-to/authentication/auth-tab-aad.md":::
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
-        :::image type="content" source="../../assets/images/authentication/bot-sso-icon.png" alt-text="Единый вход для приложения-бота" link="../../bots/how-to/authentication/auth-aad-sso-bots.md" border="false":::
+        :::image type="content" source="../../assets/images/authentication/bot-sso-icon.png" alt-text="Единый вход для приложения-бота" link="../../bots/how-to/authentication/auth-aad-sso-bots.md":::
     :::column-end:::
     :::column span="1":::
         <br>
@@ -60,12 +60,12 @@ ms.locfileid: "66143468"
         
     :::column-end:::
     :::column span="1":::
-        :::image type="content" source="../../assets/images/authentication/bot-app-idp.png" alt-text="Проверка подлинности с помощью стороннего поставщика OAuth для приложения-бота." link="../../bots/how-to/authentication/add-authentication.md" border="false":::
+        :::image type="content" source="../../assets/images/authentication/bot-app-idp.png" alt-text="Проверка подлинности с помощью стороннего поставщика OAuth для приложения-бота." link="../../bots/how-to/authentication/add-authentication.md":::
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
-        :::image type="content" source="../../assets/images/authentication/mex-sso-icon.png" alt-text="Единый вход для приложения расширения для обмена сообщениями" link="../../messaging-extensions/how-to/enable-SSO-auth-me.md" border="false":::
+        :::image type="content" source="../../assets/images/authentication/mex-sso-icon.png" alt-text="Единый вход для приложения расширения для обмена сообщениями" link="../../messaging-extensions/how-to/enable-SSO-auth-me.md":::
     :::column-end:::
     :::column span="1":::
         <br>
@@ -74,7 +74,7 @@ ms.locfileid: "66143468"
         
     :::column-end:::
     :::column span="1":::
-        :::image type="content" source="../../assets/images/authentication/mex-app-idp.png" alt-text="Проверка подлинности с помощью сторонних поставщиков удостоверений oAuth для приложения расширения для обмена сообщениями." link="../../messaging-extensions/how-to/add-authentication.md" border="false":::
+        :::image type="content" source="../../assets/images/authentication/mex-app-idp.png" alt-text="Проверка подлинности с помощью сторонних поставщиков удостоверений oAuth для приложения расширения для обмена сообщениями." link="../../messaging-extensions/how-to/add-authentication.md":::
     :::column-end:::
 :::row-end:::
 

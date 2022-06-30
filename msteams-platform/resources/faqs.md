@@ -4,12 +4,12 @@ description: В этой статье вы можете получить отв�
 ms.topic: Frequently asked questions on Moodle LMS
 ms.localizationpriority: high
 ms.author: Surbhigupta
-ms.openlocfilehash: 45323bf169be059f96cedb797c29d9408f3564e6
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: c617b3db7982e192db6cde9375be751e2cf2bf26
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143104"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558298"
 ---
 # <a name="moodle-faq"></a>Вопросы и ответы о Moodle
 
@@ -53,9 +53,9 @@ ms.locfileid: "66143104"
 
 На следующем изображении показаны параметры ограничений на создание пользователей.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-2.png" alt-text="синхронизация" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-2.png" alt-text="синхронизация":::
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-3.png" alt-text="Azure AD" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-3.png" alt-text="Azure AD":::
 
 <br>
 
@@ -71,11 +71,11 @@ ms.locfileid: "66143104"
 
 На следующем изображении показан параметр **Разрешить настройку синхронизации курса**.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-4.png" alt-text="администратор" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-4.png" alt-text="администратор":::
 
 На следующем изображении показана синхронизация курсов.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-5.png" alt-text="синхронизация" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-5.png" alt-text="синхронизация":::
 
 <br>
 
@@ -123,11 +123,11 @@ ms.locfileid: "66143104"
 
 На следующем изображении показано сообщение об ошибке, полученное при входе пользователя с помощью учетных данных Microsoft 365.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-6.png" alt-text="сообщение о проблеме" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-6.png" alt-text="сообщение о проблеме":::
 
 На следующем изображении показана ошибка на портале Azure.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-7.png" alt-text="Портал Azure" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-7.png" alt-text="Портал Azure":::
 
 Если срок действия **секрета клиента** истек, пользователю необходимо создать новый **секрет клиента** и обновить конфигурацию, найденную на странице. Пользователи могут снова войти после обновления **секрета клиента**, повторная подготовка которого может занять до 24 часов.
 
@@ -143,7 +143,7 @@ ms.locfileid: "66143104"
 
 На изображении ниже показан экземпляр Teams.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-8.png" alt-text="экземпляр Teams" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-8.png" alt-text="экземпляр Teams":::
 
 <br>
 
@@ -160,7 +160,7 @@ ms.locfileid: "66143104"
 
 На следующих изображениях показан значок панели инструментов после изменения конфигурации панели инструментов.
 
-:::image type="content" source="../assets/images/MoodleInstructions/faq-9.png" alt-text="панель инструментов" border="true":::
+:::image type="content" source="../assets/images/MoodleInstructions/faq-9.png" alt-text="панель инструментов":::
 
 :::image type="content" source="../assets/images/MoodleInstructions/faq-10.png" alt-text="значок ссылок":::
 

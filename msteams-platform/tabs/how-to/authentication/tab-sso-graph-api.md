@@ -4,12 +4,12 @@ description: Сведения о настройке разрешений API с 
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: Вкладки проверки подлинности teams Microsoft Azure Active Directory (Azure AD) API Graph области маркера делегированного доступа к разрешениям
-ms.openlocfilehash: 020148e8510e7e9b2ad14b893ccb8531f3a83402
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 474d02c5b5f90e58bfc57f72ab6ce095a0323b62
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485295"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558256"
 ---
 # <a name="extend-tab-app-with-microsoft-graph-permissions-and-scope"></a>Расширение приложения табуляции с помощью разрешений и области Microsoft Graph
 
@@ -33,39 +33,39 @@ ms.locfileid: "66485295"
 
 2. Выберите **разрешение "** > **Управление API"** на левой панели.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/api-permission-menu.png" alt-text="Пункт меню разрешений приложения." border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/api-permission-menu.png" alt-text="Пункт меню разрешений приложения.":::
 
     **Появится страница разрешений API**.
 
 3. Выберите **"+ Добавить разрешения"**, чтобы добавить API Graph Майкрософт.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/app-permission.png" alt-text="Страница разрешений приложения." border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/app-permission.png" alt-text="Страница разрешений приложения.":::
 
     **Появится страница разрешений API запросов**.
 
 4. Выберите **Microsoft Graph**.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/request-api-permission.png" alt-text="Страница &quot;Запрос разрешений API&quot;." border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/request-api-permission.png" alt-text="Страница &quot;Запрос разрешений API&quot;.":::
 
     Отображаются параметры разрешений Graph.
 
 5. Выберите **"Делегированные разрешения** ", чтобы просмотреть список разрешений.
 
-   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/delegated-permission.png" alt-text="Делегированные разрешения." border="true":::
+   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/delegated-permission.png" alt-text="Делегированные разрешения.":::
 
 6. Выберите соответствующие разрешения для приложения, а затем нажмите кнопку **"Добавить разрешения"**.
 
-   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/select-permission.png" alt-text="Выберите разрешения." border="true":::
+   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/select-permission.png" alt-text="Выберите разрешения.":::
 
     Вы также можете ввести имя разрешения в поле поиска, чтобы найти его.
 
     В браузере отображается сообщение об обновлении разрешений.
 
-   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/updated-permission-msg.png" alt-text="Обновленное сообщение о разрешениях." border="false":::
+   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/updated-permission-msg.png" alt-text="Обновленное сообщение о разрешениях.":::
 
     Добавленные разрешения отображаются на странице **разрешений API** .
 
-   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/configured-permissions.png" alt-text="Настроены разрешения API." border="true":::
+   :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/configured-permissions.png" alt-text="Настроены разрешения API.":::
 
     Вы настроите приложение с разрешениями Microsoft Graph.
 
@@ -86,19 +86,19 @@ ms.locfileid: "66485295"
 
 1. Выберите **"Управление** > **проверкой подлинности** " на левой панели.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/azure-portal-platform.png" alt-text="Проверка подлинности для платформ" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/azure-portal-platform.png" alt-text="Проверка подлинности для платформ":::
 
     **Появится страница "Конфигурации платформы**".
 
 1. Выберите **+Добавить платформу**.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/add-platform.png" alt-text="Добавление платформ" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/add-platform.png" alt-text="Добавление платформ":::
 
     **Появится страница "Настройка платформ**".
 
 1. Выберите платформу, которую вы хотите настроить для приложения вкладки. Вы можете выбрать тип платформы в Интернете или SPA.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/configure-platform.png" alt-text="Выбор веб-платформы" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/configure-platform.png" alt-text="Выбор веб-платформы":::
 
     Можно настроить несколько платформ для определенного типа платформы. Убедитесь, что URI перенаправления уникален для каждой настраиваемой платформы.
 
@@ -109,7 +109,7 @@ ms.locfileid: "66485295"
 
 1. Введите сведения о конфигурации платформы.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/config-web-platform.png" alt-text="Настройка веб-платформы" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/config-web-platform.png" alt-text="Настройка веб-платформы":::
 
     1. Введите URI перенаправления. Универсальный код ресурса (URI) должен быть уникальным.
     2. Введите URL-адрес выхода из внешнего канала.

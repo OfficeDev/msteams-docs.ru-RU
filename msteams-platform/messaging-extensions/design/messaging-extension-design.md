@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.localizationpriority: high
 ms.author: surbhigupta
 ms.topic: conceptual
-ms.openlocfilehash: f7da87ecbacbf5632b0aea9ec8aa5142443acace
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 2d3d31a0e59be22eb4f84bbdeb70897f4d584b83
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123950"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558753"
 ---
 # <a name="designing-your-microsoft-teams-message-extension"></a>Разработка расширения Microsoft Teams для обмена сообщениями
 
@@ -35,11 +35,11 @@ ms.locfileid: "66123950"
 
 ### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-add-in-channel.png" alt-text="В примере показано, как добавить расширение для обмена сообщениями рядом с полем создания сообщения в канале на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-add-in-channel.png" alt-text="В примере показано, как добавить расширение для обмена сообщениями рядом с полем создания сообщения в канале на мобильном устройстве.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/add-in-channel.png" alt-text="В примере показано, как добавить расширение для обмена сообщениями рядом с полем создания сообщения в канале." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/add-in-channel.png" alt-text="В примере показано, как добавить расширение для обмена сообщениями рядом с полем создания сообщения в канале.":::
 
 ## <a name="set-up-a-message-extension"></a>Настройка расширения для обмена сообщениями
 
@@ -49,11 +49,11 @@ ms.locfileid: "66123950"
 
 ### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-set-up.png" alt-text="В примере показан экран настройки расширения для обмена сообщениями с кнопкой входа на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-set-up.png" alt-text="В примере показан экран настройки расширения для обмена сообщениями с кнопкой входа на мобильном устройстве.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/set-up.png" alt-text="В примере показан экран настройки расширения для обмена сообщениями с кнопкой входа." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/set-up.png" alt-text="В примере показан экран настройки расширения для обмена сообщениями с кнопкой входа.":::
 
 ## <a name="types-of-message-extensions"></a>Типы расширений для обмена сообщениями
 
@@ -65,17 +65,17 @@ ms.locfileid: "66123950"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-search-command-type.png" alt-text="В примере показано расширение для обмена сообщениями с поиском, открытое из окна создания сообщения на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-search-command-type.png" alt-text="В примере показано расширение для обмена сообщениями с поиском, открытое из окна создания сообщения на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/search-command-type.png" alt-text="В примере показано расширение для обмена сообщениями с поиском, открытое из поля создания сообщения." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/search-command-type.png" alt-text="В примере показано расширение для обмена сообщениями с поиском, открытое из поля создания сообщения.":::
 
 #### <a name="compose-box-layout-options"></a>Параметры компоновки поля создания сообщения
 
 Существует несколько вариантов отображения результатов поиска в расширении для обмена сообщениями, включая [представление в виде списка и сетки](../../messaging-extensions/how-to/search-commands/respond-to-search.md#respond-to-user-requests).
 
-:::image type="content" source="../../assets/images/messaging-extension/search-result-layout.png" alt-text="Иллюстрации вариантов макета для результатов поиска в расширении для обмена сообщениями" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/search-result-layout.png" alt-text="Иллюстрации вариантов макета для результатов поиска в расширении для обмена сообщениями":::
 
 ### <a name="action-commands"></a>Команды действий
 
@@ -93,11 +93,11 @@ ms.locfileid: "66123950"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из поля ввода на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из поля ввода на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из поля ввода" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/open-from-compose-box.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из поля ввода":::
 
 ### <a name="from-a-chat-message-or-channel-post"></a>Из сообщения чата или публикации канала
 
@@ -105,11 +105,11 @@ ms.locfileid: "66123950"
 
 #### <a name="chat-message"></a>Сообщение чата
 
-:::image type="content" source="../../assets/images/messaging-extension/open-from-chat-message.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из сообщения чата." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/open-from-chat-message.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из сообщения чата.":::
 
 #### <a name="channel-post"></a>Публикация в канале
 
-:::image type="content" source="../../assets/images/messaging-extension/open-from-channel-post.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из сообщения канала на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/open-from-channel-post.png" alt-text="В примере показано, как открыть расширение для обмена сообщениями из сообщения канала на мобильном устройстве.":::
 
 ## <a name="use-a-message-extension"></a>Использование расширения для обмена сообщениями
 
@@ -121,31 +121,31 @@ ms.locfileid: "66123950"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения.":::
 
 **2. Вставьте содержимое**. После публикации другие смогут ответить или выбрать контент, чтобы увидеть больше информации в вашем приложении.
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/insert-content-posted.png" alt-text="В примере показан пользователь, публикующий контент в беседе в канале.":::
 
 ### <a name="take-action-on-a-message"></a>Действия с сообщениями
 
 **1. Выберите расширение для обмена сообщениями**. Ваше приложение может включать одну или несколько команд действий.
 
-:::image type="content" source="../../assets/images/messaging-extension/select-action-command.png" alt-text="В примере показано, как пользователь выбирает команду действия расширения для обмена сообщениями." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/select-action-command.png" alt-text="В примере показано, как пользователь выбирает команду действия расширения для обмена сообщениями.":::
 
 **2. Закончите действие**. Ваше приложение может получать и обрабатывать любой контент или данные, отправленные действием сообщения. Пользователи заканчивают действие в вашем приложении, оставаясь в беседе.
 
-:::image type="content" source="../../assets/images/messaging-extension/complete-action-command.png" alt-text="Пример действия с сообщением." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/complete-action-command.png" alt-text="Пример действия с сообщением.":::
 
 ### <a name="preview-links"></a>Предварительный просмотр ссылок
 
@@ -155,21 +155,21 @@ ms.locfileid: "66123950"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения на мобильном устройстве" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/mobile-paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения на мобильном устройстве":::.
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения":::.
 
 **2. Вставьте содержимое**. Если ваше приложение распознает URL-адрес в поле ввода сообщения, оно отображает ссылку в виде карточки, которая обеспечивает предварительный просмотр веб-контента с объемным содержимым. (Подробнее см. в [руководстве по дизайну адаптивных карточек](../../task-modules-and-cards/cards/design-effective-cards.md).)
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента на мобильном устройстве" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/mobile-insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента на мобильном устройстве":::.
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/insert-preview-link.png" alt-text="В примере показано, как URL-адрес, распознанный приложением, включает в поле создания сообщения часть контента":::.
 
 ## <a name="manage-a-message-extension"></a>Управление расширением для обмена сообщениями
 
@@ -183,7 +183,7 @@ ms.locfileid: "66123950"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/messaging-extension/mobile-anatomy-compose.png" alt-text="Иллюстрация структуры пользовательского интерфейса расширения для обмена сообщениями в поле ввода сообщения на мобильном устройстве" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/mobile-anatomy-compose.png" alt-text="Иллюстрация структуры пользовательского интерфейса расширения для обмена сообщениями в поле ввода сообщения на мобильном устройстве":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -196,7 +196,7 @@ ms.locfileid: "66123950"
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/messaging-extension/anatomy-compose.png" alt-text="Иллюстрация структуры пользовательского интерфейса расширения для обмена сообщениями в поле ввода сообщения." border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/anatomy-compose.png" alt-text="Иллюстрация структуры пользовательского интерфейса расширения для обмена сообщениями в поле ввода сообщения.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -211,7 +211,7 @@ ms.locfileid: "66123950"
 
 ### <a name="message-extension-management-menu"></a>Меню управления расширениями для обмена сообщениями
 
-:::image type="content" source="../../assets/images/messaging-extension/anatomy-management-menu.png" alt-text="Иллюстрация структуры пользовательского интерфейса меню расширения для обмена сообщениями" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/anatomy-management-menu.png" alt-text="Иллюстрация структуры пользовательского интерфейса меню расширения для обмена сообщениями":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -226,7 +226,7 @@ ms.locfileid: "66123950"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/setup-do.png" alt-text="Пример настройки и общего использования" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/setup-do.png" alt-text="Пример настройки и общего использования":::.
 
 #### <a name="do-integrate-with-single-sign-on"></a>Нужно: интегрироваться с единым входом
 
@@ -234,7 +234,7 @@ ms.locfileid: "66123950"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/setup-dont.png" alt-text="Пример интеграции с единым входом" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/setup-dont.png" alt-text="Пример интеграции с единым входом":::.
 
 #### <a name="dont-take-users-away-from-the-conversation"></a>Нельзя: заставлять пользователей выходить из беседы
 
@@ -251,7 +251,7 @@ ms.locfileid: "66123950"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/templating-do.png" alt-text="Пример шаблона" border="false":::.
+:::image type="content" source="../../assets/images/messaging-extension/templating-do.png" alt-text="Пример шаблона":::.
 
 #### <a name="do-let-teams-handle-some-of-the-design-work-if-possible"></a>Нужно: по возможности перекладывать работу на Teams
 
@@ -259,7 +259,7 @@ ms.locfileid: "66123950"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/templating-dont.png" alt-text="Пример подхода к проектированию" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/templating-dont.png" alt-text="Пример подхода к проектированию":::
 
 #### <a name="dont-embed-your-entire-app-in-a-task-module"></a>Нельзя: встраивать все приложение целиком в модуль задач
 
@@ -272,7 +272,7 @@ ms.locfileid: "66123950"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/theming-do.png" alt-text="Пример визуальной темы" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/theming-do.png" alt-text="Пример визуальной темы":::
 
 #### <a name="do-take-advantage-of-teams-color-tokens"></a>Нужно: использовать преимущества цветовых маркеров Teams
 
@@ -280,7 +280,7 @@ ms.locfileid: "66123950"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/theming-dont.png" alt-text="Пример использования цветовых маркеров" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/theming-dont.png" alt-text="Пример использования цветовых маркеров":::
 
 #### <a name="dont-hard-code-color-values"></a>Нельзя: жестко задавать значения цветов прямо в коде
 
@@ -293,7 +293,7 @@ ms.locfileid: "66123950"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/action-commands-do.png" alt-text="Пример работы с действиями" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/action-commands-do.png" alt-text="Пример работы с действиями":::
 
 #### <a name="do-include-action-commands-that-make-sense-in-context"></a>Нужно: реализовать команды действий, имеющие смысл в данном контексте
 
@@ -301,7 +301,7 @@ ms.locfileid: "66123950"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/messaging-extension/action-commands-dont.png" alt-text="Пример работы с командами действий" border="false":::
+:::image type="content" source="../../assets/images/messaging-extension/action-commands-dont.png" alt-text="Пример работы с командами действий":::
 
 #### <a name="dont-include-actions-commands-that-arent-contextual"></a>Нельзя: создавать команды действий, которые никак не связаны с контекстом.
 

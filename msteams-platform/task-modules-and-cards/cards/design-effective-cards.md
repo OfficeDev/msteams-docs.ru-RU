@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: f734f228575c3152d4f9498da6a7215cd1a98b8b
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 1f4f458d1ebdae103c6114b8c833c0e1afc2c0b1
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142663"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558158"
 ---
 # <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a>Разработка адаптивных карточек для приложения Microsoft Teams
 
@@ -17,7 +17,7 @@ ms.locfileid: "66142663"
 
 Инфраструктура адаптивных карточек используется во многих продуктах Майкрософт, включая Teams. Вы можете отправлять карточки внутри сообщений пользователям с помощью ботов или расширений для сообщений. Кроме того, пользователи могут выполнять действия в карточках при их просмотре.
 
-:::image type="content" source="../../assets/images/adaptive-cards/adaptive-card-overview.png" alt-text="Обзор примера адаптивной карточки." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/adaptive-card-overview.png" alt-text="Обзор примера адаптивной карточки.":::
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
@@ -41,11 +41,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-hero-card.png" alt-text="Пример адаптивной карточки главного имиджевого баннера на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-hero-card.png" alt-text="Пример адаптивной карточки главного имиджевого баннера на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/hero-card.png" alt-text="Пример адаптивной карточки главного имиджевого баннера." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/hero-card.png" alt-text="Пример адаптивной карточки главного имиджевого баннера.":::
 
 ### <a name="thumbnail"></a>Эскиз
 
@@ -53,11 +53,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-thumbnail-card.png" alt-text="Пример адаптивной карточки эскиза на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-thumbnail-card.png" alt-text="Пример адаптивной карточки эскиза на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/thumbnail-card.png" alt-text="Пример адаптивной карточки эскиза." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/thumbnail-card.png" alt-text="Пример адаптивной карточки эскиза.":::
 
 ### <a name="list"></a>Список
 
@@ -65,11 +65,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-list-card.png" alt-text="Пример адаптивной карточки списка на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-list-card.png" alt-text="Пример адаптивной карточки списка на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/list-card.png" alt-text="Пример адаптивной карточки списка." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/list-card.png" alt-text="Пример адаптивной карточки списка.":::
 
 ### <a name="digest"></a>Дайджест
 
@@ -77,11 +77,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-digest-card.png" alt-text="Пример адаптивной карточки дайджеста на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-digest-card.png" alt-text="Пример адаптивной карточки дайджеста на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="Пример адаптивной карточки дайджеста." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/digest-card.png" alt-text="Пример адаптивной карточки дайджеста.":::
 
 ### <a name="media"></a>Мультимедиа
 
@@ -89,11 +89,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-media-card.png" alt-text="Пример адаптивной карточки мультимедиа на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-media-card.png" alt-text="Пример адаптивной карточки мультимедиа на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/media-card.png" alt-text="Пример адаптивной карточки мультимедиа." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/media-card.png" alt-text="Пример адаптивной карточки мультимедиа.":::
 
 ### <a name="people"></a>Люди
 
@@ -101,11 +101,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-people-card.png" alt-text="Пример адаптивной карточки людей на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-people-card.png" alt-text="Пример адаптивной карточки людей на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/people-card.png" alt-text="Пример адаптивной карточки людей." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/people-card.png" alt-text="Пример адаптивной карточки людей.":::
 
 ### <a name="request-ticket"></a>Запрос
 
@@ -113,11 +113,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-request-ticket-card.png" alt-text="Пример адаптивной карточки запроса на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-request-ticket-card.png" alt-text="Пример адаптивной карточки запроса на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/request-ticket-card.png" alt-text="Пример адаптивной карточки запроса." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/request-ticket-card.png" alt-text="Пример адаптивной карточки запроса.":::
 
 ### <a name="imageset"></a>ImageSet
 
@@ -125,11 +125,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-image-set-card.png" alt-text="Пример адаптивной карточки набора изображений на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-image-set-card.png" alt-text="Пример адаптивной карточки набора изображений на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/image-set-card.png" alt-text="Пример адаптивной карточки набора изображений." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/image-set-card.png" alt-text="Пример адаптивной карточки набора изображений.":::
 
 ### <a name="actionset"></a>ActionSet
 
@@ -137,11 +137,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-action-set-card.png" alt-text="Пример адаптивной карточки набора действий на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-action-set-card.png" alt-text="Пример адаптивной карточки набора действий на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/action-set-card.png" alt-text="Пример адаптивной карточки набора действий." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/action-set-card.png" alt-text="Пример адаптивной карточки набора действий.":::
 
 ### <a name="choiceset"></a>ChoiceSet
 
@@ -149,11 +149,11 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-choice-set-card.png" alt-text="Пример адаптивной карточки набора вариантов на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-choice-set-card.png" alt-text="Пример адаптивной карточки набора вариантов на мобильном устройстве.":::
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/choice-set-card.png" alt-text="Пример адаптивной карточки набора вариантов." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/choice-set-card.png" alt-text="Пример адаптивной карточки набора вариантов.":::
 
 ## <a name="anatomy"></a>Структура
 
@@ -161,7 +161,7 @@ ms.locfileid: "66142663"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/adaptive-cards/mobile-anatomy.png" alt-text="Пример адаптивной карточки структуры на мобильном устройстве." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/mobile-anatomy.png" alt-text="Пример адаптивной карточки структуры на мобильном устройстве.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -171,7 +171,7 @@ ms.locfileid: "66142663"
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/adaptive-cards/anatomy.png" alt-text="Пример адаптивной карточки структуры." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/anatomy.png" alt-text="Пример адаптивной карточки структуры.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -655,7 +655,7 @@ ms.locfileid: "66142663"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/adaptive-cards/actions-do.png" alt-text="Рекомендация о включении в адаптивную карточку только небольшого набора действий." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/actions-do.png" alt-text="Рекомендация о включении в адаптивную карточку только небольшого набора действий.":::
 
 #### <a name="do-use-up-to-six-primary-actions"></a>Рекомендуется: используйте до шести основных действий
 
@@ -663,7 +663,7 @@ ms.locfileid: "66142663"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/adaptive-cards/actions-dont.png" alt-text="Рекомендация о том, как не перегружать пользователей слишком большим количеством действий на адаптивной карточке." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/actions-dont.png" alt-text="Рекомендация о том, как не перегружать пользователей слишком большим количеством действий на адаптивной карточке.":::
 
 #### <a name="dont-use-more-than-six-primary-actions"></a>Не рекомендуется: используйте более шести основных действий
 
@@ -674,7 +674,7 @@ ms.locfileid: "66142663"
 
 ### <a name="frequency"></a>Частота
 
-:::image type="content" source="../../assets/images/adaptive-cards/frequency-do.png" alt-text="Рекомендация по частоте использования адаптивной карточки." border="false":::
+:::image type="content" source="../../assets/images/adaptive-cards/frequency-do.png" alt-text="Рекомендация по частоте использования адаптивной карточки.":::
 
 #### <a name="do-be-concise"></a>Рекомендуется: будьте краткими
 

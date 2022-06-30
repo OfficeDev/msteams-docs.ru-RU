@@ -4,12 +4,12 @@ description: Описание манифеста обновления для в�
 ms.topic: how-to
 ms.localizationpriority: medium
 keywords: вкладки проверки подлинности teams Microsoft Azure Active Directory (Azure AD) API Graph
-ms.openlocfilehash: 437c16763e918430e91fe543c2dbc62d95452c5c
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 90a1ac781ef521f4b236bdf26f50d44533fa815a
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503482"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558739"
 ---
 # <a name="update-manifest-for-sso-and-preview-app"></a>Обновление манифеста для единого входа и приложения предварительной версии
 
@@ -24,7 +24,7 @@ ms.locfileid: "66503482"
 
 Настройте свойство `webApplicationInfo` в файле манифеста приложения Teams. Это свойство позволяет приложению использовать единый вход, чтобы пользователи приложения могли легко получать доступ к приложению вкладки.
 
-&nbsp;&nbsp;:::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/sso-manifest.png" alt-text="Конфигурация манифеста приложения Teams" border="false":::
+&nbsp;&nbsp;:::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/sso-manifest.png" alt-text="Конфигурация манифеста приложения Teams":::
 
 `webApplicationInfo` имеет два элемента и `id` `resource`.
 
@@ -138,7 +138,7 @@ ms.locfileid: "66503482"
 
 Вы настроите приложение вкладки, чтобы включить единый вход в Azure AD, в коде приложения и в файле манифеста Teams. Теперь вы можете загрузить неопубликованную вкладку в Teams и просмотреть его в среде Teams.
 
-:::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/sso-flow.png" alt-text="Приложение единого входа" border="false":::
+:::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/sso-flow.png" alt-text="Приложение единого входа":::
 
 Чтобы просмотреть приложение вкладки в Teams:
 
@@ -160,17 +160,17 @@ ms.locfileid: "66503482"
 
 1. Нажмите **Продолжить**.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/teams-sso-consent.png" alt-text="Диалоговое окно Teams с уведомлением о необходимых дополнительных разрешениях" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/teams-sso-consent.png" alt-text="Диалоговое окно Teams с уведомлением о необходимых дополнительных разрешениях":::
 
     Появится Azure AD согласия.
 
 1. Выберите **"Принять** ", чтобы предоставить согласие для областей с открытым идентификатором.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/aad-sso-consent.png" alt-text="Azure AD согласия" border="true":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/aad-sso-consent.png" alt-text="Azure AD согласия":::
 
     Teams открывает приложение вкладки, и вы можете использовать его.
 
-    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/teams-sso-app.png" alt-text="Пример приложения вкладки Teams с включенным единым входом" border="false":::
+    :::image type="content" source="../../../assets/images/authentication/teams-sso-tabs/teams-sso-app.png" alt-text="Пример приложения вкладки Teams с включенным единым входом":::
 
     Поздравляем! Вы включили единый вход для приложения вкладки.
 

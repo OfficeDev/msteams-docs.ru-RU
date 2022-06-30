@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: b9696b4e41393595edc6a0bdb5d81a74bdf8c699
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: e64504839a5d2f7ccb9e8aa372d6dadadbc90c3b
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503650"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558578"
 ---
 # <a name="create-a-channel-tab"></a>Создание вкладки канала
 
@@ -173,11 +173,11 @@ gulp build
 
 1. В браузере ведите `http://localhost:3007/<yourDefaultAppNameTab>/` для просмотра домашней страницы приложения.
 
-    :::image type="content" source="~/assets/images/tab-images/homePage.png" alt-text="Вкладка по умолчанию" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/homePage.png" alt-text="Вкладка по умолчанию":::
 
 1. Чтобы просмотреть страницу конфигурации вкладки, перейдите в `http://localhost:3007/<yourDefaultAppNameTab>/config.html`. Показано следующее:
 
-    :::image type="content" source="~/assets/images/tab-images/configurationPage.png" alt-text="Страница конфигурации вкладки" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/configurationPage.png" alt-text="Страница конфигурации вкладки":::
 
 ### <a name="establish-a-secure-tunnel-to-your-tab"></a>Установите безопасный туннель к вашей вкладке
 
@@ -196,7 +196,7 @@ gulp ngrok-serve
 1. Выберите **Управление приложениями** и **Загрузить пользовательское приложение**.
 1. Перейдите в каталог проекта, в папку **./package** выберите папку zip пакета приложения и нажмите **Открыть**.
 
-    :::image type="content" source="~/assets/images/tab-images/channeltabadded.png" alt-text="Загруженная вкладка канала" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/channeltabadded.png" alt-text="Загруженная вкладка канала":::
 
 1. В диалоговом окне выберите **Добавить**. Вкладка загружена в Teams.
 
@@ -213,7 +213,7 @@ gulp ngrok-serve
 1. Следуйте указаниям для добавления вкладки. Для вкладки канала или группы есть диалоговое окно настраиваемой конфигурации.
 1. Выберите **Сохранить** и вкладка будет добавлена на панель вкладок канала.
 
-    :::image type="content" source="~/assets/images/tab-images/channeltabuploaded.png" alt-text="Вкладка канала загружена" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/channeltabuploaded.png" alt-text="Вкладка канала загружена":::
 
     Вы успешно создали и добавили вкладку канала или группы в Teams.
 
@@ -433,7 +433,7 @@ ngrok http 3978 --host-header=localhost
 
 1. Выберите **Добавить в команду**, чтобы настроить вкладку в команде. Настройте вкладку и выберите **Сохранить**. Теперь вкладка доступна в Teams.
 
-    :::image type="content" source="~/assets/images/tab-images/channeltabaspnetuploaded.png" alt-text="Загруженная вкладка канала ASPNET" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/channeltabaspnetuploaded.png" alt-text="Загруженная вкладка канала ASPNET":::
 
     Вы успешно создали и добавили вкладку канала или группы в Teams.
 
@@ -651,7 +651,7 @@ ngrok http 3978 --host-header=localhost
 
 1. Выберите **Добавить в команду**, чтобы настроить вкладку в команде. Настройте вкладку и выберите **Сохранить**. Теперь вкладка доступна в Teams.
 
-    :::image type="content" source="~/assets/images/tab-images/channeltabaspnetuploaded.png" alt-text="Загруженная вкладка канала ASPNET MVC" border="true":::
+    :::image type="content" source="~/assets/images/tab-images/channeltabaspnetuploaded.png" alt-text="Загруженная вкладка канала ASPNET MVC":::
 
     Вы успешно создали и добавили вкладку канала или группы в Teams.
 

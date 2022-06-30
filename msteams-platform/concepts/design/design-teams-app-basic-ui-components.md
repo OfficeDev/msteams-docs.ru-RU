@@ -1,139 +1,139 @@
 ---
-title: Разработка приложения с помощью базовых Fluent пользовательского интерфейса
+title: Проектирование приложения с помощью основных компонентов пользовательского интерфейса Fluent
 author: heath-hamilton
-description: Сведения о компонентах пользовательского интерфейса, используемых для Microsoft Teams приложений и получения Teams пользовательского интерфейса. Сведения о раскрывающемся списке карусели карусели для карточки навигации для текучих наборов навигации
+description: Сведения о компонентах пользовательского интерфейса, используемых для создания приложений Microsoft Teams и получения комплекта пользовательского интерфейса Teams. Сведения о раскрывающемся списке карусели карусели для карточки навигации для текучих наборов навигации
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: 1c83eea2a16234d869ee031f1a1856d26ba48a25
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 4f3295036315819413f262e5a224dd2231eb431d
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142418"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557759"
 ---
-# <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Проектирование Microsoft Teams с помощью базовых компонентов Fluent пользовательского интерфейса
+# <a name="designing-your-microsoft-teams-app-with-basic-fluent-ui-components"></a>Проектирование приложения Microsoft Teams с помощью базовых компонентов пользовательского интерфейса Fluent
 
-Вы можете создать приложение Teams с нуля, используя следующие основные компоненты Fluent пользовательского интерфейса. Разработанные как можно более плоские, эти компоненты могут работать в разных вариантах использования, темах и размерах экрана.
+Вы можете создать приложение Teams с нуля, используя следующие основные компоненты пользовательского интерфейса Fluent. Разработанные как можно более плоские, эти компоненты могут работать в разных вариантах использования, темах и размерах экрана.
 
-На рисунках на этой странице показано, как компоненты выглядят Teams по умолчанию (светлые) и темные темы.
+На иллюстрациях на этой странице показано, как выглядят компоненты в Teams по умолчанию (светлые) и темные темы.
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">Fluent</a> пользовательского интерфейса набор Microsoft Teams включает компоненты и шаблоны, предназначенные специально для создания Teams приложений. В комплекте пользовательского интерфейса можно захватывать и вставлять перечисленные здесь компоненты непосредственно в макет и просматривать дополнительные примеры использования каждого компонента.
+На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">пользовательского интерфейса Fluent</a> комплект пользовательского интерфейса Microsoft Teams включает компоненты и шаблоны, разработанные специально для создания приложений Teams. В комплекте пользовательского интерфейса можно захватывать и вставлять перечисленные здесь компоненты непосредственно в макет и просматривать дополнительные примеры использования каждого компонента.
 
 > [!div class="nextstepaction"]
-> [Получите Microsoft Teams пользовательского интерфейса (Figma).](https://www.figma.com/community/file/916836509871353159)
+> [Получите комплект пользовательского интерфейса Microsoft Teams (Figma).](https://www.figma.com/community/file/916836509871353159)
 
 ## <a name="alert"></a>Оповещение
 
-:::image type="content" source="../../assets/images/components/alert-button.png" alt-text="В примере показан компонент пользовательского интерфейса оповещения." border="false":::
+:::image type="content" source="../../assets/images/components/alert-button.png" alt-text="В примере показан компонент пользовательского интерфейса оповещения.":::
 
 ## <a name="button"></a>Кнопка
 
-:::image type="content" source="../../assets/images/components/button.png" alt-text="В примере показан компонент пользовательского интерфейса кнопки." border="false":::
+:::image type="content" source="../../assets/images/components/button.png" alt-text="В примере показан компонент пользовательского интерфейса кнопки.":::
 
 ## <a name="breadcrumb"></a>Breadcrumb
 
-:::image type="content" source="../../assets/images/components/breadcrumb.png" alt-text="В примере показан компонент пользовательского интерфейса навигации." border="false":::
+:::image type="content" source="../../assets/images/components/breadcrumb.png" alt-text="В примере показан компонент пользовательского интерфейса навигации.":::
 
 ## <a name="card"></a>Карте
 
-:::image type="content" source="../../assets/images/components/card.png" alt-text="В примере показан компонент пользовательского интерфейса карточки." border="false":::
+:::image type="content" source="../../assets/images/components/card.png" alt-text="В примере показан компонент пользовательского интерфейса карточки.":::
 
 ## <a name="carousel"></a>Карусель
 
-:::image type="content" source="../../assets/images/components/carousel.png" alt-text="В примере показан компонент пользовательского интерфейса карусели." border="false":::
+:::image type="content" source="../../assets/images/components/carousel.png" alt-text="В примере показан компонент пользовательского интерфейса карусели.":::
 
 ## <a name="checkbox"></a>Флажок
 
-:::image type="content" source="../../assets/images/components/checkbox.png" alt-text="В примере показан компонент пользовательского интерфейса флажка." border="false":::
+:::image type="content" source="../../assets/images/components/checkbox.png" alt-text="В примере показан компонент пользовательского интерфейса флажка.":::
 
 ## <a name="coachmark"></a>Метка "Кувей"
 
-:::image type="content" source="../../assets/images/components/coachmark.png" alt-text="В примере показан компонент пользовательского интерфейса coachmark." border="false":::
+:::image type="content" source="../../assets/images/components/coachmark.png" alt-text="В примере показан компонент пользовательского интерфейса coachmark.":::
 
 ## <a name="contextual-menu"></a>Контекстное меню
 
-:::image type="content" source="../../assets/images/components/contextual-menu.png" alt-text="В примере показан компонент пользовательского интерфейса контекстного меню." border="false":::
+:::image type="content" source="../../assets/images/components/contextual-menu.png" alt-text="В примере показан компонент пользовательского интерфейса контекстного меню.":::
 
 ## <a name="dialog"></a>Диалоговое окно
 
-:::image type="content" source="../../assets/images/components/dialog.png" alt-text="В примере показан компонент пользовательского интерфейса диалогового окна." border="false":::
+:::image type="content" source="../../assets/images/components/dialog.png" alt-text="В примере показан компонент пользовательского интерфейса диалогового окна.":::
 
-## <a name="dropdown"></a>Dropdown
+## <a name="dropdown"></a>Раскрывающийся список
 
-:::image type="content" source="../../assets/images/components/dropdown.png" alt-text="В примере показан раскрывающийся компонент пользовательского интерфейса." border="false":::
+:::image type="content" source="../../assets/images/components/dropdown.png" alt-text="В примере показан раскрывающийся компонент пользовательского интерфейса.":::
 
 ## <a name="group-list"></a>Список групп
 
-:::image type="content" source="../../assets/images/components/group-list.png" alt-text="В примере показан компонент пользовательского интерфейса списка групп." border="false":::
+:::image type="content" source="../../assets/images/components/group-list.png" alt-text="В примере показан компонент пользовательского интерфейса списка групп.":::
 
 ## <a name="hyperlink"></a>Hyperlink
 
-:::image type="content" source="../../assets/images/components/hyperlink.png" alt-text="В примере показан компонент пользовательского интерфейса гиперссылки." border="false":::
+:::image type="content" source="../../assets/images/components/hyperlink.png" alt-text="В примере показан компонент пользовательского интерфейса гиперссылки.":::
 
 ## <a name="input"></a>Input
 
-:::image type="content" source="../../assets/images/components/input.png" alt-text="В примере показан компонент пользовательского интерфейса ввода." border="false":::
+:::image type="content" source="../../assets/images/components/input.png" alt-text="В примере показан компонент пользовательского интерфейса ввода.":::
 
 ## <a name="key-value-pair"></a>Пара "ключ-значение"
 
-:::image type="content" source="../../assets/images/components/key-value-pair.png" alt-text="В примере показан компонент пользовательского интерфейса пары &quot;ключ-значение&quot;." border="false":::
+:::image type="content" source="../../assets/images/components/key-value-pair.png" alt-text="В примере показан компонент пользовательского интерфейса пары &quot;ключ-значение&quot;.":::
 
 ## <a name="paragraph"></a>Paragraph
 
-:::image type="content" source="../../assets/images/components/paragraph.png" alt-text="В примере показан компонент пользовательского интерфейса абзаца." border="false":::
+:::image type="content" source="../../assets/images/components/paragraph.png" alt-text="В примере показан компонент пользовательского интерфейса абзаца.":::
 
 ## <a name="picker"></a>Выбора
 
-:::image type="content" source="../../assets/images/components/picker.png" alt-text="В примере показан компонент пользовательского интерфейса средства выбора." border="false":::
+:::image type="content" source="../../assets/images/components/picker.png" alt-text="В примере показан компонент пользовательского интерфейса средства выбора.":::
 
 ## <a name="pivot"></a>Pivot
 
-:::image type="content" source="../../assets/images/components/pivot.png" alt-text="В примере показан компонент пользовательского интерфейса сводной таблицы." border="false":::
+:::image type="content" source="../../assets/images/components/pivot.png" alt-text="В примере показан компонент пользовательского интерфейса сводной таблицы.":::
 
 ## <a name="progress-indicator"></a>Индикатор хода выполнения
 
-:::image type="content" source="../../assets/images/components/progress-indicator.png" alt-text="В примере показан компонент пользовательского интерфейса индикатора выполнения." border="false":::
+:::image type="content" source="../../assets/images/components/progress-indicator.png" alt-text="В примере показан компонент пользовательского интерфейса индикатора выполнения.":::
 
 ## <a name="radio"></a>Радио
 
-:::image type="content" source="../../assets/images/components/radio.png" alt-text="В примере показан компонент радиочастотного пользовательского интерфейса." border="false":::
+:::image type="content" source="../../assets/images/components/radio.png" alt-text="В примере показан компонент радиочастотного пользовательского интерфейса.":::
 
 ## <a name="scrollbar"></a>Scrollbar
 
-:::image type="content" source="../../assets/images/components/scrollbar.png" alt-text="В примере показан компонент пользовательского интерфейса полосы прокрутки." border="false":::
+:::image type="content" source="../../assets/images/components/scrollbar.png" alt-text="В примере показан компонент пользовательского интерфейса полосы прокрутки.":::
 
 ## <a name="search-box"></a>Поле поиска
 
-:::image type="content" source="../../assets/images/components/searchbox.png" alt-text="В примере показан компонент пользовательского интерфейса поля поиска." border="false":::
+:::image type="content" source="../../assets/images/components/searchbox.png" alt-text="В примере показан компонент пользовательского интерфейса поля поиска.":::
 
 ## <a name="side-panel"></a>Боковая панель
 
-:::image type="content" source="../../assets/images/components/side-panel.png" alt-text="В примере показан компонент пользовательского интерфейса боковой панели." border="false":::
+:::image type="content" source="../../assets/images/components/side-panel.png" alt-text="В примере показан компонент пользовательского интерфейса боковой панели.":::
 
 ## <a name="status-label"></a>Метка состояния
 
-:::image type="content" source="../../assets/images/components/status-label.png" alt-text="В примере показан компонент пользовательского интерфейса метки состояния." border="false":::
+:::image type="content" source="../../assets/images/components/status-label.png" alt-text="В примере показан компонент пользовательского интерфейса метки состояния.":::
 
 ## <a name="toast"></a>Всплывающее уведомление
 
-:::image type="content" source="../../assets/images/components/toast.png" alt-text="В примере показан компонент пользовательского интерфейса всплывающего уведомления." border="false":::
+:::image type="content" source="../../assets/images/components/toast.png" alt-text="В примере показан компонент пользовательского интерфейса всплывающего уведомления.":::
 
-## <a name="toggle"></a>Toggle
+## <a name="toggle"></a>Переключатель
 
-Примечание. Fluent пользовательском интерфейсе переключатель является типом флажка.
+Примечание. В пользовательском интерфейсе Fluent переключатель является типом флажка.
 
-:::image type="content" source="../../assets/images/components/toggle.png" alt-text="В примере показан переключатель пользовательского интерфейса." border="false":::
+:::image type="content" source="../../assets/images/components/toggle.png" alt-text="В примере показан переключатель пользовательского интерфейса.":::
 
 ## <a name="tooltip"></a>Подсказка
 
-:::image type="content" source="../../assets/images/components/tooltip.png" alt-text="В примере показан компонент пользовательского интерфейса подсказки." border="false":::
+:::image type="content" source="../../assets/images/components/tooltip.png" alt-text="В примере показан компонент пользовательского интерфейса подсказки.":::
 
 ## <a name="other-resources"></a>Другие ресурсы
 
-Получите примеры кода и сведения о реализации для некоторых компонентов, перечисленных здесь и в Microsoft Teams пользовательского интерфейса.
+Получите примеры кода и сведения о реализации для некоторых компонентов, перечисленных здесь и в комплекте пользовательского интерфейса Microsoft Teams.
 
 > [!div class="nextstepaction"]
-> [Попробуйте компоненты (Fluent пользовательского интерфейса)](https://fluentsite.z22.web.core.windows.net/)
+> [Попробуйте компоненты (пользовательский интерфейс Fluent)](https://fluentsite.z22.web.core.windows.net/)

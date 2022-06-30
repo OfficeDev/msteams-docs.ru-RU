@@ -5,12 +5,12 @@ author: v-npaladugu
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: f404c80a8b5db61636e175ca6439b32938358cac
-ms.sourcegitcommit: 3bfd0d2c4d83f306023adb45c8a3f829f7150b1d
+ms.openlocfilehash: 8bbfac3f72fb9ddbfb21d36f4a1ad2516af52b83
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65073302"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558060"
 ---
 # <a name="in-app-purchases"></a>Покупки из приложения
 
@@ -87,21 +87,21 @@ Microsoft Teams предоставляет API, которые можно исп
 
 1. В диалоговом окне "Сведения о приложении" **выберите Купить подписку** или **Добавить для меня**.
 
-    :::image type="content" source="~/assets/images/saas-offer/buysubscriptionplancontoso.png" alt-text="Покупка подписки для выбранного приложения." border="true":::
+    :::image type="content" source="~/assets/images/saas-offer/buysubscriptionplancontoso.png" alt-text="Покупка подписки для выбранного приложения.":::
 
 1. **Добавить для меня** предлагает установить бесплатную пробную версию приложения, а позже **обновить** его до платной версии.
 
-    :::image type="content" source="~/assets/images/saas-offer/upgradeapp.png" alt-text="Обновление до подписки для выбранного приложения." lightbox="../../../../assets/images/saas-offer/upgradeapp.png" border="true":::
+    :::image type="content" source="~/assets/images/saas-offer/upgradeapp.png" alt-text="Обновление до подписки для выбранного приложения." lightbox="../../../../assets/images/saas-offer/upgradeapp.png":::
 
 1. В диалоговом окне **Выбор плана подписки** выберите план и щелкните **Купить**.
 
-    :::image type="content" source="~/assets/images/saas-offer/choosingsubscriptionplancontoso.png" alt-text="Выбор нужного плана подписки." lightbox="../../../../assets/images/saas-offer/choosingsubscriptionplancontoso.png" border="true":::
+    :::image type="content" source="~/assets/images/saas-offer/choosingsubscriptionplancontoso.png" alt-text="Выбор нужного плана подписки." lightbox="../../../../assets/images/saas-offer/choosingsubscriptionplancontoso.png":::
 
 1. Завершите покупку и выберите **Настройка** для настройки подписки.
 
-    :::image type="content" source="~/assets/images/saas-offer/saas-offer-configure-now.png" alt-text="Настройка подписки." lightbox="../../../../assets/images/saas-offer/saas-offer-configure-now.png" border="true":::
+    :::image type="content" source="~/assets/images/saas-offer/saas-offer-configure-now.png" alt-text="Настройка подписки." lightbox="../../../../assets/images/saas-offer/saas-offer-configure-now.png":::
 
-    :::image type="content" source="~/assets/images/saas-offer/getstarted.png" alt-text="Начальная страница подписки." lightbox="../../../../assets/images/saas-offer/getstarted.png" border="true":::
+    :::image type="content" source="~/assets/images/saas-offer/getstarted.png" alt-text="Начальная страница подписки." lightbox="../../../../assets/images/saas-offer/getstarted.png":::
 
 ## <a name="next-step"></a>Следующий этап
 

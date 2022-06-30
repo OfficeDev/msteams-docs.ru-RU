@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: overview
-ms.openlocfilehash: d14be8730ba59a94947c595c7bfb5a2ff079259d
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 472af955ba5a508ea2fa892d9ece94977bdfb660
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142887"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558837"
 ---
 # <a name="microsoft-teams-app-design-system"></a>Система дизайна приложений Microsoft Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "66142887"
 
    :::column-end:::
    :::column span="1":::
-      :::image type="content" source="../../assets/images/design-guidelines/teams-layout.png" alt-text="Схематическое изображение макета Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-layout.png" alt-text="Схематическое изображение макета Teams.":::
    :::column-end:::
 
 :::row-end:::
@@ -47,7 +47,7 @@ ms.locfileid: "66142887"
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-avatars.png" alt-text="Схематическое изображение аватаров Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-avatars.png" alt-text="Схематическое изображение аватаров Teams.":::
 
    :::column-end:::
 :::row-end:::
@@ -68,7 +68,7 @@ ms.locfileid: "66142887"
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-iconography.png" alt-text="Схематическое изображение значков Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-iconography.png" alt-text="Схематическое изображение значков Teams.":::
 
    :::column-end:::
 :::row-end:::
@@ -87,7 +87,7 @@ ms.locfileid: "66142887"
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-typography.png" alt-text="Схематическое изображение оформления Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-typography.png" alt-text="Схематическое изображение оформления Teams.":::
 
    :::column-end:::
 :::row-end:::
@@ -105,7 +105,7 @@ ms.locfileid: "66142887"
 
    :::column-end:::
    :::column span="1":::
-      :::image type="content" source="../../assets/images/design-guidelines/teams-color.png" alt-text="Схематическое изображение цветов Teams." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-color.png" alt-text="Схематическое изображение цветов Teams.":::
    :::column-end:::
 
 :::row-end:::
@@ -124,7 +124,7 @@ ms.locfileid: "66142887"
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/shape-and-elevation.png" alt-text="Схематическое изображение формы и высоты." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/shape-and-elevation.png" alt-text="Схематическое изображение формы и высоты.":::
 
    :::column-end:::
 :::row-end:::
@@ -142,7 +142,7 @@ ms.locfileid: "66142887"
    :::column-end:::
    :::column span="1":::
 
-      :::image type="content" source="../../assets/images/design-guidelines/teams-copy-and-content.png" alt-text="Схематическое изображение текстов и контента." border="false":::
+      :::image type="content" source="../../assets/images/design-guidelines/teams-copy-and-content.png" alt-text="Схематическое изображение текстов и контента.":::
 
    :::column-end:::
 :::row-end:::

@@ -1,16 +1,16 @@
 ---
 title: Разработайте приложение — познакомьтесь с его структурой
-description: В этом модуле вы узнаете, что вы можете и не можете настроить в Microsoft Teams при разработке структуры приложения.
+description: В этом модуле вы узнаете, что можно и не можете настроить в Microsoft Teams при разработке структуры приложения.
 author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
-ms.openlocfilehash: cbcf44572b0105f9c0af4c7dc8cd0b00b6f5f9b9
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 6a409accc5f55aa0a9c245aa061efde5b67d81f3
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144399"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558760"
 ---
 # <a name="understand-the-microsoft-teams-app-structure"></a>Понимание структуры приложений Microsoft Teams
 
@@ -34,13 +34,13 @@ ms.locfileid: "66144399"
 
 Холст представляет собой веб-просмотр, поэтому вы можете полностью настроить работу.
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для личных приложений на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для личных приложений на мобильных устройствах.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
 Холст — это iframe, позволяющий полностью настроить работу.
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для личных приложений на настольном компьютере." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-personal-apps-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для личных приложений на настольном компьютере.":::
 
 ## <a name="tabs"></a>Вкладки
 
@@ -52,13 +52,13 @@ ms.locfileid: "66144399"
 
 Холст представляет собой веб-просмотр, поэтому вы можете полностью настроить работу.
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для вкладок на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для вкладок на мобильных устройствах.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
 Холст — это iframe, позволяющий полностью настроить работу.
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для вкладок на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-tabs-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для вкладок на рабочем столе.":::
 
 ## <a name="bots"></a>боты;
 
@@ -68,11 +68,11 @@ ms.locfileid: "66144399"
 
 ### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для ботов на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для ботов на мобильных устройствах.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для ботов на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-bots-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для ботов на рабочем столе.":::
 
 ## <a name="message-extensions"></a>Расширения для сообщений
 
@@ -82,11 +82,11 @@ ms.locfileid: "66144399"
 
 ### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений сообщений на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений сообщений на мобильных устройствах.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений сообщений на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-messaging-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений сообщений на рабочем столе.":::
 
 ## <a name="meeting-extensions"></a>Расширения для собраний
 
@@ -98,10 +98,10 @@ ms.locfileid: "66144399"
 
 Поверхность представляет собой веб-просмотр, позволяющий настраивать работу, но имейте в виду, что во время собраний эти приложения используют темную тему.
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений собраний на мобильных устройствах." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-mobile.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений собраний на мобильных устройствах.":::
 
 ### <a name="desktop"></a>Версия для настольного компьютера
 
 Поверхность — это iframe, что позволяет настраивать работу, но имейте в виду, что во время собраний эти приложения используют темную тему и тесноваты.
 
-:::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений собраний на рабочем столе." border="false":::
+:::image type="content" source="../../assets/images/design-guidelines/app-structure-meeting-exetensions-desktop.png" alt-text="Концептуальное изображение, показывающее интерфейсные области в Teams, которые разработчики могут настраивать для расширений собраний на рабочем столе.":::

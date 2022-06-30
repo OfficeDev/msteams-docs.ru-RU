@@ -4,12 +4,12 @@ description: Из этой статьи вы узнаете, как исполь
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: 0da107c4086d7eae568990746a877b79f030a564
-ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
+ms.openlocfilehash: d2be8b5cf0140b451ca870874f66e18aa727609f
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66130447"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557731"
 ---
 # <a name="integrate-people-picker"></a>Интеграция средства "Выбор людей"
 
@@ -53,7 +53,7 @@ API `selectPeople` поставляется со следующими конфи
 1. Введите имя пользователя. Появится список с предложениями имен.
 1. Выберите имя нужного пользователя из списка.
 
-   :::image type="content" source="../../assets/images/tabs/people-picker-control-capability-mobile-updated.png" alt-text="Мобильная версия средства &quot;Выбор людей&quot;" border="true":::
+   :::image type="content" source="../../assets/images/tabs/people-picker-control-capability-mobile-updated.png" alt-text="Мобильная версия средства &quot;Выбор людей&quot;":::
 
 # <a name="desktop"></a>[Компьютер](#tab/Sampledesktop)
 
@@ -62,7 +62,7 @@ API `selectPeople` поставляется со следующими конфи
 1. Введите имя пользователя. Появится список с предложениями имен.
 1. Выберите имя нужного пользователя из списка.
 
-   :::image type="content" source="../../assets/images/tabs/select-people-picker-byname.png" alt-text="Средство &quot;Выбор людей&quot; с поиском по имени в настольной версии" border="true":::
+   :::image type="content" source="../../assets/images/tabs/select-people-picker-byname.png" alt-text="Средство &quot;Выбор людей&quot; с поиском по имени в настольной версии":::
 
 ---
 

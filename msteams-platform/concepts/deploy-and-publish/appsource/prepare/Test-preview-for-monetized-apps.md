@@ -5,12 +5,12 @@ description: Узнайте, как создавать и тестировать
 ms.topic: conceptual
 ms.author: v-ypalikila
 ms.localizationpriority: high
-ms.openlocfilehash: 3577ebc9fb9e6126b25b6e131e9abb8d902634b2
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 3637ca7d8c488b106ec570ea75cdc67b44d90600
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123705"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558746"
 ---
 # <a name="test-preview-for-monetized-apps"></a>Предварительное тестирование для приложений с монетизацией
 
@@ -26,11 +26,11 @@ ms.locfileid: "66123705"
 1. Добавьте [предварительную аудиторию](/azure/marketplace/create-new-saas-offer-preview) для предложения SaaS.
 1. Щелкните ссылку **Предварительная версия AppSource** в разделе **Публикация**, чтобы найти ИД предварительного предложения в адресной строке браузера в формате *publisherId.offerId-preview*.
 
-    :::image type="content" source="../../../../assets/images/apps-in-meetings/publish-status-publisher-signoff.png" alt-text="ИД предварительного предложения" border="true" :::
+    :::image type="content" source="../../../../assets/images/apps-in-meetings/publish-status-publisher-signoff.png" alt-text="ИД предварительного предложения" :::
 
 1. Скопируйте ИД предварительного предложения из адресной строки браузера.
 
-      :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-monetized-apps-preview-offer-id.png" alt-text="ИД предварительного предложения" border="true" :::
+      :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-monetized-apps-preview-offer-id.png" alt-text="ИД предварительного предложения" :::
 
     > [!NOTE]
     > В отличие от идентификатора публичного предложения, идентификатор предложения предварительной версии можно распознать по суффиксу *-preview*. Например, **publisherId.offerId-preview**.
@@ -68,7 +68,7 @@ ms.locfileid: "66123705"
 
 Если предварительное предложение указывается в манифесте приложения, а предварительная аудитория определена в Центре партнеров для предложения, пользователь может увидеть кнопку **Купить подписку**.
 
-:::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-buy-subscription.png" alt-text="купить подписку" border="true":::
+:::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-buy-subscription.png" alt-text="купить подписку":::
 
 ### <a name="error-scenarios"></a>Сценарии ошибок
 
@@ -76,13 +76,13 @@ ms.locfileid: "66123705"
 
   Не найдены планы с **-preview**. Убедитесь, что вы относитесь к предварительной аудитории.
 
-  :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-no-preview-audience.png" alt-text="нет предварительной аудитории" border="true" :::
+  :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-no-preview-audience.png" alt-text="нет предварительной аудитории" :::
 
 * Если ИД предложения, указанный в манифесте приложения, не относится к предварительному предложению, приложение демонстрирует пользователю следующее предупреждение, а загрузка без публикации отключается.
   
   Это не предварительное предложение. Обязательно добавьте **-preview** к ИД предложения.
 
-  :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-no-preview-offer-id.png" alt-text="нет -preview" border="true" :::
+  :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-no-preview-offer-id.png" alt-text="нет -preview" :::
 
 ## <a name="see-also"></a>См. также
 

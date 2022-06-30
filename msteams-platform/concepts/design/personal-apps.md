@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: a939217f31feb957cc9f3205a99d8b235de56d8e
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 7dda8dd7e68e7452da164c8ec45d3352909f45ed
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142404"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558340"
 ---
 # <a name="designing-your-personal-app-for-microsoft-teams"></a>Проектирование личных приложений для Microsoft Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "66142404"
 
 Пользователи могут добавить личное приложение из магазина Teams или всплывающего окна приложения, щелкнув значок **Дополнительно** в левой части Teams (показано в следующем примере).
 
-:::image type="content" source="../../assets/images/personal-apps/add-from-app-flyout.png" alt-text="В примере показано, как добавить личное приложение из всплывающего меню приложения." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/add-from-app-flyout.png" alt-text="В примере показано, как добавить личное приложение из всплывающего меню приложения.":::
 
 ## <a name="use-a-personal-app-private-workspace"></a>Использование личного приложения (частная рабочая область)
 
@@ -41,7 +41,7 @@ ms.locfileid: "66142404"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/personal-apps/mobile-personal-tab-component-anatomy.png" alt-text="В примере показана структура компонентов личной вкладки." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/mobile-personal-tab-component-anatomy.png" alt-text="В примере показана структура компонентов личной вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -50,7 +50,7 @@ ms.locfileid: "66142404"
 |В|**Меню "Еще"**: включает дополнительные параметры и сведения о приложении.|
 |D|**Основная навигация**: обеспечивает навигацию к другим основным функциям Teams вашего приложения.|
 
-:::image type="content" source="../../assets/images/personal-apps/mobile-personal-tab-structural-anatomy.png" alt-text="В примере показана структура личной вкладки." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/mobile-personal-tab-structural-anatomy.png" alt-text="В примере показана структура личной вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -59,7 +59,7 @@ ms.locfileid: "66142404"
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-component-anatomy.png" alt-text="В этом примере показана структура компонентов личной вкладки." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-component-anatomy.png" alt-text="В этом примере показана структура компонентов личной вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -68,7 +68,7 @@ ms.locfileid: "66142404"
 |В|**Всплывающее представление**: содержимое приложения перемещается из родительского окна в отдельное дочернее окно.|
 |D|**Меню "Еще"**: включает дополнительные параметры и сведения о приложении. (Вы также можете сделать **Параметры** вкладкой.)|
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-structural-anatomy.png" alt-text="В этом примере показана структура личной вкладки." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-structural-anatomy.png" alt-text="В этом примере показана структура личной вкладки.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -94,7 +94,7 @@ ms.locfileid: "66142404"
 
 #### <a name="mobile"></a>Мобильная версия
 
-:::image type="content" source="../../assets/images/personal-apps/mobile-personal-bot-anatomy.png" alt-text="В примере показана структура компонентов личного бота." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/mobile-personal-bot-anatomy.png" alt-text="В примере показана структура компонентов личного бота.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -105,7 +105,7 @@ ms.locfileid: "66142404"
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
-:::image type="content" source="../../assets/images/personal-apps/personal-bot-anatomy.png" alt-text="В примере показана структура компонента личного бота." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-anatomy.png" alt-text="В примере показана структура компонента личного бота.":::
 
 |Счетчик|Описание|
 |----------|-----------|
@@ -117,7 +117,7 @@ ms.locfileid: "66142404"
 
 В левой части Teams пользователи могут щелкнуть личное приложение правой кнопкой мыши, чтобы закрепить, удалить или настроить другие параметры приложения.
 
-:::image type="content" source="../../assets/images/personal-apps/manage-personal-tab.png" alt-text="В примере показаны параметры для управления личным приложением." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/manage-personal-tab.png" alt-text="В примере показаны параметры для управления личным приложением.":::
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -129,13 +129,13 @@ ms.locfileid: "66142404"
 
 Благодаря гибкому размеру вкладки справа могут быть обрезаны или не видны.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-priority-do.png" alt-text="В примере показано личное приложение, отображающее наиболее релевантное содержимое на первой вкладке." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-priority-do.png" alt-text="В примере показано личное приложение, отображающее наиболее релевантное содержимое на первой вкладке.":::
 
 #### <a name="dont-lead-with-secondary-content-or-metadata"></a>Не следует: создавать дополнительное содержимое или метаданные
 
 Как и в стандартном веб-приложении, навигация по вкладкам должна выполняться в порядке, который помогает понять основные функции приложения.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-priority-dont.png" alt-text="В примере показано личное приложение с дополнительным содержимым или метаданными." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-priority-dont.png" alt-text="В примере показано личное приложение с дополнительным содержимым или метаданными.":::
 
 ### <a name="tab-hierarchy"></a>Иерархия вкладок
 
@@ -143,13 +143,13 @@ ms.locfileid: "66142404"
 
 Вкладки должны классифицировать основные функции и содержимое приложения. Благодаря гибкому размеру содержимое справа может быть обрезано или не видно.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-hierarchy-do.png" alt-text="В примере показано личное приложение с вкладками одинаковой иерархии." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-hierarchy-do.png" alt-text="В примере показано личное приложение с вкладками одинаковой иерархии.":::
 
 #### <a name="dont-include-different-levels-of-hierarchy"></a>Не следует: включать различные уровни иерархии
 
 Содержимое должно развиваться в логическом порядке, который помогает пользователям понять его. Если у вас есть две тесно связанные вкладки, попробуйте объединить их в одну вкладку.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-hierarchy-dont.png" alt-text="В примере показано личное приложение с различными уровнями иерархии." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-hierarchy-dont.png" alt-text="В примере показано личное приложение с различными уровнями иерархии.":::
 
 ### <a name="first-run-experience"></a>Интерфейс при первом запуске
 
@@ -157,15 +157,15 @@ ms.locfileid: "66142404"
 
 При первом использовании личного приложения должен отображаться как минимум экран приветствия. Для ботов опишите, что может делать ваш бот, и предоставьте быстрые действия, например кнопку входа.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-fre-do.png" alt-text="В примере показано, что следует делать при первом запуске личного приложения." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-fre-do.png" alt-text="В примере показано, что следует делать при первом запуске личного приложения.":::
 
-:::image type="content" source="../../assets/images/personal-apps/personal-bot-fre-do.png" alt-text="В другом примере показано, что следует делать при первом запуске личного приложения." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-fre-do.png" alt-text="В другом примере показано, что следует делать при первом запуске личного приложения.":::
 
 #### <a name="dont-start-with-a-blank-screen"></a>Не следует: начинать с пустого экрана
 
 Пользователи могут быть сбиты с толку, если при первом запуске приложения ничего не отображается.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-fre-dont.png" alt-text="В примере показано, что не следует делать при первом запуске личного приложения." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-fre-dont.png" alt-text="В примере показано, что не следует делать при первом запуске личного приложения.":::
 
 ### <a name="personalized-content"></a>Персонализированное содержимое
 
@@ -173,17 +173,17 @@ ms.locfileid: "66142404"
 
 Будь то личная вкладка или бот, отображайте содержимое, связанное только с действиями пользователя в вашем приложении.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-personalized-content-do.png" alt-text="В примере показано, что следует делать с личным приложением и персонализированным содержимым." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-personalized-content-do.png" alt-text="В примере показано, что следует делать с личным приложением и персонализированным содержимым.":::
 
-:::image type="content" source="../../assets/images/personal-apps/personal-bot-personalized-content-do.png" alt-text="В другом примере показано, что следует делать с личным приложением и персонализированным содержимым." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-personalized-content-do.png" alt-text="В другом примере показано, что следует делать с личным приложением и персонализированным содержимым.":::
 
 #### <a name="dont-show-unrelated-or-overly-broad-content"></a>Не следует: показывать нерелевантный или слишком широкий контент
 
 В личном контексте не отображайте содержимое для команд, в которых пользователь не состоит. Содержимое личного бота должно быть ориентировано на отдельного человека, а не на группу.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-personalized-content-dont.png" alt-text="В примере показано, что не следует делать с личным приложением и персонализированным содержимым." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-personalized-content-dont.png" alt-text="В примере показано, что не следует делать с личным приложением и персонализированным содержимым.":::
 
-:::image type="content" source="../../assets/images/personal-apps/personal-bot-personalized-content-dont.png" alt-text="В другом примере показано, что не следует делать с личным приложением и персонализированным содержимым." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-bot-personalized-content-dont.png" alt-text="В другом примере показано, что не следует делать с личным приложением и персонализированным содержимым.":::
 
 ### <a name="complex-app-features"></a>Сложные функции приложения
 
@@ -191,13 +191,13 @@ ms.locfileid: "66142404"
 
 Приложение должно сосредоточиться на основных задачах в Teams, но вы по-прежнему можете просматривать полное автономное приложение в браузере.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-feature-do.png" alt-text="В примере показано, как обрабатывать сложные функции приложения с помощью личного приложения." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-feature-do.png" alt-text="В примере показано, как обрабатывать сложные функции приложения с помощью личного приложения.":::
 
 #### <a name="dont-include-your-entire-app"></a>Не следует: включать все приложение
 
 Если вы не создали приложение специально для Teams, возможно у вас есть функции, которые не имеют смысла в средстве совместной работы.
 
-:::image type="content" source="../../assets/images/personal-apps/personal-tab-feature-dont.png" alt-text="В примере показано, как не следует обрабатывать сложные функции приложения с помощью личного приложения." border="false":::
+:::image type="content" source="../../assets/images/personal-apps/personal-tab-feature-dont.png" alt-text="В примере показано, как не следует обрабатывать сложные функции приложения с помощью личного приложения.":::
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

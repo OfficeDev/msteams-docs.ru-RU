@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 11/02/2021
-ms.openlocfilehash: 8b5aa93548ad08f8e1114b2d4b66b92fcd7195ba
-ms.sourcegitcommit: b7b41ec2a1f022eb15a1980d1b31d22df1170913
+ms.openlocfilehash: c85fe155500f695fe74edcf0c155526bc446411a
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65795128"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557983"
 ---
 # <a name="from-ideas-to-teams-app"></a>От идей до приложения Teams
 
@@ -19,7 +19,7 @@ ms.locfileid: "65795128"
 
 Взгляните на этот сценарий:
 
-:::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario.png" alt-text="Разработчик в туристическом агентстве создает приложение, которое отправляет прогноз погоды клиентам, чтобы они могли заранее планировать даты поездки" border="false":::
+:::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario.png" alt-text="Разработчик в туристическом агентстве создает приложение, которое отправляет прогноз погоды клиентам, чтобы они могли заранее планировать даты поездки":::
 
 Вам как разработчику необходим способ предоставления важной и актуальной информации пользователям. Это стандартная пользовательская история. Узнаваемая, не так ли? Но как этот сценарий связан с Teams?
 
@@ -29,7 +29,7 @@ ms.locfileid: "65795128"
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-01.png" alt-text="Пользовательская история. Как разработчик в туристическом агентстве я создаю приложения для путешественников" border="false":::
+      :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-01.png" alt-text="Пользовательская история. Как разработчик в туристическом агентстве я создаю приложения для путешественников":::
    :::column-end:::
    :::column span="":::
       #### <a name="understand-your-user"></a>Общие сведения о пользователях
@@ -50,12 +50,12 @@ ms.locfileid: "65795128"
         – Какие проблемы необходимо решить?
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-02.png" alt-text="Я хочу разработать приложение, которое отправляет клиентам прогноз погоды в месте назначения…" border="false":::
+       :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-02.png" alt-text="Я хочу разработать приложение, которое отправляет клиентам прогноз погоды в месте назначения…":::
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-03.png" alt-text="…чтобы клиенты знали погодные условия и могли планировать поездку заранее" border="false":::
+      :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-03.png" alt-text="…чтобы клиенты знали погодные условия и могли планировать поездку заранее":::
    :::column-end:::
    :::column span="":::
       #### <a name="list-app-requirements-and-benefits"></a>Перечисление требований к приложению и его преимуществ
@@ -76,7 +76,7 @@ ms.locfileid: "65795128"
         – Какие возможности наиболее удобны для работы пользователей?
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-04.png" alt-text="Клиенты хорошо подготовлены к путешествиям!" border="false":::
+       :::image type="content" source="../msteams-platform/assets/images/overview/developer-scenario-04.png" alt-text="Клиенты хорошо подготовлены к путешествиям!":::
    :::column-end:::
 :::row-end:::
 
