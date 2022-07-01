@@ -5,12 +5,12 @@ ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 210110974769c44258200a3e6b48d0cb68a48e07
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 11893cb2db927935d399d83794b7680560adcc7d
+ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189931"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485736"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
@@ -120,7 +120,7 @@ ms.locfileid: "66189931"
 
         1. Инструкции по настройке, если для доступа к функциям приложения требуется дополнительная настройка. Кроме того, если вашему приложению требуется сложная конфигурация, вы также можете предоставить [подготовленного демонстрационного клиента](/office/developer-program/microsoft-365-developer-program-get-started) с доступом администратора, чтобы наши проверяющие могли пропустить этапы настройки.
 
-        1. Ссылка на демонстрационный ролик с ключевым пользовательским потоком для вашего приложения. Крайне рекомендуется.
+        1. Ссылка на демонстрационный ролик ключевого пользовательского потока для вашего приложения. Крайне рекомендуется.
 
 * **Публикация отправки приложения**
 
