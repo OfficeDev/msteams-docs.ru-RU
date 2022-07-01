@@ -4,16 +4,16 @@ description: В этом модуле вы узнаете больше о воз
 ms.topic: concept
 ms.localizationpriority: high
 ms.author: v-ypalikila
-ms.openlocfilehash: f5986515f9916a0138524b919dca46d0cf0ee8d4
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 35d5228ac39dd1a9d58d699d8c989aeeceaf765d
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503349"
 ---
 ---
 
-# <a name="live-share-capabilities"></a>Возможности Live Share
+# <a name="live-share-core-capabilities"></a>Основные возможности Live Share
 
 Пакет Live Share SDK можно добавить в расширения `sidePanel` и `meetingStage` контексты ваших собраний с минимальными усилиями. В этой статье рассматривается интеграция пакета Live Share SDK в ваше приложение, а также основные возможности пакета SDK.
 

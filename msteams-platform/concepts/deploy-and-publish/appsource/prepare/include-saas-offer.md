@@ -5,14 +5,14 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 0fdfb097def9b39e099536c2054cfaab21610770
-ms.sourcegitcommit: 5070746e736edb4ae77cd3efcb2ab8bb2e5819a0
+ms.openlocfilehash: 7a5647c940f6f20babf4f0704b5b7781f4d065c4
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66123642"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503328"
 ---
-# <a name="include-a-saas-offer-with-your-microsoft-teams-app"></a>Привязка предложения SaaS к приложению Microsoft Teams
+# <a name="include-a-saas-offer-with-your-teams-app"></a>Включение предложения SaaS в приложение Teams
 
 :::row:::
    :::column span="3":::
@@ -47,7 +47,7 @@ ms.locfileid: "66123642"
 
 При планировании монетизации приложения Teams следует рассмотреть некоторые вопросы.
 
-* Определение модели подписки. Поддерживающее транзакции предложение SaaS может включать несколько планов подписки. Общедоступные открытые планы подписки являются наиболее распространенными, но можно также ориентироваться на конкретных клиентов, подготовив варианты специально для них. Дополнительные сведения см. в статье [Частные предложения на коммерческой платформе Майкрософт](/azure/marketplace/private-offers).
+* Определение модели подписки. Поддерживающее транзакции предложение SaaS может включать несколько планов подписки. Общедоступные открытые планы подписки являются наиболее распространенными, но можно также ориентироваться на конкретных клиентов, подготовив варианты специально для них. Дополнительные сведения см. в статье [Частные планы на коммерческой платформе Майкрософт](/azure/marketplace/private-plans).
 * Ознакомьтесь с вариантом профиля [*Продажа через Microsoft*](/azure/marketplace/plan-saas-offer#listing-options) для предложения SaaS, который необходим для того, чтобы пользователи могли приобретать планы подписки на приложение непосредственно в магазине Teams.
 * Узнайте, как [единый вход Azure Active Directory (SSO)](/azure/marketplace/azure-ad-saas) помогает клиентам приобретать подписки и управлять ими. (Наличие SSO Microsoft Azure Active Directory (Azure AD) необходимо для приложений Teams с предложениями SaaS.)
 * Следует учитывать, что вы несете ответственность за управление инфраструктурой, необходимой для поддержки использования клиентами предложения SaaS, и оплату ее использования.

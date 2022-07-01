@@ -3,18 +3,18 @@ title: Новые возможности для разработчиков в Te
 description: В этой схеме обучения вы узнаете о новых функциях разработчика и улучшениях этих функций в Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 0b7c2078980748f8e0820348e23a22c57ac7c22f
-ms.sourcegitcommit: b4986bf529c74444db67b7ce522b3b0d2c2a8e28
+ms.openlocfilehash: 3ab4c771bb0bf0cab1fb7c71f2995d18af7b4289
+ms.sourcegitcommit: 779aa3220f6448a9dbbaea57e667ad95b5c39a2a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66130468"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66561618"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
 Представляем функции платформы Microsoft Teams в общедоступной версии и в предварительной версии для разработчиков. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
-## <a name="microsoft-build-2022-image-typeicon-sourceassetsimagesbullhornpng-borderfalse"></a>Microsoft Build 2022 :::image type="icon" source="assets/images/bullhorn.png" border="false"
+## <a name="microsoft-build-2022-image-typeicon-sourceassetsimagesbullhornpng"></a>Microsoft Build 2022 :::image type="icon" source="assets/images/bullhorn.png"
 
 | Date | Возможность | Найдите его здесь |
 | --- | --- | --- |
@@ -266,6 +266,7 @@ ms.locfileid: "66130468"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+| 30.06.2022 | Приложения для мгновенных собраний, индивидуальных и групповых звонков| Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md)|
 | 16.06.2022 | Развертывание ссылки для отправки в Teams из веб-приложений| Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
 | 06.06.2022| Обновление бесед и событий установки в боте Teams |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
 |24.05.2022| Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |

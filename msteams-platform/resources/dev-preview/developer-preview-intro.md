@@ -3,14 +3,14 @@ title: Общедоступная предварительная версия д
 description: Из этой статьи вы узнаете о функциях, доступных в общедоступной предварительной версии Microsoft Teams и предварительной версии приложения для разработчиков.
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: e166d9c65d93569e8854759dce725f5edca104f9
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: e144672ab3ed9a26f3f8fdac14120f2f996d4d44
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66190248"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503916"
 ---
-# <a name="public-developer-preview-for-microsoft-teams"></a>Общедоступная предварительная версия для разработчиков для Microsoft Teams
+# <a name="public-developer-preview-for-teams"></a>Общедоступная предварительная версия для разработчиков в Teams
 
 >[!NOTE]
 >Возможности, включенные в предварительную версию, могут быть неполными. Они также могут быть изменены перед общедоступным выпуском. Они предназначены только для целей тестирования и изучения. Их нельзя использовать в производственных приложениях.

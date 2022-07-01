@@ -3,14 +3,14 @@ title: Справочник по схеме манифеста
 description: В этой статье представлен справочник по схеме манифеста Microsoft Teams, схема и пример полного манифеста.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 5a65fa1fdbf854749bf21a4d4ab395af74211fc5
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 1a2ee91a74c5dfb79cb5c510fdc7a837d472b0db
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189353"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503734"
 ---
-# <a name="reference-manifest-schema-for-microsoft-teams"></a>Справочник: схема манифеста для Microsoft Teams
+# <a name="app-manifest-schema-for-teams"></a>Схема манифеста приложения для Teams
 
 В манифесте приложения Microsoft Teams описывается, как ваше приложение интегрируется с продуктом Microsoft Teams. Манифест приложения должен соответствовать схеме, размещенной по адресу [`https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json`]( https://developer.microsoft.com/json-schemas/teams/v1.13/MicrosoftTeams.schema.json). Поддерживаются предыдущие версии 1.0, 1.1,...,1.12 и текущая версия 1.13 (см. примечание ниже) (в URL-адресе используется "v1.x").
 Дополнительные сведения об изменениях в каждой версии, см. в разделе [журнал изменений манифеста](https://github.com/OfficeDev/microsoft-teams-app-schema/releases).

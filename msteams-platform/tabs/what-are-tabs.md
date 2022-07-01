@@ -5,14 +5,14 @@ description: В этом модуле вы научитесь создавать
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 94fef69a1f11209fdb4512e7d140c2d6dbf813ef
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 2f2ace5503caa509a875823a260b2903a4b6440e
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143650"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503895"
 ---
-# <a name="build-tabs-for-microsoft-teams"></a>Создание вкладок для Microsoft Teams
+# <a name="build-tabs-for-teams"></a>Создание вкладок для Teams
 
 Вкладки — это веб-страницы с поддержкой Teams, встроенные в Microsoft Teams. Это простые HTML-теги `<iframe\>`, которые указывают на домены, объявленные в манифесте приложения. Их можно добавить как часть канала команды, группового чата или личного приложения для отдельного пользователя. Вы можете включить настраиваемые вкладки в свое приложение. Это позволит встроить собственный веб-контент в Teams или добавить в такой веб-контент функционал Teams. Дополнительные сведения см. в статье [Пакет SDK клиента JavaScript для Teams](/javascript/api/overview/msteams-client).
 
@@ -25,11 +25,11 @@ ms.locfileid: "66143650"
 
 На изображении ниже показаны личные вкладки.
 
-:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Личная вкладка" lightbox="../assets/images/tabs/personaltab.png":::
+:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Личная вкладка" lightbox="../assets/images/tabs/personaltab.png" border="true":::
 
 На изображении ниже показаны вкладки канала Contoso.
 
-:::image type="content" source="../assets/images/tabs/tabs.png" alt-text="Вкладки канала или группы" lightbox="../assets/images/tabs/tabs.png":::
+:::image type="content" source="../assets/images/tabs/tabs.png" alt-text="Вкладки канала или группы" lightbox="../assets/images/tabs/tabs.png" border="true":::
 
 Перед началом работы над вкладками ознакомьтесь с требованиями к их использованию.
 
