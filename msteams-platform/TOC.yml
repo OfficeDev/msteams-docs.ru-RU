@@ -58,13 +58,13 @@
   items:
     - name: Обзор
       href: concepts/design/design-teams-app-overview.md
-    - name: Представление о процессе проектирования
+    - name: Общие сведения о процессе проектирования
       href: concepts/design/design-teams-app-process.md
     - name: Система проектирования
       href: concepts/design/design-teams-app-fundamentals.md
     - name: Возможности приложений
       items:
-        - name: Представление о структуре приложения
+        - name: Общие сведения о структуре приложения
           href: concepts/design/app-structure.md
         - name: Персональные приложения
           href: concepts/design/personal-apps.md
@@ -128,7 +128,7 @@
           href: toolkit/publish.md
         - name: Управление несколькими средами
           href: toolkit/TeamsFx-multi-env.md
-        - name: Совместная работа в проекте Teams
+        - name: Совместная работа над проектом в Teams
           href: toolkit/TeamsFx-collaboration.md
         - name: Пакет SDK TeamsFx
           href: toolkit/TeamsFx-SDK.md
@@ -164,7 +164,7 @@
               items:
                 - name: Личные разговоры с ботами
                   href: resources/bot-v3/bot-conversations/bots-conv-personal.md
-                - name: Бот для бесед в канале и групповом чате
+                - name: Бот для общения в канале и групповом чате
                   href: resources/bot-v3/bot-conversations/bots-conv-channel.md
                 - name: Начиная разговор
                   href: resources/bot-v3/bot-conversations/bots-conv-proactive.md
@@ -251,7 +251,7 @@
           href: bots/how-to/conversations/send-proactive-messages.md
         - name: Формат сообщений бота
           href: bots/how-to/format-your-bot-messages.md
-        - name: 'Обновляйте и удаляйте сообщения, отправленные ботом'
+        - name: 'Обновление и удаление сообщений, отправленных ботом'
           href: bots/how-to/update-and-delete-bot-messages.md
         - name: Заголовки запросов бота
           href: bots/how-to/conversations/request-headers-of-the-bot.md
@@ -297,7 +297,7 @@
           href: messaging-extensions/how-to/search-commands/respond-to-search.md
     - name: Добавление разворачивающейся ссылки
       href: messaging-extensions/how-to/link-unfurling.md
-- name: Создание приложений для собраний Teams
+- name: Сборка приложений для собраний и вызовов Teams
   items:
     - name: Обзор
       href: apps-in-teams-meetings/teams-apps-in-meetings.md
@@ -397,7 +397,7 @@
               href: tabs/how-to/authentication/tab-sso-manifest.md
             - name: Предоставление разрешений или областей Microsoft Graph
               href: tabs/how-to/authentication/tab-sso-graph-api.md
-            - name: Устранение неполадок с проверкой подлинности SSO
+            - name: Устранение неполадок с проверкой подлинности единого входа
               href: tabs/how-to/authentication/tab-sso-troubleshooting.md
         - name: Использование проверки подлинности стороннего поставщика удостоверений OAuth
           items:
@@ -517,7 +517,7 @@
           href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
         - name: Отправка приложения
           href: /office/dev/store/add-in-submission-guide?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
-        - name: 'Как устранять проблемы, если приложение, отправленное вами в магазин Teams, было отвергнуто'
+        - name: Устранение проблем при сбое отправки в магазин Teams
           href: concepts/deploy-and-publish/appsource/resolve-submission-issues.md
         - name: Обслуживание опубликованного приложения
           href: concepts/deploy-and-publish/appsource/post-publish/overview.md
@@ -529,7 +529,7 @@
   items:
     - name: Обзор
       href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
-    - name: Включение предложения SaaS в приложение Teams
+    - name: Включение предложения SaaS в свое приложение Teams
       href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
     - name: Покупки из приложения
       href: concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md
@@ -543,7 +543,7 @@
       items:
         - name: Обзор
           href: resources/dev-preview/developer-preview-intro.md
-        - name: Cхема манифеста общедоступной предварительной версии для разработчиков для Teams
+        - name: Схема манифеста общедоступной предварительной версии для разработчиков для Teams
           href: resources/schema/manifest-schema-dev-preview.md
 - name: Интеграция с Teams
   items:
