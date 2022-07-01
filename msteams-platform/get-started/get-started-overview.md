@@ -3,12 +3,12 @@ title: Начало работы — обзор
 description: В этом модуле вы узнаете, как начать работу с документацией для разработчиков Microsoft Teams, которая познакомит вас с общими инструментами, основными понятиями и расширенными функциями.
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 09522f4509d9e9c73c7b854b57fbb7ad5e982ba2
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 4a53466aab1a896e99b91210dbc93d8467df52d1
+ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143160"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503902"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -24,7 +24,7 @@ ms.locfileid: "66143160"
 
 Давайте кратко рассмотрим варианты среды сборки, которые вы можете выбрать, и дорожную карту для создания и развертывания приложения Teams.
 
-:::image type="content" source="../assets/images/get-started/gs-build-options.png" alt-text="Иллюстрация: основные шаги по созданию и развертыванию приложения Teams":::
+:::image type="content" source="../assets/images/get-started/gs-build-options.png" alt-text="Иллюстрация: основные шаги по созданию и развертыванию приложения Teams" border="true":::
 
 ## <a name="app-capabilities-and-development-tools"></a>Возможности и средства разработки приложений
 
@@ -48,11 +48,11 @@ ms.locfileid: "66143160"
 Теперь давайте создадим ваше первое приложение Teams. Но сначала выберите язык (или платформу) и подготовьте среду разработки.
 
 > [!div class="nextstepaction"]
-> [Создайте приложение с вкладками Teams с JavaScript, используя React](../sbs-gs-javascript.yml)
+> [Создание приложения-вкладки Teams с JavaScript, используя React](../sbs-gs-javascript.yml)
 > [!div class="nextstepaction"]
-> [Создайте бот-приложение Teams с JavaScript, используя React](../sbs-gs-bot.yml)
+> [Создание бот-приложения Teams с JavaScript](../sbs-gs-bot.yml)
 > [!div class="nextstepaction"]
-> [Создайте приложение расширения сообщений Teams с JavaScript, используя React](../sbs-gs-msgext.yml)
+> [Создание приложения-расширения для сообщений Teams с JavaScript, используя React](../sbs-gs-msgext.yml)
 > [!div class="nextstepaction"]
 > [Создание приложения Teams с помощью Blazor](../sbs-gs-blazorupdate.yml)
 > [!div class="nextstepaction"]
