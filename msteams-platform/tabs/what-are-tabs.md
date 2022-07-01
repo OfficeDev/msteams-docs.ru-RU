@@ -5,12 +5,12 @@ description: В этом модуле вы научитесь создавать
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 2f2ace5503caa509a875823a260b2903a4b6440e
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 1ff0d77f03e98ab2865705ed9a5be3687ee6779a
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503895"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558144"
 ---
 # <a name="build-tabs-for-teams"></a>Создание вкладок для Teams
 
@@ -25,11 +25,11 @@ ms.locfileid: "66503895"
 
 На изображении ниже показаны личные вкладки.
 
-:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Личная вкладка" lightbox="../assets/images/tabs/personaltab.png" border="true":::
+:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Личная вкладка" lightbox="../assets/images/tabs/personaltab.png":::
 
 На изображении ниже показаны вкладки канала Contoso.
 
-:::image type="content" source="../assets/images/tabs/tabs.png" alt-text="Вкладки канала или группы" lightbox="../assets/images/tabs/tabs.png" border="true":::
+:::image type="content" source="../assets/images/tabs/tabs.png" alt-text="Вкладки канала или группы" lightbox="../assets/images/tabs/tabs.png":::
 
 Перед началом работы над вкладками ознакомьтесь с требованиями к их использованию.
 

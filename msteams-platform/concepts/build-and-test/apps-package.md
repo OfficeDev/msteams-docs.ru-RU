@@ -3,12 +3,12 @@ title: Упаковка приложения
 description: Узнайте, как упаковать приложение Microsoft Teams со значками для тестирования, отправки и публикации в магазине.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: bf0cff985184a0a0d03a9f2a996182b3ea7365bc
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 670243f3b82408592af944fd2c8ae4fc2c739ebc
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503622"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558564"
 ---
 # <a name="create-teams-app-package"></a>Создание пакета приложения Teams
 
@@ -21,7 +21,7 @@ ms.locfileid: "66503622"
 
 Когда пользователь устанавливает приложение в Teams, он устанавливает пакет приложения, содержащий только файл конфигурации (также известный как манифест приложения) и значки приложения. Логика приложения и хранилище данных размещаются в другом месте, например в localhost во время разработки и в веб-службах Azure. Teams получает доступ к этим ресурсам с помощью HTTPS.
 
-:::image type="content" source="../../assets/images/teams-app-host.png" alt-text="Иллюстрация размещения приложения для Teams" border="true":::
+:::image type="content" source="../../assets/images/teams-app-host.png" alt-text="Иллюстрация размещения приложения для Teams":::
 
 ## <a name="app-manifest"></a>Манифест приложения
 
@@ -44,7 +44,7 @@ ms.locfileid: "66503622"
 
 Teams автоматически обрезает значок и отображает квадрат с закругленными углами в нескольких сценариях и шестиугольную фигуру в сценариях с ботом. Чтобы обрезать символ без потери деталей, включите заполнение на 48 пикселей вокруг символа.
 
-:::image type="content" source="../../assets/images/icons/design-color-icon.png" alt-text="Руководство по цветному значку и дизайну в Teams." border="false":::
+:::image type="content" source="../../assets/images/icons/design-color-icon.png" alt-text="Руководство по цветному значку и дизайну в Teams.":::
 
 ### <a name="outline-icon"></a>Контурный значок
 
@@ -55,13 +55,13 @@ Teams автоматически обрезает значок и отображ
 
 Значок должен иметь размер 32x32 пикселя. Он может быть белым с прозрачным фоном или прозрачным с белым фоном (другие цвета не разрешаются). Вокруг контура не должно быть дополнительного заполнения.
 
-:::image type="content" source="../../assets/images/icons/design-outline-icon.png" alt-text="Руководство по дизайну контурного значка в Teams." border="false":::
+:::image type="content" source="../../assets/images/icons/design-outline-icon.png" alt-text="Руководство по дизайну контурного значка в Teams.":::
 
 ### <a name="best-practices"></a>Лучшие методики
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/icons/design-icon-do.png" alt-text="Иллюстрация, показывающая, каким должен быть дизайн значка приложения." border="false":::
+:::image type="content" source="../../assets/images/icons/design-icon-do.png" alt-text="Иллюстрация, показывающая, каким должен быть дизайн значка приложения.":::
 
 #### <a name="do-follow-the-precise-outline-icon-guidelines"></a>Следует точно выполнять инструкции для контурного значка
 
@@ -69,7 +69,7 @@ Teams автоматически обрезает значок и отображ
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/icons/design-icon-dont.png" alt-text="Иллюстрация, показывающая, каким не должен быть дизайн значка приложения." border="false":::
+:::image type="content" source="../../assets/images/icons/design-icon-dont.png" alt-text="Иллюстрация, показывающая, каким не должен быть дизайн значка приложения.":::
 
 #### <a name="dont-crop-in-a-circular-or-rounded-square-shape"></a>Не следует обрезать до круглой фигуры или квадратной фигуры со скругленными углами
 
@@ -88,15 +88,15 @@ Teams автоматически обрезает значок и отображ
 
 #### <a name="personal-app"></a>Личное приложение
 
-:::image type="content" source="../../assets/images/icons/personal-app-icon-example.png" alt-text="Пример отображения значка в личном приложении." border="false":::
+:::image type="content" source="../../assets/images/icons/personal-app-icon-example.png" alt-text="Пример отображения значка в личном приложении.":::
 
 #### <a name="bot-channel"></a>Бот (канал)
 
-:::image type="content" source="../../assets/images/icons/bot-icon-example.png" alt-text="Пример отображения значка на боте внутри канала." border="false":::
+:::image type="content" source="../../assets/images/icons/bot-icon-example.png" alt-text="Пример отображения значка на боте внутри канала.":::
 
 #### <a name="message-extension"></a>Расширение для сообщений
 
-:::image type="content" source="../../assets/images/icons/messaging-extension-icon-example.png" alt-text="<замещающий текст>" border="false":::
+:::image type="content" source="../../assets/images/icons/messaging-extension-icon-example.png" alt-text="<замещающий текст>":::
 
 ## <a name="next-step"></a>Следующий этап
 

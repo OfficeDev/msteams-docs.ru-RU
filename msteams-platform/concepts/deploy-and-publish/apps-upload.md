@@ -5,12 +5,12 @@ ms.topic: how-to
 author: surbhigupta
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 12bd5a6e2c72c1095fbb7f6f113cb9126b247289
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 96b80409697c9347fac82138d0e929c5c874725a
+ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503958"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66558102"
 ---
 # <a name="upload-your-app-in-teams"></a>Отправка приложения в Microsoft Teams
 
@@ -39,18 +39,18 @@ ms.locfileid: "66503958"
 1. Войдите в клиент Teams с помощью [учетной записи разработчика Microsoft 365](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
 1. Выберите **Приложения** > **Управление приложениями** и **Опубликовать приложение**.
 
-    :::image type="content" source="~/assets/images/publish-app/manage-apps.png" alt-text="Публикация приложения" border="true":::
+    :::image type="content" source="~/assets/images/publish-app/manage-apps.png" alt-text="Публикация приложения":::
 
 1. Выберите **Отправить пользовательское приложение**.
 
-   :::image type="content" source="~/assets/images/publish-app/publish-app.png" alt-text="Отправка пользовательского приложения" border="true":::.
+   :::image type="content" source="~/assets/images/publish-app/publish-app.png" alt-text="Отправка пользовательского приложения":::.
 
 1. Выберите ZIP-файл пакета приложения.
 1. Добавьте приложение в Teams в качестве требования:</br>
 
    А. Выберите **Добавить**, чтобы добавить ваше личное приложение.</br>Б. Добавьте приложение в команду или чат с помощью раскрывающегося меню.
 
-    :::image type="content" source="~/assets/images/publish-app/teams-app-detail.png" alt-text="Описание приложения" border="true":::
+    :::image type="content" source="~/assets/images/publish-app/teams-app-detail.png" alt-text="Описание приложения":::
 
 ## <a name="troubleshoot"></a>Устранение неполадок
 
@@ -70,11 +70,11 @@ ms.locfileid: "66503958"
 
 1. Перейдите в раздел **Приложения** и выберите **Управление приложениями** в Teams, чтобы просмотреть установленные приложения во всех каналах или для личного использования в формате списка.
 
-    :::image type="content" source="~/assets/images/publish-app/manage-apps-list.png" alt-text="Доступ к списку приложений Teams" border="true":::
+    :::image type="content" source="~/assets/images/publish-app/manage-apps-list.png" alt-text="Доступ к списку приложений Teams":::
 
 1. Выберите раскрывающийся список приложений, чтобы просмотреть все области, в которых установлено приложение.
 
-    :::image type="content" source="~/assets/images/publish-app/app-scopes.png" alt-text="Доступ к области приложения Teams" border="true":::
+    :::image type="content" source="~/assets/images/publish-app/app-scopes.png" alt-text="Доступ к области приложения Teams":::
 
 1. Выберите область приложения, чтобы перейти к приложению в канале или личном представлении. Список областей включает только личную область и область Teams. Приложения, установленные в области группового чата, в настоящее время не отображаются в этом представлении.
 
@@ -88,27 +88,28 @@ Teams предоставляет несколько способов откры�
 
 1. Выберите **Доступно обновление**, чтобы просмотреть обновление.
 
-     :::image type="content" source="~/assets/images/publish-app/update-available.png" alt-text="Обновление приложения Teams" border="true":::
+     :::image type="content" source="~/assets/images/publish-app/update-available.png" alt-text="Обновление приложения Teams.":::
 
 1. Выберите **Просмотреть обновление**, чтобы появилось окно с параметром обновления.
 1. Нажмите кнопку **Обновить**, чтобы обновить приложение.
 
-     :::image type="content" source="~/assets/images/publish-app/update-window.png" alt-text="Обновление приложения Teams в разделе управления приложениями" border="true":::
+     :::image type="content" source="~/assets/images/publish-app/update-window.png" alt-text="Обновление приложения Teams в разделе управления приложениями.":::
 
-     :::image type="content" source="~/assets/images/publish-app/updated-app.png" alt-text="Приложение обновлено" border="true":::
+     :::image type="content" source="~/assets/images/publish-app/updated-app.png" alt-text="Приложение обновлено.":::
 
 ### <a name="remove-your-app"></a>Удаление приложения
 
 Чтобы удалить приложение из Teams, выполните следующие действия:
 
 1. Найдите приложение в разделе **Управление приложением**.
-1. Выберите &nbsp;:::image type="content" source="~/assets/images/publish-app/bin-icon.png" alt-text="Удалить приложение из Teams" border="false":::&nbsp; в области установленного приложения.
 
-    :::image type="content" source="~/assets/images/publish-app/uninstall-from-channel.png" alt-text="Удаление приложения из канала" border="true":::
+1. Выберите &nbsp;:::image type="content" source="~/assets/images/publish-app/bin-icon.png" alt-text="Удаление приложения из Teams.":::&nbsp; в области установленного приложения.
+
+    :::image type="content" source="~/assets/images/publish-app/uninstall-from-channel.png" alt-text="Удаление приложения из канала.":::
 
 1. Выберите **Удалить**, чтобы удалить приложение.
 
-    :::image type="content" source="~/assets/images/publish-app/remove-app-teams.png" alt-text="Удаление приложения из Teams" border="true":::
+    :::image type="content" source="~/assets/images/publish-app/remove-app-teams.png" alt-text="Удаление приложения из Teams.":::
 
 > [!NOTE]
 >
