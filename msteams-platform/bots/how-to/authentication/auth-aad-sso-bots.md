@@ -3,12 +3,12 @@ title: Поддержка единого входа для ботов
 description: Узнайте, как получить маркер пользователя и разработчик бота может использовать карточку входа или службу azure bot с поддержкой карты OAuth.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 5ce3fab237c8190670292616c05ee3bf51b4e7cb
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: ea0c7efff7c5d31097226cd689d8988d5ef51694
+ms.sourcegitcommit: 4d1740b235000d51711a9170ac0f026c63c945ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503657"
+ms.lasthandoff: 07/04/2022
+ms.locfileid: "66611501"
 ---
 # <a name="use-sso-authentication-for-bots"></a>Использование проверки подлинности единого входа для ботов
 
@@ -19,7 +19,7 @@ ms.locfileid: "66503657"
 
 См. следующее видео, чтобы узнать о поддержке единого входа для ботов:
 <br>
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OASc>]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OASc]
 <br>
 
 ## <a name="bot-sso-at-runtime"></a>Единый вход для ботов во время выполнения
@@ -385,7 +385,7 @@ ms.locfileid: "66503657"
 
 |**Название примера** | **Описание** |**.NET** |**C#** |**Node.js** |
 |----------------|-----------------|--------------|--------------|--------------|
-|Bot Framework SDK | В этом примере кода показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
+|Bot Framework SDK | В этом примере кода показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
