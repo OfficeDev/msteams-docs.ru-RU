@@ -1,14 +1,14 @@
 ---
-title: Новые возможности для разработчиков в Teams
-description: В этой схеме обучения вы узнаете о новых функциях разработчика и улучшениях этих функций в Microsoft Teams.
+title: Новые и обновленные возможности для разработчиков в Teams
+description: Представленные новые возможности разработчиков в Microsoft Teams и обновления этих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 3ab4c771bb0bf0cab1fb7c71f2995d18af7b4289
-ms.sourcegitcommit: 779aa3220f6448a9dbbaea57e667ad95b5c39a2a
+ms.openlocfilehash: 52a8c9744fdc00b5e1305575f177883cb6c9ead4
+ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66561618"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66658959"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 

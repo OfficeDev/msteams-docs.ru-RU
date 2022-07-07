@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 4b93e7118cbd9b22ef7022f19b9538fe156b59f6
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 5c826e3f8b041f1ef136fc8e7941c74ac35e7773
+ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503496"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66659029"
 ---
 # <a name="create-incoming-webhooks"></a>Создание входящих веб-перехватчиков
 
@@ -106,3 +106,4 @@ ms.locfileid: "66503496"
 * [Создание и отправка сообщений](~/webhooks-and-connectors/how-to/connectors-using.md)
 * [Поделиться в Teams из веб-приложений](~/concepts/build-and-test/share-to-teams-from-web-apps.md)
 * [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
+* [Безопасный доступ и данные в Azure Logic Apps](/azure/logic-apps/logic-apps-securing-a-logic-app)

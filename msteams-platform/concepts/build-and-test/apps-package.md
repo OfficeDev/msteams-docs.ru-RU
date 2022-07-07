@@ -3,12 +3,12 @@ title: Упаковка приложения
 description: Узнайте, как упаковать приложение Microsoft Teams со значками для тестирования, отправки и публикации в магазине.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: 670243f3b82408592af944fd2c8ae4fc2c739ebc
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: d686b30a9a5a00fd73c72dd6212ed95d935ea501
+ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558564"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66659020"
 ---
 # <a name="create-teams-app-package"></a>Создание пакета приложения Teams
 
