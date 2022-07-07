@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: Узнайте, как создавать прямые ссылки, использовать их и перемещаться по ним в приложениях Microsoft Teams с помощью вкладок.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: afa3ea185247ab4edb5ada3b657c4d1259674bc5
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 2927a963387ccd2bab5401f15f3a3f21cbc714dc
+ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485680"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66658931"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -252,7 +252,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/meeting/new?subjec
 ```javascript
 // Open an app install dialog from your tab
 if(appInstallDialog.isSupported()) {
-    const dialogPromise = appInstallDialog.openAppInstallDialog({ appID: <appId>});
+    const dialogPromise = appInstallDialog.openAppInstallDialog({ appId: <appId>});
     dialogPromise.
       then((result) => {/*Successful operation*/}).
       catch((error) => {/*Unsuccessful operation*/});

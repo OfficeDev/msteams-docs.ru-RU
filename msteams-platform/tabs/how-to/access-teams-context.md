@@ -3,12 +3,12 @@ title: Получение контекста для вкладки
 description: В этом модуле вы узнаете, как получить контекст пользователя для вкладок, контекста пользователя и сведений о контексте Access.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: d6723c4733bd127dd32970e3d1059a75771c8bee
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 1e530532b2cad41279a504d89fcdc2251a0455b7
+ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142313"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66658921"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -27,7 +27,7 @@ ms.locfileid: "66142313"
 * Вы создаете или связываете ресурсы в приложении с указанным пользователем или командой.
 * Вы инициируете поток проверки подлинности из Microsoft Azure Active Directory (Azure AD) или другого поставщика удостоверений, и вам не нужно повторно вводить имя пользователя.
 
-Дополнительные сведения см. в статье [о проверке подлинности пользователя в Microsoft Teams](~/concepts/authentication/authentication.md).
+Дополнительные сведения см. в [статье о проверке подлинности пользователя в Microsoft Teams](~/concepts/authentication/authentication.md).
 
 > [!IMPORTANT]
 > Хотя эти сведения о пользователе помогают обеспечить бесперебойное взаимодействие с пользователем, их не следует использовать в качестве подтверждения личности.  Например, злоумышленник может загрузить страницу в браузере и отобразить вредоносные сведения или запросы.
@@ -37,7 +37,7 @@ ms.locfileid: "66142313"
 Доступ к контекстной информации можно получить двумя способами:
 
 * Вставка значений заполнителей URL-адресов.
-* Используйте Microsoft Teams [клиентского пакета SDK для JavaScript](/javascript/api/overview/msteams-client).
+* Используйте [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client).
 
 ### <a name="get-context-by-inserting-url-placeholder-values"></a>Получение контекста путем вставки значений заполнителей URL-адресов
 
@@ -61,15 +61,15 @@ ms.locfileid: "66142313"
 * Имя **пользователя — user@example.com**.
 * Идентификатор клиента компании — **e2653c-etc**.
 * Они являются членами Office 365 с идентификатором **00209384 и т. д**.
-* Пользователь настроит темную Teams **теме**.
+* Пользователь настроит темную тему **Teams.**
 
-При настройке вкладки Teams следующий URL-адрес:
+При настройке вкладки Teams вызывает следующий URL-адрес:
 
 `https://www.contoso.com/config?name=user@example.com&tenant=e2653c-etc&group=00209384-etc&theme=dark`
 
-### <a name="get-context-by-using-the-microsoft-teams-javascript-library"></a>Получение контекста с помощью Microsoft Teams JavaScript
+### <a name="get-context-by-using-the-microsoft-teams-javascript-library"></a>Получение контекста с помощью библиотеки JavaScript для Microsoft Teams
 
-git-issue-clarify-the-full-set-of-values-any-context-object-property-can-take Можно также получить сведения, перечисленные выше, с помощью клиентского [пакета SDK](/javascript/api/overview/msteams-client) `microsoftTeams.getContext(function(context) { /* ... */ })`Microsoft Teams JavaScript путем вызова .
+Вы также можете получить сведения, перечисленные выше, с помощью [клиентского SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client), вызвав `microsoftTeams.getContext(function(context) { /* ... */ })`.
 
 В следующем коде приведен пример переменной контекста:
 
@@ -114,7 +114,7 @@ git-issue-clarify-the-full-set-of-values-any-context-object-property-can-take М
 }
 ```
 
-Вы также можете получить перечисленные выше сведения с помощью Microsoft Teams [клиентского пакета SDK для JavaScript](/javascript/api/overview/msteams-client), вызвав функцию`app.getContext()`. Дополнительные сведения см. в свойствах [интерфейса контекста](/javascript/api/@microsoft/teams-js/app.context?view=msteams-client-js-latest&preserve-view=true).
+Вы также можете получить сведения, перечисленные выше, с помощью клиентского [пакета SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) , вызвав функцию `app.getContext()` . Дополнительные сведения см. в свойствах [интерфейса контекста](/javascript/api/@microsoft/teams-js/app.context?view=msteams-client-js-latest&preserve-view=true).
 
 
 ## <a name="retrieve-context-in-private-channels"></a>Получение контекста в частных каналах
@@ -126,9 +126,9 @@ git-issue-clarify-the-full-set-of-values-any-context-object-property-can-take М
 * `groupId`: не определено для частных каналов
 * `teamId`: задайте значение threadId закрытого канала.
 * `teamName`: задайте имя частного канала.
-* `teamSiteUrl`: задайте URL-адрес отдельного уникального SharePoint для частного канала.
+* `teamSiteUrl`: задайте URL-адрес отдельного уникального сайта SharePoint для частного канала.
 * `teamSitePath`: задайте путь к отдельному уникальному сайту SharePoint для частного канала.
-* `teamSiteDomain`: задайте домен уникального домена SharePoint для частного канала.
+* `teamSiteDomain`: задайте домен уникального домена сайта SharePoint для частного канала.
 
 Если на странице используется любое из этих значений, `channelType` `Private` значение поля должно быть таким, чтобы определить, загружена ли страница в частный канал и может ли она отвечать соответствующим образом.
 
@@ -144,9 +144,9 @@ git-issue-clarify-the-full-set-of-values-any-context-object-property-can-take М
 * `groupId`: не определено для общих каналов.
 * `teamId`: задайте для `threadId` команды общий доступ к каналу для текущего пользователя. Если у пользователя есть доступ к нескольким командам, задается команда, `teamId` которая размещает (создает) общий канал.
 * `teamName`: задайте имя команды, канал является общим для текущего пользователя. Если у пользователя есть доступ к нескольким командам, задается команда, `teamName` которая размещает (создает) общий канал.
-* `teamSiteUrl`: задайте URL-адрес отдельного уникального SharePoint для общего канала.
-* `teamSitePath`: задайте путь к отдельному уникальному SharePoint для общего канала.
-* `teamSiteDomain`: задайте домен отдельного уникального SharePoint для общего канала.
+* `teamSiteUrl`: задайте URL-адрес отдельного уникального сайта SharePoint для общего канала.
+* `teamSitePath`: задайте путь к отдельному уникальному сайту SharePoint для общего канала.
+* `teamSiteDomain`: задайте домен отдельного уникального домена сайта SharePoint для общего канала.
 
 Помимо этих изменений полей, для общих каналов доступны два новых поля:
 
@@ -156,7 +156,7 @@ git-issue-clarify-the-full-set-of-values-any-context-object-property-can-take М
 Если на странице используется любое из этих значений, `channelType` `Shared` значение поля должно быть таким, чтобы определить, загружена ли страница в общем канале и может ли она отвечать соответствующим образом.
 
 > [!NOTE]
-> Каждый раз, когда пользователь перезапускает или перезагружает рабочий или веб-клиент Teams, создается новый sessionID, который отслеживается сеансом Teams, а когда пользователь выходит из приложений Teams и перезагружает его на платформе Teams, создается новый sessionID приложения, который отслеживается сеансом приложения.
+> Каждый раз, когда пользователь перезапускает или перезагружает рабочий или веб-клиент Teams, создается новый sessionID, который отслеживается сеансом Teams, в то время как когда пользователь выходит из приложений Teams и перезагружает его на платформе Teams, создается новый sessionID приложения, который отслеживается сеансом приложения.
 
 ## <a name="handle-theme-change"></a>Обработка изменения темы
 
@@ -164,7 +164,7 @@ git-issue-clarify-the-full-set-of-values-any-context-object-property-can-take М
 
 Аргументом `theme` в функции является строка со значением `default`, `dark`или `contrast`.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
