@@ -1,14 +1,14 @@
 ---
 title: Новые и обновленные возможности для разработчиков в Teams
-description: Представленные новые возможности разработчиков в Microsoft Teams и обновления этих возможностей.
+description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 52a8c9744fdc00b5e1305575f177883cb6c9ead4
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
+ms.openlocfilehash: 1013ebe18f10d848ff44a26085a0353d851b613c
+ms.sourcegitcommit: 6b1d06de67fe26b657ffb0cffebc0df9ccd843ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658959"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66680680"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
