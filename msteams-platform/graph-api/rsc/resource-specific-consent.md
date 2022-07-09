@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 158905194ea29bfd2aca8149b8f8d6236905b754
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 8501cab5db2017d120ef72f61e43691104df7fa1
+ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484868"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695316"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -75,9 +75,9 @@ ms.locfileid: "66484868"
 
 ## <a name="enable-rsc-in-your-application"></a>Включить RSC в приложении
 
-1. [Настройте параметры согласия на портале Azure AD](#configure-consent-settings-in-the-azure-ad-portal).
-    1. [Настройте параметры согласия владельца группы для RSC в команде](#configure-group-owner-consent-settings-for-rsc-in-a-team).
-    1. [Настройте параметры согласия пользователя для RSC в чате](#configure-user-consent-settings-for-rsc-in-a-chat).
+1. [Настройка параметров согласия](#configure-consent-settings).
+    1. [Настройте параметры согласия владельца группы для RSC в команде с помощью Azure AD портала](#configure-group-owner-consent-settings-for-rsc-in-a-team-using-the-azure-ad-portal).
+    1. [Настройка параметров согласия владельца чата для RSC в чате с помощью API Microsoft Graph](#configure-chat-owner-consent-settings-for-rsc-in-a-chat-using-the-microsoft-graph-apis).
 1. [Зарегистрируйте приложение на платформе Microsoft Identity с помощью портала Azure AD.](#register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal).
 1. [ Просмотрите разрешения приложения на портале Azure AD](#review-your-application-permissions-in-the-azure-ad-portal).
 1. [Получите токен доступа от платформы идентификации.](#obtain-an-access-token-from-the-microsoft-identity-platform).
@@ -87,9 +87,9 @@ ms.locfileid: "66484868"
     1. [Проверьте приложение на наличие добавленных разрешений RSC в команде.](#check-your-app-for-added-rsc-permissions-in-a-team).
     1. [Проверьте приложение на наличие добавленных разрешений RSC в чате](#check-your-app-for-added-rsc-permissions-in-a-chat).
 
-## <a name="configure-consent-settings-in-the-azure-ad-portal"></a>Настройте параметры согласия на портале Azure AD.
+## <a name="configure-consent-settings"></a>Настройка параметров согласия
 
-### <a name="configure-group-owner-consent-settings-for-rsc-in-a-team"></a>Настройте параметры согласия владельца группы для RSC в команде
+### <a name="configure-group-owner-consent-settings-for-rsc-in-a-team-using-the-azure-ad-portal"></a>Настройка параметров согласия владельца группы для RSC в команде с помощью портала Azure AD
 
 Вы можете включить или отключить [согласие владельца группы](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-portal) непосредственно на портале Microsoft Azure:
 
@@ -101,17 +101,13 @@ ms.locfileid: "66484868"
 
 Кроме того, вы можете включить или отключить согласие владельца группы с помощью PowerShell, следуя инструкциям, описанным в разделе [Настройка согласия владельца группы с помощью PowerShell](/azure/active-directory/manage-apps/configure-user-consent-groups?tabs=azure-powershell).
 
-### <a name="configure-user-consent-settings-for-rsc-in-a-chat"></a>Настройте параметры согласия пользователя для RSC в чате
+### <a name="configure-chat-owner-consent-settings-for-rsc-in-a-chat-using-the-microsoft-graph-apis"></a>Настройка параметров согласия владельца чата для RSC в чате с помощью API Microsoft Graph
 
-Вы можете включить или отключить [ согласие пользователя](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) непосредственно на портале Azure:
+Вы можете включить или отключить RSC для чатов с помощью API Graph. Свойство в `isChatResourceSpecificConsentEnabled` [**teamsAppSettings**](/graph/api/teamsappsettings-update#example-1-enable-installation-of-apps-that-require-resource-specific-consent-in-chats-meetings) определяет, включен ли RSC чата в клиенте.
 
-1. Войдите на [Портал Azure](https://portal.azure.com) как [Глобальный администратор или администратор компании](/azure/active-directory/roles/permissions-reference#global-administrator&preserve-view=true).
-1. Выберите **Azure Active Directory** > **Корпоративные приложения** > **Согласия и разрешения** > [**Параметры согласия пользователя**](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/UserSettings).
-1. Включайте, отключайте или ограничивайте согласие пользователя с помощью элемента управления **Согласие пользователя для приложений**. По умолчанию установлено значение **Разрешить согласие пользователя для приложений**. Чтобы участник чата мог установить приложение с помощью RSC, для этого пользователя должно быть включено согласие пользователя.
+   ![Конфигурация команды RSC Graph](../../assets/images/rsc/graph-rsc-chat-configuration.png)
 
-    ![Конфигурация чата RSC Azure](../../assets/images/azure-rsc-chat-configuration.png)
-
-Кроме того, вы можете включить или отключить согласие пользователя с помощью PowerShell, следуя инструкциям, описанным в разделе [Настройка согласия пользователя с помощью PowerShell](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-powershell).
+>  Значение свойства по умолчанию **—ChatResourceSpecificConsentEnabled** зависит от того, включены или отключены параметры согласия пользователя в клиенте при первом использовании RSC для чатов.[](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) Это может быть первый раз, когда a) получение [**teamsAppSettings**](/graph/api/teamsappsettings-get) или б) установка приложения Teams с разрешениями для конкретных ресурсов в чате или собрании.
 
 ## <a name="register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal"></a>Зарегистрируйте приложение на платформе Microsoft Identity с помощью портала Azure AD.
 

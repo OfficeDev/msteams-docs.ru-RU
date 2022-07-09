@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: события бот канал сообщение реакция беседа
-ms.openlocfilehash: 9234b192788a1449d5da344b271f5028ce7fd110
-ms.sourcegitcommit: 73e6767127cb27462f819acd71a1e480580bcf83
+ms.openlocfilehash: 80e2bba2d610526a8a4485be79282432b27386fd
+ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2022
-ms.locfileid: "65906276"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695329"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -409,7 +409,7 @@ async def on_teams_channel_restored(
 
 1. Когда сам бот устанавливается и добавляется в беседу
 
-   > В контексте команды для действия conversation.id `id` канал, выбранный пользователем во время установки приложения, или канал, из которого был установлен бот (в настоящее время доступен в общедоступной предварительной версии [разработчика](../../../resources/dev-preview/developer-preview-intro.md)).
+   > В контексте `id` команды для действия conversation.id канал, выбранный пользователем во время установки приложения, или канал, в котором был установлен бот.
 
 2. При добавлении пользователя в беседу, в которой установлен бот
 
@@ -1335,7 +1335,7 @@ async def on_reactions_removed(
 ![Создание выбранного канала](~/assets/videos/addteam.gif)
 
 > [!NOTE]
-> Выбранный идентификатор канала `installationUpdate` задается только при добавлении событий, отправляемых при установке приложения в команду (в настоящее время доступно в общедоступной предварительной [версии разработчика](../../../resources/dev-preview/developer-preview-intro.md)).
+> Выбранный идентификатор канала задается только при `installationUpdate` добавлении событий, отправляемых при установке приложения в команду.
 
 # <a name="c"></a>[C#](#tab/dotnet)
 
@@ -1463,7 +1463,7 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 
