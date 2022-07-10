@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 1013ebe18f10d848ff44a26085a0353d851b613c
-ms.sourcegitcommit: 6b1d06de67fe26b657ffb0cffebc0df9ccd843ef
+ms.openlocfilehash: bb569e2a6979c0a576ebaa7a8115da984dcc5bad
+ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66680680"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695294"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -47,6 +47,7 @@ ms.locfileid: "66680680"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 08.07.2022| Обновление идентификатора канала отправки, выбранного пользователем во время установки приложения для ботов, с помощью событий обновления установки и бесед |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
 | 16.06.2022 | Обновленные возможности мультимедиа для поддержки классических и мобильных устройств| Интеграция возможностей устройств > [Интеграция возможностей мультимедиа](concepts/device-capabilities/media-capabilities.md)|
 | 08.06.2022 | Необязательный отзыв карточки для сообщения об успешном выполнении| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
 | 03.06.2022 | Обновлен модуль добавления проверки подлинности для включения единого входа для приложения с вкладками с новой структурой и процедурами. | Добавить проверку подлинности > Вкладки > [Включить единый вход в приложении с вкладками](tabs/how-to/authentication/tab-sso-overview.md) |
@@ -268,7 +269,6 @@ ms.locfileid: "66680680"
 | -------- | --------- | ------------------ |
 | 30.06.2022 | Приложения для мгновенных собраний, индивидуальных и групповых звонков| Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md)|
 | 16.06.2022 | Развертывание ссылки для отправки в Teams из веб-приложений| Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
-| 06.06.2022| Обновление бесед и событий установки в боте Teams |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
 |24.05.2022| Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
 | 04/06/2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 07.02.2022 | Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
