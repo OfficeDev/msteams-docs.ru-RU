@@ -5,14 +5,14 @@ description: В этом модуле вы узнаете, как создать
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 65cf1506e6851dd6662ea4637cfb53179532798a
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 6252531565693f318550398967db16297bfd40c0
+ms.sourcegitcommit: 526ad8562d3bacc13141cd7f695aa5f3f3752052
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503510"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737421"
 ---
-# <a name="create-a-commands-menu"></a>Создание меню команд
+# <a name="create-a-commands-menu"></a>Создать меню команд
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "66503510"
 1. Откройте Teams и выберите **Приложения** в левой области. На странице **Приложения** найдите **App Studio** и выберите **Открыть**.
 
    > [!WARNING]
-   > Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio станет не рекомендованным к использованию не позднее 30 июня 2022 г.
+   > Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio будет объявлен нерекомендуемым до 1 августа 2022 г.
 
    :::image type="content" source="conversations/Media/AppStudio.png" alt-text="appstudio-media":::
 
