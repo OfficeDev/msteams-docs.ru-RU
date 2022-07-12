@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 95d30f025856b7466fd66a71b3dcbba4b4738452
-ms.sourcegitcommit: 4d1740b235000d51711a9170ac0f026c63c945ac
+ms.openlocfilehash: d37acc71ade61f23bbca32257ef7b30578948bcc
+ms.sourcegitcommit: 526ad8562d3bacc13141cd7f695aa5f3f3752052
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2022
-ms.locfileid: "66611508"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737407"
 ---
 # <a name="prepare-your-teams-store-submission"></a>Подготовка к отправке в магазин Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "66611508"
 Хотя ваше приложение может работать в тестовой среде, необходимо проверить пакет приложения, чтобы избежать проблем при отправке.
 
 > [!WARNING]
-> Если вы использовали App Studio, рекомендуется попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки и распространения приложений Teams, а также управления ими. App Studio станет не рекомендованным к использованию не позднее 30 июня 2022 г.
+> Если вы использовали App Studio, рекомендуется попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки и распространения приложений Teams, а также управления ими. Решение App Studio будет упразднено к 1 августа 2022 г.
 
 Средство проверки приложений Microsoft Teams помогает выявлять и устранять проблемы перед отправкой в Центр партнеров. Средство автоматически проверяет конфигурации вашего приложения, используя те же тестовые сценарии, которые будут использоваться во время проверки в магазине.
 
