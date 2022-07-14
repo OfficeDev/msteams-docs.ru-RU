@@ -6,12 +6,12 @@ ms.author: nintan
 ms.localizationpriority: medium
 ms.topic: overview of multiple environment
 ms.date: 11/29/2021
-ms.openlocfilehash: da5da86bf5e96989cf962d88105c47affa899f6e
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 13b9f640c57168858ee7c48a8f9dfc83b005c05a
+ms.sourcegitcommit: 4eeede81a0ae8ec985c6a1ad4f608df58371402f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485652"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66793049"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
@@ -42,7 +42,7 @@ ms.locfileid: "66485652"
 
 **Чтобы добавить другую удаленную среду**:
 
-1. Выберите панель **"Добавить** :::image type="content" source="../assets/images/teams-toolkit-v2/add-sso/teams-toolkit-sidebar-icon.png" alt-text="боковую панель"::: " для единого входа Teams на левой панели навигации.
+1. Выберите панель **"Добавить** :::image type="content" source="~/assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png" alt-text="боковую панель"::: " для единого входа Teams на левой панели навигации.
 2. Выберите **+Teams: Создайте среду в** разделе **"Среда** ", как показано на следующем рисунке:
 
    :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create new env.png" alt-text="создать":::
@@ -78,7 +78,7 @@ ms.locfileid: "66485652"
 
 | Сценарии | Расположение| Описание |
 | --- | --- | --- |
-| Настройка ресурса Azure | <ul> <li>Файлы Bicep в `templates/azure`</li> <li>`.fx/azure.parameters.<envName>.json`</li></ul> | [Настройка параметров и шаблонов ARM](provision.md#customize-arm-parameters-and-templates) |
+| Настройка ресурса Azure | <ul> <li>Файлы Bicep в `templates/azure`</li> <li>`.fx/azure.parameters.<envName>.json`</li></ul> | [Настройка параметров и шаблонов ARM](provision.md#customize-arm-template-files) |
 | Повторное использование существующего приложения Azure AD для приложения Teams  | <ul> <li>Раздел `auth` в `.fx/config.<envName>.json`</li> </ul> |  [Использование существующего приложения Azure AD для приложения Teams](provision.md#use-an-existing-azure-ad-app-for-your-teams-app) |
 | Повторное использование существующего приложения Azure AD для бота | <ul> <li>Раздел `bot` в `.fx/config.<envName>.json`</li> </ul> | [Использование существующего приложения Azure AD для бота](provision.md#use-an-existing-azure-ad-app-for-your-bot) |
 | Пропустить добавление пользователя во время подготовки SQL | <ul> <li>Свойство `skipAddingSqlUser` в `.fx/config.<envName>.json`</li> </ul> | [Пропустить добавление пользователя для базы данных SQL](provision.md#skip-adding-user-for-sql-database) |

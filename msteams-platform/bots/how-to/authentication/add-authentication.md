@@ -5,12 +5,12 @@ description: Узнайте, как добавить проверку подли
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 8470e281d7a6f3c0e18acda0548bf1b9a7480d85
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 5fc21d6e0e761da71670035cd2af1ee2006cc9c6
+ms.sourcegitcommit: 4eeede81a0ae8ec985c6a1ad4f608df58371402f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558858"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66792972"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 
@@ -123,7 +123,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 1. В разделе **Секреты клиента** выберите **Новый секрет клиента**. Появится окно **Добавить секрет клиента**.
 
-    ![Новый секрет клиента](~/assets/images/adaptive-cards/new-client-secret.png)
+    ![Новый секрет клиента](~/assets/images/meetings-side-panel/newclientsecret.png)
 
 1. Введите **описание** и нажмите **Добавить**.
 
@@ -143,7 +143,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 1. Нажмите **Каналы** в левой области и выберите **Microsoft Teams** :::image type="icon" source="../../../assets/icons/teams-icon.png":::.
 
-   :::image type="content" source="../../../assets/images/adaptive-cards/channel-teams.png" alt-text="Канал Teams":::
+    :::image type="content" source="../../../assets/images/adaptive-cards/channel-teams.png" alt-text="Выбор Teams в каналах":::
 
 1. Установите флажок, чтобы принять условия обслуживания, и выберите **Принять**.</br>
 
@@ -635,7 +635,7 @@ protected virtual Task OnSigninVerifyStateAsync(ITurnContext<IInvokeActivity> tu
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
-| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Teams. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
 | Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показана система единого входа для Tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
