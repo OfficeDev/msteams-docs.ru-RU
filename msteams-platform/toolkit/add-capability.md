@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 81cddad2297ec526f94a3ab362422028b14b4598
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 90a1e28f4c7bb3d0bc9530fc1af8ad4d4e373c9b
+ms.sourcegitcommit: 0c734a5809ad6eb36255c97f38589c67d0971741
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66557990"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66830794"
 ---
 # <a name="add-capabilities-to-teams-apps"></a>Добавление возможностей в приложения Teams
 
@@ -20,7 +20,7 @@ ms.locfileid: "66557990"
 |**Возможность**|**Описание**|
 |--------|-------------|
 | Вкладки |  Вкладки — это простые HTML-теги, которые ссылаются на домены, объявленные в манифесте приложения. Вкладки можно добавлять в составе канала внутри команды, группового чата или личного приложения для отдельного пользователя.|
-| боты; |  Боты помогают взаимодействовать с веб-службой с помощью текстовых, интерактивных карточек и модулей задач.|
+| Боты |  Боты помогают взаимодействовать с веб-службой с помощью текстовых, интерактивных карточек и модулей задач.|
 | Расширения для сообщений | Расширения сообщений помогают взаимодействовать с веб-службой с помощью кнопок и форм в клиенте Microsoft Teams.|
 
 ## <a name="advantages"></a>Преимущества
@@ -61,7 +61,7 @@ ms.locfileid: "66557990"
    1. **Введите Teams:Add features. (Введите Teams:Add**
    1. Нажмите клавишу **ВВОД**.
 
-       :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/Teams-add-features.png" alt-text="Функция команды":::
+      :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/teams-add-features.png" alt-text="Добавление возможностей с помощью палитры команд.":::
 
    1. Во всплывающем окне выберите возможность добавления в проект.
 

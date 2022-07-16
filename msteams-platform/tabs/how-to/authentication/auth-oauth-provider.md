@@ -3,12 +3,12 @@ title: Использование внешних поставщиков OAuth
 description: В этом модуле вы узнаете, как выполнять проверку подлинности с помощью внешних поставщиков OAuth и как добавить ее во внешний браузер
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: a27d4fdb861ef7e893807af7a4427662a61fa021
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 487e9c07615f3ed23f5ca43e5c7e6e4a98b8d0eb
+ms.sourcegitcommit: 0c734a5809ad6eb36255c97f38589c67d0971741
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558767"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66830787"
 ---
 # <a name="use-external-oauth-providers"></a>Использование внешних поставщиков OAuth
 
@@ -122,7 +122,7 @@ function authenticate(authenticateParameters?: AuthenticateParameters)
    Стороннее приложение создает прямую ссылку для мобильного приложения Teams в следующем формате и отправляет код аутентификации с кодом сеанса обратно в Teams.
 
    ```JavaScript
-   return res.redirect(`msteams://teams.microsoft.com/l/auth-callback?authId=${state.authId}&code=${req.query.code}`)
+   return res.redirect(`msteams://teams.microsoft.com/l/auth-callback?authId=${state.authId}&result=${req.query.code}`)
    ```
 
  8. Teams вызывает обратный вызов успеха и отправляет результат.

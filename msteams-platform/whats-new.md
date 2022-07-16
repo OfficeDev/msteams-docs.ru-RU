@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: bb569e2a6979c0a576ebaa7a8115da984dcc5bad
-ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
+ms.openlocfilehash: a358652f361dc080d916c4d548363776e7c092a4
+ms.sourcegitcommit: 0c734a5809ad6eb36255c97f38589c67d0971741
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695294"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66830808"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -269,15 +269,11 @@ ms.locfileid: "66695294"
 | -------- | --------- | ------------------ |
 | 30.06.2022 | Приложения для мгновенных собраний, индивидуальных и групповых звонков| Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md)|
 | 16.06.2022 | Развертывание ссылки для отправки в Teams из веб-приложений| Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
-|24.05.2022| Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
+|24.05.2022| Улучшенная совместная работа с Live Share SDK | Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
 | 04/06/2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
-| 07.02.2022 | Инструменты и пакеты SDK |Набор средств Teams для Visual Studio Code > </br> • Добавление возможностей в приложение Teams > [Добавление возможностей в приложения Teams](toolkit/add-capability.md) </br> • Добавление облачных ресурсов в приложение Teams > [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
-| 03.02.2022 | Представлен манифест приложения версии 1.12 | • Манифест приложения > [Схема манифеста приложения](resources/schema/manifest-schema.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
-|17.01.2022 | Выбор людей в адаптивных карточках для мобильных устройств  | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
-|10.01.2022 | Наборы средств Teams для Visual Studio Code | Инструменты и SDK > Набор средств Teams для Visual Studio Code > [Основы набора средств Teams](toolkit/teams-toolkit-fundamentals.md) |
-| 24.12.2021 | Представлены пошаговые инструкции по предоставлению разрешений для устройств вкладок | Основы приложений > Возможности устройств > [Пошаговые инструкции по предоставлению разрешений для устройств вкладок](sbs-tab-device-permissions.yml) |
-| 15.11.2021 | Личные вкладки и расширения для обмена сообщениями работают в Outlook и Office | [Расширение приложений Teams в Microsoft 365](~/m365-apps/overview.md) |
-| 28.10.2021 |В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > Сообщения в беседах ботов > [Получение всех сообщений с помощью RSC](~/bots/how-to/conversations/channel-messages-with-rsc.md) </br> • Создание ботов > Беседы ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) </br> • Манифест приложения > Общедоступная предварительная версия для разработчиков > [схема манифеста в предварительной версии для разработчиков](~/resources/schema/manifest-schema-dev-preview.md) |
+| 03.02.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
+| 17.01.2022 | Выбор людей в адаптивных карточках для мобильных устройств | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
+| 28.10.2021 |В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) |
 | 16.06.2021 | Согласие с определением ресурсов для чатов | • Использование данных Teams в Microsoft Graph > [Разрешение для конкретного ресурса](graph-api/rsc/resource-specific-consent.md) </br> • Тестирование приложения > Microsoft Graph > [Тестирование разрешений для конкретных ресурсов в Teams](graph-api/rsc/test-resource-specific-consent.md)|
 
 Дополнительные сведения см. в [обзоре предварительной версии для разработчиков Teams](~/resources/dev-preview/developer-preview-intro.md).
