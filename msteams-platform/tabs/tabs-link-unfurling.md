@@ -5,16 +5,18 @@ description: Узнайте, как развернуть ссылку, откр�
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: medium
-ms.openlocfilehash: fd3d38ce3772137bfcfa121a886c5271246096b6
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 9a12a32f15f0eb580b30897459d28b16bc88dccc
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484937"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841991"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Развертывание ссылок вкладок и представление "Экран"
 
 Представление стадии — это новый компонент пользовательского интерфейса. Он позволяет отобразить содержимое, открытое в Полноэкранном режиме в Teams и закрепленное как вкладка.
+
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
 ## <a name="stage-view"></a>Представление "Экран"
 
@@ -28,7 +30,7 @@ ms.locfileid: "66484937"
 
 |Представление "Экран"|Модуль задач|
 |:-----------|:-----------|
-|Представление "Экран" удобно использовать, если у вас есть форматированное содержимое, которое нужно показать пользователям, например страница, панель мониторинга, файл и т. д. Оно предоставляет широкие возможности отрисовки вашего содержимого на полноэкранном холсте.|[Модуль задач](../task-modules-and-cards/task-modules/task-modules-tabs.md) особенно удобен для отображения сообщений, которые требуют внимания пользователя, или сбора сведений, необходимых для перехода к следующему шагу.|
+|Представление "Экран" удобно использовать, если у вас есть форматированное содержимое, которое нужно показать пользователям, например страница, панель мониторинга, файл и т. д. Он предоставляет широкие возможности, которые помогают отрисовке содержимого на холсте полноэкранного просмотра.|[Модуль задач](../task-modules-and-cards/task-modules/task-modules-tabs.md) особенно удобен для отображения сообщений, которые требуют внимания пользователя, или сбора сведений, необходимых для перехода к следующему шагу.|
   
 ## <a name="invoke-stage-view"></a>Вызов представления "Экран"
 
@@ -87,17 +89,18 @@ ms.locfileid: "66484937"
 * Бот отвечает кодом `200`.
 
 > [!NOTE]
+
 > В мобильных клиентах Teams вызов представления Stage для приложений, распространяемых через [Teams store](/platform/concepts/deploy-and-publish/apps-publish-overview.md) и не оптимизированных для мобильных устройств, открывает веб-браузер устройства по умолчанию. Браузер открывает URL-адрес, указанный в параметре `websiteUrl` объекта `TabInfo`.
 
 ## <a name="invoke-stage-view-through-deep-link"></a>Вызов представления "Экран" через прямую ссылку
 
-Чтобы вызвать представление "Экран" через прямую ссылку на вкладке, необходимо заключить URL-адрес прямой ссылки в API `microsoftTeams.executeDeeplink(url)`. Прямую ссылку также можно передать через действие `OpenURL` в карточке.
+Чтобы вызвать представление "Экран" через прямую ссылку на вкладке, необходимо заключить URL-адрес прямой ссылки в API `app.openLink(url)`. Прямую ссылку также можно передать через действие `OpenURL` в карточке.
 
 ### <a name="syntax"></a>Синтаксис
 
-Ниже приведен синтаксис прямой ссылки.
+Ниже приведен синтаксис глубокой ссылки:
 
-<https://teams.microsoft.com/l/stage/{appId}/0?context>={"contentUrl":"contentUrl","websiteUrl":"websiteUrl","name":"Contoso"}
+`<https://teams.microsoft.com/l/stage/{appId}/0?context>={"contentUrl":"contentUrl","websiteUrl":"websiteUrl","name":"Contoso"}`
 
 ### <a name="examples"></a>Примеры
 
@@ -109,24 +112,24 @@ ms.locfileid: "66484937"
 
 Некодированный URL-адрес:
 
-<https://teams.microsoft.com/l/stage/be411542-2bd5-46fb-8deb-a3d5f85156f6/0?context>={"contentUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191,"websiteUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191?standalone=true,"title":"Quotes: Miscellaneous","threadId":"19:9UryYW9rjwnq-vwmBcexGjN1zQSNX0Y4oEAgtUC7WI81@thread.tacv2"}
+`<https://teams.microsoft.com/l/stage/be411542-2bd5-46fb-8deb-a3d5f85156f6/0?context>={"contentUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191","websiteUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191?standalone=true","title":"Quotes: Miscellaneous","threadId":"19:9UryYW9rjwnq-vwmBcexGjN1zQSNX0Y4oEAgtUC7WI81@thread.tacv2"}`
 
 Закодированный URL-адрес:
 
-<https://teams.microsoft.com/l/stage/be411542-2bd5-46fb-8deb-a3d5f85156f6/0?context=%7B%22contentUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%22%2C%22websiteUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%3Fstandalone%3Dtrue%22%2C%22title%22%3A%22Quotes%3A%20Miscellaneous%22%2C%22threadId%22%3A%2219:9UryYW9rjwnq-vwmBcexGjN1zQSNX0Y4oEAgtUC7WI81@thread.tacv2%22%7D>
+`<https://teams.microsoft.com/l/stage/be411542-2bd5-46fb-8deb-a3d5f85156f6/0?context=%7B%22contentUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%22%2C%22websiteUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%3Fstandalone%3Dtrue%22%2C%22title%22%3A%22Quotes%3A%20Miscellaneous%22%2C%22threadId%22%3A%2219:9UryYW9rjwnq-vwmBcexGjN1zQSNX0Y4oEAgtUC7WI81@thread.tacv2%22%7D>`
 
 **Пример 2. URL-адрес без threadId**
 
 Некодированный URL-адрес:
 
-<https://teams.microsoft.com/l/stage/43f56af0-8615-49e6-9635-7bea3b5802c2/0?context>={"contentUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191,"websiteUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191?standalone=true,"title":"Quotes: Miscellaneous"}
+`<https://teams.microsoft.com/l/stage/43f56af0-8615-49e6-9635-7bea3b5802c2/0?context>={"contentUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191","websiteUrl":"https://teams-alb.wakelet.com/teams/collection/e4173826-5dae-4de0-b77d-bfabafd6f191?standalone=true","title":"Quotes: Miscellaneous"}`
 
 Закодированный
 
-<https://teams.microsoft.com/l/stage/43f56af0-8615-49e6-9635-7bea3b5802c2/0?context=%7B%22contentUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%22%2C%22websiteUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%3Fstandalone%3Dtrue%22%2C%22title%22%3A%22Quotes%3A%20Miscellaneous%22%7D>
+`<https://teams.microsoft.com/l/stage/43f56af0-8615-49e6-9635-7bea3b5802c2/0?context=%7B%22contentUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%22%2C%22websiteUrl%22%3A%22https%3A%2F%2Fteams-alb.wakelet.com%2Fteams%2Fcollection%2Fe4173826-5dae-4de0-b77d-bfabafd6f191%3Fstandalone%3Dtrue%22%2C%22title%22%3A%22Quotes%3A%20Miscellaneous%22%7D>`
 
 > [!NOTE]
-> Перед вставкой URL-адреса необходимо закодировать все прямые ссылки. Некодированные URL-адреса не поддерживаются.
+> Перед вставка URL-адреса необходимо закодировать все глубокие ссылки. Некодированные URL-адреса не поддерживаются.
 >
 > * Параметр `name` необязателен в прямой ссылке. Если он не указан, его заменяет имя приложения.
 > * Прямую ссылку также можно передать через действие `OpenURL`.
@@ -146,7 +149,7 @@ ms.locfileid: "66484937"
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка в представлении "Экран" |Пример приложения со вкладкой Microsoft Teams для демонстрации вкладки в представлении "Экран".|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
+|Вкладка в представлении "Экран" |Пример приложения со вкладкой Microsoft Teams для демонстрации вкладки в представлении "Экран".|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
 

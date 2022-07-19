@@ -1,2 +1,2 @@
 > [!NOTE]
-> В этом разделе описывается версия 2.0.0 пакета SDK Microsoft Teams JavaScript. Если вы используете более раннюю версию, ознакомьтесь с общими сведениями о пакете [SDK Teams JS](msteams-docs/msteams-platform/tabs/how-to/../../../../../tabs/how-to/using-teams-client-sdk.md), чтобы получить рекомендации по различиям между версиями 1 и 2.
+> В этом разделе описывается версия 2.0.x клиентского пакета SDK javaScript для Microsoft Teams. Если вы используете более раннюю версию, ознакомьтесь с общими сведениями о пакете [SDK для Teams JS](msteams-docs/msteams-platform/tabs/how-to/../../../../../tabs/how-to/using-teams-client-sdk.md) , чтобы получить рекомендации по различиям между последней версией TeamsJS и более ранними версиями.

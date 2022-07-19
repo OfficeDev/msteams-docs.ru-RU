@@ -1,15 +1,15 @@
 ---
 title: Подключаемые модули Microsoft 365
 description: В этой статье вы узнаете о подключаемых модулях Microsoft 365, о списке подключаемых модулей и метках, о Microsoft 365, взаимодействии с One Note и многом другом.
-ms.topic: Microsoft 365 plugins
+ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: Surbhigupta
-ms.openlocfilehash: c09e2e15fd276c2007a989545cc5b5c0b23f2584
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 438093c5ffe9990c5aa7c8175131c654019c3120
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558592"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841752"
 ---
 # <a name="microsoft-365-plugins"></a>Подключаемые модули Microsoft 365
 

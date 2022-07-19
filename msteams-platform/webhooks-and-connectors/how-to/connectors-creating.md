@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как приступ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: dec9acbf7ba2f52303b04a5219de575a96a792e5
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: a0e135864fd7c7d9775731e6c46faf9f24242943
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485352"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841640"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -19,9 +19,10 @@ ms.locfileid: "66485352"
 В следующем видео показано, как создать соединители Office 365.
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OIzv]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OIzv>]
 <br>
 
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
 ## <a name="add-a-connector-to-teams-app"></a>Добавление соединителя в приложение Teams
 
@@ -51,20 +52,23 @@ ms.locfileid: "66485352"
 
 Чтобы интегрировать процесс конфигурации:
 
-1. Инициализация SDK происходит путем вызова `microsoftTeams.initialize()`.
-1. Вызовите `microsoftTeams.settings.setValidityState(true)` для включения параметра **Сохранить**.
+> [!NOTE]
+> Начиная с версии 2.0.0.0 клиентского пакета SDK для JavaScript для Teams API в пространстве имен параметров устарели  в пользу эквивалентных API-интерфейсов в пространстве имен страниц,  `pages.getConfig()` включая и другие API-интерфейсы `pages.config` во вложенном пространстве имен. Дополнительные сведения см. в статье ["Новые возможности TeamsJS версии 2.0"](../../tabs/how-to/using-teams-client-sdk.md#whats-new-in-teamsjs-version-20).
+
+1. Инициализация SDK происходит путем вызова `app.initialize()`.
+1. Вызовите `pages.config.setValidityState(true)` для включения параметра **Сохранить**.
 
     > [!NOTE]
-    > Необходимо вызвать `microsoftTeams.settings.setValidityState(true)` в ответ на выбор пользователя или обновление поля.
+    > Необходимо вызвать `microsoftTeams.pages.config.setValidityState(true)` в ответ на выбор пользователя или обновление поля.
 
-1. Зарегистрируйте обработчик событий `microsoftTeams.settings.registerOnSaveHandler()`, который будет вызван, когда пользователь выбирает **Сохранить**.
-1. Вызовите `microsoftTeams.settings.setSettings()`, чтобы сохранить настройки коннектора. Сохраненные настройки также отображаются в диалоговом окне конфигурации, если пользователь пытается обновить существующую конфигурацию вашего соединителя.
-1. Вызовите `microsoftTeams.settings.getSettings()` для получения свойств веб-перехватчика, включая URL-адрес.
+1. Зарегистрируйте обработчик событий `microsoftTeams.pages.config.registerOnSaveHandler()`, который будет вызван, когда пользователь выбирает **Сохранить**.
+1. Вызовите `microsoftTeams.pages.config.setConfig()`, чтобы сохранить настройки коннектора. Сохраненные настройки также отображаются в диалоговом окне конфигурации, если пользователь пытается обновить существующую конфигурацию вашего соединителя.
+1. Вызовите `microsoftTeams.pages.getConfig()` для получения свойств веб-перехватчика, включая URL-адрес.
 
     > [!NOTE]
-    > При первой загрузке страницы в случае перенастройки необходимо вызвать `microsoftTeams.settings.getSettings()`.
+    > При первой загрузке страницы в случае перенастройки необходимо вызвать `microsoftTeams.pages.getConfig()`.
 
-1. Зарегистрируйте обработчик событий `microsoftTeams.settings.registerOnRemoveHandler()`, который будет вызван, когда пользователь удаляет соединитель.
+1. Зарегистрируйте обработчик событий `microsoftTeams.pages.config.registerOnRemoveHandler()`, который будет вызван, когда пользователь удаляет соединитель.
 
 Это событие дает вашей службе возможность выполнять любые действия по очистке.
 
@@ -83,17 +87,18 @@ ms.locfileid: "66485352"
     </section>
 </div>
 
-<script src="https://statics.teams.microsoft.com/sdk/v1.5.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+<script src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js" integrity="sha384-Q2Z9S56exI6Oz/ThvYaV0SUn8j4HwS8BveGPmuwLXe4CvCUEGlL80qSzHMnvGqee" crossorigin="anonymous"></script>
 <script src="/Scripts/jquery-1.10.2.js"></script>
 
-<script type="text/javascript">
-
+<script type="module">
+        import {app, pages} from 'https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js';
+        
         function onClick() {
-            microsoftTeams.settings.setValidityState(true);
+            pages.config.setValidityState(true);
         }
 
-        microsoftTeams.initialize();
-        microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+        await app.initialize();
+        pages.config.registerOnSaveHandler(function (saveEvent) {
             var radios = document.getElementsByName('notificationType');
 
             var eventType = '';
@@ -103,22 +108,22 @@ ms.locfileid: "66485352"
                 eventType = radios[1].value;
             }
 
-            microsoftTeams.settings.setSettings({
-                 entityId: eventType,
+            await pages.config.setConfig({
+                entityId: eventType,
                 contentUrl: "https://YourSite/Connector/Setup",
                 removeUrl:"https://YourSite/Connector/Setup",
-                 configName: eventType
+                configName: eventType
                 });
 
-            microsoftTeams.settings.getSettings(function (settings) {
-                // We get the Webhook URL in settings.webhookUrl which needs to be saved. 
+            pages.getConfig().then(async (config) {
+                // We get the Webhook URL from config.webhookUrl which needs to be saved. 
                 // This can be used later to send notification.
             });
 
             saveEvent.notifySuccess();
         });
 
-        microsoftTeams.settings.registerOnRemoveHandler(function (removeEvent) {
+        pages.config.registerOnRemoveHandler(function (removeEvent) {
             alert("Removed" + JSON.stringify(removeEvent));
         });
 
@@ -128,46 +133,46 @@ ms.locfileid: "66485352"
 Чтобы проверить подлинность пользователя как часть загрузки вашей страницы, см. раздел [процесс проверки подлинности для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md), чтобы интегрировать вход при настройке страницы.
 
 > [!NOTE]
-> Из соображений совместимости между клиентами ваш код должен вызывать `microsoftTeams.authentication.registerAuthenticationHandlers()` с помощью URL-адреса и методов успешного или неудачного обратного вызова перед вызовом `authenticate()`.
+> До версии TeamsJS версии 2.0.0 код должен вызываться с использованием URL-адреса `authenticate()` и `microsoftTeams.authentication.registerAuthenticationHandlers()` методов обратного вызова успешного или неудачного вызова, прежде чем вызывать из-за совместимости между клиентами. Начиная с TeamsJS версии 2.0.0, *функция registerAuthenticationHandlers* не рекомендуется использовать для прямого вызова [authenticate()](/javascript/api/@microsoft/teams-js/authentication#@microsoft-teams-js-authentication-authenticate) с необходимыми параметрами проверки подлинности.
 
-#### <a name="getsettings-response-properties"></a>Свойства ответа `GetSettings`
+#### <a name="getconfig-response-properties"></a>Свойства ответа `getConfig`
 
 >[!NOTE]
->Параметры, возвращаемые вызовом `getSettings`, отличаются при вызове этого метода из вкладки и отличаются от задокументированных в [параметрах js](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings).
+>Параметры, возвращаемые `getConfig` вызовом, отличаются при вызове этого метода из вкладки и отличаются от параметров, задокументированных в [ссылке](/javascript/api/@microsoft/teams-js/pages#@microsoft-teams-js-pages-getconfig).
 
-В следующей таблице представлены параметры и сведения о свойствах ответа `GetSetting`:
+В следующей таблице представлены параметры и сведения о свойствах ответа `getConfig`:
 
 | Параметры   | Details |
 |-------------|---------|
-| `entityId`       | Идентификатор сущности, который задается кодом при вызове `setSettings()`. |
-| `configName`  | Имя конфигурации, заданное кодом при вызове `setSettings()`. |
-| `contentUrl` | URL-адрес страницы конфигурации, заданный кодом при вызове `setSettings()`. |
+| `entityId`       | Идентификатор сущности, который задается кодом при вызове `setConfig()`. |
+| `configName`  | Имя конфигурации, заданное кодом при вызове `setConfig()`. |
+| `contentUrl` | URL-адрес страницы конфигурации, заданный кодом при вызове `setConfig()`. |
 | `webhookUrl` | URL-адрес веб-перехватчика, созданный для соединителя. Используйте URL-адрес веб-перехватчика для POST структурированного JSON для отправки карточек на канал. `webhookUrl` возвращается только тогда, когда приложение успешно возвращает данные. |
 | `appType` | Возвращаемые значения могут быть `mail`или `groups``teams` соответствующими Office 365 почты, Office 365 групп или Teams соответственно. |
 | `userObjectId` | Уникальный идентификатор, соответствующий пользователю Office 365, который инициировал настройку соединителя. Он должен быть безопасен. Это значение можно использовать для связывания пользователя в Office 365, который настроил конфигурацию в вашей службе. |
 
 #### <a name="handle-edits"></a>Обработка изменений
 
-Код должен обрабатывать пользователей, которые возвращаются для изменения существующей конфигурации соединителя. Для этого вызовите `microsoftTeams.settings.setSettings()` во время начальной настройки со следующими параметрами:
+Код должен обрабатывать пользователей, которые возвращаются для изменения существующей конфигурации соединителя. Для этого вызовите `microsoftTeams.pages.config.setConfig()` во время начальной настройки со следующими параметрами:
 
 * `entityId` — это настраиваемый идентификатор, который представляет то, что пользователь настроил и понял с помощью службы.
 * `configName` — это имя, которое может получить код конфигурации.
 * `contentUrl` — это настраиваемый URL-адрес, который загружается, когда пользователь изменяет существующую конфигурацию соединителя.
 
-Этот вызов выполняется как часть обработчика событий сохранения. Затем при загрузке `contentUrl` код должен вызвать `getSettings()` для предварительного заполнения любых параметров или форм в пользовательском интерфейсе конфигурации.
+Этот вызов выполняется как часть обработчика событий сохранения. Затем при загрузке `contentUrl` код должен вызвать `getConfig()` для предварительного заполнения любых параметров или форм в пользовательском интерфейсе конфигурации.
 
 #### <a name="handle-removals"></a>Обработка удалений
 
-Обработчик событий можно выполнить, когда пользователь удаляет существующую конфигурацию соединителя. Этот обработчик регистрируется путем вызова `microsoftTeams.settings.registerOnRemoveHandler()`. Этот обработчик используется для выполнения операций очистки, таких как удаление записей из базы данных.
+Обработчик событий можно выполнить, когда пользователь удаляет существующую конфигурацию соединителя. Этот обработчик регистрируется путем вызова `microsoftTeams.pages.config.registerOnRemoveHandler()`. Этот обработчик используется для выполнения операций очистки, таких как удаление записей из базы данных.
 
 ### <a name="include-the-connector-in-your-manifest"></a>Включение соединителя в манифест
 
-Скачайте автоматически созданный `Teams app manifest` с портала. Выполните следующие шаги перед проверкоц или публикацией приложения:
+Скачайте автоматически созданный *манифест приложения Teams* с портала разработчика (<https://dev.teams.microsoft.com>). Выполните следующие шаги перед проверкоц или публикацией приложения:
 
 1. [Включение двух значков](../../concepts/build-and-test/apps-package.md#app-icons).
 1. Измените раздел `icons` манифеста, чтобы включить имена файлов значков вместо URL-адресов.
 
-Приведенный ниже файл manifest.json содержит элементы, необходимые для тестирования и отправки приложения.
+Следующий файл *manifest.json* содержит элементы, необходимые для тестирования и отправки приложения:
 
 > [!NOTE]
 > Замените `id` и `connectorId` в приведенном ниже примере на глобальный уникальный ИД соединителя.
@@ -231,7 +236,7 @@ ms.locfileid: "66485352"
 
 1. [Настройте входящий веб-перехватчик](~/webhooks-and-connectors/how-to/add-incoming-webhook.md#create-an-incoming-webhook) непосредственно для своей команды.
 
-1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?#integrate-the-configuration-experience) и опубликуйте входящий веб-перехватчик в соединителе Office 365.
+1. Добавьте [страницу конфигурации](~/webhooks-and-connectors/how-to/connectors-creating.md?#integrate-the-configuration-experience) и опубликуйте входящий веб-перехватчик в Office 365 connector.
 
 1. Упакуйте и опубликуйте свой соединитель как часть отправки в [AppSource](~/concepts/deploy-and-publish/office-store-guidance.md).
 

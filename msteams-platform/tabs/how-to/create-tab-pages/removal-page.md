@@ -5,14 +5,14 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: cc2d08176d4da365eac9d5a5fd48ff53dbf84461
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: ad17916c0dde7d15c5bcfc49659ead1b4186ad1c
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485218"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841976"
 ---
-# <a name="tab-re-configuration-and-removal-page"></a>Страница повторной настройки и удаления табуляции
+# <a name="create-a-removal-page"></a>Создать страницу удаления
 
 Вы можете расширить и улучшить взаимодействие с пользователем, поддерживая параметры удаления и изменения в своем приложении. Teams позволяет пользователям переименовывать или удалять вкладку канала или группы, и вы можете разрешить пользователям изменять конфигурацию вкладки после установки. Кроме того, функция удаления вкладки предоставляет пользователям возможность после удаления удалить или заархивировать содержимое.
 
@@ -36,7 +36,7 @@ ms.locfileid: "66485218"
 
 ## <a name="create-a-tab-removal-page-for-your-application"></a>Создайте страницу удаления вкладки для своего приложения
 
-Необязательная страница удаления — это HTML-страница, которая отображается при удалении вкладки. URL-адрес страницы удаления назначается методом `setConfig()` (ранее `setSettings()`) на странице конфигурации. Как и все страницы в приложении, страница удаления должна соответствовать [предварительным требованиям вкладки Teams](../../../tabs/how-to/tab-requirements.md).
+Необязательная страница удаления — это HTML-страница, которая отображается при удалении вкладки. URL-адрес страницы удаления `setConfig()` назначается методом ( `setSettings()` или до TeamsJS версии 2.0.0) на странице конфигурации. Как и все страницы в приложении, страница удаления должна соответствовать [предварительным требованиям вкладки Teams](../../../tabs/how-to/tab-requirements.md).
 
 ### <a name="register-a-remove-handler"></a>Зарегистрировать обработчик удаления
 
@@ -58,7 +58,7 @@ ms.locfileid: "66485218"
 
 #### <a name="include-authentication"></a>Включить проверку подлинности
 
-Перед тем, как разрешить пользователю удалять содержимое вкладки, требуется проверка подлинности. Контекстные сведения можно использовать для создания запросов аутентификации и URL-адресов страниц авторизации. См. [Поток проверки подлинности Microsoft Teams для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md) Убедитесь, что все домены, используемые на вкладках, перечислены в массиве `manifest.json` и `validDomains`.
+Перед тем, как разрешить пользователю удалять содержимое вкладки, требуется проверка подлинности. Контекстные сведения можно использовать для создания запросов аутентификации и URL-адресов страниц авторизации. См. [Поток проверки подлинности Microsoft Teams для вкладок](~/tabs/how-to/authentication/auth-flow-tab.md) Убедитесь, что все домены, используемые на страницах вкладок, `validDomains` перечислены в массиве манифеста приложения.
 
 Ниже приведен образец блока кода удаления вкладки:
 
@@ -67,8 +67,9 @@ ms.locfileid: "66485218"
 ```html
 <body>
   <button onclick="onClick()">Delete this tab and all underlying data?</button>
-  <script>
-    app.initialize();
+  <script type="module">
+        import {app, pages} from 'https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js';
+    await app.initialize();
     pages.config.registerOnRemoveHandler((removeEvent) => {
       // Here you can designate the tab content to be removed and/or archived.
         const configPromise = pages.getConfig();

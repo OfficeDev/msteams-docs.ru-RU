@@ -3,12 +3,12 @@ title: Получение контекста для вкладки
 description: В этом модуле вы узнаете, как получить контекст пользователя для вкладок, контекста пользователя и сведений о контексте Access.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 1e530532b2cad41279a504d89fcdc2251a0455b7
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
+ms.openlocfilehash: 63bbc9c0e5f20e293f9230000597860e3f053274
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658921"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841724"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -16,7 +16,7 @@ ms.locfileid: "66658921"
 
 * Основные сведения о пользователе, команде или компании.
 * Сведения о языковом стандарте и теме.
-* Прочитайте `entityId` или `subEntityId` определяйте, что находится на этой вкладке.
+* И `page.id` которые `page.subPageId` определяют, что находится на этой вкладке ( `entityId` `subEntityId` известной как и до TeamsJS версии 2.0.0).
 
 [!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
@@ -36,34 +36,34 @@ ms.locfileid: "66658921"
 
 Доступ к контекстной информации можно получить двумя способами:
 
-* Вставка значений заполнителей URL-адресов.
-* Используйте [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client).
+* Использование [значений заполнителей URL-адресов](#get-context-by-inserting-url-placeholder-values).
+* Из объекта контекста клиентского пакета SDK [](/javascript/api/@microsoft/teams-js/app.context) javaScript для Microsoft Teams.
 
 ### <a name="get-context-by-inserting-url-placeholder-values"></a>Получение контекста путем вставки значений заполнителей URL-адресов
 
-Используйте заполнители в конфигурации или в URL-адресах контента. Microsoft Teams заменяет заполнители соответствующими значениями, когда определяет фактическую конфигурацию или URL-адрес контента. Доступные заполнители включают все поля в [объекте контекста](/javascript/api/@microsoft/teams-js/microsoftteams.context?view=msteams-client-js-1.12.1&preserve-view=true) . Распространенные сценарии:
+Используйте заполнители в конфигурации или в URL-адресах контента. Microsoft Teams заменяет заполнители соответствующими значениями, когда определяет фактическую конфигурацию или URL-адрес контента. Доступные заполнители включают все поля в [объекте контекста](/javascript/api/@microsoft/teams-js/app.context) . Распространенные заполнители включают следующие списки:
 
-* {entityId}: ИД, который вы предоставили для элемента на этой вкладке при [первоначальной настройке](~/tabs/how-to/create-tab-pages/configuration-page.md).
-* {subEntityId}: идентификатор, указанный при создании глубокой ссылки [](~/concepts/build-and-test/deep-links.md) для определенного элемента на этой вкладке. Его необходимо использовать для восстановления до определенного состояния в сущности; например, прокрутка до или активация определенного фрагмента содержимого.
-* {loginHint}: значение, подходящее в качестве указания входа для Azure AD. Обычно это имя входа текущего пользователя в домашнем клиенте.
-* {userPrincipalName}: имя участника-пользователя текущего пользователя в текущем клиенте.
-* {userObjectId}: Azure AD объекта текущего пользователя в текущем клиенте.
-* {theme}: текущая тема пользовательского интерфейса, например `default`, или `dark``contrast`.
-* {groupId}: идентификатор группы Office 365, в которой находится вкладка.
-* {tid}: ИД объекта Azure AD текущего пользователя в текущем клиенте
-* {locale}: текущий языковой стандарт пользователя, отформатированный как languageId-countryId(en-us).
+* [{page.id}](/javascript/api/@microsoft/teams-js/app.pageinfo#@microsoft-teams-js-app-pageinfo-id): уникальный идентификатор страницы, определяемый разработчиком при [первой настройке страницы](~/tabs/how-to/create-tab-pages/configuration-page.md). (Известен как до `{entityId}` TeamsJS версии 2.0.0).
+* [{page.subPageId}](/javascript/api/@microsoft/teams-js/app.pageinfo#@microsoft-teams-js-app-pageinfo-subpageid): уникальный идентификатор, определенный разработчиком для вложенной страницы, которая определяется этим содержимым при создании [](~/concepts/build-and-test/deep-links.md) глубокой ссылки для определенного элемента на странице. (Известен как до `{subEntityId}` TeamsJS версии 2.0.0).
+* [{user.loginHint}](/javascript/api/@microsoft/teams-js/app.userinfo#@microsoft-teams-js-app-userinfo-loginhint): значение, подходящее в качестве указания входа для Azure AD. Обычно это имя входа текущего пользователя в домашнем клиенте. (Известен как до `{loginHint}` TeamsJS версии 2.0.0).
+* [{user.userPrincipalName}](/javascript/api/@microsoft/teams-js/app.userinfo#@microsoft-teams-js-app-userinfo-userprincipalname): имя участника-пользователя текущего пользователя в текущем клиенте. (Известен как до `{userPrincipalName}` TeamsJS версии 2.0.0).
+* [{user.id}](/javascript/api/@microsoft/teams-js/app.userinfo#@microsoft-teams-js-app-userinfo-id): Azure AD объекта текущего пользователя в текущем клиенте. (Известен как до `{userObjectId}` TeamsJS версии 2.0.0).
+* [{app.theme}](/javascript/api/@microsoft/teams-js/app.appinfo#@microsoft-teams-js-app-appinfo-theme): текущая тема пользовательского интерфейса, например `default`, или `dark``contrast`. (Известен как до `{theme}` TeamsJS версии 2.0.0).
+* [{team.groupId}](/javascript/api/@microsoft/teams-js/app.teaminfo#@microsoft-teams-js-app-teaminfo-groupid): идентификатор Office 365 группы, в которой находится вкладка. (Известен как до `{groupId}` TeamsJS версии 2.0.0)
+* [{user.tenant.id}](/javascript/api/@microsoft/teams-js/app.tenantinfo#@microsoft-teams-js-app-tenantinfo-id): Azure AD клиента текущего пользователя. (Известен как до `{tid}` TeamsJS версии 2.0.0).
+* [{app.locale}](/javascript/api/@microsoft/teams-js/app.appinfo#@microsoft-teams-js-app-appinfo-locale): текущий языковой стандарт пользователя, отформатированный как *languageId-countryId*, например `en-us`. (Известен как до `{locale}` TeamsJS версии 2.0.0).
 
 > [!NOTE]
-> Предыдущий заполнитель `{upn}` теперь не поддерживается. Для обратной совместимости в настоящее время он является синонимом для `{loginHint}`.
+> Предыдущий заполнитель `{upn}` теперь не поддерживается. Для обратной совместимости в настоящее время он является синонимом для `{user.loginHint}`.
 
-Например, в манифесте `configURL` вкладки, для которой задано значение атрибута `"https://www.contoso.com/config?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}"`, пользователь, выполнив вход, имеет следующие атрибуты:
+Например, в манифесте приложения, если для атрибута *tab configurationUrl* `"https://www.contoso.com/config?name={user.loginHint}&tenant={user.tenant.id}&group={team.groupId}&theme={app.theme}"` задано значение и пользователь, выполнив вход, имеет следующие атрибуты:
 
 * Имя **пользователя — user@example.com**.
 * Идентификатор клиента компании — **e2653c-etc**.
 * Они являются членами Office 365 с идентификатором **00209384 и т. д**.
 * Пользователь настроит темную тему **Teams.**
 
-При настройке вкладки Teams вызывает следующий URL-адрес:
+. . . Затем Teams будет вызывать следующий URL-адрес при настройке вкладки:
 
 `https://www.contoso.com/config?name=user@example.com&tenant=e2653c-etc&group=00209384-etc&theme=dark`
 
@@ -71,51 +71,116 @@ ms.locfileid: "66658921"
 
 Вы также можете получить сведения, перечисленные выше, с помощью [клиентского SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client), вызвав `microsoftTeams.getContext(function(context) { /* ... */ })`.
 
-В следующем коде приведен пример переменной контекста:
+# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
 
-```json
-{
-    "teamId": "The Microsoft Teams ID in the format 19:[id]@thread.skype",
-    "teamName": "The name of the current team",
-    "channelId": "The channel ID in the format 19:[id]@thread.skype",
-    "channelName": "The name of the current channel",
-    "chatId": "The chat ID in the format 19:[id]@thread.skype",
-    "locale": "The current locale of the user formatted as languageId-countryId (for example, en-us)",
-    "entityId": "The developer-defined unique ID for the entity this content points to",
-    "subEntityId": "The developer-defined unique ID for the sub-entity this content points to",
-    "loginHint": "A value suitable as a login hint for Azure AD. This is usually the login name of the current user, in their home tenant",
-    "userPrincipalName": "The principal name of the current user, in the current tenant",
-    "userObjectId": "The Azure AD object id of the current user, in the current tenant",
-    "tid": "The Azure AD tenant ID of the current user",
-    "groupId": "Guid identifying the current Office 365 Group ID",
-    "theme": "The current UI theme: default | dark | contrast",
-    "isFullScreen": "Indicates if the tab is in full-screen",
-    "teamType": "The type of team",
-    "teamSiteUrl": "The root SharePoint site associated with the team",
-    "teamSiteDomain": "The domain of the root SharePoint site associated with the team",
-    "teamSitePath": "The relative path to the SharePoint site associated with the team",
-    "channelRelativeUrl": "The relative path to the SharePoint folder associated with the channel",
-    "sessionId": "The unique ID for the current Teams session for use in correlating telemetry data",
-    "userTeamRole": "The user's role in the team",
-    "isTeamArchived": "Indicates if team is archived",
-    "hostClientType": "The type of host client. Possible values are android, ios, web, desktop, surfaceHub, teamsRoomsAndroid, teamsPhones, teamsDisplays rigel (deprecated, use teamsRoomsWindows instead)",
-    "frameContext": "The context where tab URL is loaded (for example, content, task, setting, remove, sidePanel)",
-    "sharepoint": "The SharePoint context is available only when hosted in SharePoint",
-    "tenantSKU": "The license type for the current user tenant. Possible values are enterprise, free, edu, unknown",
-    "userLicenseType": "The license type for the current user. Possible values are E1, E3, and E5 enterprise plans",
-    "parentMessageId": "The parent message ID from which this task module is launched",
-    "ringId": "The current ring ID",
-    "appSessionId": "The unique ID for the current session used for correlating telemetry data",
-    "isCallingAllowed": "Indicates if calling is allowed for the current logged in user",
-    "isPSTNCallingAllowed": "Indicates if PSTN calling is allowed for the current logged in user",
-    "meetingId": "The meeting ID used by tab when running in meeting context",
-    "defaultOneNoteSectionId": "The OneNote section ID that is linked to the channel",
-    "isMultiWindow": "The indication whether the tab is in a pop out window"
+## <a name="typescript"></a>TypeScript
+
+```TypeScript
+import { app, Context } from "@microsoft/teams-js";
+
+app.getContext().then((context: Context) => {
+    /*...*/
+});
+```
+
+Эквивалентный `async/await` шаблон:
+
+```TypeScript
+import { app, Context } from "@microsoft/teams-js";
+
+async function example() {
+  const context: Context = await app.getContext();
+  /*...*/
 }
 ```
 
-Вы также можете получить сведения, перечисленные выше, с помощью клиентского [пакета SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) , вызвав функцию `app.getContext()` . Дополнительные сведения см. в свойствах [интерфейса контекста](/javascript/api/@microsoft/teams-js/app.context?view=msteams-client-js-latest&preserve-view=true).
+## <a name="javascript"></a>JavaScript
 
+```js
+import { app, Context } from "@microsoft/teams-js";
+
+app.getContext().then((context) => {
+    /*...*/
+});
+```
+
+Эквивалентный `async/await` шаблон:
+
+```js
+import { app, Context } from "@microsoft/teams-js";
+
+async function example() {
+  const context = await app.getContext();
+  /*...*/
+}
+```
+
+# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
+
+## <a name="typescript"></a>TypeScript
+
+```TypeScript
+import * as microsoftTeams from "@microsoft/teams-js";
+
+microsoftTeams.getContext((context: microsoftTeams.Context) => {
+  /* ... */
+});
+```
+
+## <a name="javascript"></a>JavaScript
+
+```js
+import microsoftTeams from "@microsoft/teams-js";
+
+microsoftTeams.getContext((context) => {
+  /* ... */ 
+});
+```
+
+---
+
+В следующей таблице перечислены часто используемые свойства контекста объекта *контекста* :
+
+| Имя TeamsJS версии 2 | Имя TeamsJS версии 1 | Описание |
+|-----------------|-----------------|-------------|
+| team.internalId | teamId | Идентификатор Microsoft Teams для команды, с которой связано содержимое. |
+| team.displayName | teamName | Имя команды, с которой связано содержимое. |
+| channel.id | channelId | Идентификатор Microsoft Teams для канала, с которым связано содержимое. |
+| channel.displayName | channelName | Имя канала, с которым связано содержимое. |
+| chat.id | chatId | Идентификатор Microsoft Teams для чата, с которым связано содержимое. |
+| app.locale | языковые стандарты | Текущий языковой стандарт, настроенный пользователем для приложения, отформатированного как languageId-countryId (например, en-us). |
+| page.id | entityId | Уникальный идентификатор страницы, на который указывает данное содержимое, определяемый разработчиком. |
+| page.subPageId | subEntityId | Уникальный идентификатор, определенный разработчиком для вложенной страницы, на который указывает данное содержимое. Это поле следует использовать для восстановления до определенного состояния на странице, например для прокрутки или активации определенного фрагмента содержимого. |
+| user.loginHint | loginHint | Значение, подходящее для использования в качестве login_hint при проверке подлинности с Azure AD. Так как вредоносная сторона может запускать содержимое в браузере, это значение следует использовать только в качестве указания о том, кто является пользователем и никогда не является подтверждением личности. Это поле доступно только в том случае, если в манифесте запрашивается разрешение удостоверения. |
+| user.userPrincipalName | Upn | Имя участника-пользователя текущего пользователя. Это может быть имя участника-пользователя, прошедшее внешнюю проверку подлинности (например, гостевые пользователи). Так как вредоносная сторона запускает содержимое в браузере, это значение следует использовать только в качестве указания о том, кто является пользователем и никогда не является подтверждением личности. Это поле доступно только в том случае, если в манифесте запрашивается разрешение удостоверения. |
+| user.id | userObjectId | Идентификатор Azure AD объекта текущего пользователя. Так как вредоносная сторона запускает содержимое в браузере, это значение следует использовать только в качестве указания о том, кто является пользователем и никогда не является подтверждением личности. Это поле доступно только в том случае, если в манифесте запрашивается разрешение удостоверения. |
+| user.tenant.id | Tid | Идентификатор Azure AD клиента текущего пользователя. Так как вредоносная сторона может запускать содержимое в браузере, это значение следует использовать только в качестве указания о том, кто является пользователем и никогда не является подтверждением личности. Это поле доступно только в том случае, если в манифесте запрашивается разрешение удостоверения. |
+| team.groupId | groupId | Идентификатор Office 365 группы, с которой связано содержимое. Это поле доступно только в том случае, если в манифесте запрашивается разрешение удостоверения. |
+| app.theme  | theme | Текущая тема пользовательского интерфейса: по умолчанию, темная, контрастность |
+| page.isFullScreen | isFullScreen | Указывает, находится ли страница в полноэкранном режиме. |
+| team.type | teamType | Тип команды. |
+| sharepointSite.teamSiteUrl | teamSiteUrl | Корневой сайт SharePoint, связанный с командой. |
+| sharepointSite.teamSiteDomain | teamSiteDomain | Домен корневого сайта SharePoint, связанного с командой. |
+| sharepointSite.teamSitePath | teamSitePath | Относительный путь к сайту SharePoint, связанному с командой. |
+| channel.relativeUrl | channelRelativeUrl | Относительный путь к папке SharePoint, связанной с каналом. |
+| App.host.sessionId | Sessionid | Уникальный идентификатор текущего сеанса узла для использования при сопоставлении данных телеметрии. |
+| team.userRole | userTeamRole | Роль пользователя в команде. Так как вредоносная сторона может запускать содержимое в браузере, это значение следует использовать только в качестве указания роли пользователя и никогда не в качестве подтверждения ее роли. |
+| team.isArchived | isTeamArchived | Указывает, архивирована ли команда. Приложения должны использовать его в качестве сигнала, чтобы предотвратить любые изменения содержимого, связанного с архивными командами. |
+| app.host.clientType | hostClientType | Тип главного клиента. Возможные значения: android, ios, web, desktop, rigel |
+| page.frameContext | frameContext | Контекст, в который загружается URL-адрес страницы (содержимое, задача, настройка, удаление, sidePanel) |
+| sharepoint | sharepoint | Контекст SharePoint. Это доступно только при размещении в SharePoint. |
+| user.tenant.teamsSku | tenantSKU | Тип лицензии для текущего клиента пользователя. Возможные значения: enterprise, free, edu, unknown |
+| user.licenseType | userLicenseType | Тип лицензии для текущего пользователя. Возможные значения: корпоративные планы E1, E3 и E5 |
+| app.parentMessageId | parentMessageId | Идентификатор родительского сообщения, из которого был запущен этот модуль задачи. Это доступно только в модулях задач, запущенных с карточек ботов. |
+| App.host.ringId | ringId | Идентификатор текущего кольца. |
+| App.sessionId | appSessionId | Уникальный идентификатор текущего сеанса узла для использования при сопоставлении данных телеметрии. |
+| user.isCallingAllowed | isCallingAllowed | Указывает, разрешен ли вызов для текущего пользователя, выполнив вход. |
+| user.isPSTNCallingAllowed | isPSTNCallingAllowed | Указывает, разрешены ли вызовы ТСОП для текущего пользователя |
+| meeting.id | meetingId | Идентификатор собрания, используемый вкладкой при выполнении в контексте собрания. |
+| channel.defaultOneNoteSectionId | defaultOneNoteSectionId | Идентификатор раздела OneNote, связанный с каналом. |
+| page.isMultiWindow | isMultiWindow | Указывает, находится ли вкладка во всплывающем окне. |
+
+Дополнительные сведения см [. Обновления *контекстного*](using-teams-client-sdk.md#updates-to-the-context-interface) интерфейса и справочника по API [интерфейса](/javascript/api/@microsoft/teams-js/app.context) контекста.
 
 ## <a name="retrieve-context-in-private-channels"></a>Получение контекста в частных каналах
 
@@ -123,14 +188,14 @@ ms.locfileid: "66658921"
 
 Следующие поля изменяются, если страница содержимого находится в частном канале:
 
-* `groupId`: не определено для частных каналов
-* `teamId`: задайте значение threadId закрытого канала.
-* `teamName`: задайте имя частного канала.
-* `teamSiteUrl`: задайте URL-адрес отдельного уникального сайта SharePoint для частного канала.
-* `teamSitePath`: задайте путь к отдельному уникальному сайту SharePoint для частного канала.
-* `teamSiteDomain`: задайте домен уникального домена сайта SharePoint для частного канала.
+* `team.groupId`: не определено для частных каналов
+* `team.internalId`: задайте значение threadId закрытого канала.
+* `team.displayName`: задайте имя частного канала.
+* `sharepointSite.url`: задайте URL-адрес отдельного уникального сайта SharePoint для частного канала.
+* `sharepointSite.path`: задайте путь к отдельному уникальному сайту SharePoint для частного канала.
+* `sharepointSite.domain`: задайте домен уникального домена сайта SharePoint для частного канала.
 
-Если на странице используется любое из этих значений, `channelType` `Private` значение поля должно быть таким, чтобы определить, загружена ли страница в частный канал и может ли она отвечать соответствующим образом.
+Если на странице используется любое из этих значений, `channel.membershipType` `Private` значение поля должно быть таким, чтобы определить, загружена ли страница в частный канал и может ли она отвечать соответствующим образом.
 
 ## <a name="retrieve-context-in-microsoft-teams-connect-shared-channels"></a>Получение контекста в Microsoft Teams Связи общих каналах
 
@@ -141,26 +206,26 @@ ms.locfileid: "66658921"
 
 Следующие поля изменяются, если страница содержимого находится в общем канале:
 
-* `groupId`: не определено для общих каналов.
-* `teamId`: задайте для `threadId` команды общий доступ к каналу для текущего пользователя. Если у пользователя есть доступ к нескольким командам, задается команда, `teamId` которая размещает (создает) общий канал.
-* `teamName`: задайте имя команды, канал является общим для текущего пользователя. Если у пользователя есть доступ к нескольким командам, задается команда, `teamName` которая размещает (создает) общий канал.
-* `teamSiteUrl`: задайте URL-адрес отдельного уникального сайта SharePoint для общего канала.
-* `teamSitePath`: задайте путь к отдельному уникальному сайту SharePoint для общего канала.
-* `teamSiteDomain`: задайте домен отдельного уникального домена сайта SharePoint для общего канала.
+* `team.groupId`: не определено для общих каналов.
+* `team.internalId`: задайте для `threadId` команды общий доступ к каналу для текущего пользователя. Если у пользователя есть доступ к нескольким командам, это задается для команды, которая размещает (создает) общий канал.
+* `team.displayName`: задайте имя команды, канал является общим для текущего пользователя. Если у пользователя есть доступ к нескольким командам, это задается для команды, которая размещает (создает) общий канал.
+* `sharepointSite.url`: задайте URL-адрес отдельного уникального сайта SharePoint для общего канала.
+* `sharepointSite.path`: задайте путь к отдельному уникальному сайту SharePoint для общего канала.
+* `sharepointSite.domain`: задайте домен отдельного уникального домена сайта SharePoint для общего канала.
 
 Помимо этих изменений полей, для общих каналов доступны два новых поля:
 
-* `hostTeamGroupId`: задайте связанное `groupId` с группой размещения или командой, создающей общий канал. Это свойство может API Graph вызовы Майкрософт для получения членства в общем канале.
-* `hostTeamTenantId`: задайте связанное `tenantId` с группой размещения или командой, создающей общий канал. На это `tid` `getContext` свойство можно перекрестно ссылаться с идентификатором клиента текущего пользователя, найденным в поле ,чтобы определить, является ли пользователь внутренним или внешним для клиента группы размещения.
+* `hostTeamGroupId`: задайте связанное `team.groupId` с группой размещения или командой, создающей общий канал. Это свойство может API Graph вызовы Майкрософт для получения членства в общем канале.
+* `hostTeamTenantId`: задайте связанное `channel.ownerTenantId` с группой размещения или командой, создающей общий канал. На свойство `user.tenant.id` можно перекрестно ссылаться с идентификатором клиента текущего пользователя, найденным в поле объекта *контекста* , чтобы определить, является ли пользователь внутренним или внешним для клиента группы размещения.
 
-Если на странице используется любое из этих значений, `channelType` `Shared` значение поля должно быть таким, чтобы определить, загружена ли страница в общем канале и может ли она отвечать соответствующим образом.
+Если на странице используется любое из этих значений, `channel.membershipType` `Shared` значение поля должно быть таким, чтобы определить, загружена ли страница в общем канале и может ли она отвечать соответствующим образом.
 
 > [!NOTE]
 > Каждый раз, когда пользователь перезапускает или перезагружает рабочий или веб-клиент Teams, создается новый sessionID, который отслеживается сеансом Teams, в то время как когда пользователь выходит из приложений Teams и перезагружает его на платформе Teams, создается новый sessionID приложения, который отслеживается сеансом приложения.
 
 ## <a name="handle-theme-change"></a>Обработка изменения темы
 
-Вы можете зарегистрировать приложение для получения сведений об изменении темы путем вызова `app.registerOnThemeChangeHandler(function(theme) { /* ... */ })`.
+Вы можете зарегистрировать приложение для получения сведений об изменении темы путем вызова `microsoftTeams.app.registerOnThemeChangeHandler(function(theme) { /* ... */ })`.
 
 Аргументом `theme` в функции является строка со значением `default`, `dark`или `contrast`.
 

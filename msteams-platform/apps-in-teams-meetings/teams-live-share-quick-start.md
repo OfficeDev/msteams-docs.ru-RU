@@ -1,18 +1,18 @@
 ---
 title: Краткое руководство по Live Share
+author: surbhigupta
 description: В этом модуле вы узнаете, как быстро опробовать пример Dice Roller
-ms.topic: concept
+ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: stevenic
-ms.openlocfilehash: 98150265f0c5876e726710cacc873db2ac23e9ee
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.date: 04/07/2022
+ms.openlocfilehash: 10bf4b3ce67322c25517d82af2d06a654a4d8668
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484588"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841787"
 ---
----
-
 # <a name="quick-start-guide"></a>Краткое руководство по началу работы
 
 Начните работу с SDK Live Share с использованием примера Dice Roller, который разработан на основе [краткой инструкции по Fluid Framework](https://fluidframework.com/docs/start/quick-start/) и предназначен для быстрого запуска примера [Dice Roller](https://github.com/microsoft/live-share-sdk/tree/main/samples/01.dice-roller) на основе пакета SDK Live Share в узле localhost компьютера.
@@ -37,25 +37,25 @@ ms.locfileid: "66484588"
 1. Клонируйте репозиторий [Live Share SDK](https://github.com/microsoft/live-share-sdk) для тестирования примера приложения:
 
     ```bash
-    $ git clone https://github.com/microsoft/live-share-sdk.git
+    git clone https://github.com/microsoft/live-share-sdk.git
     ```
 
 1. Выполните следующую команду, чтобы перейти в папку примера приложения Dice Roller:
 
    ```bash
-    $ cd live-share-sdk\samples\01.dice-roller
+    cd live-share-sdk\samples\01.dice-roller
    ```
 
 1. Выполните следующую команду, чтобы установить пакет зависимостей:
 
     ```bash
-    $ npm install
+    npm install
     ```
 
 1. Выполните указанную ниже команду, чтобы запустить клиент и локальный сервер:
 
    ```bash
-   $ npm start
+   npm start
    ```
   
      Откроется новая вкладка браузера, где откроется URL-адрес `http://localhost:8080` и приложение Dice Roller.

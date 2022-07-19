@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: f06772cc6ba7975d0434e1c7c1c1c510ce760f6c
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: dcc000c64068cbcbd24a03da365e799e9dd1c155
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558396"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841696"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -367,7 +367,7 @@ ASP.NET Core рассматривает файлы с именем **Index** к�
 
     ```HTML
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="https://statics.teams.cdn.office.net/sdk/v2.0.0/js/MicrosoftTeams.min.js"></script>
+    <script src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js" integrity="sha384-QtTBFeFlfRDZBfwHJHYQp7MdLJ2C3sfAEB1Qpy+YblvjavBye+q87TELpTnvlXw4" crossorigin="anonymous"></script>
     ```
 
 1. В обозревателе решений Visual Studio откройте **PersonalTab.cshtml** из папки **Страницы**, добавьте `app.initialize()` в `<script>` теги и сохраните.
@@ -532,7 +532,7 @@ public void Configure(IApplicationBuilder app)
 
     ```HTML
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="https://statics.teams.cdn.office.net/sdk/v2.0.0/js/MicrosoftTeams.min.js"></script>
+    <script src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js" integrity="sha384-QtTBFeFlfRDZBfwHJHYQp7MdLJ2C3sfAEB1Qpy+YblvjavBye+q87TELpTnvlXw4" crossorigin="anonymous"></script>
     ```
 
 1. В обозревателе решений Visual Studio откройте **PersonalTab.cshtml** из папки **Представления** > **PersonalTab**, добавьте `app.initialize()` в теги `<script>` и сохраните.

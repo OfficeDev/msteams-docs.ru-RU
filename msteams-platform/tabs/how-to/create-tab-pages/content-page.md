@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 21cc2559b7a6751981156deac1d2373f7ce0dfbe
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 4fd9c301ba48f346b9e721f5d6b3baa13ca50c04
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503356"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66841971"
 ---
 # <a name="create-a-content-page"></a>Создать страницу контента
 
@@ -26,7 +26,7 @@ ms.locfileid: "66503356"
 
 ## <a name="tab-content-and-design-guidelines"></a>Содержимое вкладок и рекомендации по дизайну
 
-Общая цель вкладки — предоставить доступ к содержательному и привлекательному содержимому, которое имеет практическое значение и явную цель. 
+Общая цель вкладки — предоставить доступ к содержательному и привлекательному содержимому, которое имеет практическое значение и явную цель.
 
 Вам нужно сосредоточиться на том, чтобы сделать макет вкладки понятным, интуитивно понятным и иммерсивным содержимым. Дополнительные сведения см. в [руководствах по проектированию вкладок](~/tabs/design/tabs.md) и рекомендациях по проверке [магазина Microsoft Teams](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md).
 
@@ -43,14 +43,13 @@ ms.locfileid: "66503356"
 <html>
 <head>
 ...
-    <script src= 'https://statics.teams.cdn.office.net/sdk/v2.0.0/js/MicrosoftTeams.min.js'></script>
+    <script src= 'https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js'></script>
 ...
-</head>
-
 <body>
 ...
-    <script>
-    app.initialize();
+    <script type="module">
+        import {app} from 'https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js';
+        await app.initialize();
     </script>
 ...
 </body>

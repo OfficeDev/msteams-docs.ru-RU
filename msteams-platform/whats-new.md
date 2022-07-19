@@ -3,27 +3,16 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: a358652f361dc080d916c4d548363776e7c092a4
-ms.sourcegitcommit: 0c734a5809ad6eb36255c97f38589c67d0971741
+ms.openlocfilehash: e060d1da7e618fe7730839aba0b676a9cb93ce7a
+ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66830808"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842033"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
 Представляем функции платформы Microsoft Teams в общедоступной версии и в предварительной версии для разработчиков. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
-
-## <a name="microsoft-build-2022-image-typeicon-sourceassetsimagesbullhornpng"></a>Microsoft Build 2022 :::image type="icon" source="assets/images/bullhorn.png"
-
-| Date | Возможность | Найдите его здесь |
-| --- | --- | --- |
-| 24.05.2022| [*Предварительная версия для разработчиков*] <br> Улучшенная совместная работа с Live Share SDK |  Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
-|24.05.2022| Отправка приложений с поддержкой Outlook и Office в магазин Teams | Расширение приложения в Microsoft 365 > [Обзор](m365-apps/overview.md) |
-|24.05.2022| Руководство по приложению и новые возможности TeamsJS версии 2.0.0| Средства и пакеты SDK > [Пакет SDK клиента JavaScript для Teams](tabs/how-to/using-teams-client-sdk.md)  |
-| 24.05.2022 | Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна | Средства и пакеты SDK > Набор средств Teams для Visual Studio Code > <br> • [Общие сведения о наборе средств Teams](toolkit/teams-toolkit-fundamentals.md) <br> • [Создание командного бота с помощью JavaScript](toolkit/add-capability.md) <br> • [Создание бота уведомлений с помощью JavaScript](toolkit/add-capability.md) <br> • [Предварительный просмотр и настройка манифеста приложения Teams](toolkit/TeamsFx-preview-and-customize-app-manifest.md) <br> • [Подключение существующих API](toolkit/add-API-connection.md) <br> • [Добавление возможностей в приложения Teams](toolkit/add-capability.md) <br> • [Добавление функции единого входа](toolkit/add-single-sign-on.md) <br> • [Добавление облачных ресурсов в приложение Teams](toolkit/add-resource.md) |
-| 24.05.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > [Схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md) |
-| 24.05.2022 | Боты и расширения для сообщений в GCC и GCCH | • Планирование приложения > [Обзор](concepts/app-fundamentals-overview.md#government-community-cloud) </br> • Создание ботов > [Обзор](bots/what-are-bots.md) </br> • Создание расширений для сообщений > [Обзор](messaging-extensions/what-are-messaging-extensions.md) |
 
 <!--
 ## Latest updates ![bullhorn icon](~/assets/images/bullhorn.png)
