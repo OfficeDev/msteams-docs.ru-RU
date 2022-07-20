@@ -5,16 +5,19 @@ description: В этом модуле вы узнаете, как добавит
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: ae803ecb4ae971731d68eba44d08ad9c8b3d274c
-ms.sourcegitcommit: 0c734a5809ad6eb36255c97f38589c67d0971741
+ms.openlocfilehash: 43a64a5ab7d44058831b643f2516839c248e9af1
+ms.sourcegitcommit: 904cca011c3f27d1d90ddd80c3d0300a8918e412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66830801"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895484"
 ---
 # <a name="format-your-bot-messages"></a>Формат сообщений бота
 
 Форматирование сообщений позволяет выявить лучшее в сообщениях ботов. Вы можете отформатировать сообщения бота, включив в них форматированные карточки в виде вложений, содержащих интерактивные элементы, такие как кнопки, текст, изображения, звук, видео и т. д.
+
+> [!NOTE]
+> Максимальный размер сообщения бота — 40 КБ. Если размер сообщения бота превышает 40 КБ, `413` бот получает код состояния (RequestEntityTooLarge), содержащий код ошибки `MessageSizeTooBig`. Ограничение размера сообщения бота включает все полезные данные сообщения в кодировке UTF-16 и не включает изображения в кодировке base 64.
 
 ## <a name="format-text-content"></a>Форматирование текстового содержимого
 

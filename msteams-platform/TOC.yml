@@ -529,7 +529,7 @@
   items:
     - name: Обзор
       href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
-    - name: Включение предложения SaaS в свое приложение Teams
+    - name: Включение предложения SaaS в приложение Teams
       href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
     - name: Покупки из приложения
       href: concepts/deploy-and-publish/appsource/prepare/in-app-purchase-flow.md
@@ -571,6 +571,8 @@
           href: resources/m365-plugins/m365-plugins-overview.md
         - name: Партнерские приложения для Moodle
           href: resources/partner-apps-for-moodle.md
+        - name: Установка Moodle LMS
+          href: resources/moodleInstructions.md
         - name: Вопросы и ответы о Moodle
           href: resources/faqs.md
     - name: Отправка в Teams
