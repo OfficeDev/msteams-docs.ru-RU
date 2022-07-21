@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: e060d1da7e618fe7730839aba0b676a9cb93ce7a
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: 02e2ea46b29c79be642a88389e8f18e1e310338b
+ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842033"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66919839"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,7 @@ ms.locfileid: "66842033"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 21.07.2022 | Представлено пошаговое руководство по отправке уведомлений ленты действий. | Создание своего приложения> Компоненты пользовательского интерфейса> Уведомления ленты действий> [Отправка уведомления ленты действий](sbs-graphactivity-feedbroadcast.yml) |
 | 08.07.2022| Обновление идентификатора канала отправки, выбранного пользователем во время установки приложения для ботов, с помощью событий обновления установки и бесед |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
 | 16.06.2022 | Обновленные возможности мультимедиа для поддержки классических и мобильных устройств| Интеграция возможностей устройств > [Интеграция возможностей мультимедиа](concepts/device-capabilities/media-capabilities.md)|
 | 08.06.2022 | Необязательный отзыв карточки для сообщения об успешном выполнении| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](~/bots/how-to/conversations/conversation-messages.md#form-completion-feedback)|
