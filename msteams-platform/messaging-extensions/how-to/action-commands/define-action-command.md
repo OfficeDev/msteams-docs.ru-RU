@@ -5,16 +5,19 @@ description: В этом модуле вы узнаете, как определ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 75df991c0af1ca49a1fbba1846a01ff4b30236db
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 6ac26e8d066da249ae1b105d2375da1a7e2df6db
+ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503937"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66919846"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
 [!include[v4-to-v3-SDK-pointer](~/includes/v4-to-v3-pointer-me.md)]
+
+> [!NOTE]
+> При запуске действия сообщения сведения о вложении не отправляются в `turncontext` рамках действия вызова.
 
 Команды действий позволяют показать пользователю модальное всплывающее окно (в Teams называемое модулем задач). Модуль задач собирает или выводит сведения, обрабатывает взаимодействие и отправляет сведения обратно в Teams. В этом документе описывается, как выбрать расположения вызова команды действия, создать модуль задач, отправить окончательное сообщение или карточку, создать команду действия с помощью App Studio или вручную.
 
@@ -27,7 +30,7 @@ ms.locfileid: "66503937"
 В следующем видео показано, как определить команды действий расширения сообщений:
 <br>
 
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG>]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG]
 <br>
 
 ## <a name="select-action-command-invoke-locations"></a>Выбор расположений, из которых будет вызываться команда действия
@@ -84,7 +87,7 @@ ms.locfileid: "66503937"
 Вы можете создать команду действия с помощью **App Studio** или **портала разработчика**.
 
 > [!WARNING]
- > Если вы до сих пор использовали App Studio, рекомендуем попробовать Портал разработчика [Портал разработчика](https://dev.teams.microsoft.com/) для настройки и распространения приложений Teams и управления ими. Поддержка App Studio будет прекращена 30 июня 2022 г.
+ > Если до сих пор вы использовали App Studio, рекомендуем попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки, распространения приложений Teams и управления ими. Решение App Studio будет упразднено к 1 августа 2022 г.
 
 # <a name="app-studio"></a>[App Studio](#tab/AS)
 

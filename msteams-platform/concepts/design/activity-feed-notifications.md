@@ -5,12 +5,12 @@ description: Узнайте, как спроектировать уведомл�
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: reference
-ms.openlocfilehash: 923519965b5ae6debaf256032f9bc4cdaada2f6e
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 9a17027f7dd68993a118f24bb23cfff0a56651e1
+ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558011"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66919769"
 ---
 # <a name="designing-activity-feed-notifications-for-your-microsoft-teams-app"></a>Проектирование уведомлений веб-канала действий для приложения Microsoft Teams
 
@@ -26,7 +26,7 @@ ms.locfileid: "66558011"
 
 ---
 
-## <a name="anatomy"></a>Анатомия
+## <a name="anatomy"></a>Структура
 
 :::image type="content" source="../../assets/images/activity-feed/activity-feed-card-anatomy.png" alt-text="Структура структуры уведомления веб-канала действий Teams.":::
 
@@ -37,7 +37,7 @@ ms.locfileid: "66558011"
 |3|**Заголовок (первая строка): Actor + reason**: *Actor: Name* of the user or app that initiated the activity. *Причина*. Описывает действие.|
 |4|**Метка времени**: показывает, когда произошло действие.|
 |5|**Расположение (вторая строка)**: показывает, где произошло действие в Teams.|
-|6 |**Предварительный просмотр текста (третья строка)**: отображает усеченную строку с начала уведомления.|
+|6|**Предварительный просмотр текста (третья строка)**: отображает усеченную строку с начала уведомления.|
 
 ## <a name="types-of-activity-feed-notification-cards"></a>Типы карт уведомлений веб-канала действий
 
@@ -74,7 +74,11 @@ ms.locfileid: "66558011"
 
 ---
 
-## <a name="next-step"></a>Следующий этап
+## <a name="step-by-step-guide"></a>Пошаговые инструкции
+
+Следуйте [пошаговое руководство по](../../sbs-graphactivity-feedbroadcast.yml) отправке уведомлений веб-канала действий в Teams.
+
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Реализация уведомлений веб-канала действий](/graph/teams-send-activityfeednotifications)

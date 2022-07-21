@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.date: 04/07/2022
-ms.openlocfilehash: 4e32937e906a472359c6d4d7788143e551e8a002
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: aee6e93a6824838ff48d7fb92839af30dd8ce7c6
+ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841956"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66919762"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -134,7 +134,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 
 ---
 
-| Имя свойства | Назначение |
+| Имя свойства | Описание |
 |---|---|
 | **user.id** | Идентификатор пользователя. |
 | **user.aadObjectId** | Идентификатор объекта Azure Active Directory пользователя. |
@@ -226,7 +226,7 @@ POST /v3/conversations/{conversationId}/activities
     "channelData": {
         "notification": {
             "alertInMeeting": true,
-            "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=<url>&height=<height>&width=<width>&title=<title>&completionBotId=BOT_APP_ID"
+            "externalResourceUrl": "https://teams.microsoft.com/l/bubble/APP_ID?url=<url>&height=<height>&width=<width>&title=<title>&<completionBotId>=<BOT_APP_ID>"
         }
     },
     "replyToId": "1493070356924"
@@ -235,7 +235,7 @@ POST /v3/conversations/{conversationId}/activities
 
 ---
 
-| Имя свойства | Назначение |
+| Имя свойства | Описание |
 |---|---|
 | **type** | Тип действия. |
 | **text** | Текстовое содержимое сообщения. |
@@ -243,6 +243,8 @@ POST /v3/conversations/{conversationId}/activities
 | **channelData.notification.alertInMeeting** | Логическое значение, указывающее, должно ли уведомление отображаться пользователю во время собрания. |
 | **channelData.notification.externalResourceUrl** | Значение URL-адреса внешнего ресурса уведомления.|
 | **replyToId** | Идентификатор родительского или корневого сообщения потока. |
+| **APP_ID** | Идентификатор приложения, объявленный в манифесте. |
+| **completionBotId** | Идентификатор приложения бота |
 
 ### <a name="response-codes"></a>Коды ответа
 
@@ -491,7 +493,7 @@ GET /v1/meetings/{meetingId}
 
 ---
 
-| Имя свойства | Назначение |
+| Имя свойства | Описание |
 |---|---|
 | **details.id** | Идентификатор собрания, закодированный в виде строки BASE64. |
 | **details.msGraphResourceId** | MsGraphResourceId, используемый специально для вызовов MS API Graph. |
@@ -899,7 +901,7 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 }
 ```
 
-| Имя свойства | Назначение |
+| Имя свойства | Описание |
 |---|---|
 | **name** | Имя пользователя.|
 | **type** | Тип действия. |
@@ -932,10 +934,10 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 
 |Название примера | Описание | C# | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Расширяемость собраний | Пример расширяемости собраний Teams для передачи маркеров. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
-| Бот пузырькового содержимого собрания | Пример расширяемости собраний Teams для взаимодействия с ботом пузырьков содержимого на собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
-| Собрание meetingSidePanel | Пример расширяемости собраний Teams для взаимодействия с боковой панелью в собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
-| Вкладка "Сведения" в собрании | Пример расширяемости собраний Teams для взаимодействия с вкладкой "Сведения" в собрании. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
+| Расширяемость собраний | Пример расширяемости собраний Teams для передачи маркеров. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-token-app/nodejs) |
+| Бот пузырькового содержимого собрания | Пример расширяемости собраний Teams для взаимодействия с ботом пузырьков содержимого на собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs)|
+| Собрание meetingSidePanel | Пример расширяемости собраний Teams для взаимодействия с боковой панелью в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs)|
+| Вкладка "Сведения" в собрании | Пример расширяемости собраний Teams для взаимодействия с вкладкой "Сведения" в собрании. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-details-tab/nodejs)|
 |Пример событий собрания|Пример приложения для отображения событий собраний Teams в реальном времени|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/nodejs)|
 |Образец собрания для набора сотрудников|Пример приложения для демонстрации опыта собраний для сценария набора сотрудников.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meeting-recruitment-app/nodejs)|
 |Установка приложения с помощью QR-кода|Пример приложения, которое создает QR-код и устанавливает приложение с помощью QR-кода|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-installation-using-qr-code/nodejs)|

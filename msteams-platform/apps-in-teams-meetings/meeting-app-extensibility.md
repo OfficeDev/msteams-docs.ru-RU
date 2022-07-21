@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.date: 04/07/2022
-ms.openlocfilehash: 760b108ac343e6805989c9dc1e709d8f15e3b684
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: 01886d298320ddbc5736fc86c29ba2f9585c5562
+ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841906"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66919853"
 ---
 # <a name="unified-meetings-apps"></a>Приложения объединенных собраний
 
@@ -41,8 +41,7 @@ ms.locfileid: "66841906"
 > Если вы интегрировали вкладку с собранием, ваше приложение должно следовать потоку проверки подлинности единого входа Teams для [вкладок](../tabs/how-to/authentication/tab-sso-overview.md).
 
 > [!NOTE]
->
-> * Параметр "Добавить приложение" для вкладки расширения собраний Teams не поддерживается в веб-клиенте Teams.
+> Параметр "Добавить приложение" для вкладки расширения собраний Teams не поддерживается в веб-клиенте Teams.
 
 #### <a name="pre-meeting-app-experience"></a>Взаимодействие с приложением перед собранием
 
@@ -226,7 +225,7 @@ ms.locfileid: "66841906"
 > * Федеративные пользователи не могут взаимодействовать с приложениями табуляции в вызовах.
 > * Если федеративные пользователи добавляются в существующий вызов с пользователями в клиенте или гостевом приложении, все участники теряют возможность добавлять, обновлять или удалять приложения. Однако только существующие пользователи в клиенте или гостевые пользователи смогут взаимодействовать с приложениями, которые были добавлены перед приглашением федеративных пользователей к вызову.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующее действие
 
 > [!div class="nextstepaction"]
 > [Включение и настройка приложений для собраний Teams](enable-and-configure-your-app-for-teams-meetings.md)

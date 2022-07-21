@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как админис
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: c63a901aba88b8f9f77c3a3e54217204a3e91cc9
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 0a7a98c5d981f35bc60a6099873a445b45caa071
+ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503447"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66919825"
 ---
 # <a name="customize-your-teams-app"></a>Настройка приложения Teams
 
@@ -23,7 +23,7 @@ ms.locfileid: "66503447"
 * Изменение акцентного цвета приложения в соответствии с фирменным стилем организации.
 * Обновление имени приложения с *Contoso* на *Contoso Agent*, то есть на имя, которое увидят пользователи в организации. (Примечание. Пользователи, добавляющие соединитель в чат или канал, все равно будут видеть исходное имя приложения, *Contoso*.)
 
-Вы можете включить эту функцию на [Портал разработчика Teams](https://dev.teams.microsoft.com/home). Это настраивает свойство `configurableProperties`, которое не доступно в версиях манифеста приложения Teams до 1.10.
+Эту функцию [`configurableProperties`](/microsoftteams/platform/resources/schema/manifest-schema#configurableproperties)можно включить, определив свойства приложения, которые клиенты могут настроить в разделе манифеста приложения Teams, начиная с версии 1.11. Это можно сделать на портале разработчика [для Teams](https://dev.teams.microsoft.com/home) , если вы решили изменить манифест приложения с помощью портала разработчика.
 
 ### <a name="test-your-app"></a>Тестирование приложения
 
