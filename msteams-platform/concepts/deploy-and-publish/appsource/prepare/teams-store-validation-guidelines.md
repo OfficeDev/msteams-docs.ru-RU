@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 0c92ce5acee19a1c83bf5fc83e0b09ab6a6dfc4f
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
+ms.openlocfilehash: c351214e019b0f794e4f279f69458da6adbf6dce
+ms.sourcegitcommit: 06fdb41c124f82ea1b66181485339cb200ea7162
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66659034"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66962477"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -617,7 +617,7 @@ URL-адреса службы поддержки должны включать �
 
 :::image type="content" source="../../../../assets/images/submission/validation-navigation-collapsable-left-rail.png" alt-text="validation-nav-collapsable-left-rail":::
 
-* Вкладки с панелью инструментов в левой области должны оставлять интервал в 20 пкс от левой области навигации Teams. [*Обязательное исправление*]
+* Вкладки с панелью инструментов в левой области должны оставлять интервал в 20 пикселей от левой области навигации Teams. [*Обязательное исправление*]
 
     :::image type="content" source="../../../../assets/images/submission/validation-navigation-spacing-between-toolbar.png" alt-text="validation-nav-spacing-between-toolbar":::
 
