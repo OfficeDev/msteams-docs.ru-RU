@@ -5,12 +5,12 @@ description: Сведения о типах файлов cookie, включая 
 ms.topic: reference
 ms.localizationpriority: medium
 ms.author: lomeybur
-ms.openlocfilehash: fee4855c8dd6c8dfdb83bce8b6d4d0c5da348724
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 8f61788779d34183f7000271245e683f2750f739
+ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142733"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67035326"
 ---
 # <a name="samesite-cookie-attribute"></a>Атрибут cookie SameSite
 

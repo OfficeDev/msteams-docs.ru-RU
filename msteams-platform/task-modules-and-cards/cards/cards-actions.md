@@ -3,12 +3,12 @@ title: Добавление действий карточек в бот
 description: В этом модуле вы узнаете, что такое действия с карточками в Microsoft Teams, типы действий и как их использовать в ботах.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: b9d73c09b9605ed9babbb2990c261dd920c3703b
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 84198e8a7ec5c0664ea9fcd2147b039fa5742b2c
+ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66483972"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67035305"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -29,7 +29,7 @@ ms.locfileid: "66483972"
 >
 >* Teams не поддерживает типы `CardAction`, не указанные в предыдущей таблице.
 >* Teams не поддерживает свойство `potentialActions`.
->* Действия с карточками отличаются от [рекомендуемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в Bot Framework или службе Azure Bot. Рекомендуемые действия не поддерживаются в Microsoft Teams. Если вы хотите, чтобы в сообщении бота Teams появлялись кнопки, используйте карточку.
+>* Действия с карточками отличаются от [рекомендуемых действий](/azure/bot-service/bot-builder-howto-add-suggested-actions?view=azure-bot-service-4.0&tabs=javascript#suggest-action-using-button&preserve-view=true) в Bot Framework или службе Azure Bot.
 >* Если вы используете действие карточки как часть расширения сообщений, действия не будут работать, пока карточка не будет отправлена ​​в канал. Действия не работают, пока карточка находится в окне составления сообщения.
 
 ## <a name="action-type-openurl"></a>Тип действия openUrl

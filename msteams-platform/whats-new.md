@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 02e2ea46b29c79be642a88389e8f18e1e310338b
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
+ms.openlocfilehash: 8b490e3f6b536839a1f27009a8a787242a0bbd81
+ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919839"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67035179"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,7 @@ ms.locfileid: "66919839"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 26.07.2022|Предлагаемые действия для ботов| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](bots/how-to/conversations/conversation-messages.md#send-suggested-actions)|
 | 21.07.2022 | Представлено пошаговое руководство по отправке уведомлений ленты действий. | Создание своего приложения> Компоненты пользовательского интерфейса> Уведомления ленты действий> [Отправка уведомления ленты действий](sbs-graphactivity-feedbroadcast.yml) |
 | 08.07.2022| Обновление идентификатора канала отправки, выбранного пользователем во время установки приложения для ботов, с помощью событий обновления установки и бесед |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
 | 16.06.2022 | Обновленные возможности мультимедиа для поддержки классических и мобильных устройств| Интеграция возможностей устройств > [Интеграция возможностей мультимедиа](concepts/device-capabilities/media-capabilities.md)|
@@ -223,7 +224,7 @@ ms.locfileid: "66919839"
 | 11.11.2018 | Раздел "Начало работы" для Node JS и .NET/C# дополнен использованием App Studio в Teams и добавлен новый раздел о размещении приложений Node Teams в Azure. | [Начало работы на платформе Microsoft Teams с использованием C#/.NET и App Studio](~/get-started/get-started-dotnet-app-studio.md), [Начало работы на платформе Microsoft Teams с использованием Node JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [Размещение приложения Node Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
 | 09.11.2018 | Теперь можно создавать прямые ссылки на закрытые чаты между пользователями. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#navigate-to-a-chat) |
 | 11/08/2018 | Выпущена платформа SharePoint Framework 1.7 с новой функцией для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
-| 05.11.2018 | Выпущена функция **модуля задач**. Модуль задач позволяет создавать модальные всплывающие окна в приложении Teams как из ботов, так и из вкладок. Внутри всплывающего окна можно запустить собственный код HTML или JavaScript, показать мини-приложение на базе `<iframe>`, например видео YouTube или Microsoft Stream, или [отобразить адаптивную карточку](/adaptive-cards/). | [Обзор модуля задач](~/concepts/task-modules/task-modules-overview.md), [модуль задач на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
+| 05.11.2018 | Выпущена функция **модуля задач**. Модуль задач позволяет создавать модальные всплывающие окна в приложении Teams как из ботов, так и из вкладок. Во всплывающем окне вы можете запустить собственный пользовательский код HTML/JavaScript, отобразить виджет на основе `<iframe>`, например видео YouTube или Microsoft Stream, или отобразить [адаптивную карточку](/adaptive-cards/). | [Обзор модуля задач](~/concepts/task-modules/task-modules-overview.md), [модуль задач на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
 | 05.10.2018 | Информация по форматированию для карточек была обновлена и протестирована в клиентах Teams для компьютеров, iOS и Android. | [Карточки](~/concepts/cards/cards.md), [Форматирование карточек](~/concepts/cards/cards-format.md) |
 | 24.09.2018 | API-интерфейсы звонков и онлайн-собраний для Microsoft Graph выпущены в бета-версии, и приложения Teams теперь могут взаимодействовать с пользователями с помощью голосовой связи и видео. | [Боты для звонков и онлайн-собраний](~/concepts/calls-and-meetings/registering-calling-bot.md), [Концепции мультимедиа в реальном времени](~/concepts/calls-and-meetings/real-time-media-concepts.md), [Регистрация бота с поддержкой голосовых вызовов](~/concepts/calls-and-meetings/registering-calling-bot.md), [Отладка и локальное тестирование](~/concepts/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md), [Мультимедиа, размещенные в приложении](~/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots.md), [Обработка уведомлений о входящих звонках](~/concepts/calls-and-meetings/call-notifications.md) |
 | 11.09.2018 | Страницы конфигурации вкладок теперь значительно выше. | [Разработка вкладок](tabs/design/tabs.md) |

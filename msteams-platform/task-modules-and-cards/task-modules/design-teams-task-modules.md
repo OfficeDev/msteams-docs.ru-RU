@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 95d0d43e72a72220111c0afa81970a4fab986fc8
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 07dd0457d49b167226da2fa10e91d87e6f674b6f
+ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558116"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67035270"
 ---
 # <a name="designing-task-modules-for-your-microsoft-teams-app"></a>Проектирование модулей задач для приложения Microsoft Teams
 
@@ -64,7 +64,7 @@ ms.locfileid: "66558116"
 |3|**Заголовок**: создавайте ясные и четкие заголовки. Опишите задачу, которую необходимо выполнить пользователям.
 |4|**Кнопка закрытия**: закрывает модуль задач. При этом несохраненные изменения не применяются к содержимому приложения.|
 |5|**IFrame**: пространство быстрого отклика, в котором размещено содержимое приложения.|
-|6 |**Действия (необязательно)**: кнопки, связанные с содержимым приложения.|
+|6|**Действия (необязательно)**: кнопки, связанные с содержимым приложения.|
 
 ## <a name="designing-with-ui-templates"></a>Проектирование с помощью шаблонов пользовательского интерфейса
 

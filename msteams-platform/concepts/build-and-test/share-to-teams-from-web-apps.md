@@ -3,12 +3,12 @@ title: Поделиться в Teams из веб-приложений
 description: Узнайте, как добавить встроенную кнопку «Отправить в Teams» на веб-сайт с предварительным просмотром веб-сайта с помощью примеров кода
 ms.topic: reference
 ms.localizationpriority: medium
-ms.openlocfilehash: b555d0e111a16be2e5be45e07998aeb94e432901
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 4266852b1e99e5ba23fab32df9705f77ccb33e20
+ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558480"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67035319"
 ---
 # <a name="share-to-teams-from-web-apps"></a>Поделиться в Teams из веб-приложений
 
@@ -16,7 +16,7 @@ ms.locfileid: "66558480"
 
 На следующем рисунке показано всплывающее окно для предварительной версии функции "Поделиться в Teams":
 
-:::image type="content" source="~/assets/images/share-to-teams-popup.png" alt-text="Всплывающее окно &quot;Общий доступ к Teams&quot;":::
+:::image type="content" source="~/assets/images/share-to-teams-popup.png" alt-text="Всплывающее окно &quot;Поделиться в Teams&quot;":::
 
 > [!NOTE]
 >
@@ -38,7 +38,6 @@ ms.locfileid: "66558480"
 <br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vhWH]
 <br>
-
 
 ## <a name="embed-a-share-to-teams-button"></a>Внедрение кнопки «Отправить в Teams»
 
@@ -117,7 +116,7 @@ ms.locfileid: "66558480"
 
 Для преподавателей, использующих кнопку "Поделиться в Teams", есть дополнительный параметр, `Create an Assignment` позволяющий быстро создать задание в выбранной команде на основе общей ссылки. На следующем изображении показан общий доступ к Teams для образования:
 
-:::image type="content" source="../../assets/images/share-to-teams-popup-edu.png" alt-text="Всплывающее окно «Отправка в Teams для образования»":::
+:::image type="content" source="../../assets/images/share-to-teams-popup-edu.png" alt-text="Предоставление общего доступа во всплывающем окне Teams для образовательных учреждений":::
 
 ## <a name="full-launcherjs-definition"></a>Полное определение launcher.js
 

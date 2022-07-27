@@ -4,12 +4,12 @@ description: Узнайте о способах общения с ботом Tea
 ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: d71a4df2548a27bf2da76434a0c90e96d0eaa6f7
-ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
+ms.openlocfilehash: 20cac5ed941e572e4d13cfd4535cb8be7d481355
+ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695301"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67035200"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
@@ -195,6 +195,38 @@ async def on_members_added_activity(
 > Разделение сообщений происходит, когда текстовое сообщение и вложение отправляются в тех же полезных данных действия. Это действие разделяется на отдельные действия Microsoft Teams, одно из них содержит только текстовое сообщение, а другое — с вложением. При разделении действия идентификатор сообщения в ответе не получается, который используется для упреждающего обновления [](~/bots/how-to/update-and-delete-bot-messages.md) или удаления сообщения. Рекомендуется отправлять отдельные действия, а не в зависимости от разделения сообщений.
 
 Сообщения, отправляемые между пользователями и ботами, включают внутренние данные канала в сообщении. Эти данные позволяют боту правильно обмениваться данными по этому каналу. Пакет SDK Bot Builder позволяет изменять структуру сообщений.
+
+## <a name="send-suggested-actions"></a>Отправка предлагаемых действий
+
+Предлагаемые действия позволяют боту предоставлять кнопки, которые пользователь может выбрать для ввода данных. Предлагаемые действия улучшают взаимодействие с пользователем, позволяя пользователю отвечать на вопрос или делать выбор с помощью кнопки, а не вводить ответ с помощью клавиатуры. Кнопки остаются видимыми и доступными для пользователя в форматированных карточках даже после того, как пользователь сделает выбор, а для предлагаемых действий кнопки недоступны. Это не позволяет пользователю выбрать устаревшие кнопки в беседе.
+
+Чтобы добавить предлагаемые действия в сообщение, `suggestedActions` задайте свойство объекта [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference) , чтобы указать список объектов [CardAction](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference) , представляющих кнопки, которые должны быть представлены пользователю. Дополнительные сведения см. в разделе [`SugestedActions`](/dotnet/api/microsoft.bot.builder.messagefactory.suggestedactions)
+
+Ниже приведен пример реализации и опыта предлагаемых действий.
+
+``` json
+"suggestedActions": {
+    "actions": [
+      {
+        "type": "imBack",
+        "title": "Action 1",
+        "value": "Action 1"
+      },
+      {
+        "type": "imBack",
+        "title": "Action 2",
+        "value": "Action 2"
+      }
+    ],
+    "to": [<list of recepientIds>]
+  }
+```
+
+:::image type="content" source="~/assets/images/Cards/suggested-actions.png" alt-text="Предлагаемые ботом действия" border="true":::
+
+> [!NOTE]
+> * `SuggestedActions` поддерживаются только для чат-ботов и текстовых сообщений, а не для адаптивных карточек или вложений.
+> * В `imBack` настоящее время это единственный поддерживаемый тип действия, и Teams отображает до трех предлагаемых действий.
 
 ## <a name="teams-channel-data"></a>Данные канала Teams
 
