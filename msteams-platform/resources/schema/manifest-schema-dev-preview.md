@@ -4,14 +4,14 @@ description: Изучите пример файла манифеста и опи
 ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 11/15/2021
-ms.openlocfilehash: 1c42b405506aff9ae570d6792db4ff8f73fb9255
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: c6552ce9a216dbf8c2f416002f6c98b977650160
+ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503475"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67058209"
 ---
-# <a name="public-developer-preview-manifest-schema-for-teams"></a>Схема манифеста общедоступной предварительной версии разработчика для Teams
+# <a name="public-developer-preview-manifest-schema-for-teams"></a>Схема манифеста общедоступной предварительной версии для разработчиков для Teams
 
 Как включить предварительную версию для разработчиков, см. в статье [Общедоступная предварительная версия для разработчиков для Microsoft Teams.](~/resources/dev-preview/developer-preview-intro.md).
 
@@ -396,7 +396,7 @@ ms.locfileid: "66503475"
 |`configurationUrl`|String|2048 символов|✔️|URL-адрес, используемый при настройке вкладки (https://).|
 |`canUpdateConfiguration`|Boolean|||Значение, указывающее, может ли экземпляр конфигурации вкладки быть обновлен пользователем после создания. По умолчанию: `true`.|
 |`scopes`|Массив перечислений|1|✔️|В настоящее время настраиваемые вкладки поддерживают только области `team` и `groupchat`. |
-|`context` |массив элементов enum|6 ||Набор областей `contextItem`, в которых [поддерживается вкладка](../../tabs/how-to/access-teams-context.md). По умолчанию: `channelTab`, `privateChatTab`, `meetingChatTab`, `meetingDetailsTab`, `meetingSidePanel` и `meetingStage`.|
+|`context` |массив элементов enum|6||Набор областей `contextItem`, в которых [поддерживается вкладка](../../tabs/how-to/access-teams-context.md). По умолчанию: `channelTab`, `privateChatTab`, `meetingChatTab`, `meetingDetailsTab`, `meetingSidePanel` и `meetingStage`.|
 |`sharePointPreviewImage`|String|2048||Относительный путь к изображению предварительного просмотра вкладки для использования в SharePoint. Размер: 1024x768. |
 |`supportedSharePointHosts`|Массив перечислений|1||Определяет, каким образом вкладка становится доступна в SharePoint. Варианты: `sharePointFullPage` и `sharePointWebPart` |
 
@@ -412,7 +412,7 @@ ms.locfileid: "66503475"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`entityId`|Строка|64 символа|✔️|Уникальный идентификатор сущности, отображаемый на вкладке.|
+|`entityId`|String|64 символа|✔️|Уникальный идентификатор сущности, отображаемый на вкладке.|
 |`name`|String|128 символов|✔️|Отображаемое имя вкладки в интерфейсе канала.|
 |`contentUrl`|String|2048 символов|✔️|URL-адрес, указывающий на пользовательский интерфейс объекта для отображения на холсте Microsoft Teams (https://).|
 |`contentBotId`|   | | | Идентификатор приложения Microsoft Teams, указанный для бота на портале Bot Framework. |
@@ -429,7 +429,7 @@ ms.locfileid: "66503475"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`botId`|Строка|64 символа|✔️|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Это вполне может совпадать с общим [идентификатором приложения](#id).|
+|`botId`|String|64 символа|✔️|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Это вполне может совпадать с общим [идентификатором приложения](#id).|
 |`needsChannelSelector`|Логическое|||Описывает, использует ли бот подсказку пользователя для добавления бота на определенный канал. По умолчанию:`false`|
 |`isNotificationOnly`|Логическое|||Указывает, является ли бот односторонним и только для уведомлений в отличие от бота для беседы. По умолчанию: `false`|
 |`supportsFiles`|Boolean|||Указывает, поддерживает ли бот возможность отправки и скачивания файлов в личном чате. По умолчанию: `false`|
@@ -667,6 +667,17 @@ ms.locfileid: "66503475"
 * `privacyUrl`: URL-адрес политики конфиденциальности разработчика (HTTPS).
 * `termsOfUseUrl`: URL-адрес условий использование разработчика (HTTPS).
 
+## <a name="supportedchanneltypes"></a>supportedChannelTypes
+
+**Необязательно** — массив
+
+Включает приложение в нестандартных каналах. Если приложение поддерживает область группы и это свойство определено, Teams соответствующим образом включает ваше приложение в каждом типе канала. В настоящее время поддерживаются типы частных и общих каналов.
+
+> [!NOTE]
+>
+> * Если приложение поддерживает область группы, оно работает в стандартных каналах независимо от значений, определенных в этом свойстве.
+> * Ваше приложение может указать уникальные свойства каждого из типов каналов для правильной работы. Чтобы включить вкладку для частных и общих каналов[](~/tabs/how-to/access-teams-context.md#retrieve-context-in-private-channels), ознакомьтесь со сведениями о извлечении контекста в частных каналах и извлечении [контекста в общих каналах](~/tabs/how-to/access-teams-context.md#retrieve-context-in-microsoft-teams-connect-shared-channels).
+
 ## <a name="defaultinstallscope"></a>defaultInstallScope
 
 **Необязательно** — строка
@@ -713,6 +724,7 @@ ms.locfileid: "66503475"
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`scenes`|массив объектов| 5 элементов||Сцены, поддерживаемые собранием.|
+|`supportsStreaming`|Логическое|||Значение, указывающее, может ли приложение выполнять потоковую передачу аудио- и видеосодержимого собрания в конечную точку протокола RTMP в режиме реального времени. Значение по умолчанию — **false**.|
 
 ### <a name="meetingextensiondefinitionscenes"></a>meetingExtensionDefinition.scenes
 

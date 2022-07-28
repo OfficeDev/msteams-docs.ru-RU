@@ -12,17 +12,21 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: c4583dd5452238dd38324fa3f2b7e7b9db7ea1e8
-  ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
+  ms.openlocfilehash: cd572905bdaf62ff7843a3b213798ac2783cc5b8
+  ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/21/2022
-  ms.locfileid: "66919811"
+  ms.lasthandoff: 07/28/2022
+  ms.locfileid: "67058230"
 landingContent:
-- title: 'Microsoft Build 2022 '
+- title: Знакомство с последними версиями
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Создание общих каналов
+      url: concepts/build-and-test/Shared-channels.md
+    - text: Представлен манифест приложения версии 1.14
+      url: resources/schema/manifest-schema.md
     - text: Улучшенная совместная работа с помощью пакета SDK Live Share [предварительная версия для разработчиков]
       url: apps-in-teams-meetings/teams-live-share-overview.md
     - text: Обновление событий беседы и установки в боте Teams [предварительная версия для разработчиков]
@@ -33,8 +37,6 @@ landingContent:
       url: tabs/how-to/using-teams-client-sdk.md
     - text: Набор средств Teams версии 4.0.0 для Visual Studio Code теперь общедоступна
       url: toolkit/teams-toolkit-fundamentals.md
-    - text: Представлен манифест приложения версии 1.13
-      url: resources/schema/manifest-schema.md
     - text: Боты и расширения для сообщений в GCC и GCCH
       url: ~/concepts/app-fundamentals-overview.md#government-community-cloud
 - title: Начало работы
