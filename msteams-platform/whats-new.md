@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 8b490e3f6b536839a1f27009a8a787242a0bbd81
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: d0254748a0c103976ba949f8597c8955ddcfe101
+ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035179"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67058279"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,9 @@ ms.locfileid: "67035179"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 28.07.2022 | Добавление изображения экрана Teams и карточки пользователя в уведомление собрания| Создание приложений для собраний и звонков Teams > Включение и настройка приложений для собраний > [Уведомление на собраниях](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#in-meeting-notification) |
+| 28.07.2022 | Создание общих каналов в Teams | Создание приложений для звонков и собраний Teams > [Общие каналы](concepts/build-and-test/Shared-channels.md) |
+| 28.07.2022|Реализован манифест приложения версии 1.14| Манифест приложения > [Схема манифеста приложения для Teams](resources/schema/manifest-schema.md)|
 | 26.07.2022|Предлагаемые действия для ботов| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](bots/how-to/conversations/conversation-messages.md#send-suggested-actions)|
 | 21.07.2022 | Представлено пошаговое руководство по отправке уведомлений ленты действий. | Создание своего приложения> Компоненты пользовательского интерфейса> Уведомления ленты действий> [Отправка уведомления ленты действий](sbs-graphactivity-feedbroadcast.yml) |
 | 08.07.2022| Обновление идентификатора канала отправки, выбранного пользователем во время установки приложения для ботов, с помощью событий обновления установки и бесед |  Создание ботов > Бот для бесед > События бесед в боте Teams > [События бесед в боте Teams](bots/how-to/conversations/subscribe-to-conversation-events.md) |
