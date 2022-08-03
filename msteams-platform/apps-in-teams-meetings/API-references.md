@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.date: 04/07/2022
-ms.openlocfilehash: aee6e93a6824838ff48d7fb92839af30dd8ce7c6
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
+ms.openlocfilehash: 20a0380bb6e8282f9ced47621b17b1633d09e28b
+ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919762"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "67232262"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -37,6 +37,8 @@ ms.locfileid: "66919762"
 |[**Получить состояние обмена сцены содержимого приложения**](#get-app-content-stage-sharing-state-api)| Получить информацию о состоянии общего доступа к приложению на сцене собрания. | [MSTC SDK](/javascript/api/@microsoft/teams-js/meeting.iappcontentstagesharingstate) |
 |[**Получить возможности обмена сцены содержимого приложения**](#get-app-content-stage-sharing-capabilities-api)| Получите возможности приложения для совместного использования на сцене собрания. | [MSTC SDK](/javascript/api/@microsoft/teams-js/meeting.iappcontentstagesharingcapabilities) |
 |[**Получать события собраний Teams в режиме реального времени**](#get-real-time-teams-meeting-events-api)|Узнавать о событиях собраний в режиме реального времени, таких как фактическое время начала и окончания.| [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsactivityhandler.onteamsmeetingstartasync?view=botbuilder-dotnet-stable&preserve-view=true) |
+| [**Получение входящего звукового динамика**](#get-incoming-audio-speaker) | Позволяет приложению получить параметр входящего звукового динамика для пользователя собрания.| [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
+| [**Переключение входящего звука**](#toggle-incoming-audio) | Позволяет приложению переключать параметры входящего звукового динамика для пользователя собрания от отключения звука до включения или наоборот.| [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
 
 ## <a name="get-user-context-api"></a>Получить API пользовательского контекста
 
@@ -144,7 +146,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 | **user.email** | Идентификатор почты пользователя. |
 | **user.userPrincipalName** | Имя участника-пользователя. |
 | **User.tenantId** | Идентификатор клиента Azure Active Directory. |
-| **user.userRole** | Роль пользователя, например admin или user. |
+| **user.userRole** | Роль пользователя. Например, admin или user. |
 | **meeting.role** | Роль участника в собрании. Например, "Организатор", "Выступающий" или "Участник". |
 | **meeting.inMeeting** | Значение, указывающее, находится ли участник в собрании. |
 | **conversation.id** | Идентификатор чата собрания. |
@@ -174,7 +176,7 @@ GET /v1/meetings/{meetingId}/participants/{participantId}?tenantId={tenantId}
 
 ### <a name="query-parameter"></a>Параметр запроса
 
-В следующей таблице приведены параметры запроса:
+В следующей таблице содержится параметр запроса:
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
@@ -501,7 +503,7 @@ GET /v1/meetings/{meetingId}
 | **details.scheduledEndTime** | Запланированное время окончания собрания в формате UTC. |
 | **details.joinUrl** | URL-адрес, используемый для присоединения к собранию. |
 | **details.title** | Название собрания. |
-| **details.type** | Тип собрания: GroupCall, OneToOneCall, Adhoc, Broadcast, MeetNow, Recurring, Scheduled, Unknown. |
+| **details.type** | Тип собрания (GroupCall, OneToOneCall, Adhoc, Broadcast, MeetNow, Recurring, Scheduled или Unknown). |
 | **conversation.isGroup** | Логическое значение, указывающее, содержит ли беседа более двух участников. |
 | **conversation.conversationType** | Тип беседы. |
 | **conversation.id** | Идентификатор чата собрания. |
@@ -634,7 +636,7 @@ API `getAppContentStageSharingState`позволяет получать инфо
 
 ### <a name="query-parameter"></a>Параметр запроса
 
-В следующей таблице приведены параметры запроса:
+В следующей таблице содержится параметр запроса:
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
@@ -674,7 +676,7 @@ API `getAppContentStageSharingCapabilities` позволяет получить 
 
 ### <a name="query-parameter"></a>Параметр запроса
 
-В следующей таблице приведены параметры запроса:
+В следующей таблице содержится параметр запроса:
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
@@ -922,13 +924,91 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | **channelData.tenant.id** | Идентификатор клиента Azure Active Directory. |
 | **channelData.source** | Имя источника, из которого инициируется или вызывается событие. |
 | **channelData.meeting.id** | Идентификатор по умолчанию, связанный с собранием. |
-| **Значение. MeetingType** | Тип собрания. |
-| **Значение. Название** | Тема собрания. |
-| **Значение. Id** | Идентификатор по умолчанию, связанный с собранием. |
-| **Значение. JoinUrl** | URL-адрес присоединения к собранию. |
-| **Значение. Starttime** | Время начала собрания в формате UTC. |
-| **Значение. Время окончания** | Время окончания собрания в формате UTC. |
+| **ценность. MeetingType** | Тип собрания. |
+| **ценность. Титул** | Тема собрания. |
+| **ценность. Идентификатор** | Идентификатор по умолчанию, связанный с собранием. |
+| **ценность. JoinUrl** | URL-адрес присоединения к собранию. |
+| **ценность. Время начала** | Время начала собрания в формате UTC. |
+| **ценность. Время окончания** | Время окончания собрания в формате UTC. |
 | **locale**| Языковой стандарт сообщения, задаемого клиентом. |
+
+## <a name="get-incoming-audio-speaker"></a>Получение входящего звукового динамика
+
+API `getIncomingClientAudioState` позволяет приложению получить параметр входящего звукового динамика для пользователя собрания. API доступен через клиентский SDK Teams.
+
+> [!NOTE]
+> API `getIncomingClientAudioState` для мобильных устройств в настоящее время доступен только в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
+
+### <a name="query-parameter"></a>Параметр запроса
+
+В следующей таблице содержится параметр запроса:
+
+|Значение|Тип|Обязательный|Описание|
+|---|---|----|---|
+|**callback**| String | Да | Обратный вызов содержит два параметра `error` и `result`. Ошибка *может* содержать тип ошибки или `SdkError` `null` при успешной выборке звука. Результат *может* содержать значение true или false, если выборка звука выполнена успешно, или значение NULL при сбое выборки звука. Входящий звук отключен, если результат имеет значение true, и не включен, если результат имеет значение false. |
+
+### <a name="example"></a>Пример
+
+```typescript
+function getIncomingClientAudioState(
+    callback: (error: SdkError | null, result: boolean | null) => void,
+  ): void {
+    if (!callback) {
+      throw new Error('[get incoming client audio state] Callback cannot be null');
+    }
+    ensureInitialized(FrameContexts.sidePanel, FrameContexts.meetingStage);
+    sendMessageToParent('getIncomingClientAudioState', callback);
+  }
+
+```
+
+### <a name="response-codes"></a>Коды ответа
+
+В следующей таблице приведены коды ответов:
+
+|Код ответа|Описание|
+|---|---|
+| **500** | Внутренняя ошибка. |
+| **501** | API не поддерживается в текущем контексте.|
+| **1000** | Приложение не имеет необходимых разрешений, чтобы разрешить общий доступ к этапу.|
+
+## <a name="toggle-incoming-audio"></a>Переключение входящего звука
+
+API `toggleIncomingClientAudio` позволяет приложению переключать параметры входящего звукового динамика для пользователя собрания от отключения звука до включения звука или наоборот. API доступен через клиентский SDK Teams.
+
+> [!NOTE]
+> API `toggleIncomingClientAudio` для мобильных устройств в настоящее время доступен только в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
+
+### <a name="query-parameter"></a>Параметр запроса
+
+В следующей таблице содержится параметр запроса:
+
+|Значение|Тип|Обязательный|Описание|
+|---|---|----|---|
+|**callback**| String | Да | Обратный вызов содержит два параметра `error` и `result`. Ошибка *может* содержать тип ошибки или `SdkError` `null` при успешном выполнении переключателя. Результат *может* содержать значение true или false, если переключатель выполнен успешно, или значение NULL при сбое переключателя. Входящий звук отключен, если результат имеет значение true, и не включен, если результат имеет значение false. |
+
+### <a name="example"></a>Пример
+
+```typescript
+function toggleIncomingClientAudio(callback: (error: SdkError | null, result: boolean | null) => void): void {
+    if (!callback) {
+      throw new Error('[toggle incoming client audio] Callback cannot be null');
+    }
+    ensureInitialized(FrameContexts.sidePanel, FrameContexts.meetingStage);
+    sendMessageToParent('toggleIncomingClientAudio', callback);
+  }
+
+```
+
+### <a name="response-code"></a>Код ответа
+
+В следующей таблице приведены коды ответов:
+
+|Код ответа|Описание|
+|---|---|
+| **500** | Внутренняя ошибка. |
+| **501** | API не поддерживается в текущем контексте.|
+| **1000** | Приложение не имеет необходимых разрешений, чтобы разрешить общий доступ к этапу.|
 
 ## <a name="code-sample"></a>Пример кода
 
