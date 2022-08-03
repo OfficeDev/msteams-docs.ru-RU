@@ -5,12 +5,12 @@ ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 11893cb2db927935d399d83794b7680560adcc7d
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 4641d19a6df93cf4dc575653bde0318f429ca551
+ms.sourcegitcommit: f2449520011b8a2094173ddcd7fe816256061e5e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485736"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67158068"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
@@ -146,7 +146,7 @@ ms.locfileid: "66485736"
 
       1. Правильно указаны сведения `subscriptionOffer` в манифесте вашего приложения в формате `publisherId.offerId`.
 
-      1. Необходимо убедиться, что связанное предложение SaaS предназначено для поддержки лицензий, назначаемых по имени в [модели для каждого пользователя](/azure/marketplace/create-new-saas-offer-plans). Связанные предложения SaaS, поддерживающие другие модели ценообразования, например фиксированную ставку, в настоящее время не принимаются для публикации в магазине Teams.
+      1. Необходимо убедиться, что связанное предложение SaaS предназначено для поддержки лицензий, назначаемых в [модели ценообразования SaaS](/azure/marketplace/create-new-saas-offer-plans).
 
       1. Включите инструкции по тестированию или настройке либо ссылку на демонстрационное видео с подробными сведениями о функциях приложения и поддерживаемых сценариях, а также дополнительные сведения, чтобы наши тест-инженеры могли легко понять рабочие процессы портала SaaS.
 
