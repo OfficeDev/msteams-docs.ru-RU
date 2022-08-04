@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 02d89b8933f09e298c158afe835f5aacce137365
-ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
+ms.openlocfilehash: 6e6326cb415a034fafec92879d0d20ab3ec9c472
+ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/03/2022
-ms.locfileid: "67178627"
+ms.locfileid: "67232283"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,9 @@ ms.locfileid: "67178627"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 03.08.2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
+| 03.08.2022 | Добавлена функция для получения расшифровок прошедших собраний. | Создание приложений для собраний и звонков Teams > Получение расшифровки собраний с помощью API Graph > [Обзор](graph-api/meeting-transcripts/overview-transcripts.md) |
+| 03.08.2022 | Развертывание ссылки для отправки в Teams из веб-приложений | Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
 | 28.07.2022 | Добавление изображения экрана Teams и карточки пользователя в уведомление собрания| Создание приложений для собраний и звонков Teams > Включение и настройка приложений для собраний > [Уведомление на собраниях](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#in-meeting-notification) |
 | 28.07.2022 | Создание общих каналов в Teams | Создание приложений для звонков и собраний Teams > [Общие каналы](concepts/build-and-test/Shared-channels.md) |
 | 28.07.2022|Реализован манифест приложения версии 1.14| Манифест приложения > [Схема манифеста приложения для Teams](resources/schema/manifest-schema.md)|
@@ -261,11 +264,10 @@ ms.locfileid: "67178627"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-|02.08.2022| Элементы управления совместной работой для Teams| Интеграция с Teams > [Элементы управления совместной работой](samples/collaboration-control.md)|
+| 03.08.2022 | Отключение и включение звука API-интерфейсов для приложений на этапе собрания Teams | Создание приложений для собраний и звонков Teams > [Справочные материалы по API приложений для собраний](/microsoftteams/platform/apps-in-teams-meetings/api-references?tabs=dotnet) |
+| 02.08.2022| Элементы управления совместной работой для Teams| Интеграция с Teams > [Элементы управления совместной работой](samples/collaboration-control.md)|
 | 30.06.2022 | Приложения для мгновенных собраний, индивидуальных и групповых звонков| Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md)|
-| 16.06.2022 | Развертывание ссылки для отправки в Teams из веб-приложений| Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
 |24.05.2022| Улучшенная совместная работа с Live Share SDK | Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
-| 04/06/2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 03.02.2022 | Представлен манифест приложения версии 1.13 | Манифест приложения > Общедоступная предварительная версия для разработчиков > [Схема манифеста](resources/schema/manifest-schema-dev-preview.md) |
 | 17.01.2022 | Выбор людей в адаптивных карточках для мобильных устройств | Создание карточек и модулей задач > Создание карточек > [Выбор людей в адаптивных карточках](task-modules-and-cards/cards/people-picker.md)|
 | 28.10.2021 |В ботах можно разрешить получение всех сообщений канала с помощью согласия для определенных ресурсов (RSC) | • Создание ботов > Беседы ботов > [обзор беседы бота](~/bots/how-to/conversations/conversation-basics.md) </br> • Создание ботов > Беседы ботов > [чаты каналов и групп](~/bots/how-to/conversations/channel-and-group-conversations.md) |
