@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: d0254748a0c103976ba949f8597c8955ddcfe101
-ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
+ms.openlocfilehash: 02d89b8933f09e298c158afe835f5aacce137365
+ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67058279"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "67178627"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -261,6 +261,7 @@ ms.locfileid: "67058279"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+|02.08.2022| Элементы управления совместной работой для Teams| Интеграция с Teams > [Элементы управления совместной работой](samples/collaboration-control.md)|
 | 30.06.2022 | Приложения для мгновенных собраний, индивидуальных и групповых звонков| Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md)|
 | 16.06.2022 | Развертывание ссылки для отправки в Teams из веб-приложений| Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
 |24.05.2022| Улучшенная совместная работа с Live Share SDK | Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |

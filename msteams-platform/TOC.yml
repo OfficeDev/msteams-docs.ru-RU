@@ -561,6 +561,44 @@
           href: samples/teams-low-code-solutions.md
         - name: Добавление чатбота Power Virtual Agents
           href: bots/how-to/add-power-virtual-agents-bot-to-teams.md
+    - name: Элементы управления совместной работой
+      items:
+        - name: Обзор
+          href: samples/collaboration-control.md
+        - name: Установка элементов управления совместной работой
+          href: samples/install-collaboration-control.md
+        - name: Создание приложения с элементами управления совместной работой
+          href: samples/app-with-collaboration-controls.md
+        - name: Развертывание приложения с элементами управления совместной работой в Teams
+          href: samples/deploy-collaboration-control-in-teams.md
+        - name: Необязательные конфигурации для приложения по управлению совместной работой
+          items:
+            - name: Power Automate
+              href: samples/collaboration-control-power-automate.md
+            - name: Настройка задач для внешних клиентов
+              href: samples/configure-tasks.md
+            - name: 'Виртуальные таблицы для задач, собраний и файлов'
+              items:
+                - name: Обзор
+                  href: samples/virtual-tables-for-tasks.md
+                - name: Веб-API виртуальных таблиц
+                  href: samples/virtual-tables-api.md
+                - name: Справочник по сущностям виртуальных таблиц
+                  href: samples/virtual-table-entity-references.md
+        - name: Элементы управления совместной работой и API параметров
+          items:
+            - name: Обзор
+              href: samples/collaboration-api-reference.md
+            - name: Совместная работа — пользовательские API
+              href: /rest/api/industry/collaboration-toolkit/collaboration-custom-ap-is
+            - name: Совместная работа — стандартные API OData
+              href: /rest/api/industry/collaboration-toolkit/collaboration-standard-o-data-ap-is
+            - name: Параметры — пользовательские API
+              href: /rest/api/industry/collaboration-toolkit/settings-custom-ap-is
+            - name: Параметры — стандартные API OData
+              href: /rest/api/industry/collaboration-toolkit/settings-standard-o-data-ap-is
+        - name: Ограничения при управлении совместной работой
+          href: samples/collaboration-controls-limitations.md
     - name: Шаблоны приложений для Microsoft Teams
       href: samples/app-templates.md
     - name: Готовые к работе соединители
