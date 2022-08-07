@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, как создать
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 12/07/2018
-ms.openlocfilehash: d6e4f2eba93d7b4e7a657b5ee088de46d0fa0211
-ms.sourcegitcommit: 526ad8562d3bacc13141cd7f695aa5f3f3752052
+ms.openlocfilehash: 0f53f26c8cb54c1d21cbe305d3ea1d433bfb864b
+ms.sourcegitcommit: fb0942afb8be32d92df282dec03fbb3b13f8f303
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66737414"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "67264171"
 ---
 # <a name="create-a-bot"></a>Создать бота
 
@@ -52,7 +52,7 @@ ms.locfileid: "66737414"
 
 > [!WARNING]
 >
->* Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio будет объявлен нерекомендуемым до 1 августа 2022 г.
+>* Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio не рекомендуется к использованию 1 августа 2022 г.
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

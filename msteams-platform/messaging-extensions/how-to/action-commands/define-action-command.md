@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как определ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: dda990bcde10b6ff644bc034e91b838c681b842f
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: 2769dc4d76f6b417f3264dd321b0d5c5e794c9f8
+ms.sourcegitcommit: fb0942afb8be32d92df282dec03fbb3b13f8f303
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035291"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "67264185"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
@@ -87,7 +87,7 @@ ms.locfileid: "67035291"
 Вы можете создать команду действия с помощью **App Studio** или **портала разработчика**.
 
 > [!WARNING]
- > Если до сих пор вы использовали App Studio, рекомендуем попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки, распространения приложений Teams и управления ими. Решение App Studio будет упразднено к 1 августа 2022 г.
+ > Если до сих пор вы использовали App Studio, рекомендуем попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки, распространения приложений Teams и управления ими. App Studio не рекомендуется к использованию 1 августа 2022 г.
 
 # <a name="app-studio"></a>[App Studio](#tab/AS)
 
@@ -233,7 +233,7 @@ ms.locfileid: "67035291"
 
 | Название примера           | Описание | .NET    | Node.js   |
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
+|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) |
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 

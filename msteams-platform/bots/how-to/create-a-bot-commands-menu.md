@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 6252531565693f318550398967db16297bfd40c0
-ms.sourcegitcommit: 526ad8562d3bacc13141cd7f695aa5f3f3752052
+ms.openlocfilehash: 1dff29ca48a7efb3338816394c177de7779714ee
+ms.sourcegitcommit: fb0942afb8be32d92df282dec03fbb3b13f8f303
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66737421"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "67264178"
 ---
 # <a name="create-a-commands-menu"></a>Создать меню команд
 
@@ -41,11 +41,11 @@ ms.locfileid: "66737421"
 1. Откройте Teams и выберите **Приложения** в левой области. На странице **Приложения** найдите **App Studio** и выберите **Открыть**.
 
    > [!WARNING]
-   > Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio будет объявлен нерекомендуемым до 1 августа 2022 г.
+   > Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams. App Studio не рекомендуется к использованию 1 августа 2022 г.
 
    :::image type="content" source="conversations/Media/AppStudio.png" alt-text="appstudio-media":::
 
-2. В **App Studio** перейдите на вкладку **редактора манифеста**. Если у вас еще нет пакета приложения, можно создать приложение или импортировать существующее. Дополнительные сведения см. в [C# app package in App Studio](../../get-started/deploy-csharp-app-studio.md).
+2. В **App Studio** перейдите на вкладку **редактора манифеста**. Если у вас еще нет пакета приложения, можно создать приложение или импортировать существующее. Дополнительные сведения см. [в статье об обновлении пакета приложения C# в App Studio](../../get-started/deploy-csharp-app-studio.md).
 
 3. В **редакторе манифеста** на панели слева и в разделе **Возможности** выберите **Боты**.
 

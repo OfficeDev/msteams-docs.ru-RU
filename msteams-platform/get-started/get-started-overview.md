@@ -3,12 +3,12 @@ title: Начало работы — обзор
 description: В этом модуле вы узнаете, как начать работу с документацией для разработчиков Microsoft Teams, которая познакомит вас с общими инструментами, основными понятиями и расширенными функциями.
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: a7acb1b69d33a77c9ea35adfddcd76d4c83d8c62
-ms.sourcegitcommit: 526ad8562d3bacc13141cd7f695aa5f3f3752052
+ms.openlocfilehash: 900d07b581f752b5169681750f209a280902b68d
+ms.sourcegitcommit: fb0942afb8be32d92df282dec03fbb3b13f8f303
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66737400"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "67264143"
 ---
 # <a name="get-started"></a>Начало работы
 
@@ -41,7 +41,7 @@ ms.locfileid: "66737400"
 Если вы уже знакомы с рабочим процессом Yeoman, возможно, вы предпочтете использовать [генератор Yeoman YoTeams](https://github.com/pnp/generator-teams/blob/master/docs/docs/tutorials/build-your-first-microsoft-teams-app.md) для создания приложений.
 
 > [!WARNING]
-> Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams.<br> App Studio станет нерекомендованной к использованию не позднее 1 августа 2022 г.
+> Если вы использовали App Studio, рекомендуем попробовать Портал разработчика для настройки, распространения и управления приложениями Teams.<br> С 1 августа 2022 года App Studio упраздняется.
 
 ## <a name="build-your-first-teams-app"></a>Создайте свое первое приложение Teams
 
