@@ -6,14 +6,14 @@ ms.author: nliu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/13/2022
-ms.openlocfilehash: f87175aa4a965d38e439a58ea726fe0af7c68fbd
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 2365d7adbebca011af9d4204b2a305a6131f72a5
+ms.sourcegitcommit: 209b9942c02b5affdd995348902114d3b9805c61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558004"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67288145"
 ---
-# <a name="edit-teams-app-manifest"></a>Изменение манифеста приложения Teams
+# <a name="edit-teams-app-manifest-for-visual-studio"></a>Изменение манифеста приложения Teams для Visual Studio
 
 Файл шаблона манифеста `manifest.template.json` доступен в папке `templates/appPackage` после скаффолдинга. Файл шаблона с заполнителями и фактическими значениями разрешается набором средств Teams `.fx/configs` `.fx/states` с помощью файлов в разных средах и для разных сред.
 
@@ -139,8 +139,8 @@ ms.locfileid: "66558004"
 **Добавление настраиваемого параметра**
 
 1. Добавьте настраиваемый параметр следующим образом:</br>
-   А. Добавьте заполнитель с шаблоном `manifest.template.json` `{{config.manifest.xx}}`.</br>
-   Б. Добавьте значение конфигурации в `config.{env}.json`.
+   a) Добавьте заполнитель с шаблоном `manifest.template.json` `{{config.manifest.xx}}`.</br>
+   б) Добавьте значение конфигурации в `config.{env}.json`.
 
      ```json
      {

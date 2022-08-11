@@ -1,16 +1,16 @@
 ---
 title: Расширение возможностей приложений Teams в Microsoft 365 (предварительная версия)
-description: В этом модуле вы узнаете, как создавать и обновлять интерфейсы приложений Teams в других областях с высоким уровнем использования Microsoft 365.
+description: Из этой статьи вы узнаете, как создавать, обновлять и расширять возможности приложений Teams, а также как создавать приложения, используемые в других областях с высоким уровнем использования в Microsoft 365.
 ms.date: 05/24/2022
 ms.topic: Conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: ec724b99e69cf496d25984d8dc800040d5817882
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
+ms.openlocfilehash: 208843d9d4c46d29b095ffaf7260f28889f8ed45
+ms.sourcegitcommit: 209b9942c02b5affdd995348902114d3b9805c61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919832"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67288215"
 ---
 # <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
@@ -24,7 +24,7 @@ ms.locfileid: "66919832"
 |--|--|--|--|--|--|
 | [**Вкладки**](../tabs/what-are-tabs.md) (личная область)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Интернет (целевой выпуск)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
 | [**Расширения сообщений**](../messaging-extensions/what-are-messaging-extensions.md) (на основе поиска)| `composeExtensions` | Web, Desktop, Mobile| Веб (целевой выпуск), рабочий стол (бета-канал)| - |На основе действий для Microsoft 365 пока не поддерживается. См. [примечания](extend-m365-teams-message-extension.md#preview-your-message-extension-in-outlook). |
-| [**Соединители графов**](/graph/connecting-external-content-connectors-overview)| `graphConnector` | Web, Desktop, Mobile| Интернет, рабочий стол | Web| Просмотр [заметок](#graph-connectors)
+| [**Соединители графов**](/graph/connecting-external-content-connectors-overview)| `graphConnector` | Web, Desktop, Mobile| Интернет, рабочий стол | Веб| Просмотр [заметок](#graph-connectors)
 | [**Надстройки Office**](/office/dev/add-ins/develop/json-manifest-overview) (предварительная версия) | `extensions` | - | Интернет, рабочий стол | - | Доступно только в [версии манифеста devPreview](../resources/schema/manifest-schema-dev-preview.md) . См. [примечания](#office-add-ins-preview).|
 
 \*Для [параметра целевого выпуска Microsoft 365](/microsoft-365/admin/manage/release-options-in-office-365) [Приложения Microsoft 365](/deployoffice/change-update-channels) регистрации канала обновления требуется согласие администратора для всей организации или выбранных пользователей. Каналы обновления относятся к конкретному устройству и применяются только к установкам Office, работающим в Windows.
@@ -71,7 +71,7 @@ ms.locfileid: "66919832"
 
 Дополнительные сведения см [. в статье "Публикация приложений Teams для Microsoft 365"](publish.md).
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 Настройка среды разработки для создания приложений Teams для Microsoft 365:
 
