@@ -1,14 +1,14 @@
 ---
 title: Создание прямых ссылок
-description: Узнайте, как создавать прямые ссылки, использовать их и перемещаться по ним в приложениях Microsoft Teams с помощью вкладок.
+description: В этой статье вы узнаете, как создавать прямые ссылки и переходить по ним в приложениях Microsoft Teams с вкладками.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 90fb16ed7629425958aa52ee776bef9d58748136
-ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
+ms.openlocfilehash: 9113491db788b187a86db21c97867540a35777d2
+ms.sourcegitcommit: f192d7685ee3ddf4a55dc9787d56744403c3f8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67058223"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67302467"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -387,7 +387,10 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 ### <a name="deep-linking-to-an-app"></a>Создание прямых ссылок на приложение
 
 Создайте прямую ссылку для приложения после того, как приложение появится в магазине Teams. Чтобы создать ссылку для запуска Teams, добавьте идентификатор приложения к следующему URL-адресу: `https://teams.microsoft.com/l/app/<your-app-id>`. Отобразится диалоговое окно для установки приложения.
-  
+
+> [!NOTE]
+> В настоящее время создание прямых ссылок на приложение не поддерживается на мобильной платформе.
+
 ### <a name="deep-linking-for-sharepoint-framework-tabs"></a>Создание прямых ссылок для вкладок SharePoint Framework
 
 Следующий формат прямой ссылки можно использовать в карточке бота, соединителя или расширения для сообщений: `https://teams.microsoft.com/l/entity/<AppId>/<EntityId>?webUrl=<entityWebUrl>/<EntityName>`

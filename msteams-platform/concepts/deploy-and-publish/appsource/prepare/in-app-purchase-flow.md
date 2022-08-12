@@ -5,12 +5,12 @@ author: v-npaladugu
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 8bbfac3f72fb9ddbfb21d36f4a1ad2516af52b83
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 59511c62fbc03b2d730bbbcccf5f4d2eadc37885
+ms.sourcegitcommit: f192d7685ee3ddf4a55dc9787d56744403c3f8f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558060"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67302460"
 ---
 # <a name="in-app-purchases"></a>Покупки из приложения
 
@@ -52,32 +52,54 @@ Microsoft Teams предоставляет API, которые можно исп
 
 Чтобы инициировать покупку в приложении для вашего веб-приложения, вызовите из него `openPurchaseExperience`API.
 
-Ниже приводится пример вызова API из приложения.
+Следующий фрагмент кода является примером вызова API из приложения Teams, созданного с помощью клиентского пакета SDK JavaScript для Teams.
+
+# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/jsonV11)
 
 ```json
-<body> 
 <div> 
-<div class="sectionTitle">openPurchaseExperience</div> 
-<button onclick="openPurchaseExperience()">openPurchaseExperience</button> 
-</div> 
-</body> 
-<script> 
-   function openPurchaseExperience() {
+<div class="sectionTitle">openPurchaseExperience</div>
+<button onclick="openPurchaseExperience()">openPurchaseExperience</button>
+</div>
+</body>
+<script>
+   function openPurchaseExperience()
       microsoftTeams.initialize();
       let callbackcalled = false;
       microsoftTeams.monetization.openPurchaseExperience((e) => {
-      console.log("callback is being called");
-      callbackcalled = true;  
-      if (!!e && typeof e !== "string") {
-            e = JSON.stringify(e);
-            alert(e);
-        }
-        return;
-      });
+            console.log("callback is being called");
+            console.log(e);
+            if (!!e && typeof e !== "string") {
+                  alert(JSON.stringify(e));
+              }
+              return;
+            });
       console.log("after callback: ",callbackcalled);
-    } 
-</script> 
+    }
+</script>
 ```
+
+# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/jsonV2)
+
+```json
+<div>
+<div class="sectionTitle">openPurchaseExperience</div>
+<button onclick="openPurchaseExperience()">openPurchaseExperience</button>
+</div>
+</body>
+<script>
+   function openPurchaseExperience() {
+      app.initialize();
+    var planInfo = {
+        planId: "<Plan id>", // Plan Id of the published SAAS Offer
+        term: "<Plan Term>" // Term of the plan.
+    }
+      monetization.openPurchaseExperience(planInfo);
+    }
+</script>
+```
+
+---
 
 ## <a name="end-user-in-app-purchasing-experience"></a>Интерфейс покупки в приложении для конечных пользователей
 
