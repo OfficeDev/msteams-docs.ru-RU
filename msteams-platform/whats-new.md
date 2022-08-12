@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 6e6326cb415a034fafec92879d0d20ab3ec9c472
-ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
+ms.openlocfilehash: 11d4501aa8080a27b74581aefcb33795ded4ef78
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67232283"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67312242"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,7 @@ ms.locfileid: "67232283"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 09.08.2022 | Представлен набор средств Teams для Visual Studio 2022 | Инструменты и SDK > Набор средств Teams для Visual Studio > [Обзор набора средств Teams для Visual Studio](toolkit/teams-toolkit-overview-visual-studio.md) |
 | 03.08.2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 03.08.2022 | Добавлена функция для получения расшифровок прошедших собраний. | Создание приложений для собраний и звонков Teams > Получение расшифровки собраний с помощью API Graph > [Обзор](graph-api/meeting-transcripts/overview-transcripts.md) |
 | 03.08.2022 | Развертывание ссылки для отправки в Teams из веб-приложений | Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
@@ -227,7 +228,6 @@ ms.locfileid: "67232283"
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
 | 11/12/2018 | Вкладки в групповом чате теперь доступны в выпущенной версии Teams. В рамках этой работы раздел вкладок был переработан для наглядности.| [Настраиваемые вкладки](~/concepts/tabs/tabs-configurable.md) |
-| 11.11.2018 | Раздел "Начало работы" для Node JS и .NET/C# дополнен использованием App Studio в Teams и добавлен новый раздел о размещении приложений Node Teams в Azure. | [Начало работы на платформе Microsoft Teams с использованием C#/.NET и App Studio](~/get-started/get-started-dotnet-app-studio.md), [Начало работы на платформе Microsoft Teams с использованием Node JS и App Studio](~/get-started/get-started-nodejs-app-studio.md), [Размещение приложения Node Teams в Azure](~/get-started/get-started-nodejs-in-azure.md)|
 | 09.11.2018 | Теперь можно создавать прямые ссылки на закрытые чаты между пользователями. | [Создание прямых ссылок на чат](concepts/build-and-test/deep-links.md#navigate-to-a-chat) |
 | 11/08/2018 | Выпущена платформа SharePoint Framework 1.7 с новой функцией для использования вкладки Microsoft Teams в качестве веб-части SharePoint Framework. | [Вкладки в SharePoint](~/concepts/tabs/tabs-in-sharepoint.md) |
 | 05.11.2018 | Выпущена функция **модуля задач**. Модуль задач позволяет создавать модальные всплывающие окна в приложении Teams как из ботов, так и из вкладок. Во всплывающем окне вы можете запустить собственный пользовательский код HTML/JavaScript, отобразить виджет на основе `<iframe>`, например видео YouTube или Microsoft Stream, или отобразить [адаптивную карточку](/adaptive-cards/). | [Обзор модуля задач](~/concepts/task-modules/task-modules-overview.md), [модуль задач на вкладках](~/concepts/task-modules/task-modules-tabs.md), [модуль задач в ботах](~/concepts/task-modules/task-modules-bots.md) |
@@ -251,7 +251,6 @@ ms.locfileid: "67232283"
 | 02.04.2018 | Использование ботов для отправки уведомлений в приложении. |[Боты только для уведомлений](~/concepts/bots/bots-notification-only.md)|
 | 27.03.2018 | Расширенная документация по упреждающим сообщениям. |[Начиная разговор](./concepts/bots/bot-conversations/bots-conv-proactive.md)|
 | 15.03.2018 | Переработана документация по карточкам. |[Карточки](~/concepts/cards/cards.md), [Действия карточек](~/concepts/cards/cards-actions.md), [Форматирование карточек](~/concepts/cards/cards-format.md), [Справка по карточкам](~/concepts/cards/cards-reference.md)|
-| 03.03.2018 | Добавлена документация по Teams App Studio. |[Быстрая разработка приложений с помощью Teams App Studio](~/get-started/get-started-app-studio.md), [Использование библиотеки элементов управления в App Studio](~/get-started/app-studio-component-library.md)|
 | 27.02.2018 | Добавлен пример кода для демонстрации метода AsTeamsChannelAccounts(). |[Получите контекст для бота](~/concepts/bots/bots-context.md)|
 | 05.02.2018 | Добавлены темы по началу работы с помощью C#. |[Начало работы на платформе Microsoft Teams с использованием C#/.NET](./get-started/get-started-dotnet-app-studio.md)|
 |

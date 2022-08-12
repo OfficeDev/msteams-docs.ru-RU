@@ -3,12 +3,12 @@ title: Типы карточек
 description: В этом модуле вы узнаете, какие карточки и действия карточек доступны для ботов в Teams и создадите главный имиджевый баннер, эскиз и адаптивные карточки.
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 1fc197901b806adbb6a640f320d0df7565f199a3
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: f5d71e2e766f81b9481b60a801ea419ba3c14968
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558585"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67311962"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -18,7 +18,7 @@ ms.locfileid: "66558585"
 
 ## <a name="create-a-hero-card-thumbnail-card-or-adaptive-card"></a>Создание карточки главного имиджевого баннера, эскиза или адаптивной карточки
 
-Создание карточки главного имиджевого баннера, карточки эскиза или адаптивной карточки в App Studio:
+Создание карточки главного имиджевого баннера, карточки эскиза или адаптивной карточки на портале разработчика для Teams:
 
 1. Перейдите на [портал разработчика Teams](https://dev.teams.microsoft.com/home).
 1. Выберите **Проектирование и сборка адаптивных карточек**.

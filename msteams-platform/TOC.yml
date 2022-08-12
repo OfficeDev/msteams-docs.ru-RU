@@ -232,6 +232,8 @@
       href: tabs/design/tabs-mobile.md
     - name: Получение контекста для вкладки
       href: tabs/how-to/access-teams-context.md
+    - name: Создание приложений для общих каналов
+      href: concepts/build-and-test/shared-channels.md
     - name: Создание вкладок с использованием адаптивных карточек
       href: tabs/how-to/build-adaptive-card-tabs.md
     - name: Предварительный просмотр для ссылки "Вкладки" и представление стадий
@@ -323,8 +325,6 @@
       href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
     - name: Справочные материалы по API приложений для собраний
       href: apps-in-teams-meetings/API-references.md
-    - name: Собрать общий канал
-      href: concepts/build-and-test/Shared-channels.md
     - name: Получение расшифровок собраний с помощью API Graph
       items:
         - name: Обзор
@@ -612,15 +612,15 @@
         - name: Элементы управления совместной работой и API параметров
           items:
             - name: Обзор
-              href: samples/collaboration-api-reference.md
+              href: /rest/api/industry/collaboration-controls/
             - name: Совместная работа — пользовательские API
-              href: /rest/api/industry/collaboration-toolkit/collaboration-custom-ap-is
+              href: /rest/api/industry/collaboration-controls/collaboration-custom-ap-is
             - name: Совместная работа — стандартные API OData
-              href: /rest/api/industry/collaboration-toolkit/collaboration-standard-o-data-ap-is
+              href: /rest/api/industry/collaboration-controls/collaboration-standard-o-data-ap-is
             - name: Параметры — пользовательские API
-              href: /rest/api/industry/collaboration-toolkit/settings-custom-ap-is
+              href: /rest/api/industry/collaboration-controls/settings-custom-ap-is
             - name: Параметры — стандартные API OData
-              href: /rest/api/industry/collaboration-toolkit/settings-standard-o-data-ap-is
+              href: /rest/api/industry/collaboration-controls/settings-standard-o-data-ap-is
         - name: Ограничения при управлении совместной работой
           href: samples/collaboration-controls-limitations.md
     - name: Шаблоны приложений для Microsoft Teams

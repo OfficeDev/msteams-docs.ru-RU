@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 32aa12e69d32c8b50a05df994021fb9dfcc248b1
-ms.sourcegitcommit: fb0942afb8be32d92df282dec03fbb3b13f8f303
+ms.openlocfilehash: b5197a7fcb3a3309cfec003d8b4c2fc937e59035
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "67264164"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67312249"
 ---
 # <a name="prepare-your-teams-store-submission"></a>Подготовка к отправке в магазин Teams
 
@@ -19,7 +19,7 @@ ms.locfileid: "67264164"
 Дополнительные сведения о публикации приложения в магазине приложений Microsoft Teams см. в следующем видео.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4WG3l]
+> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4WG3l>]
 <br>
 
 Перед отправкой приложения в [Центр партнеров](/office/dev/store/use-partner-center-to-submit-to-appsource) выполните следующие действия.
@@ -28,12 +28,9 @@ ms.locfileid: "67264164"
 
 Хотя ваше приложение может работать в тестовой среде, необходимо проверить пакет приложения, чтобы избежать проблем при отправке.
 
-> [!WARNING]
-> Если вы использовали App Studio, рекомендуется попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки и распространения приложений Teams, а также управления ими. С 1 августа 2022 года App Studio упраздняется.
-
 Средство проверки приложений Microsoft Teams помогает выявлять и устранять проблемы перед отправкой в Центр партнеров. Средство автоматически проверяет конфигурации вашего приложения, используя те же тестовые сценарии, которые будут использоваться во время проверки в магазине.
 
-1. Перейдите в [средство проверки приложений Microsoft Teams](https://dev.teams.microsoft.com/appvalidation.html). (Примечание. Это средство также доступно в [App Studio](../../../build-and-test/app-studio-overview.md).)
+1. Перейдите в [средство проверки приложений Microsoft Teams](https://dev.teams.microsoft.com/appvalidation.html). (Примечание. Средство также доступно на [портале разработчика для Teams](~/concepts/build-and-test/teams-developer-portal.md)
 1. Отправьте пакет приложения, чтобы запустить для него автоматизированные тесты.
 1. Перейдите к **Предварительному контрольному списку** и просмотрите тестовые сценарии, которые трудно автоматизировать.
 1. [Устраните проблемы конфигурации](~/resources/schema/manifest-schema.md) или проблемы с приложением в целом. Эти проблемы возникают, если автоматизированные тесты сообщают об ошибке или если выполнены не все критерии в списке.

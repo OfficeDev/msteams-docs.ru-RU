@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: v-ypalikila
 ms.date: 04/07/2022
-ms.openlocfilehash: f59a5765d58008586ff1ce9b238b9aa69c1aefb6
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: d54d2ffaa6035778ba195c9e2eba44c2e096892e
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841794"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67311969"
 ---
 # <a name="custom-together-mode-scenes-in-teams"></a>Настраиваемые сцены режима "Вместе" в Teams
 
@@ -37,7 +37,7 @@ ms.locfileid: "66841794"
 Для использования настраиваемых сцен режима "Вместе" необходимо иметь базовое представление о следующих действиях:
 
 * Определение сцены и мест в сцене.
-* Наличие учетной записи разработчика Майкрософт и ознакомление с [порталом разработчика](../concepts/build-and-test/teams-developer-portal.md) Teams и App Studio.
+* Наличие учетной записи разработчика Майкрософт и ознакомление с [порталом разработчика](../concepts/build-and-test/teams-developer-portal.md) Teams.
 * Понимание [концепции загрузки неопубликованных приложений](../concepts/deploy-and-publish/apps-upload.md).
 * Убедитесь, что администратор предоставил разрешение на [**загрузку пользовательского приложения**](../concepts/deploy-and-publish/apps-upload.md) и выбор всех фильтров в рамках политик настройки приложений и собраний соответственно.
 
@@ -53,7 +53,7 @@ ms.locfileid: "66841794"
 
 ## <a name="build-a-scene-using-the-scene-studio"></a>Создание сцены с помощью студии Scene
 
-У корпорации Майкрософт есть студия Scene, которая позволяет создавать сцены. Он доступен в [редакторе Scenes — портале разработчика Teams](https://dev.teams.microsoft.com/scenes). Этот документ относится к студии Scene на портале разработчика Teams. Интерфейс и функциональные возможности в конструкторе сцен App Studio одинаковы.
+У корпорации Майкрософт есть студия Scene, которая позволяет создавать сцены. Он доступен в [редакторе Scenes — портале разработчика Teams](https://dev.teams.microsoft.com/scenes). Этот документ относится к студии Scene на портале разработчика Teams.
 
 Сцена в контексте студии Scene — это артефакт, который содержит следующие элементы:
 
