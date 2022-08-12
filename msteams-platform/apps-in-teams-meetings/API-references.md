@@ -1,17 +1,17 @@
 ---
 title: Справочные материалы по API приложений для собраний
 author: surbhigupta
-description: Узнайте, как определить ссылки на API приложений для собраний с примерами и примерами кода, запросом сигнала уведомления о контексте пользователя в API роли пользователя в приложениях Teams.
+description: В этой статье вы узнаете о справочниках по API приложений для собраний, доступных для клиентских приложений Teams и пакета SDK Bot Framework, с примерами кода и кодами ответов.
 ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.date: 04/07/2022
-ms.openlocfilehash: 20a0380bb6e8282f9ced47621b17b1633d09e28b
-ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
+ms.openlocfilehash: 5620c720953fea4f39056a0efa553110e3d3e9cb
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67232262"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67311955"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -924,12 +924,12 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | **channelData.tenant.id** | Идентификатор клиента Azure Active Directory. |
 | **channelData.source** | Имя источника, из которого инициируется или вызывается событие. |
 | **channelData.meeting.id** | Идентификатор по умолчанию, связанный с собранием. |
-| **ценность. MeetingType** | Тип собрания. |
-| **ценность. Титул** | Тема собрания. |
-| **ценность. Идентификатор** | Идентификатор по умолчанию, связанный с собранием. |
-| **ценность. JoinUrl** | URL-адрес присоединения к собранию. |
-| **ценность. Время начала** | Время начала собрания в формате UTC. |
-| **ценность. Время окончания** | Время окончания собрания в формате UTC. |
+| **Значение. MeetingType** | Тип собрания. |
+| **Значение. Название** | Тема собрания. |
+| **Значение. Id** | Идентификатор по умолчанию, связанный с собранием. |
+| **Значение. JoinUrl** | URL-адрес присоединения к собранию. |
+| **Значение. Starttime** | Время начала собрания в формате UTC. |
+| **Значение. Время окончания** | Время окончания собрания в формате UTC. |
 | **locale**| Языковой стандарт сообщения, задаемого клиентом. |
 
 ## <a name="get-incoming-audio-speaker"></a>Получение входящего звукового динамика
@@ -937,7 +937,9 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 API `getIncomingClientAudioState` позволяет приложению получить параметр входящего звукового динамика для пользователя собрания. API доступен через клиентский SDK Teams.
 
 > [!NOTE]
-> API `getIncomingClientAudioState` для мобильных устройств в настоящее время доступен только в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
+>
+> * API `getIncomingClientAudioState` для мобильных устройств в настоящее время доступен в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
+> * Согласие для конкретного ресурса доступно для манифеста версии 1.12 и более поздних версий, поэтому этот API не работает для манифеста версии 1.11 и более ранних версий.
 
 ### <a name="query-parameter"></a>Параметр запроса
 
@@ -977,7 +979,9 @@ function getIncomingClientAudioState(
 API `toggleIncomingClientAudio` позволяет приложению переключать параметры входящего звукового динамика для пользователя собрания от отключения звука до включения звука или наоборот. API доступен через клиентский SDK Teams.
 
 > [!NOTE]
-> API `toggleIncomingClientAudio` для мобильных устройств в настоящее время доступен только в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
+>
+> * API `toggleIncomingClientAudio` для мобильных устройств в настоящее время доступен в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
+> * Согласие для конкретного ресурса доступно для манифеста версии 1.12 и более поздних версий, поэтому этот API не работает для манифеста версии 1.11 и более ранних версий.
 
 ### <a name="query-parameter"></a>Параметр запроса
 

@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как определ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 2769dc4d76f6b417f3264dd321b0d5c5e794c9f8
-ms.sourcegitcommit: fb0942afb8be32d92df282dec03fbb3b13f8f303
+ms.openlocfilehash: 6612309fc6d96a6e40e504edf14dc054f7412a30
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "67264185"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67312020"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
@@ -30,7 +30,7 @@ ms.locfileid: "67264185"
 В следующем видео показано, как определить команды действий расширения сообщений:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OANG>]
 <br>
 
 ## <a name="select-action-command-invoke-locations"></a>Выбор расположений, из которых будет вызываться команда действия
@@ -79,71 +79,61 @@ ms.locfileid: "67264185"
 
 Чтобы добавить команду действия в манифест приложения, необходимо добавить новый объект `composeExtension` на верхний уровень JSON манифеста приложения. Это можно сделать одним из следующих способов:
 
-* [Создание команды действия с помощью App Studio](#create-an-action-command-using-app-studio)
+* [Создание команды действия с помощью портала разработчика](#create-an-action-command-using-developer-portal)
 * [Создание команды действия вручную](#create-an-action-command-manually)
 
-### <a name="create-an-action-command-using-app-studio"></a>Создание команды действия с помощью App Studio
+### <a name="create-an-action-command-using-developer-portal"></a>Создание команды действия с помощью портала разработчика
 
-Вы можете создать команду действия с помощью **App Studio** или **портала разработчика**.
-
-> [!WARNING]
- > Если до сих пор вы использовали App Studio, рекомендуем попробовать [Портал разработчика](https://dev.teams.microsoft.com/) для настройки, распространения приложений Teams и управления ими. App Studio не рекомендуется к использованию 1 августа 2022 г.
+Вы можете создать команду действия с помощью **портала разработчика**.
 
 # <a name="app-studio"></a>[App Studio](#tab/AS)
 
 > [!NOTE]
 > Предпосылкой для создания команды действия является уже созданное расширение для сообщений. Сведения о том, как создать расширение для сообщений, см. в разделе [Создание расширения для сообщений](~/messaging-extensions/how-to/create-messaging-extension.md).
 
-**Создание команды действия**
+Чтобы создать команду действия:
 
-1. Откройте **App Studio** в клиенте Microsoft Teams и выберите вкладку **редактора манифеста**.
-1. Если вы уже создали пакет приложения в **App Studio**, выберите его из списка. Если вы еще не создали пакет приложения, импортируйте существующий.
-1. После импорта пакета приложения выберите **Расширения сообщений** в разделе **Возможности**. Вы получите всплывающее окно настройки расширения для сообщений.
-1. Выберите в окне **Настроить**, чтобы включить расширение для сообщений в интерфейс приложения. На следующем рисунке показано окно настройки расширения для сообщений:
+1. Откройте **портал разработчика** в клиенте Microsoft Teams и выберите вкладку **"Приложения** ". Если вы уже создали пакет приложения на портале **разработчика**, выберите его из списка. Если вы еще не создали пакет приложения, импортируйте существующий.
+1. После импорта пакета приложения выберите расширения **сообщений в** разделе **"Функции приложения"**.
+1. Чтобы создать расширение для сообщений, вам потребуется зарегистрированный бот Майкрософт. Можно использовать существующий бот или создать новый. Выберите **параметр "Создать бот** ", присвойте имя новому боту и нажмите кнопку **"Создать"**.
 
-    :::image type="content" source="~/assets/images/messaging-extension/messaging-extension-set-up.png" alt-text="Настройка расширения для сообщений":::
+   :::image type="content" source="../../../assets/images/tdp/bot-page.png" alt-text="На снимке экрана показано, как создать бот на портале разработчика.":::
 
-1. Чтобы создать расширение для сообщений, вам потребуется зарегистрированный бот Майкрософт. Можно использовать существующий бот или создать новый. Выберите **Создать бот**, присвойте имя новому боту и щелкните **Создать**. На следующем рисунке показано создание бота расширения для сообщений:
+1. Чтобы использовать существующий бот, выберите  "Выбрать существующий бот" и выберите существующие боты из раскрывающегося списка  или введите идентификатор бота, если идентификатор бота уже создан.
 
-    :::image type="content" source="~/assets/images/messaging-extension/create-bot-for-messaging-extension.png" alt-text="Создание бота расширения для сообщений":::
+1. Выберите область расширения обмена сообщениями и нажмите кнопку **"Сохранить"**.
 
-1. Чтобы использовать существующий бот, выберите **Использовать существующий бот** и щелкните **Выбрать один из существующих ботов**, чтобы выбрать существующие боты из раскрывающегося списка; укажите **Имя бота** и выберите **Сохранить**. Или выберите **Подключение к другому идентификатору бота**, если идентификатор бота уже создан, укажите **Имя бота** и выберите **Сохранить**. 
+1. Выберите **"Добавить команду"** **в разделе** "Команда", чтобы включить команды, которые определяют поведение расширения сообщения.
 
-    :::image type="content" source="~/assets/images/messaging-extension/use-existing-bot.png" alt-text="Использование существующего бота в расширении для сообщений":::
+   :::image type="content" source="../../../assets/images/tdp/add-a-command.PNG" alt-text="Снимок экрана: добавление команды для определения поведения расширения сообщения.":::
 
-1. Выберите **Добавить** в **разделе "Команды"** на странице расширений для сообщений, чтобы включить команды, определяющие поведение расширения для сообщений. На следующем изображении показано добавление команды для расширения для сообщений:
+1. Выберите **действие и** тип параметра.
 
-    :::image type="content" source="~/assets/images/messaging-extension/include-command.png" alt-text="Добавление команды":::
+1. **Введите идентификатор команды**, **заголовок команды** и **описание команды**.
 
-1. Выберите **Разрешить пользователям активировать действия во внешних службах, находясь внутри Teams**. На следующем рисунке показан выбор команды действия:
+1. Введите все параметры и выберите тип входных данных из раскрывающегося списка.
 
-    :::image type="content" source="~/assets/images/messaging-extension/action-command-selection.png" alt-text="Выбор команды действия":::
+   :::image type="content" source="../../../assets/images/tdp/add-a-command-parameter.PNG" alt-text="Снимок экрана: добавление параметров для определения команды расширения сообщения.":::
 
-1. Чтобы использовать статический набор параметров для создания модуля задач, выберите **Определить набор статических параметров для команды**.
+1. Выберите **"Добавить домен" в разделе** " **Предварительный просмотр ссылок"**.
 
-    На следующем рисунке показан выбор статического параметра команды действия:
+1. Введите допустимый домен и нажмите кнопку **"Добавить"**.
 
-    :::image type="content" source="~/assets/images/messaging-extension/action-command-static-parameter-selection.png" alt-text="Выбор статического параметра команды действия":::
+   :::image type="content" source="../../../assets/images/tdp/add-domain.PNG" alt-text="Снимок экрана: добавление допустимого домена в расширение обмена сообщениями для удаления ссылок.":::
 
-    На следующем рисунке показан пример настройки статических параметров:
+1. Нажмите кнопку **Сохранить**.
 
-    :::image type="content" source="~/assets/images/messaging-extension/setting-up-of-static-parameter.png" alt-text="Настройка статических параметров команды действия":::
+   :::image type="content" source="../../../assets/images/tdp/add-a-command-save.PNG" alt-text="Снимок экрана: сохранение всех параметров и параметров для расширения сообщения.":::
 
-    На следующем рисунке показан пример тестирования статических параметров:
+**Добавление дополнительных параметров**
 
-    :::image type="content" source="~/assets/images/messaging-extension/static-parameter-testing.png" alt-text="Тестирование статических параметров в команде действия":::
+1. Щелкните многоточие в разделе команд, а затем выберите " **Изменить параметр"**.
 
-1. Чтобы использовать динамические параметры, выберите **Получение динамического набора параметров из бота**. На следующем рисунке показан выбор параметра команды действия:
+   :::image type="content" source="../../../assets/images/tdp/edit-parameters.PNG" alt-text="На снимках экрана показано, как добавить дополнительные параметры для расширения сообщения.":::
 
-    :::image type="content" source="~/assets/images/messaging-extension/action-command-dynamic-parameter-selection.png" alt-text="Выбор динамического параметра команды действия":::
+1. Выберите **"Добавить параметры"** и введите все параметры.
 
-1. Добавьте **Идентификатор команды** и **Заголовок**.
-1. Выберите расположение, из которого хотите вызвать команду действия. На следующем рисунке показано расположение вызова команды действия:
-
-    :::image type="content" source="~/assets/images/messaging-extension/action-command-invoke-location.png" alt-text="Расположение вызова команды действия":::
-
-1. Нажмите **Сохранить**.
-1. Чтобы добавить дополнительные параметры, нажмите кнопку **Добавить** в разделе **Параметры**.
+   :::image type="content" source="../../../assets/images/tdp/add-parameter.PNG" alt-text="Снимок экрана: добавление дополнительных параметров для расширения сообщения."lightbox="../../../assets/images/tdp/add-a-parameters.PNG":::
 
 ### <a name="create-an-action-command-manually"></a>Создание команды действия вручную
 
@@ -185,43 +175,54 @@ ms.locfileid: "67264185"
 ...
 "composeExtensions": [
   {
-    "botId": "12a3c29f-1fc5-4d97-a142-12bb662b7b23",
-    "canUpdateConfiguration": true,
+    "botId": "c8fa3cf6-b1f0-4ba8-a5bf-a241bc29adf3",
+    "scopes": [
+      "personal",
+      "groupchat"
+    ],
     "commands": [
       {
-        "id": "addTodo",
-        "description": "Create a To Do item",
-        "title": "Create To Do",
+        "id": "To do",
         "type": "action",
-        "context": ["commandBox", "message", "compose"],
+        "title": "Create To do",
+        "description": "Create a To do",
+        "initialRun": true,
         "fetchTask": false,
+        "context": [
+          "commandBox",
+          "compose"
+        ],
         "parameters": [
           {
             "name": "Name",
-            "description": "To Do Title",
             "title": "Title",
+            "description": "To do Title",
             "inputType": "text"
           },
           {
             "name": "Description",
-            "description": "Description of the task",
             "title": "Description",
+            "description": "Description of the task",
             "inputType": "textarea"
           },
           {
             "name": "Date",
-            "description": "Due date for the task",
             "title": "Date",
+            "description": "Due date for the task",
             "inputType": "date"
           }
         ]
-      },
+      }
+    ],
+    "canUpdateConfiguration": true,
+    "messageHandlers": [
       {
-        "id": "reassignTodo",
-        "description": "Reassign a todo item",
-        "title": "Reassign a todo item",
-        "type": "action",
-        "fetchTask": false,
+        "type": "link",
+        "value": {
+          "domains": [
+            "yourapp.onmicrosoft.com"
+          ]
+        }
       }
     ]
   }

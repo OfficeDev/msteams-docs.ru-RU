@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, как приступ
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/20/2018
-ms.openlocfilehash: 31a88b169173aab179581acc9b038670f0c8112c
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: a1563d72ada21810393d7a0118b5a2b94463a27b
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558613"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67312214"
 ---
 # <a name="add-bots-to-microsoft-teams-apps"></a>Добавление ботов в приложения Microsoft Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "66558613"
 
 ## <a name="bot-apis"></a>Интерфейсы API бота
 
-Teams поддерживает большую [часть Microsoft Bot Framework.](https://dev.botframework.com/) (Если у вас уже есть бот, основанный на Bot Framework, вы можете легко адаптировать его для работы в Teams.) Мы рекомендуем использовать C# или Node.js, чтобы воспользоваться преимуществами [наших пакетов SDK](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK Bot Builder:
+Teams поддерживает большую [часть Microsoft Bot Framework.](https://dev.botframework.com/) (Если у вас уже есть бот, основанный на Bot Framework, вы можете легко адаптировать его для работы в Teams.) Мы рекомендуем использовать C# или Node.js, чтобы воспользоваться нашими [пакетами SDK](/microsoftteams/platform/#pivot=sdk-tools). Эти пакеты расширяют базовые классы и методы пакета SDK Bot Builder:
 
 * Использование специальных типов карточек, например карточек соединителя Office 365.
 * Использование и настройка данных каналов Teams для действий.
@@ -51,7 +51,7 @@ Teams поддерживает большую [часть Microsoft Bot Framewor
 > [!IMPORTANT]
 > Вы можете разрабатывать приложения Teams с помощью любой другой технологии веб-программирования и напрямую вызывать [REST API Bot Framework](/bot-framework/rest-api/bot-framework-rest-overview), но вы должны выполнять всю обработку маркеров самостоятельно.
 
-*Teams App Studio* поможет создавать и настраивать манифест приложения, а также может создать бота Bot Framework. Он также содержит библиотеку управления React и интерактивный построитель карточек.
+*Портал разработчика для Teams* помогает создавать и настраивать манифест приложения, а также может создавать бот Bot Framework для вас. Он также содержит библиотеку управления React и интерактивный построитель карточек.
 
 ## <a name="outgoing-webhooks"></a>Исходящие веб-перехватчики
 

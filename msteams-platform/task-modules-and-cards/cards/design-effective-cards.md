@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 1f4f458d1ebdae103c6114b8c833c0e1afc2c0b1
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 669c117ddd344b1ad77dc5983e89fd59e2405a47
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558158"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67312083"
 ---
 # <a name="designing-adaptive-cards-for-your-microsoft-teams-app"></a>Разработка адаптивных карточек для приложения Microsoft Teams
 
@@ -61,7 +61,7 @@ ms.locfileid: "66558158"
 
 ### <a name="list"></a>Список
 
-Используется в сценариях, где пользователь должен выбирать элемент из списка, а элементам не требуется подробное объяснение.
+Используется в сценариях, где пользователь должен выбрать элемент из списка, а элементам не требуется подробное объяснение.
 
 #### <a name="mobile"></a>Мобильная версия
 
@@ -157,7 +157,7 @@ ms.locfileid: "66558158"
 
 ## <a name="anatomy"></a>Структура
 
-Адаптивные карточки обладают большой гибкостью. Но как минимум мы настоятельно рекомендуем включать следующие компоненты в каждую карточку.
+У адаптивных карточек есть множество гибких возможностей. Но как минимум мы настоятельно рекомендуем включать следующие компоненты в каждую карточку.
 
 #### <a name="mobile"></a>Мобильная версия
 
@@ -204,11 +204,11 @@ ms.locfileid: "66558158"
 
 **Рекомендуется:** на этом экране в нижней части карточки находятся два столбца. Ширине компонента ввода присвоено значение `stretch`, а ширине кнопки **Выбрать** — значение `auto`. Это гарантирует, что кнопка полностью остается в представлении.
 
-:::image type="content" source="~/assets/images/adaptive-cards/width-auto-do.png" alt-text="Изображение способа настройки ширины столбца в адаптивных карточках.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-width-auto-do.png" alt-text="Снимок экрана, показывающий, как настроить ширину столбца для адаптивных карточек.":::
 
 **Не рекомендуется:** на этом экране параметру `width` обоих столбцов присвоено значение `auto`. В результате кнопка **Выбрать**, расположенная справа, немного усекается по сравнению с элементом ввода.
 
-:::image type="content" source="~/assets/images/adaptive-cards/width-auto-dont.png" alt-text="Изображение того, как не нужно настраивать ширину столбца в адаптивных карточках.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-width-auto-dont.png" alt-text="Снимок экрана, показывающий, как не нужно настраивать ширину столбца в адаптивных карточках.":::
 
 # <a name="code"></a>[Code](#tab/code)
 
@@ -388,11 +388,11 @@ ms.locfileid: "66558158"
 
 **Рекомендуется:** на мобильных устройствах, как правило, лучше отображаются макеты с небольшим количеством столбцов.
 
-:::image type="content" source="~/assets/images/adaptive-cards/column-amount-do.png" alt-text="Изображение правильного количества столбцов в адаптивных карточках.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-column-amount-do.png" alt-text="Снимок экрана, показывающий правильное количество столбцов в адаптивных карточках.":::
 
 **Не рекомендуется**: использование слишком большого количества столбцов может перегружать содержимое карточки на мобильных устройствах.
 
-:::image type="content" source="~/assets/images/adaptive-cards/column-amount-dont.png" alt-text="Изображение того, как слишком большое количество столбцов может отрицательно влиять на макет адаптивной карточки.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-column-amount-dont.png" alt-text="Снимок экрана, показывающий, как слишком большое количество столбцов может отрицательно влиять на макет адаптивной карточки.":::
 
 #### <a name="example-fixed-width-has-its-place"></a>Пример: применение фиксированной ширины
 
@@ -400,7 +400,7 @@ ms.locfileid: "66558158"
 
 Если размер отображаемого контента не требуется изменять, настройте для столбцов определенную ширину в пикселях. В этом примере показан левый столбец размером 50 пикселей, а описания рядом с эскизами растягивают длину карточки.
 
-:::image type="content" source="~/assets/images/adaptive-cards/width-auto-do.png" alt-text="Изображение способа настройки ширины столбца в адаптивных карточках.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-width-auto-do.png" alt-text="Снимок экрана, показывающий способ настройки ширины столбца в адаптивных карточках.":::
 
 # <a name="code"></a>[Code](#tab/code)
 
@@ -548,17 +548,17 @@ ms.locfileid: "66558158"
 
 Если вы используете [`TextBlock`](https://adaptivecards.io/explorer/TextBlock.html), [`ColumnSet`](https://adaptivecards.io/explorer/ColumnSet.html) или [`Input.ChoiceSet`](https://adaptivecards.io/explorer/Input.ChoiceSet.html), присвойте свойству `wrap` значение `true`, чтобы ваша карточка не усекалась на мобильных устройствах.
 
-#### <a name="example-making-sure-text-doesnt-truncate"></a>Пример: как избежать усечения текста
+#### <a name="example-making-sure-text-dont-truncate"></a>Пример: как избежать усечения текста
 
 # <a name="design"></a>[Design](#tab/design)
 
 **Рекомендуется:** на этом экране свойству `wrap` карточки присвоено значение `true`. Это позволяет тексту соответствовать любому размеру экрана.
 
-:::image type="content" source="~/assets/images/adaptive-cards/text-wrap-true.png" alt-text="Изображение способа переноса текста в адаптивных карточках.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-text-wrap-true.png" alt-text="Снимок экрана, показывающий, как использовать перенос текста в адаптивных карточках.":::
 
 **Не рекомендуется**: на этом экране карточка не использует свойство `wrap`, поэтому текст усекается на мобильном экране.
 
-:::image type="content" source="~/assets/images/adaptive-cards/text-wrap-false.png" alt-text="Изображение того, что может произойти, если не использовать перенос текста в адаптивных карточках.":::
+:::image type="content" source="~/assets/images/adaptive-cards/design-text-wrap-false.png" alt-text="Снимок экрана, показывающий, что может произойти, если не использовать перенос текста в адаптивных карточках.":::
 
 # <a name="code"></a>[Code](#tab/code)
 
@@ -655,7 +655,7 @@ ms.locfileid: "66558158"
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../../assets/images/adaptive-cards/actions-do.png" alt-text="Рекомендация о включении в адаптивную карточку только небольшого набора действий.":::
+:::image type="content" source="../../assets/images/adaptive-cards/actions-do.png" alt-text="Снимок экрана, показывающий рекомендации по включению в адаптивную карточку только небольшого набора действий.":::
 
 #### <a name="do-use-up-to-six-primary-actions"></a>Рекомендуется: используйте до шести основных действий
 
@@ -663,7 +663,7 @@ ms.locfileid: "66558158"
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../../assets/images/adaptive-cards/actions-dont.png" alt-text="Рекомендация о том, как не перегружать пользователей слишком большим количеством действий на адаптивной карточке.":::
+:::image type="content" source="../../assets/images/adaptive-cards/actions-dont.png" alt-text="Снимок экрана, показывающий, как не перегружать пользователей слишком большим количеством действий на адаптивной карточке.":::
 
 #### <a name="dont-use-more-than-six-primary-actions"></a>Не рекомендуется: используйте более шести основных действий
 
@@ -674,7 +674,7 @@ ms.locfileid: "66558158"
 
 ### <a name="frequency"></a>Частота
 
-:::image type="content" source="../../assets/images/adaptive-cards/frequency-do.png" alt-text="Рекомендация по частоте использования адаптивной карточки.":::
+:::image type="content" source="../../assets/images/adaptive-cards/frequency-do.png" alt-text="Снимок экрана, показывающий лучшие методики в отношении периодичности адаптивной карточки.":::
 
 #### <a name="do-be-concise"></a>Рекомендуется: будьте краткими
 

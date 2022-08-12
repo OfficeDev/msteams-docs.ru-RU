@@ -5,12 +5,12 @@ description: Узнайте, как добавить проверку подли
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 5fc21d6e0e761da71670035cd2af1ee2006cc9c6
-ms.sourcegitcommit: 4eeede81a0ae8ec985c6a1ad4f608df58371402f
+ms.openlocfilehash: 6cfd765ba467d2c8b03ae4f86b4ab8727c21b9b7
+ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66792972"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67312151"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 
@@ -269,7 +269,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 1. Клонируйте [cs-auth-sample][teams-auth-bot-cs].
 1. Запустите Visual Studio.
 1. На панели инструментов выберите **файл -> -> проекта или** решения и откройте проект бота.
-1. В C# **обновите appsettings.json** следующим образом:
+1. В C# **обновим файл appsettings.json** следующим образом:
 
     - Установите для `ConnectionName` имя подключения поставщика удостоверений, добавленного в регистрацию бота. В этом примере используется имя *BotTeamsAuthADv1*.
     - Установите для `MicrosoftAppId` значение **идентификатора приложения бота**, сохраненного во время регистрации бота.
@@ -446,7 +446,7 @@ and when for these, and just reference that from here, along with the set of ste
 1. Нажмите кнопку **Добавить в группу**.
 1. В следующем окне выберите команду, в которой нужно использовать бота.
 1. Нажмите кнопку **Настройка бота**.
-1. Щелкните три точки (&#x25cf;&#x25cf;&#x25cf;) на левой панели. Затем щелкните значок **App Studio**.
+1. Щелкните три точки (&#x25cf;&#x25cf;&#x25cf;) на левой панели. Затем щелкните **значок портала разработчика** .
 1. Выберите вкладку **Редактор манифеста**. Вы должны увидеть значок отправленного бота.
 1. Кроме того, бот должен появиться в списке чатов в качестве контакта, который можно использовать для обмена сообщениями с ботом.
 
@@ -635,7 +635,7 @@ protected virtual Task OnSigninVerifyStateAsync(ITurnContext<IInvokeActivity> tu
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |---------------|------------|------------|-------------|---------------|
-| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Teams. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
+| Проверка подлинности бота | В этом примере показано, как начать работу с проверкой подлинности в боте для Teams. | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth) |
 | Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показана система единого входа для Tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) | Недоступно |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
