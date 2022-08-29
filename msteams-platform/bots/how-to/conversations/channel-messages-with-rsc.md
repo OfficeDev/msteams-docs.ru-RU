@@ -1,15 +1,15 @@
 ---
 title: Получение всех сообщений канала через RSC
 author: surbhigupta12
-description: В этом модуле вы узнаете, как получать все сообщения каналов с разрешениями RSC и как разрешить ботам получать все сообщения канала.
+description: Разрешите ботам получать все сообщения канала без @mentioned с помощью разрешений RSC. Чтение в разделе webApplicationInfo или авторизации в манифесте.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: d0a8c05136d4ab98270d3d837c008f0e46bcae33
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: bd740c999139d9b5f98c10800646501dd55e87f5
+ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143517"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67363468"
 ---
 # <a name="receive-all-channel-messages-with-rsc"></a>Получение всех сообщений канала через RSC
 
@@ -33,8 +33,7 @@ ms.locfileid: "66143517"
 
 Чтобы ваш бот получал все сообщения каналов, RSC должно быть настроено в манифесте приложения Teams с разрешением `ChannelMessage.Read.Group`, указанным в свойстве `webApplicationInfo`.
 
-![Обновление манифеста приложения](~/bots/how-to/conversations/Media/appmanifest.png)
-
+:::image type="content" source="~/bots/how-to/conversations/Media/appmanifest.png" alt-text="Снимок экрана: обновление манифеста приложения.":::
 
 Ниже приведен пример объекта `webApplicationInfo`.
 
@@ -46,12 +45,12 @@ ms.locfileid: "66143517"
 
 ```json
 "webApplicationInfo": {
-"id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
-"resource": "https://AnyString",
-"applicationPermissions": [
-"ChannelMessage.Read.Group"
-    ]
-  }
+  "id": "XXxxXXXXX-XxXX-xXXX-XXxx-XXXXXXXxxxXX",
+  "resource": "https://AnyString",
+  "applicationPermissions": [
+    "ChannelMessage.Read.Group"
+  ]
+}
 ```
 
 ## <a name="sideload-in-a-team"></a>Загрузка без публикации в команде
@@ -62,29 +61,29 @@ ms.locfileid: "66143517"
 1. Щелкните многоточие &#x25CF;&#x25CF;&#x25CF; в области слева. Появится раскрывающееся меню.
 1. Выберите **Управление командой** в раскрывающемся меню. Отобразятся сведения.
 
-   ![Управление приложениями в команде](~/bots/how-to/conversations/Media/managingteam.png)
-
-      :::image type="content" source="Media/managingteam.png" alt-text="управление командой"border="true":::
+   :::image type="content" source="Media/managingteam.png" alt-text="Снимок экрана: параметр &quot;Управление командой&quot; в приложении Teams.":::
 
 1. Выберите **Приложения**. Появится несколько приложений.
+
 1. Выберите **Отправить пользовательское приложение** в правом нижнем углу.
 
-      :::image type="content" source="Media/uploadingcustomapp.png" alt-text="отправка пользовательского приложения":::
+      :::image type="content" source="Media/uploadingcustomapp.png" alt-text="Снимок экрана: отправка параметра пользовательского приложения.":::
   
 1. Выберите пакет приложения в диалоговом окне **Открыть**.
+
 1. Выберите **Открыть**.
 
-      :::image type="content" source="Media/selectapppackage.png" alt-text="Выбор пакета приложения"lightbox="Media/selectapppackage.png"border="true":::
+      :::image type="content" source="Media/selectapppackage.png" alt-text="Снимок экрана: открытое диалоговое окно для выбора пакета приложения." lightbox="Media/selectapppackage.png":::
 
 1. Нажмите **Добавить** во всплывающем окне со сведениями о приложении, чтобы добавить бота в выбранную команду.
 
-      :::image type="content" source="Media/addingbot.png" alt-text="Добавление бота"lightbox="Media/addingbot.png"border="true":::
+      :::image type="content" source="Media/addingbot.png" alt-text="Снимок экрана: кнопка &quot;Добавить&quot; для добавления бота в команду." lightbox="Media/addingbot.png":::
 
 1. Выберите канал и введите сообщение в канале для своего бота.
 
     Бот получает сообщение без @упоминания.
 
-      :::image type="content" source="Media/botreceivingmessage.png" alt-text="Получение сообщения ботом"lightbox="Media/botreceivingmessage.png"border="true":::
+      :::image type="content" source="Media/botreceivingmessage.png" alt-text="Снимок экрана: бот, получающий сообщение в канале." lightbox="Media/botreceivingmessage.png":::
 
 ## <a name="code-snippets"></a>Фрагменты кода
 
@@ -128,3 +127,4 @@ this.onMessage(async (context, next) => {
 * [Согласие для определенных ресурсов](/microsoftteams/resource-specific-consent)
 * [Проверка согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/test-resource-specific-consent)
 * [Отправка пользовательского приложения в Teams](~/concepts/deploy-and-publish/apps-upload.md)
+* [Вывод списка ответов на сообщения в канале](/graph/api/chatmessage-list-replies?view=graph-rest-1.0&tabs=http&preserve-view=true)

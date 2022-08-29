@@ -1,16 +1,16 @@
 ---
 title: Предварительные требования
 author: surbhigupta
-description: В этом модуле вы узнаете о требованиях к каждой вкладке в Microsoft Teams и средствам для создания вкладок.
-ms.localizationpriority: medium
+description: Из этой статьи вы узнаете, как создать вкладку "Личные", "Канал" или "Группа" Microsoft Teams. Сведения о средствах, необходимых для создания вкладки.
+ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 50497e0f4af4cb12a97cd355d3a81714398c9ab2
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: e1160566f73a63a7de87653900cdc64ba7cb0e52
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142621"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450417"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
@@ -36,7 +36,7 @@ ms.locfileid: "66142621"
 
 * Если вы выбрали вариант отображения вкладки канала или группы в мобильном клиенте Teams, конфигурация `setConfig()` должна содержать значение для свойства `websiteUrl`.
 
-* Microsoft Teams не поддерживает возможность загрузки веб-сайтов интрасети, использующих самозаверяющие сертификаты.
+* Вкладка Microsoft Teams не поддерживает возможность загрузки веб-сайтов интрасети, использующих самозаверяющие сертификаты.
 
 [!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 

@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.date: 04/07/2022
-ms.openlocfilehash: 5620c720953fea4f39056a0efa553110e3d3e9cb
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
+ms.openlocfilehash: 8277e0fb947ac109f3482c31613c01fd924fa139
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67311955"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435015"
 ---
 # <a name="meeting-apps-api-references"></a>Справочные материалы по API приложений для собраний
 
@@ -37,8 +37,8 @@ ms.locfileid: "67311955"
 |[**Получить состояние обмена сцены содержимого приложения**](#get-app-content-stage-sharing-state-api)| Получить информацию о состоянии общего доступа к приложению на сцене собрания. | [MSTC SDK](/javascript/api/@microsoft/teams-js/meeting.iappcontentstagesharingstate) |
 |[**Получить возможности обмена сцены содержимого приложения**](#get-app-content-stage-sharing-capabilities-api)| Получите возможности приложения для совместного использования на сцене собрания. | [MSTC SDK](/javascript/api/@microsoft/teams-js/meeting.iappcontentstagesharingcapabilities) |
 |[**Получать события собраний Teams в режиме реального времени**](#get-real-time-teams-meeting-events-api)|Узнавать о событиях собраний в режиме реального времени, таких как фактическое время начала и окончания.| [MSBF SDK](/dotnet/api/microsoft.bot.builder.teams.teamsactivityhandler.onteamsmeetingstartasync?view=botbuilder-dotnet-stable&preserve-view=true) |
-| [**Получение входящего звукового динамика**](#get-incoming-audio-speaker) | Позволяет приложению получить параметр входящего звукового динамика для пользователя собрания.| [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
-| [**Переключение входящего звука**](#toggle-incoming-audio) | Позволяет приложению переключать параметры входящего звукового динамика для пользователя собрания от отключения звука до включения или наоборот.| [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
+| [**Получение входящего звукового состояния**](#get-incoming-audio-state) | Позволяет приложению получить параметр состояния входящего звука для пользователя собрания.| [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
+| [**Переключение входящего звука**](#toggle-incoming-audio) | Позволяет приложению переключать параметры состояния входящего звука для пользователя собрания от отключения звука до включения или наоборот.| [MSTC SDK](/javascript/api/@microsoft/teams-js/microsoftteams.meeting?view=msteams-client-js-latest&preserve-view=true) |
 
 ## <a name="get-user-context-api"></a>Получить API пользовательского контекста
 
@@ -932,15 +932,44 @@ protected override async Task OnTeamsMeetingEndAsync(MeetingEndEventDetails meet
 | **Значение. Время окончания** | Время окончания собрания в формате UTC. |
 | **locale**| Языковой стандарт сообщения, задаемого клиентом. |
 
-## <a name="get-incoming-audio-speaker"></a>Получение входящего звукового динамика
+## <a name="get-incoming-audio-state"></a>Получение входящего звукового состояния
 
-API `getIncomingClientAudioState` позволяет приложению получить параметр входящего звукового динамика для пользователя собрания. API доступен через клиентский SDK Teams.
+API `getIncomingClientAudioState` позволяет приложению получить параметр состояния входящего звука для пользователя собрания. API доступен через клиентский SDK Teams.
 
 > [!NOTE]
 >
 > * API `getIncomingClientAudioState` для мобильных устройств в настоящее время доступен в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
 > * Согласие для конкретного ресурса доступно для манифеста версии 1.12 и более поздних версий, поэтому этот API не работает для манифеста версии 1.11 и более ранних версий.
 
+### <a name="manifest"></a>Манифест
+
+```JSON
+"authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "OnlineMeetingParticipant.ToggleIncomingAudio.Chat",
+          "type": "Delegated"
+        }
+      ]
+    }
+  }
+```
+  
+### <a name="example"></a>Пример
+
+```javascript
+callback = (errcode, result) => {
+        if (errcode) {
+            // Handle error code
+        }
+        else {
+            // Handle success code
+        }
+    }
+
+microsoftTeams.meeting.getIncomingClientAudioState(this.callback)
+```
 ### <a name="query-parameter"></a>Параметр запроса
 
 В следующей таблице содержится параметр запроса:
@@ -948,22 +977,7 @@ API `getIncomingClientAudioState` позволяет приложению пол
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
 |**callback**| String | Да | Обратный вызов содержит два параметра `error` и `result`. Ошибка *может* содержать тип ошибки или `SdkError` `null` при успешной выборке звука. Результат *может* содержать значение true или false, если выборка звука выполнена успешно, или значение NULL при сбое выборки звука. Входящий звук отключен, если результат имеет значение true, и не включен, если результат имеет значение false. |
-
-### <a name="example"></a>Пример
-
-```typescript
-function getIncomingClientAudioState(
-    callback: (error: SdkError | null, result: boolean | null) => void,
-  ): void {
-    if (!callback) {
-      throw new Error('[get incoming client audio state] Callback cannot be null');
-    }
-    ensureInitialized(FrameContexts.sidePanel, FrameContexts.meetingStage);
-    sendMessageToParent('getIncomingClientAudioState', callback);
-  }
-
-```
-
+  
 ### <a name="response-codes"></a>Коды ответа
 
 В следующей таблице приведены коды ответов:
@@ -976,34 +990,51 @@ function getIncomingClientAudioState(
 
 ## <a name="toggle-incoming-audio"></a>Переключение входящего звука
 
-API `toggleIncomingClientAudio` позволяет приложению переключать параметры входящего звукового динамика для пользователя собрания от отключения звука до включения звука или наоборот. API доступен через клиентский SDK Teams.
+API `toggleIncomingClientAudio` позволяет приложению переключать параметры состояния входящего звука для пользователя собрания от отключения звука до включения или наоборот. API доступен через клиентский SDK Teams.
 
 > [!NOTE]
 >
 > * API `toggleIncomingClientAudio` для мобильных устройств в настоящее время доступен в [общедоступной предварительной версии для разработчиков](../resources/dev-preview/developer-preview-intro.md).
 > * Согласие для конкретного ресурса доступно для манифеста версии 1.12 и более поздних версий, поэтому этот API не работает для манифеста версии 1.11 и более ранних версий.
 
+### <a name="manifest"></a>Манифест
+
+```JSON
+"authorization": {
+    "permissions": {
+        "resourceSpecific": [
+            {
+                "name": "OnlineMeetingParticipant.ToggleIncomingAudio.Chat",
+                "type": "Delegated"
+            }
+        ]
+    }
+}
+```
+ 
+### <a name="example"></a>Пример
+
+```javascript
+callback = (error, result) => {
+        if (error) {
+            // Handle error code
+        }
+        else {
+            // Handle success code
+        }
+    }
+
+microsoftTeams.meeting.toggleIncomingClientAudio(this.callback)
+```
+  
 ### <a name="query-parameter"></a>Параметр запроса
 
 В следующей таблице содержится параметр запроса:
 
 |Значение|Тип|Обязательный|Описание|
 |---|---|----|---|
-|**callback**| String | Да | Обратный вызов содержит два параметра `error` и `result`. Ошибка *может* содержать тип ошибки или `SdkError` `null` при успешном выполнении переключателя. Результат *может* содержать значение true или false, если переключатель выполнен успешно, или значение NULL при сбое переключателя. Входящий звук отключен, если результат имеет значение true, и не включен, если результат имеет значение false. |
-
-### <a name="example"></a>Пример
-
-```typescript
-function toggleIncomingClientAudio(callback: (error: SdkError | null, result: boolean | null) => void): void {
-    if (!callback) {
-      throw new Error('[toggle incoming client audio] Callback cannot be null');
-    }
-    ensureInitialized(FrameContexts.sidePanel, FrameContexts.meetingStage);
-    sendMessageToParent('toggleIncomingClientAudio', callback);
-  }
-
-```
-
+|**callback**| String | Да | Обратный вызов содержит два параметра `error` и `result`. Ошибка *может* содержать тип ошибки или `SdkError` `null` при успешном выполнении переключателя. Результат *может* содержать значение true или false, если переключатель выполнен успешно, или значение NULL при сбое переключателя. Входящий звук отключен, если результат имеет значение true, и не включен, если результат имеет значение false.
+  
 ### <a name="response-code"></a>Код ответа
 
 В следующей таблице приведены коды ответов:

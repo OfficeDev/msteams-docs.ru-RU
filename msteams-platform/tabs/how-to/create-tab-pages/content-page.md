@@ -1,16 +1,16 @@
 ---
 title: Создать страницу контента
 author: surbhigupta
-description: В этом модуле вы узнаете, как создать страницу содержимого для вкладки и вкладки, а также рекомендации по проектированию.
-ms.localizationpriority: medium
+description: Сведения о веб-странице в клиенте Teams, которая является частью личной, каналной или групповой настраиваемой вкладки. Создайте страницу содержимого и внедрите ее в виде веб-представления внутри модуля задач.
+ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 4fd9c301ba48f346b9e721f5d6b3baa13ca50c04
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: 34e106bfa0fdfa6b881d1a2fcd5685c022ac5d87
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841971"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450375"
 ---
 # <a name="create-a-content-page"></a>Создать страницу контента
 
@@ -33,6 +33,9 @@ ms.locfileid: "66841971"
 ## <a name="integrate-your-code-with-teams"></a>Интегрируйте свой код с Teams
 
 Чтобы страница отображалась в Teams, нужно включить [клиентский SDK Microsoft Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true) для JavaScript и включить вызов `app.initialize()` после загрузки страницы.
+
+> [!NOTE]
+> Изменение содержимого или пользовательского интерфейса для отражения в приложении вкладки из-за кэша занимает около 24–48 часов.
 
 В следующем коде показан пример взаимодействия вашей страницы и клиента Teams.
 

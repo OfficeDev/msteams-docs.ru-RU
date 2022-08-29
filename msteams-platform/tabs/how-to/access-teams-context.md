@@ -1,14 +1,14 @@
 ---
 title: Получение контекста для вкладки
-description: В этом модуле вы узнаете, как получить контекст пользователя для вкладок, контекста пользователя и сведений о контексте Access.
-ms.localizationpriority: medium
+description: Сведения о контексте вкладки, контексте пользователя, команды или компании, доступе к информации, извлечении контекста в частных или общих каналах и обработке изменений темы.
+ms.localizationpriority: high
 ms.topic: how-to
-ms.openlocfilehash: dc42c9aff0c62df18dad77af3d36db5bc7b3dd4e
-ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
+ms.openlocfilehash: ddd3d35d9069dd185fa4e77913ca0873e2d31b24
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67058118"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450389"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -302,7 +302,7 @@ microsoftTeams.getContext((context) => {
 
 Аргументом `theme` в функции является строка со значением `default`, `dark`или `contrast`.
 
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий этап
 
 > [!div class="nextstepaction"]
 > [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)

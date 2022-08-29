@@ -1,19 +1,19 @@
 ---
 title: Сообщения в беседах с ботами
-description: Узнайте о способах общения с ботом Teams и данными канала Teams, уведомлениями о сообщениях, изображениями, адаптивными карточками с помощью примеров кода
+description: Узнайте, как отправлять сообщения, предлагаемые действия, уведомления, вложения, изображения, адаптивные карточки, ответы об ошибках состояния для регулирования.
 ms.topic: overview
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: 20cac5ed941e572e4d13cfd4535cb8be7d481355
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: 3500e9791f712c6141822e499805e58df150c7e5
+ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035200"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67363447"
 ---
 # <a name="messages-in-bot-conversations"></a>Сообщения в беседах с ботами
 
-Каждое сообщение в беседе является объектом `Activity` типа `messageType: message`. Когда пользователь отправляет сообщение, Teams отправляет его боту. Teams отправляет объект JSON в конечную точку обмена сообщениями бота. Бот проверяет сообщение, чтобы определить его тип и ответить соответствующим образом.
+Каждое сообщение в беседе является объектом `Activity` типа `messageType: message`. Когда пользователь отправляет сообщение, Microsoft Teams отправляет сообщение боту. Teams отправляет объект JSON в конечную точку обмена сообщениями бота, а Teams разрешает только одну конечную точку для обмена сообщениями. Бот проверяет сообщение, чтобы определить его тип и ответить соответствующим образом.
 
 Основные беседы обрабатываются через соединитель Bot Framework, один REST API. Этот API позволяет боту взаимодействовать с Teams и другими каналами. Пакет SDK Bot Builder предоставляет следующие функции:
 
@@ -198,7 +198,8 @@ async def on_members_added_activity(
 
 ## <a name="send-suggested-actions"></a>Отправка предлагаемых действий
 
-Предлагаемые действия позволяют боту предоставлять кнопки, которые пользователь может выбрать для ввода данных. Предлагаемые действия улучшают взаимодействие с пользователем, позволяя пользователю отвечать на вопрос или делать выбор с помощью кнопки, а не вводить ответ с помощью клавиатуры. Кнопки остаются видимыми и доступными для пользователя в форматированных карточках даже после того, как пользователь сделает выбор, а для предлагаемых действий кнопки недоступны. Это не позволяет пользователю выбрать устаревшие кнопки в беседе.
+Предлагаемые действия позволяют боту предоставлять кнопки, которые пользователь может выбрать для ввода данных. Предлагаемые действия улучшают взаимодействие с пользователем, позволяя пользователю отвечать на вопрос или делать выбор с помощью кнопки, а не вводить ответ с помощью клавиатуры.
+Кнопки остаются видимыми и доступными для пользователя в форматированных карточках даже после того, как пользователь сделает выбор, а для предлагаемых действий кнопки недоступны. Это не позволяет пользователю выбрать устаревшие кнопки в беседе.
 
 Чтобы добавить предлагаемые действия в сообщение, `suggestedActions` задайте свойство объекта [Activity](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference) , чтобы указать список объектов [CardAction](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference) , представляющих кнопки, которые должны быть представлены пользователю. Дополнительные сведения см. в разделе [`SugestedActions`](/dotnet/api/microsoft.bot.builder.messagefactory.suggestedactions)
 
@@ -225,6 +226,7 @@ async def on_members_added_activity(
 :::image type="content" source="~/assets/images/Cards/suggested-actions.png" alt-text="Предлагаемые ботом действия" border="true":::
 
 > [!NOTE]
+>
 > * `SuggestedActions` поддерживаются только для чат-ботов и текстовых сообщений, а не для адаптивных карточек или вложений.
 > * В `imBack` настоящее время это единственный поддерживаемый тип действия, и Teams отображает до трех предлагаемых действий.
 
@@ -459,7 +461,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 |Название примера | Описание | .NETCore | Node.js | Python |
 |----------------|-----------------|--------------|----------------|-----------|
-| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот для беседы в Teams | Обработка сообщений и бесед. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot)| [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

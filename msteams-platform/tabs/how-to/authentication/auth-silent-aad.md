@@ -3,12 +3,12 @@ title: Автоматическая проверка подлинности
 description: В этом модуле вы узнаете, как выполнять автоматическую проверку подлинности, единый вход и Azure AD для вкладок и как это работает.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 7df394bf43bd004e0a430b011ad5aad9c23d6983
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: 048e92c0709541b6a044249fb35ab016b372fabc
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035312"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435043"
 ---
 # <a name="use-silent-authentication-in-azure-ad"></a>Использование автоматической проверки подлинности в Azure AD
 
@@ -57,7 +57,7 @@ ms.locfileid: "67035312"
 
 ### <a name="get-the-user-context"></a>Получить пользовательский контекст
 
-На странице содержимого вкладки вызовите `microsoftTeams.getContext()`, чтобы получить подсказку для входа для текущего пользователя. Подсказка используется в качестве `loginHint` в вызове Azure AD.
+На странице содержимого вкладки вызовите `app.getContext()`, чтобы получить подсказку для входа для текущего пользователя. Подсказка используется в качестве `loginHint` в вызове Azure AD.
 
 ```javascript
 // Set up extra query parameters for Active Directory Authentication Library
@@ -109,16 +109,17 @@ authContext.acquireToken(config.clientId, function (errDesc, token, err, tokenTy
 
 Библиотека проверки подлинности Active Directory анализирует результат Azure AD путем вызова `AuthenticationContext.handleWindowCallback(hash)` на странице обратного вызова для входа.
 
-Убедитесь, что у вас есть подходящий пользователь, и вызовите `microsoftTeams.authentication.notifySuccess()` или `microsoftTeams.authentication.notifyFailure()`, чтобы сообщить о состоянии на главной странице содержимого вкладки.
+Убедитесь, что у вас есть подходящий пользователь, и вызовите `authentication.notifySuccess()` или `authentication.notifyFailure()`, чтобы сообщить о состоянии на главной странице содержимого вкладки.
 
 ```javascript
+import { authentication } from "@microsoft/teams-js";
 if (authContext.isCallback(window.location.hash)) {
     authContext.handleWindowCallback(window.location.hash);
     if (window.parent === window) {
         if (authContext.getCachedUser()) {
-            microsoftTeams.authentication.notifySuccess();
+            authentication.notifySuccess();
         } else {
-            microsoftTeams.authentication.notifyFailure(authContext.getLoginError());
+            authentication.notifyFailure(authContext.getLoginError());
         }
     }
 }

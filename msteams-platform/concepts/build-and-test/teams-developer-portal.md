@@ -4,23 +4,24 @@ description: В этой статье вы узнаете больше о пор
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: 57274333d37edd166c9c5e7bb9484131a31af904
-ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
+ms.openlocfilehash: 0e099700d6129dc2db7b12e0a699fc903c9d32c8
+ms.sourcegitcommit: b060a3901a3ba770ea6fca96d0ab477c252af1a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67232306"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417502"
 ---
 # <a name="developer-portal-for-teams"></a>Портал разработчиков Teams
 
 <a href="https://dev.teams.microsoft.com" target="_blank">Портал разработчика для Teams</a> является основным средством для настройки и распространения приложений Microsoft Teams и управления ими. На портале разработчика вы можете работать совместно с коллегами над приложением, настраивать среды выполнения и многое другое.
 
-:::image type="content" source="../../assets/images/tdp/tdp_home_1.png" alt-text="Снимок экрана: домашняя страница портала разработчика для Teams.":::
+:::image type="content" source="../../assets/images/tdp/tdp_home_1.png" alt-text="На снимке экрана показана домашняя страница портала разработчика для Teams.":::
 
 > [!NOTE]
 >
 > * В настоящее время портал разработчика недоступен для следующих клиентов: облако сообщества для государственных организаций (GCC), GCC-High и Министерство обороны (DOD).
 > * Однако вы можете использовать обычный клиент для создания приложения на портале разработчика, скачивания приложения и отправки приложения с помощью [Microsoft Graph](/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http&preserve-view=true) в общенациональное облако. Дополнительные сведения см. в статье [Развертывания в общенациональных облаках](/graph/deployments).
+> * В настоящее время в некоторых сценариях портал разработчика не будет загружаться в браузере при включении AdBlocker. Чтобы продолжить работу с порталом разработчика в браузере, отключите AdBlocker.
 
 ## <a name="register-an-app"></a>Регистрация приложения
 

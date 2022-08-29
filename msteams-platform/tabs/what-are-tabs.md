@@ -1,16 +1,16 @@
 ---
 title: Вкладки Microsoft Teams
 author: surbhigupta
-description: В этом модуле вы научитесь создавать настраиваемые вкладки на платформе Teams, функции вкладок и настраиваемые сценарии вкладок.
+description: Узнайте, как создавать вкладки и веб-страницы, внедренные в Microsoft Teams. Создайте страницу содержимого в составе личной вкладки, канала или группы. Кроме того, научитесь создавать вкладки с помощью адаптивных карточек.
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 38781b844b9aa84c39daa4cae909ec11ad197175
-ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
-ms.translationtype: HT
+ms.openlocfilehash: d175e9c1a9f8515db57c54503fd3f83cb7970777
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67058237"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450396"
 ---
 # <a name="build-tabs-for-teams"></a>Создание вкладок для Teams
 

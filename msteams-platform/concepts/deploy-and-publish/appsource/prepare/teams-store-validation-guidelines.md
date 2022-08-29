@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: c351214e019b0f794e4f279f69458da6adbf6dce
-ms.sourcegitcommit: 06fdb41c124f82ea1b66181485339cb200ea7162
-ms.translationtype: HT
+ms.openlocfilehash: 65d6a8683249c7b076705087675029eb91f6eb24
+ms.sourcegitcommit: d3b7b4a12c757b97cf0e996bedd22335a9a70afc
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66962477"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417652"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 
@@ -430,7 +430,6 @@ ms.locfileid: "66962477"
 [*Предлагаемое исправление*]
 
 * Показывать определенные устройства, например телефоны или ноутбуки.
-* Показывать хром или пользовательский интерфейс, которых нет в вашем приложении.
 * Представлять на снимках экрана пользовательский интерфейс Teams или браузера.
 * Включать макеты, которые неточно отражают фактический пользовательский интерфейс вашего приложения, например показывают использование приложения вне Teams.
 

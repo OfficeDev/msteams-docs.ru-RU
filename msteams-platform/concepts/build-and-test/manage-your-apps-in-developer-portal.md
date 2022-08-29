@@ -4,14 +4,14 @@ description: Из этой статьи вы узнаете, как настра
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: 12f1def758e4ef108f9670e0cc696c7ce197e485
-ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
+ms.openlocfilehash: 82b755408aa633768ff5a0c01a1c347cadb6a0a7
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67232443"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435078"
 ---
-# <a name="manage-your-apps-in-developer-portal"></a>Управление приложениями на портале разработчика
+# <a name="manage-your-apps-in-developer-portal"></a>Управление приложениями Microsoft Teams на Портале разработчика
 
 После создания или отправки приложения вы можете управлять приложениями на портале разработчика следующим образом:
 
@@ -50,7 +50,7 @@ ms.locfileid: "67232443"
   * Личное приложение
   * Bot
   * Connector
-  * Сцена
+  * Сцены
   * Приложение группы и канала
   * Расширение для обмена сообщениями
   * Расширение для собрания
@@ -154,9 +154,9 @@ ms.locfileid: "67232443"
 1. На странице управления ботом выберите " **Новый бот"**.
 1. Введите имя и нажмите кнопку **"Добавить"**.
 
-:::image type="content" source="../../assets/images/tdp/tools-in-dev-portal.png" alt-text="На снимке экрана показан пример средств на портале разработчика, который помогает создавать ключевые функции.":::
+   :::image type="content" source="../../assets/images/tdp/tools-in-dev-portal.png" alt-text="На снимке экрана показан пример средств на портале разработчика, который помогает создавать ключевые функции.":::
 
-На портале разработчика можно перейти на портал Bot Framework и настроить для бота значок обновления и другие свойства.
+На портале разработчика можно перейти на портал Bot Framework и настроить бот для обновления значка и других свойств.
 
 ## <a name="see-also"></a>См. также
 

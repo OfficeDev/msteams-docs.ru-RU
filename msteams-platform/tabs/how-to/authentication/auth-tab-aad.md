@@ -3,12 +3,12 @@ title: Настройка проверки подлинности OAuth стор
 description: Из этой статьи вы узнаете, как Microsoft Azure AD проверку подлинности Teams, а также как использовать ее на вкладке.
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.openlocfilehash: f3a3e9d4ae848459c4804895aa2f28a66868ddb0
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 18a643af2b8a15940915145d02207f2aec93b014
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503468"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435001"
 ---
 # <a name="configure-third-party-oauth-idp-authentication"></a>Настройка проверки подлинности стороннего поставщика удостоверений OAuth
 
@@ -20,11 +20,13 @@ ms.locfileid: "66503468"
 
 OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory (Azure AD) и многими другими поставщиками удостоверений. Понимание механизма OAuth 2.0 необходимо для работы с проверкой подлинности в Teams и Azure AD. В приведенных ниже примерах используется поток неявного предоставления OAuth 2.0. Он считывает сведения о профиле пользователя из Azure AD Microsoft Graph.
 
-Программный код, приведенный в этой статье, взят из примера приложения Teams [Пример проверки подлинности Microsoft Teams на вкладке (Node)](https://github.com/OfficeDev/microsoft-teams-sample-complete-node). Она содержит статическую вкладку, которая запрашивает маркер доступа для Microsoft Graph и отображает основные сведения о профиле текущего пользователя из Azure AD.
+Код, приведенный в этой статье, поступает из примера приложения [Microsoft Teams Authentication Sample (Node)](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-auth/nodejs) для приложения Teams. Она содержит статическую вкладку, которая запрашивает маркер доступа для Microsoft Graph и отображает основные сведения о профиле текущего пользователя из Azure AD.
 
 Общие сведения о потоке проверки подлинности для вкладок см. на вкладке "Поток [проверки подлинности"](~/tabs/how-to/authentication/auth-flow-tab.md).
 
 Поток проверки подлинности на вкладке отличается от потока проверки подлинности в ботах.
+
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
 ## <a name="configure-your-app-to-use-azure-ad-as-an-identity-provider"></a>Настройка приложения для использования Azure AD в качестве поставщика удостоверений
 
@@ -49,7 +51,31 @@ OAuth 2.0 — это открытый стандарт проверки подл
 
 Добавьте кнопку на страницу конфигурации или содержимого, чтобы пользователь при необходимости мог входить в систему. Это можно сделать на странице [конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md) вкладки или на любой странице [содержимого](~/tabs/how-to/create-tab-pages/content-page.md).
 
-Azure AD, как и большинство поставщиков удостоверений, не позволяет помещать его содержимое в `iframe`. Это означает, что для размещения поставщика удостоверений необходимо добавить всплывающее окно. В следующем примере эта страница имеет значение `/tab-auth/simple-start`. Используйте функцию `microsoftTeams.authenticate()` клиентского пакета SDK Microsoft Teams, чтобы запустить эту страницу при нажатии кнопки.
+Azure AD, как и большинство поставщиков удостоверений, не позволяет помещать его содержимое в `iframe`. Это означает, что для размещения поставщика удостоверений необходимо добавить всплывающее окно. В следующем примере эта страница имеет значение `/tab-auth/simple-start`. Используйте функцию `authentication.authenticate()` клиентского пакета SDK Microsoft Teams, чтобы запустить эту страницу при нажатии кнопки.
+
+# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
+
+```javascript
+import { authentication } from "@microsoft/teams-js";
+authentication.authenticate({
+    url: window.location.origin + "/tab/simple-start-v2"),
+    width: 600,
+    height: 535})
+.then((result) => {
+    console.log("Login succeeded: " + result);
+    let data = localStorage.getItem(result);
+    localStorage.removeItem(result);
+    let tokenResult = JSON.parse(data);
+    showIdTokenAndClaims(tokenResult.idToken);
+    getUserProfile(tokenResult.accessToken);
+})
+.catch((reason) => {
+    console.log("Login failed: " + reason);
+    handleAuthError(reason);
+});
+```
+
+# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
 
 ```javascript
 microsoftTeams.authentication.authenticate({
@@ -64,18 +90,49 @@ microsoftTeams.authentication.authenticate({
     }
 });
 ```
+---
 
 ### <a name="notes"></a>Примечания
 
-* Передаваемый URL-адрес `microsoftTeams.authentication.authenticate()` является начальной страницей потока проверки подлинности. В данном примере это `/tab-auth/simple-start`. Он должен совпадать с адресом, который вы зарегистрировали на [портале регистрации приложений Azure AD](https://apps.dev.microsoft.com).
+* Передаваемый URL-адрес `authenticate()` является начальной страницей потока проверки подлинности. В данном примере это `/tab-auth/simple-start`. Он должен совпадать с адресом, который вы зарегистрировали на [портале регистрации приложений Azure AD](https://apps.dev.microsoft.com).
 
 * Поток проверки подлинности должен начинаться на странице, которая находится в вашем домене. Этот домен также должен быть указан в [`validDomains`](~/resources/schema/manifest-schema.md#validdomains) разделе манифеста. Если этого не сделать, вы увидите пустое всплывающее окно.
 
-* В противном случае `microsoftTeams.authentication.authenticate()` всплывающее окно не закрывается в конце процесса входа.
+* В противном случае `authenticate()` всплывающее окно не закрывается в конце процесса входа.
 
 ## <a name="navigate-to-the-authorization-page-from-your-pop-up-page"></a>Со всплывающей страницы перейдите на страницу авторизации
 
-При показе всплывающей страницы (`/tab-auth/simple-start`) выполняется следующий код. Основная цель этой страницы — перенаправление к поставщику удостоверений для входа пользователя. Это перенаправление может быть выполнено на стороне сервера с помощью HTTP 302, но в этом случае это делается на стороне клиента с помощью вызова .`window.location.assign()` Это также позволяет методу `microsoftTeams.getContext()` получать подсказки, которые можно передать в Azure AD.
+При показе всплывающей страницы (`/tab-auth/simple-start`) выполняется следующий код. Основная цель страницы — перенаправление к поставщику удостоверений, чтобы пользователь может войти в систему. Это перенаправление можно выполнить на стороне сервера с помощью HTTP 302, но в этом случае это делается на стороне клиента с помощью вызова .`window.location.assign()` Это также позволяет методу `app.getContext()` получать подсказки, которые можно передать в Azure AD.
+
+# <a name="teamsjs-v2"></a>[TeamsJS версии 2](#tab/teamsjs-v2)
+
+```javascript
+app.getContext().then((context) => {
+    // Generate random state string and store it, so we can verify it in the callback
+    let state = _guid(); // _guid() is a helper function in the sample
+    localStorage.setItem("simple.state", state);
+    localStorage.removeItem("simple.error");
+
+    // Go to the Azure AD authorization endpoint
+    let queryParams = {
+        client_id: "{{appId}}",
+        response_type: "id_token token",
+        response_mode: "fragment",
+        scope: "https://graph.microsoft.com/User.Read openid",
+        redirect_uri: window.location.origin + "/tab/simple-end",
+        nonce: _guid(),
+        state: state,
+        // The context object is populated by Teams; the loginHint attribute
+        // is used as hinting information
+        login_hint: context.user.loginHint,
+    };
+
+    let authorizeEndpoint = `https://login.microsoftonline.com/${context.user.tenant.id}/oauth2/v2.0/authorize?${toQueryString(queryParams)}`;
+    window.location.assign(authorizeEndpoint);
+});
+```
+
+# <a name="teamsjs-v1"></a>[TeamsJS версии 1](#tab/teamsjs-v1)
 
 ```javascript
 microsoftTeams.getContext(function (context) {
@@ -102,12 +159,14 @@ microsoftTeams.getContext(function (context) {
 });
 ```
 
+---
+
 После завершения авторизации пользователь перенаправляется на страницу обратного вызова для вашего приложения, указанную в `/tab-auth/simple-end`.
 
 ### <a name="notes"></a>Примечания
 
 * Подробнее о создании запросов и URL-адресов проверки подлинности см. в статье [Получение сведений о контексте пользователя](~/tabs/how-to/access-teams-context.md). Например, можно использовать в качестве значения `login_hint` для входа в Azure AD имя пользователя: тогда пользователю придется вводить меньше информации вручную. Помните, что не следует использовать этот контекст непосредственно в качестве подтверждения личности, так как злоумышленник может загрузить страницу в вредоносный браузер и предоставить ему любую информацию, которую он хочет.
-* Хотя контекст вкладки предоставляет полезные сведения о пользователе, не используйте эти сведения для проверки подлинности пользователя независимо от того, получаете ли вы его в качестве параметров для URL-адреса содержимого вкладки или путем вызова функции `microsoftTeams.getContext()` в пакете SDK клиента Microsoft Teams. Злоумышленник может вызвать URL-адрес содержимого вкладки с собственными параметрами, и веб-страница, мимикрирующая под Microsoft Teams, может загрузить URL-адрес содержимого вкладки в iframe и передать функции `getContext()` свои собственные данные. Сведения, связанные с удостоверениями, следует рассматривать в контексте вкладки просто как подсказки и проверять их перед использованием.
+* Хотя контекст вкладки предоставляет полезные сведения о пользователе, не используйте эти сведения для проверки подлинности пользователя независимо от того, получаете ли вы его в качестве параметров для URL-адреса содержимого вкладки или путем вызова функции `app.getContext()` в пакете SDK клиента Microsoft Teams. Злоумышленник может вызвать URL-адрес содержимого вкладки с собственными параметрами, и веб-страница, мимикрирующая под Microsoft Teams, может загрузить URL-адрес содержимого вкладки в iframe и передать функции `getContext()` свои собственные данные. Сведения, связанные с удостоверениями, следует рассматривать в контексте вкладки просто как подсказки и проверять их перед использованием.
 * Параметр `state` используется для подтверждения того, что служба, вызывающая URI обратного вызова - именно та, которую вызывали вы. Если параметр `state` в обратном вызове не совпадает с параметром, отправленным во время вызова, обратный вызов не проверяется и должен быть завершен.
 * Нет необходимости включать домен `validDomains` поставщика удостоверений в список в файле manifest.json приложения.
 
@@ -115,37 +174,41 @@ microsoftTeams.getContext(function (context) {
 
 В последнем разделе вы вызвали службу авторизации Azure AD и передали сведения о пользователе и приложении, чтобы Azure AD могли предоставлять пользователю собственный монолитный интерфейс авторизации. Ваше приложение не контролирует, что происходит в этом интерфейсе. Приложению известно только, что возвращается, когда Azure AD вызывает предоставленную вами страницу обратного вызова (`/tab-auth/simple-end`).
 
-На этой странице необходимо определить успешность или сбой на основе сведений, возвращаемых Azure AD вызовом `microsoftTeams.authentication.notifySuccess()` или `microsoftTeams.authentication.notifyFailure()`. Если вход выполнен успешно, у вас будет доступ к ресурсам службы.
+На этой странице необходимо определить успешность или сбой на основе сведений, возвращаемых Azure AD вызовом `authentication.notifySuccess()` или `authentication.notifyFailure()`. Если вход выполнен успешно, у вас будет доступ к ресурсам службы.
 
-````javascript
+```javascript
 // Split the key-value pairs passed from Azure AD
 // getHashParameters is a helper function that parses the arguments sent
 // to the callback URL by Azure AD after the authorization call
 let hashParams = getHashParameters();
 if (hashParams["error"]) {
     // Authentication/authorization failed
-    microsoftTeams.authentication.notifyFailure(hashParams["error"]);
+    localStorage.setItem("simple.error", JSON.stringify(hashParams));
 } else if (hashParams["access_token"]) {
     // Get the stored state parameter and compare with incoming state
-    // This validates that the data is coming from Azure AD
     let expectedState = localStorage.getItem("simple.state");
     if (expectedState !== hashParams["state"]) {
         // State does not match, report error
-        microsoftTeams.authentication.notifyFailure("StateDoesNotMatch");
+        localStorage.setItem("simple.error", JSON.stringify(hashParams));
+        authentication.notifyFailure("StateDoesNotMatch");
     } else {
-        // Success: return token information to the tab
-        microsoftTeams.authentication.notifySuccess({
+        // Success -- return token information to the parent page.
+        // Use localStorage to avoid passing the token via notifySuccess; instead we send the item key.
+        let key = "simple.result";
+        localStorage.setItem(key, JSON.stringify({
             idToken: hashParams["id_token"],
             accessToken: hashParams["access_token"],
             tokenType: hashParams["token_type"],
             expiresIn: hashParams["expires_in"]
-        })
+        }));
+        authentication.notifySuccess(key);
     }
 } else {
     // Unexpected condition: hash does not contain error or access_token parameter
-    microsoftTeams.authentication.notifyFailure("UnexpectedFailure");
+    localStorage.setItem("simple.error", JSON.stringify(hashParams));
+    authentication.notifyFailure("UnexpectedFailure");
 }
-````
+```
 
 В этом коде анализируются пары "ключ-значение", полученные от Azure AD в `window.location.hash`, с помощью вспомогательной функции `getHashParameters()`. Если найден `access_token` и значение `state` совпадает со значением, указанным в начале потока проверки подлинности, возвращается маркер доступа на вкладку путем вызова `notifySuccess()`; в противном случае генерируется сообщение об ошибке с помощью `notifyFailure()`.
 

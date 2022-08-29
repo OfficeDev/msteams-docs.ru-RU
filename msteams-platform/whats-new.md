@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 11d4501aa8080a27b74581aefcb33795ded4ef78
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
-ms.translationtype: HT
+ms.openlocfilehash: caff618c574fb550225dad729056e77a7fc53229
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312242"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435008"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -40,6 +40,7 @@ ms.locfileid: "67312242"
 | 03.08.2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 03.08.2022 | Добавлена функция для получения расшифровок прошедших собраний. | Создание приложений для собраний и звонков Teams > Получение расшифровки собраний с помощью API Graph > [Обзор](graph-api/meeting-transcripts/overview-transcripts.md) |
 | 03.08.2022 | Развертывание ссылки для отправки в Teams из веб-приложений | Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
+| 08/01/2021| Примечание. Портал разработчика теперь является общедоступным, а App Studio не рекомендуется к использованию с 1 августа 2022 г. | Инструменты и SDK > [Портал разработчика Teams](concepts/build-and-test/teams-developer-portal.md) |
 | 28.07.2022 | Добавление изображения экрана Teams и карточки пользователя в уведомление собрания| Создание приложений для собраний и звонков Teams > Включение и настройка приложений для собраний > [Уведомление на собраниях](apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#in-meeting-notification) |
 | 28.07.2022 | Создание общих каналов в Teams | Создание приложений для звонков и собраний Teams > [Общие каналы](concepts/build-and-test/Shared-channels.md) |
 | 28.07.2022|Реализован манифест приложения версии 1.14| Манифест приложения > [Схема манифеста приложения для Teams](resources/schema/manifest-schema.md)|
@@ -263,6 +264,7 @@ ms.locfileid: "67312242"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
+| 08/23/2022 | Предоставление доступа к приложениям на этапе собрания Teams на мобильных устройствах | Создание приложений для собраний и звонков Teams > [включение и настройка приложений для собраний](/microsoftteams/platform/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings) |
 | 03.08.2022 | Отключение и включение звука API-интерфейсов для приложений на этапе собрания Teams | Создание приложений для собраний и звонков Teams > [Справочные материалы по API приложений для собраний](/microsoftteams/platform/apps-in-teams-meetings/api-references?tabs=dotnet) |
 | 02.08.2022| Элементы управления совместной работой для Teams| Интеграция с Teams > [Элементы управления совместной работой](samples/collaboration-control.md)|
 | 30.06.2022 | Приложения для мгновенных собраний, индивидуальных и групповых звонков| Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md)|

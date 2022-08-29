@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете о командах п
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: cdc3bd5de10fb85970c74065f12164dc36d81fe3
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
+ms.openlocfilehash: 5cddfcc5f4fd3088e72538c6243b5f4fbf19767c
+ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312270"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67363475"
 ---
 # <a name="define-message-extension-search-commands"></a>Определение команд поиска расширения сообщений
 
@@ -24,7 +24,7 @@ ms.locfileid: "67312270"
 В следующем видео показано, как определить команды поиска расширений сообщений:
 <br>
 
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK>]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK]
 <br>
 
 ## <a name="select-search-command-invoke-locations"></a>Выбор расположений вызова команды поиска
@@ -113,6 +113,7 @@ ms.locfileid: "67312270"
 | `parameter.description` | Это свойство описывает цели параметра или пример значения, которое необходимо указать. Это значение выводится в пользовательском интерфейсе. | Да | 1.0 |
 | `parameter.title` | Это свойство представляет собой краткое понятное название или метку параметра. | Да | 1.0 |
 | `parameter.inputType` | Этому свойству задается тип входных данных. Возможные значения: `text`, `textarea`, `number`, , `date`, `toggle``time`. По умолчанию задано значение `text`. | Нет | 1.4 |
+| `parameters.value` | Начальное значение параметра. Это значение сейчас не поддерживается | Нет | 1.5 |
 
 #### <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как приступ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: a0e135864fd7c7d9775731e6c46faf9f24242943
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: bb4bd02553ebb49752fa6450cd0f94f41dcc7ac8
+ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841640"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67363488"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
@@ -19,7 +19,7 @@ ms.locfileid: "66841640"
 В следующем видео показано, как создать соединители Office 365.
 <br>
 
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OIzv>]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OIzv]
 <br>
 
 [!INCLUDE [sdk-include](~/includes/sdk-include.md)]
@@ -260,3 +260,5 @@ ms.locfileid: "66841640"
 * [Создание соединителя Office 365](~/webhooks-and-connectors/how-to/connectors-creating.md)
 * [Включение и отключение соединителей администраторами](/MicrosoftTeams/office-365-custom-connectors#enable-or-disable-connectors-in-teams)
 * [Публикация настраиваемых соединителей администраторами в своей организации](/MicrosoftTeams/office-365-custom-connectors)
+* [Создание бота уведомлений с помощью JavaScript](../../sbs-gs-notificationbot.yml)
+* [Создание первого приложения бота с помощью JavaScript](../../sbs-gs-bot.yml)

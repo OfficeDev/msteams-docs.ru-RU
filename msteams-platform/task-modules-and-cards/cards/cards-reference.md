@@ -1,14 +1,14 @@
 ---
 title: Типы карточек
-description: В этом модуле вы узнаете, какие карточки и действия карточек доступны для ботов в Teams и создадите главный имиджевый баннер, эскиз и адаптивные карточки.
+description: В этом модуле вы узнаете, что такое карточки и действия с карточками, доступными ботам в Teams, и создайте главный имиджевый баннер, эскиз и адаптивные карточки.
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: f5d71e2e766f81b9481b60a801ea419ba3c14968
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
-ms.translationtype: HT
+ms.openlocfilehash: 0f58c4d9d003cff5eaf67d0094f76f908a412864
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67311962"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435029"
 ---
 # <a name="types-of-cards"></a>Типы карточек
 
@@ -71,7 +71,10 @@ ms.locfileid: "67311962"
 | Карточка входа | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 > [!NOTE]
-> Для адаптивных карточек во входящих веб-перехватчиках полностью поддерживаются все встроенные элементы схемы адаптивных карточек, кроме `Action.Submit`. Поддерживаемые действия: [**Action.OpenURL**](https://adaptivecards.io/explorer/Action.OpenUrl.html), [**Action.ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html), [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html) и [**Action.Execute**](/adaptive-cards/authoring-cards/universal-action-model#actionexecute).
+>
+> * Для адаптивных карточек во входящих веб-перехватчиках полностью поддерживаются все встроенные элементы схемы адаптивных карточек, кроме `Action.Submit`. Поддерживаемые действия: [**Action.OpenURL**](https://adaptivecards.io/explorer/Action.OpenUrl.html), [**Action.ShowCard**](https://adaptivecards.io/explorer/Action.ShowCard.html), [**Action.ToggleVisibility**](https://adaptivecards.io/explorer/Action.ToggleVisibility.html) и [**Action.Execute**](/adaptive-cards/authoring-cards/universal-action-model#actionexecute).
+>
+> * Адаптивная карточка поддерживает только тип соединителя Входящего веб-перехватчика O365, а не любые другие типы соединителей O365.
 
 ## <a name="common-properties-for-all-cards"></a>Общие свойства для всех карточек
 
@@ -636,11 +639,11 @@ Teams поддерживает карточку квитанции, котора
 
 Карточка входа в Teams похожа на карточку входа в Bot Framework, за исключением того, что карточка входа в Teams поддерживает только два действия `signin` и `openUrl`.
 
-Действие входа можно использовать с помощью любой карточки в Teams, а не только карточки входа. Дополнительные сведения см. в статье [Поток проверки подлинности для ботов в Teams](~/bots/how-to/authentication/auth-flow-bot.md).
+Действие входа можно использовать с любой карточки в Teams, а не только из карточки входа. Дополнительные сведения см. в статье [Поток проверки подлинности для ботов в Teams](~/bots/how-to/authentication/auth-flow-bot.md).
 
-### <a name="support-for-signin-cards"></a>Поддержка карточек входа
+### <a name="support-for-log-in-cards"></a>Поддержка карточек входа
 
-В следующей таблице представлены функции, поддерживающие карточки входа.
+В следующей таблице приведены функции, поддерживающие карточки входа.
 
 | Боты в Teams | Расширения для обмена сообщениями  | Connectors | Bot Framework |
 | --- | --- | --- | --- |
@@ -650,7 +653,7 @@ Teams поддерживает карточку квитанции, котора
 
 Справочник по Bot Framework:
 
-* [Node.js карточки входа](/javascript/api/botframework-schema/signincard?view=botbuilder-ts-latest&preserve-view=true)
+* [Вход с помощью Node.js](/javascript/api/botframework-schema/signincard?view=botbuilder-ts-latest&preserve-view=true)
 * [C# карточки входа](/dotnet/api/microsoft.bot.schema.signincard?view=botbuilder-dotnet-stable&preserve-view=true)
 
 ## <a name="thumbnail-card"></a>Карточка эскиза

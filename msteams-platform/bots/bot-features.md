@@ -1,16 +1,16 @@
 ---
 title: Боты и пакеты SDK
 author: surbhigupta
-description: Из этой статьи вы узнаете о средствах и пакетах SDK для создания ботов и ботов Microsoft Teams с помощью Microsoft Bot Framework.
+description: Из этой статьи вы узнаете о средствах и пакетах SDK Bot Framework (C#, Python, Java, JavaScript) для ботов Microsoft Teams, а также о преимуществах и недостатках.
 ms.topic: overview
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: ae95a56dc12435b97934bd1bbfc05167fbe2c11c
-ms.sourcegitcommit: eb480bf056a46837d18b4ea35e465486cc68f981
+ms.openlocfilehash: a3ba6c1ac32b24aefc8d751482bdb7bde53d1a73
+ms.sourcegitcommit: b918181217995a47be34632e1051d0f4d4d481b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912256"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67321189"
 ---
 # <a name="bots-and-sdks"></a>Боты и пакеты SDK
 
@@ -115,7 +115,7 @@ ms.locfileid: "66912256"
 
 ### <a name="maintain-a-large-knowledge-base"></a>Поддержание широкой базы знаний
 
-Один из недостатков ботов заключается в том, что трудно поддерживать большой объем извлечения 知識庫 неранкированных ответов. Боты лучше всего подходят для коротких и быстрых взаимодействий, а не для просеивания длинных списков в поисках ответа.
+Один из недостатков ботов заключается в том, что трудно поддерживать большой объем база знаний с неранкированных ответов. Боты лучше всего подходят для коротких и быстрых взаимодействий, а не для просеивания длинных списков в поисках ответа.
 
 ## <a name="code-snippets"></a>Фрагменты кода
 

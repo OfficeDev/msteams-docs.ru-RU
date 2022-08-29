@@ -1,16 +1,16 @@
 ---
 title: Создание вкладок бесед
 author: surbhigupta
-description: В этом модуле вы узнаете, как создать чат вложенной сущности для вкладок канала, чтобы управлять беседами с помощью примеров кода
+description: Узнайте, как создавать вкладки бесед в Microsoft Teams для начала, продолжения, улучшения и закрытия беседы.
 ms.topic: conceptual
 ms.author: lomeybur
-ms.localizationpriority: medium
-ms.openlocfilehash: 4ba0545d78f892941836994d054a3fafcee183a4
-ms.sourcegitcommit: 06fdb41c124f82ea1b66181485339cb200ea7162
+ms.localizationpriority: high
+ms.openlocfilehash: 37816fab1f8ca402e806dec3ec5cca77dd15cf95
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66962421"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450424"
 ---
 # <a name="create-conversational-tabs"></a>Создание вкладок бесед
 
@@ -99,7 +99,7 @@ microsoftTeams.conversations.closeConversation();
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка "Создание беседы"| Пример приложения на вкладке Microsoft Teams для демонстрации вкладки создания беседы. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
+|Вкладка "Создание беседы"| Пример приложения на вкладке Microsoft Teams для демонстрации вкладки создания беседы. | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/csharp) |  [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-conversations/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 

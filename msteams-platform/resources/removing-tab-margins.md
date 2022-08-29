@@ -1,16 +1,16 @@
 ---
 title: Изменения полей вкладок
 author: surbhigupta
-description: В этом модуле вы узнаете, как удаление полей вкладок улучшает процесс сборки приложения.
+description: Узнайте, как удалить поля вокруг вкладок в Microsoft Teams с помощью комплекта пользовательского интерфейса. Знать дополнительный эффект заполнения, размер поля для левого, правого, верхнего и нижнего.
 ms.topic: reference
 ms.localizationpriority: medium
 ms.author: lomeybur
-ms.openlocfilehash: c809f91a4ca11bc6006720fc70092f74386a4187
-ms.sourcegitcommit: 06fdb41c124f82ea1b66181485339cb200ea7162
+ms.openlocfilehash: 715c6b735323e442490de8634384054be565e7a8
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66962428"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450445"
 ---
 # <a name="tab-margin-changes"></a>Изменения полей вкладок
 

@@ -1,18 +1,18 @@
 ---
 title: Развертывание ссылок вкладок и представление "Экран"
 author: Rajeshwari-v
-description: Узнайте, как развернуть ссылку, открыть представление "Экран" и закрепить вкладку с приложением Microsoft Teams. Сведения о представлении "Экран" и его вызове с помощью адаптивной карточки с использованием примера кода и образца.
+description: Сведения о представлении стадии— полноэкранном компоненте пользовательского интерфейса, вызываемом для вывода веб-содержимого. Размыкание ссылок используется для того, чтобы преобразовать URL-адреса в вкладку с помощью адаптивных карточек.
 ms.topic: conceptual
 ms.author: surbhigupta
-ms.localizationpriority: medium
-ms.openlocfilehash: 9a12a32f15f0eb580b30897459d28b16bc88dccc
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.localizationpriority: high
+ms.openlocfilehash: b31f9aa1ad00a0cf255df4aa1976470c3add3551
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841991"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450452"
 ---
-# <a name="tabs-link-unfurling-and-stage-view"></a>Развертывание ссылок вкладок и представление "Экран"
+# <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
 Представление стадии — это новый компонент пользовательского интерфейса. Он позволяет отобразить содержимое, открытое в Полноэкранном режиме в Teams и закрепленное как вкладка.
 
@@ -149,7 +149,7 @@ ms.locfileid: "66841991"
 
 | Название примера | Описание | C# |Node.js|
 |-------------|-------------|------|----|
-|Вкладка в представлении "Экран" |Пример приложения со вкладкой Microsoft Teams для демонстрации вкладки в представлении "Экран".|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
+|Вкладка в представлении "Экран" |Пример приложения со вкладкой Microsoft Teams для демонстрации вкладки в представлении "Экран".|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-stage-view/nodejs)|
 
 ## <a name="next-step"></a>Следующий этап
 

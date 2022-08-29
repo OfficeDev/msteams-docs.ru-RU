@@ -1,16 +1,16 @@
 ---
 title: Проектирование личного приложения
-description: Узнайте, как разработать личное приложение Teams и получить комплект разработчика для пользовательского интерфейса Microsoft Teams, создать такие компоненты, как информационная панель, форма, доска задач для мобильных и настольных компьютеров.
+description: Узнайте, как реализовать рекомендации по проектированию, включая элементы пользовательского интерфейса, для разработки личного приложения с помощью комплекта пользовательского интерфейса Microsoft Teams.
 author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 7dda8dd7e68e7452da164c8ec45d3352909f45ed
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: ad6a69f05225c6821ec1d8ee8ba1f569044247ff
+ms.sourcegitcommit: 2d2a08f671c3d19381403ba1af5dff1f06bb4dd6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558340"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "67338825"
 ---
 # <a name="designing-your-personal-app-for-microsoft-teams"></a>Проектирование личных приложений для Microsoft Teams
 

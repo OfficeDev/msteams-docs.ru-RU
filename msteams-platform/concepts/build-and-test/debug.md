@@ -3,12 +3,12 @@ title: Выбор конфигурации для тестирования и о
 description: В этом модуле вы узнаете о вариантах тестирования и отладки приложений Microsoft Teams в локальной и облачной среде.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 5f2a53db5540656d3fd62047ed0fef9256ba62d6
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
+ms.openlocfilehash: b064fb4ef06576251a91a4727a84bb4519d4d352
+ms.sourcegitcommit: d8183bad448990f7c79b1956a6c9761c27712b4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312193"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "67452355"
 ---
 # <a name="choose-a-test-setup-and-debug-your-teams-app"></a>Выбор тестовой установки и отладка приложения Teams
 
@@ -81,6 +81,5 @@ Teams — это полностью облачный продукт, котор�
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-[Проверка и отладка бота локально с помощью IDE](../../bots/how-to/debug/locally-with-an-ide.md#test-and-debug-your-bot-locally-with-ide)
-
-[DevTools для вкладок Microsoft Teams](../../tabs/how-to/developer-tools.md)
+* [Проверка и отладка бота локально с помощью IDE](../../bots/how-to/debug/locally-with-an-ide.md#test-and-debug-your-bot-locally-with-ide)
+* [DevTools для вкладок Microsoft Teams](../../tabs/how-to/developer-tools.md)

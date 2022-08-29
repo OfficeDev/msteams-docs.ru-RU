@@ -5,12 +5,12 @@ description: Узнайте о доступных решениях Майкро�
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 74dd4eb094c31510319932ec96cbb0db34a1fca5
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 59730f586ff90a6f0de9061c41ccc6c2e24385ef
+ms.sourcegitcommit: 68bf3adb8aaae07caf684f7d9efb5cb7c84598b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503314"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67382939"
 ---
 # <a name="create-low-code-custom-apps-for-teams"></a>Создание пользовательских приложений с низким кодом для Teams
 
@@ -25,7 +25,11 @@ Microsoft Power Platform объединяет четыре богатые воз
 :::image type="content" source="../assets/images/power-platform-and-teams/ms-power-platform.png" alt-text="Службы Power Platform":::
 
 > [!NOTE]
-> Не следует использовать Microsoft Power Platform для создания приложений, предназначенных для публикации в магазине приложений Teams. Приложения Microsoft Power Platform можно публиковать только в магазине приложений организации.
+>
+> - Если вы хотите опубликовать power apps в Магазине Teams для пользователей во всех организациях, заполните эту [форму](https://go.microsoft.com/fwlink/?linkid=2204468).
+> - Если вы хотите опубликовать приложение для определенной организации, см. следующие сведения:
+>   - [Интеграция Power Apps и Microsoft Teams](/power-apps/teams/overview)
+>   - [Создание приложений в Microsoft Teams с помощью Power Apps](/power-apps/teams/create-apps-overview)
 
 ### <a name="-teams-and-power-bi"></a>✔ Teams и Power BI
 

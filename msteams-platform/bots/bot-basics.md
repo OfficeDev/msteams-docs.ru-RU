@@ -1,16 +1,16 @@
 ---
 title: Обработчики действий ботов
 author: surbhigupta
-description: Из этой статьи вы узнаете об обработчиках действий ботов, платформах, обработчиках действий Teams и логике ботов в Microsoft Teams.
+description: Сведения о событиях и обработчиках действий Microsoft Teams для сообщений, каналов, команд, участников, упоминаний, проверки подлинности, действий с карточками с помощью Microsoft Bot Framework SDK.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: c1d3acb4328f61f15d4751aedff3d413d18072fd
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: 4780c4c2ca3965186411f7927f1fb5b555647004
+ms.sourcegitcommit: b918181217995a47be34632e1051d0f4d4d481b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485575"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67321210"
 ---
 # <a name="bot-activity-handlers"></a>Обработчики действий ботов
 

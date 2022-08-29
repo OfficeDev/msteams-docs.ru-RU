@@ -3,38 +3,38 @@ title: Использование внешних поставщиков OAuth
 description: В этом модуле вы узнаете, как выполнять проверку подлинности с помощью внешних поставщиков OAuth и как добавить ее во внешний браузер
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 00b722b2b8fd61e3c8fd620ae7bd277da0e7a89b
-ms.sourcegitcommit: 06fdb41c124f82ea1b66181485339cb200ea7162
-ms.translationtype: HT
+ms.openlocfilehash: 62f056fd852eda320a180fa61cf5693ef0105b8b
+ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66962414"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435071"
 ---
 # <a name="use-external-oauth-providers"></a>Использование внешних поставщиков OAuth
+
+[!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
 Вы можете поддерживать внешних или сторонних поставщиков OAuth, таких как Google, GitHub, LinkedIn и Facebook с помощью обновленного API `authenticate()`:
 
 ```JavaScript
-function authenticate(authenticateParameters?: AuthenticateParameters)
-``` 
+function authenticate(authenticateParameters: AuthenticatePopUpParameters): Promise<string>
+```
 
 Для поддержки внешних поставщиков OAuth в API `authenticate()` добавляются следующие данные.
 
 * Параметр `isExternal`
 * Два значения заполнителей в существующем параметре `url`
 
-В следующей таблице приводится список параметров API `authenticate()` и функций, а также их описания:
+В следующей таблице приведен список параметров `authenticate()` API (`AuthenticatePopUpParameters`) и функций, а также их описания.
 
 | Параметр| Описание|
 | --- | --- |
 |`isExternal` | Тип параметра — логический. Он указывает, что окно аутентификации открывается во внешнем браузере.|
-|`failureCallback`| Функция вызывается в случае сбоя проверки подлинности, а всплывающее всплывающее окно аутентификации указывает причину сбоя.|
 |`height` |Предпочтительная высота всплывающего окна. Значение можно игнорировать, если он находится за пределами допустимых границ.|
-|`successCallback`| Функция будет вызвана, если проверка подлинности будет успешной, а результат возвращен из всплывающего окна аутентификации. Код аутентификации — это результат.|
 |`url`  <br>|URL-адрес стороннего сервера приложений для всплывающего окна проверки подлинности со следующими двумя заполнителями параметров:</br> <br> - `oauthRedirectMethod`: передача заполнителя в `{}`. Этот заполнитель заменяется прямой ссылкой или веб-страницей платформой Teams, которая сообщает серверу приложений о том, что вызов идет с мобильной платформы.</br> <br> - `authId`: этот заполнитель заменяется UUID. Сервер приложений использует его для обслуживания сеанса.| 
 |`width`|Предпочтительная ширина всплывающего окна. Значение можно игнорировать, если он находится за пределами допустимых границ.|
 
-Дополнительные сведения о параметрах см. в [интерфейсе параметров проверки подлинности](/javascript/api/@microsoft/teams-js/microsoftteams.authentication.authenticateparameters?view=msteams-client-js-latest&preserve-view=true).
+Дополнительные сведения о параметрах см. в описании функции [authenticate(AuthenticatePopUpParameters](/javascript/api/@microsoft/teams-js/authentication#@microsoft-teams-js-authentication-authenticate) ).
 
 ## <a name="add-authentication-to-external-browsers"></a>Добавление проверки подлинности во внешние браузеры
 
@@ -50,13 +50,14 @@ function authenticate(authenticateParameters?: AuthenticateParameters)
 
 1. 1. Инициация внешнего процесса аутентификации.
 
-   Стороннее приложение вызывает функцию SDK `microsoftTeams.authentication.authenticate` со значение true для `isExternal` для инициации внешнего процесса аутентификации. 
+   Стороннее приложение вызывает функцию SDK `authentication.authenticate` со значение true для `isExternal` для инициации внешнего процесса аутентификации.
 
    Переданное значение `url` содержит заполнители для `{authId}` и `{oauthRedirectMethod}`.  
 
 
     ```JavaScript
-    microsoftTeams.authentication.authenticate({
+    import { authentication } from "@microsoft/teams-js";
+    authentication.authenticate({
        url: 'https://3p.app.server/auth?oauthRedirectMethod={oauthRedirectMethod}&authId={authId}',
        isExternal: true,
        successCallback: function (result) {
@@ -69,7 +70,7 @@ function authenticate(authenticateParameters?: AuthenticateParameters)
 
 2. 2. Ссылка Teams во внешнем браузере.
 
-   Клиенты Teams открывают URL-адрес во внешнем браузере после замены `oauthRedirectMethod` и `authId` подходящими значениями. 
+   Клиенты Teams открывают URL-адрес во внешнем браузере после замены `oauthRedirectMethod` и `authId` подходящими значениями.
 
    #### <a name="example"></a>Пример
 
@@ -87,11 +88,11 @@ function authenticate(authenticateParameters?: AuthenticateParameters)
    |`authId` | ИД запроса request-id, созданный Teams для этого конкретного запроса на проверку подлинности, который необходимо отправить обратно в Teams с помощью deeplink.|
 
     > [!TIP]
-    > Стороннее приложение может маршалировать `authId`, `oauthRedirectMethod` в параметре запроса OAuth `state` при создании URL-адреса входа для OAuthProvider. Параметр `state` содержит переданные `authId` и `oauthRedirectMethod`, когда OAuthProvider перенаправляет обратно на сторонний сервер, а стороннее приложение использует значения для отправки ответа на проверку подлинности обратно в Teams, как описано в **6. Ответ сервера стороннего приложения на запрос Teams**. 
+    > Стороннее приложение может маршалировать `authId`, `oauthRedirectMethod` в параметре запроса OAuth `state` при создании URL-адреса входа для OAuthProvider. Параметр `state` содержит переданные `authId` и `oauthRedirectMethod`, когда OAuthProvider перенаправляет обратно на сторонний сервер, а стороннее приложение использует значения для отправки ответа на проверку подлинности обратно в Teams, как описано в **6. Ответ сервера стороннего приложения на запрос Teams**.
 
 4. 4. Перенаправление сервера стороннего приложения на указанный `url`.
 
-   Сервер стороннего приложения перенаправляет на страницу аутентификации поставщиков OAuth во внешнем браузере. `redirect_uri` является выделенным маршрутом на сервере стороннего приложения. Вы можете зарегистрировать `redirect_uri` в консоли разработчика поставщиков OAuth как статический, параметры должны быть отправлены через объект state. 
+   Сервер стороннего приложения перенаправляет на страницу аутентификации поставщиков OAuth во внешнем браузере. `redirect_uri` является выделенным маршрутом на сервере стороннего приложения. Вы можете зарегистрировать `redirect_uri` в консоли разработчика поставщиков OAuth как статический, параметры должны быть отправлены через объект state.
 
    #### <a name="example"></a>Пример
 

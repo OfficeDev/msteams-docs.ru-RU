@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 1110d195be91c73f9e0f60f15a94f2cdbdfa083b
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
+ms.openlocfilehash: 93e87648dc64a7b5b005b4a6162828e573bb034b
+ms.sourcegitcommit: 5c12af6a379c7cace409fda94677ea0334d7a3dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919776"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67337238"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -246,6 +246,7 @@ ms.locfileid: "66919776"
 | Список дел | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает только в Teams (используйте этот пример приложения, чтобы опробовать процесс обновления, описанный в этом руководстве). | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend)  |
 | Список дел (Microsoft 365) | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend-M365)|
 | Редактор изображений (Microsoft 365) | Создание, изменение, открытие и сохранение изображений с помощью Microsoft API Graph. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/m365-extensibility-image-editor) |
+| Пример страницы запуска (Microsoft 365) | Демонстрация проверки подлинности единого входа и использование возможностей пакета SDK teamsJS, доступных на разных узлах. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/microsoft-teams-library-js/tree/main/apps/sample-app) |
 
 ## <a name="next-step"></a>Следующий этап
 

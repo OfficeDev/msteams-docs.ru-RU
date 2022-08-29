@@ -1,17 +1,17 @@
 ---
 title: Проектирование расширения собрания
 author: heath-hamilton
-description: Узнайте, как проектировать расширения собраний для приложений в собраниях Teams. Используйте шаблоны пользовательского интерфейса в комплекте пользовательского интерфейса Microsoft Teams, чтобы спроектировать вкладку собрания.
+description: Узнайте, как реализовать рекомендации по проектированию и использовать шаблоны пользовательского интерфейса для разработки расширения собраний для Teams.
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 04/07/2022
-ms.openlocfilehash: d9cdf301d6b1fb53813e9db42114d2ff24411e8c
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: d0d994a7966f3ee172b29e6f9a6f1d4d4a2edff0
+ms.sourcegitcommit: 2d2a08f671c3d19381403ba1af5dff1f06bb4dd6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842040"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "67338853"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Разработка расширения для собраний Microsoft Teams
 
@@ -81,7 +81,7 @@ ms.locfileid: "66842040"
 
 ### <a name="use-cases"></a>Варианты использования
 
-Пользователи могут использовать вкладку "Собрание", чтобы:
+Люди использовать вкладку "Собрание", чтобы:
 
 * Предоставьте подробные отзывы. Например, оцените кандидата на должность.
 * Создайте опрос, опрос или элемент задачи для участников собрания.

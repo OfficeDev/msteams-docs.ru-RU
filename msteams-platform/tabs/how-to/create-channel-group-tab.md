@@ -1,21 +1,23 @@
 ---
 title: Создание вкладки канала
 author: laujan
-description: В этом модуле вы узнаете, как создать вкладку канала и группы с помощью генератора Yeoman для Microsoft Teams, включая просмотр исходного кода с примерами кода.
-ms.localizationpriority: medium
+description: Создайте настраиваемый канал, вкладку группы с Node.js, ASP.NET Core, ASP.NET Core MVC. Создание приложения, создание пакета, сборка и запуск приложения, секретный туннель, отправка в Teams
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: cc1145bd3c3ea6c12aad4231cceb9a8cd2a24488
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: 1b668a0e89ba2f2c77a56623d25ed11c1caaf7ea
+ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841710"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450473"
 ---
 # <a name="create-a-channel-tab"></a>Создание вкладки канала
 
 Вкладки каналов или групп позволяют добавлять нужный контент на каналы и в групповые чаты. Это отличный способ создать пространство для совместной работы над определенным веб-контентом.
+
+Убедитесь, что у вас есть все [необходимые](~/tabs/how-to/tab-requirements.md) компоненты для создания вкладки канала или группы.
 
 [!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
@@ -212,12 +214,12 @@ gulp ngrok-serve
     >"composeExtensions": [],
     >```
 
-1. Следуйте указаниям для добавления вкладки. Для вкладки канала или группы есть диалоговое окно настраиваемой конфигурации.
+1. Следуйте указаниям по добавлению вкладки. Для вкладки канала или группы имеется диалоговое окно настраиваемой конфигурации.
 1. Выберите **Сохранить** и вкладка будет добавлена на панель вкладок канала.
 
     :::image type="content" source="~/assets/images/tab-images/channeltabuploaded.png" alt-text="Вкладка канала загружена":::
 
-    Вы успешно создали и добавили вкладку канала или группы в Teams.
+    Теперь вы успешно создали и добавили вкладку канала или группы в Teams.
 
 ::: zone-end
 
@@ -440,7 +442,7 @@ ngrok http 3978 --host-header=localhost
 
     :::image type="content" source="~/assets/images/tab-images/channeltabaspnetuploaded.png" alt-text="Загруженная вкладка канала ASPNET":::
 
-    Вы успешно создали и добавили вкладку канала или группы в Teams.
+    Теперь вы успешно создали и добавили вкладку канала или группы в Teams.
 
 ::: zone-end
 
@@ -661,7 +663,7 @@ ngrok http 3978 --host-header=localhost
 
     :::image type="content" source="~/assets/images/tab-images/channeltabaspnetuploaded.png" alt-text="Загруженная вкладка канала ASPNET MVC":::
 
-    Вы успешно создали и добавили вкладку канала или группы в Teams.
+    Теперь вы успешно создали и добавили вкладку канала или группы в Teams.
 
 ::: zone-end
 
