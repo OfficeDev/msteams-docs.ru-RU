@@ -4,12 +4,12 @@ author: laujan
 description: В этом модуле вы узнаете, как использовать соединители Office 365, а также создавать и отправлять сообщения с действиями в Microsoft Teams
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 1d52760784e3d0bbbd1e4a87c576294530242629
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
-ms.translationtype: HT
+ms.openlocfilehash: 6e50877f1afbebe1e132c6461fbae30445227f43
+ms.sourcegitcommit: 5c12af6a379c7cace409fda94677ea0334d7a3dd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66190106"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67337217"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -256,7 +256,7 @@ ms.locfileid: "66190106"
 | 30   | 60  |  
 | 3600   | 100  |
 | 7200 | 150  |
-| 86 400  | 1800  |
+| 86400  | 1800  |
 
 [Логика повторных попыток с экспоненциальной задержкой](/azure/architecture/patterns/retry) поможет избежать ограничения скорости в тех случаях, когда число запросов за секунду превышает пределы. Следуйте [рекомендациям](../../bots/how-to/rate-limit.md), чтобы не достичь ограничений скорости.
 
@@ -289,3 +289,5 @@ try
 * [Ограничение скорости трафика для сообщений ботов Teams](~/bots/how-to/rate-limit.md)
 * [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
 * [Форматирование карточек в Microsoft Teams](~/task-modules-and-cards/cards/cards-format.md)
+* [Создание бота уведомлений с помощью JavaScript](../../sbs-gs-notificationbot.yml)
+* [Создание первого приложения бота с помощью JavaScript](../../sbs-gs-bot.yml)

@@ -1,20 +1,23 @@
 ---
 title: Боты в Microsoft Teams
 author: surbhigupta
-description: С помощью этой схемы обучения вы начнете работу с ботами для бесед в Microsoft Teams и соответствующими примерами кода.
+description: В этой статье вы можете использовать чат-боты в Microsoft Teams для совместного использования файлов, отправки упреждающего уведомления, интерактивных карточек, выполнения звонков, вызова команды бота, IVR.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: f04f41ac100f243f7560f63364475cd877cf7bf3
-ms.sourcegitcommit: eb480bf056a46837d18b4ea35e465486cc68f981
-ms.translationtype: HT
+ms.openlocfilehash: 90176b63c64d23ae76a8c98515e37455ab0742c0
+ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912263"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67363508"
 ---
 # <a name="build-bots-for-teams"></a>Создание ботов для Teams
 
-Бот также называется чат-ботом или ботом для общения. Это приложение, которое выполняет простые и повторяющиеся задачи пользователей, например, в службах обслуживания или поддержки клиентов. В быту используются боты, которые сообщают сведения о погоде, бронируют рестораны или предоставляют сведения для путешествий. Взаимодействие с ботами может быть в виде быстрых вопросов и ответов или сложных бесед.
+> [!NOTE]
+> Рекомендуется создать свое первое приложение бота или приложение бота уведомлений с помощью средства разработки нового поколения для Teams. Дополнительные сведения см. в [разделе "Набор средств Teams для Visual Studio Code](../toolkit/teams-toolkit-fundamentals.md) [и Набор средств Teams для Visual Studio"](../toolkit/teams-toolkit-overview-visual-studio.md).
+
+Бот также называется чат-ботом или ботом для общения. Это приложение, которое выполняет простые и повторяющиеся задачи пользователей, например в службах обслуживания или поддержки клиентов. В быту используются боты, которые сообщают сведения о погоде, бронируют рестораны или предоставляют сведения для путешествий. Взаимодействие с ботами может быть в виде быстрых вопросов и ответов или сложных бесед.
 
 > [!IMPORTANT]
 >
@@ -26,17 +29,17 @@ ms.locfileid: "66912263"
 
 Боты для общения позволяют пользователям взаимодействовать с веб-службой с помощью текста, интерактивных карточек и модулей задач.
 
-:::image type="content" source="../assets/images/invokebotwithtext.png" alt-text="Веб-служба с использованием текста"lightbox="../assets/images/invokebotwithtext.png":::
+:::image type="content" source="../assets/images/invokebotwithtext.png" alt-text="На снимке экрана показан пример веб-службы с текстом."lightbox="../assets/images/invokebotwithtext.png":::
 
-:::image type="content" source="../assets/images/invokebotwithcard.png" alt-text="веб-служба с использованием интерактивных карточек"lightbox="../assets/images/invokebotwithcard.png"border="true":::
+:::image type="content" source="../assets/images/invokebotwithcard.png" alt-text="На снимке экрана показан пример веб-службы с интерактивными карточками."lightbox="../assets/images/invokebotwithcard.png"border="true":::
 
-:::image type="content" source="../assets/images/task-module-example.png" alt-text="веб-служба с использованием модуля задач"lightbox="../assets/images/task-module-example.png"border="true":::
+:::image type="content" source="../assets/images/task-module-example.png" alt-text="На снимке экрана показан пример веб-службы, использующей модуль задач." lightbox="../assets/images/task-module-example-expanded.png":::
 
 Боты для общения чрезвычайно гибкие. Боты могут обрабатывать несколько основных команд или сложных задач, которые включают искусственный интеллект и обработку естественного языка. Боты могут быть частью большего приложения или быть автономными.
 
 Используйте правильное сочетание карточек, текста и модулей задач для создания полезного бота. На следующем изображении показано, как пользователь общается с ботом в личном чате с помощью текста и интерактивных карточек.
 
-:::image type="content" source="~/assets/images/FAQPlusEndUser.gif" alt-text="Пример вопросов и ответов бота":::
+:::image type="content" source="~/assets/images/FAQPlusEndUser.gif" alt-text="На снимке экрана показан пример бота часто задаваемых вопросов.":::
 
 Каждое взаимодействие между пользователем и ботом представлено как действие. Когда бот получает действие, он передает его обработчикам действий. См. статью об [обработчиках действий ботов](~/bots/bot-basics.md).
 
@@ -65,6 +68,9 @@ ms.locfileid: "66912263"
 |Название примера | Описание | C# | Node.js |
 |----------------|-----------------|--------------|--------------|
 | Напоминание о ежедневной задаче бота| Демонстрация создания графика повторяющейся задачи и получения напоминания в запланированное время. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-daily-task-reminder/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-daily-task-reminder/nodejs) |
+| Hello World Bot | Это простое приложение Hello World с возможностями расширения Bot и Message. |  | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/v1.0.0/hello-world-bot) |
+| Уведомление адаптивной карточки | Это пример, в котором показано, как отправлять уведомления с помощью различных адаптивных карточек с помощью ботов. |  | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/v1.0.0/adaptive-card-notification) |
+| Входящее уведомление веб-перехватчика | В этом примере показано, как отправлять уведомления через входящий веб-перехватчик в каналах Microsoft Teams. |  | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/v1.0.0/incoming-webhook-notification) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
@@ -74,3 +80,5 @@ ms.locfileid: "66912263"
 * [Добавление проверки подлинности для бота Teams](~/bots/how-to/authentication/add-authentication.md)
 * [Обработчики действий ботов](~/bots/bot-basics.md)
 * [События бесед в вашем боте Teams](~/bots/how-to/conversations/subscribe-to-conversation-events.md)
+* [Создание первого приложения бота с помощью JavaScript](../sbs-gs-bot.yml)
+* [Создание бота уведомлений с помощью JavaScript](../sbs-gs-notificationbot.yml)

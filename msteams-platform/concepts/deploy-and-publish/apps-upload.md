@@ -5,12 +5,12 @@ ms.topic: how-to
 author: surbhigupta
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 96b80409697c9347fac82138d0e929c5c874725a
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
-ms.translationtype: HT
+ms.openlocfilehash: 702f8c6c53038fcedbd30a34262f2ed49eb03752
+ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558102"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67363454"
 ---
 # <a name="upload-your-app-in-teams"></a>Отправка приложения в Microsoft Teams
 
@@ -24,7 +24,9 @@ ms.locfileid: "66558102"
 > При многократной загрузке неопубликованного приложения отображается несколько экземпляров расширений для сообщений.
 
 > [!IMPORTANT]
-> В настоящее время загрузка неопубликованного приложения доступна в облаке сообщества для государственных организаций (GCC), но недоступны для GCC-High и Министерства обороны (DOD).
+>
+> * В настоящее время загрузка неопубликованных приложений возможна только в облаке сообщества для государственных организаций (GCC) и не поддерживается в GCC-High и Министерства обороны США (DOD).
+> * Установка приложения поддерживается только в классических приложениях Teams.
 
 ## <a name="prerequisites"></a>Предварительные условия
 

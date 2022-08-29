@@ -5,19 +5,19 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 5c826e3f8b041f1ef136fc8e7941c74ac35e7773
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
-ms.translationtype: HT
+ms.openlocfilehash: ade5d5f30261cfd77140ab3cc9332bba15c76be8
+ms.sourcegitcommit: 5c12af6a379c7cace409fda94677ea0334d7a3dd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66659029"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67337140"
 ---
 # <a name="create-incoming-webhooks"></a>Создание входящих веб-перехватчиков
 
 Входящий веб-перехватчик позволяет внешним приложениям делиться содержимым в каналах Microsoft Teams. Веб-перехватчики используются в качестве инструментов для отслеживания и уведомления. Веб-перехватчики предоставляют уникальный URL-адрес для отправки полезных данных JSON с сообщением в формате карточки. Карточки — это контейнеры пользовательского интерфейса, которые включают содержимое и действия на одну тему. Вы можете использовать карточки в следующих функциях:
 
 * боты;
-* Расширения для сообщений
+* Расширения для обмена сообщениями
 * Connectors
 
 Посмотрите следующее видео, чтобы узнать, как создавать входящие веб-перехватчики:
@@ -107,3 +107,5 @@ ms.locfileid: "66659029"
 * [Поделиться в Teams из веб-приложений](~/concepts/build-and-test/share-to-teams-from-web-apps.md)
 * [Интеграция веб-приложений](~/samples/integrate-web-apps-overview.md)
 * [Безопасный доступ и данные в Azure Logic Apps](/azure/logic-apps/logic-apps-securing-a-logic-app)
+* [Создание бота уведомлений с помощью JavaScript](../../sbs-gs-notificationbot.yml)
+* [Создание первого приложения бота с помощью JavaScript](../../sbs-gs-bot.yml)
