@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.custom: m365apps
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: 49c2b2e6ce8f173fcbc106f1cec8e0bb6d3bcb7b
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
-ms.translationtype: HT
+ms.openlocfilehash: 965c9d8b7b05141aa6add18bba51512bd9e0a213
+ms.sourcegitcommit: b13361f342c76d637321df21d2ef900471bf0eef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919741"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "67457293"
 ---
 # <a name="set-up-your-dev-environment-for-extending-teams-apps-across-microsoft-365"></a>Настройте среду разработки для расширения приложений Teams в Microsoft 365.
 
@@ -32,15 +32,25 @@ ms.locfileid: "66919741"
 
 Вам также потребуется включить загрузку неопубликованных приложений для вашего клиента:
 
-1. Войдите в Центр администрирования Microsoft 365 (https://admin.microsoft.com)) с помощью учетных данных тестового клиента и выберите **Teams** на боковой панели, чтобы открыть *Центр администрирования Microsoft Teams*
-1. Выберите: Приложения Teams > Управление приложениями > **Параметры приложений для всей организации**
-1. В разделе **Пользовательские приложения** включите параметр *Взаимодействие с пользовательскими приложениями*
+ 1. Войдите в [Центр администрирования Teams,](https://admin.teams.microsoft.com/dashboard) используя учетные данные тестового клиента.
 
-    :::image type="content" source="images/teams-admin-enable-sideloading.png" alt-text="Включить загрузку неопубликованных приложений для пользовательских приложений из центра администрирования Teams":::
+ 1. Перейдите к **приложениям Teams Для** > **управления приложениями**.
+
+ 1. В правом верхнем углу выберите **параметры приложения для всей организации**.
+
+ 1. В разделе "Пользовательские приложения" включите переключатель **"** Взаимодействие с пользовательским приложением" и сохраните его.
+
+    :::image type="content" source="images/teams-admin-enable-sideloading.png" alt-text="Снимок экрана— пример, в котором включена загрузка неопубликованных приложений из Центра Администратор Teams":::
+
+ 1. Помимо параметров приложения для всей организации, пользовательские параметры политики приложений также позволяют пользователям отправлять пользовательские приложения в Teams. Дополнительные сведения см. [в статье об управлении настраиваемыми политиками и параметрами приложений](/microsoftteams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings).
+
+ 1. В Центре администрирования Teams перейдите к политикам установки приложений **Teams** > **, а** затем выберите глобальную **(по умолчанию для всей организации) политику**.
+
+ 1. Включите **отправку пользовательских приложений** и нажмите кнопку **"Сохранить"**.
 
 ## <a name="enroll-your-developer-tenant-for-office-365-targeted-releases"></a>Зарегистрируйте клиент разработчика для целевых выпусков Office 365.
 
-> [!Important]
+> [!IMPORTANT]
 > Может потребоваться до пяти дней после создания [клиента песочницы разработчика Microsoft 365](/office/developer-program/microsoft-365-developer-program-get-started) и регистрации в [целевых выпусках Office 365](#enroll-your-developer-tenant-for-office-365-targeted-releases), чтобы загруженные неопубликованные приложения Teams отобразились в Outlook и Office.
 
 Чтобы зарегистрировать тестовый клиент для целевых выпусков Office 365:
