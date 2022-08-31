@@ -3,19 +3,21 @@ title: Поддержка единого входа для ботов
 description: Узнайте, как получить маркер пользователя и разработчик бота может использовать карточку входа или службу azure bot с поддержкой карты OAuth.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: ea0c7efff7c5d31097226cd689d8988d5ef51694
-ms.sourcegitcommit: 4d1740b235000d51711a9170ac0f026c63c945ac
+ms.openlocfilehash: 46f9ee905f470563fb2a402f9addabfcf09601b6
+ms.sourcegitcommit: 36c6a5ba1dcd27a15ba31f479e534eab69aa17e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2022
-ms.locfileid: "66611501"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67465381"
 ---
 # <a name="use-sso-authentication-for-bots"></a>Использование проверки подлинности единого входа для ботов
 
 Проверка подлинности единого входа в Microsoft Azure Active Directory (Azure AD) автоматически обновляет маркер проверки подлинности, чтобы свести к минимуму количество раз, когда пользователям необходимо вводить учетные данные для входа. Если пользователь соглашается использовать ваше приложение, ему не придется повторно давать согласие на другом устройстве, поскольку вход будет выполнен автоматически. Вкладки и боты имеют аналогичный поток для поддержки единого входа. Но бот [запрашивает маркеры](#request-a-bot-token) [и получает ответы](#receive-the-bot-token) по другому протоколу.
 
 >[!NOTE]
-> OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory (Azure AD) и многими другими поставщиками удостоверений. Для работы с проверкой подлинности в Microsoft Teams. необходимо базовое понимание механизма OAuth 2.0.
+> * OAuth 2.0 — это открытый стандарт проверки подлинности и авторизации, используемый Azure Active Directory (Azure AD) и многими другими поставщиками удостоверений. Для работы с проверкой подлинности в Microsoft Teams. необходимо базовое понимание механизма OAuth 2.0.
+>
+> * Единый вход бота поддерживается только в чате "один к одному".
 
 См. следующее видео, чтобы узнать о поддержке единого входа для ботов:
 <br>
@@ -385,7 +387,7 @@ ms.locfileid: "66611501"
 
 |**Название примера** | **Описание** |**.NET** |**C#** |**Node.js** |
 |----------------|-----------------|--------------|--------------|--------------|
-|Bot Framework SDK | В этом примере кода показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
+|Bot Framework SDK | В этом примере кода показано, как начать работу с проверкой подлинности в боте для Microsoft Teams. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/csharp_dotnetcore/BotConversationSsoQuickstart)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
