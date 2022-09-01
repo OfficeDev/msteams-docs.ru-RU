@@ -4,12 +4,12 @@ description: Узнайте, как отправлять упреждающие 
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 964dd5bf33ab527ea1dcf5307e7d9ae94a29d9ec
-ms.sourcegitcommit: d3eb976f5883c1f019083b516289537ff8263cad
+ms.openlocfilehash: 41c7d1ecd4c57bda98bb72dd66546df21fe74754
+ms.sourcegitcommit: 024be23411bc0f2573d19f48f9266021f9b76f0d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67442986"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67488266"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -50,9 +50,9 @@ ms.locfileid: "67442986"
 
 * При установке приложения в определенном контексте вы получаете [`onMembersAdded` действие](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
 * При добавлении нового пользователя в контекст, в котором установлено приложение, вы получаете [`onMembersAdded` действие](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
+* Каждое событие, которое получает бот, содержит необходимые сведения, которые можно получить из контекста бота (объект TurnContext).
 * Вы можете получить [список каналов](~/bots/how-to/get-teams-context.md) в команде, где установлено приложение.
 * Вы можете получить [список участников](~/bots/how-to/get-teams-context.md) команды, где установлено приложение.
-* Все действия, получаемые ботом, должны содержать требуемую информацию.
 
 Независимо от того, как вы получаете сведения, `tenantId` сохраните беседу `userId` `channelId` или создайте ее. Вы также можете использовать `teamId`, чтобы создать новую беседу в общем или стандартном канале команды.
 
@@ -346,3 +346,4 @@ POST /v3/conversations
 * [Отправка упреждающих уведомлений пользователям](/azure/bot-service/bot-builder-howto-proactive-message)
 * [Создание первого приложения бота с помощью JavaScript](../../../sbs-gs-bot.yml)
 * [Создание бота уведомлений с помощью JavaScript для отправки упреждающего сообщения](../../../sbs-gs-notificationbot.yml)
+* [TurnContext](/javascript/api/botbuilder-core/turncontext?view=botbuilder-ts-latest"&preserve-view=true")

@@ -1,18 +1,18 @@
 ---
 title: DevTools для вкладок Microsoft Teams
-description: В этом модуле вы узнаете, как получить доступ к средствам разработки при использовании Microsoft Teams и отладки.
+description: В этом модуле вы узнаете, как получить доступ к средствам разработки при использовании настольного клиента Microsoft Teams и отладке
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: de502588d6c1d4e11d7f68e2fff1c7e591d2918d
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: a0d5e3ea15fd796c2c426f1cf1457171f0abe7b2
+ms.sourcegitcommit: 024be23411bc0f2573d19f48f9266021f9b76f0d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143013"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67488273"
 ---
 # <a name="devtools-for-microsoft-teams-tabs"></a>DevTools для вкладок Microsoft Teams
 
-Если Teams в браузере, вы можете легко получить доступ к средствам разработчика браузера: F12 в Windows или Command-Option-I в MacOS. DevTools предоставляет вам доступ к:
+Когда Teams работает в браузере, можно легко получить доступ к средствам разработчика браузера: F12 в Windows или Command-Option-I в MacOS. DevTools предоставляет вам доступ к:
 
 1. Просмотр журналов консоли.
 1. Просмотр или изменение HTML, CSS и сетевых запросов во время выполнения.
@@ -50,3 +50,7 @@ ms.locfileid: "66143013"
 1. Выберите **Проверить** на вкладке, которую вы хотите отладить, как на следующем изображении:
 
    ![DevTools для Android ](~/assets/images/android-devtools.png)
+
+## <a name="see-also"></a>См. также
+
+[Очистка кэша клиента Teams](/microsoftteams/troubleshoot/teams-administration/clear-teams-cache)
