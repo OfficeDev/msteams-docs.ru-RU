@@ -1,14 +1,14 @@
 ---
 title: Автоматическая проверка подлинности
-description: В этом модуле вы узнаете, как выполнять автоматическую проверку подлинности, единый вход и Azure AD для вкладок и как это работает.
+description: Настройте приложение табуляции с Azure AD для вкладок и принципов его работы.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 048e92c0709541b6a044249fb35ab016b372fabc
-ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
+ms.openlocfilehash: ef80c44e38e32666f68b13e42e1f815a4c351353
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67435043"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586779"
 ---
 # <a name="use-silent-authentication-in-azure-ad"></a>Использование автоматической проверки подлинности в Azure AD
 

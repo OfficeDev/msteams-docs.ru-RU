@@ -1,14 +1,14 @@
 ---
 title: Поток проверки подлинности Microsoft Teams для ботов
-description: В этом модуле вы узнаете, как выполнить поток проверки подлинности для ботов в Microsoft Teams примере кода.
+description: Включите проверку подлинности для приложения-бота Microsoft Teams с помощью стороннего поставщика OAuth с помощью примеров кода.
 ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: de263a75b7b8077570dca2f94bf6937d9d339bbe
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 67668f11fafcc8eff878d82913f002ed8c2f96bc
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143237"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67587017"
 ---
 # <a name="authentication-flow-for-bots-in-microsoft-teams"></a>Поток проверки подлинности для ботов в Microsoft Teams
 
@@ -54,7 +54,7 @@ OAuth 2.0 — это открытый стандарт проверки подл
 | **Название примера** | **Описание** | **Node.js** | **.NET** | **Python** |
 |-----------------|----------------|--------------|----------|-----------|
 | Проверка подлинности Teams | Этот пример иллюстрирует проверку подлинности в приложениях Microsoft Teams. | [View](https://github.com/OfficeDev/microsoft-teams-sample-auth-node) | | |
-| Проверка подлинности бота | В этом примере показано, как использовать проверку подлинности для бота, запущенного в Microsoft Teams | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth)
+| Проверка подлинности бота | В этом примере показано, как использовать проверку подлинности для бота, запущенного в Microsoft Teams | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth)
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

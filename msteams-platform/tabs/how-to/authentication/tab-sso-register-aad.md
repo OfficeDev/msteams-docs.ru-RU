@@ -1,15 +1,15 @@
 ---
 title: Регистрация приложения вкладки в Azure AD.
-description: Описывает регистрацию приложения вкладки в Azure AD.
+description: Настройте единый вход (SSO) с Azure AD, настроив URI идентификатора приложения, область для маркера доступа и предварительно авторизовать доверенные клиенты.
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: Вкладки проверки подлинности Teams Маркер доступа Microsoft Azure Active Directory (Azure AD) Область действия единого входа
-ms.openlocfilehash: 60d3ce73d92a75a5520dbbc096ba140fb1daa174
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
-ms.translationtype: HT
+ms.openlocfilehash: 1387b1f426e433ea98bc950c932f271785fa5dd4
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658998"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586800"
 ---
 # <a name="register-your-tab-app-in-azure-ad"></a>Регистрация приложения вкладки в Azure AD
 

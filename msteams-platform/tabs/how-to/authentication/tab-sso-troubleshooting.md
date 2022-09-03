@@ -1,15 +1,15 @@
 ---
 title: Устранение неполадок проверки подлинности для вкладок с использованием единого входа в Teams
-description: Устранение неполадок проверки подлинности с единым входом в Teams и способ ее использования на вкладках
+description: Устранение неполадок с проверкой подлинности единого входа (SSO) в Teams и ее использование в приложении tab.
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: вкладки проверка подлинности Teams Microsoft Azure Active Directory (Azure AD) единый вход ошибки вопросы
-ms.openlocfilehash: fa17ffef08f85124a230f76419158f4216f55416
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
-ms.translationtype: HT
+ms.openlocfilehash: 8396b42c217ea58a0a4709e1dbd8580da32da991
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658954"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586898"
 ---
 # <a name="troubleshoot-sso-authentication-in-teams"></a>Устранение неполадок проверки подлинности для единого входа в Teams
 

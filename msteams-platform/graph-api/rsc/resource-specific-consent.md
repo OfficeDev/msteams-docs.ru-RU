@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 8501cab5db2017d120ef72f61e43691104df7fa1
-ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
+ms.openlocfilehash: 7321c3dbf1f2a3493a1d457cfd80d7fc1efb01d6
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695316"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586709"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -107,7 +107,7 @@ ms.locfileid: "66695316"
 
    ![Конфигурация команды RSC Graph](../../assets/images/rsc/graph-rsc-chat-configuration.png)
 
->  Значение свойства по умолчанию **—ChatResourceSpecificConsentEnabled** зависит от того, включены или отключены параметры согласия пользователя в клиенте при первом использовании RSC для чатов.[](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) Это может быть первый раз, когда a) получение [**teamsAppSettings**](/graph/api/teamsappsettings-get) или б) установка приложения Teams с разрешениями для конкретных ресурсов в чате или собрании.
+> Значение свойства по умолчанию **—ChatResourceSpecificConsentEnabled** зависит от того, включены или отключены параметры согласия пользователя в клиенте при первом использовании RSC для чатов.[](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal) Это может быть первый раз, когда a) получение [**teamsAppSettings**](/graph/api/teamsappsettings-get) или б) установка приложения Teams с разрешениями для конкретных ресурсов в чате или собрании.
 
 ## <a name="register-your-app-with-microsoft-identity-platform-using-the-azure-ad-portal"></a>Зарегистрируйте приложение на платформе Microsoft Identity с помощью портала Azure AD.
 

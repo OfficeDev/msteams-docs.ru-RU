@@ -1,15 +1,15 @@
 ---
 title: Конфигурация кода для включения единого входа для вкладок
-description: Описывает конфигурацию кода для включения единого входа для вкладок.
+description: Обновите код в приложении на вкладке для запроса и получения маркера доступа с помощью удостоверения Пользователя приложения Teams для включения единого входа .
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: вкладки проверки подлинности команд Microsoft Azure Active Directory (Azure AD) API Graph
-ms.openlocfilehash: 466da3cbd879ed2546adcad87f6f55620d54256d
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
-ms.translationtype: HT
+ms.openlocfilehash: 71c532b62b53ea0efb11da72c30d7e9d32804897
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658935"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586786"
 ---
 # <a name="add-code-to-enable-sso"></a>Добавление кода для включения единого входа
 
@@ -199,7 +199,7 @@ $.ajax({
 | Название примера | Описание | C#/.NET| Node.js |
 |---------------|---------------|------|--------------|
 | Единый вход на вкладке |Пример приложения Microsoft Teams для единого входа на вкладках Azure AD| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-sso/csharp)|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/tab-sso/nodejs), </br>[Набор средств Teams](../../../toolkit/visual-studio-code-tab-sso.md)|
-| Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показана система единого входа для Tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) |
+| Вкладка, бот и расширение сообщений (ME) SSO | В этом примере показана система единого входа для Tab, Bot и ME — поиск, действие, linkunfurl. |  [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/app-sso/nodejs) |
 
 ## <a name="next-step"></a>Следующий этап
 

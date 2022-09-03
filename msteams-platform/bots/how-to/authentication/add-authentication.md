@@ -1,16 +1,16 @@
 ---
 title: Добавление проверки подлинности для бота Teams
 author: surbhigupta
-description: Узнайте, как добавить проверку подлинности OAuth в бот в Teams с помощью Azure Active Directory. Узнайте, как создавать, развертывать и интегрировать боты с поддержкой проверки подлинности.
+description: Узнайте, как включить проверку подлинности с помощью стороннего поставщика OAuth в бот-приложении в Teams с помощью Azure AD.
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: 6cfd765ba467d2c8b03ae4f86b4ab8727c21b9b7
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
+ms.openlocfilehash: ed30f4600630b047ad410b88ed8e04e91989088c
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312151"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586856"
 ---
 # <a name="add-authentication-to-your-teams-bot"></a>Добавление проверки подлинности для бота Teams
 

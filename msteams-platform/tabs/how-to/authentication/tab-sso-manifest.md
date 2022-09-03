@@ -1,15 +1,15 @@
 ---
 title: Обновление манифеста для включения единого входа для вкладок
-description: Описывает обновление манифеста для включения единого входа для вкладок.
+description: Обновите манифест Teams для включения единого входа (SSO) для вкладок и перезагрузите его в клиент Teams для тестирования проверки подлинности единого входа.
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: вкладки проверки подлинности команд Microsoft Azure Active Directory (Azure AD) API Graph
-ms.openlocfilehash: c4e558debe5aff41ad8d6ce76ba952b6d607cd24
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
-ms.translationtype: HT
+ms.openlocfilehash: 1af4120914343b7fb2b37e6c2458ac43fcaa9d47
+ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658968"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67587003"
 ---
 # <a name="update-manifest-for-sso-and-preview-app"></a>Обновление манифеста для системы единого входа и предварительного просмотра приложения
 
