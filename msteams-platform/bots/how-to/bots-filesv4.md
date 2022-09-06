@@ -4,12 +4,12 @@ description: Узнайте, как отправлять и получать ф�
 ms.date: 05/20/2019
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 3fdf39c18743c991610c266a58e37e0109ffbf05
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 20dc421531864cf88f55932bc85ae7979f7992ff
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503881"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605049"
 ---
 # <a name="send-and-receive-files-using-bot"></a>Отправка и получение файлов с помощью бота
 
@@ -238,7 +238,7 @@ private static Attachment GetInlineAttachment()
 }
 ```
 
-### <a name="basic-example-in-c"></a>Базовый пример в C #
+### <a name="basic-example-in-c"></a>Основной пример в C# #
 
 В следующем коде показан пример обработки отправки файла и отправки запроса на согласие для файла в диалоговом окне бота:
 
@@ -322,7 +322,7 @@ private async Task SendFileCardAsync(ITurnContext turnContext, string filename, 
 
 |**Название примера** | **Описание** | **.NET** | **Javascript** | **Python**|
 |----------------|-----------------|--------------|----------------|-----------|
-| File upload | Показывает, как получить согласие для файла и отправить файлы в Teams из бота. Также показывает, как получить файл, отправленный в бот. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/56.teams-file-upload) |
+| File upload | Показывает, как получить согласие для файла и отправить файлы в Teams из бота. Также показывает, как получить файл, отправленный в бот. | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/56.teams-file-upload) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/56.teams-file-upload) | [View](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/56.teams-file-upload) |
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 

@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как определ
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 0b51d34aaacfe38c077b03b5df8bb6a9227c5b61
-ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.openlocfilehash: 45dbdabc744a58eb031c6e9a9f7415ecdf18cdcb
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67363461"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67604859"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
@@ -85,8 +85,6 @@ ms.locfileid: "67363461"
 ### <a name="create-an-action-command-using-developer-portal"></a>Создание команды действия с помощью портала разработчика
 
 Вы можете создать команду действия с помощью **портала разработчика**.
-
-# <a name="app-studio"></a>[App Studio](#tab/AS)
 
 > [!NOTE]
 > Предпосылкой для создания команды действия является уже созданное расширение для сообщений. Сведения о том, как создать расширение для сообщений, см. в разделе [Создание расширения для сообщений](~/messaging-extensions/how-to/create-messaging-extension.md).

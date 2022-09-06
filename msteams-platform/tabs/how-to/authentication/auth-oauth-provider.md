@@ -1,14 +1,14 @@
 ---
 title: Использование внешних поставщиков OAuth
-description: В этом модуле вы узнаете, как выполнять проверку подлинности с помощью внешних поставщиков OAuth и как добавить ее во внешний браузер
+description: Выполните проверку подлинности пользователей приложения с помощью внешних поставщиков OAuth и узнайте, как добавить его во внешний браузер.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 62f056fd852eda320a180fa61cf5693ef0105b8b
-ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
+ms.openlocfilehash: ca88471405fa06713261d56eaf94179c7896d8c4
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67435071"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605056"
 ---
 # <a name="use-external-oauth-providers"></a>Использование внешних поставщиков OAuth
 

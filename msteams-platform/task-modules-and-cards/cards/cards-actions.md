@@ -3,12 +3,12 @@ title: Добавление действий карточек в бот
 description: В этом модуле вы узнаете, что такое действия с карточками в Microsoft Teams, типы действий и как их использовать в ботах.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 84198e8a7ec5c0664ea9fcd2147b039fa5742b2c
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: 1c55470d068c2a7e0db5b90c0a0c09a2942316ce
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035305"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605014"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -37,7 +37,9 @@ ms.locfileid: "67035305"
 Тип действия `openUrl` указывает URL-адрес, который необходимо открыть в браузере по умолчанию.
 
 > [!NOTE]
-> Бот не получает уведомления о том, какая нажата кнопка.
+>
+> * Бот не получает уведомление о том, какая кнопка была выбрана.
+> * Имена компьютеров с номерами не поддерживаются в URL-адресе.
 
 С помощью `openUrl` вы можете создать действие со следующими свойствами:
 

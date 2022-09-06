@@ -1,15 +1,15 @@
 ---
 title: Расширение приложения вкладки с использованием разрешений Microsoft Graph
-description: Описание настройки разрешений API в Microsoft Graph
+description: Настройка дополнительных разрешений и областей с помощью Microsoft Graph для включения единого входа (SSO).
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: teams проверка подлинности вкладки Microsoft Azure Active Directory (Azure AD) API Graph делегированное разрешение маркер доступа область
-ms.openlocfilehash: 4ca708847144e72d80557943edcc163297c85c48
-ms.sourcegitcommit: 07f41abbeb1572a306a789485953c5588d65051e
-ms.translationtype: HT
+ms.openlocfilehash: 3232d1104a715b8c50f39b1e70d58fa18d970b7c
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66658992"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605091"
 ---
 # <a name="extend-tab-app-with-microsoft-graph-permissions-and-scope"></a>Расширение приложения вкладки с использованием разрешений и областей Microsoft Graph
 

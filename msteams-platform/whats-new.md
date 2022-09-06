@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: caff618c574fb550225dad729056e77a7fc53229
-ms.sourcegitcommit: d5628e0d50c3f471abd91c3a3c2f99783b087502
+ms.openlocfilehash: ecacc4edcad11f764d5916db2b1db9cca77bbb1c
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67435008"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605084"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -122,7 +122,7 @@ ms.locfileid: "67435008"
 |20.10.2021| API сведений о собраниях и событиях Teams в реальном времени | Создание приложений для собраний Teams > [API получения сведений о собрании](apps-in-teams-meetings/API-references.md#get-meeting-details-api) |
 |18.10.2021| Развертывание ссылок на вкладки и представление "Экран" | Создание вкладок > [Развертывание ссылок на вкладки и представление "Экран"](tabs/tabs-link-unfurling.md) |
 |08.10.2021| Новые советы и рекомендации по разработке адаптивных карточек | Разработка приложения > Компоненты пользовательского интерфейса > [Разработка адаптивных карточек для приложения Teams](task-modules-and-cards/cards/design-effective-cards.md) |
-|05.10.2021| Скрытие приложений Teams до тех пор, пока администратор не разрешит отобразить приложение | Разработка приложения > [Скрытие приложения Teams до утверждения администратором](concepts/design/enable-app-customization.md#hide-teams-app-until-admin-approves) |
+|05.10.2021| Скрытие приложений Teams до тех пор, пока администратор не разрешит отобразить приложение | Разработка приложения > [блокировать приложения по умолчанию для пользователей до тех пор, пока администратор не утвердит его.](concepts/design/enable-app-customization.md#block-apps-by-default-for-users-until-an-admin-approves) |
 |05.10.2021| Планирование приложений для мобильной версии Teams | Основы приложений > [Планирование адаптивных вкладок для мобильной версии Teams](concepts/design/plan-responsive-tabs-for-teams-mobile.md) |
 |04.10.2021| Представлен новый портал разработчика для Teams, предназначенный для управления приложениями Teams | Инструменты и SDK > [Портал разработчика Teams](concepts/build-and-test/teams-developer-portal.md) |
 |21.09.2021|Teams поддерживает идентификатор объекта Azure AD и имя субъекта-пользователя в упоминаниях пользователей для ботов и входящих веб-перехватчиков | • Создание карточек и модулей задач > Создание карточек > [Идентификатор объекта Azure AD и имя субъекта-пользователя в упоминаниях пользователей](task-modules-and-cards/what-are-cards.md#support-for-azure-ad-object-id-and-upn-in-user-mention) </br> • Создание карточек и модулей задач > Создание карточек > [Карточки — обзор](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown) |

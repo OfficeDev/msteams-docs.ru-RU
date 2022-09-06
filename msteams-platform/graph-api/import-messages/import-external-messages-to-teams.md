@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: akjo
 ms.author: lajanuar
 ms.topic: Overview
-ms.openlocfilehash: 3003f147d3861996fb17e3833144b6a6018f6550
-ms.sourcegitcommit: 024be23411bc0f2573d19f48f9266021f9b76f0d
+ms.openlocfilehash: 759fe9af0178af47c5f14b849269ab9ab444c35f
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67488259"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605035"
 ---
 # <a name="import-third-party-platform-messages-to-teams-using-microsoft-graph"></a>Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph
 
@@ -387,4 +387,5 @@ HTTP/1.1 204 No Content
 
 * [Интеграция Microsoft Graph и Teams](/graph/teams-concept-overview)
 * [Экспорт контента с помощью API экспорта Microsoft Teams](/microsoftteams/export-teams-content)
-* [Требования к лицензированию и оплате для API Microsoft Teams ](/graph/teams-licenses)
+* [Ограничения службы Microsoft Teams](/graph/throttling-limits#microsoft-teams-service-limits)
+* [Требования к лицензированию и оплате для Microsoft Teams API](/graph/teams-licenses)

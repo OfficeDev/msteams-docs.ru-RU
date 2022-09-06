@@ -3,12 +3,12 @@ title: Поделиться в Teams из личного приложения и
 description: Узнайте, как включить кнопку "Поделиться в Teams" на личном приложении или вкладке, ограничениях и интерфейсе конечного пользователя.
 ms.topic: reference
 ms.localizationpriority: medium
-ms.openlocfilehash: 5d70c8d399b4a065419341bc24763f7aa0f50af6
-ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
+ms.openlocfilehash: cd4de40fdb557300ad957df03f463a0879f44b0e
+ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67232199"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605063"
 ---
 # <a name="share-to-teams-from-personal-app-or-tab"></a>Поделиться в Teams из личного приложения или вкладки
 
@@ -98,9 +98,6 @@ microsoftTeams.sharing.shareWebContent({
 2. Добавьте другого пользователя, группу или канал, чтобы поделиться содержимым.
 
     :::image type="content" source="../../assets/images/share-to-teams/add-recepient.PNG" alt-text="add-recipient":::
-
-    > [!NOTE]
-    > Вы можете добавить примечание, чтобы **что-то сказать об этом**.
 
 3. Нажмите **Поделиться**.
 
