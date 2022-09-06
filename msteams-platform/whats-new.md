@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: ecacc4edcad11f764d5916db2b1db9cca77bbb1c
-ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
+ms.openlocfilehash: b13cc93e515c1b4daf08e3f218a7059e34615f0d
+ms.sourcegitcommit: 3baca27a93e5a68eaaa52810700076f08f4c88a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/06/2022
-ms.locfileid: "67605084"
+ms.locfileid: "67605784"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,7 @@ ms.locfileid: "67605084"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 09/06/2022 | `selectMedia` API для записи видео с помощью камеры | Интеграция возможностей устройств > [Интеграция возможностей мультимедиа](concepts/device-capabilities/media-capabilities.md#code-snippets) |
 | 09.08.2022 | Представлен набор средств Teams для Visual Studio 2022 | Инструменты и SDK > Набор средств Teams для Visual Studio > [Обзор набора средств Teams для Visual Studio](toolkit/teams-toolkit-overview-visual-studio.md) |
 | 03.08.2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 03.08.2022 | Добавлена функция для получения расшифровок прошедших собраний. | Создание приложений для собраний и звонков Teams > Получение расшифровки собраний с помощью API Graph > [Обзор](graph-api/meeting-transcripts/overview-transcripts.md) |

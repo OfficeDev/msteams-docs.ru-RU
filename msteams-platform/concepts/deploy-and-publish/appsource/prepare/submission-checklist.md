@@ -5,12 +5,12 @@ ms.topic: how-to
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: bc38c6ed067a0d3884307e109d3033784ca2d4e8
-ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.openlocfilehash: 9413469579d4d010c76ecfd42a2eb66936c80a0c
+ms.sourcegitcommit: 3baca27a93e5a68eaaa52810700076f08f4c88a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67363552"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67605771"
 ---
 # <a name="prepare-your-teams-store-submission"></a>Подготовка к отправке в магазин Teams
 
@@ -82,7 +82,7 @@ ms.locfileid: "67363552"
 :::row:::
 
 :::column span="3":::
-:::image type="content" source="../../../../assets/images/store-detail-page/AppName-02.png" alt-text="На этом снимке экрана показан пример короткого имени приложения в списке приложений в магазине.":::
+:::image type="content" source="../../../../assets/images/store-detail-page/specifying-short-name-under-submission.png" alt-text="На этом снимке экрана показан пример короткого имени приложения в списке приложений в магазине.":::
 :::column-end:::
 :::column span="1":::
 :::column-end:::
@@ -102,7 +102,7 @@ ms.locfileid: "67363552"
 :::row:::
 
 :::column span="3":::
-:::image type="content" source="~/assets/images/store-detail-page/ShortDescription-02.png" alt-text="Пример экрана показывает, где находится краткое описание приложения на сайте магазина.":::
+:::image type="content" source="~/assets/images/store-detail-page/specifying-short-description-under-submission.png" alt-text="Пример экрана показывает, где находится краткое описание приложения на сайте магазина.":::
 :::column-end:::
 :::column span="1":::
 :::column-end:::
@@ -124,7 +124,7 @@ ms.locfileid: "67363552"
 :::row:::
 
 :::column span="3":::
-:::image type="content" source="~/assets/images/store-detail-page/LongDescription-02.png" alt-text="Пример экрана показывает, где находится длинное описание приложения на сайте магазина.":::
+:::image type="content" source="~/assets/images/store-detail-page/specifying-long-description-under-submission.png" alt-text="Пример экрана показывает, где находится длинное описание приложения на сайте магазина.":::
 :::column-end:::
 :::column span="1":::
 :::column-end:::
@@ -146,7 +146,7 @@ ms.locfileid: "67363552"
 :::row:::
 
 :::column span="3":::
-:::image type="content" source="~/assets/images/store-detail-page/Screenshot-01.png" alt-text="Пример экрана показывает, где находятся скриншоты приложений на сайте магазина.":::
+:::image type="content" source="~/assets/images/store-detail-page/specifying-of-capturing-screenshots-submission.png" alt-text="Пример экрана показывает, где находятся скриншоты приложений на сайте магазина.":::
 :::column-end:::
 :::column span="1":::
 :::column-end:::
@@ -189,14 +189,14 @@ ms.locfileid: "67363552"
 
 | Категории Teams       | Категории Центра партнеров  |
 |:---------------------|:---------------|
-| Аналитика и бизнес-аналитика | Аналитика, визуализация данных и бизнес-аналитика |
-| Разработка и ИТ | Средства разработчика, ИТ-администрирование |
+| Визуализация данных и бизнес-аналитика | Аналитика, визуализация данных и бизнес-аналитика |
+| Средства для разработчиков | Средства разработчика, ИТ-администрирование |
 | Для образования | Для образования |
-| Управление персоналом | Кадры и подбор персонала |
+| Кадры & нанимаемого персонала| Кадры и подбор персонала |
 | Эффективность | Управление контентом, файлы и документы, офисные приложения, обучение и учебники, утилиты |
 | Управление проектами | Коммуникация, управление проектами, рабочий процесс и управление бизнесом |
 | Продажи и поддержка | Управление клиентами и контактами, поддержка клиентов, управление финансами, продажи и маркетинг |
-| Общение и развлечения | Коллекции изображений и видео, стиль жизни, погода, социальные сети, путешествия, навигация |
+| Social | Коллекции изображений и видео, стиль жизни, погода, социальные сети, путешествия, навигация |
 
 ### <a name="localize-your-store-listing"></a>Локализуйте описание приложения, предназначенное для магазина
 
