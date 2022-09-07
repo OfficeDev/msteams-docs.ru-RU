@@ -18,7 +18,11 @@
 
    :::image type="content" source="~/assets/images/teams-toolkit-v2/provisioning-commands.png" alt-text="Снимок экрана: команды подготовки":::
 
-1. Выберите подписку, используемую для ресурсов Azure.
+1. Выберите любого пользователя из существующей подписки.
+
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/select-subscription.png" alt-text="Выбор подписки":::
+
+1. Выберите группу ресурсов, используемую для ресурсов Azure.
 
     :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/select-resource.png" alt-text="Снимок экрана: ресурсы для подготовки":::
 
@@ -29,7 +33,7 @@
 
 1. Выберите **"Подготовка"**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provision-warning.png" alt-text="Снимок экрана: диалоговое окно подготовки.":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/provision-confirm1.png" alt-text="Выбор подписки":::
 
    Процесс подготовки создает ресурсы в облаке Azure. Это может занять некоторое время. Ход выполнения можно отслеживать, просмотрев диалоги в правом нижнем углу. Через несколько минут вы увидите следующее уведомление:
 
@@ -89,4 +93,3 @@
     Поздравляем! Первое приложение табуляции запущено в вашей среде Azure!
 
    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/azure-deployed-apptab.png" alt-text="Снимок экрана: сообщение о попытке использовать приложение сейчас или позже":::
- 
