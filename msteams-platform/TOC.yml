@@ -98,40 +98,66 @@
       items:
         - name: Обзор набора средств Teams
           href: toolkit/teams-toolkit-fundamentals.md
-        - name: Создание нового приложения Teams
-          href: toolkit/create-new-project.md
-        - name: Подготовка учетных записей для создания приложения Teams
-          href: toolkit/accounts.md
-        - name: Локальная отладка приложения Teams
-          href: toolkit/debug-local.md
-        - name: Отладка фонового процесса
-          href: toolkit/debug-background-process.md
-        - name: Подготовка облачных ресурсов
-          href: toolkit/provision.md
-        - name: Развертывание приложения Teams в облаке
-          href: toolkit/deploy.md
-        - name: Изменение манифеста приложения Teams
-          href: toolkit/TeamsFx-preview-and-customize-app-manifest.md
-        - name: Настройка манифеста Azure AD
-          href: toolkit/AAD-manifest-customization.md
-        - name: Добавление возможностей в приложение Teams
-          href: toolkit/add-capability.md
-        - name: Добавление облачных ресурсов в приложение Teams
-          href: toolkit/add-resource.md
-        - name: Добавление функциональности единого входа в приложение Teams
-          href: toolkit/add-single-sign-on.md
-        - name: Добавление подключения к API в приложение Teams
-          href: toolkit/add-API-connection.md
-        - name: Настройка конвейеров CI/CD
-          href: toolkit/use-CICD-template.md
-        - name: Публикация приложений Teams с помощью набора средств Teams
-          href: toolkit/publish.md
-        - name: Управление несколькими средами
-          href: toolkit/TeamsFx-multi-env.md
-        - name: Совместная работа над проектом в Teams
-          href: toolkit/TeamsFx-collaboration.md
-        - name: Пакет SDK TeamsFx
-          href: toolkit/TeamsFx-SDK.md
+        - name: Установка Набора средств Teams
+          href: toolkit/install-Teams-Toolkit.md
+        - name: Обзор набора средств Teams
+          href: toolkit/explore-Teams-Toolkit.md
+        - name: Подготовка к созданию приложений с помощью Microsoft Teams Toolkit
+          href: toolkit/build-environments.md
+        - name: Создание приложения с помощью Набора средств Teams
+          items:
+            - name: Предварительные требования для создания приложения Teams
+              href: toolkit/tools-prerequisites.md
+            - name: Создание проекта приложения Teams
+              href: toolkit/create-new-project.md
+            - name: Разработка приложения Teams
+              items:
+                - name: Добавление среды и управление ими
+                  href: toolkit/TeamsFx-multi-env.md
+                - name: Создание приложения с несколькими возможностями
+                  href: toolkit/add-capability.md
+                - name: Создание облачных ресурсов на основе возможностей
+                  href: toolkit/add-resource.md
+                - name: Интеграция существующих сторонних API
+                  href: toolkit/add-API-connection.md
+            - name: Настройка манифеста
+              items:
+                - name: Настройка манифеста приложения Teams
+                  href: toolkit/TeamsFx-preview-and-customize-app-manifest.md
+                - name: Изменение Azure AD манифеста
+                  href: toolkit/AAD-manifest-customization.md
+            - name: Пакет SDK TeamsFx
+              href: toolkit/TeamsFx-SDK.md
+            - name: Отладка приложения Teams
+              items:
+                - name: Обзор
+                  href: toolkit/debug-overview.md
+                - name: Локальная отладка приложения Teams
+                  href: toolkit/debug-local.md
+                - name: Отладка фонового процесса
+                  href: toolkit/debug-background-process.md
+            - name: Размещение приложения в Azure
+              items:
+                - name: Подготовка облачных ресурсов
+                  href: toolkit/provision.md
+                - name: Развертывание приложения Teams в облаке
+                  href: toolkit/deploy.md
+            - name: Тестирование приложения Teams
+              items:
+                - name: Интеграция и совместная работа
+                  href: toolkit/TeamsFx-collaboration.md
+                - name: Загрузка и тестирование неопубликованного приложения в среде Teams
+                  href: toolkit/sideload-and-test-app.md
+                - name: Тестирование поведения приложения в разных средах
+                  href: toolkit/test-app-behavior.md
+        - name: Публикация приложения Microsoft Teams
+          items:
+            - name: Публикация приложений Teams с помощью набора средств Teams
+              href: toolkit/publish.md
+            - name: Интеграция с порталом разработчика
+              href: toolkit/Integrate-with-developer-portal.md
+        - name: Вопросы и ответы
+          href: toolkit/faq.md
     - name: Наборы средств Teams для Visual Studio
       items:
         - name: Обзор набора средств Teams
@@ -385,7 +411,7 @@
           displayName: Ephemeral data structures
         - name: Синхронизация мультимедиа
           href: apps-in-teams-meetings/teams-live-share-media-capabilities.md
-          displayName: 'Audio ducking,'
+          displayName: Audio ducking
         - name: Практические руководства
           items:
             - name: Руководство для разработки игры в покер по гибкой методике
@@ -404,12 +430,15 @@
       href: webhooks-and-connectors/what-are-webhooks-and-connectors.md
     - name: Создание исходящих веб-перехватчиков
       href: webhooks-and-connectors/how-to/add-outgoing-webhook.md
+      displayName: 'HMAC security token, access, channel'
     - name: Создание входящих веб-перехватчиков
       href: webhooks-and-connectors/how-to/add-incoming-webhook.md
+      displayName: 'Access, permissions'
     - name: Создание соединителей Office 365
       href: webhooks-and-connectors/how-to/connectors-creating.md
     - name: Создание и отправка сообщений
       href: webhooks-and-connectors/how-to/connectors-using.md
+      displayName: 'Access, settings, configuration'
 - name: Создание карточек и модулей задач
   items:
     - name: Обзор
@@ -418,34 +447,44 @@
       items:
         - name: Обзор
           href: task-modules-and-cards/what-are-cards.md
+          displayName: 'People picker, type-ahead'
         - name: Типы карточек
           href: task-modules-and-cards/cards/cards-reference.md
+          displayName: 'Flexible layout, receipt card, carousel card, setting'
         - name: Форматирование карточек в Microsoft Teams
           href: task-modules-and-cards/cards/cards-format.md
+          displayName: 'Information masking, background, extension, notification'
         - name: Действия карточек
           href: task-modules-and-cards/cards/cards-actions.md
         - name: Выбор людей в адаптивных карточках
           href: task-modules-and-cards/cards/people-picker.md
+          displayName: 'Setting, channel, static typeahead'
         - name: Поиск с автозавершением в адаптивных карточках
           href: task-modules-and-cards/cards/dynamic-search.md
         - name: Универсальные действия для адаптивных карточек
           items:
             - name: Обзор
               href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/overview.md
+              displayName: 'Access, extension, channel, communication'
             - name: Работа с универсальными действиями для адаптивных карточек
               href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/Work-with-universal-actions-for-adaptive-cards.md
+              displayName: 'Setting, channels,'
             - name: Пользовательские просмотры
               href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/User-Specific-Views.md
+              displayName: 'Poll creator controls, channel, extension'
             - name: Последовательные рабочие процессы
               href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/Sequential-Workflows.md
+              displayName: Channel
             - name: Актуальные карточки
               href: task-modules-and-cards/cards/Universal-actions-for-adaptive-cards/Up-To-Date-Views.md
     - name: Создание модулей задач
       items:
         - name: Обзор
           href: task-modules-and-cards/what-are-task-modules.md
+          displayName: Channel
         - name: Вызов и закрытие модулей задач
           href: task-modules-and-cards/task-modules/invoking-task-modules.md
+          displayName: 'Access, module sizing'
         - name: Использование модулей задач во вкладках
           href: task-modules-and-cards/task-modules/task-modules-tabs.md
         - name: Использование модулей задач из ботов
