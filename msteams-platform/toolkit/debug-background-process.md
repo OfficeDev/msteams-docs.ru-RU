@@ -1,31 +1,33 @@
 ---
 title: Отладка фоновых процессов
-author: zyxiaoyuer
-description: В этом модуле вы узнаете о функции кода Visual Studio и Teams Toolkit во время локальной отладки, а также зарегистрируете и настроите приложение Teams
-ms.author: surbhigupta
+author: surbhigupta
+description: В этом модуле вы узнаете, как Visual Studio Code и Набор средств Teams работают во время локальной отладки, а также как зарегистрировать и настроить приложение Teams.
+ms.author: v-amprasad
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/03/2022
-ms.openlocfilehash: 9891e2b93133484d4bb8394100f4e628841517f7
-ms.sourcegitcommit: 234944867eeccbba5da6be43120e9683977bdfd8
+ms.openlocfilehash: b8f85f092f9a99e9931a5ff0ea5e763c0b4fb0fe
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67407569"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616790"
 ---
 # <a name="debug-background-process"></a>Отладка фонового процесса
 
-В рабочем процессе локальной отладки используются файлы `.vscode/launch.json` и `.vscode/tasks.json` для настройки отладчика в Visual Studio Code (VS Code). VS Code запускает отладчики, а Microsoft Edge или Google Chrome запускает новый экземпляр браузера следующим образом.
+Процесс локальной отладки включает файлы `.vscode/launch.json` `.vscode/tasks.json` и файлы для настройки отладчика в Microsoft Visual Studio Code. Средство Visual Studio Code запускает отладчики, а Microsoft Edge или Google Chrome запускает новый экземпляр браузера.
 
-1. Файл `launch.json` настраивает отладчик в VS Code.
+Рабочий процесс процесса отладки выглядит следующим образом:
 
-2. VS Code выполняет составную команду **preLaunchTask**, **Pre Debug Check & Start All** в файле `.vscode/tasks.json`
+1. `launch.json`Файл  настраивает отладчик в Visual Studio Code.
 
-3. Затем VS Code запускает отладчики, указанные в составных конфигурациях, таких как **Присоединить к боту**, **Присоединить к серверной части**, **Присоединить к внешнему интерфейсу** и **Запустить бот**
+2. Visual Studio Code запускает составную **версию preLaunchTask**, предварительную отладку **& запускать все** в файле`.vscode/tasks.json`.
+
+3. Затем Visual Studio Code запускает отладчики, указанные в конфигурациях составной команды, например **Прикрепить к боту**, **Прикрепить к серверу**, **Прикрепить к интерфейсу** и **Запустить бот**.
 
 4. Отладчик Microsoft Edge или Google Chrome запускает новый экземпляр браузера и открывает веб-страницу для загрузки клиента Teams.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="teams-toolkit-verification-of-prerequisites"></a>Проверка необходимых компонентов в Наборе средств Teams
 
 Набор средств Teams проверяет указанные ниже предварительные условия в процессе отладки.
 
@@ -38,14 +40,14 @@ ms.locfileid: "67407569"
   |Bot |  14, 16 (рекомендуется)|
   |Расширение для сообщений | 14, 16 (рекомендуется) |
 
-* Учетная запись Microsoft 365 с действительными учетными данными. Набор средств Teams предлагает вам войти в учетную запись Microsoft 365, если вы не вошли.
-* Отправка неопубликованных или неопубликованных пользовательских приложений для клиента разработчика включена, в противном случае локальная отладка завершается.
-* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Пакет NPM Ngrok в `/.fx/bin/ngrok/node modules/ngrok/bin` управляет двоичной версией Ngrok.
-* Azure Functions Core Tools версии 3. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается.
-* Версия пакета SDK .NET Core, применимая к Функциям Azure. Если пакет SDK для .NET Core не установлен или его версия не соответствует требованиям, набор средств Teams устанавливает пакет SDK .NET Core для Windows и MacOS в `~/.fx/bin/dotnet`. Для Linux локальная отладка прекращается.
-* Двоичная версия Ngrok 2.3 применима для бота и расширения для сообщений. Если Ngrok не установлен или версия не соответствует требованиям, набор средств Teams устанавливает пакет Ngrok NPM `ngrok@4.2.2` в `~/.fx/bin/ngrok`. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`.
-* Azure Functions Core Tools версии 4. Если Azure Functions Core Tools не установлены или версия не соответствует требованиям, набор средств Teams устанавливает пакет NPM Azure Functions Core Tools, azure-functions-core-tools@3 для **Windows** и **macOS** в `~/.fx/bin/func`. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичной версией Azure Functions Core Tools. Для Linux локальная отладка прекращается.
-* Версия пакета SDK для .NET Core, применимая к Функциям Azure. Если пакет SDK для .NET Core не установлен или его версия не соответствует требованиям, набор средств Teams Toolkit устанавливает пакет SDK для .NET Core для Windows и MacOS в формате `~/.fx/bin/dotnet`. Для Linux локальная отладка прекращается.
+* Набор средств Teams предлагает войти в учетную запись Microsoft 365, если вы еще не вошли с действительными учетными данными.
+* Пользовательская отправка или загрузка неопубликованных приложений для клиента разработчика включена, чтобы предотвратить завершение локальной отладки.
+* Teams Toolkit устанавливает пакет NGROK NPM `ngrok@4.2.2` `~/.fx/bin/ngrok`в том случае, если Ngrok не установлен или версия не соответствует требованиям. Пакет NPM Ngrok `/.fx/bin/ngrok/node modules/ngrok/bin` в управляет двоичным файлом Ngrok версии 2.3, применимым для бота и расширения сообщений.
+* Набор средств Teams устанавливает пакет NPM Функции Azure Core Tools, azure-functions-core-tools@3 для **Windows** и **macOs**`~/.fx/bin/func`, если Функции Azure Core Tools версии 3 не установлен или версия не соответствует требованиям. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается.
+* Набор средств Teams устанавливает пакет SDK для .NET Core для **Windows** и **MacOS** `~/.fx/bin/dotnet`в том случае, если версия пакета SDK для .NET Core, применимая для Функции Azure, не установлена или версия не соответствует требованиям. Для Linux локальная отладка прекращается.
+* Teams Toolkit устанавливает пакет NGROK NPM `ngrok@4.2.2` `~/.fx/bin/ngrok`в том случае, если Ngrok не установлен или версия не соответствует требованиям. Двоичная версия Ngrok 2.3 применима к боту и расширению сообщений. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`.
+* Teams Toolkit устанавливает пакет NPM Функции Azure Core Tools, azure-functions-core-tools@3 для **Windows** и **MacOs**`~/.fx/bin/func`, если Функции Azure Core Tools версии 4 не установлен или версия не соответствует требованиям. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичной версией Azure Functions Core Tools. Для Linux локальная отладка прекращается.
+* Набор средств Teams устанавливает пакет SDK для .NET Core для **Windows** и **MacOS** `~/.fx/bin/dotnet`в версии пакета SDK для .NET Core, применимой для Функции Azure, если пакет SDK для .NET Core не установлен или версия не соответствует требованиям. Для Linux локальная отладка прекращается.
 
   В следующей таблице перечислены версии .NET Core.
 
@@ -54,10 +56,10 @@ ms.locfileid: "67407569"
   |Windows, macOS (x64) и Linux | **3.1 (рекомендуется)**, 5.0, 6.0 |
   |macOS (arm64) |6.0 |
 
-* Сертификат разработки. Если сертификат разработки для localhost не установлен для вкладки в Windows или macOS, набор инструментов Teams предложит вам установить его.
-* Расширения привязок Функций Azure, определенные в `api/extensions.csproj`. Если расширения привязок Функций Azure не установлены, набор инструментов Teams устанавливает расширения привязки функций Azure.
-* Пакеты NPM, применимые для приложения вкладки, приложения бота, приложения расширения для сообщений и Функций Azure. Если NPM не установлен, набор инструментов Teams устанавливает все пакеты NPM.
-* Бот и расширение сообщений. Набор инструментов Teams запускает Ngrok для создания туннеля HTTP для бота и расширения сообщений.
+* Если сертификат разработки для localhost не установлен для вкладки **в Windows** или **MacOS**, teams Toolkit предложит установить его.
+* Функции Azure расширений `api/extensions.csproj`привязки, определенных в Функции Azure, если расширения привязки не установлены, Teams Toolkit устанавливает Функции Azure привязки.
+* Пакеты NPM, применимые для приложения вкладки, приложения бота, приложения расширения для сообщений и Функций Azure. Если пакеты NPM не установлены, Teams Toolkit устанавливает все пакеты NPM.
+* Бот и расширение сообщений, Набор средств Teams запускает Ngrok для создания туннеля HTTP для бота и расширения сообщений.
 * Доступные порты. Если порты вкладки, бота, расширения сообщений и порты Функций Azure недоступны, локальная отладка прекращается
 
   В следующей таблице перечислены порты, доступные для компонентов.
@@ -101,21 +103,21 @@ Use the following .NET Core versions:
 
 Если выбрать **Запуск отладки (F5)**, выходной канал набора средств Teams отображает ход и результат после проверки предварительных требований.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck.png" alt-text="предварительные требования":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck.png" alt-text="Сводка по проверке предварительных условий" lightbox="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck.png":::
 
 ## <a name="register-and-configure-teams-app"></a>Регистрация и настройка приложения Teams
 
 В процессе настройки Teams Toolkit подготавливает следующие регистрации и конфигурации для вашего приложения Teams:
 
-1. [Регистрирует и настраивает приложение Azure AD](#registers-and-configures-azure-ad-application). Набор средств Teams регистрирует и настраивает ваше приложение Azure AD.
+1. [Регистрирует и настраивает Microsoft Azure Active Directory (Azure AD)](#registers-and-configures-microsoft-azure-active-directoryazure-ad-app)
 
-1. [Регистрирует и настраивает бот](#registers-and-configures-bot). Teams Toolkit регистрирует и настраивает бот для вкладки или приложения расширения сообщений.
+1. [Регистрирует и настраивает бот.](#registers-and-configures-bot)
 
-1. [Регистрирует и настраивает приложение Teams](#registers-and-configures-teams-app). Набор средств Teams регистрирует и настраивает ваше приложение Teams.
+1. [Регистрирует и настраивает приложение Teams](#registers-and-configures-teams-app).
 
-### <a name="registers-and-configures-azure-ad-application"></a>Регистрация и настройка приложения Azure AD
+### <a name="registers-and-configures-microsoft-azure-active-directoryazure-ad-app"></a>Регистрирует и настраивает Microsoft Azure Active Directory (Azure AD)
 
-1. Регистрирует приложение Azure AD.
+1. Регистрирует Azure AD приложения.
 
 1. Создает секрет клиента.
 
@@ -163,13 +165,13 @@ Use the following .NET Core versions:
 
 ### <a name="registers-and-configures-teams-app"></a>Регистрация и настройка приложения Teams
 
-Регистрирует приложение Teams на портале [разработчика](https://dev.teams.microsoft.com/home) с помощью шаблона манифеста в `templates/appPackage/manifest.template.json`.
+Регистрирует приложение Teams на [портале разработчика](https://dev.teams.microsoft.com/home) с помощью шаблона манифеста в `templates/appPackage/manifest.template.json`.
 
 После регистрации и настройки приложения создает файлы локальной отладки.
 
 ## <a name="take-a-tour-of-your-app-source-code"></a>Знакомство с исходным кодом приложения
 
-Вы можете просмотреть папки и файлы проекта в **обозревателе** в VS Code после того, как набор средств Teams зарегистрирует и настроит ваше приложение. В следующей таблице перечислены файлы локальной отладки и типы конфигурации.
+Папки и файлы проекта можно просмотреть в **обозревателе** в Visual Studio Code после регистрации и настройки приложения набором средств Teams. В следующей таблице перечислены файлы локальной отладки и типы конфигурации.
 
 | Имя папки| Содержание| Тип конфигурации отладки |
 | --- | --- | --- |

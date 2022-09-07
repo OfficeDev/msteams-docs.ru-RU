@@ -6,59 +6,51 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 2d1889de8cc5c36cde708f4d4628f6f61768e3f4
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: fc58610802a51af19efc32e579566fbf5e36feca
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66557878"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616536"
 ---
-# <a name="add-cloud-resources-to-teams-app"></a>Добавление облачных ресурсов в приложение Teams
+# <a name="add-cloud-resources-to-microsoft-teams-app"></a>Добавление облачных ресурсов в приложение Microsoft Teams
 
-TeamsFx помогает подготовить облачные ресурсы для размещения приложения. При необходимости можно добавить облачные ресурсы, которые соответствуют вашим потребностям разработки.
+Набор средств Teams помогает подготовить облачные ресурсы для размещения приложения. При необходимости можно добавить облачные ресурсы, которые соответствуют вашим потребностям разработки. Преимущество добавления дополнительных облачных ресурсов в TeamsFx заключается в том, что вы можете автоматически создавать все файлы конфигурации и подключаться к приложению Teams с помощью Набора средств Teams.
 
-## <a name="advantages"></a>Преимущества
-
-Следующий список дает преимущества для добавления дополнительных облачных ресурсов в TeamsFx:
-
-* Обеспечивает удобство.
-* Автоматически создает все файлы конфигурации и подключается к приложению Teams с помощью набора средств Teams.
-
-## <a name="limitation"></a>Ограничение
-
-Если вы создали проект вкладки на основе SPFx, вы не сможете добавить облачные ресурсы Azure.
+> [!NOTE]
+> Если вы создали проект вкладки на основе SPFx, вы не сможете добавить облачные ресурсы Azure.
 
 ## <a name="add-cloud-resources"></a>Добавление облачных ресурсов
 
-**Добавить облачные ресурсы можно следующими способами:**
+Добавить облачные ресурсы можно следующими способами:
 
-* Добавление облачных ресурсов с помощью набора средств Teams в Visual Studio Code.
-* Добавление облачных ресурсов с помощью палитры команд.
+### <a name="to-add-cloud-resources-by-using-teams-toolkit-in-visual-studio-code"></a>Добавление облачных ресурсов с помощью набора средств Teams в Visual Studio Code
+
+   1. Откройте **Visual Studio Code**.
+   1. Выберите **Набор средств Teams на** панели действий.
+   1. Выберите **"Добавить компоненты"** в разделе **"РАЗРАБОТКА"**.
+
+        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/select-feature-updated.png" alt-text="Добавление функции из Набора средств Teams":::
+
+### <a name="to-add-cloud-resources-by-using-command-palette"></a>Добавление облачных ресурсов с помощью палитры команд
+
+   1. Выберите **"Просмотреть** > **палитру команд"...** или **CTRL+SHIFT+P**.
+
+      :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/Teams-add-features.png" alt-text="Добавление функции из палитры команд":::
+
+   1. **Введите Teams: добавление функций**.
+   1. Нажмите клавишу **ВВОД**.
+
+      :::image type="content" source="../assets/images/teams-toolkit-v2/manual/cloud/Teams-add-features1.png" alt-text="Введите добавление функции и введите":::
+
+   1. Во всплывающем окне выберите **облачные ресурсы** , которые нужно добавить в проект.
+
+      :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/updated-final-cloud.png" alt-text="Окончательный":::
 
   > [!NOTE]
   > После успешного добавления ресурса в приложение Teams необходимо подготовить каждую среду.
-  
-* **Чтобы добавить облачные ресурсы с помощью Набора средств Teams в Visual Studio Code:**
 
-   1. Откройте **Visual Studio Code**.
-   1. Выберите **Набор средств Teams на** левой панели.
-   1. Выберите **"Добавить компоненты"** в разделе **"РАЗРАБОТКА"**.
-
-        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/select-feature-updated.png" alt-text="добавление функции":::
-
-* **Чтобы добавить облачные ресурсы с помощью палитры команд, выполните следующие действия.**
-
-   1. Откройте **палитру команд**.
-   1. **Введите Teams:Add features. (Введите Teams:Add**
-   1. Нажмите клавишу **ВВОД**.
-
-        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/Teams-add-features.png" alt-text="Облако":::
-
-   1. Во всплывающем окне выберите облачные ресурсы для добавления в проект.
-
-        :::image type="content" source="~/assets/images/teams-toolkit-v2/manual/cloud/updated-final-cloud.png" alt-text="Окончательный":::
-
-## <a name="add-cloud-resources-using-teamsfx-cli"></a>Добавление облачных ресурсов с помощью Командной строки TeamsFx
+### <a name="add-cloud-resources-using-teamsfx-cli"></a>Добавление облачных ресурсов с помощью Командной строки TeamsFx
 
 * Измените каталог на **папку проекта**.
 * В следующей таблице перечислены возможности и необходимые команды:
@@ -79,7 +71,7 @@ TeamsFx помогает подготовить облачные ресурсы 
 * [Управление API Azure](deploy.md). Шлюз API можно использовать для администрирования API, созданных для приложений Teams, и их публикации для использования в других приложениях, таких как приложения Power.
 * [Azure Key Vault](/azure/key-vault/general/overview): защита криптографических ключей и других паролей, используемых облачными приложениями и службами.
 
-## <a name="add-cloud-resources"></a>Добавление облачных ресурсов
+## <a name="changes-after-adding-cloud-resources"></a>Изменения после добавления облачных ресурсов
 
 После добавления ресурсов в проект появляются следующие изменения:
 

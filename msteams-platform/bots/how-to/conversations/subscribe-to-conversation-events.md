@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
 keywords: события бот канал сообщение реакция беседа
-ms.openlocfilehash: 80e2bba2d610526a8a4485be79282432b27386fd
-ms.sourcegitcommit: 90e6397684360c32e943eb711970494be355b225
+ms.openlocfilehash: d7bdd35f887c9f59000139aa36352b0b416465c6
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695329"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616998"
 ---
 # <a name="conversation-events-in-your-teams-bot"></a>События бесед в вашем боте Teams
 
@@ -581,7 +581,6 @@ async def on_teams_members_added(
 
 Действие, удаляемое членом `eventType` , имеет значение `teamMemberRemoved` , когда событие отправляется из контекста команды. Чтобы определить, был ли только что удаленный участник самим ботом или пользователем, проверьте объект `Activity` из `turnContext`. Если список `MembersRemoved` содержит объект, который `id` `id` `Recipient` совпадает с полем объекта, добавленный элемент является ботом, в противном случае это пользователь. Идентификатор бота отформатирован как `28:<MicrosoftAppId>`.
 
-
 > [!NOTE]
 > При окончательном удалении пользователя из клиента инициируется событие `membersRemoved conversationUpdate`.
 
@@ -673,7 +672,6 @@ export class MyBot extends TeamsActivityHandler {
     }
 }
 ```
-
 
 # <a name="python"></a>[Python](#tab/python)
 
@@ -1340,24 +1338,27 @@ async def on_reactions_removed(
 # <a name="c"></a>[C#](#tab/dotnet)
 
 ```csharp
-protected override async Task
-OnInstallationUpdateActivityAsync(ITurnContext<IInstallationUpdateActivity> turnContext, CancellationToken cancellationToken) {
-var activity = turnContext.Activity; if
-(string.Equals(activity.Action, "Add",
-StringComparison.InvariantCultureIgnoreCase)) {
-// TO:DO Installation workflow }
-else
-{ // TO:DO Uninstallation workflow
-} return; }
+protected override async Task OnInstallationUpdateActivityAsync(ITurnContext<IInstallationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    var activity = turnContext.Activity;
+    if (string.Equals(activity.Action, "Add", StringComparison.InvariantCultureIgnoreCase))
+    {
+        // TO:DO Installation workflow
+    }
+    else
+    {
+        // TO:DO Uninstallation workflow
+    }
+    return;
+}
 ```
 
 Можно также использовать выделенный обработчик *добавления* или *удаления* сценариев в качестве альтернативного метода для записи события.
 
 ```csharp
-protected override async Task
-OnInstallationUpdateAddAsync(ITurnContext<IInstallationUpdateActivity>
-turnContext, CancellationToken cancellationToken) {
-// TO:DO Installation workflow return;
+protected override async Task OnInstallationUpdateAddAsync(ITurnContext<IInstallationUpdateActivity> turnContext, CancellationToken cancellationToken)
+{
+    // TO:DO Installation workflow return;
 }
 ```
 
@@ -1463,7 +1464,7 @@ async def on_installation_update(self, turn_context: TurnContext):
 
 | **Название примера** | **Описание** | **.NET** | **Node.js** | **Python** |
 |----------|-----------------|----------|
-| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
+| Бот беседы | Пример кода для событий беседы ботов. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot)  | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot) |
 
 ## <a name="next-step"></a>Следующий этап
 

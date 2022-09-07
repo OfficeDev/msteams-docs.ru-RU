@@ -1,39 +1,42 @@
 ---
 title: Пакет SDK TeamsFx
-author: MuyangAmigo
+author: surbhigupta
 description: В этом модуле вы узнаете о пакете SDK для TeamsFx, основных понятиях и структуре кода, расширенной настройке и сценариях.
-ms.author: nintan
+ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: ca310df0b1c9e1285e3cf6914105cedd1ecbcce2
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: f4147a204fe4ff51c2015457fe62581adfd63c8d
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841675"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616872"
 ---
 # <a name="teamsfx-sdk"></a>Пакет SDK TeamsFx
 
-TeamsFx помогает сократить количество задач разработчика, используя систему единого входа Teams и доступ к облачным ресурсам, сведя их к однострочным операторам с нулевой конфигурацией. Пакет SDK TeamsFx создан для использования в среде браузера и Node.js. К распространенным сценариям относятся:
+TeamsFx помогает сократить количество задач, используя единый вход Microsoft Teams (Teams SSO) и доступ к облачным ресурсам до однострочного оператора с нулевой конфигурацией. Пакет SDK TeamsFx можно использовать в браузере и Node.js среде. Доступ к основным функциям TeamsFx можно получить как в клиентской, так и в серверной среде. Код проверки подлинности пользователя можно написать упрощенным способом:
 
-* Приложение вкладки Teams
-* Функция Azure
+* Вкладка Teams
 * Бот Teams
+* Функция Azure
 
-С помощью SDK TeamsFx можно выполнить следующее.
+## <a name="prerequisites"></a>Предварительные требования
 
-* Доступ к основным функциям в клиентской и серверной среде.
-* Написание кода проверки подлинности пользователя упрощенным способом.
+Необходимо установить следующие средства и настроить среду разработки:
 
-## <a name="prerequisites"></a>Предварительные условия
+| &nbsp; | Установка | Для использования... |
+   | --- | --- | --- |
+   | &nbsp; | [Visual Studio Code](https://code.visualstudio.com/download); | Сред сборки JavaScript, TypeScript или SharePoint Framework (SPFx). Используйте версию 1.55 или более позднюю. |
+   | &nbsp; | [Набор средств Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)| Расширение Microsoft Visual Studio Code, которое создает шаблон проекта для вашего приложения. Используйте версию 4.0.0. |
+   | &nbsp; | [Node.js](https://nodejs.org/en/download/) | Серверной среды выполнения JavaScript. Используйте последнюю версию версии 16 LTS.|
+   | &nbsp; | [Microsoft Teams](https://www.microsoft.com/microsoft-teams/download-app) | Microsoft Teams для взаимодействия в одном месте со всеми пользователями, с которыми вы работаете, с помощью приложений для чата, собраний и звонков.|
+   | &nbsp; | [Microsoft&nbsp; Edge](https://www.microsoft.com/edge) (рекомендуется) или [Google Chrome](https://www.google.com/chrome/) | Браузера со средствами разработчика. |
 
-Установите следующие средства и настройте среду разработки.
+> [!NOTE]
+> Если в проекте [пакеты](https://github.com/Microsoft/botbuilder-js#packages), связанные с `botbuilder` как зависимости, убедитесь, что они имеют ту же версию.
 
-* Node.js последней версии
-* Если в проекте [пакеты](https://github.com/Microsoft/botbuilder-js#packages), связанные с `botbuilder` как зависимости, убедитесь, что они имеют ту же версию. В настоящее время требуется версия 4.15.0 или более поздняя. Дополнительные сведения см. в статье [Пакеты построителя ботов должны иметь ту же версию](https://github.com/BotBuilderCommunity/botbuilder-community-js/issues/57#issuecomment-508538548).
-
-У вас должны быть достаточные для работы знания о следующем.
+У вас должны быть знания о следующих элементах:
 
 * [Исходный код](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk)
 * [Пакет (NPM)](https://www.npmjs.com/package/@microsoft/teamsfx)
@@ -53,55 +56,7 @@ TeamsFx помогает сократить количество задач ра
 npm install @microsoft/teamsfx
 ```
 
-### <a name="create-microsoftgraphclient-service"></a>Создание службы `MicrosoftGraphClient`
-
-Чтобы создать клиентский объект Graph и получить доступ к API Microsoft Graph, вам потребуются учетные данные для подтверждения подлинности. SDK предоставляет API для настройки разработчиками.
-
-<br>
-
-<details>
-<summary><b>Вызовите Graph API от имени пользователя Teams (личность пользователя)</b></summary>
-
-Используйте следующий фрагмент кода:
-
-```ts
-// Equivalent to:
-// const teamsfx = new TeamsFx(IdentityType.User, {
-//   initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL,
-//   clientId: process.env.REACT_APP_CLIENT_ID,
-// }
-const teamsfx = new TeamsFx();
-const graphClient = createMicrosoftGraphClient(teamsfx, ["User.Read"]); // Initializes MS Graph SDK using our MsGraphAuthProvider
-const profile = await graphClient.api("/me").get(); // Get the profile of current user
-```
-
-</details>
-
-<br>
-
-<details>
-<summary><b>Вызовите Graph API без пользователя (идентификатор приложения)</b></summary>
-
-Для этого не требуется взаимодействие с пользователем Teams. Microsoft Graph можно вызвать как удостоверение приложения.
-
-Используйте следующий фрагмент кода:
-
-```ts
-// Equivalent to:
-// const teamsfx = new TeamsFx(IdentityType.App, {
-//   initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL,
-//   clientId: process.env.REACT_APP_CLIENT_ID,
-// });
-const teamsfx = new TeamsFx(IdentityType.App);
-const graphClient = createMicrosoftGraphClient(teamsfx);
-const profile = await graphClient.api("/users/{object_id_of_another_people}").get(); // Get the profile of certain user
-```
-
-</details>
-
-<br>
-
-## <a name="core-concepts-and-code-structure"></a>Основные понятия и структура кода
+## <a name="teamsfx-core-functionalities"></a>Основные функции TeamsFx
 
 ### <a name="teamsfx-class"></a>Класс TeamsFx
 
@@ -109,10 +64,16 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 При создании экземпляра TeamsFx также необходимо указать тип удостоверения.
 Существует два типа удостоверений:
 
-* Удостоверение пользователя
-* Удостоверение приложения
+* **Удостоверение** пользователя: представляет текущего пользователя Teams.
+* **Удостоверение приложения**: представляет само приложение.
 
-#### <a name="user-identity"></a>Удостоверение пользователя
+    > [!NOTE]
+    > Для этих двух типов удостоверений конструкторы и методы TeamsFx не совпадают.
+
+Дополнительные сведения об удостоверении пользователя и удостоверении приложения см. в следующем разделе:
+
+<details>
+<summary><b> Удостоверение пользователя </b></summary>
 
 | Команда | Описание |
 |----------------|-------------|
@@ -123,8 +84,10 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 > [!NOTE]
 > Доступ к ресурсам можно получить от имени текущего пользователя Teams.
+</details>
 
-#### <a name="application-identity"></a>Удостоверение приложения
+<details>
+<summary><b> Удостоверение приложения </b></summary>
 
 | Команда | Описание |
 |----------------|-------------|
@@ -133,38 +96,43 @@ const profile = await graphClient.api("/users/{object_id_of_another_people}").ge
 
 > [!NOTE]
 > Для ресурсов требуется согласие администратора.
+</details>
 
 ### <a name="credential"></a>Credential
 
-Вам необходимо выбрать тип удостоверения при инициализации TeamsFx. После того как вы укажете тип удостоверения во время инициализации TeamsFx, SDK использует различные типы классов учетных данных для представления удостоверения и получения токена доступа через соответствующий поток проверки подлинности.
+Чтобы инициализировать TeamsFx, необходимо выбрать требуемый тип удостоверения. После указания типа удостоверения пакет SDK использует другой тип класса учетных данных. Эти справки представляют удостоверение и получают маркер доступа по соответствующему потоку проверки подлинности. Классы учетных данных реализуют `TokenCredential` интерфейс, широко используемый в API библиотеки Azure, предназначенный для предоставления маркеров доступа для определенных областей. Другие API полагаются на вызов учетных данных `TeamsFx:getCredential()`для получения экземпляра `TokenCredential`. Дополнительные сведения о классах, связанных с потоком проверки подлинности и учетными данными, см. в [папке учетных данных](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/credential).
 
-Есть три класса учетных данных для упрощения проверки подлинности. [папка с учетными данными](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/credential). Классы учетных данных реализуют интерфейс `TokenCredential`, который широко используется в API библиотеки Azure, предназначенных для предоставления маркеров доступа определенным областям. Другие API полагаются на вызов учетных данных `TeamsFx:getCredential()`для получения экземпляра `TokenCredential`.
+Есть три класса учетных данных для упрощения проверки подлинности. Вот соответствующие сценарии для каждого целевого класса учетных данных.
 
-Вот соответствующие сценарии для каждого целевого класса учетных данных.
+<details>
+<summary><b> Удостоверение пользователя в среде браузера </b></summary>
 
-#### <a name="user-identity-in-browser-environment"></a>Удостоверение пользователя в среде браузера
+`TeamsUserCredential` представляет удостоверение текущего пользователя Teams. При первой проверке подлинности учетных данных пользователя единый вход Teams выполняет поток On-Behalf-Of для обмена маркерами. Пакет SDK использует эти учетные данные при выборе удостоверения пользователя в среде браузера.
 
-`TeamsUserCredential` представляет удостоверение текущего пользователя Teams. При первом использовании этих учетных данных запрашивается согласие пользователя. Использует SSO Teams и поток "от имени" для обмена маркерами. SDK использует эти учетные данные, когда разработчики выбирают удостоверение пользователя в среде браузера.
+Необходимые конфигурации: `initiateLoginEndpoint` и `clientId`.
+</details>
 
-Требуемая конфигурация: `initiateLoginEndpoint`, `clientId`.
+<details>
+<summary><b> Удостоверение пользователя в Node.js среде </b></summary>
 
-#### <a name="user-identity-in-nodejs-environment"></a>Удостоверение пользователя в среде Node.js
-
-`OnBehalfOfUserCredential` использует поток "от имени" и требует маркер SSO Teams. Он предназначен для использования в сценариях использования функций или ботов Azure. SDK использует эти учетные данные, когда разработчики выбирают удостоверение пользователя в среде Node.js.
+`OnBehalfOfUserCredential` использует поток On-Behalf-Of и требует маркер единого входа Teams в сценариях функции Или бота Azure. Пакет SDK для TeamsFx использует следующие учетные данные при выборе удостоверения пользователя в Node.js среде.
 
 Требуемая конфигурация: `authorityHost`, `tenantId`, `clientId`, `clientSecret` или `certificateContent`.
+</details>
 
-#### <a name="application-identity-in-nodejs-environment"></a>Удостоверение приложения в среде Node.js
+<details>
+<summary><b> Удостоверение приложения в Node.js среде </b></summary>
 
-`AppCredential` представляет удостоверение приложения. Он используется, когда пользователь не участвует, например, задание автоматизации, запускаемое по времени. SDK использует эти учетные данные, когда разработчики выбирают удостоверение приложения в среде Node.js.
+`AppCredential` представляет удостоверение приложения. Удостоверение приложения можно использовать, если пользователь не участвует, например в задании автоматизации, активируемом по времени. Пакет SDK teamsFx использует следующие учетные данные при выборе удостоверения приложения в Node.js среде.
 
 Требуемая конфигурация: `tenantId`, `clientId`, `clientSecret` или `certificateContent`.
+</details>
 
 ### <a name="bot-sso"></a>SSO бота
 
 Классы, связанные с ботом, хранятся в папке [bot folder](https://github.com/OfficeDev/TeamsFx/tree/main/packages/sdk/src/bot).
 
-`TeamsBotSsoPrompt` имеет хорошую интеграцию с инфраструктурой бота. Это упрощает проверку подлинности, когда вы разрабатываете бот-приложение и хотите воспользоваться преимуществами бота единого входа.
+`TeamsBotSsoPrompt` интегрируется с bot framework. Он упрощает процесс проверки подлинности при разработке приложения бота и хочет использовать единый вход бота.
 
 Требуемая конфигурация: `initiateLoginEndpoint`, `tenantId`, `clientId` и `applicationIdUri`.
 
@@ -177,12 +145,51 @@ TeamsFx SDK предоставляет несколько функций для 
 
 Требуемая конфигурация
 
-* `sqlServerEndpoint`, `sqlUsername`если `sqlPassword` вы хотите использовать удостоверение пользователя.
-* `sqlServerEndpoint`, `sqlIdentityId` если вы хотите использовать удостоверение MSI.
+* Если вы хотите использовать удостоверение пользователя, `sqlServerEndpoint`то и `sqlPassword` `sqlUsername` являются обязательными.
+* Если вы хотите использовать удостоверение MSI, это `sqlServerEndpoint``sqlIdentityId` обязательно.
+
+### <a name="override-configuration"></a>Переопределение конфигурации
+
+Пользовательскую конфигурацию можно передать при создании `TeamsFx` нового экземпляра, чтобы переопределить конфигурацию по умолчанию или задать обязательные поля, если `environment variables` они отсутствуют.
+
+<details>
+<summary><b> Для проекта табуляции </b> </summary>
+
+Если вы создали проект вкладки с помощью Microsoft Visual Studio Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
+
+* authorityHost (REACT_APP_AUTHORITY_HOST)
+* tenantId (REACT_APP_TENANT_ID)
+* clientId (REACT_APP_CLIENT_ID)
+* initiateLoginEndpoint (REACT_APP_START_LOGIN_PAGE_URL)
+* applicationIdUri (REACT_APP_START_LOGIN_PAGE_URL)
+* apiEndpoint (REACT_APP_FUNC_ENDPOINT) // используется только при наличии серверной функции
+* apiName (REACT_APP_FUNC_NAME) // используется только при наличии серверной функции
+
+</details>
+
+<details>
+<summary><b> Для проекта функции или бота Azure </b></summary>
+
+Если вы создали проект функции или бота Azure с помощью Visual Studio Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
+
+* initiateLoginEndpoint (INITIATE_LOGIN_ENDPOINT)
+* authorityHost (M365_AUTHORITY_HOST)
+* tenantId (M365_TENANT_ID)
+* clientId (M365_CLIENT_ID)
+* clientSecret (M365_CLIENT_SECRET)
+* applicationIdUri (M365_APPLICATION_ID_URI)
+* apiEndpoint (API_ENDPOINT)
+* sqlServerEndpoint (SQL_ENDPOINT) // используется только при наличии экземпляра SQL
+* sqlUsername (SQL_USER_NAME) // используется только при наличии экземпляра SQL
+* sqlPassword (SQL_PASSWORD) // используется только при наличии экземпляра SQL
+* sqlDatabaseName (SQL_DATABASE_NAME) // используется только при наличии экземпляра sql
+* sqlIdentityId (IDENTITY_ID) // используется только при наличии экземпляра sql
+
+</details>
 
 ### <a name="error-handling"></a>Обработка ошибок
 
-Отклик об ошибке API, `ErrorWithCode`, содержит код ошибки и сообщение об ошибке. Например, чтобы отфильтровать определенную ошибку, можно использовать следующий фрагмент кода:
+Базовый тип ответа на ошибку API `ErrorWithCode`— содержит код ошибки и сообщение об ошибке. Например, чтобы отфильтровать определенную ошибку, можно использовать следующий фрагмент кода:
 
 ```ts
 try {
@@ -193,183 +200,71 @@ try {
     throw err;
   } else {
     // Silently fail because user cancels the consent dialog
-        return;
+    return;
   }
 }
 ```
 
 Если экземпляр учетных данных используется в другой библиотеке, например Microsoft Graph, возможно, эта ошибка перехвачена и преобразована.
 
-```ts
-try {
-  const teamsfx = new TeamsFx();
-  const graphClient = createMicrosoftGraphClient(teamsfx, ["User.Read"]); // Initializes MS Graph SDK using our MsGraphAuthProvider
-  const profile = await graphClient.api("/me").get();
-} catch (err: unknown) {
-  // ErrorWithCode is handled by Graph client
-  if (err instanceof GraphError && err.code?.includes(ErrorCode.UiRequiredError)) {
-    this.setState({
-      showLoginBtn: true,
-    });
-  }
-}
-```
+## <a name="microsoft-graph-scenarios"></a>Сценарии Microsoft Graph
 
-## <a name="scenarios"></a>Сценарии
+В этом разделе содержится несколько фрагментов кода для распространенных сценариев, связанных с Microsoft Graph. В таких сценариях пользователь может вызывать API, используя разные разрешения в разных концах (интерфейсе или серверной части).
 
-В следующем разделе содержится несколько фрагментов кода для распространенных сценариев.
+* Разрешение делегата пользователя во внешнем интерфейсе (использование TeamsUserCredential) <details>
+    <summary><b>Использование API graph в приложении табуляции</b></summary>
 
-<br>
+    В этом фрагменте кода показано, как использовать `TeamsFx` `createMicrosoftGraphClient` и получать профили пользователей из Microsoft Graph. Здесь также показано, как перехватывать и разрешать объект `GraphError`.
 
-<details>
-<summary><b>Использование API Graph во приложении на вкладке</b></summary>
+    1. Импортируйте необходимые классы.
 
-Используйте `TeamsFx` и `createMicrosoftGraphClient`.
+    ```ts
+    import {
+      createMicrosoftGraphClient,
+      TeamsFx,
+    } from "@microsoft/teamsfx";
+    ```
 
-```ts
-const teamsfx = new TeamsFx();
-const graphClient = createMicrosoftGraphClient(teamsfx, ["User.Read"]);
-const profile = await graphClient.api("/me").get();
-```
+    2. Используется `TeamsFx.login()` для получения согласия пользователя.
 
-</details>
+    ```ts
+    // Put these code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups.
+    await teamsfx.login(["User.Read"]); // Login with scope
+    ```
 
-<br>
+    3. Вы можете инициализировать экземпляр TeamsFx и клиент graph и получить информацию из MS Graph этим клиентом.
 
-<details>
-<summary><b>Создание клиента API для вызова существующего API в Bot или Функции Azure</b></summary>
-
-:::image type="content" source="~/assets/images/teams-toolkit-v2/teams toolkit fundamentals/createapi-client.PNG" alt-text="Создание клиента API":::
-
-</details>
-
-<br>
-
-<details>
-<summary><b>Вызовите Функцию Azure в приложении на вкладке</b></summary>
-
-Используйте библиотеку `axios`, чтобы сделать HTTP-запрос функции Azure.
-
-```ts
-const teamsfx = new TeamsFx();
-const credential = teamsfx.getCredential(); //Create an API Client that uses SSO token to authenticate requests
-const apiClient = CreateApiClient(teamsfx.getConfig("apiEndpoint")),
-new BearerTokenAuthProvider(async () =>  (await credential.getToken(""))!.token);// Call API hosted in Azure Functions on behalf of user
-const response = await apiClient.get("/api/" + functionName);
-```
-
-</details>
-
-<br>
-
-<details>
-<summary><b>Доступ к базе данных SQL в Функции Azure</b></summary>
-
-Используйте библиотеку `tedious` для доступа к SQL и использования `DefaultTediousConnectionConfiguration`, который управляет проверкой подлинности.
-Помимо `tedious` можно также составить подключение других библиотек SQL на основе результата `sqlConnectionConfig.getConfig()`.
-
-```ts
-// Equivalent to:
-// const sqlConnectConfig = new DefaultTediousConnectionConfiguration({
-//    sqlServerEndpoint: process.env.SQL_ENDPOINT,
-//    sqlUsername: process.env.SQL_USER_NAME,
-//    sqlPassword: process.env.SQL_PASSWORD,
-// });
-const teamsfx = new TeamsFx();
-// If there's only one SQL database
-const config = await getTediousConnectionConfig(teamsfx);
-// If there are multiple SQL databases
-const config2 = await getTediousConnectionConfig(teamsfx "your database name");
-const connection = new Connection(config);
-connection.on("connect", (error) => {
-  if (error) {
-    console.log(error);
-  }
-});
-```
-
-</details>
-
-<br>
-
-<details>
-<summary><b>Используйте проверку подлинности с применением сертификатов в Функции Azure</b></summary>
-
-```ts
-const authConfig = {
-  clientId: process.env.M365_CLIENT_ID,
-  certificateContent: "The content of a PEM-encoded public/private key certificate",
-  authorityHost: process.env.M365_AUTHORITY_HOST,
-  tenantId: process.env.M365_TENANT_ID,
-};
-const teamsfx = new TeamsFx(IdentityType.App);
-teamsfx.setCustomeConfig({
-  certificateContent: "The content of a PEM-encoded public/private key certificate"
-});
-const token = teamsfx.getCredential().getToken();
-```
-
-</details>
-
-<br>
-
-<details>
-<summary><b>Использование API Graph в приложении-боте</b></summary>
-
-Добавьте `TeamsBotSsoPrompt` в набор диалогов.
-
-```ts
-const { ConversationState, MemoryStorage } = require("botbuilder");
-const { DialogSet, WaterfallDialog } = require("botbuilder-dialogs");
-const { TeamsBotSsoPrompt } = require("@microsoft/teamsfx");
-
-const convoState = new ConversationState(new MemoryStorage());
-const dialogState = convoState.createProperty("dialogState");
-const dialogs = new DialogSet(dialogState);
-
-const teamsfx = new TeamsFx();
-dialogs.add(
-  new TeamsBotSsoPrompt(teamsfx, "TeamsBotSsoPrompt", {
-    scopes: ["User.Read"],
-  })
-);
-
-dialogs.add(
-  new WaterfallDialog("taskNeedingLogin", [
-    async (step) => {
-      return await step.beginDialog("TeamsBotSsoPrompt");
-    },
-    async (step) => {
-      const token = step.result;
-      if (token) {
-        // ... continue with task needing access token ...
-      } else {
-        await step.context.sendActivity(`Sorry... We couldn't log you in. Try again later.`);
-        return await step.endDialog();
+    ```ts
+    try {
+      const teamsfx = new TeamsFx();
+      const graphClient = createMicrosoftGraphClient(teamsfx, ["User.Read"]); // Initializes MS Graph SDK using our MsGraphAuthProvider
+      const profile = await graphClient.api("/me").get();
+    } catch (err: unknown) {
+      // ErrorWithCode is handled by Graph client
+      if (err instanceof GraphError && err.code?.includes(ErrorCode.UiRequiredError)) {
+        // Need to show login button to ask for user consent.
       }
-    },
-  ])
-);
-```
+    }
+    ```
 
-</details>
+    Дополнительные сведения о примере использования API Graph в приложении tab см. в примере [вкладки hello-world](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab).
 
-<br>
+    </details>
 
-<details>
-<summary><b>Интеграция с Microsoft Graph Toolkit</b></summary>
+    <details>
+    <summary><b>Интеграция с Microsoft Graph Toolkit</b></summary>
 
-Библиотека [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) — это коллекция различных поставщиков проверки подлинности и компонентов пользовательского интерфейса на базе Microsoft Graph. 
+    Библиотека [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) — это коллекция различных поставщиков проверки подлинности и компонентов пользовательского интерфейса на базе Microsoft Graph.
 
-Пакет `@microsoft/mgt-teamsfx-provider` предоставляет класс `TeamsFxProvider` , `TeamsFx` который использует класс для входа пользователей и получения маркеров для использования с Graph.
+    Пакет `@microsoft/mgt-teamsfx-provider` предоставляет класс, `TeamsFxProvider` использующий `TeamsFx` класс для входа пользователей и получения маркеров для использования с Graph.
 
-1. Установите необходимые пакеты.
+    1. Вы можете установить следующие необходимые пакеты:
 
     ```bash
     npm install @microsoft/mgt-element @microsoft/mgt-teamsfx-provider @microsoft/teamsfx
     ```
 
-2. Инициализировать поставщик внутри компонента.
+    2. Инициализировать поставщик внутри компонента.
 
     ```ts
     // Import the providers and credential at the top of the page
@@ -383,7 +278,7 @@ dialogs.add(
     Providers.globalProvider = provider;
     ```
 
-3. Используйте этот `teamsfx.login(scopes)` метод для получения необходимого маркера доступа.
+    3. Этот метод можно использовать `teamsfx.login(scopes)` для получения необходимого маркера доступа.
 
     ```ts
     // Put these code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups. 
@@ -391,7 +286,7 @@ dialogs.add(
     Providers.globalProvider.setState(ProviderState.SignedIn);
     ```
 
-4. Теперь вы можете добавить любой компонент на HTML-странице `render()` `TeamsFx` или в методе, React использовать контекст для доступа к Microsoft Graph.
+    4. Теперь вы можете добавить любой компонент на HTML-странице `render()` или в методе, React `TeamsFx` использовать контекст для доступа к Microsoft Graph.
 
     ```html
     <mgt-person query="me" view="threeLines"></mgt-person>
@@ -407,21 +302,271 @@ dialogs.add(
     }
     ```
 
-Дополнительные сведения о примере для инициализации поставщика TeamsFx см. в примере [экспорта контактов](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab-with-backend).
+    Дополнительные сведения о примере для инициализации поставщика TeamsFx см. в примере [экспорта контактов](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/graph-toolkit-contact-exporter).
+
+    </details>
+
+* Разрешение делегата пользователя в серверной части (use OnBehalfOfUserCredential) <details>
+    <summary><b>Использование API Graph в приложении бота</b></summary>
+
+    В этом фрагменте кода показано `TeamsBotSsoPrompt` , как задать диалоговое окно, а затем выполнить вход для получения маркера доступа.
+
+    1. Инициализация и добавление `TeamsBotSsoPrompt` в набор диалогов.
+
+    ```ts
+    const { ConversationState, MemoryStorage } = require("botbuilder");
+    const { DialogSet, WaterfallDialog } = require("botbuilder-dialogs");
+    const { TeamsBotSsoPrompt } = require("@microsoft/teamsfx");
+
+    const convoState = new ConversationState(new MemoryStorage());
+    const dialogState = convoState.createProperty("dialogState");
+    const dialogs = new DialogSet(dialogState);
+
+    const teamsfx = new TeamsFx();
+    dialogs.add(
+      new TeamsBotSsoPrompt(teamsfx, "TeamsBotSsoPrompt", {
+        scopes: ["User.Read"],
+      })
+    );
+    ```
+
+    2. Начните диалоговое окно и войдите в систему.
+
+    ```ts
+    dialogs.add(
+      new WaterfallDialog("taskNeedingLogin", [
+        async (step) => {
+          return await step.beginDialog("TeamsBotSsoPrompt");
+        },
+        async (step) => {
+          const token = step.result;
+          if (token) {
+            // ... continue with task needing access token ...
+          } else {
+            await step.context.sendActivity(`Sorry... We couldn't log you in. Try again later.`);
+            return await step.endDialog();
+          }
+        },
+      ])
+    );
+    ```
+
+    Дополнительные сведения о примере использования API Graph в приложении бота см. в примере [bot-sso](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/bot-sso).
+
+    </details>
+
+    <details>
+    <summary><b>Вызов функции Azure в приложении табуляции: поток On-Behalf-Of</b></summary>
+
+    В этом фрагменте `CreateApiClient` `axios` кода показано, как использовать или библиотеку для вызова функции Azure, а также как вызывать API Graph в функции Azure для получения профилей пользователей.
+
+    1. Пакет SDK `CreateApiClient` TeamsFx можно использовать для вызова функции Azure:
+
+    ```ts
+    async function callFunction(teamsfx?: TeamsFx) {
+      const teamsfx = new TeamsFx();
+
+      // Get the credential.
+      const credential = teamsfx.getCredential(); 
+      // Create an API client by providing the token and endpoint.
+      const apiClient = CreateApiClient(
+        teamsfx.getConfig("YOUR_API_ENDPOINT"), // Create an API Client that uses SSO token to authenticate requests
+        new BearerTokenAuthProvider(async () =>  (await credential.getToken(""))!.token) // Call API hosted in Azure Functions on behalf of user to inject token to request header
+      );
+
+      // Send a GET request to "RELATIVE_API_PATH", "/api/functionName" for example.
+      const response = await apiClient.get("RELATIVE_API_PATH");
+      return response.data;
+    }
+    ```
+
+    Вы также можете использовать библиотеку `axios` для вызова функции Azure.
+
+    ```ts
+    async function callFunction(teamsfx?: TeamsFx) {
+      const accessToken = await teamsfx.getCredential().getToken(""); // Get SSO token 
+      // teamsfx.getConfig("apiEndpoint") will read REACT_APP_FUNC_ENDPOINT environment variable 
+      const endpoint = teamsfx.getConfig("apiEndpoint");
+      const response = await axios.default.get(endpoint + "/api/" + functionName, {
+        headers: {
+          authorization: "Bearer " + accessToken.token,
+        },
+      });
+      return response.data;
+    }
+    ```
+
+    2. Вызов API Graph в функции Azure от имени пользователя в ответ.
+
+    ```ts
+    export default async function run(
+      context: Context,
+      req: HttpRequest,
+      teamsfxContext: TeamsfxContext
+    ): Promise<Response> {
+      const res: Response = { status: 200, body: {},};
+      // ...
+      teamsfx = new TeamsFx().setSsoToken(accessToken);
+      // Query user's information from the access token.
+      try {
+        const currentUser: UserInfo = await teamsfx.getUserInfo();
+        if (currentUser && currentUser.displayName) {
+          res.body.userInfoMessage = `User display name is ${currentUser.displayName}.`;
+        } else {
+          res.body.userInfoMessage = "No user information was found in access token.";
+        }
+      } catch (e) {
+      }
+      // Create a graph client to access user's Microsoft 365 data after user has consented.
+      try {
+        const graphClient: Client = createMicrosoftGraphClient(teamsfx, [".default"]);
+        const profile: any = await graphClient.api("/me").get();
+        res.body.graphClientMessage = profile;
+      } catch (e) {
+      }
+      return res;
+    }
+    ```
+
+    Дополнительные сведения об использовании API Graph в приложении бота см. в примере  [hello-world-tab-with-backend](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab-with-backend).
+
+    </details>
+
+* Разрешение приложения в серверной части <details>
+    <summary><b>Используйте проверку подлинности с применением сертификатов в Функции Azure</b></summary>
+
+    В этом фрагменте кода показано, как использовать разрешение приложения на основе сертификатов для получения маркера, который можно использовать для вызова API Graph.
+
+    1. Вы можете инициализировать `authConfig` объект, указав .`PEM-encoded key certificate`
+
+    ```ts
+    const authConfig = {
+      clientId: process.env.M365_CLIENT_ID,
+      certificateContent: "The content of a PEM-encoded public/private key certificate",
+      authorityHost: process.env.M365_AUTHORITY_HOST,
+      tenantId: process.env.M365_TENANT_ID,
+    };
+    ```
+
+    2. Этот маркер можно использовать `authConfig` для получения маркера.
+
+    ```ts
+    const teamsfx = new TeamsFx(IdentityType.App);
+    teamsfx.setCustomeConfig(authConfig);
+    const token = teamsfx.getCredential().getToken();
+    ```
+
+    </details>
+
+    <details>
+    <summary><b>Использование проверки подлинности секрета клиента в функции Azure</b></summary>
+
+    В этом фрагменте кода показано, как использовать разрешение приложения секрета клиента для получения маркера, который можно использовать для вызова API Graph.
+
+    1. Вы можете инициализировать `authConfig` объект, указав .`client secret`
+
+    ```ts
+    const authConfig = {
+      clientId: process.env.M365_CLIENT_ID,
+      clientSecret: process.env.M365_CLIENT_SECRET,
+      authorityHost: process.env.M365_AUTHORITY_HOST,
+      tenantId: process.env.M365_TENANT_ID,
+    };
+    ```
+
+    2. Этот маркер можно использовать `authConfig` для получения маркера.
+
+    ```ts
+    const teamsfx = new TeamsFx(IdentityType.App);
+    teamsfx.setCustomeConfig(authConfig);
+    const token = teamsfx.getCredential().getToken();
+    ```
+
+    Дополнительные сведения об использовании API Graph в приложении бота см. в примере [hello-world-tab-with-backend](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab-with-backend).
+
+    </details>
+
+## <a name="other-scenarios"></a>Прочие сценарии
+
+В этом разделе содержится несколько фрагментов кода для других сценариев, связанных с Microsoft Graph. Вы можете создать клиент API в Bot или Функции Azure и получить доступ к базе данных SQL в Функции Azure.
+
+  <details>
+  <summary><b>Создание клиента API для вызова существующего API в Bot или Функции Azure</b></summary>
+
+  В этом фрагменте кода показано, как вызвать существующий API в Bot с помощью `ApiKeyProvider`.
+
+  ```ts
+  const teamsfx = new TeamsFx();
+
+  // Create an API Key auth provider. In addition to APiKeyProvider, following auth providers are also available:
+  // BearerTokenAuthProvider, BasicAuthProvider, CertificateAuthProvider.
+  const authProvider = new ApiKeyProvider("YOUR_API_KEY_NAME",
+    teamsfx.getConfig("YOUR_API_KEY_VALUE"), // This reads the value of YOUR_API_KEY_VALUE environment variable.
+    ApiKeyLocation.Header
+  );
+
+  // Create an API client using above auth provider.
+  // You can also implement AuthProvider interface and use it here.
+  const apiClient = createApiClient(
+    teamsfx.getConfig("YOUR_API_ENDPOINT"), // This reads YOUR_API_ENDPOINT environment variable.
+    authProvider
+  );
+
+  // Send a GET request to "RELATIVE_API_PATH", "/api/apiname" for example.
+  const response = await apiClient.get("RELATIVE_API_PATH");
+  ```
+
+  </details>
+
+  <details>
+  <summary><b>Доступ к базе данных SQL в Функции Azure</b></summary>
+
+  Используйте `tedious` библиотеку для доступа к SQL и использования, `DefaultTediousConnectionConfiguration` который управляет проверкой подлинности. Вы также можете создать конфигурацию подключения других библиотек SQL на основе результата `sqlConnectionConfig.getConfig()`.
+
+  1. Задайте конфигурацию подключения.
+
+  ```ts
+  // Equivalent to:
+  // const sqlConnectConfig = new DefaultTediousConnectionConfiguration({
+  //    sqlServerEndpoint: process.env.SQL_ENDPOINT,
+  //    sqlUsername: process.env.SQL_USER_NAME,
+  //    sqlPassword: process.env.SQL_PASSWORD,
+  // });
+  const teamsfx = new TeamsFx();
+  // If there's only one SQL database
+  const config = await getTediousConnectionConfig(teamsfx);
+  // If there are multiple SQL databases
+  const config2 = await getTediousConnectionConfig(teamsfx, "your database name");
+  ```
+
+  2. Подключитесь к базе данных.
+
+  ```ts
+  const connection = new Connection(config);
+  connection.on("connect", (error) => {
+    if (error) {
+      console.log(error);
+    }
+  });
+  ```
+
+  > [!NOTE]
+  > Дополнительные сведения о примере доступа к базе данных SQL в функции Azure см. в [примере share-now](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/share-now).
 
 </details>
-
-<br>
 
 ## <a name="advanced-customization"></a>Дополнительная настройка
 
 ### <a name="configure-log"></a>Настройка журнала
 
-При использовании этой библиотеки можно настроить уровень журнала клиента и перенаправить выходные данные. По умолчанию ведение журнала отключено. Вы можете включить его, настроив уровень ведения журнала.
+При использовании этой библиотеки можно настроить уровень журнала клиента и перенаправить выходные данные.
+
+> [!NOTE]
+> По умолчанию ведение журнала отключено. Вы можете включить его, настроив уровень ведения журнала.
 
 #### <a name="enable-log-by-setting-log-level"></a>Включите журнал, установив уровень ведения журнала
 
-Ведение журнала включено, только если установлен уровень ведения журнала. По умолчанию данные журнала печатаются на консоли.
+При установке уровня журнала ведение журнала будет включено. По умолчанию он выводит сведения журнала в консоль.
 
 Установите уровень журнала, используя следующий фрагмент кода:
 
@@ -430,7 +575,8 @@ dialogs.add(
 setLogLevel(LogLevel.Warn);
 ```
 
-Вы можете перенаправить выходные данные журнала, настроив пользовательский регистратор или функцию журнала.
+> [!NOTE]
+> Вы можете перенаправить выходные данные журнала, настроив пользовательский регистратор или функцию журнала.
 
 #### <a name="redirect-by-setting-custom-logger"></a>Перенаправление путем настройки пользовательской записи журнала
 
@@ -441,9 +587,6 @@ setLogger(context.log);
 ```
 
 #### <a name="redirect-by-setting-custom-log-function"></a>Перенаправление путем настройки пользовательской функции журнала
-
-> [!NOTE]
-> Функция журнала не будет действовать, если вы настроили пользовательский регистратор.
 
 ```ts
 setLogLevel(LogLevel.Info);
@@ -458,48 +601,22 @@ setLogFunction((level: LogLevel, message: string) => {
 });
 ```
 
-## <a name="override-configuration"></a>Переопределение конфигурации
-
-Вы можете передать настраиваемую конфигурацию при создании экземпляра TeamsFx, чтобы переопределить конфигурацию по умолчанию или настроить необходимые поля, если отсутствуют переменные среды.
-
-* Если вы создали проект вкладки с помощью VS Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
-  * authorityHost (REACT_APP_AUTHORITY_HOST)
-  * tenantId (REACT_APP_TENANT_ID)
-  * clientId (REACT_APP_CLIENT_ID)
-  * initiateLoginEndpoint (REACT_APP_START_LOGIN_PAGE_URL)
-  * applicationIdUri (REACT_APP_START_LOGIN_PAGE_URL)
-  * apiEndpoint (REACT_APP_FUNC_ENDPOINT)
-  * apiName (REACT_APP_FUNC_NAME)
-
-* Если вы создали проект функции или бота Azure с помощью VS Code Toolkit, из предварительно настроенных переменных среды будут использоваться следующие значения конфигурации:
-  * initiateLoginEndpoint (INITIATE_LOGIN_ENDPOINT)
-  * authorityHost (M365_AUTHORITY_HOST)
-  * tenantId (M365_TENANT_ID)
-  * clientId (M365_CLIENT_ID)
-  * clientSecret (M365_CLIENT_SECRET)
-  * applicationIdUri (M365_APPLICATION_ID_URI)
-  * apiEndpoint (API_ENDPOINT)
-  * sqlServerEndpoint (SQL_ENDPOINT)
-  * sqlUsername (SQL_USER_NAME)
-  * sqlPassword (SQL_PASSWORD)
-  * sqlDatabaseName (SQL_DATABASE_NAME)
-  * sqlIdentityId (IDENTITY_ID)
+> [!NOTE]
+> Функции журнала не вступает в силу при настройке пользовательского средства ведения журнала.
 
 ## <a name="upgrade-latest-sdk-version"></a>Обновление последней версии SDK
 
-Если вы используете версию SDK с `loadConfiguration()`, сделайте следующее, чтобы обновить SDK до последней версии.
+Если вы используете версию пакета SDK `loadConfiguration()`, выполните следующие действия, чтобы обновить пакет SDK до последней версии:
 
 1. Удалите `loadConfiguration()` и передайте настроенные параметры с помощью `new TeamsFx(IdentityType.User, { ...customConfig })`
-2. Заменить `new TeamsUserCredential()` на `new TeamsFx()`
-3. Заменить `new M365TenantCredential()` на `new TeamsFx(IdentityType.App)`
-4. Заменить `new OnBehalfOfUserCredential(ssoToken)` на `new TeamsFx().setSsoToken(ssoToken)`
-5. Передайте экземпляр `TeamsFx` вспомогательным функциям помощи для замены экземпляра учетных данных
-
-Дополнительные сведения см. в статье [класс TeamsFx](#teamsfx-class).
+2. Замените `new TeamsUserCredential()` на `new TeamsFx()`.
+3. Замените `new M365TenantCredential()` на `new TeamsFx(IdentityType.App)`.
+4. Замените `new OnBehalfOfUserCredential(ssoToken)` на `new TeamsFx().setSsoToken(ssoToken)`.
+5. Передайте экземпляр вспомогательных `TeamsFx` функций для замены экземпляра учетных данных.
 
 ## <a name="next-step"></a>Следующий этап
 
-Проект [образцов](https://github.com/OfficeDev/TeamsFx-Samples) для подробных образцов того, как следует использовать TeamsFx SDK.
+Подробные примеры использования проекта примеров пакета [SDK для](https://github.com/OfficeDev/TeamsFx-Samples) TeamsFx.
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 

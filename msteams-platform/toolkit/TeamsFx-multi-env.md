@@ -1,69 +1,69 @@
 ---
 title: Работа с несколькими средами TeamsFX в наборе средств Teams
-author: MuyangAmigo
+author: surbhigupta
 description: В этом модуле вы узнаете о нескольких средах TeamsFX, таких как создание среды, выбор целевой среды и т. д.
-ms.author: nintan
+ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 11/29/2021
-ms.openlocfilehash: c5f3878b49f3846bff717cd2358fcb122e2b658d
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
+ms.openlocfilehash: 4a4b67399b2ec7c78fa536b06ee7faa9bb352468
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841689"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616947"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
- Набор средств Teams предоставляет простой способ, чтобы создать несколько сред и управлять ими, подготовить и развернуть артефакты в целевой среде для приложения Teams.
+ Microsoft Teams Toolkit предоставляет простой способ создания и управления несколькими средами, подготовки и развертывания артефактов в целевой среде для приложения Microsoft Teams.
 
- С несколькими средами можно выполнять следующие действия:
+ В нескольких средах можно выполнить следующие действия:
 
 1. **Тестирование перед** рабочей средой. Вы можете настроить несколько сред, таких как разработка, тестирование и промежуточное хранение, перед публикацией приложения Teams в рабочей среде в современном жизненном цикле разработки приложений.
 
-2. **Управление поведением** приложений в разных средах. Вы можете настроить различные поведения для нескольких сред, например включить телеметрию в рабочей среде, но отключить ее в среде разработки.
+2. **Управление поведением приложений в разных средах**. Вы можете настроить различные поведения приложений для нескольких сред, таких как включение телеметрии в рабочей среде.
 
-## <a name="prerequisite"></a>Предварительное условие
+   > [!NOTE]
+   > Убедитесь, что данные телеметрии отключены в среде разработки.
 
-* Установка [последней версии набора средств Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
+   > [!TIP]
+   > Откройте проект приложения Teams в Visual Studio Code.
 
-> [!TIP]
-> Откройте проект приложения Teams в Visual Studio Code.
+## <a name="create-new-environment"></a>Создание среды
 
-## <a name="create-a-new-environment"></a>Создайте новую среду
+После создания проекта Набор средств Teams по умолчанию настраивает:
 
-После создания нового проекта набор средств Teams по умолчанию создает всё нижеперечисленное:
-
-* Одна среда `local`, представляющая конфигурации среды локального компьютера
-* Одна среда `dev`, представляющая конфигурации удаленной или облачной среды
+* Одна `local` среда, представляющая конфигурацию среды локального компьютера.
+* Одна `dev` среда, представляющая конфигурацию удаленной или облачной среды.
 
 > [!NOTE]
 > Каждый проект может иметь только одну среду `local`, но несколько удаленных сред.
 
-**Чтобы добавить другую удаленную среду**:
+**Добавьте удаленную среду**:
 
-1. Выберите панель **"Добавить** :::image type="content" source="~/assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png" alt-text="боковую панель"::: " для единого входа Teams на левой панели навигации.
-2. Выберите **+Teams: Создайте среду в** разделе **"Среда** ", как показано на следующем рисунке:
+1. Выберите набор **средств Teams** :::image type="content" source="~/assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png" alt-text="на панели действий"::: на панели действий.
+2. Выберите **+Teams: create new environment** under the **ENVIRONMENT** section as shown in the following image:
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create new env.png" alt-text="создать":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create new env.png" alt-text="создание среды":::
 
-   Если у вас несколько сред, необходимо выбрать существующую среду, чтобы создать ту же среду. Эта команда копирует содержимое `config.<newEnv>.json` и `azure.parameters.<newEnv>.json` из существующей среды, выбранной вами, в созданную среду.
+> [!Note]
+> Если у вас несколько сред, необходимо выбрать существующую среду, чтобы создать ту же среду. Эта команда копирует содержимое файла `config.<newEnv>.json` `azure.parameters.<newEnv>.json` из существующей среды, выбранной вами, и из нее в созданную среду.
 
-## <a name="select-target-environment"></a>Выбор целевой среды
+## <a name="target-environment"></a>Целевая среда
 
-Вы можете выбрать целевую среду для всех операций, связанных со средой. При наличии нескольких удаленных сред набор средств просит указать целевую среду, как показано на следующем рисунке:
+Вы можете выбрать целевую среду. Набор средств Teams предложит выбрать целевую среду при наличии нескольких удаленных сред:
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="add env":::
 
 ## <a name="project-folder-structure"></a>Структура папки проекта
 
-После создания проекта можно просмотреть папки и файлы проекта в **обозревателе** в VS Code. Помимо пользовательских кодов, Набор средств Teams использует некоторые файлы для поддержки конфигурации, состояния и шаблона приложения. Следующий список перечисляет файлы и описывает их связь с несколькими средами.
+После создания проекта можно просмотреть папки и файлы проекта в **обозревателе** в Visual Studio Code. Помимо пользовательских кодов, Набор средств Teams `configs``states``templates` использует некоторые файлы для обслуживания приложения и приложения. Следующий список перечисляет файлы и описывает их связь с несколькими средами.
 
-* `.fx/configs`: настройте файлы, которые пользователь может настроить для приложения Teams.
+* `.fx/configs`: настраивает файлы, которые пользователь может настроить для приложения Teams.
   * `config.<envName>.json`: файл конфигурации для каждой среды.
   * `azure.parameters.<envName>.json`: файл параметров для подготовки Azure bicep для каждой среды.
   * `projectSettings.json`: глобальные параметры проекта, которые применяются ко всем средам.
-* `.fx/states`: подготовка результата, созданного набором средств.
+* `.fx/states`: подготовка результата, созданного набором средств Teams.
   * `state.<envName>.json`: подготовка выходного файла для каждой среды.
   * `<env>.userdata`: пользовательские данные для выходных данных подготовки для каждой среды.
 * `templates`
@@ -78,11 +78,11 @@ ms.locfileid: "66841689"
 
 | Сценарии | Расположение| Описание |
 | --- | --- | --- |
-| Настройка ресурса Azure | <ul> <li>Файлы Bicep в `templates/azure`</li> <li>`.fx/azure.parameters.<envName>.json`</li></ul> | [Настройка параметров и шаблонов ARM](provision.md#customize-arm-template-files) |
-| Повторное использование существующего приложения Azure AD для приложения Teams  | <ul> <li>Раздел `auth` в `.fx/config.<envName>.json`</li> </ul> |  [Использование существующего приложения Azure AD для приложения Teams](provision.md#use-an-existing-azure-ad-app-for-your-teams-app) |
-| Повторное использование существующего приложения Azure AD для бота | <ul> <li>Раздел `bot` в `.fx/config.<envName>.json`</li> </ul> | [Использование существующего приложения Azure AD для бота](provision.md#use-an-existing-azure-ad-app-for-your-bot) |
-| Пропустить добавление пользователя во время подготовки SQL | <ul> <li>Свойство `skipAddingSqlUser` в `.fx/config.<envName>.json`</li> </ul> | [Пропустить добавление пользователя для базы данных SQL](provision.md#skip-adding-user-for-sql-database) |
-| Настройка манифеста приложения | <ul> <li>`templates/manifest.template.json`</li> <li>Раздел `manifest` в `.fx/config.<envName>.json`</li>  </ul> | [Предварительный просмотр манифеста приложения в наборе средств](TeamsFx-preview-and-customize-app-manifest.md)|
+| Настройка ресурса Azure |Файлы Bicep в `templates/azure` `.fx/azure.parameters.<envName>.json` | [Настройка параметров и шаблонов ARM](provision.md#customize-arm-template-files) |
+| Повторное использование существующего приложения Azure AD для приложения Teams  | Раздел `auth` в `.fx/config.<envName>.json`|  [Использование существующего приложения Azure AD для приложения Teams](provision.md#use-an-existing-azure-ad-app-for-your-teams-app) |
+| Повторное использование существующего приложения Azure AD для бота |Раздел `bot` в `.fx/config.<envName>.json`| [Использование существующего приложения Azure AD для бота](provision.md#use-an-existing-azure-ad-app-for-your-bot) |
+| Пропустить добавление пользователя во время подготовки SQL |Свойство `skipAddingSqlUser` в `.fx/config.<envName>.json`| [Пропустить добавление пользователя для базы данных SQL](provision.md#skip-adding-user-for-sql-database) |
+| Настройка манифеста приложения |`templates/manifest.template.json` файл в разделе `manifest` в `.fx/config.<envName>.json`| [Предварительный просмотр манифеста приложения в наборе средств](TeamsFx-preview-and-customize-app-manifest.md)|
 
 ## <a name="scenarios"></a>Сценарии
 
@@ -94,12 +94,12 @@ ms.locfileid: "66841689"
 
 В качестве имени приложения Teams можно `myapp(dev)` задать среду по `dev` умолчанию и `myapp(staging)` промежуточную среду `staging`.
 
-Выполните действия по настройке:
+Действия по настройке:
 
 1. Откройте файл конфигурации `.fx/configs/config.dev.json`.
-2. Обновите свойство *манифеста > appName > на* `myapp(dev)`.
+2. Обновите свойство **short****`appName`** > **`manifest`** >  до .**`myapp(dev)`**
 
-  Изменения `.fx/configs/config.dev.json` будут выглядеть следующим образом:
+  Обновления:`.fx/configs/config.dev.json`
 
   ```json
   {
@@ -115,10 +115,10 @@ ms.locfileid: "66841689"
   }
   ```
 
-3. Создайте новую среду и приведите `staging` к ней имя, если она не существует.
+3. Вы можете создать новую среду и указать ее имя `staging` , если она не существует.
 4. Откройте файл конфигурации `.fx/configs/config.staging.json`.
 5. Обновите то же свойство `myapp(staging)`.
-6. Запустите команду подготовки для сред `dev` и `staging`, чтобы обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с помощью Набора средств Teams см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit).
+6. Теперь можно выполнить команду подготовки в среде `dev` `staging` и обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с помощью Набора средств Teams см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit).
 
 </details>
 
@@ -130,12 +130,12 @@ ms.locfileid: "66841689"
 * Для среды по умолчанию `dev`описание равно `my app description for dev`.
 * Для промежуточной среды `staging`описанием является `my app description for staging`.
 
-Выполните действия по настройке:
+Действия по настройке:
 
 1. Откройте файл конфигурации `.fx/configs/config.dev.json`.
-2. Добавьте новое свойство манифеста *> описание > с* значением `my app description for dev`.
+2. Добавление нового свойства со **`manifest`** > **`short`** > **`description`** значением.**`my app description for dev`**
 
-  Изменения `.fx/configs/config.dev.json` будут выглядеть следующим образом:
+  Обновления:`.fx/configs/config.dev.json`
 
   ```json
   {
@@ -156,9 +156,9 @@ ms.locfileid: "66841689"
 4. Откройте файл конфигурации `.fx/configs/config.staging.json`.
 5. Добавьте то же свойство в `my app description for staging`.
 6. Откройте шаблон манифеста приложения `templates/appPackage/manifest.template.json`Teams.
-7. Обновите свойство, `description > short` чтобы использовать **переменную,** определенную в настройках файлов с синтаксисом кэша `{{config.manifest.description.short}}`.
+7. Обновите свойство, **`description`** > **`short`** чтобы использовать **переменную,** определенную в настройках файлов с синтаксисом кэша **`{{config.manifest.description.short}}`**.
   
-  Изменения `manifest.template.json` будут выглядеть следующим образом:
+  Обновления:`manifest.template.json`
 
   ```json
   {
@@ -174,7 +174,7 @@ ms.locfileid: "66841689"
   }
   ```
 
-8. Выполните команду подготовки для сред `dev` и `staging`, чтобы обновить имя приложения в удаленных средах.
+8. Теперь можно выполнить команду подготовки в среде `dev` `staging` и в среде, чтобы обновить имя приложения в удаленных средах.
 
 </details>
 
@@ -186,9 +186,9 @@ ms.locfileid: "66841689"
 Так как шаблон манифеста приложения Teams используется во всех средах, мы можем обновить в нем значение описания для нашей целевой среды:
 
 1. Откройте шаблон манифеста приложения `templates/appPackage/manifest.template.json`Teams.
-2. Обновите свойство `description > short` **с жестко заданной строкой**`my app description`.
+2. Обновите свойство **`description`** > **`short`** с жестко заданной строкой.**`my app description`**
   
-  Изменения `manifest.template.json` будут выглядеть следующим образом:
+  Обновления:`manifest.template.json`
 
   ```json
   {
@@ -205,15 +205,16 @@ ms.locfileid: "66841689"
 
   ```
 
-3. Выполните команду подготовки для **всех сред**, чтобы обновить имя приложения в удаленных средах.
+3. Теперь можно выполнить команду подготовки во всех  средах, чтобы обновить имя приложения в удаленных средах.
 
 </details>
 
 <details>
 <br><summary><b>Сценарий 4. Настройка ресурсов Azure для разных сред</b></summary>
+
 Вы можете настроить ресурсы Azure для каждой среды, например изменить среду, соответствующую fx/configs/azure.parameters. {env}.json-файл для указания имени функции Azure.
 
-Дополнительные сведения о файлах шаблонов и параметров Bicep см. в разделе ["Подготовка облачных ресурсов".](provision.md)
+Дополнительные сведения о файлах шаблонов и параметров Bicep см. в разделе ["Подготовка облачных ресурсов"](provision.md).
 </details>
 </br>
 
@@ -222,3 +223,4 @@ ms.locfileid: "66841689"
 * [Подготовка облачных ресурсов](provision.md)
 * [Добавление дополнительных облачных ресурсов](add-resource.md)
 * [Совместная работа с другими разработчиками в проекте Teams](TeamsFx-collaboration.md)
+* [Тестирование поведения приложения в разных средах](test-app-behavior.md)

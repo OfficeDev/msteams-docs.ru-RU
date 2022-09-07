@@ -1,23 +1,31 @@
 ---
-title: Манифест приложения Teams в Наборе средств Teams
+title: Настройка манифеста приложения Teams в наборе средств Teams
 author: zyxiaoyuer
 description: В этом модуле вы узнаете, как изменять, просматривать и настраивать манифест приложений Teams в другой среде.
 ms.author: nliu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/13/2022
-ms.openlocfilehash: 2365d7adbebca011af9d4204b2a305a6131f72a5
-ms.sourcegitcommit: 209b9942c02b5affdd995348902114d3b9805c61
+ms.openlocfilehash: a3c8031c8c810fb7425a07c4627bb773cec2de5a
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67288145"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616688"
 ---
-# <a name="edit-teams-app-manifest-for-visual-studio"></a>Изменение манифеста приложения Teams для Visual Studio
+# <a name="customize-teams-app-manifest"></a>Настройка манифеста приложения Teams
+
+Манифест приложения Teams описывает, как ваше приложение интегрируется в продукт Microsoft Teams. Дополнительные сведения о манифесте см. в схеме [манифеста приложения для Teams](../resources/schema/manifest-schema.md). Содержание раздела:
+
+* [Предварительный просмотр файла манифеста в локальной среде](#preview-manifest-file-in-local-environment)
+* [Предварительный просмотр файла манифеста в удаленной среде](#preview-manifest-file-in-remote-environment)
+* [Синхронизация локальных изменений на портале разработки](#sync-local-changes-to-dev-portal)
+* [Настройка манифеста приложения Teams](#customize-teams-app-manifest)
+* [Проверка манифеста](#validate-manifest)
 
 Файл шаблона манифеста `manifest.template.json` доступен в папке `templates/appPackage` после скаффолдинга. Файл шаблона с заполнителями и фактическими значениями разрешается набором средств Teams `.fx/configs` `.fx/states` с помощью файлов в разных средах и для разных сред.
 
-**Чтобы просмотреть манифест с фактическим содержимым, Teams Toolkit создает файлы манифеста предварительной версии в папке`build/appPackage`**:
+Чтобы просмотреть манифест с фактическим содержимым, Teams Toolkit создает файлы манифеста предварительной версии в папке `build/appPackage` :
 
 ```text
 └───build
@@ -37,11 +45,36 @@ ms.locfileid: "67288145"
 
 Чтобы просмотреть файл манифеста в локальной среде, можно нажать **клавишу F5** , чтобы запустить локальную отладку. Будут созданы локальные параметры по умолчанию, а затем пакет приложения и предварительные сборки манифеста в папке `build/appPackage`.
 
-Вы также можете просмотреть локальный файл манифеста, выполнив следующие действия.
+Вы также можете просмотреть локальный файл манифеста двумя способами.
 
-1. Выберите **"Предварительный** просмотр" в коде файла `manifest.template.json` и выберите **локальный**.
-2. Выберите **файл манифеста предварительного просмотра** в строке меню `manifest.template.json` файла.
-3. Выберите **пакет метаданных Zip Teams** в Treeview и выберите **локальный**.
+* Использование параметра предварительного просмотра в codelens
+* Использование параметра **пакета метаданных Zip Teams**
+
+Ниже приведены инструкции по предварительному просмотру локального файла манифеста с помощью параметра предварительного просмотра в codelens.
+
+1. Выберите **"Предварительный** просмотр" в коде файла `manifest.template.json` .
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Предварительный просмотр":::
+
+1. Выберите **локальный**.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-env1.png" alt-text="Выбор среды1":::
+
+Ниже приведены инструкции по предварительному просмотру локального файла манифеста с помощью параметра пакета **метаданных Zip Teams** :
+
+1. Выберите `manifest.template.json` файл.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-manifest-json.png" alt-text="Выберите манифест":::
+
+1. Щелкните значок Набора средств :::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG"::: Teams на Visual Studio Code панели инструментов.
+
+1. Выберите **пакет метаданных Zip Teams в** разделе **DEPLOYMENT**.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-metadata-package.png" alt-text="Выбор пакета метаданных Teams":::
+
+1. Выберите **локальный**.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-env1.png" alt-text="Выбор среды":::
 
 Локальный предварительный просмотр отображается, как показано на изображении.
 
@@ -49,28 +82,63 @@ ms.locfileid: "67288145"
 
 ## <a name="preview-manifest-file-in-remote-environment"></a>Предварительный просмотр файла манифеста в удаленной среде
 
-**Просмотр файла манифеста в удаленной среде**
+Чтобы просмотреть файл манифеста с помощью Visual Studio Code:
 
-* Выберите **"Подготовка в облаке"** в **разделе "РАЗРАБОТКА** " в расширении Набора средств Teams или
+* Выберите **"Подготовка в облаке"** в разделе **"РАЗРАБОТКА** " в расширении Набора средств Teams
+  
+  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/provision.png" alt-text="Подготовка облачного ресурса":::
+
+Чтобы просмотреть файл манифеста с помощью командыtte:
+
 * **Триггер Teams: подготовка в облаке из** палитры команд.
+
+  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/command palatte.png" alt-text="Подготовка облачного ресурса с помощью команды azure":::
 
 Он создает конфигурацию для удаленного приложения Teams и создает пакет и манифест предварительного просмотра в папке `build/appPackage` .
 
-Вы также можете просмотреть файл манифеста в удаленной среде, выполнив следующие действия.
+Вы также можете просмотреть файл манифеста двумя методами в удаленной среде.
+
+* Использование параметра предварительного просмотра в codelens
+* Использование параметра **пакета метаданных Zip Teams**
+
+Следующие шаги помогают просмотреть файл манифеста с помощью параметра предварительного просмотра в codelens:
 
 1. Выберите **"Предварительный** просмотр" в коде файла `manifest.template.json` .
-2. Выберите **файл манифеста предварительного просмотра** в строке меню `manifest.template.json` файла.
-3. Выберите **пакет метаданных Zip Teams в** Treeview.
-4. Выберите среду.
 
-> [!NOTE]
-> Если есть несколько сред, необходимо выбрать среду для предварительного просмотра, как показано на изображении:
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Предварительный просмотр":::
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Add env":::
+1. Выберите среду.
+
+   > [!NOTE]
+   > Если есть несколько сред, необходимо выбрать среду для предварительного просмотра, как показано на изображении:
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Add env":::
+
+Следующие шаги помогают предварительно просмотреть файл манифеста с помощью параметра пакета метаданных **Zip Teams** в удаленной среде:
+
+1. Выберите `manifest.template.json` файл.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-manifest-json.png" alt-text="Выберите манифест":::
+
+1. Щелкните значок Набора средств :::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG"::: Teams на Visual Studio Code панели инструментов.
+
+1. Выберите **пакет метаданных Zip Teams в** разделе **DEPLOYMENT**.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-metadata-package.png" alt-text="Выбор пакета метаданных Teams":::
+
+1. Выберите среду.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Add env":::
+
+   > [!NOTE]
+   > Если есть несколько сред, необходимо выбрать среду для предварительного просмотра, как показано на изображении:
 
 ## <a name="sync-local-changes-to-dev-portal"></a>Синхронизация локальных изменений на портале разработки
 
 После предварительного просмотра файла манифеста можно синхронизировать локальные изменения с порталом разработчика следующими способами:
+
+> [!NOTE]
+> Дополнительные сведения о портале разработчика см. на [портале разработчика для Teams](../concepts/build-and-test/teams-developer-portal.md).
 
 1. Развертывание манифеста приложения Teams.
 
@@ -129,7 +197,7 @@ ms.locfileid: "67288145"
 
 Во время локальной отладки или подготовки Набор средств Teams `manifest.template.json``state.{env}.json``config.{env}.json`загружает манифест из конфигураций и создает приложение Teams на [портале разработки](https://dev.teams.microsoft.com/apps).
 
-## <a name="supported-placeholders-in-manifesttemplatejson"></a>Поддерживаемые заполнители в manifest.template.json
+### <a name="supported-placeholders-in-manifesttemplatejson"></a>Поддерживаемые заполнители в manifest.template.json
 
 В следующем списке приведены поддерживаемые заполнители в следующих разделах `manifest.template.json`:
 
@@ -139,8 +207,8 @@ ms.locfileid: "67288145"
 **Добавление настраиваемого параметра**
 
 1. Добавьте настраиваемый параметр следующим образом:</br>
-   a) Добавьте заполнитель с шаблоном `manifest.template.json` `{{config.manifest.xx}}`.</br>
-   б) Добавьте значение конфигурации в `config.{env}.json`.
+   А. Добавьте заполнитель с шаблоном `manifest.template.json` `{{config.manifest.xx}}`.</br>
+   Б. Добавьте значение конфигурации в `config.{env}.json`.
 
      ```json
      {
@@ -169,7 +237,7 @@ ms.locfileid: "67288145"
 
 ---
 
-## Codelenses and hovers
+## To preview values for local and dev environment
 
 In `manifest.template.json`, you can navigate to codelens to preview the values for `local` and `dev` environment.
 

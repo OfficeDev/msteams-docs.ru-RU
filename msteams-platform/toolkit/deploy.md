@@ -6,33 +6,27 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 607214b329734f143d3bbcd9ede87ca85c9c97bb
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 9ad2c9d16901990344ca521599b94b84b0e76217
+ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503335"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67616928"
 ---
 # <a name="deploy-teams-app-to-the-cloud"></a>Развертывание приложения Teams в облаке
 
-Набор средств Teams позволяет развертывать и загружать код интерфейсной и серверной частей вашего приложения в ваши подготовленные ресурсы в облаке Azure.
+Набор средств Teams позволяет развертывать и загружать код интерфейсной и серверной частей вашего приложения в ваши подготовленные ресурсы в облаке Azure. В облаке можно развернуть следующее:
 
 * Вкладка, например серверные приложения, развертывается в хранилище Azure и настраивается для статического размещения веб-сайтов или сайта SharePoint.
 * Для функций Azure развертываются серверные API.
 * Бот или расширение для сообщений развертываются в службе приложений Azure.
 
-## <a name="prerequisite"></a>Предварительное условие
-
-* [Установите набор средств Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) версии не ниже 3.0.0.
-
-> [!NOTE]
->
-> * Убедитесь, что проект приложения Teams открыт в VS Code.
-> * Перед развертывание кода проекта в облаке [подготовьте облачные ресурсы](provision.md).
+  > [!NOTE]
+  > Перед развертыванием кода приложения в облаке Azure необходимо успешно завершить подготовку [облачных ресурсов](provision.md).
 
 ## <a name="deploy-teams-apps-using-teams-toolkit"></a>Развертывание приложений Teams с помощью набора средств Teams
 
-Руководства по началу работы помогают развертывать с помощью набора средств Teams. Для развертывания приложения Teams можно использовать следующие руководства.
+Руководства по началу работы помогут вам выполнить развертывание с помощью Набора средств Teams. Для развертывания приложения Teams можно использовать следующие руководства.
 
 * [Развертывание приложения в Azure](/microsoftteams/platform/sbs-gs-javascript?tabs=vscode%2Cvsc%2Cviscode%2Cvcode&tutorial-step=8&branch)
 * [Развертывание приложения в SharePoint](/microsoftteams/platform/sbs-gs-spfx?tabs=vscode%2Cviscode&tutorial-step=4&branch)
@@ -47,13 +41,10 @@ ms.locfileid: "66503335"
 |Расширения для сообщений и ботов </br> Рабочая нагрузка серверной части | `yourProjectFolder/bot` | Неприменимо | Служба приложений Azure |
 
 > [!NOTE]
-> При включении ресурса управления API Azure в проект и активации развертывания. Вы можете публиковать API в функциях Azure в службе управления API Azure.
+> Когда вы включаете ресурс управления API Azure в проект и активируете развертывание, вы можете опубликовать API-интерфейсы в функциях Azure в службе управления API Azure.
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
-* [Добавление дополнительных облачных ресурсов](add-resource.md)
 * [Создание и развертывание облачной службы Azure](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
-* [Добавление возможностей приложения Teams](add-capability.md)
-* [Развертывание кода проекта с конвейерами CI/CD](use-CICD-template.md)
-* [Управление несколькими средами](TeamsFx-multi-env.md)
-* [Совместная работа с другими разработчиками в проекте Teams](TeamsFx-collaboration.md)
+* [Создание многопользовательских приложений Teams](add-capability.md)
+* [Добавление облачных ресурсов в приложение Microsoft Teams](add-resource.md)
