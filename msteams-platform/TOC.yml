@@ -493,86 +493,115 @@
   items:
     - name: Обзор
       href: concepts/authentication/authentication.md
+      displayName: Access
     - name: Вкладки
       items:
         - name: Включение единого входа для приложения вкладки
           items:
             - name: Обзор
               href: tabs/how-to/authentication/tab-sso-overview.md
+              displayName: 'Cookies, channel, access, permissions'
             - name: Регистрация приложения вкладки в Azure AD
               href: tabs/how-to/authentication/tab-sso-register-aad.md
+              displayName: 'Access, permissions, configurations, browser, extension'
             - name: Добавление кода для включения единого входа
               href: tabs/how-to/authentication/tab-sso-code.md
+              displayName: 'Extension, access, permissions'
             - name: Обновление манифеста приложения для единого входа и предварительный просмотр приложения
               href: tabs/how-to/authentication/tab-sso-manifest.md
+              displayName: 'Access, permissions'
             - name: Предоставление разрешений или областей Microsoft Graph
               href: tabs/how-to/authentication/tab-sso-graph-api.md
+              displayName: 'Access, permissions, channel, browser, configuration, delegated'
             - name: Устранение неполадок с проверкой подлинности единого входа
               href: tabs/how-to/authentication/tab-sso-troubleshooting.md
+              displayName: 'Access, permissions, configurations'
         - name: Использование проверки подлинности стороннего поставщика удостоверений OAuth
           items:
             - name: Обзор
               href: tabs/how-to/authentication/auth-flow-tab.md
+              displayName: 'Access, configuration'
             - name: Настройка проверки подлинности стороннего поставщика удостоверений OAuth
               href: tabs/how-to/authentication/auth-tab-aad.md
+              displayName: 'Access, configuration, cookies'
             - name: Использование внешних поставщиков OAuth
               href: tabs/how-to/authentication/auth-oauth-provider.md
     - name: Боты
       items:
         - name: Поток аутентификации в ботах
           href: bots/how-to/authentication/auth-flow-bot.md
+          displayName: Access
         - name: Добавить аутентификацию для вашего бота
           href: bots/how-to/authentication/add-authentication.md
+          displayName: 'Configuration, delegate, emulator, tunneling, channels'
         - name: Использование проверки подлинности SSO
           href: bots/how-to/authentication/auth-aad-sso-bots.md
+          displayName: 'Acces, permissions, configuration, settings'
     - name: Расширения для сообщений
       items:
         - name: Добавление проверки подлинности в расширение для сообщений
           href: messaging-extensions/how-to/add-authentication.md
+          displayName: Configuration
         - name: Включение единого входа в расширениях для сообщений
           href: messaging-extensions/how-to/enable-SSO-auth-me.md
+          displayName: 'Setting, extensions'
 - name: Интеграция возможностей устройства
   items:
     - name: Обзор
       href: concepts/device-capabilities/device-capabilities-overview.md
+      displayName: 'Access, premissions'
     - name: Запрос разрешений устройства для приложения Teams
       href: concepts/device-capabilities/native-device-permissions.md
     - name: Разрешения устройства для браузера
       href: concepts/device-capabilities/browser-device-permissions.md
     - name: Интеграция возможностей мультимедиа
       href: concepts/device-capabilities/media-capabilities.md
+      displayName: 'Access, permissions, whiteboard, configuration'
     - name: Интеграция функции сканирования QR- или штрихкода
       href: concepts/device-capabilities/qr-barcode-scanner-capability.md
+      displayName: 'Access, permissions, configuration'
     - name: Интеграция функций местонахождения
       href: concepts/device-capabilities/location-capability.md
+      displayName: 'Access, permissions, configurations'
 - name: Использование данных Teams с помощью Microsoft Graph
   items:
     - name: Обзор
       href: /graph/teams-concept-overview
+      displayname: 'Permissions, communication, channels, delegated, reports, extensions'
     - name: Microsoft Graph Toolkit
       href: /graph/toolkit/overview
+      displayName: 'Access, routing'
     - name: Начало работы
       href: /graph/toolkit/get-started/build-a-microsoft-teams-tab
+      displayName: 'Access, report, MSAL2'
     - name: Согласие для определенных ресурсов
       href: graph-api/rsc/resource-specific-consent.md
+      displayName: 'Access, permissions, delegated, channel, organizer, notifications'
     - name: Упреждающая установку приложений с помощью API Graph для отправки сообщений
       href: graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md
+      displayName: 'Permissions, delegated, channel, notifications'
     - name: Импорт сторонних сообщений
       href: graph-api/import-messages/import-external-messages-to-teams.md
+      displayName: 'Permission, channel, communications, setting'
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/microsoft-teams-samples#graph-apis'
 - name: Расширение приложения в Microsoft 365
   items:
     - name: Обзор
       href: m365-apps/overview.md
+      displayName: 'Access, permissions, channel, extensions'
     - name: Предварительные требования
       href: m365-apps/prerequisites.md
+      displayName: 'Channel, configuration, settings, extensions'
     - name: Включение личной вкладки Teams в Office и Outlook
       href: m365-apps/extend-m365-teams-personal-tab.md
+      displayName: 'Access, permissions, channel, report, browser'
     - name: Включение расширения для сообщений Teams в Outlook
       href: m365-apps/extend-m365-teams-message-extension.md
+      displayName: 'Access, channel, report, communication'
     - name: Публикация приложений Teams для Microsoft 365
       href: m365-apps/publish.md
+      displayName: 'Access, permissions, channel, extensions'
 - name: Тестирование приложения
   items:
     - name: Обзор
@@ -649,7 +678,7 @@
   items:
     - name: Обзор
       href: concepts/deploy-and-publish/appsource/prepare/monetize-overview.md
-      displayName: 'Pricing model, SaaS offer, In-app purchases,'
+      displayName: 'Pricing model, SaaS offer, In-app purchases'
     - name: Включение предложения SaaS в приложение Teams
       href: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md
       displayName: 'Transactable Software-as-a-Service, Recloud app'
@@ -658,15 +687,18 @@
     - name: Предварительное тестирование для приложений с монетизацией
       href: concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
 - name: Манифест приложения
-  items:
+  itesms:
     - name: Схема манифеста для Teams
       href: resources/schema/manifest-schema.md
+      displayName: 'Access, permissions, configuration, browser, channel, notification, background, delegated, organizer'
     - name: Общедоступная предварительная версия для разработчиков
       items:
         - name: Обзор
           href: resources/dev-preview/developer-preview-intro.md
+          displayName: 'Access, setting'
         - name: Схема манифеста общедоступной предварительной версии для разработчиков для Teams
           href: resources/schema/manifest-schema-dev-preview.md
+          displayName: 'Access, permission, channel, browser, configuraiton, chat, notifications, delegated, background, organizer'
 - name: Интеграция с Teams
   items:
     - name: Обзор
