@@ -6,12 +6,12 @@ ms.author: nliu
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/13/2022
-ms.openlocfilehash: a3c8031c8c810fb7425a07c4627bb773cec2de5a
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: 3828c357307c5f7bfd94935a75dc9d6f5cedbc39
+ms.sourcegitcommit: c806c5ffe277c740d0d7b8f62e72ade562029194
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/07/2022
-ms.locfileid: "67616688"
+ms.locfileid: "67617791"
 ---
 # <a name="customize-teams-app-manifest"></a>Настройка манифеста приложения Teams
 
@@ -20,7 +20,7 @@ ms.locfileid: "67616688"
 * [Предварительный просмотр файла манифеста в локальной среде](#preview-manifest-file-in-local-environment)
 * [Предварительный просмотр файла манифеста в удаленной среде](#preview-manifest-file-in-remote-environment)
 * [Синхронизация локальных изменений на портале разработки](#sync-local-changes-to-dev-portal)
-* [Настройка манифеста приложения Teams](#customize-teams-app-manifest)
+* [Настройка манифеста приложения Teams](#customize-your-teams-app-manifest)
 * [Проверка манифеста](#validate-manifest)
 
 Файл шаблона манифеста `manifest.template.json` доступен в папке `templates/appPackage` после скаффолдинга. Файл шаблона с заполнителями и фактическими значениями разрешается набором средств Teams `.fx/configs` `.fx/states` с помощью файлов в разных средах и для разных сред.
@@ -188,7 +188,7 @@ ms.locfileid: "67616688"
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview -3.png" alt-text="pre":::
 
-## <a name="customize-teams-app-manifest"></a>Настройка манифеста приложения Teams
+## <a name="customize-your-teams-app-manifest"></a>Настройка манифеста приложения Teams
 
 Набор средств Teams состоит из следующих файлов шаблона манифеста в папке `manifest.template.json` в локальных и удаленных средах.
 

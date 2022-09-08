@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: e64daa0c3288f97286177e814204404522a6d6b9
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: 8500f5ba1f54b28f68f9b56c0a42aedfff108e64
+ms.sourcegitcommit: c806c5ffe277c740d0d7b8f62e72ade562029194
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/07/2022
-ms.locfileid: "67616624"
+ms.locfileid: "67617798"
 ---
 # <a name="create-a-new-teams-project"></a>Создание проекта Teams
 
@@ -29,40 +29,49 @@ ms.locfileid: "67616624"
 **Создание приложения**
 
 1. Откройте Visual Studio Code.
-1. Щелкните значок Набора средств :::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG"::: Teams.
+
+1. Щелкните значок Набора средств :::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.png"::: Teams на панели навигации слева.
+
 1. Выберите **Создать приложение Teams**.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/create-new-teams-app.png" alt-text="Боковая панель наборов средств Teams":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/create-project.png" alt-text="Расположение ссылки &quot;Создать проект&quot; на боковой панели набора средств Teams":::.
 
-1. Выберите **"Создать новое приложение Teams"** , чтобы создать приложение с помощью Набора средств Teams.
+1. Убедитесь **, что** в качестве возможности приложения выбрана вкладка.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/select-create-app.png" alt-text="Создать приложение":::
-
-1. В этом руководстве в **качестве** возможности создания приложения выберите tab.
-
-   :::image type="content" source="../assets/images/teams-toolkit-v2/select-tabapp1.png" alt-text="Выбор возможности приложения":::
-
-   > [!NOTE]
-   > Вы можете выбрать любой тип возможностей в зависимости от требований.
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/select-capabilities-tabapp.png" alt-text="Выбор возможности приложения":::
 
 1. Выберите **JavaScript** в качестве языка.
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/select-language-tab.png" alt-text="Снимок экрана: выбор языка программирования":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/select-language-tab.png" alt-text="Снимок экрана: выбор языка.":::
 
-1. Выберите расположение рабочей области проекта и выберите **папку**.
+1. Выберите **папку по умолчанию,** чтобы сохранить корневую папку проекта в расположении по умолчанию.
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/select-folder1.png" alt-text="select-folder":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/select-default-location.png" alt-text="Выбор расположения по умолчанию":::
 
-1. В этом руководстве введите `helloworld` имя приложения. Выберите **ВВОД**.
+   Ниже приведены инструкции по изменению расположения по умолчанию.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/enter-name-tab.png" alt-text="Снимок экрана: ввод имени приложения":::
+      1. Нажмите **кнопку "Обзор"**.
 
-   > [!NOTE]
-   > Вы можете ввести собственное имя приложения для других возможностей и убедиться, что используются только буквенно-цифровые символы.
+          :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/select-browse.png" alt-text="Выберите &quot;Обзор хранилища&quot;":::
+
+      1. Выберите расположение для рабочей области проекта.
+
+      1. Выберите **папку "Выбрать"**.
+
+          :::image type="content" source="../assets/images/teams-toolkit-v2/select-folder.png" alt-text="выбор папки для хранилища":::
+
+1. Введите `helloworld` имя приложения. Убедитесь, что используются только буквенно-цифровые символы. Выберите **ВВОД**.
+
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/enter-name-tab1.png" alt-text="Снимок экрана, показывающий, где ввести имя приложения.":::
+
+1. По умолчанию проект открывается в новом окне в течение 10 секунд. Если вы хотите открыть его в текущем окне, выберите " **Открыть" в текущем окне**.
+
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/new-window-notification.png" alt-text="Уведомление о новом окне":::
 
    Приложение вкладки Teams создается через несколько секунд.
 
-    :::image type="content" source="../assets/images/teams-toolkit-v2/tap-app-created1.png" alt-text="Снимок экрана: созданное приложение":::
+    :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/tap-app-created1.png" alt-text="Снимок экрана: созданное приложение.":::
+
 
 ### <a name="directory-structure-for-different-app-types"></a>Структура каталогов для различных типов приложений
 

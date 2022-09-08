@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: ade5d5f30261cfd77140ab3cc9332bba15c76be8
-ms.sourcegitcommit: 5c12af6a379c7cace409fda94677ea0334d7a3dd
+ms.openlocfilehash: de46f651c3dd6df741b4fef47c9813dfd88a6fe0
+ms.sourcegitcommit: 0ac53c430c055897ecebc129eab49336820c18c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67337140"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67618282"
 ---
 # <a name="create-incoming-webhooks"></a>Создание входящих веб-перехватчиков
 
@@ -52,16 +52,16 @@ ms.locfileid: "67337140"
 1. Откройте канал, в который вы хотите добавить веб-перехватчик, и выберите &#8226;&#8226;&#8226; **Дополнительные параметры** на верхней панели навигации.
 1. Выберите в раскрывающемся меню **Соединители**:
 
-    ![Выберите соединитель](~/assets/images/connectors.png)
+   :::image type="content" source="../../assets/images/connectors.png" alt-text="На этом снимке экрана показано, как выбрать соединитель.":::
 
 1. Найдите **Входящий веб-перехватчик** и выберите **Добавить**.
 1. Выберите **Настроить**, укажите имя и при необходимости отправьте изображение для веб-перехватчика.
 
-    ![Кнопка "Настроить"](~/assets/images/configure.png)
+   :::image type="content" source="../../assets/images/configure.png" alt-text="На этом снимке экрана показано, как настроить и отправить изображение для веб-перехватчиков.":::
 
 1. Скопируйте и сохраните уникальный URL-адрес веб-перехватчика в диалоговом окне. URL-адрес сопоставлен с каналом, и его можно использовать для отправки сведений в Teams. Нажмите кнопку **Готово**.
 
-    ![Уникальный URL-адрес](~/assets/images/url.png)
+   :::image type="content" source="../../assets/images/url.png" alt-text="На этом снимке экрана показан уникальный URL-адрес веб-перехватчика.":::
 
 Веб-перехватчик доступен в канале Teams.
 
@@ -79,19 +79,19 @@ ms.locfileid: "67337140"
 1. Выберите **Настроенные** в разделе **Управление**.
 1. Выберите **<*1*> Настроенные**, чтобы посмотреть список текущих соединителей.
 
-    ![Настроенный веб-перехватчик](~/assets/images/configured.png)
+   :::image type="content" source="../../assets/images/configured.png" alt-text="На этом снимке экрана показано, как настроить просмотр списка текущих соединителей.":::
 
 1. Выберите **Управление** возле соединителя, который вы хотите удалить.
 
-    ![Управление веб-перехватчиком](~/assets/images/manage.png)
+   :::image type="content" source="../../assets/images/manage.png" alt-text="На этом снимке экрана показано, как управлять соединителем, который требуется удалить.":::
 
 1. Выберите **Удалить**, чтобы открыть диалоговое окно **Удаление конфигурации**.
 
-    ![Удаление конфигурации](~/assets/images/removeconfiguration.png)
+   :::image type="content" source="../../assets/images/removeconfiguration.png" alt-text="На этом снимке экрана показано, как просмотреть диалоговое окно удаления конфигурации.":::
 
 1. Заполните поля и установите нужные флажки в диалоговом окне и выберите **Удалить**.
 
-    ![Окончательное удаление](~/assets/images/finalremove.png)
+   :::image type="content" source="../../assets/images/finalremove.png" alt-text="На этом снимке экрана показано, как удалить входящие веб-перехватчики из канала Teams.":::
 
 ## <a name="code-sample"></a>Пример кода
 

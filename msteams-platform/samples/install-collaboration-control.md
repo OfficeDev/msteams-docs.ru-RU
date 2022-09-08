@@ -1,18 +1,18 @@
 ---
-title: Установка элементов управления совместной работы
+title: Установка элементов управления совместной работой
 author: surbhigupta
 description: В этом модуле вы узнаете, как установить элементы управления совместной работы с помощью power apps и Microsoft 365 E3 а также как установить решения для элементов управления совместной работой.
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: aa4259855ba0c95906d7196ffd83c093bea89ea9
-ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
+ms.openlocfilehash: ae7e3e93576e14f07784e8ded65858940e2cea21
+ms.sourcegitcommit: 14fb175842e49888fc99ae813ce8a2b85fe1ff94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67179244"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67617980"
 ---
-# <a name="install-collaboration-controls"></a>Установка элементов управления совместной работы
+# <a name="install-collaboration-controls"></a>Установка элементов управления совместной работой
 
 > [!NOTE]
 > В настоящее время элементы управления совместной работы доступны только в [общедоступной предварительной версии разработчика](~/resources/dev-preview/developer-preview-intro.md).
@@ -31,9 +31,10 @@ ms.locfileid: "67179244"
 
 ## <a name="install-the-collaboration-controls-solutions"></a>Установка решений для элементов управления совместной работы
 
-Вы установите элементы управления совместной работы в среду dataverse по приватному каналу. Эта ссылка не должна быть предоставлена другим пользователям в организации или за ее пределами.
+Вы установите элементы управления совместной работы в среду dataverse с помощью [Microsoft AppSource.](https://appsource.microsoft.com/en-us/product/dynamics-365/mscm.collaboration-toolkit-preview?flightCodes=collaborationcontrols&signInModalType=2&ctaType=1)
 
-Вы сможете настраивать и использовать компоненты в собственном приложении на основе модели только после получения ссылки и установки элементов управления совместной работы в среду dataverse.
+
+Вы сможете настраивать и использовать компоненты в собственном приложении на основе модели только после перехода в [Microsoft AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscm.collaboration-toolkit-preview?flightCodes=collaborationcontrols&signInModalType=2&ctaType=1)  и установки элементов управления совместной работы в среду dataverse.
 
 Элементы управления совместной работой включают следующие решения:
 
@@ -57,7 +58,7 @@ ms.locfileid: "67179244"
 
 Перед установкой необходимо быть в среде Power Platform или в клиенте администратора. Вам потребуется среда dataverse с базой данных. Если у вас ее нет, необходимо создать новую, чтобы продолжить установку.[](/power-platform/admin/create-environment)
 
-Чтобы установить решения, сначала перейдите в [Microsoft AppSource], а затем выполните следующие действия:
+Чтобы установить решения, перейдите в [Microsoft AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscm.collaboration-toolkit-preview?flightCodes=collaborationcontrols&signInModalType=2&ctaType=1) и выполните следующие действия.
 
 1. Нажмите **кнопку "Получить сейчас** ".
 
