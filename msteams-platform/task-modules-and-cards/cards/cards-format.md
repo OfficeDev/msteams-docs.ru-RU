@@ -4,12 +4,12 @@ description: В этом модуле вы узнаете, что такое ф�
 ms.localizationpriority: high
 ms.topic: reference
 ms.date: 06/25/2021
-ms.openlocfilehash: e6cbccdb436b8d84f5d139b6a082765f22f373c6
-ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.openlocfilehash: 24ea264a1af4bbed94251f4d74602a17aa01e3e3
+ms.sourcegitcommit: a34a6c87ce756ef4f7a55e7f18fc72a446fbe913
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586961"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67627039"
 ---
 # <a name="format-cards-in-microsoft-teams"></a>Форматирование карточек в Microsoft Teams
 
@@ -121,6 +121,9 @@ ms.locfileid: "67586961"
 ``` json
 { "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", "type": "AdaptiveCard", "version": "1.0", "body": [ { "type": "Container", "items": [ { "type": "TextBlock", "text": "Publish Adaptive Card with emojis 🥰 ", "weight": "bolder", "size": "medium" }, ] }, ], }
 ```
+
+> [!NOTE]
+> Если вы используете REST API, задайте `charset=UTF-8` в заголовках запроса эмодзи для добавления эмодзи в адаптивные карточки.
 
 :::image type="content" source="../../assets/images/Cards/adaptive-card-emoji.png" alt-text="Адаптивная карточка эмодзи":::
 
