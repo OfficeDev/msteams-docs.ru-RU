@@ -3,12 +3,12 @@ title: Документация для разработчиков Microsoft Team
 description: Сведения о терминах, используемых в документации для разработчиков Microsoft Teams
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 962fa2ce2fb52fc3687da59b1453800a8d841e8e
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: 9680286f21cec9252d01506621a0fec011fca17f
+ms.sourcegitcommit: bd30d33af59dd870a309ae72b4c4496c9c1f920d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67616802"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67635324"
 ---
 # <a name="glossary"></a>Глоссарий
 
@@ -102,7 +102,6 @@ ms.locfileid: "67616802"
 
 | Термин | Определение |
 | --- | --- |
-| [Поставщик удостоверений](../concepts/authentication/configure-identity-provider.md) | Объект, который хранит и предоставляет учетные данные пользователю. Пользователи также могут самостоятельно зарегистрироваться в поставщике удостоверений.  <br>**См. также**: [проверка подлинности](#a) |
 | [Входящий веб-перехватчик](../webhooks-and-connectors/how-to/add-incoming-webhook.md) | Он разрешает общее содержимое внешнего приложения в каналах Teams. Эти веб-перехватчики используются в качестве средств отслеживания и уведомления. <br>**См. также**: [веб-перехватчик](#w); [исходящий веб-перехватчик](#o) |
 | [Взаимодействие с приложением во время собрания](../apps-in-teams-meetings/meeting-app-extensibility.md#in-meeting-app-experience) | Этап жизненного цикла собрания Teams. Благодаря взаимодействию с приложением во время собрания вы можете привлекать участников во время собрания с помощью приложений и диалогового окна на собрании.<br>**См. также**: [жизненный цикл собрания](#m) |
 

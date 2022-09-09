@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: b13cc93e515c1b4daf08e3f218a7059e34615f0d
-ms.sourcegitcommit: 3baca27a93e5a68eaaa52810700076f08f4c88a8
+ms.openlocfilehash: aae169cc03b51e1f0db04564234be4876d39ce49
+ms.sourcegitcommit: bd30d33af59dd870a309ae72b4c4496c9c1f920d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67605784"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67635303"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -288,6 +288,7 @@ ms.locfileid: "67605784"
 ## <a name="get-latest-updates"></a>Получение последних обновлений
 
 Вы можете получить последние обновления платформы Teams, настроив [RSS-канал](https://aka.ms/TeamsPlatformUpdates).
+
 
 ### <a name="to-configure-rss-feed"></a>Настройка RSS-канала
 
