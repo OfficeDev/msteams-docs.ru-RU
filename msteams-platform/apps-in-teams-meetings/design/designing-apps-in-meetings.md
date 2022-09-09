@@ -6,12 +6,12 @@ ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 04/07/2022
-ms.openlocfilehash: d0d994a7966f3ee172b29e6f9a6f1d4d4a2edff0
-ms.sourcegitcommit: 2d2a08f671c3d19381403ba1af5dff1f06bb4dd6
+ms.openlocfilehash: 9022f9cb7ad01808481a5ac9fb4a730459213300
+ms.sourcegitcommit: ffcfab268abbca398d1a75df158f73630490c330
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "67338853"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67636177"
 ---
 # <a name="designing-your-microsoft-teams-meeting-extension"></a>Разработка расширения для собраний Microsoft Teams
 
@@ -194,9 +194,6 @@ ms.locfileid: "67338853"
 * Игра в игру.
 
 Приложения, совместно используемые на этапе собрания, занимают то же место, что и общий экран. Этап также одинаково перенастроит для всех участников собрания.
-
-> [!NOTE]
-> В настоящее время мобильные пользователи не могут предоставлять общий доступ к содержимому приложения на этапе собрания. Однако они могут просматривать содержимое, к котором предоставлен общий доступ с рабочего стола.
 
 ### <a name="use-cases"></a>Варианты использования
 

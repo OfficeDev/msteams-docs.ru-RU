@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
 ms.date: 04/07/2022
-ms.openlocfilehash: 2201319113817b4837553accc11d6ce6c8b3d4cd
-ms.sourcegitcommit: 51e4e43bc73182c5992e45b145cf1f7cdc0dd48c
+ms.openlocfilehash: e73193622ac88a642f671584f744c4e01db62567
+ms.sourcegitcommit: ffcfab268abbca398d1a75df158f73630490c330
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67418852"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67636163"
 ---
 # <a name="enable-and-configure-apps-for-meetings"></a>Включение и настройка приложений для собраний
 
@@ -227,7 +227,7 @@ ms.locfileid: "67418852"
 > [!NOTE]
 >
 > * Чтобы продемонстрировать определенные части приложения на сцене, используйте манифест Teams версии 1.12 или более поздней.
-> * В настоящее время вы можете предоставлять доступ к определенным частям приложения на этапе собрания только на настольных клиентах Teams.
+> * Вы можете предоставлять доступ к определенным частям приложения на этапе собрания только на настольных клиентах Teams. Пользователи мобильных устройств могут совместно использовать определенные части приложения для промежуточной подготовки с помощью общей папки [для подготовки API](API-references.md#share-app-content-to-stage-api).
 
 ### <a name="after-a-meeting"></a>После собрания
 
