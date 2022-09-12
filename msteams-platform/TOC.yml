@@ -697,7 +697,6 @@
   itesms:
     - name: Схема манифеста для Teams
       href: resources/schema/manifest-schema.md
-      displayName: 'Access, permissions, configuration, browser, channel, notification, background, delegated, organizer'
     - name: Общедоступная предварительная версия для разработчиков
       items:
         - name: Обзор
@@ -705,7 +704,6 @@
           displayName: 'Access, setting'
         - name: Схема манифеста общедоступной предварительной версии для разработчиков для Teams
           href: resources/schema/manifest-schema-dev-preview.md
-          displayName: 'Access, permission, channel, browser, configuraiton, chat, notifications, delegated, background, organizer'
 - name: Интеграция с Teams
   items:
     - name: Обзор
