@@ -698,7 +698,7 @@
     - name: Предварительное тестирование для приложений с монетизацией
       href: concepts/deploy-and-publish/appsource/prepare/Test-preview-for-monetized-apps.md
 - name: Манифест приложения
-  itesms:
+  items:
     - name: Схема манифеста для Teams
       href: resources/schema/manifest-schema.md
     - name: Общедоступная предварительная версия для разработчиков
