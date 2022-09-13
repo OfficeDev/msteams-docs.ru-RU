@@ -705,7 +705,6 @@
       items:
         - name: Обзор
           href: resources/dev-preview/developer-preview-intro.md
-          displayName: 'Access, setting'
         - name: Схема манифеста общедоступной предварительной версии для разработчиков для Teams
           href: resources/schema/manifest-schema-dev-preview.md
 - name: Интеграция с Teams
