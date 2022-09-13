@@ -6,12 +6,12 @@ ms.date: 08/26/2020
 ms.localizationpriority: medium
 ms.topic: conceptual
 title: Вопросы интеграции Teams
-ms.openlocfilehash: acc018315ce2378707829363929b36f7897307c2
-ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
+ms.openlocfilehash: 994747586610ac9301e1cc1a6d752ad77816af97
+ms.sourcegitcommit: 937ea793889fc1efa9ec6a52374d5098be1117e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67178613"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67653170"
 ---
 # <a name="considerations-for-teams-integration"></a>Вопросы интеграции Teams
 
@@ -75,7 +75,7 @@ ms.locfileid: "67178613"
 
 ***Сценарии интеграции**: автономные приложения, приложения для совместной работы*
 
-API-интерфейсы и структуры данных приложения должны поддерживать приложение при интеграции с Teams. Чтобы расширить поддержку, вы должны дополнить API и структуры данных контекстной информацией о Teams для [сопоставления удостоверений](../concepts/authentication/configure-identity-provider.md), [поддержки глубоких ссылок](../concepts/build-and-test/deep-links.md) и [включения Microsoft Graph](/graph/teams-concept-overview).
+API-интерфейсы и структуры данных приложения должны поддерживать приложение при интеграции с Teams. Чтобы расширить поддержку, вы должны дополнить API и структуры данных контекстной информацией о Teams для [сопоставления удостоверений](../concepts/authentication/authentication.md), [поддержки глубоких ссылок](../concepts/build-and-test/deep-links.md) и [включения Microsoft Graph](/graph/teams-concept-overview).
 
 Узнайте, как получить контекст для [вкладки](../tabs/how-to/access-teams-context.md) Teams или [бота](../bots/how-to/get-teams-context.md).
 

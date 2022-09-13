@@ -5,12 +5,12 @@ description: Узнайте, как создавать вкладки и веб-
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: d175e9c1a9f8515db57c54503fd3f83cb7970777
-ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
+ms.openlocfilehash: 1dfae9411b7c8b087bc3cd4c69593d54e2d70bb3
+ms.sourcegitcommit: 937ea793889fc1efa9ec6a52374d5098be1117e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450396"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67653191"
 ---
 # <a name="build-tabs-for-teams"></a>Создание вкладок для Teams
 
@@ -80,8 +80,8 @@ ms.locfileid: "67450396"
 
 ### <a name="tools-to-build-tabs"></a>Инструменты для создания вкладок
 
-* [Набор средств Teams для Microsoft Visual Studio Code](../toolkit/visual-studio-code-overview.md)
-* [Набор средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
+* [Наборы средств Teams для Visual Studio Code](../toolkit/teams-toolkit-fundamentals.md)
+* [Наборы средств Teams для Visual Studio](../toolkit/visual-studio-overview.md)
 
 ## <a name="next-step"></a>Следующий этап
 

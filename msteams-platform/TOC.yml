@@ -120,6 +120,8 @@
                   href: toolkit/add-resource.md
                 - name: Интеграция существующих сторонних API
                   href: toolkit/add-API-connection.md
+                - name: Добавление функциональности единого входа в приложение Teams
+                  href: toolkit/add-single-sign-on.md
             - name: Настройка манифеста
               items:
                 - name: Настройка манифеста приложения Teams
@@ -146,6 +148,8 @@
               items:
                 - name: Интеграция и совместная работа
                   href: toolkit/TeamsFx-collaboration.md
+                - name: Настройка конвейеров CI/CD
+                  href: toolkit/use-CICD-template.md
                 - name: Загрузка и тестирование неопубликованного приложения в среде Teams
                   href: toolkit/sideload-and-test-app.md
                 - name: Тестирование поведения приложения в разных средах
