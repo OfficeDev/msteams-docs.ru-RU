@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: aae169cc03b51e1f0db04564234be4876d39ce49
-ms.sourcegitcommit: bd30d33af59dd870a309ae72b4c4496c9c1f920d
+ms.openlocfilehash: bd1c8ff2d9216ba0f1611fd48d8df943e2f75a35
+ms.sourcegitcommit: 19f3e4e9088d0a07c9b567e76640d498b9d1981f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67635303"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67786971"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -36,6 +36,7 @@ ms.locfileid: "67635303"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
+| 09/16/2022 | Адаптивные карточки в расширениях сообщений на основе поиска теперь поддерживают универсальные действия. | Создание расширений сообщений > команды поиска > команды поиска > универсальных действий для [расширений сообщений на основе поиска](messaging-extensions/how-to/search-commands/universal-actions-for-search-based-message-extensions.md) |
 | 09/06/2022 | `selectMedia` API для записи видео с помощью камеры | Интеграция возможностей устройств > [Интеграция возможностей мультимедиа](concepts/device-capabilities/media-capabilities.md#code-snippets) |
 | 09.08.2022 | Представлен набор средств Teams для Visual Studio 2022 | Инструменты и SDK > Набор средств Teams для Visual Studio > [Обзор набора средств Teams для Visual Studio](toolkit/teams-toolkit-overview-visual-studio.md) |
 | 03.08.2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
@@ -288,7 +289,6 @@ ms.locfileid: "67635303"
 ## <a name="get-latest-updates"></a>Получение последних обновлений
 
 Вы можете получить последние обновления платформы Teams, настроив [RSS-канал](https://aka.ms/TeamsPlatformUpdates).
-
 
 ### <a name="to-configure-rss-feed"></a>Настройка RSS-канала
 
