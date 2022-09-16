@@ -6,18 +6,21 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 07/29/2022
-ms.openlocfilehash: 0ef95064a1715a64d8f719c54aced7cdc74ecb23
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+zone_pivot_groups: teams-app-platform
+ms.openlocfilehash: 0126953ac43b463460dcfd07c66354d39b53d690
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67617352"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67781049"
 ---
 # <a name="explore-teams-toolkit"></a>Обзор набора средств Teams
 
-В этом документе описаны различные элементы пользовательского интерфейса, а также описание и базовое использование в Наборе средств Teams.
+В этом документе описаны различные элементы пользовательского интерфейса, а также описание и базовое использование набора средств Teams для Visual Studio Code и Visual Studio.
 
-## <a name="teams-toolkit-basic-ui-elements"></a>Базовые элементы пользовательского интерфейса Набора средств Teams
+::: zone pivot="visual-studio-code"
+
+## <a name="teams-toolkit-for-visual-studio-code-basic-ui-elements"></a>Набор средств Teams для Visual Studio Code элементов пользовательского интерфейса
 
 После установки Набора средств Teams вы увидите пользовательский интерфейс Набора средств Teams, как показано на следующем рисунке:
 
@@ -142,12 +145,63 @@ ms.locfileid: "67617352"
    :::column-end:::
 :::row-end:::
 
+::: zone-end
+
+::: zone pivot="visual-studio"
+
+## <a name="explore-teams-toolkit-for-visual-studio"></a>Обзор набора средств Teams для Visual Studio
+
+После установки Набора средств Teams можно просмотреть параметры Набора средств Teams двумя разными способами:
+
+# <a name="project"></a>[Проект](#tab/prj)
+
+Вы можете получить доступ к Набору средств Teams в **разделе Project**.
+
+1. Выберите **project** > **Teams Toolkit**.
+1. Теперь вы можете получить доступ к различным вариантам набора средств Teams.
+
+   :::image type="content" source="../assets/images/teams-toolkit-overview/teams-toolkit-operations-menu_1.png" alt-text="Меню операций набора средств Teams":::
+
+# <a name="solution-explorer"></a>[Обозреватель решений](#tab/solutionexplorer)
+
+   Вы можете получить доступ к Набору средств Teams **в Обозреватель решений**.
+
+1. Выберите **"** > **Обозреватель решений**", чтобы Обозреватель решений панели.
+1. Щелкните правой кнопкой **мыши проект**.
+1. Выберите **Набор средств Teams, чтобы** получить доступ к различным вариантам Набора средств Teams.
+
+   :::image type="content" source="../assets/images/teams-toolkit-overview/teams-toolkit-operations-menu1_1.png" alt-text="Операции с набором средств Teams из Project":::
+
+   > [!NOTE]
+   > В этом сценарии имя проекта **— MyTeamsApp1**.
+
+---
+
+После создания проекта Teams можно выполнить следующие функции в наборе средств Teams для Visual Studio:
+
+:::image type="content" source="../assets/images/teams-toolkit-overview/teams-toolkit-menu-options.png"alt-text="Операции с набором средств Teams из меню &quot;Проект&quot;":::
+
+|Функция  |Описание  |
+|---------|---------|
+|Подготовка зависимостей приложений Teams     |Перед выполнением локальной отладки этот шаг помогает настроить зависимости локальной отладки и зарегистрировать приложение Teams на платформе Teams. Вам нужна учетная запись Microsoft 365. Дополнительные сведения см. в статье ["Отладка приложения Teams в локальной среде с помощью Visual Studio"](debug-teams-app-visual-studio.md).         |
+|Открытие файла манифеста     |Чтобы открыть файл манифеста Teams, можно навести указатель мыши на параметры, чтобы просмотреть значения. Дополнительные сведения см. в статье ["Изменение манифеста приложения Teams с помощью Visual Studio"](VS-TeamsFx-preview-and-customize-app-manifest.md).         |
+|Обновление манифеста на портале разработчика Teams     |При обновлении файла манифеста только после этого можно повторно развернуть файл манифеста в Azure без повторного развертывания всего проекта. Используйте эту команду, чтобы обновить изменения на удаленном компьютере. Дополнительные сведения см. в статье ["Изменение манифеста приложения Teams с помощью Visual Studio"](VS-TeamsFx-preview-and-customize-app-manifest.md).       |
+|Подготовка к работе в облаке     |Этот параметр поможет вам создать ресурсы Azure, на которых размещено приложение Teams. Дополнительные сведения см. в [разделе "Подготовка облачных ресурсов с помощью Visual Studio"](provision-cloud-resources.md).        |
+|Развертывание в облаке     |Этот параметр позволяет скопировать код в ресурсы Azure, созданные при выполнении действия "Подготовка в облаке". Дополнительные сведения см[. в статье "Развертывание приложения Teams в облаке с помощью Visual Studio"](deploy-teams-app.md).        |
+|Предварительная версия в Teams     |Этот параметр запускает веб-клиент Teams и позволяет просматривать приложение Teams в браузере.         |
+|Zip-пакет приложения     |Этот параметр создает пакет приложения Teams в папке `Build` в проекте. Вы можете отправить пакет в клиент Teams и запустить приложение Teams.         |
+
+::: zone-end
+
 ## <a name="see-also"></a>См. также
 
 * [Установка Набора средств Teams](install-Teams-Toolkit.md)
 * [Создание нового приложения Teams с помощью "Инструментов Teams"](create-new-project.md)
 * [Подготовка к созданию приложений с помощью Microsoft Teams Toolkit](build-environments.md)
 * [Подготовка облачных ресурсов с помощью Набора средств Teams](provision.md)
+* [Создание приложения Teams в Visual Studio](create-new-teams-app-for-Visual-Studio.md)
+* [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
+* [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)
 
 <!--  
 :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/ui-elements.png" alt-text="UI Elements":::

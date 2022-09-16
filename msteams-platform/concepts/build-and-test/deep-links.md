@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: В этой статье вы узнаете, как создавать прямые ссылки и переходить по ним в приложениях Microsoft Teams с вкладками.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 463a7f37ca481058133ca5dbd646225f02bab4ab
-ms.sourcegitcommit: d8183bad448990f7c79b1956a6c9761c27712b4c
+ms.openlocfilehash: f3c5859ed124d173d617a75694ac5b9179e1181c
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2022
-ms.locfileid: "67452362"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67780886"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -392,7 +392,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ### <a name="deep-linking-for-sharepoint-framework-tabs"></a>Создание прямых ссылок для вкладок SharePoint Framework
 
-Следующий формат прямой ссылки можно использовать в карточке бота, соединителя или расширения для сообщений: `https://teamsc.microsoft.com/l/entity/<AppId>/<EntityId>?webUrl=<entityWebUrl>/<EntityName>`
+Следующий формат прямой ссылки можно использовать в карточке бота, соединителя или расширения для сообщений: `https://teams.microsoft.com/l/entity/<AppId>/<EntityId>?webUrl=<entityWebUrl>/<EntityName>`
 
 > [!NOTE]
 > Когда бот отправляет сообщение TextBlock с прямой ссылкой, новая вкладка браузера открывается, когда пользователи выбирают ссылку. Это происходит в настольных приложениях Chrome и Microsoft Teams, работающих в Linux.

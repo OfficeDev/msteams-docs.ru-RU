@@ -6,16 +6,23 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 07/29/2022
-ms.openlocfilehash: 1072d377393e6b3d3aecc3a7d3e3a89b9ec82192
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+zone_pivot_groups: teams-app-platform
+ms.openlocfilehash: c784e5d2242381a919500b16ab922a397bfc5d9e
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67617312"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67780690"
 ---
 # <a name="install-teams-toolkit"></a>Установка Набора средств Teams
 
-Набор средств Teams — это расширение в Visual Studio Code. В этом документе описано, как установить Набор средств Teams. Перед началом установки необходимо установить Visual Studio Code и клиента Teams.
+Набор средств Teams — это расширение как в Visual Studio, так и Visual Studio Code. В этом документе описано, как установить Набор средств Teams.
+
+::: zone pivot="visual-studio-code"
+
+## <a name="install-teams-toolkit-for-visual-studio-code"></a>Установка набора средств Teams для Visual Studio Code
+
+Перед началом установки необходимо установить Visual Studio Code и клиента Teams.
 
 ## <a name="steps-to-install-teams-toolkit"></a>Действия по установке Набора средств Teams
 
@@ -79,6 +86,35 @@ ms.locfileid: "67617312"
 * В расширении Набора средств Teams щелкните значок :::image type="icon" source="../assets/images/teams-toolkit-v2/setting icon.PNG"::: .
 * Выберите **"Установить другую версию** " для обновления до последней версии Набора средств Teams.
 
+::: zone-end
+
+::: zone pivot="visual-studio"
+
+## <a name="install-teams-toolkit-for-visual-studio"></a>Установка набора средств Teams для Visual Studio
+
+Перед началом установки необходимо установить Visual Studio Installer.
+
+Вы можете скачать последнюю версию Visual Studio Installer со страницы [скачивания Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
+
+## <a name="steps-to-install-teams-toolkit"></a>Действия по установке Набора средств Teams
+
+После открытия Visual Studio Installer во всплывающем окне "Рабочие нагрузки":
+
+1. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**.
+1. Выберите средства **разработки Microsoft Teams на** панели **сведений об установке** .
+1. Нажмите кнопку **Установить**.
+
+   :::image type="content" source="../assets/images/teams-toolkit-overview/visual-studio-install_1.png" alt-text="Установка Visual Studio":::
+
+1. Нажмите **кнопку "** Запустить", чтобы открыть Visual Studio.
+
+    :::image type="content" source="../assets/images/teams-toolkit-overview/visual-studio-launch_1.png" alt-text="Запуск Visual Studio":::
+
+   > [!IMPORTANT]
+   > Рекомендуется скачать Visual Studio 2022 версии 17.3.3, так как Набор средств Teams для Visual Studio является общедоступным в этой версии. Эта статья написана для Visual Studio 2022 версии 17.3.3. Набор средств Teams версии 17.3.* или более поздней.
+
+::: zone-end
+
 ## <a name="see-also"></a>См. также
 
 * [Обзор набора средств Teams](explore-Teams-Toolkit.md)
@@ -86,3 +122,6 @@ ms.locfileid: "67617312"
 * [Подготовка к созданию приложений с помощью Microsoft Teams Toolkit](build-environments.md)
 * [Подготовка облачных ресурсов с помощью Набора средств Teams](provision.md)
 * [Развертывание приложения Teams в облаке](deploy.md)
+* [Создание приложения Teams в Visual Studio](create-new-teams-app-for-Visual-Studio.md)
+* [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
+* [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)

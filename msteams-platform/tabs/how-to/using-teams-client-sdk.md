@@ -5,12 +5,12 @@ ms.author: surbhigupta
 description: В этом модуле вы узнаете о пакете SDK для клиента Microsoft Teams JavaScript, помогающем в создании приложений Teams, размещенных в <iframe> в Teams, Office и Outlook.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: fddc06c2139796839500a99421d1e2c92a4318c0
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
-ms.translationtype: HT
+ms.openlocfilehash: a3d1785dc96284e858d14bbef8b8acc0d466b1bc
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503923"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67781068"
 ---
 # <a name="teams-javascript-client-sdk"></a>Клиентский SDK JavaScript для Teams
 
@@ -408,8 +408,7 @@ async function example() {
 | `userLicenseType`| `app.Context.user.licenseType` |
 | `userObjectId` | `app.Context.user.id`|
 | `userTeamRole` | `app.Context.team.userRole`|
-| `userDisplayName` | `app.Context.user.displayName` |
-| Недоступно | `app.Context.app.host.name`|
+| Н/Д | `app.Context.app.host.name`|
 
 ## <a name="updating-to-the-teams-client-sdk-v200"></a>Обновление до SDK клиента Teams версии 2.0.0
 

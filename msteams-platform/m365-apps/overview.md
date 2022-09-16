@@ -5,16 +5,16 @@ ms.date: 05/24/2022
 ms.topic: Conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 208843d9d4c46d29b095ffaf7260f28889f8ed45
-ms.sourcegitcommit: 209b9942c02b5affdd995348902114d3b9805c61
+ms.openlocfilehash: fec2a91d250044e638783ecb25175771a60f3cdd
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67288215"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67781075"
 ---
 # <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
-С помощью последних выпусков клиентского [пакета SDK JavaScript для Microsoft Teams](../tabs/how-to/using-teams-client-sdk.md) (версия 2.0.0), манифеста приложения [Teams](../resources/schema/manifest-schema.md) (версия 1.13) и [набора средств Teams](../toolkit/visual-studio-code-overview.md) можно создавать и обновлять приложения Teams для запуска в других высокопроизводительные продукты Microsoft 365 и публиковать их на коммерческой платформе Майкрософт ([коммерческая платформа Майкрософт](https://appsource.microsoft.com/)).
+С помощью последних выпусков клиентского [пакета SDK JavaScript для Microsoft Teams](../tabs/how-to/using-teams-client-sdk.md) (версии 2.0.0 и более поздних), манифеста приложения [Teams](../resources/schema/manifest-schema.md) (версии 1.13 и более поздних) и [набора средств Teams](../toolkit/visual-studio-code-overview.md) можно создавать и обновлять приложения Teams для запуска в других высокопроизводительные продукты Microsoft 365 и публиковать их на коммерческой платформе Майкрософт (коммерческая [платформа](https://appsource.microsoft.com/) Майкрософт).
 
 Расширение приложения Teams в Microsoft 365 обеспечивает упрощенный способ предоставления кроссплатформенных приложений для расширенной аудитории пользователей: с помощью одной базы кода можно создавать интерфейсы приложений, адаптированные для сред Teams, Outlook и Office. Конечным пользователям не придется выходить из контекста своей работы, чтобы использовать ваше приложение, а администраторы получают преимущества от консолидированного рабочего процесса управления и развертывания.
 
@@ -22,9 +22,8 @@ ms.locfileid: "67288215"
 
 |          | Элемент манифеста приложения | Поддержка Teams |Поддержка Outlook* | Поддержка Office* | Примечания |
 |--|--|--|--|--|--|
-| [**Вкладки**](../tabs/what-are-tabs.md) (личная область)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Интернет (целевой выпуск)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
+| [**Вкладки**](../tabs/what-are-tabs.md) (личная область)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Веб (целевой выпуск), рабочий стол (бета-канал)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
 | [**Расширения сообщений**](../messaging-extensions/what-are-messaging-extensions.md) (на основе поиска)| `composeExtensions` | Web, Desktop, Mobile| Веб (целевой выпуск), рабочий стол (бета-канал)| - |На основе действий для Microsoft 365 пока не поддерживается. См. [примечания](extend-m365-teams-message-extension.md#preview-your-message-extension-in-outlook). |
-| [**Соединители графов**](/graph/connecting-external-content-connectors-overview)| `graphConnector` | Web, Desktop, Mobile| Интернет, рабочий стол | Веб| Просмотр [заметок](#graph-connectors)
 | [**Надстройки Office**](/office/dev/add-ins/develop/json-manifest-overview) (предварительная версия) | `extensions` | - | Интернет, рабочий стол | - | Доступно только в [версии манифеста devPreview](../resources/schema/manifest-schema-dev-preview.md) . См. [примечания](#office-add-ins-preview).|
 
 \*Для [параметра целевого выпуска Microsoft 365](/microsoft-365/admin/manage/release-options-in-office-365) [Приложения Microsoft 365](/deployoffice/change-update-channels) регистрации канала обновления требуется согласие администратора для всей организации или выбранных пользователей. Каналы обновления относятся к конкретному устройству и применяются только к установкам Office, работающим в Windows.
@@ -50,22 +49,15 @@ ms.locfileid: "67288215"
 
 Чтобы упростить и оптимизировать экосистему разработчиков Microsoft 365, мы продолжаем расширять манифест приложения Teams в других областях Microsoft 365 следующим образом.
 
-### <a name="graph-connectors"></a>Соединители графов
-
-С помощью соединителей Microsoft Graph ваша организация может индексировать сторонние данные, чтобы они отображались в виде результатов поиска (Майкрософт), расширяя типы источников контента, доступных для поиска, в приложениях Teams.
-Дополнительные сведения см. в [обзоре соединителей Microsoft Graph для Поиска (Майкрософт).](/microsoftsearch/connectors-overview)
-
-Чтобы приступить к работе с соединителями графов в приложениях Teams, ознакомьтесь с примером соединителей [Teams Toolkit Graph](https://aka.ms/teamsfx-graph-connector-sample) и справочником по схеме манифеста предварительной версии [microsoft Teams Developer](../resources/schema/manifest-schema-dev-preview.md) .
-
 ### <a name="office-add-ins-preview"></a>Надстройки Office (предварительная версия)
 
 Теперь вы можете определять и развертывать надстройки Office в [](../resources/schema/manifest-schema-dev-preview.md) предварительной версии манифеста приложения Microsoft Teams для разработчиков. В настоящее время эта предварительная версия доступна только для надстроек Outlook, работающих в подписке Office для Windows.
 
 Дополнительные сведения см. в [Манифест Teams для надстроек Office (предварительная версия)](/office/dev/add-ins/develop/json-manifest-overview).
 
-## <a name="microsoft-appsource-submission"></a>Отправка Microsoft AppSource
+## <a name="microsoft-commercial-marketplace-submission"></a>Отправка на коммерческой платформе Майкрософт
 
-Присоединяйтесь к постоянному числу рабочих приложений Teams в [Microsoft AppSource](https://appsource.microsoft.com/) Store, расширяя поддержку аудиторий Outlook и Office (targeted Release). Процесс [отправки приложений Teams](../concepts/deploy-and-publish/appsource/publish.md) , включенных для Outlook и Office, такой же, как и для традиционных приложений Teams. Единственным отличием является использование манифеста приложения Teams версии [1.13](../tabs/how-to/using-teams-client-sdk.md) в пакете приложения, в котором реализована поддержка приложений Teams, которые работают в Microsoft 365.
+Присоединяйтесь к растущему числу рабочих приложений Teams в магазине Коммерческой платформы [Майкрософт (Microsoft](https://appsource.microsoft.com/) AppSource) с расширенной поддержкой аудиторий Outlook и Предварительной версии Office (targeted Release). Процесс [отправки приложений Teams](../concepts/deploy-and-publish/appsource/publish.md) , включенных для Outlook и Office, такой же, как и для традиционных приложений Teams. Единственным отличием является использование манифеста приложения Teams версии [1.13](../tabs/how-to/using-teams-client-sdk.md) в пакете приложения, в котором реализована поддержка приложений Teams, которые работают в Microsoft 365.
 
 После публикации в виде приложения Teams с поддержкой Microsoft 365 ваше приложение будет обнаруживаться как устанавливаемое приложение из магазинов приложений Outlook и Office, а также в магазине Teams. При запуске в Outlook и Office ваше приложение использует те же разрешения, что и в Teams. Администраторы Teams могут [управлять доступом к приложениям Teams в Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) для пользователей в своей организации.
 

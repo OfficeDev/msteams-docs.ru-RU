@@ -1,17 +1,17 @@
 ---
-title: Получение контекста для Microsoft Teams бота
+title: Получение контекста для бота Microsoft Teams
 description: В этом модуле вы узнаете, как получить контекст для ботов в Microsoft Teams, получить список команд и профиль пользователя или список в личном или групповом чате.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 05/20/2019
-ms.openlocfilehash: 3fd75e063f9b12c09bc4dded167bd8cdaead6b7a
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: fd43d9c4b3a3e4702b9bbd4955e58c0fc86caddf
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143118"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67780928"
 ---
-# <a name="get-context-for-your-microsoft-teams-bot"></a>Получение контекста для Microsoft Teams бота
+# <a name="get-context-for-your-microsoft-teams-bot"></a>Получение контекста для бота Microsoft Teams
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
@@ -19,13 +19,13 @@ ms.locfileid: "66143118"
 
 > [!NOTE]
 >
-> * Microsoft Teams API ботов лучше всего получить через наши расширения для пакета SDK Bot Builder.
-> * Для C# или .NET скачайте наш [пакет Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) NuGet.
-> * Для Node.js разработки функция Bot Builder для Teams включена в пакет [SDK Bot Framework](https://github.com/microsoft/botframework-sdk) версии 4.6.
+> * API-интерфейсы ботов для Microsoft Teams лучше всего доступны через наши расширения для пакета SDK Bot Builder.
+> * Для C# или .NET скачайте пакет [NuGet Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) .
+> * Для Node.js разработки функциональные возможности Bot Builder для Teams включены в пакет [SDK Bot Framework](https://github.com/microsoft/botframework-sdk) версии 4.6.
 
 ## <a name="fetch-the-team-roster"></a>Получение сведений о списке команд
 
-Бот может запрашивать список участников команды и их базовые профили. Основные профили включают Teams идентификаторы пользователей и Microsoft Azure Active Directory (Azure AD), такие как имя и идентификатор объекта. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, проверьте, входит ли пользователь на вкладку с помощью учетных данных Microsoft Azure Active Directory (Azure AD) является членом команды.
+Бот может запрашивать список участников команды и их базовые профили. Основные профили включают идентификаторы пользователей Teams и Microsoft Azure Active Directory (Azure AD), такие как имя и идентификатор объекта. Эти сведения можно использовать для сопоставления удостоверений пользователей. Например, проверьте, входит ли пользователь на вкладку с помощью учетных данных Microsoft Azure Active Directory (Azure AD) является членом команды.
 
 ### <a name="rest-api-example"></a>Пример REST API
 
@@ -72,6 +72,7 @@ Response body
 ### <a name="net-example"></a>Пример .NET
 
 Вызов `GetConversationMembersAsync` с `Team.Id` помощью функции возврата списка идентификаторов пользователей.
+Вызов `GetConversationMembersAsync` для получения `userRole` свойства возвращает значение как пользователь.
 
 ```csharp
 // Fetch the members in the current conversation
@@ -164,7 +165,7 @@ Response body
 
 #### <a name="net-example"></a>Пример .NET
 
-В следующем примере используется `FetchChannelList` вызов из [расширений Teams для пакета SDK Bot Builder для .NET](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams):
+В следующем примере используется вызов `FetchChannelList` из расширений [Teams для пакета SDK Bot Builder для .NET](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams):
 
 ```csharp
 ConversationList channels = client.GetTeamsConnectorClient().Teams.FetchChannelList(activity.GetChannelData<TeamsChannelData>().Team.Id);
@@ -172,7 +173,7 @@ ConversationList channels = client.GetTeamsConnectorClient().Teams.FetchChannelL
 
 #### <a name="nodejs-example"></a>Пример Node.js
 
-В следующем примере `fetchChannelList` используется вызов из [расширений Teams для пакета SDK Bot Builder для Node.js](https://www.npmjs.com/package/botbuilder-teams):
+В следующем примере используется `fetchChannelList` вызов из расширений [Teams для пакета SDK Bot Builder для Node.js](https://www.npmjs.com/package/botbuilder-teams):
 
 ```javascript
 var teamId = session.message.sourceEvent.team.id;
@@ -213,7 +214,7 @@ connector.fetchChannelList(
 ]
 ```
 
-### <a name="c-example"></a>C# пример
+### <a name="c-example"></a>Пример C#
 
 ```csharp
 var connector = new ConnectorClient(new Uri(context.Activity.ServiceUrl));

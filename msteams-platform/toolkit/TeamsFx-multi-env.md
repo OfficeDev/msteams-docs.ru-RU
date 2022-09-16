@@ -6,12 +6,12 @@ ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 11/29/2021
-ms.openlocfilehash: 4a4b67399b2ec7c78fa536b06ee7faa9bb352468
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: 964e7d8ad6e643d26178e04fb9ce706bb177f1d1
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67616947"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67780998"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
@@ -118,7 +118,7 @@ ms.locfileid: "67616947"
 3. Вы можете создать новую среду и указать ее имя `staging` , если она не существует.
 4. Откройте файл конфигурации `.fx/configs/config.staging.json`.
 5. Обновите то же свойство `myapp(staging)`.
-6. Теперь можно выполнить команду подготовки в среде `dev` `staging` и обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с помощью Набора средств Teams см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit).
+6. Теперь можно выполнить команду подготовки в среде `dev` `staging` и обновить имя приложения в удаленных средах. Сведения о выполнении команды подготовки с помощью Набора средств Teams см. в [разделе "Подготовка"](provision.md#provision-using-teams-toolkit-in-visual-studio-code).
 
 </details>
 

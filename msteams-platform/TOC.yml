@@ -94,7 +94,7 @@
       href: concepts/design/enable-app-customization.md
 - name: Инструменты и пакеты SDK
   items:
-    - name: Наборы средств Teams для Visual Studio Code
+    - name: Набор средств Teams
       items:
         - name: Обзор набора средств Teams
           href: toolkit/teams-toolkit-fundamentals.md
@@ -162,20 +162,6 @@
               href: toolkit/Integrate-with-developer-portal.md
         - name: Вопросы и ответы
           href: toolkit/faq.md
-    - name: Наборы средств Teams для Visual Studio
-      items:
-        - name: Обзор набора средств Teams
-          href: toolkit/teams-toolkit-overview-visual-studio.md
-        - name: Создание нового приложения Teams
-          href: toolkit/create-new-teams-app-for-Visual-Studio.md
-        - name: Отладка приложения Teams
-          href: toolkit/debug-teams-app-visual-studio.md
-        - name: Подготовка облачных ресурсов
-          href: toolkit/provision-cloud-resources.md
-        - name: Развертывание приложения Teams в облаке
-          href: toolkit/deploy-teams-app.md
-        - name: Изменение манифеста приложения Teams
-          href: toolkit/VS-TeamsFx-preview-and-customize-app-manifest.md
     - name: CLI набора средств Teams
       href: toolkit/TeamsFx-CLI.md
     - name: Генератор Yeoman для Teams (GitHub)
@@ -670,7 +656,7 @@
           displayName: 'Value proposition, app package and store listing, advertising, stacked text, Fluent UI components, whiteboarding apps, message spamming, Avatars,'
         - name: Создание учетной записи разработчика Центра партнеров
           href: concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md
-          displayName: Update Apple app store
+          displayName: 'Update Apple app store,app acquisition on mobile'
         - name: Подготовка к отправке в магазин Teams
           href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
           displayName: 'Testing instructions, publisher verification, attestation'

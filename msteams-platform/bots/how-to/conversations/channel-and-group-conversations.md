@@ -5,12 +5,12 @@ description: Узнайте, как отправлять, получать и о
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 91e696644698a609f6870aad9f4242e797b8e6bc
-ms.sourcegitcommit: 2d48459e0cdf92c097954ecc785f0ea257d423b9
+ms.openlocfilehash: 8db8858ff746ce466b8cfef1cfa210111662cbeb
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67646141"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67780935"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Беседы с бото в канале и групповом чате
 
@@ -30,7 +30,7 @@ ms.locfileid: "67646141"
 В следующем видео показано, как общаться в чатах каналов и групп с ботом:
 <br>
 
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4NzEs>]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NzEs]
 <br>
 
 ## <a name="design-guidelines"></a>Рекомендации по дизайну

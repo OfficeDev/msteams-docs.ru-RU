@@ -6,14 +6,21 @@ ms.author: surbhigupta
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/14/2022
-ms.openlocfilehash: 8500f5ba1f54b28f68f9b56c0a42aedfff108e64
-ms.sourcegitcommit: c806c5ffe277c740d0d7b8f62e72ade562029194
+zone_pivot_groups: teams-app-platform
+ms.openlocfilehash: e9f1d0cbfcc1de9ced3cd0bac6f26f9218aecd40
+ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67617798"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67781165"
 ---
 # <a name="create-a-new-teams-project"></a>Создание проекта Teams
+
+В этом разделе описано, как создать проект Teams с помощью Visual Studio Code и Visual Studio.
+
+::: zone pivot="visual-studio-code"
+
+## <a name="create-a-new-teams-project-for-visual-studio-code"></a>Создание проекта Teams для Visual Studio Code
 
 Вы можете создать проект Teams, выбрав "Создать **новое приложение Teams** " в Наборе средств Teams. В Наборе средств Teams можно создавать приложения следующих типов:
 
@@ -71,7 +78,6 @@ ms.locfileid: "67617798"
    Приложение вкладки Teams создается через несколько секунд.
 
     :::image type="content" source="../assets/images/teams-toolkit-v2/first-tab/tap-app-created1.png" alt-text="Снимок экрана: созданное приложение.":::
-
 
 ### <a name="directory-structure-for-different-app-types"></a>Структура каталогов для различных типов приложений
 
@@ -163,9 +169,109 @@ ms.locfileid: "67617798"
 
 </details>
 
+::: zone-end
+
+::: zone pivot="visual-studio"
+
+## <a name="create-new-teams-app-in-visual-studio"></a>Создание приложения Teams в Visual Studio
+
+Набор средств Teams предоставляет шаблоны приложений Microsoft Teams в Visual Studio для создания приложения Teams.  Вы можете выполнить поиск и выбрать шаблон приложения Teams, который требуется при создании нового проекта. У вас могут быть шаблоны приложений Teams для создания:
+
+* Приложение tab
+* Командный бот
+* Бот уведомлений
+* Приложение расширения сообщений
+
+## <a name="prerequisites"></a>Предварительные требования
+
+| &nbsp; | Установка | Для использования... |
+| --- | --- | --- |
+| &nbsp; | **Required** | &nbsp; |
+| &nbsp; | Visual Studio версии 17.3 | Вы можете установить корпоративный выпуск Visual Studio и установить рабочую нагрузку ASP.NET и средства разработки Microsoft Teams. |
+| &nbsp; | Набор средств Teams | Расширение Visual Studio, которое создает шаблон проекта для вашего приложения. Используйте последнюю версию. |
+| &nbsp; | [Microsoft Teams](https://www.microsoft.com/microsoft-teams/download-app) | Microsoft Teams для взаимодействия в одном месте со всеми пользователями, с которыми вы работаете, с помощью приложений для чата, собраний и звонков. |
+ | &nbsp; | [Подготовка клиента Microsoft 365](../concepts/build-and-test/prepare-your-o365-tenant.md) | Доступ к учетной записи Teams с соответствующими разрешениями на установку приложения. |
+
+## <a name="create-a-new-teams-app"></a>Создание нового приложения Teams
+
+Действия по созданию нового приложения Teams аналогичны для всех типов приложений, кроме бота уведомлений. Следующие действия помогут вам создать новое приложение вкладки:
+
+1. Откройте Visual Studio.
+1. Создайте проект, используя один из следующих двух вариантов.
+
+     :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-create-new-project1_1.png" alt-text="Создание проекта с кодом на основе начала работы":::
+
+    * Выберите **"Создать проект" в** разделе **"Начало** работы", чтобы выбрать шаблон проекта с формированием шаблонов кода.
+    * Выберите **"Продолжить без кода** ", чтобы создать проект без формирования шаблонов кода, и выберите **"Файл** > **новый** > **проект"** в Visual Studio.
+
+        :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-create-new-project2_1.png" alt-text="Создание проекта из меню &quot;Файл&quot;":::
+
+   **Появится окно создания** проекта.  
+
+1. Введите команды в поле поиска и в списке, выберите **приложение Microsoft Teams и** нажмите кнопку **"Далее"**.
+
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/visual-studio.png" alt-text="Поиск и выбор приложения Microsoft Teams":::
+
+   **Появится окно "Настройка нового проекта**".
+
+     :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-ms-teams-app-project-name_1.png" alt-text="Имя приложения":::
+
+    1. Введите подходящее имя для проекта.
+
+         > [!NOTE]
+         > Имя проекта, которое вы вводите, также автоматически **заполняется и именем** решения. При необходимости можно изменить имя решения без влияния на имя проекта.
+
+    1. Выберите путь к папке, в которой нужно создать рабочую область проекта.
+    1. При необходимости введите другое имя решения.
+    1. При необходимости выберите вариант сохранения проекта и решения в той же папке. В этом руководстве этот параметр не требуется.
+    1. Нажмите **Создать**.
+
+   **Появится окно "Создание приложения Teams**".
+
+1. В этом руководстве **выбрана** вкладка для создания нового приложения teams и выбора " **Создать"**.
+
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-ms-teams-app-type_3.png" alt-text="Выбор типа приложения Teams":::
+
+   > [!NOTE]
+   > Вы можете выбрать требуемый тип приложения Teams для проекта.
+
+   **Появится начало работы** **с окном "Добро пожаловать в Набор средств Teams**".
+
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-getting-started-page.png" alt-text="Выбор набора средств начало работы teams":::
+
+### <a name="directory-structure"></a>Структура каталогов
+
+Набор средств Teams предоставляет все компоненты для создания приложения. После создания проекта можно просмотреть папки и файлы проекта в обозревателе.
+
+* **Структура каталогов для базового приложения Teams**
+
+  :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-create-new-project-solution-explorer_1.png" alt-text="Выберите вкладку Обозреватель решений teams":::
+
+* **Структура каталогов для приложения Teams на основе сценариев**
+
+  :::image type="content" source="../assets/images/Tools-and-SDK-revamp/Create-new-app-VS/vs-create-new-project-solution-explorer.png" alt-text="Выберите набор средств Обозреватель решений teams":::
+
+## <a name="teams-app-templates-in-teams-toolkit-for-visual-studio"></a>Шаблоны приложений Teams в Наборе средств Teams для Visual Studio
+
+Вы можете увидеть шаблоны приложений Teams, уже заполненные в Наборе средств Teams для различных типов приложений Teams. В следующей таблице перечислены все доступные шаблоны:
+
+|Шаблон приложения Teams  |Описание  |
+|---------|---------|
+|Бот уведомлений     |Приложение Бота уведомлений может отправлять уведомления клиенту Teams. Существует несколько способов активации уведомления. Например, можно активировать уведомление по HTTP-запросу или по времени. Вы также можете выбрать активируемую отправку уведомлений в зависимости от бизнес-сценария.         |
+|Командный бот     |Пользователи могут ввести команду для взаимодействия с ботом с помощью приложения Command Bot.         |
+|Tab     |Приложение tab отображает веб-страницу в Teams и включает единый вход с помощью учетной записи Teams.         |
+|Расширение сообщения     |Приложение расширения сообщений реализует простые функции, такие как создание адаптивной карточки, поиск пакетов Изум, удаление ссылок для домена "dev.botframework.com".         |
+
+> [!NOTE]
+> После создания проекта Набор средств Teams автоматически открывает окно **"Начало работы** ". Теперь вы можете просмотреть инструкции в  окне "Начало работы" и просмотреть различные функции в Наборе средств Teams.
+
+::: zone-end
+
 ## <a name="see-also"></a>См. также
 
 * [Создание приложения Teams с помощью Blazor](../sbs-gs-blazorupdate.yml)
 * [Создание приложения Teams с помощью C# или .NET](../sbs-gs-csharp.yml)
 * [Предварительные требования для всех типов среды и создания приложения Teams](tools-prerequisites.md)
 * [Подготовка к созданию приложений с помощью Microsoft Teams Toolkit](build-environments.md)
+* [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
+* [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)
