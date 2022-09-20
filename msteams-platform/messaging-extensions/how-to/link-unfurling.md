@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 50dc2ee5a6ba8b8578e2947c5a85303be5bac5f5
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
+ms.openlocfilehash: 48c015050efe469446aea9016a33effe8ad3ba3a
+ms.sourcegitcommit: 6ea8c3fe0ccea0204285ea5f994913d173925ffd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312227"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67833392"
 ---
 # <a name="add-link-unfurling"></a>Добавление разворачивающейся ссылки
 
@@ -22,6 +22,7 @@ ms.locfileid: "67312227"
 >
 > * В настоящее время развертывание ссылок не поддерживается мобильными клиентами.
 > * Результат развертывания ссылки кэшируется в течение 30 минут.
+> * Команды расширения для обмена сообщениями не требуются для отмены компоновки. Однако в манифесте должна быть хотя бы одна команда, так как это обязательное свойство в расширениях обмена сообщениями. Дополнительные сведения см. в [разделе "Создание расширений"](/microsoftteams/platform/resources/schema/manifest-schema)
 
 Расширение для сообщений Azure DevOps использует развертывание ссылок для поиска URL-адресов, вставленных в область создания сообщений, указывающих на рабочий элемент. На следующем рисунке пользователь вставляет URL-адрес элемента в Azure DevOps, который расширение сообщения разрешает в карточку:
 
