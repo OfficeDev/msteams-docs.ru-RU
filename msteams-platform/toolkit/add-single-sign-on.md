@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/20/2022
-ms.openlocfilehash: 5c70a88c7b67229143af881a46272d5cdc9a06c4
-ms.sourcegitcommit: 4eeede81a0ae8ec985c6a1ad4f608df58371402f
+ms.openlocfilehash: b2016cefcdf476e32860f80a76606c04bf892f5d
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66792832"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806796"
 ---
 # <a name="add-single-sign-on-to-teams-app"></a>Добавление функциональности единого входа в приложение Teams
 
@@ -353,4 +353,4 @@ TeamsFx помогает сократить количество задач ра
 
 ## <a name="see-also"></a>См. также
 
-* [Подготовка учетных записей для создания приложений Teams](accounts.md)
+* [Предварительные требования для создания приложения Teams](tools-prerequisites.md)

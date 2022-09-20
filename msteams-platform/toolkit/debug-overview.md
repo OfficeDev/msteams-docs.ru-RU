@@ -7,22 +7,28 @@ ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: fcb1ceae7f49109ba3936c7c12258f2fe4d1e01c
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: d2bdebcb75a9e145cbb874b2d7cc263c78050e07
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67781021"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806924"
 ---
-# <a name="debug-your-microsoft-teams-app"></a>Отладка приложения Microsoft Teams
+# <a name="debug-your-teams-app"></a>Отладка приложения Teams
 
-Набор средств Teams помогает выполнять отладку и предварительный просмотр приложения Teams. Отладка — это процесс проверки, обнаружения и исправления проблем или ошибок, чтобы обеспечить успешное выполнение программы в Teams.
+
+Набор средств Teams помогает выполнять отладку и предварительный просмотр приложения Microsoft Teams. Отладка — это процесс проверки, обнаружения и исправления проблем или ошибок, чтобы обеспечить успешное выполнение программы в Teams.
 
 ::: zone pivot="visual-studio-code"
+
+## <a name="debug-your-teams-app-for-visual-studio-code"></a>Отладка приложения Teams для Visual Studio Code
+
+Набор средств Teams в Microsoft Visual Studio Code автоматизирует процесс отладки. Вы можете обнаружить ошибки и исправить их, а также просмотреть приложение Teams. Вы также можете настроить параметры отладки, чтобы создать вкладку или бот.
 
 ## <a name="debug-your-microsoft-teams-app-for-visual-studio-code"></a>Отладка приложения Microsoft Teams для Visual Studio Code
 
 Набор средств Teams в Visual Studio Code автоматизирует процесс отладки. Вы можете обнаружить ошибки и исправить их, а также просмотреть приложение Teams. Вы также можете настроить параметры отладки, чтобы создать вкладку или бот.
+
 В процессе отладки:
 
 * Набор средств Teams автоматически запускает службы приложений, запускает отладчики и загрузку неопубликованного приложения Teams.
@@ -203,7 +209,7 @@ ms.locfileid: "67781021"
 
 ::: zone pivot="visual-studio"
 
-## <a name="debug-your-microsoft-teams-app-using-visual-studio"></a>Отладка приложения Microsoft Teams с помощью Visual Studio
+## <a name="debug-your-teams-app-using-visual-studio"></a>Отладка приложения Teams с помощью Visual Studio
 
 Набор средств Teams автоматизирует службы запуска приложений, инициирует отладку и загружает неопубликовающее приложение Teams. После отладки вы можете просмотреть приложение Teams в веб-клиенте Teams. Вы также можете настроить параметры отладки для использования конечных точек бота или переменных среды для загрузки настроенного приложения. Visual Studio позволяет выполнять отладку вкладки, бота и расширения сообщений. В процессе отладки Набор средств Teams поддерживает следующие функции отладки:
 
@@ -312,6 +318,3 @@ ms.locfileid: "67781021"
 * [Подготовка облачных ресурсов с помощью набора средств Teams](provision.md)
 * [Развертывание в облаке](deploy.md)
 * [Предварительный просмотр и настройка манифеста приложения Teams](TeamsFx-preview-and-customize-app-manifest.md)
-* [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
-* [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)
-* [Изменение манифеста приложения Teams с помощью Visual Studio](VS-TeamsFx-preview-and-customize-app-manifest.md)

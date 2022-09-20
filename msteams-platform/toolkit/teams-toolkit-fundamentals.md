@@ -7,12 +7,12 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/24/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: 95a42e4bd2064bc1ce4b775f13ba990890bc6776
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: bdcf92b52956eee6db21eb03d115a494c0f063e9
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780732"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806775"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
 
@@ -131,10 +131,11 @@ ms.locfileid: "67780732"
 * [Пространство имен Microsoft.TeamsFx.Conversation](/../dotnet/api/Microsoft.TeamsFx.Conversation)
 * [Пространство имен Microsoft.TeamsFx.Helper](/../dotnet/api/Microsoft.TeamsFx.Helper)
 
+::: zone-end
+
 ## <a name="see-also"></a>См. также
 
 * [Создание приложения Teams в Visual Studio](create-new-teams-app-for-Visual-Studio.md)
 * [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
 * [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)
 
-::: zone-end

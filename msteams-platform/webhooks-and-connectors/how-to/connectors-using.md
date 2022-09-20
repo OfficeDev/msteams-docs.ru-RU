@@ -4,12 +4,12 @@ author: laujan
 description: В этом модуле вы узнаете, как использовать соединители Office 365, а также создавать и отправлять сообщения с действиями в Microsoft Teams
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 6e50877f1afbebe1e132c6461fbae30445227f43
-ms.sourcegitcommit: 5c12af6a379c7cace409fda94677ea0334d7a3dd
+ms.openlocfilehash: 5014c23d13dd8f0b1c694c144e936c624c602d40
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67337217"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806782"
 ---
 # <a name="create-and-send-messages"></a>Создание и отправка сообщений
 
@@ -91,7 +91,7 @@ ms.locfileid: "67337217"
         "actions": [{
             "@type": "HttpPOST",
             "name": "Add comment",
-            "target": "https://docs.microsoft.com/outlook/actionable-messages"
+            "target": "https://learn.microsoft.com/outlook/actionable-messages"
         }]
     }, {
         "@type": "ActionCard",
@@ -104,14 +104,14 @@ ms.locfileid: "67337217"
         "actions": [{
             "@type": "HttpPOST",
             "name": "Save",
-            "target": "https://docs.microsoft.com/outlook/actionable-messages"
+            "target": "https://learn.microsoft.com/outlook/actionable-messages"
         }]
     }, {
         "@type": "OpenUri",
         "name": "Learn More",
         "targets": [{
             "os": "default",
-            "uri": "https://docs.microsoft.com/outlook/actionable-messages"
+            "uri": "https://learn.microsoft.com/outlook/actionable-messages"
         }]
     }, {
         "@type": "ActionCard",
@@ -135,7 +135,7 @@ ms.locfileid: "67337217"
         "actions": [{
             "@type": "HttpPOST",
             "name": "Save",
-            "target": "https://docs.microsoft.com/outlook/actionable-messages"
+            "target": "https://learn.microsoft.com/outlook/actionable-messages"
         }]
     }]
 }

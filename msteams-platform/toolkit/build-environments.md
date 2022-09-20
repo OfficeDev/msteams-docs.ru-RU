@@ -6,14 +6,14 @@ ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 4c6862322b007433f3bdfcdc5da93ec5069c6a36
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: dc3a51d393a6445c26dddd54c471ecb630580b94
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67617321"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806910"
 ---
-# <a name="prepare-to-build-apps-using-microsoft-teams-toolkit"></a>Подготовка к созданию приложений с помощью Microsoft Teams Toolkit
+# <a name="prepare-to-build-apps-using-teams-toolkit"></a>Подготовка к созданию приложений с помощью Набора средств Teams
 
 Набор средств Teams поддерживает среды для создания приложений. Набор средств Teams также помогает интегрировать Функции Azure, а также облачные службы в созданное приложение Teams.
 

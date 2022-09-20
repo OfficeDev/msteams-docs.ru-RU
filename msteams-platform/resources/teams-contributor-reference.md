@@ -1,20 +1,20 @@
 ---
 title: Улучшение документации Teams
-description: Инструкции по созданию и публикации Teams документации
+description: Инструкции по созданию и публикации документации Teams
 author: surbhigupta
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.topic: contributor-guide
-ms.openlocfilehash: 165f5df18395d329aa2f383d2f07e6f7ff3afdcf
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 5a9b2f16b23eaa4879062c104a85b223564cc10c
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143083"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806761"
 ---
 # <a name="contribute-to-teams-documentation"></a>Улучшение документации Teams
 
-Документация Teams является частью библиотеки технической документации **Документация Майкрософт**. Содержимое организовано в группы, называемые docsets, каждый из которых представляет группу родственных документов, управляемых как одна сущность. Статьи в одном наборе docsets имеют то же расширение URL-пути после **docs.microsoft.com**. Например, `/docs.microsoft.com/microsoftteams/...` это начало файлового пути к docset Teams. Статьи о Teams написаны на синтаксисе Markdown и размещаются на GitHub.
+Документация Teams является частью библиотеки технической документации **Документация Майкрософт**. Содержимое организовано в группы, называемые docsets, каждый из которых представляет группу родственных документов, управляемых как одна сущность. Статьи в том же наборе docset имеют то же расширение URL-пути после `learn.microsoft.com`. Например, `/learn.microsoft.com/microsoftteams/...` это начало файлового пути к docset Teams. Статьи о Teams написаны на синтаксисе Markdown и размещаются на GitHub.
 
 ## <a name="set-up-your-workspace"></a>Настройка рабочей области
 

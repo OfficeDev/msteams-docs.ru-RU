@@ -7,16 +7,17 @@ ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: 5aeaba2248306d8f638ed2529dac964d96ffaea5
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 1c1052e2542354cd1b403d8a3df0be24cbd01bee
+ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780867"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67806754"
 ---
-# <a name="debug-your-microsoft-teams-app-locally"></a>Локальная отладка приложения Microsoft Teams
+# <a name="debug-your-teams-app-locally"></a>Отлаживайте приложения Teams локально
 
-Набор средств Teams поможет отладить и предварительно просмотреть приложение Teams локально. В процессе отладки Набор средств Teams автоматически запускает службы приложений, запускает отладчики и загружает неопубликовающее приложение Teams. Вы можете просмотреть приложение Teams в веб-клиенте Teams локально после отладки.
+
+Набор средств Teams помогает выполнять локальную отладку и предварительный просмотр приложения Microsoft Teams. В процессе отладки Набор средств Teams автоматически запускает службы приложений, запускает отладчики и загружает неопубликовающее приложение Teams. Вы можете просмотреть приложение Teams в веб-клиенте Teams локально после отладки.
 
 ::: zone pivot="visual-studio-code"
 
@@ -151,7 +152,7 @@ ms.locfileid: "67780867"
 
 ::: zone pivot="visual-studio"
 
-## <a name="debug-your-microsoft-teams-app-locally-using-visual-studio"></a>Локальная отладка приложения Microsoft Teams с помощью Visual Studio
+## <a name="debug-your-teams-app-locally-using-visual-studio"></a>Локальная отладка приложения Teams с помощью Visual Studio
 
 Набор средств Teams помогает выполнять локальную отладку и предварительный просмотр приложения Microsoft Teams. Visual Studio позволяет выполнять отладку вкладки, бота и расширения сообщений. Вы можете выполнить локальную отладку приложения в Visual Studio с помощью набора средств Teams, выполнив следующие действия:
 
@@ -214,6 +215,3 @@ ngrok http 5130
 * [Добавление возможностей в приложения Teams](add-capability.md)
 * [Развертывание в облаке](deploy.md)
 * [Управление несколькими средами в наборе средств Teams](TeamsFx-multi-env.md)
-* [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
-* [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)
-* [Изменение манифеста приложения Teams с помощью Visual Studio](VS-TeamsFx-preview-and-customize-app-manifest.md)
