@@ -11,12 +11,12 @@ metadata:
   nextTutorialTitle: Дополнительные сведения о проверке подлинности единого входа для вкладок.
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: c0e9ff9397c2afd70ab7de1a03b4fb04727dcec3
-  ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
+  ms.openlocfilehash: 7932c22485aaeffc39bd1339e92740afe51396e6
+  ms.sourcegitcommit: 31032e3dee47232c3f8fc9ed1f2168cc0cbcfb7e
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/19/2022
-  ms.locfileid: "67806866"
+  ms.lasthandoff: 09/21/2022
+  ms.locfileid: "67858932"
 items:
 - durationInMinutes: 1
   content: "Единый вход Azure Active Directory (Azure AD SSO) помогает выполнять проверку подлинности пользователей в Teams. \n\n**Основные аспекты** пошаговое руководство по Azure AD единого входа для вкладок и расширений сообщений:\n\n * После первого входа Azure AD единый вход позволяет пользователю автоматически выполнять вход.\n * Позволяет пользователю входить на другие устройства без повторного ввода учетных данных для входа.\n * Получает маркер для вошедского пользователя.   \n\nЭто пошаговое руководство поможет вам создавать вкладки и расширения сообщений, Azure AD проверку подлинности единого входа. Вы увидите следующие выходные данные:\n\n  ![Изображение с поздравлением](~/assets/images/Tab-ME-SSO/hello-megan-profile245.png)   \n"

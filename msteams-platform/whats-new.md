@@ -3,12 +3,12 @@ title: Новые и обновленные возможности для раз
 description: Представленные новые возможности разработчиков в Microsoft Teams и обновления существующих возможностей.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 8f057c4f16fb1c22e1bebcaaef0396ab55fec107
-ms.sourcegitcommit: 08bd7f1b9c654b95d3639ca88052c9ca9a8c3f67
+ms.openlocfilehash: b5ca7ab2aa0a2861b8cc9d402e30eec5409b9aff
+ms.sourcegitcommit: 31032e3dee47232c3f8fc9ed1f2168cc0cbcfb7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67833741"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "67858904"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -169,7 +169,7 @@ ms.locfileid: "67833741"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-|30.11.2020|Интеграция платформы удостоверений с набором средств Teams и Visual Studio Code для вкладок |[Проверка подлинности с единым входом с помощью набора средств Teams и Visual Studio Code для вкладок](toolkit/visual-studio-code-tab-sso.md)|
+|30.11.2020|Интеграция платформы удостоверений с набором средств Teams и Visual Studio Code для вкладок |[Проверка подлинности с единым входом с помощью набора средств Teams и Visual Studio Code для вкладок](toolkit/add-single-sign-on.md)|
 |16.11.2020|Манифест приложения Teams обновлен до версии 1.8.|[Справочник: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 |10.11.2020|Рекомендации по разработке ботов Teams |[Рекомендации по разработке ботов](bots/design/bots.md)|
 |30.09.2020|Теперь поддерживается отправка и получение файлов в ботах на мобильных устройствах |[Отправка и получение файлов через бот](resources/bot-v3/bots-files.md)|
@@ -184,7 +184,7 @@ ms.locfileid: "67833741"
 |20.07.2020|Средство проверки приложений Teams для отправки в AppSource |[Средство проверки приложений Teams](concepts/deploy-and-publish/appsource/prepare/submission-checklist.md)
 |15.07.2020|Создание виртуального помощника для Teams |[Виртуальный помощник для Microsoft Teams](samples/virtual-assistant.md)|
 |14.07.2020|Документация по отображению встроенного индикатора загрузки |[Отображение встроенного индикатора загрузки](tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
-|01.07.2020|Начало работы по созданию приложения Teams с помощью набора средств Visual Studio Code |[Создание приложений с помощью набора средств Microsoft Teams и Visual Studio Code](toolkit/visual-studio-code-overview.md) |
+|01.07.2020|Начало работы по созданию приложения Teams с помощью набора средств Visual Studio Code |[Создание приложений с помощью набора средств Microsoft Teams и Visual Studio Code](sbs-gs-javascript.yml) |
 |01.07.2020|Единый вход для вкладок в общедоступной версии для веб-клиентов и классических клиентов Teams |[Единый вход](tabs/how-to/authentication/tab-sso-overview.md)|
 |05.06.2020| Схема манифеста обновлена до версии 1.7.| [Справочник: схема манифеста для Microsoft Teams](resources/schema/manifest-schema.md)|
 |18.05.2020|Интеграция Power Virtual Agents с Teams |[Интеграция чат-бота Power Virtual Agents с Microsoft Teams](bots/how-to/add-power-virtual-agents-bot-to-teams.md)|

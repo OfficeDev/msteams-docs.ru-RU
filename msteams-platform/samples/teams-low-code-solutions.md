@@ -5,12 +5,12 @@ description: Узнайте о доступных решениях Майкро�
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 59730f586ff90a6f0de9061c41ccc6c2e24385ef
-ms.sourcegitcommit: 68bf3adb8aaae07caf684f7d9efb5cb7c84598b9
+ms.openlocfilehash: 0cee1547424df7952f2ba9864981814871a511f7
+ms.sourcegitcommit: 31032e3dee47232c3f8fc9ed1f2168cc0cbcfb7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67382939"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "67858911"
 ---
 # <a name="create-low-code-custom-apps-for-teams"></a>Создание пользовательских приложений с низким кодом для Teams
 
@@ -59,10 +59,10 @@ Microsoft Power Platform объединяет четыре богатые воз
 
 |  Статья  |  Ссылки  |
 |:---------|:----------------------|
-|Power BI|[Power BI для создателей приложений](/learn/browse/?expanded=power-platform&products=power-bi&roles=maker)</br>[Power BI для разработчиков](/learn/browse/?expanded=power-platform&products=power-bi&roles=developer)|
-|Power Apps|[Power Apps для создателей приложений](/learn/browse/?products=power-apps&roles=maker)</br>[Power Apps для разработчиков](/learn/browse/?products=power-apps)|
-|Power Automate|[Power Automate для создателей приложений](/learn/browse/?expanded=power-platform&products=power-automate&roles=maker)</br>[Power Automate для разработчиков](/learn/browse/?expanded=power-platform&products=power-automate&roles=developer)|
-|Power Virtual Agents|[Power Virtual Agents для разработчиков и создателей приложений](/learn/browse/?products=power-virtual-agents&expanded=power-platform&roles=maker)|
+|Power BI|[Power BI для создателей приложений](/training/browse/?expanded=power-platform&products=power-bi&roles=maker)</br>[Power BI для разработчиков](/training/browse/?expanded=power-platform&products=power-bi&roles=developer)|
+|Power Apps|[Power Apps для создателей приложений](/training/browse/?products=power-apps&roles=maker)</br>[Power Apps для разработчиков](/training/browse/?products=power-apps)|
+|Power Automate|[Power Automate для создателей приложений](/training/browse/?expanded=power-platform&products=power-automate&roles=maker)</br>[Power Automate для разработчиков](/training/browse/?expanded=power-platform&products=power-automate&roles=developer)|
+|Power Virtual Agents|[Power Virtual Agents для разработчиков и создателей приложений](/training/browse/?products=power-virtual-agents&expanded=power-platform&roles=maker)|
 
 ### <a name="-project-oakdale-preview"></a>✔ Project (предварительная версия)
 
