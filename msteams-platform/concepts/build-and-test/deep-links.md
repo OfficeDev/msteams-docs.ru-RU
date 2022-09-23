@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: В этой статье вы узнаете, как создавать прямые ссылки и переходить по ним в приложениях Microsoft Teams с вкладками.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: f3c5859ed124d173d617a75694ac5b9179e1181c
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: ea279c9bd4883507df4f56fbf514080940da52b4
+ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780886"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67991003"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -258,7 +258,7 @@ microsoftTeams.executeDeepLink("https://teams.microsoft.com/l/meeting/new?subjec
 * `content`: необязательное поле для поля сведений о собрании.
 
 > [!NOTE]
-> Сейчас указание расположения не поддерживается. Вы должны указать смещение UTC, т. е. часовые пояса, при создании времени начала и окончания.
+> Currently, specifying the location isn't supported. You must specify the UTC offset, it means time zones when generating your start and end times.
 
 Чтобы использовать эту прямую ссылку с ботом, ее можно указать в качестве целевого URL-адреса на кнопке карточки или коснитесь действия через тип действия `openUrl`.
 
@@ -348,7 +348,7 @@ else { /* handle case where capability isn't supported */ }
 
 Параметры запроса:
 
-* `fileId`: Идентификатор уникального документа Sharepoint Online, также известный как `sourcedoc`. Например,`1FA202A5-3762-4F10-B550-C04F81F6ACBD`.
+* `fileId`: Unique file ID from Sharepoint Online, also known as `sourcedoc`. For example,`1FA202A5-3762-4F10-B550-C04F81F6ACBD`.
 * `tenantId`: ИД клиента, например `0d9b645f-597b-41f0-a2a3-ef103fbd91bb`.
 * `fileType`: поддерживаемый тип файла, например DOCX, PPTX, XLSX и PDF.
 * `objectUrl`: URL-адрес объекта файла. Представлено в формате `https://{tenantName}.sharepoint.com/sites/{TeamName}/SharedDocuments/{ChannelName}/FileName.ext`. Например, `https://microsoft.sharepoint.com/teams/(filepath)`.
@@ -385,7 +385,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 
 ### <a name="deep-linking-to-an-app"></a>Создание прямых ссылок на приложение
 
-Создайте прямую ссылку для приложения после того, как приложение появится в магазине Teams. Чтобы создать ссылку для запуска Teams, добавьте идентификатор приложения к следующему URL-адресу: `https://teams.microsoft.com/l/app/<your-app-id>`. Отобразится диалоговое окно для установки приложения.
+Создайте прямую ссылку для приложения после того, как приложение появится в магазине Teams. Чтобы создать ссылку для запуска Teams, добавьте идентификатор приложения к следующему URL-адресу: `https://teams.microsoft.com/l/app/<your-app-id>`. Откроется диалоговое окно для установки или открытия приложения.
 
 > [!NOTE]
 > Если ваше приложение утверждено для мобильной платформы, вы можете создать прямую ссылку на приложение на мобильном устройстве. Идентификатор команды Apple App Store Connect требуется дополнительно для подробной ссылки на Teams-iOS. Дополнительные сведения см. в [статье об обновлении идентификатора команды Apple App Store Connect](../deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md#update-apple-app-store-connect-team-id-on-partner-center).

@@ -7,12 +7,12 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/13/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: 02bbcc86c769f8ebff87803b6a12bf882e214bf6
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 2a06953ede09d9486dab239557a4941c590c882b
+ms.sourcegitcommit: ef545fac5c0dbe970d81f53b1631930e9196eba3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780711"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67991665"
 ---
 # <a name="customize-teams-app-manifest"></a>Настройка манифеста приложения Teams
 
@@ -61,31 +61,31 @@ ms.locfileid: "67780711"
 
 1. Выберите **"Предварительный** просмотр" в коде файла `manifest.template.json` .
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Предварительный просмотр":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Снимок экрана: пример предварительного просмотра в codelens файла манифеста.":::
 
 1. Выберите **локальный**.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-env1.png" alt-text="Выбор среды1":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-env1.png" alt-text="Снимок экрана: пример выбора локальной среды.":::
 
 Ниже приведены инструкции по предварительному просмотру локального файла манифеста с помощью параметра пакета **метаданных Zip Teams** :
 
 1. Выберите `manifest.template.json` файл.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-manifest-json.png" alt-text="Выберите манифест":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-manifest-json.png" alt-text="Снимок экрана: пример выбора файла manifest.template.json.":::
 
 1. Щелкните значок Набора средств :::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG"::: Teams на Visual Studio Code панели инструментов.
 
 1. Выберите **пакет метаданных Zip Teams в** разделе **DEPLOYMENT**.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-metadata-package.png" alt-text="Выбор пакета метаданных Teams":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-metadata-package.png" alt-text="Снимок экрана: пример выбора пакета метаданных Zip Teams.":::
 
 1. Выберите **локальный**.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-env1.png" alt-text="Выбор среды":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-env1.png" alt-text="Снимок экрана: пример выбора локальной среды.":::
 
 Локальный предварительный просмотр отображается, как показано на изображении.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Предварительная версия":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Снимок экрана— пример отображения предварительной версии локальной версии.":::
 
 ## <a name="preview-manifest-file-in-remote-environment"></a>Предварительный просмотр файла манифеста в удаленной среде
 
@@ -93,13 +93,13 @@ ms.locfileid: "67780711"
 
 * Выберите **"Подготовка в облаке"** в разделе **"РАЗРАБОТКА** " в расширении Набора средств Teams
   
-  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/provision.png" alt-text="Подготовка облачного ресурса":::
+  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/provision.png" alt-text="Снимок экрана: пример выбора подготовки в облачном ресурсе.":::
 
 Чтобы просмотреть файл манифеста с помощью командыtte:
 
 * **Триггер Teams: подготовка в облаке из** палитры команд.
 
-  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/command palatte.png" alt-text="Подготовка облачного ресурса с помощью команды azure":::
+  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/command palatte.png" alt-text="Снимок экрана: пример подготовки облачного ресурса с помощью командыtte.":::
 
 Он создает конфигурацию для удаленного приложения Teams и создает пакет и манифест предварительного просмотра в папке `build/appPackage` .
 
@@ -112,30 +112,30 @@ ms.locfileid: "67780711"
 
 1. Выберите **"Предварительный** просмотр" в коде файла `manifest.template.json` .
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Предварительный просмотр":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/preview-23.png" alt-text="Снимок экрана— пример отображения предварительного просмотра в codelens файла манифеста.":::
 
 1. Выберите среду.
 
    > [!NOTE]
    > Если есть несколько сред, необходимо выбрать среду для предварительного просмотра, как показано на изображении:
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Add env":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Снимок экрана: пример добавления среды.":::
 
 Следующие шаги помогают предварительно просмотреть файл манифеста с помощью параметра пакета метаданных **Zip Teams** в удаленной среде:
 
 1. Выберите `manifest.template.json` файл.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-manifest-json.png" alt-text="Выберите манифест":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-manifest-json.png" alt-text="Снимок экрана: пример выбора файла manifest.template.json.":::
 
 1. Щелкните значок Набора средств :::image type="icon" source="../assets/images/teams-toolkit-v2/teams-toolkit-sidebar-icon.PNG"::: Teams на Visual Studio Code панели инструментов.
 
 1. Выберите **пакет метаданных Zip Teams в** разделе **DEPLOYMENT**.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-metadata-package.png" alt-text="Выбор пакета метаданных Teams":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-metadata-package.png" alt-text="Снимок экрана: пример выбора пакета метаданных Zip Teams.":::
 
 1. Выберите среду.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Add env":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview-1.png" alt-text="Снимок экрана: пример добавления среды.":::
 
    > [!NOTE]
    > Если есть несколько сред, необходимо выбрать среду для предварительного просмотра, как показано на изображении:
@@ -153,11 +153,11 @@ ms.locfileid: "67780711"
 
    * Перейдите к `manifest.template.json` файлу и щелкните правой кнопкой мыши, чтобы выбрать его `Deploy Teams app manifest` из контекстного меню.
 
-      :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/deploy-manifest.png" alt-text="Развертывание манифеста":::
+      :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/deploy-manifest.png" alt-text="Снимок экрана: пример выбора манифеста приложения Teams.":::
 
    * Триггер `Teams: Deploy Teams app manifest` из палитры команд.
 
-      :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/deploy-command.png" alt-text="Развертывание из палитры команд":::
+      :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/deploy-command.png" alt-text="Снимок экрана: пример развертывания из палитры команд.":::
 
 2. Обновление до платформы Teams.
 
@@ -167,11 +167,11 @@ ms.locfileid: "67780711"
 
    * Trigger **Teams: Update manifest to Teams platform** on the menu bar of `manifest.{env}.json`.
 
-      :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/update-to-teams.png" alt-text="Обновление для команд":::
+      :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/update-to-teams.png" alt-text="Снимок экрана: пример обновления платформы Teams в строке меню манифеста.":::
 
 Вы также можете активировать **Teams: обновление манифеста для платформы Teams** из палитры команд:
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/pre.png" alt-text="представление в виде дерева":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/pre.png" alt-text="Снимок экрана: пример выбора Teams: обновление манифеста для платформы Teams из палитры команд.":::
 
 > [!NOTE]
 > Триггер из codelens редактора или строки меню обновляет текущий файл манифеста на платформу Teams. Для триггера из палитры команд требуется выбрать целевую среду.
@@ -193,7 +193,7 @@ ms.locfileid: "67780711"
 * **Предварительный просмотр и обновление**: локальный файл манифеста перезаписывается в соответствии с текущей конфигурацией, а также обновляется до платформы Teams.
 * **Отмена**: никаких действий не выполняется.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview -3.png" alt-text="pre":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/manifest preview -3.png" alt-text="Снимок экрана— пример отображения навигации для выбора только предварительного просмотра, предварительного просмотра, обновления и отмены параметров, когда файл манифеста устарел из-за изменения конфигурации или шаблона.":::
 
 ## <a name="customize-your-teams-app-manifest"></a>Настройка манифеста приложения Teams
 
@@ -233,7 +233,7 @@ ms.locfileid: "67780711"
 
 * В VSC запустите триггер из `Teams: Validate manifest file` палитры команд:
 
-  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/validate.png" alt-text="Проверка файла":::
+  :::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/validate.png" alt-text="Снимок экрана: пример отображения файла манифеста проверки Teams из палитры команд.":::
 
 * В интерфейсе командной строки используйте команду:
 
@@ -248,18 +248,18 @@ ms.locfileid: "67780711"
 
 In `manifest.template.json`, you can navigate to codelens to preview the values for `local` and `dev` environment.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/codelens.png" alt-text="Preview values":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/codelens.png" alt-text="Screenshot is an example of showing preview values for local and dev environment.":::
 
 > [!NOTE]
 > Provision the environment or execute local debug to generate values for placeholders.
 
 You can navigate to state file or configuration file by selecting the codelens, which provides a drop-down list with all the environment names. After selecting one environment, the corresponding state file or configuration file opens.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-environment.png" alt-text="Select your environment":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/select-environment.png" alt-text="Screenshot is an example of showing the selection of an environment.":::
 
 To preview values for all the environments, you can hover over the placeholder. It shows a list with environment names and corresponding values. If you haven't provisioned the environment or executed the local debug, select `Trigger Teams: Provision in the cloud command to see placeholder value` or `Trigger local debug to see placeholder value`.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/hover.png" alt-text="Preview all values":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/hover.png" alt-text="Screenshot is an example of showing the preview values for all environments.":::
 
 ::: zone-end
 
@@ -274,7 +274,7 @@ After scaffolding, in the manifest template file under `templates/appPackage` fo
 
 In the manifest template, select **Project** > **Teams Toolkit** > **Open Manifest File**.
 
-:::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-open-manifest.png" alt-text="Open manifest file" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-open-manifest.png":::
+:::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-open-manifest.png" alt-text="Screenshot is an example of showing the navigation to open manifest file." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-open-manifest.png":::
 
 ### Customize app manifest in Teams Toolkit
 
@@ -302,11 +302,11 @@ You can preview values in app manifest in two ways:
 
 * When you hover over the placeholder in `manifest.template.json`, then you can see the values for **dev** and **local** environment.
 
-   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-placeholder1.png" alt-text="Hover over placeholder" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-placeholder1.png":::
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-placeholder1.png" alt-text="Screenshot is an example showing when you hover over placeholder, can view the values for dev and local environment." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-placeholder1.png":::
 
 * You can also hover over the key besides each placeholder in `manifest.template.json`, and you can see the same values for **dev** and **local** environment.
 
-   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-key-placeholder.png" alt-text="Hover over key beside placeholder" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-key-placeholder.png":::
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-key-placeholder.png" alt-text="Screenshot is an example showing when you hover over key beside placeholder can view the same values for dev and local environment." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-hover-key-placeholder.png":::
 
    > [!NOTE]
    > If the environment has not been provisioned, or the Teams app dependencies have not been prepared, it indicates that the values for placeholder have not been generated. Please follow the guidance inside hover to generate corresponding values.
@@ -317,26 +317,26 @@ To preview the manifest file, you can sideload for local or deploy for Azure. Yo
 
 * Select **Project** > **Teams Toolkit** and trigger **Prepare Teams App Dependencies** or **Provision in the Cloud** that generates configuration for local or remote Teams app.
 
-   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview-manifest1.png" alt-text="Preview manifest file" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview-manifest1.png":::
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview-manifest1.png" alt-text="Screenshot is an example of showing preview manifest file." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview-manifest1.png":::
 
 There are two other ways to upload zip app package before you can preview manifest file:
 
 1. From the list of menu select **Project** > **Teams Toolkit** > **Zip App Package**, and select **For Local** or **For Azure**.
 
-    :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-zip1.png" alt-text="Zip app package" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-zip1.png":::
+    :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-zip1.png" alt-text="Screenshot is an example of showing the navigation to zip app package for local and azure." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-zip1.png":::
 
 1. You can also upload zip app package from Solution Explorer, if you right-click on **MyTeamsApp1** and then select **Teams Toolkit** > **Zip App Package** > **For Local** or **For Azure**.
 
   > [!NOTE]
   > In this scenario the project name is **MyTeamsApp1**.
 
-   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-solution-explorer1.png" alt-text="List of Teams Toolkit menus from solution explorer" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-solution-explorer1.png":::
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-solution-explorer1.png" alt-text="Screenshot is an example of showing the list of Teams toolkit menus from solution explorer." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-solution-explorer1.png":::
 
 Teams Toolkit generates the zip app package, and to preview manifest file content you can follow the step below:
 
 * Right-click on **manifest.template.json** under **appPackage** folder, select **Preview Manifest File** > **For Local** or **For Azure**.
 
-   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview1.png" alt-text="Preview context menu" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview1.png":::
+   :::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview1.png" alt-text="Screenshot is an example of showing the preview manifest menu for local and azure." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-preview1.png":::
 
 This displays the preview of the manifest file in Visual Studio.
 
@@ -344,12 +344,16 @@ This displays the preview of the manifest file in Visual Studio.
 
 After you've previewed the manifest file in Visual Studio, you can now sync the local changes to the Developer Portal. Select **Project** > **Teams Toolkit** > **Update Manifest in Teams Developer Portal**, or context menu from Solution Explorer. You can now preview the manifest file in Developer Portal as a result of syncing the local changes.
 
-:::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-update-manifest1.png" alt-text="Update manifest in teams developer portal" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-update-manifest1.png":::
+:::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-update-manifest1.png" alt-text="Screenshot is an example of showing the navigation to update manifest in Teams developer portal." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-update-manifest1.png":::
+
+The changes are updated to Teams Developer Portal.
 
 > [!NOTE]
-> The changes are updated to Teams Developer Portal. If you have some manual updates in Developer Portal, that can be overwritten. In the **Warning** dialog box you can select **Overwrite and update** or **Cancel**.
+>
+> * Select **Overwrite and update** or **Cancel** from the **Warning** dialog box to make any maual updates that can be overwritten in the Develope Portal.
+> * When you create a Teams command bot using Visual Studio, two app IDs are registered in Azure Active Directory. You can identify the app IDs in the Developer Portal as **Application client ID** under Basic information and existing **Bot ID** under **App features**.
 
-:::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-overwrite.png" alt-text="Update warning" lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-overwrite.png":::
+:::image type="content" source="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-overwrite.png" alt-text="Screenshot is an example of showing the update warning." lightbox="../assets/images/Tools-and-SDK-revamp/edit-manifest-for-visual-studio/vs-overwrite.png":::
 
 ::: zone-end
 

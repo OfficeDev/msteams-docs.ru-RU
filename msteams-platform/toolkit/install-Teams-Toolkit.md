@@ -7,12 +7,12 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 07/29/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: c784e5d2242381a919500b16ab922a397bfc5d9e
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 9b6492efed353e2f3228a04da292141679401e66
+ms.sourcegitcommit: ef545fac5c0dbe970d81f53b1631930e9196eba3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780690"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67991658"
 ---
 # <a name="install-teams-toolkit"></a>Установка Набора средств Teams
 
@@ -94,7 +94,7 @@ ms.locfileid: "67780690"
 
 Перед началом установки необходимо установить Visual Studio Installer.
 
-Вы можете скачать последнюю версию Visual Studio Installer со страницы [скачивания Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
+Вы можете скачать последнюю версию Visual Studio Installer со страницы [скачивания Visual Studio](https://visualstudio.microsoft.com).
 
 ## <a name="steps-to-install-teams-toolkit"></a>Действия по установке Набора средств Teams
 

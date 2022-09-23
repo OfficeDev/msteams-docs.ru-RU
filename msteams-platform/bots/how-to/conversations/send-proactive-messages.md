@@ -4,12 +4,12 @@ description: Узнайте, как отправлять упреждающие 
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: adecf29766909fb9a8692aa135e09c41a307c867
-ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.openlocfilehash: ec787b827323a462d3ab9ebd76686f5833740534
+ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586905"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67990940"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -22,12 +22,10 @@ ms.locfileid: "67586905"
 * Запланированные сообщения
 
 > [!IMPORTANT]
-> Боты доступны в облаке сообщества для государственных организаций (GCC) и GCC-High но не в средах Министерства обороны Сша (DOD).
 >
-> Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций:
+> * Для отправки упреждающего сообщения рекомендуется начать с создания бота уведомлений с [помощью JavaScript](../../../sbs-gs-notificationbot.yml) или примера входящего уведомления [веб-перехватчика](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/incoming-webhook-notification). Чтобы приступить к работе, [скачайте teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) explore. Дополнительные сведения см. в [документах Teams Toolkit](../../../toolkit/teams-toolkit-fundamentals.md).
 >
-> * GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`.
-> * GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
+> * В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD). Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций: <br> — GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`<br> — GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
 
 Чтобы отправить упреждающее сообщение пользователю, групповому чату или команде, бот должен иметь необходимый доступ для отправки сообщения. В случае группового чата или команды приложение, содержащее бота, должно быть сначала установлено в этом расположении.
 
@@ -87,7 +85,7 @@ ms.locfileid: "67586905"
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHyk]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4NHyk>]
 <br>
 
 ### <a name="understand-who-blocked-muted-or-uninstalled-a-bot"></a>Сведения о пользователях, которые блокируют, отключают или удаляют бота

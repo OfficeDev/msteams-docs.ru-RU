@@ -4,12 +4,12 @@ description: Изучите пример файла манифеста и опи
 ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 11/15/2021
-ms.openlocfilehash: e7b74ab4c610e1cb3b71c8045c3cb93626f0efc9
-ms.sourcegitcommit: 3215a931285ae738c248d145c07fb98656dd42ed
+ms.openlocfilehash: c019b686d27df4927ca721f36bacb5018c5ad596
+ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67675835"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67990926"
 ---
 # <a name="public-developer-preview-manifest-schema-for-teams"></a>Схема манифеста общедоступной предварительной версии для разработчиков для Teams
 
@@ -395,11 +395,11 @@ ms.locfileid: "67675835"
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`configurationUrl`|String|2048 символов|✔️|URL-адрес, используемый при настройке вкладки (https://).|
-|`canUpdateConfiguration`|Boolean|||Значение, указывающее, может ли экземпляр конфигурации вкладки быть обновлен пользователем после создания. По умолчанию: `true`.|
+|`canUpdateConfiguration`|Boolean|||A value indicating whether an instance of the tab's configuration can be updated by the user after creation. Default: `true`|
 |`scopes`|Массив перечислений|1|✔️|В настоящее время настраиваемые вкладки поддерживают только области `team` и `groupchat`. |
 |`context` |массив элементов enum|6||Набор областей `contextItem`, в которых [поддерживается вкладка](../../tabs/how-to/access-teams-context.md). По умолчанию: `channelTab`, `privateChatTab`, `meetingChatTab`, `meetingDetailsTab`, `meetingSidePanel` и `meetingStage`.|
-|`sharePointPreviewImage`|String|2048||Относительный путь к изображению предварительного просмотра вкладки для использования в SharePoint. Размер: 1024x768. |
-|`supportedSharePointHosts`|Массив перечислений|1||Определяет, каким образом вкладка становится доступна в SharePoint. Варианты: `sharePointFullPage` и `sharePointWebPart` |
+|`sharePointPreviewImage`|String|2048||A relative file path to a tab preview image for use in SharePoint. Size 1024x768. |
+|`supportedSharePointHosts`|Массив перечислений|1||Defines how your tab will be made available in SharePoint. Options are `sharePointFullPage` and `sharePointWebPart` |
 
 ## <a name="statictabs"></a>staticTabs
 
@@ -431,10 +431,10 @@ ms.locfileid: "67675835"
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`botId`|Строка|64 символа|✔️|Уникальный идентификатор приложения Майкрософт для бота, зарегистрированный в Bot Framework. Это вполне может совпадать с общим [идентификатором приложения](#id).|
-|`needsChannelSelector`|Логическое|||Описывает, использует ли бот подсказку пользователя для добавления бота на определенный канал. По умолчанию:`false`|
-|`isNotificationOnly`|Логическое|||Указывает, является ли бот односторонним и только для уведомлений в отличие от бота для беседы. По умолчанию: `false`|
-|`supportsFiles`|Boolean|||Указывает, поддерживает ли бот возможность отправки и скачивания файлов в личном чате. По умолчанию: `false`|
-|`scopes`|Массив перечислений|3|✔️|Указывает, предлагает ли бот функции в контексте канала в `team`, в групповом чате (`groupchat`) или только для отдельных пользователей (`personal`). Эти параметры не являются взаимоисключающими.|
+|`needsChannelSelector`|Логическое|||Describes whether or not the bot utilizes a user hint to add the bot to a specific channel. Default: `false`|
+|`isNotificationOnly`|Логический|||Indicates whether a bot is a one-way, notification-only bot, as opposed to a conversational bot. Default: `false`|
+|`supportsFiles`|Boolean|||Indicates whether the bot supports the ability to upload/download files in personal chat. Default: `false`|
+|`scopes`|Массив перечислений|3|✔️|Specifies whether the bot offers an experience in the context of a channel in a `team`, in a group chat (`groupchat`), or an experience scoped to an individual user alone (`personal`). These options are non-exclusive.|
 
 ### <a name="botscommandlists"></a>bots.commandLists
 
@@ -442,7 +442,7 @@ ms.locfileid: "67675835"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`items.scopes`|массив перечислений|3|✔️|Указывает область, для которой действует список команд. Доступные варианты: `team`, `personal` и `groupchat`.|
+|`items.scopes`|массив перечислений|3|✔️|Specifies the scope for which the command list is valid. Options are `team`, `personal`, and `groupchat`.|
 |`items.commands`|массив объектов|10|✔️|Массив команд, поддерживаемых ботом:<br>`title`: имя команды бота (строка, 32).<br>`description`: простое описание или пример синтаксиса команды и ее аргументов (строка, 128).|
 
 ## <a name="connectors"></a>connectors
@@ -457,7 +457,7 @@ ms.locfileid: "67675835"
 |---|---|---|---|---|
 |`configurationUrl`|String|2048 символов|✔️|URL-адрес, используемый при настройке соединителя (https://).|
 |`connectorId`|String|64 символа|✔️|Уникальный идентификатор соединителя, соответствующий его идентификатору на [информационной панели разработчиков соединителей](https://aka.ms/connectorsdashboard).|
-|`scopes`|Массив перечислений|1|✔️|Указывает, предоставляет ли соединитель функции в контексте канала в `team` или только для отдельных пользователей (`personal`). В настоящий момент поддерживается только область `team`.|
+|`scopes`|Массив перечислений|1|✔️|Specifies whether the Connector offers an experience in the context of a channel in a `team`, or an experience scoped to an individual user alone (`personal`). Currently, only the `team` scope is supported.|
 
 ## <a name="composeextensions"></a>composeExtensions
 
@@ -473,7 +473,7 @@ ms.locfileid: "67675835"
 |Имя| Тип | Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`botId`|String|64|✔️|Уникальный идентификатор приложения Microsoft для бота, поддерживающего расширение для обмена сообщениями, в соответствии с регистрацией в Bot Framework. Это вполне может совпадать с общим [идентификатором приложения](#id).|
-|`canUpdateConfiguration`|Логическое|||Значение, указывающее, может ли пользователь обновлять конфигурацию расширения сообщения. Значение по умолчанию:`false`.|
+|`canUpdateConfiguration`|Логическое|||A value indicating whether the configuration of a message extension can be updated by the user. The default is `false`.|
 |`commands`|Массив объекта|10|✔️|Массив команд, поддерживаемых расширением для обмена сообщениями.|
 
 ### <a name="composeextensionscommands"></a>composeExtensions.commands
@@ -496,11 +496,11 @@ ms.locfileid: "67675835"
 |`taskInfo.width`|String|||Ширина диалогового окна — количество пикселей или макет по умолчанию, например "large", "medium" или "small".|
 |`taskInfo.height`|String|||Высота диалогового окна — количество пикселей или макет по умолчанию, например "large", "medium" или "small".|
 |`taskInfo.url`|String|||Начальный URL-адрес веб-представления.|
-|`messageHandlers`|Массив объектов|5||Список обработчиков, которые позволяют вызывать приложения при выполнении определенных условий. Домены также должны быть указаны в`validDomains`.|
-|`messageHandlers.type`|String|||Тип обработчика сообщений. Обязательно: `"link"`.|
+|`messageHandlers`|Массив объектов|5||A list of handlers that allow apps to be invoked when certain conditions are met. Domains must also be listed in `validDomains`.|
+|`messageHandlers.type`|Строка|||The type of message handler. Must be `"link"`.|
 |`messageHandlers.value.domains`|Массив строк|||Массив доменов, на которые может зарегистрироваться обработчик сообщений ссылок.|
 |`parameters`|Массив объекта|5|✔️|Список параметров, которые принимает команда. Минимум: 1; максимум: 5.|
-|`parameter.name`|String|64 символа|✔️|Имя параметра в том виде, в котором оно отображается в клиенте. Это включено в запрос пользователя.|
+|`parameter.name`|String|64 символа|✔️|Имя параметра в том виде, в каком оно отображается в клиенте. Он включается в запрос пользователя.|
 |`parameter.title`|String|32 символа|✔️|Понятное название параметра.|
 |`parameter.description`|String|128 символов||Понятное описание назначения параметра.|
 |`parameter.inputType`|String|128 символов||Определяет тип элемента управления, отображаемого в модуле задач для `fetchTask: true`. Один из `text`, `textarea`, `number`, `date`, `time`, `toggle`, `choiceset`.|
@@ -523,7 +523,7 @@ ms.locfileid: "67675835"
 
 **Необязательный** Массив строк
 
-Определяет собственные функции на устройстве пользователя, к которым ваше приложение может запросить доступ. Варианты:
+Specifies the native features on a user's device that your app may request access to. Options are:
 
 * `geolocation`
 * `media`
@@ -578,7 +578,7 @@ ms.locfileid: "67675835"
 
  **Необязательно** — логическое значение
 
-Указывает, отображается ли личное приложение с панелью заголовка вкладки. По умолчанию: **false**.
+Indicate where a personal app is rendered with or without a tab header bar. Default is **false**.
 
 > [!NOTE]
 > `isFullScreen` действует только для приложений, опубликованных в вашей организации.
@@ -598,7 +598,7 @@ ms.locfileid: "67675835"
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
 |`type`|string|32 символа|✔️|Тип уведомления. *См. ниже*.|
-|`description`|string|128 символов|✔️|Краткое описание уведомления. *См. ниже*.|
+|`description`|string|128 символов|✔️|A brief description of the notification. *See below*.|
 |`templateText`|string|128 символов|✔️|Пример: "Пользователь {actor} создал для вас задачу {taskId}"|
 
 ```json
@@ -694,7 +694,7 @@ ms.locfileid: "67675835"
 
 **Необязательно** — объект
 
-Когда будет выбрана область установки группы, этот параметр будет определять емкость по умолчанию при установке приложения пользователем. Доступные варианты:
+When a group install scope is selected, it will define the default capability when the user installs the app. Options are:
 
 * `team`
 * `groupchat`
@@ -702,9 +702,9 @@ ms.locfileid: "67675835"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`team`|string|||Если выбрана область установки `team`, в этом поле указывается доступная по умолчанию емкость. Возможные варианты: `tab`, `bot` или `connector`.|
-|`groupchat`|string|||Если выбрана область установки `groupchat`, в этом поле указывается доступная по умолчанию емкость. Возможные варианты: `tab`, `bot` или `connector`.|
-|`meetings`|string|||Если выбрана область установки `meetings`, в этом поле указывается доступная по умолчанию емкость. Возможные варианты: `tab`, `bot` или `connector`.|
+|`team`|string|||When the install scope selected is `team`, this field specifies the default capability available. Options: `tab`, `bot`, or `connector`.|
+|`groupchat`|string|||When the install scope selected is `groupchat`, this field specifies the default capability available. Options: `tab`, `bot`, or `connector`.|
+|`meetings`|string|||When the install scope selected is `meetings`, this field specifies the default capability available. Options: `tab`, `bot`, or `connector`.|
 
 ## <a name="subscriptionoffer"></a>subscriptionOffer
 
@@ -714,13 +714,13 @@ ms.locfileid: "67675835"
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
-|`offerId`| string | 2048 символов | ✔️ | Уникальный идентификатор, включающий идентификатор Publisher и идентификатор предложения, которые можно найти в [Центре партнеров](https://partner.microsoft.com/dashboard). Обязательный формат строки: `publisherId.offerId`.|
+|`offerId`| string | 2048 символов | ✔️ | A unique identifier that includes your Publisher ID and Offer ID, which you can find in [Partner Center](https://partner.microsoft.com/dashboard). You must format the string as `publisherId.offerId`.|
 
 ## <a name="meetingextensiondefinition"></a>meetingExtensionDefinition
 
 **Необязательно** — объект
 
-Укажите определение расширения для собраний. Дополнительные сведения см. в статье [Настраиваемые сцены режима "Вместе" в Teams](../../apps-in-teams-meetings/teams-together-mode.md).
+Specify meeting extension definition. For more information, see [custom Together Mode scenes in Teams](../../apps-in-teams-meetings/teams-together-mode.md).
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
@@ -758,7 +758,7 @@ ms.locfileid: "67675835"
 
 |Имя| Тип|Максимальный размер|Обязательный |Описание|
 |---|---|---|---|---|
-|`type`|string||✔️| Тип разрешения для конкретного ресурса. Возможные варианты: `Application` и `Delegated`.|
+|`type`|string||✔️| The type of the resource-specific permission. Options: `Application` and `Delegated`.|
 |`name`|string|128 символов|✔️|Имя разрешения для определенного ресурса. Дополнительные сведения см. в разделе [Разрешения приложений для конкретных ресурсов](#resource-specific-application-permissions) и [Делегированные разрешения для конкретных ресурсов](#resource-specific-delegated-permissions)|
 
 #### <a name="resource-specific-application-permissions"></a>Разрешения приложений для конкретных ресурсов
@@ -776,6 +776,7 @@ ms.locfileid: "67675835"
     |`ChannelMeetingParticipant.Read.Group`| Позволяет приложению читать сведения об участниках, включая имя, роль, идентификатор, время присоединения и ухода, собрания канала, связанные с этой командой, от имени выполнившего вход пользователя.|
     |`InAppPurchase.Allow.Group`| Позволяет приложению отображать предложения в Marketplace в этой команде и совершать покупки в приложении от имени выполнившего вход пользователя.|
     |`ChannelMeetingStage.Write.Group`| Позволяет приложению отображать содержимое на этапе собрания в собраниях канала, связанных с этой командой, от имени выполнившего вход пользователя.|
+    |`LiveShareSession.ReadWrite.Group`|Позволяет приложению создавать и синхронизировать сеансы Live Share для собраний, связанных с этой командой, а также получать доступ к связанным сведениям о списке собраний, таким как роль участника собрания, от имени вошедвшего пользователя.|
 
 * **Делегированные разрешения на использование конкретных ресурсов для чатов или собраний**
 
@@ -785,21 +786,14 @@ ms.locfileid: "67675835"
     |`MeetingStage.Write.Chat`|Позволяет приложению отображать содержимое на этапе собрания в собраниях, связанных с этим чатом, от имени выполнившего вход пользователя.|
     |`OnlineMeetingParticipant.Read.Chat`|Позволяет приложению читать сведения об участниках, включая имя, роль, идентификатор, время присоединения и ухода, собрания, связанные с этим чатом, от имени выполнившего вход пользователя.|
     |`OnlineMeetingParticipant.ToggleIncomingAudio.Chat`|Позволяет приложению переключать входящий звук для участников собраний, связанных с этим чатом, от имени выполнившего вход пользователя.|
+    |`LiveShareSession.ReadWrite.Chat`|Позволяет приложению создавать и синхронизировать сеансы Live Share для собраний, связанных с этим чатом, а также получать доступ к связанным сведениям о списке собраний, таким как роль участника собрания, от имени вошедшей в систему пользователя.|
+   |`OnlineMeetingIncomingAudio.Detect.Chat`|Позволяет приложению обнаруживать изменения в состоянии входящего звука на собраниях, связанных с этим чатом, от имени вошедвшего пользователя.|
 
 * **Делегированные разрешения на использование конкретных ресурсов для пользователей**
 
     |**Имя**|**Описание**|
     |---|---|
     |`InAppPurchase.Allow.User`|Позволяет приложению отображать предложения в Marketplace и совершать покупки в приложении от имени выполнившего вход пользователя.|
-
-* **Разрешения, связанные с ресурсами, для динамической общей папки Teams**
-
-   |Имя| Описание |
-   | ----- | ----- |
-   |`LiveShareSession.ReadWrite.Chat`|<!--- need info --->|
-   |`LiveShareSession.ReadWrite.Channel`|<!--- need info --->|
-   |`MeetingStage.Write.Chat`|<!--- need info --->|
-   |`OnlineMeetingIncomingAudio.Detect.Chat`|<!--- need info --->|
 
 ## <a name="see-also"></a>См. также
 

@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как добавит
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: de46f651c3dd6df741b4fef47c9813dfd88a6fe0
-ms.sourcegitcommit: 0ac53c430c055897ecebc129eab49336820c18c2
+ms.openlocfilehash: 4dd4790f6ff545b01999be7911129a53ab12c72d
+ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67618282"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67990947"
 ---
 # <a name="create-incoming-webhooks"></a>Создание входящих веб-перехватчиков
 
@@ -20,9 +20,12 @@ ms.locfileid: "67618282"
 * Расширения для обмена сообщениями
 * Connectors
 
+> [!IMPORTANT]
+> Вы можете создать приложение Teams для бота уведомлений, отличное от входящих веб-перехватчиков. Они выполняются аналогично, но бот уведомлений обладает дополнительными функциональными возможностями. Дополнительные сведения см. в описании бота уведомления сборки [с помощью JavaScript](../../sbs-gs-notificationbot.yml) или примера уведомления [о входящем веб-перехватчике](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/incoming-webhook-notification). Чтобы приступить к работе, [скачайте набор средств Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) и изучите его. Дополнительные сведения см. в [документах Teams Toolkit](../../toolkit/teams-toolkit-fundamentals.md).
+
 Посмотрите следующее видео, чтобы узнать, как создавать входящие веб-перехватчики:
 <br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ODcY]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4ODcY>]
 
 ## <a name="key-features-of-an-incoming-webhook"></a>Основные функции входящего веб-перехватчика
 
@@ -32,7 +35,7 @@ ms.locfileid: "67618282"
 | -------- | ----------- |
 |Адаптивные карточки с использованием входящего веб-перехватчика | Адаптивные карточки можно отправить через входящие веб-перехватчики. Дополнительные сведения см. в статье [Отправка адаптивных карточек с помощью входящих веб-перехватчиков](../../webhooks-and-connectors/how-to/connectors-using.md#send-adaptive-cards-using-an-incoming-webhook).|
 |Поддержка сообщений с действиями|Карточки сообщений с действиями поддерживаются во всех группах Office 365, включая Teams. При отправке сообщений с помощью карточек необходимо использовать формат карточки сообщений с действиями. Дополнительные сведения см. в [сведениях об устаревших карточках сообщений с действиями](/outlook/actionable-messages/message-card-reference) и в разделе об [интерактивном запуске кода карточки с сообщением](https://messagecardplayground.azurewebsites.net).|
-|Поддержка независимых HTTPS-сообщений|Карточки предоставляют информацию четко и последовательно. Все инструменты и структуры, которые способны отправлять HTTPS-запросы POST, могут отправлять сообщения в Teams через входящий веб-перехватчик.|
+|Поддержка независимых HTTPS-сообщений|Cards provide information clearly and consistently. Any tool or framework that can send HTTPS POST requests can send messages to Teams through an Incoming Webhook.|
 |Поддержка Markdown|Все текстовые поля в карточках сообщений с действиями поддерживают базовые функции Markdown. Не используйте разметку HTML в карточках. HTML игнорируется и обрабатывается как обычный текст.|
 |Конфигурация в масштабе|Входящий веб-перехватчик масштабируется и настраивается на уровне канала.|
 |Определения безопасных ресурсов|Сообщения отформатированы в виде полезной нагрузки JSON. Эта декларативная структура обмена сообщениями предотвращает вставку вредоносного кода.|
@@ -95,9 +98,9 @@ ms.locfileid: "67618282"
 
 ## <a name="code-sample"></a>Пример кода
 
-| Название примера           | Описание | C#    | Node.js   |
+| Название примера           | Описание | C#    |  TypeScript |
 |:---------------------|:--------------|:---------|:--------|
-|Входящий веб-перехватчик|В этом примере кода показано, как отправить карточку с помощью входящего веб-перехватчика. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/incoming-webhook/csharp)|[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/incoming-webhook/nodejs) |
+|Входящий веб-перехватчик|В этом примере кода показано, как отправить карточку с помощью входящего веб-перехватчика. |[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/incoming-webhook/csharp)|[Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/release/incoming-webhook-notification) |
 
 ## <a name="see-also"></a>См. также
 

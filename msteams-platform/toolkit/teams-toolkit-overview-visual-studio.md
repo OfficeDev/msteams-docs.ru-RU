@@ -6,12 +6,12 @@ ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/24/2022
-ms.openlocfilehash: 0f51d2c44eef3ec09d48581a797c63d501be8644
-ms.sourcegitcommit: f192d7685ee3ddf4a55dc9787d56744403c3f8f9
+ms.openlocfilehash: 3685d105f13024507b880c35040b9d798a6d845f
+ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67302453"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67990919"
 ---
 # <a name="teams-toolkit-overview-for-visual-studio"></a>Обзор набора средств Teams для Visual Studio
 
@@ -45,7 +45,7 @@ ms.locfileid: "67302453"
 
 ## <a name="install-teams-toolkit-for-visual-studio"></a>Установка набора средств Teams для Visual Studio
 
-Последнюю версию установщика Visual Studio можно скачать со страницы [скачивания Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
+Последнюю версию установщика Visual Studio можно скачать со страницы [скачивания Visual Studio](https://visualstudio.microsoft.com).
 
 > [!NOTE]
 > Перед установкой Visual Studio необходимо сначала установить установщик Visual Studio.

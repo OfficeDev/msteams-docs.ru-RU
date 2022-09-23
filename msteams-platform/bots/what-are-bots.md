@@ -5,19 +5,19 @@ description: В этой статье вы можете использовать
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: anclear
-ms.openlocfilehash: 90176b63c64d23ae76a8c98515e37455ab0742c0
-ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.openlocfilehash: b9d0bda0d733a3b4a3204449ca9fd2ed6746ac98
+ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67363508"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67990912"
 ---
 # <a name="build-bots-for-teams"></a>Создание ботов для Teams
 
-> [!NOTE]
-> Рекомендуется создать свое первое приложение бота или приложение бота уведомлений с помощью средства разработки нового поколения для Teams. Дополнительные сведения см. в [разделе "Набор средств Teams для Visual Studio Code](../toolkit/teams-toolkit-fundamentals.md) [и Набор средств Teams для Visual Studio"](../toolkit/teams-toolkit-overview-visual-studio.md).
-
 Бот также называется чат-ботом или ботом для общения. Это приложение, которое выполняет простые и повторяющиеся задачи пользователей, например в службах обслуживания или поддержки клиентов. В быту используются боты, которые сообщают сведения о погоде, бронируют рестораны или предоставляют сведения для путешествий. Взаимодействие с ботами может быть в виде быстрых вопросов и ответов или сложных бесед.
+
+> [!NOTE]
+> Рекомендуется начать с создания первого бота с помощью [JavaScript](../sbs-gs-bot.yml) или бота уведомлений на [JavaScript](../sbs-gs-notificationbot.yml) с помощью средства разработки нового поколения для Teams. Дополнительные сведения см. в [обзоре Набора средств Teams](../toolkit/teams-toolkit-fundamentals.md).
 
 > [!IMPORTANT]
 >
