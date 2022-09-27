@@ -5,12 +5,12 @@ ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 4641d19a6df93cf4dc575653bde0318f429ca551
-ms.sourcegitcommit: f2449520011b8a2094173ddcd7fe816256061e5e
-ms.translationtype: HT
+ms.openlocfilehash: f8891edb11134570a79c5483eea722a44ad48b91
+ms.sourcegitcommit: 377a4b712b50a211851aeecc1029414939945390
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67158068"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68044653"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
@@ -124,7 +124,7 @@ ms.locfileid: "67158068"
 
 * **Публикация отправки приложения**
 
-  * После просмотра отчета о проверке ответьте в той же ветке электронной почты, включив любые вопросы, связанные с отчетом о проверке, или запрос дополнительной поддержки для устранения обнаруженных проблем.
+  * После просмотра отчета о проверке ответьте в поток электронной почты любыми запросами, связанными с отчетом о проверке, или если вам нужна дополнительная поддержка для устранения обнаруженных проблем.
 
   * Убедитесь, что у вас достаточно разработчиков, чтобы устранить все обнаруженные проблемы и довести приложение до утверждения.
 
