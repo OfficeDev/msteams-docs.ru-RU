@@ -5,12 +5,12 @@ description: Сведения о представлении стадии— по
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: b31f9aa1ad00a0cf255df4aa1976470c3add3551
-ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
+ms.openlocfilehash: c11e65958e14db8f29206ff3585680818c18c5af
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450452"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027293"
 ---
 # <a name="tabs-link-unfurling-and-stage-view"></a>Предварительный просмотр для ссылки "Вкладки" и представление стадий
 
@@ -24,7 +24,7 @@ ms.locfileid: "67450452"
 
 ## <a name="advantage-of-stage-view"></a>Преимущество представления "Экран"
 
-Представление сцены помогает обеспечить более удобный просмотр содержимого в Teams. Пользователи могут открывать и просматривать содержимое, предоставленное вашим приложением, не выходя из контекста, и они могут закрепить содержимое в чате или канале для быстрого доступа в будущем, что приведет к более активному взаимодействию пользователей с вашим приложением.
+Stage View helps provide a more seamless experience of viewing content in Teams. Users can open and view the content provided by your app without leaving the context, and they can pin the content to the chat or channel for future quick access leading to a higher user engagement with your app.
 
 ## <a name="stage-view-vs-task-module"></a>Представление "Экран" в сравнении с модулем задач
 
@@ -84,13 +84,13 @@ ms.locfileid: "67450452"
 
 Ниже приведен процесс вызова представления "Экран".
 
-* Когда пользователь выбирает **Просмотр**, бот получает запрос `invoke`. Тип запроса `composeExtension/queryLink`.
+* When the user selects **View**, the bot receives an `invoke` request. The request type is `composeExtension/queryLink`.
 * Отклик `invoke` от бота содержит адаптивную карточку с типом `tab/tabInfoAction`.
 * Бот отвечает кодом `200`.
 
 > [!NOTE]
-
-> В мобильных клиентах Teams вызов представления Stage для приложений, распространяемых через [Teams store](/platform/concepts/deploy-and-publish/apps-publish-overview.md) и не оптимизированных для мобильных устройств, открывает веб-браузер устройства по умолчанию. Браузер открывает URL-адрес, указанный в параметре `websiteUrl` объекта `TabInfo`.
+>
+> On Teams mobile clients, invoking Stage View for apps distributed through the [Teams store](~/concepts/deploy-and-publish/apps-publish-overview.md) and not having a moblie-optimized experience opens the default web browser of the device. The browser opens the URL specified in the `websiteUrl` parameter of the `TabInfo` object.
 
 ## <a name="invoke-stage-view-through-deep-link"></a>Вызов представления "Экран" через прямую ссылку
 
@@ -141,8 +141,8 @@ ms.locfileid: "67450452"
 |:-----------|:---------|:------------|:-----------------------|
 | `entityId` | String | 64 | Это свойство является уникальным идентификатором объекта, отображаемого вкладкой. Это поле обязательно для заполнения.|
 | `name` | String | 128 | Это свойство является отображаемым именем вкладки в интерфейсе канала. Это поле является необязательным.|
-| `contentUrl` | String | 2048 | Это свойство представляет собой URL-адрес https://, указывающий на пользовательский интерфейс объекта, который будет отображаться на холсте Teams. Это поле обязательно для заполнения.|
-| `websiteUrl?` | String | 2048 | Это свойство представляет собой URL-адрес https://, на который нужно указать, если пользователь выбирает просмотр в браузере. Это поле обязательно для заполнения.|
+| `contentUrl` | String | 2048 | This property is the https:// URL that points to the entity UI to be displayed in the Teams canvas. This is a required field.|
+| `websiteUrl?` | String | 2048 | This property is the https:// URL to point at, if a user selects to view in a browser. This is a required field.|
 | `removeUrl?` | String | 2048 | Это свойство является URL-адресом (https://), указывающим на пользовательский интерфейс, который отображается при удалении вкладки пользователем. Это необязательное поле.|
 
 ## <a name="code-sample"></a>Пример кода

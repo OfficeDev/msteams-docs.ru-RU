@@ -5,12 +5,12 @@ description: Сведения о компонентах пользователь
 ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: reference
-ms.openlocfilehash: 055ee4440982add222b76454f1ff4382f129ff21
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: d0c95c680e4cbf81776ebe7d5b0a580b5cff7d2d
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558844"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027349"
 ---
 # <a name="designing-your-microsoft-teams-app-with-advanced-ui-components"></a>Проектирование приложения Microsoft Teams с помощью расширенных компонентов пользовательского интерфейса
 
@@ -18,7 +18,7 @@ ms.locfileid: "66558844"
 
 ## <a name="microsoft-teams-ui-kit"></a>Комплект разработчика для пользовательского интерфейса Microsoft Teams
 
-На основе <a href="https://fluentsite.z22.web.core.windows.net/" target="_blank">пользовательского интерфейса Fluent</a> комплект пользовательского интерфейса Microsoft Teams включает компоненты и шаблоны, разработанные специально для создания приложений Teams. В комплекте пользовательского интерфейса можно захватывать и вставлять перечисленные здесь компоненты непосредственно в макет и просматривать дополнительные примеры использования каждого компонента.
+На основе [пользовательского интерфейса Fluent](https://fluentsite.z22.web.core.windows.net/) комплект пользовательского интерфейса Microsoft Teams включает компоненты и шаблоны, разработанные специально для создания приложений Teams. В комплекте пользовательского интерфейса можно захватывать и вставлять перечисленные здесь компоненты непосредственно в макет и просматривать дополнительные примеры использования каждого компонента.
 
 > [!div class="nextstepaction"]
 > [Получить комплект разработчика для пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159)
@@ -32,11 +32,11 @@ ms.locfileid: "66558844"
 * Связывать иерархию
 * Навигация
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-breadcrumb.png" alt-text="В примере показан шаблон навигации на мобильных устройствах.":::
 
-### <a name="desktop"></a>Настольный компьютер
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/ui-templates/breadcrumb.png" alt-text="Пример шаблона навигации на рабочем столе.":::
 
@@ -49,11 +49,11 @@ ms.locfileid: "66558844"
 * Просмотр нескольких страниц на вкладке Teams.
 * Разбивайте сложные приложения на несколько страниц.
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-left-nav.png" alt-text="В примере показан левый шаблон навигации на мобильных устройствах.":::
 
-### <a name="desktop"></a>Настольный компьютер
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/ui-templates/left-nav.png" alt-text="В примере показан левый шаблон навигации на рабочем столе.":::
 
@@ -69,11 +69,11 @@ ms.locfileid: "66558844"
 * Сообщения об успешном выполнении
 * Информационные или рекламные сообщения
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-notification-bar.png" alt-text="В примере показан шаблон пользовательского интерфейса панели уведомлений на мобильном устройстве.":::
 
-### <a name="desktop"></a>Настольный компьютер
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/ui-templates/notification-bar.png" alt-text="В примере показаны шаблоны пользовательского интерфейса панели уведомлений на рабочем столе.":::
 
@@ -88,13 +88,13 @@ ms.locfileid: "66558844"
 * Отображение содержимого в большой области в Teams вместо другого приложения или браузера
 * Интересное мультимедиа или другое полнофункциональный контент
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 Приложение может запускать этап из адаптивной карточки, общей ссылки или визуальных компонентов (например, диаграммы).
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-stage.png" alt-text="В примере показан шаблон этапа на мобильном устройстве.":::
 
-### <a name="desktop"></a>Настольный компьютер
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/ui-templates/stage.png" alt-text="В примере показан шаблон этапа на рабочем столе.":::
 
@@ -108,10 +108,10 @@ ms.locfileid: "66558844"
 * Контекстный фильтр и поиск.
 * Навигация и навигация.
 
-### <a name="mobile"></a>Мобильные устройства
+### <a name="mobile"></a>Мобильная версия
 
 :::image type="content" source="../../assets/images/ui-templates/mobile-toolbar.png" alt-text="В примере показан шаблон панели инструментов на мобильном устройстве.":::
 
-### <a name="desktop"></a>Настольный компьютер
+### <a name="desktop"></a>Версия для настольного компьютера
 
 :::image type="content" source="../../assets/images/ui-templates/toolbar.png" alt-text="Пример шаблона панели инструментов на рабочем столе.":::

@@ -5,12 +5,12 @@ description: Узнайте о доступных решениях Майкро�
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: conceptual
-ms.openlocfilehash: 0cee1547424df7952f2ba9864981814871a511f7
-ms.sourcegitcommit: 31032e3dee47232c3f8fc9ed1f2168cc0cbcfb7e
+ms.openlocfilehash: 05553535f146316dddef311a9a7c2f859fedc3f8
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "67858911"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027230"
 ---
 # <a name="create-low-code-custom-apps-for-teams"></a>Создание пользовательских приложений с низким кодом для Teams
 
@@ -43,7 +43,7 @@ Microsoft Power Platform объединяет четыре богатые воз
 
 ### <a name="-teams-and-power-automate"></a>✔ Teams и Power Automate
 
-Вы можете [создавать потоки для автоматизации повторяющихся рабочих задач](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/) непосредственно в среде Teams с помощью [приложения Power Automate в Teams](/power-automate/flows-teams). Вы можете [активировать поток из любого сообщения в Microsoft Teams](/power-automate/trigger-flow-teams-message) и использовать [адаптивные карточки в Power Automate](/power-automate/create-adaptive-cards). Кроме того, можно создавать потоки для настройки Microsoft Teams и обеспечения дополнительных услуг пользователю в новом приложении [Power Apps](https://go.microsoft.com/fwlink/?linkid=2143539) в Teams.
+Вы можете [создавать потоки для автоматизации повторяющихся рабочих задач](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/) непосредственно в среде Teams с помощью [приложения Power Automate в Teams](/power-automate/teams/install-teams-app). Вы можете [активировать поток из любого сообщения в Microsoft Teams](/power-automate/trigger-flow-teams-message) и использовать [адаптивные карточки в Power Automate](/power-automate/create-adaptive-cards). Кроме того, можно создавать потоки для настройки Microsoft Teams и обеспечения дополнительных услуг пользователю в новом приложении [Power Apps](https://go.microsoft.com/fwlink/?linkid=2143539) в Teams.
 
 ### <a name="-teams-and-power-virtual-agents"></a>✔ Teams Power Virtual Agents
 

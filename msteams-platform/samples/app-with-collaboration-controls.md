@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: b5300a66fa8a5948a2081e90e8ad138858d38f3f
-ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
+ms.openlocfilehash: e712c55dd4543edda9115751be09d81d1795f02b
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67179509"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027342"
 ---
 # <a name="create-a-new-model-driven-app-with-collaboration-controls-for-teams"></a>Создание приложения на основе модели с элементами управления совместной работы для Teams
 
@@ -45,7 +45,7 @@ ms.locfileid: "67179509"
 
    :::image type="content" source="../assets/images/collaboration-control/new-activity.png" alt-text="На снимке экрана показано, как создать новое действие.":::
 
-1. Нажмите **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 1. После создания таблицы ее можно настроить, добавив дополнительные столбцы, связи и т. д. (необязательно).
 
@@ -190,9 +190,9 @@ ms.locfileid: "67179509"
          :::image type="content" source="../assets/images/collaboration-control/graph-permissions.png" alt-text="На снимке экрана показан пример песочници Graph.":::
 
      1. Убедитесь, что вы замените имя узла и относительный путь к пути к сайту, и выполните вызов графа `https://graph.microsoft.com/v1.0/sites/{hostname}:/{relative-path-to-site}`. Ниже приведен пример:
-         1. Если URL-адрес сайта = <https://myhostname.sharepoint.com/sites/MySiteName>
-         1. Имя узла = myhostname.sharepoint.com
-         1. Относительный путь к сайту = sites/MySiteName
+         1. Если URL-адрес сайта = `https://myhostname.sharepoint.com/sites/MySiteName`
+         1. Имя узла = `myhostname.sharepoint.com`
+         1. Относительный путь к сайту = `sites/MySiteName`
 
               :::image type="content" source="../assets/images/collaboration-control/graph-call.png" alt-text="На снимке экрана показан пример вызова Graph.":::
 

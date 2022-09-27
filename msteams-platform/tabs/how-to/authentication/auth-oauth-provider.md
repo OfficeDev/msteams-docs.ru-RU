@@ -3,12 +3,12 @@ title: Использование внешних поставщиков OAuth
 description: Выполните проверку подлинности пользователей приложения с помощью внешних поставщиков OAuth и узнайте, как добавить его во внешний браузер.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: ca88471405fa06713261d56eaf94179c7896d8c4
-ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
+ms.openlocfilehash: 4892dc23174e34015a02a9afff64269e01871fb5
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67605056"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027321"
 ---
 # <a name="use-external-oauth-providers"></a>Использование внешних поставщиков OAuth
 
@@ -31,7 +31,7 @@ function authenticate(authenticateParameters: AuthenticatePopUpParameters): Prom
 | --- | --- |
 |`isExternal` | Тип параметра — логический. Он указывает, что окно аутентификации открывается во внешнем браузере.|
 |`height` |Предпочтительная высота всплывающего окна. Значение можно игнорировать, если он находится за пределами допустимых границ.|
-|`url`  <br>|URL-адрес стороннего сервера приложений для всплывающего окна проверки подлинности со следующими двумя заполнителями параметров:</br> <br> - `oauthRedirectMethod`: передача заполнителя в `{}`. Этот заполнитель заменяется прямой ссылкой или веб-страницей платформой Teams, которая сообщает серверу приложений о том, что вызов идет с мобильной платформы.</br> <br> - `authId`: этот заполнитель заменяется UUID. Сервер приложений использует его для обслуживания сеанса.| 
+|`url`  <br>|URL-адрес стороннего сервера приложений для всплывающего окна проверки подлинности со следующими двумя заполнителями параметров:</br> <br> - `oauthRedirectMethod`: Pass placeholder in `{}`. This placeholder is replaced by deeplink or web page by Teams platform, which informs app server if the call is coming from mobile platform.</br> <br> - `authId`: этот заполнитель заменяется UUID. Сервер приложений использует его для обслуживания сеанса.|
 |`width`|Предпочтительная ширина всплывающего окна. Значение можно игнорировать, если он находится за пределами допустимых границ.|
 
 Дополнительные сведения о параметрах см. в описании функции [authenticate(AuthenticatePopUpParameters](/javascript/api/@microsoft/teams-js/authentication#@microsoft-teams-js-authentication-authenticate) ).
@@ -39,7 +39,8 @@ function authenticate(authenticateParameters: AuthenticatePopUpParameters): Prom
 ## <a name="add-authentication-to-external-browsers"></a>Добавление проверки подлинности во внешние браузеры
 
 > [!NOTE]
-> * В настоящее время можно добавить проверку подлинности во внешние браузеры только для вкладок на мобильных устройствах. 
+>
+> * В настоящее время можно добавить проверку подлинности во внешние браузеры только для вкладок на мобильных устройствах.
 > * Используйте бета-версию JS SDK для использования функций. Бета-версии доступны через [NPM](https://www.npmjs.com/package/@microsoft/teams-js/v/1.12.0-beta.2).
 
 На следующем изображении обеспечивается поток для добавления проверки подлинности во внешние браузеры:
@@ -53,7 +54,6 @@ function authenticate(authenticateParameters: AuthenticatePopUpParameters): Prom
    Стороннее приложение вызывает функцию SDK `authentication.authenticate` со значение true для `isExternal` для инициации внешнего процесса аутентификации.
 
    Переданное значение `url` содержит заполнители для `{authId}` и `{oauthRedirectMethod}`.  
-
 
     ```JavaScript
     import { authentication } from "@microsoft/teams-js";
@@ -102,7 +102,7 @@ function authenticate(authenticateParameters: AuthenticatePopUpParameters): Prom
 
 5. 5. Вход во внешний браузер.
 
-   Пользователь выполняет вход во внешнем браузере. Поставщики OAuth перенаправляются обратно на `redirect_uri` с кодом аутентификации и объектом state.
+   User signs in to the external browser. The OAuth providers redirects back to the `redirect_uri` with the auth code and the state object.
 
 6. Сервер приложений 3P проверяет и отвечает на Teams.
 
@@ -126,7 +126,7 @@ function authenticate(authenticateParameters: AuthenticatePopUpParameters): Prom
    return res.redirect(`msteams://teams.microsoft.com/l/auth-callback?authId=${state.authId}&result=${req.query.code}`)
    ```
 
- 8. Teams вызывает обратный вызов успеха и отправляет результат.
+8. Teams вызывает обратный вызов успеха и отправляет результат.
 
     Teams делает успешный вызов и отправляет результат (код аутентификации) в стороннее приложение. Стороннее приложение получает код при успешном вызове и использует код для получения маркера, а затем сведений о пользователе и обновления пользовательского интерфейса.
 
@@ -138,5 +138,5 @@ function authenticate(authenticateParameters: AuthenticatePopUpParameters): Prom
 
 ## <a name="see-also"></a>См. также
 
-* [Настройка поставщиков удостоверений](../../../concepts/authentication/configure-identity-provider.md)
+* [Настройка поставщиков удостоверений](~/concepts/authentication/authentication.md)
 * [Проверка подлинности Microsoft Teams для вкладок](auth-flow-tab.md)

@@ -5,12 +5,12 @@ author: heath-hamilton
 ms.localizationpriority: high
 ms.author: surbhigupta
 ms.topic: conceptual
-ms.openlocfilehash: ab456458c5e7ec5b71ae02c4071d86365f4805cf
-ms.sourcegitcommit: 2d2a08f671c3d19381403ba1af5dff1f06bb4dd6
+ms.openlocfilehash: bb85c9c7d00fea47796e171cc1a0175367462942
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "67338902"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027083"
 ---
 # <a name="designing-your-microsoft-teams-message-extension"></a>Разработка расширения Microsoft Teams для обмена сообщениями
 
@@ -117,7 +117,7 @@ ms.locfileid: "67338902"
 
 ### <a name="insert-content-into-a-message"></a>Вставка контента в сообщение
 
-**1. Выберите расширение для обмена сообщениями**. Пользователи могут искать содержимое, которым они хотят поделиться, в поле ввода сообщения.
+**1. Select a message extension**. Users can search for the content they want to share from the compose box.
 
 #### <a name="mobile"></a>Мобильная версия
 
@@ -127,7 +127,7 @@ ms.locfileid: "67338902"
 
 :::image type="content" source="../../assets/images/messaging-extension/insert-content-search.png" alt-text="В примере показано, как пользователь ищет контент для вставки прямо из поля создания сообщения.":::
 
-**2. Вставьте содержимое**. После публикации другие смогут ответить или выбрать контент, чтобы увидеть больше информации в вашем приложении.
+**2. Insert content**. Once posted, others can reply or select the content to see more information in your app.
 
 #### <a name="mobile"></a>Мобильная версия
 
@@ -161,7 +161,7 @@ ms.locfileid: "67338902"
 
 :::image type="content" source="../../assets/images/messaging-extension/paste-preview-link.png" alt-text="В примере показано, как пользователь вставляет ссылку в поле создания сообщения":::.
 
-**2. Вставьте содержимое**. Если ваше приложение распознает URL-адрес в поле ввода сообщения, оно отображает ссылку в виде карточки, которая обеспечивает предварительный просмотр веб-контента с объемным содержимым. (Подробнее см. в [руководстве по дизайну адаптивных карточек](../../task-modules-and-cards/cards/design-effective-cards.md).)
+**2. Insert content**. If your app recognizes the URL in the compose box, it renders the link as a card that provides a content-rich preview of the web content. (See [Adaptive Cards design guidelines](../../task-modules-and-cards/cards/design-effective-cards.md) for more information.)
 
 #### <a name="mobile"></a>Мобильная версия
 
@@ -230,7 +230,7 @@ ms.locfileid: "67338902"
 
 #### <a name="do-integrate-with-single-sign-on"></a>Нужно: интегрироваться с единым входом
 
-Система единого входа делает процесс входа проще, быстрее и безопаснее. Кроме того, если пользователь уже вошел в ваше личное приложение, ему не нужно входить снова, чтобы получить доступ к расширению для обмена сообщениями.
+SSO makes the sign-in process easier, faster, and secure. Also, if a user has already signed in to your personal app, they don’t have to also sign in again to access the message extension.
 
    :::column-end:::
    :::column span="":::
@@ -276,7 +276,7 @@ ms.locfileid: "67338902"
 
 #### <a name="do-take-advantage-of-teams-color-tokens"></a>Нужно: использовать преимущества цветовых маркеров Teams
 
-Каждая тема Teams имеет собственную цветовую схему. Чтобы автоматически обрабатывать изменения темы, используйте в дизайне <a href="https://fluentsite.z22.web.core.windows.net/0.51.3/colors#color-scheme" target="_blank">цветовые маркеры (Fluent UI)</a>.
+Каждая тема Teams имеет собственную цветовую схему. Чтобы автоматически обрабатывать изменения темы, используйте в дизайне [цветовые маркеры (Fluent UI)](https://fluentsite.z22.web.core.windows.net/0.51.3/colors#color-scheme).
 
    :::column-end:::
    :::column span="":::

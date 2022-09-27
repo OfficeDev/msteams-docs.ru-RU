@@ -3,12 +3,12 @@ title: Документация для разработчиков Microsoft Team
 description: Сведения о терминах, используемых в документации для разработчиков Microsoft Teams
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 2cf9b4c3533b86e45247316e9c6a9da8517494d2
-ms.sourcegitcommit: 937ea793889fc1efa9ec6a52374d5098be1117e0
+ms.openlocfilehash: c8a9a663244803efb113c09857e21523218108d2
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67653163"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68027328"
 ---
 # <a name="glossary"></a>Глоссарий
 
@@ -20,7 +20,7 @@ ms.locfileid: "67653163"
 | --- | --- |
 | [Команда действия](../messaging-extensions/how-to/action-commands/define-action-command.md) | Тип приложения расширения сообщений, использующего всплывающее окно для сбора или отображения сведений. <br>**См. также**: [Расширение для обмена сообщениями](#m); [Команды поиска](#s) |
 | [Адаптивные карточки](../task-modules-and-cards/what-are-cards.md) | Фрагмент содержимого с действиями, добавленный в беседу ботом или расширением для обмена сообщениями. Используйте текст, графику и кнопки с помощью этих карточек для разнообразия коммуникаций. |
-| [Анонимный пользователь](../apps-in-teams-meetings/meeting-app-extensibility.md#user-types-in-a-meeting) | Тип участника собрания Teams, у которого нет удостоверения Azure AD и федерации с клиентом. Такие пользователи аналогичны внешним пользователям на собрании.<br>**См. также**: [федеративный пользователь](#f) |
+| [Анонимный пользователь](../apps-in-teams-meetings/meeting-app-extensibility.md#user-types-in-a-meeting) | A type of participant in a Teams meeting who doesn't have an Azure AD identity and isn't federated with a tenant. They are like external users in a meeting. <br>**См. также**: [федеративный пользователь](#f) |
 | [Каталог приложений](../toolkit/publish.md). | Сайт, на котором хранятся приложения SharePoint и Office для внутреннего использования в организации. <br>**См. также**: [SPFx](#s) |
 | [Манифест приложения](../resources/schema/manifest-schema.md) | Манифест приложения Teams описывает, каким образом приложение интегрируется с продуктом Microsoft Teams. Манифест должен соответствовать [схеме манифеста](https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json). |
 | [Пакет приложения](../concepts/build-and-test/apps-package.md) | Пакет приложения Teams — это ZIP-файл, содержащий файл манифеста приложения, цветной значок и контурный значок. |
@@ -36,7 +36,7 @@ ms.locfileid: "67653163"
 
 | Термин | Определение |
 | --- | --- |
-| [Blazor](../get-started/get-started-overview.md) | Бесплатная веб-платформа с открытым кодом, которая позволяет разработчикам создавать веб-приложения с использованием C# и HTML. Разрабатывается корпорацией Майкрософт. |
+| [Blazor](../get-started/get-started-overview.md) | A free and open-source web framework that enables developers to create web apps using C# and HTML. It's being developed by Microsoft. |
 | [Bicep](../toolkit/provision.md) | Декларативный язык, который означает, что элементы могут отображаться в любом порядке. В отличие от императивных языков, порядок элементов не влияет на обработку развертывания. |
 | [Бот](../bots/what-are-bots.md) | Бот — это приложение, которое выполняет запрограммированные повторяющиеся задачи. <br> **См. также**: [бот для общения](#c); [чат-бот](#c) |
 | [Эмулятор бота](../bots/how-to/debug/locally-with-an-ide.md#use-the-bot-emulator) | Классическое приложение, позволяющее тестировать и отлаживать боты локально или удаленно. |
@@ -78,7 +78,7 @@ ms.locfileid: "67653163"
 
 | Термин | Определение |
 | --- | --- |
-| [Учетная запись разработчика E5](../toolkit/accounts.md) | Подписка разработчика E5 для создания приложений с целью расширения Microsoft 365. Она включает 25 лицензий пользователей, в том числе администратора, только для целей разработки.  <br>**См. также**: [учетная запись Microsoft 365](#m) |
+| [Учетная запись разработчика E5](../toolkit/tools-prerequisites.md#accounts-to-build-your-teams-app) | Подписка разработчика E5 для создания приложений с целью расширения Microsoft 365. Она включает 25 лицензий пользователей, в том числе администратора, только для целей разработки.  <br>**См. также**: [учетная запись Microsoft 365](#m) |
 | [Точка входа](../concepts/app-fundamentals-overview.md) | Точка доступа, например команда, канал и чат, для приложения Teams, где пользователи могут использовать ваше приложение. |
 | [Среда](../toolkit/teamsfx-multi-env.md) | Функция в наборе средств Teams, которая позволяет создавать и использовать несколько сред разработки для вашего проекта приложения. Существуют две среды разработчиков, которые набор средств Teams создает по умолчанию: локальная среда и среда разработчика. <br>**См. также**: [локальная среда](#l); [среда разработчика](#d) |
 
@@ -104,7 +104,7 @@ ms.locfileid: "67653163"
 | --- | --- |
 | [Поставщик удостоверений](../concepts/authentication/authentication.md) | Сущность, которая хранит и предоставляет учетные данные пользователю. Он также позволяет пользователям регистрироваться самостоятельно.  <br>**См. также**: [проверка подлинности](#a) |
 | [Входящий веб-перехватчик](../webhooks-and-connectors/how-to/add-incoming-webhook.md) | Он разрешает общее содержимое внешнего приложения в каналах Teams. Эти веб-перехватчики используются в качестве средств отслеживания и уведомления. <br>**См. также**: [веб-перехватчик](#w); [исходящий веб-перехватчик](#o) |
-| [Взаимодействие с приложением во время собрания](../apps-in-teams-meetings/meeting-app-extensibility.md#in-meeting-app-experience) | Этап жизненного цикла собрания Teams. Благодаря взаимодействию с приложением во время собрания вы можете привлекать участников во время собрания с помощью приложений и диалогового окна на собрании.<br>**См. также**: [жизненный цикл собрания](#m) |
+| [Взаимодействие с приложением во время собрания](../apps-in-teams-meetings/meeting-app-extensibility.md#in-meeting-app-experience) | A stage of Teams meeting lifecycle. With the in-meeting app experience, you can engage participants during the meeting by using apps and the in-meeting dialog box. <br>**См. также**: [жизненный цикл собрания](#m) |
 
 ## <a name="l"></a>L
 
@@ -113,7 +113,7 @@ ms.locfileid: "67653163"
 | [Развертывание ссылки](../messaging-extensions/how-to/link-unfurling.md) | Функция, используемая с расширением для обмена сообщениями и собраниями для развертывания ссылок, вставленных в область ввода сообщения. Ссылки разворачиваются, чтобы показать дополнительные сведения о ссылке в адаптивных карточках или в представлении сцены собрания. |
 | [Локальная среда](../toolkit/TeamsFx-multi-env.md#create-new-environment) | Среда разработки по умолчанию, созданная набором средств Teams.  <br>**См. также**: [среда](#e); [среда разработчика](#d) |
 | [Локальная среда Workbench](../sbs-gs-spfx.yml) | Параметр по умолчанию для запуска и отладки приложения Teams в Visual Studio Code, созданного с помощью SPFx. <br>**См. также**: [Workbench](#w); [Workbench Teams](#t) |
-| [Возможность местоположения](../concepts/device-capabilities/location-capability.md) | Возможность устройства, которую можно интегрировать в ваше приложение, чтобы узнать географическое расположение пользователя приложения для расширенного взаимодействия. Эта функция в настоящее время доступна только для мобильных клиентов Teams.<br>**См. также**: [возможность](#c); [возможность мультимедиа](#m); [возможность устройства](#d); [мобильная версия Teams](#t) |
+| [Возможность местоположения](../concepts/device-capabilities/location-capability.md) | A device capability that you can integrate with your app to know the geographical location of the app user for an enhanced collaborative experience. This feature is currently available only for Teams mobile clients only. <br>**См. также**: [возможность](#c); [возможность мультимедиа](#m); [возможность устройства](#d); [мобильная версия Teams](#t) |
 | [Приложения с малым использованием кода](../samples/teams-low-code-solutions.md) | Настраиваемое приложение Teams, созданное с нуля с помощью Microsoft Power Platform, которое практически не требует написания кода и поддерживает быструю разработку и развертывание. |
 
 ## <a name="m"></a>M
@@ -124,11 +124,11 @@ ms.locfileid: "67653163"
 | [Бот собраний](../bots/calls-and-meetings/calls-meetings-bots-overview.md) | Боты, взаимодействующие со звонками и собраниями Teams с помощью голосовых команд в реальном времени, видео и демонстрации экрана. <br>**См. также**: [бот звонков](#c); [чат-бот](#c) |
 | [Жизненный цикл собрания](../apps-in-teams-meetings/meeting-app-extensibility.md#meeting-lifecycle) | Он охватывает интерфейс приложения, предшествующий собранию, интерфейс во время него и после него. На каждом этапе жизненного цикла собрания можно добавлять вкладки, боты и расширения для обмена сообщениями. <br>**См. также**: [интерфейс во время собрания](#i) |
 | [Сцена собрания](../sbs-meetings-stage-view.yml) | Функция приложения-расширения для собрания. Это общее пространство, доступное всем участникам во время собрания. Оно помогает участникам взаимодействовать и сотрудничать с контентом приложения в режиме реального времени. <br>**См. также**: [представление "Экран"](#s) |
-| [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md) | Расширения для обмена сообщениями — это ярлыки для вставки содержимого приложения или действий с сообщением. Вы можете использовать расширение для обмена сообщениями, не выходя из беседы.<br>**См. также**: [команды поиска](#s); [команды действий](#a) |
+| [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md) | Message extensions are shortcuts for inserting app content or acting on a message. You can use a message extension without navigating away from the conversation. <br>**См. также**: [команды поиска](#s); [команды действий](#a) |
 | [Расширение для собрания](../apps-in-teams-meetings/design/designing-apps-in-meetings.md) | Приложение, которое предназначено для использования в течение жизненного цикла собрания, чтобы сделать его более продуктивным, например доска, панель мониторинга и т. д. |
 | [Учетная запись Microsoft 365](../toolkit/accounts.md#microsoft-365-developer-account-types) | Учетная запись Microsoft 365 включает 25 лицензий пользователей, в том числе администратора, только для целей разработки. |
 | [Программа для разработчиков Microsoft 365](../toolkit/tools-prerequisites.md)| Программа для разработчиков Microsoft 365 помогает создавать приложения, расширяющие Microsoft 365. |
-| [Песочница Microsoft Graph](../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md) | Шлюз к данным и средствам искусственного интеллекта в Microsoft 365. Благодаря этому вы получите единую модель программируемости, которую можно использовать для доступа к данным в Microsoft 365, Windows 10 и Enterprise Mobility + Security. |
+| [Песочница Microsoft Graph](../graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages.md) | The gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access data in Microsoft 365, Windows 10, and Enterprise Mobility + Security. |
 | [Microsoft Teams](../overview.md) | Microsoft Teams — это программное обеспечение для группового взаимодействия, которое можно использовать для удаленной совместной работы команд. |
 | [Платформа Microsoft Teams](../concepts/app-fundamentals-overview.md) | Платформа для разработчиков Microsoft Teams позволяет разработчикам легко интегрировать их собственные приложения и службы в Teams. |
 | [Библиотека пользовательского интерфейса Microsoft Teams](../concepts/design/design-teams-app-ui-templates.md#microsoft-teams-ui-library) | Библиотека пользовательского интерфейса Microsoft Teams позволяет вам просматривать и тестировать отдельные шаблоны пользовательского интерфейса Teams и связанные компоненты в браузере. |
@@ -151,7 +151,7 @@ ms.locfileid: "67653163"
 | [Личное приложение](../concepts/design/personal-apps.md) | Личное приложение — это приложение Teams с личной областью. Оно ориентировано на взаимодействие с одним пользователем. Это может быть бот для общения с целью участия в индивидуальных беседах с пользователем или личная вкладка, обеспечивающая встроенный веб-интерфейс, или обе возможности. <br>**См. также**: [общее приложение](#s) |
 | [Power Virtual Agents](../bots/how-to/add-power-virtual-agents-bot-to-teams.md) | Интерактивное решение графического интерфейса без использования кода, которое позволяет каждому участнику вашей команды создавать многофункциональные чат-боты для бесед, легко интегрирующиеся с платформой Teams. |
 | [Упреждающие сообщения](../bots/how-to/conversations/send-proactive-messages.md) | Сообщение, отправляемое ботом, которое не является откликом на запрос пользователя, например приветственные сообщения, уведомления, запланированные сообщения. |
-| [Подготовка](../toolkit/provision.md) | Процесс, который создает ресурсы в Azure и Microsoft 365 для вашего приложения, при этом код (HTML, CSS, JavaScript и т. д.) не копируется в ресурсы. Это необходимое условие для развертывания.<br>**См. также**: [развертывание](#d) |
+| [Подготовка](../toolkit/provision.md) | A process that creates resources in Azure and Microsoft 365 for your app, but no code (HTML, CSS, JavaScript, etc.) is copied to the resources. It's a prerequisite to deployment. <br>**См. также**: [развертывание](#d) |
 
 ## <a name="r"></a>R
 
@@ -168,12 +168,12 @@ ms.locfileid: "67653163"
 | [Команды поиска](../messaging-extensions/how-to/search-commands/define-search-command.md) | Тип приложения-расширения для обмена сообщениями, который позволяет пользователям искать внешние системы и включать результат поиска в сообщение с помощью карточки. <br>**См. также**: [Расширения для обмена сообщениями](#m); [Команды действий](#a) |
 | [Последовательный рабочий процесс](../task-modules-and-cards/cards/universal-actions-for-adaptive-cards/sequential-workflows.md) | Рабочий процесс, который позволяет боту вести беседу с пользователем с учетом ответов пользователя. |
 | [Общее приложение](../concepts/extensibility-points.md#shared-app-experiences) | Приложение, существующее в команде, канале или чате, где пользователи могут взаимодействовать. <br>**См. также:** личное приложение |
-| [Семейство веб-сайтов SharePoint](../sbs-gs-spfx.yml) | Сайт семейства для приложений SharePoint. Необходимо получить учетную запись администратора для этого сайта, прежде чем можно будет развертывать приложение на основе SPFx на сайте SharePoint.<br>**См. также**: SPFx |
+| [Семейство веб-сайтов SharePoint](../sbs-gs-spfx.yml) | A collection site for SharePoint apps. You need to have an administrator account for this site before you can deploy your SPFx-based app on the SharePoint site. <br>**См. также**: SPFx |
 | [Загрузка неопубликованного приложения](../toolkit/publish.md#publish-to-individual-scope-or-sideload-permission) | Процесс, в котором приложение Teams загружается в клиент Teams, чтобы протестировать его в среде Teams перед распространением. |
 | [Боковая панель](../sbs-meetings-sidepanel.yml) | Функция приложения для собраний Teams, которая позволяет настраивать интерфейс собрания, что позволяет организаторам и докладчикам использовать различные наборы представлений и действий. |
 | [SPFx](../sbs-gs-spfx.yml) | SharePoint Framework (SPFx) — это модель разработки для создания клиентских решений для Microsoft Teams и SharePoint. |
 | Единый вход | Единый вход — это метод проверки подлинности, при котором пользователю необходимо войти в независимую службу программной платформы (например, Microsoft 365) только один раз. После этого пользователь может получить доступ ко всем службам без необходимости повторной проверки подлинности. <br>**См. также**: [проверка подлинности](#a) |
-| [Представление "Экран"](../sbs-meetings-stage-view.yml) | Компонент пользовательского интерфейса, который позволяет отрисовывать контент, открытый в полноэкранном режиме в Teams и закрепленный в качестве вкладки. Вызывается для отображения веб-контента в Teams. Обратите внимание, что это *не* сцена собрания.<br>**См. также**: [сцена собрания](#m) |
+| [Представление "Экран"](../sbs-meetings-stage-view.yml) | A user interface component that lets you render the content that is opened in full screen in Teams and pinned as a tab. It's invoked to surface web content within Teams. Note that it is *not* the same as meeting stage. <br>**См. также**: [сцена собрания](#m) |
 | [Отдельное приложение](../samples/integrating-web-apps.md) | Одностраничное или большое и сложное приложение. Пользователь может применять некоторые его аспекты в Teams. <br>**См. также**: [приложение для совместной работы](#c) |
 | [Статический поиск](../task-modules-and-cards/cards/dynamic-search.md) | Метод поиска с автозавершением, который позволяет пользователям выполнять поиск из заранее заданных значений в полезных данных адаптивной карточки. <br>**См. также**: [динамический поиск](#d) |
 | [Рекомендации по проверке в магазине](../concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) | Набор рекомендаций для Teams по проверке приложения перед его отправкой в магазин Teams. <br>**См. также**: [магазин Teams](#t) |
@@ -186,9 +186,9 @@ ms.locfileid: "67653163"
 | [Чат вкладки](../tabs/how-to/conversational-tabs.md) | Тип вкладки, которая позволяет пользователю реализовать возможность тематической беседы в динамических вкладках. |
 | [Модули задач](../task-modules-and-cards/what-are-task-modules.md) | Функция приложения Teams для создания модального всплывающего окна для выполнения задач, отображения видео или панели мониторинга. |
 | [Обсуждения](../tabs/design/tabs.md#thread-discussion) | Беседа, опубликованная в канале или чате между пользователями. <br>**См. также:** [беседа](#c); [канал](#c) |
-| [Teams](../overview.md) | Microsoft Teams — это идеальное приложение для обмена сообщениями для вашей организации. Это рабочее пространство для совместной работы и общения в реальном времени, собраний, обмена файлами и приложениями. |
+| [Teams](../overview.md) | Microsoft Teams is the ultimate message app for your organization. It's a workspace for real-time collaboration and communication, meetings, file and app sharing. |
 | [Набор средств Teams](../toolkit/teams-toolkit-fundamentals.md) | Набор средств Microsoft Teams Toolkit позволяет создавать пользовательские приложения Teams непосредственно в среде Visual Studio Code.  |
-| [TeamsFx](../toolkit/teamsfx-cli.md) | TeamsFx — это текстовый интерфейс командной строки, ускоряющий разработку приложений Teams. Также используется название TeamsFx CLI.|
+| [TeamsFx](../toolkit/teamsfx-cli.md) | TeamsFx is a text-based command line interface that accelerates Teams application development. It's also called TeamsFx CLI.|
 | [Пакет SDK TeamsFx](../toolkit/teamsfx-sdk.md) | Пакет SDK TeamsFx предварительно настроен в проекте со сформированными шаблонами с помощью набора средств TeamsFx или CLI. |
 | [Пакет SDK TeamsJS](../tabs/how-to/using-teams-client-sdk.md) | Пакет SDK TeamsJS позволяет создавать размещенные возможности в Teams. Начиная с TeamsJS версии 2.0.0 вы можете расширять приложения Teams для запуска в Outlook и Office. |
 | [Мобильная версия Teams](../concepts/design/plan-responsive-tabs-for-teams-mobile.md) | Microsoft Teams доступен в качестве мобильного приложения. |
@@ -213,7 +213,7 @@ ms.locfileid: "67653163"
 
 | Термин | Определение |
 | --- | --- |
-| [URL-адрес веб-сайта](../tabs/design/tabs-mobile.md) | Свойство в файле манифеста приложения (`websiteUrl`), которое связывающее приложение с веб-сайтом организации или с целевой страницей соответствующего продукта. Это обязательная конфигурация для мобильного клиента Teams.<br>**См. также**: [манифест приложения](#a); [мобильная версия Teams](#t) |
+| [URL-адрес веб-сайта](../tabs/design/tabs-mobile.md) | A property in the app manifest file (`websiteUrl`) that links the app to the website of the organization or landing page of the relevant product. It's a mandatory configuration for Teams mobile client. <br>**См. также**: [манифест приложения](#a); [мобильная версия Teams](#t) |
 | [Веб-приложение](../samples/integrate-web-apps-overview.md) | Приложение, которое работает на веб-сервере. Его можно интегрировать с платформой Microsoft Teams. |
 | [Веб-перехватчик](../webhooks-and-connectors/what-are-webhooks-and-connectors.md) | Это функция приложения Teams, используемая для его интеграции с внешними приложениями. <br>**См. также**: входящий веб-перехватчик; исходящий веб-перехватчик |
 | [Веб-часть](../sbs-gs-spfx.yml) | Компонент пользовательского интерфейса, используемый для создания страницы или сайта в приложении Teams, созданном с помощью Visual Studio Code и SharePoint Framework. <br>**См. также**: [SPFx](#s) |

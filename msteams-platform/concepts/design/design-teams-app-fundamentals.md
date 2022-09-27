@@ -5,16 +5,16 @@ author: heath-hamilton
 ms.localizationpriority: medium
 ms.author: lajanuar
 ms.topic: overview
-ms.openlocfilehash: 472af955ba5a508ea2fa892d9ece94977bdfb660
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
+ms.openlocfilehash: 654bc49cfc671b849e3b88aae1eefa5d1bbaef02
+ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558837"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026978"
 ---
 # <a name="microsoft-teams-app-design-system"></a>Система дизайна приложений Microsoft Teams
 
-Быстрое изучение основ дизайна приложений Teams. Подробное руководство и примеры доступны в <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Комплекте пользовательского интерфейса Microsoft Teams (Figma)</a>.
+Быстрое изучение основ дизайна приложений Teams. Подробное руководство и примеры доступны в [Комплекте пользовательского интерфейса Microsoft Teams (Figma)](https://www.figma.com/community/file/916836509871353159).
 
 ## <a name="layout"></a>Макет
 
@@ -42,7 +42,7 @@ ms.locfileid: "66558837"
 
       Аватар — это графическое представление человека, команды, бота или сущности в Teams. Группы аватаров часто используются, чтобы выразить проводящееся действие или показать состав участников, не занимая слишком много места по вертикали. 
 
-      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Ознакомьтесь с полным текстом рекомендаций по аватарам (Figma)</a>
+      * [Ознакомьтесь с полным текстом рекомендаций по аватарам (Figma)](https://www.figma.com/community/file/916836509871353159)
 
    :::column-end:::
    :::column span="1":::
@@ -62,7 +62,7 @@ ms.locfileid: "66558837"
 
       Также можно использовать во всем приложении значки Fluent UI:
 
-      * <a href="https://www.figma.com/community/file/836835755999342788" target="_blank">Получите последнюю версию набора значков Fluent (Figma)</a>
+      * [Получите последнюю версию набора значков Fluent (Figma)](https://www.figma.com/community/file/836835755999342788)
       * [Реализация значков (Fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/icons)
 
    :::column-end:::
@@ -81,7 +81,7 @@ ms.locfileid: "66558837"
 
       В Teams в качестве основного шрифта используется Segoe UI. Благодаря подбору различных размеров и начертаний шрифта образуется иерархия и обеспечивается удобочитаемость.
 
-      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Ознакомьтесь с полным текстом рекомендаций по шрифтам (Figma)</a>
+      * [Ознакомьтесь с полным текстом рекомендаций по шрифтам (Figma)](https://www.figma.com/community/file/916836509871353159)
       * [Реализация оформления (Fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/typography)
 
    :::column-end:::
@@ -100,7 +100,7 @@ ms.locfileid: "66558837"
 
       Веб-приложение и классическое приложение Teams поддерживают тему по умолчанию (светлую), а также темную и высококонтрастную темы. Мобильное приложение Teams поддерживает светлую и темную темы. У каждой темы есть собственная цветовая схема.
 
-      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Ознакомьтесь с полным текстом рекомендаций по цветам и доступным цветовым маркерам (Figma)</a>
+      * [Ознакомьтесь с полным текстом рекомендаций по цветам и доступным цветовым маркерам (Figma)](https://www.figma.com/community/file/916836509871353159)
       * [Реализация цветов (Fluent UI)](https://fluentsite.z22.web.core.windows.net/0.51.7/colors)
 
    :::column-end:::
@@ -118,7 +118,7 @@ ms.locfileid: "66558837"
 
       Для создания дополнительной иерархии в приложении можно использовать форму и высоту. 
 
-      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Ознакомьтесь с полным текстом рекомендаций по форме и высоте (Figma)</a>
+      * [Ознакомьтесь с полным текстом рекомендаций по форме и высоте (Figma)](https://www.figma.com/community/file/916836509871353159)
       * [Реализация формы и высоты (Fluent UI)](https://developer.microsoft.com/fluentui#/styles/web/elevation)
 
    :::column-end:::
@@ -137,7 +137,7 @@ ms.locfileid: "66558837"
 
       Чтобы ваше приложение органично вписывалось в Teams, в приложении следует соблюдать следующие [стилистические принципы Майкрософт](/style-guide/brand-voice-above-all-simple-human): доброжелательный и непринужденный стиль, четкое и ясное изложение материала, готовность прийти на помощь.
 
-      * <a href="https://www.figma.com/community/file/916836509871353159" target="_blank">Ознакомьтесь с полным текстом рекомендаций по текстам и контенту, включая написание текстов для ботов (Figma)</a>
+      * [Ознакомьтесь с полным текстом рекомендаций по текстам и контенту, включая написание текстов для ботов (Figma)](https://www.figma.com/community/file/916836509871353159)
 
    :::column-end:::
    :::column span="1":::
