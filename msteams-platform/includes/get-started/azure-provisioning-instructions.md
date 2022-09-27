@@ -1,7 +1,7 @@
 ## <a name="deploy-your-app-to-azure"></a>Развертывание приложения в Azure
 
 Развертывание состоит из двух этапов.  Во-первых, создаются необходимые облачные ресурсы (также называемые подготовкой). Затем код приложения копируется в созданные облачные ресурсы. В этом руководстве вы развернете приложение табуляции.
-<br> 
+<br>
 <br>
 <details>
 <summary>В чем разница между подготовкой и развертыванием?</summary>
@@ -16,34 +16,34 @@
 
 1. Выберите **"Подготовка в облаке"**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/provisioning-commands.png" alt-text="Снимок экрана: команды подготовки":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/provisioning-commands.png" alt-text="Снимок экрана: выбор подготовки в облаке в наборе средств Teams.":::
 
 1. Выберите подписку, используемую для ресурсов Azure.
 
-    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/select-resource.png" alt-text="Снимок экрана: ресурсы для подготовки":::
+    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/select-resource.png" alt-text="Снимок экрана: подписка, используемая для ресурсов Azure.":::
 
    > [!NOTE]
-   > Для размещения приложения всегда используются некоторые ресурсы Azure.
+   > Ваше приложение размещается с помощью ресурсов Azure.
 
     В диалоговом окне выводится предупреждение о том, что при запуске ресурсов в Azure могут возникнуть затраты.
 
 1. Выберите **"Подготовка"**.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provision-warning.png" alt-text="Снимок экрана: диалоговое окно подготовки.":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provision-warning.png" alt-text="Снимок экрана: диалоговое окно, в котором могут взиматься затраты при запуске ресурсов в Azure.":::
 
    Процесс подготовки создает ресурсы в облаке Azure. Это может занять некоторое время. Ход выполнения можно отслеживать, просмотрев диалоги в правом нижнем углу. Через несколько минут вы увидите следующее уведомление:
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-provision-successmsgext.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки.":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-provision-successmsgext.png" alt-text="Снимок экрана: уведомление с уведомлением об успешной подготовке hellomsg в облаке.":::
 
     При необходимости можно просмотреть подготовленные ресурсы. В этом руководстве вам не нужно просматривать ресурсы.
 
     Подготовленный ресурс отображается в разделе **"Среда** ".
 
-    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provisioned-resources-env.png" alt-text="Снимок экрана: диалоговое окно завершения подготовки.":::
+    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/provisioned-resources-env.png" alt-text="Снимок экрана: подготовленный ресурс в разделе &quot;Среда&quot;.":::
 
 1. Выберите **"Развернуть в облаке** " на панели **развертывания** после завершения подготовки.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-cloud.png" alt-text="Снимок экрана, показывающий, где можно выполнить развертывание в облаке.":::
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/deploy-cloud.png" alt-text="Снимок экрана: развертывание в облаке.":::
 
    Как и в случае с подготовкой, развертывание занимает некоторое время. Вы можете отслеживать процесс, просмотрев диалоги в правом нижнем углу. Через несколько минут вы увидите уведомление о завершении.
 
@@ -62,7 +62,7 @@
    При появлении запроса выберите подписку Azure для использования ресурсов Azure.
 
    > [!NOTE]
-   > Для размещения приложения всегда используются некоторые ресурсы Azure.
+   > Ваше приложение размещается с помощью ресурсов Azure.
 
 1. Запустите `teamsfx deploy`.
 
@@ -88,20 +88,15 @@
 
    В наборе средств отображается сообщение о добавлении приложения в Teams.
 
-   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/mex-added-msg.png" alt-text="Снимок экрана: сообщение о попытке использовать приложение сейчас или позже":::
- 
+   :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/mex-added-msg.png" alt-text="Снимок экрана: сообщение для пробного использования приложения сейчас или позже":::
+
     - Если выбрать " **Получить"**, вы сможете попробовать приложение позже из списка загруженных неопубликованных приложений.
     - Если выбрать " **Попробовать"**, Teams загрузит ваше приложение.
 
    Приложение загружается на сайте Azure.
-   
+
 1. Выберите **"Попробовать"**.
 
    Приложение расширения сообщений загружается в приложение чат-бота.
 
    :::image type="content" source="~/assets/images/teams-toolkit-v2/deploy-azure/app-added-mex1.png" alt-text="Снимок экрана: неопубликованное приложение в Teams":::
-
-
-
-
-
