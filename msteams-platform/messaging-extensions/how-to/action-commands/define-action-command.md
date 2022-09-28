@@ -1,16 +1,16 @@
 ---
 title: Определение команд действий расширения для сообщений
 author: surbhigupta
-description: В этом модуле вы узнаете, как определить команды действий расширения обмена сообщениями с помощью примера манифеста приложения в Microsoft Teams.
+description: Узнайте, как определить команды действий расширения сообщений с помощью примера манифеста приложения в Microsoft Teams. Пример (.NET, Node.js) определения команд действий, создания модуля задач и реагирования на действие отправки модуля задачи.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 45dbdabc744a58eb031c6e9a9f7415ecdf18cdcb
-ms.sourcegitcommit: d92e14fad6567fe91fd52ee6c213836740316683
+ms.openlocfilehash: cb7d8512b6e8de980778733c39b19e7c1d63fae6
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67604859"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100737"
 ---
 # <a name="define-message-extension-action-commands"></a>Определение команд действий расширения для сообщений
 
@@ -77,7 +77,7 @@ ms.locfileid: "67604859"
 
 ## <a name="add-the-action-command-to-your-app-manifest"></a>Добавление команды действия в манифест приложения
 
-Чтобы добавить команду действия в манифест приложения, необходимо добавить новый объект `composeExtension` на верхний уровень JSON манифеста приложения. Это можно сделать одним из следующих способов:
+To add the action command to the app manifest, you must add a new `composeExtension` object to the top level of the app manifest JSON. You can use one of the following ways to do so:
 
 * [Создание команды действия с помощью портала разработчика](#create-an-action-command-using-developer-portal)
 * [Создание команды действия вручную](#create-an-action-command-manually)
@@ -149,9 +149,9 @@ ms.locfileid: "67604859"
 
 | Имя свойства | Назначение | Обязательно? | Минимальная версия манифеста |
 |---|---|---|---|
-| `parameters` | Это свойство описывает статический список параметров для команды. Применяется, только если свойство `fetchTask` имеет значение `false`. | Нет | 1.0 |
+| `parameters` | This property describes the static list of parameters for the command. Only use when `fetchTask` is `false`. | Нет | 1.0 |
 | `parameter.name` | Это свойство описывает имя параметра. Оно отправляется в службу в составе запроса пользователя. | Да | 1.0 |
-| `parameter.description` | Это свойство описывает назначение параметра или пример значения, которое должно быть предоставлено. Это значение отображается в пользовательском интерфейсе. | Да | 1.0 |
+| `parameter.description` | This property describes the parameter’s purposes or example of the value that should be provided. This value appears in the UI. | Да | 1.0 |
 | `parameter.title` | Это свойство представляет собой краткое понятное название или метку параметра. | Да | 1.0 |
 | `parameter.inputType` | Для этого свойства задается требуемый тип входных данных. Возможные значения: `text`, `textarea`, `number`, `date`, `time`, `toggle`. Значение по умолчанию `text`. | Нет | 1.4 |
 

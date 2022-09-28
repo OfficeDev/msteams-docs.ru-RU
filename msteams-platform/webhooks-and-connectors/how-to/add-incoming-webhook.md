@@ -1,16 +1,16 @@
 ---
 title: Создание входящего веб-перехватчика
 author: laujan
-description: В этом модуле вы узнаете, как добавить входящий веб-перехватчик в приложение Teams и опубликовать все внешние запросы в Teams с его помощью.
+description: Создайте входящий веб-перехватчик в приложении Teams и опубликуйте внешние запросы в Teams. Удаление входящего веб-перехватчика. Пример кода (C#, Node.js) для отправки карточки с помощью входящего веб-перехватчика.
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 4dd4790f6ff545b01999be7911129a53ab12c72d
-ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
+ms.openlocfilehash: c439a7147ea4fe76e2cd1778396b4936a6313a23
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67990947"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100478"
 ---
 # <a name="create-incoming-webhooks"></a>Создание входящих веб-перехватчиков
 

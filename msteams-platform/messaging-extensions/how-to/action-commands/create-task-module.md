@@ -1,16 +1,16 @@
 ---
 title: Создание и отправка модуля задачи
 author: surbhigupta
-description: В этом модуле вы узнаете, как обрабатывать начальное действие вызова и отвечать с помощью модуля задачи из команды расширения сообщений о действиях.
+description: Узнайте, как создавать и отправлять модули задач. Обработка начального действия вызова и ответ с помощью модуля задачи из команды расширения сообщения о действии.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 58b5d246c113262fa478a36246a224a52d160154
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: d6e85a52af435d131bea0a700ccf13b536a30b9a
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035186"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100317"
 ---
 # <a name="create-and-send-task-module"></a>Создание и отправка модуля задачи
 
@@ -22,12 +22,12 @@ ms.locfileid: "67035186"
 
 ## <a name="the-initial-invoke-request"></a>Запрос начального вызова
 
-В процессе первоначального запроса на вызов ваша служба получает объект `Activity` типа `composeExtension/fetchTask`, и вы должны ответить объектом `task`, содержащим либо адаптивную карточку, либо URL-адрес встроенного веб-представления. В дополнение к стандартным свойствам активности бота полезная нагрузка начального вызова содержит следующие метаданные запроса:
+In the process of the initial invoke request, your service receives an `Activity` object of type `composeExtension/fetchTask`, and you must respond with a `task` object containing either an Adaptive Card or a URL to the embedded web view. Along with the standard bot activity properties, the initial invoke payload contains the following request metadata:
 
 |Имя свойства|Назначение|
 |---|---|
 |`type`| Тип запроса. Должно применяться значение `invoke`. |
-|`name`| Тип команды, которая выдается вашей службе. Это должно быть `composeExtension/fetchTask`. |
+|`name`| Тип команды, выпущенной для вашей службы. Должно применяться значение `composeExtension/fetchTask`. |
 |`from.id`| Идентификатор пользователя, отправившего запрос. |
 |`from.name`| Имя пользователя, отправившего запрос. |
 |`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
@@ -36,7 +36,7 @@ ms.locfileid: "67035186"
 |`channelData.team.id`| Идентификатор команды (если запрос был выполнен в канале). |
 |`value.commandId` | Содержит идентификатор вызванной команды. |
 |`value.commandContext` | Контекст, инициировавший событие. Должно применяться значение `compose`. |
-|`value.context.theme` | Клиентская тема пользователя, полезная для форматирования встроенного веб-представления. Это должно быть `default`, `contrast` или `dark` |
+|`value.context.theme` | Тема клиента пользователя. Удобно при форматировании внедренного веб-представления. Должно применяться значение `default`, `contrast` или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -77,7 +77,7 @@ ms.locfileid: "67035186"
 |Имя свойства|Назначение|
 |---|---|
 |`type`| Тип запроса. Должно применяться значение `invoke`. |
-|`name`| Тип команды, которая выдается вашей службе. Это должно быть `composeExtension/fetchTask`. |
+|`name`| Тип команды, выпущенной для вашей службы. Должно применяться значение `composeExtension/fetchTask`. |
 |`from.id`| Идентификатор пользователя, отправившего запрос. |
 |`from.name`| Имя пользователя, отправившего запрос. |
 |`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
@@ -86,7 +86,7 @@ ms.locfileid: "67035186"
 |`ChannelData.legacy. replyToId`| Возвращает или устанавливает идентификатор сообщения, ответом на которое является данное сообщение. |
 |`value.commandId` | Содержит идентификатор вызванной команды. |
 |`value.commandContext` | Контекст, инициировавший событие. Должно применяться значение `compose`. |
-|`value.context.theme` | Клиентская тема пользователя, полезная для форматирования встроенного веб-представления. Это должно быть `default`, `contrast` или `dark` |
+|`value.context.theme` | Тема клиента пользователя. Удобно при форматировании внедренного веб-представления. Должно применяться значение `default`, `contrast` или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -128,7 +128,7 @@ ms.locfileid: "67035186"
 |Имя свойства|Назначение|
 |---|---|
 |`type`| Тип запроса. Должно применяться значение `invoke`. |
-|`name`| Тип команды, которая выдается вашей службе. Это должно быть `composeExtension/fetchTask`. |
+|`name`| Тип команды, выпущенной для вашей службы. Должно применяться значение `composeExtension/fetchTask`. |
 |`from.id`| Идентификатор пользователя, отправившего запрос. |
 |`from.name`| Имя пользователя, отправившего запрос. |
 |`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
@@ -137,7 +137,7 @@ ms.locfileid: "67035186"
 |`ChannelData.legacy. replyToId`| Возвращает или устанавливает идентификатор сообщения, ответом на которое является данное сообщение. |
 |`value.commandId` | Содержит идентификатор вызванной команды. |
 |`value.commandContext` | Контекст, инициировавший событие. Должно применяться значение `compose`. |
-|`value.context.theme` | Клиентская тема пользователя, полезная для форматирования встроенного веб-представления. Это должно быть `default`, `contrast` или `dark` |
+|`value.context.theme` | Тема клиента пользователя. Удобно при форматировании внедренного веб-представления. Должно применяться значение `default`, `contrast` или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -227,7 +227,7 @@ ms.locfileid: "67035186"
 |Имя свойства|Назначение|
 |---|---|
 |`type`| Тип запроса. Должно применяться значение `invoke`. |
-|`name`| Тип команды, которая выдается вашей службе. Это должно быть `composeExtension/fetchTask`. |
+|`name`| Тип команды, выпущенной для вашей службы. Должно применяться значение `composeExtension/fetchTask`. |
 |`from.id`| Идентификатор пользователя, отправившего запрос. |
 |`from.name`| Имя пользователя, отправившего запрос. |
 |`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
@@ -238,7 +238,7 @@ ms.locfileid: "67035186"
 |`ChannelData.legacy. replyToId`| Возвращает или устанавливает идентификатор сообщения, ответом на которое является данное сообщение. |
 |`value.commandId` | Содержит идентификатор вызванной команды. |
 |`value.commandContext` | Контекст, инициировавший событие. Должно применяться значение `compose`. |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встроенного форматирования веб-представления. Это должно быть `default`, `contrast`, или `dark`. |
+|`value.context.theme` | Тема клиента пользователя. Удобно при форматировании внедренного веб-представления. Должно применяться значение `default`, `contrast` или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -293,7 +293,7 @@ ms.locfileid: "67035186"
 |Имя свойства|Назначение|
 |---|---|
 |`type`| Тип запроса. Должно применяться значение `invoke`. |
-|`name`| Тип команды, которая выдается вашей службе. Это должно быть `composeExtension/fetchTask`. |
+|`name`| Тип команды, выпущенной для вашей службы. Должно применяться значение `composeExtension/fetchTask`. |
 |`from.id`| Идентификатор пользователя, отправившего запрос. |
 |`from.name`| Имя пользователя, отправившего запрос. |
 |`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
@@ -304,7 +304,7 @@ ms.locfileid: "67035186"
 |`ChannelData.legacy. replyToId`| Возвращает или устанавливает идентификатор сообщения, ответом на которое является данное сообщение. |
 |`value.commandId` | Содержит идентификатор вызванной команды. |
 |`value.commandContext` | Контекст, инициировавший событие. Должно применяться значение `compose`. |
-|`value.context.theme` | Клиентская тема пользователя, полезная для форматирования встроенного веб-представления. Это должно быть `default`, `contrast` или `dark` |
+|`value.context.theme` | Тема клиента пользователя. Удобно при форматировании внедренного веб-представления. Должно применяться значение `default`, `contrast` или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -402,7 +402,7 @@ ms.locfileid: "67035186"
 |Имя свойства|Назначение|
 |---|---|
 |`type`| Тип запроса. Должно применяться значение `invoke`. |
-|`name`| Тип команды, которая выдается вашей службе. Это должно быть `composeExtension/fetchTask`. |
+|`name`| Тип команды, выпущенной для вашей службы. Должно применяться значение `composeExtension/fetchTask`. |
 |`from.id`| Идентификатор пользователя, отправившего запрос. |
 |`from.name`| Имя пользователя, отправившего запрос. |
 |`from.aadObjectId`| Идентификатор объекта Azure Active Directory пользователя, отправившего запрос. |
@@ -410,7 +410,7 @@ ms.locfileid: "67035186"
 |`channelData.source.name`| Имя источника, из которого вызывается модуль задач. |
 |`value.commandId` | Содержит идентификатор вызванной команды. |
 |`value.commandContext` | Контекст, инициировавший событие. Должно применяться значение `compose`. |
-|`value.context.theme` | Клиентская тема пользователя, полезная для встроенного форматирования веб-представления. Это должно быть `default`, `contrast`, или `dark`. |
+|`value.context.theme` | Тема клиента пользователя. Удобно при форматировании внедренного веб-представления. Должно применяться значение `default`, `contrast` или `dark`. |
 
 ### <a name="example"></a>Пример
 
@@ -985,8 +985,8 @@ private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
 
 | Название примера           | Описание | .NET    | Node.js   | Python |
 |:---------------------|:--------------|:---------|:--------|
-|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
-|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|[View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search)|
+|Действие расширения для сообщений Teams| Описывает, как определить команды действий, создать модуль задач и ответить на действие отправки модуля задач. |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/51.teams-messaging-extensions-action)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/51.teams-messaging-extensions-action) | [Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action) |
+|Поиск в расширении для сообщений Teams   |  Описывает, как определить команды поиска и отвечать на поисковые запросы.        |[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/50.teams-messaging-extensions-search)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/50.teams-messaging-extension-search)|
 
 ## <a name="next-step"></a>Следующий этап
 

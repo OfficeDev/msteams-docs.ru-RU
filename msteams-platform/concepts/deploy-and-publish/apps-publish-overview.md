@@ -1,16 +1,16 @@
 ---
 title: Общие сведения о распространении приложения
-description: В этой статье описываются параметры публикации приложения Microsoft Teams, отправки и развертывания приложения, а также GCC.
+description: Узнайте, как распространять, публиковать приложения в Магазине Microsoft Teams или в организации. Узнайте, как конечные точки приложения должны соответствовать требованиям организации Сообщества государственных организаций (GCC).
 ms.topic: conceptual
 author: v-rpatkur
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: b194e435ec6152993ce1269875d431ab4ef03aef
-ms.sourcegitcommit: 377a4b712b50a211851aeecc1029414939945390
+ms.openlocfilehash: df17129ce1e51093351683ad01db3be9e65c5770
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68044674"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100723"
 ---
 # <a name="distribute-your-microsoft-teams-app"></a>Распространение приложения Microsoft Teams
 

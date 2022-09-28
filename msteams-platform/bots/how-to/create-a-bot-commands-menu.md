@@ -1,18 +1,21 @@
 ---
 title: Создать меню команд для бота
 author: surbhigupta
-description: В этом модуле вы узнаете, как создать и обработать командное меню для бота Microsoft Teams с примерами кода.
+description: Узнайте, как создать и обработать командное меню для бота Microsoft Teams, а также рекомендации. Узнайте, как удалить команды из манифеста.
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: e14afc31839368c7826a6ee15a6f779b5f6f47b1
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
+ms.openlocfilehash: 0e0f9ce9ada0cde0aa6f7b6b29c7badb07dd7db9
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312313"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100905"
 ---
 # <a name="create-a-commands-menu"></a>Создать меню команд
+
+> [!NOTE]
+> Рекомендуется создать бот команд, следуя пошаговое руководство по созданию бота команд с [помощью JavaScript](../../sbs-gs-commandbot.yml) с помощью средства разработки нового поколения для Teams. Дополнительные сведения о Наборе средств Teams см. в разделе "Обзор набора средств [Teams" Visual Studio Code](../../toolkit/teams-toolkit-fundamentals.md) и обзор [набора средств Teams для Visual Studio](../../toolkit/teams-toolkit-overview-visual-studio.md).
 
 [!INCLUDE [pre-release-label](~/includes/v4-to-v3-pointer-bots.md)]
 
@@ -61,7 +64,7 @@ ms.locfileid: "67312313"
 
 ### <a name="create-a-command-menu-for-your-bot-by-editing-manifestjson"></a>Создание командного меню для бота путем редактирования Файла Manifest.json
 
-Еще один способ создания командного меню — создать его непосредственно в файле манифеста при разработке исходного кода бота. Чтобы использовать этот метод, сделайте следующее:
+Another way to create a command menu is to create it directly in the manifest file while developing your bot source code. To use this method, follow these points:
 
 * Каждое меню поддерживает до десяти команд.
 * Создайте одно командное меню, которое работает во всех областях.
@@ -188,7 +191,7 @@ const modifiedText = TurnContext.removeMentionText(turnContext.activity, turnCon
 
 # <a name="python"></a>[Python](#tab/python)
 
-Фрагмент текста сообщения, представляющий собой **@упоминание**, можно анализировать с помощью статического метода, предоставленного Bot Framework. Это метод класса `TurnContext` под названием `remove_recipient_mention`.
+You can parse out the **@Mention** portion of the message text using a static method provided with the Bot Framework. It is a method of the `TurnContext` class named `remove_recipient_mention`.
 
 Код Python для синтаксического анализа фрагмента-**\@Упоминания** текста сообщения выглядит следующим образом:
 
@@ -205,7 +208,7 @@ modified_text = TurnContext.remove_recipient_mention(turn_context.activity)
 Ниже приведены рекомендации по применению командного меню.
 
 * Не усложняйте: меню бота предназначено для представления основных возможностей бота.
-* Будьте кратки: пункты меню не должны быть длинными и не должны представлять собой сложные фразы естественного языка. Это должны быть простые команды.
+* Keep it short: Menu options must not be long and must not be complex natural language statements. They must be simple commands.
 * Позаботьтесь о вызываемости: действия или команды меню бота всегда должны быть доступны независимо от состояния беседы или диалогового окна, в котором находится бот.
 
 > [!NOTE]

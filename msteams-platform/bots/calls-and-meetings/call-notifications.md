@@ -1,15 +1,15 @@
 ---
 title: Уведомления о входящих звонках
-description: В этом модуле вы узнаете о подробной технической информации об обработке уведомлений от входящих звонков, перенаправлении и проверке подлинности вызовов с помощью примеров кода.
+description: Сведения о протоколе входящих уведомлений для преобразования вызова из устаревшего формата в формат Graph, перенаправления для сопоставления регионов и проверки подлинности обратного вызова.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 04/02/2019
-ms.openlocfilehash: fd68b85a3c6f5f4682a728461d792093bcd8cac0
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: d5bdd20cb9cb7deef7419acb1da4ac96da2d89a4
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143832"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100660"
 ---
 # <a name="incoming-call-notifications"></a>Уведомления о входящих звонках
 

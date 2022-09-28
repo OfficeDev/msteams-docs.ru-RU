@@ -1,18 +1,18 @@
 ---
 title: Устранение проблем с отправкой в магазин
-description: Из этой статьи вы узнаете, как устранять неполадки с отправкой в Магазин Microsoft Teams и устранять их.
+description: Узнайте, как устранять и устранять проблемы с отправкой в Магазин Microsoft Teams. Получите помощь непосредственно от корпорации Майкрософт, устраните проблемы и повторно отправьте приложение.
 ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: medium
-ms.openlocfilehash: 5faf2d3622e88febe9522f5e2df6716ec2680cca
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: daa64a7f21071632b7c0728bf51829ca9540ebce
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503874"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100282"
 ---
-# <a name="resolve-issues-if-your-teams-store-submission-fails"></a>Устранение проблем в случае сбоя отправки в Магазин Teams
+# <a name="resolve-issues-if-your-teams-store-submission-fails"></a>Устранение проблем при сбое отправки в магазин Teams
 
 Приложения, опубликованные в магазине Microsoft Teams, должны соответствовать рекомендациям по проверке магазина [Teams](~/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md) и [политикам коммерческой платформы](/legal/marketplace/certification-policies).
 
@@ -67,7 +67,7 @@ ms.locfileid: "66503874"
 
 <details>
 
-<summary><b>Разделы справки увеличить вероятность того, что приложение пройдет отправку?</b></summary>
+<summary><b>如何实现 увеличить вероятность того, что мое приложение пройдет отправку?</b></summary>
 
 Выполнение следующих действий может привести к успешной отправке:
 

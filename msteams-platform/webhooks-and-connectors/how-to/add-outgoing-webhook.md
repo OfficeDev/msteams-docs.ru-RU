@@ -1,16 +1,16 @@
 ---
 title: Создание исходящего веб-перехватчика
 author: laujan
-description: В этом модуле вы узнаете, как создавать исходящий веб-перехватчик в Microsoft Teams, его ключевые функции и примеры кода.
+description: Узнайте, как создать исходящий веб-перехватчик в Microsoft Teams, его ключевые функции и пример кода (.NET, Node.js) для создания пользовательских ботов, которые будут использоваться в Teams.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: e86f3825e39340cb228b24dccc770b2d302fb848
-ms.sourcegitcommit: 5c12af6a379c7cace409fda94677ea0334d7a3dd
+ms.openlocfilehash: 8e4e097d20986badc2ca014156f33772d1b997dd
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67337161"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100492"
 ---
 # <a name="create-outgoing-webhooks"></a>Создание исходящих веб-перехватчиков
 
@@ -53,7 +53,7 @@ ms.locfileid: "67337161"
 
     ![Канал Teams ](~/assets/images/teamschannel.png)
 
-1. На странице **Teams** выберите нужную команду, чтобы создать исходящий веб-перехватчик и выберите &#8226;&#8226;&#8226;. В раскрывающемся меню выберите **Управление командой**.
+1. In the **Teams** page, select the required team to create an Outgoing Webhook and select the &#8226;&#8226;&#8226;. In the dropdown menu, select **Manage team**:
 
     ![Создание исходящего веб-перехватчика](~/assets/images/outgoingwebhook1.png)
 
@@ -72,14 +72,14 @@ ms.locfileid: "67337161"
     * **Описание**: подробная строка, которая отображается в карточке профиля и на панели управления приложения на уровне группы.
     * **Аватар**: необязательный значок приложения для веб-перехватчика.
 
-1. Нажмите **Создать**. Исходящий веб-перехватчик будет добавлен в канал текущей команды.
+1. Select **Create**. The Outgoing Webhook is added to the current team's channel:
 
     ![Создание исходящего веб-перехватчика](~/assets/images/outgoingwebhook.png)
 
 Появится диалоговое окно [Код проверки подлинности сообщений с помощью хэш-функций (HMAC)](https://security.stackexchange.com/questions/20129/how-and-when-do-i-use-hmac/20301). Это маркер безопасности, используемый для проверки подлинности звонков между Teams и назначенной внешней службой. Маркер безопасности HMAC не истекает и является уникальным для каждой конфигурации.
 
 >[!NOTE]
-> Исходящий веб-перехватчик доступен пользователям команды только в случае, если URL-адрес действителен, а маркеры проверки подлинности одинаковы у сервера и у клиента. Например, рукопожатие HMAC.
+> The Outgoing Webhook is available to the team's users, only if the URL is valid and the server and client authentication tokens are equal. For example, an HMAC handshake.
 
 В следующем сценарии даны подробные сведения о добавлении исходящего веб-перехватчика.
 
@@ -102,12 +102,12 @@ ms.locfileid: "67337161"
 
 Используйте значение "HMAC 03TCao0i55H1eVKUusZOTZRjtvYTs+mO41mPL+R1e1U=" в авторизации заголовка запроса.
 
-Чтобы убедиться, что ваша служба получает вызовы только от фактических клиентов Teams, Teams предоставляет код HMAC в заголовке авторизации HTTP `hmac`. Всегда включайте код в протокол проверки подлинности.
+To ensure that your service is receiving calls only from actual Teams clients, Teams provides an HMAC code in the HTTP `hmac` authorization header. Always include the code in your authentication protocol.
 
 Код всегда должен проверять подпись HMAC, включенную в запрос, следующим образом.
 
 * Создание маркера HMAC из текста запроса сообщения. Для этого в большинстве платформ существуют стандартные библиотеки, например, [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto) для Node.js и [пример веб-перехватчика Teams](https://github.com/OfficeDev/microsoft-teams-sample-outgoing-webhook/blob/23eb61da5a18634d51c5247944843da9abed01b6/WebhookSampleBot/Models/AuthProvider.cs) для C\#. В Microsoft Teams используется стандартное шифрование HMAC SHA256. Необходимо преобразовать тело в массив байтов в UTF8.
-* Вычислите хэш из массива байтов маркера безопасности, предоставленного приложением Teams при регистрации исходящего веб-перехватчика в клиенте Teams. См. статью [Создание исходящего веб-перехватчика](#create-outgoing-webhooks).
+* Compute the hash from the byte array of the security token provided by Teams when you registered the Outgoing Webhook in the Teams client. See [create an Outgoing Webhook](#create-outgoing-webhooks).
 * Преобразуйте хэш-значение в строку с помощью кодировки UTF-8.
 * Сравните строковое значение сгенерированного хэш-значения со значением, предоставленным в HTTP-запросе.
 
@@ -131,7 +131,7 @@ ms.locfileid: "67337161"
 > [!NOTE]
 >
 > * Можно отправлять адаптивные карточки, карточки главного имиджевого баннера и текстовые сообщения в виде вложений с помощью исходящего веб-перехватчика.
-> * Карточки поддерживают форматирование. Дополнительные сведения см. в разделе о [форматировании карточек с помощью Markdown](~/task-modules-and-cards/cards/cards-format.md?tabs=adaptive-md%2Cconnector-html#format-cards-with-markdown).
+> * Cards support formatting. For more information, see [format cards with markdown](~/task-modules-and-cards/cards/cards-format.md?tabs=adaptive-md%2Cconnector-html#format-cards-with-markdown).
 > * Адаптивная карточка в исходящих веб-перехватчиках поддерживает только действия карточки `openURL`.
 
 Следующие части кода являются примерами отклика адаптивной карточки:

@@ -1,14 +1,14 @@
 ---
 title: Разрешения устройства для браузера
-description: Узнайте, как безопасно вернуть разрешения устройства, такие как доступ к камере или микрофону для приложений в веб-клиенте.
+description: приложение, которое требует разрешения устройства, например доступ к камере или микрофону, теперь требует, чтобы пользователи вручную предоставили разрешение на уровне каждого приложения в веб-браузере.
 localization_priority: medium
 ms.topic: how-to
-ms.openlocfilehash: ac4695d119b04ee71334ccb2baa820c0e15bff88
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: a9df46a3bacd66b32efceaf2f2069e92c2cc64a3
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035081"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100576"
 ---
 # <a name="device-permissions-for-the-browser"></a>Разрешения устройства для браузера
 

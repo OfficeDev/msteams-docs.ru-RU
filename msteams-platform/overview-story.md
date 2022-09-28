@@ -1,17 +1,17 @@
 ---
 title: Обзор. Пользовательская история для платформы Microsoft Teams
 author: heath-hamilton
-description: Ознакомьтесь с историей пользователя о том, как идея приложения соответствует требованиям пользователей на платформе Microsoft Teams.
+description: Узнайте, как приложения Microsoft Teams помогают пользователям в среде Teams. Узнайте о пользователе, проблеме, требованиях к приложению, преимуществах и ориентированном на пользователя решении.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 11/02/2021
-ms.openlocfilehash: c85fe155500f695fe74edcf0c155526bc446411a
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
-ms.translationtype: HT
+ms.openlocfilehash: 905e357438e9913b64fd46c60a645d0d3d5d3cb0
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66557983"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100709"
 ---
 # <a name="from-ideas-to-teams-app"></a>От идей до приложения Teams
 

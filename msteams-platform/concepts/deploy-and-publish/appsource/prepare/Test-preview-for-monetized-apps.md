@@ -1,16 +1,16 @@
 ---
 title: Предварительное тестирование для приложений с монетизацией
 author: v-ypalikila
-description: Узнайте, как создавать и тестировать предварительные предложения SaaS для приложения Teams, прежде чем опубликовать свое предложение. Вы можете полностью протестировать функции покупок для своих приложений с монетизацией в Teams.
+description: Создайте и протестируйте предварительные предложения SaaS для приложения Teams, прежде чем опубликовать свое предложение. Создайте идентификатор предложения предварительной версии, настройте приложение с помощью идентификатора предварительного предложения и загрузки неопубликованного предложения.
 ms.topic: conceptual
 ms.author: v-ypalikila
 ms.localizationpriority: high
-ms.openlocfilehash: 3637ca7d8c488b106ec570ea75cdc67b44d90600
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
-ms.translationtype: HT
+ms.openlocfilehash: 98b9876a93fe6040cf66a16475fe7fdacf98a520
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558746"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100793"
 ---
 # <a name="test-preview-for-monetized-apps"></a>Предварительное тестирование для приложений с монетизацией
 
@@ -33,13 +33,13 @@ ms.locfileid: "66558746"
       :::image type="content" source="../../../../assets/images/apps-in-meetings/test-preview-monetized-apps-preview-offer-id.png" alt-text="ИД предварительного предложения" :::
 
     > [!NOTE]
-    > В отличие от идентификатора публичного предложения, идентификатор предложения предварительной версии можно распознать по суффиксу *-preview*. Например, **publisherId.offerId-preview**.
+    > Unlike a public offer ID, the Preview offer ID can be recognized with the *-preview* suffix. For example, **publisherId.offerId-preview**.
 
 ## <a name="configure-your-app-with-the-preview-offer-id"></a>Настройка приложения с использованием ИД предварительного предложения
 
 Перед началом работы войдите на **портал разработчика** с помощью учетной записи разработчика с **предварительной аудиторией**, чтобы пользователи увидели ваши планы подписок в магазине Teams.
 
-После создания идентификатора предложения предварительной версии свяжите идентификатор предложения со своим приложением Teams. Чтобы привязать идентификатор предложения:
+After you've generated your Preview offer ID, link the offer ID to your Teams app. To link the offer ID:
 
 1. Перейдите на [портал разработчика](https://dev.teams.microsoft.com/) и войдите с помощью учетных данных разработчика.
 1. Выберите **Приложения** в левой области.

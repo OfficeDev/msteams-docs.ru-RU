@@ -1,15 +1,15 @@
 ---
 title: Планирование монетизации приложения
-description: В этом учебном модуле вы узнаете, как спланировать монетизацию приложения Microsoft Teams, а также узнаете об оптимальном варианте монетизации для глобальной видимости.
+description: Планируйте монетизацию приложения Microsoft Teams, а также ознакомьтесь с лучшими вариантами монетизации для глобальной видимости.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: bb6f33d568b16d5f8f2aeb4d900b3d658d2bd6bb
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
-ms.translationtype: HT
+ms.openlocfilehash: 0bc933282990437742f99a53da5ee386efd9020c
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558137"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100345"
 ---
 # <a name="plan-to-monetize-your-app"></a>Планирование монетизации приложения
 

@@ -1,27 +1,27 @@
 ---
 title: Создание приложений для платформы Microsoft Teams
 author: heath-hamilton
-description: Обзор того, как разработчики могут расширять возможности Microsoft Teams с помощью собственных приложений.
+description: Узнайте о Microsoft Teams, о том, зачем создавать приложения на платформе Teams и как приложение Teams помогает удовлетворить бизнес-потребности.
 ms.topic: overview
 ms.localizationpriority: high
 ms.author: lajanuar
 ms.date: 05/24/2021
-ms.openlocfilehash: f894262918004e643370963ad8e67ef3183927b8
-ms.sourcegitcommit: c398dfdae9ed96f12e1401ac7c8d0228ff9c0a2b
-ms.translationtype: HT
+ms.openlocfilehash: 143f316a6f5153185e78b2efa4ec1db3dc9c1fa6
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66558431"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100205"
 ---
 # <a name="teams-app-that-fits"></a>Подходящее приложение Teams
 
 Microsoft Teams предлагает коллекцию приложений, предоставляемых Корпорацией Майкрософт или внешними службами. Приложения Teams могут быть вкладками, ботами, расширениями для сообщений или любым сочетанием этих трех приложений. Эти приложения расширяют возможности совместной работы в Teams.
 
-Приложения могут быть личными или совместными. Личное приложение позволяет взаимодействовать один на один, а совместное приложение позволяет нескольким пользователям делиться пространством приложения для совместной работы.
+Apps can be personal or shared. A personal app enables a one-on-one communication, and a shared app lets multiple users share app space to collaborate.
 
 ## <a name="driving-organizational-goals"></a>Управление целями организации
 
-Взаимодействие и коммуникация — основа успеха организации. Краткие сообщения, интеграция с необходимыми службами и доступность на работе — вот почему организации все чаще предпочитают полагаться на приложения.
+Collaboration and communication are key for an organization. Concise communication, integration with necessary services, and on-the-go accessibility is why organizations are increasingly choosing to rely on apps.
 
 Организации используют его для подключения к своим клиентам, предоставления услуг и обмена информацией. Но это еще не всё! Приложения — это место для совместной работы людей. Хорошо размещенное приложение помогает создать единую среду для внешних и внутренних бизнес-потребностей.
 
@@ -47,7 +47,7 @@ Microsoft Teams предлагает коллекцию приложений, п
 
 - **Связь и совместная работа**
 
-    Большинство успешных приложений Teams включают в себя извлечение информации из другой системы, ее обсуждения и предоставление пользователям возможности действовать. Teams позволяет выполнять все эти задачи непосредственно в клиенте Teams. Вы даже можете отправить информацию целевой аудитории на основе события или действия во внешней системе.
+    Most successful Teams apps involve pulling information from another system, having a conversation about it, and letting users to take action. Teams lets you do all these tasks directly within the Teams client. You can even push information to a targeted audience based on an event or action in an external system.
 
 - **Социальные взаимодействия**
 
@@ -57,7 +57,7 @@ Microsoft Teams предлагает коллекцию приложений, п
 
 - **Общие бизнес-процессы**
 
-    Такие задачи, как создание и совместное использование отчета о продажах, отслеживание графика проекта, резервирование общих ресурсов, отправка запросов в службу поддержки, являются повторяющимися задачами. Они делают приложения Teams эффективными.
+    Tasks like creating and sharing a sales call report, tracking your project timeline, reserving common resources, submitting help desk requests are repetitive tasks. They make for effective Teams apps.
 
     Помимо автоматизации повторяющихся рабочих процессов, вы можете использовать приложения для решения проблем со связью. Чат-бот — это простая замена электронных писем и телефонных звонков в ИТ-отдел или отдел кадров.
 

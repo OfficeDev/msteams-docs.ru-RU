@@ -1,14 +1,14 @@
 ---
 title: Регистрация бота для звонков и собраний для Microsoft Teams
-description: В этом модуле вы узнаете, как зарегистрировать новый бот для аудио- и видеозвонков в Microsoft Teams, создать бот или добавить возможность вызова и добавить разрешения графа.
+description: Узнайте, как зарегистрировать новый бот для аудио- и видеозвонков в Microsoft Teams, создать бот или добавить возможность вызова, добавить разрешения графа. Пример создания звонка, присоединения к собранию и передачи звонка.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 74c0f5dab2fe8efbcfee73d8c356675384f83683
-ms.sourcegitcommit: 234944867eeccbba5da6be43120e9683977bdfd8
+ms.openlocfilehash: 2563d94e944a7d4058d1417be2f3816e3f565bff
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67407576"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100926"
 ---
 # <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация бота для звонков и собраний для Microsoft Teams
 
@@ -22,8 +22,8 @@ ms.locfileid: "67407576"
 
 Боты для вызовов и виртуальных собраний имеют следующие два дополнительных параметра в файле manifest.json, которые включают звук или видео для бота в Teams.
 
-* `bots[0].supportsCalling`. Если он присутствует и имеет значение `true`, Teams позволяет вашему боту участвовать в вызовах и виртуальных собраниях.
-* `bots[0].supportsVideo`. Если он присутствует и имеет значение `true`, Teams знает, что ваш бот поддерживает видео.
+* `bots[0].supportsCalling`. If present and set to `true`, Teams allows your bot to participate in calls and online meetings.
+* `bots[0].supportsVideo`. If present and set to `true`, Teams knows that your bot supports video.
 
 Если вы хотите, чтобы среда IDE правильно проверяла схему manifest.json для вызовов и собраний для этих значений, вы можете изменить атрибут `$schema` следующим образом:
 
@@ -39,7 +39,7 @@ ms.locfileid: "67407576"
 
 Чтобы создать новый бот для Teams:
 
-1. Используйте эту ссылку, чтобы создать новый бот, `https://dev.botframework.com/bots/new`. В качестве альтернативы, если вы нажмете кнопку **Создать бот** на портале Bot Framework, вы создадите свой бот в Microsoft Azure, для чего у вас должна быть учетная запись Azure.
+1. Use this link to create a new bot, `https://dev.botframework.com/bots/new`. Alternately, if you select the **Create a bot** button in the Bot Framework portal, you create your bot in Microsoft Azure, for which you must have an Azure account.
 1. Добавьте канал Teams.
 1. Выберите вкладку **Вызов** на странице канала Teams. Выберите **Включить вызовы**, а затем обновите **Веб-перехватчик (для вызовов)** указав URL-адрес HTTPS, на который вы получаете входящие уведомления, например `https://contoso.com/teamsapp/api/calling`. Подробнее см. в статье [Настройка каналов](/bot-framework/portal-configure-channels).
 
@@ -81,9 +81,9 @@ Graph предоставляет детализированные разреше
 
 ### <a name="get-tenant-administrator-consent"></a>Получить согласие администратора клиента
 
-Для приложений, использующих конечную точку Azure AD V1, администратор клиента может дать согласие на разрешения приложения с помощью [портала Microsoft Azure](https://portal.azure.com), если приложение установлено в его организации. Кроме того, вы можете предоставить возможность регистрации в приложении, с помощью которой администраторы могут согласиться с настроенными разрешениями. Как только согласие администратора будет записано Azure AD, приложение сможет запрашивать токены без повторного запроса согласия.
+For apps using the Azure AD V1 endpoint, a tenant administrator can consent to the application permissions using the [Microsoft Azure portal](https://portal.azure.com) when your app is installed in their organization. Alternately, you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again.
 
-Вы можете положиться на администратора, который предоставит необходимые приложению разрешения на [портале Microsoft Azure](https://portal.azure.com). Лучшим вариантом является предоставление администраторам возможности регистрации с помощью конечной точки`/adminconsent` Azure AD V2. Дополнительные сведения см. в [инструкциях по созданию URL-адреса согласия администратора](/graph/auth-v2-service#3-get-administrator-consent).
+You can rely on an administrator to grant the permissions your app needs at the [Microsoft Azure portal](https://portal.azure.com). A better option is to provide a sign-up experience for administrators by using the Azure AD V2 `/adminconsent` endpoint. For more information, see [instructions on constructing an Admin consent URL](/graph/auth-v2-service#3-get-administrator-consent).
 
 > [!NOTE]
 > Чтобы создать URL-адрес согласия администратора клиента, требуется настроенный URI перенаправления или URL-адрес ответа на [портале регистрации приложений](https://apps.dev.microsoft.com/). Чтобы добавить URL-адреса ответов для бота, войдите в систему регистрации бота, выберите **Дополнительные параметры** > **Редактировать манифест приложения**. Добавьте URL-адрес перенаправления в коллекцию `replyUrls`.

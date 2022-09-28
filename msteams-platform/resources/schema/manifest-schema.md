@@ -1,14 +1,14 @@
 ---
 title: Справочник по схеме манифеста
-description: В этой статье представлен справочник по схеме манифеста Microsoft Teams, схема и пример полного манифеста.
+description: В этой статье вы получите последнюю версию схемы общедоступного манифеста для справочника, схемы и примера полного манифеста Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: b1795af69256eec27e34917cad0b24924f490083
-ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+ms.openlocfilehash: 23bdb87bd1f5f3ea1fadb2527f64b5bebec0b157
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026971"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100170"
 ---
 # <a name="app-manifest-schema-for-teams"></a>Схема манифеста приложения для Teams
 

@@ -1,22 +1,22 @@
 ---
 title: Планирование обзора приложения
 author: heath-hamilton
-description: Описаны составляющие планирования приложения, приведены варианты использования, возможности приложения и другие функции Teams.
+description: Общие сведения о вариантах использования и функциях приложений Microsoft Teams, вариантах использования карт, планировании адаптивных вкладок для мобильных устройств. Узнайте о функциях и доступности Teams для GCC, GCC-High и DOD.
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: c859c20c900b4fcf8a5797c79881b0aba0a86b93
-ms.sourcegitcommit: dd70fedbe74f13725e0cb8dd4f56ff6395a1c8bc
-ms.translationtype: HT
+ms.openlocfilehash: eb72d4296ee6b91bae1775ad79eef06139abb59e
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67058244"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100422"
 ---
 # <a name="plan-your-app-with-teams-features"></a>Планирование приложения с помощью функций Teams
 
 Чтобы создать отличное приложение Teams, нужно найти правильное сочетание функций, которые удовлетворят потребности пользователей. Дизайн, функции и возможности приложения опираются на эту цель.
 
-В своей основе Teams — это платформа для совместной работы. Кроме того, это кроссплатформенная социальная платформа, лежащая в основе Office 365 и предлагающая вам личное пространство для создания приложений.
+At its heart, Teams is a collaboration platform. It's also a social platform, is natively cross-platform, sits at the heart of Office 365, and offers a personal canvas for you to create apps.
 
 В этом разделе вы узнаете, как:
 
@@ -76,7 +76,7 @@ Teams как платформа предоставляет наборы инст
 |-------------|---------|---|---|
 | Приложения, которые принадлежат Teams, как в приложениях внутренней разработки | ✔️ Приложение включено, если оно имеет GCC | ✔️ Приложение включено, если оно имеет GCC-High | ✔️ Приложение включено, если оно имеет DOD |
 | Приложения Майкрософт | ✔️ Приложения Майкрософт, совместимые с GCC | ✔️ Приложения Майкрософт, совместимые с GCC-High | ✔️ Приложения Майкрософт, совместимые с DOD |
-| Сторонние приложения | ✔️ Доступны сторонние приложения. По умолчанию отключено. Администратор клиента включает этот параметр на свое усмотрение. | ❌ | ❌ |
+| Сторонние приложения | ✔️ Third-party apps are available. Disabled by default and tenant admin use their own discretion to enable it. | ❌ | ❌ |
 | боты; | ✔️ | ❌ | ❌ |
 | Настраиваемые приложения или приложения вкладки LOB. |  ✔️ | ✔️ | ✔️ |
 | Загрузка неопубликованных приложений | ✔️ | ❌ | ❌ |

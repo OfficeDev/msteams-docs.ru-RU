@@ -1,16 +1,16 @@
 ---
 title: Включение согласия для конкретного ресурса в Teams
-description: В этой статье вы узнаете, как предоставить согласие для конкретных ресурсов в Microsoft Teams и как воспользоваться его преимуществами.
+description: Сведения о поддерживаемых детальных разрешениях на согласие для конкретного ресурса (RSC), которые позволяют владельцам команд и владельцам чатов предоставлять согласие для приложения.
 ms.localizationpriority: medium
 author: akjo
 ms.author: lajanuar
 ms.topic: reference
-ms.openlocfilehash: 7321c3dbf1f2a3493a1d457cfd80d7fc1efb01d6
-ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.openlocfilehash: 558ddd3603c9545781a3ebe06b7878df48b1333c
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586709"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100891"
 ---
 # <a name="resource-specific-consent"></a>Согласие для определенных ресурсов
 
@@ -103,7 +103,7 @@ ms.locfileid: "67586709"
 
 ### <a name="configure-chat-owner-consent-settings-for-rsc-in-a-chat-using-the-microsoft-graph-apis"></a>Настройка параметров согласия владельца чата для RSC в чате с помощью API Microsoft Graph
 
-Вы можете включить или отключить RSC для чатов с помощью API Graph. Свойство в `isChatResourceSpecificConsentEnabled` [**teamsAppSettings**](/graph/api/teamsappsettings-update#example-1-enable-installation-of-apps-that-require-resource-specific-consent-in-chats-meetings) определяет, включен ли RSC чата в клиенте.
+Вы можете включить или отключить RSC для чатов с помощью Graph API. Свойство в `isChatResourceSpecificConsentEnabled` [**teamsAppSettings**](/graph/api/teamsappsettings-update#example-1-enable-installation-of-apps-that-require-resource-specific-consent-in-chats-meetings) определяет, включен ли RSC чата в клиенте.
 
    ![Конфигурация команды RSC Graph](../../assets/images/rsc/graph-rsc-chat-configuration.png)
 

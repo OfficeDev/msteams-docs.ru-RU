@@ -1,16 +1,16 @@
 ---
 title: Создание ботов беседы для чата канала или группы
 author: surbhigupta
-description: Узнайте, как отправлять, получать и обрабатывать сообщения для бота в канале или групповом чате. Ознакомьтесь с рекомендациями по проектированию и т. д.
+description: Узнайте, как создавать новые цепочки бесед, работать с упоминаниями и отправлять сообщения при установке. Изучите пример отправки файлов Teams (.NET, JavaScript, Python).
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 8db8858ff746ce466b8cfef1cfa210111662cbeb
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 18af255a8d0975878865b101b8787422d5cfa3d5
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780935"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100604"
 ---
 # <a name="channel-and-group-chat-conversations-with-a-bot"></a>Беседы с бото в канале и групповом чате
 
@@ -294,4 +294,4 @@ async def _mention_activity(self, turn_context: TurnContext):
 
 * [Получение контекста в Teams](~/bots/how-to/get-teams-context.md).
 * [Создание частного канала от имени пользователя](/graph/api/channel-post#example-2-create-private-channel-on-behalf-of-user)
-* [Подключение бота к Веб-чат каналу](/azure/bot-service/bot-service-channel-connect-webchat)
+* [Подключение бота к Web チャット каналу](/azure/bot-service/bot-service-channel-connect-webchat)

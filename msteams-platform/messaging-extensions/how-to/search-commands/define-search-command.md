@@ -1,16 +1,16 @@
 ---
 title: Определение команд поиска расширения сообщений
 author: surbhigupta
-description: В этом модуле вы узнаете о расположениях вызова команд поиска и о том, как создать команду поиска для расширений обмена сообщениями.
+description: Узнайте о командах поиска расширений сообщений для приложений Teams, чтобы создать команду поиска с помощью манифеста приложения и вручную.
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: f562763cc84979874fac612f125b536fa9e6bc36
-ms.sourcegitcommit: 19f3e4e9088d0a07c9b567e76640d498b9d1981f
+ms.openlocfilehash: f774ae4ce0e4198a8e676080b87c33c8ecec3f3f
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67786964"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100898"
 ---
 # <a name="define-message-extension-search-commands"></a>Определение команд поиска расширения сообщений
 

@@ -1,20 +1,20 @@
 ---
 title: Публикация приложений Teams для Microsoft 365
-description: Из этой статьи вы узнаете, как сделать приложения Teams с поддержкой Microsoft 365 обнаруживаемыми для пользователей в Teams, Outlook и Office.
+description: Узнайте, как сделать приложения Teams с поддержкой Microsoft 365 обнаруживаемыми для пользователей в Teams, Outlook и Office. Сведения о мультитенантном дистрибутиве с одним клиентом.
 ms.date: 05/24/2022
 ms.topic: conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: c99114ed397b9c20f699ffee165189ec7c4fd26d
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
+ms.openlocfilehash: 01806f5aa7e3a5b0cb79cb6a2562cbf104f031bb
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919818"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100940"
 ---
 # <a name="publish-teams-apps-for-microsoft-365"></a>Публикация приложений Teams для Microsoft 365
 
-Приложения Teams с поддержкой Microsoft 365 поддерживаются для использования в рабочей области в Microsoft Teams. Вы можете распространять эти приложения для аудиторий предварительной версии,  которые используют целевые версии выпусков outlook.com и office.com, а также бета-канал сборки Outlook для windows desktop. Параметры распространения и процессы для приложений Teams с поддержкой Microsoft 365 совпадают с вариантами распространения для традиционных приложений Teams.
+Microsoft Teams поддерживает приложения Teams с поддержкой Microsoft 365 для рабочей среды. Вы можете распространять эти приложения для аудитории, использующей целевые выпуски (предварительная версия разработки) Outlook.com и Office.com, ** бета-версию канала Outlook для настольных компьютеров Windows и сборку Office Current Channel (предварительная версия для разработки) приложения Office для Android. **  Параметры распространения и процессы для приложений Teams с поддержкой Microsoft 365 совпадают с вариантами распространения для традиционных приложений Teams.
 
 После публикации приложение будет обнаруживаться как устанавливаемое приложение из магазинов приложений Outlook и Office в дополнение к магазину Teams. Ваше приложение использует разрешения, определенные в Teams в Outlook и Office. Администраторы Teams могут [управлять доступом к приложениям Teams в Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) для пользователей в своей организации.
 

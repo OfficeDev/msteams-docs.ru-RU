@@ -1,16 +1,16 @@
 ---
 title: Правила проверки в магазине Microsoft Teams
-description: В этой статье вы найдете правила, которым должны соответствовать все приложения, отправляемые в магазин Teams (AppSource).
+description: Узнайте, как повысить вероятность того, что приложение пройдет процесс отправки в Магазин Microsoft Teams. Ознакомьтесь с обязательными и предлагаемыми исправлениями. Изучите рекомендации по проверке.
 author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 65b59c42050d1523b13448ed1ed598914d64969c
-ms.sourcegitcommit: 377a4b712b50a211851aeecc1029414939945390
+ms.openlocfilehash: ed428ba714f5e6cf409f7ded25e8b0df22cd61a4
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68044702"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100303"
 ---
 # <a name="microsoft-teams-store-validation-guidelines"></a>Правила проверки в магазине Microsoft Teams
 

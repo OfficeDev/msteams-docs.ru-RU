@@ -1,16 +1,16 @@
 ---
 title: Включение предложения SaaS в приложение
-description: В этой статье вы узнаете, как монетизировать приложение Microsoft Teams с помощью модели ценообразования на основе подписки и включить предложение SaaS в приложение Microsoft Teams.
+description: Узнайте, как монетизировать приложение Microsoft Teams, продав планы подписки непосредственно из описания в Магазине Teams. Общие сведения о публикации приложения, пользователя, интерфейса покупки администратора.
 author: heath-hamilton
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: e9182df9f6c3c5d7f84654022e658ac6d670e50d
-ms.sourcegitcommit: 209b9942c02b5affdd995348902114d3b9805c61
-ms.translationtype: HT
+ms.openlocfilehash: 3fe41b635f9789e7f96eeb41f17526205924dadf
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67288187"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100639"
 ---
 # <a name="include-a-saas-offer-with-your-teams-app"></a>Включение предложения SaaS в приложение Teams
 

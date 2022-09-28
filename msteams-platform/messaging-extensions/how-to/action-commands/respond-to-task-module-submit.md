@@ -1,16 +1,16 @@
 ---
 title: Ответ на действие отправки модуля задач
 author: surbhigupta
-description: В этом модуле вы узнаете, как реагировать на действие отправки модуля задачи из команды действия расширения обмена сообщениями с упреждающим сообщением и т. д.
+description: Узнайте, как реагировать на действие отправки модуля задачи из команды действия расширения сообщения с упреждающим сообщением. Определите команды поиска и реагируйте на поисковые запросы.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: 8bb61750d9b8cc52008e30e3b37b901a018915e7
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 827c939080aa2eff182115966351356b0d71e3a9
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144028"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100485"
 ---
 # <a name="respond-to-the-task-module-submit-action"></a>Ответ на действие отправки модуля задач
 
@@ -204,7 +204,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 ## <a name="bot-response-with-adaptive-card"></a>Ответ бота с адаптивной карточкой
 
 > [!NOTE]
-> Предпосылкой для получения ответа бота с адаптивной карточкой является добавление объекта `bot` в манифест приложения и определение требуемой области действия для бота. Используйте тот же идентификатор, что и расширение сообщения для вашего бота.
+> The prerequisite to get the bot response with an Adaptive card is that you must add the `bot` object to your app manifest, and define the required scope for the bot. Use the same ID as your message extension for your bot.
 
 Вы также можете ответить на `submitAction`, вставив сообщение с адаптивной карточкой в канал с помощью бота. Пользователь может просмотреть сообщение перед его отправкой. Это удобно в сценариях, где вы собираете сведения от пользователей перед созданием ответа адаптивной карточки или обновляете карточку после того, как кто-то с ней взаимодействует.
 
@@ -595,7 +595,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 |`itemId`|Целое число|Описывает идентификацию элемента. Его значение должно быть равно `0`.|
 |`mentionType`|String|Описывает упоминание пользователя.|
 |`mri`|String|Идентификатор ресурса сообщения (MRI) пользователя, от имени которого отправляется сообщение. Имя отправителя сообщения будет отображаться как "\<user\> через \<bot name\>".|
-|`displayName`|String|Имя человека. Используется как запасной вариант в случае, если разрешение имени недоступно.|
+|`displayName`|String|Name of the person. Used as fallback in case name resolution is unavailable.|
   
 ## <a name="code-sample"></a>Пример кода
 

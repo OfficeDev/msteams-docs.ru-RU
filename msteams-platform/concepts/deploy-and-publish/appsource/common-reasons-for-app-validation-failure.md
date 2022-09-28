@@ -1,16 +1,16 @@
 ---
 title: Распространенные причины неудачи при проверке приложения
-description: Узнайте, каковы наиболее распространенные причины того, что приложение не проходит проверку, и как повысить вероятность благополучного прохождения проверки при отправке приложения в магазин Teams.
+description: Узнайте о наиболее распространенных причинах сбоя проверки приложения. Неработающие ссылки, ошибки в описании, недопустимые ссылки политики, нарушение допустимых правил домена, недопустимые ссылки на поддержку и т. д.
 ms.topic: overview
 author: v-ypalikila
 ms.author: v-ypalikila
 ms.localizationpriority: high
-ms.openlocfilehash: b8d0b0eb44a3071a6831500cfae41952e520399e
-ms.sourcegitcommit: 6d87e131eeae6846cadecf6ba775cecd010b4ffc
-ms.translationtype: HT
+ms.openlocfilehash: 1743bfc861afbbad851d2bfa6ff4236dca680ecf
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65132804"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100912"
 ---
 # <a name="common-reasons-for-app-validation-failure"></a>Распространенные причины неудачи при проверке приложения
 

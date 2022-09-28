@@ -1,16 +1,16 @@
 ---
 title: Формат сообщений бота
 author: surbhigupta
-description: В этом модуле вы узнаете, как добавить форматирование и стили в сообщения бота, такие как зачеркивание, упорядоченный и неупорядоченный список, гиперссылка, ссылка на изображения и т. д.
+description: Узнайте, как форматировать и стиль сообщений бота, таких как зачеркивание, упорядоченный и неупорядоченный список, гиперссылка или ссылка на изображение. Общие сведения о поддержке на разных платформах.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: anclear
-ms.openlocfilehash: 63c201e2126181793ce09a962b5352fb3418cff2
-ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.openlocfilehash: 4e3b777ba5e94c8bac541d0178122f16f218eba0
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67363496"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100184"
 ---
 # <a name="format-your-bot-messages"></a>Формат сообщений бота
 

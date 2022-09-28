@@ -1,16 +1,16 @@
 ---
 title: Подготовка к отправке в магазин
-description: Узнайте о последних действиях перед отправкой приложения Microsoft Teams для выставления в магазине. Узнайте, как проверить пакет приложения и т. д.
+description: Узнайте о последних действиях перед отправкой приложения Microsoft Teams для выставления в магазине. Узнайте, как проверить пакет приложения. Узнайте, как обновить идентификатор команды Apple App Store Connect в Центре партнеров.
 ms.topic: how-to
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 9413469579d4d010c76ecfd42a2eb66936c80a0c
-ms.sourcegitcommit: 3baca27a93e5a68eaaa52810700076f08f4c88a8
+ms.openlocfilehash: 373fee0b0c0b132357596e495014dc4535205b64
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67605771"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100443"
 ---
 # <a name="prepare-your-teams-store-submission"></a>Подготовка к отправке в магазин Teams
 
@@ -33,7 +33,7 @@ ms.locfileid: "67605771"
 1. Перейдите в [средство проверки приложений Microsoft Teams](https://dev.teams.microsoft.com/appvalidation.html). (Примечание. Средство также доступно на [портале разработчика для Teams](~/concepts/build-and-test/teams-developer-portal.md)
 1. Отправьте пакет приложения, чтобы запустить для него автоматизированные тесты.
 1. Перейдите к **Предварительному контрольному списку** и просмотрите тестовые сценарии, которые трудно автоматизировать.
-1. [Устраните проблемы конфигурации](~/resources/schema/manifest-schema.md) или проблемы с приложением в целом. Эти проблемы возникают, если автоматизированные тесты сообщают об ошибке или если выполнены не все критерии в списке.
+1. [Fix issues with your configurations](~/resources/schema/manifest-schema.md) or app in general. These issues occur if the automated tests give you errors or you haven't met all the criteria in the checklist.
 
 ## <a name="compile-testing-instructions"></a>Составьте инструкции по тестированию
 
@@ -97,7 +97,7 @@ ms.locfileid: "67605771"
 
 #### <a name="short-description"></a>Краткое описание
 
-Краткое описание приложения, которое должно быть оригинальным, привлекательным и специально направленным на целевую аудиторию. Краткое описание должно состоять из одного предложения.
+A concise summary of your app that should be original, engaging, and directed at your target audience. Keep the short description to one sentence.
 
 :::row:::
 
@@ -167,7 +167,7 @@ ms.locfileid: "67605771"
 
 ### <a name="create-a-video"></a>Создайте видео
 
-Видео может эффективнее всего объяснить, почему надо использовать ваше приложение. Видео должно отвечать на следующие вопросы.
+A video in your listing can be the most effective way to communicate why people should use your app. Address the following questions in a video:
 
 * Для кого предназначено приложение?
 * Какие проблемы оно помогает решить?
@@ -179,7 +179,7 @@ ms.locfileid: "67605771"
 #### <a name="best-practices-for-videos"></a>Рекомендации по созданию видео
 
 * Длина видео должна быть 60-90 секунд.
-* Старайтесь сделать видео хорошего качества. На странице в магазине пользователи увидят видео раньше, чем снимки экрана.
+* Aim for quality. In a listing, users will see your video before screenshots.
 * Сообщите о ценности продукта в форме повествования.
 * Продемонстрируйте работу продукта.
 

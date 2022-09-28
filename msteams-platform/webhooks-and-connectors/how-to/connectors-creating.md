@@ -1,20 +1,20 @@
 ---
 title: Создание соединителей Office 365
 author: laujan
-description: В этом модуле вы узнаете, как приступить к работе с соединителями Office 365 и добавить соединитель в приложение Teams в Microsoft Teams.
+description: Начало работы с Office 365 соединителями. Добавьте соединитель в приложение Teams в Microsoft Teams. Sample(.NET, Node.js) Office 365 connector, создающего уведомления в канал Teams.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/16/2021
-ms.openlocfilehash: bb4bd02553ebb49752fa6450cd0f94f41dcc7ac8
-ms.sourcegitcommit: 217025a61ed9c3b76b507fe95563142abc6d0318
+ms.openlocfilehash: 977bcac5daa3185177fbc9a3b441c245541914df
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67363488"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100730"
 ---
 # <a name="create-office-365-connectors"></a>Создание соединителей Office 365
 
-С помощью приложений Microsoft Teams вы можете добавить существующий соединитель Office 365 или создать новый в Teams. Дополнительные сведения см. в разделе [Создание собственного соединителя](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector).
+With Microsoft Teams apps, you can add your existing Office 365 Connector or build a new one within Teams. For more information, see [build your own connector](/outlook/actionable-messages/connectors-dev-dashboard#build-your-own-connector).
 
 В следующем видео показано, как создать соединители Office 365.
 <br>
@@ -62,7 +62,7 @@ ms.locfileid: "67363488"
     > Необходимо вызвать `microsoftTeams.pages.config.setValidityState(true)` в ответ на выбор пользователя или обновление поля.
 
 1. Зарегистрируйте обработчик событий `microsoftTeams.pages.config.registerOnSaveHandler()`, который будет вызван, когда пользователь выбирает **Сохранить**.
-1. Вызовите `microsoftTeams.pages.config.setConfig()`, чтобы сохранить настройки коннектора. Сохраненные настройки также отображаются в диалоговом окне конфигурации, если пользователь пытается обновить существующую конфигурацию вашего соединителя.
+1. Call `microsoftTeams.pages.config.setConfig()` to save the connector settings. The saved settings are also shown in the configuration dialog if the user tries to update an existing configuration for your connector.
 1. Вызовите `microsoftTeams.pages.getConfig()` для получения свойств веб-перехватчика, включая URL-адрес.
 
     > [!NOTE]
@@ -147,9 +147,9 @@ ms.locfileid: "67363488"
 | `entityId`       | Идентификатор сущности, который задается кодом при вызове `setConfig()`. |
 | `configName`  | Имя конфигурации, заданное кодом при вызове `setConfig()`. |
 | `contentUrl` | URL-адрес страницы конфигурации, заданный кодом при вызове `setConfig()`. |
-| `webhookUrl` | URL-адрес веб-перехватчика, созданный для соединителя. Используйте URL-адрес веб-перехватчика для POST структурированного JSON для отправки карточек на канал. `webhookUrl` возвращается только тогда, когда приложение успешно возвращает данные. |
+| `webhookUrl` | The webhook URL created for the connector. Use the webhook URL to POST structured JSON to send cards to the channel. The `webhookUrl` is returned only when the application returns data successfully. |
 | `appType` | Возвращаемые значения могут быть `mail`или `groups``teams` соответствующими Office 365 почты, Office 365 групп или Teams соответственно. |
-| `userObjectId` | Уникальный идентификатор, соответствующий пользователю Office 365, который инициировал настройку соединителя. Он должен быть безопасен. Это значение можно использовать для связывания пользователя в Office 365, который настроил конфигурацию в вашей службе. |
+| `userObjectId` | The unique ID corresponding to the Office 365 user who initiated the set up of the connector. It must be secured. This value can be used to associate the user in Office 365, who has set up the configuration in your service. |
 
 #### <a name="handle-edits"></a>Обработка изменений
 
@@ -219,7 +219,7 @@ ms.locfileid: "67363488"
 
 ## <a name="test-your-connector"></a>Проверка соединители
 
-Чтобы протестировать соединитель, загрузите его в команду с любым другим приложением. Вы можете создать ZIP-пакет, используя файл манифеста из двух файлов значков и соединителей на панели инструментов разработчика, измененный, как указано в разделе [Включение соединителя в манифест](#include-the-connector-in-your-manifest).
+To test your connector, upload it to a team with any other app. You can create a .zip package using the manifest file from the two icon files and connectors Developer Dashboard, modified as directed in [Include the connector in your Manifest](#include-the-connector-in-your-manifest).
 
 После отправки приложения откройте список соединителей с любого канала. Прокрутите вниз, чтобы найти свое приложение в разделе **Отправленные**.
 

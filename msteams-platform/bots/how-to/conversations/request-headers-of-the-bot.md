@@ -1,14 +1,14 @@
 ---
 title: Отправка идентификатора клиента и идентификатора беседы в заголовки запросов бота
-description: В этом модуле вы узнаете, как отправить идентификатор клиента и идентификатор беседы в заголовки запросов бота в Teams.
+description: Узнайте, как маршрутизировать трафик бота без распаковки всех полезных данных с помощью идентификатора клиента и идентификатора беседы, присутствующих в заголовках запросов бота в Teams.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: b292db11ced764bbe235bee0f6f8f4829ba7b6c9
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 3132d91d4b3d0b290ee8e1fb35ebeea076217fe8
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503776"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100149"
 ---
 # <a name="request-headers-of-the-bot"></a>Заголовки запросов бота
 

@@ -1,15 +1,15 @@
 ---
 title: Справочник по схеме манифеста общедоступной предварительной версии для разработчиков
-description: Изучите пример файла манифеста и описание всех его компонентов, которые поддерживаются в Microsoft Teams.
+description: Узнайте, как включить предварительную версию для разработчиков. Пример схемы манифеста общедоступной предварительной версии разработчика для Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 11/15/2021
-ms.openlocfilehash: c019b686d27df4927ca721f36bacb5018c5ad596
-ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
+ms.openlocfilehash: 5122ab4c0d2a3668c8ca7568a3ce65ee69b980a8
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67990926"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100296"
 ---
 # <a name="public-developer-preview-manifest-schema-for-teams"></a>Схема манифеста общедоступной предварительной версии для разработчиков для Teams
 

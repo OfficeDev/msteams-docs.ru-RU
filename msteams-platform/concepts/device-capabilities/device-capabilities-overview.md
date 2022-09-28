@@ -1,16 +1,16 @@
 ---
 title: Возможности устройства — обзор
 author: Rajeshwari-v
-description: Узнайте, как интегрировать собственные возможности устройства, такие как камера, изображение, мультимедиа, микрофон, QR-код и другие возможности с Microsoft Teams приложения.
+description: Узнайте, как интегрировать собственные возможности устройства, такие как расположение и мультимедиа (камера, микрофон, галерея, QR или сканер штрихкодов) с приложением Microsoft Teams.
 ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: overview
-ms.openlocfilehash: 26ca39aea4d759edbce62f43e9c832632d267cf6
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 04ae1a0b21c12ef7dda5d4bf8dfa799ac5726d15
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189455"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100569"
 ---
 # <a name="device-capabilities"></a>Возможности устройств
 
@@ -50,4 +50,4 @@ Microsoft Teams постоянно совершенствует возможно
 
 | Название примера           | Описание | Node.js    |
 |:---------------------|:--------------|:---------|
-|Разрешения для устройств | В этой статье описывается, как Teams пример приложения табуляции для разрешений устройства. |[View](<https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-device-permissions/nodejs>)|
+|Разрешения для устройств | В этой статье описывается, как продемонстрировать пример приложения на вкладке Teams для разрешений устройства. |[Просмотр](<https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-device-permissions/nodejs>)|

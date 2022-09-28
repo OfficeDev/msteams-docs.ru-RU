@@ -1,16 +1,16 @@
 ---
 title: Обслуживание и поддержка вашего опубликованного приложения
-description: Узнайте, как поддерживать опубликованное приложение Microsoft Teams и что следует продумать, когда ваш магазин будет указан в Teams Store и AppSource.
+description: Узнайте, как поддерживать опубликованное приложение Microsoft Teams и что делать после того, как ваш магазин будет указан в Магазине Teams и AppSource. Анализ использования приложения, публикация обновлений, повышение уровня приложения, завершение сертификации Microsoft 365.
 ms.topic: conceptual
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 3e73725bcfd1f51cc2f1ab82ba7437b205028c09
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
-ms.translationtype: HT
+ms.openlocfilehash: f05613a54ea87660611bb4a4d66d2f88f9ee3b46
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484847"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100331"
 ---
 # <a name="maintain-your-published-microsoft-teams-app"></a>Поддержка опубликованного приложения Microsoft Teams
 
@@ -35,7 +35,7 @@ ms.locfileid: "66484847"
 
 * Не меняйте ID приложения.
 * Увеличьте номер версии приложения.
-* Чтобы изменить приложение, перейдите в Центр партнеров, но не выбирайте **Добавить новое приложение**. Вместо этого перейдите нас страницу приложения.
+* In Partner Center, don't select **Add a new app** to do the update. Go to your app's page instead.
 
 ### <a name="app-updates-requiring-user-consent"></a>Обновления приложений, требующие согласия пользователя
 
@@ -50,7 +50,7 @@ ms.locfileid: "66484847"
 * Добавление личной вкладки.
 * Создание канала и вкладки группы.
 * Добавление соединителя.
-* Изменения конфигурации, связанные с регистрацией приложения Microsoft Azure Active Directory (Azure AD). Подробнее см. в [`webApplicationInfo`](~/resources/schema/manifest-schema.md#webapplicationinfo).
+* Modify configurations related to your Microsoft Azure Active Directory (Azure AD) app registration. For more information, see [`webApplicationInfo`](~/resources/schema/manifest-schema.md#webapplicationinfo).
 
 ## <a name="fix-issues-with-your-published-app"></a>Устранение проблем опубликованного приложения
 

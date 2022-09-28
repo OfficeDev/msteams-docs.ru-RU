@@ -1,16 +1,16 @@
 ---
 title: Расширения для сообщений
 author: surbhigupta
-description: В этом модуле вы узнаете о расширениях обмена сообщениями и сценариях, в которых расширения сообщений используются на платформе Microsoft Teams.
+description: Узнайте, как используются расширения сообщений, их типы и сценарии, в которых они используются на платформе Microsoft Teams. Примеры действий и расширения сообщений на основе поиска.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: anclear
-ms.openlocfilehash: c93e55bbbbf9bc135afeef3c9b5787cbefe3ce80
-ms.sourcegitcommit: 19f3e4e9088d0a07c9b567e76640d498b9d1981f
+ms.openlocfilehash: 766a135a55b3894c985a0701bb883d45519b496b
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67786957"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100275"
 ---
 # <a name="message-extensions"></a>Расширения для сообщений
 

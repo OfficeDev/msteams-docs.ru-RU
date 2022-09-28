@@ -5,12 +5,12 @@ ms.author: surbhigupta
 description: В этом модуле вы узнаете о пакете SDK для клиента Microsoft Teams JavaScript, помогающем в создании приложений Teams, размещенных в <iframe> в Teams, Office и Outlook.
 ms.localizationpriority: high
 ms.topic: conceptual
-ms.openlocfilehash: a3d1785dc96284e858d14bbef8b8acc0d466b1bc
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: ca5a02a067c44aaeab52bdde3c7be3a45c6797df
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67781068"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100156"
 ---
 # <a name="teams-javascript-client-sdk"></a>Клиентский SDK JavaScript для Teams
 
@@ -38,10 +38,10 @@ TeamsJS версии 2.0 предоставляет возможность за�
 
 |Возможность | Поддержка ведущим приложением | Примечания |
 |-----------|--------------|-------|
-| приложение | Teams, Outlook, Office | Пространство имен, представляющее инициализацию и жизненный цикл приложения. |
+| приложение | Teams, Outlook, Office, приложение Office для Android | Пространство имен, представляющее инициализацию и жизненный цикл приложения. |
 | appInitialization| | Устарело. Заменено пространством имен `app`. |
 | appInstallDialog | Teams||
-| authentication | Teams, Outlook, Office | |
+| authentication | Teams, Outlook, Office, приложение Office для Android | |
 | calendar | Outlook ||
 | call | Teams||
 | чат |Teams||
@@ -49,7 +49,7 @@ TeamsJS версии 2.0 предоставляет возможность за�
 | расположение; |Teams| См. документацию по теме [Разрешения приложения](#app-permissions).|
 | почта; | Outlook (только классические приложения Windows)||
 | мультимедиа |Teams| См. документацию по теме [Разрешения приложения](#app-permissions).|
-| pages | Teams, Outlook, Office | Пространство имен, представляющее навигацию по страницам. См. документацию по теме [Глубокая компоновка](#deep-linking). |
+| pages | Teams, Outlook, Office, приложение Office для Android | Пространство имен, представляющее навигацию по страницам. См. документацию по теме [Глубокая компоновка](#deep-linking). |
 | people |Teams||
 | settings || Устарело. Заменено на `pages.config`.|
 | предоставляет общий доступ к | Teams||
@@ -143,7 +143,7 @@ TeamsJS версии 2.0 предоставляет возможность за�
 
 ### <a name="callbacks-converted-to-promises"></a>Вызовы, преобразованные в promise
 
-API-интерфейсы Teams, которые ранее принимали параметр обратного вызова, теперь возвращают объект JavaScript [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Это относится к следующим API:
+API-интерфейсы Teams, которые ранее принимали параметр обратного вызова, были обновлены для возврата объекта JavaScript [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). К ним относятся следующие API:
 
 ```js
 app.getContext, app.initialize, appInstallDialog.openAppInstallDialog, app.openLink, authentication.authenticate, authentication.getAuthToken, authentication.getUser, authentication.registerAuthenticationHandlers was removed to support using Promises, calendar.openCalendarItem, calendar.composeMeeting, call.startCall, chat.getChatMembers, conversations.openConversation, location.getLocation, location.showLocation, mail.openMailItem, mail.composeMail, pages.backStack.navigateBack, pages.navigateCrossDomain, pages.navigateToTab, pages.tabs.getMruTabInstances, pages.tabs.getTabInstances, pages.getConfig, pages.config.setConfig, pages.backStack.navigateBack, people.selectPeople, teams.fullTrust.getConfigSetting, teams.fullTrust.joinedTeams.getUserJoinedTeams
@@ -232,7 +232,7 @@ async function example() {
 
 Имя узла, на котором работает ваше приложение, отображается как свойство *hostName* в интерфейсе Context (`app.Context.app.host.name`), которое можно запросить во время выполнения, вызвав `getContext`. Оно также доступно в качестве `{hostName}` [значения заполнителя URL](./access-teams-context.md#get-context-by-inserting-url-placeholder-values). Лучшей практикой является экономное использование механизма *hostName*:
 
-* **Не** предполагайте, что определенные функции доступны или недоступны на узле, на основе значения свойства *hostName*. Вместо этого явно проверяйте поддержку возможности (`isSupported`).
+* **Don't** assume certain functionality is or isn't available in a host based on the *hostName* property value. Instead, check for capability support (`isSupported`).
 * **Не** используйте *hostName* для блокировки вызовов API. Вместо этого проверьте наличие поддержки возможностей (`isSupported`).
 * **Используйте** *hostName*, чтобы отличать тему вашего приложения в зависимости от узла, на котором оно работает. Например, вы можете использовать фиолетовый цвет Microsoft Teams в качестве основного цвета акцента при работе в Teams и синий цвет Outlook при работе в Outlook.
 * **Используйте** *hostName*, чтобы различать сообщения, отображаемые пользователю, в зависимости от того, на каком хосте он работает. Например, покажите *Управление задачами в Office* при работе в Office в Интернете и *Управление задачами в Teams* при работе в Teams.
@@ -446,7 +446,7 @@ async function example() {
 # <a name="teams-toolkit"></a>[Набор средств Teams](#tab/manifest-teams-toolkit)
 
 1. Откройте *Палитру команд*: `Ctrl+Shift+P`
-1. Запустите **Teams: обновите манифест Teams для поддержки команды приложений** Outlook и Office и выберите файл манифеста приложения. Изменения будут проведены на месте.
+1. Run **Teams: Upgrade Teams manifest to support Outlook and Office apps** command and select your app manifest file. Changes will be made in place.
 
 # <a name="manual-steps"></a>[Выполнение вручную](#tab/manifest-manual)
 

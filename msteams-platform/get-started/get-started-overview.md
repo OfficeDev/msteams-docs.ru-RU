@@ -1,14 +1,14 @@
 ---
 title: Начало работы — обзор
-description: В этом модуле вы узнаете, как начать работу с документацией для разработчиков Microsoft Teams, которая познакомит вас с общими инструментами, основными понятиями и расширенными функциями.
+description: Приступите к работе. Создайте свое первое приложение Microsoft Teams на основе языка (Node.js,C#, Java,Python) и среды разработки, изучите возможности приложения и пакеты SDK.
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 0ad8e4f2b1251bc6a66fdff8335dc654ac346ce2
-ms.sourcegitcommit: 69a45722c5c09477bbff3ba1520e6c81d2d2d997
-ms.translationtype: HT
+ms.openlocfilehash: 4ad64240c97ab11da6a999f87621fdff6d70ebe2
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67312284"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100436"
 ---
 # <a name="get-started"></a>Начало работы
 

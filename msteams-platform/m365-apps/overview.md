@@ -1,16 +1,16 @@
 ---
 title: Расширение возможностей приложений Teams в Microsoft 365 (предварительная версия)
-description: Из этой статьи вы узнаете, как создавать, обновлять и расширять возможности приложений Teams, а также как создавать приложения, используемые в других областях с высоким уровнем использования в Microsoft 365.
+description: Узнайте, как создавать, обновлять и расширять приложение Teams в Microsoft M365 (Teams, Outlook и Office в качестве узлов приложений). Отправка Microsoft AppSource.
 ms.date: 05/24/2022
 ms.topic: Conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: fec2a91d250044e638783ecb25175771a60f3cdd
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 835af580a23a5fa4bcf99bf5fd2f091d076df489
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67781075"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100623"
 ---
 # <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
@@ -22,7 +22,7 @@ ms.locfileid: "67781075"
 
 |          | Элемент манифеста приложения | Поддержка Teams |Поддержка Outlook* | Поддержка Office* | Примечания |
 |--|--|--|--|--|--|
-| [**Вкладки**](../tabs/what-are-tabs.md) (личная область)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Веб (целевой выпуск), рабочий стол (бета-канал)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
+| [**Вкладки**](../tabs/what-are-tabs.md) (личная область)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Интернет (целевой выпуск), рабочий стол (бета-канал), мобильные устройства (Android)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
 | [**Расширения сообщений**](../messaging-extensions/what-are-messaging-extensions.md) (на основе поиска)| `composeExtensions` | Web, Desktop, Mobile| Веб (целевой выпуск), рабочий стол (бета-канал)| - |На основе действий для Microsoft 365 пока не поддерживается. См. [примечания](extend-m365-teams-message-extension.md#preview-your-message-extension-in-outlook). |
 | [**Надстройки Office**](/office/dev/add-ins/develop/json-manifest-overview) (предварительная версия) | `extensions` | - | Интернет, рабочий стол | - | Доступно только в [версии манифеста devPreview](../resources/schema/manifest-schema-dev-preview.md) . См. [примечания](#office-add-ins-preview).|
 
@@ -38,6 +38,10 @@ ms.locfileid: "67781075"
 Свяжитесь с пользователями прямо в контексте их работы, расширив веб-приложение как приложение личной вкладки Teams, которое также работает как в Outlook, так и в Office.
 
 :::image type="content" source="images/outlook-office-teams-personal-tab.png" alt-text="Снимок экрана— пример, на котором показана вкладка &quot;Личные&quot;, работающее в Outlook, Office и Teams.":::
+
+На мобильных устройствах можно протестировать и отладить личную вкладку Teams, запущенную в приложении Office для Android.
+
+:::image type="content" source="images/office-mobile-personal-tab.png" alt-text="На снимке экрана показан пример, на котором показана личная вкладка, запущенная в Office.":::
 
 Вы также можете расширить расширения сообщений Teams на основе поиска на Outlook в Интернете и классическом компьютере Windows, позволяя клиентам выполнять поиск и делиться результатами через область создания сообщений Outlook, а также клиенты Microsoft Teams.
 

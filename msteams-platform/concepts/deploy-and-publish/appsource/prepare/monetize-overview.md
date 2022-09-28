@@ -1,21 +1,21 @@
 ---
 title: Монетизация приложений — обзор
-description: Узнайте, как монетизировать приложение Microsoft Teams, в том числе как выбрать модель ценообразования Saas.
+description: Монетизация приложения. Поддерживаемые модели ценообразования — это бесплатные пробные версии, покупки в приложении и включение предложения SaaS в приложение.
 author: v-npaladugu
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 9b684fccb108b733a63ae6b61e002bc24bde32ef
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
-ms.translationtype: HT
+ms.openlocfilehash: 67dfa765d27327cee15977d17dfecf955cae8bca
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485512"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100583"
 ---
 # <a name="monetize-your-app"></a>Монетизация приложения
 
 Используя магазин приложений Microsoft Teams, вы сможете монетизировать приложения и находить клиентов, привлекая пользователей. В этом разделе показано, как встраивать эти функции в приложение.
-
+ 
 ## <a name="choose-a-pricing-model"></a>Выберите модель ценообразования
 
 :::row:::

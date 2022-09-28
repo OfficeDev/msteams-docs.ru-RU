@@ -1,16 +1,16 @@
 ---
 title: Настройте среду разработки для расширения приложений Teams в Microsoft 365.
-description: В этой статье вы узнаете о предварительных условиях, необходимых для запуска ознакомительных версий сборок для расширения ваших приложений Teams в Microsoft 365.
+description: Требования к настройке среды разработки для расширения приложений Teams в Microsoft 365. Сведения о конфигурациях, необходимых для запуска сборок приложений Microsoft Teams и Microsoft Office.
 ms.date: 05/24/2022
 ms.custom: m365apps
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: 965c9d8b7b05141aa6add18bba51512bd9e0a213
-ms.sourcegitcommit: b13361f342c76d637321df21d2ef900471bf0eef
+ms.openlocfilehash: 64caf4784286cd3eaf2c32a28a3fe655ba88bcc7
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2022
-ms.locfileid: "67457293"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100956"
 ---
 # <a name="set-up-your-dev-environment-for-extending-teams-apps-across-microsoft-365"></a>Настройте среду разработки для расширения приложений Teams в Microsoft 365.
 
@@ -70,6 +70,8 @@ ms.locfileid: "67457293"
 
 ## <a name="install-office-apps-in-your-test-environment"></a>Установите приложения Office в тестовой среде.
 
+### <a name="desktop"></a>Версия для настольного компьютера
+
 Вы можете просмотреть приложения Teams, работающие в Outlook на рабочем столе Windows, с помощью последней сборки *Бета-канал*. Проверьте, нужно ли [Изменить канал обновления приложений Microsoft 365](/deployoffice/change-update-channels?WT.mc_id=M365-MVP-5002016) для вашего тестового клиента, чтобы установить сборку бета-канала Office 365.
 
 Чтобы установить приложения Office 365 Бета-канал в тестовой среде:
@@ -90,6 +92,27 @@ ms.locfileid: "67457293"
 
     Если этот элемент отсутствует в списке, установите [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) в тестовую среду.
 
+### <a name="mobile"></a>Мобильная версия
+
+Вы можете просмотреть личные вкладки Teams, работающие в приложении Office для Android, присоединившись к бета-версии программы.
+
+Чтобы установить последнюю бета-версию приложения Office на физическое устройство Android или эмулятор Android, выполните следующие действия.
+
+1. Убедитесь, что вы используете устройство [Android, поддерживаемое Google Play](https://support.google.com/googleplay/answer/1727131).
+1. Запустите **Магазин Play на** устройстве Android.
+1. Найдите office и выберите **Microsoft Office: edit & Share**.
+1. Нажмите **кнопку "Установить** ".
+
+    :::image type="content" source="images/office-android-install.png" alt-text="Снимок экрана: Microsoft Office: изменение & Share в Google Play Store":::
+
+1. Выберите **"Присоединиться"** **в разделе "Присоединение к бета-версии** " после завершения установки.
+
+    :::image type="content" source="images/office-android-join-beta.png" alt-text="Снимок экрана: экран присоединения к бета-версии":::
+
+1. Запустите приложение Office и выполните вход с использованием учетных данных тестового клиента.
+1. Откройте профиль **> параметров** и прокрутите меню до нижней части меню.
+2. Убедитесь, что вы используете приложение Office версии 16.0.15726.20000 или более поздней для Android.
+
 ## <a name="switch-to-the-developer-preview-version-of-teams"></a>Переключитесь на предварительную версию Teams для разработчиков.
 
 Убедитесь, что вы переключились на [Общедоступную предварительную версию для разработчиков](../resources/dev-preview/developer-preview-intro.md) из клиента Microsoft Teams.
@@ -104,7 +127,7 @@ ms.locfileid: "67457293"
 
 При желании вы можете использовать [Visual Studio Code](https://code.visualstudio.com/) для расширения приложений Teams в Office и Outlook.
 
-Расширение [Teams Toolkit для Visual Studio Code](https://aka.ms/teams-toolkit) (`v2.10.0`или более поздней версии) предоставляет команды, которые могут помочь изменить существующий код Teams, чтобы он был совместим с Outlook и Office. Дополнительные сведения см. в разделе [Включение личной вкладки Teams для Office и Outlook](extend-m365-teams-personal-tab.md).
+The extension [Teams Toolkit for Visual Studio Code](https://aka.ms/teams-toolkit) (`v2.10.0` or later) provides commands that can help modify your existing Teams code to be compatible with Outlook and Office. For more information, see [enable Teams personal tab for Office and Outlook](extend-m365-teams-personal-tab.md).
 
 ## <a name="next-step"></a>Следующий этап
 

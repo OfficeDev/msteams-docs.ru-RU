@@ -1,16 +1,15 @@
 ---
 title: Вопросы для помощи в планировании разработки приложений Teams
 author: heath-hamilton
-description: Узнайте, как спланировать приложение с помощью контрольного списка, чтобы убедиться, что ваш план охватывает важные сведения о разработке приложений.
-ms.topic: conceptual
+description: Узнайте, как спланировать приложение с помощью контрольного списка, чтобы убедиться, что ваш план охватывает важные сведения о разработке приложений. Планирование жизненного цикла приложения. Запланируйте размещение приложения Teams.
 ms.localizationpriority: high
 ms.author: surbhigupta
-ms.openlocfilehash: dd33aa3dbef8579f06d951138739301f5886b70e
-ms.sourcegitcommit: 2d2a08f671c3d19381403ba1af5dff1f06bb4dd6
+ms.openlocfilehash: 932e8ea564a6cc47bb2b8dbe4e01256d0688cefa
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "67338769"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100716"
 ---
 # <a name="teams-app-planning-checklist"></a>Контрольный список планирования приложений Teams
 
@@ -106,9 +105,9 @@ ms.locfileid: "67338769"
 
 | # | Фактор |
 | --- | --- |
-| 1 | Насколько релевантными и полезными для большинства участников команды являются сведения, представляемые приложением на вкладках или с помощью бота? Например, приложение Scrum. |
+| 1 | Is the information presented by the app, either in tab or through a bot, relevant and useful for most of the members in a Team? For example, Scrum app. |
 | 2 | Может ли контекст приложения изменяться в зависимости от команды, к которой добавлено приложение? Например, задачи планировщика различаются в разных командах. |
-| 3 | Возможно ли, что все участники персоны, которым требуется совместно работать, входят в состав одной и той же команды? Например, агенты, работающие над запросом. |
+| 3 | Is it possible that all members in a persona who need to collaborate are a part of a single team? For example, agents working on a ticket. |
 
 </details>
 <br>

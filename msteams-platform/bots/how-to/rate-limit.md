@@ -1,14 +1,13 @@
 ---
 title: Ограничение скорости для ботов
-description: Сведения об обработке ограничения скорости для ботов с ограничением для каждого бота на поток и ограничением для всех ботов с примерами кода
-ms.topic: conceptual
+description: Узнайте, как оптимизировать бот с ограничением скорости. Обнаружение временных исключений для каждого потока бота. Вы также можете выполнить экспоненциальную задержку.
 ms.localizationpriority: medium
-ms.openlocfilehash: 38a8832c9a9a2c1368e36606b4b8c6af80341724
-ms.sourcegitcommit: ffc57e128f0ae21ad2144ced93db7c78a5ae25c4
+ms.openlocfilehash: 487f251be40894464e55b891a7386cd8a04abe25
+ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66503867"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68100429"
 ---
 # <a name="optimize-your-bot-with-rate-limiting-in-teams"></a>Оптимизация бота с ограничением скорости в Teams
 
