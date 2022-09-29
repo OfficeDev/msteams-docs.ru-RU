@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 5e24b4c6209d2e0c719a6613272876206dc0e173
-ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
+ms.openlocfilehash: 498a003e8fdc58d1eb0d9db4abb7b4b151143a19
+ms.sourcegitcommit: 275bb05daee25ae710238cbd49f588e6da1ffdf1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450403"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68158683"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -130,7 +130,8 @@ ms.locfileid: "67450403"
     * **Требуется ли вам поддержка единого входа Microsoft Azure Active Directory (Azure AD) для вкладки?**
 
       Выберите **нет**, чтобы включить поддержку единого входа Azure AD для вкладки. Значение по умолчанию — "да", введите **n**.
-
+    > [!NOTE]
+    > На вкладке домашняя страница вкладки отображается только в том случае, если пользователь нажмет кнопку "Назад" (или переместится с вкладки) и вернитесь на домашнюю страницу. По умолчанию вкладка не поддерживает и не сохраняет предыдущее состояние.
     </details>
 
 ### <a name="add-a-content-page-to-the-personal-tab"></a>Добавьте страницу содержимое на личную вкладку
