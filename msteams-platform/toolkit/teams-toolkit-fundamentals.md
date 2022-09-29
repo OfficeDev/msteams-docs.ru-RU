@@ -7,12 +7,12 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/24/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: bdcf92b52956eee6db21eb03d115a494c0f063e9
-ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
+ms.openlocfilehash: ca65a34796886ff8eb6a0c13aaa11af319739dc8
+ms.sourcegitcommit: 1db4429f34da213aa749e483a4ceb83c14b07de3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "67806775"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68158265"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
 
@@ -50,7 +50,7 @@ ms.locfileid: "67806775"
 | Процесс | Описание |
 | ---- | ---- |
 | Установка Набора средств Teams | Набор средств Teams можно установить двумя способами: <br> — Использование Visual Studio Code <br> — Использование Visual Studio Code Marketplace|
-| Поддержка сред сборки | У вас есть два разных типа среды: <br> — Javascript или Typescript <br> — SPFx |
+| Поддержка сред сборки | У вас есть два разных типа среды: <br> — Javascript или Typescript <br> -Spfx |
 | Поддержка типов приложений и функций Azure | Существует два разных типа приложений: <br> — Приложение на основе возможностей, например tab, bot, message extension  <br> — Приложение Teams на основе сценариев, например бот уведомлений, командный бот и личная вкладка с поддержкой единого входа |
 | Разработка приложения Teams | Он содержит: <br> — Добавление среды и управление ими <br> — Создание приложения с несколькими возможностями <br> — создание облачных ресурсов на основе возможностей; <br> — интеграция стороннего API <br> — Настройка файла манифеста <br> — Пакет SDK для TeamsFx |
 | Отладка приложения Teams | Он содержит: <br> — Локальная отладка приложения Teams <br> — Отладка фонового процесса|
@@ -59,7 +59,7 @@ ms.locfileid: "67806775"
 | Публикация приложения Microsoft Teams | Он содержит: <br> — Публикация приложения <br> — Управление утверждением администратора <br> — Публикация в хранилище <br> — Интеграция с порталом разработчика |
 
 ### <a name="entities-integrated-with-teams-toolkit"></a>Сущности, интегрированные с Набором средств Teams
-
+ 
 Набор средств Teams — это расширение в Visual Studio Code. Он интегрирован со следующими сущностями в Teams Toolkit.such as Azure AD и Microsoft 365, портал разработчика и Microsoft Graph. Все сущности интегрированы в Набор средств Teams и помогают пользователям создавать приложения.
 
 | Объекты | Описание |
