@@ -4,12 +4,12 @@ description: Узнайте о новых функциях разработчи�
 ms.topic: reference
 ms.localizationpriority: high
 zone_pivot_groups: What-new-features
-ms.openlocfilehash: f10194e224aee438472a4487ede3db49792bf77c
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: e54f37ae2c330275fb0dd51de34c2f8bcd721bba
+ms.sourcegitcommit: 600d3b13d47ca42ab5ba7abf18bccc7e912180e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100163"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68158829"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -31,6 +31,7 @@ ms.locfileid: "68100163"
 
 **Сентябрь 2022 г.**
 
+* ***29 сентября 2022*** г. Создайте прямую ссылку для совместного использования содержимого [на собраниях.](concepts/build-and-test/deep-links.md#generate-a-deep-link-to-share-content-to-stage-in-meetings)
 * ***16 сентября 2022*** г. Адаптивные карточки в расширениях сообщений на основе поиска [теперь поддерживают универсальные действия.](messaging-extensions/how-to/search-commands/universal-actions-for-search-based-message-extensions.md)
 * ***6 сентября 2022*** г.: представлены фрагменты кода для записи видео с помощью [камеры через `selectMedia` API.](concepts/device-capabilities/media-capabilities.md#code-snippets)
 
