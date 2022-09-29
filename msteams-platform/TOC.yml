@@ -649,6 +649,9 @@
         - name: Подготовка к отправке в магазин Teams
           href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
           displayName: 'Testing instructions, store listing'
+        - name: Обновление идентификатора команды App Store Connect в Центре партнеров
+          href: concepts/deploy-and-publish/appsource/prepare/update-apple-store-team-connect-id.md
+          displayName: Enable users to install your app on Teams iOS Platform.
         - name: Отправка приложения
           href: /office/dev/store/add-in-submission-guide?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
         - name: Устранение проблем при сбое отправки в магазин Teams

@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: В этой статье вы узнаете, как создавать прямые ссылки и переходить по ним в приложениях Microsoft Teams с вкладками.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: e41fd72f7560de856988f45e02b63444f58888a5
-ms.sourcegitcommit: 600d3b13d47ca42ab5ba7abf18bccc7e912180e4
+ms.openlocfilehash: b02a29b74204e9ef8f61633642bd42cd178c8350
+ms.sourcegitcommit: c74e1e12175969c75e112a580949f96d2610c24e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/29/2022
-ms.locfileid: "68158852"
+ms.locfileid: "68160722"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -388,7 +388,7 @@ groupId: "ae063b79-5315-4ddb-ba70-27328ba6c31e"
 Создайте прямую ссылку для приложения после того, как приложение появится в магазине Teams. Чтобы создать ссылку для запуска Teams, добавьте идентификатор приложения к следующему URL-адресу: `https://teams.microsoft.com/l/app/<your-app-id>`. Откроется диалоговое окно для установки или открытия приложения.
 
 > [!NOTE]
-> Если ваше приложение утверждено для мобильной платформы, вы можете создать прямую ссылку на приложение на мобильном устройстве. Идентификатор команды Apple App Store Connect требуется дополнительно для подробной ссылки на Teams-iOS. Дополнительные сведения см. в [статье об обновлении идентификатора команды Apple App Store Connect](../deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md#update-apple-app-store-connect-team-id-on-partner-center).
+> Если ваше приложение утверждено для мобильной платформы, вы можете создать прямую ссылку на приложение на мобильном устройстве. Идентификатор команды Apple App Store Connect требуется дополнительно для подробной ссылки на Teams-iOS. Дополнительные сведения см. в [статье об обновлении идентификатора команды Apple App Store Connect](../deploy-and-publish/appsource/prepare/update-apple-store-team-connect-id.md).
 
 ### <a name="deep-linking-for-sharepoint-framework-tabs"></a>Создание прямых ссылок для вкладок SharePoint Framework
 
