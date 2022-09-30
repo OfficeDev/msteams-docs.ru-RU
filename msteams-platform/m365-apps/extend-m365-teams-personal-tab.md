@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: cb6b7ee27e95045c218805181531ad96a1357f89
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 562bda342cc9067c96213703cd0f6725e9da66d1
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100774"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243509"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -58,7 +58,7 @@ ms.locfileid: "68100774"
     :::image type="content" source="images/toolkit-tab-sample.png" alt-text="Образец списка дел (работает в Teams, Outlook и Office) в Teams Toolkit":::
 
 1. Выберите расположение папки рабочей области на локальном компьютере.
-1. Откройте палитру команд (`Ctrl+Shift+P`) `Teams: Provision in the cloud` и введите необходимые ресурсы приложения (план Serviço de Aplicativo, учетную запись хранения, приложение-функцию, управляемое удостоверение) в учетной записи Azure.
+1. Откройте палитру команд (`Ctrl+Shift+P`) `Teams: Provision in the cloud` и введите необходимые ресурсы приложения (план Служба приложений, учетную запись хранения, приложение-функцию, управляемое удостоверение) в учетной записи Azure.
 1. Откройте палитру команд (`Ctrl+Shift+P`) и введите `Teams: Deploy to the cloud`, чтобы развернуть образец кода на подготовленных ресурсах в Azure и запустить приложение.
 
 Здесь вы можете сразу перейти к загрузке неопубликованного приложения [в Teams](#sideload-your-app-in-teams) и просмотреть его в Outlook и Office. (Манифест приложения и вызовы API TeamsJS уже обновлены для Microsoft 365.)
@@ -124,7 +124,7 @@ ms.locfileid: "68100774"
 
 ## <a name="update-azure-ad-app-registration-for-sso"></a>Обновление регистрации приложения Azure AD для единого входа
 
-[Единый вход Azure Active Directory (AD)](../tabs/how-to/authentication/tab-sso-overview.md) для личных вкладок работает так же, как в Office и Outlook, как и в Teams. Однако необходимо добавить несколько идентификаторов клиентского приложения в Azure AD регистрации приложения вкладки на портале *App-registraties клиента.*
+[Единый вход Azure Active Directory (AD)](../tabs/how-to/authentication/tab-sso-overview.md) для личных вкладок работает так же, как в Office и Outlook, как и в Teams. Однако вам потребуется добавить несколько идентификаторов клиентского приложения в Azure AD регистрации приложения вкладки на портале *Регистрация приложений клиента.*
 
 1. Войдите на [портал Microsoft Azure](https://portal.azure.com) с помощью учетной записи арендатора песочницы.
 1. Откройте колонку **регистрации приложений**.
@@ -193,7 +193,7 @@ ms.locfileid: "68100774"
 
 Чтобы просмотреть свое приложение в Outlook в Интернете:
 
-1. Перейдите в [Outlook в Интернете](https://outlook.office.com) и войдите, используя свою учетную запись клиента разработчика.
+1. Перейдите [Outlook в Интернете](https://outlook.office.com) и войдите с помощью учетной записи клиента разработки.
 1. На боковой панели выберите "  **Другие приложения"**. Заголовок неопубликованного приложения отображается среди установленных приложений.
 1. Щелкните значок приложения, чтобы запустить и просмотреть приложение, работающее в Outlook в Интернете.
 
@@ -280,9 +280,9 @@ ms.locfileid: "68100774"
 
 | **Название примера** | **Описание** | **Node.js** |
 |---------------|--------------|--------|
-| Список дел | Редактируемый список дел с единым входом, созданным React и Azure Functions. Работает только в Teams (используйте этот пример приложения, чтобы опробовать процесс обновления, описанный в этом руководстве). | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend)  |
-| Список дел (Microsoft 365) | Редактируемый список дел с единым входом, созданным React и Azure Functions. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend-M365)|
-| Редактор изображений (Microsoft 365) | Создание, изменение, открытие и сохранение изображений с помощью Microsoft Graph API. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/m365-extensibility-image-editor) |
+| Список дел | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает только в Teams (используйте этот пример приложения, чтобы опробовать процесс обновления, описанный в этом руководстве). | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend)  |
+| Список дел (Microsoft 365) | Редактируемый список дел с единым входом, созданным React и Функции Azure. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/todo-list-with-Azure-backend-M365)|
+| Редактор изображений (Microsoft 365) | Создание, изменение, открытие и сохранение изображений с помощью Microsoft API Graph. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/m365-extensibility-image-editor) |
 | Пример страницы запуска (Microsoft 365) | Демонстрирует проверку подлинности единого входа и возможности пакета SDK для TeamsJS, доступные на разных узлах. Работает в Teams, Outlook, Office. | [Просмотр](https://github.com/OfficeDev/microsoft-teams-library-js/tree/main/apps/sample-app) |
 | Приложение Northwind Orders | Демонстрирует использование пакета SDK Microsoft TeamsJS версии 2 для расширения приложения Teams на другие ведущего приложения M365. Работает в Teams, Outlook, Office. Оптимизировано для мобильных устройств.| [Просмотр](https://github.com/microsoft/app-camp/tree/main/experimental/ExtendTeamsforM365) |
 

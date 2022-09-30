@@ -5,17 +5,17 @@ author: v-npaladugu
 ms.author: surbhigupta
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 67dfa765d27327cee15977d17dfecf955cae8bca
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 144328aff254f94a3bcfc7e383e82dfa93d0d8fd
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100583"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243579"
 ---
 # <a name="monetize-your-app"></a>Монетизация приложения
 
 Используя магазин приложений Microsoft Teams, вы сможете монетизировать приложения и находить клиентов, привлекая пользователей. В этом разделе показано, как встраивать эти функции в приложение.
- 
+
 ## <a name="choose-a-pricing-model"></a>Выберите модель ценообразования
 
 :::row:::
@@ -70,6 +70,10 @@ ms.locfileid: "68100583"
 
     :::column-end:::
 :::row-end:::
+
+**Управление лицензиями для сторонних приложений в Teams**
+
+С помощью управления лицензиями Майкрософт независимые поставщики программного обеспечения (ISV) могут управлять лицензией SaaS, приобретенной в Teams, для простого назначения, отмены назначения, использования и отслеживания лицензий SaaS. Дополнительные сведения см. в разделе ["Управление лицензиями для сторонних приложений в Teams"](include-saas-offer.md#manage-license-for-third-party-apps-in-teams).
 
 ## <a name="next-step"></a>Следующий этап
 

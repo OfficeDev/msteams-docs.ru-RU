@@ -11,12 +11,12 @@ metadata:
   nextTutorialTitle: Дополнительные сведения о включении и настройке приложений для собраний
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: a986edd250c738409806ea016eff755c7555296a
-  ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+  ms.openlocfilehash: c3a93d081409645db7359050875e74f0af715a38
+  ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/27/2022
-  ms.locfileid: "68027209"
+  ms.lasthandoff: 09/30/2022
+  ms.locfileid: "68243502"
 items:
 - durationInMinutes: 1
   content: "Teams помогает создавать пузырьки содержимого и взаимодействовать с ними с помощью бота.\n\n**Основные функции пузырька содержимого собрания**:\n\n* Просмотр элементов повесткы дня, перечисленных в адаптивной карточке.\n* Выберите любой вариант в заданной повестке дня.\n* Отправьте свой отзыв о пузырьке содержимого или адаптивной карточке, отправленной в чате.\n\n> [!NOTE]\n> Пузырьок содержимого собрания доступен только для Azure AD пользователей, а не для анонимных пользователей.\n\nЭто пошаговое руководство поможет создать пузырьок содержимого собрания с помощью бота на собрании Teams с участниками. Вы увидите следующие выходные данные:\n\n  :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/desktop-and-mobile-image-final.png\" alt-text=\"Общие сведения о пузырьке содержимого собрания\":::\n\n \n"
@@ -38,7 +38,7 @@ items:
 - title: Настройка файла манифеста
   durationInMinutes: 1
   content: >
-    1. Перейдите **к файлу manifest.json** в клонированном репозитории.
+    1. Перейдите **к файлу manifest.json в** клонированном репозитории.
 
 
     1. Откройте **файл manifest.json** в Visual Studio и внесите следующие изменения:
@@ -53,7 +53,7 @@ items:
          :::image type="content" source="~/assets/images/meeting-content-bubble/manifest-set.png" alt-text="Изображение манифеста1":::
 - title: Сборка и запуск службы
   durationInMinutes: 1
-  content: "**Создание и запуск службы с помощью Visual Studio**\n\n   1. Откройте **Visual Studio**.\n   1. Перейдите к **файлу** > **\"Открыть проект** > **или решение\"**.\n\n       :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/meeting-token-generator-VSopenfile.png\" alt-text=\"Открытие файла\":::\n\n   1. Откройте **файл ContentBubbleBot.sln** .\n\n       :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/proj-sln.png\" alt-text=\"Открытие файла\":::\n\n   1. Нажмите **клавишу F5** , чтобы запустить проект.\n\n      Откроется веб-страница с сообщением о том, что **ваш бот готов!**.\n\n       :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/your-bot-is-ready.png\" alt-text=\"Приложение готово\"::: \n"
+  content: "**Создание и запуск службы с помощью Visual Studio**\n\n   1. Откройте **Visual Studio**.\n   1. Перейдите **к файлу \"** > **Открыть проект** > **или решение\"**.\n\n       :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/meeting-token-generator-VSopenfile.png\" alt-text=\"Открытие файла\":::\n\n   1. Откройте **файл ContentBubbleBot.sln** .\n\n       :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/proj-sln.png\" alt-text=\"Открытие файла\":::\n\n   1. Нажмите **клавишу F5** , чтобы запустить проект.\n\n      Откроется веб-страница с сообщением о том, что **ваш бот готов!**.\n\n       :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/your-bot-is-ready.png\" alt-text=\"Приложение готово\"::: \n"
 - title: Добавление пузырькового приложения для содержимого собрания в Teams
   durationInMinutes: 1
   content: "\n1. В клонированном репозитории перейдите к **csharp > Resources > Manifest**.\n\n1. Создайте .zip со следующими файлами, которые находятся в **папке манифеста** : \n   * manifest.json\n   * icon-outline.png\n   * icon-color.png\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/create-manifest-zip.png\" alt-text=\"ZIP-файл\"::: \n\n1. Создайте собрание с несколькими выступающими и участниками.\n\n1. После создания собрания выберите \"**+****Добавить приложение\"**.\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/add-an-app.png\" alt-text=\"Добавление приложения\"::: \n\n1. Во всплывающем окне выберите \" **Управление приложениями\"**.\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/manage-apps.png\" alt-text=\"Управление приложениями\"::: \n\n1. Выберите **Отправить пользовательское приложение**. \n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/upload-custom-app.png\" alt-text=\"Отправка пользовательского приложения\"::: \n\n1. Нажмите **кнопку \"** Открыть\", чтобы .zip файл, созданный в **папке манифеста** .\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/Zip-file.png\" alt-text=\"Отправка ZIP-приложения\":::\n\n1. Нажмите **Добавить**.\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/content-bubble-demo.png\" alt-text=\"Добавление приложения\"::: \n\n1. В **разделе \"** Управление приложениями\" отображается список приложений.\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/Manage.png\" alt-text=\"Управление приложениями\"::: \n\n1. Перейдите в чат собрания Teams.\n\n1. **Демонстрационное приложение content Bubble** отправляет автоматический ответ в чат собрания.\n\n     :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/content-bubble-demo-first-reply.png\" alt-text=\"Демонстрационный ответ для пузырьков содержимого\"::: \n\n1. Отправка **приветского** сообщения боту.\n\n     :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/content-bubble-demo-second-reply.png\" alt-text=\"Упоминание бота\"::: \n\n1. Бот отправляет вам элементы повестки дня, перечисленные в адаптивной карточке.\n\n1. Выберите любой параметр и нажмите **кнопку \"Отправить повестку дня** \", чтобы отправить ответ.\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/push-agenda.png\" alt-text=\"Бот отправляет адаптивную карточку\"::: \n\n1. Бот отправляет **адаптивную карточку** обратной связи.\n\n1. Выберите **\"Да** \" или **\"Нет\"**.\n\n1. Выберите **Отправить**.\n\n    :::image type=\"content\" source=\"~/assets/images/meeting-content-bubble/content-bubble-feedback.png\" alt-text=\"Бот отправляет вам карточку отзыва\"::: \n\n    Бот отправляет отзыв.\n  \n"

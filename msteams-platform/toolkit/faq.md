@@ -6,12 +6,12 @@ ms.author: zhany
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 2b229b14db563a6b7a4dc587ac67c872d461ec72
-ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
+ms.openlocfilehash: 6a6c6599ff036cf7b81dd30b00e5608db3dc4cc2
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "67806903"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243377"
 ---
 # <a name="faq-for-teams-toolkit"></a>Часто задаваемые вопросы о Наборе средств Teams
 
@@ -25,7 +25,7 @@ ms.locfileid: "67806903"
 
 <summary><b>Как проводить поиск неисправностей</b></summary>
 
-Если при использовании набора средств Teams в Visual Studio Code возникают ошибки, выберите в уведомлении об ошибке **Получить помощь**, чтобы перейти к соответствующему документу. Если вы используете Интерфейс командной строки TeamsFx, в конце сообщения об ошибке будет гиперссылка, указывающая на статью справки. Можно также [просмотреть справку по подготовке напрямую](https://aka.ms/teamsfx-arm-help).
+Если в наборе средств Teams Visual Studio Code, вы можете выбрать команду "Получить справку" в  уведомлении об ошибке, чтобы перейти к связанному документу. Если вы используете Интерфейс командной строки TeamsFx, в конце сообщения об ошибке будет гиперссылка, указывающая на статью справки. Можно также [просмотреть справку по подготовке напрямую](https://aka.ms/teamsfx-arm-help).
 
 <br>
 

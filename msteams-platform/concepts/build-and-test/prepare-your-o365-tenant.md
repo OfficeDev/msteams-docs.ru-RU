@@ -3,12 +3,12 @@ title: Подготовка клиента Microsoft 365
 description: В этом модуле вы узнаете, как приступить к работе с Teams в Microsoft 365 и создать среду разработки.
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.openlocfilehash: b52a74056dac01d6a946bd8f0166080b75a5fab5
-ms.sourcegitcommit: c7fbb789b9654e9b8238700460b7ae5b2a58f216
+ms.openlocfilehash: c5ebc7d36f73978e1cd954c7be8d7ac3595ba68e
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66484889"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243586"
 ---
 # <a name="prepare-your-microsoft-365-tenant"></a>Подготовка клиента Microsoft 365
 
@@ -46,7 +46,7 @@ ms.locfileid: "66484889"
     > [!Note]
     > Может потребоваться до 24 часов для появления пункта **Teams**. Можно [отправить пользовательское приложение в среду Teams](/microsoftteams/upload-custom-apps#validate) для тестирования и проверки.
 
-3. Перейдите в **Приложения Teams** > **Настройка политики** > **Глобальные**.
+3. Перейдите к **глобальным политикам** > **установки приложений** >  Teams **.**
 
    ![Включите представление загрузки неопубликованного приложения](~/assets/images/prepare-test-tenant/turn-on-sideload.png)
 

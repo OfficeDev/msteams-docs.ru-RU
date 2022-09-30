@@ -4,12 +4,12 @@ description: Узнайте, как отправлять упреждающие 
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: ec787b827323a462d3ab9ebd76686f5833740534
-ms.sourcegitcommit: b9ec2a17094cb8b24c3017815257431fb0a679d0
+ms.openlocfilehash: 13db8624cfd9b8bc73adce0a418fe5283455bf5f
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67990940"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243026"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -25,7 +25,7 @@ ms.locfileid: "67990940"
 >
 > * Для отправки упреждающего сообщения рекомендуется начать с создания бота уведомлений с [помощью JavaScript](../../../sbs-gs-notificationbot.yml) или примера входящего уведомления [веб-перехватчика](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/incoming-webhook-notification). Чтобы приступить к работе, [скачайте teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) explore. Дополнительные сведения см. в [документах Teams Toolkit](../../../toolkit/teams-toolkit-fundamentals.md).
 >
-> * В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD). Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций: <br> — GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`<br> — GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
+> * В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD). Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций: <br> -GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`<br> — GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
 
 Чтобы отправить упреждающее сообщение пользователю, групповому чату или команде, бот должен иметь необходимый доступ для отправки сообщения. В случае группового чата или команды приложение, содержащее бота, должно быть сначала установлено в этом расположении.
 
@@ -195,9 +195,21 @@ public class NotifyController : ControllerBase
 
     public async Task<IActionResult> Get()
     {
-        foreach (var conversationReference in _conversationReferences.Values)
+        foreach (var conversationReference in _conversationReferences.Values) // Loop of all conversation references must be updated to get it from backend system.
         {
-            await ((BotAdapter)_adapter).ContinueConversationAsync(_appId, conversationReference, BotCallback, default(CancellationToken));
+            var newReference = new ConversationReference()
+        {
+            Bot = new ChannelAccount()
+            {
+                Id = conversationReference.Bot.Id
+            },
+            Conversation = new ConversationAccount()
+            {
+                Id = conversationReference.Conversation.Id
+            },
+            ServiceUrl = conversationReference.ServiceUrl,
+        };
+            await ((BotAdapter)_adapter).ContinueConversationAsync(_appId, newReference, BotCallback, default(CancellationToken));
         }
         
         // Let the caller know proactive messages have been sent

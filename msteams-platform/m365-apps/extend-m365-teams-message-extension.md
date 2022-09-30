@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: high
-ms.openlocfilehash: 790c6324f012da8aabe7c4489a414d9887e03640
-ms.sourcegitcommit: 4ba6392eced76ba6baeb6d6dd9ba426ebf4ab24f
-ms.translationtype: HT
+ms.openlocfilehash: 2fc0a66683bb5454bfb8fbced64e97618522fce7
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66919734"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243516"
 ---
 # <a name="extend-a-teams-message-extension-across-microsoft-365"></a>Распространение расширения сообщений Teams в Microsoft 365
 
@@ -90,7 +90,7 @@ ms.locfileid: "66919734"
 
 ---
 
-Если вы использовали Teams Toolkit для создания приложения расширения сообщений, вы можете использовать его для проверки изменений в файле манифеста и выявления ошибок. Откройте палитру команд `Ctrl+Shift+P` и найдите **Teams: проверка файла манифеста**.
+If you used Teams Toolkit to create your message extension app, you can use it to validate the changes to your manifest file and identify any errors. Open the command palette `Ctrl+Shift+P` and find **Teams: Validate manifest file**.
 
 ## <a name="add-an-outlook-channel-for-your-bot"></a>Добавьте канал Outlook для бота
 
@@ -98,7 +98,7 @@ ms.locfileid: "66919734"
 
 Чтобы пользователи могли взаимодействовать с вашим расширением сообщений из Outlook, вам необходимо добавить канал Outlook к вашему боту:
 
-1. На [Портале Microsoft Azure](https://portal.azure.com) (или на портале [Bot Framework](https://dev.botframework.com), если вы ранее там зарегистрировались), перейдите к ресурсу своего бота.
+1. На [портале Microsoft портал Azure](https://portal.azure.com) [(или на портале Bot Framework](https://dev.botframework.com), если вы ранее зарегистрировались в этой службе) перейдите к ресурсу бота.
 
 1. В *Параметрах* выберите **Каналы**.
 
@@ -115,7 +115,7 @@ ms.locfileid: "66919734"
 > [!NOTE]
 > Этот шаг можно пропустить, если вы используете [образец приложения](#quickstart), предоставленный в этом учебном руководстве, поскольку этот сценарий не включает проверку подлинности Azure Active Directory (AAD) с единым входом.
 
-Единый вход (SSO) Azure Active Directory (AAD) для расширений сообщений работает в Outlook так же, [как в Teams](/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots). При этом необходимо добавить несколько идентификаторов клиентского приложения к регистрации приложения вашего бота в Azure AD на портале *Регистрация приложений* вашего клиента.
+Azure Active Directory (AD) Single-sign on (SSO) for message extensions works the same way in Outlook [as it does in Teams](/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots). However you need to add several client application identifiers to the Azure AD app registration of your bot in your tenant's *App registrations* portal.
 
 1. Войдите на [портал Azure](https://portal.azure.com) с помощью учетной записи клиента песочницы.
 1. Откройте **Регистрации приложений**.
@@ -167,7 +167,7 @@ ms.locfileid: "66919734"
 
     :::image type="content" source="images/outlook-web-compose-more-apps.png" alt-text="Нажмите на меню ''Дополнительные приложения'' в нижней части окна составления письма, чтобы использовать ваше расширение сообщений.":::
 
-Ваше расширение для сообщений содержится в списке. Его можно вызвать и использовать таким же образом, как при создании сообщений в Teams.
+Your message extension is listed. You can invoke it from there and use it just as you would while composing a message in Teams.
 
 ### <a name="outlook"></a>Outlook
 

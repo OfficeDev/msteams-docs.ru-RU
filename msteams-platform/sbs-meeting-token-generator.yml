@@ -11,12 +11,12 @@ metadata:
   nextTutorialTitle: Дополнительные сведения о включении и настройке приложений для собраний
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: 96df2c1f1f3a1a32ae3ba770287057e42c6cba10
-  ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+  ms.openlocfilehash: 7301003a6a69119ec1ca0658b90a53f2184dac38
+  ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/27/2022
-  ms.locfileid: "68027377"
+  ms.lasthandoff: 09/30/2022
+  ms.locfileid: "68243152"
 items:
 - durationInMinutes: 1
   content: >
@@ -100,7 +100,7 @@ items:
 - title: Создание клиентского приложения с помощью установки npm
   durationInMinutes: 1
   content: >
-    1. Перейдите к **папке приложения** в клонированном репозитории.
+    1. Перейдите в **папку "** Приложение" в клонированном репозитории.
 
     1. **Скопируйте путь** к папке приложения.
 
@@ -125,7 +125,7 @@ items:
        :::image type="content" source="~/assets/images/meeting-token-generator/meeting-token-generator-distfolder.png" alt-text="домашняя папка бота":::
 - title: Сборка и запуск службы
   durationInMinutes: 1
-  content: "**Сборка и запуск службы с помощью последней версии Visual Studio или командной строки**\n\n# <a name=\"visual-studio\"></a>[Visual Studio](#tab/vs)\n\n   1. Запустите последнюю версию Visual Studio.\n   1. Перейдите к **файлу** > **\"Открыть проект** > **или решение\"**.\n       \n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-VSopenfile.png\" alt-text=\"vsopen\":::\n\n   1. Выберите **файл TokenApp.csproj** из **папки csharp** .\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-Tokenfileready.png\" alt-text=\"домашняя папка бота\":::\n\n   1. Нажмите **клавишу F5** , чтобы запустить проект.\n \n   1. Выберите **Да**, если появится следующий диалог:\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-certificate.png\" alt-text=\"домашняя папка бота\":::\n\n      Откроется веб-страница с сообщением \" **Приложение готово!\"**.\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-appisready.png\" alt-text=\"домашняя папка бота\":::\n\n# <a name=\"command-line\"></a>[Командная строка](#tab/cli)\n\nПерейдите к **папке csharp** в окне командной строки и введите следующую команду:\n\n```bash\n dotnet run\n```\n:::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-dotnetruncmd.png\" alt-text=\"dotnet\":::\n"
+  content: "**Сборка и запуск службы с помощью последней версии Visual Studio или командной строки**\n\n# <a name=\"visual-studio\"></a>[Visual Studio](#tab/vs)\n\n   1. Запустите последнюю версию Visual Studio.\n   1. Перейдите **к файлу \"** > **Открыть проект** > **или решение\"**.\n       \n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-VSopenfile.png\" alt-text=\"vsopen\":::\n\n   1. Выберите **файл TokenApp.csproj** из **папки csharp** .\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-Tokenfileready.png\" alt-text=\"домашняя папка бота\":::\n\n   1. Нажмите **клавишу F5** , чтобы запустить проект.\n \n   1. Выберите **Да**, если появится следующий диалог:\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-certificate.png\" alt-text=\"домашняя папка бота\":::\n\n      Откроется веб-страница с сообщением \" **Приложение готово!\"**.\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-appisready.png\" alt-text=\"домашняя папка бота\":::\n\n# <a name=\"command-line\"></a>[Командная строка](#tab/cli)\n\nПерейдите в **папку csharp** в окне командной строки и введите следующую команду:\n\n```bash\n dotnet run\n```\n:::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-dotnetruncmd.png\" alt-text=\"dotnet\":::\n"
 - title: Включение предварительной версии для разработчиков
   durationInMinutes: 1
   content: "1. Включите отправку приложений в консоли администрирования клиента.\n   1. Войдите в [Центр администрирования Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage#/) со своими учетными данными администратора.\n   1. На панели слева выберите \" **Показать все\"**.\n   1. Выберите **Teams**.\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-admincenterimage.png\" alt-text=\"домашняя папка бота\":::\n\n   1. На панели слева выберите приложения **Teams**.\n   \n   1. Выберите **\"Политики установки\"**.\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-setuppolicies.png\" alt-text=\"Установки\"::: \n\n   1. Выберите **\"Глобальный\"**.\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-turnonsideload.png\" alt-text=\"домашняя папка бота\":::\n\n   1. Переключите **отправку пользовательских приложений в** **положение \"В положение \"В положение** \".\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/meeting-token-generator-toggleOn.png\" alt-text=\"домашняя папка бота\":::\n\n   1. Нажмите кнопку **Сохранить**. \n   \n      Тестовый клиент может разрешить загрузку неопубликованных приложений.\n\n      > [!NOTE]\n      > Загрузка неопубликованных приложений занимает некоторое время.\n\n1. Перейдите в **Microsoft Teams**.\n\n1. В правом верхнем углу интерфейса Teams выберите `...`.\n\n1. Нажмите кнопку **О программе**. \n\n1. Выберите \" **Предварительная версия для разработчиков\"**.\n\n      :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/sbs-dev-preview.png\" alt-text=\"предварительная версия для разработчиков\":::\n\n1. Выберите **\"Переключиться на предварительную версию разработчика\"**.\n\n     :::image type=\"content\" source=\"~/assets/images/meeting-token-generator/sbs-developer-preview.png\" alt-text=\"предварительная версия для разработчиков\":::\n"

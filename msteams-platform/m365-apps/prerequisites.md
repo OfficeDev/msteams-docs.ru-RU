@@ -5,12 +5,12 @@ ms.date: 05/24/2022
 ms.custom: m365apps
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.openlocfilehash: 64caf4784286cd3eaf2c32a28a3fe655ba88bcc7
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 1c808e2ecb15b87781daaf5879e72d415bc1b441
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100956"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243327"
 ---
 # <a name="set-up-your-dev-environment-for-extending-teams-apps-across-microsoft-365"></a>Настройте среду разработки для расширения приложений Teams в Microsoft 365.
 
@@ -79,12 +79,12 @@ ms.locfileid: "68100956"
 1. Войдите в свою тестовую среду, используя свои учетные данные тестового клиента.
 1. Загрузите [Средство развертывания Office](https://www.microsoft.com/download/details.aspx?id=49117) и извлеките его в локальную папку.
 1. Перейдите к локальной папке и откройте *configuration-Office365-x86.xml* (или **x64.xml*, в зависимости от вашей среды) в текстовом редакторе и обновите значение *Канал* до `BetaChannel`.
-1. Откройте командную строку и перейдите к пути к локальной папке.
+1. Откройте командную строку и перейдите по пути к локальной папке.
 1. Запустите `setup.exe /configure configuration-Office365-x86.xml` (или используйте файл **x64.xml* в зависимости от настроек).
 1. Откройте Outlook (клиент для настольных компьютеров) и настройте учетную запись электронной почты, используя учетные данные тестового клиента.
 1. Откройте **Файл** > **Учетная запись Office** > **О программе Outlook**, чтобы убедиться, что вы используете сборку Microsoft 365 *Бета-канал* для Outlook.
 
-    :::image type="content" source="images/outlook-about-beta-channel.png" alt-text="Перейдите в раздел &quot;О программе Outlook&quot; из учетной записи Office, чтобы убедиться, что вы используете сборку бета-канала.":::
+    :::image type="content" source="images/outlook-about-beta-channel.png" alt-text="Перейдите в раздел &quot;Сведения о Outlook&quot; из учетной записи Office, чтобы убедиться, что вы используете бета-канал сборки.":::
 
 1. Убедитесь, что установлено *Microsoft Edge WebView2 Runtime*. Откройте Windows **Start** >  **Приложения и функции** и выполните поиск **веб-представления**:
 
@@ -96,7 +96,7 @@ ms.locfileid: "68100956"
 
 Вы можете просмотреть личные вкладки Teams, работающие в приложении Office для Android, присоединившись к бета-версии программы.
 
-Чтобы установить последнюю бета-версию приложения Office на физическое устройство Android или эмулятор Android, выполните следующие действия.
+Чтобы установить последнюю бета-версию приложения Office, выполните сборку на физическом устройстве Android или эмуляторе Android:
 
 1. Убедитесь, что вы используете устройство [Android, поддерживаемое Google Play](https://support.google.com/googleplay/answer/1727131).
 1. Запустите **Магазин Play на** устройстве Android.

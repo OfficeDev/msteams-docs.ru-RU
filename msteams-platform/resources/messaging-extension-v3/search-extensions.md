@@ -4,12 +4,12 @@ description: Из этой статьи вы узнаете, как разраб
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 07/20/2019
-ms.openlocfilehash: aece6f0984e1a6979f5a591fb271010e508b51a1
-ms.sourcegitcommit: 1cda2fd3498a76c09e31ed7fd88175414ad428f7
+ms.openlocfilehash: 789563d3a11a7e83d59b1653cc0cf45af2354dc9
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67035228"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243033"
 ---
 # <a name="search-with-message-extensions"></a>Поиск с помощью расширений сообщений
 
@@ -555,7 +555,7 @@ ms.locfileid: "67035228"
 
 ### <a name="net"></a>.NET
 
-Чтобы получать и обрабатывать запросы с помощью пакета SDK Bot Builder для .NET, `invoke` можно проверить тип действия для входящего действия, а затем использовать вспомогательный метод в пакете [NuGet Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams), чтобы определить, является ли это действием расширения сообщения.
+Чтобы получать и обрабатывать запросы с помощью пакета SDK Bot Builder для .NET, `invoke` можно проверить тип действия для входящего действия, а затем использовать вспомогательный метод в пакете [NuGet Microsoft.Bot.Connector.Teams](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams) , чтобы определить, является ли это действием расширения сообщения.
 
 #### <a name="example-code-in-net"></a>Пример кода в .NET
 

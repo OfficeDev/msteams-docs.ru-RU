@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: e712c55dd4543edda9115751be09d81d1795f02b
-ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+ms.openlocfilehash: 119e02f6cc31d8642447e4e7406d461faff3a731
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68027342"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243061"
 ---
 # <a name="create-a-new-model-driven-app-with-collaboration-controls-for-teams"></a>Создание приложения на основе модели с элементами управления совместной работы для Teams
 

@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как настрои
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: bb98ab632b335717a61499600aef01e652fd0dee
-ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
+ms.openlocfilehash: 7d458cc97429772695958606835edd4ef953b5db
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67179335"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243166"
 ---
 # <a name="configure-tasks-for-external-clients"></a>Настройка задач для внешних клиентов
 
@@ -21,16 +21,16 @@ ms.locfileid: "67179335"
 > [!NOTE]
 > В настоящее время элементы управления совместной работы доступны только в [общедоступной предварительной версии разработчика](~/resources/dev-preview/developer-preview-intro.md).
 
-Ниже приведены шаги по созданию внешних задач.
+Чтобы создать внешние задачи, выполните следующие действия.
 
 1. Создайте новую пользовательскую сущность, например Customer, или повторно используйте существующую сущность клиента, например "Контакты".
 
-1. Создайте новые поля, которые будут содержать следующие сведения:
+1. Создайте новые поля, в которых содержатся следующие сведения:
     1. Имя
     1. Электронная почта
     1. Родительский элемент (подстановка в родительскую таблицу, например "Проверки")
     > [!NOTE]
-    > Сущность клиента, созданная выше, будет там, где элемент управления задачами извлекет сведения о клиенте при назначении внешней задачи. Родительское поле гарантирует, что сущность клиента связана с записью проверки.
+    > Сущность клиента, созданная выше, — это объект, из которого элемент управления задачами извлекал сведения о клиенте при назначении внешней задачи. Родительское поле гарантирует, что сущность клиента связана с записью проверки.
 
 1. Создайте XML-файл Fetch, чтобы разрешить элементу управления PCF извлекать правильные сведения о клиенте.
 
@@ -39,8 +39,8 @@ ms.locfileid: "67179335"
     Ниже приведено определение схемы для конфигурации задач Fetch XML. Любой fetch XML должен быть разработан в соответствии со следующими требованиями:
 
     * Результат запроса должен возвращать следующие свойства для каждого объекта пользователя:
-      * ID
-      * displayname
+      * Идентификатор
+      * Displayname
       * по электронной почте, при необходимости используйте псевдоним.
     * Запрос должен содержать параметр **@top** , позволяющий вызываемой стороне ограничить количество результатов.
     * Запрос должен иметь **@rootEntityId** для фильтрации результатов только по связанным записям, если это необходимо.
@@ -81,19 +81,19 @@ ms.locfileid: "67179335"
 
 1. Перейдите в классический конструктор форм, пока не найдете вкладку **"Задачи** ". Дважды щелкните вложенную сетку, чтобы открыть диалоговое окно его свойства.
 
-    :::image type="content" source="~/assets/images/collaboration-control/subgrid-property.png" alt-text="Диалоговое окно свойства Tasks":::
+    :::image type="content" source="~/assets/images/collaboration-control/subgrid-property.png" alt-text="Снимок экрана: диалоговое окно свойств задач.":::
 
 1. В диалоговом окне свойств задайте свойства, как показано на следующем рисунке:
 
-    :::image type="content" source="~/assets/images/collaboration-control/tasks-property.png" alt-text="Параметры свойств tasks":::
+    :::image type="content" source="~/assets/images/collaboration-control/tasks-property.png" alt-text="На снимке экрана показано, как задать свойства в параметрах свойства Tasks.":::
 
-1. Перейдите на вкладку "Элементы управления" и выберите :::image type="icon" source="~/assets/images/collaboration-control/edit-icon.png" alt-text="команду &quot;Изменить задачи"::: " в свойстве "Пользовательские задачи", чтобы добавить созданный выше код Fetch XML.
+1. Перейдите на вкладку "Элементы управления" и выберите " :::image type="icon" source="~/assets/images/collaboration-control/edit-icon.png" alt-text="Снимок экрана&quot;, на котором показано, как изменить задачи."::: в свойстве "Пользовательские задачи", чтобы добавить созданный выше XML-файл Fetch.
 
 1. Вставка XML-файла fetch
 
-    :::image type="content" source="~/assets/images/collaboration-control/set-fetchproperties.png" alt-text="Выборка параметров свойств XML":::
+    :::image type="content" source="~/assets/images/collaboration-control/set-fetchproperties.png" alt-text="Снимок экрана: вставка fetch XML.":::
 
-    :::image type="content" source="~/assets/images/collaboration-control/custom-tasksproperty.png" alt-text="Выборка параметров настраиваемых свойств XML":::
+    :::image type="content" source="~/assets/images/collaboration-control/custom-tasksproperty.png" alt-text="Снимок экрана: настройка параметров настраиваемых свойств.":::
 
 1. Нажмите **кнопку "** ОК" в разделе "Настройка свойства "Настраиваемые задачи" и задайте окна свойств.
 

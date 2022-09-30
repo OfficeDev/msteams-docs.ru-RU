@@ -4,12 +4,12 @@ description: Узнайте о новых функциях разработчи�
 ms.topic: reference
 ms.localizationpriority: high
 zone_pivot_groups: What-new-features
-ms.openlocfilehash: 5aad27389416a5e10920ebc00521274fc8f7d907
-ms.sourcegitcommit: c74e1e12175969c75e112a580949f96d2610c24e
+ms.openlocfilehash: 8c618862056d6cc8b7a76cfd504be32f341d11ca
+ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68160729"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243425"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -22,7 +22,7 @@ ms.locfileid: "68160729"
 :::row:::
 :::column:::
 
-:::image type="icon" source="~/assets/images/general-availabe.png" alt-text="Обновления для общедоступных функций":::
+:::image type="icon" source="~/assets/images/general-availabe.png":::
 
 :::column-end:::
 :::column span="2":::
@@ -31,6 +31,7 @@ ms.locfileid: "68160729"
 
 **Сентябрь 2022 г.**
 
+* ***30 сентября 2022*** г. Управление лицензиями [SaaS для сторонних приложений в Teams](concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md#manage-license-for-third-party-apps-in-teams)
 * ***29 сентября 2022*** г. Мобильное приложение Teams теперь поддерживает скачивание файлов [на локальные устройства.](concepts/device-capabilities/media-capabilities.md#file-download-on-teams-mobile)
 * ***29 сентября 2022*** г. Создайте прямую ссылку для совместного использования содержимого [на собраниях.](concepts/build-and-test/deep-links.md#generate-a-deep-link-to-share-content-to-stage-in-meetings)
 * ***16 сентября 2022*** г. Адаптивные карточки в расширениях сообщений на основе поиска [теперь поддерживают универсальные действия.](messaging-extensions/how-to/search-commands/universal-actions-for-search-based-message-extensions.md)
@@ -265,6 +266,7 @@ ms.locfileid: "68160729"
 </details>
 </details>
 </details>
+
 ::: zone-end
 
 ::: zone pivot="dev-preview"
@@ -276,7 +278,7 @@ ms.locfileid: "68160729"
 :::row:::
 :::column:::
 
-:::image type="icon" source="~/assets/images/developer-preview.png" alt-text="Обновления функций, доступных в предварительной версии разработчика":::
+:::image type="icon" source="~/assets/images/developer-preview.png":::
 
 :::column-end:::
 :::column span="2":::
@@ -316,7 +318,7 @@ ms.locfileid: "68160729"
 :::row:::
 :::column:::
 
-:::image type="icon" source="~/assets/images/deprecated.png" alt-text="Устаревшие компоненты":::
+:::image type="icon" source="~/assets/images/deprecated.png":::
 
 :::column-end:::
 :::column span="2":::
