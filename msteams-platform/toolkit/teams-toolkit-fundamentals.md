@@ -7,73 +7,62 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/24/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: ca65a34796886ff8eb6a0c13aaa11af319739dc8
-ms.sourcegitcommit: 1db4429f34da213aa749e483a4ceb83c14b07de3
+ms.openlocfilehash: 84a18c736c59c992bb4e3e51962ed631483f7f2b
+ms.sourcegitcommit: 3aaccc48906fc6f6fbf79916af5664bf55537250
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68158265"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68296027"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
 
-Набор средств Teams — это функция возможностей, которая позволяет выполнять несколько функций как в Microsoft Visual Studio Code, так и в Visual Studio. С помощью Набора средств Teams можно автоматизировать процесс от создания до развертывания и настройки приложения. Различные функции и преимущества Набора средств Teams рассматриваются в соответствующей документации по нужным средам.
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png" alt-text="Путь взаимодействия пользователя с набором средств Teams" lightbox="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png":::
+
+Набор средств Teams упрощает начало разработки приложений для Microsoft Teams с помощью Visual Studio и Visual Studio Code.
+
+* Начните с шаблона проекта или из примера
+* Экономия времени установки с помощью автоматической регистрации и настройки приложения
+* Запуск и отладка в Teams непосредственно из знакомых средств
+* Интеллектуальные значения по умолчанию для размещения в Azure с использованием инфраструктуры как кода и Bicep
+* Создание уникальных конфигураций, таких как разработка, тестирование и prod, с помощью функции "Среды"
+* Перенос приложения в организацию или App Store Teams с помощью встроенных средств публикации
+
+## <a name="available-for-visual-studio-and-visual-studio-code"></a>Доступно для Visual Studio и Visual Studio Code
+
+Набор средств Teams доступен бесплатно для Visual Studio Code и поддерживает Visual Studio 2022 Community, Professional и Enterprise. Дополнительные сведения [об установке](./install-Teams-Toolkit.md) и настройке см. в документации по установке Набора средств Teams.
+
+| Набор средств Teams | Visual Studio | Visual Studio Code |
+| - | ------------- | ------------------ |
+| Установка | Доступно в Visual Studio Installer | Доступно в VS Marketplace |
+| Выполните сборку с помощью | C#, .NET, ASP.NET, Blazor | JavaScript, TypeScript, React, SPFx |
+
+## <a name="features"></a>Возможности
+
+### <a name="project-templates"></a>Шаблоны проектов
+
+Набор средств Teams упрощает начало работы с шаблонами для распространенных бизнес-сценариев приложений и интеллектуальными значениями по умолчанию, чтобы ускорить переход на рабочую среду. Если вы уже знакомы с разработкой приложений Teams, вы также можете начать непосредственно с шаблонов, ориентированных на возможности. Например, Tab, Bot, Messaging Extension.
+
+::: zone pivot="visual-studio-code"
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create-new-app.png" alt-text="Создание меню приложения Teams в VS Code":::
+::: zone-end
+
+::: zone pivot="visual-studio"
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/create-new-app-vs.png" alt-text="Создание меню приложения Teams в VS Code":::
+::: zone-end
+
+### <a name="automatic-registration-and-configuration"></a>Автоматическая регистрация и настройка
+
+Экономите время и позвольте набору средств автоматически зарегистрировать приложение на портале разработчика Teams и автоматически настроить такие параметры, как Azure Active Directory при первом запуске или отладке приложения. Войдите с помощью учетной записи Microsoft 365, чтобы контролировать, где настроено приложение, и настраивать включенный Azure AD, когда требуется больше гибкости.
 
 ::: zone pivot="visual-studio-code"
 
-## <a name="teams-toolkit-overview-for--visual-studio-code"></a>Обзор набора средств Teams для Visual Studio Code
+### <a name="multiple-environments"></a>Несколько сред
 
-Набор средств Teams позволяет создавать, отлаживать и развертывать приложение Teams прямо из Visual Studio Code. Разработка приложений с помощью набора средств имеет следующие преимущества:
+С помощью функций "Среды" можно создавать различные группы облачных ресурсов, упрощая запуск и тестирование приложения. Используйте среду разработки с подпиской Azure или создайте новую с другой подпиской для промежуточной, тестовой и рабочей среды.
 
-* Интегрированное удостоверение
-* Доступ к облачному хранилищу
-* Данные из Microsoft Graph
-* Службы Azure и Microsoft 365 с подходом без настройки.
+### <a name="quick-access-to-teams-developer-portal"></a>Быстрый доступ к порталу разработчика Teams
 
-Для разработки приложений Teams, аналогичной набору средств Teams для Visual Studio, вы можете использовать средство [CLI](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md), состоящее из `teamsfx` набора средств.
-
-## <a name="user-journey-of-teams-toolkit"></a>Путь пользователя при применении набора средств Teams
-
-Набор средств Teams автоматизирует ручную работу и обеспечивает отличную интеграцию ресурсов Teams и Azure. На следующем изображении показан путь пользователя при применении набора средств Teams.
-
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png" alt-text="Путь взаимодействия пользователя с набором средств Teams" lightbox="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png":::
-
-Основные вехи этого пути:
-
-1. Начало работы с создания проекта или применения примера приложения Teams.
-1. Добавление возможностей или изменение файла манифеста при необходимости.
-1. Использование учетной записи Microsoft 365 для создания и отладки приложения Teams.
-1. Использование учетной записи Azure для подготовки и развертывания приложения в облаке.
-1. Публикация приложения в Teams.
-
-В следующей таблице приведены общие сведения о Наборе средств Teams в Visual Studio Code.
-
-| Процесс | Описание |
-| ---- | ---- |
-| Установка Набора средств Teams | Набор средств Teams можно установить двумя способами: <br> — Использование Visual Studio Code <br> — Использование Visual Studio Code Marketplace|
-| Поддержка сред сборки | У вас есть два разных типа среды: <br> — Javascript или Typescript <br> -Spfx |
-| Поддержка типов приложений и функций Azure | Существует два разных типа приложений: <br> — Приложение на основе возможностей, например tab, bot, message extension  <br> — Приложение Teams на основе сценариев, например бот уведомлений, командный бот и личная вкладка с поддержкой единого входа |
-| Разработка приложения Teams | Он содержит: <br> — Добавление среды и управление ими <br> — Создание приложения с несколькими возможностями <br> — создание облачных ресурсов на основе возможностей; <br> — интеграция стороннего API <br> — Настройка файла манифеста <br> — Пакет SDK для TeamsFx |
-| Отладка приложения Teams | Он содержит: <br> — Локальная отладка приложения Teams <br> — Отладка фонового процесса|
-| Размещение приложения Teams | Он содержит: <br> — подготовка ресурсов в облаке; <br> — Развертывание в облаке|
-| Тестирование приложения Teams | Он содержит: <br> — Интеграция и свертывание <br> — Пакет метаданных Zip Teams <br> — Загрузка неопубликованного и тестового приложения в среде Teams <br> — Тестирование поведения приложения в разных средах|
-| Публикация приложения Microsoft Teams | Он содержит: <br> — Публикация приложения <br> — Управление утверждением администратора <br> — Публикация в хранилище <br> — Интеграция с порталом разработчика |
-
-### <a name="entities-integrated-with-teams-toolkit"></a>Сущности, интегрированные с Набором средств Teams
- 
-Набор средств Teams — это расширение в Visual Studio Code. Он интегрирован со следующими сущностями в Teams Toolkit.such as Azure AD и Microsoft 365, портал разработчика и Microsoft Graph. Все сущности интегрированы в Набор средств Teams и помогают пользователям создавать приложения.
-
-| Объекты | Описание |
-| ---- | ---- |
-| Azure AD  | Azure Active Directory (Azure AD) — это облачная служба управления удостоверениями и доступом. Эта служба помогает сотрудникам получать доступ к внешним ресурсам, таким как Microsoft 365, портал Azure и тысячам других приложений SaaS. |
-| Microsoft 365  | Учетная запись разработчика Teams при разработке приложения.|
-| Портал разработчика | Портал разработчика для Teams является основным средством для настройки и распространения приложений Microsoft Teams и управления ими. На портале разработчика вы можете работать совместно с коллегами над приложением, настраивать среды выполнения и многое другое. |
-| Microsoft Graph | Microsoft Graph открывает доступ к данным и средствам искусственного интеллекта в Microsoft 365. Благодаря этому вы получите единую модель программируемости, которую можно использовать для доступа к колоссальному объему данных в Microsoft 365, Windows и Enterprise Mobility + Security. |
-
-Набор средств Teams объединяет в одном месте все инструменты, необходимые для создания приложения Teams.
-
-## <a name="manage-your-apps-using-developer-portal"></a>Управление приложениями с помощью портала разработчика
-
-Так как Набор средств Teams интегрирован с порталом разработчика, вы можете настраивать, распространять и управлять приложением с помощью портала разработчика для [Teams](../concepts/build-and-test/teams-developer-portal.md) в разделе DEPLOYMENT после создания приложения. Дополнительные сведения см. в [статье об управлении приложениями Teams с помощью портала разработчика](../concepts/build-and-test/manage-your-apps-in-developer-portal.md).
+Быстрый доступ к порталу разработчика Teams, где можно настраивать, распространять и управлять приложением. Дополнительные сведения см. в [статье об управлении приложениями Teams с помощью портала разработчика](../concepts/build-and-test/manage-your-apps-in-developer-portal.md).
 
 :::image type="content" source="../assets/images/teams-toolkit-v2/build-environment-developer-portal-1.png" alt-text="Портал разработчика":::
 
@@ -81,49 +70,7 @@ ms.locfileid: "68158265"
 
 ::: zone pivot="visual-studio"
 
-## <a name="teams-toolkit-overview-for-visual-studio"></a>Обзор набора средств Teams для Visual Studio
-
-Набор средств Teams для Visual Studio помогает создавать, отлаживать и развертывать приложения Microsoft Teams. Набор средств Teams для Visual Studio является общедоступным в Visual Studio 2022 версии 17.3. Разработка приложений с помощью Набора средств Teams имеет следующие преимущества:
-
-* Интегрированное удостоверение
-* Доступ к облачному хранилищу
-* Данные из Microsoft Graph
-* Службы Azure и Microsoft 365 с использованием подхода с нулевой конфигурацией
-
-Для разработки приложений Teams можно также использовать средство [интерфейса командной](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/cli/user-manual.md) строки, аналогичное набору средств Teams для Microsoft Visual Studio Code, включающее toolkit `teamsfx`.
-
-Набор средств Teams объединяет все средства, необходимые для создания приложения Teams.
-
-> [!NOTE]
-> Набор средств Teams недоступен в других версиях.
-
-## <a name="user-journey-of-teams-toolkit"></a>Путь взаимодействия пользователя с набором средств Teams
-
-Набор средств Teams автоматизирует ручную работу и обеспечивает отличная интеграция Ресурсов Teams и Azure. На следующем рисунке показан путь взаимодействия пользователя:
-
-:::image type="content" source="../assets/images/teams-toolkit-overview/teams-toolkit-user-journey.png" alt-text="Путь взаимодействия пользователя с набором средств Teams" lightbox="../assets/images/teams-toolkit-overview/teams-toolkit-user-journey.png":::
-
-Основные вехи этого пути:
-
-1. Вы можете начать с создания нового проекта или попробовать создать пример приложения Teams.
-1. Затем при необходимости можно изменить код или файл манифеста.
-1. Для создания и отладки приложения Teams можно использовать учетную запись Microsoft 365.
-1. Для подготовки и развертывания приложения в облаке можно использовать учетную запись Azure.
-1. Наконец, вы можете опубликовать приложение в Teams.
-
-Следующие операции пока не поддерживаются в Наборе средств Teams для Visual Studio по сравнению с Набором средств Teams для Microsoft Visual Studio Code однако они запланированы в будущем.
-
-* Добавьте другие возможности Teams в приложение Teams.
-* Добавление дополнительных ресурсов Azure в приложение Teams
-* Добавьте единый вход (SSO) в приложение Teams.
-* Добавьте подключение API в приложение Teams.
-* Настройте Microsoft Azure Active Directory (Azure AD) манифеста.
-* Добавьте конвейеры CI/CD.
-* Управление несколькими облачными средами.
-* Совместная работа над проектами Teams.
-* Публикация приложения Teams.
-
-### <a name="teamsfx-net-sdk-reference-docs"></a>Справочные материалы по пакету SDK для TeamsFx для .NET
+#### <a name="teamsfx-net-sdk-reference-docs"></a>Справочные материалы по пакету SDK для TeamsFx для .NET
 
 * [Пространство имен Microsoft.Extensions.DependencyInjection](/../dotnet/api/Microsoft.Extensions.DependencyInjection)
 * [Пространство имен Microsoft.TeamsFx](/../dotnet/api/Microsoft.TeamsFx)
@@ -138,4 +85,3 @@ ms.locfileid: "68158265"
 * [Создание приложения Teams в Visual Studio](create-new-teams-app-for-Visual-Studio.md)
 * [Подготовка облачных ресурсов с помощью Visual Studio](provision-cloud-resources.md)
 * [Развертывание приложения Teams в облаке с помощью Visual Studio](deploy-teams-app.md)
-

@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
 ms.date: 04/07/2022
-ms.openlocfilehash: d0e7cf82685588977beb426ec6cc2ed75b2249c6
-ms.sourcegitcommit: 600d3b13d47ca42ab5ba7abf18bccc7e912180e4
+ms.openlocfilehash: 631fa01f8e3909495281a95205a70f88a729648f
+ms.sourcegitcommit: 3aaccc48906fc6f6fbf79916af5664bf55537250
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68158822"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68295979"
 ---
 # <a name="enable-and-configure-apps-for-meetings"></a>Включение и настройка приложений для собраний
 
@@ -177,7 +177,7 @@ ms.locfileid: "68158822"
 
 Общая сцена собрания позволяет участникам собрания взаимодействовать с содержимым приложения и совместно работать над ним в режиме реального времени. Вы можете поделиться своими приложениями на сцене собрания для совместной работы следующими способами.
 
-* [Предоставление общего доступа ко всему приложению для](#share-entire-app-to-stage) промежуточной подготовки с помощью кнопки "Общий доступ к этапу" на боковой панели собрания клиента Teams или с помощью [прямых ссылок](~/concepts/build-and-test/deep-links.md#generate-a-deep-link-to-share-content-to-stage-in-meetings).
+* [Демонстрация всего приложения на сцене](#share-entire-app-to-stage) с помощью кнопки демонстрации на сцене в клиенте Teams.
 * [Демонстрация определенных частей приложения на сцене](#share-specific-parts-of-the-app-to-stage) с помощью API в клиентском пакете SDK Teams.
 
 ##### <a name="share-entire-app-to-stage"></a>Демонстрация всего приложения на сцене

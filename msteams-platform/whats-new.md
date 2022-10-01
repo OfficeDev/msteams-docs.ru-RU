@@ -4,12 +4,12 @@ description: Узнайте о новых функциях разработчи�
 ms.topic: reference
 ms.localizationpriority: high
 zone_pivot_groups: What-new-features
-ms.openlocfilehash: 8c618862056d6cc8b7a76cfd504be32f341d11ca
-ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+ms.openlocfilehash: 674da73dfbbb5417ef498315da0b3219466a4935
+ms.sourcegitcommit: 3aaccc48906fc6f6fbf79916af5664bf55537250
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243425"
+ms.locfileid: "68295972"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -33,7 +33,6 @@ ms.locfileid: "68243425"
 
 * ***30 сентября 2022*** г. Управление лицензиями [SaaS для сторонних приложений в Teams](concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md#manage-license-for-third-party-apps-in-teams)
 * ***29 сентября 2022*** г. Мобильное приложение Teams теперь поддерживает скачивание файлов [на локальные устройства.](concepts/device-capabilities/media-capabilities.md#file-download-on-teams-mobile)
-* ***29 сентября 2022*** г. Создайте прямую ссылку для совместного использования содержимого [на собраниях.](concepts/build-and-test/deep-links.md#generate-a-deep-link-to-share-content-to-stage-in-meetings)
 * ***16 сентября 2022*** г. Адаптивные карточки в расширениях сообщений на основе поиска [теперь поддерживают универсальные действия.](messaging-extensions/how-to/search-commands/universal-actions-for-search-based-message-extensions.md)
 * ***6 сентября 2022*** г.: представлены фрагменты кода для записи видео с помощью [камеры через `selectMedia` API.](concepts/device-capabilities/media-capabilities.md#code-snippets)
 
