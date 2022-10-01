@@ -3,12 +3,12 @@ title: Регистрация бота для звонков и собраний
 description: Узнайте, как зарегистрировать новый бот для аудио- и видеозвонков в Microsoft Teams, создать бот или добавить возможность вызова, добавить разрешения графа. Пример создания звонка, присоединения к собранию и передачи звонка.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 2563d94e944a7d4058d1417be2f3816e3f565bff
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 3fe8d0adde45242738b8023c5478c24769561d1c
+ms.sourcegitcommit: 53818e55dfe0dbdf874d578a40982f7db444f89b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100926"
+ms.lasthandoff: 10/01/2022
+ms.locfileid: "68319939"
 ---
 # <a name="register-calls-and-meetings-bot-for-microsoft-teams"></a>Регистрация бота для звонков и собраний для Microsoft Teams
 
@@ -93,9 +93,10 @@ You can rely on an administrator to grant the permissions your app needs at the 
 
 ## <a name="code-sample"></a>Пример кода
 
-| **Название примера** | **Описание** | **Microsoft Graph** |
+| **Название примера** | **Описание** | **C#** |
 |---------------|----------|--------|
 | Вызов и собрание с ботом | Образец приложения демонстрирует, как бот может создавать вызовы, присоединяться к собраниям и перенаправлять вызовы. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-calling-meeting/csharp) |
+| События собрания в режиме реального времени |В примере приложения показано, как бот может получать события собраний в режиме реального времени.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-events/csharp)|
 
 ## <a name="step-by-step-guide"></a>Пошаговые инструкции
 
@@ -111,3 +112,4 @@ You can rely on an administrator to grant the permissions your app needs at the 
 * [Уведомления о входящих звонках](~/bots/calls-and-meetings/call-notifications.md)
 * [Разработка ботов для вызовов и виртуальных собраний на компьютере](~/bots/calls-and-meetings/debugging-local-testing-calling-meeting-bots.md)
 * [Просмотр разрешений приложения и предоставление согласия администратора](/MicrosoftTeams/app-permissions-admin-center).
+* [Работа с API облачных коммуникаций в Microsoft Graph](/graph/api/resources/communications-api-overview)
