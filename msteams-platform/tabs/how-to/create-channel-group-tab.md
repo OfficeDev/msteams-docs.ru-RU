@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: c4e1b595a226095485e88448c8bd25006c0c58ca
-ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+ms.openlocfilehash: 0febbd535f5375f03599009d32d9b613cf5af6d6
+ms.sourcegitcommit: e4ccbbdce620418c129689c0ba6ad246a81068c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68027335"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68329086"
 ---
 # <a name="create-a-channel-tab"></a>Создание вкладки канала
 
@@ -197,7 +197,7 @@ gulp ngrok-serve
 ### <a name="upload-your-application-to-teams"></a>Загрузите свое приложение в Teams
 
 1. Перейдите в Teams и выберите **Приложения**&nbsp;:::image type="content" source="~/assets/images/tab-images/store.png" alt-text="Teams Store":::.
-1. Выберите **Управление приложениями** и **Загрузить пользовательское приложение**.
+1. Выберите **"Управление приложениями** > **" "Отправить приложение"** > **"Отправить пользовательское приложение"**.
 1. Перейдите в каталог проекта, в папку **./package** выберите папку zip пакета приложения и нажмите **Открыть**.
 
     :::image type="content" source="~/assets/images/tab-images/channeltabadded.png" alt-text="Загруженная вкладка канала":::
@@ -428,7 +428,7 @@ ngrok http 3978 --host-header=localhost
 
 1. В **URL-адресах приложений** измените политику конфиденциальности на `https://<yourngrokurl>/privacy` и условия использования на `https://<yourngrokurl>/tou` и сохраните.
 
-1. В разделе **Функции приложения** выберите приложение группы и канала. Обновите **URL-адрес конфигурации** с помощью `https://<yourngrokurl>/tab` и выберите для вкладки **Область**.
+1. В **разделе "Функции приложения**" выберите **приложение "Группа" и "Канал"**. Обновите **URL-адрес конфигурации** с помощью `https://<yourngrokurl>/tab` и выберите для вкладки **Область**.
 
 1. Нажмите кнопку **Сохранить**.
 
@@ -649,7 +649,7 @@ ngrok http 3978 --host-header=localhost
 
 1. В **URL-адресах приложений** измените политику конфиденциальности на `https://<yourngrokurl>/privacy` и условия использования на `https://<yourngrokurl>/tou` и сохраните.
 
-1. В разделе **Функции приложения** выберите приложение группы и канала. Обновите **URL-адрес конфигурации** с помощью `https://<yourngrokurl>/tab` и выберите для вкладки **Область**.
+1. В **разделе "Функции приложения**" выберите **приложение "Группа" и "Канал"**. Обновите **URL-адрес конфигурации** с помощью `https://<yourngrokurl>/tab` и выберите для вкладки **Область**.
 
 1. Нажмите кнопку **Сохранить**.
 
