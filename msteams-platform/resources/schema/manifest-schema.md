@@ -3,12 +3,12 @@ title: Справочник по схеме манифеста
 description: В этой статье вы получите последнюю версию схемы общедоступного манифеста для справочника, схемы и примера полного манифеста Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: 23bdb87bd1f5f3ea1fadb2527f64b5bebec0b157
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: f797c44b49c29227ec973c0066bf98ee25590d35
+ms.sourcegitcommit: 176bbca74ba46b7ac298899d19a2d75087fb37c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100170"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68376573"
 ---
 # <a name="app-manifest-schema-for-teams"></a>Схема манифеста приложения для Teams
 
@@ -29,7 +29,6 @@ ms.locfileid: "68100170"
     "manifestVersion": "1.14",
     "version": "1.0.0",
     "id": "%MICROSOFT-APP-ID%",
-    "packageName": "com.example.myapp",
     "localizationInfo": {
         "defaultLanguageTag": "en-us",
         "additionalLanguages": [
@@ -404,12 +403,6 @@ URL-адрес со ссылкой на схему JSON для манифест�
 |---|---|---|---|
 |`short`|80 символов|✔️|Краткое описание возможностей приложения. Используется, когда доступно ограниченное пространство.|
 |`full`|4000 символов|✔️|Полное описание приложения.|
-
-## <a name="packagename"></a>packageName
-
-**Необязательно** — строка
-
-A unique identifier for the app in reverse domain notation; for example, com.example.myapp. Maximum length: 64 characters.
 
 ## <a name="localizationinfo"></a>localizationInfo
 
@@ -910,7 +903,7 @@ Specify meeting extension definition. For more information, see [custom Together
 <br>
 
 > [!NOTE]
-> Пример содержимого манифеста, показанный здесь, предназначен только для приложения вкладки. В нем используются примеры значений для URI поддомена и имени пакета. Дополнительные сведения см. в [примере схемы манифеста](#sample-full-manifest).
+> Пример содержимого манифеста, показанный здесь, предназначен только для приложения вкладки. В нем используются примеры значений для универсального кода ресурса (URI) поддомена. Дополнительные сведения см. в [примере схемы манифеста](#sample-full-manifest).
 
   ```json
 { 
@@ -918,7 +911,6 @@ Specify meeting extension definition. For more information, see [custom Together
  "manifestVersion": "1.12", 
  "version": "1.0.0", 
  "id": "{new GUID for this Teams app - not the Azure AD App ID}", 
- "packageName": "com.contoso.teamsauthsso", 
  "developer": { 
  "name": "Microsoft", 
  "websiteUrl": "https://www.microsoft.com", 
