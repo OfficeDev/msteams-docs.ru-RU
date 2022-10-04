@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как установ
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: ae7e3e93576e14f07784e8ded65858940e2cea21
-ms.sourcegitcommit: 14fb175842e49888fc99ae813ce8a2b85fe1ff94
+ms.openlocfilehash: 5a253c9e7373a2df9e1161e6d3fc9d9b1c8ccdaa
+ms.sourcegitcommit: f2ac771cbd608e872604e9ac8ffec2d08f55ee1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67617980"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68373033"
 ---
 # <a name="install-collaboration-controls"></a>Установка элементов управления совместной работой
 
@@ -33,12 +33,11 @@ ms.locfileid: "67617980"
 
 Вы установите элементы управления совместной работы в среду dataverse с помощью [Microsoft AppSource.](https://appsource.microsoft.com/en-us/product/dynamics-365/mscm.collaboration-toolkit-preview?flightCodes=collaborationcontrols&signInModalType=2&ctaType=1)
 
-
 Вы сможете настраивать и использовать компоненты в собственном приложении на основе модели только после перехода в [Microsoft AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscm.collaboration-toolkit-preview?flightCodes=collaborationcontrols&signInModalType=2&ctaType=1)  и установки элементов управления совместной работы в среду dataverse.
 
 Элементы управления совместной работой включают следующие решения:
 
-|**Решения для параметров** | **Назначение** |
+|**Решения параметров** | **Назначение** |
 |---|---|
 | Параметры элементов управления совместной работы | Хранение инфраструктуры параметров, которая работает с элементами управления совместной работы |
 | Элементы управления совместной работой — объекты параметров | Предоставляет предварительно определенные значения параметров, используемые элементами управления совместной работы.|
@@ -62,20 +61,20 @@ ms.locfileid: "67617980"
 
 1. Нажмите **кнопку "Получить сейчас** ".
 
-   :::image type="content" source="../assets/images/collaboration-control/preview-form.png" alt-text="Форма предварительного просмотра "border="true":::
+   :::image type="content" source="../assets/images/collaboration-control/preview-form.png" alt-text="Снимок экрана: кнопка &quot;Получить сейчас&quot;, чтобы отобразить элемент управления &quot;Совместная работа&quot;."border="true":::
 
 1. Войдите с помощью своей учетной записи, заполните форму и нажмите кнопку **"Продолжить"**.
 
-   :::image type="content" source="../assets/images/collaboration-control/overview.png" alt-text="общие сведения об управлении совместной работой" border="true":::
+   :::image type="content" source="../assets/images/collaboration-control/overview.png" alt-text="Снимок экрана: обзор элемента управления &quot;Совместная работа&quot;." border="true":::
 
-   :::image type="content" source="../assets/images/collaboration-control/collaboration-controls-preview.png" alt-text="Управление совместной работой (предварительная версия)" border="true":::
+   :::image type="content" source="../assets/images/collaboration-control/collaboration-controls-preview.png" alt-text="Снимок экрана: предварительная версия элемента управления &quot;Совместная работа&quot;." border="true":::
 
 1. Вы будете перенаправлены в Центр Администратор Power Platform. Выберите среду в раскрывающемся меню и примите условия и инструкции политики.
 
    > [!TIP]
    > Если при выборе среды вы видите ошибку разрешений, попробуйте выбрать ее за пределами раскрывающегося меню среды, чтобы узнать, устранена ли проблема.
 
-   :::image type="content" source="../assets/images/collaboration-control/install-environment.png" alt-text="Установка среды управления совместной работой" border="true":::
+   :::image type="content" source="../assets/images/collaboration-control/install-environment.png" alt-text="Снимок экрана: пример установки среды управления совместной работой." border="true":::
 
 1. Выберите **"Установить**". Установка может занять около 15 минут.
 
@@ -85,7 +84,7 @@ ms.locfileid: "67617980"
 
 1. Перейдите **на вкладку** "Решения", чтобы просмотреть все решения, установленные в нужной среде.
 
-   :::image type="content" source="../assets/images/collaboration-control/solutions.png" alt-text="управление совместной работой решений" border= "true":::
+   :::image type="content" source="../assets/images/collaboration-control/solutions.png" alt-text="Снимок экрана: вкладка &quot;Решения&quot; для просмотра всех элементов управления совместной работой решений." border= "true":::
 
 > [!NOTE]
 > Элементы управления совместной работы доступны в режиме предварительной версии, и со временем элементы могут меняться, что может привести к критическим изменениям. Элементы управления совместной работы не поддерживаются в рабочих средах.

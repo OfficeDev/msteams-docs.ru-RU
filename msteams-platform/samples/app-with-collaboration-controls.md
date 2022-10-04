@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как создать
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: 119e02f6cc31d8642447e4e7406d461faff3a731
-ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+ms.openlocfilehash: f75f7ea3b014a9373ba1d643cede7055aa333ef5
+ms.sourcegitcommit: f2ac771cbd608e872604e9ac8ffec2d08f55ee1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243061"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68373047"
 ---
 # <a name="create-a-new-model-driven-app-with-collaboration-controls-for-teams"></a>Создание приложения на основе модели с элементами управления совместной работы для Teams
 
@@ -27,11 +27,11 @@ ms.locfileid: "68243061"
 
 1. Выберите **"Новое решение**", чтобы предоставить домашнее приложение для всех будущих настроек.
 
-   :::image type="content" source="../assets/images/collaboration-control/new-solution.png" alt-text="На снимке экрана показан пример нового решения.":::
+   :::image type="content" source="../assets/images/collaboration-control/new-solution.png" alt-text="Снимок экрана— это пример нового решения, которое предоставляет домашнее приложение для всех будущих настроек.":::
 
 1. Укажите имя и издателя нового решения. Это решение будет содержать пользовательские Диспетчер взаимодействия.
 
-   :::image type="content" source="../assets/images/collaboration-control/collaboration-manager.png" alt-text="На снимке экрана показан пример диспетчера совместной работы.":::
+   :::image type="content" source="../assets/images/collaboration-control/collaboration-manager.png" alt-text="Снимок экрана: пример, предоставляющий сведения об издателе нового решения.":::
 
 1. Нажмите кнопку **Создать**
 
@@ -39,11 +39,11 @@ ms.locfileid: "68243061"
 
 1. Перед созданием приложения создайте домашнее приложение для данных. Выберите **"Создать** > **таблицу** ", чтобы приступить к работе.
 
-     :::image type="content" source="../assets/images/collaboration-control/create-table.png" alt-text="На снимке экрана показано, как создать таблицу.":::
+     :::image type="content" source="../assets/images/collaboration-control/create-table.png" alt-text="Снимок экрана: создание новой таблицы.":::
 
 1. Присвойте таблице имя. В **разделе "Дополнительные параметры**" выберите **"Создать новое действие"**.
 
-   :::image type="content" source="../assets/images/collaboration-control/new-activity.png" alt-text="На снимке экрана показано, как создать новое действие.":::
+   :::image type="content" source="../assets/images/collaboration-control/new-activity.png" alt-text="Снимок экрана: создание нового действия.":::
 
 1. Нажмите кнопку **Сохранить**.
 
@@ -51,29 +51,29 @@ ms.locfileid: "68243061"
 
 1. Теперь вы можете создать приложение на основе модели, **выбрав новое** >  >  приложение на основе модели **приложения.**
 
-   :::image type="content" source="../assets/images/collaboration-control/model-driven-app.png" alt-text="На снимке экрана показан пример нового приложения на основе модели.":::
+   :::image type="content" source="../assets/images/collaboration-control/model-driven-app.png" alt-text="Снимок экрана: пример создания приложения на основе модели.":::
 
 1. Выберите новый **современный конструктор приложений (предварительная версия),** чтобы открыть новое приложение.
 
-   :::image type="content" source="../assets/images/collaboration-control/model-driven-app-blank.png" alt-text="На снимке экрана показан пример пустого нового приложения на основе модели.":::
+   :::image type="content" source="../assets/images/collaboration-control/model-driven-app-blank.png" alt-text="Снимок экрана: пример, в котором новое приложение на основе модели пустое, и вы можете выбрать интерфейс создания.":::
 
 1. Нажмите **кнопку "Создать".**
 
 1. Присвойте приложению имя и нажмите кнопку **"Создать".**
 
-   :::image type="content" source="../assets/images/collaboration-control/collaboration-manager-for-inspection.png" alt-text="На снимке экрана показан пример диспетчера совместной работы для проверки.":::
+   :::image type="content" source="../assets/images/collaboration-control/collaboration-manager-for-inspection.png" alt-text="Снимок экрана: пример добавления диспетчера совместной работы для проверки и создания нового приложения на основе модели.":::
 
 1. Выберите **"Добавить страницу".**
 
 1. Выберите **представление и форму на основе таблицы.**
 
-   :::image type="content" source="../assets/images/collaboration-control/table-based.png" alt-text="На снимке экрана показан пример представления и формы на основе таблицы.":::
+   :::image type="content" source="../assets/images/collaboration-control/table-based.png" alt-text="Снимок экрана: пример представления и формы на основе таблицы, где можно выбрать тип страницы.":::
 
 1. Нажмите **кнопку "Далее".**
 
 1. Найдите и выберите созданную ранее таблицу.
 
-   :::image type="content" source="../assets/images/collaboration-control/table-view-form-pages.png" alt-text="Снимок экрана — это пример, на котором показаны страницы формы представления таблицы.":::
+   :::image type="content" source="../assets/images/collaboration-control/table-view-form-pages.png" alt-text="Снимок экрана: пример, на котором показаны страницы форм представления таблицы и можно выбрать созданную таблицу.":::
 
 1. Нажмите **кнопку "Добавить".**
 
@@ -93,54 +93,54 @@ ms.locfileid: "68243061"
 
 1. Перейдите на вкладку "Формы" для таблицы.
 
-     :::image type="content" source="../assets/images/collaboration-control/forms-tab.png" alt-text="На снимке экрана показан пример вкладки &quot;Формы&quot; для таблицы.":::
+     :::image type="content" source="../assets/images/collaboration-control/forms-tab.png" alt-text="Снимок экрана: пример, на котором показана вкладка &quot;Формы&quot; для таблицы.":::
 
 1. Выберите форму information типа Формы **Main** , чтобы открыть ее в конструкторе форм.
 
 1. В конструкторе форм нажмите и перетащите вкладку **с 1 столбцом** из раздела **"** Компоненты".
 
-     :::image type="content" source="../assets/images/collaboration-control/components.png" alt-text="На снимке экрана показан пример компонентов power apps.":::
+     :::image type="content" source="../assets/images/collaboration-control/components.png" alt-text="Снимок экрана: пример, на котором показаны компоненты power apps.":::
 
 1. После выбора вкладки переименуйте вкладку в "Задачи" в области свойств.
 
 1. Выберите имя вкладки, чтобы выбрать полный раздел, а затем на панели "Свойства" выберите "Развернуть первый компонент до **полной** ". Это необходимо, так как элементы управления совместной работы лучше всего просматривать во всех представлениях вкладок.
 
-    :::image type="content" source="../assets/images/collaboration-control/tasks-pane.png" alt-text=" На снимке экрана показано, как выбрать первый компонент до полной вкладки.":::
+    :::image type="content" source="../assets/images/collaboration-control/tasks-pane.png" alt-text=" Снимок экрана: выбор первого компонента до полной вкладки.":::
 
-     :::image type="content" source="../assets/images/collaboration-control/expand-first-component.png" alt-text=" На снимке экрана показано, как развернуть первый компонент до полной вкладки.":::
+     :::image type="content" source="../assets/images/collaboration-control/expand-first-component.png" alt-text=" Снимок экрана: развертывание первого компонента до полной вкладки.":::
 
 1. Разверните категорию "Совместная работа (предварительная версия) на панели элементов управления и перетащите элемент управления "Задачи (предварительная версия) в раздел в форме "Задачи".
 
-     :::image type="content" source="../assets/images/collaboration-control/collab-preview.png" alt-text="Предварительный просмотр элемента управления в разделе в форме задач":::
+     :::image type="content" source="../assets/images/collaboration-control/collab-preview.png" alt-text="Снимок экрана: просмотр элемента управления в разделе в форме задач.":::
 
 3. Задайте для таблицы & "Готово".
 
-     :::image type="content" source="../assets/images/collaboration-control/select-table-activities.png" alt-text="Выбор таблицы для действий":::
+     :::image type="content" source="../assets/images/collaboration-control/select-table-activities.png" alt-text="Снимок экрана: выбор таблицы для действий.":::
 
 5. Выберите "Скрыть метку" в свойстве.
 
-     :::image type="content" source="../assets/images/collaboration-control/hide-label-properties.png" alt-text="Выберите &quot;Скрыть метку&quot;":::
+     :::image type="content" source="../assets/images/collaboration-control/hide-label-properties.png" alt-text="Снимок экрана: выбор скрытия метки.":::
 
-1. Теперь отобразится элемент управления "Задачи".
+1. Теперь появится элемент управления "Задачи".
 
-     :::image type="content" source="../assets/images/collaboration-control/new-collab-control.png" alt-text="Отображение элемента управления &quot;Задачи&quot;":::
+     :::image type="content" source="../assets/images/collaboration-control/new-collab-control.png" alt-text="Снимок экрана: пример отображения элемента управления &quot;Задачи&quot;.":::
 
 1. Повторите шаги "Задачи", чтобы добавить в приложение элементы управления "Утверждения", "Файлы", "Собрания" и "Заметки".
 1. После добавления всех элементов управления вы увидите элементы управления, отображаемые ниже в конструкторе форм. Если элемент управления не отображается в конструкторе форм, например отображает пустую форму, запустите приложение в Power Apps, а наличие страницы "настройка" или "пустое состояние" означает, что элемент управления был успешно добавлен.
 
-     :::image type="content" source="../assets/images/collaboration-control/new-collab-approval.png" alt-text="Конструктор форм элементов управления":::
+     :::image type="content" source="../assets/images/collaboration-control/new-collab-approval.png" alt-text="Снимок экрана: конструктор форм &quot;Элементы управления&quot; успешно добавлен.":::
 
 1. Теперь вы можете запустить приложение power в Power Apps, выбрав его.
 
-     :::image type="content" source="../assets/images/collaboration-control/collaboration-manager-for-inspections-power-apps.png" alt-text="Диспетчер совместной работы для проверки":::
+     :::image type="content" source="../assets/images/collaboration-control/collaboration-manager-for-inspections-power-apps.png" alt-text="Снимок экрана: запуск приложения power, выбрав диспетчер совместной работы для проверки.":::
 
 1. Создайте новую запись, выбрав " **+ Создать** ", а затем откройте запись.
 
-     :::image type="content" source="../assets/images/collaboration-control/power-apps-open-the-record.png" alt-text="На снимке экрана показан пример power apps, которые открывают запись.":::
+     :::image type="content" source="../assets/images/collaboration-control/power-apps-open-the-record.png" alt-text="Снимок экрана: создание новой записи.":::
 
 1. Теперь можно просмотреть представления для каждой вкладки, которые выглядят примерно так, как показано на следующем рисунке:
 
-     :::image type="content" source="../assets/images/collaboration-control/tabs.png" alt-text="На снимке экрана показан пример задач.":::
+     :::image type="content" source="../assets/images/collaboration-control/tabs.png" alt-text="Снимок экрана: пример, показывающий представление для каждой вкладки.":::
 
      > [!TIP]
      > Элементы управления отображаются только после сохранения записи в приложении. Если вкладки элементов управления не отображаются в записи, попробуйте обновить браузер или повторно опубликовать приложение из Power Apps.
@@ -161,7 +161,7 @@ ms.locfileid: "68243061"
 |Идентификатор диска|файлы SharePoint;|
 
 > [!NOTE]
-> Параметры являются crtical для запуска приложения, поэтому убедитесь, что вы выполните описанные ниже действия. Если у вас есть проблемы при запуске и сохранении элементов управления, повторно проверьте значения.
+> Параметры очень важны для запуска приложения, поэтому убедитесь, что вы выполните рекомендуемые действия. Если у вас есть проблемы при запуске и сохранении элементов управления, повторно проверьте значения.
 
 Идентификатор группы можно получить, создав новую команду или используя существующую команду в Microsoft Teams для размещения приложения и создания переменных параметров.
 
@@ -173,7 +173,7 @@ ms.locfileid: "68243061"
 
 1. Щелкните многоточие **и** выберите команду **"Получить ссылку"**.
 
-     :::image type="content" source="../assets/images/collaboration-control/get-link.png" alt-text="На снимке экрана показано, как связаться с командой.":::
+     :::image type="content" source="../assets/images/collaboration-control/get-link.png" alt-text="Снимок экрана: получение ссылки на команду.":::
 
 1. Скопируйте ссылку и запишите значение из `groupId` URL-адреса. Это значение будет использоваться на более позднем этапе при определении параметров решения.
 
@@ -187,14 +187,14 @@ ms.locfileid: "68243061"
 
      1. **Идентификатор сайта**: с помощью [песочници Graph](https://developer.microsoft.com/graph/graph-explorer) войдите и предоставьте разрешения directory.ReadWrite.All и User.ReadWrite.All.
 
-         :::image type="content" source="../assets/images/collaboration-control/graph-permissions.png" alt-text="На снимке экрана показан пример песочници Graph.":::
+         :::image type="content" source="../assets/images/collaboration-control/graph-permissions.png" alt-text="Снимок экрана: пример, на котором показан песочницу Graph.":::
 
      1. Убедитесь, что вы замените имя узла и относительный путь к пути к сайту, и выполните вызов графа `https://graph.microsoft.com/v1.0/sites/{hostname}:/{relative-path-to-site}`. Ниже приведен пример:
          1. Если URL-адрес сайта = `https://myhostname.sharepoint.com/sites/MySiteName`
          1. Имя узла = `myhostname.sharepoint.com`
          1. Относительный путь к сайту = `sites/MySiteName`
 
-              :::image type="content" source="../assets/images/collaboration-control/graph-call.png" alt-text="На снимке экрана показан пример вызова Graph.":::
+              :::image type="content" source="../assets/images/collaboration-control/graph-call.png" alt-text="Снимок экрана: пример вызова Graph.":::
 
             Вызов графа будет выглядеть следующим образом: `https://graph.microsoft.com/v1.0/sites/myhostname.sharepoint.com:/sites/MySiteName`
 
@@ -225,15 +225,15 @@ ms.locfileid: "68243061"
 
 1. Запустите элемент управления, и вы увидите окно следующим образом:
 
-     :::image type="content" source="../assets/images/collaboration-control/launch-window.png" alt-text="На снимке экрана показан пример окна управления.":::
+     :::image type="content" source="../assets/images/collaboration-control/launch-window.png" alt-text="Снимок экрана: пример окна управления.":::
 
 1. Выберите **"Настроить"** и перейдите на вкладку "Общие", чтобы добавить идентификатор группы.
 
-     :::image type="content" source="../assets/images/collaboration-control/groupid-general.png" alt-text="На снимке экрана показано, как добавить идентификатор группы на вкладке &quot;Общие&quot;.":::
+     :::image type="content" source="../assets/images/collaboration-control/groupid-general.png" alt-text="Снимок экрана: добавление идентификатора группы на вкладке &quot;Общие&quot;.":::
 
 1. Откройте вкладку "Файлы", чтобы добавить идентификатор сайта и идентификатор диска.
 
-     :::image type="content" source="../assets/images/collaboration-control/files-tab.png" alt-text="На снимке экрана показано, как добавить идентификатор сайта и идентификатор диска на вкладке &quot;Файлы&quot;.":::
+     :::image type="content" source="../assets/images/collaboration-control/files-tab.png" alt-text="Снимок экрана: добавление идентификатора сайта и диска на вкладке &quot;Файлы&quot;.":::
 
 Элементу управления Notes не требуется значение параметра. Теперь вы можете создавать в приложении такие сущности, как "Задачи" и "Собрания". Если у вас возникают проблемы с запуском и сохранением элементов управления, повторно проверьте значения параметров.
 
@@ -247,13 +247,13 @@ ms.locfileid: "68243061"
 
 1. Чтобы создать задачу для команды, выберите " **Добавить задачу"**. Откроется диалоговое окно, в котором можно указать конкретные сведения о задаче и назначить ее соответствующим сотрудникам в команде и выбрать команду "Сохранить".
 
-     :::image type="content" source="../assets/images/collaboration-control/add-task.png" alt-text="На снимке экрана показано, как добавить задачу.":::
+     :::image type="content" source="../assets/images/collaboration-control/add-task.png" alt-text="Снимок экрана: добавление задачи.":::
 
 1. Сохраненная задача появится в списке задач.
 
 1. Так как все задачи поддерживаются Планировщик (Майкрософт). Пользователи могут использовать приложение "Задачи" в Microsoft Teams, чтобы просмотреть все назначенные задачи. Чтобы приступить к работе, нажмите многоточие **...** в левой области Teams. Найдите и выберите "Задачи по планировщику" и "Задачи".
 
-     :::image type="content" source="../assets/images/collaboration-control/tasks-planner.png" alt-text="Снимок экрана— пример задач планировщика и задач.":::
+     :::image type="content" source="../assets/images/collaboration-control/tasks-planner.png" alt-text="Снимок экрана: пример задач по Планировщику и Задачам.":::
 
 1. После открытия приложения "Задачи по планировщику" и "Задачи для выполнения" пользователи могут просматривать все задачи, созданные в  приложении, в разделе "Назначено мне" приложения. Пользователи также могут просматривать сведения о задаче, добавлять вложения и помечать их как завершенные.
 
@@ -268,7 +268,7 @@ ms.locfileid: "68243061"
 
 Чтобы запланировать внутреннее собрание, щелкните раскрывающийся  список рядом с кнопкой "Создать собрание", а затем выберите "**Внутреннее собрание"**.
 
-:::image type="content" source="../assets/images/collaboration-control/new-meeting-tab.png" alt-text="На снимке экрана показано, как планировать внутренние собрания.":::
+:::image type="content" source="../assets/images/collaboration-control/new-meeting-tab.png" alt-text="Снимок экрана: планирование внутренних собраний.":::
 
 > [!NOTE]
 >
@@ -276,11 +276,11 @@ ms.locfileid: "68243061"
 
 В **диалоговом окне** "Создание собрания" пользователи могут предоставить соответствующие сведения о собрании и выбрать команду **"Сохранить"**. Собрание появится в списке собраний.
 
-:::image type="content" source="../assets/images/collaboration-control/new-meeting.png" alt-text="На снимке экрана показано, как запланировать новое собрание.":::
+:::image type="content" source="../assets/images/collaboration-control/new-meeting.png" alt-text="Снимок экрана: планирование нового собрания.":::
 
 Чтобы запланировать внешнее собрание с клиентом, щелкните раскрывающийся  список рядом с кнопкой "Создать собрание" и выберите **"Резервирование клиента"**. Если параметр **"** Резервирование клиентов" недоступен в  раскрывающемся списке "Новое собрание", убедитесь, что приложение настроено Microsoft Bookings параметрах и у пользователя есть роль администратора Bookings. Дополнительные сведения см. [в статье "Добавление персонала в Bookings"](/microsoft-365/bookings/add-staff?view=o365-worldwide&preserve-view=true). Вы можете добавить дополнительные типы резервирования, добавив дополнительные службы в пределах вашего бизнеса Bookings.
 
-:::image type="content" source="../assets/images/collaboration-control/customer-booking.png" alt-text="На снимке экрана показано, как запланировать обслуживание клиентов Bookings.":::
+:::image type="content" source="../assets/images/collaboration-control/customer-booking.png" alt-text="Снимок экрана: планирование резервирования клиентов.":::
 
 Пользователи могут просматривать как внутренние собрания, так и резервирования клиентов в списке собраний. После начала собрания пользователи могут присоединиться, настроив кнопку  "Присоединиться", которая открывает собрание непосредственно в Microsoft Teams.
 
@@ -294,13 +294,13 @@ ms.locfileid: "68243061"
 
 В области слева в разделе "Общие календари" должен появиться дополнительный календарь с именем пользователя.
 
-:::image type="content" source="../assets/images/collaboration-control/customer-booking.png" alt-text="На снимке экрана показано, как запланировать обслуживание клиентов Bookings.":::
+:::image type="content" source="../assets/images/collaboration-control/customer-booking.png" alt-text="Снимок экрана: планирование резервирования клиентов.":::
 
 ### <a name="add-files"></a>Добавление файлов
 
 Откройте **вкладку "** Файлы" в приложении и **выберите "Отправить**", чтобы отправить файлы OneDrive для бизнеса или с компьютера. После успешной отправки файла основное представление списка автоматически обновляется, чтобы отобразить файлы в списке.
 
-:::image type="content" source="../assets/images/collaboration-control/meeting-calendar.png" alt-text="На снимке экрана показано, как открыть общий календарь.":::
+:::image type="content" source="../assets/images/collaboration-control/meeting-calendar.png" alt-text="Снимок экрана: открытие общего календаря.":::
 
 ### <a name="approvals"></a>Утверждения
 
@@ -310,15 +310,15 @@ ms.locfileid: "68243061"
 
 1. Если запросы на утверждение отсутствуют, пользователи видят следующий экран.
 
-      :::image type="content" source="../assets/images/collaboration-control/no-approvals.png" alt-text="Снимок экрана — это пример, в котором не отображаются запросы на утверждение.":::
+      :::image type="content" source="../assets/images/collaboration-control/no-approvals.png" alt-text="Снимок экрана: пример, в котором не отображаются запросы на утверждение.":::
 
 1. Выберите новый **запрос на утверждение,** чтобы открыть форму запроса на утверждение.
 
-      :::image type="content" source="../assets/images/collaboration-control/approval-request-form.png" alt-text="На снимке экрана показан пример новой формы запроса на утверждение.":::
+      :::image type="content" source="../assets/images/collaboration-control/approval-request-form.png" alt-text="Снимок экрана: пример новой формы запроса на утверждение.":::
 
 1. В форме запроса на утверждение заполните необходимые поля и выберите команду **"** Отправить", которая создает запрос и добавляется в список.
 
-      :::image type="content" source="../assets/images/collaboration-control/approvals-list.png" alt-text="Снимок экрана — это пример, показывающий список утверждений.":::
+      :::image type="content" source="../assets/images/collaboration-control/approvals-list.png" alt-text="Снимок экрана: пример, показывающий список утверждений.":::
 
 1. Выберите утверждение, чтобы просмотреть сведения.
 

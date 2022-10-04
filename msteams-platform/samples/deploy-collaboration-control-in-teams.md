@@ -5,12 +5,12 @@ description: В этом модуле вы узнаете, как разверн
 ms.localizationpriority: medium
 ms.author: v-npaladugu
 ms.topic: conceptual
-ms.openlocfilehash: 75a2aa9d09247ac152c31df02f2bb8d4fb507619
-ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+ms.openlocfilehash: 816dd8052cdfb13ab83bfc34ae2a99a16f9f9569
+ms.sourcegitcommit: f2ac771cbd608e872604e9ac8ffec2d08f55ee1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68027307"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68373040"
 ---
 # <a name="deploy-collaboration-controls-to-microsoft-teams"></a>Развертывание элементов управления совместной работы в Microsoft Teams
 
@@ -34,31 +34,31 @@ ms.locfileid: "68027307"
 
 1. Найдите и выберите **определение параметра**.
 
-     :::image type="content" source="../assets/images/collaboration-control/settings-defnition.png" alt-text="Определение параметра":::
+     :::image type="content" source="../assets/images/collaboration-control/settings-defnition.png" alt-text="Снимок экрана: поиск и задание определения в Power Apps.":::
 
 1. Найдите и **выберите "Скрыть панель навигации** " в списке определений параметров. Это скрывает левую панель в приложении.
 
-     :::image type="content" source="../assets/images/collaboration-control/hide-the-nav-bar.png" alt-text="Скрытие панели навигации":::
+     :::image type="content" source="../assets/images/collaboration-control/hide-the-nav-bar.png" alt-text="Снимок экрана, на котором показано, как скрыть панель навигации.":::
 
 1. В правом нижнем углу приложения на панели редактирования есть раздел " **Настройка значений приложения"**. Если вы создали приложение с помощью современного конструктора приложений, оно появится в списке. Выберите **значение нового приложения** в разделе приложения.
 
 1. Измените значение с **"Нет"** на **"Да".**
 
-     :::image type="content" source="../assets/images/collaboration-control/value-to-yes.png" alt-text="Измените значение на &quot;Да&quot;":::
+     :::image type="content" source="../assets/images/collaboration-control/value-to-yes.png" alt-text="Снимок экрана: раскрывающийся список для выбора значения &quot;Да&quot;.":::
 
 1. Нажмите **кнопку "Сохранить".**
 
 1. Найдите и выберите **заголовок** страницы "Приложение с высокой плотностью" в списке определений параметров и повторите процесс.
 
-     :::image type="content" source="../assets/images/collaboration-control/density-page-header.png" alt-text="Заголовок страницы плотности":::
+     :::image type="content" source="../assets/images/collaboration-control/density-page-header.png" alt-text="Снимок экрана: выбор заголовка страницы с высокой плотностью приложения.":::
 
 1. Выберите **"Назад к решениям"**.
 
-     :::image type="content" source="../assets/images/collaboration-control/default-solution.png" alt-text="Решение по умолчанию":::
+     :::image type="content" source="../assets/images/collaboration-control/default-solution.png" alt-text="На снимке экрана показано решение по умолчанию.":::
 
 1. Выберите **"Опубликовать все настройки"** , чтобы опубликовать всю выполненную работу.
 
-     :::image type="content" source="../assets/images/collaboration-control/publish-cusomization.png" alt-text="Публикация всех настроек":::
+     :::image type="content" source="../assets/images/collaboration-control/publish-cusomization.png" alt-text="Опубликуйте все настройки.":::
 
 ## <a name="add-the-app-to-microsoft-teams-app-catalog"></a>Добавление приложения в каталог приложений Microsoft Teams
 
@@ -66,11 +66,11 @@ ms.locfileid: "68027307"
 
 Чтобы добавить приложение в Teams, выберите **"Добавить в Teams"**.
 
-:::image type="content" source="../assets/images/collaboration-control/add-to-teams.png" alt-text="Добавление в Teams":::
+:::image type="content" source="../assets/images/collaboration-control/add-to-teams.png" alt-text="Добавьте в Teams.":::
 
 При выборе **параметра "** Добавить в Teams" откроется диалоговое окно, в котором можно просмотреть сведения и выбрать "Скачать приложение **", которое** сохраняет манифест приложения Microsoft Teams на устройстве.
 
-:::image type="content" source="../assets/images/collaboration-control/colab-manager-inspection.png" alt-text="На снимке экрана показан пример проверки диспетчера совместной работы":::
+:::image type="content" source="../assets/images/collaboration-control/colab-manager-inspection.png" alt-text="На снимке экрана показан пример проверки диспетчера совместной работы.":::
 
 Чтобы отправить приложение в Teams, см. [статью "Отправка приложения в Team"](~/concepts/deploy-and-publish/apps-upload.md).
 
@@ -100,7 +100,7 @@ ms.locfileid: "68027307"
      1. **Администратора:** Найдите пользователя в организации, которого вы хотите назначить администратором, введя символы.
      1. **Тип команды:** Выберите тип команды. В следующих шагах предполагается, что вы выбрали "Владелец" из раскрывающегося списка. Другие типы команд (команда Microsoft 365 и Microsoft Azure Active Directory) автоматически заполняют участников команды из Azure Active Directory.
 
-         :::image type="content" source="../assets/images/collaboration-control/new-team.png" alt-text="Новая команда":::
+         :::image type="content" source="../assets/images/collaboration-control/new-team.png" alt-text="Снимок экрана: выбор нового типа команды.":::
 
      1. Убедитесь, что вы записали имя команды. Это потребуется позже, чтобы назначить эту команду владельцем записи.
 
@@ -115,7 +115,7 @@ ms.locfileid: "68027307"
 
 1. Чтобы добавить новых участников группы, выберите **"+ Добавить участников группы** " и выберите пользователей из вашей организации для добавления.
 
-     :::image type="content" source="../assets/images/collaboration-control/add-team-members.png" alt-text="На снимке экрана показано, как добавить участников команды":::
+     :::image type="content" source="../assets/images/collaboration-control/add-team-members.png" alt-text="На снимке экрана показано, как добавить участников команды.":::
 
 1. Чтобы удалить участника группы, выберите пользователя и нажмите кнопку **"Удалить"**.
 
@@ -125,7 +125,7 @@ ms.locfileid: "68027307"
 
 1. Выберите **роли безопасности**.
 
-     :::image type="content" source="../assets/images/collaboration-control/users-permission.png" alt-text="Разрешение пользователей":::
+     :::image type="content" source="../assets/images/collaboration-control/users-permission.png" alt-text="Снимок экрана: добавление новых участников группы для разрешений пользователей.":::
 
 1. Выберите " **Новая роль"** в левом верхнем углу страницы, после которой откроется новая страница.
 
@@ -135,7 +135,7 @@ ms.locfileid: "68027307"
 
      1. Предоставьте разрешения организации (полный зеленый круг) для каждой сущности совместной **работы, карты** совместной **работы,** метаданных совместной работы и **корневого каталога совместной работы**.
 
-         :::image type="content" source="../assets/images/collaboration-control/collab-map.png" alt-text="Схема совместной работы":::
+         :::image type="content" source="../assets/images/collaboration-control/collab-map.png" alt-text="Снимок экрана: создание роли безопасности на карте совместной работы.":::
 
 1. Нажмите **кнопку "Сохранить** и **закрыть"**.
 
@@ -147,7 +147,7 @@ ms.locfileid: "68027307"
 
 1. Выберите **"Управление ролями безопасности** " в заголовке.
 
-     :::image type="content" source="../assets/images/collaboration-control/edit-team.png" alt-text="Команда редактирования":::
+     :::image type="content" source="../assets/images/collaboration-control/edit-team.png" alt-text="Снимок экрана: карта совместной работы, метаданные совместной работы и корневой каталог совместной работы. для команды редактирования.":::
 
 1. Выберите роли, [созданные в роли безопасности](#create-a-security-role).
 
