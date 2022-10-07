@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
 ms.date: 04/07/2022
-ms.openlocfilehash: 631fa01f8e3909495281a95205a70f88a729648f
-ms.sourcegitcommit: 3aaccc48906fc6f6fbf79916af5664bf55537250
+ms.openlocfilehash: 4284babe1015a041bf36e24c74d9a33225bf5e8a
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68295979"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499204"
 ---
 # <a name="enable-and-configure-apps-for-meetings"></a>Включение и настройка приложений для собраний
 
@@ -42,6 +42,7 @@ ms.locfileid: "68295979"
 > * Приложения на собраниях требуют или `groupchat` области `team` . Область `team` работает для вкладок в каналах или собраниях каналов.
 > * Чтобы поддерживать добавление вкладок в запланированные собрания каналов, укажите область **группы** в разделе **областей** в манифесте приложения. Без **области** группы приложение не будет отображаться во всплывающем окне для собраний канала.
 > * Приложения на собраниях могут использовать следующие контексты: `meetingChatTab`, `meetingDetailsTab`, `meetingSidePanel` и `meetingStage`.
+> * Делегированные разрешения RSC `MeetingStage.Write.Chat` `ChannelMeetingStage.Write.Group` и необходимы в манифесте для предоставления общего доступа к этапу собрания.
 
 Следующий фрагмент кода является примером настраиваемой вкладки, используемой в приложении для собраний Teams:
 

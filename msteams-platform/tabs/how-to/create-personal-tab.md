@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 25f4db19c2f89031d5bb4566793586d1c8988ceb
-ms.sourcegitcommit: e4ccbbdce620418c129689c0ba6ad246a81068c0
+ms.openlocfilehash: 40fecae63c563ae110dedf9e1430f5207574f969
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2022
-ms.locfileid: "68329093"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499212"
 ---
 # <a name="create-a-personal-tab"></a>Создание личной вкладки
 
@@ -193,13 +193,13 @@ ms.locfileid: "68329093"
 
 1. Сохраните обновленный файл `manifest.json`.
 
-1. Откройте **Tab.ts** в Visual Studio Code по следующему пути, чтобы предоставить страницу содержимого в IFrame:
+1. Откройте **tab.ts** в Visual Studio Code из следующего пути, чтобы предоставить страницу содержимого в iFrame:
 
     ```bash
     ./src/server/<yourDefaultTabNameTab>/<yourDefaultTabNameTab>.ts
     ```
 
-1. Добавьте следующее в список декораторов IFrame:
+1. Добавьте следующий код в список декораторов iFrame:
 
     ```typescript
      @PreventIframe("/<yourDefaultTabName Tab>/personal.html")
@@ -485,7 +485,7 @@ public void Configure(IApplicationBuilder app)
 * **Прозрачный контурный значок** размером 32 x 32 пикселя.
 * Файл `manifest.json`, определяющий атрибуты приложения.
 
-Эти файлы должны быть заархивированы в пакете приложения для использования при загрузке вкладки в Teams. Teams загружает `contentUrl`, указанные в манифесте, встраивает их в IFrame и отображает на вкладке.
+Эти файлы должны быть заархивированы в пакете приложения для использования при загрузке вкладки в Teams. Teams загружает указанные `contentUrl` в манифесте данные, внедряет их в iFrame и отображает на вкладке.
 
 #### <a name="csproj"></a>.csproj
 

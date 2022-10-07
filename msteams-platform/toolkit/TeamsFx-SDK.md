@@ -6,12 +6,12 @@ ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: 9d870680e146564bb23db0193d2e2b116a249009
-ms.sourcegitcommit: 16898eebeddc1bc1ac0d9862b4627c3bb501c109
+ms.openlocfilehash: e28e726a1915cdbc8fddf501b0352d160673516c
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2022
-ms.locfileid: "68327589"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499169"
 ---
 # <a name="teamsfx-sdk"></a>Пакет SDK TeamsFx
 
@@ -179,6 +179,7 @@ TeamsFx SDK provides several functions to ease the configuration for third-party
 * clientSecret (M365_CLIENT_SECRET)
 * applicationIdUri (M365_APPLICATION_ID_URI)
 * apiEndpoint (API_ENDPOINT)
+
 * sqlServerEndpoint (SQL_ENDPOINT) // используется только при наличии экземпляра SQL
 * sqlUsername (SQL_USER_NAME) // используется только при наличии экземпляра sql
 * sqlPassword (SQL_PASSWORD) // используется только при наличии экземпляра sql
@@ -254,9 +255,9 @@ try {
     <details>
     <summary><b>Интеграция с Microsoft Graph Toolkit</b></summary>
 
-    Библиотека [Microsoft Graph Toolkit (mgt)](https://aka.ms/mgt) — это коллекция различных поставщиков проверки подлинности и компонентов пользовательского интерфейса на базе Microsoft Graph.
+    Библиотека [Microsoft Graph Toolkit](https://aka.ms/mgt) — это коллекция различных поставщиков проверки подлинности и компонентов пользовательского интерфейса на базе Microsoft Graph.
 
-    Пакет `@microsoft/mgt-teamsfx-provider` предоставляет класс, `TeamsFxProvider` использующий `TeamsFx` класс для входа пользователей и получения маркеров для использования с Graph.
+    Пакет `@microsoft/mgt-teamsfx-provider` предоставляет класс, `TeamsFxProvider` использующий `TeamsFx` класс для входа пользователей и получения маркеров для использования с Microsoft Graph.
 
     1. Вы можете установить следующие необходимые пакеты:
 

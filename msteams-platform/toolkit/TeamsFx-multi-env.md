@@ -6,12 +6,12 @@ ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 11/29/2021
-ms.openlocfilehash: 964e7d8ad6e643d26178e04fb9ce706bb177f1d1
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 20bdb351eeff9a11d9460cf8206cfdc7dcbea0ff
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780998"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499302"
 ---
 # <a name="manage-multiple-environments"></a>Управление несколькими средами
 
@@ -156,7 +156,7 @@ ms.locfileid: "67780998"
 4. Откройте файл конфигурации `.fx/configs/config.staging.json`.
 5. Добавьте то же свойство в `my app description for staging`.
 6. Откройте шаблон манифеста приложения `templates/appPackage/manifest.template.json`Teams.
-7. Обновите свойство, **`description`** > **`short`** чтобы использовать **переменную,** определенную в настройках файлов с синтаксисом кэша **`{{config.manifest.description.short}}`**.
+7. Обновите свойство, **`description`** > **`short`** чтобы использовать **переменную,** определенную в настройках файлов с синтаксисом фигурных скобок **`{{config.manifest.description.short}}`**.
   
   Обновления:`manifest.template.json`
 

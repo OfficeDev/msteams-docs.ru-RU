@@ -6,12 +6,12 @@ ms.author: surbhigupta
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/20/2022
-ms.openlocfilehash: 2091649581686b376d2486a874118d36fd6a984b
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: 0df9cc75b6a9775f9369b6a3bf8b95c35941207b
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67616655"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499323"
 ---
 # <a name="edit-azure-ad-manifest"></a>Изменение Azure AD манифеста
 
@@ -309,9 +309,9 @@ Azure AD шаблона манифеста имеет линзы кода для
       |**Не поддерживаемые свойства**|**Причина**|
       |-----------|----------|
       |passwordCredentials|Не разрешено в манифесте|
-      |createdDateTime|Только для чтения и не может изменить|
-      |logoUrl|Только для чтения и не может изменить|
-      |publisherDomain|Только для чтения и не может изменить|
+      |createdDateTime|Только для чтения и не может измениться|
+      |logoUrl|Только для чтения и не может измениться|
+      |publisherDomain|Только для чтения и не может измениться|
       |oauth2RequirePostResponse|В API Graph|
       |oauth2AllowUrlPathMatching|В API Graph|
       |samlMetadataUrl|В API Graph|

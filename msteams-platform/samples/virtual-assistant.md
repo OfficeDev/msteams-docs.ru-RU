@@ -3,12 +3,12 @@ title: Создание виртуального помощника
 description: Узнайте, как создать бот Виртуального помощника для Teams с помощью примеров кода и фрагментов кода с такими функциями, как адаптивные карточки, обработка прерываний и т. д.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.openlocfilehash: 12339ed10f1c6a6e30ebb74320fbf69018a6d3f9
-ms.sourcegitcommit: 0bb822b30739e4a532a36764dad2dbf35a81ba29
+ms.openlocfilehash: 4f35edee79dba5b6a8faa9720906915bec27d6d5
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67178606"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499281"
 ---
 # <a name="create-virtual-assistant"></a>Создание виртуального помощника
 
@@ -564,7 +564,7 @@ botskills connect --remoteManifest "<url to skill's manifest>" --luisFolder "<pa
     }
 ```
 
-Вы можете также использовать существующие навыки из [репозитория решений Bot Framework](https://github.com/microsoft/botframework-components/tree/main/skills/csharp) или создать новый навык с нуля. В создании навыка вам помогут [руководства по созданию нового навыка](https://microsoft.github.io/botframework-solutions/overview/skills/). Документацию по архитектуре виртуального помощника и навыков см. в статье [Архитектура виртуального помощника и навыков](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).  
+Вы можете также использовать существующие навыки из [репозитория решений Bot Framework](https://github.com/microsoft/botframework-components/tree/main/skills/csharp) или создать новый навык с нуля. В создании навыка вам помогут [руководства по созданию нового навыка](https://microsoft.github.io/botframework-solutions/overview/skills/). Документацию по архитектуре виртуального помощника и навыков см. в разделе ["Виртуальный помощник и архитектура навыков"](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).  
 
 ## <a name="limitations-of-virtual-assistant"></a>Ограничения виртуального помощника
 

@@ -3,12 +3,12 @@ title: Справочник по схеме манифеста
 description: В этой статье вы получите последнюю версию схемы общедоступного манифеста для справочника, схемы и примера полного манифеста Microsoft Teams.
 ms.topic: reference
 ms.localizationpriority: high
-ms.openlocfilehash: f797c44b49c29227ec973c0066bf98ee25590d35
-ms.sourcegitcommit: 176bbca74ba46b7ac298899d19a2d75087fb37c1
+ms.openlocfilehash: 2638c668bf1363a0f997786bcb958689626c70c6
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68376573"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499176"
 ---
 # <a name="app-manifest-schema-for-teams"></a>Схема манифеста приложения для Teams
 
@@ -499,7 +499,7 @@ Allows the specification of a default language and provides pointers to more lan
 
 ### <a name="botscommandlists"></a>bots.commandLists
 
-Список команд, которые ваш бот может рекомендовать пользователям. Объект — массив (не более двух элементов) со всеми элементами типа `object`; необходимо определить отдельный список команд для каждой области, поддерживаемой ботом. Дополнительные сведения см. в статье [Меню ботов](~/bots/how-to/create-a-bot-commands-menu.md).
+Список команд, которые ваш бот может рекомендовать пользователям. Объект — массив (не более двух элементов) со всеми элементами типа `object`; необходимо определить отдельный список команд для каждой области, поддерживаемой ботом. Подробнее см. в статье [Меню ботов](~/bots/how-to/create-a-bot-commands-menu.md).
 
 |Имя| Тип| Максимальный размер | Обязательный | Описание|
 |---|---|---|---|---|
@@ -643,9 +643,9 @@ Provides the native features on a user's device that your app requests access to
 
 **Необязательно** — логическое значение
 
-Indicates if or not to show the loading indicator when an app or tab is loading. Default is **false**.
+Указывает, следует ли отображать индикатор загрузки при загрузке приложения или вкладки. Значение по умолчанию: **false**.
 >[!NOTE]
->Если для `showLoadingIndicator` в манифесте приложения установлен значение "true", измените страницы содержимого на вкладках и в модулях задач, как описано в документе [Отображение собственного индикатора загрузки](../../tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator).
+>Если в `showLoadingIndicator` манифесте приложения выбрано значение true, то для правильной загрузки страницы измените страницы содержимого вкладок и модулей задач, как описано в статье "Отображение собственного документа индикатора загрузки[".](../../tabs/how-to/create-tab-pages/content-page.md#show-a-native-loading-indicator)
 
 ## <a name="isfullscreen"></a>isFullScreen
 

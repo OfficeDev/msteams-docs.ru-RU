@@ -5,12 +5,12 @@ description: Узнайте, как развернуть существующу�
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 1da3d1359da2878586dafef16dac9a868d074ff1
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: 076cf027e2696848319fc0beb7ae69c3633b8dc4
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189474"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499197"
 ---
 # <a name="add-teams-tab-to-sharepoint"></a>Добавление вкладки Teams в SharePoint
 
@@ -124,7 +124,7 @@ ms.locfileid: "66189474"
 1. Нажмите кнопку **Опубликовать** после завершения редактирования.
 
 1. Выберите **Добавить страницу в навигацию**, чтобы получить быструю ссылку на страницу в панели навигации слева.
-На следующем изображении показана вкладка в SharePoint.
+На следующем рисунке показана вкладка в SharePoint:
 
    ![Изображение вкладки в SharePoint](~/assets/images/tabs/tabs-in-sharepoint/image073.png)
 

@@ -6,12 +6,12 @@ ms.author: v-amprasad
 ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 11/29/2021
-ms.openlocfilehash: dc3a51d393a6445c26dddd54c471ecb630580b94
-ms.sourcegitcommit: dccb48902e08484692ab927415bcd3d61dc50db2
+ms.openlocfilehash: 7f092d18075030777f0978f6e963c8513256a0f5
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "67806910"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499183"
 ---
 # <a name="prepare-to-build-apps-using-teams-toolkit"></a>Подготовка к созданию приложений с помощью Набора средств Teams
 

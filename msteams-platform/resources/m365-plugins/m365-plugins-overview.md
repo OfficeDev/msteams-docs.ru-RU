@@ -4,12 +4,12 @@ description: В этой статье вы узнаете о подключае�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: Surbhigupta
-ms.openlocfilehash: 438093c5ffe9990c5aa7c8175131c654019c3120
-ms.sourcegitcommit: 79d525c0be309200e930cdd942bc2c753d0b718c
-ms.translationtype: HT
+ms.openlocfilehash: 56ba41598fb7d9e75aff92f240f7a3132988c1ec
+ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66841752"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499309"
 ---
 # <a name="microsoft-365-plugins"></a>Подключаемые модули Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "66841752"
 |[**Интеграция с Microsoft 365**](#microsoft-365-integration)|Создание экземпляров Teams для каждого курса в Moodle и синхронизация преподавателей в качестве владельцев, а учащихся — в качестве участников команд.|local_o365|
 |[**Репозиторий Microsoft 365**](#microsoft-365-repository) |Поддерживает контент OneDrive в Microsoft 365 для репозиториев файлов, чтобы снизить требования хранилища в Moodle.| repository_office 365|
 |[**Собрание Teams**](#teams-meetings) |Позволяет редактору Atto в Moodle создавать ссылки на собрания Teams.|atto_teamsmeeting |
-|[**Тема Teams**](#microsoft-365-teams-theme)| Удаление блоков Moodle и дополнительного хрома в iframes Moodle для Teams, который применяется при сопоставлении курсов с экземплярами Teams.| themeboost_o365teams |
+|[**Тема Teams**](#microsoft-365-teams-theme)| Удалите блоки Moodle и дополнительный хром в iFrames Moodle для Teams, который применяется при сопоставлении курсов с экземплярами Teams.| themeboost_o365teams |
 |[**OneNote**](#onenote-integration)| Включение OneNote для заданий, отправки и обратной связи.|local_onenote, assignsubmission_onenote и assignfeedback_onenote </br>|  
 |[**Блок Microsoft**](#microsoft-block) | Позволяет Microsoft 365 быстро получать доступ к блокам в Moodle со ссылками на службы совместной работы Microsoft 365 и ссылками на установку Microsoft Office.|block_microsoft |
 |[**Фильтр oEmbedr**](#oembed-filter) | Включение ссылок на видео в Moodle.|Filter_oembed|
