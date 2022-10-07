@@ -11,18 +11,18 @@ metadata:
   nextTutorialTitle: Дополнительные сведения об исходящих веб-перехватчиках
   ms.custom: mvc
   ms.localizationpriority: High
-  ms.openlocfilehash: d15f2d03d349ea5012bc3439d986a669036c0c65
-  ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+  ms.openlocfilehash: a34d28daeef5f7936217892760de0aeab446665d
+  ms.sourcegitcommit: ac59d469b823b80e65ee6f7be11ec5c365977a1c
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/30/2022
-  ms.locfileid: "68243565"
+  ms.lasthandoff: 10/06/2022
+  ms.locfileid: "68489921"
 items:
 - durationInMinutes: 1
   content: "Веб-перехватчики помогают Microsoft Teams интегрироваться с внешними приложениями. В Teams исходящие веб-перехватчики выступают в качестве бота и выполняют поиск сообщений в каналах с **помощью @mention**. Исходящие веб-перехватчики позволяют пользователям отправлять сообщения в веб-службы без выполнения всего процесса создания ботов с помощью Microsoft Bot Framework. Исходящие веб-перехватчики выгружают данные из Teams в любую службу, которая может принимать полезные данные JSON. \n\n**Основные функции исходящих веб-перехватчиков**\n\n* Отправка уведомлений во внешнюю веб-службу.\n* Отвечайте с помощью текстовых сообщений, включая карточки и изображения. \n* Получение сообщений в общедоступных каналах, а не в личной или частной области.\n* Отправьте HTTP POST в веб-службу и получите ответ. \n\n > [!NOTE]\n > Исходящие веб-перехватчики не могут получить доступ к другим API, таким как получение списка или списка каналов в команде.\n\nЭто пошаговое руководство поможет вам создать исходящие веб-перехватчики в Teams. Вы увидите следующие выходные данные:\n\n![Готов](~/assets/images/sbs-outgoing-webhooks/output-result1.png)\n"
 - title: Предварительные требования
   durationInMinutes: 1
-  content: "Установите следующие средства и настройте среду разработки:  \n\n* [Microsoft Teams с](https://teams.microsoft.com/) действительной учетной записью\n* [Последняя версия Visual Studio](https://visualstudio.microsoft.com/downloads/)\n* [ngrok](https://ngrok.com/download) latest version (only for devbox testing) or any equivalent tunneling solution\n\n  > [!NOTE]\n  > После скачивания ngrok зарегистрируйтесь и установите [authtoken](https://ngrok.com/download).\n"
+  content: "Установите следующие средства и настройте среду разработки:  \n\n | &nbsp; | Установка | Для использования... |\n | --- | --- | --- |\n | **Required** | &nbsp; | &nbsp; |\n | &nbsp; | [Microsoft Teams](https://www.microsoft.com/microsoft-teams/download-app) | Microsoft Teams для совместной работы со всеми пользователями, с которыми вы работаете, с помощью приложений для чата, собраний, зовите и все в одном месте.|\n | &nbsp; | [Visual Studio 2022 версии 17.3](https://visualstudio.microsoft.com)<br> Установите одну из следующих двух рабочих нагрузок:<br> • **ASP.NET и веб-разработки** <br> • **Кроссплатформенная разработка .NET Core** | Вы можете установить корпоративную версию в Visual Studio 2022 и установить рабочие нагрузки. |\n | &nbsp; | [ngrok](https://ngrok.com/download) | Функции приложений Teams (боты для общения, расширения сообщений и входящие веб-перехватчики) требуют входящих подключений. Туннель подключает систему разработки к Teams. Он не требуется для приложений, которые включают только вкладки. Этот пакет устанавливается в каталоге проекта (с помощью npm `devDependencies`). |\n\n  > [!NOTE]\n  > После скачивания ngrok зарегистрируйтесь и установите [authtoken](https://ngrok.com/download).\n"
 - title: Настройка локальной среды
   durationInMinutes: 1
   content: "Клонируйте `Microsoft-Teams-Samples` репозиторий в локальный репозиторий GitHub:  \n\n 1. Откройте [примеры Microsoft Teams](https://github.com/OfficeDev/Microsoft-Teams-Samples).\n 1. Выберите **\"Код\"**.\n 1. В раскрывающемся меню выберите \" **Открыть с помощью GitHub Desktop\"**.\n\n    ![Клонировать](~/assets/images/sbs-outgoing-webhooks/clone-repository.png)\n\n 1. Выберите **\"Клонировать\"**. \n"

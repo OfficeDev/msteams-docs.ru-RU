@@ -11,12 +11,12 @@ metadata:
   nextTutorialTitle: Дополнительные сведения о разрешениях устройства для браузера
   ms.custom: mvc
   ms.localizationpriority: high
-  ms.openlocfilehash: 7ce86d763811fb80bbdb79517682f9972b51fd03
-  ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+  ms.openlocfilehash: 90f0562fc24a3d363a1435b16cff15ba73f42b3e
+  ms.sourcegitcommit: ac59d469b823b80e65ee6f7be11ec5c365977a1c
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/30/2022
-  ms.locfileid: "68243558"
+  ms.lasthandoff: 10/06/2022
+  ms.locfileid: "68490922"
 items:
 - durationInMinutes: 1
   content: >
@@ -33,15 +33,14 @@ items:
 
 
 
-    * [Microsoft Teams с](https://www.microsoft.com/en-in/microsoft-teams/log-in) допустимой учетной записью
-
-    * [Учетная запись разработчика Microsoft 365](https://developer.microsoft.com/en-us/microsoft-365/dev-program) или доступ к учетной записи Teams с соответствующими разрешениями на установку приложения
-
-    * [Последняя версия Visual Studio](https://code.visualstudio.com/Download)
-
-    * [Последняя версия nodejs](https://nodejs.org/en/download/)
-
-    * [Последняя версия ngrok](https://ngrok.com/download) (только для тестирования devbox) или любое эквивалентное решение для туннелирования
+    *| &nbsp; | Установка | Для использования... |
+     | --- | --- | --- |
+     | **Required** | &nbsp; | &nbsp; |
+     | &nbsp; | [Microsoft Teams](https://www.microsoft.com/microsoft-teams/download-app) | Microsoft Teams для совместной работы со всеми пользователями, с которыми вы работаете, с помощью приложений для чата, собраний, зовите и все в одном месте.|
+     | &nbsp; | [Учетная запись разработчика Microsoft 365](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant) | Доступ к учетной записи Teams с соответствующими разрешениями на установку приложения. |
+     | &nbsp; | [Visual Studio 2022 версии 17.3](https://visualstudio.microsoft.com)<br> Установите одну из следующих двух рабочих нагрузок:<br> • **ASP.NET и веб-разработки** <br> • **Кроссплатформенная разработка .NET Core** | Вы можете установить корпоративную версию в Visual Studio 2022 и установить рабочие нагрузки. |
+     | &nbsp; | [Node.js и NPM](https://nodejs.org/) | Серверной среды выполнения JavaScript. Используйте последнюю версию версии 16 LTS.|
+     | &nbsp; | [ngrok](https://ngrok.com/download) | Функции приложений Teams (боты для общения, расширения сообщений и входящие веб-перехватчики) требуют входящих подключений. Туннель подключает систему разработки к Teams. Он не требуется для приложений, которые включают только вкладки. Этот пакет устанавливается в каталоге проекта (с помощью npm `devDependencies`). |
 
       > [!NOTE]
       > После скачивания ngrok зарегистрируйтесь и установите [authtoken](https://ngrok.com/download).
