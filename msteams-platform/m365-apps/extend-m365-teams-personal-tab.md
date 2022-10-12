@@ -1,16 +1,16 @@
 ---
 title: Расширение приложения личной вкладки Teams в Microsoft 365
-description: Обновите личное приложение для запуска в Outlook и Office. Обновление манифеста и пакета SDK TeamsJS версии 2, изменение безопасности согласия, обновление Azure AD регистрации приложения для единого входа.
-ms.date: 05/24/2022
+description: Узнайте, как обновить приложение личной вкладки для запуска в Outlook и Office, а также в Microsoft Teams.
+ms.date: 10/10/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 562bda342cc9067c96213703cd0f6725e9da66d1
-ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+ms.openlocfilehash: 99b95d72e75bf43381ea441cf2e94f9cf63edc7e
+ms.sourcegitcommit: 20070f1708422d800d7b1d84b85cbce264616ead
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243509"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537593"
 ---
 # <a name="extend-a-teams-personal-tab-across-microsoft-365"></a>Расширение личной вкладки Teams в Microsoft 365
 
@@ -35,6 +35,7 @@ ms.locfileid: "68243509"
 * Клиент изолированной программной среды Microsoft 365 Developer Program
 * Клиент песочницы, зарегистрированный в *целевых выпусках Office 365*
 * Компьютер с приложениями Office, установленными из приложений Microsoft 365 *бета-канал*.
+* (Необязательно) Устройство или эмулятор Android с приложением Office для Android, установленным и зарегистрированным в *бета-версии программы*
 * (Необязательно) Расширение [Teams Toolkit](https://aka.ms/teams-toolkit) для Microsoft Visual Studio Code, помогающее обновлять код.
 
 > [!div class="nextstepaction"]
@@ -46,7 +47,7 @@ ms.locfileid: "68243509"
 
 Если вы хотите использовать пример кода для работы с этим руководством, выполните действия по настройке в примере списка дел, чтобы создать личное приложение табуляции с помощью расширения Teams Toolkit для Visual Studio Code, а затем вернитесь к этой статье, чтобы обновить его для Microsoft 365.[](https://github.com/OfficeDev/TeamsFx-Samples/tree/main/todo-list-with-Azure-backend)
 
-Кроме того, вы можете использовать базовое приложение *Hello World* для единого входа, которое уже включено в Microsoft 365 в следующем разделе краткого руководства, а затем перейти к загрузке неопубликованного приложения [в Teams](#sideload-your-app-in-teams) .
+Кроме того, вы можете использовать базовое приложение *Hello World* с единым входом, которое уже включено в Microsoft 365 в следующем разделе краткого руководства, а затем перейти к загрузке неопубликованного приложения в [Teams](#sideload-your-app-in-teams).[](#quickstart)
 
 ### <a name="quickstart"></a>Быстрый запуск
 
@@ -93,7 +94,7 @@ ms.locfileid: "68243509"
 
 Для запуска в Outlook и Office приложению потребуется ссылаться на пакет npm `@microsoft/teams-js@2.0.0` (или более поздней версии). Хотя код с более ранними версиями поддерживается в Outlook и Office, предупреждения об устаревании регистрируются, и поддержка более ранних версий TeamsJS в Outlook и Office в конечном итоге прекращается.
 
-С помощью набора средств Teams можно определить и автоматизировать необходимые изменения кода для обновления с версии 1.x TeamsJS до TeamsJS версии 2.0.0. Кроме того, те же действия можно выполнить вручную. Дополнительные сведения см. в [клиентском пакете SDK JavaScript для Microsoft Teams](../tabs/how-to/using-teams-client-sdk.md#whats-new-in-teamsjs-version-20) .
+С помощью набора средств Teams можно определить и автоматизировать необходимые изменения кода для обновления с версии 1.x TeamsJS до TeamsJS версии 2.x.x. Кроме того, те же действия можно выполнить вручную. Дополнительные сведения см. в [клиентском пакете SDK JavaScript для Microsoft Teams](../tabs/how-to/using-teams-client-sdk.md#whats-new-in-teamsjs-version-20) .
 
 1. Откройте *палитру команд*: `Ctrl+Shift+P`.
 1. Выполните команду `Teams: Upgrade Teams JS SDK and code references`.
@@ -102,8 +103,8 @@ ms.locfileid: "68243509"
 
 > [!div class="checklist"]
 >
-> * Инструкции импорта для teams-js@2.0.0
-> * [Вызовы функций, перечислений и интерфейсов](../tabs/how-to/using-teams-client-sdk.md#whats-new-in-teamsjs-version-20) для teams-js@2.0.0
+> * Инструкции импорта для teams-js@2.x.x
+> * [Вызовы функций, перечислений и интерфейсов](../tabs/how-to/using-teams-client-sdk.md#whats-new-in-teamsjs-version-20) для teams-js@2.x.x
 > * `TODO` напоминания примечаний пометки областей, на которые могут повлиять изменения [контекстного](../tabs/how-to/using-teams-client-sdk.md#updates-to-the-context-interface) интерфейса
 > * Напоминания в комментариях `TODO` о том, что [ следует преобразовать функции обратного вызова в обещания](../tabs/how-to/using-teams-client-sdk.md#callbacks-converted-to-promises)
 

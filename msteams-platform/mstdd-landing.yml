@@ -12,12 +12,12 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 3ed46761977bf31a9eb717d3533ed0c4f6e49646
-  ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+  ms.openlocfilehash: ac74ac9f38e4c9e015cba3039e44ff92b4af92dd
+  ms.sourcegitcommit: 20070f1708422d800d7b1d84b85cbce264616ead
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/30/2022
-  ms.locfileid: "68243187"
+  ms.lasthandoff: 10/12/2022
+  ms.locfileid: "68537516"
 landingContent:
 - title: Знакомство с последними версиями
   linkLists:
@@ -27,6 +27,8 @@ landingContent:
       url: https://gitter.im/OfficeDev/home
   - linkListType: whats-new
     links:
+    - text: Создайте прямую ссылку для совместного использования содержимого на этапе собраний.
+      url: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#generate-a-deep-link-to-share-content-to-stage-in-meetings
     - text: Управление лицензиями SaaS для сторонних приложений в Teams
       url: concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md#manage-license-for-third-party-apps-in-teams
     - text: Обновление идентификатора команды App Store Connect в Центре партнеров
@@ -45,8 +47,6 @@ landingContent:
       url: apps-in-teams-meetings/teams-live-share-overview.md
     - text: Обновление событий беседы и установки в боте Teams [предварительная версия для разработчиков]
       url: bots/how-to/conversations/subscribe-to-conversation-events.md
-    - text: Отправка приложений с поддержкой Outlook и Office в магазин Teams
-      url: m365-apps/overview.md
 - title: Начало работы
   linkLists:
   - linkListType: get-started

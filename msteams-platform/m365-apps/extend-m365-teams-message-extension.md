@@ -1,16 +1,16 @@
 ---
 title: Распространение расширения сообщений Teams в Microsoft 365
-description: В этой статье вы узнаете, как обновить расширение для сообщений в Teams на основе поиска для запуска в Outlook. Для этого следует обновить манифест приложения, добавить канал Outlook и установить обновленное приложение без публикации.
-ms.date: 05/24/2022
+description: Узнайте, как обновить расширение сообщений на основе поиска для запуска в Outlook в дополнение к Microsoft Teams.
+ms.date: 10/10/2022
 ms.topic: tutorial
 ms.custom: m365apps
 ms.localizationpriority: high
-ms.openlocfilehash: 2fc0a66683bb5454bfb8fbced64e97618522fce7
-ms.sourcegitcommit: edfe85e312c73e34aa795922c4b7eb0647528d48
+ms.openlocfilehash: a0de61f0d1b6414d4ab35b54e4ec708f3b868948
+ms.sourcegitcommit: 20070f1708422d800d7b1d84b85cbce264616ead
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243516"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537509"
 ---
 # <a name="extend-a-teams-message-extension-across-microsoft-365"></a>Распространение расширения сообщений Teams в Microsoft 365
 
@@ -36,7 +36,11 @@ ms.locfileid: "68243516"
 * Microsoft Visual Studio Code с расширением Teams Toolkit (необязательно)
 
 > [!div class="nextstepaction"]
-> [Публикация приложений Teams для Microsoft 365](publish.md)
+> [Необходимые условия для установки](prerequisites.md)
+
+## <a name="link-unfurling"></a>Развертывание ссылки
+
+Если расширение сообщений на основе поиска поддерживает размыкание ссылок в Teams, выполнение инструкций в этом руководстве также включает размыкание ссылок в Outlook в Интернете и классических средах Windows.[](../messaging-extensions/how-to/link-unfurling.md) [Приведенный ниже раздел примеров](#code-sample) кода содержит простое приложение для отмены переключения ссылок для тестирования.
 
 ## <a name="prepare-your-message-extension-for-the-upgrade"></a>Подготовьте расширение сообщений для обновления
 
@@ -115,7 +119,7 @@ If you used Teams Toolkit to create your message extension app, you can use it t
 > [!NOTE]
 > Этот шаг можно пропустить, если вы используете [образец приложения](#quickstart), предоставленный в этом учебном руководстве, поскольку этот сценарий не включает проверку подлинности Azure Active Directory (AAD) с единым входом.
 
-Azure Active Directory (AD) Single-sign on (SSO) for message extensions works the same way in Outlook [as it does in Teams](/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots). However you need to add several client application identifiers to the Azure AD app registration of your bot in your tenant's *App registrations* portal.
+Единый вход (SSO) Azure Active Directory (AD) для расширений сообщений работает в Outlook так же, как и [в Teams](/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots). Однако необходимо добавить несколько идентификаторов клиентских приложений в Azure AD регистрации бота на портале *Регистрация приложений клиента.*
 
 1. Войдите на [портал Azure](https://portal.azure.com) с помощью учетной записи клиента песочницы.
 1. Откройте **Регистрации приложений**.
@@ -186,7 +190,7 @@ Your message extension is listed. You can invoke it from there and use it just a
  Хотя ваше обновленное расширение сообщений будет по-прежнему работать в Teams с полной[поддержкой расширений сообщений](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions), в этой ранней предварительной версии интерфейса с поддержкой Outlook существуют ограничения, о которых следует знать:
 
 * Расширения сообщений в Outlook ограничены контекстом [*создания* почты](/microsoftteams/platform/resources/schema/manifest-schema#composeextensions). Даже если ваше расширение сообщений Teams включает`commandBox` *контекст* в свой манифест, текущий предварительный просмотр ограничен параметром составления почты (`compose`). Вызов расширения сообщений из глобального поля *Поиска* в Outlook не поддерживается.
-* Команды [расширения для сообщений на основе действий](/microsoftteams/platform/messaging-extensions/how-to/action-commands/define-action-command?tabs=AS) не поддерживаются в Outlook. Если в вашем приложении есть команды на основе поиска и действий, оно появится в Outlook, но меню действий будет недоступно.
+* Команды [расширения для сообщений на основе действий](/microsoftteams/platform/messaging-extensions/how-to/action-commands/define-action-command?tabs=AS) не поддерживаются в Outlook. Если в приложении есть команды на основе поиска и действий, оно будет отображаться в Outlook, но меню действий будет недоступно.
 * В каждое сообщение электронной почты можно вставлять не более пяти [адаптивных карточек](/microsoftteams/platform/task-modules-and-cards/cards/design-effective-cards?tabs=design). Адаптивные карточки версии 1.4 и более поздних версий не поддерживаются.
 * [Действия с карточками](/microsoftteams/platform/task-modules-and-cards/cards/cards-actions?tabs=json) типа`messageBack`, `imBack`, `invoke` и `signin` не поддерживаются для вставленных карточек. Поддержка ограничена `openURL`: при щелчке пользователь будет перенаправлен на указанный URL-адрес в новой вкладке.
 
@@ -201,6 +205,7 @@ Your message extension is listed. You can invoke it from there and use it just a
 | **Название примера** | **Описание** | **Node.js** |
 |---------------|--------------|--------|
 | Соединитель поиска NPM | Используйте Teams Toolkit, чтобы создать приложение расширения для сообщений. Работает в Teams и в Outlook. |  [View](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/NPM-search-connector-M365) |
+| Отмена компоновки Teams | Простое приложение Teams для демонстрации размыкания ссылок. Работает в Teams и в Outlook. | [View](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/55.teams-link-unfurling)
 
 ## <a name="next-step"></a>Следующий этап
 

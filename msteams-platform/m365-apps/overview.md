@@ -1,29 +1,30 @@
 ---
 title: Расширение возможностей приложений Teams в Microsoft 365 (предварительная версия)
-description: Узнайте, как создавать, обновлять и расширять приложение Teams в Microsoft M365 (Teams, Outlook и Office в качестве узлов приложений). Отправка Microsoft AppSource.
-ms.date: 05/24/2022
+description: Узнайте, как расширить приложения Teams в Microsoft 365 (работающих в Teams, Outlook и Office в качестве узлов приложений).
+ms.date: 10/10/2022
 ms.topic: Conceptual
 ms.custom: m365apps
 ms.localizationpriority: medium
-ms.openlocfilehash: 835af580a23a5fa4bcf99bf5fd2f091d076df489
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 4c05fbe0c763d9b650573e33edfa5e332aaba90d
+ms.sourcegitcommit: 20070f1708422d800d7b1d84b85cbce264616ead
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100623"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537543"
 ---
 # <a name="extend-teams-apps-across-microsoft-365"></a>Расширение приложений Teams в Microsoft 365
 
-С помощью последних выпусков клиентского [пакета SDK JavaScript для Microsoft Teams](../tabs/how-to/using-teams-client-sdk.md) (версии 2.0.0 и более поздних), манифеста приложения [Teams](../resources/schema/manifest-schema.md) (версии 1.13 и более поздних) и [набора средств Teams](../toolkit/visual-studio-code-overview.md) можно создавать и обновлять приложения Teams для запуска в других высокопроизводительные продукты Microsoft 365 и публиковать их на коммерческой платформе Майкрософт (коммерческая [платформа](https://appsource.microsoft.com/) Майкрософт).
+С помощью последних выпусков клиентского [пакета SDK JavaScript для Microsoft Teams](../tabs/how-to/using-teams-client-sdk.md) (версии 2.0.0 и более поздней), манифеста приложения [Teams](../resources/schema/manifest-schema.md) (версии 1.13 и более поздних) и [набора средств Teams](../toolkit/visual-studio-code-overview.md) можно создавать и обновлять приложения Teams для запуска в других продуктах Microsoft 365 с высоким уровнем использования и публиковать их на коммерческой платформе Майкрософт ([Microsoft AppSource](https://appsource.microsoft.com/)) или в частном магазине приложений вашей организации.
 
 Расширение приложения Teams в Microsoft 365 обеспечивает упрощенный способ предоставления кроссплатформенных приложений для расширенной аудитории пользователей: с помощью одной базы кода можно создавать интерфейсы приложений, адаптированные для сред Teams, Outlook и Office. Конечным пользователям не придется выходить из контекста своей работы, чтобы использовать ваше приложение, а администраторы получают преимущества от консолидированного рабочего процесса управления и развертывания.
 
 Платформа приложений Teams продолжает развиваться и расширяться целостно в экосистеме Microsoft 365. Ниже приведена текущая поддержка элементов платформы приложений Teams в Microsoft 365 (Teams, Outlook и Office в качестве узлов приложений):
 
-|          | Элемент манифеста приложения | Поддержка Teams |Поддержка Outlook* | Поддержка Office* | Примечания |
+| Функции приложений Teams| Элемент манифеста приложения | Поддержка Teams |Поддержка Outlook* | Поддержка Office* | Примечания |
 |--|--|--|--|--|--|
-| [**Вкладки**](../tabs/what-are-tabs.md) (личная область)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Интернет (целевой выпуск), рабочий стол (бета-канал), мобильные устройства (Android)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
-| [**Расширения сообщений**](../messaging-extensions/what-are-messaging-extensions.md) (на основе поиска)| `composeExtensions` | Web, Desktop, Mobile| Веб (целевой выпуск), рабочий стол (бета-канал)| - |На основе действий для Microsoft 365 пока не поддерживается. См. [примечания](extend-m365-teams-message-extension.md#preview-your-message-extension-in-outlook). |
+| [**Личная область вкладок**](../tabs/what-are-tabs.md)    |`staticTabs`  | Web, Desktop, Mobile | Веб (целевой выпуск), рабочий стол (бета-канал) | Интернет (целевой выпуск), рабочий стол (бета-канал), мобильные устройства (Android)| Область канала и группы пока не поддерживается для Microsoft 365. См. [примечания](../tabs/how-to/using-teams-client-sdk.md#microsoft-365-support-running-teams-apps-in-office-and-outlook).
+| [**Расширения сообщений на основе**](../messaging-extensions/what-are-messaging-extensions.md) поиска| `composeExtensions` | Web, Desktop, Mobile| Веб (целевой выпуск), рабочий стол (бета-канал)| - |На основе действий для Microsoft 365 пока не поддерживается. См. [примечания](extend-m365-teams-message-extension.md#troubleshooting). |
+| Развертывание ссылки | `composeExtensions.messageHandlers` | Интернет, рабочий стол | Веб (целевой выпуск), рабочий стол (бета-канал) | - | Просмотр [заметок](extend-m365-teams-message-extension.md#link-unfurling) |
 | [**Надстройки Office**](/office/dev/add-ins/develop/json-manifest-overview) (предварительная версия) | `extensions` | - | Интернет, рабочий стол | - | Доступно только в [версии манифеста devPreview](../resources/schema/manifest-schema-dev-preview.md) . См. [примечания](#office-add-ins-preview).|
 
 \*Для [параметра целевого выпуска Microsoft 365](/microsoft-365/admin/manage/release-options-in-office-365) [Приложения Microsoft 365](/deployoffice/change-update-channels) регистрации канала обновления требуется согласие администратора для всей организации или выбранных пользователей. Каналы обновления относятся к конкретному устройству и применяются только к установкам Office, работающим в Windows.
@@ -35,19 +36,23 @@ ms.locfileid: "68100623"
 
 ## <a name="personal-tabs-and-messaging-extensions-in-outlook-and-office"></a>Личные вкладки и расширения для обмена сообщениями в Outlook и Office
 
-Свяжитесь с пользователями прямо в контексте их работы, расширив веб-приложение как приложение личной вкладки Teams, которое также работает как в Outlook, так и в Office.
+Свяжитесь с пользователями прямо в контексте их работы, расширив веб-приложение как приложение личной вкладки [Teams](extend-m365-teams-personal-tab.md) , которое также работает как в Outlook, так и в Office.
 
 :::image type="content" source="images/outlook-office-teams-personal-tab.png" alt-text="Снимок экрана— пример, на котором показана вкладка &quot;Личные&quot;, работающее в Outlook, Office и Teams.":::
 
-На мобильных устройствах можно протестировать и отладить личную вкладку Teams, запущенную в приложении Office для Android.
+На мобильных устройствах можно протестировать и отладить личную вкладку Teams, запущенную в [приложении Office для Android](extend-m365-teams-personal-tab.md#office-app-for-android).
 
 :::image type="content" source="images/office-mobile-personal-tab.png" alt-text="На снимке экрана показан пример, на котором показана личная вкладка, запущенная в Office.":::
 
-Вы также можете расширить расширения сообщений Teams на основе поиска на Outlook в Интернете и классическом компьютере Windows, позволяя клиентам выполнять поиск и делиться результатами через область создания сообщений Outlook, а также клиенты Microsoft Teams.
+Вы также можете расширить расширения сообщений [Teams](extend-m365-teams-message-extension.md) на основе поиска на компьютеры Outlook в Интернете и Windows, позволяя клиентам выполнять поиск и делиться результатами через область создания сообщений Outlook, а также клиенты Microsoft Teams.
 
 :::image type="content" source="images/outlook-teams-messaging-ext.png" alt-text="На снимке экрана показан пример расширения сообщений, запущенного в Outlook и Teams.":::
 
-Создание приложения с использованием последней версии манифеста [приложения Teams](../resources/schema/manifest-schema.md) и клиентского [пакета SDK JavaScript для Teams](../tabs/how-to/using-teams-client-sdk.md) обеспечивает консолидированную разработку. Благодаря возможности оптимизировать развертывание, установку и администрирование для клиентов, вы можете расширить потенциальный охват и использование приложения.
+[Размыкание](extend-m365-teams-message-extension.md#link-unfurling)  ссылок работает в Outlook Web и Средах Windows так же, как в Microsoft Teams без дополнительной работы, чем использование манифеста приложения Teams версии 1.13 или более поздней.
+
+:::image type="content" source="images/outlook-teams-link-unfurling.png" alt-text="На снимке экрана показан пример отмены компоновки в Outlook и Teams.":::
+
+Создайте приложение с помощью последней версии манифеста [приложения Teams](../resources/schema/manifest-schema.md) и клиентского [пакета SDK JavaScript для Teams](../tabs/how-to/using-teams-client-sdk.md) , чтобы воспользоваться преимуществами последнего объединенного процесса разработки приложений Microsoft 365. Затем упростите развертывание, установку и администрирование для клиентов, что расширяет охват и использование приложения.
 
 ## <a name="use-teams-app-manifest-across-microsoft-365"></a>Использование манифеста приложения Teams в Microsoft 365
 
