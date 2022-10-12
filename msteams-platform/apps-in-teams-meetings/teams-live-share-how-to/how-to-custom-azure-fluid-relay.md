@@ -6,12 +6,12 @@ ms.topic: overview
 ms.localizationpriority: high
 ms.author: v-ypalikila
 ms.date: 07/21/2022
-ms.openlocfilehash: baa192bf82e059b1cfe7a9fc8979874710f266b1
-ms.sourcegitcommit: 134ce9381891e51e6327f1f611fdfd60c90cca18
+ms.openlocfilehash: b8bec005450515fbef7dfb60e58fac1325235b62
+ms.sourcegitcommit: 0fa0bc081da05b2a241fd8054488d9fd0104e17b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "67425636"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68552520"
 ---
 ---
 
@@ -27,17 +27,17 @@ ms.locfileid: "67425636"
 
 ## <a name="connect-to-azure-fluid-relay-service"></a>Подключение к службе Azure Fluid Relay
 
-При создании `TeamsFluidClient`класса можно определить собственный`AzureConnectionConfig`. Live Share связывает контейнеры, которые вы создаете, с собраниями, `ITokenProvider` но вам потребуется реализовать интерфейс для подписи маркеров для контейнеров. В этом примере объясняется azure `AzureFunctionTokenProvider`, которая использует облачную функцию Azure для запроса маркера доступа с сервера.
+При вызове инициализации `LiveShareClient`можно определить собственный `AzureConnectionConfig`. Live Share связывает контейнеры, которые вы создаете, с собраниями, `ITokenProvider` но вам потребуется реализовать интерфейс для подписи маркеров для контейнеров. В этом примере объясняется azure `AzureFunctionTokenProvider`, которая использует облачную функцию Azure для запроса маркера доступа с сервера.
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 
 ```javascript
-import { TeamsFluidClient, EphemeralPresence } from "@microsoft/live-share";
+import { LiveShareClient, LivePresence } from "@microsoft/live-share";
 import { SharedMap } from "fluid-framework";
 import { AzureFunctionTokenProvider } from "@fluidframework/azure-client";
 
 // Define a custom connection for your app
-const clientProps = {
+const options = {
   connection: {
     tenantId: "MY_TENANT_ID",
     tokenProvider: new AzureFunctionTokenProvider(
@@ -49,14 +49,14 @@ const clientProps = {
   },
 };
 // Join the Fluid container
-const client = new TeamsFluidClient(clientProps);
+const liveShare = new LiveShareClient(options);
 const schema = {
   initialObjects: {
-    presence: EphemeralPresence,
+    presence: LivePresence,
     ticTacToePositions: SharedMap,
   },
 };
-const { container } = await client.joinContainer(schema);
+const { container } = await liveShare.joinContainer(schema);
 
 // ... ready to start app sync logic
 ```
@@ -64,12 +64,16 @@ const { container } = await client.joinContainer(schema);
 # <a name="typescript"></a>[TypeScript](#tab/typescript)
 
 ```TypeScript
-import { TeamsFluidClient, EphemeralPresence, ITeamsFluidClientOptions } from "@microsoft/live-share";
+import {
+  LiveShareClient,
+  ILiveShareClientOptions,
+  LivePresence,
+} from "@microsoft/live-share";
 import { SharedMap } from "fluid-framework";
 import { AzureFunctionTokenProvider } from "@fluidframework/azure-client";
 
 // Define a custom connection for your app
-const clientProps: ITeamsFluidClientOptions = {
+const options: ILiveShareClientOptions = {
   connection: {
     tenantId: "MY_TENANT_ID",
     tokenProvider: new AzureFunctionTokenProvider(
@@ -81,14 +85,14 @@ const clientProps: ITeamsFluidClientOptions = {
   },
 };
 // Join the Fluid container
-const client = new TeamsFluidClient(clientProps);
+const liveShare = new LiveShareClient(options);
 const schema = {
   initialObjects: {
-    presence: EphemeralPresence,
+    presence: LivePresence,
     ticTacToePositions: SharedMap,
   },
 };
-const { container } = await client.joinContainer(schema);
+const { container } = await liveShare.joinContainer(schema);
 
 // ... ready to start app sync logic
 ```
@@ -110,21 +114,21 @@ Azure Fluid Relay предназначен для работы с любым в�
 Live Share имеет функции, которые полезны для распространенных сценариев собраний, которые дополняют другие функции вашего приложения, в том числе:
 
 * [Сопоставление контейнеров](#container-mapping)
-* [Временные объекты и проверка роли](#ephemeral-objects-and-role-verification)
+* [Динамические объекты и проверка роли](#live-objects-and-role-verification)
 * [Синхронизация мультимедиа](#media-synchronization)
 
 ### <a name="container-mapping"></a>Сопоставление контейнеров
 
-Класс Live Share `TeamsFluidClient` отвечает за сопоставление уникального идентификатора собрания с контейнерами Fluid, что гарантирует, что все участники собрания присоединятся к одному контейнеру. В рамках этого процесса клиент `containerId` пытается подключиться к собранию, которое уже существует. Если контейнер не существует, `AzureClient` `AzureConnectionConfig` `containerId` он используется для создания контейнера с помощью вашего контейнера, а затем передает его другим участникам собрания.
+Вход `LiveShareClient` отвечает `@microsoft/live-share` за сопоставление уникального идентификатора собрания с контейнерами Fluid, что гарантирует, что все участники собрания присоединятся к одному контейнеру. В рамках этого процесса клиент `containerId` пытается подключиться к собранию, которое уже существует. Если контейнер не существует, `AzureClient` `AzureConnectionConfig` `containerId` он используется для создания контейнера с помощью вашего контейнера, а затем передает его другим участникам собрания.
 
 Если ваше приложение уже имеет механизм создания контейнеров Fluid и предоставления к ним общего доступа другим участникам, `containerId` например путем вставки URL-адреса, предоставленного на этапе собрания, это может не потребоваться для вашего приложения.
 
-### <a name="ephemeral-objects-and-role-verification"></a>Временные объекты и проверка роли
+### <a name="live-objects-and-role-verification"></a>Динамические объекты и проверка роли
 
-Временные структуры данных Live Share`EphemeralPresence``EphemeralState``EphemeralEvent`, такие как , и предназначены для совместной работы на собраниях и, следовательно, не поддерживаются в гибких контейнерах, используемых за пределами Microsoft Teams. Такие функции, как проверка роли, помогают приложению соответствовать ожиданиям наших пользователей.
+Динамические `LivePresence`структуры данных Live Share, `LiveState``LiveEvent` такие как , и предназначены для совместной работы на собраниях и, следовательно, не поддерживаются в гибких контейнерах, используемых за пределами Microsoft Teams. Такие функции, как проверка роли, помогают приложению соответствовать ожиданиям наших пользователей.
 
 > [!NOTE]
-> В качестве дополнительных преимуществ временные объекты также используют более быстрые задержки сообщений по сравнению с традиционными гибкими структурами данных.
+> В качестве дополнительных преимуществ динамические объекты также ускоряют задержки сообщений по сравнению с традиционными гибкими структурами данных.
 
 Дополнительные сведения см [. на странице основных возможностей](../teams-live-share-capabilities.md) .
 

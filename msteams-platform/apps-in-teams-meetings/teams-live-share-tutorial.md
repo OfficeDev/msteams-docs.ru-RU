@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: stevenic
 ms.date: 04/07/2022
-ms.openlocfilehash: f6dd6bb0f130e69f4147ae73be085795d75b1083
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: ee88797d007e736eb7958e462d8697f379c99413
+ms.sourcegitcommit: 0fa0bc081da05b2a241fd8054488d9fd0104e17b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780816"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68552576"
 ---
 # <a name="dice-roller-code-tutorial"></a>Руководство по коду Dice Roller
 
@@ -28,7 +28,7 @@ ms.locfileid: "67780816"
 
 ## <a name="set-up-the-application"></a>Настройка приложения
 
-Начните с импорта необходимых модулей. В примере используются [SharedMap DDS](https://fluidframework.com/docs/data-structures/map/) из Fluid Framework и [TeamsFluidClient](/javascript/api/@microsoft/live-share/teamsfluidclient) из пакета SDK Live Share. Этот пример поддерживает возможности расширения собраний Teams, поэтому нам потребуется включить [пакет SDK клиента Teams](https://github.com/OfficeDev/microsoft-teams-library-js). Наконец, пример предназначен как для локального запуска, так и для запуска в собрании Teams, поэтому нам потребуется включить дополнительные элементы Fluid Framework, необходимые для [локального тестирования примера](https://fluidframework.com/docs/testing/testing/#azure-fluid-relay-as-an-abstraction-for-tinylicious).
+Начните с импорта необходимых модулей. В этом примере [используются DDS SharedMap](https://fluidframework.com/docs/data-structures/map/) из Fluid Framework и [класса LiveShareClient](/javascript/api/@microsoft/live-share/liveshareclient) . Этот пример поддерживает возможности расширения собраний Teams, поэтому нам потребуется включить [пакет SDK клиента Teams](https://github.com/OfficeDev/microsoft-teams-library-js). Наконец, пример предназначен как для локального запуска, так и для запуска в собрании Teams, поэтому нам потребуется включить дополнительные элементы Fluid Framework, необходимые для [локального тестирования примера](https://fluidframework.com/docs/testing/testing/#azure-fluid-relay-as-an-abstraction-for-tinylicious).
 
 Приложения создают контейнеры Fluid с помощью схемы, определяющей набор _начальных объектов_, которые будут доступны контейнеру. В примере используется SharedMap для хранения последнего значения прокрученной игральной кости. Дополнительные сведения см. в разделе [Моделирование данных](https://fluidframework.com/docs/build/data-modeling/).
 
@@ -38,9 +38,8 @@ ms.locfileid: "67780816"
 
 ```js
 import { SharedMap } from "fluid-framework";
-import { TeamsFluidClient } from "@microsoft/live-share";
 import { app, pages } from "@microsoft/teams-js";
-import { LOCAL_MODE_TENANT_ID } from "@fluidframework/azure-client";
+import { LiveShareClient, testLiveShare } from "@microsoft/live-share";
 import { InsecureTokenProvider } from "@fluidframework/test-client-utils";
 
 const searchParams = new URL(window.location).searchParams;
@@ -100,36 +99,26 @@ start().catch((error) => console.error(error));
 
 Не все представления приложений должны поддерживать совместную работу. Представлению `stage` _всегда_ требуются функции совместной работы, представлению `content` _могут_ требоваться функции совместной работы, а представлению `config` _никогда_ не требуются функции совместной работы. В случае представлений, которым требуются функции совместной работы, необходимо присоединиться к контейнеру Fluid, связанному с текущим собранием.
 
-Присоединение контейнера к собранию выполняется очень просто: создается новый объект [TeamsFluidClient](/javascript/api/@microsoft/live-share/teamsfluidclient) с последующим вызовом метода [joinContainer()](/javascript/api/@microsoft/live-share/teamsfluidclient#@microsoft-live-share-teamsfluidclient-joincontainer). При локальном запуске необходимо передать настраиваемую конфигурацию подключения с помощью специального `LOCAL_MODE_TENANT_ID`. В противном случае присоединение локального контейнера аналогично присоединению контейнера в Teams.
+Присоединение контейнера к собранию выполняется так же просто, как инициализация [LiveShareClient](/javascript/api/@microsoft/live-share/liveshareclient) и вызов метода [joinContainer(](/javascript/api/@microsoft/live-share/liveshareclient#@microsoft-live-share-liveshareclient-joincontainer) ).
+
+При локальном запуске можно [импортировать testLiveShare](/javascript/api/@microsoft/live-share/testliveshare) и вызвать его [метод initialize(](/javascript/api/@microsoft/live-share.testliveshare#@microsoft-live-share-testliveshare-initialize) ). Затем используйте метод [joinContainer()](/javascript/api/@microsoft/live-share.testliveshare#@microsoft-live-share-testliveshare-joincontainer) для подключения к сеансу.
 
 ```js
 async function joinContainer() {
   // Are we running in teams?
-  let client;
   if (!!searchParams.get("inTeams")) {
     // Create client
-    client = new TeamsFluidClient();
-  } else {
-    // Create client and configure for testing
-    client = new TeamsFluidClient({
-      connection: {
-        type: "local",
-        tokenProvider: new InsecureTokenProvider("", {
-          id: "123",
-          name: "Test User",
-        }),
-        endpoint: "http://localhost:7070",
-      },
-    });
+    const liveShare = new LiveShareClient();
+    // Join container
+    return await liveShare.joinContainer(containerSchema, onContainerFirstCreated);
   }
-
-  // Join container
-  return await client.joinContainer(containerSchema, onContainerFirstCreated);
+  // Create client and configure for testing
+  testLiveShare.initialize();
+  return await testLiveShare.joinContainer(containerSchema, onContainerFirstCreated);
 }
 ```
 
-> [!NOTE]
-> При локальном тестировании TeamsFluidClient обновляет URL-адрес браузера, чтобы он содержал идентификатор созданного тестового контейнера. Копирование этой ссылки на другие вкладки браузера приводит к присоединению TeamsFluidClient к созданному тестовому контейнеру. Если изменение URL-адреса приложения мешает работе приложения, стратегию, которая используется для хранения идентификатора тестовых контейнеров, можно настроить с помощью параметров [setLocalTestContainerId](/javascript/api/@microsoft/live-share/iteamsfluidclientoptions#@microsoft-live-share-iteamsfluidclientoptions-setlocaltestcontainerid) и [getLocalTestContainerId](/javascript/api/@microsoft/live-share/iteamsfluidclientoptions#@microsoft-live-share-iteamsfluidclientoptions-getlocaltestcontainerid), передаваемых для TeamsFluidClient.
+При локальном тестировании `testLiveShare` URL-адрес браузера обновляется, чтобы он содержал идентификатор созданного тестового контейнера. Копирование этой ссылки на другие вкладки браузера приводит к присоединению `testLiveShare` созданного тестового контейнера. Если изменение URL-адреса приложения мешает работе приложения, стратегию, используемую для хранения идентификатора тестовых контейнеров, можно настроить с помощью переданных параметров [setLocalTestContainerId](/javascript/api/@microsoft/live-share.iliveshareclientoptions#@microsoft-live-share-iliveshareclientoptions-setlocaltestcontainerid) и [getLocalTestContainerId](/javascript/api/@microsoft/live-share.iliveshareclientoptions#@microsoft-live-share-iliveshareclientoptions-getlocaltestcontainerid)`LiveShareClient`.
 
 ## <a name="write-the-stage-view"></a>Запись представления стадий
 
@@ -200,7 +189,7 @@ diceMap.on("valueChanged", updateDice);
 
 ## <a name="write-the-side-panel-view"></a>Запись представления боковой панели
 
-Представление боковой панели, загруженное с помощью вкладки `contentUrl` с контекстом фрейма `sidePanel`, отображается пользователю на боковой панели, когда он открывает ваше приложение на собрании. Цель этого представления — разрешить пользователю выбирать содержимое приложения перед демонстрацией приложения на сцене собрания. Для приложений пакета SDK Live Share представление боковой панели также можно использовать в качестве вспомогательного интерфейса приложения. Вызов [joinContainer()](/javascript/api/@microsoft/live-share/teamsfluidclient#@microsoft-live-share-teamsfluidclient-joincontainer) из представления боковой панели подключается к тому же контейнеру Fluid, к которому подключено представление стадий. Затем этот контейнер можно использовать для взаимодействия с представлением стадий. Убедитесь, что вы взаимодействуете с представлением стадий _и_ представлением боковой панели всех пользователей.
+Представление боковой панели, загруженное с помощью вкладки `contentUrl` с контекстом фрейма `sidePanel`, отображается пользователю на боковой панели, когда он открывает ваше приложение на собрании. Цель этого представления — разрешить пользователю выбирать содержимое приложения перед демонстрацией приложения на сцене собрания. Для приложений пакета SDK Live Share представление боковой панели также можно использовать в качестве вспомогательного интерфейса приложения. Вызов [joinContainer()](/javascript/api/@microsoft/live-share/liveshareclient#@microsoft-live-share-liveshareclient-joincontainer) из представления боковой панели подключается к тому же контейнеру Fluid, к которому подключено представление стадий. Затем этот контейнер можно использовать для взаимодействия с представлением стадий. Убедитесь, что вы взаимодействуете с представлением стадий _и_ представлением боковой панели всех пользователей.
 
 В представлении боковой панели примера пользователю предлагается нажать кнопку демонстрации на сцене.
 
@@ -228,8 +217,8 @@ function renderSidePanel(elem) {
 
 Представление параметров, загруженное посредством `configurationUrl` в манифесте приложения, отображается пользователю, когда он впервые добавляет ваше приложение в собрание Teams. Это представление позволяет разработчику настроить `contentUrl` для вкладки, закрепленной на собрании с учетом введенных пользователем данных. Эта страница в настоящее время является обязательной, даже если для настройки `contentUrl` не требуется ввод данных пользователем.
 
-> [!IMPORTANT]
-> [joinContainer()](/javascript/api/@microsoft/live-share/teamsfluidclient#@microsoft-live-share-teamsfluidclient-joincontainer) пакета SDK Live Share не поддерживается в контексте вкладки `settings`.
+> [!NOTE]
+> [JoinContainer()](/javascript/api/@microsoft/live-share/liveshareclient#@microsoft-live-share-liveshareclient-joincontainer) live Share не поддерживается в контексте вкладки`settings`.
 
 В представлении параметров примера пользователю предлагается нажать кнопку "Сохранить".
 
