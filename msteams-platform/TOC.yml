@@ -413,7 +413,7 @@
         - name: Синхронизация мультимедиа
           href: apps-in-teams-meetings/teams-live-share-media-capabilities.md
           displayName: 'Media synchronization, audio ducking'
-        - name: Рукописный ввод & курсоров
+        - name: Canvas
           href: apps-in-teams-meetings/teams-live-share-canvas.md
           displayName: 'Inking, cursors, live canvas'
         - name: Практические руководства
@@ -642,32 +642,33 @@
       items:
         - name: Обзор
           href: concepts/deploy-and-publish/appsource/publish.md
-          displayName: 'Rapid app approval, approve, publisher verification, What to expect after you submit your app,'
+          displayName: 'Rapid app approval, approve, publisher verification, what to expect after you submit your app, SaaS offer, concierge service, mandatory fix, suggested fix, blocker, test instructions'
         - name: Рекомендации по прохождению магазинной проверки
           href: concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines.md
-          displayName: 'Value proposition, advertising, stacked text, whiteboarding apps, message spamming, Avatars, commercial marketplace certification policies'
+          displayName: 'Value proposition, advertising, stacked text, whiteboarding apps, message spamming, Avatars, commercial marketplace certification policies, security, general functionality and performance, suitable for workplace consumption, financial information, external domains, sensitive content, privacy policy'
         - name: Создание учетной записи разработчика Центра партнеров
           href: concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account.md
-          displayName: 'Update Apple App Store Connect Team ID on Partner Center, app acquisition on mobile'
+          displayName: 'Support issues, account verification status, employee verification process, business verification process, support ticket'
         - name: Подготовка к отправке в магазин Teams
           href: concepts/deploy-and-publish/appsource/prepare/submission-checklist.md
-          displayName: 'Testing instructions, store listing'
-        - name: Обновление идентификатора команды App Store Connect в Центре партнеров
+          displayName: 'Testing instructions, store listing, Microsoft Teams app validation tool, compile testing instructions, admin account and non admin account, preconfigured account, premium or upgraded features, tenant configuration'
+        - name: 'Обновление идентификатора команды Apple App Store Connect в Центре партнеров, приобретение приложений на мобильных устройствах'
           href: concepts/deploy-and-publish/appsource/prepare/update-apple-store-team-connect-id.md
-          displayName: Enable users to install your app on Teams iOS Platform.
+          displayName: Enable users to install your app on Teams iOS platform.
         - name: Отправка приложения
           href: /office/dev/store/add-in-submission-guide?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
         - name: Устранение проблем при сбое отправки в магазин Teams
           href: concepts/deploy-and-publish/appsource/resolve-submission-issues.md
-          displayName: 'Resubmit your app, multiple submission failures, Microsoft concierge'
+          displayName: 'Resubmit your app, multiple submission failures, Microsoft concierge, teamsubm@microsoft.com'
         - name: Обслуживание опубликованного приложения
           href: concepts/deploy-and-publish/appsource/post-publish/overview.md
           displayName: 'Promote your app, stop selling, stop app distribution, analyze app usage'
         - name: Параметры рейтинга магазина Microsoft Teams
           href: concepts/deploy-and-publish/appsource/post-publish/teams-store-ranking-parameters.md
-          displayName: 'Microsoft Publisher Agreement, app update or new release, user engagement data,'
+          displayName: 'Microsoft Publisher Agreement, app update or new release, user engagement data'
         - name: Распространенные причины сбоя проверки приложения
           href: concepts/deploy-and-publish/appsource/common-reasons-for-app-validation-failure.md
+          displayName: 'Broken links, functional bugs, app crashes, unexpected errors, app description, Microsoft trademark and brand guidelines, testability, app icon guidelines, app name mismatch, developer name mismatch'
 - name: Монетизация приложения
   items:
     - name: Обзор

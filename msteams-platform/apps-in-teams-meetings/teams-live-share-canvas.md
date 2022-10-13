@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: v-ypalikila
 ms.date: 10/04/2022
-ms.openlocfilehash: 3845d890de365eca8029a3f28d770586a6929743
-ms.sourcegitcommit: 0fa0bc081da05b2a241fd8054488d9fd0104e17b
+ms.openlocfilehash: 9d1a776432f728c1e56caa357089be6e47c17e4c
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68552633"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560612"
 ---
 # <a name="live-share-canvas-overview"></a>Общие сведения об холсте Live Share
 
-:::image type="content" source="../assets/images/teams-live-share/live-share-canvas-docs-feature-1.png" alt-text="Синхронизация мультимедиа Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/live-share-canvas-docs-feature-1.png" alt-text="Снимок экрана: пример холста, синхронизируются с другими участниками собрания в собрании Teams.":::
 
-В конференц-залах и аудиториях по всему миру доски являются составной частью совместной работы. Однако в современном времени доски недостаточно. Поскольку многие цифровые инструменты, такие как PowerPoint, являются центром совместной работы в современной эры, важно обеспечить тот же творческий потенциал.
+В конференц-залах и аудиториях по всему миру доски являются составной частью совместной работы. Однако в современном времени доски недостаточно. Так как многие цифровые инструменты, такие как PowerPoint, являются центром совместной работы в современной эре, важно обеспечить тот же творческий потенциал.
 
 Чтобы обеспечить более бесперебойную совместную работу, корпорация Майкрософт PowerPoint Live, что очень важно для работы пользователей в Teams. Выступающие могут добавлять заметки на слайды, чтобы все могли видеть их с помощью перьев, маркеров и лазерных указателей, чтобы привлечь внимание к основным понятиям. С помощью холста Live Share ваше приложение может использовать возможности PowerPoint Live рукописного ввода с минимальными усилиями.
 
@@ -103,7 +103,7 @@ await liveCanvas.initialize(inkingManager);
 
 ---
 
-## <a name="canvas-tools--cursors"></a>Инструменты холста & курсоров
+## <a name="canvas-tools-and-cursors"></a>Инструменты и курсоры холста
 
 Теперь, когда холст Live Share настроен и синхронизирован, вы можете настроить холст для взаимодействия с пользователем, например кнопки для выбора пера. В этом разделе мы обсудим, какие средства доступны и как их использовать.
 
@@ -113,7 +113,7 @@ await liveCanvas.initialize(inkingManager);
 
 #### <a name="pen-tool"></a>Инструмент пера
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-pen-tool.gif" alt-text="Инструмент на основе холста Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-pen-tool.gif" alt-text="В GIF показан пример рисования росчерков на холсте с помощью пера.":::
 
 Перо рисует сплошные штрихи, которые хранятся на холсте. Фигура подсказки по умолчанию — круг.
 
@@ -151,7 +151,7 @@ document.getElementById("pen-tip-size").onclick = () => {
 
 #### <a name="highlighter-tool"></a>Средство выделения
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-highlighter-tool.gif" alt-text="Средство выделения холста Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-highlighter-tool.gif" alt-text="В GIF показан пример рисования прозрачных штрихов на холсте с помощью средства выделения.":::
 
 Средство выделения рисует прозрачные штрихи, которые хранятся на холсте. Фигура подсказки по умолчанию — квадрат.
 
@@ -189,7 +189,7 @@ document.getElementById("highlighter-tip-size").onclick = () => {
 
 #### <a name="eraser-tool"></a>Средство ластика
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-eraser-tool.gif" alt-text="Средство ластика холста Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-eraser-tool.gif" alt-text="В GIF показан пример стирания штрихов на холсте с помощью средства ластика.":::
 
 Средство ластика удаляет целые штрихи, которые пересекают его путь.
 
@@ -219,7 +219,7 @@ document.getElementById("eraser-size").onclick = () => {
 
 #### <a name="point-eraser-tool"></a>Средство ластика точек
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-point-eraser-tool.gif" alt-text="Средство очистки точек на основе холста Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-point-eraser-tool.gif" alt-text="В GIF показан пример удаления отдельных точек в штрихах на холсте с помощью средства ластика точек.":::
 
 Средство ластика точек удаляет отдельные точки внутри росчерков, которые пересекают его путь, разделив существующие штрихи пополам. Это средство требует вычислительных ресурсов и может привести к снижению частоты кадров для пользователей.
 
@@ -247,7 +247,7 @@ document.getElementById("point-eraser").onclick = () => {
 
 #### <a name="laser-pointer"></a>Лазерная указка
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-laser-tool.gif" alt-text="Средство лазерной указки на основе холста Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-laser-tool.gif" alt-text="В GIF показан пример рисования росчерков на холсте с помощью средства лазерной указки.":::
 
 Лазерная указка уникальна, так как кончик лазера оказывает конечный эффект при перемещении мыши. При рисовании росчерков конечный эффект отрисовка выполняется в течение короткого периода времени, прежде чем он полностью исчезнет. Это средство идеально подходит для выделения информации на экране во время собрания, так как выступающим не нужно переключаться между инструментами для стирания росчерков.
 
@@ -285,7 +285,7 @@ document.getElementById("laser-tip-size").onclick = () => {
 
 #### <a name="line-and-arrow-tools"></a>Инструменты со стрелками и линиями
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-line-tool.gif" alt-text="Средство на основе холста Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-line-tool.gif" alt-text="В GIF показан пример рисования прямых линий на холсте с помощью инструмента &quot;Линия и стрелка&quot;.":::
 
 Средство line позволяет пользователям рисовать прямые линии из одной точки в другую с помощью необязательной стрелки, которую можно применить к концу.
 
@@ -333,7 +333,7 @@ document.getElementById("line-tip-size").onclick = () => {
 
 ### <a name="cursors"></a>Курсоры
 
-:::image type="content" source="../assets/images/teams-live-share/canvas-cursors.gif" alt-text="Общий доступ к курсору Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/canvas-cursors.gif" alt-text="В GIF показан пример пользователей, совместное использование курсора на холсте.":::
 
 Вы можете включить динамические курсоры в приложении, чтобы пользователи могли отслеживать позиции курсоров друг друга на холсте. В отличие от средств рукописного ввода курсоры работают полностью через `LiveCanvas` класс. При необходимости можно указать имя и рисунок для идентификации каждого пользователя. Курсоры можно включить отдельно или с помощью средств рукописного ввода.
 
@@ -357,7 +357,7 @@ liveCanvas.isCursorShared = !isCursorShared;
 
 Ниже приведена простая схема, которая поможет визуализировать эту концепцию:
 
-:::image type="content" source="../assets/images/teams-live-share/live-share-canvas-capabilities-docs-diagram-1.png" alt-text="Визуализация окна просмотра холста Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/live-share-canvas-capabilities-docs-diagram-1.png" alt-text="Снимок экрана: макет холста в полноэкранном режиме для пользователей рабочего стола и мобильных устройств.":::
 
 Это поведение можно настроить следующими способами:
 

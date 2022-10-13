@@ -1,16 +1,16 @@
 ---
 title: Параметры ранжирования магазина Microsoft Teams
-description: Общие сведения о параметрах ранжирования магазина Microsoft Teams. Основными параметрами, используемыми для определения размещения приложений, являются исторические данные об использовании, данные о задействовании пользователей, качество и значения приложения, релевантность, обновление приложения.
+description: Общие сведения о параметрах ранжирования Магазина Microsoft Teams, таких как исторические данные об использовании и вовлечении пользователей, качество и значения приложений, релевантность аудитории, обновление приложений.
 ms.topic: reference
 ms.localizationpriority: high
 author: v-ypalikila
 ms.author: v-ypalikila
-ms.openlocfilehash: 558ac86814ddb61660ca2409418754fd33730c7b
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: e285f2a69703b6870a4392d35a377bf7a585b360
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100338"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560486"
 ---
 # <a name="microsoft-teams-store-ranking-parameters"></a>Параметры ранжирования магазина Microsoft Teams
 

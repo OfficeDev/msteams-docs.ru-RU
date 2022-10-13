@@ -1,16 +1,16 @@
 ---
 title: Подготовка к отправке в магазин
-description: Узнайте о последних действиях перед отправкой приложения Microsoft Teams для выставления в магазине. Узнайте, как проверить пакет приложения. Узнайте, как обновить идентификатор команды Apple App Store Connect в Центре партнеров.
+description: Заключительные шаги перед отправкой приложения Microsoft Teams для регистрации в Магазине. Проверка пакета приложения и полная проверка и аттестация издателя.
 ms.topic: how-to
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: c78cfb103b9e6bd57218b6ca31edeae54c4ecca1
-ms.sourcegitcommit: 176bbca74ba46b7ac298899d19a2d75087fb37c1
+ms.openlocfilehash: bec6c900a0f478b2243685215f094b9a051c44f1
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68376608"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560682"
 ---
 # <a name="prepare-your-teams-store-submission"></a>Подготовка к отправке в магазин Teams
 

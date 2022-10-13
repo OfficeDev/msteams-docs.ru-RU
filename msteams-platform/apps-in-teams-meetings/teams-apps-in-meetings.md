@@ -6,12 +6,12 @@ ms.topic: overview
 ms.author: lajanuar
 ms.localizationpriority: medium
 ms.date: 04/07/2022
-ms.openlocfilehash: 86cccc05a2c22cd337ae696d232c09c52728523c
-ms.sourcegitcommit: 20070f1708422d800d7b1d84b85cbce264616ead
+ms.openlocfilehash: 2e022ab2a39d399395a1aaf43ca6b282d24b81b7
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537530"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560535"
 ---
 # <a name="apps-for-teams-meetings-and-calls"></a>Приложения для собраний и звонков Teams
 
@@ -19,7 +19,9 @@ ms.locfileid: "68537530"
 
 > [!NOTE]
 >
-> Приложения для мгновенных собраний, запланированных собраний общедоступного канала, звонков по одному и групповых звонков в настоящее время доступны только в общедоступной предварительной [версии разработчика](../resources/dev-preview/developer-preview-intro.md).
+> * Приложения для запланированных собраний общедоступного канала в настоящее время доступны только в [общедоступной предварительной версии разработчика](../resources/dev-preview/developer-preview-intro.md).
+>
+> * Приложения не поддерживаются в телефонной сети общего пользования [(ТСОП)](/microsoftteams/cloud-voice-landing-page#public-switched-telephone-network-connectivity-options) и сквозных [зашифрованных вызовах Teams](https://support.microsoft.com/office/use-end-to-end-encryption-for-teams-calls-1274b4d2-b5c5-4b24-a376-606fa6728a90).
 
 Teams поддерживает доступ к приложениям во время собрания для следующих типов собраний:
 

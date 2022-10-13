@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: v-ypalikila
 ms.date: 04/07/2022
-ms.openlocfilehash: 6d2e1dc9d49ab1ec551fd814ba8baa330e9ace3f
-ms.sourcegitcommit: 0fa0bc081da05b2a241fd8054488d9fd0104e17b
+ms.openlocfilehash: 0e2c2a41eee5bf77dfeaf7150eede97a4b60ded8
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68552551"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560626"
 ---
 # <a name="live-share-core-capabilities"></a>Основные возможности Live Share
 
-:::image type="content" source="../assets/images/teams-live-share/Teams-live-share-core-capabilities-hero.png" alt-text="Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/Teams-live-share-core-capabilities-hero.png" alt-text="Снимок экрана: пример того, как пользователи играют в гибкую игру на собрании Teams, демонстрируя возможность live share.":::
 
 Пакет Live Share SDK можно добавить в расширения `sidePanel` и `meetingStage` контексты ваших собраний с минимальными усилиями. В этой статье рассматривается интеграция пакета Live Share SDK в ваше приложение, а также основные возможности пакета SDK.
 
@@ -221,7 +221,7 @@ function onClickAddToPlaylist(video: IVideo) {
 
 ### <a name="livepresence-example"></a>Пример LivePresence
 
-:::image type="content" source="../assets/images/teams-live-share/live-share-presence.png" alt-text="Присутствие Teams Live Share":::
+:::image type="content" source="../assets/images/teams-live-share/live-share-presence.png" alt-text="Снимок экрана: пример, показывающий пользователей, которые доступны в sessionTeams с использованием присутствия Live Share.":::
 
 Этот `LivePresence` класс упрощает отслеживание пользователей в сеансе. При вызове метода `.initialize()` или метода `.updatePresence()` можно назначить пользовательские метаданные для этого пользователя, такие как имя или изображение профиля. Прослушивая события `presenceChanged` , каждый `LivePresenceUser` клиент получает последний объект, сворачивая все обновления присутствия в одну запись для каждого уникального `userId`объекта.
 
@@ -317,7 +317,7 @@ function onUserDidLogIn(userName: string, profilePicture: string) {
 
 ### <a name="liveevent-example"></a>Пример LiveEvent
 
-:::image type="content" source="../assets/images/teams-live-share/live-share-event.png" alt-text="Событие Teams Live Share для отображения уведомлений":::
+:::image type="content" source="../assets/images/teams-live-share/live-share-event.png" alt-text="Снимок экрана: пример клиента Teams, отображаемого при изменении события.":::
 
 `LiveEvent` — это отличный способ отправки простых событий другим клиентам на собрании. Это полезно для таких сценариев, как отправка уведомлений о сеансе.
 
@@ -399,7 +399,7 @@ notifications.sendEvent({
 
 ### <a name="livetimer-example"></a>Пример LiveTimer
 
-:::image type="content" source="../assets/images/teams-live-share/live-share-timer.png" alt-text="Таймер обратного отсчета Live Share в Teams":::
+:::image type="content" source="../assets/images/teams-live-share/live-share-timer.png" alt-text="Снимок экрана: пример таймера отсчета времени отсчета с оставшимися 9 секундами.":::
 
 `LiveTimer` включает сценарии с ограничением по времени, например таймер группировки или круговой таймер для игры.
 

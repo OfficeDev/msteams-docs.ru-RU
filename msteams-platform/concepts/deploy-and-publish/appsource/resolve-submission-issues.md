@@ -1,16 +1,16 @@
 ---
 title: Устранение проблем с отправкой в магазин
-description: Узнайте, как устранять и устранять проблемы с отправкой в Магазин Microsoft Teams. Получите помощь непосредственно от корпорации Майкрософт, устраните проблемы и повторно отправьте приложение.
+description: Устранение и устранение неполадок с отправкой в Магазин Microsoft Teams. Получите помощь непосредственно от корпорации Майкрософт, устраните проблемы и повторно отправьте приложение.
 ms.topic: how-to
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: medium
-ms.openlocfilehash: daa64a7f21071632b7c0728bf51829ca9540ebce
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 729275b141fc30571dcfc1a1b5e303734d216aa2
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100282"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560717"
 ---
 # <a name="resolve-issues-if-your-teams-store-submission-fails"></a>Устранение проблем при сбое отправки в магазин Teams
 
@@ -67,7 +67,7 @@ ms.locfileid: "68100282"
 
 <details>
 
-<summary><b>如何实现 увеличить вероятность того, что мое приложение пройдет отправку?</b></summary>
+<summary><b>Разделы справки увеличить вероятность того, что приложение пройдет отправку?</b></summary>
 
 Выполнение следующих действий может привести к успешной отправке:
 

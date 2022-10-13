@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: v-ypalikila
 ms.date: 04/07/2022
-ms.openlocfilehash: 31b962d747a792b58a9efc9e2c52e42dc841ed18
-ms.sourcegitcommit: 0fa0bc081da05b2a241fd8054488d9fd0104e17b
+ms.openlocfilehash: 0a1b7a48ffaf0cd71fd0aac2ecf7c1fe2c5970f1
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68552497"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560591"
 ---
 # <a name="live-share-media-capabilities"></a>Возможности мультимедиа Live Share
 
 :::image type="content" source="../assets/images/teams-live-share/live-share-media-capabilities-docs-feature-1.png" alt-text="Синхронизация мультимедиа Teams Live Share":::
 
-Видео и аудио являются важной частью современного мира и рабочего места. Мы получили множество отзывов о том, что мы можем сделать больше для повышения качества, доступности и лицензионной защиты совместного просмотра видео на собраниях.
+Видео и аудио являются важной частью современного мира и рабочего места. Мы получили широкий спектр отзывов о том, что мы можем сделать еще больше для повышения качества, специальных возможностей и защиты лицензий при совместном просмотре видео на собраниях.
 
 Пакет SDK Live Share обеспечивает надежную синхронизацию мультимедиа для любого HTML-кода  `<video>` `<audio>` и элемента с несколькими строками кода. Синхронизация мультимедиа на уровне состояния проигрывателя и элементов управления транспортировкой позволяет по отдельности атрибутировать представления и лицензию, обеспечивая при этом максимально возможное качество, доступное через ваше приложение.
 

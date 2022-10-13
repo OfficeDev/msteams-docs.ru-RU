@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.localizationpriority: none
 ms.author: surbhigupta
 ms.date: 04/07/2022
-ms.openlocfilehash: 4807b85ed1b520b84701bcd727fda88cf77808eb
-ms.sourcegitcommit: 08bd7f1b9c654b95d3639ca88052c9ca9a8c3f67
+ms.openlocfilehash: db90b3e3f026eced56c626a082f5ec6be04cb893
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67833690"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560647"
 ---
 # <a name="unified-meetings-apps"></a>Приложения объединенных собраний
 
@@ -29,7 +29,7 @@ ms.locfileid: "67833690"
 
 > [!NOTE]
 >
-> * Приложения для мгновенных собраний, запланированных собраний общедоступного канала, звонков по одному и групповых звонков в настоящее время доступны только в общедоступной предварительной [версии разработчика](../resources/dev-preview/developer-preview-intro.md).
+> * Приложения для запланированных собраний общедоступного канала в настоящее время доступны только в [общедоступной предварительной версии разработчика](../resources/dev-preview/developer-preview-intro.md).
 >
 > * Расширения собраний, такие как боты, карточки, расширения сообщений и действия с сообщениями, поддерживаются в веб-клиенте. Однако в настоящее время размещенные функции, такие как вкладки, пузырьки содержимого и общий доступ, в настоящее время не полностью поддерживаются.
 

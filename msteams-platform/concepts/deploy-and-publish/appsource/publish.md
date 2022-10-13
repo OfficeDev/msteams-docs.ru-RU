@@ -1,16 +1,16 @@
 ---
 title: Обзор. Публикация приложения в Магазине Microsoft Teams
-description: Изучите процесс публикации приложения в Магазине Microsoft Teams, что следует ожидать после отправки, советы по быстрому утверждению публикации приложения и приложения, связанного с предложением SaaS.
+description: Опубликуйте приложение в Магазине Microsoft Teams или AppSource. Что следует ожидать после отправки, советы по быстрому утверждению и публикации приложений, связанных с предложением SaaS.
 ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: d64a5eda5f728a87991b361d5ec17b95c6ac49cd
-ms.sourcegitcommit: ea7b7b8ebb4b2acdd0b9a3411c59a9a91a06f409
+ms.openlocfilehash: 95d310467ae5fad80d07a61d6b790dcd086feb35
+ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2022
-ms.locfileid: "68350456"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68560731"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
