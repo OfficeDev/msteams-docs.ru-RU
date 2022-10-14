@@ -5,16 +5,16 @@ author: heath-hamilton
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.author: lajanuar
-ms.openlocfilehash: ad6a69f05225c6821ec1d8ee8ba1f569044247ff
-ms.sourcegitcommit: 2d2a08f671c3d19381403ba1af5dff1f06bb4dd6
+ms.openlocfilehash: 4646d47c5aa325291f060ea192dcc1705b414ac7
+ms.sourcegitcommit: bd96080c78f25eb0a67ce176df5e255be348f7b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "67338825"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68575798"
 ---
 # <a name="designing-your-personal-app-for-microsoft-teams"></a>Проектирование личных приложений для Microsoft Teams
 
-Личное приложение может быть ботом, частной рабочей областью или и тем, и другим. Иногда оно функционирует как место для создания или просмотра контента, в других случаях оно предлагает пользователю обзор всего, что принадлежит ему, когда приложение настроено как вкладка в нескольких каналах.
+Личное приложение может быть ботом, закрытой рабочей областью или и тем, и другим.  Иногда он функционирует как место для создания или просмотра содержимого. В других случаях он позволяет пользователю просматривать все, что у него есть, если приложение настроено как вкладка в нескольких каналах.
 
 Далее описано и показано, как люди могут добавлять личные приложения, использовать их и управлять ими в Teams. Это может помочь вам в создании приложения.
 
@@ -47,8 +47,39 @@ ms.locfileid: "67338825"
 |----------|-----------|
 |A|**Атрибут приложения**: имя вашего приложения.|
 |Б|**Вкладки**: обеспечивает навигацию для личного приложения.|
-|В|**Меню "Еще"**: включает дополнительные параметры и сведения о приложении.|
+|В|**Дополнительное меню**: включает другие параметры и сведения о приложении.|
 |D|**Основная навигация**: обеспечивает навигацию к другим основным функциям Teams вашего приложения.|
+
+#### <a name="configure-and-add-multiple-actions-in-navbar"></a>**Настройка и добавление нескольких действий в NavBar**
+
+Вы можете добавить несколько действий в верхнюю правую панель NavBar и создать меню переполнения для дополнительных действий в приложении.
+
+>[!NOTE]
+> В NavBar можно добавить не более пяти действий, включая меню переполнения.
+
+:::image type="content" source="../../assets/images/overflow-menu-and-multiple-actionsoptions.png" alt-text="Снимок экрана — это пример, описывающий меню NavBar и Overflow.":::
+
+Чтобы **настроить и добавить несколько действий в NavBar**, вызовите [API setNavBarMenu](/javascript/api/@microsoft/teams-js/microsoftteams.menus?view=msteams-client-js-1.12.1&preserve-view=true) . и добавьте свойство `displayMode enum` в `MenuItem`. Определяет `displayMode enum` , как меню отображается на панели Навигации. Значение по умолчанию равно `displayMode enum` `ifRoom`.
+
+В зависимости от требований и пространства, доступных в NavBar, `displayMode enum` задайте один из следующих значений.
+
+* Если есть место, задайте `ifRoom = 0` для размещения элемента в NavBar.
+* Если места нет, `overflowOnly = 1`задайте значение, чтобы этот элемент всегда помещались в меню переполнения NavBar, но не в NavBar.
+
+Ниже приведен пример настройки NavBar с помощью меню переполнения для нескольких действий.
+
+```typescript
+const menuItems = [item1, item2, item3, item4, item5]
+microsoftTeams.menus.setNavBarMenu(menuItems, (id: string) => {
+  output(`Clicked ${id}`)
+  return true;
+})
+```
+
+> [!NOTE]
+> API `setNavBarMenu` не управляет кнопкой **"Обновить** ". Он отображается по умолчанию.
+
+:::image type="content" source="../../assets/images/overflow-menu-and-multple-actions.png" alt-text="На снимке экрана показан пример навигации и несколько действий в меню переполнения.":::
 
 :::image type="content" source="../../assets/images/personal-apps/mobile-personal-tab-structural-anatomy.png" alt-text="В примере показана структура личной вкладки.":::
 
@@ -66,7 +97,7 @@ ms.locfileid: "67338825"
 |A|**Атрибут приложения**: логотип и имя приложения.|
 |Б|**Вкладки**: обеспечивает навигацию для личного приложения.|
 |В|**Всплывающее представление**: содержимое приложения перемещается из родительского окна в отдельное дочернее окно.|
-|D|**Меню "Еще"**: включает дополнительные параметры и сведения о приложении. (Вы также можете сделать **Параметры** вкладкой.)|
+|D|**Дополнительное меню**: включает другие параметры и сведения о приложении. (Вы также можете сделать **Параметры** вкладкой.)|
 
 :::image type="content" source="../../assets/images/personal-apps/personal-tab-structural-anatomy.png" alt-text="В этом примере показана структура личной вкладки.":::
 
@@ -88,7 +119,7 @@ ms.locfileid: "67338825"
 
 ## <a name="use-a-personal-app-bot"></a>Использование личного приложения (бота)
 
-Персональные приложения могут включать в себя бот для личных бесед и уведомлений (например, когда коллега публикует комментарий на артборде). Пользователи взаимодействуют с ботом на указанной вами вкладке.
+Personal apps can include a bot for one-on-one conversations and private notifications (for instance, when a colleague posts a comment on artboard). Users interact with the bot in a tab you specify.
 
 ### <a name="anatomy-personal-app-bot"></a>Структура: личное приложение (бот)
 
@@ -102,6 +133,30 @@ ms.locfileid: "67338825"
 |Б|**Кнопка "Назад"**: возвращает пользователей в личное рабочее пространство.|
 |В|**Сообщение бота**: боты часто отправляют сообщения и уведомления в виде карточки (например, адаптивной карточки).|
 |D|**Поле создания:** поле ввода для отправки сообщений боту.|
+
+#### <a name="configure-back-button"></a>Настройка кнопки "Назад"
+
+При нажатии кнопки "Назад" в приложении Teams вы перейти на платформу Teams, не переходя в приложение.
+
+Чтобы перейти в приложение, настройте кнопку "Назад", чтобы при нажатии кнопки "Назад" можно было вернуться к предыдущим шагам и перейти к приложению.
+
+Чтобы **настроить кнопку "Назад"**, вызовите API [registerBackButtonHandler](/javascript/api/@microsoft/teams-js/pages.backstack?view=msteams-client-js-latest&preserve-view=true&branch=pr-en-us-6801&preserve-view=true) , который обрабатывает функции кнопки "Назад" в зависимости от одного из следующих условий:
+
+* Если `registerBackButtonHandler` задано значение , `false`пакет SDK `navigateBack` для JavaScript вызывает API, а платформа Teams обрабатывает кнопку "Назад".
+* Если `registerBackButtonHandler` задано `true`значение , приложение обрабатывает функции кнопки "Назад" (вы можете вернуться к предыдущим шагам и перейти к приложению), а платформа Teams не выполняет никаких дальнейших действий.
+
+Ниже приведен пример настройки кнопки "Назад":
+
+```typescript
+microsoftTeams.registerBackButtonHandler(() => {
+  const selectOption = registerBackReturn.options[registerBackReturn.selectedIndex].value
+  var isHandled = false
+  if (selectOption == 'true') 
+    isHandled = true;
+  output(`onBack isHandled ${isHandled}`)
+  return isHandled;
+})
+```
 
 #### <a name="desktop"></a>Версия для настольного компьютера
 
@@ -204,4 +259,6 @@ ms.locfileid: "67338825"
 Эти другие рекомендации по проектированию могут помочь в зависимости от области вашего личного приложения:
 
 * [Проектирование вкладки](../../tabs/design/tabs.md)
-* [Проектирование бота](../../bots/design/bots.md)
+* [Создание бота](../../bots/design/bots.md)
+* [registerBackButtonHandler](/javascript/api/@microsoft/teams-js/pages.backstack?view=msteams-client-js-latest&preserve-view=true&branch=pr-en-us-6801&preserve-view=true)
+* [Перечисление DisplayMode](/javascript/api/@microsoft/teams-js/menus.displaymode?view=msteams-client-js-latest&preserve-view=true)
