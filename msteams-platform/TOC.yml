@@ -271,7 +271,9 @@
       displayName: 'Cross-tenant notifications, context for shared channel, apps and permissions in shared channels'
     - name: Создание вкладок с использованием адаптивных карточек
       href: tabs/how-to/build-adaptive-card-tabs.md
-      displayName: 'Slow load times, iFrame constraints, invoke activities, task module, task fetch, task submit, authentication'
+      displayName: 'Slow load times, iFrame constartints, invoke activities, task module, task fetch, task submit, authentication'
+    - name: Использование гибких функций в Microsoft Teams
+      href: tabs/how-to/using-fluid-msteam.md
     - name: Предварительный просмотр для ссылки "Вкладки" и представление стадий
       href: tabs/tabs-link-unfurling.md
       displayName: Tab in stage view
@@ -378,15 +380,20 @@
   items:
     - name: Обзор
       href: apps-in-teams-meetings/teams-apps-in-meetings.md
-    - name: Приложения объединенных собраний
-      href: apps-in-teams-meetings/meeting-app-extensibility.md
-      displayName: 'Chat tab, poll survey, user access, federated users'
-    - name: Включение и настройка приложений для собраний
-      href: apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md
-      displayName: 'meeting token generator app, meeting scenario'
-    - name: Справочные материалы по API приложений для собраний
-      href: apps-in-teams-meetings/API-references.md
-      displayName: 'CART URL, channel, permissions, access, audio state'
+    - name: Включение и настройка приложений для собраний Teams
+      items:
+        - name: Создание вкладок для собрания
+          href: apps-in-teams-meetings/build-tabs-for-meeting.md
+        - name: Создание приложений для этапа собрания
+          href: apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md
+        - name: Создание уведомления о собрании для собрания
+          href: apps-in-teams-meetings/in-meeting-notification-for-meeting.md
+        - name: Создание расширяемых бесед для чата собрания
+          href: apps-in-teams-meetings/build-extensible-conversation-for-meeting-chat.md
+        - name: Создание приложений для анонимных пользователей
+          href: apps-in-teams-meetings/build-apps-for-anonymous-user.md
+        - name: API-интерфейсы приложений для собраний
+          href: apps-in-teams-meetings/meeting-apps-apis.md
     - name: Получение расшифровок собраний с помощью API Graph
       items:
         - name: Обзор

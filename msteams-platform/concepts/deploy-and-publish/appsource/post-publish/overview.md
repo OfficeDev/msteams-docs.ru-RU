@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.localizationpriority: high
 author: heath-hamilton
 ms.author: surbhigupta
-ms.openlocfilehash: 77b17cb837312bca5b253fbd99fba2d0503f1744
-ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
+ms.openlocfilehash: cbb97bd1fcd3422af968e7928436f4da1ae4038d
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68560472"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615291"
 ---
 # <a name="maintain-your-published-microsoft-teams-app"></a>Поддержка опубликованного приложения Microsoft Teams
 
@@ -23,11 +23,6 @@ ms.locfileid: "68560472"
 Данные о новых опубликованных приложениях появляются в отчете примерно через неделю.
 
 ## <a name="publish-updates-to-your-app"></a>Публикация обновлений приложения
-
-> [!NOTE]
-> Магазин Teams развивается:
->
-> Ранее для копирования ссылки нужно было щелкнуть многоточие на плитке приложения. Обновленный интерфейс магазина Teams позволяет получить то же самое на вкладке сведений о приложении. Это обновление станет общедоступным 1 марта 2022 г.
 
 Отправлять изменения в приложение (например, новые функции или даже метаданные) можно в Центре партнеров. Эти изменения требуют нового процесса проверки.
 

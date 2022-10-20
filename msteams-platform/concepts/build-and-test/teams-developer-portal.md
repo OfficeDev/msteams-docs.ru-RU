@@ -4,12 +4,12 @@ description: В этой статье вы узнаете больше о пор
 ms.localizationpriority: medium
 ms.topic: overview
 ms.author: surbhigupta
-ms.openlocfilehash: 0e099700d6129dc2db7b12e0a699fc903c9d32c8
-ms.sourcegitcommit: b060a3901a3ba770ea6fca96d0ab477c252af1a2
+ms.openlocfilehash: b0619fc328e6bc30decfe5868692281037489654
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417502"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615137"
 ---
 # <a name="developer-portal-for-teams"></a>Портал разработчиков Teams
 
@@ -19,9 +19,8 @@ ms.locfileid: "67417502"
 
 > [!NOTE]
 >
-> * В настоящее время портал разработчика недоступен для следующих клиентов: облако сообщества для государственных организаций (GCC), GCC-High и Министерство обороны (DOD).
+> * В настоящее время портал разработчика недоступен для клиентов облака сообщества для государственных организаций (GCC) High или Министерства обороны США.
 > * Однако вы можете использовать обычный клиент для создания приложения на портале разработчика, скачивания приложения и отправки приложения с помощью [Microsoft Graph](/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http&preserve-view=true) в общенациональное облако. Дополнительные сведения см. в статье [Развертывания в общенациональных облаках](/graph/deployments).
-> * В настоящее время в некоторых сценариях портал разработчика не будет загружаться в браузере при включении AdBlocker. Чтобы продолжить работу с порталом разработчика в браузере, отключите AdBlocker.
 
 ## <a name="register-an-app"></a>Регистрация приложения
 

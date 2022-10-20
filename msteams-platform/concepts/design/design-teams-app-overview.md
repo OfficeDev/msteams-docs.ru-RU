@@ -1,16 +1,16 @@
 ---
 title: Проектирование пользовательского приложения
 author: heath-hamilton
-description: Узнайте, как Microsoft Teams приложения и ресурсы, включая Microsoft Teams пользовательского интерфейса, рекомендации, примеры и т. д.
+description: Узнайте, как проектировать приложения и ресурсы Microsoft Teams, включая комплект пользовательского интерфейса Microsoft Teams, рекомендации, примеры и т. д.
 ms.localizationpriority: medium
 ms.author: surbhigupta
 ms.topic: overview
-ms.openlocfilehash: 442d092be36f5d49e68fc997394e8846c4394f8d
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 341c64b2afda7574b6d230257290220e2c97d325
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66142880"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615312"
 ---
 # <a name="designing-your-microsoft-teams-app"></a>Проектирование приложения Microsoft Teams
 
@@ -185,7 +185,7 @@ ms.locfileid: "66142880"
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Включение и настройка приложений для собраний Teams](../../apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md)
+* [Включение и настройка приложений для этапа собрания](../../apps-in-teams-meetings/build-tabs-for-meeting.md)
 * [Создание бота Microsoft Teams](~/bots/design/bots.md)
 * [Создание виртуального помощника](~/samples/virtual-assistant.md)
 * [Проектирование модулей задач для приложения Microsoft Teams](~/task-modules-and-cards/task-modules/design-teams-task-modules.md)

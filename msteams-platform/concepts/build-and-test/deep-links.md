@@ -3,12 +3,12 @@ title: Создание прямых ссылок
 description: Из этой статьи вы узнаете, как создавать глубокие ссылки и перемещаться по ним в приложениях Microsoft Teams с помощью вкладок.
 ms.topic: how-to
 ms.localizationpriority: high
-ms.openlocfilehash: 077b69658177a1760ab51cba84771b825c1adb3e
-ms.sourcegitcommit: 20070f1708422d800d7b1d84b85cbce264616ead
+ms.openlocfilehash: b1f9e7b58faeef7223a9bc9b9f9c26cab7bc73e5
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537564"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615193"
 ---
 # <a name="create-deep-links"></a>Создание прямых ссылок
 
@@ -429,82 +429,6 @@ if(call.isSupported()) {
 else { /* handle case where capability isn't supported */ }
 
 ```
-
-## <a name="generate-a-deep-link-to-share-content-to-stage-in-meetings"></a>Создание глубокой ссылки для совместного использования содержимого на этапе собраний
-
-Вы также можете создать прямую ссылку, чтобы поделиться приложением для [подготовки и](~/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings.md#share-entire-app-to-stage) запуска собрания или присоединения к собранию.
-
-> [!NOTE]
->
-> * В настоящее время прямая ссылка для совместного использования содержимого на собраниях находится в стадии улучшения пользовательского интерфейса и доступна только в общедоступной предварительной [версии разработчика](~/resources/dev-preview/developer-preview-intro.md).
-> * Прямая ссылка для совместного использования содержимого на этапе собрания поддерживается только в клиенте Teams для настольных компьютеров.
-
-Когда пользователь, который является частью текущего собрания, выбирает в приложении прямую ссылку, приложение совместно используется на этапе и появляется всплывающее окно разрешения. Пользователи могут предоставить участникам доступ для совместной работы с приложением.
-
-:::image type="content" source="../../assets/images/intergrate-with-teams/screenshot-of-pop-up-permission.png" alt-text="На снимке экрана показан пример всплывающего окна разрешения.":::
-
-Если пользователь не находится на собрании, он перенаправляется в календарь Teams, где он может присоединиться к собранию или инициировать мгновенное собрание (провести собрание сейчас).
-
-:::image type="content" source="../../assets/images/intergrate-with-teams/Instant-meetnow-pop-up.png" alt-text="На снимке экрана показан пример всплывающего окна при отсутствии текущего собрания.":::
-
-Когда пользователь инициирует мгновенное собрание (провести собрание сейчас), он может добавлять участников и взаимодействовать с приложением.
-
-:::image type="content" source="../../assets/images/intergrate-with-teams/Screenshot-ofmeet-now-option-pop-up.png" alt-text="На снимке экрана показан пример, в котором показано, как добавить участников и как взаимодействовать с приложением.":::
-
-Чтобы добавить прямую ссылку для совместного использования содержимого на этапе, необходимо иметь контекст приложения. Контекст приложения позволяет клиенту Teams получить манифест приложения и проверить, возможно ли совместное использование на этапе. Ниже приведен пример контекста приложения.
-
-* `{ "appSharingUrl" : "https://teams.microsoft.com/extensibility-apps/meetingapis/view", "appId": "9ec80a73-1d41-4bcb-8190-4b9eA9e29fbb" , "useMeetNow": false }`
-
-Параметры запроса для контекста приложения:
-
-* `appID`: это идентификатор, который можно получить из манифеста приложения.
-* `appSharingUrl`: URL-адрес, который должен быть общим на этапе, должен быть допустимым доменом, определенным в манифесте приложения. Если URL-адрес не является допустимым доменом, отобразит диалоговое окно ошибки с описанием ошибки.
-* `useMeetNow`: включает логический параметр, который может иметь значение true или false.
-  * **True** . Если значение `UseMeetNow` равно true и нет текущего собрания, будет инициировано новое собрание Meet. При постоянном собрании это значение будет игнорироваться.
-
-  * **False** — значение по `UseMeetNow` умолчанию — false. Это означает, что при совместном использовании глубокой ссылки на этап и отсутствии текущего собрания появится всплывающее окно календаря. Однако вы можете предоставлять общий доступ непосредственно во время собрания.
-
-Убедитесь, что все параметры запроса правильно закодированы в кодировке URI, а контекст приложения должен быть закодирован дважды в окончательном URL-адресе. См. пример.
-
-```json
-var appContext= JSON.stringify({ "appSharingUrl" : "https://teams.microsoft.com/extensibility-apps/meetingapis/view", "appId": "9cc80a93-1d41-4bcb-8170-4b9ec9e29fbb", "useMeetNow":false })
-var encodedContext = encodeURIComponent(appcontext).replace(/'/g,"%27").replace(/"/g,"%22")
-var encodedAppContext = encodeURIComponent(encodedContext).replace(/'/g,"%27").replace(/"/g,"%22")
-```
-
-Прямую ссылку можно запустить с веб-сайта Teams или с настольного клиента Teams.
-
-* **Веб-сайт Teams** . Используйте следующий формат, чтобы открыть прямую ссылку из Интернета Teams, чтобы поделиться содержимым на стадии.
-
-    `https://teams.microsoft.com/l/meeting-share?deeplinkId={deeplinkid}&fqdn={fqdn}}&lm=deeplink%22&appContext={encoded app context}`
-
-    Пример: `https://teams.microsoft.com/l/meeting-share?deeplinkId={sampleid}&fqdn=teams.microsoft.com&lm=deeplink%22&appContext=%257B%2522appSharingUrl%2522%253A%2522https%253A%252F%252Fteams.microsoft.com%252Fextensibility-apps%252Fmeetingapis%252Fview%2522%252C%2522appId%2522%253A%25229cc80a93-1d41-4bcb-8170-4b9ec9e29fbb%2522%252C%2522useMeetNow%2522%253Atrue%257D`
-
-    |Прямая ссылка|Формат|Пример|
-    |---------|---------|---------|
-    |Чтобы поделиться приложением и открыть календарь Teams, если useMeeetNow имеет значение false, по умолчанию.|`https://teams.microsoft.com/l/meeting-share?deeplinkId={deeplinkid}&fqdn={fqdn}}&lm=deeplink%22&appContext={encoded app context}`|`https://teams.microsoft.com/l/meeting-share?deeplinkId={sampleid}&fqdn=teams.microsoft.com&lm=deeplink%22&appContext=%257B%2522appSharingUrl%2522%253A%2522https%253A%252F%252Fteams.microsoft.com%252Fextensibility-apps%252Fmeetingapis%252Fview%2522%252C%2522appId%2522%253A%25229cc80a93-1d41-4bcb-8170-4b9ec9e29fbb%2522%252C%2522useMeetNow%2522%253Afalse%257D`|
-    |Чтобы поделиться приложением и инициировать мгновенное собрание, если UseMeeetNow имеет значение true.|`https://teams.microsoft.com/l/meeting-share?deeplinkId={deeplinkid}&fqdn={fqdn}}&lm=deeplink%22&appContext={encoded app context}`|`https://teams.microsoft.com/l/meeting-share?deeplinkId={sampleid}&fqdn=teams.microsoft.com&lm=deeplink%22&appContext=%257B%2522appSharingUrl%2522%253A%2522https%253A%252F%252Fteams.microsoft.com%252Fextensibility-apps%252Fmeetingapis%252Fview%2522%252C%2522appId%2522%253A%25229cc80a93-1d41-4bcb-8170-4b9ec9e29fbb%2522%252C%2522useMeetNow%2522%253Atrue%257D`|
-
-* **Клиент team desktop —** используйте следующий формат, чтобы открыть прямую ссылку из настольного клиента Teams, чтобы поделиться содержимым на этапе.
-
-    `msteams:/l/meeting-share?   deeplinkId={deeplinkid}&fqdn={fqdn}&lm=deeplink%22&appContext={encoded app context}`
-
-    Пример: `msteams:/l/meeting-share?deeplinkId={sampleid}&fqdn=teams.microsoft.com&lm=deeplink%22&appContext=%257B%2522appSharingUrl%2522%253A%2522https%253A%252F%252Fteams.microsoft.com%252Fextensibility-apps%252Fmeetingapis%252Fview%2522%252C%2522appId%2522%253A%25229cc80a93-1d41-4bcb-8170-4b9ec9e29fbb%2522%252C%2522useMeetNow%2522%253Atrue%257D`
-
-    |Прямая ссылка|Формат|Пример|
-    |---------|---------|---------|
-    |Чтобы поделиться приложением и открыть календарь Teams, если useMeeetNow имеет значение false, по умолчанию.|`msteams:/l/meeting-share?   deeplinkId={deeplinkid}&fqdn={fqdn}&lm=deeplink%22&appContext={encoded app context}`|`msteams:/l/meeting-share?deeplinkId={sampleid}&fqdn=teams.microsoft.com&lm=deeplink%22&appContext=%257B%2522appSharingUrl%2522%253A%2522https%253A%252F%252Fteams.microsoft.com%252Fextensibility-apps%252Fmeetingapis%252Fview%2522%252C%2522appId%2522%253A%25229cc80a93-1d41-4bcb-8170-4b9ec9e29fbb%2522%252C%2522useMeetNow%2522%253Afalse%257D`|
-    |Чтобы поделиться приложением и инициировать мгновенное собрание, если UseMeeetNow имеет значение true.|`msteams:/l/meeting-share?   deeplinkId={deeplinkid}&fqdn={fqdn}&lm=deeplink%22&appContext={encoded app context}`|`msteams:/l/meeting-share?deeplinkId={sampleid}&fqdn=teams.microsoft.com&lm=deeplink%22&appContext=%257B%2522appSharingUrl%2522%253A%2522https%253A%252F%252Fteams.microsoft.com%252Fextensibility-apps%252Fmeetingapis%252Fview%2522%252C%2522appId%2522%253A%25229cc80a93-1d41-4bcb-8170-4b9ec9e29fbb%2522%252C%2522useMeetNow%2522%253Atrue%257D`|
-
-Параметры запроса:
-
-* `deepLinkId`: любой идентификатор, используемый для корреляции телеметрии.
-* `fqdn`— `fqdn` необязательный параметр, который можно использовать для перехода в соответствующую среду собрания для совместного использования приложения на этапе. Он поддерживает сценарии, в которых определенная общую папку приложения происходит в определенной среде. Значение по умолчанию — `fqdn` корпоративный URL-адрес, а возможные `Teams.live.com` значения — для Teams для жизни или `teams.microsoft.com``teams.microsoft.us`.
-
-Чтобы поделиться всем приложением на этапе, `meetingStage` `meetingSidePanel` в манифесте приложения необходимо настроить и в качестве контекстов кадров просмотреть [манифест приложения](../../resources/schema/manifest-schema.md). В противном случае участники собрания могут не видеть содержимое на стадии.
-
-> [!NOTE]
-> Чтобы приложение прошел проверку, при создании глубокой ссылки на веб-сайте, веб-приложении или адаптивной карточке  используйте общий доступ к собранию в качестве строки или копирования.
 
 ## <a name="generate-a-deep-link-to-a-call"></a>Создание прямой ссылки на звонок
 
