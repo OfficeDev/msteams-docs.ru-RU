@@ -7,12 +7,12 @@ ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: 24d231ef7a76ede1d45176d5869caa9a76a791be
-ms.sourcegitcommit: c1032ea4f48c4bbf5446798ff7d46d7e6e9f55d2
+ms.openlocfilehash: 730317fd6480b583d7b293a4e032589d01c99db0
+ms.sourcegitcommit: 707dad21dc3cf79ac831afe05096c0341bcf2fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026964"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68653665"
 ---
 # <a name="debug-your-teams-app-locally"></a>Отлаживайте приложения Teams локально
 
@@ -23,6 +23,10 @@ ms.locfileid: "68026964"
 ## <a name="debug-your-microsoft-teams-app-locally-for-visual-studio-code"></a>Локальная отладка приложения Microsoft Teams для Visual Studio Code
 
 Набор средств Teams в Visual Studio Code предоставляет функции для автоматизации отладки приложения Teams локально. Visual Studio позволяет выполнять отладку вкладки, бота и расширения сообщений. Перед отладой приложения необходимо настроить Набор средств Teams.
+
+> [!NOTE]
+>
+> Вы можете обновить старый проект Набора средств Teams, чтобы использовать новые задачи. Дополнительные сведения см. в документации по [параметрам отладки](https://aka.ms/teamsfx-debug-upgrade-new-tasks)
 
 ## <a name="set-up-your-teams-toolkit-for-debugging"></a>Настройка набора средств Teams для отладки
 
@@ -110,7 +114,7 @@ ms.locfileid: "68026964"
 
 На следующем рисунке отображаются имена задач на вкладке **OUTPUT** и **TERMINAL** Visual Studio Code при запуске вкладки, бота или расширения сообщения и Функции Azure.
 
-:::image type="content" source="../assets/images/teams-toolkit-v2/debug/Terminal.png" alt-text="Запуск служб приложений":::
+:::image type="content" source="../assets/images/teams-toolkit-v2/debug/Terminal1.png" alt-text="Запуск служб приложений" lightbox="../assets/images/teams-toolkit-v2/debug/Terminal1.png":::
 
 ### <a name="launches-debug-configurations"></a>Запуск конфигураций отладки
 

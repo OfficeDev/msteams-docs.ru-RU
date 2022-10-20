@@ -6,12 +6,12 @@ ms.author: v-amprasad
 ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/03/2022
-ms.openlocfilehash: b8f85f092f9a99e9931a5ff0ea5e763c0b4fb0fe
-ms.sourcegitcommit: ed7488415f814d0f60faa15ee8ec3d64ee336380
+ms.openlocfilehash: 4d654d5da598b9bf2b9bacfc189c97df08f9a359
+ms.sourcegitcommit: 707dad21dc3cf79ac831afe05096c0341bcf2fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67616790"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68653651"
 ---
 # <a name="debug-background-process"></a>Отладка фонового процесса
 
@@ -21,13 +21,13 @@ ms.locfileid: "67616790"
 
 1. `launch.json`Файл  настраивает отладчик в Visual Studio Code.
 
-2. Visual Studio Code запускает составную **версию preLaunchTask**, предварительную отладку **& запускать все** в файле`.vscode/tasks.json`.
+2. Visual Studio Code запускает составное **приложение preLaunchTask**, **запустите приложение Teams локально** в файле`.vscode/tasks.json`.
 
 3. Затем Visual Studio Code запускает отладчики, указанные в конфигурациях составной команды, например **Прикрепить к боту**, **Прикрепить к серверу**, **Прикрепить к интерфейсу** и **Запустить бот**.
 
 4. Отладчик Microsoft Edge или Google Chrome запускает новый экземпляр браузера и открывает веб-страницу для загрузки клиента Teams.
 
-## <a name="teams-toolkit-verification-of-prerequisites"></a>Проверка необходимых компонентов в Наборе средств Teams
+## <a name="verification-of-prerequisites"></a>Проверка предварительных условий
 
 Набор средств Teams проверяет указанные ниже предварительные условия в процессе отладки.
 
@@ -42,9 +42,6 @@ ms.locfileid: "67616790"
 
 * Набор средств Teams предлагает войти в учетную запись Microsoft 365, если вы еще не вошли с действительными учетными данными.
 * Пользовательская отправка или загрузка неопубликованных приложений для клиента разработчика включена, чтобы предотвратить завершение локальной отладки.
-* Teams Toolkit устанавливает пакет NGROK NPM `ngrok@4.2.2` `~/.fx/bin/ngrok`в том случае, если Ngrok не установлен или версия не соответствует требованиям. Пакет NPM Ngrok `/.fx/bin/ngrok/node modules/ngrok/bin` в управляет двоичным файлом Ngrok версии 2.3, применимым для бота и расширения сообщений.
-* Набор средств Teams устанавливает пакет NPM Функции Azure Core Tools, azure-functions-core-tools@3 для **Windows** и **macOs**`~/.fx/bin/func`, если Функции Azure Core Tools версии 3 не установлен или версия не соответствует требованиям. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичным объектом Azure Functions Core Tools. Для Linux локальная отладка прекращается.
-* Набор средств Teams устанавливает пакет SDK для .NET Core для **Windows** и **MacOS** `~/.fx/bin/dotnet`в том случае, если версия пакета SDK для .NET Core, применимая для Функции Azure, не установлена или версия не соответствует требованиям. Для Linux локальная отладка прекращается.
 * Teams Toolkit устанавливает пакет NGROK NPM `ngrok@4.2.2` `~/.fx/bin/ngrok`в том случае, если Ngrok не установлен или версия не соответствует требованиям. Двоичная версия Ngrok 2.3 применима к боту и расширению сообщений. Двоичная версия Ngrok управляется пакетом Ngrok NPM в `/.fx/bin/ngrok/node modules/ngrok/bin`.
 * Teams Toolkit устанавливает пакет NPM Функции Azure Core Tools, azure-functions-core-tools@3 для **Windows** и **MacOs**`~/.fx/bin/func`, если Функции Azure Core Tools версии 4 не установлен или версия не соответствует требованиям. Пакет NPM Azure Functions Core Tools в `~/.fx/bin/func/node_modules/azure-functions-core-tools/bin` управляет двоичной версией Azure Functions Core Tools. Для Linux локальная отладка прекращается.
 * Набор средств Teams устанавливает пакет SDK для .NET Core для **Windows** и **MacOS** `~/.fx/bin/dotnet`в версии пакета SDK для .NET Core, применимой для Функции Azure, если пакет SDK для .NET Core не установлен или версия не соответствует требованиям. Для Linux локальная отладка прекращается.
@@ -103,7 +100,7 @@ Use the following .NET Core versions:
 
 Если выбрать **Запуск отладки (F5)**, выходной канал набора средств Teams отображает ход и результат после проверки предварительных требований.
 
-   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck.png" alt-text="Сводка по проверке предварительных условий" lightbox="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck.png":::
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck1.png" alt-text="Сводка по проверке предварительных условий" lightbox="../assets/images/teams-toolkit-v2/debug/prerequisites-debugcheck1.png":::
 
 ## <a name="register-and-configure-teams-app"></a>Регистрация и настройка приложения Teams
 

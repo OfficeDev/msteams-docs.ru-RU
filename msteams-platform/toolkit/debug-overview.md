@@ -7,12 +7,12 @@ ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: 624cad282e181ed56cbc3041f725b046ca061c72
-ms.sourcegitcommit: 637b8f93b103297b1ff9f1af181680fca6f4499d
+ms.openlocfilehash: 5f0e909c9b6fbccc1f1a9a886858177f4673f85f
+ms.sourcegitcommit: 707dad21dc3cf79ac831afe05096c0341bcf2fee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68499162"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68653695"
 ---
 # <a name="debug-your-teams-app"></a>Отладка приложения Teams
 
@@ -88,71 +88,82 @@ ms.locfileid: "68499162"
 
 ## <a name="customize-debug-settings"></a>Настроить параметры отладки
 
-Набор средств Teams снимает флажки с некоторых необходимых условий и позволяет настраивать параметры отладки для создания вашей вкладки или бота:
+Набор средств Teams позволяет настроить параметры отладки для создания вкладки или бота. Дополнительные сведения о полном списке настраиваемых параметров см. в документации [по параметрам отладки](https://aka.ms/teamsfx-debug-tasks).
+
+### <a name="customize-scenarios"></a>Настройка сценариев
 
 <br>
 
 <details>
-<summary><b>Использование конечной точки бота</b></summary>
 
-1. В Visual Studio Code параметров необходимо снять флажок "Убедиться, что **Ngrok установлен и запущен (ngrok)"**.
+<summary><b>Пропустить проверки готовности</b></summary>
 
-1. Конфигурацию можно `siteEndpoint` задать для `.fx/configs/config.local.json` конечной точки.
+В `.fx/configs/tasks.json` разделе `"Validate & install prerequisites"` >  > `"args"``"prerequisites"`обновите проверки готовности, которые вы хотите пропустить.
 
-```json
-{
-    "bot": {
-        "siteEndpoint": "https://your-bot-tunneling-url"
-    }
-}
-
-```
-
-:::image type="content" source="../assets/images/teams-toolkit-v2/debug/bot-endpoint.png" alt-text="Настройка конечной точки бота":::
+  :::image type="content" source="../assets/images/teams-toolkit-v2/debug/skip-prerequisite-checks.png" alt-text="пропустить проверки готовности":::
 
 </details>
 
 <details>
 <summary><b>Использование сертификата разработки</b></summary>
 
-1. В Visual Studio Code параметрах необходимо снять флажок "Проверка доверия сертификата разработки **(devCert)"**.
-
-1. Вы можете настроить путь `sslCertFile` `sslKeyFile` `.fx/configs/config.local.json` к файлу сертификата и путь к файлу ключа.
-
-```json
-{
-    "frontend": {
-        "sslCertFile": "",
-        "sslKeyFile": ""
-    }
-}
-```
-
-:::image type="content" source="../assets/images/teams-toolkit-v2/debug/development-certificate-customize.png" alt-text="Настройка сертификата":::
+1. В `.fx/configs/tasks.json`, снимите флажок `"devCert"` в разделе `"Validate & install prerequisites"``"prerequisites"` > `"args"` > .
+1. Задайте SSL_CRT_FILE "SSL_KEY_FILE" `.env.teamsfx.local` в пути к файлу сертификата и пути к файлу ключа.
 
 </details>
 
 <details>
-<summary><b>Используйте скрипты запуска для запуска служб приложений</b></summary>
+<summary><b>Настройка аргументов установки npm</b></summary>
 
-1. Для вкладки необходимо обновить скрипт в `dev:teamsfx` `tabs/package.json`.
-
-1. Для расширения бота или сообщения необходимо обновить скрипт `dev:teamsfx` в `bot/package.json`.
-
-1. Для Функции Azure необходимо обновить `dev:teamsfx` сценарий в скрипте `api/package.json` обновления TypeScript и в скрипте обновления `watch:teamsfx` TypeScript.
-
-   > [!NOTE]
-   > В настоящее время приложения вкладок, ботов, расширений для сообщений и порты Функций Azure не поддерживают пользовательскую настройку.
+В `.fx/configs/tasks.json`поле  задайте npmInstallArgs `"Install npm packages"`.
+  
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/customize-npm-install.png" alt-text="Установка пакета npm":::
 
 </details>
 
 <details>
+<summary><b>Изменение портов</b></summary>
+
+* Bot
+  1. Выполните поиск `"3978"` по всему проекту и найдите внешний вид в `tasks.json`и `ngrok.yml` `index.js`.
+  1. Замените его портом.
+     :::image type="content" source="../assets/images/teams-toolkit-v2/debug/modify-ports-bot.png" alt-text="Замена порта для бота":::
+* Tab
+  1. In `.fx/configs/tasks.json`, search for `"53000"`.
+  1. Замените его портом.
+     :::image type="content" source="../assets/images/teams-toolkit-v2/debug/modify-ports-tab.png" alt-text="Замена порта для вкладки":::
+
+</details>
+
+<details>
+<summary><b>Использование собственного пакета приложения</b></summary>
+
+In `.fx/configs/tasks.json`, set `"appPackagePath"` under `"Build & upload Teams manifest"` to your app package's path.
+
+  :::image type="content" source="../assets/images/teams-toolkit-v2/debug/app-package-path.png" alt-text="использование собственного пути к пакету приложения":::
+
+</details>
+
+<details>
+<summary><b>Использование собственного туннеля</b></summary>
+
+1. В `.fx/configs/tasks.json` разделе " `"Start Teams App Locally"`Вы можете обновить" `"Start Local tunnel"`.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/start-local-tunnel.png" alt-text="Использование собственного туннеля":::
+1. Запустите собственную службу туннеля, а затем обновите `"botMessagingEndpoint"` свою конечную точку сообщения в разделе `.fx/configs/tasks.json` `"Set up bot"`.
+
+   :::image type="content" source="../assets/images/teams-toolkit-v2/debug/set-up-bot.png" alt-text="обновление конечной точки обмена сообщениями":::
+
+</details>
+
+<details>
+
 <summary><b>Добавление переменных среды</b></summary>
 
 Вы можете добавить переменные среды в файл `.env.teamsfx.local` для вкладки, бота, расширения для сообщений и Функций Azure. Набор средств Teams загружает добавленные вами переменные среды при запуске служб во время локальной отладки.
 
  > [!NOTE]
- > После добавления новых переменных среды обязательно запустите новый сеанс локальной отладки, так как переменные среды не поддерживают горячую перезагрузку.
+ > Обязательно запустите новую локальную отладку после добавления новых переменных среды, так как переменные среды не поддерживают горячую перезагрузку.
 
 </details>
 
@@ -161,7 +172,7 @@ ms.locfileid: "68499162"
 
 Набор средств Teams использует многоцелевую отладку Visual Studio Code для одновременной отладки вкладки, бота, расширения для сообщений и Функций Azure. Можно обновить `.vscode/launch.json` и `.vscode/tasks.json` для отладки частичного компонента. Если вы хотите отладить только вкладку в проекте, содержащем вкладку и бот с Azure Functions, используйте следующие действия:
 
-1. Комментирование **`Attach to Bot`** **`Attach to Backend`** и отладочная составная в `.vscode/launch.json`.
+1. Обновление `"Attach to Bot"` и отладка `"Attach to Backend"` составного в `.vscode/launch.json`.
 
    ```json
    {
@@ -181,7 +192,7 @@ ms.locfileid: "68499162"
    }
    ```
 
-2. Закомментируйте **`Start Backend`** и запустите бот из задачи "Запустить все" в файле .vscode/tasks.json.
+2. Обновите `"Start Backend"` и `"Start Bot"` запустите задачу "Запустить все" в файле .vscode/tasks.json.
 
    ```json
    {
