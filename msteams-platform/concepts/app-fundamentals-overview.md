@@ -5,12 +5,12 @@ description: Общие сведения о вариантах использо�
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.author: lajanuar
-ms.openlocfilehash: eb72d4296ee6b91bae1775ad79eef06139abb59e
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: fcc360410d4af501d4097c6269b3e1157a6e742b
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100422"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615179"
 ---
 # <a name="plan-your-app-with-teams-features"></a>Планирование приложения с помощью функций Teams
 
@@ -88,7 +88,7 @@ Teams как платформа предоставляет наборы инст
 
 Следующий список помогает определить доступность GCC, GCC-High и DOD для компонентов:
 
-* В случае со сторонними приложениями см. статьи [Веб-приложения](../samples/integrating-web-apps.md) и [Расширяемость приложения для собраний](../apps-in-teams-meetings/meeting-app-extensibility.md).
+* В случае со сторонними приложениями см. статьи [Веб-приложения](../samples/integrating-web-apps.md) и [Расширяемость приложения для собраний](../apps-in-teams-meetings/teams-apps-in-meetings.md).
 * Для получения сведений о ботах см. статьи [Создание первого чат-бота для Teams](../get-started/first-app-bot.md), [Проектирование бота Teams](../bots/design/bots.md), [Добавление ботов в приложения Microsoft Teams](../resources/bot-v3/bots-overview.md) и [Боты в Teams](../bots/what-are-bots.md).
 * Сведения о загрузке неопубликованного приложения см. в статьях [Активация возможностей настройки приложения Teams](../concepts/design/enable-app-customization.md), [Распространение приложения Microsoft Teams](../concepts/deploy-and-publish/apps-publish-overview.md) и [Загрузка приложения в Teams](../concepts/deploy-and-publish/apps-upload.md).
 * Сведения о пользовательских соединителях см. в статье [Создание соединителей Office 365 для Teams](../webhooks-and-connectors/how-to/connectors-creating.md).

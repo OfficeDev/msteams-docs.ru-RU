@@ -7,16 +7,14 @@ ms.localizationpriority: medium
 ms.topic: overview
 ms.date: 05/24/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: 84a18c736c59c992bb4e3e51962ed631483f7f2b
-ms.sourcegitcommit: 3aaccc48906fc6f6fbf79916af5664bf55537250
+ms.openlocfilehash: 786bfd318f1cefa4329e54b5a19cba89a823bb5b
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68296027"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615340"
 ---
 # <a name="teams-toolkit-overview"></a>Общие сведения о наборе средств Teams
-
-:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png" alt-text="Путь взаимодействия пользователя с набором средств Teams" lightbox="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png":::
 
 Набор средств Teams упрощает начало разработки приложений для Microsoft Teams с помощью Visual Studio и Visual Studio Code.
 
@@ -26,6 +24,8 @@ ms.locfileid: "68296027"
 * Интеллектуальные значения по умолчанию для размещения в Azure с использованием инфраструктуры как кода и Bicep
 * Создание уникальных конфигураций, таких как разработка, тестирование и prod, с помощью функции "Среды"
 * Перенос приложения в организацию или App Store Teams с помощью встроенных средств публикации
+
+:::image type="content" source="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png" alt-text="Путь взаимодействия пользователя с набором средств Teams" lightbox="../assets/images/teams-toolkit-v2/teams toolkit fundamentals/teams-toolkit-user-journey2.png":::
 
 ## <a name="available-for-visual-studio-and-visual-studio-code"></a>Доступно для Visual Studio и Visual Studio Code
 
