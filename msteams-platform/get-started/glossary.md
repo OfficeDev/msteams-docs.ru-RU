@@ -3,12 +3,12 @@ title: Документация для разработчиков Microsoft Team
 description: Сведения об общих терминах, значениях и определениях, используемых в документации разработчика Microsoft Teams.
 ms.localizationpriority: high
 ms.topic: reference
-ms.openlocfilehash: 8673752e4af13e837793e790c4f7bc14007ff48e
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: dd9da44439223fa9de7e795498dd6f67a7bc45e8
+ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100863"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68615235"
 ---
 # <a name="glossary"></a>Глоссарий
 
@@ -20,7 +20,6 @@ ms.locfileid: "68100863"
 | --- | --- |
 | [Команда действия](../messaging-extensions/how-to/action-commands/define-action-command.md) | Тип приложения расширения сообщений, использующего всплывающее окно для сбора или отображения сведений. <br>**См. также**: [Расширение для обмена сообщениями](#m); [Команды поиска](#s) |
 | [Адаптивные карточки](../task-modules-and-cards/what-are-cards.md) | Фрагмент содержимого с действиями, добавленный в беседу ботом или расширением для обмена сообщениями. Используйте текст, графику и кнопки с помощью этих карточек для разнообразия коммуникаций. |
-| [Анонимный пользователь](../apps-in-teams-meetings/meeting-app-extensibility.md#user-types-in-a-meeting) | A type of participant in a Teams meeting who doesn't have an Azure AD identity and isn't federated with a tenant. They are like external users in a meeting. <br>**См. также**: [федеративный пользователь](#f) |
 | [Каталог приложений](../toolkit/publish.md). | Сайт, на котором хранятся приложения SharePoint и Office для внутреннего использования в организации. <br>**См. также**: [SPFx](#s) |
 | [Манифест приложения](../resources/schema/manifest-schema.md) | Манифест приложения Teams описывает, каким образом приложение интегрируется с продуктом Microsoft Teams. Манифест должен соответствовать [схеме манифеста](https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json). |
 | [Пакет приложения](../concepts/build-and-test/apps-package.md) | Пакет приложения Teams — это ZIP-файл, содержащий файл манифеста приложения, цветной значок и контурный значок. |
@@ -86,7 +85,6 @@ ms.locfileid: "68100863"
 
 | Термин | Определение |
 | --- | --- |
-| [Федеративный пользователь](../apps-in-teams-meetings/meeting-app-extensibility.md#user-types-in-a-meeting) | Тип пользователя в собрании приложения Teams, который является внешним и приглашенным в собрание. У этого пользователя есть действительные учетные данные, добавленные в федерацию уполномоченными партнерами Teams. Они также называются внешними пользователями. <br>**См. также**: [анонимный пользователь](#a) |
 | [Взаимодействие при первом запуске](../concepts/design/design-teams-app-ui-templates.md)|Интерфейс первого запуска (FRE) — это введение пользователя в ваш продукт. Fre помогает пользователям приступить к работе с функциями, функциями и преимуществами продукта, а также влияет на то, как пользователи могут вернуться и продолжить использовать ваш продукт.|
 
 ## <a name="g"></a>G
@@ -104,7 +102,7 @@ ms.locfileid: "68100863"
 | --- | --- |
 | [Поставщик удостоверений](../concepts/authentication/authentication.md) | Сущность, которая хранит и предоставляет учетные данные пользователю. Он также позволяет пользователям регистрироваться самостоятельно.  <br>**См. также**: [проверка подлинности](#a) |
 | [Входящий веб-перехватчик](../webhooks-and-connectors/how-to/add-incoming-webhook.md) | Он разрешает общее содержимое внешнего приложения в каналах Teams. Эти веб-перехватчики используются в качестве средств отслеживания и уведомления. <br>**См. также**: [веб-перехватчик](#w); [исходящий веб-перехватчик](#o) |
-| [Взаимодействие с приложением во время собрания](../apps-in-teams-meetings/meeting-app-extensibility.md#in-meeting-app-experience) | A stage of Teams meeting lifecycle. With the in-meeting app experience, you can engage participants during the meeting by using apps and the in-meeting dialog box. <br>**См. также**: [жизненный цикл собрания](#m) |
+| [Взаимодействие с приложением во время собрания](../apps-in-teams-meetings/teams-apps-in-meetings.md) | A stage of Teams meeting lifecycle. With the in-meeting app experience, you can engage participants during the meeting by using apps and the in-meeting dialog box. <br>**См. также**: [жизненный цикл собрания](#m) |
 
 ## <a name="l"></a>L
 
@@ -122,7 +120,7 @@ ms.locfileid: "68100863"
 | --- | --- |
 | [Возможность мультимедиа](../concepts/device-capabilities/media-capabilities.md) | Собственные возможности устройства, например камера и микрофон, которые можно интегрировать с вашим приложением Teams. <br>**См. также**: [возможность](#c); [возможность устройства](#d) |
 | [Бот собраний](../bots/calls-and-meetings/calls-meetings-bots-overview.md) | Боты, взаимодействующие со звонками и собраниями Teams с помощью голосовых команд в реальном времени, видео и демонстрации экрана. <br>**См. также**: [бот звонков](#c); [чат-бот](#c) |
-| [Жизненный цикл собрания](../apps-in-teams-meetings/meeting-app-extensibility.md#meeting-lifecycle) | Он охватывает интерфейс приложения, предшествующий собранию, интерфейс во время него и после него. На каждом этапе жизненного цикла собрания можно добавлять вкладки, боты и расширения для обмена сообщениями. <br>**См. также**: [интерфейс во время собрания](#i) |
+| [Жизненный цикл собрания](../apps-in-teams-meetings/teams-apps-in-meetings.md) | Он охватывает интерфейс приложения, предшествующий собранию, интерфейс во время него и после него. На каждом этапе жизненного цикла собрания можно добавлять вкладки, боты и расширения для обмена сообщениями. <br>**См. также**: [интерфейс во время собрания](#i) |
 | [Сцена собрания](../sbs-meetings-stage-view.yml) | Функция приложения-расширения для собрания. Это общее пространство, доступное всем участникам во время собрания. Оно помогает участникам взаимодействовать и сотрудничать с контентом приложения в режиме реального времени. <br>**См. также**: [представление "Экран"](#s) |
 | [Расширение для обмена сообщениями](../messaging-extensions/what-are-messaging-extensions.md) | Message extensions are shortcuts for inserting app content or acting on a message. You can use a message extension without navigating away from the conversation. <br>**См. также**: [команды поиска](#s); [команды действий](#a) |
 | [Расширение для собрания](../apps-in-teams-meetings/design/designing-apps-in-meetings.md) | Приложение, которое предназначено для использования в течение жизненного цикла собрания, чтобы сделать его более продуктивным, например доска, панель мониторинга и т. д. |
