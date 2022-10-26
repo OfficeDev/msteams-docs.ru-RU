@@ -4,12 +4,12 @@ description: Узнайте о новых функциях разработчи�
 ms.topic: reference
 ms.localizationpriority: high
 zone_pivot_groups: What-new-features
-ms.openlocfilehash: 99da7ecfc60d681246b0e5c7ea9448235fc37bf3
-ms.sourcegitcommit: 372aade09e62ac7e5936215173a6632fbb042c9d
+ms.openlocfilehash: 946dad871ce27ebd4a317ddf816592a3238ac2aa
+ms.sourcegitcommit: 4e355e22ddcd10ba9a8f37965c4f5c8fa04f5776
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2022
-ms.locfileid: "68699187"
+ms.locfileid: "68701043"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -31,6 +31,7 @@ ms.locfileid: "68699187"
 
 **Октябрь 2022 г.**
 
+* ***26 октября 2022 г***[. Создание приложения для подписывания документов на собрании](apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md#build-an-in-meeting-document-signing-app)
 * ***19 октября 2022 г***. [Портал разработчика для Teams теперь доступен для клиентов GCC](concepts/build-and-test/teams-developer-portal.md).
 * ***13 октября 2022 г***[.: настройте NavBar и создайте меню переполнения для нескольких действий](concepts/design/personal-apps.md#configure-and-add-multiple-actions-in-navbar).
 * ***13 октября 2022 г***[. Настройка кнопки "Назад" приложения](concepts/design/personal-apps.md#configure-back-button).
