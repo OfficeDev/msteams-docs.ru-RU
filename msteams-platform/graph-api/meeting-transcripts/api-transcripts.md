@@ -2,13 +2,13 @@
 title: Использование API Graph для получения расшифровки
 description: Описывает API для получения расшифровок совещаний.
 ms.localizationpriority: high
-ms.topic: concept
-ms.openlocfilehash: c3882134a9954cff3f2cd4aa038902540a6af250
-ms.sourcegitcommit: 990a36fb774e614146444d4adaa2c9bcdb835998
-ms.translationtype: HT
+ms.topic: conceptual
+ms.openlocfilehash: 2142bc1346a032f27d8612f6081156d2c4927e8f
+ms.sourcegitcommit: 372aade09e62ac7e5936215173a6632fbb042c9d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "67232435"
+ms.lasthandoff: 10/26/2022
+ms.locfileid: "68699180"
 ---
 # <a name="use-graph-apis-to-fetch-transcript"></a>Использование API Graph для получения расшифровки
 
@@ -46,7 +46,7 @@ GET /users('{userId}')/onlineMeetings('{meetingId}')/transcripts
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {token}. Required.  |
 
 **Текст запроса**
 
@@ -116,7 +116,7 @@ GET users('{userId}')/onlineMeetings('{meetingId}')/transcripts('{transcriptId}'
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {token}. Required.  |
 
 **Текст запроса**
 
@@ -178,7 +178,7 @@ GET users('{userId}')/onlineMeetings('{meetingId}')/transcripts('{transcriptId}'
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Authorization  | Bearer {token}. Required.  |
 | Accept  | text/vtt ИЛИ  application/vnd.openxmlformats-officedocument.wordprocessingml.document. Необязательный параметр.  |
 
 **Текст запроса**

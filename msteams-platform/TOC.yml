@@ -109,13 +109,13 @@
       items:
         - name: Обзор набора средств Teams
           href: toolkit/teams-toolkit-fundamentals.md
-        - name: Установка Набора средств Teams
+        - name: Установка набора средств Teams
           href: toolkit/install-Teams-Toolkit.md
         - name: Обзор набора средств Teams
           href: toolkit/explore-Teams-Toolkit.md
-        - name: Подготовка к созданию приложений с помощью Набора средств Teams
+        - name: Подготовка к созданию приложений с помощью набора средств Teams
           href: toolkit/build-environments.md
-        - name: Создание приложения с помощью Набора средств Teams
+        - name: Создание приложения с помощью набора средств Teams
           items:
             - name: Предварительные требования для создания приложения Teams
               href: toolkit/tools-prerequisites.md
@@ -131,7 +131,7 @@
                   displayName: Multiple capabilities app
                 - name: Создание облачных ресурсов на основе возможностей
                   href: toolkit/add-resource.md
-                - name: Интеграция существующих сторонних API
+                - name: Интеграция существующих СТОРОННИХ API
                   href: toolkit/add-API-connection.md
                 - name: Добавление функциональности единого входа в приложение Teams
                   href: toolkit/add-single-sign-on.md
@@ -139,7 +139,7 @@
               items:
                 - name: Настройка манифеста приложения Teams
                   href: toolkit/TeamsFx-preview-and-customize-app-manifest.md
-                - name: Изменение Azure AD манифеста
+                - name: Изменение манифеста Azure AD
                   href: toolkit/AAD-manifest-customization.md
             - name: Пакет SDK TeamsFx
               href: toolkit/TeamsFx-SDK.md
@@ -165,7 +165,7 @@
                   href: toolkit/use-CICD-template.md
                 - name: Загрузка и тестирование неопубликованного приложения в среде Teams
                   href: toolkit/sideload-and-test-app.md
-                - name: Тестирование поведения приложения в разных средах
+                - name: Тестирование поведения приложения в другой среде
                   href: toolkit/test-app-behavior.md
         - name: Публикация приложения Microsoft Teams
           items:
@@ -272,7 +272,7 @@
     - name: Создание вкладок с использованием адаптивных карточек
       href: tabs/how-to/build-adaptive-card-tabs.md
       displayName: 'Slow load times, iFrame constartints, invoke activities, task module, task fetch, task submit, authentication'
-    - name: Использование гибких функций в Microsoft Teams
+    - name: Использование Fluid с Microsoft Teams
       href: tabs/how-to/using-fluid-msteam.md
     - name: Предварительный просмотр для ссылки "Вкладки" и представление стадий
       href: tabs/tabs-link-unfurling.md
@@ -388,11 +388,11 @@
           href: apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md
         - name: Создание уведомления о собрании для собрания
           href: apps-in-teams-meetings/in-meeting-notification-for-meeting.md
-        - name: Создание расширяемых бесед для чата собрания
+        - name: Создание расширяемых бесед для чата собраний
           href: apps-in-teams-meetings/build-extensible-conversation-for-meeting-chat.md
         - name: Создание приложений для анонимных пользователей
           href: apps-in-teams-meetings/build-apps-for-anonymous-user.md
-        - name: API-интерфейсы приложений для собраний
+        - name: API приложений для собраний
           href: apps-in-teams-meetings/meeting-apps-apis.md
     - name: Получение расшифровок собраний с помощью API Graph
       items:
@@ -427,7 +427,7 @@
           items:
             - name: Руководство для разработки игры в покер по гибкой методике
               href: sbs-teams-live-share.yml
-            - name: Пользовательская служба Гибкого ретранслятора Azure
+            - name: Пользовательская служба Azure Fluid Relay
               href: apps-in-teams-meetings/teams-live-share-how-to/how-to-custom-azure-fluid-relay.md
         - name: Вопросы и ответы о Live Share
           href: apps-in-teams-meetings/teams-live-share-faq.md

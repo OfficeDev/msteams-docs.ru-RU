@@ -1,15 +1,15 @@
 ---
 title: Новые и обновленные возможности для разработчиков в Teams
-description: Узнайте о новых функциях разработчика Microsoft Teams и обновлениях существующих функций, заметках о прекращении поддержки и изменениях. Подпишитесь на RSS-канал для получения последних обновлений.
+description: Узнайте о новых функциях разработчика Microsoft Teams и обновлениях существующих функций, заметках об устаревании и изменениях. Подпишитесь на RSS-канал для получения последних обновлений.
 ms.topic: reference
 ms.localizationpriority: high
 zone_pivot_groups: What-new-features
-ms.openlocfilehash: d1ad99b5fff30f5329525fc536e62f5690c0e9a9
-ms.sourcegitcommit: 40d4bde10b6820c62e49e2400b10ab3569c8c815
+ms.openlocfilehash: 99da7ecfc60d681246b0e5c7ea9448235fc37bf3
+ms.sourcegitcommit: 372aade09e62ac7e5936215173a6632fbb042c9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68615326"
+ms.lasthandoff: 10/26/2022
+ms.locfileid: "68699187"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "68615326"
 Ознакомьтесь с общедоступными функциями платформы Microsoft Teams. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
 ## <a name="generally-available"></a>Общедоступная версия
-
+ 
 :::row:::
 :::column:::
 
@@ -31,11 +31,11 @@ ms.locfileid: "68615326"
 
 **Октябрь 2022 г.**
 
-* ***19 октября 2022*** г. Портал разработчика для Teams теперь доступен [для клиентов GCC](concepts/build-and-test/teams-developer-portal.md).
-* ***13 октября 2022*** г. Настройка NavBar и создание меню переполнения [для нескольких действий](concepts/design/personal-apps.md#configure-and-add-multiple-actions-in-navbar).
-* ***13 октября 2022*** г.: кнопка ["Назад" для приложения](concepts/design/personal-apps.md#configure-back-button).
-* ***12 октября 2022*** г. Приложения поддерживаются в мгновенных собраниях, звонков по одному и [групповых звонках.](apps-in-teams-meetings/teams-apps-in-meetings.md)
-* ***12 октября 2022 г***.: холст [Live Share](apps-in-teams-meetings/teams-live-share-canvas.md)
+* ***19 октября 2022 г***. [Портал разработчика для Teams теперь доступен для клиентов GCC](concepts/build-and-test/teams-developer-portal.md).
+* ***13 октября 2022 г***[.: настройте NavBar и создайте меню переполнения для нескольких действий](concepts/design/personal-apps.md#configure-and-add-multiple-actions-in-navbar).
+* ***13 октября 2022 г***[. Настройка кнопки "Назад" приложения](concepts/design/personal-apps.md#configure-back-button).
+* ***12 октября 2022 г***[.: приложения поддерживаются в мгновенных собраниях, 1-на-один и групповых звонках.](apps-in-teams-meetings/teams-apps-in-meetings.md)
+* ***12 октября 2022 г.:*** [холст Live Share](apps-in-teams-meetings/teams-live-share-canvas.md)
 
 :::column-end:::
 :::row-end:::
@@ -46,16 +46,17 @@ ms.locfileid: "68615326"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ----------------|
-| 09/30/2022|Управление лицензиями SaaS для сторонних приложений в Teams|Монетизация приложения > включить предложение SaaS с помощью приложения Teams > Управление лицензией для [сторонних приложений в Teams](concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md#manage-license-for-third-party-apps-in-teams)|
-| 09/29/2022|Мобильное приложение Teams теперь поддерживает скачивание файлов на локальные устройства.|Интеграция возможностей устройств > интеграция возможностей мультимедиа > [скачивания файлов на мобильных устройствах Teams](concepts/device-capabilities/media-capabilities.md#file-download-on-teams-mobile)|
+| 10/26/2022 | Создайте приложение на собрании, позволяющее участникам собрания подписывать документы в режиме реального времени. | Создание приложений для собраний и звонков Teams > Включение и настройка приложений для собраний Teams > создание приложений для этапа собрания Teams > [создание приложения для подписывания документов на собрании](apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md#build-an-in-meeting-document-signing-app) |
+| 09/30/2022|Управление лицензиями SaaS для сторонних приложений в Teams.|Монетизация приложения > Включение предложения SaaS в приложение Teams > [управление лицензией для сторонних приложений в Teams](concepts/deploy-and-publish/appsource/prepare/include-saas-offer.md#manage-license-for-third-party-apps-in-teams)|
+| 09/29/2022|Мобильное приложение Teams теперь поддерживает скачивание файлов на локальные устройства.|Интеграция возможностей устройств > интеграция возможностей мультимедиа > [скачивание файлов на мобильных устройствах Teams](concepts/device-capabilities/media-capabilities.md#file-download-on-teams-mobile)|
 | 09/16/2022|Адаптивные карточки в расширениях сообщений на основе поиска теперь поддерживают универсальные действия.|Создание расширений сообщений > команд поиска > [универсальных действий для расширений сообщений на основе поиска](messaging-extensions/how-to/search-commands/universal-actions-for-search-based-message-extensions.md)|
-| 09/06/2022|Добавлены фрагменты кода для записи видео с помощью камеры через `selectMedia` API.| Интеграция возможностей устройств > интеграции возможностей мультимедиа > [фрагментов кода](concepts/device-capabilities/media-capabilities.md#code-snippets)|
+| 09/06/2022|Представлены фрагменты кода для записи видео с помощью камеры через `selectMedia` API.| Интеграция возможностей устройств > интеграция возможностей мультимедиа > [фрагментов кода](concepts/device-capabilities/media-capabilities.md#code-snippets)|
 | 09.08.2022 | Представлен набор средств Teams для Visual Studio 2022 | Инструменты и SDK > Набор средств Teams для Visual Studio > [Обзор набора средств Teams для Visual Studio](toolkit/teams-toolkit-overview-visual-studio.md) |
 | 03.08.2022 | Поделиться в Teams из личного приложения или вкладки | Интеграция с Teams > Поделиться в Teams > [Поделиться в Teams из личного приложения или вкладки](concepts/build-and-test/share-to-teams-from-personal-app-or-tab.md) |
 | 03.08.2022 | Добавлена функция для получения расшифровок прошедших собраний. | Создание приложений для собраний и звонков Teams > Получение расшифровки собраний с помощью API Graph > [Обзор](graph-api/meeting-transcripts/overview-transcripts.md) |
 | 03.08.2022 | Развертывание ссылки для отправки в Teams из веб-приложений | Интеграция с Teams > Отправка в Teams > [Публикация в Teams из веб-приложений](concepts/build-and-test/share-to-teams-from-web-apps.md) |
-| 08/01/2022| Примечание. Портал разработчика теперь является общедоступным, а App Studio не рекомендуется к использованию с 1 августа 2022 г. | Инструменты и SDK > [Портал разработчика Teams](concepts/build-and-test/teams-developer-portal.md) |
-| 28.07.2022 | Добавление изображения экрана Teams и карточки пользователя в уведомление собрания| Создание приложений для собраний и звонков Teams > включение и настройка приложений для собраний Teams > уведомления о сборке собрания [Teams](apps-in-teams-meetings/in-meeting-notification-for-meeting.md) |
+| 08/01/2022| Примечание. Портал разработчика теперь является общедоступным, а App Studio не рекомендуется использовать с 1 августа 2022 г. | Инструменты и SDK > [Портал разработчика Teams](concepts/build-and-test/teams-developer-portal.md) |
+| 28.07.2022 | Добавление изображения экрана Teams и карточки пользователя в уведомление собрания| Создание приложений для собраний и звонков Teams > Включение и настройка приложений для собраний Teams > [создание уведомлений о собраниях Teams](apps-in-teams-meetings/in-meeting-notification-for-meeting.md) |
 | 28.07.2022 | Создание общих каналов в Teams | Создание приложений для звонков и собраний Teams > [Общие каналы](concepts/build-and-test/Shared-channels.md) |
 | 28.07.2022|Реализован манифест приложения версии 1.14| Манифест приложения > [Схема манифеста приложения для Teams](resources/schema/manifest-schema.md)|
 | 26.07.2022|Предлагаемые действия для ботов| Создание ботов > Беседы ботов > [Сообщения в беседах ботов](bots/how-to/conversations/conversation-messages.md#send-suggested-actions)|
@@ -134,7 +135,7 @@ ms.locfileid: "68615326"
 |20.10.2021| API сведений о собраниях и событиях Teams в реальном времени | Создание приложений для собраний Teams > [API получения сведений о собрании](apps-in-teams-meetings/meeting-apps-apis.md) |
 |18.10.2021| Развертывание ссылок на вкладки и представление "Экран" | Создание вкладок > [Развертывание ссылок на вкладки и представление "Экран"](tabs/tabs-link-unfurling.md) |
 |08.10.2021| Новые советы и рекомендации по разработке адаптивных карточек | Разработка приложения > Компоненты пользовательского интерфейса > [Разработка адаптивных карточек для приложения Teams](task-modules-and-cards/cards/design-effective-cards.md) |
-|05.10.2021| Скрытие приложений Teams до тех пор, пока администратор не разрешит отобразить приложение | Разработка приложения > [блокировать приложения по умолчанию для пользователей до тех пор, пока администратор не утвердит его.](concepts/design/enable-app-customization.md#block-apps-by-default-for-users-until-an-admin-approves) |
+|05.10.2021| Скрытие приложений Teams до тех пор, пока администратор не разрешит отобразить приложение | Разработка приложения > [блокировать приложения по умолчанию для пользователей, пока администратор не утвердит](concepts/design/enable-app-customization.md#block-apps-by-default-for-users-until-an-admin-approves) |
 |05.10.2021| Планирование приложений для мобильной версии Teams | Основы приложений > [Планирование адаптивных вкладок для мобильной версии Teams](concepts/design/plan-responsive-tabs-for-teams-mobile.md) |
 |04.10.2021| Представлен новый портал разработчика для Teams, предназначенный для управления приложениями Teams | Инструменты и SDK > [Портал разработчика Teams](concepts/build-and-test/teams-developer-portal.md) |
 |21.09.2021|Teams поддерживает идентификатор объекта Azure AD и имя субъекта-пользователя в упоминаниях пользователей для ботов и входящих веб-перехватчиков | • Создание карточек и модулей задач > Создание карточек > [Идентификатор объекта Azure AD и имя субъекта-пользователя в упоминаниях пользователей](task-modules-and-cards/what-are-cards.md#support-for-azure-ad-object-id-and-upn-in-user-mention) </br> • Создание карточек и модулей задач > Создание карточек > [Карточки — обзор](task-modules-and-cards/cards/cards-format.md#format-cards-with-markdown) |
@@ -213,7 +214,7 @@ ms.locfileid: "68615326"
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-| 26.12.2019 | Параметр `replyToId` в полезных данных, отправляемых боту, больше не шифруется, что позволяет использовать это значение для создания прямых ссылок на эти сообщения. Полезные данные сообщений включают зашифрованные значения параметра `legacy.replyToId`.  |
+| 26.12.2019 | Параметр `replyToId` в полезных данных, отправляемых боту, больше не шифруется, что позволяет использовать это значение для создания глубоких ссылок на эти сообщения. Полезные данные сообщений включают зашифрованные значения параметра `legacy.replyToId`.  |
 | 05.11.2019 | Единый вход с помощью Teams JavaScript SDK. | [Единый вход](tabs/how-to/authentication/tab-sso-overview.md) |
 | 31.10.2019 | Документация по диалоговым ботам и расширениям для обмена сообщениями обновлена ​​с учетом пакета SDK для Bot Framework версии 4.6. Документация по SDK версии 3 доступна в разделе "Ресурсы". | Вся документация по ботам и расширениям для обмена сообщениями |
 | 31.10.2019 | Новая структура документации и переработка основных статей. Сообщайте о любых недействующих ссылках или ненайденных страницах путем создания проблемы в GitHub. | Обо всех из них! |
@@ -275,7 +276,7 @@ ms.locfileid: "68615326"
 
 ::: zone pivot="dev-preview"
 
-Ознакомьтесь с функциями платформы Microsoft Teams, которые доступны в предварительной версии для разработчиков. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
+Откройте для себя функции платформы Microsoft Teams, доступные в предварительной версии для разработчиков. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
 ## <a name="developer-preview"></a>Предварительная версия для разработчиков
 
@@ -291,16 +292,16 @@ ms.locfileid: "68615326"
 
 **Октябрь 2022 г.**
 
-***11 октября 2022*** г. Создайте прямую ссылку для совместного использования содержимого [на собраниях.](apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md#generate-a-deep-link-to-share-content-to-stage-in-meetings)
+***11 октября 2022 г***[. Создайте прямую ссылку для предоставления общего доступа к содержимому в ходе собраний.](apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md#generate-a-deep-link-to-share-content-to-stage-in-meetings)
 
 :::column-end:::
 :::row-end:::
 
 | **Date** | **Обновление** | **Найти здесь** |
 | -------- | --------- | ------------------ |
-| 09/23/2022 | Добавлена поддержка приложения для собраний по расписанию. | Создание приложений для собраний и звонков Teams > [приложения для собраний и звонков Teams](apps-in-teams-meetings/teams-apps-in-meetings.md) |
-| 08/23/2022 | Предоставление доступа к приложениям на этапе собрания Teams на мобильных устройствах | Создание приложений для собраний и звонков Teams > [включение и настройка приложений для собраний](/microsoftteams/platform/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings) |
-| 08/10/2022 | Приложения для запланированных собраний общедоступного канала | Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md) |
+| 09/23/2022 | Добавлена поддержка приложений для собраний по расписанию. | Создание приложений для собраний и звонков Teams > [Приложения для собраний и звонков Teams](apps-in-teams-meetings/teams-apps-in-meetings.md) |
+| 08/23/2022 | Предоставление общего доступа к приложениям на этапе собрания Teams на мобильных устройствах | Создание приложений для собраний и звонков Teams > [включение и настройка приложений для собраний](/microsoftteams/platform/apps-in-teams-meetings/enable-and-configure-your-app-for-teams-meetings) |
+| 08/10/2022 | Приложения для запланированных собраний с общедоступным каналом | Создание приложений для звонков и собраний Teams > [Обзор](apps-in-teams-meetings/teams-apps-in-meetings.md) |
 | 03.08.2022 | Отключение и включение звука API-интерфейсов для приложений на этапе собрания Teams | Создание приложений для собраний и звонков Teams > [Справочные материалы по API приложений для собраний](/microsoftteams/platform/apps-in-teams-meetings/api-references?tabs=dotnet) |
 | 02.08.2022| Элементы управления совместной работой для Teams| Интеграция с Teams > [Элементы управления совместной работой](samples/collaboration-control.md) |
 |24.05.2022| Улучшенная совместная работа с Live Share SDK | Создание приложений для собраний Teams > Улучшенная совместная работа с помощью Live Share > [Обзор](apps-in-teams-meetings/teams-live-share-overview.md) |
@@ -315,7 +316,7 @@ ms.locfileid: "68615326"
 
 ::: zone pivot="dep-feature"
 
-Ознакомьтесь с устаревшими функциями платформы Microsoft Teams. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
+Узнайте о функциях платформы Microsoft Teams, которые не рекомендуется использовать. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
 ## <a name="deprecated"></a>Deprecated
 
@@ -331,7 +332,7 @@ ms.locfileid: "68615326"
 
 **Август 2022 г.**
 
-***1 августа 2022*** г.: App Studio устарела, используйте портал [разработчика](concepts/build-and-test/teams-developer-portal.md) для Teams.
+***1 августа 2022 г***. App Studio не рекомендуется использовать, используйте [портал разработчика](concepts/build-and-test/teams-developer-portal.md) для Teams.
 
 :::column-end:::
 :::row-end:::
@@ -355,7 +356,7 @@ Along with new features, we also provide [production-ready Teams app templates](
 1. Откройте Microsoft Teams.
 1. Выберите **Teams** в левой области.
 1. Выберите канал в команде.
-1. Выберите многоточие &#x25CF;&#x25CF;&#x25CF; и в раскрывающемся списке выберите **"Соединители"**.
+1. Выберите многоточие &#x25CF;&#x25CF;&#x25CF; и в раскрывающемся списке выберите **Соединители**.
 1. Найдите **RSS** в появившемся диалоговом окне **Соединители**.
 1. Нажмите **Настроить**.
 1. Укажите имя в поле **Введите имя для подключения RSS**.
