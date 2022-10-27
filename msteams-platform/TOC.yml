@@ -43,6 +43,8 @@
       href: sbs-gs-notificationbot.yml
     - name: Создание командного бота с помощью JavaScript
       href: sbs-gs-commandbot.yml
+    - name: Создание бота рабочего процесса
+      href: sbs-gs-workflow-bot.yml
     - name: Примеры кода
       href: 'https://github.com/OfficeDev/Microsoft-Teams-Samples'
 - name: Планирование приложения
@@ -141,8 +143,6 @@
                   href: toolkit/TeamsFx-preview-and-customize-app-manifest.md
                 - name: Изменение манифеста Azure AD
                   href: toolkit/AAD-manifest-customization.md
-            - name: Пакет SDK TeamsFx
-              href: toolkit/TeamsFx-SDK.md
             - name: Отладка приложения Teams
               items:
                 - name: Обзор
@@ -175,6 +175,8 @@
               href: toolkit/Integrate-with-developer-portal.md
         - name: Вопросы и ответы
           href: toolkit/faq.md
+    - name: Пакет SDK TeamsFx
+      href: toolkit/TeamsFx-SDK.md
     - name: CLI набора средств Teams
       href: toolkit/TeamsFx-CLI.md
     - name: Портал разработчиков Teams

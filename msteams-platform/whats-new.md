@@ -4,12 +4,12 @@ description: Узнайте о новых функциях разработчи�
 ms.topic: reference
 ms.localizationpriority: high
 zone_pivot_groups: What-new-features
-ms.openlocfilehash: 946dad871ce27ebd4a317ddf816592a3238ac2aa
-ms.sourcegitcommit: 4e355e22ddcd10ba9a8f37965c4f5c8fa04f5776
+ms.openlocfilehash: 154f2ae1c293f39c0be5f6f6517fc1607688754f
+ms.sourcegitcommit: 6926cf5eee55d5047c11ca13afc7f6f23e270396
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2022
-ms.locfileid: "68701043"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68740613"
 ---
 # <a name="whats-new-for-developers-in-microsoft-teams"></a>Что нового для разработчиков в Microsoft Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "68701043"
 Ознакомьтесь с общедоступными функциями платформы Microsoft Teams. Теперь вы можете получать последние обновления платформы Teams, подписавшись на RSS-канал [![загрузить канал](~/assets/images/RSSfeeds.png)](https://aka.ms/TeamsPlatformUpdates). Дополнительные сведения см. в разделе [Настройка RSS-канала](#get-latest-updates).
 
 ## <a name="generally-available"></a>Общедоступная версия
- 
+
 :::row:::
 :::column:::
 
@@ -31,6 +31,7 @@ ms.locfileid: "68701043"
 
 **Октябрь 2022 г.**
 
+* ***27 октября 2022 г***[.: знакомство с ботом рабочего процесса для Teams](sbs-gs-workflow-bot.yml)
 * ***26 октября 2022 г***[. Создание приложения для подписывания документов на собрании](apps-in-teams-meetings/build-apps-for-teams-meeting-stage.md#build-an-in-meeting-document-signing-app)
 * ***19 октября 2022 г***. [Портал разработчика для Teams теперь доступен для клиентов GCC](concepts/build-and-test/teams-developer-portal.md).
 * ***13 октября 2022 г***[.: настройте NavBar и создайте меню переполнения для нескольких действий](concepts/design/personal-apps.md#configure-and-add-multiple-actions-in-navbar).
