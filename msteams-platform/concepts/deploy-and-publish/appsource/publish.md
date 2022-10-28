@@ -1,16 +1,16 @@
 ---
 title: Обзор. Публикация приложения в Магазине Microsoft Teams
-description: Опубликуйте приложение в Магазине Microsoft Teams или AppSource. Что следует ожидать после отправки, советы по быстрому утверждению и публикации приложений, связанных с предложением SaaS.
+description: Опубликуйте приложение в магазине Microsoft Teams или AppSource. Чего ожидать после отправки, советы по быстрому утверждению и публикации приложений, связанных с предложением SaaS.
 ms.topic: overview
 author: heath-hamilton
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: 95d310467ae5fad80d07a61d6b790dcd086feb35
-ms.sourcegitcommit: 1248901a5e59db67bae091f60710aabe7562016a
+ms.openlocfilehash: f3981ccc9437c28b288a86912dd2b878e729c101
+ms.sourcegitcommit: 0e4fcbc5efff4bfa1dbfba1e5467bbfaa6638705
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68560731"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68773508"
 ---
 # <a name="publish-your-app-to-the-microsoft-teams-store"></a>Опубликуйте свое приложение в Магазине Microsoft Teams
 
@@ -124,7 +124,7 @@ ms.locfileid: "68560731"
 
 * **Публикация отправки приложения**
 
-  * После просмотра отчета о проверке ответьте в поток электронной почты любыми запросами, связанными с отчетом о проверке, или если вам нужна дополнительная поддержка для устранения обнаруженных проблем.
+  * После проверки отчета о проверке ответьте в поток электронной почты с любыми запросами, связанными с отчетом о проверке, или если вам нужна дополнительная поддержка для устранения проблем, о которые сообщили.
 
   * Убедитесь, что у вас достаточно разработчиков, чтобы устранить все обнаруженные проблемы и довести приложение до утверждения.
 
@@ -172,6 +172,7 @@ ms.locfileid: "68560731"
 
 ## <a name="see-also"></a>См. также
 
+* [Публикация приложений Teams в Магазине Microsoft Teams](/training/modules/microsoft-teams-publish-app-to-store/)
 * [Опубликование в магазинах приложений Microsoft 365](/office/dev/store/)
 * [Отправка приложения Teams](~/concepts/deploy-and-publish/apps-upload.md)
 * [Публикация приложения Teams в организации](/MicrosoftTeams/tenant-apps-catalog-teams?toc=/microsoftteams/platform/toc.json&bc=/MicrosoftTeams/breadcrumb/toc.json)
