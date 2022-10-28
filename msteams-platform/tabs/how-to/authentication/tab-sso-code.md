@@ -1,15 +1,15 @@
 ---
 title: Конфигурация кода для включения единого входа для вкладок
-description: Обновите код в приложении на вкладке для запроса и получения маркера доступа с помощью удостоверения Пользователя приложения Teams для включения единого входа .
+description: Обновите код в приложении вкладки для запроса и получения маркера доступа с помощью удостоверения Teams пользователя приложения для включения единого входа.
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: вкладки проверки подлинности команд Microsoft Azure Active Directory (Azure AD) API Graph
-ms.openlocfilehash: 71c532b62b53ea0efb11da72c30d7e9d32804897
-ms.sourcegitcommit: 82c585d287d61924ce3a3bba3e9caeff35c9a27a
+ms.openlocfilehash: 20b11032227a08d057a6cdae8e46154004bfdb02
+ms.sourcegitcommit: bb15ce26cd65bec90991b703069424ab4b4e1a61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586786"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68772267"
 ---
 # <a name="add-code-to-enable-sso"></a>Добавление кода для включения единого входа
 
@@ -36,7 +36,7 @@ ms.locfileid: "67586786"
 <details>
 <summary>Подробнее о getAuthToken()</summary>
 <br>
-`getAuthToken()` — это метод в Microsoft Teams JavaScript SDK. Он запрашивает маркер доступа Azure AD, который будет выдан от имени приложения. Маркер извлекается из кэша, если срок его действия не истек. Если срок его действия истек, в Azure AD отправляется запрос на получение нового маркера доступа.
+`getAuthToken()` — это метод в Microsoft Teams JavaScript SDK. Он запрашивает маркер доступа Azure AD, который будет выдан от имени приложения. Маркер получается из кэша, если срок его действия истек. Если срок его действия истек, в Azure AD отправляется запрос на получение нового маркера доступа.
 
  Дополнительные сведения см. в разделе [getAuthToken](/javascript/api/@microsoft/teams-js/microsoftteams.authentication?view=msteams-client-js-latest#@microsoft-teams-js-microsoftteams-authentication-getauthtoken&preserve-view=true).
 </details>
@@ -47,7 +47,7 @@ ms.locfileid: "67586786"
 
 | Если требуется маркер доступа... | Вызовите getAuthToken()... |
 | --- | --- |
-| Когда пользователь приложения получает доступ к приложению | Из `microsoftTeams.initialize()`. |
+| Когда пользователь приложения получает доступ к приложению | После `microsoftTeams.initialize()`. |
 | Чтобы использовать определенные функции приложения | Когда пользователь приложения выполняет действие, требующее входа в систему. |
 
 ### <a name="add-code-for-getauthtoken"></a>Добавьте код для getAuthToken
