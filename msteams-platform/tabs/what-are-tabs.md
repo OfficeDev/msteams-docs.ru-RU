@@ -1,16 +1,16 @@
 ---
 title: Вкладки Microsoft Teams
 author: surbhigupta
-description: Узнайте, как создавать вкладки и веб-страницы, внедренные в Microsoft Teams. Создайте страницу содержимого в составе личной вкладки, канала или группы. Кроме того, научитесь создавать вкладки с помощью адаптивных карточек.
+description: Узнайте, как создавать вкладки и веб-страницы, встроенные в Microsoft Teams. Создайте страницу содержимого как часть личной вкладки, вкладки канала или группы. Кроме того, узнайте, как создавать вкладки с помощью адаптивных карточек.
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 1dfae9411b7c8b087bc3cd4c69593d54e2d70bb3
-ms.sourcegitcommit: 937ea793889fc1efa9ec6a52374d5098be1117e0
+ms.openlocfilehash: 0bf8593c4cb27b54893c88c5f47bf1cbd489f9a0
+ms.sourcegitcommit: 6b262c2044b7c5f6f99e64c5cee11a5b28a00139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67653191"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68772510"
 ---
 # <a name="build-tabs-for-teams"></a>Создание вкладок для Teams
 
@@ -21,7 +21,7 @@ ms.locfileid: "67653191"
 
 На изображении ниже показаны личные вкладки.
 
-:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Личная вкладка" lightbox="../assets/images/tabs/personaltab.png":::
+:::image type="content" source="../assets/images/tabs/personaltab.png" alt-text="Снимок экрана: пример личной вкладки в классическом клиенте Teams.":::
 
 На изображении ниже показаны вкладки канала Contoso.
 
@@ -72,7 +72,7 @@ ms.locfileid: "67653191"
 
 Настраиваемая вкладка объявляется в манифесте приложения вашего пакета приложений. Для каждой веб-страницы, которая будет добавлена в качестве вкладки в приложение, нужно определить URL-адрес и область. Кроме того, вы можете добавить на свою страницу [пакет SDK клиента JavaScript для Teams](/javascript/api/overview/msteams-client) и вызывать `microsoftTeams.initialize()` после ее загрузки. Teams отобразит страницу и предоставит доступ к связанной с Teams информации, например о том, что в клиенте Teams используется темная тема.
 
-На вкладке обязательно нужно представить HTML-[страницу контента](~/tabs/how-to/create-tab-pages/content-page.md) <iframe\>. Это необходимо для размещения как личных вкладок, так и вкладок каналов или групп. Для личных вкладок URL-адрес контента задается непосредственно в манифесте приложения Teams с помощью свойства `contentUrl` в массиве `staticTabs`. Содержимое вкладки одинаково для всех пользователей.
+Whether you choose to expose your tab within the channel or group, or personal scope, you must present an <iframe\> HTML [content page](~/tabs/how-to/create-tab-pages/content-page.md) in your tab. For personal tabs, the content URL is set directly in your Teams app manifest by the `contentUrl` property in the `staticTabs` array. Your tab's content is the same for all users.
 
 Для вкладок канала или группы также можно создать дополнительную страницу конфигурации. На ней можно настраивать URL-адрес страницы контента с помощью параметров строки запроса URL. Это позволяет загружать нужный контент для соответствующего контекста. Это связано с тем, что вкладку канала или группы можно добавить в несколько команд или групповых чатов. При каждой следующей установке пользователи смогут настроить вкладку и адаптировать ее работу под свои нужды. Когда пользователи добавляют или настраивают вкладку, URL-адрес связывается с вкладкой, представленной в пользовательском интерфейсе Teams. Настройка вкладки просто добавляет дополнительные параметры к этому URL-адресу. Например, при добавлении вкладки Azure Boards на странице конфигурации можно выбрать, какую именно доску загружать на этой вкладке. URL-адрес страницы конфигурации задается в манифесте приложения с помощью свойства `configurationUrl` в массиве `configurableTabs`.
 
