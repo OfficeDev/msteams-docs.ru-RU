@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Документация для разработчиков Microsoft Teams
-summary: Ознакомьтесь с обзором документации для разработчиков Microsoft Teams. Приложения Microsoft Teams собирают ключевую информацию, общие инструменты и доверенные процессы на платформе, где люди все чаще собираются, учатся и работают.
+summary: Ознакомьтесь с обзором документации для разработчиков Microsoft Teams. Приложения Teams приносят ключевую информацию, общие инструменты и доверенные процессы, где люди все чаще собираются, учатся и работают.
 metadata:
   title: Документация для разработчиков Microsoft Teams
   description: Общие сведения о создании приложений для Teams
@@ -12,12 +12,12 @@ metadata:
   ms.author: msauthor
   ms.date: 11/10/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 35cdd8a9e70ced7e78377f35184ba033dcf36154
-  ms.sourcegitcommit: 0e4fcbc5efff4bfa1dbfba1e5467bbfaa6638705
+  ms.openlocfilehash: 7a21f1d000d586124aa1338eb5f7f74dc5b43c71
+  ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/28/2022
-  ms.locfileid: "68773501"
+  ms.lasthandoff: 10/31/2022
+  ms.locfileid: "68791799"
 landingContent:
 - title: Ознакомьтесь с последними версиями
   linkLists:
@@ -151,14 +151,12 @@ landingContent:
       url: ~/sbs-meeting-token-generator.yml
     - text: Создание боковой области собрания
       url: ~/sbs-meetings-sidepanel.yml
-  - linkListType: tutorial
-    links:
     - text: Отправка уведомления веб-канала действий
       url: ~/sbs-graphactivity-feedbroadcast.yml
-    - text: Создание приложения для подписывания документов на собрании
-      url: ~/sbs-inmeeting-document-signing.yml
   - linkListType: tutorial
     links:
+    - text: Создание приложения для подписывания документов на собрании
+      url: ~/sbs-inmeeting-document-signing.yml
     - text: Создание командного бота с помощью JavaScript
       url: sbs-gs-commandbot.yml
     - text: Создание бота уведомлений с помощью JavaScript
@@ -177,6 +175,8 @@ landingContent:
       url: ~/sbs-outgoing-webhooks.yml
     - text: Распутывание ссылок в Teams с помощью бота
       url: ~/sbs-botbuilder-linkunfurling.yml
+  - linkListType: tutorial
+    links:
     - text: Создание соединителей Teams
       url: ~/sbs-teams-connectors.yml
 - title: Сценарии приложений Teams

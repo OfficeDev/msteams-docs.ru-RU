@@ -1,14 +1,14 @@
 ---
 title: Протестируйте обзор приложения
-description: В этом модуле вы узнаете, как тестировать и отлаживать пользовательское приложение Teams в Microsoft 365 и добавлять тестовые данные в Microsoft 365 клиента.
+description: В этом модуле описан процесс тестирования и отладки пользовательского приложения Teams в Microsoft 365 и добавления тестовых данных в клиент Microsoft 365.
 ms.topic: how-to
 ms.localizationpriority: medium
-ms.openlocfilehash: 3fa27881a081021fbb405208a5f7b4a259012aaf
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: 7cb0d194cfa5cab503a632889b5449f086532afd
+ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144385"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68791554"
 ---
 # <a name="test-your-app"></a>Тестирование приложения
 
@@ -20,7 +20,7 @@ ms.locfileid: "66144385"
 
 ## <a name="prepare-your-microsoft-365-tenant"></a>Подготовка клиента Microsoft 365
 
-Прежде чем приступить к тестированию приложения, подготовьте тестовый клиент Microsoft 365 и включите пользовательское приложение Teams, позволяющее загружать приложение. Необходимо зарегистрироваться в программе для разработчиков Microsoft 365 и управлять параметрами Teams для организации. Настройте подписку разработчика, [подготовив клиент Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md).
+Прежде чем приступить к тестированию приложения, подготовьте тестовый клиент Microsoft 365 и включите пользовательское приложение Teams, чтобы разрешить отправку приложения. Необходимо зарегистрироваться в программе для разработчиков Microsoft 365 и управлять параметрами Teams для организации. Настройте подписку разработчика, [подготовив клиент Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md).
 
 ## <a name="test-and-debug"></a>Тестирование и отладка
 

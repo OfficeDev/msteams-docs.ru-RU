@@ -6,12 +6,12 @@ author: akjo
 ms.author: lajanuar
 ms.topic: tutorial
 keywords: авторизация teams OAuth SSO Microsoft Azure Active Directory (Azure AD) rsc Postman Graph
-ms.openlocfilehash: d0eba34c8477c00e400e89adee7b9f09604918b7
-ms.sourcegitcommit: 7bbb7caf729a00b267ceb8af7defffc91903d945
+ms.openlocfilehash: ade66f40662140b86fcc9ae2e185fc10ea09d2f2
+ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66189880"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68791715"
 ---
 # <a name="test-resource-specific-consent-permissions-in-teams"></a>Проверка разрешений согласия для конкретных ресурсов в Teams
 
@@ -194,7 +194,7 @@ ms.locfileid: "66189880"
 
 <details>
 
-<summary><b>Разрешения RSC для манифеста приложения версии 1.11 и более ранних</b></summary>
+<summary><b>Разрешения RSC для манифеста приложения версии 1.11 и более ранних версий</b></summary>
 
 Добавьте в манифест приложения ключ [webApplicationInfo](../../resources/schema/manifest-schema.md#webapplicationinfo) со следующими значениями:
 
@@ -273,7 +273,7 @@ ms.locfileid: "66189880"
 
 * `azureADAppId`: : идентификатор приложения Azure AD для приложения.
 * `azureADAppSecret`: пароль приложения Azure AD.
-* `token_scope`: область необходима для получения токена.. Установить значение https://graph.microsoft.com/.default.
+* `token_scope`: область необходима для получения токена.. Задайте для параметра значение `https://graph.microsoft.com/.default`.
 * `teamGroupId`: вы можете получить идентификатор группы команды из клиента Teams следующим образом:
 
     1. В клиенте Teams выберите **Teams** на крайней левой панели навигации.
@@ -288,7 +288,7 @@ ms.locfileid: "66189880"
 
 * `azureADAppId`: : идентификатор приложения Azure AD для приложения.
 * `azureADAppSecret`: пароль приложения Azure AD.
-* `token_scope`: область необходима для получения токена.. Установить значение https://graph.microsoft.com/.default.
+* `token_scope`: область необходима для получения токена.. Задайте для параметра значение `https://graph.microsoft.com/.default`.
 * `tenantId`: имя или идентификатор объекта Azure AD вашего клиента.
 * `chatId`: : вы можете получить идентификатор потока чата из *веб-* клиента Teams следующим образом::
 

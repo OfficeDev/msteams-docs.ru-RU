@@ -1,15 +1,15 @@
 ---
 title: Расширение приложения вкладки с использованием разрешений Microsoft Graph
-description: Настройка дополнительных разрешений и областей с помощью Microsoft Graph для включения единого входа (SSO).
+description: Настройте дополнительные разрешения и области с помощью Microsoft Graph для включения единого входа.
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: teams проверка подлинности вкладки Microsoft Azure Active Directory (Azure AD) API Graph делегированное разрешение маркер доступа область
-ms.openlocfilehash: 5315190787570f38ae2a469bf0c6a421c9003176
-ms.sourcegitcommit: de7496f9586316bed12d115cd3e4c18ba0854d4f
+ms.openlocfilehash: 11620e10ed736ce9fe88e3bb755acfbabfec3f47
+ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67780851"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68791722"
 ---
 # <a name="extend-tab-app-with-microsoft-graph-permissions-and-scope"></a>Расширение приложения вкладки с использованием разрешений и областей Microsoft Graph
 
@@ -221,7 +221,7 @@ IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create
     - Использование `?prompt=consent&scope={scopes}` вместо `?scope={scopes}`
     - Убедитесь, что `{scopes}` включает все области, которые вы запросили у пользователя, например `Mail.Read` или `User.Read`.
 
-    Сведения о том, как обрабатывать добавочное согласие для приложения табуляции, см. в разделе "Добавочное и [динамическое согласие пользователя"](/azure/active-directory/develop/v2-permissions-and-consent).
+    Сведения об обработке добавочного согласия для приложения tab см. [в разделе Добавочное и динамическое согласие пользователя](/azure/active-directory/develop/v2-permissions-and-consent).
 5. После того как пользователь предоставит дополнительные разрешения, попробуйте повторно запустить поток OBO, чтобы получить доступ к другим API.
     </details>
 

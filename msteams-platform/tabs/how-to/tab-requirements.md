@@ -1,16 +1,16 @@
 ---
 title: Предварительные требования
 author: surbhigupta
-description: Из этой статьи вы узнаете, как создать вкладку "Личные", "Канал" или "Группа" Microsoft Teams. Сведения о средствах, необходимых для создания вкладки.
+description: В этой статье описаны предварительные требования для создания личной вкладки, вкладки канала или группы Microsoft Teams. Сведения о средствах, необходимых для создания вкладки.
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: e1160566f73a63a7de87653900cdc64ba7cb0e52
-ms.sourcegitcommit: 87bba925d005eb331d876a0b9b75154f8100e911
+ms.openlocfilehash: 77714171491896f5d61088a20ab7c324227606c1
+ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450417"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68791813"
 ---
 # <a name="prerequisites"></a>Предварительные требования
 
@@ -30,13 +30,13 @@ ms.locfileid: "67450417"
 
 * Создайте стиль вкладок на основе темы, дизайна и назначения клиента Teams. Вкладки лучше всего работают, когда они создаются для решения конкретных потребностей и сфокусированы на небольшом наборе задач или подмножестве данных, относящихся к расположению канала вкладки.
 
-* На странице содержимого добавьте ссылку на [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) с помощью тегов сценариев. После загрузки страницы выполните вызов `app.initialize()`, в противном случае страница не будет отображаться.
+* На странице содержимого добавьте ссылку на [клиентский пакет SDK JavaScript для Microsoft Teams](/javascript/api/overview/msteams-client) с помощью тегов сценариев. После загрузки страницы вызовите , в `app.initialize()`противном случае страница не будет отображаться.
 
 * Для проверки подлинности на мобильных клиентах необходимо перейти на SDK JavaScript для Teams 1.4.1 или более поздней версии.
 
 * Если вы выбрали вариант отображения вкладки канала или группы в мобильном клиенте Teams, конфигурация `setConfig()` должна содержать значение для свойства `websiteUrl`.
 
-* Вкладка Microsoft Teams не поддерживает возможность загрузки веб-сайтов интрасети, использующих самозаверяющие сертификаты.
+* Вкладка Microsoft Teams не поддерживает загрузку веб-сайтов интрасети, использующих самозаверяющие сертификаты.
 
 [!INCLUDE [sdk-include](~/includes/sdk-include.md)]
 
@@ -45,10 +45,10 @@ ms.locfileid: "67450417"
 | &nbsp; | Установка | Для использования... |
 | --- | --- | --- |
 | **Required** | &nbsp; | &nbsp; |
-| &nbsp; | [Node.js](https://nodejs.org/en/download/) | Серверной среды выполнения JavaScript. Используйте последнюю версию версии 16 LTS.|
+| &nbsp; | [Node.js](https://nodejs.org/en/download/) | Серверной среды выполнения JavaScript. Используйте последний выпуск LTS версии 16.|
 | &nbsp; | [Microsoft Edge](https://www.microsoft.com/edge) (рекомендуется) или [Google Chrome](https://www.google.com/chrome/) | Браузера со средствами разработчика. |
 | &nbsp; | [Visual Studio Code](https://code.visualstudio.com/download); | Сред сборки JavaScript, TypeScript или SharePoint Framework (SPFx). |
-| &nbsp; | Рабочая нагрузка [Visual Studio 2019](https://visualstudio.com/download), **ASP.NET и веб-разработки** или **кроссплатформенной разработки .NET Core** | .NET. Вы можете установить бесплатный выпуск Visual Studio Community 2019. |
+| &nbsp; | [Visual Studio 2022](https://visualstudio.microsoft.com), **ASP.NET и веб-разработка** или рабочая нагрузка **кроссплатформенной разработки .NET Core** | .NET. Вы можете установить бесплатный выпуск Visual Studio 2022 для сообщества. |
 | &nbsp; | [Git](https://git-scm.com/downloads) | Git для применения репозитория примеров приложений из GitHub. |
 | &nbsp; | [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/download-app) | Microsoft Teams для взаимодействия в одном месте со всеми пользователями, с которыми вы работаете, с помощью приложений для чата, собраний и звонков. |
 | &nbsp; | [ngrok](https://ngrok.com/download) | Ngrok — это программное средство обратного прокси-сервера. Ngrok создает туннель для общедоступных конечных точек HTTPS локального веб-сервера. Конечные веб-точки вашего сервера доступны во время текущего сеанса на компьютере. Когда компьютер выключается или переходит в спящий режим, служба становится недоступной. |
