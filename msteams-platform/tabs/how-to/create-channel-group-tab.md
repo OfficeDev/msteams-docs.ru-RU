@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.author: lajanuar
 zone_pivot_groups: teams-app-environment
-ms.openlocfilehash: 2ad44d0c43df7193106474fc3b6534d9ddde5bfc
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: 56243743f4c26995eb5bcf30bba7eeaaeccbbedc
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791666"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68820012"
 ---
 # <a name="create-a-channel-tab-or-group-tab"></a>Создание вкладки канала или вкладки группы
 
@@ -680,9 +680,8 @@ ngrok http 3978 --host-header=localhost
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Вкладки Teams](~/tabs/what-are-tabs.md)
-* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
-* [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
-* [Создание вкладок с использованием адаптивных карточек](~/tabs/how-to/build-adaptive-card-tabs.md)
-* [Создать страницу удаления](~/tabs/how-to/create-tab-pages/removal-page.md)
+* [Создание вкладок для Teams](../what-are-tabs.md)
+* [Создание личной вкладки](create-personal-tab.md)
+* [Портал разработчика Teams](../../concepts/build-and-test/teams-developer-portal.md)
+* [Создание вкладок с использованием адаптивных карточек](build-adaptive-card-tabs.md)
 * [Добавление страницы SharePoint в виде вкладки в Teams](https://support.microsoft.com/en-us/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)

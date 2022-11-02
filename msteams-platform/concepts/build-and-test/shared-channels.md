@@ -5,12 +5,12 @@ description: Сведения о Teams Связи общих каналов дл
 ms.author: surbhigupta
 localization_priority: Normal
 ms.topic: conceptual
-ms.openlocfilehash: d1f2d212c33f80ce6a5d27e93bda0551d26542dd
-ms.sourcegitcommit: 10debe0f01574a21aab54bfac692a4c8373263a8
+ms.openlocfilehash: d8c6e46a67c8cfeb1e8fa9bf0196a74fb6e183c6
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68789928"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68819956"
 ---
 # <a name="microsoft-teams-connect-shared-channels"></a>Microsoft Teams Связи общих каналов
 
@@ -112,4 +112,4 @@ SupportedChannelTypes — это необязательное свойство, 
 * [Схема манифеста для Teams](../../resources/schema/manifest-schema.md)
 * [Общие каналы в Microsoft Teams](/MicrosoftTeams/shared-channels)
 * [Тип ресурса канала](/graph/api/resources/channel)
-* [Политика хранения для расположений в Teams](/microsoft-365/compliance/create-retention-policies)
+* [Политика повторного использования для расположений Teams](/microsoft-365/compliance/create-retention-policies)

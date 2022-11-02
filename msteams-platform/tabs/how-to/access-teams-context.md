@@ -3,12 +3,12 @@ title: Получение контекста для вкладки
 description: Узнайте, как использовать контекст для вкладки, контекст пользователя, команды или компании, получить доступ к информации, получить контекст в частных или общих каналах и обработать изменение темы.
 ms.localizationpriority: high
 ms.topic: how-to
-ms.openlocfilehash: f0a54dc749d1132918e3ec47ac614aff3ce8aab8
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: d4dee147da2fd0091e038526ca56d66a9b80f7e5
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791547"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68820110"
 ---
 # <a name="get-context-for-your-tab"></a>Получение контекста для вкладки
 
@@ -286,8 +286,9 @@ microsoftTeams.getContext((context) => {
 
 ## <a name="see-also"></a>См. также
 
-* [Рекомендации по проектированию вкладок](../../tabs/design/tabs.md)
-* [Вкладки Teams](~/tabs/what-are-tabs.md)
-* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
-* [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-* [Использование модулей задач во вкладках](~/task-modules-and-cards/task-modules/task-modules-tabs.md)
+* [Создание вкладок для Teams](../what-are-tabs.md)
+* [Разработка вкладки для Microsoft Teams](../design/tabs.md)
+* [Включение единого входа для приложения вкладки](authentication/tab-sso-overview.md)
+* [Microsoft Teams Связи общих каналов](../../concepts/build-and-test/shared-channels.md)
+* [Схема манифеста для Teams](../../resources/schema/manifest-schema.md)
+* [Использование модулей задач во вкладках](../../task-modules-and-cards/task-modules/task-modules-tabs.md)

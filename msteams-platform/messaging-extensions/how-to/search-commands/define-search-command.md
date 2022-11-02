@@ -5,12 +5,12 @@ description: Узнайте о командах поиска расширени�
 ms.topic: conceptual
 ms.author: anclear
 ms.localizationpriority: medium
-ms.openlocfilehash: c126d6436c5fb091804c92caeb2876c09392bd9b
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: 9ec7ea734e331fcfb563702d18284f4831c369f6
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791834"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68820180"
 ---
 # <a name="define-message-extension-search-commands"></a>Определение команд поиска расширений сообщений
 
@@ -24,7 +24,7 @@ ms.locfileid: "68791834"
 См. следующее видео, чтобы узнать, как определить команды поиска расширений сообщений:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK]
+> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4OIvK>]
 <br>
 
 ## <a name="select-search-command-invoke-locations"></a>Выбор расположений вызова команды поиска
@@ -161,3 +161,11 @@ ms.locfileid: "68791834"
 
 > [!div class="nextstepaction"]
 > [Отвечайте на команды поиска](~/messaging-extensions/how-to/search-commands/respond-to-search.md).
+
+## <a name="see-also"></a>Дополнительные ресурсы
+
+* [Карточки](../../../task-modules-and-cards/what-are-cards.md)
+* [Модули задач](../../../task-modules-and-cards/what-are-task-modules.md)
+* [Схема манифеста для Teams](../../../resources/schema/manifest-schema.md)
+* [Портал разработчика Teams](../../../concepts/build-and-test/teams-developer-portal.md)
+* [Расширения для сообщений](../../what-are-messaging-extensions.md)

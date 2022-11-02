@@ -5,12 +5,12 @@ description: Узнайте о веб-странице в клиенте Teams �
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 5dcc46567e14d183437982c7ffde26528c836810
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: 4074b3bb4499cca2453a9d928a83b1cd04f5c064
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791540"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68820166"
 ---
 # <a name="create-a-content-page"></a>Создать страницу контента
 
@@ -139,8 +139,8 @@ ms.locfileid: "68791540"
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Вкладки Teams](~/tabs/what-are-tabs.md)
-* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
-* [Развертывание ссылок вкладок и представление "Сцена"](~/tabs/tabs-link-unfurling.md)
-* [Создать страницу конфигурации](~/tabs/how-to/create-tab-pages/configuration-page.md)
+* [Создание вкладок для Teams](../../what-are-tabs.md)
+* [Создание личной вкладки](../create-personal-tab.md)
+* [Создание вкладки канала или вкладки группы](../create-channel-group-tab.md)
+* [Схема манифеста для Teams](../../../resources/schema/manifest-schema.md)
 * [DevTools для вкладок Microsoft Teams](~/tabs/how-to/developer-tools.md)

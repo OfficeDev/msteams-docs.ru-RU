@@ -5,12 +5,12 @@ description: Создание страницы конфигурации для �
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.author: lajanuar
-ms.openlocfilehash: 51e5ef0a6752ab70ede4d2da699f78910c08f6c9
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: 6cd9ed8572b3df2db4a727225159774156008fa6
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791709"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68820173"
 ---
 # <a name="create-a-configuration-page"></a>Создать страницу конфигурации
 
@@ -340,8 +340,9 @@ microsoftTeams.settings.setSettings({
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-* [Вкладки Teams](~/tabs/what-are-tabs.md)
-* [Создание личной вкладки](~/tabs/how-to/create-personal-tab.md)
-* [Создание вкладки канала или группы](~/tabs/how-to/create-channel-group-tab.md)
-* [Создание страницы контента](~/tabs/how-to/create-tab-pages/content-page.md)
-* [Вкладки на мобильных устройствах](~/tabs/design/tabs-mobile.md)
+* [Создание вкладок для Teams](../../what-are-tabs.md)
+* [Обновление манифеста для системы единого входа и предварительного просмотра приложения](../authentication/tab-sso-manifest.md)
+* [Настройка проверки подлинности стороннего поставщика удостоверений OAuth](../authentication/auth-tab-aad.md)
+* [Создание соединителей Office 365](../../../webhooks-and-connectors/how-to/connectors-creating.md)
+* [Получение контекста для вкладки](../access-teams-context.md)
+* [Вкладки на мобильных устройствах](../../design/tabs-mobile.md)

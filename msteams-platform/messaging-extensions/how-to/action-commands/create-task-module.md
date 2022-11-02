@@ -1,16 +1,16 @@
 ---
 title: Создание и отправка модуля задачи
 author: surbhigupta
-description: Узнайте, как создавать и отправлять модули задач. Обработка начального действия вызова и ответ с помощью модуля задачи из команды расширения сообщения о действии.
+description: Узнайте, как создавать и отправлять модули задач. Обработайте начальное действие вызова и ответьте модулем задачи из команды расширения сообщения действия.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.author: anclear
-ms.openlocfilehash: d6e85a52af435d131bea0a700ccf13b536a30b9a
-ms.sourcegitcommit: 75d0072c021609af33ce584d671f610d78b3aaef
+ms.openlocfilehash: 08629f59979923a397c08809fc20b50c81a30c58
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68100317"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68820117"
 ---
 # <a name="create-and-send-task-module"></a>Создание и отправка модуля задачи
 
@@ -648,7 +648,7 @@ class TeamsMessagingExtensionsActionPreview extends TeamsActivityHandler {
 
 |Имя свойства|Назначение|
 |---|---|
-|`type`| Может быть либо для `continue` представления формы, либо `message` для простого всплывающего окна. |
+|`type`| Может быть как для представления формы, так `continue` и `message` для простого всплывающего окна. |
 |`value`| Объект `taskInfo` для формы или `string` для сообщения. |
 
 Схема для объекта taskInfo:
@@ -995,4 +995,9 @@ private static Attachment GetAdaptiveCardAttachmentFromFile(string fileName)
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
-[Определение команд действий](~/messaging-extensions/how-to/action-commands/define-action-command.md)
+* [Карточки](../../../task-modules-and-cards/what-are-cards.md)
+* [Выбор людей в адаптивных карточках](../../../task-modules-and-cards/cards/people-picker.md)
+* [Модули задач](../../../task-modules-and-cards/what-are-task-modules.md)
+* [Схема манифеста для Teams](../../../resources/schema/manifest-schema.md)
+* [Определение команд действий расширения для сообщений](define-action-command.md)
+* [Расширения для сообщений](../../what-are-messaging-extensions.md)

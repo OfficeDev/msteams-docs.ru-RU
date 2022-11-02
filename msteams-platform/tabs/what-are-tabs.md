@@ -5,12 +5,12 @@ description: Узнайте, как создавать вкладки и веб-
 ms.localizationpriority: high
 ms.topic: overview
 ms.author: lajanuar
-ms.openlocfilehash: 0bf8593c4cb27b54893c88c5f47bf1cbd489f9a0
-ms.sourcegitcommit: 6b262c2044b7c5f6f99e64c5cee11a5b28a00139
+ms.openlocfilehash: cd8e57a0773a5c1b8cd145176de703018c4e45e7
+ms.sourcegitcommit: 9ea9a70d2591bce6b8c980d22014e160f7b45f91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68772510"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68819991"
 ---
 # <a name="build-tabs-for-teams"></a>Создание вкладок для Teams
 
@@ -90,9 +90,7 @@ Whether you choose to expose your tab within the channel or group, or personal s
 
 ## <a name="see-also"></a>См. также
 
-* [Настраиваемые вкладки в Microsoft Teams](/microsoftteams/built-in-custom-tabs#develop-custom-tabs)
-* [Запрос разрешений устройства](../concepts/device-capabilities/native-device-permissions.md)
-* [Интеграция возможностей мультимедиа](../concepts/device-capabilities/media-capabilities.md)
-* [Интеграция сканера QR-кодов или штрихкодов](../concepts/device-capabilities/qr-barcode-scanner-capability.md)
-* [Интеграция функций местонахождения](../concepts/device-capabilities/location-capability.md)
+* [Разработка вкладки для Microsoft Teams](design/tabs.md)
+* [Возможности устройств](../concepts/device-capabilities/device-capabilities-overview.md)
 * [Вкладки на мобильных устройствах](design/tabs-mobile.md#tabs-on-mobile)
+* [Сопоставление возможностей приложения и функций Teams](../concepts/design/map-use-cases.md#app-capabilities-mapped-to-features)
