@@ -4,12 +4,12 @@ description: Узнайте, как отправлять упреждающие 
 ms.topic: conceptual
 ms.author: surbhigupta
 ms.localizationpriority: high
-ms.openlocfilehash: ff2a4310f2dea57fd5fd1d2550474c3361bf8a90
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: 7e50719e9befd807127a1eae4022b4af67a9fc00
+ms.sourcegitcommit: d58f670fed6ff217c52d2e00c0bee441fcb96920
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791463"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68819685"
 ---
 # <a name="proactive-messages"></a>Упреждающие сообщения
 
@@ -25,7 +25,7 @@ ms.locfileid: "68791463"
 >
 > * Чтобы отправить упреждающее сообщение, рекомендуется начать с [создания бота уведомлений с помощью JavaScript](../../../sbs-gs-notificationbot.yml) или [примера уведомления о входящих веб-перехватчиках](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/incoming-webhook-notification). Чтобы приступить к работе, скачайте [обзор набора средств Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) . Дополнительные сведения см. в [документах Teams Toolkit](../../../toolkit/teams-toolkit-fundamentals.md).
 >
-> * В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD). Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций: <br> -GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`<br> — GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`.
+> * В настоящее время боты доступны в облаке сообщества для государственных организаций (GCC) и GCC High, но недоступны в средах Министерства обороны США (DoD). Для упреждающих сообщений боты используют следующие конечные точки для облачных сред для государственных организаций: <br> -GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`<br> — GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`
 
 Чтобы отправить упреждающее сообщение пользователю, групповому чату или команде, бот должен иметь необходимый доступ для отправки сообщения. В случае группового чата или команды приложение, содержащее бота, должно быть сначала установлено в этом расположении.
 
@@ -44,7 +44,7 @@ ms.locfileid: "68791463"
 
 ## <a name="get-the-user-id-team-id-or-channel-id"></a>Получение ИД пользователя, ИД команды или ИД канала
 
-Чтобы создать новую беседу или поток беседы в канале, необходимо иметь правильный идентификатор. Получить или получить этот идентификатор можно с помощью одного из следующих способов:
+Вы можете создать новую беседу с пользователем или поток беседы в канале, и у вас должен быть правильный идентификатор. Получить или получить этот идентификатор можно с помощью одного из следующих способов:
 
 * При установке приложения в определенном контексте вы получаете [`onMembersAdded` действие](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
 * При добавлении нового пользователя в контекст, в котором установлено приложение, вы получаете [`onMembersAdded` действие](~/bots/how-to/conversations/subscribe-to-conversation-events.md).
@@ -60,7 +60,17 @@ ms.locfileid: "68791463"
 
 ## <a name="create-the-conversation"></a>Создание беседы
 
-Создайте беседу, если она не существует или вы не знаете `conversationId`. Создайте беседу только один раз и сохраните `conversationId` значение или `conversationReference` объект .
+Вы можете создать беседу, если она не существует или вы не знаете `conversationId`. Создайте беседу только один раз и сохраните `conversationId` значение или `conversationReference` объект .
+
+Чтобы создать беседу, вам потребуются `userId`, `tenantId`и `serviceUrl`.
+
+Для `serviceUrl`используйте значение из входящего действия, активирующего поток, или один из URL-адресов глобальной службы. `serviceUrl` Если объект недоступен для входящего действия, запускающего упреждающий сценарий, используйте следующие глобальные конечные точки URL-адреса:
+
+* Общественного: `https://smba.trafficmanager.net/teams/`
+* GCC: `https://smba.infra.gcc.teams.microsoft.com/gcc`
+* GCCH: `https://smba.infra.gov.teams.microsoft.us/gcch`
+
+Пример кода [**см. в**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/57.teams-conversation-bot/Bots/TeamsConversationBot.cs) примере вызова`CreateConversationAsync`.
 
 Вы можете получить беседу при первой установке приложения. После создания беседы [получите идентификатор беседы](#get-the-conversation-id). `conversationId` доступен в событиях обновления беседы.
 
