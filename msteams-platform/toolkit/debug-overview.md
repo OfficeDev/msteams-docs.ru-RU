@@ -7,12 +7,12 @@ ms.localizationpriority: high
 ms.topic: overview
 ms.date: 03/21/2022
 zone_pivot_groups: teams-app-platform
-ms.openlocfilehash: db6e3b99ab737b7ea8cac393e6ee3e0830cd0acc
-ms.sourcegitcommit: 84747a9e3c561c2ca046eda0b52ada18da04521d
+ms.openlocfilehash: 111f45a8ed0b5246a75d1a1adbda9b124c1e9578
+ms.sourcegitcommit: c3601696cced9aadc764f1e734646ee7711f154c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68791792"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "68833151"
 ---
 # <a name="debug-your-teams-app"></a>Отладка приложения Teams
 
@@ -237,8 +237,8 @@ ms.locfileid: "68791792"
 | &nbsp; | Visual Studio 2022 версии 17.3 | Вы можете установить корпоративный выпуск Visual Studio, а также рабочую нагрузку "ASP.NET" и средства разработки Microsoft Teams. |
 | &nbsp; | Набор средств Teams | Расширение Visual Studio, создающее шаблон проекта для приложения. Используйте последнюю версию. |
 | &nbsp; | [Microsoft Teams](https://www.microsoft.com/microsoft-teams/download-app) | Microsoft Teams для взаимодействия в одном месте со всеми пользователями, с которыми вы работаете, с помощью приложений для чата, собраний и звонков. |
-| &nbsp; | [Подготовка клиента Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md) | Доступ к учетной записи Teams с соответствующими разрешениями для установки приложения. |
-| &nbsp; | [Учетная запись разработчика Microsoft 365](~/concepts/build-and-test/prepare-your-o365-tenant.md) | Доступ к учетной записи Teams с соответствующими разрешениями для установки приложения. |
+| &nbsp; | [Подготовка клиента Microsoft 365](../concepts/build-and-test/prepare-your-o365-tenant.md) | Доступ к учетной записи Teams с соответствующими разрешениями для установки приложения. |
+| &nbsp; | [Учетная запись разработчика Microsoft 365](../concepts/build-and-test/prepare-your-o365-tenant.md) | Доступ к учетной записи Teams с соответствующими разрешениями для установки приложения. |
 | &nbsp; | Средства Azure и [Microsoft Azure CLI](/cli/azure/install-azure-cli) | Средства Azure для доступа к хранимым данным или для развертывания облачной серверной части приложения Teams в Azure. |
 |&nbsp;  | **Необязательное** | &nbsp; |
 |&nbsp; |[Ngrok](https://ngrok.com/) | Ngrok используется для пересылки внешних сообщений из Azure Bot Framework на локальный компьютер.|

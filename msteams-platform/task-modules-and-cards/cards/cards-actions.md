@@ -1,14 +1,14 @@
 ---
 title: Добавление действий карточек в бот
-description: В этом модуле вы узнаете, что такое действия с карточками в Microsoft Teams, типы действий и как их использовать в ботах.
+description: В этом модуле вы узнаете, что такое действия карточек в Microsoft Teams, типы действий и как их использовать в ботах.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.openlocfilehash: 1111e8dfe71ad1289f5057b6cb76b98c3ca8d99b
-ms.sourcegitcommit: 31032e3dee47232c3f8fc9ed1f2168cc0cbcfb7e
+ms.openlocfilehash: 77f2631ae55f5794567d83233e1311d935cefabc
+ms.sourcegitcommit: c3601696cced9aadc764f1e734646ee7711f154c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "67858895"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "68833179"
 ---
 # <a name="card-actions"></a>Действия карточек
 
@@ -38,7 +38,7 @@ ms.locfileid: "67858895"
 
 > [!NOTE]
 >
-> * Бот не получает уведомление о том, какая кнопка была выбрана.
+> * Бот не получает никаких уведомлений о выбранной кнопке.
 > * Имена компьютеров с номерами не поддерживаются в URL-адресе.
 
 С помощью `openUrl` вы можете создать действие со следующими свойствами:
@@ -99,7 +99,7 @@ CardFactory.actions([
 | `value` | Отправляется боту при выполнении действия. Вы можете закодировать контекст для действия, например уникальные идентификаторы или объект JSON. |
 | `text` | Отправляется боту при выполнении действия. Используйте это свойство, чтобы упростить разработку бота. Ваш код может проверить одно свойство верхнего уровня для выполнения логики бота. |
 
-Гибкость означает, что `messageBack` код не может оставить видимое сообщение пользователя в журнале, просто не используя `displayText`.
+Гибкость `messageBack` означает, что код не может оставить видимое сообщение пользователя в журнале, просто не используя `displayText`.
 
 # <a name="json"></a>[JSON](#tab/json)
 
@@ -428,12 +428,12 @@ CardFactory.actions([
 * [Action.ShowCard](http://adaptivecards.io/explorer/Action.ShowCard.html)
 * [Action.Execute](/adaptive-cards/authoring-cards/universal-action-model#actionexecute)
 
-Кроме того, вы можете изменить полезные данные адаптивной карточки `Action.Submit` для поддержки существующих действий Bot Framework с помощью свойства `msteams` в объекте `data`, относящемся к `Action.Submit`. В следующем разделе приводятся сведения об использовании существующих действий Bot Framework с адаптивными карточками.
+Кроме того, вы можете изменить полезные данные адаптивной карточки `Action.Submit` для поддержки существующих действий Bot Framework с помощью свойства `msteams` в объекте `data`, относящемся к `Action.Submit`. В следующем разделе содержатся сведения об использовании существующих действий Bot Framework с адаптивными карточками.
 
 > [!NOTE]
 >* Добавление `msteams` к данным с помощью действия Bot Framework не работает с модулем задач адаптивной карточки.
 > 
->* Основное или деctuctive `ActionStyle` не поддерживается в Microsoft Teams. 
+>* Основной или деспектуктив `ActionStyle` не поддерживается в Microsoft Teams. 
 
 ### <a name="adaptive-cards-with-messageback-action"></a>Адаптивные карточки с действием messageBack
 
@@ -563,10 +563,10 @@ CardFactory.actions([
 
 ## <a name="code-samples"></a>Примеры кода
 
-|S.no|Карте| description|.NET|Javascript|Python|Java|
+|S.no|Карте| description|.NET|JavaScript|Python|Java|
 |:--|:--|:--------------------------------------------------------|-----|------------|-----|----------------------------|
-|1|Использование карточек|Общие сведения о всех типах карточек, включая эскизы, звук, мультимедиа и т. д. Создается на основе приветственного пользователя и бота с несколькими запросами, отображая карточку с кнопками в приветственном сообщении, которые направляются в соответствующее диалоговое окно.|[.Net Core](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/06.using-cards)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/06.using-cards)|[Python](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/06.using-cards)|[Java](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/06.using-cards)|
-|2|Адаптивные карточки|Демонстрирует, как в многоэтапном диалоговом окне можно использовать карточку для получения введенных пользователем данных для имени и возраста.|[.NET Core](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/07.using-adaptive-cards)|[JavaScript](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/07.using-adaptive-cards)|[Python](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/07.using-adaptive-cards)|[Java](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/07.using-adaptive-cards)|
+|1|Использование карточек|Вводит все типы карточек, включая эскизы, аудио, мультимедиа и т. д. Создается на основе приветствия пользователя и бота с несколькими запросами путем представления карточки с кнопками в приветственном сообщении, которые направляют в соответствующее диалоговое окно.|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/06.using-cards)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/06.using-cards)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/06.using-cards)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/06.using-cards)|
+|2|Адаптивные карточки|Демонстрирует, как в многоэтапном диалоговом окне можно использовать карточку для получения ввода пользователем имени и возраста.|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/07.using-adaptive-cards)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/07.using-adaptive-cards)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/07.using-adaptive-cards)|[Просмотр](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/07.using-adaptive-cards)|
 
 > [!NOTE]
 > Элементы мультимедиа не поддерживаются для адаптивной карточки в Teams
