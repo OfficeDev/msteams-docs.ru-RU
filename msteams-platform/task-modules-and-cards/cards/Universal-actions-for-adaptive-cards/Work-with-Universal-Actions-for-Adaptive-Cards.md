@@ -1,18 +1,18 @@
 ---
 title: Работа с универсальными действиями для адаптивных карточек
-description: Узнайте, как работать с универсальными действиями для адаптивных карточек, включая схему universalActions для адаптивных карточек, модель обновления и обратную совместимость
+description: Узнайте, как работать с универсальными действиями для адаптивных карточек, включая схему для универсальных действий для адаптивных карточек, модель обновления и обратную совместимость.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.openlocfilehash: 17dd7fd611c593c3f5de0237e0aa61885ac630c0
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: d723b565cadfacc550cd4fd9c8648149e9d164e2
+ms.sourcegitcommit: c3601696cced9aadc764f1e734646ee7711f154c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66143881"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "68833011"
 ---
 # <a name="work-with-universal-actions-for-adaptive-cards"></a>Работа с универсальными действиями для адаптивных карточек
 
-Универсальные действия для адаптивных карточек предоставляют способ реализации сценариев на основе адаптивных карточек как для Teams, так и для Outlook. В этом документе рассмотрены следующие темы.
+Universal Actions for Adaptive Cards provide a way to implement Adaptive Card based scenarios for both, Teams and Outlook. This document covers the following topics:
 
 * [Схема, используемая для универсальных действий для адаптивных карточек](#schema-for-universal-actions-for-adaptive-cards)
 * [Модель обновления](#refresh-model)
@@ -25,7 +25,7 @@ ms.locfileid: "66143881"
 2. Добавьте предложение `refresh` в адаптивную карточку, если хотите использовать автоматическую модель обновления или если для вашего сценария требуются представления, определенные пользователем.
 
     >[!NOTE]
-    > Укажите свойство `userIds` , чтобы определить, какие пользователи получают автоматические обновления.
+    > `userIds` Укажите свойство , чтобы определить, какие пользователи получают автоматические обновления.
 
 3. Обрабатывайте запросы вызова `adaptiveCard/action` в своем боте.
 4. Используйте контекст запроса вызова, чтобы ответить с помощью карточек, созданных для пользователя.
@@ -44,7 +44,7 @@ ms.locfileid: "66143881"
 
 | Клиент | Поведение |
 | :-- | :-- |
-| Teams | Карточка перестает работать. Карточка не обновляется и `Action.Execute` не обрабатывается в зависимости от версии клиента Teams. Чтобы обеспечить максимальную совместимость в Teams, определите `Action.Execute` с `Action.Submit` в свойстве отката. |
+| Teams | Карточка перестает работать. Карточка не обновляется и `Action.Execute` не отображается в зависимости от версии клиента Teams. Чтобы обеспечить максимальную совместимость в Teams, определите `Action.Execute` с `Action.Submit` в свойстве отката. |
 
 Дополнительные сведения о поддержке клиентов более старых версий см. в разделе [обратная совместимость](#backward-compatibility).
 
@@ -68,11 +68,11 @@ ms.locfileid: "66143881"
 
 * UserIds — это массив MRI пользователя, который является частью свойства `refresh` адаптивных карточек.
 
-* Если свойство списка `userIds` указано как `userIds: []` в разделе обновления карточки, карточка не обновляется автоматически. Вместо этого в  меню "Три точки" в веб-клиенте Teams или на рабочем столе отображается параметр "Обновить карточку" и в контекстном меню длинного нажатия в Teams mobile, т. е. Android или iOS для обновления карточки вручную. Кроме того, `userIds` вы можете полностью пропустить свойство обновления, если сценарий включает <=60 участников в Teams чатах или каналах группы. Клиент Teams автоматически вызывает вызовы обновления для всех пользователей, если в группе или канале <=60 пользователей.
+* `userIds` Если свойство списка указано как `userIds: []` в разделе обновления карточки, карточка не обновляется автоматически. Вместо этого параметр **Обновить карточку** отображается для пользователя в меню с тремя точками в веб-клиенте Teams или на рабочем столе, а также в контекстном меню с длинным нажатием на мобильных устройствах Teams, то есть Android или iOS, чтобы обновить карточку вручную. Кроме того, вы можете пропустить `userIds` свойство обновления в целом, если сценарий включает <=60 участников в групповых чатах или каналах Teams. Клиент Teams автоматически вызывает вызовы обновления для всех пользователей, если группа или канал имеет <=60 пользователей.
 
 * Добавлено свойство UserIds, так как каналы в Teams могут включать множество участников. Если все участники одновременно просматривают канал, безусловное автоматическое обновление приводит к множеству одновременных вызовов бота. Свойство `userIds` всегда должно быть включено, чтобы определять, какие пользователи должны получать автоматическое обновление при максимуме в *60 (шестьдесят) пользовательских MRI*.
 
-* Вы можете получить MRI пользователей, участвующих в беседе Teams. Дополнительные сведения о способе добавления списка userIds в раздел обновления адаптивной карточки, см. в разделе [Получение состава или профиля пользователя](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile).
+* You can fetch Teams conversation member's user MRIs. For more information on how to add in userIds list in refresh section of Adaptive Card, see [fetch roster or user profile](/microsoftteams/platform/bots/how-to/get-teams-context?tabs=dotnet#fetch-the-roster-or-user-profile).
 
  Вы можете получить MRI пользователя для канала, группового чата или индивидуального чата, используя следующий пример.
 
@@ -107,7 +107,7 @@ ms.locfileid: "66143881"
 
 ### <a name="teams"></a>Teams
 
-Чтобы обеспечить обратную совместимость адаптивных карточек с более старыми версиями Teams, необходимо включить свойство `fallback` и установить для него значение `Action.Submit`. Кроме того, код бота должен обрабатывать как `Action.Execute`, так и `Action.Submit`.
+To ensure backward compatibility of your Adaptive Cards with older versions of Teams, you must include the `fallback` property and set its value to `Action.Submit`. Also, your bot code must process both `Action.Execute` and `Action.Submit`.
 
 Дополнительные сведения см. в разделе [обратная совместимость в Teams](/adaptive-cards/authoring-cards/universal-action-model#teams).
 
@@ -115,8 +115,8 @@ ms.locfileid: "66143881"
 
 |Название примера | Описание | .NETCore | Node.js |
 |----------------|-----------------|--------------|--------------|
-| Бот организации питания Teams | Создание бота, который принимает заказы на обед с помощью адаптивных карточек. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Эта функция пока недоступна |
-| Адаптивные карточки последовательных рабочих процессов | Демонстрация реализации последовательных рабочих процессов, пользовательских представлений и актуальных адаптивных карточек в ботах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Представление .](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs)|
+| Бот организации питания Teams | Создание бота, который принимает заказы на обед с помощью адаптивных карточек. |[Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-catering/csharp)| Н/Д |
+| Адаптивные карточки последовательных рабочих процессов | Демонстрация реализации последовательных рабочих процессов, пользовательских представлений и актуальных адаптивных карточек в ботах. | [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/csharp) | [Просмотр](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-sequential-flow-adaptive-cards/nodejs) |
 
 ## <a name="see-also"></a>Дополнительные ресурсы
 
