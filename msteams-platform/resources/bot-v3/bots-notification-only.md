@@ -1,23 +1,23 @@
 ---
 title: Боты только для уведомлений
-description: В этом модуле вы узнаете, какие боты только для уведомлений находятся в Microsoft Teams, манифесте приложения и его рекомендациях и ограничениях.
+description: В этом модуле вы узнаете, какие боты доступны только для уведомлений в Microsoft Teams, манифест приложения и его рекомендации и ограничения
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 01/29/2020
-ms.openlocfilehash: 547ef73cfd036efe566afe15e4f50701a275c2cd
-ms.sourcegitcommit: ca84b5fe5d3b97f377ce5cca41c48afa95496e28
+ms.openlocfilehash: ac412f37cba03c5da43163bf2eadd47adc676f08
+ms.sourcegitcommit: c3601696cced9aadc764f1e734646ee7711f154c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66144301"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "68833018"
 ---
 # <a name="notification-only-bots-in-microsoft-teams"></a>Боты только для уведомлений в Microsoft Teams
 
 [!include[v3-to-v4-SDK-pointer](~/includes/v3-to-v4-pointer-bots.md)]
 
-Если единственная цель бота — доставка уведомлений пользователям и не беседа, `isNotificationOnly` вы можете включить это поле в манифесте приложения. Это приведет к следующим изменениям.
+Если единственной целью бота является доставка уведомлений пользователям и не является беседой, вы можете включить `isNotificationOnly` поле в манифесте приложения. Это приведет к следующим изменениям.
 
-* Пользователи не могут отправлять сообщения боту только для уведомлений.
+* Пользователи не могут создавать сообщения боту только для уведомлений.
 * Пользователи не могут @mention бота.
 
 > [!NOTE]
@@ -49,4 +49,4 @@ ms.locfileid: "66144301"
 
 ## <a name="best-practices-and-limitations"></a>Рекомендации и ограничения
 
-* Боты только для уведомлений используют упреждающие сообщения для взаимодействия с пользователем. Дополнительные сведения см. в статье [Упреждающие сообщения для ботов](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md).
+Боты только для уведомлений используют упреждающие сообщения для взаимодействия с пользователем. Дополнительные сведения см. в статье [Упреждающие сообщения для ботов](~/resources/bot-v3/bot-conversations/bots-conv-proactive.md).
