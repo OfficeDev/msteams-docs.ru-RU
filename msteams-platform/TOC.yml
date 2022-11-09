@@ -799,8 +799,6 @@
           href: concepts/build-and-test/apps-localization.md
         - name: Справочные материалы по локализации схемы JSON
           href: resources/schema/localization-schema.md
-    - name: Использование автоматической проверки подлинности в Azure AD
-      href: tabs/how-to/authentication/auth-silent-aad.md
     - name: Атрибут cookie SameSite
       href: resources/samesite-cookie-update.md
       displayName: Cookies
