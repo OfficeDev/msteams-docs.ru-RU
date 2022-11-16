@@ -301,7 +301,7 @@
           href: bots/how-to/conversations/conversation-messages.md
           displayName: 'Picture messages, attribution for bot message, status code responses, app localization using bot and tab.'
           items:
-            - name: Получение всех сообщений канала через RSC
+            - name: Получение всех сообщений беседы с помощью RSC
               href: bots/how-to/conversations/channel-messages-with-rsc.md
         - name: Создать меню команд
           href: bots/how-to/create-a-bot-commands-menu.md
@@ -320,6 +320,8 @@
           href: bots/how-to/update-and-delete-bot-messages.md
         - name: Заголовки запросов бота
           href: bots/how-to/conversations/request-headers-of-the-bot.md
+        - name: Бот рабочего процесса в Teams
+          href: bots/how-to/conversations/workflow-bot-in-teams.md
     - name: Получение контекста Teams для вашего бота
       href: bots/how-to/get-teams-context.md
       displayName: Fetch roster or user profile
